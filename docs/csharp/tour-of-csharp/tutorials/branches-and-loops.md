@@ -7,22 +7,29 @@ ms.date: 12/03/2025
 
 This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-TODO:  Build an app, create a file.
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
-Open *branches-loops.cs* in your favorite editor, and replace the contents with the following code:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *branches-loops.cs*. Open your new file. Type or copy the following code into *branches-loops.cs*:
 
 :::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="FirstIf":::
 
-Try this code by typing `dotnet run` in your console window. You should see the message "The answer is greater than 10." printed to your console. Modify the declaration of `b` so that the sum is less than 10:
+Try this code by typing the following in the integrated terminal:
+
+```dotnetcli
+cd tutorials
+dotnet branches-loops.cs
+```
+
+You should see the message "The answer is greater than 10." printed to your console. Modify the declaration of `b` so that the sum is less than 10:
 
 ```csharp
 int b = 3;
 ```
 
-Type `dotnet run` again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only written one of the possible branches for an `if` statement: the true branch.
+Type `dotnet branches-loops.cs` again in the terminal window. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only written one of the possible branches for an `if` statement: the true branch.
 
 > [!TIP]
-> As you explore C# (or any programming language), you'll make mistakes when you write code. The compiler will find and report the errors. Look closely at the error output and the code that generated the error. The compiler error can usually help you find the problem.
+> As you explore C# (or any programming language), you'll make mistakes when you write code. The compiler will find and report the errors. Look closely at the error output and the code that generated the error. You can also ask Copilot to find differences or spot any mistakes. The compiler error can usually help you find the problem.
 
 This first sample shows the power of `if` and Boolean types. A *Boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for Boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it's skipped. This process of checking conditions and executing statements based on those conditions is powerful. Let's explore more.
 

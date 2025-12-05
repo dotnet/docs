@@ -7,15 +7,22 @@ ms.date: 12/02/2025
 
 This tutorial teaches you C#. You write your first C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
 ## Run your first program
 
-TODO:  `dotnet new` or create a file.
-
-Type the following code in your new `cs` file:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. Once your codespace loads, create a new file in the *tutorials* folder named *hello-world.cs*. Open your new file. Type or copy the following code into *hello-world.cs*:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="HelloWorld":::
 
-TODO: To run the program, type `dotnet run` (or) `dotnet file.cs` at the command prompt. Congratulations! You ran your first C# program. It's a simple program that prints the message "Hello World!" It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
+In the integrated terminal window, make the *tutorials* folder the current folder, and run your program:
+
+```dotnetcli
+cd tutorials
+dotnet hello-world.cs
+```
+
+Congratulations! You ran your first C# program. It's a simple program that prints the message "Hello World!" It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
 Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text.
 
@@ -25,7 +32,7 @@ Your first program printed the `string` "Hello World!" on the screen.
 
 > [!TIP]
 >
-> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and report them to you. When the output contains error messages, look closely at the example code, and the code in your `.cs` file to see what to fix. That exercise helps you learn the structure of C# code.
+> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and report them to you. When the output contains error messages, look closely at the example code, and the code in your `.cs` file to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot mistakes.
 
 Your first program is limited to printing one message. You can write more useful programs by using *variables*. A *variable* is a symbol you can use to run the same code with different values. Let's try it! Start with the following code:
 
@@ -46,7 +53,7 @@ You might notice that the word "Hello" was missing in the last two messages. Let
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
 
-TODO: Run the app again using `dotnet run` (or) `dotnet file.cs` to see the results.
+Run the app again using `dotnet hello-world.cs` to see the results.
 
 You've been using `+` to build strings from **variables** and **constant** strings. There's a better way. You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable.
 
@@ -56,7 +63,7 @@ If you add a `$` before the opening quote of the string, you can then include va
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Interpolation":::
 
-TODO: Run the app again using `dotnet run` (or) `dotnet file.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
+Run the app again using `dotnet hello-world.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
 ## Work with strings
 
@@ -124,7 +131,7 @@ Did you come up with something like the following (expand to see the answer):
 </details>
 <!-- markdownlint-enable MD033 -->
 
-You completed the "Hello C#" introduction to C# tutorial. You can select the **Numbers in C#** tutorial to start the next tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+You completed the "Hello C#" introduction to C# tutorial. You can select the [Numbers in C#](./numbers-in-csharp.md) tutorial to start the next tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding.
 
 For further reading on the `string` type:
 

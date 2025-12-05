@@ -5,17 +5,24 @@ ms.date: 03/07/2025
 ---
 # Learn to manage data collections using List\<T> in C\#
 
-This introductory tutorial provides an introduction to the C# language and the basics of the  class.
+This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> class.
 
 This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections and arrays. You work primarily with the <xref:System.Collections.Generic.List%601> class.
 
-<< TODO Create the app>>
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## A basic list example
 
-Add the following code to your source file. Replace `<name>` with your name. Then, type `dotnet run` to run the code:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *lists.cs*. Open your new file. Type or copy the following code into *lists.cs*:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="BasicList":::
+
+Run the code by typing the following in the terminal window:
+
+```dotnetcli
+cd tutorials
+dotnet lists.cs
+```
 
 You created a list of strings, added three names to that list, and printed the names in all CAPS. You're using concepts that you learned in earlier tutorials to loop through the list.
 
@@ -41,7 +48,7 @@ You're not allowed to access past the end of the list. You can check how long th
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Property":::
 
-Type `dotnet run` again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
+Type `dotnet lists.cs` again in the terminal window to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
 For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
 
@@ -67,7 +74,7 @@ That creates a list of integers, and sets the first two integers to the value 1.
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Fibonacci":::
 
-Type `dotnet run` to see the results.
+Type `dotnet lists` in the terminal window to see the results.
 
 ## Challenge
 

@@ -9,28 +9,35 @@ This tutorial teaches you about creating types in C#. You write small amounts of
 
 The preceding tutorials worked with text and numbers. Strings and Numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
 
-TODO: Create sample.
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Tuples
 
-*Tuples* are an ordered sequence of values with a fixed length. Each element of a tuple has a type and an optional name. The following code declares a tuple that represents a 2D point. Copy the following code to your file and type `dotnet run`.
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *tuples.cs*. Open your new file. Type or copy the following code into *tuples.cs*:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="CreateTuple":::
 
-> [!TIP]
-> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and your code to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot any mistakes.
+Run your program by typing the following commands in the integrated terminal window:
 
-You can reassign any member of a tuple. Add the following code after the existing code. Type `dotnet run` again to see the results.
+```dotnetcli
+cd tutorials
+dotnet tuples.cs
+```
+
+*Tuples* are an ordered sequence of values with a fixed length. Each element of a tuple has a type and an optional name.
+
+> [!TIP]
+> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and your code to see what to fix. You can also ask Copilot to find differences or spot any mistakes. That exercise helps you learn the structure of C# code.
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="Modify":::
 
-You can also create a new tuple that's a modified copy of the original using a `with` expression. Add the following code after the existing code and type `dotnet run` to see the results:
+You can also create a new tuple that's a modified copy of the original using a `with` expression. Add the following code after the existing code and type `dotnet tuples.cs` in the terminal window to see the results:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="Wither":::
 
 The tuple `pt2` contains the `X` value of `pt` (6), and `pt2.Y` is 10.
 
-Tuples are structural types. In other words, tuple types don't have names like `string` or `int`. A tuple type is defined by the number of members, referred to as *arity*, and the types of those members. The member names are for convenience. You can assign a tuple to a tuple with the same arity and types even if the members have different names. You can add the following code after the code you already wrote and try it:
+Tuples are structural types. In other words, tuple types don't have names like `string` or `int`. A tuple type is defined by the number of members, referred to as *arity*, and the types of those members. The member names are for convenience. You can assign a tuple to a tuple with the same arity and types even if the members have different names. You can add the following code after the code you already wrote and try it by typing `dotnet tuples.cs` in the terminal window:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="NamedAssignment":::
 
@@ -39,6 +46,8 @@ The variable `subscript` has two members, both of which are integers. Both `subs
 Tuples are easy to create: You declare multiple members enclosed in parentheses. All the following declare different tuples of different arities and member types. Add the following code to create new tuple types:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="TupleTypes":::
+
+Try this change by typing `dotnet tuples.cs` again in the terminal window.
 
 While tuples are easy to create, they're limited in their capabilities. Tuple types don't have names, so you can't convey meaning to the set of values. Tuple types can't add behavior. C# has other kinds of types you can create when your type defines behavior.
 
@@ -66,11 +75,13 @@ Then, add the following code before the `record` declaration, after the line con
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="UseSlope":::
 
+Type `dotnet tuples.cs` in the terminal window to run this version.
+
 You added formality to the *tuple* representing an `X` and `Y` value. You made it a `record` that defined a named type, and included a member to calculate the slope. A `record` type is a shorthand for a `record class`: A `class` type that includes extra behavior. You can modify the `Point` type to make it a `record struct` as well:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="RecordStructPoint":::
 
-A `record struct` is a `struct` type that includes the extra behavior added to all `record` types.
+A `record struct` is a `struct` type that includes the extra behavior added to all `record` types. Try this version by typing `dotnet tuples.cs` in the terminal window.
 
 ## Struct, class, and interface types
 

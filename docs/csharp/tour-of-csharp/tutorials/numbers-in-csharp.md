@@ -7,20 +7,20 @@ ms.date: 12/02/2025
 
 This tutorial teaches you about the numeric types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make it the current directory and run the following command:
-
-```dotnetcli
-dotnet new console -n NumbersInCSharp -o .
-```
-
-Open *numbers.cs* in your favorite editor, and replace the contents of the file with the following code:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done the [hello world](./hello-world.md) tutorial, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *numbers.cs*. Open your new file. Type or copy the following code into *numbers.cs*:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Addition":::
-Addition
 
-Run this code by typing `dotnet run` in your command window.
+Run this code by typing the following commands in the integrated terminal:
+
+```dotnetcli
+cd ./tutorials
+dotnet numbers.cs
+```
 
 You've seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
 
@@ -32,12 +32,12 @@ Start by exploring those different operations. Add these lines after the line th
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="OtherOperations":::
 
-Run this code by typing `dotnet run` in your command window.
+Run this code by typing `dotnet numers.cs` in the terminal window.
 
 You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
-> As you explore C# (or any programming language), you'll make mistakes when you write code. The **compiler** will find those errors and report them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. That exercise will help you learn the structure of C# code.
+> As you explore C# (or any programming language), you'll make mistakes when you write code. The **compiler** will find those errors and report them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. You can also ask Copilot to find differences or spot mistakes. That exercise will help you learn the structure of C# code.
 
 You've finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
 
@@ -76,7 +76,7 @@ Comment out the call to `WorkingWithIntegers()`. It will make the output less cl
 
 The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments. Because `WorkWithIntegers()` is a method, you need to only comment out one line.
 
-The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and executing `dotnet run`:
+The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and typing `dotnet numbers.cs` in the terminal window:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precedence":::
 
@@ -86,7 +86,7 @@ You can force a different order of operation by adding parentheses around the op
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Parentheses":::
 
-Explore more by combining many different operations. Add something like the following lines. Try `dotnet run` again.
+Explore more by combining many different operations. Add something like the following lines. Try `dotnet numbers` again in the terminal window.
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="CompoundExpression":::
 
@@ -96,7 +96,7 @@ If you haven't seen this behavior, try the following code:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Truncation":::
 
-Type `dotnet run` again to see the results.
+Type `dotnet numbers` again in the terminal window to see the results.
 
 Before moving on, let's take all the code you've written in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
 

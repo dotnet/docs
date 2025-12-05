@@ -18,7 +18,7 @@ dotnet tool exec <PACKAGE_NAME>[@<VERSION>]
     [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-http-cache] [--prerelease] [-s|--source <SOURCE>]
+    [--no-http-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>]
     [--] [<tool-arguments>...]
 
@@ -81,7 +81,9 @@ This command also exists in two other forms for easier use
 
   Allows prerelease packages to be selected when resolving the version to install.
 
-- [!INCLUDE [source](../../../includes/cli-source.md)]
+- **`--source <SOURCE>`**
+
+  Replaces all NuGet package sources to use during installation with the provided source.
 
 - [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 

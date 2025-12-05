@@ -15,7 +15,7 @@ Learn how to serve a pretrained ML.NET machine learning model on the web using a
 
 ## Prerequisites
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/#download) with the **ASP.NET and web development workload**.
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/#download) with the **ASP.NET and web development workload**.
 - PowerShell.
 - Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip).
 

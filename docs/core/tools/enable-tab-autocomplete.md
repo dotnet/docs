@@ -115,11 +115,23 @@ pack
 
 If that command doesn't work, make sure that .NET Core 2.0 SDK or later is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK or later. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
+### Examples
+
+Here are some examples of what tab completion provides:
+
+| Input                           | Becomes                                                                      | Because                                                                      |
+|---------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| `dotnet a⇥`                     | `dotnet add`                                                                 | `add` is the first subcommand, alphabetically.                               |
+| `dotnet add p⇥`                 | `dotnet add --help`                                                          | Tab completion matches substrings, and `--help` comes first alphabetically. |
+| `dotnet add p⇥⇥`                | `dotnet add package`                                                         | Pressing tab a second time brings up the next suggestion.                    |
+| `dotnet package add Microsoft⇥` | `dotnet package add Microsoft.ApplicationInsights.Web`                       | Results are returned alphabetically.                                         |
+| `dotnet reference remove ⇥`     | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware.                                        |
+
 ### PowerShell
 
 To add tab completion to **PowerShell** for the .NET CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
 
-Add the following code to your profile, then restart PowerShell:
+Add the following code to your profile:
 
 ```powershell
 # PowerShell parameter completion shim for the dotnet CLI
@@ -214,15 +226,3 @@ let-env config = {
     }
 }
 ```
-
-## Completion examples
-
-Here are some examples of what tab completion provides:
-
-| Input            | Becomes              | Because                                                                     |
-|------------------|----------------------|-----------------------------------------------------------------------------|
-| `dotnet a⇥`     | `dotnet add`         | `add` is the first subcommand, alphabetically.                              |
-| `dotnet add p⇥` | `dotnet add --help`  | Tab completion matches substrings, and `--help` comes first alphabetically. |
-| `dotnet add p⇥⇥` | `dotnet add package` | Pressing tab a second time brings up the next suggestion.                  |
-| `dotnet package add Microsoft⇥` | `dotnet package add Microsoft.ApplicationInsights.Web` | Results are returned alphabetically. |
-| `dotnet reference remove ⇥` | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware. |

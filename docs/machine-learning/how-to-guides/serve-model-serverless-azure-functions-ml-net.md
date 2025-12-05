@@ -15,7 +15,7 @@ Learn how to deploy a pretrained ML.NET machine learning model for predictions o
 
 ## Prerequisites
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/) with the **.NET desktop development** and **Azure development** workloads installed. The .NET SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET desktop development** and **Azure development** workloads installed. The .NET SDK is automatically installed when you select this workload.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - PowerShell
 - Pre-trained model. Download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip) or use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.

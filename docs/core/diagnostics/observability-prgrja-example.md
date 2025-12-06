@@ -39,7 +39,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 ```dotnetcli
 dotnet add package OpenTelemetry.Exporter.Console
 dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
-dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore
+dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 dotnet add package OpenTelemetry.Exporter.Zipkin
 dotnet add package OpenTelemetry.Extensions.Hosting
 dotnet add package OpenTelemetry.Instrumentation.AspNetCore

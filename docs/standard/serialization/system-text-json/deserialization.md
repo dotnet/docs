@@ -69,7 +69,7 @@ If you have JSON that you want to deserialize, and you don't have the class to d
 
   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM, see [Deserialize subsections of a JSON payload](use-dom.md#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
-* Use Visual Studio 2022 to automatically generate the class you need:
+* Use Visual Studio 2022 or later to automatically generate the class you need:
 
   * Copy the JSON that you need to deserialize.
   * Create a class file and delete the template code.

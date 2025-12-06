@@ -39,10 +39,10 @@ The following table shows the literal types in F#. Characters that represent dig
 
 Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute.
 
-This attribute has the effect of causing a value to be compiled as a constant. In the following example, both `x` and `y` below are immutable values, but `x` is evaluated at run-time, whereas `y` is a compile-time constant.
+This attribute has the effect of causing a value to be compiled as a constant. In the following example, both `x` and `y` below are immutable values, but `x` is evaluated at runtime, whereas `y` is a compile-time constant.
 
 ```fsharp
-let x = "a" + "b" // evaluated at run-time
+let x = "a" + "b" // evaluated at runtime
 
 [<Literal>]
 let y = "a" + "b" // evaluated at compile-time

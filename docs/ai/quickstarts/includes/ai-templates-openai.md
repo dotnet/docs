@@ -10,7 +10,7 @@ ms.author: alexwolf
 * [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
 * Access to an [OpenAI service](https://openai.com/api/) and the corresponding API key
 * One of the following IDEs (optional):
-  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
   * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template

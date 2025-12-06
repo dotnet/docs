@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 
 - [UCI Sentiment Labeled Sentences dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file)
 

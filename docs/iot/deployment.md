@@ -28,7 +28,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
         ```
 
         > [!NOTE]
-        > This command installs the latest version. If you need a specific version, replace the `--channel STS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version, for example `8.0.404`. For a list of versions, see [.NET SDKs for Visual Studio](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks). Refer to "Visual Studio 2022 SDK" column to determine the full build number.
+        > This command installs the latest version. If you need a specific version, replace the `--channel STS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version, for example `8.0.404`. For a list of versions, see [.NET SDKs for Visual Studio](https://dotnet.microsoft.com/download/visual-studio-sdks). To determine the full build number, refer to the **Visual Studio 2026 SDK** column.
 
     1. To simplify path resolution, add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH` with the following commands:
 

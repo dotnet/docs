@@ -57,10 +57,44 @@ namespace DeserializeExtra
             Console.WriteLine($"Date: {weatherForecast?.Date}");
             Console.WriteLine($"TemperatureCelsius: {weatherForecast?.TemperatureCelsius}");
             Console.WriteLine($"Summary: {weatherForecast?.Summary}");
+
+            if (weatherForecast?.DatesAvailable != null)
+            {
+                foreach (DateTimeOffset dateTimeOffset in weatherForecast.DatesAvailable)
+                {
+                    Console.WriteLine($"DateAvailable: {dateTimeOffset}");
+                }
+            }
+
+            if (weatherForecast?.TemperatureRanges != null)
+            {
+                foreach (KeyValuePair<string, HighLowTemps> temperatureRange in weatherForecast.TemperatureRanges)
+                {
+                    Console.WriteLine($"TemperatureRange: {temperatureRange.Key} is {temperatureRange.Value.Low} to {temperatureRange.Value.High}");
+                }
+            }
+
+            if (weatherForecast?.SummaryWords != null)
+            {
+                foreach (string summaryWord in weatherForecast.SummaryWords)
+                {
+                    Console.WriteLine($"SummaryWord: {summaryWord}");
+                }
+            }
         }
     }
 }
-// output:
-//Date: 8/1/2019 12:00:00 AM -07:00
-//TemperatureCelsius: 25
-//Summary: Hot
+
+/* Output:
+ * 
+ * Date: 8/1/2019 12:00:00 AM -07:00
+ * TemperatureCelsius: 25
+ * Summary: Hot
+ * DateAvailable: 8/1/2019 12:00:00 AM -07:00
+ * DateAvailable: 8/2/2019 12:00:00 AM -07:00
+ * TemperatureRange: Cold is -10 to 20
+ * TemperatureRange: Hot is 20 to 60
+ * SummaryWord: Cool
+ * SummaryWord: Windy
+ * SummaryWord: Humid
+ * */

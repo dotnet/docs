@@ -1,25 +1,22 @@
 ---
 title: Interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
-ms.date: 04/23/2025
+ms.date: 12/05/2025
 ---
 # Introduction to C\#
 
-Welcome to the introduction to C# tutorials. These lessons start with interactive code that you can run in your browser. You can learn the basics of C# from the [C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
+Welcome to the introduction to C# tutorials. These lessons start with interactive code that you can run in GitHub codespaces. You can learn the basics of C# from the [C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
 
 <!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]
 
 The first lessons explain C# concepts using small snippets of code. You'll learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience, you can skip or skim the first lessons and start with any new concepts.
 
-You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
-
-- [In your browser, on the docs platform](hello-world.md): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
-- [In the Microsoft Learn training experience](/training/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
+To use GitHub codespaces, you need to create a free [GitHub](https://github.com) account.
 
 ## Hello world
 
-In the [Hello world](hello-world.md) tutorial, you'll create the most basic C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn training](/training/paths/csharp-first-steps/).
+In the [Hello world](hello-world.md) tutorial, you'll create the most basic C# program. You'll explore the `string` type and how to work with text.
 
 ## Numbers in C\#
 

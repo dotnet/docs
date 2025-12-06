@@ -1,7 +1,7 @@
 ---
 title: "Divide strings using String.Split"
 description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to extract substrings from a string.
-ms.date: 02/18/2025
+ms.date: 12/05/2025
 helpviewer_keywords:
   - "splitting strings [C#]"
   - "Split method [C#]"
@@ -85,12 +85,14 @@ You can use AI tools, such as GitHub Copilot, to generate code to split strings 
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate C# code to use Split.String to split a string into substrings.
-Input string is "You win some. You lose some." Delimiters are space and period.
-Provide example output.
+Generate C# code to split a CSV-style input string containing values, where entries may be separated by commas or semicolons and may contain extra whitespace.
+Remove any empty values and trim whitespace from the results.
+Show example output for the string: "  apples, oranges ; bananas, ,  ;pears".
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them.
+
+For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## See also
 

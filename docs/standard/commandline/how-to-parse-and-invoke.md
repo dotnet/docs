@@ -23,7 +23,7 @@ In the following example from the [Get started with System.CommandLine](get-star
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
 
-Some built-in symbols, such as <xref:System.CommandLine.Help.HelpOption>, <xref:System.CommandLine.Help.VersionOption>, and <xref:System.CommandLine.Completions.SuggestDirective>, come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the <xref:System.CommandLine.ParseResult>, they "just work." Using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you prefer, you can stick to the parsing process and not define any actions (as in the first example in this article).
+Some built-in symbols, such as <xref:System.CommandLine.Help.HelpOption>, <xref:System.CommandLine.VersionOption>, and <xref:System.CommandLine.Completions.SuggestDirective>, come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the <xref:System.CommandLine.ParseResult>, they "just work." Using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you prefer, you can stick to the parsing process and not define any actions (as in the first example in this article).
 
 ## `ParseResult`
 

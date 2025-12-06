@@ -17,17 +17,17 @@ In the following example from the [Get started with System.CommandLine](get-star
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="all" :::
 
-An action is invoked when a given command (or directive, or option) is parsed successfully. The action is a delegate that takes a `ParseResult` argument and returns an `int` exit code ([async actions](#asynchronous-actions) are also available). The exit code is returned by the `System.CommandLine.Parsing.ParseResult.Invoke` method and can be used to indicate whether the command was executed successfully or not.
+An action is invoked when a given command (or directive, or option) is parsed successfully. The action is a delegate that takes a `ParseResult` argument and returns an `int` exit code ([async actions](#asynchronous-actions) are also available). The exit code is returned by the <xref:System.CommandLine.ParseResult.Invoke(System.CommandLine.InvocationConfiguration)?displayProperty=nameWithType> method and can be used to indicate whether the command was executed successfully or not.
 
 In the following example from the [Get started with System.CommandLine](get-started-tutorial.md) tutorial, the action is defined for the root command and invoked after parsing the command-line input:
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
 
-Some built-in symbols, such as `System.CommandLine.Help.HelpOption`, `System.CommandLine.VersionOption`, and `System.CommandLine.Completions.SuggestDirective`, come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the `System.CommandLine.Parsing.ParseResult`, they "just work." Using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you prefer, you can stick to the parsing process and not define any actions (as in the first example above).
+Some built-in symbols, such as <xref:System.CommandLine.Help.HelpOption>, <xref:System.CommandLine.Help.VersionOption>, and <xref:System.CommandLine.Completions.SuggestDirective>, come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the <xref:System.CommandLine.ParseResult>, they "just work." Using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you prefer, you can stick to the parsing process and not define any actions (as in the first example in this article).
 
-## ParseResult
+## `ParseResult`
 
-The <xref:System.CommandLine.Parsing.ParseResult> class represents the results of parsing the command-line input. You need to use it to get the parsed values for options and arguments (no matter if you're using actions or not). You can also check if there were any parse errors or unmatched [tokens](syntax.md#tokens).
+The <xref:System.CommandLine.ParseResult> class represents the results of parsing the command-line input. You need to use it to get the parsed values for options and arguments (no matter if you're using actions or not). You can also check if there were any parse errors or unmatched [tokens](syntax.md#tokens).
 
 ### GetValue
 
@@ -81,7 +81,7 @@ You don't need to create a derived type to define an action. You can use the <xr
 
 ### Asynchronous actions
 
-Synchronous and asynchronous actions should not be mixed in the same application. If you want to use asynchronous actions, your application needs to be asynchronous throughout. This means that all actions should be asynchronous, and you should use the `System.CommandLine.Command.SetAction` method that accepts a delegate returning a `Task<int>` exit code. Moreover, the <xref:System.Threading.CancellationToken> that's passed to the action delegate needs to be passed further to all the methods that can be canceled, such as file I/O operations or network requests.
+Synchronous and asynchronous actions should not be mixed in the same application. If you want to use asynchronous actions, your application needs to be asynchronous throughout. This means that all actions should be asynchronous, and you should use the `SetAction` method that accepts a delegate returning a `Task<int>` exit code. Moreover, the <xref:System.Threading.CancellationToken> that's passed to the action delegate needs to be passed further to all the methods that can be canceled, such as file I/O operations or network requests.
 
 You also need to ensure that the <xref:System.CommandLine.ParseResult.InvokeAsync(System.CommandLine.InvocationConfiguration,System.Threading.CancellationToken)?displayProperty=nameWithType> method is used instead of `Invoke`. This method is asynchronous and returns a `Task<int>` exit code. It also accepts an optional <xref:System.Threading.CancellationToken> parameter that can be used to cancel the action.
 

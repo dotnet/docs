@@ -41,6 +41,26 @@ The `IsTrimmable` property defaults to `true` when configuring a project as AOT-
 
 To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
 
+#### Verify referenced assemblies are trim-compatible
+
+When you enable trim analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for trim compatibility by setting the `VerifyReferenceTrimCompatibility` property to `true`:
+
+```xml
+<PropertyGroup>
+  <IsTrimmable>true</IsTrimmable>
+  <VerifyReferenceTrimCompatibility>true</VerifyReferenceTrimCompatibility>
+</PropertyGroup>
+```
+
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsTrimmable` metadata. This helps ensure that all dependencies in your project are annotated for trim compatibility. The warning that's emitted is [IL2125](trim-warnings/il2125.md).
+
+This verification is opt-in because:
+
+- Not all trim-compatible libraries have been updated to include the `IsTrimmable` metadata.
+- The warning can be noisy if you have many dependencies that work correctly with trimming but aren't explicitly marked as such.
+
+Consider enabling this verification when you want to ensure that all your dependencies are explicitly marked as trim-compatible by their authors.
+
 ### Show all warnings with test app
 
 To show all analysis warnings for a library, the trimmer must analyze the implementation of the library and of all dependencies the library uses.

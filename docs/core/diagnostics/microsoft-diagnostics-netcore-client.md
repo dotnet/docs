@@ -448,13 +448,19 @@ This class is immutable, because EventPipe does not allow a provider's configura
 public class EventPipeSession : IDisposable
 {
     public Stream EventStream { get; }
+
     public void Stop();
+
+    public Task StopAsync(
+        CancellationToken cancellationToken);
+
+    public void Dispose();
 }
 ```
 
 This class represents an ongoing EventPipe session. It is immutable and acts as a handle to an EventPipe session of the given runtime.
 
-## EventStream property
+### EventStream property
 
 ```csharp
 public Stream EventStream { get; }
@@ -462,13 +468,26 @@ public Stream EventStream { get; }
 
 Gets a `Stream` that can be used to read the event stream.
 
-## Stop method
+### Stop methods
 
 ```csharp
 public void Stop();
+
+public Task StopAsync(
+    CancellationToken cancellationToken);
 ```
 
 Stops the given `EventPipe` session.
+
+* `cancellationToken` (for the async overload): The token to monitor for cancellation requests.
+
+### Dispose method
+
+```csharp
+public void Dispose();
+```
+
+Releases resources associated with the `EventPipeSession`.
 
 ## DumpType enum
 

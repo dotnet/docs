@@ -87,6 +87,13 @@ public sealed class DiagnosticsClient
 
     public Dictionary<string, string> GetProcessEnvironment();
 
+    public void ApplyStartupHook(
+        string startupHookPath);
+
+    public Task ApplyStartupHookAsync(
+        string startupHookPath,
+        CancellationToken token);
+
     public static IEnumerable<int> GetPublishedProcesses();
 }
 ```
@@ -217,6 +224,22 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `dumpPath` : The path to the dump to be written out to.
 * `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
 * `token` : The token to monitor for cancellation requests.
+
+### ApplyStartupHook methods
+
+```csharp
+public void ApplyStartupHook(
+    string startupHookPath);
+
+public Task ApplyStartupHookAsync(
+    string startupHookPath,
+    CancellationToken token);
+```
+
+Loads the specified assembly with a `StartupHook` in the target process.
+
+* `startupHookPath` : The path to the assembly containing the startup hook.
+* `token` (for the async overload): The token to monitor for cancellation requests.
 
 ### AttachProfiler method
 

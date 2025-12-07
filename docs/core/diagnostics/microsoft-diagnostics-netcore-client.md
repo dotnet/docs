@@ -52,10 +52,21 @@ public sealed class DiagnosticsClient
         string dumpPath,
         bool logDumpGeneration = false);
 
-    public async Task WriteDumpAsync(
+    public void WriteDump(
+        DumpType dumpType,
+        string dumpPath,
+        WriteDumpFlags flags);
+
+    public Task WriteDumpAsync(
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration,
+        CancellationToken token);
+
+    public Task WriteDumpAsync(
+        DumpType dumpType,
+        string dumpPath,
+        WriteDumpFlags flags,
         CancellationToken token);
 
     public void AttachProfiler(
@@ -165,7 +176,10 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
 
 ```csharp
-public void WriteDump(DumpType dumpType, string dumpPath, WriteDumpFlags flags)
+public void WriteDump(
+    DumpType dumpType,
+    string dumpPath,
+    WriteDumpFlags flags)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -175,7 +189,11 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
 
 ```csharp
-public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, bool logDumpGeneration, CancellationToken token)
+public Task WriteDumpAsync(
+    DumpType dumpType,
+    string dumpPath,
+    bool logDumpGeneration,
+    CancellationToken token)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -186,7 +204,11 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `token` : The token to monitor for cancellation requests.
 
 ```csharp
-public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, WriteDumpFlags flags, CancellationToken token)
+public Task WriteDumpAsync(
+    DumpType dumpType,
+    string dumpPath,
+    WriteDumpFlags flags,
+    CancellationToken token)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -425,6 +447,25 @@ Represents the type of dump that can be requested.
 * `WithHeap`: Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.
 * `Triage`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information. Some content that is known to contain potentially sensitive information such as full module paths will be redacted. While this is intended to mitigate some cases of sensitive data exposure, there is no guarantee this redaction feature on its own is sufficient to comply with any particular law or standard regarding data privacy.
 * `Full`: Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large dump file.
+
+## WriteDumpFlags enum
+
+```csharp
+public enum WriteDumpFlags
+{
+    None = 0x00,
+    LoggingEnabled = 0x01,
+    VerboseLoggingEnabled = 0x02,
+    CrashReportEnabled = 0x04
+}
+```
+
+Represents additional options that can be specified when requesting a dump.
+
+* `None` : No additional behavior.
+* `LoggingEnabled` : Enable basic logging during dump generation.
+* `VerboseLoggingEnabled` : Enable verbose logging during dump generation.
+* `CrashReportEnabled` : Enable generation of a crash report.
 
 ## Exceptions
 

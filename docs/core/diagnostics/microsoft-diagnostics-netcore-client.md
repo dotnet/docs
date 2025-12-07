@@ -94,6 +94,11 @@ public sealed class DiagnosticsClient
         string startupHookPath,
         CancellationToken token);
 
+    public void EnablePerfMap(
+        PerfMapType type);
+
+    public void DisablePerfMap();
+
     public static IEnumerable<int> GetPublishedProcesses();
 }
 ```
@@ -240,6 +245,19 @@ Loads the specified assembly with a `StartupHook` in the target process.
 
 * `startupHookPath` : The path to the assembly containing the startup hook.
 * `token` (for the async overload): The token to monitor for cancellation requests.
+
+### PerfMap methods
+
+```csharp
+public void EnablePerfMap(
+    PerfMapType type);
+
+public void DisablePerfMap();
+```
+
+Controls generation of perf maps in the target process.
+
+* `type` : The [`PerfMapType`](#perfmaptype-enum) indicating the type of perf map to enable.
 
 ### AttachProfiler method
 
@@ -489,6 +507,25 @@ Represents additional options that can be specified when requesting a dump.
 * `LoggingEnabled` : Enable basic logging during dump generation.
 * `VerboseLoggingEnabled` : Enable verbose logging during dump generation.
 * `CrashReportEnabled` : Enable generation of a crash report.
+
+## PerfMapType enum
+
+```csharp
+public enum PerfMapType
+{
+    None = 0,
+    All = 1,
+    JitDump = 2,
+    PerfMap = 3
+}
+```
+
+Represents the type of perf map behavior that can be enabled.
+
+* `None` : No perf map output.
+* `All` : Enable all perf map outputs supported by the runtime.
+* `JitDump` : Enable JIT dump perf map output.
+* `PerfMap` : Enable traditional perf map output.
 
 ## Exceptions
 

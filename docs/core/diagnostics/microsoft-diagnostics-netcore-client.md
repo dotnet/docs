@@ -14,7 +14,7 @@ This section describes the APIs of the diagnostics client library.
 ## DiagnosticsClient class
 
 ```cs
-public DiagnosticsClient
+public sealed class DiagnosticsClient
 {
     public DiagnosticsClient(int processId);
 

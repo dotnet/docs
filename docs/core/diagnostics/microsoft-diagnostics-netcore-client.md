@@ -47,6 +47,11 @@ public sealed class DiagnosticsClient
         EventPipeSessionConfiguration configuration,
         CancellationToken token);
 
+    public bool SupportsEventPipeUserEventsCommand();
+
+    public Task<bool> SupportsEventPipeUserEventsCommandAsync(
+        CancellationToken token = default);
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,
@@ -167,6 +172,19 @@ public Task<EventPipeSession> StartEventPipeSessionAsync(
 Starts an EventPipe tracing session using an [`EventPipeSessionConfiguration`](#eventpipesessionconfiguration-class).
 
 * `config` / `configuration` : An `EventPipeSessionConfiguration` that defines the session.
+* `token` (for the async overload): The token to monitor for cancellation requests.
+
+### SupportsEventPipeUserEventsCommand methods
+
+```csharp
+public bool SupportsEventPipeUserEventsCommand();
+
+public Task<bool> SupportsEventPipeUserEventsCommandAsync(
+    CancellationToken token = default);
+```
+
+Checks whether the target runtime understands the `CollectTracing5` `user_events` IPC command.
+
 * `token` (for the async overload): The token to monitor for cancellation requests.
 
 > [!NOTE]

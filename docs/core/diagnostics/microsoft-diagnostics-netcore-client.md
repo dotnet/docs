@@ -489,6 +489,36 @@ public void Dispose();
 
 Releases resources associated with the `EventPipeSession`.
 
+## DiagnosticsClientConnector class
+
+```csharp
+public sealed class DiagnosticsClientConnector : IAsyncDisposable
+{
+    public DiagnosticsClient Instance { get; }
+
+    public ValueTask DisposeAsync();
+
+    public static Task<DiagnosticsClientConnector> FromDiagnosticPort(
+        string diagnosticPort,
+        CancellationToken ct);
+}
+```
+
+Represents a helper that creates a `DiagnosticsClient` from a diagnostic port and manages the lifetime of the underlying diagnostics server connection.
+
+* `Instance` : The `DiagnosticsClient` connected to the target runtime.
+* `DisposeAsync` : Disposes the underlying server/connection asynchronously.
+* `FromDiagnosticPort` : Creates a new `DiagnosticsClientConnector` from the specified diagnostic port.
+
+```csharp
+public static Task<DiagnosticsClientConnector> FromDiagnosticPort(
+    string diagnosticPort,
+    CancellationToken ct)
+```
+
+* `diagnosticPort` : The diagnostic port string (for example, a listen or connect port) to connect through.
+* `ct` : The token to monitor for cancellation requests.
+
 ## DumpType enum
 
 ```csharp

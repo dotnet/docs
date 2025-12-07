@@ -1,7 +1,7 @@
 ---
 title: How to install GPU support in Model Builder
 description: Learn how to install GPU support in Model Builder
-ms.date: 02/28/2023
+ms.date: 11/25/2025
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to
@@ -22,52 +22,65 @@ Learn how to install the GPU drivers to use your GPU with Model Builder.
 - [Model Builder Visual Studio extension](install-model-builder.md). The extension is built into Visual Studio as of version 16.6.1.
 - Make sure the appropriate [driver](https://www.nvidia.com/drivers) is installed for the GPU.
 
-### Image classification only
+### Image classification and object detection
 
 - NVIDIA developer account. If you don't have one, [create a free account](https://developer.nvidia.com/developer-program).
 - Install dependencies:
-  - Install [CUDA v10.1](https://developer.nvidia.com/cuda-10.1-download-archive-update2). Make sure you install CUDA v10.1, not any other newer version.
-  - Install [cuDNN v7.6.4 for CUDA 10.1](https://developer.nvidia.com/rdp/cudnn-archive) from the cuDNN archive. You cannot have multiple versions of cuDNN installed. After downloading the cuDNN v7.6.4 zip file and unpacking it, copy *\<CUDNN_zip_files_path>\cuda\bin\cudnn64_7.dll* to *\<YOUR_DRIVE>\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin*.
+
+  - Install [CUDA **v11.8 or later**](https://developer.nvidia.com/cuda-downloads).  
+    > ⚠️ **Important:** Using older CUDA versions such as 10.1 may cause *"no kernel found"* or similar errors when running object detection models in Model Builder.  
+    > CUDA 11.8 or newer provides better compatibility with the TensorFlow GPU runtime used by Model Builder.
+
+  - Install the corresponding **cuDNN** library version for your installed CUDA version from the [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive).  
+    After downloading and unpacking the cuDNN zip file, copy  
+    `\<CUDNN_zip_files_path>\cuda\bin\cudnn64_*.dll`  
+    to  
+    `\<YOUR_DRIVE>\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.x\bin`.
+
+> ✅ **Tip:** You cannot have multiple versions of cuDNN installed simultaneously. Ensure only one version matching your CUDA installation is present in your system path.
+
+---
 
 ## Troubleshooting
 
 **What if I don't have a GPU installed locally?**
 
-Deep learning scenarios tend to run faster on GPUs.
+Deep learning scenarios tend to run faster on GPUs.  
+Some scenarios, such as image classification, support training on **Azure GPU VMs**.  
+However, if local GPUs or Azure are not an option, these scenarios can still run on CPU — though training times are significantly longer.
 
-Some scenarios like image classification support training on Azure GPU VMs.
-
-However, if local GPUs or Azure are not an option for you, these scenarios also run on CPU. However, training times are significantly longer.  
+---
 
 **How do I know what GPU I have?**
 
 ***Check GPU from Settings***
 
-1. Right-click on the Windows start menu icon and select **Settings**.
-1. Select **Settings** > **System**
-1. Select **Display** and scroll down to **Related settings**.
-1. Select **Advanced display**. Your GPU's make and model are shown under **Display information**.
+1. Right-click the Windows start menu icon and select **Settings**.
+2. Select **System**.
+3. Choose **Display**, then scroll to **Related settings**.
+4. Select **Advanced display**. Your GPU's make and model appear under **Display information**.
 
 ***Check GPU from Task Manager***
 
-1. Right-click on the Windows start menu icon and select **Task Manager**.
-1. Select **Performance**.
-1. In the last pane of the tab, choose **GPU**. If this option is available, it will likely be at the bottom of the list.
-1. In the top right corner of the GPU selection, information about your computer's GPU is shown.
+1. Right-click the Windows start menu icon and select **Task Manager**.
+2. Go to the **Performance** tab.
+3. In the last pane, select **GPU** (usually at the bottom).
+4. The top-right corner displays information about your GPU.
 
-**I don't see my GPU in Settings or Task Manager but I know I have an NVIDIA GPU.**
+---
 
-1. Open Device Manager.
-1. Look at Display adapters.
-1. Install the appropriate [driver](https://www.nvidia.com/drivers) for your GPU.
+**I don't see my GPU in Settings or Task Manager, but I know I have an NVIDIA GPU.**
+
+1. Open **Device Manager**.
+2. Expand **Display adapters**.
+3. Install the appropriate [driver](https://www.nvidia.com/drivers) for your GPU.
+
+---
 
 **How do I see what version of CUDA I have?**
 
-1. Open a PowerShell or command line window.
-1. Run the command `nvcc --version`.
+1. Open a PowerShell or Command Prompt window.
+2. Run the command:
 
-**cuda is not available, please confirm you have a cuda-supported gpu**
-
-1. Open the [GeForce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/) app.
-1. The application should show installed and available driver updates. If you have trouble seeing updates, you can get the latest drivers from [https://www.nvidia.com/geforce/drivers/](https://www.nvidia.com/Download/index.aspx).
-1. Install the latest drivers.
+   ```bash
+   nvcc --version

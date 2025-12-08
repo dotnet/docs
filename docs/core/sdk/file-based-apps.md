@@ -1,10 +1,10 @@
 ---
-title: File-based C# apps
+title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
 ms.date: 12/05/2025
 ai-usage: ai-assisted
 ---
-# File-based C# apps
+# File-based apps
 
 **This article applies to:** ✔️ .NET 10 SDK and later versions
 
@@ -183,7 +183,7 @@ Different SDKs include additional file types:
 
 File-based apps enable native ahead-of-time (AOT) compilation by default. This produces optimized, self-contained executables with faster startup and smaller memory footprint.
 
-Disable native AOT if needed:
+If you need to disable native AOT, use the following setting:
 
 ```csharp
 #:property PublishAot=false
@@ -193,7 +193,7 @@ For more information about native AOT, see [Native AOT deployment](../deploying/
 
 ## User secrets
 
-File-based apps generate a stable user secrets ID based on a hash of the full file path. This lets you store sensitive configuration separately from your source code.
+File-based apps generate a stable user secrets ID based on a hash of the full file path. This ID lets you store sensitive configuration separately from your source code.
 
 Access user secrets the same way as traditional projects:
 
@@ -205,7 +205,7 @@ For more information, see [Safe storage of app secrets in development](/aspnet/c
 
 ## Shell execution
 
-Enable direct execution of file-based apps on Unix-like systems using a shebang line and executable permissions.
+Enable direct execution of file-based apps on Unix-like systems by using a shebang line and executable permissions.
 
 Add a shebang at the top of your file:
 
@@ -262,7 +262,7 @@ The .NET SDK caches build outputs to improve performance on subsequent builds. F
 
 ### Cache behavior
 
-Build outputs are cached based on:
+The SDK caches build outputs based on:
 
 - Source file content
 - Directive configuration
@@ -343,7 +343,7 @@ repo/
 
 ## See also
 
-- [.NET CLI overview](index.md)
-- [dotnet run command](dotnet-run.md)
-- [dotnet build command](dotnet-build.md)
+- [.NET SDK overview](../sdk.md)
+- [dotnet run command](../toolsdotnet-run.md)
+- [dotnet build command](../toolsdotnet-build.md)
 - [Native AOT deployment](../deploying/native-aot/index.md)

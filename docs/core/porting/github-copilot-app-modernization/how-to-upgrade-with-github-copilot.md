@@ -4,7 +4,7 @@ description: "Learn how to upgrade your .NET applications to newer versions usin
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 12/08/2025
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to upgrade my .NET app using GitHub Copilot app modernization so that I can modernize my codebase efficiently with AI assistance.

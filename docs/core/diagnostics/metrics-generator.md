@@ -49,31 +49,6 @@ The following code demonstrates how to use the generator with primitive types:
 
 :::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="metrics" :::
 
-## Specifying units
-
-You can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (for example, "seconds", "bytes", and "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
-
-The following code demonstrates how to use the generator with primitive types with units specified:
-
-```csharp
-internal static partial class Metric
-{
-    [Histogram<long>("requestName", "duration", Name = "MyCustomMetricName", Unit = "ms")]
-    public static partial Latency CreateLatency(Meter meter);
-
-    [Counter<int>(
-        MetricConstants.EnvironmentName,
-        MetricConstants.Region,
-        MetricConstants.RequestName,
-        MetricConstants.RequestStatus,
-        Unit = "requests")]
-    public static partial TotalCount CreateTotalCount(Meter meter);
-
-    [Counter<int>(Unit = "failures")]
-    public static partial TotalFailures CreateTotalFailures(this Meter meter);
-}
-```
-
 The previous declaration automatically returns the following:
 
 - `Latency` class with a `Record` method

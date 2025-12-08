@@ -4,7 +4,7 @@ description: "Learn how to apply custom upgrade instructions with GitHub Copilot
 author: kschlobohm
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/09/2025
+ms.date: 12/08/2025
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to apply custom upgrade instructions during a .NET upgrade so that I can automate specific changes consistently.
@@ -80,7 +80,7 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 1. In the chat, choose `Upgrade to a newer version of .NET`. Answer Copilot's questions until it generates the plan markdown file.
-1. Review the generated plan. Confirm whether the intended transformation is already present. If it only lists a version bump, your custom instruction wasn't yet applied.
+1. Review the generated plan. Confirm whether the intended transformation is already present. If it only lists a version bump, your custom instruction isn't yet applied.
 1. In chat, explicitly reference the instruction using language similar to the file name. For example, "modify the plan using the custom instructions to replace Newtonsoft with System.Text.Json."
 1. Wait for Copilot to confirm it retrieved the file. In chat, you see that it opened the markdown instruction file. If you don't see a reference, restate the request using the file's key verbs (replace, update, remove) and package names.
 1. Review the plan file and verify that it includes the custom instruction's details.
@@ -89,7 +89,7 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
 
      For example, when replacing Newtonsoft, the plan switches from a version upgrade to replacing or removing the package.
 
-     The plan may have started as version upgrade, as illustrated in the following image:
+     The plan might start as a version upgrade, as shown in the following image:
 
      :::image type="content" source="./media/how-to-custom-upgrade-instructions/visualstudio-copilot-upgrade6.png" alt-text="The screenshot shows the project-level (feature) actions added by the custom upgrade instruction. Projects that previously referenced Newtonsoft.Json are now slated for code refactoring to use System.Text.Json APIs.":::
 
@@ -104,9 +104,9 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
 
 ### Tips for better activation
 
-- Match the file's verb: if the file name uses replace, use that phrasing (not upgrade or fix).
+- Match the file's verb: if the file name uses `replace`, use that phrasing (not `upgrade` or `fix`).
 - Keep one transformation per file for clarity and reuse; sequence multiple files by listing prerequisites in each file.
-- Ask Copilot to modify the plan rather than manually editing; this reduces the risk of breaking dependency ordering.
+- Ask Copilot to modify the plan rather than manually editing; this approach reduces the risk of breaking dependency ordering.
 - Avoid ambiguous requests like "improve the plan"; be explicit: "apply the replace_newtonsoft_with_system_text_json instructions."
 
 ## Validate the applied changes
@@ -119,7 +119,7 @@ After the upgrade completes:
 
 ## Clean up resources
 
-If you created temporary instruction files for experimentation, remove or consolidate them to avoid overlapping transformations in future upgrades.
+If you create temporary instruction files for experimentation, remove or consolidate them to avoid overlapping transformations in future upgrades.
 
 ## Related content
 

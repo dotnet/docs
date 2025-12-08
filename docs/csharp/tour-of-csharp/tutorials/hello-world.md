@@ -22,17 +22,17 @@ cd tutorials
 dotnet hello-world.cs
 ```
 
-Congratulations! You ran your first C# program. It's a simple program that prints the message "Hello World!" It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
+You ran your first C# program. It's a simple program that prints the message "Hello World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
 Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text.
 
 ## Declare and use variables
 
-Your first program printed the `string` "Hello World!" on the screen.
+Your first program prints the `string` "Hello World!" on the screen.
 
 > [!TIP]
 >
-> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code, and the code in your `.cs` file to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot mistakes.
+> As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and the code in your `.cs` file to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot mistakes.
 
 Your first program is limited to printing one message. You can write more useful programs by using *variables*. A *variable* is a symbol you can use to run the same code with different values. Let's try it! Start with the following code:
 
@@ -49,7 +49,7 @@ You can assign different values to any variable you declare. You can change the 
 
 Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable.
 
-You might notice that the word "Hello" was missing in the last two messages. Let's fix that now. Modify the lines that print the message to the following code:
+You might notice that the word "Hello" is missing in the last two messages. Let's fix that now. Modify the lines that print the message to the following code:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
 
@@ -67,13 +67,13 @@ Run the app again using `dotnet hello-world.cs` to see the results. Instead of "
 
 ## Work with strings
 
-Your last edit was our first look at what you can do with strings. Let's explore more.
+Your last edit was your first look at what you can do with strings. Let's explore more.
 
 You're not limited to a single variable between the curly braces. Try the following code at the bottom of your app:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="WorkWithStrings":::
 
-Strings are more than a collection of letters. You can find the length of a string using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of your app:
+Strings are more than a collection of letters. You can find the length of a string by using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of your app:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Properties":::
 
@@ -96,11 +96,11 @@ This sample reinforces a couple of important concepts for working with strings. 
 
 ## Replace
 
-There are other methods available to work with a string. For example, you probably used a search and replace command in an editor or word processor before. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
+You can use other methods to work with a string. For example, you might have used a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Replace":::
 
-Two other useful methods make a string ALL CAPS or all lower case. Try the following code. Type it in to see how **IntelliSense** provides hints as you start to type `To`:
+Two other useful methods make a string all caps or all lowercase. Try the following code. Type it in to see how **IntelliSense** provides hints as you start to type `To`:
 
 :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="UpperLower":::
 
@@ -114,7 +114,7 @@ The <xref:System.String.Contains%2A> method returns a *boolean* value which tell
 
 ## Challenge
 
-There are two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> that also search for substrings in a string. These methods find a substring at the beginning or the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
+Two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A>, also search for substrings in a string. These methods find a substring at the beginning or the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 
 > [!NOTE]
 >
@@ -122,7 +122,7 @@ There are two similar methods, <xref:System.String.StartsWith%2A> and <xref:Syst
 
 You should get `true` for starting with "You" and ending with "hello" and `false` for starting with or ending with "goodbye".
 
-Did you come up with something like the following (expand to see the answer):
+Did you come up with something like the following code (expand to see the answer):
 
 <!-- markdownlint-disable MD033 -->
 <details>

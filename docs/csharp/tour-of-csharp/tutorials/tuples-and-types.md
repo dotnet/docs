@@ -7,13 +7,13 @@ ms.date: 12/03/2025
 
 This tutorial teaches you about creating types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore different kinds of types in C#. These lessons teach you the fundamentals of the C# language.
 
-The preceding tutorials worked with text and numbers. Strings and Numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
+The preceding tutorials worked with text and numbers. Strings and numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
 
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Tuples
 
-Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *tuples.cs*. Open your new file. Type or copy the following code into *tuples.cs*:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you completed other tutorials in this series, you can open that codespace. When your codespace loads, create a new file in the *tutorials* folder named *tuples.cs*. Open your new file. Type or copy the following code into *tuples.cs*:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="CreateTuple":::
 
@@ -42,9 +42,9 @@ Tuples are structural types. In other words, tuple types don't have names like `
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="NamedAssignment":::
 
-The variable `subscript` has two members, both of which are integers. Both `subscript` and `pt` represent instances of the same tuple type: a tuple containing 2 `int` members.
+The variable `subscript` has two members, both of which are integers. Both `subscript` and `pt` represent instances of the same tuple type: a tuple containing two `int` members.
 
-Tuples are easy to create: You declare multiple members enclosed in parentheses. All the following declare different tuples of different arities and member types. Add the following code to create new tuple types:
+Tuples are easy to create: You declare multiple members enclosed in parentheses. All the following declarations define different tuples with different arities and member types. Add the following code to create new tuple types:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="TupleTypes":::
 
@@ -54,7 +54,7 @@ While tuples are easy to create, they're limited in their capabilities. Tuple ty
 
 ## Create record types
 
-Tuples are great for those times when you want multiple values in the same structure. They're lightweight, and can be declared as they're used. As your program goes, you might find that you use the same tuple type throughout your code. If your app does work in the 2D graph space, the tuples that represent points might be common. Once you find that, you can declare a `record` type that stores those values and provides more capabilities. The following code sample uses a `Main` method to represent the entry point for the program. That way, you can declare a `record` type preceding the entry point in the code. Press the "Run" button on the following code to replace your existing sample with the following code.
+Tuples are great for those times when you want multiple values in the same structure. They're lightweight, and you can declare them as you use them. As your program grows, you might find that you use the same tuple type throughout your code. If your app works in the 2D graph space, the tuples that represent points might be common. When you find this pattern, you can declare a `record` type that stores those values and provides more capabilities. The following code sample uses a `Main` method to represent the entry point for the program. That way, you can declare a `record` type preceding the entry point in the code. Select **Run** on the following code to replace your existing sample with the following code.
 
 The following code declares and uses a `record` type to represent a `Point`:
 
@@ -68,7 +68,7 @@ Add the following code preceding the `record` declaration:
 
 The `record` declaration is a single line of code for the `Point` type that stores the values `X` and `Y` in readonly properties. You use the name `Point` wherever you use that type. Properly named types, like `Point`, provide information about how the type is used. The additional code shows how to use a `with` expression to create a new point that's a modified copy of the existing point. The line `pt4 = pt3 with { Y = 10 }` says "`pt4` has the same values as `pt3` except that `Y` is assigned to 10." You can add any number of properties to change in a single `with` expression.
 
-The preceding `record` declaration is a single line of code that ends in `;`. You can add behavior to a `record` type by declaring *members*. A record member can be a function, or more data elements. The members of a type are in the type declaration, between `{` and  `}` characters. Delete the `;` and add the following lines of code after the `record` declaration:
+The preceding `record` declaration is a single line of code that ends in `;`. You can add behavior to a `record` type by declaring *members*. A record member can be a function or more data elements. The members of a type are in the type declaration, between `{` and  `}` characters. Delete the `;` and add the following lines of code after the `record` declaration:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="AddSlopeMethod":::
 
@@ -78,7 +78,7 @@ Then, add the following code before the `record` declaration, after the line con
 
 Type `dotnet tuples.cs` in the terminal window to run this version.
 
-You added formality to the *tuple* representing an `X` and `Y` value. You made it a `record` that defined a named type, and included a member to calculate the slope. A `record` type is a shorthand for a `record class`: A `class` type that includes extra behavior. You can modify the `Point` type to make it a `record struct` as well:
+You added formality to the *tuple* representing an `X` and `Y` value. You made it a `record` that defined a named type and included a member to calculate the slope. A `record` type is a shorthand for a `record class`: A `class` type that includes extra behavior. You can modify the `Point` type to make it a `record struct` as well:
 
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="RecordStructPoint":::
 
@@ -94,7 +94,7 @@ The `record` modifier instructs the compiler to write several members for you. Y
 
 When you declare a `record` type, you declare that your type should use a default set of behaviors for equality comparisons, assignment, and copying instances of that type. Records are the best choice when storing related data is the primary responsibility of your type. As you add more behaviors, consider using `struct` or `class` types, without the `record` modifier.
 
-You use `struct` types for value types when more sophisticated behavior is needed, but the primary responsibility is storing values. You use `class` types to use object oriented idioms like encapsulation, inheritance, and polymorphism.
+Use `struct` types for value types when you need more sophisticated behavior, but the primary responsibility is storing values. Use `class` types to use object-oriented idioms like encapsulation, inheritance, and polymorphism.
 
 You can also define `interface` types to declare behavioral contracts that different types must implement. Both `struct` and `class` types can implement interfaces.
 

@@ -11,7 +11,7 @@ To use codespaces, you need a GitHub account. If you don't already have one, you
 
 ## Explore integer math
 
-Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done the [hello world](./hello-world.md) tutorial, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *numbers.cs*. Open your new file. Type or copy the following code into *numbers.cs*:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you complete the [hello world](./hello-world.md) tutorial, you can open that codespace. When your codespace loads, create a new file in the *tutorials* folder named *numbers.cs*. Open your new file. Type or copy the following code into *numbers.cs*:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Addition":::
 
@@ -22,7 +22,7 @@ cd ./tutorials
 dotnet numbers.cs
 ```
 
-You've seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
+You saw one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
 
 - `-` for subtraction
 - `*` for multiplication
@@ -37,9 +37,9 @@ Run this code by typing `dotnet numbers.cs` in the terminal window.
 You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
-> As you explore C# (or any programming language), you'll make mistakes when you write code. The **compiler** will find those errors and report them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. You can also ask Copilot to find differences or spot mistakes. That exercise will help you learn the structure of C# code.
+> As you explore C# (or any programming language), you might make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. You can also ask Copilot to find differences or spot mistakes. That exercise helps you learn the structure of C# code.
 
-You've finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
+You finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
 
 ```csharp
 WorkWithIntegers();
@@ -68,7 +68,7 @@ void WorkWithIntegers()
 
 ## Explore order of operations
 
-Comment out the call to `WorkingWithIntegers()`. It will make the output less cluttered as you work in this section:
+Comment out the call to `WorkingWithIntegers()`. It makes the output less cluttered as you work in this section:
 
 ```csharp
 //WorkWithIntegers();
@@ -90,15 +90,15 @@ Explore more by combining many different operations. Add something like the foll
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="CompoundExpression":::
 
-You may have noticed an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
+You might notice an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
-If you haven't seen this behavior, try the following code:
+If you didn't see this behavior, try the following code:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Truncation":::
 
 Type `dotnet numbers` again in the terminal window to see the results.
 
-Before moving on, let's take all the code you've written in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
+Before moving on, let's take all the code you wrote in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
 
 ```csharp
 // WorkWithIntegers();
@@ -149,7 +149,7 @@ void OrderPrecedence()
 
 ## Explore integer precision and limits
 
-That last sample showed you that integer division truncates the result. You can get the **remainder** by using the **remainder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
+The previous sample showed that integer division truncates the result. You can get the **remainder** by using the **remainder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="QuotientAndRemainder":::
 
@@ -163,11 +163,11 @@ If a calculation produces a value that exceeds those limits, you have an **under
 
 Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
-There are other numeric types with different limits and precision that you would use when the `int` type doesn't meet your needs. Let's explore those types of numbers next.
+There are other numeric types with different limits and precision that you can use when the `int` type doesn't meet your needs. Let's explore those types of numbers next.
 
 ## Work with the double type
 
-The `double` numeric type represents a double-precision floating point number. Those terms may be new to you. A **floating point** number is useful to represent non-integral numbers that can be very large or small in magnitude. **Double-precision** is a relative term that describes the number of binary digits used to store the value. **Double precision** numbers have twice the number of binary digits as **single-precision**. On modern computers, it's more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword. Let's explore. Add the following code and see the result:
+The `double` numeric type represents a double-precision floating point number. Those terms might be new to you. A **floating point** number is useful for representing non-integral numbers that can be very large or small in magnitude. **Double-precision** is a relative term that describes the number of binary digits used to store the value. **Double precision** numbers have twice the number of binary digits as **single-precision**. On modern computers, you more commonly use double precision than single precision numbers. **Single precision** numbers are declared by using the `float` keyword. Let's explore. Add the following code and see the result:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="FloatingPoint":::
 
@@ -175,7 +175,7 @@ Notice that the answer includes the decimal portion of the quotient. Try a sligh
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="ChangeDoubleValues":::
 
-The range of a double value is much greater than integer values. Try the following code below what you've written so far:
+The range of a double value is much greater than integer values. Try the following code that you add to what you've written so far:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinMax":::
 
@@ -187,11 +187,11 @@ You know that `0.3` is `3/10` and not exactly the same as `1/3`. Similarly, `0.3
 
 ***Challenge***
 
-Try other calculations with large numbers, small numbers, multiplication, and division using the `double` type. Try more complicated calculations. After you've spent some time with the challenge, take the code you've written and place it in a new method. Name that new method `WorkWithDoubles`.
+Try other calculations with large numbers, small numbers, multiplication, and division by using the `double` type. Try more complicated calculations. After you spend some time with the challenge, take the code you wrote and place it in a new method. Name that new method `WorkWithDoubles`.
 
 ## Work with decimal types
 
-You've seen the basic numeric types in C#: integers and doubles. There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
+You saw the basic numeric types in C#: integers and doubles. There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Decimal":::
 
@@ -199,20 +199,20 @@ Notice that the range is smaller than the `double` type. You can see the greater
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precision":::
 
-Notice that the math using the decimal type has more digits to the right of the decimal point.
+Notice that the math with the decimal type has more digits to the right of the decimal point.
 
-The `M` suffix on the numbers is how you indicate that a constant should use the `decimal` type. Otherwise, the compiler assumes the `double` type.
+The `M` suffix on the numbers indicates that a constant should use the `decimal` type. Otherwise, the compiler assumes the `double` type.
 
 > [!NOTE]
-> The letter `M` was chosen as the most visually distinct letter between the `double` and `decimal` keywords.
+> The letter `M` is the most visually distinct letter between the `double` and `decimal` keywords.
 
 ***Challenge***
 
-Now that you've seen the different numeric types, write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI. One hint: .NET contains a constant for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
+Now that you know the different numeric types, write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI. One hint: .NET contains a constant for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
 
 You should get an answer between 19 and 20.
 
-Once you try it, open the details pane to see how you did:
+When you try it, open the details pane to see how you did:
 
 <!-- markdownlint-disable MD033 -->
 <details>

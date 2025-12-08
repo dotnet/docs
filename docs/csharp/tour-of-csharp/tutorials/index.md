@@ -10,29 +10,29 @@ Welcome to the introduction to C# tutorials. These lessons start with interactiv
 <!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]
 
-The first lessons explain C# concepts using small snippets of code. You'll learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience, you can skip or skim the first lessons and start with any new concepts.
+The first lessons explain C# concepts using small snippets of code. You learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience, you can skip or skim the first lessons and start with any new concepts.
 
 To use GitHub codespaces, you need to create a free [GitHub](https://github.com) account.
 
 ## Hello world
 
-In the [Hello world](hello-world.md) tutorial, you'll create the most basic C# program. You'll explore the `string` type and how to work with text.
+In the [Hello world](hello-world.md) tutorial, you create the most basic C# program. You explore the `string` type and how to work with text.
 
 ## Numbers in C\#
 
-In the [Numbers in C#](numbers-in-csharp.md) tutorial, you'll learn how computers store numbers and how to perform calculations with different numeric types. You'll learn the basics of rounding, and how to perform mathematical calculations using C#.
+In the [Numbers in C#](numbers-in-csharp.md) tutorial, you learn how computers store numbers and how to perform calculations with different numeric types. You learn the basics of rounding, and how to perform mathematical calculations using C#.
 
 ## Tuples and types
 
-In the [Tuples and types](tuples-and-types.md) tutorial, you'll learn to create types in C#. You can create *tuples*, *records*, *struct*, and *class* types. The capabilities of these different kinds of types reflect their different uses.
+In the [Tuples and types](tuples-and-types.md) tutorial, you learn to create types in C#. You can create *tuples*, *records*, *struct*, and *class* types. The capabilities of these different kinds of types reflect their different uses.
 
 ## Branches and loops
 
-The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of selecting different paths of code execution based on the values stored in variables. You'll learn the basics of control flow, which is the basis of how programs make decisions and choose different actions.
+The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of selecting different paths of code execution based on the values stored in variables. You learn the basics of control flow, which is the basis of how programs make decisions and choose different actions.
 
 ## List collection
 
-The [List collection](list-collection.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
+The [List collection](list-collection.md) lesson gives you a tour of the List collection type that stores sequences of data. You learn how to add and remove items, search for items, and sort the lists. You explore different kinds of lists.
 
 ## Pattern matching
 
@@ -40,6 +40,6 @@ The [Pattern matching](pattern-matching.md) lesson provides an introduction to *
 
 ## Set up your local environment
 
-After you finish these tutorials, set up a development environment. You'll want:
+After you finish these tutorials, set up a development environment. You need:
 
 [!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]

@@ -13,18 +13,18 @@ To use codespaces, you need a GitHub account. If you don't already have one, you
 
 ## A basic list example
 
-Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you've done other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *lists.cs*. Open your new file. Type or copy the following code into *lists.cs*:
+Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you completed other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *lists.cs*. Open your new file. Type or copy the following code into *lists.cs*:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="BasicList":::
 
-Run the code by typing the following in the terminal window:
+Run the code by typing the following command in the terminal window:
 
 ```dotnetcli
 cd tutorials
 dotnet lists.cs
 ```
 
-You created a list of strings, added three names to that list, and printed the names in all CAPS. You're using concepts that you learned in earlier tutorials to loop through the list.
+You created a list of strings, added three names to that list, and printed the names in all caps. You're using concepts that you learned in earlier tutorials to loop through the list.
 
 The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature. When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method.
 
@@ -44,7 +44,7 @@ The <xref:System.Collections.Generic.List%601> enables you to reference individu
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Indexers":::
 
-You're not allowed to access past the end of the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code:
+You're not allowed to access past the end of the list. You can check how long the list is by using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Property":::
 
@@ -60,17 +60,17 @@ Our samples use relatively small lists, but your applications might often create
 
 You might not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it's `-1`, the item wasn't found.
 
-The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run again:
+You can also sort the items in your list. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run again:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Sort":::
 
 ## Lists of other types
 
-You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Add the following code at the end of your source file:
+So far, you've been using the `string` type in lists. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Add the following code at the end of your source file:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="CreateList":::
 
-That creates a list of integers, and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1's. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
+That code creates a list of integers and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1's. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Fibonacci":::
 
@@ -87,7 +87,7 @@ Did you come up with something like this?
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Answer":::
 
-With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you added 20 items to the list.
+With each iteration of the loop, you take the last two integers in the list, sum them, and add that value to the list. The loop repeats until you add 20 items to the list.
 </details>
 <!-- markdownlint-disable MD033 -->
 

@@ -1,6 +1,6 @@
 ---
-title: Errors and warnings for string literal declarations
-description: This article helps you diagnose and correct compiler errors and warnings when you declare string literals as constants or variables.
+title: Resolve errors and warnings for string literal declarations
+description: Learn how to diagnose and correct C# compiler errors and warnings when you declare string literals, including basic strings, raw strings, and UTF-8 strings.
 f1_keywords:
   - "CS1009"
   - "CS1011"
@@ -49,12 +49,12 @@ helpviewer_keywords:
   - "CS9047"
   - "CS9274"
   - "CS9315"
-ms.date: 10/09/2025
+ms.date: 12/08/2025
 ai-usage: ai-assisted
 ---
-# Errors and warnings for string literal declarations
+# Resolve errors and warnings for string literal declarations
 
-There are several errors related to declaring string constants or string literals.
+The C# compiler generates errors and warnings when you declare string literals with incorrect syntax or use them in unsupported contexts. These diagnostics help you identify issues with basic string literals, character literals, raw string literals, and UTF-8 string literals.
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -83,8 +83,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9274**](#literal-strings-in-data-sections): *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
 - [**CS9315**](#literal-strings-in-data-sections): *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
-The following sections provide examples of common issues and how to fix them.
-
 ## Incorrectly formed string literals
 
 - **CS1009** - *Unrecognized escape sequence.*
@@ -93,17 +91,15 @@ The following sections provide examples of common issues and how to fix them.
 - **CS1012** - *Too many characters in character literal.*
 - **CS1039** - *Unterminated string literal.*
 
-To address these errors, try the following:
-
-- Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**). When you need to include backslashes or special characters in strings without escaping them, use verbatim string literals (prefixed with `@`) or raw string literals (delimited with triple quotes `"""`), which treat most characters as literal text.
-- Ensure your character literal contains exactly one character between single quotes (`'x'`) (**CS1011**, **CS1012**). Character literals in C# must represent a single UTF-16 code unit. For characters outside the Basic Multilingual Plane or for multiple characters, use string literals instead, or use `System.Text.Rune` for proper Unicode scalar value handling.
-- Add the closing quotation mark for your string literal or verbatim string literal (**CS1039**). Regular string literals cannot span multiple lines unless you use escape sequences like `\n` or switch to verbatim strings (with `@`) or raw string literals that support multi-line content.
+Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).ences like `\n` or switch to verbatim strings (with `@`) or raw string literals that support multi-line content.
 - Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
 
-For more information on string literal syntax and escape sequences, see [strings](../builtin-types/reference-types.md#string-literals), [verbatim strings](../tokens/verbatim.md), and [raw string literals](../tokens/raw-string.md).
+Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
+
+For more information, see [strings](../builtin-types/reference-types.md#string-literals), [verbatim strings](../tokens/verbatim.md), and [raw string literals](../tokens/raw-string.md).
 
 ## Incorrectly formed raw string literals
-
+    
 - **CS8996** - *Raw string literals are not allowed in preprocessor directives.*
 - **CS8997** - *Unterminated raw string literal.*
 - **CS8998** - *Not enough starting quotes for this raw string content.*
@@ -119,9 +115,7 @@ For more information on string literal syntax and escape sequences, see [strings
 - **CS9008** - *Sequence of '@' characters is not allowed.*
 - **CS9009** - *String must start with quote character.*
 
-To address these issues, try the following techniques:
-
-- Use regular string literals or verbatim string literals instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated before the lexical analysis that recognizes raw string literals, so raw string syntax isn't supported in these contexts.
+Use regular string literals or verbatim string literals instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated before the lexical analysis that recognizes raw string literals, so raw string syntax isn't supported in these contexts.
 - Complete your raw string literal by adding a closing delimiter that matches the opening delimiter (**CS8997**, **CS9004**). Raw string literals must start and end with the same number of consecutive double-quote characters (at least three: `"""`), which ensures the compiler can correctly identify where the string content ends.
 - Place the opening and closing delimiters of multi-line raw string literals on their own lines, with no other content on those lines (**CS9000**). This requirement ensures consistent formatting and makes the boundaries of the raw string content clear, particularly when the string spans many lines.
 - Add at least one line of content between the opening and closing delimiters of your multi-line raw string literal (**CS9002**). Multi-line raw strings are designed to contain text that spans multiple lines, so the delimiters must enclose actual content rather than appearing on consecutive lines.
@@ -131,7 +125,9 @@ To address these issues, try the following techniques:
 - Use verbatim interpolated string format (`$@"..."`) when combining interpolation with multi-line strings (**CS9001**). Raw string literals support interpolation through the `$` prefix, but multi-line raw strings with interpolation require the verbatim format to correctly handle both features together.
 - Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
 
-For complete syntax rules and examples, see the [language reference on raw string literals](../tokens/raw-string.md).
+Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
+
+For more information, see [raw string literals](../tokens/raw-string.md).
 
 ## UTF-8 string literals
 
@@ -142,14 +138,15 @@ Remove characters or escape sequences that can't be encoded in UTF-8 from your `
 
 Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
 
-For more information on UTF-8 string literals and their type conversions, see the [language reference on UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
+Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
+
+For more information, see [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
 ## Literal strings in data sections
 
 - **CS9274**: *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
 - **CS9315**: *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
-To address these errors, try the following:
+Disable the experimental data section string literals feature for your application when you encounter a hash collision (**CS9274**). This error indicates that two different string literals produced the same XXHash128 value, which prevents the optimization from working correctly, so you should remove the feature flag that enables this experimental behavior.
 
-- Disable the experimental data section string literals feature for your application when you encounter a hash collision (**CS9274**). This error indicates that two different string literals produced the same XXHash128 value, which prevents the optimization from working correctly, so you should remove the feature flag that enables this experimental behavior.
-- Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The hot reload infrastructure can't update string literals stored in the data section because they're embedded in a special format that can't be modified at runtime, so continuing execution with the old string values would produce incorrect behavior.
+Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The hot reload infrastructure can't update string literals stored in the data section because they're embedded in a special format that can't be modified at runtime, so continuing execution with the old string values would produce incorrect behavior.

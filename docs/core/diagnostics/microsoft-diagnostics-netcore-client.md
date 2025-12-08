@@ -1,7 +1,7 @@
 ---
 title: Microsoft.Diagnostics.NETCore.Client API
 description: In this article, you'll learn about the Microsoft.Diagnostics.NETCore.Client APIs.
-ms.date: 06/22/2021
+ms.date: 12/08/2025
 author: tommcdon
 ms.author: tommcdon
 ms.topic: reference

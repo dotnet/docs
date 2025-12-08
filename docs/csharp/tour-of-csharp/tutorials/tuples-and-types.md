@@ -29,6 +29,7 @@ dotnet tuples.cs
 > [!TIP]
 > As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and your code to see what to fix. You can also ask Copilot to find differences or spot any mistakes. That exercise helps you learn the structure of C# code.
 
+Add the following code after the previous code to modify a tuple member:
 :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="Modify":::
 
 You can also create a new tuple that's a modified copy of the original using a `with` expression. Add the following code after the existing code and type `dotnet tuples.cs` in the terminal window to see the results:

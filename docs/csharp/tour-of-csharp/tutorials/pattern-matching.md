@@ -84,7 +84,7 @@ To finish this tutorial, let's explore one more building block to pattern matchi
 
 :::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="RecordDeclarations":::
 
-Next, add this method just before the declaration of the `TransactionType` enumeration. It parses the text and return a series of records:
+Next, add this method just before the declaration of the `TransactionType` enumeration. It parses the text and returns a series of records:
 
 :::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="ParseToRecord":::
 

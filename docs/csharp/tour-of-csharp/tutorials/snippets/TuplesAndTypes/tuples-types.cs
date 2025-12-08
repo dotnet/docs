@@ -30,7 +30,7 @@ var order = (Product: "guitar picks", style: "triangle", quantity: 500, UnitPric
 // <UsePointRecord>
 Point pt3 = new Point(1, 1);
 var pt4 = pt3 with { Y = 10 };
-Console.WriteLine($"The two points are {pt} and {pt2}");
+Console.WriteLine($"The two points are {pt3} and {pt4}");
 // </UsePointRecord>
 
 // <UseSlope>

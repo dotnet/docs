@@ -32,7 +32,7 @@ Start by exploring those different operations. Add these lines after the line th
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="OtherOperations":::
 
-Run this code by typing `dotnet numers.cs` in the terminal window.
+Run this code by typing `dotnet numbers.cs` in the terminal window.
 
 You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
@@ -149,7 +149,7 @@ void OrderPrecedence()
 
 ## Explore integer precision and limits
 
-That last sample showed you that integer division truncates the result. You can get the **remainder** by using the **remaimnder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
+That last sample showed you that integer division truncates the result. You can get the **remainder** by using the **remainder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="QuotientAndRemainder":::
 
@@ -195,8 +195,6 @@ You've seen the basic numeric types in C#: integers and doubles. There's one oth
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Decimal":::
 
-There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
-
 Notice that the range is smaller than the `double` type. You can see the greater precision with the decimal type by trying the following code:
 
 :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precision":::
@@ -207,7 +205,6 @@ The `M` suffix on the numbers is how you indicate that a constant should use the
 
 > [!NOTE]
 > The letter `M` was chosen as the most visually distinct letter between the `double` and `decimal` keywords.
-Notice that the math using the decimal type has more digits to the right of the decimal point.
 
 ***Challenge***
 

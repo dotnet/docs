@@ -1,6 +1,6 @@
 ---
 title: Data collections - Introductory tutorial
-description: In this tutorial, you use your browser to learn about C# collections. You write C# code and see the results of compiling and running your code directly in the browser.
+description: In this tutorial, you use GitHub Codespaces to learn about C# collections. You write C# code and see the results of compiling and running your code in the Codespaces environment.
 ms.date: 03/07/2025
 ---
 # Learn to manage data collections using List\<T> in C\#
@@ -74,7 +74,7 @@ That creates a list of integers, and sets the first two integers to the value 1.
 
 :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Fibonacci":::
 
-Type `dotnet lists` in the terminal window to see the results.
+Type `dotnet lists.cs` in the terminal window to see the results.
 
 ## Challenge
 

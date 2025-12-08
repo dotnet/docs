@@ -39,7 +39,7 @@ To execute different code in both the true and false branches, you create an `el
 
 :::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="IfAndElse":::
 
-The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with Boolean conditions provides all the power you need to handle both a `true` and a `false` condition.
+The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with boolean conditions provides all the power you need to handle both a `true` and a `false` condition.
 
 > [!IMPORTANT]
 > The indentation under the `if` and `else` statements is for human readers. The C# language doesn't treat indentation or white space as significant. The statement following the `if` or `else` keyword executes based on the condition. All the samples in this tutorial follow a common practice to indent lines based on the control flow of statements.
@@ -156,7 +156,6 @@ Did you come up with something like this?
 </details>
 <!-- markdownlint-enable MD033 -->
 
-You've completed the "branches and loops" tutorial.
 
 You completed the "branches and loops" tutorial. You can select the **list collection** link to start the next tutorial.
 

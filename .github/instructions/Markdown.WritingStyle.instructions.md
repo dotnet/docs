@@ -41,7 +41,6 @@ ALWAYS:
 - **MANDATORY: Number ordered lists using "1." for every item (NOT 1., 2., 3.) - ALWAYS USE "1."**
 - **REQUIRED: Use bullets for unordered lists - NEVER use numbers for unordered content**
 - **ESSENTIAL: Write complete sentences in lists with proper punctuation**
-- **MUST: End list items with periods if more than three words. The period may be inside style marks like `*` for italic or `**` for bold - THIS IS NON-NEGOTIABLE**
 - Skip end punctuation on titles, headings, and UI elements (3 words or fewer)
 
 ### Spacing and Layout

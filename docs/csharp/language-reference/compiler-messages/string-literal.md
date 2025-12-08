@@ -6,6 +6,7 @@ f1_keywords:
   - "CS1011"
   - "CS1012"
   - "CS1039"
+  - "CS8996"
   - "CS8997"
   - "CS8998"
   - "CS8999"
@@ -20,6 +21,8 @@ f1_keywords:
   - "CS9008"
   - "CS9009"
   - "CS1010"
+  - "CS9026"
+  - "CS9047"
   - "CS9274"
   - "CS9315"
 helpviewer_keywords:
@@ -27,6 +30,7 @@ helpviewer_keywords:
   - "CS1011"
   - "CS1012"
   - "CS1039"
+  - "CS8996"
   - "CS8997"
   - "CS8998"
   - "CS8999"
@@ -41,6 +45,8 @@ helpviewer_keywords:
   - "CS9008"
   - "CS9009"
   - "CS1010"
+  - "CS9026"
+  - "CS9047"
   - "CS9274"
   - "CS9315"
 ms.date: 10/09/2025
@@ -58,6 +64,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1011**](#incorrectly-formed-string-literals): *Empty character literal.*
 - [**CS1012**](#incorrectly-formed-string-literals): *Too many characters in character literal.*
 - [**CS1039**](#incorrectly-formed-string-literals): *Unterminated string literal.*
+- [**CS8996**](#incorrectly-formed-raw-string-literals): *Raw string literals are not allowed in preprocessor directives.*
 - [**CS8997**](#incorrectly-formed-raw-string-literals): *Unterminated raw string literal.*
 - [**CS8998**](#incorrectly-formed-raw-string-literals): *Not enough starting quotes for this raw string content.*
 - [**CS8999**](#incorrectly-formed-raw-string-literals): *Line does not start with the same whitespace as the closing line of the raw string literal.*
@@ -71,6 +78,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9007**](#incorrectly-formed-raw-string-literals): *Too many closing braces for interpolated raw string literal.*
 - [**CS9008**](#incorrectly-formed-raw-string-literals): *Sequence of '@' characters is not allowed.*
 - [**CS9009**](#incorrectly-formed-raw-string-literals): *String must start with quote character.*
+- [**CS9026**](#utf-8-string-literals): *The input string cannot be converted into the equivalent UTF-8 byte representation.*
+- [**CS9047**](#utf-8-string-literals): *Operator cannot be applied to operands that are not UTF-8 byte representations.*
 - [**CS9274**](#literal-strings-in-data-sections): *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
 - [**CS9315**](#literal-strings-in-data-sections): *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
@@ -119,6 +128,7 @@ For more information on literal strings and escape sequences, see the articles o
 
 The following errors are related to raw string literal syntax and usage.
 
+- **CS8996** - *Raw string literals are not allowed in preprocessor directives.*
 - **CS8997** - *Unterminated raw string literal.*
 - **CS8998** - *Not enough starting quotes for this raw string content.*
 - **CS8999** - *Line does not start with the same whitespace as the closing line of the raw string literal.*
@@ -153,6 +163,17 @@ var t = """First line
 ```
 
 For full syntax and more examples, see the [language reference on raw string literals](../tokens/raw-string.md).
+
+## UTF-8 string literals
+
+- **CS9026** - *The input string cannot be converted into the equivalent UTF-8 byte representation.*
+- **CS9047** - *Operator cannot be applied to operands that are not UTF-8 byte representations.*
+
+**CS9026** occurs when a string literal with the `u8` suffix contains characters or escape sequences that cannot be represented in UTF-8. The most common cause is attempting to use surrogate code points directly in a UTF-8 string literal. UTF-8 string literals must contain valid Unicode text that can be encoded as UTF-8 bytes.
+
+**CS9047** occurs when you attempt to use the addition operator (`+`) to concatenate UTF-8 string literals with non-UTF-8 operands. The addition operator for UTF-8 strings only works when both operands are UTF-8 byte representations (`ReadOnlySpan<byte>`).
+
+For more information on UTF-8 string literals, see the [language reference on UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
 ## Literal strings in data sections
 

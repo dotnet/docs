@@ -115,7 +115,9 @@ For more information, see [strings](../builtin-types/reference-types.md#string-l
 - **CS9008** - *Sequence of '@' characters is not allowed.*
 - **CS9009** - *String must start with quote character.*
 
-Use regular string literals or verbatim string literals instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated before the lexical analysis that recognizes raw string literals, so raw string syntax isn't supported in these contexts.
+To correct these errors, try the following techniques:
+
+- Use regular string literals or verbatim string literals instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated before the lexical analysis that recognizes raw string literals, so raw string syntax isn't supported in these contexts.
 - Complete your raw string literal by adding a closing delimiter that matches the opening delimiter (**CS8997**, **CS9004**). Raw string literals must start and end with the same number of consecutive double-quote characters (at least three: `"""`), which ensures the compiler can correctly identify where the string content ends.
 - Place the opening and closing delimiters of multi-line raw string literals on their own lines, with no other content on those lines (**CS9000**). This requirement ensures consistent formatting and makes the boundaries of the raw string content clear, particularly when the string spans many lines.
 - Add at least one line of content between the opening and closing delimiters of your multi-line raw string literal (**CS9002**). Multi-line raw strings are designed to contain text that spans multiple lines, so the delimiters must enclose actual content rather than appearing on consecutive lines.
@@ -124,8 +126,7 @@ Use regular string literals or verbatim string literals instead of raw string li
 - For interpolated raw string literals, ensure the number of dollar signs (`$`) at the start matches the number of consecutive opening or closing braces you need in the content (**CS9005**, **CS9006**, **CS9007**). For example, use `$$"""` to allow single braces as content while still supporting interpolations with `{{` and `}}`.
 - Use verbatim interpolated string format (`$@"..."`) when combining interpolation with multi-line strings (**CS9001**). Raw string literals support interpolation through the `$` prefix, but multi-line raw strings with interpolation require the verbatim format to correctly handle both features together.
 - Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
-
-Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
+- Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
 
 For more information, see [raw string literals](../tokens/raw-string.md).
 
@@ -134,11 +135,11 @@ For more information, see [raw string literals](../tokens/raw-string.md).
 - **CS9026** - *The input string cannot be converted into the equivalent UTF-8 byte representation.*
 - **CS9047** - *Operator cannot be applied to operands that are not UTF-8 byte representations.*
 
-Remove characters or escape sequences that can't be encoded in UTF-8 from your `u8` string literal (**CS9026**). UTF-8 encoding supports the full Unicode character set but requires valid Unicode scalar values, so surrogate code points (values in the range U+D800 through U+DFFF) can't appear directly in UTF-8 strings because they're reserved for UTF-16 encoding pairs rather than standalone characters.
+To fix this errors, try the following techniques:
 
-Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
-
-Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
+- Remove characters or escape sequences that can't be encoded in UTF-8 from your `u8` string literal (**CS9026**). UTF-8 encoding supports the full Unicode character set but requires valid Unicode scalar values, so surrogate code points (values in the range U+D800 through U+DFFF) can't appear directly in UTF-8 strings because they're reserved for UTF-16 encoding pairs rather than standalone characters.
+- Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
+- Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
 
 For more information, see [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
@@ -147,6 +148,7 @@ For more information, see [UTF-8 string literals](../builtin-types/reference-typ
 - **CS9274**: *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
 - **CS9315**: *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
-Disable the experimental data section string literals feature for your application when you encounter a hash collision (**CS9274**). This error indicates that two different string literals produced the same XXHash128 value, which prevents the optimization from working correctly, so you should remove the feature flag that enables this experimental behavior.
+To fix these issues, try the following techniques:
 
-Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The hot reload infrastructure can't update string literals stored in the data section because they're embedded in a special format that can't be modified at runtime, so continuing execution with the old string values would produce incorrect behavior.
+- Disable the experimental data section string literals feature for your application when you encounter a hash collision (**CS9274**). This error indicates that two different string literals produced the same XXHash128 value, which prevents the optimization from working correctly, so you should remove the feature flag that enables this experimental behavior.
+- Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The hot reload infrastructure can't update string literals stored in the data section because they're embedded in a special format that can't be modified at runtime, so continuing execution with the old string values would produce incorrect behavior.

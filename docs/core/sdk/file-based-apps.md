@@ -344,6 +344,6 @@ repo/
 ## See also
 
 - [.NET SDK overview](../sdk.md)
-- [dotnet run command](../toolsdotnet-run.md)
-- [dotnet build command](../toolsdotnet-build.md)
+- [dotnet run command](../tools/dotnet-run.md)
+- [dotnet build command](../tools/dotnet-build.md)
 - [Native AOT deployment](../deploying/native-aot/index.md)

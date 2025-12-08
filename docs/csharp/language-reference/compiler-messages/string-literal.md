@@ -91,15 +91,16 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS1012** - *Too many characters in character literal.*
 - **CS1039** - *Unterminated string literal.*
 
-Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).ences like `\n` or switch to verbatim strings (with `@`) or raw string literals that support multi-line content.
-- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
+To fix these issues try the following techniques:
 
-Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
+- Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).ences like `\n` or switch to verbatim strings (with `@`) or raw string literals that support multi-line content.
+- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
+- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
 
 For more information, see [strings](../builtin-types/reference-types.md#string-literals), [verbatim strings](../tokens/verbatim.md), and [raw string literals](../tokens/raw-string.md).
 
 ## Incorrectly formed raw string literals
-    
+
 - **CS8996** - *Raw string literals are not allowed in preprocessor directives.*
 - **CS8997** - *Unterminated raw string literal.*
 - **CS8998** - *Not enough starting quotes for this raw string content.*

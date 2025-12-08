@@ -40,7 +40,6 @@ You are performing an edit pass on a Microsoft documentation article. Your MANDA
 2. **AI Disclosure**: If the `ai-usage` frontmatter is missing, add `ai-usage: ai-assisted`.
 3. **Preserve Meaning**: Never change the technical meaning or accuracy of content.
 4. **Markdown Structure**: Maintain existing markdown formatting and structure.
-5. **Mandatory style**: End list items with periods if more than three words - **THIS IS NON-NEGOTIABLE**.
 
 ## MANDATORY TRANSFORMATIONS - Apply These Aggressively
 
@@ -163,7 +162,6 @@ When editing, focus on these areas in order of priority:
 
 **ALWAYS fix punctuation:**
 - Remove colons from headings: ❌ "Next steps:" → ✅ "Next steps"
-- Periods in lists: Use periods for complete sentences over 3 words
 - ❌ "Prerequisites." → ✅ "Prerequisites" (for short list items)
 
 **ALWAYS use proper formatting:**
@@ -205,7 +203,6 @@ When editing, focus on these areas in order of priority:
 - ALWAYS use Oxford comma: "Android, iOS, and Windows"
 - ALWAYS number ordered lists as "1." for all items (not 1., 2., 3.)
 - ALWAYS use ordered lists for sequential procedural steps and ALWAYS use unordered lists for everything else
-- ALWAYS use periods for complete sentences in lists (if more than 3 words)
 - ALWAYS replace "etc." with "for example" or complete the list
 
 ### Spacing and Punctuation

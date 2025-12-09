@@ -17,7 +17,7 @@ Key benefits include:
 - Native AOT publishing enabled by default.
 - Automatic packaging as .NET tools.
 
-In this article, learn more about how to use file-based apps successfully.
+In this article, learn how to create, configure, and work with file-based apps effectively.
 
 ## Supported directives
 
@@ -63,7 +63,7 @@ The .NET CLI provides full support for file-based apps through familiar commands
 
 ### Run applications
 
-Run a file-based app directly using the `dotnet run` command:
+Run a file-based app directly by using the `dotnet run` command:
 
 ```dotnetcli
 dotnet run file.cs
@@ -97,7 +97,7 @@ dotnet file.cs arg1 arg2
 
 ### Build applications
 
-Compile your file-based app using the `dotnet build` command:
+Compile your file-based app by using the `dotnet build` command:
 
 ```dotnetcli
 dotnet build file.cs
@@ -107,7 +107,7 @@ The SDK generates a temporary project and builds your application.
 
 ### Clean build outputs
 
-Remove build artifacts using the `dotnet clean` command:
+Remove build artifacts by using the `dotnet clean` command:
 
 ```dotnetcli
 dotnet clean file.cs
@@ -121,7 +121,7 @@ dotnet clean file-based-apps
 
 ### Publish applications
 
-Create a deployment package using the `dotnet publish` command:
+Create a deployment package by using the `dotnet publish` command:
 
 ```dotnetcli
 dotnet publish file.cs
@@ -131,7 +131,7 @@ File-based apps enable native AOT publishing by default, producing optimized, se
 
 ### Package as tool
 
-Package your file-based app as a .NET tool using the `dotnet pack` command:
+Package your file-based app as a .NET tool by using the `dotnet pack` command:
 
 ```dotnetcli
 dotnet pack file.cs
@@ -141,7 +141,7 @@ File-based apps set `PackAsTool=true` by default.
 
 ### Convert to project
 
-Convert your file-based app to a traditional project using the `dotnet project convert` command:
+Convert your file-based app to a traditional project by using the `dotnet project convert` command:
 
 ```dotnetcli
 dotnet project convert file.cs
@@ -151,7 +151,7 @@ This command creates a `.csproj` file with equivalent SDK and properties. All `#
 
 ### Restore dependencies
 
-Restore NuGet packages referenced in your file using the `dotnet restore` command:
+Restore NuGet packages referenced in your file by using the `dotnet restore` command:
 
 ```dotnetcli
 dotnet restore file.cs
@@ -268,7 +268,7 @@ Caching improves build performance but can cause confusion:
 
 ### Workarounds
 
-- Run a full build using the `--no-cache` flag:
+- Run a full build by using the `--no-cache` flag:
 
   ```dotnetcli
   dotnet build file.cs --no-cache

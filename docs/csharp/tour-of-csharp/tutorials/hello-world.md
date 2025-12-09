@@ -77,7 +77,8 @@ Your first program is limited to printing one message. You can write more useful
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Assignment":::
 
-   Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable. You might notice that the word "Hello" is missing in the last two messages. Let's fix that now. 
+   Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable. You might notice that the word "Hello" is missing in the last two messages. Let's fix that now.
+
 1. Modify the lines that print the message to the following code:
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::

@@ -10,6 +10,7 @@ This tutorial teaches you about the numeric types in C#. You write small amounts
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Launch a GitHub Codespace with a C# development environment.
 > * Explore integer math.
 > * Learn order of operations.

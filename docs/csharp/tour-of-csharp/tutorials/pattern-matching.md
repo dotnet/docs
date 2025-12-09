@@ -10,6 +10,7 @@ This tutorial teaches you how to use pattern matching to inspect data in C#. You
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Launch a GitHub Codespace with a C# development environment.
 > * Test data for discrete values.
 > * Match enum data against value.

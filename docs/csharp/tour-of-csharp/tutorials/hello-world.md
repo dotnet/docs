@@ -11,6 +11,7 @@ This tutorial teaches you C#. You write your first C# program and see the result
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Launch a GitHub Codespace with a C# development environment.
 > * Create your first C# app.
 > * Create and use variables to store text data.

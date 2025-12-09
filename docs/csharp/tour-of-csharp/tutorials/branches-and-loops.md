@@ -10,6 +10,7 @@ This tutorial teaches you how to write C# code that examines variables and chang
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Launch a GitHub Codespace with a C# development environment.
 > * Explore `if` and `else` statements.
 > * Use loops to repeat operations.

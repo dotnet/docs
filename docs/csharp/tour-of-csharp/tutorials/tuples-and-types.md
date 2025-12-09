@@ -12,6 +12,7 @@ The preceding tutorials worked with text and numbers. Strings and numbers are *s
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Create and manipulate tuple types.
 > * Create record types.
 > * Learn about struct, class, and interface types.

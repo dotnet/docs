@@ -44,6 +44,7 @@ For snippets >6 lines:
 1. All code should use the latest stable versions/features.
 1. Create examples in both C# and Visual Basic unless the article referencing the snippet resides in the in the `csharp`, `fsharp`, and `visual-basic` language folders.
 1. When you add code, use code comments sparingly because they don't get localized. You can use them to briefly clarify code-specific details (such as logic, parameters, or edge cases). Put any critical information and context in the markdown text of the referencing article.
+1. IMPORTANT: For created code, always try to encapsulate it in an standalone executable (e.g. `dotnet fsi myFile.fsx` or `dotnet run myFile.cs`, add the necessary boilerplate/imports/usings where needed, and execute it.). Run it, and for every code snippet, include a PR commentary checking each code sample and proving what it has produced - this can be diagnostics, standard output, or a result value. That standalone file is just for the purpose of verification within copilot's execution environment, the published docs snippet should remain a subset as you would normally write to maximize clarity.
 
 ## File Naming
 
@@ -56,6 +57,30 @@ Examples:
 - ❌ Bad: `Getting-Started-With-The-Entity-Framework.md`
 - ❌ Bad: `configure_logging.md`
 - ❌ Bad: `DependencyInjectionGuidelines.md`
+
+## Documentation from External Sources (Blog Posts, Announcements)
+
+When adapting content from external sources like blog posts into documentation:
+
+**DO:**
+- Work on one version, or topic at a time - never combine multiple versions in a single PR. Some blog posts or source material may include many versions or preview builds. The issue or task should specify which one to focus on.
+- Copy working code samples directly from source when available. Follow the rules under ["Code Snippets"](#code-snippets) above.
+- Create a checklist TODO for each section of the source document before writing.
+- Map each documentation section 1:1 to source content.
+- Explicitly state what is copied vs. generated in PR description.
+- Add disclaimers about AI usage when applicable.
+
+**DON'T:**
+- Invent or elaborate on features not explicitly mentioned in source.
+- Create placeholder sections without content.
+- Assume feature details or characteristics.
+- Combine information from multiple versions/sources.
+- Add examples without verifying they demonstrate the stated feature.
+
+**PR Description Must Include:**
+- Content source breakdown. In the description, list each section of the source document and indicate whether it was copied verbatim, adapted, or newly generated.
+- Note all generated sections requiring expert review.
+- Clear warnings about any uncertainties.
 
 ## Special Cases
 

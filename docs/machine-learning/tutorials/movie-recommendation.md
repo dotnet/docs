@@ -34,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 
 ## Select the appropriate machine learning task
 

@@ -35,7 +35,7 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
   Available starting with .NET 9.0 SDK. Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Example
 

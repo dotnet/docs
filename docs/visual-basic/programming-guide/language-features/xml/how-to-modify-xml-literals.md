@@ -17,7 +17,7 @@ Visual Basic provides convenient ways to modify XML literals. You can add or del
 
 1. To modify the value of an XML literal, obtain a reference to the XML literal and set the `Value` property to the desired value.
 
-    The following code example updates the value of all the \<Price> elements in an XML document.
+    The following code example updates the value of all the `<Price>` elements in an XML document.
 
     [!code-vb[VbXmlSamples2#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#4)]
 
@@ -214,7 +214,7 @@ Visual Basic provides convenient ways to modify XML literals. You can add or del
 
     If the element that you are replacing has sub-elements that must be preserved, set the value of the new <xref:System.Xml.Linq.XElement> object to the <xref:System.Xml.Linq.XContainer.Nodes%2A> property of the existing element. This will set the value of the new element to the inner XML of the existing element. Otherwise, you can set the value of the new element to the `Value` property of the existing element.
 
-    The following code example replaces all \<Description> elements with an \<Abstract> element. The content of the \<Description> element is preserved in the new \<Abstract> element by using the <xref:System.Xml.Linq.XContainer.Nodes%2A> property of the \<Description> <xref:System.Xml.Linq.XElement> object.
+    The following code example replaces all `<Description>` elements with an `<Abstract>` element. The content of the `<Description>` element is preserved in the new `<Abstract>` element by using the <xref:System.Xml.Linq.XContainer.Nodes%2A> property of the `<Description>` <xref:System.Xml.Linq.XElement> object.
 
     [!code-vb[VbXmlSamples2#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#8)]
 

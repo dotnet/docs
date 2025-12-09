@@ -6,7 +6,7 @@ metadata:
   author: adegeo
   ms.author: adegeo
   ms.topic: faq
-  ms.date: 09/15/2025
+  ms.date: 12/08/2025
 
 title: GitHub Copilot app modernization FAQ
 summary: |
@@ -14,12 +14,13 @@ summary: |
 
   The tool requires one of the following GitHub Copilot subscriptions:
 
+  - Copilot Free (Starting with Visual Studio 2026 version 18.1)
   - Copilot Pro
   - Copilot Pro+
   - Copilot Business
   - Copilot Enterprise
 
-  GitHub Copilot app modernization is included in [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/).
+  GitHub Copilot app modernization is included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer).
 
 sections:
   - name: Modernization agent
@@ -62,7 +63,7 @@ sections:
 
       - question: What data is collected?
         answer: |
-          The agent only collects telemetry information about project types, intent to upgrade, and upgrade duration. The data is aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=vs-2022).
+          The agent only collects telemetry information about project types, intent to upgrade, and upgrade duration. The data is aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
 
       - question: Can I disable telemetry?
         answer: |

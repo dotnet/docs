@@ -72,9 +72,7 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
-
-  Prints out help for the search command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-lang|--language <language>`**
 

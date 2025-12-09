@@ -15,7 +15,7 @@ In addition, the <xref:System.Security.Cryptography.AesGcm.TagByteSizes?displayP
 
 ## New behavior
 
-On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt%2A?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt%2A?nameWithType> support 16-byte authentication tags only. If you use a smaller tag size on macOS, an <xref:System.ArgumentException> is thrown at run time.
+On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt%2A?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt%2A?nameWithType> support 16-byte authentication tags only. If you use a smaller tag size on macOS, an <xref:System.ArgumentException> is thrown at runtime.
 
 The <xref:System.Security.Cryptography.AesGcm.TagByteSizes?displayProperty=nameWithType> property returns a value of 16 as the supported tag size.
 

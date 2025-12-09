@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 02/18/2025
+ms.date: 11/18/2025
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -33,7 +33,7 @@ In those constructs, you can match an input expression against any of the follow
 - [Positional pattern](#positional-pattern): deconstruct an expression result and test if the resulting values match nested patterns.
 - [`var` pattern](#var-pattern): match any expression and assign its result to a declared variable.
 - [Discard pattern](#discard-pattern): match any expression.
-- [List patterns](#list-patterns): test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
+- [List patterns](#list-patterns): test that a sequence of elements matches corresponding nested patterns.
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
@@ -41,14 +41,14 @@ For the example of how to use those patterns to build a data-driven algorithm, s
 
 ## Declaration and type patterns
 
-You use declaration and type patterns to check if the run-time type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, that variable is assigned a converted expression result, as the following example shows:
+You use declaration and type patterns to check if the run-time type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, that variable is assigned to the converted expression result, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 
 A *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
 - The run-time type of an expression result has an identity conversion to `T`.
-- The type `T` is a `ref struct` type and there is an identity conversion from the expression to `T`.
+- The type `T` is a `ref struct` type and there's an identity conversion from the expression to `T`.
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. This covers inheritance relationships and interface implementations. The following example demonstrates two cases when this condition is true:
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
   In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
@@ -93,7 +93,7 @@ In a constant pattern, you can use any constant expression, such as:
 - the name of a declared [const](../keywords/const.md) field or local
 - `null`
 
-The expression must be a type that is convertible to the constant type, with one exception: An expression whose type is `Span<char>` or `ReadOnlySpan<char>` can be matched against constant strings in C# 11 and later versions.
+The expression must be a type that's convertible to the constant type, with one exception: An expression whose type is `Span<char>` or `ReadOnlySpan<char>` can be matched against constant strings.
 
 Use a constant pattern to check for `null`, as the following example shows:
 
@@ -182,7 +182,7 @@ You can also add a run-time type check and a variable declaration to a property 
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-This specifically means that the *empty* property pattern `is { }` matches everything non-null, and can be used instead of the `is not null` to create a variable: `somethingPossiblyNull is { } somethingDefinitelyNotNull`.
+This construct specifically means that the *empty* property pattern `is { }` matches everything non-null, and can be used instead of the `is not null` to create a variable: `somethingPossiblyNull is { } somethingDefinitelyNotNull`.
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="EmptyPropertyPattern":::
 
@@ -210,7 +210,7 @@ You use a *positional pattern* to deconstruct an expression result and match the
 At the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/functional/deconstruct.md) method, which is used to deconstruct an expression result.
 
 >[!IMPORTANT]
-> The order of members in a positional pattern must match the order of parameters in the `Deconstruct` method. That's because the code generated for the positional pattern calls the `Deconstruct` method.
+> The order of members in a positional pattern must match the order of parameters in the `Deconstruct` method. The code generated for the positional pattern calls the `Deconstruct` method.
 
 You can also match expressions of [tuple types](../builtin-types/value-tuples.md) against positional patterns. In that way, you can match multiple inputs against various patterns, as the following example shows:
 
@@ -278,7 +278,7 @@ You can put parentheses around any pattern. Typically, you do that to emphasize 
 
 ## List patterns
 
-Beginning with C# 11, you can match an array or a list against a *sequence* of patterns, as the following example shows:
+You can match an array or a list against a *sequence* of patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="BasicExample":::
 
@@ -306,8 +306,8 @@ For information about features added in C# 8 and later, see the following featur
 
 - [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
-- [C# 11 - List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
-- [C# 11 - Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
+- [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
+- [Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
 
 ## See also
 

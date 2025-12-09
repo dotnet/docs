@@ -11,7 +11,7 @@ The overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nam
 
 ## Reason for obsoletion
 
-<xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> unconditionally throws a <xref:System.NotSupportedException>. This is a poor development experience. The overload looks like a valid API until it's used, and it throws at run time. Marking it as obsolete gives the necessary design-time signal to not use it.
+<xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> unconditionally throws a <xref:System.NotSupportedException>. This is a poor development experience. The overload looks like a valid API until it's used, and it throws at runtime. Marking it as obsolete gives the necessary design-time signal to not use it.
 
 ## Workaround
 

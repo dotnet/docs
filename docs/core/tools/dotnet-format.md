@@ -82,9 +82,9 @@ None of the options below are required for the `dotnet format` command to succee
 
   Displays version information.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Subcommands
 

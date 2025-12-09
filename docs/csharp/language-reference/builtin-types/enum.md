@@ -1,7 +1,7 @@
 ---
 title: "Enumeration types"
 description: "Learn about C# enumeration types that represent a choice or a combination of choices"
-ms.date: 12/13/2019
+ms.date: 11/24/2025
 f1_keywords:
   - "enum"
   - "enum_CSharpKeyword"
@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "enum type [C#]"
   - "enumeration type [C#]"
   - "bit flags [C#]"
-ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 ---
 # Enumeration types (C# reference)
 
@@ -38,7 +37,7 @@ enum ErrorCode : ushort
 }
 ```
 
-You cannot define a method inside the definition of an enumeration type. To add functionality to an enumeration type, create an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+You can't define a method inside the definition of an enumeration type. To add functionality to an enumeration type, create an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 
 The default value of an enumeration type `E` is the value produced by expression `(E)0`, even if zero doesn't have the corresponding enum member.
 
@@ -50,7 +49,7 @@ C# allows implicit conversions from the literal value `0` to any enum type, and 
 
 In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
 
-This implicit conversion exists because the 0 bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these issues:
+This implicit conversion exists because the 0-bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these issues:
 
 - You should almost always define a member with value `0` in your enums.
 - Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to validate enum values when converting from numeric types.
@@ -62,7 +61,7 @@ You use an enumeration type to represent a choice from a set of mutually exclusi
 
 If you want an enumeration type to represent a combination of choices, define enum members for those choices such that an individual choice is a bit field. That is, the associated values of those enum members should be the powers of two. Then, you can use the [bitwise logical operators `|` or `&`](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators) to combine choices or intersect combinations of choices, respectively. To indicate that an enumeration type declares bit fields, apply the [Flags](xref:System.FlagsAttribute) attribute to it. As the following example shows, you can also include some typical combinations in the definition of an enumeration type.
 
-[!code-csharp[enum flags](snippets/shared/EnumType.cs#Flags)]
+:::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetFlags":::
 
 For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](../../../fundamentals/runtime-libraries/system-enum.md#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
@@ -76,7 +75,7 @@ You can use `System.Enum` in a base class constraint (that is known as the [enum
 
 For any enumeration type, there exist explicit conversions between the enumeration type and its underlying integral type. If you [cast](../operators/type-testing-and-cast.md#cast-expression) an enum value to its underlying type, the result is the associated integral value of an enum member.
 
-[!code-csharp[enum conversions](snippets/shared/EnumType.cs#Conversions)]
+:::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetConversions":::
 
 Use the <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method to determine whether an enumeration type contains an enum member with the certain associated value.
 

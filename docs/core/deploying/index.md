@@ -311,7 +311,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 **Disadvantages**
 
 - **Larger file size**: The single file includes all dependencies, making it larger than individual files.
-- **Slower startup**: Files must be extracted at run time, which can impact startup performance.
+- **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
 Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
@@ -355,7 +355,7 @@ Native AOT deployment compiles your app directly to native code, eliminating the
 
 **Advantages**
 
-- **Fast startup**: No JIT compilation needed at run time, leading to faster application startup.
+- **Fast startup**: No JIT compilation needed at runtime, leading to faster application startup.
 - **Reduced memory usage**: Lower memory footprint compared to traditional .NET applications.
 - **No runtime dependency**: The application runs without requiring .NET runtime installation.
 - **Smaller deployment size**: Often smaller than **self-contained deployment** with the full runtime.

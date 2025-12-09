@@ -4,13 +4,12 @@ description: File-based apps are command line utilities that are built and execu
 ms.date: 08/14/2025
 ms.topic: tutorial
 ai-usage: ai-assisted
-#customer intent: As a developer, I want build utilities so that more work is automated.
+#customer intent: As a developer, I want to build utilities so that more work is automated.
 ---
 
 # Tutorial: Build file-based C# programs
 
-*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) directives.
-
+*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md).
 In this tutorial, you:
 
 > [!div class="checklist"]
@@ -84,7 +83,13 @@ On unix, you can run file-based apps directly, typing the source file name on th
    #!/usr/local/share/dotnet/dotnet run
    ```
 
-The location of `dotnet` can be different on different unix installations. Use the command `whence dotnet` to local the `dotnet` host in your environment.
+The location of `dotnet` can be different on different unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
+
+Alternatively, you can use `#!/usr/bin/env dotnet` to resolve the dotnet path from the PATH environment variable automatically:
+
+```csharp
+#!/usr/bin/env dotnet
+```
 
 After making these two changes, you can run the program from the command line directly:
 
@@ -211,7 +216,7 @@ The `System.CommandLine` library offers several key benefits:
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="CommandLinePackage":::
 
    > [!IMPORTANT]
-   > The version `2.0.0-beta6` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
+   > The version `2.0.0` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
 
 1. Add the necessary using statements at the top of your file (after the `#!` and `#:package` directives):
 

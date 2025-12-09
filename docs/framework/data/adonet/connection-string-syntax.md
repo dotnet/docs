@@ -23,7 +23,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
 - <xref:System.Data.Odbc.OdbcConnectionStringBuilder>
 - <xref:System.Data.OracleClient.OracleConnectionStringBuilder>
 
- The connection string builders allow you to construct syntactically valid connection strings at run time, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](connection-string-builders.md).
+ The connection string builders allow you to construct syntactically valid connection strings at runtime, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](connection-string-builders.md).
 
 ## Windows authentication
 
@@ -50,7 +50,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 
 ### Windows authentication with SqlClient
 
- Each of the following forms of syntax uses Windows Authentication to connect to the **AdventureWorks** database on a local server.
+ Each of the following forms of syntax uses Windows Authentication to connect to the `AdventureWorks` database on a local server.
 
 ```csharp
 "Persist Security Info=False;Integrated Security=true;
@@ -131,7 +131,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 
 ## OleDb connection strings
 
- The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at run time by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
+ The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at runtime by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
 
 ### OleDb connection string syntax
 
@@ -148,7 +148,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System D
 ```
 
 > [!IMPORTANT]
-> It is possible to supply connection information for an **OleDbConnection** in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using .NET Framework. UDL files are not supported for **SqlClient**.
+> It is possible to supply connection information for an `OleDbConnection` in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using .NET Framework. UDL files are not supported for **SqlClient**.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 

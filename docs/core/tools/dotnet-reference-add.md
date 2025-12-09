@@ -64,9 +64,9 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 
   Adds project references only when targeting a specific [framework](../../standard/frameworks.md) using the TFM format.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 ## Examples
 

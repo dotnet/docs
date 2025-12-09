@@ -191,7 +191,7 @@ The default severity of the following analyzers changed from Info to Warning:
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
 ### DisableAppDomain now defaults to true when running under Microsoft.Testing.Platform
 

@@ -124,7 +124,7 @@ To implement value equality, the compiler synthesizes several methods, including
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
 
-* Overrides of operators `==` and `!=`. It's an error if the operators are declared explicitly.
+* Overrides of [operator `==`](../operators/equality-operators.md#equality-operator-) and [operator `!=`](../operators/equality-operators.md#inequality-operator-). It's an error if the operators are declared explicitly.
 
 * If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
 
@@ -263,4 +263,5 @@ For more information about these features, see the following feature proposal no
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
 - [The C# type system](../../fundamentals/types/index.md)
+- [Operator overloading](../operators/operator-overloading.md)
 - [`with` expression](../operators/with-expression.md)

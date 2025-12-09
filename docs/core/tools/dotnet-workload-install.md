@@ -74,29 +74,29 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 ## Options
 
-[!INCLUDE [config-file](../../../includes/cli-configfile.md)]
+- [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
-[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
+- [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
+- [!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
 
-[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
+- [!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
+- [!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
-[!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
+- [!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
 
-[!INCLUDE [source](../../../includes/cli-source.md)]
+- [!INCLUDE [source](../../../includes/cli-source.md)]
 
-[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
+- [!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
-[!INCLUDE [workload-version](../../../includes/cli-workload-version.md)]
+- [!INCLUDE [workload-version](../../../includes/cli-workload-version.md)]
 
 ## Examples
 

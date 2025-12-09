@@ -45,7 +45,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 
   The .NET implementation supports side-by-side installations of different versions of the .NET runtime on the same machine. That capability allows multiple services on the same server, each on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
 
-  Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time: each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine because the previous version was replaced.
+  Side-by-side installation isn't possible with .NET Framework 4. It's a Windows component, and only one version of .NET Framework 4 can exist on a machine at a time: each version of .NET Framework 4 replaces the previous version. (.NET Framework 3.5 is separate and optional.)
 
 - **Is more secure.**
 

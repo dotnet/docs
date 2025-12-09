@@ -15,8 +15,8 @@ There are several tips and tricks that are common C# developer practices:
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
-- [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
+- [Implement and call a custom extension member](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
+- [Create a new method for an `enum` type using extension member](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ### Class, record, and struct members
 

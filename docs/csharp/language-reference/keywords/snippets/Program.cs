@@ -8,8 +8,6 @@ namespace Keywords
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("=================    Generic Where Constraints Examples ======================");
-            GenericWhereConstraints.Examples();
             Console.WriteLine("=================    readonly Keyword Examples ======================");
             ReadonlyKeywordExamples.Examples();
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");

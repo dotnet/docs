@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "defaultProxy element"
   - "<defaultProxy> element"
 ---
-# \<defaultProxy> element (network settings)
+# `<defaultProxy>` element (network settings)
 
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 

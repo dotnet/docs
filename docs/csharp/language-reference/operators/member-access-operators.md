@@ -1,7 +1,7 @@
 ---
 title: "Member access and null-conditional operators and expressions:"
 description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
-ms.date: 05/29/2025
+ms.date: 11/24/2025
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -62,7 +62,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
  :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 
-You can also use `.` to access an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+You can also use `.` to access an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 
 ## Indexer operator []
 

@@ -1,8 +1,7 @@
 ---
-ms.date: 10/01/2025
+ms.date: 12/03/2025
 ms.topic: include
 ---
+**`--no-self-contained`**
 
-- **`--no-self-contained`**
-
-  Equivalent to `--self-contained false`.
+Publish your application as a framework-dependent application. A compatible .NET runtime must be installed on the target machine to run your application.

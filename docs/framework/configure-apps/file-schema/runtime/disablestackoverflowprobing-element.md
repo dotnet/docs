@@ -3,7 +3,7 @@ description: "Learn more about the <disableStackOverflowProbing> element"
 title: "<disableStackOverflowProbing> Element"
 ms.date: 04/20/2022
 ---
-# \<disableStackOverflowProbing> Element
+# `<disableStackOverflowProbing>` Element
 
 Specifies whether stack-overflow probing is disabled.
 
@@ -44,5 +44,5 @@ The `<disableStackOverflowProbing>` specifies whether stack-overflow probing is 
 ## See also
 
 - [Configure apps by using configuration files](../../index.md)
-- [\<runtime> Element](runtime-element.md)
-- [\<configuration> Element](../configuration-element.md)
+- [`<runtime>` Element](runtime-element.md)
+- [`<configuration>` Element](../configuration-element.md)

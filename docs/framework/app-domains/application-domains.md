@@ -85,7 +85,7 @@ Operating systems and runtime environments typically provide some form of isolat
 
 ## Application domains and threads
 
- An application domain forms an isolation boundary for security, versioning, reliability, and unloading of managed code. A thread is the operating system construct used by the common language runtime to execute code. At run time, all managed code is loaded into an application domain and is run by one or more managed threads.
+ An application domain forms an isolation boundary for security, versioning, reliability, and unloading of managed code. A thread is the operating system construct used by the common language runtime to execute code. At runtime, all managed code is loaded into an application domain and is run by one or more managed threads.
 
  There is not a one-to-one correlation between application domains and threads. Several threads can execute in a single application domain at any given time, and a particular thread is not confined to a single application domain. That is, threads are free to cross application domain boundaries; a new thread is not created for each application domain.
 

@@ -1,7 +1,7 @@
 ---
 title: "Deconstruction expression - extract properties or fields from a tuple or other type"
 description: "Learn about deconstruction expressions: expressions that extract individual properties or fields from a tuple or user defined type into discrete expressions."
-ms.date: 12/17/2024
+ms.date: 11/24/2025
 ---
 # Deconstruction expression - Extract properties of fields from a tuple or other user-defined type
 
@@ -37,7 +37,7 @@ You can make use of this behavior to specify which properties of your record typ
 
 ## Declare `Deconstruct` methods
 
-You can add deconstruction support to any class, struct, or interface you declare. You declare one or more `Deconstruct` methods in your type, or as extension methods on that type. A deconstruction expression calls a  method `void Deconstruct(out var p1, ..., out var pn)`. The `Deconstruct` method can be either an instance method or an extension method. The type of each parameter in the `Deconstruct` method must match the type of the corresponding argument in the deconstruction expression. The deconstruction expression assigns the value of each argument to the value of the corresponding `out` parameter in the `Deconstruct` method. If multiple `Deconstruct` methods match the deconstruction expression, the compiler reports an error for the ambiguity.
+You can add deconstruction support to any class, struct, or interface you declare. You declare one or more `Deconstruct` methods in your type, or as extension on that type. A deconstruction expression calls a  method `void Deconstruct(out var p1, ..., out var pn)`. The `Deconstruct` method can be either an instance method or an extension method. The type of each parameter in the `Deconstruct` method must match the type of the corresponding argument in the deconstruction expression. The deconstruction expression assigns the value of each argument to the value of the corresponding `out` parameter in the `Deconstruct` method. If multiple `Deconstruct` methods match the deconstruction expression, the compiler reports an error for the ambiguity.
 
 The following code declares a `Point3D` struct that has two `Deconstruct` methods:
 

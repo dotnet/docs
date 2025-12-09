@@ -63,9 +63,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-- **`-?|-h|--help`**
-
-  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-lang|--language {C#|F#|VB}`**
 
@@ -100,9 +98,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Template options
 

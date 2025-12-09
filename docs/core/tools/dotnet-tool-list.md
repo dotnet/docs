@@ -48,7 +48,7 @@ The `dotnet tool list` command provides a way for you to list .NET global, tool-
 
   Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--local`**
 

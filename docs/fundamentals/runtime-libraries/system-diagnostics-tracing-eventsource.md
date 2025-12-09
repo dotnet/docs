@@ -59,7 +59,7 @@ Traditionally, user-defined <xref:System.Diagnostics.Tracing.EventSource> object
 > Abstract <xref:System.Diagnostics.Tracing.EventSource> objects cannot define keywords, tasks, opcodes, channels, or events.
 
 > [!IMPORTANT]
-> To avoid name collisions at run time when generating event metadata, don't explicitly implement interface methods when using interfaces with <xref:System.Diagnostics.Tracing.EventSource>.
+> To avoid name collisions at runtime when generating event metadata, don't explicitly implement interface methods when using interfaces with <xref:System.Diagnostics.Tracing.EventSource>.
 
 The following example shows an implementation of <xref:System.Diagnostics.Tracing.EventSource> that uses an interface.
 

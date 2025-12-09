@@ -18,7 +18,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Windows](#tab/windows)
 
-[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+[Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
 # [Alpine](#tab/linux-alpine)
 
@@ -128,19 +128,19 @@ The debug file is necessary for running the app under the [debugger or inspectin
 Native AOT apps have the following limitations:
 
 - No dynamic loading, for example, `Assembly.LoadFile`.
-- No run-time code generation, for example, `System.Reflection.Emit`.
+- No runtime code generation, for example, `System.Reflection.Emit`.
 - No C++/CLI.
 - Windows: No built-in COM.
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#self-contained-deployment), increasing their size as compared to framework-dependent apps).
-- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
+- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than runtime generated compiled code.
 - Generic parameters substituted with struct type arguments have specialized code generated for each instantiation. In the dynamic runtime, many instantiations are generated on-demand. In Native AOT, all instantiations are pre-generated. This can have significant impact to the disk size of the application. Generic virtual methods and generic instance methods will also have an instantiation for every implementing or overriding type.
 - Not all the runtime libraries are fully annotated to be Native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).
 
-The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app might encounter at run time.
+The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app might encounter at runtime.
 
 ## Platform/architecture restrictions
 

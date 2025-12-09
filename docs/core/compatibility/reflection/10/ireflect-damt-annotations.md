@@ -29,7 +29,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change) and 
 
 ## Reason for change
 
-The change was introduced to improve the accuracy of annotations in <xref:System.Reflection> APIs and to address issues caused by the overly permissive <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType> annotation. This ensures better compatibility with trimming and reflection scenarios, reduces run-time warnings, and prevents unsafe reflection calls.
+The change was introduced to improve the accuracy of annotations in <xref:System.Reflection> APIs and to address issues caused by the overly permissive <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType> annotation. This ensures better compatibility with trimming and reflection scenarios, reduces runtime warnings, and prevents unsafe reflection calls.
 
 ## Recommended action
 
@@ -53,7 +53,7 @@ If you implement <xref:System.Reflection.IReflect> or derive from <xref:System.R
    }
    ```
 
-1. Test reflection scenarios to ensure that the updated annotations capture the intended members and don't introduce run-time errors or warnings.
+1. Test reflection scenarios to ensure that the updated annotations capture the intended members and don't introduce runtime errors or warnings.
 
 For more information on `DynamicallyAccessedMembers` annotations and their usage, see [Prepare .NET libraries for trimming](../../../deploying/trimming/prepare-libraries-for-trimming.md).
 

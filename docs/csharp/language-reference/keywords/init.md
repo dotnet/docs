@@ -1,7 +1,7 @@
 ---
 description: "The `init` keyword is used to declare a `set` accessor that can only be called during an object's initialization: either by a constructor or as part of an object initializer."
 title: "The init keyword - init only properties"
-ms.date: 12/06/2023
+ms.date: 11/18/2025
 f1_keywords: 
   - "init"
   - "init_CSharpKeyword"
@@ -17,11 +17,9 @@ The following code demonstrates an `init` accessor in an automatically implement
 
 :::code language="csharp" source="snippets/InitExample2.cs":::
 
-You might need to implement one of the accessors to provide parameter validation. You can do that using the `field` keyword, introduced as a preview feature in C# 13. The `field` keyword accesses the compiler synthesized backing field for that property. The following example shows a property where the `init` accessor validates the range of the `value` parameter"
+You might need to implement one of the accessors to provide parameter validation. You can do that using the `field` keyword, introduced in C# 14. The `field` keyword accesses the compiler synthesized backing field for that property. The following example shows a property where the `init` accessor validates the range of the `value` parameter."
 
 :::code language="csharp" source="snippets/InitExample5.cs":::
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 The `init` accessor can be used as an expression-bodied member. Example:
 

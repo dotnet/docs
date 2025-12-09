@@ -7,7 +7,7 @@ ms.date: "03/30/2017"
 
 Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it isn't secured. Storing connection information in plain text or persisting it in memory risks compromising your entire system. Connection strings embedded in your source code can be read using the [Ildasm.exe (IL Disassembler)](../../tools/ildasm-exe-il-disassembler.md) to view common intermediate language (CIL) in a compiled assembly.
 
-Security vulnerabilities involving connection strings can arise based on the type of authentication used, how connection strings are persisted in memory and on disk, and the techniques used to construct them at run time.
+Security vulnerabilities involving connection strings can arise based on the type of authentication used, how connection strings are persisted in memory and on disk, and the techniques used to construct them at runtime.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
@@ -42,7 +42,7 @@ The default value for `Persist Security Info` is false; we recommend using this 
 
 ## Encrypt Configuration Files
 
- You can also store connection strings in configuration files, which eliminates the need to embed them in your application's code. Configuration files are standard XML files for which .NET Framework has defined a common set of elements. Connection strings in configuration files are typically stored inside the **\<connectionStrings>** element in the **app.config** for a Windows application, or the **web.config** file for an ASP.NET application. For more information on the basics of storing, retrieving and encrypting connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
+ You can also store connection strings in configuration files, which eliminates the need to embed them in your application's code. Configuration files are standard XML files for which .NET Framework has defined a common set of elements. Connection strings in configuration files are typically stored inside the `<connectionStrings>` element in the **app.config** for a Windows application, or the **web.config** file for an ASP.NET application. For more information on the basics of storing, retrieving and encrypting connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
 
 ## See also
 

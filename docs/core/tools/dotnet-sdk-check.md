@@ -54,7 +54,7 @@ The latest versions of .NET can be installed from https://aka.ms/dotnet-core-dow
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

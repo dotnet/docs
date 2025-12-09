@@ -13,8 +13,8 @@ This tutorial lacks appropriate error handling and other essential code useful f
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)
-- [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads)
+- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 
 ## Project setup
 

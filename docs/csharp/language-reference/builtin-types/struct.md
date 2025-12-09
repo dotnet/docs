@@ -1,7 +1,7 @@
 ---
 title: "Structure types"
 description: Learn about the struct type in C#
-ms.date: 11/22/2024
+ms.date: 11/18/2025
 f1_keywords:
   - "struct_CSharpKeyword"
 helpviewer_keywords:
@@ -110,11 +110,11 @@ But it can be any reference type, or any value type:
 
 You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature spec](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
 
 ## Struct initialization and default values
 
-A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example consider the following code:
+A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example, consider the following code:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
@@ -132,7 +132,7 @@ All of a struct's member fields must be *definitely assigned* when created becau
 - You can add *field initializers* to any field or auto implemented property.
 - You can initialize any fields, or auto properties, in the body of the constructor.
 
-Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
+If you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
@@ -152,7 +152,7 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 - You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
-- Before C# 11, a constructor of a structure type must initialize all instance fields of the type.
+- A constructor of a structure type must initialize all instance fields of the type.
 
 ## Passing structure-type variables by reference
 

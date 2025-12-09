@@ -18,13 +18,13 @@ To use resilience-patterns in HTTP apps, install the [Microsoft.Extensions.Http.
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
+dotnet add package Microsoft.Extensions.Http.Resilience
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.0.0" />
+<PackageReference Include="Microsoft.Extensions.Http.Resilience" />
 ```
 
 ---
@@ -209,7 +209,7 @@ There are many options available for each of the resilience strategies. For more
 
 ### Dynamic reload
 
-Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at run time. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
+Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at runtime. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
 
 :::code language="csharp" source="snippets/http-resilience/Program.CustomHandler.cs" id="advanced":::
 

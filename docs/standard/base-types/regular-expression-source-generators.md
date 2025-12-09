@@ -2,7 +2,7 @@
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
 ms.topic: concept-article
-ms.date: 05/29/2024
+ms.date: 10/20/2025
 author: IEvangelist
 ms.author: dapine
 ---
@@ -368,7 +368,7 @@ Also, neither `RegexCompiler` nor the source generator supports the new `RegexOp
 The general guidance is if you can use the source generator, use it. If you're using `Regex` today in C# with arguments known at compile time, and especially if you're already using `RegexOptions.Compiled` (because the regex has been identified as a hot spot that would benefit from faster throughput), you should prefer to use the source generator. The source generator will give your regex the following benefits:
 
 - All the throughput benefits of `RegexOptions.Compiled`.
-- The startup benefits of not having to do all the regex parsing, analysis, and compilation at run time.
+- The startup benefits of not having to do all the regex parsing, analysis, and compilation at runtime.
 - The option of using ahead-of-time compilation with the code generated for the regex.
 - Better debuggability and understanding of the regex.
 - The possibility to reduce the size of your trimmed app by trimming out large swaths of code associated with `RegexCompiler` (and potentially even reflection emit itself).

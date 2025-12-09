@@ -2,7 +2,7 @@
 description: "Learn more about: App Settings schema"
 title: "App Settings schema"
 ms.date: "05/01/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "schema app settings"
   - "app settings, schema [Windows Forms]"
   - "Windows Forms, app settings schema"
@@ -21,24 +21,24 @@ Contains custom application settings, such as file paths, XML Web service URLs, 
 
 | Element | Description |
 | ------- | ----------- |
-| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains **\<add>**, **\<clear>**, and **\<remove>** tags to control application settings. Has an optional **file** attribute. |
-| [**\<add>**](add-element-for-appsettings.md) | Defines a setting. Child of **\<appSettings>**. Requires **key** and **value** attributes. |
-| [**\<clear>**](clear-element-for-appsettings.md) | Clears all settings. Child of **\<appSettings>**. Has no attributes. |
-| [**\<remove>**](remove-element-for-appsettings.md) | Removes a setting. Child of **\<appSettings>**. Requires a **key** attribute. |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains `<add>`, `<clear>`, and `<remove>` tags to control application settings. Has an optional `file` attribute. |
+| [**\<add>**](add-element-for-appsettings.md) | Defines a setting. Child of `<appSettings>`. Requires `key` and `value` attributes. |
+| [**\<clear>**](clear-element-for-appsettings.md) | Clears all settings. Child of `<appSettings>`. Has no attributes. |
+| [**\<remove>**](remove-element-for-appsettings.md) | Removes a setting. Child of `<appSettings>`. Requires a `key` attribute. |
 
-## \<appSettings> element
+## `<appSettings>` element
 
-This element contains **\<add>**, **\<clear>**, and **\<remove>** tags to control application settings. It defines an optional attribute for **file**.
+This element contains `<add>`, `<clear>`, and `<remove>` tags to control application settings. It defines an optional attribute for **file**.
 
-## \<add> element
+## `<add>` element
 
-Adds a custom application setting as a name/value pair to the application settings collection. It defines attributes for **key** and **value**.
+Adds a custom application setting as a name/value pair to the application settings collection. It defines attributes for `key` and **value**.
 
-## \<clear> element
+## `<clear>` element
 
-Removes all references to inherited custom application settings and allows only the references that are added by **\<add>** elements following the **\<clear>** element. It defines no attributes.
+Removes all references to inherited custom application settings and allows only the references that are added by `<add>` elements following the `<clear>` element. It defines no attributes.
 
-## \<remove> element
+## `<remove>` element
 
 Removes a reference to an inherited custom application setting from the application settings collection. It defines an attribute for **key**.
 

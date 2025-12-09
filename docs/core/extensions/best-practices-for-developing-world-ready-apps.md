@@ -55,7 +55,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. Do not put non-localizable resources into the resource-only DLLs. This confuses translators.
 
-1. Do not use composite strings that are built at run time from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
+1. Do not use composite strings that are built at runtime from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
 
 1. Avoid ambiguous constructs such as "Empty Folder" where the strings can be translated differently depending on the grammatical roles of the string components. For example, "empty" can be either a verb or an adjective, which can lead to different translations in languages such as Italian or French.
 
@@ -88,7 +88,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. Specify the values for the `requestEncoding`, `responseEncoding`, `fileEncoding`, `culture`, and `uiCulture` attributes in the following three places in an ASP.NET application:
 
-    - In the globalization section of a _Web.config_ file. This file is external to the ASP.NET application. For more information, see [\<globalization> element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
+    - In the globalization section of a _Web.config_ file. This file is external to the ASP.NET application. For more information, see [`<globalization>` element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
     - In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in a page directive.
     - Programmatically in application code. This setting can vary per request. As with a page directive, by the time the application's code is reached, it is too late to specify `fileEncoding` and `requestEncoding`. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in the application code.
 

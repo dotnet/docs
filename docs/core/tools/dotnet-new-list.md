@@ -75,9 +75,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
-
-  Prints out help for the list command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-constraints`**
 
@@ -106,9 +104,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
   
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

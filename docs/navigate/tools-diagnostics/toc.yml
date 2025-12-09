@@ -194,6 +194,8 @@ items:
                 href: ../../core/tools/dotnet-package-update.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet project convert
+            href: ../../core/tools/dotnet-project-convert.md
           - name: dotnet reference add/list/remove
             items:
               - name: dotnet reference add
@@ -314,6 +316,9 @@ items:
       - name: Manage tools
         displayName: global tool,local tool
         href: ../../core/tools/global-tools.md
+      - name: RID-specific, self-contained, and AOT tools
+        displayName: rid-specific tool,self-contained tool,aot tool
+        href: ../../core/tools/rid-specific-tools.md
       - name: Troubleshoot tools
         displayName: global tool troubleshooting,local tool troubleshooting,
         href: ../../core/tools/troubleshoot-usage-issues.md

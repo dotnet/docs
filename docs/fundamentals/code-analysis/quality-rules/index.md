@@ -11,7 +11,7 @@ ms.date: 01/31/2024
 
 The following table lists code quality analysis rules.
 
-> [!div class="mx-tdCol2BreakAll"]
+> [!div class="mx-tdBreakAll"]
 >
 > | Rule ID and warning | Description |
 > | ------------------- | ----------- |
@@ -78,7 +78,7 @@ The following table lists code quality analysis rules.
 > | [CA1417: Do not use `OutAttribute` on string parameters for P/Invokes](ca1417.md) | String parameters passed by value with the `OutAttribute` can destabilize the runtime if the string is an interned string. |
 > | [CA1418: Use valid platform string](ca1418.md) | Platform compatibility analyzer requires a valid platform name and version. |
 > | [CA1419: Provide a parameterless constructor that is as visible as the containing type for concrete types derived from `System.Runtime.InteropServices.SafeHandle`](ca1419.md) | Providing a parameterless constructor that is as visible as the containing type for a type derived from `System.Runtime.InteropServices.SafeHandle` enables better performance and usage with source-generated interop solutions. |
-> | [CA1420: Property, type, or attribute requires runtime marshalling](ca1420.md) | Using features that require runtime marshalling when runtime marshalling is disabled will result in run-time exceptions. |
+> | [CA1420: Property, type, or attribute requires runtime marshalling](ca1420.md) | Using features that require runtime marshalling when runtime marshalling is disabled will result in runtime exceptions. |
 > | [CA1421: Method uses runtime marshalling when DisableRuntimeMarshallingAttribute is applied](ca1421.md) | A method uses runtime marshalling, and runtime marshalling is explicitly disabled. |
 > | [CA1422: Validate platform compatibility](ca1422.md) | Calling an API that's obsolete in a given OS (version) from a call site that's reachable from that OS (version) is not recommended. |
 > | [CA1501: Avoid excessive inheritance](ca1501.md) | A type is more than four levels deep in its inheritance hierarchy. Deeply nested type hierarchies can be difficult to follow, understand, and maintain. |
@@ -86,7 +86,7 @@ The following table lists code quality analysis rules.
 > | [CA1505: Avoid unmaintainable code](ca1505.md) | A type or method has a low maintainability index value. A low maintainability index indicates that a type or method is probably difficult to maintain and would be a good candidate for redesign. |
 > | [CA1506: Avoid excessive class coupling](ca1506.md) | This rule measures class coupling by counting the number of unique type references that a type or method contains. |
 > | [CA1507: Use nameof in place of string](ca1507.md) | A string literal is used as an argument where a `nameof` expression could be used. |
-> | [CA1508: Avoid dead conditional code](ca1508.md) | A method has conditional code that always evaluates to `true` or `false` at run time. This leads to dead code in the `false` branch of the condition. |
+> | [CA1508: Avoid dead conditional code](ca1508.md) | A method has conditional code that always evaluates to `true` or `false` at runtime. This leads to dead code in the `false` branch of the condition. |
 > | [CA1509: Invalid entry in code metrics configuration file](ca1509.md) | Code metrics rules, such as [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) and [CA1506](ca1506.md), supplied a configuration file named `CodeMetricsConfig.txt` that has an invalid entry. |
 > | [CA1510: Use ArgumentNullException throw helper](ca1510.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
 > | [CA1511: Use ArgumentException throw helper](ca1511.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
@@ -112,7 +112,7 @@ The following table lists code quality analysis rules.
 > | [CA1725: Parameter names should match base declaration](ca1725.md) | Consistent naming of parameters in an override hierarchy increases the usability of the method overrides. A parameter name in a derived method that differs from the name in the base declaration can cause confusion about whether the method is an override of the base method or a new overload of the method. |
 > | [CA1727: Use PascalCase for named placeholders](ca1727.md) | Use PascalCase for named placeholders in the logging message template. |
 > | [CA1801: Review unused parameters](ca1801.md) | A method signature includes a parameter that is not used in the method body. |
-> | [CA1802: Use Literals Where Appropriate](ca1802.md) | A field is declared static and read-only (Shared and ReadOnly in Visual Basic), and is initialized by using a value that is computable at compile time. Because the value that is assigned to the targeted field is computable at compile time, change the declaration to a const (Const in Visual Basic) field so that the value is computed at compile time instead of at run time. |
+> | [CA1802: Use Literals Where Appropriate](ca1802.md) | A field is declared static and read-only (Shared and ReadOnly in Visual Basic), and is initialized by using a value that is computable at compile time. Because the value that is assigned to the targeted field is computable at compile time, change the declaration to a const (Const in Visual Basic) field so that the value is computed at compile time instead of at runtime. |
 > | [CA1805: Do not initialize unnecessarily](ca1805.md) | The .NET runtime initializes all fields of reference types to their default values before running the constructor. In most cases, explicitly initializing a field to its default value is redundant, which adds to maintenance costs and might degrade performance (such as with increased assembly size). |
 > | [CA1806: Do not ignore method results](ca1806.md) | A new object is created but never used; or a method that creates and returns a new string is called and the new string is never used; or a COM or P/Invoke method returns an HRESULT or error code that is never used. |
 > | [CA1810: Initialize reference type static fields inline](ca1810.md) | When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each static method and instance constructor of the type to make sure that the static constructor was previously called. Static constructor checks can decrease performance. |
@@ -240,7 +240,7 @@ The following table lists code quality analysis rules.
 > | [CA2254: Template should be a static expression](ca2254.md) | The logging message template should not vary between calls. |
 > | [CA2255: The `ModuleInitializer` attribute should not be used in libraries](ca2255.md) | Module initializers are intended to be used by application code to ensure an application's components are initialized before the application code begins executing. |
 > | [CA2256: All members declared in parent interfaces must have an implementation in a DynamicInterfaceCastableImplementation-attributed interface](ca2256.md) | Types attributed with `DynamicInterfaceCastableImplementationAttribute` act as an interface implementation for a type that implements the `IDynamicInterfaceCastable` type. As a result, it must provide an implementation of all of the members defined in the inherited interfaces, because the type that implements `IDynamicInterfaceCastable` will not provide them otherwise. |
-> | [CA2257: Members defined on an interface with `DynamicInterfaceCastableImplementationAttribute` should be `static`](ca2257.md) | Since a type that implements `IDynamicInterfaceCastable` might not implement a dynamic interface in metadata, calls to an instance interface member that is not an explicit implementation defined on this type are likely to fail at run time. Mark new interface members `static` to avoid run-time errors. |
+> | [CA2257: Members defined on an interface with `DynamicInterfaceCastableImplementationAttribute` should be `static`](ca2257.md) | Since a type that implements `IDynamicInterfaceCastable` might not implement a dynamic interface in metadata, calls to an instance interface member that is not an explicit implementation defined on this type are likely to fail at runtime. Mark new interface members `static` to avoid runtime errors. |
 > | [CA2258: Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported](ca2258.md) | Providing a functional `DynamicInterfaceCastableImplementationAttribute`-attributed interface requires the Default Interface Members feature, which is unsupported in Visual Basic. |
 > | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 > | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
@@ -355,7 +355,7 @@ The following table shows the type of information that is provided for each rule
 | Type         | The TypeName for the rule.                       |
 | **Rule ID**  | The unique identifier for the rule. RuleId and Category are used for in-source suppression of a warning. |
 | **Category** | The category of the rule, for example, security. |
-| **Fix is breaking or non-breaking** | Whether the fix for a violation of the rule is a breaking change. Breaking change means that an assembly that has a dependency on the target that caused the violation will not recompile with the new fixed version or might fail at run time because of the change. When multiple fixes are available and at least one fix is a breaking change and one fix is not, both 'Breaking' and 'Non-breaking' are specified. |
+| **Fix is breaking or non-breaking** | Whether the fix for a violation of the rule is a breaking change. Breaking change means that an assembly that has a dependency on the target that caused the violation will not recompile with the new fixed version or might fail at runtime because of the change. When multiple fixes are available and at least one fix is a breaking change and one fix is not, both 'Breaking' and 'Non-breaking' are specified. |
 | Cause | The specific managed code that causes the rule to generate a warning. |
 | Description | Discusses the issues that are behind the warning. |
 | How to fix violations | Explains how to change the source code to satisfy the rule and prevent it from generating a warning. |

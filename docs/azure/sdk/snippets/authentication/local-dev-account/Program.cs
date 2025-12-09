@@ -1,11 +1,10 @@
-﻿using Azure.Identity;
-using Microsoft.Extensions.Azure;
+﻿using Microsoft.Extensions.Azure;
 using Azure.Storage.Blobs;
-using Azure.Core;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-registerUsingServicePrincipal(builder);
+registerUsingUserPrincipal(builder);
 
 var app = builder.Build();
 
@@ -43,24 +42,30 @@ app.MapGet("/weatherforecast", async (BlobServiceClient client) =>
 
 app.Run();
 
-void registerUsingServicePrincipal(WebApplicationBuilder builder)
+void registerUsingUserPrincipal(WebApplicationBuilder builder)
 {
-    #region snippet_DefaultAzureCredential_UseCredential
+    #region snippet_VisualStudioCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        clientBuilder.UseCredential(new DefaultAzureCredential());
+        VisualStudioCredential credential = new();
+        clientBuilder.UseCredential(credential);
     });
-    #endregion snippet_DefaultAzureCredential_UseCredential
+    #endregion snippet_VisualStudioCredential
 
-    #region snippet_DefaultAzureCredential
-    builder.Services.AddSingleton<BlobServiceClient>(_ =>
-        new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"),
-            new DefaultAzureCredential()));
-    #endregion snippet_DefaultAzureCredential
+    #region snippet_DefaultAzureCredentialDev
+    builder.Services.AddAzureClients(clientBuilder =>
+    {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+
+        DefaultAzureCredential credential = new(
+            DefaultAzureCredential.DefaultEnvironmentVariableName);
+        clientBuilder.UseCredential(credential);
+    });
+    #endregion snippet_DefaultAzureCredentialDev
 }
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

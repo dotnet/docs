@@ -69,7 +69,7 @@ If you have JSON that you want to deserialize, and you don't have the class to d
 
   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM, see [Deserialize subsections of a JSON payload](use-dom.md#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
-* Use Visual Studio 2022 to automatically generate the class you need:
+* Use Visual Studio 2022 or later to automatically generate the class you need:
 
   * Copy the JSON that you need to deserialize.
   * Create a class file and delete the template code.
@@ -89,13 +89,13 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 ## Use AI to deserialize JSON
 
-You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to deserialize from JSON. You can customize the prompt to use a JSON string with property names and values that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to deserialize from JSON. For example, you can customize the prompt to demonstrate deserialization when the target class defines a property that's missing from the JSON input.
 
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate code to use System.Text.Json to deserialize a JSON string {"FirstName":"John","LastName":"Doe","Age":30} to an equivalent .NET object.
-Map property names & values.
+Generate C# code to use System.Text.Json to deserialize a JSON string {"FirstName":"John","LastName":"Doe"} to an equivalent .NET object, where the class defines an Age property.
+Show what happens when the JSON is missing a property defined in the class.
 Provide example output.
 ```
 
@@ -106,4 +106,4 @@ For more information about GitHub Copilot, see GitHub's [FAQs](https://github.co
 ## See also
 
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)

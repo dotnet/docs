@@ -2,16 +2,16 @@
 description: "Learn more about: <add> element for NameValueSectionHandler and DictionarySectionHandler"
 title: "<add> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/add"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 0d4ddb53-eb2b-49c0-9c33-a8dec5c39b46
 ---
-# \<add> element for NameValueSectionHandler and DictionarySectionHandler
+# `<add>` element for NameValueSectionHandler and DictionarySectionHandler
 
-Adds custom application settings. Each **\<add>** tag contains a key/value pair.
+Adds custom application settings. Each `<add>` tag contains a key/value pair.
 
 [**\<configuration>**](configuration-element.md)\
 &nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
@@ -27,14 +27,14 @@ Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 
 | Attribute | Description |
 | --------- | ----------- |
-| **key**   | Required attribute.<br><br>Specifies the name of the setting. |
-| **value** | Required attribute.<br><br>Specifies the value of the setting. |
+| `key`   | Required attribute.<br><br>Specifies the name of the setting. |
+| `value` | Required attribute.<br><br>Specifies the value of the setting. |
 
 ## Parent element
 
 | Element | Description |
 | ------- | ------------|
-| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [`<sectionName>` Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -42,7 +42,7 @@ None
 
 ## Example
 
-The following example shows how to define a custom configuration section and use the **\<add>** element to put settings into the section:
+The following example shows how to define a custom configuration section and use the `<add>` element to put settings into the section:
 
 ```xml
 <configuration>

@@ -122,7 +122,7 @@ Throw New StudentNotFoundException("The student cannot be found.", "John")
 ```
 
 The problem with the previous line is that `"The student cannot be found."` is just a constant string. In a localized application, you want to have different messages depending on user culture.
-[Satellite assemblies](../../core/extensions/create-satellite-assemblies.md) are a good way to do that. A satellite assembly is a DLL that contains resources for a specific language. When you ask for a specific resources at run time, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the resources of the default culture are used.
+[Satellite assemblies](../../core/extensions/create-satellite-assemblies.md) are a good way to do that. A satellite assembly is a DLL that contains resources for a specific language. When you ask for a specific resources at runtime, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the resources of the default culture are used.
 
 To create the localized exception messages:
 

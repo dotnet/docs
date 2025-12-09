@@ -33,7 +33,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Name the project **StringLibrary** and select **Create Project**.
 
-1. Press Enter at the prompt **Project will be created in \<path>**.
+1. Press <kbd>Enter</kbd> at the prompt **Project will be created in \<path>**.
 
 1. Check to make sure that the library targets .NET 9. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 

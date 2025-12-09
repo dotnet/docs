@@ -221,7 +221,7 @@ command.Parameters.AddWithValue( _
 
 ## Specifying Date and Time Values as Literals
 
- You can specify date and time data types by using a variety of different literal string formats, which SQL Server then evaluates at run time, converting them to internal date/time structures. SQL Server recognizes date and time data that is enclosed in single quotation marks ('). The following examples demonstrate some formats:
+ You can specify date and time data types by using a variety of different literal string formats, which SQL Server then evaluates at runtime, converting them to internal date/time structures. SQL Server recognizes date and time data that is enclosed in single quotation marks ('). The following examples demonstrate some formats:
 
 - Alphabetic date formats, such as `'October 15, 2006'`.
 

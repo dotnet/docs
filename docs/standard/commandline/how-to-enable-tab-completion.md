@@ -12,8 +12,6 @@ ms.topic: how-to
 
 # Tab completion for System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user must take a few steps once per shell. Once this is done, tab completion is automatic for static values in your app, such as enum values or values defined by calling <xref:System.CommandLine.Option`1.AcceptOnlyFromAmong(System.String[])>. You can also customize tab completion by providing values dynamically at runtime.
 
 ## Enable tab completion
@@ -46,7 +44,7 @@ Once the user's shell is set up and the executable is registered, completions wi
 
 For *cmd.exe* on Windows (the Windows Command Prompt) there is no pluggable tab completion mechanism, so no shim script is available. For other shells, [look for a GitHub issue that is labeled `Area-Completions`](https://github.com/dotnet/command-line-api/issues?q=is%3Aissue+is%3Aopen+label%3A%22Area-Completions%22). If you don't find an issue, you can [open a new one](https://github.com/dotnet/command-line-api/issues).
 
-## Get tab completion values at run-time
+## Get tab completion values at runtime
 
 The following code shows an app that retrieves values for tab completion dynamically at runtime. The code gets a list of the next two weeks of dates following the current date. The list is provided to the `--date` option by calling `CompletionSources.Add`:
 

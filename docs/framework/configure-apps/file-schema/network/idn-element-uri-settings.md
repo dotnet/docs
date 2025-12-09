@@ -4,41 +4,41 @@ title: "<idn> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
 ---
-# \<idn> Element (Uri Settings)
+# `<idn>` Element (Uri Settings)
 
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;**\<idn>**  
-  
-## Syntax  
-  
+
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;**\<idn>**
+
+## Syntax
+
 ```xml
 <idn
   enabled="All|AllExceptIntranet|None"
-/>  
-```  
-  
-## Attributes and Elements  
+/>
+```
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
+## Attributes and Elements
 
-|**Element**|**Description**|  
-|-----------------|---------------------|  
-|`enabled`|Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name The default value is none.|  
+ The following sections describe attributes, child elements, and parent elements.
+
+### Attributes
+
+|**Element**|**Description**|
+|-----------------|---------------------|
+|`enabled`|Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name The default value is none.|
 
 ### Child elements
 
 None
-  
+
 ### Parent elements
 
-|**Element**|**Description**|  
-|-----------------|---------------------|  
-|[uri](uri-element-uri-settings.md)|Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).|  
+|**Element**|**Description**|
+|-----------------|---------------------|
+|[uri](uri-element-uri-settings.md)|Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).|
 
 ## Remarks
 
@@ -47,16 +47,16 @@ The existing <xref:System.Uri> class has been extended in .NET Framework 3.5. 3.
 To enable support for IRI, the following two changes are required:
 
 1. Add the following line to the machine.config file under the .NET Framework 2.0 directory:
-  
-    ```xml  
-    <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
-    ```  
-  
+
+    ```xml
+    <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    ```
+
 2. Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.
 
  There are three possible values for IDN depending on the DNS servers that are used:
 
-- idn enabled = All  
+- idn enabled = All
 
      This value will convert any Unicode domain names to their Punycode equivalents (IDN names).
 

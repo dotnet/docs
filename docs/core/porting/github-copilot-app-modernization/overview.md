@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # What is GitHub Copilot app modernization?
 
-GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
+GitHub Copilot app modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
 
 This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration agent that uses AI to improve developer velocity, quality, and results.
 
@@ -34,13 +34,13 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 
 ## Prerequisites
 
-The following items are required before you can use GitHub Copilot app modernization:
+Before you can use GitHub Copilot app modernization, you need the following items:
 
 [!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
 ## How to start an upgrade or migration
 
-To start an upgrade or migration, interact with GitHub Copilot, following these steps:
+To start an upgrade or migration, interact with GitHub Copilot by following these steps:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
@@ -83,7 +83,7 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 - Automatic Build and CVE Resolution.
 
-  Automatically builds your app and resolves compilation errors and vulnerabilities, streamlining development.
+  Automatically build your app and resolve compilation errors and vulnerabilities, streamlining development.
 
 - Seamless Deployment.
 
@@ -132,7 +132,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - **Migrate to Azure Cache for Redis with Managed Identity**
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
-## How does it work
+## How it works
 
 When you ask the modernization agent to upgrade or migrate your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a three-stage workflow. Each stage writes a Markdown file under `.github/upgrades` in your repository so you can review what comes next before you continue. If `.github/upgrades` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
@@ -143,15 +143,15 @@ Copilot examines your project structure, dependencies, and code patterns to buil
 Copilot converts the assessment into a detailed specification that explains how to resolve every issue. The plan documents migration strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
 
 - **Execution stage (`tasks.md`)**\
-Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot will confirm it succeeded.
+Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot confirms it succeeded.
 
 You can edit any of the Markdown files in `.github/upgrades` to adjust upgrade steps or add context before you move forward.
 
 ### Perform the upgrade or migration
 
-As each stage is prepared, you're required to tell Copilot to move on to the next stage, giving you time to research and modify (if required) any of the tasks the stage has laid out.
+As each stage is prepared, you tell Copilot to move on to the next stage, giving you time to research and modify (if required) any of the tasks the stage lays out.
 
-Once you reach the last stage, **Execution stage**, you'll tell Copilot to start the upgrade or migration. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't seem to correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you if the problem is encountered again.
+When you reach the last stage, **Execution stage**, you tell Copilot to start the upgrade or migration. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem is encountered again.
 
 ### Upgrade and migration results
 
@@ -161,7 +161,7 @@ When the upgrade or migration finishes, Copilot displays next steps in the chat 
 
 ## Telemetry
 
-The tool only collects data about project types, intent to upgrade, and upgrade duration. The data is collected and aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
+The tool collects data about project types, intent to upgrade, and upgrade duration. Visual Studio collects and aggregates the data, and it doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
 
 ## Related content
 

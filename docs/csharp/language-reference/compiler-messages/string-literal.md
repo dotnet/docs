@@ -91,9 +91,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS1012** - *Too many characters in character literal.*
 - **CS1039** - *Unterminated string literal.*
 
-To fix these issues try the following techniques:
+To fix these issues, try the following techniques:
 
-- Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).ences like `\n` or switch to verbatim strings (with `@`) or raw string literals that support multi-line content.
+- Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).
+- Switch to verbatim strings (with `@`) or raw string literals to support multi-line content.
 - Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
 - Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
 
@@ -127,7 +128,6 @@ To correct these errors, try the following techniques:
 - For interpolated raw string literals, ensure the number of dollar signs (`$`) at the start matches the number of consecutive opening or closing braces you need in the content (**CS9005**, **CS9006**, **CS9007**). For example, use `$$"""` to allow single braces as content while still supporting interpolations with `{{` and `}}`.
 - Use verbatim interpolated string format (`$@"..."`) when combining interpolation with multi-line strings (**CS9001**). Raw string literals support interpolation through the `$` prefix, but multi-line raw strings with interpolation require the verbatim format to correctly handle both features together.
 - Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
-- Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
 
 For more information, see [raw string literals](../tokens/raw-string.md).
 
@@ -136,12 +136,10 @@ For more information, see [raw string literals](../tokens/raw-string.md).
 - **CS9026** - *The input string cannot be converted into the equivalent UTF-8 byte representation.*
 - **CS9047** - *Operator cannot be applied to operands that are not UTF-8 byte representations.*
 
-To fix this errors, try the following techniques:
+To fix these errors, try the following techniques:
 
 - Remove characters or escape sequences that can't be encoded in UTF-8 from your `u8` string literal (**CS9026**). UTF-8 encoding supports the full Unicode character set but requires valid Unicode scalar values, so surrogate code points (values in the range U+D800 through U+DFFF) can't appear directly in UTF-8 strings because they're reserved for UTF-16 encoding pairs rather than standalone characters.
 - Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
-- Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
-
 For more information, see [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
 ## Literal strings in data sections

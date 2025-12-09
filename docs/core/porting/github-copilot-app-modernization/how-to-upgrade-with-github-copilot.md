@@ -4,7 +4,7 @@ description: "Learn how to upgrade your .NET applications to newer versions usin
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 12/08/2025
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to upgrade my .NET app using GitHub Copilot app modernization so that I can modernize my codebase efficiently with AI assistance.
@@ -31,7 +31,7 @@ The first step to upgrading is generating a plan by interacting with GitHub Copi
 
 ## Generate an upgrade plan
 
-Once the process starts, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade. After you answer these questions, an upgrade plan is written in the form of a Markdown file.
+When you start the process, Copilot analyzes your projects and their dependencies. It then asks you a series of questions about the upgrade. After you answer these questions, Copilot writes an upgrade plan as a Markdown file.
 
 To generate and customize your plan:
 
@@ -41,7 +41,7 @@ To generate and customize your plan:
 1. Tell Copilot to proceed with the upgrade when you're satisfied with the plan.
 
 > [!CAUTION]
-> The plan is generated based on the inter-dependencies of your projects. The upgrade won't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+> The plan is generated based on the interdependencies of your projects. The upgrade won't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
 The following snippet demonstrates the structure of a plan:
 
@@ -80,7 +80,7 @@ NuGet packages used across all selected projects or their dependencies that need
 
 ## Perform the upgrade
 
-Once an upgrade plan is ready, tell Copilot to start the upgrade. Once the upgrade process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step. If it runs into a problem, Copilot pauses and asks for your direction or help in fixing these problems.
+When your upgrade plan is ready, tell Copilot to start the upgrade. Once the upgrade process starts, Copilot lets you know what it's doing in the chat window. It opens the **Upgrade Progress Details** document, which lists the status of every step. If it runs into a problem, Copilot pauses and asks for your direction or help in fixing these problems.
 
 Each major step in the upgrade process is committed to the local Git repository.
 
@@ -146,7 +146,7 @@ The following example shows the report of a completed upgrade that contained a t
 After completing the upgrade process:
 
 - Review the generated upgrade report and any test results.
-- Address any failing tests or compilation errors that might remain.
+- Address any failing tests or compilation errors.
 - Ensure all updated NuGet packages are compatible with your application.
 - Test your application thoroughly to verify the upgrade was successful.
 - Apply new features and improvements available in the upgraded .NET version.

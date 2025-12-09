@@ -51,7 +51,7 @@ The following code demonstrates how to use the generator with primitive types:
 
 ## Specifying units
 
-You can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (for example, "seconds", "bytes", and "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
+Starting with .NET 10.2, you can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (for example, "seconds", "bytes", and "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
 
 The following code demonstrates how to use the generator with primitive types with units specified:
 

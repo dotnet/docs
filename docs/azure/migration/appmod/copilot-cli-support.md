@@ -64,7 +64,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     - Environment Variables: Leave empty.
     - Tools: Use the default value `*`.
 
-    Or update the `~/.config/mcp-config.json` file with the following information. For details, see [Add an MCP server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#add-an-mcp-server).
+    Or update the `~/.copilot/mcp-config.json` file with the following information. For details, see [Add an MCP server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#add-an-mcp-server).
 
     ```json
     {

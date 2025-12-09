@@ -8,22 +8,20 @@ ai-usage: ai-assisted
 
 **This article applies to:** ✔️ .NET 10 SDK and later versions
 
-File-based apps let you build, run, and publish .NET applications from a single C# file without creating a traditional project file. This approach simplifies development for scripts, utilities, and small applications. The .NET SDK automatically generates the necessary project configuration based on directives in your source file.
-
-## Overview
-
-File-based apps offer a lightweight alternative to traditional .NET projects. Instead of maintaining separate `.csproj` files, you embed configuration directly in your C# source file using special directives. The .NET CLI processes these directives to build and run your application.
+File-based apps let you build, run, and publish .NET applications from a single C# file without creating a traditional project file. They offer a lightweight alternative to traditional .NET projects. This approach simplifies development for scripts, utilities, and small applications. The .NET SDK automatically generates the necessary project configuration based on the directives in your source file.
 
 Key benefits include:
 
-- Reduced boilerplate for simple applications
-- Self-contained source files with embedded configuration
-- Native AOT publishing enabled by default
-- Automatic packaging as .NET tools
+- Reduced boilerplate for simple applications.
+- Self-contained source files with embedded configuration.
+- Native AOT publishing enabled by default.
+- Automatic packaging as .NET tools.
+
+In this article, learn more about how to use file-based apps successfully.
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build. Place these directives at the top of your C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run your application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of your C# file.
 
 ### `#:package`
 
@@ -34,12 +32,20 @@ Adds a NuGet package reference to your application.
 #:package Serilog version="3.1.1"
 ```
 
-### `#:property`
+### `#:project`
 
-Sets an MSBuild property value.
+References another project file.
 
 ```csharp
-#:property TargetFramework=net9.0
+#:project ../SharedLibrary/SharedLibrary.csproj
+```
+
+### `#:property`
+
+Sets a MSBuild property value.
+
+```csharp
+#:property TargetFramework=net10.0
 #:property PublishAot=false
 ```
 
@@ -51,21 +57,13 @@ Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.
 #:sdk Microsoft.NET.Sdk.Web
 ```
 
-### `#:project`
-
-References another project file.
-
-```csharp
-#:project ../SharedLibrary/SharedLibrary.csproj
-```
-
 ## CLI commands
 
 The .NET CLI provides full support for file-based apps through familiar commands.
 
 ### Run applications
 
-Run a file-based app directly:
+Run a file-based app directly using the `dotnet run` command:
 
 ```dotnetcli
 dotnet run file.cs
@@ -97,19 +95,9 @@ With the shorthand syntax, all arguments go to your application:
 dotnet file.cs arg1 arg2
 ```
 
-### Restore dependencies
-
-Restore NuGet packages referenced in your file:
-
-```dotnetcli
-dotnet restore file.cs
-```
-
-Restore runs implicitly when you build or run your application.
-
 ### Build applications
 
-Compile your file-based app:
+Compile your file-based app using the `dotnet build` command:
 
 ```dotnetcli
 dotnet build file.cs
@@ -117,39 +105,9 @@ dotnet build file.cs
 
 The SDK generates a temporary project and builds your application.
 
-### Publish applications
-
-Create a deployment package:
-
-```dotnetcli
-dotnet publish file.cs
-```
-
-File-based apps enable native AOT publishing by default, producing optimized, self-contained executables.
-
-### Package as tool
-
-Package your file-based app as a .NET tool:
-
-```dotnetcli
-dotnet pack file.cs
-```
-
-File-based apps set `PackAsTool=true` by default.
-
-### Convert to project
-
-Convert your file-based app to a traditional project:
-
-```dotnetcli
-dotnet project convert file.cs
-```
-
-This command creates a `.csproj` file with equivalent configuration.
-
 ### Clean build outputs
 
-Remove build artifacts:
+Remove build artifacts using the `dotnet clean` command:
 
 ```dotnetcli
 dotnet clean file.cs
@@ -161,27 +119,63 @@ Clean all file-based apps in a directory:
 dotnet clean file-based-apps
 ```
 
+### Publish applications
+
+Create a deployment package using the `dotnet publish` command:
+
+```dotnetcli
+dotnet publish file.cs
+```
+
+File-based apps enable native AOT publishing by default, producing optimized, self-contained executables.
+
+### Package as tool
+
+Package your file-based app as a .NET tool using the `dotnet pack` command:
+
+```dotnetcli
+dotnet pack file.cs
+```
+
+File-based apps set `PackAsTool=true` by default.
+
+### Convert to project
+
+Convert your file-based app to a traditional project using the `dotnet project convert` command:
+
+```dotnetcli
+dotnet project convert file.cs
+```
+
+This command creates a `.csproj` file with equivalent SDK and properties. All `#` directives are removed from the `.cs` files and turned into elements in the corresponding `.csproj` files.
+
+### Restore dependencies
+
+Restore NuGet packages referenced in your file using the `dotnet restore` command:
+
+```dotnetcli
+dotnet restore file.cs
+```
+
+Restore runs implicitly when you build or run your application.
+
 ## Default included items
 
 File-based apps automatically include specific file types for compilation and packaging.
 
-### Standard includes
-
 By default, the following items are included:
 
-- The single C# file itself
-- ResX resource files in the same directory
+- The single C# file itself.
+- ResX resource files in the same directory.
 
-### SDK-specific includes
+Different SDKs include other file types:
 
-Different SDKs include additional file types:
-
-- `Microsoft.NET.Sdk.Web` includes `*.json` configuration files
-- Other specialized SDKs might include additional patterns
+- `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
+- Other specialized SDKs might include other patterns.
 
 ## Native AOT publishing
 
-File-based apps enable native ahead-of-time (AOT) compilation by default. This produces optimized, self-contained executables with faster startup and smaller memory footprint.
+File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup, and a smaller memory footprint.
 
 If you need to disable native AOT, use the following setting:
 
@@ -232,7 +226,7 @@ Run directly:
 
 ## Implicit build files
 
-File-based apps respect MSBuild and NuGet configuration files in the same directory or parent directories. These files affect how the SDK builds your application.
+File-based apps respect MSBuild and NuGet configuration files in the same directory or parent directories. These files affect how the SDK builds your application. Be mindful of these files when organizing your file-based apps.
 
 ### `Directory.Build.props`
 
@@ -254,8 +248,6 @@ Configures NuGet package sources and settings. File-based apps use these configu
 
 Specifies the .NET SDK version to use. File-based apps respect this version selection.
 
-Be mindful of these files when organizing your file-based apps. They can unexpectedly affect build behavior.
-
 ## Build caching
 
 The .NET SDK caches build outputs to improve performance on subsequent builds. File-based apps participate in this caching system.
@@ -269,23 +261,25 @@ The SDK caches build outputs based on:
 - SDK version
 - Implicit build files
 
-### Cache impacts
-
 Caching improves build performance but can cause confusion:
 
-- Changes to implicit build files might not trigger rebuilds
-- Moving files to different directories might not invalidate cache
+- Changes to implicit build files might not trigger rebuilds.
+- Moving files to different directories might not invalidate cache.
 
 ### Workarounds
 
-Force a clean build to bypass cache:
+- Run a full build using the `--no-cache` flag:
 
-```dotnetcli
-dotnet clean file.cs
-dotnet build file.cs
-```
+  ```dotnetcli
+  dotnet build file.cs --no-cache
+  ```
 
-Or delete the `obj` and `bin` directories manually.
+- Force a clean build to bypass cache:
+
+  ```dotnetcli
+  dotnet clean file.cs
+  dotnet build file.cs
+  ```
 
 ## Folder layout recommendations
 

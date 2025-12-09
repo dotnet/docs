@@ -96,8 +96,6 @@ To fix these issues, try the following techniques:
 - Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).
 - Switch to verbatim strings (with `@`) or raw string literals to support multi-line content.
 - Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
-- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
-
 For more information, see [strings](../builtin-types/reference-types.md#string-literals), [verbatim strings](../tokens/verbatim.md), and [raw string literals](../tokens/raw-string.md).
 
 ## Incorrectly formed raw string literals

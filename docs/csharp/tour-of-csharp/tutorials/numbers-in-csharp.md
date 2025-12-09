@@ -1,21 +1,23 @@
 ---
 title: Work with Numbers - Introductory tutorial
 description: This tutorial teaches you about the numeric types in C#. The tutorial contains a series of lessons that explore numbers and math operations in C#. 
-ms.date: 12/02/2025
+ms.date: 12/10/2025
 ---
-# How to use integer and floating point numbers in C\#
+# Tutorial: How to use integer and floating point numbers in C\#
 
 This tutorial teaches you about the numeric types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
-> * Launch a GitHub Codespace with a C# development environment. EDIT
-> * Create your first C# app.
-> * Create and use variables to store text data.
-> * Use .NET APIs with text data.
+> * Launch a GitHub Codespace with a C# development environment.
+> * Explore integer math.
+> * Learn order of operations.
+> * Learn integer limits and precision.
+> * Learn floating point types.
+> * Learn the decimal type.
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+To use Codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Prerequisites
 
@@ -25,35 +27,36 @@ You must have one of the following:
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).
-  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
-
-
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
 ## Explore integer math
 
-Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you complete the [hello world](./hello-world.md) tutorial, you can open that codespace. When your codespace loads, create a new file in the *tutorials* folder named *numbers.cs*. Open your new file. Type or copy the following code into *numbers.cs*:
+To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment. If you completed the [hello world](./hello-world.md) tutorial, you can open that codespace instead of creating a new one.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Addition":::
+1. When your codespace loads, create a new file in the *tutorials* folder named *numbers.cs*.
+1. Open your new file.
+1. Type or copy the following code into *numbers.cs*:
 
-Run this code by typing the following commands in the integrated terminal:
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Addition":::
 
-```dotnetcli
-cd ./tutorials
-dotnet numbers.cs
-```
+1. Run this code by typing the following commands in the integrated terminal:
 
-You saw one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
+   ```dotnetcli
+   cd ./tutorials
+   dotnet numbers.cs
+   ```
 
-- `-` for subtraction
-- `*` for multiplication
-- `/` for division
+   You saw one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
 
-Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
+   - `-` for subtraction
+   - `*` for multiplication
+   - `/` for division
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="OtherOperations":::
+1. Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
 
-Run this code by typing `dotnet numbers.cs` in the terminal window.
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="OtherOperations":::
+
+1. Run this code by typing `dotnet numbers.cs` in the terminal window.
 
 You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
@@ -89,35 +92,35 @@ void WorkWithIntegers()
 
 ## Explore order of operations
 
-Comment out the call to `WorkingWithIntegers()`. It makes the output less cluttered as you work in this section:
+1. Comment out the call to `WorkingWithIntegers()`. It makes the output less cluttered as you work in this section:
 
-```csharp
-//WorkWithIntegers();
-```
+   ```csharp
+   //WorkWithIntegers();
+   ```
 
-The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments. Because `WorkWithIntegers()` is a method, you need to only comment out one line.
+   The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments. Because `WorkWithIntegers()` is a method, you need to only comment out one line.
 
-The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and typing `dotnet numbers.cs` in the terminal window:
+1. The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and typing `dotnet numbers.cs` in the terminal window:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precedence":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precedence":::
 
-The output demonstrates that the multiplication is performed before the addition.
+   The output demonstrates that the multiplication is performed before the addition.
 
-You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run again:
+1. You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run again:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Parentheses":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Parentheses":::
 
-Explore more by combining many different operations. Add something like the following lines. Try `dotnet numbers` again in the terminal window.
+1. Explore more by combining many different operations. Add something like the following lines. Try `dotnet numbers` again in the terminal window.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="CompoundExpression":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="CompoundExpression":::
 
-You might notice an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
+   You might notice an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
-If you didn't see this behavior, try the following code:
+1. If you didn't see this behavior, try the following code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Truncation":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Truncation":::
 
-Type `dotnet numbers` again in the terminal window to see the results.
+1. Type `dotnet numbers.cs` again in the terminal window to see the results.
 
 Before moving on, let's take all the code you wrote in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
 
@@ -170,17 +173,19 @@ void OrderPrecedence()
 
 ## Explore integer precision and limits
 
-The previous sample showed that integer division truncates the result. You can get the **remainder** by using the **remainder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
+The previous sample showed that integer division truncates the result. You can get the **remainder** by using the **remainder** operator, the `%` character.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="QuotientAndRemainder":::
+1. Try the following code after the method call to `OrderPrecedence()`:
 
-The C# integer type differs from mathematical integers in one other way: the `int` type has minimum and maximum limits. Try the following code to see those limits:
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="QuotientAndRemainder":::
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinAndMax":::
+1. The C# integer type differs from mathematical integers in one other way: the `int` type has minimum and maximum limits. Try the following code to see those limits:
 
-If a calculation produces a value that exceeds those limits, you have an **underflow** or **overflow** condition. The answer appears to wrap from one limit to the other. To see an example, add these two lines to your code:
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinAndMax":::
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Overflow":::
+1. If a calculation produces a value that exceeds those limits, you have an **underflow** or **overflow** condition. The answer appears to wrap from one limit to the other. To see an example, add these two lines to your code:
+
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Overflow":::
 
 Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
@@ -188,23 +193,29 @@ There are other numeric types with different limits and precision that you can u
 
 ## Work with the double type
 
-The `double` numeric type represents a double-precision floating point number. Those terms might be new to you. A **floating point** number is useful for representing non-integral numbers that can be very large or small in magnitude. **Double-precision** is a relative term that describes the number of binary digits used to store the value. **Double precision** numbers have twice the number of binary digits as **single-precision**. On modern computers, you more commonly use double precision than single precision numbers. **Single precision** numbers are declared by using the `float` keyword. Let's explore. Add the following code and see the result:
+The `double` numeric type represents a double-precision floating point number. Those terms might be new to you. A **floating point** number is useful for representing non-integral numbers that can be very large or small in magnitude. **Double-precision** is a relative term that describes the number of binary digits used to store the value. **Double precision** numbers have twice the number of binary digits as **single-precision**. On modern computers, you more commonly use double precision than single precision numbers. **Single precision** numbers are declared by using the `float` keyword. Let's explore.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="FloatingPoint":::
+1. Add the following code and see the result:
 
-Notice that the answer includes the decimal portion of the quotient. Try a slightly more complicated expression with doubles. You can use the following values, or substitute other numbers:
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="FloatingPoint":::
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="ChangeDoubleValues":::
+   Notice that the answer includes the decimal portion of the quotient.
 
-The range of a double value is much greater than integer values. Try the following code that you add to what you've written so far:
+1. Try a slightly more complicated expression with doubles. You can use the following values, or substitute other numbers:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinMax":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="ChangeDoubleValues":::
 
-These values are printed in scientific notation. The number to the left of the `E` is the significand. The number to the right is the exponent, as a power of 10. Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
+1. The range of a double value is much greater than integer values. Try the following code that you add to what you wrote so far:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="RoundingError":::
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinMax":::
 
-You know that `0.3` is `3/10` and not exactly the same as `1/3`. Similarly, `0.33` is `33/100`. That value is closer to `1/3`, but still not exact. No matter how many decimal places you add, a rounding error remains.
+   These values are printed in scientific notation. The number to the left of the `E` is the significand. The number to the right is the exponent, as a power of 10.
+
+1. Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
+
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="RoundingError":::
+
+   You know that `0.3` is `3/10` and not exactly the same as `1/3`. Similarly, `0.33` is `33/100`. That value is closer to `1/3`, but still not exact. No matter how many decimal places you add, a rounding error remains.
 
 ***Challenge***
 
@@ -212,17 +223,21 @@ Try other calculations with large numbers, small numbers, multiplication, and di
 
 ## Work with decimal types
 
-You saw the basic numeric types in C#: integers and doubles. There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
+You saw the basic numeric types in C#: integers and doubles. There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Decimal":::
+1. Let's take a look:
 
-Notice that the range is smaller than the `double` type. You can see the greater precision with the decimal type by trying the following code:
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Decimal":::
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precision":::
+   Notice that the range is smaller than the `double` type.
 
-Notice that the math with the decimal type has more digits to the right of the decimal point.
+1. You can see the greater precision with the decimal type by trying the following code:
 
-The `M` suffix on the numbers indicates that a constant should use the `decimal` type. Otherwise, the compiler assumes the `double` type.
+   :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precision":::
+
+   Notice that the math with the decimal type has more digits to the right of the decimal point.
+
+   The `M` suffix on the numbers indicates that a constant should use the `decimal` type. Otherwise, the compiler assumes the `double` type.
 
 > [!NOTE]
 > The letter `M` is the most visually distinct letter between the `double` and `decimal` keywords.
@@ -244,10 +259,17 @@ When you try it, open the details pane to see how you did:
 
 Try some other formulas if you'd like.
 
-You completed the "Numbers in C#" tutorial. You can select the **Tuples and types** link to start the next tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
-
 You can learn more about numbers in C# in the following articles:
 
 - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
 - [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
 - [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)
+
+## Cleanup resources
+
+GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and go to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Tuples and types](tuples-and-types.md)

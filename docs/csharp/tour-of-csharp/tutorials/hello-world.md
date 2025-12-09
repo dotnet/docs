@@ -1,7 +1,7 @@
 ---
 title: Hello World - Introductory tutorial
 description: In this tutorial, you create your first C# apps. You write C# code and learn basic structure and types in C#.
-ms.date: 12/09/2025
+ms.date: 12/10/2025
 # customer intent: As an aspiring developer, I want to learn C#.
 ---
 # Tutorial: Explore the C# language
@@ -20,13 +20,13 @@ To use Codespaces, you need a GitHub account. If you don't already have one, you
 
 ## Prerequisites
 
-You must have one of the following:
+You must have one of the following options:
 
 - A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).
-  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
 ## Open Codespaces
 
@@ -174,7 +174,7 @@ For further reading on the `string` type:
 
 ## Cleanup resources
 
-GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
+GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
 
 ## Next step
 

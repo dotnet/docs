@@ -79,7 +79,7 @@ You can provide additional configuration via `appsettings.json`. There are two p
 
 Register the log enricher into the dependency injection container:
 
-### [.NET 10+](#tab/net10-plus)
+### [.NET 10.1+](#tab/net10-plus)
 
 Starting with .NET 10, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
 
@@ -126,7 +126,7 @@ Alternatively, configure options using `appsettings.json`:
 
 And apply the configuration:
 
-### [.NET 10+](#tab/net10-plus-config)
+### [.NET 10.1+](#tab/net10-plus-config)
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
@@ -165,7 +165,7 @@ Here's a complete example showing how to set up the service log enricher:
 
 **Program.cs:**
 
-### [.NET 10+](#tab/net10-plus-full-example)
+### [.NET 10.1+](#tab/net10-plus-full-example)
 
 ```csharp
 using System.Text.Json;

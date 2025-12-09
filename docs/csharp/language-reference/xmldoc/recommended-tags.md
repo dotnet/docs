@@ -265,6 +265,14 @@ Here's an example showing the difference between `<para>` and `<br/>`:
         <term>Assembly</term>
         <description>The library or executable built from a compilation.</description>
     </item>
+    <item>
+        <term>Namespace</term>
+        <description>A logical grouping of related types such as classes and interfaces.</description>
+    </item>
+    <item>
+        <term>Class</term>
+        <description>A blueprint used to create objects, containing properties and methods.</description>
+    </item>
 </list>
 ```
 

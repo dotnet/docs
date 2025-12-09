@@ -16,7 +16,7 @@ In this tutorial, you:
 > * Create and use variables to store text data.
 > * Use .NET APIs with text data.
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+To use Codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ To start a GitHub Codespace with the tutorial environment, open a browser window
 
 ## Run your first program
 
-1. Once your codespace loads, create a new file in the *tutorials* folder named *hello-world.cs*.
+1. When your codespace loads, create a new file in the *tutorials* folder named *hello-world.cs*.
 1. Open your new file.
 1. Type or copy the following code into *hello-world.cs*:
 
@@ -81,7 +81,7 @@ Your first program is limited to printing one message. You can write more useful
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
 
-1. Run the app again using `dotnet hello-world.cs` to see the results.
+1. Run the app again by using `dotnet hello-world.cs` to see the results.
 
    You've been using `+` to build strings from **variables** and **constant** strings. There's a better way. You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable. This process is called [String interpolation](../../language-reference/tokens/interpolated.md).
 
@@ -89,19 +89,23 @@ Your first program is limited to printing one message. You can write more useful
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Interpolation":::
 
-1. Run the app again using `dotnet hello-world.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
+1. Run the app again by using `dotnet hello-world.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
 ## Work with strings
 
 Your last edit was your first look at what you can do with strings. Let's explore more.
 
-You're not limited to a single variable between the curly braces. Try the following code at the bottom of your app:
+You're not limited to a single variable between the curly braces.
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="WorkWithStrings":::
+1. Try the following code at the bottom of your app:
 
-Strings are more than a collection of letters. You can find the length of a string by using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of your app:
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="WorkWithStrings":::
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Properties":::
+   Strings are more than a collection of letters. You can find the length of a string by using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string.
+
+1. Add the following code at the bottom of your app:
+
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Properties":::
 
 > [!TIP]
 >
@@ -109,34 +113,40 @@ Strings are more than a collection of letters. You can find the length of a stri
 
 You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, to print messages. A *method* is a block of code that implements some action. It has a name, so you can access it.
 
-## Trim
+## Remove whitespace from strings
 
 Suppose your strings have leading or trailing spaces that you don't want to display. You want to **trim** the spaces from the strings.
-The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> do that work. You can just use those methods to remove leading and trailing spaces. Try the following code:
+The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> do that work. You can use those methods to remove leading and trailing spaces.
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Trim":::
+1. Try the following code:
 
-The square brackets `[` and `]` help visualize what the `Trim`, `TrimStart,` and, `TrimEnd` methods do. The brackets show where whitespace starts and ends.
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Trim":::
+
+The square brackets `[` and `]` help you visualize what the `Trim`, `TrimStart`, and `TrimEnd` methods do. The brackets show where whitespace starts and ends.
 
 This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string but doesn't change the original message.
 
-## Replace
+## Search and replace text in strings
 
-You can use other methods to work with a string. For example, you might have used a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
+You can use other methods to work with a string. For example, you might use a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself.
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Replace":::
+1. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
 
-Two other useful methods make a string all caps or all lowercase. Try the following code. Type it in to see how **IntelliSense** provides hints as you start to type `To`:
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Replace":::
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="UpperLower":::
+   Two other useful methods make a string all caps or all lowercase. Try the following code.
 
-## Search strings
+1. Type it in to see how **IntelliSense** provides hints as you start to type `To`:
 
-The other part of a *search and replace* operation is to find text in a string. You can use the  <xref:System.String.Contains%2A> method for searching. It tells you if a string contains a substring inside it. Try the following code to explore <xref:System.String.Contains%2A>:
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="UpperLower":::
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="SearchStrings":::
+   The other part of a *search and replace* operation is to find text in a string. You can use the  <xref:System.String.Contains%2A> method for searching. It tells you if a string contains a substring inside it.
 
-The <xref:System.String.Contains%2A> method returns a *boolean* value which tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
+1. Try the following code to explore <xref:System.String.Contains%2A>:
+
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="SearchStrings":::
+
+   The <xref:System.String.Contains%2A> method returns a *boolean* value which tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
 
 ## Challenge
 
@@ -157,53 +167,16 @@ Did you come up with something like the following code (expand to see the answer
 </details>
 <!-- markdownlint-enable MD033 -->
 
-You completed the "Hello C#" introduction to C# tutorial. You can select the [Numbers in C#](./numbers-in-csharp.md) tutorial to start the next tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding.
-
 For further reading on the `string` type:
 
 - [C# programming guide article on strings](../../programming-guide/strings/index.md).
 - [How to tips on working with strings](../../how-to/index.md#working-with-strings).
 
+## Cleanup resources
 
-=====================================================================================
+GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
 
-## Clean up resources
-
-<!-- Optional: Steps to clean up resources - H2
-
-Provide steps the user takes to clean up resources that
-were created to complete the article.
-
--->
-
-## Next step -or- Related content
+## Next step
 
 > [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
-
--or-
-
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
-
-<!-- Optional: Next step or Related content - H2
-
-Consider adding one of these H2 sections (not both):
-
-A "Next step" section that uses 1 link in a blue box 
-to point to a next, consecutive article in a sequence.
-
--or- 
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
+> [Explore numbers in C#](numbers-in-csharp.md)

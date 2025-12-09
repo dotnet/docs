@@ -91,12 +91,14 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS1012** - *Too many characters in character literal.*
 - **CS1039** - *Unterminated string literal.*
 
-To fix these issues, try the following techniques:
+To correct these errors, apply the following techniques:
 
-- Use one of the standard escape sequences defined in the C# language specification, such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**).
-- Switch to verbatim strings (with `@`) or raw string literals to support multi-line content.
-- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Alternatively, use verbatim string literals or raw string literals, which allow newlines as part of the string content.
-For more information, see [strings](../builtin-types/reference-types.md#string-literals), [verbatim strings](../tokens/verbatim.md), and [raw string literals](../tokens/raw-string.md).
+- Use one of the standard escape sequences defined in the [C# language specification](../../language-reference/language-specification/lexical-structure.md#6457-character-escape-sequences), such as `\n` (newline), `\t` (tab), `\\` (backslash), or `\"` (double quote) (**CS1009**). The compiler doesn't recognize escape sequences that aren't part of the language specification, so using undefined escape sequences causes this error because the compiler can't determine what character you intended to represent.
+- Add the closing quote character to complete your string literal (**CS1039**). String literals must have both an opening and closing delimiter, so an unterminated string causes the compiler to treat subsequent source code as part of the string content, which leads to parsing errors.
+- Add exactly one character between the single quotes in your character literal (**CS1011**, **CS1012**). Character literals represent a single character value and must contain exactly one character or a valid escape sequence, so empty character literals or those containing multiple characters violate the language rules for the `char` type.
+- Split string literals that span multiple source lines by ending each line with a closing quote and starting the next line with an opening quote, using the `+` operator to concatenate them (**CS1010**). Regular string literals can't contain actual newline characters because the closing quote must appear on the same line as the opening quote, but you can achieve multi-line strings through concatenation or by using [verbatim strings](../tokens/verbatim.md) or [raw string literals](../tokens/raw-string.md), which allow embedded newlines as part of the string content.
+
+For more information, see [strings](../builtin-types/reference-types.md#string-literals).
 
 ## Incorrectly formed raw string literals
 
@@ -115,17 +117,19 @@ For more information, see [strings](../builtin-types/reference-types.md#string-l
 - **CS9008** - *Sequence of '@' characters is not allowed.*
 - **CS9009** - *String must start with quote character.*
 
-To correct these errors, try the following techniques:
+To correct these errors, apply the following techniques:
 
-- Use regular string literals or verbatim string literals instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated before the lexical analysis that recognizes raw string literals, so raw string syntax isn't supported in these contexts.
-- Complete your raw string literal by adding a closing delimiter that matches the opening delimiter (**CS8997**, **CS9004**). Raw string literals must start and end with the same number of consecutive double-quote characters (at least three: `"""`), which ensures the compiler can correctly identify where the string content ends.
-- Place the opening and closing delimiters of multi-line raw string literals on their own lines, with no other content on those lines (**CS9000**). This requirement ensures consistent formatting and makes the boundaries of the raw string content clear, particularly when the string spans many lines.
-- Add at least one line of content between the opening and closing delimiters of your multi-line raw string literal (**CS9002**). Multi-line raw strings are designed to contain text that spans multiple lines, so the delimiters must enclose actual content rather than appearing on consecutive lines.
-- Adjust the indentation of your raw string content lines to match the indentation of the closing delimiter line (**CS8999**, **CS9003**). The compiler uses the closing delimiter's leading whitespace to determine how much whitespace to trim from each content line, so inconsistent indentation prevents proper whitespace removal and causes these errors.
-- Increase the number of double-quote characters in your raw string delimiter to be greater than any consecutive run of quotes in the content (**CS8998**). This ensures the compiler can distinguish between quote characters that are part of the content and the closing delimiter sequence.
-- For interpolated raw string literals, ensure the number of dollar signs (`$`) at the start matches the number of consecutive opening or closing braces you need in the content (**CS9005**, **CS9006**, **CS9007**). For example, use `$$"""` to allow single braces as content while still supporting interpolations with `{{` and `}}`.
-- Use verbatim interpolated string format (`$@"..."`) when combining interpolation with multi-line strings (**CS9001**). Raw string literals support interpolation through the `$` prefix, but multi-line raw strings with interpolation require the verbatim format to correctly handle both features together.
-- Start your raw string literal with quote characters only, without any `@` prefix (**CS9008**, **CS9009**). Raw string literals are a distinct syntax that doesn't use the `@` verbatim prefix, and attempting to combine `@` with raw string delimiters isn't valid syntax.
+- Use regular string literals or [verbatim string literals](../tokens/verbatim.md) instead of raw string literals in preprocessor directives like `#if`, `#define`, or `#pragma` (**CS8996**). Preprocessor directives are evaluated during the preprocessing phase before lexical analysis occurs, so the compiler can't recognize raw string literal syntax in these contexts because raw strings are identified during the later lexical analysis phase.
+- Add a closing delimiter that matches the opening delimiter to complete your raw string literal (**CS8997**, **CS9004**). The [raw string literal syntax](../tokens/raw-string.md) requires that the opening and closing delimiters contain the same number of consecutive double-quote characters (at least three), so a missing or mismatched closing delimiter prevents the compiler from determining where the string content ends.
+- Place the opening and closing delimiters of multi-line raw string literals on their own lines, with no other content on those lines (**CS9000**). The [multi-line raw string format rules](../tokens/raw-string.md#multi-line-raw-string-literals) require delimiters to occupy dedicated lines to establish clear boundaries for the string content and to enable the whitespace trimming behavior that removes common leading indentation from all content lines.
+- Add at least one line of content between the opening and closing delimiters of your multi-line raw string literal (**CS9002**). The language specification requires multi-line raw strings to contain actual content because empty multi-line raw strings serve no purpose and likely indicate incomplete code, whereas single-line raw strings (with delimiters on the same line) can be empty and are the appropriate syntax for empty string values.
+- Adjust the indentation of your raw string content lines to match or exceed the indentation of the closing delimiter line (**CS8999**, **CS9003**). The [whitespace handling rules](../tokens/raw-string.md#whitespace-handling) for raw string literals use the closing delimiter's leading whitespace as the baseline for trimming common indentation from all content lines, so content lines with less indentation than the closing delimiter violate this trimming algorithm and indicate incorrect formatting.
+- Increase the number of double-quote characters in your raw string delimiter to exceed any consecutive run of quote characters in the content (**CS8998**). The delimiter must contain more consecutive quotes than any sequence within the string content so the compiler can unambiguously distinguish between quote characters that are part of the content and the delimiter sequence that marks the end of the string.
+- For interpolated raw string literals, ensure the number of dollar signs (`$`) at the start matches the number of consecutive opening or closing braces you need as literal content (**CS9005**, **CS9006**, **CS9007**). The [interpolated raw string syntax](../tokens/raw-string.md#interpolated-raw-string-literals) uses the dollar sign count to determine the brace escape sequence length, so `$$"""` requires `{{` for interpolation holes and allows single `{` characters as content, while mismatched brace sequences indicate either incorrect interpolation syntax or content that needs a different dollar sign count.
+- Remove the `@` prefix from your raw string literal and use only the quote character delimiter (**CS9008**, **CS9009**). Raw string literals are a distinct syntax introduced in C# 11 that doesn't use the `@` verbatim string prefix, and the language specification doesn't allow combining the `@` verbatim syntax with raw string delimiters because raw strings already support multi-line content and don't require escape sequences.
+
+> [!NOTE]
+> **CS9001** is no longer produced in current versions of C#. Multi-line raw string literals now support interpolation without requiring verbatim format.
 
 For more information, see [raw string literals](../tokens/raw-string.md).
 
@@ -134,10 +138,11 @@ For more information, see [raw string literals](../tokens/raw-string.md).
 - **CS9026** - *The input string cannot be converted into the equivalent UTF-8 byte representation.*
 - **CS9047** - *Operator cannot be applied to operands that are not UTF-8 byte representations.*
 
-To fix these errors, try the following techniques:
+To correct these errors, apply the following techniques:
 
-- Remove characters or escape sequences that can't be encoded in UTF-8 from your `u8` string literal (**CS9026**). UTF-8 encoding supports the full Unicode character set but requires valid Unicode scalar values, so surrogate code points (values in the range U+D800 through U+DFFF) can't appear directly in UTF-8 strings because they're reserved for UTF-16 encoding pairs rather than standalone characters.
-- Ensure both operands of the addition operator are UTF-8 string literals when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating UTF-8 string literals (which produce `ReadOnlySpan<byte>` values), but mixing UTF-8 strings with regular strings or other types isn't supported because the resulting type would be ambiguous and the byte representations are incompatible.
+- Remove characters or escape sequences that can't be encoded in UTF-8 from your `u8` string literal (**CS9026**). The [UTF-8 encoding specification](https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf#G7404) supports the full Unicode character set but requires valid Unicode scalar values, so surrogate code points (values in the range U+D800 through U+DFFF) can't appear directly in UTF-8 strings because they're reserved for UTF-16 surrogate pair encoding rather than representing standalone characters, and attempting to encode them as UTF-8 would produce an invalid byte sequence.
+- Ensure both operands of the addition operator are UTF-8 string literals (marked with the `u8` suffix) when concatenating UTF-8 strings (**CS9047**). The compiler provides special support for concatenating [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals) at compile time, which produces `ReadOnlySpan<byte>` values representing the concatenated UTF-8 byte sequences, but mixing UTF-8 strings with regular `string` values or other types isn't supported because the type system can't determine whether to produce a byte span or a text string, and the underlying representations (UTF-8 bytes versus UTF-16 characters) are fundamentally incompatible.
+
 For more information, see [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
 ## Literal strings in data sections

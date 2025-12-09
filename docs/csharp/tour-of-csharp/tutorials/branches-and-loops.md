@@ -7,6 +7,26 @@ ms.date: 12/03/2025
 
 This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Launch a GitHub Codespace with a C# development environment. EDIT
+> * Create your first C# app.
+> * Create and use variables to store text data.
+> * Use .NET APIs with text data.
+
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Prerequisites
+
+You must have one of the following:
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A computer with the following tools installed:
+  - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+  - [Visual Studio Code](https://code.visualstudio.com/download).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you completed other tutorials in this series, you can open that codespace. Once your codespace loads, create a new file in the *tutorials* folder named *branches-loops.cs*. Open your new file. Type or copy the following code into *branches-loops.cs*:

@@ -7,6 +7,27 @@ ms.date: 12/02/2025
 
 This tutorial teaches you about the numeric types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Launch a GitHub Codespace with a C# development environment. EDIT
+> * Create your first C# app.
+> * Create and use variables to store text data.
+> * Use .NET APIs with text data.
+
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Prerequisites
+
+You must have one of the following:
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A computer with the following tools installed:
+  - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+  - [Visual Studio Code](https://code.visualstudio.com/download).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
+
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Explore integer math

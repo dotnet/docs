@@ -9,6 +9,26 @@ This introductory tutorial provides an introduction to the C# language and the b
 
 This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections and arrays. You work primarily with the <xref:System.Collections.Generic.List%601> class.
 
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Launch a GitHub Codespace with a C# development environment. EDIT
+> * Create your first C# app.
+> * Create and use variables to store text data.
+> * Use .NET APIs with text data.
+
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Prerequisites
+
+You must have one of the following:
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A computer with the following tools installed:
+  - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+  - [Visual Studio Code](https://code.visualstudio.com/download).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## A basic list example

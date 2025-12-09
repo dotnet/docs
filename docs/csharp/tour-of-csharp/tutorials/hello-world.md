@@ -1,26 +1,51 @@
 ---
 title: Hello World - Introductory tutorial
 description: In this tutorial, you create your first C# apps. You write C# code and learn basic structure and types in C#.
-ms.date: 12/02/2025
+ms.date: 12/09/2025
+# customer intent: As an aspiring developer, I want to learn C#.
 ---
-# Introduction to C# - tutorial
+# Tutorial: Explore the C# language
 
 This tutorial teaches you C#. You write your first C# program and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Launch a GitHub Codespace with a C# development environment.
+> * Create your first C# app.
+> * Create and use variables to store text data.
+> * Use .NET APIs with text data.
+
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Prerequisites
+
+You must have one of the following:
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A computer with the following tools installed:
+  - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+  - [Visual Studio Code](https://code.visualstudio.com/download).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
+## Open Codespaces
+
+To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment.
 
 ## Run your first program
 
-Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. Once your codespace loads, create a new file in the *tutorials* folder named *hello-world.cs*. Open your new file. Type or copy the following code into *hello-world.cs*:
+1. Once your codespace loads, create a new file in the *tutorials* folder named *hello-world.cs*.
+1. Open your new file.
+1. Type or copy the following code into *hello-world.cs*:
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="HelloWorld":::
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="HelloWorld":::
 
-In the integrated terminal window, make the *tutorials* folder the current folder, and run your program:
+1. In the integrated terminal window, make the *tutorials* folder the current folder, and run your program:
 
-```dotnetcli
-cd tutorials
-dotnet hello-world.cs
-```
+   ```dotnetcli
+   cd tutorials
+   dotnet hello-world.cs
+   ```
 
 You ran your first C# program. It's a simple program that prints the message "Hello World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
@@ -34,36 +59,37 @@ Your first program prints the `string` "Hello World!" on the screen.
 >
 > As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and the code in your `.cs` file to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot mistakes.
 
-Your first program is limited to printing one message. You can write more useful programs by using *variables*. A *variable* is a symbol you can use to run the same code with different values. Let's try it! Start with the following code:
+Your first program is limited to printing one message. You can write more useful programs by using *variables*. A *variable* is a symbol you can use to run the same code with different values. Let's try it!
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Variables":::
+1. Start with the following code:
 
-The first line declares a variable, `aFriend`, and assigns it a value, "Bill". The second line prints the name.
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Variables":::
 
-You can assign different values to any variable you declare. You can change the name to one of your friends. Add these two lines following the code you already added. Make sure you keep the declaration of the `aFriend` variable and its initial assignment.
+   The first line declares a variable, `aFriend`, and assigns it a value, "Bill". The second line prints the name.
 
-> [!IMPORTANT]
-> Don't delete the declaration of `aFriend`. Add the following code at the end of the preceding code:
+1. You can assign different values to any variable you declare. You can change the name to one of your friends. Add these two lines following the code you already added. Make sure you keep the declaration of the `aFriend` variable and its initial assignment.
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Assignment":::
+   > [!IMPORTANT]
+   > Don't delete the declaration of `aFriend`.
 
-Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable.
+1. Add the following code at the end of the preceding code:
 
-You might notice that the word "Hello" is missing in the last two messages. Let's fix that now. Modify the lines that print the message to the following code:
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Assignment":::
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
+   Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable. You might notice that the word "Hello" is missing in the last two messages. Let's fix that now. 
+1. Modify the lines that print the message to the following code:
 
-Run the app again using `dotnet hello-world.cs` to see the results.
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
 
-You've been using `+` to build strings from **variables** and **constant** strings. There's a better way. You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable.
+1. Run the app again using `dotnet hello-world.cs` to see the results.
 
-This process is called [String interpolation](../../language-reference/tokens/interpolated.md).
+   You've been using `+` to build strings from **variables** and **constant** strings. There's a better way. You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable. This process is called [String interpolation](../../language-reference/tokens/interpolated.md).
 
-If you add a `$` before the opening quote of the string, you can then include variables, like `aFriend`, inside the string between curly braces. Give it a try:
+1. If you add a `$` before the opening quote of the string, you can then include variables, like `aFriend`, inside the string between curly braces. Give it a try:
 
-:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Interpolation":::
+   :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Interpolation":::
 
-Run the app again using `dotnet hello-world.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
+1. Run the app again using `dotnet hello-world.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
 ## Work with strings
 
@@ -137,3 +163,47 @@ For further reading on the `string` type:
 
 - [C# programming guide article on strings](../../programming-guide/strings/index.md).
 - [How to tips on working with strings](../../how-to/index.md#working-with-strings).
+
+
+=====================================================================================
+
+## Clean up resources
+
+<!-- Optional: Steps to clean up resources - H2
+
+Provide steps the user takes to clean up resources that
+were created to complete the article.
+
+-->
+
+## Next step -or- Related content
+
+> [!div class="nextstepaction"]
+> [Next sequential article title](link.md)
+
+-or-
+
+* [Related article title](link.md)
+* [Related article title](link.md)
+* [Related article title](link.md)
+
+<!-- Optional: Next step or Related content - H2
+
+Consider adding one of these H2 sections (not both):
+
+A "Next step" section that uses 1 link in a blue box 
+to point to a next, consecutive article in a sequence.
+
+-or- 
+
+A "Related content" section that lists links to 
+1 to 3 articles the user might find helpful.
+
+-->
+
+<!--
+
+Remove all comments except the customer intent
+before you sign off or merge to the main branch.
+
+-->

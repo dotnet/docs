@@ -9,6 +9,26 @@ This tutorial teaches you about creating types in C#. You write small amounts of
 
 The preceding tutorials worked with text and numbers. Strings and numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
 
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Launch a GitHub Codespace with a C# development environment. EDIT
+> * Create your first C# app.
+> * Create and use variables to store text data.
+> * Use .NET APIs with text data.
+
+To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Prerequisites
+
+You must have one of the following:
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A computer with the following tools installed:
+  - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+  - [Visual Studio Code](https://code.visualstudio.com/download).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## Tuples

@@ -42,7 +42,7 @@ References another project file.
 
 ### `#:property`
 
-Sets a MSBuild property value.
+Sets the MSBuild property value.
 
 ```csharp
 #:property TargetFramework=net10.0
@@ -256,12 +256,12 @@ The .NET SDK caches build outputs to improve performance on subsequent builds. F
 
 The SDK caches build outputs based on:
 
-- Source file content
-- Directive configuration
-- SDK version
-- Implicit build files
+- Source file content.
+- Directive configuration.
+- SDK version.
+- Implicit build files.
 
-Caching improves build performance but can cause confusion:
+Caching improves build performance but can cause confusion when:
 
 - Changes to implicit build files might not trigger rebuilds.
 - Moving files to different directories might not invalidate cache.

@@ -1,0 +1,4 @@
+{
+    "host": "custom",
+    "command": "dotnet workload restore;dotnet build \"{projectPath}\""
+}

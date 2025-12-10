@@ -1,22 +1,12 @@
 ﻿
-PageOne();
-PageTwo();
-MorePageTwo();
-PageThree();
-PageFour();
-PageFive();
+WorkWithIntegers();
+OrderPrecedence();
+QuotientAndRemainder();
+FloatingPoint();
+Decimal();
+Challenge();
 
-// Bonus calculation:
-// <ChangeDoubleValues>
-double a = 19;
-double b = 23;
-double c = 8;
-double d = (a + b) / c;
-Console.WriteLine(d);
-// </ChangeDoubleValues>
-
-
-void PageOne()
+void WorkWithIntegers()
 {
     // <Addition>
     int a = 18;
@@ -24,9 +14,23 @@ void PageOne()
     int c = a + b;
     Console.WriteLine(c);
     // </Addition>
+
+    //<OtherOperations>
+    // subtraction
+    c = a - b;
+    Console.WriteLine(c);
+
+    // multiplication
+    c = a * b;
+    Console.WriteLine(c);
+
+    // division
+    c = a / b;
+    Console.WriteLine(c);
+    // </OtherOperations>
 }
 
-void PageTwo()
+void OrderPrecedence()
 {
     // <Precedence>
     int a = 5;
@@ -45,20 +49,17 @@ void PageTwo()
     d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
     Console.WriteLine(d);
     // </CompoundExpression>
-}
 
-void MorePageTwo()
-{
     // <Truncation>
-    int a = 7;
-    int b = 4;
-    int c = 3;
-    int d = (a + b) / c;
-    Console.WriteLine(d);
+    int e = 7;
+    int f = 4;
+    int g = 3;
+    int h = (e + f) / g;
+    Console.WriteLine(h);
     // </Truncation>
 }
 
-void PageThree()
+void QuotientAndRemainder()
 {
     // <QuotientAndRemainder>
     int a = 7;
@@ -80,10 +81,9 @@ void PageThree()
     int what = max + 3;
     Console.WriteLine($"An example of overflow: {what}");
     // </Overflow>
-
 }
 
-void PageFour()
+void FloatingPoint()
 {
     // <FloatingPoint>
     double a = 5;
@@ -105,7 +105,7 @@ void PageFour()
     // </RoundingError>
 }
 
-void PageFive()
+void Decimal()
 {
     // <Decimal>
     decimal min = decimal.MinValue;
@@ -129,3 +129,15 @@ void PageFive()
     Console.WriteLine(area);
     // </Challenge>
 }
+
+void Challenge()
+{
+    // <ChangeDoubleValues>
+    double a = 19;
+    double b = 23;
+    double c = 8;
+    double d = (a + b) / c;
+    Console.WriteLine(d);
+    // </ChangeDoubleValues>
+}
+

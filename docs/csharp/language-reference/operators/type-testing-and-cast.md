@@ -55,7 +55,7 @@ The following example demonstrates that the `is` operator returns `true` if the 
 
 The next example shows that the `is` operator takes into account boxing and unboxing conversions but doesn't consider [numeric conversions](../builtin-types/numeric-conversions.md):
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="IsWithInt":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="IsWithInt":::
 
 For information about C# conversions, see the [Conversions](~/_csharpstandard/standard/conversions.md) chapter of the [C# language specification](~/_csharpstandard/standard/README.md).
 
@@ -63,7 +63,7 @@ For information about C# conversions, see the [Conversions](~/_csharpstandard/st
 
 The `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the run-time type of an expression:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="IsDeclarationPattern":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="IsDeclarationPattern":::
 
 For information about the supported patterns, see [Patterns](patterns.md).
 
@@ -89,7 +89,7 @@ The `as` operator considers only reference, nullable, boxing, and unboxing conve
 
 The following example demonstrates the usage of the `as` operator:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="AsOperator":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="AsOperator":::
 
 > [!NOTE]
 > As the preceding example shows, you need to compare the result of the `as` expression with `null` to check if the conversion was successful. You can use the [`is` operator](#type-testing-with-pattern-matching) both to test if the conversion succeeds and, if it succeeds, assign its result to a new variable.
@@ -100,7 +100,7 @@ A cast expression of the form `(T)E` performs an explicit conversion of the resu
 
 The following example demonstrates explicit numeric and reference conversions:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="Cast":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="Cast":::
 
 For information about supported explicit conversions, see the [Explicit conversions](~/_csharpstandard/standard/conversions.md#103-explicit-conversions) section of the [C# language specification](~/_csharpstandard/standard/README.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
@@ -114,7 +114,7 @@ Other use of parentheses is to adjust the order in which to evaluate operations 
 
 The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeOf":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeOf":::
 
 The argument mustn't be a type that requires metadata annotations. Examples include the following types:
 
@@ -125,7 +125,7 @@ These types aren't directly represented in metadata. The types include attribute
 
 You can also use the `typeof` operator with unbound generic types. The name of an unbound generic type must contain the appropriate number of commas, which is one less than the number of type parameters. The following example shows the usage of the `typeof` operator with an unbound generic type:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeOfUnboundGeneric":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeOfUnboundGeneric":::
 
 An expression can't be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
 
@@ -133,7 +133,7 @@ An expression can't be an argument of the `typeof` operator. To get the <xref:Sy
 
 Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking done with the `typeof` operator and the [`is` operator](#the-is-operator):
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeCheckWithTypeOf":::
+:::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeCheckWithTypeOf":::
 
 ## Operator overloadability
 

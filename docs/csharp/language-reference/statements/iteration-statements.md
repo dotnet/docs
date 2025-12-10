@@ -28,7 +28,7 @@ At any point within the body of an iteration statement, you can break out of the
 
 The `for` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. The following example shows the `for` statement that executes its body while an integer counter is less than three:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForStatement.cs" id="TypicalExample":::
+:::code language="csharp" source="snippets/iteration-statements/ForStatement.cs" id="TypicalExample":::
 
 The preceding example shows the elements of the `for` statement:
 
@@ -69,7 +69,7 @@ The iterator section can contain zero or more of the following statement express
 
 If you don't declare a loop variable in the initializer section, you can use zero or more of the expressions from the preceding list in the initializer section as well. The following example shows several less common usages of the initializer and iterator sections: assigning a value to an external variable in the initializer section, invoking a method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForStatement.cs" id="MultipleExpressions":::
+:::code language="csharp" source="snippets/iteration-statements/ForStatement.cs" id="MultipleExpressions":::
 
 All the sections of the `for` statement are optional. For example, the following code defines the infinite `for` loop:
 
@@ -79,7 +79,7 @@ All the sections of the `for` statement are optional. For example, the following
 
 The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForeachStatement.cs" id="WithIEnumerable":::
+:::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithIEnumerable":::
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
@@ -136,7 +136,7 @@ The `do` statement executes a statement or a block of statements while a specifi
 
 The following example shows the usage of the `do` statement:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/DoStatement.cs" id="Example":::
+:::code language="csharp" source="snippets/iteration-statements/DoStatement.cs" id="Example":::
 
 ## The `while` statement
 
@@ -144,7 +144,7 @@ The `while` statement executes a statement or a block of statements while a spec
 
 The following example shows the usage of the `while` statement:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/WhileStatement.cs" id="Example":::
+:::code language="csharp" source="snippets/iteration-statements/WhileStatement.cs" id="Example":::
 
 ## C# language specification
 

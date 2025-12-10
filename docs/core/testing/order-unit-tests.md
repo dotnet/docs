@@ -97,7 +97,29 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nun
 
 TUnit provides a `[DependsOn]` attribute to control test execution order through explicit dependencies. When a test depends on another, TUnit ensures the prerequisite test completes before executing the dependent test. This approach allows you to maintain test parallelism for independent tests while enforcing order where necessary.
 
-:::code language="csharp" source="snippets/order-unit-tests/csharp/TUnit.TestProject/ByDependency.cs":::
+```csharp
+using TUnit.Core;
+
+namespace OrderUnitTests.TUnit;
+
+public class DependencyOrderedTests
+{
+    [Test]
+    public async Task FirstTest()
+    {
+        // This test runs first
+        await Task.CompletedTask;
+    }
+
+    [Test]
+    [DependsOn(nameof(FirstTest))]
+    public async Task SecondTest()
+    {
+        // This test runs after FirstTest completes
+        await Task.CompletedTask;
+    }
+}
+```
 
 ### Behavior
 

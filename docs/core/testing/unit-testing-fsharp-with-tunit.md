@@ -89,6 +89,9 @@ Execute `dotnet sln add .\MathService.Tests\MathService.Tests.fsproj` in the *un
 
 TUnit only supports Microsoft.Testing.Platform and doesn't support VSTest. To use `dotnet test` with TUnit, add the following configuration to your `global.json` file in the solution root:
 
+> [!NOTE]
+> This configuration requires .NET 10 SDK or later.
+
 ```json
 {
     "test": {

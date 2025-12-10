@@ -334,6 +334,9 @@ dotnet-trace collect-linux
     # .NET Process Target (Optional)
     [-n, --name <name>]
     [-p|--process-id <pid>]
+
+    # Probe mode
+    [--probe]
 ```
 
 ### Default collection behavior
@@ -466,6 +469,14 @@ See [Default collection behavior](#default-collection-behavior)
 - **`-p|--process-id <PID>`**
 
   The process ID to collect the trace from.
+
+#### Probe mode options
+
+- **`--probe [-n|--name] [-p|--process-id] [-o|--output <stdout|output-filename>]`**
+
+  Probe .NET processes for support of the EventPipe UserEvents IPC command used by collect-linux, without collecting a trace. Results list supported processes first. Use '-o stdout' to print CSV (pid,processName,supportsCollectLinux) to the console, or '-o <file>' to write the CSV. Probe a single process with -n|--name or -p|--process-id.
+
+  As running `collect-linux` in probe mode does not collect a trace, it does not require root permissions to run. It does not provide validation of the [prerequisites](#prerequisites), and .NET processes running on preview versions of .NET Runtime '10.0.0' are considered unsupported.
 
 > [!NOTE]
 
@@ -715,6 +726,24 @@ This example captures CPU samples for all processes on the machine. Any processe
   Resolving symbols.
   Finished recording trace.
   Trace written to <path-to-nettrace>trace_20251008_181939.nettrace
+  ```
+
+For environments with multiple .NET versions installed, running `collect-linux` in [probe mode](#probe-mode-options) helps discern whether a .NET process is capable of being traced with collect-linux.
+
+  ```output
+  $ dotnet-trace collect-linux --probe
+  ==========================================================================================
+  The collect-linux verb is a new preview feature and relies on an updated version of the
+  .nettrace file format. The latest PerfView release supports these trace files but other
+  ways of using the trace file may not work yet. For more details, see the docs at
+  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
+  ==========================================================================================
+  Probing .NET processes for support of the EventPipe UserEvents IPC command used by collect-linux. Requires runtime '10.0.0' or later.
+  .NET processes that support the command:
+  3802935 MyApp
+
+  .NET processes that do NOT support the command:
+  3809123 dotnet - Detected runtime: '10.0.0-rc.1.25451.107'
   ```
 
 ## View the trace captured from dotnet-trace

@@ -85,8 +85,10 @@ You can use AI tools, such as GitHub Copilot, to generate code to split strings 
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate C# code to split a CSV-style input string containing values, where entries may be separated by commas or semicolons and may contain extra whitespace.
-Remove any empty values and trim whitespace from the results.
+Generate C# code to parse and split CSV-style data from user input or external export that isn't well formed.
+The input string may contain mixed delimiters (commas, semicolons), inconsistent spacing and empty entries.
+Parse the string: accept all valid separators, remove any empty values and trim whitespace from all entries.
+Return a clean list of values.
 Show example output for the string: "  apples, oranges ; bananas, ,  ;pears".
 ```
 

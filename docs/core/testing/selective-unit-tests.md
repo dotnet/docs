@@ -30,9 +30,8 @@ dotnet test --filter <Expression>
   | Test framework | Supported properties |
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
-  | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
   | NUnit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
-  | TUnit          | `FullyQualifiedName`<br>`Name`<br>`Category`<br>`Property` |
+  | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
 
 * **Operators**
 

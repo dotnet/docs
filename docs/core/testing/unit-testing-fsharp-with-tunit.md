@@ -8,13 +8,13 @@ ai-usage: ai-assisted
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and TUnit
 
-This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-with-fsharp/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts.
 
 [!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
 
 ## Prerequisites
 
-TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md). Unlike frameworks that support both VSTest and Microsoft.Testing.Platform, TUnit only supports Microsoft.Testing.Platform.
+TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) and does not support VSTest.
 
 ## Creating the source project
 

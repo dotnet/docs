@@ -8,11 +8,11 @@ ai-usage: ai-assisted
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and TUnit
 
-This tutorial shows how to build a solution containing a unit test project and library project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial shows how to build a solution containing a unit test project and library project step-by-step.
 
 ## Prerequisites
 
-TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md). Unlike frameworks that support both VSTest and Microsoft.Testing.Platform, TUnit only supports Microsoft.Testing.Platform.
+TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) and does not support VSTest.
 
 ## Create the solution
 
@@ -102,8 +102,6 @@ The following instructions provide the steps to create the test solution. See [C
   dotnet add ./PrimeService.Tests/PrimeService.Tests.vbproj reference ./PrimeService/PrimeService.vbproj
   ```
 
-<a name="create-test-cmd"></a>
-
 ### Commands to create the solution
 
 This section summarizes all the commands in the previous section. Skip this section if you've completed the steps in the previous section.
@@ -152,21 +150,20 @@ Update the *PrimeService.Tests* project:
 Imports TUnit.Assertions
 Imports TUnit.Assertions.Extensions
 Imports TUnit.Core
+Imports Prime.Services
 
 Namespace PrimeService.Tests
     Public Class PrimeService_IsPrimeShould
-        Private ReadOnly _primeService As Prime.Services.PrimeService
+        Private ReadOnly _primeService As PrimeService
 
         Public Sub New()
-            _primeService = New Prime.Services.PrimeService()
+            _primeService = New PrimeService()
         End Sub
 
         <Test>
-        Function IsPrime_InputIs1_ReturnFalse() As Task
-            Return Task.Run(Async Function()
-                Dim result As Boolean = _primeService.IsPrime(1)
-                Await Assert.That(result).IsFalse()
-            End Function)
+        Public Async Function IsPrime_InputIs1_ReturnFalse() As Task
+            Dim result As Boolean = _primeService.IsPrime(1)
+            Await Assert.That(result).IsFalse()
         End Function
 
     End Class
@@ -206,11 +203,9 @@ Rather than creating new tests, apply the `[Arguments]` attribute to create para
 
 ```vb
 <Test>
-Function IsPrime_InputIs1_ReturnFalse() As Task
-    Return Task.Run(Async Function()
-        Dim result As Boolean = _primeService.IsPrime(1)
-        Await Assert.That(result).IsFalse()
-    End Function)
+Public Async Function IsPrime_InputIs1_ReturnFalse() As Task
+    Dim result As Boolean = _primeService.IsPrime(1)
+    Await Assert.That(result).IsFalse()
 End Function
 ```
 
@@ -221,11 +216,9 @@ with the following code:
 <Arguments(-1)>
 <Arguments(0)>
 <Arguments(1)>
-Function IsPrime_ValuesLessThan2_ReturnFalse(ByVal value As Integer) As Task
-    Return Task.Run(Async Function()
-        Dim result As Boolean = _primeService.IsPrime(value)
-        Await Assert.That(result).IsFalse()
-    End Function)
+Public Async Function IsPrime_ValuesLessThan2_ReturnFalse(ByVal value As Integer) As Task
+    Dim result As Boolean = _primeService.IsPrime(value)
+    Await Assert.That(result).IsFalse()
 End Function
 ```
 

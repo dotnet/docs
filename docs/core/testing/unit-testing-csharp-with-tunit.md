@@ -8,11 +8,11 @@ ai-usage: ai-assisted
 ---
 # Unit testing C# in .NET using dotnet test and TUnit
 
-This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a prebuilt solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial shows how to build a solution containing a unit test project and source code project step-by-step.
 
 ## Prerequisites
 
-TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md). Unlike frameworks that support both VSTest and Microsoft.Testing.Platform, TUnit only supports Microsoft.Testing.Platform.
+TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) and does not support VSTest.
 
 ## Create the solution
 
@@ -124,6 +124,9 @@ Follow the instructions for "Replace the code in *PrimeService.cs* with the foll
 ## Configure Microsoft.Testing.Platform mode
 
 TUnit only supports Microsoft.Testing.Platform and doesn't support VSTest. To use `dotnet test` with TUnit, add the following configuration to your `global.json` file in the solution root:
+
+> [!NOTE]
+> This configuration requires .NET 10 SDK or later.
 
 ```json
 {

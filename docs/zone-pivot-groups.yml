@@ -34,10 +34,12 @@ groups:
   pivots:
     - id: mstest
       title: MSTest
-    - id: xunit
-      title: xUnit
     - id: nunit
       title: NUnit
+    - id: tunit
+      title: TUnit
+    - id: xunit
+      title: xUnit
 - id: ide-set-one
   title: IDE
   prompt: Choose an IDE

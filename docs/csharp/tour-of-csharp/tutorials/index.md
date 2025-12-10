@@ -40,6 +40,6 @@ The [Pattern matching](pattern-matching.md) lesson provides an introduction to *
 
 ## Set up your local environment
 
-After you finish these tutorials, set up a development environment. You need:
+If you prefer not to complete the tutorials using GitHub Codespaces, you can can up your local environment. You need:```
 
 [!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]

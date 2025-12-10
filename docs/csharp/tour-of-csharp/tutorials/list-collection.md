@@ -7,16 +7,16 @@ ms.date: 12/10/2025
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> class.
 
-This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections and arrays. You work primarily with the <xref:System.Collections.Generic.List%601> class.
+This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections. You work primarily with the <xref:System.Collections.Generic.List%601> class.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
 > * Launch a GitHub Codespace with a C# development environment.
-> * Create your first C# app.
-> * Create and use variables to store text data.
-> * Use .NET APIs with text data.
+> * Create different types of lists.
+> * Modify list contents.
+> * Search and sort lists.
 
 To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
@@ -30,7 +30,6 @@ You must have one of the following:
   - [Visual Studio Code](https://code.visualstudio.com/download).
   - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 ## A basic list example
 

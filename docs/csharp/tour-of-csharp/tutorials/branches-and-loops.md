@@ -29,7 +29,7 @@ You must have one of the following options:
   - [Visual Studio Code](https://code.visualstudio.com/download).
   - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+## Use if statements
 
 To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment. If you completed other tutorials in this series, you can open that codespace instead of creating a new one.
 
@@ -78,7 +78,7 @@ To execute different code in both the true and false branches, you create an `el
 
    Because indentation isn't significant, you need to use `{` and `}` to indicate when you want more than one statement to be part of the block that executes conditionally. C# programmers typically use those braces on all `if` and `else` clauses.
 
-1. The following example is the same as what you created. Modify your code above to match the following code:
+1. The following example is the same as what you created in the previous example, with the addition of `{` and `}`. Modify your code to match the following code:
 
    :::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="IncludeBraces":::
 

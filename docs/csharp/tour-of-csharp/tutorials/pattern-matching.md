@@ -29,7 +29,6 @@ You must have one of the following:
   - [Visual Studio Code](https://code.visualstudio.com/download).
   - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 
 The preceding tutorials demonstrated built-in types and types you define as tuples or records. You can check instances of these types against a *pattern*. Whether an instance matches a pattern determines the actions your program takes. In the examples below, you see `?` after type names. This symbol allows the value of this type to be null (for example, `bool?` can be `true`, `false`, or `null`). For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).  Let's start to explore how you can use patterns.
 

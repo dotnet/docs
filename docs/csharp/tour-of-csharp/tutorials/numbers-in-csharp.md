@@ -18,13 +18,11 @@ In this tutorial, you:
 > * Learn floating point types.
 > * Learn the decimal type.
 
-To use Codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
-
 ## Prerequisites
 
 You must have one of the following:
 
-- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).

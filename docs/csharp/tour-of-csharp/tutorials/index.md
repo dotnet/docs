@@ -37,9 +37,3 @@ The [List collection](list-collection.md) lesson gives you a tour of the List co
 ## Pattern matching
 
 The [Pattern matching](pattern-matching.md) lesson provides an introduction to *pattern matching*. Pattern matching enables you to compare an expression against a pattern. The success of the match determines which program logic to follow. Patterns can compare types, properties of a type, or contents of a list. You can combine multiple patterns by using `and`, `or`, and `not` logic. Patterns provide a rich vocabulary to inspect data and make decisions in your program based on that inspection.
-
-## Set up your local environment
-
-If you prefer not to complete the tutorials using GitHub Codespaces, you can can up your local environment. You need:```
-
-[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]

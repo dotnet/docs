@@ -17,22 +17,19 @@ In this tutorial, you:
 > * Create exhaustive matches using `switch` expressions.
 > * Match types using type patterns.
 
-To use codespaces, you need a GitHub account. If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
-
 ## Prerequisites
 
 You must have one of the following:
 
-- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces).
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).
   - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
+## Match a value
 
 The preceding tutorials demonstrated built-in types and types you define as tuples or records. You can check instances of these types against a *pattern*. Whether an instance matches a pattern determines the actions your program takes. In the examples below, you see `?` after type names. This symbol allows the value of this type to be null (for example, `bool?` can be `true`, `false`, or `null`). For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).  Let's start to explore how you can use patterns.
-
-## Match a value
 
 Open a browser window to [GitHub codespaces](https://github.com/codespaces). Create a new codespace from the *.NET Template*. If you completed other tutorials in this series, you can open that codespace.
 

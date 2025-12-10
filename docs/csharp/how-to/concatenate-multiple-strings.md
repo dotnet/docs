@@ -77,7 +77,7 @@ You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate
 Here's an example Copilot Chat prompt:
 
 ```copilot-prompt
-Generate C# code to use String.Format to build an output string:
+Generate C# code to use string interpolation to build an output string:
 "Hello [name], today's date is [current date]. You have [count] new notifications."
 Use variables for: name is "John", date is today's date, and notification count is 3.
 Format the date as mm/dd/yyyy.

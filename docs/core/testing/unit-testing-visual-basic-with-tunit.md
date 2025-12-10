@@ -29,7 +29,7 @@ In this section, a solution is created that contains the source and test project
         PrimeServiceTests.vbproj
 ```
 
-The following instructions provide the steps to create the test solution. See [Commands to create test solution](#create-test-cmd) for instructions to create the test solution in one step.
+The following instructions provide the steps to create the test solution. See [Commands to create test solution](#commands-to-create-the-solution) for instructions to create the test solution in one step.
 
 * Open a shell window.
 * Run the following command:

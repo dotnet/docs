@@ -4,4 +4,4 @@ ms.topic: include
 ---
 **`--source <SOURCE>`**
 
-Specifies the source for NuGet packages. This source replaces all NuGet package sources.
+Specifies the source for NuGet packages.

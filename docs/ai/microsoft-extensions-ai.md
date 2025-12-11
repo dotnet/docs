@@ -28,7 +28,7 @@ For information about how to install NuGet packages, see [dotnet package add](..
 
 - [The `IChatClient` interface](#the-ichatclient-interface)
 - [The `IEmbeddingGenerator` interface](#the-iembeddinggenerator-interface)
-- [Image generation (experimental)](#image-generation-experimental)
+- [The `IImageGenerator` interface (experimental)](#the-iimagegenerator-interface-experimental)
 
 ### The `IChatClient` interface
 
@@ -74,22 +74,11 @@ This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedd
 
 In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IEmbeddingGenerator<string, Embedding<float>>` instances to provide rate-limiting functionality.
 
-### Image generation (experimental)
+### The IImageGenerator interface (experimental)
 
 The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation (by calling <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateAsync(Microsoft.Extensions.AI.ImageGenerationRequest,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)>) and [configuration options](xref:Microsoft.Extensions.AI.ImageGenerationOptions) for image size and format. Like other interfaces in the library, it can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
 
 For more information, see [Generate images from text using AI](quickstarts/text-to-image.md).
-
-## Data ingestion (preview)
-
-*Data ingestion* is the process of reading and preparing data from different sources to make it usable for downstream apps. .NET provides the building blocks that enable developers to read, process, and prepare documents for AI and machine learning workflows, especially retrieval-augmented generation (RAG) scenarios.
-
-- <xref:Microsoft.Extensions.DataIngestion.IngestionPipeline`1>
-- <xref:Microsoft.Extensions.DataIngestion.IngestionDocumentReader>
-- <xref:Microsoft.Extensions.DataIngestion.IngestionDocument>
-- <xref:Microsoft.Extensions.DataIngestion.IngestionChunk`1>
-- <xref:Microsoft.Extensions.DataIngestion.IngestionChunkProcessor`1>
-- <xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1>
 
 ## Build with Microsoft.Extensions.AI
 

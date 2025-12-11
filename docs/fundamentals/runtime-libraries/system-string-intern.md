@@ -17,7 +17,7 @@ The <xref:System.String.Intern%2A> method uses the intern pool to search for a s
 
 In the following example, the string `s1`, which has a value of "MyTest", is already interned because it is a literal in the program. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class generates a new string object that has the same value as `s1`. A reference to that string is assigned to `s2`. The <xref:System.String.Intern%2A> method searches for a string that has the same value as `s2`. Because such a string exists, the method returns the same reference that's assigned to `s1`. That reference is then assigned to `s3`. References `s1` and `s2` compare unequal because they refer to different objects; references `s1` and `s3` compare equal because they refer to the same string.
 
-:::code language="csharp" source="./snippets/System/String/Intern/csharp/Intern1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/Intern/csharp/Intern1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/Intern/fsharp/Intern1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/String/Intern/vb/Intern1.vb" id="Snippet1":::
 

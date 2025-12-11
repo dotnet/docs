@@ -64,7 +64,7 @@ Understand these instructions, then suggest a list of themes and the included er
 
 ## Move from description to resolution
 
-Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affectived error codes in parentheses, and in **bold** style. Remove extensive examples. Remove all H3 headings in this section. If any errors are no longer produced in the latest version of C#, make a note of that.
+Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affected error codes in parentheses, and in **bold** style. Remove extensive examples. Remove all H3 headings in this section. If any errors are no longer produced in the latest version of C#, make a note of that.
 
 ## Verify error messages
 

@@ -40,6 +40,7 @@ The following table shows the templates that come preinstalled with the .NET SDK
 | Directory.Build.targets file | [`buildtargets`](#buildtargets) |  | Config | 8.0.100 |
 | Dotnet local tool manifest file | `tool-manifest` |  | Config | 3.0 |
 | EditorConfig file | [`editorconfig`](#editorconfig) |  | Config | 6.0 |
+| .gitignore file | `gitignore` |  | Config | 3.0 |
 | global.json file | [`globaljson`](#globaljson) |  | Config | 2.0 |
 | MSTest Test Class | [`mstest-class`](#mstest-class) | [C#], F#, VB | Test/MSTest | 1.0 |
 | MSTest Test Project | [`mstest`](#mstest) | [C#], F#, VB | Test/MSTest | 1.0 |

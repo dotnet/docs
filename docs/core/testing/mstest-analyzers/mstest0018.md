@@ -36,18 +36,16 @@ The "data source" member referenced:
 - should exist on the specified type (current class if no type is specified)
 - should not have overloads
 - should be of the same kind (method or property) as the `DataSourceType` property
-- should be `public`
 - should be `static`
 - should not be generic
 - should be parameterless
-- should return `IEnumerable<object[]>`, `IEnumerable<Tuple<T,...>>` or `IEnumerable<ValueTuple<,...>>`
+- should return `IEnumerable<object[]>`, `IEnumerable<Tuple<T,...>>`, or `IEnumerable<ValueTuple<,...>>`
 
 The "display name" member referenced:
 
 - should exist on the specified type (current class if no type is specified)
 - should not have overloads
 - should be a method
-- should be `public`
 - should be `static`
 - should not be generic
 - should return `string`

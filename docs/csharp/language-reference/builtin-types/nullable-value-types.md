@@ -25,7 +25,7 @@ The default value of a nullable value type represents `null`, that is, it's an i
 
 You can use the [`is` operator with a type pattern](../operators/type-testing-and-cast.md#type-testing-with-pattern-matching) to both examine an instance of a nullable value type for `null` and retrieve a value of an underlying type:
 
-[!code-csharp-interactive[use pattern matching](snippets/shared/NullableValueTypes.cs#PatternMatching)]
+[!code-csharp[use pattern matching](snippets/shared/NullableValueTypes.cs#PatternMatching)]
 
 You always can use the following read-only properties to examine and get a value of a nullable value type variable:
 
@@ -35,17 +35,17 @@ You always can use the following read-only properties to examine and get a value
 
 The following example uses the `HasValue` property to test whether the variable contains a value before displaying it:
 
-[!code-csharp-interactive[use HasValue](snippets/shared/NullableValueTypes.cs#HasValue)]
+[!code-csharp[use HasValue](snippets/shared/NullableValueTypes.cs#HasValue)]
 
 You can also compare a variable of a nullable value type with `null` instead of using the `HasValue` property, as the following example shows:
 
-[!code-csharp-interactive[use comparison with null](snippets/shared/NullableValueTypes.cs#CompareWithNull)]
+[!code-csharp[use comparison with null](snippets/shared/NullableValueTypes.cs#CompareWithNull)]
 
 ## Conversion from a nullable value type to an underlying type
 
 If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to be assigned in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that (you can also use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method for the same purpose):
 
-[!code-csharp-interactive[?? operator](snippets/shared/NullableValueTypes.cs#NullCoalescing)]
+[!code-csharp[?? operator](snippets/shared/NullableValueTypes.cs#NullCoalescing)]
 
 If you want to use the [default](default-values.md) value of the underlying value type in place of `null`, use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method.
 
@@ -71,7 +71,7 @@ For the [comparison operators](../operators/comparison-operators.md) `<`, `>`, `
 - neither greater than or equal to `null`
 - nor less than `null`
 
-[!code-csharp-interactive[relational and equality operators](snippets/shared/NullableValueTypes.cs#ComparisonOperators)]
+[!code-csharp[relational and equality operators](snippets/shared/NullableValueTypes.cs#ComparisonOperators)]
 
 For the [equality operator](../operators/equality-operators.md#equality-operator-) `==`, if both operands are `null`, the result is `true`, if only one of the operands is `null`, the result is `false`; otherwise, the contained values of operands are compared.
 
@@ -88,23 +88,23 @@ An instance of a nullable value type `T?` is [boxed](../../programming-guide/typ
 
 You can unbox a boxed value of a value type `T` to the corresponding nullable value type `T?`, as the following example shows:
 
-[!code-csharp-interactive[boxing and unboxing](snippets/shared/NullableValueTypes.cs#Boxing)]
+[!code-csharp[boxing and unboxing](snippets/shared/NullableValueTypes.cs#Boxing)]
 
 ## How to identify a nullable value type
 
 The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a constructed nullable value type, that is, the <xref:System.Nullable%601?displayProperty=nameWithType> type with a specified type parameter `T`:
 
-[!code-csharp-interactive[whether Type is nullable](snippets/shared/NullableValueTypes.cs#IsTypeNullable)]
+[!code-csharp[whether Type is nullable](snippets/shared/NullableValueTypes.cs#IsTypeNullable)]
 
 As the example shows, you use the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to create a <xref:System.Type?displayProperty=nameWithType> instance.
 
 If you want to determine whether an instance is of a nullable value type, don't use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to get a <xref:System.Type> instance to be tested with the preceding code. When you call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method on an instance of a nullable value type, the instance is [boxed](#boxing-and-unboxing) to <xref:System.Object>. As boxing of a non-null instance of a nullable value type is equivalent to boxing of a value of the underlying type, <xref:System.Object.GetType%2A> returns a <xref:System.Type> instance that represents the underlying type of a nullable value type:
 
-[!code-csharp-interactive[GetType example](snippets/shared/NullableValueTypes.cs#GetType)]
+[!code-csharp[GetType example](snippets/shared/NullableValueTypes.cs#GetType)]
 
 Also, don't use the [is](../operators/type-testing-and-cast.md#the-is-operator) operator to determine whether an instance is of a nullable value type. As the following example shows, you cannot distinguish types of a nullable value type instance and its underlying type instance with the `is` operator:
 
-[!code-csharp-interactive[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
+[!code-csharp[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
 
 Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to check if an instance is of a nullable value type.
 

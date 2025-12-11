@@ -29,19 +29,19 @@ You use the <xref:System.Boolean.ToString%2A> method to convert Boolean values t
 
 The following example illustrates formatting with the <xref:System.Boolean.ToString%2A> method. Note that the C# and VB examples use the [composite formatting](../../standard/base-types/composite-formatting.md) feature, while the F# example uses [string interpolation](../../fsharp/language-reference/interpolated-strings.md). In both cases the <xref:System.Boolean.ToString%2A> method is called implicitly.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/tostring1.cs" interactive="try-dotnet" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/tostring1.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/tostring1.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/tostring1.vb" id="Snippet3":::
 
 Because the <xref:System.Boolean> structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the [conditional operator](../../csharp/language-reference/operators/conditional-operator.md) in C# or the [If operator](../../visual-basic/language-reference/operators/if-operator.md) in Visual Basic. The following example uses this technique to format <xref:System.Boolean> values as "Yes" and "No" rather than "True" and "False".
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/tostring2.cs" interactive="try-dotnet" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/tostring2.cs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/tostring2.vb" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/tostring2.fs" id="Snippet4":::
 
 For more complex custom formatting operations, including culture-sensitive formatting, you can call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method and provide an <xref:System.ICustomFormatter> implementation. The following example implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to provide culture-sensitive Boolean strings for the English (United States), French (France), and Russian (Russia) cultures.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/format3.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/format3.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/format3.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/format3.vb" id="Snippet5":::
 
@@ -57,13 +57,13 @@ The <xref:System.Boolean> structure implements the <xref:System.IConvertible> in
 
 All conversions from integral or floating-point numbers to Boolean values convert non-zero values to `true` and zero values to `false`. The following example illustrates this by calling selected overloads of the <xref:System.Convert.ToBoolean%2A?displayProperty=nameWithType> class.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/conversion1.cs" interactive="try-dotnet" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/conversion1.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/conversion1.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/conversion1.vb" id="Snippet6":::
 
 When converting from Boolean to numeric values, the conversion methods of the <xref:System.Convert> class convert `true` to 1 and `false` to 0. However, Visual Basic conversion functions convert `true` to either 255 (for conversions to <xref:System.Byte> values) or -1 (for all other numeric conversions). The following example converts `true` to numeric values by using a <xref:System.Convert> method, and, in the case of the Visual Basic example, by using the Visual Basic language's own conversion operator.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/conversion3.cs" interactive="try-dotnet" id="Snippet8":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/conversion3.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/conversion3.fs" id="Snippet8":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/conversion3.vb" id="Snippet8":::
 
@@ -75,13 +75,13 @@ The <xref:System.Boolean> structure includes two static parsing methods, <xref:S
 
 The following example uses the <xref:System.Boolean.Parse%2A> and <xref:System.Boolean.TryParse%2A> methods to parse a number of strings. Note that only the case-insensitive equivalents of "True" and "False" can be successfully parsed.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/parse2.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/parse2.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/parse2.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/parse2.vb" id="Snippet2":::
 
 If you're programming in Visual Basic, you can use the `CBool` function to convert the string representation of a number to a Boolean value. "0" is converted to `false`, and the string representation of any non-zero value is converted to `true`. If you're not programming in Visual Basic, you must convert your numeric string to a number before converting it to a Boolean. The following example illustrates this by converting an array of integers to Boolean values.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/parse3.cs" interactive="try-dotnet" id="Snippet9":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/parse3.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/parse3.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/parse3.vb" id="Snippet9":::
 
@@ -115,7 +115,7 @@ You can convert a Boolean value to its binary representation by calling the <xre
 
 The following example calls the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method to convert a Boolean value to its binary representation and displays the individual bits of the value, and then calls the <xref:System.BitConverter.ToBoolean%2A?displayProperty=nameWithType> method to restore the value from its binary representation.
 
-:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/binary1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Boolean/Overview/csharp/binary1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Boolean/Overview/fsharp/binary1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Boolean/Overview/vb/binary1.vb" id="Snippet1":::
 

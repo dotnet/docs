@@ -60,7 +60,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
 - Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and nonstatic, as the following code shows:
 
- :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
+ :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess":::
 
 You can also use `.` to access an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 
@@ -72,7 +72,7 @@ Square brackets, `[]`, are typically used for array, indexer, or pointer element
 
 The following example demonstrates how to access array elements:
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Arrays" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Arrays":::
 
 If an array index is outside the bounds of the corresponding dimension of an array, an <xref:System.IndexOutOfRangeException> is thrown.
 
@@ -84,7 +84,7 @@ For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers":::
 
 Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
 
@@ -135,14 +135,14 @@ In the preceding example, `B` isn't evaluated and `C()` isn't called if `A` is n
 
 The following examples demonstrate the usage of the `?.` and `?[]` operators:
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="SnippetNullConditional" interactive="try-dotnet-method":::
-:::code language="csharp" source="snippets/shared/MemberAccessOperators2.cs" interactive="try-dotnet":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="SnippetNullConditional":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators2.cs":::
 
 The first preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of the corresponding [nullable value type](../builtin-types/nullable-value-types.md) `T?`. If you need an expression of type `T`, apply the null-coalescing operator `??` to a null-conditional expression, as the following example shows:
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="NullConditionalWithNullCoalescing" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="NullConditionalWithNullCoalescing":::
 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
@@ -191,7 +191,7 @@ Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-st
 
 The following code demonstrates how to call a method, with or without arguments, and invoke a delegate:
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Invocation" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Invocation":::
 
 You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with the [`new`](new-operator.md) operator.
 

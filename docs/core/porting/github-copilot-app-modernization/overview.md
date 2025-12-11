@@ -5,15 +5,16 @@ titleSuffix: ""
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 09/23/2025
+ms.date: 12/09/2025
+ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn about what the GitHub Copilot app modernziation is, so that I understand its capabilities and how I can take advantage of it.
+#customer intent: As a developer, I want to learn about what the GitHub Copilot app modernization is, so that I understand its capabilities and how I can take advantage of it.
 
 ---
 
 # What is GitHub Copilot app modernization?
 
-GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
+GitHub Copilot app modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation—all within Visual Studio.
 
 This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration agent that uses AI to improve developer velocity, quality, and results.
 
@@ -33,19 +34,21 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 
 ## Prerequisites
 
-The following items are required before you can use GitHub Copilot app modernization:
+Before using GitHub Copilot app modernization, you need these items:
 
 [!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
 ## How to start an upgrade or migration
 
-To start an upgrade or migration, interact with GitHub Copilot, following these steps:
+To start an upgrade or migration, interact with GitHub Copilot by following these steps:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
+If your repository already contains the `.github/upgrades` folder with the stage files from a previous upgrade or migration attempt, Copilot asks whether you want to continue that upgrade or start over with a fresh analysis.
+
 ## Upgrade .NET projects
 
-The modernization agent supports upgrading projects coded in C#. The following types of projects are supported:
+The modernization agent supports upgrading projects coded in C#. The agent supports the following project types:
 
 - ASP.NET Core (and related technologies such as MVC, Razor Pages, and Web API)
 - Blazor
@@ -59,7 +62,7 @@ To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Cop
 
 ### Upgrade paths
 
-The following upgrade paths are supported:
+The agent supports the following upgrade paths:
 
 - Upgrade projects from older .NET versions to the latest.
 - Upgrade .NET Framework projects to .NET.
@@ -68,7 +71,7 @@ The following upgrade paths are supported:
 
 ## Migrate .NET projects to Azure
 
-The modernization agent combines automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation to simplify migrations to Azure. The following capabilities describe how the agent assesses readiness, applies fixes, and streamlines the migration process:
+The modernization agent combines automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation to simplify migrations to Azure. The agent assesses readiness, applies fixes, and streamlines the migration process through these capabilities:
 
 - Analysis & Intelligent Recommendations.
 
@@ -80,7 +83,7 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 - Automatic Build and CVE Resolution.
 
-  Automatically builds your app and resolves compilation errors and vulnerabilities, streamlining development.
+  Automatically build your app and resolve compilation errors and vulnerabilities, streamlining development.
 
 - Seamless Deployment.
 
@@ -129,29 +132,36 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - **Migrate to Azure Cache for Redis with Managed Identity**
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
-## How does it work
+## How it works
 
-Once you request the modernization agent to upgrade or migrate your app, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade or migration. After you answer these questions, a plan is written in the form of a Markdown file. If you tell Copilot to proceed with the upgrade or migration, it follows the steps described in the plan.
+When you ask the modernization agent to upgrade or migrate your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a three-stage workflow. Each stage writes a Markdown file under `.github/upgrades` in your repository so you can review what comes next before you continue. If `.github/upgrades` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
-You can adjust the plan by editing the Markdown file to change the upgrade steps or add more context.
+- **Analysis stage (`assessment.md`)**\
+Copilot examines your project structure, dependencies, and code patterns to build a comprehensive assessment. The document lists breaking changes, API compatibility issues, deprecated patterns, and the migration scope so you know exactly what needs attention.
+
+- **Planning stage (`plan.md`)**\
+Copilot converts the assessment into a detailed specification that explains how to resolve every issue. The plan documents migration strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
+
+- **Execution stage (`tasks.md`)**\
+Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot confirms it succeeded.
+
+Edit any of the Markdown files in `.github/upgrades` to adjust upgrade steps or add context before you move forward.
 
 ### Perform the upgrade or migration
 
-Once a plan is ready, tell Copilot to start using it. Once the process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step.
+As each stage is prepared, tell Copilot to move on to the next stage, giving you time to research and modify (if necessary) any of the tasks the stage has laid out.
 
-If it runs into a problem, Copilot tries to identify the cause of a problem and apply a fix. If Copilot can't seem to correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you, if the problem is encountered again.
-
-Each major step in the plan is committed to the local Git repository.
+Once you reach the last stage, **Execution stage**, tell Copilot to start the upgrade or migration. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you if the problem is encountered again.
 
 ### Upgrade and migration results
 
-When the process completes, a report is generated that describes every step taken by Copilot. The tool creates a Git commit for every portion of the process, so you can easily roll back the changes or get detailed information about what changed. The report contains the Git commit hashes.
+As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can easily roll back the changes or get detailed information about what changed.
 
-The report also provides a _Next steps_ section that describes the steps you should take after the upgrade finishes.
+When the upgrade or migration finishes, Copilot displays next steps in the chat response to guide you on what to do after the process completes.
 
 ## Telemetry
 
-The tool only collects data about project types, intent to upgrade, and upgrade duration. The data is collected and aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
+The tool collects data about project types, intent to upgrade, and upgrade duration. Visual Studio itself collects and aggregates the data and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
 
 ## Related content
 

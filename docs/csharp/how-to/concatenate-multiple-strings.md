@@ -1,7 +1,7 @@
 ---
 title: "How to concatenate multiple strings"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 02/18/2025
+ms.date: 12/05/2025
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
@@ -12,8 +12,6 @@ ms.custom: copilot-scenario-highlight
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the `+` operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
-
 > [!TIP]
 > You can use AI assistance to [concatenate strings](#use-ai-to-concatenate-strings).
 
@@ -21,19 +19,19 @@ ms.custom: copilot-scenario-highlight
 
 The following example splits a long string literal into smaller strings to improve readability in the source code. The code concatenates the smaller strings to create the long string literal. The parts are concatenated into a single string at compile time. There's no run-time performance cost regardless of the number of strings involved.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet1":::
 
 ## `+` and `+=` operators
 
 To concatenate string variables, you can use the `+` or `+=` operators, [string interpolation](../language-reference/tokens/interpolated.md) or the <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Join%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several `+` operators in one statement, the string content is copied only once. The following code shows examples of using the `+` and `+=` operators to concatenate strings:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet2":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet2":::
 
 ## String interpolation
 
 In some expressions, it's easier to concatenate strings using string interpolation, as the following code shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet3":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet3":::
 
 > [!NOTE]
 > In string concatenation operations, the C# compiler treats a null string the same as an empty string.
@@ -48,7 +46,7 @@ Another method to concatenate strings is <xref:System.String.Format%2A?displayPr
 
 In other cases, you might be combining strings in a loop where the actual number of source strings can be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet4":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet4":::
 
 You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](/dotnet/api/system.text.stringbuilder#the-string-and-stringbuilder-types).
 
@@ -56,7 +54,7 @@ You can read more about the [reasons to choose string concatenation or the `Stri
 
 Another option to join strings from a collection is to use <xref:System.String.Concat%2A?displayProperty=nameWithType> method. Use <xref:System.String.Join%2A?displayProperty=nameWithType> method if a delimiter should separate source strings. The following code combines an array of words using both methods:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet5":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet5":::
 
 ## LINQ and `Enumerable.Aggregate`
 
@@ -66,21 +64,27 @@ the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words, adding a space between each word in the array:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/Concatenate.cs" id="Snippet6":::
+:::code language="csharp" source="./snippets/strings/Concatenate.cs" id="Snippet6":::
 
 This option can cause more allocations than other methods for concatenating collections, as it creates an intermediate string for each iteration. If optimizing performance is critical, consider the [`StringBuilder`](#stringbuilder) class or the [`String.Concat` or `String.Join`](#stringconcat-or-stringjoin) method to concatenate a collection, instead of `Enumerable.Aggregate`.
 
 ## Use AI to concatenate strings
 
-You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate strings. You can customize the prompt to specify the output format, variables, and the method to use per your requirements.
 
-The following text shows an example prompt for Copilot Chat:
+Here's an example Copilot Chat prompt:
 
 ```copilot-prompt
-Generate C# code to use String.Format to build an output string "Hi x, today's date is y. You are z years old." where x is "John",  y is today's date and z is the birthdate January 1, 2000. The final string should show date in the full format mm/dd/yyyy. Show output.
+Generate C# code to use string interpolation to build an output string:
+"Hello [name], today's date is [current date]. You have [count] new notifications."
+Use variables for: name is "John", date is today's date, and notification count is 3.
+Format the date as mm/dd/yyyy.
+Show the output.
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them.
+
+For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## See also
 

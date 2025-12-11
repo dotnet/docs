@@ -2,8 +2,6 @@
 title: GitHub Copilot app modernization overview
 description: "Learn more about GitHub Copilot app modernization. This Visual Studio extension helps you upgrade your code and projects. Upgrades can include .NET versioning or migrating code from one technology to another."
 titleSuffix: ""
-author: adegeo
-ms.author: adegeo
 ms.topic: overview
 ms.date: 12/09/2025
 ai-usage: ai-assisted

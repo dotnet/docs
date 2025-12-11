@@ -2,7 +2,6 @@
 title: How to apply custom upgrade instructions during an upgrade
 description: "Learn how to apply custom upgrade instructions with GitHub Copilot app modernization so they're executed automatically during a .NET upgrade."
 author: kschlobohm
-ms.author: adegeo
 ms.topic: how-to
 ms.date: 12/08/2025
 ai-usage: ai-assisted

@@ -153,3 +153,17 @@ Some services might support automatically creating a conversation ID for a reque
 If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ConversationId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet4":::
+
+## Chat reduction (experimental)
+
+> [!IMPORTANT]
+> This feature is experimental and subject to change.
+
+Chat reduction helps manage conversation history by limiting the number of messages or summarizing older messages when the conversation exceeds a specified length. The `Microsoft.Extensions.AI` library provides reducers like <xref:Microsoft.Extensions.AI.MessageCountingChatReducer> that limits the number of non-system messages, and <xref:Microsoft.Extensions.AI.SummarizingChatReducer> that automatically summarizes older messages while preserving context.
+
+## Tool reduction (experimental)
+
+> [!IMPORTANT]
+> This feature is experimental and subject to change.
+
+Tool reduction helps manage large tool catalogs by trimming them based on relevance to the current conversation context. The <xref:Microsoft.Extensions.AI.IToolReductionStrategy> interface defines strategies for reducing the number of tools sent to the model. The library provides implementations like <xref:Microsoft.Extensions.AI.EmbeddingToolReductionStrategy> that ranks tools by embedding similarity to the conversation. Use the <xref:Microsoft.Extensions.AI.ChatClientBuilderToolReductionExtensions.UseToolReduction*> extension method to add tool reduction to your chat client pipeline.

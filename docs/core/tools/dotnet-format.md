@@ -35,7 +35,7 @@ dotnet format -h|--help
 The MSBuild project or solution to run code formatting on. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* or *sln*, and uses that file.
 
 > [!CAUTION]
-> dotnet-format may restore, compile, and run analyzers from the specified project or solution.  Make sure to only invoke the tool against trusted code.
+> dotnet format may restore, compile, and run analyzers from the specified project or solution. Only invoke the tool against trusted code.
 
 ## Options
 

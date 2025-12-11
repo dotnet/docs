@@ -208,6 +208,32 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
+## Exclude files and folders using DefaultItemExcludes
+
+**.NET SDK 10 and later versions**
+
+Starting in .NET 10, you can use the `DefaultItemExcludes` property to exclude entire folders or file patterns from being watched by `dotnet watch`. This approach is useful when you want to exclude files that aren't relevant to compilation but might trigger unwanted restarts or reloads.
+
+For example, in ASP.NET Core applications, files in the `App_Data` folder might change while the app runs, causing unnecessary page reloads. You can exclude this folder from being watched:
+
+```xml
+<PropertyGroup>
+  <DefaultItemExcludes>$(DefaultItemExcludes);**/App_Data/**</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+You can exclude multiple patterns by separating them with semicolons:
+
+```xml
+<PropertyGroup>
+  <DefaultItemExcludes>$(DefaultItemExcludes);**/App_Data/**;**/temp/**;**/*.log</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+The `DefaultItemExcludes` property affects all default item types (like `Compile` and `EmbeddedResource`), while the `Watch="false"` attribute provides finer control over specific files or project references.
+
+For more information about `DefaultItemExcludes`, see [DefaultItemExcludes](../project-sdk/msbuild-props.md#defaultitemexcludes).
+
 ## Advanced configuration
 
 `dotnet watch` performs a design-time build to find items to watch. When this build is run, `dotnet watch` sets the property `DotNetWatchBuild=true`. This property can be used as shown in the following example:

@@ -173,16 +173,16 @@ public static class GenericExtensions
         /// </remarks>
         /// <typeparam name="TArg">The type of the elements in the collection to prepend.</typeparam>
         /// <param name="second">The collection whose elements are to be transformed and prepended to the current sequence. Cannot be null.</param>
-        /// <param name="Converter">A function to convert each element of the prepended collection to the target type. Cannot be null.</param>
+        /// <param name="converter">A function to convert each element of the prepended collection to the target type. Cannot be null.</param>
         /// <returns>
         /// An IEnumerable<TReceiver> that contains the converted elements of the specified collection followed by the
         /// elements of the current sequence.
         /// </returns>
-        public IEnumerable<TReceiver> Prepend<TArg>(IEnumerable<TArg> second, Func<TArg, TReceiver> Converter)
+        public IEnumerable<TReceiver> Prepend<TArg>(IEnumerable<TArg> second, Func<TArg, TReceiver> converter)
         {
             foreach (TArg item in second)
             {
-                yield return Converter(item);
+                yield return converter(item);
             }
             foreach (TReceiver item in source)
             {

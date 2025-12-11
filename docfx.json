@@ -886,13 +886,15 @@
                 "_vblang/**.md": false
             },
             "ms.collection": {
-                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
+                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot",
+                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.custom": {
                 "docs/ai/**/**.{md,yml}": "devx-track-dotnet"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
+                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "180-days",
                 "docs/csharp/whats-new/**/**.{md,yml}": "1095-days",
                 "docs/csharp/advanced-topics/interop/**/**.{md,yml}": "1825-days",
                 "docs/csharp/advanced-topics/reflection-and-attributes/**/**.{md,yml}": "1825-days",

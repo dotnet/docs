@@ -140,7 +140,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 # [.NET 10](#tab/dotnet10)
 
 > [!IMPORTANT]
-> .NET 10 for this version of Ubuntu is currently going through the [Stable Release Update (SRU))[https://documentation.ubuntu.com/project/SRU/stable-release-updates/index.html] process and hasn't been released to the package feed. For more information, see this [GitHub issue](https://github.com/dotnet/runtime/issues/121829#issuecomment-3614687693).
+> .NET 10 for this version of Ubuntu is currently going through the [Stable Release Update (SRU)](https://documentation.ubuntu.com/project/SRU/stable-release-updates/index.html) process and hasn't been released to the package feed. For more information, see this [GitHub issue](https://github.com/dotnet/runtime/issues/121829#issuecomment-3614687693).
 
 # [.NET 9](#tab/dotnet9)
 

@@ -210,9 +210,9 @@ More files can be watched by adding items to the `Watch` group. For example, the
 
 ## Exclude files and folders using DefaultItemExcludes
 
-Starting in .NET 10, you can use the `DefaultItemExcludes` property to exclude entire folders or file patterns from being watched by `dotnet watch`. This approach is useful when you want to exclude files that aren't relevant to compilation but might trigger unwanted restarts or reloads.
+Starting in .NET 10, use the `DefaultItemExcludes` property to exclude entire folders or file patterns from being watched by `dotnet watch`. This approach is useful when you want to exclude files that aren't relevant to compilation or files that trigger unwanted restarts or reloads.
 
-For example, in ASP.NET Core applications, files in the `App_Data` folder might change while the app runs, causing unnecessary page reloads. You can exclude this folder from being watched:
+For example, files in the `App_Data` folder of ASP.NET Core applications might change while the app runs, causing unnecessary page reloads. Exclude this folder from being watched:
 
 ```xml
 <PropertyGroup>
@@ -220,7 +220,7 @@ For example, in ASP.NET Core applications, files in the `App_Data` folder might 
 </PropertyGroup>
 ```
 
-You can exclude multiple patterns by separating them with semicolons:
+Exclude multiple patterns by separating them with semicolons:
 
 ```xml
 <PropertyGroup>

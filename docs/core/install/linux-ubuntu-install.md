@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 12/11/2025
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -37,8 +37,6 @@ The following versions of .NET are supported or available for Ubuntu 25.10:
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
 
@@ -90,9 +88,8 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
-[!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
+> [!IMPORTANT]
+> .NET 10 for this version of Ubuntu is currently going through the [Stable Release Update (SRU))[https://documentation.ubuntu.com/project/SRU/stable-release-updates/index.html] process and hasn't been released to the backports feed. For more information, see this [GitHub issue](https://github.com/dotnet/runtime/issues/121829#issuecomment-3614687693).
 
 # [.NET 9](#tab/dotnet9)
 
@@ -142,11 +139,8 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
-[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
-
-[!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
+> [!IMPORTANT]
+> .NET 10 for this version of Ubuntu is currently going through the [Stable Release Update (SRU))[https://documentation.ubuntu.com/project/SRU/stable-release-updates/index.html] process and hasn't been released to the backports feed. For more information, see this [GitHub issue](https://github.com/dotnet/runtime/issues/121829#issuecomment-3614687693).
 
 # [.NET 9](#tab/dotnet9)
 

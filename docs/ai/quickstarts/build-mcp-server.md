@@ -30,7 +30,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
    ```
 
     > [!NOTE]
-    > .NET version 9.10.0-preview.3.25513.3 or newer is required to install `Microsoft.Extensions.AI.Templates`.
+    > .NET 10.0 SDK (preview 6 or higher) is required to install `Microsoft.Extensions.AI.Templates`.
 
 1. Create a new MCP server app with the `dotnet new mcpserver` command:
 

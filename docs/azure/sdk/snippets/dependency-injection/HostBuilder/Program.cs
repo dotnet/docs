@@ -36,14 +36,14 @@ IHost host = Host.CreateDefaultBuilder(args)
             }
 
             var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT")
-            ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is required.");
+                ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is required.");
 
             // Register a custom client factory
             #pragma warning disable OPENAI001 // Type is for evaluation purposes and is subject to change in future updates.
             clientBuilder.AddClient<OpenAIResponseClient, OpenAIClientOptions>(
                 (options, credential, _) => new OpenAIResponseClient(
                     "<deployment_name>",
-                    new BearerTokenPolicy(credential, "https://cognitiveservices.azure.com/.default"),
+                    new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
                     new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
                 ));
 

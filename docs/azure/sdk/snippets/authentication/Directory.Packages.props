@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Azure SDK packages -->
-    <PackageVersion Include="Azure.AI.OpenAI" Version="2.1.0" />
+    <PackageVersion Include="OpenAI" Version="2.7.0" />
     <PackageVersion Include="Microsoft.Extensions.AI" Version="9.3.0-preview.1.25114.11" />
     <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25114.11" />
     <PackageVersion Include="Microsoft.Extensions.Azure" Version="1.13.1" />

@@ -495,6 +495,13 @@ items:
       CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113,
       CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124,
       CS9136, CS9179
+  - name: Property declarations
+    href: ./compiler-messages/property-declaration-errors.md
+    displayName: >
+      property, auto-implemented, init-only, field-backed,
+      CS0200, CS0545, CS0571, CS0840, CS1014, CS1043, CS8050, CS8145, CS9029, CS9030, CS9032,
+      CS9033, CS9034, CS9035, CS9036, CS9037, CS9038, CS9039, CS9040, CS9042, CS9045,
+      CS9258, CS9263, CS9264, CS9266, CS9273
   - name: Operator declarations
     href: ./compiler-messages/overloaded-operator-errors.md
     displayName: >
@@ -574,8 +581,7 @@ items:
       CS0751, CS0754, CS0755, CS0756, CS0757, CS0759, CS0761, CS0762, CS0763, CS0764,
       CS1067, CS8142, CS8663, CS8795, CS8796, CS8797, CS8798, CS8799, CS8800, CS8817,
       CS8818, CS8863, CS8988, CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254,
-      CS9255, CS9256, CS9257, CS9258, CS9263, CS9264, CS9266, CS9273, CS9275, CS9276,
-      CS9277, CS9278, CS9279, CS9280
+      CS9255, CS9256, CS9257, CS9275, CS9276, CS9277, CS9278, CS9279, CS9280
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: >

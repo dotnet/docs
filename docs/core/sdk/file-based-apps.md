@@ -21,7 +21,7 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build and run your application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of your C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
 
 ### `#:package`
 
@@ -34,7 +34,7 @@ Adds a NuGet package reference to your application.
 
 ### `#:project`
 
-References another project file.
+References another project file or directory that contains a project file.
 
 ```csharp
 #:project ../SharedLibrary/SharedLibrary.csproj
@@ -42,7 +42,7 @@ References another project file.
 
 ### `#:property`
 
-Sets the MSBuild property value.
+Sets an MSBuild property value.
 
 ```csharp
 #:property TargetFramework=net10.0
@@ -89,7 +89,7 @@ Arguments after `--` are passed to your application. Without `--`, arguments go 
 dotnet run file.cs arg1 arg2
 ```
 
-With the shorthand syntax, all arguments go to your application:
+However, with the shorthand syntax, all arguments go to your application:
 
 ```dotnetcli
 dotnet file.cs arg1 arg2
@@ -147,7 +147,7 @@ Convert your file-based app to a traditional project by using the `dotnet projec
 dotnet project convert file.cs
 ```
 
-This command creates a `.csproj` file with equivalent SDK and properties. All `#` directives are removed from the `.cs` files and turned into elements in the corresponding `.csproj` files.
+This command creates a `.csproj` file with equivalent SDK and properties. All `#` directives are removed from the `.cs` file and turned into elements in the corresponding `.csproj` file.
 
 ### Restore dependencies
 
@@ -175,7 +175,7 @@ Different SDKs include other file types:
 
 ## Native AOT publishing
 
-File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup, and a smaller memory footprint.
+File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup and a smaller memory footprint.
 
 If you need to disable native AOT, use the following setting:
 
@@ -291,21 +291,21 @@ Don't place file-based apps within the directory structure of a `.csproj` projec
 
 ❌ **Not recommended:**
 
-```
-MyProject/
+```Directory
+📁 MyProject/
 ├── MyProject.csproj
 ├── Program.cs
-└── scripts/
+└──📁 scripts/
     └── utility.cs  // File-based app - bad location
 ```
 
 ✅ **Recommended:**
 
-```
-MyProject/
+```Directory
+📁 MyProject/
 ├── MyProject.csproj
 └── Program.cs
-scripts/
+📁 scripts/
 └── utility.cs  // File-based app - good location
 ```
 
@@ -315,8 +315,8 @@ Implicit build files in parent directories affect all file-based apps in subdire
 
 ❌ **Not recommended:**
 
-```
-repo/
+```Directory
+📁 repo/
 ├── Directory.Build.props  // Affects everything below
 ├── app1.cs
 └── app2.cs
@@ -324,12 +324,12 @@ repo/
 
 ✅ **Recommended:**
 
-```
-repo/
+```Directory
+📁 repo/
 ├── Directory.Build.props
-├── projects/
+├──📁 projects/
 │   └── MyProject.csproj
-└── scripts/
+└──📁 scripts/
     ├── Directory.Build.props  // Isolated configuration
     ├── app1.cs
     └── app2.cs

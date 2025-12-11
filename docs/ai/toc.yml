@@ -36,7 +36,7 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: Building agents in .NET
+  - name: Agents
     href: conceptual/agents.md
   - name: Tokens
     href: conceptual/understanding-tokens.md
@@ -126,7 +126,11 @@ items:
     href: resources/mcp-servers.md
   - name: API reference
     items:
-    - name: Microsoft.Extensions.AI
-      href: /dotnet/api/microsoft.extensions.ai
     - name: Microsoft.Agents.AI
       href: /dotnet/api/microsoft.agents.ai
+    - name: Microsoft.Extensions.AI
+      href: /dotnet/api/microsoft.extensions.ai
+    - name: Microsoft.Extensions.DataIngestion
+      href: /dotnet/api/microsoft.extensions.dataingestion
+    - name: Microsoft.Extensions.VectorData
+      href: /dotnet/api/microsoft.extensions.vectordata

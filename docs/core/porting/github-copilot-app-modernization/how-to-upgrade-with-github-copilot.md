@@ -1,8 +1,6 @@
 ---
 title: How to upgrade a .NET app with GitHub Copilot app modernization
 description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot app modernization in Visual Studio. This step-by-step guide covers planning, execution, and validation."
-author: adegeo
-ms.author: adegeo
 ms.topic: how-to
 ms.date: 12/08/2025
 ai-usage: ai-assisted

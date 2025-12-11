@@ -42,7 +42,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             #pragma warning disable OPENAI001 // Type is for evaluation purposes and is subject to change in future updates.
             clientBuilder.AddClient<OpenAIResponseClient, OpenAIClientOptions>(
                 (options, credential, _) => new OpenAIResponseClient(
-                    "gpt-5-mini",
+                    "<deployment_name>",
                     new BearerTokenPolicy(credential, "https://cognitiveservices.azure.com/.default"),
                     new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
                 ));

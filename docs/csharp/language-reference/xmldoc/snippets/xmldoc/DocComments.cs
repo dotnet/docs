@@ -313,6 +313,10 @@ public class ParamsAndParamRefs
 }
 //</GenericExample>
 
+// <ExtensionExample>
+/// <summary>
+/// This is an example of extension methods documentation.
+/// </summary>
 public static class Extensions
 {
     /// <summary>
@@ -360,3 +364,4 @@ public static class Extensions
         }
     }
 }
+// </ExtensionExample>

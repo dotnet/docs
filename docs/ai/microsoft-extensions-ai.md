@@ -36,6 +36,12 @@ The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstra
 
 For more information and detailed usage examples, see [Use the IChatClient interface](ichatclient.md).
 
+### The `IEmbeddingGenerator` interface
+
+The <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> interface represents a generic generator of embeddings. For the generic type parameters, `TInput` is the type of input values being embedded, and `TEmbedding` is the type of generated embedding, which inherits from the <xref:Microsoft.Extensions.AI.Embedding> class.
+
+For more information and detailed usage examples, see [Use the IEmbeddingGenerator interface](iembeddinggenerator.md).
+
 ### The IImageGenerator interface (experimental)
 
 The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation (by calling <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateAsync(Microsoft.Extensions.AI.ImageGenerationRequest,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)>) and [configuration options](xref:Microsoft.Extensions.AI.ImageGenerationOptions) for image size and format. Like other interfaces in the library, it can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
@@ -46,7 +52,7 @@ For more information, see [Generate images from text using AI](quickstarts/text-
 
 You can start building with `Microsoft.Extensions.AI` in the following ways:
 
-- **Library developers**: If you own libraries that provide clients for AI services, consider implementing the interfaces in your libraries. This allows users to easily integrate your NuGet package via the abstractions. For example implementations, see [Sample implementations of IChatClient and IEmbeddingGenerator](advanced/sample-implementations.md).
+- **Library developers**: If you own libraries that provide clients for AI services, consider implementing the interfaces in your libraries. This allows users to easily integrate your NuGet package via the abstractions. For examples, see [IChatClient implementation examples](ichatclient.md#implementation-examples) and [IEmbeddingGenerator implementation examples](iembeddinggenerator.md#implementation-examples).
 - **Service consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred provider.
 - **Application developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.

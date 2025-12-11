@@ -92,8 +92,18 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0840**](#cs0840---auto-implemented-property-accessors): *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
 - [**CS1014**](#cs1014---property-accessor-declarations): *A get or set accessor expected*
 - [**CS1043**](#cs1043---property-accessor-syntax): *{ or ; expected*
-- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers.*
+- [**CS8050**](#cs8050---property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
+- [**CS8051**](#cs8051---auto-implemented-property-get-accessor): *Auto-implemented properties must have get accessors*
+- [**CS8053**](#cs8053---interface-property-initializers): *Instance properties in interfaces cannot have initializers*
 - [**CS8145**](#cs8145---ref-returning-properties): *Auto-implemented properties cannot return by reference*
+- [**CS8147**](#cs8147---ref-property-set-accessor): *Properties which return by reference cannot have set accessors*
+- [**CS8341**](#cs8341---readonly-struct-properties): *Auto-implemented instance properties in readonly structs must be readonly*
+- [**CS8657**](#cs8657---static-member-readonly): *Static member cannot be marked 'readonly'*
+- [**CS8658**](#cs8658---auto-setter-readonly): *Auto-implemented 'set' accessor cannot be marked 'readonly'*
+- [**CS8659**](#cs8659---auto-property-readonly-with-setter): *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
+- [**CS8660**](#cs8660---duplicate-readonly-modifiers): *Cannot specify 'readonly' modifiers on both property and its accessor*
+- [**CS8661**](#cs8661---readonly-on-both-accessors): *Cannot specify 'readonly' modifiers on both accessors of property*
+- [**CS8664**](#cs8664---readonly-accessor-requirements): *'readonly' can only be used on accessors if property has both get and set*
 - **CS9029**: *Types and aliases cannot be named 'required'.*
 - **CS9030**: *Member must be required because it overrides required member.*
 - **CS9031**: *Required member cannot be hidden by derived member.*

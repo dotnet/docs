@@ -43,7 +43,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddClient<OpenAIResponseClient, OpenAIClientOptions>(
                 (options, credential, _) => new OpenAIResponseClient(
                     "gpt-5-mini",
-                    new BearerTokenPolicy(new DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default"),
+                    new BearerTokenPolicy(credential, "https://cognitiveservices.azure.com/.default"),
                     new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
                 ));
         });

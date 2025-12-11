@@ -19,7 +19,7 @@ dotnet tool update <PACKAGE_ID> -g|--global
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
@@ -27,7 +27,7 @@ dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] 
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
@@ -35,7 +35,7 @@ dotnet tool update <PACKAGE_ID> --local
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -101,6 +101,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--prerelease`**
 
   Include prerelease versions.
+
+- [!INCLUDE [source](../../../includes/cli-tool-source.md)]
 
 - **`--tool-manifest <PATH>`**
 

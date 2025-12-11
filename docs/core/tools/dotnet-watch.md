@@ -189,9 +189,11 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
-## Ignore specified files
+## Ignore specified files and folders
 
-`dotnet watch` will ignore `Compile` and `EmbeddedResource` items that have the `Watch="false"` attribute, as shown in the following example:
+Use the `Watch="false"` attribute to ignore specified files. Use the `DefaultItemExcludes` property to ignore folders or files from being watched.
+
+To prevent `dotnet watch` from watching files, use the `Compile` and `EmbeddedResource` items with the `Watch="false"` attribute, as shown in the following example:
 
 ```xml
 <ItemGroup>
@@ -200,15 +202,13 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
-`dotnet watch` will ignore project references that have the `Watch="false"` attribute, as shown in the following example:
+`dotnet watch` ignores project references that have the `Watch="false"` attribute, as shown in the following example:
 
 ```xml
 <ItemGroup>
   <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" Watch="false" />
 </ItemGroup>
 ```
-
-## Exclude files and folders using DefaultItemExcludes
 
 Starting in .NET 10, use the `DefaultItemExcludes` property to exclude entire folders or file patterns from being watched by `dotnet watch`. This approach is useful when you want to exclude files that aren't relevant to compilation or files that trigger unwanted restarts or reloads.
 
@@ -228,7 +228,7 @@ Exclude multiple patterns by separating them with semicolons:
 </PropertyGroup>
 ```
 
-The `DefaultItemExcludes` property affects all default item types (like `Compile` and `EmbeddedResource`), while the `Watch="false"` attribute provides finer control over specific files or project references.
+The `DefaultItemExcludes` property affects all default item types, like `Compile` and `EmbeddedResource`. The `Watch="false"` attribute provides finer control over specific files or project references.
 
 For more information, see the [DefaultItemExcludes reference](../project-sdk/msbuild-props.md#defaultitemexcludes).
 

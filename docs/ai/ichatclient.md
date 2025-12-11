@@ -1,7 +1,8 @@
 ---
 title: Use the IChatClient interface
-description: Learn how to use the IChatClient interface to get model responses and call tools
+description: Learn how to use the IChatClient interface to get model responses and call tools.
 ms.date: 12/10/2025
+no-loc: ["IChatClient"]
 ---
 
 # Use the IChatClient interface
@@ -61,6 +62,13 @@ The preceding code:
 For more information about creating AI functions, see [Access data in AI functions](how-to/access-data-in-functions.md).
 
 You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more information, see [Build a minimal MCP client](./quickstarts/build-mcp-client.md).
+
+### Tool reduction (experimental)
+
+> [!IMPORTANT]
+> This feature is experimental and subject to change.
+
+Tool reduction helps manage large tool catalogs by trimming them based on relevance to the current conversation context. The <xref:Microsoft.Extensions.AI.IToolReductionStrategy> interface defines strategies for reducing the number of tools sent to the model. The library provides implementations like <xref:Microsoft.Extensions.AI.EmbeddingToolReductionStrategy> that ranks tools by embedding similarity to the conversation. Use the <xref:Microsoft.Extensions.AI.ChatClientBuilderToolReductionExtensions.UseToolReduction*> extension method to add tool reduction to your chat client pipeline.
 
 ## Cache responses
 
@@ -154,16 +162,21 @@ If you don't know ahead of time whether the service is stateless or stateful, yo
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet4":::
 
+## Implementation examples
+
+The following sample implements `IChatClient` to show the general structure.
+
+:::code language="csharp" source="./snippets/sample-implementations/SampleChatClient.cs":::
+
+For more realistic, concrete implementations of `IChatClient`, see:
+
+- [AzureAIInferenceChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.AzureAIInference/AzureAIInferenceChatClient.cs)
+- [OpenAIChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.OpenAI/OpenAIChatClient.cs)
+- [Microsoft.Extensions.AI chat clients](https://github.com/dotnet/extensions/tree/main/src/Libraries/Microsoft.Extensions.AI/ChatCompletion)
+
 ## Chat reduction (experimental)
 
 > [!IMPORTANT]
 > This feature is experimental and subject to change.
 
 Chat reduction helps manage conversation history by limiting the number of messages or summarizing older messages when the conversation exceeds a specified length. The `Microsoft.Extensions.AI` library provides reducers like <xref:Microsoft.Extensions.AI.MessageCountingChatReducer> that limits the number of non-system messages, and <xref:Microsoft.Extensions.AI.SummarizingChatReducer> that automatically summarizes older messages while preserving context.
-
-## Tool reduction (experimental)
-
-> [!IMPORTANT]
-> This feature is experimental and subject to change.
-
-Tool reduction helps manage large tool catalogs by trimming them based on relevance to the current conversation context. The <xref:Microsoft.Extensions.AI.IToolReductionStrategy> interface defines strategies for reducing the number of tools sent to the model. The library provides implementations like <xref:Microsoft.Extensions.AI.EmbeddingToolReductionStrategy> that ranks tools by embedding similarity to the conversation. Use the <xref:Microsoft.Extensions.AI.ChatClientBuilderToolReductionExtensions.UseToolReduction*> extension method to add tool reduction to your chat client pipeline.

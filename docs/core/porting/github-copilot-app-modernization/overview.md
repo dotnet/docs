@@ -122,6 +122,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
   Transition from local logging frameworks like log4net, serilog, and Windows event log to OpenTelemetry on Azure.
 
 - **Migrate to Azure Cache for Redis with Managed Identity**
+
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
 ## How it works

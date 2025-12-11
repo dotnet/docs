@@ -46,7 +46,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                     new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
                     new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
                 ));
-
+        #pragma warning restore OPENAI001
         });
     }).Build();
 

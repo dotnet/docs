@@ -78,6 +78,7 @@ helpviewer_keywords:
   - "CS9266"
   - "CS9273"
 ms.date: 12/11/2025
+ai-usage: ai-assisted
 ---
 # Errors and warnings related to property declarations
 
@@ -86,24 +87,24 @@ There are numerous *errors* related to property declarations:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0200**](#cs0200---read-only-properties): *Property or indexer 'property' cannot be assigned to -- it is read only*
-- [**CS0545**](#cs0545---property-accessor-overrides): *'function' : cannot override because 'property' does not have an overridable get accessor*
-- [**CS0571**](#cs0571---explicit-accessor-calls): *'function' : cannot explicitly call operator or accessor*
-- [**CS0840**](#cs0840---auto-implemented-property-accessors): *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
-- [**CS1014**](#cs1014---property-accessor-declarations): *A get or set accessor expected*
-- [**CS1043**](#cs1043---property-accessor-syntax): *{ or ; expected*
-- [**CS8050**](#cs8050---property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
-- [**CS8051**](#cs8051---auto-implemented-property-get-accessor): *Auto-implemented properties must have get accessors*
-- [**CS8053**](#cs8053---interface-property-initializers): *Instance properties in interfaces cannot have initializers*
-- [**CS8145**](#cs8145---ref-returning-properties): *Auto-implemented properties cannot return by reference*
-- [**CS8147**](#cs8147---ref-property-set-accessor): *Properties which return by reference cannot have set accessors*
-- [**CS8341**](#cs8341---readonly-struct-properties): *Auto-implemented instance properties in readonly structs must be readonly*
-- [**CS8657**](#cs8657---static-member-readonly): *Static member cannot be marked 'readonly'*
-- [**CS8658**](#cs8658---auto-setter-readonly): *Auto-implemented 'set' accessor cannot be marked 'readonly'*
-- [**CS8659**](#cs8659---auto-property-readonly-with-setter): *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
-- [**CS8660**](#cs8660---duplicate-readonly-modifiers): *Cannot specify 'readonly' modifiers on both property and its accessor*
-- [**CS8661**](#cs8661---readonly-on-both-accessors): *Cannot specify 'readonly' modifiers on both accessors of property*
-- [**CS8664**](#cs8664---readonly-accessor-requirements): *'readonly' can only be used on accessors if property has both get and set*
+- [**CS0200**](#readonly-properties): *Property or indexer 'property' cannot be assigned to -- it is read only*
+- [**CS0545**](#property-accessor-syntax): *'function' : cannot override because 'property' does not have an overridable get accessor*
+- [**CS0571**](#property-accessor-syntax): *'function' : cannot explicitly call operator or accessor*
+- [**CS0840**](#auto-implemented-properties): *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
+- [**CS1014**](#auto-implemented-properties): *A get or set accessor expected*
+- [**CS1043**](#property-accessor-syntax): *{ or ; expected*
+- [**CS8050**](#property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
+- [**CS8051**](#property-initializers): *Auto-implemented properties must have get accessors*
+- [**CS8053**](#property-initializers): *Instance properties in interfaces cannot have initializers*
+- [**CS8145**](#ref-returning-properties): *Auto-implemented properties cannot return by reference*
+- [**CS8147**](#ref-returning-properties): *Properties which return by reference cannot have set accessors*
+- [**CS8341**](#readonly-properties): *Auto-implemented instance properties in readonly structs must be readonly*
+- [**CS8657**](#readonly-properties): *Static member cannot be marked 'readonly'*
+- [**CS8658**](#readonly-properties): *Auto-implemented 'set' accessor cannot be marked 'readonly'*
+- [**CS8659**](#readonly-properties): *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
+- [**CS8660**](#readonly-properties): *Cannot specify 'readonly' modifiers on both property and its accessor*
+- [**CS8661**](#readonly-properties): *Cannot specify 'readonly' modifiers on both accessors of property*
+- [**CS8664**](#readonly-properties): *'readonly' can only be used on accessors if property has both get and set*
 - **CS9029**: *Types and aliases cannot be named 'required'.*
 - **CS9030**: *Member must be required because it overrides required member.*
 - **CS9031**: *Required member cannot be hidden by derived member.*
@@ -129,6 +130,22 @@ The following warnings can be generated for field backed properties:
 
 The following sections explain the cause and fixes for these errors and warnings.
 
+## Property initializers
+
+- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
+- **CS8051**: *Auto-implemented properties must have get accessors*
+- **CS8053**: *Instance properties in interfaces cannot have initializers*
+
+Property initializers provide a concise syntax to initialize properties at the point of declaration. However, only certain kinds of properties support initializers, and there are specific rules about which properties can have them.
+
+You can add an initializer to an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) or to a property that uses the [`field` keyword](../../programming-guide/classes-and-structs/properties.md) to access the compiler-synthesized backing field. If you attempt to initialize a property with explicit accessor implementations that don't use `field`, you'll encounter **CS8050**. To resolve this error, either convert the property to use auto-implemented syntax, use the `field` keyword in the accessor, or remove the initializer and assign the value in a constructor instead.
+
+Auto-implemented properties must include a `get` accessor to support initialization (**CS8051**). This requirement ensures that the property value can be read after initialization. If you need a write-only property, you must implement the accessors explicitly without using auto-implemented syntax.
+
+Interface properties cannot have instance property initializers (**CS8053**), as interfaces define contracts rather than implementation details. Instance properties in interfaces declare the structure that implementing classes must provide, but they cannot specify initial values. If you need default values for interface properties, consider using default interface methods (available in C# 8.0 and later) to provide the implementation.
+
+For more information on properties, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
+
 ## field backed properties
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
@@ -141,78 +158,28 @@ Beginning with C# 14, `field` backed properties allow you to access the compiler
 
 **CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a property's accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates that might be a mistake.
 
-## CS0200 - Read-only properties
+## Readonly properties
 
 - **CS0200**: *Property or indexer 'property' cannot be assigned to -- it is read only*
+- **CS8341**: *Auto-implemented instance properties in readonly structs must be readonly*
+- **CS8657**: *Static member cannot be marked 'readonly'*
+- **CS8658**: *Auto-implemented 'set' accessor cannot be marked 'readonly'*
+- **CS8659**: *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
+- **CS8660**: *Cannot specify 'readonly' modifiers on both property and its accessor*
+- **CS8661**: *Cannot specify 'readonly' modifiers on both accessors of property*
+- **CS8664**: *'readonly' can only be used on accessors if property has both get and set*
 
-An attempt was made to assign a value to a [property](../../programming-guide/classes-and-structs/using-properties.md), but the property does not have a set accessor or the assignment was outside of the constructor. Resolve the error by adding a set accessor. For more information, see [How to declare and use read-write properties](../../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
+Properties can be read-only (lacking a `set` accessor) or marked with the `readonly` modifier. These errors relate to improper assignments to read-only properties and incorrect usage of the `readonly` modifier.
 
-The following sample generates CS0200:
+A property without a `set` accessor (or with a `set` accessor that's inaccessible in the current context) is read-only and cannot be assigned outside of its declaring constructor (**CS0200**). To resolve this, either add a `set` accessor to make the property writable, use an [init accessor](../keywords/init.md) to allow initialization, or move the assignment into the object's constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
 
-```csharp
-// CS0200.cs
-public class Example
-{
-    private int _mi;
-    int I
-    {
-        get
-        {
-            return _mi;
-        }
-        // uncomment the set accessor and declaration for _mi
-        /*
-        set
-        {
-            _mi = value;
-        }
-        */
-    }
+When using the `readonly` modifier on properties and accessors (introduced in C# 8.0 for struct members), several rules must be followed. Auto-implemented instance properties within a `readonly struct` must themselves be `readonly` (**CS8341**), ensuring the struct's immutability contract. Static members cannot be marked `readonly` (**CS8657**), as the `readonly` modifier only applies to instance members of structs. 
 
-    public static void Main()
-    {  
-        Example example = new Example();
-        example.I = 9;   // CS0200
-    }
-}  
-```
+For auto-implemented properties, you cannot mark a `set` accessor as `readonly` (**CS8658**), and if a property has a `set` accessor, the property itself cannot be marked `readonly` (**CS8659**). These restrictions exist because `set` accessors modify state by definition, which contradicts the purpose of `readonly`. Instead, use `init` accessors for properties that should be settable only during initialization.
 
-The following sample uses [automatically implemented properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) and [object initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) and still generates CS0200:
+The `readonly` modifier cannot appear in multiple places on the same property (**CS8660**, **CS8661**, **CS8664**). If you want to mark accessors as `readonly`, place the modifier on the individual accessors, not the property declaration itself. However, both a `get` and `set` accessor must exist if you're marking individual accessors as `readonly` (**CS8664**). You cannot mark both the property and its accessors as `readonly` (**CS8660**), nor can you mark both accessors individually as `readonly` (**CS8661**)—instead, mark the property itself as `readonly`.
 
-```csharp
-// CS0200.cs
-public class Example
-{
-    int I
-    {
-        get;
-        // uncomment the set accessor and declaration
-        //set;
-    }
-
-    public static void Main()
-    {  
-        var example = new Example
-        {
-            I = 9   // CS0200
-        };
-    }
-}
-```
-
-To assign to a property or indexer 'property' that's read-only, add a set accessor or assign the value in the object's constructor.
-
-```csharp
-public class Example
-{
-    int I { get; }
-
-    public Example()
-    {
-        I = -7;
-    }
-}
-```
+For more information, see [readonly instance members](../../language-reference/builtin-types/struct.md#readonly-instance-members) and [Properties](../../programming-guide/classes-and-structs/properties.md).
 
 ## CS9036 - Required member initialization
 
@@ -268,204 +235,44 @@ class Program
 
 For more information on required members, see the [required modifier](../keywords/required.md) reference article and [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) guide.
 
-## CS0840 - Auto-implemented property accessors
+## Auto-implemented properties
 
 - **CS0840**: *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
-
-Unless a regular property is marked as `abstract` or `extern`, or is a member of a `partial` type, it must supply a body. Automatically implemented properties do not provide accessor bodies, but they must specify both accessors. To create a read-only automatically implemented property, make the set accessor `private`.
-
-The following example generates CS0840:
-
-```csharp
-// cs0840.cs
-// Compile with /target:library
-using System;
-class Test
-{
-    public int myProp { get; } // CS0840
-
-    // to create a read-only property
-    // try the following line instead
-    public int myProp2 { get; private set; }
-
-}
-```
-
-Supply the missing body or accessor or else use the [abstract](../keywords/abstract.md), [extern](../keywords/extern.md), or [partial (Type)](../keywords/partial-type.md) modifiers on it and/or its enclosing type.
-
-For more information, see [Automatically implemented properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
-
-## CS0545 - Property accessor overrides
-
-- **CS0545**: *'function' : cannot override because 'property' does not have an overridable get accessor*
-
-A try was made to define an override for a property accessor when the base class has no such definition to override. You can resolve this error by:
-
-- Adding a `set` accessor in the base class.
-
-- Removing the `set` accessor from the derived class.
-
-- Hiding the base class property by adding the [new](../keywords/new-modifier.md) keyword to a property in a derived class.
-
-- Making the base class property [virtual](../keywords/virtual.md).
-
-The following sample generates CS0545:
-
-```csharp
-// CS0545.cs
-// compile with: /target:library
-// CS0545
-public class a
-{
-   public virtual int i
-   {
-      set {}
-
-      // Uncomment the following line to resolve.
-      // get { return 0; }
-   }
-}
-
-public class b : a
-{
-   public override int i
-   {
-      get { return 0; }
-      set {}   // OK
-   }
-}
-```
-
-For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
-
-## CS8145 - Ref-returning properties
-
-- **CS8145**: *Auto-implemented properties cannot return by reference*
-
-Automatically implemented properties are not guaranteed to have a member or variable that can be referenced and thus do not support return by reference.
-
-The following sample generates CS8145:
-
-```csharp
-// CS8145.cs (4,13)
-
-public class C
-{
-    public ref int Property1 { get; }
-}
-```
-
-If the property can be implemented through a backing field, then refactoring to use a backing field and `ref`-returning the field will correct this error:
-
-```csharp
-public class C
-{
-    private int property1;
-
-    public ref int Property1 => ref property1;
-}
-```
-
-If the property cannot be implemented through a backing field, then removing the `ref` modifier from the property corrects this error:
-
-```csharp
-public class C
-{
-    public int Property1 { get; }
-}
-```
-
-## CS0571 - Explicit accessor calls
-
-- **CS0571**: *'function' : cannot explicitly call operator or accessor*
-
-Certain operators have internal names. For example, **op_Increment** is the internal name of the ++ operator. You should not use or explicitly call such method names.
-
-The following sample generates CS0571:
-
-```csharp
-// CS0571.cs
-public class MyClass
-{
-   public static MyClass operator ++ (MyClass c)
-   {
-      return null;
-   }
-
-   public static int prop
-   {
-      get
-      {
-         return 1;
-      }
-      set
-      {
-      }
-   }
-
-   public static void Main()
-   {
-      op_Increment(null);   // CS0571
-      // use the increment operator as follows
-      // MyClass x = new MyClass();
-      // x++;
-
-      set_prop(1);      // CS0571
-      // try the following line instead
-      // prop = 1;
-   }
-}
-```
-
-## CS1043 - Property accessor syntax
-
-- **CS1043**: *{ or ; expected*
-
-A property accessor was declared incorrectly. For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
-
-The following sample generates CS1043:
-
-```csharp
-// CS1043.cs
-// compile with: /target:library
-public class MyClass
-{
-   public int DoSomething
-   {
-      get return 1;   // CS1043
-      set {}
-   }
-
-   // OK
-   public int DoSomething2
-   {
-      get { return 1;}
-   }
-}
-```
-
-## CS1014 - Property accessor declarations
-
 - **CS1014**: *A get or set accessor expected*
 
-A method declaration was found in a property declaration. You can only declare `get` and `set` methods in a property.
+[Auto-implemented properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) provide a concise syntax for declaring properties without explicitly implementing accessor bodies. However, they must follow specific structural requirements.
 
-For more information on properties, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+An auto-implemented property must include both `get` and `set` accessors, or use appropriate modifiers (**CS0840**). If you want a read-only auto-implemented property, make the `set` accessor `private` rather than omitting it entirely. Alternatively, if the property is marked as `abstract`, `extern`, or is part of a `partial` type declaration, you don't need to provide accessor bodies. If you need full control over the accessor implementation, provide explicit accessor bodies instead of using auto-implemented syntax.
 
-The following sample generates CS1014:
+Within a property declaration, only `get` and `set` accessor declarations are allowed (**CS1014**). You cannot declare fields, methods, or other members inside a property body. If you need additional logic or storage, implement the accessors explicitly with a backing field, or consider whether the member should be declared outside the property.
 
-```csharp
-// CS1014.cs
-// compile with: /target:library
-class Sample
-{
-   public int TestProperty
-   {
-      get
-      {
-         return 0;
-      }
-      int z;   // CS1014  not get or set
-   }
-}
-```
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
+
+## Property accessor syntax
+
+- **CS0545**: *'function' : cannot override because 'property' does not have an overridable get accessor*
+- **CS0571**: *'function' : cannot explicitly call operator or accessor*
+- **CS1043**: *{ or ; expected*
+
+Property accessors must follow specific syntax rules and usage patterns. These errors indicate violations of accessor declaration syntax or improper attempts to call accessor methods directly.
+
+When overriding a property in a derived class, you can only override accessors that exist and are overridable in the base class (**CS0545**). If the base class property has only a `set` accessor (or only a `get` accessor), you cannot override a `get` accessor (or `set` accessor) that doesn't exist. To resolve this, either add the missing accessor to the base class and mark it `virtual`, remove the problematic accessor from the derived class, or use the `new` keyword to hide the base class property instead of overriding it. For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md) and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+
+Property accessors are compiled to methods with special internal names, such as `get_PropertyName` and `set_PropertyName` (**CS0571**). These methods should never be called explicitly in your code. Instead, access properties using standard property syntax (`obj.Property` or `obj.Property = value`). Similarly, operators like `++` are compiled to methods like `op_Increment`, which should also not be called directly.
+
+Property accessor declarations must use proper syntax (**CS1043**). Each accessor body must be enclosed in braces `{ }`, or for expression-bodied members, use the `=>` syntax. Auto-implemented properties should end with a semicolon after the accessor list. If you see this error, check that your accessor syntax matches one of the valid forms shown in the [properties documentation](../../programming-guide/classes-and-structs/properties.md).
+
+## Ref-returning properties
+
+- **CS8145**: *Auto-implemented properties cannot return by reference*
+- **CS8147**: *Properties which return by reference cannot have set accessors*
+
+[Ref returns](../../programming-guide/classes-and-structs/ref-returns.md) allow properties to return a reference to a variable rather than a copy of its value. However, ref-returning properties have specific restrictions.
+
+Auto-implemented properties cannot return by reference (**CS8145**) because the compiler-generated backing field is private and inaccessible to callers, making it impossible to return a reference to it. To create a ref-returning property, you must explicitly implement the property with a backing field and use the `ref` keyword in the return expression (`=> ref backingField`). Alternatively, if you don't need ref-return semantics, remove the `ref` modifier from the property declaration.
+
+Ref-returning properties cannot have `set` accessors (**CS8147**) because the reference itself provides direct write access to the underlying storage. When a property returns a reference, callers can modify the value directly through that reference, making a separate `set` accessor redundant and potentially confusing. If you need a ref-returning property, remove the `set` accessor and rely on the reference for both read and write operations.
+
+For more information, see [ref returns and ref locals](../../language-reference/statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+
+## Readonly properties

@@ -107,6 +107,19 @@ The preceding configuration assigns a default of `true` to the following propert
 
 These analyzers help to ensure that a library is compatible with Native AOT.
 
+### Multi-targeting for AOT compatibility
+
+When preparing libraries for AOT compatibility, if your library targets any framework earlier than `net8.0` (such as `netstandard2.0`, or `net472`), multi-target to `net8.0`. This ensures that apps targeting `net8.0` or above get a version of your library that supports the AOT analyzers. Also, include the latest .NET version so your library is analyzed with the latest analyzer. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net8.0` and above:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
+  <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>
+</PropertyGroup>
+```
+
+For more information, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
+
 ## Native debug information
 
 By default, Native AOT publishing produces debug information in a separate file:

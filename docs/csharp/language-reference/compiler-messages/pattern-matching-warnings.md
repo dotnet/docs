@@ -38,7 +38,7 @@ That's by design. The text closely matches the text of the compiler error / warn
  -->
 - [**CS8509**](#pattern-completeness-and-redundancy): *The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.*
 - [**CS8978**](#type-pattern-errors): *'...' cannot be made nullable.*
-- [**CS8979](#list-pattern-errors): *List patterns may not be used for a value of type '...'.*
+- [**CS8979**](#list-pattern-errors): *List patterns may not be used for a value of type '...'.*
 - [**CS8985**](#list-pattern-errors): *List patterns may not be used for a value of type '...'. No suitable 'Length' or 'Count' property was found.*
 - [**CS8980**](#list-pattern-errors): *Slice patterns may only be used once and directly inside a list pattern.*
 - [**CS9013**](#list-pattern-errors): *A string 'null' constant is not supported as a pattern for '...'. Use an empty string instead.*
@@ -79,8 +79,8 @@ For more information about type patterns, see [Nullable value types](../../nulla
 ## List pattern errors
 
 - **CS8979**: *List patterns may not be used for a value of type '...'.*
-- **CS8985**: *List patterns may not be used for a value of type '...'. No suitable 'Length' or 'Count' property was found.*
 - **CS8980**: *Slice patterns may only be used once and directly inside a list pattern.*
+- **CS8985**: *List patterns may not be used for a value of type '...'. No suitable 'Length' or 'Count' property was found.*
 - **CS9013**: *A string 'null' constant is not supported as a pattern for '...'. Use an empty string instead.*
 
 Ensure the type supports the required operations for list patterns because list patterns require types that are countable and indexable (**CS8979**, **CS8985**). The type must have an accessible `Length` or `Count` property and support indexing, with common types including arrays, `List<T>`, `Span<T>`, and other collection types with appropriate members. Place slice patterns (`..`) directly inside a list pattern and use them only once per list pattern because they can't appear in nested patterns or outside of list patterns (**CS8980**). When matching `Span<char>` or `ReadOnlySpan<char>` types, use an empty string `""` instead of a string null constant because null isn't supported as a pattern for span types (**CS9013**).

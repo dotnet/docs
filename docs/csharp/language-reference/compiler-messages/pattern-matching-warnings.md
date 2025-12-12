@@ -70,7 +70,7 @@ For more information about exhaustiveness requirements and pattern optimization,
 - **CS8978**: *'...' cannot be made nullable.*
 - **CS9060**: *Cannot use a numeric constant or relational pattern on '...' because it inherits from or extends 'INumberBase&lt;T&gt;'. Consider using a type pattern to narrow to a specific numeric type.*
 
-Use the underlying type directly in patterns when working with types that can't be made nullable (**CS8978**). Types like `System.Nullable<T>`, pointer types, and ref struct types can't be made nullable. You must use the base type in your pattern matching logic. 
+Use the underlying type directly in patterns when working with types that can't be made nullable (**CS8978**). Types like `System.Nullable<T>`, pointer types, and ref struct types can't be made nullable. You must use the base type in your pattern matching logic.
 
 Use type patterns to narrow generic numeric types to specific numeric types before applying numeric constants or relational patterns (**CS9060**). Generic numeric types that implement `INumberBase<T>` can't be matched directly with numeric constants or relational patterns. The compiler can't determine which specific numeric type is being matched. You must first narrow the value to a concrete numeric type like `int`, `double`, or `decimal`.
 

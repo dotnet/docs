@@ -2,18 +2,18 @@
 
 // <ExtensionMembers>
 /// <summary>
-/// This static class contains extension members for numeric sequences.
+/// Contains extension members for numeric sequences.
 /// </summary>
 public static class NumericSequences
 {
     /// <summary>
-    /// Extensions for integer sequences.
+    /// Defines extensions for integer sequences.
     /// </summary>
     /// <param name="sequence">The sequence used as a receiver.</param>
     extension(IEnumerable<int> sequence)
     {
         /// <summary>
-        /// Add a scalar value to each element in the sequence.
+        /// Adds a scalar value to each element in the sequence.
         /// </summary>
         /// <param name="operand">The amount to add.</param>
         /// <returns>
@@ -28,7 +28,7 @@ public static class NumericSequences
         }
 
         /// <summary>
-        /// The median value of the sequence.
+        /// Gets the median value of the sequence.
         /// </summary>
         /// <remarks>
         /// This value is calculated when requested.
@@ -75,7 +75,7 @@ public static class NumericStaticExtensions
 {
     // <StaticExtensions>
     /// <summary>
-    /// The <see cref="IEnumerable{Int32}"/> type static extensions.
+    /// Provides static extensions for the <see cref="IEnumerable{Int32}"/> type.
     /// </summary>
     extension(IEnumerable<int>)
     {
@@ -111,12 +111,12 @@ public static class NumericStaticExtensions
 
 // <GenericExtension>
 /// <summary>
-/// This static class contains generic extension members for sequences.
+/// Contains generic extension members for sequences.
 /// </summary>
 public static class GenericExtensions
 {
     /// <summary>
-    /// Extensions for generic sequences.
+    /// Defines extensions for generic sequences.
     /// </summary>
     /// <typeparam name="TReceiver">The type of elements in the receiver sequence.</typeparam>
     /// <param name="source">The sequence used as a receiver.</param>

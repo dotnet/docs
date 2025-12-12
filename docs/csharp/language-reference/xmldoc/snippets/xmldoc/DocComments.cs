@@ -350,7 +350,7 @@ public static class Extensions
         }
 
         /// <summary>
-        /// A static method to generate a sequence of items using a generator function.
+        /// Generates a sequence of items using a generator function.
         /// </summary>
         /// <param name="count">The number of items.</param>
         /// <param name="generator">The generator function.</param>

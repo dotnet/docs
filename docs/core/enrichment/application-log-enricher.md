@@ -102,7 +102,7 @@ serviceCollection.AddApplicationLogEnricher(options =>
 For .NET 9 and earlier versions, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
 
 > [!WARNING]
-> The `AddServiceLogEnricher` method is obsolete starting with .NET 10. Use `AddApplicationLogEnricher` instead.
+> The `AddServiceLogEnricher` method is obsolete starting with .NET 10.1. Use `AddApplicationLogEnricher` instead.
 
 ```csharp
 serviceCollection.AddServiceLogEnricher();

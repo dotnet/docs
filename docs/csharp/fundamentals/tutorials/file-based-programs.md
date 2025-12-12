@@ -23,7 +23,7 @@ In this tutorial, you:
 > * Use parsed command line results.
 > * Test the final application.
 
-You build a file-based program that writes text as ASCII art. The app is contained in a single file and uses NuGet packages that implement some of the core features.
+You build a file-based program that writes text as ASCII art. The app is contained in a single file, uses NuGet packages, and implements core features.
 
 ## Prerequisites
 

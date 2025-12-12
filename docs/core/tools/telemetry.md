@@ -62,7 +62,9 @@ Protecting your privacy is important to us. If you suspect the telemetry is coll
 
 For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
-The telemetry feature collects the following data:
+To see the telemetry data captured by SDK version, refer to the following tabs:
+
+# [.NET 10](#tab/dotnet10)
 
 - **SDK version 10.0.100 and later:**
   - Hashed project identifier for `dotnet run`.
@@ -81,6 +83,8 @@ The telemetry feature collects the following data:
   - Which MSBuild task factories are used to load and run tasks (including inline C# tasks, multithreaded-aware tasks, and out-of-process tasks), and how many tasks they execute.
   - Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts.
 
+# [.NET 8](#tab/dotnet8)
+
 - **SDK version 8.0.100 and later:**
   - Hashed TargetPlatformIdentifier used for build (MSBuild property).
   - Hashed HybridGlobalization used for build (MSBuild property).
@@ -96,9 +100,13 @@ The telemetry feature collects the following data:
   - Whether NativeAOT is used.
   - The Mono runtime pack version that was used.
 
+# [.NET 7](#tab/dotnet7)
+
 - **SDK version 7.0.100 and later:**
   - Hashed PublishAot used for build (MSBuild property).
   - Hashed PublishProtocol used for build (MSBuild property).
+
+# [.NET 6](#tab/dotnet6)
 
 - **SDK version 6.0.300 and later:**
   - If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).
@@ -111,6 +119,8 @@ The telemetry feature collects the following data:
 
 - **SDK version 6.0.100 and later:**
   - OS architecture.
+
+# [.NET 5](#tab/dotnet5)
 
 - **SDK version 5.0.202 and later:**
   - Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup.
@@ -131,9 +141,13 @@ The telemetry feature collects the following data:
   - Hashed UseApphost used for build (MSBuild property).
   - Hashed OutputType used for build (MSBuild property).
 
+# [.NET 3](#tab/dotnet3)
+
 - **SDK version 3.0.100 and later:**
   - Whether the output was redirected (`true` or `false`).
   - On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry).
+
+# [.NET 2](#tab/dotnet2)
 
 - **SDK version 2.1.300 and later:**
   - Kernel version.
@@ -146,6 +160,8 @@ The telemetry feature collects the following data:
   - Hashed Media Access Control (MAC) address (SHA256).
   - Hashed current working directory.
   - Install success report, with hashed installer exe filename.
+
+# [All SDKs](#tab/all)
 
 - **All SDK versions:**
   - Timestamp of invocation.

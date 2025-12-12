@@ -105,20 +105,20 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8660**](#readonly-properties): *Cannot specify 'readonly' modifiers on both property and its accessor*
 - [**CS8661**](#readonly-properties): *Cannot specify 'readonly' modifiers on both accessors of property*
 - [**CS8664**](#readonly-properties): *'readonly' can only be used on accessors if property has both get and set*
-- **CS9029**: *Types and aliases cannot be named 'required'.*
-- **CS9030**: *Member must be required because it overrides required member.*
-- **CS9031**: *Required member cannot be hidden by derived member.*
-- **CS9032**: *Required member cannot be less visible or have a setter less visible than the containing type.*
-- **CS9033**: *Do not use '`System.Runtime.CompilerServices.RequiredMemberAttribute'`. Use the 'required' keyword on required fields and properties instead.*
-- **CS9034**: *Required member must be settable.*
-- **CS9035**: *Required member must be set in the object initializer or attribute constructor.*
-- [**CS9036**](#cs9036---required-member-initialization): *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
-- **CS9037**: *he required members list is malformed and cannot be interpreted.*
-- **CS9038**: *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
-- **CS9039**: *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
-- **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
-- **CS9042**: *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
-- **CS9045**: *Required members are not allowed on the top level of a script or submission.*
+- [**CS9029**](#required-members): *Types and aliases cannot be named 'required'.*
+- [**CS9030**](#required-members): *Member must be required because it overrides required member.*
+- [**CS9031**](#required-members): *Required member cannot be hidden by derived member.*
+- [**CS9032**](#required-members): *Required member cannot be less visible or have a setter less visible than the containing type.*
+- [**CS9033**](#required-members): *Do not use '`System.Runtime.CompilerServices.RequiredMemberAttribute'`. Use the 'required' keyword on required fields and properties instead.*
+- [**CS9034**](#required-members): *Required member must be settable.*
+- [**CS9035**](#required-members): *Required member must be set in the object initializer or attribute constructor.*
+- [**CS9036**](#required-members): *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
+- [**CS9037**](#required-members): *he required members list is malformed and cannot be interpreted.*
+- [**CS9038**](#required-members): *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
+- [**CS9039**](#required-members): *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
+- [**CS9040**](#required-members): *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
+- [**CS9042**](#required-members): *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
+- [**CS9045**](#required-members): *Required members are not allowed on the top level of a script or submission.*
 - [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
 
@@ -130,23 +130,36 @@ The following warnings can be generated for field backed properties:
 
 The following sections explain the cause and fixes for these errors and warnings.
 
-## Property initializers
+## Property accessor syntax
 
-- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
-- **CS8051**: *Auto-implemented properties must have get accessors*
-- **CS8053**: *Instance properties in interfaces cannot have initializers*
+- **CS0545**: *'function' : cannot override because 'property' does not have an overridable get accessor*
+- **CS0571**: *'function' : cannot explicitly call operator or accessor*
+- **CS1043**: *{ or ; expected*
 
-Property initializers provide a concise syntax to initialize properties at the point of declaration. However, only certain kinds of properties support initializers, and there are specific rules about which properties can have them.
+To correct property accessor syntax errors, apply one of the following changes based on the specific diagnostic:
 
-You can add an initializer to an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) or to a property that uses the [`field` keyword](../../programming-guide/classes-and-structs/properties.md) to access the compiler-synthesized backing field. If you attempt to initialize a property with explicit accessor implementations that don't use `field`, you'll encounter **CS8050**. To resolve this error, either convert the property to use auto-implemented syntax, use the `field` keyword in the accessor, or remove the initializer and assign the value in a constructor instead.
+Override only the accessors that exist in the base class property declaration (**CS0545**). This correction is necessary because you cannot override a property accessor that isn't present or accessible in the base class, as there's no virtual method to override in the compiled IL. If the base class property has only a `get` accessor, remove the `set` accessor from your override, or add the missing accessor to the base class and mark it `virtual`. Alternatively, use the `new` keyword instead of `override` to hide the base class property with a completely new property definition that has different accessors.
 
-Auto-implemented properties must include a `get` accessor to support initialization (**CS8051**). This requirement ensures that the property value can be read after initialization. If you need a write-only property, you must implement the accessors explicitly without using auto-implemented syntax.
+Access properties using property syntax rather than calling accessor methods directly (**CS0571**). This correction is required because property accessors are compiled to special methods with names like `get_PropertyName` and `set_PropertyName`, but these methods are meant to be invoked through property syntax (`obj.Property` and `obj.Property = value`) to maintain proper semantics and allow the compiler to perform necessary checks. The same applies to operators, which compile to methods like `op_Increment` but should be invoked using operator syntax (`++obj`) rather than method calls.
 
-Interface properties cannot have instance property initializers (**CS8053**), as interfaces define contracts rather than implementation details. Instance properties in interfaces declare the structure that implementing classes must provide, but they cannot specify initial values. If you need default values for interface properties, consider using default interface methods (available in C# 8.0 and later) to provide the implementation.
+Use proper property accessor syntax with braces or expression bodies (**CS1043**). This correction is necessary because property accessors must follow C# syntax rules: accessor bodies must be enclosed in curly braces `{ }`, expression-bodied accessors must use the `=>` syntax, and auto-implemented properties must end with a semicolon after the accessor list. The compiler expects either a complete accessor implementation or the semicolon that indicates an auto-implemented accessor.
 
-For more information on properties, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Inheritance](../../fundamentals/object-oriented/inheritance.md), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
 
-## field backed properties
+## Auto-implemented properties
+
+- **CS0840**: *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
+- **CS1014**: *A get or set accessor expected*
+
+To correct auto-implemented property errors, apply one of the following changes based on the specific diagnostic:
+
+Add both `get` and `set` accessors to the property declaration (**CS0840**). This correction is necessary because auto-implemented properties require the compiler to generate a backing field, and the compiler can only do this when both accessors are present to ensure the storage can be both read and written. If you need a read-only auto-implemented property, include a `set` accessor and make it `private` to restrict write access while still allowing the compiler to generate the backing field. Alternatively, if the property is declared as `abstract` or `extern`, remove the accessor bodies entirely since these modifiers indicate the implementation is provided elsewhere. For `partial` properties, you can split the declaration and implementation across partial type declarations.
+
+Ensure the property declaration contains only valid accessor keywords `get` and `set` (**CS1014**). This correction is required because property syntax only allows accessor declarations, not arbitrary statements or member declarations within the property body. If you need additional logic, implement the property with explicit accessor bodies that contain your code. If you're attempting to declare fields or methods, move those declarations outside the property to the class or struct body where member declarations are allowed.
+
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
+
+## Field-backed properties
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
@@ -154,9 +167,17 @@ For more information on properties, see [Properties](../../programming-guide/cla
 - **CS9266**: *One accessor of property  should use '`field`' because the other accessor is using it.*
 - **CS9273**: *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
-Beginning with C# 14, `field` backed properties allow you to access the compiler synthesized backing field for a property. **CS9258** or **CS9273** indicate that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
+To correct field-backed property errors, apply one of the following changes based on the specific diagnostic:
 
-**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a property's accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates that might be a mistake.
+Rename any variable named `field` to a different identifier, or use the `@field` escape syntax to refer to your variable (**CS9258**, **CS9273**). This correction is necessary because `field` is a contextual keyword within property accessors in C# 13 and later, where it refers to the compiler-synthesized backing field. If you have an existing member named `field` that you want to access instead of the synthesized backing field, qualify it with `this.field` to disambiguate the reference.
+
+Remove the initializer from either the partial property definition or the implementation, keeping only one (**CS9263**). This correction is required because allowing initializers in both locations would create ambiguity about which value should be used and could lead to the backing field being initialized twice with potentially different values.
+
+Add the `[field: MaybeNull, AllowNull]` attributes to the property declaration to indicate that the backing field should be treated as nullable (**CS9264**). This correction aligns the nullability expectations between the property type and the compiler-synthesized backing field, resolving the mismatch where the property is declared as non-nullable but the `field` keyword usage suggests it could be null. Alternatively, change the property type to nullable, add the `required` modifier to ensure initialization, or initialize the property in the constructor.
+
+Consistently use either the `field` keyword in both accessors or use an explicit backing field in both accessors (**CS9266**). This correction prevents potential bugs where one accessor modifies the compiler-synthesized backing field while the other modifies a different storage location, leading to inconsistent property behavior.
+
+For more information, see [field keyword](../../programming-guide/classes-and-structs/properties.md#field-keyword) and [Partial properties](../../programming-guide/classes-and-structs/properties.md#partial-properties).
 
 ## Readonly properties
 
@@ -169,110 +190,85 @@ Beginning with C# 14, `field` backed properties allow you to access the compiler
 - **CS8661**: *Cannot specify 'readonly' modifiers on both accessors of property*
 - **CS8664**: *'readonly' can only be used on accessors if property has both get and set*
 
-Properties can be read-only (lacking a `set` accessor) or marked with the `readonly` modifier. These errors relate to improper assignments to read-only properties and incorrect usage of the `readonly` modifier.
+To correct readonly property errors, apply one of the following changes based on the specific diagnostic:
 
-A property without a `set` accessor (or with a `set` accessor that's inaccessible in the current context) is read-only and cannot be assigned outside of its declaring constructor (**CS0200**). To resolve this, either add a `set` accessor to make the property writable, use an [init accessor](../keywords/init.md) to allow initialization, or move the assignment into the object's constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
+Add a `set` or `init` accessor to the property to make it writable (**CS0200**). This correction is necessary because properties without set accessors are read-only and can only be assigned in the declaring type's constructor or field initializer. If you need the property to be settable during object initialization but immutable afterward, use an `init` accessor instead of a `set` accessor. If the property should remain read-only, move the assignment into the constructor where initialization is permitted, or reconsider whether the assignment is necessary at all.
 
-When using the `readonly` modifier on properties and accessors (introduced in C# 8.0 for struct members), several rules must be followed. Auto-implemented instance properties within a `readonly struct` must themselves be `readonly` (**CS8341**), ensuring the struct's immutability contract. Static members cannot be marked `readonly` (**CS8657**), as the `readonly` modifier only applies to instance members of structs. 
+Mark auto-implemented instance properties as `readonly` when they're declared within a `readonly struct` (**CS8341**). This correction enforces the immutability contract of the containing struct, ensuring that all instance members respect the `readonly` guarantee. If the property needs to be mutable, either remove the `readonly` modifier from the struct declaration or implement the property with an explicit backing field and accessor bodies that don't modify instance state.
 
-For auto-implemented properties, you cannot mark a `set` accessor as `readonly` (**CS8658**), and if a property has a `set` accessor, the property itself cannot be marked `readonly` (**CS8659**). These restrictions exist because `set` accessors modify state by definition, which contradicts the purpose of `readonly`. Instead, use `init` accessors for properties that should be settable only during initialization.
+Remove the `readonly` modifier from static property or accessor declarations (**CS8657**). This correction is required because the `readonly` modifier only applies to instance members of structs to indicate they don't modify instance state, and static members don't have instance state to protect. If you need a read-only static property, simply omit the `set` accessor rather than using the `readonly` modifier.
 
-The `readonly` modifier cannot appear in multiple places on the same property (**CS8660**, **CS8661**, **CS8664**). If you want to mark accessors as `readonly`, place the modifier on the individual accessors, not the property declaration itself. However, both a `get` and `set` accessor must exist if you're marking individual accessors as `readonly` (**CS8664**). You cannot mark both the property and its accessors as `readonly` (**CS8660**), nor can you mark both accessors individually as `readonly` (**CS8661**)—instead, mark the property itself as `readonly`.
+Remove the `readonly` modifier from auto-implemented `set` accessors, or apply it to the `get` accessor only (**CS8658**). This correction is necessary because `set` accessors inherently modify state, which contradicts the purpose of the `readonly` modifier that guarantees no modification of instance state. If you need a property that can be set during initialization but is read-only afterward, use an `init` accessor instead of a `set` accessor.
 
-For more information, see [readonly instance members](../../language-reference/builtin-types/struct.md#readonly-instance-members) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+Remove the `readonly` modifier from the property declaration when the property has a `set` accessor (**CS8659**). This correction is required because properties with `set` accessors can modify instance state, which violates the `readonly` guarantee. If you need initialization-time setting only, replace the `set` accessor with an `init` accessor, or remove the `set` accessor entirely to make the property truly read-only.
 
-## CS9036 - Required member initialization
+Place the `readonly` modifier either on the property declaration or on individual accessors, but not both (**CS8660**, **CS8661**). This correction prevents redundant modifier declarations that could create confusion about which modifier takes precedence. If you want to mark specific accessors as `readonly`, remove the modifier from the property declaration and place it only on the accessors. Alternatively, if all accessors should be `readonly`, mark the property itself rather than individual accessors.
 
+Ensure both `get` and `set` accessors are present when marking individual accessors as `readonly` (**CS8664**). This correction is necessary because the `readonly` modifier on individual accessors distinguishes between accessors that modify state and those that don't, which only makes sense when both accessor types exist. If the property has only a `get` accessor, mark the entire property as `readonly` instead of the individual accessor.
+
+For more information, see [readonly instance members](../builtin-types/struct.md#readonly-instance-members), [init keyword](../keywords/init.md), and [Properties](../../programming-guide/classes-and-structs/properties.md).
+
+## Property initializers
+
+- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
+- **CS8051**: *Auto-implemented properties must have get accessors*
+- **CS8053**: *Instance properties in interfaces cannot have initializers*
+
+To correct property initializer errors, apply one of the following changes based on the specific diagnostic:
+
+Convert the property to use auto-implemented syntax by removing the accessor bodies and letting the compiler generate the backing field (**CS8050**). This correction is needed because only properties with compiler-managed storage can have initializers, ensuring the initialization occurs before any accessor logic executes. Alternatively, modify the accessor implementations to use the `field` keyword to access the compiler-synthesized backing field, which enables the initializer while maintaining custom accessor logic. If neither approach is suitable, remove the initializer and assign the value in a constructor instead, where you have full control over the initialization sequence.
+
+Add a `get` accessor to the auto-implemented property to enable reading the initialized value (**CS8051**). This correction is required because initializers set a value that must be retrievable, and a write-only property violates this fundamental expectation of property initialization. If you truly need a write-only property, implement the accessors explicitly with a backing field and assign the field directly in a constructor rather than using a property initializer.
+
+Remove the initializer from interface property declarations (**CS8053**). This correction is necessary because interfaces define contracts for implementing types rather than providing concrete implementations with initial values. If you need to provide default values, implement the property in a class that implements the interface, or use default interface methods (available in C# 8.0 and later) to supply a default implementation.
+
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [field keyword](../../programming-guide/classes-and-structs/properties.md#field-keyword).
+
+## Required members
+
+- **CS9029**: *Types and aliases cannot be named 'required'.*
+- **CS9030**: *Member must be required because it overrides required member.*
+- **CS9031**: *Required member cannot be hidden by derived member.*
+- **CS9032**: *Required member cannot be less visible or have a setter less visible than the containing type.*
+- **CS9033**: *Do not use '`System.Runtime.CompilerServices.RequiredMemberAttribute'`. Use the 'required' keyword on required fields and properties instead.*
+- **CS9034**: *Required member must be settable.*
+- **CS9035**: *Required member must be set in the object initializer or attribute constructor.*
 - **CS9036**: *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
+- **CS9037**: *he required members list is malformed and cannot be interpreted.*
+- **CS9038**: *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
+- **CS9039**: *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
+- **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
+- **CS9042**: *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
+- **CS9045**: *Required members are not allowed on the top level of a script or submission.*
 
-When initializing an object with a `required` member, you must directly assign the member a value. You cannot use a nested member or collection initializer to set properties of the `required` member without first instantiating it.
+To correct required member errors, apply one of the following changes based on the specific diagnostic:
 
-The following sample generates CS9036:
+Avoid using `required` as a type or alias name (**CS9029**). This correction is necessary because `required` is a contextual keyword in C# 11 and later, and using it as a type name creates ambiguity in code where the keyword might appear.
 
-```csharp
-class C
-{
-    public string? Prop { get; set; }
-}
+Ensure derived members maintain the `required` modifier when overriding required members (**CS9030**). This correction enforces the contract established by the base class, guaranteeing that all derived types maintain the same initialization requirements. Avoid hiding required members with non-required members in derived classes (**CS9031**), as this would break the initialization contract that consumers expect from the base type.
 
-class Program
-{
-    public required C C { get; set; }
+Make required members at least as visible as their containing type, and ensure property setters are also sufficiently visible (**CS9032**). This correction prevents situations where a type is publicly accessible but its required members cannot be initialized from all contexts where the type can be constructed.
 
-    static void Main()
-    {
-        var program = new Program()
-        {
-            // error CS9036: Required member 'Program.C' must be assigned a value, it cannot use a nested member or collection initializer.
-            C = { Prop = "a" }
-        };
-    }
-}
-```
+Use the `required` keyword instead of manually applying `RequiredMemberAttribute` (**CS9033**). This correction ensures the compiler generates the correct metadata and enforces all required member rules, which manual attribute application might not do correctly.
 
-To fix this error, directly assign a new instance of the required property and initialize its members:
+Ensure required members have set accessors or are otherwise settable (**CS9034**). This correction is necessary because required members must be initialized during object creation, which requires write access. When creating instances, initialize required members directly in object initializers (**CS9035**, **CS9036**). You must assign a value to each required member rather than using nested member initializers or collection initializers, because the required member itself must be set before accessing its properties.
 
-```csharp
-class C
-{
-    public string? Prop { get; set; }
-}
+Apply the `SetsRequiredMembers` attribute to constructors that initialize all required members in their bodies (**CS9038**, **CS9039**). This correction informs the compiler that the constructor fulfills the required member contract, allowing object creation without object initializers. If a constructor chains to another constructor with `SetsRequiredMembers`, it must also have the attribute.
 
-class Program
-{
-    public required C C { get; set; }
+Avoid using required members in types that must satisfy the `new()` constraint (**CS9040**), as the parameterless constructor cannot guarantee required member initialization without an object initializer. Don't mark required members as obsolete unless the containing type or all constructors are obsolete (**CS9042**), to prevent situations where members are required but their use is discouraged. Required members aren't allowed in top-level statements or script contexts (**CS9045**) because these contexts don't support the object initialization syntax needed to set required members.
 
-    static void Main()
-    {
-        var program = new Program()
-        {
-            // Correct: Assign a new instance of C and then initialize its Prop property
-            C = new C { Prop = "a" }
-        };
-    }
-}
-```
+For more information, see the [required modifier](../keywords/required.md) reference article and [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) guide.
 
-For more information on required members, see the [required modifier](../keywords/required.md) reference article and [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) guide.
-
-## Auto-implemented properties
-
-- **CS0840**: *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
-- **CS1014**: *A get or set accessor expected*
-
-[Auto-implemented properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) provide a concise syntax for declaring properties without explicitly implementing accessor bodies. However, they must follow specific structural requirements.
-
-An auto-implemented property must include both `get` and `set` accessors, or use appropriate modifiers (**CS0840**). If you want a read-only auto-implemented property, make the `set` accessor `private` rather than omitting it entirely. Alternatively, if the property is marked as `abstract`, `extern`, or is part of a `partial` type declaration, you don't need to provide accessor bodies. If you need full control over the accessor implementation, provide explicit accessor bodies instead of using auto-implemented syntax.
-
-Within a property declaration, only `get` and `set` accessor declarations are allowed (**CS1014**). You cannot declare fields, methods, or other members inside a property body. If you need additional logic or storage, implement the accessors explicitly with a backing field, or consider whether the member should be declared outside the property.
-
-For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
-
-## Property accessor syntax
-
-- **CS0545**: *'function' : cannot override because 'property' does not have an overridable get accessor*
-- **CS0571**: *'function' : cannot explicitly call operator or accessor*
-- **CS1043**: *{ or ; expected*
-
-Property accessors must follow specific syntax rules and usage patterns. These errors indicate violations of accessor declaration syntax or improper attempts to call accessor methods directly.
-
-When overriding a property in a derived class, you can only override accessors that exist and are overridable in the base class (**CS0545**). If the base class property has only a `set` accessor (or only a `get` accessor), you cannot override a `get` accessor (or `set` accessor) that doesn't exist. To resolve this, either add the missing accessor to the base class and mark it `virtual`, remove the problematic accessor from the derived class, or use the `new` keyword to hide the base class property instead of overriding it. For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md) and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
-
-Property accessors are compiled to methods with special internal names, such as `get_PropertyName` and `set_PropertyName` (**CS0571**). These methods should never be called explicitly in your code. Instead, access properties using standard property syntax (`obj.Property` or `obj.Property = value`). Similarly, operators like `++` are compiled to methods like `op_Increment`, which should also not be called directly.
-
-Property accessor declarations must use proper syntax (**CS1043**). Each accessor body must be enclosed in braces `{ }`, or for expression-bodied members, use the `=>` syntax. Auto-implemented properties should end with a semicolon after the accessor list. If you see this error, check that your accessor syntax matches one of the valid forms shown in the [properties documentation](../../programming-guide/classes-and-structs/properties.md).
 
 ## Ref-returning properties
 
 - **CS8145**: *Auto-implemented properties cannot return by reference*
 - **CS8147**: *Properties which return by reference cannot have set accessors*
 
-[Ref returns](../../programming-guide/classes-and-structs/ref-returns.md) allow properties to return a reference to a variable rather than a copy of its value. However, ref-returning properties have specific restrictions.
+To correct ref-returning property errors, apply one of the following changes based on the specific diagnostic:
 
-Auto-implemented properties cannot return by reference (**CS8145**) because the compiler-generated backing field is private and inaccessible to callers, making it impossible to return a reference to it. To create a ref-returning property, you must explicitly implement the property with a backing field and use the `ref` keyword in the return expression (`=> ref backingField`). Alternatively, if you don't need ref-return semantics, remove the `ref` modifier from the property declaration.
+Implement the property explicitly with a backing field and use the `ref` keyword in the `get` accessor's return expression (**CS8145**). This correction is necessary because auto-implemented properties generate a private backing field that the compiler manages internally, and returning a reference to a private field would expose internal storage that callers shouldn't access directly. To create a ref-returning property, declare an explicit field and return it with `=> ref backingField` syntax. Alternatively, if you don't need to return a reference to allow direct modification of the storage, remove the `ref` modifier from the property declaration.
 
-Ref-returning properties cannot have `set` accessors (**CS8147**) because the reference itself provides direct write access to the underlying storage. When a property returns a reference, callers can modify the value directly through that reference, making a separate `set` accessor redundant and potentially confusing. If you need a ref-returning property, remove the `set` accessor and rely on the reference for both read and write operations.
+Remove the `set` accessor from ref-returning properties (**CS8147**). This correction is required because a ref-returning property already provides both read and write access through the returned reference itself—callers can directly modify the value through the reference without needing a separate setter method. Including a `set` accessor would create two different mechanisms for modifying the same storage, which is redundant and could lead to confusion about which modification path should be used.
 
-For more information, see [ref returns and ref locals](../../language-reference/statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).
-
-## Readonly properties
+For more information, see [ref returns and ref locals](../statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).

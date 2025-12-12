@@ -3,6 +3,12 @@ title: Resolve pattern matching errors and warnings
 description: There are several pattern matching warnings. Learn how to address these warnings.
 f1_keywords:
   - "CS8509" # WRN_SwitchNotAllPossibleValues: The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.
+  - "CS8978"
+  - "CS8979"
+  - "CS8980"
+  - "CS8985"
+  - "CS9013"
+  - "CS9060"
   - "CS9134"
   - "CS9135"
   - "CS9335"
@@ -10,6 +16,12 @@ f1_keywords:
   - "CS9337"
 helpviewer_keywords:
   - "CS8509"
+  - "CS8978"
+  - "CS8979"
+  - "CS8980"
+  - "CS8985"
+  - "CS9013"
+  - "CS9060"
   - "CS9134"
   - "CS9335"
   - "CS9336"
@@ -25,6 +37,11 @@ This article covers the following compiler errors and warnings:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS8509**](#incomplete-pattern-matching): *The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.*
+- [**CS8978**](#nullable-pattern-errors): *'...' cannot be made nullable.*
+- [**CS8979, CS8985**](#list-pattern-requirements): *List patterns may not be used for a value of type '...'.*
+- [**CS8980**](#slice-pattern-errors): *Slice patterns may only be used once and directly inside a list pattern.*
+- [**CS9013**](#span-pattern-errors): *A string 'null' constant is not supported as a pattern for '...'. Use an empty string instead.*
+- [**CS9060**](#generic-numeric-pattern-errors): *Cannot use a numeric constant or relational pattern on '...' because it inherits from or extends 'INumberBase&lt;T&gt;'. Consider using a type pattern to narrow to a specific numeric type.*
 - [**CS9134**](#switch-expression-syntax-errors): *A switch expression arm does not begin with a 'case' keyword.*
 - [**CS9135**](#switch-expression-syntax-errors): *A constant value of type is expected*
 - [**CS9335, CS9336**](#redundant-patterns): *The pattern is redundant.*
@@ -78,6 +95,47 @@ To fix this warning, add a default arm:
 :::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="SwitchAllPossibleValues":::
 
 The `_` pattern matches all remaining values. You can use this pattern to handle invalid or unexpected values.
+
+## Nullable pattern errors
+
+- **CS8978**: *'...' cannot be made nullable.*
+
+To use nullable types in patterns, use valid nullable type syntax. For more information, see [Nullable value types](../../nullable-value-types.md) and [Patterns](../operators/patterns.md).
+
+Don't attempt to make types nullable that cannot be nullable (**CS8978**). Types like `System.Nullable<T>` itself, pointer types, and ref struct types cannot be made nullable. Use the underlying type directly in the pattern.
+
+## List pattern requirements
+
+- **CS8979**: *List patterns may not be used for a value of type '...'.*
+- **CS8985**: *List patterns may not be used for a value of type '...'. No suitable 'Length' or 'Count' property was found.*
+
+To use list patterns, ensure the type supports the required operations. For more information, see [List patterns](../operators/patterns.md#list-patterns).
+
+List patterns require types that are countable and indexable (**CS8979**, **CS8985**). The type must have an accessible `Length` or `Count` property and support indexing. Common types that support list patterns include arrays, `List<T>`, `Span<T>`, and other collection types with appropriate members.
+
+## Slice pattern errors
+
+- **CS8980**: *Slice patterns may only be used once and directly inside a list pattern.*
+
+To use slice patterns correctly, place them properly within list patterns. For more information, see [List patterns](../operators/patterns.md#list-patterns).
+
+Slice patterns (`..`) must appear directly inside a list pattern and can only be used once per list pattern (**CS8980**). They cannot appear in nested patterns or outside of list patterns. Use slice patterns to match zero or more elements in a sequence.
+
+## Span pattern errors
+
+- **CS9013**: *A string 'null' constant is not supported as a pattern for '...'. Use an empty string instead.*
+
+To match span types like `Span<char>` and `ReadOnlySpan<char>`, use appropriate constant patterns. For more information, see [Patterns](../operators/patterns.md).
+
+When matching `Span<char>` or `ReadOnlySpan<char>` types, you cannot use a string `null` constant as a pattern (**CS9013**). Instead, use an empty string `""` to match empty spans, or use other appropriate patterns for your matching logic.
+
+## Generic numeric pattern errors
+
+- **CS9060**: *Cannot use a numeric constant or relational pattern on '...' because it inherits from or extends 'INumberBase&lt;T&gt;'. Consider using a type pattern to narrow to a specific numeric type.*
+
+To match generic numeric types, use type patterns to narrow to specific numeric types. For more information, see [Patterns](../operators/patterns.md) and [Generic math](../../../standard/generics/math.md).
+
+Generic numeric types that implement `INumberBase<T>` cannot be matched directly with numeric constants or relational patterns (**CS9060**). The compiler cannot determine which specific numeric type is being matched. Use a type pattern to first narrow the value to a concrete numeric type like `int`, `double`, or `decimal`, then apply numeric or relational patterns.
 
 ## Redundant patterns
 

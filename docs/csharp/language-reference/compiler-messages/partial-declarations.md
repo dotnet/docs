@@ -110,11 +110,12 @@ helpviewer_keywords:
   - "CS9278"
   - "CS9279"
   - "CS9280"
-ms.date: 11/18/2025
+ms.date: 12/12/2025
+ai-usage: ai-assisted
 ---
 # Errors and warnings related to `partial` type and `partial` member declarations
 
-There are numerous *errors* related to `partial` type and `partial` member declarations:
+You can encounter the following errors related to `partial` type and `partial` member declarations:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -173,34 +174,30 @@ The following sections explain the cause and fixes for these errors and warnings
 
 ## Partial types
 
-- [**CS0260**](#partial-types): *Missing partial modifier on declaration of type; another partial declaration of this type exists*
-- [**CS0261**](#partial-types): *Partial declarations of type must be all classes, all structs, or all interfaces*
-- [**CS0262**](#partial-types): *Partial declarations of type have conflicting accessibility modifiers*
-- [**CS0263**](#partial-types): *Partial declarations of type must not specify different base classes*
-- [**CS0264**](#partial-types): *Partial declarations of type must have the same type parameter names in the same order*
-- [**CS0265**](#partial-types): *Partial declarations of type have inconsistent constraints for type parameter 'type parameter'*
-- [**CS0267**](#partial-types): *The '`partial`' modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method or property return type.*
-- [**CS8863**](#partial-types): *Only a single partial type declaration may have a parameter list*
+- **CS0260**: *Missing partial modifier on declaration of type; another partial declaration of this type exists*
+- **CS0261**: *Partial declarations of type must be all classes, all structs, or all interfaces*
+- **CS0262**: *Partial declarations of type have conflicting accessibility modifiers*
+- **CS0263**: *Partial declarations of type must not specify different base classes*
+- **CS0264**: *Partial declarations of type must have the same type parameter names in the same order*
+- **CS0265**: *Partial declarations of type have inconsistent constraints for type parameter 'type parameter'*
+- **CS0267**: *The '`partial`' modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method or property return type.*
+- **CS8863**: *Only a single partial type declaration may have a parameter list*
 
 Your partial type declaration can cause the compiler to emit the following warning:
 
-- [**CS0282**](#partial-types): *There is no defined ordering between fields in multiple declarations of partial `class` or `struct` 'type'. To specify an ordering, all instance fields must be in the same declaration.*
+- **CS0282**: *There is no defined ordering between fields in multiple declarations of partial `class` or `struct` 'type'. To specify an ordering, all instance fields must be in the same declaration.*
 
-For any partial type, the `partial` keyword must immediately precede `class`, `record`, `struct`, or `interface`. The compiler emits an error if it appears in any other order. In addition:
+These errors occur when your [partial type declarations](../keywords/partial-type.md) violate the rules for partial types.
 
-- All declarations of a partial type must match in terms of the type (`class`, `struct`, `record class`, `record struct`, `readonly struct`, or `readonly record struct`).
-- All declarations must include the `partial` modifier.
-- The declarations for a generic partial type must include the same type parameters in the same order.
+- Add the `partial` modifier to all declarations of the type, because once you split a type across multiple declarations, every part must include the keyword (**CS0260**).
+- Ensure all declarations use the same type keyword, because mixing `class`, `struct`, `record`, and `interface` in different parts of the same type isn't allowed (**CS0261**). You should ensure consistent access modifiers across all declarations, such as making all parts `public` or all parts `internal`, because conflicting accessibility on different declarations creates ambiguity about the type's intended visibility (**CS0262**).
+- Verify that all declarations specify the same base class, because a type can inherit from only one base class, so multiple different base classes conflict (**CS0263**).
+- For generic partial types, ensure all declarations list the same type parameters in the same order, because the type parameter names must match exactly across all parts (**CS0264**).
+- Verify that constraints on type parameters remain consistent across all declarations, because inconsistent constraints would create ambiguity about what types can be used for the type parameters (**CS0265**).
+- Place the `partial` keyword immediately before the type keyword (`class`, `record`, `struct`, or `interface`), because the language syntax requires this specific ordering (**CS0267**).
+- Declare a primary constructor on only one partial declaration, because multiple primary constructors would conflict about which constructor parameters and initialization logic to use (**CS8863**).
 
-Some parts of the declaration aren't required to be repeated on all declarations for a type. However, if these elements are repeated on multiple `partial` declarations, they must match:
-
-- Any access modifiers, such as `public`.
-- Any base class or implemented interfaces.
-- Any constraints on type parameters.
-
-A primary constructor can be declared on at most one declaration for a partial type.
-
-The compiler warns you if you have multiple fields declared in multiple files for a `partial struct` type. If the layout order is important, you must declare all fields in the same file. If order doesn't matter, you can use the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> with the <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=nameWithType> value.
+When you declare fields in multiple files for a partial struct type, you should consolidate all field declarations into a single file if the memory layout order matters, because the compiler can't guarantee a specific ordering when fields are split across multiple files (**CS0282**). Alternatively, if the layout order doesn't matter, you can apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> with the <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=nameWithType> value to allow the runtime to optimize the layout automatically.
 
 ## Partial members
 
@@ -220,7 +217,21 @@ The compiler warns you if you have multiple fields declared in multiple files fo
 - **CS9277**: *Partial member may not have multiple defining declarations.*
 - **CS9278**: *Partial member may not have multiple implementing declarations.*
 
-Partial members must have two declarations. The declaration without an implementation is the *defining declaration*. The declaration with the implementation is the *implementing declaration*. Both declarations are required. Partial members are allowed only in a `partial` type. Partial members can't be `abstract`. Partial members can't explicitly implement an interface. Both declarations of a partial member must have identical signatures. For example, either both or neither declarations can include the `static` or `unsafe` modifiers.
+These errors occur when your [partial member declarations](../keywords/partial-member.md) violate the rules for partial methods, properties, indexers, and events.
+
+- Remove the `abstract` modifier from partial members, because abstract members require derived classes to provide implementations. This requirement conflicts with the partial member pattern where the implementation is provided in the implementing declaration (**CS0750**).
+- Declare partial members within a type that includes the `partial` modifier, because partial members can only exist in partial types (**CS0751**).
+- Remove explicit interface implementations from partial members, because the two-part declaration pattern isn't compatible with explicit interface implementation syntax (**CS0754**).
+- Include or omit the `static` modifier consistently in both declarations, because mixing static and instance members would create ambiguity about how the member is invoked (**CS0763**).
+- Include or omit the `unsafe` modifier consistently in both declarations, because inconsistent unsafe contexts could create safety issues or compilation errors (**CS0764**).
+- Use identical tuple element names in both declarations, because different names would create confusion about which names are available in consuming code (**CS8142**).
+- Include or omit the `readonly` modifier consistently in both declarations, because mixing readonly and non-readonly declarations creates ambiguity about whether the member can modify instance state (**CS8663**).
+- Use identical accessibility modifiers (such as `public`, `private`, `protected`, or `internal`) on both declarations, because different accessibility levels would conflict about the member's visibility (**CS8799**).
+- Apply the same combination of `virtual`, `override`, `sealed`, and `new` modifiers to both declarations, because these modifiers control inheritance and polymorphism behavior that must be consistent (**CS8800**).
+- Use matching `ref` return modifiers in both declarations, because inconsistent return-by-reference behavior would create type safety issues (**CS8818**).
+- Apply the `scoped` modifier consistently to parameters in both declarations, because this modifier controls the lifetime of ref parameters and must match to ensure memory safety (**CS8988**).
+- Provide an implementing declaration for every partial member that has a defining declaration, because partial members require both parts to be complete (**CS9275**, **CS9276**).
+- Ensure each partial member has exactly one defining declaration and one implementing declaration, because multiple declarations would create ambiguity about which definition or implementation to use (**CS9277**, **CS9278**).
 
 ## Partial methods
 
@@ -238,27 +249,23 @@ Partial members must have two declarations. The declaration without an implement
 - **CS8798**: *Partial method must have accessibility modifiers because it has a '`virtual`', '`override`', '`sealed`', '`new`', or '`extern`' modifier.*
 - **CS8817**: *Both partial method declarations must have the same return type.*
 
-Certain `partial` method declarations don't require an *implementing declaration*. That is, if the member returns `void`, doesn't declare any access modifiers (including the default `private` modifier), and doesn't include any of the `virtual`, `override`, `sealed`, or `new` modifiers. Otherwise, any partial method must include both the declaring and implementing declarations.
+These errors occur when your [partial method declarations](../keywords/partial-method.md) violate the rules for partial methods.
 
-When a partial method includes an implementing declaration, both declarations must be identical. Exactly one implementing declaration can be defined.
-
-**CS0759** occurs when you have an *implementing declaration* (a partial method with a body) but no corresponding *defining declaration* (the method signature without a body). Every partial method with an implementation must have both declarations.
-
-The following example shows code that generates CS0759:
-
-:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="IncorrectExample":::
-
-To fix this error, add the defining declaration:
-
-:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="CorrectExample":::
-
-You can also place both declarations in the same partial class section:
-
-:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="AlternativeCorrect":::
+- Add the `partial` modifier to the method declaration, or provide a method body, because methods without implementations must be marked as `abstract`, `extern`, or `partial` (**CS0501**).
+- Ensure both declarations include or omit the extension method syntax (`this` modifier on the first parameter) consistently, because mixing extension and non-extension declarations creates incompatible method signatures (**CS0755**).
+- Remove duplicate defining declarations (the declarations without method bodies), because each partial method can have only one definition (**CS0756**).
+- Remove duplicate implementing declarations (the declarations with method bodies), because each partial method can have only one implementation (**CS0757**).
+- Add a corresponding defining declaration for each implementing declaration, because every partial method with a body must have a matching signature declaration without a body (**CS0759**).
+- Ensure type parameter constraints match across both declarations, because inconsistent constraints create ambiguity about which types are valid for the generic method (**CS0761**).
+- Provide an implementing declaration before creating a delegate from the method, because delegates require a concrete method implementation to reference (**CS0762**).
+- For generic partial methods, ensure both declarations use the same type parameter names and variance modifiers in the same order, because mismatched generic signatures create incompatible method declarations (**CS1067**).
+- Add explicit accessibility modifiers (such as `public`, `private`, `protected`, or `internal`) when the method returns a non-`void` type, because non-void partial methods must have defined accessibility to be callable from other code (**CS8796**).
+- Provide an implementing declaration when accessibility modifiers are specified, because accessible partial methods must have implementations to be invoked (**CS8795**).
+- Add explicit accessibility modifiers when the method has `out` parameters, because methods with out parameters must have defined accessibility to be callable (**CS8797**).
+- Add explicit accessibility modifiers when using `virtual`, `override`, `sealed`, `new`, or `extern` modifiers, because these modifiers affect method visibility and require explicit accessibility specification (**CS8798**).
+- Ensure both declarations specify the same return type, because different return types create incompatible method signatures (**CS8817**).
 
 ## Partial properties
-
-The following errors indicate mistakes in your partial property or indexer declarations:
 
 - **CS9248**: *Partial property must have an implementation part.*
 - **CS9249**: *Partial property must have a definition part.*
@@ -270,19 +277,26 @@ The following errors indicate mistakes in your partial property or indexer decla
 - **CS9255**: *Both partial property declarations must have the same type.*
 - **CS9257**: *Both partial property declarations must be required or neither may be required*
 
-The following warning indicates a signature difference in the declaring and implementing declarations in a partial property:
+Your partial property or indexer declaration can cause the compiler to emit the following warning:
 
 - **CS9256**: *Partial property declarations have signature differences.*
 
-A partial property or indexer must have both a *declaring declaration* and an *implementing declaration*. The signatures for both declarations must match. Because the *declaring declaration* uses the same syntax as an automatically implemented property, the *implementing declaration* can't be an automatically implemented property. The accessors must have at least one accessor body. Beginning in C# 13, you can use the [`field`](../keywords/field.md) keyword to declare one accessor using a concise syntax:
+These errors and warnings occur when your [partial property or indexer declarations](../keywords/partial-member.md) violate the rules for partial properties.
 
-```csharp
-public partial int ImplementingDeclaration { get => field; set; }
-```
+- Provide an implementing declaration for each partial property defining declaration, because partial properties require both parts to be complete (**CS9248**).
+- Provide a defining declaration for each partial property implementing declaration, because every implementation must have a corresponding definition (**CS9249**).
+- Remove duplicate defining declarations and avoid using auto-property syntax in the implementing declaration, because each partial property can have only one definition and the implementation must include explicit accessor bodies (**CS9250**).
+- Remove duplicate implementing declarations, because each partial property can have only one implementation (**CS9251**).
+- Implement all accessors declared in the defining declaration, because the implementing declaration must provide bodies for every accessor (get, set, or init) specified in the definition (**CS9252**).
+- Remove accessors from the implementing declaration that weren't declared in the defining declaration, because you can only implement accessors that were declared in the definition part (**CS9253**).
+- Ensure accessor signatures match between both declarations, including the accessor type (get, set, or init) and any modifiers, because inconsistent accessor definitions create incompatible property declarations (**CS9254**).
+- Ensure both declarations specify the same property type, because different types create incompatible property signatures (**CS9255**).
+- Ensure both declarations include or omit the `required` modifier consistently, because mixing required and non-required declarations creates ambiguity about whether the property must be initialized (**CS9257**).
+- Review and correct any signature mismatches between the declaring and implementing declarations, because differences in accessibility modifiers, return types, or parameter lists (for indexers) can cause unexpected behavior (**CS9256**).
 
 ## Partial events and constructors
 
 - **CS9279**: *Partial event cannot have initializer.*
 - **CS9280**: *Only the implementing declaration of a partial constructor can have an initializer.*
 
-You declared an initializer on the defining declaration of a partial constructor or on a partial event declaration. You must remove it.
+You declared an initializer on the defining declaration of a partial constructor or on a partial event declaration. Remove the initializer.

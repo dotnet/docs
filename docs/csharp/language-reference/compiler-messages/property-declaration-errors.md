@@ -82,7 +82,7 @@ ai-usage: ai-assisted
 ---
 # Errors and warnings related to property declarations
 
-There are numerous *errors* related to property declarations:
+You can encounter the following errors related to property declarations:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -113,7 +113,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9034**](#required-members): *Required member must be settable.*
 - [**CS9035**](#required-members): *Required member must be set in the object initializer or attribute constructor.*
 - [**CS9036**](#required-members): *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
-- [**CS9037**](#required-members): *he required members list is malformed and cannot be interpreted.*
+- [**CS9037**](#required-members): *The required members list is malformed and cannot be interpreted.*
 - [**CS9038**](#required-members): *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
 - [**CS9039**](#required-members): *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
 - [**CS9040**](#required-members): *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
@@ -124,7 +124,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 The following warnings can be generated for field backed properties:
 
-- [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
+- [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.*
 - [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
 - [**CS9273**](#field-backed-properties): *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
@@ -138,11 +138,11 @@ The following sections explain the cause and fixes for these errors and warnings
 
 To correct property accessor syntax errors, apply one of the following changes based on the specific diagnostic:
 
-Override only the accessors that exist in the base class property declaration (**CS0545**). This correction is necessary because you cannot override a property accessor that isn't present or accessible in the base class, as there's no virtual method to override in the compiled IL. If the base class property has only a `get` accessor, remove the `set` accessor from your override, or add the missing accessor to the base class and mark it `virtual`. Alternatively, use the `new` keyword instead of `override` to hide the base class property with a completely new property definition that has different accessors.
+Override only the accessors that exist in the base class property declaration (**CS0545**). You can't override a property accessor that isn't present or accessible in the base class because there's no virtual method to override in the compiled IL. If the base class property has only a `get` accessor, remove the `set` accessor from your override, or add the missing accessor to the base class and mark it `virtual`. Alternatively, use the `new` keyword instead of `override` to hide the base class property with a completely new property definition that has different accessors.
 
-Access properties using property syntax rather than calling accessor methods directly (**CS0571**). This correction is required because property accessors are compiled to special methods with names like `get_PropertyName` and `set_PropertyName`, but these methods are meant to be invoked through property syntax (`obj.Property` and `obj.Property = value`) to maintain proper semantics and allow the compiler to perform necessary checks. The same applies to operators, which compile to methods like `op_Increment` but should be invoked using operator syntax (`++obj`) rather than method calls.
+Access properties using property syntax rather than calling accessor methods directly (**CS0571**). Property accessors compile to special methods with names like `get_PropertyName` and `set_PropertyName`, but you should invoke these methods through property syntax (`obj.Property` and `obj.Property = value`). This approach maintains proper semantics and allows the compiler to perform necessary checks. The same principle applies to operators, which compile to methods like `op_Increment` but should be invoked using operator syntax (`++obj`) rather than method calls.
 
-Use proper property accessor syntax with braces or expression bodies (**CS1043**). This correction is necessary because property accessors must follow C# syntax rules: accessor bodies must be enclosed in curly braces `{ }`, expression-bodied accessors must use the `=>` syntax, and auto-implemented properties must end with a semicolon after the accessor list. The compiler expects either a complete accessor implementation or the semicolon that indicates an auto-implemented accessor.
+Use proper property accessor syntax with braces or expression bodies (**CS1043**). Property accessors must follow C# syntax rules: accessor bodies must be enclosed in curly braces `{ }`, expression-bodied accessors must use the `=>` syntax, and auto-implemented properties must end with a semicolon after the accessor list. The compiler expects either a complete accessor implementation or the semicolon that indicates an auto-implemented accessor.
 
 For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Inheritance](../../fundamentals/object-oriented/inheritance.md), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
 
@@ -153,9 +153,9 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 
 To correct auto-implemented property errors, apply one of the following changes based on the specific diagnostic:
 
-Add both `get` and `set` accessors to the property declaration (**CS0840**). This correction is necessary because auto-implemented properties require the compiler to generate a backing field, and the compiler can only do this when both accessors are present to ensure the storage can be both read and written. If you need a read-only auto-implemented property, include a `set` accessor and make it `private` to restrict write access while still allowing the compiler to generate the backing field. Alternatively, if the property is declared as `abstract` or `extern`, remove the accessor bodies entirely since these modifiers indicate the implementation is provided elsewhere. For `partial` properties, you can split the declaration and implementation across partial type declarations.
+Add both `get` and `set` accessors to the property declaration (**CS0840**). Auto-implemented properties require the compiler to generate a backing field, and the compiler can only do this when both accessors are present to ensure the storage can be both read and written. If you need a read-only auto-implemented property, include a `set` accessor and make it `private` to restrict write access while still allowing the compiler to generate the backing field. Alternatively, if the property is declared as `abstract` or `extern`, remove the accessor bodies entirely since these modifiers indicate the implementation is provided elsewhere. For `partial` properties, you can split the declaration and implementation across partial type declarations.
 
-Ensure the property declaration contains only valid accessor keywords `get` and `set` (**CS1014**). This correction is required because property syntax only allows accessor declarations, not arbitrary statements or member declarations within the property body. If you need additional logic, implement the property with explicit accessor bodies that contain your code. If you're attempting to declare fields or methods, move those declarations outside the property to the class or struct body where member declarations are allowed.
+Ensure the property declaration contains only valid accessor keywords `get` and `set` (**CS1014**). Property syntax only allows accessor declarations, not arbitrary statements or member declarations within the property body. If you need additional logic, implement the property with explicit accessor bodies that contain your code. If you're attempting to declare fields or methods, move those declarations outside the property to the class or struct body where member declarations are allowed.
 
 For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md).
 
@@ -163,19 +163,19 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
-- **CS9264**: *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
+- **CS9264**: *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.*
 - **CS9266**: *One accessor of property  should use '`field`' because the other accessor is using it.*
 - **CS9273**: *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 To correct field-backed property errors, apply one of the following changes based on the specific diagnostic:
 
-Rename any variable named `field` to a different identifier, or use the `@field` escape syntax to refer to your variable (**CS9258**, **CS9273**). This correction is necessary because `field` is a contextual keyword within property accessors in C# 13 and later, where it refers to the compiler-synthesized backing field. If you have an existing member named `field` that you want to access instead of the synthesized backing field, qualify it with `this.field` to disambiguate the reference.
+Rename any variable named `field` to a different identifier, or use the `@field` escape syntax to refer to your variable (**CS9258**, **CS9273**). This correction is necessary because `field` is a contextual keyword within property accessors in C# 13 and later, where it refers to the compiler-synthesized backing field. If you want to access an existing member named `field` instead of the synthesized backing field, qualify it with `this.field` to disambiguate the reference.
 
 Remove the initializer from either the partial property definition or the implementation, keeping only one (**CS9263**). This correction is required because allowing initializers in both locations would create ambiguity about which value should be used and could lead to the backing field being initialized twice with potentially different values.
 
 Add the `[field: MaybeNull, AllowNull]` attributes to the property declaration to indicate that the backing field should be treated as nullable (**CS9264**). This correction aligns the nullability expectations between the property type and the compiler-synthesized backing field, resolving the mismatch where the property is declared as non-nullable but the `field` keyword usage suggests it could be null. Alternatively, change the property type to nullable, add the `required` modifier to ensure initialization, or initialize the property in the constructor.
 
-Consistently use either the `field` keyword in both accessors or use an explicit backing field in both accessors (**CS9266**). This correction prevents potential bugs where one accessor modifies the compiler-synthesized backing field while the other modifies a different storage location, leading to inconsistent property behavior.
+Consistently use either the `field` keyword in both accessors or use an explicit backing field in both accessors (**CS9266**). This correction prevents potential bugs where one accessor modifies the compiler-synthesized backing field while the other accessor modifies a different storage location, leading to inconsistent property behavior.
 
 For more information, see [field keyword](../../programming-guide/classes-and-structs/properties.md#field-backed-properties) and [Partial properties](../../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-members).
 
@@ -192,9 +192,9 @@ For more information, see [field keyword](../../programming-guide/classes-and-st
 
 To correct readonly property errors, apply one of the following changes based on the specific diagnostic:
 
-Add a `set` or `init` accessor to the property to make it writable (**CS0200**). This correction is necessary because properties without set accessors are read-only and can only be assigned in the declaring type's constructor or field initializer. If you need the property to be settable during object initialization but immutable afterward, use an `init` accessor instead of a `set` accessor. If the property should remain read-only, move the assignment into the constructor where initialization is permitted, or reconsider whether the assignment is necessary at all.
+Add a `set` or `init` accessor to the property to make it writable (**CS0200**). This correction is necessary because properties without set accessors are read-only and can only be assigned in the declaring type's constructor or field initializer. If you need the property to be set during object initialization but immutable afterward, use an `init` accessor instead of a `set` accessor. If the property should remain read-only, move the assignment into the constructor where initialization is permitted, or reconsider whether the assignment is necessary at all.
 
-Mark auto-implemented instance properties as `readonly` when they're declared within a `readonly struct` (**CS8341**). This correction enforces the immutability contract of the containing struct, ensuring that all instance members respect the `readonly` guarantee. If the property needs to be mutable, either remove the `readonly` modifier from the struct declaration or implement the property with an explicit backing field and accessor bodies that don't modify instance state.
+Mark auto-implemented instance properties as `readonly` when you declare them within a `readonly struct` (**CS8341**). This correction enforces the immutability contract of the containing struct, ensuring that all instance members respect the `readonly` guarantee. If the property needs to be mutable, either remove the `readonly` modifier from the struct declaration or implement the property with an explicit backing field and accessor bodies that don't modify instance state.
 
 Remove the `readonly` modifier from static property or accessor declarations (**CS8657**). This correction is required because the `readonly` modifier only applies to instance members of structs to indicate they don't modify instance state, and static members don't have instance state to protect. If you need a read-only static property, simply omit the `set` accessor rather than using the `readonly` modifier.
 
@@ -216,7 +216,7 @@ For more information, see [readonly instance members](../builtin-types/struct.md
 
 To correct property initializer errors, apply one of the following changes based on the specific diagnostic:
 
-Convert the property to use auto-implemented syntax by removing the accessor bodies and letting the compiler generate the backing field (**CS8050**). This correction is needed because only properties with compiler-managed storage can have initializers, ensuring the initialization occurs before any accessor logic executes. Alternatively, modify the accessor implementations to use the `field` keyword to access the compiler-synthesized backing field, which enables the initializer while maintaining custom accessor logic. If neither approach is suitable, remove the initializer and assign the value in a constructor instead, where you have full control over the initialization sequence.
+Convert the property to use auto-implemented syntax by removing the accessor bodies and letting the compiler generate the backing field (**CS8050**). This correction is needed because only properties with compiler-managed storage can have initializers, ensuring the initialization occurs before any accessor logic executes. Alternatively, modify the accessor implementations to use the `field` keyword to access the compiler-synthesized backing field. This approach enables the initializer while maintaining custom accessor logic. If neither approach is suitable, remove the initializer and assign the value in a constructor instead, where you have full control over the initialization sequence.
 
 Add a `get` accessor to the auto-implemented property to enable reading the initialized value (**CS8051**). This correction is required because initializers set a value that must be retrievable, and a write-only property violates this fundamental expectation of property initialization. If you truly need a write-only property, implement the accessors explicitly with a backing field and assign the field directly in a constructor rather than using a property initializer.
 
@@ -234,7 +234,7 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 - **CS9034**: *Required member must be settable.*
 - **CS9035**: *Required member must be set in the object initializer or attribute constructor.*
 - **CS9036**: *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
-- **CS9037**: *he required members list is malformed and cannot be interpreted.*
+- **CS9037**: *The required members list is malformed and cannot be interpreted.*
 - **CS9038**: *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
 - **CS9039**: *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
 - **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
@@ -245,9 +245,9 @@ To correct required member errors, apply one of the following changes based on t
 
 Avoid using `required` as a type or alias name (**CS9029**). This correction is necessary because `required` is a contextual keyword in C# 11 and later, and using it as a type name creates ambiguity in code where the keyword might appear.
 
-Ensure derived members maintain the `required` modifier when overriding required members (**CS9030**). This correction enforces the contract established by the base class, guaranteeing that all derived types maintain the same initialization requirements. Avoid hiding required members with non-required members in derived classes (**CS9031**), as this would break the initialization contract that consumers expect from the base type.
+Ensure derived members maintain the `required` modifier when overriding required members (**CS9030**). This correction enforces the contract established by the base class, guaranteeing that all derived types maintain the same initialization requirements. Avoid hiding required members with non-required members in derived classes (**CS9031**), as this action breaks the initialization contract that consumers expect from the base type.
 
-Make required members at least as visible as their containing type, and ensure property setters are also sufficiently visible (**CS9032**). This correction prevents situations where a type is publicly accessible but its required members cannot be initialized from all contexts where the type can be constructed.
+Make required members at least as visible as their containing type, and ensure property setters are also sufficiently visible (**CS9032**). This correction prevents situations where a type is publicly accessible but its required members can't be initialized from all contexts where the type is constructed.
 
 Use the `required` keyword instead of manually applying `RequiredMemberAttribute` (**CS9033**). This correction ensures the compiler generates the correct metadata and enforces all required member rules, which manual attribute application might not do correctly.
 
@@ -255,7 +255,7 @@ Ensure required members have set accessors or are otherwise settable (**CS9034**
 
 Apply the `SetsRequiredMembers` attribute to constructors that initialize all required members in their bodies (**CS9038**, **CS9039**). This correction informs the compiler that the constructor fulfills the required member contract, allowing object creation without object initializers. If a constructor chains to another constructor with `SetsRequiredMembers`, it must also have the attribute.
 
-Avoid using required members in types that must satisfy the `new()` constraint (**CS9040**), as the parameterless constructor cannot guarantee required member initialization without an object initializer. Don't mark required members as obsolete unless the containing type or all constructors are obsolete (**CS9042**), to prevent situations where members are required but their use is discouraged. Required members aren't allowed in top-level statements or script contexts (**CS9045**) because these contexts don't support the object initialization syntax needed to set required members.
+Avoid using required members in types that must satisfy the `new()` constraint (**CS9040**), as the parameterless constructor can't guarantee required member initialization without an object initializer. Don't mark required members as obsolete unless the containing type or all constructors are obsolete (**CS9042**), to prevent situations where members are required but their use is discouraged. Required members aren't allowed in top-level statements or script contexts (**CS9045**) because these contexts don't support the object initialization syntax needed to set required members.
 
 For more information, see the [required modifier](../keywords/required.md) reference article and [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) guide.
 
@@ -266,8 +266,8 @@ For more information, see the [required modifier](../keywords/required.md) refer
 
 To correct ref-returning property errors, apply one of the following changes based on the specific diagnostic:
 
-Implement the property explicitly with a backing field and use the `ref` keyword in the `get` accessor's return expression (**CS8145**). This correction is necessary because auto-implemented properties generate a private backing field that the compiler manages internally, and returning a reference to a private field would expose internal storage that callers shouldn't access directly. To create a ref-returning property, declare an explicit field and return it with `=> ref backingField` syntax. Alternatively, if you don't need to return a reference to allow direct modification of the storage, remove the `ref` modifier from the property declaration.
+Implement the property explicitly with a backing field and use the `ref` keyword in the `get` accessor's return expression (**CS8145**). This correction is necessary because auto-implemented properties generate a private backing field that the compiler manages internally. Returning a reference to a private field would expose internal storage that callers shouldn't access directly. To create a ref-returning property, declare an explicit field and return it with `=> ref backingField` syntax. Alternatively, if you don't need to return a reference to allow direct modification of the storage, remove the `ref` modifier from the property declaration.
 
-Remove the `set` accessor from ref-returning properties (**CS8147**). This correction is required because a ref-returning property already provides both read and write access through the returned reference itself—callers can directly modify the value through the reference without needing a separate setter method. Including a `set` accessor would create two different mechanisms for modifying the same storage, which is redundant and could lead to confusion about which modification path should be used.
+Remove the `set` accessor from ref-returning properties (**CS8147**). This correction is required because a ref-returning property already provides both read and write access through the returned reference itself. Callers can directly modify the value through the reference without needing a separate setter method. Including a `set` accessor would create two different mechanisms for modifying the same storage, which is redundant and could lead to confusion about which modification path should be used.
 
 For more information, see [ref returns and ref locals](../statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).

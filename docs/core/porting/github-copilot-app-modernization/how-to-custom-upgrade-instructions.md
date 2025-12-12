@@ -44,27 +44,40 @@ Follow these steps to generate and refine a new instruction file. These sections
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 1. In the chat, type: `I want to generate a custom upgrade instruction`.
 1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.
-1. (Optional) Add the file to the solution for visibility if it isn't already included.
 1. When Copilot creates the new file, such as `replace_newtonsoft_with_system_text_json.md`, review the content and refine it in chat. For example, ask Copilot to "clarify detection criteria" or "add a prerequisite section."
-1. (Recommended) Strengthen the instruction with a real diff example:
+
+   > [!TIP]
+   > Add the file to the solution for visibility if it isn't already included.
+
+1. Strengthen the instruction with a real diff examples.
+
    1. Make the desired code changes manually in one project. For example, "remove the `Newtonsoft.Json` package, update using directives, and replace `JsonConvert` code with `JsonSerializer`."
    1. In chat, with the instruction file open, type: `Check my git changes and add diffs as examples to my instruction file`.
    1. Confirm Copilot used a git diff and appended a fenced diff block or structured example to the markdown file.
 
 ### Authoring tips
 
-- Use clear conditional phrasing: "If code references X, then do Y."
+- Use clear conditional phrasing: `If code references X, then do Y.`
 - Keep one transformation per file; use prerequisites when multiple files must run in sequence.
-- Provide at least one concrete example (diff or before/after snippet) to improve transformation accuracy.
-- Avoid ambiguous verbs like "improve" or "fix"—use explicit actions like replace, remove, update.
+- Imporve transformation accuracy by providing at least one concrete example, such as a diff or before/after snippet.
+- Avoid ambiguous verbs like "improve" or "fix"—use explicit actions like "replace," "remove," and "update."
 
 ## Test a custom upgrade instruction (one-time run)
 
 Before running the instruction during an upgrade plan, validate it in isolation. This fast inner loop helps you refine detection and validate the code changes.
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
-1. In chat, invoke the instruction using wording similar to the file name. For example, "replace Newtonsoft with System.Text.Json."
-1. Confirm in the chat window that Copilot retrieved the instruction file (it shows the text "Getting more instructions"). If it didn't, retry by using the key words from the file's name such as using the same verb (replace/update/remove) and nouns (Newtonsoft/System.Text.Json).
+1. In chat, invoke the instruction using wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
+1. Confirm in the chat window that Copilot retrieved the instruction file:
+
+   ```text
+   > Getting instructions for 'replace Newtonsoft with System.Text.Json'.
+   
+   Perfect! I've retrieved the scenario instructions for migrating from Newtonsoft.Json to System.Text.Json. Now I'll begin the analysis following the scenario-specific instructions.
+   ```
+
+   If you don't see an indication that the instructions were found, retry using key words from the file's name such as the same verb and noun combinations.
+
 1. Review the proposed changes (solution diffs, pending commits, or previewed modifications) to validate the custom upgrade instruction behaves as planned.
 
 ### Validation tips
@@ -79,9 +92,14 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 1. In the chat, choose `Upgrade to a newer version of .NET`. Answer Copilot's questions until it generates the plan markdown file.
-1. Review the generated plan. Confirm whether the intended transformation is already present. If it only lists a version bump, your custom instruction isn't yet applied.
-1. In chat, explicitly reference the instruction using language similar to the file name. For example, "modify the plan using the custom instructions to replace Newtonsoft with System.Text.Json."
-1. Wait for Copilot to confirm it retrieved the file. In chat, you see that it opened the markdown instruction file. If you don't see a reference, restate the request using the file's key verbs (replace, update, remove) and package names.
+1. Review the generated plan. Confirm whether the intended transformation is present using the custom instruction's details.
+
+   If the custom instructions are missing, explicitly add them by asking Copilot to modify the plan with those instructions.
+
+   1. Use wording similar to the file name. For example, `modify the plan using the custom instructions to replace Newtonsoft with System.Text.Json.`.
+
+   1. Wait for Copilot to confirm it retrieved the file. In chat, you see that it opened the markdown instruction file. If you don't see a reference, restate the request using the file's key verbs (replace, update, remove) and package names.
+
 1. Review the plan file and verify that it includes the custom instruction's details.
 
    - Review package actions.
@@ -114,7 +132,7 @@ After the upgrade completes:
 
 1. Review the upgrade report for commits related to the custom instruction.
 1. Run your tests to ensure functional behavior remains correct.
-1. (Optional) Capture a diff example from the successful change and add it to the instruction file to strengthen future automation.
+1. **Optional**: Capture a diff example from the successful change and add it to the instruction file to strengthen future automation.
 
 ## Clean up resources
 

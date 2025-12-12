@@ -599,7 +599,9 @@ items:
       CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
-    displayName: CS8509, CS9134, CS9135, CS9335, CS9336, CS9337
+    displayName: >
+      CS8509, CS8978, CS8979, CS8980, CS8985, CS9013, CS9060, CS9134, CS9135, CS9335,
+      CS9336, CS9337
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
     displayName: >

@@ -1,6 +1,6 @@
 ---
-title: Compiler Errors on partial type and member declarations
-description: Use this article to diagnose and correct compiler errors and warnings when you write `partial` types and `partial` members.
+title: Compiler Errors on property declarations
+description: Use this article to diagnose and correct compiler errors and warnings when you define properties in your types.
 f1_keywords:
   - "CS0200"
   - "CS0545"
@@ -177,7 +177,7 @@ Add the `[field: MaybeNull, AllowNull]` attributes to the property declaration t
 
 Consistently use either the `field` keyword in both accessors or use an explicit backing field in both accessors (**CS9266**). This correction prevents potential bugs where one accessor modifies the compiler-synthesized backing field while the other modifies a different storage location, leading to inconsistent property behavior.
 
-For more information, see [field keyword](../../programming-guide/classes-and-structs/properties.md#field-keyword) and [Partial properties](../../programming-guide/classes-and-structs/properties.md#partial-properties).
+For more information, see [field keyword](../../programming-guide/classes-and-structs/properties.md#field-backed-properties) and [Partial properties](../../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-members).
 
 ## Readonly properties
 
@@ -222,7 +222,7 @@ Add a `get` accessor to the auto-implemented property to enable reading the init
 
 Remove the initializer from interface property declarations (**CS8053**). This correction is necessary because interfaces define contracts for implementing types rather than providing concrete implementations with initial values. If you need to provide default values, implement the property in a class that implements the interface, or use default interface methods (available in C# 8.0 and later) to supply a default implementation.
 
-For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [field keyword](../../programming-guide/classes-and-structs/properties.md#field-keyword).
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [field keyword](../../programming-guide/classes-and-structs/properties.md#field-backed-properties).
 
 ## Required members
 
@@ -258,7 +258,6 @@ Apply the `SetsRequiredMembers` attribute to constructors that initialize all re
 Avoid using required members in types that must satisfy the `new()` constraint (**CS9040**), as the parameterless constructor cannot guarantee required member initialization without an object initializer. Don't mark required members as obsolete unless the containing type or all constructors are obsolete (**CS9042**), to prevent situations where members are required but their use is discouraged. Required members aren't allowed in top-level statements or script contexts (**CS9045**) because these contexts don't support the object initialization syntax needed to set required members.
 
 For more information, see the [required modifier](../keywords/required.md) reference article and [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) guide.
-
 
 ## Ref-returning properties
 

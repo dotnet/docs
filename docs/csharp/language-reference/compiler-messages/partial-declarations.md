@@ -162,20 +162,12 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9255**](#partial-properties): *Both partial property declarations must have the same type.*
 - [**CS9256**](#partial-properties): *Partial property declarations have signature differences.*
 - [**CS9257**](#partial-properties): *Both partial property declarations must be required or neither may be required*
-- [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
-- [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
 - [**CS9275**](#partial-members): *Partial member  must have an implementation part.*
 - [**CS9276**](#partial-members): *Partial member  must have a definition part.*
 - [**CS9277**](#partial-members): *Partial member may not have multiple defining declarations.*
 - [**CS9278**](#partial-members): *Partial member may not have multiple implementing declarations.*
 - [**CS9279**](#partial-events-and-constructors): *Partial event cannot have initializer.*
 - [**CS9280**](#partial-events-and-constructors): *Only the implementing declaration of a partial constructor can have an initializer.*
-
-The following warnings can be generated for field backed properties:
-
-- [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
-- [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
-- [**CS9273**](#field-backed-properties): *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 The following sections explain the cause and fixes for these errors and warnings.
 

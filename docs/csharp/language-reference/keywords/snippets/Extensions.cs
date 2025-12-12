@@ -63,7 +63,7 @@ public static class NumericSequences
         /// returned sequence is iterated.</remarks>
         /// <param name="left">The first sequence of integers to concatenate. Cannot be null.</param>
         /// <param name="right">The second sequence of integers to concatenate. Cannot be null.</param>
-        /// <returns>An <see cref="IEnumerable{Int32}"/> that contains the elements of the first sequence followed by the
+        /// <returns>A sequence that contains the elements of the first sequence followed by the
         /// elements of the second sequence.</returns>
         public static IEnumerable<int> operator +(IEnumerable<int> left, IEnumerable<int> right)
             => left.Concat(right);

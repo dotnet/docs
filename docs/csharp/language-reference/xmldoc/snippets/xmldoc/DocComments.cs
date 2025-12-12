@@ -320,7 +320,7 @@ public class ParamsAndParamRefs
 public static class Extensions
 {
     /// <summary>
-    /// This is the source sequence for the extension methods.
+    /// Defines extensions for generic enumerable sequences.
     /// </summary>
     /// <param name="sequence">The receiver sequence</param>
     /// <typeparam name="TSequence">The type of the items in the sequence.</typeparam>

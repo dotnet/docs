@@ -249,7 +249,7 @@ These errors occur when your [partial member declarations](../keywords/partial-m
 - **CS8798**: *Partial method must have accessibility modifiers because it has a '`virtual`', '`override`', '`sealed`', '`new`', or '`extern`' modifier.*
 - **CS8817**: *Both partial method declarations must have the same return type.*
 
-These errors occur when your [partial method declarations](../keywords/partial-method.md) violate the rules for partial methods.
+These errors occur when your [partial method declarations](../keywords/partial-member.md) violate the rules for partial methods.
 
 - Add the `partial` modifier to the method declaration, or provide a method body, because methods without implementations must be marked as `abstract`, `extern`, or `partial` (**CS0501**).
 - Ensure both declarations include or omit the extension method syntax (`this` modifier on the first parameter) consistently, because mixing extension and non-extension declarations creates incompatible method signatures (**CS0755**).

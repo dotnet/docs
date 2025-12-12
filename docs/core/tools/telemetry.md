@@ -26,20 +26,14 @@ Telemetry *is collected* when using any of the [.NET CLI commands](index.md), su
 
 The .NET SDK telemetry feature is enabled by default for Microsoft distributions of the SDK. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
-A single telemetry entry is also sent by the .NET SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
+The .NET SDK installer sends a single telemetry entry when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
 
 > [!IMPORTANT]
-> To opt out after you started the installer: close the installer, set the environment variable, and then run the installer again with that value set.
-
-## Avoid inadvertent disclosure of information
-
-.NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
-
-Because of this, custom builds of the .NET SDK shouldn't be located in directories whose path names expose personal or sensitive information.
+> To opt out after you start the installer: close the installer, set the environment variable, and then run the installer again with that value set.
 
 ## Disclosure
 
-The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+The .NET SDK displays text similar to the following output when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). The text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 Telemetry
@@ -49,14 +43,14 @@ The .NET tools collect usage data in order to help us improve your experience. T
 Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
 
-To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
+To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. This variable has no effect on telemetry opt out.
 
 > [!NOTE]
-> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
+> **Breaking change:** The behavior of telemetry messages written to `stderr` changed in recent versions of the .NET SDK. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
 
 ## Data points
 
-The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology, held under restricted access, and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
+The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
 Protecting your privacy is important to us. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
 
@@ -151,12 +145,12 @@ To see the telemetry data captured by SDK version, refer to the following tabs:
 
 - **SDK version 2.1.300 and later:**
   - Kernel version.
-  - Libc release/version.
+  - Libc release and version.
 
 - **SDK version 2.0 and later:**
-  - Command arguments and options: several arguments and options are collected (not arbitrary strings). See [collected options](#collected-options). Hashed after 2.1.300.
+  - Command arguments and options: the SDK collects several arguments and options, not arbitrary strings. See [collected options](#collected-options). Hashed after version 2.1.300.
   - Whether the SDK is running in a container.
-  - Target frameworks (from the `TargetFramework` event), hashed starting in 2.1.
+  - Target frameworks (from the `TargetFramework` event), hashed starting in version 2.1.
   - Hashed Media Access Control (MAC) address (SHA256).
   - Hashed current working directory.
   - Install success report, with hashed installer exe filename.
@@ -165,7 +159,7 @@ To see the telemetry data captured by SDK version, refer to the following tabs:
 
 - **All SDK versions:**
   - Timestamp of invocation.
-  - Command invoked (for example, "build"), hashed starting in 2.1.
+  - Command invoked (for example, "build"), hashed starting in version 2.1.
   - Three octet IP address used to determine the geographical location.
   - Operating system and version.
   - Runtime ID (RID) the SDK is running on.
@@ -176,7 +170,7 @@ To see the telemetry data captured by SDK version, refer to the following tabs:
 
 ### Collected options
 
-Certain commands send additional data. A subset of commands sends the first argument:
+Certain commands send extra data. A subset of commands sends the first argument:
 
 | Command               | First argument data sent                |
 |-----------------------|-----------------------------------------|
@@ -205,18 +199,18 @@ A subset of commands sends selected options if they're used, along with their va
 
 When the SDK fails to resolve a built-in command, any command resolver that successfully resolves the command sends a hash of the command name along with the name of the command resolver type.
 
-Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
+Starting with .NET Core 2.1.100 SDK, the SDK hashes all these values except for `--verbosity` and `--sdk-package-version`.
 
 ### Template engine telemetry
 
-The `dotnet new` template instantiation command collects additional data for Microsoft-authored templates, starting with .NET Core 2.1.100 SDK:
+Starting with .NET Core 2.1.100 SDK, the `dotnet new` template instantiation command collects extra data for Microsoft-authored templates, including the following data:
 
 * `--framework`
 * `--auth`
 
 ### dotnet run telemetry
 
-The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
+Starting with .NET SDK 10.0.100, the `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps.
 
 **Telemetry for all `dotnet run` executions:**
 
@@ -237,9 +231,9 @@ The `dotnet run` command collects feature-based telemetry to help drive developm
 
 ## Crash exception telemetry
 
-If the .NET CLI/SDK crashes, it collects the name of the exception and stack trace of the CLI/SDK code. This information is collected to assess problems and improve the quality of the .NET SDK and CLI. This article provides information about the data we collect. It also provides tips on how users building their own version of the .NET SDK can avoid inadvertent disclosure of personal or sensitive information.
+If the .NET CLI or SDK crashes, it collects the name of the exception and stack trace of the CLI or SDK code. The .NET CLI collects this information to assess problems and improve the quality of the .NET SDK and CLI.
 
-The .NET CLI collects information for CLI/SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI/SDK code.
+The .NET CLI collects information for CLI or SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI or SDK code.
 
 The following example shows the kind of data that is collected:
 
@@ -258,11 +252,15 @@ at Microsoft.DotNet.Cli.Program.ProcessArgs(String[] args, ITelemetry telemetryC
 at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ```
 
-## Continuous Integration Detection
+.NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 
-In order to detect if the .NET CLI is running in a Continuous Integration environment, the .NET CLI probes for the presence and values of several well-known environment variables that common CI providers set.
+Because of this, custom builds of the .NET SDK shouldn't be located in directories whose path names expose personal or sensitive information.
 
-The full list of environment variables, and what is done with their values, is shown below.  Note that in every case, the value of the environment variable is never collected, only used to set a boolean flag.
+## Continuous integration detection
+
+To detect if the .NET CLI is running in a continuous integration environment, the .NET CLI checks for the presence and values of several well-known environment variables that common CI providers set.
+
+The following list shows the environment variables and how the .NET CLI uses their values. In every case, the .NET CLI never collects the value of the environment variable. It only uses the value to set a boolean flag.
 
 | Variable(s) | Provider | Action |
 | ----------- | -------- | ------ |
@@ -280,9 +278,9 @@ The full list of environment variables, and what is done with their values, is s
 
 ## LLM detection
 
-To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI checks for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 
-The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables aren't collected - they're only used to identify the agent type.
 
 | LLM agent | Variable | Value |
 | --------- | ----------- | ----- |
@@ -291,7 +289,7 @@ The following table shows the agent name, environment variable used for detectio
 | Cursor | `CURSOR_EDITOR`| "cursor" |
 | Google Gemini | `GEMINI_CLI` | "gemini" |
 
-If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
+If the .NET CLI detects multiple agents, it concatenates the different agent values with a comma to produce the final value.
 
 ## See also
 

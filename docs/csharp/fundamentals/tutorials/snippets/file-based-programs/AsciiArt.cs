@@ -1,4 +1,4 @@
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet run
 
 // <ColorfulPackage>
 #:package Colorful.Console@1.2.15

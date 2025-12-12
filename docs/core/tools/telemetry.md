@@ -172,6 +172,8 @@ To see the telemetry data captured by SDK version, refer to the following tabs:
   - .NET SDK version.
   - Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft.
 
+---
+
 ### Collected options
 
 Certain commands send additional data. A subset of commands sends the first argument:

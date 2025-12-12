@@ -1,7 +1,7 @@
 ---
 title: Build file-based apps
 description: File-based apps are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
-ms.date: 08/14/2025
+ms.date: 12/12/2025
 ms.topic: tutorial
 ai-usage: ai-assisted
 #customer intent: As a developer, I want to build utilities so that more work is automated.
@@ -254,7 +254,7 @@ Now, finish the app to use the parsed options and write the output. First, defin
 
 1. Create a local function to write the ASCII art with the specified delay. This function writes each message in the record with the specified delay between each message:
 
-   :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
+   :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAsciiArt":::
 
 1. Replace the `if` clause you wrote earlier with the following code that processes the command line arguments and write the output:
 

@@ -71,7 +71,8 @@ async Task<AsciiMessageOptions> ProcessParseResults(ParseResult result)
 }
 // </ProcessParsedArgs>
 
-// <WriteAscii>
+
+// <WriteAsciiArt>
 async Task WriteAsciiArt(AsciiMessageOptions options)
 {
     foreach (string message in options.Messages)
@@ -80,7 +81,7 @@ async Task WriteAsciiArt(AsciiMessageOptions options)
         await Task.Delay(options.Delay);
     }
 }
-// </WriteAscii>
+// </WriteAsciiArt>
 
 // <Record>
 public record AsciiMessageOptions(string[] Messages, int Delay);

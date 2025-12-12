@@ -47,7 +47,7 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="13-49":::
+:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="13-50":::
 
 ### [HostBuilder](#tab/host-builder)
 

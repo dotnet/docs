@@ -45,7 +45,7 @@ builder.Services.AddAzureClients(async clientBuilder =>
             new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
             new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
         ));
-        #pragma warning restore OPENAI001
+    #pragma warning restore OPENAI001
 });
 
 WebApplication app = builder.Build();

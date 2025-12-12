@@ -116,13 +116,13 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9037**](#required-members): *The required members list is malformed and cannot be interpreted.*
 - [**CS9038**](#required-members): *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
 - [**CS9039**](#required-members): *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
-- [**CS9040**](#required-members): *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
+- [**CS9040**](#required-members): *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or method because it has required members.*
 - [**CS9042**](#required-members): *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
 - [**CS9045**](#required-members): *Required members are not allowed on the top level of a script or submission.*
 - [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
 
-The following warnings can be generated for field backed properties:
+The following warnings can be generated for field-backed properties:
 
 - [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.*
 - [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
@@ -237,7 +237,7 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 - **CS9037**: *The required members list is malformed and cannot be interpreted.*
 - **CS9038**: *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
 - **CS9039**: *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
-- **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or or method because it has required members.*
+- **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or method because it has required members.*
 - **CS9042**: *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
 - **CS9045**: *Required members are not allowed on the top level of a script or submission.*
 

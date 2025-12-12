@@ -2,8 +2,6 @@
 title: GitHub Copilot app modernization overview
 description: "Learn more about GitHub Copilot app modernization. This Visual Studio extension helps you upgrade your code and projects. Upgrades can include .NET versioning or migrating code from one technology to another."
 titleSuffix: ""
-author: adegeo
-ms.author: adegeo
 ms.topic: overview
 ms.date: 12/09/2025
 ai-usage: ai-assisted
@@ -37,14 +35,6 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 Before using GitHub Copilot app modernization, you need these items:
 
 [!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
-
-## How to start an upgrade or migration
-
-To start an upgrade or migration, interact with GitHub Copilot by following these steps:
-
-[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
-
-If your repository already contains the `.github/upgrades` folder with the stage files from a previous upgrade or migration attempt, Copilot asks whether you want to continue that upgrade or start over with a fresh analysis.
 
 ## Upgrade .NET projects
 
@@ -130,34 +120,39 @@ Predefined tasks capture industry best practices for using Azure services. Curre
   Transition from local logging frameworks like log4net, serilog, and Windows event log to OpenTelemetry on Azure.
 
 - **Migrate to Azure Cache for Redis with Managed Identity**
+
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
 ## How it works
 
-When you ask the modernization agent to upgrade or migrate your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a three-stage workflow. Each stage writes a Markdown file under `.github/upgrades` in your repository so you can review what comes next before you continue. If `.github/upgrades` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+To start an upgrade or migration, interact with GitHub Copilot by following these steps:
 
-- **Analysis stage (`assessment.md`)**\
-Copilot examines your project structure, dependencies, and code patterns to build a comprehensive assessment. The document lists breaking changes, API compatibility issues, deprecated patterns, and the migration scope so you know exactly what needs attention.
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a three-stage workflow. Each stage writes a Markdown file under `.github/upgrades` in your repository so you can review what comes next before you continue. If `.github/upgrades` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+
+- **Assessment stage (`assessment.md`)**\
+Copilot examines your project structure, dependencies, and code patterns to build a comprehensive assessment. The document lists breaking changes, API compatibility issues, deprecated patterns, and the upgrade scope so you know exactly what needs attention.
 
 - **Planning stage (`plan.md`)**\
-Copilot converts the assessment into a detailed specification that explains how to resolve every issue. The plan documents migration strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
+Copilot converts the assessment into a detailed specification that explains how to resolve every issue. The plan documents upgrade strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
 
 - **Execution stage (`tasks.md`)**\
 Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot confirms it succeeded.
 
 Edit any of the Markdown files in `.github/upgrades` to adjust upgrade steps or add context before you move forward.
 
-### Perform the upgrade or migration
+### Perform the upgrade
 
 As each stage is prepared, tell Copilot to move on to the next stage, giving you time to research and modify (if necessary) any of the tasks the stage has laid out.
 
-Once you reach the last stage, **Execution stage**, tell Copilot to start the upgrade or migration. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you if the problem is encountered again.
+Once you reach the last stage, **Execution stage**, tell Copilot to start the upgrade. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you if the problem is encountered again.
 
-### Upgrade and migration results
+### Upgrade results
 
 As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can easily roll back the changes or get detailed information about what changed.
 
-When the upgrade or migration finishes, Copilot displays next steps in the chat response to guide you on what to do after the process completes.
+When the upgrade finishes, Copilot displays next steps in the chat response to guide you on what to do after the process completes.
 
 ## Telemetry
 

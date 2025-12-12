@@ -42,9 +42,9 @@ Complete the following steps to create an MSTest project.
    ```dotnetcli
    dotnet add package Azure.AI.OpenAI
    dotnet add package Azure.Identity
-   dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+   dotnet add package Microsoft.Extensions.AI.Abstractions
+   dotnet add package Microsoft.Extensions.AI.Evaluation
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
    dotnet add package Microsoft.Extensions.AI.Evaluation.Safety --prerelease
    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
    dotnet add package Microsoft.Extensions.Configuration

@@ -1,6 +1,10 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/docs/ai/advanced/sample-implementations.md",
+            "redirect_url": "/dotnet/ai/ichatclient"
+        },
+        {
             "source_path_from_root": "/docs/ai/azure-ai-for-dotnet-developers.md",
             "redirect_url": "/dotnet/ai/resources/azure-ai"
         },

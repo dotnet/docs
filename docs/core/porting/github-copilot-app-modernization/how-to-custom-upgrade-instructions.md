@@ -1,6 +1,6 @@
 ---
-title: How to apply custom upgrade instructions during an upgrade
-description: "Learn how to create and apply custom upgrade instructions with GitHub Copilot app modernization so they're used during the assessment stage of a .NET upgrade."
+title: Apply custom upgrade instructions for .NET upgrades
+description: "Create and apply custom upgrade instructions with GitHub Copilot to automate .NET upgrades. Learn to write, test, and integrate instructions for consistent transformations."
 author: kschlobohm
 ms.topic: how-to
 ms.date: 12/12/2025
@@ -10,9 +10,9 @@ ai-usage: ai-assisted
 
 ---
 
-# Apply custom upgrade instructions during a .NET upgrade
+# Apply custom upgrade instructions for .NET upgrades
 
-Custom upgrade instructions are markdown files that guide GitHub Copilot app modernization to apply specific transformations during an upgrade. You can create these files to automate repetitive changes, such as replacing one library with another or guiding how to apply a specific upgrade of an API.
+Custom upgrade instructions are markdown files that guide GitHub Copilot app modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or guiding how to apply a specific upgrade of an API.
 
 This article explains how to create a custom upgrade instruction file, test it in isolation, and use it during the assessment stage of an upgrade. You learn how to structure the instruction file, verify it works correctly, and integrate it into the upgrade workflow.
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have these requirements:
 
 ## Understand custom upgrade instructions
 
-Custom upgrade instructions are markdown files that Copilot retrieves on demand during the assessment and planning stages of an upgrade. They differ from `copilot-instructions.md` because they're:
+GitHub Copilot app modernization retrieves custom upgrade instructions as markdown files on demand during the assessment and planning stages of an upgrade. They differ from `copilot-instructions.md` because they're:
 
 - Targeted to automating code and dependency changes.
 - Retrieved only when relevant to the current upgrade assessment or plan.
@@ -49,7 +49,7 @@ Follow these steps to generate and refine a new instruction file. These sections
    > [!TIP]
    > Add the file to the solution for visibility if it isn't already included.
 
-1. Strengthen the instruction with a real diff examples.
+1. Strengthen the instruction with real diff examples.
 
    1. Make the desired code changes manually in one project. For example, "remove the `Newtonsoft.Json` package, update using directives, and replace `JsonConvert` code with `JsonSerializer`."
    1. In chat, with the instruction file open, type: `Check my git changes and add diffs as examples to my instruction file`.
@@ -69,7 +69,7 @@ Follow these guidelines to write clear, effective custom upgrade instructions th
 Before running the instruction during an upgrade, validate it in isolation. This fast inner loop helps you refine detection and validate the code changes.
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
-1. In chat, invoke the instruction using wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
+1. In chat, invoke the instruction by using wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
 1. Confirm in the chat window that Copilot retrieved the instruction file:
 
    ```text
@@ -117,10 +117,10 @@ Use these steps to incorporate an existing custom upgrade instruction into the a
 
 How you name and invoke custom upgrade instructions affects whether Copilot retrieves them automatically. Follow these guidelines to improve activation reliability:
 
-- Match the file's verb: if the file name uses `replace`, use that phrasing (not `upgrade` or `fix`).
-- Keep one transformation per file for clarity and reuse; sequence multiple files by listing prerequisites in each file.
+- Match the file's verb. If the file name uses `replace`, use that phrasing (not `upgrade` or `fix`).
+- Keep one transformation per file for clarity and reuse. Sequence multiple files by listing prerequisites in each file.
 - Request custom instructions during the assessment stage for best results, rather than waiting until planning or execution.
-- Avoid ambiguous requests like "improve the assessment"; be explicit: "apply the replace_newtonsoft_with_system_text_json instructions during assessment."
+- Avoid ambiguous requests like "improve the assessment." Be explicit: "apply the replace_newtonsoft_with_system_text_json instructions during assessment."
 
 ## Validate the applied changes
 

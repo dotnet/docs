@@ -9,8 +9,9 @@ IConfigurationRoot config = new ConfigurationBuilder()
     .Build();
 
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-string model = config["AZURE_OPENAI_GPT_NAME"];
 string tenantId = config["AZURE_TENANT_ID"];
+
+string model = "gpt-4o";
 
 // Get a chat client for the Azure OpenAI endpoint.
 AzureOpenAIClient azureClient =

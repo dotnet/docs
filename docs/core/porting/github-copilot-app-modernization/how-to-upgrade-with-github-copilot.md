@@ -31,15 +31,15 @@ When you start the upgrade, Copilot prompts you to create a new branch if you're
 
 The three stages are:
 
-- **Assessment stage** - Copilot examines your project to identify breaking changes, compatibility issues, and upgrade requirements.
-- **Planning stage** - Copilot creates a detailed specification explaining how to resolve every issue.
+- **Assessment stage** - Copilot examines your project to identify breaking changes, compatibility problems, and upgrade requirements.
+- **Planning stage** - Copilot creates a detailed specification explaining how to resolve every problem.
 - **Execution stage** - Copilot breaks the plan into sequential tasks and performs the upgrade.
 
 ## Start assessment and review results
 
 The assessment stage examines your project structure, dependencies, and code patterns to identify what needs to change. Copilot automatically starts this stage and generates an `assessment.md` file in `.github/upgrades`.
 
-The assessment lists breaking changes, API compatibility issues, deprecated patterns, and the upgrade scope so you know exactly what needs attention. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 9.0:
+The assessment lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope so you know exactly what needs attention. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 9.0:
 
 ```markdown
 # Projects and dependencies analysis
@@ -70,16 +70,16 @@ This document provides a comprehensive overview of the projects and their depend
 ...
 ```
 
-To review and customize:
+To review and customize the plan:
 
 1. Open the `assessment.md` file in `.github/upgrades`.
-1. Review the identified breaking changes and compatibility issues.
+1. Review the identified breaking changes and compatibility problems.
 1. Add any project-specific context or concerns to the document.
 1. Tell Copilot to move to the planning stage.
 
 ## Start planning and review the plan
 
-The planning stage converts the assessment into a detailed specification explaining how to resolve every issue. When you tell Copilot to proceed to planning, it generates a `plan.md` file in `.github/upgrades`.
+The planning stage converts the assessment into a detailed specification that explains how to resolve every issue. When you tell Copilot to proceed to planning, it generates a `plan.md` file in `.github/upgrades`.
 
 The plan documents upgrade strategies, refactoring approaches, dependency upgrade paths, and risk mitigations. The following example shows part of a plan for an ASP.NET Core project:
 
@@ -116,7 +116,7 @@ Upgrade all projects in the MvcMovieNet6 solution from .NET 6 to .NET 10 (Long T
 ...
 ```
 
-To review and customize:
+To review and customize the plan:
 
 1. Open the `plan.md` file in `.github/upgrades`.
 1. Review the upgrade strategies and dependency updates.
@@ -131,7 +131,7 @@ To review and customize:
 
 The execution stage breaks the plan into sequential, concrete tasks with validation criteria. When you tell Copilot to proceed to execution, it generates a `tasks.md` file in `.github/upgrades`.
 
-The task list describes each task and explains how Copilot confirms it succeeded. The following example shows the task list for an solution containing ASP.NET Core and WPF projects:
+The task list describes each task and explains how Copilot confirms it succeeded. The following example shows the task list for a solution containing ASP.NET Core and WPF projects:
 
 ```markdown
 # MvcMovieNet6 .NET 10 Upgrade Tasks
@@ -191,7 +191,7 @@ The tool creates a Git commit for every portion of the process, so you can easil
 
 ## Verify the upgrade
 
-When the upgrade completes, Copilot displays next steps in the chat response to guide you on what to do after the process completes. Review the `tasks.md` file for the status of every step. The tool creates a Git commit for every portion of the upgrade process, so you can easily roll back changes or get detailed information about what changed.
+When the upgrade finishes, Copilot shows next steps in the chat response to guide you on what to do after the process. Review the `tasks.md` file for the status of every step. The tool creates a Git commit for every portion of the upgrade process, so you can easily roll back changes or get detailed information about what changed.
 
 The following example shows completed tasks for an ASP.NET Core project upgrade:
 

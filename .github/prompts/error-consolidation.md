@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `generic-type-parameters-errors.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to generic type parameters and generic type arguments.
+- For the duration of this chat, all references to "destination file" refer to `property-declaration-errors.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to declaring and defining properties.
 
 The destination file already contains a skeleton for the final output.
 
@@ -31,7 +31,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 ## Search for other related articles that may be missed.
 
-First, let's find candidate source files. Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
+First, let's find candidate source files. Search all files whose names start with "CS" in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
 
 ## Final search in roslyn source
 

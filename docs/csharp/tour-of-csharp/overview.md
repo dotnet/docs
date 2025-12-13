@@ -74,7 +74,7 @@ Pattern matching expressions can be simplified using `_` as a catch all for any 
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="ReducedPattern":::
 
-The preceding examples also declare *tuples*, lightweight data structures. A *tuple* is an ordered, fixed-length sequence of values with optional names and individual types. You enclose the sequence in `(` and `)` characters. The declaration `(left, right)` defines a tuple with two boolean values:  `left` and `right`. Each switch arm declares a tuple value such as `(true, true)`. Tuples provide convenient syntax to declare a single value with multiple values.
+The preceding examples also declare *tuples*, lightweight data structures. A *tuple* is an ordered, fixed-length sequence of values with optional names and individual types. You enclose the sequence in `(` and `)` characters. The declaration `(left, right)` defines a tuple with two boolean values:  `left` and `right`. Each switch arm declares a tuple value such as `(true, true)`. Tuples provide convenient syntax to declare a single value with multiple values of any type.
 
 *Collection expressions* provide a common syntax to provide collection values. You write values or expressions between `[` and `]` characters and the compiler converts that expression to the required collection type:
 

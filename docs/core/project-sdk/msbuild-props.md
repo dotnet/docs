@@ -879,6 +879,9 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](/dotnet/core/tools/dotnet-watch#ignore-specified-files-and-folders).
+
 ### DefaultItemExcludesInProjectFolder
 
 Use the `DefaultItemExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.

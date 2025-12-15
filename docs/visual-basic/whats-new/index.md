@@ -80,7 +80,7 @@ Visual Basic 16.9 enables consumption of init-only properties.
 
 ## Visual Basic 16.0
 
-Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core. It's the first version of Visual Basic focused on .NET Core. .NET Core 3.0 adds the parts of the Visual Basic Runtime that depend on WinForms.
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core. It's the first version of Visual Basic focused on .NET Core. .NET Core 3.0 adds the parts of the Visual Basic Runtime that depend on Windows Forms.
 
 **Comments allowed in more places within statements**
 
@@ -262,7 +262,7 @@ You can disable and enable specific warnings for regions within a source file.
 
 **XML doc comment improvements**
 
-When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (generics, operators, and more), colorizing, and refactoring.
+When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (for example, generics and operators), colorizing, and refactoring.
 
 [Partial module and interface definitions](../language-reference/modifiers/partial.md)
 

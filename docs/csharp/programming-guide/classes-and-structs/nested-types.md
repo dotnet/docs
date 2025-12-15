@@ -11,7 +11,6 @@ A nested type is a type that you define within a [class](../../language-referenc
 
 :::code language="csharp" source="./snippets/access-modifiers/nestedtypes.cs" id="DeclareNestedClass":::
 
-
 Regardless of whether the outer type is a class, interface, or struct, nested types default to [private](../../language-reference/keywords/private.md). You can access them only from their containing type. In the preceding example, external types can't access the `Nested` class.
 
 You can also specify an [access modifier](../../language-reference/keywords/access-modifiers.md) to define the accessibility of a nested type, as follows:

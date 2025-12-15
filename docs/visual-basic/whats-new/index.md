@@ -72,7 +72,7 @@ Visual Basic 17.13 recognizes the `unmanaged` generic constraint. Visual Basic 1
 
 ## Visual Basic 17.0
 
-Visual Basic 17.0 enables the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType>. 
+Visual Basic 17.0 enables the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType>.
 
 ## Visual Basic 16.9
 
@@ -98,7 +98,7 @@ End Sub
 
 **Optimized floating-point to integer conversion**
 
-In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 16.0 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type and [Option Strict](../language-reference/statements/option-strict-statement.md) is set to `Off`:
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 16.0 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, and CULng), or when the value returned by any of the following methods is implicitly cast to an integral type and [Option Strict](../language-reference/statements/option-strict-statement.md) is set to `Off`:
 
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
@@ -162,7 +162,7 @@ To use the underscore character as a leading separator, you must add the followi
 
 [**Named tuple inference**](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
 
-When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names. You don't need to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements: `state`, `stateName`, and `capital`.
+When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names. You don't need to explicitly name a tuple element. The following example uses inference to create a tuple with two named elements: `state` and `stateName`.
 
 [!code-vb[Inferred tuple names](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/Program.vb#2)]
 

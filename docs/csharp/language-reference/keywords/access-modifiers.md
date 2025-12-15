@@ -1,21 +1,20 @@
 ---
 description: "Access Modifiers - C# Reference"
 title: "Access Modifiers"
-ms.date: 09/15/2022
+ms.date: 12/15/2025
 helpviewer_keywords:
   - "access modifiers [C#]"
 ---
 # Access Modifiers (C# Reference)
 
-Access modifiers are keywords used to specify the declared accessibility of a member or a type. This section introduces the five access modifiers:
+Access modifiers are keywords used to specify the declared accessibility of a member or a type. This section introduces the four access modifiers:
 
 - `public`
 - `protected`
 - `internal`
 - `private`
-- `file`
 
- The following seven accessibility levels can be specified using the access modifiers:
+The following six accessibility levels can be specified using the access modifiers:
 
 - [`public`](public.md): Access isn't restricted.
 - [`protected`](protected.md): Access is limited to the containing class or types derived from the containing class.
@@ -23,7 +22,8 @@ Access modifiers are keywords used to specify the declared accessibility of a me
 - [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.
 - [`private`](private.md): Access is limited to the containing type.
 - [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.
-- [`file`](file.md): The declared type is only visible in the current source file. File scoped types are generally used for source generators.
+
+In addition, a top level (non-nested) type can use the [`file`](file.md) modifier. The declared type is only visible in the current source file. File scoped types are generally used for source generators. The `file` modifier can't be combined with any access modifier.
 
  This section also introduces the following concepts:
 

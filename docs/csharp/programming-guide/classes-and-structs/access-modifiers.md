@@ -1,7 +1,7 @@
 ---
 title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
-ms.date: 10/10/2025
+ms.date: 12/15/2025
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -16,7 +16,8 @@ All types and type members have an accessibility level. The accessibility level 
 - [internal](../../language-reference/keywords/internal.md): Only code in the same assembly can access this type or member.
 - [protected internal](../../language-reference/keywords/protected-internal.md): Only code in the same assembly *or* in a derived class in another assembly can access this type or member.
 - [private protected](../../language-reference/keywords/private-protected.md): Only code in the same assembly *and* in the same class or a derived class can access the type or member.
-- [file](../../language-reference/keywords/file.md): Only code in the same file can access the type or member.
+
+Top-level (non-nested) types can use the [file](../../language-reference/keywords/file.md) modifier. The `file` modifier restricts access to code in the same source file. The `file` modifier can't be combined with any access modifier.
 
 The [`record`](../../language-reference/builtin-types/record.md) modifier on a type causes the compiler to synthesize extra members. The `record` modifier doesn't affect the default accessibility for either a `record class` or a `record struct`.
 

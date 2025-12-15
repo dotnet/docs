@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 06/23/2025
+ms.date: 12/15/2025
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -31,7 +31,7 @@ Beginning with C# 14, programs can be [*file-based apps*](./index.md#building-an
 - The `Main` method is the entry point of an executable program; it's where the program control starts and ends.
 - `Main` must be declared inside a class or struct. The enclosing `class` can be `static`.
 - `Main` must be [`static`](../../language-reference/keywords/static.md).
-- `Main` can have any [access modifier](../../programming-guide/classes-and-structs/access-modifiers.md) (except `file`).
+- `Main` can have any [access modifier](../../programming-guide/classes-and-structs/access-modifiers.md).
 - `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` can include the [`async`](../../language-reference/keywords/async.md) modifier. This rule specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program isn't treated as the first command-line argument in the `args` array, but it's the first element of the <xref:System.Environment.GetCommandLineArgs> method.

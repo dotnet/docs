@@ -197,6 +197,69 @@ dotnet user-secrets set "ApiKey" "your-secret-value" --project file.cs
 
 For more information, see [Safe storage of app secrets in development](/aspnet/core/security/app-secrets).
 
+## Launch profiles
+
+File-based apps support launch profiles for configuring how the application runs during development. Instead of placing launch profiles in `Properties/launchSettings.json`, file-based apps can use a flat launch settings file named `[ApplicationName].run.json` in the same directory as the source file.
+
+### Flat launch settings file
+
+Create a launch settings file named after your application. For example, if your file-based app is `app.cs`, create `app.run.json` in the same directory:
+
+```json
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
+
+### Multiple file-based apps
+
+When you have multiple file-based apps in the same directory, each app can have its own launch settings file:
+
+```Directory
+📁 myapps/
+├── foo.cs
+├── foo.run.json
+├── bar.cs
+└── bar.run.json
+```
+
+### Profile selection
+
+The .NET CLI selects launch profiles using the following priority:
+
+1. The profile specified by the `--launch-profile` option.
+1. The profile specified by the `DOTNET_LAUNCH_PROFILE` environment variable.
+1. The first profile defined in the launch settings file.
+
+To run with a specific profile:
+
+```dotnetcli
+dotnet run app.cs --launch-profile https
+```
+
+### Traditional launch settings
+
+File-based apps also support the traditional `Properties/launchSettings.json` file. If both files exist, the traditional location takes priority. If both files are present, the .NET CLI logs a warning to clarify which file is used.
+
 ## Shell execution
 
 Enable direct execution of file-based apps on Unix-like systems by using a shebang line and executable permissions.
@@ -263,8 +326,8 @@ The SDK caches build outputs based on:
 
 Caching improves build performance but can cause confusion when:
 
-- Changes to implicit build files might not trigger rebuilds.
-- Moving files to different directories might not invalidate cache.
+- Changes to implicit build files don't trigger rebuilds.
+- Moving files to different directories doesn't invalidate cache.
 
 ### Workarounds
 

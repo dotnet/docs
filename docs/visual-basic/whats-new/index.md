@@ -111,7 +111,7 @@ In previous versions of Visual Basic, conversion of [Double](../language-referen
 - <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
 - <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
 
-This optimization allows code to run faster - up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that the optimization affects:
+This optimization allows code to run faster—up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that the optimization affects:
 
 ```vb
 Dim s As Single = 173.7619
@@ -278,7 +278,7 @@ If you add the `Overrides` modifier to a definition, the compiler implicitly add
 
 **CObj allowed in attributes arguments**
 
-If you use `CObj(...)` in attribute constructions, the compiler returns an error saying it's not a constant.
+You can now use `CObj(...)` in attribute arguments. Previously, the compiler returned an error saying it wasn't a constant.
 
 **Declaring and consuming ambiguous methods from different interfaces**
 

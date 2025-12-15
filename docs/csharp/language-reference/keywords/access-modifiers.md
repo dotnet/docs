@@ -23,7 +23,7 @@ By using these access modifiers, you can specify the following six accessibility
 - [`private`](private.md): Access is limited to the containing type.
 - [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.
 
-In addition, a top level (non-nested) type can use the [`file`](file.md) modifier. The declared type is only visible in the current source file. File scoped types are generally used for source generators. You can't combine the `file` modifier with any access modifier.
+In addition, a top-level (non-nested) type can use the [`file`](file.md) modifier. The declared type is only visible in the current source file. File scoped types are generally used for source generators. You can't combine the `file` modifier with any access modifier.
 
  This section also introduces the following concepts:
 

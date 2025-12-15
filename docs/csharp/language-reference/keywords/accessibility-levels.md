@@ -32,11 +32,11 @@ Top-level types, which aren't nested in other types, can only have `internal` or
 Nested types, which are members of other types, can have declared accessibilities as indicated in the following table.
 
 | Members of  | Default member accessibility | Allowed declared accessibility of the member                                                                     |
-|-------------|------------------------------|-----------------------------|
+|-------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `enum`      | `public`                     | None |
 | `class`     | `private`                    | `public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal` <br /><br />`private protected` |
 | `interface` | `public`                     | `public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`\*<br /><br /> `protected internal` <br /><br />`private protected` |
-| `struct`.   | `private`                    | `public`<br /><br /> `internal`<br /><br /> `private` |
+| `struct`    | `private`                    | `public`<br /><br /> `internal`<br /><br /> `private` |
 
 \* An `interface` member with `private` accessibility must have a default implementation.
 

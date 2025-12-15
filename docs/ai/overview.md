@@ -19,6 +19,30 @@ Millions of developers use .NET to create applications that run on the web, on m
 * Runs on top of the most popular web servers and cloud platforms.
 * Provides powerful tooling to edit, debug, test, and deploy.
 
+## Supported AI providers
+
+.NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers supported by .NET AI libraries:
+
+| Provider | Microsoft.Extensions.AI | Microsoft Agent Framework | Semantic Kernel | Description |
+|----------|------------------------|---------------------------|-----------------|-------------|
+| **OpenAI** | ✅ | ✅ | ✅ | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
+| **Azure OpenAI** | ✅ | ✅ | ✅ | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
+| **Azure AI Foundry** | ✅ | ✅ | ❌ | Microsoft's managed platform for building and deploying AI agents at scale |
+| **GitHub Models** | ✅ | ✅ | ❌ | Access to models available through GitHub's AI model marketplace |
+| **Ollama** | ✅ | ✅ | ❌ | Run open-source models locally (Llama, Mistral, Phi-3, and more) |
+| **Google Gemini** | ❌ | ❌ | ✅ | Google's multimodal AI models through Semantic Kernel connectors |
+| **Amazon Bedrock** | ❌ | ❌ | ✅ | AWS's managed service for foundation models through Semantic Kernel connectors |
+
+> [!NOTE]
+> The [Microsoft.Extensions.AI](microsoft-extensions-ai.md) abstractions enable you to write code that works with any provider. You can switch between providers with minimal code changes by implementing the `IChatClient` or `IEmbeddingGenerator` interfaces for your chosen provider.
+
+For detailed information about working with specific providers, see:
+
+- [Microsoft.Extensions.AI libraries](microsoft-extensions-ai.md)
+- [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview)
+- [Semantic Kernel](/semantic-kernel/overview/)
+- [.NET + AI ecosystem tools and SDKs](dotnet-ai-ecosystem.md)
+
 ## What can you build with AI and .NET?
 
 The opportunities with AI are near endless. Here are a few examples of solutions you can build using AI in your .NET applications:

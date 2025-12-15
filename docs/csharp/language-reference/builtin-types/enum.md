@@ -97,6 +97,6 @@ For more information, see the following sections of the [C# language specificati
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
-- [Design guidelines - Enum extension members](../../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)
+- [C# programming guide - Enum extension members](../../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)
 - [`switch` expression](../operators/switch-expression.md)
 - [`switch` statement](../statements/selection-statements.md#the-switch-statement)

@@ -24,6 +24,7 @@
                 "src": "docs",
                 "dest": ".",
                 "exclude": [
+                    "docs/AGENTS.md",
                     "samples/**/*.*",
                     "**/snippets/**",
                     "**/includes/**",

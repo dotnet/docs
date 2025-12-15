@@ -17,8 +17,8 @@ This article lists key feature names for each version of Visual Basic. For detai
 
 ## Current version
 
-Visual Basic 17.9 / Visual Studio 2026\
-For new features, see [Visual Basic 17.9](#visual-basic-179).
+Visual Basic 17.13 / Visual Studio 2026\
+For new features, see [Visual Basic 17.13](#visual-basic-1713).
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
@@ -66,9 +66,9 @@ Bit-shift operators, loop variable declaration
 Visual Basic / Visual Studio .NET 2002\
 The first release of Visual Basic .NET
 
-## Visual Basic 17.9
+## Visual Basic 17.13
 
-Visual Basic 17.9 recognizes the `unmanaged` generic constraint. Visual Basic 17.9 recognizes the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute?displayProperty=nameWithType> for method resolution.
+Visual Basic 17.13 recognizes the `unmanaged` generic constraint. Visual Basic 17.13 recognizes the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute?displayProperty=nameWithType> for method resolution.
 
 ## Visual Basic 17.0
 

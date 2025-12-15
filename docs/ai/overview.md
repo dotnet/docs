@@ -29,7 +29,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 | **Azure OpenAI** | ✅ | ✅ | ✅ | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
 | **Azure AI Foundry** | ✅ | ✅ | ❌ | Microsoft's managed platform for building and deploying AI agents at scale |
 | **GitHub Models** | ✅ | ✅ | ❌ | Access to models available through GitHub's AI model marketplace |
-| **Ollama** | ✅ | ✅ | ❌ | Run open-source models locally (Llama, Mistral, Phi-3, and more) |
+| **Ollama** | ✅ | ✅ | ❌ | Run open-source models locally, for example, Llama, Mistral, and Phi-3 |
 | **Google Gemini** | ❌ | ❌ | ✅ | Google's multimodal AI models through Semantic Kernel connectors |
 | **Amazon Bedrock** | ❌ | ❌ | ✅ | AWS's managed service for foundation models through Semantic Kernel connectors |
 

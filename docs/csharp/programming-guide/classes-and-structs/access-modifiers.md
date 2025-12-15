@@ -33,7 +33,7 @@ The [`record`](../../language-reference/builtin-types/record.md) modifier on a t
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
-[!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#PublicAccess)]
+:::code language="csharp" source="./snippets/access-modifiers/accessmodifiers.cs" id="PublicAccess":::
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of the containing type constrains the accessibility of its members.
 
@@ -41,7 +41,7 @@ Multiple declarations of a [partial class or partial member](./partial-classes-a
 
 ## Class and struct accessibility
 
-Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal`, or `file` access. If you don't specify an access modifier, the default is `internal`.
+Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public` or `internal` access. If you don't specify an access modifier, the default is `internal`. You can also use the `file` modifier to restrict access to the current source file.
 
 You can declare struct members, including nested classes and structs, as `public`, `internal`, or `private`. You can declare class members, including nested classes and structs, as `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. By default, class and struct members, including nested classes and structs, have `private` access.
 
@@ -69,11 +69,9 @@ You must always declare user-defined operators as `public`. For more information
 
 To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 
-[!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
+:::code language="csharp" source="./snippets/access-modifiers/accessmodifiers.cs" id="MethodAccess":::
 
 Finalizers can't have accessibility modifiers. Members of an `enum` type are always `public`, and you can't apply access modifiers.
-
-You can use the `file` access modifier only on top-level (non-nested) type declarations.
 
 ## C# language specification
 

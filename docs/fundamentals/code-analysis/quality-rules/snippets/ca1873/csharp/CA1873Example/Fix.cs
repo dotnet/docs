@@ -13,14 +13,15 @@ partial class FixExample
     public void ProcessData(int[] data)
     {
         // Fixed: use source-generated logging.
-        LogProcessingData(string.Join(", ", data));
+        // The data array is passed directly; no expensive operation executed unless log level is enabled.
+        LogProcessingData(data);
 
         // Fixed: use source-generated logging.
         LogTraceData(data.Length, data);
     }
 
-    [LoggerMessage(Level = LogLevel.Debug, Message = "Processing {Items} items")]
-    private partial void LogProcessingData(string items);
+    [LoggerMessage(Level = LogLevel.Debug, Message = "Processing {Data} items")]
+    private partial void LogProcessingData(int[] data);
 
     [LoggerMessage(Level = LogLevel.Trace, Message = "Data: Count={Count}, Items={Items}")]
     private partial void LogTraceData(int count, int[] items);

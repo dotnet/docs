@@ -10,14 +10,15 @@ Partial Class FixExample
 
     Public Sub ProcessData(data As Integer())
         ' Fixed: use source-generated logging.
-        LogProcessingData(String.Join(", ", data))
+        ' The data array is passed directly; no expensive operation executed unless log level is enabled.
+        LogProcessingData(data)
 
         ' Fixed: use source-generated logging.
         LogTraceData(data.Length, data)
     End Sub
 
-    <LoggerMessage(Level:=LogLevel.Debug, Message:="Processing {Items} items")>
-    Private Partial Sub LogProcessingData(items As String)
+    <LoggerMessage(Level:=LogLevel.Debug, Message:="Processing {Data} items")>
+    Private Partial Sub LogProcessingData(data As Integer())
     End Sub
 
     <LoggerMessage(Level:=LogLevel.Trace, Message:="Data: Count={Count}, Items={Items}")>

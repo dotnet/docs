@@ -56,7 +56,7 @@ Protecting your privacy is important to us. If you suspect the telemetry is coll
 
 For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
-To see the telemetry data captured by SDK version, refer to the following tabs:
+The following tabs show the telemetry data captured by SDK version:
 
 # [.NET 10](#tab/dotnet10)
 
@@ -203,7 +203,7 @@ Starting with .NET Core 2.1.100 SDK, the SDK hashes all these values except for 
 
 ### Template engine telemetry
 
-Starting with .NET Core 2.1.100 SDK, the `dotnet new` template instantiation command collects extra data for Microsoft-authored templates, including the following data:
+Starting with .NET Core 2.1.100 SDK, the `dotnet new` template instantiation command collects extra data for Microsoft-authored templates:
 
 * `--framework`
 * `--auth`
@@ -260,7 +260,7 @@ Because of this, custom builds of the .NET SDK shouldn't be located in directori
 
 To detect if the .NET CLI is running in a continuous integration environment, the .NET CLI checks for the presence and values of several well-known environment variables that common CI providers set.
 
-The following list shows the environment variables and how the .NET CLI uses their values. In every case, the .NET CLI never collects the value of the environment variable. It only uses the value to set a boolean flag.
+The following list shows the environment variables and how the .NET CLI uses their values. The .NET CLI doesn't collect the value of any environment variable; it only uses the value to set a boolean flag.
 
 | Variable(s) | Provider | Action |
 | ----------- | -------- | ------ |
@@ -280,7 +280,7 @@ The following list shows the environment variables and how the .NET CLI uses the
 
 To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI checks for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 
-The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables aren't collected - they're only used to identify the agent type.
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables aren't collected—they're only used to identify the agent type.
 
 | LLM agent | Variable | Value |
 | --------- | ----------- | ----- |

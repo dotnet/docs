@@ -196,7 +196,25 @@ When the upgrade finishes, Copilot shows next steps in the chat response to guid
 The following example shows completed tasks for an ASP.NET Core project upgrade:
 
 ```markdown
-<!-- TODO -->
+# MvcMovieNet6 .NET 10 Upgrade Tasks
+
+## Overview
+
+This document tracks the execution of the MvcMovieNet6 solution upgrade from .NET 6 to .NET 10. All projects will be upgraded simultaneously in a single atomic operation.
+
+**Progress**: 3/3 tasks complete (100%) ![0%](https://progress-bar.xyz/100)
+
+---
+
+## Tasks
+
+### [✓] TASK-001: Verify prerequisites *(Completed: 2025-12-12 21:09)*
+**References**: Plan §Phase 0
+
+- [✓] (1) Verify .NET 10 SDK installed per Plan §Phase 0
+- [✓] (2) .NET 10 SDK meets minimum requirements (**Verify**)
+
+...
 ```
 
 To verify the upgrade:

@@ -189,25 +189,25 @@ To compile and run the application from a command prompt, follow these steps:
 
 1. Paste the following code into any text editor, and then save the file as  a text file with the name *Factorial.cs*.
 
-    :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
+  :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
 
-    At the beginning of the `Main` method, the program tests if input arguments weren't supplied by comparing the length of the `args` argument to `0` and displays the help if no arguments are found.<br/>
-    If arguments are provided (`args.Length` is greater than 0), the program tries to convert the input arguments to numbers. This example throws an exception if the argument isn't a number.<br/>
-    After factorial is calculated (stored in `result` variable of type `long`), the verbose result is printed depending on the `result` variable.
+  At the beginning of the `Main` method, the program tests if input arguments weren't supplied by comparing the length of the `args` argument to `0` and displays the help if no arguments are found.<br/>
+  If arguments are provided (`args.Length` is greater than 0), the program tries to convert the input arguments to numbers. This example throws an exception if the argument isn't a number.<br/>
+  After factorial is calculated (stored in `result` variable of type `long`), the verbose result is printed depending on the `result` variable.
 
 1. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 
 1. To compile the application, enter the following command:
-  
-     `dotnet build`  
-  
-     If your application has no compilation errors, the build process creates a binary file named *Factorial.dll*.
-  
-4. Enter the following command to calculate the factorial of 3:
-  
-     `dotnet run -- 3`  
-  
-5. If you enter 3 on the command line as the program's argument, the output reads: `The factorial of 3 is 6.`
+
+   `dotnet build`
+
+   If your application has no compilation errors, the build process creates a binary file named *Factorial.dll*.
+
+1. Enter the following command to calculate the factorial of 3:
+
+   `dotnet run -- 3`
+
+1. If you enter 3 on the command line as the program's argument, the output reads: `The factorial of 3 is 6.`
 
 > [!NOTE]
 > When running an application in Visual Studio, specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).

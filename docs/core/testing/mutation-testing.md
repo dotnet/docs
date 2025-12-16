@@ -121,7 +121,7 @@ After running Stryker.NET, you'll receive a report that categorizes mutants as *
 - **Timeout**: These mutations caused your code to hang or exceed the allowed time. This can happen with infinite loops or unoptimized paths. Investigate the code logic or increase the timeout threshold if needed.
 
 > [!NOTE]
-> Don't chase a 100% mutation score. Instead, focus on high risk or business critical areas where undetected bugs would be most costly.
+> Don't chase a 100% mutation score. Instead, focus on high-risk or business-critical areas where undetected bugs would be most costly.
 
 ## Adding mutation testing to your CI/CD workflow
 

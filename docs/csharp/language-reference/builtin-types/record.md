@@ -1,7 +1,7 @@
 ---
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-ms.date: 08/15/2025
+ms.date: 12/16/2025
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -141,6 +141,9 @@ The `with` expression can set positional properties or properties created by usi
 The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
 To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
+
+> [!IMPORTANT]
+> The compiler also synthesizes a public parameterless constructor when the record lacks other constructors, including the primary constructor. This parameterless constructor initializes all fields to their default values. Without this synthesized constructor, no public constructor is available.
 
 If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 

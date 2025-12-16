@@ -15,4 +15,4 @@ Other options that were available before are still available to use with their r
 Separate help for each subcommand is available via the `-h` or `--help` option: `dotnet new <subcommand> --help` lists all supported options for the subcommand.
 
 Additionally, tab completion is now available for `dotnet new`. It supports completion for installed template names and for the options a selected template provides.
-To activate tab completion for the .NET SDK, see [Enable tab completion](../docs/core/tools/enable-tab-autocomplete.md).
+To activate tab completion for the .NET SDK, see [Enable tab completion](../enable-tab-autocomplete.md).

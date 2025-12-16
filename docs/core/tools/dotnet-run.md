@@ -49,9 +49,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ### Implicit restore
 
-[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+[!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -67,13 +67,13 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
-- [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
-- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <KEY=VALUE>`**
 
@@ -109,7 +109,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--launch-profile <NAME>`**
 
@@ -135,9 +135,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
-- [!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
+- [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
-- [!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`--project <PATH>`**
 
@@ -166,13 +166,13 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
-- [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+- [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
-- [!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Environment variables
 

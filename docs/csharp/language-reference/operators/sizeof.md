@@ -30,7 +30,7 @@ The expressions presented in the following table are evaluated at compile time t
 | `sizeof(decimal)` | 16             |
 | `sizeof(bool)`    |  1             |
 
-The size of a built-in unmanaged type is a compile-time constant.
+The size of a built-in, unmanaged type is a compile-time constant.
 
 In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` as follows:
 

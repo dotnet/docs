@@ -27,7 +27,7 @@ dotnet new search [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language <langu
 The `dotnet new search` command searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -72,7 +72,7 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-lang|--language <language>`**
 

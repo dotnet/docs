@@ -102,7 +102,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 #### Arguments
 
@@ -133,9 +133,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Short form `-a` available in .NET SDK versions earlier than 7.
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
 - **`--blame`**
 
@@ -180,7 +180,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit. and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
-- [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
@@ -194,7 +194,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
-- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <NAME="VALUE">`**
 
@@ -208,9 +208,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Filters tests in the current project using the given expression. Only tests that match the filter expression are run. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`-l|--logger <LOGGER>`**
 
@@ -245,7 +245,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
     If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
 
-- [!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`--results-directory <RESULTS_DIR>`**
 
@@ -270,9 +270,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   List the discovered tests instead of running the tests.
 
-- [!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 - **`args`**
 
@@ -492,15 +492,15 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the maximum number of test modules that can run in parallel. The default is <xref:System.Environment.ProcessorCount?displayProperty=nameWithType>.
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
   The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
 
-- [!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -511,7 +511,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   > [!NOTE]
   > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--no-build`**
 
@@ -552,7 +552,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
   More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`args`**
 

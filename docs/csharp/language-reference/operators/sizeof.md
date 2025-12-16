@@ -10,9 +10,9 @@ helpviewer_keywords:
 ---
 # sizeof operator - determine the memory needs for a given type
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a builtin [unmanaged type](../builtin-types/unmanaged-types.md).
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md).
 
-The expressions presented in the following table are evaluated in compile time to the corresponding constant values and don't require an unsafe context:
+The expressions presented in the following table are evaluated at compile time to the corresponding constant values and don't require an unsafe context:
 
 | Expression        | Constant value |
 |-------------------|----------------|
@@ -30,11 +30,11 @@ The expressions presented in the following table are evaluated in compile time t
 | `sizeof(decimal)` | 16             |
 | `sizeof(bool)`    |  1             |
 
-The size of a builtin unmanaged type is a compile time constant.
+The size of a built-in unmanaged type is a compile-time constant.
 
-In [unsafe](../keywords/unsafe.md) code you can use `sizeof` as follows:
+In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` as follows:
 
-- A type parameter that is constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type returns the size of that unmanaged type at runtime.
+- A type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type returns the size of that unmanaged type at runtime.
 - A managed type or a pointer type returns the size of the reference or pointer, not the size of the object it refers to.
 
 The following example demonstrates the usage of the `sizeof` operator:

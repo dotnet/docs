@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Records (C# reference)
 
-Use the `record` modifier to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. The `record class` syntax acts as a synonym to clarify a reference type, and `record struct` defines a [value type](value-types.md) with similar functionality.
+The `record` modifier provides built-in functionality for encapsulating data. The `record class` and `record` syntax define [reference types](reference-types.md). The `record struct` syntax defines a [value type](value-types.md).
 
 When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
 
@@ -88,7 +88,7 @@ Properties that the compiler generates from positional parameters are `public`. 
 
 A *positional record class* and a *positional readonly record struct* declare init-only properties. A *positional record struct* declares read-write properties. You can override either of those defaults, as shown in the previous section.
 
-Immutability is useful when you need a data-centric type to be thread-safe or when you depend on a hash code remaining the same in a hash table. However, immutability isn't appropriate for all data scenarios. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
+Immutability might be useful when you need a data-centric type to be thread-safe or when you depend on a hash code remaining the same in a hash table. However, immutability isn't appropriate for all data scenarios. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
 
 Init-only properties, whether created from positional parameters (`record class` and `readonly record struct`) or by specifying `init` accessors, have *shallow immutability*. After initialization, you can't change the value of value-type properties or the reference of reference-type properties. However, the data that a reference-type property refers to can be changed. The following example shows that the content of a reference-type immutable property (an array in this case) is mutable:
 
@@ -114,19 +114,19 @@ The following example illustrates value equality of record types:
 
 To implement value equality, the compiler synthesizes several methods, including:
 
-* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It's an error if the override is declared explicitly.
+* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It's an error if you declare the override explicitly.
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
-* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. This method can be declared explicitly.
+* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. You can declare this method explicitly.
 
-* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
+* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if you declare the override explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
-* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
+* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. You can declare this method explicitly.
 
-* Overrides of [operator `==`](../operators/equality-operators.md#equality-operator-) and [operator `!=`](../operators/equality-operators.md#inequality-operator-). It's an error if the operators are declared explicitly.
+* Overrides of [operator `==`](../operators/equality-operators.md#equality-operator-) and [operator `!=`](../operators/equality-operators.md#inequality-operator-). It's an error if you declare the operators explicitly.
 
-* If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
+* If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. You can declare this property explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
 
 The compiler doesn't synthesize a method when a record type has a method that matches the signature of a synthesized method and the method is allowed to be declared explicitly.
 
@@ -143,7 +143,7 @@ The result of a `with` expression is a *shallow copy*. For a reference property,
 To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that the `with` expression includes.
 
 > [!IMPORTANT]
-> The compiler also synthesizes a public parameterless constructor when the record lacks other constructors, including the primary constructor. This parameterless constructor initializes all fields to their default values. Without this synthesized constructor, no public constructor is available.
+> The compiler also synthesizes a public parameterless constructor when the record lacks a primary constructor or any user-defined constructors. This parameterless constructor initializes all fields to their default values. Without this synthesized constructor, no public constructor is available.
 
 If you need different copying behavior, write your own copy constructor in a `record class`. If you do, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`. Otherwise, make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 
@@ -172,7 +172,7 @@ The `Distance` computation isn't expensive to compute on each access. However, s
 
 ## Built-in formatting for display
 
-Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string of the following format:
+Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string in the following format:
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 

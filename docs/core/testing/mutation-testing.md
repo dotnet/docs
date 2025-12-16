@@ -126,12 +126,17 @@ After running Stryker.NET, you'll receive a report that categorizes mutants as *
 ## Adding mutation testing to your CI/CD workflow
 
 You can seamlessly integrate mutation testing into your continuous integration and delivery workflows. For instance, Stryker.NET can be configured to run within your Azure Pipelines or GitHub Actions setup, allowing you to enforce quality thresholds as part of your automated testing process.
-```
+
+Add the following to your `stryker-config.json` file to set mutation score thresholds:
+
+```json
+{
   "thresholds": {
     "high": 85,
     "low": 65,
     "break": 0
   }
+}
 ```
 
 ## Customization

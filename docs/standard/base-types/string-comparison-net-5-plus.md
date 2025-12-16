@@ -331,6 +331,38 @@ ReadOnlySpan<char> span = s.AsSpan();
 if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } // ordinal comparison
 ```
 
+## Efficient multi-value string comparisons
+
+When comparing a string against a fixed set of known values repeatedly, consider using `SearchValues<T>` instead of chained comparisons or LINQ-based approaches.
+`SearchValues<T>` can precompute internal lookup structures and optimize the comparison logic based on the provided values.
+
+### Recommended usage
+
+Create and cache the `SearchValues<string>` instance once, then reuse it for comparisons:
+
+```cs
+using System.Buffers;
+
+private static readonly SearchValues<string> Commands = SearchValues.Create(new[] { "start", "run", "go" }, StringComparison.OrdinalIgnoreCase);
+
+if (Commands.Contains(command))
+{
+    /* do something */
+}
+```
+### Avoid repeated creation
+Avoid creating `SearchValues` instances inside hot paths or per comparison, as the creation step can be relatively expensive:
+
+```cs
+// Avoid this pattern
+if (SearchValues.Create(new[] { "start", "run", "go" }, StringComparison.OrdinalIgnoreCase).Contains(command))
+{
+ /* do something */
+}
+```
+Caching and reusing the instance ensures optimal performance.
+
+
 ## See also
 
 - [Globalization breaking changes in .NET 5](../../core/compatibility/5.0.md#globalization)

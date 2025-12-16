@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `property-declaration-errors.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to declaring and defining properties.
+- For the duration of this chat, all references to "destination file" refer to `pattern-matching-warnings.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to list patterns, and other pattern matching features.
 
 The destination file already contains a skeleton for the final output.
 

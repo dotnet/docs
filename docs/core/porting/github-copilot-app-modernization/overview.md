@@ -36,6 +36,9 @@ Before using GitHub Copilot app modernization, you need these items:
 
 [!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
+> [!NOTE]
+> GitHub Copilot app modernization is supported in Visual Studio Code through the [marketplace extension](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure).
+
 ## Upgrade .NET projects
 
 The modernization agent supports upgrading projects coded in C#. The agent supports the following project types:

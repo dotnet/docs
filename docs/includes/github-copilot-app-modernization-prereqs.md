@@ -11,7 +11,7 @@ ms.topic: include
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
 
   - GitHub Copilot
-  - GitHub Copilot app modernization for .NET
+  - GitHub Copilot app modernization
 
 - GitHub Copilot Subscription (paid or free).
 

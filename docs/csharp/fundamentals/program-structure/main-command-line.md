@@ -128,7 +128,7 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 - `static Task<int> Main(string[])` results in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`.
 
 > [!NOTE]
->If the examples use the `async` modifier on the `Main` method, the compiler generates the same code.
+> If the examples use the `async` modifier on the `Main` method, the compiler generates the same code.
 
 ## Command-line arguments
 

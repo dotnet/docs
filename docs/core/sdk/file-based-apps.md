@@ -104,9 +104,9 @@ Compile your file-based app by using the `dotnet build` command:
 dotnet build file.cs
 ```
 
-The SDK generates a virtual project and builds your application. The default path for the build output is `C:\Users\<username>\AppData\Local\Temp\dotnet\runfile\<appname>-<appfilesha>\bin\debug\`.
+The SDK generates a virtual project and builds your application. By default, the build output goes to the system's temporary directory under `<temp>/dotnet/runfile/<appname>-<appfilesha>/bin/<configuration>/`.
 
-Use the `--output` option with the `dotnet build` command to specify a different path. Alternatively, set the `OutoutPath` property in the file by using the directive: `#:property OutputPath=./output`.
+Use the `--output` option with the `dotnet build` command to specify a different path. To define a new default output path, set the `OutputPath` property at the top of your file by using the directive: `#:property OutputPath=./output`.
 
 ### Clean build outputs
 
@@ -154,7 +154,7 @@ Convert your file-based app to a traditional project by using the `dotnet projec
 dotnet project convert file.cs
 ```
 
-This command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK and properties. The `#:` directives are removed, and turned into elements in the corresponding `.csproj` file. The original `.cs` file is left untouched.
+This command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK items, properties, and package references based on the original file's `#:` directives.  Both files are placed in a directory named for the application next to the original `.cs` file, which is left untouched.
 
 ### Restore dependencies
 
@@ -182,7 +182,7 @@ Different SDKs include other file types:
 
 ## Native AOT publishing
 
-File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup, and a smaller memory footprint.
+File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup and a smaller memory footprint.
 
 If you need to disable native AOT, use the following setting:
 
@@ -301,7 +301,7 @@ Run directly:
 ```
 
 > [!NOTE]
-> Adding a shebang requires that you use `LF` line endings instead of `CRLF` and that the file doesn't contain a BOM.
+> Use `LF` line endings instead of `CRLF` when you add a shebang. Don't include a BOM in the file.
 
 ## Implicit build files
 
@@ -338,7 +338,7 @@ The SDK caches build outputs based on:
 - Source file content.
 - Directive configuration.
 - SDK version.
-- Implicit build files existence and content.
+- Implicit build file existence and content.
 
 Caching improves build performance but can cause confusion when:
 

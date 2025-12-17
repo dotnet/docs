@@ -104,7 +104,9 @@ Compile your file-based app by using the `dotnet build` command:
 dotnet build file.cs
 ```
 
-The SDK generates a virtual project and builds your application. The default path for the build output is `C:\Users\<username>\AppData\Local\Temp\dotnet\runfile\<appname>-<appfilesha>\bin\debug\`. Use the `--output` option to specify a different path.
+The SDK generates a virtual project and builds your application. The default path for the build output is `C:\Users\<username>\AppData\Local\Temp\dotnet\runfile\<appname>-<appfilesha>\bin\debug\`.
+
+Use the `--output` option with the `dotnet build` command to specify a different path. Alternatively, set the `OutoutPath` property in the file-based app by using the directive: `#:property OutputPath=./output`
 
 ### Clean build outputs
 
@@ -132,7 +134,7 @@ Use the `dotnet publish` command to create an independent executable:
 dotnet publish file.cs
 ```
 
-The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application. Use the `--output` option to specify a different path.
+The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application. Use the `--output` option with the `dotnet publish` command to specify a different path.
 
 ### Package as tool
 
@@ -152,7 +154,7 @@ Convert your file-based app to a traditional project by using the `dotnet projec
 dotnet project convert file.cs
 ```
 
-The command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK and properties. The `#:` directives are removed, and turned into elements in the corresponding `.csproj` file. The original `.cs` file is left untouched.
+This command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK and properties. The `#:` directives are removed, and turned into elements in the corresponding `.csproj` file. The original `.cs` file is left untouched.
 
 ### Restore dependencies
 

@@ -45,7 +45,7 @@ Complete the following steps to create a .NET console app.
 
 ## Create the AI service
 
-1. To provision an Azure OpenAI service and model, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource) article.
+1. To provision an Azure OpenAI service and model, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource) article. For this quickstart, you need to provision two models: `gpt-4o` and `text-embedding-3-small`.
 
 1. From a terminal or command prompt, navigate to the root of your project directory.
 
@@ -54,18 +54,21 @@ Complete the following steps to create a .NET console app.
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_API_KEY <your-Azure-OpenAI-key>
+    dotnet user-secrets set AZURE_OPENAI_API_KEY <your-Azure-OpenAI-API-key>
     ```
 
 ## Open the app in an editor
 
-1. Open the app in Visual Studio Code (or your editor of choice).
+Open the app in Visual Studio Code (or your editor of choice).
 
-   ```bash
-   code .
-   ```
+```bash
+code .
+```
 
-1. Copy the [sample.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/snippets/process-data/sample.md) file to your project directory. Configure the project to copy this file to the output directory. If you're using Visual Studio, right-click on the file in Solution Explorer, select **Properties**, and then set **Copy to Output Directory** to **Copy if newer**.
+## Create the sample data
+
+1. Copy the [sample.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/snippets/process-data/sample.md) file to your project directory.
+1. Configure the project to copy this file to the output directory. If you're using Visual Studio, right-click on the file in Solution Explorer, select **Properties**, and then set **Copy to Output Directory** to **Copy if newer**.
 
 ## Add the app code
 
@@ -101,7 +104,7 @@ The data ingestion pipeline consists of several components that work together to
 
    :::code language="csharp" source="snippets/process-data/Program.cs" id="ConfigureEmbeddingGenerator":::
 
-   Embeddings are numerical representations of the semantic meaning of text, which enables vector similarity search.
+   [Embeddings](../conceptual/embeddings.md) are numerical representations of the semantic meaning of text, which enables vector similarity search.
 
 1. Add code to configure the chunker that splits documents into semantic chunks:
 
@@ -139,32 +142,6 @@ The data ingestion pipeline consists of several components that work together to
 
    The search functionality converts user queries into embeddings and finds the most semantically similar chunks in the vector store.
 
-## Create sample data
-
-1. Create a `data` folder in your project directory:
-
-   ```bash
-   mkdir data
-   ```
-
-1. Create a sample Markdown file in the `data` folder. For example, create a file named `sample.md` with the following content:
-
-   ```markdown
-   # Data Ingestion
-
-   Data ingestion is the process of collecting and preparing data for AI applications.
-
-   ## Key Concepts
-
-   - Extract data from various sources
-   - Transform data into usable formats
-   - Load data into storage systems
-
-   ## Benefits
-
-   Data ingestion enables AI applications to work with custom data, improving accuracy and relevance.
-   ```
-
 ## Run the app
 
 1. Use the `dotnet run` command to run the app:
@@ -173,7 +150,7 @@ The data ingestion pipeline consists of several components that work together to
    dotnet run
    ```
 
-   The app processes all Markdown files in the `data` directory and displays the processing status for each document. Once processing is complete, you can enter natural language questions to search the processed content.
+   The app processes all Markdown files in the `./data` directory and displays the processing status for each document. Once processing is complete, you can enter natural language questions to search the processed content.
 
 1. Enter a question at the prompt to search the data:
 

@@ -19,7 +19,8 @@ class DataIngestionExample
         // </ConfigureReader>
 
         // <ConfigureLogging>
-        using ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddSimpleConsole());
+        using ILoggerFactory loggerFactory =
+            LoggerFactory.Create(builder => builder.AddSimpleConsole());
         // </ConfigureLogging>
 
         // <ConfigureChatClient>
@@ -47,11 +48,12 @@ class DataIngestionExample
         {
             // Enricher failures should not fail the whole ingestion pipeline,
             // as they are best-effort enhancements.
-            // This logger factory can be used to create loggers to log such failures.
+            // This logger factory can create loggers to log such failures.
             LoggerFactory = loggerFactory
         };
 
-        IngestionDocumentProcessor imageAlternativeTextEnricher = new ImageAlternativeTextEnricher(enricherOptions);
+        IngestionDocumentProcessor imageAlternativeTextEnricher =
+            new ImageAlternativeTextEnricher(enricherOptions);
         // </ConfigureDocumentProcessor>
 
         // <ConfigureEmbeddingGenerator>
@@ -68,16 +70,17 @@ class DataIngestionExample
             OverlapTokens = 0
         };
 
-        IngestionChunker<string> chunker = new SemanticSimilarityChunker(embeddingGenerator, chunkerOptions);
+        IngestionChunker<string> chunker =
+            new SemanticSimilarityChunker(embeddingGenerator, chunkerOptions);
         // </ConfigureChunker>
 
         // <ConfigureChunkProcessor>
-        // Configure chunk processor to generate summaries for each chunk
+        // Configure chunk processor to generate summaries for each chunk.
         IngestionChunkProcessor<string> summaryEnricher = new SummaryEnricher(enricherOptions);
         // </ConfigureChunkProcessor>
 
         // <ConfigureVectorStore>
-        // Configure SQLite Vector Store
+        // Configure SQLite Vector Store.
         using SqliteVectorStore vectorStore = new(
             "Data Source=vectors.db;Pooling=false",
             new()
@@ -86,16 +89,16 @@ class DataIngestionExample
             });
 
         // The writer requires the embedding dimension count to be specified.
-        // For Azure OpenAI's `text-embedding-ada-002`, the dimension count is 1536.
         using VectorStoreWriter<string> writer = new(
             vectorStore,
-            dimensionCount: 1536,
+            dimensionCount: 1024,
             new VectorStoreWriterOptions { CollectionName = "data" });
         // </ConfigureVectorStore>
 
         // <ComposePipeline>
         // Compose data ingestion pipeline
-        using IngestionPipeline<string> pipeline = new(reader, chunker, writer, loggerFactory: loggerFactory)
+        using IngestionPipeline<string> pipeline =
+            new(reader, chunker, writer, loggerFactory: loggerFactory)
         {
             DocumentProcessors = { imageAlternativeTextEnricher },
             ChunkProcessors = { summaryEnricher }
@@ -107,13 +110,15 @@ class DataIngestionExample
             new DirectoryInfo("./data"),
             searchPattern: "*.md"))
         {
-            Console.WriteLine($"Completed processing '{result.DocumentId}'. Succeeded: '{result.Succeeded}'.");
+            Console.WriteLine($"Completed processing '{result.DocumentId}'. " +
+                $"Succeeded: '{result.Succeeded}'.");
         }
         // </ProcessDocuments>
 
         // <SearchVectorStore>
         // Search the vector store collection and display results
-        VectorStoreCollection<object, Dictionary<string, object?>> collection = writer.VectorStoreCollection;
+        VectorStoreCollection<object, Dictionary<string, object?>> collection =
+            writer.VectorStoreCollection;
 
         while (true)
         {
@@ -125,7 +130,8 @@ class DataIngestionExample
             }
 
             Console.WriteLine("Searching...\n");
-            await foreach (VectorSearchResult<Dictionary<string, object?>> result in collection.SearchAsync(searchValue, top: 3))
+            await foreach (VectorSearchResult<Dictionary<string, object?>> result in
+                collection.SearchAsync(searchValue, top: 3))
             {
                 Console.WriteLine($"Score: {result.Score}\n\tContent: {result.Record["content"]}");
             }

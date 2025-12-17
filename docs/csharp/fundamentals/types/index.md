@@ -56,7 +56,7 @@ C# provides a standard set of built-in types. These types represent integers, fl
 
 ## Custom types
 
-Create structural types by using [tuples](../../language-reference/builtin-types/value-tuples.md) when your app needs to define structural types. These types provide a structure that holds multiple members. Tuples have limited behavior. They're a container for values. These are the simplest types you can create. 
+Create structural types by using [tuples](../../language-reference/builtin-types/value-tuples.md) when your app needs to define structural types. These types provide a structure that holds multiple members. Tuples have limited behavior. They're a container for values. These are the simplest types you can create. You might later decide you need behavior. In that case, you can convert a tuple to either a `struct` or `class`.
 
 Use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. You make other types available by explicitly adding a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables and constants of the types declared in that assembly in source code.
 

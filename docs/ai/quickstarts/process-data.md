@@ -67,7 +67,7 @@ code .
 
 ## Create the sample data
 
-1. Copy the [sample.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/snippets/process-data/sample.md) file to your project directory.
+1. Copy the [sample.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/snippets/process-data/data/sample.md) file to your project directory.
 1. Configure the project to copy this file to the output directory. If you're using Visual Studio, right-click on the file in Solution Explorer, select **Properties**, and then set **Copy to Output Directory** to **Copy if newer**.
 
 ## Add the app code

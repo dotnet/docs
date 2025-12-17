@@ -31,7 +31,7 @@ class DataIngestionExample
 
         string endpoint = config["AZURE_OPENAI_ENDPOINT"];
         string apiKey = config["AZURE_OPENAI_API_KEY"];
-        string model = "gpt-4o";
+        string chatModel = "gpt-4o";
         string embeddingModel = "text-embedding-3-small";
 
         AzureOpenAIClient azureClient = new(
@@ -39,7 +39,7 @@ class DataIngestionExample
             new AzureKeyCredential(apiKey));
 
         IChatClient chatClient =
-            azureClient.GetChatClient(model).AsIChatClient();
+            azureClient.GetChatClient(chatModel).AsIChatClient();
         // </ConfigureChatClient>
 
         // <ConfigureDocumentProcessor>
@@ -64,7 +64,7 @@ class DataIngestionExample
 
         // <ConfigureChunker>
         // Configure chunker to split text into semantic chunks.
-        IngestionChunkerOptions chunkerOptions = new(TiktokenTokenizer.CreateForModel(model))
+        IngestionChunkerOptions chunkerOptions = new(TiktokenTokenizer.CreateForModel(chatModel))
         {
             MaxTokensPerChunk = 2000,
             OverlapTokens = 0

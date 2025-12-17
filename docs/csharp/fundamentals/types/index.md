@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # The C# type system
 
-C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. In most cases, C# uses a *normative type system*. A *normative type system* uses names to identify any type. In C#, `struct`, `class`, and `interface` types, including `record` types, are all identified by their name. Every method declaration specifies a name, the type, and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. C# primarily uses a *normative type system*. A *normative type system* uses names to identify any type. In C#, `struct`, `class`, and `interface` types, including `record` types, are all identified by their name. Every method declaration specifies a name, the type, and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
 
 C# also supports *structural types*, such as tuples and anonymous types. *Structural types* are defined by the names and types of each member, and the order of members in an expression. Structural types don't have unique names.
 
@@ -56,17 +56,17 @@ C# provides a standard set of built-in types. These types represent integers, fl
 
 ## Custom types
 
-Create structural types by using [tuples](../../language-reference/builtin-types/value-tuples.md) when your app needs to define structural types. These types provide a structure that holds multiple members. Tuples have limited behavior. They're a container for values. These are the simplest types you can create. You might later decide you need behavior. In that case, you can convert a tuple to either a `struct` or `class`.
+Create structural types by using [tuples](../../language-reference/builtin-types/value-tuples.md) for storing related data members. These types provide a structure that holds multiple members. Tuples have limited behavior. They're a container for values. These are the simplest types you can create. You might later decide you need behavior. In that case, you can convert a tuple to either a `struct` or `class`.
 
 Use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. You make other types available by explicitly adding a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables and constants of the types declared in that assembly in source code.
 
-One of the first decisions you make when defining a type is deciding which construct to use for your type. The following list helps make that initial decision. There's overlap in the choices. In most scenarios, more than one option is a reasonable choice.
+One of the first decisions you make when defining a type is deciding which construct to use for your type. The following list helps make that initial decision. Some choices overlap. In most scenarios, more than one option is a reasonable choice.
 
-- If the data type is ephemeral, not part of your app domain, and doesn't include behavior, use a structural type.
+- If the data type isn't part of your app domain and doesn't include behavior, use a structural type.
 - If the data storage size is small, no more than 64 bytes, choose a `struct` or `record struct`.
 - If the type is immutable, or you want nondestructive mutation, choose a `struct` or `record struct`.
 - If your type should have value semantics for equality, choose a `record class` or `record struct`.
-- If the type is primarily used for storing data, with minimal behavior, choose a `record class` or `record struct`.
+- If the type is primarily for storing data, with minimal behavior, choose a `record class` or `record struct`.
 - If the type is part of an inheritance hierarchy, choose a `record class` or a `class`.
 - If the type uses polymorphism, choose a `class`.
 - If the primary purpose is behavior, choose a `class`.
@@ -75,7 +75,14 @@ You can also choose an `interface` to model a *contract*: behavior described by 
 
 ## The common type system
 
-The common type system supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), ultimately derive from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md). Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `record struct` keywords are value types; all the built-in numeric types are `structs`. Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
+The common type system supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy.
+
+All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), ultimately derive from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md).
+
+Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types:
+
+- Types that you define by using the `struct` or `record struct` keywords are value types. All the built-in numeric types are `structs`.
+- Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
 
 > [!NOTE]
 > The most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
@@ -94,7 +101,7 @@ In general, use classes to model more complex behavior. Classes typically store 
 
 ### Value types
 
-Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values. The memory for a struct is allocated inline in whatever context the variable is declared. There's no separate heap allocation or garbage collection overhead for value-type variables. You can declare `record struct` types that are value types and include the synthesized members for [records](../../language-reference/builtin-types/record.md).
+Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values. The memory for a struct is allocated inline in whatever context the variable is declared. You can declare `record struct` types that are value types and include the synthesized members for [records](../../language-reference/builtin-types/record.md).
 
 Two categories of value types exist: `struct` and `enum`.
 
@@ -106,7 +113,7 @@ But you declare and assign values to them as if they're simple non-aggregate typ
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="NonAggregateTypes":::
 
-Value types are *sealed*. You can't derive a type from any value type, for example <xref:System.Int32?displayProperty=nameWithType>. You can't define a struct to inherit from any user-defined class or struct because a struct can only inherit from <xref:System.ValueType?displayProperty=nameWithType>. However, a struct can implement one or more interfaces. You can cast a struct type to any interface type that it implements. This cast causes a *boxing* operation to wrap the struct inside a reference type object on the managed heap. Boxing operations occur when you pass a value type to a method that takes a <xref:System.Object?displayProperty=nameWithType> or any interface type as an input parameter. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
+Value types are *sealed*. You can't derive a type from any value type, such as <xref:System.Int32?displayProperty=nameWithType>. You can't define a struct to inherit from any user-defined class or struct because a struct can only inherit from <xref:System.ValueType?displayProperty=nameWithType>. However, a struct can implement one or more interfaces. You can cast a struct type to any interface type that it implements. This cast causes a *boxing* operation to wrap the struct inside a reference type object on the managed heap. Boxing operations occur when you pass a value type to a method that takes a <xref:System.Object?displayProperty=nameWithType> or any interface type as an input parameter. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 Use the [struct](../../language-reference/builtin-types/struct.md) keyword to create your own custom value types. Typically, a struct is used as a container for a small set of related variables, as shown in the following example:
 

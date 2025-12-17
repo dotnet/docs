@@ -622,4 +622,4 @@ This may be thrown when the runtime responds with an error to a given command.
 public class ProfilerAlreadyActiveException : ServerErrorException
 ```
 
-This may be thrown when a profiler is already loaded into the target runtime and another attach is attempted.
+This exception is thrown when a profiler is already loaded into the target runtime and another attach is attempted.

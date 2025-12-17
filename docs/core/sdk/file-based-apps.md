@@ -106,7 +106,7 @@ dotnet build file.cs
 
 The SDK generates a virtual project and builds your application. The default path for the build output is `C:\Users\<username>\AppData\Local\Temp\dotnet\runfile\<appname>-<appfilesha>\bin\debug\`.
 
-Use the `--output` option with the `dotnet build` command to specify a different path. Alternatively, set the `OutoutPath` property in the file-based app by using the directive: `#:property OutputPath=./output`
+Use the `--output` option with the `dotnet build` command to specify a different path. Alternatively, set the `OutoutPath` property in the file by using the directive: `#:property OutputPath=./output`.
 
 ### Clean build outputs
 

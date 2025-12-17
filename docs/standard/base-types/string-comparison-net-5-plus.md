@@ -333,7 +333,7 @@ if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } /
 
 ## Efficient multi-value string comparisons
 
-When comparing a string against a fixed set of known values repeatedly, consider using `SearchValues<T>` instead of chained comparisons or LINQ-based approaches.
+Starting with .NET 8, when comparing a string against a fixed set of known values repeatedly, consider using <xref:System.Buffers.SearchValues`1> instead of chained comparisons or LINQ-based approaches.
 `SearchValues<T>` can precompute internal lookup structures and optimize the comparison logic based on the provided values.
 
 ### Recommended usage
@@ -361,7 +361,6 @@ if (SearchValues.Create(new[] { "start", "run", "go" }, StringComparison.Ordinal
 }
 ```
 Caching and reusing the instance ensures optimal performance.
-
 
 ## See also
 

@@ -70,7 +70,7 @@ Run a file-based app by using the `dotnet run` command with the `--file` option:
 dotnet run --file file.cs
 ```
 
-Or use the `dotnet run` command:
+Or use the `dotnet run` command followed by the name of the file:
 
 ```dotnetcli
 dotnet run file.cs
@@ -90,7 +90,7 @@ It's recommended to pass arguments to your application by placing them after `--
 dotnet run file.cs -- arg1 arg2
 ```
 
-Arguments after `--` are passed to your application. Without `--`, arguments go to the `dotnet run` command:
+Without `--`, arguments go to the `dotnet run` command:
 
 ```dotnetcli
 dotnet run file.cs arg1 arg2
@@ -114,17 +114,13 @@ Remove build artifacts by using the `dotnet clean` command:
 dotnet clean file.cs
 ```
 
-Deletes cache for file-based apps in a directory:
+Delete cache for file-based apps in a directory:
 
 ```dotnetcli
 dotnet clean file-based-apps
 ```
 
-Use the `--days` option to specify how many days an artifact folder needs to be unused before removal:
-
-```dotnetcli
-dotnet clean file-based-apps --days 21
-```
+Use the `--days` option with the preceding command to specify how many days an artifact folder needs to be unused before removal. The default number of days is 30.
 
 ### Publish applications
 
@@ -136,7 +132,7 @@ Use the `dotnet publish` command to create an independent executable:
 dotnet publish file.cs
 ```
 
-The default location of the executable is an `artifacts` directory next to the .cs file, with a subdirectory named after the application.
+The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application.
 
 ### Package as tool
 
@@ -339,7 +335,7 @@ The SDK caches build outputs based on:
 
 - Source file content.
 - Directive configuration.
-- SDK version.- Implicit build files existence and content.
+- SDK version. Implicit build files existence and content.
 
 Caching improves build performance but can cause confusion when:
 

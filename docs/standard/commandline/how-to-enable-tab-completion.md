@@ -54,14 +54,14 @@ The following code shows an app that retrieves values for tab completion dynamic
 
 :::code language="csharp" source="snippets/tab-completion/csharp/Program.cs" id="all" :::
 
-The values shown when the <kbd>Tab</kbd> key is pressed are provided as <xref:System.CommandLine.CompletionItem> instances:
+The values shown when the <kbd>Tab</kbd> key is pressed are provided as <xref:System.CommandLine.Completions.CompletionItem> instances:
 
 :::code language="csharp" source="snippets/tab-completion/csharp/Program.cs" id="completionitem" :::
 
 The following `CompletionItem` properties are set:
 
-* <xref:System.CommandLine.CompletionItem.Label> is the completion value to be shown.
-* <xref:System.CommandLine.CompletionItem.SortText> ensures that the values in the list are presented in the correct order. It's set by converting `i` to a two-digit string, so that sorting is based on 01, 02, 03, and so on, through 14. If you don't set this parameter, sorting is based on `Label`, which in this example is in short date format and won't sort correctly.
+* <xref:System.CommandLine.Completions.CompletionItem.Label> is the completion value to be shown.
+* <xref:System.CommandLine.Completions.CompletionItem.SortText> ensures that the values in the list are presented in the correct order. It's set by converting `i` to a two-digit string, so that sorting is based on 01, 02, 03, and so on, through 14. If you don't set this parameter, sorting is based on `Label`, which in this example is in short date format and won't sort correctly.
 
 There are other `CompletionItem` properties, such as `Documentation` and `Detail`, but they aren't yet used in `System.CommandLine`.
 

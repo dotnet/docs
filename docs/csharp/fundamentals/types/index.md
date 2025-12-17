@@ -77,14 +77,10 @@ You can also choose an `interface` to model a *contract*: behavior described by 
 
 The common type system supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), ultimately derive from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md). Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `record struct` keywords are value types; all the built-in numeric types are `structs`. Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
 
-The following illustration shows the relationship between value types and reference types in the CTS.
-
-![Screenshot that shows CTS value types and reference types.](../../programming-guide/types/media/index/value-reference-types-common-type-system.png)
-
 > [!NOTE]
-> You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
+> The most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
 
-Classes and structs are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
+Classes and structs are two of the basic constructs of the common type system in .NET. Each construct is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
 
 A class, struct, or record declaration is like a blueprint that you use to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. You can create multiple instances of the same `Person` type, and each instance can have different values in its properties and fields.
 
@@ -100,7 +96,7 @@ In general, use classes to model more complex behavior. Classes typically store 
 
 Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values. The memory for a struct is allocated inline in whatever context the variable is declared. There's no separate heap allocation or garbage collection overhead for value-type variables. You can declare `record struct` types that are value types and include the synthesized members for [records](../../language-reference/builtin-types/record.md).
 
-There are two categories of value types: `struct` and `enum`.
+Two categories of value types exist: `struct` and `enum`.
 
 The built-in numeric types are structs, and they have fields and methods that you can access:
 

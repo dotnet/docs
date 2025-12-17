@@ -84,7 +84,7 @@ dotnet file.cs
 
 #### Pass arguments
 
-It's recommended to pass arguments to your application by placing them after `--`:
+Pass arguments to your application by placing them after `--`:
 
 ```dotnetcli
 dotnet run file.cs -- arg1 arg2
@@ -104,7 +104,7 @@ Compile your file-based app by using the `dotnet build` command:
 dotnet build file.cs
 ```
 
-The SDK generates a virtual project and builds your application. The default path for the build output is `./bin/<configuration>/<framework>/`. Use the `--output` option to specify a different path.
+The SDK generates a virtual project and builds your application. The default path for the build output is `C:\Users\<username>\AppData\Local\Temp\dotnet\runfile\<appname>-<appfilesha>\bin\debug\`. Use the `--output` option to specify a different path.
 
 ### Clean build outputs
 
@@ -132,7 +132,7 @@ Use the `dotnet publish` command to create an independent executable:
 dotnet publish file.cs
 ```
 
-The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application.
+The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application. Use the `--output` option to specify a different path.
 
 ### Package as tool
 
@@ -152,7 +152,7 @@ Convert your file-based app to a traditional project by using the `dotnet projec
 dotnet project convert file.cs
 ```
 
-This command creates a `.csproj` file with equivalent SDK and properties. The command removes all `#:` directives from the `.cs` file and turns them into elements in the corresponding `.csproj` file.
+The command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK and properties. The `#:` directives are removed, and turned into elements in the corresponding `.csproj` file. The original `.cs` file is left untouched.
 
 ### Restore dependencies
 
@@ -180,7 +180,7 @@ Different SDKs include other file types:
 
 ## Native AOT publishing
 
-File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup and a smaller memory footprint.
+File-based apps enable native ahead-of-time (AOT) compilation by default. This feature produces optimized, self-contained executables with faster startup, and a smaller memory footprint.
 
 If you need to disable native AOT, use the following setting:
 
@@ -327,7 +327,7 @@ Specifies the .NET SDK version to use. File-based apps respect this version sele
 
 ## Build caching
 
-The .NET SDK caches build outputs to improve performance on subsequent builds. This caching system is unique to file-based apps.
+The .NET SDK caches build outputs to improve performance on subsequent invocations of `dotnet run`. This caching system is unique to file-based apps.
 
 ### Cache behavior
 
@@ -335,7 +335,8 @@ The SDK caches build outputs based on:
 
 - Source file content.
 - Directive configuration.
-- SDK version. Implicit build files existence and content.
+- SDK version.
+- Implicit build files existence and content.
 
 Caching improves build performance but can cause confusion when:
 

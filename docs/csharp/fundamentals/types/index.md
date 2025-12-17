@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # The C# type system
 
-C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. C# primarily uses a *normative type system*. A *normative type system* uses names to identify any type. In C#, `struct`, `class`, and `interface` types, including `record` types, are all identified by their name. Every method declaration specifies a name, the type, and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. C# primarily uses a *normative type system*. A *normative type system* uses names to identify each type. In C#, `struct`, `class`, and `interface` types, including `record` types, are all identified by their name. Every method declaration specifies a name, type, and kind (value, reference, or output) for each parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
 
 C# also supports *structural types*, such as tuples and anonymous types. *Structural types* are defined by the names and types of each member, and the order of members in an expression. Structural types don't have unique names.
 
@@ -82,7 +82,9 @@ All types, including built-in numeric types such as <xref:System.Int32?displayPr
 Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types:
 
 - Types that you define by using the `struct` or `record struct` keywords are value types. All the built-in numeric types are `structs`.
-- Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
+- Types that you define by using the `class`, `record class`, or `record` keywords are reference types.
+
+Reference types and value types have different compile-time rules and different run-time behavior.
 
 > [!NOTE]
 > The most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
@@ -167,7 +169,7 @@ Using the type parameter makes it possible to reuse the same class to hold any t
 
 ## Tuples and anonymous types
 
-Creating a type for simple sets of related values can be inconvenient if you don't intend to store or pass these values outside type boundaries. You can create *tuples* or *anonymous types* for this purpose. For more information, see [tuples](../../language-reference/builtin-types/value-tuples.md) and [Anonymous Types](anonymous-types.md).
+Creating a type for simple sets of related values can be inconvenient if you don't intend to store or pass these values using public APIs. You can create *tuples* or *anonymous types* for this purpose. For more information, see [tuples](../../language-reference/builtin-types/value-tuples.md) and [Anonymous Types](anonymous-types.md).
 
 ## Nullable value types
 

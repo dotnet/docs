@@ -1,7 +1,7 @@
 ---
 title: "Learn the fundamentals of the C# type system"
 description: Learn about creating types in C#, such as tuples, records, value types, and reference types. Learn to choose between these options.
-ms.date: 10/10/2025
+ms.date: 12/17/2025
 helpviewer_keywords:
   - "value types [C#]"
   - "reference types [C#]"
@@ -14,7 +14,9 @@ helpviewer_keywords:
 ---
 # The C# type system
 
-C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method declaration specifies a name, the type and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. In most cases, C# uses a *normative type system*. A *normative type system* uses names to identify any type. In C#, `struct`, `class` and `interface` types, including `record` types, are all identified by their name. Every method declaration specifies a name, the type and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
+
+C# also supports *structural types*, such as tuples and anonymous types. *Structural types* are defined by the names and types of each member, and the order of members in an expression. Structural types don't have unique names.
 
 The information stored in a type can include the following items:
 
@@ -54,24 +56,26 @@ C# provides a standard set of built-in types. These represent integers, floating
 
 ## Custom types
 
+You can create structural types using [tuples](../../language-reference/builtin-types/value-tuples.md) when your app needs to define structural stypes. These types provide a structure that holds multiple members. Tuples have limited behavior. They are a container for values. These are the simplest types you can create. 
+
 You use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
 
 One of the first decisions you make when defining a type is deciding which construct to use for your type. The following list helps make that initial decision. There's overlap in the choices. In most scenarios, more than one option is a reasonable choice.
 
+- If the data type is ephemeral, not part of your app domain, and doesn't include behavior, use a structural type.
 - If the data storage size is small, no more than 64 bytes, choose a `struct` or `record struct`.
 - If the type is immutable, or you want nondestructive mutation, choose a `struct` or `record struct`.
 - If your type should have value semantics for equality, choose a `record class` or `record struct`.
-- If the type is primarily used for storing data, not behavior, choose a `record class` or `record struct`.
+- If the type is primarily used for storing data, with minimal behavior, choose a `record class` or `record struct`.
 - If the type is part of an inheritance hierarchy, choose a `record class` or a `class`.
 - If the type uses polymorphism, choose a `class`.
 - If the primary purpose is behavior, choose a `class`.
 
+You can also choose an `interface` to model a *contract*: behavior described by members that can be implemented by unrelated types. Interfaces are abstract, and declare members that must be implemented by all `class` or `struct` types that inherit from that interface.
+
 ## The common type system
 
-It's important to understand two fundamental points about the type system in .NET:
-
-- It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md).
-- Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `record struct` keywords are value types; all the built-in numeric types are `structs`. Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
+The common type system supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md). Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `record struct` keywords are value types; all the built-in numeric types are `structs`. Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
 
 The following illustration shows the relationship between value types and reference types in the CTS.
 
@@ -158,13 +162,17 @@ A type can be declared with one or more *type parameters* that serve as a placeh
 
 The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](generics.md).
 
-## Implicit types, anonymous types, and nullable value types
+## Tuples and anonymous types
 
-You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+It can be inconvenient to create a type for simple sets of related values that you don't intend to store or pass outside type boundaries. You can create *tuples* or *anonymous types* for this purpose. For more information, see [tuples](../../language-reference/builtin-types/value-tuples.md) and [Anonymous Types](anonymous-types.md).
 
-It can be inconvenient to create a named type for simple sets of related values that you don't intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](anonymous-types.md).
+## Nullable value types
 
 Ordinary value types can't have a value of [`null`](../../language-reference/keywords/null.md). However, you can create *nullable value types* by appending a `?` after the type. For example, `int?` is an `int` type that can also have the value [`null`](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you're passing data to and from databases in which numeric values might be `null`. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
+
+## Implicit type declarations
+
+You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 ## Compile-time type and run-time type
 

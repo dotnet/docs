@@ -49,7 +49,7 @@ Complete the following steps to create a .NET console app.
 
 1. From a terminal or command prompt, navigate to the root of your project directory.
 
-1. Run the following commands to configure your Azure OpenAI endpoint and model name for the sample app:
+1. Run the following commands to configure your Azure OpenAI endpoint and API key for the sample app:
 
     ```bash
     dotnet user-secrets init

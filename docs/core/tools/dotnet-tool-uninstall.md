@@ -43,7 +43,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET too
 
   Specifies that the tool to be removed is from a user-wide installation. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--tool-path <PATH>`**
 

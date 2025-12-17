@@ -62,9 +62,9 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
   Forces the application to run using an invariant, English-based culture.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`-k|--api-key <API_KEY>`**
 

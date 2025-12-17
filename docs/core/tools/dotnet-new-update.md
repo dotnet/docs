@@ -27,7 +27,7 @@ The `dotnet new update` command updates installed template packages.
 The `dotnet new update` command with `--check-only` option checks for available updates for installed template packages without applying them.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -47,7 +47,7 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
 ## Options
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--add-source|nuget-source <SOURCE>`**
   
@@ -62,9 +62,9 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 

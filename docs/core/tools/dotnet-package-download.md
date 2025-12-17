@@ -52,7 +52,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Path to a NuGet.config to use.
 
-* [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+* [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 * **`-o, --output <path>`**
 
@@ -66,9 +66,9 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Specifies the NuGet package source to use.
 
-* [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+* [!INCLUDE [verbosity](includes/cli-verbosity.md)]
   
-* [!INCLUDE [help](../../../includes/cli-help.md)]
+* [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

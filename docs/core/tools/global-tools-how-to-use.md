@@ -49,7 +49,7 @@ If you prefer permanent installation for frequent use:
    Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
    ```
 
-   [!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
+   [!INCLUDE[](includes/dotnet-tool-install-arch-options.md)]
 
 1. Invoke the tool:
 

@@ -91,7 +91,7 @@ class DataIngestionExample
         // The writer requires the embedding dimension count to be specified.
         using VectorStoreWriter<string> writer = new(
             vectorStore,
-            dimensionCount: 1024,
+            dimensionCount: 1536,
             new VectorStoreWriterOptions { CollectionName = "data" });
         // </ConfigureVectorStore>
 

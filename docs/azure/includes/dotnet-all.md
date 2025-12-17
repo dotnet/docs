@@ -436,13 +436,13 @@
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.47.0) |  |  |
 | Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.1.0) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-arm64/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-x64/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-arm64/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-x64/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-arm64/0.0.0-beta.3) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/0.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-arm64/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-x64/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-arm64/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-x64/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-arm64/0.0.0-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/0.0.0-beta.4) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-x64/0.0.12) |  |  |
@@ -518,7 +518,7 @@
 | Mobile Server - Cross Domain | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server.CrossDomain/2.0.3) |  |  |
 | Notification Hubs | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.2.0) |  | GitHub [4.2.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
 | Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
-| Relay | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.1.0) | [docs](/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.1.0](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
+| Relay | NuGet [3.1.1](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.1.1) | [docs](/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.1.1](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
 | Schema Registry - Avro | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
 | Schema Registry - JSON | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Json/1.0.0-beta.1) |  |  |
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |

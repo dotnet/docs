@@ -13,14 +13,14 @@ helpviewer_keywords:
 
 Contains a configuration section declaration.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<sectionGroup>`](sectiongroup-element-for-configsections.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
 ## Syntax
 
@@ -42,15 +42,15 @@ Contains a configuration section declaration.
 
 The following attributes are applicable only for ASP.NET applications. The configuration system ignores these attributes for other application types.
 
-| Attribute         | Description |
-| ----------------- | ----------- |
-| `allowDefinition` | Specifies which configuration file the section can be used in. Use one of the following values:<br><br>**Everywhere**<br>Allows the section to be used in any configuration file. This is the default.<br>**MachineOnly**<br>Allows the section to be used only in the machine configuration file (*Machine.config*).<br>**MachineToApplication**<br>Allows the section to be used in the machine configuration file or the application configuration file. |
-| `allowLocation`   | Determines whether the section can be used within the `<location>` element. Use one of the following values:<br><br>**true**<br>Allows the section to be used within the `<location>` element. This is the default.<br>**false**<br>Does not allow the section to be used within the `<location>` element. |
+| Optional attribute  | Description |
+| ------------------- | ----------- |
+| `allowDefinition`   | Specifies which configuration file the section can be used in. Use one of the following values:<br><br>**Everywhere**<br>Allows the section to be used in any configuration file. This is the default.<br>**MachineOnly**<br>Allows the section to be used only in the machine configuration file (*Machine.config*).<br>**MachineToApplication**<br>Allows the section to be used in the machine configuration file or the application configuration file. |
+| `allowLocation`     | Determines whether the section can be used within the `<location>` element. Use one of the following values:<br><br>**true**<br>Allows the section to be used within the `<location>` element. This is the default.<br>**false**<br>Does not allow the section to be used within the `<location>` element. |
 
 ## Parent elements
 
-| Parent element                                                    | Description |
-| ----------------------------------------------------------------- | ----------- |
+| Parent element                                                    | Description                                     |
+|-------------------------------------------------------------------|-------------------------------------------------|
 | [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 | [`<sectionGroup>`](sectiongroup-element-for-configsections.md)    | Defines a namespace for configuration sections. |
 

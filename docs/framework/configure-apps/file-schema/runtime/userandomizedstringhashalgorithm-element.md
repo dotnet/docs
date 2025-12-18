@@ -14,9 +14,9 @@ ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<UseRandomizedStringHashAlgorithm>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<UseRandomizedStringHashAlgorithm>`
 
 ## Syntax
 

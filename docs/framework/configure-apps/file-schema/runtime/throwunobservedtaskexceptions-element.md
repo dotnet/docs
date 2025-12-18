@@ -14,9 +14,9 @@ ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
 
 Specifies whether unhandled task exceptions should terminate a running process.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<ThrowUnobservedTaskExceptions>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<ThrowUnobservedTaskExceptions>`
 
 ## Syntax
 

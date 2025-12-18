@@ -11,9 +11,9 @@ ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
 
 Specifies whether the runtime uses legacy code access security (CAS) policy.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_LegacySecurityPolicy>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<NetFx40_LegacySecurityPolicy>`
 
 [!INCLUDE [cas-deprecated](../../../../../includes/cas-deprecated.md)]
 

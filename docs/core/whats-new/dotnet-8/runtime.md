@@ -514,7 +514,7 @@ IDataView predictions = model.Transform(split.TestSet);
   ```
 
 - Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
-For guidance on using `SearchValues<T>` for efficient multi-value string comparisons, see [Efficient multi-value string comparisons](../../../standard/base-types/string-comparison.md#efficient-multi-value-string-comparisons).
+For guidance on using `SearchValues<T>` for efficient multi-value string comparisons, see [Efficient multi-value string comparisons](../../../standard/base-types/string-comparison-net-5-plus.md#efficient-multi-value-string-comparisons).
 
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 

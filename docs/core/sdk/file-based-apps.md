@@ -208,6 +208,8 @@ List user secrets for file-based apps:
 dotnet user-secrets list --file file.cs
 ```
 
+The `dotnet user-secrets list` command prints the value of your secrets. Don't put this command in scripts that run in public contexts.
+
 For more information, see [Safe storage of app secrets in development](/aspnet/core/security/app-secrets).
 
 ## Launch profiles

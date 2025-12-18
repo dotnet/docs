@@ -1,6 +1,8 @@
 
 ## IMPORTANT SOFTWARE RELEASES
 
+Updated December 18th 2025
+
 This is a list of important software releases that an AI model might not be aware of.
 
 - .NET 10 was released in November 2025

@@ -4,7 +4,7 @@ title: "<windowsStreamSecurity>"
 ms.date: "03/30/2017"
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
 ---
-# \<windowsStreamSecurity>
+# `<windowsStreamSecurity>`
 
 Specify Windows stream security settings of the custom binding.
 

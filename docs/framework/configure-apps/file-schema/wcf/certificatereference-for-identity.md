@@ -4,7 +4,7 @@ title: "<certificateReference> for <identity>"
 ms.date: "03/30/2017"
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
 ---
-# \<certificateReference> for \<identity>
+# `<certificateReference>` for \<identity>
 
 Specifies settings for X.509 certificate validation. A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.
 

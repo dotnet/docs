@@ -4,7 +4,7 @@ title: "<defaultCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
 ---
-# \<defaultCertificate> Element
+# `<defaultCertificate>` Element
 
 Specifies an X.509 certificate to be used when security token service (STS) doesn't provide one via a negotiation protocol.
 

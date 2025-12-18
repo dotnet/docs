@@ -4,7 +4,7 @@ title: "<add> of <scopedCertificates> Element"
 ms.date: "03/30/2017"
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
 ---
-# \<add> of \<scopedCertificates> Element
+# `<add>` of \<scopedCertificates> Element
 
 Adds an X.509 certificate to the collection of scoped certificates.
 

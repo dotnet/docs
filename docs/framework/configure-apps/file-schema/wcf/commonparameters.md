@@ -4,7 +4,7 @@ title: "<commonParameters>"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<commonParameters>
+# `<commonParameters>`
 
 Represents a collection of parameters that are used globally across multiple services. This collection typically includes the database connection string that might be shared by durable services.
 

@@ -4,7 +4,7 @@ title: "<localIssuer>"
 ms.date: "03/30/2017"
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
 ---
-# \<localIssuer>
+# `<localIssuer>`
 
 Specifies the address and binding of the local issuer to be used to obtain a security token.
 

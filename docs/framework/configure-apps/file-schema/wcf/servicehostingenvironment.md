@@ -4,7 +4,7 @@ title: "<serviceHostingEnvironment>"
 ms.date: "03/30/2017"
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
 ---
-# \<serviceHostingEnvironment>
+# `<serviceHostingEnvironment>`
 
 This element defines the type the service hosting environment instantiates for a particular transport. If this element is empty, the default type is used. This element can only be used at the application or machine level configuration files.
 

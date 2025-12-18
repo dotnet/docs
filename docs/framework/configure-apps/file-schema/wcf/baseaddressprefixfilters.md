@@ -4,7 +4,7 @@ title: "<baseAddressPrefixFilters>"
 ms.date: "03/30/2017"
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
 ---
-# \<baseAddressPrefixFilters>
+# `<baseAddressPrefixFilters>`
 
 Represents a collection of configuration elements that specify pass through filters, which provide a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting the Windows Communication Foundation (WCF) application in IIS.
 

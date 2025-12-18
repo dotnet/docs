@@ -4,7 +4,7 @@ title: "<security> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 ---
-# \<security> of \<netHttpBinding>
+# `<security>` of \<netHttpBinding>
 
 Defines the security capabilities of the [\<netHttpBinding>](nethttpbinding.md).
 

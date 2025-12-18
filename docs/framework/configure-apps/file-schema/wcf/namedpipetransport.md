@@ -4,7 +4,7 @@ title: "<namedPipeTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 ---
-# \<namedPipeTransport>
+# `<namedPipeTransport>`
 
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.
 

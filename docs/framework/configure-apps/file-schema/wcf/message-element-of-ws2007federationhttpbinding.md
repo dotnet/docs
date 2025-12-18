@@ -4,7 +4,7 @@ title: "<message> element of <ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 52cd941d-e230-4c82-8b29-333a7d20eca8
 ---
-# \<message> element of \<ws2007FederationHttpBinding>
+# `<message>` element of \<ws2007FederationHttpBinding>
 
 Defines settings for the message-level security for the [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) element.
 

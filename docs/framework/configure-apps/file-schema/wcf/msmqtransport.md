@@ -4,7 +4,7 @@ title: "<msmqTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 ---
-# \<msmqTransport>
+# `<msmqTransport>`
 
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.
 

@@ -4,7 +4,7 @@ title: "<messageSenderAuthentication> element"
 ms.date: "03/30/2017"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 ---
-# \<messageSenderAuthentication> element
+# `<messageSenderAuthentication>` element
 
 Specifies authentication options for peer-to-peer message senders.
 

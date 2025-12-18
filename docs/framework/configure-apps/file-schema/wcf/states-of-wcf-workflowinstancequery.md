@@ -4,7 +4,7 @@ title: "<states> of WCF, <workflowInstanceQuery>"
 ms.date: "03/30/2017"
 ms.assetid: d17f7525-8035-4e9e-85a0-4cddae59f85d
 ---
-# \<states> of WCF, \<workflowInstanceQuery>
+# `<states>` of WCF, \<workflowInstanceQuery>
 
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.
 

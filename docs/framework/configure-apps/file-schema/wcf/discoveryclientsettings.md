@@ -4,7 +4,7 @@ title: "<discoveryClientSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
 ---
-# \<discoveryClientSettings>
+# `<discoveryClientSettings>`
 
 Contains the settings needed by an application to participate in the service discovery process as a client.
 

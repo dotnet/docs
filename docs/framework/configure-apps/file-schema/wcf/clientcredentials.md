@@ -4,7 +4,7 @@ title: "<clientCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
 ---
-# \<clientCredentials>
+# `<clientCredentials>`
 
 Specifies the credentials used to authenticate the client to a service.
 

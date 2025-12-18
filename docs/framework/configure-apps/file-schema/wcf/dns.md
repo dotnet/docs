@@ -4,7 +4,7 @@ title: "<dns>"
 ms.date: "03/30/2017"
 ms.assetid: 81819dae-4825-43b7-bccd-f16d2d3d2f06
 ---
-# \<dns>
+# `<dns>`
 
 Specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value.
 

@@ -4,7 +4,7 @@ title: "<add> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
 ---
-# \<add> of WCF
+# `<add>` of WCF
 
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.
 

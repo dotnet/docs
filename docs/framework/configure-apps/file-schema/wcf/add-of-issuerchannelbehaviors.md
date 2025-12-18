@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
 ---
 
-# \<add> of \<issuerChannelBehaviors>
+# `<add>` of \<issuerChannelBehaviors>
 
 Adds an endpoint behavior to be used when communicating with a security token service (STS).
 

@@ -4,7 +4,7 @@ title: "<binaryMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: e4ae3cd4-6b67-4ce1-af4b-9400e0a38dba
 ---
-# \<binaryMessageEncoding>
+# `<binaryMessageEncoding>`
 
 Defines a binary message encoder that encodes Windows Communication Foundation (WCF) messages in binary on the wire.
 

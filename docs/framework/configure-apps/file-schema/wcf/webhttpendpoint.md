@@ -4,7 +4,7 @@ title: "<webHttpEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
 ---
-# \<webHttpEndpoint>
+# `<webHttpEndpoint>`
 
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](webhttpbinding.md) binding that automatically adds the [\<webHttp>](webhttp.md) behavior. Use this endpoint when writing a REST service.
 

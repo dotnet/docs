@@ -4,7 +4,7 @@ title: "<userPrincipalName>"
 ms.date: "03/30/2017"
 ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
 ---
-# \<userPrincipalName>
+# `<userPrincipalName>`
 
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.
 

@@ -4,7 +4,7 @@ title: "<add> of <commonParameters>"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<add> of \<commonParameters>
+# `<add>` of \<commonParameters>
 
 Specifies a name-value pair of parameters that are used globally across multiple services. Typically this parameter includes the database connection string that might be shared by durable services.
 

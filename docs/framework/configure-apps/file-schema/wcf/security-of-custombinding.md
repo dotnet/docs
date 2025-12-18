@@ -4,7 +4,7 @@ title: "<security> of <customBinding>"
 ms.date: "10/31/2023"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ---
-# \<security> of \<customBinding>
+# `<security>` of \<customBinding>
 
 Specifies the security options for a custom binding.
 

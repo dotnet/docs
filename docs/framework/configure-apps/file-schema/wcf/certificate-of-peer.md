@@ -4,7 +4,7 @@ title: "<certificate> of <peer>"
 ms.date: "03/30/2017"
 ms.assetid: 48b69142-c957-4305-a042-c9d0c9a55c0e
 ---
-# \<certificate> of \<peer>
+# `<certificate>` of \<peer>
 
 Specifies a certificate used by a peer.
 

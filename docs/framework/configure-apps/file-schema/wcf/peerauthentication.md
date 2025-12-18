@@ -4,7 +4,7 @@ title: "<peerAuthentication>"
 ms.date: "03/30/2017"
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
 ---
-# \<peerAuthentication>
+# `<peerAuthentication>`
 
 Specifies authentication settings for a peer certificate used by a peer node.
 

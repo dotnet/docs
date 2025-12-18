@@ -4,7 +4,7 @@ title: "<transactionFlow>"
 ms.date: "03/30/2017"
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
 ---
-# \<transactionFlow>
+# `<transactionFlow>`
 
 Specifies transaction flow support for the custom binding.
 

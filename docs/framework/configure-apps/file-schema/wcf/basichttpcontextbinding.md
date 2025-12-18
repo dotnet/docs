@@ -4,7 +4,7 @@ title: "<basicHttpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
 ---
-# \<basicHttpContextBinding>
+# `<basicHttpContextBinding>`
 
 Specifying a binding that provides context for the <xref:System.ServiceModel.BasicHttpBinding> to be exchanged by enabling HTTP cookies as the exchange mechanism.
 

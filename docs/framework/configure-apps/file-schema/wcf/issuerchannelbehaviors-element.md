@@ -6,7 +6,7 @@ ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
 no-loc: [<system.serviceModel>, <behaviors>, <endpointBehaviors>, <behavior>, <clientCredentials>, <issuedToken>, <issuerChannelBehaviors>, <dataContractSerializer>]
 ---
 
-# \<issuerChannelBehaviors> Element
+# `<issuerChannelBehaviors>` Element
 
 Contains a collection of Windows Communication Foundation (WCF) client endpoint behaviors (defined in the configuration) to be used when communicating with the specified Service Token Services. The defined behaviors cannot include any [\<clientCredentials>](clientcredentials.md) elements.
 

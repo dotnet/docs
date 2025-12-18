@@ -4,7 +4,7 @@ title: "<webHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
 ---
-# \<webHttpBinding>
+# `<webHttpBinding>`
 
 Defines a binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.
 

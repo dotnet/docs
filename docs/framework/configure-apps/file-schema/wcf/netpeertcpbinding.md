@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "netPeerBinding element"
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 ---
-# \<netPeerTcpBinding>
+# `<netPeerTcpBinding>`
 
 Defines a binding for peer channel specific TCP messaging.
 

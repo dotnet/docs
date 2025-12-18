@@ -4,7 +4,7 @@ title: "<persistenceProvider>"
 ms.date: "03/30/2017"
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
 ---
-# \<persistenceProvider>
+# `<persistenceProvider>`
 
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.
 

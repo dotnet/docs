@@ -4,7 +4,7 @@ title: "<dataContractSerializer> of <system.runtime.serialization>"
 ms.date: "03/30/2017"
 ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 ---
-# \<dataContractSerializer> of \<system.runtime.serialization>
+# `<dataContractSerializer>` of \<system.runtime.serialization>
 
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.
 

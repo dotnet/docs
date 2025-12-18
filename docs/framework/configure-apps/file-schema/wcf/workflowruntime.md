@@ -4,7 +4,7 @@ title: "<workflowRuntime>"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<workflowRuntime>
+# `<workflowRuntime>`
 
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.
 

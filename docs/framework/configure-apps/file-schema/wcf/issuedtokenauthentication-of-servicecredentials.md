@@ -4,7 +4,7 @@ title: "<issuedTokenAuthentication> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
 ---
-# \<issuedTokenAuthentication> of \<serviceCredentials>
+# `<issuedTokenAuthentication>` of \<serviceCredentials>
 
 Specifies a custom token issued as a service credential.
 

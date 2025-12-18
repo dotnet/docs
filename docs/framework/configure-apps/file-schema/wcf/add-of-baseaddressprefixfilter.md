@@ -4,7 +4,7 @@ title: "<add> of <baseAddressPrefixFilter>"
 ms.date: "03/30/2017"
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
 ---
-# \<add> of \<baseAddressPrefixFilter>
+# `<add>` of \<baseAddressPrefixFilter>
 
 Represents a configuration element that specifies a pass-through filter, which provides a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting a Windows Communication Foundation (WCF) application in IIS.
 

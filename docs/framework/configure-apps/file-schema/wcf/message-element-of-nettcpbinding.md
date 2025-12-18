@@ -4,7 +4,7 @@ title: "<message> element of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
 ---
-# \<message> element of \<netTcpBinding>
+# `<message>` element of \<netTcpBinding>
 
 Defines the type of message-level security requirements for an endpoint configured with the [\<netTcpBinding>](nettcpbinding.md).
 

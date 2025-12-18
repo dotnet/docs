@@ -4,7 +4,7 @@ title: "<mexNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
 ---
-# \<mexNamedPipeBinding>
+# `<mexNamedPipeBinding>`
 
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over named pipe.
 

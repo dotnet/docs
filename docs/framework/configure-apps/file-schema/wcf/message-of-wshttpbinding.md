@@ -4,7 +4,7 @@ title: "<message> of <wsHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
 ---
-# \<message> of \<wsHttpBinding>
+# `<message>` of \<wsHttpBinding>
 
 Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbinding.md).
 

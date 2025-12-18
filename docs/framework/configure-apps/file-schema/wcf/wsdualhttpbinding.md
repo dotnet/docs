@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "wsDualHttpBinding Element"
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
 ---
-# \<wsDualHttpBinding>
+# `<wsDualHttpBinding>`
 
 Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.
 

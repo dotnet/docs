@@ -4,7 +4,7 @@ title: "<add> of <filters>"
 ms.date: "03/30/2017"
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
 ---
-# \<add> of \<filters>
+# `<add>` of \<filters>
 
 A XPath filter that specifies the kind of message to be logged.
 

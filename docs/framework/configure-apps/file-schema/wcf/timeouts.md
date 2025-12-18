@@ -4,7 +4,7 @@ title: "<timeOuts>"
 ms.date: "03/30/2017"
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
 ---
-# \<timeOuts>
+# `<timeOuts>`
 
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.
 

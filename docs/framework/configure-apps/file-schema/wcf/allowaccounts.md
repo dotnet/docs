@@ -4,7 +4,7 @@ title: "<allowAccounts>"
 ms.date: "03/30/2017"
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6
 ---
-# \<allowAccounts>
+# `<allowAccounts>`
 
 Contains a collection of configuration elements that specify user accounts for processes that host Windows Communication Foundation (WCF) services, and are granted connection access to the sharing service.
 

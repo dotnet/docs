@@ -4,7 +4,7 @@ title: "<net.tcp>"
 ms.date: "03/30/2017"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
 ---
-# \<net.tcp>
+# `<net.tcp>`
 
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.
 

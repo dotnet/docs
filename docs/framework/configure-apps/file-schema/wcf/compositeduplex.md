@@ -4,7 +4,7 @@ title: "<compositeDuplex>"
 ms.date: "03/30/2017"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
 ---
-# \<compositeDuplex>
+# `<compositeDuplex>`
 
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.
 

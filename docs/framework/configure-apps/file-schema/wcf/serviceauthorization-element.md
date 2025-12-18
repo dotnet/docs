@@ -4,7 +4,7 @@ title: "<serviceAuthorization> element"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<serviceAuthorization> element
+# `<serviceAuthorization>` element
 
 Specifies settings that authorize access to service operations
 

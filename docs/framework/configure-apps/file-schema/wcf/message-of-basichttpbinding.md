@@ -4,7 +4,7 @@ title: "<message> of <basicHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
 ---
-# \<message> of \<basicHttpBinding>
+# `<message>` of \<basicHttpBinding>
 
 Defines the settings for message-level security of the [\<basicHttpBinding>](basichttpbinding.md).
 

@@ -4,7 +4,7 @@ title: "<transport> of <msmqIntegrationBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e
 ---
-# \<transport> of \<msmqIntegrationBinding>
+# `<transport>` of \<msmqIntegrationBinding>
 
 Defines the security settings for the Message Queuing integration transport.
 

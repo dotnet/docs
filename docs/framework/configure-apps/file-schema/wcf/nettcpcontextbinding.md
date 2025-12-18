@@ -4,7 +4,7 @@ title: "<netTcpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
 ---
-# \<netTcpContextBinding>
+# `<netTcpContextBinding>`
 
 Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requires that the protection level be signed. The contextExchangeMechanism for NetTcpContextBinding is SOAPHeader.
 

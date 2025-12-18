@@ -4,7 +4,7 @@ title: "<metadata>"
 ms.date: "03/30/2017"
 ms.assetid: d09653eb-e355-4c73-b87b-28f93d56480d
 ---
-# \<metadata>
+# `<metadata>`
 
 Specifies how service metadata can be processed.
 

@@ -4,7 +4,7 @@ title: "<unrecognizedPolicyAssertion>"
 ms.date: "03/30/2017"
 ms.assetid: 043c3c8f-f263-4ac7-a1af-945d03413f0b
 ---
-# \<unrecognizedPolicyAssertion>
+# `<unrecognizedPolicyAssertion>`
 
 Represents a binding element that specifies policy assertion. This element has no attribute and is present as an empty switch.
 

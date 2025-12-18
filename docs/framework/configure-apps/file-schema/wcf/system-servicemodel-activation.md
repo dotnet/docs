@@ -4,7 +4,7 @@ title: "<system.serviceModel.activation>"
 ms.date: "03/30/2017"
 ms.assetid: c0cae85f-56cb-4030-8807-6f96edff8d2d
 ---
-# \<system.serviceModel.activation>
+# `<system.serviceModel.activation>`
 
 This configuration section represents the configuration settings for the SMSvcHost.exe tool. The configuration elements can be configured in the SMSvcHost.exe.config file. Specifically, it includes all machine-wide settings that must be configured.
 

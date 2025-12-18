@@ -4,7 +4,7 @@ title: "<service>"
 ms.date: "03/30/2017"
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
 ---
-# \<service>
+# `<service>`
 
 The `service` element contains the settings for a Windows Communication Foundation (WCF) service. It also contains endpoints that expose the service.
 

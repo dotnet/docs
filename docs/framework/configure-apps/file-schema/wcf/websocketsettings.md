@@ -4,7 +4,7 @@ title: "<webSocketSettings>"
 ms.date: "03/30/2017"
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
 ---
-# \<webSocketSettings>
+# `<webSocketSettings>`
 
 A configuration element used to specify Web Socket settings.
 

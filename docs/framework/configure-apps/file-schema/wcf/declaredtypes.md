@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "<declaredTypes> element"
 ms.assetid: f35184e4-9d9e-4d37-8fb4-d5b58220eb3e
 ---
-# \<declaredTypes>
+# `<declaredTypes>`
 
 Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.
 

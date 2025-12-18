@@ -4,7 +4,7 @@ title: "<transport> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
 ---
-# \<transport> of \<netHttpBinding>
+# `<transport>` of \<netHttpBinding>
 
 Defines properties that control authentication parameters for the HTTP transport.
 

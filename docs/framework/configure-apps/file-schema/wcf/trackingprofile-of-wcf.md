@@ -4,7 +4,7 @@ title: "<trackingProfile> of WCF"
 ms.date: "10/08/2018"
 ms.assetid: 09b651c2-c0d2-4850-a101-b0e009a1dc3a
 ---
-# \<trackingProfile> of WCF
+# `<trackingProfile>` of WCF
 
 Represents a configuration section for creating a subscription to workflow tracking records in a tracking participant. A tracking profile contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at runtime. The queries defined within the tracking profile section define the kinds of events that are returned by the subscription.
 

@@ -4,7 +4,7 @@ title: "<resolver>"
 ms.date: "03/30/2017"
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
 ---
-# \<resolver>
+# `<resolver>`
 
 Specifies a peer resolver that is used to resolve a peer mesh ID to a set of peer node addresses that represents several nodes that participate in the mesh.
 

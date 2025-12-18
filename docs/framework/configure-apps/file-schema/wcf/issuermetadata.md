@@ -4,7 +4,7 @@ title: "<issuerMetadata>"
 ms.date: "03/30/2017"
 ms.assetid: e7eae2c0-cc17-4281-af59-e4eb8d54f92a
 ---
-# \<issuerMetadata>
+# `<issuerMetadata>`
 
 [`<configuration>`](../configuration-element.md)\
 &nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\

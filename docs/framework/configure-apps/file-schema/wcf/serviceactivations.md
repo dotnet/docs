@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 97e665b6-1c51-410b-928a-9bb42c954ddb
 ---
 
-# \<serviceActivations>
+# `<serviceActivations>`
 
 A configuration element that allows you to add settings that define virtual service activation settings that map to your Windows Communication Foundation (WCF) service types. This makes it possible to activate services hosted in WAS/IIS without an .svc file.
 

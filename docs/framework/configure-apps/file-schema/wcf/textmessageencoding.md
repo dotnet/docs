@@ -4,7 +4,7 @@ title: "<textMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
 ---
-# \<textMessageEncoding>
+# `<textMessageEncoding>`
 
 Specifies the character encoding and message versioning used for text-based XML messages.
 

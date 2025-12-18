@@ -4,7 +4,7 @@ title: "<endToEndTracing>"
 ms.date: "03/30/2017"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 ---
-# \<endToEndTracing>
+# `<endToEndTracing>`
 
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.
 

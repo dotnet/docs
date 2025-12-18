@@ -4,7 +4,7 @@ title: "<security> of <wsDualHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
 ---
-# \<security> of \<wsDualHttpBinding>
+# `<security>` of \<wsDualHttpBinding>
 
 Defines the security capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).
 

@@ -15,8 +15,8 @@ ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
 
 Specifies compiler configuration settings for available language providers.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;**\<system.codedom>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;`<system.codedom>`
 
 ## Syntax
 

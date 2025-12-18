@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "<assemblyBinding> Element"
 ---
 
-# `<assemblyBinding>` element for \<configuration>
+# `<assemblyBinding>` element for `<configuration>`
 
 Specifies assembly binding policy at the configuration level.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;**\<assemblyBinding>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;`<assemblyBinding>`
 
 ## Syntax
 
@@ -44,7 +44,7 @@ Specifies assembly binding policy at the configuration level.
 
 ## Remarks
 
-The [**\<linkedConfiguration>**](linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
+The [`<linkedConfiguration>`](linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
 
 > [!NOTE]
 > The `<linkedConfiguration>` element is not supported for applications with Windows side-by-side manifests.

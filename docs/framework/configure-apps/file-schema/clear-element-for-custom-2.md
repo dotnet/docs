@@ -13,9 +13,9 @@ ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 
 Clears all previously defined settings in a section.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<sectionName>`](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
 
 ## Syntax
 

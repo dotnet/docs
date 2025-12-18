@@ -8,7 +8,6 @@ f1_keywords:
 helpviewer_keywords:
   - "section Element"
   - "<section> Element"
-ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
 ---
 # `<section>` element
 

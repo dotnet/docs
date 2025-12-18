@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "<sectionGroup> Element"
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 ---
-# `<sectionGroup>` element for \<configSections>
+# `<sectionGroup>` element for `<configSections>`
 
 Defines a namespace for configuration sections.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<sectionGroup>`
 
 ## Syntax
 

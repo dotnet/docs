@@ -12,9 +12,9 @@ helpviewer_keywords:
 
 Removes a previously defined setting.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<sectionName>`](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
 
 ## Syntax
 

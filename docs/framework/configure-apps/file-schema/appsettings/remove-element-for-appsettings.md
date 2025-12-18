@@ -12,9 +12,9 @@ helpviewer_keywords:
 
 Removes custom application settings.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
 
 ## Syntax
 

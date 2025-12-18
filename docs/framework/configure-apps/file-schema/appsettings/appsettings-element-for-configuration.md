@@ -8,12 +8,12 @@ helpviewer_keywords:
   - "appSettings Element"
   - "<appSettings> Element"
 ---
-# `<appSettings>` element for \<configuration>
+# `<appSettings>` element for `<configuration>`
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;**\<appSettings>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;`<appSettings>`
 
 ## Syntax
 

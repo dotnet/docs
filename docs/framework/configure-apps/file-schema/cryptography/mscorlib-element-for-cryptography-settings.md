@@ -14,8 +14,8 @@ ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 
 Contains the [`<cryptographySettings>` element](cryptographysettings-element.md).
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;**\<mscorlib>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;`<mscorlib>`
 
 ## Syntax
 

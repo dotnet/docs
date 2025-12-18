@@ -13,18 +13,18 @@ ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
 
 Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-appsettings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<clear>**](clear-element-for-appsettings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<remove>**](remove-element-for-appsettings.md)
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<add>`](add-element-for-appsettings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<clear>`](clear-element-for-appsettings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<remove>`](remove-element-for-appsettings.md)
 
 | Element | Description |
 | ------- | ----------- |
-| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains `<add>`, `<clear>`, and `<remove>` tags to control application settings. Has an optional `file` attribute. |
-| [**\<add>**](add-element-for-appsettings.md) | Defines a setting. Child of `<appSettings>`. Requires `key` and `value` attributes. |
-| [**\<clear>**](clear-element-for-appsettings.md) | Clears all settings. Child of `<appSettings>`. Has no attributes. |
-| [**\<remove>**](remove-element-for-appsettings.md) | Removes a setting. Child of `<appSettings>`. Requires a `key` attribute. |
+| [`<appSettings>`](appsettings-element-for-configuration.md) | Contains `<add>`, `<clear>`, and `<remove>` tags to control application settings. Has an optional `file` attribute. |
+| [`<add>`](add-element-for-appsettings.md) | Defines a setting. Child of `<appSettings>`. Requires `key` and `value` attributes. |
+| [`<clear>`](clear-element-for-appsettings.md) | Clears all settings. Child of `<appSettings>`. Has no attributes. |
+| [`<remove>`](remove-element-for-appsettings.md) | Removes a setting. Child of `<appSettings>`. Requires a `key` attribute. |
 
 ## `<appSettings>` element
 

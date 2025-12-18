@@ -8,13 +8,13 @@ helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ---
-# `<add>` element for \<appSettings>
+# `<add>` element for `<appSettings>`
 
 Adds a custom application setting.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 

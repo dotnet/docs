@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords:
   - "appSettings Element"
   - "<appSettings> Element"
-ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 ---
 # `<appSettings>` element for \<configuration>
 
@@ -26,20 +25,20 @@ Contains custom application settings. This is a predefined configuration section
 
 ## Attribute
 
-|           | Description |
+| Attribute | Description |
 | --------- | ----------- |
-| `file`  | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the `<add>`, `<remove>`, and `<clear>` elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>The runtime ignores the attribute if the specified file can't be found. |
+| `file`    | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the `<add>`, `<remove>`, and `<clear>` elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>The runtime ignores the attribute if the specified file can't be found. |
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
-| [`<configuration>` Element](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| Parent element                                   | Description |
+|--------------------------------------------------|-------------|
+| [`<configuration>`](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
-|     | Description |
-| --- | ----------- |
+| Child element                                | Description                        |
+|----------------------------------------------|------------------------------------|
 | [**\<add>**](add-element-for-appsettings.md) | Adds a custom application setting. |
 | [**\<clear>**](clear-element-for-appsettings.md) | Clears all previously defined application settings. |
 | [**\<remove>**](remove-element-for-appsettings.md) | Removes a previously defined application setting. |

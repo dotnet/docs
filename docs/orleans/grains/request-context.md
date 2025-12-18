@@ -2,7 +2,7 @@
 title: Request context
 description: Learn about request context in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Request context
@@ -62,8 +62,8 @@ public class HelloGrain(ILogger<HelloGrain> logger) : Grain, IHelloGrain
             SayHello message received: greeting = "{Greeting}"
             """,
             greeting);
-        
-        var traceId = RequestContext.Get("TraceId") as string 
+
+        var traceId = RequestContext.Get("TraceId") as string
             ?? "No trace ID";
 
         return ValueTask.FromResult($"""

@@ -4,7 +4,7 @@ title: "<udpTransportSettings> of <udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
 ---
-# `<udpTransportSettings>` of \<udpAnnouncementEndpoint>
+# `<udpTransportSettings>` of `<udpAnnouncementEndpoint>`
 
 This configuration element exposes UDP transport settings for [\<udpAnnouncementEndpoint>](udpannouncementendpoint.md).
 

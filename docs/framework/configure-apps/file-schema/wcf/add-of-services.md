@@ -4,7 +4,7 @@ title: "<add> of <services>"
 ms.date: "03/30/2017"
 ms.assetid: 6bdc4590-aa9c-4ec8-9345-879d780cd141
 ---
-# `<add>` of \<services>
+# `<add>` of `<services>`
 
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services. This element is of type <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.
 

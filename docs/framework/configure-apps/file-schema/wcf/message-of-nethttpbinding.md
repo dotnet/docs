@@ -4,7 +4,7 @@ title: "<message> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
-# `<message>` of \<netHttpBinding>
+# `<message>` of `<netHttpBinding>`
 
 Defines the settings for message-level security of the [\<netHttpBinding>](nethttpbinding.md).
 

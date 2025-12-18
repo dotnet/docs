@@ -4,7 +4,7 @@ title: "<message> of <wsDualHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 ---
-# `<message>` of \<wsDualHttpBinding>
+# `<message>` of `<wsDualHttpBinding>`
 
 Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.md).
 

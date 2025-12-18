@@ -4,7 +4,7 @@ title: "<issuerMetadata> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
 ---
-# `<issuerMetadata>` of \<issuedTokenParameters>
+# `<issuerMetadata>` of `<issuedTokenParameters>`
 
 [`<configuration>`](../configuration-element.md)\
 &nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\

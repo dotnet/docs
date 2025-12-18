@@ -4,7 +4,7 @@ title: "<routing> of <serviceBehavior>"
 ms.date: "03/30/2017"
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
 ---
-# `<routing>` of \<serviceBehavior>
+# `<routing>` of `<serviceBehavior>`
 
 Provides runtime access to the routing service to allow dynamic modification of the routing configuration.
 

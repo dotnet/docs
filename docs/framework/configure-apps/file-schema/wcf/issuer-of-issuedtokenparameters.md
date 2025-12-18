@@ -4,7 +4,7 @@ title: "<issuer> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
 ---
-# `<issuer>` of \<issuedTokenParameters>
+# `<issuer>` of `<issuedTokenParameters>`
 
 Specifies the Security Token Service (STS) that issues security tokens.
 

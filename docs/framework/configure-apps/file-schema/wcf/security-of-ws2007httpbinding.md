@@ -4,7 +4,7 @@ title: "<security> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
 ---
-# `<security>` of \<ws2007HttpBinding>
+# `<security>` of `<ws2007HttpBinding>`
 
 Represents the security settings used with the [\<ws2007HttpBinding>](ws2007httpbinding.md) element.
 

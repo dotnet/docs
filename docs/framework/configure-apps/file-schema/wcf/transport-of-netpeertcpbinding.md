@@ -4,7 +4,7 @@ title: "<transport> of <netPeerTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
 ---
-# `<transport>` of \<netPeerTcpBinding>
+# `<transport>` of `<netPeerTcpBinding>`
 
 Specifies settings for transport level security when using the [\<netPeerTcpBinding>](netpeertcpbinding.md).
 

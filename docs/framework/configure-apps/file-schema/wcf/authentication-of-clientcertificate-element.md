@@ -4,7 +4,7 @@ title: "<authentication> of <clientCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
 ---
-# `<authentication>` of \<clientCertificate> Element
+# `<authentication>` of `<clientCertificate>` Element
 
 Specifies authentication behaviors for client certificates used by a service.
 

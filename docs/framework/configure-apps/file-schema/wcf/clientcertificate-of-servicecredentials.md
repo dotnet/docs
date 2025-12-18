@@ -4,7 +4,7 @@ title: "<clientCertificate> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
 ---
-# `<clientCertificate>` of \<serviceCredentials>
+# `<clientCertificate>` of `<serviceCredentials>`
 
 Defines an X.509 certificate used to sign and encrypt messages to a client form a service in a duplex communication pattern.
 

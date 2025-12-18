@@ -29,8 +29,8 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ------------|
+| Parent element                         | Description |
+|----------------------------------------|-------------|
 | [`<sectionName>`](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements

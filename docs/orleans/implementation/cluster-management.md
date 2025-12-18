@@ -2,7 +2,7 @@
 title: Cluster management in Orleans
 description: Learn about cluster management in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Cluster management in Orleans

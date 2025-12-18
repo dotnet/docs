@@ -27,20 +27,20 @@ Defines a namespace for configuration sections.
 
 ## Attribute
 
-|           | Description |
-| --------- | ----------- |
-| `name`  | Required attribute.<br><br>Specifies the name of the section group you are defining. |
+| Attribute | Description                                                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| `name`    | Required attribute.<br><br>Specifies the name of the section group you're defining. |
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
+| Parent element                                                    | Description |
+|-------------------------------------------------------------------|-------------|
 | [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
-|     | Description |
-| --- | ----------- |
+| Child element                     | Description                                   |
+|-----------------------------------|-----------------------------------------------|
 | [`<section>`](section-element.md) | Contains a configuration section declaration. |
 
 ## Remarks

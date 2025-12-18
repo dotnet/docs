@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords:
   - "add Element"
   - "<add> Element"
-ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 ---
 # `<add>` element for `<appSettings>`
 
@@ -27,15 +26,15 @@ Adds a custom application setting.
 
 ## Attributes
 
-|           | Description |
-| --------- | ----------- |
-| `key`   | Required attribute.<br><br>Specifies the name of the key to add. |
-| `value` | Required attribute.<br><br>Specifies the value of the key to add. |
+| Attribute | Description                                                       |
+|-----------|-------------------------------------------------------------------|
+| `key`     | Required attribute.<br><br>Specifies the name of the key to add.  |
+| `value`   | Required attribute.<br><br>Specifies the value of the key to add. |
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
+| Parent element                                              | Description |
+|-------------------------------------------------------------|-------------|
 | [`<appSettings>`](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
 
 ## Child elements

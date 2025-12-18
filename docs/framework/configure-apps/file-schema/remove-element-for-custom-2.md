@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
-ms.assetid: 8d8af7f5-26c9-4db9-bbe4-b2a4e6949568
 ---
 # `<remove>` element for NameValueSectionHandler and DictionarySectionHandler
 
@@ -25,14 +24,14 @@ Removes a previously defined setting.
 
 ## Attribute
 
-|           | Description |
-| --------- | ----------- |
-| `key`   | Required attribute.<br><br>Specifies the name of the setting to remove. |
+| Attribute | Description                                                             |
+|-----------|-------------------------------------------------------------------------|
+| `key`     | Required attribute.<br><br>Specifies the name of the setting to remove. |
 
 ## Parent element
 
-| Element | Description |
-| ------- | ------------|
+| Element                                | Description |
+|----------------------------------------|-------------|
 | [`<sectionName>`](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements

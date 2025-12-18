@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<add> element for <namedCaches>"
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 ---
-# `<add>` Element for \<namedCaches>
+# `<add>` element for `<namedCaches>`
 
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
 ---
-# `<add>` Element for \<sharedListeners>
+# `<add>` element for `<sharedListeners>`
 
 Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](source-element.md) or [\<trace>](trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](source-element.md) or [\<trace>](trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at runtime.
 

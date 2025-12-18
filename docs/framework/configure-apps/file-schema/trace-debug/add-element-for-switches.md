@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "add element for <switches>"
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
 ---
-# `<add>` Element for \<switches>
+# `<add>` element for `<switches>`
 
 Specifies the level where a trace switch is set.
 

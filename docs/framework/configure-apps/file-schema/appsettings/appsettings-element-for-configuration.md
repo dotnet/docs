@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<appSettings> Element"
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 ---
-# `<appSettings>` element for \<configuration>
+# `<appSettings>` element for `<configuration>`
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 

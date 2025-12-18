@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 ---
 
-# `<assemblyBinding>` element for \<configuration>
+# `<assemblyBinding>` element for `<configuration>`
 
 Specifies assembly binding policy at the configuration level.
 

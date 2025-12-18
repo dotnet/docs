@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "clear element for <namedCaches>"
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
 ---
-# `<clear>` Element for \<namedCaches>
+# `<clear>` element for `<namedCaches>`
 
 Clears all `namedCache` entries in the `namedCaches` collection for a memory cache.
 

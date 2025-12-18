@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<listeners> element for <source>"
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 ---
-# `<listeners>` Element for \<source>
+# `<listeners>` element for `<source>`
 
 Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.
 

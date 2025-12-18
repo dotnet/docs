@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<remove> element for namedCaches"
 ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
 ---
-# `<remove>` Element for \<namedCaches>
+# `<remove>` element for `<namedCaches>`
 
 Removes a named cache entry from the `namedCaches` collection for a memory cache.
 

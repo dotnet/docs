@@ -11,9 +11,9 @@ ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
 
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<PreferComInsteadOfManagedRemoting>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<PreferComInsteadOfManagedRemoting>`
 
 ## Syntax
 

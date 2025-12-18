@@ -12,8 +12,8 @@ ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
 
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;**\<system.runtime.caching>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;`<system.runtime.caching>`
 
 ## Syntax
 

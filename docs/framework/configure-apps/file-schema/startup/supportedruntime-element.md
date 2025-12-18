@@ -16,7 +16,7 @@ Specifies which common language runtime version and, optionally, .NET Framework 
 
 [\<configuration>](../configuration-element.md)
 &nbsp;&nbsp;[\<startup>](startup-element.md)
-&nbsp;&nbsp;&nbsp;&nbsp;**\<supportedRuntime>**
+&nbsp;&nbsp;&nbsp;&nbsp;`<supportedRuntime>`
 
 ## Syntax
 

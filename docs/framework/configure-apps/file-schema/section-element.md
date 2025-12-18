@@ -14,14 +14,14 @@ ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
 
 Contains a configuration section declaration.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<sectionGroup>`](sectiongroup-element-for-configsections.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
 ## Syntax
 
@@ -52,8 +52,8 @@ The following attributes are applicable only for ASP.NET applications. The confi
 
 |     | Description |
 | --- | ----------- |
-| [`<configSections>` Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
-| [`<sectionGroup>` Element](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [`<sectionGroup>`](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 
 > [!NOTE]
 > A `<section>` element is a child element of either `<configSections>` or `<sectionGroup>` but not both.

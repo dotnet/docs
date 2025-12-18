@@ -8,9 +8,9 @@ ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 
 Specifies whether the runtime distributes managed threads across all CPU groups.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<Thread_UseAllCpuGroups>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<Thread_UseAllCpuGroups>`
 
 ## Syntax
 

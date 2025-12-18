@@ -8,8 +8,8 @@ ms.custom: sfi-ropc-nochange
 
 This configuration section contains all the workflow configuration elements.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;**\<system.ServiceModel>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;`<system.ServiceModel>`
 
 ## Syntax
 

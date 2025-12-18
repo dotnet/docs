@@ -6,14 +6,13 @@ f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName"
 helpviewer_keywords:
   - "custom element"
-ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 ---
 # Custom element for SingleTagSectionHandler
 
 Defines settings in a custom configuration section that is defined by a `<section>` element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
 [`<configuration>`](configuration-element.md)\
-&nbsp;&nbsp;*\<sectionName>*
+&nbsp;&nbsp;`<sectionName>`
 
 ## Syntax
 
@@ -27,8 +26,8 @@ Attributes and attribute values are user defined.
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
+| Parent element                                | Description |
+|-----------------------------------------------|-------------|
 | [`<configuration>`](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements

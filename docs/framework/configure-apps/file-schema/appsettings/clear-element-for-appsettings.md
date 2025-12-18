@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
-ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 ---
 # `<clear>` element for `<appSettings>`
 
@@ -31,8 +30,8 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
+| Parent element                                              | Description |
+|-------------------------------------------------------------|-------------|
 | [`<appSettings>`](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
 
 ## Child elements

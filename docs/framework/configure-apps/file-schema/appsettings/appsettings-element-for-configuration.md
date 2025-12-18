@@ -13,8 +13,8 @@ ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;**\<appSettings>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;`<appSettings>`
 
 ## Syntax
 
@@ -34,15 +34,15 @@ Contains custom application settings. This is a predefined configuration section
 
 |     | Description |
 | --- | ----------- |
-| [`<configuration>` Element](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [`<configuration>`](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<add>**](add-element-for-appsettings.md) | Adds a custom application setting. |
-| [**\<clear>**](clear-element-for-appsettings.md) | Clears all previously defined application settings. |
-| [**\<remove>**](remove-element-for-appsettings.md) | Removes a previously defined application setting. |
+| [`<add>`](add-element-for-appsettings.md) | Adds a custom application setting. |
+| [`<clear>`](clear-element-for-appsettings.md) | Clears all previously defined application settings. |
+| [`<remove>`](remove-element-for-appsettings.md) | Removes a previously defined application setting. |
 
 ## Remarks
 

@@ -14,8 +14,8 @@ ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 
 Specifies assembly binding policy at the configuration level.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;**\<assemblyBinding>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;`<assemblyBinding>`
 
 ## Syntax
 
@@ -35,17 +35,17 @@ Specifies assembly binding policy at the configuration level.
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>**](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [`<configuration>`](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child element
 
 |     | Description |
 | --- | ----------- |
-| [**\<linkedConfiguration>**](linkedconfiguration-element.md) | Specifies a configuration file to include. |
+| [`<linkedConfiguration>`](linkedconfiguration-element.md) | Specifies a configuration file to include. |
 
 ## Remarks
 
-The [**\<linkedConfiguration>**](linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
+The [`<linkedConfiguration>`](linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
 
 > [!NOTE]
 > The `<linkedConfiguration>` element is not supported for applications with Windows side-by-side manifests.

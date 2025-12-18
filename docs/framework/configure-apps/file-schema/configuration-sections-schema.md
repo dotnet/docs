@@ -15,14 +15,14 @@ ms.assetid: 6e4cc793-c526-4007-b4e9-37d56295f2cb
 
 The configuration sections schema contains elements that define custom settings in configuration files. For general information on configuration files and schemas, see [Configuration file schema for the .NET Framework](index.md).
 
-[**\<configuration>**](configuration-element.md)
-[**\<configSections>**](configsections-element-for-configuration.md)
-[**\<section>**](section-element.md)
-[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)
+[`<configuration>`](configuration-element.md)
+[`<configSections>`](configsections-element-for-configuration.md)
+[`<section>`](section-element.md)
+[`<sectionGroup>`](sectiongroup-element-for-configsections.md)
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>**](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 | [`<section>` for `<configSections>` and `<sectionGroup>`](section-element.md) | Contains a configuration section declaration. |
 | [`<sectionGroup>` for `<configSections>`](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 

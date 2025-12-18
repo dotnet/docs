@@ -13,9 +13,9 @@ ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 
 Adds a custom application setting.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Adds a custom application setting.
 
 |     | Description |
 | --- | ----------- |
-| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
+| [`<appSettings>`](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
 
 ## Child elements
 

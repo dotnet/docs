@@ -41,7 +41,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
+|[`<configuration>`](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
 
 ## Remarks
 

@@ -44,7 +44,7 @@ Specifies compiler configuration settings for available language providers.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration>](../configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
+|[`<configuration>`](../configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
 
 ## Remarks
 

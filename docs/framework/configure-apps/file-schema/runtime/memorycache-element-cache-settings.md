@@ -53,7 +53,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
+|[`<configuration>`](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
 |[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|
 
 ## Remarks

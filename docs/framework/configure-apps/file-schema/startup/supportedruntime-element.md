@@ -14,8 +14,8 @@ ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 
 Specifies which common language runtime version and, optionally, .NET Framework version the application supports.
 
-[\<configuration>](../configuration-element.md)
-&nbsp;&nbsp;[\<startup>](startup-element.md)
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<startup>`](startup-element.md)
 &nbsp;&nbsp;&nbsp;&nbsp;`<supportedRuntime>`
 
 ## Syntax

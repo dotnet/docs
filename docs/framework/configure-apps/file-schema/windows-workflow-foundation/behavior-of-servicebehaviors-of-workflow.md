@@ -4,7 +4,7 @@ title: "<behavior> of <serviceBehaviors> of workflow"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# `<behavior>` of \<serviceBehaviors> of workflow
+# `<behavior>` of `<serviceBehaviors>` of workflow
 
 The `behavior` element contains a collection of settings for the behavior of a service. Each behavior is indexed by its `name`. Services can link to each behavior through this name using the `behaviorConfiguration` attribute of the [\<endpoint>](../wcf/endpoint-element.md) element. This allows endpoints to share common behavior configurations without redefining the settings.
 

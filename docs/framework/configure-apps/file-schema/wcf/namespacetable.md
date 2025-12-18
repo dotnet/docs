@@ -9,14 +9,14 @@ ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689
 
 Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**  
-  
-## Syntax  
-  
-```xml  
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<routing>`](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<namespaceTable>`
+
+## Syntax
+
+```xml
 <system.serviceModel>
   <routing>
     <namespaceTable>
@@ -25,8 +25,8 @@ Represents a configuration section for defining a set of elements that contain n
     </namespaceTable>
   </routing>
 </system.serviceModel>
-```  
-  
+```
+
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -39,13 +39,13 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<filter>**](filter.md) | Defines a namespace prefix mapping used for XPath expressions. |
+| [`<filter>`](filter.md) | Defines a namespace prefix mapping used for XPath expressions. |
 
 ### Parent elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<routing>**](routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
+| [`<routing>`](routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
 
 ## See also
 

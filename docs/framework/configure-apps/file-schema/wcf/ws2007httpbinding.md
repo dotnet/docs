@@ -6,16 +6,16 @@ ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
 ---
 # \<ws2007HttpBinding>
 
-Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
-  
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ws2007HttpBinding>**  
-  
-## Syntax  
-  
-```xml  
+Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.
+
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<ws2007HttpBinding>`
+
+## Syntax
+
+```xml
 <ws2007HttpBinding>
   <binding allowCookies="Boolean"
            bypassProxyOnLocal="Boolean"
@@ -51,53 +51,53 @@ Defines an interoperable binding that provides support for the correct versions 
                   maxStringContentLength="Integer" />
   </binding>
 </ws2007HttpBinding>
-```  
-  
-## Attributes and Elements  
+```
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|`allowCookies`|A value that indicates whether the client accepts cookies and propagates them on future requests. The default is `false`.<br /><br /> You can use this property when you interact with ASP.NET Web services (ASMX) that use cookies. This ensures that cookies that the server returns are automatically copied to all future client requests for that service.|  
-|`bypassProxyOnLocal`|A value that indicates whether to bypass the proxy server for local addresses. The default is `false`.|  
-|`closeTimeout`|A <xref:System.TimeSpan> value that specifies the time interval for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|`hostNameComparisonMode`|Specifies the HTTP hostname comparison mode used to parse Uniform Resource Identifiers (URIs). This attribute is of type <xref:System.ServiceModel.HostNameComparisonMode>, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, which ignores the hostname in the match.|  
-|`maxBufferPoolSize`|The maximum buffer pool size for this binding. The default is 524,288 bytes (512 × 1,024). Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, as is garbage collection for buffers. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool when you are done. This avoids the overhead in creating and destroying buffers.|  
-|`maxReceivedMessageSize`|The maximum message size, in bytes, including headers, which a channel configured with this binding, can receive. The sender of a message exceeding this limit receives a SOAP fault. The receiver drops the message and creates an entry of the event in the trace log. The default is 65536.|  
-|`messageEncoding`|Defines the encoder used to encode the message. Valid values include the following:<br /><br /> -   `Text`: Use a text message encoder.<br />-   `Mtom`: Use a Message Transmission Organization Mechanism 1.0 (MTOM) encoder.<br /><br /> The default is `Text`.<br /><br /> This attribute is of type <xref:System.ServiceModel.WSMessageEncoding>.|  
-|`name`|The configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|  
-|`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|`proxyAddress`|A URI that specifies the address of the HTTP proxy. If `useSystemWebProxy` is `true`, this setting must be `null`. The default is `null`.|  
-|`receiveTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a receive operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|`textEncoding`|Specifies the character set encoding to use for emitting messages on the binding. Valid values include the following:<br /><br /> -   `UnicodeFffeTextEncoding`: Unicode Big Endian encoding.<br />-   `Utf16TextEncoding`: 16-bit encoding.<br />-   `Utf8TextEncoding`: 8-bit encoding.<br /><br /> The default is `Utf8TextEncoding`.<br /><br /> This attribute is of type <xref:System.Text.Encoding>.|  
-|`transactionFlow`|A value that specifies whether the binding supports flowing WS-Transactions. The default is `false`.|  
-|`useDefaultWebProxy`|A value that specifies whether the system’s auto-configured HTTP proxy is used. The default is `true`.|  
-  
-### Child Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<security>](security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|  
-|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that endpoints configured with this binding can process. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
-  
-## Remarks  
+## Attributes and Elements
 
- The `WS2007HttpBinding` adds a system-provided binding similar to `WSHttpBinding` but uses the Organization for the Advancement of Structured Information Standards (OASIS) standard versions of the ReliableSession, Security, and TransactionFlow protocols. No changes to the object model or default settings are required when using this binding.  
-  
-## Example  
-  
-```xml  
+ The following sections describe attributes, child elements, and parent elements.
+
+### Attributes
+
+|Attribute|Description|
+|---------------|-----------------|
+|`allowCookies`|A value that indicates whether the client accepts cookies and propagates them on future requests. The default is `false`.<br /><br /> You can use this property when you interact with ASP.NET Web services (ASMX) that use cookies. This ensures that cookies that the server returns are automatically copied to all future client requests for that service.|
+|`bypassProxyOnLocal`|A value that indicates whether to bypass the proxy server for local addresses. The default is `false`.|
+|`closeTimeout`|A <xref:System.TimeSpan> value that specifies the time interval for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
+|`hostNameComparisonMode`|Specifies the HTTP hostname comparison mode used to parse Uniform Resource Identifiers (URIs). This attribute is of type <xref:System.ServiceModel.HostNameComparisonMode>, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, which ignores the hostname in the match.|
+|`maxBufferPoolSize`|The maximum buffer pool size for this binding. The default is 524,288 bytes (512 × 1,024). Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, as is garbage collection for buffers. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool when you are done. This avoids the overhead in creating and destroying buffers.|
+|`maxReceivedMessageSize`|The maximum message size, in bytes, including headers, which a channel configured with this binding, can receive. The sender of a message exceeding this limit receives a SOAP fault. The receiver drops the message and creates an entry of the event in the trace log. The default is 65536.|
+|`messageEncoding`|Defines the encoder used to encode the message. Valid values include the following:<br /><br /> -   `Text`: Use a text message encoder.<br />-   `Mtom`: Use a Message Transmission Organization Mechanism 1.0 (MTOM) encoder.<br /><br /> The default is `Text`.<br /><br /> This attribute is of type <xref:System.ServiceModel.WSMessageEncoding>.|
+|`name`|The configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|
+|`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
+|`proxyAddress`|A URI that specifies the address of the HTTP proxy. If `useSystemWebProxy` is `true`, this setting must be `null`. The default is `null`.|
+|`receiveTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a receive operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
+|`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
+|`textEncoding`|Specifies the character set encoding to use for emitting messages on the binding. Valid values include the following:<br /><br /> -   `UnicodeFffeTextEncoding`: Unicode Big Endian encoding.<br />-   `Utf16TextEncoding`: 16-bit encoding.<br />-   `Utf8TextEncoding`: 8-bit encoding.<br /><br /> The default is `Utf8TextEncoding`.<br /><br /> This attribute is of type <xref:System.Text.Encoding>.|
+|`transactionFlow`|A value that specifies whether the binding supports flowing WS-Transactions. The default is `false`.|
+|`useDefaultWebProxy`|A value that specifies whether the system’s auto-configured HTTP proxy is used. The default is `true`.|
+
+### Child Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<security>](security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that endpoints configured with this binding can process. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|
+
+## Remarks
+
+ The `WS2007HttpBinding` adds a system-provided binding similar to `WSHttpBinding` but uses the Organization for the Advancement of Structured Information Standards (OASIS) standard versions of the ReliableSession, Security, and TransactionFlow protocols. No changes to the object model or default settings are required when using this binding.
+
+## Example
+
+```xml
 <configuration>
   <system.ServiceModel>
     <bindings>
@@ -131,8 +131,8 @@ Defines an interoperable binding that provides support for the correct versions 
     </bindings>
   </system.ServiceModel>
 </configuration>
-```  
-  
+```
+
 ## See also
 
 - <xref:System.ServiceModel.WS2007HttpBinding>

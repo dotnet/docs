@@ -6,18 +6,18 @@ ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
 ---
 # \<security> of \<msmqIntegrationBinding>
 
-Defines the transport security settings for the Message Queuing (MSMQ) integration channel.  
-  
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<msmqIntegrationBinding>**](msmqintegrationbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
-  
-## Syntax  
-  
-```xml  
+Defines the transport security settings for the Message Queuing (MSMQ) integration channel.
+
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<msmqIntegrationBinding>`](msmqintegrationbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<binding>`\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<security>`
+
+## Syntax
+
+```xml
 <msmqIntegrationBinding>
   <binding>
     <security mode="None/Transport">
@@ -31,30 +31,30 @@ Defines the transport security settings for the Message Queuing (MSMQ) integrati
     </security>
   </binding>
 </msmqIntegrationBinding>
-```  
-  
-## Attributes and Elements  
+```
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|mode|Specifies the type of security that controls integrity, confidentiality and authentication with the Message Queuing integration channel. Valid values include the following:<br /><br /> -   None: This disables security.<br />-   Transport: Protection and authentication are offered by the transport. This applies to the message security between the two queue managers. There is no security offered between the application and queue manager. Existing Msmq applications are functionally equivalent with this type of security mode.<br /><br /> The default value is `Transport`. This attribute is of type <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.|  
-  
-### Child Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<transport>](transport-of-msmqintegrationbinding.md)|Defines the security settings for the Message Queuing integration transport. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<binding>](bindings.md)|The binding element of the [\<msmqIntegrationBinding>](msmqintegrationbinding.md).|  
-  
+## Attributes and Elements
+
+ The following sections describe attributes, child elements, and parent elements.
+
+### Attributes
+
+|Attribute|Description|
+|---------------|-----------------|
+|mode|Specifies the type of security that controls integrity, confidentiality and authentication with the Message Queuing integration channel. Valid values include the following:<br /><br /> -   None: This disables security.<br />-   Transport: Protection and authentication are offered by the transport. This applies to the message security between the two queue managers. There is no security offered between the application and queue manager. Existing Msmq applications are functionally equivalent with this type of security mode.<br /><br /> The default value is `Transport`. This attribute is of type <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.|
+
+### Child Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<transport>](transport-of-msmqintegrationbinding.md)|Defines the security settings for the Message Queuing integration transport. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<binding>](bindings.md)|The binding element of the [\<msmqIntegrationBinding>](msmqintegrationbinding.md).|
+
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>

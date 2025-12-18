@@ -142,6 +142,7 @@ Add the following to your `stryker-config.json` file to set mutation score thres
 ## Customization
 
 Besides setting thresholds for your pipeline, Stryker.NET offers the possibility of having different configurations for each of your project needs. You can do this customization of behavior using the _stryker-config.json_ file.
+
 ```json
 {
   "ignore-mutations": [

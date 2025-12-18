@@ -9,7 +9,7 @@ ms.date: 12/12/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-> _"With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-class services."_  
+> _"With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-class services."_
 > _- Roy Stephan_
 
 ## Vision
@@ -22,9 +22,9 @@ ms.date: 12/12/2021
 
 Whether you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has you covered when developing ASP.NET Core applications.
 
-**Visual Studio 2022.** Visual Studio 2022 is the best-in-class IDE for developing applications for ASP.NET Core. It offers a host of features that increase developer productivity. You can use it to develop the application, then analyze its performance and other characteristics. The integrated debugger lets you pause code execution and step back and forth through code on the fly as it's running. Its support for hot reloads allows you to continue working with your app where you left off, even after making code changes, without having to restart the app. The built-in test runner lets you organize your tests and their results and can even perform live unit testing while you're coding. Using Live Share, you can collaborate in real-time with other developers, sharing your code session seamlessly over the network. And when you're ready, Visual Studio includes everything you need to publish your application to Azure or wherever you might host it.
+**Visual Studio.** Visual Studio is the best-in-class IDE for developing applications for ASP.NET Core. It offers a host of features that increase developer productivity. You can use it to develop the application, then analyze its performance and other characteristics. The integrated debugger lets you pause code execution and step back and forth through code on the fly as it's running. Its support for hot reloads allows you to continue working with your app where you left off, even after making code changes, without having to restart the app. The built-in test runner lets you organize your tests and their results and can even perform live unit testing while you're coding. Using Live Share, you can collaborate in real-time with other developers, sharing your code session seamlessly over the network. And when you're ready, Visual Studio includes everything you need to publish your application to Azure or wherever you might host it.
 
-[Download Visual Studio 2022](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+[Download Visual Studio](https://aka.ms/vsdownload?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)
 
 **Visual Studio Code and dotnet CLI** (Cross-Platform Tools for Mac, Linux, and Windows). If you prefer a lightweight and cross-platform editor supporting any development language, you can use Microsoft Visual Studio Code and the dotnet CLI. These products provide a simple yet robust experience that streamlines the developer workflow. Additionally, Visual Studio Code supports extensions for C\# and web development, providing intellisense and shortcut-tasks within the editor.
 
@@ -98,7 +98,7 @@ While the Web App is running, you can monitor the health of the application and 
 
 ## References
 
-**Build and Deploy Your ASP.NET Core App to Azure**  
+**Build and Deploy Your ASP.NET Core App to Azure**
 [https://learn.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core](/azure/devops/build-release/apps/aspnet/build-aspnet-core)
 
 >[!div class="step-by-step"]

@@ -344,6 +344,7 @@
                 "docs/core/docker/**/**.md": "IEvangelist",
                 "docs/core/install/**/**.md": "adegeo",
                 "docs/core/native-interop/**/**.md": "jkoritzinsky",
+                "docs/core/porting/github-copilot-app-modernization/**/*.*": "adegeo",
                 "docs/core/project-sdk/**/**.md": "gewarren",
                 "docs/core/runtime-config/**/**.md": "gewarren",
                 "docs/core/testing/**/**.md": "IEvangelist",
@@ -437,6 +438,7 @@
                 "docs/core/install/**/**.md": "adegeo",
                 "docs/core/native-interop/**/**.md": "jekoritz",
                 "docs/core/porting/**/**.md": "dotnetcontent",
+                "docs/core/porting/github-copilot-app-modernization/**/*.*": "adegeo",
                 "docs/core/project-sdk/**/**.md": "gewarren",
                 "docs/core/runtime-config/**/**.md": "gewarren",
                 "docs/core/testing/**/**.md": "dapine",
@@ -886,13 +888,15 @@
                 "_vblang/**.md": false
             },
             "ms.collection": {
-                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
+                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot",
+                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.custom": {
                 "docs/ai/**/**.{md,yml}": "devx-track-dotnet"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
+                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "180-days",
                 "docs/csharp/whats-new/**/**.{md,yml}": "1095-days",
                 "docs/csharp/advanced-topics/interop/**/**.{md,yml}": "1825-days",
                 "docs/csharp/advanced-topics/reflection-and-attributes/**/**.{md,yml}": "1825-days",

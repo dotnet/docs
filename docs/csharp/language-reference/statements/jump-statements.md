@@ -27,11 +27,11 @@ For information about the `throw` statement that throws an exception and uncondi
 
 The `break` statement terminates the closest enclosing [iteration statement](iteration-statements.md) (that is, `for`, `foreach`, `while`, or `do` loop) or [`switch` statement](selection-statements.md#the-switch-statement). The `break` statement transfers control to the statement that follows the terminated statement, if any.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/BreakStatement.cs" id="BasicExample":::
+:::code language="csharp" source="snippets/jump-statements/BreakStatement.cs" id="BasicExample":::
 
 In nested loops, the `break` statement terminates only the innermost loop that contains it, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/BreakStatement.cs" id="NestedLoop":::
+:::code language="csharp" source="snippets/jump-statements/BreakStatement.cs" id="NestedLoop":::
 
 When you use the `switch` statement inside a loop, a `break` statement at the end of a switch section transfers control only out of the `switch` statement. The loop that contains the `switch` statement is unaffected, as the following example shows:
 
@@ -41,7 +41,7 @@ When you use the `switch` statement inside a loop, a `break` statement at the en
 
 The `continue` statement starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md) (that is, `for`, `foreach`, `while`, or `do` loop), as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ContinueStatement.cs" id="BasicExample":::
+:::code language="csharp" source="snippets/jump-statements/ContinueStatement.cs" id="BasicExample":::
 
 ## The `return` statement
 
@@ -49,13 +49,13 @@ The `return` statement terminates execution of the function in which it appears 
 
 If a function member doesn't compute a value, you use the `return` statement without expression, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithoutExpression":::
+:::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="WithoutExpression":::
 
 As the preceding example shows, you typically use the `return` statement without expression to terminate a function member early. If a function member doesn't contain the `return` statement, it terminates after its last statement is executed.
 
 If a function member computes a value, you use the `return` statement with an expression, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
+:::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
 
 When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, you use the `return` statement without expression.
 
@@ -63,7 +63,7 @@ When the `return` statement has an expression, that expression must be implicitl
 
 By default, the `return` statement returns the value of an expression. You can return a reference to a variable. Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method. To do that, use the `return` statement with the `ref` keyword, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
+:::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
 A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#reference-variables). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
@@ -129,7 +129,7 @@ As the preceding example shows, you can use the `goto` statement to get out of a
 
 You can also use the `goto` statement in the [`switch` statement](selection-statements.md#the-switch-statement) to transfer control to a switch section with a constant case label, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet" source="snippets/jump-statements/GotoInSwitchExample.cs":::
+:::code language="csharp" source="snippets/jump-statements/GotoInSwitchExample.cs":::
 
 Within the `switch` statement, you can also use the statement `goto default;` to transfer control to the switch section with the `default` label.
 

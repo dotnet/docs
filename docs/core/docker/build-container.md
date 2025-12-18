@@ -260,8 +260,6 @@ The next command, `ENTRYPOINT`, tells Docker to configure the container to run a
 >
 > For more information on various .NET environment variables, see [.NET environment variables](../tools/dotnet-environment-variables.md).
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 ## Create a container
 
 Now that you have an image that contains your app, you can create a container. You can create a container in two ways. First, create a new container that is stopped.

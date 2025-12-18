@@ -15,7 +15,7 @@ This article describes new features and enhancements in the .NET SDK for .NET 10
 
 ### Platform-specific .NET tools
 
-.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or run time. This makes cross-platform tool authoring and distribution much easier.
+.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or runtime. This makes cross-platform tool authoring and distribution much easier.
 
 These enhanced tools support various packaging variations:
 
@@ -251,10 +251,10 @@ The `--interactive` flag is now enabled by default for CLI commands in interacti
 
 ## Native shell tab-completion scripts
 
-The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions generate [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
+The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions script [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
 
 ```powershell
-dotnet completions script pwsh | out-String | Invoke-Expression -ErrorAction SilentlyContinue
+dotnet completions script pwsh | Out-String | Invoke-Expression
 ```
 
 ## Console apps can natively create container images

@@ -1,7 +1,7 @@
 ---
 title: "Working with .resx Files Programmatically"
 description: Create or retrieve data from XML resource (.resx) files programmatically using types and members in the System.Resources namespace of the .NET Class Library.
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -68,7 +68,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 
 ## Convert .resx files to binary .resources files
 
- Converting .resx files to embedded binary resource (*.resources*) files has significant advantages. Although .resx files are easy to read and maintain during application development, they are rarely included with finished applications. If they are distributed with an application, they exist as separate files apart from the application executable and its accompanying libraries. In contrast, *.resources* files are embedded in the application executable or its accompanying assemblies. In addition, for localized applications, relying on .resx files at run time places the responsibility for handling resource fallback on the developer. In contrast, if a set of satellite assemblies that contain embedded .resources files has been created, the common language runtime handles the resource fallback process.
+ Converting .resx files to embedded binary resource (*.resources*) files has significant advantages. Although .resx files are easy to read and maintain during application development, they are rarely included with finished applications. If they are distributed with an application, they exist as separate files apart from the application executable and its accompanying libraries. In contrast, *.resources* files are embedded in the application executable or its accompanying assemblies. In addition, for localized applications, relying on .resx files at runtime places the responsibility for handling resource fallback on the developer. In contrast, if a set of satellite assemblies that contain embedded .resources files has been created, the common language runtime handles the resource fallback process.
 
  To convert a *.resx* file to a *.resources* file, you use [Resource File Generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md), which has the following basic syntax:
 

@@ -3,7 +3,7 @@ title: Install .NET on RHEL and CentOS Stream
 description: Learn about which versions of .NET are supported, and how to install .NET on Red Hat Enterprise Linux and CentOS Stream.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/14/2025
 ms.custom: linux-related-content
 ---
 
@@ -15,7 +15,7 @@ ms.custom: linux-related-content
 
 ## Register your Red Hat subscription
 
-To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/8.0).
+To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/10.0).
 
 > [!IMPORTANT]
 > The previous statement doesn't apply to CentOS Stream.
@@ -28,7 +28,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 |---------------------------------------|----------|
 | [RHEL 10](#rhel-10)                   | 10, 9, 8 |
 | [RHEL 9](#rhel-9)                     | 10, 9, 8 |
-| [RHEL 8](#rhel-8)                     | 9, 8     |
+| [RHEL 8](#rhel-8)                     | 10, 9, 8 |
 | [CentOS Stream 10](#centos-stream-10) | 10, 9, 8 |
 | [CentOS Stream 9](#centos-stream-9)   | 10, 9, 8 |
 
@@ -44,8 +44,6 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 ## RHEL 10
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 .NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 10.
 
 [!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
@@ -60,7 +58,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 .NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 8.
 
-[!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
 
 ## CentOS Stream 10
 

@@ -130,7 +130,7 @@ The <xref:System.Text.Json?displayProperty=fullName> registration precedence for
 * <xref:System.Text.Json.JsonSerializerOptions.Converters> collection
 * Attribute on type
 
-The difference here is that a custom converter in the `Converters` collection overrides an attribute at the type level. The intention behind this order of precedence is to make run-time changes override design-time choices. There's no way to change the precedence.
+The difference here is that a custom converter in the `Converters` collection overrides an attribute at the type level. The intention behind this order of precedence is to make runtime changes override design-time choices. There's no way to change the precedence.
 
 For more information about custom converter registration, see [Register a custom converter](converters-how-to.md#register-a-custom-converter).
 

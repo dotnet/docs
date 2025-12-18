@@ -12,8 +12,6 @@ ms.topic: concept-article
 
 # Syntax overview: Commands, options, and arguments
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 This article explains the command-line syntax that `System.CommandLine` recognizes. The information is useful to both users and developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 
 ## Tokens
@@ -158,18 +156,18 @@ Arguments also have expectations about how many values can be provided. Examples
 
 ## Order of options and arguments
 
-You can provide options before arguments or arguments before options on the command line. The following commands are equivalent:
+You can provide options before arguments, or arguments before options, on the command line. The following commands are equivalent:
 
 ```dotnetcli
-dotnet add package System.CommandLine --prerelease
-dotnet add package --prerelease System.CommandLine
+dotnet add package System.CommandLine --no-restore
+dotnet add package --no-restore System.CommandLine
 ```
 
 Options can be specified in any order. The following commands are equivalent:
 
 ```dotnetcli
-dotnet add package System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
-dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
+dotnet add package System.CommandLine --no-restore --source https://api.nuget.org/v3/index.json
+dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore
 ```
 
 When there are multiple arguments, the order does matter. The following commands are not equivalent; they differ in the order of the values, which could lead to different results:

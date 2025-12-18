@@ -1,7 +1,7 @@
 ---
 title: "Generics and attributes"
 description: Learn about applying attributes to generic types. See code examples and view more available resources.
-ms.date: 03/15/2023
+ms.date: 11/18/2025
 helpviewer_keywords: 
   - "generics [C#], attributes"
   - "attributes [C#], with generics"
@@ -33,7 +33,7 @@ An attribute that references a generic type parameter causes a compile-time erro
 class ClassD<T> { }
 ```
 
-Beginning with C# 11, a generic type can inherit from <xref:System.Attribute>:
+A generic type can inherit from <xref:System.Attribute>:
 
 :::code language="csharp" source="./snippets/conceptual/GenericsAndAttributes.cs" id="GenericAttribute":::
 

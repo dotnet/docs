@@ -39,7 +39,7 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

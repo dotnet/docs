@@ -9,6 +9,8 @@ items:
         href: ../../core/sdk.md
       - name: Environment variables
         href: ../../core/tools/dotnet-environment-variables.md
+      - name: File-based apps
+        href: ../../core/sdk/file-based-apps.md
       - name: dotnet-install scripts
         href: ../../core/tools/dotnet-install-script.md
       - name: global.json overview
@@ -194,6 +196,8 @@ items:
                 href: ../../core/tools/dotnet-package-update.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet project convert
+            href: ../../core/tools/dotnet-project-convert.md
           - name: dotnet reference add/list/remove
             items:
               - name: dotnet reference add
@@ -265,7 +269,7 @@ items:
                 href: ../../core/tools/dotnet-workload-update.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md
-      - name: Enable Tab completion
+      - name: Enable tab completion
         href: ../../core/tools/enable-tab-autocomplete.md
       - name: Develop libraries with the CLI
         href: ../../core/tutorials/libraries.md
@@ -314,6 +318,9 @@ items:
       - name: Manage tools
         displayName: global tool,local tool
         href: ../../core/tools/global-tools.md
+      - name: RID-specific, self-contained, and AOT tools
+        displayName: rid-specific tool,self-contained tool,aot tool
+        href: ../../core/tools/rid-specific-tools.md
       - name: Troubleshoot tools
         displayName: global tool troubleshooting,local tool troubleshooting,
         href: ../../core/tools/troubleshoot-usage-issues.md
@@ -3936,7 +3943,7 @@ items:
       - name: Obsoletions
         items:
           - name: Overview
-            displayName: syslib, obsolete, obsoletion
+            displayName: syslib, extobs, obsolete, obsoletion
             href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
           - name: SYSLIB0001
             href: ../../fundamentals/syslib-diagnostics/syslib0001.md
@@ -4170,6 +4177,10 @@ items:
           - name: SYSLIB1230
             href: ../../fundamentals/syslib-diagnostics/syslib1230.md
             displayProperty: syslib1230, syslib1231, syslib1232, syslib1233, syslib1234, syslib1235, syslib1236, syslib1237, syslib1238, syslib1239
+  - name: EXTOBS diagnostics
+    items:
+      - name: EXTOBS0001
+        href: ../../fundamentals/syslib-diagnostics/extobs0001.md
   - name: API compatibility
     items:
       - name: Overview

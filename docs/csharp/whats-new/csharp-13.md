@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13.
-ms.date: 05/29/2025
+ms.date: 11/18/2025
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -103,7 +103,7 @@ In versions before C# 13, the `^` operator can't be used in an object initialize
 
 ## `ref` and `unsafe` in iterators and `async` methods
 
-This feature and the following two features enable `ref struct` types to use new constructs. You won't use these features unless you write your own `ref struct` types. More likely, you'll see an indirect benefit as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> gain more functionality.
+This feature and the following two features enable `ref struct` types to use new constructs. You won't use these features unless you write your own `ref struct` types. More likely, you see an indirect benefit as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> gain more functionality.
 
 Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
 
@@ -140,7 +140,7 @@ Learn more in the updates on [`ref struct` types](../language-reference/builtin-
 
 ## More partial members
 
-You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for *implementing* a partial property. Properties that don't declare a body are considered the *declaring declaration*.
+You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for *implementing* a partial property. Properties that don't declare a body are considered as the *declaring declaration*.
 
 ```csharp
 public partial class C
@@ -175,7 +175,9 @@ The [`field`](../language-reference/keywords/field.md) contextual keyword is in 
 
 The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential breaking change or confusion reading code in types that also include a field named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
 
-[!INCLUDE[field-preview](../includes/field-preview.md)]
+> [!IMPORTANT]
+>
+> You should be careful using the `field` keyword feature in a class that has a field named `field`. The new `field` keyword shadows a field named `field` in the scope of a property accessor. You can either change the name of the `field` variable, or use the `@` token to reference the `field` identifier as `@field`. You can learn more by reading the feature specification for [the `field` keyword](~/_csharplang/proposals/csharp-14.0/field-keyword.md).
 
 If you try this feature and have feedback, add it to the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
 

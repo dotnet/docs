@@ -54,7 +54,7 @@ The following upgrade paths are supported:
 - UWP to WinUI 3
 - Previous .NET version to the latest .NET version
 - Xamarin Forms to .NET MAUI
-  - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
+  - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 or later.
 
 ## Upgrade details and options
 

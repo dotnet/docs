@@ -80,14 +80,14 @@ Some `CultureInfo` objects differ depending on the underlying platform. In parti
 
 ## Dynamic culture data
 
-Except for the invariant culture, culture data is dynamic. This is true even for the predefined cultures. For example, countries or regions adopt new currencies, change their spellings of words, or change their preferred calendar, and culture definitions change to track this. Custom cultures are subject to change without notice, and any specific culture might be overridden by a custom replacement culture. Also, as discussed below, an individual user can override cultural preferences. Applications should always obtain culture data at run time.
+Except for the invariant culture, culture data is dynamic. This is true even for the predefined cultures. For example, countries or regions adopt new currencies, change their spellings of words, or change their preferred calendar, and culture definitions change to track this. Custom cultures are subject to change without notice, and any specific culture might be overridden by a custom replacement culture. Also, as discussed below, an individual user can override cultural preferences. Applications should always obtain culture data at runtime.
 
 > [!CAUTION]
 > When saving data, your application should use the invariant culture, a binary format, or a specific culture-independent format. Data saved according to the current values associated with a particular culture, other than the invariant culture, might become unreadable or might change in meaning if that culture changes.
 
 ## The current culture and current UI culture
 
-Every thread in a .NET application has a current culture and a current UI culture. The current culture determines the formatting conventions for dates, times, numbers, and currency values, the sort order of text, casing conventions, and the ways in which strings are compared. The current UI culture is used to retrieve culture-specific resources at run time.
+Every thread in a .NET application has a current culture and a current UI culture. The current culture determines the formatting conventions for dates, times, numbers, and currency values, the sort order of text, casing conventions, and the ways in which strings are compared. The current UI culture is used to retrieve culture-specific resources at runtime.
 
 > [!NOTE]
 > For information on how the current and current UI culture is determined on a per-thread basis, see the  [Culture and threads](#culture-and-threads) section. For information on how the current and current UI culture is determined on threads executing in a new application domain, and on threads that cross application domain boundaries, see the [Culture and application domains](#culture-and-application-domains) section. For information on how the current and current UI culture is determined on  threads performing task-based asynchronous operations, see the [Culture and task-based asynchronous operations](#culture-and-task-based-asynchronous-operations) section.

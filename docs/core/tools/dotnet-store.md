@@ -35,7 +35,7 @@ dotnet store -h|--help
 
   Specifies the [target framework](../../standard/frameworks.md). The target framework has to be specified in the project file.
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-m|--manifest <PATH_TO_MANIFEST_FILE>`**
 
@@ -67,13 +67,13 @@ dotnet store -h|--help
 
   Use current runtime as the target runtime. The default is `false`.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`-w|--working-dir <WORKING_DIRECTORY>`**
 
   The working directory used by the command. If not specified, it uses the *obj* subdirectory of the current directory.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

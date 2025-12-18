@@ -176,7 +176,7 @@ For example, to redirect one reference to a .NET Framework 3.5 assembly and anot
 ## See also
 
 - [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
-- [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
+- [`<bindingRedirect>` Element](./file-schema/runtime/bindingredirect-element.md)
 - [Assembly Binding Redirection Security Permission](assembly-binding-redirection-security-permission.md)
 - [Assemblies in .NET](../../standard/assembly/index.md)
 - [Programming with Assemblies](../../standard/assembly/index.md)

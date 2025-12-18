@@ -29,7 +29,7 @@ dotnet build-server -h|--help
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--msbuild`**
 

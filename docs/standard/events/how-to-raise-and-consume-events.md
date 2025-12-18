@@ -1,7 +1,7 @@
 ---
 title: "How to: Raise and Consume Events"
 description: Raise & consume events in .NET. See examples that use the EventHandler delegate, the EventHandler<TEventArgs> delegate, & a custom delegate.
-ms.date: "07/29/2022"
+ms.date: 10/20/2025
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

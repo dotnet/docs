@@ -54,7 +54,7 @@ builder.UseApplicationMetadata()
 
 This method automatically picks up values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and saves them to the default configuration section `ambientmetadata:application`.
 
-Alternatively, you can use this method <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)>, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adds it to the given configuration section name. Then you use <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allow you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
+Alternatively, you can use the <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)> method, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adds it to the given configuration section name. Then you use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allow you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args)
@@ -73,44 +73,81 @@ You can provide additional configuration via `appsettings.json`. There are two p
 
 ### 3. Register the application log enricher
 
-Register the log enricher into the dependency injection container using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+Register the log enricher into the dependency injection container.
+
+### [.NET 10.1+](#tab/net10-plus)
+
+Starting with .NET 10, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
 
 ```csharp
-serviceCollection.AppApplicationLogEnricher();
+serviceCollection.AddApplicationLogEnricher();
 ```
 
-You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
+You can enable or disable individual options of the enricher:
 
 ```csharp
-serviceCollection.AppApplicationLogEnricher(options =>
+serviceCollection.AddApplicationLogEnricher(options =>
 {
     options.BuildVersion = true;
     options.DeploymentRing = true;
 });
 ```
 
+### [.NET 9 and earlier](#tab/net9-earlier)
+
+For .NET 9 and earlier versions, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
+
+```csharp
+serviceCollection.AddServiceLogEnricher();
+```
+
+> [!WARNING]
+> The `AddServiceLogEnricher` method is obsolete starting with .NET 10.1. Use `AddApplicationLogEnricher` instead.
+
+You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
+
+```csharp
+serviceCollection.AddApplicationLogEnricher(options =>
+{
+    options.BuildVersion = true;
+    options.DeploymentRing = true;
+});
+```
+
+---
+
 Alternatively, configure options using `appsettings.json`:
 
 :::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="8-11":::
 
-And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
+Next, apply the configuration.
+
+### [.NET 10.1+](#tab/net10-plus-config)
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AppApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
-
+builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
 ```
 
-## `ApplicationLogEnricherOptions` configuration options
+### [.NET 9 and earlier](#tab/net9-earlier-config)
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+```
+
+---
+
+### `ApplicationLogEnricherOptions` configuration options
 
 The application log enricher supports several configuration options through the <xref:Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions> class:
 
-| Property | Default Value | Dimension Name | Description |
-|----------|---------------|----------------|-------------|
-| `EnvironmentName` | true | `deployment.environment` | Environment name from hosting environment or configuration |
-| `ApplicationName` | true | `service.name` | Application name from hosting environment or configuration |
-| `BuildVersion` | false | `service.version` | Build version from configuration |
-| `DeploymentRing` | false | `DeploymentRing` | Deployment ring from configuration |
+| Property          | Default value | Dimension name           | Description                                                |
+|-------------------|---------------|--------------------------|------------------------------------------------------------|
+| `EnvironmentName` | true          | `deployment.environment` | Environment name from hosting environment or configuration |
+| `ApplicationName` | true          | `service.name`           | Application name from hosting environment or configuration |
+| `BuildVersion`    | false         | `service.version`        | Build version from configuration                           |
+| `DeploymentRing`  | false         | `DeploymentRing`         | Deployment ring from configuration                         |
 
 By default, the enricher includes `EnvironmentName` and `ApplicationName` in log entries. The `BuildVersion` and `DeploymentRing` properties are disabled by default and must be explicitly enabled if needed.
 
@@ -124,9 +161,41 @@ Here's a complete example showing how to set up the application log enricher:
 
 **Program.cs:**
 
-:::code language="csharp" source="snippets/applicationlogenricher/Program.cs" :::
+### [.NET 10.1+](#tab/net10-plus-full-example)
 
-## Enriched log output
+```csharp
+using System.Text.Json;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseApplicationMetadata();
+builder.Logging.EnableEnrichment();
+builder.Logging.AddJsonConsole(op =>
+{
+    op.JsonWriterOptions = new JsonWriterOptions
+    {
+        Indented = true
+    };
+});
+builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+
+var host = builder.Build();
+var logger = host.Services.GetRequiredService<ILogger<Program>>();
+
+logger.LogInformation("This is a sample log message");
+
+await host.RunAsync();
+```
+
+### [.NET 9 and earlier](#tab/net9-earlier-full-example)
+
+:::code language="csharp" source="snippets/servicelogenricher/Program.cs" :::
+
+---
+
+### Enriched log output
 
 With the application log enricher configured, your log output will include service-specific dimensions:
 

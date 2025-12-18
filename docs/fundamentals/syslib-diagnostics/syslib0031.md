@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0031: EncodeOID is obsolete
 
-The <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> method is marked as obsolete, starting in .NET 6. Using this API in code generates warning `SYSLIB0031` at compile time and throws a <xref:System.PlatformNotSupportedException> exception at run time.
+The <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> method is marked as obsolete, starting in .NET 6. Using this API in code generates warning `SYSLIB0031` at compile time and throws a <xref:System.PlatformNotSupportedException> exception at runtime.
 
 ## Workarounds
 

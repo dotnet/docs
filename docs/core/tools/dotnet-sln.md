@@ -58,7 +58,7 @@ dotnet new sln --output MySolution
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Commands
 
@@ -91,7 +91,7 @@ dotnet sln list [-h|--help]
 
 #### Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ### `add`
 
@@ -128,7 +128,7 @@ dotnet sln add [-h|--help]
 
 #### Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--in-root`**
 
@@ -165,7 +165,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 #### Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ### `migrate`
 
@@ -190,7 +190,7 @@ dotnet sln [<SOLUTION_FILE>] migrate [-h|--help]
 
 #### Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

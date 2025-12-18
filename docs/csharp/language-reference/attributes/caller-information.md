@@ -1,6 +1,6 @@
 ---
 title: "Attributes interpreted by the compiler: Tracking caller information"
-ms.date: 11/02/2021
+ms.date: 11/18/2025
 description: These attributes instruct the compiler to generate information about the code that calls a member. You use the CallerFilePath, CallerLineNumber, CallerMemberName, and CallerArgumentExpression to provide detailed trace information
 ---
 
@@ -19,14 +19,14 @@ This information helps you with tracing and debugging, and helps you to create d
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="CallerFileMemberLine":::
 
-You specify an explicit default value for each optional parameter. You can't apply caller info attributes to parameters that aren't specified as optional. The caller info attributes don't make a parameter optional. Instead, they affect the default value that's passed in when the argument is omitted. Caller info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace%2A> property for exceptions, the results aren't affected by obfuscation. You can explicitly supply the optional arguments to control the caller information or to hide caller information.
+You specify an explicit default value for each optional parameter. You can't apply caller info attributes to parameters that aren't specified as optional. The caller info attributes don't make a parameter optional. Instead, they affect the default value passed in when the argument is omitted. Caller info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace%2A> property for exceptions, obfuscation doesn't affect the results. You can explicitly supply the optional arguments to control the caller information or to hide caller information.
 
 ## Member names
 
 You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:
 
 - Using tracing and diagnostic routines.
-- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed. The control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.
+- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property changed. The control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.
 
 The following chart shows the member names that are returned when you use the `CallerMemberName` attribute.
 
@@ -37,12 +37,12 @@ The following chart shows the member names that are returned when you use the `C
 | Static constructor | The string ".cctor" |
 | Finalizer | The string "Finalize" |
 | User-defined operators or conversions | The generated name for the member, for example, "op_Addition". |
-| Attribute constructor | The name of the method or property to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element. |
+| Attribute constructor | The name of the method or property to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member associated with that element. |
 | No containing member (for example, assembly-level or attributes that are applied to types) | The default value of the optional parameter. |
 
 ## Argument expressions
 
-You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression passed as an argument. Diagnostic libraries may want to provide more details about the *expressions* passed to arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers have more details about the condition that triggered the diagnostic. That extra information makes it easier to fix.
+You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression passed as an argument. Diagnostic libraries can provide more details about the *expressions* passed to arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers have more details about the condition that triggered the diagnostic. That extra information makes it easier to fix.
 
 The following example shows how you can provide detailed information about the argument when it's invalid:
 
@@ -52,17 +52,17 @@ You would invoke it as shown in the following example:
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="InvokeTestCondition":::
 
-The expression used for `condition` is injected by the compiler into the `message` argument. When a developer calls `Operation` with a `null` argument, the following message is stored in the `ArgumentException`:
+The compiler injects the expression used for `condition` into the `message` argument. When a developer calls `Operation` with a `null` argument, the following message is stored in the `ArgumentException`:
 
 ```text
 Argument failed validation: <func is not null>
 ```
 
-This attribute enables you to write diagnostic utilities that provide more details. Developers can more quickly understand what changes are needed. You can also use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to determine what expression was used as the receiver for extension methods. The following method samples a sequence at regular intervals. If the sequence has fewer elements than the frequency, it reports an error:
+This attribute enables you to write diagnostic utilities that provide more details. Developers can more quickly understand what changes are needed. You can also use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to determine what expression was used as the receiver for extension members. The following method samples a sequence at regular intervals. If the sequence has fewer elements than the frequency, it reports an error:
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="ExtensionMethod":::
 
-The previous example uses the [`nameof`](../operators/nameof.md) operator for the parameter `sequence`. That feature is available in C# 11. Before C# 11, you'll need to type the name of the parameter as a string. You could call this method as follows:
+The previous example uses the [`nameof`](../operators/nameof.md) operator for the parameter `sequence`. You could call this method as follows:
 
 :::code language="csharp" source="./snippets/Program.cs" id="ShortSequence":::
 

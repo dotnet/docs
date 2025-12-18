@@ -5,10 +5,10 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "managed debugging assistants (MDAs), handles"
   - "release handle failed"
-  - "CriticalHandle class, run-time errors"
+  - "CriticalHandle class, runtime errors"
   - "releaseHandleFailed MDA"
   - "ReleaseHandle method"
-  - "SafeHandle class, run-time errors"
+  - "SafeHandle class, runtime errors"
   - "MDAs (managed debugging assistants), handles"
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
 ---

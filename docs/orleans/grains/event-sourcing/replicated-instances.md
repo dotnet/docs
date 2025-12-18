@@ -2,12 +2,12 @@
 title: Replicated grains
 description: Learn the concepts of replicated grains in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Replicated grains
 
-Sometimes, multiple instances of the same grain can be active, such as when operating a multi-cluster and using the <xref:Orleans.MultiCluster.OneInstancePerClusterAttribute>. `JournaledGrain` is designed to support replicated instances with minimal friction. It relies on *log-consistency providers* to run the necessary protocols ensuring all instances agree on the same sequence of events. In particular, it handles the following aspects:
+Multiple instances of the same grain can be active in certain scenarios. `JournaledGrain` is designed to support replicated instances with minimal friction. It relies on *log-consistency providers* to run the necessary protocols ensuring all instances agree on the same sequence of events. In particular, it handles the following aspects:
 
 - **Consistent versions**: All versions of the grain state (except tentative versions) are based on the same global sequence of events. In particular, if two instances see the same version number, they see the same state.
 

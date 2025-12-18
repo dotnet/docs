@@ -49,7 +49,7 @@ You generate embeddings for your raw data by using an AI embedding model, which 
 
 ### Store and process embeddings in a vector database
 
-After you generate embeddings, you'll need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [available vector database solutions](vector-databases.md#available-vector-database-solutions).
+After you generate embeddings, you'll need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [available vector database solutions](vector-databases.md#semantic-kernel-vector-database-solutions).
 
 ### Using embeddings in your LLM solution
 

@@ -1,7 +1,7 @@
 #!/usr/local/share/dotnet/dotnet run
 
 #:package Colorful.Console@1.2.15
-#:package System.CommandLine@2.0.0-beta6
+#:package System.CommandLine@2.0.0
 
 using System.CommandLine;
 using System.CommandLine.Parsing;

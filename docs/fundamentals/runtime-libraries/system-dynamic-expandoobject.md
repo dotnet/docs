@@ -10,7 +10,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Dynamic.ExpandoObject> class enables you to add and delete members of its instances at run time and also to set and get values of these members. This class supports dynamic binding, which enables you to use standard syntax like `sampleObject.sampleMember` instead of more complex syntax like `sampleObject.GetAttribute("sampleMember")`.
+The <xref:System.Dynamic.ExpandoObject> class enables you to add and delete members of its instances at runtime and also to set and get values of these members. This class supports dynamic binding, which enables you to use standard syntax like `sampleObject.sampleMember` instead of more complex syntax like `sampleObject.GetAttribute("sampleMember")`.
 
 The `ExpandoObject` class implements the standard Dynamic Language Runtime (DLR) interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `ExpandoObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `ExpandoObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md) and [Introducing the ExpandoObject](/archive/blogs/csharpfaq/dynamic-in-c-4-0-introducing-the-expandoobject).
 
@@ -111,7 +111,7 @@ The following code example demonstrates how you can create and use a method to p
 
 ## Enumerate and delete members
 
-The `ExpandoObject` class implements the `IDictionary<String, Object>` interface. This enables enumeration of members added to the instance of the `ExpandoObject` class at run time. This can be useful if you do not know at compile time what members an instance might have.
+The `ExpandoObject` class implements the `IDictionary<String, Object>` interface. This enables enumeration of members added to the instance of the `ExpandoObject` class at runtime. This can be useful if you do not know at compile time what members an instance might have.
 
 The following code example shows how you can cast an instance of the `ExpandoObject` class to the <xref:System.Collections.Generic.IDictionary%602> interface and enumerate the instance's members.
 

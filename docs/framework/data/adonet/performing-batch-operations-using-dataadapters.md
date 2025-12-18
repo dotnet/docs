@@ -21,7 +21,7 @@ Batch support in ADO.NET allows a <xref:System.Data.Common.DataAdapter> to group
 
  When batch updates are enabled, the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property value of the DataAdapter's `UpdateCommand`, `InsertCommand`, and `DeleteCommand` should be set to <xref:System.Data.UpdateRowSource.None> or <xref:System.Data.UpdateRowSource.OutputParameters>. When performing a batch update, the command's <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property value of <xref:System.Data.UpdateRowSource.FirstReturnedRecord> or <xref:System.Data.UpdateRowSource.Both> is invalid.
 
- The following procedure demonstrates the use of the `UpdateBatchSize` property. The procedure takes two arguments, a <xref:System.Data.DataSet> object that has columns representing the **ProductCategoryID** and **Name** fields in the **Production.ProductCategory** table, and an integer representing the batch size (the number of rows in the batch). The code creates a new <xref:System.Data.SqlClient.SqlDataAdapter> object, setting its <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> properties. The code assumes that the <xref:System.Data.DataSet> object has modified rows. It sets the `UpdateBatchSize` property and executes the update.
+ The following procedure demonstrates the use of the `UpdateBatchSize` property. The procedure takes two arguments, a <xref:System.Data.DataSet> object that has columns representing the `ProductCategoryID` and `Name` fields in the **Production.ProductCategory** table, and an integer representing the batch size (the number of rows in the batch). The code creates a new <xref:System.Data.SqlClient.SqlDataAdapter> object, setting its <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> properties. The code assumes that the <xref:System.Data.DataSet> object has modified rows. It sets the `UpdateBatchSize` property and executes the update.
 
 ```vb
 Public Sub BatchUpdate( _
@@ -124,7 +124,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
 
 ## Handling Batch Update-Related Events and Errors
 
- The **DataAdapter** has two update-related events: **RowUpdating** and **RowUpdated**. In previous versions of ADO.NET, when batch processing is disabled, each of these events is generated once for each row processed. **RowUpdating** is generated before the update occurs, and **RowUpdated** is generated after the database update has been completed.
+ The `DataAdapter` has two update-related events: `RowUpdating` and **RowUpdated**. In previous versions of ADO.NET, when batch processing is disabled, each of these events is generated once for each row processed. `RowUpdating` is generated before the update occurs, and `RowUpdated` is generated after the database update has been completed.
 
 ### Event Behavior Changes with Batch Updates
 

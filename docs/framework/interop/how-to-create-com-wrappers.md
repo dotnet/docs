@@ -40,7 +40,7 @@ You can now write code to access the COM object. You can begin by declaring the 
 
 - Run the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md) tool.
 
- This tool creates an assembly that contains run-time metadata for the types defined in the original type library.
+ This tool creates an assembly that contains runtime metadata for the types defined in the original type library.
 
 ## Wrap Managed Objects in a Native Application
 

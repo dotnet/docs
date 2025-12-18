@@ -8,7 +8,13 @@ items:
   - name: Overview
     href: dotnet-ai-ecosystem.md
   - name: Microsoft.Extensions.AI
-    href: microsoft-extensions-ai.md
+    items:
+    - name: Overview
+      href: microsoft-extensions-ai.md
+    - name: The IChatClient interface
+      href: ichatclient.md
+    - name: The IEmbeddingGenerator interface
+      href: iembeddinggenerator.md
   - name: Microsoft Agent Framework
     href: /agent-framework/overview/agent-framework-overview?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: C# SDK for MCP
@@ -36,7 +42,7 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: Building agents in .NET
+  - name: Agents
     href: conceptual/agents.md
   - name: Tokens
     href: conceptual/understanding-tokens.md
@@ -44,6 +50,8 @@ items:
     href: conceptual/embeddings.md
   - name: Vector databases
     href: conceptual/vector-databases.md
+  - name: Data ingestion
+    href: conceptual/data-ingestion.md
   - name: Prompt engineering
     href: conceptual/prompt-engineering-dotnet.md
   - name: Chain-of-thought prompting
@@ -54,6 +62,18 @@ items:
     href: conceptual/rag.md
   - name: OpenAI function calling
     href: conceptual/understanding-openai-functions.md
+- name: Call functions
+  items:
+    - name: "Quickstart: Execute a local function"
+      href: quickstarts/use-function-calling.md
+    - name: Access data in AI functions
+      href: how-to/access-data-in-functions.md
+- name: Text to image
+  items:
+    - name: Generate images using MEAI
+      href: quickstarts/text-to-image.md
+    - name: Generate images using OpenAI.Images.ImageClient
+      href: quickstarts/generate-images.md
 - name: Chat with your data (RAG)
   items:
     - name: Get started with the RAG sample
@@ -68,12 +88,6 @@ items:
       href: quickstarts/build-mcp-server.md
     - name: Build a minimal MCP client
       href: quickstarts/build-mcp-client.md
-- name: Text to image
-  items:
-    - name: Generate images using MEAI
-      href: quickstarts/text-to-image.md
-    - name: Generate images using OpenAI.Images.ImageClient
-      href: quickstarts/generate-images.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services
@@ -104,10 +118,6 @@ items:
       href: evaluation/evaluate-with-reporting.md
     - name: "Evaluate response safety with caching and reporting"
       href: evaluation/evaluate-safety.md
-- name: Advanced
-  items:
-  - name: Sample interface implementations
-    href: advanced/sample-implementations.md
 - name: Resources
   items:
   - name: Get started resources
@@ -118,7 +128,11 @@ items:
     href: resources/mcp-servers.md
   - name: API reference
     items:
-    - name: Microsoft.Extensions.AI
-      href: /dotnet/api/microsoft.extensions.ai
     - name: Microsoft.Agents.AI
       href: /dotnet/api/microsoft.agents.ai
+    - name: Microsoft.Extensions.AI
+      href: /dotnet/api/microsoft.extensions.ai
+    - name: Microsoft.Extensions.DataIngestion
+      href: /dotnet/api/microsoft.extensions.dataingestion
+    - name: Microsoft.Extensions.VectorData
+      href: /dotnet/api/microsoft.extensions.vectordata

@@ -94,7 +94,7 @@ catch (FaultException<MathFault> e)
 }
 ```
 
-By default, the details of unexpected exceptions are not sent to the client to prevent details of the service implementation from escaping the secure boundary of the service. `FaultContract` provides a way to describe faults in a contract and mark certain types of exceptions as appropriate for transmission to the client. `FaultException<T>` provides the run-time mechanism for sending faults to consumers.
+By default, the details of unexpected exceptions are not sent to the client to prevent details of the service implementation from escaping the secure boundary of the service. `FaultContract` provides a way to describe faults in a contract and mark certain types of exceptions as appropriate for transmission to the client. `FaultException<T>` provides the runtime mechanism for sending faults to consumers.
 
 However, it is useful to see the internal details of a service failure when debugging. To turn off the secure behavior previously described, you can indicate that the details of every unhandled exception on the server should be included in the fault that is sent to the client. This is accomplished by setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true`. You can either set it in code, or in configuration as shown in the following sample.
 

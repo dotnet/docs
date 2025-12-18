@@ -90,6 +90,7 @@ The F# compiler supports several opt-in warnings:
 | 3570  | Ambiguous discard or shorthand   |  n/a  | Warn when '_' is ambiguously used both as a discard and a function shorthand in the same scope. |
 | 3579  | Untyped string interpolation     |  n/a  | Warn when interpolated strings contain untyped values. Typed format specifiers are recommended. |
 | 3582  | Function shadows union case      |  n/a  | Warn when a function definition unintentionally shadows a union case. Use parentheses to disambiguate. |
+| 3878  | Attribute invalid on union case with fields | n/a | Warn when an attribute is not valid for use on union cases with fields. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
 (You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)

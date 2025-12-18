@@ -24,7 +24,7 @@ xsd file.xsd {/classes | /dataset} [/element:element]
                           [/parameters:file.xml]
 xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/parameters:file.xml]
 ```
-  
+
 > [!TIP]
 > For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\\\<version>\Bin directory. SDKVars.bat must be executed in every command shell.
 
@@ -148,7 +148,7 @@ To generate a code file, use the `<generateClasses>` element. The following exam
 |-------------|-----------------|
 |\<element>|Specifies an element in the .xsd file to generate code for.|
 |\<schemaImporterExtensions>|Specifies a type derived from the <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> class.|
-|\<schema>|Specifies a XML Schema file to generate code for. Multiple XML Schema files can be specified using multiple \<schema> elements.|
+|\<schema>|Specifies a XML Schema file to generate code for. Multiple XML Schema files can be specified using multiple `<schema>` elements.|
 
 The following table shows the attributes that can also be used with the `<generateClasses>` element.
 
@@ -171,7 +171,7 @@ Options you can set for the `<generateDataSet>` element include the following.
 
 |Element|Description|
 |-------------|-----------------|
-|\<schema>|Specifies an XML Schema file to generate code for. Multiple XML Schema files can be specified using multiple \<schema> elements.|
+|\<schema>|Specifies an XML Schema file to generate code for. Multiple XML Schema files can be specified using multiple `<schema>` elements.|
 
  The following table shows the attributes that can be used with the `<generateDataSet>` element.
 

@@ -1,7 +1,7 @@
 ---
 title: "Bitwise and shift operators - perform boolean (AND, NOT, OR, XOR) and shift operations on individual bits in integral types"
 description: "Learn about C# operators that perform bitwise logical (AND - `&`, NOT - `~`, OR - `|`, XOR - `^`) or shift operations(`<<`, and `>>`) with operands of integral types. "
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -54,7 +54,7 @@ Bitwise and shift operations never cause overflow and produce the same results i
 
 The `~` operator produces a bitwise complement of its operand by reversing each bit:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseComplement":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseComplement":::
 
 You can also use the `~` symbol to declare finalizers. For more information, see [Finalizers](../../programming-guide/classes-and-structs/finalizers.md).
 
@@ -64,11 +64,11 @@ The `<<` operator shifts its left-hand operand left by the number of bits define
 
 The left-shift operation discards the high-order bits that are outside the range of the result type and sets the low-order empty bit positions to zero, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LeftShift":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LeftShift":::
 
 Because the shift operators are defined only for the `int`, `uint`, `long`, and `ulong` types, the result of an operation always contains at least 32 bits. If the left-hand operand is of another integral type (`sbyte`, `byte`, `short`, `ushort`, or `char`), its value is converted to the `int` type, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LeftShiftPromoted":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LeftShiftPromoted":::
 
 ## Right-shift operator >>
 
@@ -76,24 +76,24 @@ The `>>` operator shifts its left-hand operand right by the number of bits defin
 
 The right-shift operation discards the low-order bits, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="RightShift":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="RightShift":::
 
 The high-order empty bit positions are set based on the type of the left-hand operand as follows:
 
 - If the left-hand operand is of type `int` or `long`, the right-shift operator performs an *arithmetic* shift: the value of the most significant bit (the sign bit) of the left-hand operand is propagated to the high-order empty bit positions. That is, the high-order empty bit positions are set to zero if the left-hand operand is non-negative and set to one if it's negative.
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="ArithmeticRightShift":::
+  :::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="ArithmeticRightShift":::
 
 - If the left-hand operand is of type `uint` or `ulong`, the right-shift operator performs a *logical* shift: the high-order empty bit positions are always set to zero.
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LogicalRightShift":::
+  :::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LogicalRightShift":::
 
 > [!NOTE]
-> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. The logical shift is preferred to casting a left-hand operand to an unsigned type and then casting the result of a shift operation back to a signed type.
+> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. The logical shift is preferred. Avoid casting the left-hand operand to an unsigned type and then casting the result of a shift operation back to a signed type.
 
 ## Unsigned right-shift operator >>>
 
-Available in C# 11 and later, the `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
+The `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The `>>>` operator always performs a *logical* shift. That is, the high-order empty bit positions are always set to zero, regardless of the type of the left-hand operand. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift (that is, the value of the most significant bit is propagated to the high-order empty bit positions) if the left-hand operand is of a signed type. The following example demonstrates the difference between `>>` and `>>>` operators for a negative left-hand operand:
 
@@ -103,7 +103,7 @@ The `>>>` operator always performs a *logical* shift. That is, the high-order em
 
 The `&` operator computes the bitwise logical AND of its integral operands:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseAnd":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseAnd":::
 
 For `bool` operands, the `&` operator computes the [logical AND](boolean-logical-operators.md#logical-and-operator-) of its operands. The unary `&` operator is the [address-of operator](pointer-related-operators.md#address-of-operator-).
 
@@ -111,7 +111,7 @@ For `bool` operands, the `&` operator computes the [logical AND](boolean-logical
 
 The `^` operator computes the bitwise logical exclusive OR, also known as the bitwise logical XOR, of its integral operands:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseXor":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseXor":::
 
 For `bool` operands, the `^` operator computes the [logical exclusive OR](boolean-logical-operators.md#logical-exclusive-or-operator-) of its operands.
 
@@ -119,7 +119,7 @@ For `bool` operands, the `^` operator computes the [logical exclusive OR](boolea
 
 The `|` operator computes the bitwise logical OR of its integral operands:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseOr":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="BitwiseOr":::
 
 For `bool` operands, the `|` operator computes the [logical OR](boolean-logical-operators.md#logical-or-operator-) of its operands.
 
@@ -145,7 +145,7 @@ The following example demonstrates the usage of compound assignment with bitwise
 
 Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="CompoundAssignmentWithCast":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="CompoundAssignmentWithCast":::
 
 ## Operator precedence
 
@@ -159,7 +159,7 @@ The following list orders bitwise and shift operators starting from the highest 
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="Precedence":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="Precedence":::
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
@@ -173,7 +173,7 @@ For the `x << count`, `x >> count`, and `x >>> count` expressions, the actual sh
 
 The following example demonstrates that behavior:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="ShiftCount":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="ShiftCount":::
 
 > [!NOTE]
 > As the preceding example shows, the result of a shift operation can be non-zero even if the value of the right-hand operand is greater than the number of bits in the left-hand operand.
@@ -188,7 +188,7 @@ You typically use bitwise logical operators with an enumeration type that is def
 
 A user-defined type can [overload](operator-overloading.md) the `~`, `<<`, `>>`, `>>>`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the compound assignment operators to provide a more efficient implementation. Typically, a type overloads these operators because the value can be updated in place, rather than allocating a new instance to store the result of the binary operation. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
-If a user-defined type `T` overloads the `<<`, `>>`, or `>>>` operator, the type of the left-hand operand must be `T`. In C# 10 and earlier, the type of the right-hand operand must be `int`; beginning with C# 11, the type of the right-hand operand of an overloaded shift operator can be any.
+If a user-defined type `T` overloads the `<<`, `>>`, or `>>>` operator, the type of the left-hand operand must be `T`. In C# 10 and earlier, the type of the right-hand operand must be `int`; the type of the right-hand operand of an overloaded shift operator can be any.
 
 ## C# language specification
 
@@ -199,8 +199,8 @@ For more information, see the following sections of the [C# language specificati
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1215-logical-operators)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#12234-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
-- [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
-- [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
+- [Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
+- [Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
 - [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
 
 ## See also

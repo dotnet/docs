@@ -1,7 +1,7 @@
 ---
 title: "The checked and unchecked statements - overflow-checking"
 description: "Control the overflow-checking context. In a checked context, overflow causes an exception to be thrown. In an unchecked context, the result is truncated."
-ms.date: 10/29/2022
+ms.date: 11/18/2025
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "unchecked_CSharpKeyword"
@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 The `checked` and `unchecked` statements specify the overflow-checking context for integral-type arithmetic operations and conversions. The default statement is `unchecked`. When integer arithmetic overflow occurs, the overflow-checking context defines what happens. In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs. In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, addition wraps from the maximum value to the minimum value. The following example shows the same operation in both a checked and unchecked context:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="MainExample":::
+:::code language="csharp" source="snippets/checked-and-unchecked/Program.cs" id="MainExample":::
 
 > [!NOTE]
 > The overflow behavior of *user-defined* operators and conversions can differ from the one described in the preceding paragraph. In particular, [user-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) might not throw an exception in a checked context.
@@ -24,11 +24,11 @@ For more information, see the [Arithmetic overflow and division by zero](../oper
 
 To specify the overflow-checking context for an expression, you can also use the `checked` and `unchecked` operators, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="OperatorForm":::
+:::code language="csharp" source="snippets/checked-and-unchecked/Program.cs" id="OperatorForm":::
 
 The `checked` and `unchecked` statements and operators only affect the overflow-checking context for those operations that are *textually* inside the statement block or operator's parentheses, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="ScopeExample":::
+:::code language="csharp" source="snippets/checked-and-unchecked/Program.cs" id="ScopeExample":::
 
 At the preceding example, the first invocation of the `Multiply` local function shows that the `checked` statement doesn't affect the overflow-checking context within the `Multiply` function as no exception is thrown. At the second invocation of the `Multiply` function, the expression that calculates the second argument of the function is evaluated in a checked context and results in an exception as it's textually inside the block of the `checked` statement.
 
@@ -52,7 +52,7 @@ The overflow-checking context affects the following operations:
   > [!NOTE]
   > When you convert a `decimal` value to an integral type and the result is outside the range of the destination type, an <xref:System.OverflowException> is always thrown, regardless of the overflow-checking context.
 
-- Beginning with C# 11, user-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
+- You can use user-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
 ## Default overflow-checking context
 
@@ -66,7 +66,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [The checked and unchecked statements](~/_csharpstandard/standard/statements.md#1312-the-checked-and-unchecked-statements)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
-- [User-defined checked and unchecked operators - C# 11](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md)
+- [User-defined checked and unchecked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md)
 
 ## See also
 

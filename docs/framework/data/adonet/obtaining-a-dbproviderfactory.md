@@ -15,7 +15,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 ## Registering DbProviderFactories
 
- Each .NET Framework data provider that supports a factory-based class registers configuration information in the **DbProviderFactories** section of the **machine.config** file on the local computer. The following configuration file fragment shows the syntax and format for <xref:System.Data.SqlClient>.
+ Each .NET Framework data provider that supports a factory-based class registers configuration information in the `DbProviderFactories` section of the **machine.config** file on the local computer. The following configuration file fragment shows the syntax and format for <xref:System.Data.SqlClient>.
 
 ```xml
 <system.data>
@@ -30,20 +30,20 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 </system.data>
 ```
 
- The **invariant** attribute identifies the underlying data provider. This three-part naming syntax is also used when creating a new factory and for identifying the provider in an application configuration file so that the provider name, along with its associated connection string, can be retrieved at run time.
+ The `invariant` attribute identifies the underlying data provider. This three-part naming syntax is also used when creating a new factory and for identifying the provider in an application configuration file so that the provider name, along with its associated connection string, can be retrieved at runtime.
 
 ## Retrieving Provider Information
 
- You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A> method. It returns a <xref:System.Data.DataTable> named **DbProviderFactories** that contains the columns described in the following table.
+ You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A> method. It returns a <xref:System.Data.DataTable> named `DbProviderFactories` that contains the columns described in the following table.
 
 | Column ordinal | Column name     | Example output                             | Description                               |
 |----------------|-----------------|--------------------------------------------|-------------------------------------------|
-| 0              | **Name**        | SqlClient Data Provider                    | Readable name for the data provider       |
-| 1              | **Description** | .Net Framework Data Provider for SqlServer | Readable description of the data provider |
-| 2              | **InvariantName** | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
-| 3              | **AssemblyQualifiedName** | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
+| 0              | `Name`        | SqlClient Data Provider                    | Readable name for the data provider       |
+| 1              | `Description` | .Net Framework Data Provider for SqlServer | Readable description of the data provider |
+| 2              | `InvariantName` | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
+| 3              | `AssemblyQualifiedName` | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
 
- This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at run time. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
+ This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at runtime. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
 
 ## Listing the Installed Provider Factory Classes
 
@@ -56,7 +56,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
  The design pattern used for working with factories entails storing provider and connection string information in an application configuration file, such as **app.config** for a Windows application, and **web.config** for an ASP.NET application.
 
- The following configuration file fragment demonstrates how to save two named connection strings: "NorthwindSQL" for a connection to the Northwind database in SQL Server, and "NorthwindAccess" for a connection to the Northwind database in Access/Jet. The **invariant** name is used for the **providerName** attribute.
+ The following configuration file fragment demonstrates how to save two named connection strings: "NorthwindSQL" for a connection to the Northwind database in SQL Server, and "NorthwindAccess" for a connection to the Northwind database in Access/Jet. The `invariant` name is used for the `providerName` attribute.
 
 ```xml
 <configuration>

@@ -36,7 +36,7 @@ This section contains a sample **PosKeyboard** Service Object that generates sim
 
 4. Create a Service Object class derived from **PosKeyboardBase**.
 
-5. Add the **ServiceObject** attribute to your Service Object class, using the **DeviceType.PosKeyboard** value as your device type.
+5. Add the `ServiceObject` attribute to your Service Object class, using the **DeviceType.PosKeyboard** value as your device type.
 
 ## To add features to the sample keyboard Service Object
 

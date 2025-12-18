@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 ---
-# \<AppContextSwitchOverrides> element
+# `<AppContextSwitchOverrides>` element
 
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.
 
@@ -182,5 +182,5 @@ The following example uses the `<add>` element to add two settings to the `<appS
 - [Configure apps by using configuration files](../../index.md)
 - [Mitigate new behaviors in .NET Framework 4.6 and later](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>
-- [\<runtime> Element](runtime-element.md)
-- [\<configuration> Element](../configuration-element.md)
+- [`<runtime>` Element](runtime-element.md)
+- [`<configuration>` Element](../configuration-element.md)

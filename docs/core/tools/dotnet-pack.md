@@ -48,9 +48,9 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ### Implicit restore
 
-[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+[!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -60,11 +60,11 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
+- [!INCLUDE [configuration](includes/cli-configuration-publish-pack.md)]
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`--force`**
 
@@ -78,7 +78,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--no-build`**
 
@@ -112,9 +112,9 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -132,7 +132,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

@@ -192,7 +192,7 @@ The complete list of obsolete CAS APIs is as follows:
   }
   ```
 
-- If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand. All demands will succeed at run time.
+- If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand. All demands will succeed at runtime.
 
   ```csharp
   // REMOVE the attribute below; it will always succeed.

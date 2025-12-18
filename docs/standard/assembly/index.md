@@ -85,7 +85,7 @@ To use an assembly in an application, you must add a reference to it. When an as
 > [!NOTE]
 > Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:
 >
-> - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
+> - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add a [`<PackageReference>`](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
 > - For .NET Framework, add a reference to the assembly using the **Add Reference** dialog in Visual Studio or the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
 
 In C#, you can use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).
@@ -103,7 +103,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 |[Assembly placement](../../framework/app-domains/assembly-placement.md)|Where to locate assemblies.|
 |[Assemblies and side-by-side execution](side-by-side-execution.md)|Use multiple versions of the runtime or an assembly simultaneously.|
 |[Emit dynamic methods and assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)|How to create dynamic assemblies.|
-|[How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|How the .NET Framework resolves assembly references at run time.|
+|[How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|How the .NET Framework resolves assembly references at runtime.|
 
 ## Reference
 

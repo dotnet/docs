@@ -1,7 +1,7 @@
 ---
 title: "Addition operators - + and +="
 description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -24,21 +24,21 @@ For information about the arithmetic `+` operator, see the [Unary plus and minus
 
 When one or both operands are of type [string](../builtin-types/reference-types.md#the-string-type), the `+` operator concatenates the string representations of its operands (the string representation of `null` is an empty string):
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddStrings":::
+:::code language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddStrings":::
 
 [String interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/AdditionOperator.cs" id="UseStringInterpolation":::
+:::code language="csharp" source="snippets/shared/AdditionOperator.cs" id="UseStringInterpolation":::
 
 You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, the `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
+The `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
 
 ## Delegate combination
 
 For operands of the same [delegate](../builtin-types/reference-types.md#the-delegate-type) type, the `+` operator returns a new delegate instance that, when invoked, invokes the left-hand operand and then invokes the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddDelegates":::
+:::code language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddDelegates":::
 
 To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
 
@@ -62,7 +62,7 @@ Except that `x` is only evaluated once.
 
 The following example demonstrates the usage of the `+=` operator:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddAndAssign":::
+:::code language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddAndAssign":::
 
 You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 

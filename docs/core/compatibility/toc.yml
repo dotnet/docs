@@ -90,6 +90,8 @@ items:
             items:
               - name: BackgroundService runs all of ExecuteAsync as a Task
                 href: extensions/10.0/backgroundservice-executeasync-task.md
+              - name: Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey
+                href: extensions/10.0/getkeyedservice-anykey.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration
@@ -108,6 +110,8 @@ items:
                 href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
+              - name: Casting IDispatchEx COM object to IReflect fails
+                href: interop/10.0/idispatchex-ireflect-cast.md
               - name: Single-file apps no longer look for native libraries in executable directory
                 href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
@@ -122,6 +126,8 @@ items:
                 href: networking/10.0/uri-length-limits-removed.md
           - name: Reflection
             items:
+              - name: More restricted annotations on InvokeMember/FindMembers/DeclaredMembers
+                href: reflection/10/ireflect-damt-annotations.md
               - name: Type.MakeGenericSignatureType argument validation
                 href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
@@ -170,8 +176,12 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
+              - name: "'ToolCommandName' not set for non-tool packages"
+                href: sdk/10.0/toolcommandname-not-set.md
           - name: Serialization
             items:
+              - name: System.Text.Json checks for property name conflicts
+                href: serialization/10/property-name-validation.md
               - name: XmlSerializer no longer ignores properties marked with ObsoleteAttribute
                 href: serialization/10/xmlserializer-obsolete-properties.md
           - name: Windows Forms

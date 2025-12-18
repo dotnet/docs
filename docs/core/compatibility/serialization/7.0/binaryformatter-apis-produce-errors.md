@@ -49,7 +49,7 @@ The best course of action is to migrate away from `BinaryFormatter` due to its s
 If you must suppress the errors, you can do so by following the guidelines in the [original obsoletion article](../5.0/binaryformatter-serialization-obsolete.md#recommended-action). You can also disable the error project-wide by setting a project property that converts the error back to a warning (to match the .NET 5/6 behavior).
 
 > [!WARNING]
-> Setting this property might change host behavior. See [\<EnableUnsafeBinaryFormatterSerialization> property](#enableunsafebinaryformatterserialization-property).
+> Setting this property might change host behavior. See [`<EnableUnsafeBinaryFormatterSerialization>` property](#enableunsafebinaryformatterserialization-property).
 
 ```csharp
 <PropertyGroup>
@@ -61,20 +61,20 @@ If you must suppress the errors, you can do so by following the guidelines in th
 > [!NOTE]
 > If your project compiles with "warnings as errors" enabled, compilation will still fail. (This matches the behavior that shipped in the .NET 5 and .NET 6 SDKs.) If that's the case, you'll still need to suppress the `SYSLIB0011` warning in source or in your project file's `<NoWarn>` element.
 
-### \<EnableUnsafeBinaryFormatterSerialization> property
+### `<EnableUnsafeBinaryFormatterSerialization>` property
 
-The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 5. With .NET 7, the behavior of this switch has changed to control *both compilation and host* run-time behavior. The meaning of this switch differs based on the project type, as described in the following table.
+The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 5. With .NET 7, the behavior of this switch has changed to control *both compilation and host* runtime behavior. The meaning of this switch differs based on the project type, as described in the following table.
 
 | Type of project | Property set to `true` | Property set to `false` | Property omitted |
 | - | - | - | - |
 | Library/shared component<sup>1</sup> | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. | (Same as for `false`.) |
-| Blazor and MAUI apps<sup>2</sup> | Calls to `BinaryFormatter` will fail at run time. | Calls to `BinaryFormatter` will fail at run time. | Calls to `BinaryFormatter` will fail at run time. |
+| Blazor and MAUI apps<sup>2</sup> | Calls to `BinaryFormatter` will fail at runtime. | Calls to `BinaryFormatter` will fail at runtime. | Calls to `BinaryFormatter` will fail at runtime. |
 | ASP.NET app | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *forbid* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | (Same as for `false`.) |
 | Desktop apps and all other app types | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *forbid* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. |
 
-<sup>1</sup>Runtime policy is controlled by the app host. Calls into `BinaryFormatter` might still fail at run time even if `<EnableUnsafeBinaryFormatterSerialization>` is set to `true` within your library's project file. Libraries can't override the app host's runtime policy.
+<sup>1</sup>Runtime policy is controlled by the app host. Calls into `BinaryFormatter` might still fail at runtime even if `<EnableUnsafeBinaryFormatterSerialization>` is set to `true` within your library's project file. Libraries can't override the app host's runtime policy.
 
-<sup>2</sup>The Blazor and MAUI runtimes forbid calls to `BinaryFormatter`. Regardless of any value you set for `<EnableUnsafeBinaryFormatterSerialization>`, the calls will fail at run time. Don't call these APIs from Blazor or MAUI applications or from libraries intended to be consumed by Blazor or MAUI apps.
+<sup>2</sup>The Blazor and MAUI runtimes forbid calls to `BinaryFormatter`. Regardless of any value you set for `<EnableUnsafeBinaryFormatterSerialization>`, the calls will fail at runtime. Don't call these APIs from Blazor or MAUI applications or from libraries intended to be consumed by Blazor or MAUI apps.
 
 ## Affected APIs
 

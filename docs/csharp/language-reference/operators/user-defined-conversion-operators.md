@@ -1,7 +1,7 @@
 ---
 title: "User-defined explicit and implicit conversion operators - provide conversions to different types"
 description: "Learn how to define custom implicit and explicit type conversions in C#. The operators provide the functionality for casting an object to a new type."
-ms.date: 02/19/2025
+ms.date: 11/18/2025
 f1_keywords:
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"
@@ -25,7 +25,7 @@ The following example demonstrates how to define an implicit and explicit conver
 
 :::code language="csharp" source="snippets/shared/UserDefinedConversions.cs":::
 
-Beginning with C# 11, you can define *checked* explicit conversion operators. For more information, see the [User-defined checked operators](arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](arithmetic-operators.md) article.
+You can define *checked* explicit conversion operators. For more information, see the [User-defined checked operators](arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](arithmetic-operators.md) article.
 
 You also use the `operator` keyword to overload a predefined C# operator. For more information, see [Operator overloading](operator-overloading.md).
 

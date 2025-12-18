@@ -136,4 +136,4 @@ For example:
 
 HTTP client latency telemetry runs on all supported targets (.NET 9, .NET 8, .NET Standard 2.0, and .NET Framework 4.6.2).
 Core timing checkpoints are always collected. The GC pause metric (Http.GCPauseTime) is emitted only when running on .NET 8 or .NET 9.
-The implementation detects platform capabilities at run time and enables what is supported without additional configuration.
+The implementation detects platform capabilities at runtime and enables what is supported without additional configuration.

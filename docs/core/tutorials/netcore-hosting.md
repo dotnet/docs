@@ -16,7 +16,7 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
+Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)).
 
 You also need to build a .NET component to test the host with, so you should install the [latests .NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with.
 

@@ -5,7 +5,7 @@ ms.date: 06/15/2023
 ---
 # Customize a JSON contract
 
-The <xref:System.Text.Json?displayProperty=fullName> library constructs a JSON *contract* for each .NET type, which defines how the type should be serialized and deserialized. The contract is derived from the type's shape, which includes characteristics such as its properties and fields and whether it implements the <xref:System.Collections.IEnumerable> or <xref:System.Collections.IDictionary> interface. Types are mapped to contracts either at run time using reflection or at compile time using the source generator.
+The <xref:System.Text.Json?displayProperty=fullName> library constructs a JSON *contract* for each .NET type, which defines how the type should be serialized and deserialized. The contract is derived from the type's shape, which includes characteristics such as its properties and fields and whether it implements the <xref:System.Collections.IEnumerable> or <xref:System.Collections.IDictionary> interface. Types are mapped to contracts either at runtime using reflection or at compile time using the source generator.
 
 Starting in .NET 7, you can customize these JSON contracts to provide more control over how types are converted into JSON and vice versa. The following list shows just some examples of the types of customizations you can make to serialization and deserialization:
 

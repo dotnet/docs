@@ -24,11 +24,11 @@ XML documentation starts with `'''`. The processing of these comments has some r
 
 - Developers are free to create their own set of tags. There is a recommended set of tags (see [XML Comment Tags](../../language-reference/xmldoc/index.md)). Some of the recommended tags have special meanings:
 
-  - The \<param> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
+  - The `<param>` tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
 
   - The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler also respects any `Imports` statements when looking for a type described in the `cref` attribute.
 
-  - The \<summary> tag is used by IntelliSense in Visual Studio to display additional information about a type or member.
+  - The `<summary>` tag is used by IntelliSense in Visual Studio to display additional information about a type or member.
 
 ## Related sections
 

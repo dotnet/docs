@@ -3,10 +3,10 @@ title: "Controlling XML Serialization Using Attributes"
 description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
 ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "classes, serializing"
   - "XML serialization, examples"
   - "derived classes, serializing"
@@ -159,7 +159,7 @@ The resulting XML might resemble the following code:
 
 ## Serializing Derived Classes
 
-Another use of the <xref:System.Xml.Serialization.XmlArrayItemAttribute> is to allow the serialization of derived classes. For example, another class named `Manager` that derives from `Employee` can be added to the previous example. If you don't apply the <xref:System.Xml.Serialization.XmlArrayItemAttribute>, the code will fail at run time because the derived class type won't be recognized. To remedy this outcome, apply the attribute twice, each time setting the <xref:System.Xml.Serialization.XmlArrayItemAttribute.Type%2A> property for each acceptable type (base and derived).
+Another use of the <xref:System.Xml.Serialization.XmlArrayItemAttribute> is to allow the serialization of derived classes. For example, another class named `Manager` that derives from `Employee` can be added to the previous example. If you don't apply the <xref:System.Xml.Serialization.XmlArrayItemAttribute>, the code will fail at runtime because the derived class type won't be recognized. To remedy this outcome, apply the attribute twice, each time setting the <xref:System.Xml.Serialization.XmlArrayItemAttribute.Type%2A> property for each acceptable type (base and derived).
 
 ```vb
 Public Class Group

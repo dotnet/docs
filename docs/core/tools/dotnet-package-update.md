@@ -49,9 +49,7 @@ On Windows Command Prompt and PowerShell, you will need to set the environment v
 
 ## Options
 
-- **`--interactive`**
-
-    Allows the command to stop and wait for user input or action (for example to complete authentication).
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--project <path>`**
 
@@ -59,16 +57,14 @@ On Windows Command Prompt and PowerShell, you will need to set the environment v
     If a directory is provided, it searches for project and solution files in the directory.
     Defaults to the current working directory.
 
-- **`--verbosity`**
-
-    Display this amount of details in the output: `[n]ormal`, `[m]inimal`, `[q]uiet`, `[d]etailed`, or `[diag]nostic`. The default is `normal`.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--vulnerable`**
 
     If restore reports any packages as having known vulnerabilities, this command will upgrade those packages.
     Using this option will upgrade packages to the lowest version that is higher than the currently referenced version, that does not have any known vulnerabilities.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

@@ -1,7 +1,7 @@
 ---
 title: "Strings"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 10/07/2025
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "C# language, strings"
   - "strings [C#]"
@@ -50,7 +50,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Raw string literals
 
-Beginning with C# 11, you can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
+You can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
 
 - Starts and ends with a sequence of at least three double quote characters (`"""`). You can use more than three consecutive characters to start and end the sequence to support string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
@@ -115,7 +115,7 @@ Use string interpolation to improve the readability and maintainability of your 
 
 You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output. The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
+You can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output. The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 

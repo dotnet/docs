@@ -1,6 +1,6 @@
 ---
 title: Networking config settings
-description: Learn about run-time settings that configure networking for .NET apps.
+description: Learn about runtime settings that configure networking for .NET apps.
 ms.date: 11/27/2019
 ---
 # Runtime configuration options for networking

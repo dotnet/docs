@@ -31,9 +31,9 @@ dev_langs:
 
 The following example validates an XML file using schemas stored in the <xref:System.Xml.Schema.XmlSchemaSet>. The namespace in the XML file, `urn:bookstore-schema`, identifies which schema in the <xref:System.Xml.Schema.XmlSchemaSet> to use for validation. Output from the example shows that the XML file has two schema violations:
 
-- The first \<book> element contains an \<author> element but no \<title> or \<price> element.
+- The first `<book>` element contains an `<author>` element but no `<title>` or `<price>` element.
 
-- The \<author> element in the last \<book> element is missing a \<first-name> and \<last-name> element and instead has an invalid \<name> element.
+- The `<author>` element in the last `<book>` element is missing a `<first-name>` and `<last-name>` element and instead has an invalid `<name>` element.
 
 :::code language="csharp" source="./snippets/System.Xml/XmlReaderSettings/ValidationType/csharp/validschemaset.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Xml.Schema/XmlSchemaSet/Overview/vb/validschemaset.vb" id="Snippet1":::

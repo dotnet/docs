@@ -4,7 +4,7 @@ title: "<claimTypeRequirements> for <message>"
 ms.date: "03/30/2017"
 ms.assetid: f95c5ecd-abb6-4b77-a6d7-a38727f4a142
 ---
-# `<claimTypeRequirements>` for \<message>
+# `<claimTypeRequirements>` of `<message>`
 
 Specifies a collection of required claim types.
 

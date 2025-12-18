@@ -4,7 +4,7 @@ title: "<argument>"
 ms.date: "03/30/2017"
 ms.assetid: a7144d53-8023-4e90-971f-895e016fd58a
 ---
-# \<argument>
+# `<argument>`
 
 A configuration element that represents an argument associated with an activity state query.
 

@@ -4,7 +4,7 @@ title: "<factorySettings>"
 ms.date: "03/30/2017"
 ms.assetid: 202aad17-1b8b-4c87-ad57-4ca5de18ed35
 ---
-# \<factorySettings>
+# `<factorySettings>`
 
 Specifies the settings of the channel factory cache.
 

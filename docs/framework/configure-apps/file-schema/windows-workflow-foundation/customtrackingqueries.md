@@ -4,7 +4,7 @@ title: "<customTrackingQueries>"
 ms.date: "03/30/2017"
 ms.assetid: 4e9e732d-911d-45a3-a569-4b5e9cd1ffbe
 ---
-# \<customTrackingQueries>
+# `<customTrackingQueries>`
 
 Represents a collection of queries that are used to track events that you define in your code activities. The query is necessary for a tracking participant to subscribe to custom tracking records.
 

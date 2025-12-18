@@ -4,7 +4,7 @@ title: "<state> of <states>"
 ms.date: "03/30/2017"
 ms.assetid: ab483c7f-a091-4933-ba6b-708d96846d38
 ---
-# \<state> of \<states>
+# `<state>` of \<states>
 
 A configuration element that contains the state of the subscribed activity for which a tracking record should be emitted.
 

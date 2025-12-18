@@ -4,7 +4,7 @@ title: "<workflowInstanceQueries>"
 ms.date: "03/30/2017"
 ms.assetid: 4fe7ce85-cf9a-4dbf-a8f7-bc9b1fc2fe35
 ---
-# \<workflowInstanceQueries>
+# `<workflowInstanceQueries>`
 
 Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.
 

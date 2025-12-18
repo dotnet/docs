@@ -4,7 +4,7 @@ title: "<workflowUnhandledException>"
 ms.date: "03/30/2017"
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 ---
-# \<workflowUnhandledException>
+# `<workflowUnhandledException>`
 
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.
 

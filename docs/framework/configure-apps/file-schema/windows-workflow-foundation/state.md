@@ -4,7 +4,7 @@ title: "<state>"
 ms.date: "03/30/2017"
 ms.assetid: 619414f2-61c2-4427-9977-d05009e343db
 ---
-# \<state>
+# `<state>`
 
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.
 

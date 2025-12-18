@@ -4,7 +4,7 @@ title: "<workflow>"
 ms.date: "03/30/2017"
 ms.assetid: 560aa9b6-9cf3-460e-b798-f87d14b1d2de
 ---
-# \<workflow>
+# `<workflow>`
 
 A configuration element that contains all queries for a specific workflow identified by the <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId?displayProperty=nameWithType> property.
 

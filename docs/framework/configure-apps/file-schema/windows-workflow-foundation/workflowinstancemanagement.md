@@ -4,7 +4,7 @@ title: "<workflowInstanceManagement>"
 ms.date: "03/30/2017"
 ms.assetid: 63ac89ba-c844-4ae2-96ae-cd752a90a109
 ---
-# \<workflowInstanceManagement>
+# `<workflowInstanceManagement>`
 
 A service behavior that enables you to specify settings that control how workflow instances are run, including persistence, unhandled Exception behavior and idle behavior.
 

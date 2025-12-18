@@ -4,7 +4,7 @@ title: "<cancelRequestedQueries>"
 ms.date: "03/30/2017"
 ms.assetid: eab5af7e-76fa-434d-9d36-873e995cee05
 ---
-# \<cancelRequestedQueries>
+# `<cancelRequestedQueries>`
 
 Represents a collection of queries that are used to track requests to cancel a child activity by the parent activity. The query is necessary for a tracking participant to subscribe to cancel request record objects.
 

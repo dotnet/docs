@@ -4,7 +4,7 @@ title: "<sqlWorkflowInstanceStore>"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<sqlWorkflowInstanceStore>
+# `<sqlWorkflowInstanceStore>`
 
 A service behavior that allows you to configure the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> feature, which supports persisting state information for workflow service instances into an SQL Server 2005 or SQL Server 2008 database. For more information on this feature, see [SQL Workflow Instance Store](../../../windows-workflow-foundation/sql-workflow-instance-store.md).
 

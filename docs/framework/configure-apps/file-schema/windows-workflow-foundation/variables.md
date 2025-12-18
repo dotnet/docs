@@ -4,7 +4,7 @@ title: "<variables>"
 ms.date: "03/30/2017"
 ms.assetid: da0fd144-dda9-4613-b650-fe6325076513
 ---
-# \<variables>
+# `<variables>`
 
 Represents a collection of variables associated with this activity query.
 

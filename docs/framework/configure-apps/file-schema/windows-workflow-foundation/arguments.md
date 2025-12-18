@@ -4,7 +4,7 @@ title: "<arguments>"
 ms.date: "03/30/2017"
 ms.assetid: 0f327196-f468-4be3-b6c4-68ba981a1bd6
 ---
-# \<arguments>
+# `<arguments>`
 
 Represents a collection of arguments associated with an activity state query.
 

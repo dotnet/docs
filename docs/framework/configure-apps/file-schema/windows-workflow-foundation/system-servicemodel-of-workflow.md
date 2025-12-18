@@ -4,7 +4,7 @@ title: "<system.serviceModel> of workflow"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<system.serviceModel> of workflow
+# `<system.serviceModel>` of workflow
 
 This configuration section contains all the workflow configuration elements.
 

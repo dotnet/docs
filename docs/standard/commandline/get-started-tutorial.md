@@ -446,7 +446,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 ```
 
 > [!NOTE]
-> If you're running in the *bin/debug/net9.0* (output) folder, that folder is where you'll find the file with changes from the `add` and `delete` commands. The copy of the file in the project folder remains unchanged.
+> The file in the output folder reflects the changes from the `add` and `delete` commands. The copy of the file in the project folder remains unchanged.
 
 ## Next steps
 

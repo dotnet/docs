@@ -1,8 +1,6 @@
 ---
 title: Network programming in .NET
 description: Learn about various networking approaches for .NET app development.
-author: IEvangelist
-ms.author: dapine
 ms.date: 08/24/2022
 ---
 

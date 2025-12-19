@@ -29,7 +29,7 @@ Adds a NuGet package reference to your application.
 
 ```csharp
 #:package Newtonsoft.Json
-#:package Serilog version="3.1.1"
+#:package Serilog@3.1.1
 ```
 
 ### `#:project`
@@ -55,6 +55,7 @@ Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.
 
 ```csharp
 #:sdk Microsoft.NET.Sdk.Web
+#:sdk Aspire.AppHost.Sdk@13.0.2
 ```
 
 ## CLI commands
@@ -63,7 +64,13 @@ The .NET CLI provides full support for file-based apps through familiar commands
 
 ### Run applications
 
-Run a file-based app directly by using the `dotnet run` command:
+Run a file-based app by using the `dotnet run` command with the `--file` option:
+
+```dotnetcli
+dotnet run --file file.cs
+```
+
+Or use the `dotnet run` command followed by the name of the file:
 
 ```dotnetcli
 dotnet run file.cs
@@ -77,22 +84,16 @@ dotnet file.cs
 
 #### Pass arguments
 
-Pass arguments to your application in several ways:
+Pass arguments to your application by placing them after `--`:
 
 ```dotnetcli
 dotnet run file.cs -- arg1 arg2
 ```
 
-Arguments after `--` are passed to your application. Without `--`, arguments go to the `dotnet run` command:
+Without `--`, arguments go to the `dotnet run` command:
 
 ```dotnetcli
 dotnet run file.cs arg1 arg2
-```
-
-However, with the shorthand syntax, all arguments go to your application:
-
-```dotnetcli
-dotnet file.cs arg1 arg2
 ```
 
 ### Build applications
@@ -103,7 +104,9 @@ Compile your file-based app by using the `dotnet build` command:
 dotnet build file.cs
 ```
 
-The SDK generates a temporary project and builds your application.
+The SDK generates a virtual project and builds your application. By default, the build output goes to the system's temporary directory under `<temp>/dotnet/runfile/<appname>-<appfilesha>/bin/<configuration>/`.
+
+Use the `--output` option with the `dotnet build` command to specify a different path. To define a new default output path, set the `OutputPath` property at the top of your file by using the directive: `#:property OutputPath=./output`.
 
 ### Clean build outputs
 
@@ -113,21 +116,25 @@ Remove build artifacts by using the `dotnet clean` command:
 dotnet clean file.cs
 ```
 
-Clean all file-based apps in a directory:
+Delete cache for file-based apps in a directory:
 
 ```dotnetcli
 dotnet clean file-based-apps
 ```
 
+Use the `--days` option with the preceding command to specify how many days an artifact folder needs to be unused before removal. The default number of days is 30.
+
 ### Publish applications
 
-Create a deployment package by using the `dotnet publish` command:
+File-based apps enable native AOT publishing by default, producing optimized, self-contained executables. Disable this feature by adding `#:property PublishAot=false` at the top of your file.
+
+Use the `dotnet publish` command to create an independent executable:
 
 ```dotnetcli
 dotnet publish file.cs
 ```
 
-File-based apps enable native AOT publishing by default, producing optimized, self-contained executables.
+The default location of the executable is an `artifacts` directory next to the `.cs` file, with a subdirectory named after the application. Use the `--output` option with the `dotnet publish` command to specify a different path.
 
 ### Package as tool
 
@@ -137,7 +144,7 @@ Package your file-based app as a .NET tool by using the `dotnet pack` command:
 dotnet pack file.cs
 ```
 
-File-based apps set `PackAsTool=true` by default.
+File-based apps set `PackAsTool=true` by default. Disable this setting by adding `#:property PackAsTool=false` at the top of your file.
 
 ### Convert to project
 
@@ -147,7 +154,7 @@ Convert your file-based app to a traditional project by using the `dotnet projec
 dotnet project convert file.cs
 ```
 
-This command creates a `.csproj` file with equivalent SDK and properties. All `#` directives are removed from the `.cs` file and turned into elements in the corresponding `.csproj` file.
+This command makes a copy of the `.cs` file and creates a `.csproj` file with equivalent SDK items, properties, and package references based on the original file's `#:` directives.  Both files are placed in a directory named for the application next to the original `.cs` file, which is left untouched.
 
 ### Restore dependencies
 
@@ -157,7 +164,7 @@ Restore NuGet packages referenced in your file by using the `dotnet restore` com
 dotnet restore file.cs
 ```
 
-Restore runs implicitly when you build or run your application.
+By default, restore runs implicitly when you build or run your application. However, you can pass `--no-restore` to both the `dotnet build` and `dotnet run` commands to build or run without implicitly restoring.
 
 ## Default included items
 
@@ -192,8 +199,16 @@ File-based apps generate a stable user secrets ID based on a hash of the full fi
 Access user secrets the same way as traditional projects:
 
 ```dotnetcli
-dotnet user-secrets set "ApiKey" "your-secret-value" --project file.cs
+dotnet user-secrets set "ApiKey" "your-secret-value" --file file.cs
 ```
+
+List user secrets for file-based apps:
+
+```dotnetcli
+dotnet user-secrets list --file file.cs
+```
+
+The `dotnet user-secrets list` command prints the value of your secrets. Don't put this command in scripts that run in public contexts.
 
 For more information, see [Safe storage of app secrets in development](/aspnet/core/security/app-secrets).
 
@@ -287,6 +302,9 @@ Run directly:
 ./file.cs
 ```
 
+> [!NOTE]
+> Use `LF` line endings instead of `CRLF` when you add a shebang. Don't include a BOM in the file.
+
 ## Implicit build files
 
 File-based apps respect MSBuild and NuGet configuration files in the same directory or parent directories. These files affect how the SDK builds your application. Be mindful of these files when organizing your file-based apps.
@@ -313,7 +331,7 @@ Specifies the .NET SDK version to use. File-based apps respect this version sele
 
 ## Build caching
 
-The .NET SDK caches build outputs to improve performance on subsequent builds. File-based apps participate in this caching system.
+The .NET SDK caches build outputs to improve performance on subsequent invocations of `dotnet run`. This caching system is unique to file-based apps.
 
 ### Cache behavior
 
@@ -322,7 +340,7 @@ The SDK caches build outputs based on:
 - Source file content.
 - Directive configuration.
 - SDK version.
-- Implicit build files.
+- Implicit build file existence and content.
 
 Caching improves build performance but can cause confusion when:
 
@@ -330,6 +348,12 @@ Caching improves build performance but can cause confusion when:
 - Moving files to different directories doesn't invalidate cache.
 
 ### Workarounds
+
+- Clear cache artifacts for file-based apps by using the following command:
+
+```dotnetcli
+dotnet clean file-based-apps
+```
 
 - Run a full build by using the `--no-cache` flag:
 

@@ -7,15 +7,14 @@ f1_keywords:
 helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
-ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 ---
-# `<clear>` element for \<appSettings>
+# `<clear>` element for `<appSettings>`
 
 Clears custom application settings.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
 
 ## Syntax
 
@@ -31,9 +30,9 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
-| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
+| Parent element                                              | Description |
+|-------------------------------------------------------------|-------------|
+| [`<appSettings>`](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
 
 ## Child elements
 

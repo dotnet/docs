@@ -11,9 +11,9 @@ ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<etwEnabled>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<etwEnabled>`
 
 ## Syntax
 

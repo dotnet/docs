@@ -96,7 +96,87 @@ When you configure an option, you specify the option name including the prefix:
 
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
 
-To add an option to a command and recursively to all of its subcommands, use the `System.CommandLine.Symbol.Recursive` property.
+### Global options
+
+To add an option to a command and recursively to all of its subcommands, set the <xref:System.CommandLine.Symbol.Recursive> property to `true`. This is useful for options that apply across your entire application, such as verbosity, output format, or configuration file paths.
+
+The following example shows how to create a global option that's available to all commands:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="globaloption" :::
+
+In this example, the `--verbose` option is available to both the `build` and `test` commands without having to add it to each command individually. You can invoke the commands like this:
+
+```console
+myapp build --verbose
+myapp test --verbose
+```
+
+Global options are particularly useful for cross-cutting concerns like logging, configuration, and output formatting that should be consistent across all commands in your application.
+
+### The verbosity option
+
+Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels:
+
+* `Q[uiet]` - No output except errors
+* `M[inimal]` - Essential information only
+* `N[ormal]` - Standard output (default)
+* `D[etailed]` - More comprehensive output
+* `Diag[nostic]` - All available information for troubleshooting
+
+You can represent these levels with an enum:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbositylevel" :::
+
+The design guidance also recommends:
+* Using `-v` as shorthand for `--verbosity diagnostic`
+* Using `-q` as shorthand for `--verbosity quiet`
+* Accepting both full names (`quiet`, `minimal`) and short forms (`q`, `m`)
+
+#### Implementing the verbosity option
+
+The following example shows how to implement a verbosity option that accepts both full and abbreviated names:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
+
+This implementation:
+
+* Accepts both short forms (`q`, `m`, `n`, `d`, `diag`) and full names (`quiet`, `minimal`, `normal`, `detailed`, `diagnostic`)
+* Validates input and provides helpful error messages
+* Uses a custom `DefaultValueFactory` to map string values to an enum
+* Sets `Recursive = true` to make verbosity available to all subcommands
+
+You can invoke the app with any of these command lines:
+
+```console
+myapp process --verbosity quiet
+myapp process --verbosity q
+myapp process --verbosity diagnostic
+myapp process --verbosity diag
+myapp process
+```
+
+#### Using verbosity in your code
+
+To use the verbosity value in your command handlers, retrieve it from the `ParseResult` and use it to control output. The following example shows a common pattern with separate `-v` and `-q` shorthand options:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityaccess" :::
+
+This implementation:
+
+* Creates separate `-v` and `-q` boolean options for convenient shortcuts
+* Checks which option was specified (with priority order)
+* Uses a helper method to conditionally write output based on the verbosity level
+* Leverages the enum's natural ordering (Quiet < Minimal < Normal < Detailed < Diagnostic) for comparison
+
+You can invoke the app with any of these command lines:
+
+```console
+myapp build -q
+myapp build -v
+myapp build --verbosity minimal
+myapp build --verbosity m
+myapp build
+```
 
 ### Required Options
 

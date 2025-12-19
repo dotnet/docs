@@ -98,7 +98,7 @@ dotnet run file.cs arg1 arg2
 
 #### Pipe code from stdin
 
-Pipe C# code directly to `dotnet run` via standard input by using the `-` argument. The `-` argument indicates that `dotnet run` should read the code from stdin instead of a file.
+Pipe C# code directly to `dotnet run` via standard input by using the `-` argument. The `-` argument indicates that `dotnet run` reads the code from standard input instead of a file. The current working directory isn't used to search for other files, such as launch profiles, but is still the directory for building and executing the program.
 
 **PowerShell:**
 

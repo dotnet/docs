@@ -96,6 +96,24 @@ Without `--`, arguments go to the `dotnet run` command:
 dotnet run file.cs arg1 arg2
 ```
 
+#### Pipe code from stdin
+
+Pipe C# code directly to `dotnet run` via standard input by using the `-` argument. The `-` argument indicates that `dotnet run` should read the code from stdin instead of a file.
+
+**PowerShell:**
+
+```powershell
+'Console.WriteLine("hello from stdin!");' | dotnet run -
+```
+
+**Bash:**
+
+```bash
+echo 'Console.WriteLine("hello from stdin!");' | dotnet run -
+```
+
+This approach is useful for quick testing, running one-off commands, or integrating with shell scripts that generate C# code dynamically.
+
 ### Build applications
 
 Compile your file-based app by using the `dotnet build` command:

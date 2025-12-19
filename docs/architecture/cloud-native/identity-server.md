@@ -12,7 +12,7 @@ Duende IdentityServer is a framework to build an OpenID Connect (OIDC) and OAuth
 
 It is designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. It can also act as a federation gateway to unify other used authentication providers.
 
-IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
+IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization or the needs of a set of applications.
 
 ## Common web app scenarios
 

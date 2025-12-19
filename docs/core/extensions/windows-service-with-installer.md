@@ -186,17 +186,15 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
-        <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
+        <StandardDirectory Id="ProgramFiles6432Folder">
 
-                <!-- Create a folder inside program files -->
-                <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+            <!-- Create a folder inside program files -->
+            <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
 
-                    <!-- Create a folder within the parent folder given the name -->
-                    <Directory Id="INSTALLFOLDER" Name="$(Name)" />
-                </Directory>
+                <!-- Create a folder within the parent folder given the name -->
+                <Directory Id="INSTALLFOLDER" Name="$(Name)" />
             </Directory>
-        </Directory>
+        </StandardDirectory>
 
         <!-- The files inside this DirectoryRef are linked to
              the App.WindowsService directory via INSTALLFOLDER -->
@@ -243,7 +241,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 </Wix>
 ```
 
-The `ServiceInstall` element's `Account` attribute specifies the account under which the service runs. The `LocalService` account is a built-in account with reduced privileges that's appropriate for most services. Other common values include:
+The `ServiceInstall` element's `Account` attribute specifies the account under which the service runs. The `LocalService` account is a built-in account with reduced privileges that's appropriate for most services. Common values include:
 
 - `LocalService`: A built-in account with reduced privileges and no network credentials.
 - `NetworkService`: Similar to LocalService but has network credentials.

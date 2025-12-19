@@ -1,8 +1,6 @@
 ---
 title: Logging guidance for .NET library authors
-author: IEvangelist
 description: Learn how to expose logging as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
-ms.author: dapine
 ms.date: 03/15/2024
 ---
 

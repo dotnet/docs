@@ -1,8 +1,6 @@
 ---
 title: Dependency injection basics
 description: Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
-author: IEvangelist
-ms.author: dapine
 ms.date: 01/22/2025
 no-loc: [Transient, Scoped, Singleton, Example]
 ---

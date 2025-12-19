@@ -1,8 +1,6 @@
 ---
 title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---

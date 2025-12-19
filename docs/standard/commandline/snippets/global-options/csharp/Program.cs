@@ -103,7 +103,7 @@ class Program
 
         processCommand.SetAction(parseResult =>
         {
-            string verbosityString = parseResult.GetValue(verbosityOption);
+            string verbosityString = parseResult.GetValue(verbosityOption) ?? "normal";
             
             // Convert string to enum
             VerbosityLevel verbosity = verbosityString switch
@@ -195,7 +195,7 @@ class Program
             }
             else
             {
-                verbosityString = parseResult.GetValue(verbosityOption);
+                verbosityString = parseResult.GetValue(verbosityOption) ?? "normal";
             }
 
             // Convert to enum for easier comparison

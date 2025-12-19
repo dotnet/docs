@@ -128,6 +128,7 @@ You can represent these levels with an enum:
 :::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbositylevel" :::
 
 The design guidance also recommends:
+
 * Using `-v` as shorthand for `--verbosity diagnostic`
 * Using `-q` as shorthand for `--verbosity quiet`
 * Accepting both full names (`quiet`, `minimal`) and short forms (`q`, `m`)

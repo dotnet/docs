@@ -64,7 +64,7 @@ Subcommands can have their own subcommands. In `dotnet tool install`, `install` 
 
 You can add subcommands as shown in the following example:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definesubcommands" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definesubcommands" :::
 
 The innermost subcommand in this example can be invoked like this:
 
@@ -94,57 +94,36 @@ msbuild /version
 
 When you configure an option, you specify the option name including the prefix:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="defineoptions" :::
 
 ### Global options
 
-To add an option to a command and recursively to all of its subcommands, set the <xref:System.CommandLine.Symbol.Recursive> property to `true`. This is useful for options that apply across your entire application, such as verbosity, output format, or configuration file paths.
+To add an option to a command and recursively to all of its subcommands, set the <xref:System.CommandLine.Option.Recursive> property to `true`. This is useful for options that apply across your entire application, such as verbosity, output format, or configuration file paths.
 
 The following example shows how to create a global option that's available to all commands:
 
-:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="globaloption" :::
+:::code language="csharp" source="snippets/global-options/csharp/Program1.cs" id="globaloption" :::
 
-In this example, the `--verbose` option is available to both the `build` and `test` commands without having to add it to each command individually. You can invoke the commands like this:
-
-```console
-myapp build --verbose
-myapp test --verbose
-```
-
-Global options are particularly useful for cross-cutting concerns like logging, configuration, and output formatting that should be consistent across all commands in your application.
+In this example, the `--verbose` option is available to both the `build` and `test` commands without having to add it to each command individually.
 
 ### The verbosity option
 
-Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels:
-
-* `Q[uiet]` - No output except errors
-* `M[inimal]` - Essential information only
-* `N[ormal]` - Standard output (default)
-* `D[etailed]` - More comprehensive output
-* `Diag[nostic]` - All available information for troubleshooting
-
-You can represent these levels with an enum:
-
-:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbositylevel" :::
-
-The design guidance also recommends:
+Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels: `Q[uiet]`, `M[inimal]`, `N[ormal]`, `D[etailed]`, and `Diag[nostic]`. The design guidance also recommends:
 
 * Using `-v` as shorthand for `--verbosity diagnostic`
 * Using `-q` as shorthand for `--verbosity quiet`
 * Accepting both full names (`quiet`, `minimal`) and short forms (`q`, `m`)
 
-#### Implementing the verbosity option
-
 The following example shows how to implement a verbosity option that accepts both full and abbreviated names:
 
-:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
+:::code language="csharp" source="snippets/global-options/csharp/Program1.cs" id="verbosityoption" :::
 
 This implementation:
 
-* Accepts both short forms (`q`, `m`, `n`, `d`, `diag`) and full names (`quiet`, `minimal`, `normal`, `detailed`, `diagnostic`)
-* Validates input and provides helpful error messages
-* Uses a custom `DefaultValueFactory` to map string values to an enum
-* Sets `Recursive = true` to make verbosity available to all subcommands
+* Accepts both short forms (`q`, `m`, `n`, `d`, `diag`) and full names (`quiet`, `minimal`, `normal`, `detailed`, `diagnostic`).
+* Validates input and provides helpful error messages.
+* Uses a custom `DefaultValueFactory` to map string values to an enum.
+* Sets `Recursive = true` to make verbosity available to all subcommands.
 
 You can invoke the app with any of these command lines:
 
@@ -156,18 +135,18 @@ myapp process --verbosity diag
 myapp process
 ```
 
-#### Using verbosity in your code
+#### Use verbosity in your code
 
 To use the verbosity value in your command handlers, retrieve it from the `ParseResult` and use it to control output. The following example shows a common pattern with separate `-v` and `-q` shorthand options:
 
-:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityaccess" :::
+:::code language="csharp" source="snippets/global-options/csharp/Program2.cs" id="verbosityaccess" :::
 
 This implementation:
 
-* Creates separate `-v` and `-q` boolean options for convenient shortcuts
-* Checks which option was specified (with priority order)
-* Uses a helper method to conditionally write output based on the verbosity level
-* Leverages the enum's natural ordering (Quiet < Minimal < Normal < Detailed < Diagnostic) for comparison
+* Creates separate `-v` and `-q` Boolean options for convenient shortcuts.
+* Checks which option was specified (with priority order).
+* Uses a helper method to conditionally write output based on the verbosity level.
+* Leverages the enum's natural ordering (`Quiet` < `Minimal` < `Normal` < `Detailed` < `Diagnostic`) for comparison.
 
 You can invoke the app with any of these command lines:
 
@@ -179,11 +158,11 @@ myapp build --verbosity m
 myapp build
 ```
 
-### Required Options
+### Required options
 
 Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its <xref:System.CommandLine.Option.Required> property to `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="requiredoption" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="requiredoption" :::
 
 If a required option has a default value (specified via the <xref:System.CommandLine.Option`1.DefaultValueFactory> property), the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
 
@@ -198,7 +177,7 @@ dotnet build myapp.csproj
 
 When you configure an argument, you specify the argument name (it's not used for parsing, but it can be used for getting parsed values by name or displaying help) and type:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definearguments" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definearguments" :::
 
 ## Default Values
 
@@ -212,17 +191,17 @@ dotnet tool update dotnet-suggest --global true
                                   ^-----------^
 ```
 
-An argument that is defined without a default value is treated as a required argument.
+An argument that's defined without a default value is treated as a required argument.
 
 ## Parse errors
 
-Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because `silent` isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent
 ```
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="parseerrors" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="parseerrors" :::
 
 ```output
 Argument 'silent' not recognized. Must be one of:
@@ -282,7 +261,7 @@ dotnet publish --o ./publish
 
 `System.CommandLine` doesn't support automatic aliases. Each alias must be specified explicitly. Both commands and options expose an `Aliases` property. `Option` has a constructor that accepts aliases as parameters, so you can define an option with multiple aliases in a single line:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definealiases" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definealiases" :::
 
 We recommend that you minimize the number of option aliases that you define, and avoid defining certain aliases in particular. For more information, see [Short-form aliases](design-guidance.md#short-form-aliases).
 

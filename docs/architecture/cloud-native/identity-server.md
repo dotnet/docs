@@ -10,9 +10,9 @@ ms.date: 02/06/2025
 
 Duende IdentityServer is a framework to build an OpenID Connect (OIDC) and OAuth 2.x standards-compliant authentication server using ASP.NET Core.
 
-It is designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. It can also act as a federation gateway to unify other used authentication providers.
+It is designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. It can also act as a federation gateway to unify authentication providers.
 
-IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
+IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization or the needs of a set of applications.
 
 ## Common web app scenarios
 
@@ -97,7 +97,7 @@ builder.Services.AddAuthentication(options =>
 
 ## JavaScript clients
 
-Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end, using React, Angular or Blazor WebAssembly for example. The [backend-for-frontend (BFF)](https://docs.duendesoftware.com/identityserver/v7/quickstarts/js_clients/js_with_backend/) pattern is used for these types of clients that makes it possible to keep tokens out of the browser's reach. This pattern follows IETF's [OAuth 2.0 for Browser-Based Applications spec](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps).
+Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end, for example, using React, Angular, or Blazor WebAssembly. The [backend-for-frontend (BFF)](https://docs.duendesoftware.com/identityserver/v7/quickstarts/js_clients/js_with_backend/) pattern is used for these types of clients, which makes it possible to keep tokens out of the browser's reach. This pattern follows IETF's [OAuth 2.0 for Browser-Based Applications spec](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps).
 
 ## References
 

@@ -16,8 +16,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Examples for documentation - not meant to be run together
-        // Uncomment the example you want to test
+        // This file contains three separate examples for documentation.
+        // Uncomment ONE of the following lines to run that example:
         
         // GlobalOptionExample(args);
         // VerbosityOptionExample(args);
@@ -184,7 +184,8 @@ class Program
             // Determine effective verbosity level
             string verbosityString = "normal";
             
-            // Check which option was provided (priority: -q, -v, --verbosity)
+            // Check which option was provided
+            // Priority: -q overrides all, then -v, then --verbosity (or default if none specified)
             if (parseResult.GetValue(qOption))
             {
                 verbosityString = "quiet";

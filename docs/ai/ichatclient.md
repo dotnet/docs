@@ -170,7 +170,6 @@ The following sample implements `IChatClient` to show the general structure.
 
 For more realistic, concrete implementations of `IChatClient`, see:
 
-- [AzureAIInferenceChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.AzureAIInference/AzureAIInferenceChatClient.cs)
 - [OpenAIChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.OpenAI/OpenAIChatClient.cs)
 - [Microsoft.Extensions.AI chat clients](https://github.com/dotnet/extensions/tree/main/src/Libraries/Microsoft.Extensions.AI/ChatCompletion)
 

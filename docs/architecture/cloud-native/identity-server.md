@@ -97,7 +97,7 @@ builder.Services.AddAuthentication(options =>
 
 ## JavaScript clients
 
-Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end, using React, Angular or Blazor WebAssembly for example. The [backend-for-frontend (BFF)](https://docs.duendesoftware.com/identityserver/v7/quickstarts/js_clients/js_with_backend/) pattern is used for these types of clients that makes it possible to keep tokens out of the browser's reach. This pattern follows IETF's [OAuth 2.0 for Browser-Based Applications spec](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps).
+Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end, for example, using React, Angular, or Blazor WebAssembly. The [backend-for-frontend (BFF)](https://docs.duendesoftware.com/identityserver/v7/quickstarts/js_clients/js_with_backend/) pattern is used for these types of clients, which makes it possible to keep tokens out of the browser's reach. This pattern follows IETF's [OAuth 2.0 for Browser-Based Applications spec](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps).
 
 ## References
 

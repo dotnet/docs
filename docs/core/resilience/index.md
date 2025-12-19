@@ -1,8 +1,6 @@
 ---
 title: Introduction to resilient app development
 description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/20/2025
 ---
 

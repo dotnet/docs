@@ -60,6 +60,13 @@ class Program1
                 }
         };
 
+        // Add -q as a separate option for quiet verbosity
+        Option<bool> quietOption = new("-q")
+        {
+            Description = "Set verbosity to quiet (shorthand for --verbosity quiet).",
+            Recursive = true
+        };
+
         // Handle both short and long forms.
         verbosityOption.Validators.Add(result =>
         {
@@ -79,19 +86,30 @@ class Program1
 
         RootCommand rootCommand = new("Sample app with verbosity");
         rootCommand.Options.Add(verbosityOption);
+        rootCommand.Options.Add(quietOption);
 
         Command processCommand = new("process", "Process data");
         rootCommand.Subcommands.Add(processCommand);
 
         processCommand.SetAction(parseResult =>
         {
-            string verbosityString = parseResult.GetValue(verbosityOption);
+            string verbosityString;
             
-            // If the option was specified without an argument, the value will be empty string.
-            // Set it to diagnostic as per design guidance.
-            if (string.IsNullOrEmpty(verbosityString))
+            // Check if -q was specified
+            if (parseResult.GetValue(quietOption))
             {
-                verbosityString = "diagnostic";
+                verbosityString = "quiet";
+            }
+            else
+            {
+                verbosityString = parseResult.GetValue(verbosityOption);
+                
+                // If the option was specified without an argument, the value will be empty string.
+                // Set it to diagnostic as per design guidance.
+                if (string.IsNullOrEmpty(verbosityString))
+                {
+                    verbosityString = "diagnostic";
+                }
             }
 
             // Convert string to enum.

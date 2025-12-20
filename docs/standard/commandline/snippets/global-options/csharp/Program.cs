@@ -47,17 +47,16 @@ class Program1
     static void VerbosityOptionExample(string[] args)
     {
         // Create verbosity option that accepts full and short names as strings.
-        Option<string> verbosityOption = new("--verbosity")
+        // -v without an argument defaults to diagnostic.
+        Option<string> verbosityOption = new("--verbosity", "-v")
         {
             Description = "Output verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].",
             Recursive = true,
+            Arity = System.CommandLine.ArgumentArity.ZeroOrOne,
             DefaultValueFactory = result =>
                 {
-                    if (result.Tokens.Count == 0)
-                    {
-                        return "normal";
-                    }
-                    return result.Tokens.Single().Value.ToLowerInvariant();
+                    // This is called when the option is NOT specified at all
+                    return "normal";
                 }
         };
 
@@ -86,7 +85,24 @@ class Program1
 
         processCommand.SetAction(parseResult =>
         {
-            string verbosityString = parseResult.GetValue(verbosityOption) ?? "normal";
+            string verbosityString = parseResult.GetValue(verbosityOption);
+            
+            // If the option was specified without an argument, the value will be null or empty string
+            if (string.IsNullOrEmpty(verbosityString))
+            {
+                // Check if the option was actually specified
+                var optionResult = parseResult.GetResult(verbosityOption);
+                if (optionResult != null)
+                {
+                    // Option was specified without argument -> diagnostic
+                    verbosityString = "diagnostic";
+                }
+                else
+                {
+                    // Option was not specified -> normal (default)
+                    verbosityString = "normal";
+                }
+            }
 
             // Convert string to enum.
             VerbosityLevel verbosity = verbosityString switch

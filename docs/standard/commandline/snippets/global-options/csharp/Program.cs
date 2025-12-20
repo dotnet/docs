@@ -87,21 +87,11 @@ class Program1
         {
             string verbosityString = parseResult.GetValue(verbosityOption);
             
-            // If the option was specified without an argument, the value will be null or empty string
+            // If the option was specified without an argument, the value will be empty string.
+            // Set it to diagnostic as per design guidance.
             if (string.IsNullOrEmpty(verbosityString))
             {
-                // Check if the option was actually specified
-                var optionResult = parseResult.GetResult(verbosityOption);
-                if (optionResult != null)
-                {
-                    // Option was specified without argument -> diagnostic
-                    verbosityString = "diagnostic";
-                }
-                else
-                {
-                    // Option was not specified -> normal (default)
-                    verbosityString = "normal";
-                }
+                verbosityString = "diagnostic";
             }
 
             // Convert string to enum.

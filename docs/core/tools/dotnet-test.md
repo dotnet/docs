@@ -129,7 +129,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--test-adapter-path <ADAPTER_PATH>`**
 
-  Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
+  The path to the custom adapters to use for the test run.
 
   Short form `-a` available in .NET SDK versions earlier than 7.
 

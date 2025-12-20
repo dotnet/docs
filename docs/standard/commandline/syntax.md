@@ -64,7 +64,7 @@ Subcommands can have their own subcommands. In `dotnet tool install`, `install` 
 
 You can add subcommands as shown in the following example:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definesubcommands" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definesubcommands" :::
 
 The innermost subcommand in this example can be invoked like this:
 
@@ -94,7 +94,7 @@ msbuild /version
 
 When you configure an option, you specify the option name including the prefix:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="defineoptions" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
 
 ### Global options
 
@@ -102,7 +102,7 @@ To add an option to a command and recursively to all of its subcommands, set the
 
 The following example shows how to create a global option that's available to all commands:
 
-:::code language="csharp" source="snippets/global-options/csharp/Program1.cs" id="globaloption" :::
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="globaloption" :::
 
 In this example, the `--verbose` option is available to both the `build` and `test` commands without having to add it to each command individually.
 
@@ -114,39 +114,17 @@ Many command-line apps provide a `--verbosity` option to control the amount of o
 * Using `-q` as shorthand for `--verbosity quiet`
 * Accepting both full names (`quiet`, `minimal`) and short forms (`q`, `m`)
 
-The following example shows how to implement a verbosity option that accepts both full and abbreviated names:
+The following example shows how to implement a verbosity option that accepts both full and abbreviated names as well as shorthand options (`-v` and `-q`):
 
-:::code language="csharp" source="snippets/global-options/csharp/Program1.cs" id="verbosityoption" :::
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
 
 This implementation:
 
 * Accepts both short forms (`q`, `m`, `n`, `d`, `diag`) and full names (`quiet`, `minimal`, `normal`, `detailed`, `diagnostic`).
+* Creates separate `-v` and `-q` Boolean options for convenient shortcuts.
 * Validates input and provides helpful error messages.
 * Uses a custom `DefaultValueFactory` to map string values to an enum.
 * Sets `Recursive = true` to make verbosity available to all subcommands.
-
-You can invoke the app with any of these command lines:
-
-```console
-myapp process --verbosity quiet
-myapp process --verbosity q
-myapp process --verbosity diagnostic
-myapp process --verbosity diag
-myapp process
-```
-
-#### Use verbosity in your code
-
-To use the verbosity value in your command handlers, retrieve it from the `ParseResult` and use it to control output. The following example shows a common pattern with separate `-v` and `-q` shorthand options:
-
-:::code language="csharp" source="snippets/global-options/csharp/Program2.cs" id="verbosityaccess" :::
-
-This implementation:
-
-* Creates separate `-v` and `-q` Boolean options for convenient shortcuts.
-* Checks which option was specified (with priority order).
-* Uses a helper method to conditionally write output based on the verbosity level.
-* Leverages the enum's natural ordering (`Quiet` < `Minimal` < `Normal` < `Detailed` < `Diagnostic`) for comparison.
 
 You can invoke the app with any of these command lines:
 
@@ -162,7 +140,7 @@ myapp build
 
 Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its <xref:System.CommandLine.Option.Required> property to `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="requiredoption" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="requiredoption" :::
 
 If a required option has a default value (specified via the <xref:System.CommandLine.Option`1.DefaultValueFactory> property), the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
 
@@ -177,9 +155,9 @@ dotnet build myapp.csproj
 
 When you configure an argument, you specify the argument name (it's not used for parsing, but it can be used for getting parsed values by name or displaying help) and type:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definearguments" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definearguments" :::
 
-## Default Values
+## Default values
 
 Both arguments and options can have default values that apply if no argument is explicitly provided. For example, many options are implicitly Boolean parameters with a default of `true` when the option name is in the command line. The following command-line examples are equivalent:
 
@@ -201,7 +179,7 @@ Options and arguments have expected types, and an error is produced when the val
 dotnet build --verbosity silent
 ```
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="parseerrors" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="parseerrors" :::
 
 ```output
 Argument 'silent' not recognized. Must be one of:
@@ -261,7 +239,7 @@ dotnet publish --o ./publish
 
 `System.CommandLine` doesn't support automatic aliases. Each alias must be specified explicitly. Both commands and options expose an `Aliases` property. `Option` has a constructor that accepts aliases as parameters, so you can define an option with multiple aliases in a single line:
 
-:::code language="csharp" source="snippets/define-symbols/csharp/Program1.cs" id="definealiases" :::
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definealiases" :::
 
 We recommend that you minimize the number of option aliases that you define, and avoid defining certain aliases in particular. For more information, see [Short-form aliases](design-guidance.md#short-form-aliases).
 

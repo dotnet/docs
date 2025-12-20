@@ -55,12 +55,12 @@ class Program1
             Arity = System.CommandLine.ArgumentArity.ZeroOrOne,
             DefaultValueFactory = result =>
                 {
-                    // This is called when the option is NOT specified at all
+                    // This is called when the option isn't specified at all.
                     return "normal";
                 }
         };
 
-        // Add -q as a separate option for quiet verbosity
+        // Add -q as a separate option for quiet verbosity.
         Option<bool> quietOption = new("-q")
         {
             Description = "Set verbosity to quiet (shorthand for --verbosity quiet).",
@@ -94,8 +94,8 @@ class Program1
         processCommand.SetAction(parseResult =>
         {
             string verbosityString;
-            
-            // Check if -q was specified
+
+            // Check if -q was specified.
             if (parseResult.GetValue(quietOption))
             {
                 verbosityString = "quiet";
@@ -103,8 +103,9 @@ class Program1
             else
             {
                 verbosityString = parseResult.GetValue(verbosityOption);
-                
-                // If the option was specified without an argument, the value will be empty string.
+
+                // If the option was specified without an argument,
+                // the value will be empty string.
                 // Set it to diagnostic as per design guidance.
                 if (string.IsNullOrEmpty(verbosityString))
                 {

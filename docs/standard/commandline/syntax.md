@@ -108,23 +108,11 @@ In this example, the `--verbose` option is available to both the `build` and `te
 
 ### The verbosity option
 
-Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels: `Q[uiet]`, `M[inimal]`, `N[ormal]`, `D[etailed]`, and `Diag[nostic]`. The design guidance also recommends:
+Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels: `Q[uiet]`, `M[inimal]`, `N[ormal]`, `D[etailed]`, and `Diag[nostic]`.
 
-* Using `-v` as shorthand for `--verbosity diagnostic`
-* Using `-q` as shorthand for `--verbosity quiet`
-* Accepting both full names (`quiet`, `minimal`) and short forms (`q`, `m`)
-
-The following example shows how to implement a verbosity option that accepts both full and abbreviated names as well as shorthand options (`-v` and `-q`):
+The following example shows how to implement a verbosity option that accepts both full and abbreviated names and has an alias (`-v`), and adds a shorthand option for `--verbosity quiet` (`-q`):
 
 :::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
-
-This implementation:
-
-* Accepts both short forms (`q`, `m`, `n`, `d`, `diag`) and full names (`quiet`, `minimal`, `normal`, `detailed`, `diagnostic`).
-* Creates separate `-v` and `-q` Boolean options for convenient shortcuts.
-* Validates input and provides helpful error messages.
-* Uses a custom `DefaultValueFactory` to map string values to an enum.
-* Sets `Recursive = true` to make verbosity available to all subcommands.
 
 You can invoke the app with any of these command lines:
 

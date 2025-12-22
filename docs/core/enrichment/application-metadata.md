@@ -105,7 +105,7 @@ var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetad
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```
 
-Your `appsettings.json` can have a section as follows :
+Your `appsettings.json` can have a section as follows:
 
 :::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
 
@@ -126,9 +126,9 @@ var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetad
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```
 
-Your `appsettings.json` can have a section as follows :
+Your `appsettings.json` can have a section as follows:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
 
 ## Access application metadata
 

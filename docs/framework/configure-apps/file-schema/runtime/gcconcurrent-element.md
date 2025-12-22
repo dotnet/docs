@@ -11,12 +11,12 @@ helpviewer_keywords:
   - "<gcConcurrent> element"
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 ---
-# \<gcConcurrent> element
+# `<gcConcurrent>` element
 
 Specifies whether the common language runtime runs garbage collection on a separate thread.
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<gcConcurrent>
 
 ## Syntax
@@ -56,14 +56,14 @@ None.
 
 ## Remarks
 
-Prior to .NET Framework 4, workstation garbage collection supported concurrent garbage collection, which performed garbage collection in the background on a separate thread. In .NET Framework 4, concurrent garbage collection was replaced by background GC, which also performs garbage collection in the background on a separate thread. Starting with .NET Framework 4.5, background collection became available in server garbage collection. The **gcConcurrent** element controls whether the runtime performs either concurrent or background garbage collection, if it's available, or whether it performs garbage collection in the foreground.
+Prior to .NET Framework 4, workstation garbage collection supported concurrent garbage collection, which performed garbage collection in the background on a separate thread. In .NET Framework 4, concurrent garbage collection was replaced by background GC, which also performs garbage collection in the background on a separate thread. Starting with .NET Framework 4.5, background collection became available in server garbage collection. The `gcConcurrent` element controls whether the runtime performs either concurrent or background garbage collection, if it's available, or whether it performs garbage collection in the foreground.
 
 ### To disable background garbage collection
 
 > [!WARNING]
-> Starting with .NET Framework 4, concurrent garbage collection is replaced by background garbage collection. The terms *concurrent* and *background* are used interchangeably in the .NET Framework documentation. To disable background garbage collection, use the **gcConcurrent** element, as discussed in this article.
+> Starting with .NET Framework 4, concurrent garbage collection is replaced by background garbage collection. The terms *concurrent* and *background* are used interchangeably in the .NET Framework documentation. To disable background garbage collection, use the `gcConcurrent` element, as discussed in this article.
 
-By default, the runtime uses concurrent or background garbage collection, which is optimized for latency. If your application involves heavy user interaction, leave concurrent garbage collection enabled to minimize the application's pause time to perform garbage collection. If you set the `enabled` attribute of the **gcConcurrent** element to `false`, the runtime uses non-concurrent garbage collection, which is optimized for throughput.
+By default, the runtime uses concurrent or background garbage collection, which is optimized for latency. If your application involves heavy user interaction, leave concurrent garbage collection enabled to minimize the application's pause time to perform garbage collection. If you set the `enabled` attribute of the `gcConcurrent` element to `false`, the runtime uses non-concurrent garbage collection, which is optimized for throughput.
 
 The following configuration file disables background garbage collection:
 
@@ -75,7 +75,7 @@ The following configuration file disables background garbage collection:
 </configuration>
 ```
 
-If there's a **gcConcurrentSetting** setting in the machine configuration file, it defines the default value for all .NET Framework applications. The machine configuration file setting overrides the application configuration file setting.
+If there's a `gcConcurrentSetting` setting in the machine configuration file, it defines the default value for all .NET Framework applications. The machine configuration file setting overrides the application configuration file setting.
 
 For more information on concurrent and background garbage collection, see [Background garbage collection](../../../../standard/garbage-collection/background-gc.md).
 

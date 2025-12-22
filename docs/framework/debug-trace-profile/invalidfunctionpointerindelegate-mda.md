@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), invalid function pointer to delegates"
   - "MDAs (managed debugging assistants), invalid function pointer to delegates"
   - "function pointers, invalid"
-  - "marshaling, run-time errors"
+  - "marshaling, runtime errors"
   - "managed debugging assistants (MDAs), marshalling"
   - "MDAs (managed debugging assistants), marshalling"
   - "invalid function pointers"

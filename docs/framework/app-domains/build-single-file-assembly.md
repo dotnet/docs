@@ -69,9 +69,9 @@ vbc -out:myAssembly.exe myCode.vb
 
 To create a library assembly, at the command prompt, type the following command:
 
-\<*compiler command*> **-t:library** \<*module name*>
+\<*compiler command*> `-t:library` \<*module name*>
 
-In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly. You can also use other compiler options, such as the **-out:** option.
+In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly. You can also use other compiler options, such as the `-out:` option.
 
 The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
 

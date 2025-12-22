@@ -83,19 +83,19 @@ There are three specific settings that `dotnet restore` ignores:
 
   Support for cross-platform package signature verification was added in the .NET 5.0.100 SDK.
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
-[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
+[!INCLUDE [arguments-project-solution-file](includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`--disable-parallel`**
 
@@ -113,7 +113,7 @@ There are three specific settings that `dotnet restore` ignores:
 
   Only warn about failed sources if there are packages meeting the version requirement.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--lock-file-path <LOCK_FILE_PATH>`**
 
@@ -149,17 +149,17 @@ There are three specific settings that `dotnet restore` ignores:
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-- [!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
+- [!INCLUDE [use-current-runtime](includes/cli-use-current-runtime.md)]
 
 - **`--use-lock-file`**
 
   Enables project lock file to be generated and used with restore.
 
-- [!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 
@@ -199,12 +199,17 @@ Starting in .NET 8, `dotnet restore` includes NuGet security auditing. This audi
 
 To opt out of the security auditing, set the `<NuGetAudit>` MSBuild property to `false` in your project file.
 
-To retrieve the known vulnerability dataset, ensure that you have the NuGet.org central registry defined as one of your package sources:
+To get vulnerability data, starting in .NET 9, you can use [`auditSources`](/nuget/reference/nuget-config-file#auditsources) in addition to [`packageSources`](/nuget/reference/nuget-config-file#packagesources). If no audit sources are provided, `dotnet restore` uses package sources instead. NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
+
+To list NuGet.org as an audit source, define the following in the *nuget.config* file:
 
 ```xml
-<packageSources>
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-</packageSources>
+<configuration>
+    <auditSources>
+        <clear />
+        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+    </auditSources>
+</configuration>
 ```
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.

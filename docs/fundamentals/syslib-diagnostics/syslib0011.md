@@ -17,7 +17,7 @@ Due to [security vulnerabilities](../../standard/serialization/binaryformatter-s
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
 
-Starting in .NET 8, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> throw a <xref:System.NotSupportedException> at run time on most project types. In addition, <xref:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.Byte[],System.String)?displayProperty=nameWithType> is obsolete *as warning*, and the following APIs are obsolete *as error*:
+Starting in .NET 8, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> throw a <xref:System.NotSupportedException> at runtime on most project types. In addition, <xref:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.Byte[],System.String)?displayProperty=nameWithType> is obsolete *as warning*, and the following APIs are obsolete *as error*:
 
 - <xref:System.Runtime.Serialization.Formatter?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.IFormatter?displayProperty=fullName>

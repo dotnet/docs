@@ -424,4 +424,4 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI might spawn many child processes that aren't your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at run time. It's recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI might spawn many child processes that aren't your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime. It's recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.

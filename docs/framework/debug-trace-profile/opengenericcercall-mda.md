@@ -24,9 +24,9 @@ CER code does not run when a thread is aborted or when an application domain is 
 
 ## Cause
 
-At JIT-compilation time, an instantiation containing an object reference type is only representative because the resultant code is shared, and each of the object reference type variables might be any object reference type. This can prevent the preparation of some run-time resources ahead of time.
+At JIT-compilation time, an instantiation containing an object reference type is only representative because the resultant code is shared, and each of the object reference type variables might be any object reference type. This can prevent the preparation of some runtime resources ahead of time.
 
-In particular, methods with generic type variables can lazily allocate resources in the background. These are referred to as generic dictionary entries. For instance, for the statement `List<T> list = new List<T>();` where `T` is a generic type variable the runtime must look up and possibly create the exact instantiation at run time, for example, `List<Object>, List<String>`, and so forth. This can fail for a variety of reasons beyond the developer's control, such as running out of memory.
+In particular, methods with generic type variables can lazily allocate resources in the background. These are referred to as generic dictionary entries. For instance, for the statement `List<T> list = new List<T>();` where `T` is a generic type variable the runtime must look up and possibly create the exact instantiation at runtime, for example, `List<Object>, List<String>`, and so forth. This can fail for a variety of reasons beyond the developer's control, such as running out of memory.
 
 This MDA should only be activated at JIT-compilation time, not when there is an exact instantiation.
 
@@ -46,7 +46,7 @@ The following is a sample of output from this MDA:
 
  ```output
  Method 'GenericMethodWithCer', which contains at least one constrained execution region, cannot be prepared automatically since it has one or more unbound generic type parameters.
- The caller must ensure this method is prepared explicitly at run time prior to execution.
+ The caller must ensure this method is prepared explicitly at runtime prior to execution.
  method name="GenericMethodWithCer"
  declaringType name="OpenGenericCERCall"
  ```
@@ -84,7 +84,7 @@ class Program
 
         // This call is incorrect. A shared version of the method that
         // cannot be completely analyzed will be JIT-compiled. The
-        // MDA will be activated at JIT-compile time, not at run time.
+        // MDA will be activated at JIT-compile time, not at runtime.
         MyClass.GenericMethodWithCer<String>();
     }
 }

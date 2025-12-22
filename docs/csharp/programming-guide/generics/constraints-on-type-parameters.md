@@ -1,7 +1,7 @@
 ---
 title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 10/10/2025
+ms.date: 11/25/2025
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"

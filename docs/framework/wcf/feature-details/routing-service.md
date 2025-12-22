@@ -38,7 +38,7 @@ Content-based routing is the ability to route a message based on one or more val
 
 To implement content-based routing, the Routing Service relies on <xref:System.ServiceModel.Dispatcher.MessageFilter> implementations that are used to match specific values within the messages to be routed. If a **MessageFilter** matches a message, the message is routed to the destination endpoint associated with the **MessageFilter**. Message filters are grouped together into filter tables (<xref:System.ServiceModel.Routing.Configuration.FilterTableCollection>) to construct complex routing logic. For example, a filter table might contain five mutually exclusive message filters that cause messages to be routed to only one of the five destination endpoints.
 
-The Routing Service allows you to configure the logic that is used to perform content-based routing, as well as dynamically update the routing logic at run time.
+The Routing Service allows you to configure the logic that is used to perform content-based routing, as well as dynamically update the routing logic at runtime.
 
 Through the grouping of message filters into filter tables, routing logic can be constructed that allows you to handle multiple routing scenarios such as:
 
@@ -63,7 +63,7 @@ When providing a service for multiple clients, you may have a service level agre
 
 ## Dynamic Configuration
 
-To support mission-critical systems, where messages must be processed without any service interruptions, it is vital that you be able to modify the configuration of components within the system at run time. To support this need, the Routing Service provides an <xref:System.ServiceModel.IExtension%601> implementation, the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows dynamic updating of the Routing Service configuration at run time.
+To support mission-critical systems, where messages must be processed without any service interruptions, it is vital that you be able to modify the configuration of components within the system at runtime. To support this need, the Routing Service provides an <xref:System.ServiceModel.IExtension%601> implementation, the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows dynamic updating of the Routing Service configuration at runtime.
 
 For more information about dynamic configuration of the Routing Service, see [Routing Introduction](routing-introduction.md).
 

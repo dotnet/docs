@@ -12,14 +12,14 @@ helpviewer_keywords:
   - "compiler element"
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 ---
-# \<compiler> Element
+# `<compiler>` Element
 
 Specifies the compiler configuration attributes for a language provider.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<compiler>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.codedom>`](system-codedom-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<compilers>`](compilers-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<compiler>`
 
 ## Syntax
 
@@ -100,6 +100,6 @@ The following example illustrates a typical compiler configuration element:
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../index.md)
-- [\<compilers> Element](compilers-element.md)
+- [`<compilers>` Element](compilers-element.md)
 - [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

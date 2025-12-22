@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "gcNoAffinitize element"
   - "<gcNoAffinitize> element"
 ---
-# \<GCNoAffinitize> element
+# `<GCNoAffinitize>` element
 
 Specifies whether or not to affinitize server GC threads with CPUs.
 
@@ -51,11 +51,11 @@ None.
 
 ## Remarks
 
-By default, server GC threads are hard-affinitized with their respective CPUs. Each of the system's available processors has its own GC heap and thread. This is typically the preferred setting since it optimizes cache usage. Starting with .NET Framework 4.6.2, by setting the **GCNoAffinitize** element's `enabled` attribute to `true`, you can specify that server GC threads and CPUs should not be tightly coupled.
+By default, server GC threads are hard-affinitized with their respective CPUs. Each of the system's available processors has its own GC heap and thread. This is typically the preferred setting since it optimizes cache usage. Starting with .NET Framework 4.6.2, by setting the `GCNoAffinitize` element's `enabled` attribute to `true`, you can specify that server GC threads and CPUs should not be tightly coupled.
 
-You can specify the **GCNoAffinitize** configuration element alone to not affinitize server GC threads with CPUs. You can also use it along with the [GCHeapCount](gcheapcount-element.md) element to control the number of GC heaps and threads used by an application.
+You can specify the `GCNoAffinitize` configuration element alone to not affinitize server GC threads with CPUs. You can also use it along with the [GCHeapCount](gcheapcount-element.md) element to control the number of GC heaps and threads used by an application.
 
-If the `enabled` attribute of the **GCNoAffinitize** element is `false` (its default value), you can also use the [GCHeapCount](gcheapcount-element.md) element to specify the number of GC threads and heaps, along with the [GCHeapAffinitizeMask](gcheapaffinitizemask-element.md) element to specify the processors to which the GC threads and heaps are affinitized.
+If the `enabled` attribute of the `GCNoAffinitize` element is `false` (its default value), you can also use the [GCHeapCount](gcheapcount-element.md) element to specify the number of GC threads and heaps, along with the [GCHeapAffinitizeMask](gcheapaffinitizemask-element.md) element to specify the processors to which the GC threads and heaps are affinitized.
 
 ## Example
 

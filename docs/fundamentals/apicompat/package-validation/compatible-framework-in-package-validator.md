@@ -11,7 +11,7 @@ Packages containing compatible frameworks need to ensure that code compiled agai
 * .NET Standard 2.0 and .NET 7
 * .NET 6 and .NET 7
 
-In both of these cases, consumers can build against .NET Standard 2.0 or .NET 6 and run on .NET 7. If your binaries aren't compatible between these frameworks, consumers could end up with compile-time or run-time errors.
+In both of these cases, consumers can build against .NET Standard 2.0 or .NET 6 and run on .NET 7. If your binaries aren't compatible between these frameworks, consumers could end up with compile-time or runtime errors.
 
 Package validation catches these errors at pack time. Here's an example scenario:
 

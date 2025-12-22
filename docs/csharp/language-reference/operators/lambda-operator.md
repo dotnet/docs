@@ -19,15 +19,15 @@ In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separat
 
 The following example uses the [LINQ](../../linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="InferredTypes":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="InferredTypes":::
 
 Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you can omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="ExplicitTypes":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="ExplicitTypes":::
 
 The following example shows how to define a lambda expression without input parameters:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="WithoutInput":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="WithoutInput":::
 
 For more information, see [Lambda expressions](lambda-expressions.md).
 

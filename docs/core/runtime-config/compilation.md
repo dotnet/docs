@@ -1,6 +1,6 @@
 ---
 title: Compilation config settings
-description: Learn about run-time settings that configure how the JIT compiler works for .NET apps.
+description: Learn about runtime settings that configure how the JIT compiler works for .NET apps.
 ms.date: 10/29/2021
 ---
 # Runtime configuration options for compilation

@@ -25,7 +25,7 @@ The <xref:System.Collections.Generic.List%601> is not guaranteed to be sorted. Y
 
 Elements in this collection can be accessed using an integer index. Indexes in this collection are zero-based.
 
-**.NET Framework only:** For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.
+**.NET Framework only:** For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the runtime environment.
 
 <xref:System.Collections.Generic.List%601> accepts `null` as a valid value for reference types and allows duplicate elements.
 
@@ -49,7 +49,7 @@ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# 
 
 The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.
 
-:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/program.cs" interactive="try-dotnet" id="snippet1":::
+:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/program.cs" id="snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/module1.vb" id="snippet1":::
 :::code language="fsharp" source="./snippets/System.Collections.Generic/ListT/Overview/fsharp/addremoveinsert.fs" id="snippet1":::
 
@@ -65,6 +65,6 @@ The <xref:System.Collections.Generic.List%601.TrimExcess%2A> method is used to r
 
 Finally, the <xref:System.Collections.Generic.List%601.Clear%2A> method is used to remove all items from the list, and the <xref:System.Collections.Generic.List%601.Capacity%2A> and <xref:System.Collections.Generic.List%601.Count%2A> properties are displayed.
 
-:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/source.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/source.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/source.vb" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System.Collections.Generic/ListT/Overview/fsharp/listclass.fs" id="Snippet1":::

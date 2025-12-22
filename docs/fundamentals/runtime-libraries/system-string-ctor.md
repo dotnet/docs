@@ -148,7 +148,7 @@ Instead of converting each token into a new string, you can create a <xref:Syste
 
 The following example creates a new string by assigning it a string literal. It creates a second string by assigning the value of the first string to it. These are the two most common ways to instantiate a new <xref:System.String> object.
 
-:::code language="csharp" source="./snippets/System/String/.ctor/csharp/ctor1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/ctor1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/ctor1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/String/.ctor/vb/ctor1.vb" id="Snippet1":::
 
@@ -156,7 +156,7 @@ The following example creates a new string by assigning it a string literal. It 
 
 The following example demonstrates how to create a new <xref:System.String> object from a character array.
 
-:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/source.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/String/.ctor/vb/source.vb" id="Snippet1":::
 
@@ -164,7 +164,7 @@ The following example demonstrates how to create a new <xref:System.String> obje
 
 The following example demonstrates how to create a new <xref:System.String> object from a portion of a character array, and how to create a new <xref:System.String> object that contains multiple occurrences of a single character.
 
-:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/source.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/String/.ctor/vb/source.vb" id="Snippet3":::
 

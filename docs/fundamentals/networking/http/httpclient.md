@@ -1,8 +1,6 @@
 ---
 title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 03/09/2025
 ---
 

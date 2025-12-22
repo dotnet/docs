@@ -219,7 +219,7 @@ The serializer has built-in support for the following additional types.
 - Additional diagnostics (such as [SYSLIB1034](../../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
-- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
+- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at runtime. This resolution determines the most appropriate supertype with which to serialize the value.
 - New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in Native AOT. You can annotate your enum types as follows:
 
   ```csharp
@@ -513,7 +513,8 @@ IDataView predictions = model.Transform(split.TestSet);
   }
   ```
 
-- Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
+- Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front. (The `SearchValues<T>` type was expanded in .NET 9. For more information, see [`SearchValues` expansion](../dotnet-9/libraries.md#searchvalues-expansion).)
+
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
   ```csharp

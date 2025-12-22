@@ -51,7 +51,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change provides early prevention of invalid serialization contracts. By validating property names upfront, the serializer prevents scenarios where duplicate properties would be emitted, resulting in invalid JSON that cannot round-trip correctly. This helps developers identify and fix configuration issues during development rather than discovering them at run time during deserialization.
+This change provides early prevention of invalid serialization contracts. By validating property names upfront, the serializer prevents scenarios where duplicate properties would be emitted, resulting in invalid JSON that cannot round-trip correctly. This helps developers identify and fix configuration issues during development rather than discovering them at runtime during deserialization.
 
 For more information, see:
 

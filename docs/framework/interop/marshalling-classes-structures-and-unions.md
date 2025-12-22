@@ -46,7 +46,7 @@ This sample demonstrates how to pass a structure that points to a second structu
 
 The Structs sample uses the following unmanaged functions, shown with their original function declaration:
 
-- **TestStructInStruct** exported from PinvokeLib.dll.
+- `TestStructInStruct` exported from PinvokeLib.dll.
 
     ```cpp
     int TestStructInStruct(MYPERSON2* pPerson2);
@@ -58,7 +58,7 @@ The Structs sample uses the following unmanaged functions, shown with their orig
     void TestStructInStruct3(MYPERSON3 person3);
     ```
 
-- **TestArrayInStruct** exported from PinvokeLib.dll.
+- `TestArrayInStruct` exported from PinvokeLib.dll.
 
     ```cpp
     void TestArrayInStruct(MYARRAYSTRUCT* pStruct);
@@ -96,7 +96,7 @@ The managed `MyPerson`, `MyPerson2`, `MyPerson3`, and `MyArrayStruct` structures
 
 - `MyPerson` contains only string members. The [CharSet](specifying-a-character-set.md) field sets the strings to ANSI format when passed to the unmanaged function.
 
-- `MyPerson2` contains an **IntPtr** to the `MyPerson` structure. The **IntPtr** type replaces the original pointer to the unmanaged structure because .NET Framework applications do not use pointers unless the code is marked **unsafe**.
+- `MyPerson2` contains an `IntPtr` to the `MyPerson` structure. The `IntPtr` type replaces the original pointer to the unmanaged structure because .NET Framework applications do not use pointers unless the code is marked **unsafe**.
 
 - `MyPerson3` contains `MyPerson` as an embedded structure. A structure embedded within another structure can be flattened by placing the elements of the embedded structure directly into the main structure, or it can be left as an embedded structure, as is done in this sample.
 
@@ -112,7 +112,7 @@ The `NativeMethods` class contains managed prototypes for the `TestStructInStruc
 
 - `TestArrayInStruct` declares a reference to type `MyArrayStruct` as its parameter.
 
-Structures as arguments to methods are passed by value unless the parameter contains the **ref** (**ByRef** in Visual Basic) keyword. For example, the `TestStructInStruct` method passes a reference (the value of an address) to an object of type `MyPerson2` to unmanaged code. To manipulate the structure that `MyPerson2` points to, the sample creates a buffer of a specified size and returns its address by combining the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> methods. Next, the sample copies the content of the managed structure to the unmanaged buffer. Finally, the sample uses the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A?displayProperty=nameWithType> method to marshal data from the unmanaged buffer to a managed object and the <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> method to free the unmanaged block of memory.
+Structures as arguments to methods are passed by value unless the parameter contains the `ref` (**ByRef** in Visual Basic) keyword. For example, the `TestStructInStruct` method passes a reference (the value of an address) to an object of type `MyPerson2` to unmanaged code. To manipulate the structure that `MyPerson2` points to, the sample creates a buffer of a specified size and returns its address by combining the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> methods. Next, the sample copies the content of the managed structure to the unmanaged buffer. Finally, the sample uses the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A?displayProperty=nameWithType> method to marshal data from the unmanaged buffer to a managed object and the <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> method to free the unmanaged block of memory.
 
 ### Declaring Prototypes
 
@@ -132,7 +132,7 @@ This sample demonstrates how to pass a structure that contains a second, embedde
 
 The FindFile sample uses the following unmanaged function, shown with its original function declaration:
 
-- **FindFirstFile** exported from Kernel32.dll.
+- `FindFirstFile` exported from Kernel32.dll.
 
     ```cpp
     HANDLE FindFirstFile(LPCTSTR lpFileName, LPWIN32_FIND_DATA lpFindFileData);
@@ -156,7 +156,7 @@ typedef struct _WIN32_FIND_DATA
 } WIN32_FIND_DATA, *PWIN32_FIND_DATA;
 ```
 
-In this sample, the `FindData` class contains a corresponding data member for each element of the original structure and the embedded structure. In place of two original character buffers, the class substitutes strings. **MarshalAsAttribute** sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration to **ByValTStr**, which is used to identify the inline, fixed-length character arrays that appear within the unmanaged structures.
+In this sample, the `FindData` class contains a corresponding data member for each element of the original structure and the embedded structure. In place of two original character buffers, the class substitutes strings. `MarshalAsAttribute` sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration to `ByValTStr`, which is used to identify the inline, fixed-length character arrays that appear within the unmanaged structures.
 
 The `NativeMethods` class contains a managed prototype of the `FindFirstFile` method, which passes the `FindData` class as a parameter. The parameter must be declared with the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes because classes, which are reference types, are passed as In parameters by default.
 
@@ -178,13 +178,13 @@ This sample demonstrates how to pass structures containing only value types, and
 
 The Unions sample uses the following unmanaged function, shown with its original function declaration:
 
-- **TestUnion** exported from PinvokeLib.dll.
+- `TestUnion` exported from PinvokeLib.dll.
 
     ```cpp
     void TestUnion(MYUNION u, int type);
     ```
 
-[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, **MYUNION** and **MYUNION2**. The unions contain the following elements:
+[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, `MYUNION` and `MYUNION2`. The unions contain the following elements:
 
 ```cpp
 union MYUNION
@@ -281,9 +281,9 @@ public struct STRRET_64
 
 Failure to properly consider the native layout in an interop scenario can result in random crashes or worse, incorrect computations.
 
-By default, .NET assemblies can run in both a 32-bit and 64-bit version of the .NET runtime. The app must wait until run time to decide which of the previous definitions to use.
+By default, .NET assemblies can run in both a 32-bit and 64-bit version of the .NET runtime. The app must wait until runtime to decide which of the previous definitions to use.
 
-The following code snippet shows an example of how to choose between the 32-bit and 64-bit definition at run time.
+The following code snippet shows an example of how to choose between the 32-bit and 64-bit definition at runtime.
 
 ```csharp
 if (IntPtr.Size == 8)
@@ -303,7 +303,7 @@ This sample demonstrates how to pass a pointer to a class to an unmanaged functi
 
 The SysTime sample uses the following unmanaged function, shown with its original function declaration:
 
-- **GetSystemTime** exported from Kernel32.dll.
+- `GetSystemTime` exported from Kernel32.dll.
 
     ```cpp
     VOID GetSystemTime(LPSYSTEMTIME lpSystemTime);

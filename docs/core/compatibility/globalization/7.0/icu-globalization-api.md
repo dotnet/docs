@@ -45,7 +45,7 @@ string text = string.Format("{0:C}", 100);
 
 If you're using .NET 7 on Windows Server 2019 or Windows 10 client versions 1703, 1709, 1803, or 1809, we recommend testing your app or service before shipping it to ensure the behavior is as expected and doesn't break any users.
 
-If you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
+If you wish to continue using NLS globalization APIs, you can set a [runtime switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
 
 ## Affected APIs
 

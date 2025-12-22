@@ -106,7 +106,7 @@ Authorization is the process of determining which entities have permission to ch
 
 ### The Origin of Claims
 
- Claims can come from a variety of sources. One common source of claims is credentials presented by a user, for example as part of a message sent to a Web service. The system validates such claims, and they become part of a set of claims associated with the user. Other system components may also be sources of claims, including, but not limited to, the operating system, the network stack, the run-time environment, or the application. In addition, remote services may also be a source of claims.
+ Claims can come from a variety of sources. One common source of claims is credentials presented by a user, for example as part of a message sent to a Web service. The system validates such claims, and they become part of a set of claims associated with the user. Other system components may also be sources of claims, including, but not limited to, the operating system, the network stack, the runtime environment, or the application. In addition, remote services may also be a source of claims.
 
 ### Authorization Policies
 

@@ -1,7 +1,7 @@
 ---
 title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
-ms.date: 11/04/2025
+ms.date: 12/10/2025
 ms.topic: overview
 ---
 
@@ -17,6 +17,12 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 [`Microsoft.Extensions.AI`](microsoft-extensions-ai.md) is a set of core .NET libraries that provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware. These APIs were created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. The low-level APIs, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, were extracted from Semantic Kernel and moved into the <xref:Microsoft.Extensions.AI> namespace.
 
 `Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
+
+## Other AI-related Microsoft.Extensions libraries
+
+The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](quickstarts/build-vector-search-app.md).
+
+The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET building blocks for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially retrieval-augmented generation (RAG) scenarios. For more information, see [Data ingestion](conceptual/data-ingestion.md).
 
 ## Microsoft Agent Framework
 
@@ -80,14 +86,9 @@ For example, you can use [Ollama](https://ollama.com/) to [connect to local AI m
 > [!NOTE]
 > The preceding SLMs can also be hosted on other services, such as Azure.
 
-## Connect to vector databases and services
-
-[!INCLUDE [vector-databases](includes/vector-databases.md)]
-
 ## Next steps
 
 - [What is Microsoft Agent Framework?](/agent-framework/overview/agent-framework-overview)
-- [What is Semantic Kernel?](/semantic-kernel/overview/)
 - [Quickstart - Summarize text using Azure AI chat app with .NET](quickstarts/prompt-model.md)
 
 [phi3]: https://azure.microsoft.com/products/phi-3

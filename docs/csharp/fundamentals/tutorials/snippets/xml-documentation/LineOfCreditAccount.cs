@@ -1,9 +1,6 @@
 ﻿namespace OOProgramming;
 
-/// <summary>
-/// Represents a line of credit account that extends <see cref="BankAccount"/> with credit limit functionality.
-/// Allows negative balances up to a specified credit limit and applies monthly interest charges on outstanding balances.
-/// </summary>
+/// <inheritdoc/>
 /// <remarks>
 /// A line of credit account differs from a regular bank account in that it allows the balance to go negative
 /// up to a predefined credit limit. When the balance is negative (indicating borrowed money), the account

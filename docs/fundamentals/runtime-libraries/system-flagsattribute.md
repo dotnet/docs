@@ -47,7 +47,7 @@ Bit fields are generally used for lists of elements that might occur in combinat
 
 The following example illustrates the use of the `FlagsAttribute` attribute and shows the effect on the <xref:System.Enum.ToString%2A> method of using `FlagsAttribute` on an <xref:System.Enum> declaration.
 
-:::code language="csharp" source="./snippets/System/FlagsAttribute/Overview/csharp/flags.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/FlagsAttribute/Overview/csharp/flags.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/FlagsAttribute/Overview/fsharp/flags.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/FlagsAttribute/Overview/vb/flags.vb" id="Snippet1":::
 
@@ -55,6 +55,6 @@ The preceding example defines two color-related enumerations, `SingleHue` and `M
 
 The following example defines another enumeration with the `FlagsAttribute` attribute and shows how to use bitwise logical and equality operators to determine whether one or more bit fields are set in an enumeration value. You can also use the <xref:System.Enum.HasFlag%2A?displayProperty=nameWithType> method to do that, but that is not shown in this example.
 
-:::code language="csharp" source="./snippets/System/FlagsAttribute/Overview/csharp/flags1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/FlagsAttribute/Overview/csharp/flags1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/FlagsAttribute/Overview/fsharp/flags1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/FlagsAttribute/Overview/vb/flags1.vb" id="Snippet2":::

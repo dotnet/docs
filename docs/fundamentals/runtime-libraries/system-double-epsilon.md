@@ -13,13 +13,13 @@ dev_langs:
 
 The value of the <xref:System.Double.Epsilon> property reflects the smallest positive <xref:System.Double> value that is significant in numeric operations or comparisons when the value of the <xref:System.Double> instance is zero. For example, the following code shows that zero and <xref:System.Double.Epsilon> are considered to be unequal values, whereas zero and half the value of <xref:System.Double.Epsilon> are considered to be equal.
 
-:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/epsilon.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/Double/Epsilon/vb/epsilon.vb" id="Snippet5":::
 
 More precisely, the floating point format consists of a sign, a 52-bit mantissa or significand, and an 11-bit exponent. As the following example shows, zero has an exponent of -1022 and a mantissa of 0. <xref:System.Double.Epsilon> has an exponent of -1022 and a mantissa of 1. This means that <xref:System.Double.Epsilon> is the smallest positive <xref:System.Double> value greater than zero and represents the smallest possible value and the smallest possible increment for a <xref:System.Double> whose exponent is -1022.
 
-:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon1.cs" interactive="try-dotnet" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon1.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/epsilon1.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Double/Epsilon/vb/epsilon1.vb" id="Snippet6":::
 

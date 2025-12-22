@@ -1,8 +1,6 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-author: IEvangelist
-ms.author: dapine
 ms.date: 03/17/2023
 zone_pivot_groups: unit-testing-framework-set-one
 ---

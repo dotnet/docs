@@ -2,7 +2,7 @@
 title: "How to search strings"
 description: Learn about two strategies to search for text in strings in C#. String class methods search for specific text. Regular expressions search for patterns in text.
 ms.date: 02/18/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "searching strings [C#]"
   - "strings [C#], searching with String methods"
   - "strings [C#], searching with regular expressions"
@@ -12,15 +12,13 @@ helpviewer_keywords:
 
 You can use two main strategies to search for text in strings. Methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
-
 The [string](../language-reference/builtin-types/reference-types.md#the-string-type) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides many useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
 
 ## Does a string contain text?
 
 The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods search a string for specific text. The following example shows each of these methods and a variation that uses a case-insensitive search:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/SearchStrings.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/strings/SearchStrings.cs" id="Snippet1":::
 
 The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType> enumeration value to specify a case-insensitive search.
 
@@ -28,7 +26,7 @@ The preceding example demonstrates an important point for using these methods. S
 
 The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> methods also search for text in strings. These methods return the location of the text being sought. If the text isn't found, they return `-1`. The following example shows a search for the first and last occurrence of the word "methods" and displays the text in between.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/SearchStrings.cs" id="Snippet2":::
+:::code language="csharp" source="./snippets/strings/SearchStrings.cs" id="Snippet2":::
 
 ## Finding specific text using regular expressions
 
@@ -44,7 +42,7 @@ The search pattern describes the text you search for. The following table descri
 | `(eir)?` | match 0 or 1 occurrence of "eir" |
 | `\s`     | match a white-space character    |
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/SearchStrings.cs" id="Snippet3":::
+:::code language="csharp" source="./snippets/strings/SearchStrings.cs" id="Snippet3":::
 
 > [!TIP]
 > The `string` methods are generally better choices when you're searching for an exact string. Regular expressions are better when you're searching for some pattern in a source string.
@@ -53,15 +51,15 @@ The search pattern describes the text you search for. The following table descri
 
 The following code uses regular expressions to validate the format of each string in an array. The validation requires that each string is formatted as a telephone number: three groups of digits separated by dashes where the first two groups contain three digits and the third group contains four digits. The search pattern uses the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md).
 
-| Pattern | Meaning                             |
-|---------|-------------------------------------|
-| `^`     | matches the beginning of the string |
-| `\d{3}` | matches exactly three digit characters  |
-| `-`     | matches the '-' character           |
-| `\d{4}` | matches exactly four digit characters  |
-| `$`     | matches the end of the string       |
+| Pattern | Meaning                                |
+|---------|----------------------------------------|
+| `^`     | Matches the beginning of the string    |
+| `\d{3}` | Matches exactly three digit characters |
+| `-`     | Matches the '-' character              |
+| `\d{4}` | Matches exactly four digit characters  |
+| `$`     | Matches the end of the string          |
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/\strings/SearchStrings.cs" id="Snippet4":::
+:::code language="csharp" source="./snippets/\strings/SearchStrings.cs" id="Snippet4":::
 
 This single search pattern matches many valid strings. Regular expressions are better to search for or validate against a pattern, rather than a single text string.
 

@@ -6,14 +6,13 @@ f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName"
 helpviewer_keywords:
   - "custom element"
-ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
 ---
 # Custom element for NameValueSectionHandler and DictionarySectionHandler
 
 Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;**\<sectionName>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;`<sectionName>`
 
 ## Attributes
 
@@ -21,23 +20,23 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
-| [**\<configuration>**](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| Parent element                                | Description |
+|-----------------------------------------------|-------------|
+| [`<configuration>`](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
-|     | Description |
-| --- | ----------- |
-| [**\<add>**](add-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler>  | Adds custom application settings. |
-| [**\<remove>**](remove-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Removes a previously defined setting. |
-| [**\<clear>**](clear-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Clears all previously defined settings in a section. |
+| Child element | Description |
+| ------------- | ----------- |
+| [`<add>`](add-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler>  | Adds custom application settings. |
+| [`<remove>`](remove-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Removes a previously defined setting. |
+| [`<clear>`](clear-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Clears all previously defined settings in a section. |
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a **\<section>** tag in the **\<configSections>** element.
+The `<sectionName>` element is a custom element defined by a `<section>` tag in the `<configSections>` element.
 
-The following table shows the type of object the ConfigurationSettings.GetConfig method returns for each configuration section handler:
+The following table shows the type of object the <xref:System.Configuration.ConfigurationSettings.GetConfig(System.String)?displayProperty=nameWithType> method returns for each configuration section handler:
 
 | Configuration section handler                        | Return type                                                |
 | ---------------------------------------------------- | ---------------------------------------------------------- |
@@ -48,7 +47,7 @@ The following table shows the type of object the ConfigurationSettings.GetConfig
 
 The following example shows how to declare sections that use the <xref:System.Configuration.DictionarySectionHandler> and <xref:System.Configuration.NameValueSectionHandler> classes.
 
-The first custom element is **\<dictionarySample>**, which contains settings read by the <xref:System.Configuration.DictionarySectionHandler> class in the `System.dll` assembly. The second custom element is **\<mySection>**, which contains settings read by the <xref:System.Configuration.NameValueSectionHandler> class in the `System.dll` assembly.
+The first custom element is `<dictionarySample>`, which contains settings read by the <xref:System.Configuration.DictionarySectionHandler> class in the `System.dll` assembly. The second custom element is `<mySection>`, which contains settings read by the <xref:System.Configuration.NameValueSectionHandler> class in the `System.dll` assembly.
 
 ```xml
 <configuration>
@@ -71,7 +70,7 @@ The first custom element is **\<dictionarySample>**, which contains settings rea
 
 ## Configuration file
 
-This element can be used in the application configuration file, machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.
+This element can be used in the application configuration file, the machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.
 
 ## See also
 

@@ -1,8 +1,6 @@
 ---
 title: Options pattern
-author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
-ms.author: dapine
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---
@@ -330,7 +328,7 @@ builder.Services
     }, "VerbosityLevel must be > than Scale.");
 ```
 
-The validation occurs at run time, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
+The validation occurs at runtime, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
 
 ```csharp
 builder.Services

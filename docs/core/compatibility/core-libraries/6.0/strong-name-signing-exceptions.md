@@ -5,7 +5,7 @@ ms.date: 05/31/2022
 ---
 # Strong-name APIs throw PlatformNotSupportedException
 
-A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't do anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at run time. Previously, using these APIs would eventually result in a run-time exception further along; the exception is now thrown when the type is instantiated or first accessed.
+A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't do anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at runtime. Previously, using these APIs would eventually result in a runtime exception further along; the exception is now thrown when the type is instantiated or first accessed.
 
 ## Previous behavior
 
@@ -13,7 +13,7 @@ In previous versions, calling <xref:System.Reflection.AssemblyName.KeyPair?displ
 
 ## New behavior
 
-Starting in .NET 6, each of the three affected APIs throws a <xref:System.PlatformNotSupportedException> at run time.
+Starting in .NET 6, each of the three affected APIs throws a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-Previously, an application that called the API compiled and ran, but as soon as the instance was used in any code path, it threw a run-time exception. To make it more explicit that this scenario is unsupported, the exception-throwing logic was moved into the instance constructor. In case no instances are created, the exception is also thrown in public entry points that return this type, that is, <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType>.
+Previously, an application that called the API compiled and ran, but as soon as the instance was used in any code path, it threw a runtime exception. To make it more explicit that this scenario is unsupported, the exception-throwing logic was moved into the instance constructor. In case no instances are created, the exception is also thrown in public entry points that return this type, that is, <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType>.
 
 ## Recommended action
 

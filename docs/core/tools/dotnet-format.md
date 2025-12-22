@@ -34,6 +34,9 @@ dotnet format -h|--help
 
 The MSBuild project or solution to run code formatting on. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* or *sln*, and uses that file.
 
+> [!CAUTION]
+> dotnet format may restore, compile, and run analyzers from the specified project or solution. Only invoke the tool against trusted code.
+
 ## Options
 
 None of the options below are required for the `dotnet format` command to succeed, but you can use them to further customize what is formatted and by which rules.
@@ -82,9 +85,9 @@ None of the options below are required for the `dotnet format` command to succee
 
   Displays version information.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Subcommands
 

@@ -38,7 +38,7 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
 
 3. [Call a .NET object](/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).
 
-     COM developers can call methods on the .NET object the same way they call methods on any unmanaged type. For example, the COM **CoCreateInstance** API activates .NET objects.
+     COM developers can call methods on the .NET object the same way they call methods on any unmanaged type. For example, the COM `CoCreateInstance` API activates .NET objects.
 
 4. [Deploy an application for COM access](/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).
 

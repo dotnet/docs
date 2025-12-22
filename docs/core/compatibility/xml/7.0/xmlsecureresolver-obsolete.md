@@ -1,11 +1,11 @@
 ---
 title: ".NET 7 breaking change: XmlSecureResolver is obsolete"
-description: Learn about the .NET 7 breaking change in XML/XSLT where XmlSecureResolver was obsoleted and XmlSecureResolver.GetEntity unconditionally throws a run-time exception.
+description: Learn about the .NET 7 breaking change in XML/XSLT where XmlSecureResolver was obsoleted and XmlSecureResolver.GetEntity unconditionally throws a runtime exception.
 ms.date: 09/08/2022
 ---
 # XmlSecureResolver is obsolete
 
-The method <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=fullName> unconditionally throws an <xref:System.Xml.XmlException> at run time. If your application utilizes <xref:System.Xml.XmlSecureResolver> and you attempt to resolve an XML resource through it, resolution will fail with an exception.
+The method <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=fullName> unconditionally throws an <xref:System.Xml.XmlException> at runtime. If your application utilizes <xref:System.Xml.XmlSecureResolver> and you attempt to resolve an XML resource through it, resolution will fail with an exception.
 
 Additionally, the entire <xref:System.Xml.XmlSecureResolver?displayProperty=fullName> type is obsolete. All references to this type will result in a [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) warning at build time. If you've enabled warnings as errors, this will cause a build break if your application references <xref:System.Xml.XmlSecureResolver>.
 
@@ -17,7 +17,7 @@ XmlResolver resolver = new XmlSecureResolver(
     resolver: new XmlUrlResolver(),
     securityUrl: "https://www.example.com/");
 
-// Call to XmlSecureResolver.GetEntity below throws XmlException at run time.
+// Call to XmlSecureResolver.GetEntity below throws XmlException at runtime.
 object entity = resolver.GetEntity(
     absoluteUri: new Uri("https://www.example.com/some-entity"),
     role: null,

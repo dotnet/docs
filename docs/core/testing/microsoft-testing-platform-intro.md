@@ -175,16 +175,35 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 ### [Continuous integration (CI)](#tab/continuous-integration)
 
-There's no special pipeline task, or any extra tooling to run `Testing.Platform` tests. There's also no other tooling required to run multiple tests projects through a single command.
+- To run a single test project in CI, add one step for each test executable that you wish to run, such as the following on Azure DevOps:
 
-To run a test project in CI add one step for each test executable that you wish to run, such as this on Azure DevOps:
+  ```yml
+  - task: CmdLine@2
+    displayName: "Run Contoso.MyTests"
+    inputs:
+      script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
+  ```
 
-```yml
-- task: CmdLine@2
-  displayName: "Run Contoso.MyTests"
-  inputs:
-    script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
-```
+- Run the `dotnet test` command manually, similar to the typical local workflow:
+
+  ```yml
+  - task: CmdLine@2
+    displayName: "Run tests"
+    inputs:
+      script: 'dotnet test' # add command-line options as needed
+  ```
+
+- Run using the `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global-json.md) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
+
+  ```yml
+  - task: DotNetCoreCLI@2
+    displayName: "Run tests"
+    inputs:
+      command: test
+  ```
+
+  > [!NOTE]
+  > Support for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
 
 ---
 

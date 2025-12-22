@@ -23,7 +23,7 @@ Tracing is a way for you to monitor the execution of your application while it i
 
  The term *instrumentation* refers to an ability to monitor or measure the level of a product's performance and to diagnose errors. In programming, this means the ability of an application to incorporate:
 
-- **Code tracing** - Receiving informative messages about the execution of an application at run time.
+- **Code tracing** - Receiving informative messages about the execution of an application at runtime.
 
 - **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugger-feature-tour).
 
@@ -95,7 +95,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
     - Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.
 
-7. If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).
+7. If a problem occurs during runtime, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).
 
      The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection determines the target.
 
@@ -105,13 +105,13 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
  When you create a distributed application, you might find it difficult to test the application in the manner in which it will be used. Few development teams have the capability to test all possible combinations of operating systems or Web browsers (including all the localized language options), or to simulate the high number of users that will access the application at the same time. Under these circumstances, you cannot test how a distributed application will respond to high volumes, different setups, and unique end-user behaviors. Also, many parts of a distributed application have no user interface with which you can interact directly or view the activity of those parts.
 
- However, you can compensate for this by enabling distributed applications to describe certain events of interest to system administrators, especially things that go wrong, by *instrumenting* the application — that is, by placing trace statements at strategic locations in your code. Then if something unexpected occurs at run time (for example, excessively slow response time), you can determine the likely cause.
+ However, you can compensate for this by enabling distributed applications to describe certain events of interest to system administrators, especially things that go wrong, by *instrumenting* the application — that is, by placing trace statements at strategic locations in your code. Then if something unexpected occurs at runtime (for example, excessively slow response time), you can determine the likely cause.
 
- With trace statements you can avoid the difficult task of examining the original source code, modifying it, recompiling, and attempting to produce the run-time error within the debugging environment. Remember that you can instrument an application not only to display errors, but also to monitor performance.
+ With trace statements you can avoid the difficult task of examining the original source code, modifying it, recompiling, and attempting to produce the runtime error within the debugging environment. Remember that you can instrument an application not only to display errors, but also to monitor performance.
 
 ## Strategic Placement of Trace Statements
 
- You must exercise special care when placing your trace statements for use during run time. You must consider what tracing information is likely to be needed in a deployed application, so that all likely tracing scenarios are adequately covered. Because applications that use tracing vary widely, however, there are no general guidelines for strategic placement of tracing. For more information on placing trace statements, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md).
+ You must exercise special care when placing your trace statements for use during runtime. You must consider what tracing information is likely to be needed in a deployed application, so that all likely tracing scenarios are adequately covered. Because applications that use tracing vary widely, however, there are no general guidelines for strategic placement of tracing. For more information on placing trace statements, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md).
 
 ## Output from Tracing
 

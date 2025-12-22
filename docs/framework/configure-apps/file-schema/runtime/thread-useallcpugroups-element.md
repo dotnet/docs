@@ -4,13 +4,13 @@ title: "<Thread_UseAllCpuGroups> Element"
 ms.date: "03/30/2017"
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 ---
-# \<Thread_UseAllCpuGroups> Element
+# `<Thread_UseAllCpuGroups>` Element
 
 Specifies whether the runtime distributes managed threads across all CPU groups.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<Thread_UseAllCpuGroups>**  
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<Thread_UseAllCpuGroups>`
 
 ## Syntax
 
@@ -70,4 +70,4 @@ The following example shows how to enable support for multiple CPU groups.
 - [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- [\<GCCpuGroup> Element](gccpugroup-element.md)
+- [`<GCCpuGroup>` Element](gccpugroup-element.md)

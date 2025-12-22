@@ -1,6 +1,6 @@
 ---
 title: Garbage collector config settings
-description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
+description: Learn about runtime settings for configuring how the garbage collector manages memory for .NET apps.
 ms.date: 08/09/2024
 ---
 # Runtime configuration options for garbage collection
@@ -11,7 +11,7 @@ Settings are arranged into groups on this page. The settings within each group a
 
 > [!NOTE]
 >
-> - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at run time, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
+> - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at runtime, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
 > - Because GC is per process, it rarely ever makes sense to set these configurations at the machine level. For example, you wouldn't want every .NET process on a machine to use server GC or the same heap hard limit.
 > - For number values, use decimal notation for settings in the *runtimeconfig.json* or *runtimeconfig.template.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
 > - If you're using the environment variables, .NET 6 and later versions standardize on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix continues to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
@@ -244,7 +244,7 @@ To use a standalone garbage collector instead of the default GC implementation, 
 - Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
 - The default threshold is 85,000 bytes.
 - The value you specify must be larger than the default threshold.
-- The value might be capped by the runtime to the maximum possible size for the current configuration. You can inspect the value in use at run time through the <xref:System.GC.GetConfigurationVariables?displayProperty=nameWithType> API.
+- The value might be capped by the runtime to the maximum possible size for the current configuration. You can inspect the value in use at runtime through the <xref:System.GC.GetConfigurationVariables?displayProperty=nameWithType> API.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -300,7 +300,7 @@ The following settings apply to all flavors of the GC:
 
 - The heap hard limit is defined as the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
-- If this limit isn't configured but the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, a default value is set. That default is the greater of 20 MB or 75% of the memory limit on the container.
+- If running in a memory-constrained environment (e.g., a container) and this value is unset, the default value is either 20 MB or the [heap hard limit percent](#heap-hard-limit-percent) of the container limit, whichever is larger.
 - This setting is ignored if the [Per-object-heap hard limits](#per-object-heap-hard-limits) are configured.
 
 | | Setting name | Values | Version introduced |
@@ -339,7 +339,8 @@ The following settings apply to all flavors of the GC:
 
 ### Heap hard limit percent
 
-- Specifies the heap hard limit as a percentage of the total physical memory. If the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, the total physical memory is the memory limit; otherwise it's what's available on the machine.
+- Specifies the heap hard limit as a percentage of total physical memory.
+- If the process runs inside an environment with a set memory limit (for example, a container), that limit is treated as the total physical memory. In such environments, the default value is 75%.
 - This setting only applies to 64-bit computers.
 - This setting is ignored if the [Per-object-heap hard limits](#per-object-heap-hard-limits) are configured or the [heap hard limit](#heap-hard-limit) is configured.
 

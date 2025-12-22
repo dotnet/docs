@@ -19,7 +19,7 @@ SQL Server Express Edition supports the user instance feature, which is only ava
 
 ## Enable User Instances
 
- To generate user instances, a parent instance of SQL Server Express must be running. User instances are enabled by default when SQL Server Express is installed, and they can be explicitly enabled or disabled by a system administrator executing the **sp_configure** system stored procedure on the parent instance.
+ To generate user instances, a parent instance of SQL Server Express must be running. User instances are enabled by default when SQL Server Express is installed, and they can be explicitly enabled or disabled by a system administrator executing the `sp_configure` system stored procedure on the parent instance.
 
 ```sql
 -- Enable user instances.
@@ -52,7 +52,7 @@ In this connection string:
 - The `|DataDirectory|` substitution string enclosed in the pipe symbols refers to the data directory of the application opening the connection and provides a relative path indicating the location of the .mdf and .ldf database and log files. If you want to locate these files elsewhere, you must provide the full path to the files.
 
 > [!NOTE]
-> You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename?displayProperty=nameWithType> properties to build a connection string at run time.
+> You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename?displayProperty=nameWithType> properties to build a connection string at runtime.
 
 [!INCLUDE [managed-identities](../../../../includes/managed-identities.md)]
 
@@ -76,7 +76,7 @@ Initial Catalog=Northwind;
 > [!NOTE]
 > <xref:System.Data.SqlClient> resolves the substitution strings into full paths against the local computer file system. Therefore, remote server, HTTP, and UNC path names are not supported. An exception is thrown when the connection is opened if the server is not located on the local computer.
 
- When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a run-time initiated instance running under the caller's account.
+ When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a runtime initiated instance running under the caller's account.
 
 > [!NOTE]
 > It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout%2A> value since user instances may take longer to load than regular instances.
@@ -117,14 +117,14 @@ private static void OpenSqlConnection()
 
 ## Lifetime of a User Instance Connection
 
- Unlike versions of SQL Server that run as a service, SQL Server Express instances do not need to be manually started and stopped. Each time a user logs in and connects to a user instance, the user instance is started if it is not already running. User instance databases have the `AutoClose` option set so that the database is automatically shut down after a period of inactivity. The sqlservr.exe process that is started is kept running for a limited time-out period after the last connection to the instance is closed, so it does not need to be restarted if another connection is opened before the time-out has expired. The user instance automatically shuts down if no new connection opens before that time-out period has expired. A system administrator on the parent instance can set the duration of the time-out period for a user instance by using **sp_configure** to change the **user instance timeout** option. The default is 60 minutes.
+ Unlike versions of SQL Server that run as a service, SQL Server Express instances do not need to be manually started and stopped. Each time a user logs in and connects to a user instance, the user instance is started if it is not already running. User instance databases have the `AutoClose` option set so that the database is automatically shut down after a period of inactivity. The sqlservr.exe process that is started is kept running for a limited time-out period after the last connection to the instance is closed, so it does not need to be restarted if another connection is opened before the time-out has expired. The user instance automatically shuts down if no new connection opens before that time-out period has expired. A system administrator on the parent instance can set the duration of the time-out period for a user instance by using `sp_configure` to change the **user instance timeout** option. The default is 60 minutes.
 
 > [!NOTE]
 > If `Min Pool Size` is used in the connection string with a value greater than zero, the connection pooler will always maintain a few opened connections, and the user instance will not automatically shut down.
 
 ## How User Instances Work
 
- The first time a user instance is generated for each user, the **master** and **msdb** system databases are copied from the Template Data folder to a path under the user's local application data repository directory for exclusive use by the user instance. This path is typically `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`. When a user instance starts up, the **tempdb**, log, and trace files are also written to this directory. A name is generated for the instance, which is guaranteed to be unique for each user.
+ The first time a user instance is generated for each user, the `master` and `msdb` system databases are copied from the Template Data folder to a path under the user's local application data repository directory for exclusive use by the user instance. This path is typically `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`. When a user instance starts up, the **tempdb**, log, and trace files are also written to this directory. A name is generated for the instance, which is guaranteed to be unique for each user.
 
  By default all members of the Windows Builtin\Users group are granted permissions to connect on the local instance as well as read and execute permissions on the SQL Server binaries. Once the credentials of the calling user hosting the user instance have been verified, that user becomes the `sysadmin` on that instance. Only shared memory is enabled for user instances, which means that only operations on the local machine are possible.
 
@@ -137,7 +137,7 @@ private static void OpenSqlConnection()
 
 ## User Instance Scenarios
 
- User instances provide developers of database applications with a SQL Server data store that does not depend on developers having administrative accounts on their development computers. User instances are based on the Access/Jet model, where the database application simply connects to a file, and the user automatically has full permissions on all of the database objects without needing the intervention of a system administrator to grant permissions. It is intended to work in situations where the user is running under a least-privilege user account (LUA) and does not have administrative privileges on the server or local machine, yet needs to create database objects and applications. User instances allow users to create instances at run time that run under the user's own security context, and not in the security context of a more privileged system service.
+ User instances provide developers of database applications with a SQL Server data store that does not depend on developers having administrative accounts on their development computers. User instances are based on the Access/Jet model, where the database application simply connects to a file, and the user automatically has full permissions on all of the database objects without needing the intervention of a system administrator to grant permissions. It is intended to work in situations where the user is running under a least-privilege user account (LUA) and does not have administrative privileges on the server or local machine, yet needs to create database objects and applications. User instances allow users to create instances at runtime that run under the user's own security context, and not in the security context of a more privileged system service.
 
 > [!IMPORTANT]
 > User instances should only be used in scenarios where all the applications using it are fully trusted.

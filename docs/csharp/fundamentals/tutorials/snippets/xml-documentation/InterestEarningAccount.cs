@@ -1,9 +1,7 @@
 ﻿namespace OOProgramming;
 
-/// <summary>
-/// Represents an interest-earning bank account that extends <see cref="BankAccount"/> with monthly interest payments.
-/// Earns interest on balances above $500 at a rate of 2% annually, applied monthly.
-/// </summary>
+// <InterestEarningAccountComments>
+/// <inheritdoc/>
 /// <remarks>
 /// An interest-earning account is a specialized savings account that rewards customers for maintaining higher balances.
 /// Interest is only earned when the account balance exceeds $500, encouraging customers to maintain substantial deposits.
@@ -11,6 +9,7 @@
 /// This account type uses the standard minimum balance of $0 from the base <see cref="BankAccount"/> class.
 /// </remarks>
 public class InterestEarningAccount : BankAccount
+// </InterestEarningAccountComments>
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="InterestEarningAccount"/> class with the specified owner name and initial balance.

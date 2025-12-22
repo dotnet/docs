@@ -66,7 +66,7 @@ typedef enum CorAssemblyFlags {
 | `afPA_Shift` | Indicates a shift count in the processor architecture flags to and from the index. |
 | `afEnableJITcompileTracking` |Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
 | `afDisableJITcompileOptimizer` |Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
-| `afRetargetable` | Indicates that the assembly can be retargeted at run time to an assembly from a different publisher. |
+| `afRetargetable` | Indicates that the assembly can be retargeted at runtime to an assembly from a different publisher. |
 | `afContentType_Mask` | A mask that describes the content type. |
 | `afContentType_Default` | Indicates the default content type. |
 | `afContentType_WindowsRuntime` | Indicates the Windows Runtime content type. |

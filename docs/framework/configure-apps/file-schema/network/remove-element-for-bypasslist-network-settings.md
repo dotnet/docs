@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
 ---
 
-# \<remove> Element for bypasslist (Network Settings)
+# `<remove>` Element for bypasslist (Network Settings)
 
 Removes an IP address or DNS name from the proxy bypass list.
 
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<bypasslist>**](bypasslist-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;[`<defaultProxy>`](defaultproxy-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<bypasslist>`](bypasslist-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
 
 ## Syntax
 

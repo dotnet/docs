@@ -30,7 +30,7 @@ For additional options, see [Code analysis properties](../../core/project-sdk/ms
 
 ### Analysis mode
 
-While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
+While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
 
 ```xml
 <PropertyGroup>
@@ -116,7 +116,7 @@ The following table shows the different rule severities that you can configure f
   ```
 
 > [!IMPORTANT]
-> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). And if you enable all rules by using the MSBuild properties [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) or [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel), any bulk `dotnet_analyzer_diagnostic` options are ignored. For this reason, it's better to enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
+> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). And if you enable all rules by using the MSBuild properties [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) or [`<AnalysisLevel>`](../../core/project-sdk/msbuild-props.md#analysislevel), any bulk `dotnet_analyzer_diagnostic` options are ignored. For this reason, it's better to enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
 
 > [!NOTE]
 > The prefix for setting severity for a single rule, `dotnet_diagnostic`, is slightly different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.

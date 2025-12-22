@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: New StringBuilder.Append overloads"
-description: Learn about the .NET 6 breaking change where new overloads were added to StringBuilder.Append and StringBuilder.AppendLine that may result in different run-time behavior.
+description: Learn about the .NET 6 breaking change where new overloads were added to StringBuilder.Append and StringBuilder.AppendLine that may result in different runtime behavior.
 ms.date: 10/14/2021
 ---
 # StringBuilder.Append overloads and evaluation order
@@ -43,7 +43,7 @@ stringBuilder.Append(ref handler);
 
 This means `a` is evaluated and appended to the builder, and then `b` is evaluated and appended to the builder.
 
-If, for example, either `a` or `b` is itself the builder, as shown in the following code, the new evaluation order can result in different behavior at run time.
+If, for example, either `a` or `b` is itself the builder, as shown in the following code, the new evaluation order can result in different behavior at runtime.
 
 ```csharp
 stringBuilder.Append($"{a} {stringBuilder}");

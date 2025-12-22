@@ -2,7 +2,7 @@
 title: Replicated grains
 description: Learn the concepts of replicated grains in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Replicated grains

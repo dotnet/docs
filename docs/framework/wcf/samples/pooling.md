@@ -13,7 +13,7 @@ The [Pooling sample](https://github.com/dotnet/samples/tree/main/framework/wcf) 
 
 The first step in creating a WCF extension is to decide the extensibility point to use.
 
-In WCF the term *dispatcher* refers to a run-time component responsible for converting incoming messages into method invocations on the user's service and for converting return values from that method to an outgoing message. A WCF service creates a dispatcher for each endpoint. A WCF client must use a dispatcher if the contract associated with that client is a duplex contract.
+In WCF the term *dispatcher* refers to a runtime component responsible for converting incoming messages into method invocations on the user's service and for converting return values from that method to an outgoing message. A WCF service creates a dispatcher for each endpoint. A WCF client must use a dispatcher if the contract associated with that client is a duplex contract.
 
 The channel and endpoint dispatchers offer channel-and contract-wide extensibility by exposing various properties that control the behavior of the dispatcher. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property also enables you to inspect, modify, or customize the dispatching process. This sample focuses on the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property that points to the object that provides the instances of the service class.
 

@@ -205,7 +205,7 @@ Virtual function table layouts:
 | 2                                            | `IUnknown::Release`        |
 | 3                                            | `IComInterface2::Method3`  |
 
-As these virtual function tables differ from the C++ example, this will lead to serious problems at run time. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
+As these virtual function tables differ from the C++ example, this will lead to serious problems at runtime. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
 
 ```csharp
 [ComImport]

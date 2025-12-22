@@ -40,7 +40,7 @@ This breaking change doesn't affect typical users of test frameworks. It only af
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
 ### Compatibility with VSTest-based `dotnet test`
 

@@ -21,11 +21,11 @@ If you already have Visual Studio installed, you can skip this step.
 
 ## Install Azure workloads
 
-Open Visual Studio Installer and validate that the workloads **Azure development**&dagger; and **ASP.NET and web development** are installed. If either of these workloads isn't installed, select them to be installed.
+Open Visual Studio Installer and validate that the workloads **Azure development**† and **ASP.NET and web development** are installed. If either of these workloads isn't installed, select them to be installed.
 
 ![Screenshot of the Visual Studio Installer showing the Azure development and ASP.NET and Web Development Workloads selected](./media/visual-studio-installer-azure-development.png)
 
-&dagger;The **Azure development** workload is currently unavailable in the Windows 11 Arm64 build of Visual Studio 2022.
+†The **Azure development** workload is currently unavailable in the Windows 11 Arm64 build of Visual Studio 2022.
 
 ## Authenticate Visual Studio with Azure
 

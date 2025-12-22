@@ -14,7 +14,7 @@ ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
 ---
 # Compile and generate dynamic source code
 
-.NET includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at run time, based on a single model that represents the code to render.
+.NET includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at runtime, based on a single model that represents the code to render.
 
 To represent source code, CodeDOM elements are linked to each other to form a data structure known as a CodeDOM graph, which models the structure of some source code.
 
@@ -32,7 +32,7 @@ Language-independent source code modeling can be valuable when a program needs t
 
 - <xref:System.CodeDom.Compiler>
 
-  Defines interfaces for generating and compiling code at run time.
+  Defines interfaces for generating and compiling code at runtime.
 
 ## Related sections
 

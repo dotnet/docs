@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET Desktop Development** workload installed.
 
 ## Create a console application
 

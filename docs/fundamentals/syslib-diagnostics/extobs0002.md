@@ -1,7 +1,7 @@
 ---
 title: EXTOBS0002 warning
 description: Learn about the obsoletions that generate compile-time warning EXTOBS0002.
-ms.date: 11/12/2025
+ms.date: 12/22/2025
 f1_keywords:
   - extobs0002
 ai-usage: ai-assisted
@@ -14,7 +14,7 @@ The following APIs are marked obsolete. Use of these APIs generates warning `EXT
 
 - <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Telemetry.Enrichment.ApplicationLogEnricherOptions})?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})?displayProperty=nameWithType>
 
 ## Workarounds
 

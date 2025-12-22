@@ -43,7 +43,7 @@ dotnet package add Microsoft.Extensions.Telemetry
 
 Follow these steps to configure the application log enricher in your application:
 
-### 1. Configure Application Metadata
+### 1. Configure application metadata
 
 First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> methods:
 
@@ -73,11 +73,7 @@ You can provide additional configuration via `appsettings.json`. There are two p
 
 ### 3. Register the application log enricher
 
-Register the log enricher into the dependency injection container.
-
-### [.NET 10.1+](#tab/net10-plus)
-
-Starting with .NET 10, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
+Register the log enricher into the dependency injection container by calling the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
 
 ```csharp
 serviceCollection.AddApplicationLogEnricher();
@@ -93,28 +89,8 @@ serviceCollection.AddApplicationLogEnricher(options =>
 });
 ```
 
-### [.NET 9 and earlier](#tab/net9-earlier)
-
-For .NET 9 and earlier versions, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
-
-```csharp
-serviceCollection.AddServiceLogEnricher();
-```
-
-> [!WARNING]
-> The `AddServiceLogEnricher` method is obsolete starting with .NET 10.1. Use `AddApplicationLogEnricher` instead.
-
-You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
-
-```csharp
-serviceCollection.AddApplicationLogEnricher(options =>
-{
-    options.BuildVersion = true;
-    options.DeploymentRing = true;
-});
-```
-
----
+> [!NOTE]
+> If you're using .NET 9 or an earlier version, call the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method instead.
 
 Alternatively, configure options using `appsettings.json`:
 
@@ -122,21 +98,10 @@ Alternatively, configure options using `appsettings.json`:
 
 Next, apply the configuration.
 
-### [.NET 10.1+](#tab/net10-plus-config)
-
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
 ```
-
-### [.NET 9 and earlier](#tab/net9-earlier-config)
-
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
-```
-
----
 
 ### `ApplicationLogEnricherOptions` configuration options
 
@@ -161,39 +126,7 @@ Here's a complete example showing how to set up the application log enricher:
 
 **Program.cs:**
 
-### [.NET 10.1+](#tab/net10-plus-full-example)
-
-```csharp
-using System.Text.Json;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseApplicationMetadata();
-builder.Logging.EnableEnrichment();
-builder.Logging.AddJsonConsole(op =>
-{
-    op.JsonWriterOptions = new JsonWriterOptions
-    {
-        Indented = true
-    };
-});
-builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
-
-var host = builder.Build();
-var logger = host.Services.GetRequiredService<ILogger<Program>>();
-
-logger.LogInformation("This is a sample log message");
-
-await host.RunAsync();
-```
-
-### [.NET 9 and earlier](#tab/net9-earlier-full-example)
-
-:::code language="csharp" source="snippets/servicelogenricher/Program.cs" :::
-
----
+:::code language="csharp" source="snippets/applicationlogenricher/Program.cs" :::
 
 ### Enriched log output
 

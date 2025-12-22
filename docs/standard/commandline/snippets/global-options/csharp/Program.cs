@@ -52,10 +52,13 @@ class Program1
         {
             Description = "Output verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].",
             Recursive = true,
-            Arity = System.CommandLine.ArgumentArity.ZeroOrOne,
+            Arity = ArgumentArity.ZeroOrOne,
             DefaultValueFactory = result =>
                 {
-                    // This is called when the option isn't specified at all.
+                    // This runs only when the option isn't specified at all.
+                    // If the option is specified without a value (for example, `-v`),
+                    // DefaultValueFactory isn't called and the value is an empty string,
+                    // which is handled later when mapping to "diagnostic".
                     return "normal";
                 }
         };
@@ -88,7 +91,7 @@ class Program1
         rootCommand.Options.Add(verbosityOption);
         rootCommand.Options.Add(quietOption);
 
-        Command processCommand = new("process", "Process data");
+        Command processCommand = new("build", "Build the project");
         rootCommand.Subcommands.Add(processCommand);
 
         processCommand.SetAction(parseResult =>

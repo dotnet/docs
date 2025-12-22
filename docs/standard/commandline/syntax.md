@@ -110,7 +110,7 @@ In this example, the `--verbose` option is available to both the `build` and `te
 
 Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels: `Q[uiet]`, `M[inimal]`, `N[ormal]`, `D[etailed]`, and `Diag[nostic]`.
 
-The following example shows how to implement a verbosity option that accepts both full and abbreviated names and has an alias (`-v`), and adds a shorthand option for `--verbosity quiet` (`-q`):
+The following example shows how to implement a verbosity option that accepts both full and abbreviated names and has an alias (`-v`). When `-v` is specified without a value, it defaults to diagnostic verbosity level, which follows the design guidance. The example also includes a shorthand option (`-q`) for `--verbosity quiet`:
 
 :::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
 

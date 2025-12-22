@@ -52,7 +52,7 @@ To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` en
 
 The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
-Protecting your privacy is important to us. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
+Protecting your privacy is important to Microsoft. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
 
 For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
@@ -254,13 +254,13 @@ at Microsoft.DotNet.Cli.Program.Main(String[] args)
 
 .NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 
-Because of this, custom builds of the .NET SDK shouldn't be located in directories whose path names expose personal or sensitive information.
+Because of this, you shouldn't place custom builds of the .NET SDK in directories whose path names expose personal or sensitive information.
 
 ## Continuous integration detection
 
 To detect if the .NET CLI is running in a continuous integration environment, the .NET CLI checks for the presence and values of several well-known environment variables that common CI providers set.
 
-The following list shows the environment variables and how the .NET CLI uses their values. The .NET CLI doesn't collect the value of any environment variable; it only uses the value to set a boolean flag.
+The following list shows the environment variables and how the .NET CLI uses their values. The .NET CLI doesn't collect the value of any environment variable; it only uses the value to set a Boolean flag.
 
 | Variable(s) | Provider | Action |
 | ----------- | -------- | ------ |

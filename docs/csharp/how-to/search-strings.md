@@ -2,7 +2,7 @@
 title: "How to search strings"
 description: Learn about two strategies to search for text in strings in C#. String class methods search for specific text. Regular expressions search for patterns in text.
 ms.date: 02/18/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "searching strings [C#]"
   - "strings [C#], searching with String methods"
   - "strings [C#], searching with regular expressions"
@@ -51,13 +51,13 @@ The search pattern describes the text you search for. The following table descri
 
 The following code uses regular expressions to validate the format of each string in an array. The validation requires that each string is formatted as a telephone number: three groups of digits separated by dashes where the first two groups contain three digits and the third group contains four digits. The search pattern uses the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md).
 
-| Pattern | Meaning                             |
-|---------|-------------------------------------|
-| `^`     | matches the beginning of the string |
-| `\d{3}` | matches exactly three digit characters  |
-| `-`     | matches the '-' character           |
-| `\d{4}` | matches exactly four digit characters  |
-| `$`     | matches the end of the string       |
+| Pattern | Meaning                                |
+|---------|----------------------------------------|
+| `^`     | Matches the beginning of the string    |
+| `\d{3}` | Matches exactly three digit characters |
+| `-`     | Matches the '-' character              |
+| `\d{4}` | Matches exactly four digit characters  |
+| `$`     | Matches the end of the string          |
 
 :::code language="csharp" source="./snippets/\strings/SearchStrings.cs" id="Snippet4":::
 

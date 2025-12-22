@@ -1,8 +1,6 @@
 ---
 title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
-author: IEvangelist
-ms.author: dapine
 ms.date: 05/06/2025
 ---
 

@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords:
   - "configSections Element"
   - "<configSections> Element"
-ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
 ---
 # `<configSections>` element for `<configuration>`
 
@@ -22,15 +21,15 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
+| Parent element                                | Description |
+|-----------------------------------------------|-------------|
 | [`<configuration>`](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
-|     | Description |
-| --- | ----------- |
-| [`<section>`](section-element.md) | Contains a configuration section declaration. |
+| Child element                                                  | Description                                     |
+|----------------------------------------------------------------|-------------------------------------------------|
+| [`<section>`](section-element.md)                              | Contains a configuration section declaration.   |
 | [`<sectionGroup>`](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 
 ## Remarks

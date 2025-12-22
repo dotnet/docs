@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ---
 # EXTOBS0002: AddServiceLogEnricher is obsolete
 
-The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in .NET 11. These methods had incorrect naming that didn't accurately reflect their functionality. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods.
+The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in package version 10.1.0. These methods had incorrect naming that didn't accurately reflect their functionality. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods.
 
 The following APIs are marked obsolete. Use of these APIs generates warning `EXTOBS0002` at compile time.
 

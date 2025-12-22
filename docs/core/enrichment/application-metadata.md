@@ -80,7 +80,7 @@ The following table shows the metadata made available by the provider via <xref:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`.
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
 
@@ -115,7 +115,7 @@ For applications using <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilde
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args)
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`.
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
 

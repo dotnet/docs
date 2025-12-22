@@ -19,7 +19,7 @@ If you use functions like `string.IndexOf(string)` without calling the overload 
 
 This can manifest itself even in places where you aren't always expecting globalization facilities to be active. For example, the following code can produce a different answer depending on the current runtime.
 
-```cs
+```csharp
 const string greeting = "Hel\0lo";
 Console.WriteLine($"{greeting.IndexOf("\0")}");
 
@@ -67,7 +67,7 @@ These specific rules aren't enabled by default. To enable them and show any viol
 
 The following snippet shows examples of code that produces the relevant code analyzer warnings or errors.
 
-```cs
+```csharp
 //
 // Potentially incorrect code - answer might vary based on locale.
 //
@@ -93,7 +93,7 @@ Console.WriteLine(idx);
 
 Similarly, when instantiating a sorted collection of strings or sorting an existing string-based collection, specify an explicit comparer.
 
-```cs
+```csharp
 //
 // Potentially incorrect code - behavior might vary based on locale.
 //
@@ -160,11 +160,11 @@ An `OrdinalIgnoreCase` comparer still operates on a char-by-char basis, but it e
 
 Some examples of this are provided in the following table:
 
-| String 1 | String 2 | `Ordinal` comparison | `OrdinalIgnoreCase` comparison |
-|---|---|---|---|
-| `"dog"` | `"dog"` | equal | equal |
-| `"dog"` | `"Dog"` | not equal | equal |
-| `"resume"` | `"résumé"` | not equal | not equal |
+| String 1   | String 2   | `Ordinal` comparison | `OrdinalIgnoreCase` comparison |
+|------------|------------|----------------------|--------------------------------|
+| `"dog"`    | `"dog"`    | equal                | equal                          |
+| `"dog"`    | `"Dog"`    | not equal            | equal                          |
+| `"resume"` | `"résumé"` | not equal            | not equal                      |
 
 Unicode also allows strings to have several different in-memory representations. For example, an e-acute (é) can be represented in two possible ways:
 
@@ -182,7 +182,7 @@ Under an ordinal comparer, none of these strings compare as equal to each other.
 
 When performing a `string.IndexOf(..., StringComparison.Ordinal)` operation, the runtime looks for an exact substring match. The results are as follows.
 
-```cs
+```csharp
 Console.WriteLine("resume".IndexOf("e", StringComparison.Ordinal)); // prints '1'
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e", StringComparison.Ordinal)); // prints '-1'
 Console.WriteLine("r\u00E9sume\u0301".IndexOf("e", StringComparison.Ordinal)); // prints '5'
@@ -201,18 +201,18 @@ Ordinal search and comparison routines are never affected by the current thread'
 
 Consider again the string `"résumé"` and its four different representations. The following table shows each representation broken down into its collation elements.
 
-| String | As collation elements |
-|---|---|
-| `"r\u00E9sum\u00E9"` | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"` |
-| `"r\u00E9sume\u0301"` | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"` |
-| `"re\u0301sum\u00E9"` | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"` |
+| String                 | As collation elements                           |
+|------------------------|-------------------------------------------------|
+| `"r\u00E9sum\u00E9"`   | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"`   |
+| `"r\u00E9sume\u0301"`  | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"`  |
+| `"re\u0301sum\u00E9"`  | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"`  |
 | `"re\u0301sume\u0301"` | `"r" + "e\u0301" + "s" + "u" + "m" + "e\u0301"` |
 
 A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
 
 Under a linguistic comparer, exact matches aren't necessary. Collation elements are instead compared based on their semantic meaning. For example, a linguistic comparer treats the substrings `"\u00E9"` and `"e\u0301"` as equal since they both semantically mean "a lowercase e with an acute accent modifier." This allows the `IndexOf` method to match the substring `"e\u0301"` within a larger string that contains the semantically equivalent substring `"\u00E9"`, as shown in the following code sample.
 
-```cs
+```csharp
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // prints '-1' (not found)
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("\u00E9")); // prints '1'
 Console.WriteLine("\u00E9".IndexOf("e\u0301")); // prints '0'
@@ -224,14 +224,14 @@ As a consequence of this, two strings of different lengths may compare as equal 
 
 For example, [in the Hungarian alphabet](https://en.wikipedia.org/wiki/Hungarian_alphabet), when the two characters \<dz\> appear back-to-back, they are considered their own unique letter distinct from either \<d\> or \<z\>. This means that when \<dz\> is seen in a string, a Hungarian culture-aware comparer treats it as a single collation element.
 
-| String | As collation elements | Remarks |
-|---|---|---|
-| `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer) |
-| `"endz"` | `"e" + "n" + "dz"` | (using a Hungarian culture-aware comparer) |
+| String   | As collation elements   | Remarks                                    |
+|----------|-------------------------|--------------------------------------------|
+| `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer)     |
+| `"endz"` | `"e" + "n" + "dz"`      | (using a Hungarian culture-aware comparer) |
 
 When using a Hungarian culture-aware comparer, this means that the string `"endz"` *does not* end with the substring `"z"`, as \<dz\> and \<z\> are considered collation elements with different semantic meaning.
 
-```cs
+```csharp
 // Set thread culture to Hungarian
 CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("hu-HU");
 Console.WriteLine("endz".EndsWith("z")); // Prints 'False'
@@ -254,7 +254,7 @@ For more information, see [Best practices for comparing strings in .NET](best-pr
 
 If your app uses an affected API for filtering, we recommend enabling the CA1307 and CA1309 code analysis rules to help locate places where a linguistic search may have inadvertently been used instead of an ordinal search. Code patterns like the following may be susceptible to security exploits.
 
-```cs
+```csharp
 //
 // THIS SAMPLE CODE IS INCORRECT.
 // DO NOT USE IT IN PRODUCTION.
@@ -304,16 +304,16 @@ The following table lists the default search and comparison types for various st
 
 Unlike `string` APIs, all `MemoryExtensions` APIs perform *Ordinal* searches and comparisons by default, with the following exceptions.
 
-| API | Default behavior | Remarks |
-|---|---|---|
-| `MemoryExtensions.ToLower` | CurrentCulture | (when passed a null `CultureInfo` argument) |
-| `MemoryExtensions.ToLowerInvariant` | InvariantCulture | |
-| `MemoryExtensions.ToUpper` | CurrentCulture | (when passed a null `CultureInfo` argument) |
-| `MemoryExtensions.ToUpperInvariant` | InvariantCulture | |
+| API                                 | Default behavior | Remarks                                     |
+|-------------------------------------|------------------|---------------------------------------------|
+| `MemoryExtensions.ToLower`          | CurrentCulture   | (when passed a null `CultureInfo` argument) |
+| `MemoryExtensions.ToLowerInvariant` | InvariantCulture |                                             |
+| `MemoryExtensions.ToUpper`          | CurrentCulture   | (when passed a null `CultureInfo` argument) |
+| `MemoryExtensions.ToUpperInvariant` | InvariantCulture |                                             |
 
 A consequence is that when converting code from consuming `string` to consuming `ReadOnlySpan<char>`, behavioral changes may be introduced inadvertently. An example of this follows.
 
-```cs
+```csharp
 string str = GetString();
 if (str.StartsWith("Hello")) { /* do something */ } // this is a CULTURE-AWARE (linguistic) comparison
 
@@ -323,44 +323,13 @@ if (span.StartsWith("Hello")) { /* do something */ } // this is an ORDINAL (non-
 
 The recommended way to address this is to pass an explicit `StringComparison` parameter to these APIs. The code analysis rules CA1307 and CA1309 can assist with this.
 
-```cs
+```csharp
 string str = GetString();
 if (str.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } // ordinal comparison
 
 ReadOnlySpan<char> span = s.AsSpan();
 if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } // ordinal comparison
 ```
-
-## Efficient multi-value string comparisons
-
-Starting with .NET 8, when comparing a string against a fixed set of known values repeatedly, consider using <xref:System.Buffers.SearchValues`1> instead of chained comparisons or LINQ-based approaches.
-`SearchValues<T>` can precompute internal lookup structures and optimize the comparison logic based on the provided values.
-
-### Recommended usage
-
-Create and cache the `SearchValues<string>` instance once, then reuse it for comparisons:
-
-```cs
-using System.Buffers;
-
-private static readonly SearchValues<string> Commands = SearchValues.Create(new[] { "start", "run", "go" }, StringComparison.OrdinalIgnoreCase);
-
-if (Commands.Contains(command))
-{
-    /* do something */
-}
-```
-### Avoid repeated creation
-Avoid creating `SearchValues` instances inside hot paths or per comparison, as the creation step can be relatively expensive:
-
-```cs
-// Avoid this pattern
-if (SearchValues.Create(new[] { "start", "run", "go" }, StringComparison.OrdinalIgnoreCase).Contains(command))
-{
- /* do something */
-}
-```
-Caching and reusing the instance ensures optimal performance.
 
 ## See also
 

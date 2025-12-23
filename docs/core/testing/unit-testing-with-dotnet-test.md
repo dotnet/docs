@@ -65,7 +65,7 @@ The following list outlines the command-line options of `dotnet test` command in
 > </PropertyGroup>
 > ```
 
-For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md).
+For more information about running tests with Microsoft.Testing.Platform, including VSTest mode configuration, see [Run tests with Microsoft.Testing.Platform](./microsoft-testing-platform-run-tests.md#dotnet-test).
 
 #### Advanced technical details
 

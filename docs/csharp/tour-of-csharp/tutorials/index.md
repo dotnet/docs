@@ -1,6 +1,6 @@
 ---
 title: Interactive tutorials
-description: Learn C# using GitHub codespaces, and get started with your own development environment.
+description: Learn C# using GitHub Codespaces, and get started with your own development environment.
 ms.date: 12/10/2025
 ---
 # Introduction to C\#
@@ -12,7 +12,7 @@ Welcome to the introduction to C# tutorials. These lessons start with interactiv
 
 The first lessons explain C# concepts by using small snippets of code. You learn the basics of C# syntax and how to work with data types like strings, numbers, and Booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience, you can skip or skim the first lessons and start with any new concepts.
 
-To use GitHub codespaces, you need to create a free [GitHub](https://github.com) account.
+To use GitHub Codespaces, you need to create a free [GitHub](https://github.com) account.
 
 ## Hello world
 

@@ -30,10 +30,11 @@ Adds a NuGet package reference to your application.
 ```csharp
 #:package Newtonsoft.Json
 #:package Serilog@3.1.1
+#:package Spectre.Console@*
 ```
 
 > [!NOTE]
-> Omitting the version number (for example, `#:package Newtonsoft.Json`) currently only works when you use central package management with a `Directory.Packages.props` file. Otherwise, specify the version explicitly (for example, `#:package Newtonsoft.Json@13.0.3`).
+> Omitting the version number after the package name currently only works when you use central package management with a `Directory.Packages.props` file. Otherwise, specify the version number explicitly, or add `@*` after the package name to use the latest version.
 
 ### `#:project`
 
@@ -185,14 +186,12 @@ By default, restore runs implicitly when you build or run your application. Howe
 
 File-based apps automatically include specific file types for compilation and packaging.
 
-By default, the following items are included:
-
-- The single C# file itself.
+By default, the single C# file is included.
 
 Different SDKs include other file types:
 
 - `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
-- Non-default SDKs might include ResX resource files and other patterns.
+- Non-default SDKs include ResX resource files.
 
 ## Native AOT publishing
 

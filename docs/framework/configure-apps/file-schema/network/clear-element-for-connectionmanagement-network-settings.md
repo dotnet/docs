@@ -16,10 +16,10 @@ ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 
 Clears the connection management list.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<connectionManagement>`](connectionmanagement-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
 

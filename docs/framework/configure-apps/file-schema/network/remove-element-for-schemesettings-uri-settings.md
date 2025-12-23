@@ -8,10 +8,10 @@ ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
 
 Removes a scheme setting for a scheme name.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<uri>`](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<schemeSettings>`](schemesettings-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax
 

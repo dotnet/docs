@@ -2,7 +2,7 @@
 title: Serialization of immutable types in Orleans
 description: Learn how .NET Orleans handles type immutability in the context of serialization.
 ms.date: 05/23/2025
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Serialization of immutable types in Orleans
@@ -62,7 +62,7 @@ Sometimes, you might not control the object; for example, it might be a `List<in
     {
         [Id(0), Immutable]
         public List<int> ReferenceData { get; set; }
-
+        
         [Id(1)]
         public List<int> RunningTotals { get; set; }
     }

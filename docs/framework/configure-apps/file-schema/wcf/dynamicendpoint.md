@@ -4,14 +4,14 @@ title: "<dynamicEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
 ---
-# `<dynamicEndpoint>`
+# \<dynamicEndpoint>
 
 This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<standardEndpoints>`](standardendpoints.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<dynamicEndpoint>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dynamicEndpoint>**
 
 ## Syntax
 

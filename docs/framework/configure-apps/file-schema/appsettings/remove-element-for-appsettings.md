@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
+ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
 ---
 # `<remove>` element for `<appSettings>`
 
 Removes custom application settings.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<appSettings>`](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax
 
@@ -26,15 +27,15 @@ Removes custom application settings.
 
 ### Attribute
 
-| Attribute | Description                                                         |
-|-----------|---------------------------------------------------------------------|
-| `key`     | Required attribute.<br><br>Specifies the name of the key to remove. |
+|         | Description |
+| ------- | ----------- |
+| `key` | Required attribute.<br><br>Specifies the name of the key to remove. |
 
 ### Parent element
 
-| Parent element                                              | Description |
-|-------------------------------------------------------------|-------------|
-| [`<appSettings>`](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
+|     | Description |
+| --- | ----------- |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
 
 ## Child elements
 

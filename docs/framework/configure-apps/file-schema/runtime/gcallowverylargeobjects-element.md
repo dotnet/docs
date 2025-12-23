@@ -11,9 +11,9 @@ ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<gcAllowVeryLargeObjects>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<gcAllowVeryLargeObjects>**
 
 ## Syntax
 

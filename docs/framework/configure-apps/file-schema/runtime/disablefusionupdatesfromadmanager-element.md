@@ -11,9 +11,9 @@ ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
 
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<disableFusionUpdatesFromADManager>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableFusionUpdatesFromADManager>**
 
 ## Syntax
 

@@ -15,8 +15,8 @@ ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
 
 Specifies common language runtime startup information.
 
-[`<configuration>`](../configuration-element.md)
-&nbsp;&nbsp;`<startup>`
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;**\<startup>**
 
 ## Syntax
 

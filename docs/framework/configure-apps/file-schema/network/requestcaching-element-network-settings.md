@@ -14,9 +14,9 @@ ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 
 Controls the caching mechanism for network requests.
 
-[`<configuration>`](../configuration-element.md)
-&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;`<requestCaching>`
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;**\<requestCaching>**
 
 ## Syntax
 

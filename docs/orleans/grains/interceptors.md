@@ -2,7 +2,7 @@
 title: Grain call filters
 description: Learn about grain call filters in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Grain call filters

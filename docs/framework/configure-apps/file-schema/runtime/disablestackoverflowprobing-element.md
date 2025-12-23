@@ -7,9 +7,9 @@ ms.date: 04/20/2022
 
 Specifies whether stack-overflow probing is disabled.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<disableStackOverflowProbing>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableStackOverflowProbing>**
 
 ## Syntax
 

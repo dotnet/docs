@@ -2,7 +2,7 @@
 title: Code generation
 description: Learn how to use code generation in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: article
+ms.topic: conceptual
 zone_pivot_groups: orleans-version
 ---
 

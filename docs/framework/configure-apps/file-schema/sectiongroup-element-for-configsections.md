@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "<sectionGroup> Element"
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 ---
-# `<sectionGroup>` element for `<configSections>`
+# `<sectionGroup>` element for \<configSections>
 
 Defines a namespace for configuration sections.
 
-[`<configuration>`](configuration-element.md)\
-&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<sectionGroup>`
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
 
 ## Syntax
 
@@ -27,21 +27,21 @@ Defines a namespace for configuration sections.
 
 ## Attribute
 
-| Attribute | Description                                                                         |
-|-----------|-------------------------------------------------------------------------------------|
-| `name`    | Required attribute.<br><br>Specifies the name of the section group you're defining. |
+|           | Description |
+| --------- | ----------- |
+| `name`  | Required attribute.<br><br>Specifies the name of the section group you are defining. |
 
 ## Parent element
 
-| Parent element                                                    | Description |
-|-------------------------------------------------------------------|-------------|
-| [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+|     | Description |
+| --- | ----------- |
+| [`<configSections>` Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
-| Child element                     | Description                                   |
-|-----------------------------------|-----------------------------------------------|
-| [`<section>`](section-element.md) | Contains a configuration section declaration. |
+|     | Description |
+| --- | ----------- |
+| [**\<section>**](section-element.md) | Contains a configuration section declaration. |
 
 ## Remarks
 

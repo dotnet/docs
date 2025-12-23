@@ -4,18 +4,18 @@ title: "<endToEndTracing>"
 ms.date: "03/30/2017"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 ---
-# `<endToEndTracing>`
+# \<endToEndTracing>
 
-A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.
-
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<diagnostics>`](diagnostics.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<endToEndTracing>`
-
-## Syntax
-
-```xml
+A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  
+  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endToEndTracing>**  
+  
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <diagnostics>
     <endToEndTracing activityTracing="Boolean"
@@ -23,30 +23,30 @@ A configuration element that allows you to enable and disable different aspects 
                      propagateActivity="Boolean" />
   </diagnostics>
 </system.serviceModel>
-```
+```  
+  
+## Attributes and Elements  
 
-## Attributes and Elements
+ The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|`activityTracing`|A Boolean value that specifies whether activity tracing is enabled.|  
+|`messageFlowTracing`|A Boolean value that specifies whether message flow tracing in enabled.|  
+|`propagateActivity`|A Boolean value that specifies whether the propagate attribute is set to true.|  
+  
+### Child Elements  
 
- The following sections describe attributes, child elements, and parent elements.
-
-### Attributes
-
-|Attribute|Description|
-|---------------|-----------------|
-|`activityTracing`|A Boolean value that specifies whether activity tracing is enabled.|
-|`messageFlowTracing`|A Boolean value that specifies whether message flow tracing in enabled.|
-|`propagateActivity`|A Boolean value that specifies whether the propagate attribute is set to true.|
-
-### Child Elements
-
- None.
-
-### Parent Elements
-
-|Element|Description|
-|-------------|-----------------|
-|[\<diagnostics>](diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|
-
+ None.  
+  
+### Parent Elements  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|[\<diagnostics>](diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
+  
 ## See also
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>

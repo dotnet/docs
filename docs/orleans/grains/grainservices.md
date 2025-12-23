@@ -2,7 +2,7 @@
 title: Create a GrainService
 description: Learn how to create a GrainService in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: article
+ms.topic: conceptual
 zone_pivot_groups: orleans-version
 ---
 

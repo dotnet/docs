@@ -38,7 +38,7 @@ Element  |Description |
 
 Element  |Description |
 ---------|---------|
-[`<configuration>`](../configuration-element.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
+[\<configuration>](../configuration-element.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
 
 ## Remarks
 

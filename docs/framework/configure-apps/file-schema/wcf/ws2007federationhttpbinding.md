@@ -5,15 +5,15 @@ ms.date: "03/30/2017"
 ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
 ---
 
-# `<ws2007FederationHttpBinding>`
+# \<ws2007FederationHttpBinding>
 
 A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](wsfederationhttpbinding.md) and supports federated security.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<ws2007FederationHttpBinding>`
-
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ws2007FederationHttpBinding>**  
+  
 ## Syntax
 
 ```xml

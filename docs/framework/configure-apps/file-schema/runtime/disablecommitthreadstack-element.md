@@ -14,9 +14,9 @@ ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
 
 Specifies whether the full thread stack is committed when a thread is started.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<disableCommitThreadStack>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableCommitThreadStack>**
 
 ## Syntax
 

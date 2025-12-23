@@ -14,9 +14,9 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 > [!IMPORTANT]
 > This element and the feature it supports only work if your ASP.NET application is hosted on IIS 7.0 or later versions.
 
-[`<configuration>`](../configuration-element.md)
-&nbsp;&nbsp;[`<system.web>`](system-web-element-web-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;`<applicationPool>`
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;[**\<system.web>**](system-web-element-web-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;**\<applicationPool>**
 
 ## Syntax
 

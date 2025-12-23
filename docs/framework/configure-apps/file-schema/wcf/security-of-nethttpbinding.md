@@ -4,16 +4,16 @@ title: "<security> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 ---
-# `<security>` of `<netHttpBinding>`
+# \<security> of \<netHttpBinding>
 
 Defines the security capabilities of the [\<netHttpBinding>](nethttpbinding.md).
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<netHttpBinding>`](nethttpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<binding>`\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<security>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
 
 ## Syntax
 
@@ -67,7 +67,7 @@ The following sections describe attributes, child elements, and parent elements.
 ## See also
 
 - <xref:System.ServiceModel.NetHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>  
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../wcf/feature-details/selecting-a-credential-type.md)
 - [Bindings](../../../wcf/bindings.md)

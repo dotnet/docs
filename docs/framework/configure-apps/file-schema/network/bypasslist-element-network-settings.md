@@ -14,10 +14,10 @@ ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
 
 Provides a set of regular expressions that describe addresses that do not use a proxy.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<defaultProxy>`](defaultproxy-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<bypasslist>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<bypasslist>**
 
 ## Syntax
 

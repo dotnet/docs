@@ -8,8 +8,8 @@ ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
 
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).
 
-[`<configuration>`](../configuration-element.md)
-&nbsp;&nbsp;`<uri>`
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;**\<uri>**
 
 ## Syntax
 

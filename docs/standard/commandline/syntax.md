@@ -96,9 +96,35 @@ When you configure an option, you specify the option name including the prefix:
 
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
 
-To add an option to a command and recursively to all of its subcommands, use the `System.CommandLine.Symbol.Recursive` property.
+### Global options
 
-### Required Options
+To add an option to a command and recursively to all of its subcommands, set the <xref:System.CommandLine.Option.Recursive> property to `true`. This is useful for options that apply across your entire application, such as verbosity, output format, or configuration file paths.
+
+The following example shows how to create a global option that's available to all commands:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="globaloption" :::
+
+In this example, the `--verbose` option is available to both the `build` and `test` commands without having to add it to each command individually.
+
+### The verbosity option
+
+Many command-line apps provide a `--verbosity` option to control the amount of output displayed. The [design guidance](design-guidance.md#the---verbosity-option) recommends five standard verbosity levels: `Q[uiet]`, `M[inimal]`, `N[ormal]`, `D[etailed]`, and `Diag[nostic]`.
+
+The following example shows how to implement a verbosity option that accepts both full and abbreviated names and has an alias (`-v`). When `-v` is specified without a value, it defaults to diagnostic verbosity level, which follows the design guidance. The example also includes a shorthand option (`-q`) for `--verbosity quiet`:
+
+:::code language="csharp" source="snippets/global-options/csharp/Program.cs" id="verbosityoption" :::
+
+You can invoke the app with any of these command lines:
+
+```console
+myapp build -q
+myapp build -v
+myapp build --verbosity minimal
+myapp build --verbosity m
+myapp build
+```
+
+### Required options
 
 Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its <xref:System.CommandLine.Option.Required> property to `true`, as shown in the following example:
 
@@ -119,7 +145,7 @@ When you configure an argument, you specify the argument name (it's not used for
 
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definearguments" :::
 
-## Default Values
+## Default values
 
 Both arguments and options can have default values that apply if no argument is explicitly provided. For example, many options are implicitly Boolean parameters with a default of `true` when the option name is in the command line. The following command-line examples are equivalent:
 
@@ -131,11 +157,11 @@ dotnet tool update dotnet-suggest --global true
                                   ^-----------^
 ```
 
-An argument that is defined without a default value is treated as a required argument.
+An argument that's defined without a default value is treated as a required argument.
 
 ## Parse errors
 
-Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because `silent` isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent

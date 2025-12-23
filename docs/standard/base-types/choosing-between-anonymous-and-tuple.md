@@ -1,8 +1,6 @@
 ---
 title: Choosing between anonymous and tuple types
 description: Learn when it's appropriate to choose between anonymous types, and tuple type.
-author: IEvangelist
-ms.author: dapine
 ms.topic: concept-article
 ms.date: 07/01/2020
 ---

@@ -54,7 +54,7 @@ builder.UseApplicationMetadata()
 
 This method automatically picks up values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and saves them to the default configuration section `ambientmetadata:application`.
 
-Alternatively, you can use the <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)> method, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adds it to the given configuration section name. Then you use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allows you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
+Alternatively, you can use the <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)> method, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adding them to the given configuration section name. Then you use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allows you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args)
@@ -130,7 +130,7 @@ Here's a complete example showing how to set up the application log enricher:
 
 ### Enriched log output
 
-With the application log enricher configured, your log output will include service-specific dimensions:
+With the application log enricher configured, your log output includes service-specific dimensions:
 
 :::code language="json" source="snippets/applicationlogenricher/output-full.json" highlight="8-11" :::
 

@@ -503,7 +503,7 @@ public void Test(string id)
 
 Exception logging is provider-specific.
 
-### Default log level
+## Default log level
 
 If the default log level isn't set, the default log level value is `Information`.
 
@@ -526,7 +526,7 @@ using IHost host = builder.Build();
 await host.RunAsync();
 ```
 
-### Filter function
+## Filter function
 
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:
 

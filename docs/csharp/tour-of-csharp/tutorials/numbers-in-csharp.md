@@ -1,6 +1,6 @@
 ---
 title: Work with Numbers - Introductory tutorial
-description: This tutorial teaches you about the numeric types in C#. The tutorial contains a series of lessons that explore numbers and math operations in C#. 
+description: This tutorial teaches you about the numeric types in C#. The tutorial contains a series of lessons that explore numbers and math operations in C#.
 ms.date: 12/10/2025
 ---
 # Tutorial: How to use integer and floating point numbers in C\#
@@ -247,12 +247,10 @@ Now that you know the different numeric types, write code that calculates the ar
 
 You should get an answer between 19 and 20.
 
-When you try it, open the details pane to see how you did:
-
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/NumbersInCsharp/numbers.cs" id="Challenge":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->
 

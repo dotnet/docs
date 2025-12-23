@@ -27,8 +27,8 @@ The *floating-point numeric types* represent real numbers. All floating-point nu
 
 C# supports the following predefined floating-point types:
 
-|C# type/keyword|Approximate range|Precision|Size|.NET type|
-|----------|-----------------------|---------------|--------------|--------------|
+| C# type/keyword | Approximate range | Precision | Size | .NET type |
+|-----------------|-------------------|-----------|------|-----------|
 |`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|4 bytes|<xref:System.Single?displayProperty=nameWithType>|
 |`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|8 bytes|<xref:System.Double?displayProperty=nameWithType>|
 |`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|16 bytes|<xref:System.Decimal?displayProperty=nameWithType>|
@@ -53,7 +53,7 @@ You can also mix integral types and the `decimal` type in an expression. In this
 
 You cannot mix the `decimal` type with the `float` and `double` types in an expression. In this case, if you want to perform arithmetic, comparison, or equality operations, you must explicitly convert the operands either from or to the `decimal` type, as the following example shows:
 
-```csharp-interactive
+```csharp
 double a = 1.0;
 decimal b = 2.1m;
 Console.WriteLine(a + (double)b);
@@ -88,7 +88,7 @@ The preceding example also shows the use of `_` as a *digit separator*. You can 
 
 You can also use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
 
-```csharp-interactive
+```csharp
 double d = 0.42e2;
 Console.WriteLine(d);  // output 42
 

@@ -13,7 +13,7 @@ builder.Logging.AddJsonConsole(op =>
         Indented = true
     };
 });
-builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
 
 var host = builder.Build();
 var logger = host.Services.GetRequiredService<ILogger<Program>>();

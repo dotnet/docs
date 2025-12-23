@@ -15,9 +15,9 @@ ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
 
 Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<developmentMode>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<developmentMode>**
 
 ## Syntax
 

@@ -11,9 +11,9 @@ helpviewer_keywords:
 
 Specifies whether to disable spin-waiting for a critical section when contended.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<Crst_DisableSpinWait>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<Crst_DisableSpinWait>**
 
 ## Syntax
 

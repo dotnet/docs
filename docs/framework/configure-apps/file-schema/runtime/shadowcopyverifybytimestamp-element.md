@@ -11,9 +11,9 @@ ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
 
 Specifies whether shadow copying uses the default startup behavior introduced in the .NET Framework 4, or reverts to the startup behavior of earlier versions of the .NET Framework.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<shadowCopyVerifyByTimestamp>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<shadowCopyVerifyByTimestamp>**
 
 ## Syntax
 

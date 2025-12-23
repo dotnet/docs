@@ -4,10 +4,10 @@ title: "<additionalRequestParameters> element"
 ms.date: "03/30/2017"
 ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
 ---
-# `<additionalRequestParameters>` element
+# \<additionalRequestParameters> element
 
-This contains a collection of configuration elements that specify additional request parameters.
-
+This contains a collection of configuration elements that specify additional request parameters.  
+  
 ## See also
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters%2A>

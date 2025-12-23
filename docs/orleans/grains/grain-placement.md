@@ -2,7 +2,7 @@
 title: Grain placement
 description: Learn about grain placement in .NET Orleans.
 ms.date: 03/31/2025
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Grain placement

@@ -44,7 +44,7 @@ The following example uses the `join … in … on … equals … into …` clau
 :::code language="csharp" source="./snippets/standard-query-operators/JoinOverviewExamples.cs" id="GroupJoinQuerySyntax":::
 
 You can express the preceding query by using method syntax, as shown in the following example:
-
+  
 :::code language="csharp" source="./snippets/standard-query-operators/JoinOverviewExamples.cs" id="GroupJoinMethodSyntax":::
 
 ## Perform inner joins
@@ -148,7 +148,7 @@ The equivalent query using method syntax is shown in the following code:
 
 ## Perform outer joins
 
-.NET 10 includes [`LeftJoin`](/dotnet/api/?term=LeftJoin) and [`RightJoin`](/dotnet/api/?term=RightJoin) methods in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> and <xref:System.Linq.Queryable?displayProperty=nameWithType> classes. These methods perform an *outer left equijoin*, and an *outer right equijoin*, respectively. An outer left equijoin is a join where every member of the first sequence is included in the output sequence, even if the second sequence doesn't include a match. An outer right equijoin is a join where every member of the second sequence is included in the output sequence, even if the first sequence doesn't include a match.
+.NET 10 includes [`LeftJoin`](https://learn.microsoft.com/dotnet/api/?view=net-10.0&term=LeftJoin) and [`RightJoin`](https://learn.microsoft.com/dotnet/api/?view=net-10.0&term=RightJoin) methods in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> and <xref:System.Linq.Queryable?displayProperty=nameWithType> classes. These methods perform an *outer left equijoin*, and an *outer right equijoin*, respectively. An outer left equijoin is a join where every member of the first sequence is included in the output sequence, even if the second sequence doesn't include a match. An outer right equijoin is a join where every member of the second sequence is included in the output sequence, even if the first sequence doesn't include a match.
 
 ## Emulate a left outer join
 

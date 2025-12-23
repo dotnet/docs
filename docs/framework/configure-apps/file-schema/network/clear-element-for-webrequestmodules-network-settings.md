@@ -16,10 +16,10 @@ ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
 
 Removes all registered Web request modules from the application.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<webRequestModules>`](webrequestmodules-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
 

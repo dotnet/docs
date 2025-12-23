@@ -16,11 +16,11 @@ ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
 
 Specifies whether the runtime applies publisher policy.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<assemblyBinding>`](assemblybinding-element-for-runtime.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<dependentAssembly>`](dependentassembly-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<publisherPolicy>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<publisherPolicy>**
 
 ## Syntax
 

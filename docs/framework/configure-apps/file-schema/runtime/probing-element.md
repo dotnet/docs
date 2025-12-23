@@ -15,10 +15,10 @@ ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
 
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<assemblyBinding>`](assemblybinding-element-for-runtime.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<probing>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<probing>**
 
 ## Syntax
 

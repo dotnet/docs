@@ -5,29 +5,29 @@ ms.date: "03/30/2017"
 ms.assetid: e8707027-e6b8-4539-893d-3cd7c13fbc18
 ---
 
-# `<soapProcessing>`
+# \<soapProcessing>
 
 Defines the client endpoint behavior used to marshal messages between different binding types and message versions.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<behaviors>`](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<endpointBehaviors>`](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<behavior>`](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<soapProcessing>`
-
-## Syntax
-
-```xml
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<soapProcessing>**
+  
+## Syntax  
+  
+```xml  
 <soapProcessing processMessages="true|false" />
-```
-
-## Attributes and elements
-
-The following sections describe attributes, child elements, and parent elements.
-
-### Attributes
-
+```  
+  
+## Attributes and elements  
+  
+The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
 | Attribute | Description |
 | ----------------- | ----------- |
 | `processMessages` | A Boolean value that specifies whether messages should be marshalled between SOAP message versions. |
@@ -40,7 +40,7 @@ None
 
 | Element | Description |
 | --- | ----------- |
-| [`<behavior>`](behavior-of-endpointbehaviors.md) | Specifies an endpoint behavior. |
+| [**\<behavior>**](behavior-of-endpointbehaviors.md) | Specifies an endpoint behavior. |
 
 ## Remarks
 

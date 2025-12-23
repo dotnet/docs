@@ -4,17 +4,17 @@ title: "<serviceCertificate> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
 ---
-# `<serviceCertificate>` of `<clientCredentials>` Element
+# \<serviceCertificate> of \<clientCredentials> Element
 
 Specifies a certificate to use when authenticating a service to the client.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<behaviors>`](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<endpointBehaviors>`](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<behavior>`](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<clientCredentials>`](clientcredentials.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<serviceCertificate>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**
 
 ## Syntax
 

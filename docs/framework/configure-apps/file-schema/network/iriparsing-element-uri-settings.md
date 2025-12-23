@@ -8,9 +8,9 @@ ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
 
 Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.
 
-[`<configuration>`](../configuration-element.md)
-&nbsp;&nbsp;[`<uri>`](uri-element-uri-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;`<iriParsing>`
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;**\<iriParsing>**
 
 ## Syntax
 

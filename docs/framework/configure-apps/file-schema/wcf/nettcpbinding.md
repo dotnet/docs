@@ -6,14 +6,14 @@ helpviewer_keywords:
   - "netTcpBinding Element"
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
 ---
-# `<netTcpBinding>`
+# \<netTcpBinding>
 
 Specifies a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a runtime communication stack with Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<netTcpBinding>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netTcpBinding>**
 
 ## Syntax
 

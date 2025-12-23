@@ -8,9 +8,9 @@ ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
 
 Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain a day, month, hour, and AM/PM designator.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<EnableAmPmParseAdjustment>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<EnableAmPmParseAdjustment>**
 
 ## Syntax
 

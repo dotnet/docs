@@ -11,9 +11,9 @@ ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 
 Specifies whether the runtime automatically fixes incorrect platform invoke declarations at runtime, at the cost of slower transitions between managed and unmanaged code.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<NetFx40_PInvokeStackResilience>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**
 
 ## Syntax
 

@@ -37,7 +37,7 @@ None
 
 | Element | Description |
 | --- | ----------- |
-| [`<assemblyBinding>`](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level.|
+| [**\<assemblyBinding>**](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level.|
 | [`<startup>` Settings Schema](./startup/index.md) | All elements in the startup settings schema. |
 | [`<runtime>` Settings Schema](./runtime/index.md) | All elements in the runtime settings schema. |
 | [`<system.runtime.remoting>` Settings Schema](/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100)) | All elements in the remoting settings schema. |

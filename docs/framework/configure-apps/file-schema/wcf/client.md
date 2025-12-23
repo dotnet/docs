@@ -7,13 +7,13 @@ f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#client"
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
 ---
-# `<client>`
+# \<client>
 
 The `client` element defines a list of endpoints that a client can connect to.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<client>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<client>**
 
 ## Syntax
 

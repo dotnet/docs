@@ -14,9 +14,9 @@ ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
 
 Specifies modules used to authenticate network requests.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`<authenticationModules>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<authenticationModules>**
 
 ## Syntax
 

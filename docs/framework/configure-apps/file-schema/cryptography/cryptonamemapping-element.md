@@ -14,10 +14,10 @@ ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 
 Contains mappings of classes to friendly names.
 
-[`<configuration>`](../configuration-element.md)\
-&nbsp;&nbsp;[`<mscorlib>`](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[`<cryptographySettings>`](cryptographysettings-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<cryptoNameMapping>`
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoNameMapping>**
 
 ## Syntax
 

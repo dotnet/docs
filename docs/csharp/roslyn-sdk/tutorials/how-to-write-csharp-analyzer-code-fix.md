@@ -29,7 +29,7 @@ There are several steps to creating and validating your analyzer:
 
 ## Create the solution
 
-- In Visual Studio, choose **File > New > Project...** to display the New Project dialog.
+- In Visual Studio, choose **File > New > Project** to display the New Project dialog.
 - Under **Visual C# > Extensibility**, choose **Analyzer with code fix (.NET Standard)**.
 - Name your project "**MakeConst**" and click OK.
 

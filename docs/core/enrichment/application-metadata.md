@@ -71,8 +71,8 @@ Optionally, you can provide values for `BuildVersion` and `DeploymentRing` via t
 
 The following table shows the metadata made available by the provider via <xref:Microsoft.Extensions.Configuration.IConfiguration>:
 
-| Key | Required? | Where the value comes from| Value Example | Description|
-|-|-|-|-|-|
+| Key | Required? | Where the value comes from | Value example | Description |
+|-----|-----------|----------------------------|---------------|-------------|
 | `ambientmetadata:application:applicationname` | yes | automatically from `IHostEnvironment` |`myApp`                     | The application name.|
 | `ambientmetadata:application:environmentname` | yes | automatically from `IHostEnvironment` | `Production`, `Development`| The environment the application is deployed to.|
 | `ambientmetadata:application:buildversion`    | no  | configure it in `IConfiguration`      | `1.0.0-rc1`                | The application's build version.|
@@ -80,7 +80,7 @@ The following table shows the metadata made available by the provider via <xref:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`.
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
 
@@ -105,9 +105,9 @@ var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetad
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```
 
-Your `appsettings.json` can have a section as follows :
+Your `appsettings.json` can have a section as follows:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
 
 ### Configure with IHostApplicationBuilder
 
@@ -115,7 +115,7 @@ For applications using <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilde
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args)
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment`.
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
 
@@ -126,9 +126,9 @@ var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetad
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```
 
-Your `appsettings.json` can have a section as follows :
+Your `appsettings.json` can have a section as follows:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
 
 ## Access application metadata
 
@@ -158,11 +158,11 @@ await host.RunAsync();
 
 The <xref:Microsoft.Extensions.AmbientMetadata.ApplicationMetadata> class includes the following properties:
 
-| Property | Description |
-|----------|-------------|
-| `ApplicationName` | The name of the application. |
-| `BuildVersion` | The version of the application build. |
-| `DeploymentRing` | The deployment ring or stage (for example, Canary, Production). |
+| Property          | Description                                                     |
+|-------------------|-----------------------------------------------------------------|
+| `ApplicationName` | The name of the application.                                    |
+| `BuildVersion`    | The version of the application build.                           |
+| `DeploymentRing`  | The deployment ring or stage (for example, Canary, Production). |
 | `EnvironmentName` | The environment where the application is running (for example, Development, Staging, Production). |
 
 ## Use with logging
@@ -229,10 +229,10 @@ With this configuration, your settings would look like:
 {
   "myapp": {
     "metadata": {
-      "ApplicationName": "MyWebApi", // Your ApplicationName will be imported from `IHostEnvironment` 
+      "ApplicationName": "MyWebApi", // ApplicationName will be imported from `IHostEnvironment`.
       "BuildVersion": "1.0.0",
       "DeploymentRing": "Production",
-      "EnvironmentName": "Production" // Your EnvironmentName will be imported from `IHostEnvironment` 
+      "EnvironmentName": "Production" // EnvironmentName will be imported from `IHostEnvironment`.
     }
   }
 }

@@ -1,8 +1,6 @@
 ---
 title: Create a publish app GitHub workflow
 description: In this quickstart, you will learn how to create a GitHub workflow to publish your .NET source code.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
 ---

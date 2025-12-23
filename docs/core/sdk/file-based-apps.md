@@ -89,11 +89,23 @@ Arguments after `--` are passed to your application. Without `--`, arguments go 
 dotnet run file.cs arg1 arg2
 ```
 
-However, with the shorthand syntax, all arguments go to your application:
+#### Pipe code from stdin
 
-```dotnetcli
-dotnet file.cs arg1 arg2
+Pipe C# code directly to `dotnet run` by using standard input with the `-` argument. The `-` argument indicates that `dotnet run` reads the code from standard input instead of a file. With the `-` argument, `dotnet run` doesn't search the current working directory for other files, such as launch profiles. The current directory is still the working directory to build and run the program.
+
+**PowerShell:**
+
+```powershell
+'Console.WriteLine("hello from stdin!");' | dotnet run -
 ```
+
+**Bash:**
+
+```bash
+echo 'Console.WriteLine("hello from stdin!");' | dotnet run -
+```
+
+This approach is useful for quick testing, running one-off commands, or integrating with shell scripts that generate C# code dynamically.
 
 ### Build applications
 

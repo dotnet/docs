@@ -1,7 +1,5 @@
 ---
 ms.date: 04/17/2024
-author: IEvangelist
-ms.author: dapine
 ms.topic: include
 ---
 

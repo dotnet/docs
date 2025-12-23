@@ -1,8 +1,6 @@
 ---
 title: Monitor and analyze HTTP client performance
 description: Learn how to use the HttpClientLatency with dependency injection in your .NET workloads.
-author: IEvangelist
-ms.author: dapine
 ms.date: 09/29/2025
 ai-usage: ai-assisted
 ---

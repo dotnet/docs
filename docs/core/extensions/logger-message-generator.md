@@ -389,7 +389,7 @@ For example, if you have a log message that has a parameter that is considered p
 [LoggerMessage(0, LogLevel.Information, "User SSN: {SSN}")]
 public static partial void LogPrivateInformation(
     this ILogger logger,
-    [MyTaxonomyClassifications.Private] string SSN);
+    [PrivateInformation] string SSN);
 ```
 
 You'll need to have a setting similar to this:
@@ -402,7 +402,7 @@ var services = new ServiceCollection();
 services.AddLogging(builder =>
 {
     // Enable redaction.
-    builder.EnableRedaction();
+    builder.AddConsole.EnableRedaction();
 });
 
 services.AddRedaction(builder =>
@@ -415,6 +415,42 @@ public void TestLogging()
 {
     LogPrivateInformation("MySSN");
 }
+
+// Configure a custom redactor
+public sealed class StarRedactor : Redactor
+{
+    private const string Stars = "*****";
+
+    public override int GetRedactedLength(ReadOnlySpan<char> input) => Stars.Length;
+
+    public override int Redact(ReadOnlySpan<char> source, Span<char> destination)
+    {
+        Stars.CopyTo(destination);
+
+        return Stars.Length;
+    }
+}
+
+// Define custom classification
+public static class MyTaxonomyClassifications
+{
+    public static string Name => "MyTaxonomy";
+
+    public static DataClassification Private => new(Name, nameof(Private));
+    public static DataClassification Public => new(Name, nameof(Public));
+    public static DataClassification Personal => new(Name, nameof(Personal));
+
+}
+
+// Create custom attribute based on your custom classifications
+public sealed class PrivateInformationAttribute : DataClassificationAttribute
+{
+    public PrivateInformationAttribute()
+        : base(MyTaxonomyClassifications.Private)
+    {
+    }
+}
+
 ```
 
 The output should be like this:

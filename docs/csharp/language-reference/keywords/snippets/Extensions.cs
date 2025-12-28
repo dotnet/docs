@@ -45,7 +45,7 @@ public static class NumericSequences
                 if (count % 2 == 0)
                 {
                     // Even number of elements: average the two middle elements
-                    return (sortedList[middleIndex - 1] + sortedList[middleIndex]);
+                    return (sortedList[middleIndex - 1] + sortedList[middleIndex]) / 2;
                 }
                 else
                 {

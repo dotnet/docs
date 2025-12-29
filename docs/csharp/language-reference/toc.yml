@@ -25,10 +25,10 @@ items:
       displayName: float, decimal, double, rational, real, literal
     - name: Built-in numeric conversions
       href: ./builtin-types/numeric-conversions.md
-    - name: "`bool`"
+    - name: bool
       href: ./builtin-types/bool.md
       displayName: "Boolean, true, false"
-    - name: "`char`"
+    - name: char
       href: ./builtin-types/char.md
       displayName: "Unicode, character, UTF-16"
     - name: Enumeration types
@@ -53,11 +53,11 @@ items:
     - name: Built-in reference types
       displayName: object, delegate, dynamic, string
       href: ./builtin-types/reference-types.md
-    - name: "`record`"
+    - name: record
       href: ./builtin-types/record.md
-    - name: "`class`"
+    - name: class
       href: ./keywords/class.md
-    - name: "`interface`"
+    - name: interface
       href: ./keywords/interface.md
     - name: Nullable reference types
       href: ./builtin-types/nullable-reference-types.md
@@ -68,7 +68,7 @@ items:
         href: ./builtin-types/collections.md
       - name: Arrays
         href: ./builtin-types/arrays.md
-  - name: "`void`"
+  - name: void
     href: ./builtin-types/void.md
   - name: Unmanaged types
     href: ./builtin-types/unmanaged-types.md
@@ -91,50 +91,50 @@ items:
         href: ./keywords/accessibility-domain.md
       - name: Restrictions on using accessibility levels
         href: ./keywords/restrictions-on-using-accessibility-levels.md
-      - name: "`internal`"
+      - name: internal
         href: ./keywords/internal.md
-      - name: "`private`"
+      - name: private
         href: ./keywords/private.md
-      - name: "`protected`"
+      - name: protected
         href: ./keywords/protected.md
-      - name: "`public`"
+      - name: public
         href: ./keywords/public.md
-      - name: "`protected internal`"
+      - name: protected internal
         href: ./keywords/protected-internal.md
-      - name: "`private protected`"
+      - name: private protected
         href: ./keywords/private-protected.md
-      - name: "`file`"
+      - name: file
         href: ./keywords/file.md
-    - name: "`abstract`"
+    - name: abstract
       href: ./keywords/abstract.md
-    - name: "`async`"
+    - name: async
       href: ./keywords/async.md
       displayName: await
-    - name: "`const`"
+    - name: const
       href: ./keywords/const.md
-    - name: "`event`"
+    - name: event
       href: ./keywords/event.md
-    - name: "`extern`"
+    - name: extern
       href: ./keywords/extern.md
-    - name: "`in` (generic modifier)"
+    - name: in (generic modifier)
       href: ./keywords/in-generic-modifier.md
-    - name: "`new` (member modifier)"
+    - name: new (member modifier)
       href: ./keywords/new-modifier.md
-    - name: "`out` (generic modifier)"
+    - name: out (generic modifier)
       href: ./keywords/out-generic-modifier.md
-    - name: "`override`"
+    - name: override
       href: ./keywords/override.md
-    - name: "`readonly`"
+    - name: readonly
       href: ./keywords/readonly.md
-    - name: "`sealed`"
+    - name: sealed
       href: ./keywords/sealed.md
-    - name: "`static`"
+    - name: static
       href: ./keywords/static.md
-    - name: "`unsafe`"
+    - name: unsafe
       href: ./keywords/unsafe.md
-    - name: "`virtual`"
+    - name: virtual
       href: ./keywords/virtual.md
-    - name: "`volatile`"
+    - name: volatile
       href: ./keywords/volatile.md
   - name: Statement Keywords
     href: ./keywords/statement-keywords.md
@@ -143,90 +143,90 @@ items:
     href: ./keywords/method-parameters.md
   - name: Namespace Keywords
     items:
-    - name: "`namespace`"
+    - name: namespace
       href: ./keywords/namespace.md
-    - name: "`using` directive"
+    - name: using directive
       href: ./keywords/using-directive.md
-    - name: "`extern` alias"
+    - name: extern alias
       href: ./keywords/extern-alias.md
   - name: Generic Type Constraint Keywords
     items:
-      - name: "`new` constraint"
+      - name: new constraint
         href: ./keywords/new-constraint.md
-      - name: "`where`"
+      - name: where
         href: ./keywords/where-generic-type-constraint.md
   - name: Access Keywords
     items:
-    - name: "`base`"
+    - name: base
       href: ./keywords/base.md
-    - name: "`this`"
+    - name: this
       href: ./keywords/this.md
   - name: Literal Keywords
     items:
-    - name: "`null`"
+    - name: "null"
       href: ./keywords/null.md
-    - name: "`true` and `false`"
+    - name: true and false
       href: ./builtin-types/bool.md
-    - name: "`default`"
+    - name: default
       href: ./keywords/default.md
   - name: Contextual Keywords
     items:
-    - name: "`add`"
+    - name: add
       href: ./keywords/add.md
-    - name: "`extension`"
+    - name: extension
       href: ./keywords/extension.md
-    - name: "`get`"
+    - name: get
       href: ./keywords/get.md
-    - name: "`init`"
+    - name: init
       href: ./keywords/init.md
-    - name: "`partial` (type)"
+    - name: partial (type)
       href: ./keywords/partial-type.md
-    - name: "`partial` (member)"
+    - name: partial (member)
       href: ./keywords/partial-member.md
-    - name: "`remove`"
+    - name: remove
       href: ./keywords/remove.md
-    - name: "`required`"
+    - name: required
       href: ./keywords/required.md
-    - name: "`set`"
+    - name: set
       href: ./keywords/set.md
-    - name: "`when` (filter condition)"
+    - name: when (filter condition)
       href: ./keywords/when.md
-    - name: "`field`"
+    - name: field
       href: ./keywords/field.md
-    - name: "`value` (implicit parameter)"
+    - name: value (implicit parameter)
       href: ./keywords/value.md
   - name: Query Keywords
     items:
     - name: Quick reference
       displayName: query keywords
       href: ./keywords/query-keywords.md
-    - name: "`from` clause"
+    - name: from clause
       href: ./keywords/from-clause.md
-    - name: "`where` clause"
+    - name: where clause
       href: ./keywords/where-clause.md
-    - name: "`select` clause"
+    - name: select clause
       href: ./keywords/select-clause.md
-    - name: "`group` clause"
+    - name: group clause
       href: ./keywords/group-clause.md
-    - name: "`into`"
+    - name: into
       href: ./keywords/into.md
-    - name: "`orderby` clause"
+    - name: orderby clause
       href: ./keywords/orderby-clause.md
-    - name: "`join` clause"
+    - name: join clause
       href: ./keywords/join-clause.md
-    - name: "`let` clause"
+    - name: let clause
       href: ./keywords/let-clause.md
-    - name: "`ascending`"
+    - name: ascending
       href: ./keywords/ascending.md
-    - name: "`descending`"
+    - name: descending
       href: ./keywords/descending.md
-    - name: "`on`"
+    - name: on
       href: ./keywords/on.md
-    - name: "`equals`"
+    - name: equals
       href: ./keywords/equals.md
-    - name: "`by`"
+    - name: by
       href: ./keywords/by.md
-    - name: "`in`"
+    - name: in
       href: ./keywords/in.md
 - name: Operators and expressions
   items:
@@ -272,56 +272,56 @@ items:
   - name: Patterns
     href: ./operators/patterns.md
     displayName: pattern matching, and keyword, or keyword, not keyword, pattern reference
-  - name: "`+` and `+=` operators"
+  - name: "+ and += operators"
     href: ./operators/addition-operator.md
     displayName: string concatenation, delegate combination, event subscription
-  - name: "`-` and `-=` operators"
+  - name: "- and -= operators"
     href: ./operators/subtraction-operator.md
     displayName: delegate removal, event unsubscription
-  - name: "`?:` operator"
+  - name: "?: operator"
     href: ./operators/conditional-operator.md
     displayName: conditional, ternary, ref
-  - name: "`!` (null-forgiving) operator"
+  - name: "! (null-forgiving) operator"
     href: ./operators/null-forgiving.md
     displayName: nullable reference, null-forgiveness, null suppression
-  - name: "`??` and `??=` operators"
+  - name: "?? and ??= operators"
     href: ./operators/null-coalescing-operator.md
     displayName: null-coalescing, assignment
-  - name: "`=>` operator"
+  - name: => operator
     href: ./operators/lambda-operator.md
     displayName: lambda, expression body definition
-  - name: "`::` operator"
+  - name: ":: operator"
     href: ./operators/namespace-alias-qualifier.md
     displayName: "namespace alias qualifier, global namespace"
-  - name: "`await` operator"
+  - name: await operator
     href: ./operators/await.md
     displayName: async
   - name: Default value expressions
     href: ./operators/default.md
     displayName: default value, default operator, default literal, type default
-  - name: "`delegate` operator"
+  - name: delegate operator
     href: ./operators/delegate-operator.md
     displayName: anonymous
-  - name: "`is` operator"
+  - name: is operator
     href: ./operators/is.md
     displayName: pattern matching
-  - name: "`nameof` expression"
+  - name: nameof expression
     href: ./operators/nameof.md
     displayName: nameof operator
-  - name: "`new` operator"
+  - name: new operator
     href: ./operators/new-operator.md
     displayName: constructor
-  - name: "`sizeof` operator"
+  - name: sizeof operator
     href: ./operators/sizeof.md
-  - name: "`stackalloc` expression"
+  - name: stackalloc expression
     href: ./operators/stackalloc.md
     displayName: stack allocation, span, stackalloc operator
-  - name: "`switch` expression"
+  - name: switch expression
     href: ./operators/switch-expression.md
     displayName: pattern matching, patterns, when
-  - name: "`true` and `false` operators"
+  - name: true and false operators
     href: ./operators/true-false-operators.md
-  - name: "`with` expression"
+  - name: with expression
     href: ./operators/with-expression.md
     displayName: "records, copy"
   - name: Deconstruction expression
@@ -346,19 +346,19 @@ items:
   - name: Jump statements
     displayName: break, continue, goto, return
     href: ./statements/jump-statements.md
-  - name: "`checked` and `unchecked` statements"
+  - name: checked and unchecked statements
     displayName: overflow checking
     href: ./statements/checked-and-unchecked.md
-  - name: "`fixed` statement"
+  - name: fixed statement
     displayName: pin, pinned
     href: ./statements/fixed.md
-  - name: "`lock` statement"
+  - name: lock statement
     displayName: thread synchronization, monitor
     href: ./statements/lock.md
-  - name: "`using` statement"
+  - name: using statement
     displayName: dispose, disposable, await using, using declaration
     href: ./statements/using.md
-  - name: "`yield` statement"
+  - name: yield statement
     displayName: iterator, yield break, yield return
     href: ./statements/yield.md
 - name: Special characters
@@ -554,7 +554,7 @@ items:
       CS8166, CS8167, CS8168, CS8169, CS8345, CS8351, CS8374, CS9075, CS9076, CS9077,
       CS9078, CS9079, CS9080, CS9081, CS9082, CS9083, CS9084, CS9085, CS9086, CS9087,
       CS9088, CS9089, CS9090, CS9091, CS9092, CS9093, CS9094, CS9095, CS9096, CS9097
-  - name: "`ref struct` types"
+  - name: ref struct types
     href: ./compiler-messages/ref-struct-errors.md
     displayName: >
       ref struct,
@@ -657,7 +657,7 @@ items:
       CS9147, CS9148, CS9149, CS9150, CS9151, CS9152, CS9153, CS9154, CS9155, CS9156,
       CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207, CS9231,
       CS9232, CS9233, CS9234, CS9235, CS9270
-  - name: "`static abstract` interface members"
+  - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: >
       CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, CS8931,

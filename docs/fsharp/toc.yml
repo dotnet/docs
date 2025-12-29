@@ -29,11 +29,11 @@ items:
       href: language-reference/interpolated-strings.md
   - name: Values
     href: language-reference/values/index.md
-  - name: let Bindings
+  - name: "`let` Bindings"
     items:
     - name: Overview
       href: language-reference/functions/let-bindings.md
-    - name: do Bindings
+    - name: "`do` Bindings"
       href: language-reference/functions/do-bindings.md
     - name: Fixed keyword
       href: language-reference/fixed.md
@@ -158,9 +158,9 @@ items:
       href: language-reference/members/index.md
     - name: Constructors
       href: language-reference/members/constructors.md
-    - name: let bindings in classes
+    - name: "`let` bindings in classes"
       href: language-reference/members/let-bindings-in-classes.md
-    - name: do bindings in classes
+    - name: "`do` bindings in classes"
       href: language-reference/members/do-bindings-in-classes.md
     - name: Properties
       href: language-reference/members/properties.md
@@ -202,7 +202,7 @@ items:
       href: language-reference/namespaces.md
     - name: Modules
       href: language-reference/modules.md
-    - name: open declarations
+    - name: "`open` declarations"
       href: language-reference/import-declarations-the-open-keyword.md
     - name: Signature files
       href: language-reference/signature-files.md
@@ -236,7 +236,7 @@ items:
       href: language-reference/attributes.md
     - name: Code quotations
       href: language-reference/code-quotations.md
-    - name: nameof
+    - name: "`nameof`"
       href: language-reference/nameof.md
     - name: Caller information
       href: language-reference/caller-information.md

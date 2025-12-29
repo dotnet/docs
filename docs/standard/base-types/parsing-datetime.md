@@ -46,9 +46,6 @@ The format provider is also used to interpret an ambiguous numeric date. It's un
 
 The following example illustrates the use of the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method to convert a `string` into a <xref:System.DateTime>. This example uses the culture associated with the current thread. If the <xref:System.Globalization.CultureInfo> associated with the current culture can't parse the input string, a <xref:System.FormatException> is thrown.
 
-> [!TIP]
-> All the C# samples in this article run in your browser. Press the **Run** button to see the output. You can also edit them to experiment yourself.
-
 > [!NOTE]
 > These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/tree/main/samples/snippets/csharp/how-to/conversions) and [Visual Basic](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic/how-to/conversions).
 

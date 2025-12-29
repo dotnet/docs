@@ -35,7 +35,7 @@ In the following example, `Conditional` is applied to a method to enable or disa
 
 :::code language="csharp" source="snippets/trace.cs" :::
 
-If the `TRACE_ON` identifier isn't defined, the trace output isn't displayed. Explore for yourself in the interactive window.
+If the `TRACE_ON` identifier isn't defined, the trace output isn't displayed.
 
 The `Conditional` attribute is often used with the `DEBUG` identifier to enable trace and logging features for debug builds but not in release builds, as shown in the following example:
 

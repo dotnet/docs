@@ -29,8 +29,12 @@ Adds a NuGet package reference to your application.
 
 ```csharp
 #:package Newtonsoft.Json
-#:package Serilog version="3.1.1"
+#:package Serilog@3.1.1
+#:package Spectre.Console@*
 ```
+
+> [!NOTE]
+> Omitting the version number after the package name currently only works when you use central package management with a `Directory.Packages.props` file. Otherwise, specify the version number explicitly, or add `@*` after the package name to use the latest version.
 
 ### `#:project`
 
@@ -81,12 +85,6 @@ Pass arguments to your application in several ways:
 
 ```dotnetcli
 dotnet run file.cs -- arg1 arg2
-```
-
-Arguments after `--` are passed to your application. Without `--`, arguments go to the `dotnet run` command:
-
-```dotnetcli
-dotnet run file.cs arg1 arg2
 ```
 
 #### Pipe code from stdin
@@ -175,15 +173,12 @@ Restore runs implicitly when you build or run your application.
 
 File-based apps automatically include specific file types for compilation and packaging.
 
-By default, the following items are included:
-
-- The single C# file itself.
-- ResX resource files in the same directory.
+By default, the single C# file is included.
 
 Different SDKs include other file types:
 
 - `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
-- Other specialized SDKs might include other patterns.
+- Non-default SDKs include ResX resource files.
 
 ## Native AOT publishing
 
@@ -343,10 +338,10 @@ Caching improves build performance but can cause confusion when:
 
 ### Workarounds
 
-- Run a full build by using the `--no-cache` flag:
+- Clear cache artifacts for file-based apps by using the following command:
 
   ```dotnetcli
-  dotnet build file.cs --no-cache
+  dotnet clean file-based-apps
   ```
 
 - Force a clean build to bypass cache:

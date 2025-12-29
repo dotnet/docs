@@ -30,11 +30,11 @@ dev_langs:
 
 ## Cause
 
-A test method uses `RuntimeInformation.IsOSPlatform` checks with an early return instead of the `[OSCondition]` attribute.
+A test method uses <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)> checks with an early return instead of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OSConditionAttribute> attribute.
 
 ## Rule description
 
-When you want to skip tests based on the operating system, use the `[OSCondition]` attribute instead of manual runtime checks. The attribute approach provides better test discoverability, clearer test intent, and integrates properly with test frameworks to mark tests as skipped rather than passed.
+When you want to skip tests based on the operating system, use the `[OSCondition]` attribute instead of manual runtime checks. The attribute approach provides better test discoverability and clearer test intent, and integrates properly with test frameworks to mark tests as skipped rather than passed.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -81,7 +81,7 @@ The `[OSCondition]` attribute supports the following operating systems:
 - `OperatingSystems.Windows`
 - `OperatingSystems.FreeBSD`
 
-You can also combine multiple operating systems using bitwise OR:
+You can also combine multiple operating systems using bitwise `OR`:
 
 ```csharp
 [TestMethod]

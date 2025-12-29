@@ -30,7 +30,7 @@ dev_langs:
 
 ## Cause
 
-A test method has multiple `TestMethodAttribute` declarations.
+A test method has multiple <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> declarations.
 
 ## Rule description
 

@@ -30,7 +30,7 @@ dev_langs:
 
 ## Cause
 
-A custom `TestMethodAttribute` class does not propagate caller information to the base class constructor.
+A custom <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> class does not propagate caller information to the base class constructor.
 
 ## Rule description
 

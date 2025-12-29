@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0056: Use DisplayName property for test method display names"
 description: "Learn about code analysis rule MSTEST0056: Use DisplayName property for test method display names"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0056
 - TestMethodAttributeShouldSetDisplayNameCorrectlyAnalyzer
@@ -30,7 +30,7 @@ dev_langs:
 
 ## Cause
 
-A test method attribute uses a string constructor argument instead of the `DisplayName` property.
+A test method attribute uses a string constructor argument instead of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.DisplayName> property.
 
 ## Rule description
 

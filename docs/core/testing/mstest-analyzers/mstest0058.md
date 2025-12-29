@@ -15,7 +15,7 @@ dev_langs:
 - CSharp
 - VB
 ---
-# MSTEST0058: Avoid assertions in catch blocks
+# MSTEST0058: Avoid assertions in `catch` blocks
 
 | Property                            | Value                                              |
 |-------------------------------------|----------------------------------------------------|
@@ -30,13 +30,13 @@ dev_langs:
 
 ## Cause
 
-A test method contains assertion statements within a catch block.
+A test method contains assertion statements within a `catch` block.
 
 ## Rule description
 
-Placing assertions in catch blocks is an anti-pattern that can lead to confusing test results and makes tests harder to understand. When an exception is thrown, the catch block executes, and the assertion runs. However, if no exception is thrown, the catch block never executes, potentially giving false confidence that the test passed.
+Placing assertions in `catch` blocks is an anti-pattern that can lead to confusing test results and makes tests harder to understand. When an exception is thrown, the `catch` block executes, and the assertion runs. However, if no exception is thrown, the `catch` block never executes, potentially giving false confidence that the test passed.
 
-Instead, use `Assert.ThrowsException` or similar methods to verify that expected exceptions are thrown. This makes the test intent clearer and ensures proper test behavior.
+Instead, use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*?displayProperty=nameWithType> or similar methods to verify that expected exceptions are thrown. This makes the test intent clearer and ensures proper test behavior.
 
 ```csharp
 [TestClass]
@@ -47,7 +47,7 @@ public class TestClass
     {
         try
         {
-            // Code that may throw
+            // Code that might throw.
             DoSomethingThatMightThrow();
         }
         catch
@@ -69,7 +69,7 @@ public class TestClass
     [TestMethod]
     public void TestMethod_ThrowsException()
     {
-        Assert.ThrowsException<InvalidOperationException>(() => DoSomethingThatMightThrow());
+        Assert.Throws<InvalidOperationException>(() => DoSomethingThatMightThrow());
     }
 
     [TestMethod]

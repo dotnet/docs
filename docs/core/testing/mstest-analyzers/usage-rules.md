@@ -51,7 +51,7 @@ Identifier | Name | Description
 [MSTEST0055](mstest0055.md) | IgnoreStringMethodReturnValueAnalyzer | A call to `string.Contains`, `string.StartsWith`, or `string.EndsWith` is made and its return value is ignored.
 [MSTEST0056](mstest0056.md) | TestMethodAttributeShouldSetDisplayNameCorrectlyAnalyzer | A test method attribute uses a string constructor argument instead of the `DisplayName` property.
 [MSTEST0057](mstest0057.md) | TestMethodAttributeShouldPropagateSourceInformationAnalyzer | A custom `TestMethodAttribute` class does not propagate caller information to the base class constructor.
-[MSTEST0058](mstest0058.md) | AvoidAssertsInCatchBlocksAnalyzer | A test method contains assertion statements within a catch block.
+[MSTEST0058](mstest0058.md) | AvoidAssertsInCatchBlocksAnalyzer | A test method contains assertion statements within a `catch` block.
 [MSTEST0059](mstest0059.md) | UseParallelizeAttributeAnalyzer | An assembly contains both `[Parallelize]` and `[DoNotParallelize]` attributes.
 [MSTEST0060](mstest0060.md) | DuplicateTestMethodAttributeAnalyzer | A test method has multiple `TestMethodAttribute` declarations.
 [MSTEST0061](mstest0061.md) | UseOSConditionAttributeInsteadOfRuntimeCheckAnalyzer | A test method uses `RuntimeInformation.IsOSPlatform` checks with an early return instead of the `[OSCondition]` attribute.

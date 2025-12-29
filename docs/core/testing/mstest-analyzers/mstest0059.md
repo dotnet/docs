@@ -30,7 +30,7 @@ dev_langs:
 
 ## Cause
 
-An assembly contains both `[Parallelize]` and `[DoNotParallelize]` attributes.
+An assembly contains both <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attributes.
 
 ## Rule description
 

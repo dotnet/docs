@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0057: Propagate source information in custom test method attributes"
 description: "Learn about code analysis rule MSTEST0057: Propagate source information in custom test method attributes"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0057
 - TestMethodAttributeShouldPropagateSourceInformationAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0057: Propagate source information in custom test method attributes
 
@@ -34,7 +33,7 @@ A custom <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 
 ## Rule description
 
-When creating custom test method attributes that derive from `TestMethodAttribute`, you should propagate source information using caller information attributes. This allows MSTest to correctly track the source file and line number for test methods, improving diagnostics and test result reporting.
+When creating custom test method attributes that derive from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>, you should propagate source information using caller information attributes. This allows MSTest to correctly track the source file and line number for test methods, improving diagnostics and test result reporting.
 
 ```csharp
 public class MyTestMethodAttribute : TestMethodAttribute

@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0059: Do not use both Parallelize and DoNotParallelize attributes"
 description: "Learn about code analysis rule MSTEST0059: Do not use both Parallelize and DoNotParallelize attributes"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0059
 - UseParallelizeAttributeAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0059: Do not use both Parallelize and DoNotParallelize attributes
 
@@ -34,7 +33,7 @@ An assembly contains both <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Par
 
 ## Rule description
 
-The `[Parallelize]` and `[DoNotParallelize]` attributes are mutually exclusive. Having both attributes in the same assembly creates conflicting configuration that can lead to unpredictable test execution behavior. You should choose one parallelization strategy for your test assembly.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attributes are mutually exclusive. Having both attributes in the same assembly creates conflicting configuration that can lead to unpredictable test execution behavior. You should choose one parallelization strategy for your test assembly.
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;

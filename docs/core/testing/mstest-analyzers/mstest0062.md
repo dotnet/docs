@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0062: Avoid out and ref parameters in test methods"
 description: "Learn about code analysis rule MSTEST0062: Avoid out and ref parameters in test methods"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0062
 - AvoidOutRefTestMethodParametersAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0062: Avoid out and ref parameters in test methods
 

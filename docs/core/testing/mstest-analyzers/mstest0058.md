@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0058: Avoid assertions in catch blocks"
 description: "Learn about code analysis rule MSTEST0058: Avoid assertions in catch blocks"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0058
 - AvoidAssertsInCatchBlocksAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0058: Avoid assertions in `catch` blocks
 

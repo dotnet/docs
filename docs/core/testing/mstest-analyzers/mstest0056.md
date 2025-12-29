@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0056: Use DisplayName property for test method display names
 
@@ -34,7 +33,7 @@ A test method attribute uses a string constructor argument instead of the <xref:
 
 ## Rule description
 
-When specifying a custom display name for a test method, you should use the `DisplayName` property instead of passing a string as a constructor argument. This ensures consistent usage across the MSTest framework and improves code readability.
+When specifying a custom display name for a test method, you should use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.DisplayName> property instead of passing a string as a constructor argument. This ensures consistent usage across the MSTest framework and improves code readability.
 
 ```csharp
 [TestClass]

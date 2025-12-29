@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0061: Use OSCondition attribute instead of runtime checks"
 description: "Learn about code analysis rule MSTEST0061: Use OSCondition attribute instead of runtime checks"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0061
 - UseOSConditionAttributeInsteadOfRuntimeCheckAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0061: Use OSCondition attribute instead of runtime checks
 
@@ -34,7 +33,7 @@ A test method uses <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSP
 
 ## Rule description
 
-When you want to skip tests based on the operating system, use the `[OSCondition]` attribute instead of manual runtime checks. The attribute approach provides better test discoverability and clearer test intent, and integrates properly with test frameworks to mark tests as skipped rather than passed.
+When you want to skip tests based on the operating system, use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OSConditionAttribute> attribute instead of manual runtime checks. The attribute approach provides better test discoverability and clearer test intent, and integrates properly with test frameworks to mark tests as skipped rather than passed.
 
 ```csharp
 using System.Runtime.InteropServices;

@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0060: Avoid duplicate test method attributes"
 description: "Learn about code analysis rule MSTEST0060: Avoid duplicate test method attributes"
-ms.date: 12/29/2024
+ms.date: 12/29/2025
 f1_keywords:
 - MSTEST0060
 - DuplicateTestMethodAttributeAnalyzer
@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0060: Avoid duplicate test method attributes
 
@@ -34,7 +33,7 @@ A test method has multiple <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Te
 
 ## Rule description
 
-A test method should have only one attribute that derives from `TestMethodAttribute`. Having multiple test method attributes (such as `[TestMethod]` and `[DataTestMethod]`) on the same method can lead to unexpected behavior and test execution issues.
+A test method should have only one attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>. Having multiple test method attributes (such as `[TestMethod]` and `[DataTestMethod]`) on the same method can lead to unexpected behavior and test execution issues.
 
 ```csharp
 [TestClass]

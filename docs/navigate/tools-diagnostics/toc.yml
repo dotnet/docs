@@ -102,170 +102,170 @@ items:
       - name: Overview
         displayName: ".net cli,command-line interface,cli,tool"
         href: ../../core/tools/index.md
-      - name: "`dotnet` command reference"
+      - name: dotnet command reference
         items:
-          - name: "`dotnet`"
+          - name: dotnet
             href: ../../core/tools/dotnet.md
-          - name: "`dotnet build`"
+          - name: dotnet build
             href: ../../core/tools/dotnet-build.md
-          - name: "`dotnet build-server`"
+          - name: dotnet build-server
             href: ../../core/tools/dotnet-build-server.md
-          - name: "`dotnet clean`"
+          - name: dotnet clean
             href: ../../core/tools/dotnet-clean.md
-          - name: "`dotnet dev-certs`"
+          - name: dotnet dev-certs
             href: ../../core/tools/dotnet-dev-certs.md
-          - name: "`dotnet format`"
+          - name: dotnet format
             href: ../../core/tools/dotnet-format.md
-          - name: "`dotnet help`"
+          - name: dotnet help
             href: ../../core/tools/dotnet-help.md
-          - name: "`dotnet msbuild`"
+          - name: dotnet msbuild
             href: ../../core/tools/dotnet-msbuild.md
-          - name: "`dotnet new`"
+          - name: dotnet new
             items:
-              - name: "`dotnet new` <TEMPLATE>"
+              - name: dotnet new <TEMPLATE>
                 href: ../../core/tools/dotnet-new.md
-              - name: "`dotnet new list`"
+              - name: dotnet new list
                 href: ../../core/tools/dotnet-new-list.md
-              - name: "`dotnet new search`"
+              - name: dotnet new search
                 href: ../../core/tools/dotnet-new-search.md
-              - name: "`dotnet new details`"
+              - name: dotnet new details
                 href: ../../core/tools/dotnet-new-details.md
-              - name: "`dotnet new install`"
+              - name: dotnet new install
                 href: ../../core/tools/dotnet-new-install.md
-              - name: "`dotnet new uninstall`"
+              - name: dotnet new uninstall
                 href: ../../core/tools/dotnet-new-uninstall.md
-              - name: "`dotnet new update`"
+              - name: dotnet new update
                 href: ../../core/tools/dotnet-new-update.md
               - name: .NET default templates
                 href: ../../core/tools/dotnet-new-sdk-templates.md
               - name: Custom templates
                 href: ../../core/tools/custom-templates.md
-          - name: "`dotnet nuget`"
+          - name: dotnet nuget
             items:
-              - name: "`dotnet nuget delete`"
+              - name: dotnet nuget delete
                 href: ../../core/tools/dotnet-nuget-delete.md
-              - name: "`dotnet nuget locals`"
+              - name: dotnet nuget locals
                 href: ../../core/tools/dotnet-nuget-locals.md
-              - name: "`dotnet nuget push`"
+              - name: dotnet nuget push
                 href: ../../core/tools/dotnet-nuget-push.md
-              - name: "`dotnet nuget add source`"
+              - name: dotnet nuget add source
                 href: ../../core/tools/dotnet-nuget-add-source.md
-              - name: "`dotnet nuget disable source`"
+              - name: dotnet nuget disable source
                 href: ../../core/tools/dotnet-nuget-disable-source.md
-              - name: "`dotnet nuget enable source`"
+              - name: dotnet nuget enable source
                 href: ../../core/tools/dotnet-nuget-enable-source.md
-              - name: "`dotnet nuget list source`"
+              - name: dotnet nuget list source
                 href: ../../core/tools/dotnet-nuget-list-source.md
-              - name: "`dotnet nuget remove source`"
+              - name: dotnet nuget remove source
                 href: ../../core/tools/dotnet-nuget-remove-source.md
-              - name: "`dotnet nuget update source`"
+              - name: dotnet nuget update source
                 href: ../../core/tools/dotnet-nuget-update-source.md
-              - name: "`dotnet nuget verify`"
+              - name: dotnet nuget verify
                 href: ../../core/tools/dotnet-nuget-verify.md
-              - name: "`dotnet nuget trust`"
+              - name: dotnet nuget trust
                 href: ../../core/tools/dotnet-nuget-trust.md
-              - name: "`dotnet nuget sign`"
+              - name: dotnet nuget sign
                 href: ../../core/tools/dotnet-nuget-sign.md
-              - name: "`dotnet nuget why`"
+              - name: dotnet nuget why
                 href: ../../core/tools/dotnet-nuget-why.md
-          - name: "`dotnet nuget config`"
+          - name: dotnet nuget config
             items:
-              - name: "`dotnet nuget config get`"
+              - name: dotnet nuget config get
                 href: ../../core/tools/dotnet-nuget-config-get.md
-              - name: "`dotnet nuget config set`"
+              - name: dotnet nuget config set
                 href: ../../core/tools/dotnet-nuget-config-set.md
-              - name: "`dotnet nuget config unset`"
+              - name: dotnet nuget config unset
                 href: ../../core/tools/dotnet-nuget-config-unset.md
-              - name: "`dotnet nuget config paths`"
+              - name: dotnet nuget config paths
                 href: ../../core/tools/dotnet-nuget-config-paths.md
-          - name: "`dotnet pack`"
+          - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
-          - name: "`dotnet package add/list/remove/search`"
+          - name: dotnet package add/list/remove/search
             items:
-              - name: "`dotnet package add`"
+              - name: dotnet package add
                 href: ../../core/tools/dotnet-package-add.md
-              - name: "`dotnet package download`"
+              - name: dotnet package download
                 href: ../../core/tools/dotnet-package-download.md
-              - name: "`dotnet package list`"
+              - name: dotnet package list
                 href: ../../core/tools/dotnet-package-list.md
-              - name: "`dotnet package remove`"
+              - name: dotnet package remove
                 href: ../../core/tools/dotnet-package-remove.md
-              - name: "`dotnet package search`"
+              - name: dotnet package search
                 href: ../../core/tools/dotnet-package-search.md
-              - name: "`dotnet package update`"
+              - name: dotnet package update
                 href: ../../core/tools/dotnet-package-update.md
-          - name: "`dotnet publish`"
+          - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
-          - name: "`dotnet project convert`"
+          - name: dotnet project convert
             href: ../../core/tools/dotnet-project-convert.md
-          - name: "`dotnet reference add/list/remove`"
+          - name: dotnet reference add/list/remove
             items:
-              - name: "`dotnet reference add`"
+              - name: dotnet reference add
                 href: ../../core/tools/dotnet-reference-add.md
-              - name: "`dotnet reference list`"
+              - name: dotnet reference list
                 href: ../../core/tools/dotnet-reference-list.md
-              - name: "`dotnet reference remove`"
+              - name: dotnet reference remove
                 href: ../../core/tools/dotnet-reference-remove.md
-          - name: "`dotnet restore`"
+          - name: dotnet restore
             href: ../../core/tools/dotnet-restore.md
-          - name: "`dotnet run`"
+          - name: dotnet run
             href: ../../core/tools/dotnet-run.md
-          - name: "`dotnet sdk check`"
+          - name: dotnet sdk check
             href: ../../core/tools/dotnet-sdk-check.md
-          - name: "`dotnet sln`"
+          - name: dotnet sln
             href: ../../core/tools/dotnet-sln.md
-          - name: "`dotnet store`"
+          - name: dotnet store
             href: ../../core/tools/dotnet-store.md
-          - name: "`dotnet test`"
+          - name: dotnet test
             href: ../../core/tools/dotnet-test.md
-          - name: "`dotnet tool`"
+          - name: dotnet tool
             items:
-              - name: "`dotnet tool exec`"
+              - name: dotnet tool exec
                 href: ../../core/tools/dotnet-tool-exec.md
-              - name: "`dotnet tool install`"
+              - name: dotnet tool install
                 href: ../../core/tools/dotnet-tool-install.md
-              - name: "`dotnet tool list`"
+              - name: dotnet tool list
                 href: ../../core/tools/dotnet-tool-list.md
-              - name: "`dotnet tool restore`"
+              - name: dotnet tool restore
                 href: ../../core/tools/dotnet-tool-restore.md
-              - name: "`dotnet tool run`"
+              - name: dotnet tool run
                 href: ../../core/tools/dotnet-tool-run.md
-              - name: "`dotnet tool search`"
+              - name: dotnet tool search
                 href: ../../core/tools/dotnet-tool-search.md
-              - name: "`dotnet tool uninstall`"
+              - name: dotnet tool uninstall
                 href: ../../core/tools/dotnet-tool-uninstall.md
-              - name: "`dotnet tool update`"
+              - name: dotnet tool update
                 href: ../../core/tools/dotnet-tool-update.md
-          - name: "`dotnet vstest`"
+          - name: dotnet vstest
             href: ../../core/tools/dotnet-vstest.md
-          - name: "`dotnet watch`"
+          - name: dotnet watch
             displayName: hot reload
             href: ../../core/tools/dotnet-watch.md
-          - name: "`dotnet workload`"
+          - name: dotnet workload
             items:
-              - name: "`dotnet workload`"
+              - name: dotnet workload
                 href: ../../core/tools/dotnet-workload.md
-              - name: "`dotnet workload sets`"
+              - name: dotnet workload sets
                 href: ../../core/tools/dotnet-workload-sets.md
-              - name: "`dotnet workload clean`"
+              - name: dotnet workload clean
                 href: ../../core/tools/dotnet-workload-clean.md
-              - name: "`dotnet workload config`"
+              - name: dotnet workload config
                 href: ../../core/tools/dotnet-workload-config.md
-              - name: "`dotnet workload history`"
+              - name: dotnet workload history
                 href: ../../core/tools/dotnet-workload-history.md
-              - name: "`dotnet workload install`"
+              - name: dotnet workload install
                 href: ../../core/tools/dotnet-workload-install.md
-              - name: "`dotnet workload list`"
+              - name: dotnet workload list
                 href: ../../core/tools/dotnet-workload-list.md
-              - name: "`dotnet workload repair`"
+              - name: dotnet workload repair
                 href: ../../core/tools/dotnet-workload-repair.md
-              - name: "`dotnet workload restore`"
+              - name: dotnet workload restore
                 href: ../../core/tools/dotnet-workload-restore.md
-              - name: "`dotnet workload search`"
+              - name: dotnet workload search
                 href: ../../core/tools/dotnet-workload-search.md
-              - name: "`dotnet workload uninstall`"
+              - name: dotnet workload uninstall
                 href: ../../core/tools/dotnet-workload-uninstall.md
-              - name: "`dotnet workload update`"
+              - name: dotnet workload update
                 href: ../../core/tools/dotnet-workload-update.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md

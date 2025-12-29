@@ -66,7 +66,7 @@ class Program1
         // Add -q as a separate option for quiet verbosity.
         Option<bool> quietOption = new("-q")
         {
-            Description = "Set verbosity to quiet (shorthand for --verbosity quiet).",
+            Description = "Set verbosity to quiet (shorthand for --verbosity quiet)",
             Recursive = true
         };
 

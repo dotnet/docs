@@ -272,25 +272,25 @@ items:
   - name: Patterns
     href: ./operators/patterns.md
     displayName: pattern matching, and keyword, or keyword, not keyword, pattern reference
-  - name: + and += operators
+  - name: "`+` and `+=` operators"
     href: ./operators/addition-operator.md
     displayName: string concatenation, delegate combination, event subscription
-  - name: "- and -= operators"
+  - name: "`-` and `-=` operators"
     href: ./operators/subtraction-operator.md
     displayName: delegate removal, event unsubscription
-  - name: "?: operator"
+  - name: "`?:` operator"
     href: ./operators/conditional-operator.md
     displayName: conditional, ternary, ref
-  - name: "! (null-forgiving) operator"
+  - name: "`!` (null-forgiving) operator"
     href: ./operators/null-forgiving.md
     displayName: nullable reference, null-forgiveness, null suppression
-  - name: "?? and ??= operators"
+  - name: "`??` and `??=` operators"
     href: ./operators/null-coalescing-operator.md
     displayName: null-coalescing, assignment
-  - name: => operator
+  - name: "`=>` operator"
     href: ./operators/lambda-operator.md
     displayName: lambda, expression body definition
-  - name: ":: operator"
+  - name: "`::` operator"
     href: ./operators/namespace-alias-qualifier.md
     displayName: "namespace alias qualifier, global namespace"
   - name: "`await` operator"

@@ -4,8 +4,8 @@ description: Understand custom TimeSpan format strings in .NET. A custom format 
 ms.date: "03/30/2017"
 ms.topic: reference
 dev_langs:
-  - `"csharp"`
-  - `"vb"`
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "format specifiers, custom time interval"
   - "format strings"

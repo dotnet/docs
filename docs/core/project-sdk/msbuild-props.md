@@ -880,7 +880,7 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 ```
 
 > [!NOTE]
-> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](/dotnet/core/tools/dotnet-watch#ignore-specified-files-and-folders).
+> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](../tools/dotnet-watch.md#ignore-specified-files-and-folders).
 
 ### DefaultItemExcludesInProjectFolder
 

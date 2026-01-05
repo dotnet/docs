@@ -7,8 +7,10 @@ string? model = config["ModelName"];
 string? key = config["OpenAIKey"];
 
 // <StrictMode>
+// Note: Strict JSON schema mode requires OpenAI models that support it.
+// Ensure your model configuration uses a compatible version (e.g., gpt-4o-2024-08-06 or later).
 IChatClient client = new ChatClientBuilder(
-    new OpenAIClient(key).GetChatClient(model ?? "gpt-4o-2024-08-06").AsIChatClient())
+    new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
     .UseFunctionInvocation()
     .Build();
 

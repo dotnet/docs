@@ -70,35 +70,31 @@ var retryClient = new FunctionInvokingChatClient(innerClient2)
 {
     FunctionInvoker = async (context, cancellationToken) =>
     {
-        const int maxRetries = 2;
-        int retryCount = 0;
-
-        while (retryCount <= maxRetries)
+        try
         {
-            try
-            {
-                return await context.Function.InvokeAsync(context.Arguments, cancellationToken);
-            }
-            catch (RetryableException ex) when (retryCount < maxRetries)
-            {
-                // Return error message to the AI model and allow it to retry
-                retryCount++;
-                return $"Attempt {retryCount} failed: {ex.Message}. Please provide valid input and retry.";
-            }
-            catch (JsonException ex) when (retryCount < maxRetries)
-            {
-                retryCount++;
-                return $"Attempt {retryCount} failed: Invalid JSON format - {ex.Message}. " +
-                       "Please check the parameter types match the function signature and retry.";
-            }
-            catch (Exception ex)
-            {
-                // Don't retry for unexpected errors
-                return $"Error: {ex.Message}";
-            }
+            return await context.Function.InvokeAsync(context.Arguments, cancellationToken);
         }
-
-        return "Maximum retry attempts reached. Unable to execute function.";
+        catch (RetryableException ex)
+        {
+            // Return error message to the AI model to help it retry with valid input
+            return $"Error: {ex.Message}. Please provide valid input and retry.";
+        }
+        catch (JsonException ex)
+        {
+            // Return JSON parsing error to help the AI correct the format
+            return $"Error: Invalid JSON format - {ex.Message}. " +
+                   "Please check the parameter types match the function signature and retry.";
+        }
+        catch (ArgumentException ex)
+        {
+            // Return validation error to help the AI provide correct values
+            return $"Error: Invalid argument - {ex.Message}. Please correct the input and retry.";
+        }
+        catch (Exception ex)
+        {
+            // Don't provide detailed info for unexpected errors
+            return $"Error: Function execution failed - {ex.Message}";
+        }
     }
 };
 

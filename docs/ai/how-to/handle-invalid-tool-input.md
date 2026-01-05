@@ -48,20 +48,20 @@ The following example shows how to implement a custom function invoker that catc
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="BasicInvoker":::
 
-### Implement retry logic
+### Enable AI model self-correction
 
-You can extend the custom invoker pattern to implement retry logic. This is useful when you want to give the AI model multiple chances to provide valid input:
+By returning descriptive error messages instead of throwing exceptions, you allow the AI model to see what went wrong and try again with corrected input. The model will automatically retry the function call with better arguments:
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="RetryInvoker":::
 
-### Best practices for retry prompts
+### Best practices for error messages
 
-When implementing retry logic, provide clear, actionable feedback to the AI model:
+When returning error messages to enable AI self-correction, provide clear, actionable feedback:
 
 - **Be specific**: Explain exactly what was wrong with the input
 - **Provide examples**: Show the expected format or valid values
-- **Set limits**: Avoid infinite retry loops by limiting retry attempts
-- **Log attempts**: Track retry attempts for debugging and monitoring
+- **Use consistent format**: Help the AI model learn from patterns
+- **Log errors**: Track error patterns for debugging and monitoring
 
 Example retry messages:
 

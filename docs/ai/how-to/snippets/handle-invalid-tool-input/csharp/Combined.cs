@@ -8,7 +8,7 @@ string? model = config["ModelName"];
 string? key = config["OpenAIKey"];
 
 // <CombinedStrategies>
-IChatClient innerClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-4o-2024-08-06").AsIChatClient();
+IChatClient innerClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient();
 
 // Strategy 1: Custom error handling with retry logic
 var functionInvokingClient = new FunctionInvokingChatClient(innerClient)

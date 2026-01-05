@@ -11,4 +11,4 @@ The project or solution or C# (file-based app) file to operate on. If a file isn
 
 - `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
 
-- `FILE` is an argument added in .NET 10. The path and filename of a file-based app. File-based apps are contained within a single file that is built and run without a corresponding project (*.csproj*) file. For more information, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+- `FILE` is an argument added in .NET 10. The path and filename of a file-based app. File-based apps are contained within a single file that is built and run without a corresponding project (*.csproj*) file. For more information, see [Build file-based C# apps](../../../csharp/fundamentals/tutorials/file-based-programs.md).

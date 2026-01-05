@@ -30,7 +30,11 @@ Adds a NuGet package reference to your application.
 ```csharp
 #:package Newtonsoft.Json
 #:package Serilog@3.1.1
+#:package Spectre.Console@*
 ```
+
+> [!NOTE]
+> Omitting the version number after the package name currently only works when you use central package management with a `Directory.Packages.props` file. Otherwise, specify the version number explicitly, or add `@*` after the package name to use the latest version.
 
 ### `#:project`
 
@@ -90,11 +94,23 @@ Pass arguments to your application by placing them after `--`:
 dotnet run file.cs -- arg1 arg2
 ```
 
-Without `--`, arguments go to the `dotnet run` command:
+#### Pipe code from stdin
 
-```dotnetcli
-dotnet run file.cs arg1 arg2
+Pipe C# code directly to `dotnet run` by using standard input with the `-` argument. The `-` argument indicates that `dotnet run` reads the code from standard input instead of a file. With the `-` argument, `dotnet run` doesn't search the current working directory for other files, such as launch profiles. The current directory is still the working directory to build and run the program.
+
+**PowerShell:**
+
+```powershell
+'Console.WriteLine("hello from stdin!");' | dotnet run -
 ```
+
+**Bash:**
+
+```bash
+echo 'Console.WriteLine("hello from stdin!");' | dotnet run -
+```
+
+This approach is useful for quick testing, running one-off commands, or integrating with shell scripts that generate C# code dynamically.
 
 ### Build applications
 
@@ -170,15 +186,12 @@ By default, restore runs implicitly when you build or run your application. Howe
 
 File-based apps automatically include specific file types for compilation and packaging.
 
-By default, the following items are included:
-
-- The single C# file itself.
-- ResX resource files in the same directory.
+By default, the single C# file is included.
 
 Different SDKs include other file types:
 
 - `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
-- Other specialized SDKs might include other patterns.
+- Non-default SDKs include ResX resource files.
 
 ## Native AOT publishing
 
@@ -354,12 +367,6 @@ Caching improves build performance but can cause confusion when:
 ```dotnetcli
 dotnet clean file-based-apps
 ```
-
-- Run a full build by using the `--no-cache` flag:
-
-  ```dotnetcli
-  dotnet build file.cs --no-cache
-  ```
 
 - Force a clean build to bypass cache:
 

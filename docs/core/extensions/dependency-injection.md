@@ -1,8 +1,6 @@
 ---
 title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/21/2025
 ms.topic: overview
 ai-usage: ai-assisted

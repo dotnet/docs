@@ -12,7 +12,7 @@ ms.author: alexwolf
 In this quickstart, you create a minimal Model Context Protocol (MCP) server using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk), connect to it using GitHub Copilot, and publish it to NuGet. MCP servers are services that expose capabilities to clients through the Model Context Protocol (MCP).
 
 > [!NOTE]
-> The `Microsoft.Extensions.AI.Templates` experience is currently in preview. The template uses the [ModelContextProtocol](https://www.nuget.org/packages/ModelContextProtocol/) library and the [MCP registry `server.json` schema](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md), which are both in preview.
+> The `Microsoft.McpServer.ProjectTemplates` template package is currently in preview.
 
 ## Prerequisites
 
@@ -26,11 +26,11 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 1. In a terminal window, install the MCP Server template:
 
    ```bash
-   dotnet new install Microsoft.Extensions.AI.Templates
+   dotnet new install Microsoft.McpServer.ProjectTemplates
    ```
 
     > [!NOTE]
-    > .NET 10.0 SDK (Preview 6 or later) is required to install `Microsoft.Extensions.AI.Templates`.
+    > .NET 10.0 SDK (Preview 6 or later) is required to install `Microsoft.McpServer.ProjectTemplates`.
 
 1. Create a new MCP server app with the `dotnet new mcpserver` command:
 

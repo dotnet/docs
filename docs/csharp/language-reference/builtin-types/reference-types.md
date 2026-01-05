@@ -36,10 +36,10 @@ The `string` type represents a sequence of zero or more Unicode characters. `str
 
 Although `string` is a reference type, the [equality operators `==` and `!=`](../operators/equality-operators.md#string-equality) are defined to compare the values of `string` objects, not references. Value based equality makes testing for string equality more intuitive. For example:
 
-```csharp-interactive
+```csharp
 string a = "hello";
 string b = "h";
-// Append to contents of 'b'
+// Append to contents of 'b'.
 b += "ello";
 Console.WriteLine(a == b);
 Console.WriteLine(object.ReferenceEquals(a, b));
@@ -71,7 +71,7 @@ char x = str[2];  // x = 's';
 
 In similar fashion, the `[]` operator can also be used for iterating over each character in a string:
 
-```csharp-interactive
+```csharp
 string str = "test";
 
 for (int i = 0; i < str.Length; i++)
@@ -155,7 +155,7 @@ Quoted string literals are enclosed in double quotation marks ("):
 
 String literals can contain any character literal. Escape sequences are included. The following example uses escape sequence `\\` for backslash, `\u0066` for the letter f, and `\n` for newline.
 
-```csharp-interactive
+```csharp
 string a = "\\\u0066\n F";
 Console.WriteLine(a);
 // Output:

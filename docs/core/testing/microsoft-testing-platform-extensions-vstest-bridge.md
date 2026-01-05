@@ -49,7 +49,7 @@ Loggers in `Microsoft.Testing.Platform` are configured through command-line para
 
 ## VSTest filter support
 
-This extension also offer the ability to use VSTest filtering mechanism to discover or run only the tests that matches the filter expression. For more information, see the [Filter option details](../tools/dotnet-test.md#filter-option-details) section or for framework specific details see the [Running selective unit tests](./selective-unit-tests.md) page.
+This extension also offer the ability to use VSTest filtering mechanism to discover or run only the tests that matches the filter expression. For more information, see the [Filter option details](../tools/dotnet-test-vstest.md#filter-option-details) section or for framework specific details see the [Running selective unit tests](./selective-unit-tests.md) page.
 
 When enabled by the test framework, you can use `--filter <FILTER_EXPRESSION>`.
 

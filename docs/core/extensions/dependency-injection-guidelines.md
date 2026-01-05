@@ -1,8 +1,6 @@
 ---
 title: Dependency injection guidelines
 description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
@@ -10,7 +8,7 @@ ai-usage: ai-assisted
 
 # Dependency injection guidelines
 
-This article provides general guidelines and best practices for implementing dependency injection in .NET applications.
+This article provides general guidelines and best practices for implementing dependency injection (DI) in .NET applications.
 
 ## Design services for dependency injection
 
@@ -20,7 +18,7 @@ When designing services for dependency injection:
 - Avoid direct instantiation of dependent classes within services. Direct instantiation couples the code to a particular implementation.
 - Make services small, well-factored, and easily tested.
 
-If a class has many injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes.
+If a class has many injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](../../architecture/modern-web-apps-azure/architectural-principles.md#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes.
 
 ### Disposal of services
 
@@ -69,7 +67,7 @@ SingletonDisposable.Dispose()
 Consider the following code:
 
 ```csharp
-// Register example service in IServiceCollection
+// Register example service in IServiceCollection.
 builder.Services.AddSingleton(new ExampleService());
 ```
 
@@ -109,19 +107,18 @@ Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.Dep
 
 #### General `IDisposable` guidelines
 
-- Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead so the solved service can be manually disposed after it is done being used.
-- Don't resolve <xref:System.IDisposable> instances with a transient or scoped lifetime in the root scope. The only exception to this is if the app creates/recreates and disposes <xref:System.IServiceProvider>, but this isn't an ideal pattern.
+- Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead so the solved service can be manually disposed when it's no longer in use.
+- Don't resolve <xref:System.IDisposable> instances with a transient or scoped lifetime in the root scope. The only exception to this is if the app creates or recreates and disposes <xref:System.IServiceProvider>, but this isn't an ideal pattern.
 - Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose%2A> on that dependency.
 - Use scopes to control the lifetimes of services. Scopes aren't hierarchical, and there's no special connection among scopes.
 
-For more information on resource cleanup, see [Implement a `Dispose` method](../../standard/garbage-collection/implementing-dispose.md), or [Implement a `DisposeAsync` method](../../standard/garbage-collection/implementing-disposeasync.md). Additionally, consider the [Disposable transient services captured by container](#disposable-transient-services-captured-by-container) scenario as it relates to resource cleanup.
+For more information on resource cleanup, see [Implement a `Dispose` method](../../standard/garbage-collection/implementing-dispose.md) or [Implement a `DisposeAsync` method](../../standard/garbage-collection/implementing-disposeasync.md). Additionally, consider the [Disposable transient services captured by container](#disposable-transient-services-captured-by-container) scenario as it relates to resource cleanup.
 
 ## Default service container replacement
 
 The built-in service container is designed to serve the needs of the framework and most consumer apps. We recommend using the built-in container unless you need a specific feature that it doesn't support, such as:
 
 - Property injection
-- Injection based on name (.NET 7 and earlier versions only. For more information, see [Keyed services](dependency-injection.md#keyed-services).)
 - Child containers
 - Custom lifetime management
 - `Func<T>` support for lazy initialization
@@ -139,9 +136,14 @@ The following third-party containers can be used with ASP.NET Core apps:
 
 ## Thread safety
 
-Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service may also require thread safety depending on how it's used by the singleton.
+Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service might also require thread safety depending on how it's used by the singleton. The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
 
-The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
+Additionally, the process of resolving services from the built-in .NET dependency injection container is thread-safe.  
+Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resolve services concurrently from multiple threads.
+
+> [!NOTE]
+> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe. It doesn't make the resolved service instances themselves thread-safe.  
+> Any service (especially singletons) that holds shared mutable state must implement its own synchronization logic if accessed concurrently.
 
 ## Recommendations
 
@@ -154,7 +156,7 @@ The factory method of a singleton service, such as the second argument to [AddSi
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
-- Only use singleton lifetime for services with their own state that is expensive to create or globally shared. Avoid using singleton lifetime for services which themselves have no state. Most .NET IoC containers use "Transient" as the default scope. Considerations and drawbacks of singletons:
+- Only use singleton lifetime for services with their own state that is expensive to create or globally shared. Avoid using singleton lifetime for services that have no state themself. Most .NET IoC containers use "Transient" as the default scope. Considerations and drawbacks of singletons:
   - **Thread safety**: A singleton must be implemented in a thread-safe way.
   - **Coupling**: It can couple otherwise unrelated requests.
   - **Testing challenges**: Shared state and coupling can make unit testing more difficult.
@@ -164,20 +166,20 @@ The factory method of a singleton service, such as the second argument to [AddSi
   - **Scope leakage**: A singleton can inadvertently capture scoped or transient dependencies, effectively promoting them to singletons and causing unintended side effects.
   - **Initialization overhead**: When resolving a service, the IoC container needs to look up the singleton instance. If it doesn't already exist, it needs to create it in a thread-safe manner. In contrast, a stateless transient service is very cheap to create and destroy.
 
-Like all sets of recommendations, you may encounter situations where ignoring a recommendation is required. Exceptions are rare, mostly special cases within the framework itself.
+Like all sets of recommendations, you might encounter situations where ignoring a recommendation is required. Exceptions are rare, and are mostly special cases within the framework itself.
 
-DI is an *alternative* to static/global object access patterns. You may not be able to realize the benefits of DI if you mix it with static object access.
+DI is an *alternative* to static/global object access patterns. You might not realize the benefits of DI if you mix it with static object access.
 
 ## Example anti-patterns
 
-In addition to the guidelines in this article, there are several anti-patterns *you **should** avoid*. Some of these anti-patterns are learnings from developing the runtimes themselves.
+In addition to the guidelines in this article, there are several anti-patterns you **should avoid**. Some of these anti-patterns are learnings from developing the runtimes themselves.
 
 > [!WARNING]
-> These are example anti-patterns, *do not* copy the code, *do not* use these patterns, and avoid these patterns at all costs.
+> These are example anti-patterns. *Do not* copy the code, *do not* use these patterns, and avoid these patterns at all costs.
 
 ### Disposable transient services captured by container
 
-When you register *Transient* services that implement <xref:System.IDisposable>, by default the DI container will hold onto these references, and not <xref:System.IDisposable.Dispose> of them until the container is disposed when application stops if they were resolved from the container, or until the scope is disposed if they were resolved from a scope. This can turn into a memory leak if resolved from container level.
+When you register *transient* services that implement <xref:System.IDisposable>, by default the DI container holds onto these references. It doesn't dispose of them until the container is disposed when application stops if they were resolved from the container, or until the scope is disposed if they were resolved from a scope. A memory leak can result if resolved from container level.
 
 :::image type="content" source="media/transient-disposables-without-dispose.png" lightbox="media/transient-disposables-without-dispose.png" alt-text="Anti-pattern: Transient disposables without dispose. Do not copy!":::
 
@@ -187,7 +189,7 @@ For more information on debugging memory leaks, see [Debug a memory leak in .NET
 
 ### Async DI factories can cause deadlocks
 
-The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are overloads accepting a `Func<IServiceProvider, T>` where `T` is the service being registered, and the parameter is named `implementationFactory`. The `implementationFactory` can be provided as a lambda expression, local function, or method. If the factory is asynchronous, and you use <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>, this will cause a deadlock.
+The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are overloads that accept a `Func<IServiceProvider, T>` where `T` is the service being registered, and the parameter is named `implementationFactory`. The `implementationFactory` can be provided as a lambda expression, local function, or method. If the factory is asynchronous, and you use <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>, it will cause a deadlock.
 
 :::image type="content" source="media/deadlock-with-async-factory.png" lightbox="media/deadlock-with-async-factory.png" alt-text="Anti-pattern: Deadlock with async factory. Do not copy!":::
 
@@ -201,7 +203,7 @@ When you're running this anti-pattern and the deadlock occurs, you can view the 
 
 ### Captive dependency
 
-The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency) was coined by [Mark Seemann](https://blog.ploeh.dk/about), and refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
+The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency), coined by [Mark Seemann](https://blog.ploeh.dk/about), refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
 
 :::image type="content" source="media/captive-dependency.png" lightbox="media/captive-dependency.png" alt-text="Anti-pattern: Captive dependency. Do not copy!":::
 
@@ -209,13 +211,13 @@ In the preceding code, `Foo` is registered as a singleton and `Bar` is scoped - 
 
 :::code language="csharp" source="snippets/configuration/di-anti-patterns/Foo.cs":::
 
-The `Foo` object requires a `Bar` object, and since `Foo` is a singleton, and `Bar` is scoped - this is a misconfiguration. As is, `Foo` is only instantiated once, and it holds onto `Bar` for its lifetime, which is longer than the intended scoped lifetime of `Bar`. Consider validating scopes by passing `validateScopes: true` to the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)>. When you validate the scopes, you get an <xref:System.InvalidOperationException> with a message similar to "Cannot consume scoped service 'Bar' from singleton 'Foo'.".
+The `Foo` object requires a `Bar` object, and since `Foo` is a singleton, and `Bar` is scoped, this is a misconfiguration. As is, `Foo` is only instantiated once, and it holds onto `Bar` for its lifetime, which is longer than the intended scoped lifetime of `Bar`. Consider validating scopes by passing `validateScopes: true` to the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)>. When you validate the scopes, you get an <xref:System.InvalidOperationException> with a message similar to "Cannot consume scoped service 'Bar' from singleton 'Foo'.".
 
 For more information, see [Scope validation](dependency-injection.md#scope-validation).
 
 ### Scoped service as singleton
 
-When using scoped services, if you're not creating a scope or within an existing scope - the service becomes a singleton.
+When using scoped services, if you're not creating a scope or within an existing scope, the service becomes a singleton.
 
 :::image type="content" source="media/scoped-services-becomes-singleton.png" lightbox="media/scoped-services-becomes-singleton.png" alt-text="Anti-pattern: Scoped service becomes singleton. Do not copy!":::
 

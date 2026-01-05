@@ -1,8 +1,6 @@
 ---
 title: Compile-time configuration source generation
 description: Learn how to use the configuration source generator to intercept specific call sites and bypass reflection-based configuration binding.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/09/2024
 ---
 

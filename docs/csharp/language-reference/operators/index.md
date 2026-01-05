@@ -2,9 +2,9 @@
 title: "Operators and expressions - List all operators and expression"
 description: "Learn the C# operators and expressions, operator precedence, and operator associativity."
 ms.date: 11/28/2022
-f1_keywords: 
+f1_keywords:
   - "cs.operators"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "operators [C#]"
   - "operator precedence [C#]"
   - "operator associativity [C#]"
@@ -54,14 +54,14 @@ You can use an [expression body definition](../../programming-guide/statements-e
 
 In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. In the following example, the multiplication is performed first because it has higher precedence than addition:
 
-```csharp-interactive
+```csharp
 var a = 2 + 2 * 2;
 Console.WriteLine(a); //  output: 6
 ```
 
 Use parentheses to change the order of evaluation imposed by operator precedence:
 
-```csharp-interactive
+```csharp
 var a = (2 + 2) * 2;
 Console.WriteLine(a); //  output: 8
 ```
@@ -102,7 +102,7 @@ When operators have the same precedence, associativity of the operators determin
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
-```csharp-interactive
+```csharp
 int a = 13 / 5 / 2;
 int b = 13 / (5 / 2);
 Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
@@ -112,12 +112,12 @@ Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
 
 Unrelated to operator precedence and associativity, operands in an expression are evaluated from left to right. The following examples demonstrate the order in which operators and operands are evaluated:
 
-| Expression | Order of evaluation |
-| ---------- | ------------------- |
-|`a + b`|a, b, +|
-|`a + b * c`|a, b, c, *, +|
-|`a / b + c * d`|a, b, /, c, d, *, +|
-|`a / (b + c) * d`|a, b, c, +, /, d, *|
+| Expression        | Order of evaluation |
+|-------------------|---------------------|
+| `a + b`           | a, b, +             |
+| `a + b * c`       | a, b, c, *, +       |
+| `a / b + c * d`   | a, b, /, c, d, *, + |
+| `a / (b + c) * d` | a, b, c, +, /, d, * |
 
 Typically, all operator operands are evaluated. However, some operators evaluate operands conditionally. That is, the value of the leftmost operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). For more information, see the description of each operator.
 

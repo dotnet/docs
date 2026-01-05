@@ -26,17 +26,14 @@ Telemetry *is collected* when using any of the [.NET CLI commands](index.md), su
 
 The .NET SDK telemetry feature is enabled by default for Microsoft distributions of the SDK. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
-A single telemetry entry is also sent by the .NET SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
+The .NET SDK installer sends a single telemetry entry when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
 
 > [!IMPORTANT]
-> To opt out after you started the installer: close the installer, set the environment variable, and then run the installer again with that value set.
+> To opt out after you start the installer: close the installer, set the environment variable, and then run the installer again with that value set.
 
 ## Disclosure
 
-The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
-
-> [!NOTE]
-> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
+The .NET SDK displays text similar to the following output when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). The text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 Telemetry
@@ -46,88 +43,134 @@ The .NET tools collect usage data in order to help us improve your experience. T
 Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
 
-To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
+To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. This variable has no effect on telemetry opt out.
+
+> [!NOTE]
+> **Breaking change:** The behavior of telemetry messages written to `stderr` changed in recent versions of the .NET SDK. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
 
 ## Data points
 
-The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology, held under restricted access, and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
+The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
-Protecting your privacy is important to us. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository or send an email to [dotnet@microsoft.com](mailto:dotnet@microsoft.com) for investigation.
+Protecting your privacy is important to Microsoft. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
 
-The telemetry feature collects the following data:
+For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
-| SDK versions | Data |
-|--------------|------|
-| All          | Timestamp of invocation. |
-| All          | Command invoked (for example, "build"), hashed starting in 2.1. |
-| All          | Three octet IP address used to determine the geographical location. |
-| All          | Operating system and version. |
-| All          | Runtime ID (RID) the SDK is running on. |
-| All          | .NET SDK version. |
-| All          | Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft. |
-| >=2.0        | Command arguments and options: several arguments and options are collected (not arbitrary strings). See [collected options](#collected-options). Hashed after 2.1.300. |
-| >=2.0         | Whether the SDK is running in a container. |
-| >=2.0         | Target frameworks (from the `TargetFramework` event), hashed starting in 2.1. |
-| >=2.0         | Hashed Media Access Control (MAC) address (SHA256). |
-| >=2.0         | Hashed current working directory. |
-| >=2.0         | Install success report, with hashed installer exe filename. |
-| >=2.1.300     | Kernel version. |
-| >=2.1.300     | Libc release/version. |
-| >=3.0.100     | Whether the output was redirected (true or false). |
-| >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry). |
-| >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
-| >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
-| >=5.0.100     | Hashed SelfContained used for build (MSBuild property) |
-| >=5.0.100     | Hashed UseApphost used for build (MSBuild property) |
-| >=5.0.100     | Hashed OutputType used for build (MSBuild property) |
-| >=5.0.201     | Hashed PublishReadyToRun used for build (MSBuild property) |
-| >=5.0.201     | Hashed PublishTrimmed used for build (MSBuild property) |
-| >=5.0.201     | Hashed PublishSingleFile used for build (MSBuild property) |
-| >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
-| >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
-| >=5.0.202     | Elapsed time to display first time use notice on first run. |
-| >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
-| >=5.0.202     | Elapsed time to parse the CLI input. |
-| >=6.0.100     | OS architecture |
-| >=6.0.104     | Hashed PublishReadyToRunUseCrossgen2 used for build (MSBuild property) |
-| >=6.0.104     | Hashed Crossgen2PackVersion used for build (MSBuild property) |
-| >=6.0.104     | Hashed CompileListCount used for build (MSBuild property) |
-| >=6.0.104     | Hashed _ReadyToRunCompilationFailures used for build (MSBuild property) |
-| >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
-| >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
-| >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
-| >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
-| >=8.0.100     | Hashed HybridGlobalization used for build (MSBuild property) |
-| >=8.0.100     | Whether .NET Blazor WebAssembly SDK is used. |
-| >=8.0.100     | Whether .NET WebAssembly SDK is used. |
-| >=8.0.100     | Whether .NET MAUI is used. |
-| >=8.0.100     | Whether .NET mobile SDK is used. |
-| >=8.0.100     | Whether other mobile SDKs are used (like: Avalonia, Uno). |
-| >=8.0.100     | Whether Mono AOT is used. |
-| >=8.0.100     | Whether Mono AOT strip IL feature is used. |
-| >=8.0.100     | Whether Mono interpreter is used. |
-| >=8.0.100     | Whether library mode for mobile is used.  |
-| >=8.0.100     | Whether NativeAOT is used. |
-| >=8.0.100     | The Mono runtime pack version that was used. |
-| >=10.0.100    | Hashed project identifier for `dotnet run`. |
-| >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
-| >=10.0.100    | The launch profile name if specified for `dotnet run`. |
-| >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
-| >=10.0.100    | The launch settings configuration model used (if any) for `dotnet run`. |
-| >=10.0.100    | Number of SDKs used for `dotnet run`. |
-| >=10.0.100    | Number of PackageReferences for `dotnet run`. |
-| >=10.0.100    | Number of ProjectReferences for `dotnet run`. |
-| >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
-| >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
-| >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
-| >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
-| >=10.0.100    | Captures the `global.json` state at the time a command is invoked. The state is one of the following values: **not_found**, **valid**, **invalid_json**, or **invalid_data**. |
-| >=10.0.100    | Which MSBuild task factories are used to load and run tasks (including inline C# tasks, multithreaded-aware tasks, and out-of-process tasks), and how many tasks they execute. |
-| >=10.0.100    | Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts. |
+The following tabs show the telemetry data captured by SDK version:
+
+# [.NET 10](#tab/dotnet10)
+
+- **SDK version 10.0.100 and later:**
+  - Hashed project identifier for `dotnet run`.
+  - Application type of either file-based app or project-based for `dotnet run`.
+  - The launch profile name if specified for `dotnet run`.
+  - Whether a launch profile was specified for `dotnet run`.
+  - The launch settings configuration model used (if any) for `dotnet run`.
+  - Number of SDKs used for `dotnet run`.
+  - Number of PackageReferences for `dotnet run`.
+  - Number of ProjectReferences for `dotnet run`.
+  - Number of additional properties for file-based apps with `dotnet run`.
+  - Whether MSBuild was used for file-based apps with `dotnet run`.
+  - Whether Roslyn compiler was used for file-based apps with `dotnet run`.
+  - The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).
+  - Captures the `global.json` state at the time a command is invoked. The state is one of the following values: **not_found**, **valid**, **invalid_json**, or **invalid_data**.
+  - Which MSBuild task factories are used to load and run tasks (including inline C# tasks, multithreaded-aware tasks, and out-of-process tasks), and how many tasks they execute.
+  - Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts.
+
+# [.NET 8](#tab/dotnet8)
+
+- **SDK version 8.0.100 and later:**
+  - Hashed TargetPlatformIdentifier used for build (MSBuild property).
+  - Hashed HybridGlobalization used for build (MSBuild property).
+  - Whether .NET Blazor WebAssembly SDK is used.
+  - Whether .NET WebAssembly SDK is used.
+  - Whether .NET MAUI is used.
+  - Whether .NET mobile SDK is used.
+  - Whether other mobile SDKs are used (like: Avalonia, Uno).
+  - Whether Mono AOT is used.
+  - Whether Mono AOT strip IL feature is used.
+  - Whether Mono interpreter is used.
+  - Whether library mode for mobile is used.
+  - Whether NativeAOT is used.
+  - The Mono runtime pack version that was used.
+
+# [.NET 7](#tab/dotnet7)
+
+- **SDK version 7.0.100 and later:**
+  - Hashed PublishAot used for build (MSBuild property).
+  - Hashed PublishProtocol used for build (MSBuild property).
+
+# [.NET 6](#tab/dotnet6)
+
+- **SDK version 6.0.300 and later:**
+  - If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).
+
+- **SDK version 6.0.104 and later:**
+  - Hashed PublishReadyToRunUseCrossgen2 used for build (MSBuild property).
+  - Hashed Crossgen2PackVersion used for build (MSBuild property).
+  - Hashed CompileListCount used for build (MSBuild property).
+  - Hashed _ReadyToRunCompilationFailures used for build (MSBuild property).
+
+- **SDK version 6.0.100 and later:**
+  - OS architecture.
+
+# [.NET 5](#tab/dotnet5)
+
+- **SDK version 5.0.202 and later:**
+  - Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup.
+  - Elapsed time for the step that adds .NET Tools to the path on first run.
+  - Elapsed time to display first time use notice on first run.
+  - Elapsed time for generating ASP.NET Certificate on first run.
+  - Elapsed time to parse the CLI input.
+
+- **SDK version 5.0.201 and later:**
+  - Hashed PublishReadyToRun used for build (MSBuild property).
+  - Hashed PublishTrimmed used for build (MSBuild property).
+  - Hashed PublishSingleFile used for build (MSBuild property).
+
+- **SDK version 5.0.100 and later:**
+  - Hashed TargetFrameworkVersion used for build (MSBuild property).
+  - Hashed RuntimeIdentifier used for build (MSBuild property).
+  - Hashed SelfContained used for build (MSBuild property).
+  - Hashed UseApphost used for build (MSBuild property).
+  - Hashed OutputType used for build (MSBuild property).
+
+# [.NET 3](#tab/dotnet3)
+
+- **SDK version 3.0.100 and later:**
+  - Whether the output was redirected (`true` or `false`).
+  - On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry).
+
+# [.NET 2](#tab/dotnet2)
+
+- **SDK version 2.1.300 and later:**
+  - Kernel version.
+  - Libc release and version.
+
+- **SDK version 2.0 and later:**
+  - Command arguments and options: the SDK collects several arguments and options, not arbitrary strings. See [collected options](#collected-options). Hashed after version 2.1.300.
+  - Whether the SDK is running in a container.
+  - Target frameworks (from the `TargetFramework` event), hashed starting in version 2.1.
+  - Hashed Media Access Control (MAC) address (SHA256).
+  - Hashed current working directory.
+  - Install success report, with hashed installer exe filename.
+
+# [All SDKs](#tab/all)
+
+- **All SDK versions:**
+  - Timestamp of invocation.
+  - Command invoked (for example, "build"), hashed starting in version 2.1.
+  - Three octet IP address used to determine the geographical location.
+  - Operating system and version.
+  - Runtime ID (RID) the SDK is running on.
+  - .NET SDK version.
+  - Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft.
+
+---
 
 ### Collected options
 
-Certain commands send additional data. A subset of commands sends the first argument:
+Certain commands send extra data. A subset of commands sends the first argument:
 
 | Command               | First argument data sent                |
 |-----------------------|-----------------------------------------|
@@ -156,18 +199,18 @@ A subset of commands sends selected options if they're used, along with their va
 
 When the SDK fails to resolve a built-in command, any command resolver that successfully resolves the command sends a hash of the command name along with the name of the command resolver type.
 
-Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
+Starting with .NET Core 2.1.100 SDK, the SDK hashes all these values except for `--verbosity` and `--sdk-package-version`.
 
 ### Template engine telemetry
 
-The `dotnet new` template instantiation command collects additional data for Microsoft-authored templates, starting with .NET Core 2.1.100 SDK:
+Starting with .NET Core 2.1.100 SDK, the `dotnet new` template instantiation command collects extra data for Microsoft-authored templates:
 
 * `--framework`
 * `--auth`
 
 ### dotnet run telemetry
 
-The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
+Starting with .NET SDK 10.0.100, the `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps.
 
 **Telemetry for all `dotnet run` executions:**
 
@@ -188,9 +231,9 @@ The `dotnet run` command collects feature-based telemetry to help drive developm
 
 ## Crash exception telemetry
 
-If the .NET CLI/SDK crashes, it collects the name of the exception and stack trace of the CLI/SDK code. This information is collected to assess problems and improve the quality of the .NET SDK and CLI. This article provides information about the data we collect. It also provides tips on how users building their own version of the .NET SDK can avoid inadvertent disclosure of personal or sensitive information.
+If the .NET CLI or SDK crashes, it collects the name of the exception and stack trace of the CLI or SDK code. The .NET CLI collects this information to assess problems and improve the quality of the .NET SDK and CLI.
 
-The .NET CLI collects information for CLI/SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI/SDK code.
+The .NET CLI collects information for CLI or SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI or SDK code.
 
 The following example shows the kind of data that is collected:
 
@@ -209,46 +252,44 @@ at Microsoft.DotNet.Cli.Program.ProcessArgs(String[] args, ITelemetry telemetryC
 at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ```
 
-## Continuous Integration Detection
+.NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 
-In order to detect if the .NET CLI is running in a Continuous Integration environment, the .NET CLI probes for the presence and values of several well-known environment variables that common CI providers set.
+Because of this, you shouldn't place custom builds of the .NET SDK in directories whose path names expose personal or sensitive information.
 
-The full list of environment variables, and what is done with their values, is shown below.  Note that in every case, the value of the environment variable is never collected, only used to set a boolean flag.
+## Continuous integration detection
+
+To detect if the .NET CLI is running in a continuous integration environment, the .NET CLI checks for the presence and values of several well-known environment variables that common CI providers set.
+
+The following list shows the environment variables and how the .NET CLI uses their values. The .NET CLI doesn't collect the value of any environment variable; it only uses the value to set a Boolean flag.
 
 | Variable(s) | Provider | Action |
 | ----------- | -------- | ------ |
-| TF_BUILD    | Azure Pipelines | Parse boolean value |
-| GITHUB_ACTIONS | GitHub Actions | Parse boolean value |
-| APPVEYOR | Appveyor | Parse boolean value |
-| CI | Many/Most | Parse boolean value |
-| TRAVIS | Travis CI | Parse boolean value |
-| CIRCLECI | Circle CI | Parse boolean value |
-| CODEBUILD_BUILD_ID, AWS_REGION | Amazon Web Services CodeBuild | Check if all are present and non-null |
-| BUILD_ID, BUILD_URL | Jenkins | Check if all are present and non-null |
-| BUILD_ID, PROJECT_ID | Google Cloud Build | Check if all are present and non-null |
-| TEAMCITY_VERSION | TeamCity | Check if present and non-null |
-| JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
+| `TF_BUILD`    | Azure Pipelines | Parse boolean value |
+| `GITHUB_ACTIONS` | GitHub Actions | Parse boolean value |
+| `APPVEYOR` | Appveyor | Parse boolean value |
+| `CI` | Many/Most | Parse boolean value |
+| `TRAVIS` | Travis CI | Parse boolean value |
+| `CIRCLECI` | Circle CI | Parse boolean value |
+| `CODEBUILD_BUILD_ID`, `AWS_REGION` | Amazon Web Services CodeBuild | Check if all are present and non-null |
+| `BUILD_ID`, `BUILD_URL` | Jenkins | Check if all are present and non-null |
+| `BUILD_ID`, `PROJECT_ID` | Google Cloud Build | Check if all are present and non-null |
+| `TEAMCITY_VERSION` | TeamCity | Check if present and non-null |
+| `JB_SPACE_API_URL` | JetBrains Space | Check if present and non-null |
 
 ## LLM detection
 
-To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI checks for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 
-The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables aren't collected—they're only used to identify the agent type.
 
 | LLM agent | Variable | Value |
 | --------- | ----------- | ----- |
-| GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
-| Claude Code | CLAUDECODE | "claude" |
-| Cursor | CURSOR_EDITOR| "cursor" |
-| Google Gemini | GEMINI_CLI | "gemini" |
+| GitHub Copilot | `GITHUB_COPILOT_CLI_MODE` | "copilot" |
+| Claude Code | `CLAUDECODE` | "claude" |
+| Cursor | `CURSOR_EDITOR`| "cursor" |
+| Google Gemini | `GEMINI_CLI` | "gemini" |
 
-If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
-
-## Avoid inadvertent disclosure of information
-
-.NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
-
-Because of this, custom builds of the .NET SDK shouldn't be located in directories whose path names expose personal or sensitive information.
+If the .NET CLI detects multiple agents, it concatenates the different agent values with a comma to produce the final value.
 
 ## See also
 

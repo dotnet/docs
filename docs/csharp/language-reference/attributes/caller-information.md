@@ -58,7 +58,7 @@ The compiler injects the expression used for `condition` into the `message` argu
 Argument failed validation: <func is not null>
 ```
 
-This attribute enables you to write diagnostic utilities that provide more details. Developers can more quickly understand what changes are needed. You can also use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to determine what expression was used as the receiver for extension methods. The following method samples a sequence at regular intervals. If the sequence has fewer elements than the frequency, it reports an error:
+This attribute enables you to write diagnostic utilities that provide more details. Developers can more quickly understand what changes are needed. You can also use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to determine what expression was used as the receiver for extension members. The following method samples a sequence at regular intervals. If the sequence has fewer elements than the frequency, it reports an error:
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="ExtensionMethod":::
 

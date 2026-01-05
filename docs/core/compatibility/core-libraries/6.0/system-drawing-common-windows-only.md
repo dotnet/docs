@@ -11,11 +11,11 @@ On non-Windows operating systems, unless you set a runtime configuration switch,
 
 ## Old behavior
 
-Prior to .NET 6, using the System.Drawing.Common package did not produce any compile-time warnings, and no run-time exceptions were thrown.
+Prior to .NET 6, using the System.Drawing.Common package did not produce any compile-time warnings, and no runtime exceptions were thrown.
 
 ## New behavior
 
-Starting in .NET 6, the platform analyzer emits compile-time warnings when referencing code is compiled for non-Windows operating systems. In addition, the following run-time exception is thrown unless you set a configuration option:
+Starting in .NET 6, the platform analyzer emits compile-time warnings when referencing code is compiled for non-Windows operating systems. In addition, the following runtime exception is thrown unless you set a configuration option:
 
 ```
 System.TypeInitializationException : The type initializer for 'Gdip' threw an exception.

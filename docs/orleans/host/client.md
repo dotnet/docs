@@ -2,7 +2,7 @@
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: article
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
 ---
@@ -73,7 +73,7 @@ Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGeneri
 Consider the following example of a client configuration:
 
 ```csharp
-// Alternatively, call Host.CreateDefaultBuilder(args) if using the 
+// Alternatively, call Host.CreateDefaultBuilder(args) if using the
 // Microsoft.Extensions.Hosting NuGet package.
 using IHost host = new HostBuilder()
     .UseOrleansClient(clientBuilder =>
@@ -250,7 +250,7 @@ await Host.CreateDefaultBuilder(args)
     {
         builder.UseLocalhostClustering();
     })
-    .ConfigureServices(services => 
+    .ConfigureServices(services =>
     {
         services.AddHostedService<ClusterClientHostedService>();
     })
@@ -330,7 +330,7 @@ static async Task RunWatcherAsync()
             Console.WriteLine(
                 "Subscribed successfully. Press <Enter> to stop.");
 
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
         catch (Exception e)
         {

@@ -181,8 +181,6 @@ The `perf` tool can be used to generate .NET Core app profiles. We will demonstr
 
 Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU addresses to JIT-generated functions by name. For more information, see [Export perf maps and jit dumps](../runtime-config/debugging-profiling.md#export-perf-maps-and-jit-dumps).
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 Run the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) in the same terminal session.
 
 ```dotnetcli

@@ -47,7 +47,7 @@ The following are some of the examples included in the article:
 
 Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting2.cs" interactive="try-dotnet-method" id="Snippet35":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting2.cs" id="Snippet35":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting2.fs" id="Snippet35":::
 :::code language="vb" source="./snippets/System/String/Format/vb/starting2.vb" id="Snippet35":::
 
@@ -63,7 +63,7 @@ Besides formatting, you can also control alignment and spacing.
 
 <xref:System.String.Format%2A?displayProperty=nameWithType> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting1.cs" interactive="try-dotnet-method" id="Snippet30":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting1.cs" id="Snippet30":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting1.fs" id="Snippet30":::
 :::code language="vb" source="./snippets/System/String/Format/vb/starting1.vb" id="Snippet30":::
 
@@ -119,7 +119,7 @@ The following example is similar to the previous one, except that it left-aligns
 
 ## The Format method in brief
 
-Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](../../standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format(System.String,System.Object,System.Object,System.Object)> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.
+Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](../../standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At runtime, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format(System.String,System.Object,System.Object,System.Object)> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/formatoverload1.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/formatoverload1.fs" id="Snippet8":::
@@ -168,7 +168,7 @@ However, any custom type can implement <xref:System.IFormattable> or extend an e
 
 The following example uses the `width` and `formatString` arguments to produce formatted output.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/formatoverload2.cs" interactive="try-dotnet-method" id="Snippet9":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/formatoverload2.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/formatoverload2.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/String/Format/vb/formatoverload2.vb" id="Snippet9":::
 
@@ -192,7 +192,7 @@ For more information, see [Processing order](../../standard/base-types/composite
 
 The <xref:System.String.Format%2A> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format(System.String,System.Object)> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.
 
-:::code language="csharp" source="./snippets/System/String/Format/csharp/Example1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/Format/csharp/Example1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/Format/fsharp/Example1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/String/Format/vb/Example1.vb" id="Snippet1":::
 
@@ -216,7 +216,7 @@ For more information about providing custom formatting solutions, see [How to: D
 
 This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/FormatExample2.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/FormatExample2.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/FormatExample2.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/String/Format/vb/FormatExample2.vb" id="Snippet2":::
 
@@ -280,7 +280,7 @@ All [standard numeric format strings](../../standard/base-types/standard-numeric
 
 If you're using a [custom numeric format string](../../standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa27.cs" interactive="try-dotnet-method" id="Snippet27":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa27.cs" id="Snippet27":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa27.fs" id="Snippet27":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa27.vb" id="Snippet27":::
 
@@ -288,13 +288,13 @@ If you're using a [custom numeric format string](../../standard/base-types/custo
 
 By default, formatting operations only display non-zero integral digits. If you're formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa29.cs" interactive="try-dotnet-method" id="Snippet29":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa29.cs" id="Snippet29":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa29.fs" id="Snippet29":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa29.vb" id="Snippet29":::
 
 You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](../../standard/base-types/custom-numeric-format-strings.md), as the following example shows.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa28.cs" interactive="try-dotnet-method" id="Snippet28":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa28.cs" id="Snippet28":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa28.fs" id="Snippet28":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa28.vb" id="Snippet28":::
 
@@ -312,13 +312,13 @@ For example, how do you prevent the following method call from throwing a <xref:
 
 A single opening or closing brace is always interpreted as the beginning or end of a format item. To be interpreted literally, it must be escaped. You escape a brace by adding another brace ("{{" and "}}" instead of "{" and "}"), as in the following method call:
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa3.cs" interactive="try-dotnet-method" id="Snippet24":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa3.cs" id="Snippet24":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa3.fs" id="Snippet24":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa3.vb" id="Snippet24":::
 
 However, even escaped braces are easily misinterpreted. We recommend that you include braces in the format list and use format items to insert them in the result string, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa3.cs" interactive="try-dotnet-method" id="Snippet25":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa3.cs" id="Snippet25":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa3.fs" id="Snippet25":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa3.vb" id="Snippet25":::
 
@@ -338,6 +338,6 @@ This is a problem of compiler overload resolution. Because the compiler cannot c
 
 Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the <xref:System.String.Format(System.String,System.Object%5B%5D)> method. The following example provides one implementation.
 
-:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa21.cs" interactive="try-dotnet-method" id="Snippet22":::
+:::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa21.cs" id="Snippet22":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa21.fs" id="Snippet22":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa2.vb" id="Snippet22":::

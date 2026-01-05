@@ -34,7 +34,7 @@ The `dotnet reference list` command provides a convenient option to list project
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

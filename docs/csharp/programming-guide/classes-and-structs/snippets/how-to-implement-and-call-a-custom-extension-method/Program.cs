@@ -1,4 +1,4 @@
-using CustomExtensions;
+﻿using CustomExtensions;
 
 string s = "The quick brown fox jumped over the lazy dog.";
 // Call the method as if it were an
@@ -13,12 +13,14 @@ namespace CustomExtensions
     // Extension methods must be defined in a static class.
     public static class StringExtension
     {
-        // This is the extension method.
-        // The first parameter takes the "this" modifier
-        // and specifies the type for which the method is defined.
-        public static int WordCount(this string str)
+        extension(string str)
         {
-            return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
+            // This is the extension member.
+            // The `str` parameter is declared on the extension declaration.
+            public int WordCount()
+            {
+                return str.Split(new char[] { ' ', '.', '?' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            }
         }
     }
 }

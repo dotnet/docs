@@ -2,7 +2,7 @@
 description: "where (generic type constraint) - C# Reference"
 title: "where (generic type constraint)"
 
-ms.date: 07/26/2024
+ms.date: 11/24/2024
 f1_keywords:
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
@@ -47,7 +47,7 @@ You use the `default` constraint to specify that your derived class overrides th
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="DerivedClass":::
 
 > [!IMPORTANT]
-> Generic declarations that include the `notnull` constraint can be used in a nullable oblivious context, but compiler does not enforce the constraint.
+> Generic declarations that include the `notnull` constraint can be used in a nullable oblivious context, but compiler doesn't enforce the constraint.
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="NotNull":::
 

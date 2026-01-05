@@ -17,6 +17,7 @@ C# 14 includes the following new features. You can try these features using the 
 - [`field` backed properties](#the-field-keyword)
 - [`partial` events and constructors](#more-partial-members)
 - [user-defined compound assignment operators](#user-defined-compound-assignment)
+- [new preprocessor directives for File-based apps](../language-reference/preprocessor-directives.md#file-based-apps)
 
 C# 14 is the latest C# release. C# 14 is supported on **.NET 10**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 

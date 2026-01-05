@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
   - "default keyword [C#]"
 ---
-# default value expressions - produce the default value
+# Default value expressions - produce the default value
 
-A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [default operator](#default-operator) call and a [default literal](#default-literal).
+A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [`default` operator](#default-operator) call and a [`default` literal](#default-literal).
 
 You also use the `default` keyword as the default case label within a [`switch` statement](../statements/selection-statements.md#the-switch-statement).
 
-## default operator
+## `default` operator
 
 The argument to the `default` operator must be the name of a type or a type parameter, as the following example shows:
 
-[!code-csharp-interactive[default of T](snippets/shared/DefaultOperator.cs#WithOperand)]
+[!code-csharp[default of T](snippets/shared/DefaultOperator.cs#WithOperand)]
 
-## default literal
+## `default` literal
 
 You can use the `default` literal to produce the default value of a type when the compiler can infer the expression type. The `default` literal expression produces the same value as the `default(T)` expression where `T` is the inferred type. You can use the `default` literal in any of the following cases:
 
@@ -30,7 +30,7 @@ You can use the `default` literal to produce the default value of a type when th
 
 The following example shows the usage of the `default` literal:
 
-[!code-csharp-interactive[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
+[!code-csharp[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
 
 > [!TIP]
 > Use .NET style rule [IDE0034](../../../fundamentals/code-analysis/style-rules/ide0034.md) to specify a preference on the use of the `default` literal in your codebase.

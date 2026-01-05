@@ -1,7 +1,7 @@
 ---
 title: "yield statement - provide the next element in an iterator"
 description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
-ms.date: 06/28/2024
+ms.date: 11/24/2025
 f1_keywords:
   - "yield"
   - "yield_CSharpKeyword"
@@ -14,11 +14,11 @@ You use the `yield` statement in an [iterator](../../iterators.md) to provide th
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="YieldReturn":::
+  :::code language="csharp" source="snippets/yield/Program.cs" id="YieldReturn":::
 
 - `yield break`: to explicitly signal the end of iteration, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="YieldBreak":::
+  :::code language="csharp" source="snippets/yield/Program.cs" id="YieldBreak":::
 
   Iteration also finishes when control reaches the end of an iterator.
 
@@ -38,13 +38,13 @@ You can't use the `yield` statements in:
 - methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters.
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md).
 - [unsafe blocks](../keywords/unsafe.md). Before C# 13, `yield` was invalid in any method with an `unsafe` block. Beginning with C# 13, you can use `yield` in methods with `unsafe` blocks, but not in the `unsafe` block.
-- `yield return` and `yield break` can not be used in [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks, or in [try](../statements/exception-handling-statements.md) blocks with a corresponding `catch` block. The `yield return` and `yield break` statements can be used in a `try` block with no `catch` blocks, only a `finally` block.
+- `yield return` and `yield break` can't be used in [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks, or in [try](../statements/exception-handling-statements.md) blocks with a corresponding `catch` block. The `yield return` and `yield break` statements can be used in a `try` block with no `catch` blocks, only a `finally` block.
 
 ## `using` statements in iterators
 
 You can use [`using` statements](using.md) in iterator methods. Since `using` statements are compiled into `try` blocks with `finally` clauses (and no `catch` blocks), they work correctly with iterators. The disposable resources are properly managed throughout the iterator's execution:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="UsingInIterator":::
+:::code language="csharp" source="snippets/yield/Program.cs" id="UsingInIterator":::
 
 As the preceding example shows, the resource acquired in the `using` statement remains available throughout the iterator's execution, even when the iterator suspends and resumes execution at `yield return` statements. The resource is disposed when the iterator completes (either by reaching the end or via `yield break`) or when the iterator itself is disposed (for example, when the caller breaks out of enumeration early).
 
@@ -52,7 +52,7 @@ As the preceding example shows, the resource acquired in the `using` statement r
 
 The call of an iterator doesn't execute it immediately, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="IteratorExecution":::
+:::code language="csharp" source="snippets/yield/Program.cs" id="IteratorExecution":::
 
 As the preceding example shows, when you start to iterate over an iterator's result, an iterator is executed until the first `yield return` statement is reached. Then, the execution of an iterator is suspended and the caller gets the first iteration value and processes it. On each subsequent iteration, the execution of an iterator resumes after the `yield return` statement that caused the previous suspension and continues until the next `yield return` statement is reached. The iteration completes when control reaches the end of an iterator or a `yield break` statement.
 

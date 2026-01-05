@@ -39,7 +39,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 ## Options
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
 - **`--allow-insecure-connections`**
   

@@ -108,7 +108,7 @@ When the deployment is *trimmed* on publish, only the specific versions of the m
 
 ## Specifying target manifests in the project file
 
-An alternative to specifying target manifests with the [`dotnet publish`](../tools/dotnet-publish.md) command is to specify them in the project file as a semicolon-separated list of paths under a **\<TargetManifestFiles>** tag.
+An alternative to specifying target manifests with the [`dotnet publish`](../tools/dotnet-publish.md) command is to specify them in the project file as a semicolon-separated list of paths under a `<TargetManifestFiles>` tag.
 
 ```xml
 <PropertyGroup>
@@ -126,7 +126,7 @@ For .NET Core 2.0, the runtime package store feature is used implicitly by an AS
 
 The runtime package store is installed on the host when the .NET SDK is installed. Other installers may provide the runtime package store, including Zip/tarball installations of the .NET SDK, `apt-get`, Red Hat Yum, the .NET Core Windows Server Hosting bundle, and manual runtime package store installations.
 
-When deploying a [framework-dependent deployment](index.md#framework-dependent-deployment) app, make sure that the target environment has the .NET SDK installed. If the app is deployed to an environment that doesn't include ASP.NET Core, you can opt out of the implicit store by specifying  **\<PublishWithAspNetCoreTargetManifest>** set to `false` in the project file as in the following example:
+When deploying a [framework-dependent deployment](index.md#framework-dependent-deployment) app, make sure that the target environment has the .NET SDK installed. If the app is deployed to an environment that doesn't include ASP.NET Core, you can opt out of the implicit store by specifying  `<PublishWithAspNetCoreTargetManifest>` set to `false` in the project file as in the following example:
 
 ```xml
 <PropertyGroup>
@@ -135,7 +135,7 @@ When deploying a [framework-dependent deployment](index.md#framework-dependent-d
 ```
 
 > [!NOTE]
-> For [self-contained deployment](index.md#self-contained-deployment) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, **\<PublishWithAspNetCoreTargetManifest>** cannot be set to `true` for an self-contained app.
+> For [self-contained deployment](index.md#self-contained-deployment) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, `<PublishWithAspNetCoreTargetManifest>` cannot be set to `true` for an self-contained app.
 
 ## See also
 

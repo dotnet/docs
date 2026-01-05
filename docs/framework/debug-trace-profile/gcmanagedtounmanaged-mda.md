@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "managed to unmanaged garbage collection"
   - "managed debugging assistants (MDAs), garbage collection"
   - "threading [.NET Framework], managed debugging assistants"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
 ---
 # gcManagedToUnmanaged MDA

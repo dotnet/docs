@@ -29,15 +29,15 @@ To create a lambda expression, you specify input parameters (if any) on the left
 
 Any lambda expression can be converted to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The types of its parameters and return value define the delegate type to which a lambda expression can be converted. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/Introduction.cs" id="SnippetDelegate":::
+:::code language="csharp" source="snippets/lambda-expressions/Introduction.cs" id="SnippetDelegate":::
 
 Expression lambdas can also be converted to the [expression tree](../../advanced-topics/expression-trees/index.md) types, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/Introduction.cs" id="SnippetExpressionTree":::
+:::code language="csharp" source="snippets/lambda-expressions/Introduction.cs" id="SnippetExpressionTree":::
 
 You use lambda expressions in any code that requires instances of delegate types or expression trees. One example is the argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You can also use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/Introduction.cs" id="SnippetArgument":::
+:::code language="csharp" source="snippets/lambda-expressions/Introduction.cs" id="SnippetArgument":::
 
 When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). In both cases, you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
 
@@ -61,7 +61,7 @@ A statement lambda resembles an expression lambda except that its statements are
 
 The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatementLambda":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatementLambda":::
 
 You can't use statement lambdas to create expression trees.
 
@@ -170,11 +170,11 @@ The C# language provides built-in support for [tuples](../builtin-types/value-tu
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with three components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with three components that contains the result of the multiplications.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasAndTuples.cs" id="SnippetWithoutComponentName":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasAndTuples.cs" id="SnippetWithoutComponentName":::
 
 Ordinarily, the fields of a tuple are named `Item1`, `Item2`, and so on. You can, however, define a tuple with named components, as the following example does.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasAndTuples.cs" id="SnippetWithComponentName":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasAndTuples.cs" id="SnippetWithComponentName":::
 
 For more information about C# tuples, see [Tuple types](../../language-reference/builtin-types/value-tuples.md).
 
@@ -188,27 +188,27 @@ public delegate TResult Func<in T, out TResult>(T arg)
 
 The delegate can be instantiated as a `Func<int, bool>` instance where `int` is an input parameter and `bool` is the return value. The return value is always specified in the last type parameter. For example, `Func<int, string, bool>` defines a delegate with two input parameters, `int` and `string`, and a return type of `bool`. The following `Func` delegate, when invoked, returns Boolean value that indicates whether the input parameter is equal to five:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetFunc":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetFunc":::
 
 You can also supply a lambda expression when the argument type is an <xref:System.Linq.Expressions.Expression%601>, for example in the standard query operators that are defined in the <xref:System.Linq.Queryable> type. When you specify an <xref:System.Linq.Expressions.Expression%601> argument, the lambda is compiled to an expression tree.
 
 The following example uses the <xref:System.Linq.Enumerable.Count%2A> standard query operator:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetCount":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetCount":::
 
 The compiler can infer the type of the input parameter, or you can also specify it explicitly. This particular lambda expression counts those integers (`n`) which when divided by two have a remainder of 1.
 
 The following example produces a sequence that contains all elements in the `numbers` array that precede the 9, because that's the first number in the sequence that doesn't meet the condition:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetTakeWhile":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetTakeWhile":::
 
 The following example specifies multiple input parameters by enclosing them in parentheses. The method returns all the elements in the `numbers` array until it finds a number whose value is less than its ordinal position in the array:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetTakeWhileWithIndex":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetTakeWhileWithIndex":::
 
 You don't use lambda expressions directly in [query expressions](../keywords/query-keywords.md), but you can use them in method calls within query expressions, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="Query":::
+:::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="Query":::
 
 ## Type inference in lambda expressions
 

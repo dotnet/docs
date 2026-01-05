@@ -26,7 +26,7 @@ For more information about the `dotnet workload config` command, see [.NET SDK w
 
 ## Options
 
-  [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--update-mode [<workload-set>|<manifests>]`**
 

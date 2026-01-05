@@ -37,4 +37,4 @@ Provides a conceptual overview of assemblies.
 Provides a conceptual overview of application domains.
 
 [Reflection Overview](../../fundamentals/reflection/reflection.md)\
-Describes how to use the **Reflection** class to obtain information about an assembly.
+Describes how to use the `Reflection` class to obtain information about an assembly.

@@ -32,7 +32,7 @@ For example, if you install the template package using `dotnet new --install` in
 Starting with .NET SDK 6.0.100, installed template packages are available in later .NET SDK versions installed on your machine. A template package installed in .NET SDK 6.0.100 will also be available in .NET SDK 6.0.101, .NET SDK 6.0.200, and so on. However, these template packages won't be available in .NET SDK versions prior to .NET SDK 6.0.100. To use a template package installed in .NET SDK 6.0.100 or later in earlier .NET SDK versions, you need to install it using `dotnet new install` in that .NET SDK version.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of old syntax:
 >
@@ -70,15 +70,11 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
   Allows installing template packages from the specified sources even if they would override a template package from another source. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](includes/cli-help.md)]
 
-  Prints out help for the install command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 

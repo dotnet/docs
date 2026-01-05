@@ -18,7 +18,7 @@ The `$` character identifies a string literal as an _interpolated string_. An in
 
 String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than [string composite formatting](../../../standard/base-types/composite-formatting.md). The following example uses both features to produce the same output:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="CompareWithCompositeFormatting":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="CompareWithCompositeFormatting":::
 
 You can use an interpolated string to initialize a [constant](../keywords/const.md) string. You can do that only if all interpolation expressions within the interpolated string are constant strings as well.
 
@@ -42,7 +42,7 @@ Elements in square brackets are optional. The following table describes each ele
 
 The following example uses optional formatting components described in the preceding table:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
 
 You can use new-lines within an interpolation expression to make the expression's code more readable. The following example shows how new-lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
 
@@ -70,7 +70,7 @@ The colon (":") has special meaning in an interpolation expression item. To use 
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="BraceAndConditional":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="BraceAndConditional":::
 
 An interpolated [verbatim](verbatim.md) string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
@@ -90,7 +90,7 @@ For more information about custom formatting, see the [Custom formatting with IC
 
 ## Other resources
 
-If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) interactive tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
+If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 
 ## Compilation of interpolated strings
 

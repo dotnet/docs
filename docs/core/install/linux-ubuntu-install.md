@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 12/18/2025
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -11,8 +11,6 @@ zone_pivot_groups: ubuntu-install-set-one
 # Install .NET SDK or .NET Runtime on Ubuntu
 
 This article discusses how to install .NET on Ubuntu.
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -32,13 +30,11 @@ The following versions of .NET are supported or available for Ubuntu 25.10:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 10.0, 9.0, 8.0          | 9.0, 8.0                             | None                                                                                                |None                                                                                         |
+| 10.0, 9.0, 8.0          | 10.0, 9.0, 8.0                       | None                                                                                                |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
 
@@ -84,13 +80,11 @@ The following versions of .NET are supported or available for Ubuntu 25.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 10.0, 9.0, 8.0          | 9.0, 8.0                             | None                                                                                                |None                                                                                         |
+| 10.0, 9.0, 8.0          | 10.0, 9.0, 8.0                       | None                                                                                                |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
 
@@ -136,15 +130,11 @@ The following versions of .NET are supported or available for Ubuntu 24.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 10.0, 9.0, 8.0          | 8.0                                  | 9.0, 7.0, 6.0                                                                                       |None                                                                                         |
+| 10.0, 9.0, 8.0          | 10.0, 8.0                            | 9.0, 7.0, 6.0                                                                                       |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
-[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
 
@@ -192,15 +182,13 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 10.0, 9.0, 8.0          | 8.0, 7.0, 6.0                        | 9.0                                                                                                      | 8.0, 7.0, 6.0, 3.1                |
+| 10.0, 9.0, 8.0          | 8.0, 7.0, 6.0                        | 10.0, 9.0                                                                                                | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
 

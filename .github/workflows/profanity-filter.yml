@@ -19,13 +19,13 @@ jobs:
 
     steps:
     - name: Harden Runner
-      uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+      uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
       with:
         egress-policy: audit
 
     - name: Profanity filter
       if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'github-actions[bot]'  }}
-      uses: IEvangelist/profanity-filter@221fd3e2de42e4aa8acc56d0739b1134065a54be # main
+      uses: IEvangelist/profanity-filter@7d6e0c79ee3d33ae09b5ed0c6e2fa04b9c512e08 # main
       id: profanity-filter
       with:
         token: ${{ secrets.GITHUB_TOKEN }}

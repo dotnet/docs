@@ -9,6 +9,8 @@ items:
         href: ../../core/sdk.md
       - name: Environment variables
         href: ../../core/tools/dotnet-environment-variables.md
+      - name: File-based apps
+        href: ../../core/sdk/file-based-apps.md
       - name: dotnet-install scripts
         href: ../../core/tools/dotnet-install-script.md
       - name: global.json overview
@@ -194,6 +196,8 @@ items:
                 href: ../../core/tools/dotnet-package-update.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet project convert
+            href: ../../core/tools/dotnet-project-convert.md
           - name: dotnet reference add/list/remove
             items:
               - name: dotnet reference add
@@ -265,7 +269,7 @@ items:
                 href: ../../core/tools/dotnet-workload-update.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md
-      - name: Enable Tab completion
+      - name: Enable tab completion
         href: ../../core/tools/enable-tab-autocomplete.md
       - name: Develop libraries with the CLI
         href: ../../core/tutorials/libraries.md
@@ -360,9 +364,6 @@ items:
       - name: WCF service XML serializer
         displayName: dotnet-svcutil.xmlserializer
         href: ../../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-      - name: XML serializer generator
-        displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
-        href: ../../core/additional-tools/xml-serializer-generator.md
   - name: Diagnostics and instrumentation
     items:
       - name: Overview
@@ -4177,6 +4178,8 @@ items:
     items:
       - name: EXTOBS0001
         href: ../../fundamentals/syslib-diagnostics/extobs0001.md
+      - name: EXTOBS0002
+        href: ../../fundamentals/syslib-diagnostics/extobs0002.md
   - name: API compatibility
     items:
       - name: Overview

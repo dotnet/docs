@@ -139,7 +139,7 @@ In this step, you actually execute the query. The query expressions you created 
 2. Press F5 to debug the application.
 
     > [!NOTE]
-    > If your application generates a run-time error, see the Troubleshooting section of [Learning by Walkthroughs](learning-by-walkthroughs.md).
+    > If your application generates a runtime error, see the Troubleshooting section of [Learning by Walkthroughs](learning-by-walkthroughs.md).
 
      The message box displays a list of six customers. The Console window displays the generated SQL code.
 

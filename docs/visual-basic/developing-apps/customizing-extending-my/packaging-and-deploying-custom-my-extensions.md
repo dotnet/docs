@@ -59,7 +59,7 @@ The CustomData file contains a <`VBMyExtensionTemplate>` element that has attrib
 |`Version`|Required. A version number for the item template.|
 |`AssemblyFullName`|Optional. An assembly name. When a reference to this assembly is added to the project, the user will be prompted to add the `My` extension from this item template.|
 
-### Add the \<CustomDataSignature> element to the .vstemplate file
+### Add the `<CustomDataSignature>` element to the .vstemplate file
 
 To identify your Visual Studio item template as a `My` namespace extension, you must also modify the .vstemplate file for your item template. You must add a `<CustomDataSignature>` element to the `<TemplateData>` element. The `<CustomDataSignature>` element must contain the text `Microsoft.VisualBasic.MyExtension`, as shown in the following example.
 

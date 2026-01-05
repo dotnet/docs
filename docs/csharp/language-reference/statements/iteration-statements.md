@@ -28,7 +28,7 @@ At any point within the body of an iteration statement, you can break out of the
 
 The `for` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. The following example shows the `for` statement that executes its body while an integer counter is less than three:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForStatement.cs" id="TypicalExample":::
+:::code language="csharp" source="snippets/iteration-statements/ForStatement.cs" id="TypicalExample":::
 
 The preceding example shows the elements of the `for` statement:
 
@@ -69,7 +69,7 @@ The iterator section can contain zero or more of the following statement express
 
 If you don't declare a loop variable in the initializer section, you can use zero or more of the expressions from the preceding list in the initializer section as well. The following example shows several less common usages of the initializer and iterator sections: assigning a value to an external variable in the initializer section, invoking a method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForStatement.cs" id="MultipleExpressions":::
+:::code language="csharp" source="snippets/iteration-statements/ForStatement.cs" id="MultipleExpressions":::
 
 All the sections of the `for` statement are optional. For example, the following code defines the infinite `for` loop:
 
@@ -79,11 +79,11 @@ All the sections of the `for` statement are optional. For example, the following
 
 The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForeachStatement.cs" id="WithIEnumerable":::
+:::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithIEnumerable":::
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is `bool`.
 
 The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
@@ -98,13 +98,13 @@ If the source collection of the `foreach` statement is empty, the body of the `f
 
 ### await foreach
 
-You can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
+You can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop can be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="AwaitForeach" :::
 
 You can also use the `await foreach` statement with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetAsyncEnumerator` method. That method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetAsyncEnumerator` method. That method can be an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task%601), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
 
 By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
@@ -118,8 +118,8 @@ foreach (var item in collection) { }
 ```
 
 > [!NOTE]
-> Type of `var` can be inferred by the compiler as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
-> For more information see [Implicitly-typed local variables](./declarations.md#implicitly-typed-local-variables).
+> The type of a `var` declaration can be inferred by the compiler as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
+> For more information, see [Implicitly-typed local variables](./declarations.md#implicitly-typed-local-variables).
 
 You can also explicitly specify the type of an iteration variable, as the following code shows:
 
@@ -128,7 +128,7 @@ IEnumerable<T> collection = new T[5];
 foreach (V item in collection) { }
 ```
 
-In the preceding form, type `T` of a collection element must be implicitly or explicitly convertible to type `V` of an iteration variable. If an explicit conversion from `T` to `V` fails at run time, the `foreach` statement throws an <xref:System.InvalidCastException>. For example, if `T` is a non-sealed class type, `V` can be any interface type, even the one that `T` doesn't implement. At run time, the type of a collection element may be the one that derives from `T` and actually implements `V`. If that's not the case, an <xref:System.InvalidCastException> is thrown.
+In the preceding form, type `T` of a collection element must be implicitly or explicitly convertible to type `V` of an iteration variable. If an explicit conversion from `T` to `V` fails at run time, the `foreach` statement throws an <xref:System.InvalidCastException>. For example, if `T` is a non-sealed class type, `V` can be any interface type, even the one that `T` doesn't implement. At run time, the type of a collection element can be the one that derives from `T` and actually implements `V`. If that's not the case, an <xref:System.InvalidCastException> is thrown.
 
 ## The `do` statement
 
@@ -136,7 +136,7 @@ The `do` statement executes a statement or a block of statements while a specifi
 
 The following example shows the usage of the `do` statement:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/DoStatement.cs" id="Example":::
+:::code language="csharp" source="snippets/iteration-statements/DoStatement.cs" id="Example":::
 
 ## The `while` statement
 
@@ -144,7 +144,7 @@ The `while` statement executes a statement or a block of statements while a spec
 
 The following example shows the usage of the `while` statement:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/WhileStatement.cs" id="Example":::
+:::code language="csharp" source="snippets/iteration-statements/WhileStatement.cs" id="Example":::
 
 ## C# language specification
 

@@ -70,7 +70,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 
 > Targeting .NET implementations allows you to call platform-specific APIs that are outside of .NET Standard.
 >
-> Do not drop support for .NET Standard when you do this. Instead, throw from the implementation and offer capability APIs. This way, your library can be used anywhere and supports run-time light-up of features.
+> Do not drop support for .NET Standard when you do this. Instead, throw from the implementation and offer capability APIs. This way, your library can be used anywhere and supports runtime light-up of features.
 
 ```csharp
 public static class GpsLocation

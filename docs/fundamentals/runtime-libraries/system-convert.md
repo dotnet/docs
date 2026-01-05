@@ -15,7 +15,7 @@ The static <xref:System.Convert> class contains methods that are primarily used 
 
 ## Conversions to and from base types
 
-A conversion method exists to convert every base type to every other base type. However, the actual call to a particular conversion method can produce one of five outcomes, depending on the value of the base type at run time and the target base type. These five outcomes are:
+A conversion method exists to convert every base type to every other base type. However, the actual call to a particular conversion method can produce one of five outcomes, depending on the value of the base type at runtime and the target base type. These five outcomes are:
 
 - No conversion. This occurs when an attempt is made to convert from a type to itself (for example, by calling <xref:System.Convert.ToInt32%28System.Int32%29?displayProperty=nameWithType> with an argument of type <xref:System.Int32>). In this case, the method simply returns an instance of the original type.
 
@@ -63,7 +63,7 @@ The <xref:System.Convert> class includes static methods that you can call to con
 
 The following example converts the value of <xref:System.Int16.MaxValue?displayProperty=nameWithType> to a string in all supported numeric formats. It then converts the string value back to a <xref:System.Int16> value.
 
-:::code language="csharp" source="./snippets/System/Convert/Overview/csharp/NonDecimal1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Convert/Overview/csharp/NonDecimal1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Convert/Overview/fsharp/NonDecimal1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Convert/Overview/vb/NonDecimal1.vb" id="Snippet2":::
 
@@ -82,9 +82,9 @@ All the base type conversion methods and the <xref:System.Convert.ChangeType%2A>
 
 The <xref:System.IFormatProvider> parameter can supply culture-specific formatting information to assist the conversion process. However, it is ignored by most of the base type conversion methods. It is used only by the following base type conversion methods. If a `null` <xref:System.IFormatProvider> argument is passed to these methods, the <xref:System.Globalization.CultureInfo> object that represents the current culture is used.
 
-- By methods that convert a value to a numeric type. The <xref:System.IFormatProvider> parameter is used by the overload that has parameters of type <xref:System.String> and <xref:System.IFormatProvider>. It is also used by the overload that has parameters of type <xref:System.Object> and <xref:System.IFormatProvider> if the object's run-time type is a <xref:System.String>.
+- By methods that convert a value to a numeric type. The <xref:System.IFormatProvider> parameter is used by the overload that has parameters of type <xref:System.String> and <xref:System.IFormatProvider>. It is also used by the overload that has parameters of type <xref:System.Object> and <xref:System.IFormatProvider> if the object's runtime type is a <xref:System.String>.
 
-- By methods that convert a value to a date and time. The <xref:System.IFormatProvider> parameter is used by the overload that has parameters of type <xref:System.String> and <xref:System.IFormatProvider>. It is also used by the overload that has parameters of type <xref:System.Object> and <xref:System.IFormatProvider> if the object's run-time type is a <xref:System.String>.
+- By methods that convert a value to a date and time. The <xref:System.IFormatProvider> parameter is used by the overload that has parameters of type <xref:System.String> and <xref:System.IFormatProvider>. It is also used by the overload that has parameters of type <xref:System.Object> and <xref:System.IFormatProvider> if the object's runtime type is a <xref:System.String>.
 
 - By the <xref:System.Convert.ToString%2A?displayProperty=nameWithType> overloads that include an <xref:System.IFormatProvider> parameter and that convert either a numeric value to a string or a <xref:System.DateTime> value to a string.
 

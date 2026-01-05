@@ -175,20 +175,25 @@ namespace Generics
         // </Snippet15>
 
         // <Snippet16>
-        public static TDelegate? TypeSafeCombine<TDelegate>(this TDelegate source, TDelegate target)
-            where TDelegate : System.Delegate
-            => Delegate.Combine(source, target) as TDelegate;
+        extension<TDelegate>(TDelegate source) where TDelegate : System.Delegate
+        {
+            public TDelegate? TypeSafeCombine(TDelegate target)
+                => Delegate.Combine(source, target) as TDelegate;
+        }
         // </Snippet16>
 
         // <Snippet18>
-        public static Dictionary<int, string> EnumNamedValues<T>() where T : System.Enum
+        extension<T>(T) where T : System.Enum
         {
-            var result = new Dictionary<int, string>();
-            var values = Enum.GetValues(typeof(T));
+            public static Dictionary<int, string> EnumNamedValues()
+            {
+                var result = new Dictionary<int, string>();
+                var values = Enum.GetValues(typeof(T));
 
-            foreach (int item in values)
-                result.Add(item, Enum.GetName(typeof(T), item)!);
-            return result;
+                foreach (int item in values)
+                    result.Add(item, Enum.GetName(typeof(T), item)!);
+                return result;
+            }
         }
         // </Snippet18>
     }

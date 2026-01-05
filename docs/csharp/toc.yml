@@ -558,8 +558,6 @@ items:
         href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
       - name: "How to use implicitly typed local variables and arrays in a query expression"
         href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
-      - name: Extension Methods
-        href: programming-guide/classes-and-structs/extension-methods.md
       - name: "How to implement and call a custom extension method"
         href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
       - name: "How to create a new method for an enumeration"
@@ -580,6 +578,8 @@ items:
         href: programming-guide/classes-and-structs/static-constructors.md
       - name: "How to write a copy constructor"
         href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
+    - name: Extension members
+      href: programming-guide/classes-and-structs/extension-methods.md
     - name: Finalizers
       href: programming-guide/classes-and-structs/finalizers.md
     - name: Object and Collection Initializers

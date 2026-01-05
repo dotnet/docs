@@ -1,6 +1,6 @@
 ---
 title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
-description: An walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
+description: A walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
 ms.date: 6/14/2023
 ms.topic: article
 ---
@@ -30,7 +30,7 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_SendGreeting":::
 
 > [!NOTE]
-> The API definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
+> The API definition doesn't use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
 
 ## 4. Reference the OpenTelemetry packages
 
@@ -39,7 +39,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 ```dotnetcli
 dotnet add package OpenTelemetry.Exporter.Console
 dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
-dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore
+dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 dotnet add package OpenTelemetry.Exporter.Zipkin
 dotnet add package OpenTelemetry.Extensions.Hosting
 dotnet add package OpenTelemetry.Instrumentation.AspNetCore
@@ -64,17 +64,17 @@ Run the project and then access the API with the browser or curl.
 curl -k http://localhost:7275
 ```
 
-Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`.
+Each time you request the page, it increments the count for the number of greetings that have been made. You can access the metrics endpoint using the same base URL, with the path `/metrics`.
 
 ### 6.1 Log output
 
 The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
 
-There are a couple of options for how logs can be egressed from .NET:
+There are a few options for how logs can be egressed from .NET:
 
 - `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
-- Using logging libraries that will integrate with ILogger, these include [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/).
-- Using logging providers for OTel such as OTLP or the Azure Monitor exporter shown further below.
+- Using logging libraries that integrate with ILogger. These libraries include [Serilog](https://serilog.net/) and [NLog](https://nlog-project.org/).
+- Using logging providers for OTel, such as OTLP, or the Azure Monitor exporter shown later.
 
 ### 6.2 Access the metrics
 
@@ -148,7 +148,7 @@ Resource associated with Activity:
     telemetry.sdk.version: 1.5.0
 ```
 
-The first is the inner custom activity you created. The second is created by ASP.NET for the request and includes tags for the HTTP request properties. You will see that both have the same `TraceId`, which identifies a single transaction and in a distributed system can be used to correlate the traces from each service involved in a transaction. The IDs are transmitted as HTTP headers. ASP.NET Core assigns a `TraceId` if none is present when it receives a request. `HttpClient` includes the headers by default on outbound requests. Each activity has a `SpanId`, which is the combination of `TraceId` and `SpanId` that uniquely identify each activity. The `Greeter` activity is parented to the HTTP activity through its `ParentSpanId`, which maps to the `SpanId` of the HTTP activity.
+The first is the inner custom activity you created. The second is created by ASP.NET for the request and includes tags for the HTTP request properties. You will see that both have the same `TraceId`, which identifies a single transaction. In a distributed system, the trace ID can be used to correlate the traces from each service involved in a transaction. The IDs are transmitted as HTTP headers. ASP.NET Core assigns a `TraceId` if none is present when it receives a request. `HttpClient` includes the headers by default on outbound requests. Each activity has a `SpanId`, which is the combination of `TraceId` and `SpanId` that uniquely identify each activity. The `Greeter` activity is parented to the HTTP activity through its `ParentSpanId`, which maps to the `SpanId` of the HTTP activity.
 
 In a later stage, you'll feed this data into Jaeger to visualize the distributed traces.
 
@@ -156,7 +156,7 @@ In a later stage, you'll feed this data into Jaeger to visualize the distributed
 
 Prometheus is a metrics collection, aggregation, and time-series database system. You configure it with the metric endpoints for each service and it periodically scrapes the values and stores them in its time-series database. You can then analyze and process them as needed.
 
-The metrics data that's exposed in Prometheus format is a point-in-time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will report the current values. While current values are interesting, they become more valuable when compared to historical values to see trends and detect if values are anomalous. Commonly, services have usage spikes based on the time of day or world events, such as a holiday shopping spree. By comparing the values against historical trends, you can detect if they are abnormal, or if a metric is slowly getting worse over time.
+The metrics data that's exposed in Prometheus format is a point-in-time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it reports the current values. While current values are interesting, they become more valuable when compared to historical values to see trends and detect if values are anomalous. Commonly, services have usage spikes based on the time of day or world events, such as a holiday shopping spree. By comparing the values against historical trends, you can detect if they're abnormal, or if a metric is slowly getting worse over time.
 
 The process doesn't store any history of these metric snapshots. Adding that capability to the process could be resource intensive. Also, in a distributed system you commonly have multiple instances of each node, so you want to be able to collect the metrics from all of them and then aggregate and compare with their historical values.
 
@@ -164,7 +164,7 @@ The process doesn't store any history of these metric snapshots. Adding that cap
 
 Download Prometheus for your platform from [https://prometheus.io/download/](https://prometheus.io/download/) and extract the contents of the download.
 
-Look at the top of the output of your running server to get the port number for the **http** endpoint. For example:
+Look at the top of the output of your running server to get the port number for the HTTP endpoint. For example:
 
 ```dotnetcli
 info: Microsoft.Hosting.Lifetime[14]
@@ -196,7 +196,7 @@ Start Prometheus, and look in the output for the port it's running on, typically
 ts=2023-06-16T05:29:02.789Z caller=web.go:562 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
 ```
 
-Open this URL in your browser. In the Prometheus UI you should now be able to query for your metrics. Use the highlighted button in the following image to open the metrics explorer, which shows all the available metrics.
+Open this URL in your browser. In the Prometheus UI, you should now be able to query for your metrics. Use the highlighted button in the following image to open the metrics explorer, which shows all the available metrics.
 
 [![Prometheus Metrics Explorer](./media/prometheus-metrics-explorer.thumb.png)](./media/prometheus-metrics-explorer.png#lightbox)
 
@@ -208,19 +208,17 @@ Select the `greetings_count` metric to see a graph of values.
 
 Grafana is a dashboarding product that can create dashboards and alerts based on Prometheus or other data sources.
 
-Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open `http://localhost:3000` in your browser. You will need to log in; the default username and password are both `admin`.
+Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open `http://localhost:3000` in your browser. You'll need to log in; the default username and password are both `admin`.
 
-From the hamburger menu choose connections, and then enter the text `prometheus` to select your endpoint type. Select **Create a Prometheus data source** to add a new data source.
+From the hamburger menu, choose connections, and then enter the text `prometheus` to select your endpoint type. Select **Create a Prometheus data source** to add a new data source.
 
 [![Grafana connection to prometheus](./media/grafana-connections.thumb.png)](./media/grafana-connections.png#lightbox)
 
-You need to set the following properties:
-
-- Prometheus server URL: `http://localhost:9090/` changing the port as applicable
+Set the Prometheus server URL to `http://localhost:9090/`, changing the port as applicable.
 
 Select **Save & Test** to verify the configuration.
 
-Once you get a success message, you can configure a dashboard. Click the **building a dashboard** link shown in the popup for the success message.
+Once you get a success message, you can configure a dashboard. Select the **building a dashboard** link shown in the popup for the success message.
 
 Select **Add a Visualization**, and then choose the Prometheus data source you just added as the data source.
 
@@ -287,15 +285,15 @@ In a distributed system, you want to send traces from all processes to the same 
 
 You can make your app a little more interesting by having it make HTTP calls to itself.
 
-- Add an `HttpClient` factory to the application
+- Add an `HttpClient` factory to the application:
 
    :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_HttpClientFactory":::
 
-- Add a new endpoint for making nested greeting calls
+- Add a new endpoint for making nested greeting calls:
 
    :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_MapNested":::
 
-- Implement the endpoint so that it makes HTTP calls that can also be traced. In this case, it calls back to itself in an artificial loop (really only applicable to demo scenarios).
+- Implement the endpoint so that it makes HTTP calls that can also be traced. In this case, it calls back to itself in an artificial loop (really only applicable to demo scenarios):
 
    :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_SendNestedGreeting":::
 

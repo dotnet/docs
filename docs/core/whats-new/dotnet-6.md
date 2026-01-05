@@ -178,7 +178,7 @@ W^X is available all operating systems with .NET 6 but only enabled by default o
 
 ## IL trimming
 
-Trimming of self-contained deployments is improved. In .NET 5, only unused assemblies were trimmed. .NET 6 adds trimming of unused types and members too. In addition, trim warnings, which alert you to places where trimming may remove code that's used at run time, are now *enabled* by default. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md).
+Trimming of self-contained deployments is improved. In .NET 5, only unused assemblies were trimmed. .NET 6 adds trimming of unused types and members too. In addition, trim warnings, which alert you to places where trimming may remove code that's used at runtime, are now *enabled* by default. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md).
 
 ## Code analysis
 
@@ -239,7 +239,7 @@ Several extensions namespaces have improvements in .NET 6, as the following tabl
 | - | - |
 | <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> | <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope%2A> lets you safely use a `using` statement for a service provider that registers an <xref:System.IAsyncDisposable> service. |
 | <xref:Microsoft.Extensions.Hosting?displayProperty=fullName> | New <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureHostOptions%2A> methods simplify application setup. |
-| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | <xref:Microsoft.Extensions.Logging?displayProperty=fullName> has a new source generator for performant logging APIs. The source generator is triggered if you add the new <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to a `partial` logging method. At compile time, the generator generates the implementation of the `partial` method, which is typically faster at run time than existing logging solutions. For more information, see [Compile-time logging source generation](../extensions/logger-message-generator.md). |
+| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | <xref:Microsoft.Extensions.Logging?displayProperty=fullName> has a new source generator for performant logging APIs. The source generator is triggered if you add the new <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to a `partial` logging method. At compile time, the generator generates the implementation of the `partial` method, which is typically faster at runtime than existing logging solutions. For more information, see [Compile-time logging source generation](../extensions/logger-message-generator.md). |
 
 ## New LINQ APIs
 

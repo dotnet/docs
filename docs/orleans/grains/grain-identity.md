@@ -2,7 +2,7 @@
 title: Grain identity
 description: Learn about grain identities in .NET Orleans.
 ms.date: 03/31/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Grain identity

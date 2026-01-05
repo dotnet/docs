@@ -21,9 +21,7 @@ f1_keywords:
   - "#pragma checksum"
   - "defaultline_CSharpKeyword"
   - "#!"
-  - "#:sdk"
-  - "#:property"
-  - "#:package"
+  - "#:"
 helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
@@ -62,69 +60,9 @@ Console.WriteLine("Hello");
 
 The preceding code snippet informs a Unix shell to execute the file using `dotnet run`. The `/usr/bin/env` command locates the `dotnet` executable in your PATH, making this approach portable across different Unix and macOS distributions. The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
 
-The `#:` directives that are used in file-based apps include:
-
-- `#:sdk`:
-
-  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted (i.e. if specified in global.json or included in .NET SDK). For example:
-
-  ```csharp
-  #:sdk Microsoft.NET.Sdk.Web
-  #:sdk Aspire.AppHost.Sdk@9.4.1
-  ```
-
-  The two preceding preprocessors is translated into:
-
-  ```xml
-  <Project Sdk="Microsoft.NET.Sdk.Web" />
-      <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.1" />
-  ```
-
-- `#:property`:
-
-  Instances of `#:property` are translated into property elements in a `<PropertyGroup>`. A token of the form `Name=value` must follow the `property` token. The following example directives are valid `property` tokens:
-
-  ```csharp
-  #:property TargetFramework=net11.0
-  #:property LangVersion=preview
-  ```
-
-  The preceding two properties are translated into:
-
-  ```xml
-  <TargetFramework>net11.0</TargetFramework>
-  <LangVersion>preview</LangVersion>
-  ```
-
-- `#:package`:
-
-  Instances of `#:package` are translated into `PackageReference` elements to include NuGet packages with the specified version to your file. For example:
-
-  ```csharp
-  #:package System.CommandLine@2.0.0-*
-  ```
-
-  The preceding preprocessor token is translated into:
-
-  ```xml
-  <PackageReference Include="System.CommandLine" Version="2.0.0-*">
-  ```
-
-- `#:project`:
-
-  Instances of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
-
-  ```csharp
-  #:project ../Path/To.Example
-  ```
-
-  The preceding preprocessor token is translated into:
-
-  ```xml
-  <ProjectReference Include="../Path/To.Example/To.Example.csproj" />
-  ```
+The `#:` directives that are used in file-based apps are described in the [file based apps reference](../../core/sdk/file-based-apps.md).
   
-Tools can add new tokens following the `#:` convention.
+Other tools can add new tokens following the `#:` convention.
 
 ## Nullable context
 

@@ -1,7 +1,7 @@
 ---
 title: Develop .NET apps with AI features
 description: Learn how you can build .NET applications that include AI features.
-ms.date: 04/09/2025
+ms.date: 12/10/2025
 ms.topic: overview
 ---
 

@@ -13,7 +13,7 @@ helpviewer_keywords:
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
 
 > [!NOTE]
-> This article discusses the use of `this` with class instances. For more information about its use in extension methods, see the [`extension`](./extension.md) keyword.
+> This article discusses the use of `this` to refer to the receiver instance in the current member. For more information about its use in extension methods, see the [`extension`](./extension.md) keyword.
 
 The following are common uses of `this`:
 

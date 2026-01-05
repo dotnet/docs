@@ -33,7 +33,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 10. A
 | [CA1416](quality-rules/ca1416.md) | Interoperability | Warning  | .NET 5        | Validate platform compatibility |
 | [CA1417](quality-rules/ca1417.md) | Interoperability | Warning  | .NET 5        | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
-| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in runtime exceptions |
 | [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
 | [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
@@ -68,7 +68,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 9. Ad
 | [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | .NET 5 | Validate platform compatibility |
 | [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | .NET 5 | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
-| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in runtime exceptions |
 | [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
 | [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
@@ -102,7 +102,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 8. Ad
 | [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | .NET 5 | Validate platform compatibility |
 | [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | .NET 5 | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
-| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in runtime exceptions |
 | [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
 | [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
@@ -250,7 +250,7 @@ If your project uses the legacy project file format, that is, it doesn't referen
 
 ## Third-party analyzers
 
-In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
+In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [Meziantou.Analyzer](https://www.nuget.org/packages/Meziantou.Analyzer/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
 ## See also
 

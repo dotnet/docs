@@ -20,7 +20,7 @@ This sample demonstrates which methods must be implemented in a **PinPad** Servi
 
 4. Create a Service Object class derived from <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase>.
 
-5. Add the **ServiceObject** attribute to your Service Object class, using the **DeviceType.PinPad** value as your device type.
+5. Add the `ServiceObject` attribute to your Service Object class, using the **DeviceType.PinPad** value as your device type.
 
 ## Example
 

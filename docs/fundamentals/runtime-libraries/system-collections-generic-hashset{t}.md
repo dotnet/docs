@@ -29,7 +29,7 @@ A <xref:System.Collections.Generic.HashSet%601> collection is not sorted and can
 
 In addition to the listed set operations, the <xref:System.Collections.Generic.HashSet%601> class also provides methods for determining set equality, overlap of sets, and whether a set is a subset or superset of another set.
 
-**.NET Framework only:** For very large <xref:System.Collections.Generic.HashSet%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.
+**.NET Framework only:** For very large <xref:System.Collections.Generic.HashSet%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the runtime environment.
 
 The <xref:System.Collections.Generic.HashSet%601> class implements the <xref:System.Collections.Generic.ISet%601> interface.
 

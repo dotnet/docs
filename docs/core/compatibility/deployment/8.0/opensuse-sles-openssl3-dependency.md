@@ -37,9 +37,9 @@ Most users don't need to take any action. The package manager automatically inst
 
 However, if your system has both OpenSSL 1.x and OpenSSL 3.x installed, and this change causes issues with other software on your system, you might need to:
 
-- Adjust your system configuration to accommodate both versions
-- Update other software that depends on OpenSSL 1.x to use OpenSSL 3.x
-- Stop installing .NET via packages and use an alternative installation method, such as manual installation from tarballs
+- Adjust your system configuration to accommodate both versions.
+- Update other software that depends on OpenSSL 1.x to use OpenSSL 3.x.
+- Stop installing .NET via packages and use an alternative installation method, such as manual installation from tarballs.
 
 If you encounter issues, consult your distribution's documentation for managing multiple OpenSSL versions.
 

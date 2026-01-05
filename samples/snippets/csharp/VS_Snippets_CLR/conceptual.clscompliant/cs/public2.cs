@@ -7,7 +7,6 @@ public class Person
 {
    private UInt16 personAge = 0;
 
-   public Int16 Age
-   { get { return personAge; } }
+   public Int16 Age => (Int16)personAge; 
 }
 // </Snippet2>

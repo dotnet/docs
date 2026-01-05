@@ -107,7 +107,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-  This option does not create a memory dump and is not helpful when the test is hanging.
+  This option doesn't create a memory dump and isn't helpful when the test is hanging.
 
 - **`--blame-crash`** (Available since .NET 5.0 SDK)
 
@@ -144,7 +144,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - 5400s, 5400sec, 5400second, 5400seconds
   - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit. and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit, and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
 - [!INCLUDE [configuration](includes/cli-configuration.md)]
 
@@ -164,7 +164,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-e|--environment <NAME="VALUE">`**
 
-  Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
+  Sets the value of an environment variable. Creates the variable if it doesn't exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
 
 - **`-f|--framework <FRAMEWORK>`**
 

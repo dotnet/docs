@@ -54,7 +54,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 > [!NOTE]
 > You can use only one of the following options at a time: `--project`, `--solution`, or `--test-modules`. These options can't be combined.
-> In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
+> In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options aren't relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
@@ -66,7 +66,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--test-modules <EXPRESSION>`**
 
-  Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../../../docs/core/extensions/file-globbing.md).
+  Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../extensions/file-globbing.md).
 
 - **`--root-directory <ROOT_PATH>`**
 
@@ -93,7 +93,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   Short form `-r` available starting in .NET SDK 7.
 
   > [!NOTE]
-  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) isn't supported. Set `RuntimeIdentifier` on an individual project level instead.
 
 - [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
@@ -119,11 +119,11 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--no-launch-profile`**
 
-  Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
+  Don't attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
 
 - **`--no-launch-profile-arguments`**
 
-  Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
+  Don't use arguments specified by `commandLineArgs` in launch profile to run the application.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -134,13 +134,13 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   ```
 
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
-  More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+  More information about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
 - [!INCLUDE [help](includes/cli-help.md)]
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../../../docs/core/testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md).
 
   > [!TIP]
   > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
@@ -202,7 +202,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Microsoft.Testing.Platform](../../../docs/core/testing/microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md)
+- [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with VSTest](dotnet-test-vstest.md)

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UserSecretsId>handle-invalid-tool-input-snippets</UserSecretsId>
@@ -13,6 +13,17 @@
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.4.0-preview.1.25207.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.1" />
+  </ItemGroup>
+
+  <!-- Exclude snippet files from compilation (only Program.cs is compiled) -->
+  <ItemGroup>
+    <Compile Remove="IncludeDetailedErrors.cs" />
+    <Compile Remove="FunctionInvoker.cs" />
+    <Compile Remove="StrictSchema.cs" />
+    <Compile Remove="Combined.cs" />
+    <Content Include="IncludeDetailedErrors.cs;FunctionInvoker.cs;StrictSchema.cs;Combined.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

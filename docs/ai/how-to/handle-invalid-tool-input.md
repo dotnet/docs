@@ -28,7 +28,7 @@ By default, when a function invocation fails, the AI model receives a generic er
 
 When `IncludeDetailedErrors` is set to `true`, the full exception message is added to the chat history if an error occurs during function invocation. This allows the AI model to see what went wrong and potentially self-correct in subsequent attempts.
 
-:::code language="csharp" source="snippets/handle-invalid-tool-input/IncludeDetailedErrors.cs" id="BasicUsage":::
+:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/IncludeDetailedErrors.cs" id="BasicUsage":::
 
 ### Security considerations
 
@@ -46,13 +46,13 @@ For more control over error handling, you can set a custom <xref:Microsoft.Exten
 
 The following example shows how to implement a custom function invoker that catches serialization errors and provides helpful feedback:
 
-:::code language="csharp" source="snippets/handle-invalid-tool-input/FunctionInvoker.cs" id="BasicInvoker":::
+:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="BasicInvoker":::
 
 ### Implement retry logic
 
 You can extend the custom invoker pattern to implement retry logic. This is useful when you want to give the AI model multiple chances to provide valid input:
 
-:::code language="csharp" source="snippets/handle-invalid-tool-input/FunctionInvoker.cs" id="RetryInvoker":::
+:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="RetryInvoker":::
 
 ### Best practices for retry prompts
 
@@ -77,7 +77,7 @@ When using OpenAI models, you can enable strict JSON schema mode to enforce that
 
 Strict mode is enabled using the `Strict` additional property on your function metadata. When enabled, OpenAI models try to ensure their output matches your schema exactly:
 
-:::code language="csharp" source="snippets/handle-invalid-tool-input/StrictSchema.cs" id="StrictMode":::
+:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/StrictSchema.cs" id="StrictMode":::
 
 ### Supported models
 
@@ -101,7 +101,7 @@ While strict mode significantly improves schema adherence, keep these limitation
 
 For robust error handling, combine multiple strategies:
 
-:::code language="csharp" source="snippets/handle-invalid-tool-input/Combined.cs" id="CombinedStrategies":::
+:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/Combined.cs" id="CombinedStrategies":::
 
 ## Next steps
 

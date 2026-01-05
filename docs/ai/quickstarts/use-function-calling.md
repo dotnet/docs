@@ -140,6 +140,7 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 
 ## Next steps
 
+- [Handle invalid tool input from AI models](../how-to/handle-invalid-tool-input.md)
 - [Access data in AI functions](../how-to/access-data-in-functions.md)
 - [Quickstart - Build an AI chat app with .NET](build-chat-app.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

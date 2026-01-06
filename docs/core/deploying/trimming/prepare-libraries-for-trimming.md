@@ -112,7 +112,7 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 ## Target framework requirements
 
-When preparing libraries for trimming, target the latest supported TFM to benefit from the latest analyzer improvements. At a minimum, target `net6.0` or later, which is required for trim analysis warnings.
+When preparing libraries for trimming, target the latest supported TFM. This helps you benefit from the latest analyzer improvements. At a minimum, target `net6.0` or later. This version is required for trim analysis warnings.
 
 If your library also targets frameworks earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net6.0`. This ensures that apps targeting `net6.0` or later get a version of your library that supports trim analysis.
 

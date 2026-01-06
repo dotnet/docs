@@ -39,7 +39,7 @@ The following example shows the incorrect approach that can lead to memory corru
 ```csharp
 // ❌ DON'T: This is dangerous and can corrupt memory
 [StructLayout(LayoutKind.Explicit, Size = 100)]
-class UnsafeBuffer
+struct UnsafeBuffer
 {
     [FieldOffset(0)]
     private byte b;
@@ -59,7 +59,7 @@ Instead, use `InlineArrayAttribute` to create a properly sized buffer:
 
 ```csharp
 // ✔️ DO: Use InlineArrayAttribute for fixed-size buffers
-class SafeBuffer
+struct SafeBuffer
 {
     private Buffer100 buffer;
 

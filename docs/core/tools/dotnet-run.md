@@ -16,12 +16,14 @@ ms.date: 09/29/2025
 ```dotnetcli
 dotnet run [<applicationArguments>]
   [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
-  [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
-  [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
-  [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
-  [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
-  [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+  [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
+  [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
+  [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [-lp|--launch-profile <NAME>] [--no-build] [--no-cache]
+  [--no-dependencies] [--no-launch-profile] [--no-restore] [--os <OS>]
+  [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+  [-sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -111,7 +113,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-- **`--launch-profile <NAME>`**
+- **`-lp|--launch-profile <NAME>`**
 
   The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`, `Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 

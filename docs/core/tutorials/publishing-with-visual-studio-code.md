@@ -108,3 +108,31 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 > [!div class="nextstepaction"]
 > [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md)
+
+## Publish a file-based (single-file) app
+
+The default publishing process creates a framework-dependent deployment, which requires
+the .NET runtime to be installed on the target machine. You can also publish a *file-based*
+app as a single executable that includes the .NET runtime.
+
+To publish a single-file, self-contained app, run the following command:
+
+```dotnetcli
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+
+Replace win-x64 with the appropriate runtime identifier (RID) for your target platform,
+such as linux-x64 or osx-arm64.
+
+Inspect the file-based output
+
+After publishing, the output is located in:
+bin/Release/net8.0/win-x64/publish/
+
+In this folder, you’ll find a single executable file:
+
+HelloWorld.exe (Windows)
+
+HelloWorld (Linux or macOS)
+
+This executable contains the application, its dependencies, and the .NET runtime. You can
+copy this file to another machine and run it without installing .NET.

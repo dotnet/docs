@@ -22,7 +22,7 @@ dotnet run [<applicationArguments>]
   [-lp|--launch-profile <NAME>] [--no-build] [--no-cache]
   [--no-dependencies] [--no-launch-profile] [--no-restore] [--os <OS>]
   [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-  [-sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [--sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
   [[--] [application arguments]]
 
 dotnet run -h|--help

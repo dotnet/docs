@@ -52,8 +52,6 @@ public class TestClass
 
 Remove the duplicate attribute and keep only the one that matches your test method's purpose.
 
-For a simple test method:
-
 ```csharp
 [TestClass]
 public class TestClass

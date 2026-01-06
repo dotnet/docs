@@ -12,9 +12,9 @@ class FunctionInvoker
         string? key = config["OpenAIKey"];
 
         // <BasicInvoker>
-        IChatClient innerClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient();
+        IChatClient chatClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient();
 
-        var functionInvokingClient = new FunctionInvokingChatClient(innerClient)
+        var functionInvokingClient = new FunctionInvokingChatClient(chatClient)
         {
             FunctionInvoker = async (context, cancellationToken) =>
             {
@@ -27,12 +27,7 @@ class FunctionInvoker
                 {
                     // Catch JSON serialization errors and provide helpful feedback.
                     return $"Error: Unable to parse the function arguments. {ex.Message}. " +
-                           "Please check the parameter types and try again.";
-                }
-                catch (ArgumentException ex)
-                {
-                    // Catch validation errors and provide specific feedback.
-                    return $"Error: Invalid argument - {ex.Message}";
+                           "Check the parameter types and try again.";
                 }
                 catch (Exception ex)
                 {
@@ -41,6 +36,7 @@ class FunctionInvoker
                 }
             }
         };
+        // </BasicInvoker>
 
         IChatClient client = new ChatClientBuilder(functionInvokingClient).Build();
 
@@ -65,6 +61,5 @@ class FunctionInvoker
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
         Console.WriteLine($"Assistant >>> {response.Text}");
-        // </BasicInvoker>
     }
 }

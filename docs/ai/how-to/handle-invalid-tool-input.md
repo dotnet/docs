@@ -36,7 +36,7 @@ The following example shows how to implement a custom function invoker that catc
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="BasicInvoker":::
 
-By returning descriptive error messages instead of throwing exceptions, you allow the AI model to see what went wrong and try again with corrected input. 
+By returning descriptive error messages instead of throwing exceptions, you allow the AI model to see what went wrong and try again with corrected input.
 
 ### Best practices for error messages
 

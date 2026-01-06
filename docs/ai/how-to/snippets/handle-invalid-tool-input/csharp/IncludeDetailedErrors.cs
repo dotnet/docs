@@ -6,7 +6,6 @@ class IncludeDetailedErrors
 {
     static async Task Main()
     {
-        // <BasicUsage>
         IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<IncludeDetailedErrors>().Build();
         string? model = config["ModelName"];
         string? key = config["OpenAIKey"];
@@ -16,27 +15,27 @@ class IncludeDetailedErrors
             .UseFunctionInvocation()
             .Build();
 
-        // Enable detailed error messages to help the AI model self-correct
-        var functionInvokingClient = client as FunctionInvokingChatClient;
-        if (functionInvokingClient != null)
-        {
-            functionInvokingClient.IncludeDetailedErrors = true;
-        }
+        // <BasicUsage>
+        // Enable detailed error messages to help the AI model self-correct.
+        FunctionInvokingChatClient? functionInvokingClient = client as FunctionInvokingChatClient;
+        functionInvokingClient?.IncludeDetailedErrors = true;
+        // </BasicUsage>
 
         var chatOptions = new ChatOptions
         {
             Tools = [AIFunctionFactory.Create((int temperature, string location) =>
-    {
-        // Validate temperature is in a reasonable range
-        if (temperature < -50 || temperature > 50)
-        {
-            throw new ArgumentOutOfRangeException(nameof(temperature),
-                "Temperature must be between -50 and 50 degrees Celsius.");
-        }
-        return $"The temperature in {location} is {temperature}°C";
-    },
-    "get_temperature",
-    "Gets the current temperature for a location")]
+                {
+                    // Validate temperature is in a reasonable range.
+                    if (temperature < -50 || temperature > 50)
+                    {
+                        throw new ArgumentOutOfRangeException(
+                            nameof(temperature),
+                            "Temperature must be between -50 and 50 degrees Celsius.");
+                    }
+                    return $"The temperature in {location} is {temperature}°C";
+                },
+                "get_temperature",
+                "Gets the current temperature for a location")]
         };
 
         List<ChatMessage> chatHistory = [
@@ -46,6 +45,5 @@ class IncludeDetailedErrors
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
         Console.WriteLine($"Assistant >>> {response.Text}");
-        // </BasicUsage>
     }
 }

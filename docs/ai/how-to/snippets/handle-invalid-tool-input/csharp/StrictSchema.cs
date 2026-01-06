@@ -10,16 +10,14 @@ class StrictSchema
         string? model = config["ModelName"];
         string? key = config["OpenAIKey"];
 
-        // <StrictMode>
-        // Note: Strict JSON schema mode requires OpenAI models that support it.
         // Ensure your model configuration uses a compatible version (e.g., gpt-4o-2024-08-06 or later).
         IChatClient client = new ChatClientBuilder(
             new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
             .UseFunctionInvocation()
             .Build();
 
-        // Create a function and enable strict schema mode for OpenAI
-        var weatherFunction = AIFunctionFactory.Create(
+        // <StrictMode>
+        AIFunction weatherFunction = AIFunctionFactory.Create(
             (string location, int temperature, bool isRaining) =>
             {
                 string weather = isRaining ? "rainy" : "clear";
@@ -29,12 +27,14 @@ class StrictSchema
             {
                 Name = "report_weather",
                 Description = "Reports the weather for a location with temperature and rain status",
-                // Enable strict mode by adding the Strict property
+                // Enable strict mode by adding the Strict property (OpenAI only).
                 AdditionalProperties = new Dictionary<string, object?>
                 {
-            { "Strict", true }
+                    { "Strict", true }
                 }
-            });
+            }
+        );
+        // </StrictMode>
 
         var chatOptions = new ChatOptions
         {
@@ -43,11 +43,10 @@ class StrictSchema
 
         List<ChatMessage> chatHistory = [
             new(ChatRole.System, "You are a weather reporting assistant."),
-    new(ChatRole.User, "What's the weather in Tokyo? It's 22 degrees and not raining.")
+            new(ChatRole.User, "What's the weather in Tokyo? It's 22 degrees and not raining.")
         ];
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
         Console.WriteLine($"Assistant >>> {response.Text}");
-        // </StrictMode>
     }
 }

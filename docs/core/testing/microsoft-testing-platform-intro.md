@@ -227,7 +227,7 @@ The list below described only the platform options. To see the specific options 
 
   Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
 
-- **`--diagnostic-filelogger-synchronouswrite`**
+- **`--diagnostic-synchronous-write`**
 
   Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
 
@@ -235,7 +235,7 @@ The list below described only the platform options. To see the specific options 
 
   The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
 
-- **`--diagnostic-output-fileprefix`**
+- **`--diagnostic-file-prefix`**
 
   The prefix for the log file name. Defaults to `"log_"`.
 

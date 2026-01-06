@@ -370,6 +370,7 @@ The following MSBuild properties are documented in this section:
 - [PublishDocumentationFile](#publishdocumentationfile)
 - [PublishDocumentationFiles](#publishdocumentationfiles)
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
+- [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
@@ -526,6 +527,10 @@ This property is an enablement flag for several other properties that control wh
 ### PublishReferencesDocumentationFiles
 
 When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
+
+### PublishReferencesSymbols
+
+When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 

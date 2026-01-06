@@ -109,9 +109,9 @@ These analyzers help to ensure that a library is compatible with Native AOT.
 
 ### Target framework requirements
 
-When preparing libraries for AOT compatibility, target the latest supported TFM to benefit from the latest analyzer improvements. At minimum, target `net8.0` or later, which is required for AOT analysis warnings.
+When preparing libraries for AOT compatibility, target the latest supported TFM to benefit from the latest analyzer improvements. At a minimum, target `net8.0` or later, which is required for AOT analysis warnings.
 
-If your library also targets frameworks earlier than `net8.0` (such as `netstandard2.0` or `net472`), multi-target to include `net8.0`. This ensures that apps targeting `net8.0` or later get a version of your library that supports AOT analysis.
+If your library also targets frameworks earlier than `net8.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net8.0`. This ensures that apps targeting `net8.0` or later get a version of your library that supports AOT analysis.
 
 Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net8.0` and later:
 

@@ -530,7 +530,7 @@ When this property is `true`, XML documentation files for the project's referenc
 
 ### PublishReferencesSymbols
 
-When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 

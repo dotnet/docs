@@ -26,6 +26,61 @@ Sometimes the default marshalling rules for structures aren't exactly what you n
 
 ❌ AVOID using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
+## Fixed-size buffers and inline arrays
+
+If you need to define a fixed-size buffer in a structure, don't use the <xref:System.Runtime.InteropServices.StructLayoutAttribute.Size?displayProperty=nameWithType> property to allocate extra space. The `Size` property controls the unmanaged layout of the type (the layout used when calling `Marshal.StructureToPtr`) and only affects the managed layout for blittable types. For non-blittable types, the runtime only allocates space based on the actual fields, which can lead to memory corruption if you attempt to use the extra space.
+
+❌ AVOID using `StructLayoutAttribute.Size` to create fixed-size buffers in managed types.
+
+✔️ DO use <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=nameWithType> to define fixed-size buffers in modern .NET (C# 12 and later).
+
+The following example shows the incorrect approach that can lead to memory corruption:
+
+```csharp
+// ❌ DON'T: This is dangerous and can corrupt memory
+[StructLayout(LayoutKind.Explicit, Size = 100)]
+class UnsafeBuffer
+{
+    [FieldOffset(0)]
+    private byte b;
+
+    unsafe void UseBuffer()
+    {
+        fixed (byte* p = &b)
+        {
+            // This treats p as a 100-byte buffer, but only 1 byte is allocated
+            // Writing beyond the first byte corrupts memory
+        }
+    }
+}
+```
+
+Instead, use `InlineArrayAttribute` to create a properly sized buffer:
+
+```csharp
+// ✔️ DO: Use InlineArrayAttribute for fixed-size buffers
+class SafeBuffer
+{
+    private Buffer100 buffer;
+
+    unsafe void UseBuffer()
+    {
+        fixed (byte* p = buffer)
+        {
+            // The buffer is guaranteed to be 100 bytes
+        }
+    }
+}
+
+[InlineArray(100)]
+internal struct Buffer100
+{
+    private byte _element0;
+}
+```
+
+For more information about inline arrays, see the [C# language reference](../../csharp/language-reference/builtin-types/struct.md#inline-arrays).
+
 ## Customizing Boolean field marshalling
 
 Native code has many different Boolean representations. On Windows alone, there are three ways to represent Boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your Boolean values. The .NET runtime provides a way to indicate how to marshal your Boolean field. The following examples show how to marshal .NET `bool` to different native Boolean types.

@@ -48,7 +48,7 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 |<xref:System.Runtime.InteropServices.OutAttribute>|Indicates that the data in a field or parameter must be marshalled from a called object back to its caller.|  
 |<xref:System.Runtime.InteropServices.PreserveSigAttribute>|Suppresses the HRESULT or retval signature transformation that normally takes place during interoperation calls. The attribute affects marshalling as well as type library exporting.<br /><br /> COM interop tools can apply this attribute.|  
 |<xref:System.Runtime.InteropServices.ProgIdAttribute>|Specifies the ProgID of a .NET class. Can be used to attribute classes.|  
-|<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controls the physical layout of the fields of a class.<br /><br /> COM interop tools can apply this attribute.|  
+|<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controls the physical layout of the fields of a class. For information about creating fixed-size buffers, see <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=nameWithType> instead.<br /><br /> COM interop tools can apply this attribute.|  
   
 ## Conversion-Tool Attributes  
 

@@ -68,20 +68,6 @@ public class TestClass
 
 For a data-driven test method:
 
-```csharp
-[TestClass]
-public class TestClass
-{
-    [DataTestMethod]
-    [DataRow(1, 2, 3)]
-    [DataRow(4, 5, 9)]
-    public void TestMethod1(int a, int b, int expected)
-    {
-        Assert.AreEqual(expected, a + b);
-    }
-}
-```
-
 ## When to suppress warnings
 
 Do not suppress warnings from this rule. Having multiple test method attributes creates ambiguous test configuration that should be resolved.

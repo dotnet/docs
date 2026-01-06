@@ -110,9 +110,13 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 * Even if there were no API changes.
 * Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
 
-## Multi-targeting for trimming
+## Target framework requirements
 
-When preparing libraries for trimming, if your library targets any framework earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to `net6.0`. This ensures that apps targeting `net6.0` or above get a version of your library built for `net6.0` or above, which enables the trim analyzers to run during the library build. Also, include the latest .NET version to get the latest analyzer improvements. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and above:
+When preparing libraries for trimming, target the latest supported TFM to benefit from the latest analyzer improvements. At minimum, target `net6.0` or later, which is required for trim analysis warnings.
+
+If your library also targets frameworks earlier than `net6.0` (such as `netstandard2.0` or `net472`), multi-target to include `net6.0`. This ensures that apps targeting `net6.0` or later get a version of your library that supports trim analysis.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and later:
 
 ```xml
 <PropertyGroup>

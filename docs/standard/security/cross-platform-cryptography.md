@@ -6,6 +6,7 @@ ms.subservice: standard-library
 helpviewer_keywords:
   - "cryptography, cross-platform"
   - "encryption, cross-platform"
+ai-usage: ai-assisted
 ---
 # Cross-platform cryptography in .NET
 

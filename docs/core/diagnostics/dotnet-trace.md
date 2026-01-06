@@ -7,7 +7,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✔️ `dotnet-trace` 9.0.625801 and later versions
+**This article applies to:** ✔️ `dotnet-trace` 9.0.661903 and later versions
 
 ## Install
 

@@ -64,8 +64,6 @@ public class TestClass
 }
 ```
 
-For a data-driven test method:
-
 ## When to suppress warnings
 
 Do not suppress warnings from this rule. Having multiple test method attributes creates ambiguous test configuration that should be resolved.

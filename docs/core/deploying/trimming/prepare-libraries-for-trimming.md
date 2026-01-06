@@ -112,7 +112,7 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 ## Multi-targeting for trimming
 
-When preparing libraries for trimming, if your library targets any framework earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to `net6.0`. This ensures that apps targeting `net6.0` or above get a version of your library that supports the trim analyzer. Also, include the latest .NET version so your library is analyzed with the latest analyzer. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and above:
+When preparing libraries for trimming, if your library targets any framework earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to `net6.0`. This ensures that apps targeting `net6.0` or above get a version of your library built for `net6.0` or above, which enables the trim analyzers to run during the library build. Also, include the latest .NET version to get the latest analyzer improvements. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and above:
 
 ```xml
 <PropertyGroup>

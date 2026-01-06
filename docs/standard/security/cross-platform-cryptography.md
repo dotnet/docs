@@ -455,6 +455,33 @@ On Linux, the `LocalMachine\Root` store is an interpretation of the CA bundle in
 
 On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSettings` results for the user trust domain. The `LocalMachine\Root` store is an interpretation of the `SecTrustSettings` results for the admin and system trust domains.
 
+##### Trusted root certificate locations on Linux
+
+On Linux, .NET uses OpenSSL (libssl) to locate trusted root certificates. OpenSSL determines the certificate store location using environment variables and built-in defaults:
+
+* **SSL_CERT_FILE**: Specifies a single file containing one or more trusted CA certificates in PEM format. This is typically a bundle file like `/etc/pki/tls/certs/ca-bundle.crt` or `/etc/ssl/certs/ca-certificates.crt`.
+* **SSL_CERT_DIR**: Specifies a directory containing individual certificate files. Each certificate file should be named with a hash of the certificate's subject (for example, `12345678.0`). This directory typically contains hashed symlinks to certificate files.
+
+If you don't set these environment variables, OpenSSL uses distribution-specific default paths that vary by Linux distribution.
+
+###### Fallback behavior
+
+When the root store directory configured for OpenSSL doesn't contain any certificates, .NET falls back to checking `/etc/ssl/certs`. This fallback ensures compatibility with distributions like SLES (SUSE Linux Enterprise Server) where:
+
+* The directory specified by `SSL_CERT_DIR` might only contain certificates with the `BEGIN TRUSTED CERTIFICATE` format, which .NET doesn't support for root certificates.
+* The `/etc/ssl/certs` directory contains certificates in the standard `BEGIN CERTIFICATE` format.
+
+This fallback only occurs when:
+
+1. The `SSL_CERT_DIR` environment variable isn't explicitly set.
+1. The default certificate directory is empty or doesn't contain any usable certificates.
+
+If your certificates aren't loading correctly, verify that:
+
+* Your certificate files are in PEM format with the `BEGIN CERTIFICATE` marker (not `BEGIN TRUSTED CERTIFICATE`).
+* The `SSL_CERT_DIR` and `SSL_CERT_FILE` environment variables point to the correct locations, if set.
+* The certificate bundle file or directory has the appropriate read permissions.
+
 #### The Intermediate store
 
 | Scenario                                      | Windows | Linux | macOS             | iOS, tvOS, MacCatalyst | Android |

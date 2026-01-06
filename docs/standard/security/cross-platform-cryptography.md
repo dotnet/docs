@@ -76,7 +76,7 @@ The underlying ciphers and chaining are done by the system libraries.
 
 Authenticated encryption (AE) support is provided for AES-CCM, AES-GCM, and ChaCha20Poly1305 via the <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName>, <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, and <xref:System.Security.Cryptography.ChaCha20Poly1305?displayProperty=fullName> classes, respectively.
 
-Since authenticated encryption requires newer platform APIs to support the algorithm, support might not be present on all platforms. To detect at runtime whether the current platform supports the algorithm or not, you can use the `IsSupported` static property on the class for the algorithm.
+Since authenticated encryption requires newer platform APIs to support the algorithm, support might not be present on all platforms. To detect at runtime whether the current platform supports the algorithm, you can use the `IsSupported` static property on the class for the algorithm.
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
@@ -117,6 +117,7 @@ Support for AES-GCM and ChaCha20Poly1305 is available starting in .NET 9 on iOS 
   The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
+
   On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On Apple platforms, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
 
 ### ChaCha20Poly1305 keys, nonces, and tags
@@ -457,12 +458,12 @@ On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSett
 
 ##### Trusted root certificate locations on Linux
 
-On Linux, .NET uses OpenSSL (libssl) to locate trusted root certificates. OpenSSL determines the certificate store location using environment variables (`SSL_CERT_FILE` and `SSL_CERT_DIR`) and distribution-specific default paths. When the root store directory configured for OpenSSL doesn't contain any certificates, .NET falls back to checking `/etc/ssl/certs`. This fallback ensures compatibility with distributions like SUSE Linux Enterprise Server (SLES) where the directory specified by `SSL_CERT_DIR` might only contain certificates with the `BEGIN TRUSTED CERTIFICATE` format, which .NET doesn't support for root certificates.
+On Linux, .NET uses OpenSSL (libssl) to locate trusted root certificates. OpenSSL determines the certificate store location using environment variables (`SSL_CERT_FILE` and `SSL_CERT_DIR`) and distribution-specific default paths. When the root store directory configured for OpenSSL doesn't contain any certificates, .NET falls back to checking `/etc/ssl/certs`. This fallback ensures compatibility with distributions like SUSE Linux Enterprise Server (SLES) where the directory specified by `SSL_CERT_DIR` might only contain certificates with the `BEGIN TRUSTED CERTIFICATE` format, which .NET doesn't support as root certificates.
 
 This fallback only occurs when:
 
 1. The `SSL_CERT_DIR` environment variable isn't explicitly set.
-1. The default certificate directory is empty or doesn't contain any usable certificates.
+1. The default certificate directory contains no usable certificates.
 
 If your certificates aren't loading correctly, verify that:
 

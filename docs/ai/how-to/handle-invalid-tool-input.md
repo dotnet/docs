@@ -7,101 +7,64 @@ ai-usage: ai-assisted
 
 # Handle invalid tool input from AI models
 
-When AI models call functions in your .NET code, they might sometimes provide invalid input that doesn't match the expected schema. This can happen due to serialization errors, missing required parameters, or incorrect data types. The `Microsoft.Extensions.AI` library provides several strategies to handle these scenarios gracefully.
+When AI models call functions in your .NET code, they might sometimes provide invalid input that doesn't match the expected schema. The `Microsoft.Extensions.AI` library provides several strategies to handle these scenarios gracefully.
 
 ## Common scenarios for invalid input
 
 AI models can provide invalid function call input in several ways:
 
-- Missing required parameters
-- Incorrect data types (for example, sending a string when a number is expected)
-- Malformed JSON that can't be deserialized
-- Values that violate business rules or constraints
+- Missing required parameters.
+- Incorrect data types (for example, sending a string when an integer is expected).
+- Malformed JSON that can't be deserialized.
 
 Without proper error handling, these issues can cause your application to fail or provide poor user experiences.
 
 ## Enable detailed error messages
 
-By default, when a function invocation fails, the AI model receives a generic error message. You can enable detailed error reporting using the <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.IncludeDetailedErrors?displayProperty=nameWithType> property to send the full exception details back to the AI model.
-
-### How it works
-
-When `IncludeDetailedErrors` is set to `true`, the full exception message is added to the chat history if an error occurs during function invocation. This allows the AI model to see what went wrong and potentially self-correct in subsequent attempts.
+By default, when a function invocation fails, the AI model receives a generic error message. You can enable detailed error reporting using the <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.IncludeDetailedErrors?displayProperty=nameWithType> property. When this property is set to `true` and an error occurs during function invocation, the full exception message is added to the chat history. This allows the AI model to see what went wrong and potentially self-correct in subsequent attempts.
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/IncludeDetailedErrors.cs" id="BasicUsage":::
 
-### Security considerations
-
-Setting `IncludeDetailedErrors` to `true` can expose internal system details to the AI model and potentially to end users. Consider the following:
-
-- **Development and debugging**: Enable detailed errors to help the AI model understand and fix issues
-- **Production environments**: Disable detailed errors to avoid leaking sensitive information
-- **Sensitive data**: Ensure exception messages don't contain secrets, connection strings, or other sensitive information
+> [!NOTE]
+> Setting `IncludeDetailedErrors` to `true` can expose internal system details to the AI model and potentially to end users. Ensure exception messages don't contain secrets, connection strings, or other sensitive information. To avoid leaking sensitive information, consider disabling detailed errors in production environments.
 
 ## Implement custom error handling
 
 For more control over error handling, you can set a custom <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.FunctionInvoker?displayProperty=nameWithType> delegate. This allows you to intercept function calls, catch exceptions, and return custom error messages to the AI model.
 
-### Basic custom invoker
-
 The following example shows how to implement a custom function invoker that catches serialization errors and provides helpful feedback:
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="BasicInvoker":::
 
-### Enable AI model self-correction
-
-By returning descriptive error messages instead of throwing exceptions, you allow the AI model to see what went wrong and try again with corrected input. The model will automatically retry the function call with better arguments:
-
-:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/FunctionInvoker.cs" id="RetryInvoker":::
+By returning descriptive error messages instead of throwing exceptions, you allow the AI model to see what went wrong and try again with corrected input. 
 
 ### Best practices for error messages
 
 When returning error messages to enable AI self-correction, provide clear, actionable feedback:
 
-- **Be specific**: Explain exactly what was wrong with the input
-- **Provide examples**: Show the expected format or valid values
-- **Use consistent format**: Help the AI model learn from patterns
-- **Log errors**: Track error patterns for debugging and monitoring
+- **Be specific**: Explain exactly what was wrong with the input.
+- **Provide examples**: Show the expected format or valid values.
+- **Use consistent format**: Help the AI model learn from patterns.
+- **Log errors**: Track error patterns for debugging and monitoring.
 
-Example retry messages:
-
-- ❌ "Invalid input. Please retry." (too vague)
-- ✅ "The 'temperature' parameter must be a number between -50 and 50. You provided 'hot'. Please retry with a numeric value."
-- ✅ "Missing required parameter 'location'. Please provide a location string and retry."
-
-## Use strict JSON schema with OpenAI
+## Use strict JSON schema (OpenAI only)
 
 When using OpenAI models, you can enable strict JSON schema mode to enforce that the model's output strictly adheres to your function's schema. This helps prevent type mismatches and missing required fields.
 
-### Enable strict mode
-
-Strict mode is enabled using the `Strict` additional property on your function metadata. When enabled, OpenAI models try to ensure their output matches your schema exactly:
+Enable strict mode using the `Strict` additional property on your function metadata. When enabled, OpenAI models try to ensure their output matches your schema exactly:
 
 :::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/StrictSchema.cs" id="StrictMode":::
 
-### Supported models
-
-Strict JSON schema mode is only supported on certain OpenAI models:
-
-- `gpt-4o-2024-08-06` and later
-- `gpt-4o-mini-2024-07-18` and later
-
-Check the [OpenAI documentation](https://platform.openai.com/docs/guides/structured-outputs) for the latest list of supported models.
+For the latest list of models that support strict JSON schema, check the [OpenAI documentation](https://platform.openai.com/docs/guides/structured-outputs).
 
 ### Limitations
 
 While strict mode significantly improves schema adherence, keep these limitations in mind:
 
-- Not all JSON Schema features are supported in strict mode
-- Complex schemas might still produce occasional errors
-- Always validate outputs even with strict mode enabled
-- Strict mode is OpenAI-specific and doesn't apply to other AI providers
-
-## Combine strategies
-
-For robust error handling, combine multiple strategies:
-
-:::code language="csharp" source="snippets/handle-invalid-tool-input/csharp/Combined.cs" id="CombinedStrategies":::
+- Not all JSON Schema features are supported in strict mode.
+- Complex schemas might still produce occasional errors.
+- Always validate outputs even with strict mode enabled.
+- Strict mode is OpenAI-specific and doesn't apply to other AI providers.
 
 ## Next steps
 

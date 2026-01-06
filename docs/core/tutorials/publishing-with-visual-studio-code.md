@@ -96,19 +96,6 @@ In the following steps, you'll look at the files created by the publish process.
 
    1. Enter a name in response to the prompt, and press <kbd>Enter</kbd> to exit.
 
-## Additional resources
-
-- [.NET application publishing overview](../deploying/index.md)
-- [`dotnet publish`](../tools/dotnet-publish.md)
-- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
-
-## Next steps
-
-In this tutorial, you published a console app. In the next tutorial, you create a class library.
-
-> [!div class="nextstepaction"]
-> [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md)
-
 ## Publish a file-based (single-file) app
 
 The default publishing process creates a framework-dependent deployment, which requires
@@ -119,6 +106,7 @@ To publish a single-file, self-contained app, run the following command:
 
 ```dotnetcli
 dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
 
 Replace win-x64 with the appropriate runtime identifier (RID) for your target platform,
 such as linux-x64 or osx-arm64.
@@ -136,3 +124,16 @@ HelloWorld (Linux or macOS)
 
 This executable contains the application, its dependencies, and the .NET runtime. You can
 copy this file to another machine and run it without installing .NET.
+
+## Additional resources
+
+- [.NET application publishing overview](../deploying/index.md)
+- [`dotnet publish`](../tools/dotnet-publish.md)
+- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
+
+## Next steps
+
+In this tutorial, you published a console app. In the next tutorial, you create a class library.
+
+> [!div class="nextstepaction"]
+> [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md)

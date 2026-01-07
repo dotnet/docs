@@ -231,5 +231,6 @@ In a cloud service like [Azure App Service](/azure/app-service/quickstart-dotnet
 
 ## See also
 
-- [Breaking changes in .NET 10](../compatibility/10.0.md)
+- [Breaking changes in .NET 11](../compatibility/11.md)
+- [Breaking changes in .NET 10](../compatibility/10.md)
 - [Migrate an ASP.NET Core app](/aspnet/core/migration/)

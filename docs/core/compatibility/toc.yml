@@ -12,6 +12,10 @@ items:
             items:
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+          - name: Cryptography
+            items:
+              - name: DSA has been removed from macOS
+                href: cryptography/11.0/dsa-removed-macos.md
       - name: .NET 10
         items:
           - name: Overview

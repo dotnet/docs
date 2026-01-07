@@ -16,9 +16,9 @@ The following [platform options](./microsoft-testing-platform-intro.md#options) 
 
 - `--info`
 - `--diagnostic`
-- `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite`
+- `--diagnostic-synchronous-write`
 - `--diagnostic-verbosity`
-- `--diagnostic-output-fileprefix`
+- `--diagnostic-file-prefix`
 - `--diagnostic-output-directory`
 
 You can also enable the diagnostics logs using the environment variables:

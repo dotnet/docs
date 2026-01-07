@@ -147,6 +147,10 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 11
+        items:
+          - name: Breaking changes
+            href: ../core/compatibility/11.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 10
         items:
           - name: What's new
@@ -161,7 +165,7 @@ items:
               - name: SDK
                 href: ../core/whats-new/dotnet-10/sdk.md
           - name: Breaking changes
-            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: ../core/compatibility/10.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new

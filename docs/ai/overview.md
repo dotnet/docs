@@ -21,27 +21,19 @@ Millions of developers use .NET to create applications that run on the web, on m
 
 ## Supported AI providers
 
-.NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers supported by .NET AI libraries:
+.NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers that integrate with `Microsoft.Extensions.AI`:
 
-| Provider | Microsoft.Extensions.AI | Microsoft Agent Framework | Semantic Kernel | Description |
+| Provider | Description |
 |----------|------------------------|---------------------------|-----------------|-------------|
-| **OpenAI** | ✅ | ✅ | ✅ | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
-| **Azure OpenAI** | ✅ | ✅ | ✅ | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
-| **Azure AI Foundry** | ✅ | ✅ | ❌ | Microsoft's managed platform for building and deploying AI agents at scale |
-| **GitHub Models** | ✅ | ✅ | ❌ | Access to models available through GitHub's AI model marketplace |
-| **Ollama** | ✅ | ✅ | ❌ | Run open-source models locally, for example, Llama, Mistral, and Phi-3 |
-| **Google Gemini** | ❌ | ❌ | ✅ | Google's multimodal AI models through Semantic Kernel connectors |
-| **Amazon Bedrock** | ❌ | ❌ | ✅ | AWS's managed service for foundation models through Semantic Kernel connectors |
+| OpenAI | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
+| Azure OpenAI | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
+| Azure AI Foundry | Microsoft's managed platform for building and deploying AI agents at scale |
+| GitHub Models | Access to models available through GitHub's AI model marketplace |
+| Ollama | Run open-source models locally, for example, Llama, Mistral, and Phi-3 |
+| Google Gemini | Google's multimodal AI models |
+| Amazon Bedrock | AWS's managed service for foundation models |
 
-> [!NOTE]
-> The [Microsoft.Extensions.AI](microsoft-extensions-ai.md) abstractions enable you to write code that works with any provider. You can switch between providers with minimal code changes by implementing the `IChatClient` or `IEmbeddingGenerator` interfaces for your chosen provider.
-
-For detailed information about working with specific providers, see:
-
-- [Microsoft.Extensions.AI libraries](microsoft-extensions-ai.md)
-- [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview)
-- [Semantic Kernel](/semantic-kernel/overview/)
-- [.NET + AI ecosystem tools and SDKs](dotnet-ai-ecosystem.md)
+Any AI provider that's usable with `Microsoft.Extensions.AI` is also usable with Agent Framework and Semantic Kernel.
 
 ## What can you build with AI and .NET?
 

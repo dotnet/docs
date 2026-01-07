@@ -4,6 +4,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 11
+        items:
+          - name: Overview
+            href: 11.0.md
+          - name: Globalization
+            items:
+              - name: Japanese Calendar minimum supported date corrected
+                href: globalization/11.0/japanese-calendar-min-date.md
       - name: .NET 10
         items:
           - name: Overview

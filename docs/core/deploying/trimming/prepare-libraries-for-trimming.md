@@ -3,7 +3,7 @@ title: Prepare .NET libraries for trimming
 description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
-ms.date: 06/12/2023
+ms.date: 11/20/2025
 ---
 
 # Prepare .NET libraries for trimming
@@ -109,6 +109,23 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 * If the new version added non-understood reflection patterns.
 * Even if there were no API changes.
 * Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
+
+## Target framework requirements
+
+When preparing libraries for trimming, target the latest supported TFM. This helps you benefit from the latest analyzer improvements. At a minimum, target `net6.0` or later. This version is required for trim analysis warnings.
+
+If your library also targets frameworks earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net6.0`. This ensures that apps targeting `net6.0` or later get a version of your library that supports trim analysis.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and later:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net6.0;net10.0</TargetFrameworks>
+  <IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>
+</PropertyGroup>
+```
+
+For more information, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
 
 ## Resolve trim warnings
 

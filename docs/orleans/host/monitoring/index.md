@@ -369,8 +369,22 @@ builder.Services.AddOpenTelemetry()
             ResourceBuilder.CreateDefault()
                 .AddService(serviceName: "GPSTracker", serviceVersion: "1.0"));
 
-        tracing.AddSource("Microsoft.Orleans.Runtime");
-        tracing.AddSource("Microsoft.Orleans.Application");
+        // Good baseline for general Orleans observability
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.ApplicationGrainActivitySourceName);
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.LifecycleActivitySourceName);
+
+        /*
+        // Other source also available
+        // Persistence spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.StorageActivitySourceName);
+        // Internal Runtime spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.RuntimeActivitySourceName);
+        */
+
+        /*
+        // Optionally add all Microsoft.Orleans.* Sources at once
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.AllActivitySourceName);
+        */
 
         tracing.AddZipkinExporter(zipkin =>
         {

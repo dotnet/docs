@@ -237,7 +237,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`--diagnostic-file-prefix`**
 
-  The prefix for the log file name. Defaults to `"log_"`.
+  The prefix for the log file name. Defaults to `"log"`.
 
 - **`--diagnostic-verbosity`**
 

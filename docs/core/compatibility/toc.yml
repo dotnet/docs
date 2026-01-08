@@ -4,10 +4,18 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 11
+        items:
+          - name: Overview
+            href: 11.md
+          - name: Core .NET libraries
+            items:
+              - name: Environment.TickCount made consistent with Windows timeout behavior
+                href: core-libraries/11/environment-tickcount-windows-behavior.md
       - name: .NET 10
         items:
           - name: Overview
-            href: 10.0.md
+            href: 10.md
           - name: ASP.NET Core
             items:
               - name: Cookie login redirects disabled for known API endpoints
@@ -460,6 +468,8 @@ items:
                 href: deployment/8.0/rid-asset-list.md
               - name: .NET Monitor only includes distroless images
                 href: deployment/8.0/monitor-image.md
+              - name: .NET packages for openSUSE and SLES depend on OpenSSL 3.x
+                href: deployment/8.0/opensuse-sles-openssl3-dependency.md
               - name: StripSymbols defaults to true
                 href: deployment/8.0/stripsymbols-default.md
           - name: Entity Framework Core

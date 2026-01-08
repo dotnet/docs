@@ -7,7 +7,7 @@ class Program
     {
         Option<string> urlOption = new("--url")
         {
-            Description = "A URL."
+            Description = "A URL"
         };
         RootCommand rootCommand = new("Handle termination example") { urlOption };
 

@@ -218,6 +218,11 @@ items:
             href: ../../core/tools/dotnet-store.md
           - name: dotnet test
             href: ../../core/tools/dotnet-test.md
+            items:
+              - name: dotnet test with VSTest
+                href: ../../core/tools/dotnet-test-vstest.md
+              - name: dotnet test with MTP
+                href: ../../core/tools/dotnet-test-mtp.md
           - name: dotnet tool
             items:
               - name: dotnet tool exec
@@ -364,9 +369,6 @@ items:
       - name: WCF service XML serializer
         displayName: dotnet-svcutil.xmlserializer
         href: ../../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-      - name: XML serializer generator
-        displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
-        href: ../../core/additional-tools/xml-serializer-generator.md
   - name: Diagnostics and instrumentation
     items:
       - name: Overview
@@ -4181,6 +4183,8 @@ items:
     items:
       - name: EXTOBS0001
         href: ../../fundamentals/syslib-diagnostics/extobs0001.md
+      - name: EXTOBS0002
+        href: ../../fundamentals/syslib-diagnostics/extobs0002.md
   - name: API compatibility
     items:
       - name: Overview

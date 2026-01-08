@@ -58,6 +58,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/10.0.md",
+            "redirect_url": "/dotnet/core/compatibility/10",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
@@ -1230,6 +1235,10 @@
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-with-copilot.md",
             "redirect_url": "/visualstudio/ide/copilot-chat-context#slash-commands"
+        },
+        {
+            "source_path_from_root": "/docs/core/additional-tools/xml-serializer-generator.md",
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/xml-serializer-generator"
         },
         {
             "source_path_from_root": "/docs/core/tools/cli-msbuild-architecture.md",

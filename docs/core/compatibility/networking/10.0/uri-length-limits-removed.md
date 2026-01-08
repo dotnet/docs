@@ -18,7 +18,7 @@ Methods that create <xref:System.Uri> instances (constructors and <xref:System.U
 Previously, it wasn't possible to create a <xref:System.Uri> instance whose length exceeded around 65,000 characters. Code like the following example threw a <xref:System.UriFormatException> with the message "Invalid URI: The Uri string is too long."
 
 ```csharp
-new Uri($"https://host/{new string('a', 100_000)}")
+new Uri($"https://host/{new string('a', 100_000)}");
 ```
 
 ## New behavior

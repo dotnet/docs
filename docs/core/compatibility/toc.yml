@@ -12,6 +12,8 @@ items:
             items:
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: MemoryStream maximum capacity updated and exception behavior changed
+                href: core-libraries/11/memorystream-max-capacity.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected

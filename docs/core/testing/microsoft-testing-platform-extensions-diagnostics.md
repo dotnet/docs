@@ -102,4 +102,4 @@ To work around this, there are two options:
   </plist>
   ```
 
-  The MSBuild target above can be placed in Directory.Build.targets so that it applies to all projects.
+  You can place the `WorkaroundMacOSDumpIssue` MSBuild target in the `Directory.Build.targets` file so that it applies to all projects.

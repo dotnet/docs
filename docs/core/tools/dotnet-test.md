@@ -29,7 +29,7 @@ To enable Microsoft.Testing.Platform, you need to specify the test runner in the
 ```
 
 > [!NOTE]
-> "VSTest" is a valid value for test runner as well. However, it's already the current default and is not necessary to set explicitly.
+> `VSTest` is a valid value for test runner. It is the current default and can be omitted.
 >
 > [!IMPORTANT]
 > The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.

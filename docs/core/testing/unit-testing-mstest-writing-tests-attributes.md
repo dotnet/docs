@@ -373,9 +373,9 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow> class provid
 
 `TestDataRow<T>` offers the following benefits:
 
-- **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.DisplayName> property
-- **Test properties**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.TestProperties> property
-- **Type-safe data**: Use the generic `TestDataRow<T>` to provide strongly-typed test data
+- **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.DisplayName> property.
+- **Test properties**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.TestProperties> property.
+- **Type-safe data**: Use the generic `TestDataRow<T>` to provide strongly-typed test data.
 
 ```csharp
 [TestClass]
@@ -411,7 +411,7 @@ Data-driven test attributes like <xref:Microsoft.VisualStudio.TestTools.UnitTest
 The `UnfoldingStrategy` property accepts the following values:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Auto?displayProperty=nameWithType> (default): MSTest automatically determines whether to unfold test cases based on the number of data rows. Test cases are collapsed (folded) when there are many data rows to avoid cluttering Test Explorer, and unfolded when there are few data rows for better visibility.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer and TRX results. Each test case can be run independently.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer, and TRX results. Each test case can be run independently.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases cannot be run independently; the entire data-driven test runs as one unit.
 
 For most scenarios, the default `Auto` behavior provides the best balance between usability and performance. Changing this setting is considered an advanced scenario and should only be done when you have specific requirements, such as non-deterministic data source or known limitations or bugs of MSTest.
@@ -636,7 +636,7 @@ Starting with MSTest 3.6, it is possible to specify <xref:Microsoft.VisualStudio
 
 #### `RetryAttribute`
 
-The [Retry](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryAttribute) attribute was introduced in MSTest 3.8. This attribute causes the test method to be retried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type, which is either constant or exponential.
+The [Retry](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryAttribute) attribute was introduced in MSTest 3.8. This attribute causes the test method to be retried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type, which is either constant, or exponential.
 
 Only one `RetryAttribute` is expected to be present on a test method, and `RetryAttribute` cannot be used on methods that are not marked with [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute).
 

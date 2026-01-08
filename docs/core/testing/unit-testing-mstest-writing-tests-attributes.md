@@ -638,7 +638,7 @@ Starting with MSTest 3.6, it is possible to specify <xref:Microsoft.VisualStudio
 
 #### `RetryAttribute`
 
-The [Retry](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryAttribute) attribute was introduced in MSTest 3.8. This attribute causes the test method to be retried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type, which is either constant or exponential.
+The [Retry](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryAttribute) attribute was introduced in MSTest 3.8. This attribute causes the test method to be retried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type, which is either constant, or exponential.
 
 Only one `RetryAttribute` is expected to be present on a test method, and `RetryAttribute` cannot be used on methods that are not marked with [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute).
 

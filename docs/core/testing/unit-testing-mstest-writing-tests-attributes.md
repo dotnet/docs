@@ -317,6 +317,8 @@ public class TestClass
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> also supports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayName> property to customize how test cases appear in Test Explorer. You can specify the display name format using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayNameDeclaringType> to reference a method that generates the display name:
 
 ```csharp
+using System.Reflection;
+
 [TestClass]
 public class TestClass
 {
@@ -411,8 +413,8 @@ Data-driven test attributes like <xref:Microsoft.VisualStudio.TestTools.UnitTest
 The `UnfoldingStrategy` property accepts the following values:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Auto?displayProperty=nameWithType> (default): MSTest automatically determines whether to unfold test cases based on the number of data rows. Test cases are collapsed (folded) when there are many data rows to avoid cluttering Test Explorer, and unfolded when there are few data rows for better visibility.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer, and TRX results. Each test case can be run independently.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases cannot be run independently; the entire data-driven test runs as one unit.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer and TRX results. Each test case can be run independently.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases can't be run independently; the entire data-driven test runs as one unit.
 
 For most scenarios, the default `Auto` behavior provides the best balance between usability and performance. Changing this setting is considered an advanced scenario and should only be done when you have specific requirements, such as non-deterministic data source or known limitations or bugs of MSTest.
 
@@ -447,7 +449,7 @@ public class TestClass
 
 ## Attributes used to provide initialization and cleanups
 
-Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
+Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example, before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
 
 ### Assembly level
 
@@ -628,7 +630,7 @@ The [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute
 This attribute can be applied to any test method or any fixture method (initialization and cleanup methods). It is also possible to specify the timeout globally for either all test methods or all test fixture methods by using the [timeout properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
 > [!NOTE]
-> The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it may take longer before the step is cancelled.
+> The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it might take longer before the step is cancelled.
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
 
@@ -830,7 +832,7 @@ The [ExpectedException](xref:Microsoft.VisualStudio.TestTools.UnitTesting.Expect
 
 The following attributes and the values assigned to them appear in the `Visual Studio` **Properties** window for a particular test method. These attributes aren't meant to be accessed through the code of the test. Instead, they affect the ways the test is used or run, either by you through the IDE of Visual Studio, or by the Visual Studio test engine. For example, some of these attributes appear as columns in the **Test Manager** window and **Test Results** window, which means that you can use them to group and sort tests and test results. One such attribute is <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>, which you use to add arbitrary metadata to tests.
 
-For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test It's with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
+For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test it is with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.GitHubWorkItemAttribute>

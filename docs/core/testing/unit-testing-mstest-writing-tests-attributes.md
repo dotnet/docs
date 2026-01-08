@@ -317,6 +317,8 @@ public class TestClass
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> also supports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayName> property to customize how test cases appear in Test Explorer. You can specify the display name format using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayNameDeclaringType> to reference a method that generates the display name:
 
 ```csharp
+using System.Reflection;
+
 [TestClass]
 public class TestClass
 {

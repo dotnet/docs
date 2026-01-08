@@ -447,7 +447,7 @@ public class TestClass
 
 ## Attributes used to provide initialization and cleanups
 
-Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
+Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example, before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
 
 ### Assembly level
 

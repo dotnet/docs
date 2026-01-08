@@ -628,7 +628,7 @@ The [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute
 This attribute can be applied to any test method or any fixture method (initialization and cleanup methods). It is also possible to specify the timeout globally for either all test methods or all test fixture methods by using the [timeout properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
 > [!NOTE]
-> The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it may take longer before the step is cancelled.
+> The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it might take longer before the step is cancelled.
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
 

@@ -412,7 +412,7 @@ The `UnfoldingStrategy` property accepts the following values:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Auto?displayProperty=nameWithType> (default): MSTest automatically determines whether to unfold test cases based on the number of data rows. Test cases are collapsed (folded) when there are many data rows to avoid cluttering Test Explorer, and unfolded when there are few data rows for better visibility.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer and TRX results. Each test case can be run independently.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: Test cases are collapsed into a single test node. Individual test cases cannot be run independently; the entire data-driven test runs as one unit.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases cannot be run independently; the entire data-driven test runs as one unit.
 
 For most scenarios, the default `Auto` behavior provides the best balance between usability and performance. Changing this setting is considered an advanced scenario and should only be done when you have specific requirements, such as non-deterministic data source or known limitations or bugs of MSTest.
 

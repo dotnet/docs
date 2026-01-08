@@ -654,7 +654,7 @@ public class MyTestClass
 ```
 
 > [!NOTE]
-> `RetryAttribute` derives from an abstract [RetryBaseAttribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryBaseAttribute). You can also create your own retry implementations if the built-in `RetryAttribute` doesn't suit your needs.
+> `RetryAttribute` derives from an abstract [RetryBaseAttribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryBaseAttribute). You can also create your own retry implementations if the built-in `RetryAttribute` isn't suitable for your needs.
 
 ### Conditional execution attributes
 

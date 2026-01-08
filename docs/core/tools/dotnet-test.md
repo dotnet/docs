@@ -18,9 +18,7 @@ The `dotnet test` command builds the solution and runs the tests with either VST
 
 ### Choosing a test runner
 
-To enable MTP, you need to specify the test runner in the [`global.json`](global-json.md) file. Here are examples of how to configure the test runner:
-
-**Microsoft Testing Platform:**
+To enable Microsoft.Testing.Platform, you need to specify the test runner in the [`global.json`](global-json.md) file:
 
 ```json
 {
@@ -30,16 +28,9 @@ To enable MTP, you need to specify the test runner in the [`global.json`](global
 }
 ```
 
-**VSTest:**
-
-```json
-{
-    "test": {
-        "runner": "VSTest"
-    }
-}
-```
-
+> [!NOTE]
+> "VSTest" is a valid value for test runner as well. However, it's already the current default and is not necessary to set explicitly.
+>
 > [!IMPORTANT]
 > The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 

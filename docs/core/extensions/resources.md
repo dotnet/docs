@@ -57,6 +57,9 @@ You can then retrieve resources for the current UI culture or for a specific cul
 
 - The <xref:System.Resources.ResXResourceSet> class, which enables you to retrieve all the items in an XML resource file into memory.
 
+> [!NOTE]
+> In general, resource files (.resx and .resources) within .NET are considered part of the application deployment and are assumed to be trustworthy, much like configuration. Components which operate over such files are free to rely on this assumption. Developers therefore should not process untrustworthy resource files unless they're using an API explicitly documented as being safe for use with untrusted data.
+
 ## See also
 
 - <xref:System.Globalization.CultureInfo>

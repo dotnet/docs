@@ -33,12 +33,12 @@ An assembly contains both <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Par
 
 ## Rule description
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attributes are mutually exclusive. Having both attributes in the same assembly creates conflicting configuration that can lead to unpredictable test execution behavior. You should choose one parallelization strategy for your test assembly.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attributes are mutually exclusive at the assembly level. When both attributes are applied to the same assembly, tests run sequentially. This conflicting configuration indicates unclear intent and should be resolved by choosing one parallelization strategy for your test assembly.
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-[assembly: Parallelize(Workers = 2, Scope = ExecutionScope.MethodLevel)] // Violation
+[assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)] // Violation
 [assembly: DoNotParallelize]
 ```
 
@@ -51,7 +51,7 @@ If you want parallel execution:
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-[assembly: Parallelize(Workers = 2, Scope = ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
 ```
 
 If you want sequential execution:
@@ -60,6 +60,33 @@ If you want sequential execution:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [assembly: DoNotParallelize]
+```
+
+If you want to enable parallelization at the assembly level but disable it for specific classes or methods, apply `Parallelize` at the assembly level and `DoNotParallelize` at the class or method level:
+
+```csharp
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+[assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
+
+[DoNotParallelize]
+[TestClass]
+public class SequentialTests
+{
+    [TestMethod]
+    public void Test1() { }
+}
+
+[TestClass]
+public class ParallelTests
+{
+    [TestMethod]
+    public void Test2() { }
+    
+    [DoNotParallelize]
+    [TestMethod]
+    public void Test3() { }
+}
 ```
 
 ## When to suppress warnings

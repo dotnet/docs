@@ -33,7 +33,7 @@ A custom <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 
 ## Rule description
 
-When creating custom test method attributes that derive from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>, you should propagate source information using caller information attributes. This allows MSTest to correctly track the source file and line number for test methods, improving diagnostics and test result reporting.
+When creating custom test method attributes that derive from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>, you should propagate source information using caller information attributes. This allows MSTest to correctly track the source file and line number for test methods, improving diagnostics, test result reporting, and Test Explorer behavior.
 
 ```csharp
 public class MyTestMethodAttribute : TestMethodAttribute

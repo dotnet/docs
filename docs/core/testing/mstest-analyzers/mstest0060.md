@@ -33,14 +33,14 @@ A test method has multiple <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Te
 
 ## Rule description
 
-A test method should have only one attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>. Having multiple test method attributes (such as `[TestMethod]` and `[DataTestMethod]`) on the same method can lead to unexpected behavior and test execution issues.
+A test method should have only one attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>. Having multiple test method attributes (such as `[TestMethod]` and `[UITestMethod]`) on the same method causes only one attribute to be used (the first one returned by reflection), which can be confusing and lead to unintended test execution.
 
 ```csharp
 [TestClass]
 public class TestClass
 {
     [TestMethod]
-    [DataTestMethod] // Violation
+    [UITestMethod] // Violation
     public void TestMethod1()
     {
         // Test code
@@ -66,7 +66,7 @@ public class TestClass
 
 ## When to suppress warnings
 
-Do not suppress warnings from this rule. Having multiple test method attributes creates ambiguous test configuration that should be resolved.
+Do not suppress warnings from this rule. Having multiple test method attributes creates ambiguous test configuration where only one attribute is used, which can cause confusion about which test behavior is actually applied.
 
 ## Suppress a warning
 

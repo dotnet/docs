@@ -49,9 +49,9 @@ public class TestClass
             // Code that might throw.
             DoSomethingThatMightThrow();
         }
-        catch
+        catch (Exception ex)
         {
-            Assert.Fail("Exception was thrown"); // Violation
+            Assert.AreEqual("Expected error message", ex.Message); // Violation
         }
     }
 }
@@ -59,24 +59,17 @@ public class TestClass
 
 ## How to fix violations
 
-Use `Assert.ThrowsException` or related assertion methods to test for exceptions.
+Use `Assert.Throws`, `Assert.ThrowsExactly` or related assertion methods to test for exceptions.
 
 ```csharp
 [TestClass]
 public class TestClass
 {
     [TestMethod]
-    public void TestMethod_ThrowsException()
+    public void TestMethod_ThrowsExceptionWithExpectedMessage()
     {
-        Assert.Throws<InvalidOperationException>(() => DoSomethingThatMightThrow());
-    }
-
-    [TestMethod]
-    public void TestMethod_DoesNotThrow()
-    {
-        // If no exception is expected, just call the method directly
-        DoSomethingThatMightNotThrow();
-        // Add positive assertions here
+        InvalidOperationException exception = Assert.Throws<InvalidOperationException>(() => DoSomethingThatMightThrow());
+        Assert.AreEqual("Expected error message", exception.Message);
     }
 }
 ```

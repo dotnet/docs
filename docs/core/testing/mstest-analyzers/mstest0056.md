@@ -33,7 +33,7 @@ A test method attribute uses a string constructor argument instead of the <xref:
 
 ## Rule description
 
-When specifying a custom display name for a test method, you should use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.DisplayName> property instead of passing a string as a constructor argument. This ensures consistent usage across the MSTest framework and improves code readability.
+When specifying a custom display name for a test method, you should use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.DisplayName> property instead of passing a string as a constructor argument. In MSTest 4.0 and later, the string constructor argument is used for source information (caller file path) rather than display name, which is a breaking change from MSTest 3.x. Using the `DisplayName` property ensures your code works correctly and avoids potential confusion.
 
 ```csharp
 [TestClass]
@@ -65,7 +65,7 @@ public class TestClass
 
 ## When to suppress warnings
 
-Do not suppress warnings from this rule. Using the `DisplayName` property is the correct and recommended way to specify custom display names for test methods.
+Do not suppress warnings from this rule. Using the `DisplayName` property is the only way to specify custom display names for test methods. If your intent is to explicitly pass a value for the caller file path parameter instead of setting a display name, you can suppress this warning, but this is rarely needed.
 
 ## Suppress a warning
 

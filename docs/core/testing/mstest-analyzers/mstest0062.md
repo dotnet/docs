@@ -33,7 +33,7 @@ A test method has parameters marked with `out` or `ref` modifiers.
 
 ## Rule description
 
-Test methods should not have `out` or `ref` parameters because these modifiers are incompatible with data-driven testing. Data sources provide values to test methods through standard parameter passing, and the `out` and `ref` modifiers create conflicts with this mechanism. Using regular parameters makes tests more maintainable and compatible with parameterized test features.
+Test methods should not have `out` or `ref` parameters. MSTest is responsible for calling test methods, and it never reads the values that are passed by reference after the test method finishes. These modifiers are misleading because they suggest the test method returns values that will be used, but MSTest never uses them after the test completes.
 
 ```csharp
 [TestClass]
@@ -56,7 +56,7 @@ Remove the `out` and `ref` modifiers from test method parameters.
 public class TestClass
 {
     [TestMethod]
-    public void TestMethod(string s, string s2)
+    public void TestMethod()
     {
         // Test code
     }
@@ -74,10 +74,11 @@ public class TestClass
     {
         // Arrange
         string result;
+        string passedByRef = "some value";
         var instance = new MyClass();
         
         // Act
-        bool success = instance.TryGetValue(out result);
+        bool success = instance.TryGetValue(out result, ref passedByRef);
         
         // Assert
         Assert.IsTrue(success);
@@ -92,7 +93,7 @@ For data-driven tests:
 [TestClass]
 public class TestClass
 {
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("input1", "expected1")]
     [DataRow("input2", "expected2")]
     public void TestMethod(string input, string expected)
@@ -113,7 +114,7 @@ public class TestClass
 
 ## When to suppress warnings
 
-You might suppress this warning if you have a specific advanced scenario that requires `out` or `ref` parameters. However, this is rare, and you should consider alternative test designs first.
+Do not suppress warnings from this rule. There is no valid scenario where test methods should use `out` or `ref` parameters.
 
 ## Suppress a warning
 

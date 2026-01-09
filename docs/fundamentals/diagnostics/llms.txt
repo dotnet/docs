@@ -1,0 +1,15 @@
+# Diagnostics Docs
+
+## Runtime event reference
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-events.md): Review diagnostic events emitted by .NET runtime (CoreCLR) that can be used with ETW, LTTng, or EventPipe.
+- [Contention events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-contention-events.md): See ETW events that collect information specific to the monitor lock contentions.
+- [Exception events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-exception-events.md): Learn about the .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
+- [Garbage collection events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-garbage-collection-events.md): Learn about the .NET runtime events that collect diagnostic information specific to .NET garbage collector.
+- [Interop events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-interop-events.md): See .NET runtime events that collect diagnostic information specific to interop.
+- [Loader and binder events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-loader-binder-events.md): Learn about the .NET runtime events that collect diagnostic information specific to loader and binder ETW events, which collect information about the assembly loader and binder.
+- [Method events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-method-events.md): Learn about the .NET runtime events that collect diagnostic information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
+- [ThreadPool events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-thread-events.md): Learn about the .NET runtime thread pool events that collect diagnostic information about thread pool in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
+- [Type-system events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-type-events.md): Learn about the .NET runtime events that collect diagnostic information specific to the .NET type system, such as TypeLoadStart and TypeLoadStop.
+- [Tiered compilation events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-tiered-compilation-events.md): Learn about the .NET runtime tiered compilation events that collect diagnostic information about tiered compilation in .NET Core.
+- [Wait-handle events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/diagnostics/runtime-wait-handle-events.md): See ETW events that collect information specific to the wait handles.

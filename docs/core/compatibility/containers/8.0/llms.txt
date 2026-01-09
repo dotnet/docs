@@ -1,0 +1,11 @@
+# 8.0 Docs
+
+## Containers
+
+- ['ca-certificates' removed from Alpine images](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/ca-certificates-package.md): Learn about the breaking change in containers where the 'ca-certificates' package was removed from Alpine container images.
+- [Container images upgraded to Debian 12](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/debian-version.md): Learn about the breaking change in containers where .NET container images for Linux have been upgraded to Debian 12 (Bookworm).
+- [Default ASP.NET Core port changed to 8080](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/aspnet-port.md): Learn about the breaking change in containers where the default ASP.NET Core port changed from 80 to 8080.
+- [Kerberos package removed from Alpine and Debian images](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/krb5-libs-package.md): Learn about the breaking change in containers where the 'krb5-libs' package was removed from .NET container images.
+- [libintl package removed from Alpine images](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/libintl-package.md): Learn about the breaking change in containers where the 'libintl' package was removed from Alpine container images.
+- [Multi-platform container tags are Linux-only](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/multi-platform-tags.md): Learn about the breaking change in containers where multi-platform container tags are now Linux-only.
+- [New 'app' user in Linux images](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/containers/8.0/app-user.md): Learn about the breaking change in containers where a new non-root 'app' user was added in Linux container images.

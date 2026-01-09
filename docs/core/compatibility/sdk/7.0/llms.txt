@@ -1,0 +1,12 @@
+# 7.0 Docs
+
+## SDK and MSBuild
+
+- [Automatic RuntimeIdentifier for certain projects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/automatic-runtimeidentifier.md): Learn about a breaking change in the .NET 7 SDK where a RuntimeIdentifier is automatically added to projects that use certain publish properties.
+- [Automatic RuntimeIdentifier for publish only](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/automatic-rid-publish-only.md): Learn about a breaking change in the .NET 7 SDK where a RuntimeIdentifier is automatically added to projects only for the dotnet publish command.
+- [Version requirements](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/vs-msbuild-version.md): Learn about the breaking change in the .NET 7 SDK where specific versions of Visual Studio and MSBuild are required.
+- [SDK no longer calls ResolvePackageDependencies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/resolvepackagedependencies.md): Learn about a breaking change in SDK for .NET 7 where the .NET SDK no longer calls the ResolvePackageDependencies target to get package information.
+- [Serialization of custom types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/custom-serialization.md): Learn about a breaking change in MSBuild for .NET 7 where serialization using BinaryFormatter of certain user-defined types is removed.
+- [Side-by-side SDK installations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/side-by-side-install.md): Learn about a breaking change in the .NET 7 SDK where having a preview version of the SDK installed alongside the GA version causes projects with certain workloads to fail to build, load, or run.
+- [--output option no longer is valid for solution-level commands](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/solution-level-output-no-longer-valid.md): Learn about a breaking change in the .NET 7.0.200 SDK where using the `--output` option is no longer valid when using a solution file
+- [Tool manifests in root folder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/sdk/7.0/manifest-search.md): Learn about a breaking change where the .NET SDK no longer looks for local tool manifests in the root folder on Windows.

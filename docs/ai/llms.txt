@@ -1,0 +1,32 @@
+# AI Docs
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/overview.md): Learn how you can build .NET applications that include AI features.
+
+## AI tools and SDKs
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/dotnet-ai-ecosystem.md): This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
+- [C# SDK for MCP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/get-started-mcp.md): Learn about .NET AI and MCP key concepts and development resources to get started building MCP clients and servers
+
+## Authentication for Azure-hosted apps and services
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/azure-ai-services-authentication.md): Learn about the different options to authenticate to Azure OpenAI and other services using .NET
+
+## Chat with your data (RAG)
+
+- [Get started with the RAG sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/get-started-app-chat-template.md): Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
+- [Scale Azure OpenAI with Azure Container Apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/get-started-app-chat-scaling-with-azure-container-apps.md): Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
+
+## Microsoft.Extensions.AI
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/microsoft-extensions-ai.md): Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
+- [The IChatClient interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/ichatclient.md): Learn how to use the IChatClient interface to get model responses and call tools.
+- [The IEmbeddingGenerator interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/iembeddinggenerator.md): Learn how to use the IEmbeddingGenerator interface to generate embeddings for a collection of input values, with optional configuration and cancellation support.
+
+## Children
+
+- [Conceptual](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/llms.txt)
+- [Evaluation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/evaluation/llms.txt)
+- [How To](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/how-to/llms.txt)
+- [Quickstarts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/llms.txt)
+- [Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/resources/llms.txt)
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/tutorials/llms.txt)

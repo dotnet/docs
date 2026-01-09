@@ -1,0 +1,49 @@
+# Tools Docs
+
+## .NET CLI
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/index.md): An overview of the .NET CLI and its features.
+- [Elevated access](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/elevated-access.md): Learn the best practices for dotnet commands that require elevated access.
+- [Enable tab completion](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/enable-tab-autocomplete.md): This article teaches you how to enable tab completion for the .NET CLI for PowerShell (pwsh), Bash, zsh, fish, and nushell.
+
+## .NET SDK
+
+- [Environment variables](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-environment-variables.md): Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
+- [dotnet-install scripts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-install-script.md): Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
+- [global.json overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/global-json.md): Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
+- [Telemetry](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/telemetry.md): The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
+- [Signed-package verification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/nuget-signed-package-verification.md): Learn about how NuGet performs signed-package verification using root stores that are valid for code signing and timestamping.
+
+## Create tools for the CLI
+
+- [1 - Create a tool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/global-tools-how-to-create.md): Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
+- [2 - Use a global tool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/global-tools-how-to-use.md): Learn how to install and use a .NET tool as a global tool.
+- [3 - Use a local tool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/local-tools-how-to-use.md): Learn how to install and use a .NET tool as a local tool.
+
+## dotnet command reference
+
+- [dotnet](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet.md): Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
+- [dotnet build](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-build.md): The dotnet build command builds a project and all of its dependencies.
+- [dotnet build-server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-build-server.md): The dotnet build-server command interacts with servers started by a build.
+- [dotnet clean](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-clean.md): The dotnet clean command cleans the current directory.
+- [dotnet dev-certs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-dev-certs.md): The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
+- [dotnet format](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-format.md): The dotnet format command formats code to match EditorConfig settings for the current directory.
+- [dotnet help](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-help.md): The dotnet help command shows more detailed documentation online for the specified command.
+- [dotnet msbuild](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-msbuild.md): The dotnet msbuild command provides access to the MSBuild command line.
+- [dotnet pack](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-pack.md): The dotnet pack command creates NuGet packages for your .NET project.
+- [dotnet publish](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-publish.md): The dotnet publish command publishes a .NET project or solution to a directory.
+- [dotnet project convert](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-project-convert.md): The 'dotnet project convert' command converts a file-based program to a project-based program.
+- [dotnet restore](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-restore.md): Learn how to restore dependencies and project-specific tools with the dotnet restore command.
+- [dotnet run](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-run.md): The dotnet run command provides a convenient option to run your application from the source code.
+- [dotnet sdk check](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-sdk-check.md): The 'dotnet sdk check' command tells you what is the latest available version of the .NET SDK and .NET Runtime.
+- [dotnet sln](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-sln.md): The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
+- [dotnet store](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-store.md): The 'dotnet store' command stores the specified assemblies in the runtime package store.
+- [dotnet vstest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-vstest.md): The dotnet vstest command builds a project and all of its dependencies.
+- [dotnet watch](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-watch.md): The dotnet watch command is a file watcher that runs a dotnet command when changes in source code are detected.
+
+## dotnet new
+
+- [dotnet new <TEMPLATE>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-new.md): The dotnet new command creates new .NET projects based on the specified template.
+- [dotnet new list](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-new-list.md): The dotnet new list command lists available templates.
+- [dotnet new search](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-new-search.md): The dotnet new search command searches for templates on NuGet.org.
+- [dotnet new details](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tools/dotnet-new-details.md): The dotnet new details command displays template package metadata.

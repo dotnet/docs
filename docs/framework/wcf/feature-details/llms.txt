@@ -1,0 +1,48 @@
+# Feature Details Docs
+
+- [WCF feature details](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/index.md): Learn in detail about the extensive control that WCF offers over the messaging functions of an application.
+- [WCF and Internationalized Domain Names](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/wcf-and-internationalized-domain-names.md): Learn more about: WCF and Internationalized Domain Names
+- [Error handling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/error-handling.md): Learn more about: Error handling in Windows Communication Foundation (WCF)
+
+## Accessing Services Using a WCF Client
+
+- [Accessing Services Using a WCF Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/accessing-services-using-a-client.md): Learn more about: Accessing Services Using a Client
+- [How to: Access Services with One-Way and Request-Reply Contracts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md): Learn more about: How to: Access WCF Services with One-Way and Request-Reply Contracts
+- [How to: Access Services with a Duplex Contract](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md): Learn more about: How to: Access services with a duplex contract
+- [How to: Access a WSE 3.0 Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md): Learn more about: How to: Access a WSE 3.0 Service with a WCF Client
+- [How to: Use the ChannelFactory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md): Learn how to create a channel factory to create more than one channel for accessing services by using a WCF client.
+- [Channel Factory and Caching](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/channel-factory-and-caching.md): Learn more about: Channel Factory and Caching
+- [How to: Call Service Operations Asynchronously](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md): Learn how to create a WCF client that can access a service operation asynchronously by using the event-driven asynchronous calling model.
+- [Middle-Tier Client Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/middle-tier-client-applications.md): Learn more about: Middle-Tier Client Applications
+- [How to: Call Operations Asynchronously Using a Channel Factory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-call-operations-asynchronously-using-a-channel-factory.md): Learn more about: How to: Call Operations Asynchronously Using a Channel Factory
+- [Accessing WCF Services with a Windows Store Client App](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/accessing-wcf-services-with-a-windows-store-client-app.md): Learn more about: Access WCF Services with a Windows Store Client App
+- [How to: Create a Channel Factory and Use it to Create and Manage Channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md): Learn more about: How to: Create a Channel Factory and Use it to Create and Manage Channels
+
+## AJAX Integration and JSON Support
+
+- [AJAX Integration and JSON Support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/ajax-integration-and-json-support.md): Learn more about: AJAX Integration and JSON Support
+- [Creating WCF AJAX Services without ASP.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/creating-wcf-ajax-services-without-aspnet.md): Learn more about: Creating WCF AJAX Services without ASP.NET
+- [How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md): Learn more about: How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF
+
+## Auditing
+
+- [Auditing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/auditing-security-events.md): Learn more about: Auditing Security Events
+- [How to: Audit Security Events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md): Learn more about: How to: Audit Windows Communication Foundation Security Events
+
+## Authentication
+
+- [Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/authentication-in-wcf.md): Learn about several mechanisms in WCF that provide authentication, such as Windows authentication, X.509 certificates, and user name and password.
+- [How to: Use the ASP.NET Membership Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md): Learn how the ASP.NET membership provider supports websites that let users create a user name and password for access without having a Windows domain account.
+- [How to: Use Multiple Security Tokens of the Same Type](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-use-multiple-security-tokens-of-the-same-type.md): Learn more about: How to: Use Multiple Security Tokens of the Same Type
+- [Service Identity and Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/service-identity-and-authentication.md): Learn about the endpoint identity of a service, a value generated from the service WSDL, which WCF uses to authenticate the service.
+- [Security Negotiation and Timeouts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/security-negotiation-and-timeouts.md): Learn more about: Security Negotiation and Timeouts
+- [Debugging Windows Authentication Errors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md): Learn more about: Debug Windows authentication errors
+- [Using Multiple Authentication Schemes with WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/using-multiple-authentication-schemes-with-wcf.md): Learn more about: Using Multiple Authentication Schemes with WCF
+
+## Authorization
+
+- [Authorization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/authorization-in-wcf.md): Learn more about: Authorization in WCF
+- [Access Control Mechanisms](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/access-control-mechanisms.md): Learn more about: Access Control Mechanisms
+- [How to: Use the ASP.NET Role Provider with a Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md): Learn how to use the ASP.NET role provider with a service
+- [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md): Learn how to use the ASP.NET Authorization Manager Role Provider with a Service
+- [Delegation and Impersonation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md): Learn about the methods of impersonation and delegation that WCF uses to restrict client access to the resources of a service domain.

@@ -1,0 +1,47 @@
+# Diagnostics Docs
+
+- [Diagnostics symbol store](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/index.md): Learn more about: Diagnostics Symbol Store (Unmanaged API Reference)
+
+## Diagnostics Symbol Store Enumerations
+
+- [Diagnostics Symbol Store Enumerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md): Learn more about: Diagnostics Symbol Store Enumerations
+- [CorSymAddrKind Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/corsymaddrkind-enumeration.md): Learn more about: CorSymAddrKind Enumeration
+- [CorSymSearchPolicyAttributes Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md): Learn more about: CorSymSearchPolicyAttributes Enumeration
+- [CorSymVarFlag Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/corsymvarflag-enumeration.md): Learn more about: CorSymVarFlag Enumeration
+- [NOTIFY_FILTER Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/notify-filter-enumeration.md): Learn more about: NOTIFY_FILTER Enumeration
+
+## Diagnostics Symbol Store Interfaces
+
+- [Diagnostics Symbol Store Interfaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md): Learn more about: Diagnostics Symbol Store Interfaces
+
+## Diagnostics Symbol Store Structures
+
+- [Diagnostics Symbol Store Structures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md): Learn more about: Diagnostics Symbol Store Structures
+- [CALL_ID Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/call-id-structure.md): Learn more about: CALL_ID Structure
+- [SYMLINEDELTA Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/symlinedelta-structure.md): Learn more about: SYMLINEDELTA Structure
+- [USER_THREAD Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/user-thread-structure.md): Learn more about: USER_THREAD Structure
+
+## IBindingDisplay Interface
+
+- [IBindingDisplay Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md): Learn more about: IBindingDisplay Interface
+- [GetCurrentDisplay Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/ibindingdisplay-getcurrentdisplay-method.md): Learn more about: IBindingDisplay::GetCurrentDisplay Method
+- [InitializeForProcess Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md): Learn more about: IBindingDisplay::InitializeForProcess Method
+
+## IDebugAutoAttach Interface
+
+- [IDebugAutoAttach Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md): Learn more about: IDebugAutoAttach Interface
+- [AutoAttach Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/idebugautoattach-autoattach-method.md): Learn more about: IDebugAutoAttach::AutoAttach Method
+
+## INotifyConnection2 Interface
+
+- [INotifyConnection2 Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md): Learn more about: INotifyConnection2 Interface
+- [RegisterNotifySource Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifyconnection2-registernotifysource-method.md): Learn more about: INotifyConnection2::RegisterNotifySource Method
+- [UnregisterNotifySource Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md): Learn more about: INotifyConnection2::UnregisterNotifySource Method
+
+## INotifySink2 Interface
+
+- [INotifySink2 Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md): Learn more about: INotifySink2 Interface
+- [OnSyncCallEnter Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallenter-method.md): Learn more about: INotifySink2::OnSyncCallEnter Method
+- [OnSyncCallExit Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallexit-method.md): Learn more about: INotifySink2::OnSyncCallExit Method
+- [OnSyncCallOut Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallout-method.md): Learn more about: INotifySink2::OnSyncCallOut Method
+- [OnSyncCallReturn Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallreturn-method.md): Learn more about: INotifySink2::OnSyncCallReturn Method

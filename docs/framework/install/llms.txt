@@ -1,0 +1,17 @@
+# Install Docs
+
+## Installation guide
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/index.md): Learn about how to install the .NET Framework on Windows, and which versions of Windows support .NET Framework.
+- [Install on Windows and Windows Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/on-windows-and-server.md): Learn how to install .NET Framework on Windows 11, Windows 10, and Windows Server. This article also includes information about .NET Framework and unsupported versions of Windows, such as Windows 8, Windows Vista, and Windows XP.
+- [For developers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/guide-for-developers.md): Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps.
+- [Versions and dependencies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/versions-and-dependencies.md): Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
+- [Find installed versions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/how-to-determine-which-versions-are-installed.md): Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry. Or, check Control Panel.
+- [Find installed updates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/how-to-determine-which-net-framework-updates-are-installed.md): Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer.
+- [.NET Framework 3.5](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/dotnet-35-windows.md): Learn how to install .NET Framework 3.5 on Windows and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
+
+## Troubleshoot
+
+- [Repair .NET framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/repair.md): Learn how to repair the .NET Framework
+- [Troubleshoot install and uninstall](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md): Troubleshoot issues you encounter that prevent installation of the .NET Framework. Consult status messages for information to resolve issues.
+- [Troubleshoot 'This application could not be started'](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/install/application-not-started.md): Learn what to do if you see a 'This application could not be started' dialog box when running a .NET Framework application.

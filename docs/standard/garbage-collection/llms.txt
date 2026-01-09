@@ -1,0 +1,24 @@
+# Garbage Collection Docs
+
+## Clean up unmanaged resources
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/unmanaged.md): See how to clean up unmanaged resources not handled by the .NET garbage collector, such as files, windows, & network or database connections.
+- [Implement a Dispose method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/implementing-dispose.md): In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
+- [Implement a DisposeAsync method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/implementing-disposeasync.md): Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
+- [Use objects that implement IDisposable](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/using-objects.md): Learn how to use objects that implement the IDisposable interface in .NET. Types that use unmanaged resources implement IDisposable to allow resource reclaiming.
+
+## Garbage collection
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/index.md): Learn about garbage collection in .NET. The .NET garbage collector manages the allocation and release of memory for your application.
+- [Fundamentals](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/fundamentals.md): Learn how the garbage collector works and how it can be configured for optimum performance.
+- [Workstation and server GC](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/workstation-server-gc.md): Learn about workstation and server garbage collection in .NET.
+- [Background GC](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/background-gc.md): Learn about background garbage collection in .NET and how it differs in workstation and server garbage collection.
+- [The large object heap](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/large-object-heap.md): This article discusses large objects, how they are managed by the .NET garbage collector, and the performance implications of using large objects.
+- [Garbage collection and performance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/performance.md): Read about issues related to garbage collection and memory usage. Learn to minimize the effect of garbage collection on your applications.
+- [Dynamic adaptation to app size (DATAS)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/datas.md): Learn about DATAS, which is a garbage collection mode that aims to adapt to application memory requirements.
+- [Induced collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/induced.md): Learn more about: Induced Collections
+- [Latency modes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/latency.md): Learn more about: Latency modes
+- [Optimization for shared web hosting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/optimization-for-shared-web-hosting.md): Learn more about: Optimization for Shared Web Hosting
+- [Garbage collection notifications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/notifications.md): Learn more about: Garbage Collection Notifications
+- [Application domain resource monitoring](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/app-domain-resource-monitoring.md): Learn more about: Application Domain Resource Monitoring
+- [Weak references](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/garbage-collection/weak-references.md): Learn about weak references, which allow the .NET garbage collector to collect an object while still allowing the application to access the object.

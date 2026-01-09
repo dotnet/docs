@@ -1,0 +1,41 @@
+# Tutorials Docs
+
+## .NET CLI
+
+- [Develop libraries with the CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/libraries.md): Learn how to create .NET libraries using the .NET CLI. You'll create a library that supports multiple frameworks.
+
+## Create templates for the CLI
+
+- [1 - Create an item template](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/cli-templates-create-item-template.md): Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
+- [2 - Create a project template](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/cli-templates-create-project-template.md): Learn how to create a project template for the dotnet new command.
+- [3 - Create a template package](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/cli-templates-create-template-package.md): Learn how to create a csproj file that builds a template package for the dotnet new command.
+
+## Native interoperability
+
+- [Host .NET from native code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/netcore-hosting.md): Learn to host the .NET runtime from native code to support advanced scenarios that require controlling how the .NET runtime works.
+
+## Tutorials
+
+- [.NET 6 template changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/top-level-templates.md): The .NET 6+ project template for C# console apps uses top-level statements. Understand what changed and how to use existing learning materials with the new syntax.
+- [More tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/index.md): Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
+- [Create a .NET application with plugins](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/creating-app-with-plugin-support.md): Learn how to create a .NET Core application that supports plugins.
+
+## Use Visual Studio
+
+- [Create a console app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/with-visual-studio.md): Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
+- [Debug an app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/debugging-with-visual-studio.md): Learn how to debug a .NET console app using Visual Studio.
+- [Publish an app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/publishing-with-visual-studio.md): Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
+- [Create a library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/library-with-visual-studio.md): Learn how to create a .NET class library using Visual Studio.
+- [Unit test a library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/testing-library-with-visual-studio.md): Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
+
+## Use Visual Studio Code
+
+- [Create a console app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/with-visual-studio-code.md): Learn how to create a .NET console application using Visual Studio Code.
+- [Debug an app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/debugging-with-visual-studio-code.md): Learn how to debug a .NET console app using Visual Studio Code.
+- [Publish an app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/publishing-with-visual-studio-code.md): Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
+- [Create a library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/library-with-visual-studio-code.md): Learn how to create a .NET class library using Visual Studio Code.
+- [Unit test a library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/testing-library-with-visual-studio-code.md): Learn how to use Visual Studio Code and run a unit test project for a .NET class library.
+
+## xUnit
+
+- [Organize a project and test with xUnit](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/tutorials/testing-with-cli.md): This tutorial explains how to organize and test .NET projects from the command line.

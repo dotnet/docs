@@ -1,0 +1,6 @@
+# 10.0 Docs
+
+## WPF
+
+- [Empty ColumnDefinitions and RowDefinitions are disallowed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/wpf/10.0/empty-grid-definitions.md): Learn about the breaking change in WPF in .NET 10 where empty Grid.ColumnDefinitions or Grid.RowDefinitions declarations now cause MC3063 compilation errors.
+- [Incorrect usage of DynamicResource causes application crash](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/wpf/10.0/dynamicresource-crash.md): Learn about the breaking change in .NET 10 where incorrect usage of DynamicResource now causes application crashes.

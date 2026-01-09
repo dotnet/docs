@@ -1,0 +1,49 @@
+# Quality Rules Docs
+
+## Code quality rules
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/index.md): Learn about all of the available code quality rules for code analysis.
+
+## Design rules
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/design-warnings.md): Learn about code analysis design rules.
+- [CA1000](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1000.md): Learn about code analysis rule CA1000: Do not declare static members on generic types
+- [CA1001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1001.md): Learn about code analysis rule CA1001: Types that own disposable fields should be disposable
+- [CA1002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1002.md): Learn about code analysis rule CA1002: Do not expose generic lists
+- [CA1003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1003.md): Learn about code analysis rule CA1003: Use generic event handler instances
+- [CA1005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1005.md): Learn about code analysis rule CA1005: Avoid excessive parameters on generic types
+- [CA1008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1008.md): Learn about code analysis rule CA1008: Enums should have zero value
+- [CA1010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1010.md): Learn about code analysis rule CA1010: Collections should implement generic interface
+- [CA1012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1012.md): Learn about code analysis rule CA1012: Abstract types should not have public constructors
+- [CA1014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1014.md): Learn about code analysis rule CA1014: Mark assemblies with CLSCompliantAttribute
+- [CA1016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1016.md): Learn about code analysis rule CA1016: Mark assemblies with AssemblyVersionAttribute
+- [CA1017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1017.md): Learn about code analysis rule CA1017: Mark assemblies with ComVisibleAttribute
+- [CA1018](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1018.md): Learn about code analysis rule CA1018: Mark attributes with AttributeUsageAttribute
+- [CA1019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1019.md): Learn about code analysis rule CA1019: Define accessors for attribute arguments
+- [CA1021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1021.md): Learn about code analysis rule CA1021: Avoid out parameters
+- [CA1024](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1024.md): Learn about code analysis rule CA1024: Use properties where appropriate
+- [CA1027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1027.md): Learn about code analysis rule CA1027: Mark enums with FlagsAttribute
+- [CA1028](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1028.md): Learn about code analysis rule CA1028: Enum storage should be Int32
+- [CA1030](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1030.md): Learn about code analysis rule CA1030: Use events where appropriate
+- [CA1031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1031.md): Learn about code analysis rule CA1031: Do not catch general exception types
+- [CA1032](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1032.md): Learn about code analysis rule CA1032: Implement standard exception constructors
+- [CA1033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1033.md): Learn about code analysis rule CA1033: Interface methods should be callable by child types
+- [CA1034](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1034.md): Learn about code analysis rule CA1034: Nested types should not be visible
+- [CA1036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1036.md): Learn about code analysis rule CA1036: Override methods on comparable types
+- [CA1040](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1040.md): Learn about code analysis rule CA1040: Avoid empty interfaces
+- [CA1041](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1041.md): Learn about code analysis rule CA1041: Provide ObsoleteAttribute message
+- [CA1043](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1043.md): Learn about code analysis rule CA1043: Use integral or string argument for indexers
+- [CA1044](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1044.md): Learn about code analysis rule CA1044: Properties should not be write only
+- [CA1045](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1045.md): Learn about code analysis rule CA1045: Do not pass types by reference
+- [CA1046](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1046.md): Learn about code analysis rule CA1046: Do not overload operator equals on reference types
+- [CA1047](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1047.md): Learn about code analysis rule CA1047: Do not declare protected members in sealed types
+- [CA1050](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1050.md): Learn about code analysis rule CA1050: Declare types in namespaces
+- [CA1051](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1051.md): Learn about code analysis rule CA1051: Do not declare visible instance fields
+- [CA1052](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1052.md): Learn about code analysis rule CA1052: Static holder types should be Static or NotInheritable
+- [CA1053](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1053.md): Learn about code analysis rule CA1053: Static holder types should not have constructors
+- [CA1054](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1054.md): Learn about code analysis rule CA1054: URI parameters should not be strings
+- [CA1055](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1055.md): Learn about code analysis rule CA1055: URI return values should not be strings
+- [CA1056](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1056.md): Learn about code analysis rule CA1056: URI properties should not be strings
+- [CA1058](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1058.md): Learn about code analysis rule CA1058: Types should not extend certain base types
+- [CA1060](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1060.md): Learn about code analysis rule CA1060: Move P-Invokes to NativeMethods class
+- [CA1061](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/ca1061.md): Learn about code analysis rule CA1061: Do not hide base class methods

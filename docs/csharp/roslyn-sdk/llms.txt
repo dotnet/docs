@@ -1,0 +1,16 @@
+# Roslyn SDK Docs
+
+## The .NET Compiler Platform SDK (Roslyn APIs)
+
+- [The .NET Compiler Platform SDK (Roslyn APIs) overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/index.md): Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
+- [Understand the compiler API model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/compiler-api-model.md): This overview provides the background you need to work effectively with the .NET compiler SDK. You'll learn the API layers, the major types involved, and the overall object model.
+- [Work with syntax](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/work-with-syntax.md): This overview provides an understanding of the types you use to understand and manipulate syntax nodes.
+- [Work with semantics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/work-with-semantics.md): This overview provides an understanding of the type you use to understand and manipulate the semantic model of your code.
+- [Work with a workspace](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/work-with-workspace.md): This overview provides an understanding of the type you use to query and manipulate the workspace and projects for your code.
+- [Explore code with the syntax visualizer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/syntax-visualizer.md): The syntax visualizer provides a visual tool to explore the models the .NET Compiler Platform SDK generates for code.
+- [Choose diagnostic IDs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/choosing-diagnostic-ids.md): This overview provides an understanding of how to choose a diagnostic ID
+
+## Children
+
+- [Get Started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/get-started/llms.txt)
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/tutorials/llms.txt)

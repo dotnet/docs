@@ -1,0 +1,24 @@
+# Trimming Docs
+
+## Concepts
+
+- [Understand trim analysis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/trimming-concepts.md): Learn the fundamental concepts of how trim analysis works, why certain patterns produce warnings, and how to make code trim-compatible from first principles.
+
+## How-to guides
+
+- [Fix trim warnings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/fixing-warnings.md): Learn practical workflows for addressing trim warnings in your application, including step-by-step instructions for making code trim-compatible.
+- [Prepare libraries for trimming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/prepare-libraries-for-trimming.md): Learn how to prepare .NET libraries for trimming.
+
+## Reference
+
+- [Trimming options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/trimming-options.md): Learn how to control trimming of self-contained apps using MSBuild properties. For example, set trimming granularity or suppress trim analysis warnings.
+- [Known incompatibilities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/incompatibilities.md): Identify patterns and frameworks that are known to have problems with trimming
+- [Intrinsic RequiresUnreferencedCode APIs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/intrinsic-requiresunreferencedcode-apis.md): Learn how the tooling recognizes certain patterns in calls to APIs annotated with RequiresUnreferencedCode.
+
+## Trim self-contained deployments
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/trim-self-contained.md): Learn how to trim self-contained apps to reduce their size. .NET Core bundles the runtime with an app that is published self-contained and generally includes more of the runtime than is necessary.
+
+## Children
+
+- [Trim Warnings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/trim-warnings/llms.txt)

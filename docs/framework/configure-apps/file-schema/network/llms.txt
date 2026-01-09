@@ -1,0 +1,47 @@
+# Network Docs
+
+- [Network settings schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/index.md): Learn about the schema for the network settings that specify how the .NET Framework connects to the Internet and handles URIs.
+
+## <authenticationModules> element
+
+- [<authenticationModules> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md): Learn more about: <authenticationModules> Element (Network Settings)
+- [<add> element for authenticationModules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/add-element-for-authenticationmodules-network-settings.md): The <add> network settings element for connectionManagement adds an IP address or DNS name to the connection management list in the .NET Framework.
+- [<remove> element for authenticationModules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/remove-element-for-authenticationmodules-network-settings.md): Learn more about: <remove> Element for authenticationModules (Network Settings)
+- [<clear> element for authenticationModules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/clear-element-for-authenticationmodules-network-settings.md): Learn more about: <clear> Element for authenticationModules (Network Settings)
+
+## <bypasslist> element
+
+- [<bypasslist> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md): The <bypasslist> network settings element provides a set of regular expressions that describe addresses that do not use a proxy in the .NET Framework.
+- [<add> element for bypasslist](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md): Learn more about: <add> Element for bypasslist (Network Settings)
+- [<clear> element for bypasslist](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/clear-element-for-bypasslist-network-settings.md): Learn more about: <clear> Element for bypasslist (Network Settings)
+- [<remove> element for bypasslist](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/remove-element-for-bypasslist-network-settings.md): Learn more about: <remove> Element for bypasslist (Network Settings)
+
+## <connectionManagement> element
+
+- [<connectionManagement> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md): The <connectionManagement> network settings element specifies the maximum number of connections to a network host in the .NET Framework.
+- [<add> element for connectionManagement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/add-element-for-connectionmanagement-network-settings.md): Learn more about: <add> Element for connectionManagement (Network Settings)
+- [<clear> element for connectionManagement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/clear-element-for-connectionmanagement-network-settings.md): Learn more about: <clear> Element for connectionManagement (Network Settings)
+- [<remove> element for connectionManagement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/remove-element-for-connectionmanagement-network-settings.md): Learn more about: <remove> Element for connectionManagement (Network Settings)
+
+## <defaultProxy> element
+
+- [<defaultProxy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md): The <defaultProxy> network settings element configures the Hypertext Transfer Protocol (HTTP) proxy server in .NET Framework.
+- [<module> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/module-element-network-settings.md): Learn more about: <module> Element (Network Settings)
+- [<proxy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md): The <proxy> network settings element defines the proxy server options in the .NET Framework. This article includes an example.
+
+## <mailSettings> element
+
+- [<mailSettings> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md): The <mailSettings> network settings element configures the mail sending options in the .NET Framework.
+
+## <requestCaching> element
+
+- [<requestCaching> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md): Learn more about: <requestCaching> Element (Network Settings)
+- [<defaultHttpCachePolicy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md): Learn more about: <defaultHttpCachePolicy> Element (Network Settings)
+- [<defaultFtpCachePolicy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/defaultftpcachepolicy-element-network-settings.md): Learn more about: <defaultFtpCachePolicy> Element (Network Settings)
+
+## <schemeSettings> element
+
+- [<schemeSettings> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md): Learn more about: <schemeSettings> Element (Uri Settings)
+- [<add> element for schemeSettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/add-element-for-schemesettings-uri-settings.md): Learn more about: <add> Element for schemeSettings (Uri Settings)
+- [<clear> element for schemeSettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/clear-element-for-schemesettings-uri-settings.md): Learn more about: <clear> Element for schemeSettings (Uri Settings)
+- [<remove> element for schemeSettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/network/remove-element-for-schemesettings-uri-settings.md): Learn more about: <remove> Element for schemeSettings (Uri Settings)

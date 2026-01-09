@@ -1,0 +1,49 @@
+# Event Logging Docs
+
+- [Event logging](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/index.md): Learn more about: Event Logging in WCF
+
+## Events general reference
+
+- [Events general reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/events-general-reference.md): Learn more about: Events General Reference
+- [BindingError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/bindingerror.md): Learn more about: BindingError
+- [ComPlusDllHostInitializerStartingError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complusdllhostinitializerstartingerror.md): Learn more about: ComPlusDllHostInitializerStartingError
+- [ComPlusInstanceCreationError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complusinstancecreationerror.md): Learn more about: ComPlusInstanceCreationError
+- [ComPlusInvokingMethodFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complusinvokingmethodfailed.md): Learn more about: ComPlusInvokingMethodFailed
+- [ComPlusInvokingMethodFailedMismatchedTransactions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complusinvokingmethodfailedmismatchedtransactions.md): Learn more about: ComPlusInvokingMethodFailedMismatchedTransactions
+- [ComPlusServiceHostStartingServiceError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complusservicehoststartingserviceerror.md): Learn more about: ComPlusServiceHostStartingServiceError
+- [ComPlusTLBImportError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/complustlbimporterror.md): Learn more about: ComPlusTLBImportError
+- [CoordinatorRecoveryLogEntryCorrupt](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/coordinatorrecoverylogentrycorrupt.md): Learn more about: CoordinatorRecoveryLogEntryCorrupt
+- [CoordinatorRecoveryLogEntryCreationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/coordinatorrecoverylogentrycreationfailure.md): Learn more about: CoordinatorRecoveryLogEntryCreationFailure
+- [FailedToCreateMessageLoggingTraceSource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtocreatemessageloggingtracesource.md): Learn more about: FailedToCreateMessageLoggingTraceSource
+- [FailedToInitializeTraceSource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtoinitializetracesource.md): Learn more about: FailedToInitializeTraceSource
+- [FailedToLoadPerformanceCounter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtoloadperformancecounter.md): Learn more about: FailedToLoadPerformanceCounter
+- [FailedToLogMessage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtologmessage.md): Learn more about: FailedToLogMessage
+- [FailedToRemovePerformanceCounter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtoremoveperformancecounter.md): Learn more about: FailedToRemovePerformanceCounter
+- [FailedToSetupTracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtosetuptracing.md): Learn more about: FailedToSetupTracing
+- [FailedToTraceEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtotraceevent.md): Learn more about: FailedToTraceEvent
+- [FailedToTraceEventWithException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failedtotraceeventwithexception.md): Learn more about: FailedToTraceEventWithException
+- [FailFastException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failfastexception.md): Learn more about: FailFastException
+- [FailFast](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/failfast.md): Learn more about: FailFast
+- [FatalUnexpectedStateMachineEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/fatalunexpectedstatemachineevent.md): Learn more about: FatalUnexpectedStateMachineEvent
+- [ImpersonationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/impersonationfailure.md): Learn more about: ImpersonationFailure
+- [ImpersonationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/impersonationsuccess.md): Learn more about: ImpersonationSuccess
+- [InvariantAssertionFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/invariantassertionfailed.md): Learn more about: InvariantAssertionFailed
+- [LAFailedToListenForApp](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/lafailedtolistenforapp.md): Learn more about: LAFailedToListenForApp
+- [MessageAuthenticationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messageauthenticationfailure.md): Learn more about: MessageAuthenticationFailure
+- [MessageAuthenticationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messageauthenticationsuccess.md): Learn more about: MessageAuthenticationSuccess
+- [MessageLoggingOff](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messageloggingoff.md): Learn more about: MessageLoggingOff
+- [MessageLoggingOn](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messageloggingon.md): Learn more about: MessageLoggingOn
+- [MessageQueueDuplicatedSocketLeak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messagequeueduplicatedsocketleak.md): Learn more about: MessageQueueDuplicatedSocketLeak
+- [MessageQueueDuplicatedPipeLeak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/messagequeueduplicatedpipeleak.md): Learn more about: MessageQueueDuplicatedPipeLeak
+- [MissingNecessaryEnhancedKeyUsage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/missingnecessaryenhancedkeyusage.md): Learn more about: MissingNecessaryEnhancedKeyUsage
+- [MissingNecessaryKeyUsage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/missingnecessarykeyusage.md): Learn more about: MissingNecessaryKeyUsage
+- [NonFatalUnexpectedStateMachineEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/nonfatalunexpectedstatemachineevent.md): Learn more about: NonFatalUnexpectedStateMachineEvent
+- [ParticipantRecoveryLogEntryCorrupt](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/participantrecoverylogentrycorrupt.md): Learn more about: ParticipantRecoveryLogEntryCorrupt
+- [ParticipantRecoveryLogEntryCreationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/participantrecoverylogentrycreationfailure.md): Learn more about: ParticipantRecoveryLogEntryCreationFailure
+- [PerformanceCounterInitializationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/performancecounterinitializationfailure.md): Learn more about: PerformanceCounterInitializationFailure
+- [PiiLoggingNotAllowed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/piiloggingnotallowed.md): Learn more about: PiiLoggingNotAllowed
+- [PiiLoggingOn](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/piiloggingon.md): Learn more about: PiiLoggingOn
+- [ProtocolInitializationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/protocolinitializationfailure.md): Learn more about: ProtocolInitializationFailure
+- [ProtocolRecoveryBeginningFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/protocolrecoverybeginningfailure.md): Learn more about: ProtocolRecoveryBeginningFailure
+- [ProtocolRecoveryComplete](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/protocolrecoverycomplete.md): Learn more about: ProtocolRecoveryComplete
+- [ProtocolRecoveryCompleteFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/wcf/diagnostics/event-logging/protocolrecoverycompletefailure.md): Learn more about: ProtocolRecoveryCompleteFailure

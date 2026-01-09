@@ -1,0 +1,10 @@
+# Tokens Docs
+
+## Special characters
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/index.md): Special Characters - C# Reference
+- [Comments](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/comments.md): You use \"//\" for single-line comments. You use \"/*\" to start multi-line comments that end with \"*/\". You add comments to explain your code.
+- [Discard](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/discard.md): A `_` is a discard, a placeholder for an unused variable in an expression
+- [$ -- string interpolation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/interpolated.md): String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
+- [@ -- verbatim identifier](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/verbatim.md): Verbatim text using the `@` enables C# keywords to be used as identifiers, or indicates that a string literal should be interpreted verbatim, or to distinguish attribute names
+- [""" -- raw string literal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/raw-string.md): Raw string literals can contain any arbitrary text without the need for special escape sequences. You begin and end a raw string literal with a minimum of three double-quote characters.

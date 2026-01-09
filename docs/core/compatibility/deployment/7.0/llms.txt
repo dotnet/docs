@@ -1,0 +1,8 @@
+# 7.0 Docs
+
+## Deployment
+
+- [All assemblies trimmed by default](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/7.0/trim-all-assemblies.md): Learn about the .NET 7 breaking change in deployment where all assemblies in a console app are trimmed by default.
+- [Multi-level lookup is disabled](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/7.0/multilevel-lookup.md): Learn about the .NET 7 breaking change in deployment where multi-level lookup is disabled.
+- [x86 host path on 64-bit Windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/7.0/x86-host-path.md): Learn about the breaking change in deployment where the 32-bit .NET host isn't added to PATH on 64-bit Windows platforms.
+- [Deprecation of TrimmerDefaultAction property](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/7.0/deprecated-trimmer-default-action.md): Learn about the .NET 7 breaking change in deployment where the `TrimmerDefaultAction` property is being deprecated.

@@ -1,0 +1,39 @@
+# App Domains Docs
+
+- [Application domains and assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/index.md): Get to know programming with application domains and assemblies in .NET. See links to how-to topics & examples about creating application domains & assemblies.
+- [Assembly placement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/assembly-placement.md): Review guidelines for .NET assembly placement within directories (for example, in the global assembly cache or in the application's directory or subdirectory).
+- [Global Assembly Cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/gac.md): Understand the global assembly cache, which is a computer-wide code cache where the common language runtime for .NET is installed.
+- [Run Intranet Applications in Full Trust](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/running-intranet-applications-in-full-trust.md): Run Intranet applications in full trust with .NET Framework 3.5 SP1. Applications and their library assemblies can be run as full-trust assemblies from a network share.
+
+## Application Domains
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/application-domains.md): Read about application domains, which provide an isolation boundary between applications for security, reliability, versioning, & unloading assemblies in .NET.
+
+## Assembly how-to articles
+
+- [How to: Build a single-file assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/build-single-file-assembly.md): Explore how to build a single-file assembly in .NET. A single-file assembly can be a library (.dll) that targets .NET, or it can be an executable (.exe) file.
+- [How to: Share an assembly with other applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-share-an-assembly-with-other-applications.md): See how to share an assembly with other applications in .NET. Assemblies can be private (the default) or shared. To share an assembly, place it in the GAC.
+
+## Multifile assemblies
+
+- [Multifile assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/multifile-assemblies.md): Use multifile assemblies that target .NET using command-line compilers or Visual Studio with Visual C++. A file in the assembly must hold the assembly manifest.
+- [How to: Build a multifile assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/build-multifile-assembly.md): Learn how to build (create) a multifile assembly in .NET using sample code to illustrate each step in the procedure.
+
+## Use Application Domains
+
+- [Use Application Domains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/use.md): Use application domains, which provide a unit of isolation for the common language runtime (CLR). Application domains are created and run inside a process.
+- [How to: Create an Application Domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-create-an-application-domain.md): Review how to create an application domain in .NET. You can create an application domain to load assemblies to manage personally, or create one to execute code.
+- [How to: Unload an Application Domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-unload-an-application-domain.md): Read how to unload an application domain in .NET, using the AppDomain.Unload method to gracefully shut down the specified application domain.
+- [How to: Configure an Application Domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-configure-an-application-domain.md): Configure an application domain in .NET. You can provide the CLR with configuration information for a new application domain using the AppDomainSetup class.
+- [Retrieving Setup Information from an Application Domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/retrieve-setup-information.md): Retrieve setup information from an application domain in .NET using the System.AppDomain class or the AppDomainSetup object.
+- [How to: Load Assemblies into an Application Domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md): Learn how to load assemblies into an application domain in .NET. The recommended way is to use the static (or Shared) Load method in System.Reflection.Assembly.
+- [Shadow Copying Assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/shadow-copy-assemblies.md): Explore the shadow copying of assemblies in .NET, so ones that are used in an application domain can be updated without unloading the application domain.
+- [How to: Receive First-Chance Exception Notifications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-receive-first-chance-exception-notifications.md): Get first-chance exception notifications in .NET through the AppDomain class's FirstChanceException event, before the CLR searches for exception handlers.
+
+## Work with Assemblies and the Global Assembly Cache
+
+- [Work with Assemblies and the Global Assembly Cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/working-with-assemblies-and-the-gac.md): Work with assemblies and the global assembly cache (GAC) in .NET. Review the reasons why you might want to install an assembly in the GAC.
+- [How to: View the Contents of the Global Assembly Cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md): Learn how to view the contents of the global assembly cache in .NET by using the global assembly cache (GAC) tool (gacutil.exe).
+- [How to: Install an assembly into the global assembly cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/install-assembly-into-gac.md): Install an assembly into the global assembly cache (GAC) in .NET so it can be shared by many applications. Use Windows Installer or the GAC utility.
+- [How to: Remove an Assembly from the Global Assembly Cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md): Learn how to remove an assembly from the global assembly cache in .NET, by using either the global assembly cache tool (Gacutil.exe) or Windows Installer.
+- [Using Serviced Components with the Global Assembly Cache](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/app-domains/use-serviced-components-with-the-gac.md): Use serviced components (managed code COM+ components) with the global assembly cache in .NET. See if the CLR and COM+ services can handle non-GAC components.

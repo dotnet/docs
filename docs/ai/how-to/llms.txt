@@ -1,0 +1,13 @@
+# How To Docs
+
+## Authentication for Azure-hosted apps and services
+
+- [Auth to Azure OpenAI from an Azure-hosted app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/how-to/app-service-aoai-auth.md): Learn how to authenticate your Azure hosted .NET app to an Azure OpenAI resource using Microsoft Entra ID.
+
+## Call functions
+
+- [Access data in AI functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/how-to/access-data-in-functions.md): Learn how to pass data to AIFunction objects and how to access the data within the function delegate.
+
+## Security and content safety
+
+- [Work with content filtering](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/how-to/content-filtering.md): Learn how to manage OpenAI content filtering programmatically in a .NET app using the OpenAI client library.

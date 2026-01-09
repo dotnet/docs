@@ -1,0 +1,37 @@
+# How To Guides Docs
+
+## API
+
+- [Install extra dependencies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/install-extra-dependencies.md): Learn how to install any native libraries that ML.NET packages are dependent on but don't get installed with the NuGet packages
+- [Load data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/load-data-ml-net.md): Learn how to load data for processing and training into ML.NET using the API. Data is stored in files, databases, JSON, XML or in-memory collections.
+- [Prepare data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/prepare-data-ml-net.md): Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
+- [Work with DataFrames](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/getting-started-dataframe.md): Learn how to use DataFrame to manipulate and prepare data.
+
+## Infer.NET
+
+- [Probabilistic programming with Infer.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/matchup-app-infer-net.md): Discover how to use probabilistic programming with Infer.NET to create a game match-up list app based on a simplified version of TrueSkill.
+
+## Model Builder & CLI
+
+- [Load data into Model Builder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/load-data-model-builder.md): Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
+- [Label images for object detection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/label-images-for-object-detection-using-vott.md): How to use VoTT to label images for object detection in Model Builder
+- [Install Model Builder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/install-model-builder.md): Learn how to install the ML.NET Model Builder tool
+- [Install GPU in Model Builder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/install-gpu-model-builder.md): Learn how to install GPU support in Model Builder
+- [Install the CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/install-ml-net-cli.md): Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
+- [Format data for named entity recognition](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/ner-dataset-guide.md): Learn how to format data for the Named Entity Recognition (NER) scenario in Model Builder
+
+## Train, evaluate, and explain the model
+
+- [Train and evaluate a model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/train-machine-learning-model-ml-net.md): Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. A machine learning model identifies patterns within training data to make predictions using new data.
+- [Use the automated ML API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/how-to-use-the-automl-api.md): The ML.NET Automated ML (AutoML) API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
+- [Train a model using cross-validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/train-machine-learning-model-cross-validation-ml-net.md): Learn how to use cross validation to build more robust machine learning models in ML.NET. Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions.
+- [Inspect intermediate pipeline data values](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md): Learn how to inspect intermediate data during ML.NET machine learning pipeline loading, processing, and model training steps in ML.NET.
+- [Determine model feature importance with PFI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md): Understand the feature importance of models with Permutation Feature Importance in ML.NET
+
+## Use a trained model
+
+- [Save and load a model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net.md): Learn how to save and load trained models
+- [Use a model to make predictions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net.md): Learn to make predictions using a trained ML.NET model
+- [Retrain a model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/retrain-model-ml-net.md): Learn how to retrain a model in ML.NET
+- [Deploy a model to Azure Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md): Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
+- [Deploy a model to a web API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/machine-learning/how-to-guides/serve-model-web-api-ml-net.md): Serve an ML.NET sentiment analysis machine learning model using an ASP.NET Core Web API

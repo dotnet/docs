@@ -1,0 +1,6 @@
+# 8.0 Docs
+
+## Cryptography
+
+- [AesGcm authentication tag size on macOS](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/8.0/aesgcm-auth-tag-size.md): Learn about the .NET 8 breaking change in cryptography where AesGcm on macOS only supports 16-byte (128-bit) authentication tags.
+- [RSA.EncryptValue and RSA.DecryptValue are obsolete](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md): Learn about the .NET 8 breaking change in cryptography where RSA.EncryptValue and RSA.DecryptValue are marked obsolete.

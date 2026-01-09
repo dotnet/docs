@@ -1,0 +1,49 @@
+# Style Rules Docs
+
+## Code style rules
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/index.md): Learn about the different .NET code-style rules and categories.
+- [Naming rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/naming-rules.md): Learn about the .NET code-style rules for naming code elements.
+
+## IDE0055
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0055.md): Learn about using code-style rule IDE0055 to format indentations, spaces, and new lines.
+- [.NET formatting options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/dotnet-formatting-options.md): Learn about the code-style options for formatting .NET code.
+- [C# formatting options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/csharp-formatting-options.md): Learn about the code style options for formatting C# code files.
+
+## Language and unnecessary code rules
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/language-rules.md): Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
+- [IDE0001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0001.md): Learn about code analysis rule IDE0001: Simplify name
+- [IDE0002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0002.md): Learn about code analysis rule IDE0002: Simplify member access
+- [IDE0003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0003-ide0009.md): Learn about code analysis rules IDE0003 and IDE0009: 'this.' and 'Me.' qualifiers
+- [IDE0004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0004.md): Learn about code analysis rule IDE0004: Remove unnecessary cast
+- [IDE0005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0005.md): Learn about code analysis style rule IDE0005.
+- [IDE0007](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0007-ide0008.md): Learn about code analysis rules IDE0007 and IDE0008: 'var' preferences
+- [IDE0010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0010.md): Learn about code analysis rule IDE0010: Add missing cases to switch statement
+- [IDE0011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0011.md): Learn about code analysis rule IDE0011: Add braces
+- [IDE0016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0016.md): Learn about code analysis rule IDE0016: Use throw expression
+- [IDE0017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0017.md): Learn about code analysis rule IDE0017: Use object initializers
+- [IDE0018](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0018.md): Learn about code analysis rule IDE0018: Inline variable declaration
+- [IDE0019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0019.md): Learn about code analysis rule IDE0019: Use pattern matching to avoid 'as' followed by a 'null' check
+- [IDE0020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0020-ide0038.md): Learn about code analysis rules IDE0020 and IDE0038: Use pattern matching to avoid 'is' check followed by a cast
+- [IDE0021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0021.md): Learn about code analysis rule IDE0021: Use expression body for constructors
+- [IDE0022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0022.md): Learn about code analysis rule IDE0022: Use expression body for methods
+- [IDE0023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0023-ide0024.md): Learn about code analysis rule IDE0023: Use expression body for operators
+- [IDE0025](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0025.md): Learn about code analysis rule IDE0025: Use expression body for properties
+- [IDE0026](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0026.md): Learn about code analysis rule IDE0026: Use expression body for indexers
+- [IDE0027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0027.md): Learn about code analysis rule IDE0027: Use expression body for accessors
+- [IDE0028](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0028.md): Learn about code analysis rule IDE0028: Use collection initializers or expressions
+- [IDE0029](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0029-ide0030-ide0270.md): Learn about code analysis rules IDE0029, IDE0030, and IDE0270: Null check can be simplified
+- [IDE0031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0031.md): Learn about code analysis rule IDE0031: Use null propagation
+- [IDE0032](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0032.md): Learn about code analysis rule IDE0032: Use auto property
+- [IDE0033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0033.md): Learn about code analysis rule IDE0033: Use explicitly provided tuple name
+- [IDE0034](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0034.md): Learn about code analysis rule IDE0034: Simplify 'default' expression
+- [IDE0035](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0035.md): Learn about code analysis rule IDE0035: Remove unreachable code
+- [IDE0036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0036.md): Learn about code analysis rule IDE0036: Order modifiers
+- [IDE0037](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0037.md): Learn about code analysis rule IDE0037: Use inferred member name
+- [IDE0039](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0039.md): Learn about code analysis rule IDE0039: Use local function instead of lambda
+- [IDE0040](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0040.md): Learn about code analysis rule IDE0040: Add accessibility modifiers
+- [IDE0041](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0041.md): Learn about code analysis rule IDE0041: Use is null check
+- [IDE0042](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0042.md): Learn about code analysis rule IDE0042: Deconstruct variable declaration
+- [IDE0044](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/ide0044.md): Learn about code analysis rule IDE0044: Add readonly modifier

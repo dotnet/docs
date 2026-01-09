@@ -1,0 +1,49 @@
+# Adonet Docs
+
+- [ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/index.md): Learn about ADO.NET, classes that expose data access services for .NET Framework programmers for creating distributed, data-sharing applications.
+- [What's New in ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/whats-new.md): Learn about the new features in ADO.NET in .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
+
+## ADO.NET Overview
+
+- [ADO.NET Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ado-net-overview.md): Read an overview of ADO.NET in .NET Framework and read about resources for more detailed explanations and examples.
+- [ADO.NET Architecture](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ado-net-architecture.md): Learn about ADO.NET architecture, including the two main components for accessing and manipulating data: the .NET Framework data providers and the DataSet.
+- [ADO.NET Technology Options and Guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ado-net-technology-options-and-guidelines.md): Learn more about: ADO.NET Technology Options and Guidelines
+- [LINQ and ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/linq-and-ado-net.md): Learn how to form set-based queries in application code using Language-Integrated Query (LINQ) in ADO.NET, without having to use a separate query language.
+- [.NET Framework Data Providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/data-providers.md): Learn how a .NET Framework data provider is used to connect to a database, run commands, and retrieve results in ADO.NET.
+- [ADO.NET DataSets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ado-net-datasets.md): Learn about DataSet, a memory-resident data representation that provides a consistent relational programming model regardless of the data source in ADO.NET.
+- [Side-by-Side Execution in ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/side-by-side-execution.md): Learn more about: Side-by-Side Execution in ADO.NET
+- [ADO.NET Code Examples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ado-net-code-examples.md): These examples show .NET Framework programmers how to retrieve data from a database by using ADO.NET data providers and ADO.NET Entity Framework.
+
+## Commands and Parameters
+
+- [Commands and Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/commands-and-parameters.md): Learn how to use Command objects for each .NET Framework data provider to run commands and return results from a data source.
+- [Executing a Command](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/executing-a-command.md): Learn more about: Executing a Command
+- [Configuring Parameters and Parameter Data Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md): Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation in ADO.NET.
+- [Generating Commands with CommandBuilders](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/generating-commands-with-commandbuilders.md): Learn more about: Generating Commands with CommandBuilders
+- [Obtaining a Single Value from a Database](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/obtaining-a-single-value-from-a-database.md): Learn how to return a single value in ADO.NET. This example code returns the identity column value for an inserted record.
+
+## Connecting to a Data Source
+
+- [Connecting to a Data Source](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connecting-to-a-data-source.md): Learn about Connection objects, used to connect to data sources in ADO.NET. The Connection object you choose depends on the type of data source.
+- [Establishing the Connection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/establishing-the-connection.md): Learn more about establishing a connection to SQL Server using the .NET Framework Data Provider for SQL Server.
+- [Connection Events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-events.md): Learn more about: Connection Events
+
+## Connection Pooling
+
+- [Connection Pooling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-pooling.md): Learn about connection pooling, an optimization technique that ADO.NET uses to minimize the cost of opening connections to data sources.
+- [SQL Server Connection Pooling (ADO.NET)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql-server-connection-pooling.md): Learn how ADO.NET minimizes the cost of opening connections by using SQL Server connection pooling, which reduces overhead for new connections.
+- [OLE DB, ODBC, and Oracle Connection Pooling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md): Learn more about: OLE DB, ODBC, and Oracle connection pooling, which can significantly enhance the performance and scalability of your application.
+
+## Connection Strings
+
+- [Connection Strings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-strings.md): Learn about connection strings in ADO.NET, which contain initialization information passed as a parameter from a data provider to a data source.
+- [Connection String Builders](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-string-builders.md): Learn about the connection string builder classes used for different providers in ADO.NET, all of which inherit from DbConnectionStringBuilder.
+- [Connection Strings and Configuration Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-strings-and-configuration-files.md): Learn how to store connection strings for ADO.NET applications in an application configuration file.
+- [Connection String Syntax](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/connection-string-syntax.md): Learn about syntax of connection strings in ADO.NET. The syntax for each provider is documented in its ConnectionString property.
+- [Protecting Connection Information](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/protecting-connection-information.md): Learn about security vulnerabilities in connection strings, which can arise due to how connection strings are constructed and persisted and authentication type.
+
+## Data Binding and LINQ to DataSet
+
+- [Data Binding and LINQ to DataSet](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/data-binding-and-linq-to-dataset.md): Learn more about: Data Binding and LINQ to DataSet
+- [Creating a DataView Object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/creating-a-dataview-object-linq-to-dataset.md): Learn more about: Creating a DataView Object (LINQ to DataSet)
+- [Filtering with DataView](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/filtering-with-dataview-linq-to-dataset.md): Learn more about: Filtering with DataView (LINQ to DataSet)

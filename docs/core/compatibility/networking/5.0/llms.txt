@@ -1,0 +1,9 @@
+# 5.0 Docs
+
+## Networking
+
+- [Cookie path handling conforms to RFC 6265](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/5.0/cookie-path-conforms-to-rfc6265.md): Learn about the breaking change in .NET 5 where path-handling algorithms defined in RFC 6265 were implemented for the Cookie and CookieContainer classes.
+- [LocalEndPoint is updated after calling SendToAsync](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/5.0/localendpoint-updated-on-sendtoasync.md): Learn about the breaking change in .NET 5 where SendToAsync now updates the value of the local endpoint property to the socket's local address.
+- [MulticastOption.Group doesn't accept null](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/5.0/multicastoption-group-doesnt-accept-null.md): Learn about the breaking change in .NET 5 where MulticastOption.Group no longer accepts a null value.
+- [Streams allow successive Begin operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md): Learn about the breaking change in .NET 5 where error cases on security streams are handled differently, and successive calls to BeginAuthenticateAsServer or BeginAuthenticateAsClient may no longer fail.
+- [WinHttpHandler removed from .NET runtime](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/5.0/winhttphandler-removed-from-runtime.md): Learn about the breaking change in .NET 5 where WinHttpHandler was removed from the .NET runtime.

@@ -1,0 +1,13 @@
+# Thread Safe Docs
+
+## Overview
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/index.md): Get started with thread-safe collections using the System.Collections.Concurrent namespace in .NET, which includes thread-safe and scalable collection classes.
+- [BlockingCollection overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/blockingcollection-overview.md): Read about BlockingCollection<T>, a thread-safe collection class in .NET. This class offers features like concurrent adding & taking of items from many threads.
+- [When to use a thread-safe collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md): Know when to use a thread-safe collection in .NET. There are 5 collection types that are specially designed to support multithreaded add & remove operations.
+- [Add and take items from a BlockingCollection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-add-and-take-items.md): Learn more about: How to: Add and Take Items Individually from a BlockingCollection
+- [Use ForEach to remove items in a BlockingCollection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-use-foreach-to-remove.md): Learn more about: Use foreach to remove items in a BlockingCollection
+- [Add and remove items from a ConcurrentDictionary](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-add-and-remove-items.md): Read an example of how to add, retrieve, update, and remove items from the ConcurrentDictionary<TKey,TValue> collection class in .NET.
+- [Add bounding and blocking functionality](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md): Learn more about: How to: Add Bounding and Blocking Functionality to a Collection
+- [Use arrays of blocking collections in a pipeline](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md): Learn more about: How to: Use Arrays of Blocking Collections in a Pipeline
+- [Create an object pool using a ConcurrentBag](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/collections/thread-safe/how-to-create-an-object-pool.md): Learn more about: Create an object pool by using a ConcurrentBag

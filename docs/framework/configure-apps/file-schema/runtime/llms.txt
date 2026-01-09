@@ -1,0 +1,49 @@
+# Runtime Docs
+
+- [Runtime settings schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/index.md): Learn more about: Runtime settings schema
+
+## <assemblyBinding> element
+
+- [<assemblyBinding> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md): Learn more about: <assemblyBinding> Element for <runtime>
+- [<probing> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/probing-element.md): Learn more about: <probing> Element
+- [<qualifyAssembly> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/qualifyassembly-element.md): Learn more about: <qualifyAssembly> Element
+- [<supportPortability> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/supportportability-element.md): Learn more about: <supportPortability> Element
+
+## <dependentAssembly> element
+
+- [<dependentAssembly> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md): Learn more about: <dependentAssembly> Element
+- [<assemblyIdentity> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/assemblyidentity-element-for-runtime.md): Learn more about: <assemblyIdentity> Element for <runtime>
+- [<bindingRedirect> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md): Learn more about: <bindingRedirect> Element
+- [<codeBase> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/codebase-element.md): Learn more about: <codeBase> Element
+- [<publisherPolicy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md): Learn more about: <publisherPolicy> Element
+
+## <namedCaches> element
+
+- [<namedCaches> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md): Learn more about: <namedCaches> Element (Cache Settings)
+- [<add> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/add-element-for-namedcaches.md): Learn more about: <add> Element for <namedCaches>
+- [<clear> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/clear-element-for-namedcaches.md): Learn more about: <clear> Element for <namedCaches>
+- [<remove> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/remove-element-for-namedcaches.md): Learn more about: <remove> Element for <namedCaches>
+
+## Runtime caching
+
+- [<system.runtime.caching> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md): Learn more about: <system.runtime.caching> Element (Cache Settings)
+- [<memoryCache> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md): Learn more about: <memoryCache> Element (Cache Settings)
+
+## Runtime configuration
+
+- [<runtime> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/runtime-element.md): Learn more about: <runtime> Element
+- [<alwaysFlowImpersonationPolicy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md): Learn more about: <alwaysFlowImpersonationPolicy> Element
+- [<AppContextSwitchOverrides> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md): Learn more about the AppContextSwitchOverrides element that defines switches used by AppContext to provide an opt-out mechanism for new functionality.
+- [<appDomainManagerAssembly> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md): Learn more about: <appDomainManagerAssembly> Element
+- [<appDomainManagerType> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md): Learn more about: <appDomainManagerType> Element
+- [<appDomainResourceMonitoring> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md): Learn more about: <appDomainResourceMonitoring> Element
+- [<bypassTrustedAppStrongNames> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md): Learn more about: <bypassTrustedAppStrongNames> Element
+- [<CompatSortNLSVersion> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md): Learn more about: <CompatSortNLSVersion> Element
+- [<Crst_DisableSpinWait> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/crst-disablespinwait-element.md): Learn more about: <Crst_DisableSpinWait> element
+- [<developmentMode> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/developmentmode-element.md): Learn more about: <developmentMode> Element
+- [<disableCachingBindingFailures> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md): Learn more about: <disableCachingBindingFailures> Element
+- [<disableCommitThreadStack> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/disablecommitthreadstack-element.md): Learn more about: <disableCommitThreadStack> Element
+- [<disableFusionUpdatesFromADManager> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/disablefusionupdatesfromadmanager-element.md): Learn more about: <disableFusionUpdatesFromADManager> Element
+- [<disableStackOverflowProbing> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/disablestackoverflowprobing-element.md): Learn more about the <disableStackOverflowProbing> element
+- [<EnableAmPmParseAdjustment> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/enableampmparseadjustment-element.md): Learn more about: <EnableAmPmParseAdjustment> Element
+- [<enforceFIPSPolicy> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/runtime/enforcefipspolicy-element.md): Learn more about: <enforceFIPSPolicy> Element

@@ -1,0 +1,8 @@
+# 6.0 Docs
+
+## Extensions
+
+- [AddProvider checks for non-null provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/extensions/6.0/addprovider-null-check.md): Learn about the .NET 6 breaking change in .NET extensions where AddProvider now validates that the provider argument is not null.
+- [FileConfigurationProvider.Load throws InvalidDataException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/extensions/6.0/filename-in-load-exception.md): Learn about the .NET 6 breaking change in .NET extensions where Load can throw an InvalidDataException with the file path that failed to load.
+- [Repeated XML elements include index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/extensions/6.0/repeated-xml-elements.md): Learn about the .NET 6 breaking change where repeated XML elements now include an index key when using Microsoft.Extensions.Configuration.Xml.
+- [Resolving disposed ServiceProvider throws exception](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/extensions/6.0/service-provider-disposed.md): Learn about the .NET 6 breaking change in .NET extensions where resolving a disposed service provider throws an exception.

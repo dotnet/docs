@@ -1,0 +1,12 @@
+# 5.0 Docs
+
+## ASP.NET Core
+
+- [Cryptography APIs not supported on browser](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md): Learn about the breaking change in .NET 5 where cryptography APIs throw an exception when run on a browser.
+
+## Cryptography
+
+- [Cryptography.Oid is init-only](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/5.0/cryptography-oid-init-only.md): Learn about the breaking change in .NET 5 where property setters on the Cryptography.Oid class now throw an exception if you attempt to change a value.
+- [Default TLS cipher suites on Linux](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/5.0/default-cipher-suites-for-tls-on-linux.md): Learn about the breaking change in .NET 5 where .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL.
+- [Create() overloads on cryptographic abstractions are obsolete](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md): Learn about the breaking change in .NET 5 where the parameterless Create() overloads on cryptographic abstractions are obsolete.
+- [Default FeedbackSize value changed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/cryptography/5.0/tripledes-default-feedback-size-change.md): Learn about the breaking change in .NET 5 where the default value for the FeedbackSize property on the TripleDES instance returned from TripleDES.Create() has changed from 64 to 8.

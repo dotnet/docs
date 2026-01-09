@@ -1,0 +1,49 @@
+# Network Programming Docs
+
+## Cache Management for Network Applications
+
+- [Cache Management for Network Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/cache-management-for-network-applications.md): Learn more about: Cache Management for Network Applications
+- [Cache Policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/cache-policy.md): Learn about cache policy, the rules that determine whether a request can be satisfied using a cached copy of the requested resource.
+- [Location-Based Cache Policies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/location-based-cache-policies.md): Learn more about: Location-Based Cache Policies
+
+## Configuring Caching in Network Applications
+
+- [Configuring Caching in Network Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/configuring-caching-in-network-applications.md): Learn more about: Configuring Caching in Network Applications
+- [How to: Set a Location-Based Cache Policy for an Application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-set-a-location-based-cache-policy-for-an-application.md): Learn more about: How to: Set a Location-Based Cache Policy for an Application
+- [How to: Set the Default Time-Based Cache Policy for an Application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-set-the-default-time-based-cache-policy-for-an-application.md): Learn more about: How to: Set the Default Time-Based Cache Policy for an Application
+- [How to: customize a time-based cache policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-customize-a-time-based-cache-policy.md): Learn more about: How to: customize a time-based cache policy
+- [How to: Set Cache Policy for a Request](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-set-cache-policy-for-a-request.md): Learn how to set a cache policy for a request in the .NET Framework. This cache policy allows a resource to be used from the cache for up to a day.
+
+## FTP
+
+- [FTP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/ftp.md): Learn about the comprehensive support for the FTP protocol that .NET Framework provides with the FtpWebRequest and FtpWebResponse classes.
+- [Download Files with FTP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-download-files-with-ftp.md): This article shows a sample of how to download a file from an FTP server.
+- [Upload Files with FTP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-upload-files-with-ftp.md): This article shows a sample of how to upload a file to an FTP server.
+- [List Directory Contents with FTP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-list-directory-contents-with-ftp.md): This article shows a sample of how to list the directory contents of an FTP server.
+
+## Internet Authentication
+
+- [Internet Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/internet-authentication.md): Learn about the variety of client authentication mechanisms that System.Net classes support for your applications in the .NET Framework.
+- [Basic and Digest Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/basic-and-digest-authentication.md): Learn to use basic and digest authentication, where an application provides a user name and password in the WebRequest object that it uses to request data.
+- [NTLM and Kerberos Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/ntlm-and-kerberos-authentication.md): Learn how default NTLM authentication and Kerberos authentication work for a .NET Framework application and learn about non-default NTLM authentication.
+
+## Network programming in .NET Framework
+
+- [Configuring Internet Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/configuring-internet-applications.md): Learn how to use the <system.Net> element to configure internet applications in the .NET Framework. This article contains example code.
+- [UDP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/using-udp-services.md): The UdpClient class abstracts the details to create a socket to request and receive data using UDP in the .NET Framework.
+- [Best Practices for System.Net Classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/best-practices-for-system-net-classes.md): Follow these recommendations to use the classes contained in System.Net to their best advantage in .NET Framework programming.
+- [Integrated Windows Authentication with Extended Protection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md): Learn more about: Integrated Windows Authentication with Extended Protection
+
+## Network Tracing in the .NET Framework
+
+- [Network Tracing in the .NET Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/network-tracing.md): Learn about network tracing in the .NET Framework, which provides information about method invocations and network traffic for a managed application.
+- [Interpreting Network Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/interpreting-network-tracing.md): Find out how to use tracing to capture calls your application makes to various System.Net class members in the .NET Framework.
+- [Enabling Network Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/enabling-network-tracing.md): Learn how to enable network tracing, which provides information about method invocations and network traffic for a managed application in the .NET Framework.
+- [How to: Configure Network Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/how-to-configure-network-tracing.md): Learn how to configure network tracing in the computer configuration file or application configuration file. An application configuration file takes precedence.
+
+## Peer Name Resolution Protocol
+
+- [Peer Name Resolution Protocol](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/peer-name-resolution-protocol.md): Learn about the Peer Name Resolution Protocol (PNRP), a secure, scalable, and dynamic name registration and name resolution protocol.
+- [Peer Names and PNRP IDs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/peer-names-and-pnrp-ids.md): Learn more about: Peer Names and PNRP IDs
+- [Peer Name Publication and Resolution](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/peer-name-publication-and-resolution.md): Learn more about: Peer Name Publication and Resolution
+- [PNRP Clouds](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/network-programming/pnrp-clouds.md): Learn more about: PNRP Clouds

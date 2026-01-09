@@ -1,0 +1,19 @@
+# SDK Docs
+
+## Azure SDK for .NET
+
+- [What is the Azure SDK for .NET?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/azure-sdk-for-dotnet.md): Provides an overview of what the Azure SDK for .NET is and the basic steps to use the SDK in a .NET application
+- [ASP.NET Core guidance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/aspnetcore-guidance.md): Learn best practices and the steps to properly implement the Azure SDK for .NET in your ASP.NET Core apps.
+- [Resource management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/resource-management.md): Learn how to use the Azure SDK for .NET to manage Azure resources.
+- [Dependency injection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/dependency-injection.md): Learn how to use dependency injection with the Azure SDK for .NET client libraries.
+- [Thread safety](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/thread-safety.md): Learn about thread safety in Azure SDK client objects and how this design impacts client lifetime management.
+- [Logging](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/logging.md): Learn how to enable logging with the Azure SDK for .NET client libraries
+- [Pagination](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/pagination.md): Learn how to use pagination with the Azure SDK for .NET.
+- [Unit testing and mocking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/unit-testing-mocking.md): Learn techniques and tools for unit testing and mocking the Azure SDK for .NET
+- [Configure a proxy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/configure-proxy.md): Learn different approaches for configuring a proxy for use with the Azure SDK for .NET client libraries.
+- [Library method types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/protocol-convenience-methods.md): Learn about the key differences between protocol and convenience methods in the Azure SDK client libraries for .NET.
+- [Packages list](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/packages.md): Listing of the package names, NuGet links, docs links, and source code links for all libraries in the Azure SDK for .NET.
+
+## Children
+
+- [Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/llms.txt)

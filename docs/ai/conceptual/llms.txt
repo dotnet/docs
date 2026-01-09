@@ -1,0 +1,15 @@
+# Conceptual Docs
+
+## Concepts
+
+- [How generative AI and LLMs work](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/how-genai-and-llms-work.md): Understand how Generative AI and large language models (LLMs) work and how they might be useful in your .NET projects.
+- [Agents](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/agents.md): Introduction to agents
+- [Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/understanding-tokens.md): Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs
+- [Embeddings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/embeddings.md): Learn how embeddings extend the limits and capabilities of AI models in .NET.
+- [Vector databases](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/vector-databases.md): Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET.
+- [Data ingestion](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/data-ingestion.md): Introduction to data ingestion
+- [Prompt engineering](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/prompt-engineering-dotnet.md): Learn basic prompt engineering concepts and how to implement them using .NET tools such as the Semantic Kernel SDK
+- [Chain-of-thought prompting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/chain-of-thought-prompting.md): Learn how chain of thought prompting can simplify prompt engineering.
+- [Zero-shot and few-shot learning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/zero-shot-learning.md): Learn the use cases for zero-shot and few-shot learning in prompt engineering.
+- [Retrieval-augmented generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/rag.md): Learn how retrieval-augmented generation lets you use your data with LLMs to generate better completions in .NET.
+- [OpenAI function calling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/conceptual/understanding-openai-functions.md): Understand how function calling enables you to integrate external tools with your OpenAI application.

@@ -1,0 +1,7 @@
+# Performance Docs
+
+## Performance engineering
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/advanced-topics/performance/index.md): Performance work in .NET means removing allocations from your code. One technique is to change critical data structures from `class` to `struct`. That changes semantics and means more data is being copied. Learn how to minimize allocations while preserving semantics and avoid extra copies.
+- [Tutorial - reduce allocations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/advanced-topics/performance/ref-tutorial.md): Learn to remove allocations from your code. Make use of `struct` types for fewer allocations. Use the `ref` and `in` modifiers to avoid copies and enable or disable modification. Use `ref struct` types like `Span<T>` to directly use memory efficiently.
+- [Tutorial - Write a custom string interpolation handler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/advanced-topics/performance/interpolated-string-handler.md): This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.

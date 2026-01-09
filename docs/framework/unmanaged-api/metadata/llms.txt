@@ -1,0 +1,49 @@
+# Metadata Docs
+
+- [Metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/index.md): Learn more about: Metadata (Unmanaged API Reference)
+- [Metadata Global Static Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md): Learn more about: Metadata Global Static Functions
+
+## ICeeGen Interface
+
+- [ICeeGen Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-interface.md): Learn more about: ICeeGen Interface
+- [AddSectionReloc Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md): Learn more about: ICeeGen::AddSectionReloc Method
+- [AllocateMethodBuffer Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-allocatemethodbuffer-method.md): Learn more about: ICeeGen::AllocateMethodBuffer Method
+- [ComputePointer Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-computepointer-method.md): Learn more about: ICeeGen::ComputePointer Method
+- [EmitString Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-emitstring-method.md): Learn more about: ICeeGen::EmitString Method
+- [GenerateCeeFile Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-generateceefile-method.md): Learn more about: ICeeGen::GenerateCeeFile Method
+- [GenerateCeeMemoryImage Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-generateceememoryimage-method.md): Learn more about: ICeeGen::GenerateCeeMemoryImage Method
+- [GetIlSection Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getilsection-method.md): Learn more about: ICeeGen::GetIlSection Method
+- [GetIMapTokenIface Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getimaptokeniface-method.md): Learn more about: ICeeGen::GetIMapTokenIface Method
+- [GetMethodBuffer Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getmethodbuffer-method.md): Learn more about: ICeeGen::GetMethodBuffer Method
+- [GetSectionBlock Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getsectionblock-method.md): Learn more about: ICeeGen::GetSectionBlock Method
+- [GetSectionCreate Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getsectioncreate-method.md): Learn more about: ICeeGen::GetSectionCreate Method
+- [GetSectionDataLen Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getsectiondatalen-method.md): Learn more about: ICeeGen::GetSectionDataLen Method
+- [GetString Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getstring-method.md): Learn more about: ICeeGen::GetString Method
+- [GetStringSection Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-getstringsection-method.md): Learn more about: ICeeGen::GetStringSection Method
+- [TruncateSection Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/iceegen-truncatesection-method.md): Learn more about: ICeeGen::TruncateSection Method
+
+## IHostFilter Interface
+
+- [IHostFilter Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/ihostfilter-interface.md): Learn more about: IHostFilter Interface
+- [MarkToken Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/ihostfilter-marktoken-method.md): Learn more about: IHostFilter::MarkToken Method
+
+## IMetaDataConverter interface
+
+- [IMetaDataConverter interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/imetadataconverter-interface.md): Learn more about: IMetaDataConverter Interface
+- [GetMetaDataFromTypeInfo method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/imetadataconverter-getmetadatafromtypeinfo-method.md): Learn more about: IMetaDataConverter::GetMetaDataFromTypeInfo Method
+- [GetMetaDataFromTypeLib method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/imetadataconverter-getmetadatafromtypelib-method.md): Learn more about: IMetaDataConverter::GetMetaDataFromTypeLib Method
+- [GetTypeLibFromMetaData method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/imetadataconverter-gettypelibfrommetadata-method.md): Learn more about: IMetaDataConverter::GetTypeLibFromMetaData Method
+
+## Metadata Enumerations
+
+- [Metadata Enumerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/metadata-enumerations.md): Learn more about: Metadata Enumerations (.NET Framework)
+- [AssemblyFlags Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/assemblyflags-enumeration.md): Learn more about: AssemblyFlags Enumeration
+- [CeeSectionAttr Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/ceesectionattr-enumeration.md): Learn more about: CeeSectionAttr Enumeration
+- [CeeSectionRelocType Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/ceesectionreloctype-enumeration.md): Learn more about: CeeSectionRelocType Enumeration
+- [COINITICOR Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/coiniticor-enumeration.md): Learn more about: COINITICOR Enumeration
+- [COINITIEE Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/coinitiee-enumeration.md): Learn more about: COINITIEE Enumeration
+- [CorArgType Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/corargtype-enumeration.md): Learn more about: CorArgType Enumeration
+- [CorAttributeTargets Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/corattributetargets-enumeration.md): Learn more about: CorAttributeTargets Enumeration
+- [CorCallingConvention Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/corcallingconvention-enumeration.md): Learn more about: CorCallingConvention Enumeration
+- [CorEventAttr Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/coreventattr-enumeration.md): Learn more about: CorEventAttr Enumeration
+- [CorFieldAttr Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/metadata/corfieldattr-enumeration.md): Learn more about: CorFieldAttr Enumeration

@@ -1,0 +1,33 @@
+# C# Docs
+
+## C# concepts
+
+- [Nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/nullable-references.md): This article provides an overview of nullable reference types. Learn how the feature provides safety against null reference exceptions, for new and existing projects.
+- [Nullable reference migrations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/nullable-migration-strategies.md): Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
+- [Methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/methods.md): Overview of methods, method parameters, and method return values
+- [Iterators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/iterators.md): Learn how to use built-in C# iterators and how to create your own custom iterator methods.
+- [Versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/versioning.md): Understand how versioning works in C# and .NET
+
+## Delegates & events
+
+- [Introduction to delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/delegates-overview.md): The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
+- [System.Delegate and the delegate keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/delegate-class.md): Learn about the classes in .NET that support delegates and how those map to the 'delegate' keyword.
+- [Strongly typed delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/delegates-strongly-typed.md): Learn how to use generic delegate types to declare custom types when creating a feature requiring delegates.
+- [Common patterns for delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/delegates-patterns.md): Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
+- [Introduction to events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/events-overview.md): Learn about events in .NET and our language design goals for events in this overview.
+- [Standard .NET event patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/event-pattern.md): Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
+- [The updated .NET event pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/modern-events.md): Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
+- [Distinguish delegates and events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/distinguish-delegates-events.md): Learn the difference between delegates and events and when to use each of these features of .NET Core.
+
+## Children
+
+- [Asynchronous Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/asynchronous-programming/llms.txt)
+- [How To](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/how-to/llms.txt)
+- [Language Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/llms.txt)
+- [Linq](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/llms.txt)
+- [Misc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/misc/llms.txt)
+- [Roslyn SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/roslyn-sdk/llms.txt)
+- [Specification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/specification/llms.txt)
+- [Tour Of C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/tour-of-csharp/llms.txt)
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/tutorials/llms.txt)
+- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/whats-new/llms.txt)

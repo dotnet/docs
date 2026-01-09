@@ -1,0 +1,49 @@
+# Mstest Analyzers Docs
+
+## Code analysis
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/overview.md): Learn about the MSTest code analysis.
+
+## Design
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/design-rules.md): Learn about MSTest code analysis design rules.
+- [MSTEST0004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0004.md): Learn about code analysis rule MSTEST0004: Public types should be test classes
+- [MSTEST0006](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0006.md): Learn about code analysis rule MSTEST0006: Avoid '[ExpectedException]'
+- [MSTEST0015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0015.md): Learn about code analysis rule MSTEST0015: Test method should not be ignored
+- [MSTEST0016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0016.md): Learn about code analysis rule MSTEST0016: Test class should have test method
+- [MSTEST0019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0019.md): Learn about code analysis rule MSTEST0019: Prefer TestInitialize methods over constructors
+- [MSTEST0020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0020.md): Learn about code analysis rule MSTEST0020: Prefer constructors over TestInitialize methods
+- [MSTEST0021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0021.md): Learn about code analysis rule MSTEST0021: Prefer Dispose over TestCleanup methods
+- [MSTEST0022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0022.md): Learn about code analysis rule MSTEST0022: Prefer TestCleanup over Dispose methods
+- [MSTEST0025](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0025.md): Learn about code analysis rule MSTEST0025: Use 'Assert.Fail' instead of an always-failing assert
+- [MSTEST0029](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0029.md): Learn about code analysis rule MSTEST0029: Public method should be test method
+- [MSTEST0036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0036.md): Learn about code analysis rule MSTEST0036: Do not use shadowing inside test class.
+- [MSTEST0044](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0044.md): Learn about code analysis rule MSTEST0044: Prefer TestMethod over DataTestMethod
+- [MSTEST0045](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0045.md): Learn about code analysis rule MSTEST0045: Use cooperative cancellation for timeout
+
+## Performance
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/performance-rules.md): Learn about MSTest code analysis performance rules.
+- [MSTEST0001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0001.md): Learn about code analysis rule MSTEST0001: Explicitly enable or disable tests parallelization
+
+## Suppression
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/suppression-rules.md): Learn about MSTest code suppression rules.
+- [MSTEST0027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0027.md): Learn about code suppressor MSTEST0027: Use Async suffix for async methods suppressor.
+- [MSTEST0028](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0028.md): Learn about code suppressor MSTEST0028: Use Async suffix for async methods suppressor.
+- [MSTEST0033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0033.md): Learn about code suppressor MSTEST0033: Non-nullable reference not initialized suppressor.
+
+## Usage
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/usage-rules.md): Learn about MSTest code analysis usage rules.
+- [MSTEST0002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0002.md): Learn about code analysis rule MSTEST0002: Test classes should have valid layout
+- [MSTEST0003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0003.md): Learn about code analysis rule MSTEST0003: Test methods should have valid layout
+- [MSTEST0005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0005.md): Learn about code analysis rule MSTEST0005: Test context property should have valid layout
+- [MSTEST0007](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0007.md): Learn about code analysis rule MSTEST0007: Ensure test attributes are set only on methods marked with the `TestMethod` attribute
+- [MSTEST0008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0008.md): Learn about code analysis rule MSTEST0008: TestInitialize method should have valid layout
+- [MSTEST0009](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0009.md): Learn about code analysis rule MSTEST0009: TestCleanup method should have valid layout
+- [MSTEST0010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0010.md): Learn about code analysis rule MSTEST0010: ClassInitialize method should have valid layout
+- [MSTEST0011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0011.md): Learn about code analysis rule MSTEST0011: ClassCleanup method should have valid layout
+- [MSTEST0012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0012.md): Learn about code analysis rule MSTEST0012: AssemblyInitialize method should have valid layout
+- [MSTEST0013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0013.md): Learn about code analysis rule MSTEST0013: AssemblyCleanup method should have valid layout
+- [MSTEST0014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/testing/mstest-analyzers/mstest0014.md): Learn about code analysis rule MSTEST0014: DataRow should be valid

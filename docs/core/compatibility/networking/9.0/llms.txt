@@ -1,0 +1,10 @@
+# 9.0 Docs
+
+## Networking
+
+- [HttpClient metrics report `server.port` unconditionally](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/server-port-attribute.md): Learn about the breaking change in networking in .NET 9 where HttpClient metrics now report the `server.port` attribute unconditionally to maintain compliance with Open Telemetry standards.
+- [HttpClientFactory logging redacts header values by default](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/redact-headers.md): Learn about the .NET 9 breaking change in networking where HttpClientFactory logging redacts all header values by default.
+- [HttpClientFactory uses SocketsHttpHandler as primary handler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/default-handler.md): Learn about the breaking change in networking in .NET 9 where HttpClientFactory now uses SocketsHttpHandler as the default primary handler.
+- [HttpListenerRequest.UserAgent is nullable](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/useragent-nullable.md): Learn about the .NET 9 breaking change in networking where the HttpListenerRequest.UserAgent property is annotated as being nullable.
+- [Uri query redaction in HttpClient EventSource events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/query-redaction-events.md): Learn about the breaking change in networking in .NET 9 where HttpClient EventSource events scrub query strings by default to enhance privacy.
+- [Uri query redaction in IHttpClientFactory logs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/networking/9.0/query-redaction-logs.md): Learn about the breaking change in networking in .NET 9 where the IHttpClientFactory implementation scrubs query strings in logs to enhance privacy.

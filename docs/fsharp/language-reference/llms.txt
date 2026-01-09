@@ -1,0 +1,49 @@
+# Language Reference Docs
+
+## Collections
+
+- [Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/fsharp-collection-types.md): Learn about F# collection types and how they differ from collection types .NET.
+- [Lists](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/lists.md): Learn about F# lists, an ordered, immutable series of elements of the same type.
+- [Arrays](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/arrays.md): Learn how to create and use arrays in the F# programming language.
+- [Slices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/slices.md): Learn how to use slices for existing F# data types and how to define your own slices for other data types.
+- [Sequences](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/sequences.md): Learn how to use F# sequences, when you have an ordered collection of data but don't necessarily expect to use all of the elements.
+- [Reference cells](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/reference-cells.md): Learn how F# reference cells are storage locations that enable you to create mutable values with reference semantics.
+
+## Computations
+
+- [Computation expressions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/computation-expressions.md): Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
+- [Async expressions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/async-expressions.md): Learn about support in the F# programming language for writing async expressions, which execute without blocking execution of other work.
+- [Task expressions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/task-expressions.md): Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
+- [Lazy expressions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/lazy-expressions.md): Learn how F# lazy expressions can improve the performance of your apps and libraries.
+
+## Exception handling
+
+- [The use Keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/resource-management-the-use-keyword.md): Learn about the F# keyword 'use' and the 'using' function, which can control the initialization and release of resources.
+- [Assertions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/assertions.md): Learn how to use the 'assert' expression as a debugging feature for testing expressions in the F# programming language.
+
+## F# language guide
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/index.md): A reference guide to F# language features and tools.
+- [Literals](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/literals.md): Learn about the literal types in the F# programming language.
+
+## F# language reference
+
+- [Compiler directives](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/compiler-directives.md): Learn about F# language conditional compilation directives, line directives, and warn directives.
+- [Keyword reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/keyword-reference.md): Find links to information about all of F# keywords.
+- [Verbose syntax](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/verbose-syntax.md): Learn the difference between verbose and lightweight syntax in the F# programming language.
+- [Compiler options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/compiler-options.md): Use F# compiler command-line options to control the compilation of your F# apps and libraries.
+- [F# Interactive options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/fsharp-interactive-options.md): Learn about the command-line options supported by F# Interactive, fsi.exe.
+
+## Interoperability
+
+- [Nullable value types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/nullable-value-types.md): Learn how to use nullable value types, a way to represent value types that can also be null, in F#.
+- [Delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/delegates.md): Learn how to work with delegates in F#.
+- [Enums](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/enumerations.md): Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
+
+## let Bindings
+
+- [Fixed keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/fixed.md): Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
+
+## Loops and conditionals
+
+- [if...then...else](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fsharp/language-reference/conditional-expressions-if-then-else.md): Learn how to write conditional expressions in F# to execute different branches of code.

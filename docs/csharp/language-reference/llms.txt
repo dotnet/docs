@@ -1,0 +1,21 @@
+# Language Reference Docs
+
+- [Unsafe code and pointers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/unsafe-code.md): Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
+- [Preprocessor directives](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/preprocessor-directives.md): Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more
+
+## Language version
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/language-versioning.md): Learn about how the C# language version is determined based on your project and the reasons behind that choice.
+- [Configure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/configure-language-version.md): Learn how to override the default C# language version manually. The C# compiler can support any language version up to the version in the installed SDK.
+
+## Children
+
+- [Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/attributes/llms.txt)
+- [Builtin Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/llms.txt)
+- [Compiler Messages](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/compiler-messages/llms.txt)
+- [Compiler Options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/compiler-options/llms.txt)
+- [Keywords](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/llms.txt)
+- [Operators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/operators/llms.txt)
+- [Statements](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/statements/llms.txt)
+- [Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/tokens/llms.txt)
+- [Xmldoc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/xmldoc/llms.txt)

@@ -1,0 +1,8 @@
+# 8.0 Docs
+
+## Deployment
+
+- [Host determines RID-specific assets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/8.0/rid-asset-list.md): Learn about the breaking change in deployment in .NET 8 where the runtime host looks for RID-specific assets via a known list.
+- [.NET Monitor only includes distroless images](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/8.0/monitor-image.md): Learn about the breaking change in deployment in .NET 8 where the .NET Monitor 8 image offering only includes distroless images.
+- [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md): Learn about the breaking change in .NET 8 where .NET packages for openSUSE and SLES distributions now depend on OpenSSL 3.x instead of OpenSSL 1.x.
+- [StripSymbols defaults to true](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/compatibility/deployment/8.0/stripsymbols-default.md): Learn about the breaking change in deployment where the default value for 'StripSymbols' is now 'true' for 'PublishAOT'.

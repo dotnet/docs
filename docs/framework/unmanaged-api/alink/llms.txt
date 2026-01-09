@@ -1,0 +1,49 @@
+# Alink Docs
+
+- [ALink API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/index.md): Learn more about: ALink API (Unmanaged API Reference)
+- [AssemblyAttributesGoHere](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/assemblyattributesgohere.md): Learn more about: AssemblyAttributesGoHere Class
+- [AssemblyAttributesGoHereM](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md): Learn more about: AssemblyAttributesGoHereM Class
+- [AssemblyAttributesGoHereS](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/assemblyattributesgoheres.md): Learn more about: AssemblyAttributesGoHereS
+- [AssemblyAttributesGoHereSM](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/assemblyattributesgoheresm.md): Learn more about: AssemblyAttributesGoHereSM Class
+- [AssemblyOptions Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/assemblyoptions-enumeration.md): Learn more about: AssemblyOptions Enumeration
+- [CreateALink Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/createalink-function.md): Learn more about: CreateALink Function
+- [GetALinkMessageDll Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getalinkmessagedll-function.md): Learn more about: GetALinkMessageDll Function
+
+## IALink Interface
+
+- [IALink Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/ialink-interface.md): Learn more about: IALink Interface
+- [Init Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/init-method.md): Learn more about: Init Method
+- [ImportFile Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/importfile-method.md): Learn more about: ImportFile Method
+- [SetAssemblyFile Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/setassemblyfile-method.md): Learn more about: SetAssemblyFile Method
+- [AddFile Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/addfile-method.md): Learn more about: AddFile Method
+- [AddImport Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/addimport-method.md): Learn more about: AddImport Method
+- [GetScope Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getscope-method.md): Learn more about: GetScope Method
+- [GetAssemblyRefHash Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getassemblyrefhash-method.md): Learn more about: GetAssemblyRefHash Method
+- [ImportTypes Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/importtypes-method.md): Learn more about: ImportTypes Method
+- [EnumCustomAttributes Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/enumcustomattributes-method.md): Learn more about: EnumCustomAttributes Method
+- [EnumImportTypes Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/enumimporttypes-method.md): Learn more about: EnumImportTypes Method
+- [CloseEnum Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/closeenum-method.md): Learn more about: CloseEnum Method
+- [ExportType Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/exporttype-method.md): Learn more about: ExportType Method
+- [ExportNestedType Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/exportnestedtype-method.md): Learn more about: ExportNestedType Method
+- [EmbedResource Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/embedresource-method.md): Learn more about: EmbedResource Method
+- [LinkResource Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/linkresource-method.md): Learn more about: LinkResource Method
+- [GetResolutionScope Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getresolutionscope-method.md): Learn more about: GetResolutionScope Method
+- [SetAssemblyProps Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/setassemblyprops-method.md): Learn more about: SetAssemblyProps Method
+- [EmitAssemblyCustomAttribute Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/emitassemblycustomattribute-method.md): Learn more about: EmitAssemblyCustomAttribute Method
+- [GetWin32ResBlob Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getwin32resblob-method.md): Learn more about: GetWin32ResBlob Method
+- [FreeWin32ResBlob Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/freewin32resblob-method.md): Learn more about: FreeWin32ResBlob Method
+- [EmitManifest Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/emitmanifest-method.md): Learn more about: EmitManifest Method
+- [PreCloseAssembly Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/precloseassembly-method.md): Learn more about: PreCloseAssembly Method
+- [CloseAssembly Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/closeassembly-method.md): Learn more about: CloseAssembly Method
+- [EndMerge Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/endmerge-method.md): Learn more about: EndMerge Method
+- [SetNonAssemblyFlags Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/setnonassemblyflags-method.md): Learn more about: SetNonAssemblyFlags Method
+- [ImportFile2 Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/importfile2-method.md): Learn more about: ImportFile2 Method
+- [ExportTypeForwarder Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/exporttypeforwarder-method.md): Learn more about: ExportTypeForwarder Method
+- [ExportNestedTypeForwarder Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/exportnestedtypeforwarder-method.md): Learn more about: ExportNestedTypeForwarder Method
+
+## IALink2 Interface
+
+- [IALink2 Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/ialink2-interface.md): Learn more about: IALink2 Interface
+- [SetAssemblyFile2 Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/setassemblyfile2-method.md): Learn more about: SetAssemblyFile2 Method
+- [AddFile2 Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/addfile2-method.md): Learn more about: AddFile2 Method
+- [GetScope2 Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/unmanaged-api/alink/getscope2-method.md): Learn more about: GetScope2 Method

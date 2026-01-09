@@ -1,0 +1,46 @@
+# Security Docs
+
+- [.NET security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/index.md): Learn about security in .NET. Follow links that describe key security concepts, role-based security, the cryptography model, and secure coding guidelines.
+- [Key security concepts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/key-security-concepts.md): Learn more about: Key Security Concepts
+- [.NET Core FIPS compliance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/fips-compliance.md): Explains .NET Core Federal Information Processing Standard (FIPS) compliance.
+
+## Cryptography model
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/cryptography-model.md): Review implementations of usual cryptographic algorithms in .NET. Learn the cryptography model of object inheritance and one-shots.
+- [Cross-platform cryptography](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/cross-platform-cryptography.md): Learn about cryptographic capabilities on platforms supported by .NET.
+- [Cryptographic Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/cryptographic-services.md): Learn about encryption methods and practices in .NET, including digital signatures, random number generation, and Cryptography Next Generation (CNG) classes.
+- [Generating Keys for Encryption and Decryption](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/generating-keys-for-encryption-and-decryption.md): Understand how to create and manage symmetric and asymmetric keys for encryption and decryption in .NET.
+- [How to: Store Asymmetric Keys in a Key Container](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md): Learn how to store asymmetric keys in a key container in .NET. See how to create an asymmetric key, save it in a key container, and retrieve and delete the key.
+- [Encrypting Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/encrypting-data.md): Learn how to encrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
+- [Decrypting Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/decrypting-data.md): Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
+- [Cryptographic Signatures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/cryptographic-signatures.md): Learn more about: Cryptographic Signatures
+- [Ensuring Data Integrity with Hash Codes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/ensuring-data-integrity-with-hash-codes.md): Learn how to ensure data integrity using hash codes in .NET. A hash value is a numeric value of a fixed length that uniquely identifies data.
+- [How to: Encrypt XML Elements with Symmetric Keys](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md): Learn more about: How to: Encrypt XML Elements with Symmetric Keys
+- [How to: Decrypt XML Elements with Symmetric Keys](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md): Learn more about: How to: Decrypt XML Elements with Symmetric Keys
+- [How to: Encrypt XML Elements with Asymmetric Keys](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md): Learn how to encrypt XML elements with asymmetric keys.
+- [How to: Decrypt XML Elements with Asymmetric Keys](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-decrypt-xml-elements-with-asymmetric-keys.md): Learn more about: How to: Decrypt XML Elements with Asymmetric Keys
+- [How to: Encrypt XML Elements with X.509 Certificates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-encrypt-xml-elements-with-x-509-certificates.md): Learn more about: How to: Encrypt XML Elements with X.509 Certificates
+- [How to: Decrypt XML Elements with X.509 Certificates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-decrypt-xml-elements-with-x-509-certificates.md): Learn more about: How to: Decrypt XML Elements with X.509 Certificates
+- [How to: Sign XML Documents with Digital Signatures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-sign-xml-documents-with-digital-signatures.md): Learn how to sign XML documents with digital signatures. Use classes in the System.Security.Cryptography.Xml namespace in .NET.
+- [How to: Verify the Digital Signatures of XML Documents](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md): Learn more about: How to: Verify the Digital Signatures of XML Documents
+- [How to: Use Data Protection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-use-data-protection.md): Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
+- [How to: Access Hardware Encryption Devices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-access-hardware-encryption-devices.md): Learn more about: How to: Access Hardware Encryption Devices
+- [Walkthrough: Creating a Cryptographic Application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/walkthrough-creating-a-cryptographic-application.md): Walk through the creation of a cryptographic application. Learn how to encrypt and decrypt content in a Windows Forms application.
+
+## Role-based security
+
+- [Role-based security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/role-based-security.md): Learn more about: Role-Based Security
+- [Principal and Identity Objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/principal-and-identity-objects.md): Read about identity objects, which represent users in .NET. Also read about principal objects, which encapsulate both an identity object & a role.
+- [How to: Create a WindowsPrincipal Object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-create-a-windowsprincipal-object.md): Learn more about: How to: Create a WindowsPrincipal Object
+- [How to: Create GenericPrincipal and GenericIdentity Objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/how-to-create-genericprincipal-and-genericidentity-objects.md): Learn more about: How to: Create GenericPrincipal and GenericIdentity Objects
+- [Replacing a Principal Object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/replacing-a-principal-object.md): Learn more about: Replacing a Principal Object
+- [Impersonating and Reverting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/impersonating-and-reverting.md): Learn more about: Impersonating and Reverting
+
+## Secure coding guidelines
+
+- [Secure coding guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/secure-coding-guidelines.md): Design code to work with .NET-enforced permissions and other enforcement to help prevent malicious code from accessing data or performing other actions.
+- [Securing State Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/securing-state-data.md): Declare state data as private or internal variables to limit access to it. Such data can still be accessed through reflection, serialization, and in debugging.
+- [Security and User Input](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/security-and-user-input.md): Your code might pass user-entered data as parameters to other code, which can affect security. You can do range checking to reject problematic input.
+- [Security and Race Conditions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/security-and-race-conditions.md): Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
+- [Security and On-the-Fly Code Generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/security-and-on-the-fly-code-generation.md): Generating code on behalf of lesser-trust code that runs at a higher trust is a security concern, especially when a caller can influence code generation.
+- [Timing vulnerabilities with CBC-mode symmetric decryption using padding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/security/vulnerabilities-cbc-mode.md): Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding.

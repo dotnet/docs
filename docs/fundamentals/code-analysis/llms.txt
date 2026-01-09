@@ -1,0 +1,29 @@
+# Code Analysis Docs
+
+## Code analysis
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/overview.md): Learn about source code analysis in the .NET SDK.
+
+## Code quality rules
+
+- [Rule options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/code-quality-rule-options.md): Learn how to specify additional configuration options for code quality rules.
+- [Predefined configurations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/predefined-configurations.md): Learn about using predefined editorconfig and rule set files to target specific types of code analysis.
+
+## Code style rules
+
+- [Rule options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/code-style-rule-options.md): Learn how to specify .NET code style options.
+
+## Configuration
+
+- [General options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/configuration-options.md): Learn how to configure code analysis rules in an analyzer configuration file.
+- [Configuration files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/configuration-files.md): Learn about different configuration files, including editorconfig and global config files, to configure code analysis rules.
+- [How to suppress warnings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/suppress-warnings.md): Learn the different ways you can suppress .NET code analysis violations.
+
+## Rule reference
+
+- [Categories](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/categories.md): Learn the different .NET code analysis rule categories.
+
+## Children
+
+- [Quality Rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/quality-rules/llms.txt)
+- [Style Rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/code-analysis/style-rules/llms.txt)

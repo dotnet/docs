@@ -1,0 +1,23 @@
+# Configure Apps Docs
+
+- [Configure apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/index.md): Configure apps by using configuration files in .NET. Configuration files are XML files that can be changed as needed.
+- [Read application settings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/read-app-settings.md): Learn how to read application settings from an app.config file in .NET Framework.
+- [Locate assemblies by using DEVPATH](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md): Test that a shared assembly works correctly with many applications in .NET by using an XML computer configuration file and the DEVPATH environment variable.
+- [Specify an assembly's location](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/specify-assembly-location.md): See how to specify the location of an assembly in .NET by using the codeBase element or the probing element in an XML configuration file.
+- [Create a publisher policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/how-to-create-a-publisher-policy.md): Learn how assembly vendors can create a publisher policy file with an upgraded assembly in .NET, to stipulate that applications should use the newer version.
+
+## Configure cryptography classes
+
+- [Configure cryptography classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/configure-cryptography-classes.md): Understand how computer administrators can configure the default cryptographic algorithms and algorithm implementations that .NET and applications use.
+- [Map algorithm names to cryptography classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md): Map algorithm names to cryptography classes in .NET. A developer has four options for creating a cryptography object.
+- [Map object identifiers to cryptography algorithms](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md): See how to map an object identifier (OID) to a cryptography algorithm in .NET using the oidEntry and nameEntry elements in an XML configuration file.
+
+## Redirect assembly versions
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/redirect-assembly-versions.md): Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies.
+- [How to: Enable and disable automatic binding redirection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md): Read how to enable or disable automatic binding redirection. This feature affects desktop apps and web apps targeting .NET Framework 4.5.1 or later.
+- [Assembly binding redirection security permission](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/assembly-binding-redirection-security-permission.md): Learn about the security permission required for explicit assembly binding redirection in an application configuration file in .NET.
+
+## Children
+
+- [File Schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/llms.txt)

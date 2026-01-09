@@ -1,0 +1,14 @@
+# Standard Query Operators Docs
+
+## Standard query operators
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/index.md): The LINQ standard query operators provide query capabilities including filtering, projection, aggregation, and sorting in C#.
+- [Filter data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/filtering-data.md): Filtering, also known as selection, restricts results based on a condition. Learn about the standard query operator methods in LINQ in C# that perform filtering.
+- [Projection operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/projection-operations.md): Learn about projection operations. These operations transform an object into a new form that often consists only of properties used later.
+- [Set operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/set-operations.md): Learn about set operations and the standard query operator methods that perform set operations in LINQ in C#.
+- [Sort data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/sorting-data.md): Learn about sort operations and the standard query operator methods that perform sort operations in LINQ in C#.
+- [Quantifier operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/quantifier-operations.md): Learn about quantifier operations in LINQ. These methods, `All`, `Any`, and `Contains`, return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
+- [Partition data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/partitioning-data.md): Learn how to partition data in LINQ. View an illustration showing the results of partitioning operations.
+- [Convert data types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/converting-data-types.md): Conversion methods change the type of input objects. See conversion operations in LINQ queries in C#, such as Enumerable.AsEnumerable and Enumerable.OfType.
+- [Join operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/join-operations.md): A join of two data sources associates objects with objects that share an attribute across data sources. Learn about join methods in the LINQ framework in C#.
+- [Group data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/linq/standard-query-operators/grouping-data.md): Grouping puts data into groups of elements that share an attribute. Learn about the standard query operator methods in LINQ in C# that group data elements.

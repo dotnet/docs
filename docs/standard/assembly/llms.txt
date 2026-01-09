@@ -1,0 +1,49 @@
+# Assembly Docs
+
+## Assemblies
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/index.md): Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
+- [Assembly contents](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/contents.md): This article describes the contents of a .NET assembly, which can include assembly metadata, type metadata, CIL code, and resources.
+- [Manifest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/manifest.md): A .NET assembly manifest specifies its version requirements, security identity, and scope of the assembly and information to resolve references.
+- [Security considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/security-considerations.md): When you build a .NET assembly, you can specify permissions the assembly requires to run. This article discusses strong-named assemblies and signing tools.
+- [Side-by-side execution](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/side-by-side-execution.md): Learn about side-by-side execution, which is the ability to store and run multiple versions of an application or component on the same computer.
+- [Assembly file format](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/file-format.md): Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
+- [Unloadability in .NET Core](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/unloadability.md): Learn how to use collectible AssemblyLoadContext for loading and unloading managed assemblies and how to debug issues preventing the unloading success.
+- [Learn about reference assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/reference-assemblies.md): Learn about reference assemblies, a special type of assemblies in .NET that contain only the library's public API surface
+- [Resolve assembly loads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/resolve-loads.md): This article describes the .NET AppDomain.AssemblyResolve event. Use this event for applications that require control over assembly loading.
+- [Create assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/create.md): Learn about creating single-file or multifile assemblies using an IDE, such as Visual Studio, or the compilers and tools provided by the Windows SDK.
+- [Assembly names](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/names.md): Learn about .NET assembly names and their impact on assembly scope and use by an application, and learn about the FullName property.
+- [Find an assembly's fully qualified name](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/find-fully-qualified-name.md): This article shows you how to get the fully qualified name of a .NET assembly.
+- [Assembly location](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/location.md): The location of a .NET assembly determines how the CLR finds it and whether it can be shared with other assemblies.
+- [Delay-sign an assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/delay-sign.md): This article describes delayed or partial signing, which reserves space in the PE file for the strong name signature, but defers the actual signing.
+- [View assembly contents](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/view-contents.md): You can use the IL Disassembler to view an assembly's attributes and references to other modules and assemblies.
+- [Type forwarding in the CLR](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/type-forwarding.md): Type forwarding allows you to move a type to another .NET assembly without having to recompile applications that use the original assembly.
+- [Determine if a file is an assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/identify.md): This article shows you how determine whether a file is a .NET assembly, both manually and programmatically.
+- [Load and unload assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/load-unload.md): The CLR automatically loads .NET assemblies referenced by a program. You can also dynamically load specific assemblies into the current application domain.
+- [Embed types from managed assemblies in Visual Studio](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/embed-types-visual-studio.md): This walkthrough shows you how to embed types from managed assemblies in .NET using Visual Studio. Embedded types can support version independence.
+- [Inspect assembly contents using MetadataLoadContext](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/inspect-contents-using-metadataloadcontext.md): Learn how to use MetadataLoadContext, which is an API that enables you to load .NET assemblies for inspection purposes.
+
+## Friend assemblies
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/friend.md): A friend assembly is a .NET assembly that can access another assembly's internal (C#) or Friend (Visual Basic) types and members.
+- [Create unsigned friend assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/create-unsigned-friend.md): This article shows how to use friend assemblies with assemblies that are unsigned. It includes information about .NET security.
+- [Create signed friend assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/create-signed-friend.md): This article shows how to use friend assemblies with assemblies that have strong names. It includes information about .NET security.
+
+## Set assembly attributes
+
+- [In code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/set-attributes.md): You can set assembly attributes for a .NET assembly, including assembly identity, informational, assembly manifest, and strong name attributes.
+- [In a project file](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/set-attributes-project-file.md): Learn how you can set assembly attributes using a project file.
+
+## Strong-named assemblies
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/strong-named.md): Learn about strong-names for .NET assemblies, which creates a unique identity for an assembly and can prevent assembly conflicts.
+- [Create and use strong-named assemblies](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/create-use-strong-named.md): This article shows you the process of signing an assembly in .NET with a strong name and later referencing it by that name.
+- [Create a public-private key pair](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/create-public-private-key-pair.md): Learn how to create a public/private cryptographic key pair to use during compilation to create a strong-named assembly.
+- [Sign an assembly with a strong name](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/sign-strong-name.md): This article shows you how to sign a .NET assembly with a strong name by using the Signing tab, the Assembly Linker, assembly attributes, or compiler options.
+- [Enhanced strong naming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/enhanced-strong-naming.md): Conventional strong name signatures for assemblies in .NET Framework have limitations. Learn about enhanced strong naming.
+- [Reference a strong-named assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/reference-strong-named.md): This article shows you how to reference types or resources in a strong-named .NET assembly, either at compile time or runtime.
+- [Disable strong-name bypass](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/disable-strong-name-bypass-feature.md): Strong-name bypass skips signature validation in fully trusted domains in .NET. You can override this feature for a single application or all applications.
+
+## Versioning
+
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/assembly/versioning.md): Learn about versioning of .NET assemblies. All versioning of assemblies that use the CLR is done at the assembly level.

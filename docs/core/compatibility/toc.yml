@@ -12,6 +12,8 @@ items:
             items:
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: MemoryStream maximum capacity updated and exception behavior changed
+                href: core-libraries/11/memorystream-max-capacity.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md
           - name: Globalization
@@ -254,7 +256,7 @@ items:
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
-              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+              - name: BinaryReader.ReadString() returns "/uFFFD" on malformed sequences
                 href: core-libraries/9.0/binaryreader.md
               - name: C# overload resolution prefers `params` span-type overloads
                 href: core-libraries/9.0/params-overloads.md

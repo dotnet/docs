@@ -32,7 +32,7 @@ The exception type for invalid capacity or length values has changed from `OutOf
 
 ```csharp
 var stream = new MemoryStream();
-stream.SetLength(int.MaxValue); // Throws ArgumentOutOfRangeException
+stream.SetLength(int.MaxValue); // Throws ArgumentOutOfRangeException.
 ```
 
 ## Type of breaking change

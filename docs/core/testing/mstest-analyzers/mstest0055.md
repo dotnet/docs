@@ -27,7 +27,7 @@ ai-usage: ai-generated
 
 ## Cause
 
-A call to `string.Contains`, `string.StartsWith`, or `string.EndsWith` is made and its return value is ignored.
+A call to <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, or <xref:System.String.EndsWith%2A> is made and its return value is ignored.
 
 ## Rule description
 

@@ -75,8 +75,6 @@ items:
                 href: ../../core/testing/unit-testing-mstest-migration-from-tmi.md
               - name: Microsoft.Testing.Platform support (MSTest runner)
                 href: ../../core/testing/unit-testing-mstest-runner-intro.md
-              - name: Migrate from Microsoft.Testing.Platform v1 to v2
-                href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
               - name: Getting started
                 items:
                   - name: Overview
@@ -237,6 +235,20 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0054.md
                       - name: MSTEST0055
                         href: ../../core/testing/mstest-analyzers/mstest0055.md
+                      - name: MSTEST0056
+                        href: ../../core/testing/mstest-analyzers/mstest0056.md
+                      - name: MSTEST0057
+                        href: ../../core/testing/mstest-analyzers/mstest0057.md
+                      - name: MSTEST0058
+                        href: ../../core/testing/mstest-analyzers/mstest0058.md
+                      - name: MSTEST0059
+                        href: ../../core/testing/mstest-analyzers/mstest0059.md
+                      - name: MSTEST0060
+                        href: ../../core/testing/mstest-analyzers/mstest0060.md
+                      - name: MSTEST0061
+                        href: ../../core/testing/mstest-analyzers/mstest0061.md
+                      - name: MSTEST0062
+                        href: ../../core/testing/mstest-analyzers/mstest0062.md
       - name: Test platforms
         items:
           - name: Microsoft.Testing.Platform
@@ -249,6 +261,8 @@ items:
                 href: ../../core/testing/microsoft-testing-platform-vs-vstest.md
               - name: Migrate from VSTest to Microsoft.Testing.Platform
                 href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
+              - name: Migrate from Microsoft.Testing.Platform v1 to v2
+                href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
               - name: Configure the test platform
                 href: ../../core/testing/microsoft-testing-platform-config.md
               - name: Extensions

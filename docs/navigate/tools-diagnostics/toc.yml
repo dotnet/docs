@@ -217,8 +217,9 @@ items:
           - name: dotnet store
             href: ../../core/tools/dotnet-store.md
           - name: dotnet test
-            href: ../../core/tools/dotnet-test.md
             items:
+              - name: Overview
+                href: ../../core/tools/dotnet-test.md
               - name: dotnet test with VSTest
                 href: ../../core/tools/dotnet-test-vstest.md
               - name: dotnet test with MTP

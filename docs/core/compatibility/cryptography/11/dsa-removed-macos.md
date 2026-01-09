@@ -1,5 +1,5 @@
 ---
-title: "Breaking change - DSA removed from macOS"
+title: "Breaking change: DSA removed from macOS"
 description: "Learn about the breaking change in .NET 11 where the Digital Signature Algorithm (DSA) is no longer supported on macOS."
 ms.date: 01/07/2026
 ai-usage: ai-assisted

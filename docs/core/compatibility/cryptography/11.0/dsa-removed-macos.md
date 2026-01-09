@@ -1,14 +1,14 @@
 ---
-title: "Breaking change - DSA has been removed from macOS"
+title: "Breaking change - DSA removed from macOS"
 description: "Learn about the breaking change in .NET 11 where the Digital Signature Algorithm (DSA) is no longer supported on macOS."
 ms.date: 01/07/2026
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/543460
+ms.custom: https://github.com/dotnet/docs/issues/48201
 ---
 
-# DSA has been removed from macOS
+# DSA removed from macOS
 
-Starting in .NET 11, the Digital Signature Algorithm (DSA) is no longer supported on macOS. This only impacts "finite field" DSA. Elliptic Curve DSA (EC-DSA) isn't affected. Attempts to use <xref:System.Security.Cryptography.DSA>, <xref:System.Security.Cryptography.DSACryptoServiceProvider>, or other APIs that interact with DSA throw a <xref:System.PlatformNotSupportedException> on macOS.
+Starting in .NET 11, the Digital Signature Algorithm (DSA) is no longer supported on macOS. This removal only impacts "finite field" DSA. Elliptic Curve DSA (EC-DSA) isn't affected. Attempts to use <xref:System.Security.Cryptography.DSA>, <xref:System.Security.Cryptography.DSACryptoServiceProvider>, or other APIs that interact with DSA throw a <xref:System.PlatformNotSupportedException> on macOS.
 
 ## Version introduced
 
@@ -24,7 +24,7 @@ DSA is no longer functional on macOS. Attempts to use <xref:System.Security.Cryp
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -43,10 +43,10 @@ If you're using DSA, you can use <xref:System.Security.Cryptography.ECDsa> inste
 
 ## Affected APIs
 
-* <xref:System.Security.Cryptography.DSA.Create?displayProperty=fullName> (all overloads)
-* <xref:System.Security.Cryptography.DSACryptoServiceProvider.%23ctor?displayProperty=fullName> (all overloads)
-* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A?displayProperty=fullName> (all overloads)
-* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A?displayProperty=fullName> (all overloads)
-* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey%2A?displayProperty=fullName> (all overloads)
+* <xref:System.Security.Cryptography.DSA.Create*?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.DSACryptoServiceProvider.%23ctor*>
+* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.DSA)?displayProperty=nameWithType>
 
 Additionally, any APIs that interact with DSA keys are affected.

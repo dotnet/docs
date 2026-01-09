@@ -36,15 +36,10 @@ iOS, tvOS, and MacCatalyst never supported DSA.
 
 Migrate away from the DSA algorithm and use a modern cryptographic digital signature algorithm such as EC-DSA (Elliptic Curve DSA).
 
-If you're using DSA, you can use <xref:System.Security.Cryptography.ECDsa> instead:
-
-* `DSA.Create(...)` -> `ECDsa.Create(...)`
-* `new DSACryptoServiceProvider(...)` -> `ECDsa.Create(...)`
-
 ## Affected APIs
 
 * <xref:System.Security.Cryptography.DSA.Create*?displayProperty=nameWithType>
-* <xref:System.Security.Cryptography.DSACryptoServiceProvider.%23ctor*>
+* [DSACryptoServiceProvider constructors](xref:System.Security.Cryptography.DSACryptoServiceProvider.%23ctor*)
 * <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>
 * <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>
 * <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.DSA)?displayProperty=nameWithType>

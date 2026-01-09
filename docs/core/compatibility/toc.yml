@@ -12,6 +12,8 @@ items:
             items:
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: Tar reading APIs verify header checksums when reading
+                href: core-libraries/11/tar-checksum-validation.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected

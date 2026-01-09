@@ -71,15 +71,16 @@ catch (OutOfMemoryException)
 You can also add a check before setting the capacity or length to avoid the exception:
 
 ```csharp
-var stream = new MemoryStream();
-long newLength = int.MaxValue;
-
-if (newLength > Array.MaxLength)
+bool TrySetLength(MemoryStream stream, long length)
 {
-    throw new ArgumentOutOfRangeException(nameof(newLength), $"Length cannot exceed {Array.MaxLength} bytes.");
+    if (length > Array.MaxLength)
+    {
+        return false;
+    }
+    
+    stream.SetLength(length);
+    return true;
 }
-
-stream.SetLength(newLength);
 ```
 
 ## Affected APIs

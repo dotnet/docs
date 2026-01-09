@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # TAR-reading APIs verify header checksums when reading
 
-The <xref:System.Formats.Tar.TarReader> class now validates the checksum of TAR archive entries during the reading process. If an entry's checksum is invalid, `TarReader` throws an <xref:System.InvalidDataException>. This change improves data integrity by ensuring that corrupted or tampered TAR files are detected and flagged during processing.
+The <xref:System.Formats.Tar.TarReader> class now validates the checksum of TAR archive entries during the reading process. If an entry's checksum is invalid, `TarReader` throws an <xref:System.IO.InvalidDataException>. This change improves data integrity by ensuring that corrupted or tampered TAR files are detected and flagged during processing.
 
 ## Version introduced
 
@@ -36,7 +36,7 @@ If the TAR file `bad-cksum.tar` contained an entry with an invalid checksum, the
 
 ## New behavior
 
-Starting in .NET 11, when reading a TAR archive with an invalid checksum, `TarReader` throws an <xref:System.InvalidDataException> and stops processing the archive.
+Starting in .NET 11, when reading a TAR archive with an invalid checksum, `TarReader` throws an <xref:System.IO.InvalidDataException> and stops processing the archive.
 
 Example code:
 
@@ -74,7 +74,7 @@ This change was introduced to improve the reliability and security of the `Syste
 
 If your application relies on the `TarReader` to process TAR archives, you should:
 
-1. Update your code to handle the <xref:System.InvalidDataException> that might be thrown when a checksum validation fails.
+1. Update your code to handle the <xref:System.IO.InvalidDataException> that might be thrown when a checksum validation fails.
 2. Ensure that the TAR files being processed are valid and have correct checksums. If you encounter checksum failures, verify the integrity of the source TAR files.
 3. If you need to process TAR files with invalid checksums for specific scenarios, consider implementing custom error handling or preprocessing the files to correct the checksums.
 
@@ -103,7 +103,7 @@ catch (InvalidDataException ex)
 
 ## Affected APIs
 
-- <xref:System.Formats.Tar.TarReader.GetNextEntry?displayProperty=fullName>
-- <xref:System.Formats.Tar.TarReader.GetNextEntryAsync(System.Threading.CancellationToken)?displayProperty=fullName>
+- <xref:System.Formats.Tar.TarReader.GetNextEntry(System.Boolean)?displayProperty=fullName>
+- <xref:System.Formats.Tar.TarReader.GetNextEntryAsync(System.Boolean,System.Threading.CancellationToken)?displayProperty=fullName>
 - <xref:System.Formats.Tar.TarFile.ExtractToDirectory(System.IO.Stream,System.String,System.Boolean)?displayProperty=fullName>
 - <xref:System.Formats.Tar.TarFile.ExtractToDirectoryAsync(System.IO.Stream,System.String,System.Boolean,System.Threading.CancellationToken)?displayProperty=fullName>

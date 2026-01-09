@@ -3,7 +3,7 @@ title: "Breaking change: Minimum hardware requirements updated"
 description: "Learn about the breaking change in .NET 11 where minimum hardware requirements have been updated for x86/x64 and Arm64 architectures."
 ms.date: 01/09/2026
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/51003
+ms.custom: https://github.com/dotnet/docs/issues/48045
 ---
 
 # Minimum hardware requirements updated
@@ -14,14 +14,14 @@ The minimum hardware requirements for .NET 11 have been updated to require more 
 
 For Apple, there's no change to the minimum hardware or the `ReadyToRun` target. The `Apple M1` chips are approximately equivalent to `armv8.5-a` and so provide support for at least the `AdvSimd` (NEON), `CRC`, `DOTPROD`, `LSE`, `RCPC`, `RCPC2`, and `RDMA` instruction sets.
 
-For Linux, there's no change to the minimum hardware. .NET continues to support devices such as Raspberry PI that might only provide support for the `AdvSimd` instruction set. The `ReadyToRun` target has been updated to include the `LSE` instruction set, which might result in additional jitting overhead if you launch an application.
+For Linux, there's no change to the minimum hardware. .NET continues to support devices such as Raspberry Pi that might only provide support for the `AdvSimd` instruction set. The `ReadyToRun` target has been updated to include the `LSE` instruction set, which might result in additional jitting overhead if you launch an application.
 
 For Windows, the baseline is updated to require the `LSE` instruction set. This is [required by Windows 11](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) and by [all Arm64 CPUs officially supported by Windows 10](/windows-hardware/design/minimum/windows-processor-requirements). Additionally, it's inline with the `Arm SBSA` (Server Base System Architecture) requirements. The `ReadyToRun` target has been updated to be `armv8.2-a + RCPC` (this provides support for at least `AdvSimd`, `CRC`, `LSE`, `RCPC`, and `RDMA`), which covers the majority of hardware officially supported.
 
 | OS      | Previous JIT/AOT minimum | New JIT/AOT minimum | Previous R2R target | New R2R target   |
 |---------|--------------------------|---------------------|---------------------|------------------|
 | Apple   | Apple M1                 | (No change)         | Apple M1            | (No change)      |
-| Linux   | armv8.0-a                | (No change)         | armv8.0-a           | armv8.0a + LSE   |
+| Linux   | armv8.0-a                | (No change)         | armv8.0-a           | armv8.0-a + LSE  |
 | Windows | armv8.0-a                | armv8.0-a + LSE     | armv8.0-a           | armv8.2-a + RCPC |
 
 ### x86/x64

@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: DeflateStream and GZipStream encode empty payload into nonempty encoded payload"
-description: "Learn about the breaking change in .NET 11 Preview 1 where DeflateStream and GZipStream always write headers and footers to the output, even for empty payloads."
+title: "Breaking change: DeflateStream and GZipStream write headers and footers for empty payload"
+description: "Learn about the breaking change in .NET 11 where DeflateStream and GZipStream always write headers and footers to the output, even for empty payloads."
 ms.date: 01/09/2026
 ai-usage: ai-assisted
 ---
 
-# DeflateStream and GZipStream encode empty payload into nonempty encoded payload
+# DeflateStream and GZipStream write headers and footers for empty payload
 
 <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> now always write format headers and footers to the output stream, even when no data is written. This ensures the output is a valid compressed stream according to the Deflate and GZip specifications.
 
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 ## Previous behavior
 
-Previously, `DeflateStream` and `GZipStream` would not produce any output if no data was written to the stream. This resulted in an empty output stream when compressing an empty input.
+Previously, `DeflateStream` and `GZipStream` didn't produce any output if no data was written to the stream. This resulted in an empty output stream when compressing an empty input.
 
 ```csharp
 using var output = new MemoryStream();
@@ -23,7 +23,7 @@ using (var deflate = new DeflateStream(output, CompressionMode.Compress))
 {
     // No data written.
 }
-Console.WriteLine(output.Length); // Wrote: 0
+Console.WriteLine(output.Length); // 0
 ```
 
 ## New behavior
@@ -36,7 +36,7 @@ using (var deflate = new DeflateStream(output, CompressionMode.Compress))
 {
     // No data written.
 }
-Console.WriteLine(output.Length); // Writes: 2 (for Deflate) or 10 (for GZip)
+Console.WriteLine(output.Length); // 2 (for Deflate) or 10 (for GZip).
 ```
 
 ## Type of breaking change

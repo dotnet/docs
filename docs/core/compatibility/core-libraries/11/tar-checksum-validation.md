@@ -15,7 +15,7 @@ The <xref:System.Formats.Tar.TarReader> class now validates the checksum of TAR 
 
 ## Previous behavior
 
-Previously, when reading a TAR archive with an invalid checksum, the `TarReader` ignored the checksum mismatch and continued processing the archive without throwing an exception.
+Previously, when reading a TAR archive with an invalid checksum, `TarReader` ignored the checksum mismatch and continued processing the archive without throwing an exception.
 
 Example code:
 
@@ -36,31 +36,7 @@ If the TAR file `bad-cksum.tar` contained an entry with an invalid checksum, the
 
 ## New behavior
 
-Starting in .NET 11, when reading a TAR archive with an invalid checksum, `TarReader` throws an <xref:System.IO.InvalidDataException> and stops processing the archive.
-
-Example code:
-
-```csharp
-using System.Formats.Tar;
-using System.IO;
-
-try
-{
-    using var stream = File.OpenRead("bad-cksum.tar");
-    using var reader = new TarReader(stream);
-
-    while (reader.GetNextEntry() is not null)
-    {
-        // Process entries.
-    }
-}
-catch (InvalidDataException ex)
-{
-    Console.WriteLine($"Checksum validation failed: {ex.Message}");
-}
-```
-
-If the TAR file `bad-cksum.tar` contains an entry with an invalid checksum, the code throws an exception with a message indicating the checksum validation failure.
+Starting in .NET 11, when reading a TAR archive with an invalid checksum, `TarReader` throws an <xref:System.IO.InvalidDataException> and stops processing the archive. The exception message indicates the checksum validation failure.
 
 ## Type of breaking change
 
@@ -91,7 +67,7 @@ try
 
     while (reader.GetNextEntry() is not null)
     {
-        // Process entries
+        // Process entries.
     }
 }
 catch (InvalidDataException ex)

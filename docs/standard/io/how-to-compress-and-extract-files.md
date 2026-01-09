@@ -3,10 +3,10 @@ title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
 ms.date: "08/10/2022"
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "I/O [.NET], compression"
   - "compression"
   - "compress files"
@@ -64,17 +64,14 @@ The following example uses the <xref:System.IO.Compression.ZipArchive> class to 
 
 You can also use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO.Compression.DeflateStream> classes to compress and decompress data. They use the same compression algorithm. You can decompress <xref:System.IO.Compression.GZipStream> objects that are written to a *.gz* file by using many common tools. The following example shows how to compress and decompress a directory of files by using the <xref:System.IO.Compression.GZipStream> class:
 
-> [!NOTE]
-> Starting in .NET 11, `DeflateStream` and `GZipStream` always write format headers and footers to the output stream, even when no data is written. For more information, see [DeflateStream and GZipStream encode empty payload into nonempty encoded payload](../compatibility/core-libraries/11/deflatestream-gzipstream-empty-payload.md).
-
 [!code-csharp[IO.Compression.GZip1#1](../../../samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.GZip1/CS/gziptest.cs#1)]
 [!code-vb[IO.Compression.GZip1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]
 
 ## See also
 
-- <xref:System.IO.Compression.ZipArchive>  
-- <xref:System.IO.Compression.ZipFile>  
-- <xref:System.IO.Compression.ZipArchiveEntry>  
-- <xref:System.IO.Compression.DeflateStream>  
-- <xref:System.IO.Compression.GZipStream>  
+- <xref:System.IO.Compression.ZipArchive>
+- <xref:System.IO.Compression.ZipFile>
+- <xref:System.IO.Compression.ZipArchiveEntry>
+- <xref:System.IO.Compression.DeflateStream>
+- <xref:System.IO.Compression.GZipStream>
 - [File and stream I/O](index.md)

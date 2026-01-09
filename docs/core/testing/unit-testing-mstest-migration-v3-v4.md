@@ -106,6 +106,10 @@ If you have calls to `TestContext.Properties.Contains`, update them to `TestCont
 This enum only had a single member, `Infinite`, whose value was `int.MaxValue`.
 If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout(int.MaxValue)]`.
 
+### TestContext.ManagedType is now removed
+
+The property `TestContext.ManagedType` is removed. You must use `TestContext.FullyQualifiedTestClassName ` instead.
+
 ### Types not intended for public consumption are made internal or removed
 
 - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` is made internal.

@@ -108,7 +108,7 @@ If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout
 
 ### TestContext.ManagedType is now removed
 
-The property `TestContext.ManagedType` is removed. You must use `TestContext.FullyQualifiedTestClassName ` instead.
+The property `TestContext.ManagedType` is removed. You must use `TestContext.FullyQualifiedTestClassName` instead.
 
 ### Types not intended for public consumption are made internal or removed
 

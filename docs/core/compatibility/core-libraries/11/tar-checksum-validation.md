@@ -48,11 +48,11 @@ This change was introduced to improve the reliability and security of the `Syste
 
 ## Recommended action
 
-If your application relies on the `TarReader` to process TAR archives, you should:
+If your application relies on the `TarReader` to process TAR archives:
 
-1. Update your code to handle the <xref:System.IO.InvalidDataException> that might be thrown when a checksum validation fails.
-2. Ensure that the TAR files being processed are valid and have correct checksums. If you encounter checksum failures, verify the integrity of the source TAR files.
-3. If you need to process TAR files with invalid checksums for specific scenarios, consider implementing custom error handling or preprocessing the files to correct the checksums.
+- Update your code to handle the <xref:System.IO.InvalidDataException> that might be thrown when a checksum validation fails.
+- Ensure that the TAR files being processed are valid and have correct checksums. If you encounter checksum failures, verify the integrity of the source TAR files.
+- If you need to process TAR files with invalid checksums for specific scenarios, consider implementing custom error handling or preprocessing the files to correct the checksums.
 
 Updated example:
 

@@ -1,13 +1,13 @@
 ---
 title: "Breaking change: MemoryStream maximum capacity updated and exception behavior changed"
-description: "Learn about the breaking change in .NET 11 Preview 1 where MemoryStream enforces a maximum capacity and throws ArgumentOutOfRangeException for invalid capacity values."
+description: "Learn about the breaking change in .NET 11 where MemoryStream enforces a maximum capacity and throws ArgumentOutOfRangeException for invalid capacity values."
 ms.date: 01/08/2026
 ai-usage: ai-assisted
 ---
 
 # MemoryStream maximum capacity updated and exception behavior changed
 
-Starting in .NET 11 Preview 1, the <xref:System.IO.MemoryStream> class enforces a maximum capacity of `0x7FFFFFC7` bytes, which is the actual maximum length of a byte array supported by the CLR. Additionally, the exception behavior has changed when attempting to set a `MemoryStream`'s capacity or length beyond this maximum. Instead of throwing an <xref:System.OutOfMemoryException>, the `MemoryStream` now throws an <xref:System.ArgumentOutOfRangeException> for invalid capacity or length values.
+The <xref:System.IO.MemoryStream> class now enforces a maximum capacity of `0x7FFFFFC7` bytes, which is the actual maximum length of a byte array supported by the CLR. Additionally, the exception behavior has changed when attempting to set a `MemoryStream`'s capacity or length beyond this maximum. Instead of throwing an <xref:System.OutOfMemoryException>, the `MemoryStream` now throws an <xref:System.ArgumentOutOfRangeException> for invalid capacity or length values.
 
 ## Version introduced
 
@@ -21,7 +21,7 @@ When setting the capacity or length of a `MemoryStream` to a value greater than 
 
 ```csharp
 var stream = new MemoryStream();
-stream.SetLength(int.MaxValue); // Throws OutOfMemoryException
+stream.SetLength(int.MaxValue); // Threw OutOfMemoryException.
 ```
 
 ## New behavior
@@ -45,7 +45,7 @@ This change was introduced to align `MemoryStream`'s behavior with the actual me
 
 ## Recommended action
 
-Developers should review any code that sets the capacity or length of a `MemoryStream` to ensure it doesn't exceed the maximum supported capacity.
+Review any code that sets the capacity or length of a `MemoryStream` to ensure it doesn't exceed the maximum supported capacity.
 
 If your code was catching `OutOfMemoryException` when working with `MemoryStream` capacity or length operations, you should update it to also catch `ArgumentOutOfRangeException`, as both exceptions can still occur:
 
@@ -60,11 +60,11 @@ try
 }
 catch (ArgumentOutOfRangeException)
 {
-    // Handle invalid capacity/length scenario
+    // Handle invalid capacity/length scenario.
 }
 catch (OutOfMemoryException)
 {
-    // Handle out of memory scenario
+    // Handle out of memory scenario.
 }
 ```
 
@@ -86,4 +86,4 @@ stream.SetLength(newLength);
 
 - <xref:System.IO.MemoryStream.Capacity?displayProperty=fullName>
 - <xref:System.IO.MemoryStream.SetLength(System.Int64)?displayProperty=fullName>
-- <xref:System.IO.MemoryStream.%23ctor(System.Int32)?displayProperty=fullName>
+- [MemoryStream constructor](xref:System.IO.MemoryStream.%23ctor)

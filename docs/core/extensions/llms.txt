@@ -2,47 +2,47 @@
 
 ## Compliance
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/compliance.md): Learn how to use compliance libraries to implement compliance features in .NET applications.
-- [Data classification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/data-classification.md): Learn how to use .NET data classification libraries to categorize your application's data.
-- [Data redaction](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/data-redaction.md): Learn how to use .NET data redaction libraries to protect your application's sensitive data.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/compliance.md): Learn how to use compliance libraries to implement compliance features in .NET applications.
+- [Data classification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/data-classification.md): Learn how to use .NET data classification libraries to categorize your application's data.
+- [Data redaction](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/data-redaction.md): Learn how to use .NET data redaction libraries to protect your application's sensitive data.
 
 ## Configuration
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/configuration.md): Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
-- [Configuration providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/configuration-providers.md): Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
-- [Configuration source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/configuration-generator.md): Learn how to use the configuration source generator to intercept specific call sites and bypass reflection-based configuration binding.
-- [Implement a custom configuration provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/custom-configuration-provider.md): Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
-- [Options pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/options.md): Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
-- [Options validation source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/options-validation-generator.md): Learn how to utilize compile-time source generation for validating options.
-- [Options pattern guidance for library authors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/options-library-authors.md): Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/configuration.md): Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
+- [Configuration providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/configuration-providers.md): Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
+- [Configuration source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/configuration-generator.md): Learn how to use the configuration source generator to intercept specific call sites and bypass reflection-based configuration binding.
+- [Implement a custom configuration provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/custom-configuration-provider.md): Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
+- [Options pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/options.md): Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
+- [Options validation source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/options-validation-generator.md): Learn how to utilize compile-time source generation for validating options.
+- [Options pattern guidance for library authors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/options-library-authors.md): Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 
 ## Create resource files
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/create-resource-files.md): Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
-- [Work with .resx files programmatically](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/work-with-resx-files-programmatically.md): Create or retrieve data from XML resource (.resx) files programmatically using types and members in the System.Resources namespace of the .NET Class Library.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/create-resource-files.md): Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
+- [Work with .resx files programmatically](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/work-with-resx-files-programmatically.md): Create or retrieve data from XML resource (.resx) files programmatically using types and members in the System.Resources namespace of the .NET Class Library.
 
 ## Culture-insensitive string operations
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/performing-culture-insensitive-string-operations.md): Learn more about: Performing culture-insensitive string operations
-- [String comparisons](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/performing-culture-insensitive-string-comparisons.md): Learn how to perform culture-insensitive string comparisons
-- [Case changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/performing-culture-insensitive-case-changes.md): Learn how to perform culture-insensitive case changes
-- [String operations in collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/performing-culture-insensitive-string-operations-in-collections.md): Learn how to perform culture-insensitive string operations in collections.
-- [String operations in arrays](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/performing-culture-insensitive-string-operations-in-arrays.md): Learn how to perform culture-insensitive string operations in arrays.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/performing-culture-insensitive-string-operations.md): Learn more about: Performing culture-insensitive string operations
+- [String comparisons](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/performing-culture-insensitive-string-comparisons.md): Learn how to perform culture-insensitive string comparisons
+- [Case changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/performing-culture-insensitive-case-changes.md): Learn how to perform culture-insensitive case changes
+- [String operations in collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/performing-culture-insensitive-string-operations-in-collections.md): Learn how to perform culture-insensitive string operations in collections.
+- [String operations in arrays](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/performing-culture-insensitive-string-operations-in-arrays.md): Learn how to perform culture-insensitive string operations in arrays.
 
 ## Dependency injection
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/dependency-injection.md): Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
-- [Dependency injection basics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/dependency-injection-basics.md): Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
-- [Use dependency injection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/dependency-injection-usage.md): Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
-- [Dependency injection guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/dependency-injection-guidelines.md): Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/dependency-injection.md): Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
+- [Dependency injection basics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/dependency-injection-basics.md): Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
+- [Use dependency injection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/dependency-injection-usage.md): Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
+- [Dependency injection guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/dependency-injection-guidelines.md): Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
 
 ## Globalization and localization
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/globalization-and-localization.md): Learn how to develop a world-ready application. Read about globalization, localizability review, and localization in .NET.
-- [Globalization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/globalization.md): Learn more about: Globalization
-- [Globalization and ICU](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/globalization-icu.md): Learn more about: .NET globalization and ICU
-- [Best practices for developing world-ready apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/best-practices-for-developing-world-ready-apps.md): Learn more about: Best practices for developing world-ready applications
-- [Localizability review](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/localizability-review.md): Learn about localizability reviews, and when they should occur and how to use them.
-- [Localization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/extensions/localization.md): Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/globalization-and-localization.md): Learn how to develop a world-ready application. Read about globalization, localizability review, and localization in .NET.
+- [Globalization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/globalization.md): Learn more about: Globalization
+- [Globalization and ICU](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/globalization-icu.md): Learn more about: .NET globalization and ICU
+- [Best practices for developing world-ready apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/best-practices-for-developing-world-ready-apps.md): Learn more about: Best practices for developing world-ready applications
+- [Localizability review](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/localizability-review.md): Learn about localizability reviews, and when they should occur and how to use them.
+- [Localization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/localization.md): Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 
 ## HTTP

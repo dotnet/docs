@@ -14,7 +14,7 @@ inputs:
     required: true
   branch:
     description:
-      'The branch name. Assign from github.ref. Example, "refs/heads/main".'
+      'The branch name. Assign from github.ref. Example, "refs/heads/llmstxt".'
     required: true
   dir:
     description:

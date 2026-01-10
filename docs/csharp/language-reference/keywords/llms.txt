@@ -2,47 +2,47 @@
 
 ## Access Keywords
 
-- [base](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/base.md): Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
-- [this](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/this.md): The `this` keyword clarifies access to the current instance of a type, or declares an indexer on the type.
+- [base](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/base.md): Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
+- [this](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/this.md): The `this` keyword clarifies access to the current instance of a type, or declares an indexer on the type.
 
 ## Access modifiers
 
-- [Quick reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/access-modifiers.md): Access Modifiers - C# Reference
-- [Accessibility levels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/accessibility-levels.md): Accessibility Levels - C# Reference
-- [Accessibility domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/accessibility-domain.md): Accessibility Domain - C# Reference
-- [Restrictions on using accessibility levels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): Restrictions on using accessibility levels - C# Reference
-- [internal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/internal.md): internal - C# Reference
-- [private](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/private.md): private keyword - C# Reference
-- [protected](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/protected.md): protected keyword - C# Reference
-- [public](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/public.md): public keyword - C# Reference
-- [protected internal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/protected-internal.md): protected internal - C# Reference
-- [private protected](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/private-protected.md): private protected - C# Reference
-- [file](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/file.md): The file modifier: Declare types whose visibility is the containing file
+- [Quick reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/access-modifiers.md): Access Modifiers - C# Reference
+- [Accessibility levels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/accessibility-levels.md): Accessibility Levels - C# Reference
+- [Accessibility domain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/accessibility-domain.md): Accessibility Domain - C# Reference
+- [Restrictions on using accessibility levels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): Restrictions on using accessibility levels - C# Reference
+- [internal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/internal.md): internal - C# Reference
+- [private](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/private.md): private keyword - C# Reference
+- [protected](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/protected.md): protected keyword - C# Reference
+- [public](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/public.md): public keyword - C# Reference
+- [protected internal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/protected-internal.md): protected internal - C# Reference
+- [private protected](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/private-protected.md): private protected - C# Reference
+- [file](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/file.md): The file modifier: Declare types whose visibility is the containing file
 
 ## Contextual Keywords
 
-- [add](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/add.md): The `add` contextual keyword declares an event accessor that adds a handler to that event.
-- [extension](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/extension.md): Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface.
-- [get](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/get.md): The C# get keyword declares a get accessor in a property or indexer. It defines the code to retrieve the value of the property or indexed property.
-- [init](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/init.md): The `init` keyword is used to declare a `set` accessor that can only be called during an object's initialization: either by a constructor or as part of an object initializer.
-- [partial (type)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/partial-type.md): A partial type is a type declaration that allows you to split the declaration of the type into multiple files.
-- [partial (member)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/partial-member.md): Partial members are members that can be declared in one partial type declaration and defined in a separate partial type declaration.
-- [remove](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/remove.md): The `remove` contextual keyword declares an event accessor that removes a handler from that event. - C# Reference
-- [required](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/required.md): required modifier - C# Reference
-- [set](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/set.md): The C# set keyword declares a set accessor in a property or indexer. It defines the code to set the value of the property or indexed property.
-- [when (filter condition)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/when.md): when contextual keyword - C# reference
-- [field](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/field.md): The `field` contextual keyword - access the compiler synthesized backing field for a property
-- [value (implicit parameter)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/value.md): The token `value` is an implicit parameter to the `set` accessor for indexers or properties. It represents the parameter to the set accessor.
+- [add](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/add.md): The `add` contextual keyword declares an event accessor that adds a handler to that event.
+- [extension](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/extension.md): Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface.
+- [get](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/get.md): The C# get keyword declares a get accessor in a property or indexer. It defines the code to retrieve the value of the property or indexed property.
+- [init](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/init.md): The `init` keyword is used to declare a `set` accessor that can only be called during an object's initialization: either by a constructor or as part of an object initializer.
+- [partial (type)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/partial-type.md): A partial type is a type declaration that allows you to split the declaration of the type into multiple files.
+- [partial (member)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/partial-member.md): Partial members are members that can be declared in one partial type declaration and defined in a separate partial type declaration.
+- [remove](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/remove.md): The `remove` contextual keyword declares an event accessor that removes a handler from that event. - C# Reference
+- [required](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/required.md): required modifier - C# Reference
+- [set](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/set.md): The C# set keyword declares a set accessor in a property or indexer. It defines the code to set the value of the property or indexed property.
+- [when (filter condition)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/when.md): when contextual keyword - C# reference
+- [field](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/field.md): The `field` contextual keyword - access the compiler synthesized backing field for a property
+- [value (implicit parameter)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/value.md): The token `value` is an implicit parameter to the `set` accessor for indexers or properties. It represents the parameter to the set accessor.
 
 ## Generic Type Constraint Keywords
 
-- [new constraint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/new-constraint.md): new constraint - C# Reference
-- [where](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/where-generic-type-constraint.md): where (generic type constraint) - C# Reference
+- [new constraint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/new-constraint.md): new constraint - C# Reference
+- [where](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/where-generic-type-constraint.md): where (generic type constraint) - C# Reference
 
 ## Keywords
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/index.md): C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language.
-- [Statement Keywords](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/statement-keywords.md): Statement keywords - C# Reference
-- [Method Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/keywords/method-parameters.md): Parameter modifiers enable pass-by-reference semantics, with distinctions for read-only, and `out` parameters. The `params` modifier allows optional arguments.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/index.md): C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language.
+- [Statement Keywords](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/statement-keywords.md): Statement keywords - C# Reference
+- [Method Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/method-parameters.md): Parameter modifiers enable pass-by-reference semantics, with distinctions for read-only, and `out` parameters. The `params` modifier allows optional arguments.
 
 ## Literal Keywords

@@ -2,47 +2,47 @@
 
 ## Enumerations
 
-- [COR_PRF_EVENTPIPE_LEVEL enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md): Learn more about: COR_PRF_EVENTPIPE_LEVEL Enumeration
-- [COR_PRF_EVENTPIPE_PARAM_TYPE enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md): Learn more about: COR_PRF_EVENTPIPE_PARAM_TYPE Enumeration
-- [COR_PRF_HANDLE_TYPE enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md): Learn more about: COR_PRF_HANDLE_TYPE Enumeration
-- [COR_PRF_REJIT_FLAGS enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md): Learn more about: COR_PRF_REJIT_FLAGS Enumeration
+- [COR_PRF_EVENTPIPE_LEVEL enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md): Learn more about: COR_PRF_EVENTPIPE_LEVEL Enumeration
+- [COR_PRF_EVENTPIPE_PARAM_TYPE enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md): Learn more about: COR_PRF_EVENTPIPE_PARAM_TYPE Enumeration
+- [COR_PRF_HANDLE_TYPE enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md): Learn more about: COR_PRF_HANDLE_TYPE Enumeration
+- [COR_PRF_REJIT_FLAGS enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md): Learn more about: COR_PRF_REJIT_FLAGS Enumeration
 
 ## ICorProfilerCallback10 interface
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilercallback10-interface.md): Learn more about: ICorProfilerCallback10 Interface
-- [EventPipeEventDelivered method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeeventdelivered-method.md): Learn more about: ICorProfilerCallback10::EventPipeEventDelivered Method
-- [EventPipeProviderCreated method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeprovidercreated-method.md): Learn more about: ICorProfilerCallback10::EventPipeProviderCreated Method
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilercallback10-interface.md): Learn more about: ICorProfilerCallback10 Interface
+- [EventPipeEventDelivered method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeeventdelivered-method.md): Learn more about: ICorProfilerCallback10::EventPipeEventDelivered Method
+- [EventPipeProviderCreated method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeprovidercreated-method.md): Learn more about: ICorProfilerCallback10::EventPipeProviderCreated Method
 
 ## ICorProfilerInfo10 interface
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-interface.md): Learn more about: ICorProfilerInfo10 Interface
-- [EnumerateObjectReferences method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-enumerateobjectreferences-method.md): Learn more about: ICorProfilerInfo10::EnumerateObjectReferences Method
-- [IsFrozenObject method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-isfrozenobject-method.md): Learn more about: ICorProfilerInfo10::IsFrozenObject Method
-- [GetLOHObjectSizeThreshold method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-getlohobjectsizethreshold-method.md): Learn more about: ICorProfilerInfo10::GetLOHObjectSizeThreshold Method
-- [RequestReJITWithInliners method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method.md): Learn more about: ICorProfilerInfo10::RequestReJITWithInliners Method
-- [ResumeRuntime method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method.md): Learn more about: ICorProfilerInfo10::ResumeRuntime Method
-- [SuspendRuntime method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo10-suspendruntime-method.md): Learn more about: ICorProfilerInfo10::SuspendRuntime Method
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-interface.md): Learn more about: ICorProfilerInfo10 Interface
+- [EnumerateObjectReferences method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-enumerateobjectreferences-method.md): Learn more about: ICorProfilerInfo10::EnumerateObjectReferences Method
+- [IsFrozenObject method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-isfrozenobject-method.md): Learn more about: ICorProfilerInfo10::IsFrozenObject Method
+- [GetLOHObjectSizeThreshold method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-getlohobjectsizethreshold-method.md): Learn more about: ICorProfilerInfo10::GetLOHObjectSizeThreshold Method
+- [RequestReJITWithInliners method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method.md): Learn more about: ICorProfilerInfo10::RequestReJITWithInliners Method
+- [ResumeRuntime method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method.md): Learn more about: ICorProfilerInfo10::ResumeRuntime Method
+- [SuspendRuntime method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo10-suspendruntime-method.md): Learn more about: ICorProfilerInfo10::SuspendRuntime Method
 
 ## ICorProfilerInfo11 interface
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo11-interface.md): Learn more about: ICorProfilerInfo11 Interface
-- [GetEnvironmentVariable method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo11-getenvironmentvariable-method.md): Learn more about: ICorProfilerInfo11::GetEnvironmentVariable Method
-- [SetEnvironmentVariable method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo11-setenvironmentvariable-method.md): Learn more about: ICorProfilerInfo11::SetEnvironmentVariable Method
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo11-interface.md): Learn more about: ICorProfilerInfo11 Interface
+- [GetEnvironmentVariable method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo11-getenvironmentvariable-method.md): Learn more about: ICorProfilerInfo11::GetEnvironmentVariable Method
+- [SetEnvironmentVariable method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo11-setenvironmentvariable-method.md): Learn more about: ICorProfilerInfo11::SetEnvironmentVariable Method
 
 ## ICorProfilerInfo12 interface
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-interface.md): Learn more about: ICorProfilerInfo12 Interface
-- [EventPipeAddProviderToSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipeaddprovidertosession-method.md): Learn more about: ICorProfilerInfo12::EventPipeAddProviderToSession Method
-- [EventPipeCreateProvider method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipecreateprovider-method.md): Learn more about: ICorProfilerInfo12::EventPipeCreateProvider Method
-- [EventPipeDefineEvent method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipedefineevent-method.md): Learn more about: ICorProfilerInfo12::EventPipeDefineEvent Method
-- [EventPipeGetProviderInfo method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipegetproviderinfo-method.md): Learn more about: ICorProfilerInfo12::EventPipeGetProviderInfo Method
-- [EventPipeStartSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestartsession-method.md): Learn more about: ICorProfilerInfo12::EventPipeStartSession Method
-- [EventPipeStopSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestopsession-method.md): Learn more about: ICorProfilerInfo12::EventPipeStopSession Method
-- [EventPipeWriteEvent method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipewriteevent-method.md): Learn more about: ICorProfilerInfo12::EventPipeWriteEvent Method
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-interface.md): Learn more about: ICorProfilerInfo12 Interface
+- [EventPipeAddProviderToSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipeaddprovidertosession-method.md): Learn more about: ICorProfilerInfo12::EventPipeAddProviderToSession Method
+- [EventPipeCreateProvider method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipecreateprovider-method.md): Learn more about: ICorProfilerInfo12::EventPipeCreateProvider Method
+- [EventPipeDefineEvent method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipedefineevent-method.md): Learn more about: ICorProfilerInfo12::EventPipeDefineEvent Method
+- [EventPipeGetProviderInfo method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipegetproviderinfo-method.md): Learn more about: ICorProfilerInfo12::EventPipeGetProviderInfo Method
+- [EventPipeStartSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestartsession-method.md): Learn more about: ICorProfilerInfo12::EventPipeStartSession Method
+- [EventPipeStopSession method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestopsession-method.md): Learn more about: ICorProfilerInfo12::EventPipeStopSession Method
+- [EventPipeWriteEvent method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipewriteevent-method.md): Learn more about: ICorProfilerInfo12::EventPipeWriteEvent Method
 
 ## ICorProfilerInfo13 interface
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo13-interface.md): Learn more about: ICorProfilerInfo13 Interface
-- [CreateHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo13-createhandle-method.md): Learn more about: ICorProfilerInfo13::CreateHandle Method
-- [DestroyHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo13-destroyhandle-method.md): Learn more about: ICorProfilerInfo13::DestroyHandle Method
-- [GetObjectIDFromHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/unmanaged-api/profiling/icorprofilerinfo13-getobjectidfromhandle-method.md): Learn more about: ICorProfilerInfo13::GetObjectIDFromHandle Method
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo13-interface.md): Learn more about: ICorProfilerInfo13 Interface
+- [CreateHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo13-createhandle-method.md): Learn more about: ICorProfilerInfo13::CreateHandle Method
+- [DestroyHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo13-destroyhandle-method.md): Learn more about: ICorProfilerInfo13::DestroyHandle Method
+- [GetObjectIDFromHandle method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/profiling/icorprofilerinfo13-getobjectidfromhandle-method.md): Learn more about: ICorProfilerInfo13::GetObjectIDFromHandle Method

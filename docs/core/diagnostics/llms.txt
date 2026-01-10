@@ -2,46 +2,46 @@
 
 ## .NET CLI global tools
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/tools-overview.md): An overview of the tools available to diagnose .NET Core applications.
-- [dotnet-counters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-counters.md): Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
-- [dotnet-dump](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-dump.md): Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
-- [dotnet-gcdump](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-gcdump.md): Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
-- [dotnet-monitor](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-monitor.md): Learn how to install and use the dotnet-monitor tool to collect dumps, traces, logs, and metrics from applications in production environments.
-- [dotnet-trace](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-trace.md): Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-- [dotnet-stack](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-stack.md): Learn how to install and use the dotnet-stack CLI tool which captures and prints the managed stacks for all threads in the target .NET process.
-- [dotnet-symbol](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-symbol.md): Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps.
-- [dotnet-debugger-extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-debugger-extensions.md): Learn how to install and use the dotnet-debugger-extensions CLI tool to manage the .NET debugging extensions, which is used with native debuggers on Windows and Linux.
-- [dotnet-sos](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-sos.md): Learn how to install and use the dotnet-sos CLI tool to manage the SOS debugger extension, which is used with native debuggers on Windows and Linux.
-- [dotnet-dsrouter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/dotnet-dsrouter.md): An introduction to dotnet-dsrouter in .NET.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/tools-overview.md): An overview of the tools available to diagnose .NET Core applications.
+- [dotnet-counters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-counters.md): Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
+- [dotnet-dump](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-dump.md): Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
+- [dotnet-gcdump](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-gcdump.md): Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
+- [dotnet-monitor](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-monitor.md): Learn how to install and use the dotnet-monitor tool to collect dumps, traces, logs, and metrics from applications in production environments.
+- [dotnet-trace](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-trace.md): Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
+- [dotnet-stack](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-stack.md): Learn how to install and use the dotnet-stack CLI tool which captures and prints the managed stacks for all threads in the target .NET process.
+- [dotnet-symbol](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-symbol.md): Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps.
+- [dotnet-debugger-extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-debugger-extensions.md): Learn how to install and use the dotnet-debugger-extensions CLI tool to manage the .NET debugging extensions, which is used with native debuggers on Windows and Linux.
+- [dotnet-sos](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-sos.md): Learn how to install and use the dotnet-sos CLI tool to manage the SOS debugger extension, which is used with native debuggers on Windows and Linux.
+- [dotnet-dsrouter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/dotnet-dsrouter.md): An introduction to dotnet-dsrouter in .NET.
 
 ## .NET diagnostics tutorials
 
-- [Collect performance trace in Linux with PerfCollect](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/trace-perfcollect-lttng.md): A tutorial that walks you through collecting a trace with perfcollect in .NET.
-- [Debug a memory leak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/debug-memory-leak.md): Learn how to debug a memory leak in .NET.
-- [Debug high CPU usage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/debug-highcpu.md): A tutorial that walks you through debugging high CPU usage in .NET Core.
-- [Debug deadlock](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/debug-deadlock.md): A tutorial that walks you through debugging a locking issue in .NET Core.
-- [Debug ThreadPool starvation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/debug-threadpool-starvation.md): A tutorial that walks you through debugging and fixing a ThreadPool starvation issue on .NET Core
-- [Debug a stack overflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/debug-stackoverflow.md): Learn how to diagnose StackOverflow exceptions
+- [Collect performance trace in Linux with PerfCollect](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/trace-perfcollect-lttng.md): A tutorial that walks you through collecting a trace with perfcollect in .NET.
+- [Debug a memory leak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/debug-memory-leak.md): Learn how to debug a memory leak in .NET.
+- [Debug high CPU usage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/debug-highcpu.md): A tutorial that walks you through debugging high CPU usage in .NET Core.
+- [Debug deadlock](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/debug-deadlock.md): A tutorial that walks you through debugging a locking issue in .NET Core.
+- [Debug ThreadPool starvation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/debug-threadpool-starvation.md): A tutorial that walks you through debugging and fixing a ThreadPool starvation issue on .NET Core
+- [Debug a stack overflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/debug-stackoverflow.md): Learn how to diagnose StackOverflow exceptions
 
 ## Built-in metrics
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/built-in-metrics.md): Review the metrics built-in for the .NET runtime and libraries.
-- [.NET runtime metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/built-in-metrics-runtime.md): Review the metrics available for .NET runtime libraries.
-- [.NET extensions metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/built-in-metrics-diagnostics.md): Review the metrics available for diagnostic .NET extensions libraries.
-- [System.Net metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/built-in-metrics-system-net.md): Review the metrics available for System.Net
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/built-in-metrics.md): Review the metrics built-in for the .NET runtime and libraries.
+- [.NET runtime metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/built-in-metrics-runtime.md): Review the metrics available for .NET runtime libraries.
+- [.NET extensions metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/built-in-metrics-diagnostics.md): Review the metrics available for diagnostic .NET extensions libraries.
+- [System.Net metrics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/built-in-metrics-system-net.md): Review the metrics available for System.Net
 
 ## Diagnostic port
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/diagnostic-port.md): Learn about .NET diagnostic ports
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/diagnostic-port.md): Learn about .NET diagnostic ports
 
 ## Diagnostics and instrumentation
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/index.md): An overview of the tools and techniques available to diagnose .NET Core applications.
-- [Managed debuggers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/managed-debuggers.md): An overview of the Visual Studio and Visual Studio Code managed debuggers.
-- [Profiling tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/profilers.md): An overview of .NET profiling tools.
-- [Logging & tracing options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/logging-tracing.md): An introduction to .NET logging and tracing.
-- [App health checks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/diagnostic-health-checks.md): Learn how to use resource utilization and application lifetime health checks in .NET app development.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/index.md): An overview of the tools and techniques available to diagnose .NET Core applications.
+- [Managed debuggers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/managed-debuggers.md): An overview of the Visual Studio and Visual Studio Code managed debuggers.
+- [Profiling tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/profilers.md): An overview of .NET profiling tools.
+- [Logging & tracing options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/logging-tracing.md): An introduction to .NET logging and tracing.
+- [App health checks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/diagnostic-health-checks.md): Learn how to use resource utilization and application lifetime health checks in .NET app development.
 
 ## DiagnosticSource and DiagnosticListener
 
-- [Get started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/diagnostics/diagnosticsource-diagnosticlistener.md): An overview of DiagnosticSource/DiagnosticListener including guidance on logging events, instrumenting code, and consuming data.
+- [Get started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/diagnosticsource-diagnosticlistener.md): An overview of DiagnosticSource/DiagnosticListener including guidance on logging events, instrumenting code, and consuming data.

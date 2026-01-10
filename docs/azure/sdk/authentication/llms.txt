@@ -2,20 +2,20 @@
 
 ## Auth during local development
 
-- [Use a developer account](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/local-development-dev-accounts.md): Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
-- [Use a service principal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/local-development-service-principal.md): Learn how to authenticate your app to Azure services during local development using dedicated application service principals.
-- [Use a broker](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/local-development-broker.md): Learn how to authenticate your app to Azure services when using the Azure SDK for .NET during local development using brokered authentication.
+- [Use a developer account](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/local-development-dev-accounts.md): Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
+- [Use a service principal](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/local-development-service-principal.md): Learn how to authenticate your app to Azure services during local development using dedicated application service principals.
+- [Use a broker](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/local-development-broker.md): Learn how to authenticate your app to Azure services when using the Azure SDK for .NET during local development using brokered authentication.
 
 ## Auth from Azure-hosted apps
 
-- [Use a system-assigned managed identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/system-assigned-managed-identity.md): Learn how to authenticate Azure-hosted .NET apps to other Azure services using a system-assigned managed identity.
-- [Use a user-assigned managed identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/user-assigned-managed-identity.md): Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned managed identity.
+- [Use a system-assigned managed identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/system-assigned-managed-identity.md): Learn how to authenticate Azure-hosted .NET apps to other Azure services using a system-assigned managed identity.
+- [Use a user-assigned managed identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/user-assigned-managed-identity.md): Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned managed identity.
 
 ## Authentication
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/index.md): Learn how to authenticate a .NET app with Azure services by using classes in the Azure Identity library.
-- [Auth from on-premises apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/on-premises-apps.md): This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET in on-premises hosted apps.
-- [Auth via configuration files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/create-token-credentials-from-configuration.md): Learn how to create token credentials from configuration files.
-- [Additional auth methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/additional-methods.md): This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources.
-- [Credential chains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/credential-chains.md): 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
-- [Best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/azure/sdk/authentication/best-practices.md): This article describes authentication best practices to follow when using the Azure Identity library for .NET.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/index.md): Learn how to authenticate a .NET app with Azure services by using classes in the Azure Identity library.
+- [Auth from on-premises apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/on-premises-apps.md): This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET in on-premises hosted apps.
+- [Auth via configuration files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/create-token-credentials-from-configuration.md): Learn how to create token credentials from configuration files.
+- [Additional auth methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/additional-methods.md): This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources.
+- [Credential chains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/credential-chains.md): 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
+- [Best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/authentication/best-practices.md): This article describes authentication best practices to follow when using the Azure Identity library for .NET.

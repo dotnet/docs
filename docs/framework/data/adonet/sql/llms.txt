@@ -1,49 +1,49 @@
 # Sql Docs
 
-- [SQL Server and ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/index.md): Learn about features and behaviors of the .NET Framework Data Provider for SQL Server, which encapsulates database-specific protocols.
+- [SQL Server and ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/index.md): Learn about features and behaviors of the .NET Framework Data Provider for SQL Server, which encapsulates database-specific protocols.
 
 ## Asynchronous Operations
 
-- [Asynchronous Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/asynchronous-operations.md): Learn more about: Asynchronous Operations
-- [Windows Applications Using Callbacks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/windows-applications-using-callbacks.md): Learn how to use callbacks in Windows apps to take action when a long-running database operation has completed.
-- [ASP.NET Applications Using Wait Handles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/aspnet-apps-using-wait-handles.md): Learn more about ASP.NET applications using wait handles. The Wait models provide a more flexible way of processing multiple asynchronous operations.
-- [Polling in Console Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/polling-in-console-applications.md): Learn more about polling an asynchronous operation to determine whether the operation has completed or not.
+- [Asynchronous Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/asynchronous-operations.md): Learn more about: Asynchronous Operations
+- [Windows Applications Using Callbacks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/windows-applications-using-callbacks.md): Learn how to use callbacks in Windows apps to take action when a long-running database operation has completed.
+- [ASP.NET Applications Using Wait Handles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/aspnet-apps-using-wait-handles.md): Learn more about ASP.NET applications using wait handles. The Wait models provide a more flexible way of processing multiple asynchronous operations.
+- [Polling in Console Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/polling-in-console-applications.md): Learn more about polling an asynchronous operation to determine whether the operation has completed or not.
 
 ## Bulk Copy Operations in SQL Server
 
-- [Bulk Copy Operations in SQL Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md): Learn to use the SqlBulkCopy class to write managed code solutions that bulk copy large files into tables or views in SQL Server databases.
-- [Bulk Copy Example Setup](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/bulk-copy-example-setup.md): Learn more about: Bulk Copy Example Setup
-- [Single Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/single-bulk-copy-operations.md): Learn more about the simplest approach to performing a SQL Server bulk copy operation by performing a single operation against a database.
-- [Multiple Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/multiple-bulk-copy-operations.md): Learn more about: Multiple Bulk Copy Operations
-- [Transaction and Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md): Learn more about: Transaction and Bulk Copy Operations
+- [Bulk Copy Operations in SQL Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md): Learn to use the SqlBulkCopy class to write managed code solutions that bulk copy large files into tables or views in SQL Server databases.
+- [Bulk Copy Example Setup](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/bulk-copy-example-setup.md): Learn more about: Bulk Copy Example Setup
+- [Single Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/single-bulk-copy-operations.md): Learn more about the simplest approach to performing a SQL Server bulk copy operation by performing a single operation against a database.
+- [Multiple Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/multiple-bulk-copy-operations.md): Learn more about: Multiple Bulk Copy Operations
+- [Transaction and Bulk Copy Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md): Learn more about: Transaction and Bulk Copy Operations
 
 ## Multiple Active Result Sets (MARS)
 
-- [Multiple Active Result Sets (MARS)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md): Learn more about: Multiple Active Result Sets (MARS)
-- [Enabling Multiple Active Result Sets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/enabling-multiple-active-result-sets.md): Learn how to enable/disable MARS in a connection string, which works with SQL Server so that you can run multiple batches on a single connection in ADO.NET.
-- [Manipulating Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/manipulating-data.md): Learn more about using multiple commands and reading and updating data with Multiple Active Result Sets (MARS).
+- [Multiple Active Result Sets (MARS)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md): Learn more about: Multiple Active Result Sets (MARS)
+- [Enabling Multiple Active Result Sets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/enabling-multiple-active-result-sets.md): Learn how to enable/disable MARS in a connection string, which works with SQL Server so that you can run multiple batches on a single connection in ADO.NET.
+- [Manipulating Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/manipulating-data.md): Learn more about using multiple commands and reading and updating data with Multiple Active Result Sets (MARS).
 
 ## Query Notifications in SQL Server
 
-- [Query Notifications in SQL Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md): Learn how to use query notifications to notify applications when data has changed in a SQL Server database, for instance, to refresh application displays.
-- [Enabling Query Notifications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/enabling-query-notifications.md): Learn more about: Enabling Query Notifications
-- [Detecting Changes with SqlDependency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/detecting-changes-with-sqldependency.md): Associate a SqlDependency object with a SqlCommand to detect when query results differ from those originally retrieved in ADO.NET.
-- [SqlCommand Execution with a SqlNotificationRequest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/sqlcommand-execution-with-a-sqlnotificationrequest.md): Learn more about: SqlCommand Execution with a SqlNotificationRequest
+- [Query Notifications in SQL Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md): Learn how to use query notifications to notify applications when data has changed in a SQL Server database, for instance, to refresh application displays.
+- [Enabling Query Notifications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/enabling-query-notifications.md): Learn more about: Enabling Query Notifications
+- [Detecting Changes with SqlDependency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/detecting-changes-with-sqldependency.md): Associate a SqlDependency object with a SqlCommand to detect when query results differ from those originally retrieved in ADO.NET.
+- [SqlCommand Execution with a SqlNotificationRequest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/sqlcommand-execution-with-a-sqlnotificationrequest.md): Learn more about: SqlCommand Execution with a SqlNotificationRequest
 
 ## SQL Server Binary and Large-Value Data
 
-- [SQL Server Binary and Large-Value Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md): Learn more about: SQL Server Binary and Large-Value Data
-- [Modifying Large-Value (max) Data in ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/modifying-large-value-max-data.md): Learn more about: Modifying Large-Value (max) Data in ADO.NET
-- [FILESTREAM Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/filestream-data.md): Learn more about FILESTREAM data. The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column.
-- [Inserting an Image from a File](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/inserting-an-image-from-a-file.md): Learn more about inserting an image from a file. You can write a binary large object to a database as either binary or character data.
+- [SQL Server Binary and Large-Value Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md): Learn more about: SQL Server Binary and Large-Value Data
+- [Modifying Large-Value (max) Data in ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/modifying-large-value-max-data.md): Learn more about: Modifying Large-Value (max) Data in ADO.NET
+- [FILESTREAM Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/filestream-data.md): Learn more about FILESTREAM data. The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column.
+- [Inserting an Image from a File](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/inserting-an-image-from-a-file.md): Learn more about inserting an image from a file. You can write a binary large object to a database as either binary or character data.
 
 ## SQL Server Common Language Runtime Integration
 
-- [SQL Server Common Language Runtime Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/sql-server-common-language-runtime-integration.md): Learn more about: SQL Server Common Language Runtime Integration
-- [Introduction to SQL Server CLR Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/introduction-to-sql-server-clr-integration.md): CLR integration with SQL Server supports stored procedures, triggers, user-defined functions, user-defined types, and user-defined aggregates in managed code.
-- [CLR User-Defined Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/clr-user-defined-functions.md): Learn more about: CLR User-Defined Functions
-- [CLR User-Defined Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/clr-user-defined-types.md): Learn more about: CLR User-Defined Types
-- [CLR Stored Procedures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/clr-stored-procedures.md): Learn more about: CLR Stored Procedures
-- [CLR Triggers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/clr-triggers.md): Learn more about: CLR triggers
-- [The Context Connection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/the-context-connection.md): Learn more about: The Context Connection
-- [SQL Server In-Process-Specific Behavior of ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/data/adonet/sql/sql-server-in-process-specific-behavior-of-adonet.md): Learn more about: SQL Server In-Process-Specific Behavior of ADO.NET
+- [SQL Server Common Language Runtime Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/sql-server-common-language-runtime-integration.md): Learn more about: SQL Server Common Language Runtime Integration
+- [Introduction to SQL Server CLR Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/introduction-to-sql-server-clr-integration.md): CLR integration with SQL Server supports stored procedures, triggers, user-defined functions, user-defined types, and user-defined aggregates in managed code.
+- [CLR User-Defined Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/clr-user-defined-functions.md): Learn more about: CLR User-Defined Functions
+- [CLR User-Defined Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/clr-user-defined-types.md): Learn more about: CLR User-Defined Types
+- [CLR Stored Procedures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/clr-stored-procedures.md): Learn more about: CLR Stored Procedures
+- [CLR Triggers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/clr-triggers.md): Learn more about: CLR triggers
+- [The Context Connection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/the-context-connection.md): Learn more about: The Context Connection
+- [SQL Server In-Process-Specific Behavior of ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/sql/sql-server-in-process-specific-behavior-of-adonet.md): Learn more about: SQL Server In-Process-Specific Behavior of ADO.NET

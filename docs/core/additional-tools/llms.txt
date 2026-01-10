@@ -2,23 +2,23 @@
 
 ## .NET CLI global tools
 
-- [dotnet-coverage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/dotnet-coverage.md): Learn how to install and use the dotnet-coverage CLI tool to collect code coverage data of a running process.
+- [dotnet-coverage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/dotnet-coverage.md): Learn how to install and use the dotnet-coverage CLI tool to collect code coverage data of a running process.
 
 ## .NET Uninstall Tool
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/uninstall-tool-overview.md): An overview of .NET Uninstall Tool. This tool is a guided command-line tool that removes .NET SDKs and runtimes.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/uninstall-tool-overview.md): An overview of .NET Uninstall Tool. This tool is a guided command-line tool that removes .NET SDKs and runtimes.
 
 ## Additional tools
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/index.md): An overview of the additional tools you can install that support and extend .NET functionality.
-- [.NET install tool for extension authors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/vscode-dotnet-runtime.md): An overview of the .NET install tool for extension authors, a Visual Studio Code extension for installing the .NET runtime.
-- [Generate self-signed certificates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/self-signed-certificates-guide.md): An overview of the dotnet dev-certs tool that adds functionality for .NET and ASP.NET Core projects, and other options for using self-signed certificates.
-- [WCF web service reference provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/wcf-web-service-reference-guide.md): An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
-- [WCF service utility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/dotnet-svcutil-guide.md): An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
-- [WCF service XML serializer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/dotnet-svcutil.xmlserializer-guide.md): Learn how you can use the `dotnet-svcutil.xmlserializer` NuGet package to pre-generate a serialization assembly for .NET Core projects.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/index.md): An overview of the additional tools you can install that support and extend .NET functionality.
+- [.NET install tool for extension authors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/vscode-dotnet-runtime.md): An overview of the .NET install tool for extension authors, a Visual Studio Code extension for installing the .NET runtime.
+- [Generate self-signed certificates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/self-signed-certificates-guide.md): An overview of the dotnet dev-certs tool that adds functionality for .NET and ASP.NET Core projects, and other options for using self-signed certificates.
+- [WCF web service reference provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/wcf-web-service-reference-guide.md): An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
+- [WCF service utility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/dotnet-svcutil-guide.md): An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
+- [WCF service XML serializer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/dotnet-svcutil.xmlserializer-guide.md): Learn how you can use the `dotnet-svcutil.xmlserializer` NuGet package to pre-generate a serialization assembly for .NET Core projects.
 
 ## Command reference
 
-- [dotnet-core-uninstall list](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/uninstall-tool-cli-list.md): The dotnet-core-uninstall list command lists .NET SDKs and runtimes that can be removed with the tool.
-- [dotnet-core-uninstall dry-run](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/uninstall-tool-cli-dry-run.md): The dotnet-core-uninstall dry-run command simulates uninstalling the target .NET SDK or runtime. Status is reported for potential removal.
-- [dotnet-core-uninstall remove](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/additional-tools/uninstall-tool-cli-remove.md): The dotnet-core-uninstall remove command uninstalls the target .NET SDK or Runtime. Learn about this command's syntax.
+- [dotnet-core-uninstall list](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/uninstall-tool-cli-list.md): The dotnet-core-uninstall list command lists .NET SDKs and runtimes that can be removed with the tool.
+- [dotnet-core-uninstall dry-run](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/uninstall-tool-cli-dry-run.md): The dotnet-core-uninstall dry-run command simulates uninstalling the target .NET SDK or runtime. Status is reported for potential removal.
+- [dotnet-core-uninstall remove](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/uninstall-tool-cli-remove.md): The dotnet-core-uninstall remove command uninstalls the target .NET SDK or Runtime. Learn about this command's syntax.

@@ -2,31 +2,31 @@
 
 ## Limitations
 
-- [ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/adonet-limitations.md): Describes some of the ADO.NET limitations you might encounter.
-- [Async](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/async.md): Explains the limitations of the async APIs and some alternatives that you can use instead.
-- [Bulk insert](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/bulk-insert.md): Performance tips you can use when making numerous changes to the database.
-- [Dapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/dapper-limitations.md): Describes some of the limitations you will encounter when using Dapper.
-- [System.Data.SQLite](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/compare.md): Describes some of the differences between the Microsoft.Data.Sqlite and System.Data.SQLite libraries.
+- [ADO.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/adonet-limitations.md): Describes some of the ADO.NET limitations you might encounter.
+- [Async](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/async.md): Explains the limitations of the async APIs and some alternatives that you can use instead.
+- [Bulk insert](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/bulk-insert.md): Performance tips you can use when making numerous changes to the database.
+- [Dapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/dapper-limitations.md): Describes some of the limitations you will encounter when using Dapper.
+- [System.Data.SQLite](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/compare.md): Describes some of the differences between the Microsoft.Data.Sqlite and System.Data.SQLite libraries.
 
 ## Microsoft.Data.Sqlite
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/index.md): An overview of Microsoft.Data.Sqlite
-- [Connection strings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/connection-strings.md): The supported keywords and values of connection strings.
-- [Data types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/types.md): Describes the supported data types and some of the limitations around them.
-- [Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/parameters.md): Learn how to use SQL parameters.
-- [Database errors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/database-errors.md): Describes how database errors and retries are handled by the library.
-- [Transactions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/transactions.md): Learn how to use transactions.
-- [Batching](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/batching.md): Learn how to execute a batch of SQL statements in a single command.
-- [Metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/metadata.md): Learn how to retrieve metadata about a Sqlite database.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/index.md): An overview of Microsoft.Data.Sqlite
+- [Connection strings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/connection-strings.md): The supported keywords and values of connection strings.
+- [Data types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/types.md): Describes the supported data types and some of the limitations around them.
+- [Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/parameters.md): Learn how to use SQL parameters.
+- [Database errors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/database-errors.md): Describes how database errors and retries are handled by the library.
+- [Transactions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/transactions.md): Learn how to use transactions.
+- [Batching](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/batching.md): Learn how to execute a batch of SQL statements in a single command.
+- [Metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/metadata.md): Learn how to retrieve metadata about a Sqlite database.
 
 ## SQLite features
 
-- [In-memory databases](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/in-memory-databases.md): Learn how to use in-memory SQLite databases.
-- [Encryption](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/encryption.md): Learn how to encrypt your database file.
-- [Online backup](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/backup.md): Learn how to use SQLite's online backup feature.
-- [User-defined functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/user-defined-functions.md): Learn how to create user-defined scalar and aggregate functions.
-- [Custom SQLite versions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/custom-versions.md): Learn how to use a custom version of the native SQLite library.
-- [Collation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/collation.md): Learn how to create a custom collating sequence.
-- [Blob I/O](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/blob-io.md): Learn how to use SQLite's BLOB I/O feature.
-- [Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/interop.md): Learn how to interoperate with other SQLite libraries.
-- [Extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/standard/data/sqlite/extensions.md): Learn how to load SQLite extensions.
+- [In-memory databases](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/in-memory-databases.md): Learn how to use in-memory SQLite databases.
+- [Encryption](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/encryption.md): Learn how to encrypt your database file.
+- [Online backup](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/backup.md): Learn how to use SQLite's online backup feature.
+- [User-defined functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/user-defined-functions.md): Learn how to create user-defined scalar and aggregate functions.
+- [Custom SQLite versions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/custom-versions.md): Learn how to use a custom version of the native SQLite library.
+- [Collation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/collation.md): Learn how to create a custom collating sequence.
+- [Blob I/O](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/blob-io.md): Learn how to use SQLite's BLOB I/O feature.
+- [Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/interop.md): Learn how to interoperate with other SQLite libraries.
+- [Extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/data/sqlite/extensions.md): Learn how to load SQLite extensions.

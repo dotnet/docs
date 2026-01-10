@@ -31,7 +31,7 @@ public class ActionInputs
 
     [Option('b', "branch",
         Required = true,
-        HelpText = "The branch name, for example: \"refs/heads/main\". Assign from `github.ref`.")]
+        HelpText = "The branch name, for example: \"refs/heads/llmstxt\". Assign from `github.ref`.")]
     public string Branch
     {
         get => _branchName;

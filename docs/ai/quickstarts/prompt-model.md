@@ -93,7 +93,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) package to send and receive requests to the AI model.
 
-1. Copy the [benefits.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/ai/quickstarts/snippets/prompt-completion/azure-openai/benefits.md) file to your project directory. Configure the project to copy this file to the output directory. If you're using Visual Studio, right-click on the file in Solution Explorer, select **Properties**, and then set **Copy to Output Directory** to **Copy if newer**.
+1. Copy the [benefits.md](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/quickstarts/snippets/prompt-completion/azure-openai/benefits.md) file to your project directory. Configure the project to copy this file to the output directory. If you're using Visual Studio, right-click on the file in Solution Explorer, select **Properties**, and then set **Copy to Output Directory** to **Copy if newer**.
 
 1. In the `Program.cs` file, add the following code to connect and authenticate to the AI model.
 

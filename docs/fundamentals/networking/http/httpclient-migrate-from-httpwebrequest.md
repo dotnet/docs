@@ -337,7 +337,7 @@ In the older `HttpWebRequest` API, enabling DNS Round Robin was straightforward 
 
 :::code source="../snippets/httpclient/DnsRoundRobin.cs" id="DnsRoundRobinConnector":::
 
-For the implementation of `DnsRoundRobinConnector`, see [DnsRoundRobin.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/DnsRoundRobin.cs).
+For the implementation of `DnsRoundRobinConnector`, see [DnsRoundRobin.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/snippets/httpclient/DnsRoundRobin.cs).
 
 `DnsRoundRobinConnector` usage:
 
@@ -578,7 +578,7 @@ In the older `HttpWebRequest` API, applying `CachePolicy` was straightforward du
 
 :::code source="../snippets/httpclient/AddCacheControlHeaders.cs" id="CachePolicy":::
 
-For the implementation of `AddCacheControlHeaders`, see [AddCacheControlHeaders.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/AddCacheControlHeaders.cs).
+For the implementation of `AddCacheControlHeaders`, see [AddCacheControlHeaders.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/snippets/httpclient/AddCacheControlHeaders.cs).
 
 `AddCacheControlHeaders` Usage:
 :::code source="../snippets/httpclient/Program.CacheControlHeaders.cs" id="CacheControlProgram":::

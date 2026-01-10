@@ -1,48 +1,48 @@
 # Trace Debug Docs
 
-- [Trace and Debug Settings Schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/index.md): Learn more about: Trace and Debug Settings Schema
+- [Trace and Debug Settings Schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/index.md): Learn more about: Trace and Debug Settings Schema
 
 ## <add>
 
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-sharedlisteners.md): Learn more about: <add> Element for <sharedListeners>
-- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-sharedlisteners.md): Learn more about: <filter> Element for <add> for <sharedListeners>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-source.md): Learn more about: <add> Element for <listeners> for <source>
-- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-source.md): Learn more about: <filter> Element for <add> for <listeners> for <source>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-trace.md): Learn more about: <add> Element for <listeners> for <trace>
-- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-trace.md): Learn more about: <filter> Element for <add> for <listeners> for <trace>
+- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-sharedlisteners.md): Learn more about: <add> Element for <sharedListeners>
+- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-sharedlisteners.md): Learn more about: <filter> Element for <add> for <sharedListeners>
+- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-source.md): Learn more about: <add> Element for <listeners> for <source>
+- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-source.md): Learn more about: <filter> Element for <add> for <listeners> for <source>
+- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-trace.md): Learn more about: <add> Element for <listeners> for <trace>
+- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-trace.md): Learn more about: <filter> Element for <add> for <listeners> for <trace>
 
 ## <listeners>
 
-- [<listeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-source.md): Learn more about: <listeners> Element for <source>
-- [<clear>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md): Learn more about: <clear> Element for <listeners> for <source>
-- [<remove>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md): Learn more about: <remove> Element for <listeners> for <source>
-- [<listeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-trace.md): Learn more about: <listeners> Element for <trace>
-- [<clear>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md): Learn more about: <clear> Element for <listeners> for <trace>
-- [<remove>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md): Learn more about: <remove> Element for <listeners> for <trace>
+- [<listeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-source.md): Learn more about: <listeners> Element for <source>
+- [<clear>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md): Learn more about: <clear> Element for <listeners> for <source>
+- [<remove>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md): Learn more about: <remove> Element for <listeners> for <source>
+- [<listeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-trace.md): Learn more about: <listeners> Element for <trace>
+- [<clear>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md): Learn more about: <clear> Element for <listeners> for <trace>
+- [<remove>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md): Learn more about: <remove> Element for <listeners> for <trace>
 
 ## <sharedListeners>
 
-- [<sharedListeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md): Learn more about: <sharedListeners> Element
+- [<sharedListeners>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md): Learn more about: <sharedListeners> Element
 
 ## <source>
 
-- [<source>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/source-element.md): Learn more about: <source> Element
+- [<source>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/source-element.md): Learn more about: <source> Element
 
 ## <sources>
 
-- [<sources>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/sources-element.md): Learn more about: <sources> Element
+- [<sources>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/sources-element.md): Learn more about: <sources> Element
 
 ## <switches>
 
-- [<switches>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/switches-element.md): Learn more about: <switches> Element
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-switches.md): Learn more about: <add> Element for <switches>
+- [<switches>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/switches-element.md): Learn more about: <switches> Element
+- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/add-element-for-switches.md): Learn more about: <add> Element for <switches>
 
 ## <system.diagnostics>
 
-- [<system.diagnostics>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md): Learn more about: <system.diagnostics> Element
-- [<assert>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/assert-element.md): Learn more about: <assert> Element
-- [<performanceCounters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md): Learn more about: <performanceCounters> Element
+- [<system.diagnostics>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md): Learn more about: <system.diagnostics> Element
+- [<assert>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/assert-element.md): Learn more about: <assert> Element
+- [<performanceCounters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md): Learn more about: <performanceCounters> Element
 
 ## <trace>
 
-- [<trace>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md): Learn more about: <trace> Element
+- [<trace>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md): Learn more about: <trace> Element

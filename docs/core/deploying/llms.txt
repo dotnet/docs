@@ -2,15 +2,15 @@
 
 ## Publishing
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/index.md): Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
-- [Create a NuGet package with the CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/creating-nuget-packages.md): Learn how to create a NuGet package with the 'dotnet pack' command.
-- [Self-contained deployment runtime roll forward](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/runtime-patch-selection.md): Learn about dotnet publish changes for self-contained deployments.
-- [ReadyToRun](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/ready-to-run.md): Learn what ReadyToRun deployments are and why you should consider using it as part of the publishing your app with .NET 5 and .NET Core 3.0 and later.
-- [Publish .NET apps for macOS](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/macos.md): Learn how to publish .NET applications for macOS, including signing, notarization, and app entitlements.
-- [Runtime package store](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/runtime-store.md): Learn how to use the runtime package store to target manifests used by .NET Core.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/index.md): Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
+- [Create a NuGet package with the CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/creating-nuget-packages.md): Learn how to create a NuGet package with the 'dotnet pack' command.
+- [Self-contained deployment runtime roll forward](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/runtime-patch-selection.md): Learn about dotnet publish changes for self-contained deployments.
+- [ReadyToRun](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/ready-to-run.md): Learn what ReadyToRun deployments are and why you should consider using it as part of the publishing your app with .NET 5 and .NET Core 3.0 and later.
+- [Publish .NET apps for macOS](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/macos.md): Learn how to publish .NET applications for macOS, including signing, notarization, and app entitlements.
+- [Runtime package store](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/runtime-store.md): Learn how to use the runtime package store to target manifests used by .NET Core.
 
 ## Children
 
-- [Native Aot](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/native-aot/llms.txt)
-- [Single File](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/single-file/llms.txt)
-- [Trimming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/core/deploying/trimming/llms.txt)
+- [Native Aot](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/llms.txt)
+- [Single File](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/llms.txt)
+- [Trimming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/trimming/llms.txt)

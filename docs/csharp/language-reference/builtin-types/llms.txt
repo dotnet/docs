@@ -2,32 +2,32 @@
 
 ## Collections and arrays
 
-- [Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/collections.md): Learn about collections in C#, which are used to work with groups of objects. Collections have different characteristics regarding adding and removing elements, modifying elements, and enumerating the collection elements.
-- [Arrays](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/arrays.md): Store multiple variables of the same type in an array data structure in C#. Declare an array by specifying a type or specify Object to store any type.
+- [Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/collections.md): Learn about collections in C#, which are used to work with groups of objects. Collections have different characteristics regarding adding and removing elements, modifying elements, and enumerating the collection elements.
+- [Arrays](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/arrays.md): Store multiple variables of the same type in an array data structure in C#. Declare an array by specifying a type or specify Object to store any type.
 
 ## Reference types
 
-- [Built-in reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/reference-types.md): Learn about reference types that have C# keywords you can use to declare them.
-- [record](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/record.md): Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-- [Nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/nullable-reference-types.md): Learn about C# nullable reference types and how to use them
+- [Built-in reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/reference-types.md): Learn about reference types that have C# keywords you can use to declare them.
+- [record](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/record.md): Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
+- [Nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/nullable-reference-types.md): Learn about C# nullable reference types and how to use them
 
 ## Types
 
-- [Built-in types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/built-in-types.md): Learn C# built-in value and reference types
-- [void](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/void.md): Learn more about void keyword in C#
-- [Unmanaged types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/unmanaged-types.md): Learn about unmanaged types in C#
-- [Default values](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/default-values.md): Learn the default values of C# types such as bool, char, int, float, double, and more.
+- [Built-in types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/built-in-types.md): Learn C# built-in value and reference types
+- [void](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/void.md): Learn more about void keyword in C#
+- [Unmanaged types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/unmanaged-types.md): Learn about unmanaged types in C#
+- [Default values](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/default-values.md): Learn the default values of C# types such as bool, char, int, float, double, and more.
 
 ## Value types
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/value-types.md): Value types vs reference types, kinds of value types, and the built-in value types in C#
-- [Integral numeric types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/integral-numeric-types.md): Learn the range, storage size, and uses for each of the integral numeric types.
-- [Floating-point numeric types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/floating-point-numeric-types.md): Learn about the built-in C# floating-point types: float, double, and decimal
-- [Built-in numeric conversions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/numeric-conversions.md): Learn about the implicit and explicit conversions between the built-in numeric types in C#
-- [bool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/bool.md): Learn about the built-in boolean type in C#
-- [char](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/char.md): Learn about the built-in character type in C#
-- [Enumeration types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/enum.md): Learn about C# enumeration types that represent a choice or a combination of choices
-- [Struct types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/struct.md): Learn about the struct type in C#
-- [Ref struct types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/ref-struct.md): Learn about the ref struct type in C#
-- [Tuple types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/value-tuples.md): C# tuples: lightweight data structures that you can use to group loosely related data elements. Tuples introduce a type that contains multiple public members.
-- [Nullable value types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/csharp/language-reference/builtin-types/nullable-value-types.md): Learn about C# nullable value types and how to use them
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/value-types.md): Value types vs reference types, kinds of value types, and the built-in value types in C#
+- [Integral numeric types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/integral-numeric-types.md): Learn the range, storage size, and uses for each of the integral numeric types.
+- [Floating-point numeric types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/floating-point-numeric-types.md): Learn about the built-in C# floating-point types: float, double, and decimal
+- [Built-in numeric conversions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/numeric-conversions.md): Learn about the implicit and explicit conversions between the built-in numeric types in C#
+- [bool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/bool.md): Learn about the built-in boolean type in C#
+- [char](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/char.md): Learn about the built-in character type in C#
+- [Enumeration types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/enum.md): Learn about C# enumeration types that represent a choice or a combination of choices
+- [Struct types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/struct.md): Learn about the struct type in C#
+- [Ref struct types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/ref-struct.md): Learn about the ref struct type in C#
+- [Tuple types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/value-tuples.md): C# tuples: lightweight data structures that you can use to group loosely related data elements. Tuples introduce a type that contains multiple public members.
+- [Nullable value types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/nullable-value-types.md): Learn about C# nullable value types and how to use them

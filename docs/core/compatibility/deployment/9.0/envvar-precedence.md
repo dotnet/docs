@@ -3,7 +3,6 @@ title: "Breaking change: Environment variables take precedence in app runtime co
 description: "Learn about the breaking change in .NET 9 where environment variables take precedence over runtimeconfig.json settings for configuring the runtime."
 ms.date: 01/09/2026
 ai-usage: ai-assisted
-ms.custom: https://devdiv.visualstudio.com/DevDiv/_workitems/edit/544017
 ---
 # Environment variables take precedence in app runtime configuration settings
 

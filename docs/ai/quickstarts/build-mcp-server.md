@@ -261,7 +261,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
 ### Command Palette configuration
 
-1. Open the Command Palette using `CTRL+SHIFT+P` (`Command+Shift+P` on MacOS). Search "mcp" to locate the `MCP: Add Server...` command.
+1. Open the Command Palette using <kbd>CTRL+SHIFT+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
 
 1. Select the type of MCP server to add (typically the transport type you selected at project creation).
 

@@ -57,7 +57,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
     > [!NOTE]
     > .NET 10.0 SDK or a later version is required to install `Microsoft.McpServer.ProjectTemplates`.
 
-1. Open Visual Studio, and select **Create a new project** in the start window (or select **File > New > Project/Solution..** from inside Visual Studio).
+1. Open Visual Studio, and select **Create a new project** in the start window (or select **File** > **New** > **Project/Solution** from inside Visual Studio).
 
     ![Create a new project dialog window](../media/build-mcp-server/start-window-create-new-project.png)
 

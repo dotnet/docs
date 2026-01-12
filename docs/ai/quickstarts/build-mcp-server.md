@@ -50,14 +50,14 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 1. In a terminal window, install the MCP Server template:
 
-   ```bash
+   ```dotnetcli
    dotnet new install Microsoft.McpServer.ProjectTemplates
    ```
 
     > [!NOTE]
-    > .NET 10.0 SDK (Preview 6 or later) is required to install `Microsoft.McpServer.ProjectTemplates`.
+    > .NET 10.0 SDK or a later version is required to install `Microsoft.McpServer.ProjectTemplates`.
 
-1. Open Visual Studio, and select **Create a new project** in the start window (or select **File > New > Project/Solution..** from inside Visual Studio).
+1. Open Visual Studio, and select **Create a new project** in the start window (or select **File** > **New** > **Project/Solution** from inside Visual Studio).
 
     ![Create a new project dialog window](../media/build-mcp-server/start-window-create-new-project.png)
 
@@ -205,7 +205,7 @@ Configure GitHub Copilot for Visual Studio to use your custom MCP server.
         * **Global** - The MCP server is available across all solutions. 
     * **Server ID**: The unique name / identifier for your MCP server
     * **Type**: The transport type of your MCP server (stdio or HTTP)
-    * **Command (Stdio transport only)**: The command to run your stdio MCP server (i.e. `dotnet run --project [relative path to .csproj file]`)
+    * **Command (Stdio transport only)**: The command to run your stdio MCP server (that is, `dotnet run --project [relative path to .csproj file]`)
     * **URL (HTTP transport only)**: The address of your HTTP MCP server
     * **Environment Variables (optional)**
 
@@ -255,9 +255,9 @@ Add the  relative path to your `.csproj` file under the "args" field.
 
 Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, either via the VS Code Command Palette or manually.
 
-### Command Palette Configuration
+### Command Palette configuration
 
-1. Open the Command Palette using `CTRL+SHIFT+P` (`Command+Shift+P` on MacOS). Search "mcp" to locate the `MCP: Add Server...` command.
+1. Open the Command Palette using <kbd>CTRL+SHIFT+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
 
 1. Select the type of MCP server to add (typically the transport type you selected at project creation).
 
@@ -277,7 +277,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
     ![Add configuration target for MCP server](../media/build-mcp-server/add-mcp-server-config-target.png)
 
-1.  After the above steps, a `.mcp.json` file will be created in the location specified by the configuration target.
+1.  After you complete the previous steps, an `.mcp.json` file will be created in the location specified by the configuration target.
 
 **Stdio Transport `mcp.json`**
 
@@ -314,7 +314,7 @@ Add the relative path to your `.csproj` file under the "args" field.
    ```
 
 
-### Manual Configuration: 
+### Manual configuration
 
 1. Create a `.vscode` folder at the root of your project.
 1. Add an `mcp.json` file in the `.vscode` folder with the following content:

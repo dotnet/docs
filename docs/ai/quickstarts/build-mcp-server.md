@@ -171,7 +171,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ## Tour the MCP Server Project
 
-Creating your MCP server project via the template give you the following major files: 
+Creating your MCP server project via the template gives you the following major files: 
 
 * `Program.cs`: A file defining the application as an MCP server and registering MCP services such as transport type and MCP tools.  
 

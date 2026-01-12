@@ -55,7 +55,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, select **Show all files**.
 
-1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net8.0_.)
+1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net10.0_.)
 
    :::image type="content" source="media/publishing-with-visual-studio/published-files-output-net8.png" alt-text="Solution Explorer showing published files":::
 
@@ -88,7 +88,7 @@ In the following steps, you'll look at the files created by the publish process.
 1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
    ```console
-   cd C:\Projects\HelloWorld\bin\Release\net8.0\publish\
+   cd C:\Projects\HelloWorld\bin\Release\net10.0\publish\
    ```
 
 1. Run the app by using the executable:

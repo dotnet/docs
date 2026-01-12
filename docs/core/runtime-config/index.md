@@ -2,7 +2,7 @@
 title: .NET Runtime config options
 description: Learn how to configure the .NET runtime using configuration settings.
 ms.topic: article
-ms.date: 07/23/2021
+ms.date: 01/12/2026
 ---
 # .NET runtime configuration settings
 
@@ -114,7 +114,8 @@ MSBuild properties for configuring the behavior of the runtime are noted in the 
 
 Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix `DOTNET_`. (For .NET Framework runtime configuration, use the `COMPlus_` prefix instead.)
 
-Starting in .NET 9, environment variables take precedence over both MSBuild properties and *runtimeconfig.json* settings. This makes it easier to override configuration settings in deployment scenarios without modifying application files. For more information about this breaking change, see [Environment variables take precedence in app runtime configuration settings](compatibility/deployment/9.0/envvar-precedence.md).
+> [!NOTE]
+> Starting in .NET 9, environment variables take precedence over both MSBuild properties and *runtimeconfig.json* settings. For more information about this breaking change, see [Environment variables take precedence in app runtime configuration settings](compatibility/deployment/9.0/envvar-precedence.md).
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

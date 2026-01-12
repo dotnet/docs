@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Environment variables take precedence in app runtime configuration settings"
-description: "Learn about the breaking change in .NET 9 where environment variables take precedence over runtimeconfig.json settings in app runtime configuration."
+description: "Learn about the breaking change in .NET 9 where environment variables take precedence over runtimeconfig.json settings for configuring the runtime."
 ms.date: 01/09/2026
 ai-usage: ai-assisted
 ms.custom: https://devdiv.visualstudio.com/DevDiv/_workitems/edit/544017
@@ -43,20 +43,16 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The new behavior is more consistent with how configuration tends to work in .NET and elsewhere, with environment variables taking precedence. This change makes it easier to override configuration settings in deployment scenarios, such as containerized environments or CI/CD pipelines, without modifying application files.
+The new behavior is more consistent with how configuration tends to work in .NET and elsewhere, with environment variables taking precedence.
 
 ## Recommended action
 
-If your application is running in an environment with runtime configuration environment variables set to values different than what is desired, either unset the environment variable or set it to the desired configuration value.
-
-To check which runtime configuration settings might be affected:
-
-1. Review your application's `runtimeconfig.json` or project file for runtime configuration settings.
-2. Check the deployment environment for corresponding environment variables (for example, `DOTNET_gcServer`, `DOTNET_ThreadPool_UnfairSemaphoreSpinLimit`).
-3. Ensure that environment variables are set to the intended values or unset them if the `runtimeconfig.json` values should be used.
-
-For more information about runtime configuration settings and their environment variable equivalents, see [.NET runtime configuration settings](https://learn.microsoft.com/dotnet/core/runtime-config/).
+If your app runs in an environment with runtime configuration environment variables set to values different than what's desired, either unset the environment variable or set it to the desired configuration value.
 
 ## Affected APIs
 
 None.
+
+## See also
+
+- [.NET runtime configuration settings](../../../runtime-config/index.md)

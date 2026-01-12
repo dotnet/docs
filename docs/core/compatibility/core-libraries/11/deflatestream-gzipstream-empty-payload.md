@@ -36,7 +36,7 @@ using (var deflate = new DeflateStream(output, CompressionMode.Compress))
 {
     // No data written.
 }
-Console.WriteLine(output.Length); // 2 (for Deflate) or 10 (for GZip).
+Console.WriteLine(output.Length); // 2 (for Deflate) or 20 (for GZip).
 ```
 
 ## Type of breaking change

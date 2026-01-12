@@ -49,7 +49,7 @@ Deflate and GZip compression formats include delimiters for the start and end of
 
 ## Recommended action
 
-If the previous behavior is desired, special case empty content to not compress it via `DeflateStream` or `GZipStream`.
+If the previous behavior is desired, special-case empty content to not compress it via `DeflateStream` or `GZipStream`.
 
 ```csharp
 byte[] dataToCompress = GetData();

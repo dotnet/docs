@@ -18,6 +18,10 @@ items:
                 href: core-libraries/11/memorystream-max-capacity.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md
+          - name: Cryptography
+            items:
+              - name: DSA removed from macOS
+                href: cryptography/11/dsa-removed-macos.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected

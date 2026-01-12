@@ -657,6 +657,10 @@ items:
       CS9147, CS9148, CS9149, CS9150, CS9151, CS9152, CS9153, CS9154, CS9155, CS9156,
       CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207, CS9231,
       CS9232, CS9233, CS9234, CS9235, CS9270
+  - name: File scoped types
+    href: ./compiler-messages/file-scoped-types.md
+    displayName: >
+      CS9051, CS9052, CS9053, CS9054, CS9056, CS9068, CS9069, CS9071
   - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: >

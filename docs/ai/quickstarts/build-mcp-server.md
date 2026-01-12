@@ -108,7 +108,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 1. After selecting the command, use the Search bar in the Command Palette or scroll down to locate the **MCP Server App** template.
 
-    ![Dropdown list of .NET projects](../media/build-mcp-server/vscode-create-new-mcp-server-project.png)
+    ![Create an MCP Server App template](../media/build-mcp-server/vscode-create-new-mcp-server-project.png)
 
 1. Select the location where you would like the new project to be created.
 

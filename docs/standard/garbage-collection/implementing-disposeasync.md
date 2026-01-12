@@ -42,12 +42,18 @@ The `public` parameterless `DisposeAsync()` method is called implicitly in an `a
 public async ValueTask DisposeAsync()
 {
     // Perform async cleanup.
-    await DisposeAsyncCore().ConfigureAwait(false);
+    await DisposeAsyncCore();
+
+    // Dispose of unmanaged resources.
+    Dispose(false);
 
     // Suppress finalization.
     GC.SuppressFinalize(this);
 }
 ```
+
+> [!NOTE]
+> One primary difference in the async dispose pattern compared to the dispose pattern, is that the call from <xref:System.IAsyncDisposable.DisposeAsync> to the `Dispose(bool)` overload method is given `false` as an argument. When implementing the <xref:System.IDisposable.Dispose?displayProperty=nameWithType> method, however, `true` is passed instead. This helps ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked. In other words, the `DisposeAsyncCore()` method will dispose of managed resources asynchronously, so you don't want to dispose of them synchronously as well. Therefore, call `Dispose(false)` instead of `Dispose(true)`.
 
 ### The `DisposeAsyncCore` method
 

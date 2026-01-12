@@ -46,7 +46,7 @@ To start a GitHub Codespace with the tutorial environment, open a browser window
 
    ```dotnetcli
    cd tutorials
-   dotnet run hello-world.cs
+   dotnet hello-world.cs
    ```
 
 You ran your first .NET app. It's a simple app that prints the message "Hello, World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.

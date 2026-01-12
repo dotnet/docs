@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Using Azure services from .NET applications via the Azure SDK NuGet packages. Key packages include `Microsoft.Extensions.Azure` for DI integration and `Azure.Identity` for authentication. Use `DefaultAzureCredential` for passwordless authentication; register clients with `AddAzureClients()` in ASP.NET Core."
+}

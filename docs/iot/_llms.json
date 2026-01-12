@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Building IoT applications that interact with sensors, displays, and hardware on devices like Raspberry Pi. Core packages are `System.Device.Gpio` for low-level protocols (GPIO, I²C, SPI, PWM) and `Iot.Device.Bindings` for device-specific bindings. .NET runs natively on ARM-based Linux boards."
+}

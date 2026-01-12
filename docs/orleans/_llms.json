@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Building distributed applications using the Orleans virtual actor framework. Grains are the fundamental units encapsulating state and behavior with single-threaded execution guarantees. Orleans handles grain placement, activation, and lifecycle; scales elastically across servers with transparent fault tolerance."
+}

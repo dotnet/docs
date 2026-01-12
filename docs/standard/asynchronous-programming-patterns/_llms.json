@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Performing non-blocking operations that free threads while waiting for I/O, network, or other long-running work. The Task-based Asynchronous Pattern (TAP) with `async`/`await` is the recommended approach; older patterns include Event-based (EAP) and `IAsyncResult` (APM). Use `async` for I/O-bound work; use parallel programming for CPU-bound work."
+}

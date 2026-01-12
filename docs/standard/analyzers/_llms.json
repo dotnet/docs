@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Roslyn-based code analyzers that detect issues at compile time for platform compatibility, API usage, and code quality. The Platform Compatibility Analyzer identifies OS-specific API usage; use `[SupportedOSPlatform]` and `OperatingSystem.IsWindows()` guards for cross-platform code."
+}

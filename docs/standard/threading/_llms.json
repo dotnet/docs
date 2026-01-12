@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Running code concurrently using threads, synchronization primitives, and the thread pool. Core types include `Thread`, `ThreadPool`, `Monitor`, `Mutex`, `Semaphore`, and `ManualResetEvent`. For most scenarios, prefer `Task`-based `async`/`await` over direct thread manipulation."
+}

@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Calling native code from managed .NET code to access OS APIs, hardware, or existing C/C++ libraries. Platform Invoke (P/Invoke) uses `DllImport` to call native functions; COM interop enables interaction with COM components. Use `LibraryImport` (source-generated) in .NET 7+ for better performance and trimming support."
+}

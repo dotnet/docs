@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Automatic memory management that reclaims unused objects from the managed heap. The garbage collector (GC) runs in generations (0, 1, 2) and uses different modes (workstation, server) for various workloads. Implement `IDisposable` for deterministic cleanup of unmanaged resources; use `GC.Collect()` sparingly."
+}

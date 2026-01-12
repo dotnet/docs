@@ -100,7 +100,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 1. Open Visual Studio Code.
 
-1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using <kbd<Ctrl+Shift+P</kbd> (<kbd<Command+Shift+P</kbd> on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
+1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using <kbd>Ctrl+Shift+P</kbd> (<kbd>Command+Shift+P</kbd> on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
 
     This action will bring up a dropdown list of .NET projects.
 
@@ -258,7 +258,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
 ### Command Palette configuration
 
-1. Open the Command Palette using <kbd>CTRL+SHIFT+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
+1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
 
 1. Select the type of MCP server to add (typically the transport type you selected at project creation).
 

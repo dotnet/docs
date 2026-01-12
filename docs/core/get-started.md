@@ -28,7 +28,7 @@ You must have one of the following options:
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).
-  - The [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
+  - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
 ## Open Codespaces
 

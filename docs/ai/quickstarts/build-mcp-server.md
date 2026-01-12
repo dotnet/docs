@@ -209,7 +209,7 @@ Configure GitHub Copilot for Visual Studio to use your custom MCP server.
         * **Global** - The MCP server is available across all solutions. 
     * **Server ID**: The unique name / identifier for your MCP server
     * **Type**: The transport type of your MCP server (stdio or HTTP)
-    * **Command (Stdio transport only)**: The command to run your stdio MCP server (i.e. `dotnet run --project [relative path to .csproj file]`)
+    * **Command (Stdio transport only)**: The command to run your stdio MCP server (that is, `dotnet run --project [relative path to .csproj file]`)
     * **URL (HTTP transport only)**: The address of your HTTP MCP server
     * **Environment Variables (optional)**
 

@@ -42,10 +42,10 @@ You build a file-based program that writes text as ASCII art. The app is contain
 1. Save the file. Then, open the integrated terminal in Visual Studio Code and type:
 
    ```dotnetcli
-   dotnet run AsciiArt.cs
+   dotnet AsciiArt.cs
    ```
 
-The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, and then runs the created executable. You can verify this experience by typing `dotnet run AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current and runs the executable without building it again. You don't see any build output.
+The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, and then runs the created executable. You can verify this experience by typing `dotnet AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current and runs the executable without building it again. You don't see any build output.
 
 The preceding steps demonstrate that file-based apps aren't script files. They're C# source files that the `dotnet` host builds by using a generated project file in a temporary folder. One of the lines of output displayed when you build the program should look something like this (on Windows):
 
@@ -67,9 +67,9 @@ File-based apps are regular C# programs. The only limitation is that you must wr
 
 > [!NOTE]
 >
-> Support for `#!` directives applies on Unix platforms only. There's no similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet run` on the command line.
+> Support for `#!` directives applies on Unix platforms only. There's no similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet` on the command line.
 
-On Unix, you can run file-based apps directly. Instead of using `dotnet run`, you type the source file name on the command line. You need to make two changes:
+On Unix, you can run file-based apps directly. Instead of using `dotnet`, you type the source file name on the command line. You need to make two changes:
 
 1. Set *execute* permissions on the source file:
 
@@ -80,7 +80,7 @@ On Unix, you can run file-based apps directly. Instead of using `dotnet run`, yo
 1. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
 
    ```csharp
-   #!/usr/local/share/dotnet/dotnet run
+   #!/usr/local/share/dotnet/dotnet
    ```
 
 The location of `dotnet` can be different on different Unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
@@ -116,7 +116,7 @@ Now, write all arguments on the command line to the output.
 1. You can run this version by typing the following command:
 
    ```dotnetcli
-   dotnet run AsciiArt.cs -- This is the command line.
+   dotnet AsciiArt.cs -- This is the command line.
    ```
 
    The `--` option indicates that all following command arguments should be passed to the AsciiArt program. The arguments `This is the command line.` are passed as an array of strings, where each string is one word: `This`, `is`, `the`, `command`, and `line.`.
@@ -156,13 +156,13 @@ The preceding code handles command line arguments correctly. Now, add the code t
    By using bash:
 
    ```bash
-   cat input.txt | dotnet run AsciiArt.cs
+   cat input.txt | dotnet AsciiArt.cs
    ```
 
    Or, by using PowerShell:
 
    ```powershell
-   Get-Content input.txt | dotnet run AsciiArt.cs
+   Get-Content input.txt | dotnet AsciiArt.cs
    ```
 
 Now your program can accept either command line arguments or standard input.

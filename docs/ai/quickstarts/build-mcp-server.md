@@ -73,8 +73,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
     - **Framework**: Select the target .NET Framework.
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server.
-    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
+    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more in the [Native AOT deployment guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more in the [Self-contained deployment section of the .NET application publishing guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
 
     Choose your preferred options or keep the default ones, and then select **Create**.
 
@@ -120,8 +120,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
     - **Framework**: Select the target .NET Framework
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server
-    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
+    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more in the [Native AOT deployment guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more in the [Self-contained deployment section of the .NET application publishing guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
 
     ![MCP Server Template Options](../media/build-mcp-server/vscode-mcp-server-template-options.png)
 
@@ -143,12 +143,12 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
    By default, this command creates a self-contained tool package targeting all of the most common platforms that .NET is supported on. To see more options, use `dotnet new mcpserver --help`.
 
-   Using the `dotnet new mcpserver --help` command gives you several template options you can add when creating a new MCP server: 
+   Using the `dotnet new mcpserver --help` command gives you several template options you can add when creating a new MCP server:
 
     - **Framework**: Select the target .NET Framework
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server
-    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
+    - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more in the [Native AOT deployment guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more in the [Self-contained deployment section of the .NET application publishing guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
 
     ![Template options for an MCP Server in .NET CLI](../media/build-mcp-server/cli-mcp-server-template-options.png)
 
@@ -170,16 +170,12 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ## Tour the MCP Server Project
 
-Creating your MCP server project via the template gives you the following major files: 
+Creating your MCP server project via the template gives you the following major files:
 
 * `Program.cs`: A file defining the application as an MCP server and registering MCP services such as transport type and MCP tools.  
-
-    * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (i.e. `.withStdioServerTransport()`).  
-    
-    * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`). 
-
+  * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (i.e. `.withStdioServerTransport()`).
+  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`). 
 * `RandomNumberTools.cs`: A class defining an example MCP server tool that returns a random number between user-specified min/max values.
-
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
 
 ![MCP Server Project Structure (stdio)](../media/build-mcp-server/mcp-server-stdio-project-structure.png)
@@ -285,7 +281,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
 **Stdio Transport `mcp.json`**
 
-Add the  relative path to your `.csproj` file under the "args" field.
+Add the relative path to your `.csproj` file under the "args" field.
 
    ```json
    {

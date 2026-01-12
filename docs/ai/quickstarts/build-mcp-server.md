@@ -5,6 +5,7 @@ ms.date: 10/20/2025
 ms.topic: quickstart
 author: alexwolfmsft
 ms.author: alexwolf
+zone_pivot_groups: development-environment-one
 ---
 
 # Create a minimal MCP server using C# and publish to NuGet

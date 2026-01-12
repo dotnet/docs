@@ -1,7 +1,7 @@
 ---
 title: Build file-based apps
 description: File-based apps are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
-ms.date: 12/12/2025
+ms.date: 01/12/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 #customer intent: As a developer, I want to build utilities so that more work is automated.

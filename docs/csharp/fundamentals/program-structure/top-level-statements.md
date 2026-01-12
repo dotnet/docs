@@ -1,7 +1,7 @@
 ---
 title: "Top-level statements - programs without Main methods"
 description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
-ms.date: 06/23/2025
+ms.date: 01/12/2026
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
@@ -34,7 +34,7 @@ A project can have any number of source code files that don't have top-level sta
 
 ## No other entry points
 
-You can write a `Main` method explicitly, but it can't function as an entry point. The compiler issues the following warning:
+You can explicitly write a `Main` method, but it can't function as an entry point. The compiler issues the following warning:
 
 > CS7022 The entry point of the program is global code; ignoring 'Main()' entry point.
 
@@ -42,7 +42,7 @@ In a project with top-level statements, you can't use the [-main](../../language
 
 ## `using` directives
 
-For the single file containing top-level statements `using` directives must come first in that file, as in this example:
+For the single file containing top-level statements, `using` directives must come first in that file, as in this example:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
@@ -64,7 +64,7 @@ Top-level statements can reference the `args` variable to access any command-lin
 
 ## `await`
 
-You can call an async method by using `await`. For example:
+Use `await` to call an async method. For example:
 
 :::code language="csharp" source="snippets/top-level-statements-4/Program.cs":::
 
@@ -76,7 +76,7 @@ To return an `int` value when the application ends, use the `return` statement a
 
 ## Implicit entry point method
 
-The compiler generates a method to serve as the program entry point for a project with top-level statements. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
+The compiler generates a method to serve as the program entry point for a project with top-level statements. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature looks like, using the method name `Main` in the table for convenience.
 
 | Top-level code contains | Implicit `Main` signature                    |
 |-------------------------|----------------------------------------------|
@@ -85,7 +85,7 @@ The compiler generates a method to serve as the program entry point for a projec
 | `return`                | `static int Main(string[] args)`             |
 | No `await` or `return`  | `static void Main(string[] args)`            |
 
-Beginning with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* with the command `dotnet <file.cs>`, or using the `#!/usr/bin/env dotnet` directive as the first line (unix shells only).
+Starting with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* by using the command `dotnet <file.cs>`, or by using the `#!/usr/bin/env dotnet` directive as the first line (Unix shells only).
 
 ## C# language specification
 

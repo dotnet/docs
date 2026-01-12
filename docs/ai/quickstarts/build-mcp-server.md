@@ -318,7 +318,7 @@ Add the  relative path to your `.csproj` file under the "args" field.
    ```
 
 
-### Manual Configuration: 
+### Manual configuration
 
 1. Create a `.vscode` folder at the root of your project.
 1. Add an `mcp.json` file in the `.vscode` folder with the following content:

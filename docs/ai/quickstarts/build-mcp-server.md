@@ -281,7 +281,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
     ![Add configuration target for MCP server](../media/build-mcp-server/add-mcp-server-config-target.png)
 
-1.  After the above steps, a `.mcp.json` file will be created in the location specified by the configuration target.
+1.  After you complete the previous steps, an `.mcp.json` file will be created in the location specified by the configuration target.
 
 **Stdio Transport `mcp.json`**
 

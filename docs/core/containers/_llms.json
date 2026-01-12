@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Building and publishing .NET applications as container images without a Dockerfile. The .NET SDK includes built-in container support via `dotnet publish` with container properties. Use `EnableSdkContainerSupport` in your project file; publish to Azure Container Registry, Docker Hub, or other registries."
+}

@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Static analysis rules enforced by Roslyn analyzers for code quality and style. Rules are organized into categories like Design, Security, Performance, and Naming. Configure severity and behavior in `.editorconfig` files; use `dotnet_diagnostic.<rule>.severity` to control warnings and errors."
+}

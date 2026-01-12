@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Making HTTP requests, working with sockets, and handling network protocols. Use `HttpClient` for REST APIs with `IHttpClientFactory` for proper lifecycle management. `System.Net.NetworkInformation` provides network availability monitoring; `System.Net.Sockets` enables low-level TCP/UDP communication."
+}

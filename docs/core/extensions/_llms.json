@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Common application building blocks from the `Microsoft.Extensions.*` libraries including dependency injection, configuration, logging, caching, and HTTP clients. Key types include `IServiceCollection`, `IConfiguration`, `ILogger`, `IMemoryCache`, and `IHttpClientFactory`. Also covers globalization, channels, and compliance features like data redaction."
+}

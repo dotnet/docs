@@ -1,0 +1,4 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "description": "Writing non-blocking code using `async` and `await` keywords with the Task-based Asynchronous Pattern (TAP). Async methods return `Task` or `Task<T>` and free threads during I/O-bound operations. Use `async` for network calls, file I/O, and database queries; avoid blocking with `.Result` or `.Wait()`."
+}

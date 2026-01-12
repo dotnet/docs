@@ -18,8 +18,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ::: zone pivot="visualstudio"
 
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet) (preview 6 or higher)
-- [Visual Studio](https://visualstudio.microsoft.com/) 
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet)
 - [GitHub Copilot](https://github.com/features/copilot)
 - [NuGet.org account](https://www.nuget.org/users/account/LogOn)
 
@@ -27,7 +26,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ::: zone pivot="vscode"
 
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet) (preview 6 or higher)
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet)
 - [Visual Studio Code](https://code.visualstudio.com/) (optional)
 - [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 - [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for Visual Studio Code
@@ -37,7 +36,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ::: zone pivot="cli"
 
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet) (preview 6 or higher)
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet)
 - [Visual Studio Code](https://code.visualstudio.com/) (optional)
 - [Visual Studio](https://visualstudio.microsoft.com/) (optional)
 - [GitHub Copilot](https://github.com/features/copilot) / [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for Visual Studio Code

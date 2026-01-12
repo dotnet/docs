@@ -66,7 +66,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
     ![Create a new MCP Server app project in project dialog window](../media/build-mcp-server/create-new-project-mcp-server-app.png)
 
-1. In the **Configure your new project** window, enter **MyMcpServer** in the **Project name** feild.  Then, select **Next**.
+1. In the **Configure your new project** window, enter **MyMcpServer** in the **Project name** field.  Then, select **Next**.
 
     ![Name your new MCP Server app project in the Configure your new project dialog window](../media/build-mcp-server/naming-mcp-server-project.png)
 

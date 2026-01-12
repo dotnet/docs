@@ -72,8 +72,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 1. In the **Additional information** window, you can configure the following options:
 
-    - **Framework**: Select the target .NET Framework
-    - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server
+    - **Framework**: Select the target .NET Framework.
+    - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server.
     - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=windows%2Cnet8).
     - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable.  Learn more [here](https://learn.microsoft.com/en-us/dotnet/core/deploying/?pivots=visualstudio#self-contained-deployment).
 

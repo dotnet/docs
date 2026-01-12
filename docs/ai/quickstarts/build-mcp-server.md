@@ -96,11 +96,11 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
    ```
 
     > [!NOTE]
-    > .NET 10.0 SDK (Preview 6 or later) is required to install `Microsoft.McpServer.ProjectTemplates`.
+    > .NET 10.0 SDK or later is required to install `Microsoft.McpServer.ProjectTemplates`.
 
 1. Open Visual Studio Code.
 
-1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using `CTRL+SHIFT+P` (`Command+Shift+P` on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
+1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using <kbd<Ctrl+Shift+P</kbd> (<kbd<Command+Shift+P</kbd> on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
 
     This action will bring up a dropdown list of .NET projects.
 
@@ -181,7 +181,7 @@ Creating your MCP server project via the template gives you the following major 
 
 ![MCP Server Project Structure (stdio)](../media/build-mcp-server/mcp-server-stdio-project-structure.png)
 
-::: zone-pivot="cli,vscode"
+::: zone pivot="cli,vscode"
 
 * `server.json`: A file defining how and where your MCP server is published.
 
@@ -189,7 +189,7 @@ Creating your MCP server project via the template gives you the following major 
 
 ## Configure the MCP server
 
-::: zone-pivot="vs"
+::: zone pivot="visualstudio"
 
 Configure GitHub Copilot for Visual Studio to use your custom MCP server.
 
@@ -252,7 +252,7 @@ Add the  relative path to your `.csproj` file under the "args" field.
 
 ::: zone-end
 
-::: zone-pivot="vscode,cli"
+::: zone pivot="vscode,cli"
 
 Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, either via the VS Code Command Palette or manually.
 

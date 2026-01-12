@@ -174,7 +174,7 @@ Creating your MCP server project via the template gives you the following major 
 
 * `Program.cs`: A file defining the application as an MCP server and registering MCP services such as transport type and MCP tools.  
   * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (i.e. `.withStdioServerTransport()`).
-  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`). 
+  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`).
 * `RandomNumberTools.cs`: A class defining an example MCP server tool that returns a random number between user-specified min/max values.
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
 
@@ -202,9 +202,9 @@ Configure GitHub Copilot for Visual Studio to use your custom MCP server.
 
     * **Destination**: Choose the scope of where your MCP server is configured:
         * **Solution** - The MCP server is available only across the active solution.
-        * **Global** - The MCP server is available across all solutions. 
-    * **Server ID**: The unique name / identifier for your MCP server
-    * **Type**: The transport type of your MCP server (stdio or HTTP)
+        * **Global** - The MCP server is available across all solutions.
+    * **Server ID**: The unique name / identifier for your MCP server.
+    * **Type**: The transport type of your MCP server (stdio or HTTP).
     * **Command (Stdio transport only)**: The command to run your stdio MCP server (that is, `dotnet run --project [relative path to .csproj file]`)
     * **URL (HTTP transport only)**: The address of your HTTP MCP server
     * **Environment Variables (optional)**
@@ -277,7 +277,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, e
 
     ![Add configuration target for MCP server](../media/build-mcp-server/add-mcp-server-config-target.png)
 
-1.  After you complete the previous steps, an `.mcp.json` file will be created in the location specified by the configuration target.
+1. After you complete the previous steps, an `.mcp.json` file will be created in the location specified by the configuration target.
 
 **Stdio Transport `mcp.json`**
 
@@ -312,7 +312,6 @@ Add the relative path to your `.csproj` file under the "args" field.
      "inputs": []
    }
    ```
-
 
 ### Manual configuration
 

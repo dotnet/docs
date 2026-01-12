@@ -3,14 +3,14 @@ title: Get started with .NET
 description: Create a Hello World .NET app.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/21/2025
+ms.date: 01/12/2026
 ms.custom: vs-dotnet, devdivchpfy22
 ms.topic: tutorial
 ai-usage: ai-assisted
 ---
 # Get started with .NET
 
-This tutorial teaches you how to create and run your first .NET app. You write a simple program and see the results of running your code.
+This tutorial teaches you how to create and run your first .NET app using [file-based apps](./sdk/file-based-apps.md). You write a simple app and see the results of running your code.
 
 In this tutorial, you:
 
@@ -18,7 +18,7 @@ In this tutorial, you:
 >
 > * Launch a GitHub Codespace with a .NET development environment.
 > * Create your first .NET app.
-> * Run your program.
+> * Run your app.
 
 ## Prerequisites
 
@@ -34,22 +34,22 @@ You must have one of the following options:
 
 To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green **Code** button, and the **Codespaces** tab. Then select the `+` sign to create a new Codespace using this environment.
 
-## Run your first program
+## Create and run your first app
 
 1. When your codespace loads, create a new file in the `tutorials` folder named `hello-world.cs`.
 1. Open your new file.
 1. Type or copy the following code into `hello-world.cs`:
 
-   :::code language="csharp" source="./snippets/get-started/csharp/hello-world.cs" id="HelloWorld":::
+   :::code language="csharp" source="./snippets/get-started/hello-world.cs" id="HelloWorld":::
 
-1. In the integrated terminal window, make the `tutorials` folder the current folder, and run your program:
+1. In the integrated terminal window, make the `tutorials` folder the current folder, and run your app:
 
    ```dotnetcli
    cd tutorials
    dotnet run hello-world.cs
    ```
 
-You ran your first .NET program. It's a simple program that prints the message "Hello, World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
+You ran your first .NET app. It's a simple app that prints the message "Hello, World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
 Congratulations! You created a simple .NET application.
 

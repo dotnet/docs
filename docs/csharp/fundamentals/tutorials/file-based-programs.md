@@ -69,7 +69,7 @@ File-based apps are regular C# programs. The only limitation is that you must wr
 >
 > Support for `#!` directives applies on Unix platforms only. There's no similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet` on the command line.
 
-On Unix, you can run file-based apps directly. Instead of using `dotnet`, you type the source file name on the command line. You need to make two changes:
+On Unix, run file-based apps directly by typing just the source file name. Instead of using `dotnet AsciiArt.cs`, type the source file name on the command line. You need to make two changes:
 
 1. Set *execute* permissions on the source file:
 

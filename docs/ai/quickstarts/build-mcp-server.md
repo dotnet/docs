@@ -181,7 +181,7 @@ Creating your MCP server project via the template gives you the following major 
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
 * `server.json`: A file defining how and where your MCP server is published.
 
-::: zone-pivot="visualstudio"
+::: zone pivot="visualstudio"
 
 ![MCP Server Project Structure (stdio)](../media/build-mcp-server/vs-mcp-server-project-structure.png)
 

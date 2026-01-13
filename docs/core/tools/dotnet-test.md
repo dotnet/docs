@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). The test runner you use determines the available command-line options and behavior.
 
 > [!NOTE]
-> Test runner selection is available starting with .NET 10 SDK. In .NET 6, .NET 7, .NET 8, and .NET 9, tests are always executed with VSTest.
+> Test runner selection is available starting with .NET 10 SDK. In earlier versions of .NET, tests are always executed with VSTest.
 
 ### Choosing a test runner
 

@@ -5,7 +5,7 @@ ms.topic: concept-article
 ms.date: 10/09/2024
 ms.custom: sfi-image-nochange
 ms.collection: ce-skilling-ai-copilot
-ms.update-cycle: 180 days
+ms.update-cycle: 180-days
 ---
 
 # Use Copilot Conversational Assessment with the Azure Migrate application and code assessment tool

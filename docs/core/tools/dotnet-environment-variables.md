@@ -6,7 +6,7 @@ ms.date: 11/20/2025
 
 # .NET environment variables
 
-In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
+This article lists the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
 

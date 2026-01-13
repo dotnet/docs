@@ -1,0 +1,5 @@
+{
+  "title": "XML Documents and Data",
+  "description": "Parsing, writing, and manipulating XML in .NET using `System.Xml` namespaces. Core types include `XmlReader`/`XmlWriter` for streaming, `XmlDocument` for DOM manipulation, `XPathNavigator` for XPath queries, and `XslCompiledTransform` for XSLT transformations. `System.Xml.Schema` provides XML Schema (XSD) validation. For modern XML programming, prefer LINQ to XML (`System.Xml.Linq`) with `XDocument` and `XElement`.",
+  "shortDescription": "Parse, write, and transform XML with `XmlReader`, `XmlDocument`, and XSLT."
+}

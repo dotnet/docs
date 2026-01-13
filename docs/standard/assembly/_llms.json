@@ -1,4 +1,4 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Packaging compiled code into deployable units (.dll or .exe) that define versioning, security, and type boundaries. Assemblies contain IL code, metadata, and manifest; they can be strong-named for identity and versioning. Use `AssemblyLoadContext` for dynamic loading and isolation in plugin scenarios."
+  "description": "Packaging compiled code into deployable units (.dll or .exe) that define versioning, security, and type boundaries. Assemblies contain IL code, metadata, and manifest; they can be strong-named for identity and versioning. Use `AssemblyLoadContext` for dynamic loading and isolation in plugin scenarios.",
+  "shortDescription": "Package code into .dll/.exe units with versioning and strong naming."
 }

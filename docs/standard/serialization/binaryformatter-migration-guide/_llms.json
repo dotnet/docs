@@ -1,0 +1,10 @@
+{
+  "title": "BinaryFormatter Migration Guide",
+  "description": "Guidance for migrating away from the obsolete BinaryFormatter to safer alternatives.",
+  "shortDescription": "Migrate from obsolete BinaryFormatter to safer alternatives.",
+  "preamble": "**CAUTION:** We strongly recommend against using BinaryFormatter due to associated security risks. Existing users should migrate away from BinaryFormatter.",
+  "offers": [
+    "index",
+    "compatibility-package"
+  ]
+}

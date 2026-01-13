@@ -1,4 +1,10 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Storing, retrieving, and manipulating groups of related objects in lists, dictionaries, sets, queues, and stacks. Core namespaces include `System.Collections.Generic` for type-safe collections, `System.Collections.Concurrent` for thread-safe access, and `System.Collections.Immutable` for immutable data structures. Prefer generic collections over non-generic for type safety and performance."
+  "description": "Storing, retrieving, and manipulating groups of related objects in lists, dictionaries, sets, queues, and stacks. Core namespaces include `System.Collections.Generic` for type-safe collections, `System.Collections.Concurrent` for thread-safe access, and `System.Collections.Immutable` for immutable data structures. Prefer generic collections over non-generic for type safety and performance.",
+  "shortDescription": "Lists, dictionaries, sets, queues, and stacks for grouping related objects.",
+  "preamble": "**.NET 10 adds:** `OrderedDictionary<TKey, TValue>.TryAdd` and `TryGetValue` overloads that return the entry index for fast subsequent access via `GetAt`/`SetAt`.",
+  "offers": [
+    "thread-safe",
+    "selecting-a-collection-class",
+    "commonly-used-collection-types"
+  ]
 }

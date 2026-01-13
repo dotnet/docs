@@ -1,4 +1,10 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Protecting applications through authentication, authorization, cryptography, and secure coding practices. `System.Security.Cryptography` provides hashing (`SHA256`, `SHA512`), symmetric encryption (`AES`), asymmetric encryption (`RSA`), and digital signatures. Use role-based security for authorization and follow secure coding guidelines to prevent vulnerabilities."
+  "description": "Protecting applications through authentication, authorization, cryptography, and secure coding practices. `System.Security.Cryptography` provides hashing (`SHA256`, `SHA512`), symmetric encryption (`AES`), asymmetric encryption (`RSA`), and digital signatures. Use role-based security for authorization and follow secure coding guidelines to prevent vulnerabilities.",
+  "shortDescription": "Cryptography, authentication, authorization, and secure coding practices.",
+  "preamble": "**.NET 10 adds:** Post-quantum cryptography support with `MLKem`, `MLDsa`, and `SlhDsa` classes (FIPS 203/204/205), AES KeyWrap with Padding (`EncryptKeyWrapPadded`/`DecryptKeyWrapPadded`), and `X509Certificate2Collection.FindByThumbprint` for SHA-256/SHA-3 thumbprints.",
+  "offers": [
+    "cryptography-model",
+    "secure-coding-guidelines",
+    "cross-platform-cryptography"
+  ]
 }

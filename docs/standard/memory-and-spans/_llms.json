@@ -1,4 +1,4 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Working with contiguous memory regions efficiently without heap allocations. `Span<T>` and `ReadOnlySpan<T>` provide stack-only views over arrays, strings, and native memory; `Memory<T>` and `ReadOnlyMemory<T>` can be stored on the heap. Use spans in high-performance scenarios to avoid copying data and reduce allocations."
+  "description": "Working with contiguous memory regions efficiently without heap allocations. `Span<T>` and `ReadOnlySpan<T>` provide stack-only views over arrays, strings, and native memory; `Memory<T>` and `ReadOnlyMemory<T>` can be stored on the heap. Use spans in high-performance scenarios to avoid copying data and reduce allocations.",
+  "shortDescription": "Efficient memory access with `Span<T>` and `Memory<T>`."
 }

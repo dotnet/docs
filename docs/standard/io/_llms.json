@@ -1,4 +1,10 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "File and stream I/O transfers data to and from storage, memory, network, or pipes. Core types include `File`, `FileInfo`, `Directory`, `DirectoryInfo`, `Path`, and the `Stream` class hierarchy. Streams provide a unified abstraction—`FileStream`, `MemoryStream`, `NetworkStream`—with sync and async support."
+  "description": "File and stream I/O transfers data to and from storage, memory, network, or pipes. Core types include `File`, `FileInfo`, `Directory`, `DirectoryInfo`, `Path`, and the `Stream` class hierarchy. Streams provide a unified abstraction—`FileStream`, `MemoryStream`, `NetworkStream`—with sync and async support.",
+  "shortDescription": "Read and write files, streams, memory, and pipes with sync and async support.",
+  "preamble": "**.NET 10 adds:** Async ZIP APIs (`ZipArchive.CreateAsync`, `ZipFile.ExtractToDirectoryAsync`, etc.) and significant `ZipArchive` performance/memory improvements for Update mode and large archives.",
+  "offers": [
+    "pipelines",
+    "asynchronous-file-i-o",
+    "memory-mapped-files"
+  ]
 }

@@ -1,4 +1,4 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Handling runtime errors and unexpected conditions using structured exception handling with `try`/`catch`/`finally`. Exceptions inherit from `System.Exception`; common types include `ArgumentException`, `InvalidOperationException`, `IOException`, and `NullReferenceException`. Throw specific exceptions, catch at appropriate levels, and use exception filters for conditional handling."
+  "description": "Handling runtime errors and unexpected conditions using structured exception handling with `try`/`catch`/`finally`. Exceptions inherit from `System.Exception`; common types include `ArgumentException`, `InvalidOperationException`, `IOException`, and `NullReferenceException`. Throw specific exceptions, catch at appropriate levels, and use exception filters for conditional handling.",
+  "shortDescription": "Handle errors with `try`/`catch`/`finally` and exception types."
 }

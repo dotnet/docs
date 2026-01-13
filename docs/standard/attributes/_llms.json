@@ -1,4 +1,4 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Adding metadata to code elements like classes, methods, and properties using declarative annotations. Attributes derive from `System.Attribute` and are accessed via reflection at runtime. Common uses include serialization control, validation, dependency injection configuration, and compiler directives like `[Obsolete]` and `[Conditional]`."
+  "description": "Adding metadata to code elements like classes, methods, and properties using declarative annotations. Attributes derive from `System.Attribute` and are accessed via reflection at runtime. Common uses include serialization control, validation, dependency injection configuration, and compiler directives like `[Obsolete]` and `[Conditional]`.",
+  "shortDescription": "Declarative metadata annotations for classes, methods, and properties."
 }

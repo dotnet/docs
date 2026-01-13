@@ -1,4 +1,4 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Writing type-safe, reusable code that works with any data type using type parameters. Generic classes like `List<T>` and `Dictionary<TKey,TValue>` avoid boxing and provide compile-time type checking. Use constraints (`where T : class`) to restrict type parameters and enable specific operations."
+  "description": "Writing type-safe, reusable code that works with any data type using type parameters. Generic classes like `List<T>` and `Dictionary<TKey,TValue>` avoid boxing and provide compile-time type checking. Use constraints (`where T : class`) to restrict type parameters and enable specific operations.",
+  "shortDescription": "Type-safe reusable code with `List<T>`, `Dictionary<TKey,TValue>`, and constraints."
 }

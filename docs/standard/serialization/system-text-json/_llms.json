@@ -1,0 +1,11 @@
+{
+  "title": "System.Text.Json",
+  "description": "High-performance JSON serialization and deserialization for .NET applications.",
+  "shortDescription": "High-performance JSON serialization and deserialization.",
+  "preamble": "**.NET 10 adds:** `JsonSerializerOptions.Strict` preset for best-practice defaults, `AllowDuplicateProperties` option to reject duplicate JSON properties, `PipeReader` deserialization support, and `ReferenceHandler` in `JsonSourceGenerationOptions`.",
+  "offers": [
+    "overview",
+    "how-to",
+    "migrate-from-newtonsoft"
+  ]
+}

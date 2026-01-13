@@ -64,7 +64,7 @@ To configure the hang dump file generation, use the following options:
 
 ### Considerations for macOS
 
-Taking dumps when running on macOS can be problematic. If you found that a dump has started to be taken, but never finishes, in CI environments where you don't have direct access to the machine, this most likely means that macOS showed a popup asking for authentication and is waiting for you to type a password, which is not feasible to do in such environments. The issue might also manifest as an error similar to the following:
+Taking dumps when running on macOS can be problematic. If you found that a dump has started to be taken, but never finishes, in CI environments where you don't have direct access to the machine, this most likely means that macOS showed a popup asking for authentication and is waiting for you to type a password, which isn't feasible to do in such environments. The issue might also manifest as an error similar to the following:
 
 ```output
 [createdump] This failure may be because createdump or the application is not properly signed and entitled.

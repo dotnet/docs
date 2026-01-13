@@ -98,6 +98,23 @@ This article shows you how to:
    [!code-csharp[EmitGenericType#10](./snippets/csharp/emit-generic-type/source.cs#10)]
    [!code-vb[EmitGenericType#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/EmitGenericType/VB/source.vb#10)]
 
+## Example
+
+The following code example shows the full program. It defines a class named `Sample`, along with a base class and two interfaces. The program defines two generic type parameters for `Sample`, turning it into a generic type. Type parameters are the only thing that makes a type generic. The program shows this by displaying a test message before and after the definition of the type parameters.
+
+The type parameter `TSecond` is used to demonstrate class and interface constraints, using the base class and interfaces, and the type parameter `TFirst` is used to demonstrate special constraints.
+
+The code example defines a field and a method using the class's type parameters for the field type and for the parameter and return type of the method.
+
+After the `Sample` class has been created, the method is invoked.
+
+The program includes a method that lists information about a generic type, and a method that lists the special constraints on a type parameter. These methods are used to display information about the finished `Sample` class.
+
+The program saves the finished module to disk as `GenericEmitExample1.dll`, so you can open it with the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) and examine the CIL for the `Sample` class.
+
+[!code-csharp[EmitGenericType#1](./snippets/csharp/emit-generic-type/source.cs#1)]
+[!code-vb[EmitGenericType#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/EmitGenericType/VB/source.vb#1)]
+
 ## See also
 
 - <xref:System.Reflection.Emit.GenericTypeParameterBuilder>

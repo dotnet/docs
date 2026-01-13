@@ -4,8 +4,6 @@ description: This article describes additional tools and utilities for working w
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurepowershell
 ms.date: 8/15/2024
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Additional Tools for Azure Developers

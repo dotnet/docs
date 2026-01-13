@@ -4,8 +4,6 @@ description: To use Azure, you need an Azure account.  This article covers the t
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 8/15/2024
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Create an Azure account

@@ -1,6 +1,4 @@
 ---
-author: alexwolfmsft
-ms.author: alexwolf
 ms.date: 07/29/2024
 ms.topic: include
 ---

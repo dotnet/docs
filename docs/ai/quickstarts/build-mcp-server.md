@@ -20,6 +20,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 ::: zone pivot="visualstudio"
 
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet)
+- [Visual Studio 2022 or higher](https://visualstudio.microsoft.com/)
 - [GitHub Copilot](https://github.com/features/copilot)
 - [NuGet.org account](https://www.nuget.org/users/account/LogOn)
 
@@ -178,14 +179,19 @@ Creating your MCP server project via the template gives you the following major 
   * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`).
 * `RandomNumberTools.cs`: A class defining an example MCP server tool that returns a random number between user-specified min/max values.
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
+* `server.json`: A file defining how and where your MCP server is published.
 
-![MCP Server Project Structure (stdio)](../media/build-mcp-server/mcp-server-stdio-project-structure.png)
+::: zone-pivot="visualstudio"
+
+![MCP Server Project Structure (stdio)](../media/build-mcp-server/vs-mcp-server-project-structure.png)
+
+::: zone-end
 
 ::: zone-pivot="cli,vscode"
 
-* `server.json`: A file defining how and where your MCP server is published.
+![MCP Server Project Structure (stdio)](../media/build-mcp-server/mcp-server-stdio-project-structure.png)
 
-:::zone-end
+::: zone-end
 
 ## Configure the MCP server
 
@@ -212,9 +218,9 @@ Configure GitHub Copilot for Visual Studio to use your custom MCP server.
 
     ![Add Custom MCP Server dialog window](../media/build-mcp-server/vs-add-custom-mcp-server.png)
 
-1. Select **Save**.  An `mcp.json` file will be added to the specified destination.
+1. Select **Save**.  A `.mcp.json` file will be added to the specified destination.
 
-**Stdio Transport `mcp.json`**
+**Stdio Transport `.mcp.json`**
 
 Add the  relative path to your `.csproj` file under the "args" field.
 
@@ -235,7 +241,7 @@ Add the  relative path to your `.csproj` file under the "args" field.
    }
    ```
 
-**HTTP Transport `mcp.json`**
+**HTTP Transport `.mcp.json`**
 
    ```json
    {
@@ -344,13 +350,15 @@ Add the relative path to your `.csproj` file under the "args" field.
 
 ## Test the MCP server
 
+::: zone-pivot="visualstudio"
+
 The MCP server template includes a tool called `get_random_number` you can use for testing and as a starting point for development.
 
-1. Open GitHub Copilot in Visual Studio or VS Code and switch to **Agent** mode.
+1. Open GitHub Copilot chat in Visual Studio and switch to **Agent** mode.
 
-1. Select the **Select tools** icon to verify your **SampleMcpServer** is available with the sample tool listed.
+1. Select the **Select tools** icon to verify your **MyMCPServer** is available with the sample tool listed.
 
-    :::image type="content" source="../media/mcp/available-tools-nuget.png" alt-text="A screenshot showing the available MCP tools.":::
+    ![MCP Tools List in GitHub Copilot Chat](../media/build-mcp-server/vs-mcp-tools-list.png)
 
 1. Enter a prompt to run the **get_random_number** tool:
 
@@ -361,7 +369,7 @@ The MCP server template includes a tool called `get_random_number` you can use f
 1. GitHub Copilot requests permission to run the **get_random_number** tool for your prompt. Select **Continue** or use the arrow to select a more specific behavior:
 
     - **Current session** always runs the operation in the current GitHub Copilot Agent Mode session.
-    - **Current solution (VS) / workspace (VS Code)** always runs the command for the current Visual Studio solution or VS Code workspace.
+    - **Current solution** always runs the command for the current VS solution.
     - **Always allow** sets the operation to always run for any GitHub Copilot Agent Mode session.
 
 1. Verify that the server responds with a random number:
@@ -369,6 +377,38 @@ The MCP server template includes a tool called `get_random_number` you can use f
     ```output
     Your random number is 42.
     ```
+
+::: zone-end
+
+::: zone-pivot="vscode,cli"
+
+The MCP server template includes a tool called `get_random_number` you can use for testing and as a starting point for development.
+
+1. Open GitHub Copilot chat in VS Code and switch to **Agent** mode.
+
+1. Select the **Select tools** icon to verify your **MyMCPServer** is available with the sample tool listed.
+
+    ![MCP Tools List in GitHub Copilot Chat](../media/build-mcp-server/vscode-mcp-tools-list.png)
+
+1. Enter a prompt to run the **get_random_number** tool:
+
+    ```console
+    Give me a random number between 1 and 100.
+    ```
+
+1. GitHub Copilot requests permission to run the **get_random_number** tool for your prompt. Select **Continue** or use the arrow to select a more specific behavior:
+
+    - **Current session** always runs the operation in the current GitHub Copilot Agent Mode session.
+    - **Current workspace** always runs the command for the current VS Code workspace.
+    - **Always allow** sets the operation to always run for any GitHub Copilot Agent Mode session.
+
+1. Verify that the server responds with a random number:
+
+    ```output
+    Your random number is 42.
+    ```
+
+::: zone-end
 
 ## Add inputs and configuration options
 

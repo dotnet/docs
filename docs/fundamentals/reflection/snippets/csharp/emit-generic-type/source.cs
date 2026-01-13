@@ -1,4 +1,4 @@
-//<Snippet1>
+﻿//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -7,28 +7,28 @@ using System.Collections.Generic;
 // Define a trivial base class and two trivial interfaces
 // to use when demonstrating constraints.
 //
-public class ExampleBase {}
+public class ExampleBase { }
 
-public interface IExampleA {}
+public interface IExampleA { }
 
-public interface IExampleB {}
+public interface IExampleB { }
 
 // Define a trivial type that can substitute for type parameter
 // TSecond.
 //
-public class ExampleDerived : ExampleBase, IExampleA, IExampleB {}
+public class ExampleDerived : ExampleBase, IExampleA, IExampleB { }
 
 public class Example
 {
     public static void Main()
     {
         // Define a dynamic assembly to contain the sample type. The
-        // assembly will not be run, but only saved to disk, so
+        // assembly won't be run, only saved to disk, so
         // AssemblyBuilderAccess.Save is specified.
         //
         //<Snippet2>
         AppDomain myDomain = AppDomain.CurrentDomain;
-        AssemblyName myAsmName = new AssemblyName("GenericEmitExample1");
+        AssemblyName myAsmName = new("GenericEmitExample1");
         AssemblyBuilder myAssembly =
             myDomain.DefineDynamicAssembly(myAsmName,
                 AssemblyBuilderAccess.RunAndSave);
@@ -40,8 +40,9 @@ public class Example
         //
         //<Snippet3>
         ModuleBuilder myModule =
-            myAssembly.DefineDynamicModule(myAsmName.Name,
-               myAsmName.Name + ".dll");
+            myAssembly.DefineDynamicModule(
+                myAsmName.Name,
+                $"{myAsmName.Name}.dll");
         //</Snippet3>
 
         // Get type objects for the base class trivial interfaces to
@@ -51,7 +52,7 @@ public class Example
         Type interfaceA = typeof(IExampleA);
         Type interfaceB = typeof(IExampleB);
 
-        // Define the sample type.
+        // Define the "Sample" type.
         //
         //<Snippet4>
         TypeBuilder myType =
@@ -68,7 +69,7 @@ public class Example
         // in a variable with the same name as the type parameter.
         //
         //<Snippet5>
-        string[] typeParamNames = {"TFirst", "TSecond"};
+        string[] typeParamNames = ["TFirst", "TSecond"];
         GenericTypeParameterBuilder[] typeParams =
             myType.DefineGenericParameters(typeParamNames);
 
@@ -96,21 +97,19 @@ public class Example
         // containing the interface types.
         //<Snippet7>
         TSecond.SetBaseTypeConstraint(baseType);
-        Type[] interfaceTypes = {interfaceA, interfaceB};
+        Type[] interfaceTypes = [interfaceA, interfaceB];
         TSecond.SetInterfaceConstraints(interfaceTypes);
         //</Snippet7>
 
-        // The following code adds a private field named ExampleField,
-        // of type TFirst.
+        // The following code adds a private field
+        // named ExampleField of type TFirst.
         //<Snippet21>
-        FieldBuilder exField =
-            myType.DefineField("ExampleField", TFirst,
-                FieldAttributes.Private);
+        _ = myType.DefineField("ExampleField", TFirst, FieldAttributes.Private);
         //</Snippet21>
 
         // Define a static method that takes an array of TFirst and
         // returns a List<TFirst> containing all the elements of
-        // the array. To define this method it is necessary to create
+        // the array. To define this method, it's necessary to create
         // the type List<TFirst> by calling MakeGenericType on the
         // generic type definition, List<T>. (The T is omitted with
         // the typeof operator when you get the generic type
@@ -120,7 +119,7 @@ public class Example
         //<Snippet22>
         Type listOf = typeof(List<>);
         Type listOfTFirst = listOf.MakeGenericType(TFirst);
-        Type[] mParamTypes = {TFirst.MakeArrayType()};
+        Type[] mParamTypes = [TFirst.MakeArrayType()];
 
         MethodBuilder exMethod =
             myType.DefineMethod("ExampleMethod",
@@ -138,9 +137,9 @@ public class Example
         // hard work is getting the constructor.
         //
         // The GetConstructor method is not supported on a
-        // GenericTypeParameterBuilder, so it is not possible to get
+        // GenericTypeParameterBuilder, so it's not possible to get
         // the constructor of List<TFirst> directly. There are two
-        // steps, first getting the constructor of List<T> and then
+        // steps: getting the constructor of List<T>, and then
         // calling a method that converts it to the corresponding
         // constructor of List<TFirst>.
         //
@@ -158,7 +157,7 @@ public class Example
         // of List<T>. The constructor argument list must be passed
         // as an array, with just one argument in this case.
         //
-        // Now it is possible to get the constructor of List<T>,
+        // Now it's possible to get the constructor of List<T>,
         // using GetConstructor on the generic type definition. To get
         // the constructor of List<TFirst>, pass List<TFirst> and
         // the constructor from List<T> to the static
@@ -170,7 +169,7 @@ public class Example
         Type ienumOf = typeof(IEnumerable<>);
         Type TfromListOf = listOf.GetGenericArguments()[0];
         Type ienumOfT = ienumOf.MakeGenericType(TfromListOf);
-        Type[] ctorArgs = {ienumOfT};
+        Type[] ctorArgs = [ienumOfT];
 
         ConstructorInfo ctorPrep = listOf.GetConstructor(ctorArgs);
         ConstructorInfo ctor =
@@ -184,7 +183,7 @@ public class Example
         // Create the type and save the assembly.
         //<Snippet8>
         Type finished = myType.CreateType();
-        myAssembly.Save(myAsmName.Name+".dll");
+        myAssembly.Save(myAsmName.Name + ".dll");
         //</Snippet8>
 
         // Invoke the method.
@@ -199,7 +198,7 @@ public class Example
         // constructed type.
         //
         //<Snippet9>
-        Type[] typeArgs = {typeof(Example), typeof(ExampleDerived)};
+        Type[] typeArgs = [typeof(Example), typeof(ExampleDerived)];
         Type constructed = finished.MakeGenericType(typeArgs);
         MethodInfo mi = constructed.GetMethod("ExampleMethod");
         //</Snippet9>
@@ -211,11 +210,11 @@ public class Example
         // on the resulting List<Example>.
         //
         //<Snippet10>
-        Example[] input = {new Example(), new Example()};
-        object[] arguments = {input};
+        Example[] input = [new Example(), new Example()];
+        object[] arguments = [input];
 
         List<Example> listX =
-            (List<Example>) mi.Invoke(null, arguments);
+            (List<Example>)mi.Invoke(null, arguments);
 
         Console.WriteLine($"\nThere are {listX.Count} elements in the List<Example>.");
         //</Snippet10>
@@ -238,14 +237,14 @@ public class Example
         Type[] typeParameters = t.GetGenericArguments();
         Console.WriteLine($"\nListing {typeParameters.Length} type parameters for type '{t}'.");
 
-        foreach( Type tParam in typeParameters )
+        foreach (Type tParam in typeParameters)
         {
             Console.WriteLine($"""
             
-            Type parameter {tParam.ToString()}:
+            Type parameter {tParam}:
             """);
 
-            foreach( Type c in tParam.GetGenericParameterConstraints() )
+            foreach (Type c in tParam.GetGenericParameterConstraints())
             {
                 if (c.IsInterface)
                 {
@@ -284,7 +283,7 @@ public class Example
         }
 
         if ((constraints & GenericParameterAttributes.DefaultConstructorConstraint)
-            !=GenericParameterAttributes.None)
+            != GenericParameterAttributes.None)
         {
             Console.WriteLine("    DefaultConstructorConstraint");
         }

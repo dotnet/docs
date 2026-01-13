@@ -350,7 +350,7 @@ Add the relative path to your `.csproj` file under the "args" field.
 
 ## Test the MCP server
 
-::: zone-pivot="visualstudio"
+::: zone pivot="visualstudio"
 
 The MCP server template includes a tool called `get_random_number` you can use for testing and as a starting point for development.
 
@@ -380,7 +380,7 @@ The MCP server template includes a tool called `get_random_number` you can use f
 
 ::: zone-end
 
-::: zone-pivot="vscode,cli"
+::: zone pivot="vscode,cli"
 
 The MCP server template includes a tool called `get_random_number` you can use for testing and as a starting point for development.
 

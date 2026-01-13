@@ -3,12 +3,12 @@ title: "Breaking change - MailAddress enforces validation for consecutive dots"
 description: "Learn about the breaking change in .NET 10 where MailAddress enforces stricter validation of email addresses with consecutive dots."
 ms.date: 01/12/2026
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/runtime/issues/109590
+ms.custom: https://github.com/dotnet/docs/issues/51018
 ---
 
 # MailAddress enforces validation for consecutive dots
 
-Starting in .NET 10 Preview 1, the <xref:System.Net.Mail.MailAddress> class enforces stricter validation of email addresses. Email addresses with consecutive dots in the local part (for example, `test..address@example.com`) or domain part (for example, `address@test..example.com`) are now considered invalid. This change aligns the behavior of `MailAddress` with the email address format specified in [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322.html) and [RFC 2822](https://www.rfc-editor.org/rfc/rfc2822.html).
+Starting in .NET 10, the <xref:System.Net.Mail.MailAddress> class enforces stricter validation of email addresses. Email addresses with consecutive dots in the local part (for example, `test..address@example.com`) or domain part (for example, `address@test..example.com`) are now considered invalid. This change aligns the behavior of `MailAddress` with the email address format specified in [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322.html) and [RFC 2822](https://www.rfc-editor.org/rfc/rfc2822.html).
 
 ## Version introduced
 
@@ -16,7 +16,7 @@ Starting in .NET 10 Preview 1, the <xref:System.Net.Mail.MailAddress> class enfo
 
 ## Previous behavior
 
-The <xref:System.Net.Mail.MailAddress> class allowed email addresses with consecutive dots in the local or domain parts, even though such addresses are invalid according to the email address specification.
+Previously, the <xref:System.Net.Mail.MailAddress> class allowed email addresses with consecutive dots in the local or domain parts, even though such addresses are invalid according to the email address specification.
 
 For example, the following code executed without throwing an exception:
 
@@ -29,7 +29,7 @@ Console.WriteLine(email.Address); // Output: test..address@example.com
 
 ## New behavior
 
-Starting in .NET 10 Preview 1, the <xref:System.Net.Mail.MailAddress> class enforces stricter validation and throws a <xref:System.FormatException> when parsing email addresses with consecutive dots in the local or domain parts.
+Starting in .NET 10, the <xref:System.Net.Mail.MailAddress> class enforces stricter validation and throws a <xref:System.FormatException> when it parses an email address with consecutive dots in the local or domain parts.
 
 For example, the following code now throws a <xref:System.FormatException>:
 
@@ -43,7 +43,7 @@ The exception message indicates that the email address is invalid.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -73,9 +73,9 @@ Alternatively, you can validate email addresses using a regular expression befor
 
 ## Affected APIs
 
-- <xref:System.Net.Mail.MailAddress.%23ctor(System.String)?displayProperty=fullName>
-- <xref:System.Net.Mail.MailAddress.%23ctor(System.String,System.String)?displayProperty=fullName>
-- <xref:System.Net.Mail.MailAddress.%23ctor(System.String,System.String,System.Text.Encoding)?displayProperty=fullName>
+- <xref:System.Net.Mail.MailAddress.%23ctor(System.String)> constructor
+- <xref:System.Net.Mail.MailAddress.%23ctor(System.String,System.String)> constructor
+- <xref:System.Net.Mail.MailAddress.%23ctor(System.String,System.String,System.Text.Encoding)> constructor
 
 ## See also
 

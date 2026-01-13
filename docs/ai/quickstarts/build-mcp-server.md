@@ -97,11 +97,11 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
    ```
 
     > [!NOTE]
-    > .NET 10.0 SDK (Preview 6 or later) is required to install `Microsoft.McpServer.ProjectTemplates`.
+    > .NET 10.0 SDK or later is required to install `Microsoft.McpServer.ProjectTemplates`.
 
 1. Open Visual Studio Code.
 
-1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using `CTRL+SHIFT+P` (`Command+Shift+P` on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
+1. Go to the **Explorer** view and select **Create .NET Project**.  Alternatively, you can bring up the Command Palette using <kbd>Ctrl+Shift+P</kbd> (<kbd>Command+Shift+P</kbd> on MacOS) and then type ".NET" to find and select the **.NET: New Project** command.
 
     This action will bring up a dropdown list of .NET projects.
 
@@ -109,7 +109,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 1. After selecting the command, use the Search bar in the Command Palette or scroll down to locate the **MCP Server App** template.
 
-    ![Dropdown list of .NET projects](../media/build-mcp-server/vscode-create-new-mcp-server-project.png)
+    ![Create an MCP Server App template](../media/build-mcp-server/vscode-create-new-mcp-server-project.png)
 
 1. Select the location where you would like the new project to be created.
 
@@ -175,8 +175,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 Creating your MCP server project via the template gives you the following major files:
 
 * `Program.cs`: A file defining the application as an MCP server and registering MCP services such as transport type and MCP tools.  
-  * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (i.e. `.withStdioServerTransport()`).
-  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`).
+  * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (that is, `.withStdioServerTransport()`).
+  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (that is, `.withHttpServerTransport()`, `MapMcp()`).
 * `RandomNumberTools.cs`: A class defining an example MCP server tool that returns a random number between user-specified min/max values.
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
 * `server.json`: A file defining how and where your MCP server is published.
@@ -187,7 +187,7 @@ Creating your MCP server project via the template gives you the following major 
 
 ::: zone-end
 
-::: zone-pivot="cli,vscode"
+::: zone pivot="cli,vscode"
 
 ![MCP Server Project Structure (stdio)](../media/build-mcp-server/mcp-server-stdio-project-structure.png)
 
@@ -195,7 +195,7 @@ Creating your MCP server project via the template gives you the following major 
 
 ## Configure the MCP server
 
-::: zone-pivot="vs"
+::: zone pivot="visualstudio"
 
 Configure GitHub Copilot for Visual Studio to use your custom MCP server.
 
@@ -258,13 +258,13 @@ Add the  relative path to your `.csproj` file under the "args" field.
 
 ::: zone-end
 
-::: zone-pivot="vscode,cli"
+::: zone pivot="vscode,cli"
 
 Configure GitHub Copilot for Visual Studio Code to use your custom MCP server, either via the VS Code Command Palette or manually.
 
 ### Command Palette configuration
 
-1. Open the Command Palette using <kbd>CTRL+SHIFT+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
+1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> (<kbd>Command+Shift+P</kbd> on macOS). Search "mcp" to locate the `MCP: Add Server` command.
 
 1. Select the type of MCP server to add (typically the transport type you selected at project creation).
 

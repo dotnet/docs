@@ -2,7 +2,6 @@
 title: "Breaking change: .NET packages for openSUSE and SLES depend on OpenSSL 3.x"
 description: "Learn about the breaking change in .NET 8 where .NET packages for openSUSE and SLES distributions now depend on OpenSSL 3.x instead of OpenSSL 1.x."
 ms.date: 01/05/2026
-ms.custom: https://github.com/dotnet/runtime/issues/122653
 ai-usage: ai-assisted
 ---
 # .NET packages for openSUSE and SLES depend on OpenSSL 3.x

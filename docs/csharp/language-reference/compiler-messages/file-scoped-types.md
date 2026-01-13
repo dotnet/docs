@@ -26,7 +26,7 @@ ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for file scoped types
 
-The C# compiler generates errors and warnings when you misuse [file-local types](../keywords/file.md). File-local types are visible only within the file where they're declared. These diagnostics help you follow the rules for declaring and using file-local types.
+The C# compiler generates errors and warnings when you misuse [file-local types](../keywords/file.md). File-local types are visible only within the file where you declare them. These diagnostics help you follow the rules for declaring and using file-local types.
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.

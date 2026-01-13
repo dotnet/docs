@@ -174,8 +174,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 Creating your MCP server project via the template gives you the following major files:
 
 * `Program.cs`: A file defining the application as an MCP server and registering MCP services such as transport type and MCP tools.  
-  * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (i.e. `.withStdioServerTransport()`).
-  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (i.e. `.withHttpServerTransport()`, `MapMcp()`).
+  * Choosing the (default) **stdio** transport option in when creating the project, this file will be configured to define the MCP Server as a local one (that is, `.withStdioServerTransport()`).
+  * Choosing the **http** transport option will configure this file to include remote transport-specific definitions (that is, `.withHttpServerTransport()`, `MapMcp()`).
 * `RandomNumberTools.cs`: A class defining an example MCP server tool that returns a random number between user-specified min/max values.
 * **[HTTP Transport Only]** `[MCPServerName].http`: A file defining the default host address for an HTTP MCP server and JSON-RPC communication.
 

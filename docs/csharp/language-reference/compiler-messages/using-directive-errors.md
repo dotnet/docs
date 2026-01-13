@@ -20,7 +20,6 @@ f1_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
-  - "CS9055"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -45,7 +44,6 @@ helpviewer_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
-  - "CS9055"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -73,7 +71,6 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8085**](#restrictions-on-using-aliases): *Error: A 'using static' directive cannot be used to declare an alias.*
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
 - [**CS8915**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
-- [**CS9055**](#global-using-directive): *Error: A file-local type cannot be used in a 'global using static' directive.*
 - [**CS9130**](#restrictions-on-using-aliases): *Error: Using alias cannot be a `ref` type.*
 - [**CS9131**](#restrictions-on-using-aliases): *Error: Only a using alias can be `unsafe`.*
 - [**CS9132**](#restrictions-on-using-aliases): *Error: Using alias cannot be a nullable reference type.*

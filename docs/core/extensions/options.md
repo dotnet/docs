@@ -411,7 +411,7 @@ In the preceding code, the `Database` property is a nested object of type `Datab
 
 To enable recursive validation of the `Database` property, apply the `[ValidateObjectMembers]` attribute:
 
-:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithAttribute" highlight="6,10":::
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithAttribute" highlight="10,14":::
 
 Now when `ApplicationOptionsWithAttribute` is validated, the validation also recurses into the `Database` property and validates its members according to their `DataAnnotations` attributes.
 

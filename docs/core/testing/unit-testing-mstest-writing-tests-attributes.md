@@ -314,7 +314,7 @@ public class TestClass
 }
 ```
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> also supports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayName> property to customize how test cases appear in Test Explorer. You can specify the display name format using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataDisplayNameDeclaringType> to reference a method that generates the display name:
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> also supports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute.DynamicDataDisplayName> property to customize how test cases appear in Test Explorer. You can specify the display name format using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute.DynamicDataDisplayNameDeclaringType> to reference a method that generates the display name:
 
 ```csharp
 using System.Reflection;
@@ -371,11 +371,11 @@ public class TestClass
 
 #### TestDataRow
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow> class provides enhanced control over test data in data-driven tests. When using `IEnumerable<TestDataRow<T>>` as the return type for your dynamic data source, you can specify additional metadata for each test case, such as custom display names and test properties.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1> class provides enhanced control over test data in data-driven tests. When using `IEnumerable<TestDataRow<T>>` as the return type for your dynamic data source, you can specify additional metadata for each test case, such as custom display names and test properties.
 
 `TestDataRow<T>` offers the following benefits:
 
-- **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.DisplayName> property.
+- **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1.DisplayName> property.
 - **Test properties**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.TestProperties> property.
 - **Type-safe data**: Use the generic `TestDataRow<T>` to provide strongly-typed test data.
 
@@ -408,7 +408,7 @@ public class TestClass
 
 ### `UnfoldingStrategy` property
 
-Data-driven test attributes like <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> support the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy> property, which controls how test cases appear in Test Explorer and TRX results. This property also determines whether individual test cases can be run independently.
+Data-driven test attributes like <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> support the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy> property, which controls how test cases appear in Test Explorer and TRX results. This property also determines whether individual test cases can be run independently.
 
 The `UnfoldingStrategy` property accepts the following values:
 
@@ -449,7 +449,7 @@ public class TestClass
 
 ## Attributes used to provide initialization and cleanups
 
-Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example, before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
+Setup and cleanup that's common to multiple tests can be extracted to a separate method and marked with one of the attributes listed in the following section, to run it at appropriate time, for example, before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
 
 ### Assembly level
 
@@ -553,7 +553,7 @@ public class MyTestClass
 ```
 
 > [!NOTE]
-> Multiple methods with these attributes in the assembly are allowed, but there is no guarantee of the order in which they will be executed. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> isn't supported on methods with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.GlobalTestInitializeAttribute>.
+> Multiple methods with these attributes in the assembly are allowed, but there's no guarantee of the order in which they'll execute. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> isn't supported on methods with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.GlobalTestInitializeAttribute>.
 
 ## Attributes used to control test execution
 
@@ -625,12 +625,12 @@ These attributes control test execution time limits and retry behavior.
 
 #### `TimeoutAttribute`
 
-The [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute) attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
+The [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute) attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test is aborted and marked as failed.
 
 This attribute can be applied to any test method or any fixture method (initialization and cleanup methods). It is also possible to specify the timeout globally for either all test methods or all test fixture methods by using the [timeout properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
 > [!NOTE]
-> The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it might take longer before the step is cancelled.
+> The timeout isn't guaranteed to be precise. The test is be aborted after the specified time passes, but it might take longer before the step is cancelled.
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
 
@@ -832,7 +832,7 @@ The [ExpectedException](xref:Microsoft.VisualStudio.TestTools.UnitTesting.Expect
 
 The following attributes and the values assigned to them appear in the `Visual Studio` **Properties** window for a particular test method. These attributes aren't meant to be accessed through the code of the test. Instead, they affect the ways the test is used or run, either by you through the IDE of Visual Studio, or by the Visual Studio test engine. For example, some of these attributes appear as columns in the **Test Manager** window and **Test Results** window, which means that you can use them to group and sort tests and test results. One such attribute is <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>, which you use to add arbitrary metadata to tests.
 
-For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test it is with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
+For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test it's with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.GitHubWorkItemAttribute>

@@ -149,10 +149,10 @@ Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resol
 
 - `async/await` and `Task` based service resolution isn't supported. Because C# doesn't support asynchronous constructors, use asynchronous methods after synchronously resolving the service.
 - Avoid storing data and configuration directly in the service container. For example, a user's shopping cart shouldn't typically be added to the service container. Configuration should use the options pattern. Similarly, avoid "data holder" objects that only exist to allow access to another object. It's better to request the actual item via DI.
-- Avoid static access to services. For example, avoid capturing [IApplicationBuilder.ApplicationServices](xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices) as a static field or property for use elsewhere.
+- Avoid static access to services. For example, avoid capturing <xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices?displayProperty=nameWithType> as a static field or property for use elsewhere.
 - Keep [DI factories](#async-di-factories-can-cause-deadlocks) fast and synchronous.
 - Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
-- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
+- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) strategies.
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
@@ -169,20 +169,6 @@ Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resol
 Like all sets of recommendations, you might encounter situations where ignoring a recommendation is required. Exceptions are rare, and are mostly special cases within the framework itself.
 
 DI is an *alternative* to static/global object access patterns. You might not realize the benefits of DI if you mix it with static object access.
-
-## Use KeyedService.AnyKey for fallbacks
-
-The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
-
-:::code language="csharp" source="snippets/di/di-anykey/csharp/AnyKeyExamples/Program.cs" id="FallbackRegistration":::
-
-In the preceding example:
-
-- Requesting `ICache` with key `"premium"` returns the `PremiumCache` instance.
-- Requesting `ICache` with any other key (like `"basic"` or `"standard"`) creates a new `DefaultCache` using the `AnyKey` fallback.
-
-> [!IMPORTANT]
-> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../compatibility/extensions/10.0/getkeyedservice-anykey.md).
 
 ## Example anti-patterns
 

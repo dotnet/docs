@@ -1,47 +1,48 @@
-# EF Docs
+# ADO.NET Entity Framework
 
-- [ADO.NET Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/index.md): Learn more about: ADO.NET Entity Framework
-- [Entity Framework Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/overview.md): The Entity Framework in ADO.NET supports development of data-oriented applications that work at a higher level of abstraction than traditional applications.
-- [Querying a Conceptual Model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/querying-a-conceptual-model.md): Learn more about: Querying a Conceptual Model
-- [Working with Objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/working-with-objects.md): Learn more about: Working with Objects
-- [Entity Framework Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/resources.md): Learn more about: Entity Framework Resources
-- [Entity Framework Terminology](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/terminology.md): Learn more about: Entity Framework Terminology
-- [Getting Started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/getting-started.md): Learn more about: Getting Started (Entity Framework)
-
-## Development and Deployment Considerations
-
-- [Development and Deployment Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/development-and-deployment-considerations.md): Learn more about: Development and Deployment Considerations
-- [Security Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/security-considerations.md): Learn more about security considerations that are specific to developing, deploying, and running Entity Framework applications.
-- [Performance Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/performance-considerations.md): Learn about performance characteristics of the ADO.NET Entity Framework and considerations to help improve the performance of Entity Framework applications.
-- [Migration Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/migration-considerations.md): Learn more about: Migration Considerations (Entity Framework)
-- [Deployment Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/deployment-considerations.md): Learn more about: Deployment Considerations (Entity Framework)
-
-## EDM Generator (EdmGen.exe)
-
-- [EDM Generator (EdmGen.exe)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/edm-generator-edmgen-exe.md): Learn more about the EDM Generator tool (EdmGen.exe), which is a command-line tool used for working with Entity Framework model and mapping files.
-- [How to: Use EdmGen.exe to Generate the Model and Mapping Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md): Learn more about: How to: Use EdmGen.exe to Generate the Model and Mapping Files
-- [How to: Use EdmGen.exe to Generate Object-Layer Code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md): Learn more about: How to: Use EdmGen.exe to Generate Object-Layer Code
-- [How to: Use EdmGen.exe to Validate Model and Mapping Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md): Learn more about: How to: Use EdmGen.exe to Validate Model and Mapping Files
-
-## Entity Framework Data Providers
-
+- [Aggregate Functions (SqlClient for Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/aggregate-functions-sqlclient-for-entity-framework.md): Learn more about: Aggregate Functions (SqlClient for Entity Framework)
+- [Conceptual Model Canonical to SQL Server Functions Mapping](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/conceptual-model-canonical-to-sql-server-functions-mapping.md): Learn more about: Conceptual Model Canonical to SQL Server Functions Mapping
+- [Connection Strings in the ADO.NET Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/connection-strings.md): Learn about connection strings in the Entity Framework, which contain information to connect to the ADO.NET data provider and about model and mapping files.
 - [Entity Framework Data Providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/data-providers.md): Learn more about: Entity Framework Data Providers
-
-## EntityClient Provider for the Entity Framework
-
+- [Date and Time Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/date-and-time-functions.md): Learn more about: Date and Time Functions
+- [Deployment Considerations (Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/deployment-considerations.md): Learn more about: Deployment Considerations (Entity Framework)
+- [Development and Deployment Considerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/development-and-deployment-considerations.md): Learn more about: Development and Deployment Considerations
+- [EDM Generator (EdmGen.exe)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/edm-generator-edmgen-exe.md): Learn more about the EDM Generator tool (EdmGen.exe), which is a command-line tool used for working with Entity Framework model and mapping files.
 - [EntityClient Provider for the Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md): Learn more about EntityClient Provider for Entity Framework, a data provider used by Entity Framework apps to access data described in a conceptual model.
-- [How to: Execute a Query that Returns PrimitiveType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md): Learn more about: How to: Execute a Query that Returns PrimitiveType Results
-- [How to: Execute a Query that Returns StructuralType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md): Learn more about: How to: Execute a Query that Returns StructuralType Results
-- [How to: Execute a Query that Returns RefType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md): Learn more about: How to: Execute a Query that Returns RefType Results
-- [How to: Execute a Query that Returns Complex Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md): Learn more about: How to: Execute a Query that Returns Complex Types
-- [How to: Execute a Query that Returns Nested Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md): Learn more about: How to: Execute a Query that Returns Nested Collections
+- [Getting Started (Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/getting-started.md): Learn more about: Getting Started (Entity Framework)
 - [How to: Execute a Parameterized Entity SQL Query Using EntityCommand](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md): Learn more about: How to: Execute a Parameterized Entity SQL Query Using EntityCommand
 - [How to: Execute a Parameterized Stored Procedure Using EntityCommand](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md): Learn more about: How to: Execute a Parameterized Stored Procedure Using EntityCommand
 - [How to: Execute a Polymorphic Query](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md): Learn more about: How to: Execute a Polymorphic Query
-- [How to: Navigate Relationships with the Navigate Operator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md): Learn more about: How to: Navigate Relationships with the Navigate Operator
-
-## Modeling and Mapping
-
-- [Modeling and Mapping](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/modeling-and-mapping.md): Learn more about: Modeling and Mapping
+- [How to: Execute a Query that Returns Complex Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md): Learn more about: How to: Execute a Query that Returns Complex Types
+- [How to: Execute a Query that Returns Nested Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md): Learn more about: How to: Execute a Query that Returns Nested Collections
+- [How to: Execute a Query that Returns PrimitiveType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md): Learn more about: How to: Execute a Query that Returns PrimitiveType Results
+- [How to: Execute a Query that Returns RefType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md): Learn more about: How to: Execute a Query that Returns RefType Results
+- [How to: Execute a Query that Returns StructuralType Results](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md): Learn more about: How to: Execute a Query that Returns StructuralType Results
 - [How to: Make Model and Mapping Files Embedded Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-make-model-and-mapping-files-embedded-resources.md): Learn more about deploying model and mapping files as embedded resources of an Entity Framework application.
+- [How to: Navigate Relationships with the Navigate Operator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md): Learn more about: How to: Navigate Relationships with the Navigate Operator
+- [How to: Use EdmGen.exe to Generate Object-Layer Code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md): Learn more about: How to: Use EdmGen.exe to Generate Object-Layer Code
+- [How to: Use EdmGen.exe to Generate the Model and Mapping Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md): Learn more about: How to: Use EdmGen.exe to Generate the Model and Mapping Files
+- [How to: Use EdmGen.exe to Validate Model and Mapping Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md): Learn more about: How to: Use EdmGen.exe to Validate Model and Mapping Files
+- [ADO.NET Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/index.md): Learn more about: ADO.NET Entity Framework
+- [Known Issues in SqlClient for Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md): Learn more about: Known Issues in SqlClient for Entity Framework
+- [Mathematical Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/mathematical-functions.md): Learn more about: Mathematical Functions
+- [Migration Considerations (Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/migration-considerations.md): Learn more about: Migration Considerations (Entity Framework)
+- [Modeling and Mapping](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/modeling-and-mapping.md): Learn more about: Modeling and Mapping
+- [Entity Framework Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/overview.md): The Entity Framework in ADO.NET supports development of data-oriented applications that work at a higher level of abstraction than traditional applications.
+- [Performance Considerations (Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/performance-considerations.md): Learn about performance characteristics of the ADO.NET Entity Framework and considerations to help improve the performance of Entity Framework applications.
+- [Querying a Conceptual Model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/querying-a-conceptual-model.md): Learn more about: Querying a Conceptual Model
+- [Entity Framework Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/resources.md): Learn more about: Entity Framework Resources
+- [Security Considerations (Entity Framework)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/security-considerations.md): Learn more about security considerations that are specific to developing, deploying, and running Entity Framework applications.
+- [SqlClient for Entity Framework Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md): Learn more about: SqlClient for Entity Framework Functions
+- [SqlClient for Entity FrameworkTypes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/sqlclient-for-ef-types.md): Learn more about: SqlClient for Entity FrameworkTypes
+- [SqlClient for the Entity Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md): Learn more about: SqlClient for the Entity Framework
+- [String Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/string-functions.md): Learn more about: String Functions
+- [System Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/system-functions.md): Learn more about: System Functions
+- [Entity Framework Terminology](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/terminology.md): Learn more about: Entity Framework Terminology
 - [Working with Data Definition Language](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/working-with-data-definition-language.md): Learn more about: Working with Data Definition Language
+- [Working with Data Providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/working-with-data-providers.md): Learn more about: Working with Data Providers
+- [Working with Objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/working-with-objects.md): Learn more about: Working with Objects
+
+## Topic Indices
+
+- [Language Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/adonet/ef/language-reference/llms.txt): 132 topics

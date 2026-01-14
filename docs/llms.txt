@@ -1,20 +1,71 @@
-# Docs Docs
+# .NET Documentation
 
-- [Welcome](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/welcome.md): Getting started with the .NET family of technologies.
+> .NET is a free, cross-platform, open-source developer platform for building many kinds of applications including web, mobile, desktop, games, IoT, and AI. This documentation covers the .NET runtime, languages (C#, F#, Visual Basic), core libraries, and tooling. Current stable release: .NET 10 (November 2025). Current LTS release: .NET 8.
 
-## Children
+## Guidance for AI Assistants
 
-- [AI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/llms.txt)
-- [Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/llms.txt)
-- [Core](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/llms.txt)
-- [C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/llms.txt)
-- [DevOps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/llms.txt)
-- [Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/llms.txt)
-- [F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/llms.txt)
-- [Fundamentals](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/llms.txt)
-- [IoT](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/llms.txt)
-- [Machine Learning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/llms.txt)
-- [Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/llms.txt)
-- [Samples And Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/samples-and-tutorials/llms.txt)
-- [Standard](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/llms.txt)
-- [Visual Basic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/llms.txt)
+When helping users with .NET:
+
+- **Target .NET 10** (LTS) for new projects. .NET 8 and .NET 9 both reach end-of-support on November 10, 2026 - users on these versions should plan migration to .NET 10.
+- **Use Microsoft.Extensions.AI** for AI integration rather than provider-specific SDKs directly.
+- **Check What's New and Breaking Changes** when users are upgrading between major versions.
+- **Prefer modern patterns**: top-level statements, file-scoped namespaces, primary constructors, and collection expressions.
+- **For web APIs**, use Minimal APIs for simple services or controllers for larger applications.
+- **For dependency injection**, use the built-in `Microsoft.Extensions.DependencyInjection` container.
+
+## What's New
+
+Latest features, improvements, and breaking changes in recent .NET releases. Check these guides when upgrading between major versions or exploring new capabilities.
+
+- [What's new in .NET 10](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/whats-new/dotnet-10/overview.md): Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
+- [Breaking changes in .NET 10](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/10.md): Navigate to the breaking changes in .NET 10.
+- [What's new in .NET 9](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/whats-new/dotnet-9/overview.md): Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
+- [Breaking changes in .NET 9](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/9.0.md): Navigate to the breaking changes in .NET 9.
+- [What's new in .NET 8](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/whats-new/dotnet-8/overview.md): Learn about the new .NET features introduced in .NET 8.
+- [Breaking changes in .NET 8](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/8.0.md): Navigate to the breaking changes in .NET 8.
+
+## AI for .NET
+
+Building AI-powered .NET applications using Microsoft.Extensions.AI abstractions. Use `IChatClient` for chat completions, `IEmbeddingGenerator` for embeddings, and the Model Context Protocol (MCP) for tool integration. Supports Azure OpenAI, OpenAI, Ollama, and other providers through a unified API.
+
+- [AI for .NET Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/llms.txt): 9 topics, 47 in tree
+- [Microsoft.Extensions.AI libraries](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/microsoft-extensions-ai.md): Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
+- [Use the IChatClient interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/ichatclient.md): Learn how to use the IChatClient interface to get model responses and call tools.
+- [Get started with .NET AI and MCP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/get-started-mcp.md): Learn about .NET AI and MCP key concepts and development resources to get started building MCP clients and servers
+
+## C# Language
+
+The C# programming language—syntax, features, and best practices. Covers language fundamentals, LINQ, async/await, pattern matching, records, and the latest C# 13 features. Includes language reference, tutorials, and what's new guides.
+
+- [C# Language Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/llms.txt): 13 topics, 1131 in tree
+- [What's new in C# 14](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-14.md): Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
+- [What's new in C# 13](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-13.md): Get an overview of the new features in C# 13.
+- [What's new in C# 12](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-12.md): Get an overview of the new features in C# 12.
+- [Fundamentals](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/fundamentals/llms.txt): 0 topics, 34 in tree; Core concepts: types, classes, interfaces, inheritance, and OOP design.
+
+## Deployment and Operations
+
+- [Containers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/containers/llms.txt): 3 topics; Build container images with built-in .NET SDK support.
+- [Deploying](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/llms.txt): 6 topics, 155 in tree; Publish apps: single-file, ReadyToRun, Native AOT, and cross-platform.
+- [Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/llms.txt): 68 topics; Logging, tracing, metrics, and diagnostic tools for troubleshooting.
+- [DevOps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/devops.md): DevOps considerations for cloud-native applications
+
+## Other Topics
+
+- [Welcome to .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/welcome.md): Getting started with the .NET family of technologies.
+
+## Topic Indices
+
+- [Azure for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/llms.txt): 8 topics, 58 in tree; Azure SDK, authentication, and cloud service integration for .NET.
+- [.NET Runtime and SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/llms.txt): 7 topics, 2153 in tree; Runtime, SDK, deployment, containers, diagnostics, and CLI tools.
+- [DevOps for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/llms.txt): 8 topics; GitHub Actions, CI/CD pipelines, and automation for .NET.
+- [.NET Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/llms.txt): 5 topics, 5393 in tree; Legacy .NET Framework for Windows (WPF, WinForms, WCF, ASP.NET).
+- [F# Language](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/llms.txt): 3 topics, 159 in tree; F# functional programming language for .NET.
+- [.NET Fundamentals](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/llms.txt): 3 topics, 794 in tree; Code analysis, networking, reflection, and runtime libraries.
+- [IoT](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/llms.txt): 4 topics, 10 in tree; IoT development with GPIO, I²C, SPI for Raspberry Pi and ARM devices.
+- [ML.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/llms.txt): 7 topics, 59 in tree; ML.NET for custom machine learning models in .NET.
+- [Navigate .NET Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/navigate/llms.txt): 1 topics; Documentation navigation guide.
+- [Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/llms.txt): 3 topics, 105 in tree; Virtual actor framework for distributed .NET applications.
+- [Samples and Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/samples-and-tutorials/llms.txt): 1 topics; Sample code and hands-on tutorials for .NET.
+- [.NET Standard Library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/llms.txt): 20 topics, 836 in tree; Core libraries for collections, I/O, serialization, and threading.
+- [Visual Basic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/llms.txt): 1 topics, 2469 in tree; Visual Basic language for .NET development.

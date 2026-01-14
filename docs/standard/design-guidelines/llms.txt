@@ -1,49 +1,53 @@
-# Design Guidelines Docs
+# Framework Design Guidelines
 
-## Common design patterns
+> Best practices and conventions for designing reusable .NET libraries and APIs. Guidelines cover naming conventions, type design, member design, exception handling, and extensibility patterns. Recommendations use Do, Consider, Avoid, and Do not prefixes to indicate strength.
 
-- [Common design patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/common-design-patterns.md): See links that describe a couple of common design patterns in .NET: dependency properties and the dispose pattern.
-- [Dependency properties](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/dependency-properties.md): Learn more about: Dependency Properties
-- [Dispose pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/dispose-pattern.md): Learn about the Dispose Pattern, which standardizes the usage and implementation of finalizers and the `IDisposable` interface to release unmanaged resources.
-
-## Design for extensibility
-
-- [Design for extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/designing-for-extensibility.md): Learn more about: Designing for Extensibility
-- [Unsealed classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/unsealed-classes.md): Learn more about: Unsealed Classes
-- [Protected members](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/protected-members.md): Learn more about: Protected Members
-- [Events and callbacks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/events-and-callbacks.md): Learn more about: Events and Callbacks
-- [Virtual members](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/virtual-members.md): Learn more about: Virtual Members
-- [Abstractions (abstract types and interfaces)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/abstractions-abstract-types-and-interfaces.md): Learn more about: Abstractions (Abstract Types and Interfaces)
-- [Base classes for implementing abstractions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/base-classes-for-implementing-abstractions.md): Learn more about: Base Classes for Implementing Abstractions
+- [Abstract Class Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/abstract-class.md): Learn more about: Abstract Class Design
+- [Abstractions (Abstract Types and Interfaces)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/abstractions-abstract-types-and-interfaces.md): Learn more about: Abstractions (Abstract Types and Interfaces)
+- [Arrays (.NET Framework design guidelines)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/arrays.md): Learn more about design guidelines for arrays
+- [Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/attributes.md): Learn more about design guidelines for attributes
+- [Base Classes for Implementing Abstractions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/base-classes-for-implementing-abstractions.md): Learn more about: Base Classes for Implementing Abstractions
+- [Capitalization Conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/capitalization-conventions.md): Apply capitalization conventions for identifiers, compound words, and common terms. Understand how case sensitivity works in .NET.
+- [Choosing Between Class and Struct](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/choosing-between-class-and-struct.md): Learn how to decide whether to design a type as a class, or to design a type as a struct. Understand how reference types and value types differ in .NET.
+- [Common Design Patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/common-design-patterns.md): See links that describe a couple of common design patterns in .NET: dependency properties and the dispose pattern.
+- [Constructor Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/constructor.md): Learn more about: Constructor Design
+- [Dependency Properties](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/dependency-properties.md): Learn more about: Dependency Properties
+- [Designing for Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/designing-for-extensibility.md): Learn more about: Designing for Extensibility
+- [Dispose Pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/dispose-pattern.md): Learn about the Dispose Pattern, which standardizes the usage and implementation of finalizers and the `IDisposable` interface to release unmanaged resources.
+- [Enum Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/enum.md): Design for enums, which are a special kind of value type. Simple enums hold small, closed sets of choices. Flag enums support bitwise operations on enum values.
+- [Equality Operators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/equality-operators.md): Learn more about: Equality Operators
+- [Event Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/event.md): Learn more about: Event Design
+- [Events and Callbacks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/events-and-callbacks.md): Learn more about: Events and Callbacks
+- [Exception Throwing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exception-throwing.md): Learn more about: Exception Throwing
+- [Exceptions and Performance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exceptions-and-performance.md): Learn more about: Exceptions and Performance
+- [Design Guidelines for Exceptions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exceptions.md): Learn more about: Design Guidelines for Exceptions
+- [Extension Methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/extension-methods.md): Learn more about: Extension Methods
+- [Field Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/field.md): Learn more about: Field Design
+- [General Naming Conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/general-naming-conventions.md): Use general naming conventions relating to word choice, guidelines on using abbreviations and acronyms, and guidance on avoiding language-specific names.
+- [Guidelines for Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/guidelines-for-collections.md): Learn more about: Guidelines for Collections
+- [Framework Design Guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/index.md): See framework design guidelines for designing libraries that extend and interact with .NET, to ensure API consistency and ease of use.
+- [Interface Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/interface.md): Learn more about: Interface Design
+- [Member Overloading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/member-overloading.md): Learn more about: Member Overloading
+- [Member Design Guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/member.md): Learn member design guidelines in .NET. Members include methods, properties, events, constructors, and fields.
+- [Names of Assemblies and DLLs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-assemblies-and-dlls.md): Learn guidelines for naming assemblies and dynamic-link libraries (DLLs). An assembly can span one or more files, but it usually maps one-to-one with a DLL.
+- [Names of Classes, Structs, and Interfaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-classes-structs-and-interfaces.md): Use these guidelines for naming Classes, Structs, and Interfaces as part of guidelines for designing libraries that extend and interact .NET libraries.
+- [Names of Namespaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-namespaces.md): Use these guidelines for naming namespaces as part of guidelines for designing libraries that extend and interact with .NET libraries.
+- [Names of Type Members](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-type-members.md): Learn the guidelines for naming type members in .NET, such as methods, properties, events, and fields.
+- [Naming Guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/naming-guidelines.md): In this overview, read about naming conventions to use in framework development. Go to articles covering capitalization, general naming, and other guidelines.
+- [Naming Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/naming-parameters.md): Learn guidelines for the naming of parameters. For example, use descriptive parameter names & camel casing, & consider naming based on meaning instead of type.
+- [Naming Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/naming-resources.md): Review naming guidelines for resources in .NET, which are similar to the guidelines for naming properties.
+- [Nested Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/nested-types.md): Learn more about: Nested Types
+- [Operator Overloads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/operator-overloads.md): Learn more about: Operator Overloads
+- [Parameter Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/parameter-design.md): Learn more about: Parameter Design
+- [Property Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/property.md): Learn more about: Property Design
+- [Protected Members](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/protected-members.md): Learn more about: Protected Members
 - [Sealing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/sealing.md): Learn more about: Sealing
-
-## Exception design guidelines
-
-- [Exception design guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exceptions.md): Learn more about: Design Guidelines for Exceptions
-- [Exception throwing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exception-throwing.md): Learn more about: Exception Throwing
-- [Use standard exception types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/using-standard-exception-types.md): Read about standard exception types in .NET. Learn about SystemException, ApplicationException, ArgumentException, ComException, and more.
-- [Exceptions and performance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/exceptions-and-performance.md): Learn more about: Exceptions and Performance
-
-## Framework design guidelines
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/index.md): See framework design guidelines for designing libraries that extend and interact with .NET, to ensure API consistency and ease of use.
-
-## Member design guidelines
-
-- [Member design guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/member.md): Learn member design guidelines in .NET. Members include methods, properties, events, constructors, and fields.
-- [Member overloading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/member-overloading.md): Learn more about: Member Overloading
-- [Property design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/property.md): Learn more about: Property Design
-- [Constructor design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/constructor.md): Learn more about: Constructor Design
-- [Event design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/event.md): Learn more about: Event Design
-- [Field design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/field.md): Learn more about: Field Design
-- [Extension methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/extension-methods.md): Learn more about: Extension Methods
-- [Operator overloads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/operator-overloads.md): Learn more about: Operator Overloads
-- [Parameter design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/parameter-design.md): Learn more about: Parameter Design
-
-## Naming guidelines
-
-- [Naming guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/naming-guidelines.md): In this overview, read about naming conventions to use in framework development. Go to articles covering capitalization, general naming, and other guidelines.
-- [Capitalization conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/capitalization-conventions.md): Apply capitalization conventions for identifiers, compound words, and common terms. Understand how case sensitivity works in .NET.
-- [General naming conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/general-naming-conventions.md): Use general naming conventions relating to word choice, guidelines on using abbreviations and acronyms, and guidance on avoiding language-specific names.
-- [Names of assemblies and DLLs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-assemblies-and-dlls.md): Learn guidelines for naming assemblies and dynamic-link libraries (DLLs). An assembly can span one or more files, but it usually maps one-to-one with a DLL.
-- [Names of namespaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/names-of-namespaces.md): Use these guidelines for naming namespaces as part of guidelines for designing libraries that extend and interact with .NET libraries.
+- [Serialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/serialization.md): Learn more about: Serialization
+- [Static Class Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/static-class.md): Learn more about: Static Class Design
+- [Struct Design](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/struct.md): Learn more about: Struct Design
+- [System.Xml Usage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/system-xml-usage.md): Learn more about: System.Xml Usage
+- [Class design guidelines for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/type.md): Learn more about designing types and classes in .NET.
+- [Unsealed Classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/unsealed-classes.md): Learn more about: Unsealed Classes
+- [Usage guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/usage-guidelines.md): Learn more about: Usage guidelines
+- [Using Standard Exception Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/using-standard-exception-types.md): Read about standard exception types in .NET. Learn about SystemException, ApplicationException, ArgumentException, ComException, and more.
+- [Virtual Members](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/virtual-members.md): Learn more about: Virtual Members

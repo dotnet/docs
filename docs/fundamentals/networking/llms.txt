@@ -1,18 +1,15 @@
 # Networking Docs
 
-## Networking
+> Making HTTP requests, working with sockets, and handling network protocols. Use `HttpClient` for REST APIs with `IHttpClientFactory` for proper lifecycle management. `System.Net.NetworkInformation` provides network availability monitoring; `System.Net.Sockets` enables low-level TCP/UDP communication.
 
-- [Network programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/overview.md): Learn about various networking approaches for .NET app development.
+- [Internet Protocol version 6 (IPv6) overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/ipv6-overview.md): Learn about the IPv6 protocol and how it differs from IPv4.
 - [Network availability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/network-info.md): Learn how to detect changes in network availability and ping a host with .NET.
-- [IPv6 overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/ipv6-overview.md): Learn about the IPv6 protocol and how it differs from IPv4.
+- [Network programming in .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/overview.md): Learn about various networking approaches for .NET app development.
+- [WebSockets support in .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/websockets.md): Learn how to web sockets with the ClientWebSockets in .NET.
 
-## WebSockets
+## Topic Indices
 
-- [WebSockets support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/websockets.md): Learn how to web sockets with the ClientWebSockets in .NET.
-
-## Children
-
-- [Http](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/http/llms.txt)
-- [Quic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/quic/llms.txt)
-- [Sockets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/sockets/llms.txt)
-- [Telemetry](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/telemetry/llms.txt)
+- [Http](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/http/llms.txt): 4 topics
+- [Quic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/quic/llms.txt): 3 topics
+- [Sockets](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/sockets/llms.txt): 3 topics
+- [Telemetry](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/telemetry/llms.txt): 5 topics

@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Migrating applications from .NET Framework to modern .NET (.NET 6+). Use the .NET Upgrade Assistant tool for automated migration; address breaking changes in APIs, configuration, and dependencies. Key areas include replacing `System.Web` with ASP.NET Core, updating NuGet packages, and modernizing project files to SDK-style."
+  "title": "Porting from .NET Framework",
+  "description": "Migrating applications from .NET Framework to modern .NET (.NET 6+). Use the .NET Upgrade Assistant tool for automated migration; address breaking changes in APIs, configuration, and dependencies. Key areas include replacing `System.Web` with ASP.NET Core, updating NuGet packages, and modernizing project files to SDK-style.",
+  "shortDescription": "Migrate from .NET Framework to modern .NET with Upgrade Assistant."
 }

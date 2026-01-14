@@ -1,48 +1,298 @@
-# WCF Docs
+# WCF Configuration Schema
 
-- [WCF Configuration Schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/index.md): Learn more about: WCF Configuration Schema
-
-## <activityScheduledQueries>
-
-- [<activityScheduledQueries>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activityscheduledqueries-of-wcf.md): Learn more about: <activityScheduledQueries> of WCF
-- [<activityScheduledQuery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activityscheduledquery-of-wcf.md): Learn more about: <activityScheduledQuery> of WCF
-
-## <activityStateQueries>
-
-- [<activityStateQueries>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activitystatequeries-of-wcf.md): Learn more about: <activityStateQueries> of WCF
-- [<activityStateQuery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activitystatequery-of-wcf.md): Learn more about: <activityStateQuery> of WCF
-
-## <add>
-
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md): Learn more about: <add> of <declaredTypes> Element
-
-## <allowAccounts>
-
+- [<activityScheduledQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activityscheduledqueries-of-wcf.md): Learn more about: <activityScheduledQueries> of WCF
+- [<activityScheduledQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activityscheduledquery-of-wcf.md): Learn more about: <activityScheduledQuery> of WCF
+- [<activityStateQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activitystatequeries-of-wcf.md): Learn more about: <activityStateQueries> of WCF
+- [<activityStateQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/activitystatequery-of-wcf.md): Learn more about: <activityStateQuery> of WCF
+- [<add> of <allowAccounts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-allowaccounts.md): Learn more about: <add> of <allowAccounts>
+- [<add> of <allowedAudienceUris>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md): Learn more about: <add> of <allowedAudienceUris>
+- [<add> of <authorizationPolicies>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-authorizationpolicies.md): Learn more about: <add> of <authorizationPolicies>
+- [<add> of <backupList>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-backuplist.md): Learn more about: <add> of <backupList>
+- [<add> of <baseAddresses>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-baseaddresses.md): Learn more about: <add> of <baseAddresses>
+- [<add> of <baseAddressPrefixFilter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-baseaddressprefixfilter.md): Learn more about: <add> of <baseAddressPrefixFilter>
+- [<add> of <claimTypeRequirements> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-claimtyperequirements-element.md): Learn more about: <add> of <claimTypeRequirements> element
+- [<add> of <claimTypeRequirements>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-claimtyperequirements.md): Learn more about: <add> of <claimTypeRequirements>
+- [<add> of <commonParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-commonparameters.md): Learn more about: <add> of <commonParameters>
+- [<add> of <contractTypeNames>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-contracttypenames.md): Learn more about: <add> of <contractTypeNames>
+- [<add> of <declaredTypes> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md): Learn more about: <add> of <declaredTypes> Element
+- [<add> of <defaultPorts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-defaultports.md): Learn more about: <add> of <defaultPorts>
+- [<add> of <entries>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-entries.md): Learn more about: <add> of <entries>
+- [<add> of <filters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-filters.md): Learn more about: <add> of <filters>
+- [<add> of <issuerChannelBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-issuerchannelbehaviors.md): Learn more about: <add> of <issuerChannelBehaviors>
+- [<add> of <knownCertificates>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md): Learn more about: <add> of <knownCertificates>
+- [<add> of <namespaceTable>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-namespacetable.md): Learn more about: <add> of <namespaceTable>
+- [<add> of <protocolMapping>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-protocolmapping.md): Learn more about: <add> of <protocolMapping>
+- [<add> of <scopedCertificates> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-scopedcertificates-element.md): Learn more about: <add> of <scopedCertificates> Element
+- [<add> of <scopes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-scopes.md): Learn more about: <add> of <scopes>
+- [<add> of <serviceActivations>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-serviceactivations.md): Learn more about: <add> of <serviceActivations>
+- [<add> of <services>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-services.md): Learn more about: <add> of <services>
+- [<add> of <transportConfigurationType>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-transportconfigurationtype.md): Learn more about: <add> of <transportConfigurationType>
+- [<add> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-wcf.md): Learn more about: <add> of WCF
+- [<additionalRequestParameters> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/additionalrequestparameters-element.md): Learn more about: <additionalRequestParameters> element
 - [<allowAccounts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/allowaccounts.md): Learn more about: <allowAccounts>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-allowaccounts.md): Learn more about: <add> of <allowAccounts>
-
-## <allowedAudienceUris>
-
 - [<allowedAudienceUris>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/allowedaudienceuris.md): Learn more about: <allowedAudienceUris>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md): Learn more about: <add> of <allowedAudienceUris>
-
-## <authorizationPolicies>
-
+- [<announcementEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/announcementendpoint.md): Learn more about: <announcementEndpoint>
+- [<authentication> of <clientCertificate> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md): Learn more about: <authentication> of <clientCertificate> Element
+- [<authentication> of <serviceCertificate> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md): Learn more about: <authentication> of <serviceCertificate> Element
 - [<authorizationPolicies>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/authorizationpolicies.md): Learn more about: <authorizationPolicies>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-authorizationpolicies.md): Learn more about: <add> of <authorizationPolicies>
-
-## <backupList>
-
 - [<backupList>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/backuplist.md): Learn more about: <backupList>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-backuplist.md): Learn more about: <add> of <backupList>
-
-## <backupLists>
-
 - [<backupLists>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/backuplists.md): Learn more about: <backupLists>
-
-## <baseAddresses>
-
 - [<baseAddresses>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/baseaddresses.md): Learn more about: <baseAddresses>
-- [<add>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/add-of-baseaddresses.md): Learn more about: <add> of <baseAddresses>
-
-## <baseAddressPrefixFilters>
+- [<baseAddressPrefixFilters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md): Learn more about: <baseAddressPrefixFilters>
+- [<basicHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md): Defines a binding that a WCF service can use to configure and expose endpoints to communicate with services conforming to the WS-I Basic Profile 1.1.
+- [<basicHttpContextBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/basichttpcontextbinding.md): Learn more about: <basicHttpContextBinding>
+- [<behavior> of <endpointBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md): Learn more about: <behavior> of <endpointBehaviors>
+- [<behavior> of <serviceBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md): Learn more about: <behavior> of <serviceBehaviors>
+- [<behaviorExtensions>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md): Learn more about: <behaviorExtensions>
+- [<behaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/behaviors.md): Learn more about: <behaviors>
+- [<binaryMessageEncoding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/binarymessageencoding.md): Learn more about: <binaryMessageEncoding>
+- [<bindingElementExtensions>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bindingelementextensions.md): Learn more about: <bindingElementExtensions>
+- [<bindingExtensions>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bindingextensions.md): Learn more about: <bindingExtensions>
+- [<bindings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bindings.md): Learn more about: <bindings>
+- [<bookmarkResumptionQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bookmarkresumptionqueries-of-wcf.md): Learn more about: <bookmarkResumptionQueries> of WCF
+- [<bookmarkResumptionQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bookmarkresumptionquery-of-wcf.md): Learn more about: <bookmarkResumptionQuery> of WCF
+- [<byteStreamMessageEncoding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/bytestreammessageencoding.md): Learn more about: <byteStreamMessageEncoding>
+- [<callbackDebug>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md): Learn more about: <callbackDebug>
+- [<callbackTimeouts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/callbacktimeouts.md): Learn more about: <callbackTimeouts>
+- [<cancelRequestedQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/cancelrequestedqueries-of-wcf.md): Learn more about: <cancelRequestedQueries> of WCF
+- [<cancelRequestedQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/cancelrequestedquery-of-wcf.md): Learn more about: <cancelRequestedQuery> of WCF
+- [<certificate> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/certificate-element.md): Learn more about: <certificate> Element
+- [<certificate> for <identity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/certificate-for-identity.md): Learn more about: <certificate> for <identity>
+- [<certificate> of <clientCertificate> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/certificate-of-clientcertificate-element.md): Learn more about: <certificate> of <clientCertificate> Element
+- [<certificate> of <peer>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/certificate-of-peer.md): Learn more about: <certificate> of <peer>
+- [<certificateReference> for <identity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/certificatereference-for-identity.md): Learn more about: <certificateReference> for <identity>
+- [<channelPoolSettings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/channelpoolsettings.md): Learn more about: <channelPoolSettings>
+- [<claimTypeRequirements> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/claimtyperequirements-element.md): Learn more about: <claimTypeRequirements> element
+- [<claimTypeRequirements> for <message>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/claimtyperequirements-for-message.md): Learn more about: <claimTypeRequirements> for <message>
+- [<clear> of <claimTypeRequirements> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/clear-of-claimtyperequirements-element.md): Learn more about: <clear> of <claimTypeRequirements> element
+- [<client>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/client.md): Learn more about: <client>
+- [<clientCertificate> of <clientCredentials> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md): Learn more about: <clientCertificate> of <clientCredentials> Element
+- [<clientCertificate> of <serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md): Learn more about: <clientCertificate> of <serviceCredentials>
+- [<clientCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/clientcredentials.md): Learn more about: <clientCredentials>
+- [<clientVia>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/clientvia.md): Learn more about: <clientVia>
+- [<comContract>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/comcontract.md): Learn more about: <comContract>
+- [<comContracts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/comcontracts.md): Learn more about: <comContracts>
+- [<commonBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md): Learn more about: <commonBehaviors>
+- [<commonParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/commonparameters.md): Learn more about: <commonParameters>
+- [<compositeDuplex>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/compositeduplex.md): Learn more about: <compositeDuplex>
+- [<connectionPoolSettings> of <tcpTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/connectionpoolsettings-of-tcptransport.md): Learn more about: <connectionPoolSettings> of <tcpTransport>
+- [<connectionPoolSettings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/connectionpoolsettings.md): Learn more about: <connectionPoolSettings>
+- [<contractTypeNames>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/contracttypenames.md): Learn more about: <contractTypeNames>
+- [<custom>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/custom.md): Learn more about: <custom>
+- [<customBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/custombinding.md): Learn more about: <customBinding>
+- [<customTrackingQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/customtrackingqueries-of-wcf.md): Learn more about: <customTrackingQueries> of WCF
+- [<customTrackingQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/customtrackingquery-of-wcf.md): Learn more about: <customTrackingQuery> of WCF
+- [<dataContractSerializer>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md): Learn more about: <dataContractSerializer>
+- [<dataContractSerializer> of <system.runtime.serialization>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-of-system-runtime-serialization.md): Learn more about: <dataContractSerializer> of <system.runtime.serialization>
+- [dataContractSerializer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md): Learn more about: dataContractSerializer
+- [<declaredTypes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/declaredtypes.md): Learn more about: <declaredTypes>
+- [<defaultCertificate> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md): Learn more about: <defaultCertificate> Element
+- [<defaultPorts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/defaultports.md): Learn more about: <defaultPorts>
+- [<diagnostics> for Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/diagnostics-for-activation.md): Learn more about: <diagnostics> for Activation
+- [<diagnostics>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/diagnostics.md): Learn more about: <diagnostics>
+- [<discoveryClient>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/discoveryclient.md): Learn more about: <discoveryClient>
+- [<discoveryClientSettings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/discoveryclientsettings.md): Learn more about: <discoveryClientSettings>
+- [<discoveryEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/discoveryendpoint.md): Learn more about: <discoveryEndpoint>
+- [<dispatcherSynchronization>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/dispatchersynchronization.md): Learn more about: <dispatcherSynchronization>
+- [<dns>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/dns.md): Learn more about: <dns>
+- [<dynamicEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/dynamicendpoint.md): Learn more about: <dynamicEndpoint>
+- [<enableWebScript>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/enablewebscript.md): Learn more about: <enableWebScript>
+- [<endpoint> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endpoint-element.md): Learn more about: <endpoint> element
+- [<endpoint> of <client>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md): Learn more about: <endpoint> of <client>
+- [<endpointBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md): Learn more about: <endpointBehaviors>
+- [<endpointDiscovery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endpointdiscovery.md): Learn more about: <endpointDiscovery>
+- [<endpointExtensions>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endpointextensions.md): Learn more about: <endpointExtensions>
+- [<endToEndTracing>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/endtoendtracing.md): Learn more about: <endToEndTracing>
+- [<entries>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/entries.md): Learn more about: <entries>
+- [<exposedMethod>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/exposedmethod.md): Learn more about: <exposedMethod>
+- [<exposedMethods>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/exposedmethods.md): Learn more about: <exposedMethods>
+- [<extensions> section](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/extensions-section.md): Learn more about: <extensions> section
+- [<extensions>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/extensions.md): Learn more about: <extensions>
+- [<faultPropagationQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/faultpropagationqueries-of-wcf.md): Learn more about: <faultPropagationQueries> of WCF
+- [<faultPropagationQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/faultpropagationquery-of-wcf.md): Learn more about: <faultPropagationQuery> of WCF
+- [<filter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/filter.md): Learn more about: <filter>
+- [<filters> of <routing>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md): Learn more about: <filters> of <routing>
+- [<filters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/filters.md): Learn more about: <filters>
+- [<filterTable>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/filtertable.md): Learn more about: <filterTable>
+- [<filterTables>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/filtertables.md): Learn more about: <filterTables>
+- [<findCriteria>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/findcriteria.md): Learn more about: <findCriteria>
+- [<headers> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/headers-element.md): Learn more about: <headers> element
+- [<headers>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/headers.md): Learn more about: <headers>
+- [<host>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/host.md): Learn more about: <host>
+- [<httpDigest> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/httpdigest-element.md): Learn more about: <httpDigest> Element
+- [<httpsTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/httpstransport.md): Learn more about: <httpsTransport>
+- [<httpTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/httptransport.md): Learn more about: <httpTransport>
+- [<identity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/identity.md): Learn more about: <identity>
+- [WCF Configuration Schema](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/index.md): Learn more about: WCF Configuration Schema
+- [<issuedToken>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuedtoken.md): Learn more about: <issuedToken>
+- [<issuedTokenAuthentication> of <serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md): Learn more about: <issuedTokenAuthentication> of <serviceCredentials>
+- [<issuedTokenParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md): Learn more about: <issuedTokenParameters>
+- [<issuer> of <issuedTokenParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuer-of-issuedtokenparameters.md): Learn more about: <issuer> of <issuedTokenParameters>
+- [<issuer>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuer.md): Learn more about: <issuer>
+- [<issuerChannelBehaviors> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md): Learn more about: <issuerChannelBehaviors> Element
+- [<issuerMetadata> of <issuedTokenParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuermetadata-of-issuedtokenparameters.md): Learn more about: <issuerMetadata> of <issuedTokenParameters>
+- [<issuerMetadata>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/issuermetadata.md): Learn more about: <issuerMetadata>
+- [<knownCertificates>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/knowncertificates.md): Learn more about: <knownCertificates>
+- [<knownType>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/knowntype.md): Learn more about: <knownType>
+- [<localClientSettings> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md): Learn more about: <localClientSettings> element
+- [<localIssuer>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/localissuer.md): Learn more about: <localIssuer>
+- [<localServiceSettings> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md): Learn more about: <localServiceSettings> element
+- [<message> element of <netTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md): Learn more about: <message> element of <netTcpBinding>
+- [<message> element of <ws2007FederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md): Learn more about: <message> element of <ws2007FederationHttpBinding>
+- [<message> element of <wsFederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-element-of-wsfederationhttpbinding.md): Learn more about: <message> element of <wsFederationHttpBinding>
+- [Message Encoding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-encoding.md): Learn more about: Message Encoding
+- [<message> of <basicHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-basichttpbinding.md): Learn more about: <message> of <basicHttpBinding>
+- [<message> of <netHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-nethttpbinding.md): Learn more about: <message> of <netHttpBinding>
+- [<message> of <netMsmqBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-netmsmqbinding.md): Learn more about: <message> of <netMsmqBinding>
+- [<message> of <ws2007HttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-ws2007httpbinding.md): Learn more about: <message> of <ws2007HttpBinding>
+- [<message> of <wsDualHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-wsdualhttpbinding.md): Learn more about: <message> of <wsDualHttpBinding>
+- [<message> of <wsHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md): Learn more about: <message> of <wsHttpBinding>
+- [<messageLogging>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/messagelogging.md): Learn more about: <messageLogging>
+- [<messageSenderAuthentication> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md): Learn more about: <messageSenderAuthentication> element
+- [<messageSenderAuthentication>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication.md): Learn more about: <messageSenderAuthentication>
+- [<metadata>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/metadata.md): Learn more about: <metadata>
+- [<mexEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mexendpoint.md): Learn more about: <mexEndpoint>
+- [<mexHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md): Learn more about: <mexHttpBinding>
+- [<mexHttpsBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md): Learn more about: <mexHttpsBinding>
+- [<mexNamedPipeBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mexnamedpipebinding.md): Learn more about: <mexNamedPipeBinding>
+- [<mexTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mextcpbinding.md): Learn more about: <mexTcpBinding>
+- [<msmqIntegration>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/msmqintegration.md): Learn more about: <msmqIntegration>
+- [<msmqIntegrationBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md): Learn more about: <msmqIntegrationBinding>
+- [<msmqTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/msmqtransport.md): Learn more about: <msmqTransport>
+- [<msmqTransportSecurity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/msmqtransportsecurity.md): Learn more about: <msmqTransportSecurity>
+- [<mtomMessageEncoding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/mtommessageencoding.md): Learn more about: <mtomMessageEncoding>
+- [<namedPipeTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/namedpipetransport.md): Learn more about: <namedPipeTransport>
+- [<namespaceTable>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/namespacetable.md): Learn more about: <namespaceTable>
+- [<net.pipe>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/net-pipe.md): Learn more about: <net.pipe>
+- [<net.tcp>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/net-tcp.md): Learn more about: <net.tcp>
+- [<netHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/nethttpbinding.md): Learn more about: <netHttpBinding>
+- [<netHttpsBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/nethttpsbinding.md): Learn more about: <netHttpsBinding>
+- [<netMsmqBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md): Learn more about: <netMsmqBinding>
+- [<netNamedPipeBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md): Learn more about: <netNamedPipeBinding>
+- [<netPeerTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md): Learn more about: <netPeerTcpBinding>
+- [<netTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md): Represents a secure, reliable, optimized binding intended only for WCF cross-machine communication using TCP. Reliable messaging is off by default.
+- [<netTcpContextBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/nettcpcontextbinding.md): Learn more about: <netTcpContextBinding>
+- [<oneWay>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/oneway.md): Learn more about: <oneWay>
+- [<parameter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/parameter.md): Learn more about: <parameter>
+- [<participants> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/participants-of-wcf.md): Learn more about: <participants> of WCF
+- [<peer> of <clientCredentials> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/peer-of-clientcredentials-element.md): Learn more about: <peer> of <clientCredentials> Element
+- [<peer> of <serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/peer-of-servicecredentials.md): Learn more about: <peer> of <serviceCredentials>
+- [<peerAuthentication> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md): Learn more about: <peerAuthentication> Element
+- [<peerAuthentication>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/peerauthentication.md): Learn more about: <peerAuthentication>
+- [<peerTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/peertransport.md): Learn more about: <peerTransport>
+- [<persistableType>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/persistabletype.md): Learn more about: <persistableType>
+- [<persistableTypes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/persistabletypes.md): Learn more about: <persistableTypes>
+- [<persistenceProvider>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/persistenceprovider.md): Learn more about: <persistenceProvider>
+- [<pnrpPeerResolver>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/pnrppeerresolver.md): Learn more about: <pnrpPeerResolver>
+- [<policyImporter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/policyimporter.md): Learn more about: <policyImporter>
+- [<policyImporters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/policyimporters.md): Learn more about: <policyImporters>
+- [<privacyNoticeAt>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/privacynoticeat.md): Learn more about: <privacyNoticeAt>
+- [<protocolMapping>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/protocolmapping.md): Learn more about: <protocolMapping>
+- [<reliableSession>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/reliablesession.md): Learn more about: <reliableSession>
+- [<remove> of <claimTypeRequirements> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/remove-of-claimtyperequirements-element.md): Learn more about: <remove> of <claimTypeRequirements> element
+- [<resolver>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/resolver.md): Learn more about: <resolver>
+- [<routing> of <serviceBehavior>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/routing-of-servicebehavior.md): Learn more about: <routing> of <serviceBehavior>
+- [<routing>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/routing.md): Learn more about: <routing>
+- [<rsa>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/rsa.md): Learn more about: <rsa>
+- [<scopedCertificates> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md): Learn more about: <scopedCertificates> Element
+- [<scopes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/scopes.md): Learn more about: <scopes>
+- [<secureConversationAuthentication> of <serviceCredential>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/secureconversationauthentication-of-servicecredential.md): Learn more about: <secureConversationAuthentication> of <serviceCredential>
+- [<secureConversationBootstrap>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md): Learn more about: <secureConversationBootstrap>
+- [<security> element of <ws2007FederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md): Learn more about: <security> element of <ws2007FederationHttpBinding>
+- [<security> of <basicHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md): Learn more about: <security> of <basicHttpBinding>
+- [<security> of <customBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md): Learn more about: <security> of <customBinding>
+- [<security> of <msmqIntegrationBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-msmqintegrationbinding.md): Learn more about: <security> of <msmqIntegrationBinding>
+- [<security> of <netHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-nethttpbinding.md): Learn more about: <security> of <netHttpBinding>
+- [<security> of <netMsmqBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md): Learn more about: <security> of <netMsmqBinding>
+- [<security> of <netNamedPipeBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-netnamedpipebinding.md): Learn more about: <security> of <netNamedPipeBinding>
+- [<security> of <netPeerBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-netpeerbinding.md): Learn more about: <security> of <netPeerBinding>
+- [<security> of <netTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md): Learn more about: <security> of <netTcpBinding>
+- [<security> of <peerTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md): Learn more about: <security> of <peerTransport>
+- [<security> of <webHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md): Learn more about: <security> of <webHttpBinding>
+- [<security> of <ws2007HttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-ws2007httpbinding.md): Learn more about: <security> of <ws2007HttpBinding>
+- [<security> of <wsDualHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md): Learn more about: <security> of <wsDualHttpBinding>
+- [<security> of <wsFederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md): Learn more about: <security> of <wsFederationHttpBinding>
+- [<security> of <wsHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md): Learn more about: <security> of <wsHttpBinding>
+- [<service>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/service.md): Learn more about: <service>
+- [<serviceActivations>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/serviceactivations.md): Learn more about: <serviceActivations>
+- [<serviceAuthenticationManager>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/serviceauthenticationmanager.md): Learn more about: <serviceAuthenticationManager>
+- [<serviceAuthorization> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md): Learn more about: <serviceAuthorization> element
+- [<serviceBehaviors>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md): Learn more about: <serviceBehaviors>
+- [<serviceCertificate> of <clientCredentials> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md): Learn more about: <serviceCertificate> of <clientCredentials> Element
+- [<serviceCertificate> of <serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md): Learn more about: <serviceCertificate> of <serviceCredentials>
+- [<serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicecredentials.md): Learn more about: <serviceCredentials>
+- [<serviceDebug>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicedebug.md): Learn more about: <serviceDebug>
+- [<serviceDiscovery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicediscovery.md): Learn more about: <serviceDiscovery>
+- [<serviceHostingEnvironment>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md): Learn more about: <serviceHostingEnvironment>
+- [<serviceMetadata>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md): Learn more about: <serviceMetadata>
+- [<servicePrincipalName>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md): Learn more about: <servicePrincipalName>
+- [<services> of <workflowRuntime>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/services-of-workflowruntime.md): Learn more about: <services> of <workflowRuntime>
+- [<services>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/services.md): Learn more about: <services>
+- [<serviceSecurityAudit>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md): Learn more about: <serviceSecurityAudit>
+- [<serviceThrottling>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicethrottling.md): Learn more about: <serviceThrottling>
+- [<serviceTimeouts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/servicetimeouts.md): Learn more about: <serviceTimeouts>
+- [<soapProcessing>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/soapprocessing.md): Learn more about: <soapProcessing>
+- [<sslStreamSecurity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md): Learn more about: <sslStreamSecurity>
+- [<standardEndpoints>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/standardendpoints.md): Learn more about: <standardEndpoints>
+- [<state> of WCF, <workflowInstanceQuery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/state-of-wcf-workflowinstancequery.md): Learn more about: <state> of WCF, <workflowInstanceQuery>
+- [<states> of WCF, <workflowInstanceQuery>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/states-of-wcf-workflowinstancequery.md): Learn more about: <states> of WCF, <workflowInstanceQuery>
+- [<synchronousReceive> element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md): Learn more about: <synchronousReceive> element
+- [<system.runtime.serialization>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md): Learn more about: <system.runtime.serialization>
+- [<system.serviceModel.activation>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md): Learn more about: <system.serviceModel.activation>
+- [<system.serviceModel>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md): Learn about the WCF ServiceModel configuration elements, which enable you to configure WCF service and client applications.
+- [<tcpTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/tcptransport.md): Learn more about: <tcpTransport>
+- [<textMessageEncoding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md): Learn more about: <textMessageEncoding>
+- [<timeOuts>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/timeouts.md): Learn more about: <timeOuts>
+- [<tokenRequestParameters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/tokenrequestparameters.md): Learn more about: <tokenRequestParameters>
+- [<tracking> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/tracking-of-wcf.md): Learn more about: <tracking> of WCF
+- [<trackingProfile> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/trackingprofile-of-wcf.md): Learn more about: <trackingProfile> of WCF
+- [<transactedBatching>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transactedbatching.md): Learn more about: <transactedBatching>
+- [<transactionFlow>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transactionflow.md): Learn more about: <transactionFlow>
+- [<transport> of <basicHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-basichttpbinding.md): Learn more about: <transport> of <basicHttpBinding>
+- [<transport> of <msmqIntegrationBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-msmqintegrationbinding.md): Learn more about: <transport> of <msmqIntegrationBinding>
+- [<transport> of <netHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-nethttpbinding.md): Learn more about: <transport> of <netHttpBinding>
+- [<transport> of <netMsmqBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-netmsmqbinding.md): Learn more about: <transport> of <netMsmqBinding>
+- [<transport> of <netNamedPipeBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-netnamedpipebinding.md): Learn more about: <transport> of <netNamedPipeBinding>
+- [<transport> of <netPeerTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-netpeertcpbinding.md): Learn more about: <transport> of <netPeerTcpBinding>
+- [<transport> of <netTcpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md): Learn more about: <transport> of <netTcpBinding>
+- [<transport> of <peerTransport>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-peertransport.md): Learn more about: <transport> of <peerTransport>
+- [<transport> of <webHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-webhttpbinding.md): Learn more about: <transport> of <webHttpBinding>
+- [<transport> of <ws2007HttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-ws2007httpbinding.md): Learn more about: <transport> of <ws2007HttpBinding>
+- [<transport> of <wsHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transport-of-wshttpbinding.md): Learn more about: <transport> of <wsHttpBinding>
+- [<transportConfigurationTypes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md): Learn more about: <transportConfigurationTypes>
+- [Transports](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/transports.md): Learn more about: Transports
+- [<udpAnnouncementEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/udpannouncementendpoint.md): Learn more about: <udpAnnouncementEndpoint>
+- [<udpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/udpbinding.md): Learn more about: <udpBinding>
+- [<udpDiscoveryEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md): Learn more about: <udpDiscoveryEndpoint>
+- [<udpTransportSettings> of <udpAnnouncementEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/udptransportsettings-of-udpannouncementendpoint.md): Learn more about: <udpTransportSettings> of <udpAnnouncementEndpoint>
+- [<udpTransportSettings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/udptransportsettings.md): Learn more about: <udpTransportSettings>
+- [<unrecognizedPolicyAssertion>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/unrecognizedpolicyassertion.md): Learn more about: <unrecognizedPolicyAssertion>
+- [<useManagedPresentation>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/usemanagedpresentation.md): Learn more about: <useManagedPresentation>
+- [<userDefinedType>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md): Learn more about: <userDefinedType>
+- [<userDefinedTypes>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/userdefinedtypes.md): Learn more about: <userDefinedTypes>
+- [<useRequestHeadersForMetadataAddress>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/userequestheadersformetadataaddress.md): Learn more about: <useRequestHeadersForMetadataAddress>
+- [<userNameAuthentication>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md): Learn more about: <userNameAuthentication>
+- [<userPrincipalName>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/userprincipalname.md): Learn more about: <userPrincipalName>
+- [<webHttp>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/webhttp.md): Learn more about: <webHttp>
+- [<webHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md): Learn more about: <webHttpBinding>
+- [<webHttpEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/webhttpendpoint.md): Learn more about: <webHttpEndpoint>
+- [<webMessageEncoding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/webmessageencoding.md): Learn more about: <webMessageEncoding>
+- [<webScriptEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/webscriptendpoint.md): Learn more about: <webScriptEndpoint>
+- [<webSocketSettings>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/websocketsettings.md): Learn more about: <webSocketSettings>
+- [<windows> of <clientCredentials> Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md): Learn more about: <windows> of <clientCredentials> Element
+- [<windowsAuthentication> of <serviceCredentials>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/windowsauthentication-of-servicecredentials.md): Learn more about: <windowsAuthentication> of <serviceCredentials>
+- [<windowsStreamSecurity>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/windowsstreamsecurity.md): Learn more about: <windowsStreamSecurity>
+- [<workflow> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/workflow-of-wcf.md): Learn more about: <workflow> of WCF
+- [<workflowControlEndpoint>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/workflowcontrolendpoint.md): Learn more about: <workflowControlEndpoint>
+- [<workflowInstanceQueries> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/workflowinstancequeries-of-wcf.md): Learn more about: <workflowInstanceQueries> of WCF
+- [<workflowInstanceQuery> of WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/workflowinstancequery-of-wcf.md): Learn more about: <workflowInstanceQuery> of WCF
+- [<workflowRuntime>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/workflowruntime.md): Learn more about: <workflowRuntime>
+- [<ws2007FederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md): Learn more about: <ws2007FederationHttpBinding>
+- [<ws2007HttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md): Learn more about: <ws2007HttpBinding>
+- [<wsdlImporter>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wsdlimporter.md): Learn more about: <wsdlImporter>
+- [<wsdlImporters>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wsdlimporters.md): Learn more about: <wsdlImporters>
+- [<wsDualHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md): Learn more about: <wsDualHttpBinding>
+- [<wsFederationHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md): Learn more about: <wsFederationHttpBinding>
+- [<wsHttpBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md): Defines a secure, reliable, interoperable HTTP binding suitable for non-duplex service contracts, which implements WS-Reliable Messaging and WS-Security.
+- [<wsHttpContextBinding>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/wshttpcontextbinding.md): Learn more about: <wsHttpContextBinding>
+- [<xmlElement>](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/file-schema/wcf/xmlelement.md): Learn more about: <xmlElement>

@@ -1,48 +1,69 @@
-# Fusion Docs
+# Fusion (Unmanaged API Reference)
 
-- [Fusion](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/index.md): Learn more about: Fusion (Unmanaged API Reference)
-
-## Fusion Enumerations
-
-- [Fusion Enumerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-enumerations.md): Learn more about: Fusion Enumerations
 - [ASM_CACHE_FLAGS Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md): Learn more about: ASM_CACHE_FLAGS Enumeration
 - [ASM_CMP_FLAGS Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/asm-cmp-flags-enumeration.md): Learn more about: ASM_CMP_FLAGS Enumeration
 - [ASM_DISPLAY_FLAGS Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/asm-display-flags-enumeration.md): Learn more about: ASM_DISPLAY_FLAGS Enumeration
 - [ASM_NAME Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/asm-name-enumeration.md): Learn more about: ASM_NAME Enumeration
+- [ASSEMBLY_INFO Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/assembly-info-structure.md): Learn more about: ASSEMBLY_INFO Structure
 - [AssemblyComparisonResult Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md): Learn more about: AssemblyComparisonResult Enumeration
-- [CREATE_ASM_NAME_OBJ_FLAGS Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/create-asm-name-obj-flags-enumeration.md): Learn more about: CREATE_ASM_NAME_OBJ_FLAGS Enumeration
-
-## Fusion Global Static Functions
-
-- [Fusion Global Static Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md): Learn more about: Fusion Global Static Functions
 - [ClearDownloadCache Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/cleardownloadcache-function.md): Learn more about: ClearDownloadCache Function
 - [CompareAssemblyIdentity Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md): Learn more about: CompareAssemblyIdentity Function
+- [CREATE_ASM_NAME_OBJ_FLAGS Enumeration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/create-asm-name-obj-flags-enumeration.md): Learn more about: CREATE_ASM_NAME_OBJ_FLAGS Enumeration
 - [CreateApplicationContext Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createapplicationcontext-function.md): Learn more about: CreateApplicationContext Function
 - [CreateAssemblyCache Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createassemblycache-function.md): Learn more about: CreateAssemblyCache Function
 - [CreateAssemblyEnum Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createassemblyenum-function.md): Learn more about: CreateAssemblyEnum Function
 - [CreateAssemblyNameObject Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createassemblynameobject-function.md): Learn more about: CreateAssemblyNameObject Function
 - [CreateHistoryReader Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createhistoryreader-function.md): Learn more about: CreateHistoryReader Function
 - [CreateInstallReferenceEnum Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/createinstallreferenceenum-function.md): Learn more about: CreateInstallReferenceEnum Function
+- [Fusion Enumerations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-enumerations.md): Learn more about: Fusion Enumerations
+- [Fusion Global Static Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md): Learn more about: Fusion Global Static Functions
+- [FUSION_INSTALL_REFERENCE Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md): Learn more about: FUSION_INSTALL_REFERENCE Structure
+- [Fusion Interfaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-interfaces.md): Learn more about: Fusion Interfaces
+- [Fusion Structures](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-structures.md): Learn more about: Fusion Structures
 - [GetAppIdAuthority Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/getappidauthority-function.md): Learn more about: GetAppIdAuthority Function
 - [GetAssemblyIdentityFromFile Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/getassemblyidentityfromfile-function.md): Learn more about: GetAssemblyIdentityFromFile Function
 - [GetCachePath Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/getcachepath-function.md): Learn more about: GetCachePath Function
 - [GetHistoryFileDirectory Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md): Learn more about: GetHistoryFileDirectory Function
 - [GetIdentityAuthority Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/getidentityauthority-function.md): Learn more about: GetIdentityAuthority Function
-- [IsFrameworkAssembly Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/isframeworkassembly-function.md): Learn more about: IsFrameworkAssembly Function
-- [NukeDownloadedCache Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md): Learn more about: NukeDownloadedCache Function
-- [PreBindAssemblyEx Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/prebindassemblyex-function.md): Learn more about: PreBindAssemblyEx Function
-
-## Fusion Interfaces
-
-- [Fusion Interfaces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/fusion-interfaces.md): Learn more about: Fusion Interfaces
 - [IAppIdAuthority Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iappidauthority-interface.md): Learn more about: IAppIdAuthority Interface
+- [IAssemblyCache::CreateAssemblyCacheItem Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-createassemblycacheitem-method.md): Learn more about: IAssemblyCache::CreateAssemblyCacheItem Method
+- [IAssemblyCache::CreateAssemblyScavenger Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-createassemblyscavenger-method.md): Learn more about: IAssemblyCache::CreateAssemblyScavenger Method
+- [IAssemblyCache::InstallAssembly Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-installassembly-method.md): Learn more about: IAssemblyCache::InstallAssembly Method
+- [IAssemblyCache Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-interface.md): Learn more about: IAssemblyCache Interface
+- [IAssemblyCache::QueryAssemblyInfo Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-queryassemblyinfo-method.md): Learn more about: IAssemblyCache::QueryAssemblyInfo Method
+- [IAssemblyCache::UninstallAssembly Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycache-uninstallassembly-method.md): Learn more about: IAssemblyCache::UninstallAssembly Method
+- [IAssemblyCacheItem::AbortItem Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycacheitem-abortitem-method.md): Learn more about: IAssemblyCacheItem::AbortItem Method
+- [IAssemblyCacheItem::Commit Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycacheitem-commit-method.md): Learn more about: IAssemblyCacheItem::Commit Method
+- [IAssemblyCacheItem::CreateStream Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycacheitem-createstream-method.md): Learn more about: IAssemblyCacheItem::CreateStream Method
+- [IAssemblyCacheItem Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md): Learn more about: IAssemblyCacheItem Interface
+- [IAssemblyEnum::Clone Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyenum-clone-method.md): Learn more about: IAssemblyEnum::Clone Method
+- [IAssemblyEnum::GetNextAssembly Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyenum-getnextassembly-method.md): Learn more about: IAssemblyEnum::GetNextAssembly Method
+- [IAssemblyEnum Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md): Learn more about: IAssemblyEnum Interface
+- [IAssemblyEnum::Reset Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyenum-reset-method.md): Learn more about: IAssemblyEnum::Reset Method
+- [IAssemblyName::Clone Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-clone-method.md): Learn more about: IAssemblyName::Clone Method
+- [IAssemblyName::Finalize Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-finalize-method.md): Learn more about: IAssemblyName::Finalize Method
+- [IAssemblyName::GetDisplayName Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-getdisplayname-method.md): Learn more about: IAssemblyName::GetDisplayName Method
+- [IAssemblyName::GetName Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-getname-method.md): Learn more about: IAssemblyName::GetName Method
+- [IAssemblyName::GetProperty Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-getproperty-method.md): Learn more about: IAssemblyName::GetProperty Method
+- [IAssemblyName::GetVersion Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-getversion-method.md): Learn more about: IAssemblyName::GetVersion Method
+- [IAssemblyName Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-interface.md): Learn more about: IAssemblyName Interface
+- [IAssemblyName::IsEqual Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md): Learn more about: IAssemblyName::IsEqual Method
+- [IAssemblyName::SetProperty Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iassemblyname-setproperty-method.md): Learn more about: IAssemblyName::SetProperty Method
 - [IDefinitionAppId Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/idefinitionappid-interface.md): Learn more about: IDefinitionAppId Interface
 - [IDefinitionIdentity Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md): Learn more about: IDefinitionIdentity Interface
+- [IDENTITY_ATTRIBUTE_BLOB Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/identity-attribute-blob-structure.md): Learn more about: IDENTITY_ATTRIBUTE_BLOB Structure
+- [IDENTITY_ATTRIBUTE Structure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/identity-attribute-structure.md): Learn more about: IDENTITY_ATTRIBUTE Structure
 - [IEnumDefinitionIdentity Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/ienumdefinitionidentity-interface.md): Learn more about: IEnumDefinitionIdentity Interface
 - [IEnumIDENTITY_ATTRIBUTE Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md): Learn more about: IEnumIDENTITY_ATTRIBUTE Interface
 - [IEnumReferenceIdentity Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/ienumreferenceidentity-interface.md): Learn more about: IEnumReferenceIdentity Interface
 - [IIdentityAuthority Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md): Learn more about: IIdentityAuthority Interface
+- [IInstallReferenceEnum::GetNextInstallReferenceItem Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iinstallreferenceenum-getnextinstallreferenceitem-method.md): Learn more about: IInstallReferenceEnum::GetNextInstallReferenceItem Method
+- [IInstallReferenceEnum Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md): Learn more about: IInstallReferenceEnum Interface
+- [IInstallReferenceItem::GetReference Method](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iinstallreferenceitem-getreference-method.md): Learn more about: IInstallReferenceItem::GetReference Method
+- [IInstallReferenceItem Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md): Learn more about: IInstallReferenceItem Interface
+- [Fusion (Unmanaged API Reference)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/index.md): Learn more about: Fusion (Unmanaged API Reference)
 - [IReferenceAppId Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/ireferenceappid-interface.md): Learn more about: IReferenceAppId Interface
 - [IReferenceIdentity Interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md): Learn more about: IReferenceIdentity Interface
-
-## Fusion Structures
+- [IsFrameworkAssembly Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/isframeworkassembly-function.md): Learn more about: IsFrameworkAssembly Function
+- [NukeDownloadedCache Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md): Learn more about: NukeDownloadedCache Function
+- [PreBindAssemblyEx Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/fusion/prebindassemblyex-function.md): Learn more about: PreBindAssemblyEx Function

@@ -1,24 +1,12 @@
-# Command Line Compiler Docs
+# Command-line compiler
 
-## Building from the Command Line
-
-- [Building from the Command Line](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md): Learn more about: Building from the Command Line (Visual Basic)
-- [How to: Invoke the Command-Line Compiler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md): Learn more about: How to: Invoke the Command-Line Compiler (Visual Basic)
-- [Sample Compilation Command Lines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md): Learn more about: Sample compilation command lines (Visual Basic)
-
-## Command-Line Compiler
-
-- [Command-Line Compiler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/index.md): Learn more about: Visual Basic command-line compiler
-- [Compiler Options by Category](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md): Learn more about: Visual Basic compiler options listed by category
-
-## Compiler Options Listed Alphabetically
-
-- [Compiler Options Listed Alphabetically](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md): Learn more about: Visual Basic compiler options listed alphabetically
-- [@ (Specify Response File)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/specify-response-file.md): Learn more about: @ (Specify Response File) (Visual Basic)
 - [-addmodule](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/addmodule.md): Learn more about: -addmodule
 - [-baseaddress](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/baseaddress.md): Learn more about: -baseaddress
 - [-bugreport](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/bugreport.md): Learn more about: -bugreport
+- [Building from the Command Line](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md): Learn more about: Building from the Command Line (Visual Basic)
 - [-codepage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/codepage.md): Learn more about: -codepage (Visual Basic)
+- [Compiler Options Listed Alphabetically](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md): Learn more about: Visual Basic compiler options listed alphabetically
+- [Compiler Options Listed by Category](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md): Learn more about: Visual Basic compiler options listed by category
 - [-debug](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/debug.md): Learn more about: -debug (Visual Basic)
 - [-define](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/define.md): Learn more about: -define (Visual Basic)
 - [-delaysign](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/delaysign.md): Learn more about: -delaysign
@@ -28,7 +16,9 @@
 - [-filealign](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/filealign.md): Learn more about: -filealign
 - [-help, -?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/help.md): Learn more about: -help, -? (Visual Basic)
 - [-highentropyva](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/highentropyva.md): Learn more about: -highentropyva (Visual Basic)
+- [How to: Invoke the Command-Line Compiler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md): Learn more about: How to: Invoke the Command-Line Compiler (Visual Basic)
 - [-imports](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/imports.md): Learn more about: -imports (Visual Basic)
+- [Command-line compiler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/index.md): Learn more about: Visual Basic command-line compiler
 - [-keycontainer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/keycontainer.md): Learn more about: -keycontainer
 - [-keyfile](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/keyfile.md): Learn more about: -keyfile
 - [-langversion](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/langversion.md): Learn more about: -langversion (Visual Basic)
@@ -47,3 +37,27 @@
 - [-optioncompare](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/optioncompare.md): Learn more about: -optioncompare
 - [-optionexplicit](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/optionexplicit.md): Learn more about: -optionexplicit
 - [-optioninfer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/optioninfer.md): Learn more about: -optioninfer
+- [-optionstrict](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/optionstrict.md): Learn more about: -optionstrict
+- [-out](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/out.md): Learn more about: -out (Visual Basic)
+- [-pathmap](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/pathmap.md): Learn more about: -pathmap
+- [-platform](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/platform.md): Learn more about: -platform (Visual Basic)
+- [-quiet](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/quiet.md): Learn more about: -quiet
+- [-recurse](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/recurse.md): Learn more about: -recurse
+- [-reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/reference.md): Learn more about: -reference (Visual Basic)
+- [-refonly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/refonly-compiler-option.md): Learn more about: -refonly (Visual Basic)
+- [-refout](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/refout-compiler-option.md): Learn more about: -refout (Visual Basic)
+- [-removeintchecks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/removeintchecks.md): Learn more about: -removeintchecks
+- [-resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/resource.md): Learn more about: -resource (Visual Basic)
+- [-rootnamespace](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/rootnamespace.md): Learn more about: -rootnamespace
+- [Sample Compilation Command Lines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md): Learn more about: Sample compilation command lines (Visual Basic)
+- [-sdkpath](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/sdkpath.md): Learn more about: -sdkpath
+- [@ (Specify Response File)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/specify-response-file.md): Learn more about: @ (Specify Response File) (Visual Basic)
+- [-subsystemversion](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/subsystemversion.md): Learn more about: -subsystemversion (Visual Basic)
+- [-target](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/target.md): Learn more about: -target (Visual Basic)
+- [-utf8output](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/utf8output.md): Learn more about: -utf8output (Visual Basic)
+- [-vbruntime](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/vbruntime.md): Learn more about: -vbruntime
+- [-verbose](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/verbose.md): Learn more about: -verbose
+- [-warnaserror](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/warnaserror.md): Learn more about: -warnaserror (Visual Basic)
+- [-win32icon](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/win32icon.md): Learn more about: -win32icon
+- [-win32manifest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/win32manifest.md): Learn more about: -win32manifest (Visual Basic)
+- [-win32resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/visual-basic/reference/command-line-compiler/win32resource.md): Learn more about: -win32resource

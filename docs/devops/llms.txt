@@ -1,18 +1,12 @@
-# DevOps Docs
+# DevOps for .NET
 
-## DevOps
+> Continuous integration and deployment for .NET applications. Covers GitHub Actions workflows for building, testing, publishing, and security scanning .NET projects. Includes CI/CD best practices and automation patterns.
 
+- [Tutorial: Create a GitHub Action with .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/create-dotnet-github-action.md): Learn how to create a GitHub Action with a containerized .NET app.
+- [Create a build validation GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-build-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to validate .NET app compilation.
+- [Use the .NET SDK in Continuous Integration (CI) environments](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-cli-and-continuous-integration.md): Learn how to use the .NET SDK and its tools on a build server with continuous integration.
+- [.NET-related GitHub Actions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-github-action-reference.md): Learn about the available .NET-related GitHub Actions.
+- [Create a publish app GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-publish-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to publish your .NET source code.
+- [Create a security scan GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-secure-github-action.md): In this quickstart, you will learn how to create a CodeQL GitHub workflow to automate the discovery of vulnerabilities in your .NET codebase.
+- [Create a test validation GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-test-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to test your .NET source code.
 - [GitHub Actions and .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/github-actions-overview.md): Learn what role GitHub Actions play in .NET application development.
-- [.NET CLI and continuous integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-cli-and-continuous-integration.md): Learn how to use the .NET SDK and its tools on a build server with continuous integration.
-- [Official .NET GitHub Actions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-github-action-reference.md): Learn about the available .NET-related GitHub Actions.
-
-## Quickstarts
-
-- [Create a build GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-build-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to validate .NET app compilation.
-- [Create a test GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-test-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to test your .NET source code.
-- [Create a publish GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-publish-github-action.md): In this quickstart, you will learn how to create a GitHub workflow to publish your .NET source code.
-- [Create a CodeQL GitHub workflow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/dotnet-secure-github-action.md): In this quickstart, you will learn how to create a CodeQL GitHub workflow to automate the discovery of vulnerabilities in your .NET codebase.
-
-## Tutorials
-
-- [Create a GitHub Action with .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/devops/create-dotnet-github-action.md): Learn how to create a GitHub Action with a containerized .NET app.

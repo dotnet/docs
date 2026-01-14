@@ -1,5 +1,3 @@
 # 3.0.0 Docs
 
-## Install tool
-
-- [dotnet.acquire API for VS Code no longer always downloads latest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md): Learn about the breaking change where the dotnet.acquire VS Code API no longer always checks for the latest runtime version before returning a path.
+- [Breaking change: dotnet.acquire API for VS Code no longer always downloads latest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md): Learn about the breaking change where the dotnet.acquire VS Code API no longer always checks for the latest runtime version before returning a path.

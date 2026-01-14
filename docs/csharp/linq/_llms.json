@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Querying and transforming data using Language-Integrated Query syntax and method chains. LINQ provides compile-time type checking and IntelliSense for queries over collections, databases, and XML. Key methods include `Where`, `Select`, `OrderBy`, `GroupBy`, `Join`, and aggregate functions."
+  "title": "LINQ in C#",
+  "description": "Querying and transforming data using Language-Integrated Query syntax and method chains. LINQ provides compile-time type checking and IntelliSense for queries over collections, databases, and XML. Key methods include `Where`, `Select`, `OrderBy`, `GroupBy`, `Join`, and aggregate functions.",
+  "shortDescription": "Query data with `Where`, `Select`, `OrderBy`, and `GroupBy`."
 }

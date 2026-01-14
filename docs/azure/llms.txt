@@ -1,20 +1,17 @@
-# Azure Docs
+# Azure for .NET
 
-## Configure your development environment
+> Developing .NET applications for Azure cloud services. Covers Azure SDK for .NET, authentication patterns, key services (App Service, Functions, Storage, Cosmos DB), and tooling setup for Visual Studio and VS Code.
 
+- [Additional Azure Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/azure-tools.md): This article describes additional tools and utilities for working with Azure and how you can install them.
+- [Configure Visual Studio for Azure Development with .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/configure-visual-studio.md): This article helps you configure Visual Studio for Azure development including getting the right workloads installed and connecting Visual Studio to your Azure account.
+- [Configure Visual Studio Code for Azure development with .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/configure-vs-code.md): This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
 - [Create an Azure account](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/create-azure-account.md): To use Azure, you need an Azure account.  This article covers the three most common ways to sign up for an Azure account.
-- [Configure Visual Studio for Azure development (Windows)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/configure-visual-studio.md): This article helps you configure Visual Studio for Azure development including getting the right workloads installed and connecting Visual Studio to your Azure account.
-- [Configure VS Code for Azure development (cross-platform)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/configure-vs-code.md): This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
-- [Install the Azure CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/install-azure-cli.md): Azure developers will need the Azure CLI installed, so this article describes why you need the CLI and where to download and install it from.
-- [Install additional tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/azure-tools.md): This article describes additional tools and utilities for working with Azure and how you can install them.
-- [Development setup checklist](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/dotnet-dev-env-checklist.md): Provides a quick summary of all the tools you should have installed to do .NET development with Azure
+- [.NET Development on Azure Configuration Checklist](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/dotnet-dev-env-checklist.md): Provides a quick summary of all the tools you should have installed to do .NET development with Azure
+- [Installing the Azure CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/install-azure-cli.md): Azure developers will need the Azure CLI installed, so this article describes why you need the CLI and where to download and install it from.
+- [Get started with Azure and .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/intro.md): Learn the basics you need to know about Azure and .NET.
+- [Key Azure Services for .NET developers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/key-azure-services.md): Azure has over 100 services, but this article focuses on the ~8 or so services used by .NET developers most frequently
 
-## Get started on Azure with .NET
+## Topic Indices
 
-- [Introduction to Azure and .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/intro.md): Learn the basics you need to know about Azure and .NET.
-- [Key Azure services for .NET developers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/key-azure-services.md): Azure has over 100 services, but this article focuses on the ~8 or so services used by .NET developers most frequently
-
-## Children
-
-- [Migration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/migration/llms.txt)
-- [SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/llms.txt)
+- [Migration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/migration/llms.txt): 4 topics, 20 in tree
+- [SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/llms.txt): 11 topics, 30 in tree

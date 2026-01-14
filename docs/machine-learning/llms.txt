@@ -1,26 +1,19 @@
-# Machine Learning Docs
+# ML.NET
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/overview.md): Learn about the components that make up ML.NET.
+> Building custom machine learning models in .NET without requiring ML expertise. ML.NET provides `Microsoft.ML` for training models and `Microsoft.ML.AutoML` for automated model selection. Use Model Builder in Visual Studio for no-code model training; supports classification, regression, forecasting, and more.
 
-## API
-
-- [The ML.NET API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/mldotnet-api.md): ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
+- [Automate model training with the ML.NET CLI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/automate-training-with-cli.md): Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
+- [What is Model Builder and how does it work?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/automate-training-with-model-builder.md): How to use the ML.NET Model Builder to automatically train a machine learning model
 - [What is Automated Machine Learning (AutoML)?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/automated-machine-learning-mlnet.md): Learn what automated machine learning is and its different components in ML.NETs
+- [Deep Learning overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/deep-learning-overview.md): Learn what deep learning is and components in ML.NET
+- [How to choose an ML.NET algorithm](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/how-to-choose-an-ml-net-algorithm.md): Learn how to choose an ML.NET algorithm for your machine learning model
+- [What is ML.NET and how does it work?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/mldotnet-api.md): ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
+- [Overview of ML.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/overview.md): Learn about the components that make up ML.NET.
 
-## Concepts
+## Topic Indices
 
-- [Algorithms](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/how-to-choose-an-ml-net-algorithm.md): Learn how to choose an ML.NET algorithm for your machine learning model
-- [Deep learning overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/deep-learning-overview.md): Learn what deep learning is and components in ML.NET
-
-## Model Builder & CLI
-
-- [The ML.NET Model Builder tool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/automate-training-with-model-builder.md): How to use the ML.NET Model Builder to automatically train a machine learning model
-- [The ML.NET command-line interface](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/automate-training-with-cli.md): Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
-
-## Children
-
-- [How To Guides](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/how-to-guides/llms.txt)
-- [Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/reference/llms.txt)
-- [Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/resources/llms.txt)
-- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/tutorials/llms.txt)
-- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/whats-new/llms.txt)
+- [How To Guides](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/how-to-guides/llms.txt): 22 topics
+- [Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/reference/llms.txt): 1 topics
+- [Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/resources/llms.txt): 7 topics
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/tutorials/llms.txt): 21 topics
+- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/machine-learning/whats-new/llms.txt): 1 topics

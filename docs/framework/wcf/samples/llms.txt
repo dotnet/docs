@@ -1,49 +1,235 @@
-# Samples Docs
+# Windows Communication Foundation (WCF) samples
 
-- [Windows Communication Foundation Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/index.md): Download Windows Communication Foundation (WCF) samples for .NET Framework. The samples provide instruction on various aspects of WCF.
-
-## AJAX
-
-- [AJAX](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax.md): Learn more about: AJAX
-- [JSONP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/jsonp.md): Learn more about: JSONP
-- [JSON Serialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/json-serialization.md): Learn more about: DataContractJsonSerializer sample
-- [Basic AJAX Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-ajax-service.md): Learn more about: Basic AJAX Service
+- [Address Headers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/address-headers.md): Learn more about: Address Headers
+- [Addressing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/addressing.md): Learn more about: Addressing
+- [AJAX Service Using Complex Types Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-using-complex-types-sample.md): Learn more about: AJAX Service Using Complex Types Sample
 - [AJAX Service Using HTTP POST](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-using-http-post.md): Learn more about: AJAX Service Using HTTP POST
+- [AJAX Service with JSON and XML Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md): Learn more about: AJAX Service with JSON and XML Sample
 - [AJAX Service Without Configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-without-configuration.md): Learn more about: AJAX Service Without Configuration
-- [AJAX Service Using Complex Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-using-complex-types-sample.md): Learn more about: AJAX Service Using Complex Types Sample
-- [AJAX Service with JSON and XML](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md): Learn more about: AJAX Service with JSON and XML Sample
-
-## Basic
-
-- [Basic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic.md): Learn more about: Basic
-- [Getting Started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/getting-started-sample.md): Learn how to implement a typical service and a typical client using WCF. This sample is the basis for all other basic technology samples.
-
-## Basic Binding
-
+- [AJAX](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ajax.md): Learn more about: AJAX
+- [Announcements Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/announcements-sample.md): Learn more about: Announcements Sample
+- [ASMX Client with a WCF Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/asmx-client-with-a-wcf-service.md): Learn more about: ASMX Client with a WCF Service
+- [ASP.NET Caching Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/aspnet-caching-integration.md): Learn more about: ASP.NET Caching Integration
+- [ASP.NET Compatibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/aspnet-compatibility.md): Learn more about: ASP.NET Compatibility
+- [Authorization Policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/authorization-policy.md): Learn more about: Authorization Policy
+- [Authorizing Access to Service Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/authorizing-access-to-service-operations.md): Learn more about: Authorizing Access to Service Operations
+- [Basic AJAX Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-ajax-service.md): Learn more about: Basic AJAX Service
 - [Basic Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-binding.md): Learn more about: Basic Binding
-- [Message Security Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-sample.md): Learn more about: Message Security Sample
+- [Basic Data Contract](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-data-contract.md): Learn more about: Basic Data Contract
+- [Basic HTTP Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-http-service.md): Learn more about: Basic HTTP Service
+- [Basic Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic-sample.md): Learn more about: Basic Sample
+- [Basic2](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basic.md): Learn more about: Basic
 - [BasicBinding with Transport Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basicbinding-with-transport-security.md): Learn more about: BasicBinding with Transport Security
 - [BasicBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/basicbinding.md): Learn more about: BasicBinding
-
-## Behavior Security
-
 - [Behavior Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/behavior-security.md): Learn more about: Behavior Security
-- [Service Auditing Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-auditing-behavior.md): Learn more about: Service Auditing Behavior
-- [Membership and Role Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/membership-and-role-provider.md): Learn about a sample that demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients.
-- [Authorizing Access to Service Operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/authorizing-access-to-service-operations.md): Learn more about: Authorizing Access to Service Operations
-- [Impersonating the Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/impersonating-the-client.md): Learn more about: Impersonating the Client
-
-## Behaviors
-
 - [Behaviors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/behaviors.md): Learn more about: Behaviors
+- [Binding Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/binding-extensibility.md): Learn more about: Binding Extensibility
+- [Binding WCF Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/binding.md): Learn more about the WCF samples for endpoint binding.
+- [Building the Windows Communication Foundation Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/building-the-samples.md): Learn more about: Building the Windows Communication Foundation Samples
+- [Channel Factory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/channel-factory.md): Learn more about: Channel Factory
+- [Channels Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/channels-extensibility.md): Learn more about: Channels Extensibility
+- [Chunking Channel](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/chunking-channel.md): Learn more about: Chunking Channel
+- [Circular Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/circular-tracing.md): Learn more about: Circular Tracing
+- [Client Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/client-interoperability.md): Learn more about: Client Interoperability
+- [Client Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/client-validation.md): Learn more about: Client Validation
+- [Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/client.md): Learn more about: Client
 - [Concurrency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/concurrency.md): Learn more about: Concurrency
+- [ConcurrencyMode Reentrant](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/concurrencymode-reentrant.md): Learn more about: ConcurrencyMode Reentrant
+- [Configuration Channel Factory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/configuration-channel-factory.md): Learn more about: Configuration Channel Factory
+- [Configuration Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/configuration-sample.md): Learn more about: Configuration Sample
+- [ConfigurationCodeGenerator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/configurationcodegenerator.md): Learn more about: ConfigurationCodeGenerator
+- [WCF contract samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/contract.md): Learn more about the WCF contract samples.
+- [Cryptographic agility in WCF security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md): Learn more about: Cryptographic agility in WCF security
+- [Custom Binding Imperative](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding-imperative.md): Learn more about: Custom Binding Imperative
+- [Custom Binding Reliable Session over HTTPS](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding-reliable-session-over-https.md): Learn more about: Custom Binding Reliable Session over HTTPS
+- [Custom Binding Reliable Session](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding-reliable-session.md): Learn more about: Custom Binding Reliable Session
+- [Custom Binding Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding-security.md): Learn more about: Custom Binding Security
+- [Custom Binding Transport and Encoding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding-transport-and-encoding.md): Learn more about: Custom Binding Transport and Encoding
+- [Custom Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-binding.md): Learn more about: Custom Binding
+- [Custom Channel Dispatcher](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-channel-dispatcher.md): Learn more about: Custom Channel Dispatcher
+- [Custom Find Criteria](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-find-criteria.md): Learn more about: Custom Find Criteria
+- [Custom lifetime](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-lifetime.md): Learn more about: Custom lifetime
+- [Custom Message Encoder: Compression Encoder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md): Learn more about: Custom Message Encoder: Compression Encoder
+- [Custom Message Encoder: Custom Text Encoder](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md): Use this sample to implement a custom text message encoder using WCF. This encoder supports all platform-supported character encodings for interoperability.
+- [Custom Message Filter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-message-filter.md): Learn more about: Custom Message Filter
+- [Custom Message Interceptor](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-message-interceptor.md): Learn more about: Custom Message Interceptor
+- [Custom Secure Metadata Endpoint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-secure-metadata-endpoint.md): Learn more about: Custom Secure Metadata Endpoint
+- [Custom Service Host](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-service-host.md): Learn more about: Custom Service Host
+- [Custom Token](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-token.md): Learn more about: Custom Token
+- [Custom WSDL Publication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/custom-wsdl-publication.md): Learn more about: Custom WSDL Publication
+- [CustomChannelsTester](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/customchannelstester.md): Learn more about: CustomChannelsTester
+- [Data Binding in a Windows Forms Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/data-binding-in-a-windows-forms-client.md): Learn more about: Data Binding in a Windows Forms Client
+- [Data Binding in a Windows Presentation Foundation Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/data-binding-in-a-wpf-client.md): Learn more about: Data Binding in a Windows Presentation Foundation Client
+- [Data Binding in an ASP.NET Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/data-binding-in-an-aspnet-client.md): Learn more about: Data Binding in an ASP.NET Client
+- [Data Binding Scenarios](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/data-binding-scenarios.md): Learn more about: Data Binding Scenarios
+- [Data Contracts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/data-contracts.md): Learn more about: Data Contracts
+- [DataContract Surrogate](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/datacontract-surrogate.md): Learn more about: DataContract Surrogate
+- [DataContractResolver](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/datacontractresolver.md): Learn more about: DataContractResolver
+- [Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/datacontractserializer-datacontractresolver-netdatacontractserializer.md): Learn more about: Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer
+- [DataContractSerializer Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/datacontractserializer-sample.md): This sample demonstrates DataContractSerializer in WCF, which performs general serialization and deserialization services for the data contract classes.
+- [Dead Letter Queues](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/dead-letter-queues.md): Learn more about: Dead Letter Queues
+- [Default Message Contract](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/default-message-contract.md): Learn more about: Default Message Contract
+- [Default NetTcpBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/default-nettcpbinding.md): Learn more about: Default NetTcpBinding
 - [Default Service Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/default-service-behavior.md): Learn more about: Default Service Behavior
+- [Design Patterns: List-Based Publish-Subscribe](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/design-patterns-list-based-publish-subscribe.md): Learn more about: Design Patterns: List-Based Publish-Subscribe
+- [Discovery Router Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/discovery-router-service.md): Learn more about: Discovery Router Service
+- [Discovery (Samples)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/discovery-samples.md): Learn more about: Discovery (Samples)
+- [Discovery Security Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/discovery-security-sample.md): Learn more about: Discovery Security Sample
+- [Discovery with Scopes Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/discovery-with-scopes-sample.md): Learn more about: Discovery with Scopes Sample
+- [Dispatch by Body Element](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/dispatch-by-body-element.md): Learn more about: Dispatch by Body Element
+- [Duplex](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/duplex.md): Learn more about: Duplex
+- [Durable Instance Context](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/durable-instance-context.md): Learn more about: Durable Instance Context
+- [Durable Issued Token Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/durable-issued-token-provider.md): Learn more about: Durable Issued Token Provider
+- [ETW Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/etw-tracing.md): This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the ETWTraceListener.
+- [Expected Exceptions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/expected-exceptions.md): Learn more about: Expected Exceptions
+- [Extended Protection Policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/extended-protection-policy.md): Learn more about: Extended Protection Policy
+- [Extending Control Over Error Handling and Reporting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md): Learn more about: Extending Control Over Error Handling and Reporting
+- [Extending Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/extending-tracing.md): Learn more about: Extend tracing
+- [Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/extensibility.md): Learn more about: Extensibility
+- [Fault Contract](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/fault-contract.md): Learn more about: Fault Contract
+- [Federation Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/federation-sample.md): Learn more about: Federation Sample
+- [Feed Formatter (JSON)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/feed-formatter-json.md): Learn more about: Feed Formatter (JSON)
+- [FindPrivateKey sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/findprivatekey.md): Learn more about: FindPrivateKey sample
+- [Firewall Instructions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/firewall-instructions.md): Learn how to enable ports or programs in the firewall for WCF samples. Use one of these procedures, depending on your requirements and security environment.
+- [Getting Started Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/getting-started-sample.md): Learn how to implement a typical service and a typical client using WCF. This sample is the basis for all other basic technology samples.
+- [Hello World with the Routing Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/hello-world-with-the-routing-service.md): Learn more about: Hello World with the Routing Service
+- [WCF hosting samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/hosting.md): Learn more about the WCF hosting samples.
+- [HttpCookieSession](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/httpcookiesession.md): Learn more about: HttpCookieSession
+- [IIS Hosting Using Inline Code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/iis-hosting-using-inline-code.md): Learn more about: IIS Hosting Using Inline Code
+- [Internet Information Services (IIS) Server Certificate Installation Instructions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md): Learn more about: Internet Information Services (IIS) Server Certificate Installation Instructions
+- [Imperative](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/imperative.md): Learn more about: Imperative
+- [Impersonating the Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/impersonating-the-client.md): Learn more about: Impersonating the Client
+- [Windows Communication Foundation (WCF) samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/index.md): Download Windows Communication Foundation (WCF) samples for .NET Framework. The samples provide instruction on various aspects of WCF.
+- [Installing Message Queuing (MSMQ)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/installing-message-queuing-msmq.md): Learn how to install Message Queuing 4.0 and Message Queuing 3.0 to use with WFC samples as part of a one-time setup procedure.
+- [Instancing Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/instancing-extensibility.md): Learn more about: Instancing Extensibility
+- [Instancing Initialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/instancing-initialization.md): Learn more about: Instancing Initialization
 - [Instancing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/instancing.md): Learn more about: Instancing
+- [Internet Information Service Hosting Instructions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/internet-information-service-hosting-instructions.md): Learn more about: Internet Information Service Hosting Instructions
+- [Interop Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/interop-extensibility.md): Learn more about: Interop Extensibility
+- [Interoperating with ASMX Web Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/interoperating-with-asmx-web-services.md): Learn more about: Interoperating with ASMX Web Services
+- [DataContractJsonSerializer sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/json-serialization.md): Learn more about: DataContractJsonSerializer sample
+- [JSONP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/jsonp.md): Learn more about: JSONP
+- [Known Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/known-types.md): Learn more about: Known Types
+- [KnownAssemblyAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/knownassemblyattribute.md): Learn more about: KnownAssemblyAttribute
+- [Local Channel](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/local-channel.md): Learn more about: Local Channel
+- [Loosely-Typed Extensions Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/loosely-typed-extensions-sample.md): Learn more about: Loosely-Typed Extensions Sample
+- [Management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/management.md): Learn more about: Management
+- [Membership and Role Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/membership-and-role-provider.md): Learn about a sample that demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients.
+- [Message Contracts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-contracts.md): Learn more about: Message Contracts
+- [Message Correlation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-correlation.md): Learn more about: Message Correlation
+- [Message Encoder Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-encoder-extensibility.md): Learn more about: Message Encoder Extensibility
+- [Message Inspectors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-inspectors.md): Learn how to implement and configure WCF client and service message inspectors, which provide a message validation mechanism.
+- [Message Queueing Integration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-queueing-integration.md): Learn more about: Message Queueing Integration
+- [Message Queuing to Windows Communication Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-queuing-to-wcf.md): Learn more about: Message Queuing to Windows Communication Foundation
+- [Message Security Anonymous](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-anonymous.md): Learn more about: Message Security Anonymous
+- [Message Security Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-binding.md): Learn more about: Message Security Binding
+- [Message Security Certificate](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-certificate.md): Learn more about: Message Security Certificate
+- [Message Security over Message Queuing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-over-message-queuing.md): Learn more about: Message Security over Message Queuing
+- [Message Security Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-sample.md): Learn more about: Message Security Sample
+- [Message Security User Name](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-user-name.md): Learn more about: Message Security User Name
+- [Message Security Windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/message-security-windows.md): Learn more about: Message Security Windows
+- [Metadata Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/metadata-extensibility.md): Learn more about: Metadata Extensibility
 - [Metadata Publishing Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/metadata-publishing-behavior.md): Learn more about: Metadata Publishing Behavior
-- [Service Transaction Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-transaction-behavior.md): Learn more about a sample that demonstrates the use of a client-coordinated transaction and other settings to control service transaction behavior.
+- [MSMQ Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/msmq-activation.md): Learn more about: MSMQ Activation
+- [MTOM Encoding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/mtom-encoding.md): Learn more about: MTOM Encoding
+- [Multiple Contracts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/multiple-contracts.md): Learn more about: Multiple Contracts
+- [Multiple Endpoints at a Single ListenUri](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/multiple-endpoints-at-a-single-listenuri.md): Learn more about: Multiple Endpoints at a Single ListenUri
+- [Multiple Endpoints](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/multiple-endpoints.md): Learn more about: Multiple Endpoints
+- [NamedPipe Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/namedpipe-activation.md): Learn more about: NamedPipe Activation
+- [Net Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/net-binding.md): Learn more about: Net Binding
+- [Net MSMQ Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/net-msmq-binding.md): Learn more about: Net MSMQ Binding
+- [Net.TCP Port Sharing Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/net-tcp-port-sharing-sample.md): Learn more about: Net.TCP Port Sharing Sample
+- [NetNamedPipeBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/netnamedpipebinding.md): Learn more about: NetNamedPipeBinding
+- [NetTCPBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/nettcpbinding.md): Learn more about: NetTCPBinding
+- [Object References](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/object-references.md): Learn more about: Object References
+- [One-Time Setup Procedure for the Windows Communication Foundation Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md): Learn more about: One-Time Setup Procedure for the Windows Communication Foundation Samples
+- [One-Way](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/one-way.md): Learn more about: One-Way
+- [Operation Formatter and Operation Selector](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md): Learn more about: Operation Formatter and Operation Selector
+- [OperationContextScope](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/operationcontextscope.md): Learn more about: OperationContextScope
+- [PII Security Lockdown](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/pii-security-lockdown.md): Learn more about: PII Security Lockdown
+- [POCO Support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/poco-support.md): Learn more about: POCO Support
+- [Poison Message Handling in MSMQ 4.0](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/poison-message-handling-in-msmq-4-0.md): Learn more about: Poison Message Handling in MSMQ 4.0
+- [Pooling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/pooling.md): Learn more about: Pooling
+- [Reliable Secure Profile](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/reliable-secure-profile.md): Learn more about: Reliable Secure Profile
+- [Retrieve Metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/retrieve-metadata.md): Learn more about: Retrieve Metadata
+- [Route by Body](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/route-by-body.md): Learn more about: Route by Body
+- [Routing Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/routing-services.md): Learn more about: Routing Services
+- [Running the Windows Communication Foundation Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/running-the-samples.md): Learn more about: Running the Windows Communication Foundation Samples
+- [SAML Token Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/saml-token-provider.md): Learn more about: SAML Token Provider
+- [Scenario samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/scenario.md): Learn more about the WCF scenario samples.
+- [Security Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/security-extensibility.md): Learn more about: Security Extensibility
+- [Security in WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/security-in-wcf.md): Learn more about: Security in WCF
+- [Security Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/security-validation.md): Learn more about: Security validation
+- [Self-Host](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/self-host.md): Learn more about: Self-Host
+- [Service Auditing Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-auditing-behavior.md): Learn more about: Service Auditing Behavior
+- [Service Contracts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-contracts.md): Learn more about: Service Contracts
 - [Service Debug Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-debug-behavior.md): Learn more about: Service Debug Behavior
+- [Service Description](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-description.md): Learn more about: Service Description
+- [Service Identity Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-identity-sample.md): Learn more about: Service Identity Sample
+- [Service Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-interoperability.md): Learn more about: Service Interoperability
+- [Service Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-security.md): Learn more about: Service Security
+- [Service Transaction Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/service-transaction-behavior.md): Learn more about a sample that demonstrates the use of a client-coordinated transaction and other settings to control service transaction behavior.
+- [Services samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/services.md): Learn more about: Services
+- [Session](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/session.md): Learn more about: Session
+- [Sessions and Queues](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/sessions-and-queues.md): Learn more about: Sessions and queues
+- [Setting the Use and Style properties samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/setting-the-use-and-style-properties.md): Learn more about: Setting the Use and Style Properties
+- [Simplified Configuration for WCF Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md): Learn how to implement and configure a typical service and client using WCF. The service communicates by using an endpoint specified in a configuration file.
+- [SOAP and HTTP Endpoints](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/soap-and-http-endpoints.md): Learn more about: SOAP and HTTP Endpoints
+- [SRMP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/srmp.md): Learn more about: SRMP
+- [Stand-Alone Diagnostics Feed Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/stand-alone-diagnostics-feed-sample.md): Learn more about: Stand-Alone Diagnostics Feed Sample
+- [Stream](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/stream.md): Learn more about: Stream
+- [Streaming Feeds Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/streaming-feeds-sample.md): Learn more about: Streaming Feeds Sample
+- [Strongly typed Extensions Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/strongly-typed-extensions-sample.md): Learn more about: Strongly typed extensions sample
+- [Supporting Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/supporting-tokens.md): Learn more about: Supporting Tokens
+- [Syndication Extensibility Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/syndication-extensibility-samples.md): Learn more about: Syndication Extensibility Samples
+- [Syndication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/syndication.md): Learn more about: Syndication
+- [SystemWebRouting Integration Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/systemwebrouting-integration-sample.md): Learn more about: SystemWebRouting Integration Sample
+- [TCP Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/tcp-activation.md): Learn more about: TCP Activation
 - [Throttling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/throttling.md): Learn more about: Throttling
-
-## Binding
-
-- [Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/binding.md): Learn more about the WCF samples for endpoint binding.
+- [Token Authenticator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/token-authenticator.md): Learn more about: Token Authenticator
+- [Token Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/token-provider.md): Learn more about: Token Provider
+- [Tool Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/tool-samples.md): Learn more about: Tool Samples
+- [Tracing and Message Logging](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/tracing-and-message-logging.md): Learn how to use the Service Trace Viewer Tool (SvcTraceViewer.exe) to view traces and message logs by using this WFC sample.
+- [Transacted MSMQ Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/transacted-msmq-binding.md): Learn more about: Transacted MSMQ Binding
+- [Transport: Custom Transactions over UDP Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/transport-custom-transactions-over-udp-sample.md): Learn more about: Transport: Custom Transactions over UDP Sample
+- [Transport Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/transport-extensibility.md): Learn more about: Transport Extensibility
+- [Transport: UDP](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/transport-udp.md): Learn more about: Transport: UDP
+- [Transport: WSE 3.0 TCP Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/transport-wse-3-0-tcp-interoperability.md): Learn more about: Transport: WSE 3.0 TCP Interoperability
+- [Trusted Facade Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/trusted-facade-service.md): Learn more about: Trusted Facade Service
+- [Two-Way Communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/two-way-communication.md): Learn more about: Two-Way Communication
+- [Typed Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/typed-client.md): Learn more about: Typed Client
+- [UDP Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/udp-activation.md): Learn more about: UDP Activation
+- [Untyped Request-Reply](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/untyped-request-reply.md): Learn more about: Untyped Request/Reply
+- [Unwrapped Messages](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/unwrapped-messages.md): Learn more about: Unwrapped Messages
+- [UriTemplate Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/uritemplate-sample.md): Learn more about: UriTemplate Sample
+- [UriTemplate Table Dispatcher Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md): Learn more about: UriTemplate Table Dispatcher Sample
+- [UriTemplate Table Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/uritemplate-table-sample.md): Learn more about: UriTemplate Table Sample
+- [Usage of Standard Endpoints](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/usage-of-standard-endpoints.md): Learn more about: Usage of Standard Endpoints
+- [Use Close and Abort to release WCF client resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md): Dispose can fail and throw exceptions when the network fails. That can cause unwanted behavior. Instead, use Close and Abort to release client resources when the network has failed.
+- [Using Performance Counters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/using-performance-counters.md): Learn more about: Using Performance Counters
+- [Using the WCF Moniker with COM Clients](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/using-the-wcf-moniker-with-com-clients.md): Learn more about: Using the WCF Moniker with COM Clients
+- [Virtual Directory Setup Instructions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/virtual-directory-setup-instructions.md): Learn more about: Virtual Directory Setup Instructions
+- [Volatile Queued Communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/volatile-queued-communication.md): Learn more about: Volatile Queued Communication
+- [WCF Analytic Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wcf-analytic-tracing.md): Learn more about: WCF Analytic Tracing
+- [WCF Services and Event Tracing for Windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md): Learn more about: WCF Services and Event Tracing for Windows
+- [Windows Communication Foundation to Message Queuing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wcf-to-message-queuing.md): Learn more about: Windows Communication Foundation to Message Queuing
+- [Weakly-typed JSON Serialization Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/weakly-typed-json-serialization-sample.md): Learn more about: Weakly-typed JSON Serialization Sample
+- [Web](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/web.md): Learn more about: Web
+- [WebContentTypeMapper Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/webcontenttypemapper-sample.md): Learn more about: WebContentTypeMapper Sample
+- [Windows Process Activation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/windows-process-activation.md): Learn more about: Windows Process Activation
+- [Windows Service Host](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/windows-service-host.md): Learn more about: Windows Service Host
+- [WMI Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wmi-provider.md): Learn more about: WMI Provider
+- [Workflow Discovery Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/workflow-discovery-sample.md): Learn more about: Workflow Discovery Sample
+- [WS 2007 Federation HTTP Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-2007-federation-http-binding.md): Learn more about: WS 2007 Federation HTTP Binding
+- [WS Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-binding.md): Learn more about: WS Binding
+- [WS Dual Http](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-dual-http.md): Learn more about: WS Dual Http
+- [WS Reliable Session](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-reliable-session.md): Learn more about: WS Reliable Session
+- [WS Transaction Flow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-transaction-flow.md): Learn more about: WS Transaction Flow
+- [WS Transport Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-transport-security.md): Learn more about: WS Transport Security
+- [WS Transport With Message Credential](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/ws-transport-with-message-credential.md): Learn more about: WS Transport With Message Credential
+- [WSHttpBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wshttpbinding.md): Learn more about: WSHttpBinding
+- [WSStreamedHttpBinding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/wsstreamedhttpbinding.md): Learn more about: WSStreamedHttpBinding
+- [X.509 Certificate Validator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/x-509-certificate-validator.md): Learn more about: X.509 Certificate Validator
+- [XmlReader Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/xmlreader-sample.md): Learn more about: XmlReader Sample
+- [XmlSerializer Faults](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/xmlserializer-faults.md): Learn more about: XmlSerializer Faults
+- [XMLSerializer Sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/xmlserializer-sample.md): Learn more about: XMLSerializer Sample

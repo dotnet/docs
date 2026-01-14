@@ -1,27 +1,15 @@
 # Whats New Docs
 
-## Breaking changes
+> New features and improvements in each C# version. Recent additions include primary constructors (C# 12), collection expressions (C# 12), raw string literals (C# 11), and file-scoped types. Check version compatibility when using new features; target appropriate .NET version.
 
-- [Breaking before C# 10](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/breaking-changes.md): Find any breaking changes in the C# compiler that you're using.
-
-## C# 12
-
+- [Breaking changes in the C# compiler](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/breaking-changes.md): Find any breaking changes in the C# compiler that you're using.
 - [What's new in C# 12](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-12.md): Get an overview of the new features in C# 12.
-
-## C# 13
-
 - [What's new in C# 13](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-13.md): Get an overview of the new features in C# 13.
-
-## C# 14
-
 - [What's new in C# 14](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-14.md): Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
+- [The history of C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-version-history.md): Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
+- [The relationship between C# language features and library types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/relationships-between-language-and-library.md): Language features often rely on library types for implementation. Understand that relationship.
+- [Version and update considerations for C# developers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/version-update-considerations.md): Introducing new languages features in your library can impact the code that uses it.
 
-## What's new in C#
+## Topic Indices
 
-- [C# version history](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/csharp-version-history.md): Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
-- [Relationships to .NET library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/relationships-between-language-and-library.md): Language features often rely on library types for implementation. Understand that relationship.
-- [Version compatibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/version-update-considerations.md): Introducing new languages features in your library can impact the code that uses it.
-
-## Children
-
-- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/tutorials/llms.txt)
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/tutorials/llms.txt): 3 topics

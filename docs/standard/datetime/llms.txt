@@ -1,39 +1,27 @@
-# Datetime Docs
+# Dates, times, and time zones
 
-## Dates, times, and time zones
+> Working with dates, times, and time zones—including accessing the system clock, performing arithmetic, and converting between zones. Core types include `DateTime`, `DateTimeOffset`, `DateOnly`, `TimeOnly`, `TimeSpan`, and `TimeZoneInfo`. Use `DateTimeOffset` for unambiguous cross-system time representation; `DateOnly`/`TimeOnly` when you only need one component.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/index.md): Learn more about: Dates, times, and time zones
-- [Choose which date and time type to use](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/choosing-between-datetime.md): Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo types to represent date and time information in .NET.
-- [Work with calendars](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/working-with-calendars.md): Learn more about: Work with calendars
-- [Use the DateOnly and TimeOnly types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/how-to-use-dateonly-timeonly.md): Learn about the DateOnly and TimeOnly structures in .NET.
-- [Perform arithmetic operations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/performing-arithmetic-operations.md): Learn more about: Performing arithmetic operations with dates and times
-- [Use TimeProvider to write predictable code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/timeprovider-overview.md): Learn about the TimeProvider class in .NET and .NET Framework. TimeProvider provides an abstraction over time.
-- [DateTime and DateTimeOffset support in System.Text.Json](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/system-text-json-support.md): An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
-
-## Instantiate a DateTimeOffset object
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/instantiating-a-datetimeoffset-object.md): Read how to instantiate (make an instance of) a DateTimeOffset object in .NET. Learn about date & time literals, constructors, implicit type conversion, & more.
-- [Create time zones without adjustment rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/create-time-zones-without-adjustment-rules.md): Learn more about: How to: Create time zones without adjustment rules
-- [Create time zones with adjustment rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/create-time-zones-with-adjustment-rules.md): Learn more about: How to: Create time zones with adjustment rules
-
-## Save and restore time zones
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/saving-and-restoring-time-zones.md): Learn more about: Saving and restoring time zones
-- [Save time zones to an embedded resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/save-time-zones-to-an-embedded-resource.md): Learn more about: How to: Save time zones to an embedded resource
-- [Restore time zones from an embedded resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md): Learn more about: How to: Restore time zones from an embedded resource
-
-## Time zones
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/time-zone-overview.md): Learn more about: Time zone overview
-- [Use time zones in date and time arithmetic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/use-time-zones-in-arithmetic.md): Learn more about: How to: Use time zones in date and time arithmetic
-- [Convert between DateTime and DateTimeOffset](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/converting-between-datetime-and-offset.md): Convert between DateTimeOffset values and DateTime values in .NET. The DateTimeOffset structure provides more time zone awareness than the DateTime structure.
-- [Convert times between time zones](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/converting-between-time-zones.md): Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
-- [How to: Resolve ambiguous times](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/resolve-ambiguous-times.md): Learn more about: How to: Resolve ambiguous times
+- [How to: Access the predefined UTC and local time zone objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/access-utc-and-local.md): Learn more about: How to: Access the predefined UTC and local time zone objects
+- [Compare types related to date and time](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/choosing-between-datetime.md): Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo types to represent date and time information in .NET.
+- [Converting between DateTime and DateTimeOffset](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/converting-between-datetime-and-offset.md): Convert between DateTimeOffset values and DateTime values in .NET. The DateTimeOffset structure provides more time zone awareness than the DateTime structure.
+- [Converting times between time zones](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/converting-between-time-zones.md): Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
+- [How to: Create time zones with adjustment rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/create-time-zones-with-adjustment-rules.md): Learn more about: How to: Create time zones with adjustment rules
+- [How to: Create time zones without adjustment rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/create-time-zones-without-adjustment-rules.md): Learn more about: How to: Create time zones without adjustment rules
+- [How to: Enumerate time zones present on a computer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/enumerate-time-zones.md): Learn more about: How to: Enumerate time zones present on a computer
+- [Finding the time zones defined on a local system](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/finding-the-time-zones-on-local-system.md): Learn more about: Finding the time zones defined on a local system
+- [How to use DateOnly and TimeOnly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/how-to-use-dateonly-timeonly.md): Learn about the DateOnly and TimeOnly structures in .NET.
+- [Dates, times, and time zones](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/index.md): Learn more about: Dates, times, and time zones
+- [How to: Obtain a TimeZoneInfo object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/instantiate-time-zone-info.md): Learn how to obtain a TimeZoneInfo object
+- [Instantiating a DateTimeOffset object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/instantiating-a-datetimeoffset-object.md): Read how to instantiate (make an instance of) a DateTimeOffset object in .NET. Learn about date & time literals, constructors, implicit type conversion, & more.
 - [How to: Let users resolve ambiguous times](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/let-users-resolve-ambiguous-times.md): Learn more about: How to: Let users resolve ambiguous times
-
-## Time zones defined by the OS
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/finding-the-time-zones-on-local-system.md): Learn more about: Finding the time zones defined on a local system
-- [Enumerate time zones present on a computer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/enumerate-time-zones.md): Learn more about: How to: Enumerate time zones present on a computer
-- [Access predefined UTC and local time zone objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/access-utc-and-local.md): Learn more about: How to: Access the predefined UTC and local time zone objects
-- [Instantiate a TimeZoneInfo object](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/instantiate-time-zone-info.md): Learn how to obtain a TimeZoneInfo object
+- [Performing arithmetic operations with dates and times](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/performing-arithmetic-operations.md): Learn more about: Performing arithmetic operations with dates and times
+- [How to: Resolve ambiguous times](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/resolve-ambiguous-times.md): Learn more about: How to: Resolve ambiguous times
+- [How to: Restore time zones from an embedded resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md): Learn more about: How to: Restore time zones from an embedded resource
+- [How to: Save time zones to an embedded resource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/save-time-zones-to-an-embedded-resource.md): Learn more about: How to: Save time zones to an embedded resource
+- [Saving and restoring time zones](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/saving-and-restoring-time-zones.md): Learn more about: Saving and restoring time zones
+- [DateTime and DateTimeOffset support in System.Text.Json](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/system-text-json-support.md): An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
+- [Time zone overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/time-zone-overview.md): Learn more about: Time zone overview
+- [What is the TimeProvider class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/timeprovider-overview.md): Learn about the TimeProvider class in .NET and .NET Framework. TimeProvider provides an abstraction over time.
+- [How to: Use time zones in date and time arithmetic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/use-time-zones-in-arithmetic.md): Learn more about: How to: Use time zones in date and time arithmetic
+- [Working with calendars](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/working-with-calendars.md): Learn more about: Work with calendars

@@ -1,15 +1,10 @@
 # Apicompat Docs
 
-## API compatibility
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/overview.md): Learn how .NET compatibility features, including MSBuild tasks and a command-line tool, can be used to develop consistent and well-formed multi-targeting libraries.
-- [Diagnostic IDs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/diagnostic-ids.md): A reference for assembly and package validation diagnostic IDs, and how to suppress them.
+- [Assembly validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/assembly-validation.md): Learn how assembly validation can be used to develop consistent and well-formed multi-targeting assemblies.
+- [Package Validation Diagnostics IDs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/diagnostic-ids.md): A reference for assembly and package validation diagnostic IDs, and how to suppress them.
 - [Microsoft.DotNet.ApiCompat.Tool global tool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/global-tool.md): Learn about the Microsoft.DotNet.ApiCompat.Tool global tool, which performs API compatibility checks on assemblies and packages.
+- [API compatibility tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/overview.md): Learn how .NET compatibility features, including MSBuild tasks and a command-line tool, can be used to develop consistent and well-formed multi-targeting libraries.
 
-## Assembly validation
+## Topic Indices
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/assembly-validation.md): Learn how assembly validation can be used to develop consistent and well-formed multi-targeting assemblies.
-
-## Children
-
-- [Package Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/package-validation/llms.txt)
+- [Package Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/package-validation/llms.txt): 4 topics

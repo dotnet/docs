@@ -1,38 +1,34 @@
-# Framework Docs
+# .NET Framework
 
-- [Code analysis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/code-analyzers.md): Learn how to use the analyzers in the .NET Framework Analyzers package to find and address issues in your code.
+> .NET Framework documentation for Windows-only applications. Covers WPF, Windows Forms, WCF, ADO.NET, and ASP.NET. Note: For new development, use modern .NET (.NET 8+) instead. This documentation supports maintaining legacy applications.
 
-## Client apps
+- [64-bit Applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/64-bit-apps.md): Get information about configuring applications on a Windows 64-bit OS, as either a native 64-bit application or under WOW64 (Windows 32-bit on Windows 64-bit).
+- [Code analyzers for .NET Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/code-analyzers.md): Learn how to use the analyzers in the .NET Framework Analyzers package to find and address issues in your code.
+- [Developing Windows-based client applications with the .NET Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/develop-client-apps.md): Develop Windows-based applications with .NET. You can use Universal Windows Platform (UWP), Windows Presentation Foundation (WPF), or Windows Forms.
+- [Developing Web Applications with ASP.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/develop-web-apps-with-aspnet.md): Develop web apps with ASP.NET Core, which is a redesign of ASP.NET 4.x that's cross-platform, leaner, more modular, and unified to build a web UI and web APIs.
+- [.NET Framework Development Guide](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/development-guide.md): Explore the .NET development guide, which explains how to create, configure, debug, secure, and deploy your .NET apps.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/develop-client-apps.md): Develop Windows-based applications with .NET. You can use Universal Windows Platform (UWP), Windows Presentation Foundation (WPF), or Windows Forms.
+## Topic Indices
 
-## Development guide
-
-- [Development guide](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/development-guide.md): Explore the .NET development guide, which explains how to create, configure, debug, secure, and deploy your .NET apps.
-- [64-bit apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/64-bit-apps.md): Get information about configuring applications on a Windows 64-bit OS, as either a native 64-bit application or under WOW64 (Windows 32-bit on Windows 64-bit).
-- [Web apps with ASP.NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/develop-web-apps-with-aspnet.md): Develop web apps with ASP.NET Core, which is a redesign of ASP.NET 4.x that's cross-platform, leaner, more modular, and unified to build a web UI and web APIs.
-
-## Children
-
-- [Additional Apis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/additional-apis/llms.txt)
-- [App Domains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/app-domains/llms.txt)
-- [Configure Apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/llms.txt)
-- [Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/llms.txt)
-- [Debug Trace Profile](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/debug-trace-profile/llms.txt)
-- [Deployment](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/deployment/llms.txt)
-- [Get Started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/get-started/llms.txt)
-- [Install](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/install/llms.txt)
-- [Interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/interop/llms.txt)
-- [Mef](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/mef/llms.txt)
-- [Migration Guide](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/migration-guide/llms.txt)
-- [Network Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/network-programming/llms.txt)
-- [Performance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/performance/llms.txt)
-- [Reflection And Codedom](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/reflection-and-codedom/llms.txt)
-- [Release Notes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/release-notes/llms.txt)
-- [Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/tools/llms.txt)
-- [Ui Automation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/ui-automation/llms.txt)
-- [Unmanaged API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/llms.txt)
-- [WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/llms.txt)
-- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/whats-new/llms.txt)
-- [Windows Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-services/llms.txt)
-- [Windows Workflow Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/llms.txt)
+- [Additional Apis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/additional-apis/llms.txt): 76 topics, 156 in tree
+- [App Domains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/app-domains/llms.txt): 22 topics
+- [Configure Apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/configure-apps/llms.txt): 11 topics, 521 in tree
+- [Data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/llms.txt): 1 topics, 624 in tree
+- [Debug Trace Profile](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/debug-trace-profile/llms.txt): 60 topics
+- [Deployment](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/deployment/llms.txt): 16 topics
+- [Get Started](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/get-started/llms.txt): 4 topics
+- [Install](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/install/llms.txt): 10 topics
+- [Interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/interop/llms.txt): 47 topics
+- [Mef](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/mef/llms.txt): 2 topics
+- [Migration Guide](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/migration-guide/llms.txt): 25 topics
+- [Network Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/network-programming/llms.txt): 40 topics
+- [Performance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/performance/llms.txt): 29 topics
+- [Reflection And Codedom](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/reflection-and-codedom/llms.txt): 11 topics
+- [Release Notes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/release-notes/llms.txt): 1 topics, 26 in tree
+- [Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/tools/llms.txt): 35 topics
+- [Ui Automation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/ui-automation/llms.txt): 116 topics
+- [Unmanaged API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/unmanaged-api/llms.txt): 4 topics, 1441 in tree
+- [WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/llms.txt): 107 topics, 1868 in tree
+- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/whats-new/llms.txt): 5 topics
+- [Windows Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-services/llms.txt): 16 topics
+- [Windows Workflow Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/llms.txt): 260 topics

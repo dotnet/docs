@@ -1,6 +1,6 @@
-# Versions Docs
+# How the .NET Runtime and SDK are versioned
 
-## Versioning
+> Understanding .NET version numbers for the runtime, SDK, and targeting packs. Even-numbered releases (.NET 6, 8, 10) are Long-Term Support (LTS) with 3 years of support; odd-numbered releases are Standard-Term Support (STS) with 18 months. Use `global.json` to pin SDK versions in projects.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/index.md): This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
-- [.NET version selection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/selection.md): Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
+- [How the .NET Runtime and SDK are versioned](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/index.md): This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
+- [Select which .NET version to use](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/selection.md): Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.

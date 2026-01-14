@@ -1,21 +1,20 @@
 # Language Reference Docs
 
-- [Unsafe code and pointers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/unsafe-code.md): Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
+> Comprehensive reference for C# language syntax including keywords, operators, statements, types, and attributes. Documents reserved keywords like `class`, `async`, `await` and contextual keywords like `var`, `dynamic`, `record`. Use for precise syntax and semantic details.
+
+- [Configure language version](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/configure-language-version.md): Learn how to override the default C# language version manually. The C# compiler can support any language version up to the version in the installed SDK.
+- [Language versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/language-versioning.md): Learn about how the C# language version is determined based on your project and the reasons behind that choice.
 - [Preprocessor directives](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/preprocessor-directives.md): Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more
+- [Unsafe code, pointers to data, and function pointers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/unsafe-code.md): Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
 
-## Language version
+## Topic Indices
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/language-versioning.md): Learn about how the C# language version is determined based on your project and the reasons behind that choice.
-- [Configure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/configure-language-version.md): Learn how to override the default C# language version manually. The C# compiler can support any language version up to the version in the installed SDK.
-
-## Children
-
-- [Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/attributes/llms.txt)
-- [Builtin Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/llms.txt)
-- [Compiler Messages](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-messages/llms.txt)
-- [Compiler Options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-options/llms.txt)
-- [Keywords](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/llms.txt)
-- [Operators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/operators/llms.txt)
-- [Statements](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/statements/llms.txt)
-- [Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/tokens/llms.txt)
-- [Xmldoc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/xmldoc/llms.txt)
+- [Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/attributes/llms.txt): 5 topics
+- [Builtin Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/builtin-types/llms.txt): 20 topics
+- [Compiler Messages](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-messages/llms.txt): 179 topics
+- [Compiler Options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-options/llms.txt): 10 topics
+- [Keywords](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/keywords/llms.txt): 72 topics
+- [Operators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/operators/llms.txt): 34 topics
+- [Statements](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/statements/llms.txt): 10 topics
+- [Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/tokens/llms.txt): 6 topics
+- [Xmldoc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/xmldoc/llms.txt): 3 topics

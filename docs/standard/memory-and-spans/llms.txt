@@ -1,6 +1,6 @@
-# Memory And Spans Docs
+# Memory-related and span types
 
-## Memory and span-related types
+> Working with contiguous memory regions efficiently without heap allocations. `Span<T>` and `ReadOnlySpan<T>` provide stack-only views over arrays, strings, and native memory; `Memory<T>` and `ReadOnlyMemory<T>` can be stored on the heap. Use spans in high-performance scenarios to avoid copying data and reduce allocations.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/memory-and-spans/index.md): Learn more about: Memory-related and span-related types
+- [Memory-related and span types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/memory-and-spans/index.md): Learn more about: Memory-related and span-related types
 - [Memory<T> and Span<T> usage guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/memory-and-spans/memory-t-usage-guidelines.md): This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET that can be used in pipelines.

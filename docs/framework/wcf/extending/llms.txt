@@ -1,47 +1,66 @@
-# Extending Docs
+# Extending WCF
 
-- [Extend WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/index.md): Learn more about: Extending WCF
-
-## Channel Model Overview
-
+- [Bindings and Binding Elements](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/bindings-and-binding-elements.md): Learn more about: Bindings and Binding Elements
+- [How to: Change the Cryptographic Provider for an X.509 Certificate's Private Key](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/change-cryptographic-provider-x509-certificate-private-key.md): Learn more about: How to: Change the Cryptographic Provider for an X.509 Certificate's Private Key
 - [Channel Model Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/channel-model-overview.md): Learn more about: Channel Model Overview
-- [Client Channel-Level Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/client-channel-level-programming.md): Learn more about: Client Channel-Level Programming
-- [Service Channel-Level Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/service-channel-level-programming.md): Learn more about: Service Channel-Level Programming
-- [Understanding State Changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/understanding-state-changes.md): Learn more about: Understanding State Changes
 - [Choosing a Message Exchange Pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/choosing-a-message-exchange-pattern.md): Learn more about: Choosing a Message Exchange Pattern
-- [Handling Exceptions and Faults](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/handling-exceptions-and-faults.md): Learn more about: Handling Exceptions and Faults
-
-## Custom Authorization
-
-- [Custom Authorization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-authorization.md): Learn more about: Custom Authorization
-- [How to: Create a Custom Authorization Policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-authorization-policy.md): Learn more about: How to: Create a Custom Authorization Policy
-- [How to: Create a Custom Authorization Manager for a Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md): Learn more about: How to: Create a Custom Authorization Manager for a Service
-- [How to: Create a Custom Claim](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-claim.md): Learn how to create a custom claim in WCF. WCF supports a variety of built-in claims and some applications may require custom claims.
-- [How to: Compare Claims](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-compare-claims.md): Learn more about: How to: Compare Claims
-- [How to: Create a Custom Principal Identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-principal-identity.md): Learn more about: How to: Create a Custom Principal Identity
-
-## Custom Bindings
-
-- [Custom Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-bindings.md): Learn more about: Custom Bindings
-- [How to: Customize a System-Provided Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md): Learn more about: How to: Customize a System-Provided Binding
-
-## Custom Credential and Credential Validation
-
-- [Custom Credential and Credential Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-credential-and-credential-validation.md): Learn more about: Custom Credential and Credential Validation
-- [Walkthrough: Creating Custom Client and Service Credentials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md): Learn more about: Walkthrough: Creating Custom Client and Service Credentials
-- [How to: Create a Service that Employs a Custom Certificate Validator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md): Learn more about: How to: Create a Service that Employs a Custom Certificate Validator
-- [How to: Create a Custom Security Token Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md): Learn more about: How to: Create a Custom Security Token Provider
-- [How to: Create a Custom Security Token Authenticator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md): Learn more about: How to: create a custom security token authenticator
-
-## Custom Tokens
-
-- [Custom Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-tokens.md): Learn more about: Custom Tokens
-- [How to: Create a Custom Token](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-token.md): Learn how to create a custom security token in WCF using the SecurityToken class and how to integrate it with a security token provider and an authenticator.
-
-## Developing Channels
-
-- [Developing Channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/developing-channels.md): Learn more about: Developing Channels
-- [Service: Channel Listeners and Channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/service-channel-listeners-and-channels.md): Learn more about: Service: Channel listeners and channels
 - [Client: Channel Factories and Channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/client-channel-factories-and-channels.md): Learn more about: Client: Channel Factories and Channels
-- [Creating a BindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/creating-a-bindingelement.md): Learn more about: Creating a BindingElement
+- [Client Channel-Level Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/client-channel-level-programming.md): Learn more about: Client Channel-Level Programming
 - [Configuration and Metadata Support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/configuration-and-metadata-support.md): Learn more about: Configuration and Metadata Support
+- [Configuring and Extending the Runtime with Behaviors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md): Learn how to implement behavior interfaces in WCF apps and add them to a service description or endpoint, either programmatically or in a configuration file.
+- [Creating a BindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/creating-a-bindingelement.md): Learn more about: Creating a BindingElement
+- [Creating User-Defined Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/creating-user-defined-bindings.md): Learn more about: Creating User-Defined Bindings
+- [Custom Authorization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-authorization.md): Learn more about: Custom Authorization
+- [Custom Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-bindings.md): Learn more about: Custom Bindings
+- [Custom Credential and Credential Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-credential-and-credential-validation.md): Learn more about: Custom Credential and Credential Validation
+- [Custom Encoders](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-encoders.md): Learn more about: Custom Encoders
+- [Custom Message Formatters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-message-formatters.md): Learn more about: Custom Message Formatters
+- [Custom Stream Upgrades](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-stream-upgrades.md): Learn more about: Custom Stream Upgrades
+- [Custom Tokens](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/custom-tokens.md): Learn more about: Custom Tokens
+- [Data Contract Surrogates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/data-contract-surrogates.md): Learn more about: Data Contract Surrogates
+- [Developing Channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/developing-channels.md): Learn more about: Developing Channels
+- [Exporting Custom Metadata for a WCF Extension](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md): Learn more about: Exporting Custom Metadata for a WCF Extension
+- [Extending Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-bindings.md): Learn more about: Extending Bindings
+- [Extending Clients](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-clients.md): Learn more about: Extending Clients
+- [Extending Dispatchers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-dispatchers.md): Learn more about: Extending Dispatchers
+- [Extending Encoders and Serializers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-encoders-and-serializers.md): Learn more about: Extending Encoders and Serializers
+- [Extending Hosting Using ServiceHostFactory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md): Learn more about: Extending Hosting Using ServiceHostFactory
+- [Extending Security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-security.md): Learn more about: Extending Security
+- [Extending ServiceHost and the Service Model Layer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md): Learn more about: Extending ServiceHost and the Service Model Layer
+- [Extending the Channel Layer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-the-channel-layer.md): Learn more about: Extending the Channel Layer
+- [Extending the Metadata System](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extending-the-metadata-system.md): Learn more about: Extending the Metadata System
+- [Extensible Objects](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/extensible-objects.md): Learn more about: Extensible Objects
+- [Handling Exceptions and Faults](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/handling-exceptions-and-faults.md): Learn more about: Handling Exceptions and Faults
+- [How to: Compare Claims](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-compare-claims.md): Learn more about: How to: Compare Claims
+- [How to: Configure a Custom WS-Metadata Exchange Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md): Learn more about: How to: Configure a Custom WS-Metadata Exchange Binding
+- [How to: Create a Custom Authorization Manager for a Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md): Learn more about: How to: Create a Custom Authorization Manager for a Service
+- [How to: Create a Custom Authorization Policy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-authorization-policy.md): Learn more about: How to: Create a Custom Authorization Policy
+- [How to: Create a Custom Claim](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-claim.md): Learn how to create a custom claim in WCF. WCF supports a variety of built-in claims and some applications may require custom claims.
+- [How to: Create a Custom Client Identity Verifier](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md): Learn more about: How to: Create a Custom Client Identity Verifier
+- [How to: Create a Custom Principal Identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-principal-identity.md): Learn more about: How to: Create a Custom Principal Identity
+- [How to: create a custom security token authenticator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md): Learn more about: How to: create a custom security token authenticator
+- [How to: Create a Custom Security Token Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md): Learn more about: How to: Create a Custom Security Token Provider
+- [How to: Create a Custom Token](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-custom-token.md): Learn how to create a custom security token in WCF using the SecurityToken class and how to integrate it with a security token provider and an authenticator.
+- [How to: Create a Service that Employs a Custom Certificate Validator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md): Learn more about: How to: Create a Service that Employs a Custom Certificate Validator
+- [How to: Customize a System-Provided Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md): Learn more about: How to: Customize a System-Provided Binding
+- [How to: Export Custom Policy Assertions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md): Learn more about: How to: Export Custom Policy Assertions
+- [How to: Export Custom WSDL](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-export-custom-wsdl.md): Learn more about: How to: Export Custom WSDL
+- [How to: Import Custom Policy Assertions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md): Learn more about: How to: Import Custom Policy Assertions
+- [How to: Import Custom WSDL](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-import-custom-wsdl.md): Learn more about: How to: Import Custom WSDL
+- [How to: Inspect and Modify Messages on the Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md): Learn more about: How to: Inspect and Modify Messages on the Service
+- [How to: Inspect or Modify Messages on the Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md): Learn how to inspect or modify the incoming or outgoing messages across a WCF client or service by implementing the appropriate interface.
+- [How to: Inspect or Modify Parameters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md): Learn more about: How to: Inspect or Modify Parameters
+- [How to: Lock Down Endpoints in the Enterprise](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md): Learn more about: How to: Lock Down Endpoints in the Enterprise
+- [How to: Retrieve Metadata Over a non-MEX Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md): Learn more about: How to: Retrieve Metadata Over a non-MEX Binding
+- [How to: Use Separate X.509 Certificates for Signing and Encryption](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-use-separate-x-509-certificates-for-signing-and-encryption.md): Learn more about: How to: Use Separate X.509 Certificates for Signing and Encryption
+- [How to: Write an Extension for the ServiceContractGenerator](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/how-to-write-an-extension-for-the-servicecontractgenerator.md): Learn more about: How to: Write an Extension for the ServiceContractGenerator
+- [Importing Custom Metadata for a WCF Extension](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md): Learn more about: Importing Custom Metadata for a WCF Extension
+- [Extending WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/index.md): Learn more about: Extending WCF
+- [Overriding the Identity of a Service for Authentication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md): Learn more about: Override the identity of a service for authentication
+- [Publishing and Retrieving Metadata Over a Custom Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md): Learn more about: Publishing and Retrieving Metadata Over a Custom Binding
+- [Service Channel-Level Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/service-channel-level-programming.md): Learn more about: Service Channel-Level Programming
+- [Service: Channel listeners and channels](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/service-channel-listeners-and-channels.md): Learn more about: Service: Channel listeners and channels
+- [Specifying a Custom Crypto Algorithm](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/specifying-a-custom-crypto-algorithm.md): Learn more about: Specifying a Custom Crypto Algorithm
+- [Understanding State Changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/understanding-state-changes.md): Learn more about: Understanding State Changes
+- [Walkthrough: Creating Custom Client and Service Credentials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md): Learn more about: Walkthrough: Creating Custom Client and Service Credentials
+- [WS-MetadataExchange Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/ws-metadataexchange-bindings.md): Learn more about: WS-MetadataExchange Bindings

@@ -1,49 +1,360 @@
-# Etw Docs
+# Analytic Tracing with ETW
 
-- [Analytic tracing with ETW](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/index.md): Learn more about: Analytic Tracing with ETW
-- [Analytic Tracing Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/analytic-tracing-overview.md): Learn more about: Analytic tracing overview
-- [Dynamically Enabling Analytic Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md): Learn more about: Dynamically Enabling Analytic Tracing
-- [Configuring Message Flow Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/configuring-message-flow-tracing.md): Learn more about: Configuring Message Flow Tracing
-- [Determine service operation duration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/determining-service-operation-duration.md): Learn more about: Determining service operation duration
-
-## Analytic Trace Event Reference
-
-- [Analytic Trace Event Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/analytic-trace-event-reference.md): Learn more about: Analytic Trace Event Reference
-- [131 - BufferPoolAllocation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/131-bufferpoolallocation.md): Learn more about: 131 - BufferPoolAllocation
-- [132 - BufferPoolChangeQuota](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/132-bufferpoolchangequota.md): Learn more about: 132 - BufferPoolChangeQuota
-- [133 - ActionItemScheduled](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/133-actionitemscheduled.md): Learn more about: 133 - ActionItemScheduled
-- [134 - ActionItemCallbackInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/134-actionitemcallbackinvoked.md): Learn more about: 134 - ActionItemCallbackInvoked
-- [201 - ClientMessageInspectorAfterReceiveInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/201-clientmessageinspectorafterreceiveinvoked.md): Learn more about: 201 - ClientMessageInspectorAfterReceiveInvoked
-- [202 - ClientMessageInspectorBeforeSendInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/202-clientmessageinspectorbeforesendinvoked.md): Learn more about: 202 - ClientMessageInspectorBeforeSendInvoked
-- [203 - ClientParameterInspectorAfterCallInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/203-clientparameterinspectoraftercallinvoked.md): Learn more about: 203 - ClientParameterInspectorAfterCallInvoked
-- [204 - ClientParameterInspectorBeforeCallInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/204-clientparameterinspectorbeforecallinvoked.md): Learn more about: 204 - ClientParameterInspectorBeforeCallInvoked
-- [205 - OperationInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/205-operationinvoked.md): Learn more about: 205 - OperationInvoked
-- [206 - ErrorHandlerInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/206-errorhandlerinvoked.md): Learn more about: 206 - ErrorHandlerInvoked
-- [207 - FaultProviderInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/207-faultproviderinvoked.md): Learn more about: 207 - FaultProviderInvoked
-- [208 - MessageInspectorAfterReceiveInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/208-messageinspectorafterreceiveinvoked.md): Learn more about: 208 - MessageInspectorAfterReceiveInvoked
-- [209 - MessageInspectorBeforeSendInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/209-messageinspectorbeforesendinvoked.md): Learn more about: 209 - MessageInspectorBeforeSendInvoked
-- [210 - MessageThrottleExceeded](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/210-messagethrottleexceeded.md): Learn more about: 210 - MessageThrottleExceeded
-- [211 - ParameterInspectorAfterCallInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/211-parameterinspectoraftercallinvoked.md): Learn more about: 211 - ParameterInspectorAfterCallInvoked
-- [212 - ParameterInspectorBeforeCallInvoked](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/212-parameterinspectorbeforecallinvoked.md): Learn more about: 212 - ParameterInspectorBeforeCallInvoked
-- [213 - ServiceHostStarted](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/213-servicehoststarted.md): Learn more about: 213 - ServiceHostStarted
-- [214 - OperationCompleted](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/214-operationcompleted.md): Learn more about: 214 - OperationCompleted
-- [215 - MessageReceivedByTransport](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/215-messagereceivedbytransport.md): Learn more about: 215 - MessageReceivedByTransport
-- [216 - MessageSentByTransport](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/216-messagesentbytransport.md): Learn more about: 216 - MessageSentByTransport
-- [217 - ClientOperationPrepared](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/217-clientoperationprepared.md): Learn more about: 217 - ClientOperationPrepared
-- [218 - ClientOperationCompleted](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/218-clientoperationcompleted.md): Learn more about: 218 - ClientOperationCompleted
-- [219 - ServiceException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/219-serviceexception.md): Learn more about: 219 - ServiceException
-- [220 - MessageSentToTransport](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/220-messagesenttotransport.md): Learn more about: 220 - MessageSentToTransport
-- [221 - MessageReceivedFromTransport](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/221-messagereceivedfromtransport.md): Learn more about: 221 - MessageReceivedFromTransport
-- [222 - OperationFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/222-operationfailed.md): Learn more about: 222 - OperationFailed
-- [223 - OperationFaulted](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/223-operationfaulted.md): Learn more about: 223 - OperationFaulted
-- [224 - MessageThrottleAtSeventyPercent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/224-messagethrottleatseventypercent.md): Learn more about: 224 - MessageThrottleAtSeventyPercent
-- [226 - IdleServicesClosed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/226-idleservicesclosed.md): Learn more about: 226 - IdleServicesClosed
-- [301 - UserDefinedErrorOccurred](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/301-userdefinederroroccurred.md): Learn more about: 301 - UserDefinedErrorOccurred
-- [302 - UserDefinedWarningOccurred](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/302-userdefinedwarningoccurred.md): Learn more about: 302 - UserDefinedWarningOccurred
-- [303 - UserDefinedInformationEventOccured](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/303-userdefinedinformationeventoccured.md): Learn more about: 303 - UserDefinedInformationEventOccured
+- [131](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/131-bufferpoolallocation.md): Learn more about: 131 - BufferPoolAllocation
+- [132](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/132-bufferpoolchangequota.md): Learn more about: 132 - BufferPoolChangeQuota
+- [133](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/133-actionitemscheduled.md): Learn more about: 133 - ActionItemScheduled
+- [134](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/134-actionitemcallbackinvoked.md): Learn more about: 134 - ActionItemCallbackInvoked
+- [1400](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1400-channelinitializationtimeout.md): Learn more about: 1400 - ChannelInitializationTimeout
+- [1401](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1401-closetimeout.md): Learn more about: 1401 - CloseTimeout
+- [1402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1402-idletimeout.md): Learn more about: 1402 - IdleTimeout
+- [1403](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1403-leasetimeout.md): Learn more about: 1403 - LeaseTimeout
+- [1405](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1405-opentimeout.md): Learn more about: 1405 - OpenTimeout
+- [1406](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1406-receivetimeout.md): Learn more about: 1406 - ReceiveTimeout
+- [1407](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1407-sendtimeout.md): Learn more about: 1407 - SendTimeout
+- [1409](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1409-inactivitytimeout.md): Learn more about: 1409 - InactivityTimeout
+- [1416](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1416-maxreceivedmessagesizeexceeded.md): Learn more about: 1416 - MaxReceivedMessageSizeExceeded
+- [1417](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1417-maxsentmessagesizeexceeded.md): Learn more about: 1417 - MaxSentMessageSizeExceeded
+- [1418](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1418-maxoutboundconnectionsperendpointexceeded.md): Learn more about: 1418 - MaxOutboundConnectionsPerEndpointExceeded
+- [1419](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1419-maxpendingconnectionsexceeded.md): Learn more about: 1419 - MaxPendingConnectionsExceeded
+- [1420](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1420-readerquotaexceeded.md): Learn more about: 1420 - ReaderQuotaExceeded
+- [1422](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1422-negotiatetokenauthenticatorstatecacheexceeded.md): Learn more about: 1422 - NegotiateTokenAuthenticatorStateCacheExceeded
+- [1423](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1423-negotiatetokenauthenticatorstatecacheratio.md): Learn more about: 1423 - NegotiateTokenAuthenticatorStateCacheRatio
+- [1424](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1424-securitysessionratio.md): Learn more about: 1424 - SecuritySessionRatio
+- [1430](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1430-pendingconnectionsratio.md): Learn more about: 1430 - PendingConnectionsRatio
+- [1431](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1431-concurrentcallsratio.md): Learn more about: 1431 - ConcurrentCallsRatio
+- [1432](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1432-concurrentsessionsratio.md): Learn more about: 1432 - ConcurrentSessionsRatio
+- [1433](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1433-outboundconnectionsperendpointratio.md): Learn more about: 1433 - OutboundConnectionsPerEndpointRatio
+- [1436](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1436-pendingmessagesperchannelratio.md): Learn more about: 1436 - PendingMessagesPerChannelRatio
+- [1438](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1438-concurrentinstancesratio.md): Learn more about: 1438 - ConcurrentInstancesRatio
+- [1439](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1439-pendingacceptsatzero.md): Learn more about: 1439 - PendingAcceptsAtZero
+- [1441](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1441-maxsessionsizereached.md): Learn more about: 1441 - MaxSessionSizeReached
+- [1442](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1442-receiveretrycountreached.md): Learn more about: 1442 - ReceiveRetryCountReached
+- [1443](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1443-maxretrycyclesexceededmsmq.md): Learn more about: 1443 - MaxRetryCyclesExceededMsmq
+- [1445](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1445-readpoolmiss.md): Learn more about: 1445 - ReadPoolMiss
+- [1446](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1446-writepoolmiss.md): Learn more about: 1446 - WritePoolMiss
+- [1451](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/1451-maxretrycyclesexceeded.md): Learn more about: 1451 - MaxRetryCyclesExceeded
+- [201](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/201-clientmessageinspectorafterreceiveinvoked.md): Learn more about: 201 - ClientMessageInspectorAfterReceiveInvoked
+- [202](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/202-clientmessageinspectorbeforesendinvoked.md): Learn more about: 202 - ClientMessageInspectorBeforeSendInvoked
+- [203](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/203-clientparameterinspectoraftercallinvoked.md): Learn more about: 203 - ClientParameterInspectorAfterCallInvoked
+- [204](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/204-clientparameterinspectorbeforecallinvoked.md): Learn more about: 204 - ClientParameterInspectorBeforeCallInvoked
+- [205](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/205-operationinvoked.md): Learn more about: 205 - OperationInvoked
+- [206](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/206-errorhandlerinvoked.md): Learn more about: 206 - ErrorHandlerInvoked
+- [207](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/207-faultproviderinvoked.md): Learn more about: 207 - FaultProviderInvoked
+- [208](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/208-messageinspectorafterreceiveinvoked.md): Learn more about: 208 - MessageInspectorAfterReceiveInvoked
+- [209](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/209-messageinspectorbeforesendinvoked.md): Learn more about: 209 - MessageInspectorBeforeSendInvoked
+- [210](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/210-messagethrottleexceeded.md): Learn more about: 210 - MessageThrottleExceeded
+- [211](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/211-parameterinspectoraftercallinvoked.md): Learn more about: 211 - ParameterInspectorAfterCallInvoked
+- [212](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/212-parameterinspectorbeforecallinvoked.md): Learn more about: 212 - ParameterInspectorBeforeCallInvoked
+- [213](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/213-servicehoststarted.md): Learn more about: 213 - ServiceHostStarted
+- [214](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/214-operationcompleted.md): Learn more about: 214 - OperationCompleted
+- [215](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/215-messagereceivedbytransport.md): Learn more about: 215 - MessageReceivedByTransport
+- [216](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/216-messagesentbytransport.md): Learn more about: 216 - MessageSentByTransport
+- [217](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/217-clientoperationprepared.md): Learn more about: 217 - ClientOperationPrepared
+- [218](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/218-clientoperationcompleted.md): Learn more about: 218 - ClientOperationCompleted
+- [219](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/219-serviceexception.md): Learn more about: 219 - ServiceException
+- [220](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/220-messagesenttotransport.md): Learn more about: 220 - MessageSentToTransport
+- [221](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/221-messagereceivedfromtransport.md): Learn more about: 221 - MessageReceivedFromTransport
+- [222](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/222-operationfailed.md): Learn more about: 222 - OperationFailed
+- [223](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/223-operationfaulted.md): Learn more about: 223 - OperationFaulted
+- [224](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/224-messagethrottleatseventypercent.md): Learn more about: 224 - MessageThrottleAtSeventyPercent
+- [226](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/226-idleservicesclosed.md): Learn more about: 226 - IdleServicesClosed
+- [301](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/301-userdefinederroroccurred.md): Learn more about: 301 - UserDefinedErrorOccurred
+- [302](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/302-userdefinedwarningoccurred.md): Learn more about: 302 - UserDefinedWarningOccurred
+- [303](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/303-userdefinedinformationeventoccured.md): Learn more about: 303 - UserDefinedInformationEventOccured
+- [3300](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3300-receivecontextcompletefailed.md): Learn more about: 3300 - ReceiveContextCompleteFailed
+- [3301](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3301-receivecontextabandonfailed.md): Learn more about: 3301 - ReceiveContextAbandonFailed
+- [3302](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3302-receivecontextfaulted.md): Learn more about: 3302 - ReceiveContextFaulted
+- [3303](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3303-receivecontextabandonwithexception.md): Learn more about: 3303 - ReceiveContextAbandonWithException
+- [3305](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3305-clientbasecachedchannelfactorycount.md): Learn more about: 3305 - ClientBaseCachedChannelFactoryCount
+- [3306](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3306-clientbasechannelfactoryagedoutofcache.md): Learn more about: 3306 - ClientBaseChannelFactoryAgedOutofCache
+- [3307](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3307-clientbasechannelfactorycachehit.md): Learn more about: 3307 - ClientBaseChannelFactoryCacheHit
+- [3308](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3308-clientbaseusinglocalchannelfactory.md): Learn more about: 3308 - ClientBaseUsingLocalChannelFactory
+- [3309](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3309-querycompositionexecuted.md): Learn more about: 3309 - QueryCompositionExecuted
+- [3310](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3310-dispatchfailed.md): Learn more about: 3310 - DispatchFailed
+- [3311](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3311-dispatchsuccessful.md): Learn more about: 3311 - DispatchSuccessful
+- [3312](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3312-messagereadbyencoder.md): Learn more about: 3312 - MessageReadByEncoder
+- [3313](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3313-messagewrittenbyencoder.md): Learn more about: 3313 - MessageWrittenByEncoder
+- [3314](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3314-sessionidletimeout.md): Learn more about: 3314 - SessionIdleTimeout
+- [3319](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3319-socketacceptenqueued.md): Learn more about: 3319 - SocketAcceptEnqueued
+- [3320](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3320-socketaccepted.md): Learn more about: 3320 - SocketAccepted
+- [3321](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3321-connectionpoolmiss.md): Learn more about: 3321 - ConnectionPoolMiss
+- [3322](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3322-dispatchformatterdeserializerequeststart.md): Learn more about: 3322 - DispatchFormatterDeserializeRequestStart
+- [3323](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3323-dispatchformatterdeserializerequeststop.md): Learn more about: 3323 - DispatchFormatterDeserializeRequestStop
+- [3324](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3324-dispatchformatterserializereplystart.md): Learn more about: 3324 - DispatchFormatterSerializeReplyStart
+- [3325](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3325-dispatchformatterserializereplystop.md): Learn more about: 3325 - DispatchFormatterSerializeReplyStop
+- [3326](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3326-clientformatterserializerequeststart.md): Learn more about: 3326 - ClientFormatterSerializeRequestStart
+- [3327](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3327-clientformatterserializerequeststop.md): Learn more about: 3327 - ClientFormatterSerializeRequestStop
+- [3328](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3328-clientformatterdeserializereplystart.md): Learn more about: 3328 - ClientFormatterDeserializeReplyStart
+- [3329](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3329-clientformatterdeserializereplystop.md): Learn more about: 3329 - ClientFormatterDeserializeReplyStop
+- [3330](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3330-securitynegotiationstart.md): Learn more about: 3330 - SecurityNegotiationStart
+- [3331](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3331-securitynegotiationstop.md): Learn more about: 3331 - SecurityNegotiationStop
+- [3332](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3332-securitytokenprovideropened.md): Learn more about: 3332 - SecurityTokenProviderOpened
+- [3333](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3333-outgoingmessagesecured.md): Learn more about: 3333 - OutgoingMessageSecured
+- [3334](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3334-incomingmessageverified.md): Learn more about: 3334 - IncomingMessageVerified
+- [3335](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3335-getserviceinstancestart.md): Learn more about: 3335 - GetServiceInstanceStart
+- [3336](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3336-getserviceinstancestop.md): Learn more about: 3336 - GetServiceInstanceStop
+- [3337](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3337-channelreceivestart.md): Learn more about: 3337 - ChannelReceiveStart
+- [3338](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3338-channelreceivestop.md): Learn more about: 3338 - ChannelReceiveStop
+- [3339](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3339-channelfactorycreated.md): Learn more about: 3339 - ChannelFactoryCreated
+- [3340](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3340-pipeconnectionacceptstart.md): Learn more about: 3340 - PipeConnectionAcceptStart
+- [3341](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3341-pipeconnectionacceptstop.md): Learn more about: 3341 - PipeConnectionAcceptStop
+- [3342](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3342-establishconnectionstart.md): Learn more about: 3342 - EstablishConnectionStart
+- [3343](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3343-establishconnectionstop.md): Learn more about: 3343 - EstablishConnectionStop
+- [3345](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3345-sessionpreambleunderstood.md): Learn more about: 3345 - SessionPreambleUnderstood
+- [3346](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3346-connectionreadersendfault.md): Learn more about: 3346 - ConnectionReaderSendFault
+- [3347](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3347-socketacceptclosed.md): Learn more about: 3347 - SocketAcceptClosed
+- [3348](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3348-servicehostfaulted.md): Learn more about: 3348 - ServiceHostFaulted
+- [3349](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3349-listeneropenstart.md): Learn more about: 3349 - ListenerOpenStart
+- [3350](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3350-listeneropenstop.md): Learn more about: 3350 - ListenerOpenStop
+- [3351](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3351-servermaxpooledconnectionsquotareached.md): Learn more about: 3351 - ServerMaxPooledConnectionsQuotaReached
+- [3352](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3352-tcpconnectiontimedout.md): Learn more about: 3352 - TcpConnectionTimedOut
+- [3353](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3353-tcpconnectionreseterror.md): Learn more about: 3353 - TcpConnectionResetError
+- [3354](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3354-servicesecuritynegotiationcompleted.md): Learn more about: 3354 - ServiceSecurityNegotiationCompleted
+- [3355](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3355-securitynegotiationprocessingfailure.md): Learn more about: 3355 - SecurityNegotiationProcessingFailure
+- [3356](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3356-securityidentityverificationsuccess.md): Learn more about: 3356 - SecurityIdentityVerificationSuccess
+- [3357](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3357-securityidentityverificationfailure.md): Learn more about: 3357 - SecurityIdentityVerificationFailure
+- [3358](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3358-portsharingduplicatedsocket.md): Learn more about: 3358 - PortSharingDuplicatedSocket
+- [3359](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3359-securityimpersonationsuccess.md): Learn more about: 3359 - SecurityImpersonationSuccess
+- [3360](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3360-securityimpersonationfailure.md): Learn more about: 3360 - SecurityImpersonationFailure
+- [3361](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3361-httpchannelrequestaborted.md): Learn more about: 3361 - HttpChannelRequestAborted
+- [3362](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3362-httpchannelresponseaborted.md): Learn more about: 3362 - HttpChannelResponseAborted
+- [3363](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3363-httpauthfailed.md): Learn more about: 3363 - HttpAuthFailed
+- [3364](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3364-sharedlistenerproxyregisterstart.md): Learn more about: 3364 - SharedListenerProxyRegisterStart
+- [3365](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3365-sharedlistenerproxyregisterstop.md): Learn more about: 3365 - SharedListenerProxyRegisterStop
+- [3366](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3366-sharedlistenerproxyregisterfailed.md): Learn more about: 3366 - SharedListenerProxyRegisterFailed
+- [3367](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3367-connectionpoolpreamblefailed.md): Learn more about: 3367 - ConnectionPoolPreambleFailed
+- [3368](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3368-ssloninitiateupgrade.md): Learn more about: 3368 - SslOnInitiateUpgrade
+- [3369](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3369-sslonacceptupgrade.md): Learn more about: 3369 - SslOnAcceptUpgrade
+- [3370](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3370-binarymessageencodingstart.md): Learn more about: 3370 - BinaryMessageEncodingStart
+- [3371](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3371-mtommessageencodingstart.md): Learn more about: 3371 - MtomMessageEncodingStart
+- [3372](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3372-textmessageencodingstart.md): Learn more about: 3372 - TextMessageEncodingStart
+- [3373](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3373-binarymessagedecodingstart.md): Learn more about: 3373 - BinaryMessageDecodingStart
+- [3374](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3374-mtommessagedecodingstart.md): Learn more about: 3374 - MtomMessageDecodingStart
+- [3375](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3375-textmessagedecodingstart.md): Learn more about: 3375 - TextMessageDecodingStart
+- [3376](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3376-httpresponsereceivestart.md): Learn more about: 3376 - HttpResponseReceiveStart
+- [3377](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3377-socketreadstop.md): Learn more about: 3377 - SocketReadStop
+- [3378](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3378-socketasyncreadstop.md): Learn more about: 3378 - SocketAsyncReadStop
+- [3379](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3379-socketwritestart.md): Learn more about: 3379 - SocketWriteStart
+- [3380](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3380-socketasyncwritestart.md): Learn more about: 3380 - SocketAsyncWriteStart
+- [3381](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3381-sequenceacknowledgementsent.md): Learn more about: 3381 - SequenceAcknowledgementSent
+- [3382](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3382-clientreliablesessionreconnect.md): Learn more about: 3382 - ClientReliableSessionReconnect
+- [3383](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3383-reliablesessionchannelfaulted.md): Learn more about: 3383 - ReliableSessionChannelFaulted
+- [3384](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3384-windowsstreamsecurityoninitiateupgrade.md): Learn more about: 3384 - WindowsStreamSecurityOnInitiateUpgrade
+- [3385](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3385-windowsstreamsecurityonacceptupgrade.md): Learn more about: 3385 - WindowsStreamSecurityOnAcceptUpgrade
+- [3386](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3386-socketconnectionabort.md): Learn more about: 3386 - SocketConnectionAbort
+- [3388](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3388-httpgetcontextstart.md): Learn more about: 3388 - HttpGetContextStart
+- [3389](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3389-clientsendpreamblestart.md): Learn more about: 3389 - ClientSendPreambleStart
+- [3390](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3390-clientsendpreamblestop.md): Learn more about: 3390 - ClientSendPreambleStop
+- [3391](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3391-httpmessagereceivefailed.md): Learn more about: 3391 - HttpMessageReceiveFailed
+- [3392](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3392-transactionscopecreate.md): Learn more about: 3392 - TransactionScopeCreate
+- [3393](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3393-streamedmessagereadbyencoder.md): Learn more about: 3393 - StreamedMessageReadByEncoder
+- [3394](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3394-streamedmessagewrittenbyencoder.md): Learn more about: 3394 - StreamedMessageWrittenByEncoder
+- [3395](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3395-messagewrittenasynchronouslybyencoder.md): Learn more about: 3395 - MessageWrittenAsynchronouslyByEncoder
+- [3396](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3396-bufferedasyncwritestart.md): Learn more about: 3396 - BufferedAsyncWriteStart
+- [3397](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3397-bufferedasyncwritestop.md): Learn more about: 3397 - BufferedAsyncWriteStop
+- [3398](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3398-pipesharedmemorycreated.md): Learn more about: 3398 - PipeSharedMemoryCreated
+- [3399](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3399-namedpipecreated.md): Learn more about: 3399 - NamedPipeCreated
+- [3401](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3401-signatureverificationstart.md): Learn more about: 3401 - SignatureVerificationStart
+- [3402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3402-signatureverificationsuccess.md): Learn more about: 3402 - SignatureVerificationSuccess
+- [3403](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3403-wrappedkeydecryptionstart.md): Learn more about: 3403 - WrappedKeyDecryptionStart
+- [3404](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3404-wrappedkeydecryptionsuccess.md): Learn more about: 3404 - WrappedKeyDecryptionSuccess
+- [3405](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3405-encrypteddataprocessingstart.md): Learn more about: 3405 - EncryptedDataProcessingStart
+- [3406](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3406-encrypteddataprocessingsuccess.md): Learn more about: 3406 - EncryptedDataProcessingSuccess
+- [3407](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3407-httppipelineprocessinboundrequeststart.md): Learn more about: 3407 - HttpPipelineProcessInboundRequestStart
+- [3408](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3408-httppipelinebeginprocessinboundrequeststart.md): Learn more about: 3408 - HttpPipelineBeginProcessInboundRequestStart
+- [3409](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3409-httppipelineprocessinboundrequeststop.md): Learn more about: 3409 - HttpPipelineProcessInboundRequestStop
+- [3410](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3410-httppipelinefaulted.md): Learn more about: 3410 - HttpPipelineFaulted
+- [3411](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3411-httppipelinetimeoutexception.md): Learn more about: 3411 - HttpPipelineTimeoutException
+- [3412](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3412-httppipelineprocessresponsestart.md): Learn more about: 3412 - HttpPipelineProcessResponseStart
+- [3413](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3413-httppipelinebeginprocessresponsestart.md): Learn more about: 3413 - HttpPipelineBeginProcessResponseStart
+- [3414](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3414-httppipelineprocessresponsestop.md): Learn more about: 3414 - HttpPipelineProcessResponseStop
+- [3415](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3415-websocketconnectionrequestsendstart.md): Learn more about: 3415 - WebSocketConnectionRequestSendStart
+- [3416](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3416-websocketconnectionrequestsendstop.md): Learn more about: 3416 - WebSocketConnectionRequestSendStop
+- [3417](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3417-websocketconnectionacceptstart.md): Learn more about: 3417 - WebSocketConnectionAcceptStart
+- [3418](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3418-websocketconnectionaccepted.md): Learn more about: 3418 - WebSocketConnectionAccepted
+- [3419](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3419-websocketconnectiondeclined.md): Learn more about: 3419 - WebSocketConnectionDeclined
+- [3420](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3420-websocketconnectionfailed.md): Learn more about: 3420 - WebSocketConnectionFailed
+- [3421](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3421-websocketconnectionaborted.md): Learn more about: 3421 - WebSocketConnectionAborted
+- [3422](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3422-websocketasyncwritestart.md): Learn more about: 3422 - WebSocketAsyncWriteStart
+- [3423](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3423-websocketasyncwritestop.md): Learn more about: 3423 - WebSocketAsyncWriteStop
+- [3424](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3424-websocketasyncreadstart.md): Learn more about: 3424 - WebSocketAsyncReadStart
+- [3425](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3425-websocketasyncreadstop.md): Learn more about: 3425 - WebSocketAsyncReadStop
+- [3426](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3426-websocketclosesent.md): Learn more about: 3426 - WebSocketCloseSent
+- [3427](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3427-websocketcloseoutputsent.md): Learn more about: 3427 - WebSocketCloseOutputSent
+- [3428](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3428-websocketconnectionclosed.md): Learn more about: 3428 - WebSocketConnectionClosed
+- [3429](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3429-websocketclosestatusreceived.md): Learn more about: 3429 - WebSocketCloseStatusReceived
+- [3430](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3430-websocketuseversionfromclientwebsocketfactory.md): Learn more about: 3430 - WebSocketUseVersionFromClientWebSocketFactory
+- [3431](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3431-websocketcreateclientwebsocketwithfactory.md): Learn more about: 3431 - WebSocketCreateClientWebSocketWithFactory
+- [3553](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3553-xamlservicesloadstart.md): Learn more about: 3553 - XamlServicesLoadStart
+- [3554](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3554-xamlservicesloadstop.md): Learn more about: 3554 - XamlServicesLoadStop
+- [3555](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3555-createworkflowservicehoststart.md): Learn more about: 3555 - CreateWorkflowServiceHostStart
+- [3556](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3556-createworkflowservicehoststop.md): Learn more about: 3556 - CreateWorkflowServiceHostStop
+- [3558](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3558-serviceactivationstart.md): Learn more about: 3558 - ServiceActivationStart
+- [3559](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3559-serviceactivationstop.md): Learn more about: 3559 - ServiceActivationStop
+- [3560](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3560-serviceactivationavailablememory.md): Learn more about: 3560 - ServiceActivationAvailableMemory
+- [3800](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3800-routingserviceclosingclient.md): Learn more about: 3800 - RoutingServiceClosingClient
+- [3801](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3801-routingservicechannelfaulted.md): Learn more about: 3801 - RoutingServiceChannelFaulted
+- [3802](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3802-routingservicecompletingoneway.md): Learn more about: 3802 - RoutingServiceCompletingOneWay
+- [3803](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3803-routingserviceprocessingfailure.md): Learn more about: 3803 - RoutingServiceProcessingFailure
+- [3804](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3804-routingservicecreatingclientforendpoint.md): Learn more about: 3804 - RoutingServiceCreatingClientForEndpoint
+- [3805](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3805-routingservicedisplayconfig.md): Learn more about: 3805 - RoutingServiceDisplayConfig
+- [3807](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3807-routingservicecompletingtwoway.md): Learn more about: 3807 - RoutingServiceCompletingTwoWay
+- [3809](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3809-routingservicemessageroutedtoendpoints.md): Learn more about: 3809 - RoutingServiceMessageRoutedToEndpoints
+- [3810](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3810-routingserviceconfigurationapplied.md): Learn more about: 3810 - RoutingServiceConfigurationApplied
+- [3815](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3815-routingserviceprocessingmessage.md): Learn more about: 3815 - RoutingServiceProcessingMessage
+- [3816](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3816-routingservicetransmittingmessage.md): Learn more about: 3816 - RoutingServiceTransmittingMessage
+- [3817](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3817-routingservicecommittingtransaction.md): Learn more about: 3817 - RoutingServiceCommittingTransaction
+- [3818](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3818-routingserviceduplexcallbackexception.md): Learn more about: 3818 - RoutingServiceDuplexCallbackException
+- [3819](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3819-routingservicemovedtobackup.md): Learn more about: 3819 - RoutingServiceMovedToBackup
+- [3820](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3820-routingservicecreatingtransaction.md): Learn more about: 3820 - RoutingServiceCreatingTransaction
+- [3821](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3821-routingserviceclosefailed.md): Learn more about: 3821 - RoutingServiceCloseFailed
+- [3822](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3822-routingservicesendingresponse.md): Learn more about: 3822 - RoutingServiceSendingResponse
+- [3823](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3823-routingservicesendingfaultresponse.md): Learn more about: 3823 - RoutingServiceSendingFaultResponse
+- [3824](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3824-routingservicecompletingreceivecontext.md): Learn more about: 3824 - RoutingServiceCompletingReceiveContext
+- [3825](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3825-routingserviceabandoningreceivecontext.md): Learn more about: 3825 - RoutingServiceAbandoningReceiveContext
+- [3826](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3826-routingserviceusingexistingtransaction.md): Learn more about: 3826 - RoutingServiceUsingExistingTransaction
+- [3827](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3827-routingservicetransmitfailed.md): Learn more about: 3827 - RoutingServiceTransmitFailed
+- [3828](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3828-routingservicefiltertablematchstart.md): Learn more about: 3828 - RoutingServiceFilterTableMatchStart
+- [3829](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3829-routingservicefiltertablematchstop.md): Learn more about: 3829 - RoutingServiceFilterTableMatchStop
+- [3830](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3830-routingserviceabortingchannel.md): Learn more about: 3830 - RoutingServiceAbortingChannel
+- [3831](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3831-routingservicehandledexception.md): Learn more about: 3831 - RoutingServiceHandledException
+- [3832](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/3832-routingservicetransmitsucceeded.md): Learn more about: 3832 - RoutingServiceTransmitSucceeded
+- [4001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4001-transportlistenersessionsreceived.md): Learn more about: 4001 - TransportListenerSessionsReceived
+- [4002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4002-failfastexception.md): Learn more about: 4002 - FailFastException
+- [4003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4003-servicestartpipeerror.md): Learn more about: 4003 - ServiceStartPipeError
+- [4008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4008-dispatchsessionstart.md): Learn more about: 4008 - DispatchSessionStart
 - [401- StopSignPostEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/401-stopsignpostevent.md): Learn more about: 401- StopSignPostEvent
-- [402 - StartSignpostEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/402-startsignpostevent.md): Learn more about: 402 - StartSignpostEvent
-- [403 - SuspendSignpostEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/403-suspendsignpostevent.md): Learn more about: 403 - SuspendSignpostEvent
-- [404 - ResumeSignpostEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/404-resumesignpostevent.md): Learn more about: 404 - ResumeSignpostEvent
-- [451 - MessageLogInfo](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/451-messageloginfo.md): Learn more about: 451 - MessageLogInfo
-- [452 - MessageLogWarning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/452-messagelogwarning.md): Learn more about: 452 - MessageLogWarning
+- [4010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4010-pendingsessionqueuefull.md): Learn more about: 4010 - PendingSessionQueueFull
+- [4011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4011-messagequeueregisterstart.md): Learn more about: 4011 - MessageQueueRegisterStart
+- [4012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4012-messagequeueregisterabort.md): Learn more about: 4012 - MessageQueueRegisterAbort
+- [4013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4013-messagequeueunregistersucceeded.md): Learn more about: 4013 - MessageQueueUnregisterSucceeded
+- [4014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4014-messagequeueregisterfailed.md): Learn more about: 4014 - MessageQueueRegisterFailed
+- [4015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4015-messagequeueregistercompleted.md): Learn more about: 4015 - MessageQueueRegisterCompleted
+- [4016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4016-messagequeueduplicatedsocketerror.md): Learn more about: 4016 - MessageQueueDuplicatedSocketError
+- [4019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4019-messagequeueduplicatedsocketcomplete.md): Learn more about: 4019 - MessageQueueDuplicatedSocketComplete
+- [402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/402-startsignpostevent.md): Learn more about: 402 - StartSignpostEvent
+- [4020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4020-tcptransportlistenerlisteningstart.md): Learn more about: 4020 - TcpTransportListenerListeningStart
+- [4021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4021-tcptransportlistenerlisteningstop.md): Learn more about: 4021 - TcpTransportListenerListeningStop
+- [4022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4022-webhostunregisterprotocolfailed.md): Learn more about: 4022 - WebhostUnregisterProtocolFailed
+- [4023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4023-wasclosealllistenerchannelinstancescompleted.md): Learn more about: 4023 - WasCloseAllListenerChannelInstancesCompleted
+- [4024](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4024-wasclosealllistenerchannelinstancesfailed.md): Learn more about: 4024 - WasCloseAllListenerChannelInstancesFailed
+- [4025](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4025-openlistenerchannelinstancefailed.md): Learn more about: 4025 - OpenListenerChannelInstanceFailed
+- [4026](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4026-wasconnected.md): Learn more about: 4026 - WasConnected
+- [4027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4027-wasdisconnected.md): Learn more about: 4027 - WasDisconnected
+- [4028](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4028-pipetransportlistenerlisteningstart.md): Learn more about: 4028 - PipeTransportListenerListeningStart
+- [4029](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4029-pipetransportlistenerlisteningstop.md): Learn more about: 4029 - PipeTransportListenerListeningStop
+- [403](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/403-suspendsignpostevent.md): Learn more about: 403 - SuspendSignpostEvent
+- [4030](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4030-dispatchsessionsuccess.md): Learn more about: 4030 - DispatchSessionSuccess
+- [4031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4031-dispatchsessionfailed.md): Learn more about: 4031 - DispatchSessionFailed
+- [4032](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4032-wasconnectiontimedout.md): Learn more about: 4032 - WasConnectionTimedout
+- [4033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4033-routingtablelookupstart.md): Learn more about: 4033 - RoutingTableLookupStart
+- [4034](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4034-routingtablelookupstop.md): Learn more about: 4034 - RoutingTableLookupStop
+- [4035](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4035-pendingsessionqueueratio.md): Learn more about: 4035 - PendingSessionQueueRatio
+- [404](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/404-resumesignpostevent.md): Learn more about: 404 - ResumeSignpostEvent
+- [451](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/451-messageloginfo.md): Learn more about: 451 - MessageLogInfo
+- [452](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/452-messagelogwarning.md): Learn more about: 452 - MessageLogWarning
+- [4600](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4600-messagelogeventsizeexceeded.md): Learn more about: 4600 - MessageLogEventSizeExceeded
+- [4801](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4801-discoveryclientinclientchannelfailedtoclose.md): Learn more about: 4801 - DiscoveryClientInClientChannelFailedToClose
+- [4802](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4802-discoveryclientprotocolexceptionsuppressed.md): Learn more about: 4802 - DiscoveryClientProtocolExceptionSuppressed
+- [4803](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4803-discoveryclientreceivedmulticastsuppression.md): Learn more about: 4803 - DiscoveryClientReceivedMulticastSuppression
+- [4804](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4804-discoverymessagereceivedafteroperationcompleted.md): Learn more about: 4804 - DiscoveryMessageReceivedAfterOperationCompleted
+- [4805](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4805-discoverymessagewithinvalidcontent.md): Learn more about: 4805 - DiscoveryMessageWithInvalidContent
+- [4806](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4806-discoverymessagewithinvalidrelatestooroperationcompleted.md): Learn more about: 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
+- [4807](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4807-discoverymessagewithinvalidreplyto.md): Learn more about: 4807 - DiscoveryMessageWithInvalidReplyTo
+- [4808](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4808-discoverymessagewithnocontent.md): Learn more about: 4808 - DiscoveryMessageWithNoContent
+- [4809](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4809-discoverymessagewithnullmessageid.md): Learn more about: 4809 - DiscoveryMessageWithNullMessageId
+- [4810](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4810-discoverymessagewithnullmessagesequence.md): Learn more about: 4810 - DiscoveryMessageWithNullMessageSequence
+- [4811](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4811-discoverymessagewithnullrelatesto.md): Learn more about: 4811 - DiscoveryMessageWithNullRelatesTo
+- [4812](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4812-discoverymessagewithnullreplyto.md): Learn more about: 4812 - DiscoveryMessageWithNullReplyTo
+- [4813](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4813-duplicatediscoverymessage.md): Learn more about: 4813 - DuplicateDiscoveryMessage
+- [4814](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4814-endpointdiscoverabilitydisabled.md): Learn more about: 4814 - EndpointDiscoverabilityDisabled
+- [4815](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4815-endpointdiscoverabilityenabled.md): Learn more about: 4815 - EndpointDiscoverabilityEnabled
+- [4816](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4816-findinitiatedindiscoveryclientchannel.md): Learn more about: 4816 - FindInitiatedInDiscoveryClientChannel
+- [4817](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4817-innerchannelcreationfailed.md): Learn more about: 4817 - InnerChannelCreationFailed
+- [4818](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4818-innerchannelopenfailed.md): Learn more about: 4818 - InnerChannelOpenFailed
+- [4819](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4819-innerchannelopensucceeded.md): Learn more about: 4819 - InnerChannelOpenSucceeded
+- [4820](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4820-synchronizationcontextreset.md): Learn more about: 4820 - SynchronizationContextReset
+- [4821](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/4821-synchronizationcontextsettonull.md): Learn more about: 4821 - SynchronizationContextSetToNull
+- [499](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/499-transferemitted.md): Learn more about: 499 - TransferEmitted
+- [5001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5001-dcserializewithsurrogatestart.md): Learn more about: 5001 - DCSerializeWithSurrogateStart
+- [5002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5002-dcserializewithsurrogatestop.md): Learn more about: 5002 - DCSerializeWithSurrogateStop
+- [5003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5003-dcdeserializewithsurrogatestart.md): Learn more about: 5003 - DCDeserializeWithSurrogateStart
+- [5004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5004-dcdeserializewithsurrogatestop.md): Learn more about: 5004 - DCDeserializeWithSurrogateStop
+- [5005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5005-importknowntypesstart.md): Learn more about: 5005 - ImportKnownTypesStart
+- [5006](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5006-importknowntypesstop.md): Learn more about: 5006 - ImportKnownTypesStop
+- [5007](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5007-dcresolverresolve.md): Learn more about: 5007 - DCResolverResolve
+- [5008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5008-dcgenwriterstart.md): Learn more about: 5008 - DCGenWriterStart
+- [5009](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5009-dcgenwriterstop.md): Learn more about: 5009 - DCGenWriterStop
+- [501](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/501-compilationstart.md): Learn more about: 501 - CompilationStart
+- [5010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5010-dcgenreaderstart.md): Learn more about: 5010 - DCGenReaderStart
+- [5011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5011-dcgenreaderstop.md): Learn more about: 5011 - DCGenReaderStop
+- [5012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5012-dcjsongenreaderstart.md): Learn more about: 5012 - DCJsonGenReaderStart
+- [5013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5013-dcjsongenreaderstop.md): Learn more about: 5013 - DCJsonGenReaderStop
+- [5014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5014-dcjsongenwriterstart.md): Learn more about: 5014 - DCJsonGenWriterStart
+- [5015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5015-dcjsongenwriterstop.md): Learn more about: 5015 - DCJsonGenWriterStop
+- [5016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5016-genxmlserializablestart.md): Learn more about: 5016 - GenXmlSerializableStart
+- [5017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5017-genxmlserializablestop.md): Learn more about: 5017 - GenXmlSerializableStop
+- [502](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/502-compilationstop.md): Learn more about: 502 - CompilationStop
+- [503](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/503-servicehostfactorycreationstart.md): Learn more about: 503 - ServiceHostFactoryCreationStart
+- [504](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/504-servicehostfactorycreationstop.md): Learn more about: 504 - ServiceHostFactoryCreationStop
+- [505](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/505-createservicehoststart.md): Learn more about: 505 - CreateServiceHostStart
+- [506](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/506-createservicehoststop.md): Learn more about: 506 - CreateServiceHostStop
+- [507](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/507-hostedtransportconfigurationmanagerconfiginitstart.md): Learn more about: 507 - HostedTransportConfigurationManagerConfigInitStart
+- [508](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/508-hostedtransportconfigurationmanagerconfiginitstop.md): Learn more about: 508 - HostedTransportConfigurationManagerConfigInitStop
+- [509](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/509-servicehostopenstart.md): Learn more about: 509 - ServiceHostOpenStart
+- [510](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/510-servicehostopenstop.md): Learn more about: 510 - ServiceHostOpenStop
+- [513](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/513-webhostrequeststart.md): Learn more about: 513 - WebHostRequestStart
+- [514](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/514-webhostrequeststop.md): Learn more about: 514 - WebHostRequestStop
+- [5203](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5203-jsonmessagedecodingstart.md): Learn more about: 5203 - JsonMessageDecodingStart
+- [5204](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5204-jsonmessageencodingstart.md): Learn more about: 5204 - JsonMessageEncodingStart
+- [5402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5402-tokenvalidationstarted.md): Learn more about: 5402 - TokenValidationStarted
+- [5403](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5403-tokenvalidationsuccess.md): Learn more about: 5403 - TokenValidationSuccess
+- [5404](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5404-tokenvalidationfailure.md): Learn more about: 5404 - TokenValidationFailure
+- [5405](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5405-getissuernamesuccess.md): Learn more about: 5405 - GetIssuerNameSuccess
+- [5406](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5406-getissuernamefailure.md): Learn more about: 5406 - GetIssuerNameFailure
+- [5600](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5600-federationmessageprocessingstarted.md): Learn more about: 5600 - FederationMessageProcessingStarted
+- [5601](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5601-federationmessageprocessingsuccess.md): Learn more about: 5601 - FederationMessageProcessingSuccess
+- [5602](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5602-federationmessagecreationstarted.md): Learn more about: 5602 - FederationMessageCreationStarted
+- [5603](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5603-federationmessagecreationsuccess.md): Learn more about: 5603 - FederationMessageCreationSuccess
+- [5604](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5604-sessioncookiereadingstarted.md): Learn more about: 5604 - SessionCookieReadingStarted
+- [5605](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5605-sessioncookiereadingsuccess.md): Learn more about: 5605 - SessionCookieReadingSuccess
+- [5606](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5606-principalsettingfromsessiontokenstarted.md): Learn more about: 5606 - PrincipalSettingFromSessionTokenStarted
+- [5607](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/5607-principalsettingfromsessiontokensuccess.md): Learn more about: 5607 - PrincipalSettingFromSessionTokenSuccess
+- [57393](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57393-appdomainunload.md): Learn more about: 57393 - AppDomainUnload
+- [57394](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57394-handledexception.md): Learn more about: 57394 - HandledException
+- [57395](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57395-shipassertexceptionmessage.md): Learn more about: 57395 - ShipAssertExceptionMessage
+- [57396](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57396-throwingexception.md): Learn more about: 57396 - ThrowingException
+- [57397](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57397-unhandledexception.md): Learn more about: 57397 - UnhandledException
+- [57399](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57399-tracecodeeventlogcritical.md): Learn more about: 57399 - TraceCodeEventLogCritical
+- [57400](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57400-tracecodeeventlogerror.md): Learn more about: 57400 - TraceCodeEventLogError
+- [57401](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57401-tracecodeeventloginfo.md): Learn more about: 57401 - TraceCodeEventLogInfo
+- [57402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57402-tracecodeeventlogverbose.md): Learn more about: 57402 - TraceCodeEventLogVerbose
+- [57403](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57403-tracecodeeventlogwarning.md): Learn more about: 57403 - TraceCodeEventLogWarning
+- [57404](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/57404-handledexceptionwarning.md): Learn more about: 57404 - HandledExceptionWarning
+- [601](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/601-cbaentryread.md): Learn more about: 601 - CBAEntryRead
+- [602](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/602-cbamatchfound.md): Learn more about: 602 - CBAMatchFound
+- [603](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/603-aspnetroutingservice.md): Learn more about: 603 - AspNetRoutingService
+- [604](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/604-aspnetroute.md): Learn more about: 604 - AspNetRoute
+- [605](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/605-incrementbusycount.md): Learn more about: 605 - IncrementBusyCount
+- [606](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/606-decrementbusycount.md): Learn more about: 606 - DecrementBusyCount
+- [62326](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/62326-httphandlerpickedforurl.md): Learn more about: 62326 - HttpHandlerPickedForUrl
+- [701](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/701-servicechannelopenstart.md): Learn more about: 701 - ServiceChannelOpenStart
+- [702](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/702-servicechannelopenstop.md): Learn more about: 702 - ServiceChannelOpenStop
+- [703](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/703-servicechannelcallstart.md): Learn more about: 703 - ServiceChannelCallStart
+- [704](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/704-servicechannelbegincallstart.md): Learn more about: 704 - ServiceChannelBeginCallStart
+- [706](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/706-httpsendmessagestart.md): Learn more about: 706 - HttpSendMessageStart
+- [707](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/707-httpsendstop.md): Learn more about: 707 - HttpSendStop
+- [708](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/708-httpmessagereceivestart.md): Learn more about: 708 - HttpMessageReceiveStart
+- [709](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/709-dispatchmessagestart.md): Learn more about: 709 - DispatchMessageStart
+- [710](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/710-httpcontextbeforeprocessauthentication.md): Learn more about: 710 - HttpContextBeforeProcessAuthentication
+- [711](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/711-dispatchmessagebeforeauthorization.md): Learn more about: 711 - DispatchMessageBeforeAuthorization
+- [712](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/712-dispatchmessagestop.md): Learn more about: 712 - DispatchMessageStop
+- [715](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/715-clientchannelopenstart.md): Learn more about: 715 - ClientChannelOpenStart
+- [716](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/716-clientchannelopenstop.md): Learn more about: 716 - ClientChannelOpenStop
+- [717](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/717-httpsendstreamedmessagestart.md): Learn more about: 717 - HttpSendStreamedMessageStart
+- [Analytic Trace Event Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/analytic-trace-event-reference.md): Learn more about: Analytic Trace Event Reference
+- [Analytic Tracing Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/analytic-tracing-overview.md): Learn more about: Analytic tracing overview
+- [Configuring Message Flow Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/configuring-message-flow-tracing.md): Learn more about: Configuring Message Flow Tracing
+- [Determining service operation duration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/determining-service-operation-duration.md): Learn more about: Determining service operation duration
+- [Dynamically Enabling Analytic Tracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md): Learn more about: Dynamically Enabling Analytic Tracing
+- [Analytic Tracing with ETW](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/etw/index.md): Learn more about: Analytic Tracing with ETW

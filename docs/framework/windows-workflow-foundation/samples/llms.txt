@@ -1,49 +1,48 @@
-# Samples Docs
+# Windows Workflow Foundation (WF) sample documentation
 
-- [Windows Workflow Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/index.md): Learn about the samples that demonstrate various aspects of Windows Workflow Foundation, including application, basic, and scenario samples.
-
-## Activity Library
-
+- [Accessing OperationContext](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/accessing-operationcontext.md): Learn more about: Accessing OperationContext
 - [Activity Library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/activity-library.md): Learn more about: Activity Library
-- [SendMail Custom Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/sendmail-custom-activity.md): Learn more about: SendMail Custom Activity
-- [Throttled Parallel ForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/throttled-parallel-foreach.md): Learn more about: Throttled Parallel ForEach
-- [Database Access Activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/database-access-activities.md): Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information.
-- [Externalized Policy Activity in .NET Framework 4.5](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/externalized-policy-activity-in-net-framework-4-5.md): Learn more about: Externalized Policy Activity in .NET Framework 4.5
-- [Non-Generic ForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/non-generic-foreach.md): Learn more about: Non-Generic ForEach
-- [Non-Generic ParallelForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md): Learn more about: Non-generic ParallelForEach
-- [Get WorkflowInstanceId](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/get-workflowinstanceid.md): Learn more about: Get WorkflowInstanceId
-
-## Application
-
 - [Application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/application.md): This article refers to samples with detailed procedures for workflow applications in Windows Workflow Foundation.
-- [Document Approval Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/document-approval-process.md): This sample demonstrates many Windows Workflow Foundation and Windows Communication Foundation features in a document-approval process scenario.
-- [Corporate Purchase Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/corporate-purchase-process.md): Learn more about: Corporate Purchase Process
-- [Hiring Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/hiring-process.md): Learn more about: Hiring Process
-- [Visual Workflow Tracking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/visual-workflow-tracking.md): Learn more about: Visual Workflow Tracking
-- [Suspended Instance Management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md): Learn more about: Suspended Instance Management
-
-## Basic
-
-- [Basic](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/basic.md): This article refers to samples that demonstrate basic Windows Workflow Foundation functionality, such as built-in and custom activities.
-- [Designer Rehosting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/designer-rehosting.md): Learn more about: Designer Rehosting
-
-## Built-in Activities
-
+- [Asynchronous Communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/asynchronous-communication.md): Learn more about: Asynchronous Communication
+- [Basic WF samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/basic.md): This article refers to samples that demonstrate basic Windows Workflow Foundation functionality, such as built-in and custom activities.
+- [Bookmark Resolver for WorkflowHostingEndpoint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/bookmark-resolver-for-workflowhostingendpoint.md): Learn more about: Bookmark Resolver for WorkflowHostingEndpoint
 - [Built-in Activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/built-in-activities.md): Learn more about: Built-in Activities
-- [Fault Handling in a Flowchart Activity Using TryCatch](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md): Learn more about: Fault Handling in a Flowchart Activity Using TryCatch
-- [Load From XAML](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/load-from-xaml.md): Learn more about: Load From XAML
-- [Use the Pick Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md): Learn more about: Using the Pick Activity
-
-## Code-Bodied
-
 - [Code-Bodied](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/code-bodied.md): Learn more about: Code-Bodied
-- [Custom Composite using Native Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md): Learn more about: Custom Composite using Native Activity
-
-## Custom Activities
-
+- [Corporate Purchase Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/corporate-purchase-process.md): Learn more about: Corporate Purchase Process
+- [Creating and Running a Workflow Instance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/creating-and-running-a-workflow-instance.md): Learn more about: Creating and Running a Workflow Instance
 - [Custom Activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-activities.md): Learn more about: Custom Activities
-
-## Custom Activity Designers
-
 - [Custom Activity Designers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-activity-designers.md): Learn more about: Custom Activity Designers
-- [Custom Composite Designers - Workflow Item Presenter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md): Learn more about: Custom Composite Designers - Workflow Item Presenter
+- [Custom Composite Designers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md): Learn more about: Custom Composite Designers - Workflow Item Presenter
+- [Custom Composite Designers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter.md): Learn more about: Custom Composite Designers - Workflow Items Presenter
+- [Custom Composite using Native Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md): Learn more about: Custom Composite using Native Activity
+- [Custom Tracking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/custom-tracking.md): Learn more about: Custom Tracking
+- [Database Access Activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/database-access-activities.md): Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information.
+- [Designer ReHosting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/designer-rehosting.md): Learn more about: Designer Rehosting
+- [Designer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/designer.md): Learn more about: Designer
+- [Document Approval Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/document-approval-process.md): This sample demonstrates many Windows Workflow Foundation and Windows Communication Foundation features in a document-approval process scenario.
+- [Execution](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/execution.md): Learn more about: Execution
+- [External Ruleset Toolkit](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/external-ruleset-toolkit.md): Learn more about: External Ruleset Toolkit
+- [Externalized Policy Activity in .NET Framework 4.5](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/externalized-policy-activity-in-net-framework-4-5.md): Learn more about: Externalized Policy Activity in .NET Framework 4.5
+- [Fault Handling in a Flowchart Activity Using TryCatch](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md): Learn more about: Fault Handling in a Flowchart Activity Using TryCatch
+- [Get WorkflowInstanceId sample](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/get-workflowinstanceid.md): Learn more about: Get WorkflowInstanceId
+- [Hiring Process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/hiring-process.md): Learn more about: Hiring Process
+- [Windows Workflow Foundation (WF) sample documentation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/index.md): Learn about the samples that demonstrate various aspects of Windows Workflow Foundation, including application, basic, and scenario samples.
+- [LINQ Message Query Correlation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/linq-message-query-correlation.md): Learn more about: LINQ Message Query Correlation
+- [Load From XAML](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/load-from-xaml.md): Learn more about: Load From XAML
+- [Non-Generic ForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/non-generic-foreach.md): Learn more about: Non-Generic ForEach
+- [Non-generic ParallelForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md): Learn more about: Non-generic ParallelForEach
+- [Programming Model Item Tree](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/programming-model-item-tree.md): Learn more about: Programming Model Item Tree
+- [Property grid extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/property-grid-extensibility.md): Learn more about: Property grid extensibility
+- [Removing the view state the designer adds to an XAML file](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/removing-the-view-state-the-designer-adds-to-an-xaml-file.md): Learn more about: Removing the view state the designer adds to an XAML file
+- [Windows Workflow scenarios](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/scenario.md): View samples of Windows Workflow Foundation scenarios, such as scenarios using the built-in activity library and scenarios using workflow services activities.
+- [SendMail Custom Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/sendmail-custom-activity.md): Learn more about: SendMail Custom Activity
+- [SQL Tracking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/sql-tracking.md): Learn more about: SQL tracking
+- [Suspended Instance Management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md): Learn more about: Suspended Instance Management
+- [Throttled Parallel ForEach](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/throttled-parallel-foreach.md): Learn more about: Throttled Parallel ForEach
+- [Tracking Events into Event Tracing in Windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md): Learn more about: Tracking Events into Event Tracing in Windows
+- [Tracking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/tracking.md): Learn more about: Tracking
+- [Using Editing Scope](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/using-editing-scope.md): Learn more about: Using Editing Scope
+- [Using the ExpressionTextBox in a Custom Activity Designer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md): Learn more about: Using the ExpressionTextBox in a Custom Activity Designer
+- [Using the Pick Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md): Learn more about: Using the Pick Activity
+- [Visual Workflow Tracking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/visual-workflow-tracking.md): Learn more about: Visual Workflow Tracking
+- [WPF and WF Integration in XAML](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/wpf-and-wf-integration-in-xaml.md): Learn more about: WPF and Windows Workflow Foundation integration in XAML

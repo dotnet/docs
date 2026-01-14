@@ -1,17 +1,17 @@
-# Fundamentals Docs
+# .NET Fundamentals
 
-## Overview
+> Cross-cutting .NET fundamentals including code analysis, networking, reflection, and runtime libraries. Covers Roslyn analyzers, HttpClient, sockets, and core runtime APIs shared across all .NET applications.
 
-- [.NET languages](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/languages.md): Each .NET language is unique. C# is the most widely used language and the language most of .NET is written in. F# explores new language possibilities and the community provides a rich experience across platforms. We remain committed to Visual Basic and continue to invest in maintaining C# interop and Visual Studio features for folks that love Visual Basic or want a stable language.
 - [.NET implementations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/implementations.md): Describes the various .NET implementations, including .NET 5+, .NET Framework, and Mono.
-- [Ecma standards](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/standards.md): Learn about standards used in .NET, including for C# and the common language infrastructure.
+- [.NET Managed languages strategy](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/languages.md): Each .NET language is unique. C# is the most widely used language and the language most of .NET is written in. F# explores new language possibilities and the community provides a rich experience across platforms. We remain committed to Visual Basic and continue to invest in maintaining C# interop and Visual Studio features for folks that love Visual Basic or want a stable language.
+- [Ecma standards for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/standards.md): Learn about standards used in .NET, including for C# and the common language infrastructure.
 
-## Children
+## Topic Indices
 
-- [Apicompat](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/llms.txt)
-- [Code Analysis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/llms.txt)
-- [Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/diagnostics/llms.txt)
-- [Networking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/llms.txt)
-- [Reflection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/reflection/llms.txt)
-- [Runtime Libraries](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/runtime-libraries/llms.txt)
-- [Syslib Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/syslib-diagnostics/llms.txt)
+- [Apicompat](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/apicompat/llms.txt): 4 topics
+- [Code Analysis](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/llms.txt): 8 topics, 463 in tree
+- [Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/diagnostics/llms.txt): 11 topics
+- [Networking](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/networking/llms.txt): 4 topics, 19 in tree
+- [Reflection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/reflection/llms.txt): 14 topics
+- [Runtime Libraries](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/runtime-libraries/llms.txt): 164 topics
+- [Syslib Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/syslib-diagnostics/llms.txt): 112 topics

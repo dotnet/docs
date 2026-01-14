@@ -1,7 +1,11 @@
 {
   "$schema": "https://example.com/llms-customization.schema.json",
+  "title": "Serialization",
   "description": "Converting object state to portable formats like JSON and XML for storage or transport; deserialization reverses the process. .NET offers `System.Text.Json` for JSON, `System.Xml.Serialization` for XML/SOAP, and legacy binary serialization. Prefer `System.Text.Json` for new development; binary serialization is obsolete with security concerns.",
   "shortDescription": "Convert objects to JSON, XML, or binary formats for storage and transport.",
+  "sections": [
+    { "path": "system-text-json", "priority": 100 }
+  ],
   "offers": [
     "system-text-json",
     "binaryformatter-migration-guide",

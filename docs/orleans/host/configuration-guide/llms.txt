@@ -1,24 +1,19 @@
-# Configuration Guide Docs
+# Orleans configuration guide
 
-## Configuration guide
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/index.md): Explore a guide on how to configure .NET Orleans.
-- [Local development configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/local-development-configuration.md): Learn how to configure .NET Orleans for local development.
-- [Client configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/client-configuration.md): Learn about client configurations in .NET Orleans.
-- [Server configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/server-configuration.md): Learn how to configure .NET Orleans server settings.
-- [Typical configurations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/typical-configurations.md): Learn about typical configurations in .NET Orleans.
-- [Options classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/list-of-options-classes.md): Explore a listing of options classes in .NET Orleans.
-- [Silo metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/silo-metadata.md): Learn about silo metadata in .NET Orleans.
 - [Activation collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/activation-collection.md): Learn about activation collection in .NET Orleans.
-- [Configure .NET garbage collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/configuring-garbage-collection.md): Learn how to configure .NET garbage collection in .NET Orleans.
-- [Configure ADO.NET providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/configuring-ado-dot-net-providers.md): Learn how to configure ADO.NET providers in .NET Orleans.
 - [ADO.NET database configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/adonet-configuration.md): Learn about ADO.NET database configurations in .NET Orleans.
-- [Startup tasks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/startup-tasks.md): Learn how to configure and manage background services and startup tasks in .NET Orleans.
-- [Orleans graceful shut down](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/shutting-down-orleans.md): Learn how to shut down .NET Orleans silos.
-
-## Serialization
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization.md): Learn about serialization and custom serializers in .NET Orleans.
-- [Serialization of immutable types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-immutability.md): Learn how .NET Orleans handles type immutability in the context of serialization.
-- [Configure serialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-configuration.md): Learn how to configure serialization in .NET Orleans.
-- [Customize serialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-customization.md): Learn how to customize serialization in .NET Orleans.
+- [Client configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/client-configuration.md): Learn about client configurations in .NET Orleans.
+- [Configure ADO.NET providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/configuring-ado-dot-net-providers.md): Learn how to configure ADO.NET providers in .NET Orleans.
+- [Configure .NET garbage collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/configuring-garbage-collection.md): Learn how to configure .NET garbage collection in .NET Orleans.
+- [Orleans configuration guide](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/index.md): Explore a guide on how to configure .NET Orleans.
+- [List of options classes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/list-of-options-classes.md): Explore a listing of options classes in .NET Orleans.
+- [Local development configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/local-development-configuration.md): Learn how to configure .NET Orleans for local development.
+- [Serialization configuration in Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-configuration.md): Learn how to configure serialization in .NET Orleans.
+- [Serialization customization in Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-customization.md): Learn how to customize serialization in .NET Orleans.
+- [Serialization of immutable types in Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization-immutability.md): Learn how .NET Orleans handles type immutability in the context of serialization.
+- [Serialization in Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/serialization.md): Learn about serialization and custom serializers in .NET Orleans.
+- [Server configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/server-configuration.md): Learn how to configure .NET Orleans server settings.
+- [Shut down Orleans silos](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/shutting-down-orleans.md): Learn how to shut down .NET Orleans silos.
+- [Silo metadata](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/silo-metadata.md): Learn about silo metadata in .NET Orleans.
+- [Background Services and Startup Tasks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/startup-tasks.md): Learn how to configure and manage background services and startup tasks in .NET Orleans.
+- [Typical configurations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/host/configuration-guide/typical-configurations.md): Learn about typical configurations in .NET Orleans.

@@ -1,48 +1,78 @@
-# Standard Docs
+# .NET Standard Library
 
-## About .NET
+> Core .NET libraries for common programming tasks including collections, I/O, serialization, threading, and more.
 
-- [Choose between .NET and .NET Framework for server apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/choosing-core-framework-server.md): A guide to help you decide which implementation of .NET to use when building a server app.
+## System.Text.Json
 
-## Base types overview
+High-performance JSON serialization and deserialization for .NET applications.
 
-- [Language independence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/language-independence.md): Learn how you can develop in one of many supported languages in .NET, such as C#, C++/CLI, F#, IronPython, VB, Visual COBOL, and PowerShell.
-- [Core .NET libraries overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/class-library-overview.md): Learn about the core .NET libraries. .NET APIs include classes, interfaces, delegates, and value types to provide access to system functionality.
+- [System.Text.Json Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/llms.txt): 31 topics
+- [Serialize and deserialize JSON using C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/overview.md): This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
+- [How to serialize JSON in C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/how-to.md): Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code.
+- [Migrate from Newtonsoft.Json to System.Text.Json](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/migrate-from-newtonsoft.md): Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json.
 
-## Delegates and lambdas
+## Collections
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/delegates-lambdas.md): Learn how delegates, which define a type that specifies a particular method signature, can be called directly or passed to another method and called.
+Storing, retrieving, and manipulating groups of related objects in lists, dictionaries, sets, queues, and stacks. Core namespaces include `System.Collections.Generic` for type-safe collections, `System.Collections.Concurrent` for thread-safe access, and `System.Collections.Immutable` for immutable data structures. Prefer generic collections over non-generic for type safety and performance.
 
-## Execution model
+- [Collections Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/llms.txt): 7 topics, 16 in tree
+- [Thread-Safe Collections](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/thread-safe/llms.txt): 9 topics; Concurrent collections like `ConcurrentDictionary` and `BlockingCollection` for multi-threaded access.
+- [Selecting a Collection Class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/selecting-a-collection-class.md): Learn how to decide which collection class in .NET to choose. Using the wrong type can restrict your use of the collection.
+- [Commonly Used Collection Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/commonly-used-collection-types.md): Learn about commonly used collection types in .NET, such as hash tables, queues, stacks, bags, dictionaries, and lists.
 
-- [Common Language Runtime (CLR)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/clr.md): Get started with common language runtime (CLR), .NET's runtime environment. The CLR runs code and provides services to make the development process easier.
-- [Managed execution process](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/managed-execution-process.md): Learn more about: Managed Execution Process
+## Linq
 
-## Fundamental coding components
+Querying and transforming data from collections, databases, XML, and other sources using a unified syntax. LINQ (Language-Integrated Query) provides query expressions and method syntax with operators like `Where`, `Select`, `GroupBy`, and `Join`. Available for objects (LINQ to Objects), XML (LINQ to XML), and databases (Entity Framework).
 
-- [Value tuples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/value-tuples.md): Learn about value tuple structures in .NET.
+- [Linq Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/linq/llms.txt): 151 topics
+- [LINQ overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/linq/index.md): Language-Integrated Query (LINQ) provides language-level querying capabilities, and a higher-order function API to C# and Visual Basic, that enable you to write expressive declarative code.
+- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/linq/linq-xml-overview.md): LINQ to XML provides an in-memory XML programming interface that' based on .NET capabilities, and comparable to an updated DOM API.
+- [Basic Queries (LINQ to XML)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/linq/basic-queries-linq-to-xml.md): View examples of basic queries for LINQ to XML, such as how to find an element with a specific attribute.
 
-## Generic types
+## File and Stream I/O
 
-- [Intro to generic types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/generics.md): Learn how generics act as code templates that allow you to define type-safe data structures without committing to an actual data type.
+File and stream I/O transfers data to and from storage, memory, network, or pipes. Core types include `File`, `FileInfo`, `Directory`, `DirectoryInfo`, `Path`, and the `Stream` class hierarchy. Streams provide a unified abstraction—`FileStream`, `MemoryStream`, `NetworkStream`—with sync and async support.
 
-## Get started
+- [File and Stream I/O Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/io/llms.txt): 33 topics
+- [System.IO.Pipelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/io/pipelines.md): Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
+- [Asynchronous File I/O](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/io/asynchronous-file-i-o.md): Read about asynchronous file I/O in .NET. Learn async methods to simplify asynchronous operations, such as ReadAsync, WriteAsync, and more.
+- [Memory-Mapped Files](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/io/memory-mapped-files.md): Explore memory-mapped files in .NET, which contain file contents in virtual memory, and allow applications to modify the file by writing directly to the memory.
 
-- [Get started tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/get-started.md): Choose a tutorial for learning .NET app development or one of the .NET programming languages.
+## Threading
 
-## Memory management
+Running code concurrently using threads, synchronization primitives, and the thread pool. Core types include `Thread`, `ThreadPool`, `Monitor`, `Mutex`, `Semaphore`, and `ManualResetEvent`. For most scenarios, prefer `Task`-based `async`/`await` over direct thread manipulation.
 
-- [What is "managed code"?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/managed-code.md): Learn how managed code is code whose execution is managed by a runtime, the Common Language Runtime (CLR).
-- [Automatic memory management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/automatic-memory-management.md): Learn more about: Automatic Memory Management
+- [Threading Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/llms.txt): 34 topics
+- [Managed Threading Best Practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-best-practices.md): Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
+- [Managed Threading Basics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-basics.md): See links to other managed threading articles, covering topics such as exceptions, synchronizing data, foreground & background threads, local storage, and more.
 
-## Metadata and self-describing components
+## Security
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/metadata-and-self-describing-components.md): Learn more about: Metadata and Self-Describing Components
+Protecting applications through authentication, authorization, cryptography, and secure coding practices. `System.Security.Cryptography` provides hashing (`SHA256`, `SHA512`), symmetric encryption (`AES`), asymmetric encryption (`RSA`), and digital signatures. Use role-based security for authorization and follow secure coding guidelines to prevent vulnerabilities.
 
-## MSBuild and project files
+- [Security Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/security/llms.txt): 35 topics
+- [.NET cryptography model](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/security/cryptography-model.md): Review implementations of usual cryptographic algorithms in .NET. Learn the cryptography model of object inheritance and one-shots.
+- [Secure coding guidelines for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/security/secure-coding-guidelines.md): Design code to work with .NET-enforced permissions and other enforcement to help prevent malicious code from accessing data or performing other actions.
 
-- [Target frameworks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/frameworks.md): Learn about target frameworks for .NET apps and libraries.
+## Topic Indices
 
-## Numeric types
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/numerics.md): Learn more about: Numerics in .NET
+- [.NET Standard Library Extended Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/llms-extended.txt): 20 additional topics
+- [Analyzers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/analyzers/llms.txt): 2 topics; Compile-time code analysis for compatibility and quality.
+- [Assembly](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/assembly/llms.txt): 33 topics; Package code into .dll/.exe units with versioning and strong naming.
+- [Asynchronous Programming Patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/asynchronous-programming-patterns/llms.txt): 22 topics; Non-blocking operations with `async`/`await` and Task-based patterns.
+- [Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/attributes/llms.txt): 4 topics; Declarative metadata annotations for classes, methods, and properties.
+- [Base Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/base-types/llms.txt): 59 topics; Strings, numbers, regular expressions, and formatting.
+- [Commandline](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/llms.txt): 10 topics; Build CLI apps with argument parsing and help generation.
+- [Datetime](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/datetime/llms.txt): 23 topics; Dates, times, time zones with `DateTime`, `DateTimeOffset`, and `TimeSpan`.
+- [Design Guidelines](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/design-guidelines/llms.txt): 49 topics; Naming conventions, type design, and API design best practices.
+- [Events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/llms.txt): 7 topics; Publisher-subscriber notifications with the `event` keyword.
+- [Exceptions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/exceptions/llms.txt): 11 topics; Handle errors with `try`/`catch`/`finally` and exception types.
+- [Garbage Collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/garbage-collection/llms.txt): 17 topics; Automatic memory management with generational garbage collection.
+- [Generics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/generics/llms.txt): 6 topics; Type-safe reusable code with `List<T>`, `Dictionary<TKey,TValue>`, and constraints.
+- [Library Guidance](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/library-guidance/llms.txt): 10 topics; Best practices for NuGet packages and library publishing.
+- [Memory And Spans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/memory-and-spans/llms.txt): 2 topics; Efficient memory access with `Span<T>` and `Memory<T>`.
+- [Native Interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/llms.txt): 25 topics; Call native C/C++ code with P/Invoke and COM interop.
+- [Parallel Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/parallel-programming/llms.txt): 62 topics; Distribute CPU-intensive work with `Parallel.For`, `Task`, and PLINQ.
+- [Serialization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/llms.txt): 27 topics, 70 in tree; Convert objects to JSON, XML, or binary formats for storage and transport.
+- [Unsafe Code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/unsafe-code/llms.txt): 1 topics; Pointers, `stackalloc`, and direct memory manipulation for performance.
+- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/whats-new/llms.txt): 1 topics; .NET Standard version history and cross-platform API specification.

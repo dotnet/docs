@@ -1,35 +1,27 @@
-# Grains Docs
+# Develop a grain
 
-## Advanced features
-
-- [External tasks and grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/external-tasks-and-grains.md): Learn about external tasks and grains in .NET Orleans.
-- [Interceptors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/interceptors.md): Learn about grain call filters in .NET Orleans.
-- [GrainServices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grainservices.md): Learn how to create a GrainService in .NET Orleans.
-- [Stateless worker grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/stateless-worker-grains.md): Learn how to use stateless worker grains in .NET Orleans.
-- [Transactions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/transactions.md): Learn how to use transactions in .NET Orleans.
-- [One-way requests](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/oneway.md): Learn about one-way requests in .NET Orleans.
-- [Grain lifecycle](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-lifecycle.md): Learn about grain lifecycles in .NET Orleans.
-
-## Grain placement
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-placement.md): Learn about grain placement in .NET Orleans.
-- [Grain placement filtering](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-placement-filtering.md): Learn about grain placement filtering in Microsoft Orleans.
-
-## Grains
-
-- [Develop grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/index.md): Learn how to develop a grain in .NET Orleans.
-- [Grain references](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-references.md): Learn about grain references in .NET Orleans.
-- [Grain identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-identity.md): Learn about grain identities in .NET Orleans.
-- [Grain extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-extensions.md): Learn how to extend an Orleans Grain.
-- [Timers and reminders](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/timers-and-reminders.md): Learn how to use timers and reminders in .NET Orleans.
-- [Observers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/observers.md): Learn about observers in .NET Orleans.
-- [Cancellation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/cancellation-tokens.md): Learn how to implement cooperative cancellation in Orleans grain methods.
-- [Request scheduling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/request-scheduling.md): Learn about request scheduling in .NET Orleans.
-- [Request context](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/request-context.md): Learn about request context in .NET Orleans.
+- [Use cancellation tokens in Orleans grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/cancellation-tokens.md): Learn how to implement cooperative cancellation in Orleans grain methods.
 - [Code generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/code-generation.md): Learn how to use code generation in .NET Orleans.
+- [External tasks and grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/external-tasks-and-grains.md): Learn about external tasks and grains in .NET Orleans.
+- [Grain extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-extensions.md): Learn how to extend an Orleans Grain.
+- [Grain identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-identity.md): Learn about grain identities in .NET Orleans.
+- [Grain lifecycle overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-lifecycle.md): Learn about grain lifecycles in .NET Orleans.
+- [Grain placement filtering](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-placement-filtering.md): Learn about grain placement filtering in Microsoft Orleans.
+- [Grain placement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-placement.md): Learn about grain placement in .NET Orleans.
+- [Grain references](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-references.md): Learn about grain references in .NET Orleans.
+- [Create a GrainService](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grainservices.md): Learn how to create a GrainService in .NET Orleans.
+- [Develop a grain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/index.md): Learn how to develop a grain in .NET Orleans.
+- [Grain call filters](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/interceptors.md): Learn about grain call filters in .NET Orleans.
+- [Observers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/observers.md): Learn about observers in .NET Orleans.
+- [One-way requests](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/oneway.md): Learn about one-way requests in .NET Orleans.
+- [Request context](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/request-context.md): Learn about request context in .NET Orleans.
+- [Request scheduling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/request-scheduling.md): Learn about request scheduling in .NET Orleans.
+- [Stateless worker grains](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/stateless-worker-grains.md): Learn how to use stateless worker grains in .NET Orleans.
+- [Timers and reminders](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/timers-and-reminders.md): Learn how to use timers and reminders in .NET Orleans.
+- [Transactions in Orleans](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/transactions.md): Learn how to use transactions in .NET Orleans.
 
-## Children
+## Topic Indices
 
-- [Event Sourcing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/event-sourcing/llms.txt)
-- [Grain Persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/llms.txt)
-- [Grain Versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-versioning/llms.txt)
+- [Event Sourcing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/event-sourcing/llms.txt): 8 topics
+- [Grain Persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/llms.txt): 5 topics
+- [Grain Versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-versioning/llms.txt): 5 topics

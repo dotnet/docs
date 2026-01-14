@@ -1,14 +1,11 @@
-# Events Docs
+# Handling and raising events
 
-## Events
+> Notifying subscribers when something happens in your application using the publisher-subscriber pattern. Events are declared with the `event` keyword and backed by delegates like `EventHandler<T>`. Subscribers register handlers with `+=` and unregister with `-=` to respond to notifications.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/index.md): Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
-- [Raise and consume events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-raise-and-consume-events.md): Raise & consume events in .NET. See examples that use the EventHandler delegate, the EventHandler<TEventArgs> delegate, & a custom delegate.
-- [Handle multiple events using event properties](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-handle-multiple-events-using-event-properties.md): Learn how to handle many events by using event properties. Define delegate collections, event keys, & event properties. Implement add & remove accessor methods.
-
-## Observer design pattern
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/observer-design-pattern.md): Learn about the observer design pattern in .NET. This pattern lets a subscriber register with and receive notifications from a provider.
-- [Best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/observer-design-pattern-best-practices.md): Learn more about: Observer Design Pattern Best Practices
-- [How to: Implement a provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-implement-a-provider.md): Learn more about: How to: Implement a Provider
-- [How to: Implement an observer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-implement-an-observer.md): Implement an observer in .NET. The observer design pattern requires a division between an observer, which registers for notifications, and a provider.
+- [How to: Handle Multiple Events Using Event Properties](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-handle-multiple-events-using-event-properties.md): Learn how to handle many events by using event properties. Define delegate collections, event keys, & event properties. Implement add & remove accessor methods.
+- [How to: Implement a Provider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-implement-a-provider.md): Learn more about: How to: Implement a Provider
+- [How to: Implement an Observer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-implement-an-observer.md): Implement an observer in .NET. The observer design pattern requires a division between an observer, which registers for notifications, and a provider.
+- [How to: Raise and Consume Events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/how-to-raise-and-consume-events.md): Raise & consume events in .NET. See examples that use the EventHandler delegate, the EventHandler<TEventArgs> delegate, & a custom delegate.
+- [Handling and raising events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/index.md): Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
+- [Observer Design Pattern Best Practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/observer-design-pattern-best-practices.md): Learn more about: Observer Design Pattern Best Practices
+- [Observer design pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/events/observer-design-pattern.md): Learn about the observer design pattern in .NET. This pattern lets a subscriber register with and receive notifications from a provider.

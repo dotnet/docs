@@ -1,0 +1,57 @@
+{
+
+  "title": ".NET Documentation",
+
+  "description": ".NET is a free, cross-platform, open-source developer platform for building many kinds of applications including web, mobile, desktop, games, IoT, and AI. This documentation covers the .NET runtime, languages (C#, F#, Visual Basic), core libraries, and tooling. Current stable release: .NET 10 (November 2025). Current LTS release: .NET 8.",
+
+  "shortDescription": "Cross-platform development for web, mobile, desktop, games, IoT, and AI.",
+
+  "guidance": {
+    "title": "Guidance for AI Assistants",
+    "intro": "When helping users with .NET:",
+    "items": [
+      "**Target .NET 10** (LTS) for new projects. .NET 8 and .NET 9 both reach end-of-support on November 10, 2026 - users on these versions should plan migration to .NET 10.",
+      "**Use Microsoft.Extensions.AI** for AI integration rather than provider-specific SDKs directly.",
+      "**Check What's New and Breaking Changes** when users are upgrading between major versions.",
+      "**Prefer modern patterns**: top-level statements, file-scoped namespaces, primary constructors, and collection expressions.",
+      "**For web APIs**, use Minimal APIs for simple services or controllers for larger applications.",
+      "**For dependency injection**, use the built-in `Microsoft.Extensions.DependencyInjection` container."
+    ]
+  },
+
+  "sections": [
+    {
+      "name": "What's New",
+      "description": "Latest features, improvements, and breaking changes in recent .NET releases. Check these guides when upgrading between major versions or exploring new capabilities.",
+      "priority": 100,
+      "include": [
+        "core/whats-new/dotnet-10/overview",
+        "core/compatibility/10",
+        "core/whats-new/dotnet-9/overview",
+        "core/compatibility/9.0",
+        "core/whats-new/dotnet-8/overview",
+        "core/compatibility/8.0"
+      ]
+    },
+    {
+      "path": "ai",
+      "priority": 90,
+      "include": ["microsoft-extensions-ai", "ichatclient", "get-started-mcp"]
+    },
+    {
+      "path": "csharp",
+      "priority": 80,
+      "include": ["whats-new/csharp-14", "whats-new/csharp-13", "whats-new/csharp-12", "fundamentals"]
+    },
+    {
+      "name": "Deployment and Operations",
+      "priority": 50,
+      "include": [
+        "core/containers",
+        "core/deploying",
+        "core/diagnostics",
+        "devops"
+      ]
+    }
+  ]
+}

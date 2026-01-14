@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Publishing and distributing .NET applications as framework-dependent or self-contained deployments. Options include single-file publishing, ReadyToRun compilation, and Native AOT for ahead-of-time compilation. Use `dotnet publish` with appropriate runtime identifiers (RIDs) for cross-platform targeting."
+  "title": "Deployment",
+  "description": "Publishing and distributing .NET applications as framework-dependent or self-contained deployments. Options include single-file publishing, ReadyToRun compilation, and Native AOT for ahead-of-time compilation. Use `dotnet publish` with appropriate runtime identifiers (RIDs) for cross-platform targeting.",
+  "shortDescription": "Publish apps: single-file, ReadyToRun, Native AOT, and cross-platform."
 }

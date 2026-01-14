@@ -1,4 +1,5 @@
 {
+  "title": "Threading",
   "description": "Running code concurrently using threads, synchronization primitives, and the thread pool. Core types include `Thread`, `ThreadPool`, `Monitor`, `Mutex`, `Semaphore`, and `ManualResetEvent`. For most scenarios, prefer `Task`-based `async`/`await` over direct thread manipulation.",
   "shortDescription": "Run code concurrently with threads, thread pools, and synchronization primitives.",
   "offers": [

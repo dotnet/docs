@@ -1,49 +1,542 @@
 # Misc Docs
 
-## Error messages
-
-- [CS0003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0003.md): Compiler Error CS0003
-- [CS0004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0004.md): Compiler Error CS0004
-- [CS0005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0005.md): Compiler Error CS0005
-- [CS0008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0008.md): Compiler Error CS0008
-- [CS0009](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0009.md): Compiler Error CS0009
-- [CS0010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0010.md): Compiler Error CS0010
-- [CS0011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0011.md): Compiler Error CS0011
-- [CS0013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0013.md): Compiler Error CS0013
-- [CS0014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0014.md): Compiler Error CS0014
-- [CS0017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0017.md): Compiler Error CS0017
-- [CS0020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0020.md): Compiler Error CS0020
-- [CS0021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0021.md): Compiler Error CS0021
-- [CS0023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0023.md): Compiler Error CS0023
-- [CS0025](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0025.md): Compiler Error CS0025
-- [CS0026](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0026.md): Compiler Error CS0026
-- [CS0027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0027.md): Compiler Error CS0027
-- [CS0030](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0030.md): Compiler Error CS0030
-- [CS0031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0031.md): Compiler Error CS0031
-- [CS0036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0036.md): Compiler Error CS0036
-- [CS0037](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0037.md): Compiler Error CS0037
-- [CS0040](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0040.md): Compiler Error CS0040
-- [CS0041](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0041.md): Compiler Error CS0041
-- [CS0042](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0042.md): Compiler Error CS0042
-- [CS0043](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0043.md): Compiler Error CS0043
-- [CS0053](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0053.md): Compiler Error CS0053
-- [CS0054](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0054.md): Compiler Error CS0054
-- [CS0055](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0055.md): Compiler Error CS0055
-- [CS0058](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0058.md): Compiler Error CS0058
-- [CS0059](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0059.md): Compiler Error CS0059
-- [CS0060](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0060.md): Compiler Error CS0060
-- [CS0061](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0061.md): Compiler Error CS0061
-- [CS0065](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0065.md): Compiler Error CS0065
-- [CS0066](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0066.md): Compiler Error CS0066
-- [CS0068](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0068.md): Compiler Error CS0068
-- [CS0069](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0069.md): Compiler Error CS0069
-- [CS0070](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0070.md): Compiler Error CS0070
-- [CS0072](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0072.md): Compiler Error CS0072
-- [CS0073](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0073.md): Compiler Error CS0073
-- [CS0074](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0074.md): Compiler Error CS0074
-- [CS0075](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0075.md): Compiler Error CS0075
-- [CS0076](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0076.md): Compiler Error CS0076
-- [CS0077](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0077.md): Compiler Error CS0077
-- [CS0079](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0079.md): Compiler Error CS0079
-- [CS0082](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0082.md): Compiler Error CS0082
-- [CS0100](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0100.md): Compiler Error CS0100
+- [Compiler Error CS0003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0003.md): Compiler Error CS0003
+- [Compiler Error CS0004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0004.md): Compiler Error CS0004
+- [Compiler Error CS0005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0005.md): Compiler Error CS0005
+- [Compiler Error CS0008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0008.md): Compiler Error CS0008
+- [Compiler Error CS0009](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0009.md): Compiler Error CS0009
+- [Compiler Error CS0010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0010.md): Compiler Error CS0010
+- [Compiler Error CS0011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0011.md): Compiler Error CS0011
+- [Compiler Error CS0013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0013.md): Compiler Error CS0013
+- [Compiler Error CS0014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0014.md): Compiler Error CS0014
+- [Compiler Error CS0017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0017.md): Compiler Error CS0017
+- [Compiler Error CS0020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0020.md): Compiler Error CS0020
+- [Compiler Error CS0021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0021.md): Compiler Error CS0021
+- [Compiler Error CS0023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0023.md): Compiler Error CS0023
+- [Compiler Error CS0025](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0025.md): Compiler Error CS0025
+- [Compiler Error CS0026](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0026.md): Compiler Error CS0026
+- [Compiler Error CS0027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0027.md): Compiler Error CS0027
+- [Compiler Warning (level 4) CS0028](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0028.md): Compiler Warning (level 4) CS0028
+- [Compiler Error CS0030](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0030.md): Compiler Error CS0030
+- [Compiler Error CS0031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0031.md): Compiler Error CS0031
+- [Compiler Error CS0036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0036.md): Compiler Error CS0036
+- [Compiler Error CS0037](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0037.md): Compiler Error CS0037
+- [Compiler Error CS0040](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0040.md): Compiler Error CS0040
+- [Compiler Error CS0041](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0041.md): Compiler Error CS0041
+- [Compiler Error CS0042](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0042.md): Compiler Error CS0042
+- [Compiler Error CS0043](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0043.md): Compiler Error CS0043
+- [Compiler Error CS0053](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0053.md): Compiler Error CS0053
+- [Compiler Error CS0054](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0054.md): Compiler Error CS0054
+- [Compiler Error CS0055](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0055.md): Compiler Error CS0055
+- [Compiler Error CS0058](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0058.md): Compiler Error CS0058
+- [Compiler Error CS0059](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0059.md): Compiler Error CS0059
+- [Compiler Error CS0060](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0060.md): Compiler Error CS0060
+- [Compiler Error CS0061](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0061.md): Compiler Error CS0061
+- [Compiler Error CS0065](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0065.md): Compiler Error CS0065
+- [Compiler Error CS0066](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0066.md): Compiler Error CS0066
+- [Compiler Warning (level 3) CS0067](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0067.md): Compiler Warning (level 3) CS0067
+- [Compiler Error CS0068](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0068.md): Compiler Error CS0068
+- [Compiler Error CS0069](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0069.md): Compiler Error CS0069
+- [Compiler Error CS0070](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0070.md): Compiler Error CS0070
+- [Compiler Error CS0072](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0072.md): Compiler Error CS0072
+- [Compiler Error CS0073](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0073.md): Compiler Error CS0073
+- [Compiler Error CS0074](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0074.md): Compiler Error CS0074
+- [Compiler Error CS0075](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0075.md): Compiler Error CS0075
+- [Compiler Error CS0076](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0076.md): Compiler Error CS0076
+- [Compiler Error CS0077](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0077.md): Compiler Error CS0077
+- [Compiler Warning (level 4) CS0078](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0078.md): Compiler Warning (level 4) CS0078
+- [Compiler Error CS0079](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0079.md): Compiler Error CS0079
+- [Compiler Error CS0082](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0082.md): Compiler Error CS0082
+- [Compiler Error CS0100](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0100.md): Compiler Error CS0100
+- [Compiler Error CS0101](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0101.md): Compiler Error CS0101
+- [Compiler Error CS0102](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0102.md): Compiler Error CS0102
+- [Compiler Error CS0104](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0104.md): Compiler Error CS0104
+- [Compiler Error CS0107](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0107.md): Compiler Error CS0107
+- [Compiler Warning (level 4) CS0109](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0109.md): Compiler Warning (level 4) CS0109
+- [Compiler Error CS0110](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0110.md): Compiler Error CS0110
+- [Compiler Error CS0112](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0112.md): Compiler Error CS0112
+- [Compiler Error CS0113](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0113.md): Compiler Error CS0113
+- [Compiler Warning (level 2) CS0114](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0114.md): Compiler Warning (level 2) CS0114
+- [Compiler Error CS0117](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0117.md): Compiler Error CS0117
+- [Compiler Error CS0118](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0118.md): Compiler Error CS0118
+- [Compiler Error CS0119](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0119.md): Compiler Error CS0119
+- [Compiler Error CS0123](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0123.md): Compiler Error CS0123
+- [Compiler Error CS0126](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0126.md): Compiler Error CS0126
+- [Compiler Error CS0127](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0127.md): Compiler Error CS0127
+- [Compiler Error CS0128](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0128.md): Compiler Error CS0128
+- [Compiler Error CS0131](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0131.md): Compiler Error CS0131
+- [Compiler Error CS0132](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0132.md): Compiler Error CS0132
+- [Compiler Error CS0133](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0133.md): Compiler Error CS0133
+- [Compiler Error CS0135](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0135.md): Compiler Error CS0135
+- [Compiler Error CS0136](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0136.md): Compiler Error CS0136
+- [Compiler Error CS0139](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0139.md): Compiler Error CS0139
+- [Compiler Error CS0140](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0140.md): Compiler Error CS0140
+- [Compiler Error CS0143](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0143.md): Compiler Error CS0143
+- [Compiler Error CS0144](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0144.md): Compiler Error CS0144
+- [Compiler Error CS0145](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0145.md): Compiler Error CS0145
+- [Compiler Error CS0146](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0146.md): Compiler Error CS0146
+- [Compiler Error CS0148](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0148.md): Compiler Error CS0148
+- [Compiler Error CS0149](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0149.md): Compiler Error CS0149
+- [Compiler Error CS0150](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0150.md): Compiler Error CS0150
+- [Compiler Error CS0152](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0152.md): Compiler Error CS0152
+- [Compiler Error CS0153](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0153.md): Compiler Error CS0153
+- [Compiler Error CS0154](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0154.md): Compiler Error CS0154
+- [Compiler Error CS0155](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0155.md): Compiler Error CS0155
+- [Compiler Error CS0156](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0156.md): Compiler Error CS0156
+- [Compiler Error CS0157](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0157.md): Compiler Error CS0157
+- [Compiler Error CS0158](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0158.md): Compiler Error CS0158
+- [Compiler Error CS0159](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0159.md): Compiler Error CS0159
+- [Compiler Error CS0160](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0160.md): Compiler Error CS0160
+- [Compiler Error CS0161](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0161.md): Compiler Error CS0161
+- [Compiler Warning (level 2) CS0162](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0162.md): Compiler Warning (level 2) CS0162
+- [Compiler Warning (level 2) CS0164](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0164.md): Compiler Warning (level 2) CS0164
+- [Compiler Error CS0167](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0167.md): Compiler Error CS0167
+- [Compiler Warning (level 3) CS0168](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0168.md): Compiler Warning (level 3) CS0168
+- [Compiler Warning (level 3) CS0169](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0169.md): Compiler Warning (level 3) CS0169
+- [Compiler Error CS0170](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0170.md): Compiler Error CS0170
+- [Compiler Error CS0172](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0172.md): Compiler Error CS0172
+- [Compiler Error CS0174](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0174.md): Compiler Error CS0174
+- [Compiler Error CS0175](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0175.md): Compiler Error CS0175
+- [Compiler Error CS0176](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0176.md): Compiler Error CS0176
+- [Compiler Error CS0177](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0177.md): Compiler Error CS0177
+- [Compiler Error CS0179](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0179.md): Compiler Error CS0179
+- [Compiler Error CS0180](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0180.md): Compiler Error CS0180
+- [Compiler Warning (level 1) CS0183](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0183.md): Compiler Warning (level 1) CS0183
+- [Compiler Warning (level 1) CS0184](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0184.md): Compiler Warning (level 1) CS0184
+- [Compiler Error CS0186](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0186.md): Compiler Error CS0186
+- [Compiler Error CS0191](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0191.md): Compiler Error CS0191
+- [Compiler Warning (level 1) CS0197](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0197.md): Compiler Warning (level 1) CS0197
+- [Compiler Error CS0198](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0198.md): Compiler Error CS0198
+- [Compiler Error CS0202](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0202.md): Compiler Error CS0202
+- [Compiler Error CS0204](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0204.md): Compiler Error CS0204
+- [Compiler Error CS0205](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0205.md): Compiler Error CS0205
+- [Compiler Warning (level 3) CS0219](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0219.md): Compiler Warning (level 3) CS0219
+- [Compiler Error CS0220](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0220.md): Compiler Error CS0220
+- [Compiler Error CS0221](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0221.md): Compiler Error CS0221
+- [Compiler Error CS0226](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0226.md): Compiler Error CS0226
+- [Compiler Error CS0228](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0228.md): Compiler Error CS0228
+- [Compiler Error CS0230](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0230.md): Compiler Error CS0230
+- [Compiler Error CS0236](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0236.md): Compiler Error CS0236
+- [Compiler Error CS0238](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0238.md): Compiler Error CS0238
+- [Compiler Error CS0239](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0239.md): Compiler Error CS0239
+- [Compiler Error CS0241](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0241.md): Compiler Error CS0241
+- [Compiler Error CS0247](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0247.md): Compiler Error CS0247
+- [Compiler Error CS0249](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0249.md): Compiler Error CS0249
+- [Compiler Error CS0250](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0250.md): Compiler Error CS0250
+- [Compiler Warning (level 2) CS0252](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0252.md): Compiler Warning (level 2) CS0252
+- [Compiler Warning (level 2) CS0253](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0253.md): Compiler Warning (level 2) CS0253
+- [Compiler Error CS0255](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0255.md): Compiler Error CS0255
+- [Compiler Error CS0268](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0268.md): Compiler Error CS0268
+- [Compiler Error CS0271](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0271.md): Compiler Error CS0271
+- [Compiler Error CS0272](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0272.md): Compiler Error CS0272
+- [Compiler error CS0273](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0273.md): Compiler error CS0273
+- [Compiler Error CS0274](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0274.md): Compiler Error CS0274
+- [Compiler Error CS0275](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0275.md): Compiler Error CS0275
+- [Compiler Error CS0276](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0276.md): Compiler Error CS0276
+- [Compiler Warning (level 2) CS0278](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0278.md): Compiler Warning (level 2) CS0278
+- [Compiler Warning (level 2) CS0279](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0279.md): Compiler Warning (level 2) CS0279
+- [Compiler Warning (level 2) CS0280](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0280.md): Compiler Warning (level 2) CS0280
+- [Compiler Error CS0281](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0281.md): Compiler Error CS0281
+- [Compiler Error CS0283](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0283.md): Compiler Error CS0283
+- [Compiler Error CS0316](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0316.md): Compiler Error CS0316
+- [Compiler Error CS0401](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0401.md): Compiler Error CS0401
+- [Compiler Warning (level 4) CS0402](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0402.md): Compiler Warning (level 4) CS0402
+- [Compiler Error CS0405](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0405.md): Compiler Error CS0405
+- [Compiler Error CS0406](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0406.md): Compiler Error CS0406
+- [Compiler Error CS0407](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0407.md): Compiler Error CS0407
+- [Compiler Error CS0409](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0409.md): Compiler Error CS0409
+- [Compiler Error CS0410](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0410.md): Compiler Error CS0410
+- [Compiler Error CS0411](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0411.md): Compiler Error CS0411
+- [Compiler Warning (level 3) CS0414](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0414.md): Compiler Warning (level 3) CS0414
+- [Compiler Error CS0418](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0418.md): Compiler Error CS0418
+- [Compiler Warning (level 3) CS0419](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0419.md): Compiler Warning (level 3) CS0419
+- [Compiler Warning (level 4) CS0422](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0422.md): Compiler Warning (level 4) CS0422
+- [Compiler Error CS0423](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0423.md): Compiler Error CS0423
+- [Compiler Error CS0424](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0424.md): Compiler Error CS0424
+- [Compiler Error CS0426](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0426.md): Compiler Error CS0426
+- [Compiler Error CS0428](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0428.md): Compiler Error CS0428
+- [Compiler Error CS0430](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0430.md): Compiler Error CS0430
+- [Compiler Error CS0434](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0434.md): Compiler Error CS0434
+- [Compiler Warning (level 2) CS0435](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0435.md): Compiler Warning (level 2) CS0435
+- [Compiler Warning (level 2) CS0436](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0436.md): Compiler Warning (level 2) CS0436
+- [Compiler Warning (level 2) CS0437](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0437.md): Compiler Warning (level 2) CS0437
+- [Compiler Error CS0438](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0438.md): Compiler Error CS0438
+- [Compiler Error CS0439](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0439.md): Compiler Error CS0439
+- [Compiler Error CS0441](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0441.md): Compiler Error CS0441
+- [Compiler Error CS0442](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0442.md): Compiler Error CS0442
+- [Compiler Error CS0443](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0443.md): Compiler Error CS0443
+- [Compiler Warning (level 2) CS0444](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0444.md): Compiler Warning (level 2) CS0444
+- [Compiler Error CS0449](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0449.md): Compiler Error CS0449
+- [Compiler Error CS0450](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0450.md): Compiler Error CS0450
+- [Compiler Error CS0451](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0451.md): Compiler Error CS0451
+- [Compiler Error CS0452](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0452.md): Compiler Error CS0452
+- [Compiler Error CS0453](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0453.md): Compiler Error CS0453
+- [Compiler Error CS0454](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0454.md): Compiler Error CS0454
+- [Compiler Error CS0455](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0455.md): Compiler Error CS0455
+- [Compiler Error CS0456](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0456.md): Compiler Error CS0456
+- [Compiler Warning (level 2) CS0458](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0458.md): Compiler Warning (level 2) CS0458
+- [Compiler Error CS0462](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0462.md): Compiler Error CS0462
+- [Compiler Error CS0463](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0463.md): Compiler Error CS0463
+- [Compiler Warning (level 2) CS0464](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0464.md): Compiler Warning (level 2) CS0464
+- [Compiler Error CS0468](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0468.md): Compiler Error CS0468
+- [Compiler Warning (level 2) CS0469](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0469.md): Compiler Warning (level 2) CS0469
+- [Compiler Error CS0471](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0471.md): Compiler Error CS0471
+- [Compiler Warning (level 2) CS0472](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0472.md): Compiler Warning (level 2) CS0472
+- [Compiler Error CS0500](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0500.md): Compiler Error CS0500
+- [Compiler Error CS0502](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0502.md): Compiler Error CS0502
+- [Compiler Error CS0503](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0503.md): Compiler Error CS0503
+- [Compiler Error CS0505](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0505.md): Compiler Error CS0505
+- [Compiler Error CS0506](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0506.md): Compiler Error CS0506
+- [Compiler Error CS0508](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0508.md): Compiler Error CS0508
+- [Compiler Error CS0509](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0509.md): Compiler Error CS0509
+- [Compiler Error CS0513](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0513.md): Compiler Error CS0513
+- [Compiler Error CS0520](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0520.md): Compiler Error CS0520
+- [Compiler Error CS0524](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0524.md): Compiler Error CS0524
+- [Compiler Error CS0525](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0525.md): Compiler Error CS0525
+- [Compiler Error CS0527](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0527.md): Compiler Error CS0527
+- [Compiler Error CS0528](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0528.md): Compiler Error CS0528
+- [Compiler Error CS0529](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0529.md): Compiler Error CS0529
+- [Compiler Error CS0533](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0533.md): Compiler Error CS0533
+- [Compiler Error CS0534](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0534.md): Compiler Error CS0534
+- [Compiler Error CS0537](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0537.md): Compiler Error CS0537
+- [Compiler Error CS0542](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0542.md): Compiler Error CS0542
+- [Compiler Error CS0543](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0543.md): Compiler Error CS0543
+- [Compiler Error CS0544](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0544.md): Compiler Error CS0544
+- [Compiler Error CS0546](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0546.md): Compiler Error CS0546
+- [Compiler Error CS0547](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0547.md): Compiler Error CS0547
+- [Compiler Error CS0548](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0548.md): Compiler Error CS0548
+- [Compiler Error CS0549](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0549.md): Compiler Error CS0549
+- [Compiler Error CS0569](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0569.md): Compiler Error CS0569
+- [Compiler Error CS0572](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0572.md): Compiler Error CS0572
+- [Compiler Error CS0573](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0573.md): Compiler Error CS0573
+- [Compiler Error CS0574](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0574.md): Compiler Error CS0574
+- [Compiler Error CS0575](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0575.md): Compiler Error CS0575
+- [Compiler Error CS0583](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0583.md): Compiler Error CS0583
+- [Compiler Error CS0584](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0584.md): Compiler Error CS0584
+- [Compiler Error CS0585](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0585.md): Compiler Error CS0585
+- [Compiler Error CS0586](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0586.md): Compiler Error CS0586
+- [Compiler Error CS0587](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0587.md): Compiler Error CS0587
+- [Compiler Error CS0588](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0588.md): Compiler Error CS0588
+- [Compiler Error CS0589](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0589.md): Compiler Error CS0589
+- [Compiler Error CS0594](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0594.md): Compiler Error CS0594
+- [Compiler Error CS0596](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0596.md): Compiler Error CS0596
+- [Compiler Error CS0601](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0601.md): Compiler Error CS0601
+- [Compiler Warning (level 1) CS0602](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0602.md): Compiler Warning (level 1) CS0602
+- [Compiler Error CS0610](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0610.md): Compiler Error CS0610
+- [Compiler Warning (level 1) CS0612](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0612.md): Compiler Warning (level 1) CS0612
+- [Compiler Error CS0619](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0619.md): Compiler Error CS0619
+- [Compiler Error CS0620](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0620.md): Compiler Error CS0620
+- [Compiler Error CS0621](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0621.md): Compiler Error CS0621
+- [Compiler Error CS0622](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0622.md): Compiler Error CS0622
+- [Compiler Warning (level 1) CS0626](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0626.md): Compiler Warning (level 1) CS0626
+- [Compiler Warning (level 4) CS0628](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0628.md): Compiler Warning (level 4) CS0628
+- [Compiler Error CS0635](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0635.md): Compiler Error CS0635
+- [Compiler Warning (level 3) CS0642](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0642.md): Compiler Warning (level 3) CS0642
+- [Compiler Error CS0644](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0644.md): Compiler Error CS0644
+- [Compiler Error CS0645](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0645.md): Compiler Error CS0645
+- [Compiler Error CS0647](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0647.md): Compiler Error CS0647
+- [Compiler Error CS0648](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0648.md): Compiler Error CS0648
+- [Compiler Warning (level 4) CS0649](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0649.md): Compiler Warning (level 4) CS0649
+- [Compiler Warning (level 2) CS0652](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0652.md): Compiler Warning (level 2) CS0652
+- [Compiler Error CS0656](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0656.md): Compiler Error CS0656
+- [Compiler Warning (level 3) CS0659](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0659.md): Compiler Warning (level 3) CS0659
+- [Compiler Error CS0662](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0662.md): Compiler Error CS0662
+- [Compiler Error CS0664](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0664.md): Compiler Error CS0664
+- [Compiler Warning (level 3) CS0665](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0665.md): Compiler Warning (level 3) CS0665
+- [Compiler Error CS0666](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0666.md): Compiler Error CS0666
+- [Compiler Error CS0667](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0667.md): Compiler Error CS0667
+- [Compiler Error CS0668](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0668.md): Compiler Error CS0668
+- [Compiler Error CS0669](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0669.md): Compiler Error CS0669
+- [Compiler Error CS0670](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0670.md): Compiler Error CS0670
+- [Compiler Warning (level 1) CS0672](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0672.md): Compiler Warning (level 1) CS0672
+- [Compiler Error CS0673](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0673.md): Compiler Error CS0673
+- [Compiler Error CS0677](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0677.md): Compiler Error CS0677
+- [Compiler Error CS0678](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0678.md): Compiler Error CS0678
+- [Compiler Error CS0681](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0681.md): Compiler Error CS0681
+- [Compiler Error CS0682](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0682.md): Compiler Error CS0682
+- [Compiler Error CS0683](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0683.md): Compiler Error CS0683
+- [Compiler Warning (level 1) CS0684](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0684.md): Compiler Warning (level 1) CS0684
+- [Compiler Warning (level 1) CS0688](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0688.md): Compiler Warning (level 1) CS0688
+- [Compiler Error CS0689](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0689.md): Compiler Error CS0689
+- [Compiler Error CS0690](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0690.md): Compiler Error CS0690
+- [Compiler Error CS0692](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0692.md): Compiler Error CS0692
+- [Compiler Warning (level 3) CS0693](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0693.md): Compiler Warning (level 3) CS0693
+- [Compiler Error CS0699](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0699.md): Compiler Error CS0699
+- [Compiler Error CS0701](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0701.md): Compiler Error CS0701
+- [Compiler Error CS0704](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0704.md): Compiler Error CS0704
+- [Compiler Error CS0706](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0706.md): Compiler Error CS0706
+- [Compiler Error CS0708](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0708.md): Compiler Error CS0708
+- [Compiler Error CS0709](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0709.md): Compiler Error CS0709
+- [Compiler Error CS0711](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0711.md): Compiler Error CS0711
+- [Compiler Error CS0712](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0712.md): Compiler Error CS0712
+- [Compiler Error CS0713](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0713.md): Compiler Error CS0713
+- [Compiler Error CS0714](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0714.md): Compiler Error CS0714
+- [Compiler Error CS0716](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0716.md): Compiler Error CS0716
+- [Compiler Error CS0717](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0717.md): Compiler Error CS0717
+- [Compiler Error CS0718](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0718.md): Compiler Error CS0718
+- [Compiler Error CS0720](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0720.md): Compiler Error CS0720
+- [Compiler Error CS0721](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0721.md): Compiler Error CS0721
+- [Compiler Error CS0722](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0722.md): Compiler Error CS0722
+- [Compiler Error CS0723](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0723.md): Compiler Error CS0723
+- [Compiler Error CS0724](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0724.md): Compiler Error CS0724
+- [Compiler Error CS0726](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0726.md): Compiler Error CS0726
+- [Compiler Error CS0727](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0727.md): Compiler Error CS0727
+- [Compiler Error CS0729](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0729.md): Compiler Error CS0729
+- [Compiler Error CS0730](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0730.md): Compiler Error CS0730
+- [Compiler Error CS0733](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0733.md): Compiler Error CS0733
+- [Compiler Error CS0734](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0734.md): Compiler Error CS0734
+- [Compiler Error CS0735](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0735.md): Compiler Error CS0735
+- [Compiler Error CS0739](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0739.md): Compiler Error CS0739
+- [Compiler Error CS0742](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0742.md): Compiler Error CS0742
+- [Compiler Error CS0743](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0743.md): Compiler Error CS0743
+- [Compiler Error CS0744](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0744.md): Compiler Error CS0744
+- [Compiler Error CS0745](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0745.md): Compiler Error CS0745
+- [Compiler Error CS0746](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0746.md): Compiler Error CS0746
+- [Compiler Error CS0752](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0752.md): Compiler Error CS0752
+- [Compiler Error CS0753](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0753.md): Compiler Error CS0753
+- [Compiler Error CS0766](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0766.md): Compiler Error CS0766
+- [Compiler Warning (level 1) CS0809](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0809.md): Compiler Warning (level 1) CS0809
+- [Compiler Error CS0811](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0811.md): Compiler Error CS0811
+- [Compiler Error CS0815](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0815.md): Compiler Error CS0815
+- [Compiler Error CS0818](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0818.md): Compiler Error CS0818
+- [Compiler Error CS0819](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0819.md): Compiler Error CS0819
+- [Compiler Error CS0822](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0822.md): Compiler Error CS0822
+- [Compiler Error CS0825](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0825.md): Compiler Error CS0825
+- [Compiler Error CS0828](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0828.md): Compiler Error CS0828
+- [Compiler Error CS0833](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0833.md): Compiler Error CS0833
+- [Compiler Error CS0836](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0836.md): Compiler Error CS0836
+- [Compiler Error CS0837](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0837.md): Compiler Error CS0837
+- [Compiler Error CS0841](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0841.md): Compiler Error CS0841
+- [Compiler Error CS0842](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0842.md): Compiler Error CS0842
+- [Compiler Error CS0844](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs0844.md): Compiler Error CS0844
+- [Compiler Error CS1002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1002.md): Compiler Error CS1002
+- [Compiler Error CS1003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1003.md): Compiler Error CS1003
+- [Compiler Error CS1004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1004.md): Compiler Error CS1004
+- [Compiler Error CS1008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1008.md): Compiler Error CS1008
+- [Compiler Error CS1010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1010.md): Compiler Error CS1010
+- [Compiler Error CS1013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1013.md): Compiler Error CS1013
+- [Compiler Error CS1015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1015.md): Compiler Error CS1015
+- [Compiler Error CS1017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1017.md): Compiler Error CS1017
+- [Compiler Error CS1021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1021.md): Compiler Error CS1021
+- [Compiler Error CS1022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1022.md): Compiler Error CS1022
+- [Compiler Error CS1023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1023.md): Compiler Error CS1023
+- [Compiler Error CS1031](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1031.md): Compiler Error CS1031
+- [Compiler Error CS1033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1033.md): Compiler Error CS1033
+- [Compiler Error CS1034](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1034.md): Compiler Error CS1034
+- [Compiler Error CS1035](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1035.md): Compiler Error CS1035
+- [Compiler Error CS1036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1036.md): Compiler Error CS1036
+- [Compiler Error CS1041](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1041.md): Compiler Error CS1041
+- [Compiler Error CS1044](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1044.md): Compiler Error CS1044
+- [Compiler Error CS1055](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1055.md): Compiler Error CS1055
+- [Compiler Error CS1056](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1056.md): Compiler Error CS1056
+- [Compiler Error CS1057](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1057.md): Compiler Error CS1057
+- [Compiler Error CS1059](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1059.md): Compiler Error CS1059
+- [Compiler Error CS1107](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1107.md): Compiler Error CS1107
+- [Compiler Error CS1108](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1108.md): Compiler Error CS1108
+- [Compiler Warning (level 1) CS1200](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1200.md): Compiler Warning (level 1) CS1200
+- [Compiler Warning (level 1) CS1201](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1201.md): Compiler Warning (level 1) CS1201
+- [Compiler Warning (level 1) CS1202](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1202.md): Compiler Warning (level 1) CS1202
+- [Compiler Warning (level 1) CS1203](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1203.md): Compiler Warning (level 1) CS1203
+- [Compiler Error CS1503](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1503.md): Compiler Error CS1503
+- [Compiler Error CS1504](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1504.md): Compiler Error CS1504
+- [Compiler Error CS1507](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1507.md): Compiler Error CS1507
+- [Compiler Error CS1508](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1508.md): Compiler Error CS1508
+- [Compiler Error CS1509](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1509.md): Compiler Error CS1509
+- [Compiler Error CS1511](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1511.md): Compiler Error CS1511
+- [Compiler Error CS1512](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1512.md): Compiler Error CS1512
+- [Compiler Error CS1513](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1513.md): Compiler Error CS1513
+- [Compiler Error CS1514](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1514.md): Compiler Error CS1514
+- [Compiler Error CS1515](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1515.md): Compiler Error CS1515
+- [Compiler Error CS1518](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1518.md): Compiler Error CS1518
+- [Compiler Error CS1520](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1520.md): Compiler Error CS1520
+- [Compiler Error CS1521](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1521.md): Compiler Error CS1521
+- [Compiler Warning (level 1) CS1522](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1522.md): Compiler Warning (level 1) CS1522
+- [Compiler Error CS1524](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1524.md): Compiler Error CS1524
+- [Compiler Error CS1525](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1525.md): Compiler Error CS1525
+- [Compiler Error CS1526](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1526.md): Compiler Error CS1526
+- [Compiler Error CS1527](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1527.md): Compiler Error CS1527
+- [Compiler Error CS1528](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1528.md): Compiler Error CS1528
+- [Compiler Error CS1530](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1530.md): Compiler Error CS1530
+- [Compiler Error CS1536](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1536.md): Compiler Error CS1536
+- [Compiler Error CS1541](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1541.md): Compiler Error CS1541
+- [Compiler Error CS1542](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1542.md): Compiler Error CS1542
+- [Compiler Error CS1545](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1545.md): Compiler Error CS1545
+- [Compiler Error CS1547](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1547.md): Compiler Error CS1547
+- [Compiler Error CS1551](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1551.md): Compiler Error CS1551
+- [Compiler Error CS1555](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1555.md): Compiler Error CS1555
+- [Compiler Error CS1556](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1556.md): Compiler Error CS1556
+- [Compiler Error CS1557](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1557.md): Compiler Error CS1557
+- [Compiler Error CS1558](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1558.md): Compiler Error CS1558
+- [Compiler Error CS1559](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1559.md): Compiler Error CS1559
+- [Compiler Error CS1561](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1561.md): Compiler Error CS1561
+- [Compiler Error CS1562](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1562.md): Compiler Error CS1562
+- [Compiler Error CS1563](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1563.md): Compiler Error CS1563
+- [Compiler Error CS1565](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1565.md): Compiler Error CS1565
+- [Compiler Error CS1566](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1566.md): Compiler Error CS1566
+- [Compiler Error CS1569](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1569.md): Compiler Error CS1569
+- [Compiler Warning (level 1) CS1570](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1570.md): Compiler Warning (level 1) CS1570
+- [Compiler Warning (level 2) CS1571](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1571.md): Compiler Warning (level 2) CS1571
+- [Compiler Warning (level 2) CS1572](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1572.md): Compiler Warning (level 2) CS1572
+- [Compiler Warning (level 4) CS1573](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1573.md): Compiler Warning (level 4) CS1573
+- [Compiler Warning (level 1) CS1574](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1574.md): Compiler Warning (level 1) CS1574
+- [Compiler Error CS1575](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1575.md): Compiler Error CS1575
+- [Compiler Error CS1577](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1577.md): Compiler Error CS1577
+- [Compiler Warning (level 1) CS1580](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1580.md): Compiler Warning (level 1) CS1580
+- [Compiler Warning (level 1) CS1581](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1581.md): Compiler Warning (level 1) CS1581
+- [Compiler Error CS1583](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1583.md): Compiler Error CS1583
+- [Compiler Warning (level 1) CS1584](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1584.md): Compiler Warning (level 1) CS1584
+- [Compiler Error CS1585](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1585.md): Compiler Error CS1585
+- [Compiler Warning (level 2) CS1587](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1587.md): Compiler Warning (level 2) CS1587
+- [Compiler Error CS1588](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1588.md): Compiler Error CS1588
+- [Compiler Warning (level 1) CS1589](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1589.md): Compiler Warning (level 1) CS1589
+- [Compiler Warning (level 1) CS1590](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1590.md): Compiler Warning (level 1) CS1590
+- [Compiler Warning (level 1) CS1592](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1592.md): Compiler Warning (level 1) CS1592
+- [Compiler Error CS1593](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1593.md): Compiler Error CS1593
+- [Compiler Error CS1594](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1594.md): Compiler Error CS1594
+- [Compiler Error CS1597](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1597.md): Compiler Error CS1597
+- [Compiler Error CS1599](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1599.md): Compiler Error CS1599
+- [Compiler Error CS1600](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1600.md): Compiler Error CS1600
+- [Compiler Error CS1601](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1601.md): Compiler Error CS1601
+- [Compiler Error CS1604](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1604.md): Compiler Error CS1604
+- [Compiler Error CS1606](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1606.md): Compiler Error CS1606
+- [Compiler Error CS1608](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1608.md): Compiler Error CS1608
+- [Compiler Error CS1609](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1609.md): Compiler Error CS1609
+- [Compiler Error CS1613](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1613.md): Compiler Error CS1613
+- [Compiler Error CS1615](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1615.md): Compiler Error CS1615
+- [Compiler Error CS1617](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1617.md): Compiler Error CS1617
+- [Compiler Error CS1618](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1618.md): Compiler Error CS1618
+- [Compiler Error CS1619](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1619.md): Compiler Error CS1619
+- [Compiler Error CS1620](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1620.md): Compiler Error CS1620
+- [Compiler Error CS1630](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1630.md): Compiler Error CS1630
+- [Compiler Error CS1638](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1638.md): Compiler Error CS1638
+- [Compiler Error CS1639](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1639.md): Compiler Error CS1639
+- [Compiler Error CS1643](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1643.md): Compiler Error CS1643
+- [Compiler Warning (level 1) CS1645](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1645.md): Compiler Warning (level 1) CS1645
+- [Compiler Error CS1646](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1646.md): Compiler Error CS1646
+- [Compiler Error CS1647](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1647.md): Compiler Error CS1647
+- [Compiler Error CS1648](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1648.md): Compiler Error CS1648
+- [Compiler Error CS1650](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1650.md): Compiler Error CS1650
+- [Compiler Error CS1654](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1654.md): Compiler Error CS1654
+- [Compiler Error CS1660](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1660.md): Compiler Error CS1660
+- [Compiler Error CS1661](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1661.md): Compiler Error CS1661
+- [Compiler Error CS1662](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1662.md): Compiler Error CS1662
+- [Compiler Error CS1664](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1664.md): Compiler Error CS1664
+- [Compiler Error CS1667](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1667.md): Learn more about: Compiler Error CS1667
+- [Compiler Warning (level 2) CS1668](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1668.md): Learn more about: Compiler Warning (level 2) CS1668
+- [Compiler Error CS1671](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1671.md): Learn more about: Compiler Error CS1671
+- [Compiler Error CS1672](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1672.md): Learn more about: Compiler Error CS1672
+- [Compiler Error CS1675](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1675.md): Learn more about: Compiler Error CS1675
+- [Compiler Error CS1676](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1676.md): Learn more about: Compiler Error CS1676
+- [Compiler Error CS1677](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1677.md): Learn more about: Compiler Error CS1677
+- [Compiler Error CS1678](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1678.md): Learn more about: Compiler Error CS1678
+- [Compiler Error CS1679](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1679.md): Learn more about: Compiler Error CS1679
+- [Compiler Error CS1680](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1680.md): Learn more about: Compiler Error CS1680
+- [Compiler Error CS1681](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1681.md): Learn more about: Compiler Error CS1681
+- [Compiler Warning (level 1) CS1682](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1682.md): Learn more about: Compiler Warning (level 1) CS1682
+- [Compiler Warning (level 1) CS1684](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1684.md): Learn more about: Compiler Warning (level 1) CS1684
+- [Compiler Warning (level 1) CS1687](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1687.md): Learn more about: Compiler Warning (level 1) CS1687
+- [Compiler Error CS1688](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1688.md): Learn more about: Compiler Error CS1688
+- [Compiler Error CS1689](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1689.md): Learn more about: Compiler Error CS1689
+- [Compiler Warning (level 1) CS1697](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1697.md): Learn more about: Compiler Warning (level 1) CS1697
+- [Compiler Warning (level 2) CS1698](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1698.md): Learn more about: Compiler Warning (level 2) CS1698
+- [Compiler Warning (level 3) CS1702](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1702.md): Learn more about: Compiler Warning (level 3) CS1702
+- [Compiler Warning (level 1) CS1707](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1707.md): Learn more about: Compiler Warning (level 1) CS1707
+- [Compiler Warning (level 2) CS1710](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1710.md): Learn more about: Compiler Warning (level 2) CS1710
+- [Compiler Warning (level 2) CS1711](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1711.md): Learn more about: Compiler Warning (level 2) CS1711
+- [Compiler Warning (level 4) CS1712](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1712.md): Learn more about: Compiler Warning (level 4) CS1712
+- [Compiler Error CS1713](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1713.md): Learn more about: Compiler Error CS1713
+- [Compiler Error CS1715](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1715.md): Learn more about: Compiler Error CS1715
+- [Compiler Warning (level 3) CS1717](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1717.md): Learn more about: Compiler Warning (level 3) CS1717
+- [Compiler Warning (level 3) CS1718](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1718.md): Learn more about: Compiler Warning (level 3) CS1718
+- [Compiler Error CS1719](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1719.md): Learn more about: Compiler Error CS1719
+- [Compiler Warning (level 1) CS1720](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1720.md): Learn more about: Compiler Warning (level 1) CS1720
+- [Compiler Error CS1722](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1722.md): Learn more about: Compiler Error CS1722
+- [Compiler Warning (level 1) CS1723](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1723.md): Learn more about: Compiler Warning (level 1) CS1723
+- [Compiler Error CS1724](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1724.md): Learn more about: Compiler Error CS1724
+- [Compiler Error CS1725](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1725.md): Learn more about: Compiler Error CS1725
+- [Compiler Error CS1727](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1727.md): Learn more about: Compiler Error CS1727
+- [Compiler Error CS1728](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1728.md): Learn more about: Compiler Error CS1728
+- [Compiler Error CS1730](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1730.md): Learn more about: Compiler Error CS1730
+- [Compiler Error CS1731](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1731.md): Learn more about: Compiler Error CS1731
+- [Compiler Error CS1732](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1732.md): Learn more about: Compiler Error CS1732
+- [Compiler Error CS1733](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1733.md): Learn more about: Compiler Error CS1733
+- [Compiler Error CS1900](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1900.md): Learn more about: Compiler Error CS1900
+- [Compiler Error CS1902](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1902.md): Learn more about: Compiler Error CS1902
+- [Compiler Error CS1906](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1906.md): Learn more about: Compiler Error CS1906
+- [Compiler Error CS1908](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1908.md): Learn more about: Compiler Error CS1908
+- [Compiler Error CS1909](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1909.md): Learn more about: Compiler Error CS1909
+- [Compiler Error CS1910](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1910.md): Learn more about: Compiler Error CS1910
+- [Compiler Warning (level 1) CS1911](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1911.md): Learn more about: Compiler Warning (level 1) CS1911
+- [Compiler Error CS1912](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1912.md): Learn more about: Compiler Error CS1912
+- [Compiler Error CS1913](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1913.md): Learn more about: Compiler Error CS1913
+- [Compiler Error CS1914](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1914.md): Learn more about: Compiler Error CS1914
+- [Compiler Error CS1917](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1917.md): Learn more about: Compiler Error CS1917
+- [Compiler Error CS1918](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1918.md): Learn more about: Compiler Error CS1918
+- [Compiler Error CS1922](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1922.md): Learn more about: Compiler Error CS1922
+- [Compiler Warning (Level 2) CS1927](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1927.md): Learn more about: Compiler Warning (Level 2) CS1927
+- [Compiler Error CS1930](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1930.md): Learn more about: Compiler Error CS1930
+- [Compiler Error CS1931](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1931.md): Learn more about: Compiler Error CS1931
+- [Compiler Error CS1932](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1932.md): Learn more about: Compiler Error CS1932
+- [Compiler Error CS1934](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1934.md): Learn more about: Compiler Error CS1934
+- [Compiler Error CS1935](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1935.md): Learn more about: Compiler Error CS1935
+- [Compiler Error CS1937](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1937.md): Learn more about: Compiler Error CS1937
+- [Compiler Error CS1938](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1938.md): Learn more about: Compiler Error CS1938
+- [Compiler Error CS1940](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1940.md): Learn more about: Compiler Error CS1940
+- [Compiler Error CS1947](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1947.md): Learn more about: Compiler Error CS1947
+- [Compiler Error CS1948](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1948.md): Learn more about: Compiler Error CS1948
+- [Compiler Error CS1949](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1949.md): Learn more about: Compiler Error CS1949
+- [Compiler Error CS1955](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1955.md): Learn more about: Compiler Error CS1955
+- [Compiler Warning (Level 1) CS1957](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1957.md): Learn more about: Compiler Warning (Level 1) CS1957
+- [Compiler Error CS1958](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1958.md): Learn more about: Compiler Error CS1958
+- [Compiler Error CS1959](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs1959.md): Learn more about: Compiler Error CS1959
+- [Compiler Error CS2001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2001.md): Learn more about: Compiler Error CS2001
+- [Compiler Warning (level 1) CS2002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2002.md): Learn more about: Compiler Warning (level 1) CS2002
+- [Compiler Error CS2003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2003.md): Learn more about: Compiler Error CS2003
+- [Compiler Error CS2005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2005.md): Learn more about: Compiler Error CS2005
+- [Compiler Error CS2006](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2006.md): Learn more about: Compiler Error CS2006
+- [Compiler Error CS2007](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2007.md): Learn more about: Compiler Error CS2007
+- [Compiler Error CS2008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2008.md): Learn more about: Compiler Error CS2008
+- [Compiler Error CS2011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2011.md): Learn more about: Compiler Error CS2011
+- [Compiler Error CS2012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2012.md): Learn more about: Compiler Error CS2012
+- [Compiler Error CS2013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2013.md): Learn more about: Compiler Error CS2013
+- [Compiler Warning (level 1) CS2014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2014.md): Learn more about: Compiler Warning (level 1) CS2014
+- [Compiler Error CS2015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2015.md): Learn more about: Compiler Error CS2015
+- [Compiler Error CS2016](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2016.md): Learn more about: Compiler Error CS2016
+- [Compiler Error CS2017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2017.md): Learn more about: Compiler Error CS2017
+- [Compiler Error CS2018](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2018.md): Learn more about: Compiler Error CS2018
+- [Compiler Error CS2019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2019.md): Learn more about: Compiler Error CS2019
+- [Compiler Error CS2020](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2020.md): Learn more about: Compiler Error CS2020
+- [Compiler Error CS2021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2021.md): Learn more about: Compiler Error CS2021
+- [Compiler Error CS2022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2022.md): Learn more about: Compiler Error CS2022
+- [Compiler Warning (level 1) CS2023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2023.md): Learn more about: Compiler Warning (level 1) CS2023
+- [Compiler Error CS2024](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2024.md): Learn more about: Compiler Error CS2024
+- [Compiler Warning (level 1) CS2029](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2029.md): Learn more about: Compiler Warning (level 1) CS2029
+- [Compiler Error CS2033](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2033.md): Learn more about: Compiler Error CS2033
+- [Compiler Error CS2034](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2034.md): Learn more about: Compiler Error CS2034
+- [Compiler Error CS2035](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2035.md): Learn more about: Compiler Error CS2035
+- [Compiler Error CS2036](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs2036.md): Learn more about: Compiler Error CS2036
+- [Compiler Warning (level 1) CS3000](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3000.md): Learn more about: Compiler Warning (level 1) CS3000
+- [Compiler Warning (level 1) CS3001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3001.md): Learn more about: Compiler Warning (level 1) CS3001
+- [Compiler Warning (level 1) CS3002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3002.md): Learn more about: Compiler Warning (level 1) CS3002
+- [Compiler Warning (level 1) CS3004](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3004.md): Learn more about: Compiler Warning (level 1) CS3004
+- [Compiler Warning (level 1) CS3005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3005.md): Learn more about: Compiler Warning (level 1) CS3005
+- [Compiler Warning (level 1) CS3008](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3008.md): Learn more about: Compiler Warning (level 1) CS3008
+- [Compiler Warning (level 1) CS3010](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3010.md): Learn more about: Compiler Warning (level 1) CS3010
+- [Compiler Warning (level 1) CS3011](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3011.md): Learn more about: Compiler Warning (level 1) CS3011
+- [Compiler Warning (level 1) CS3012](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3012.md): Learn more about: Compiler Warning (level 1) CS3012
+- [Compiler Warning (level 1) CS3013](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3013.md): Learn more about: Compiler Warning (level 1) CS3013
+- [Compiler Warning (level 1) CS3014](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3014.md): Learn more about: Compiler Warning (level 1) CS3014
+- [Compiler Warning (level 1) CS3015](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3015.md): Learn more about: Compiler Warning (level 1) CS3015
+- [Compiler Warning (level 1) CS3017](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3017.md): Learn more about: Compiler Warning (level 1) CS3017
+- [Compiler Warning (level 1) CS3018](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3018.md): Learn more about: Compiler Warning (level 1) CS3018
+- [Compiler Warning (level 2) CS3019](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3019.md): Learn more about: Compiler Warning (level 2) CS3019
+- [Compiler Warning (level 2) CS3021](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3021.md): Learn more about: Compiler Warning (level 2) CS3021
+- [Compiler Warning (level 1) CS3022](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3022.md): Learn more about: Compiler Warning (level 1) CS3022
+- [Compiler Warning (level 1) CS3023](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3023.md): Learn more about: Compiler Warning (level 1) CS3023
+- [Compiler Warning (level 1) CS3024](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3024.md): Learn more about: Compiler Warning CS3024
+- [Compiler Warning (level 1) CS3026](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3026.md): Learn more about: Compiler Warning (level 1) CS3026
+- [Compiler Warning (level 1) CS3027](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs3027.md): Learn more about: Compiler Warning (level 1) CS3027
+- [Compiler Warning (level 1) CS5000](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs5000.md): Learn more about: Compiler Warning (level 1) CS5000
+- [Compiler Error CS5001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs5001.md): Learn more about: Compiler Error CS5001
+- [Compiler Warning (level 4) CS8500](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/cs8500.md): Learn more about: Compiler Warning (level 4) CS8500
+- [Sorry, we don't have specifics on this error](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md): List of possible resources for compiler errors and warnings that haven't been documented yet.

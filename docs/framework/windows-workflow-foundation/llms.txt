@@ -1,49 +1,6 @@
-# Windows Workflow Foundation Docs
+# Windows Workflow Foundation
 
-- [Windows Workflow Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/index.md): This article contains resources that describe the programming model, samples, and tools of the Windows Workflow Foundation.
-- [Guide to the Windows Workflow Documentation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/guide-to-the-documentation.md): This article contains information about how to use the Windows Workflow Foundation documentation, grouped according to interests and levels of expertise.
-- [What's New in Windows Workflow Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/whats-new.md): Learn about Windows Workflow Foundation changes in .NET Framework 4. Workflows are easier to create, execute, and maintain.
-- [What's New in Windows Workflow Foundation in .NET 4.5](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md): Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
-- [Windows Workflow Foundation Feature Specifics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/feature-specifics.md): This article describes new features that .NET Framework 4 adds to Windows Workflow Foundation and scenarios in which the features might be useful.
-- [Windows Workflow Foundation Glossary](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/glossary.md): Learn more about: Windows Workflow Foundation Glossary for .NET Framework 4.5
+## Topic Indices
 
-## Activity Authoring Options
-
-- [Activity Authoring Options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md): Learn more about: Activity Authoring Options in WF
-- [Activity Base Class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/workflow-activity-authoring-using-the-activity-class.md): Learn more about: Workflow Activity Authoring Using the Activity Class
-- [CodeActivity Base Class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/workflow-activity-authoring-using-the-codeactivity-class.md): Learn more about: Workflow Activity Authoring Using the CodeActivity Class
-- [NativeActivity Base Class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/nativeactivity-base-class.md): Learn more about: NativeActivity Base Class
-
-## Built-In Activity Library
-
-- [Built-In Activity Library](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md): This article describes the new activity library with expanded functionality that is part of .NET Framework 4.5.
-- [Flowchart](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/flowchart-activities-in-wf.md): Learn more about: Flowchart Activities in WF
-- [State Machine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/state-machine-activities-in-wf.md): Learn more about: State Machine Activities in WF
-- [Runtime](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/runtime-activities-in-wf.md): Learn more about: Runtime Activities in WF
-- [Primitives](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/primitives-activities-in-wf.md): Learn more about: Primitives Activities in WF
-- [Transaction](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/transaction-activities-in-wf.md): Learn more about: Transaction Activities in WF
-- [Collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/collection-activities-in-wf.md): Learn more about: Collection Activities in WF
-- [Error Handling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/error-handling-activities-in-wf.md): Learn more about: Error Handling Activities in WF
-- [Migration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/migration-activity-in-wf.md): Learn more about: Migration Activity in WF
-
-## Configuring Activity Validation
-
-- [Configuring Activity Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/configuring-activity-validation.md): Learn more about: Configuring Activity Validation
-- [Required Arguments and Overload Groups](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/required-arguments-and-overload-groups.md): Learn more about required arguments and overload groups. You can configure an activity so that certain arguments are required for it to be valid for execution.
-- [Imperative Code-Based Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md): Learn more about: Imperative Code-Based Validation
-- [Declarative Constraints](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/declarative-constraints.md): Learn more about: Declarative Constraints
-- [Invoking Activity Validation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/invoking-activity-validation.md): Learn more about: Invoking Activity Validation
-
-## Control Flow
-
-- [Control Flow](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/control-flow-activities-in-wf.md): This article summarizes the .NET Framework 4.6.1 activities for controlling flow of execution within a workflow.
-- [Pick Activity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/pick-activity.md): In Workflow Foundation, the Pick activity simplifies the modeling of a set of event triggers followed by their corresponding handlers.
-
-## Creating Asynchronous Activities
-
-- [Creating Asynchronous Activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/creating-asynchronous-activities-in-wf.md): Learn how to create custom asynchronous activities using AsyncCodeActivity, which enables derived activities to implement asynchronous execution logic.
-- [Error handling in asynchronous activities](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/error-handling-in-asynchronous-activities.md): Learn more about: Error handling in asynchronous activities
-
-## Customizing the Workflow Design Experience
-
-- [Customizing the Workflow Design Experience](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md): Learn more about: Customizing the Workflow Design Experience
+- [Windows Workflow Foundation Extended Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/llms-extended.txt): 260 additional topics
+- [Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/windows-workflow-foundation/samples/llms.txt): 46 topics

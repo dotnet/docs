@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Troubleshooting application issues using logging, tracing, metrics, and debugging tools. Core tools include `dotnet-counters`, `dotnet-dump`, `dotnet-trace`, and `dotnet-monitor` for production diagnostics. Use `EventSource` and `DiagnosticSource` for custom instrumentation; OpenTelemetry for distributed tracing."
+  "title": "Diagnostics",
+  "description": "Troubleshooting application issues using logging, tracing, metrics, and debugging tools. Core tools include `dotnet-counters`, `dotnet-dump`, `dotnet-trace`, and `dotnet-monitor` for production diagnostics. Use `EventSource` and `DiagnosticSource` for custom instrumentation; OpenTelemetry for distributed tracing.",
+  "shortDescription": "Logging, tracing, metrics, and diagnostic tools for troubleshooting."
 }

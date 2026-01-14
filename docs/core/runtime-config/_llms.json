@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Configuring .NET runtime behavior through runtimeconfig.json, MSBuild properties, and environment variables. Settings control garbage collection, threading, globalization, and JIT compilation. Use `runtimeconfig.json` for per-app settings; environment variables for system-wide configuration."
+  "title": "Runtime Configuration",
+  "description": "Configuring .NET runtime behavior through runtimeconfig.json, MSBuild properties, and environment variables. Settings control garbage collection, threading, globalization, and JIT compilation. Use `runtimeconfig.json` for per-app settings; environment variables for system-wide configuration.",
+  "shortDescription": "Configure runtime via runtimeconfig.json and environment variables."
 }

@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Using the .NET CLI to create, build, run, test, and publish applications. Core commands include `dotnet new`, `dotnet build`, `dotnet run`, `dotnet test`, and `dotnet publish`. The CLI is cross-platform and included with the .NET SDK; use `dotnet tool` to install global and local tools."
+  "title": ".NET CLI Tools",
+  "description": "Using the .NET CLI to create, build, run, test, and publish applications. Core commands include `dotnet new`, `dotnet build`, `dotnet run`, `dotnet test`, and `dotnet publish`. The CLI is cross-platform and included with the .NET SDK; use `dotnet tool` to install global and local tools.",
+  "shortDescription": "CLI commands: `dotnet new`, `build`, `run`, `test`, and `publish`."
 }

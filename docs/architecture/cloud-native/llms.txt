@@ -1,47 +1,48 @@
-# Cloud Native Docs
+# Architecting Cloud Native .NET Applications for Azure
 
-## Architecting Cloud-Native .NET Apps for Azure
+> Building cloud-native .NET applications using containers, microservices, and serverless patterns on Azure. Covers resilience, scalability, DevOps practices, and Kubernetes orchestration. Use Dapr for distributed application building blocks and Azure services for managed infrastructure.
 
-- [Architecting Cloud-Native .NET Apps for Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/index.md): A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
-- [Summary - Architecting cloud-native .NET apps for Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/summary.md): Learn the key conclusions about Cloud Native applications that are fully developed in the Architecting Cloud-Native .NET Apps for Azure guide/e-book.
-
-## Cloud-native communication patterns
-
-- [Cloud-native communication patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/communication-patterns.md): Learn about key service communication concerns in cloud-native applications
-- [Front-end client communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/front-end-communication.md): Learn how front-end clients communicate with cloud-native systems
-- [Service to service communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/service-to-service-communication.md): Learn how back-end cloud-native microservices communicate with other back-end microservices.
-- [gRPC](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/grpc.md): Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
-- [Service Mesh communication infrastructure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/service-mesh-communication-infrastructure.md): Learn about how service mesh technologies streamline cloud-native microservice communication
-
-## Cloud-native data patterns
-
-- [Cloud-native data patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/distributed-data.md): Contrast data storage in monolithic and cloud-native applications.
-- [Relational vs. NoSQL data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/relational-vs-nosql-data.md): Learn about relational and NoSQL data in cloud-native applications
-- [Caching in a cloud-native application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-caching.md): Learn about caching strategies in a cloud-native application.
-- [Elasticsearch in Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/elastic-search-in-azure.md): Learn about adding Elastic Search capabilities to cloud-native applications.
-
-## Cloud-native identity
-
-- [Cloud-native identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/identity.md): Architecting Cloud Native .NET Apps for Azure | Identity
-- [Authentication and authorization in cloud-native apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/authentication-authorization.md): Architecting Cloud Native .NET Apps for Azure | Authentication and Authorization in Cloud Native Apps
-- [Azure Active Directory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-active-directory.md): Architecting Cloud Native .NET Apps for Azure | Azure Active Directory
-- [Identity Server](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/identity-server.md): Architecting Cloud Native .NET Apps for Azure | IdentityServer
-
-## Cloud-native resiliency
-
-- [Cloud-native resiliency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/resiliency.md): Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency
-- [Application resiliency patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/application-resiliency-patterns.md): Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
-- [Cloud infrastructure resiliency with Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/infrastructure-resiliency-azure.md): Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
-- [Resilient communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/resilient-communications.md): Architecting Cloud Native .NET Apps for Azure | Resilient Communication
-
-## Cloud-native security
-
-- [Cloud-native security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/security.md): Architecting Cloud Native .NET Apps for Azure | Security
-- [Azure Security for cloud-native apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-security.md): Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
-
-## DevOps
-
-- [DevOps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/devops.md): DevOps considerations for cloud-native applications
-- [Feature flags](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/feature-flags.md): Implement feature flags in cloud-native applications leveraging Azure App Config
-- [Infrastructure as Code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/infrastructure-as-code.md): Embracing Infrastructure as Code (IaC) with cloud-native applications
 - [Cloud Native Application Bundles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/application-bundles.md): Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
+- [Application resiliency patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/application-resiliency-patterns.md): Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
+- [Authentication and Authorization in cloud-native apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/authentication-authorization.md): Architecting Cloud Native .NET Apps for Azure | Authentication and Authorization in Cloud Native Apps
+- [Azure Active Directory](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-active-directory.md): Architecting Cloud Native .NET Apps for Azure | Azure Active Directory
+- [Caching in a cloud-native application](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-caching.md): Learn about caching strategies in a cloud-native application.
+- [Azure Monitor](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-monitor.md): Using Azure Monitor to gain visibility into your system is running.
+- [Azure security for cloud-native apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/azure-security.md): Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
+- [Candidate apps for cloud native](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/candidate-apps.md): Learn which types of applications benefit from a cloud-native approach
+- [Centralized configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/centralized-configuration.md): Centralizing configuration for cloud-native applications using Azure App Configuration and AzureKey Vault.
+- [Combining containers and serverless approaches for cloud-native services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/combine-containers-serverless-approaches.md): Combining containers and Kubernetes with serverless approaches
+- [Cloud-native communication patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/communication-patterns.md): Learn about key service communication concerns in cloud-native applications
+- [What is Cloud Native?](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/definition.md): Learn about the foundational pillars that provide the bedrock for cloud-native systems
+- [Deploying containers in Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/deploy-containers-azure.md): Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
+- [Deploying eShopOnContainers to Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/deploy-eshoponcontainers-azure.md): Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
+- [DevOps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/devops.md): DevOps considerations for cloud-native applications
+- [Cloud-native data patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/distributed-data.md): Contrast data storage in monolithic and cloud-native applications.
+- [Elasticsearch in cloud-native applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/elastic-search-in-azure.md): Learn about adding Elastic Search capabilities to cloud-native applications.
+- [Feature flags](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/feature-flags.md): Implement feature flags in cloud-native applications leveraging Azure App Config
+- [Front-end client communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/front-end-communication.md): Learn how front-end clients communicate with cloud-native systems
+- [gRPC](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/grpc.md): Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
+- [IdentityServer for Cloud Native Apps](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/identity-server.md): Architecting Cloud Native .NET Apps for Azure | IdentityServer
+- [Cloud-native identity](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/identity.md): Architecting Cloud Native .NET Apps for Azure | Identity
+- [Architecting Cloud Native .NET Applications for Azure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/index.md): A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
+- [Infrastructure as code](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/infrastructure-as-code.md): Embracing Infrastructure as Code (IaC) with cloud-native applications
+- [Azure platform resiliency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/infrastructure-resiliency-azure.md): Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
+- [Introducing eShopOnContainers reference app](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/introduce-eshoponcontainers-reference-app.md): Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
+- [Introduction to cloud-native applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/introduction.md): Learn about cloud-native computing
+- [Leveraging containers and orchestrators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/leverage-containers-orchestrators.md): Leveraging Docker Containers and Kubernetes Orchestrators in Azure
+- [Leveraging serverless functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/leverage-serverless-functions.md): Leveraging Serverless and Azure Functions in Cloud-Native Applications
+- [Logging with Elastic Stack](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/logging-with-elastic-stack.md): Logging using Elastic Stack, Logstash, and Kibana
+- [Mapping eShopOnContainers to Azure Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/map-eshoponcontainers-azure-services.md): Mapping eShopOnContainers to Azure Services like Azure Kubernetes Service, API Gateway, and Azure Service Bus.
+- [Monitoring in Azure Kubernetes Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/monitoring-azure-kubernetes.md): Monitoring in Azure Kubernetes Services
+- [Monitoring and health](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/monitoring-health.md): Monitoring and Health
+- [Observability patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/observability-patterns.md): Observability patterns for cloud-native applications
+- [Other container deployment options](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/other-deployment-options.md): Other Container Deployment Options using Azure
+- [Relational vs. NoSQL data](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/relational-vs-nosql-data.md): Learn about relational and NoSQL data in cloud-native applications
+- [Cloud-native resiliency](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/resiliency.md): Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency
+- [Resilient communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/resilient-communications.md): Architecting Cloud Native .NET Apps for Azure | Resilient Communication
+- [Scaling cloud-native applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/scale-applications.md): Scaling cloud-native applications with Azure Kubernetes Service and Azure Functions to meet user demand in a cost effective way.
+- [Scaling containers and serverless applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/scale-containers-serverless.md): Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
+- [Cloud-native security](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/security.md): Architecting Cloud Native .NET Apps for Azure | Security
+- [Service Mesh communication infrastructure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/service-mesh-communication-infrastructure.md): Learn about how service mesh technologies streamline cloud-native microservice communication
+- [Service-to-service communication](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/service-to-service-communication.md): Learn how back-end cloud-native microservices communicate with other back-end microservices.
+- [Summary](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/cloud-native/summary.md): Learn the key conclusions about Cloud Native applications that are fully developed in the Architecting Cloud-Native .NET Apps for Azure guide/e-book.

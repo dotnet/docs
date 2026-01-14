@@ -1,0 +1,6 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "title": "Thread-Safe Collections",
+  "description": "Thread-safe and scalable collection classes in the `System.Collections.Concurrent` namespace. Includes `ConcurrentDictionary<TKey,TValue>`, `ConcurrentQueue<T>`, `ConcurrentStack<T>`, `ConcurrentBag<T>`, and `BlockingCollection<T>` for producer-consumer scenarios. These collections use fine-grained locking or lock-free mechanisms for high-performance multi-threaded access.",
+  "shortDescription": "Concurrent collections like `ConcurrentDictionary` and `BlockingCollection` for multi-threaded access."
+}

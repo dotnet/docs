@@ -1,10 +1,5 @@
-# Event Logging Docs
+# Event Logging in WCF
 
-- [Event logging](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/index.md): Learn more about: Event Logging in WCF
-
-## Events general reference
-
-- [Events general reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/events-general-reference.md): Learn more about: Events General Reference
 - [BindingError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/bindingerror.md): Learn more about: BindingError
 - [ComPlusDllHostInitializerStartingError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/complusdllhostinitializerstartingerror.md): Learn more about: ComPlusDllHostInitializerStartingError
 - [ComPlusInstanceCreationError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/complusinstancecreationerror.md): Learn more about: ComPlusInstanceCreationError
@@ -14,6 +9,7 @@
 - [ComPlusTLBImportError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/complustlbimporterror.md): Learn more about: ComPlusTLBImportError
 - [CoordinatorRecoveryLogEntryCorrupt](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/coordinatorrecoverylogentrycorrupt.md): Learn more about: CoordinatorRecoveryLogEntryCorrupt
 - [CoordinatorRecoveryLogEntryCreationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/coordinatorrecoverylogentrycreationfailure.md): Learn more about: CoordinatorRecoveryLogEntryCreationFailure
+- [Events General Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/events-general-reference.md): Learn more about: Events General Reference
 - [FailedToCreateMessageLoggingTraceSource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtocreatemessageloggingtracesource.md): Learn more about: FailedToCreateMessageLoggingTraceSource
 - [FailedToInitializeTraceSource](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtoinitializetracesource.md): Learn more about: FailedToInitializeTraceSource
 - [FailedToLoadPerformanceCounter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtoloadperformancecounter.md): Learn more about: FailedToLoadPerformanceCounter
@@ -22,19 +18,20 @@
 - [FailedToSetupTracing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtosetuptracing.md): Learn more about: FailedToSetupTracing
 - [FailedToTraceEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtotraceevent.md): Learn more about: FailedToTraceEvent
 - [FailedToTraceEventWithException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failedtotraceeventwithexception.md): Learn more about: FailedToTraceEventWithException
-- [FailFastException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failfastexception.md): Learn more about: FailFastException
 - [FailFast](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failfast.md): Learn more about: FailFast
+- [FailFastException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/failfastexception.md): Learn more about: FailFastException
 - [FatalUnexpectedStateMachineEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/fatalunexpectedstatemachineevent.md): Learn more about: FatalUnexpectedStateMachineEvent
 - [ImpersonationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/impersonationfailure.md): Learn more about: ImpersonationFailure
 - [ImpersonationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/impersonationsuccess.md): Learn more about: ImpersonationSuccess
+- [Event Logging in WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/index.md): Learn more about: Event Logging in WCF
 - [InvariantAssertionFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/invariantassertionfailed.md): Learn more about: InvariantAssertionFailed
 - [LAFailedToListenForApp](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/lafailedtolistenforapp.md): Learn more about: LAFailedToListenForApp
 - [MessageAuthenticationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messageauthenticationfailure.md): Learn more about: MessageAuthenticationFailure
 - [MessageAuthenticationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messageauthenticationsuccess.md): Learn more about: MessageAuthenticationSuccess
 - [MessageLoggingOff](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messageloggingoff.md): Learn more about: MessageLoggingOff
 - [MessageLoggingOn](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messageloggingon.md): Learn more about: MessageLoggingOn
-- [MessageQueueDuplicatedSocketLeak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messagequeueduplicatedsocketleak.md): Learn more about: MessageQueueDuplicatedSocketLeak
 - [MessageQueueDuplicatedPipeLeak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messagequeueduplicatedpipeleak.md): Learn more about: MessageQueueDuplicatedPipeLeak
+- [MessageQueueDuplicatedSocketLeak](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/messagequeueduplicatedsocketleak.md): Learn more about: MessageQueueDuplicatedSocketLeak
 - [MissingNecessaryEnhancedKeyUsage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/missingnecessaryenhancedkeyusage.md): Learn more about: MissingNecessaryEnhancedKeyUsage
 - [MissingNecessaryKeyUsage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/missingnecessarykeyusage.md): Learn more about: MissingNecessaryKeyUsage
 - [NonFatalUnexpectedStateMachineEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/nonfatalunexpectedstatemachineevent.md): Learn more about: NonFatalUnexpectedStateMachineEvent
@@ -47,3 +44,38 @@
 - [ProtocolRecoveryBeginningFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolrecoverybeginningfailure.md): Learn more about: ProtocolRecoveryBeginningFailure
 - [ProtocolRecoveryComplete](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolrecoverycomplete.md): Learn more about: ProtocolRecoveryComplete
 - [ProtocolRecoveryCompleteFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolrecoverycompletefailure.md): Learn more about: ProtocolRecoveryCompleteFailure
+- [ProtocolStartFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolstartfailure.md): Learn more about: ProtocolStartFailure
+- [ProtocolStopFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolstopfailure.md): Learn more about: ProtocolStopFailure
+- [ProtocolStopped](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/protocolstopped.md): Learn more about: ProtocolStopped
+- [SecurityNegotiationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/securitynegotiationfailure.md): Learn more about: SecurityNegotiationFailure
+- [SecurityNegotiationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/securitynegotiationsuccess.md): Learn more about: SecurityNegotiationSuccess
+- [ServiceAuthorizationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/serviceauthorizationfailure.md): Learn more about: ServiceAuthorizationFailure
+- [ServiceAuthorizationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/serviceauthorizationsuccess.md): Learn more about: ServiceAuthorizationSuccess
+- [ServiceStartFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/servicestartfailed.md): Learn more about: ServiceStartFailed
+- [SslNoAccessiblePrivateKey](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/sslnoaccessibleprivatekey.md): Learn more about: SslNoAccessiblePrivateKey
+- [SslNoPrivateKey](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/sslnoprivatekey.md): Learn more about: SslNoPrivateKey
+- [StartErrorPublish](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/starterrorpublish.md): Learn more about: StartErrorPublish
+- [ThumbPrintNotFound](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/thumbprintnotfound.md): Learn more about: ThumbPrintNotFound
+- [ThumbPrintNotValidated](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/thumbprintnotvalidated.md): Learn more about: ThumbPrintNotValidated
+- [TraceCodeRemovedBadFilter](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/tracecoderemovedbadfilter.md): Learn more about: TraceCodeRemovedBadFilter
+- [TransactionBridgeRecoveryFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/transactionbridgerecoveryfailure.md): Learn more about: TransactionBridgeRecoveryFailure
+- [TransportAuthenticationFailure](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/transportauthenticationfailure.md): Learn more about: TransportAuthenticationFailure
+- [TransportAuthenticationSuccess](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/transportauthenticationsuccess.md): Learn more about: TransportAuthenticationSuccess
+- [UnhandledStateMachineExceptionRecordDescription](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/unhandledstatemachineexceptionrecorddescription.md): Learn more about: UnhandledStateMachineExceptionRecordDescription
+- [UnknownListenerAdapterError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/unknownlisteneradaptererror.md): Learn more about: UnknownListenerAdapterError
+- [WasConnectionTimedout](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wasconnectiontimedout.md): Learn more about: WasConnectionTimedout
+- [WasDisconnected](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wasdisconnected.md): Learn more about: WasDisconnected
+- [WebHostFailedToListen](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/webhostfailedtolisten.md): Learn more about: WebHostFailedToListen
+- [WebHostFailedToProcessRequest](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/webhostfailedtoprocessrequest.md): Learn more about: WebHostFailedToProcessRequest
+- [WebHostHttpError](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/webhosthttperror.md): Learn more about: WebHostHttpError
+- [WebHostUnhandledException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/webhostunhandledexception.md): Learn more about: WebHostUnhandledException
+- [WmiAdminTypeMismatch](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiadmintypemismatch.md): Learn more about: WmiAdminTypeMismatch
+- [WmiCreateInstanceFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmicreateinstancefailed.md): Learn more about: WmiCreateInstanceFailed
+- [WmiDeleteInstanceFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmideleteinstancefailed.md): Learn more about: WmiDeleteInstanceFailed
+- [WmiExecMethodFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiexecmethodfailed.md): Learn more about: WmiExecMethodFailed
+- [WmiExecQueryFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiexecqueryfailed.md): Learn more about: WmiExecQueryFailed
+- [WmiGetObjectFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmigetobjectfailed.md): Learn more about: WmiGetObjectFailed
+- [WmiPropertyMissing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmipropertymissing.md): Learn more about: WmiPropertyMissing
+- [WmiPutInstanceFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiputinstancefailed.md): Learn more about: WmiPutInstanceFailed
+- [WmiRegistrationFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiregistrationfailed.md): Learn more about: WmiRegistrationFailed
+- [WmiUnregistrationFailed](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/event-logging/wmiunregistrationfailed.md): Learn more about: WmiUnregistrationFailed

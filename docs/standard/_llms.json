@@ -1,0 +1,14 @@
+{
+  "$schema": "https://example.com/llms-customization.schema.json",
+  "title": ".NET Standard Library",
+  "description": "Core .NET libraries for common programming tasks including collections, I/O, serialization, threading, and more.",
+  "shortDescription": "Core libraries for collections, I/O, serialization, and threading.",
+  "sections": [
+    { "path": "serialization/system-text-json", "priority": 100 },
+    { "path": "collections", "priority": 90 },
+    { "path": "linq", "priority": 80 },
+    { "path": "io", "priority": 70 },
+    { "path": "threading", "priority": 60 },
+    { "path": "security", "priority": 50 }
+  ]
+}

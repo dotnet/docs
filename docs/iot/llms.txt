@@ -1,14 +1,13 @@
-# IoT Docs
+# IoT
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/intro.md): Learn how .NET can be used to build applications for IoT devices and scenarios.
+> Building IoT applications that interact with sensors, displays, and hardware on devices like Raspberry Pi. Core packages are `System.Device.Gpio` for low-level protocols (GPIO, I²C, SPI, PWM) and `Iot.Device.Bindings` for device-specific bindings. .NET runs natively on ARM-based Linux boards.
 
-## How-to guides
+- [Debug .NET apps on ARM single-board computers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/debugging.md): Learn how to debug .NET apps on ARM single-board computers (SBCs) such as Raspberry Pi.
+- [Deploy .NET apps to ARM single-board computers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/deployment.md): Learn how to deploy .NET apps to ARM single-board computers (SBCs) such as Raspberry Pi.
+- [Develop apps for IoT devices with the .NET IoT Libraries](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/intro.md): Learn how .NET can be used to build applications for IoT devices and scenarios.
+- [Use .NET IoT Libraries on Windows, Linux, and macOS computers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/usb.md): Learn how to develop GPIO, I2C, and SPI code with .NET on PCs.
 
-- [Deployment](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/deployment.md): Learn how to deploy .NET apps to ARM single-board computers (SBCs) such as Raspberry Pi.
-- [Debugging](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/debugging.md): Learn how to debug .NET apps on ARM single-board computers (SBCs) such as Raspberry Pi.
-- [Use the IoT libraries on Windows, Linux, and macOS computers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/usb.md): Learn how to develop GPIO, I2C, and SPI code with .NET on PCs.
+## Topic Indices
 
-## Children
-
-- [Quickstarts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/quickstarts/llms.txt)
-- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/tutorials/llms.txt)
+- [Quickstarts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/quickstarts/llms.txt): 1 topics
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/iot/tutorials/llms.txt): 5 topics

@@ -1,49 +1,38 @@
 # Threading Docs
 
-## Barrier
+> Running code concurrently using threads, synchronization primitives, and the thread pool. Core types include `Thread`, `ThreadPool`, `Monitor`, `Mutex`, `Semaphore`, and `ManualResetEvent`. For most scenarios, prefer `Task`-based `async`/`await` over direct thread manipulation.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/barrier.md): Learn more about: Barrier
-- [Synchronize concurrent operations with a Barrier](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md): Learn more about: How to: Synchronize Concurrent Operations with a Barrier
-
-## Cancel threads
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/cancellation-in-managed-threads.md): Understand cancellation in managed threads. Learn about cancellation tokens in cooperative cancellation of asynchronous or long-running synchronous operations.
-- [Cancel threads cooperatively](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/canceling-threads-cooperatively.md): Learn more about: Canceling threads cooperatively
-
-## How-tos
-
-- [Listen for cancellation requests by polling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-cancellation-requests-by-polling.md): Learn more about: How to: Listen for Cancellation Requests by Polling
+- [Managed Threading Best Practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-best-practices.md): Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
+- [Managed Threading Basics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-basics.md): See links to other managed threading articles, covering topics such as exceptions, synchronizing data, foreground & background threads, local storage, and more.
+- [Overview of synchronization primitives](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/overview-of-synchronization-primitives.md): Learn about .NET thread synchronization primitives used to synchronize access to a shared resource or control thread interaction
+- [Barrier](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/barrier.md): Learn more about: Barrier
+- [Canceling threads cooperatively](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/canceling-threads-cooperatively.md): Learn more about: Canceling threads cooperatively
+- [Cancellation in Managed Threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/cancellation-in-managed-threads.md): Understand cancellation in managed threads. Learn about cancellation tokens in cooperative cancellation of asynchronous or long-running synchronous operations.
+- [CountdownEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/countdownevent.md): Learn more about: CountdownEvent
+- [Creating threads and passing data at start time](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md): Understand how to create threads and pass data at the start time of an operating system process in .NET.
+- [Destroying threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/destroying-threads.md): Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
+- [EventWaitHandle](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/eventwaithandle.md): Learn more about: EventWaitHandle
+- [Exceptions in Managed Threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/exceptions-in-managed-threads.md): See how unhandled exceptions are handled in .NET. Most unhandled thread exceptions proceed naturally and lead to application termination.
+- [Foreground and Background Threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/foreground-and-background-threads.md): Determine or change whether a thread is a background thread or a foreground thread using the Thread.IsBackground property in .NET.
+- [How to: Enable Thread-Tracking Mode in SpinLock](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md): Learn more about: How to: Enable Thread-Tracking Mode in SpinLock
+- [How to: Listen for Cancellation Requests by Polling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-cancellation-requests-by-polling.md): Learn more about: How to: Listen for Cancellation Requests by Polling
+- [How to: Listen for Cancellation Requests That Have Wait Handles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md): Learn more about: How to: Listen for Cancellation Requests That Have Wait Handles
+- [How to: Listen for Multiple Cancellation Requests](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-multiple-cancellation-requests.md): Learn more about: How to: Listen for Multiple Cancellation Requests
 - [Register callbacks for cancellation requests](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-register-callbacks-for-cancellation-requests.md): Learn more about: Register callbacks for cancellation requests
-- [Listen for cancellation requests that have wait handles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md): Learn more about: How to: Listen for Cancellation Requests That Have Wait Handles
-- [Listen for multiple cancellation requests](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-listen-for-multiple-cancellation-requests.md): Learn more about: How to: Listen for Multiple Cancellation Requests
-
-## Managed threading basics
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-basics.md): See links to other managed threading articles, covering topics such as exceptions, synchronizing data, foreground & background threads, local storage, and more.
-- [Threads and threading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/threads-and-threading.md): Learn about threading, such as processes & threads, when to use multiple threads, & how to use multithreading to increase responsiveness or throughput in .NET.
-- [Exceptions in managed threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/exceptions-in-managed-threads.md): See how unhandled exceptions are handled in .NET. Most unhandled thread exceptions proceed naturally and lead to application termination.
-- [Synchronize data for multithreading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/synchronizing-data-for-multithreading.md): Learn how to synchronize data for multithreading in .NET. Choose strategies such as synchronized code regions, manual synchronization, or synchronized contexts.
-- [Foreground and background threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/foreground-and-background-threads.md): Determine or change whether a thread is a background thread or a foreground thread using the Thread.IsBackground property in .NET.
-- [Managed and unmanaged threading in windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-and-unmanaged-threading-in-windows.md): Learn more about: Managed and unmanaged threading in Windows
-- [Thread local storage: Thread-relative static fields and data slots](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md): Learn more about: Thread Local Storage: Thread-Relative Static Fields and Data Slots
-
-## SpinLock
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/spinlock.md): Learn more about: SpinLock
-- [Use SpinLock for low-level synchronization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md): Learn more about: How to: use SpinLock for low-level synchronization
-- [Enable thread-tracking mode in SpinLock](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md): Learn more about: How to: Enable Thread-Tracking Mode in SpinLock
-
-## SpinWait
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/spinwait.md): Learn more about: SpinWait
-- [Use SpinWait to implement a two-phase wait operation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md): Learn more about: How to: Use SpinWait to Implement a Two-Phase Wait Operation
-
-## Threading
-
-- [Best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-threading-best-practices.md): Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
-
-## Threading objects and features
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/threading-objects-and-features.md): Learn more about: Threading objects and features
+- [How to: Synchronize Concurrent Operations with a Barrier](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md): Learn more about: How to: Synchronize Concurrent Operations with a Barrier
+- [How to: use SpinLock for low-level synchronization](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md): Learn more about: How to: use SpinLock for low-level synchronization
+- [How to: Use SpinWait to Implement a Two-Phase Wait Operation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md): Learn more about: How to: Use SpinWait to Implement a Two-Phase Wait Operation
+- [Managed and Unmanaged Threading in Windows](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/managed-and-unmanaged-threading-in-windows.md): Learn more about: Managed and unmanaged threading in Windows
+- [Mutexes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/mutexes.md): Learn how to use a Mutex from the System.Threading namespace.
+- [Pausing and interrupting threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/pausing-and-resuming-threads.md): Learn how to pause & interrupt threads in .NET. Learn how to use methods like Thread.Sleep & Thread.Interrupt, & exceptions such as ThreadInterruptedException.
+- [Scheduling threads](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/scheduling-threads.md): Learn more about: Scheduling threads
+- [Semaphore and SemaphoreSlim](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/semaphore-and-semaphoreslim.md): Learn about Semaphore & SemaphoreSlim. Class Semaphore is a thin wrapper around the Win32 semaphore object. Class SemaphoreSlim is a fast lightweight semaphore.
+- [SpinLock](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/spinlock.md): Learn more about: SpinLock
+- [SpinWait](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/spinwait.md): Learn more about: SpinWait
+- [Synchronizing Data for Multithreading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/synchronizing-data-for-multithreading.md): Learn how to synchronize data for multithreading in .NET. Choose strategies such as synchronized code regions, manual synchronization, or synchronized contexts.
 - [The managed thread pool](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/the-managed-thread-pool.md): Learn about the .NET thread pool that provides background worker threads
+- [Thread Local Storage: Thread-Relative Static Fields and Data Slots](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md): Learn more about: Thread Local Storage: Thread-Relative Static Fields and Data Slots
+- [Threading objects and features](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/threading-objects-and-features.md): Learn more about: Threading objects and features
+- [Threads and threading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/threads-and-threading.md): Learn about threading, such as processes & threads, when to use multiple threads, & how to use multithreading to increase responsiveness or throughput in .NET.
 - [Timers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/timers.md): Learn what .NET timers to use in a multithreaded environment.
+- [Using threads and threading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/threading/using-threads-and-threading.md): Learn about using threads and threading in .NET, so you can write applications to perform many operations at the same time (multithreading).

@@ -1,22 +1,12 @@
-# Wmi Docs
+# Using Windows Management Instrumentation for Diagnostics
 
-- [Using Windows Management Instrumentation for diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/index.md): Learn more about: Using Windows Management Instrumentation for Diagnostics
-
-## Endpoint
-
-- [Endpoint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/endpoint.md): Learn more about: Endpoint
-- [GetOperationCounterInstanceName](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/getoperationcounterinstancename.md): Learn more about: GetOperationCounterInstanceName
-
-## WMI Class Reference
-
-- [WMI Class Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/wmi-class-reference.md): Learn more about: WMI Class Reference
 - [ActivityTransfer](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/activitytransfer.md): Learn more about: ActivityTransfer
 - [AppDomainInfo](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/appdomaininfo.md): Learn more about: AppDomainInfo
 - [AspNetCompatibilityRequirementsAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/aspnetcompatibilityrequirementsattribute.md): Learn more about: AspNetCompatibilityRequirementsAttribute
 - [AsymmetricSecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/asymmetricsecuritybindingelement.md): Learn more about: AsymmetricSecurityBindingElement
 - [Behavior class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/behavior-class.md): Learn more about: Behavior class
 - [BinaryMessageEncodingBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/binarymessageencodingbindingelement.md): Learn more about: BinaryMessageEncodingBindingElement
-- [Binding](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/binding.md): Learn more about: Binding
+- [Binding2](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/binding.md): Learn more about: Binding
 - [BindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/bindingelement.md): Learn more about: BindingElement
 - [CallbackBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/callbackbehavior.md): Learn more about: CallbackBehavior
 - [Channel class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/channel-class.md): Learn more about: Channel class
@@ -25,11 +15,14 @@
 - [ClientViaBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/clientviabehavior.md): Learn more about: ClientViaBehavior
 - [CompositeDuplexBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/compositeduplexbindingelement.md): Learn more about: CompositeDuplexBindingElement
 - [ConnectionOrientedTransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/connectionorientedtransportbindingelement.md): Learn more about: ConnectionOrientedTransportBindingElement
-- [Contract](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/contract.md): Learn more about the Contract class.
+- [Contract class](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/contract.md): Learn more about the Contract class.
 - [CustomBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/custombindingelement.md): Learn more about: CustomBindingElement
 - [DeliveryRequirementsAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/deliveryrequirementsattribute.md): Learn more about: DeliveryRequirementsAttribute
+- [Endpoint](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/endpoint.md): Learn more about: Endpoint
+- [GetOperationCounterInstanceName](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/getoperationcounterinstancename.md): Learn more about: GetOperationCounterInstanceName
 - [HttpsTransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/httpstransportbindingelement.md): Learn more about: HttpsTransportBindingElement
 - [HttpTransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/httptransportbindingelement.md): Learn more about: HttpTransportBindingElement
+- [Using Windows Management Instrumentation for Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/index.md): Learn more about: Using Windows Management Instrumentation for Diagnostics
 - [LocalServiceSecuritySettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/localservicesecuritysettings.md): Learn more about: LocalServiceSecuritySettings
 - [MatchAllEndpointBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/matchallendpointbehavior.md): Learn more about: MatchAllEndpointBehavior
 - [MessageEncodingBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/messageencodingbindingelement.md): Learn more about: MessageEncodingBindingElement
@@ -47,3 +40,40 @@
 - [PeerResolverBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/peerresolverbindingelement.md): Learn more about: PeerResolverBindingElement
 - [PeerSecuritySettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/peersecuritysettings.md): Learn more about: PeerSecuritySettings
 - [PeerTransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/peertransportbindingelement.md): Learn more about: PeerTransportBindingElement
+- [PeerTransportSecuritySettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/peertransportsecuritysettings.md): Learn more about: PeerTransportSecuritySettings
+- [PnrpPeerResolverBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/pnrppeerresolverbindingelement.md): Learn more about: PnrpPeerResolverBindingElement
+- [PrivacyNoticeBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/privacynoticebindingelement.md): Learn more about: PrivacyNoticeBindingElement
+- [ReliableSessionBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/reliablesessionbindingelement.md): Learn more about: ReliableSessionBindingElement
+- [SecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/securitybindingelement.md): Learn more about: SecurityBindingElement
+- [Service](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/service.md): Learn more about: Service
+- [ServiceAppDomain](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/serviceappdomain.md): Learn more about: ServiceAppDomain
+- [ServiceAuthorizationBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/serviceauthorizationbehavior.md): Learn more about: ServiceAuthorizationBehavior
+- [ServiceBehaviorAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicebehaviorattribute.md): Learn more about: ServiceBehaviorAttribute
+- [ServiceCredentials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicecredentials.md): Learn more about: ServiceCredentials
+- [ServiceDebugBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicedebugbehavior.md): Learn more about: ServiceDebugBehavior
+- [ServiceMetadataBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicemetadatabehavior.md): Learn more about: ServiceMetadataBehavior
+- [ServiceSecurityAuditBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicesecurityauditbehavior.md): Learn more about: ServiceSecurityAuditBehavior
+- [ServiceThrottlingBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicethrottlingbehavior.md): Learn more about: ServiceThrottlingBehavior
+- [ServiceTimeoutsBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicetimeoutsbehavior.md): Learn more about: ServiceTimeoutsBehavior
+- [ServiceToEndpointAssociation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/servicetoendpointassociation.md): Learn more about: ServiceToEndpointAssociation
+- [SslStreamSecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/sslstreamsecuritybindingelement.md): Learn more about: SslStreamSecurityBindingElement
+- [SymmetricSecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/symmetricsecuritybindingelement.md): Learn more about: SymmetricSecurityBindingElement
+- [SynchronousReceiveBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/synchronousreceivebehavior.md): Learn more about: SynchronousReceiveBehavior
+- [TcpConnectionPoolSettings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/tcpconnectionpoolsettings.md): Learn more about: TcpConnectionPoolSettings
+- [TcpTransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/tcptransportbindingelement.md): Learn more about: TcpTransportBindingElement
+- [TextMessageEncodingBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/textmessageencodingbindingelement.md): Learn more about: TextMessageEncodingBindingElement
+- [TraceListener](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/tracelistener.md): Learn more about: TraceListener
+- [TraceListenerArgument](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/tracelistenerargument.md): Learn more about: TraceListenerArgument
+- [TransactedBatchingBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/transactedbatchingbehavior.md): Learn more about: TransactedBatchingBehavior
+- [TransactionFlowAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/transactionflowattribute.md): Learn more about: TransactionFlowAttribute
+- [TransactionFlowBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/transactionflowbindingelement.md): Learn more about: TransactionFlowBindingElement
+- [TransportBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/transportbindingelement.md): Learn more about: TransportBindingElement
+- [TransportSecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/transportsecuritybindingelement.md): Learn more about: TransportSecurityBindingElement
+- [UseManagedPresentationBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/usemanagedpresentationbindingelement.md): Learn more about: UseManagedPresentationBindingElement
+- [WindowsStreamSecurityBindingElement](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/windowsstreamsecuritybindingelement.md): Learn more about: WindowsStreamSecurityBindingElement
+- [WMI Class Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/wmi-class-reference.md): Learn more about: WMI Class Reference
+- [WSAT_TraceEvent](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/wsat-traceevent.md): Learn more about: WSAT_TraceEvent
+- [WSAT_TraceProvider](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/wsat-traceprovider.md): Learn more about: WSAT_TraceProvider
+- [WSAT_TraceRecord](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/wsat-tracerecord.md): Learn more about: WSAT_TraceRecord
+- [XmlDictionaryReaderQuotas](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/xmldictionaryreaderquotas.md): Learn more about: XmlDictionaryReaderQuotas
+- [XmlSerializerOperationBehavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/wmi/xmlserializeroperationbehavior.md): Learn more about: XmlSerializerOperationBehavior

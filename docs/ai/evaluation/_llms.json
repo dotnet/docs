@@ -1,4 +1,5 @@
 {
-  "$schema": "https://example.com/llms-customization.schema.json",
-  "description": "Measuring and validating AI response quality using automated evaluation frameworks. The `Microsoft.Extensions.AI.Evaluation` library provides scoring metrics for relevance, coherence, and correctness. Use response caching and reporting for offline evaluation pipelines in unit tests."
+  "title": "AI Evaluation",
+  "description": "Measuring and validating AI response quality using automated evaluation frameworks. The `Microsoft.Extensions.AI.Evaluation` library provides scoring metrics for relevance, coherence, and correctness. Use response caching and reporting for offline evaluation pipelines in unit tests.",
+  "shortDescription": "Evaluate AI responses with scoring metrics and automated testing."
 }

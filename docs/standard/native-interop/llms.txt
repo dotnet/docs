@@ -1,41 +1,29 @@
-# Native Interop Docs
+# Native interoperability
 
-## COM interop
+> Calling native code from managed .NET code to access OS APIs, hardware, or existing C/C++ libraries. Platform Invoke (P/Invoke) uses `DllImport` to call native functions; COM interop enables interaction with COM components. Use `LibraryImport` (source-generated) in .NET 7+ for better performance and trimming support.
 
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/cominterop.md): Learn how to interoperate with COM libraries in .NET.
-- [Qualify .NET types for COM interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/qualify-net-types-for-interoperation.md): This article provides guidelines to help you expose types in a .NET assembly to COM applications for COM interop.
-
-## COM wrappers
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/com-wrappers.md): COM clients and .NET objects interact by using a COM callable wrapper and a runtime callable wrapper. The CLR creates wrappers automatically.
-- [Runtime-callable wrapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/runtime-callable-wrapper.md): The CLR exposes COM objects through a runtime callable wrapper, which manages calls between a .NET client and a COM object.
-- [COM-callable wrapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/com-callable-wrapper.md): When a COM client calls a .NET object, the CLR creates the managed object and a COM callable wrapper for it. COM clients call the wrapper for the object.
-- [Tutorial: Use the ComWrappers API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/tutorial-comwrappers.md): A tutorial on properly implementing the ComWrappers API.
-- [Source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/comwrappers-source-generation.md): Learn about compile-time source generation for ComWrappers in .NET.
-
-## Native interoperability
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/index.md): Learn how to interface with native components in .NET.
-- [Interop best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/best-practices.md): Learn the best practices for interfacing with native components in .NET.
-- [Apply interop attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/apply-interop-attributes.md): This article summarizes COM interop attributes of the System.Runtime.InteropServices namespace, including design-time and conversion-tool attributes.
-- [HRESULT and PreserveSig](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/preserve-sig.md): Learn how managed signatures translate to native signatures for interop methods in .NET
-- [Exceptions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/exceptions-interoperability.md): Learn more about: Working with Interop Exceptions in Unmanaged Code
-- [ABI support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/abi-support.md): Defines the current support for interoperability with various ABIs.
-
-## P/Invoke
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/pinvoke.md): Learn how to call native functions via P/Invoke in .NET.
-- [Source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/pinvoke-source-generation.md): Learn about compile-time source generation for platform invokes in .NET.
-- [Native library loading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/native-library-loading.md): Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
-- [Calling conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/calling-conventions.md): Learn how to specify unmanaged calling conventions in .NET
-
-## Type marshalling
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/type-marshalling.md): Learn how .NET marshals your types to a native representation.
+- [Native interoperability ABI support](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/abi-support.md): Defines the current support for interoperability with various ABIs.
+- [Applying Interop Attributes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/apply-interop-attributes.md): This article summarizes COM interop attributes of the System.Runtime.InteropServices namespace, including design-time and conversion-tool attributes.
+- [Native interoperability best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/best-practices.md): Learn the best practices for interfacing with native components in .NET.
+- [Unmanaged calling conventions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/calling-conventions.md): Learn how to specify unmanaged calling conventions in .NET
 - [Charsets and marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/charset.md): Learn how different values of CharSet can change how .NET marshals your data to native code.
-- [Disabled marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/disabled-marshalling.md): Learn how .NET marshals your types to a native representation when runtime marshalling is disabled.
-- [Customize structure marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/customize-struct-marshalling.md): Learn how to customize how .NET marshals structures to a native representation.
-- [Customize parameter marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/customize-parameter-marshalling.md): Learn how to customize how .NET marshals your parameters to a native representation.
-- [Source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/custom-marshalling-source-generation.md): Learn about compile-time source generation for custom marshalling for interop in .NET.
-- [Custom marshaller shapes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/custom-marshaller-shapes.md): Learn more about: Value Marshallers in Interop Source Generation
-- [Tutorial: Use custom marshallers in source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/tutorial-custom-marshaller.md): Learn how to use the CustomMarshallerAttribute and implement a custom marshaller for use with source generation.
+- [COM Callable Wrapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/com-callable-wrapper.md): When a COM client calls a .NET object, the CLR creates the managed object and a COM callable wrapper for it. COM clients call the wrapper for the object.
+- [COM Wrappers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/com-wrappers.md): COM clients and .NET objects interact by using a COM callable wrapper and a runtime callable wrapper. The CLR creates wrappers automatically.
+- [COM Interop in .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/cominterop.md): Learn how to interoperate with COM libraries in .NET.
+- [ComWrappers source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/comwrappers-source-generation.md): Learn about compile-time source generation for ComWrappers in .NET.
+- [Custom Marshaller Shapes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/custom-marshaller-shapes.md): Learn more about: Value Marshallers in Interop Source Generation
+- [Custom marshalling source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/custom-marshalling-source-generation.md): Learn about compile-time source generation for custom marshalling for interop in .NET.
+- [Customizing parameter marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/customize-parameter-marshalling.md): Learn how to customize how .NET marshals your parameters to a native representation.
+- [Customizing structure marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/customize-struct-marshalling.md): Learn how to customize how .NET marshals structures to a native representation.
+- [Disabled runtime marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/disabled-marshalling.md): Learn how .NET marshals your types to a native representation when runtime marshalling is disabled.
+- [Exceptions Interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/exceptions-interoperability.md): Learn more about: Working with Interop Exceptions in Unmanaged Code
+- [Native interoperability](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/index.md): Learn how to interface with native components in .NET.
+- [Native library loading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/native-library-loading.md): Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
+- [P/Invoke source generation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/pinvoke-source-generation.md): Learn about compile-time source generation for platform invokes in .NET.
+- [Platform Invoke (P/Invoke)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/pinvoke.md): Learn how to call native functions via P/Invoke in .NET.
+- [Implicit native signature translations and PreserveSig in .NET native interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/preserve-sig.md): Learn how managed signatures translate to native signatures for interop methods in .NET
+- [Qualifying .NET Types for COM Interoperation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/qualify-net-types-for-interoperation.md): This article provides guidelines to help you expose types in a .NET assembly to COM applications for COM interop.
+- [Runtime Callable Wrapper](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/runtime-callable-wrapper.md): The CLR exposes COM objects through a runtime callable wrapper, which manages calls between a .NET client and a COM object.
+- [Using the ComWrappers API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/tutorial-comwrappers.md): A tutorial on properly implementing the ComWrappers API.
+- [Use custom marshallers in source-generated P/Invokes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/tutorial-custom-marshaller.md): Learn how to use the CustomMarshallerAttribute and implement a custom marshaller for use with source generation.
+- [Type marshalling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/native-interop/type-marshalling.md): Learn how .NET marshals your types to a native representation.

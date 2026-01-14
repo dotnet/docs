@@ -1,4 +1,5 @@
 {
+  "title": "Events",
   "description": "Notifying subscribers when something happens in your application using the publisher-subscriber pattern. Events are declared with the `event` keyword and backed by delegates like `EventHandler<T>`. Subscribers register handlers with `+=` and unregister with `-=` to respond to notifications.",
   "shortDescription": "Publisher-subscriber notifications with the `event` keyword."
 }

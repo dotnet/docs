@@ -1,33 +1,30 @@
-# C# Docs
+# C# Language
 
-## C# concepts
+> The C# programming language—syntax, features, and best practices. Covers language fundamentals, LINQ, async/await, pattern matching, records, and the latest C# 13 features. Includes language reference, tutorials, and what's new guides.
 
-- [Nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/nullable-references.md): This article provides an overview of nullable reference types. Learn how the feature provides safety against null reference exceptions, for new and existing projects.
-- [Nullable reference migrations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/nullable-migration-strategies.md): Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
-- [Methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/methods.md): Overview of methods, method parameters, and method return values
+- [System.Delegate and the `delegate` keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegate-class.md): Learn about the classes in .NET that support delegates and how those map to the 'delegate' keyword.
+- [Introduction to delegates and events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-overview.md): The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
+- [Common Patterns for Delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-patterns.md): Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
+- [Strongly Typed Delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-strongly-typed.md): Learn how to use generic delegate types to declare custom types when creating a feature requiring delegates.
+- [Delegates vs. events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/distinguish-delegates-events.md): Learn the difference between delegates and events and when to use each of these features of .NET Core.
+- [Standard .NET event patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/event-pattern.md): Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
+- [Introduction to events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/events-overview.md): Learn about events in .NET and our language design goals for events in this overview.
 - [Iterators](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/iterators.md): Learn how to use built-in C# iterators and how to create your own custom iterator methods.
+- [Overview of methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/methods.md): Overview of methods, method parameters, and method return values
+- [The Updated .NET Core Event Pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/modern-events.md): Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
+- [Update your codebase to use nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/nullable-migration-strategies.md): Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
+- [Nullable reference types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/nullable-references.md): This article provides an overview of nullable reference types. Learn how the feature provides safety against null reference exceptions, for new and existing projects.
 - [Versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/versioning.md): Understand how versioning works in C# and .NET
 
-## Delegates & events
+## Topic Indices
 
-- [Introduction to delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-overview.md): The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
-- [System.Delegate and the delegate keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegate-class.md): Learn about the classes in .NET that support delegates and how those map to the 'delegate' keyword.
-- [Strongly typed delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-strongly-typed.md): Learn how to use generic delegate types to declare custom types when creating a feature requiring delegates.
-- [Common patterns for delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/delegates-patterns.md): Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
-- [Introduction to events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/events-overview.md): Learn about events in .NET and our language design goals for events in this overview.
-- [Standard .NET event patterns](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/event-pattern.md): Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
-- [The updated .NET event pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/modern-events.md): Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
-- [Distinguish delegates and events](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/distinguish-delegates-events.md): Learn the difference between delegates and events and when to use each of these features of .NET Core.
-
-## Children
-
-- [Asynchronous Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/asynchronous-programming/llms.txt)
-- [How To](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/how-to/llms.txt)
-- [Language Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/llms.txt)
-- [Linq](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/linq/llms.txt)
-- [Misc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/llms.txt)
-- [Roslyn SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/roslyn-sdk/llms.txt)
-- [Specification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/specification/llms.txt)
-- [Tour Of C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/tour-of-csharp/llms.txt)
-- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/tutorials/llms.txt)
-- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/llms.txt)
+- [Asynchronous Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/asynchronous-programming/llms.txt): 9 topics
+- [How To](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/how-to/llms.txt): 7 topics
+- [Language Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/llms.txt): 4 topics, 343 in tree
+- [Linq](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/linq/llms.txt): 6 topics, 22 in tree
+- [Misc](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/misc/llms.txt): 540 topics
+- [Roslyn SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/roslyn-sdk/llms.txt): 7 topics
+- [Specification](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/specification/llms.txt): 2 topics
+- [Tour Of C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/tour-of-csharp/llms.txt): 5 topics, 12 in tree; Introduction to C# syntax, types, and core concepts for new developers.
+- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/tutorials/llms.txt): 9 topics
+- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/whats-new/llms.txt): 7 topics

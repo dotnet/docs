@@ -1,21 +1,10 @@
 # Functions Docs
 
-## Functions
-
-- [Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/index.md): Learn about functions in F# and how F# supports common functional programming constructs.
-- [Recursive Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/recursive-functions-the-rec-keyword.md): Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.
-- [Inline Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/inline-functions.md): Learn how to use F# inline functions that are integrated directly into the calling code.
-- [Function Expressions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/lambda-expressions-the-fun-keyword.md): Learn how to use the F# 'fun' keyword to define a lambda expression, which is an anonymous function.
-
-## Interoperability
-
-- [External functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/external-functions.md): Learn about the F# language support for calling functions in native code.
-
-## let Bindings
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/let-bindings.md): Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
 - [do Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/do-bindings.md): Learn how an F# 'do' binding is used to execute code without defining a function or value.
-
-## Organizing code
-
-- [Entry point](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/entry-point.md): Learn how to set the entry point to an F# program that is compiled as an executable file, where execution formally starts.
+- [Console Applications and Explicit Entry Points](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/entry-point.md): Learn how to set the entry point to an F# program that is compiled as an executable file, where execution formally starts.
+- [External Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/external-functions.md): Learn about the F# language support for calling functions in native code.
+- [Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/index.md): Learn about functions in F# and how F# supports common functional programming constructs.
+- [Inline Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/inline-functions.md): Learn how to use F# inline functions that are integrated directly into the calling code.
+- [Lambda Expressions: The fun Keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/lambda-expressions-the-fun-keyword.md): Learn how to use the F# 'fun' keyword to define a lambda expression, which is an anonymous function.
+- [let Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/let-bindings.md): Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
+- [Recursive Functions: The rec Keyword](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/language-reference/functions/recursive-functions-the-rec-keyword.md): Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.

@@ -1,13 +1,8 @@
 # Using F# On Azure Docs
 
-## Azure storage
-
-- [Blob storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/blob-storage.md): Store unstructured data in the cloud with Azure Blob Storage.
-- [File storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/file-storage.md): Store file data in the cloud with Azure Files and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
-- [Queue storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/queue-storage.md): Azure Queues provide reliable, asynchronous messaging between application components. Cloud messaging enables your application components to scale independently.
-- [Table storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/table-storage.md): Store structured data in the cloud using Azure Table Storage or Azure Cosmos DB.
-
-## F# for Azure
-
-- [Azure resource management](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/deploying-and-managing.md): Learn how to deploy and manage Azure resources with F\#
-- [Other Azure services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/other-azure-services.md): Guide to using other Azure services with F#
+- [Get started with Azure Blob Storage using F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/blob-storage.md): Store unstructured data in the cloud with Azure Blob Storage.
+- [Deploying and Managing Azure Resources with F\#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/deploying-and-managing.md): Learn how to deploy and manage Azure resources with F\#
+- [Get started with Azure Files using F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/file-storage.md): Store file data in the cloud with Azure Files and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
+- [Using other Azure services with F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/other-azure-services.md): Guide to using other Azure services with F#
+- [Get started with Azure Queue Storage using F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/queue-storage.md): Azure Queues provide reliable, asynchronous messaging between application components. Cloud messaging enables your application components to scale independently.
+- [Get started with Azure Table Storage using F#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fsharp/using-fsharp-on-azure/table-storage.md): Store structured data in the cloud using Azure Table Storage or Azure Cosmos DB.

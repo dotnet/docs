@@ -1,48 +1,9 @@
-# WCF Docs
+# Windows Communication Foundation
 
-- [Service-oriented applications with WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/index.md): Learn how WCF, a programming model for service-oriented applications, enables you to build secure, reliable, transacted solutions.
-- [What's New in Windows Communication Foundation 4.5](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/whats-new.md): This article describes the features new to Windows Communication Foundation (WCF) version 4.5 and links to additional resources.
-- [WCF Simplification Features](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-simplification-features.md): Learn more about: WCF Simplification Features
-- [Guide to the Documentation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/guide-to-the-documentation.md): Learn more about: Guide to the Documentation
-- [Operating System Resources Required by WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/operating-system-resources-required-by-wcf.md): Learn more about: Operating System Resources Required by WCF
-- [Troubleshooting Setup Issues](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/troubleshooting-setup-issues.md): Learn more about: Troubleshoot setup issues
-- [Migrating from .NET Remoting to WCF](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md): Learn how to migrate an application that uses .NET Remoting to use WCF. You can accomplish several common remoting scenarios in WCF.
-- [Windows Communication Foundation Glossary](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/glossary.md): Learn more about: Windows Communication Foundation Glossary for .NET Framework 4.5
-- [General Reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/general-reference.md): Learn more about: General Reference
-- [Privacy Information](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/privacy-information.md): Learn more about: Windows Communication Foundation Privacy Information
+## Topic Indices
 
-## Accessing Services Using a WCF Client
-
-- [Accessing Services Using a WCF Client](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/accessing-services-using-a-wcf-client.md): Learn how to create a WCF client proxy for your WCF service. A client application uses the client proxy to communicate with the service.
-- [Add Service Reference in a Portable Subset Project](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/add-service-reference-in-a-portable-subset-project.md): Learn more about: Add Service Reference in a Portable Subset Project
-- [Specifying Client Run-Time Behavior](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/specifying-client-run-time-behavior.md): Learn more about: Specifying Client Run-Time Behavior
-- [Configuring Client Behaviors](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/configuring-client-behaviors.md): Learn about the two ways that WCF configures behaviors: in the application configuration file or programmatically from the calling application.
-
-## Basic WCF Programming
-
-- [Basic WCF Programming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/basic-wcf-programming.md): Refer to these articles to develop Windows Communication Foundation applications, from the basic programming lifecycle to troubleshooting.
-- [Basic Programming Lifecycle](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/basic-programming-lifecycle.md): Learn about the tasks to build a WCF application. WCF enables apps to communicate on the same computer, over networks, or on different application platforms.
-- [Introduction to Extensibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/introduction-to-extensibility.md): Learn more about: Introduction to Extensibility
-- [WCF Troubleshooting Quickstart](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-troubleshooting-quickstart.md): Learn more about: WCF Troubleshooting Quickstart
-- [WCF Error Handling](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-error-handling.md): Learn more about: WCF Error Handling
-- [WCF and ASP.NET Web API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-and-aspnet-web-api.md): Learn whether WCF or the ASP.NET Web API is better suited to your needs by comparing the major features of each technology.
-
-## Bindings
-
-- [Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/bindings.md): Learn more about: Bindings in Windows Communication Foundation
-- [WCF Bindings Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/bindings-overview.md): Learn about bindings, which specify how to connect to a WCF service, including elements of a binding and how to specify a binding for a service endpoint.
-- [System-Provided Bindings](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/system-provided-bindings.md): Learn about all of the system-provided Windows Communication Foundation (WCF) bindings.
-- [Configuring Bindings for Services](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/configuring-bindings-for-wcf-services.md): Learn about configuring bindings at deployment time for a WCF application by editing items under the system.ServiceModel element.
-
-## Building Clients
-
-- [Building Clients](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/building-clients.md): Learn more about: Building Clients
-- [WCF Client Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-client-overview.md): Learn about what client applications do, how to configure, create, and use a WCF client, and how to secure client applications.
-
-## Conceptual Overview
-
-- [Conceptual Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/conceptual-overview.md): Learn about the Windows Communication Foundation (WCF) messaging system and the classes that support its use.
-- [What Is Windows Communication Foundation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/whats-wcf.md): Learn about the Windows Communication Foundation, which is a framework for building service-oriented applications.
-- [Fundamental Windows Communication Foundation Concepts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/fundamental-concepts.md): Learn about the fundamentals of the Windows Communication Foundation (WCF) architecture with this high-level explanation.
-- [Windows Communication Foundation Architecture](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/architecture.md): Learn about the major layers of the Windows Communication Foundation architecture, including contracts, service runtime, messaging, and activation & hosting.
-- [WCF and .NET Framework Client Profile](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/wcf-and-net-framework-client-profile.md): Learn more about: WCF and .NET Framework Client Profile
+- [Windows Communication Foundation Extended Index](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/llms-extended.txt): 107 additional topics
+- [Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/diagnostics/llms.txt): 9 topics, 1042 in tree
+- [Extending](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/extending/llms.txt): 64 topics
+- [Feature Details](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/feature-details/llms.txt): 422 topics
+- [Samples](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/wcf/samples/llms.txt): 233 topics

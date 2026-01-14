@@ -1,5 +1,5 @@
 # Unsafe Code Docs
 
-## Memory management
+> Using pointers, `stackalloc`, and unmanaged memory for performance-critical scenarios. Unsafe code requires the `unsafe` keyword and allows direct memory manipulation via pointers (`T*`). Follow best practices to avoid access violations and security vulnerabilities; prefer `Span<T>` when possible for safer memory access.
 
 - [Unsafe code best practices](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/unsafe-code/best-practices.md): Learn the best practices for dealing with unsafe code in .NET, including common pitfalls and how to avoid them.

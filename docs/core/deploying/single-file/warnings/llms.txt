@@ -1,10 +1,8 @@
 # Warnings Docs
 
-## SingleFile rules
-
-- [Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/overview.md): Learn about code analysis single file rules.
-- [IL3000](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3000.md): Assembly.Location always returns an empty string for assemblies embedded in a single-file bundle
-- [IL3001](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3001.md): Assembly.GetFile(s) will throw for assemblies embedded in a single-file app
-- [IL3002](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3002.md): Members annotated with 'RequiresAssemblyFilesAttribute' require assembly files to be on disk
-- [IL3003](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3003.md): For all interfaces and overrides the implementation 'RequiresAssemblyFilesAttribute' must match the definition 'RequiresAssemblyFilesAttribute', either all the members contain the attribute or none of them.
-- [IL3005](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3005.md): Learn about warning IL3005: `RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point
+- [IL3000: Avoid accessing Assembly file path when publishing as a single file (code analysis)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3000.md): Assembly.Location always returns an empty string for assemblies embedded in a single-file bundle
+- [IL3001: Avoid accessing Assembly file path when publishing as a single file (code analysis)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3001.md): Assembly.GetFile(s) will throw for assemblies embedded in a single-file app
+- [IL3002: Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file (code analysis)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3002.md): Members annotated with 'RequiresAssemblyFilesAttribute' require assembly files to be on disk
+- [IL3003: 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3003.md): For all interfaces and overrides the implementation 'RequiresAssemblyFilesAttribute' must match the definition 'RequiresAssemblyFilesAttribute', either all the members contain the attribute or none of them.
+- [IL3005: `RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/il3005.md): Learn about warning IL3005: `RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point
+- [SingleFile rules (code analysis)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/warnings/overview.md): Learn about code analysis single file rules.

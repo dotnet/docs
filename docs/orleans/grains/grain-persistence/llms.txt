@@ -1,9 +1,7 @@
-# Grain Persistence Docs
+# Grain persistence
 
-## Persistence
-
+- [Azure Cosmos DB grain persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/azure-cosmos-db.md): Use the Azure Cosmos DB grain persistence provider to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
+- [Azure Storage grain persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/azure-storage.md): Learn about Azure Storage grain persistence in .NET Orleans.
+- [Amazon DynamoDB grain persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/dynamodb-storage.md): Learn about Amazon DynamoDB grain persistence in .NET Orleans.
 - [Grain persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/index.md): Learn about grain persistence in .NET Orleans.
-- [Azure Cosmos DB](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/azure-cosmos-db.md): Use the Azure Cosmos DB grain persistence provider to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
-- [Relational storage (ADO.NET)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/relational-storage.md): Learn about ADO.NET grain persistence in .NET Orleans.
-- [Azure storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/azure-storage.md): Learn about Azure Storage grain persistence in .NET Orleans.
-- [Amazon DynamoDB storage](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/dynamodb-storage.md): Learn about Amazon DynamoDB grain persistence in .NET Orleans.
+- [ADO.NET grain persistence](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/orleans/grains/grain-persistence/relational-storage.md): Learn about ADO.NET grain persistence in .NET Orleans.

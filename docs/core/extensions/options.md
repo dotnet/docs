@@ -392,6 +392,50 @@ builder.Services.TryAddEnumerable(
         <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());
 ```
 
+### Recursive validation with `ValidateObjectMembers` and `ValidateEnumeratedItems`
+
+By default, `DataAnnotations` validation only validates the properties of the options class itself. It doesn't recursively validate nested objects or items in collections. To enable recursive validation, you must use the <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> and <xref:Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute> attributes.
+
+> [!IMPORTANT]
+> Without these attributes, validation doesn't propagate to nested objects or collection items, which can lead to invalid configuration being accepted silently.
+
+#### ValidateObjectMembers attribute
+
+The <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> attribute enables recursive validation of nested objects. Consider the following nested options classes:
+
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/DatabaseOptions.cs" id="DatabaseOptions":::
+
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithoutAttribute":::
+
+In the preceding code, the `Database` property is a nested object of type `DatabaseOptions`. Without the `[ValidateObjectMembers]` attribute, the validation attributes on `DatabaseOptions` properties (like `[Required]` on `ConnectionString`) are **not** evaluated.
+
+To enable recursive validation of the `Database` property, apply the `[ValidateObjectMembers]` attribute:
+
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithAttribute" highlight="6,10":::
+
+Now when `ApplicationOptionsWithAttribute` is validated, the validation also recurses into the `Database` property and validates its members according to their `DataAnnotations` attributes.
+
+#### ValidateEnumeratedItems attribute
+
+The <xref:Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute> attribute enables validation of each item in a collection. Consider the following options class with a server configuration:
+
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/ServerOptions.cs" id="ServerOptions":::
+
+Without the `[ValidateEnumeratedItems]` attribute applied to the `Servers` collection property in the `ApplicationOptionsWithoutAttribute` class (shown earlier), the validation attributes on individual `ServerOptions` items aren't evaluated.
+
+With the `[ValidateEnumeratedItems]` attribute applied to the `Servers` property in the `ApplicationOptionsWithAttribute` class (also shown earlier), each `ServerOptions` item in the list is validated according to its `DataAnnotations` attributes.
+
+#### Configure recursive validation
+
+The following code configures both options classes for comparison:
+
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/Program.cs" id="ProgramWithAttribute":::
+
+When you use configuration that contains invalid nested values, the version **without** the attributes will succeed (incorrectly accepting invalid data), while the version **with** the attributes will fail validation and throw an <xref:Microsoft.Extensions.Options.OptionsValidationException> with detailed error messages about which nested properties failed validation.
+
+> [!TIP]
+> Both `ValidateObjectMembersAttribute` and `ValidateEnumeratedItemsAttribute` work with the compile-time options validation source generator for improved performance. For more information, see [Compile-time options validation source generation](options-validation-generator.md).
+
 ## Options post-configuration
 
 Set post-configuration with <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601>. Post-configuration runs after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs, and can be useful in scenarios when you need to override configuration:

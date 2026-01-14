@@ -371,12 +371,12 @@ public class TestClass
 
 #### TestDataRow
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1> class provides enhanced control over test data in data-driven tests. When using `IEnumerable<TestDataRow<T>>` as the return type for your dynamic data source, you can specify additional metadata for each test case, such as custom display names and test properties.
+The `TestDataRow<T>` class provides enhanced control over test data in data-driven tests. When using `IEnumerable<TestDataRow<T>>` as the return type for your dynamic data source, you can specify additional metadata for each test case, such as custom display names and test properties.
 
 `TestDataRow<T>` offers the following benefits:
 
-- **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1.DisplayName> property.
-- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1.TestCategories> property.
+- **Custom display names**: Set a unique display name for each test case using the `DisplayName` property.
+- **Test categories**: Attach metadata to individual test cases using the `TestCategories` property.
 - **Type-safe data**: Use the generic `TestDataRow<T>` to provide strongly-typed test data.
 
 ```csharp

@@ -4,8 +4,6 @@ description: Learn about the sample project for GitHub Copilot app modernization
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 7/15/2025
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Contoso University migration sample

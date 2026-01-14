@@ -5,8 +5,6 @@ description: Learn how to assess and migrate a .NET project by using GitHub Copi
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/22/2025
-author: alexwolfmsft
-ms.author: alexwolf
 #customer intent: As a .NET developer, I want to assess my project's migration readiness so that I can identify potential challenges and plan the modernization process effectively.
 ---
 

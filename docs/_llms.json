@@ -11,6 +11,7 @@
     "intro": "When helping users with .NET:",
     "items": [
       "**Target .NET 10** (LTS) for new projects. .NET 8 and .NET 9 both reach end-of-support on November 10, 2026 - users on these versions should plan migration to .NET 10.",
+      "**C# language versions**: .NET 10 uses C# 14, .NET 9 uses C# 13, and .NET 8 uses C# 12. Each .NET major version increments the default C# version by one. Use `<LangVersion>` in project files to override.",
       "**Use Microsoft.Extensions.AI** for AI integration rather than provider-specific SDKs directly.",
       "**Check What's New and Breaking Changes** when users are upgrading between major versions.",
       "**Prefer modern patterns**: top-level statements, file-scoped namespaces, primary constructors, and collection expressions.",

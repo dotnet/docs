@@ -1,7 +1,7 @@
 ---
 title: Dependency injection guidelines
 description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
-ms.date: 10/22/2025
+ms.date: 01/14/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -138,11 +138,11 @@ The following third-party containers can be used with ASP.NET Core apps:
 
 Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service might also require thread safety depending on how it's used by the singleton. The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
 
-Additionally, the process of resolving services from the built-in .NET dependency injection container is thread-safe.  
+Additionally, the process of resolving services from the built-in .NET dependency injection container is thread-safe.
 Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resolve services concurrently from multiple threads.
 
 > [!NOTE]
-> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe. It doesn't make the resolved service instances themselves thread-safe.  
+> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe. It doesn't make the resolved service instances themselves thread-safe.
 > Any service (especially singletons) that holds shared mutable state must implement its own synchronization logic if accessed concurrently.
 
 ## Recommendations
@@ -170,13 +170,9 @@ Like all sets of recommendations, you might encounter situations where ignoring 
 
 DI is an *alternative* to static/global object access patterns. You might not realize the benefits of DI if you mix it with static object access.
 
-## Using KeyedService.AnyKey for fallbacks and queries
+## Use KeyedService.AnyKey for fallbacks
 
-The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. It serves two main purposes: registering a fallback service and querying all keyed services.
-
-### Fallback registration with AnyKey
-
-You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
+The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
 
 :::code language="csharp" source="snippets/di/di-anykey/csharp/AnyKeyExamples/Program.cs" id="FallbackRegistration":::
 
@@ -186,20 +182,7 @@ In the preceding example:
 - Requesting `ICache` with any other key (like `"basic"` or `"standard"`) creates a new `DefaultCache` using the `AnyKey` fallback.
 
 > [!IMPORTANT]
-> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. Use specific keys when resolving individual services.
-
-### Query all keyed services with AnyKey
-
-You can use `KeyedService.AnyKey` with `GetKeyedServices()` to retrieve all services registered with explicit keys (excluding unkeyed and null-keyed services).
-
-:::code language="csharp" source="snippets/di/di-anykey/csharp/AnyKeyExamples/Program.cs" id="QueryAllKeyed":::
-
-In the preceding example, `GetKeyedServices()` with `KeyedService.AnyKey` returns all services registered with explicit keys (`"email"`, `"sms"`, and `"push"`), but not the unkeyed `LoggingService`.
-
-> [!NOTE]
-> Services registered with `KeyedService.AnyKey` itself aren't included in the results when calling `GetKeyedServices(KeyedService.AnyKey)`. The method only returns services registered with explicit non-null keys.
-
-For more information on keyed services, see [Keyed services](dependency-injection.md#keyed-services).
+> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../compatibility/extensions/10.0/getkeyedservice-anykey.md).
 
 ## Example anti-patterns
 
@@ -257,5 +240,5 @@ In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.D
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)
-- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
+- [Quickstart: Dependency injection basics](dependency-injection-basics.md)
 - [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)

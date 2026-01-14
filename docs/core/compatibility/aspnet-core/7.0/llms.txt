@@ -2,6 +2,8 @@
 
 > Documentation for 7.0 Docs.
 
+*Topics available: 15*
+
 - [Breaking change: API controller actions try to infer parameters from DI](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/7.0/api-controller-action-parameters-di.md): Learn about the breaking change in ASP.NET Core 7.0 where API controller actions try to infer parameters from DI.
 - [Breaking change: AuthenticateAsync for remote auth providers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/7.0/authenticateasync-anonymous-request.md): Learn about the breaking change in ASP.NET Core 7.0 where AuthenticateAsync for remote authentication providers no longer fails if there is no current user.
 - [Breaking change: Default authentication scheme](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/7.0/default-authentication-scheme.md): Learn about the breaking change in ASP.NET Core 7.0 where a singly registered authentication scheme will cause it to be used as the default.

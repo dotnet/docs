@@ -2,5 +2,7 @@
 
 > Documentation for 10 Docs.
 
+*Topics available: 2*
+
 - [Breaking change: System.Text.Json checks for property name conflicts](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/serialization/10/property-name-validation.md): Learn about the breaking change in .NET 10 where System.Text.Json validates that user-defined property names don't conflict with reserved metadata property names.
 - [Breaking change: XmlSerializer no longer ignores properties marked with ObsoleteAttribute](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/serialization/10/xmlserializer-obsolete-properties.md): Learn about the breaking change in .NET 10 where properties marked with ObsoleteAttribute are now serialized by XmlSerializer instead of being ignored.

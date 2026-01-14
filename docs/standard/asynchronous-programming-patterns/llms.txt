@@ -2,6 +2,8 @@
 
 > Performing non-blocking operations that free threads while waiting for I/O, network, or other long-running work. The Task-based Asynchronous Pattern (TAP) with `async`/`await` is the recommended approach; older patterns include Event-based (EAP) and `IAsyncResult` (APM). Use `async` for I/O-bound work; use parallel programming for CPU-bound work.
 
+*Topics available: 22*
+
 - [Asynchronous Programming Model (APM)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md): Learn about the Asynchronous Programming Model (APM) in .NET. Discover how to begin and end an asynchronous operation.
 - [Asynchronous Programming Using Delegates](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md): Learn more about: Asynchronous Programming Using Delegates
 - [Best Practices for Implementing the Event-based Asynchronous Pattern](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md): Learn more about: Best Practices for Implementing the Event-based Asynchronous Pattern

@@ -2,6 +2,8 @@
 
 > Documentation for 5.0 Docs.
 
+*Topics available: 8*
+
 - [Breaking change: DataGridView no longer resets fonts for customized cell styles](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md): Learn about the breaking change in .NET 5 where DataGridView no longer resets default cell style fonts to match the ambient font if the cell style font has been customized.
 - [Breaking change: WinForms methods now throw ArgumentException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/windows-forms/5.0/invalid-args-cause-argumentexception.md): Learn about the breaking change in .NET 5 where some Windows Forms methods now throw an ArgumentException for invalid arguments.
 - [Breaking change: WinForms properties now throw ArgumentOutOfRangeException](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/windows-forms/5.0/invalid-args-cause-argumentoutofrangeexception.md): Learn about the breaking change in .NET 5 where Some Windows Forms properties now throw an ArgumentOutOfRangeException for invalid arguments.

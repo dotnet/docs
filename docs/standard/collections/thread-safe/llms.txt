@@ -2,6 +2,8 @@
 
 > Thread-safe and scalable collection classes in the `System.Collections.Concurrent` namespace. Includes `ConcurrentDictionary<TKey,TValue>`, `ConcurrentQueue<T>`, `ConcurrentStack<T>`, `ConcurrentBag<T>`, and `BlockingCollection<T>` for producer-consumer scenarios. These collections use fine-grained locking or lock-free mechanisms for high-performance multi-threaded access.
 
+*Topics available: 9*
+
 - [BlockingCollection Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/thread-safe/blockingcollection-overview.md): Read about BlockingCollection<T>, a thread-safe collection class in .NET. This class offers features like concurrent adding & taking of items from many threads.
 - [Add and Remove Items from a ConcurrentDictionary](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/thread-safe/how-to-add-and-remove-items.md): Read an example of how to add, retrieve, update, and remove items from the ConcurrentDictionary<TKey,TValue> collection class in .NET.
 - [How to: Add and Take Items Individually from a BlockingCollection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/collections/thread-safe/how-to-add-and-take-items.md): Learn more about: How to: Add and Take Items Individually from a BlockingCollection

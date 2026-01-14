@@ -2,6 +2,8 @@
 
 > Documentation for Compiler messages.
 
+*Topics available: 179*
+
 - [Resolve errors and warnings related to array and collection declarations and initializations](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-messages/array-declaration-errors.md): These compiler errors and warnings indicate errors in the syntax for declaring and initializing array and collection variables. There are multiple valid expressions to declare an array. Combining them incorrectly leads to errors. Collection initializers and collection expressions provide initial values for an array or collection.
 - [Resolve errors for incorrect or missing assembly references](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-messages/assembly-references.md): These compiler errors and warnings indicate incorrect or missing assembly references. These errors cause missing or incorrect definitions for types in your program.
 - [Resolve errors and warnings that involve `async`, `await` and the Task-asynchronous protocol](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/language-reference/compiler-messages/async-await-errors.md): These compiler errors and warnings indicate errors in the syntax for declaring and implementing `async` methods that use the `await` expression.

@@ -2,6 +2,8 @@
 
 > Building AI-powered .NET applications using Microsoft.Extensions.AI abstractions. Use `IChatClient` for chat completions, `IEmbeddingGenerator` for embeddings, and the Model Context Protocol (MCP) for tool integration. Supports Azure OpenAI, OpenAI, Ollama, and other providers through a unified API.
 
+*Topics available: 44*
+
 - [Authenticate to Azure OpenAI using .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/azure-ai-services-authentication.md): Learn about the different options to authenticate to Azure OpenAI and other services using .NET
 - [.NET + AI ecosystem tools and SDKs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/dotnet-ai-ecosystem.md): This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
 - [Scale Azure OpenAI for .NET chat sample using RAG](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/ai/get-started-app-chat-scaling-with-azure-container-apps.md): Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.

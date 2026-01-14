@@ -2,6 +2,8 @@
 
 > Automatic memory management that reclaims unused objects from the managed heap. The garbage collector (GC) runs in generations (0, 1, 2) and uses different modes (workstation, server) for various workloads. Implement `IDisposable` for deterministic cleanup of unmanaged resources; use `GC.Collect()` sparingly.
 
+*Topics available: 17*
+
 - [Application Domain Resource Monitoring](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/garbage-collection/app-domain-resource-monitoring.md): Learn more about: Application Domain Resource Monitoring
 - [Background garbage collection](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/garbage-collection/background-gc.md): Learn about background garbage collection in .NET and how it differs in workstation and server garbage collection.
 - [Dynamic adaptation to application sizes (DATAS)](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/garbage-collection/datas.md): Learn about DATAS, which is a garbage collection mode that aims to adapt to application memory requirements.

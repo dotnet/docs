@@ -2,6 +2,8 @@
 
 > Using Azure services from .NET applications via the Azure SDK NuGet packages. Key packages include `Microsoft.Extensions.Azure` for DI integration and `Azure.Identity` for authentication. Use `DefaultAzureCredential` for passwordless authentication; register clients with `AddAzureClients()` in ASP.NET Core.
 
+*Topics available: 30*
+
 - [Best practices for using the Azure SDK with ASP.NET Core](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/aspnetcore-guidance.md): Learn best practices and the steps to properly implement the Azure SDK for .NET in your ASP.NET Core apps.
 - [Azure SDK for .NET Overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/azure-sdk-for-dotnet.md): Provides an overview of what the Azure SDK for .NET is and the basic steps to use the SDK in a .NET application
 - [Configure a proxy when using the Azure SDK for .NET](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/azure/sdk/configure-proxy.md): Learn different approaches for configuring a proxy for use with the Azure SDK for .NET client libraries.

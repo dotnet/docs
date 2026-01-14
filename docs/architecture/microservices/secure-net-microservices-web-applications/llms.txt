@@ -2,6 +2,8 @@
 
 > Documentation for Securing .NET Microservices and Web Applications.
 
+*Topics available: 4*
+
 - [About authorization in .NET microservices and web applications](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/microservices/secure-net-microservices-web-applications/authorization-net-microservices-web-applications.md): Security in .NET Microservices and Web Applications - Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
 - [Using Azure Key Vault to protect secrets at production time](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/microservices/secure-net-microservices-web-applications/azure-key-vault-protects-secrets.md): Security in .NET Microservices and Web Applications - Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them.
 - [Storing application secrets safely during development](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/architecture/microservices/secure-net-microservices-web-applications/developer-app-secrets-storage.md): Security in .NET Microservices and Web Applications - Don't store your application secrets like passwords, connection strings or API keys in source control, understand the options you can use in ASP.NET Core, in particular you have to understand how to handle "user secrets".

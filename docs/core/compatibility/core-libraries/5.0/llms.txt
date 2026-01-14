@@ -2,6 +2,8 @@
 
 > Documentation for 5.0 Docs.
 
+*Topics available: 27*
+
 - [Breaking change: Assembly-related API behavior changes for single-file publishing format](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md): Learn about the .NET 5 breaking change in core .NET libraries where multiple APIs related to an assembly's file location have behavior changes when they're invoked in a single-file publishing format.
 - [Breaking change: Most code access security APIs are obsolete](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/core-libraries/5.0/code-access-security-apis-obsolete.md): Learn about the .NET 5 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
 - [Breaking change: CreateCounterSetInstance throws InvalidOperationException if instance already exists](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/core-libraries/5.0/createcountersetinstance-throws-invalidoperation.md): Learn about the .NET 5 breaking change in core .NET libraries where CounterSet.CreateCounterSetInstance throws a different exception if the counter already exists.

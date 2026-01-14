@@ -2,6 +2,8 @@
 
 > Documentation for Transaction Processing.
 
+*Topics available: 17*
+
 - [Committing a Transaction in Single-Phase and Multi-Phase](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md): Read about committing transactions in one or two phases in .NET. A two-phase commit (2PC) must be performed if the transaction involves more than one resource.
 - [Diagnostic Traces](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/transactions/diagnostic-traces.md): Learn about diagnostic traces in .NET. Traces are the publishing of specific messages that are generated during application execution.
 - [Enlisting Resources as Participants in a Transaction](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md): Enlist resources as participants in a .NET transaction. Each resource in a transaction is managed by a resource manager, coordinated by a transaction manager.

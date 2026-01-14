@@ -2,6 +2,8 @@
 
 > Writing non-blocking code using `async` and `await` keywords with the Task-based Asynchronous Pattern (TAP). Async methods return `Task` or `Task<T>` and free threads during I/O-bound operations. Use `async` for network calls, file I/O, and database queries; avoid blocking with `.Result` or `.Wait()`.
 
+*Topics available: 9*
+
 - [Async return types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/asynchronous-programming/async-return-types.md): Learn about the return types that async methods can have in C# with code examples for each type.
 - [Asynchronous programming scenarios](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/asynchronous-programming/async-scenarios.md): Learn about the C# language-level asynchronous programming model provided by .NET Core and explore example code for I/O-bound and CPU-bound scenarios.
 - [Cancel a list of tasks](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/csharp/asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks.md): Learn how to use cancellation tokens to signal a cancellation request to a list of tasks.

@@ -2,6 +2,8 @@
 
 > Documentation for 10 Docs.
 
+*Topics available: 9*
+
 - [Breaking change](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/10/apidescription-client-deprecated.md): Learn about the breaking change in ASP.NET Core 10 where the Microsoft.Extensions.ApiDescription.Client package has been deprecated.
 - [Cookie login redirects are disabled for known API endpoints](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/10/cookie-authentication-api-endpoints.md): Learn about the breaking change in ASP.NET Core 10 where cookie authentication no longer redirects to login or access denied URIs for known API endpoints.
 - [Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md): Learn about the breaking change in ASP.NET Core 10 where exception diagnostics are no longer recorded when IExceptionHandler.TryHandleAsync returns true.

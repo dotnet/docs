@@ -2,6 +2,8 @@
 
 > Documentation for Warnings Docs.
 
+*Topics available: 9*
+
 - [IL3050: Avoid calling members annotated with 'RequiresDynamicCodeAttribute' when publishing as Native AOT](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/warnings/il3050.md): Learn about warning IL3050: Members annotated with 'RequiresDynamicCodeAttribute' require code generation at runtime
 - [IL3051: 'RequiresDynamicCodeAttribute' attribute must be consistently applied on virtual and interface methods](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/warnings/il3051.md): Learn about warning IL3051: All interface implementations and method overrides must have annotations that match the interface or overridden virtual method 'RequiresDynamicCodeAttribute' annotations
 - [IL3052: COM interop is not supported with full ahead of time compilation](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/warnings/il3052.md): Learn about warning IL3052: COM interop is not compatible with full ahead of time compilation.

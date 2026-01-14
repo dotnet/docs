@@ -412,9 +412,9 @@ Data-driven test attributes like <xref:Microsoft.VisualStudio.TestTools.UnitTest
 
 The `UnfoldingStrategy` property accepts the following values:
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Auto?displayProperty=nameWithType> (default): MSTest automatically determines whether to unfold test cases based on the number of data rows. Test cases are collapsed (folded) when there are many data rows to avoid cluttering Test Explorer, and unfolded when there are few data rows for better visibility.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer and TRX results. Each test case can be run independently.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases can't be run independently; the entire data-driven test runs as one unit.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy.Auto?displayProperty=nameWithType> (default): MSTest automatically determines whether to unfold test cases based on the number of data rows. Test cases are collapsed (folded) when there are many data rows to avoid cluttering Test Explorer, and unfolded when there are few data rows for better visibility.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy.Unfold?displayProperty=nameWithType>: All test cases are expanded and shown individually in Test Explorer and TRX results. Each test case can be run independently.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy.Fold?displayProperty=nameWithType>: All test cases are collapsed into a single test node. Individual test cases can't be run independently; the entire data-driven test runs as one unit.
 
 For most scenarios, the default `Auto` behavior provides the best balance between usability and performance. Changing this setting is considered an advanced scenario and should only be done when you have specific requirements, such as non-deterministic data source or known limitations or bugs of MSTest.
 
@@ -422,7 +422,7 @@ For most scenarios, the default `Auto` behavior provides the best balance betwee
 [TestClass]
 public class TestClass
 {
-    [TestMethod(UnfoldingStrategy = UnfoldingStrategy.Unfold)] // Force unfolding/expanding
+    [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Unfold)] // Force unfolding/expanding
     [DataRow(1)] 
     [DataRow(2)]
     [DataRow(3)]
@@ -431,7 +431,7 @@ public class TestClass
         // Each test case appears individually in Test Explorer
     }
 
-    [TestMethod(DynamicDataUnfoldingStrategy = UnfoldingStrategy.Fold)] // Force folding/collapsing
+    [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Fold)] // Force folding/collapsing
     [DynamicData(nameof(GetData))]
     public void TestMethodWithFolding(int value)
     {

@@ -9,9 +9,9 @@ ms.date: 10/20/2025
 Resiliency is the ability of an app to recover from transient failures and continue to function. In the context of .NET programming, resilience is achieved by designing apps that can handle failures gracefully and recover quickly. To help build resilient apps in .NET, the following two packages are available on NuGet:
 
 | NuGet package | Description |
-|--|--|
-| [📦 Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) | This NuGet package provides mechanisms to harden apps against transient failures. |
-| [📦 Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) | This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient> class. |
+|---------------|-------------|
+| [📦 Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) | Provides mechanisms to harden apps against transient failures. The 10.x.x versions of this package support apps that target .NET, .NET Framework, and .NET Standard. |
+| [📦 Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) | Provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient> class. |
 
 These two NuGet packages are built on top of [Polly](https://github.com/App-vNext/Polly), which is a popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as [retry](/azure/architecture/patterns/retry), [circuit breaker](/azure/architecture/patterns/circuit-breaker), timeout, [bulkhead isolation](/azure/architecture/patterns/bulkhead), [rate-limiting](/azure/architecture/patterns/rate-limiting-pattern), fallback, and hedging in a fluent and thread-safe manner.
 
@@ -20,7 +20,7 @@ These two NuGet packages are built on top of [Polly](https://github.com/App-vNex
 
 ## Get started
 
-To get started with resilience in .NET, install the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) NuGet package.
+To get started with resilience in .NET, install the latest version of the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) NuGet package.
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -116,8 +116,7 @@ To use the resilience pipeline, call any of the available `Execute*` methods on 
 
 The preceding code executes the delegate within the `ExecuteAsync` method. When there are failures, the configured strategies are executed. For example, if the `RetryStrategy` is configured to retry three times, the delegate is executed four times (one initial attempt plus three retry attempts) before the failure is propagated.
 
-## Next steps
+## See also
 
-> [!div class="nextstepaction"]
-> [Build resilient HTTP apps: Key development patterns](http-resilience.md)
-> Consider the [challenges of idempotent handling of retried calls](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing)
+- [Build resilient HTTP apps: Key development patterns](http-resilience.md)
+-[Challenges of idempotent handling of retried calls](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing)

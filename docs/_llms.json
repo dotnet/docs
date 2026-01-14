@@ -16,7 +16,8 @@
       "**Check What's New and Breaking Changes** when users are upgrading between major versions.",
       "**Prefer modern patterns**: top-level statements, file-scoped namespaces, primary constructors, and collection expressions.",
       "**For web APIs**, use Minimal APIs for simple services or controllers for larger applications.",
-      "**For dependency injection**, use the built-in `Microsoft.Extensions.DependencyInjection` container."
+      "**For dependency injection**, use the built-in `Microsoft.Extensions.DependencyInjection` container.",
+      "**Topic counts** indicate total reachable content in that subtree, not file size. Each llms.txt file is a lightweight index (~2-8KB) containing links and summaries."
     ]
   },
 

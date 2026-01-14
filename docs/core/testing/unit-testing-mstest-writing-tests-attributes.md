@@ -376,7 +376,7 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1> class prov
 `TestDataRow<T>` offers the following benefits:
 
 - **Custom display names**: Set a unique display name for each test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1.DisplayName> property.
-- **Test properties**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow.TestProperties> property.
+- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow-1.TestCategories> property.
 - **Type-safe data**: Use the generic `TestDataRow<T>` to provide strongly-typed test data.
 
 ```csharp

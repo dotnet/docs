@@ -1,4 +1,4 @@
-# .NET application publishing overview
+# Deployment
 
 > Publishing and distributing .NET applications as framework-dependent or self-contained deployments. Options include single-file publishing, ReadyToRun compilation, and Native AOT for ahead-of-time compilation. Use `dotnet publish` with appropriate runtime identifiers (RIDs) for cross-platform targeting.
 
@@ -11,6 +11,6 @@
 
 ## Topic Indices
 
-- [Native Aot](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/llms.txt): 9 topics, 20 in tree
-- [Single File](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/llms.txt): 1 topics, 7 in tree
-- [Trimming](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/trimming/llms.txt): 7 topics, 122 in tree
+- [Native AOT deployment overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/native-aot/llms.txt): 9 topics, 20 in tree; Native AOT deployment overview documentation and reference.
+- [Single File Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/single-file/llms.txt): 1 topics, 7 in tree; Single File Docs documentation and reference.
+- [Trimming Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/trimming/llms.txt): 7 topics, 122 in tree; Trimming Docs documentation and reference.

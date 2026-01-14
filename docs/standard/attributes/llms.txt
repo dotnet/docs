@@ -1,4 +1,4 @@
-# Extending Metadata Using Attributes
+# Attributes
 
 > Adding metadata to code elements like classes, methods, and properties using declarative annotations. Attributes derive from `System.Attribute` and are accessed via reflection at runtime. Common uses include serialization control, validation, dependency injection configuration, and compiler directives like `[Obsolete]` and `[Conditional]`.
 

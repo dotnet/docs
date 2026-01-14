@@ -1,4 +1,4 @@
-# Dates, times, and time zones
+# Dates and Times
 
 > Working with dates, times, and time zones—including accessing the system clock, performing arithmetic, and converting between zones. Core types include `DateTime`, `DateTimeOffset`, `DateOnly`, `TimeOnly`, `TimeSpan`, and `TimeZoneInfo`. Use `DateTimeOffset` for unambiguous cross-system time representation; `DateOnly`/`TimeOnly` when you only need one component.
 

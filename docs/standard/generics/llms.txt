@@ -1,4 +1,4 @@
-# Generics in .NET
+# Generics
 
 > Writing type-safe, reusable code that works with any data type using type parameters. Generic classes like `List<T>` and `Dictionary<TKey,TValue>` avoid boxing and provide compile-time type checking. Use constraints (`where T : class`) to restrict type parameters and enable specific operations.
 

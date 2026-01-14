@@ -1,5 +1,7 @@
 # Interoperating with unmanaged code
 
+> Documentation for Interoperating with unmanaged code.
+
 - [Blittable and Non-Blittable Types](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/interop/blittable-and-non-blittable-types.md): Learn about blittable and nonblittable types. Blittable data types are commonly represented in managed and unmanaged memory and don't need special handling.
 - [Callback Functions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/interop/callback-functions.md): Read about callback functions, which are code with a managed application that helps an unmanaged DLL function complete a task.
 - [Calling a DLL Function](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/framework/interop/calling-a-dll-function.md): Review issues about calling a DLL function that can seem confusing. The function calling process differs depending on if the return type is blittable.

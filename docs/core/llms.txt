@@ -12,27 +12,27 @@
 
 ## Topic Indices
 
-- [Additional Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/llms.txt): 11 topics
-- [Compatibility](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/llms.txt): 16 topics, 537 in tree
+- [Additional tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/additional-tools/llms.txt): 11 topics; Additional tools documentation and reference.
+- [Breaking Changes](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/compatibility/llms.txt): 16 topics, 537 in tree; Breaking changes and API differences between .NET versions.
 - [Containers](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/containers/llms.txt): 3 topics; Build container images with built-in .NET SDK support.
-- [Dependency Loading](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/dependency-loading/llms.txt): 7 topics
-- [Deploying](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/llms.txt): 6 topics, 155 in tree; Publish apps: single-file, ReadyToRun, Native AOT, and cross-platform.
+- [Dependency Loading Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/dependency-loading/llms.txt): 7 topics; Dependency Loading Docs documentation and reference.
+- [Deployment](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/deploying/llms.txt): 6 topics, 155 in tree; Publish apps: single-file, ReadyToRun, Native AOT, and cross-platform.
 - [Diagnostics](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/diagnostics/llms.txt): 68 topics; Logging, tracing, metrics, and diagnostic tools for troubleshooting.
-- [Docker](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/docker/llms.txt): 3 topics
-- [Enrichment](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/enrichment/llms.txt): 5 topics
-- [Extensions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/llms.txt): 63 topics
-- [Install](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/install/llms.txt): 20 topics
-- [Native Interop](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/native-interop/llms.txt): 1 topics
-- [Porting](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/porting/llms.txt): 20 topics
-- [Project SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/project-sdk/llms.txt): 3 topics
-- [Resilience](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/resilience/llms.txt): 2 topics
-- [Resources](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/resources/llms.txt): 1 topics
-- [Runtime Config](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/runtime-config/llms.txt): 8 topics
-- [Runtime Discovery](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/runtime-discovery/llms.txt): 1 topics
-- [SDK](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/sdk/llms.txt): 2 topics
-- [Testing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/testing/llms.txt): 54 topics, 121 in tree
-- [Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/tools/llms.txt): 91 topics
-- [Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/tutorials/llms.txt): 19 topics
-- [Unmanaged API](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/llms.txt): 1 topics, 941 in tree
-- [Versions](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/llms.txt): 2 topics
-- [Whats New](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/whats-new/llms.txt): 8 topics, 20 in tree
+- [Docker Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/docker/llms.txt): 3 topics; Docker Docs documentation and reference.
+- [Enrichment Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/enrichment/llms.txt): 5 topics; Enrichment Docs documentation and reference.
+- [Microsoft.Extensions Libraries](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/extensions/llms.txt): 63 topics; DI, configuration, logging, caching, and HTTP clients.
+- [Install Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/install/llms.txt): 20 topics; Install Docs documentation and reference.
+- [Native Interop Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/native-interop/llms.txt): 1 topics; Native Interop Docs documentation and reference.
+- [Porting from .NET Framework](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/porting/llms.txt): 20 topics; Migrate from .NET Framework to modern .NET with Upgrade Assistant.
+- [Project SDK Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/project-sdk/llms.txt): 3 topics; Project SDK Docs documentation and reference.
+- [Introduction to resilient app development](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/resilience/llms.txt): 2 topics; Introduction to resilient app development documentation and reference.
+- [Resources Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/resources/llms.txt): 1 topics; Resources Docs documentation and reference.
+- [Runtime Configuration](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/runtime-config/llms.txt): 8 topics; Configure runtime via runtimeconfig.json and environment variables.
+- [Runtime Discovery Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/runtime-discovery/llms.txt): 1 topics; Runtime Discovery Docs documentation and reference.
+- [SDK Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/sdk/llms.txt): 2 topics; SDK Docs documentation and reference.
+- [Testing](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/testing/llms.txt): 54 topics, 120 in tree; Unit, integration, and load testing with MSTest, xUnit, and NUnit.
+- [.NET CLI Tools](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/tools/llms.txt): 91 topics; CLI commands: `dotnet new`, `build`, `run`, `test`, and `publish`.
+- [.NET Tutorials](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/tutorials/llms.txt): 19 topics; .NET Tutorials documentation and reference.
+- [.NET unmanaged API reference](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/unmanaged-api/llms.txt): 1 topics, 941 in tree; .NET unmanaged API reference documentation and reference.
+- [.NET Versioning](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/versions/llms.txt): 2 topics; Version numbers, LTS/STS releases, and SDK version pinning.
+- [Whats New Docs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/core/whats-new/llms.txt): 8 topics, 20 in tree; Whats New Docs documentation and reference.

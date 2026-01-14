@@ -1,4 +1,4 @@
-# Parallel Programming in .NET: A guide to the documentation
+# Parallel Programming
 
 > Distributing work across multiple CPU cores for compute-intensive operations. The Task Parallel Library (TPL) provides `Parallel.For`, `Parallel.ForEach`, and `Task` for parallelism; PLINQ parallelizes LINQ queries. Use `ConcurrentDictionary` and other thread-safe collections from `System.Collections.Concurrent` for shared state.
 

@@ -1,4 +1,4 @@
-# Unsafe Code Docs
+# Unsafe Code
 
 > Using pointers, `stackalloc`, and unmanaged memory for performance-critical scenarios. Unsafe code requires the `unsafe` keyword and allows direct memory manipulation via pointers (`T*`). Follow best practices to avoid access violations and security vulnerabilities; prefer `Span<T>` when possible for safer memory access.
 

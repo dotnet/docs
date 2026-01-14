@@ -1,4 +1,4 @@
-# Assemblies in .NET
+# Assemblies
 
 > Packaging compiled code into deployable units (.dll or .exe) that define versioning, security, and type boundaries. Assemblies contain IL code, metadata, and manifest; they can be strong-named for identity and versioning. Use `AssemblyLoadContext` for dynamic loading and isolation in plugin scenarios.
 

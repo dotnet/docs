@@ -1,4 +1,4 @@
-# Code Analysis Docs
+# Code Analysis
 
 > Static analysis rules enforced by Roslyn analyzers for code quality and style. Rules are organized into categories like Design, Security, Performance, and Naming. Configure severity and behavior in `.editorconfig` files; use `dotnet_diagnostic.<rule>.severity` to control warnings and errors.
 
@@ -13,5 +13,5 @@
 
 ## Topic Indices
 
-- [Quality Rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/quality-rules/llms.txt): 336 topics
-- [Style Rules](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/style-rules/llms.txt): 119 topics
+- [Code quality rules overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/quality-rules/llms.txt): 336 topics; Code quality rules overview documentation and reference.
+- [Code-style rules overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/fundamentals/code-analysis/style-rules/llms.txt): 119 topics; Code-style rules overview documentation and reference.

@@ -21,7 +21,7 @@ Calling `GetKeyedServices()` with `KeyedService.AnyKey` returned all registratio
 
 ## New behavior
 
-Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException>. This ensures that `AnyKey` can't be used to resolve a single service, as it's [intended to represent a special case](../../../extensions/dependency-injection-guidelines.md#use-keyedserviceanykey-for-fallbacks) rather than a specific key.
+Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException>. This ensures that `AnyKey` can't be used to resolve a single service, as it's [intended to represent a special case](../../../extensions/dependency-injection.md#keyedserviceanykey-property) rather than a specific key.
 
 ```csharp
 var service = serviceProvider.GetKeyedService(typeof(IMyService), KeyedService.AnyKey);
@@ -57,4 +57,4 @@ If you use `GetKeyedService()` or `GetKeyedServices()` with `KeyedService.AnyKey
 
 ## See also
 
-- [Use KeyedService.AnyKey for fallbacks](../../../extensions/dependency-injection-guidelines.md#use-keyedserviceanykey-for-fallbacks)
+- [Use KeyedService.AnyKey for fallbacks](../../../extensions/dependency-injection.md#keyedserviceanykey-property)

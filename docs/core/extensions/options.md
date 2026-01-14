@@ -396,13 +396,16 @@ builder.Services.TryAddEnumerable(
 
 By default, `DataAnnotations` validation only validates the properties of the options class itself. It doesn't recursively validate nested objects or items in collections. To enable recursive validation, use the <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> and <xref:Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute> attributes.
 
-The <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> attribute enables recursive validation of nested objects. Consider the following nested options classes. The <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> attribute enables recursive validation of nested objects. Consider the following nested options classes.
+- The <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> attribute enables recursive validation of nested objects.
+- The <xref:Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute> attribute enables recursive validation of enumerable objects.
+
+Consider the following nested options classes:
 
 :::code language="csharp" source="snippets/configuration/options-recursive-validation/DatabaseOptions.cs" id="DatabaseOptions":::
 
 :::code language="csharp" source="snippets/configuration/options-recursive-validation/ServerOptions.cs" id="ServerOptions":::
 
-:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithoutAttribute":::
+:::code language="csharp" source="snippets/configuration/options-recursive-validation/ApplicationOptions.cs" id="ApplicationOptionsWithAttribute":::
 
 In the preceding code, the `Database` property is a nested object of type `DatabaseOptions`.
 

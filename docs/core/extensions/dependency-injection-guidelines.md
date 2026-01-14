@@ -170,6 +170,37 @@ Like all sets of recommendations, you might encounter situations where ignoring 
 
 DI is an *alternative* to static/global object access patterns. You might not realize the benefits of DI if you mix it with static object access.
 
+## Using KeyedService.AnyKey for fallbacks and queries
+
+The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. It serves two main purposes: registering a fallback service and querying all keyed services.
+
+### Fallback registration with AnyKey
+
+You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
+
+:::code language="csharp" source="snippets/di/di-anykey/csharp/AnyKeyExamples/Program.cs" id="FallbackRegistration":::
+
+In the preceding example:
+
+- Requesting `ICache` with key `"premium"` returns the `PremiumCache` instance.
+- Requesting `ICache` with any other key (like `"basic"` or `"standard"`) creates a new `DefaultCache` using the `AnyKey` fallback.
+
+> [!IMPORTANT]
+> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. Use specific keys when resolving individual services.
+
+### Query all keyed services with AnyKey
+
+You can use `KeyedService.AnyKey` with `GetKeyedServices()` to retrieve all services registered with explicit keys (excluding unkeyed and null-keyed services).
+
+:::code language="csharp" source="snippets/di/di-anykey/csharp/AnyKeyExamples/Program.cs" id="QueryAllKeyed":::
+
+In the preceding example, `GetKeyedServices()` with `KeyedService.AnyKey` returns all services registered with explicit keys (`"email"`, `"sms"`, and `"push"`), but not the unkeyed `LoggingService`.
+
+> [!NOTE]
+> Services registered with `KeyedService.AnyKey` itself aren't included in the results when calling `GetKeyedServices(KeyedService.AnyKey)`. The method only returns services registered with explicit non-null keys.
+
+For more information on keyed services, see [Keyed services](dependency-injection.md#keyed-services).
+
 ## Example anti-patterns
 
 In addition to the guidelines in this article, there are several anti-patterns you **should avoid**. Some of these anti-patterns are learnings from developing the runtimes themselves.

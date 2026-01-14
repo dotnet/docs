@@ -13,10 +13,10 @@
 
   <ItemGroup>
 
-    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="10.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.1" />
-    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="10.0.1" />
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.2" />
+    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="10.0.2" />
   </ItemGroup>
 
 </Project>

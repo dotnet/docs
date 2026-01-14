@@ -1,6 +1,6 @@
 ---
-title: Resolve errors and warnings in file-scoped types
-description: Learn how to diagnose and correct C# compiler errors and warnings when you declare file scoped types, or write source generators that create file scoped types.
+title: Resolve errors and warnings in file-local types
+description: Learn how to diagnose and correct C# compiler errors and warnings when you declare file local types, or write source generators that create file local types.
 f1_keywords:
   - "CS9051"
   - "CS9052"
@@ -24,7 +24,7 @@ helpviewer_keywords:
 ms.date: 01/13/2026
 ai-usage: ai-assisted
 ---
-# Resolve errors and warnings for file scoped types
+# Resolve errors and warnings for file local types
 
 The C# compiler generates errors and warnings when you misuse [file-local types](../keywords/file.md). File-local types are visible only within the file where you declare them. These diagnostics help you follow the rules for declaring and using file-local types.
 

@@ -269,14 +269,6 @@ Upon close examination of the generated code, you'll observe that the original d
 
 For anyone developing custom data annotation attributes, it's advisable to refrain from using reflection for validation. Instead, it's recommended to craft strongly typed code that doesn't rely on reflection. This approach ensures smooth compatibility with AOT builds.
 
-## Recursive validation support
-
-The options validation source generator fully supports recursive validation using the <xref:Microsoft.Extensions.Options.ValidateObjectMembersAttribute> and <xref:Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute> attributes. These attributes enable validation to propagate into nested objects and collection items, ensuring that all validation rules are enforced throughout the entire options object hierarchy.
-
-When you use `[ValidateObjectMembers]` on a property, the source generator produces code that validates all members of the nested object. Similarly, when you use `[ValidateEnumeratedItems]` on a collection property, the generated code validates each item in the collection. This recursive validation is performed efficiently at compile time without relying on reflection, making it fully compatible with AOT compilation.
-
-For more information and examples, see [Recursive validation with ValidateObjectMembers and ValidateEnumeratedItems](options.md#recursive-validation-with-validateobjectmembers-and-validateenumerateditems).
-
 ## See also
 
 [Options pattern](options.md)

@@ -221,7 +221,7 @@ public class ExampleService
 
 The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
 
-:::code language="csharp" source="snippets/di/anykey/csharp/AnyKeyExamples/Program.cs" id="FallbackRegistration":::
+:::code language="csharp" source="snippets/anykey/Program.cs" id="FallbackRegistration":::
 
 In the preceding example:
 
@@ -229,7 +229,7 @@ In the preceding example:
 - Requesting `ICache` with any other key (like `"basic"` or `"standard"`) creates a new `DefaultCache` using the `AnyKey` fallback.
 
 > [!IMPORTANT]
-> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../compatibility/extensions/10.0/getkeyedservice-anykey.md).
+> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).
 
 ## See also
 

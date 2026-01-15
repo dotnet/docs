@@ -36,7 +36,7 @@ Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of
 
 Upgrading Ubuntu to 22.04 or later? Consider uninstalling .NET first.
 
-If you used a package manager to install .NET from the Microsoft package repository, you'll end up with a package mix-up problem after upgrading Ubuntu. Now that Canonical publishes .NET to the package feeds for Ubuntu 22.04 (and later versions), the package manager won't know about the previously installed .NET version. The packages can't be upgraded to the latest .NET. First, uninstall them, then reinstall them from the [Ubuntu package repository].
+If you used a package manager to install .NET from the Microsoft package repository, you'll end up with a package mix-up problem after upgrading Ubuntu. Now that Canonical publishes .NET to the package feeds for Ubuntu 22.04 (and later versions), the package manager won't know about the previously installed .NET version. The packages can't be upgraded to the latest .NET. First, uninstall them, then reinstall them from the Ubuntu package repository.
 
 ## Decide how to install .NET
 

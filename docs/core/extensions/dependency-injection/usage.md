@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Tutorial: Use dependency injection in .NET
 
-This tutorial shows how to use [dependency injection (DI) in .NET](dependency-injection.md). DI is managed by adding services and configuring them in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
+This tutorial shows how to use [dependency injection (DI) in .NET](overview.md). DI is managed by adding services and configuring them in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
 
 In this tutorial, you learn how to:
 

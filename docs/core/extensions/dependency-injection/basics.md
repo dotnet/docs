@@ -11,7 +11,7 @@ ms.topic: tutorial
 In this quickstart, you create a .NET console app that manually creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> and corresponding <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider>. You learn how to register services and resolve them using dependency injection (DI). This article uses the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) NuGet package to demonstrate the basics of DI in .NET.
 
 > [!NOTE]
-> This article doesn't take advantage of the [Generic host](generic-host.md) features. For a more comprehensive guide, see [Use dependency injection in .NET](usage.md).
+> This article doesn't take advantage of the [Generic host](../generic-host.md) features. For a more comprehensive guide, see [Use dependency injection in .NET](usage.md).
 
 ## Get started
 

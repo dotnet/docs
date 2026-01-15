@@ -1336,12 +1336,12 @@ items:
                 href: runtime-libraries/system-resources-resourcereader.md
               - name: SatelliteContractVersionAttribute class
                 href: runtime-libraries/system-resources-satellitecontractversionattribute.md
-      - name: Worker Services
+      - name: Worker services
         items:
           - name: Overview
             displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
             href: ../core/extensions/workers.md
-          - name: Create a Queue Service
+          - name: Create a queue service
             href: ../core/extensions/queue-service.md
           - name: Use scoped services with a BackgroundService
             href: ../core/extensions/scoped-service.md
@@ -1352,7 +1352,7 @@ items:
             displayName: msi,windows service installer,setup.exe
           - name: Implement the IHostedService interface
             href: ../core/extensions/timer-service.md
-          - name: Deploy a Worker Service to Azure
+          - name: Deploy a worker service to Azure
             href: ../core/extensions/cloud-service.md
       - name: Caching
         href: ../core/extensions/caching.md

@@ -320,7 +320,7 @@ To ensure a smooth transition of clients to a new destination when working with 
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - [Logging in .NET](logging.md)
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)

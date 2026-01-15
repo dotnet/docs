@@ -140,13 +140,3 @@ services.Add(descriptor);
 ```
 
 The built-in `Add{LIFETIME}` methods use the same approach. For example, see the [AddScoped source code](https://github.com/dotnet/extensions/blob/v3.1.8/src/DependencyInjection/DI.Abstractions/src/ServiceCollectionServiceExtensions.cs#L216-L237).
-
-### Constructor injection behavior
-
-Services can be resolved using <xref:System.IServiceProvider> or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities>. `ActivatorUtilities` creates objects that aren't registered in the container and is used with some framework features.
-
-Constructors can accept arguments that aren't provided by dependency injection, but the arguments must assign default values.
-
-When `IServiceProvider` or `ActivatorUtilities` resolve services, constructor injection requires a *public* constructor.
-
-When `ActivatorUtilities` resolves services, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.

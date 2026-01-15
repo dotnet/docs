@@ -1,7 +1,7 @@
 ---
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-ms.date: 12/16/2025
+ms.date: 01/14/2026
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -11,6 +11,8 @@ helpviewer_keywords:
 # Records (C# reference)
 
 The `record` modifier provides built-in functionality for encapsulating data. The `record class` and `record` syntax define [reference types](reference-types.md). The `record struct` syntax defines a [value type](value-types.md).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
 

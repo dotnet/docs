@@ -30,7 +30,7 @@ C# has many built-in reference types. These types include keywords or operators 
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. You can assign the literal `null` to any `object` variable as its default value. When you convert a value type variable to `object`, the value is *boxed*. When you convert a variable of type `object` to a value type, the value is *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. Assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. You can assign the literal `null` to any `object` variable as its default value. When you convert a value type variable to `object`, the value is *boxed*. When you convert a variable of type `object` to a value type, the value is *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 ## The string type
 

@@ -46,7 +46,7 @@ The following example uses optional formatting components described in the prece
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
 
-To make the code more readable, you can use new lines within an interpolation expression. The following example shows how new lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
+To make the code more readable, use new lines within an interpolation expression. The following example shows how new lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="MultiLineExpression":::
 

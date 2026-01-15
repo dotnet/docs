@@ -98,11 +98,11 @@ C# supports assignment between tuple types that satisfy both of the following co
 - Both tuple types have the same number of elements.
 - For each tuple position, the type of the right-hand tuple element is the same as or implicitly convertible to the type of the corresponding left-hand tuple element.
 
-You assign tuple element values by following the order of tuple elements. The assignment process ignores the names of tuple fields, as the following example shows:
+Assign tuple element values by following the order of tuple elements. The assignment process ignores the names of tuple fields, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="Assignment":::
 
-You can also use the assignment operator `=` to *deconstruct* a tuple instance into separate variables. You can do that in many ways:
+Use the assignment operator `=` to *deconstruct* a tuple instance into separate variables. You can do that in many ways:
 
 - Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
 

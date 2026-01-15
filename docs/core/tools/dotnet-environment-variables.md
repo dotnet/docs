@@ -81,7 +81,7 @@ Applications can enable the invariant mode in any of the following ways:
 1. By setting environment variable value `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` to `true` or `1`.
 
 > [!IMPORTANT]
-> A value set in the project file or _runtimeconfig.json_ has a higher priority than the environment variable.
+> Environment variables have a higher priority than a value set in the project file or _runtimeconfig.json_.
 
 For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 

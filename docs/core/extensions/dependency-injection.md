@@ -81,6 +81,10 @@ builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
 > [!TIP]
 > The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), which eliminates the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
 
+## Chaining
+
+It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically called a *dependency tree*, *dependency graph*, or *object graph*.
+
 ## Multiple constructor discovery rules
 
 When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following C# example service:

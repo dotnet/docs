@@ -51,7 +51,7 @@ The following algorithm describes how the runtime loads a managed assembly.
 3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 
     - Check its `cache-by-name`.
-    - If the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance, run [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
+    - If the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> is <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType>, run the [default probing logic for managed assemblies](default-probing.md#managed-assembly-default-probing).
     - Load from the specified path or raw assembly object. If an assembly is newly loaded, a reference is added to the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
 
 4. In either case, if an assembly is newly loaded, then the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

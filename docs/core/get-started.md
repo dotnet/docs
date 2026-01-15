@@ -40,7 +40,7 @@ To start a GitHub Codespace with the tutorial environment, open a browser window
 1. Open your new file.
 1. Type or copy the following code into `hello-world.cs`:
 
-   :::code language="csharp" source="./snippets/get-started/hello-world.cs" id="HelloWorld":::
+   :::code language="csharp" source="./snippets/get-started/csharp/hello-world.cs" id="HelloWorld":::
 
 1. In the integrated terminal window, make the `tutorials` folder the current folder, and run your app:
 

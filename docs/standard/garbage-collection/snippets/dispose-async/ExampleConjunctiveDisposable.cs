@@ -13,6 +13,7 @@
     {
         await DisposeAsyncCore().ConfigureAwait(false);
 
+        Dispose(disposing: false);
         GC.SuppressFinalize(this);
     }
 

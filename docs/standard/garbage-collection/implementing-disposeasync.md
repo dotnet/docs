@@ -42,7 +42,7 @@ The `public` parameterless `DisposeAsync()` method is called implicitly in an `a
 public async ValueTask DisposeAsync()
 {
     // Perform async cleanup.
-    await DisposeAsyncCore();
+    await DisposeAsyncCore().ConfigureAwait(false);
 
     // Dispose of unmanaged resources.
     Dispose(false);

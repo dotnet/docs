@@ -412,7 +412,7 @@
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/1.0.0) |  |  |
 | IoT Operations Protocol | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.0.0) |  |  |
-| IoT Operations Services | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.0.0)<br>NuGet [1.1.0-rc](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.1.0-rc) |  |  |
+| IoT Operations Services | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.0.0)<br>NuGet [1.2.0-rc2](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.0-rc2) |  |  |
 | Item Templates NetCore | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5337) |  |  |
 | Item Templates NetFx | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5337) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
@@ -424,7 +424,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.47.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.47.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.0.0) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.0.0)<br>NuGet [1.1.0-rc](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0-rc) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.10](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.10) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.10](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.10) |  |  |
@@ -438,7 +438,7 @@
 | Unknown Display Name | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.47.0) |  |  |
-| Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.1.0) |  |  |
+| Unknown Display Name | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.0) |  |  |
 | Unknown Display Name | NuGet [0.0.0-beta.5](https://www.nuget.org/packages/Microsoft.Fabric.Mcp/0.0.0-beta.5) |  |  |
 | Unknown Display Name | NuGet [0.0.0-beta.5](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-arm64/0.0.0-beta.5) |  |  |
 | Unknown Display Name | NuGet [0.0.0-beta.5](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-x64/0.0.0-beta.5) |  |  |

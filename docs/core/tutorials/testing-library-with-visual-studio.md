@@ -34,7 +34,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 10** in the **Framework** box. For the **Test runner** select **Microsoft.Testing.Platform**. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 10** in the **Framework** box, select **Microsoft.Testing.Platform** for the **Test runner**, and then choose **Create**.
 
    :::image type="content" source="./media/testing-library-with-visual-studio/additional-information-mstest.png" alt-text="Enter additional information for the MSTest Test Project":::
 

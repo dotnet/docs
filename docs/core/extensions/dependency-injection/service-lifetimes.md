@@ -10,20 +10,18 @@ Services can be registered with a [transient](#transient), [scoped](#scoped), or
 
 ## Transient
 
-Transient-lifetime services are created each time they're requested from the service container. To register a service as _transient_, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+A service with a *transient* lifetime is created each time it's requested from the service container. To register a service as transient, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
 
 In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per-request allocations, as services are resolved and constructed every time. For more information, see [IDisposable guidance for transient and shared instances](guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ## Scoped
 
-For web applications, a scoped lifetime indicates that services are created once per client request (connection). Register scoped services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A>.
-
-In apps that process requests, scoped services are disposed at the end of the request.
+For web applications, a *scoped* lifetime indicates that services are created once per client request (connection). In apps that process requests, scoped services are disposed at the end of the request. Register scoped services by calling <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A>.
 
 > [!NOTE]
 > When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
 
-A scoped service should always be used from within a scope—either an implicit scope (such as ASP.NET Core's per-request scope) or an explicit scope created with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType>.
+A scoped service should always be used from within a scope&ndash;either an implicit scope (such as ASP.NET Core's per-request scope) or an explicit scope created with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType>.
 
 Do **_not_** resolve a scoped service directly from a singleton using constructor injection or by requesting it from <xref:System.IServiceProvider> in the singleton. Doing so causes the scoped service to behave like a singleton, which can lead to incorrect state when processing subsequent requests.
 

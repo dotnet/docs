@@ -32,7 +32,7 @@ public class Worker : BackgroundService
 }
 ```
 
-The `Worker` class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies like this are problematic and should be avoided for the following reasons:
+In this case, the `Worker` class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies like this are problematic and should be avoided for the following reasons:
 
 - To replace `MessageWriter` with a different implementation, you must modify the `Worker` class.
 - If `MessageWriter` has dependencies, the `Worker` class must also configure them. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
@@ -40,51 +40,60 @@ The `Worker` class creates and directly depends on the `MessageWriter` class. Ha
 
 ## The concept
 
-Dependency injection addresses these problems through:
+Dependency injection addresses hard-coded dependency problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
 - Registration of the dependency in a *service container*.
 
   .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 
-- *Injection* of the service into the constructor of the class where it's used.
+- Injection of the service into the constructor of the class where it's used.
 
   The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
 
 > [!TIP]
 > In dependency injection terminology, a *service* is typically an object that provides a service to other objects, such as the `IMessageWriter` service. The service isn't related to a web service, although it might use a web service.
 
-As an example, assume the `IMessageWriter` interface defines the `Write` method. This interface is implemented by a concrete type, `MessageWriter`, shown previously. The following sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton *lifetime*, the lifetime of the app. [Service lifetimes](service-lifetimes.md) are described later in this article.
+As an example, assume the `IMessageWriter` interface defines the `Write` method. This interface is implemented by a concrete type, `MessageWriter`, shown previously. The following sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a [*singleton* lifetime](service-lifetimes.md#singleton), which means it isn't disposed until the app shuts down.
 
-:::code language="csharp" source="snippets/overview/Program.cs" highlight="5-8":::
+:::code language="csharp" source="snippets/overview/Program.cs" highlight="3-6":::
 
-In the preceding code, the sample app:
+In the preceding code example, the highlighted lines:
 
-- Creates a host app builder instance.
-- Configures the services by registering the `Worker` as a [hosted service](../workers.md) and the `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
-- Builds the host and runs it.
+- Create a host app builder instance.
+- Configure the services by registering the `Worker` as a [hosted service](../workers.md) and the `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
+- Build the host and run it.
 
 The host contains the dependency injection service provider. It also contains all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
 
-:::code language="csharp" source="snippets/overview/Program.cs" id="SnippetWorker":::
+By using the DI pattern, the worker service doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. This design makes it easy to change the implementation that the worker service uses without modifying the worker service. The worker service also doesn't *create an instance* of `MessageWriter`. The DI container creates the instance.
 
-By using the DI pattern, the worker service doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. This makes it easy to change the implementation that the worker service uses without modifying the worker service. The worker service also doesn't *create an instance* of `MessageWriter`. The DI container creates the instance.
-
-Now, imagine you want to switch out `MessageWriter` with a type that uses the [built-in logging API](xref:Microsoft.Extensions.Logging.ILogger). `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger`1>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](service-registration.md#framework-provided-services).
+Now, imagine you want to switch out `MessageWriter` with a type that uses the [framework-provided logging service](service-registration.md#framework-provided-services). Create a class `LoggingMessageWriter` that depends on <xref:Microsoft.Extensions.Logging.ILogger`1> by requesting it in the constructor.
 
 :::code language="csharp" source="snippets/overview/LoggingMessageWriter.cs":::
 
-Making the switch is as simple as updating the call to `AddSingleton` to register this new `IMessageWriter` implementation:
+To switch from `MessageWriter` to `LoggingMessageWriter`, simply update the call to `AddSingleton` to register this new `IMessageWriter` implementation:
 
 ```csharp
 builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), which eliminates the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
+> [!TIP]
+> The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), which eliminates the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
 
-## Multiple constructor discovery rules
+## Constructor injection behavior
 
-When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following C# example service:
+Services can be resolved using <xref:System.IServiceProvider> (the built-in service container) or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities>. `ActivatorUtilities` creates objects that aren't registered in the container and is used with some framework features.
+
+Constructors can accept arguments that aren't provided by dependency injection, but the arguments must assign default values.
+
+When `IServiceProvider` or `ActivatorUtilities` resolve services, constructor injection requires a *public* constructor.
+
+When `ActivatorUtilities` resolves services, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
+
+## Constructor selection rules
+
+When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following example service:
 
 ```csharp
 public class ExampleService
@@ -151,26 +160,14 @@ public class ExampleService
 }
 ```
 
-## Constructor injection behavior
-
-Services can be resolved using <xref:System.IServiceProvider> or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities>. `ActivatorUtilities` creates objects that aren't registered in the container and is used with some framework features.
-
-Constructors can accept arguments that aren't provided by dependency injection, but the arguments must assign default values.
-
-When `IServiceProvider` or `ActivatorUtilities` resolve services, constructor injection requires a *public* constructor.
-
-When `ActivatorUtilities` resolves services, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
-
 ## Scope validation
 
-When the app runs in the development environment and calls [CreateApplicationBuilder](../generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
+[Scoped services](service-lifetimes.md#scoped) are disposed by the container that created them. If a scoped service is created in the root container, the service's lifetime is effectively promoted to [singleton](service-lifetimes.md#singleton) because it's only disposed by the root container when the app shuts down. Validating service scopes catches these situations when `BuildServiceProvider` is called.
+
+When an app runs in the development environment and calls [CreateApplicationBuilder](../generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.
-
-The root service provider is created when <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> is called. The root service provider's lifetime corresponds to the app's lifetime when the provider starts with the app and is disposed when the app shuts down.
-
-Scoped services are disposed by the container that created them. If a scoped service is created in the root container, the service's lifetime is effectively promoted to singleton because it's only disposed by the root container when the app shuts down. Validating service scopes catches these situations when `BuildServiceProvider` is called.
 
 ## Scope scenarios
 

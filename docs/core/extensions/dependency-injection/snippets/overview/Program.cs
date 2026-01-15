@@ -1,6 +1,4 @@
-﻿using DependencyInjection.Example;
-
-HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+﻿HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddHostedService<Worker>();
 builder.Services.AddSingleton<IMessageWriter, MessageWriter>();

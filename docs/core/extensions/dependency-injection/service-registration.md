@@ -4,7 +4,7 @@ description: Learn how to register services for dependency injection using diffe
 ms.date: 10/21/2025
 ---
 
-# Service registration (dependency injection)
+# Service registration
 
 This article discusses registering groups of services and framework-provided services. It also provides details about the service-registration extension methods that .NET provides.
 
@@ -14,7 +14,7 @@ This article discusses registering groups of services and framework-provided ser
 
 ## Framework-provided services
 
-When using any of the available host or app builder patterns, defaults are applied and services are registered by the framework. Consider some of the most popular host and app builder patterns:
+When using any of the available host or app-builder patterns, defaults are applied and services are registered by the framework. Consider some of the most popular host and app-builder patterns:
 
 - <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType>
@@ -27,7 +27,7 @@ After creating a builder from any of these APIs, the `IServiceCollection` has se
 
 The following table lists a small sample of these framework-registered services:
 
-| Service type                                                                       | Lifetime  |
+| Service type                                                                       | [Lifetime](service-lifetimes.md)  |
 |------------------------------------------------------------------------------------|-----------|
 | <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
 | <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                       | Singleton |
@@ -39,19 +39,19 @@ The following table lists a small sample of these framework-registered services:
 | <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>              | Singleton |
 | <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                | Singleton |
 
-## Registration extension methods
+## Registration methods
 
 The framework provides service-registration extension methods that are useful in specific scenarios:
 
-| Method | Automatic<br>object<br>disposal | Multiple<br>implementations | Pass args |
-|--------|:-------------------------------:|:---------------------------:|:---------:|
+| Method | Automatic object disposal | Multiple implementations | Pass args |
+|--------|:-------------------------:|:------------------------:|:---------:|
 | `Add{LIFETIME}<{SERVICE}, {IMPLEMENTATION}>()`<br><br>Example:<br><br>`services.AddSingleton<IMyDep, MyDep>();` | Yes                             | Yes                         | No        |
 | `Add{LIFETIME}<{SERVICE}>(sp => new {IMPLEMENTATION})`<br><br>Examples:<br><br>`services.AddSingleton<IMyDep>(sp => new MyDep());`<br>`services.AddSingleton<IMyDep>(sp => new MyDep(99));` | Yes | Yes | Yes |
 | `Add{LIFETIME}<{IMPLEMENTATION}>()`<br><br>Example:<br><br>`services.AddSingleton<MyDep>();` | Yes | No | No |
 | `AddSingleton<{SERVICE}>(new {IMPLEMENTATION})`<br><br>Examples:<br><br>`services.AddSingleton<IMyDep>(new MyDep());`<br>`services.AddSingleton<IMyDep>(new MyDep(99));` | No | Yes | Yes |
 | `AddSingleton(new {IMPLEMENTATION})`<br><br>Examples:<br><br>`services.AddSingleton(new MyDep());`<br>`services.AddSingleton(new MyDep(99));` | No | No | Yes |
 
-For more information on type disposal, see the [Disposal of services](guidelines.md#disposal-of-services) section.
+For more information on type disposal, see [Disposal of services](guidelines.md#disposal-of-services).
 
 Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. For example, consider the following code:
 

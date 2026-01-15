@@ -1,6 +1,6 @@
 ---
 title: Dependency injection
-description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
+description: Learn how to use dependency injection within your .NET apps. Discover how to define service lifetimes and express dependencies in C#.
 ms.date: 10/21/2025
 ms.topic: overview
 ai-usage: ai-assisted
@@ -10,19 +10,11 @@ ai-usage: ai-assisted
 
 .NET supports the *dependency injection* (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
-A *dependency* is an object that another object depends on. Examine the following `MessageWriter` class with a `Write` method that other classes depend on:
+A *dependency* is an object that another object depends on. The following `MessageWriter` class has a `Write` method that other classes might depend on:
 
-```csharp
-public class MessageWriter
-{
-    public void Write(string message)
-    {
-        Console.WriteLine($"MessageWriter.Write(message: \"{message}\")");
-    }
-}
-```
+:::code language="csharp" source="snippets/overview/Program.cs" id="SnippetMW":::
 
-A class can create an instance of the `MessageWriter` class to use its `Write` method. In the following example, the `MessageWriter` class is a dependency of the `Worker` class:
+A class can create an instance of the `MessageWriter` class to use its `Write` method. In the following example, the `MessageWriter` class is a *dependency* of the `Worker` class:
 
 ```csharp
 public class Worker : BackgroundService
@@ -40,85 +32,54 @@ public class Worker : BackgroundService
 }
 ```
 
-The class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies, such as in the previous example, are problematic and should be avoided for the following reasons:
+In this case, the `Worker` class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies like this are problematic and should be avoided for the following reasons:
 
 - To replace `MessageWriter` with a different implementation, you must modify the `Worker` class.
 - If `MessageWriter` has dependencies, the `Worker` class must also configure them. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
 - This implementation is difficult to unit test. The app should use a mock or stub `MessageWriter` class, which isn't possible with this approach.
 
-Dependency injection addresses these problems through:
+## The concept
+
+Dependency injection addresses hard-coded dependency problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
-- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
-- *Injection* of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
+- Registration of the dependency in a *service container*.
 
-As an example, the `IMessageWriter` interface defines the `Write` method:
+  .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/IMessageWriter.cs":::
+- Injection of the service into the constructor of the class where it's used.
 
-This interface is implemented by a concrete type, `MessageWriter`:
+  The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/MessageWriter.cs":::
+> [!TIP]
+> In dependency injection terminology, a *service* is typically an object that provides a service to other objects, such as the `IMessageWriter` service. The service isn't related to a web service, although it might use a web service.
 
-The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of the app. [Service lifetimes](#service-lifetimes) are described later in this article.
+As an example, assume the `IMessageWriter` interface defines the `Write` method. This interface is implemented by a concrete type, `MessageWriter`, shown previously. The following sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a [*singleton* lifetime](service-lifetimes.md#singleton), which means it isn't disposed until the app shuts down.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
+:::code language="csharp" source="snippets/overview/Program.cs" highlight="3-6":::
 
-In the preceding code, the sample app:
+In the preceding code example, the highlighted lines:
 
-- Creates a host app builder instance.
-- Configures the services by registering:
-  - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
-  - The `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
-- Builds the host and runs it.
+- Create a host app builder instance.
+- Configure the services by registering the `Worker` as a [hosted service](workers.md) and the `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
+- Build the host and run it.
 
 The host contains the dependency injection service provider. It also contains all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs":::
+By using the DI pattern, the worker service doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. This design makes it easy to change the implementation that the worker service uses without modifying the worker service. The worker service also doesn't *create an instance* of `MessageWriter`. The DI container creates the instance.
 
-By using the DI pattern, the worker service:
+Now, imagine you want to switch out `MessageWriter` with a type that uses the [framework-provided logging service](#framework-provided-services). Create a class `LoggingMessageWriter` that depends on <xref:Microsoft.Extensions.Logging.ILogger`1> by requesting it in the constructor.
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. This makes it easy to change the implementation that the worker service uses without modifying the worker service.
-- Doesn't create an instance of `MessageWriter`. The DI container creates the instance.
+:::code language="csharp" source="snippets/overview/LoggingMessageWriter.cs":::
 
-The implementation of the `IMessageWriter` interface can be improved using the built-in logging API:
-
-:::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
-
-The updated call to `AddSingleton` registers the new `IMessageWriter` implementation:
+To switch from `MessageWriter` to `LoggingMessageWriter`, simply update the call to `AddSingleton` to register this new `IMessageWriter` implementation:
 
 ```csharp
 builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
-
-`LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger`1>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
-
-It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically called a *dependency tree*, *dependency graph*, or *object graph*.
-
-The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), which eliminates the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
-
-In dependency injection terminology, a *service* is typically an object that provides a service to other objects, such as the `IMessageWriter` service. The service isn't related to a web service, although it might use a web service.
-
-The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples demonstrate basic DI, not logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
-
-```csharp
-public sealed class Worker(ILogger<Worker> logger) : BackgroundService
-{
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        while (!stoppingToken.IsCancellationRequested)
-        {
-            logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-
-            await Task.Delay(1_000, stoppingToken);
-        }
-    }
-}
-```
-
-Using the preceding code, there's no need to update _Program.cs_, because the framework provides logging.
+> [!TIP]
+> The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), which eliminates the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
 
 ## Multiple constructor discovery rules
 

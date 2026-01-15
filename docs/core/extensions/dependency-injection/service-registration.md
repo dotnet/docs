@@ -69,11 +69,11 @@ This equivalency is why multiple implementations of a service can't be registere
 
 Any of the service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="11-16":::
+:::code language="csharp" source="snippets/configuration/console-ienumerable/Program.cs" highlight="11-16":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
+:::code language="csharp" source="snippets/configuration/console-ienumerable/ExampleService.cs" highlight="7-16":::
 
 The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to be registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 

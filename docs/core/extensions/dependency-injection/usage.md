@@ -16,7 +16,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Create a .NET console app that uses dependency injection.
-> - Build and configure a [Generic host](generic-host.md).
+> - Build and configure a [Generic host](../generic-host.md).
 > - Write several interfaces and corresponding implementations.
 > - Use service lifetime and scoping for DI.
 
@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 ## Create a new console application
 
-Using either the [dotnet new](../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
+Using either the [dotnet new](../../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
 
 Your new console app project file should resemble the following:
 
@@ -104,7 +104,7 @@ Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially 
 
 The app:
 
-- Creates an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder> instance with [host builder settings](generic-host.md#host-builder-settings).
+- Creates an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder> instance with [host builder settings](../generic-host.md#host-builder-settings).
 - Configures services and adds them with their corresponding service lifetime.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
 - Calls `ExemplifyServiceLifetime`, passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.

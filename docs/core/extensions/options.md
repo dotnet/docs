@@ -16,7 +16,7 @@ Options also provide a mechanism to validate configuration data. For more inform
 
 ## Bind hierarchical configuration
 
-The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to a `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
+The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to a `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 For example, to read the highlighted configuration values from an _appsettings.json_ file:
 
@@ -57,7 +57,7 @@ In the preceding code, the `ConfigurationBinder.Get<T>` is used to acquire an in
 > [!IMPORTANT]
 > The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** constrained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
 
-An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
+An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection/overview.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 
 ```csharp
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
@@ -85,18 +85,18 @@ In the preceding code, changes to the JSON configuration file after the app has 
 - Does ***not*** support:
   - Reading of configuration data after the app has started.
   - [Named options](#named-options-support-using-iconfigurenamedoptions)
-- Is registered as a [Singleton](dependency-injection.md#singleton) and can be injected into any [service lifetime](dependency-injection.md#service-lifetimes).
+- Is registered as a [Singleton](dependency-injection/overview.md#singleton) and can be injected into any [service lifetime](dependency-injection/service-lifetimes.md).
 
 <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>:
 
-- Is useful in scenarios where options should be recomputed on every injection resolution, in [scoped or transient lifetimes](dependency-injection.md#service-lifetimes). For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
-- Is registered as [Scoped](dependency-injection.md#scoped) and therefore can't be injected into a Singleton service.
+- Is useful in scenarios where options should be recomputed on every injection resolution, in [scoped or transient lifetimes](dependency-injection/service-lifetimes.md). For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
+- Is registered as [Scoped](dependency-injection/overview.md#scoped) and therefore can't be injected into a Singleton service.
 - Supports [named options](#named-options-support-using-iconfigurenamedoptions).
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
 
 - Is used to retrieve options and manage options notifications for `TOptions` instances.
-- Is registered as a [Singleton](dependency-injection.md#singleton) and can be injected into any [service lifetime](dependency-injection.md#service-lifetimes).
+- Is registered as a [Singleton](dependency-injection/overview.md#singleton) and can be injected into any [service lifetime](dependency-injection/service-lifetimes.md).
 - Supports:
   - Change notifications
   - [Named options](#named-options-support-using-iconfigurenamedoptions)
@@ -123,8 +123,8 @@ When you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options a
 
 The difference between `IOptionsMonitor` and `IOptionsSnapshot` is that:
 
-- `IOptionsMonitor` is a [singleton service](dependency-injection.md#singleton) that retrieves current option values at any time, which is especially useful in singleton dependencies.
-- `IOptionsSnapshot` is a [scoped service](dependency-injection.md#scoped) and provides a snapshot of the options at the time the `IOptionsSnapshot<T>` object is constructed. Options snapshots are designed for use with transient and scoped dependencies.
+- `IOptionsMonitor` is a [singleton service](dependency-injection/overview.md#singleton) that retrieves current option values at any time, which is especially useful in singleton dependencies.
+- `IOptionsSnapshot` is a [scoped service](dependency-injection/overview.md#scoped) and provides a snapshot of the options at the time the `IOptionsSnapshot<T>` object is constructed. Options snapshots are designed for use with transient and scoped dependencies.
 
 The following code uses <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>.
 
@@ -251,7 +251,7 @@ All options are named instances. <xref:Microsoft.Extensions.Options.IConfigureOp
 
 ## Use DI services to configure options
 
-When you're configuring options, you can use [dependency injection](dependency-injection.md) to access registered services, and use them to configure options. This is useful when you need to access services to configure options. Services can be accessed from DI while configuring options in two ways:
+When you're configuring options, you can use [dependency injection](dependency-injection/overview.md) to access registered services, and use them to configure options. This is useful when you need to access services to configure options. Services can be accessed from DI while configuring options in two ways:
 
 - Pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) on [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601). `OptionsBuilder<TOptions>` provides overloads of [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) that allow use of up to five services to configure options:
 

@@ -166,7 +166,7 @@ The highlighted lines in the following code show what it means to have "stacked 
 
 For a dual implementation example of `IDisposable` and `IAsyncDisposable`, see the <xref:System.Text.Json.Utf8JsonWriter> source code [on GitHub](https://github.com/dotnet/runtime/blob/035b729d829368c2790d825bd02db14f0c0fd2ea/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 
-- [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)
+- [Disposal of services](../../core/extensions/dependency-injection/guidelines.md#disposal-of-services)
 - <xref:System.IAsyncDisposable>
 - <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>
 - <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)>

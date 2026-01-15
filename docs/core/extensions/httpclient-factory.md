@@ -376,7 +376,7 @@ builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [hcf-issues]: httpclient-factory-troubleshooting.md
-[di]: dependency-injection.md
+[di]: dependency-injection/overview.md
 [logging]: logging.md
 [config]: configuration.md
 [httpclient]: ../../fundamentals/networking/http/httpclient.md

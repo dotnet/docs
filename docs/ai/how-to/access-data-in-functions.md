@@ -28,7 +28,7 @@ If you manually invoke an <xref:Microsoft.Extensions.AI.AIFunction> by calling <
 
 - A dictionary of named arguments.
 - <xref:Microsoft.Extensions.AI.AIFunctionArguments.Context>: An arbitrary `IDictionary<object, object>` for passing additional ambient data into the function.
-- <xref:Microsoft.Extensions.AI.AIFunctionArguments.Services>: An <xref:System.IServiceProvider> that lets the `AIFunction` resolve arbitrary state from a [dependency injection (DI)](../../core/extensions/dependency-injection.md) container.
+- <xref:Microsoft.Extensions.AI.AIFunctionArguments.Services>: An <xref:System.IServiceProvider> that lets the `AIFunction` resolve arbitrary state from a [dependency injection (DI)](../../core/extensions/dependency-injection/overview.md) container.
 
 If you want to access either the `AIFunctionArguments` or the `IServiceProvider` from within your <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*?displayProperty=nameWithType> delegate, create a parameter typed as `IServiceProvider` or `AIFunctionArguments`. That parameter will be bound to the relevant data from the `AIFunctionArguments` passed to `AIFunction.InvokeAsync()`.
 

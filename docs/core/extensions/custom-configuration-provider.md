@@ -75,4 +75,4 @@ The preceding code configures the `WidgetOptions` object from the `"WidgetOption
 - [Configuration in .NET](configuration.md)
 - [Configuration providers in .NET](configuration-providers.md)
 - [Options pattern in .NET](options.md)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)

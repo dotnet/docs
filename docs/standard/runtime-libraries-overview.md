@@ -23,7 +23,7 @@ The following table shows some examples of package-provided libraries.
 |---------------------------------|----------------------------------------|
 | [`Microsoft.Extensions.AI`][ai] | [AI](../ai/microsoft-extensions-ai.md) |
 | [`Microsoft.Extensions.Configuration`][configuration] | [Configuration](../core/extensions/configuration.md) |
-| [`Microsoft.Extensions.DependencyInjection`][di] | [Dependency injection](../core/extensions/dependency-injection.md) |
+| [`Microsoft.Extensions.DependencyInjection`][di] | [Dependency injection](../core/extensions/dependency-injection/overview.md) |
 | [`Microsoft.Extensions.FileSystemGlobbing`][fsg] | [File globbing](../core/extensions/file-globbing.md) |
 | [`Microsoft.Extensions.Hosting`][host] | [Generic Host](../core/extensions/generic-host.md) |
 | [`Microsoft.Extensions.Http`][http] | [HTTP](../core/extensions/httpclient-factory.md) |

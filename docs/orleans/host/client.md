@@ -26,7 +26,7 @@ Despite these drawbacks, co-hosting client code with grain code is a popular opt
 
 ### Obtain a client from a host
 
-If you host using the [.NET Generic Host](../../core/extensions/generic-host.md), the client is automatically available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container. You can inject it into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
+If you host using the [.NET Generic Host](../../core/extensions/generic-host.md), the client is automatically available in the host's [dependency injection](../../core/extensions/dependency-injection/overview.md) container. You can inject it into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"

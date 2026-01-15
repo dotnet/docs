@@ -177,7 +177,7 @@ Since the absolute expiration (<xref:Microsoft.Extensions.Caching.Memory.MemoryC
 
 ## Worker Service caching
 
-One common strategy for caching data, is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independent (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection.md#service-lifetimes).
+One common strategy for caching data, is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independent (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection/service-lifetimes.md).
 
 > [!IMPORTANT]
 > The service lifetime's are very important to understand. When you call <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> to register all of the in-memory caching services, the services are registered as singletons.
@@ -321,7 +321,7 @@ To delete values in the distributed cache, call one of the remove APIs:
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - [.NET Generic Host](generic-host.md)
 - [Worker Services in .NET](workers.md)
 - [Azure for .NET developers](../../azure/index.yml)

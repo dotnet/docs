@@ -19,7 +19,7 @@ To get started, create a new .NET console application named **DI.Basics**. Some 
 
 - [Visual Studio: **File > New > Project**](/visualstudio/get-started/csharp/tutorial-console) menu.
 - [Visual Studio Code](https://code.visualstudio.com/) and the [C# Dev Kit extension's](https://code.visualstudio.com/docs/csharp/project-management): **Solution Explorer** menu option.
-- [.NET CLI: `dotnet new console`](../tools/dotnet-new-sdk-templates.md#console) command in the terminal.
+- [.NET CLI: `dotnet new console`](../../tools/dotnet-new-sdk-templates.md#console) command in the terminal.
 
 You need to add the package reference to the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) in the project file. Regardless of the approach, ensure the project resembles the following XML of the _DI.Basics.csproj_ file:
 
@@ -27,7 +27,7 @@ You need to add the package reference to the [Microsoft.Extensions.DependencyInj
 
 ## Dependency injection basics
 
-Dependency injection is a design pattern that allows you to remove hard-coded dependencies and make your application more maintainable and testable. DI is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies.
+Dependency injection is a design pattern that allows you to remove hard-coded dependencies and make your application more maintainable and testable. DI is a technique for achieving [Inversion of Control (IoC)](../../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies.
 
 The abstractions for DI in .NET are defined in the [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions) NuGet package:
 
@@ -39,7 +39,7 @@ In .NET, DI is managed by adding services and configuring them in an `IServiceCo
 
 ## Create example services
 
-Not all services are created equally. Some services require a new instance each time that the service container gets them (_transient_), while others should be shared across requests (_scoped_) or for the entire lifetime of the app (_singleton_). For more information on service lifetimes, see [Service lifetimes](dependency-injection.md#service-lifetimes).
+Not all services are created equally. Some services require a new instance each time that the service container gets them (_transient_), while others should be shared across requests (_scoped_) or for the entire lifetime of the app (_singleton_). For more information on service lifetimes, see [Service lifetimes](service-lifetimes.md).
 
 Likewise, some services only expose a concrete type, while others are expressed as a contract between an interface and an implementation type. You create several variations of services to help demonstrate these concepts.
 
@@ -135,6 +135,6 @@ The preceding code describes the concrete `FarewellService` type as both the ser
 
 ## See also
 
-- [.NET dependency injection](dependency-injection.md)
+- [.NET dependency injection](overview.md)
 - [Dependency injection guidelines](guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

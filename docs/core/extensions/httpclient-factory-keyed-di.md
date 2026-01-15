@@ -10,7 +10,7 @@ ms.date: 01/27/2025
 
 In this article, you learn how to integrate `IHttpClientFactory` with Keyed Services.
 
-[_Keyed Services_](dependency-injection.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At runtime, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
+[_Keyed Services_](dependency-injection/overview.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At runtime, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
 
 For an overview on how to use `IHttpClientFactory` in your .NET application, see [IHttpClientFactory with .NET][hcf].
 
@@ -298,5 +298,5 @@ If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKe
 - [Common `IHttpClientFactory` usage issues][hcf-troubleshooting]
 
 [hcf]: httpclient-factory.md
-[di]: dependency-injection.md
+[di]: dependency-injection/overview.md
 [hcf-troubleshooting]: httpclient-factory-troubleshooting.md

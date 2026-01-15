@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # .NET dependency injection
 
-.NET supports the *dependency injection* (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
+.NET supports the *dependency injection* (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
 A *dependency* is an object that another object depends on. The following `MessageWriter` class has a `Write` method that other classes might depend on:
 
@@ -61,7 +61,7 @@ As an example, assume the `IMessageWriter` interface defines the `Write` method.
 In the preceding code, the sample app:
 
 - Creates a host app builder instance.
-- Configures the services by registering the `Worker` as a [hosted service](workers.md) and the `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
+- Configures the services by registering the `Worker` as a [hosted service](../workers.md) and the `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
 - Builds the host and runs it.
 
 The host contains the dependency injection service provider. It also contains all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
@@ -153,7 +153,7 @@ public class ExampleService
 
 ## Scope validation
 
-When the app runs in the development environment and calls [CreateApplicationBuilder](generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the development environment and calls [CreateApplicationBuilder](../generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.
@@ -214,5 +214,5 @@ public class ExampleService
 - [Dependency injection guidelines](guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
 - [NDC Conference Patterns for DI app development](https://www.youtube.com/watch?v=x-C-CNBVTaY)
-- [Explicit dependencies principle](../../architecture/modern-web-apps-azure/architectural-principles.md#explicit-dependencies)
+- [Explicit dependencies principle](../../../architecture/modern-web-apps-azure/architectural-principles.md#explicit-dependencies)
 - [Inversion of control containers and the dependency injection pattern (Martin Fowler)](https://www.martinfowler.com/articles/injection.html)

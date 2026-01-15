@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 11/24/2025
+ms.date: 01/14/2026
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
@@ -36,6 +36,8 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 | [`string`](reference-types.md#the-string-type)     |<xref:System.String?displayProperty=nameWithType>   |
 | [`delegate`](reference-types.md#the-delegate-type) |<xref:System.Delegate?displayProperty=nameWithType> |
 | [`dynamic`](reference-types.md#the-dynamic-type)   |<xref:System.Object?displayProperty=nameWithType>   |
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 In the preceding tables, most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
 

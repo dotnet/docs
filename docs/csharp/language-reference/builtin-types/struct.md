@@ -32,7 +32,7 @@ Because structure types have value semantics, we recommend you define *immutable
 Use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md).
-- Any property, including automatically implemented ones, must be read-only or [`init` only`](../keywords/init.md). Init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
+- Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
 
 This rule guarantees that no member of a `readonly` struct modifies the state of the struct. All other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 

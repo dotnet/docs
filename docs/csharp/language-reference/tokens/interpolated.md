@@ -14,7 +14,7 @@ author: pkulikov
 
 # String interpolation using `$`
 
-Use the ` character to identify a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When you resolve an interpolated string to a result string, the compiler replaces items with interpolation expressions by the string representations of the expression results.
+Use the `$` character to identify a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When you resolve an interpolated string to a result string, the compiler replaces items with interpolation expressions by the string representations of the expression results.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

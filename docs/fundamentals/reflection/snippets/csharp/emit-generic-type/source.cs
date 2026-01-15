@@ -28,7 +28,7 @@ public class Example
         //
         //<Snippet2>
         AppDomain myDomain = AppDomain.CurrentDomain;
-        AssemblyName myAsmName = new("GenericEmitExample1");
+        AssemblyName myAsmName = new AssemblyName("GenericEmitExample1");
         AssemblyBuilder myAssembly =
             myDomain.DefineDynamicAssembly(myAsmName,
                 AssemblyBuilderAccess.RunAndSave);
@@ -69,7 +69,7 @@ public class Example
         // in a variable with the same name as the type parameter.
         //
         //<Snippet5>
-        string[] typeParamNames = ["TFirst", "TSecond"];
+        string[] typeParamNames = { "TFirst", "TSecond" };
         GenericTypeParameterBuilder[] typeParams =
             myType.DefineGenericParameters(typeParamNames);
 
@@ -97,7 +97,7 @@ public class Example
         // containing the interface types.
         //<Snippet7>
         TSecond.SetBaseTypeConstraint(baseType);
-        Type[] interfaceTypes = [interfaceA, interfaceB];
+        Type[] interfaceTypes = { interfaceA, interfaceB };
         TSecond.SetInterfaceConstraints(interfaceTypes);
         //</Snippet7>
 
@@ -119,7 +119,7 @@ public class Example
         //<Snippet22>
         Type listOf = typeof(List<>);
         Type listOfTFirst = listOf.MakeGenericType(TFirst);
-        Type[] mParamTypes = [TFirst.MakeArrayType()];
+        Type[] mParamTypes = { TFirst.MakeArrayType() };
 
         MethodBuilder exMethod =
             myType.DefineMethod("ExampleMethod",
@@ -169,7 +169,7 @@ public class Example
         Type ienumOf = typeof(IEnumerable<>);
         Type TfromListOf = listOf.GetGenericArguments()[0];
         Type ienumOfT = ienumOf.MakeGenericType(TfromListOf);
-        Type[] ctorArgs = [ienumOfT];
+        Type[] ctorArgs = { ienumOfT };
 
         ConstructorInfo ctorPrep = listOf.GetConstructor(ctorArgs);
         ConstructorInfo ctor =
@@ -198,7 +198,7 @@ public class Example
         // constructed type.
         //
         //<Snippet9>
-        Type[] typeArgs = [typeof(Example), typeof(ExampleDerived)];
+        Type[] typeArgs = { typeof(Example), typeof(ExampleDerived) };
         Type constructed = finished.MakeGenericType(typeArgs);
         MethodInfo mi = constructed.GetMethod("ExampleMethod");
         //</Snippet9>
@@ -210,8 +210,8 @@ public class Example
         // on the resulting List<Example>.
         //
         //<Snippet10>
-        Example[] input = [new Example(), new Example()];
-        object[] arguments = [input];
+        Example[] input = { new Example(), new Example() };
+        object[] arguments = { input };
 
         List<Example> listX =
             (List<Example>)mi.Invoke(null, arguments);
@@ -239,10 +239,7 @@ public class Example
 
         foreach (Type tParam in typeParameters)
         {
-            Console.WriteLine($"""
-            
-            Type parameter {tParam}:
-            """);
+            Console.WriteLine($"\nType parameter {tParam}:");
 
             foreach (Type c in tParam.GetGenericParameterConstraints())
             {

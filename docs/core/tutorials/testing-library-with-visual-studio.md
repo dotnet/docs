@@ -71,7 +71,7 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - Includes <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in the StringLibraryTest project file.
+   - Includes <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in the StringLibraryTest project file for C#, and imports <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> for Visual Basic.
    - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `Test1` class.
    - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
 
@@ -115,7 +115,7 @@ To create the test methods:
 1. In the *Test1.cs* or *Test1.vb* code window, replace the code with the following code:
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTestNet/Test1.cs":::
-   :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
+   :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/Test1.vb":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 

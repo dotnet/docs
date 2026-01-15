@@ -17,14 +17,11 @@ public class MessageWriter : IMessageWriter
 }
 // </SnippetMW>
 
-// <SnippetIMW>
 public interface IMessageWriter
 {
     void Write(string message);
 }
-// </SnippetIMW>
 
-// <SnippetWorker>
 public sealed class Worker(IMessageWriter messageWriter) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -36,5 +33,3 @@ public sealed class Worker(IMessageWriter messageWriter) : BackgroundService
         }
     }
 }
-
-// </SnippetWorker>

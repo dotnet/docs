@@ -1,7 +1,7 @@
 ---
 title: Dependency injection guidelines
 description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
-ms.date: 01/14/2026
+ms.date: 10/22/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -138,21 +138,21 @@ The following third-party containers can be used with ASP.NET Core apps:
 
 Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service might also require thread safety depending on how it's used by the singleton. The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
 
-Additionally, the process of resolving services from the built-in .NET dependency injection container is thread-safe.
+Additionally, the process of resolving services from the built-in .NET dependency injection container is thread-safe.  
 Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resolve services concurrently from multiple threads.
 
 > [!NOTE]
-> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe. It doesn't make the resolved service instances themselves thread-safe.
+> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe. It doesn't make the resolved service instances themselves thread-safe.  
 > Any service (especially singletons) that holds shared mutable state must implement its own synchronization logic if accessed concurrently.
 
 ## Recommendations
 
 - `async/await` and `Task` based service resolution isn't supported. Because C# doesn't support asynchronous constructors, use asynchronous methods after synchronously resolving the service.
 - Avoid storing data and configuration directly in the service container. For example, a user's shopping cart shouldn't typically be added to the service container. Configuration should use the options pattern. Similarly, avoid "data holder" objects that only exist to allow access to another object. It's better to request the actual item via DI.
-- Avoid static access to services. For example, avoid capturing <xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices?displayProperty=nameWithType> as a static field or property for use elsewhere.
+- Avoid static access to services. For example, avoid capturing [IApplicationBuilder.ApplicationServices](xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices) as a static field or property for use elsewhere.
 - Keep [DI factories](#async-di-factories-can-cause-deadlocks) fast and synchronous.
 - Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
-- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) strategies.
+- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
@@ -226,5 +226,5 @@ In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.D
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)
-- [Quickstart: Dependency injection basics](dependency-injection-basics.md)
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)

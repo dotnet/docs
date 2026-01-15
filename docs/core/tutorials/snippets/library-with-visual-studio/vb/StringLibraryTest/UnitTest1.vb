@@ -3,7 +3,7 @@ Imports UtilityLibraries
 
 Namespace StringLibraryTest
     <TestClass>
-    Public Class Test1
+    Public Class UnitTest1
         <TestMethod>
         Public Sub TestStartsWithUpper()
             ' Tests that we expect to return true.

@@ -237,12 +237,12 @@ public class MyController(
 > `KeyedService.AnyKey` registrations define a mapping from _any_ key value to some service instance. However, as a result, the Container validation doesn't apply, and an _erroneous_ key value _silently_ leads to a _wrong instance_ being injected.
 
 > [!IMPORTANT]
-> For Keyed `HttpClient`s, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
+> For Keyed `HttpClient` clients, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
 
 The same is true for the plain Named clients: `IHttpClientFactory` doesn't require the client name to be explicitly registered (aligning with the way the [Options pattern](options.md) works). The factory gives you an unconfigured&mdash;or, more precisely, default-configured&mdash;`HttpClient` for any unknown name.
 
 > [!NOTE]
-> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient`s, but all the clients that `IHttpClientFactory` is _able to create_.
+> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient` clients, but all the clients that `IHttpClientFactory` is _able to create_.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());

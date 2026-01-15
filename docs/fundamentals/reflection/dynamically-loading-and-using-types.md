@@ -72,21 +72,21 @@ In Case 3 of the code example, an actual argument of type `String` with a value 
 
 `ChangeType` performs only lossless or [widening coercions](../../standard/base-types/type-conversion.md), as shown in the following table.
 
-| Source type       | Target type                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| Any type          | Its base type                                                     |
-| Any type          | Interface it implements                                           |
-| Char              | UInt16, UInt32, Int32, UInt64, Int64, Single, Double              |
-| Byte              | Char, UInt16, Int16, UInt32, Int32, UInt64, Int64, Single, Double |
-| SByte             | Int16, Int32, Int64, Single, Double                               |
-| UInt16            | UInt32, Int32, UInt64, Int64, Single, Double                      |
-| Int16             | Int32, Int64, Single, Double                                      |
-| UInt32            | UInt64, Int64, Single, Double                                     |
-| Int32             | Int64, Single, Double                                             |
-| UInt64            | Single, Double                                                    |
-| Int64             | Single, Double                                                    |
-| Single            | Double                                                            |
-| Nonreference type | Reference type                                                    |
+| Source type | Target type                                                                         |
+|-------------|-------------------------------------------------------------------------------------|
+| Any type    | Its base type                                                                       |
+| Any type    | The interface it implements                                                         |
+| `Char`      | `UInt16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`                  |
+| `Byte`      | `Char`, `UInt16`, `Int16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double` |
+| `SByte`     | `Int16`, `Int32`, `Int64`, `Single`, `Double`                                       |
+| `UInt16`    | `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`                            |
+| `Int16`     | `Int32`, `Int64`, `Single`, `Double`                                                |
+| `UInt32`    | `UInt64`, `Int64`, `Single`, `Double`                                               |
+| `Int32`     | `Int64`, `Single`, `Double`                                                         |
+| `UInt64`    | `Single`, `Double`                                                                  |
+| `Int64`     | `Single`, `Double`                                                                  |
+| `Single`    | `Double`                                                                            |
+| Nonreference type | Reference type                                                                |
 
 The <xref:System.Type> class has `Get` methods that use parameters of type `Binder` to resolve references to a particular member. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>, and <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> search for a particular member of the current type by providing signature information for that member. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> and <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType> are called back on to select the given signature information of the appropriate methods.
 

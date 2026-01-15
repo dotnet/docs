@@ -31,7 +31,7 @@ Using either the [dotnet new](../tools/dotnet-new.md) command or an IDE new proj
 
 Your new console app project file should resemble the following:
 
-:::code language="xml" source="snippets/console-config/console-di.csproj":::
+:::code language="xml" source="snippets/console/console-di.csproj":::
 
 > [!IMPORTANT]
 > In this example, the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package is required to build and run the app. Some metapackages might contain the `Microsoft.Extensions.Hosting` package, in which case an explicit package reference isn't required.
@@ -42,7 +42,7 @@ In this sample app, you learn how dependency injection handles service lifetime.
 
 *IReportServiceLifetime.cs*
 
-:::code source="snippets/console-config/IReportServiceLifetime.cs":::
+:::code source="snippets/console/IReportServiceLifetime.cs":::
 
 The `IReportServiceLifetime` interface defines:
 
@@ -51,15 +51,15 @@ The `IReportServiceLifetime` interface defines:
 
 *IExampleTransientService.cs*
 
-:::code source="snippets/console-config/IExampleTransientService.cs":::
+:::code source="snippets/console/IExampleTransientService.cs":::
 
 *IExampleScopedService.cs*
 
-:::code source="snippets/console-config/IExampleScopedService.cs":::
+:::code source="snippets/console/IExampleScopedService.cs":::
 
 *IExampleSingletonService.cs*
 
-:::code source="snippets/console-config/IExampleSingletonService.cs":::
+:::code source="snippets/console/IExampleSingletonService.cs":::
 
 All of the subinterfaces of `IReportServiceLifetime` explicitly implement the `IReportServiceLifetime.Lifetime` with a default. For example, `IExampleTransientService` explicitly implements `IReportServiceLifetime.Lifetime` with the `ServiceLifetime.Transient` value.
 
@@ -69,15 +69,15 @@ The example implementations all initialize their `Id` property with the result o
 
 *ExampleTransientService.cs*
 
-:::code source="snippets/console-config/ExampleTransientService.cs":::
+:::code source="snippets/console/ExampleTransientService.cs":::
 
 *ExampleScopedService.cs*
 
-:::code source="snippets/console-config/ExampleScopedService.cs":::
+:::code source="snippets/console/ExampleScopedService.cs":::
 
 *ExampleSingletonService.cs*
 
-:::code source="snippets/console-config/ExampleSingletonService.cs":::
+:::code source="snippets/console/ExampleSingletonService.cs":::
 
 Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type isn't extended, it's marked as `sealed`. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
@@ -87,7 +87,7 @@ Add the following service lifetime reporter class, which acts as a service to th
 
 *ServiceLifetimeReporter.cs*
 
-:::code source="snippets/console-config/ServiceLifetimeReporter.cs":::
+:::code source="snippets/console/ServiceLifetimeReporter.cs":::
 
 The `ServiceLifetimeReporter` defines a constructor that requires each of the aforementioned service interfaces, that is, `IExampleTransientService`, `IExampleScopedService`, and `IExampleSingletonService`. The object exposes a single method that allows the consumer to report on the service with a given `lifetimeDetails` parameter. When invoked, the `ReportServiceLifetimeDetails` method logs each service's unique identifier with the service lifetime message. The log messages help to visualize the service lifetime.
 
@@ -95,7 +95,7 @@ The `ServiceLifetimeReporter` defines a constructor that requires each of the af
 
 Update *Program.cs* with the following code:
 
-:::code source="snippets/console-config/Program.cs" id="Program" highlight="8-11":::
+:::code source="snippets/console/Program.cs" id="Program" highlight="8-11":::
 
 Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
@@ -115,7 +115,7 @@ In this sample app, you created several interfaces and corresponding implementat
 
 When you run the app, it displays output similar to the following:
 
-:::code source="snippets/console-config/Program.cs" id="Output":::
+:::code source="snippets/console/Program.cs" id="Output":::
 
 From the app output, you can see that:
 

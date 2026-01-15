@@ -23,7 +23,7 @@ To get started, create a new .NET console application named **DI.Basics**. Some 
 
 You need to add the package reference to the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) in the project file. Regardless of the approach, ensure the project resembles the following XML of the _DI.Basics.csproj_ file:
 
-:::code language="XML" source="snippets/di/basics/di-basics.csproj":::
+:::code language="XML" source="snippets/basics/di-basics.csproj":::
 
 ## Dependency injection basics
 
@@ -45,11 +45,11 @@ Likewise, some services only expose a concrete type, while others are expressed 
 
 Create a new C# file named _IConsole.cs_ and add the following code:
 
-:::code source="snippets/di/basics/IConsole.cs":::
+:::code source="snippets/basics/IConsole.cs":::
 
 This file defines an `IConsole` interface that exposes a single method, `WriteLine`. Next, create a new C# file named _DefaultConsole.cs_ and add the following code:
 
-:::code source="snippets/di/basics/DefaultConsole.cs":::
+:::code source="snippets/basics/DefaultConsole.cs":::
 
 The preceding code represents the default implementation of the `IConsole` interface. The `WriteLine` method conditionally writes to the console based on the `IsEnabled` property.
 
@@ -58,11 +58,11 @@ The preceding code represents the default implementation of the `IConsole` inter
 
 Next, create an _IGreetingService.cs_ file and add the following C# code:
 
-:::code source="snippets/di/basics/IGreetingService.cs":::
+:::code source="snippets/basics/IGreetingService.cs":::
 
 Then add a new C# file named _DefaultGreetingService.cs_ and add the following code:
 
-:::code source="snippets/di/basics/DefaultGreetingService.cs":::
+:::code source="snippets/basics/DefaultGreetingService.cs":::
 
 The preceding code represents the default implementation of the `IGreetingService` interface. The service implementation requires an `IConsole` as a primary constructor parameter. The `Greet` method:
 
@@ -72,7 +72,7 @@ The preceding code represents the default implementation of the `IGreetingServic
 
 The last service to create is the _FarewellService.cs_ file, add the following C# code before continuing:
 
-:::code source="snippets/di/basics/FarewellService.cs":::
+:::code source="snippets/basics/FarewellService.cs":::
 
 The `FarewellService` represents a concrete type, not an interface. It should be declared as `public` to make it accessible to consumers. Unlike other service implementation types that were declared as `internal` and `sealed`, this code demonstrates that not all services need to be interfaces. It also shows that service implementations can be `sealed` to prevent inheritance and `internal` to restrict access to the assembly.
 
@@ -80,7 +80,7 @@ The `FarewellService` represents a concrete type, not an interface. It should be
 
 Open the _Program.cs_ file and replace the existing code with the following C# code:
 
-:::code source="snippets/di/basics/Program.cs":::
+:::code source="snippets/basics/Program.cs":::
 
 The preceding updated code demonstrates the how-to:
 
@@ -121,15 +121,15 @@ These methods are convenience methods that create a <xref:Microsoft.Extensions.D
 
 For each of the services that you registered in the `ServiceCollection`, you could instead call the `Add` method with a `ServiceDescriptor` instance directly. Consider the following examples:
 
-:::code source="snippets/di/basics/Program.ServiceDescriptors.cs" id="console":::
+:::code source="snippets/basics/Program.ServiceDescriptors.cs" id="console":::
 
 The preceding code is equivalent to how the `IConsole` service was registered in the `ServiceCollection`. The `Add` method is used to add a `ServiceDescriptor` instance that describes the `IConsole` service. The static method `ServiceDescriptor.Describe` delegates to various `ServiceDescriptor` constructors. Consider the equivalent code for the `IGreetingService` service:
 
-:::code source="snippets/di/basics/Program.ServiceDescriptors.cs" id="greeting":::
+:::code source="snippets/basics/Program.ServiceDescriptors.cs" id="greeting":::
 
 The preceding code describes the `IGreetingService` service with its service type, implementation type, and lifetime. Finally, consider the equivalent code for the `FarewellService` service:
 
-:::code source="snippets/di/basics/Program.ServiceDescriptors.cs" id="farewell":::
+:::code source="snippets/basics/Program.ServiceDescriptors.cs" id="farewell":::
 
 The preceding code describes the concrete `FarewellService` type as both the service and implementation types. The service is registered as a singleton service.
 

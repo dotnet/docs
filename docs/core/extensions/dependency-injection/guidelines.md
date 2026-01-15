@@ -26,19 +26,19 @@ The container is responsible for cleanup of types it creates, and calls <xref:Sy
 
 In the following example, the services are created by the service container and disposed automatically:
 
-:::code language="csharp" source="snippets/console-config-disposable/TransientDisposable.cs":::
+:::code language="csharp" source="snippets/console-disposable/TransientDisposable.cs":::
 
 The preceding disposable is intended to have a transient lifetime.
 
-:::code language="csharp" source="snippets/console-config-disposable/ScopedDisposable.cs":::
+:::code language="csharp" source="snippets/console-disposable/ScopedDisposable.cs":::
 
 The preceding disposable is intended to have a scoped lifetime.
 
-:::code language="csharp" source="snippets/console-config-disposable/SingletonDisposable.cs":::
+:::code language="csharp" source="snippets/console-disposable/SingletonDisposable.cs":::
 
 The preceding disposable is intended to have a singleton lifetime.
 
-:::code language="csharp" source="snippets/console-config-disposable/Program.cs" id="Program":::
+:::code language="csharp" source="snippets/console-disposable/Program.cs" id="Program":::
 
 The debug console shows the following sample output after running:
 

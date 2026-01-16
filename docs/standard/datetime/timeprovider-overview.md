@@ -1,7 +1,7 @@
 ---
 title: What is the TimeProvider class
 description: Learn about the TimeProvider class in .NET and .NET Framework. TimeProvider provides an abstraction over time.
-ms.date: 12/03/2024
+ms.date: 01/16/2026
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -15,6 +15,15 @@ helpviewer_keywords:
 # What is TimeProvider?
 
 <xref:System.TimeProvider?displayProperty=fullName> is an abstraction of time that provides a point in time as a <xref:System.DateTimeOffset> type. By using `TimeProvider`, you ensure that your code is testable and predictable. `TimeProvider` was introduced in .NET 8 and is also available for .NET Framework 4.7+ and .NET Standard 2.0 as a NuGet package.
+
+`TimeProvider` is available on the following frameworks:
+
+| Framework | Notes |
+|---|---|
+| .NET 8+ | Included in the framework. |
+| .NET 5 - .NET 7 | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
+| .NET Framework 4.6.2+ | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
+| .NET Standard 2.0 | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
 
 The <xref:System.TimeProvider> class defines the following capabilities:
 

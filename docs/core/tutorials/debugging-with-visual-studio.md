@@ -81,7 +81,7 @@ The program displays the string that the user enters. What happens if the user d
 
    :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
 
-1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x == 5`.
+1. For the **Conditional Expression**, enter the following code in the text field.
 
    ```csharp
    string.IsNullOrEmpty(name)

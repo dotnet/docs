@@ -1,7 +1,7 @@
 ---
 title: "yield statement - provide the next element in an iterator"
 description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
-ms.date: 01/2602026
+ms.date: 01/26/2026
 f1_keywords:
   - "yield"
   - "yield_CSharpKeyword"

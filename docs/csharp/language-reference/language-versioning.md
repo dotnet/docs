@@ -13,7 +13,7 @@ The latest C# compiler determines a default language version based on your proje
 
 [C# 14](../whats-new/csharp-14.md) is supported only on .NET 10 and newer versions. [C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. [C# 12](../whats-new/csharp-12.md) is supported only on .NET 8 and newer versions. Using a C# language version newer than the version associated with your target TFM is unsupported.
 
-For details on which .NET versions are supported by versions of Visual Studio, see the [Visual Studio platform compatibility](/visualstudio/releases/2026/compatibility.md#-visual-studio-support-for-net-development) page.
+For details on which .NET versions are supported by versions of Visual Studio, see the [Visual Studio platform compatibility](/visualstudio/releases/2026/compatibility#-visual-studio-support-for-net-development) page.
 
 ## Defaults
 

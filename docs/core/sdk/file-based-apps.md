@@ -81,7 +81,7 @@ dotnet run file.cs
 ```
 
 > [!NOTE]
-> If there is a project file in the current working directory, `dotnet run` without the `--file` option will run that project and pass `file.cs` as an argument to the target app instead to preserve backwards compatibility.
+> When a project file exists in the current working directory, `dotnet run file.cs` without the `--file` option runs that project and passes `file.cs` as an argument to the target app to preserve backwards compatibility.
 
 Or use the shorthand syntax:
 

@@ -43,7 +43,7 @@ helpviewer_keywords:
 ---
 # C# preprocessor directives
 
-Although the compiler doesn't have a separate preprocessor, it processes the directives described in this section as if there were one. Use these directives to help in conditional compilation. Unlike C# directives, you can't use these directives to create macros. A preprocessor directive must be the only instruction on a line.
+Although the compiler doesn't have a separate preprocessor, it processes the directives described in this section as if there were one. Use these directives to help in conditional compilation. Unlike C and C++ directives, you can't use these directives to create macros. A preprocessor directive must be the only instruction on a line.
 
 [!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 

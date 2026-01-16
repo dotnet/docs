@@ -4,6 +4,7 @@ description: Azure has over 100 services, but this article focuses on the ~8 or 
 ms.date: 08/15/2024
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 01/16/2026
 ---
 
 # Key Azure Services for .NET developers

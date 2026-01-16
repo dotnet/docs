@@ -32,10 +32,10 @@ Each type provides parsing methods that convert strings to their respective obje
 
 All three date and time types share similar parsing approaches:
 
-- **Parse methods** - Convert many common string representations using current culture or specified culture settings
-- **ParseExact methods** - Convert strings that conform to specific format patterns, providing precise control over expected formats
-- **Culture and format providers** - Control how text is interpreted based on cultural conventions for date and time representation
-- **Format strings** - Define patterns for parsing using standard or custom format specifiers
+- **Parse methods** - Convert many common string representations using current culture or specified culture settings.
+- **ParseExact methods** - Convert strings that conform to specific format patterns, providing precise control over expected formats.
+- **Culture and format providers** - Control how text is interpreted based on cultural conventions for date and time representation.
+- **Format strings** - Define patterns for parsing using standard or custom format specifiers.
 
 Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." The parsing methods handle these variations through culture-specific formatting rules.
 
@@ -50,9 +50,9 @@ For more information about format patterns, see [standard date and time format s
 
 <xref:System.DateTime> represents both date and time components together. When parsing strings to DateTime objects, you need to consider several DateTime-specific aspects:
 
-1. **Missing information handling** - DateTime uses defaults when parts are missing from the input string
-2. **Time zone and UTC offset support** - DateTime can represent local, UTC, or unspecified time zones
-3. **Combined date and time parsing** - Must handle both date and time components in a single operation
+1. **Missing information handling** - DateTime uses defaults when parts are missing from the input string.
+2. **Time zone and UTC offset support** - DateTime can represent local, UTC, or unspecified time zones.
+3. **Combined date and time parsing** - Must handle both date and time components in a single operation.
 
 ### Missing information handling
 

@@ -60,17 +60,17 @@ Build metadata can be configured through the dependency injection container usin
 
 Use the <xref:Microsoft.Extensions.DependencyInjection.BuildMetadataServiceCollectionExtensions.AddBuildMetadata%2A> extension method to register build metadata:
 
-:::code language="csharp" source="snippets/buildmetadata/Program-configure.cs":::
+:::code language="csharp" source="snippets/buildmetadata-configure/Program.cs":::
 
 Alternatively, you can configure build metadata programmatically:
 
-:::code language="csharp" source="snippets/buildmetadata/Program-configure-programmatic.cs":::
+:::code language="csharp" source="snippets/buildmetadata-configure-programmatic/Program.cs":::
 
 ### Configure with appsettings.json
 
 You can also provide build metadata through configuration files:
 
-:::code language="json" source="snippets/buildmetadata/appsettings-simple.json":::
+:::code language="json" source="snippets/buildmetadata-configure/appsettings.json":::
 
 ## Environment variable integration
 
@@ -89,7 +89,7 @@ When you build your application in a CI/CD pipeline, these values are automatica
 
 Once configured, you can inject and use the <xref:Microsoft.Extensions.AmbientMetadata.BuildMetadata> type:
 
-:::code language="csharp" source="snippets/buildmetadata/Program-access.cs":::
+:::code language="csharp" source="snippets/buildmetadata-access/Program.cs":::
 
 ## BuildMetadata properties
 
@@ -108,7 +108,7 @@ All properties are nullable strings and are automatically captured from CI/CD en
 
 Build metadata is particularly useful for enriching log messages with build context:
 
-:::code language="csharp" source="snippets/buildmetadata/Program-logging.cs":::
+:::code language="csharp" source="snippets/buildmetadata-logging/Program.cs":::
 
 ## Complete example
 

@@ -14,9 +14,7 @@ helpviewer_keywords:
 
 # What is TimeProvider?
 
-<xref:System.TimeProvider?displayProperty=fullName> is an abstraction of time that provides a point in time as a <xref:System.DateTimeOffset> type. By using `TimeProvider`, you ensure that your code is testable and predictable. `TimeProvider` was introduced in .NET 8 and is also available for .NET Framework 4.7+ and .NET Standard 2.0 as a NuGet package.
-
-`TimeProvider` is available on the following frameworks:
+<xref:System.TimeProvider?displayProperty=fullName> is an abstraction of time that provides a point in time as a <xref:System.DateTimeOffset> type. By using `TimeProvider`, you ensure that your code is testable and predictable. `TimeProvider` is available on the following frameworks:
 
 | Framework | Notes |
 |---|---|

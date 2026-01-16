@@ -39,7 +39,7 @@ All three date and time types share similar parsing approaches:
 
 Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." The parsing methods handle these variations through culture-specific formatting rules.
 
-The <xref:System.Globalization.DateTimeFormatInfo> object provides control over how text should be interpreted. Properties describe the date and time separators, names of months, days, and eras, and the format for "AM" and "PM" designations. You can specify culture through the <xref:System.IFormatProvider> parameter using a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.DateTimeFormatInfo> object.
+The <xref:System.Globalization.DateTimeFormatInfo> object provides control over how text should be interpreted. Properties describe the date and time separators, names of months, days, eras, and the format for "AM" and "PM" designations. You can specify culture through the <xref:System.IFormatProvider> parameter using a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.DateTimeFormatInfo> object.
 
 For more information about format patterns, see [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).
 

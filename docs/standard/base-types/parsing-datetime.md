@@ -83,7 +83,7 @@ The following example shows the use of the <xref:System.DateTime.Parse%2A?displa
 
 You can also explicitly define the culture whose formatting conventions are used when you parse a string. You specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following example uses a format provider to parse a German string into a <xref:System.DateTime>. It creates a <xref:System.Globalization.CultureInfo> representing the `de-DE` culture. That `CultureInfo` object ensures successful parsing of this particular string. This process precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture> of the <xref:System.Threading.Thread.CurrentThread>.
 
-:::code source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-culture" language="csharp":::
+:::code language="csharp" source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-culture":::
 :::code source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse-culture" language="vb":::
 
 However, you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers. The <xref:System.DateTime.Parse%2A> method doesn't support parsing non-standard formats. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.

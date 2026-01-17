@@ -78,20 +78,20 @@ The format provider is also used to interpret an ambiguous numeric date. It's un
 
 The following example shows the use of the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method to convert a `string` into a <xref:System.DateTime>. This example uses the culture associated with the current thread. If the <xref:System.Globalization.CultureInfo> associated with the current culture can't parse the input string, a <xref:System.FormatException> is thrown.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse" language="vb":::
 
 You can also explicitly define the culture whose formatting conventions are used when you parse a string. You specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following example uses a format provider to parse a German string into a <xref:System.DateTime>. It creates a <xref:System.Globalization.CultureInfo> representing the `de-DE` culture. That `CultureInfo` object ensures successful parsing of this particular string. This process precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture> of the <xref:System.Threading.Thread.CurrentThread>.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-culture" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse-culture" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-culture" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse-culture" language="vb":::
 
 However, you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers. The <xref:System.DateTime.Parse%2A> method doesn't support parsing non-standard formats. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.
 
 <a name="styles-example"></a>The following example uses the <xref:System.Globalization.DateTimeStyles> enumeration to specify that the current date and time information shouldn't be added to the <xref:System.DateTime> for unspecified fields.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-nodefault" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse-nodefault" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parse-nodefault" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parse-nodefault" language="vb":::
 
 ### DateTime.ParseExact
 
@@ -99,8 +99,8 @@ The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method con
 
 In the following example, the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method is passed a string object to parse, followed by a format specifier, followed by a <xref:System.Globalization.CultureInfo> object. This <xref:System.DateTime.ParseExact%2A> method can only parse strings that follow the long date pattern in the `en-US` culture.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parseexact" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parseexact" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="datetime-parseexact" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="datetime-parseexact" language="vb":::
 
 Each overload of the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods also has an <xref:System.IFormatProvider> parameter that provides culture-specific information about the formatting of the string. The <xref:System.IFormatProvider> object is a <xref:System.Globalization.CultureInfo> object that represents a standard culture or a <xref:System.Globalization.DateTimeFormatInfo> object that's returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. <xref:System.DateTime.ParseExact%2A> also uses an additional string or string array argument that defines one or more custom date and time formats.
 
@@ -118,15 +118,15 @@ The <xref:System.DateOnly> structure represents only a date without time informa
 
 The <xref:System.DateOnly.Parse%2A?displayProperty=nameWithType> method converts common date string representations to a <xref:System.DateOnly> object. The method accepts various formats and uses the current culture or a specified culture for parsing.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="dateonly-parse" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="dateonly-parse" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="dateonly-parse" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="dateonly-parse" language="vb":::
 
 ### DateOnly.ParseExact
 
 The <xref:System.DateOnly.ParseExact%2A?displayProperty=nameWithType> method provides precise control over the expected format of the input string. Use this method when you know the exact format of the date string and want to ensure strict parsing.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="dateonly-parseexact" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="dateonly-parseexact" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="dateonly-parseexact" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="dateonly-parseexact" language="vb":::
 
 The `ParseExact` method accepts either a single format string or an array of format strings, allowing you to parse dates that might come in multiple acceptable formats.
 
@@ -144,15 +144,15 @@ The <xref:System.TimeOnly> structure represents a time-of-day value, such as a d
 
 The <xref:System.TimeOnly.Parse%2A?displayProperty=nameWithType> method converts common time string representations to a <xref:System.TimeOnly> object. The method accepts various formats including 12-hour and 24-hour notation.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="timeonly-parse" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="timeonly-parse" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="timeonly-parse" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="timeonly-parse" language="vb":::
 
 ### TimeOnly.ParseExact
 
 The <xref:System.TimeOnly.ParseExact%2A?displayProperty=nameWithType> method provides precise control over the expected format of the input time string. Use this method when you know the exact format and want to ensure strict parsing.
 
-:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="timeonly-parseexact" lang="csharp":::
-:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="timeonly-parseexact" lang="vb":::
+:::snippet source="./snippets/parsing-datetime/csharp/Program.cs" id="timeonly-parseexact" language="csharp":::
+:::snippet source="./snippets/parsing-datetime/vb/Program.vb" id="timeonly-parseexact" language="vb":::
 
 ## See also
 

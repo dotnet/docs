@@ -46,7 +46,7 @@ Module Program
     End Sub
     '</datetime-parseexact>
 
-    '<datetime-parse-culture>
+    '<datetime_parse_culture>
     Sub DateTimeParseGermanExample()
         Dim MyCultureInfo As New CultureInfo("de-DE")
         Dim MyString As String = "12 Juni 2008"
@@ -55,7 +55,7 @@ Module Program
         ' The example displays the following output:
         '       6/12/2008 00:00:00
     End Sub
-    '</datetime-parse-culture>
+    '</datetime_parse_culture>
 
     '<datetime-parse-nodefault>
     Sub DateTimeParseNoDefaultExample()

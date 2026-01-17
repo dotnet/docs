@@ -32,8 +32,8 @@ Each type provides parsing methods that convert strings to their respective obje
 
 All three date and time types share similar parsing approaches:
 
-- **Parse methods** - Convert many common string representations using current culture or specified culture settings.
-- **ParseExact methods** - Convert strings that conform to specific format patterns, providing precise control over expected formats, including culture settings.
+- **`Parse` and `TryParse` methods** - Convert many common string representations using current culture or specified culture settings.
+- **`ParseExact` and `TryParseExact` methods** - Convert strings that conform to specific format patterns, providing precise control over expected formats, including culture settings.
 - **Format strings** - Define patterns for parsing using standard or custom format specifiers.
 
 Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." The parsing methods handle these variations through culture-specific formatting rules.

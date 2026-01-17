@@ -48,15 +48,15 @@ For more information about format patterns, see [standard date and time format s
 
 ## DateTime parsing
 
-<xref:System.DateTime> represents both date and time components together. When parsing strings to DateTime objects, you need to consider several DateTime-specific aspects:
+<xref:System.DateTime> represents both date and time components together. When parsing strings to `DateTime` objects, you need to consider several `DateTime`-specific aspects:
 
-1. **Missing information handling** - DateTime uses defaults when parts are missing from the input string.
-2. **Time zone and UTC offset support** - DateTime can represent local, UTC, or unspecified time zones.
+1. **Missing information handling** - `DateTime` uses defaults when parts are missing from the input string.
+2. **Time zone and UTC offset support** - `DateTime` can represent local, UTC, or unspecified time zones.
 3. **Combined date and time parsing** - Must handle both date and time components in a single operation.
 
 ### Missing information handling
 
-The text representing a date or time might be missing some information. For example, most people would assume the date "March 12" represents the current year. Similarly, "March 2018" represents the month of March in the year 2018. Text representing time often includes only hours, minutes, and an AM/PM designation. DateTime parsing methods handle this missing information by using reasonable defaults:
+The text representing a date or time might be missing some information. For example, most people would assume the date "March 12" represents the current year. Similarly, "March 2018" represents the month of March in the year 2018. Text representing time often includes only hours, minutes, and an AM/PM designation. `DateTime` parsing methods handle this missing information by using reasonable defaults:
 
 - When only the time is present, the date portion uses the current date.
 - When only the date is present, the time portion is midnight.

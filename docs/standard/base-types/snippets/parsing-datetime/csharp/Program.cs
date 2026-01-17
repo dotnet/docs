@@ -53,7 +53,7 @@ namespace ParsingDateTimeExamples
         }
         //</datetime-parseexact>
 
-        //<datetime-parse-culture>
+        //<datetime_parse_culture>
         static void DateTimeParseGermanExample()
         {
             var cultureInfo = new CultureInfo("de-DE");
@@ -63,7 +63,7 @@ namespace ParsingDateTimeExamples
             // The example displays the following output:
             //       6/12/2008 00:00:00
         }
-        //</datetime-parse-culture>
+        //</datetime_parse_culture>
 
         //<datetime-parse-nodefault>
         static void DateTimeParseNoDefaultExample()

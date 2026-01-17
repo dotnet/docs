@@ -1,7 +1,7 @@
 ---
 title: "using statement - ensure the correct use of disposable objects"
 description: "Use the C# using statement or declaration to ensure the correct use of disposable objects"
-ms.date: 01/26/2026
+ms.date: 01/16/2026
 f1_keywords:
   - "using-statement_CSharpKeyword"
 helpviewer_keywords:

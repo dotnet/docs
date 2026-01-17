@@ -1,7 +1,7 @@
 ---
 title: "The lock statement - synchronize access to shared resources"
 description: "Use the C# lock statement to ensure that only a single thread exclusively reads or writes a shared resource, blocking all other threads until it completes."
-ms.date: 01/26/2026
+ms.date: 01/16/2026
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"

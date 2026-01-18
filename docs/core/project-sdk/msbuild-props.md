@@ -1809,7 +1809,7 @@ The project file snippet in the following example references a project named *My
 </ItemGroup>
 ```
 
-You can use the `Aliases` metadata to specify one or more aliases for the project reference. This is useful when you need to reference multiple projects or assemblies with the same type names, or when you need to use different versions of the same assembly. The aliases work with C#'s [extern alias](../../csharp/language-reference/keywords/extern-alias.md) feature.
+You can use the `Aliases` metadata to specify one or more aliases for the project reference. This is useful when you need to reference multiple projects or assemblies with the same type names, or when you need to use different versions of the same assembly. The aliases work with C#'s [extern alias](../../csharp/language-reference/keywords/extern-alias.md) feature. To specify multiple aliases, separate them with commas.
 
 ```xml
 <ItemGroup>
@@ -1817,6 +1817,8 @@ You can use the `Aliases` metadata to specify one or more aliases for the projec
   <ProjectReference Include="..\MyLibraryV2\MyLibrary.csproj" Aliases="LibV2" />
 </ItemGroup>
 ```
+
+In this example, both projects are different versions of the same library with the same assembly name but different implementations.
 
 To use an aliased project reference in your code, declare it with the `extern alias` directive at the top of your C# file:
 

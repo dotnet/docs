@@ -1727,6 +1727,7 @@ To define an explicit `global using` directive, add a [Using](#using) item.
 - [AssemblyMetadata](#assemblymetadata)
 - [InternalsVisibleTo](#internalsvisibleto)
 - [PackageReference](#packagereference)
+- [ProjectReference](#projectreference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)
 
@@ -1793,6 +1794,40 @@ You can also [control dependency assets](/nuget/consume-packages/package-referen
 ```
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+### ProjectReference
+
+The `ProjectReference` item defines a reference to another project in your solution.
+
+The `Include` attribute specifies the path to the project file (*.csproj*, *.vbproj*, *.fsproj*, or other project type).
+
+The project file snippet in the following example references a project named *MyUtilities.csproj*.
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\MyUtilities\MyUtilities.csproj" />
+</ItemGroup>
+```
+
+You can use the `Aliases` metadata to specify one or more aliases for the project reference. This is useful when you need to reference multiple projects or assemblies with the same type names, or when you need to use different versions of the same assembly. The aliases work with C#'s [extern alias](../../csharp/language-reference/keywords/extern-alias.md) feature.
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\MyLibraryV1\MyLibrary.csproj" Aliases="LibV1" />
+  <ProjectReference Include="..\MyLibraryV2\MyLibrary.csproj" Aliases="LibV2" />
+</ItemGroup>
+```
+
+To use an aliased project reference in your code, declare it with the `extern alias` directive at the top of your C# file:
+
+```csharp
+extern alias LibV1;
+extern alias LibV2;
+
+// Use types from the aliased references
+var instanceV1 = new LibV1::MyNamespace.MyClass();
+var instanceV2 = new LibV2::MyNamespace.MyClass();
+```
 
 ### TrimmerRootAssembly
 

@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 11/22/2024
+ms.date: 01/13/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,11 +9,11 @@ ms.custom: vs-dotnet
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
-This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
+This tutorial shows how to create and run a .NET console application in Visual Studio 2026.
 
 ## Prerequisites
 
-- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
+- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -25,7 +25,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. On the start page, choose **Create a new project**.
 
-   :::image type="content" source="./media/with-visual-studio/start-window-2022.png" alt-text="Create a new project button selected on the Visual Studio start page":::
+   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
 1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App** template, and then choose **Next**.
 
@@ -39,7 +39,7 @@ Create a .NET console app project named "HelloWorld".
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog:
-   - Select **.NET 8**.
+   - Select **.NET 10**.
    - Select **Do not use top-level statements**.
    - Select **Create**.
 
@@ -79,8 +79,6 @@ Create a .NET console app project named "HelloWorld".
 
    A console window opens with the text "Hello, World!" printed on the screen. (Or "Hello World!" without a comma in the Visual Basic project template.)
 
-   :::image type="content" source="./media/with-visual-studio/hello-world-console-net6.png" alt-text="Console window showing Hello World Press any key to continue":::
-
 1. Press any key to close the console window.
 
 ## Enhance the app
@@ -102,7 +100,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   :::image type="content" source="./media/with-visual-studio/hello-world-update-net6.png" alt-text="Console window with modified program output":::
+   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Console window with modified program output":::
 
 1. Press any key to close the console window.
 

@@ -64,6 +64,8 @@ When probing to locate a managed assembly, the <xref:System.Runtime.Loader.Assem
 - Files matching the <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> in `TRUSTED_PLATFORM_ASSEMBLIES` (after removing file extensions).
 - Assembly files in `APP_PATHS` with common file extensions.
 
+When loading in the default <xref:System.Runtime.Loader.AssemblyLoadContext>, assemblies found in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS` take precedence over a specified path or raw assembly object. For example, if you call <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromStream%2A?displayProperty=nameWithType> or <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath%2A?displayProperty=nameWithType> on the default <xref:System.Runtime.Loader.AssemblyLoadContext> and an assembly with a matching name exists in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS`, the runtime loads the assembly from those locations instead of from the specified stream or path.
+
 ## Satellite (resource) assembly probing
 
 To find a satellite assembly for a specific culture, construct a set of file paths.

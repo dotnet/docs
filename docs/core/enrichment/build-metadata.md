@@ -83,23 +83,81 @@ dotnet package add Microsoft.Extensions.AmbientMetadata.Build
 
 ## Configure build metadata
 
-Build metadata can be configured through the dependency injection container using the <xref:Microsoft.Extensions.DependencyInjection.BuildMetadataServiceCollectionExtensions.AddBuildMetadata%2A> extension method. During the build process, the component uses source generation to capture build information from environment variables and embed it into the compiled application.
+The source generator included in the `Microsoft.Extensions.AmbientMetadata.Build` package generates extension methods that simplify configuration. During the build process, it captures build information from MSBuild properties and generates code to make this data available at runtime.
 
-### Configure with IServiceCollection
+You can configure build metadata using either a single convenience method or a two-step approach that provides more granular control.
 
-Use the <xref:Microsoft.Extensions.DependencyInjection.BuildMetadataServiceCollectionExtensions.AddBuildMetadata%2A> extension method to register build metadata:
+### Using the UseBuildMetadata convenience method
+
+When you add the `Microsoft.Extensions.AmbientMetadata.Build` package to your project, the source generator creates `UseBuildMetadata` extension methods that combine configuration and service registration in a single call:
+
+**For IHostApplicationBuilder:**
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+// This method is source-generated and sets up both configuration and services
+builder.UseBuildMetadata();
+
+var host = builder.Build();
+await host.RunAsync();
+```
+
+**For IHostBuilder:**
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+var builder = Host.CreateDefaultBuilder(args);
+
+// Source-generated extension method for traditional host builder
+builder.UseBuildMetadata();
+
+var host = builder.Build();
+await host.RunAsync();
+```
+
+The `UseBuildMetadata` method:
+
+- Adds the build metadata as a configuration source (with values captured during build)
+- Registers the <xref:Microsoft.Extensions.AmbientMetadata.BuildMetadata> type in dependency injection
+- Uses the default configuration section `ambientmetadata:build`
+
+### Using the two-step configuration approach
+
+You can also configure build metadata using separate calls for configuration and service registration. This approach provides more granular control and is useful when configuration and service collection setup are in different parts of your codebase:
+
+1. **Add build metadata to configuration**: `configuration.AddBuildMetadata()` - Adds the source-generated build metadata as a configuration source
+2. **Register in services**: `services.AddBuildMetadata(configSection)` - Registers the BuildMetadata type in dependency injection
+
+The following example shows this approach:
 
 :::code language="csharp" source="snippets/buildmetadata-configure/Program.cs":::
 
-Alternatively, you can configure build metadata programmatically:
+With the following configuration in `appsettings.json`:
+
+:::code language="json" source="snippets/buildmetadata-configure/appsettings.json":::
+
+> [!NOTE]
+> The `UseBuildMetadata()` method combines both of these steps into a single call for convenience. Choose the approach that best fits your application architecture. When building in a CI/CD environment (Azure DevOps or GitHub Actions), the `configuration.AddBuildMetadata()` call provides the source-generated values captured from environment variables during the build.
+
+### Programmatic configuration
+
+You can also set build metadata values programmatically using the options pattern:
 
 :::code language="csharp" source="snippets/buildmetadata-configure-programmatic/Program.cs":::
 
-### Configure with appsettings.json
+This approach bypasses the source-generated configuration source and directly configures the metadata values.
 
-You can also provide build metadata through configuration files:
+### Custom configuration section
 
-:::code language="json" source="snippets/buildmetadata-configure/appsettings.json":::
+If you want to use a different configuration section name, you can specify it when calling `UseBuildMetadata`:
+
+```csharp
+builder.UseBuildMetadata("custom:section:build");
+```
 
 ### Configure with MSBuild properties
 

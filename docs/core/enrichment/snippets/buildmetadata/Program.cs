@@ -7,8 +7,9 @@ using Microsoft.Extensions.Options;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-// Register build metadata
-builder.Services.AddBuildMetadata(builder.Configuration.GetSection("BuildMetadata"));
+// Add build metadata to configuration and services
+builder.Configuration.AddBuildMetadata();
+builder.Services.AddBuildMetadata(builder.Configuration.GetSection("ambientmetadata:build"));
 
 // Register application service
 builder.Services.AddSingleton<ApplicationService>();

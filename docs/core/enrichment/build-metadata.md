@@ -27,6 +27,35 @@ During the build process, the build metadata component uses source generation to
 
 The component works seamlessly in these CI/CD environments, automatically embedding build information into the compiled application without requiring manual configuration.
 
+## How build metadata works
+
+The build metadata component uses a source generator that captures build information during compilation. When you build your application, the generator reads MSBuild properties and generates code that embeds this information into your compiled assembly.
+
+### Automatic capture in CI/CD
+
+When building in supported CI/CD environments (Azure DevOps or GitHub Actions), environment variables are automatically captured through a transitive MSBuild props file. This file maps CI/CD environment variables to MSBuild properties that the source generator can read:
+
+**Azure DevOps environment variables:**
+
+- `BUILD_BUILDID` → `BuildMetadataAzureBuildId`
+- `BUILD_BUILDNUMBER` → `BuildMetadataAzureBuildNumber`
+- `BUILD_SOURCEBRANCHNAME` → `BuildMetadataAzureSourceBranchName`
+- `BUILD_SOURCEVERSION` → `BuildMetadataAzureSourceVersion`
+- `TF_BUILD` → `BuildMetadataIsAzureDevOps` (detection flag)
+
+**GitHub Actions environment variables:**
+
+- `GITHUB_RUN_ID` → `BuildMetadataGitHubRunId`
+- `GITHUB_RUN_NUMBER` → `BuildMetadataGitHubRunNumber`
+- `GITHUB_REF_NAME` → `BuildMetadataGitHubRefName`
+- `GITHUB_SHA` → `BuildMetadataGitHubSha`
+
+The source generator detects which CI/CD platform is active and uses the appropriate set of properties to populate the <xref:Microsoft.Extensions.AmbientMetadata.BuildMetadata> class.
+
+### Manual configuration with MSBuild properties
+
+If you're building outside of a supported CI/CD environment or want to override the automatic values, you can set MSBuild properties directly in your project file or pass them as command-line arguments.
+
 ## Install the package
 
 To get started, install the [📦 Microsoft.Extensions.AmbientMetadata.Build](https://www.nuget.org/packages/Microsoft.Extensions.AmbientMetadata.Build) NuGet package:
@@ -72,18 +101,68 @@ You can also provide build metadata through configuration files:
 
 :::code language="json" source="snippets/buildmetadata-configure/appsettings.json":::
 
-## Environment variable integration
+### Configure with MSBuild properties
 
-During the build process, source generation captures values from CI/CD environment variables and embeds them into the compiled application. The following table shows how properties map to environment variables in different CI/CD systems:
+You can set build metadata by defining MSBuild properties in your project file. This is useful when building outside of a CI/CD environment or when you want to provide custom values.
 
-| Property            | Azure DevOps Variable | GitHub Actions Variable | Description |
-|---------------------|----------------------|------------------------|-------------|
-| `BuildId`           | `BUILD_BUILDID`      | `GITHUB_RUN_ID`        | The unique identifier for the build/workflow run |
-| `BuildNumber`       | `BUILD_BUILDNUMBER`  | `GITHUB_RUN_NUMBER`    | The name or number of the build/run |
-| `SourceBranchName`  | `BUILD_SOURCEBRANCHNAME` | `GITHUB_REF_NAME`  | The name of the branch being built |
-| `SourceVersion`     | `BUILD_SOURCEVERSION` | `GITHUB_SHA`          | The commit SHA being built |
+**For Azure DevOps-style properties:**
 
-When you build your application in a CI/CD pipeline, these values are automatically captured and hard-coded into the application. You don't need to manually configure them unless you're building outside of a supported CI/CD environment or want to override the automatic values.
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <BuildMetadataAzureBuildId>12345</BuildMetadataAzureBuildId>
+    <BuildMetadataAzureBuildNumber>1.0.0-local.1</BuildMetadataAzureBuildNumber>
+    <BuildMetadataAzureSourceBranchName>feature/my-feature</BuildMetadataAzureSourceBranchName>
+    <BuildMetadataAzureSourceVersion>a1b2c3d4e5f6789012345678901234567890abcd</BuildMetadataAzureSourceVersion>
+    <BuildMetadataIsAzureDevOps>true</BuildMetadataIsAzureDevOps>
+  </PropertyGroup>
+</Project>
+```
+
+**For GitHub Actions-style properties:**
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <BuildMetadataGitHubRunId>67890</BuildMetadataGitHubRunId>
+    <BuildMetadataGitHubRunNumber>42</BuildMetadataGitHubRunNumber>
+    <BuildMetadataGitHubRefName>main</BuildMetadataGitHubRefName>
+    <BuildMetadataGitHubSha>a1b2c3d4e5f6789012345678901234567890abcd</BuildMetadataGitHubSha>
+  </PropertyGroup>
+</Project>
+```
+
+You can also pass these properties via the command line:
+
+```bash
+dotnet build -p:BuildMetadataAzureBuildNumber=1.0.0-local.1 -p:BuildMetadataAzureSourceBranchName=main
+```
+
+> [!NOTE]
+> The source generator uses `BuildMetadataIsAzureDevOps` to determine which set of properties to read (Azure DevOps or GitHub Actions). If you're manually setting properties, ensure you set this flag appropriately or use the GitHub properties if the flag is not set.
+
+## Environment variable integration and MSBuild properties
+
+The build metadata component captures values during the build process through MSBuild properties. These properties can be populated automatically from CI/CD environment variables or set manually in your project file.
+
+### Automatic CI/CD integration
+
+During a CI/CD build, environment variables are automatically mapped to MSBuild properties via a transitive props file included with the package. The following table shows the complete mapping:
+
+| BuildMetadata Property | Azure DevOps Variable | MSBuild Property | GitHub Actions Variable | MSBuild Property |
+|------------------------|----------------------|------------------|------------------------|------------------|
+| `BuildId` | `BUILD_BUILDID` | `BuildMetadataAzureBuildId` | `GITHUB_RUN_ID` | `BuildMetadataGitHubRunId` |
+| `BuildNumber` | `BUILD_BUILDNUMBER` | `BuildMetadataAzureBuildNumber` | `GITHUB_RUN_NUMBER` | `BuildMetadataGitHubRunNumber` |
+| `SourceBranchName` | `BUILD_SOURCEBRANCHNAME` | `BuildMetadataAzureSourceBranchName` | `GITHUB_REF_NAME` | `BuildMetadataGitHubRefName` |
+| `SourceVersion` | `BUILD_SOURCEVERSION` | `BuildMetadataAzureSourceVersion` | `GITHUB_SHA` | `BuildMetadataGitHubSha` |
+
+### Manual configuration
+
+When building outside of a CI/CD environment, you can manually set these MSBuild properties in your project file (`.csproj`) or pass them as command-line arguments. See the [Configure with MSBuild properties](#configure-with-msbuild-properties) section for examples.
+
+### How the source generator works
+
+The source generator included in the package reads these MSBuild properties at compile time and generates code that initializes the <xref:Microsoft.Extensions.AmbientMetadata.BuildMetadata> class with the captured values. The detection flag `BuildMetadataIsAzureDevOps` (set by the `TF_BUILD` environment variable in Azure DevOps) determines which set of properties the generator reads.
 
 ## Access build metadata
 
@@ -135,9 +214,9 @@ info: ApplicationService[0]
 
 ### Azure DevOps Pipelines
 
-When building in Azure DevOps Pipelines, the build metadata component uses source generation to capture values from predefined build variables and embed them into the compiled application. These variables are available in all pipeline types (YAML, classic build, and release pipelines).
+When building in Azure DevOps Pipelines, the component automatically captures environment variables through MSBuild property mappings. The presence of the `TF_BUILD` environment variable signals to the source generator to use Azure DevOps-specific properties.
 
-The following environment variables are captured during the build process:
+The following environment variables are captured during the build process and mapped to MSBuild properties:
 
 - `BUILD_BUILDID`: The ID of the build
 - `BUILD_BUILDNUMBER`: The name/number of the build
@@ -148,9 +227,9 @@ For more information about Azure DevOps build variables, see [Use predefined var
 
 ### GitHub Actions
 
-When building in GitHub Actions workflows, the build metadata component uses source generation to capture values from default environment variables and embed them into the compiled application.
+When building in GitHub Actions (and `TF_BUILD` is not set), the component automatically captures GitHub Actions environment variables through MSBuild property mappings.
 
-The following environment variables are captured during the build process:
+The following environment variables are captured during the build process and mapped to MSBuild properties:
 
 - `GITHUB_RUN_ID`: The unique identifier for the workflow run
 - `GITHUB_RUN_NUMBER`: A unique number for each run of a particular workflow

@@ -107,7 +107,7 @@ var buildVersion = metadataOptions.Value.BuildVersion;
 
 Your `appsettings.json` can have a section as follows:
 
-:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationmetadata/appsettings.json" range="2-7":::
 
 ### Configure with IHostApplicationBuilder
 
@@ -128,7 +128,7 @@ var buildVersion = metadataOptions.Value.BuildVersion;
 
 Your `appsettings.json` can have a section as follows:
 
-:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationmetadata/appsettings.json" range="2-7":::
 
 ## Access application metadata
 

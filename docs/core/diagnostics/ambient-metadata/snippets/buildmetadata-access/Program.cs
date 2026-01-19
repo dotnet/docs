@@ -1,10 +1,11 @@
-using Microsoft.Extensions.AmbientMetadata;
+﻿using Microsoft.Extensions.AmbientMetadata;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 
 var builder = Host.CreateApplicationBuilder(args);
+builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
 // Add build metadata to configuration and services
 builder.Configuration.AddBuildMetadata();

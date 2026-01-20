@@ -223,6 +223,11 @@ If integer arithmetic overflow occurs, the overflow-checking context, which can 
 - In a checked context, if overflow happens in a constant expression, a compile-time error occurs. Otherwise, when the operation is performed at run time, an <xref:System.OverflowException> is thrown.
 - In an unchecked context, the result is truncated by discarding any high-order bits that don't fit in the destination type.
 
+> [!NOTE]
+> Integer division has a special case where an <xref:System.OverflowException> can be thrown even in an unchecked context. When the left operand is the minimum value of a signed integer type (`int.MinValue` or `long.MinValue`) and the right operand is `-1`, the result cannot be represented in the destination type. The .NET runtime throws an <xref:System.OverflowException> in this case, as shown in the following example:
+>
+> :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="IntegerDivisionOverflow":::
+
 Along with the [checked and unchecked](../statements/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow-checking context, in which an expression is evaluated:
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedUnchecked":::

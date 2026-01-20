@@ -1,7 +1,7 @@
 ---
 title: "Deconstruction expression - extract properties or fields from a tuple or other type"
 description: "Learn about deconstruction expressions: expressions that extract individual properties or fields from a tuple or user defined type into discrete expressions."
-ms.date: 11/24/2025
+ms.date: 01/20/2026
 ---
 # Deconstruction expression - Extract properties of fields from a tuple or other user-defined type
 
@@ -9,11 +9,13 @@ A *deconstruction expression* extracts data fields from an instance of an object
 
 :::code language="csharp" source="./snippets/shared/Deconstruction.cs" id="TupleDeconstruction":::
 
-The preceding code snippet creates a [tuple](../builtin-types/value-tuples.md) that has two integer values, `X` and `Y`. The second statement *deconstructs* that tuple and stores the tuple elements in discrete variables `x` and `y`.
+The preceding code snippet creates a [tuple](../builtin-types/value-tuples.md) that has two integer values, `X` and `Y`. The second statement *deconstructs* that tuple and stores the tuple elements in separate variables `x` and `y`.
+
+[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
 ## Tuple deconstruction
 
-All [tuple types](../builtin-types/value-tuples.md) support deconstruction expressions. Tuple deconstruction extracts all the tuple's elements. If you only want some of the tuple elements, use a [discard](../tokens/discard.md) for the unused tuple members, as shown in the following example:
+All [tuple types](../builtin-types/value-tuples.md) support deconstruction expressions. Tuple deconstruction extracts all the tuple's elements. If you want only some of the tuple elements, use a [discard](../tokens/discard.md) for the unused tuple members, as shown in the following example:
 
 :::code language="csharp" source="./snippets/shared/Deconstruction.cs" id="TupleDeconstructionWithDiscard":::
 
@@ -37,7 +39,7 @@ You can make use of this behavior to specify which properties of your record typ
 
 ## Declare `Deconstruct` methods
 
-You can add deconstruction support to any class, struct, or interface you declare. You declare one or more `Deconstruct` methods in your type, or as extension on that type. A deconstruction expression calls a  method `void Deconstruct(out var p1, ..., out var pn)`. The `Deconstruct` method can be either an instance method or an extension method. The type of each parameter in the `Deconstruct` method must match the type of the corresponding argument in the deconstruction expression. The deconstruction expression assigns the value of each argument to the value of the corresponding `out` parameter in the `Deconstruct` method. If multiple `Deconstruct` methods match the deconstruction expression, the compiler reports an error for the ambiguity.
+You can add deconstruction support to any class, struct, or interface you declare. Declare one or more `Deconstruct` methods in your type, or as extension on that type. A deconstruction expression calls a method `void Deconstruct(out var p1, ..., out var pn)`. The `Deconstruct` method can be either an instance method or an extension method. The type of each parameter in the `Deconstruct` method must match the type of the corresponding argument in the deconstruction expression. The deconstruction expression assigns the value of each argument to the value of the corresponding `out` parameter in the `Deconstruct` method. If multiple `Deconstruct` methods match the deconstruction expression, the compiler reports an error for the ambiguity.
 
 The following code declares a `Point3D` struct that has two `Deconstruct` methods:
 

@@ -1,23 +1,26 @@
 ---
 title: "true and false operators - treat objects as Boolean values"
 description: "Learn about the C# `true` and `false` operators. Overload these operators to treat your type as a Boolean value"
-ms.date: 11/28/2022
+ms.date: 01/20/2026
 helpviewer_keywords: 
   - "false operator [C#]"
   - "true operator [C#]"
 ---
-# true and false operators - treat your objects as a Boolean value
+# True and false operators
 
 The `true` operator returns the [bool](../builtin-types/bool.md) value `true` to indicate that its operand is definitely true, while the `false` operator returns the `bool` value `true` to indicate that its operand is definitely false.
-<br/>Note that a type implementing both `true` and `false` operators has to follow these semantics:
+
+[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+
+A type that implements both `true` and `false` operators must follow these semantics:
 
 * "Is this object true?" resolves to operator `true`. Operator `true` returns `true` if the object is `true`. The answer is "Yes, this object is true".
-* "Is this object false?" resolves to operator `false`. Operator `false` returns `true` if the object is `false`. The answer is "Yes, this object is false"
+* "Is this object false?" resolves to operator `false`. Operator `false` returns `true` if the object is `false`. The answer is "Yes, this object is false".
 
 The `true` and `false` operators aren't guaranteed to complement each other. That is, both the `true` and `false` operator might return the `bool` value `false` for the same operand. If a type defines one of these two operators, it must also define the other operator.
 
 > [!TIP]
-> Use the `bool?` type, if you need to support the three-valued logic (for example, when you work with databases that support a three-valued Boolean type). C# provides the `&` and `|` operators that support the three-valued logic with the `bool?` operands. For more information, see the [Nullable Boolean logical operators](boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](boolean-logical-operators.md) article.
+> Use the `bool?` type if you need to support three-valued logic (for example, when you work with databases that support a three-valued Boolean type). C# provides the `&` and `|` operators that support three-valued logic with the `bool?` operands. For more information, see the [Nullable Boolean logical operators](boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](boolean-logical-operators.md) article.
 
 ## Boolean expressions
 
@@ -29,11 +32,11 @@ If a type with the defined `true` and `false` operators [overloads](operator-ove
 
 ## Example
 
-The following example presents the type that defines both `true` and `false` operators. The type also overloads the logical AND operator `&` in such a way that the `&&` operator also can be evaluated for the operands of that type.
+The following example presents the type that defines both `true` and `false` operators. The type also overloads the logical AND operator `&` in such a way that the `&&` operator can also be evaluated for the operands of that type.
 
-[!code-csharp[true and false operators example](snippets/shared/TrueFalseOperators.cs)]
+:::code language="csharp" source="snippets/shared/TrueFalseOperators.cs":::
 
-Notice the short-circuiting behavior of the `&&` operator. When the `GetFuelLaunchStatus` method returns `LaunchStatus.Red`, the right-hand operand of the `&&` operator isn't evaluated. That is because `LaunchStatus.Red` is definitely false. Then the result of the logical AND doesn't depend on the value of the right-hand operand. The output of the example is as follows:
+Notice the short-circuiting behavior of the `&&` operator. When the `GetFuelLaunchStatus` method returns `LaunchStatus.Red`, the right-hand operand of the `&&` operator isn't evaluated. That condition is definitely false. The result of the logical AND doesn't depend on the value of the right-hand operand. The output of the example is as follows:
 
 ```console
 Getting fuel launch status...

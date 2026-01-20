@@ -1,7 +1,7 @@
 ---
 title: "Addition operators - + and +="
 description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
-ms.date: 11/18/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -17,6 +17,8 @@ helpviewer_keywords:
 # Addition operators - `+` and `+=`
 
 The built-in [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types, the [string](../builtin-types/reference-types.md#the-string-type) type, and [delegate](../builtin-types/reference-types.md#the-delegate-type) types all support the `+` and `+=` operators.
+
+[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
 For information about the arithmetic `+` operator, see the [Unary plus and minus operators](arithmetic-operators.md#unary-plus-and-minus-operators) and [Addition operator +](arithmetic-operators.md#addition-operator-) sections of the [Arithmetic operators](arithmetic-operators.md) article.
 
@@ -36,17 +38,17 @@ The `+` operator performs string concatenation for UTF-8 literal strings. This o
 
 ## Delegate combination
 
-For operands of the same [delegate](../builtin-types/reference-types.md#the-delegate-type) type, the `+` operator returns a new delegate instance that, when invoked, invokes the left-hand operand and then invokes the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
+For operands of the same [delegate](../builtin-types/reference-types.md#the-delegate-type) type, the `+` operator returns a new delegate instance that, when invoked, calls the left-hand operand and then calls the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of the other operand (which also might be `null`). The following example shows how delegates can be combined using the `+` operator:
 
 :::code language="csharp" source="snippets/shared/AdditionOperator.cs" id="AddDelegates":::
 
-To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
+To remove a delegate, use the [`-` operator](subtraction-operator.md#delegate-removal).
 
 For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
 
 ## Addition assignment operator +=
 
-An expression using the `+=` operator, such as
+An expression that uses the `+=` operator, such as
 
 ```csharp
 x += y
@@ -68,7 +70,7 @@ You also use the `+=` operator to specify an event handler method when you subsc
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the `+=` operator to provide a more efficient implementation. Typically, a type overloads the `+=` operator because the value can be updated in place, rather than allocate a new instance to hold the result of the addition. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
+A user-defined type can [overload](operator-overloading.md) the `+` operator. When you overload a binary `+` operator, you also implicitly overload the `+=` operator. Starting with C# 14, a user-defined type can explicitly overload the `+=` operator to provide a more efficient implementation. Typically, a type overloads the `+=` operator because the value can be updated in place, rather than allocate a new instance to hold the result of the addition. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
 ## C# language specification
 

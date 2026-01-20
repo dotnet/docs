@@ -1,7 +1,7 @@
 ---
 title: "Operator overloading - Define unary, arithmetic, equality, and comparison operators."
 description: "Learn how to overload a C# operator and which C# operators are overloadable. In general, the unary, arithmetic, equality, and comparison operators are overloadable."
-ms.date: 06/11/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "operator_CSharpKeyword"
   - operator
@@ -11,7 +11,9 @@ helpviewer_keywords:
 ---
 # Operator overloading - predefined unary, arithmetic, equality, and comparison operators
 
-A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
+You can overload a predefined C# operator in a user-defined type. By overloading an operator, you provide a custom implementation for the operation when one or both operands are of that type. See the [Overloadable operators](#overloadable-operators) section for a list of C# operators that you can overload.
+
+[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 
@@ -46,7 +48,7 @@ A compound assignment overloaded operator must follow these rules:
 - The return type must be `void`.
 - The declaration must include one parameter, which represents the right hand side of the compound assignment.
 
-Beginning with C# 14, the increment (`++`) and decrement (`--`) operators can be overloaded as instance members. Instance operators can improve performance by avoiding the creation of a new instance. An instance operator must follow these rules:
+Starting in C# 14, you can overload the increment (`++`) and decrement (`--`) operators as instance members. Instance operators can improve performance by avoiding the creation of a new instance. An instance operator must follow these rules:
 
 - It must include the `public` modifier.
 - It can't include the `static` modifier.
@@ -71,7 +73,7 @@ Before C# 14, the compound operators can't be overloaded. Overloading the corres
 > [!IMPORTANT]
 > This section applies to C# 14 and later. Before C# 14, user-defined compound assignment operators and instance increment and decrement operators aren't allowed.
 
-If `x` is classified as a variable in a compound assignment expression such as `x «op»= y`, instance operators are preferred over any static operator for `«op»`. If an overloaded `«op»=` operator isn't declared for the type of `x` or `x` isn't classified as a variable, the static operators are used.
+If `x` is classified as a variable in a compound assignment expression such as `x «op»= y`, instance operators take precedence over any static operator for `«op»`. If the type of `x` doesn't declare an overloaded `«op»=` operator or `x` isn't classified as a variable, the static operators are used.
 
 For the postfix operator `++`, if `x` isn't classified as a variable *or* the expression `x++` is used, the instance `operator++` is ignored. Otherwise, preference is given to the instance `operator ++`. For example,
 
@@ -97,4 +99,3 @@ For more information, see the following sections of the [C# language specificati
 - [User-defined conversion operators](user-defined-conversion-operators.md)
 - [Design guidelines - Operator overloads](../../../standard/design-guidelines/operator-overloads.md)
 - [Design guidelines - Equality operators](../../../standard/design-guidelines/equality-operators.md)
-- [Why are overloaded operators always static in C#?](/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)

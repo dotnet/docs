@@ -1,7 +1,7 @@
 ---
 title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
-ms.date: 07/01/2024
+ms.date: 01/20/2026
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,9 +12,11 @@ helpviewer_keywords:
 
 The `await` operator suspends evaluation of the enclosing [async](../keywords/async.md) method until the asynchronous operation represented by its operand completes. When the asynchronous operation completes, the `await` operator returns the result of the operation, if any. When the `await` operator is applied to the operand that represents an already completed operation, it returns the result of the operation immediately without suspension of the enclosing method. The `await` operator doesn't block the thread that evaluates the async method. When the `await` operator suspends the enclosing async method, the control returns to the caller of the method.
 
+[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+
 In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns the `Task<byte[]>` instance, which represents an asynchronous operation that produces a byte array when it completes. Until the operation completes, the `await` operator suspends the `DownloadDocsMainPageAsync` method. When `DownloadDocsMainPageAsync` gets suspended, control is returned to the `Main` method, which is the caller of `DownloadDocsMainPageAsync`. The `Main` method executes until it needs the result of the asynchronous operation performed by the `DownloadDocsMainPageAsync` method. When <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> gets all the bytes, the rest of the `DownloadDocsMainPageAsync` method is evaluated. After that, the rest of the `Main` method is evaluated.
 
-[!code-csharp[await example](snippets/shared/AwaitOperator.cs)]
+:::code language="csharp" source="snippets/shared/AwaitOperator.cs":::
 
 The operand of an `await` expression must provide for notification when a task completes. In general, a delegate is invoked when the task completes, either successfully or unsuccessfully. The [`await`](~/_csharpstandard/standard/expressions.md#1299-await-expressions) section of the C# language spec provides the details on how these notifications are implemented.
 
@@ -37,7 +39,7 @@ You use the `await using` statement to work with an asynchronously disposable ob
 
 ## await operator in the Main method
 
-The [`Main` method](../../fundamentals/program-structure/main-command-line.md), which is the application entry point, can return `Task` or `Task<int>`, enabling it to be async so you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, you can retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that is returned by the corresponding async method. For asynchronous operations that don't produce a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
+The [`Main` method](../../fundamentals/program-structure/main-command-line.md) serves as the application entry point. It can return `Task` or `Task<int>`, which makes it async. By making the `Main` method async, you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that the corresponding async method returns. For asynchronous operations that don't produce a value, call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
 
 ## C# language specification
 

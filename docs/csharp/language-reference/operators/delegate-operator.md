@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 The `delegate` operator creates an anonymous method that you can convert to a delegate type.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 You can convert an anonymous method to types such as <xref:System.Action?displayProperty=nameWithType> and <xref:System.Func%601?displayProperty=nameWithType>. Many methods use these types as arguments.
 

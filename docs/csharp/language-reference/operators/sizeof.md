@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md).
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The expressions presented in the following table are evaluated at compile time to the corresponding constant values and don't require an unsafe context:
 

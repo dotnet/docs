@@ -25,7 +25,7 @@ helpviewer_keywords:
 
 The pointer operators enable you to take the address of a variable (`&`), dereference a pointer (`*`), compare pointer values, and add or subtract pointers and integers.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 Use the following operators to work with pointers:
 

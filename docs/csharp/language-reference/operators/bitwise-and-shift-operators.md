@@ -50,7 +50,7 @@ The `&`, `|`, and `^` operators also work with operands of the `bool` type. For 
 
 Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../statements/checked-and-unchecked.md) contexts.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Bitwise complement operator ~
 

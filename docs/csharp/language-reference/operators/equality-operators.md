@@ -20,7 +20,7 @@ helpviewer_keywords:
 
 The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not. Value types are equal when their contents are equal. Reference types are equal when the two variables refer to the same storage.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 You can use the [`is`](./is.md) pattern matching operator as an alternative to an `==` test when you test against a [constant value](./patterns.md#constant-pattern). The `is` operator uses the default equality semantics for all value and reference types.
 

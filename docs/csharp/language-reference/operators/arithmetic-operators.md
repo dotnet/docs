@@ -42,7 +42,7 @@ All [integral](../builtin-types/integral-numeric-types.md) and [floating-point](
 
 The `int`, `uint`, `long`, and `ulong` types define all these operators. The other integral types (`sbyte`, `byte`, `short`, `ushort`, and `char`) define only the `++` and `--` operators. For the other operators, if you use the integral types `sbyte`, `byte`, `short`, `ushort`, or `char` as operands, the values are converted to the `int` type and the result type is `int`. If the operands are different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The result type of a [compound assignment expression](#compound-assignment) is the type of the left-hand operand.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Increment operator ++
 

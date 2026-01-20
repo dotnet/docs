@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 You can overload a predefined C# operator in a user-defined type. By overloading an operator, you provide a custom implementation for the operation when one or both operands are of that type. See the [Overloadable operators](#overloadable-operators) section for a list of C# operators that you can overload.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 

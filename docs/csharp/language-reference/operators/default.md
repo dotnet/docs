@@ -13,7 +13,7 @@ A default value expression produces the [default value](../builtin-types/default
 
 You also use the `default` keyword as the default case label within a [`switch` statement](../statements/selection-statements.md#the-switch-statement).
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## `default` operator
 

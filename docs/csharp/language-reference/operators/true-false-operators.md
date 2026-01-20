@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 The `true` operator returns the [bool](../builtin-types/bool.md) value `true` to indicate that its operand is definitely true, while the `false` operator returns the `bool` value `true` to indicate that its operand is definitely false.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 A type that implements both `true` and `false` operators must follow these semantics:
 

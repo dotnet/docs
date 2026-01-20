@@ -44,7 +44,7 @@ You use several operators and expressions to access a type member. Member access
 - [`^` (index from end)](#index-from-end-operator-): Indicate that the element position is from the end of a sequence.
 - [`..` (range)](#range-operator-): Specify a range of indices that you can use to obtain a range of sequence elements.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Member access expression `.`
 

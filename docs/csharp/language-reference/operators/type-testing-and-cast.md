@@ -25,7 +25,7 @@ helpviewer_keywords:
 
 These operators and expressions perform type checking or type conversion. The `is` [operator](#the-is-operator) checks if the run-time type of an expression is compatible with a given type. The `as` [operator](#the-as-operator) explicitly converts an expression to a given type if its run-time type is compatible with that type. [Cast expressions](#cast-expression) perform an explicit conversion to a target type. The `typeof` [operator](#the-typeof-operator) obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## The `is` operator
 

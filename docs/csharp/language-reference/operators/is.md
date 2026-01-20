@@ -16,7 +16,7 @@ The `is` operator checks if the result of an expression is compatible with a giv
 
 In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) patterns.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The `is` operator can be useful in the following scenarios:
 

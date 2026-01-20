@@ -11,7 +11,7 @@ A *deconstruction expression* extracts data fields from an instance of an object
 
 The preceding code snippet creates a [tuple](../builtin-types/value-tuples.md) that has two integer values, `X` and `Y`. The second statement *deconstructs* that tuple and stores the tuple elements in separate variables `x` and `y`.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Tuple deconstruction
 

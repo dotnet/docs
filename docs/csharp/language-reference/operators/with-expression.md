@@ -16,7 +16,7 @@ A `with` expression creates a copy of its operand with the specified properties 
 
 The left-hand operand of a `with` expression can be a [record type](../builtin-types/record.md). It can also be a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The result of a `with` expression has the same run-time type as the expression's operand, as the following example shows:
 

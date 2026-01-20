@@ -14,7 +14,7 @@ The unary postfix `!` operator is the null-forgiving, or null-suppression, opera
 
 For more information about the nullable reference types feature, see [Nullable reference types](../builtin-types/nullable-reference-types.md).
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Examples
 

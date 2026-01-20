@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 C# provides many operators. The [built-in types](../builtin-types/built-in-types.md) support many of these operators, so you can perform basic operations with values of those types.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 These operators include the following groups:
 

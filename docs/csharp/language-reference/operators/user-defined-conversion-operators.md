@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 A user-defined type can define a custom implicit or explicit conversion from or to another type, provided a standard conversion doesn't exist between the same two types. Implicit conversions don't require special syntax to be invoked and can occur in various situations, for example, in assignments and methods invocations. Predefined C# implicit conversions always succeed and never throw an exception. User-defined implicit conversions should behave in that way as well. If a custom conversion can throw an exception or lose information, define it as an explicit conversion.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The [is](type-testing-and-cast.md#the-is-operator) and [as](type-testing-and-cast.md#the-as-operator) operators don't consider user-defined conversions. Use a [cast expression](type-testing-and-cast.md#cast-expression) to invoke a user-defined explicit conversion.
 

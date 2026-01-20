@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 The `new` operator creates a new instance of a type. You can also use the `new` keyword as a [member declaration modifier](../keywords/new-modifier.md) or a [generic type constraint](../keywords/new-constraint.md).
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## Constructor invocation
 

@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 Use a *lambda expression* to create an anonymous function. Use the [lambda declaration operator `=>`](lambda-operator.md) to separate the lambda's parameter list from its body.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 A lambda expression can be any of the following two forms:
 

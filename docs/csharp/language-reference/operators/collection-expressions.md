@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 Use a *collection expression* to create common collection values. A *collection expression* is a terse syntax that you can assign to many different collection types. A collection expression contains a sequence of elements between `[` and `]` brackets.
 
-[!INCLUDE[csharp-version-note](./includes/initial-version.md)]
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The following example declares a <xref:System.Span%601?displayProperty=nameWithType> of `string` elements and initializes them to the days of the week:
 

@@ -17,7 +17,7 @@ Module Program
         TimeOnlyParseExactExample()
     End Sub
 
-    '<datetime-parse>
+    '<DateTimeParse>
     Sub DateTimeParseExample()
         ' Parse common date and time formats using current culture
         Dim dateTime1 = DateTime.Parse("1/15/2025 3:30 PM")
@@ -32,9 +32,9 @@ Module Program
         Dim germanDate = DateTime.Parse("15.01.2025", New CultureInfo("de-DE"))
         Console.WriteLine($"German date parsed: {germanDate}")
     End Sub
-    '</datetime-parse>
+    '</DateTimeParse>
 
-    '<datetime-parseexact>
+    '<DateTimeParseExact>
     Sub DateTimeParseExactExample()
         ' Parse exact format
         Dim exactDate = DateTime.ParseExact("2025-01-15T14:30:00", "yyyy-MM-ddTHH:mm:ss", CultureInfo.InvariantCulture)
@@ -44,9 +44,9 @@ Module Program
         Dim customDate = DateTime.ParseExact("15/Jan/2025 2:30 PM", "dd/MMM/yyyy h:mm tt", CultureInfo.InvariantCulture)
         Console.WriteLine($"Custom format: {customDate}")
     End Sub
-    '</datetime-parseexact>
+    '</DateTimeParseExact>
 
-    '<datetime_parse_culture>
+    '<DateTimeParseCulture>
     Sub DateTimeParseGermanExample()
         Dim MyCultureInfo As New CultureInfo("de-DE")
         Dim MyString As String = "12 Juni 2008"
@@ -55,9 +55,9 @@ Module Program
         ' The example displays the following output:
         '       6/12/2008 00:00:00
     End Sub
-    '</datetime_parse_culture>
+    '</DateTimeParseCulture>
 
-    '<datetime-parse-nodefault>
+    '<DateTimeParseNoDefault>
     Sub DateTimeParseNoDefaultExample()
         Dim MyCultureInfo As New CultureInfo("de-DE")
         Dim MyString As String = "12 Juni 2008"
@@ -67,9 +67,9 @@ Module Program
         ' The example displays the following output if the current culture is en-US:
         '       6/12/2008 00:00:00
     End Sub
-    '</datetime-parse-nodefault>
+    '</DateTimeParseNoDefault>
 
-    '<dateonly-parse>
+    '<DateOnlyParse>
     Sub DateOnlyParseExample()
         ' Parse common date formats
         Dim date1 = DateOnly.Parse("1/15/2025")
@@ -84,9 +84,9 @@ Module Program
         Dim germanDate = DateOnly.Parse("15.01.2025", New CultureInfo("de-DE"))
         Console.WriteLine($"German date: {germanDate}")
     End Sub
-    '</dateonly-parse>
+    '</DateOnlyParse>
 
-    '<dateonly-parseexact>
+    '<DateOnlyParseExact>
     Sub DateOnlyParseExactExample()
         ' Parse exact format
         Dim exactDate = DateOnly.ParseExact("21 Oct 2015", "dd MMM yyyy", CultureInfo.InvariantCulture)
@@ -101,9 +101,9 @@ Module Program
         Dim flexibleDate = DateOnly.ParseExact("1/15/2025", formats, CultureInfo.InvariantCulture, DateTimeStyles.None)
         Console.WriteLine($"Flexible parse: {flexibleDate}")
     End Sub
-    '</dateonly-parseexact>
+    '</DateOnlyParseExact>
 
-    '<timeonly-parse>
+    '<TimeOnlyParse>
     Sub TimeOnlyParseExample()
         ' Parse common time formats
         Dim time1 = TimeOnly.Parse("14:30:15")
@@ -118,9 +118,9 @@ Module Program
         Dim preciseTime = TimeOnly.Parse("14:30:15.123")
         Console.WriteLine($"Precise time: {preciseTime.ToString("HH:mm:ss.fff")}")
     End Sub
-    '</timeonly-parse>
+    '</TimeOnlyParse>
 
-    '<timeonly-parseexact>
+    '<TimeOnlyParseExact>
     Sub TimeOnlyParseExactExample()
         ' Parse exact format
         Dim exactTime = TimeOnly.ParseExact("5:00 pm", "h:mm tt", CultureInfo.InvariantCulture)
@@ -135,5 +135,5 @@ Module Program
         Dim flexibleTime = TimeOnly.ParseExact("2:30 PM", timeFormats, CultureInfo.InvariantCulture, DateTimeStyles.None)
         Console.WriteLine($"Flexible time parse: {flexibleTime}")
     End Sub
-    '</timeonly-parseexact>
+    '</TimeOnlyParseExact>
 End Module

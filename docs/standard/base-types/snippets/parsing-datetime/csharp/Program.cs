@@ -22,7 +22,7 @@ namespace ParsingDateTimeExamples
             TimeOnlyParseExactExample();
         }
 
-        //<datetime-parse>
+        //<DateTimeParse>
         static void DateTimeParseExample()
         {
             // Parse common date and time formats using current culture
@@ -38,9 +38,9 @@ namespace ParsingDateTimeExamples
             var germanDate = DateTime.Parse("15.01.2025", new CultureInfo("de-DE"));
             Console.WriteLine($"German date parsed: {germanDate}");
         }
-        //</datetime-parse>
+        //</DateTimeParse>
 
-        //<datetime-parseexact>
+        //<DateTimeParseExact>
         static void DateTimeParseExactExample()
         {
             // Parse exact format
@@ -51,9 +51,9 @@ namespace ParsingDateTimeExamples
             var customDate = DateTime.ParseExact("15/Jan/2025 2:30 PM", "dd/MMM/yyyy h:mm tt", CultureInfo.InvariantCulture);
             Console.WriteLine($"Custom format: {customDate}");
         }
-        //</datetime-parseexact>
+        //</DateTimeParseExact>
 
-        //<datetime_parse_culture>
+        //<DateTimeParseCulture>
         static void DateTimeParseGermanExample()
         {
             var cultureInfo = new CultureInfo("de-DE");
@@ -63,9 +63,9 @@ namespace ParsingDateTimeExamples
             // The example displays the following output:
             //       6/12/2008 00:00:00
         }
-        //</datetime_parse_culture>
+        //</DateTimeParseCulture>
 
-        //<datetime-parse-nodefault>
+        //<DateTimeParseNoDefault>
         static void DateTimeParseNoDefaultExample()
         {
             var cultureInfo = new CultureInfo("de-DE");
@@ -76,9 +76,9 @@ namespace ParsingDateTimeExamples
             // The example displays the following output if the current culture is en-US:
             //      6/12/2008 00:00:00
         }
-        //</datetime-parse-nodefault>
+        //</DateTimeParseNoDefault>
 
-        //<dateonly-parse>
+        //<DateOnlyParse>
         static void DateOnlyParseExample()
         {
             // Parse common date formats
@@ -94,9 +94,9 @@ namespace ParsingDateTimeExamples
             var germanDate = DateOnly.Parse("15.01.2025", new CultureInfo("de-DE"));
             Console.WriteLine($"German date: {germanDate}");
         }
-        //</dateonly-parse>
+        //</DateOnlyParse>
 
-        //<dateonly-parseexact>
+        //<DateOnlyParseExact>
         static void DateOnlyParseExactExample()
         {
             // Parse exact format
@@ -112,9 +112,9 @@ namespace ParsingDateTimeExamples
             var flexibleDate = DateOnly.ParseExact("1/15/2025", formats, CultureInfo.InvariantCulture, DateTimeStyles.None);
             Console.WriteLine($"Flexible parse: {flexibleDate}");
         }
-        //</dateonly-parseexact>
+        //</DateOnlyParseExact>
 
-        //<timeonly-parse>
+        //<TimeOnlyParse>
         static void TimeOnlyParseExample()
         {
             // Parse common time formats
@@ -130,9 +130,9 @@ namespace ParsingDateTimeExamples
             var preciseTime = TimeOnly.Parse("14:30:15.123");
             Console.WriteLine($"Precise time: {preciseTime.ToString("HH:mm:ss.fff")}");
         }
-        //</timeonly-parse>
+        //</TimeOnlyParse>
 
-        //<timeonly-parseexact>
+        //<TimeOnlyParseExact>
         static void TimeOnlyParseExactExample()
         {
             // Parse exact format
@@ -148,6 +148,6 @@ namespace ParsingDateTimeExamples
             var flexibleTime = TimeOnly.ParseExact("2:30 PM", timeFormats, CultureInfo.InvariantCulture, DateTimeStyles.None);
             Console.WriteLine($"Flexible time parse: {flexibleTime}");
         }
-        //</timeonly-parseexact>
+        //</TimeOnlyParseExact>
     }
 }

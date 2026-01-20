@@ -180,7 +180,7 @@ Using ICU instead of NLS might result in behavioral differences with some global
 - By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to the value `true` or `1`.
 
 > [!NOTE]
-> A value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
+> In .NET 9 and later versions, an environment variable setting takes precedence. In previous versions, a value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
 
 For more information, see [Runtime config settings](../../core/runtime-config/globalization.md#nls).
 

@@ -1,11 +1,13 @@
 ---
 title: "Attributes interpreted by the compiler: Pseudo-attributes"
-ms.date: 01/28/2025
+ms.date: 01/14/2026
 description: "Learn about attributes you can add to code that are written to IL as modifiers. These custom attributes aren't emitted as attributes in the compiled output."
 ---
 # Custom attributes that generate flags or options in the Intermediate Language (IL) output
 
-You add these attributes to your code for the compiler to emit a specified Intermediate Language (IL) modifier. These attributes instruct the compiler to include the corresponding IL modifier in the output.
+Add these attributes to your code for the compiler to emit a specified Intermediate Language (IL) modifier. These attributes instruct the compiler to include the corresponding IL modifier in the output.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 | Attribute                                                                            | Modifier        | Comments  |
 |--------------------------------------------------------------------------------------|-----------------|-----------|
@@ -19,9 +21,9 @@ You add these attributes to your code for the compiler to emit a specified Inter
 | <xref:System.Runtime.InteropServices.PreserveSigAttribute?displayProperty=fullName>  | `preservesig`   |           |
 | <xref:System.SerializableAttribute?displayProperty=fullName>                         | `serializable`  |           |
 | <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> | `auto`, `sequential`, or `explicit` | Layout options can be set using the parameters. |
-| <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=fullName> |                 | You add this attribute to an indexer to set a different method name. By default, indexers are compiled to a property named `Item`. You can specify a different name using this attribute. |
+| <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=fullName> |                 | Add this attribute to an indexer to set a different method name. By default, indexers are compiled to a property named `Item`. You can specify a different name using this attribute. |
 
-Some of these custom attributes are applied using other C# syntax rather than adding the attribute to your source code.
+Some of these custom attributes are applied by using other C# syntax rather than adding the attribute to your source code.
 
 | Attribute                                                                                        | Comments |
 |--------------------------------------------------------------------------------------------------|----------|
@@ -35,7 +37,7 @@ The following attributes are generally disallowed in C# source. They're listed h
 
 | Attribute                                                                                        | Comments  |
 |--------------------------------------------------------------------------------------------------|---------|
-| <xref:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute?displayProperty=fullName> | Prevents downlevel compilers from using metadata it can't safely understand. |
+| <xref:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute?displayProperty=fullName> | Prevents downlevel compilers from using metadata they can't safely understand. |
 | <xref:System.Runtime.CompilerServices.DecimalConstantAttribute?displayProperty=fullName>         | Encodes `const decimal` fields. The runtime doesn't support `decimal` values as constant values. |
 | <xref:System.Reflection.DefaultMemberAttribute?displayProperty=fullName>                         | Encodes indexers with <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=fullName>. This attribute notes the default indexer when its name is different than `Item`. This attribute is allowed in source. |
 | <xref:System.Runtime.CompilerServices.DynamicAttribute?displayProperty=fullName>                 | Encodes whether a type in a signature is `dynamic` (versus `object`). |

@@ -1,7 +1,7 @@
 ---
 title: "Structure types"
 description: Learn about the struct type in C#
-ms.date: 11/18/2025
+ms.date: 01/14/2026
 f1_keywords:
   - "struct_CSharpKeyword"
 helpviewer_keywords:
@@ -11,26 +11,30 @@ helpviewer_keywords:
 ---
 # Structure types (C# reference)
 
-A *structure type* (or *struct type*) is a [value type](value-types.md) that can encapsulate data and related functionality. You use the `struct` keyword to define a structure type:
+A *structure type* (or *struct type*) is a [value type](value-types.md) that can encapsulate data and related functionality.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+Use the `struct` keyword to define a structure type:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="StructExample":::
 
 For information about `ref struct` and `readonly ref struct` types, see the [ref structure types](ref-struct.md) article.
 
-Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. For structure-type variables, an instance of the type is copied. For more information, see [Value types](value-types.md).
+Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, the system copies variable values on assignment, when passing an argument to a method, and when returning a method result. For structure-type variables, the system copies an instance of the type. For more information, see [Value types](value-types.md).
 
-Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
+Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), and a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
 
 Because structure types have value semantics, we recommend you define *immutable* structure types.
 
 ## `readonly` struct
 
-You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
+Use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md).
 - Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
 
-That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
+This rule guarantees that no member of a `readonly` struct modifies the state of the struct. All other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
@@ -41,13 +45,13 @@ The following code defines a `readonly` struct with init-only property setters:
 
 ## `readonly` instance members
 
-You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
+Use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
 
-Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case, the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
+Within a `readonly` instance member, you can't assign to the structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case, the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
 
 Typically, you apply the `readonly` modifier to the following kinds of instance members:
 
-- methods:
+- Methods:
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyMethod":::
 
@@ -55,26 +59,26 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyOverride":::
 
-- properties and indexers:
+- Properties and indexers:
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyProperty":::
 
   If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
 
   > [!NOTE]
-  > The compiler declares a `get` accessor of an [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
+  > The compiler declares a `get` accessor of an [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of the presence of the `readonly` modifier in a property declaration.
 
   You can apply the `readonly` modifier to a property or indexer with an `init` accessor:
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
-You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
+You can apply the `readonly` modifier to static fields of a structure type, but not to any other static members, such as properties or methods.
 
 The compiler can make use of the `readonly` modifier for performance optimizations. For more information, see [Avoiding allocations](../../advanced-topics/performance/index.md).
 
 ## Nondestructive mutation
 
-You can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+Use the [`with` expression](../operators/with-expression.md) to create a copy of a structure-type instance with the specified properties and fields changed. Use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify which members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
@@ -84,7 +88,7 @@ You can define record structure types. Record types provide built-in functionali
 
 ## Inline arrays
 
-Beginning with C# 12, you can declare *inline arrays* as a `struct` type:
+Starting with C# 12, you can declare *inline arrays* as a `struct` type:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArray":::
 
@@ -98,7 +102,7 @@ In addition, the compiler validates the <xref:System.Runtime.CompilerServices.In
 - The length must be greater than zero (`> 0`).
 - The target type must be a struct.
 
-In most cases, an inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
+In most cases, you can access an inline array like an array, both to read and write values. You can also use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
 
 There are minimal restrictions on the type of the single field of an inline array. It can't be a pointer type:
 
@@ -114,7 +118,7 @@ Inline arrays are an advanced language feature. They're intended for high-perfor
 
 ## Struct initialization and default values
 
-A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example, consider the following code:
+A variable of a `struct` type directly contains the data for that `struct`. This direct data storage creates a distinction between an uninitialized `struct`, which has its default value, and an initialized `struct`, which stores values set by constructing it. For example, consider the following code:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
@@ -127,10 +131,10 @@ The most common situation where you see default values is in arrays or in other 
 TemperatureRange[] lastMonth = new TemperatureRange[30];
 ```
 
-All of a struct's member fields must be *definitely assigned* when created because `struct` types directly store their data. The `default` value of a struct *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
+All of a struct's member fields must be *definitely assigned* when created because `struct` types directly store their data. The `default` value of a struct *definitely assigns* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields by using the following mechanisms:
 
-- You can add *field initializers* to any field or auto implemented property.
-- You can initialize any fields, or auto properties, in the body of the constructor.
+- Add *field initializers* to any field or auto-implemented property.
+- Initialize any fields or auto properties in the body of the constructor.
 
 If you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
 
@@ -140,7 +144,7 @@ Every `struct` has a `public` parameterless constructor. If you write a paramete
 
 Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provide a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
-If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
+If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case, you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetWithoutNew":::
 
@@ -160,11 +164,11 @@ When you pass a structure-type variable to a method as an argument or return a s
 
 ## `struct` constraint
 
-You also use the `struct` keyword in the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and [enumeration](enum.md) types satisfy the `struct` constraint.
+Use the `struct` keyword in the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and [enumeration](enum.md) types satisfy the `struct` constraint.
 
 ## Conversions
 
-For any structure type (except [`ref struct`](ref-struct.md) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
+For any structure type (except [`ref struct`](ref-struct.md) types), [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions exist to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. Boxing and unboxing conversions also exist between a structure type and any interface that it implements.
 
 ## C# language specification
 

@@ -18,6 +18,10 @@ items:
                 href: core-libraries/11/memorystream-max-capacity.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md
+          - name: Cryptography
+            items:
+              - name: DSA removed from macOS
+                href: cryptography/11/dsa-removed-macos.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
@@ -142,6 +146,8 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
+              - name: MailAddress enforces validation for consecutive dots
+                href: networking/10.0/mailaddress-consecutive-dots.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
@@ -306,6 +312,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Environment variables take precedence in app runtime configuration settings
+                href: deployment/9.0/envvar-precedence.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop

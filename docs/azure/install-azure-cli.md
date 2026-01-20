@@ -4,8 +4,6 @@ description: Azure developers will need the Azure CLI installed, so this article
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 8/15/2024
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Install the Azure CLI

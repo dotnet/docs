@@ -3,7 +3,7 @@ description: "Raw string literals can contain any arbitrary text without the nee
 title: "Raw string literals - \"\"\""
 f1_keywords:
   - "RawStringLiteral_CSharpKeyword"
-ms.date: 11/18/2025
+ms.date: 01/14/2026
 ---
 # Raw string literal text - `"""` in string literals
 
@@ -15,13 +15,15 @@ Raw string literals can span multiple lines:
 
 :::code language="csharp" source="./snippets/raw-string-literal.cs" id="MultiLine":::
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 The following rules govern the interpretation of a multi-line raw string literal:
 
 - The opening quotes must be the last non-whitespace characters on their line, and the closing quotes must be the first non-whitespace characters on their line.
 - Any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.
 - Any whitespace following the opening quotes on the same line is ignored.
-- Whitespace only lines following the opening quote are included in the string literal.
-- If a whitespace precedes the end delimiter on the same line, the exact number and kind of whitespace characters (for example, spaces vs. tabs) must exist at the beginning of each content line. Specifically, a space doesn't match a horizontal tab, and vice versa.
+- Whitespace-only lines following the opening quote are included in the string literal.
+- If a whitespace character precedes the end delimiter on the same line, the exact number and kind of whitespace characters (for example, spaces vs. tabs) must exist at the beginning of each content line. Specifically, a space doesn't match a horizontal tab, and vice versa.
 - The newline before the closing quotes isn't included in the literal string.
 
 [!INCLUDE[raw-string-tip](../../includes/raw-string-parsing.md)]
@@ -36,7 +38,7 @@ If you need to start or end a raw string literal with quote characters, use the 
 
 Raw string literals can also be combined with [interpolated strings](./interpolated.md#interpolated-raw-string-literals) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
 
-The raw string literal's content must not contain a set of contiguous `"` characters whose length is equal to or greater than the raw string literal delimiter length. For example, the strings `"""" """ """"` and `""""""" """""" """"" """" """ """""""` are well-formed. However, the strings `""" """ """` and `""" """" """` are ill-formed
+The raw string literal's content must not contain a set of contiguous `"` characters whose length is equal to or greater than the raw string literal delimiter length. For example, the strings `"""" """ """"` and `""""""" """""" """"" """" """ """""""` are well-formed. However, the strings `""" """ """` and `""" """" """` are ill-formed.
 
 ## See also
 

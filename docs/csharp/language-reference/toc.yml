@@ -644,7 +644,7 @@ items:
     href: ./compiler-messages/using-directive-errors.md
     displayName: >
       CS0105, CS0138, CS0431, CS0432, CS0440, CS0576, CS0687, CS1529, CS1537, CS7000,
-      CS7007, CS8019, CS8083, CS8085, CS8914, CS8915, CS8933, CS9055, CS9130, CS9131,
+      CS7007, CS8019, CS8083, CS8085, CS8914, CS8915, CS8933, CS9130, CS9131,
       CS9132, CS9133, CS9162, CS9163
   - name: Using statements and declarations
     href: ./compiler-messages/using-statement-declaration-errors.md
@@ -657,6 +657,10 @@ items:
       CS9147, CS9148, CS9149, CS9150, CS9151, CS9152, CS9153, CS9154, CS9155, CS9156,
       CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207, CS9231,
       CS9232, CS9233, CS9234, CS9235, CS9270
+  - name: File local types
+    href: ./compiler-messages/file-local-types.md
+    displayName: >
+      CS9051, CS9052, CS9053, CS9054, CS9055, CS9056, CS9068, CS9069, CS9071
   - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: >
@@ -1815,6 +1819,8 @@ items:
       href: ./compiler-messages/cs8411.md
     - name: CS8422
       href: ./compiler-messages/cs8422.md
+    - name: CS8506
+      href: ../misc/cs8506.md
     - name: CS8515
       href: ./compiler-messages/cs8515.md
     - name: CS8802

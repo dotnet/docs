@@ -1,8 +1,6 @@
 ---
 ms.date: 2/21/2025
 ms.topic: include
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 ## Prerequisites

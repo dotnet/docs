@@ -16,6 +16,7 @@ The following table shows the environment variables you can configure for collec
 |`DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see [Types of mini dumps](#types-of-mini-dumps).|2 (`Heap`)|
 |`DOTNET_DbgMiniDumpName`|Path to a file to write the dump to. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.|`/tmp/coredump.<pid>`|
 |`DOTNET_CreateDumpDiagnostics`|If set to 1, enables diagnostic logging of dump process.|0|
+|`DOTNET_DbgCreateDumpToolPath`|(.NET 11+ NativeAOT only)<br/> Path to the directory where the createdump tool is located. The runtime will look for the createdump binary in this directory. This variable is useful in scenarios where createdump isn't shipped with the runtime and you need to "bring your own" dump generation tool. This environment variable is only supported in NativeAOT applications and ignored otherwise.| |
 |`DOTNET_EnableCrashReport`|(not supported on Windows.)<br/>If set to 1, the runtime generates a JSON-formatted crash report that includes information about the threads and stack frames of the crashing application. The crash report name is the dump path or name with *.crashreport.json* appended.| |
 |`DOTNET_CreateDumpVerboseDiagnostics`|If set to 1, enables verbose diagnostic logging of the dump process.|0|
 |`DOTNET_CreateDumpLogToFile`|The path of the file to which the diagnostic messages should be written. | If unset, the diagnostic messages are written to the console of the crashing application. |

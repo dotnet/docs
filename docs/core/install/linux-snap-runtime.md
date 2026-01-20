@@ -3,7 +3,7 @@ title: Install .NET Runtime on Linux with Snap
 description: Learn about how to install the .NET Runtime snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/13/2024
+ms.date: 01/16/2026
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content
 #customer intent: As a Linux user, I want to install .NET Runtime through Snap.

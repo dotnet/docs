@@ -6,7 +6,7 @@ ms.date: 11/20/2025
 
 # .NET environment variables
 
-In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
+This article lists the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
 
@@ -81,7 +81,7 @@ Applications can enable the invariant mode in any of the following ways:
 1. By setting environment variable value `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` to `true` or `1`.
 
 > [!IMPORTANT]
-> A value set in the project file or _runtimeconfig.json_ has a higher priority than the environment variable.
+> In .NET 9 and later versions, environment variables have a higher priority than values set in the project file or _runtimeconfig.json_.
 
 For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 

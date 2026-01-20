@@ -63,11 +63,11 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 
 ## Common scenarios
 
-### Validating test structure
+### Test structure validation
 
 Ensure your test classes, methods, and fixtures follow MSTest requirements:
 
-- **[MSTEST0002](mstest0002.md)**: Test class layout requirements (public, non-static, etc.)
+- **[MSTEST0002](mstest0002.md)**: Test class layout requirements (for example, public, non-static)
 - **[MSTEST0003](mstest0003.md)**: Test method layout requirements (⚠️ escalated to Error)
 - **[MSTEST0030](mstest0030.md)**: Methods with [TestMethod] must be in a [TestClass]
 

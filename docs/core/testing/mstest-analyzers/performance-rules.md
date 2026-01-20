@@ -28,16 +28,16 @@ By default, MSTest runs tests sequentially, which can significantly impact execu
 
 **When to enable parallelization**:
 
-- Tests are independent and don't share state
-- Tests don't rely on execution order
-- Tests don't modify global resources (databases, files, environment variables)
+- Tests are independent and don't share state.
+- Tests don't rely on execution order.
+- Tests don't modify global resources (databases, files, and environment variables).
 
 **When to use DoNotParallelize**:
 
-- Tests have dependencies on shared resources
-- Tests modify global state
-- Tests require specific execution order
-- You're debugging test failures
+- Tests have dependencies on shared resources.
+- Tests modify global state.
+- Tests require specific execution order.
+- You're debugging test failures.
 
 ## Related documentation
 

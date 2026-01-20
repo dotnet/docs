@@ -30,7 +30,7 @@ Design rules help you create and maintain test suites that adhere to proper desi
 
 ## Common scenarios
 
-### Structuring test classes
+### Test class structure
 
 When creating test classes, these rules help ensure proper design:
 
@@ -38,21 +38,21 @@ When creating test classes, these rules help ensure proper design:
 - **[MSTEST0016](mstest0016.md)**: Ensure test classes contain at least one test method
 - **[MSTEST0029](mstest0029.md)**: Public methods in test classes should be test methods
 
-### Choosing initialization patterns
+### Initialization patterns
 
 MSTest supports both constructors and TestInitialize methods. These mutually exclusive rules let you enforce a consistent pattern:
 
 - **[MSTEST0019](mstest0019.md)**: Enforce TestInitialize for initialization (useful for async scenarios)
 - **[MSTEST0020](mstest0020.md)**: Enforce constructors for initialization (better for readonly fields)
 
-### Choosing cleanup patterns
+### Cleanup patterns
 
 Similarly, choose between Dispose and TestCleanup:
 
 - **[MSTEST0021](mstest0021.md)**: Enforce Dispose pattern for cleanup
 - **[MSTEST0022](mstest0022.md)**: Enforce TestCleanup for cleanup
 
-### Writing better assertions
+### Better assertions
 
 - **[MSTEST0006](mstest0006.md)**: Use Assert.ThrowsExactly instead of [ExpectedException] for better precision
 - **[MSTEST0025](mstest0025.md)**: Use Assert.Fail instead of Assert.IsTrue(false)

@@ -12,7 +12,7 @@ Suppression rules automatically suppress diagnostics from other analyzers (like 
 
 ## Rules in this category
 
-| Rule ID | Title | Suppresses | 
+| Rule ID | Title | Suppresses |
 |---------|-------|------------|
 | [MSTEST0027](mstest0027.md) | Suppress async suffix for test methods | VSTHRD200 |
 | [MSTEST0028](mstest0028.md) | Suppress async suffix for test fixture methods | VSTHRD200 |
@@ -62,9 +62,9 @@ public class MyTests
 }
 ```
 
-## Disabling suppression rules
+## Disable suppression rules
 
-If you prefer to see these warnings, you can disable the suppression rules in your `.editorconfig`:
+If you prefer to see these warnings, disable the suppression rules in your `.editorconfig`:
 
 ```ini
 [*.cs]

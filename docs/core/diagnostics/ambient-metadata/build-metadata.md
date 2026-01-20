@@ -77,7 +77,7 @@ dotnet package add Microsoft.Extensions.AmbientMetadata.Build
 
 The source generator included in the `Microsoft.Extensions.AmbientMetadata.Build` package generates the `UseBuildMetadata()` extension method that simplifies configuration. During the build process, it captures build information from MSBuild properties and generates code to make this data available at runtime.
 
-### 1. Use UseBuildMetadata() method call
+### 1. Use UseBuildMetadata() method
 
 The simplest way to configure build metadata is to use the source-generated `UseBuildMetadata()` extension method:
 
@@ -89,7 +89,7 @@ The `UseBuildMetadata()` method:
 - Registers the <xref:Microsoft.Extensions.AmbientMetadata.BuildMetadata> type in dependency injection
 - Uses the default configuration section `ambientmetadata:build`
 
-### 2. Use AddBuildMetadata() method calls
+### 2. Use AddBuildMetadata() methods
 
 You can also configure build metadata using the `AddBuildMetadata()` extension methods. These methods do absolutely the same thing as `UseBuildMetadata()` above, but provide more flexibility if, for instance, you configure Host Configuration and Dependency Injection in different places of your source code.
 

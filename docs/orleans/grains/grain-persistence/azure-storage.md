@@ -93,6 +93,88 @@ siloBuilder.AddAzureBlobGrainStorage(
 
 ---
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## .NET Aspire integration for grain persistence
+
+[.NET Aspire](../../host/aspire-integration.md) simplifies Azure Storage grain persistence configuration by managing resource provisioning and connection automatically.
+
+### Azure Blob Storage with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage");
+var blobs = storage.AddBlobs("grainstate");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(builder.AddRedis("redis"))
+    .WithGrainStorage("Default", blobs);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(blobs);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureBlobServiceClient("grainstate");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+### Azure Table Storage with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage");
+var tables = storage.AddTables("grainstate");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(builder.AddRedis("redis"))
+    .WithGrainStorage("Default", tables);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(tables);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureTableServiceClient("grainstate");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!TIP]
+> During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production deployments, Aspire connects to your real Azure Storage account based on your Azure deployment configuration.
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedAzureBlobServiceClient` or `AddKeyedAzureTableServiceClient`) to register the storage client in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the storage client and will throw a dependency resolution error at runtime.
+
+For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../../host/aspire-integration.md).
+
+:::zone-end
+
 :::zone-end
 
 :::zone target="docs" pivot="orleans-3-x"

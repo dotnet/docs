@@ -24,6 +24,13 @@ Configure a client for connecting to a cluster of silos and sending requests to 
 > [!TIP]
 > If you just want to start a local silo and a local client for development purposes, see [Local development configuration](local-development-configuration.md).
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+> [!TIP]
+> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects `ClusterId`, `ServiceId`, and clustering provider settings via environment variables, so you can use the simpler parameterless `UseOrleansClient()` method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
+
+:::zone-end
+
 Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) NuGet package to your client project.
 
 There are several key aspects of client configuration:

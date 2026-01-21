@@ -11,9 +11,131 @@ ms.custom: sfi-ropc-nochange
 
 Below are examples of typical configurations you can use for development and production deployments.
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## Recommended: .NET Aspire configuration
+
+[.NET Aspire](../aspire-integration.md) is the recommended approach for configuring Orleans applications. Aspire provides declarative resource management, automatic service discovery, built-in observability, and simplified deployment—eliminating most manual configuration.
+
+### Production configuration with Redis
+
+This configuration uses Redis for clustering, grain storage, and reminders with multiple silo replicas:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var redis = builder.AddRedis("redis");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(redis)
+    .WithGrainStorage("Default", redis)
+    .WithReminders(redis);
+
+// Add Orleans silo with 3 replicas for production
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(redis)
+    .WithReplicas(3);
+
+// Add a separate client project (e.g., an API)
+builder.AddProject<Projects.MyApi>("api")
+    .WithReference(orleans.AsClient())
+    .WithReference(redis);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+**Client project (Program.cs):**
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleansClient();
+
+var app = builder.Build();
+// ... configure API endpoints
+app.Run();
+```
+
+> [!TIP]
+> Use `WithReplicas(n)` to run multiple silo instances for high availability. Use `orleans.AsClient()` when a project only needs to call grains, not host them.
+
+### Production configuration with Azure Storage
+
+This configuration uses Azure Table Storage for clustering and Azure Blob Storage for grain storage:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage");
+var tables = storage.AddTables("clustering");
+var blobs = storage.AddBlobs("grainstate");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(tables)
+    .WithGrainStorage("Default", blobs);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(tables)
+    .WithReference(blobs)
+    .WithReplicas(3);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureTableServiceClient("clustering");
+builder.AddKeyedAzureBlobServiceClient("grainstate");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!TIP]
+> During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production deployments, Aspire connects to your real Azure Storage account based on your Azure deployment configuration.
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureBlobServiceClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
+
+For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../aspire-integration.md).
+
+:::zone-end
+
 ## Local development
 
 For more information, see [Local development configuration](local-development-configuration.md).
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## Traditional configurations (without Aspire)
+
+The following sections describe traditional Orleans configurations that don't use .NET Aspire. These are useful when Aspire isn't available or when you need fine-grained control over Orleans configuration.
+
+:::zone-end
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 

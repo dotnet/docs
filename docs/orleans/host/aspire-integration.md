@@ -159,14 +159,14 @@ builder.AddServiceDefaults();
 // Add the Aspire Redis client for Orleans
 builder.AddKeyedRedisClient("orleans-redis");
 
-builder.UseOrleans(siloBuilder =>
-{
-    // Orleans will automatically use Redis clustering
-    // based on the Aspire configuration injection
-});
+// Configure Orleans - Aspire injects all configuration automatically
+builder.UseOrleans();
 
 builder.Build().Run();
 ```
+
+> [!TIP]
+> When using .NET Aspire, the parameterless `UseOrleans()` is typically all you need. Aspire injects Orleans configuration (cluster ID, service ID, endpoints, and provider settings) via environment variables that Orleans reads automatically. You only need the delegate overload `UseOrleans(siloBuilder => {...})` when you require additional manual configuration beyond what Aspire provides.
 
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableClient`, or `AddKeyedAzureBlobClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime. This applies to all Aspire-managed resources used with Orleans.
@@ -206,16 +206,8 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.AddServiceDefaults();
 builder.AddKeyedRedisClient("orleans-redis");
 
-builder.UseOrleansClient(clientBuilder =>
-{
-    var redisConnectionString = builder.Configuration.GetConnectionString("orleans-redis");
-    
-    clientBuilder.UseRedisClustering(options =>
-    {
-        options.ConfigurationOptions = 
-            StackExchange.Redis.ConfigurationOptions.Parse(redisConnectionString!);
-    });
-});
+// Configure Orleans client - Aspire injects clustering configuration automatically
+builder.UseOrleansClient();
 
 builder.Build().Run();
 ```
@@ -224,15 +216,50 @@ builder.Build().Run();
 
 The `Aspire.Hosting.Orleans` package provides these extension methods:
 
+### Core methods
+
 | Method | Description |
 |--------|-------------|
 | `builder.AddOrleans(name)` | Adds an Orleans resource to the distributed application with the specified name. |
-| `.WithClustering(resource)` | Configures Orleans clustering to use the specified resource (Redis, Azure Storage, etc.). |
-| `.WithGrainStorage(name, resource)` | Configures a named grain storage provider using the specified resource. |
-| `.WithReminders(resource)` | Configures the Orleans reminder service using the specified resource. |
-| `.WithGrainDirectory(name, resource)` | Configures a named grain directory using the specified resource. |
+| `.WithClusterId(id)` | Sets the Orleans ClusterId. Accepts a string or `ParameterResource`. If not specified, a unique ID is generated automatically. |
+| `.WithServiceId(id)` | Sets the Orleans ServiceId. Accepts a string or `ParameterResource`. If not specified, a unique ID is generated automatically. |
 | `.AsClient()` | Returns a client-only reference to the Orleans resource (doesn't include silo capabilities). |
 | `project.WithReference(orleans)` | Adds the Orleans resource reference to a project, enabling configuration injection. |
+
+### Clustering
+
+| Method | Description |
+|--------|-------------|
+| `.WithClustering(resource)` | Configures Orleans clustering to use the specified resource (Redis, Azure Storage, Cosmos DB, etc.). |
+| `.WithDevelopmentClustering()` | Configures in-memory, single-host clustering for local development only. Not suitable for production. |
+
+### Grain storage
+
+| Method | Description |
+|--------|-------------|
+| `.WithGrainStorage(name, resource)` | Configures a named grain storage provider using the specified resource. |
+| `.WithMemoryGrainStorage(name)` | Configures in-memory grain storage for the specified name. Data is lost on silo restart. |
+
+### Reminders
+
+| Method | Description |
+|--------|-------------|
+| `.WithReminders(resource)` | Configures the Orleans reminder service using the specified resource. |
+| `.WithMemoryReminders()` | Configures in-memory reminders for development. Reminders are lost on silo restart. |
+
+### Streaming
+
+| Method | Description |
+|--------|-------------|
+| `.WithStreaming(name, resource)` | Configures a named stream provider using the specified resource (e.g., Azure Queue Storage). |
+| `.WithMemoryStreaming(name)` | Configures in-memory streaming for development. |
+| `.WithBroadcastChannel(name)` | Configures a broadcast channel provider with the specified name. |
+
+### Grain directory
+
+| Method | Description |
+|--------|-------------|
+| `.WithGrainDirectory(name, resource)` | Configures a named grain directory using the specified resource. |
 
 ## Service defaults pattern
 

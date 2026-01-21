@@ -140,6 +140,120 @@ The <xref:Orleans.Clustering.Redis.RedisClusteringOptions> class provides the fo
 > [!IMPORTANT]
 > Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
 
+### .NET Aspire integration for clustering
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+When using [.NET Aspire](../host/aspire-integration.md), you can configure Orleans clustering declaratively in your AppHost project. Aspire automatically injects the necessary configuration into your silo projects via environment variables.
+
+#### Redis clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var redis = builder.AddRedis("redis");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(redis);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(redis);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+#### Azure Table Storage clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage");
+var tables = storage.AddTables("clustering");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(tables);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(tables);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureTableServiceClient("clustering");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!TIP]
+> During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production, configure a real Azure Storage account in your AppHost.
+
+#### Azure Cosmos DB clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var cosmos = builder.AddAzureCosmosDB("cosmos");
+var database = cosmos.AddCosmosDatabase("orleans");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(database);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(database);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureCosmosClient("cosmos");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!NOTE]
+> Aspire's Cosmos DB integration for Orleans currently supports clustering only. For grain storage and reminders with Cosmos DB, you'll need to configure those providers manually in the silo project.
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureCosmosClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
+
+For more information about Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
+
+:::zone-end
+
 ### Configure Cassandra clustering
 
 > [!NOTE]

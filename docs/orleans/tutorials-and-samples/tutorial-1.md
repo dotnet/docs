@@ -3,6 +3,7 @@ title: Minimal Orleans app sample project
 description: Explore the minimal Orleans app sample project.
 ms.date: 03/30/2025
 ms.topic: tutorial
+zone_pivot_groups: orleans-version
 ---
 
 # Tutorial: Create a minimal Orleans application
@@ -10,6 +11,13 @@ ms.topic: tutorial
 In this tutorial, follow step-by-step instructions to create the foundational moving parts common to most Orleans applications. It's designed to be self-contained and minimalistic.
 
 This tutorial lacks appropriate error handling and other essential code useful for a production environment. However, it should help you gain a hands-on understanding of the common Orleans app structure and allow you to focus your continued learning on the parts most relevant to you.
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+> [!TIP]
+> For production-ready Orleans applications, consider using **.NET Aspire** to simplify resource management, service discovery, observability, and deployment. Aspire handles configuration for clustering, grain storage, reminders, and streaming automatically. See [.NET Aspire Orleans integration](../host/aspire-integration.md) to learn more.
+
+:::zone-end
 
 ## Prerequisites
 

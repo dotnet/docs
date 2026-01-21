@@ -32,6 +32,118 @@ Different stream providers delivering events over durable queues exhibit similar
 
 :::zone-end
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## .NET Aspire integration for streaming
+
+[.NET Aspire](../host/aspire-integration.md) simplifies Orleans streaming configuration by managing resource provisioning and connection automatically.
+
+### Azure Queue Storage streaming with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage");
+var queues = storage.AddQueues("streaming");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(builder.AddRedis("redis"))
+    .WithStreaming("AzureQueueProvider", queues);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(queues);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureQueueServiceClient("streaming");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!TIP]
+> During local development, Aspire automatically uses the Azurite emulator for Azure Queue Storage. In production deployments, Aspire connects to your real Azure Storage account based on your Azure deployment configuration.
+
+> [!IMPORTANT]
+> You must call `AddKeyedAzureQueueServiceClient` to register the queue client in the dependency injection container. Orleans streaming providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the queue client and will throw a dependency resolution error at runtime.
+
+### In-memory streaming for development
+
+For local development and testing scenarios, you can use in-memory streaming which doesn't require any external dependencies:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var orleans = builder.AddOrleans("cluster")
+    .WithDevelopmentClustering()
+    .WithMemoryStreaming("MemoryStreamProvider");
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!WARNING]
+> In-memory streams are not durable and are lost when the silo restarts. Use in-memory streaming only for development and testing—never for production workloads that require message durability.
+
+### Broadcast channels with Aspire
+
+Broadcast channels provide a simple pub/sub mechanism for broadcasting messages to all subscribers:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var orleans = builder.AddOrleans("cluster")
+    .WithDevelopmentClustering()
+    .WithBroadcastChannel("BroadcastChannel");
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
+
+:::zone-end
+
 :::zone target="docs" pivot="orleans-3-x"
 
 ## Simple message stream provider

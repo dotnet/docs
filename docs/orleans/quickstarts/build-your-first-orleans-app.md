@@ -4,6 +4,7 @@ description: Learn how to use Orleans to build a scalable, distributed ASP.NET C
 ms.date: 08/14/2024
 ms.topic: quickstart
 ms.devlang: csharp
+zone_pivot_groups: orleans-version
 ---
 
 # Quickstart: Build your first Orleans app with ASP.NET Core
@@ -181,3 +182,69 @@ Test the application in the browser using the following steps:
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://learn.microsoft.com](https://learn.microsoft.com).
 
 ---
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## Next steps: Production-ready Orleans with .NET Aspire
+
+The quickstart above uses in-memory storage and localhost clustering, which works well for development but isn't suitable for production deployments. When you're ready to build production-ready Orleans applications, **.NET Aspire** provides a streamlined approach with:
+
+- **Resource management**: Easily add Redis, Azure Storage, or SQL databases as backing stores for clustering, grain storage, and reminders
+- **Service discovery**: Automatic configuration of Orleans silos and clients without manual endpoint configuration
+- **Observability**: Built-in OpenTelemetry integration for distributed tracing, metrics, and logging
+- **Health checks**: Automatic health check endpoints for your Orleans cluster
+- **Multi-replica support**: Scale your Orleans silos horizontally with `WithReplicas()`
+
+### Quick example with Aspire
+
+Here's how the URL shortener app would look with .NET Aspire and Redis:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+// Add Redis for clustering and grain storage
+var redis = builder.AddRedis("redis");
+
+// Configure Orleans to use Redis
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(redis)
+    .WithGrainStorage("urls", redis);
+
+// Add the Orleans silo project
+builder.AddProject<Projects.OrleansURLShortener>("silo")
+    .WithReference(orleans)
+    .WithReference(redis);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleans();
+
+var app = builder.Build();
+// ... rest of app configuration
+```
+
+With Aspire, Orleans automatically picks up the cluster configuration from environment variables injected by the AppHost, eliminating the need for manual configuration code.
+
+> [!div class="nextstepaction"]
+> [Learn more about Orleans and .NET Aspire integration](../host/aspire-integration.md)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x,orleans-7-0"
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Tutorial: Create a minimal Orleans application](../tutorials-and-samples/tutorial-1.md)
+
+:::zone-end

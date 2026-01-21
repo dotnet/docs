@@ -23,6 +23,56 @@ In this tutorial, you learn how to:
 > - Automate deployment using GitHub Actions and Azure Bicep
 > - Configure HTTP ingress
 
+## Deploy with .NET Aspire (Recommended)
+
+If your Orleans application uses [.NET Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Azure Developer CLI (`azd`). Aspire automatically provisions all required infrastructure and handles the deployment.
+
+### Aspire deployment prerequisites
+
+- [Azure Developer CLI (azd)](/azure/developer/azure-developer-cli/install-azd)
+- [.NET Aspire workload](/dotnet/aspire/fundamentals/setup-tooling)
+- An Azure subscription with permissions to create resources
+
+### Deploy with azd
+
+1. **Initialize the deployment** (first time only):
+
+   ```bash
+   azd init
+   ```
+
+   This command detects your Aspire AppHost project and creates the necessary deployment configuration.
+
+2. **Deploy to Azure**:
+
+   ```bash
+   azd up
+   ```
+
+   This single command provisions all infrastructure and deploys your application.
+
+### What Aspire provisions automatically
+
+When you deploy an Orleans Aspire application to Azure Container Apps, `azd up` automatically provisions:
+
+- **Azure Container Apps environment** - The hosting environment for your containers
+- **Azure Container Registry (ACR)** - For storing your container images
+- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders
+- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming
+- **Azure Monitor / Application Insights** - For observability and distributed tracing
+- **Managed identities** - For secure, passwordless authentication between services
+
+> [!TIP]
+> The `azd up` command handles the entire deployment lifecycle: provisioning infrastructure, building containers, and deploying your application. To update your app after code changes, simply run `azd up` again.
+
+For comprehensive guidance on deploying .NET Aspire applications to Azure, see [Deploy a .NET Aspire project to Azure Container Apps](/dotnet/aspire/deployment/azure/aca-deployment).
+
+---
+
+## Traditional deployment (without Aspire)
+
+The following sections describe how to deploy Orleans to Azure Container Apps using GitHub Actions and Azure Bicep, without .NET Aspire.
+
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)

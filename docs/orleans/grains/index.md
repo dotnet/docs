@@ -63,7 +63,10 @@ public class PlayerGrain : Grain, IPlayerGrain
 
 ## Response timeout for grain methods
 
-The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws a <xref:System.TimeoutException>. To impose a response timeout, add the `ResponseTimeoutAttribute` to the interface's grain method definition. It's crucial to add the attribute to the interface method definition, not the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
+> [!NOTE]
+> The `ResponseTimeoutAttribute` for per-method timeouts was introduced in Orleans 7.2.2.
+
+The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws a <xref:System.TimeoutException>. To impose a response timeout, add the <xref:Orleans.ResponseTimeoutAttribute> to the interface's grain method definition. It's crucial to add the attribute to the interface method definition, not the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
 
 Extending the previous `PlayerGrain` implementation, the following example shows how to impose a response timeout on the `LeaveGame` method:
 
@@ -81,6 +84,21 @@ public interface IPlayerGrain : IGrainWithGuidKey
 
 The preceding code sets a response timeout of five seconds on the `LeaveGame` method. When leaving a game, if it takes longer than five seconds a <xref:System.TimeoutException> is thrown.
 
+You can also specify the timeout using `TimeSpan` constructor parameters:
+
+```csharp
+public interface IDataProcessingGrain : IGrainWithGuidKey
+{
+    // 2 minute timeout using hours, minutes, seconds
+    [ResponseTimeout(0, 2, 0)]
+    Task<ProcessingResult> ProcessLargeDatasetAsync(Dataset data);
+    
+    // 500ms timeout using TimeSpan.FromMilliseconds equivalent
+    [ResponseTimeout("00:00:00.500")]
+    Task<HealthStatus> GetHealthAsync();
+}
+```
+
 ### Configure response timeout
 
 Similar to individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods time out if a response isn't received within the specified period. By default, this period is **30 seconds**. You can configure the default response timeout:
@@ -89,6 +107,15 @@ Similar to individual grain method response timeouts, you can configure a defaul
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.SiloMessagingOptions>, on a server.
 
 For more information on configuring Orleans, see [Client configuration](../host/configuration-guide/client-configuration.md) or [Server configuration](../host/configuration-guide/server-configuration.md).
+
+### Timeout best practices
+
+Consider the following when configuring timeouts:
+
+- **Per-method timeouts override global settings**: A `ResponseTimeoutAttribute` on a grain method takes precedence over the global `ResponseTimeout` configuration.
+- **Set realistic timeouts**: Base timeouts on expected execution time plus reasonable network latency. Timeouts that are too short cause unnecessary failures; timeouts that are too long delay error detection.
+- **Long-running operations**: For operations that may take significant time, consider using Orleans [Reminders](timers-and-reminders.md) or [Durable Jobs](durable-jobs/index.md) instead of extending timeouts indefinitely.
+- **Testing**: Test timeout behavior in your integration tests to ensure your application handles `TimeoutException` gracefully.
 
 ## Return values from grain methods
 
@@ -253,11 +280,13 @@ await foreach (var item in grain.GetAllItemsAsync().WithBatchSize(50))
 | **Persistence** | No | Optional (provider-dependent) |
 
 Use `IAsyncEnumerable<T>` when:
+
 - You need a simple request-response pattern with streaming results
 - The caller initiates the data flow and consumes all results
 - You want automatic backpressure and cancellation support
 
 Use [Orleans Streams](../streaming/index.md) when:
+
 - You need pub-sub messaging with multiple subscribers
 - Subscriptions should survive grain deactivation
 - You need persistent or durable streams

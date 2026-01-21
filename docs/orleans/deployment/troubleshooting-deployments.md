@@ -55,7 +55,7 @@ For detailed Kubernetes troubleshooting, see [Deploy Orleans to Kubernetes](kube
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="Orleans-3-x"
 
 This page provides general guidelines for troubleshooting issues occurring during deployment. These are common issues to watch out for. Check the logs for more detailed information.
 

@@ -13,7 +13,7 @@ Consumers of Orleans rely on various NuGet packages to achieve specific desired 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 <!-- markdownlint-enable MD044 -->
 
-[!INCLUDE [orleans-version-note](../includes/orleans-version-note.md)]
+[!INCLUDE [Orleans-version-note](../includes/orleans-version-note.md)]
 
 ## Key packages
 

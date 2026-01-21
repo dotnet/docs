@@ -18,7 +18,7 @@ Orleans 10.0 extends CancellationToken support to system targets, providing canc
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-9-0,orleans-10-0,orleans-8-0,orleans-7-0,orleans-3-x"
+:::zone target="docs" pivot="Orleans-9-0,Orleans-10-0,Orleans-8-0,Orleans-7-0,Orleans-3-x"
 
 Orleans supports cooperative cancellation in grain methods through the standard <xref:System.Threading.CancellationToken>. This feature lets you stop long-running operations early, cancel work that's no longer needed, and improve your application's responsiveness and resource utilization.
 

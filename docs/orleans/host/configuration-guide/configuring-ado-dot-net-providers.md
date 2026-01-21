@@ -12,7 +12,7 @@ Any reliable deployment of Orleans requires persistent storage to keep system st
 
 To use ADO.NET for persistence, clustering, or reminders, you need to configure the ADO.NET providers as part of the silo configuration and, for clustering, also as part of the client configurations.
 
-:::zone pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+:::zone pivot="Orleans-7-0,Orleans-8-0,Orleans-9-0,Orleans-10-0"
 
 The silo configuration code should look like this:
 
@@ -75,7 +75,7 @@ builder.UseOrleansClient(clientBuilder =>
 
 :::zone-end
 
-:::zone pivot="orleans-3-x"
+:::zone pivot="Orleans-3-x"
 
 The silo configuration code should look like this:
 

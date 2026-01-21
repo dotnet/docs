@@ -63,7 +63,7 @@ In most cases, the default settings are appropriate. However, you might consider
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-7-0,orleans-8-0"
+:::zone target="docs" pivot="Orleans-7-0,Orleans-8-0"
 
 ## Membership protocol configuration
 
@@ -80,7 +80,7 @@ The membership protocol in Orleans 7.0 and 8.0 uses the following default config
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="Orleans-3-x"
 
 ## Membership protocol
 
@@ -94,7 +94,7 @@ For the latest improvements to the membership protocol, consider upgrading to Or
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0,orleans-3-x"
+:::zone target="docs" pivot="Orleans-7-0,Orleans-8-0,Orleans-9-0,Orleans-10-0,Orleans-3-x"
 
 The protocol relies on an external service to provide an abstraction of <xref:Orleans.IMembershipTable>. `IMembershipTable` is a flat, durable table used for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, it stores the current membership view (list of alive silos) and helps coordinate agreement on this view.
 

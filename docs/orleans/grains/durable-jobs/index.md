@@ -303,6 +303,7 @@ siloBuilder.Services.Configure<DurableJobsOptions>(options =>
 ```
 
 The default retry policy uses exponential backoff with up to 5 retries:
+
 - Attempt 1: Retry after 2 seconds
 - Attempt 2: Retry after 4 seconds
 - Attempt 3: Retry after 8 seconds

@@ -667,7 +667,7 @@ Select the files for the database used and apply them in order.
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="Orleans-3-x"
 
 ## Migrate from Orleans 3.x to 7.0
 
@@ -678,4 +678,3 @@ For Orleans 3.x users, follow the migration guidance in the Orleans 7.0 document
 
 :::zone-end
 <!-- markdownlint-enable MD044 -->
-

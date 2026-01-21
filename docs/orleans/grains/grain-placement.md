@@ -364,6 +364,7 @@ Activation repartitioning is a feature that automatically optimizes grain call l
 The repartitioner monitors grain-to-grain communication patterns and builds a graph of "edges" representing how frequently grains communicate. Periodically, it analyzes this graph to identify opportunities to improve locality by migrating grains to silos where their communication partners are located, while maintaining an approximately equal distribution of activations across silos.
 
 Key characteristics:
+
 - **Probabilistic tracking**: Uses a probabilistic data structure to track the heaviest communication links while conserving memory
 - **Balanced distribution**: Attempts to keep activation counts balanced across silos
 - **Recovery period**: After migrating grains, a silo waits before participating in another repartitioning round to allow the system to stabilize
@@ -417,24 +418,26 @@ siloBuilder.Configure<ActivationRepartitionerOptions>(options =>
 ### When to use activation repartitioning
 
 Consider enabling activation repartitioning when:
+
 - Your grains have predictable communication patterns (grain A frequently calls grain B)
 - You have a multi-silo cluster where network latency between silos is significant
 - Benchmarking shows improved throughput with the feature enabled
 
 Avoid activation repartitioning when:
+
 - Grains communicate with many different grains randomly
 - Your cluster is small (2-3 silos) where migration overhead may outweigh benefits
 - Your grains frequently deactivate and reactivate, preventing stable patterns from emerging
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-8-0"
+:::zone target="docs" pivot="Orleans-8-0"
 
 Activation repartitioning was introduced as an experimental feature in Orleans 8.2. For the latest documentation on this feature, see the Orleans 9.0+ documentation.
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+:::zone target="docs" pivot="Orleans-7-0,Orleans-3-x"
 
 Activation repartitioning is available in Orleans 8.2 and later.
 

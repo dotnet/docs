@@ -29,8 +29,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 1. Create the `DataService` grain service. It's helpful to know that you can also inject an <xref:Orleans.IGrainFactory> so you can make grain calls from your `GrainService`.
 
-        :::zone target="docs" pivot="orleans-7-0"
-    
+    :::zone target="docs" pivot="orleans-7-0"
+
     ```csharp
     [Reentrant]
     public class DataService : GrainService, IDataService
@@ -65,8 +65,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-        :::zone target="docs" pivot="orleans-3-x"
-    
+    :::zone target="docs" pivot="orleans-3-x"
+
     ```csharp
     [Reentrant]
     public class DataService : GrainService, IDataService
@@ -143,8 +143,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 1. Configure the grain service and grain service client in the silo. You need to do this so the silo starts the `GrainService`.
 
-        :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-    
+    :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
     ```csharp
     builder.UseOrleans(siloBuilder =>
     {
@@ -158,8 +158,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-        :::zone target="docs" pivot="orleans-3-x"
-    
+    :::zone target="docs" pivot="orleans-3-x"
+
     ```csharp
     (ISiloHostBuilder builder) =>
         builder.ConfigureServices(

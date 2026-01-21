@@ -26,17 +26,33 @@ For information on installing NuGet packages, see the following options:
 - [.NET CLI: dotnet package add](../../core/tools/dotnet-package-add.md)
 - [Ways to install a NuGet package](/nuget/consume-packages/overview-and-workflow#ways-to-install-a-nuget-package)
 
-## Orleans Dashboard (Orleans 10.0+)
+:::zone-end
+
+:::zone target="docs" pivot="orleans-10-0"
+
+## Orleans Dashboard
 
 The official Orleans Dashboard provides real-time cluster monitoring and visualization.
 
-| NuGet package | Status | Description |
-|---|---|---|
-| [Microsoft.Orleans.Dashboard](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard) | Stable | Orleans Dashboard for real-time cluster monitoring and visualization. |
-| [Microsoft.Orleans.Dashboard.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard.Abstractions) | Stable | Abstractions for Orleans Dashboard. |
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Dashboard](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard) | Orleans Dashboard for real-time cluster monitoring and visualization. |
+| [Microsoft.Orleans.Dashboard.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard.Abstractions) | Abstractions for Orleans Dashboard. |
 
 > [!NOTE]
 > For more information, see [Orleans Dashboard](../dashboard/index.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0,orleans-8-0"
+
+## Tools
+
+One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
 ## Hosting
 
@@ -146,8 +162,6 @@ The following packages are deprecated and should not be used in new Orleans 7.0+
 | Microsoft.Orleans.CodeGenerator.MSBuild | Source generators (automatic) | Replaced by compile-time source generators in Orleans 7.0. |
 | Microsoft.Orleans.OrleansRuntime | Microsoft.Orleans.Server | Use the Server metapackage instead. |
 | Microsoft.Orleans.OrleansServiceBus | Microsoft.Orleans.Streaming.EventHubs | Use the EventHubs streaming package instead. |
-| Microsoft.Orleans.Core | Microsoft.Orleans.Sdk | Use the Sdk package instead. |
-| Microsoft.Orleans.Core.Abstractions | Microsoft.Orleans.Sdk | Use the Sdk package instead. |
 
 :::zone-end
 
@@ -249,9 +263,6 @@ For information on installing NuGet packages, see the following options:
 ## Tools
 
 One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
-
-> [!TIP]
-> In Orleans 10.0+, an official [Microsoft.Orleans.Dashboard](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard) package is available. See [Orleans Dashboard](../dashboard/index.md) for more information.
 
 :::zone-end
 

@@ -19,6 +19,12 @@ This tutorial lacks appropriate error handling and other essential code useful f
 
 :::zone-end
 
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
+<!-- This zone intentionally left empty to satisfy pivot validation -->
+
+:::zone-end
+
 ## Prerequisites
 
 - [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads)

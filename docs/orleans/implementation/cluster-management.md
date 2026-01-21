@@ -140,9 +140,11 @@ The <xref:Orleans.Clustering.Redis.RedisClusteringOptions> class provides the fo
 > [!IMPORTANT]
 > Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
 
-### .NET Aspire integration for clustering
+:::zone-end
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+### .NET Aspire integration for clustering
 
 When using [.NET Aspire](../host/aspire-integration.md), you can configure Orleans clustering declaratively in your AppHost project. Aspire automatically injects the necessary configuration into your silo projects via environment variables.
 
@@ -253,6 +255,8 @@ builder.Build().Run();
 For more information about Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
 
 :::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0,orleans-3-x"
 
 ### Configure Cassandra clustering
 

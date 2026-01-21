@@ -19,12 +19,8 @@ There are several key aspects of silo configuration:
 - (Optional) Orleans clustering information
 - (Optional) Endpoints for silo-to-silo and client-to-silo communications
 
-:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
-
 > [!TIP]
-> If you're using [.NET Aspire](../aspire-integration.md), most of this configuration is handled automatically. Aspire injects `ClusterId`, `ServiceId`, and endpoint configuration via environment variables, so you can use the simpler parameterless `UseOrleans()` method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
-
-:::zone-end
+> If you're using [.NET Aspire](../aspire-integration.md) (Orleans 8.0+), most of this configuration is handled automatically. Aspire injects `ClusterId`, `ServiceId`, and endpoint configuration via environment variables, so you can use the simpler parameterless `UseOrleans()` method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
 
 This example shows a silo configuration defining cluster information and using Azure Table Storage for clustering:
 

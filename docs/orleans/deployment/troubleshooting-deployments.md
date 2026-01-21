@@ -44,7 +44,6 @@ Ensure logging is configured properly. Orleans uses the standard `ILogger` abstr
 
 ```csharp
 builder.Logging.SetMinimumLevel(LogLevel.Information);
-builder.Logging.AddFilter("Orleans", LogLevel.Warning);
 ```
 
 ## Container and Kubernetes troubleshooting

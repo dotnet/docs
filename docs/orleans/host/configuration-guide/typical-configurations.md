@@ -46,7 +46,7 @@ var silo = new HostBuilder()
             options.ConfigureTableServiceClient(endpoint, credential);
         })
         .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     })
     .Build();
 ```
@@ -109,7 +109,7 @@ var silo = new HostBuilder()
         .UseAzureStorageClustering(
             options => options.ConfigureTableServiceClient(connectionString))
         .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     })
     .Build();
 ```
@@ -168,7 +168,7 @@ var silo = new SiloHostBuilder()
     .UseAzureStorageClustering(
         options => options.ConnectionString = connectionString)
     .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     .Build();
 ```
 
@@ -217,7 +217,7 @@ var silo = new HostBuilder()
           options.Invariant = "Microsoft.Data.SqlClient"; // Orleans 10.0+
         })
         .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     })
     .Build();
 ```
@@ -240,7 +240,7 @@ var silo = new HostBuilder()
           options.Invariant = "System.Data.SqlClient";
         })
         .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     })
     .Build();
 ```
@@ -339,7 +339,7 @@ var silo = new SiloHostBuilder()
       options.Invariant = "System.Data.SqlClient";
     })
     .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
     .Build();
 ```
 

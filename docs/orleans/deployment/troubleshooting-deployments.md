@@ -51,7 +51,7 @@ builder.Logging.SetMinimumLevel(LogLevel.Information);
 For container-based deployments (Docker, Kubernetes, Azure Container Apps):
 
 - **Pod scheduling issues**: Check resource requests and limits are appropriate for your workload.
-- **Service discovery failures**: Verify DNS resolution and service endpoint configuration.
+- **Clustering provider connectivity**: Ensure all silos can connect to the configured clustering provider (Redis, Azure Storage, SQL Server, etc.).
 - **Silo endpoint configuration**: Ensure `SiloPort` and `GatewayPort` are correctly exposed and mapped.
 - **Liveness and readiness probes**: Configure appropriate health check endpoints.
 

@@ -194,14 +194,16 @@ The [Microsoft.Orleans.OrleansRuntime](https://www.nuget.org/packages/Microsoft.
 For this to work, you must register both the service and its client. The code looks something like this:
 
 ```csharp
-var builder = new HostBuilder()
-    .UseOrleans(c =>
-    {
-        c.AddGrainService<DataService>()  // Register GrainService
-        .ConfigureServices(services =>
-        {
-            // Register Client of GrainService
-            services.AddSingleton<IDataServiceClient, DataServiceClient>();
-        });
-    });
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddGrainService<DataService>();  // Register GrainService
+});
+
+// Register Client of GrainService
+builder.Services.AddSingleton<IDataServiceClient, DataServiceClient>();
+
+using var host = builder.Build();
+await host.RunAsync();
 ```

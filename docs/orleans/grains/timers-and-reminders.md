@@ -229,12 +229,15 @@ Azure Table configuration:
 ```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
-    {
-        builder.UseAzureTableReminderService(connectionString)
-    })
-    .Build();
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseAzureTableReminderService(connectionString);
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 SQL:
@@ -242,27 +245,32 @@ SQL:
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 const string invariant = "YOUR_INVARIANT";
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseAdoNetReminderService(options =>
     {
-        builder.UseAdoNetReminderService(options =>
-        {
-            options.ConnectionString = connectionString; // Redacted
-            options.Invariant = invariant;
-        });
-    })
-    .Build();
+        options.ConnectionString = connectionString; // Redacted
+        options.Invariant = invariant;
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
  If you just want a placeholder implementation of reminders to work without needing to set up an Azure account or SQL database, this provides a development-only implementation of the reminder system:
 
 ```csharp
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
-    {
-        builder.UseInMemoryReminderService();
-    })
-    .Build();
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseInMemoryReminderService();
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 Redis:
@@ -270,19 +278,21 @@ Redis:
 ```csharp
 using StackExchange.Redis;
 
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseRedisReminderService(options =>
     {
-        builder.UseRedisReminderService(options =>
+        options.ConfigurationOptions = new ConfigurationOptions
         {
-            options.ConfigurationOptions = new ConfigurationOptions
-            {
-                EndPoints = { "localhost:6379" },
-                AbortOnConnectFail = false
-            };
-        });
-    })
-    .Build();
+            EndPoints = { "localhost:6379" },
+            AbortOnConnectFail = false
+        };
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 The <xref:Orleans.Configuration.RedisReminderTableOptions> class provides the following configuration options:
@@ -303,20 +313,22 @@ Install the [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/
 ```csharp
 using Azure.Identity;
 
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseCosmosReminderService(options =>
     {
-        builder.UseCosmosReminderService(options =>
-        {
-            options.ConfigureCosmosClient(
-                "https://myaccount.documents.azure.com:443/",
-                new DefaultAzureCredential());
-            options.DatabaseName = "Orleans";
-            options.ContainerName = "OrleansReminders";
-            options.IsResourceCreationEnabled = true;
-        });
-    })
-    .Build();
+        options.ConfigureCosmosClient(
+            "https://myaccount.documents.azure.com:443/",
+            new DefaultAzureCredential());
+        options.DatabaseName = "Orleans";
+        options.ContainerName = "OrleansReminders";
+        options.IsResourceCreationEnabled = true;
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 The <xref:Orleans.Reminders.Cosmos.CosmosReminderTableOptions> class provides the following configuration options:

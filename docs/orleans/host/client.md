@@ -76,43 +76,43 @@ using Azure.Identity;
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
 var credential = new DefaultAzureCredential();
 
-// Alternatively, call Host.CreateDefaultBuilder(args) if using the
-// Microsoft.Extensions.Hosting NuGet package.
-using IHost host = new HostBuilder()
-    .UseOrleansClient(clientBuilder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        });
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
+    });
 
-        clientBuilder.UseAzureStorageClustering(options =>
-        {
-            options.ConfigureTableServiceClient(endpoint, credential);
-        });
-    })
-    .Build();
+    clientBuilder.UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(endpoint, credential);
+    });
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
 ### [Connection string](#tab/connection-string)
 
 ```csharp
-// Alternatively, call Host.CreateDefaultBuilder(args) if using the
-// Microsoft.Extensions.Hosting NuGet package.
-using IHost host = new HostBuilder()
-    .UseOrleansClient(clientBuilder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        });
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
+    });
 
-        clientBuilder.UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(connectionString))
-    })
-    .Build();
+    clientBuilder.UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(connectionString));
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
 ---

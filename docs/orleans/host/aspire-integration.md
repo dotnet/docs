@@ -39,9 +39,9 @@ Your solution needs the following package references:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
-  <PackageReference Include="Aspire.Hosting.Orleans" Version="9.0.0" />
-  <PackageReference Include="Aspire.Hosting.Redis" Version="9.0.0" />
+  <PackageReference Include="Aspire.Hosting.AppHost" Version="13.1.0" />
+  <PackageReference Include="Aspire.Hosting.Orleans" Version="13.1.0" />
+  <PackageReference Include="Aspire.Hosting.Redis" Version="13.1.0" />
 </ItemGroup>
 ```
 
@@ -51,7 +51,7 @@ Your solution needs the following package references:
 <ItemGroup>
   <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
   <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-  <PackageReference Include="Aspire.StackExchange.Redis" Version="9.0.0" />
+  <PackageReference Include="Aspire.StackExchange.Redis" Version="13.1.0" />
 </ItemGroup>
 ```
 
@@ -61,7 +61,7 @@ Your solution needs the following package references:
 <ItemGroup>
   <PackageReference Include="Microsoft.Orleans.Client" Version="10.0.0" />
   <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-  <PackageReference Include="Aspire.StackExchange.Redis" Version="9.0.0" />
+  <PackageReference Include="Aspire.StackExchange.Redis" Version="13.1.0" />
 </ItemGroup>
 ```
 
@@ -167,6 +167,9 @@ builder.UseOrleans(siloBuilder =>
 
 builder.Build().Run();
 ```
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableClient`, or `AddKeyedAzureBlobClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime. This applies to all Aspire-managed resources used with Orleans.
 
 ### Configure with explicit connection string
 

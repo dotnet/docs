@@ -157,49 +157,52 @@ var tableEndpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
 var blobEndpoint = new Uri(configuration["AZURE_BLOB_STORAGE_ENDPOINT"]!);
 var credential = new DefaultAzureCredential();
 
-using IHost host = new HostBuilder()
-    .UseOrleans(siloBuilder =>
-    {
-        siloBuilder.AddAzureTableGrainStorage(
-            name: "profileStore",
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddAzureTableGrainStorage(
+        name: "profileStore",
+        configureOptions: options =>
+        {
+            options.ConfigureTableServiceClient(tableEndpoint, credential);
+        })
+        .AddAzureBlobGrainStorage(
+            name: "cartStore",
             configureOptions: options =>
             {
-                options.ConfigureTableServiceClient(tableEndpoint, credential);
-            })
-            .AddAzureBlobGrainStorage(
-                name: "cartStore",
-                configureOptions: options =>
-                {
-                    options.ConfigureBlobServiceClient(blobEndpoint, credential);
-                });
-    })
-    .Build();
+                options.ConfigureBlobServiceClient(blobEndpoint, credential);
+            });
+});
+
+using var host = builder.Build();
 ```
 
 ### [Connection string](#tab/connection-string)
 
+> [!WARNING]
+> Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
+
 ```csharp
-using IHost host = new HostBuilder()
-    .UseOrleans(siloBuilder =>
-    {
-        siloBuilder.AddAzureTableGrainStorage(
-            name: "profileStore",
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddAzureTableGrainStorage(
+        name: "profileStore",
+        configureOptions: options =>
+        {
+            options.ConfigureTableServiceClient(
+                "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
+        })
+        .AddAzureBlobGrainStorage(
+            name: "cartStore",
             configureOptions: options =>
             {
-                // Configure the storage connection key
-                options.ConfigureTableServiceClient(
-                    "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
-            })
-            .AddAzureBlobGrainStorage(
-                name: "cartStore",
-                configureOptions: options =>
-                {
-                    // Configure the storage connection key
-                    options.ConfigureBlobServiceClient(
-                        "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
-                });
-    })
-    .Build();
+                options.ConfigureBlobServiceClient(
+                    "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
+            });
+});
+
+using var host = builder.Build();
 ```
 
 ---
@@ -484,7 +487,7 @@ To register a named instance of `IGrainStorage`, use the <xref:Orleans.Runtime.K
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-[Redis](https://redis.io) is a popular in-memory data store that can be used for grain persistence. The `Microsoft.Orleans.Persistence.Redis` package provides a grain storage provider backed by Redis.
+[Redis](https://redis.io) is a popular in-memory data store that can be used for grain persistence. The [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis) package provides a grain storage provider backed by Redis.
 
 ### Configure Redis grain storage
 
@@ -493,21 +496,22 @@ Configure Redis grain storage using the <xref:Orleans.Hosting.RedisSiloBuilderEx
 ```csharp
 using StackExchange.Redis;
 
-using IHost host = new HostBuilder()
-    .UseOrleans(siloBuilder =>
-    {
-        siloBuilder.AddRedisGrainStorage(
-            name: "redis",
-            configureOptions: options =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddRedisGrainStorage(
+        name: "redis",
+        configureOptions: options =>
+        {
+            options.ConfigurationOptions = new ConfigurationOptions
             {
-                options.ConfigurationOptions = new ConfigurationOptions
-                {
-                    EndPoints = { "localhost:6379" },
-                    AbortOnConnectFail = false
-                };
-            });
-    })
-    .Build();
+                EndPoints = { "localhost:6379" },
+                AbortOnConnectFail = false
+            };
+        });
+});
+
+using var host = builder.Build();
 ```
 
 To configure Redis as the default grain storage provider, use <xref:Orleans.Hosting.RedisSiloBuilderExtensions.AddRedisGrainStorageAsDefault%2A>:
@@ -537,19 +541,29 @@ The <xref:Orleans.Persistence.RedisStorageOptions> class provides the following 
 
 ### .NET Aspire integration
 
-When using [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource. Configure the `CreateMultiplexer` delegate to use a connection multiplexer from dependency injection:
+When using [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource.
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`) in your silo project to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
 
 ```csharp
 // In your AppHost project
 var redis = builder.AddRedis("orleans-redis");
 
-var orleans = builder.AddProject<Projects.OrleansServer>("silo")
-    .WithReference(redis);
+var orleans = builder.AddOrleans("cluster")
+    .WithGrainStorage("Default", redis);
+
+builder.AddProject<Projects.OrleansServer>("silo")
+    .WithReference(orleans)
+    .WaitFor(redis);
 ```
 
 ```csharp
 // In your Orleans silo project
 using StackExchange.Redis;
+
+// Register the Redis client with keyed services - required for Orleans to resolve it
+builder.AddKeyedRedisClient("orleans-redis");
 
 builder.UseOrleans(siloBuilder =>
 {
@@ -567,6 +581,9 @@ builder.UseOrleans(siloBuilder =>
 For more advanced scenarios, you can inject the `IConnectionMultiplexer` directly using the `CreateMultiplexer` delegate:
 
 ```csharp
+// Register the Redis client with keyed services first
+builder.AddKeyedRedisClient("orleans-redis");
+
 siloBuilder.AddRedisGrainStorage("redis");
 siloBuilder.Services.AddOptions<RedisStorageOptions>("redis")
     .Configure<IServiceProvider>((options, sp) =>

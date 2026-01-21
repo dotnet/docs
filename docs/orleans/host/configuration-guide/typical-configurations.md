@@ -33,22 +33,24 @@ using Azure.Identity;
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
 var credential = new DefaultAzureCredential();
 
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<ClusterOptions>(options =>
     {
-        builder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAzureStorageClustering(options =>
-        {
-            options.ConfigureTableServiceClient(endpoint, credential);
-        })
-        .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
     })
-    .Build();
+    .UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(endpoint, credential);
+    })
+    .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000);
+});
+
+builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
+
+using var host = builder.Build();
 ```
 
 Client configuration:
@@ -59,18 +61,21 @@ using Azure.Identity;
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
 var credential = new DefaultAzureCredential();
 
-using var host = Host.CreateDefaultBuilder(args)
-    .UseOrleansClient(clientBuilder =>
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAzureStorageClustering(options =>
-        {
-            options.ConfigureTableServiceClient(endpoint, credential);
-        }))
-    .Build();
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
+    })
+    .UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(endpoint, credential);
+    });
+});
+
+using var host = builder.Build();
 ```
 
 > [!NOTE]
@@ -99,20 +104,23 @@ Silo configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<ClusterOptions>(options =>
     {
-        builder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(connectionString))
-        .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
     })
-    .Build();
+    .UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(connectionString))
+    .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000);
+});
+
+builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
+
+using var host = builder.Build();
 ```
 
 Client configuration:
@@ -120,16 +128,19 @@ Client configuration:
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 
-using var host = Host.CreateDefaultBuilder(args)
-    .UseOrleansClient(clientBuilder =>
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(connectionString)))
-    .Build();
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
+    })
+    .UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(connectionString));
+});
+
+using var host = builder.Build();
 ```
 
 ---
@@ -204,46 +215,52 @@ For a reliable production deployment using SQL Server, supply a SQL Server conne
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<ClusterOptions>(options =>
     {
-        builder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAdoNetClustering(options =>
-        {
-          options.ConnectionString = connectionString;
-          options.Invariant = "Microsoft.Data.SqlClient"; // Orleans 10.0+
-        })
-        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
     })
-    .Build();
+    .UseAdoNetClustering(options =>
+    {
+        options.ConnectionString = connectionString;
+        options.Invariant = "Microsoft.Data.SqlClient"; // Orleans 10.0+
+    })
+    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000);
+});
+
+builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
+
+using var host = builder.Build();
 ```
 
 ### [Orleans 7.0-9.x](#tab/orleans-7)
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<ClusterOptions>(options =>
     {
-        builder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAdoNetClustering(options =>
-        {
-          options.ConnectionString = connectionString;
-          options.Invariant = "System.Data.SqlClient";
-        })
-        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
     })
-    .Build();
+    .UseAdoNetClustering(options =>
+    {
+        options.ConnectionString = connectionString;
+        options.Invariant = "System.Data.SqlClient";
+    })
+    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000);
+});
+
+builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
+
+using var host = builder.Build();
 ```
 
 ---
@@ -253,20 +270,25 @@ Client configuration:
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 
-using var host = Host.CreateDefaultBuilder(args)
-    .UseOrleansClient(clientBuilder =>
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .UseAdoNetClustering(options =>
-        {
-          options.ConnectionString = connectionString;
-          // Use "Microsoft.Data.SqlClient" for Orleans 10.0+
-          // Use "System.Data.SqlClient" for Orleans 7.0-9.x
-          options.Invariant = "Microsoft.Data.SqlClient";
-        }))
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
+    })
+    .UseAdoNetClustering(options =>
+    {
+        options.ConnectionString = connectionString;
+        // Use "Microsoft.Data.SqlClient" for Orleans 10.0+
+        // Use "System.Data.SqlClient" for Orleans 7.0-9.x
+        options.Invariant = "Microsoft.Data.SqlClient";
+    });
+});
+
+using var host = builder.Build();
+```
     .Build();
 ```
 
@@ -278,20 +300,23 @@ On the silos:
 
 ```csharp
 var primarySiloEndpoint = new IPEndPoint(PRIMARY_SILO_IP_ADDRESS, 11_111);
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
-    {
-        builder
-            .UseDevelopmentClustering(primarySiloEndpoint)
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "Cluster42";
-                options.ServiceId = "MyAwesomeService";
-            })
-            .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
-            .ConfigureLogging(logging => logging.AddConsole())
-    })
-    .Build();
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder
+        .UseDevelopmentClustering(primarySiloEndpoint)
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000);
+});
+builder.Logging.AddConsole();
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 On the clients:
@@ -305,15 +330,19 @@ var gateways = new IPEndPoint[]
     new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30_000),
 };
 
-using var host = Host.CreateDefaultBuilder(args)
-    .UseOrleansClient(clientBuilder =>
-        clientBuilder.UseStaticClustering(gateways)
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "Cluster42";
-                options.ServiceId = "MyAwesomeService";
-            }))
-    .Build();
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.UseStaticClustering(gateways)
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        });
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
 :::zone-end

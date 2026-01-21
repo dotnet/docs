@@ -46,38 +46,42 @@ using Azure.Identity;
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
 var credential = new DefaultAzureCredential();
 
-var client = new HostBuilder()
-    .UseOrleansClient((context, clientBuilder) =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        })
-        .UseAzureStorageClustering(options =>
-        {
-            options.ConfigureTableServiceClient(endpoint, credential);
-        });
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
     })
-    .Build();
+    .UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(endpoint, credential);
+    });
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
 ### [Connection string](#tab/connection-string)
 
 ```csharp
-var client = new HostBuilder()
-    .UseOrleansClient((context, clientBuilder) =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        })
-        .UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(
-                context.Configuration["ORLEANS_AZURE_STORAGE_CONNECTION_STRING"]));
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
     })
-    .Build();
+    .UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(
+            builder.Configuration["ORLEANS_AZURE_STORAGE_CONNECTION_STRING"]));
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
 ---

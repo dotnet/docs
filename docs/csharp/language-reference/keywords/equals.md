@@ -1,23 +1,22 @@
 ---
 description: "equals contextual keyword - C# Reference"
 title: "equals contextual keyword"
-ms.date: 07/20/2015
+ms.date: 01/21/2026
 f1_keywords: 
   - "equals_CSharpKeyword"
   - "equals"
 helpviewer_keywords: 
   - "equals keyword [C#]"
-ms.assetid: e981309a-e4bf-444c-8a2b-5c695e6114b1
 ---
 # equals (C# Reference)
 
-The `equals` contextual keyword is used in a `join` clause in a query expression to compare the elements of two sequences. For more information, see [join clause](join-clause.md).
+Use the `equals` contextual keyword in a `join` clause of a query expression to compare the elements of two sequences. For more information, see [join clause](join-clause.md).
 
-## Example
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows the use of the `equals` keyword in a `join` clause.
+The following example shows how to use the `equals` keyword in a `join` clause.
 
-[!code-csharp[csrefKeywordsContextual#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#12)]
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs" id="12":::
 
 ## See also
 

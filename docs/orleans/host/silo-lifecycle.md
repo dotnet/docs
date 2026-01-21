@@ -113,7 +113,7 @@ From the preceding implementation, you can see that in the `Participate(...)` ca
 
 For this, you only need to register it in the container. Do this using an extension function on the silo builder:
 
-:::zone pivot="Orleans-7-0,Orleans-8-0,Orleans-9-0,Orleans-10-0"
+:::zone pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 ```csharp
 public static ISiloBuilder AddStartupTask(
@@ -133,7 +133,7 @@ public static ISiloBuilder AddStartupTask(
 
 :::zone-end
 
-:::zone pivot="Orleans-3-x"
+:::zone pivot="orleans-3-x"
 
 ```csharp
 public static ISiloHostBuilder AddStartupTask(

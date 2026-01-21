@@ -386,7 +386,7 @@ Consider upgrading to Orleans 8.0 or later to take advantage of the Aspire integ
 
 :::zone-end
 
-:::zone target="docs" pivot="Orleans-3-x"
+:::zone target="docs" pivot="orleans-3-x"
 
 .NET Aspire integration is available in Orleans 8.0 and later. Orleans 3.x does not support .NET Aspire.
 

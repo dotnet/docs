@@ -185,7 +185,7 @@ For more information about using cancellation tokens in Orleans, see [Use cancel
 
 :::zone-end
 
-:::zone target="docs" pivot="Orleans-7-0,Orleans-8-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0"
 
 CancellationToken support for observers was introduced in Orleans 9.0. For earlier versions, you can use `GrainCancellationToken` as a workaround, but direct `CancellationToken` support in observer methods isn't available.
 
@@ -193,7 +193,7 @@ For full CancellationToken support, consider upgrading to Orleans 9.0 or later.
 
 :::zone-end
 
-:::zone target="docs" pivot="Orleans-3-x"
+:::zone target="docs" pivot="orleans-3-x"
 
 CancellationToken support for observers is available in Orleans 9.0 and later. Orleans 3.x uses the legacy `GrainCancellationToken` mechanism for cancellation.
 

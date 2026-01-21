@@ -431,13 +431,13 @@ Avoid activation repartitioning when:
 
 :::zone-end
 
-:::zone target="docs" pivot="Orleans-8-0"
+:::zone target="docs" pivot="orleans-8-0"
 
 Activation repartitioning was introduced as an experimental feature in Orleans 8.2. For the latest documentation on this feature, see the Orleans 9.0+ documentation.
 
 :::zone-end
 
-:::zone target="docs" pivot="Orleans-7-0,Orleans-3-x"
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
 
 Activation repartitioning is available in Orleans 8.2 and later.
 

@@ -11,8 +11,6 @@ Consumers of Orleans rely on various NuGet packages to achieve specific desired 
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
-[!INCLUDE [Orleans-version-note](../includes/orleans-version-note.md)]
-
 ## Key packages
 
 You reference one of two mutually exclusive NuGet packages when writing Orleans apps, depending on the chosen workload. For example, when you write an Orleans Silo, you'll reference the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. When you write an Orleans Client app, you'll reference the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. All Orleans projects, such as abstractions or grain class libraries, reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package. The `Microsoft.Orleans.Sdk` package is included with both the `Client` and `Server` packages.

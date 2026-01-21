@@ -12,20 +12,17 @@ Orleans provides cluster management via a built-in membership protocol, sometime
 
 :::zone target="docs" pivot="orleans-9-0,orleans-10-0"
 
-## Membership protocol improvements in Orleans 9.0
+## Membership protocol configuration
 
-Orleans 9.0 includes significant improvements to the membership protocol that result in faster failure detection and improved cluster stability:
+The membership protocol uses the following default configuration:
 
-| Aspect | Orleans 7.0/8.0 | Orleans 9.0+ |
-|--------|-----------------|--------------|
-| **Monitored silos per node** | 3 | 10 |
-| **Typical failure detection time** | Up to 10 minutes | Approximately 90 seconds |
-| **Default probe period** | 10 seconds | 10 seconds |
-| **Default missed probes before suspicion** | 3 | 3 |
+- Every silo is monitored by 10 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+- Probes are sent every 10 seconds
+- 3 missed probes trigger a suspicion
 
-### Faster failure detection
-
-The increase in monitored silos from 3 to 10 dramatically improves failure detection time. With more silos monitoring each node, failures are detected and agreed upon more quickly, reducing the time window where requests might be routed to failed nodes.
+With these defaults, typical failure detection time is approximately 15 seconds. In disaster recovery scenarios where silos crash without proper cleanup, the cluster uses the `IAmAlive` timestamp (updated every 30 seconds by default) to recover; silos that haven't updated their timestamp for several periods are ignored during startup connectivity checks.
 
 ### Configuration
 
@@ -34,7 +31,7 @@ You can configure membership protocol settings using `ClusterMembershipOptions`:
 ```csharp
 siloBuilder.Configure<ClusterMembershipOptions>(options =>
 {
-    // Number of silos each silo monitors (default: 10 in Orleans 9.0+)
+    // Number of silos each silo monitors (default: 10)
     options.NumProbedSilos = 10;
 
     // Number of suspicions required to declare a silo dead (default: 2)
@@ -65,7 +62,7 @@ In most cases, the default settings are appropriate. However, you might consider
 
 ## Membership protocol configuration
 
-The membership protocol in Orleans 7.0 and 8.0 uses the following default configuration:
+The membership protocol uses the following default configuration:
 
 - Every silo is monitored by 3 other silos
 - 2 suspicions are required to declare a silo dead
@@ -73,22 +70,17 @@ The membership protocol in Orleans 7.0 and 8.0 uses the following default config
 - Probes are sent every 10 seconds
 - 3 missed probes trigger a suspicion
 
-> [!TIP]
-> Orleans 9.0 includes significant improvements to the membership protocol, including faster failure detection (approximately 90 seconds vs up to 10 minutes) and increased monitored silos (10 vs 3). Consider upgrading for improved cluster stability.
-
 :::zone-end
 
 :::zone target="docs" pivot="orleans-3-x"
 
-## Membership protocol
+## Membership protocol configuration
 
-The membership protocol in Orleans 3.x uses the following default configuration:
+The membership protocol uses the following default configuration:
 
 - Every silo is monitored by 3 other silos
 - 2 suspicions are required to declare a silo dead
 - Suspicions are valid for 3 minutes
-
-For the latest improvements to the membership protocol, consider upgrading to Orleans 9.0 or later.
 
 :::zone-end
 

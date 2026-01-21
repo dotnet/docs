@@ -29,7 +29,7 @@ Anti-forgery token validation is a recommended security precaution for APIs that
 
 ## Recommended action
 
-Configure anti-forgery services and middleware for Minimal API endpoints that bind `IFormFile` or `IFormFileCollection` parameters. Without this configuration, the application will fail at startup due to missing anti-forgery validation. 
+Configure anti-forgery services and middleware for Minimal API endpoints that bind `IFormFile` or `IFormFileCollection` parameters. Without this configuration, the application will fail at startup due to missing anti-forgery validation.
 
 For detailed guidance on how to properly configure and use anti-forgery tokens in Minimal APIs, see [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core](/aspnet/core/security/anti-request-forgery). The article covers:
 

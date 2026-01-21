@@ -2,6 +2,7 @@
 title: "Breaking change: Custom converters for serialization removed"
 description: Learn about the breaking change in ASP.NET Core 8.0 where 'ValidationProblemDetails' and 'ProblemDetails' no longer use custom converters.
 ms.date: 05/03/2023
+ms.custom: https://github.com/aspnet/Announcements/issues/504
 ---
 # Custom converters for serialization removed
 

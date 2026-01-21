@@ -1,12 +1,28 @@
 ---
 title: Use cancellation tokens in Orleans grains
 description: Learn how to implement cooperative cancellation in Orleans grain methods.
-ms.date: 05/30/2025
+ms.date: 01/21/2026
+zone_pivot_groups: orleans-version
 ---
 
 # Use cancellation tokens in Orleans grains
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+Orleans 10.0 extends CancellationToken support to system targets, providing cancellation capabilities throughout the Orleans framework. System targets are internal components used by the Orleans runtime for cluster coordination, streaming, and other infrastructure operations.
+
+> [!TIP]
+> If you're implementing custom system targets or extending Orleans internals, you can now use standard `CancellationToken` parameters in your system target methods just as you would in grain methods.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0,orleans-10-0,orleans-8-0,orleans-7-0,orleans-3-x"
+
 Orleans supports cooperative cancellation in grain methods through the standard <xref:System.Threading.CancellationToken>. This feature lets you stop long-running operations early, cancel work that's no longer needed, and improve your application's responsiveness and resource utilization.
+
+:::zone-end
 
 ## Overview
 

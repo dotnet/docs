@@ -1,13 +1,100 @@
 ---
 title: Cluster management in Orleans
 description: Learn about cluster management in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: article
+zone_pivot_groups: orleans-version
 ---
 
 # Cluster management in Orleans
 
 Orleans provides cluster management via a built-in membership protocol, sometimes referred to as **Cluster membership**. The goal of this protocol is for all silos (Orleans servers) to agree on the set of currently alive silos, detect failed silos, and allow new silos to join the cluster.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-9-0,orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+## Membership protocol improvements in Orleans 9.0
+
+Orleans 9.0 includes significant improvements to the membership protocol that result in faster failure detection and improved cluster stability:
+
+| Aspect | Orleans 7.0/8.0 | Orleans 9.0+ |
+|--------|-----------------|--------------|
+| **Monitored silos per node** | 3 | 10 |
+| **Typical failure detection time** | Up to 10 minutes | Approximately 90 seconds |
+| **Default probe period** | 10 seconds | 10 seconds |
+| **Default missed probes before suspicion** | 3 | 3 |
+
+### Faster failure detection
+
+The increase in monitored silos from 3 to 10 dramatically improves failure detection time. With more silos monitoring each node, failures are detected and agreed upon more quickly, reducing the time window where requests might be routed to failed nodes.
+
+### Configuration
+
+You can configure membership protocol settings using `ClusterMembershipOptions`:
+
+```csharp
+siloBuilder.Configure<ClusterMembershipOptions>(options =>
+{
+    // Number of silos each silo monitors (default: 10 in Orleans 9.0+)
+    options.NumProbedSilos = 10;
+
+    // Number of suspicions required to declare a silo dead (default: 2)
+    options.NumVotesForDeathDeclaration = 2;
+
+    // Time window for suspicions to be valid (default: 180 seconds)
+    options.DeathVoteExpirationTimeout = TimeSpan.FromSeconds(180);
+
+    // Interval between probes (default: 10 seconds)
+    options.ProbeTimeout = TimeSpan.FromSeconds(10);
+
+    // Number of missed probes before suspecting a silo (default: 3)
+    options.NumMissedProbesLimit = 3;
+});
+```
+
+### When to adjust settings
+
+In most cases, the default settings are appropriate. However, you might consider adjustments in these scenarios:
+
+- **High-latency networks**: Increase `ProbeTimeout` if your silos are distributed across regions with high network latency.
+- **Resource-constrained environments**: Reduce `NumProbedSilos` if monitoring 10 silos creates too much overhead.
+- **Critical availability requirements**: Decrease `DeathVoteExpirationTimeout` for faster failure detection, but be cautious of false positives.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0"
+
+## Membership protocol configuration
+
+The membership protocol in Orleans 7.0 and 8.0 uses the following default configuration:
+
+- Every silo is monitored by 3 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+- Probes are sent every 10 seconds
+- 3 missed probes trigger a suspicion
+
+> [!TIP]
+> Orleans 9.0 includes significant improvements to the membership protocol, including faster failure detection (approximately 90 seconds vs up to 10 minutes) and increased monitored silos (10 vs 3). Consider upgrading for improved cluster stability.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+## Membership protocol
+
+The membership protocol in Orleans 3.x uses the following default configuration:
+
+- Every silo is monitored by 3 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+
+For the latest improvements to the membership protocol, consider upgrading to Orleans 9.0 or later.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0,orleans-3-x"
 
 The protocol relies on an external service to provide an abstraction of <xref:Orleans.IMembershipTable>. `IMembershipTable` is a flat, durable table used for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, it stores the current membership view (list of alive silos) and helps coordinate agreement on this view.
 
@@ -235,3 +322,5 @@ A natural question might be why not rely completely on [Apache ZooKeeper](https:
 
 Acknowledgments for the contribution of Alex Kogan to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
 The implementation of ZooKeeper based `IMembershipTable` was done by [Shay Hazor](https://github.com/shayhatsor), the implementation of SQL `IMembershipTable` was done by [Veikko Eeva](https://github.com/veikkoeeva), the implementation of AWS DynamoDB `IMembershipTable` was done by [Gutemberg Ribeiro](https://github.com/galvesribeiro/), the implementation of Consul based `IMembershipTable` was done by [Paul North](https://github.com/PaulNorth), and finally the implementation of the Apache Cassandra `IMembershipTable` was adapted from `OrleansCassandraUtils` by [Arshia001](https://github.com/Arshia001).
+
+:::zone-end

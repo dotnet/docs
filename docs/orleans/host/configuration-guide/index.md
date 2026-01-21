@@ -8,7 +8,7 @@ zone_pivot_groups: orleans-version
 
 # Orleans configuration guide
 
-In this configuration guide, you learn the key configuration parameters and how to use them for most typical usage scenarios. You can use Orleans in various configurations fitting different scenarios, such as local single-node deployment for development and testing, server clustering, multi-instance Azure worker roles, and so on.
+In this configuration guide, you learn the key configuration parameters and how to use them for most typical usage scenarios. You can use Orleans in various configurations fitting different scenarios, such as local single-node deployment for development and testing, server clustering, containerized deployments on Kubernetes or Azure Container Apps, and more.
 
 This guide provides instructions for the key configuration parameters necessary to run Orleans in one of the target scenarios. Other configuration parameters primarily help you fine-tune Orleans for better performance.
 

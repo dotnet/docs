@@ -1,8 +1,9 @@
 ---
 title: Observers
 description: Learn about observers in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: article
+zone_pivot_groups: orleans-version
 ---
 
 # Observers
@@ -121,3 +122,79 @@ You should maintain a reference for each observer you don't want collected.
 ## Execution model
 
 Implementations of <xref:Orleans.IGrainObserver> are registered via a call to <xref:Orleans.IGrainFactory.CreateObjectReference%2A?displayProperty=nameWithType>. Each call to that method creates a new reference pointing to that implementation. Orleans executes requests sent to each of these references one by one, to completion. Observers are non-reentrant; therefore, Orleans doesn't interleave concurrent requests to an observer. If multiple observers receive requests concurrently, those requests can execute in parallel. Attributes such as <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> or <xref:Orleans.Concurrency.ReentrantAttribute> don't affect the execution of observer methods; you cannot customize the execution model.
+
+## CancellationToken support
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-9-0,orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+Starting with Orleans 9.0, observer interface methods fully support <xref:System.Threading.CancellationToken> parameters. This allows grains to signal cancellation to observers, enabling long-running observer operations to be stopped gracefully.
+
+### Define an observer interface with CancellationToken
+
+Add a `CancellationToken` parameter as the last parameter in your observer interface method:
+
+```csharp
+public interface IDataObserver : IGrainObserver
+{
+    Task OnDataReceivedAsync(DataPayload data, CancellationToken cancellationToken = default);
+}
+```
+
+### Implement the observer with cancellation support
+
+```csharp
+public class DataObserver : IDataObserver
+{
+    public async Task OnDataReceivedAsync(DataPayload data, CancellationToken cancellationToken = default)
+    {
+        // Check cancellation before processing
+        cancellationToken.ThrowIfCancellationRequested();
+
+        // Process data with cancellation-aware operations
+        await ProcessDataAsync(data, cancellationToken);
+    }
+
+    private async Task ProcessDataAsync(DataPayload data, CancellationToken cancellationToken)
+    {
+        // Use cancellation token with async operations
+        await Task.Delay(100, cancellationToken);
+        Console.WriteLine($"Processed: {data.Id}");
+    }
+}
+```
+
+### Notify observers with cancellation
+
+When notifying observers, you can pass a cancellation token to enable cooperative cancellation:
+
+```csharp
+public async Task SendDataToObserversAsync(DataPayload data, CancellationToken cancellationToken = default)
+{
+    // Create a linked token source to combine the grain's token with a timeout
+    using var cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+    cts.CancelAfter(TimeSpan.FromSeconds(30)); // Timeout for observer notifications
+
+    await _subsManager.NotifyAsync(
+        observer => observer.OnDataReceivedAsync(data, cts.Token));
+}
+```
+
+For more information about using cancellation tokens in Orleans, see [Use cancellation tokens in Orleans grains](cancellation-tokens.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0"
+
+CancellationToken support for observers was introduced in Orleans 9.0. For earlier versions, you can use `GrainCancellationToken` as a workaround, but direct `CancellationToken` support in observer methods isn't available.
+
+For full CancellationToken support, consider upgrading to Orleans 9.0 or later.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+CancellationToken support for observers is available in Orleans 9.0 and later. Orleans 3.x uses the legacy `GrainCancellationToken` mechanism for cancellation.
+
+:::zone-end

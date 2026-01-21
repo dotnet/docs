@@ -1,14 +1,66 @@
 ---
 title: Troubleshoot deployments
 description: Learn how to troubleshoot common Orleans deployment issues.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: troubleshooting
 ms.custom: devops
+zone_pivot_groups: orleans-version
 ---
 
 # Troubleshoot deployments
 
-This page provides general guidelines for troubleshooting issues occurring during deployment, particularly with Azure Cloud Services. These are common issues to watch out for. Check the logs for more detailed information.
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+This page provides general guidelines for troubleshooting common Orleans deployment issues.
+
+## The `SiloUnavailableException`
+
+This exception indicates that the Orleans client cannot connect to the cluster. Common causes include:
+
+- **Silos haven't started yet**: Ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so retrying client initialization can be beneficial.
+- **Incorrect clustering configuration**: Verify that the client and silos use the same clustering provider and connection settings.
+- **Network connectivity issues**: Check firewall rules and network security groups to ensure the client can reach silo endpoints.
+- **Silo startup failures**: Check silo logs for unhandled exceptions during initialization.
+
+## Common connection string issues
+
+- **Using local connection strings when deploying to cloud environments**: Ensure connection strings are appropriate for the deployment environment.
+- **Mismatched connection strings between components**: All silos and clients must use the same clustering provider connection string to join the same cluster.
+
+## Version issues
+
+Ensure the same version of Orleans is used in every project in the solution. Mixing Orleans versions can lead to serialization errors, communication failures, or unexpected behavior.
+
+## Missing logs
+
+Ensure logging is configured properly. Orleans uses the standard `ILogger` abstraction. Configure your logging provider (Serilog, NLog, Console, Application Insights, etc.) to capture Orleans logs at the appropriate level.
+
+```csharp
+builder.Logging.SetMinimumLevel(LogLevel.Information);
+builder.Logging.AddFilter("Orleans", LogLevel.Warning);
+```
+
+## Container and Kubernetes troubleshooting
+
+For container-based deployments (Docker, Kubernetes, Azure Container Apps):
+
+- **Pod scheduling issues**: Check resource requests and limits are appropriate for your workload.
+- **Service discovery failures**: Verify DNS resolution and service endpoint configuration.
+- **Silo endpoint configuration**: Ensure `SiloPort` and `GatewayPort` are correctly exposed and mapped.
+- **Liveness and readiness probes**: Configure appropriate health check endpoints.
+
+For detailed Kubernetes troubleshooting, see [Deploy Orleans to Kubernetes](kubernetes.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+This page provides general guidelines for troubleshooting issues occurring during deployment. These are common issues to watch out for. Check the logs for more detailed information.
+
+> [!NOTE]
+> For Azure Cloud Services (classic) specific troubleshooting, see [Troubleshoot Azure Cloud Service deployments](troubleshooting-azure-cloud-services-deployments.md). Note that Azure Cloud Services (classic) was retired on August 31, 2024.
 
 ## The `SiloUnavailableException`
 
@@ -83,3 +135,5 @@ To resolve this, try upgrading `Microsoft.CodeDom.Providers.DotNetCompilerPlatfo
     <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="1.3.1.0" />
 </dependentAssembly>
 ```
+
+:::zone-end

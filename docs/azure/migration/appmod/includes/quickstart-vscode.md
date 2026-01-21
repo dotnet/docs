@@ -31,7 +31,7 @@ Select the **Run Task** button in the Assessment Report from the previous step t
 
 Run the specific task in the **TASKS - .NET** section. For example, the **Migrate Database to Azure Database for PostgreSQL** task under **Database Tasks** updates your database connection, configurations, dependencies, and data access code to use Azure Database for PostgreSQL.
 
-:::image type="content" source="media/vscode/run-task.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+:::image type="content" source="../media/vscode/run-task.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
 ### Plan and progress tracker generation
 
@@ -43,7 +43,7 @@ Run the specific task in the **TASKS - .NET** section. For example, the **Migrat
 
 - Edit these files to customize your migration before you continue.
 
-:::image type="content" source="media/vscode/start-migration.png" alt-text="Screenshot of plan generation during a migration task.":::
+:::image type="content" source="../media/vscode/start-migration.png" alt-text="Screenshot of plan generation during a migration task.":::
 
 ### Start code remediation
 

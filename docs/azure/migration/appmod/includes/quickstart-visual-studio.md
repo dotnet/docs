@@ -17,22 +17,22 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 1. In Solution Explorer, right-click the solution node and select **Modernize**.
 
-    :::image type="content" source="media/modernize-solution.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
+    :::image type="content" source="../media/modernize-solution.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
 
 1. The GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
-    :::image type="content" source="media/modernization-welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
+    :::image type="content" source="../media/modernization-welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
 
     > [!TIP]
     > Instead of steps 3 and 4, you can open **GitHub Copilot Chat** directly and send `@Modernize Migrate to Azure` to start the assessment and migration flow.
 
 1. A new Copilot chat session opens and shows the welcome message. The assessment starts automatically and analyzes your project for migration readiness.
 
-    :::image type="content" source="media/assessment-in-process.png" alt-text="Screenshot that shows assessment in progress with status indicators.":::
+    :::image type="content" source="../media/assessment-in-process.png" alt-text="Screenshot that shows assessment in progress with status indicators.":::
 
 1. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
 
-    :::image type="content" source="media/assessment-report.png" alt-text="Screenshot that shows the generated assessment report with detailed findings.":::
+    :::image type="content" source="../media/assessment-report.png" alt-text="Screenshot that shows the generated assessment report with detailed findings.":::
 
 ## App migrations
 
@@ -50,7 +50,7 @@ Select the **Run Task** button in the Assessment Report from the previous step t
 
 Send the migration task number (for example, 1.1) or its name in the chat.
 
-:::image type="content" source="media/quickstart-chat-experience.png" alt-text="Screenshot of sending a message in Copilot Chat to start a migration task.":::
+:::image type="content" source="../media/quickstart-chat-experience.png" alt-text="Screenshot of sending a message in Copilot Chat to start a migration task.":::
 
 ### Plan and progress tracker generation
 
@@ -80,7 +80,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 GitHub Copilot app modernization for .NET gives you default chat message options to streamline your workflow.
 
-:::image type="content" source="media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
+:::image type="content" source="../media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 
 You can choose one of the predefined options and send it in the chat:
 

@@ -65,38 +65,38 @@ The following packages are new in Orleans 10.0 and are in preview or alpha statu
 
 ## Clustering providers
 
-| NuGet package | Introduced | Description |
-|---|---|---|
-| [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) | 1.0 | Orleans clustering provider backed by Azure Table Storage. |
-| [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) | 1.0 | Orleans clustering provider backed by ADO.NET. |
-| [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB) | 1.0 | Orleans clustering provider backed by AWS DynamoDB. |
-| [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) | 7.2 | Orleans clustering provider backed by Azure Cosmos DB. |
-| [Microsoft.Orleans.Clustering.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis) | 7.2 | Orleans clustering provider backed by Redis. |
-| [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) | 8.2 | Orleans clustering provider backed by Apache Cassandra. |
-| [Microsoft.Orleans.Clustering.Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul) | 1.0 | Orleans clustering provider backed by HashiCorp Consul. |
-| [Microsoft.Orleans.Clustering.ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper) | 1.0 | Orleans clustering provider backed by Apache ZooKeeper. |
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) | Orleans clustering provider backed by Azure Table Storage. |
+| [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) | Orleans clustering provider backed by ADO.NET. |
+| [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB) | Orleans clustering provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) | Orleans clustering provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Clustering.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis) | Orleans clustering provider backed by Redis. |
+| [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) | Orleans clustering provider backed by Apache Cassandra. |
+| [Microsoft.Orleans.Clustering.Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul) | Orleans clustering provider backed by HashiCorp Consul. |
+| [Microsoft.Orleans.Clustering.ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper) | Orleans clustering provider backed by Apache ZooKeeper. |
 
 ## Reminder providers
 
-| NuGet package | Introduced | Description |
-|---|---|---|
-| [Microsoft.Orleans.Reminders](https://www.nuget.org/packages/Microsoft.Orleans.Reminders) | 7.0 | Reminders library for Microsoft Orleans used on the server. |
-| [Microsoft.Orleans.Reminders.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AzureStorage) | 1.0 | Orleans reminders provider backed by Azure Table Storage. |
-| [Microsoft.Orleans.Reminders.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AdoNet) | 1.0 | Orleans reminders provider backed by ADO.NET. |
-| [Microsoft.Orleans.Reminders.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.DynamoDB) | 1.0 | Orleans reminders provider backed by AWS DynamoDB. |
-| [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) | 7.2 | Orleans reminders provider backed by Azure Cosmos DB. |
-| [Microsoft.Orleans.Reminders.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Redis) | 7.2 | Orleans reminders provider backed by Redis. |
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Reminders](https://www.nuget.org/packages/Microsoft.Orleans.Reminders) | Reminders library for Microsoft Orleans used on the server. |
+| [Microsoft.Orleans.Reminders.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AzureStorage) | Orleans reminders provider backed by Azure Table Storage. |
+| [Microsoft.Orleans.Reminders.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AdoNet) | Orleans reminders provider backed by ADO.NET. |
+| [Microsoft.Orleans.Reminders.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.DynamoDB) | Orleans reminders provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) | Orleans reminders provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Reminders.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Redis) | Orleans reminders provider backed by Redis. |
 
 ## Grain storage providers
 
-| NuGet package | Introduced | Description |
-|---|---|---|
-| [Microsoft.Orleans.Persistence.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AdoNet) | 1.0 | Orleans persistence provider backed by ADO.NET. |
-| [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) | 1.0 | Orleans persistence provider backed by Azure Table Storage. |
-| [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB) | 1.0 | Orleans persistence provider backed by AWS DynamoDB. |
-| [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) | 7.2 | Orleans persistence provider backed by Azure Cosmos DB. |
-| [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis) | 7.2 | Orleans persistence provider backed by Redis. |
-| [Microsoft.Orleans.Persistence.Memory](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Memory) | 1.0 | In-memory storage for Orleans. |
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Persistence.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AdoNet) | Orleans persistence provider backed by ADO.NET. |
+| [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) | Orleans persistence provider backed by Azure Table Storage. |
+| [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB) | Orleans persistence provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) | Orleans persistence provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis) | Orleans persistence provider backed by Redis. |
+| [Microsoft.Orleans.Persistence.Memory](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Memory) | In-memory storage for Orleans. |
 
 ## Grain directory providers
 
@@ -138,15 +138,15 @@ The following packages are new in Orleans 10.0 and are in preview or alpha statu
 
 ## Serializers
 
-| NuGet package | Introduced | Description |
-|---|---|---|
-| [Microsoft.Orleans.Serialization](https://www.nuget.org/packages/Microsoft.Orleans.Serialization) | 7.0 | Fast, flexible, and version-tolerant serializer for .NET. |
-| [Microsoft.Orleans.Serialization.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Abstractions) | 7.0 | Serialization abstractions for Orleans. |
-| [Microsoft.Orleans.Serialization.SystemTextJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson) | 7.0 | `System.Text.Json` integration for `Microsoft.Orleans.Serialization`. |
-| [Microsoft.Orleans.Serialization.FSharp](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.FSharp) | 7.0 | F# core type support for `Microsoft.Orleans.Serialization`. |
-| [Microsoft.Orleans.Serialization.NewtonsoftJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson) | 7.0 | `Newtonsoft.Json` integration for `Microsoft.Orleans.Serialization`. |
-| [Microsoft.Orleans.Serialization.MessagePack](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.MessagePack) | 8.2 | MessagePack integration for `Microsoft.Orleans.Serialization`. |
-| [Microsoft.Orleans.Serialization.Protobuf](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf) | 8.0 | Protocol Buffers (Protobuf) integration for `Microsoft.Orleans.Serialization`. |
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Serialization](https://www.nuget.org/packages/Microsoft.Orleans.Serialization) | Fast, flexible, and version-tolerant serializer for .NET. |
+| [Microsoft.Orleans.Serialization.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Abstractions) | Serialization abstractions for Orleans. |
+| [Microsoft.Orleans.Serialization.SystemTextJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson) | `System.Text.Json` integration for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.FSharp](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.FSharp) | F# core type support for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.NewtonsoftJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson) | `Newtonsoft.Json` integration for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.MessagePack](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.MessagePack) | MessagePack integration for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.Protobuf](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf) | Protocol Buffers (Protobuf) integration for `Microsoft.Orleans.Serialization`. |
 
 ## Transactions
 

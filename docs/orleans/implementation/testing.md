@@ -1,15 +1,188 @@
 ---
 title: Unit testing
 description: Learn how to unit test with .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 01/21/2026
 ms.topic: how-to
+zone_pivot_groups: orleans-version
 ---
 
 # Unit testing with Orleans
 
 This tutorial shows how to unit test your grains to ensure they behave correctly. There are two main ways to unit test your grains, and the method you choose depends on the type of functionality you're testing. Use the [Microsoft.Orleans.TestingHost](https://www.nuget.org/packages/Microsoft.Orleans.TestingHost) NuGet package to create test silos for your grains, or use a mocking framework like [Moq](https://github.com/moq/moq) to mock parts of the Orleans runtime your grain interacts with.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+## Use the `InProcessTestCluster` (recommended)
+
+Orleans 9.0 introduced the `InProcessTestCluster`, a lightweight testing infrastructure that runs all silos in-process using in-memory transports. This provides significantly faster test execution compared to the traditional `TestCluster`.
+
+### Key advantages
+
+| Feature | `InProcessTestCluster` | `TestCluster` |
+|---------|----------------------|---------------|
+| **Startup time** | Very fast (in-process) | Slower (separate processes) |
+| **Memory usage** | Lower (shared process) | Higher (multiple processes) |
+| **Debugging** | Easy (single process) | Complex (multiple processes) |
+| **Network isolation** | In-memory transport | Real network sockets |
+| **Best for** | Unit tests, integration tests | End-to-end tests, production simulation |
+
+### Basic usage
+
+```csharp
+using Orleans.TestingHost;
+using Xunit;
+
+public class HelloGrainTests : IAsyncLifetime
+{
+    private InProcessTestCluster _cluster = null!;
+
+    public async Task InitializeAsync()
+    {
+        var builder = new InProcessTestClusterBuilder();
+        _cluster = builder.Build();
+        await _cluster.DeployAsync();
+    }
+
+    public async Task DisposeAsync()
+    {
+        await _cluster.DisposeAsync();
+    }
+
+    [Fact]
+    public async Task SaysHello()
+    {
+        var grain = _cluster.Client.GetGrain<IHelloGrain>(0);
+        var result = await grain.SayHello("World");
+        Assert.Equal("Hello, World!", result);
+    }
+}
+```
+
+### Configure the test cluster
+
+Use `InProcessTestClusterBuilder` to configure silos, clients, and services:
+
+```csharp
+var builder = new InProcessTestClusterBuilder(initialSilosCount: 2);
+
+// Configure silos
+builder.ConfigureSilo((options, siloBuilder) =>
+{
+    siloBuilder.AddMemoryGrainStorage("Default");
+    siloBuilder.AddMemoryGrainStorage("PubSubStore");
+});
+
+// Configure clients
+builder.ConfigureClient(clientBuilder =>
+{
+    // Client-specific configuration
+});
+
+// Configure both silos and clients (shared services)
+builder.ConfigureHost(hostBuilder =>
+{
+    hostBuilder.Services.AddSingleton<IMyService, MyService>();
+});
+
+var cluster = builder.Build();
+await cluster.DeployAsync();
+```
+
+### InProcessTestClusterOptions
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `ClusterId` | `string` | Auto-generated | Cluster identifier. |
+| `ServiceId` | `string` | Auto-generated | Service identifier. |
+| `InitialSilosCount` | `int` | 1 | Number of silos to start initially. |
+| `InitializeClientOnDeploy` | `bool` | `true` | Whether to auto-initialize the client on deploy. |
+| `ConfigureFileLogging` | `bool` | `true` | Enable file logging for debugging. |
+| `UseRealEnvironmentStatistics` | `bool` | `false` | Use real memory/CPU statistics instead of simulated values. |
+| `GatewayPerSilo` | `bool` | `true` | Whether each silo hosts a gateway for client connections. |
+
+### Share a test cluster between tests
+
+To improve test performance, share a single cluster across multiple test cases using xUnit fixtures:
+
+```csharp
+public class ClusterFixture : IAsyncLifetime
+{
+    public InProcessTestCluster Cluster { get; private set; } = null!;
+
+    public async Task InitializeAsync()
+    {
+        var builder = new InProcessTestClusterBuilder();
+        builder.ConfigureSilo((options, siloBuilder) =>
+        {
+            siloBuilder.AddMemoryGrainStorageAsDefault();
+        });
+        
+        Cluster = builder.Build();
+        await Cluster.DeployAsync();
+    }
+
+    public async Task DisposeAsync()
+    {
+        await Cluster.DisposeAsync();
+    }
+}
+
+[CollectionDefinition(nameof(ClusterCollection))]
+public class ClusterCollection : ICollectionFixture<ClusterFixture>
+{
+}
+
+[Collection(nameof(ClusterCollection))]
+public class HelloGrainTests
+{
+    private readonly ClusterFixture _fixture;
+
+    public HelloGrainTests(ClusterFixture fixture)
+    {
+        _fixture = fixture;
+    }
+
+    [Fact]
+    public async Task SaysHello()
+    {
+        var grain = _fixture.Cluster.Client.GetGrain<IHelloGrain>(0);
+        var result = await grain.SayHello("World");
+        Assert.Equal("Hello, World!", result);
+    }
+}
+```
+
+### Add and remove silos during tests
+
+The `InProcessTestCluster` supports dynamic silo management for testing cluster behavior:
+
+```csharp
+// Start with 2 silos
+var builder = new InProcessTestClusterBuilder(initialSilosCount: 2);
+var cluster = builder.Build();
+await cluster.DeployAsync();
+
+// Add a third silo
+var newSilo = await cluster.StartSiloAsync();
+
+// Stop a silo
+await cluster.StopSiloAsync(newSilo);
+
+// Restart all silos
+await cluster.RestartAsync();
+```
+
+:::zone-end
+
 ## Use the `TestCluster`
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+The traditional `TestCluster` is still available for scenarios requiring more realistic network behavior or production-like testing. However, for most unit and integration tests, `InProcessTestCluster` is recommended.
+
+:::zone-end
 
 The `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster>, which you can use to create an in-memory cluster (comprised of two silos by default) for testing grains.
 

@@ -1,7 +1,7 @@
 ---
 title: Grain lifecycle overview
 description: Learn about grain lifecycles in .NET Orleans.
-ms.date: 03/31/2025
+ms.date: 01/21/2026
 ms.topic: article
 zone_pivot_groups: orleans-version
 ---
@@ -30,6 +30,63 @@ public static class GrainLifecycleStage
 - `Last`: Last stage in a grain's lifecycle.
 
 While Orleans uses the grain lifecycle during grain activation, grains aren't always deactivated during some error cases (such as silo crashes). Therefore, applications shouldn't rely on the grain lifecycle always executing during grain deactivations.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+## Memory-based activation shedding
+
+Orleans 9.0 introduced memory-based activation shedding, which automatically deactivates grain activations when the silo is under memory pressure. This helps prevent out-of-memory conditions by intelligently removing grains from memory based on their activity patterns.
+
+### How it works
+
+When enabled, Orleans monitors memory usage and begins deactivating grains when usage exceeds the configured threshold:
+
+1. Orleans polls memory usage at a configurable interval (default: 5 seconds)
+2. When memory usage exceeds `MemoryUsageLimitPercentage`, Orleans begins deactivating grains
+3. Orleans prioritizes deactivating older and less-recently-used grains first
+4. Deactivation continues until memory usage falls below `MemoryUsageTargetPercentage`
+
+### Configuration
+
+Configure memory-based activation shedding using `GrainCollectionOptions`:
+
+```csharp
+builder.Configure<GrainCollectionOptions>(options =>
+{
+    // Enable memory-based activation shedding
+    options.EnableActivationSheddingOnMemoryPressure = true;
+    
+    // Memory usage percentage (0-100) at which grain collection triggers
+    options.MemoryUsageLimitPercentage = 80; // default: 80
+    
+    // Target memory usage percentage to reach after collection
+    options.MemoryUsageTargetPercentage = 75; // default: 75
+    
+    // How often to poll memory usage
+    options.MemoryUsagePollingPeriod = TimeSpan.FromSeconds(5); // default: 5s
+});
+```
+
+### GrainCollectionOptions properties
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `EnableActivationSheddingOnMemoryPressure` | `bool` | `false` | Enable automatic deactivation under memory pressure. |
+| `MemoryUsageLimitPercentage` | `int` | 80 | Memory usage percentage at which shedding begins. Valid range: 0-100. |
+| `MemoryUsageTargetPercentage` | `int` | 75 | Target memory usage percentage after shedding. Valid range: 0-100. |
+| `MemoryUsagePollingPeriod` | `TimeSpan` | 5 seconds | How often to check memory usage. |
+| `CollectionAge` | `TimeSpan` | 2 hours | Minimum time a grain must be idle before eligible for collection. |
+| `CollectionQuantum` | `TimeSpan` | 1 minute | How often idle grain collection runs. |
+
+### Best practices
+
+- **Set thresholds conservatively**: Leave headroom between `MemoryUsageTargetPercentage` and `MemoryUsageLimitPercentage` to avoid oscillation
+- **Monitor collection metrics**: Track grain deactivations to understand the impact on your workload
+- **Consider grain importance**: Critical grains can extend their lifetime using timers with `KeepAlive = true` or by receiving periodic calls
+- **Test under load**: Verify behavior under production-like memory conditions
+
+:::zone-end
 
 ## Grain lifecycle participation
 

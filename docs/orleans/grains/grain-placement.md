@@ -248,3 +248,102 @@ private static void ConfigureServices(IServiceCollection services)
 ```
 
 For a second simple example showing further use of the placement context, refer to `PreferLocalPlacementDirector` in the [Orleans source repository](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs).
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+## Silo metadata and placement filtering
+
+Orleans 9.0 introduced silo metadata and placement filtering, allowing you to attach custom metadata to silos and use that metadata to control grain placement decisions. This is useful for scenarios like:
+
+- **Zone-aware placement**: Place grains on silos in the same availability zone as the client
+- **Tiered deployments**: Direct certain grains to premium or standard tier silos
+- **Hardware affinity**: Place compute-intensive grains on silos with GPUs or high-memory nodes
+
+### Configure silo metadata
+
+Attach metadata to a silo during configuration:
+
+```csharp
+// From environment variables (ORLEANS__METADATA__key=value)
+builder.UseSiloMetadata();
+
+// From IConfiguration
+builder.UseSiloMetadata(configuration.GetSection("Orleans:Metadata"));
+
+// From a dictionary
+builder.UseSiloMetadata(new Dictionary<string, string>
+{
+    ["zone"] = "us-east-1a",
+    ["tier"] = "premium",
+    ["rack"] = "rack-42"
+});
+```
+
+### Placement filter strategies
+
+Orleans provides two placement filter strategies:
+
+| Strategy | Attribute | Behavior |
+|----------|-----------|----------|
+| **Required match** | `[RequiredMatchSiloMetadataPlacementFilter]` | Grain is **only** placed on silos with matching metadata. Fails if no silos match. |
+| **Preferred match** | `[PreferredMatchSiloMetadataPlacementFilter]` | Grain **prefers** silos with matching metadata but falls back to other silos if needed. |
+
+### Required match filtering
+
+Use required match filtering when a grain **must** be placed on a silo with specific metadata:
+
+```csharp
+// Grain will only be placed on silos where the "zone" metadata matches
+[RequiredMatchSiloMetadataPlacementFilter(new[] { "zone" })]
+public class ZoneRestrictedGrain : Grain, IZoneRestrictedGrain
+{
+    // This grain will only activate on silos in the same zone
+}
+
+// Multiple metadata keys can be specified
+[RequiredMatchSiloMetadataPlacementFilter(new[] { "zone", "tier" })]
+public class ZoneAndTierGrain : Grain, IZoneAndTierGrain
+{
+    // Requires both zone AND tier to match
+}
+```
+
+### Preferred match filtering
+
+Use preferred match filtering when you want to prefer certain silos but allow fallback:
+
+```csharp
+// Prefer silos with matching "zone" and "rack", but allow fallback
+// minCandidates ensures at least 2 silos are considered even without matches
+[PreferredMatchSiloMetadataPlacementFilter(new[] { "zone", "rack" }, minCandidates: 2)]
+public class LocalityAwareGrain : Grain, ILocalityAwareGrain
+{
+    // Prefers local zone/rack but can activate elsewhere
+}
+```
+
+### Access silo metadata at runtime
+
+Grains can access metadata for any silo using `ISiloMetadataCache`:
+
+```csharp
+public class MyGrain : Grain, IMyGrain
+{
+    private readonly ISiloMetadataCache _metadataCache;
+
+    public MyGrain(ISiloMetadataCache metadataCache)
+    {
+        _metadataCache = metadataCache;
+    }
+
+    public Task<string?> GetCurrentSiloZone()
+    {
+        var siloAddress = this.GetSiloAddress();
+        var metadata = _metadataCache.GetMetadata(siloAddress);
+        return Task.FromResult(metadata?.Metadata.GetValueOrDefault("zone"));
+    }
+}
+```
+
+:::zone-end

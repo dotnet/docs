@@ -125,9 +125,7 @@ Implementations of <xref:Orleans.IGrainObserver> are registered via a call to <x
 
 ## CancellationToken support
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 Starting with Orleans 9.0, observer interface methods fully support <xref:System.Threading.CancellationToken> parameters. This allows grains to signal cancellation to observers, enabling long-running observer operations to be stopped gracefully.
 

@@ -12,7 +12,6 @@ Orleans ensures that when a grain call is made, an instance of that grain is ava
 
 The placement process in Orleans is fully configurable. Choose from out-of-the-box placement policies such as random, prefer-local, and load-based, or configure custom logic. This allows full flexibility in deciding where grains are created. For example, place grains on a server close to resources they need to operate on or close to other grains they communicate with.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 > [!NOTE]
@@ -62,7 +61,6 @@ This is a deterministic placement strategy placing grains on silos with a specif
 
 ## Resource-optimized placement
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 > [!IMPORTANT]
@@ -140,7 +138,6 @@ Ultimately, experiment with different strategies and monitor performance metrics
 
 ## Configure the default placement strategy
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 Starting in Orleans 9.2, Orleans uses resource-optimized placement by default. Override the default placement strategy by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration.
@@ -249,7 +246,6 @@ private static void ConfigureServices(IServiceCollection services)
 
 For a second simple example showing further use of the placement context, refer to `PreferLocalPlacementDirector` in the [Orleans source repository](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs).
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 ## Silo metadata and placement filtering
@@ -350,9 +346,7 @@ public class MyGrain : Grain, IMyGrain
 
 ## Activation repartitioning
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
-<!-- markdownlint-enable MD044 -->
 
 Activation repartitioning is a feature that automatically optimizes grain call locality by migrating grain activations to be closer to the grains they communicate with most frequently. This feature can significantly improve performance by reducing network hops for inter-grain communication.
 

@@ -16,9 +16,7 @@ In this tutorial, you'll walk through how to write a simple file-based grain sto
 
 An Orleans grain storage provider is a class that implements `IGrainStorage`, included in the [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It also inherits from `ILifecycleParticipant<ISiloLifecycle>`, allowing you to subscribe to specific events in the silo's lifecycle. Start by creating a class named `FileGrainStorage`.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 using Microsoft.Extensions.Options;
@@ -157,9 +155,7 @@ Now you can decorate your grains with the provider `[StorageProvider(ProviderNam
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 using System;

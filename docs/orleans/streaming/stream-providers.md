@@ -10,7 +10,6 @@ zone_pivot_groups: orleans-version
 
 Streams can come in different shapes and forms. Some streams might deliver events over direct TCP links, while others deliver events via durable queues. Different stream types might use different batching strategies, caching algorithms, or backpressure procedures. Stream providers are extensibility points in the Orleans Streaming Runtime that allow you to implement any type of stream, avoiding constraints on streaming applications to only a subset of those behavioral choices. This extensibility point is similar in spirit to Orleans storage providers.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 ## NATS JetStream stream provider
@@ -220,7 +219,6 @@ jetstream {
 ```
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->
 
 ## Azure Event Hub stream provider
 
@@ -240,14 +238,10 @@ The [Microsoft.Orleans.Streaming.AzureStorage](https://www.nuget.org/packages/Mi
 
 Different stream providers delivering events over durable queues exhibit similar behavior and are subject to similar implementations. Therefore, we provide a generic extensible <xref:Orleans.Providers.Streams.Common.PersistentStreamProvider> that allows you to plug in different types of queues without writing a completely new stream provider from scratch. `PersistentStreamProvider` uses an <xref:Orleans.Streams.IQueueAdapter> component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events. The logic inside `PersistentStreamProvider` handles everything else. The Azure Queue Provider mentioned above is also implemented this way: it's an instance of `PersistentStreamProvider` that uses an `AzureQueueAdapter`.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Simple message stream provider
 

@@ -10,9 +10,7 @@ zone_pivot_groups: orleans-version
 
 Orleans provides cluster management via a built-in membership protocol, sometimes referred to as **Cluster membership**. The goal of this protocol is for all silos (Orleans servers) to agree on the set of currently alive silos, detect failed silos, and allow new silos to join the cluster.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ## Membership protocol improvements in Orleans 9.0
 

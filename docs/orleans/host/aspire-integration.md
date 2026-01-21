@@ -8,9 +8,7 @@ zone_pivot_groups: orleans-version
 
 # Orleans and .NET Aspire integration
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) provides a streamlined approach to building cloud-native applications with built-in support for Orleans. Starting with Orleans 8.0, you can use Aspire to orchestrate your Orleans cluster, manage backing resources (like Redis or Azure Storage), and automatically configure service discovery, observability, and health checks.
 
@@ -376,9 +374,7 @@ builder.Services.AddHealthChecks()
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 .NET Aspire integration was introduced in Orleans 8.0. For Orleans 7.0, you can still deploy to Aspire-orchestrated environments, but the dedicated `Aspire.Hosting.Orleans` package and its extension methods are not available.
 

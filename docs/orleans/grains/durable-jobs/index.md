@@ -8,7 +8,6 @@ zone_pivot_groups: orleans-version
 
 # Orleans Durable Jobs
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 Orleans Durable Jobs is a feature that provides reliable, scheduled task execution with at-least-once delivery guarantees. Unlike traditional reminders, durable jobs support metadata, flexible retry policies, and are designed for scenarios where you need guaranteed execution of scheduled tasks.
@@ -391,4 +390,3 @@ Orleans Durable Jobs is a feature introduced in Orleans 10.0 that provides relia
 - **External job schedulers**: Integrate with Hangfire, Quartz.NET, or Azure Service Bus scheduled messages for advanced scheduling needs.
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->

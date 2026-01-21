@@ -29,10 +29,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 1. Create the `DataService` grain service. It's helpful to know that you can also inject an <xref:Orleans.IGrainFactory> so you can make grain calls from your `GrainService`.
 
-    <!-- markdownlint-disable MD044 -->
-    :::zone target="docs" pivot="orleans-7-0"
-    <!-- markdownlint-enable MD044 -->
-
+        :::zone target="docs" pivot="orleans-7-0"
+    
     ```csharp
     [Reentrant]
     public class DataService : GrainService, IDataService
@@ -67,10 +65,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-    <!-- markdownlint-disable MD044 -->
-    :::zone target="docs" pivot="orleans-3-x"
-    <!-- markdownlint-enable MD044 -->
-
+        :::zone target="docs" pivot="orleans-3-x"
+    
     ```csharp
     [Reentrant]
     public class DataService : GrainService, IDataService
@@ -147,10 +143,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 1. Configure the grain service and grain service client in the silo. You need to do this so the silo starts the `GrainService`.
 
-    <!-- markdownlint-disable MD044 -->
-    :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-    <!-- markdownlint-enable MD044 -->
-
+        :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+    
     ```csharp
     builder.UseOrleans(siloBuilder =>
     {
@@ -164,10 +158,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-    <!-- markdownlint-disable MD044 -->
-    :::zone target="docs" pivot="orleans-3-x"
-    <!-- markdownlint-enable MD044 -->
-
+        :::zone target="docs" pivot="orleans-3-x"
+    
     ```csharp
     (ISiloHostBuilder builder) =>
         builder.ConfigureServices(
@@ -179,7 +171,6 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 ## Additional notes
 
-<!-- markdownlint-disable-next-line proper-names -->
 There's an extension method, <xref:Orleans.Hosting.GrainServicesSiloBuilderExtensions.AddGrainService%2A?displayProperty=nameWithType>, used to register grain services.
 
 ```csharp
@@ -187,21 +178,16 @@ services.AddSingleton<IGrainService>(
     serviceProvider => GrainServiceFactory(grainServiceType, serviceProvider));
 ```
 
-<!-- markdownlint-disable-next-line proper-names -->
 The silo fetches `IGrainService` types from the service provider when starting (see _orleans/src/Orleans.Runtime/Silo/Silo.cs_):
 
 ```csharp
 var grainServices = this.Services.GetServices<IGrainService>();
 ```
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 The [Microsoft.Orleans.Runtime](https://www.nuget.org/packages/Microsoft.Orleans.Runtime) NuGet package should be referenced by the `GrainService` project.
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 The [Microsoft.Orleans.OrleansRuntime](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime) NuGet package should be referenced by the `GrainService` project.
 :::zone-end
 

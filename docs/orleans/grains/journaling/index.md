@@ -8,7 +8,6 @@ zone_pivot_groups: orleans-version
 
 # Orleans Journaling
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 Orleans Journaling provides durable state machines with automatic persistence, recovery, and efficient journal-based storage. Unlike traditional grain persistence that stores complete state snapshots, journaling records state changes as a sequence of log entries, enabling efficient incremental updates and point-in-time recovery.
@@ -487,4 +486,3 @@ Orleans Journaling with `DurableGrain` is a feature introduced in Orleans 10.0. 
 - **[Grain persistence](../grain-persistence/index.md)**: Traditional state persistence with snapshot-based storage.
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->

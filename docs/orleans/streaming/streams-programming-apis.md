@@ -15,9 +15,7 @@ Applications interact with streams via APIs very similar to the well-known [Reac
 
 You start by using a [*stream provider*](stream-providers.md) to get a handle to a stream. You can think of a stream provider as a stream factory that allows implementers to customize streams behavior and semantics:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
@@ -26,9 +24,7 @@ IAsyncStream<T> stream = streamProvider.GetStream<T>(streamId);
 ```
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
@@ -125,9 +121,7 @@ The grain implementation `MyGrainType` can declare an attribute `[ImplicitStream
 
 The presence of `ImplicitStreamSubscription` causes the streaming runtime to automatically subscribe this grain to the stream and deliver stream events to it. However, the grain code still needs to tell the runtime how it wants events processed. Essentially, it needs to attach the `IAsyncObserver`. Therefore, when the grain activates, the grain code inside `OnActivateAsync` needs to call:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 IStreamProvider streamProvider =
@@ -143,9 +137,7 @@ StreamSubscriptionHandle<T> subscription =
 ```
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 IStreamProvider streamProvider =
@@ -170,9 +162,7 @@ For implicit subscriptions, the grain still needs to subscribe to attach the pro
 
 To process messages, implement the `IAsyncObserver<T>.OnNextAsync(...)` method to receive stream data and a sequence token. Alternatively, the `ResumeAsync` method can take a set of delegates representing the methods of the `IAsyncObserver<T>` interface: `onNextAsync`, `onErrorAsync`, and `onCompletedAsync`.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public Task OnNextAsync(string item, StreamSequenceToken? token = null)
@@ -189,9 +179,7 @@ public async Task OnSubscribed(IStreamSubscriptionHandleFactory handleFactory)
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public override async Task OnActivateAsync()
@@ -211,9 +199,7 @@ public override async Task OnActivateAsync()
 
 For explicit subscriptions, a grain must call `SubscribeAsync` to subscribe to the stream. This creates a subscription and attaches the processing logic. The explicit subscription exists until the grain unsubscribes. If a grain deactivates and reactivates, it's still explicitly subscribed, but no processing logic is attached. In this case, the grain needs to re-attach the processing logic. To do this, in its `OnActivateAsync`, the grain first needs to find out its subscriptions by calling <xref:Orleans.Streams.IAsyncStream%601.GetAllSubscriptionHandles?displayProperty=nameWithType>. The grain must execute `ResumeAsync` on each handle it wishes to continue processing or `UnsubscribeAsync` on any handles it's done with. The grain can also optionally specify the `StreamSequenceToken` as an argument to the `ResumeAsync` calls, causing this explicit subscription to start consuming from that token.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public async override Task OnActivateAsync(CancellationToken cancellationToken)
@@ -231,9 +217,7 @@ public async override Task OnActivateAsync(CancellationToken cancellationToken)
 ```
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public async override Task OnActivateAsync()
@@ -294,9 +278,7 @@ Applications can choose where and how the Pub-Sub data is stored. The Pub-Sub co
 
 The following configures Pub-Sub to store its state in Azure tables.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
@@ -321,9 +303,7 @@ hostBuilder.AddAzureTableGrainStorage("PubSubStore",
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 hostBuilder.AddAzureTableGrainStorage("PubSubStore",
@@ -338,9 +318,7 @@ This way, Pub-Sub data is durably stored in Azure Table. For initial development
 
 To use streams, you need to enable [stream providers](stream-providers.md) via the silo host or cluster client builders. Sample stream provider setup:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
@@ -374,9 +352,7 @@ hostBuilder.AddMemoryStreams("StreamProvider")
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")

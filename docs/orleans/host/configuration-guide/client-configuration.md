@@ -9,17 +9,13 @@ ms.custom: sfi-ropc-nochange
 
 # Client configuration
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Microsoft.Extensions.Hosting.IHostBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Orleans.ClientBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
@@ -38,9 +34,7 @@ There are several key aspects of client configuration:
 
 Example of a client configuration:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
@@ -90,9 +84,7 @@ var client = new HostBuilder()
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 using Orleans.Hosting;
@@ -132,9 +124,7 @@ Here, we set two things:
 
 ## Clustering provider
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
@@ -161,9 +151,7 @@ clientBuilder.UseAzureStorageClustering(options =>
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 .UseAzureStorageClustering(
@@ -176,9 +164,7 @@ The client discovers all available gateways in the cluster using this provider. 
 
 For more information, see [Server configuration](server-configuration.md).
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Application parts
 

@@ -8,7 +8,6 @@ zone_pivot_groups: orleans-version
 
 # Orleans Dashboard
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 The Orleans Dashboard is a built-in web-based monitoring tool that provides real-time visibility into your Orleans cluster. It allows you to monitor silo health, grain activations, method calls, reminders, and system metrics without requiring external monitoring infrastructure.
@@ -307,4 +306,3 @@ The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. 
 - **OpenTelemetry integration**: Built-in observability features available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->

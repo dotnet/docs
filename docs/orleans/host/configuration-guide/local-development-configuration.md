@@ -15,9 +15,7 @@ For a working sample application targeting Orleans 7.0, see [Orleans: Hello Worl
 
 ## Silo configuration
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 We recommend using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run the silo. Also, when developing an Orleans silo, you need the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. For local Orleans silo development, configure localhost clustering, which uses the loopback address. To use localhost clustering, call the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file for the silo host:
 
@@ -41,9 +39,7 @@ The preceding code does the following:
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 For local development, refer to the example below showing how to configure a silo for this case. It configures and starts a silo listening on the `loopback` address, using `11111` and `30000` as the silo and gateway ports, respectively.
 
@@ -103,9 +99,7 @@ static async Task<ISiloHost> BuildAndStartSiloAsync()
 
 ## Client configuration
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 We recommend using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run clients (in addition to the silo). You also need the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. To use localhost clustering on the consuming client, call the <xref:Orleans.Hosting.ClientBuilderExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file for the client host:
 
@@ -133,9 +127,7 @@ The preceding code does the following:
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 For local development, refer to the example below showing how to configure a client for this case. It configures a client that connects to a `loopback` silo.
 

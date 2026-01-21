@@ -11,7 +11,6 @@ zone_pivot_groups: orleans-version
 
 Grains have stable logical identities. They can activate (instantiate) and deactivate many times over the application's life, but at most one activation of a grain exists at any point in time. Each time a grain activates, it might be placed on a different silo in the cluster. When a grain activates in the cluster, it registers itself in the _grain directory_. This ensures subsequent invocations of that grain are delivered to that activation and prevents the creation of other activations (instances) of that grain. The grain directory is responsible for maintaining a mapping between a grain identity and the location (which silo) of its current activation.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 Orleans provides several grain directory implementations:
@@ -46,7 +45,6 @@ We recommend always starting with the default directory (the built-in in-memory 
 
 When you have some experience with Orleans and have a use case requiring a stronger single-activation guarantee, or if you want to minimize the number of grains deactivated when a silo shuts down, consider using a storage-based grain directory implementation, such as the Redis implementation. Try using it for one or a few grain types first, starting with those that are long-lived, have significant state, or have an expensive initialization process.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 ## Strong-consistency distributed directory

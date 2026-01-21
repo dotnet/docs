@@ -7,9 +7,7 @@ zone_pivot_groups: orleans-version
 
 # Use cancellation tokens in Orleans grains
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 Orleans 10.0 extends CancellationToken support to system targets, providing cancellation capabilities throughout the Orleans framework. System targets are internal components used by the Orleans runtime for cluster coordination, streaming, and other infrastructure operations.
 

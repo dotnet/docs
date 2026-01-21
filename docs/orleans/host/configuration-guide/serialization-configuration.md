@@ -9,9 +9,7 @@ zone_pivot_groups: orleans-version
 
 # Serialization configuration in Orleans
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 Serialization configuration in Orleans is a crucial part of the overall system design. While Orleans provides reasonable defaults, you can configure serialization to suit your app's needs. For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage, it's best to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
 
@@ -50,9 +48,7 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## External serializer providers
 

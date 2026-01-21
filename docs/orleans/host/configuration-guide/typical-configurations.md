@@ -15,9 +15,7 @@ Below are examples of typical configurations you can use for development and pro
 
 For more information, see [Local development configuration](local-development-configuration.md).
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ## Reliable production deployment using Azure
 
@@ -137,9 +135,7 @@ using var host = Host.CreateDefaultBuilder(args)
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Reliable production deployment using Azure
 
@@ -194,9 +190,7 @@ var client = new ClientBuilder()
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ## Reliable production deployment using SQL Server
 
@@ -323,9 +317,7 @@ using var host = Host.CreateDefaultBuilder(args)
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Reliable production deployment using SQL Server
 

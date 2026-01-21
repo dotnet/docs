@@ -28,15 +28,11 @@ Despite these drawbacks, co-hosting client code with grain code is a popular opt
 
 If you host using the [.NET Generic Host](../../core/extensions/generic-host.md), the client is automatically available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container. You can inject it into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Alternatively, you can obtain a client interface like <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> from <xref:Orleans.Hosting.ISiloHost>:
 
@@ -64,9 +60,7 @@ In a typical setup, a frontend web server:
 
 Before you can use a grain client to make calls to grains hosted in an Orleans cluster, you need to configure, initialize, and connect it to the cluster.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
@@ -127,9 +121,7 @@ When you start the `host`, the client is configured and available through its co
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Provide configuration via <xref:Orleans.ClientBuilder> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
@@ -182,9 +174,7 @@ Another mechanism for delivering asynchronous messages to clients is [Streams](.
 
 ### Client connectivity
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -197,9 +187,7 @@ In the first case, the client attempts to connect to a silo. If the client canno
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -236,17 +224,13 @@ The recommended way to create an external client in a program using the .NET Gen
 
 When connecting to a cluster in a different process (on a different machine), a common pattern is to create a hosted service like this:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 :::code source="snippets/ClusterClientHostedService.cs":::
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public class ClusterClientHostedService : IHostedService
@@ -294,17 +278,13 @@ await Host.CreateDefaultBuilder(args)
 
 Here's an extended version of the previous example showing a client application that connects to Orleans, finds the player account, subscribes for updates to the game session the player is part of using an observer, and prints notifications until the program is manually terminated.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 :::code source="snippets/ExampleExternalProgram.cs" id="program":::
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 await RunWatcherAsync();

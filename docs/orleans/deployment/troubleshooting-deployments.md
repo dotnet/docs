@@ -9,9 +9,7 @@ zone_pivot_groups: orleans-version
 
 # Troubleshoot deployments
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 This page provides general guidelines for troubleshooting common Orleans deployment issues.
 

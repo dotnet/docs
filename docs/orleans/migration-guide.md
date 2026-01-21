@@ -11,7 +11,6 @@ zone_pivot_groups: orleans-version
 
 This article provides migration guidance for upgrading between major Orleans versions. Choose your target version using the version selector above.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 ## Migrate from Orleans 7.0 to 10.0
@@ -312,9 +311,7 @@ When upgrading a project to Orleans 7.0, perform the following actions:
 
 All Orleans projects either directly or indirectly reference the `Microsoft.Orleans.Sdk` NuGet package. When an Orleans project is configured to _enable_ implicit usings (for example, `<ImplicitUsings>enable</ImplicitUsings>`), the project implicitly uses both the `Orleans` and `Orleans.Hosting` namespaces. This means app code doesn't need these `using` directives.
 
-<!-- markdownlint-disable MD044 -->
 For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#implicitusings) and [dotnet/orleans/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets](https://github.com/dotnet/orleans/blob/main/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets#L4-L5).
-<!-- markdownlint-enable MD044 -->
 
 ## Hosting
 
@@ -677,4 +674,3 @@ For Orleans 3.x users, follow the migration guidance in the Orleans 7.0 document
 > Orleans 3.x is no longer supported. Consider migrating to Orleans 10.0 for the latest features and security updates.
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->

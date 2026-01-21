@@ -12,9 +12,7 @@ This guide shows you a quick way to set up and use Orleans Streams. To learn mor
 
 ## Required configurations
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 In this guide, you use a memory-based stream that uses grain messaging to send stream data to subscribers. You use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is intended only for local development and testing, not for production environments.
 
@@ -33,9 +31,7 @@ client.AddMemoryStreams("StreamProvider");
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 In this guide, use a simple message-based stream that uses grain messaging to send stream data to subscribers. Use the in-memory storage provider to store lists of subscriptions; this isn't a wise choice for real production applications.
 
@@ -68,9 +64,7 @@ You can create streams, send data using them as producers, and receive data as s
 
 ## Produce events
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 It's relatively easy to produce events for streams. First, get access to the stream provider defined in the config previously (`"StreamProvider"`), then choose a stream and push data to it.
 
@@ -86,9 +80,7 @@ var stream = streamProvider.GetStream<int>(streamId);
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 It's relatively easy to produce events for streams. First, get access to the stream provider defined in the config previously (`"SMSProvider"`), then choose a stream and push data to it.
 
@@ -132,9 +124,7 @@ Whenever data is pushed to streams in the `RANDOMDATA` namespace (as in the time
 
 For this to work, complete the subscription process by setting the `OnNextAsync` method for receiving data. To do so, the `ReceiverGrain` should call something like this in its `OnActivateAsync`:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 // Create a GUID based on our GUID as a grain
@@ -160,9 +150,7 @@ await stream.SubscribeAsync<int>(
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 // Create a GUID based on our GUID as a grain

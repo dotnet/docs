@@ -9,9 +9,7 @@ zone_pivot_groups: orleans-version
 
 # Serialization in Orleans
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
-<!-- markdownlint-enable MD044 -->
 
 There are broadly two kinds of serialization used in Orleans:
 
@@ -460,9 +458,7 @@ For more information, see [OptionsBuilder API](../../../core/extensions/options.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 There are broadly two kinds of serialization used in Orleans:
 
@@ -786,9 +782,7 @@ For more information, see [OptionsBuilder API](../../../core/extensions/options.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Orleans has an advanced and extensible serialization framework. Orleans serializes data types passed in grain request and response messages, as well as grain persistent state objects. As part of this framework, Orleans automatically generates serialization code for these data types. In addition to generating more efficient serialization/deserialization for types already .NET-serializable, Orleans also tries to generate serializers for types used in grain interfaces that aren't .NET-serializable. The framework also includes a set of efficient built-in serializers for frequently used types: lists, dictionaries, strings, primitives, arrays, etc.
 

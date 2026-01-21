@@ -19,7 +19,6 @@ Here's what Orleans offers:
 
 Orleans is often referred to as "Distributed .NET" because of its focus on building resilient, scalable cloud-native services.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0"
 
 ## What's new in Orleans 10.0
@@ -108,7 +107,6 @@ Key differences from newer versions:
 For migration guidance, see the [Migration guide](migration-guide.md).
 
 :::zone-end
-<!-- markdownlint-enable MD044 -->
 
 ## The actor model
 

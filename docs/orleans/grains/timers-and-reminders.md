@@ -19,7 +19,6 @@ Each activation can have zero or more timers associated with it. The runtime exe
 
 ## Timer usage
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
 To start a timer, use the `RegisterGrainTimer` method, which returns an <xref:Orleans.Runtime.IGrainTimer> reference:
@@ -123,7 +122,6 @@ A timer stops triggering if the grain deactivates or when a fault occurs and its
 
 ## Migrate from RegisterTimer to RegisterGrainTimer
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
 If you're upgrading from Orleans 7.x to Orleans 8.x or later, you should migrate from the obsolete `RegisterTimer` API to the new `RegisterGrainTimer` API.

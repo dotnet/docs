@@ -9,9 +9,7 @@ zone_pivot_groups: orleans-version
 
 Consumers of Orleans rely on various NuGet packages to achieve specific desired behaviors. There are several common packages and abstractions, and many individual single purpose packages. This article provides insights to help developers learn which Orleans packages should be used.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
-<!-- markdownlint-enable MD044 -->
 
 [!INCLUDE [Orleans-version-note](../includes/orleans-version-note.md)]
 
@@ -172,9 +170,7 @@ The following packages are deprecated and should not be used in new Orleans 7.0+
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ## Key packages
 
@@ -278,9 +274,7 @@ One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/package
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Key packages
 

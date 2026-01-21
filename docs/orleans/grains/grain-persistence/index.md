@@ -36,9 +36,7 @@ You can find Orleans grain storage providers on [NuGet](https://www.nuget.org/pa
 
 Grains interact with their persistent state using <xref:Orleans.Runtime.IPersistentState%601>, where `TState` is the serializable state type:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public interface IPersistentState<TState> : IStorage<TState>
@@ -65,9 +63,7 @@ public interface IStorage
 ```
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public interface IPersistentState<TState> where TState : new()
@@ -148,9 +144,7 @@ Before a grain can use persistence, you must configure a storage provider on the
 
 First, configure storage providers, one for profile state and one for cart state:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
@@ -211,9 +205,7 @@ using IHost host = new HostBuilder()
 ---
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 var host = new HostBuilder()
@@ -364,9 +356,7 @@ The behavior of these methods corresponds to their counterparts on `IPersistentS
 
 There are two parts to the state persistence APIs: the API exposed to the grain via `IPersistentState<T>` or `Grain<T>`, and the storage provider API, centered around `IGrainStorage`—the interface storage providers must implement:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 /// <summary>
@@ -404,9 +394,7 @@ public interface IGrainStorage
 ```
 
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 /// <summary>
@@ -494,9 +482,7 @@ To register a named instance of `IGrainStorage`, use the <xref:Orleans.Runtime.K
 
 ## Redis grain persistence
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 [Redis](https://redis.io) is a popular in-memory data store that can be used for grain persistence. The `Microsoft.Orleans.Persistence.Redis` package provides a grain storage provider backed by Redis.
 

@@ -8,14 +8,10 @@ zone_pivot_groups: orleans-version
 
 # Activation collection
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 This article applies to: ✔️ Orleans 7.x and later versions
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 This article applies to: ✔️ Orleans 3.x and earlier versions
 :::zone-end
 
@@ -43,14 +39,10 @@ As a result, without burdening your application code, only recently used grain a
 
 **Collection age limit**
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 The time after which an idle grain activation becomes subject to collection is called the Collection Age Limit. The default Collection Age Limit is 15 minutes, but you can change it globally or for individual grain classes.
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 The time after which an idle grain activation becomes subject to collection is called the Collection Age Limit. The default Collection Age Limit is 2 hours, but you can change it globally or for individual grain classes.
 :::zone-end
 
@@ -101,9 +93,7 @@ A grain activation is considered idle if it isn't processing any messages at the
 
 Configure activation collection using <xref:Orleans.Configuration.GrainCollectionOptions>:
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 siloBuilder.Configure<GrainCollectionOptions>(options =>
@@ -119,9 +109,7 @@ siloBuilder.Configure<GrainCollectionOptions>(options =>
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ```csharp
 mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>

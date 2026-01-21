@@ -10,7 +10,6 @@ zone_pivot_groups: orleans-version
 
 This tutorial shows how to unit test your grains to ensure they behave correctly. There are two main ways to unit test your grains, and the method you choose depends on the type of functionality you're testing. Use the [Microsoft.Orleans.TestingHost](https://www.nuget.org/packages/Microsoft.Orleans.TestingHost) NuGet package to create test silos for your grains, or use a mocking framework like [Moq](https://github.com/moq/moq) to mock parts of the Orleans runtime your grain interacts with.
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 ## Use the `InProcessTestCluster` (recommended)
@@ -177,16 +176,13 @@ await cluster.RestartAsync();
 
 ## Use the `TestCluster`
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 The traditional `TestCluster` is still available for scenarios requiring more realistic network behavior or production-like testing. However, for most unit and integration tests, `InProcessTestCluster` is recommended.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
 The `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster>, which you can use to create an in-memory cluster (comprised of two silos by default) for testing grains.

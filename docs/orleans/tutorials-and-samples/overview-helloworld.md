@@ -14,9 +14,7 @@ The main concepts of Orleans involve a silo, a client, and one or more grains. C
 
 ## Configure the silo
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
@@ -50,9 +48,7 @@ The preceding code:
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Configure silos programmatically via `ISiloHostBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
@@ -87,9 +83,7 @@ static async Task<ISiloHost> StartSilo(string[] args)
 | `ClusterOptions`            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
 | `EndpointOptions`           | Tells the silo where to listen. For this example, use `loopback`. |
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 | Option                      | Used for |
 | --------------------------- | -------- |
@@ -101,9 +95,7 @@ After loading the configurations, build the host and then start it asynchronousl
 
 ## Configure the client
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
-<!-- markdownlint-enable MD044 -->
 
 Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
 
@@ -139,9 +131,7 @@ The preceding code:
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
 

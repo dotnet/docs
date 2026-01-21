@@ -236,7 +236,7 @@ public static class ArithmeticOperators
         {
             int c = unchecked(a / b);
         }
-        catch (OverflowException)
+        catch (ArithmeticException)
         {
             Console.WriteLine($"Overflow occurred when dividing {a} by {b}.");
         }

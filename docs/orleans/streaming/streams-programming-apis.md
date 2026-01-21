@@ -295,13 +295,29 @@ Applications can choose where and how the Pub-Sub data is stored. The Pub-Sub co
 The following configures Pub-Sub to store its state in Azure tables.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+```csharp
+using Azure.Identity;
+
+var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+hostBuilder.AddAzureTableGrainStorage("PubSubStore",
+    options => options.ConfigureTableServiceClient(endpoint, credential));
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 hostBuilder.AddAzureTableGrainStorage("PubSubStore",
-    options => options.ConfigureTableServiceClient("<Secret>"));
+    options => options.ConfigureTableServiceClient(connectionString));
 ```
+
+---
 
 :::zone-end
 
@@ -323,17 +339,38 @@ This way, Pub-Sub data is durably stored in Azure Table. For initial development
 To use streams, you need to enable [stream providers](stream-providers.md) via the silo host or cluster client builders. Sample stream provider setup:
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+```csharp
+using Azure.Identity;
+
+var tableEndpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var queueEndpoint = new Uri(configuration["AZURE_QUEUE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+hostBuilder.AddMemoryStreams("StreamProvider")
+    .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
+        optionsBuilder => optionsBuilder.Configure(
+            options => options.ConfigureQueueServiceClient(queueEndpoint, credential)))
+    .AddAzureTableGrainStorage("PubSubStore",
+        options => options.ConfigureTableServiceClient(tableEndpoint, credential));
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 hostBuilder.AddMemoryStreams("StreamProvider")
     .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
         optionsBuilder => optionsBuilder.Configure(
-            options => options.ConfigureTableServiceClient("<Secret>")))
+            options => options.ConfigureQueueServiceClient(connectionString)))
     .AddAzureTableGrainStorage("PubSubStore",
-        options => options.ConfigureTableServiceClient("<Secret>"));
+        options => options.ConfigureTableServiceClient(connectionString));
 ```
+
+---
 
 :::zone-end
 

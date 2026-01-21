@@ -244,27 +244,6 @@ app.MapOrleansDashboard()
    .RequireAuthorization("DashboardAccess");
 ```
 
-## API endpoints
-
-The dashboard exposes several JSON API endpoints that you can use programmatically:
-
-| Endpoint | Description |
-|----------|-------------|
-| `GET /version` | Returns the dashboard version |
-| `GET /DashboardCounters` | Returns cluster-wide counters and statistics |
-| `GET /ClusterStats` | Returns cluster status and silo information |
-| `GET /Reminders` | Returns paginated reminder information |
-| `GET /Reminders/{page}` | Returns a specific page of reminders |
-| `GET /HistoricalStats/{path}` | Returns historical metrics data |
-| `GET /SiloProperties/{address}` | Returns properties for a specific silo |
-| `GET /SiloStats/{address}` | Returns statistics for a specific silo |
-| `GET /SiloCounters/{address}` | Returns counters for a specific silo |
-| `GET /GrainStats/{grainName}` | Returns statistics for a specific grain type |
-| `GET /TopGrainMethods` | Returns the top 5 most-called grain methods |
-| `GET /GrainState?grainId=...&grainType=...` | Returns state for a specific grain instance |
-| `GET /GrainTypes` | Returns all registered grain types |
-| `GET /Trace` | Server-sent events endpoint for live log streaming |
-
 ## Troubleshooting
 
 ### Dashboard shows "lost connectivity" message

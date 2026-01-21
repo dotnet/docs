@@ -9,7 +9,7 @@ zone_pivot_groups: orleans-version
 # Activation collection
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 This article applies to: ✔️ Orleans 7.x and later versions
 :::zone-end
@@ -101,6 +101,28 @@ A grain activation is considered idle if it isn't processing any messages at the
 
 Configure activation collection using <xref:Orleans.Configuration.GrainCollectionOptions>:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+siloBuilder.Configure<GrainCollectionOptions>(options =>
+{
+    // Set the value of CollectionAge to 10 minutes for all grain
+    options.CollectionAge = TimeSpan.FromMinutes(10);
+
+    // Override the value of CollectionAge to 5 minutes for MyGrainImplementation
+    options.ClassSpecificCollectionAge[typeof(MyGrainImplementation).FullName] =
+        TimeSpan.FromMinutes(5);
+});
+```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
 {
@@ -110,8 +132,10 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
     // Override the value of CollectionAge to 5 minutes for MyGrainImplementation
     options.ClassSpecificCollectionAge[typeof(MyGrainImplementation).FullName] =
         TimeSpan.FromMinutes(5);
-})
+});
 ```
+
+:::zone-end
 
 ## Memory-based activation shedding
 

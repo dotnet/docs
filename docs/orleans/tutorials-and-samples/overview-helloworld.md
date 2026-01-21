@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Hello world"
 description: Explore the hello world tutorial project written with .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 01/21/2026
 ms.topic: tutorial
 zone_pivot_groups: orleans-version
 ---
@@ -54,28 +54,25 @@ The preceding code:
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+Configure silos programmatically via `ISiloHostBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
 ```csharp
 static async Task<ISiloHost> StartSilo(string[] args)
 {
-    var builder = Host.CreateApplicationBuilder(args)
-        UseOrleans(c =>
+    var siloHostBuilder = new SiloHostBuilder()
+        .UseLocalhostClustering()
+        .Configure<ClusterOptions>(options =>
         {
-            c.UseLocalhostClustering()
-                .Configure<ClusterOptions>(options =>
-                {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "HelloWorldApp";
-                })
-                .Configure<EndpointOptions>(
-                    options => options.AdvertisedIPAddress = IPAddress.Loopback)
-                .ConfigureApplicationParts(
-                    parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-                .ConfigureLogging(logging => logging.AddConsole());
-        });
+            options.ClusterId = "dev";
+            options.ServiceId = "HelloWorldApp";
+        })
+        .Configure<EndpointOptions>(
+            options => options.AdvertisedIPAddress = IPAddress.Loopback)
+        .ConfigureApplicationParts(
+            parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
+        .ConfigureLogging(logging => logging.AddConsole());
 
-    var host = builder.Build();
+    var host = siloHostBuilder.Build();
     await host.StartAsync();
 
     return host;

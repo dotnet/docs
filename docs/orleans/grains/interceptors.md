@@ -1,7 +1,7 @@
 ---
 title: Grain call filters
 description: Learn about grain call filters in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: article
 ---
 
@@ -302,7 +302,7 @@ builder.AddOutgoingGrainCallFilter(async context =>
 });
 ```
 
-In the above code, `builder` may be either an instance of <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
+In the above code, `builder` may be either an instance of `ISiloBuilder` or `IClientBuilder`.
 
 Similarly, you can register a class as an outgoing grain call filter. Here's an example of a grain call filter that logs the results of every grain method:
 
@@ -360,7 +360,7 @@ builder.ConfigureServices(
     services => services.AddSingleton<IOutgoingGrainCallFilter, LoggingCallFilter>());
 ```
 
-As with the delegate call filter example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
+As with the delegate call filter example, `builder` may be an instance of either `ISiloBuilder` or `IClientBuilder`.
 
 ## Use cases
 

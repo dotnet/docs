@@ -1,7 +1,7 @@
 ---
 title: Silo metadata
 description: Learn about silo metadata in .NET Orleans.
-ms.date: 01/08/2025
+ms.date: 01/21/2026
 ---
 
 # Silo metadata
@@ -68,17 +68,19 @@ For scenarios requiring programmatic metadata configuration, developers can add 
 #### Example: Direct Code Configuration
 
 ```csharp
-var siloBuilder = new SiloHostBuilder()
-    .UseSiloMetadata(new Dictionary<string, string>
-        {
-            ["cloud.region"] = "us-east1",
-            ["compute.reservation.type"] = "spot",
-            ["role"] = "worker"
-        });
-
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseSiloMetadata(new Dictionary<string, string>
+    {
+        ["cloud.region"] = "us-east1",
+        ["compute.reservation.type"] = "spot",
+        ["role"] = "worker"
+    });
+});
 ```
 
-The preceding example achieves the same result as the JSON configuration but allows metadata values to be computed or loaded dynamically during Silo initialization.
+The preceding example achieves the same result as the JSON configuration but allows metadata values to be computed or loaded dynamically during silo initialization.
 
 ### Merge configurations
 

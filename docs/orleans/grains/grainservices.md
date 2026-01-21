@@ -1,7 +1,7 @@
 ---
 title: Create a GrainService
 description: Learn how to create a GrainService in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: article
 zone_pivot_groups: orleans-version
 ---
@@ -147,12 +147,35 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 1. Configure the grain service and grain service client in the silo. You need to do this so the silo starts the `GrainService`.
 
+    <!-- markdownlint-disable MD044 -->
+    :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+    <!-- markdownlint-enable MD044 -->
+
+    ```csharp
+    builder.UseOrleans(siloBuilder =>
+    {
+        siloBuilder.ConfigureServices(services =>
+        {
+            services.AddGrainService<DataService>()
+                    .AddSingleton<IDataServiceClient, DataServiceClient>();
+        });
+    });
+    ```
+
+    :::zone-end
+
+    <!-- markdownlint-disable MD044 -->
+    :::zone target="docs" pivot="orleans-3-x"
+    <!-- markdownlint-enable MD044 -->
+
     ```csharp
     (ISiloHostBuilder builder) =>
         builder.ConfigureServices(
             services => services.AddGrainService<DataService>()
                                 .AddSingleton<IDataServiceClient, DataServiceClient>());
     ```
+
+    :::zone-end
 
 ## Additional notes
 

@@ -17,7 +17,7 @@ In this tutorial, you'll walk through how to write a simple file-based grain sto
 An Orleans grain storage provider is a class that implements `IGrainStorage`, included in the [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It also inherits from `ILifecycleParticipant<ISiloLifecycle>`, allowing you to subscribe to specific events in the silo's lifecycle. Start by creating a class named `FileGrainStorage`.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 ```csharp
@@ -461,14 +461,11 @@ return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.C
 This enables adding the file storage using the extension on `ISiloHostBuilder`:
 
 ```csharp
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var silo = new SiloHostBuilder()
+    .UseLocalhostClustering()
+    .AddFileGrainStorage("File", opts =>
     {
-        builder.UseLocalhostClustering()
-            .AddFileGrainStorage("File", opts =>
-            {
-                opts.RootDirectory = "C:/TestFiles";
-            });
+        opts.RootDirectory = "C:/TestFiles";
     })
     .Build();
 ```

@@ -1,8 +1,9 @@
 ---
 title: Orleans silo lifecycles
 description: Learn about .NET Orleans silo lifecycles.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: overview
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans silo lifecycle overview
@@ -110,7 +111,29 @@ class StartupTask : ILifecycleParticipant<ISiloLifecycle>
 
 From the preceding implementation, you can see that in the `Participate(...)` call, it subscribes to the silo lifecycle at the configured stage, passing the application callback rather than its initialization logic. Components needing initialization at a given stage would provide their callback, but the pattern remains the same. Now that you have a `StartupTask` ensuring the application's hook is called at the configured stage, you need to ensure the `StartupTask` participates in the silo lifecycle.
 
-For this, you only need to register it in the container. Do this using an extension function on <xref:Orleans.Hosting.ISiloHostBuilder>:
+For this, you only need to register it in the container. Do this using an extension function on the silo builder:
+
+:::zone pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
+```csharp
+public static ISiloBuilder AddStartupTask(
+    this ISiloBuilder builder,
+    Func<IServiceProvider, CancellationToken, Task> startupTask,
+    int stage = ServiceLifecycleStage.Active)
+{
+    builder.ConfigureServices(services =>
+        services.AddTransient<ILifecycleParticipant<ISiloLifecycle>>(
+            serviceProvider =>
+                new StartupTask(
+                    serviceProvider, startupTask, stage)));
+
+    return builder;
+}
+```
+
+:::zone-end
+
+:::zone pivot="orleans-3-x"
 
 ```csharp
 public static ISiloHostBuilder AddStartupTask(
@@ -127,5 +150,7 @@ public static ISiloHostBuilder AddStartupTask(
     return builder;
 }
 ```
+
+:::zone-end
 
 By registering the `StartupTask` in the silo's service container as the marker interface `ILifecycleParticipant<ISiloLifecycle>`, you signal to the silo that this component needs to participate in the silo lifecycle.

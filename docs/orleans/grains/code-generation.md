@@ -13,7 +13,7 @@ Before Orleans 7.0, source generation was more manual and required explicit deve
 ## Enable code generation
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 Orleans generates C# source code for the app at build time. All projects, including the host, need the appropriate NuGet packages installed to enable code generation. The following packages are available:
@@ -37,7 +37,7 @@ The Orleans runtime uses generated code to ensure proper serialization of types 
 ### Build-time code generation
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 At build time, Orleans generates code for all types marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with `GenerateSerializer`, Orleans won't serialize it.
@@ -71,7 +71,7 @@ Emit additional diagnostics at build time by specifying a value for `OrleansCode
 ### Initialization-time code generation
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 In Orleans 7+, nothing happens during initialization. Code generation occurs only at build time.
@@ -107,7 +107,7 @@ codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
 ## Influence code generation
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 When applying <xref:Orleans.GenerateSerializerAttribute> to a type, the <xref:Orleans.IdAttribute> can also be applied to uniquely identify the member. Likewise, an alias can be applied using the <xref:Orleans.AliasAttribute>. For more information on influencing code generation, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).

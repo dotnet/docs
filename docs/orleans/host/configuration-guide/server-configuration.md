@@ -1,7 +1,7 @@
 ---
 title: Server configuration
 description: Learn how to configure .NET Orleans server settings.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -10,7 +10,7 @@ ms.custom: sfi-ropc-nochange
 # Server configuration
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 Configure a silo programmatically using the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Orleans.Hosting.ISiloBuilder})> extension method and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md) and can be loaded from files, environment variables, or any other valid configuration provider.
@@ -129,23 +129,20 @@ There are several key aspects of silo configuration:
 This example shows a silo configuration defining cluster information, using Azure clustering, and configuring application parts:
 
 ```csharp
-var silo = Host.CreateDefaultBuilder(args)
-    .UseOrleans(builder =>
+var siloHostBuilder = new SiloHostBuilder()
+    .UseAzureStorageClustering(
+        options => options.ConnectionString = connectionString)
+    .Configure<ClusterOptions>(options =>
     {
-        builder
-            .UseAzureStorageClustering(
-                options => options.ConnectionString = connectionString)
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "my-first-cluster";
-                options.ServiceId = "AspNetSampleApp";
-            })
-            .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-            .ConfigureApplicationParts(
-                parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "AspNetSampleApp";
     })
-    .UseConsoleLifetime()
-    .Build();
+    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+    .ConfigureApplicationParts(
+        parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences());
+
+var silo = siloHostBuilder.Build();
+await silo.StartAsync();
 ```
 
 Let's break down the steps used in this sample:

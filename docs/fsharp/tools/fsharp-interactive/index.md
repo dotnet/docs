@@ -169,6 +169,11 @@ Examples:
 #r "nuget:fsharp.data,6.6.0,usepackagetargets=true"
 ```
 
+> [!IMPORTANT]
+> Referencing packages with `#r` carries the same security considerations as any other form of package reference.
+> Only include dependencies from sources you trust.
+> You can learn more about securing your software supply chain [here](https://learn.microsoft.com/nuget/concepts/security-best-practices)
+
 ### Specifying a package source
 
 You can also specify a package source with the `#i` command. The following examples specify remote and local sources:

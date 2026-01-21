@@ -2,6 +2,7 @@
 title: "Breaking change: IHubClients and IHubCallerClients hide members"
 description: Learn about the breaking change in ASP.NET Core 7.0 where IHubClients and IHubCallerClients hide two interface members.
 ms.date: 06/22/2022
+ms.custom: https://github.com/aspnet/Announcements/issues/487
 ---
 # IHubClients and IHubCallerClients hide members
 

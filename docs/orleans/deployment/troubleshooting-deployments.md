@@ -29,10 +29,13 @@ If this exception occurs during initial client connection (`IClusterClient.Conne
 - **Incorrect clustering configuration**: Verify that the client and silos use the same clustering provider and connection settings.
 - **Network connectivity issues**: Check firewall rules and network security groups to ensure the client can reach silo gateway endpoints.
 
-## Common connection string issues
+## Common configuration issues
 
-- **Using local connection strings when deploying to cloud environments**: Ensure connection strings are appropriate for the deployment environment.
-- **Mismatched connection strings between components**: All silos and clients must use the same clustering provider connection string to join the same cluster.
+> [!TIP]
+> Use managed identity instead of connection strings whenever possible. Connection strings contain secrets and should be avoided in production.
+
+- **Mismatched configuration between components**: All silos and clients must use the same clustering provider and configuration to join the same cluster.
+- **Using local configuration when deploying to cloud environments**: Ensure clustering provider configuration is appropriate for the deployment environment.
 
 ## Version issues
 

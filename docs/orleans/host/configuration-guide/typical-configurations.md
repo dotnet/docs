@@ -78,7 +78,8 @@ using var host = Host.CreateDefaultBuilder(args)
 
 ### [Connection string](#tab/connection-string)
 
-Using a connection string is suitable for development scenarios or when managed identity isn't available.
+> [!WARNING]
+> Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
 
 The format of the `DataConnection` string is a semicolon-separated list of `Key=Value` pairs. The following options are supported:
 

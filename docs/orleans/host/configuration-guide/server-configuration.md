@@ -48,7 +48,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
 
 ### [Connection string](#tab/connection-string)
 
-Using a connection string is suitable for development scenarios or when managed identity isn't available.
+> [!WARNING]
+> Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
 
 ```csharp
 using IHost host = Host.CreateDefaultBuilder(args)

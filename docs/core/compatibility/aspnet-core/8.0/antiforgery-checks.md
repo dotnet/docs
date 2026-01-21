@@ -33,12 +33,12 @@ Configure anti-forgery services and middleware for Minimal API endpoints that bi
 
 For detailed guidance on how to properly configure and use anti-forgery tokens in Minimal APIs, see [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core](/aspnet/core/security/anti-request-forgery). The article covers:
 
-- Instructions for resolving missing anti-forgery middleware exceptions at startup.
+- How to resolve missing anti-forgery middleware exceptions at startup.
 - How to register anti-forgery services and middleware.
 - How to generate and validate anti-forgery tokens in Minimal APIs.
-- Complete code examples for form handling with file uploads.
+- How to use complete code examples for form handling with file uploads.
 - How to troubleshoot token validation failures and common errors.
-- Security best practices for CSRF protection.
+- How to apply security best practices for CSRF protection.
 
 ## Affected APIs
 

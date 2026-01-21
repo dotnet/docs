@@ -1,11 +1,11 @@
 ---
-title: Build ambient metadata
-description: Learn how to use build metadata to capture and access CI/CD build information about your application at runtime in .NET.
+title: Ambient metadata about build
+description: Learn how to use ambient build metadata to capture and access CI/CD build information about your application at runtime in .NET.
 ms.date: 01/16/2026
 ai-usage: ai-assisted
 ---
 
-# Build ambient metadata
+# Ambient metadata about build
 
 The [`Microsoft.Extensions.AmbientMetadata.Build`](https://www.nuget.org/packages/Microsoft.Extensions.AmbientMetadata.Build) NuGet package provides functionality to capture build-related information and access it at runtime. During the build process, source generation captures details from CI/CD pipelines (such as build IDs, commit information, and branch names) and embeds them into the compiled application, making them available for traceability, troubleshooting, and deployment tracking.
 

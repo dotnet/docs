@@ -152,6 +152,116 @@ public Task GrainMethod6()
 
 `ValueTask<T>` can be used instead of `Task<T>`.
 
+## IAsyncEnumerable return values
+
+> [!NOTE]
+> `IAsyncEnumerable<T>` support in grain methods was introduced in Orleans 7.2.
+
+Orleans supports returning `IAsyncEnumerable<T>` from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
+
+- Returning large collections of data progressively
+- Streaming real-time updates
+- Processing results as they become available
+
+### Define a streaming grain interface
+
+```csharp
+public interface IDataGrain : IGrainWithStringKey
+{
+    // Returns a streaming sequence of items
+    IAsyncEnumerable<DataItem> GetAllItemsAsync();
+    
+    // Can also include CancellationToken for cancellation support
+    IAsyncEnumerable<DataItem> GetItemsAsync(CancellationToken cancellationToken = default);
+}
+```
+
+### Implement the streaming method
+
+Use the `yield return` statement or return an `IAsyncEnumerable<T>` directly:
+
+```csharp
+public class DataGrain : Grain, IDataGrain
+{
+    public async IAsyncEnumerable<DataItem> GetAllItemsAsync()
+    {
+        for (int i = 0; i < 1000; i++)
+        {
+            // Simulate async data retrieval
+            var item = await FetchItemAsync(i);
+            yield return item;
+        }
+    }
+    
+    public async IAsyncEnumerable<DataItem> GetItemsAsync(
+        [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    {
+        int id = 0;
+        while (!cancellationToken.IsCancellationRequested)
+        {
+            var item = await FetchItemAsync(id++);
+            yield return item;
+        }
+    }
+    
+    private Task<DataItem> FetchItemAsync(int id) => 
+        Task.FromResult(new DataItem { Id = id });
+}
+
+[GenerateSerializer]
+public class DataItem
+{
+    [Id(0)]
+    public int Id { get; set; }
+}
+```
+
+### Consume the streaming method
+
+```csharp
+var grain = client.GetGrain<IDataGrain>("mydata");
+
+await foreach (var item in grain.GetAllItemsAsync())
+{
+    Console.WriteLine($"Received item: {item.Id}");
+    
+    // Process each item as it arrives
+    await ProcessItemAsync(item);
+}
+```
+
+### Configure batch size
+
+Orleans batches multiple elements together to reduce network round trips. You can configure the batch size using the `WithBatchSize` extension method:
+
+```csharp
+// Request up to 50 elements per batch instead of the default 100
+await foreach (var item in grain.GetAllItemsAsync().WithBatchSize(50))
+{
+    await ProcessItemAsync(item);
+}
+```
+
+### IAsyncEnumerable vs Orleans Streams
+
+| Feature | IAsyncEnumerable | Orleans Streams |
+|---------|------------------|-----------------|
+| **Use case** | Request-response streaming | Pub-sub messaging |
+| **Lifetime** | Scoped to single call | Persistent subscriptions |
+| **Direction** | Grain to caller only | Any producer to any subscriber |
+| **Backpressure** | Built-in | Provider-dependent |
+| **Persistence** | No | Optional (provider-dependent) |
+
+Use `IAsyncEnumerable<T>` when:
+- You need a simple request-response pattern with streaming results
+- The caller initiates the data flow and consumes all results
+- You want automatic backpressure and cancellation support
+
+Use [Orleans Streams](../streaming/index.md) when:
+- You need pub-sub messaging with multiple subscribers
+- Subscriptions should survive grain deactivation
+- You need persistent or durable streams
+
 ## Grain references
 
 A grain reference is a proxy object implementing the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. You use grain references to make calls to the target grain. Each grain reference points to a single grain (a single instance of the grain class), but you can create multiple independent references to the same grain.

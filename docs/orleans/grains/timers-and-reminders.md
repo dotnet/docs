@@ -295,6 +295,43 @@ The <xref:Orleans.Configuration.RedisReminderTableOptions> class provides the fo
 | `EntryExpiry` | `TimeSpan?` | Optional expiration time for reminder entries. Only set this for ephemeral environments like testing. Default is `null`. |
 | `CreateMultiplexer` | `Func<RedisReminderTableOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
 
+Azure Cosmos DB:
+
+> [!NOTE]
+> Azure Cosmos DB reminder support was introduced in Orleans 7.2.
+
+Install the [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) NuGet package and configure with `UseCosmosReminderService`:
+
+```csharp
+using Azure.Identity;
+
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
+    {
+        builder.UseCosmosReminderService(options =>
+        {
+            options.ConfigureCosmosClient(
+                "https://myaccount.documents.azure.com:443/",
+                new DefaultAzureCredential());
+            options.DatabaseName = "Orleans";
+            options.ContainerName = "OrleansReminders";
+            options.IsResourceCreationEnabled = true;
+        });
+    })
+    .Build();
+```
+
+The <xref:Orleans.Reminders.Cosmos.CosmosReminderTableOptions> class provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `DatabaseName` | `string` | `"Orleans"` | The name of the Cosmos DB database. |
+| `ContainerName` | `string` | `"OrleansReminders"` | The name of the container for reminder data. |
+| `IsResourceCreationEnabled` | `bool` | `false` | When `true`, automatically creates the database and container if they don't exist. |
+| `DatabaseThroughput` | `int?` | `null` | The provisioned throughput for the database. If `null`, uses serverless mode. |
+| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container. |
+| `ClientOptions` | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client. |
+
 > [!IMPORTANT]
 > If you have a heterogenous cluster, where the silos handle different grain types (implement different interfaces), every silo must add the configuration for Reminders, even if the silo itself doesn't handle any reminders.
 

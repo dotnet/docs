@@ -347,3 +347,95 @@ public class MyGrain : Grain, IMyGrain
 ```
 
 :::zone-end
+
+## Activation repartitioning
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+<!-- markdownlint-enable MD044 -->
+
+Activation repartitioning is a feature that automatically optimizes grain call locality by migrating grain activations to be closer to the grains they communicate with most frequently. This feature can significantly improve performance by reducing network hops for inter-grain communication.
+
+> [!WARNING]
+> Activation repartitioning is an experimental feature. Use the `#pragma warning disable ORLEANSEXP001` directive or add `<NoWarn>ORLEANSEXP001</NoWarn>` to your project file to suppress the experimental warning.
+
+### How it works
+
+The repartitioner monitors grain-to-grain communication patterns and builds a graph of "edges" representing how frequently grains communicate. Periodically, it analyzes this graph to identify opportunities to improve locality by migrating grains to silos where their communication partners are located, while maintaining an approximately equal distribution of activations across silos.
+
+Key characteristics:
+- **Probabilistic tracking**: Uses a probabilistic data structure to track the heaviest communication links while conserving memory
+- **Balanced distribution**: Attempts to keep activation counts balanced across silos
+- **Recovery period**: After migrating grains, a silo waits before participating in another repartitioning round to allow the system to stabilize
+- **Anchoring filter**: Identifies well-partitioned grains (those already close to their communication partners) and avoids migrating them
+
+### Enable activation repartitioning
+
+Enable activation repartitioning using the `AddActivationRepartitioner` extension method:
+
+```csharp
+#pragma warning disable ORLEANSEXP001
+siloBuilder.AddActivationRepartitioner();
+#pragma warning restore ORLEANSEXP001
+```
+
+### Configuration options
+
+Configure the repartitioner using <xref:Orleans.Configuration.ActivationRepartitionerOptions>:
+
+```csharp
+#pragma warning disable ORLEANSEXP001
+siloBuilder.AddActivationRepartitioner();
+siloBuilder.Configure<ActivationRepartitionerOptions>(options =>
+{
+    options.MaxEdgeCount = 10_000;
+    options.MinRoundPeriod = TimeSpan.FromMinutes(1);
+    options.MaxRoundPeriod = TimeSpan.FromMinutes(2);
+    options.RecoveryPeriod = TimeSpan.FromMinutes(1);
+    options.AnchoringFilterEnabled = true;
+});
+#pragma warning restore ORLEANSEXP001
+```
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `MaxEdgeCount` | `int` | 10,000 | Maximum number of edges (grain communication links) to track. Higher values improve accuracy but use more memory. Values under 100 are not recommended. |
+| `MaxUnprocessedEdges` | `int` | 100,000 | Maximum number of unprocessed edges to buffer. Oldest edges are discarded when exceeded. |
+| `MinRoundPeriod` | `TimeSpan` | 1 minute | Minimum time between repartitioning rounds. |
+| `MaxRoundPeriod` | `TimeSpan` | 2 minutes | Maximum time between repartitioning rounds. Actual timing is random between min and max. For optimal results, aim for ~10 seconds multiplied by the maximum silo count. |
+| `RecoveryPeriod` | `TimeSpan` | 1 minute | Time a silo waits after a repartitioning round before participating in another. Must be less than or equal to `MinRoundPeriod`. |
+| `AnchoringFilterEnabled` | `bool` | `true` | Enables tracking of well-partitioned grains to avoid unnecessarily migrating them. Reduces accuracy slightly but improves effectiveness. |
+| `ProbabilisticFilteringMaxAllowedErrorRate` | `double` | 0.01 | Maximum error rate for the probabilistic filter (0.1% to 1% range). Only applies when `AnchoringFilterEnabled` is `true`. |
+
+### Performance considerations
+
+- **Convergence time**: The repartitioner gradually improves locality over multiple rounds. If the system isn't converging fast enough, consider increasing `MaxEdgeCount`.
+- **Memory usage**: Higher `MaxEdgeCount` values consume more memory. The probabilistic data structure helps limit memory usage while maintaining reasonable accuracy.
+- **Cluster stability**: Avoid very short `RecoveryPeriod` values to prevent excessive grain migration.
+- **Workload patterns**: Works best with workloads that have stable communication patterns. Highly dynamic workloads may see less benefit.
+
+### When to use activation repartitioning
+
+Consider enabling activation repartitioning when:
+- Your grains have predictable communication patterns (grain A frequently calls grain B)
+- You have a multi-silo cluster where network latency between silos is significant
+- Benchmarking shows improved throughput with the feature enabled
+
+Avoid activation repartitioning when:
+- Grains communicate with many different grains randomly
+- Your cluster is small (2-3 silos) where migration overhead may outweigh benefits
+- Your grains frequently deactivate and reactivate, preventing stable patterns from emerging
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0"
+
+Activation repartitioning was introduced as an experimental feature in Orleans 8.2. For the latest documentation on this feature, see the Orleans 9.0+ documentation.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
+Activation repartitioning is available in Orleans 8.2 and later.
+
+:::zone-end

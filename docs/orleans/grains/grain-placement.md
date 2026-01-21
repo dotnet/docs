@@ -1,15 +1,30 @@
 ---
 title: Grain placement
 description: Learn about grain placement in .NET Orleans.
-ms.date: 03/31/2025
+ms.date: 01/20/2026
 ms.topic: article
+zone_pivot_groups: orleans-version
 ---
 
 # Grain placement
 
 Orleans ensures that when a grain call is made, an instance of that grain is available in memory on some server in the cluster to handle the request. If the grain isn't currently active in the cluster, Orleans picks a server to activate the grain on. This process is called _grain placement_. Placement is also one way Orleans balances load: placing busy grains evenly helps distribute the workload across the cluster.
 
-The placement process in Orleans is fully configurable. Choose from out-of-the-box placement policies such as random, prefer-local, and load-based, or configure custom logic. This allows full flexibility in deciding where grains are created. For example, place grains on a server close to resources they need to operate on or close to other grains they communicate with. By default, Orleans picks a random compatible server.
+The placement process in Orleans is fully configurable. Choose from out-of-the-box placement policies such as random, prefer-local, and load-based, or configure custom logic. This allows full flexibility in deciding where grains are created. For example, place grains on a server close to resources they need to operate on or close to other grains they communicate with.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+> [!NOTE]
+> Starting in Orleans 9.2, the default placement strategy changed from **random placement** to **resource-optimized placement**. This provides better load distribution based on CPU and memory utilization across silos. If you require the previous random placement behavior, explicitly configure it as described in [Configure the default placement strategy](#configure-the-default-placement-strategy).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
+
+By default, Orleans picks a random compatible server.
+
+:::zone-end
 
 Configure the placement strategy Orleans uses globally or per grain class.
 
@@ -47,6 +62,28 @@ This is a deterministic placement strategy placing grains on silos with a specif
 
 ## Resource-optimized placement
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+> [!IMPORTANT]
+> Starting in Orleans 9.2, resource-optimized placement is the **default** placement strategy. You no longer need to explicitly configure it unless you want to customize the options.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0"
+
+Resource-optimized placement was introduced in Orleans 8.1. To use it, add the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to your grain class.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
+Resource-optimized placement is not available in this version of Orleans. Consider upgrading to Orleans 8.1 or later to use this feature.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
+
 The resource-optimized placement strategy attempts to optimize cluster resources by balancing grain activations across silos based on available memory and CPU usage. It assigns weights to runtime statistics to prioritize different resources and calculates a normalized score for each silo. The silo with the lowest score is chosen for placing the upcoming activation. Normalization ensures each property contributes proportionally to the overall score. Adjust weights via <xref:Orleans.Configuration.ResourceOptimizedPlacementOptions> based on specific requirements and priorities for different resources.
 
 Additionally, this placement strategy exposes an option to build a stronger *preference* for the local silo (the one receiving the request to make a new placement) to be picked as the target for the activation. Control this via the `LocalSiloPreferenceMargin` property, part of the options.
@@ -56,6 +93,33 @@ Also, an [*online*](https://en.wikipedia.org/wiki/Online_algorithm), [*adaptive*
 This algorithm is based on [*Resource-based placement with cooperative dual-mode Kalman filtering*](https://www.ledjonbehluli.com/posts/orleans_resource_placement_kalman/).
 
 Configure this placement strategy by adding the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to the grain class.
+
+### ResourceOptimizedPlacementOptions
+
+Configure the resource-optimized placement strategy using <xref:Orleans.Configuration.ResourceOptimizedPlacementOptions>:
+
+```csharp
+siloBuilder.Configure<ResourceOptimizedPlacementOptions>(options =>
+{
+    options.CpuUsageWeight = 40;
+    options.MemoryUsageWeight = 20;
+    options.AvailableMemoryWeight = 20;
+    options.MaxAvailableMemoryWeight = 5;
+    options.ActivationCountWeight = 15;
+    options.LocalSiloPreferenceMargin = 5;
+});
+```
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `CpuUsageWeight` | `int` | 40 | The importance of CPU usage. Higher values favor silos with lower CPU usage. Valid range: 0-100. |
+| `MemoryUsageWeight` | `int` | 20 | The importance of memory usage. Higher values favor silos with lower memory usage. Valid range: 0-100. |
+| `AvailableMemoryWeight` | `int` | 20 | The importance of available memory. Higher values favor silos with more available memory. Valid range: 0-100. |
+| `MaxAvailableMemoryWeight` | `int` | 5 | The importance of maximum available memory. Higher values favor silos with higher physical memory capacity. Useful in clusters with unevenly distributed resources. Valid range: 0-100. |
+| `ActivationCountWeight` | `int` | 15 | The importance of activation count. Higher values favor silos with fewer active grains. Valid range: 0-100. |
+| `LocalSiloPreferenceMargin` | `int` | 5 | Margin for preferring the local silo. When set to 0, always selects the silo with lowest utilization. When set to 100, always prefers the local silo (equivalent to `PreferLocalPlacement`). Recommended: 5-10. Valid range: 0-100. |
+
+:::zone-end
 
 ## Choose a placement strategy
 
@@ -76,12 +140,37 @@ Ultimately, experiment with different strategies and monitor performance metrics
 
 ## Configure the default placement strategy
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
+
+Starting in Orleans 9.2, Orleans uses resource-optimized placement by default. Override the default placement strategy by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration.
+
+To revert to the previous random placement behavior:
+
+```csharp
+siloBuilder.ConfigureServices(services =>
+    services.AddSingleton<PlacementStrategy, RandomPlacement>());
+```
+
+To use a custom placement strategy:
+
+```csharp
+siloBuilder.ConfigureServices(services =>
+    services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
+```
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
+
 Orleans uses random placement unless the default is overridden. Override the default placement strategy by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration:
 
 ```csharp
 siloBuilder.ConfigureServices(services =>
     services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
 ```
+
+:::zone-end
 
 ## Configure the placement strategy for a grain
 

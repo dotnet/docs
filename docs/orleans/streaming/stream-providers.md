@@ -30,7 +30,6 @@ The [Microsoft.Orleans.Streaming.AzureStorage](https://www.nuget.org/packages/Mi
 
 Different stream providers delivering events over durable queues exhibit similar behavior and are subject to similar implementations. Therefore, we provide a generic extensible <xref:Orleans.Providers.Streams.Common.PersistentStreamProvider> that allows you to plug in different types of queues without writing a completely new stream provider from scratch. `PersistentStreamProvider` uses an <xref:Orleans.Streams.IQueueAdapter> component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events. The logic inside `PersistentStreamProvider` handles everything else. The Azure Queue Provider mentioned above is also implemented this way: it's an instance of `PersistentStreamProvider` that uses an `AzureQueueAdapter`.
 
-:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0"
 :::zone-end
 
 :::zone target="docs" pivot="orleans-3-x"

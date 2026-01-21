@@ -291,8 +291,6 @@ If the `/Trace` endpoint returns 403 Forbidden:
 
 ## See also
 
-- <xref:Orleans.Dashboard.DashboardOptions>
-- <xref:Orleans.Dashboard.GrainProfilerOptions>
 - [Observability in Orleans](../host/monitoring/index.md)
 - [NuGet packages](../resources/nuget-packages.md)
 

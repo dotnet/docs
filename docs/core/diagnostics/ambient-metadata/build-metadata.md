@@ -122,9 +122,8 @@ Here's a complete example showing how to set up and use build metadata:
 
 :::code language="csharp" source="snippets/buildmetadata/Program.cs":::
 
-In the example above:
-
-- We use `appsettings.json` to configure build metadata properties *manually*. This is for demonstration purposes; in a real CI/CD scenario, these values would be captured automatically from respective environment variables, and you don't need to have them in `appsettings.json`.
+> [!NOTE]
+> This example uses `appsettings.json` to configure build metadata properties *manually*. This is for demonstration purposes; in a real CI/CD scenario, these values would be captured automatically from respective environment variables, and you don't need to have them in `appsettings.json`.
 
 ### Output
 

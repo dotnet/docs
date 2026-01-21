@@ -23,6 +23,43 @@ The following official implementations of `IMembershipTable` are currently avail
 * [Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis),
 * and an in-memory implementation for development.
 
+### Configure Redis clustering
+
+Configure Redis as the clustering provider using the <xref:Microsoft.Extensions.Hosting.RedisClusteringISiloBuilderExtensions.UseRedisClustering%2A> extension method:
+
+```csharp
+using StackExchange.Redis;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseRedisClustering(options =>
+    {
+        options.ConfigurationOptions = new ConfigurationOptions
+        {
+            EndPoints = { "localhost:6379" },
+            AbortOnConnectFail = false
+        };
+    });
+});
+```
+
+Alternatively, you can use a connection string:
+
+```csharp
+siloBuilder.UseRedisClustering("localhost:6379");
+```
+
+The <xref:Orleans.Clustering.Redis.RedisClusteringOptions> class provides the following configuration options:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `ConfigurationOptions` | `ConfigurationOptions` | The StackExchange.Redis client configuration. Required. |
+| `EntryExpiry` | `TimeSpan?` | Optional expiration time for entries. Only set this for ephemeral environments like testing. Default is `null`. |
+| `CreateMultiplexer` | `Func<RedisClusteringOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
+| `CreateRedisKey` | `Func<ClusterOptions, RedisKey>` | Custom function to generate the Redis key for the membership table. Default format is `{ServiceId}/members/{ClusterId}`. |
+
 > [!IMPORTANT]
 > Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
 

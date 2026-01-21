@@ -267,6 +267,34 @@ var silo = new HostBuilder()
     .Build();
 ```
 
+Redis:
+
+```csharp
+using StackExchange.Redis;
+
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
+    {
+        builder.UseRedisReminderService(options =>
+        {
+            options.ConfigurationOptions = new ConfigurationOptions
+            {
+                EndPoints = { "localhost:6379" },
+                AbortOnConnectFail = false
+            };
+        });
+    })
+    .Build();
+```
+
+The <xref:Orleans.Configuration.RedisReminderTableOptions> class provides the following configuration options:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `ConfigurationOptions` | `ConfigurationOptions` | The StackExchange.Redis client configuration. Required. |
+| `EntryExpiry` | `TimeSpan?` | Optional expiration time for reminder entries. Only set this for ephemeral environments like testing. Default is `null`. |
+| `CreateMultiplexer` | `Func<RedisReminderTableOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
+
 > [!IMPORTANT]
 > If you have a heterogenous cluster, where the silos handle different grain types (implement different interfaces), every silo must add the configuration for Reminders, even if the silo itself doesn't handle any reminders.
 

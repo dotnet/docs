@@ -30,6 +30,7 @@ You can find Orleans grain storage providers on [NuGet](https://www.nuget.org/pa
 - [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage): For Azure Storage, including Azure Blob Storage and Azure Table Storage (via the Azure Table Storage API). For more information, see [Azure Storage grain persistence](azure-storage.md).
 - [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos): The Azure Cosmos DB provider. For more information, see [Azure Cosmos DB grain persistence](azure-cosmos-db.md).
 - [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB): For Amazon DynamoDB. For more information, see [Amazon DynamoDB grain persistence](dynamodb-storage.md).
+- [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis): For Redis. For more information, see [Redis grain persistence](#redis-grain-persistence).
 
 ## API
 
@@ -148,8 +149,40 @@ Before a grain can use persistence, you must configure a storage provider on the
 First, configure storage providers, one for profile state and one for cart state:
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments.
+
+```csharp
+using Azure.Identity;
+
+var tableEndpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var blobEndpoint = new Uri(configuration["AZURE_BLOB_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+using IHost host = new HostBuilder()
+    .UseOrleans(siloBuilder =>
+    {
+        siloBuilder.AddAzureTableGrainStorage(
+            name: "profileStore",
+            configureOptions: options =>
+            {
+                options.ConfigureTableServiceClient(tableEndpoint, credential);
+            })
+            .AddAzureBlobGrainStorage(
+                name: "cartStore",
+                configureOptions: options =>
+                {
+                    options.ConfigureBlobServiceClient(blobEndpoint, credential);
+                });
+    })
+    .Build();
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 using IHost host = new HostBuilder()
@@ -168,12 +201,14 @@ using IHost host = new HostBuilder()
                 configureOptions: options =>
                 {
                     // Configure the storage connection key
-                    options.ConfigureTableServiceClient(
+                    options.ConfigureBlobServiceClient(
                         "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
                 });
     })
     .Build();
 ```
+
+---
 
 :::zone-end
 <!-- markdownlint-disable MD044 -->
@@ -456,3 +491,106 @@ Individual storage providers should decide how best to store grain state – blo
 The Orleans runtime resolves a storage provider from the service provider (<xref:System.IServiceProvider>) when a grain is created. The runtime resolves an instance of <xref:Orleans.Storage.IGrainStorage>. If the storage provider is named (for example, via the `[PersistentState(stateName, storageName)]` attribute), then a named instance of `IGrainStorage` is resolved.
 
 To register a named instance of `IGrainStorage`, use the <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A> extension method, following the example of the [AzureTableGrainStorage provider here](https://github.com/dotnet/orleans/blob/af974d37864f85bfde5dc02f2f60bba997f2162d/src/Azure/Orleans.Persistence.AzureStorage/Hosting/AzureTableSiloBuilderExtensions.cs#L78).
+
+## Redis grain persistence
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+<!-- markdownlint-enable MD044 -->
+
+[Redis](https://redis.io) is a popular in-memory data store that can be used for grain persistence. The `Microsoft.Orleans.Persistence.Redis` package provides a grain storage provider backed by Redis.
+
+### Configure Redis grain storage
+
+Configure Redis grain storage using the <xref:Orleans.Hosting.RedisSiloBuilderExtensions.AddRedisGrainStorage%2A> extension method:
+
+```csharp
+using StackExchange.Redis;
+
+using IHost host = new HostBuilder()
+    .UseOrleans(siloBuilder =>
+    {
+        siloBuilder.AddRedisGrainStorage(
+            name: "redis",
+            configureOptions: options =>
+            {
+                options.ConfigurationOptions = new ConfigurationOptions
+                {
+                    EndPoints = { "localhost:6379" },
+                    AbortOnConnectFail = false
+                };
+            });
+    })
+    .Build();
+```
+
+To configure Redis as the default grain storage provider, use <xref:Orleans.Hosting.RedisSiloBuilderExtensions.AddRedisGrainStorageAsDefault%2A>:
+
+```csharp
+siloBuilder.AddRedisGrainStorageAsDefault(options =>
+{
+    options.ConfigurationOptions = new ConfigurationOptions
+    {
+        EndPoints = { "localhost:6379" }
+    };
+});
+```
+
+### Redis storage options
+
+The <xref:Orleans.Persistence.RedisStorageOptions> class provides the following configuration options:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `ConfigurationOptions` | `ConfigurationOptions` | The StackExchange.Redis client configuration. Required. |
+| `DeleteStateOnClear` | `bool` | Whether to delete state from Redis when <xref:Orleans.Grain%601.ClearStateAsync%2A> is called. Default is `false`. |
+| `EntryExpiry` | `TimeSpan?` | Optional expiration time for entries. Only set this for ephemeral environments like testing, as it can cause duplicate activations. Default is `null`. |
+| `GrainStorageSerializer` | `IGrainStorageSerializer` | The serializer to use for grain state. Default uses the Orleans serializer. |
+| `CreateMultiplexer` | `Func<RedisStorageOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
+| `GetStorageKey` | `Func<string, GrainId, RedisKey>` | Custom function to generate the Redis key for a grain. Default format is `{ServiceId}/state/{grainId}/{grainType}`. |
+
+### .NET Aspire integration
+
+When using [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource. Configure the `CreateMultiplexer` delegate to use a connection multiplexer from dependency injection:
+
+```csharp
+// In your AppHost project
+var redis = builder.AddRedis("orleans-redis");
+
+var orleans = builder.AddProject<Projects.OrleansServer>("silo")
+    .WithReference(redis);
+```
+
+```csharp
+// In your Orleans silo project
+using StackExchange.Redis;
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddRedisGrainStorage(
+        name: "redis",
+        configureOptions: options =>
+        {
+            // Use the Aspire-provided connection string
+            var connectionString = builder.Configuration.GetConnectionString("orleans-redis");
+            options.ConfigurationOptions = ConfigurationOptions.Parse(connectionString!);
+        });
+});
+```
+
+For more advanced scenarios, you can inject the `IConnectionMultiplexer` directly using the `CreateMultiplexer` delegate:
+
+```csharp
+siloBuilder.AddRedisGrainStorage("redis");
+siloBuilder.Services.AddOptions<RedisStorageOptions>("redis")
+    .Configure<IServiceProvider>((options, sp) =>
+    {
+        options.CreateMultiplexer = async _ =>
+        {
+            // Resolve the IConnectionMultiplexer from DI (provided by Aspire)
+            return sp.GetRequiredService<IConnectionMultiplexer>();
+        };
+    });
+```
+
+:::zone-end

@@ -15,7 +15,7 @@ The main concepts of Orleans involve a silo, a client, and one or more grains. C
 ## Configure the silo
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
@@ -102,7 +102,7 @@ After loading the configurations, build the host and then start it asynchronousl
 ## Configure the client
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.

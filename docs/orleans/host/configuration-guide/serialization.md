@@ -10,7 +10,7 @@ zone_pivot_groups: orleans-version
 # Serialization in Orleans
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-8-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 <!-- markdownlint-enable MD044 -->
 
 There are broadly two kinds of serialization used in Orleans:

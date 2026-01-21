@@ -8,7 +8,7 @@ zone_pivot_groups: orleans-version
 # Streaming with Orleans
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans streaming is a feature of the Orleans framework that enables developers to write reactive applications that operate on a sequence of events in a structured way. Orleans streaming provides a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. A stream is a logical entity that always exists and can never fail. Streams are identified by their <xref:Orleans.Runtime.StreamId>. Streams allow the generation of data to be decoupled from its processing, both in time and space. Streams work uniformly across grains and Orleans clients, and can be compatible with and portable across a wide range of existing queuing technologies, such as Event Hubs, ServiceBus, Azure Queues, and Apache Kafka. Orleans streaming also supports dynamic stream bindings, transparent stream consumption lifecycle management, and extensible stream providers.
 
@@ -24,7 +24,7 @@ Orleans v.1.0.0 added support for streaming extensions to the programming model.
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 :::zone-end
 
@@ -59,7 +59,7 @@ The [Quick Start Sample](streams-quick-start.md) is a good quick overview of the
 Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans provides several stream provider implementations:
 

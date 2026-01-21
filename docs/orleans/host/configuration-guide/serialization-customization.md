@@ -13,7 +13,7 @@ One important aspect of Orleans is its support for customization of serializatio
 ## Serialization providers
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 Orleans provides two serializer implementations:

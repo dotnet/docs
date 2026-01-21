@@ -93,7 +93,7 @@ builder.Configure<GrainCollectionOptions>(options =>
 Application logic can participate in a grain's lifecycle in two ways:
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 - The grain can participate in its own lifecycle.
@@ -128,7 +128,7 @@ public override void Participate(IGrainLifecycle lifecycle)
 In the preceding example, <xref:Orleans.Grain%601> overrides the <xref:Orleans.Grain.Participate%2A?displayProperty=nameWithType> method to tell the lifecycle to call its `OnSetupState` method during the <xref:Orleans.Runtime.GrainLifecycleStage.SetupState?displayProperty=nameWithType> stage of the lifecycle.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 Components created during a grain's construction can also participate in the lifecycle without adding any special grain logic. Since Orleans creates the grain's context (<xref:Orleans.Runtime.IGrainContext>), including its lifecycle (<xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>), before creating the grain, any component injected into the grain by the container can participate in the grain's lifecycle.
@@ -148,7 +148,7 @@ Components created during a grain's construction can also participate in the lif
 The following component participates in the grain's lifecycle when created using its factory function `Create(...)`. This logic could exist in the component's constructor, but that risks adding the component to the lifecycle before it's fully constructed, which might not be safe.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 ```csharp
@@ -208,7 +208,7 @@ By registering the example component in the service container using its `Create(
 #### Register component in container
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 ```csharp

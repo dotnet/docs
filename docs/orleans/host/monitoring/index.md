@@ -16,7 +16,7 @@ Observability is one of the most important aspects of a distributed system. It's
 Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 ## Metrics

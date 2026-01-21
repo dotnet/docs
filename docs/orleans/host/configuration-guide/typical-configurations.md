@@ -23,7 +23,9 @@ For a reliable production deployment using Azure, use the Azure Table option for
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
-Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+Using a `TokenCredential` with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+
+[!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 Silo configuration:
 
@@ -31,7 +33,7 @@ Silo configuration:
 using Azure.Identity;
 
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
+var credential = new ManagedIdentityCredential();
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.UseOrleans(siloBuilder =>
@@ -59,7 +61,7 @@ Client configuration:
 using Azure.Identity;
 
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
+var credential = new ManagedIdentityCredential();
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.UseOrleansClient(clientBuilder =>
@@ -288,8 +290,6 @@ builder.UseOrleansClient(clientBuilder =>
 });
 
 using var host = builder.Build();
-```
-    .Build();
 ```
 
 ## Unreliable deployment on a cluster of dedicated servers

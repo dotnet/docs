@@ -23,13 +23,15 @@ This example shows a silo configuration defining cluster information and using A
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
-Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+Using a `TokenCredential` with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+
+[!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
 using Azure.Identity;
 
 var endpoint = new Uri(builder.Configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
+var credential = new ManagedIdentityCredential();
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .UseOrleans(siloBuilder =>
@@ -71,9 +73,11 @@ using IHost host = Host.CreateDefaultBuilder(args)
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
+[!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
+
 ```csharp
 var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
+var credential = new ManagedIdentityCredential();
 
 siloBuilder.UseAzureStorageClustering(options =>
 {

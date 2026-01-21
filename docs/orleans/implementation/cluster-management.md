@@ -150,6 +150,153 @@ The <xref:Orleans.Clustering.Redis.RedisClusteringOptions> class provides the fo
 > [!IMPORTANT]
 > Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
 
+### Configure Cassandra clustering
+
+> [!NOTE]
+> Cassandra clustering support was introduced in Orleans 8.2.
+
+Configure Apache Cassandra as the clustering provider using the <xref:Orleans.Clustering.Cassandra.Hosting.CassandraMembershipHostingExtensions.UseCassandraClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Orleans.Clustering.Cassandra
+```
+
+Configure Cassandra clustering with a connection string:
+
+```csharp
+using Orleans.Clustering.Cassandra.Hosting;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseCassandraClustering(
+        connectionString: "Contact Points=localhost;Port=9042",
+        keyspace: "orleans");
+});
+```
+
+Alternatively, use the options-based configuration for more control:
+
+```csharp
+siloBuilder.UseCassandraClustering(options =>
+{
+    options.ConfigureClient("Contact Points=cassandra-node1,cassandra-node2;Port=9042", "orleans");
+    options.UseCassandraTtl = true;
+    options.InitializeRetryMaxDelay = TimeSpan.FromSeconds(30);
+});
+```
+
+Or provide a custom session factory for advanced scenarios:
+
+```csharp
+using Cassandra;
+
+siloBuilder.UseCassandraClustering(async serviceProvider =>
+{
+    var cluster = Cluster.Builder()
+        .AddContactPoints("cassandra-node1", "cassandra-node2")
+        .WithPort(9042)
+        .WithCredentials("username", "password")
+        .WithQueryOptions(new QueryOptions().SetConsistencyLevel(ConsistencyLevel.Quorum))
+        .Build();
+
+    return await cluster.ConnectAsync("orleans");
+});
+```
+
+The <xref:Orleans.Clustering.Cassandra.Hosting.CassandraClusteringOptions> class provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `UseCassandraTtl` | `bool` | `false` | When `true`, configures time-to-live for membership table rows in Cassandra, allowing defunct silo cleanup even if the cluster is no longer running. Uses `DefunctSiloExpiration` from `ClusterMembershipOptions`. |
+| `InitializeRetryMaxDelay` | `TimeSpan` | 20 seconds | The maximum delay between retries when encountering contention during initialization. This is typically needed with large numbers of silos connecting simultaneously to multi-datacenter Cassandra clusters. |
+
+#### When to use Cassandra clustering
+
+Consider Cassandra for clustering when:
+
+- You already have a Cassandra infrastructure in your organization
+- You need a clustering provider that works across multiple data centers with tunable consistency
+- You require automatic defunct silo cleanup via Cassandra TTL even when the Orleans cluster isn't running
+- You need high write throughput for large clusters
+
+### Configure Azure Cosmos DB clustering
+
+> [!NOTE]
+> Azure Cosmos DB clustering support was introduced in Orleans 7.2.
+
+Configure Azure Cosmos DB as the clustering provider using the <xref:Orleans.Hosting.HostingExtensions.UseCosmosClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Orleans.Clustering.Cosmos
+```
+
+Configure Cosmos DB clustering with a connection string:
+
+```csharp
+using Azure.Identity;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseCosmosClustering(options =>
+    {
+        options.ConfigureCosmosClient(
+            "https://myaccount.documents.azure.com:443/",
+            new DefaultAzureCredential());
+        options.DatabaseName = "Orleans";
+        options.ContainerName = "OrleansCluster";
+        options.IsResourceCreationEnabled = true;
+    });
+});
+```
+
+Alternatively, you can use a connection string:
+
+```csharp
+siloBuilder.UseCosmosClustering(options =>
+{
+    options.ConfigureCosmosClient("AccountEndpoint=https://myaccount.documents.azure.com:443/;AccountKey=...");
+});
+```
+
+The <xref:Orleans.Clustering.Cosmos.CosmosClusteringOptions> class inherits from `CosmosOptions` and provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `DatabaseName` | `string` | `"Orleans"` | The name of the Cosmos DB database. |
+| `ContainerName` | `string` | `"OrleansCluster"` | The name of the container for cluster membership data. |
+| `IsResourceCreationEnabled` | `bool` | `false` | When `true`, automatically creates the database and container if they don't exist. |
+| `DatabaseThroughput` | `int?` | `null` | The provisioned throughput for the database. If `null`, uses serverless mode. |
+| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container. |
+| `ClientOptions` | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client. |
+| `CleanResourcesOnInitialization` | `bool` | `false` | Deletes the database on initialization. **Only for testing.** |
+
+#### When to use Cosmos DB clustering
+
+Consider Azure Cosmos DB for clustering when:
+
+- You're already using Azure Cosmos DB in your application
+- You need a globally distributed database with multi-region write capabilities
+- You want a fully managed, serverless option with automatic scaling
+- You need low-latency reads and writes with guaranteed SLAs
+
+For Orleans clients, use `UseCosmosGatewayListProvider` to configure gateway discovery:
+
+```csharp
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.UseCosmosGatewayListProvider(options =>
+    {
+        options.ConfigureCosmosClient(
+            "https://myaccount.documents.azure.com:443/",
+            new DefaultAzureCredential());
+    });
+});
+```
+
 In addition to `IMembershipTable`, each silo participates in a fully distributed peer-to-peer membership protocol that detects failed silos and reaches an agreement on the set of alive silos. The internal implementation of Orleans's membership protocol is described below.
 
 ### The membership protocol

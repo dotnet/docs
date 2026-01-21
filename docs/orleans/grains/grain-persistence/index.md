@@ -28,7 +28,7 @@ You can find Orleans grain storage providers on [NuGet](https://www.nuget.org/pa
 
 - [Microsoft.Orleans.Persistence.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AdoNet): For SQL databases and other storage systems supported by ADO.NET. For more information, see [ADO.NET grain persistence](relational-storage.md).
 - [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage): For Azure Storage, including Azure Blob Storage and Azure Table Storage (via the Azure Table Storage API). For more information, see [Azure Storage grain persistence](azure-storage.md).
-- [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos): The Azure Cosmos DB provider. For more information, see [Azure Cosmos DB grain persistence](azure-cosmos-db.md).
+- [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos): The Azure Cosmos DB provider. For more information, see [Azure Cosmos DB grain persistence](#azure-cosmos-db-grain-persistence).
 - [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB): For Amazon DynamoDB. For more information, see [Amazon DynamoDB grain persistence](dynamodb-storage.md).
 - [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis): For Redis. For more information, see [Redis grain persistence](#redis-grain-persistence).
 
@@ -590,6 +590,95 @@ siloBuilder.Services.AddOptions<RedisStorageOptions>("redis")
             // Resolve the IConnectionMultiplexer from DI (provided by Aspire)
             return sp.GetRequiredService<IConnectionMultiplexer>();
         };
+    });
+```
+
+## Azure Cosmos DB grain persistence
+
+> [!NOTE]
+> Azure Cosmos DB grain persistence support was introduced in Orleans 7.2.
+
+[Azure Cosmos DB](/azure/cosmos-db/introduction) is a fully managed NoSQL and relational database for modern app development. The `Microsoft.Orleans.Persistence.Cosmos` package provides a grain storage provider backed by Cosmos DB.
+
+### Configure Cosmos DB grain storage
+
+Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Orleans.Persistence.Cosmos
+```
+
+Configure Cosmos DB grain storage using the <xref:Orleans.Hosting.HostingExtensions.AddCosmosGrainStorage%2A> extension method:
+
+```csharp
+using Azure.Identity;
+using Orleans.Persistence.Cosmos;
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddCosmosGrainStorage(
+        name: "cosmos",
+        configureOptions: options =>
+        {
+            options.ConfigureCosmosClient(
+                "https://myaccount.documents.azure.com:443/",
+                new DefaultAzureCredential());
+            options.DatabaseName = "Orleans";
+            options.ContainerName = "OrleansStorage";
+            options.IsResourceCreationEnabled = true;
+        });
+});
+```
+
+To configure Cosmos DB as the default grain storage provider, use <xref:Orleans.Hosting.HostingExtensions.AddCosmosGrainStorageAsDefault%2A>:
+
+```csharp
+siloBuilder.AddCosmosGrainStorageAsDefault(options =>
+{
+    options.ConfigureCosmosClient(
+        "https://myaccount.documents.azure.com:443/",
+        new DefaultAzureCredential());
+    options.IsResourceCreationEnabled = true;
+});
+```
+
+### Cosmos DB storage options
+
+The <xref:Orleans.Persistence.Cosmos.CosmosGrainStorageOptions> class provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `DatabaseName` | `string` | `"Orleans"` | The name of the Cosmos DB database. |
+| `ContainerName` | `string` | `"OrleansStorage"` | The name of the container for grain state data. |
+| `IsResourceCreationEnabled` | `bool` | `false` | When `true`, automatically creates the database and container if they don't exist. |
+| `DeleteStateOnClear` | `bool` | `false` | Whether to delete state from Cosmos DB when <xref:Orleans.Grain%601.ClearStateAsync%2A> is called. |
+| `InitStage` | `int` | `ServiceLifecycleStage.ApplicationServices` | The stage of silo lifecycle when storage is initialized. |
+| `StateFieldsToIndex` | `List<string>` | Empty | JSON paths of state properties to include in the Cosmos DB index. |
+| `PartitionKeyPath` | `string` | `"/PartitionKey"` | The JSON path for the partition key in the container. |
+| `DatabaseThroughput` | `int?` | `null` | The provisioned throughput for the database. If `null`, uses serverless mode. |
+| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container. |
+| `ClientOptions` | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client. |
+
+### Custom partition key provider
+
+By default, Orleans uses the grain ID as the partition key. For advanced scenarios, you can implement a custom partition key provider:
+
+```csharp
+public class MyPartitionKeyProvider : IPartitionKeyProvider
+{
+    public ValueTask<string> GetPartitionKey(string grainType, GrainId grainId)
+    {
+        // Custom logic to determine partition key
+        return new ValueTask<string>(grainId.Key.ToString()!);
+    }
+}
+
+// Register with custom partition key provider
+siloBuilder.AddCosmosGrainStorage<MyPartitionKeyProvider>(
+    name: "cosmos",
+    configureOptions: options =>
+    {
+        options.ConfigureCosmosClient("https://myaccount.documents.azure.com:443/", new DefaultAzureCredential());
     });
 ```
 

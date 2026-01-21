@@ -8,8 +8,12 @@ items:
         href: overview.md
       - name: Benefits
         href: benefits.md
-      - name: "Migrate from Orleans 3.x to 7.0"
-        href: migration-guide.md
+      - name: Migration guides
+        items:
+          - name: "Migrate to Orleans 10.0"
+            href: migration-guide.md
+          - name: "Migrate from Orleans 3.x to 7.0"
+            href: migration-guide.md
   - name: Quickstarts
     items:
       - name: Build your first Orleans app

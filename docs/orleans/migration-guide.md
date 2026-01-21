@@ -1,12 +1,280 @@
 ---
-title: Migrate from Orleans 3.x to 7.0
-description: Learn about the new features in Orleans 7.0 and how to migrate your application from version 3.x.
-ms.date: 03/30/2025
+title: Orleans migration guides
+description: Learn how to migrate your Orleans application between major versions.
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.custom: migration-guide
+zone_pivot_groups: orleans-version
 ---
 
-# Migrate from Orleans 3.x to 7.0
+# Orleans migration guides
+
+This article provides migration guidance for upgrading between major Orleans versions. Choose your target version using the version selector above.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-10-0"
+
+## Migrate from Orleans 7.0 to 10.0
+
+Orleans 10.0 introduces several new features including the built-in Dashboard, Durable Jobs, Journaling, and the NATS JetStream streaming provider. This section covers the changes needed to migrate from Orleans 7.0 to 10.0, including intermediate steps through 8.0 and 9.0.
+
+[!INCLUDE [orleans-10-breaking-changes](./includes/orleans-10-breaking-changes.md)]
+
+### Package updates
+
+Update your NuGet package references from Orleans 7.x to 10.0:
+
+| Orleans 7.x Package | Orleans 10.0 Package |
+|---------------------|----------------------|
+| `Microsoft.Orleans.Server` 7.x | `Microsoft.Orleans.Server` 10.0.0 |
+| `Microsoft.Orleans.Client` 7.x | `Microsoft.Orleans.Client` 10.0.0 |
+| `Microsoft.Orleans.Sdk` 7.x | `Microsoft.Orleans.Sdk` 10.0.0 |
+| `Microsoft.Orleans.Streaming.EventHubs` 7.x | `Microsoft.Orleans.Streaming.EventHubs` 10.0.0 |
+| `Microsoft.Orleans.Streaming.AzureStorage` 7.x | `Microsoft.Orleans.Streaming.AzureStorage` 10.0.0 |
+| `Microsoft.Orleans.Persistence.AzureStorage` 7.x | `Microsoft.Orleans.Persistence.AzureStorage` 10.0.0 |
+| `Microsoft.Orleans.Clustering.AzureStorage` 7.x | `Microsoft.Orleans.Clustering.AzureStorage` 10.0.0 |
+
+### Breaking change: `AddGrainCallFilter` replaced with `AddIncomingGrainCallFilter`
+
+The `AddGrainCallFilter` extension method on `IServiceCollection` has been removed. Replace it with `AddIncomingGrainCallFilter` on `ISiloBuilder` or `IClientBuilder`.
+
+```csharp
+// Orleans 7.x (no longer works)
+services.AddGrainCallFilter(new MyFilter());
+services.AddGrainCallFilter<MyFilter>();
+
+// Orleans 10.0
+siloBuilder.AddIncomingGrainCallFilter(new MyFilter());
+siloBuilder.AddIncomingGrainCallFilter<MyFilter>();
+
+// Or using a delegate
+siloBuilder.AddIncomingGrainCallFilter(async context =>
+{
+    // Before grain call
+    await context.Invoke();
+    // After grain call
+});
+```
+
+For outgoing grain calls from clients, use `AddOutgoingGrainCallFilter`:
+
+```csharp
+siloBuilder.AddOutgoingGrainCallFilter<MyOutgoingFilter>();
+clientBuilder.AddOutgoingGrainCallFilter<MyOutgoingFilter>();
+```
+
+### Breaking change: `LeaseAquisitionPeriod` typo fixed
+
+The misspelled property `LeaseAquisitionPeriod` in `LeaseBasedQueueBalancerOptions` has been corrected to `LeaseAcquisitionPeriod`.
+
+```csharp
+// Orleans 7.x (typo)
+options.LeaseAquisitionPeriod = TimeSpan.FromSeconds(30);
+
+// Orleans 10.0 (corrected)
+options.LeaseAcquisitionPeriod = TimeSpan.FromSeconds(30);
+```
+
+### Breaking change: `LoadSheddingLimit` renamed to `CpuThreshold`
+
+The `LoadSheddingLimit` property in `LoadSheddingOptions` has been renamed to `CpuThreshold` to better reflect its purpose.
+
+```csharp
+// Orleans 7.x
+siloBuilder.Configure<LoadSheddingOptions>(options =>
+{
+    options.LoadSheddingEnabled = true;
+    options.LoadSheddingLimit = 95; // No longer works
+});
+
+// Orleans 10.0
+siloBuilder.Configure<LoadSheddingOptions>(options =>
+{
+    options.LoadSheddingEnabled = true;
+    options.CpuThreshold = 95; // Use this instead
+});
+```
+
+### Breaking change: `CancelRequestOnTimeout` default changed
+
+The default value of `MessagingOptions.CancelRequestOnTimeout` has changed from `true` to `false`. This means that by default, Orleans no longer sends a cancellation message when a grain call times out.
+
+If your application depends on the previous behavior, explicitly set this option:
+
+```csharp
+siloBuilder.Configure<SiloMessagingOptions>(options =>
+{
+    options.CancelRequestOnTimeout = true;
+});
+
+// For clients
+clientBuilder.Configure<ClientMessagingOptions>(options =>
+{
+    options.CancelRequestOnTimeout = true;
+});
+```
+
+### Breaking change: ADO.NET provider requires `Microsoft.Data.SqlClient`
+
+The ADO.NET providers (clustering, persistence, reminders) now require `Microsoft.Data.SqlClient` instead of `System.Data.SqlClient`. Update your project references:
+
+```xml
+<!-- Remove -->
+<PackageReference Include="System.Data.SqlClient" Version="..." />
+
+<!-- Add -->
+<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+```
+
+The invariant name has also changed:
+
+```csharp
+// Orleans 7.x
+options.Invariant = "System.Data.SqlClient";
+
+// Orleans 10.0
+options.Invariant = "Microsoft.Data.SqlClient";
+```
+
+### Breaking change: `[Unordered]` attribute obsoleted
+
+The `[Unordered]` attribute on grain interfaces is now obsolete and has no effect. Message ordering was never guaranteed regardless of this attribute. Remove the attribute from your code:
+
+```csharp
+// Orleans 7.x
+[Unordered]
+public interface IMyGrain : IGrainWithStringKey
+{
+    Task DoSomething();
+}
+
+// Orleans 10.0 - just remove the attribute
+public interface IMyGrain : IGrainWithStringKey
+{
+    Task DoSomething();
+}
+```
+
+### Breaking change: `OrleansConstructorAttribute` obsoleted
+
+The `OrleansConstructorAttribute` has been obsoleted. Use `GeneratedActivatorConstructorAttribute` or `ActivatorUtilitiesConstructorAttribute` instead to specify which constructor the serializer should use.
+
+```csharp
+// Orleans 7.x
+[GenerateSerializer]
+public class MyClass
+{
+    [OrleansConstructor] // Obsolete
+    public MyClass(string value) { }
+}
+
+// Orleans 10.0
+[GenerateSerializer]
+public class MyClass
+{
+    [GeneratedActivatorConstructor]
+    public MyClass(string value) { }
+}
+```
+
+### Breaking change: `RegisterTimer` obsoleted
+
+The `Grain.RegisterTimer` method is obsolete. Use the new `RegisterGrainTimer` extension methods instead, which provide better control over timer behavior.
+
+```csharp
+// Orleans 7.x
+public override Task OnActivateAsync(CancellationToken cancellationToken)
+{
+    RegisterTimer(
+        callback: DoWork,
+        state: null,
+        dueTime: TimeSpan.FromSeconds(1),
+        period: TimeSpan.FromSeconds(10));
+    return Task.CompletedTask;
+}
+
+// Orleans 10.0
+public override Task OnActivateAsync(CancellationToken cancellationToken)
+{
+    this.RegisterGrainTimer(
+        callback: DoWork,
+        state: (object?)null,
+        options: new GrainTimerCreationOptions
+        {
+            DueTime = TimeSpan.FromSeconds(1),
+            Period = TimeSpan.FromSeconds(10),
+            Interleave = true // Set to true for same behavior as old RegisterTimer
+        });
+    return Task.CompletedTask;
+}
+```
+
+> [!IMPORTANT]
+> By default, `RegisterGrainTimer` uses `Interleave = false`, which prevents timer callbacks from interleaving with other grain calls. If you need the old behavior where timer callbacks could interleave, explicitly set `Interleave = true`.
+
+### New features in Orleans 10.0
+
+After migrating, you can take advantage of these new features:
+
+- **[Orleans Dashboard](dashboard/index.md)**: Built-in web-based monitoring for your cluster
+- **[Durable Jobs](grains/durable-jobs/index.md)**: Reliable job scheduling with at-least-once execution guarantees
+- **[Journaling](grains/journaling/index.md)**: Durable state machines with replicated persistent state
+- **[NATS JetStream Streaming](streaming/stream-providers.md)**: High-performance streaming with NATS
+
+### Migration from Orleans 8.0 to 9.0
+
+If you're upgrading from Orleans 8.x, note these additional changes introduced in Orleans 9.0:
+
+- **Strong-consistency grain directory**: The default grain directory now provides stronger consistency guarantees
+- **Full CancellationToken support**: Grain methods now fully support CancellationToken parameters
+- **Memory-based activation shedding**: Automatic grain deactivation under memory pressure
+- **Faster membership protocol**: Default failure detection time reduced from 10 minutes to 90 seconds
+- **Default placement changed to ResourceOptimized** (9.2+): The default grain placement strategy changed from `RandomPlacement` to `ResourceOptimizedPlacement`
+
+If your application relies on random placement, explicitly configure it:
+
+```csharp
+siloBuilder.ConfigureServices(services =>
+{
+    services.AddSingleton<PlacementStrategy, RandomPlacement>();
+});
+
+// Or on specific grains
+[RandomPlacement]
+public class MyGrain : Grain, IMyGrain { }
+```
+
+### Migration from Orleans 7.0 to 8.0
+
+If you're upgrading from Orleans 7.x, note these changes introduced in Orleans 8.0:
+
+- **New Timer API**: `RegisterGrainTimer` was introduced to replace `RegisterTimer`
+- **.NET Aspire integration**: First-class support for .NET Aspire
+- **Resource-Optimized Placement**: New placement strategy based on CPU and memory utilization
+- **Activation Repartitioning** (8.2+): Experimental feature for automatic grain rebalancing
+
+### Rolling upgrades
+
+Rolling upgrades from Orleans 7.x to 10.0 are not recommended due to the significant protocol and API changes. Instead:
+
+1. Deploy a new cluster running Orleans 10.0
+2. Migrate state data if necessary
+3. Switch traffic to the new cluster
+4. Decommission the old cluster
+
+### ADO.NET migration scripts
+
+If you use ADO.NET for clustering, persistence, or reminders, apply the appropriate migration scripts:
+
+- [Clustering migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations)
+- [Persistence migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
+- [Reminders migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0"
+
+## Migrate from Orleans 3.x to 7.0
 
 Orleans 7.0 introduces several beneficial changes, including improvements to hosting, custom serialization, immutability, and grain abstractions.
 
@@ -396,3 +664,18 @@ To ensure forward compatibility with Orleans clustering, persistence, and remind
 - [Reminders](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
 
 Select the files for the database used and apply them in order.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+## Migrate from Orleans 3.x to 7.0
+
+For Orleans 3.x users, follow the migration guidance in the Orleans 7.0 documentation section using the version selector above.
+
+> [!IMPORTANT]
+> Orleans 3.x is no longer supported. Consider migrating to Orleans 10.0 for the latest features and security updates.
+
+:::zone-end
+<!-- markdownlint-enable MD044 -->
+

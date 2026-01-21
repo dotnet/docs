@@ -3,6 +3,7 @@ title: "Tutorial: Hello world"
 description: Explore the hello world tutorial project written with .NET Orleans.
 ms.date: 03/30/2025
 ms.topic: tutorial
+zone_pivot_groups: orleans-version
 ---
 
 # Tutorial: Hello world
@@ -12,6 +13,46 @@ This overview ties into the [Hello World sample application](https://github.com/
 The main concepts of Orleans involve a silo, a client, and one or more grains. Creating an Orleans app involves configuring the silo, configuring the client, and writing the grains.
 
 ## Configure the silo
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+await Host.CreateDefaultBuilder(args)
+    .UseOrleans(siloBuilder =>
+    {
+        siloBuilder.UseLocalhostClustering()
+            .Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "dev";
+                options.ServiceId = "HelloWorldApp";
+            })
+            .Configure<EndpointOptions>(
+                options => options.AdvertisedIPAddress = IPAddress.Loopback)
+            .ConfigureLogging(logging => logging.AddConsole());
+    })
+    .RunConsoleAsync();
+```
+
+The preceding code:
+
+- Creates a default host builder.
+- Calls `UseOrleans` to configure the silo.
+- Uses localhost clustering for local development.
+- Configures the cluster and service IDs.
+- Configures the endpoint to listen on loopback.
+- Adds console logging.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
@@ -41,16 +82,69 @@ static async Task<ISiloHost> StartSilo(string[] args)
 }
 ```
 
+:::zone-end
+
 | Option                      | Used for |
 | --------------------------- | -------- |
 | `.UseLocalhostClustering()` | Configures the client to connect to a silo on the localhost. |
 | `ClusterOptions`            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
 | `EndpointOptions`           | Tells the silo where to listen. For this example, use `loopback`. |
-| `ConfigureApplicationParts` | Adds the grain class and interface assembly as application parts to your Orleans application. |
 
-After loading the configurations, build the `ISiloHost` and then start it asynchronously.
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+| Option                      | Used for |
+| --------------------------- | -------- |
+| `ConfigureApplicationParts` | Adds the grain class and interface assembly as application parts to your Orleans application. This is not needed in Orleans 7.0+ as source generators handle this automatically. |
+
+:::zone-end
+
+After loading the configurations, build the host and then start it asynchronously.
 
 ## Configure the client
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+using IHost host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+    {
+        clientBuilder.UseLocalhostClustering()
+            .Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "dev";
+                options.ServiceId = "HelloWorldApp";
+            })
+            .ConfigureLogging(logging => logging.AddConsole());
+    })
+    .Build();
+
+await host.StartAsync();
+
+var client = host.Services.GetRequiredService<IClusterClient>();
+Console.WriteLine("Client successfully connected to silo host");
+```
+
+The preceding code:
+
+- Creates a default host builder.
+- Calls `UseOrleansClient` to configure the client.
+- Uses localhost clustering to connect to the local silo.
+- Configures the cluster and service IDs to match the silo.
+- Starts the host and retrieves the `IClusterClient` from the service provider.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
 
@@ -74,10 +168,12 @@ static async Task<IClusterClient> StartClientWithRetries()
 }
 ```
 
+:::zone-end
+
 | Option                      | Used for               |
 | --------------------------- | ---------------------- |
-| `.UseLocalhostClustering()` | Same as for `SiloHost` |
-| `ClusterOptions`            | Same as for `SiloHost` |
+| `.UseLocalhostClustering()` | Same as for the silo |
+| `ClusterOptions`            | Same as for the silo |
 
 Find a more in-depth guide to configuring your client in the [Client configuration](../host/configuration-guide/client-configuration.md) section of the Configuration Guide.
 

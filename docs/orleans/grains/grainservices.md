@@ -217,5 +217,5 @@ var builder = new HostBuilder()
             // Register Client of GrainService
             services.AddSingleton<IDataServiceClient, DataServiceClient>();
         });
-    })
- ```
+    });
+```

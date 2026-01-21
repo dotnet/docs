@@ -5,6 +5,7 @@ description: Learn how to assess and migrate a .NET project by using GitHub Copi
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/22/2025
+zone_pivot_groups: ide-set-one
 #customer intent: As a .NET developer, I want to assess my project's migration readiness so that I can identify potential challenges and plan the modernization process effectively.
 ---
 
@@ -15,7 +16,7 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 - Assess a sample project (Contoso University)
 - Start the migration process
 
-::: zone pivot="visual-studio"  
+::: zone pivot="visualstudio"
 [!INCLUDE [quickstart-visual-studio](./includes/quickstart-visual-studio.md)]
 ::: zone-end
 

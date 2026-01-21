@@ -25,35 +25,97 @@ In this tutorial, you learn how to:
 
 ## Deploy with .NET Aspire (Recommended)
 
-If your Orleans application uses [.NET Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Azure Developer CLI (`azd`). Aspire automatically provisions all required infrastructure and handles the deployment.
+If your Orleans application uses [.NET Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Aspire CLI (`aspire`). The Aspire CLI automatically provisions all required infrastructure and handles the deployment.
 
 ### Aspire deployment prerequisites
 
-- [Azure Developer CLI (azd)](/azure/developer/azure-developer-cli/install-azd)
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/) installed
+- [Azure CLI](/cli/azure/install-azure-cli) installed
 - [.NET Aspire workload](/dotnet/aspire/fundamentals/setup-tooling)
 - An Azure subscription with permissions to create resources
+- Docker Desktop or Podman running (for building container images)
 
-### Deploy with azd
+#### Install the Aspire CLI
 
-1. **Initialize the deployment** (first time only):
+### [Windows](#tab/windows)
+
+```powershell
+irm https://aspire.dev/install.ps1 | iex
+```
+
+### [macOS/Linux](#tab/macos-linux)
+
+```bash
+curl -sSL https://aspire.dev/install.sh | bash
+```
+
+---
+
+### Enable the deploy command
+
+The `aspire deploy` command is currently in preview and must be explicitly enabled:
+
+### [Windows (PowerShell)](#tab/windows)
+
+```powershell
+$env:DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND="true"
+```
+
+### [macOS/Linux](#tab/macos-linux)
+
+```bash
+export DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND=true
+```
+
+---
+
+### Authenticate and deploy
+
+1. **Sign in to Azure**:
 
    ```bash
-   azd init
+   az login
    ```
 
-   This command detects your Aspire AppHost project and creates the necessary deployment configuration.
+2. **Deploy your application**:
 
-2. **Deploy to Azure**:
+   Navigate to your AppHost project directory and run:
 
    ```bash
-   azd up
+   aspire deploy
    ```
 
-   This single command provisions all infrastructure and deploys your application.
+   This single command performs the following steps:
+   - Validates your configuration
+   - Provisions Azure resources (Container Apps environment, Container Registry, storage, etc.)
+   - Builds and pushes container images
+   - Deploys your application
+
+### Specify deployment parameters
+
+You can provide deployment parameters inline:
+
+```bash
+aspire deploy --deployment-param location=eastus --deployment-param environment=production
+```
+
+Or use a parameters file for complex deployments:
+
+```json
+{
+  "location": "eastus",
+  "environment": "production",
+  "resourceGroupName": "my-orleans-app-rg"
+}
+```
+
+```bash
+aspire deploy --deployment-params-file deployment-params.json
+```
 
 ### What Aspire provisions automatically
 
-When you deploy an Orleans Aspire application to Azure Container Apps, `azd up` automatically provisions:
+When you deploy an Orleans Aspire application to Azure Container Apps, `aspire deploy` automatically provisions:
 
 - **Azure Container Apps environment** - The hosting environment for your containers
 - **Azure Container Registry (ACR)** - For storing your container images
@@ -63,9 +125,9 @@ When you deploy an Orleans Aspire application to Azure Container Apps, `azd up` 
 - **Managed identities** - For secure, passwordless authentication between services
 
 > [!TIP]
-> The `azd up` command handles the entire deployment lifecycle: provisioning infrastructure, building containers, and deploying your application. To update your app after code changes, simply run `azd up` again.
+> To update your app after code changes, simply run `aspire deploy` again. The CLI handles incremental updates efficiently.
 
-For comprehensive guidance on deploying .NET Aspire applications to Azure, see [Deploy a .NET Aspire project to Azure Container Apps](/dotnet/aspire/deployment/azure/aca-deployment).
+For comprehensive guidance on deploying .NET Aspire applications to Azure, see [Deploy Aspire to Azure Container Apps using the Aspire CLI](https://aspire.dev/deployment/azure/aca-deployment-aspire-cli/).
 
 ---
 

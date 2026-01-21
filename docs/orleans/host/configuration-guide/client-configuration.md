@@ -1,7 +1,7 @@
 ---
 title: Client configuration
 description: Learn about client configurations in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -10,7 +10,7 @@ ms.custom: sfi-ropc-nochange
 # Client configuration
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
 
 Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Microsoft.Extensions.Hosting.IHostBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
@@ -39,8 +39,36 @@ There are several key aspects of client configuration:
 Example of a client configuration:
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+
+```csharp
+using Azure.Identity;
+
+var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+var client = new HostBuilder()
+    .UseOrleansClient((context, clientBuilder) =>
+    {
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "my-first-cluster";
+            options.ServiceId = "MyOrleansService";
+        })
+        .UseAzureStorageClustering(options =>
+        {
+            options.ConfigureTableServiceClient(endpoint, credential);
+        });
+    })
+    .Build();
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 var client = new HostBuilder()
@@ -57,6 +85,8 @@ var client = new HostBuilder()
     })
     .Build();
 ```
+
+---
 
 :::zone-end
 
@@ -103,13 +133,31 @@ Here, we set two things:
 ## Clustering provider
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 <!-- markdownlint-enable MD044 -->
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments.
+
+```csharp
+var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+clientBuilder.UseAzureStorageClustering(options =>
+{
+    options.ConfigureTableServiceClient(endpoint, credential);
+});
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 .UseAzureStorageClustering(
-    options => options.ConfigureTableServiceClient(connectionString);
+    options => options.ConfigureTableServiceClient(connectionString));
 ```
+
+---
 
 :::zone-end
 
@@ -127,12 +175,6 @@ Here, we set two things:
 The client discovers all available gateways in the cluster using this provider. Several providers are available; here, we use the Azure Table provider.
 
 For more information, see [Server configuration](server-configuration.md).
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
-
-:::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"

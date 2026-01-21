@@ -21,7 +21,36 @@ There are several key aspects of silo configuration:
 - (Optional) Orleans clustering information
 - (Optional) Endpoints for silo-to-silo and client-to-silo communications
 
-This example shows a silo configuration defining cluster information, using Azure clustering, and configuring application parts:
+This example shows a silo configuration defining cluster information and using Azure Table Storage for clustering:
+
+### [Managed identity (recommended)](#tab/managed-identity)
+
+Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+
+```csharp
+using Azure.Identity;
+
+var endpoint = new Uri(builder.Configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+using IHost host = Host.CreateDefaultBuilder(args)
+    .UseOrleans(siloBuilder =>
+    {
+        siloBuilder.UseAzureStorageClustering(options =>
+        {
+            options.ConfigureTableServiceClient(endpoint, credential);
+        });
+    })
+    .UseConsoleLifetime()
+    .Build();
+```
+
+> [!NOTE]
+> The `AZURE_TABLE_STORAGE_ENDPOINT` configuration value should be the Table Storage endpoint URL, such as `https://<storage-account-name>.table.core.windows.net`.
+
+### [Connection string](#tab/connection-string)
+
+Using a connection string is suitable for development scenarios or when managed identity isn't available.
 
 ```csharp
 using IHost host = Host.CreateDefaultBuilder(args)
@@ -34,15 +63,33 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .Build();
 ```
 
+---
+
 > [!TIP]
 > When developing for Orleans, you can call <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.IPEndPoint,System.String,System.String)> to configure a local cluster. In production environments, you should use a clustering provider that is suitable for your deployment.
 
 ## Clustering provider
 
+### [Managed identity (recommended)](#tab/managed-identity)
+
+```csharp
+var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+siloBuilder.UseAzureStorageClustering(options =>
+{
+    options.ConfigureTableServiceClient(endpoint, credential);
+});
+```
+
+### [Connection string](#tab/connection-string)
+
 ```csharp
 siloBuilder.UseAzureStorageClustering(
     options => options.ConfigureTableServiceClient(connectionString))
 ```
+
+---
 
 Usually, you deploy a service built on Orleans on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, you can deploy Orleans in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements protocols to discover and maintain membership of Orleans silos in the cluster, including detecting node failures and automatic reconfiguration.
 

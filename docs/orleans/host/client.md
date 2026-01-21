@@ -72,6 +72,37 @@ Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGeneri
 
 Consider the following example of a client configuration:
 
+### [Managed identity (recommended)](#tab/managed-identity)
+
+Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+
+```csharp
+using Azure.Identity;
+
+var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
+var credential = new DefaultAzureCredential();
+
+// Alternatively, call Host.CreateDefaultBuilder(args) if using the
+// Microsoft.Extensions.Hosting NuGet package.
+using IHost host = new HostBuilder()
+    .UseOrleansClient(clientBuilder =>
+    {
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "my-first-cluster";
+            options.ServiceId = "MyOrleansService";
+        });
+
+        clientBuilder.UseAzureStorageClustering(options =>
+        {
+            options.ConfigureTableServiceClient(endpoint, credential);
+        });
+    })
+    .Build();
+```
+
+### [Connection string](#tab/connection-string)
+
 ```csharp
 // Alternatively, call Host.CreateDefaultBuilder(args) if using the
 // Microsoft.Extensions.Hosting NuGet package.
@@ -89,6 +120,8 @@ using IHost host = new HostBuilder()
     })
     .Build();
 ```
+
+---
 
 When you start the `host`, the client is configured and available through its constructed service provider instance.
 

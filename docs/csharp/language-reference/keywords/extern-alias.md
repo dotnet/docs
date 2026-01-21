@@ -29,7 +29,7 @@ To reference two assemblies with the same fully qualified type names, specify an
 </Reference>
 ```
 
-You can learn more in the article on the [CSC task](~/visualstudio/msbuild/csc-task) in the Visual Studio documentation.
+You can learn more in the article on the [CSC task](/visualstudio/msbuild/csc-task) in the Visual Studio documentation.
 
 This command creates the external aliases `GridV1` and `GridV2`. To use these aliases from within a program, reference them by using the `extern` keyword. For example:
   

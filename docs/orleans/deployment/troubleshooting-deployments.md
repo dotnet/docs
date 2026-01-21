@@ -15,12 +15,19 @@ This page provides general guidelines for troubleshooting common Orleans deploym
 
 ## The `SiloUnavailableException`
 
-This exception indicates that the Orleans client cannot connect to the cluster. Common causes include:
+This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when:
 
-- **Silos haven't started yet**: Ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so retrying client initialization can be beneficial.
+- **Silo terminated abruptly**: A silo crashed or was forcefully terminated and has been evicted from the cluster. This is expected behavior during cluster membership changes.
+- **Network partition**: The target silo is temporarily unreachable due to network issues.
+- **Silo shutdown during request**: The silo began shutting down while a request was in flight.
+
+When this exception occurs during a grain call, the grain reference remains valid. You can retry the call later, and Orleans will route the request to the new activation location.
+
+If this exception occurs during initial client connection (`IClusterClient.Connect`), it typically means no silos are available to accept the connection. Common causes include:
+
+- **Silos haven't started yet**: Ensure silos start before attempting to initialize the client. Sometimes silos take time to start and register with the clustering provider.
 - **Incorrect clustering configuration**: Verify that the client and silos use the same clustering provider and connection settings.
-- **Network connectivity issues**: Check firewall rules and network security groups to ensure the client can reach silo endpoints.
-- **Silo startup failures**: Check silo logs for unhandled exceptions during initialization.
+- **Network connectivity issues**: Check firewall rules and network security groups to ensure the client can reach silo gateway endpoints.
 
 ## Common connection string issues
 
@@ -62,9 +69,9 @@ This page provides general guidelines for troubleshooting issues occurring durin
 
 ## The `SiloUnavailableException`
 
-First, ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so trying to initialize the client multiple times can be beneficial. If it still throws an exception, another issue might exist with the silos.
+This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when a silo terminates abruptly and is evicted from the cluster, which is expected behavior during cluster membership changes.
 
-Check the silo configuration and ensure the silos start properly.
+If this exception occurs during initial client connection, ensure silos start before attempting to initialize the client. Sometimes silos take time to start, so retrying client initialization can be beneficial. If it still throws an exception, check the silo configuration and ensure the silos start properly.
 
 ## Common connection string issues
 

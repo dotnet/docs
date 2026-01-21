@@ -26,9 +26,6 @@ Orleans is often referred to as "Distributed .NET" because of its focus on build
 Orleans 10.0 introduces several new features and improvements:
 
 - **Orleans Dashboard**: A built-in dashboard for real-time monitoring of your Orleans cluster, grains, and silos.
-- **Durable Jobs**: A new job scheduling system with at-least-once execution guarantees, retry policies, and cancellation support.
-- **Journaling (Preview)**: Durable state machines with replicated state using `DurableGrain` and durable collections.
-- **NATS Streaming (Alpha)**: A new streaming provider for NATS JetStream.
 - **Redis Providers**: Stable Redis providers for clustering, persistence, and reminders.
 - **CancellationToken support for system targets**: Extended cancellation token support throughout the framework.
 

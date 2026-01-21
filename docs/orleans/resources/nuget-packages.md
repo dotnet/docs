@@ -40,21 +40,6 @@ The official Orleans Dashboard provides real-time cluster monitoring and visuali
 > [!NOTE]
 > For more information, see [Orleans Dashboard](../dashboard/index.md).
 
-## Orleans 10.0 Preview and Alpha packages
-
-The following packages are new in Orleans 10.0 and are in preview or alpha status:
-
-| NuGet package | Status | Description |
-|---|---|---|
-| [Microsoft.Orleans.DurableJobs](https://www.nuget.org/packages/Microsoft.Orleans.DurableJobs) | Alpha | Durable Jobs library for scheduled, at-least-once job execution. |
-| [Microsoft.Orleans.DurableJobs.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.DurableJobs.AzureStorage) | Alpha | Azure Storage provider for Durable Jobs. |
-| [Microsoft.Orleans.Journaling](https://www.nuget.org/packages/Microsoft.Orleans.Journaling) | Alpha | Durable state machines with replicated state for grains. |
-| [Microsoft.Orleans.Journaling.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Journaling.AzureStorage) | Alpha | Azure Storage provider for Journaling. |
-| [Microsoft.Orleans.Streaming.NATS](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.NATS) | Alpha | Orleans streaming provider backed by NATS JetStream. |
-
-> [!TIP]
-> For more information, see [Durable Jobs](../grains/durable-jobs/index.md), [Journaling](../grains/journaling/index.md), and [Stream providers](../streaming/stream-providers.md).
-
 ## Hosting
 
 | NuGet package | Description |
@@ -114,8 +99,6 @@ The following packages are new in Orleans 10.0 and are in preview or alpha statu
 | [Microsoft.Orleans.Streaming.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.AzureStorage) | Stable | Orleans streaming provider backed by Azure Queue Storage. |
 | [Microsoft.Orleans.Streaming.EventHubs](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs) | Stable | Orleans streaming provider backed by Azure Event Hubs. |
 | [Microsoft.Orleans.Streaming.SQS](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.SQS) | Stable | Orleans streaming provider backed by AWS SQS. |
-| [Microsoft.Orleans.Streaming.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.AdoNet) | Alpha | Orleans streaming provider backed by ADO.NET. *(Orleans 9.2+)* |
-| [Microsoft.Orleans.Streaming.NATS](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.NATS) | Alpha | Orleans streaming provider backed by NATS JetStream. *(Orleans 10.0+)* |
 
 ## Additional packages
 

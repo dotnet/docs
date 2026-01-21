@@ -15,7 +15,7 @@ This article provides migration guidance for upgrading between major Orleans ver
 
 ## Migrate from Orleans 7.0 to 10.0
 
-Orleans 10.0 introduces several new features including the built-in Dashboard, Durable Jobs, Journaling, and the NATS JetStream streaming provider. This section covers the changes needed to migrate from Orleans 7.0 to 10.0, including intermediate steps through 8.0 and 9.0.
+Orleans 10.0 introduces several new features including the built-in Dashboard. This section covers the changes needed to migrate from Orleans 7.0 to 10.0, including intermediate steps through 8.0 and 9.0.
 
 [!INCLUDE [orleans-10-breaking-changes](./includes/orleans-10-breaking-changes.md)]
 
@@ -216,9 +216,6 @@ public override Task OnActivateAsync(CancellationToken cancellationToken)
 After migrating, you can take advantage of these new features:
 
 - **[Orleans Dashboard](dashboard/index.md)**: Built-in web-based monitoring for your cluster
-- **[Durable Jobs](grains/durable-jobs/index.md)**: Reliable job scheduling with at-least-once execution guarantees
-- **[Journaling](grains/journaling/index.md)**: Durable state machines with replicated persistent state
-- **[NATS JetStream Streaming](streaming/stream-providers.md)**: High-performance streaming with NATS
 
 ### Migration from Orleans 8.0 to 9.0
 

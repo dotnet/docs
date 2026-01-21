@@ -114,7 +114,7 @@ Consider the following when configuring timeouts:
 
 - **Per-method timeouts override global settings**: A `ResponseTimeoutAttribute` on a grain method takes precedence over the global `ResponseTimeout` configuration.
 - **Set realistic timeouts**: Base timeouts on expected execution time plus reasonable network latency. Timeouts that are too short cause unnecessary failures; timeouts that are too long delay error detection.
-- **Long-running operations**: For operations that may take significant time, consider using Orleans [Reminders](timers-and-reminders.md) or [Durable Jobs](durable-jobs/index.md) instead of extending timeouts indefinitely.
+- **Long-running operations**: For operations that may take significant time, consider using Orleans [Reminders](timers-and-reminders.md) instead of extending timeouts indefinitely.
 - **Testing**: Test timeout behavior in your integration tests to ensure your application handles `TimeoutException` gracefully.
 
 ## Return values from grain methods

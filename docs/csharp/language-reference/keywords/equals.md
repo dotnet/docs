@@ -16,7 +16,7 @@ Use the `equals` contextual keyword in a `join` clause of a query expression to 
 
 The following example shows how to use the `equals` keyword in a `join` clause.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs" id="12":::
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="12":::
 
 ## See also
 

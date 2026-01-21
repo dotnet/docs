@@ -16,7 +16,7 @@ Use the `descending` contextual keyword in the [orderby clause](./orderby-clause
 
 The following example shows how to use `descending` in an [orderby clause](./orderby-clause.md).
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs" id="11":::
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="11":::
 
 ## See also
 

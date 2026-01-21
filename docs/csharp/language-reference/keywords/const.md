@@ -52,11 +52,11 @@ public const int C2 = C1 + 100;
 
 ## Examples
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs" id="5":::
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="5":::
 
 The following example shows how to declare a local constant:
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs" id="6":::
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="6":::
 
 ## C# language specification
 

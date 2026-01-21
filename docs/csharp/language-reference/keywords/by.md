@@ -16,7 +16,7 @@ Use the `by` contextual keyword in the `group` clause of a query expression to s
 
 The following example shows how to use the `by` contextual keyword in a `group` clause to group students by the first letter of each student's last name.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs" id="10":::
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="10":::
 
 ## See also
 

@@ -28,7 +28,7 @@ The `extern` keyword has more limited uses in C# than in C++. To compare the C# 
 
 In this example, the program receives a string from the user and displays it inside a message box. The program uses the `MessageBox` method imported from the User32.dll library.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs" id="8":::
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="8":::
 
 This example illustrates a C# program that calls into a C library (a native DLL).
 

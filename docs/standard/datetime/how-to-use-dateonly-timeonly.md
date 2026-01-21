@@ -1,7 +1,7 @@
 ---
 title: How to use DateOnly and TimeOnly
 description: Learn about the DateOnly and TimeOnly structures in .NET.
-ms.date: 12/05/2024
+ms.date: 01/16/2026
 dev_langs:
   - "csharp"
   - "vb"

@@ -80,6 +80,9 @@ Or use the `dotnet run` command followed by the name of the file:
 dotnet run file.cs
 ```
 
+> [!NOTE]
+> When a project file exists in the current working directory, `dotnet run file.cs` without the `--file` option runs that project and passes `file.cs` as an argument to the target app to preserve backwards compatibility.
+
 Or use the shorthand syntax:
 
 ```dotnetcli

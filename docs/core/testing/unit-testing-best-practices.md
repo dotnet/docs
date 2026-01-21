@@ -53,6 +53,9 @@ A high code coverage percentage isn't an indicator of success, and it doesn't im
 
 Several terms are used frequently in the context of unit testing: *fake*, *mock*, and *stub*. Unfortunately, these terms can be misapplied, so it's important to understand the correct usage.
 
+> [!NOTE]
+> Testing literature and tools use the terms *fake*, *stub*, and *mock* inconsistently. The following definitions represent common .NET usage where a test double can both return values and verify interactions. In classic xUnit and test double literature (for example, Fowler and Meszaros), those sources use these words more narrowly: a *stub* provides data, a *mock* verifies interactions, and a *fake* is a working alternative implementation.
+
 - **Fake**: A fake is a generic term that can be used to describe either a stub or a mock object. Whether the object is a stub or a mock depends on the context in which the object is used. In other words, a fake can be a stub or a mock.
 
 - **Mock**: A mock object is a fake object in the system that decides whether or not a unit test passes or fails. A mock begins as a fake and remains a fake until it enters an `Assert` operation.

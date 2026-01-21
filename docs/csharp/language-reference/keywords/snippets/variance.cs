@@ -4,13 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-    }
-}
-
 namespace n1
 {
     //<Snippet1>

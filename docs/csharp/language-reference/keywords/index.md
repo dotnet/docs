@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
 title: "C# Keywords and contextual keywords"
-ms.date: 04/17/2025
+ms.date: 01/21/2026
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -11,11 +11,13 @@ helpviewer_keywords:
   - "@ keyword"
 ms.custom: "updateeachrelease"
 ---
-# C# Keywords
+# C# keywords
 
-Keywords are predefined, reserved identifiers that have special meanings to the compiler. They can't be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` isn't because `if` is a keyword.
+Keywords are predefined, reserved identifiers that have special meanings to the compiler. You can't use them as identifiers in your program unless you prefix them with `@`. For example, `@if` is a valid identifier, but `if` isn't because `if` is a keyword.
 
-The first table in this article lists keywords that are reserved identifiers in any part of a C# program. The second table in this article lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they're added as contextual keywords in order to avoid breaking programs written in earlier versions.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+The first table in this article lists keywords that are reserved identifiers in any part of a C# program. The second table lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they're added as contextual keywords to avoid breaking programs written in earlier versions.
 
 :::row:::
     :::column:::
@@ -107,7 +109,7 @@ The first table in this article lists keywords that are reserved identifiers in 
 
 ## Contextual keywords
 
-A contextual keyword is used to provide a specific meaning in the code, but it isn't a reserved word in C#. Some contextual keywords, such as `partial` and `where`, have special meanings in two or more contexts.
+A contextual keyword provides a specific meaning in the code, but it isn't a reserved word in C#. Some contextual keywords, such as `partial` and `where`, have special meanings in two or more contexts.
 
 :::row:::
     :::column:::

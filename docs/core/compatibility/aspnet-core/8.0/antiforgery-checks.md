@@ -29,28 +29,14 @@ Anti-forgery token validation is a recommended security precaution for APIs that
 
 ## Recommended action
 
-Implement anti-forgery token validation to protect your application from cross-site request forgery (CSRF) attacks. For detailed guidance on how to properly configure and use anti-forgery tokens in Minimal APIs, see [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core](/aspnet/core/security/anti-request-forgery).
-
-The article covers:
+Implement anti-forgery token validation to protect your application from cross-site request forgery (CSRF) attacks. For detailed guidance on how to properly configure and use anti-forgery tokens in Minimal APIs, see [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core](/aspnet/core/security/anti-request-forgery). The article covers:
 
 - How to register anti-forgery services and middleware.
 - How to generate and validate anti-forgery tokens in Minimal APIs.
 - Complete code examples for form handling with file uploads.
 - How to troubleshoot token validation failures and common errors.
 - Security best practices for CSRF protection.
-
-If you're seeing an exception at startup about missing anti-forgery middleware, the article provides step-by-step instructions to resolve this issue.
-
-If necessary, you can opt out of anti-forgery validation for specific endpoints by using the <xref:Microsoft.AspNetCore.Builder.RoutingEndpointConventionBuilderExtensions.DisableAntiforgery%60%601(%60%600)> method:
-
-```csharp
-var app = WebApplication.Create();
-
-app.MapPost("/", (IFormFile formFile) => ...)
-  .DisableAntiforgery();
-
-app.Run();
-```
+- Instructions for resolving missing anti-forgery middleware exceptions at startup.
 
 ## Affected APIs
 

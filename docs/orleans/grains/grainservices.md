@@ -67,9 +67,9 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 :::zone target="docs" pivot="orleans-3-x"
 
-    :::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="data_service":::
+:::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="data_service":::
 
-    :::zone-end
+:::zone-end
 
 1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient%601>`GrainServiceClient` that other grains will use to connect to the `GrainService`.
 
@@ -128,9 +128,9 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 :::zone target="docs" pivot="orleans-3-x"
 
-    :::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="configure_grain_service":::
+:::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="configure_grain_service":::
 
-    :::zone-end
+:::zone-end
 
 ## Additional notes
 

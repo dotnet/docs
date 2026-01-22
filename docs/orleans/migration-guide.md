@@ -346,7 +346,7 @@ public sealed class PingGrain : Grain, IPingGrain
 }
 ```
 
-## POCO grains and <xref:Orleans.IGrainBase>
+## POCO grains and <xref:Orleans.IGrainBase> <a name="poco-grains-and-igrainbase"></a>
 
 Grains in Orleans no longer need to inherit from the <xref:Orleans.Grain> base class or any other class. This functionality is referred to as [POCO](../standard/glossary.md#poco) grains. To access extension methods such as any of the following:
 

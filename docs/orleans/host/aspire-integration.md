@@ -37,33 +37,15 @@ Your solution needs the following package references:
 
 ### AppHost project
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Aspire.Hosting.AppHost" Version="13.1.0" />
-  <PackageReference Include="Aspire.Hosting.Orleans" Version="13.1.0" />
-  <PackageReference Include="Aspire.Hosting.Redis" Version="13.1.0" />
-</ItemGroup>
-```
+:::code language="xml" source="snippets/aspire/AppHost/AppHost.csproj" id="apphost_packages":::
 
 ### Orleans silo project
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
-  <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-  <PackageReference Include="Aspire.StackExchange.Redis" Version="13.1.0" />
-</ItemGroup>
-```
+:::code language="xml" source="snippets/aspire/Silo/Silo.csproj" id="silo_packages":::
 
 ### Orleans client project (if separate from silo)
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.Orleans.Client" Version="10.0.0" />
-  <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-  <PackageReference Include="Aspire.StackExchange.Redis" Version="13.1.0" />
-</ItemGroup>
-```
+:::code language="xml" source="snippets/aspire/Client/Client.csproj" id="client_packages":::
 
 ## Configure the AppHost
 
@@ -71,99 +53,23 @@ The AppHost project orchestrates your Orleans cluster and its dependencies.
 
 ### Basic Orleans cluster with Redis clustering
 
-```csharp
-using Aspire.Hosting;
-
-var builder = DistributedApplication.CreateBuilder(args);
-
-// Add Redis for Orleans clustering
-var redis = builder.AddRedis("orleans-redis");
-
-// Define the Orleans resource with Redis clustering
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis);
-
-// Add the Orleans silo project
-builder.AddProject<Projects.MyOrleansSilo>("silo")
-    .WithReference(orleans)
-    .WaitFor(redis)
-    .WithReplicas(3);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="basic_orleans_cluster":::
 
 ### Orleans with grain storage and reminders
 
-```csharp
-using Aspire.Hosting;
-
-var builder = DistributedApplication.CreateBuilder(args);
-
-var redis = builder.AddRedis("orleans-redis");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis)
-    .WithGrainStorage("Default", redis)
-    .WithGrainStorage("PubSubStore", redis)
-    .WithReminders(redis);
-
-builder.AddProject<Projects.MyOrleansSilo>("silo")
-    .WithReference(orleans)
-    .WaitFor(redis)
-    .WithReplicas(3);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="orleans_with_storage_reminders":::
 
 ### Separate silo and client projects
 
 When your Orleans client runs in a separate process (such as a web frontend), use the `.AsClient()` method:
 
-```csharp
-using Aspire.Hosting;
-
-var builder = DistributedApplication.CreateBuilder(args);
-
-var redis = builder.AddRedis("orleans-redis");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis)
-    .WithGrainStorage("Default", redis);
-
-// Backend Orleans silo cluster
-var silo = builder.AddProject<Projects.OrleansBackend>("backend")
-    .WithReference(orleans)
-    .WaitFor(redis)
-    .WithReplicas(5);
-
-// Frontend web project as Orleans client
-builder.AddProject<Projects.WebFrontend>("frontend")
-    .WithReference(orleans.AsClient())  // Client-only reference
-    .WaitFor(silo);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="separate_silo_and_client":::
 
 ## Configure the Orleans silo project
 
 In your Orleans silo project, configure Orleans to use the Aspire-provided resources:
 
-```csharp
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-// Add Aspire service defaults (OpenTelemetry, health checks, etc.)
-builder.AddServiceDefaults();
-
-// Add the Aspire Redis client for Orleans
-builder.AddKeyedRedisClient("orleans-redis");
-
-// Configure Orleans - Aspire injects all configuration automatically
-builder.UseOrleans();
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/Silo/SiloProgram.cs" id="silo_basic_config":::
 
 > [!TIP]
 > When using .NET Aspire, the parameterless `UseOrleans()` is typically all you need. Aspire injects Orleans configuration (cluster ID, service ID, endpoints, and provider settings) via environment variables that Orleans reads automatically. You only need the delegate overload `UseOrleans(siloBuilder => {...})` when you require additional manual configuration beyond what Aspire provides.
@@ -175,42 +81,13 @@ builder.Build().Run();
 
 If you need explicit control over the connection string, you can read it from configuration:
 
-```csharp
-builder.UseOrleans(siloBuilder =>
-{
-    var redisConnectionString = builder.Configuration.GetConnectionString("orleans-redis");
-    
-    siloBuilder.UseRedisClustering(options =>
-    {
-        options.ConfigurationOptions = 
-            StackExchange.Redis.ConfigurationOptions.Parse(redisConnectionString!);
-    });
-    
-    siloBuilder.AddRedisGrainStorageAsDefault(options =>
-    {
-        options.ConfigurationOptions = 
-            StackExchange.Redis.ConfigurationOptions.Parse(redisConnectionString!);
-    });
-});
-```
+:::code language="csharp" source="snippets/aspire/Silo/SiloProgram.cs" id="silo_explicit_connection":::
 
 ## Configure the Orleans client project
 
 For separate client projects, configure the Orleans client similarly:
 
-```csharp
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.AddServiceDefaults();
-builder.AddKeyedRedisClient("orleans-redis");
-
-// Configure Orleans client - Aspire injects clustering configuration automatically
-builder.UseOrleansClient();
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/Client/ClientProgram.cs" id="client_basic_config":::
 
 ## AppHost extension methods reference
 
@@ -267,76 +144,13 @@ Aspire uses a ServiceDefaults project pattern to share common configuration acro
 
 ### OpenTelemetry configuration
 
-```csharp
-// In ServiceDefaults/Extensions.cs
-public static IHostApplicationBuilder AddServiceDefaults(
-    this IHostApplicationBuilder builder)
-{
-    builder.ConfigureOpenTelemetry();
-    builder.AddDefaultHealthChecks();
-    
-    return builder;
-}
-
-public static IHostApplicationBuilder ConfigureOpenTelemetry(
-    this IHostApplicationBuilder builder)
-{
-    builder.Logging.AddOpenTelemetry(logging =>
-    {
-        logging.IncludeFormattedMessage = true;
-        logging.IncludeScopes = true;
-    });
-
-    builder.Services.AddOpenTelemetry()
-        .WithMetrics(metrics =>
-        {
-            metrics.AddAspNetCoreInstrumentation()
-                .AddHttpClientInstrumentation()
-                .AddRuntimeInstrumentation()
-                .AddMeter("Microsoft.Orleans");  // Orleans metrics
-        })
-        .WithTracing(tracing =>
-        {
-            tracing.AddAspNetCoreInstrumentation()
-                .AddHttpClientInstrumentation()
-                .AddSource("Microsoft.Orleans.Runtime")
-                .AddSource("Microsoft.Orleans.Application");
-        });
-
-    return builder;
-}
-```
+:::code language="csharp" source="snippets/aspire/ServiceDefaults/Extensions.cs" id="service_defaults":::
 
 ## Azure Storage with Aspire
 
 You can use Azure Storage resources for Orleans clustering and persistence:
 
-```csharp
-using Aspire.Hosting;
-using Aspire.Hosting.Azure;
-
-var builder = DistributedApplication.CreateBuilder(args);
-
-// Add Azure Storage for Orleans
-var storage = builder.AddAzureStorage("orleans-storage")
-    .RunAsEmulator();  // Use Azurite emulator for local development
-
-var tables = storage.AddTables("orleans-tables");
-var blobs = storage.AddBlobs("orleans-blobs");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(tables)
-    .WithGrainStorage("Default", blobs)
-    .WithReminders(tables);
-
-builder.AddProject<Projects.MyOrleansSilo>("silo")
-    .WithReference(orleans)
-    .WithReference(tables)
-    .WithReference(blobs)
-    .WithReplicas(3);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="azure_storage_aspire":::
 
 ## Development vs. production configuration
 
@@ -344,31 +158,11 @@ Aspire makes it easy to switch between development and production configurations
 
 ### Local development (using emulators)
 
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-var redis = builder.AddRedis("orleans-redis");
-// Redis container runs automatically during development
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis);
-
-// ...
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="local_development":::
 
 ### Production (using managed services)
 
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-// Use existing Azure Cache for Redis
-var redis = builder.AddConnectionString("orleans-redis");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis);
-
-// ...
-```
+:::code language="csharp" source="snippets/aspire/AppHost/AppHostExamples.cs" id="production_config":::
 
 ## Health checks
 

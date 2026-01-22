@@ -43,17 +43,16 @@ Example of a client configuration:
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
-Using a `TokenCredential` with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+Using a `TokenCredential` with a service URI is the recommended approach. This pattern avoids storing secrets in configuration and leverages Microsoft Entra ID for secure authentication.
+
+<xref:Azure.Identity.DefaultAzureCredential> provides a credential chain that works seamlessly across local development and production environments. During development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the managed identity assigned to your resource.
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
 using Azure.Identity;
-
-var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.UseOrleansClient(clientBuilder =>
@@ -65,7 +64,9 @@ builder.UseOrleansClient(clientBuilder =>
     })
     .UseAzureStorageClustering(options =>
     {
-        options.ConfigureTableServiceClient(endpoint, credential);
+        options.ConfigureTableServiceClient(
+            new Uri("https://<your-storage-account>.table.core.windows.net"),
+            new DefaultAzureCredential());
     });
 });
 
@@ -139,17 +140,16 @@ Here, we set two things:
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
-var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
-
 clientBuilder.UseAzureStorageClustering(options =>
 {
-    options.ConfigureTableServiceClient(endpoint, credential);
+    options.ConfigureTableServiceClient(
+        new Uri("https://<your-storage-account>.table.core.windows.net"),
+        new DefaultAzureCredential());
 });
 ```
 

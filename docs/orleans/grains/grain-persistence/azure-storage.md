@@ -18,30 +18,31 @@ Install the [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/p
 
 Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage%2A?displayProperty=nameWithType> extension method.
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
-Using a `TokenCredential` with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+Using a `TokenCredential` with a service URI is the recommended approach. This pattern avoids storing secrets in configuration and leverages Microsoft Entra ID for secure authentication.
+
+<xref:Azure.Identity.DefaultAzureCredential> provides a credential chain that works seamlessly across local development and production environments. During development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the managed identity assigned to your resource.
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
 using Azure.Identity;
 
-var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
-
 siloBuilder.AddAzureTableGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.ConfigureTableServiceClient(endpoint, credential);
+        options.ConfigureTableServiceClient(
+            new Uri("https://<your-storage-account>.table.core.windows.net"),
+            new DefaultAzureCredential());
     });
 ```
 
 ### [Connection string](#tab/connection-string)
 
 > [!WARNING]
-> Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
+> Connection strings contain secrets and should be avoided in production. Use Microsoft Entra ID authentication whenever possible.
 
 ```csharp
 siloBuilder.AddAzureTableGrainStorage(
@@ -61,21 +62,20 @@ The Azure Blob Storage provider stores state in a blob.
 
 Configure the Azure Blob Storage grain persistence provider using the <xref:Orleans.Hosting.AzureBlobSiloBuilderExtensions.AddAzureBlobGrainStorage%2A?displayProperty=nameWithType> extension method.
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
 using Azure.Identity;
 
-var endpoint = new Uri(configuration["AZURE_BLOB_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
-
 siloBuilder.AddAzureBlobGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.ConfigureBlobServiceClient(endpoint, credential);
+        options.ConfigureBlobServiceClient(
+            new Uri("https://<your-storage-account>.blob.core.windows.net"),
+            new DefaultAzureCredential());
     });
 ```
 

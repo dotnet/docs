@@ -24,37 +24,35 @@ There are several key aspects of silo configuration:
 
 This example shows a silo configuration defining cluster information and using Azure Table Storage for clustering:
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
-Using a `TokenCredential` with a URI endpoint is the recommended approach for production environments. This pattern avoids storing secrets in configuration and leverages Azure managed identities for secure authentication.
+Using a `TokenCredential` with a service URI is the recommended approach. This pattern avoids storing secrets in configuration and leverages Microsoft Entra ID for secure authentication.
+
+<xref:Azure.Identity.DefaultAzureCredential> provides a credential chain that works seamlessly across local development and production environments. During development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the managed identity assigned to your resource.
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
 using Azure.Identity;
 
-var endpoint = new Uri(builder.Configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
-
 using IHost host = Host.CreateDefaultBuilder(args)
     .UseOrleans(siloBuilder =>
     {
         siloBuilder.UseAzureStorageClustering(options =>
         {
-            options.ConfigureTableServiceClient(endpoint, credential);
+            options.ConfigureTableServiceClient(
+                new Uri("https://<your-storage-account>.table.core.windows.net"),
+                new DefaultAzureCredential());
         });
     })
     .UseConsoleLifetime()
     .Build();
 ```
 
-> [!NOTE]
-> The `AZURE_TABLE_STORAGE_ENDPOINT` configuration value should be the Table Storage endpoint URL, such as `https://<storage-account-name>.table.core.windows.net`.
-
 ### [Connection string](#tab/connection-string)
 
 > [!WARNING]
-> Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
+> Connection strings contain secrets and should be avoided in production. Use Microsoft Entra ID authentication whenever possible.
 
 ```csharp
 using IHost host = Host.CreateDefaultBuilder(args)
@@ -74,17 +72,16 @@ using IHost host = Host.CreateDefaultBuilder(args)
 
 ## Clustering provider
 
-### [Managed identity (recommended)](#tab/managed-identity)
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
 [!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
-var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new ManagedIdentityCredential();
-
 siloBuilder.UseAzureStorageClustering(options =>
 {
-    options.ConfigureTableServiceClient(endpoint, credential);
+    options.ConfigureTableServiceClient(
+        new Uri("https://<your-storage-account>.table.core.windows.net"),
+        new DefaultAzureCredential());
 });
 ```
 

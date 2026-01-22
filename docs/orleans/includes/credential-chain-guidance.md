@@ -1,4 +1,4 @@
 <!-- Azure credential chain guidance -->
 
 > [!TIP]
-> While <xref:Azure.Identity.DefaultAzureCredential> is convenient for getting started, consider replacing it with a specific credential like <xref:Azure.Identity.ManagedIdentityCredential> once deployed to Azure. This approach improves debuggability, performance, and predictability. For more information, see [Usage guidance for DefaultAzureCredential](/dotnet/azure/sdk/authentication/credential-chains#usage-guidance-for-defaultazurecredential).
+> <xref:Azure.Identity.DefaultAzureCredential> works seamlessly across local development and production. In development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the resource's managed identity. For improved performance and debuggability in production, consider replacing it with a specific credential like <xref:Azure.Identity.ManagedIdentityCredential>. For more information, see [Usage guidance for DefaultAzureCredential](/dotnet/azure/sdk/authentication/credential-chains#usage-guidance-for-defaultazurecredential).

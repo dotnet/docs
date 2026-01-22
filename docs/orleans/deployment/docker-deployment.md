@@ -11,7 +11,7 @@ ms.custom:
 # Docker deployment
 
 > [!CAUTION]
-> This article was written for Orleans 2.0 Technical Preview and uses legacy APIs that are no longer supported in Orleans 7.0+. The concepts around Docker networking and orchestration remain relevant, but the code examples use deprecated patterns such as `ClientBuilder`, `ClientConfiguration`, `ClusterConfiguration`, `SiloHost`, and `OrleansHostWrapper`. For modern Orleans deployments, use `UseOrleans()` and `UseOrleansClient()` with the .NET Generic Host. See [Local development configuration](../host/configuration-guide/local-development-configuration.md) for current patterns.
+> This article was written for Orleans 2.0 Technical Preview and uses legacy APIs that are no longer supported in Orleans 7.0+. The concepts around Docker networking and orchestration remain relevant, but the code examples use deprecated patterns such as <xref:Orleans.ClientBuilder>, `ClientConfiguration`, `ClusterConfiguration`, `SiloHost`, and `OrleansHostWrapper`. For modern Orleans deployments, use `UseOrleans()` and `UseOrleansClient()` with the .NET Generic Host. See [Local development configuration](../host/configuration-guide/local-development-configuration.md) for current patterns.
 
 > [!TIP]
 > Even if familiar with Docker or Orleans, reading this article to the end is recommended to avoid potential problems with known workarounds.

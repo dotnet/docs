@@ -13,7 +13,7 @@ zone_pivot_groups: orleans-version
 
 This page provides general guidelines for troubleshooting common Orleans deployment issues.
 
-## The `SiloUnavailableException`
+## The <xref:Orleans.Runtime.SiloUnavailableException>
 
 This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when:
 
@@ -51,7 +51,7 @@ For information about the version-tolerant serializer, see [Orleans serializatio
 
 ## Missing logs
 
-Ensure logging is configured properly. Orleans uses the standard `ILogger` abstraction. Configure your logging provider (Serilog, NLog, Console, Application Insights, etc.) to capture Orleans logs at the appropriate level.
+Ensure logging is configured properly. Orleans uses the standard <xref:Microsoft.Extensions.Logging.ILogger> abstraction. Configure your logging provider (Serilog, NLog, Console, Application Insights, etc.) to capture Orleans logs at the appropriate level.
 
 ```csharp
 builder.Logging.SetMinimumLevel(LogLevel.Information);
@@ -77,7 +77,7 @@ This page provides general guidelines for troubleshooting issues occurring durin
 > [!NOTE]
 > For Azure Cloud Services (classic) specific troubleshooting, see [Troubleshoot Azure Cloud Service deployments](troubleshooting-azure-cloud-services-deployments.md). Note that Azure Cloud Services (classic) was retired on August 31, 2024.
 
-## The `SiloUnavailableException`
+## The <xref:Orleans.Runtime.SiloUnavailableException>
 
 This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when a silo terminates abruptly and is evicted from the cluster, which is expected behavior during cluster membership changes.
 

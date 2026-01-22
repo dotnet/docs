@@ -125,7 +125,7 @@ Clearing the state involves deleting the file if it exists.
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="clearstateasync":::
 
-For the same reason as `WriteStateAsync`, check for inconsistency. Before deleting the file and resetting the `ETag`, check if the current `ETag` matches the last write time UTC.
+For the same reason as <xref:Orleans.Grain%601.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the `ETag`, check if the current `ETag` matches the last write time UTC.
 
 ## Put it all together
 
@@ -212,7 +212,7 @@ Clearing the state involves deleting the file if it exists.
 
 :::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="clearstateasync":::
 
-For the same reason as `WriteStateAsync`, check for inconsistency. Before deleting the file and resetting the ETag, check if the current ETag matches the last write time UTC.
+For the same reason as <xref:Orleans.Grain%601.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the ETag, check if the current ETag matches the last write time UTC.
 
 ## Put it all together
 

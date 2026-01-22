@@ -80,7 +80,7 @@ It's relatively easy to produce events for streams. First, get access to the str
 
 As you can see, the stream has a GUID and a namespace. This makes it easy to identify unique streams. For example, the namespace for a chat room could be "Rooms", and the GUID could be the owning `RoomGrain`'s GUID.
 
-Here, use the GUID of a known chat room. Using the `OnNextAsync` method of the stream, push data to it. Let's do this inside a timer using random numbers. You could use any other data type for the stream as well.
+Here, use the GUID of a known chat room. Using the <xref:Orleans.Streams.IAsyncStream%601.OnNextAsync*> method of the stream, push data to it. Let's do this inside a timer using random numbers. You could use any other data type for the stream as well.
 
 ```csharp
 RegisterTimer(_ =>
@@ -105,7 +105,7 @@ public class ReceiverGrain : Grain, IRandomReceiver
 
 Whenever data is pushed to streams in the `RANDOMDATA` namespace (as in the timer example), a grain of type `ReceiverGrain` with the same <xref:System.Guid> as the stream receives the message. Even if no activations of the grain currently exist, the runtime automatically creates a new one and sends the message to it.
 
-For this to work, complete the subscription process by setting the `OnNextAsync` method for receiving data. To do so, the `ReceiverGrain` should call something like this in its `OnActivateAsync`:
+For this to work, complete the subscription process by setting the <xref:Orleans.Streams.IAsyncStream%601.OnNextAsync*> method for receiving data. To do so, the `ReceiverGrain` should call something like this in its <xref:Orleans.Grain.OnActivateAsync*>:
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 

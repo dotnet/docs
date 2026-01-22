@@ -357,9 +357,9 @@ Exceptions thrown from grain methods don't cause the grain to be deactivated unl
 
 ### Virtual methods
 
-A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods. The Orleans runtime invokes these methods upon activation and deactivation of each grain of the class. This gives your grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods. The Orleans runtime invokes these methods upon activation and deactivation of each grain of the class. This gives your grain code a chance to perform additional initialization and cleanup operations. An exception thrown by <xref:Orleans.Grain.OnActivateAsync*> fails the activation process.
 
-While `OnActivateAsync` (if overridden) is always called as part of the grain activation process, `OnDeactivateAsync` isn't guaranteed to be called in all situations (for example, in case of a server failure or other abnormal events). Because of this, your applications shouldn't rely on `OnDeactivateAsync` for performing critical operations, such as persisting state changes. Use it only for best-effort operations.
+While <xref:Orleans.Grain.OnActivateAsync*> (if overridden) is always called as part of the grain activation process, <xref:Orleans.Grain.OnDeactivateAsync*> isn't guaranteed to be called in all situations (for example, in case of a server failure or other abnormal events). Because of this, your applications shouldn't rely on <xref:Orleans.Grain.OnDeactivateAsync*> for performing critical operations, such as persisting state changes. Use it only for best-effort operations.
 
 ## See also
 

@@ -82,9 +82,9 @@ A grain activation can also instruct the runtime to deactivate it the next time 
 protected void DeactivateOnIdle()
 ```
 
-A grain activation is considered idle if it isn't processing any messages at the moment. If you call `DeactivateOnIdle` while a grain is processing a message, it deactivates as soon as the processing of the current message finishes. If any requests are queued for the grain, they'll be forwarded to the next activation.
+A grain activation is considered idle if it isn't processing any messages at the moment. If you call <xref:Orleans.GrainBaseExtensions.DeactivateOnIdle*> while a grain is processing a message, it deactivates as soon as the processing of the current message finishes. If any requests are queued for the grain, they'll be forwarded to the next activation.
 
-`DeactivateOnIdle` takes priority over any activation collection settings specified in the configuration or `DelayDeactivation`.
+<xref:Orleans.GrainBaseExtensions.DeactivateOnIdle*> takes priority over any activation collection settings specified in the configuration or `DelayDeactivation`.
 
 > [!NOTE]
 > This setting only applies to the specific grain activation from which it was called; it doesn't apply to other activations of this grain type.
@@ -171,7 +171,7 @@ When memory-based activation shedding is enabled:
 2. When memory usage exceeds `MemoryUsageLimitPercentage`, the silo begins deactivating idle grain activations.
 3. Grains are deactivated starting with the least recently used activations.
 4. Collection continues until memory usage drops below `MemoryUsageTargetPercentage`.
-5. The standard grain lifecycle methods (`OnDeactivateAsync`) are called during deactivation.
+5. The standard grain lifecycle methods (<xref:Orleans.Grain.OnDeactivateAsync*>) are called during deactivation.
 
 This feature works in conjunction with standard activation collection. Grains that have called `DelayDeactivation` or have the `[KeepAlive]` attribute are still respected, though they may be deactivated if memory pressure is severe enough.
 

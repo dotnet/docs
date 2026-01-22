@@ -33,7 +33,7 @@ await Host.CreateDefaultBuilder(args)
 The preceding code does the following:
 
 - Creates a default host builder.
-- Calls the `UseOrleans` extension method to configure the silo.
+- Calls the <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> extension method to configure the silo.
 - Calls the `UseLocalhostClustering` extension method on the given <xref:Orleans.Hosting.ISiloBuilder> to configure the silo to use localhost clustering.
 - Chains the `RunConsoleAsync` method to run the silo as a console application.
 
@@ -84,7 +84,7 @@ await host.StartAsync();
 The preceding code does the following:
 
 - Creates a default host builder.
-- Calls the `UseOrleansClient` extension method to configure the client.
+- Calls the <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> extension method to configure the client.
 - Calls the `UseLocalhostClustering` extension method on the given <xref:Orleans.Hosting.IClientBuilder> to configure the client to use localhost clustering.
 - Calls the `UseConsoleLifetime` extension method to configure the client to use the console lifetime.
 - Calls the `StartAsync` method on the `host` variable to start the client.

@@ -21,7 +21,7 @@ Each activation can have zero or more timers associated with it. The runtime exe
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
-To start a timer, use the `RegisterGrainTimer` method, which returns an <xref:Orleans.Runtime.IGrainTimer> reference:
+To start a timer, use the <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> method, which returns an <xref:Orleans.Runtime.IGrainTimer> reference:
 
 ```csharp
 protected IGrainTimer RegisterGrainTimer<TState>(
@@ -61,14 +61,14 @@ The <xref:Orleans.Runtime.GrainTimerCreationOptions> structure provides the foll
 - Callbacks can dispose of the grain timer that fired them.
 - Callbacks are subject to grain call filters.
 - Callbacks are visible in distributed tracing when distributed tracing is enabled.
-- POCO grains (grain classes that don't inherit from <xref:Orleans.Grain>) can register grain timers using the `RegisterGrainTimer` extension method.
+- POCO grains (grain classes that don't inherit from <xref:Orleans.Grain>) can register grain timers using the <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> extension method.
 
 :::zone-end
 
 :::zone target="docs" pivot="orleans-7-0,orleans-3-x"
 
 > [!IMPORTANT]
-> The `RegisterTimer` API is obsolete starting in Orleans 8.2. If you're upgrading to Orleans 8.0 or later, migrate to the new `RegisterGrainTimer` API. See the [migration section](#migrate-from-registertimer-to-registergraintimer) for details.
+> The `RegisterTimer` API is obsolete starting in Orleans 8.2. If you're upgrading to Orleans 8.0 or later, migrate to the new <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> API. See the [migration section](#migrate-from-registertimer-to-registergraintimer) for details.
 
 To start a timer, use the `Grain.RegisterTimer` method, which returns an <xref:System.IDisposable> reference:
 
@@ -97,11 +97,11 @@ A timer stops triggering if the grain deactivates or when a fault occurs and its
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0"
 
-If you're upgrading from Orleans 7.x to Orleans 8.x or later, you should migrate from the obsolete `RegisterTimer` API to the new `RegisterGrainTimer` API.
+If you're upgrading from Orleans 7.x to Orleans 8.x or later, you should migrate from the obsolete `RegisterTimer` API to the new <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> API.
 
 ### Key differences
 
-| Aspect | `RegisterTimer` (Orleans 7.x) | `RegisterGrainTimer` (Orleans 8.x+) |
+| Aspect | `RegisterTimer` (Orleans 7.x) | <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> (Orleans 8.x+) |
 |--------|-------------------------------|-------------------------------------|
 | **Interleaving** | Callbacks interleave by default | Callbacks do **not** interleave by default |
 | **Return type** | <xref:System.IDisposable> | <xref:Orleans.Runtime.IGrainTimer> |
@@ -146,7 +146,7 @@ public class MyGrain : Grain, IMyGrain
 :::code language="csharp" source="./snippets/timers/TimerExamples.cs" id="migrate_after":::
 
 > [!WARNING]
-> The default interleaving behavior changed in Orleans 8.2. The old `RegisterTimer` API allowed timer callbacks to interleave with other grain calls by default. The new `RegisterGrainTimer` API does **not** interleave by default. If your grain logic depends on interleaving behavior, set `Interleave = true` in <xref:Orleans.Runtime.GrainTimerCreationOptions> to preserve the old behavior.
+> The default interleaving behavior changed in Orleans 8.2. The old `RegisterTimer` API allowed timer callbacks to interleave with other grain calls by default. The new <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> API does **not** interleave by default. If your grain logic depends on interleaving behavior, set `Interleave = true` in <xref:Orleans.Runtime.GrainTimerCreationOptions> to preserve the old behavior.
 
 :::zone-end
 

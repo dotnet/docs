@@ -23,7 +23,7 @@ Configure silos programmatically via <xref:Orleans.Hosting.ISiloBuilder> and sev
 The preceding code:
 
 - Creates a default host builder.
-- Calls `UseOrleans` to configure the silo.
+- Calls <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> to configure the silo.
 - Uses localhost clustering for local development.
 - Configures the cluster and service IDs.
 - Configures the endpoint to listen on loopback.
@@ -66,7 +66,7 @@ Similar to the silo, configure the client via <xref:Orleans.IClientBuilder> and 
 The preceding code:
 
 - Creates a default host builder.
-- Calls `UseOrleansClient` to configure the client.
+- Calls <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> to configure the client.
 - Uses localhost clustering to connect to the local silo.
 - Configures the cluster and service IDs to match the silo.
 - Starts the host and retrieves the <xref:Orleans.IClusterClient> from the service provider.

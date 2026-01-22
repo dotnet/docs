@@ -43,7 +43,7 @@ RaiseEvent(new PostedEvent()
 });
 ```
 
-Note that `RaiseEvent` initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
+Note that <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
 
 ```csharp
 RaiseEvent(new DepositTransaction()
@@ -54,7 +54,7 @@ RaiseEvent(new DepositTransaction()
 await ConfirmEvents();
 ```
 
-Note that even if you don't explicitly call `ConfirmEvents`, the events eventually get confirmed automatically in the background.
+Note that even if you don't explicitly call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>, the events eventually get confirmed automatically in the background.
 
 ## State transition methods
 
@@ -95,7 +95,7 @@ Some providers, like the <xref:Orleans.EventSourcing.LogStorage> log-consistency
 
 ## Raise multiple events
 
-You can make multiple calls to `RaiseEvent` before calling `ConfirmEvents`:
+You can make multiple calls to <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> before calling <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>:
 
 ```csharp
 RaiseEvent(e1);

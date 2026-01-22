@@ -111,7 +111,7 @@ class StartupTask : ILifecycleParticipant<ISiloLifecycle>
 
 From the preceding implementation, you can see that in the `Participate(...)` call, it subscribes to the silo lifecycle at the configured stage, passing the application callback rather than its initialization logic. Components needing initialization at a given stage would provide their callback, but the pattern remains the same. Now that you have a `StartupTask` ensuring the application's hook is called at the configured stage, you need to ensure the `StartupTask` participates in the silo lifecycle.
 
-For this, register it in the container using the `AddStartupTask` extension method on the silo builder:
+For this, register it in the container using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on the silo builder:
 
 ```csharp
 siloBuilder.AddStartupTask(

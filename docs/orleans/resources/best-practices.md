@@ -177,7 +177,7 @@ External changing data:
 Writing custom providers:
 
 - Storage providers are simple to write which is also a significant extension element for Orleans.
-- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, `ReadStateAsync`).
+- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, <xref:Orleans.Grain%601.ReadStateAsync*>).
 - The storage behavior is typically configurable (Batch writing, Hard or Soft Deletions, and so on) and defined by the storage provider.
 
 ## Cluster management

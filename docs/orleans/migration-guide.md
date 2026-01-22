@@ -178,7 +178,7 @@ public class MyClass
 
 ### Breaking change: `RegisterTimer` obsoleted
 
-The `Grain.RegisterTimer` method is obsolete. Use the new `RegisterGrainTimer` extension methods instead, which provide better control over timer behavior.
+The `Grain.RegisterTimer` method is obsolete. Use the new <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> extension methods instead, which provide better control over timer behavior.
 
 ```csharp
 // Orleans 7.x
@@ -209,7 +209,7 @@ public override Task OnActivateAsync(CancellationToken cancellationToken)
 ```
 
 > [!IMPORTANT]
-> By default, `RegisterGrainTimer` uses `Interleave = false`, which prevents timer callbacks from interleaving with other grain calls. If you need the old behavior where timer callbacks could interleave, explicitly set `Interleave = true`.
+> By default, <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> uses `Interleave = false`, which prevents timer callbacks from interleaving with other grain calls. If you need the old behavior where timer callbacks could interleave, explicitly set `Interleave = true`.
 
 ### New features in Orleans 10.0
 
@@ -241,7 +241,7 @@ public class MyGrain : Grain, IMyGrain { }
 
 If you're upgrading from Orleans 7.x, note these changes introduced in Orleans 8.0:
 
-- **New Timer API**: `RegisterGrainTimer` was introduced to replace `RegisterTimer`
+- **New Timer API**: <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> was introduced to replace `RegisterTimer`
 - **[.NET Aspire integration](host/aspire-integration.md)**: First-class support for .NET Aspire
 - **Resource-Optimized Placement**: New placement strategy based on CPU and memory utilization
 - **Activation Repartitioning** (8.2+): Experimental feature for automatic grain rebalancing
@@ -309,16 +309,16 @@ For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#
 
 ## Hosting
 
-The <xref:Orleans.ClientBuilder> type is replaced with the <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means an Orleans client can be added to an existing host without creating a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> completes, the client connects automatically. Services added to the `IHostBuilder` start in the order of registration. Calling `UseOrleansClient` before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A>, for example, ensures Orleans starts before ASP.NET Core starts, allowing immediate access to the client from the ASP.NET Core application.
+The <xref:Orleans.ClientBuilder> type is replaced with the <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means an Orleans client can be added to an existing host without creating a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> completes, the client connects automatically. Services added to the `IHostBuilder` start in the order of registration. Calling <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A>, for example, ensures Orleans starts before ASP.NET Core starts, allowing immediate access to the client from the ASP.NET Core application.
 
 To emulate the previous <xref:Orleans.ClientBuilder> behavior, create a separate `HostBuilder` and configure it with an Orleans client. An `IHostBuilder` can be configured with either an Orleans client or an Orleans silo. All silos register an instance of <xref:Orleans.IGrainFactory> and <xref:Orleans.IClusterClient> that the application can use, so configuring a client separately is unnecessary and unsupported.
 
-## `OnActivateAsync` and `OnDeactivateAsync` signature change
+## <xref:Orleans.Grain.OnActivateAsync*> and <xref:Orleans.Grain.OnDeactivateAsync*> signature change
 
 Orleans allows grains to execute code during activation and deactivation. Use this capability to perform tasks such as reading state from storage or logging lifecycle messages. In Orleans 7.0, the signature of these lifecycle methods changed:
 
 - <xref:Orleans.Grain.OnActivateAsync> now accepts a <xref:System.Threading.CancellationToken> parameter. When the <xref:System.Threading.CancellationToken> is canceled, abandon the activation process.
-- <xref:Orleans.Grain.OnDeactivateAsync> now accepts a <xref:Orleans.DeactivationReason> parameter and a <xref:System.Threading.CancellationToken> parameter. The `DeactivationReason` indicates why the activation is being deactivated. Use this information for logging and diagnostics purposes. When the <xref:System.Threading.CancellationToken> is canceled, complete the deactivation process promptly. Note that since any host can fail at any time, relying on `OnDeactivateAsync` to perform important actions, such as persisting critical state, isn't recommended.
+- <xref:Orleans.Grain.OnDeactivateAsync> now accepts a <xref:Orleans.DeactivationReason> parameter and a <xref:System.Threading.CancellationToken> parameter. The `DeactivationReason` indicates why the activation is being deactivated. Use this information for logging and diagnostics purposes. When the <xref:System.Threading.CancellationToken> is canceled, complete the deactivation process promptly. Note that since any host can fail at any time, relying on <xref:Orleans.Grain.OnDeactivateAsync*> to perform important actions, such as persisting critical state, isn't recommended.
 
 Consider the following example of a grain overriding these new methods:
 
@@ -373,7 +373,7 @@ public sealed class PingGrain : IGrainBase, IPingGrain
 }
 ```
 
-<xref:Orleans.IGrainBase> also defines `OnActivateAsync` and `OnDeactivateAsync` with default implementations, allowing the grain to participate in its lifecycle if desired:
+<xref:Orleans.IGrainBase> also defines <xref:Orleans.Grain.OnActivateAsync*> and <xref:Orleans.Grain.OnDeactivateAsync*> with default implementations, allowing the grain to participate in its lifecycle if desired:
 
 ```csharp
 public sealed class PingGrain : IGrainBase, IPingGrain

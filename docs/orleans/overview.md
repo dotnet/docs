@@ -62,7 +62,7 @@ Orleans 8.x introduced several important features:
 - **[.NET Aspire Integration](host/aspire-integration.md)**: First-class support for .NET Aspire for simplified cloud-native development.
 - **Resource-Optimized Placement**: A new placement strategy based on CPU and memory utilization.
 - **Activation Repartitioning (8.2, Experimental)**: Automatic redistribution of grains for improved performance.
-- **New Grain Timer API (8.2)**: `RegisterGrainTimer` replaces the deprecated `RegisterTimer` method.
+- **New Grain Timer API (8.2)**: <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> replaces the deprecated `RegisterTimer` method.
 - **MessagePack Serializer (8.2)**: A new high-performance serialization option.
 - **Cassandra Clustering Provider (8.2)**: Support for Apache Cassandra as a clustering provider.
 

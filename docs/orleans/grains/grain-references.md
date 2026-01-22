@@ -45,10 +45,10 @@ Notice that the preceding calls to <xref:Orleans.IGrainFactory.GetGrain*?display
 - The _interface_ implemented by the grain reference, `IPlayerGrain`.
 - The grain _key_, which is the value of `playerId`.
 
-Despite stating that a grain reference contains a grain _type_, _key_, and _interface_, the examples only provided Orleans with the _key_ and _interface_. This is because Orleans maintains a mapping between grain interfaces and grain types. When you ask the grain factory for `IShoppingCartGrain`, Orleans consults its mapping to find the corresponding grain type so it can create the reference. This works when there's only one implementation of a grain interface. However, if there are multiple implementations, you need to disambiguate them in the `GetGrain` call. For more information, see the next section, [Disambiguating grain type resolution](#disambiguating-grain-type-resolution).
+Despite stating that a grain reference contains a grain _type_, _key_, and _interface_, the examples only provided Orleans with the _key_ and _interface_. This is because Orleans maintains a mapping between grain interfaces and grain types. When you ask the grain factory for `IShoppingCartGrain`, Orleans consults its mapping to find the corresponding grain type so it can create the reference. This works when there's only one implementation of a grain interface. However, if there are multiple implementations, you need to disambiguate them in the <xref:Orleans.IGrainFactory.GetGrain*> call. For more information, see the next section, [Disambiguating grain type resolution](#disambiguating-grain-type-resolution).
 
 > [!NOTE]
-> Orleans generates grain reference implementation types for each grain interface in your application during compilation. These grain reference implementations inherit from the <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> class. `GetGrain` returns instances of the generated <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> implementation corresponding to the requested grain interface.
+> Orleans generates grain reference implementation types for each grain interface in your application during compilation. These grain reference implementations inherit from the <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> class. <xref:Orleans.IGrainFactory.GetGrain*> returns instances of the generated <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> implementation corresponding to the requested grain interface.
 
 ## Disambiguating grain type resolution
 
@@ -75,7 +75,7 @@ public class DownCounterGrain : ICounterGrain
 }
 ```
 
-The following call to `GetGrain` throws an exception because Orleans doesn't know how to unambiguously map `ICounterGrain` to one of the grain classes.
+The following call to <xref:Orleans.IGrainFactory.GetGrain*> throws an exception because Orleans doesn't know how to unambiguously map `ICounterGrain` to one of the grain classes.
 
 ```csharp
 // This will throw an exception: there is no unambiguous mapping from ICounterGrain to a grain class.
@@ -102,7 +102,7 @@ There are several ways to resolve this ambiguity, detailed in the following subs
 
 ### Disambiguating grain types using unique marker interfaces
 
-The clearest way to disambiguate these grains is to give them unique grain interfaces. For example, if you add the interface `IUpCounterGrain` to the `UpCounterGrain` class and add the interface `IDownCounterGrain` to the `DownCounterGrain` class, as in the following example, you can resolve the correct grain reference by passing `IUpCounterGrain` or `IDownCounterGrain` to the `GetGrain<T>` call instead of the ambiguous `ICounterGrain` type.
+The clearest way to disambiguate these grains is to give them unique grain interfaces. For example, if you add the interface `IUpCounterGrain` to the `UpCounterGrain` class and add the interface `IDownCounterGrain` to the `DownCounterGrain` class, as in the following example, you can resolve the correct grain reference by passing `IUpCounterGrain` or `IDownCounterGrain` to the <xref:Orleans.IGrainFactory.GetGrain*> call instead of the ambiguous `ICounterGrain` type.
 
 ```csharp
 public interface ICounterGrain : IGrainWithStringKey

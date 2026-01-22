@@ -67,7 +67,7 @@ The transactional operations `Withdraw` and `Deposit` on the account grain are m
 
 ### Important considerations
 
-You cannot mark `OnActivateAsync` as transactional because any such call requires proper setup before the call. It exists only for the grain application API. This means attempting to read transactional state as part of these methods throws an exception in the runtime.
+You cannot mark <xref:Orleans.Grain.OnActivateAsync*> as transactional because any such call requires proper setup before the call. It exists only for the grain application API. This means attempting to read transactional state as part of these methods throws an exception in the runtime.
 
 ## Grain implementations
 
@@ -114,7 +114,7 @@ The `Balance` state object is then used in the `AccountGrain` implementation as 
 > [!IMPORTANT]
 > A transactional grain must be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to ensure that the transaction context is correctly passed to the grain call.
 
-In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> declares that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans injects an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with state loaded from the transactional state storage named `"TransactionStore"`. You can modify the state via `PerformUpdate` or read it via `PerformRead`. The transaction infrastructure ensures that any such changes performed as part of a transaction (even among multiple grains distributed across an Orleans cluster) are either all committed or all undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
+In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> declares that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans injects an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with state loaded from the transactional state storage named `"TransactionStore"`. You can modify the state via <xref:Orleans.Transactions.Abstractions.ITransactionalState%601.PerformUpdate*> or read it via <xref:Orleans.Transactions.Abstractions.ITransactionalState%601.PerformRead*>. The transaction infrastructure ensures that any such changes performed as part of a transaction (even among multiple grains distributed across an Orleans cluster) are either all committed or all undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
 
 ## Call transaction methods from a client
 
@@ -124,7 +124,7 @@ The recommended way to call a transactional grain method is to use the `ITransac
 
 In the preceding client code:
 
-- The `IHostBuilder` is configured with `UseOrleansClient`.
+- The `IHostBuilder` is configured with <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*>.
   - The <xref:Orleans.IClientBuilder> uses localhost clustering and transactions.
 - The <xref:Orleans.IClusterClient> and `ITransactionClient` interfaces are retrieved from the service provider.
 - The `from` and `to` variables are assigned their `IAccountGrain` references.

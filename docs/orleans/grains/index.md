@@ -81,7 +81,7 @@ public interface IPlayerGrain : IGrainWithGuidKey
 
 The preceding code sets a response timeout of five seconds on the `LeaveGame` method. When leaving a game, if it takes longer than five seconds a <xref:System.TimeoutException> is thrown.
 
-You can also specify the timeout using `TimeSpan` constructor parameters:
+You can also specify the timeout using <xref:System.TimeSpan> constructor parameters:
 
 ```csharp
 public interface IDataProcessingGrain : IGrainWithGuidKey
@@ -109,14 +109,14 @@ For more information on configuring Orleans, see [Client configuration](../host/
 
 Consider the following when configuring timeouts:
 
-- **Per-method timeouts override global settings**: A `ResponseTimeoutAttribute` on a grain method takes precedence over the global `ResponseTimeout` configuration.
+- **Per-method timeouts override global settings**: A <xref:Orleans.ResponseTimeoutAttribute> on a grain method takes precedence over the global <xref:Orleans.ResponseTimeoutAttribute> configuration.
 - **Set realistic timeouts**: Base timeouts on expected execution time plus reasonable network latency. Timeouts that are too short cause unnecessary failures; timeouts that are too long delay error detection.
 - **Long-running operations**: For operations that may take significant time, consider using Orleans [Reminders](timers-and-reminders.md) instead of extending timeouts indefinitely.
-- **Testing**: Test timeout behavior in your integration tests to ensure your application handles `TimeoutException` gracefully.
+- **Testing**: Test timeout behavior in your integration tests to ensure your application handles <xref:System.TimeoutException> gracefully.
 
 ## Return values from grain methods
 
-Define a grain method that returns a value of type `T` in a grain interface as returning a `Task<T>`.
+Define a grain method that returns a value of type `T` in a grain interface as returning a <xref:System.Threading.Tasks.Task%601>.
 For grain methods not marked with the `async` keyword, when the return value is available, you usually return it using the following statement:
 
 ```csharp
@@ -126,7 +126,7 @@ public Task<SomeType> GrainMethod1()
 }
 ```
 
-Define a grain method that returns no value (effectively a void method) in a grain interface as returning a `Task`. The returned `Task` indicates the asynchronous execution and completion of the method. For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType>:
+Define a grain method that returns no value (effectively a void method) in a grain interface as returning a <xref:System.Threading.Tasks.Task>. The returned <xref:System.Threading.Tasks.Task> indicates the asynchronous execution and completion of the method. For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType>:
 
 ```csharp
 public Task GrainMethod2()
@@ -153,7 +153,7 @@ public async Task GrainMethod4()
 }
 ```
 
-If a grain method receives the return value from another asynchronous method call (to a grain or not) and doesn't need to perform error handling for that call, it can simply return the `Task` it receives from that asynchronous call:
+If a grain method receives the return value from another asynchronous method call (to a grain or not) and doesn't need to perform error handling for that call, it can simply return the <xref:System.Threading.Tasks.Task> it receives from that asynchronous call:
 
 ```csharp
 public Task<SomeType> GrainMethod5()
@@ -164,7 +164,7 @@ public Task<SomeType> GrainMethod5()
 }
 ```
 
-Similarly, a `void` grain method can return a `Task` returned to it by another call instead of awaiting it.
+Similarly, a `void` grain method can return a <xref:System.Threading.Tasks.Task> returned to it by another call instead of awaiting it.
 
 ```csharp
 public Task GrainMethod6()
@@ -174,11 +174,11 @@ public Task GrainMethod6()
 }
 ```
 
-`ValueTask<T>` can be used instead of `Task<T>`.
+<xref:System.Threading.Tasks.ValueTask%601> can be used instead of <xref:System.Threading.Tasks.Task%601>.
 
 ## IAsyncEnumerable return values
 
-Orleans supports returning `IAsyncEnumerable<T>` from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
+Orleans supports returning <xref:System.Collections.Generic.IAsyncEnumerable%601> from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
 
 - Returning large collections of data progressively
 - Streaming real-time updates
@@ -199,7 +199,7 @@ public interface IDataGrain : IGrainWithStringKey
 
 ### Implement the streaming method
 
-Use the `yield return` statement or return an `IAsyncEnumerable<T>` directly:
+Use the `yield return` statement or return an <xref:System.Collections.Generic.IAsyncEnumerable%601> directly:
 
 ```csharp
 public class DataGrain : Grain, IDataGrain
@@ -273,7 +273,7 @@ await foreach (var item in grain.GetAllItemsAsync().WithBatchSize(50))
 | **Backpressure** | Built-in | Provider-dependent |
 | **Persistence** | No | Optional (provider-dependent) |
 
-Use `IAsyncEnumerable<T>` when:
+Use <xref:System.Collections.Generic.IAsyncEnumerable%601> when:
 
 - You need a simple request-response pattern with streaming results
 - The caller initiates the data flow and consumes all results
@@ -326,7 +326,7 @@ await joinGameTask;
 players.Add(playerId);
 ```
 
-You can join two or more `Tasks`. The join operation creates a new `Task` that resolves when all its constituent `Tasks` complete. This pattern is useful when a grain needs to start multiple computations and wait for all of them to complete before proceeding. For example, a front-end grain generating a web page made of many parts might make multiple back-end calls (one for each part) and receive a `Task` for each result. The grain would then await the join of all these `Tasks`. When the joined `Task` resolves, the individual `Tasks` have completed, and all the data required to format the web page has been received.
+You can join two or more `Tasks`. The join operation creates a new <xref:System.Threading.Tasks.Task> that resolves when all its constituent `Tasks` complete. This pattern is useful when a grain needs to start multiple computations and wait for all of them to complete before proceeding. For example, a front-end grain generating a web page made of many parts might make multiple back-end calls (one for each part) and receive a <xref:System.Threading.Tasks.Task> for each result. The grain would then await the join of all these `Tasks`. When the joined <xref:System.Threading.Tasks.Task> resolves, the individual `Tasks` have completed, and all the data required to format the web page has been received.
 
 Example:
 
@@ -353,7 +353,7 @@ await joinedTask;
 
 When a grain method throws an exception, Orleans propagates that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans, and hosts handling the exception must have the exception type available. If an exception type isn't available, Orleans throws the exception as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception.
 
-Exceptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. Storage operations throw `InconsistentStateException` when they discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special handling of `InconsistentStateException`, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
+Exceptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. Storage operations throw <xref:Orleans.Storage.InconsistentStateException> when they discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special handling of <xref:Orleans.Storage.InconsistentStateException>, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
 
 ### Virtual methods
 

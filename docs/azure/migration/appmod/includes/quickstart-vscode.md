@@ -13,7 +13,27 @@ ms.date: 01/22/2026
 
 ## Assess app readiness
 
-<!-- TODO: Add assessment content -->
+GitHub Copilot app modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
+
+1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your computer.
+
+2. In Visual Studio Code, open the **Contoso University** solution from the samples repository.
+
+3. Open the **GitHub Copilot app modernization** extension.
+
+4. In the **QUICKSTART** section, select **Start Assessment**. The **Assessment reports** page opens.
+
+5. Select **Run Assessment** in the upper-right corner of the page.
+
+:::image type="content" source="../media/vscode/start-assessment.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+
+6. The assessment starts automatically and analyzes your project for migration readiness.
+
+:::image type="content" source="../media/vscode/assessment-in-process.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+
+7. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
+
+:::image type="content" source="../media/vscode/assessment-report.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
 ## App migrations
 

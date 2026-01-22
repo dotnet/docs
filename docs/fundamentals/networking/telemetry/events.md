@@ -296,7 +296,7 @@ The `System.Net` stack emits such events from `Private.InternalDiagnostics.Syste
 If you change the condition in the `EventListener` example above to `eventSource.Name.Contains("System.Net")`, you will see 100+ events from different layers in the stack.
 For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/internal-diag-telemetry/Program.cs).
 
-To consume them outside of the process, you can use `dotnet-trace`, for example:
+To consume them outside of the process, use `dotnet-trace`, for example:
 
 ```console
 dotnet-trace collect --providers Private.InternalDiagnostics.System.Net.Http:0xf --process-id 1234

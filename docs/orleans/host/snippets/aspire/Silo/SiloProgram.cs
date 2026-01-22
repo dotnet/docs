@@ -1,4 +1,6 @@
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using StackExchange.Redis;
 
@@ -53,4 +55,35 @@ public static class SiloProgram
         builder.Build().Run();
     }
     // </silo_explicit_connection>
+
+    // <health_checks>
+    public static void ConfigureHealthChecks(IHostApplicationBuilder builder)
+    {
+        builder.Services.AddHealthChecks()
+            .AddCheck<GrainHealthCheck>("orleans-grains")
+            .AddCheck<SiloHealthCheck>("orleans-silo");
+    }
+    // </health_checks>
 }
+
+// Stub health check classes for documentation examples
+// In a real application, you would implement actual health check logic
+#pragma warning disable CS1998 // Async method lacks 'await' operators
+
+internal class GrainHealthCheck : IHealthCheck
+{
+    public async Task<HealthCheckResult> CheckHealthAsync(
+        HealthCheckContext context,
+        CancellationToken cancellationToken = default)
+        => HealthCheckResult.Healthy();
+}
+
+internal class SiloHealthCheck : IHealthCheck
+{
+    public async Task<HealthCheckResult> CheckHealthAsync(
+        HealthCheckContext context,
+        CancellationToken cancellationToken = default)
+        => HealthCheckResult.Healthy();
+}
+
+#pragma warning restore CS1998

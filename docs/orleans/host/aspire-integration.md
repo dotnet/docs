@@ -168,11 +168,7 @@ Aspire makes it easy to switch between development and production configurations
 
 Aspire automatically configures health check endpoints. You can add Orleans-specific health checks:
 
-```csharp
-builder.Services.AddHealthChecks()
-    .AddCheck<GrainHealthCheck>("orleans-grains")
-    .AddCheck<SiloHealthCheck>("orleans-silo");
-```
+:::code language="csharp" source="snippets/aspire/Silo/SiloProgram.cs" id="health_checks":::
 
 ## Best practices
 

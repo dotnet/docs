@@ -138,10 +138,10 @@ public static class StorageConfiguration
         siloBuilder.Services.AddOptions<Orleans.Persistence.RedisStorageOptions>("redis")
             .Configure<IServiceProvider>((options, sp) =>
             {
-                options.CreateMultiplexer = async _ =>
+                options.CreateMultiplexer = _ =>
                 {
                     // Resolve the IConnectionMultiplexer from DI (provided by Aspire)
-                    return sp.GetRequiredService<IConnectionMultiplexer>();
+                    return Task.FromResult(sp.GetRequiredService<IConnectionMultiplexer>());
                 };
             });
         // </configure_redis_advanced>

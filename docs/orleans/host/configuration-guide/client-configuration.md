@@ -27,7 +27,7 @@ Configure a client for connecting to a cluster of silos and sending requests to 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
 > [!TIP]
-> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects `ClusterId`, `ServiceId`, and clustering provider settings via environment variables, so you can use the simpler parameterless <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
+> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects <xref:Orleans.Configuration.ClusterOptions.ClusterId>, <xref:Orleans.Configuration.ClusterOptions.ServiceId>, and clustering provider settings via environment variables, so you can use the simpler parameterless <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
 
 :::zone-end
 
@@ -118,7 +118,7 @@ Let's break down the steps used in this sample:
 
 Here, we set two things:
 
-- The <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can directly talk to each other. Some might choose to use a different `ClusterId` for each deployment, for example.
+- The <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can directly talk to each other. Some might choose to use a different <xref:Orleans.Configuration.ClusterOptions.ClusterId> for each deployment, for example.
 - The <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to `"AspNetSampleApp"`: This is a unique ID for your application, used by some providers (e.g., persistence providers). This ID should remain stable across deployments.
 
 ## Clustering provider

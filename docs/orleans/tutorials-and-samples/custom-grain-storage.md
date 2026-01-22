@@ -87,7 +87,7 @@ With the options class created, explore the constructor parameters of the `FileG
 
 - `storageName`: Specifies which grains should use this storage provider, for example, `[StorageProvider(ProviderName = "File")]`.
 - `options`: The options class just created.
-- `clusterOptions`: The cluster options used for retrieving the `ServiceId`.
+- `clusterOptions`: The cluster options used for retrieving the <xref:Orleans.Configuration.ClusterOptions.ServiceId>.
 
 ## Initialize the storage
 

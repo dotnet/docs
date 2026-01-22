@@ -20,7 +20,7 @@ There are several key aspects of silo configuration:
 - (Optional) Endpoints for silo-to-silo and client-to-silo communications
 
 > [!TIP]
-> If you're using [.NET Aspire](../aspire-integration.md) (Orleans 8.0+), most of this configuration is handled automatically. Aspire injects `ClusterId`, `ServiceId`, and endpoint configuration via environment variables, so you can use the simpler parameterless <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
+> If you're using [.NET Aspire](../aspire-integration.md) (Orleans 8.0+), most of this configuration is handled automatically. Aspire injects <xref:Orleans.Configuration.ClusterOptions.ClusterId>, <xref:Orleans.Configuration.ClusterOptions.ServiceId>, and endpoint configuration via environment variables, so you can use the simpler parameterless <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
 
 This example shows a silo configuration defining cluster information and using Azure Table Storage for clustering:
 
@@ -114,14 +114,14 @@ siloBuilder.Configure<ClusterOptions>(options =>
 
 Here, you specify two options:
 
-- Set the `ClusterId` to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
-- Set the `ServiceId` to `"SampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
+- Set the <xref:Orleans.Configuration.ClusterOptions.ClusterId> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different <xref:Orleans.Configuration.ClusterOptions.ClusterId> for different deployments, though.
+- Set the <xref:Orleans.Configuration.ClusterOptions.ServiceId> to `"SampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans uses `"default"` for both `ServiceId` and `ClusterId`. These values don't need changing in most cases. `ServiceId` is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. `ClusterId` determines which hosts connect to form a cluster.
+By default, Orleans uses `"default"` for both <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId>. These values don't need changing in most cases. <xref:Orleans.Configuration.ClusterOptions.ServiceId> is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. <xref:Orleans.Configuration.ClusterOptions.ClusterId> determines which hosts connect to form a cluster.
 
-Within each cluster, all hosts must use the same `ServiceId`. However, multiple clusters can share a `ServiceId`. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
+Within each cluster, all hosts must use the same <xref:Orleans.Configuration.ClusterOptions.ServiceId>. However, multiple clusters can share a <xref:Orleans.Configuration.ClusterOptions.ServiceId>. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
 
-The more common case is that `ServiceId` and `ClusterId` remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
+The more common case is that <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId> remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints
 
@@ -196,14 +196,14 @@ In this sample, we use Azure Table as the membership provider.
 
 Here, we do two things:
 
-- Set the `ClusterId` to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
-- Set the `ServiceId` to `"AspNetSampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
+- Set the <xref:Orleans.Configuration.ClusterOptions.ClusterId> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different <xref:Orleans.Configuration.ClusterOptions.ClusterId> for different deployments, though.
+- Set the <xref:Orleans.Configuration.ClusterOptions.ServiceId> to `"AspNetSampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans uses `"default"` for both `ServiceId` and `ClusterId`. These values don't need changing in most cases. `ServiceId` is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. `ClusterId` determines which hosts connect to form a cluster.
+By default, Orleans uses `"default"` for both <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId>. These values don't need changing in most cases. <xref:Orleans.Configuration.ClusterOptions.ServiceId> is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. <xref:Orleans.Configuration.ClusterOptions.ClusterId> determines which hosts connect to form a cluster.
 
-Within each cluster, all hosts must use the same `ServiceId`. However, multiple clusters can share a `ServiceId`. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
+Within each cluster, all hosts must use the same <xref:Orleans.Configuration.ClusterOptions.ServiceId>. However, multiple clusters can share a <xref:Orleans.Configuration.ClusterOptions.ServiceId>. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
 
-The more common case is that `ServiceId` and `ClusterId` remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
+The more common case is that <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId> remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints
 

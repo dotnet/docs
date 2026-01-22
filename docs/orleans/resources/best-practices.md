@@ -116,7 +116,7 @@ Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.
 
 - <xref:Orleans.IGrainState?displayProperty=nameWithType> is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
-- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed `State` property into the grain's base class.
+- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed <xref:Orleans.Grain%601.State> property into the grain's base class.
 - The initial <xref:Orleans.Grain%601.ReadStateAsync?displayProperty=nameWithType> automatically occurs before `ActiveAsync()` has been called for a grain.
 - When the grain's state object's data is changed, then the grain should call <xref:Orleans.Grain%601.WriteStateAsync?displayProperty=nameWithType>.
   - Typically, grains call `State.WriteStateAsync()` at the end of grain method to return the Write promise.

@@ -72,7 +72,7 @@ Grain state automatically reads when the grain activates, but grains are respons
 
 If a grain wishes to explicitly re-read its latest state from the backing store, it should call the <xref:Orleans.Grain%601.ReadStateAsync%2A> method. This reloads the grain state from the persistent store via the storage provider. The previous in-memory copy of the grain state is overwritten and replaced when the <xref:System.Threading.Tasks.Task> from <xref:Orleans.Grain%601.ReadStateAsync*> completes.
 
-Access the value of the state using the `State` property. For example, the following method accesses the profile state declared in the code above:
+Access the value of the state using the <xref:Orleans.Grain%601.State> property. For example, the following method accesses the profile state declared in the code above:
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="read_state_example":::
 
@@ -82,7 +82,7 @@ See the [Failure modes](#failure-modes) section below for details on error-handl
 
 ### Write state
 
-You can modify the state via the `State` property. The modified state isn't automatically persisted. Instead, you decide when to persist state by calling the <xref:Orleans.Grain%601.WriteStateAsync%2A> method. For example, the following method updates a property on `State` and persists the updated state:
+You can modify the state via the <xref:Orleans.Grain%601.State> property. The modified state isn't automatically persisted. Instead, you decide when to persist state by calling the <xref:Orleans.Grain%601.WriteStateAsync%2A> method. For example, the following method updates a property on <xref:Orleans.Grain%601.State> and persists the updated state:
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="write_state_example":::
 

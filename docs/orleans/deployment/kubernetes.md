@@ -107,7 +107,7 @@ For more information about configuring Orleans with .NET Aspire, see [.NET Aspir
 This functionality imposes some requirements on service deployment:
 
 - Silo names must match pod names.
-- Pods must have `orleans/serviceId` and `orleans/clusterId` labels corresponding to the silo's `ServiceId` and `ClusterId`. The `UseKubernetesHosting` method propagates these labels into the corresponding Orleans options from environment variables.
+- Pods must have `orleans/serviceId` and `orleans/clusterId` labels corresponding to the silo's <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId>. The `UseKubernetesHosting` method propagates these labels into the corresponding Orleans options from environment variables.
 - Pods must have the following environment variables set: `POD_NAME`, `POD_NAMESPACE`, `POD_IP`, `ORLEANS_SERVICE_ID`, `ORLEANS_CLUSTER_ID`.
 
 The following example shows how to configure these labels and environment variables correctly:

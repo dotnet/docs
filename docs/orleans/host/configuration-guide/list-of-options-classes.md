@@ -16,7 +16,7 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 
 | Option type | Used for |
 |--|--|
-| <xref:Orleans.Configuration.ClusterOptions> | Setting the `ClusterId` and the `ServiceId` |
+| <xref:Orleans.Configuration.ClusterOptions> | Setting the <xref:Orleans.Configuration.ClusterOptions.ClusterId> and the <xref:Orleans.Configuration.ClusterOptions.ServiceId> |
 | <xref:Orleans.Configuration.NetworkingOptions> | Setting timeout values for sockets and opened connections |
 | <xref:Orleans.Configuration.SerializationProviderOptions> | Setting the serialization providers |
 | <xref:Orleans.Configuration.TypeManagementOptions> | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
@@ -56,7 +56,7 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 
 | Option type | Used for |
 |--|--|
-| <xref:Orleans.Configuration.ClusterOptions> | Setting the `ClusterId` and the `ServiceId` |
+| <xref:Orleans.Configuration.ClusterOptions> | Setting the <xref:Orleans.Configuration.ClusterOptions.ClusterId> and the <xref:Orleans.Configuration.ClusterOptions.ServiceId> |
 | <xref:Orleans.Configuration.NetworkingOptions> | Setting timeout values for sockets and opened connections |
 | <xref:Orleans.Configuration.SerializationProviderOptions> | Setting the serialization providers |
 | <xref:Orleans.Configuration.TypeManagementOptions> | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |

@@ -93,8 +93,8 @@ await cluster.DeployAsync();
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `ClusterId` | `string` | Auto-generated | Cluster identifier. |
-| `ServiceId` | `string` | Auto-generated | Service identifier. |
+| <xref:Orleans.Configuration.ClusterOptions.ClusterId> | `string` | Auto-generated | Cluster identifier. |
+| <xref:Orleans.Configuration.ClusterOptions.ServiceId> | `string` | Auto-generated | Service identifier. |
 | `InitialSilosCount` | `int` | 1 | Number of silos to start initially. |
 | `InitializeClientOnDeploy` | `bool` | `true` | Whether to auto-initialize the client on deploy. |
 | `ConfigureFileLogging` | `bool` | `true` | Enable file logging for debugging. |

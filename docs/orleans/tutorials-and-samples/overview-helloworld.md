@@ -42,7 +42,7 @@ Configure silos programmatically via <xref:Orleans.Hosting.ISiloHostBuilder> and
 | Option                      | Used for |
 | --------------------------- | -------- |
 | `.UseLocalhostClustering()` | Configures the client to connect to a silo on the localhost. |
-| <xref:Orleans.Configuration.ClusterOptions>            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
+| <xref:Orleans.Configuration.ClusterOptions>            | <xref:Orleans.Configuration.ClusterOptions.ClusterId> is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. <xref:Orleans.Configuration.ClusterOptions.ServiceId> is the ID used for the application and must not change across deployments. |
 | <xref:Orleans.Configuration.EndpointOptions>           | Tells the silo where to listen. For this example, use `loopback`. |
 
 :::zone target="docs" pivot="orleans-3-x"

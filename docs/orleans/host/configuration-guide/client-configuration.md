@@ -27,7 +27,7 @@ Configure a client for connecting to a cluster of silos and sending requests to 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
 > [!TIP]
-> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects <xref:Orleans.Configuration.ClusterOptions.ClusterId>, <xref:Orleans.Configuration.ClusterOptions.ServiceId>, and clustering provider settings via environment variables, so you can use the simpler parameterless <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
+> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects <xref:Orleans.Configuration.ClusterOptions.ClusterId>, <xref:Orleans.Configuration.ClusterOptions.ServiceId>, and clustering provider settings via environment variables, so you can use the simpler parameterless <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
 
 :::zone-end
 

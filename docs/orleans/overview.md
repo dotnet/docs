@@ -77,7 +77,7 @@ Orleans 8.x introduced several important features:
 
 Orleans 7.0 was a major release with significant improvements:
 
-- **Simplified APIs**: Streamlined builder patterns using <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> and <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*>.
+- **Simplified APIs**: Streamlined builder patterns using <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> and <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*>.
 - **Source Generators**: Replaced code generation with source generators for better build-time performance.
 - **New Serialization System**: A new high-performance, version-tolerant serialization framework.
 - **IAsyncEnumerable Support (7.2)**: Streaming responses from grain methods.
@@ -97,7 +97,7 @@ Orleans 3.x is a legacy version. For new projects, consider upgrading to Orleans
 
 Key differences from newer versions:
 
-- Uses <xref:Orleans.ClientBuilder> and <xref:Orleans.Hosting.SiloHostBuilder> instead of the unified <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> pattern.
+- Uses <xref:Orleans.ClientBuilder> and <xref:Orleans.Hosting.SiloHostBuilder> instead of the unified <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> pattern.
 - Requires `ConfigureApplicationParts()` for assembly scanning.
 - Uses the legacy code generator instead of source generators.
 

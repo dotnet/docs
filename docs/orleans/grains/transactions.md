@@ -124,7 +124,7 @@ The recommended way to call a transactional grain method is to use the `ITransac
 
 In the preceding client code:
 
-- The `IHostBuilder` is configured with <xref:Orleans.Hosting.ClientBuilderExtensions.UseOrleansClient*>.
+- The `IHostBuilder` is configured with <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*>.
   - The <xref:Orleans.IClientBuilder> uses localhost clustering and transactions.
 - The <xref:Orleans.IClusterClient> and `ITransactionClient` interfaces are retrieved from the service provider.
 - The `from` and `to` variables are assigned their `IAccountGrain` references.

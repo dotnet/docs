@@ -72,7 +72,7 @@ In your Orleans silo project, configure Orleans to use the Aspire-provided resou
 :::code language="csharp" source="snippets/aspire/Silo/SiloProgram.cs" id="silo_basic_config":::
 
 > [!TIP]
-> When using .NET Aspire, the parameterless <xref:Orleans.Hosting.GenericHostExtensions.UseOrleans*> is typically all you need. Aspire injects Orleans configuration (cluster ID, service ID, endpoints, and provider settings) via environment variables that Orleans reads automatically. You only need the delegate overload `UseOrleans(siloBuilder => {...})` when you require additional manual configuration beyond what Aspire provides.
+> When using .NET Aspire, the parameterless <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> is typically all you need. Aspire injects Orleans configuration (cluster ID, service ID, endpoints, and provider settings) via environment variables that Orleans reads automatically. You only need the delegate overload `UseOrleans(siloBuilder => {...})` when you require additional manual configuration beyond what Aspire provides.
 
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableClient`, or `AddKeyedAzureBlobClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime. This applies to all Aspire-managed resources used with Orleans.

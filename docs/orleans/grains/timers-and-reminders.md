@@ -47,34 +47,7 @@ The `GrainTimerCreationOptions` structure provides the following properties:
 
 ### Example: Creating a grain timer
 
-```csharp
-public class MyGrain : Grain, IMyGrain
-{
-    private IGrainTimer? _timer;
-
-    public override Task OnActivateAsync(CancellationToken cancellationToken)
-    {
-        // Create a timer that fires every 10 seconds, starting 5 seconds after activation
-        _timer = RegisterGrainTimer(
-            static (state, ct) => state.DoWorkAsync(ct),
-            this,
-            new GrainTimerCreationOptions
-            {
-                DueTime = TimeSpan.FromSeconds(5),
-                Period = TimeSpan.FromSeconds(10),
-                KeepAlive = true  // Prevent grain collection while timer is active
-            });
-
-        return Task.CompletedTask;
-    }
-
-    private Task DoWorkAsync(CancellationToken cancellationToken)
-    {
-        // Timer callback work
-        return Task.CompletedTask;
-    }
-}
-```
+:::code language="csharp" source="./snippets/timers/TimerExamples.cs" id="grain_timer_example":::
 
 ***Important considerations:***
 
@@ -170,33 +143,7 @@ public class MyGrain : Grain, IMyGrain
 
 **After (Orleans 8.x+):**
 
-```csharp
-public class MyGrain : Grain, IMyGrain
-{
-    private IGrainTimer? _timer;
-
-    public override Task OnActivateAsync(CancellationToken cancellationToken)
-    {
-        _timer = RegisterGrainTimer(
-            static (state, ct) => state.DoWorkAsync(ct),
-            this,
-            new GrainTimerCreationOptions
-            {
-                DueTime = TimeSpan.FromSeconds(5),
-                Period = TimeSpan.FromSeconds(10),
-                Interleave = true  // Set to true to match old behavior
-            });
-        
-        return Task.CompletedTask;
-    }
-
-    private Task DoWorkAsync(CancellationToken cancellationToken)
-    {
-        // Timer work - check cancellationToken for graceful shutdown
-        return Task.CompletedTask;
-    }
-}
-```
+:::code language="csharp" source="./snippets/timers/TimerExamples.cs" id="migrate_after":::
 
 > [!WARNING]
 > The default interleaving behavior changed in Orleans 8.2. The old `RegisterTimer` API allowed timer callbacks to interleave with other grain calls by default. The new `RegisterGrainTimer` API does **not** interleave by default. If your grain logic depends on interleaving behavior, set `Interleave = true` in `GrainTimerCreationOptions` to preserve the old behavior.
@@ -226,74 +173,19 @@ Since reminders are persistent, they rely on storage to function. You must speci
 
 Azure Table configuration:
 
-```csharp
-// TODO replace with your connection string
-const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseAzureTableReminderService(connectionString);
-});
-
-using var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_azure_table":::
 
 SQL:
 
-```csharp
-const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-const string invariant = "YOUR_INVARIANT";
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseAdoNetReminderService(options =>
-    {
-        options.ConnectionString = connectionString; // Redacted
-        options.Invariant = invariant;
-    });
-});
-
-using var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_adonet":::
 
  If you just want a placeholder implementation of reminders to work without needing to set up an Azure account or SQL database, this provides a development-only implementation of the reminder system:
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseInMemoryReminderService();
-});
-
-using var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_inmemory":::
 
 Redis:
 
-```csharp
-using StackExchange.Redis;
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseRedisReminderService(options =>
-    {
-        options.ConfigurationOptions = new ConfigurationOptions
-        {
-            EndPoints = { "localhost:6379" },
-            AbortOnConnectFail = false
-        };
-    });
-});
-
-using var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_redis":::
 
 The <xref:Orleans.Configuration.RedisReminderTableOptions> class provides the following configuration options:
 
@@ -310,26 +202,7 @@ Azure Cosmos DB:
 
 Install the [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) NuGet package and configure with `UseCosmosReminderService`:
 
-```csharp
-using Azure.Identity;
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseCosmosReminderService(options =>
-    {
-        options.ConfigureCosmosClient(
-            "https://myaccount.documents.azure.com:443/",
-            new DefaultAzureCredential());
-        options.DatabaseName = "Orleans";
-        options.ContainerName = "OrleansReminders";
-        options.IsResourceCreationEnabled = true;
-    });
-});
-
-using var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_cosmos":::
 
 The <xref:Orleans.Reminders.Cosmos.CosmosReminderTableOptions> class provides the following configuration options:
 

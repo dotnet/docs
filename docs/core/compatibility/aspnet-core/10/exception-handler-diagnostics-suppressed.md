@@ -2,6 +2,7 @@
 title: "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true"
 description: Learn about the breaking change in ASP.NET Core 10 where exception diagnostics are no longer recorded when IExceptionHandler.TryHandleAsync returns true.
 ms.date: 08/08/2025
+ms.custom: https://github.com/aspnet/Announcements/issues/524
 ---
 
 # Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true

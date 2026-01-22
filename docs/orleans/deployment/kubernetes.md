@@ -30,18 +30,13 @@ Note that the Kubernetes hosting package doesn't use Kubernetes for clustering. 
 
 ### Generate Kubernetes manifests
 
-Use the Azure Developer CLI (`azd`) to generate Kubernetes manifests from your Aspire project:
+Use the Aspire CLI to generate Kubernetes manifests from your Aspire project:
 
 ```bash
-# Initialize the project for deployment (first time only)
-azd init
-
-# Generate Kubernetes manifests
-azd config set alpha.infraSynth on
-azd infra synth --provider kubernetes
+aspire publish --publisher kubernetes --output-path ./k8s-manifests
 ```
 
-This generates Kubernetes YAML files in the `infra` directory, including:
+This generates Kubernetes YAML files in the specified output directory, including:
 
 - **Deployment manifests** for each service in your AppHost
 - **Service definitions** for internal communication
@@ -57,7 +52,7 @@ This generates Kubernetes YAML files in the `infra` directory, including:
 > [!TIP]
 > For production deployments, review and customize the generated manifests as needed. You can also use Aspire with Helm charts or other Kubernetes tooling.
 
-For detailed information about deploying .NET Aspire applications to Kubernetes, see the [.NET Aspire deployment overview](/dotnet/aspire/deployment/overview).
+For detailed information about deploying .NET Aspire applications to Kubernetes, see the [Aspire deployment overview](https://aspire.dev/deployment/overview/).
 
 For more information about configuring Orleans with .NET Aspire, see [.NET Aspire Orleans integration](../host/aspire-integration.md).
 

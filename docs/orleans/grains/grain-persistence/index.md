@@ -543,9 +543,6 @@ The <xref:Orleans.Persistence.RedisStorageOptions> class provides the following 
 
 When using [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource.
 
-> [!IMPORTANT]
-> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`) in your silo project to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
-
 ```csharp
 // In your AppHost project
 var redis = builder.AddRedis("orleans-redis");
@@ -562,7 +559,8 @@ builder.AddProject<Projects.OrleansServer>("silo")
 // In your Orleans silo project
 using StackExchange.Redis;
 
-// Register the Redis client with keyed services - required for Orleans to resolve it
+// Register the Redis client with keyed services.
+// Orleans providers look up resources by their keyed service name.
 builder.AddKeyedRedisClient("orleans-redis");
 
 builder.UseOrleans(siloBuilder =>
@@ -581,7 +579,8 @@ builder.UseOrleans(siloBuilder =>
 For more advanced scenarios, you can inject the `IConnectionMultiplexer` directly using the `CreateMultiplexer` delegate:
 
 ```csharp
-// Register the Redis client with keyed services first
+// Register the Redis client with keyed services.
+// Orleans providers look up resources by their keyed service name.
 builder.AddKeyedRedisClient("orleans-redis");
 
 siloBuilder.AddRedisGrainStorage("redis");

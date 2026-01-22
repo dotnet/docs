@@ -1,8 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Disable SourceLink for git worktree compatibility -->
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(HostingVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <OutputType>exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(HostingVersion)" />
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Orleans.Runtime" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Runtime" Version="9.0.0" />
   </ItemGroup>
 
 </Project>

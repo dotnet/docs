@@ -1,4 +1,6 @@
+using Azure.Data.Tables;
 using Azure.Identity;
+using Azure.Storage.Blobs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,13 +27,13 @@ public static class StorageConfiguration
                 name: "profileStore",
                 configureOptions: options =>
                 {
-                    options.ConfigureTableServiceClient(tableEndpoint, credential);
+                    options.TableServiceClient = new TableServiceClient(tableEndpoint, credential);
                 })
                 .AddAzureBlobGrainStorage(
                     name: "cartStore",
                     configureOptions: options =>
                     {
-                        options.ConfigureBlobServiceClient(blobEndpoint, credential);
+                        options.BlobServiceClient = new BlobServiceClient(blobEndpoint, credential);
                     });
         });
 
@@ -49,14 +51,14 @@ public static class StorageConfiguration
                 name: "profileStore",
                 configureOptions: options =>
                 {
-                    options.ConfigureTableServiceClient(
+                    options.TableServiceClient = new TableServiceClient(
                         "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
                 })
                 .AddAzureBlobGrainStorage(
                     name: "cartStore",
                     configureOptions: options =>
                     {
-                        options.ConfigureBlobServiceClient(
+                        options.BlobServiceClient = new BlobServiceClient(
                             "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
                     });
         });

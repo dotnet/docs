@@ -1,7 +1,7 @@
 ---
 title: Unit testing
 description: Learn how to unit test with .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 01/22/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ---
@@ -14,17 +14,18 @@ This tutorial shows how to unit test your grains to ensure they behave correctly
 
 ## Use the `InProcessTestCluster` (recommended)
 
-The `InProcessTestCluster` is a lightweight testing infrastructure that runs all silos in-process using in-memory transports. This provides significantly faster test execution compared to the traditional `TestCluster`.
+The `InProcessTestCluster` is the recommended testing infrastructure for Orleans. It provides a streamlined, delegate-based API for configuring test clusters, making it easier to share services between your tests and the cluster.
 
 ### Key advantages
 
-| Feature | `InProcessTestCluster` | `TestCluster` |
-|---------|----------------------|---------------|
-| **Startup time** | Very fast (in-process) | Slower (separate processes) |
-| **Memory usage** | Lower (shared process) | Higher (multiple processes) |
-| **Debugging** | Easy (single process) | Complex (multiple processes) |
-| **Network isolation** | In-memory transport | Real network sockets |
-| **Best for** | Unit tests, integration tests | End-to-end tests, production simulation |
+The primary advantage of `InProcessTestCluster` over `TestCluster` is **ergonomics**:
+
+- **Delegate-based configuration**: Configure silos and clients using inline delegates instead of separate configuration classes
+- **Shared service instances**: Easily share mock services, test doubles, and other instances between your test code and the silo hosts
+- **Less boilerplate**: No need to create separate `ISiloConfigurator` or `IClientConfigurator` classes
+- **Simpler dependency injection**: Register services directly in the builder fluent API
+
+Both `InProcessTestCluster` and `TestCluster` use the same underlying in-process silo host by default, so memory usage and startup time are equivalent. The `TestCluster` API is designed to also support multi-process scenarios (for production-like simulation), which requires the class-based configuration approach, but by default it runs in-process just like `InProcessTestCluster`.
 
 ### Basic usage
 
@@ -178,7 +179,15 @@ await cluster.RestartAsync();
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
-The traditional `TestCluster` is still available for scenarios requiring more realistic network behavior or production-like testing. However, for most unit and integration tests, `InProcessTestCluster` is recommended.
+The `TestCluster` uses a class-based configuration approach that requires implementing `ISiloConfigurator` and `IClientConfigurator` interfaces. This design supports multi-process testing scenarios where silos run in separate processes, which is useful for production-like simulation testing. However, by default `TestCluster` also runs in-process with equivalent performance to `InProcessTestCluster`.
+
+Choose `TestCluster` over `InProcessTestCluster` when:
+
+- You need multi-process testing for production simulation
+- You have existing tests using the `TestCluster` API
+- You need compatibility with Orleans 7.x or 8.x
+
+For new tests, `InProcessTestCluster` is recommended due to its simpler delegate-based configuration.
 
 :::zone-end
 

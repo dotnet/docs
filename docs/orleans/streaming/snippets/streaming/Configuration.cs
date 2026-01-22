@@ -1,4 +1,6 @@
+using Azure.Data.Tables;
 using Azure.Identity;
+using Azure.Storage.Queues;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Orleans.Hosting;
@@ -17,7 +19,7 @@ public static class StreamConfiguration
         hostBuilder.UseOrleans(siloBuilder =>
         {
             siloBuilder.AddAzureTableGrainStorage("PubSubStore",
-                options => options.ConfigureTableServiceClient(endpoint, credential));
+                options => options.TableServiceClient = new TableServiceClient(endpoint, credential));
         });
         // </pubsub_managed_identity>
     }
@@ -29,7 +31,7 @@ public static class StreamConfiguration
         hostBuilder.UseOrleans(siloBuilder =>
         {
             siloBuilder.AddAzureTableGrainStorage("PubSubStore",
-                options => options.ConfigureTableServiceClient(connectionString));
+                options => options.TableServiceClient = new TableServiceClient(connectionString));
         });
         // </pubsub_connection_string>
     }
@@ -48,9 +50,9 @@ public static class StreamConfiguration
                 .AddAzureQueueStreams("AzureQueueProvider",
                     optionsBuilder => optionsBuilder.ConfigureAzureQueue(
                         options => options.Configure(
-                            opt => opt.ConfigureQueueServiceClient(queueEndpoint, credential))))
+                            opt => opt.QueueServiceClient = new QueueServiceClient(queueEndpoint, credential))))
                 .AddAzureTableGrainStorage("PubSubStore",
-                    options => options.ConfigureTableServiceClient(tableEndpoint, credential));
+                    options => options.TableServiceClient = new TableServiceClient(tableEndpoint, credential));
         });
         // </stream_provider_managed_identity>
     }
@@ -65,9 +67,9 @@ public static class StreamConfiguration
                 .AddAzureQueueStreams("AzureQueueProvider",
                     optionsBuilder => optionsBuilder.ConfigureAzureQueue(
                         options => options.Configure(
-                            opt => opt.ConfigureQueueServiceClient(connectionString))))
+                            opt => opt.QueueServiceClient = new QueueServiceClient(connectionString))))
                 .AddAzureTableGrainStorage("PubSubStore",
-                    options => options.ConfigureTableServiceClient(connectionString));
+                    options => options.TableServiceClient = new TableServiceClient(connectionString));
         });
         // </stream_provider_connection_string>
     }

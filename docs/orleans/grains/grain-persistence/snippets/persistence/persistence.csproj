@@ -2,15 +2,20 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.Cosmos" Version="$(OrleansVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(HostingVersion)" />
-    <PackageReference Include="Azure.Identity" Version="$(AzureIdentityVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Cosmos" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="StackExchange.Redis" Version="2.9.32" />
   </ItemGroup>
 

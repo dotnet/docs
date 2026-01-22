@@ -14,7 +14,7 @@ In this tutorial, you'll walk through how to write a simple file-based grain sto
 
 ## Get started
 
-An Orleans grain storage provider is a class that implements `IGrainStorage`, included in the [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It also inherits from `ILifecycleParticipant<ISiloLifecycle>`, allowing you to subscribe to specific events in the silo's lifecycle. Start by creating a class named `FileGrainStorage`.
+An Orleans grain storage provider is a class that implements <xref:Orleans.Storage.IGrainStorage>, included in the [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It also inherits from `ILifecycleParticipant<ISiloLifecycle>`, allowing you to subscribe to specific events in the silo's lifecycle. Start by creating a class named `FileGrainStorage`.
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
@@ -71,7 +71,7 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
 }
 ```
 
-Each method implements the corresponding method in the `IGrainStorage` interface, accepting a generic type parameter for the underlying state type. The methods are:
+Each method implements the corresponding method in the <xref:Orleans.Storage.IGrainStorage> interface, accepting a generic type parameter for the underlying state type. The methods are:
 
 - <xref:Orleans.Storage.IGrainStorage.ReadStateAsync%2A?displayProperty=nameWithType>: Reads the state of a grain.
 - <xref:Orleans.Storage.IGrainStorage.WriteStateAsync%2A?displayProperty=nameWithType>: Writes the state of a grain.
@@ -117,7 +117,7 @@ Writing the state is similar to reading the state.
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="writestateasync":::
 
-Similar to reading state, use the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> to write the state. The current `ETag` checks against the file's last updated UTC time. If the date differs, it means another activation of the same grain changed the state concurrently. In this situation, throw an `InconsistentStateException`. This results in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
+Similar to reading state, use the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> to write the state. The current `ETag` checks against the file's last updated UTC time. If the date differs, it means another activation of the same grain changed the state concurrently. In this situation, throw an <xref:Orleans.Storage.InconsistentStateException>. This results in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
 
 ## Clear state
 
@@ -133,11 +133,11 @@ Next, create a factory that allows scoping the options to the provider name whil
 
 :::code source="snippets/custom-grain-storage/FileGrainStorageFactory.cs":::
 
-Lastly, to register the grain storage, create an extension on `ISiloBuilder`. This extension internally registers the grain storage as a named service using <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A>, an extension provided by `Orleans.Core`.
+Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension internally registers the grain storage as a named service using <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A>, an extension provided by `Orleans.Core`.
 
 :::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 
-The `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface:
+The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface:
 
 ```csharp
 return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
@@ -145,7 +145,7 @@ return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.C
         (p, n) => (ILifecycleParticipant<ISiloLifecycle>)p.GetRequiredServiceByName<IGrainStorage>(n));
 ```
 
-This enables adding the file storage using the extension on `ISiloBuilder`:
+This enables adding the file storage using the extension on <xref:Orleans.Hosting.ISiloBuilder>:
 
 :::code source="snippets/custom-grain-storage/Program.cs":::
 
@@ -165,9 +165,9 @@ Before starting the implementation, create an options class containing the root 
 
 Create a constructor containing two fields: `storageName` to specify which grains should use this storage (`[StorageProvider(ProviderName = "File")]`) and `directory`, the directory where grain states are saved.
 
-`IGrainFactory` and `ITypeResolver` are used in the next section to initialize the storage.
+<xref:Orleans.IGrainFactory> and `ITypeResolver` are used in the next section to initialize the storage.
 
-Also, take two options as arguments: your own `FileGrainStorageOptions` and the `ClusterOptions`. These are needed for implementing the storage functionalities.
+Also, take two options as arguments: your own `FileGrainStorageOptions` and the <xref:Orleans.Configuration.ClusterOptions>. These are needed for implementing the storage functionalities.
 
 You also need `JsonSerializerSettings` as you are serializing and deserializing in JSON format.
 
@@ -204,7 +204,7 @@ Writing the state is similar to reading the state.
 
 :::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="writestateasync":::
 
-Similar to reading state, use `_jsonSettings` to write the state. The current ETag checks against the file's last updated UTC time. If the date differs, it means another activation of the same grain changed the state concurrently. In this situation, throw an `InconsistentStateException`, which results in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
+Similar to reading state, use `_jsonSettings` to write the state. The current ETag checks against the file's last updated UTC time. If the date differs, it means another activation of the same grain changed the state concurrently. In this situation, throw an <xref:Orleans.Storage.InconsistentStateException>, which results in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
 
 ## Clear state
 
@@ -220,11 +220,11 @@ Next, create a factory that allows scoping the options to the provider name whil
 
 :::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorageFactory.cs" id="file_grain_storage_factory":::
 
-Lastly, to register the grain storage, create an extension on `ISiloHostBuilder`. This extension internally registers the grain storage as a named service using `.AddSingletonNamedService(...)`, an extension provided by `Orleans.Core`.
+Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloHostBuilder>. This extension internally registers the grain storage as a named service using `.AddSingletonNamedService(...)`, an extension provided by `Orleans.Core`.
 
 :::code language="csharp" source="snippets-v3/custom-storage/FileSiloBuilderExtensions.cs" id="file_silo_builder_extensions":::
 
-The `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface. This enables adding the file storage using the extension on `ISiloHostBuilder`:
+The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface. This enables adding the file storage using the extension on <xref:Orleans.Hosting.ISiloHostBuilder>:
 
 :::code language="csharp" source="snippets-v3/custom-storage/Program.cs" id="silo_host_builder":::
 

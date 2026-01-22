@@ -16,7 +16,7 @@ The main concepts of Orleans involve a silo, a client, and one or more grains. C
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
-Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+Configure silos programmatically via <xref:Orleans.Hosting.ISiloBuilder> and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
 :::code language="csharp" source="snippets/helloworld/SiloProgram.cs" id="silo_setup":::
 
@@ -33,7 +33,7 @@ The preceding code:
 
 :::zone target="docs" pivot="orleans-3-x"
 
-Configure silos programmatically via `ISiloHostBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+Configure silos programmatically via <xref:Orleans.Hosting.ISiloHostBuilder> and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
 :::code language="csharp" source="../snippets-v3/helloworld/SiloProgram.cs" id="silo_setup":::
 
@@ -42,8 +42,8 @@ Configure silos programmatically via `ISiloHostBuilder` and several supplemental
 | Option                      | Used for |
 | --------------------------- | -------- |
 | `.UseLocalhostClustering()` | Configures the client to connect to a silo on the localhost. |
-| `ClusterOptions`            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
-| `EndpointOptions`           | Tells the silo where to listen. For this example, use `loopback`. |
+| <xref:Orleans.Configuration.ClusterOptions>            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
+| <xref:Orleans.Configuration.EndpointOptions>           | Tells the silo where to listen. For this example, use `loopback`. |
 
 :::zone target="docs" pivot="orleans-3-x"
 
@@ -59,7 +59,7 @@ After loading the configurations, build the host and then start it asynchronousl
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
-Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
+Similar to the silo, configure the client via <xref:Orleans.IClientBuilder> and a similar collection of option classes.
 
 :::code language="csharp" source="snippets/helloworld/ClientProgram.cs" id="client_setup":::
 
@@ -69,13 +69,13 @@ The preceding code:
 - Calls `UseOrleansClient` to configure the client.
 - Uses localhost clustering to connect to the local silo.
 - Configures the cluster and service IDs to match the silo.
-- Starts the host and retrieves the `IClusterClient` from the service provider.
+- Starts the host and retrieves the <xref:Orleans.IClusterClient> from the service provider.
 
 :::zone-end
 
 :::zone target="docs" pivot="orleans-3-x"
 
-Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
+Similar to the silo, configure the client via <xref:Orleans.IClientBuilder> and a similar collection of option classes.
 
 :::code language="csharp" source="../snippets-v3/helloworld/ClientProgram.cs" id="client_setup":::
 
@@ -84,7 +84,7 @@ Similar to the silo, configure the client via `IClientBuilder` and a similar col
 | Option                      | Used for               |
 | --------------------------- | ---------------------- |
 | `.UseLocalhostClustering()` | Same as for the silo |
-| `ClusterOptions`            | Same as for the silo |
+| <xref:Orleans.Configuration.ClusterOptions>            | Same as for the silo |
 
 Find a more in-depth guide to configuring your client in the [Client configuration](../host/configuration-guide/client-configuration.md) section of the Configuration Guide.
 
@@ -104,7 +104,7 @@ A grain class implements one or more grain interfaces. For more information, see
 
 ## How the parts work together
 
-This programming model builds on the core concept of distributed Object-Oriented Programming. Start the `ISiloHost` first. Then, start the `OrleansClient` program. The `Main` method of `OrleansClient` calls the method that starts the client, `StartClientWithRetries()`. Pass the client to the `DoClientWork()` method.
+This programming model builds on the core concept of distributed Object-Oriented Programming. Start the <xref:Orleans.Hosting.ISiloHost> first. Then, start the `OrleansClient` program. The `Main` method of `OrleansClient` calls the method that starts the client, `StartClientWithRetries()`. Pass the client to the `DoClientWork()` method.
 
 :::code language="csharp" source="snippets/helloworld/ClientProgram.cs" id="do_client_work":::
 

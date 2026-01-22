@@ -173,7 +173,7 @@ Examples:
 > Referencing packages with `#r` carries the same security considerations as any other form of package reference.
 > Only include dependencies from sources you trust.
 >
-> [NuGet documentation](https://learn.microsoft.com/nuget/concepts/security-best-practices) describes best practices for securing your software supply chain.
+> [NuGet documentation](/nuget/concepts/security-best-practices) describes best practices for securing your software supply chain.
 
 ### Specifying a package source
 

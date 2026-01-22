@@ -136,4 +136,64 @@ public static class AppHostExamples
         // ...
     }
     // </production_config>
+
+    // <reminders_redis_apphost>
+    public static void RemindersRedisAppHost(string[] args)
+    {
+        var builder = DistributedApplication.CreateBuilder(args);
+
+        var redis = builder.AddRedis("redis");
+
+        var orleans = builder.AddOrleans("cluster")
+            .WithClustering(redis)
+            .WithReminders(redis);
+
+        builder.AddProject<Projects.Silo>("silo")
+            .WithReference(orleans)
+            .WaitFor(redis);
+
+        builder.Build().Run();
+    }
+    // </reminders_redis_apphost>
+
+    // <reminders_azure_table_apphost>
+    public static void RemindersAzureTableAppHost(string[] args)
+    {
+        var builder = DistributedApplication.CreateBuilder(args);
+
+        var storage = builder.AddAzureStorage("storage")
+            .RunAsEmulator();
+
+        var reminders = storage.AddTables("reminders");
+
+        var orleans = builder.AddOrleans("cluster")
+            .WithClustering(reminders)
+            .WithReminders(reminders);
+
+        builder.AddProject<Projects.Silo>("silo")
+            .WithReference(orleans)
+            .WithReference(reminders);
+
+        builder.Build().Run();
+    }
+    // </reminders_azure_table_apphost>
+
+    // <reminders_inmemory_apphost>
+    public static void RemindersInMemoryAppHost(string[] args)
+    {
+        var builder = DistributedApplication.CreateBuilder(args);
+
+        var redis = builder.AddRedis("redis");
+
+        var orleans = builder.AddOrleans("cluster")
+            .WithClustering(redis)
+            .WithMemoryReminders();
+
+        builder.AddProject<Projects.Silo>("silo")
+            .WithReference(orleans)
+            .WaitFor(redis);
+
+        builder.Build().Run();
+    }
+    // </reminders_inmemory_apphost>
 }

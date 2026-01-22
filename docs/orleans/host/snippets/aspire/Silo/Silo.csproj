@@ -1,26 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
-    <NoWarn>$(NoWarn);CS8618;CS0618;CS1998;CS0162</NoWarn>
-    <EnableSourceLink>false</EnableSourceLink>
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
 
   <!-- <silo_packages> -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-    <PackageReference Include="Aspire.StackExchange.Redis" Version="9.1.0" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="$(OrleansVersion)" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="$(AspireVersion)" />
   </ItemGroup>
   <!-- </silo_packages> -->
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageReference Include="Aspire.Azure.Data.Tables" Version="$(AspireVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(HostingVersion)" />
   </ItemGroup>
 
   <ItemGroup>

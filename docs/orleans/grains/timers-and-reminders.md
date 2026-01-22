@@ -228,66 +228,21 @@ When using [.NET Aspire](../host/aspire-integration.md), you can configure Orlea
 
 **AppHost project (Program.cs):**
 
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-var redis = builder.AddRedis("redis");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(redis)
-    .WithReminders(redis);
-
-builder.AddProject<Projects.MySilo>("silo")
-    .WithReference(orleans)
-    .WithReference(redis);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/AppHost/AppHostExamples.cs" id="reminders_redis_apphost":::
 
 **Silo project (Program.cs):**
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.AddServiceDefaults();
-builder.AddKeyedRedisClient("redis");
-builder.UseOrleans();
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/Silo/SiloProgram.cs" id="reminders_redis_silo":::
 
 #### Azure Table Storage reminders with Aspire
 
 **AppHost project (Program.cs):**
 
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-var storage = builder.AddAzureStorage("storage");
-var tables = storage.AddTables("reminders");
-
-var orleans = builder.AddOrleans("cluster")
-    .WithClustering(tables)
-    .WithReminders(tables);
-
-builder.AddProject<Projects.MySilo>("silo")
-    .WithReference(orleans)
-    .WithReference(tables);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/AppHost/AppHostExamples.cs" id="reminders_azure_table_apphost":::
 
 **Silo project (Program.cs):**
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.AddServiceDefaults();
-builder.AddKeyedAzureTableServiceClient("reminders");
-builder.UseOrleans();
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/Silo/SiloProgram.cs" id="reminders_azure_table_silo":::
 
 > [!TIP]
 > During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production, configure a real Azure Storage account in your AppHost.
@@ -298,35 +253,17 @@ For local development, you can use in-memory reminders that don't require extern
 
 **AppHost project (Program.cs):**
 
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-var orleans = builder.AddOrleans("cluster")
-    .WithDevelopmentClustering()
-    .WithMemoryReminders();
-
-builder.AddProject<Projects.MySilo>("silo")
-    .WithReference(orleans);
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/AppHost/AppHostExamples.cs" id="reminders_inmemory_apphost":::
 
 **Silo project (Program.cs):**
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.AddServiceDefaults();
-builder.UseOrleans();
-
-builder.Build().Run();
-```
+:::code language="csharp" source="../host/snippets/aspire/Silo/SiloProgram.cs" id="reminders_inmemory_silo":::
 
 > [!WARNING]
 > In-memory reminders are lost when the silo restarts. Only use `WithMemoryReminders()` for local development and testing. For production, always use a persistent reminder storage provider like Redis, Azure Table Storage, or SQL.
 
 > [!IMPORTANT]
-> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient` or `AddKeyedAzureTableServiceClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient` or `AddKeyedAzureTableClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
 
 For more information about Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
 

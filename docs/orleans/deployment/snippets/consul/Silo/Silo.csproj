@@ -1,14 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Server" Version="8.2.0" />
-    <PackageReference Include="Microsoft.Orleans.Clustering.Consul" Version="8.2.0" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.Consul" Version="$(OrleansVersion)" />
   </ItemGroup>
 
 </Project>

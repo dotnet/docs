@@ -1,25 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <EnableSourceLink>false</EnableSourceLink>
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
-    <NoWarn>$(NoWarn);CS8618;CS0618;CS1998;CS0162</NoWarn>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.Redis" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.Cosmos" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.AdoNet" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
-    <PackageReference Include="Azure.Identity" Version="1.12.0" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.Redis" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.Cosmos" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AdoNet" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(HostingVersion)" />
+    <PackageReference Include="Azure.Identity" Version="$(AzureIdentityVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
   </ItemGroup>
 
 </Project>

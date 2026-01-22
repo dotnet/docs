@@ -64,6 +64,44 @@ public static class SiloProgram
             .AddCheck<SiloHealthCheck>("orleans-silo");
     }
     // </health_checks>
+
+    // <reminders_redis_silo>
+    public static void RemindersRedisSilo(string[] args)
+    {
+        var builder = Host.CreateApplicationBuilder(args);
+
+        builder.AddServiceDefaults();
+        builder.AddKeyedRedisClient("redis");
+        builder.UseOrleans();
+
+        builder.Build().Run();
+    }
+    // </reminders_redis_silo>
+
+    // <reminders_azure_table_silo>
+    public static void RemindersAzureTableSilo(string[] args)
+    {
+        var builder = Host.CreateApplicationBuilder(args);
+
+        builder.AddServiceDefaults();
+        builder.AddKeyedAzureTableClient("reminders");
+        builder.UseOrleans();
+
+        builder.Build().Run();
+    }
+    // </reminders_azure_table_silo>
+
+    // <reminders_inmemory_silo>
+    public static void RemindersInMemorySilo(string[] args)
+    {
+        var builder = Host.CreateApplicationBuilder(args);
+
+        builder.AddServiceDefaults();
+        builder.UseOrleans();
+
+        builder.Build().Run();
+    }
+    // </reminders_inmemory_silo>
 }
 
 // Stub health check classes for documentation examples

@@ -1,0 +1,47 @@
+<Project>
+  <!--
+    Centralized build properties for Orleans documentation snippet projects.
+    
+    This file provides:
+    - OrleansVersion: The Orleans package version to use (10.0.0)
+    - HostingVersion: The Microsoft.Extensions.Hosting version (10.0.0)
+    - AspireVersion: The .NET Aspire version (9.1.0)
+    - Default target framework (net10.0)
+    - Common warning suppressions for documentation code
+    - SourceLink disabled for git worktree compatibility
+    
+    To use in .csproj files, reference properties with $(OrleansVersion), etc.
+    Example: <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
+  -->
+  
+  <PropertyGroup>
+    <!-- Central package versions -->
+    <OrleansVersion>10.0.0</OrleansVersion>
+    <HostingVersion>10.0.0</HostingVersion>
+    <AspireVersion>9.1.0</AspireVersion>
+    <AzureIdentityVersion>1.17.0</AzureIdentityVersion>
+    
+    <!-- Default target framework for all snippet projects -->
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net10.0</TargetFramework>
+    
+    <!-- Common project settings -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- Disable SourceLink for git worktree compatibility -->
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    
+    <!-- Common warning suppressions for documentation code -->
+    <!-- CS0168: Variable declared but never used -->
+    <!-- CS0219: Variable assigned but never used -->
+    <!-- CS8618: Non-nullable field must contain a non-null value -->
+    <!-- CS0618: Obsolete API usage (some Orleans APIs are intentionally documented as obsolete) -->
+    <!-- CS1998: Async method lacks 'await' operators -->
+    <!-- CS0162: Unreachable code detected -->
+    <NoWarn>$(NoWarn);CS0168;CS0219;CS8618;CS0618;CS1998;CS0162</NoWarn>
+  </PropertyGroup>
+</Project>

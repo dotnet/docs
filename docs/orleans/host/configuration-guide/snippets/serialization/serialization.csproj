@@ -1,22 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <!-- Suppress warnings for unused code in snippets -->
-    <NoWarn>$(NoWarn);CS0168;CS0219;CS8618;CS8602;CS8603</NoWarn>
-    <!-- Disable source link for snippet projects -->
-    <EnableSourceLink>false</EnableSourceLink>
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <!-- Additional nullable warnings specific to this project -->
+    <NoWarn>$(NoWarn);CS8602;CS8603</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="$(OrleansVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(HostingVersion)" />
     <PackageReference Include="MessagePack" Version="3.1.4" />
   </ItemGroup>
 </Project>

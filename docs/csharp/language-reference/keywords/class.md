@@ -24,14 +24,7 @@ C# supports only single inheritance. In other words, a class can inherit impleme
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following table shows examples of class inheritance and interface implementation:
-
-| Inheritance                      | Example                                          |
-|----------------------------------|--------------------------------------------------|
-| None                             | `class ClassA { }`                               |
-| Single                           | `class DerivedClass : BaseClass { }`             |
-| None, implements two interfaces  | `class ImplClass : IFace1, IFace2 { }`           |
-| Single, implements one interface | `class ImplDerivedClass : BaseClass, IFace1 { }` |
+For more information on classes, interfaces, and inheritance see the article on [inheritance](../../fundamentals/object-oriented/inheritance.md) in the fundamentals section.
 
 You can declare classes directly within a namespace. Don't nest these classes within other classes. You can make these classes either [`public`](./public.md) or [`internal`](./internal.md). By default, classes are `internal`.
 

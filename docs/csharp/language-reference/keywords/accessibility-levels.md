@@ -10,14 +10,12 @@ helpviewer_keywords:
 
 Use the access modifiers `public`, `protected`, `internal`, or `private` to specify one of the following declared accessibility levels for members.
 
-| Declared accessibility                        | Meaning                                                      |
-|-----------------------------------------------|-------------------------------------------------------------|
-| [`public`](public.md)                         | Access isn't restricted.                                                  |
-| [`protected`](protected.md)                   | Access is limited to the containing class or types derived from the containing class. |
-| [`internal`](internal.md)                     | Access is limited to the current assembly.                                                    |
-| [`protected internal`](protected-internal.md) | Access is limited to the current assembly or types derived from the containing class.         |
-| [`private`](private.md)                       | Access is limited to the containing type.                                             |
-| [`private protected`](private-protected.md)   | Access is limited to the containing class or types derived from the containing class within the current assembly.                                                    |
+- [`public`](public.md): Access isn't restricted.
+- [`protected`](protected.md): Access is limited to the containing class or types derived from the containing class.
+- [`internal`](internal.md): Access is limited to the current assembly.
+- [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.
+- [`private`](private.md): Access is limited to the containing type.
+- [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

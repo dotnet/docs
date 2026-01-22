@@ -30,12 +30,10 @@ Starting with C# 14, you can declare events as [`partial`](./partial-member.md).
 
 The following keywords apply to events.
 
-| Keyword                     | Description     | For more information |
-|-----------------------------|-----------------|----------------------|
-| [`static`](./static.md)     | Makes the event available to callers at any time, even if no instance of the class exists. | [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md) |
-| [`virtual`](./virtual.md)   | Allows derived classes to override the event behavior by using the [override](./override.md) keyword. | [Inheritance](../../fundamentals/object-oriented/inheritance.md)|
-| [`sealed`](./sealed.md)     | Specifies that for derived classes it's no longer virtual. | |
-| [`abstract`](./abstract.md) | The compiler doesn't generate the `add` and `remove` event accessor blocks and therefore derived classes must provide their own implementation. | |
+- [`static`](./static.md): Makes the event available to callers at any time, even if no instance of the class exists. For more information on static events, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
+- [`virtual`](./virtual.md): Allows derived classes to override the event behavior by using the [override](./override.md) keyword. For more information on virtual events, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
+- [`sealed`](./sealed.md): Specifies that for derived classes it's no longer virtual.
+- [`abstract`](./abstract.md): The compiler doesn't generate the `add` and `remove` event accessor blocks and therefore derived classes must provide their own implementation.
 
 Use the [`static`](./static.md) keyword to declare an event as a static event. Static events are available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 

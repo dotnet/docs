@@ -1,20 +1,21 @@
 ---
 description: "Reference types - C# Reference"
 title: "Reference types"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "cs.referencetypes"
 helpviewer_keywords: 
   - "reference types [C#]"
   - "C# language, reference types"
   - "types [C#], reference types"
-ms.assetid: 801cf030-6e2d-4a0d-9daf-1431b0c31f47
 ---
 # Reference types (C# reference)
 
-There are two kinds of types in C#: reference types and value types. Variables of reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object; therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data, and it's not possible for operations on one variable to affect the other (except in the case of `in`, `ref`, and `out` parameter variables; see [in](method-parameters.md#in-parameter-modifier), [ref](ref.md), and [out](method-parameters.md#out-parameter-modifier) parameter modifier).
+C# has two kinds of types: reference types and value types. Variables of reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object. Therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data. Operations on one variable can't affect the other variable, except in the case of `in`, `ref`, and `out` parameter variables. For more information, see [in](method-parameters.md#in-parameter-modifier), [ref](ref.md), and [out](method-parameters.md#out-parameter-modifier) parameter modifier.
 
- The following keywords are used to declare reference types:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+ Use the following keywords to declare reference types:
 
 - [class](class.md)
 - [interface](interface.md)

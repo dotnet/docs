@@ -1,7 +1,7 @@
 ---
 description: "A partial type is a type declaration that allows you to split the declaration of the type into multiple files."
 title: "Partial type"
-ms.date: 02/22/2026
+ms.date: 01/22/2026
 f1_keywords: 
   - "partialtype"
   - "partialtype_CSharpKeyword"

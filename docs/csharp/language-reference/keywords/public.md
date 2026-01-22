@@ -25,7 +25,7 @@ For more information, see [Access Modifiers](../../programming-guide/classes-and
 
 In the following example, two classes are declared, `PointTest` and `Program`. The public members `x` and `y` of `PointTest` are accessed directly from `Program`.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs" id="13":::
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="13":::
 
 If you change the `public` access level to [private](private.md) or [protected](protected.md), you get the error message:
 

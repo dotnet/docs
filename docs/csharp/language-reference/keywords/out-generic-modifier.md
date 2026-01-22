@@ -22,7 +22,7 @@ For more information, see [Covariance and Contravariance](../../programming-guid
 
 The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csvariancekeywords/cs/program.cs" id="3":::
+:::code language="csharp" source="./snippets/variance.cs" id="3":::
 
 In a generic interface, declare a type parameter covariant if it satisfies the following conditions:
 
@@ -35,7 +35,7 @@ In a generic interface, declare a type parameter covariant if it satisfies the f
 
 The following example shows how to declare, instantiate, and invoke a covariant generic delegate. It also shows how to implicitly convert delegate types.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csvariancekeywords/cs/program.cs" id="4":::
+:::code language="csharp" source="./snippets/variance.cs" id="4":::
 
 In a generic delegate, declare a type covariant if you use it only as a method return type and not for method arguments.
 

@@ -232,14 +232,14 @@ Configure Application Parts using <xref:Orleans.ApplicationParts.IApplicationPar
 
 The following extension methods on <xref:Orleans.ApplicationParts.IApplicationPartManager> support common uses:
 
-- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType>: Add a single assembly using this extension method.
-- <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain%2A?displayProperty=nameWithType>: Adds all assemblies currently loaded in the `AppDomain`.
-- <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType>: Loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
+- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart*>: Add a single assembly using this extension method.
+- <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain*>: Adds all assemblies currently loaded in the `AppDomain`.
+- <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory*>: Loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
 
 Supplement assemblies added by the above methods using the following extension methods on their return type, <xref:Orleans.ApplicationParts.IApplicationPartManagerWithAssemblies>:
 
-- <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A?displayProperty=nameWithType>: Adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
-- <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType>: Generates support code for the added parts and adds it to the part manager. Note that this requires installing the `Microsoft.Orleans.OrleansCodeGenerator` package and is commonly referred to as runtime code generation.
+- <xref:Orleans.ApplicationPartManagerExtensions.WithReferences*>: Adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
+- <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*>: Generates support code for the added parts and adds it to the part manager. Note that this requires installing the `Microsoft.Orleans.OrleansCodeGenerator` package and is commonly referred to as runtime code generation.
 
 Type discovery requires the provided Application Parts to include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach to ensure these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, you can generate code during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. Find more info regarding code generation in [the corresponding section](../../grains/code-generation.md).
 

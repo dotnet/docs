@@ -350,15 +350,15 @@ public sealed class PingGrain : Grain, IPingGrain
 
 Grains in Orleans no longer need to inherit from the <xref:Orleans.Grain> base class or any other class. This functionality is referred to as [POCO](../standard/glossary.md#poco) grains. To access extension methods such as any of the following:
 
-- <xref:Orleans.GrainBaseExtensions.DeactivateOnIdle%2A>
-- <xref:Orleans.GrainExtensions.AsReference%2A>
-- <xref:Orleans.GrainExtensions.Cast%2A>
-- <xref:Orleans.GrainExtensions.GetPrimaryKey%2A>
-- <xref:Orleans.GrainReminderExtensions.GetReminder%2A>
-- <xref:Orleans.GrainReminderExtensions.GetReminders%2A>
-- <xref:Orleans.GrainReminderExtensions.RegisterOrUpdateReminder%2A>
-- <xref:Orleans.GrainReminderExtensions.UnregisterReminder%2A>
-- <xref:Orleans.GrainStreamingExtensions.GetStreamProvider%2A>
+- <xref:Orleans.GrainBaseExtensions.DeactivateOnIdle*>
+- <xref:Orleans.GrainExtensions.AsReference*>
+- <xref:Orleans.GrainExtensions.Cast*>
+- <xref:Orleans.GrainExtensions.GetPrimaryKey*>
+- <xref:Orleans.GrainReminderExtensions.GetReminder*>
+- <xref:Orleans.GrainReminderExtensions.GetReminders*>
+- <xref:Orleans.GrainReminderExtensions.RegisterOrUpdateReminder*>
+- <xref:Orleans.GrainReminderExtensions.UnregisterReminder*>
+- <xref:Orleans.GrainStreamingExtensions.GetStreamProvider*>
 
 The grain must either implement <xref:Orleans.IGrainBase> or inherit from <xref:Orleans.Grain>. Here's an example of implementing <xref:Orleans.IGrainBase> on a grain class:
 
@@ -569,7 +569,7 @@ builder.Host.UseOrleans((_, clientBuilder) =>
 
 In Orleans 7.0, extensions were factored into separate packages that don't rely on <xref:Orleans.Core?displayName=fullName>. Namely, <xref:Orleans.Streaming?displayName=fullName>, <xref:Orleans.Reminders?displayName=fullName>, and <xref:Orleans.Transactions?displayName=fullName> were separated from the core. This means these packages are entirely *pay* for what is _used_, and no code in the Orleans core is dedicated to these features. This approach slims down the core API surface and assembly size, simplifies the core, and improves performance. Regarding performance, transactions in Orleans previously required some code executing for every method to coordinate potential transactions. That coordination logic is now moved to a per-method basis.
 
-This is a compilation-breaking change. Existing code interacting with reminders or streams by calling methods previously defined on the <xref:Orleans.Grain> base class might break because these are now extension methods. Update such calls that don't specify `this` (e.g., <xref:Orleans.GrainReminderExtensions.GetReminders%2A>) to include `this` (e.g., `this.GetReminders()`) because extension methods must be qualified. A compilation error occurs if these calls aren't updated, and the required code change might not be obvious without knowing what changed.
+This is a compilation-breaking change. Existing code interacting with reminders or streams by calling methods previously defined on the <xref:Orleans.Grain> base class might break because these are now extension methods. Update such calls that don't specify `this` (e.g., <xref:Orleans.GrainReminderExtensions.GetReminders*>) to include `this` (e.g., `this.GetReminders()`) because extension methods must be qualified. A compilation error occurs if these calls aren't updated, and the required code change might not be obvious without knowing what changed.
 
 ## Transaction client
 

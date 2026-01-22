@@ -151,7 +151,7 @@ var value = await accessor.GetState();
 await accessor.SetState(10);
 ```
 
-In the preceding example, get a reference to the `IGrainStateAccessor<int>` extension for a specific grain instance using the <xref:Orleans.GrainExtensions.AsReference%2A?displayProperty=nameWithType> method. Then, use this reference to call the `GetState()` and `SetState(T state)` methods to read and modify the state value of the target grain.
+In the preceding example, get a reference to the `IGrainStateAccessor<int>` extension for a specific grain instance using the <xref:Orleans.GrainExtensions.AsReference*> method. Then, use this reference to call the `GetState()` and `SetState(T state)` methods to read and modify the state value of the target grain.
 
 ## See also
 

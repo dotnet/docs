@@ -41,11 +41,23 @@ To get started with System.CommandLine, see the following resources:
 
 To learn more, see the following resources:
 
+### Conceptual topics
+
+- [Conceptual overview of System.CommandLine](conceptual-overview.md)
+- [Supported types in System.CommandLine](supported-types.md)
+
+### How-to guides
+
 - [How to parse and invoke the result](how-to-parse-and-invoke.md)
 - [How to customize parsing and validation](how-to-customize-parsing-and-validation.md)
+- [Custom type parsing in System.CommandLine](custom-types.md)
 - [How to configure the parser](how-to-configure-the-parser.md)
 - [How to customize help](how-to-customize-help.md)
 - [How to enable and customize tab completion](how-to-enable-tab-completion.md)
+- [How to use System.CommandLine with NativeAOT](nativeaot.md)
+
+### Additional resources
+
 - [Command-line design guidance](design-guidance.md)
 - [Migration guide to 2.0.0-beta5](migration-guide-2.0.0-beta5.md)
 - [System.CommandLine API reference](xref:System.CommandLine)

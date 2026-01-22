@@ -17,11 +17,7 @@ You start by using a [*stream provider*](stream-providers.md) to get a handle to
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
-StreamId streamId = StreamId.Create("MyStreamNamespace", Guid);
-IAsyncStream<T> stream = streamProvider.GetStream<T>(streamId);
-```
+:::code language="csharp" source="snippets/streaming/BasicStreaming.cs" id="get_stream_provider":::
 
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -123,18 +119,7 @@ The presence of `ImplicitStreamSubscription` causes the streaming runtime to aut
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-IStreamProvider streamProvider =
-    base.GetStreamProvider("SimpleStreamProvider");
-
-StreamId streamId =
-    StreamId.Create("MyStreamNamespace", this.GetPrimaryKey());
-IAsyncStream<T> stream =
-    streamProvider.GetStream<T>(streamId);
-
-StreamSubscriptionHandle<T> subscription =
-    await stream.SubscribeAsync(IAsyncObserver<T>);
-```
+:::code language="csharp" source="snippets/streaming/ImplicitSubscriptions.cs" id="implicit_subscription_setup":::
 
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -164,18 +149,9 @@ To process messages, implement the `IAsyncObserver<T>.OnNextAsync(...)` method t
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-public Task OnNextAsync(string item, StreamSequenceToken? token = null)
-{
-    _logger.LogInformation($"Received an item from the stream: {item}");
-}
+:::code language="csharp" source="snippets/streaming/ImplicitSubscriptions.cs" id="on_next_async":::
 
-public async Task OnSubscribed(IStreamSubscriptionHandleFactory handleFactory)
-{
-    var handle = handleFactory.Create<string>();
-    await handle.ResumeAsync(this);
-}
-```
+:::code language="csharp" source="snippets/streaming/ImplicitSubscriptions.cs" id="on_subscribed":::
 
 :::zone-end
 
@@ -201,20 +177,7 @@ For explicit subscriptions, a grain must call `SubscribeAsync` to subscribe to t
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-public async override Task OnActivateAsync(CancellationToken cancellationToken)
-{
-    var streamProvider = this.GetStreamProvider(PROVIDER_NAME);
-    var streamId = StreamId.Create("MyStreamNamespace", this.GetPrimaryKey());
-    var stream = streamProvider.GetStream<string>(streamId);
-
-    var subscriptionHandles = await stream.GetAllSubscriptionHandles();
-    foreach (var handle in subscriptionHandles)
-    {
-       await handle.ResumeAsync(this);
-    }
-}
-```
+:::code language="csharp" source="snippets/streaming/ExplicitSubscriptions.cs" id="explicit_subscription_activate":::
 
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -282,22 +245,11 @@ The following configures Pub-Sub to store its state in Azure tables.
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
-```csharp
-using Azure.Identity;
-
-var endpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
-
-hostBuilder.AddAzureTableGrainStorage("PubSubStore",
-    options => options.ConfigureTableServiceClient(endpoint, credential));
-```
+:::code language="csharp" source="snippets/streaming/Configuration.cs" id="pubsub_managed_identity":::
 
 ### [Connection string](#tab/connection-string)
 
-```csharp
-hostBuilder.AddAzureTableGrainStorage("PubSubStore",
-    options => options.ConfigureTableServiceClient(connectionString));
-```
+:::code language="csharp" source="snippets/streaming/Configuration.cs" id="pubsub_connection_string":::
 
 ---
 
@@ -322,31 +274,11 @@ To use streams, you need to enable [stream providers](stream-providers.md) via t
 
 ### [Managed identity (recommended)](#tab/managed-identity)
 
-```csharp
-using Azure.Identity;
-
-var tableEndpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var queueEndpoint = new Uri(configuration["AZURE_QUEUE_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
-
-hostBuilder.AddMemoryStreams("StreamProvider")
-    .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
-        optionsBuilder => optionsBuilder.Configure(
-            options => options.ConfigureQueueServiceClient(queueEndpoint, credential)))
-    .AddAzureTableGrainStorage("PubSubStore",
-        options => options.ConfigureTableServiceClient(tableEndpoint, credential));
-```
+:::code language="csharp" source="snippets/streaming/Configuration.cs" id="stream_provider_managed_identity":::
 
 ### [Connection string](#tab/connection-string)
 
-```csharp
-hostBuilder.AddMemoryStreams("StreamProvider")
-    .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
-        optionsBuilder => optionsBuilder.Configure(
-            options => options.ConfigureQueueServiceClient(connectionString)))
-    .AddAzureTableGrainStorage("PubSubStore",
-        options => options.ConfigureTableServiceClient(connectionString));
-```
+:::code language="csharp" source="snippets/streaming/Configuration.cs" id="stream_provider_connection_string":::
 
 ---
 

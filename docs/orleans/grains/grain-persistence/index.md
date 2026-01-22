@@ -38,29 +38,7 @@ Grains interact with their persistent state using <xref:Orleans.Runtime.IPersist
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-public interface IPersistentState<TState> : IStorage<TState>
-{
-}
-
-public interface IStorage<TState> : IStorage
-{
-    TState State { get; set; }
-}
-
-public interface IStorage
-{
-    string Etag { get; }
-
-    bool RecordExists { get; }
-
-    Task ClearStateAsync();
-
-    Task WriteStateAsync();
-
-    Task ReadStateAsync();
-}
-```
+:::code language="csharp" source="./snippets/persistence/Interfaces.cs" id="persistent_state_interface":::
 
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -84,21 +62,7 @@ public interface IPersistentState<TState> where TState : new()
 
 Orleans injects instances of `IPersistentState<TState>` into the grain as constructor parameters. You can annotate these parameters with a <xref:Orleans.Runtime.PersistentStateAttribute> attribute to identify the name of the state being injected and the name of the storage provider supplying it. The following example demonstrates this by injecting two named states into the `UserGrain` constructor:
 
-```csharp
-public class UserGrain : Grain, IUserGrain
-{
-    private readonly IPersistentState<ProfileState> _profile;
-    private readonly IPersistentState<CartState> _cart;
-
-    public UserGrain(
-        [PersistentState("profile", "profileStore")] IPersistentState<ProfileState> profile,
-        [PersistentState("cart", "cartStore")] IPersistentState<CartState> cart)
-    {
-        _profile = profile;
-        _cart = cart;
-    }
-}
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="user_grain_multiple_states":::
 
 Different grain types can use different configured storage providers, even if both are the same type (e.g., two different Azure Table Storage provider instances connected to different Azure Storage accounts).
 
@@ -110,9 +74,7 @@ If a grain wishes to explicitly re-read its latest state from the backing store,
 
 Access the value of the state using the `State` property. For example, the following method accesses the profile state declared in the code above:
 
-```csharp
-public Task<string> GetNameAsync() => Task.FromResult(_profile.State.Name);
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="read_state_example":::
 
 There's no need to call `ReadStateAsync()` during normal operation; Orleans loads the state automatically during activation. However, you can use `ReadStateAsync()` to refresh state modified externally.
 
@@ -122,13 +84,7 @@ See the [Failure modes](#failure-modes) section below for details on error-handl
 
 You can modify the state via the `State` property. The modified state isn't automatically persisted. Instead, you decide when to persist state by calling the <xref:Orleans.Grain%601.WriteStateAsync%2A> method. For example, the following method updates a property on `State` and persists the updated state:
 
-```csharp
-public async Task SetNameAsync(string name)
-{
-    _profile.State.Name = name;
-    await _profile.WriteStateAsync();
-}
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="write_state_example":::
 
 Conceptually, the Orleans Runtime takes a deep copy of the grain state data object for its use during any write operations. Under the covers, the runtime *might* use optimization rules and heuristics to avoid performing some or all of the deep copy in certain circumstances, provided the expected logical isolation semantics are preserved.
 
@@ -150,60 +106,14 @@ First, configure storage providers, one for profile state and one for cart state
 
 Using <xref:Azure.Identity.DefaultAzureCredential> with a URI endpoint is the recommended approach for production environments.
 
-```csharp
-using Azure.Identity;
-
-var tableEndpoint = new Uri(configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
-var blobEndpoint = new Uri(configuration["AZURE_BLOB_STORAGE_ENDPOINT"]!);
-var credential = new DefaultAzureCredential();
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.AddAzureTableGrainStorage(
-        name: "profileStore",
-        configureOptions: options =>
-        {
-            options.ConfigureTableServiceClient(tableEndpoint, credential);
-        })
-        .AddAzureBlobGrainStorage(
-            name: "cartStore",
-            configureOptions: options =>
-            {
-                options.ConfigureBlobServiceClient(blobEndpoint, credential);
-            });
-});
-
-using var host = builder.Build();
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_managed_identity":::
 
 ### [Connection string](#tab/connection-string)
 
 > [!WARNING]
 > Connection strings contain secrets and should be avoided in production. Use managed identity whenever possible.
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.AddAzureTableGrainStorage(
-        name: "profileStore",
-        configureOptions: options =>
-        {
-            options.ConfigureTableServiceClient(
-                "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
-        })
-        .AddAzureBlobGrainStorage(
-            name: "cartStore",
-            configureOptions: options =>
-            {
-                options.ConfigureBlobServiceClient(
-                    "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
-            });
-});
-
-using var host = builder.Build();
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_connection_string":::
 
 ---
 
@@ -255,58 +165,18 @@ The recommended way to add storage to a grain is by injecting `IPersistentState<
 
 Declare a class to hold your grain's state:
 
-```csharp
-[Serializable]
-public class ProfileState
-{
-    public string Name { get; set; }
-
-    public Date DateOfBirth { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/persistence/StateTypes.cs" id="profile_state":::
 
 Inject `IPersistentState<ProfileState>` into the grain's constructor:
 
-```csharp
-public class UserGrain : Grain, IUserGrain
-{
-    private readonly IPersistentState<ProfileState> _profile;
-
-    public UserGrain(
-        [PersistentState("profile", "profileStore")]
-        IPersistentState<ProfileState> profile)
-    {
-        _profile = profile;
-    }
-}
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="user_grain_constructor_injection":::
 
 > [!IMPORTANT]
 > The profile state will not be loaded at the time it is injected into the constructor, so accessing it is invalid at that time. The state will be loaded before <xref:Orleans.Grain.OnActivateAsync%2A> is called.
 
 Now that the grain has a persistent state, you can add methods to read and write the state:
 
-```csharp
-public class UserGrain : Grain, IUserGrain
-{
-    private readonly IPersistentState<ProfileState> _profile;
-
-    public UserGrain(
-        [PersistentState("profile", "profileStore")]
-        IPersistentState<ProfileState> profile)
-    {
-        _profile = profile;
-    }
-
-    public Task<string> GetNameAsync() => Task.FromResult(_profile.State.Name);
-
-    public async Task SetNameAsync(string name)
-    {
-        _profile.State.Name = name;
-        await _profile.WriteStateAsync();
-    }
-}
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="user_grain_complete":::
 
 ## Failure modes for persistence operations <a name="failure-modes"></a>
 
@@ -337,21 +207,11 @@ Grain classes inheriting from `Grain<T>` (where `T` is an application-specific s
 
 Mark such grains with a <xref:Orleans.Providers.StorageProviderAttribute> specifying a named instance of a storage provider to use for reading/writing the state data for this grain.
 
-```csharp
-[StorageProvider(ProviderName="store1")]
-public class MyGrain : Grain<MyGrainState>, /*...*/
-{
-  /*...*/
-}
-```
+:::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="storage_provider_attribute":::
 
 The `Grain<T>` base class defines the following methods for subclasses to call:
 
-```csharp
-protected virtual Task ReadStateAsync() { /*...*/ }
-protected virtual Task WriteStateAsync() { /*...*/ }
-protected virtual Task ClearStateAsync() { /*...*/ }
-```
+:::code language="csharp" source="./snippets/persistence/StorageProviderTypes.cs" id="grain_base_methods":::
 
 The behavior of these methods corresponds to their counterparts on `IPersistentState<TState>` defined earlier.
 
@@ -361,40 +221,7 @@ There are two parts to the state persistence APIs: the API exposed to the grain 
 
 :::zone target="docs" pivot="orleans-7-0"
 
-```csharp
-/// <summary>
-/// Interface to be implemented for a storage able to read and write Orleans grain state data.
-/// </summary>
-public interface IGrainStorage
-{
-    /// <summary>Read data function for this storage instance.</summary>
-    /// <param name="stateName">Name of the state for this grain</param>
-    /// <param name="grainId">Grain ID</param>
-    /// <param name="grainState">State data object to be populated for this grain.</param>
-    /// <typeparam name="T">The grain state type.</typeparam>
-    /// <returns>Completion promise for the Read operation on the specified grain.</returns>
-    Task ReadStateAsync<T>(
-        string stateName, GrainId grainId, IGrainState<T> grainState);
-
-    /// <summary>Write data function for this storage instance.</summary>
-    /// <param name="stateName">Name of the state for this grain</param>
-    /// <param name="grainId">Grain ID</param>
-    /// <param name="grainState">State data object to be written for this grain.</param>
-    /// <typeparam name="T">The grain state type.</typeparam>
-    /// <returns>Completion promise for the Write operation on the specified grain.</returns>
-    Task WriteStateAsync<T>(
-        string stateName, GrainId grainId, IGrainState<T> grainState);
-
-    /// <summary>Delete / Clear data function for this storage instance.</summary>
-    /// <param name="stateName">Name of the state for this grain</param>
-    /// <param name="grainId">Grain ID</param>
-    /// <param name="grainState">Copy of last-known state data object for this grain.</param>
-    /// <typeparam name="T">The grain state type.</typeparam>
-    /// <returns>Completion promise for the Delete operation on the specified grain.</returns>
-    Task ClearStateAsync<T>(
-        string stateName, GrainId grainId, IGrainState<T> grainState);
-}
-```
+:::code language="csharp" source="snippets/persistence/StorageProviderTypes.cs" id="grain_storage_interface":::
 
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -441,35 +268,7 @@ An opaque provider-specific <xref:Orleans.GrainState.Etag%2A> value (`string`) *
 
 Any attempt to perform a write operation when the storage provider detects an `Etag` constraint violation *should* cause the write `Task` to be faulted with transient error <xref:Orleans.Storage.InconsistentStateException> and wrapping the underlying storage exception.
 
-```csharp
-public class InconsistentStateException : OrleansException
-{
-    public InconsistentStateException(
-    string message,
-    string storedEtag,
-    string currentEtag,
-    Exception storageException)
-        : base(message, storageException)
-    {
-        StoredEtag = storedEtag;
-        CurrentEtag = currentEtag;
-    }
-
-    public InconsistentStateException(
-        string storedEtag,
-        string currentEtag,
-        Exception storageException)
-        : this(storageException.Message, storedEtag, currentEtag, storageException)
-    {
-    }
-
-    /// <summary>The Etag value currently held in persistent storage.</summary>
-    public string StoredEtag { get; }
-
-    /// <summary>The Etag value currently held in memory, and attempting to be updated.</summary>
-    public string CurrentEtag { get; }
-}
-```
+:::code language="csharp" source="./snippets/persistence/StorageProviderTypes.cs" id="inconsistent_state_exception":::
 
 Any other failure conditions from a storage operation *must* cause the returned `Task` to be broken with an exception indicating the underlying storage issue. In many cases, this exception might be thrown back to the caller who triggered the storage operation by calling a method on the grain. It's important to consider whether the caller can deserialize this exception. For example, the client might not have loaded the specific persistence library containing the exception type. For this reason, it's advisable to convert exceptions into exceptions that can propagate back to the caller.
 
@@ -493,38 +292,11 @@ To register a named instance of `IGrainStorage`, use the <xref:Orleans.Runtime.K
 
 Configure Redis grain storage using the <xref:Orleans.Hosting.RedisSiloBuilderExtensions.AddRedisGrainStorage%2A> extension method:
 
-```csharp
-using StackExchange.Redis;
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.AddRedisGrainStorage(
-        name: "redis",
-        configureOptions: options =>
-        {
-            options.ConfigurationOptions = new ConfigurationOptions
-            {
-                EndPoints = { "localhost:6379" },
-                AbortOnConnectFail = false
-            };
-        });
-});
-
-using var host = builder.Build();
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_redis":::
 
 To configure Redis as the default grain storage provider, use <xref:Orleans.Hosting.RedisSiloBuilderExtensions.AddRedisGrainStorageAsDefault%2A>:
 
-```csharp
-siloBuilder.AddRedisGrainStorageAsDefault(options =>
-{
-    options.ConfigurationOptions = new ConfigurationOptions
-    {
-        EndPoints = { "localhost:6379" }
-    };
-});
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_redis_default":::
 
 ### Redis storage options
 
@@ -555,45 +327,11 @@ builder.AddProject<Projects.OrleansServer>("silo")
     .WaitFor(redis);
 ```
 
-```csharp
-// In your Orleans silo project
-using StackExchange.Redis;
-
-// Register the Redis client with keyed services.
-// Orleans providers look up resources by their keyed service name.
-builder.AddKeyedRedisClient("orleans-redis");
-
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.AddRedisGrainStorage(
-        name: "redis",
-        configureOptions: options =>
-        {
-            // Use the Aspire-provided connection string
-            var connectionString = builder.Configuration.GetConnectionString("orleans-redis");
-            options.ConfigurationOptions = ConfigurationOptions.Parse(connectionString!);
-        });
-});
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_redis_aspire_silo":::
 
 For more advanced scenarios, you can inject the `IConnectionMultiplexer` directly using the `CreateMultiplexer` delegate:
 
-```csharp
-// Register the Redis client with keyed services.
-// Orleans providers look up resources by their keyed service name.
-builder.AddKeyedRedisClient("orleans-redis");
-
-siloBuilder.AddRedisGrainStorage("redis");
-siloBuilder.Services.AddOptions<RedisStorageOptions>("redis")
-    .Configure<IServiceProvider>((options, sp) =>
-    {
-        options.CreateMultiplexer = async _ =>
-        {
-            // Resolve the IConnectionMultiplexer from DI (provided by Aspire)
-            return sp.GetRequiredService<IConnectionMultiplexer>();
-        };
-    });
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_redis_advanced":::
 
 ## Azure Cosmos DB grain persistence
 
@@ -612,37 +350,11 @@ dotnet add package Microsoft.Orleans.Persistence.Cosmos
 
 Configure Cosmos DB grain storage using the <xref:Orleans.Hosting.HostingExtensions.AddCosmosGrainStorage%2A> extension method:
 
-```csharp
-using Azure.Identity;
-using Orleans.Persistence.Cosmos;
-
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder.AddCosmosGrainStorage(
-        name: "cosmos",
-        configureOptions: options =>
-        {
-            options.ConfigureCosmosClient(
-                "https://myaccount.documents.azure.com:443/",
-                new DefaultAzureCredential());
-            options.DatabaseName = "Orleans";
-            options.ContainerName = "OrleansStorage";
-            options.IsResourceCreationEnabled = true;
-        });
-});
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_cosmos":::
 
 To configure Cosmos DB as the default grain storage provider, use <xref:Orleans.Hosting.HostingExtensions.AddCosmosGrainStorageAsDefault%2A>:
 
-```csharp
-siloBuilder.AddCosmosGrainStorageAsDefault(options =>
-{
-    options.ConfigureCosmosClient(
-        "https://myaccount.documents.azure.com:443/",
-        new DefaultAzureCredential());
-    options.IsResourceCreationEnabled = true;
-});
-```
+:::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_cosmos_default":::
 
 ### Cosmos DB storage options
 
@@ -665,23 +377,10 @@ The <xref:Orleans.Persistence.Cosmos.CosmosGrainStorageOptions> class provides t
 
 By default, Orleans uses the grain ID as the partition key. For advanced scenarios, you can implement a custom partition key provider:
 
-```csharp
-public class MyPartitionKeyProvider : IPartitionKeyProvider
-{
-    public ValueTask<string> GetPartitionKey(string grainType, GrainId grainId)
-    {
-        // Custom logic to determine partition key
-        return new ValueTask<string>(grainId.Key.ToString()!);
-    }
-}
+:::code language="csharp" source="./snippets/persistence/CosmosDbExamples.cs" id="custom_partition_key_provider":::
 
-// Register with custom partition key provider
-siloBuilder.AddCosmosGrainStorage<MyPartitionKeyProvider>(
-    name: "cosmos",
-    configureOptions: options =>
-    {
-        options.ConfigureCosmosClient("https://myaccount.documents.azure.com:443/", new DefaultAzureCredential());
-    });
-```
+Register the custom partition key provider:
+
+:::code language="csharp" source="./snippets/persistence/CosmosDbExamples.cs" id="configure_cosmos_partition_key":::
 
 :::zone-end

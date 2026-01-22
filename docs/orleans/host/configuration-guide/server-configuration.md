@@ -176,31 +176,13 @@ There are several key aspects of silo configuration:
 
 This example shows a silo configuration defining cluster information, using Azure clustering, and configuring application parts:
 
-```csharp
-var siloHostBuilder = new SiloHostBuilder()
-    .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "my-first-cluster";
-        options.ServiceId = "AspNetSampleApp";
-    })
-    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences());
-
-var silo = siloHostBuilder.Build();
-await silo.StartAsync();
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="full_silo_config":::
 
 Let's break down the steps used in this sample:
 
 ## Clustering provider
 
-```csharp
-siloBuilder.UseAzureStorageClustering(
-    options => options.ConnectionString = connectionString)
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="azure_clustering":::
 
 Usually, you deploy a service built on Orleans on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, you can deploy Orleans in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements protocols to discover and maintain membership of Orleans silos in the cluster, including detecting node failures and automatic reconfiguration.
 
@@ -210,13 +192,7 @@ In this sample, we use Azure Table as the membership provider.
 
 ## Orleans clustering information
 
-```csharp
-.Configure<ClusterOptions>(options =>
-{
-    options.ClusterId = "my-first-cluster";
-    options.ServiceId = "AspNetSampleApp";
-})
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="cluster_options":::
 
 Here, we do two things:
 
@@ -231,9 +207,7 @@ The more common case is that `ServiceId` and `ClusterId` remain fixed for the ap
 
 ## Endpoints
 
-```csharp
-siloBuilder.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="configure_endpoints":::
 
 An Orleans silo has two typical types of endpoint configuration:
 
@@ -244,32 +218,13 @@ In the sample, we use the helper method `.ConfigureEndpoints(siloPort: 11111, ga
 
 This method should suffice in most cases, but you can customize it further if needed. Here's an example of using an external IP address with port forwarding:
 
-```csharp
-siloBuilder.Configure<EndpointOptions>(options =>
-{
-    // Port to use for silo-to-silo
-    options.SiloPort = 11111;
-    // Port to use for the gateway
-    options.GatewayPort = 30000;
-    // IP Address to advertise in the cluster
-    options.AdvertisedIPAddress = IPAddress.Parse("172.16.0.42");
-    // The socket used for client-to-silo will bind to this endpoint
-    options.GatewayListeningEndpoint = new IPEndPoint(IPAddress.Any, 40000);
-    // The socket used by the gateway will bind to this endpoint
-    options.SiloListeningEndpoint = new IPEndPoint(IPAddress.Any, 50000);
-})
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="endpoint_options":::
 
 Internally, the silo listens on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider is `172.16.0.42:11111` and `172.16.0.42:30000`.
 
 ## Application parts
 
-```csharp
-siloBuilder.ConfigureApplicationParts(
-    parts => parts.AddApplicationPart(
-        typeof(ValueGrain).Assembly)
-        .WithReferences())
-```
+:::code language="csharp" source="snippets-v3/server-config/Configuration.cs" id="application_parts":::
 
 Although this step isn't technically required (if not configured, Orleans scans all assemblies in the current folder), we encourage you to configure it. This step helps Orleans load user assemblies and types. These assemblies are referred to as Application Parts. Orleans discovers all Grains, Grain Interfaces, and Serializers using Application Parts.
 

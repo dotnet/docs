@@ -130,25 +130,11 @@ Provide configuration via <xref:Orleans.ClientBuilder> and several supplemental 
 
 Example of a client configuration:
 
-```csharp
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "my-first-cluster";
-        options.ServiceId = "MyOrleansService";
-    })
-    .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_config":::
 
 Finally, you need to call the `Connect()` method on the constructed client object to connect it to the Orleans cluster. It's an asynchronous method returning a `Task`, so you need to wait for its completion using `await` or `.Wait()`.
 
-```csharp
-await client.Connect();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_connect":::
 
 :::zone-end
 
@@ -201,14 +187,7 @@ In the first case, the `Connect` method throws an exception indicating what went
 
 If `Connect` returns successfully, the cluster client is guaranteed to be usable until disposed. This means that even if the client experiences connection issues, it attempts to recover indefinitely. You can configure the exact recovery behavior on a <xref:Orleans.Configuration.GatewayOptions> object provided by the <xref:Orleans.ClientBuilder>, e.g.:
 
-```csharp
-var client = new ClientBuilder()
-    // ...
-    .Configure<GatewayOptions>(
-        options =>                         // Default is 1 min.
-        options.GatewayListRefreshPeriod = TimeSpan.FromMinutes(10))
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="gateway_options":::
 
 :::zone-end
 
@@ -235,30 +214,7 @@ When connecting to a cluster in a different process (on a different machine), a 
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-public class ClusterClientHostedService : IHostedService
-{
-    private readonly IClusterClient _client;
-
-    public ClusterClientHostedService(IClusterClient client)
-    {
-        _client = client;
-    }
-
-    public async Task StartAsync(CancellationToken cancellationToken)
-    {
-        // A retry filter could be provided here.
-        await _client.Connect();
-    }
-
-    public async Task StopAsync(CancellationToken cancellationToken)
-    {
-        await _client.Close();
-
-        _client.Dispose();
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/client/ClusterClientHostedService.cs" id="cluster_client_hosted_service":::
 
 :::zone-end
 
@@ -289,85 +245,6 @@ Here's an extended version of the previous example showing a client application 
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-await RunWatcherAsync();
-
-// Block the main thread so that the process doesn't exit.
-// Updates arrive on thread pool threads.
-Console.ReadLine();
-
-static async Task RunWatcherAsync()
-{
-    try
-    {
-        var client = new ClientBuilder()
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "my-first-cluster";
-                options.ServiceId = "MyOrleansService";
-            })
-            .UseAzureStorageClustering(
-                options => options.ConnectionString = connectionString)
-            .ConfigureApplicationParts(
-                parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
-            .Build();
-
-            // Hardcoded player ID
-            Guid playerId = new("{2349992C-860A-4EDA-9590-000000000006}");
-            IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
-            IGameGrain game = null;
-            while (game is null)
-            {
-                Console.WriteLine(
-                    $"Getting current game for player {playerId}...");
-
-                try
-                {
-                    game = await player.GetCurrentGame();
-                    if (game is null) // Wait until the player joins a game
-                    {
-                        await Task.Delay(TimeSpan.FromMilliseconds(5_000));
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Exception: {ex.GetBaseException()}");
-                }
-            }
-
-            Console.WriteLine(
-                $"Subscribing to updates for game {game.GetPrimaryKey()}...");
-
-            // Subscribe for updates
-            var watcher = new GameObserver();
-            await game.SubscribeForGameUpdates(
-                await client.CreateObjectReference<IGameObserver>(watcher));
-
-            Console.WriteLine(
-                "Subscribed successfully. Press <Enter> to stop.");
-
-            Console.ReadLine();
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(
-                $"Unexpected Error: {e.GetBaseException()}");
-        }
-    }
-}
-
-/// <summary>
-/// Observer class that implements the observer interface.
-/// Need to pass a grain reference to an instance of
-/// this class to subscribe for updates.
-/// </summary>
-class GameObserver : IGameObserver
-{
-    public void UpdateGameScore(string score)
-    {
-        Console.WriteLine("New game score: {0}", score);
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/client/ExternalClientExample.cs" id="external_client_example":::
 
 :::zone-end

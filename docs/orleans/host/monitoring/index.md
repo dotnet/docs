@@ -319,7 +319,7 @@ The following table shows a collection of transaction meters used to monitor the
 
 Various third-party metrics providers are available for use with Orleans. One popular example is [Prometheus](https://prometheus.io), which you can use to collect metrics from your app with OpenTelemetry.
 
-To use OpenTelemetry and Prometheus with Orleans, call the following `IServiceCollection` extension method:
+To use OpenTelemetry and Prometheus with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -356,7 +356,7 @@ Regardless of the distributed tracing exporter you choose, call:
 
 Or set the `EnableDistributedTracing` config option to `true`.
 
-Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
+Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()

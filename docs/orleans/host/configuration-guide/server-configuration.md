@@ -102,7 +102,7 @@ In this sample, we use Azure Table as the membership provider.
 
 ## Orleans clustering information
 
-To optionally configure clustering, use `ClusterOptions` as the type parameter for the <xref:Orleans.Hosting.SiloBuilderExtensions.Configure%2A> method on the `ISiloBuilder` instance.
+To optionally configure clustering, use <xref:Orleans.Configuration.ClusterOptions> as the type parameter for the <xref:Orleans.Hosting.SiloBuilderExtensions.Configure%2A> method on the <xref:Orleans.Hosting.ISiloBuilder> instance.
 
 ```csharp
 siloBuilder.Configure<ClusterOptions>(options =>

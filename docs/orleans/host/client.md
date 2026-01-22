@@ -132,7 +132,7 @@ Example of a client configuration:
 
 :::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_config":::
 
-Finally, you need to call the `Connect()` method on the constructed client object to connect it to the Orleans cluster. It's an asynchronous method returning a `Task`, so you need to wait for its completion using `await` or `.Wait()`.
+Finally, you need to call the `Connect()` method on the constructed client object to connect it to the Orleans cluster. It's an asynchronous method returning a <xref:System.Threading.Tasks.Task>, so you need to wait for its completion using `await` or `.Wait()`.
 
 :::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_connect":::
 
@@ -149,7 +149,7 @@ Task joinGameTask = player.JoinGame(game)
 await joinGameTask;
 ```
 
-A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned `Task` without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
+A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned <xref:System.Threading.Tasks.Task> without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
 
 The major difference between making calls to grains from client code and from within another grain is the single-threaded execution model of grains. The Orleans runtime constrains grains to be single-threaded, while clients can be multi-threaded. Orleans doesn't provide any such guarantee on the client-side, so it's up to the client to manage its concurrency using appropriate synchronization constructs for its environment—locks, events, `Tasks`, etc.
 

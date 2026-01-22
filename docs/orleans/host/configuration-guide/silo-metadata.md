@@ -92,7 +92,7 @@ Developers can retrieve metadata through the `ISiloMetadataCache` interface. Thi
 
 ### Access metadata for a specific silo
 
-The `ISiloMetadataCache` provides a method to retrieve the metadata for a specific silo by its unique identifier (`SiloAddress`). The `ISoloMetadataCache` implementation is registered in the `UseSiloMetadata` method and can be injected as a dependency.
+The `ISiloMetadataCache` provides a method to retrieve the metadata for a specific silo by its unique identifier (<xref:Orleans.Runtime.SiloAddress>). The `ISoloMetadataCache` implementation is registered in the `UseSiloMetadata` method and can be injected as a dependency.
 
 #### Example: Access metadata for a Silo
 

@@ -230,10 +230,7 @@ If you're upgrading from Orleans 8.x, note these additional changes introduced i
 If your application relies on random placement, explicitly configure it:
 
 ```csharp
-siloBuilder.ConfigureServices(services =>
-{
-    services.AddSingleton<PlacementStrategy, RandomPlacement>();
-});
+siloBuilder.Services.AddSingleton<PlacementStrategy, RandomPlacement>();
 
 // Or on specific grains
 [RandomPlacement]

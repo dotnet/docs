@@ -35,7 +35,7 @@ While Orleans uses the grain lifecycle during grain activation, grains aren't al
 
 ## Memory-based activation shedding
 
-Orleans 9.0 introduced memory-based activation shedding, which automatically deactivates grain activations when the silo is under memory pressure. This helps prevent out-of-memory conditions by intelligently removing grains from memory based on their activity patterns.
+Memory-based activation shedding automatically deactivates grain activations when the silo is under memory pressure. This helps prevent out-of-memory conditions by intelligently removing grains from memory based on their activity patterns.
 
 ### How it works
 

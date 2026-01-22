@@ -42,8 +42,8 @@ public static class IncomingFilterConfiguration
     public static void RegisterFilterWithDI(ISiloBuilder siloHostBuilder)
     {
         // <register_incoming_filter_di>
-        siloHostBuilder.ConfigureServices(
-            services => services.AddSingleton<IIncomingGrainCallFilter, LoggingCallFilter>());
+        siloHostBuilder.Services
+            .AddSingleton<IIncomingGrainCallFilter, LoggingCallFilter>();
         // </register_incoming_filter_di>
     }
 }
@@ -86,8 +86,8 @@ public static class OutgoingFilterConfiguration
     public static void RegisterFilterWithDI(ISiloBuilder builder)
     {
         // <register_outgoing_filter_di>
-        builder.ConfigureServices(
-            services => services.AddSingleton<IOutgoingGrainCallFilter, OutgoingLoggingCallFilter>());
+        builder.Services
+            .AddSingleton<IOutgoingGrainCallFilter, OutgoingLoggingCallFilter>();
         // </register_outgoing_filter_di>
     }
 }

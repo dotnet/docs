@@ -10,10 +10,11 @@ public static class FileSiloBuilderExtensions
     public static ISiloBuilder AddFileGrainStorage(
         this ISiloBuilder builder,
         string providerName,
-        Action<FileGrainStorageOptions> options) =>
-        builder.ConfigureServices(
-            services => services.AddFileGrainStorage(
-                providerName, options));
+        Action<FileGrainStorageOptions> options)
+    {
+        builder.Services.AddFileGrainStorage(providerName, options);
+        return builder;
+    }
 
     public static IServiceCollection AddFileGrainStorage(
         this IServiceCollection services,

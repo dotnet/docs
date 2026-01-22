@@ -42,8 +42,8 @@ public static class OutgoingFilterRegistration
     public static void RegisterFilterWithDI(ISiloBuilder builder)
     {
         // <register_outgoing_filter_di>
-        builder.ConfigureServices(
-            services => services.AddSingleton<IOutgoingGrainCallFilter, OutgoingLoggingCallFilter>());
+        builder.Services
+            .AddSingleton<IOutgoingGrainCallFilter, OutgoingLoggingCallFilter>();
         // </register_outgoing_filter_di>
     }
 }

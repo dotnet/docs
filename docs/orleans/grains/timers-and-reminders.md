@@ -197,9 +197,6 @@ The <xref:Orleans.Configuration.RedisReminderTableOptions> class provides the fo
 
 Azure Cosmos DB:
 
-> [!NOTE]
-> Azure Cosmos DB reminder support was introduced in Orleans 7.2.
-
 Install the [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) NuGet package and configure with `UseCosmosReminderService`:
 
 :::code language="csharp" source="./snippets/timers/ReminderConfiguration.cs" id="configure_cosmos":::

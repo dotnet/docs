@@ -39,7 +39,7 @@ As a result, without burdening your application code, only recently used grain a
 
 **Collection age limit**
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 The time after which an idle grain activation becomes subject to collection is called the Collection Age Limit. The default Collection Age Limit is 15 minutes, but you can change it globally or for individual grain classes.
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
@@ -127,10 +127,7 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
 
 ## Memory-based activation shedding
 
-> [!NOTE]
-> This feature is available in Orleans 9.0 and later versions.
-
-Orleans 9.0 introduced memory-based activation shedding, which automatically deactivates grain activations when memory pressure exceeds configured thresholds. This helps prevent out-of-memory conditions by proactively freeing memory when the silo is under memory pressure.
+Memory-based activation shedding automatically deactivates grain activations when memory pressure exceeds configured thresholds. This helps prevent out-of-memory conditions by proactively freeing memory when the silo is under memory pressure.
 
 When enabled, the silo monitors memory usage and begins collecting grain activations when memory usage exceeds the configured limit. Collection continues until memory usage falls below the target percentage.
 

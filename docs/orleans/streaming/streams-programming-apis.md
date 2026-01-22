@@ -15,7 +15,7 @@ Applications interact with streams via APIs very similar to the well-known [Reac
 
 You start by using a [*stream provider*](stream-providers.md) to get a handle to a stream. You can think of a stream provider as a stream factory that allows implementers to customize streams behavior and semantics:
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="snippets/streaming/BasicStreaming.cs" id="get_stream_provider":::
 
@@ -117,7 +117,7 @@ The grain implementation `MyGrainType` can declare an attribute `[ImplicitStream
 
 The presence of `ImplicitStreamSubscription` causes the streaming runtime to automatically subscribe this grain to the stream and deliver stream events to it. However, the grain code still needs to tell the runtime how it wants events processed. Essentially, it needs to attach the `IAsyncObserver`. Therefore, when the grain activates, the grain code inside `OnActivateAsync` needs to call:
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="snippets/streaming/ImplicitSubscriptions.cs" id="implicit_subscription_setup":::
 
@@ -147,7 +147,7 @@ For implicit subscriptions, the grain still needs to subscribe to attach the pro
 
 To process messages, implement the `IAsyncObserver<T>.OnNextAsync(...)` method to receive stream data and a sequence token. Alternatively, the `ResumeAsync` method can take a set of delegates representing the methods of the `IAsyncObserver<T>` interface: `onNextAsync`, `onErrorAsync`, and `onCompletedAsync`.
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="snippets/streaming/ImplicitSubscriptions.cs" id="on_next_async":::
 
@@ -175,7 +175,7 @@ public override async Task OnActivateAsync()
 
 For explicit subscriptions, a grain must call `SubscribeAsync` to subscribe to the stream. This creates a subscription and attaches the processing logic. The explicit subscription exists until the grain unsubscribes. If a grain deactivates and reactivates, it's still explicitly subscribed, but no processing logic is attached. In this case, the grain needs to re-attach the processing logic. To do this, in its `OnActivateAsync`, the grain first needs to find out its subscriptions by calling <xref:Orleans.Streams.IAsyncStream%601.GetAllSubscriptionHandles?displayProperty=nameWithType>. The grain must execute `ResumeAsync` on each handle it wishes to continue processing or `UnsubscribeAsync` on any handles it's done with. The grain can also optionally specify the `StreamSequenceToken` as an argument to the `ResumeAsync` calls, causing this explicit subscription to start consuming from that token.
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="snippets/streaming/ExplicitSubscriptions.cs" id="explicit_subscription_activate":::
 

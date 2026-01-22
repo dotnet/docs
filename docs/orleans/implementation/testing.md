@@ -14,7 +14,7 @@ This tutorial shows how to unit test your grains to ensure they behave correctly
 
 ## Use the `InProcessTestCluster` (recommended)
 
-Orleans 9.0 introduced the `InProcessTestCluster`, a lightweight testing infrastructure that runs all silos in-process using in-memory transports. This provides significantly faster test execution compared to the traditional `TestCluster`.
+The `InProcessTestCluster` is a lightweight testing infrastructure that runs all silos in-process using in-memory transports. This provides significantly faster test execution compared to the traditional `TestCluster`.
 
 ### Key advantages
 

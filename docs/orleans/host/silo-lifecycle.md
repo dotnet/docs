@@ -121,11 +121,10 @@ public static ISiloBuilder AddStartupTask(
     Func<IServiceProvider, CancellationToken, Task> startupTask,
     int stage = ServiceLifecycleStage.Active)
 {
-    builder.ConfigureServices(services =>
-        services.AddTransient<ILifecycleParticipant<ISiloLifecycle>>(
-            serviceProvider =>
-                new StartupTask(
-                    serviceProvider, startupTask, stage)));
+    builder.Services.AddTransient<ILifecycleParticipant<ISiloLifecycle>>(
+        serviceProvider =>
+            new StartupTask(
+                serviceProvider, startupTask, stage));
 
     return builder;
 }

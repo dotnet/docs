@@ -63,9 +63,6 @@ public class PlayerGrain : Grain, IPlayerGrain
 
 ## Response timeout for grain methods
 
-> [!NOTE]
-> The `ResponseTimeoutAttribute` for per-method timeouts was introduced in Orleans 7.2.2.
-
 The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws a <xref:System.TimeoutException>. To impose a response timeout, add the <xref:Orleans.ResponseTimeoutAttribute> to the interface's grain method definition. It's crucial to add the attribute to the interface method definition, not the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
 
 Extending the previous `PlayerGrain` implementation, the following example shows how to impose a response timeout on the `LeaveGame` method:
@@ -180,9 +177,6 @@ public Task GrainMethod6()
 `ValueTask<T>` can be used instead of `Task<T>`.
 
 ## IAsyncEnumerable return values
-
-> [!NOTE]
-> `IAsyncEnumerable<T>` support in grain methods was introduced in Orleans 7.2.
 
 Orleans supports returning `IAsyncEnumerable<T>` from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
 

@@ -49,7 +49,7 @@ When you have some experience with Orleans and have a use case requiring a stron
 
 ## Strong-consistency distributed directory
 
-Orleans 9.0 introduced a new strongly-consistent grain directory using a distributed hash table with virtual nodes (similar to Amazon Dynamo and Apache Cassandra). This provides better consistency guarantees compared to the eventually-consistent directory in earlier versions.
+Orleans provides a strongly-consistent grain directory using a distributed hash table with virtual nodes (similar to Amazon Dynamo and Apache Cassandra). This provides strong consistency guarantees for grain location tracking.
 
 ### Key features
 
@@ -80,7 +80,7 @@ The built-in distributed directory is recommended for most scenarios. Consider e
 
 ## ADO.NET grain directory
 
-Orleans 9.2 introduced an ADO.NET-based grain directory that stores grain locations in a relational database. This provides persistent grain location storage that survives cluster restarts.
+The ADO.NET-based grain directory stores grain locations in a relational database. This provides persistent grain location storage that survives cluster restarts.
 
 ### Supported databases
 

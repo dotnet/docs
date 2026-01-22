@@ -260,9 +260,6 @@ For more information about Orleans and .NET Aspire integration, see [Orleans and
 
 ### Configure Cassandra clustering
 
-> [!NOTE]
-> Cassandra clustering support was introduced in Orleans 8.2.
-
 Configure Apache Cassandra as the clustering provider using the <xref:Orleans.Clustering.Cassandra.Hosting.CassandraMembershipHostingExtensions.UseCassandraClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) NuGet package:
 
 ```dotnetcli
@@ -330,9 +327,6 @@ Consider Cassandra for clustering when:
 - You need high write throughput for large clusters
 
 ### Configure Azure Cosmos DB clustering
-
-> [!NOTE]
-> Azure Cosmos DB clustering support was introduced in Orleans 7.2.
 
 Configure Azure Cosmos DB as the clustering provider using the <xref:Orleans.Hosting.HostingExtensions.UseCosmosClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet package:
 

@@ -36,7 +36,7 @@ You can find Orleans grain storage providers on [NuGet](https://www.nuget.org/pa
 
 Grains interact with their persistent state using <xref:Orleans.Runtime.IPersistentState%601>, where `TState` is the serializable state type:
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="./snippets/persistence/Interfaces.cs" id="persistent_state_interface":::
 
@@ -219,7 +219,7 @@ The behavior of these methods corresponds to their counterparts on `IPersistentS
 
 There are two parts to the state persistence APIs: the API exposed to the grain via `IPersistentState<T>` or `Grain<T>`, and the storage provider API, centered around `IGrainStorage`—the interface storage providers must implement:
 
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code language="csharp" source="snippets/persistence/StorageProviderTypes.cs" id="grain_storage_interface":::
 
@@ -334,9 +334,6 @@ For more advanced scenarios, you can inject the `IConnectionMultiplexer` directl
 :::code language="csharp" source="./snippets/persistence/StorageConfiguration.cs" id="configure_redis_advanced":::
 
 ## Azure Cosmos DB grain persistence
-
-> [!NOTE]
-> Azure Cosmos DB grain persistence support was introduced in Orleans 7.2.
 
 [Azure Cosmos DB](/azure/cosmos-db/introduction) is a fully managed NoSQL and relational database for modern app development. The `Microsoft.Orleans.Persistence.Cosmos` package provides a grain storage provider backed by Cosmos DB.
 

@@ -70,7 +70,7 @@ This is a deterministic placement strategy placing grains on silos with a specif
 
 :::zone target="docs" pivot="orleans-8-0"
 
-Resource-optimized placement was introduced in Orleans 8.1. To use it, add the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to your grain class.
+To use resource-optimized placement, add the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to your grain class.
 
 :::zone-end
 
@@ -92,7 +92,7 @@ This algorithm is based on [*Resource-based placement with cooperative dual-mode
 
 Configure this placement strategy by adding the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to the grain class.
 
-### ResourceOptimizedPlacementOptions
+### Resource-optimized placement options
 
 Configure the resource-optimized placement strategy using <xref:Orleans.Configuration.ResourceOptimizedPlacementOptions>:
 
@@ -116,6 +116,9 @@ siloBuilder.Configure<ResourceOptimizedPlacementOptions>(options =>
 | `MaxAvailableMemoryWeight` | `int` | 5 | The importance of maximum available memory. Higher values favor silos with higher physical memory capacity. Useful in clusters with unevenly distributed resources. Valid range: 0-100. |
 | `ActivationCountWeight` | `int` | 15 | The importance of activation count. Higher values favor silos with fewer active grains. Valid range: 0-100. |
 | `LocalSiloPreferenceMargin` | `int` | 5 | Margin for preferring the local silo. When set to 0, always selects the silo with lowest utilization. When set to 100, always prefers the local silo (equivalent to `PreferLocalPlacement`). Recommended: 5-10. Valid range: 0-100. |
+
+> [!NOTE]
+> The weight values don't need to sum to 100. Orleans normalizes them automatically, so they represent relative importance rather than absolute percentages.
 
 :::zone-end
 
@@ -145,20 +148,28 @@ Starting in Orleans 9.2, Orleans uses resource-optimized placement by default. O
 To revert to the previous random placement behavior:
 
 ```csharp
-siloBuilder.ConfigureServices(services =>
-    services.AddSingleton<PlacementStrategy, RandomPlacement>());
+siloBuilder.Services.AddSingleton<PlacementStrategy, RandomPlacement>();
 ```
 
 To use a custom placement strategy:
 
 ```csharp
-siloBuilder.ConfigureServices(services =>
-    services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
+siloBuilder.Services.AddSingleton<PlacementStrategy, MyPlacementStrategy>();
 ```
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
+
+Orleans uses random placement unless the default is overridden. Override the default placement strategy by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration:
+
+```csharp
+siloBuilder.Services.AddSingleton<PlacementStrategy, MyPlacementStrategy>();
+```
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
 
 Orleans uses random placement unless the default is overridden. Override the default placement strategy by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration:
 
@@ -248,99 +259,17 @@ For a second simple example showing further use of the placement context, refer 
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
-## Silo metadata and placement filtering
+## Placement filtering
 
-Orleans 9.0 introduced silo metadata and placement filtering, allowing you to attach custom metadata to silos and use that metadata to control grain placement decisions. This is useful for scenarios like:
+Placement filtering allows you to filter which silos are eligible for grain placement before the placement strategy selects a target. This works in conjunction with placement strategies and enables scenarios like:
 
-- **Zone-aware placement**: Place grains on silos in the same availability zone as the client
+- **Zone-aware placement**: Place grains on silos in the same availability zone
 - **Tiered deployments**: Direct certain grains to premium or standard tier silos
-- **Hardware affinity**: Place compute-intensive grains on silos with GPUs or high-memory nodes
+- **Hardware affinity**: Place compute-intensive grains on silos with specific capabilities
 
-### Configure silo metadata
+Orleans provides built-in filters based on [silo metadata](../host/configuration-guide/silo-metadata.md), including required-match and preferred-match filtering. You can also implement custom placement filters.
 
-Attach metadata to a silo during configuration:
-
-```csharp
-// From environment variables (ORLEANS__METADATA__key=value)
-builder.UseSiloMetadata();
-
-// From IConfiguration
-builder.UseSiloMetadata(configuration.GetSection("Orleans:Metadata"));
-
-// From a dictionary
-builder.UseSiloMetadata(new Dictionary<string, string>
-{
-    ["zone"] = "us-east-1a",
-    ["tier"] = "premium",
-    ["rack"] = "rack-42"
-});
-```
-
-### Placement filter strategies
-
-Orleans provides two placement filter strategies:
-
-| Strategy | Attribute | Behavior |
-|----------|-----------|----------|
-| **Required match** | `[RequiredMatchSiloMetadataPlacementFilter]` | Grain is **only** placed on silos with matching metadata. Fails if no silos match. |
-| **Preferred match** | `[PreferredMatchSiloMetadataPlacementFilter]` | Grain **prefers** silos with matching metadata but falls back to other silos if needed. |
-
-### Required match filtering
-
-Use required match filtering when a grain **must** be placed on a silo with specific metadata:
-
-```csharp
-// Grain will only be placed on silos where the "zone" metadata matches
-[RequiredMatchSiloMetadataPlacementFilter(new[] { "zone" })]
-public class ZoneRestrictedGrain : Grain, IZoneRestrictedGrain
-{
-    // This grain will only activate on silos in the same zone
-}
-
-// Multiple metadata keys can be specified
-[RequiredMatchSiloMetadataPlacementFilter(new[] { "zone", "tier" })]
-public class ZoneAndTierGrain : Grain, IZoneAndTierGrain
-{
-    // Requires both zone AND tier to match
-}
-```
-
-### Preferred match filtering
-
-Use preferred match filtering when you want to prefer certain silos but allow fallback:
-
-```csharp
-// Prefer silos with matching "zone" and "rack", but allow fallback
-// minCandidates ensures at least 2 silos are considered even without matches
-[PreferredMatchSiloMetadataPlacementFilter(new[] { "zone", "rack" }, minCandidates: 2)]
-public class LocalityAwareGrain : Grain, ILocalityAwareGrain
-{
-    // Prefers local zone/rack but can activate elsewhere
-}
-```
-
-### Access silo metadata at runtime
-
-Grains can access metadata for any silo using `ISiloMetadataCache`:
-
-```csharp
-public class MyGrain : Grain, IMyGrain
-{
-    private readonly ISiloMetadataCache _metadataCache;
-
-    public MyGrain(ISiloMetadataCache metadataCache)
-    {
-        _metadataCache = metadataCache;
-    }
-
-    public Task<string?> GetCurrentSiloZone()
-    {
-        var siloAddress = this.GetSiloAddress();
-        var metadata = _metadataCache.GetMetadata(siloAddress);
-        return Task.FromResult(metadata?.Metadata.GetValueOrDefault("zone"));
-    }
-}
-```
+For detailed information on configuring silo metadata, using built-in filters, and implementing custom filters, see [Grain placement filtering](grain-placement-filtering.md).
 
 :::zone-end
 

@@ -70,7 +70,7 @@ public interface IIncomingGrainCallContext
 }
 ```
 
-The `IIncomingGrainCallFilter.Invoke(IIncomingGrainCallContext)` method must `await` or return the result of `IIncomingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. You can modify the `Result` property after awaiting the `Invoke()` method. The `ImplementationMethod` property returns the `MethodInfo` of the implementation class. You can access the `MethodInfo` of the interface method using the `InterfaceMethod` property. Grain call filters are called for all method calls to a grain, including calls to grain extensions (implementations of `IGrainExtension`) installed in the grain. For example, Orleans uses grain extensions to implement Streams and Cancellation Tokens. Therefore, expect that the value of `ImplementationMethod` isn't always a method in the grain class itself.
+The `IIncomingGrainCallFilter.Invoke(IIncomingGrainCallContext)` method must `await` or return the result of `IIncomingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. You can modify the `Result` property after awaiting the `Invoke()` method. The `ImplementationMethod` property returns the <xref:System.Reflection.MethodInfo> of the implementation class. You can access the <xref:System.Reflection.MethodInfo> of the interface method using the `InterfaceMethod` property. Grain call filters are called for all method calls to a grain, including calls to grain extensions (implementations of `IGrainExtension`) installed in the grain. For example, Orleans uses grain extensions to implement Streams and Cancellation Tokens. Therefore, expect that the value of `ImplementationMethod` isn't always a method in the grain class itself.
 
 ## Configure incoming grain call filters
 
@@ -108,7 +108,7 @@ Another use case for filters is access control, as shown in this example:
 
 :::code language="csharp" source="snippets/interceptors/GrainFilters.cs" id="access_control_grain":::
 
-In the preceding example, the `SpecialAdminOnlyOperation` method can only be called if `"isAdmin"` is set to `true` in the <xref:Orleans.Runtime.RequestContext>. In this way, you can use grain call filters for authorization. In this example, it's the caller's responsibility to ensure the `"isAdmin"` value is set correctly and that authentication is performed correctly. Note that the `[AdminOnly]` attribute is specified on the grain class method. This is because the `ImplementationMethod` property returns the `MethodInfo` of the implementation, not the interface. The filter could also check the `InterfaceMethod` property.
+In the preceding example, the `SpecialAdminOnlyOperation` method can only be called if `"isAdmin"` is set to `true` in the <xref:Orleans.Runtime.RequestContext>. In this way, you can use grain call filters for authorization. In this example, it's the caller's responsibility to ensure the `"isAdmin"` value is set correctly and that authentication is performed correctly. Note that the `[AdminOnly]` attribute is specified on the grain class method. This is because the `ImplementationMethod` property returns the <xref:System.Reflection.MethodInfo> of the implementation, not the interface. The filter could also check the `InterfaceMethod` property.
 
 ## Grain call filter ordering
 
@@ -165,7 +165,7 @@ public interface IOutgoingGrainCallContext
 }
 ```
 
-The `IOutgoingGrainCallFilter.Invoke(IOutgoingGrainCallContext)` method must `await` or return the result of `IOutgoingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. You can modify the `Result` property after awaiting the `Invoke()` method. You can access the `MethodInfo` of the interface method being called using the `InterfaceMethod` property. Outgoing grain call filters are invoked for all method calls to a grain, including calls to system methods made by Orleans.
+The `IOutgoingGrainCallFilter.Invoke(IOutgoingGrainCallContext)` method must `await` or return the result of `IOutgoingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. You can modify the `Result` property after awaiting the `Invoke()` method. You can access the <xref:System.Reflection.MethodInfo> of the interface method being called using the `InterfaceMethod` property. Outgoing grain call filters are invoked for all method calls to a grain, including calls to system methods made by Orleans.
 
 ## Configure outgoing grain call filters
 

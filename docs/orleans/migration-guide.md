@@ -448,9 +448,9 @@ In Orleans 7.0, streams are identified using strings. The <xref:Orleans.Runtime.
 
 `SimpleMessageStreams` (also called SMS) is removed in 7.0. SMS had the same interface as <xref:Orleans.Providers.Streams.PersistentStreams?displayProperty=fullName>, but its behavior was very different because it relied on direct grain-to-grain calls. To avoid confusion, SMS was removed and a new replacement called <xref:Orleans.BroadcastChannel?displayProperty=fullName> was introduced.
 
-`BroadcastChannel` only supports implicit subscriptions and can be a direct replacement in this case. If explicit subscriptions are needed or the `PersistentStream` interface must be used (for example, if SMS was used in tests while `EventHub` was used in production), then `MemoryStream` is the best candidate.
+`BroadcastChannel` only supports implicit subscriptions and can be a direct replacement in this case. If explicit subscriptions are needed or the `PersistentStream` interface must be used (for example, if SMS was used in tests while `EventHub` was used in production), then <xref:System.IO.MemoryStream> is the best candidate.
 
-`BroadcastChannel` has the same behaviors as SMS, while `MemoryStream` behaves like other stream providers. Consider the following Broadcast Channel usage example:
+`BroadcastChannel` has the same behaviors as SMS, while <xref:System.IO.MemoryStream> behaves like other stream providers. Consider the following Broadcast Channel usage example:
 
 ```csharp
 // Configuration
@@ -497,7 +497,7 @@ public sealed class SimpleSubscriberGrain : Grain, ISubscriberGrain, IOnBroadcas
 }
 ```
 
-Migration to `MemoryStream` is easier since only the configuration needs changing. Consider the following `MemoryStream` configuration:
+Migration to <xref:System.IO.MemoryStream> is easier since only the configuration needs changing. Consider the following <xref:System.IO.MemoryStream> configuration:
 
 ```csharp
 builder.AddMemoryStreams<DefaultMemoryMessageBodySerializer>(

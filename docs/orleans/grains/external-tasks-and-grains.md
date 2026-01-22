@@ -115,7 +115,7 @@ public async Task MyGrainMethod()
 
 Some external libraries used by the code might use `ConfigureAwait(false)` internally. Using `ConfigureAwait(false)` is a good and correct practice in .NET [when implementing general-purpose libraries](https://devblogs.microsoft.com/dotnet/configureawait-faq/#when-should-i-use-configureawaitfalse). This isn't a problem in Orleans. As long as the grain code invoking the library method awaits the library call with a regular `await`, the grain code is correct. The result is exactly as desired: the library code runs continuations on the default scheduler (the value returned by `TaskScheduler.Default`, which doesn't guarantee continuations run on a <xref:System.Threading.ThreadPool> thread, as they are often inlined on the previous thread), while the grain code runs on the grain's scheduler.
 
-Another frequently asked question is whether library calls need executing with `Task.Run`—that is, whether library code needs explicit offloading to the `ThreadPool` (e.g., `await Task.Run(() => myLibrary.FooAsync())`). The answer is no. Offloading code to the `ThreadPool` isn't necessary except when library code makes blocking synchronous calls. Usually, any well-written and correct .NET async library (methods returning <xref:System.Threading.Tasks.Task> and named with an `Async` suffix) doesn't make blocking calls. Thus, offloading anything to the `ThreadPool` isn't needed unless the async library is suspected to be buggy or a synchronous blocking library is deliberately used.
+Another frequently asked question is whether library calls need executing with `Task.Run`—that is, whether library code needs explicit offloading to the <xref:System.Threading.ThreadPool> (e.g., `await Task.Run(() => myLibrary.FooAsync())`). The answer is no. Offloading code to the <xref:System.Threading.ThreadPool> isn't necessary except when library code makes blocking synchronous calls. Usually, any well-written and correct .NET async library (methods returning <xref:System.Threading.Tasks.Task> and named with an `Async` suffix) doesn't make blocking calls. Thus, offloading anything to the <xref:System.Threading.ThreadPool> isn't needed unless the async library is suspected to be buggy or a synchronous blocking library is deliberately used.
 
 ## Deadlocks
 
@@ -127,7 +127,7 @@ Since grains execute single-threaded, deadlocking a grain is possible by synchro
 - `Task.WaitAll(...)`
 - `task.GetAwaiter().GetResult()`
 
-Avoid these methods in any high-concurrency service because they can lead to poor performance and instability. They starve the .NET `ThreadPool` by blocking threads that could perform useful work and require the `ThreadPool` to inject additional threads for completion. When executing grain code, these methods can cause the grain to deadlock, so avoid them in grain code as well.
+Avoid these methods in any high-concurrency service because they can lead to poor performance and instability. They starve the .NET <xref:System.Threading.ThreadPool> by blocking threads that could perform useful work and require the <xref:System.Threading.ThreadPool> to inject additional threads for completion. When executing grain code, these methods can cause the grain to deadlock, so avoid them in grain code as well.
 
 If some *sync-over-async* work is unavoidable, moving that work to a separate scheduler is best. The simplest way is using `await Task.Run(() => task.Wait())`, for example. Note that avoiding *sync-over-async* work is strongly recommended, as it harms application scalability and performance.
 

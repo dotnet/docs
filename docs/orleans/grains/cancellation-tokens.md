@@ -449,7 +449,7 @@ public async IAsyncEnumerable<DataPoint> StreamDataAsync(
 
 ## Legacy: GrainCancellationToken and GrainCancellationTokenSource
 
-Prior to the direct support for `System.Threading.CancellationToken` in grain methods, Orleans provided a specific mechanism using <xref:Orleans.GrainCancellationToken> and `GrainCancellationTokenSource`. **This approach is now considered legacy, and `System.Threading.CancellationToken` is the recommended method for implementing cancellation in Orleans grains.**
+Prior to the direct support for `System.Threading.CancellationToken` in grain methods, Orleans provided a specific mechanism using <xref:Orleans.GrainCancellationToken> and <xref:Orleans.GrainCancellationTokenSource>. **This approach is now considered legacy, and `System.Threading.CancellationToken` is the recommended method for implementing cancellation in Orleans grains.**
 
 The following information is provided for context on older systems or for specific backward compatibility needs. For new development, see the <xref:System.Threading.CancellationToken> usage described earlier in this article.
 
@@ -463,7 +463,7 @@ A <xref:Orleans.GrainCancellationTokenSource> provides a <xref:Orleans.GrainCanc
 
 To use the legacy <xref:Orleans.GrainCancellationToken>:
 
-1. Instantiate a `GrainCancellationTokenSource` object. This object manages and sends cancellation notifications to individual grain cancellation tokens.
+1. Instantiate a <xref:Orleans.GrainCancellationTokenSource> object. This object manages and sends cancellation notifications to individual grain cancellation tokens.
 
     ```csharp
     var tcs = new GrainCancellationTokenSource();
@@ -499,7 +499,7 @@ To use the legacy <xref:Orleans.GrainCancellationToken>:
     await tcs.Cancel();
     ```
 
-1. Call the `GrainCancellationTokenSource.Dispose()` method when finished with the `GrainCancellationTokenSource` object to release its resources.
+1. Call the `GrainCancellationTokenSource.Dispose()` method when finished with the <xref:Orleans.GrainCancellationTokenSource> object to release its resources.
 
     ```csharp
     tcs.Dispose();

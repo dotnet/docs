@@ -65,39 +65,9 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-    :::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="orleans-3-x"
 
-    ```csharp
-    [Reentrant]
-    public class DataService : GrainService, IDataService
-    {
-        readonly IGrainFactory _grainFactory;
-
-        public DataService(
-            IServiceProvider services,
-            IGrainIdentity id,
-            Silo silo,
-            ILoggerFactory loggerFactory,
-            IGrainFactory grainFactory)
-            : base(id, silo, loggerFactory)
-        {
-            _grainFactory = grainFactory;
-        }
-
-        public override Task Init(IServiceProvider serviceProvider) =>
-            base.Init(serviceProvider);
-
-        public override Task Start() => base.Start();
-
-        public override Task Stop() => base.Stop();
-
-        public Task MyMethod()
-        {
-            // TODO: custom logic here.
-            return Task.CompletedTask;
-        }
-    }
-    ```
+    :::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="data_service":::
 
     :::zone-end
 
@@ -156,14 +126,9 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
     :::zone-end
 
-    :::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="orleans-3-x"
 
-    ```csharp
-    (ISiloHostBuilder builder) =>
-        builder.ConfigureServices(
-            services => services.AddGrainService<DataService>()
-                                .AddSingleton<IDataServiceClient, DataServiceClient>());
-    ```
+    :::code language="csharp" source="snippets-v3/grainservices/GrainServices.cs" id="configure_grain_service":::
 
     :::zone-end
 

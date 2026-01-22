@@ -119,7 +119,7 @@ builder.Services.Configure<GrainProfilerOptions>(options =>
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `TraceAlways` | `bool` | `false` | When `true`, profiling data is continuously collected even when the dashboard is not being queried. |
-| `DeactivationTime` | `TimeSpan` | 1 minute | Duration of inactivity after which profiling automatically stops. Only applies when `TraceAlways` is `false`. |
+| `DeactivationTime` | <xref:System.TimeSpan> | 1 minute | Duration of inactivity after which profiling automatically stops. Only applies when `TraceAlways` is `false`. |
 
 ### Excluding grains from profiling
 

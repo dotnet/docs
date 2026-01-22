@@ -35,7 +35,7 @@ Update your NuGet package references from Orleans 7.x to 10.0:
 
 ### Breaking change: `AddGrainCallFilter` replaced with `AddIncomingGrainCallFilter`
 
-The `AddGrainCallFilter` extension method on `IServiceCollection` has been removed. Replace it with `AddIncomingGrainCallFilter` on `ISiloBuilder` or `IClientBuilder`.
+The `AddGrainCallFilter` extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> has been removed. Replace it with `AddIncomingGrainCallFilter` on <xref:Orleans.Hosting.ISiloBuilder> or <xref:Orleans.IClientBuilder>.
 
 ```csharp
 // Orleans 7.x (no longer works)
@@ -225,7 +225,7 @@ If you're upgrading from Orleans 8.x, note these additional changes introduced i
 - **Full CancellationToken support**: Grain methods now fully support CancellationToken parameters
 - **Memory-based activation shedding**: Automatic grain deactivation under memory pressure
 - **Faster membership protocol**: Default failure detection time reduced from 10 minutes to 90 seconds
-- **Default placement changed to ResourceOptimized** (9.2+): The default grain placement strategy changed from `RandomPlacement` to `ResourceOptimizedPlacement`
+- **Default placement changed to ResourceOptimized** (9.2+): The default grain placement strategy changed from <xref:Orleans.Runtime.RandomPlacement> to `ResourceOptimizedPlacement`
 
 If your application relies on random placement, explicitly configure it:
 
@@ -311,14 +311,14 @@ For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#
 
 The <xref:Orleans.ClientBuilder> type is replaced with the <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means an Orleans client can be added to an existing host without creating a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> completes, the client connects automatically. Services added to the `IHostBuilder` start in the order of registration. Calling `UseOrleansClient` before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A>, for example, ensures Orleans starts before ASP.NET Core starts, allowing immediate access to the client from the ASP.NET Core application.
 
-To emulate the previous `ClientBuilder` behavior, create a separate `HostBuilder` and configure it with an Orleans client. An `IHostBuilder` can be configured with either an Orleans client or an Orleans silo. All silos register an instance of <xref:Orleans.IGrainFactory> and <xref:Orleans.IClusterClient> that the application can use, so configuring a client separately is unnecessary and unsupported.
+To emulate the previous <xref:Orleans.ClientBuilder> behavior, create a separate `HostBuilder` and configure it with an Orleans client. An `IHostBuilder` can be configured with either an Orleans client or an Orleans silo. All silos register an instance of <xref:Orleans.IGrainFactory> and <xref:Orleans.IClusterClient> that the application can use, so configuring a client separately is unnecessary and unsupported.
 
 ## `OnActivateAsync` and `OnDeactivateAsync` signature change
 
 Orleans allows grains to execute code during activation and deactivation. Use this capability to perform tasks such as reading state from storage or logging lifecycle messages. In Orleans 7.0, the signature of these lifecycle methods changed:
 
 - <xref:Orleans.Grain.OnActivateAsync> now accepts a <xref:System.Threading.CancellationToken> parameter. When the <xref:System.Threading.CancellationToken> is canceled, abandon the activation process.
-- <xref:Orleans.Grain.OnDeactivateAsync> now accepts a <xref:Orleans.DeactivationReason> parameter and a `CancellationToken` parameter. The `DeactivationReason` indicates why the activation is being deactivated. Use this information for logging and diagnostics purposes. When the `CancellationToken` is canceled, complete the deactivation process promptly. Note that since any host can fail at any time, relying on `OnDeactivateAsync` to perform important actions, such as persisting critical state, isn't recommended.
+- <xref:Orleans.Grain.OnDeactivateAsync> now accepts a <xref:Orleans.DeactivationReason> parameter and a <xref:System.Threading.CancellationToken> parameter. The `DeactivationReason` indicates why the activation is being deactivated. Use this information for logging and diagnostics purposes. When the <xref:System.Threading.CancellationToken> is canceled, complete the deactivation process promptly. Note that since any host can fail at any time, relying on `OnDeactivateAsync` to perform important actions, such as persisting critical state, isn't recommended.
 
 Consider the following example of a grain overriding these new methods:
 
@@ -346,7 +346,7 @@ public sealed class PingGrain : Grain, IPingGrain
 }
 ```
 
-## POCO grains and `IGrainBase`
+## POCO grains and <xref:Orleans.IGrainBase>
 
 Grains in Orleans no longer need to inherit from the <xref:Orleans.Grain> base class or any other class. This functionality is referred to as [POCO](../standard/glossary.md#poco) grains. To access extension methods such as any of the following:
 
@@ -360,7 +360,7 @@ Grains in Orleans no longer need to inherit from the <xref:Orleans.Grain> base c
 - <xref:Orleans.GrainReminderExtensions.UnregisterReminder%2A>
 - <xref:Orleans.GrainStreamingExtensions.GetStreamProvider%2A>
 
-The grain must either implement <xref:Orleans.IGrainBase> or inherit from <xref:Orleans.Grain>. Here's an example of implementing `IGrainBase` on a grain class:
+The grain must either implement <xref:Orleans.IGrainBase> or inherit from <xref:Orleans.Grain>. Here's an example of implementing <xref:Orleans.IGrainBase> on a grain class:
 
 ```csharp
 public sealed class PingGrain : IGrainBase, IPingGrain
@@ -373,7 +373,7 @@ public sealed class PingGrain : IGrainBase, IPingGrain
 }
 ```
 
-`IGrainBase` also defines `OnActivateAsync` and `OnDeactivateAsync` with default implementations, allowing the grain to participate in its lifecycle if desired:
+<xref:Orleans.IGrainBase> also defines `OnActivateAsync` and `OnDeactivateAsync` with default implementations, allowing the grain to participate in its lifecycle if desired:
 
 ```csharp
 public sealed class PingGrain : IGrainBase, IPingGrain
@@ -416,7 +416,7 @@ For more information, see the following articles as it relates to Orleans 7.0:
 
 ## Grain identities
 
-Grains each have a unique identity comprised of the grain's type and its key. Previous Orleans versions used a compound type for `GrainId`s to support grain keys of either:
+Grains each have a unique identity comprised of the grain's type and its key. Previous Orleans versions used a compound type for <xref:Orleans.Runtime.GrainId>s to support grain keys of either:
 
 - <xref:System.Guid>
 - [`long`](xref:System.Int64)
@@ -593,7 +593,7 @@ The [BankAccount](https://github.com/dotnet/samples/tree/main/orleans/BankAccoun
 
 Grains are single-threaded and process requests one by one from beginning to completion by default. In other words, grains are not reentrant by default. Adding the <xref:Orleans.Concurrency.ReentrantAttribute> to a grain class allows the grain to process multiple requests concurrently in an interleaving fashion while still being single-threaded. This capability can be useful for grains holding no internal state or performing many asynchronous operations, such as issuing HTTP calls or writing to a database. Extra care is needed when requests can interleave: it's possible that a grain's state observed before an `await` statement changes by the time the asynchronous operation completes and the method resumes execution.
 
-For example, the following grain represents a counter. It's marked `Reentrant`, allowing multiple calls to interleave. The `Increment()` method should increment the internal counter and return the observed value. However, because the `Increment()` method body observes the grain's state before an `await` point and updates it afterward, multiple interleaving executions of `Increment()` can result in a `_value` less than the total number of `Increment()` calls received. This is an error introduced by improper use of reentrancy.
+For example, the following grain represents a counter. It's marked <xref:Orleans.Concurrency.ReentrantAttribute>, allowing multiple calls to interleave. The `Increment()` method should increment the internal counter and return the observed value. However, because the `Increment()` method body observes the grain's state before an `await` point and updates it afterward, multiple interleaving executions of `Increment()` can result in a `_value` less than the total number of `Increment()` calls received. This is an error introduced by improper use of reentrancy.
 
 Removing the <xref:Orleans.Concurrency.ReentrantAttribute> is enough to fix this problem.
 
@@ -621,7 +621,7 @@ To prevent such errors, grains are non-reentrant by default. The downside is red
 
 - For an entire class: Placing the <xref:Orleans.Concurrency.ReentrantAttribute> on the grain allows any request to the grain to interleave with any other request.
 - For a subset of methods: Placing the <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> on the grain *interface* method allows requests to that method to interleave with any other request and allows any other request to interleave requests to that method.
-- For a subset of methods: Placing the <xref:Orleans.Concurrency.ReadOnlyAttribute> on the grain *interface* method allows requests to that method to interleave with any other `ReadOnly` request and allows any other `ReadOnly` request to interleave requests to that method. In this sense, it's a more restricted form of `AlwaysInterleave`.
+- For a subset of methods: Placing the <xref:Orleans.Concurrency.ReadOnlyAttribute> on the grain *interface* method allows requests to that method to interleave with any other <xref:Orleans.Concurrency.ReadOnlyAttribute> request and allows any other <xref:Orleans.Concurrency.ReadOnlyAttribute> request to interleave requests to that method. In this sense, it's a more restricted form of <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
 - For any request within a call chain: <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy?displayProperty=nameWithType> and <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy?displayProperty=nameWithType> allow opting in and out of allowing downstream requests to reenter the grain. Both calls return a value that _must_ be disposed of when exiting the request. Therefore, use them as follows:
 
 ``` csharp

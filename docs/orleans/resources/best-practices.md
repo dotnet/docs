@@ -61,9 +61,9 @@ Orleans is not the best fit when:
 - Common Scenarios:
   - Return a concrete value:
   - `return Task.FromResult(value);`
-  - Return a `Task` of the same type:
+  - Return a <xref:System.Threading.Tasks.Task> of the same type:
   - `return foo.Bar();`
-  - `await` a `Task` and continue execution:
+  - `await` a <xref:System.Threading.Tasks.Task> and continue execution:
 
     ```csharp
     var x = await bar.Foo();

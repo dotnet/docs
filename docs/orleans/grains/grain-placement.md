@@ -1,7 +1,7 @@
 ---
 title: Grain placement
 description: Learn about grain placement in .NET Orleans.
-ms.date: 01/20/2026
+ms.date: 01/22/2026
 ms.topic: article
 zone_pivot_groups: orleans-version
 ---
@@ -363,5 +363,102 @@ Activation repartitioning was introduced as an experimental feature in Orleans 8
 :::zone target="docs" pivot="orleans-7-0,orleans-3-x"
 
 Activation repartitioning is available in Orleans 8.2 and later.
+
+:::zone-end
+
+## Activation rebalancing
+
+:::zone target="docs" pivot="orleans-10-0"
+
+Activation rebalancing is a cluster-wide feature that automatically redistributes grain activations across silos to optimize both **memory usage** and **activation count** balance. Unlike activation repartitioning (which optimizes for communication locality), the rebalancer focuses on keeping silos evenly loaded in terms of resource consumption.
+
+> [!WARNING]
+> Activation rebalancing is an experimental feature. Use the `#pragma warning disable ORLEANSEXP002` directive or add `<NoWarn>ORLEANSEXP002</NoWarn>` to your project file to suppress the experimental warning.
+
+### How it works
+
+The activation rebalancer runs as a singleton grain that coordinates rebalancing across the cluster:
+
+1. **Statistics collection**: Each silo periodically publishes its memory usage and activation count to the rebalancer.
+2. **Entropy calculation**: The rebalancer calculates the current "entropy" of the cluster—a measure of how evenly distributed resources are. Maximum entropy means perfect balance.
+3. **Migration decisions**: When entropy is below the target, the rebalancer identifies "heavy" silos (high memory/activation count) and "light" silos, then instructs heavy silos to migrate activations to light silos.
+4. **Session-based execution**: Rebalancing runs in sessions with multiple cycles. A session ends when the cluster reaches acceptable balance or when no further improvement is detected.
+
+The algorithm considers both memory consumption and activation counts, using the harmonic mean of memory usage to compute ideal activation distribution. This means silos with less available memory receive fewer activations.
+
+### Enable activation rebalancing
+
+Enable activation rebalancing using the `AddActivationRebalancer` extension method:
+
+```csharp
+#pragma warning disable ORLEANSEXP002
+siloBuilder.AddActivationRebalancer();
+#pragma warning restore ORLEANSEXP002
+```
+
+### Configuration options
+
+Configure the rebalancer using <xref:Orleans.Configuration.ActivationRebalancerOptions>:
+
+```csharp
+#pragma warning disable ORLEANSEXP002
+siloBuilder.AddActivationRebalancer();
+siloBuilder.Configure<ActivationRebalancerOptions>(options =>
+{
+    options.RebalancerDueTime = TimeSpan.FromSeconds(60);
+    options.SessionCyclePeriod = TimeSpan.FromSeconds(15);
+    options.MaxStagnantCycles = 3;
+});
+#pragma warning restore ORLEANSEXP002
+```
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `RebalancerDueTime` | `TimeSpan` | 60 seconds | Initial delay before the first rebalancing session starts after the cluster stabilizes. |
+| `SessionCyclePeriod` | `TimeSpan` | 15 seconds | Time between rebalancing cycles within a session. Must be at least twice the statistics publishing interval. |
+| `MaxStagnantCycles` | `int` | 3 | Maximum consecutive cycles without improvement before a session ends. |
+| `EntropyQuantum` | `double` | 0.0001 | Minimum entropy change considered an improvement. Smaller values make the rebalancer more sensitive. |
+| `AllowedEntropyDeviation` | `double` | 0.0001 | Base threshold for acceptable deviation from maximum entropy. When deviation is below this threshold, the cluster is considered balanced. |
+| `ScaleAllowedEntropyDeviation` | `bool` | `true` | Whether to dynamically scale the allowed deviation based on cluster size and activation count. |
+| `CycleNumberWeight` | `double` | 0.1 | Weight factor for cycle number in migration rate calculation. Higher values accelerate migration in later cycles. |
+| `SiloNumberWeight` | `double` | 0.1 | Weight factor for silo count in migration rate calculation. Higher values migrate more activations in larger clusters. |
+| `ActivationMigrationCountLimit` | `int` | int.MaxValue | Maximum number of activations to migrate in a single cycle. Use to throttle migration rate. |
+
+### Requirements
+
+- **Minimum cluster size**: Requires at least 2 silos to function.
+- **Memory statistics**: Each silo must report valid (non-zero) memory usage. If any silo reports zero memory, rebalancing cycles are skipped.
+- **Grain migratability**: Grains marked with `[Immovable]` or `[Immovable(ImmovableKind.Rebalancer)]` are excluded from rebalancing.
+
+### When to use activation rebalancing
+
+Consider enabling activation rebalancing when:
+
+- Your cluster has silos with uneven resource utilization (some silos running hot while others are underutilized)
+- You have long-running grain activations that may accumulate unevenly over time
+- Your workload patterns cause activation imbalances that placement strategies alone can't address
+
+Avoid activation rebalancing when:
+
+- Your cluster is small (2-3 silos) where the overhead may outweigh benefits
+- Grains have very short lifetimes and deactivate quickly
+- You're already using activation repartitioning and want to avoid conflicting migrations—though the two features can coexist, as the repartitioner adjusts its behavior based on rebalancer reports
+
+### Comparison with activation repartitioning
+
+| Feature | Activation Rebalancing | Activation Repartitioning |
+|---------|------------------------|---------------------------|
+| **Optimizes for** | Memory and activation count balance | Communication locality |
+| **Scope** | Cluster-wide coordination | Pairwise silo coordination |
+| **Experimental ID** | `ORLEANSEXP002` | `ORLEANSEXP001` |
+| **Migration trigger** | Resource imbalance | Communication patterns |
+
+Both features can be enabled simultaneously. The repartitioner automatically adjusts its tolerance based on the cluster imbalance reported by the rebalancer.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0,orleans-3-x"
+
+Activation rebalancing is available in Orleans 10.0 and later.
 
 :::zone-end

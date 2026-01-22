@@ -57,43 +57,7 @@ You can create an empty console application project targeting .NET Framework 4.6
 
 Here's an example of how you can start a local silo:
 
-```csharp
-try
-{
-    var host = await BuildAndStartSiloAsync();
-
-    Console.WriteLine("Press Enter to terminate...");
-    Console.ReadLine();
-
-    await host.StopAsync();
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex);
-}
-
-static async Task<ISiloHost> BuildAndStartSiloAsync()
-{
-    var host = new HostBuilder()
-      .UseOrleans(builder =>
-      {
-          builder.UseLocalhostClustering()
-              .Configure<ClusterOptions>(options =>
-              {
-                  options.ClusterId = "dev";
-                  options.ServiceId = "MyAwesomeService";
-              })
-              .Configure<EndpointOptions>(
-                  options => options.AdvertisedIPAddress = IPAddress.Loopback)
-              .ConfigureLogging(logging => logging.AddConsole());
-      })
-      .Build();
-
-    await host.StartAsync();
-
-    return host;
-}
-```
+:::code language="csharp" source="snippets-v3/local-dev/LocalDevelopment.cs" id="silo_localhost":::
 
 :::zone-end
 
@@ -147,18 +111,6 @@ You can create an empty console application project targeting .NET Framework 4.6
 
 Here's an example of how a client can connect to a local silo:
 
-```csharp
-var client = new ClientBuilder()
-    .UseLocalhostClustering()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "dev";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .ConfigureLogging(logging => logging.AddConsole())
-var client = builder.Build();
-
-await client.Connect();
-```
+:::code language="csharp" source="snippets-v3/local-dev/LocalDevelopment.cs" id="client_localhost":::
 
 :::zone-end

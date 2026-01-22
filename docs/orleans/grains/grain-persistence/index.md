@@ -70,13 +70,13 @@ Different grain types can use different configured storage providers, even if bo
 
 Grain state automatically reads when the grain activates, but grains are responsible for explicitly triggering the write for any changed grain state when necessary.
 
-If a grain wishes to explicitly re-read its latest state from the backing store, it should call the <xref:Orleans.Grain%601.ReadStateAsync%2A> method. This reloads the grain state from the persistent store via the storage provider. The previous in-memory copy of the grain state is overwritten and replaced when the <xref:System.Threading.Tasks.Task> from `ReadStateAsync()` completes.
+If a grain wishes to explicitly re-read its latest state from the backing store, it should call the <xref:Orleans.Grain%601.ReadStateAsync%2A> method. This reloads the grain state from the persistent store via the storage provider. The previous in-memory copy of the grain state is overwritten and replaced when the <xref:System.Threading.Tasks.Task> from <xref:Orleans.Grain%601.ReadStateAsync*> completes.
 
 Access the value of the state using the `State` property. For example, the following method accesses the profile state declared in the code above:
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="read_state_example":::
 
-There's no need to call `ReadStateAsync()` during normal operation; Orleans loads the state automatically during activation. However, you can use `ReadStateAsync()` to refresh state modified externally.
+There's no need to call <xref:Orleans.Grain%601.ReadStateAsync*> during normal operation; Orleans loads the state automatically during activation. However, you can use <xref:Orleans.Grain%601.ReadStateAsync*> to refresh state modified externally.
 
 See the [Failure modes](#failure-modes) section below for details on error-handling mechanisms.
 
@@ -188,9 +188,9 @@ Any attempt to send a message to a grain that failed to load at silo startup due
 
 ### Failure modes for write operations
 
-Failures encountered by the storage provider when writing state data for a particular grain result in an exception thrown by the `WriteStateAsync()` <xref:System.Threading.Tasks.Task>. Usually, this means the grain call exception is thrown back to the client caller, provided the `WriteStateAsync()` <xref:System.Threading.Tasks.Task> is correctly chained into the final return <xref:System.Threading.Tasks.Task> for this grain method. However, in certain advanced scenarios, you can write grain code to specifically handle such write errors, just like handling any other faulted <xref:System.Threading.Tasks.Task>.
+Failures encountered by the storage provider when writing state data for a particular grain result in an exception thrown by the <xref:Orleans.Grain%601.WriteStateAsync*> <xref:System.Threading.Tasks.Task>. Usually, this means the grain call exception is thrown back to the client caller, provided the <xref:Orleans.Grain%601.WriteStateAsync*> <xref:System.Threading.Tasks.Task> is correctly chained into the final return <xref:System.Threading.Tasks.Task> for this grain method. However, in certain advanced scenarios, you can write grain code to specifically handle such write errors, just like handling any other faulted <xref:System.Threading.Tasks.Task>.
 
-Grains executing error-handling or recovery code *must* catch exceptions or faulted `WriteStateAsync()` <xref:System.Threading.Tasks.Task>s and not rethrow them, signifying they have successfully handled the write error.
+Grains executing error-handling or recovery code *must* catch exceptions or faulted <xref:Orleans.Grain%601.WriteStateAsync*> <xref:System.Threading.Tasks.Task>s and not rethrow them, signifying they have successfully handled the write error.
 
 ## Recommendations
 

@@ -109,7 +109,7 @@ app.Run();
 
 [Silos](../overview.md#what-are-silos) are a core building block of Orleans responsible for storing and managing grains. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
-At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
+At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The <xref:Orleans.Hosting.ISiloBuilder> also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
 :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="configuration" :::
 
@@ -123,7 +123,7 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 - <xref:Orleans.IGrainWithGuidCompoundKey>
 - <xref:Orleans.IGrainWithIntegerCompoundKey>
 
-For this quickstart, you use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
+For this quickstart, you use the <xref:Orleans.IGrainWithStringKey>, since strings are a logical choice for working with URL values and short codes.
 
 Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 
@@ -134,7 +134,7 @@ Orleans grains can also use a custom interface to define their methods and prope
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="graininterface":::
 
-1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
+1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the <xref:Orleans.Grain> class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the <xref:Orleans.Runtime.IPersistentState%601> interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="grain":::
 

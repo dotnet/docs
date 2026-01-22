@@ -1,7 +1,7 @@
 ---
 title: Grain directory
 description: Learn about the grain directory in .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 01/22/2026
 ms.topic: article
 ms.custom: sfi-ropc-nochange
 zone_pivot_groups: orleans-version
@@ -17,7 +17,8 @@ Orleans provides several grain directory implementations:
 
 | Directory | Package | Description |
 |-----------|---------|-------------|
-| **Distributed In-Memory** (default) | Built-in | Eventually consistent, partitioned across silos using a distributed hash table. Uses strong consistency with versioned range locks. |
+| **Distributed In-Cluster** (default) | Built-in | Eventually consistent, partitioned across silos using a distributed hash table. Allows occasional duplicate activations during cluster instability. |
+| **Strongly-Consistent In-Cluster** | Built-in | Strongly consistent distributed hash table with versioned range locks. Prevents duplicate activations but requires more coordination. |
 | **ADO.NET** | `Microsoft.Orleans.GrainDirectory.AdoNet` | Database-backed directory supporting SQL Server, PostgreSQL, MySQL, and Oracle. |
 | **Azure Table Storage** | `Microsoft.Orleans.GrainDirectory.AzureStorage` | Azure Table-backed directory for persistent grain locations. |
 | **Redis** | `Microsoft.Orleans.GrainDirectory.Redis` | Redis-backed directory for high-performance persistent lookups. |
@@ -26,7 +27,7 @@ Orleans provides several grain directory implementations:
 
 :::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
 
-By default, Orleans uses a built-in distributed in-memory directory. This directory is eventually consistent and partitioned across all silos in the cluster in the form of a distributed hash table.
+By default, Orleans uses a built-in distributed in-cluster directory. This directory is eventually consistent and partitioned across all silos in the cluster in the form of a distributed hash table.
 
 Starting with version 3.2.0, Orleans also supports pluggable grain directory implementations.
 
@@ -41,15 +42,15 @@ You can configure which grain directory implementation to use on a per-grain typ
 
 ## Which grain directory should you use?
 
-We recommend always starting with the default directory (the built-in in-memory distributed directory). Although it's eventually consistent and allows occasional duplicate activations when the cluster is unstable, the built-in directory is self-sufficient, has no external dependencies, requires no configuration, and has been used successfully in production since the beginning.
+We recommend always starting with the default directory (the built-in distributed in-cluster directory). Although it's eventually consistent and allows occasional duplicate activations when the cluster is unstable, the built-in directory is self-sufficient, has no external dependencies, requires no configuration, and has been used successfully in production since the beginning.
 
 When you have some experience with Orleans and have a use case requiring a stronger single-activation guarantee, or if you want to minimize the number of grains deactivated when a silo shuts down, consider using a storage-based grain directory implementation, such as the Redis implementation. Try using it for one or a few grain types first, starting with those that are long-lived, have significant state, or have an expensive initialization process.
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
-## Strong-consistency distributed directory
+## Strongly-consistent in-cluster directory
 
-Orleans provides a strongly-consistent grain directory using a distributed hash table with virtual nodes (similar to Amazon Dynamo and Apache Cassandra). This provides strong consistency guarantees for grain location tracking.
+Orleans also provides a strongly-consistent grain directory using a distributed hash table with virtual nodes (similar to Amazon Dynamo and Apache Cassandra). Unlike the default eventually-consistent directory, this implementation prevents duplicate grain activations even during cluster instability.
 
 ### Key features
 
@@ -60,7 +61,7 @@ Orleans provides a strongly-consistent grain directory using a distributed hash 
 
 ### Configuration
 
-The distributed directory is the default in Orleans 9.0 and later. You can also explicitly add it:
+To use the strongly-consistent directory, explicitly add it using `AddDistributedGrainDirectory`:
 
 ```csharp
 // Use as the default grain directory
@@ -72,11 +73,12 @@ builder.AddDistributedGrainDirectory("MyDistributedDirectory");
 
 ### When to use
 
-The built-in distributed directory is recommended for most scenarios. Consider external storage-backed directories (Redis, Azure Table, ADO.NET) when:
+Use the strongly-consistent directory when you need to prevent duplicate grain activations during cluster membership changes. The default eventually-consistent directory is suitable for most scenarios where occasional duplicate activations are acceptable.
+
+Consider external storage-backed directories (Redis, Azure Table, ADO.NET) when:
 
 - You need grain registrations to persist across full cluster restarts
 - You have very large clusters where memory usage is a concern
-- You require stronger consistency guarantees than the distributed directory provides
 
 ## ADO.NET grain directory
 
@@ -136,7 +138,7 @@ Before using the ADO.NET grain directory, you must create the required database 
 
 ## Configuration
 
-By default, you don't need to do anything; Orleans automatically uses the in-memory grain directory and partitions it across the cluster. If you want to use a non-default grain directory configuration, you need to specify the name of the directory plugin to use. You can do this via an attribute on the grain class and by configuring the directory plugin with that name using dependency injection during silo configuration.
+By default, you don't need to do anything; Orleans automatically uses the in-cluster grain directory and partitions it across the cluster. If you want to use a non-default grain directory configuration, you need to specify the name of the directory plugin to use. You can do this via an attribute on the grain class and by configuring the directory plugin with that name using dependency injection during silo configuration.
 
 ### Grain configuration
 

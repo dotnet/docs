@@ -1,7 +1,7 @@
 ---
 title: Cluster management in Orleans
 description: Learn about cluster management in .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 01/22/2026
 ms.topic: article
 zone_pivot_groups: orleans-version
 ---
@@ -22,7 +22,7 @@ The membership protocol uses the following default configuration:
 - Probes are sent every 10 seconds
 - 3 missed probes trigger a suspicion
 
-With these defaults, typical failure detection time is approximately 15 seconds. In disaster recovery scenarios where silos crash without proper cleanup, the cluster uses the `IAmAlive` timestamp (updated every 30 seconds by default) to recover; silos that haven't updated their timestamp for several periods are ignored during startup connectivity checks.
+With these defaults, typical failure detection time is approximately 15 seconds. In disaster recovery scenarios where silos crash without proper cleanup, the cluster uses the `IAmAlive` timestamp (updated every 30 seconds by default) to recover; silos that haven't updated their timestamp for several periods are ignored during startup connectivity checks. By skipping these unresponsive silos, new silos can start up and quickly clear the cluster of defunct silos by declaring them dead.
 
 ### Configuration
 
@@ -53,7 +53,6 @@ siloBuilder.Configure<ClusterMembershipOptions>(options =>
 In most cases, the default settings are appropriate. However, you might consider adjustments in these scenarios:
 
 - **High-latency networks**: Increase `ProbeTimeout` if your silos are distributed across regions with high network latency.
-- **Resource-constrained environments**: Reduce `NumProbedSilos` if monitoring 10 silos creates too much overhead.
 - **Critical availability requirements**: Decrease `DeathVoteExpirationTimeout` for faster failure detection, but be cautious of false positives.
 
 :::zone-end

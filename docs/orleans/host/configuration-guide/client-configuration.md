@@ -100,22 +100,7 @@ await host.StartAsync();
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-using Orleans.Hosting;
-
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "my-first-cluster";
-        options.ServiceId = "MyOrleansService";
-    })
-    .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(
-            typeof(IValueGrain).Assembly))
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="full_client_config":::
 
 :::zone-end
 
@@ -166,10 +151,7 @@ clientBuilder.UseAzureStorageClustering(options =>
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-.UseAzureStorageClustering(
-    options => options.ConnectionString = connectionString)
-```
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="azure_clustering":::
 
 :::zone-end
 
@@ -181,12 +163,7 @@ For more information, see [Server configuration](server-configuration.md).
 
 ## Application parts
 
-```csharp
-.ConfigureApplicationParts(
-    parts => parts.AddApplicationPart(
-        typeof(IValueGrain).Assembly))
-        .WithReferences())
-```
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="application_parts":::
 
 For more information, see [Server configuration](server-configuration.md).
 

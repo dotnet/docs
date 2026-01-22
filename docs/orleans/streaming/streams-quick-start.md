@@ -35,11 +35,11 @@ client.AddMemoryStreams("StreamProvider");
 
 In this guide, use a simple message-based stream that uses grain messaging to send stream data to subscribers. Use the in-memory storage provider to store lists of subscriptions; this isn't a wise choice for real production applications.
 
-On the silo, where `hostBuilder` is an `ISiloHostBuilder`, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
+On the silo, where `hostBuilder` is an <xref:Orleans.Hosting.ISiloHostBuilder>, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
 :::code language="csharp" source="snippets-v3/streams-quickstart/StreamConfiguration.cs" id="silo_sms_provider":::
 
-On the cluster client, where `clientBuilder` is an `IClientBuilder`, call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
+On the cluster client, where `clientBuilder` is an <xref:Orleans.IClientBuilder>, call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
 
 :::code language="csharp" source="snippets-v3/streams-quickstart/StreamConfiguration.cs" id="client_sms_provider":::
 
@@ -103,7 +103,7 @@ For your case, define a `ReceiverGrain` like this:
 public class ReceiverGrain : Grain, IRandomReceiver
 ```
 
-Whenever data is pushed to streams in the `RANDOMDATA` namespace (as in the timer example), a grain of type `ReceiverGrain` with the same `Guid` as the stream receives the message. Even if no activations of the grain currently exist, the runtime automatically creates a new one and sends the message to it.
+Whenever data is pushed to streams in the `RANDOMDATA` namespace (as in the timer example), a grain of type `ReceiverGrain` with the same <xref:System.Guid> as the stream receives the message. Even if no activations of the grain currently exist, the runtime automatically creates a new one and sends the message to it.
 
 For this to work, complete the subscription process by setting the `OnNextAsync` method for receiving data. To do so, the `ReceiverGrain` should call something like this in its `OnActivateAsync`:
 

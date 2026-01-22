@@ -4,8 +4,12 @@ using Orleans.Storage;
 
 namespace Orleans.Docs.Snippets.Serialization;
 
-// Define a placeholder interface for the custom serializer example
-public interface IMySerializer : IGrainStorageSerializer { }
+// Define a placeholder class for the custom serializer example
+public class MyCustomSerializer : IGrainStorageSerializer
+{
+    public BinaryData Serialize<T>(T value) => throw new NotImplementedException();
+    public T Deserialize<T>(BinaryData data) => throw new NotImplementedException();
+}
 
 public static class GrainStorageConfiguration
 {
@@ -16,7 +20,7 @@ public static class GrainStorageConfiguration
             "MyGrainStorage",
             (OptionsBuilder<AzureBlobStorageOptions> optionsBuilder) =>
             {
-                optionsBuilder.Configure<IMySerializer>(
+                optionsBuilder.Configure<MyCustomSerializer>(
                     (options, serializer) => options.GrainStorageSerializer = serializer);
             });
     }

@@ -157,79 +157,11 @@ Now you can decorate your grains with the provider `[StorageProvider(ProviderNam
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-using System;
-using System.Threading.Tasks;
-using Orleans;
-using Orleans.Storage;
-using Orleans.Runtime;
-
-namespace GrainStorage;
-
-public class FileGrainStorage
-    : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>
-{
-    private readonly string _storageName;
-    private readonly FileGrainStorageOptions _options;
-    private readonly ClusterOptions _clusterOptions;
-    private readonly IGrainFactory _grainFactory;
-    private readonly ITypeResolver _typeResolver;
-    private JsonSerializerSettings _jsonSettings;
-
-    public FileGrainStorage(
-        string storageName,
-        FileGrainStorageOptions options,
-        IOptions<ClusterOptions> clusterOptions,
-        IGrainFactory grainFactory,
-        ITypeResolver typeResolver)
-    {
-        _storageName = storageName;
-        _options = options;
-        _clusterOptions = clusterOptions.Value;
-        _grainFactory = grainFactory;
-        _typeResolver = typeResolver;
-    }
-
-    public Task ClearStateAsync(
-        string grainType,
-        GrainReference grainReference,
-        IGrainState grainState)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task ReadStateAsync(
-        string grainType,
-        GrainReference grainReference,
-        IGrainState grainState)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task WriteStateAsync(
-        string grainType,
-        GrainReference grainReference,
-        IGrainState grainState)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Participate(
-        ISiloLifecycle lifecycle)
-    {
-        throw new NotImplementedException();
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="file_grain_storage":::
 
 Before starting the implementation, create an options class containing the root directory where grain state files are stored. Create an options file named `FileGrainStorageOptions`:
 
-```csharp
-public class FileGrainStorageOptions
-{
-    public string RootDirectory { get; set; }
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorageOptions.cs" id="file_grain_storage_options":::
 
 Create a constructor containing two fields: `storageName` to specify which grains should use this storage (`[StorageProvider(ProviderName = "File")]`) and `directory`, the directory where grain states are saved.
 
@@ -246,77 +178,21 @@ You also need `JsonSerializerSettings` as you are serializing and deserializing 
 
 To initialize the storage, register an `Init` function on the `ApplicationServices` lifecycle.
 
-```csharp
-public void Participate(ISiloLifecycle lifecycle)
-{
-    lifecycle.Subscribe(
-        OptionFormattingUtilities.Name<FileGrainStorage>(_storageName),
-        ServiceLifecycleStage.ApplicationServices,
-        Init);
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="participate":::
 
 The `Init` function sets the `_jsonSettings` used to configure the JSON serializer. At the same time, create the folder to store grain states if it doesn't exist yet.
 
-```csharp
-private Task Init(CancellationToken ct)
-{
-    // Settings could be made configurable from Options.
-    _jsonSettings =
-        OrleansJsonSerializer.UpdateSerializerSettings(
-            OrleansJsonSerializer.GetDefaultSerializerSettings(
-                _typeResolver,
-                _grainFactory),
-            false,
-            false,
-            null);
-
-    var directory = new System.IO.DirectoryInfo(_rootDirectory);
-    if (!directory.Exists)
-        directory.Create();
-
-    return Task.CompletedTask;
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="init":::
 
 Also, provide a common function to construct the filename, ensuring uniqueness per service, grain ID, and grain type.
 
-```csharp
-private string GetKeyString(string grainType, GrainReference grainReference)
-{
-    return $"{_clusterOptions.ServiceId}.{grainReference.ToKeyString()}.{grainType}";
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="getkeystring":::
 
 ## Read state
 
 To read a grain state, get the filename using the previously defined function and combine it with the root directory from the options.
 
-```csharp
-public async Task ReadStateAsync(
-    string grainType,
-    GrainReference grainReference,
-    IGrainState grainState)
-{
-    var fName = GetKeyString(grainType, grainReference);
-    var path = Path.Combine(_options.RootDirectory, fName);
-
-    var fileInfo = new FileInfo(path);
-    if (!fileInfo.Exists)
-    {
-        grainState.State = Activator.CreateInstance(grainState.State.GetType());
-        return;
-    }
-
-    using (var stream = fileInfo.OpenText())
-    {
-        var storedData = await stream.ReadToEndAsync();
-        grainState.State = JsonConvert.DeserializeObject(storedData, _jsonSettings);
-    }
-
-    grainState.ETag = fileInfo.LastWriteTimeUtc.ToString();
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="readstateasync":::
 
 Use `fileInfo.LastWriteTimeUtc` as an ETag, which other functions use for inconsistency checks to prevent data loss.
 
@@ -326,36 +202,7 @@ Note that for deserialization, use the `_jsonSettings` set in the `Init` functio
 
 Writing the state is similar to reading the state.
 
-```csharp
-public async Task WriteStateAsync(
-    string grainType,
-    GrainReference grainReference,
-    IGrainState grainState)
-{
-    var storedData = JsonConvert.SerializeObject(grainState.State, _jsonSettings);
-
-    var fName = GetKeyString(grainType, grainReference);
-    var path = Path.Combine(_options.RootDirectory, fName);
-
-    var fileInfo = new FileInfo(path);
-
-    if (fileInfo.Exists && fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
-    {
-        throw new InconsistentStateException(
-            $"Version conflict (WriteState): ServiceId={_clusterOptions.ServiceId} " +
-            $"ProviderName={_storageName} GrainType={grainType} " +
-            $"GrainReference={grainReference.ToKeyString()}.");
-    }
-
-    using (var stream = new StreamWriter(fileInfo.Open(FileMode.Create, FileAccess.Write)))
-    {
-        await stream.WriteAsync(storedData);
-    }
-
-    fileInfo.Refresh();
-    grainState.ETag = fileInfo.LastWriteTimeUtc.ToString();
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="writestateasync":::
 
 Similar to reading state, use `_jsonSettings` to write the state. The current ETag checks against the file's last updated UTC time. If the date differs, it means another activation of the same grain changed the state concurrently. In this situation, throw an `InconsistentStateException`, which results in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
 
@@ -363,34 +210,7 @@ Similar to reading state, use `_jsonSettings` to write the state. The current ET
 
 Clearing the state involves deleting the file if it exists.
 
-```csharp
-public Task ClearStateAsync(
-    string grainType,
-    GrainReference grainReference,
-    IGrainState grainState)
-{
-    var fName = GetKeyString(grainType, grainReference);
-    var path = Path.Combine(_options.RootDirectory, fName);
-
-    var fileInfo = new FileInfo(path);
-    if (fileInfo.Exists)
-    {
-        if (fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
-        {
-            throw new InconsistentStateException(
-                $"Version conflict (ClearState): ServiceId={_clusterOptions.ServiceId} " +
-                $"ProviderName={_storageName} GrainType={grainType} " +
-                $"GrainReference={grainReference.ToKeyString()}.");
-        }
-
-        grainState.ETag = null;
-        grainState.State = Activator.CreateInstance(grainState.State.GetType());
-        fileInfo.Delete();
-    }
-
-    return Task.CompletedTask;
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="clearstateasync":::
 
 For the same reason as `WriteStateAsync`, check for inconsistency. Before deleting the file and resetting the ETag, check if the current ETag matches the last write time UTC.
 
@@ -398,73 +218,15 @@ For the same reason as `WriteStateAsync`, check for inconsistency. Before deleti
 
 Next, create a factory that allows scoping the options to the provider name while creating an instance of `FileGrainStorage` to ease registration with the service collection.
 
-```csharp
-public static class FileGrainStorageFactory
-{
-    internal static IGrainStorage Create(
-        IServiceProvider services, string name)
-    {
-        IOptionsSnapshot<FileGrainStorageOptions> optionsSnapshot =
-            services.GetRequiredService<IOptionsSnapshot<FileGrainStorageOptions>>();
-
-        return ActivatorUtilities.CreateInstance<FileGrainStorage>(
-            services,
-            name,
-            optionsSnapshot.Get(name),
-            services.GetProviderClusterOptions(name));
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorageFactory.cs" id="file_grain_storage_factory":::
 
 Lastly, to register the grain storage, create an extension on `ISiloHostBuilder`. This extension internally registers the grain storage as a named service using `.AddSingletonNamedService(...)`, an extension provided by `Orleans.Core`.
 
-```csharp
-public static class FileSiloBuilderExtensions
-{
-    public static ISiloHostBuilder AddFileGrainStorage(
-        this ISiloHostBuilder builder,
-        string providerName,
-        Action<FileGrainStorageOptions> options)
-    {
-        return builder.ConfigureServices(
-            services => services.AddFileGrainStorage(providerName, options));
-    }
+:::code language="csharp" source="snippets-v3/custom-storage/FileSiloBuilderExtensions.cs" id="file_silo_builder_extensions":::
 
-    public static IServiceCollection AddFileGrainStorage(
-        this IServiceCollection services,
-        string providerName,
-        Action<FileGrainStorageOptions> options)
-    {
-        services.AddOptions<FileGrainStorageOptions>(providerName).Configure(options);
+The `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface. This enables adding the file storage using the extension on `ISiloHostBuilder`:
 
-        return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
-            .AddSingletonNamedService(
-                providerName,
-                (s, n) => (ILifecycleParticipant<ISiloLifecycle>)s.GetRequiredServiceByName<IGrainStorage>(n));
-    }
-}
-```
-
-The `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface:
-
-```csharp
-return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
-    .AddSingletonNamedService(
-        providerName,
-        (s, n) => (ILifecycleParticipant<ISiloLifecycle>)s.GetRequiredServiceByName<IGrainStorage>(n));
-```
-
-This enables adding the file storage using the extension on `ISiloHostBuilder`:
-
-```csharp
-var silo = new SiloHostBuilder()
-    .UseLocalhostClustering()
-    .AddFileGrainStorage("File", opts =>
-    {
-        opts.RootDirectory = "C:/TestFiles";
-    })
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/custom-storage/Program.cs" id="silo_host_builder":::
 
 Now you can decorate your grains with the provider `[StorageProvider(ProviderName = "File")]`, and it stores the grain state in the root directory set in the options.
 

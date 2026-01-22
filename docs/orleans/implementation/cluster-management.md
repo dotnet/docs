@@ -316,7 +316,7 @@ The <xref:Orleans.Clustering.Cassandra.Hosting.CassandraClusteringOptions> class
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
 | `UseCassandraTtl` | `bool` | `false` | When `true`, configures time-to-live for membership table rows in Cassandra, allowing defunct silo cleanup even if the cluster is no longer running. Uses `DefunctSiloExpiration` from `ClusterMembershipOptions`. |
-| `InitializeRetryMaxDelay` | `TimeSpan` | 20 seconds | The maximum delay between retries when encountering contention during initialization. This is typically needed with large numbers of silos connecting simultaneously to multi-datacenter Cassandra clusters. |
+| `InitializeRetryMaxDelay` | <xref:System.TimeSpan> | 20 seconds | The maximum delay between retries when encountering contention during initialization. This is typically needed with large numbers of silos connecting simultaneously to multi-datacenter Cassandra clusters. |
 
 #### When to use Cassandra clustering
 

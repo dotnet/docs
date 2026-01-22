@@ -1,43 +1,38 @@
 ---
 description: "where clause - C# Reference"
 title: "where clause"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "whereclause_CSharpKeyword"
 helpviewer_keywords: 
   - "where keyword [C#]"
   - "where clause [C#]"
-ms.assetid: 7f9bf952-7744-4f91-b676-cddb55d107c3
 ---
 # where clause (C# Reference)
 
-The `where` clause is used in a query expression to specify which elements from the data source will be returned in the query expression. It applies a Boolean condition (*predicate*) to each source element (referenced by the range variable) and returns those for which the specified condition is true. A single query expression may contain multiple `where` clauses and a single clause may contain multiple predicate subexpressions.
+Use the `where` clause in a query expression to specify which elements from the data source to return. It applies a Boolean condition (*predicate*) to each source element (referenced by the range variable) and returns those elements for which the specified condition is true. A single query expression can contain multiple `where` clauses, and a single clause can contain multiple predicate subexpressions.
 
-## Example 1
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-In the following example, the `where` clause filters out all numbers except those that are less than five. If you remove the `where` clause, all numbers from the data source would be returned. The expression `num < 5` is the predicate that is applied to each element.
+In the following example, the `where` clause filters out all numbers except those that are less than five. If you remove the `where` clause, the query returns all numbers from the data source. The expression `num < 5` is the predicate that the query applies to each element.
 
-[!code-csharp[cscsrefQueryKeywords#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Where.cs#5)]
-
-## Example 2
+:::code language="csharp" source="./snippets/Where.cs" id="5":::
 
 Within a single `where` clause, you can specify as many predicates as necessary by using the [&&](../operators/boolean-logical-operators.md#conditional-logical-and-operator-) and [&#124;&#124;](../operators/boolean-logical-operators.md#conditional-logical-or-operator-) operators. In the following example, the query specifies two predicates in order to select only the even numbers that are less than five.
 
-[!code-csharp[cscsrefQueryKeywords#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Where.cs#6)]  
+:::code language="csharp" source="./snippets/Where.cs" id="6":::
 
-## Example 3
+A `where` clause can contain one or more methods that return Boolean values. In the following example, the `where` clause uses a method to determine whether the current value of the range variable is even or odd.
 
-A `where` clause may contain one or more methods that return Boolean values. In the following example, the `where` clause uses a method to determine whether the current value of the range variable is even or odd.
-
-[!code-csharp[cscsrefQueryKeywords#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Where.cs#7)]
+:::code language="csharp" source="./snippets/Where.cs" id="7":::
 
 ## Remarks
 
-The `where` clause is a filtering mechanism. It can be positioned almost anywhere in a query expression, except it cannot be the first or last clause. A `where` clause may appear either before or after a [group](group-clause.md) clause depending on whether you have to filter the source elements before or after they are grouped.
+The `where` clause is a filtering mechanism. You can position it almost anywhere in a query expression, except it can't be the first or last clause. A `where` clause can appear either before or after a [group](group-clause.md) clause depending on whether you need to filter the source elements before or after they are grouped.
 
-If a specified predicate is not valid for the elements in the data source, a compile-time error will result. This is one benefit of the strong type-checking provided by LINQ.
+If you specify a predicate that's not valid for the elements in the data source, the query results in a compile-time error. This error is one benefit of the strong type-checking that LINQ provides.
 
-At compile time the `where` keyword is converted into a call to the <xref:System.Linq.Enumerable.Where%2A> Standard Query Operator method.
+At compile time, the `where` keyword is converted into a call to the <xref:System.Linq.Enumerable.Where%2A> Standard Query Operator method.
 
 ## See also
 

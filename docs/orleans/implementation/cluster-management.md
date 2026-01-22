@@ -185,7 +185,8 @@ builder.Build().Run();
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);
 
-var storage = builder.AddAzureStorage("storage");
+var storage = builder.AddAzureStorage("storage")
+    .RunAsEmulator();  // Use Azurite for local development
 var tables = storage.AddTables("clustering");
 
 var orleans = builder.AddOrleans("cluster")
@@ -193,7 +194,7 @@ var orleans = builder.AddOrleans("cluster")
 
 builder.AddProject<Projects.MySilo>("silo")
     .WithReference(orleans)
-    .WithReference(tables);
+    .WaitFor(storage);
 
 builder.Build().Run();
 ```
@@ -211,7 +212,7 @@ builder.Build().Run();
 ```
 
 > [!TIP]
-> During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production, configure a real Azure Storage account in your AppHost.
+> To use the Azurite emulator for local development, call `.RunAsEmulator()` on the Azure Storage resource. Without this call, Aspire expects a real Azure Storage connection.
 
 #### Azure Cosmos DB clustering with Aspire
 
@@ -220,7 +221,8 @@ builder.Build().Run();
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);
 
-var cosmos = builder.AddAzureCosmosDB("cosmos");
+var cosmos = builder.AddAzureCosmosDB("cosmos")
+    .RunAsEmulator();  // Use emulator for local development
 var database = cosmos.AddCosmosDatabase("orleans");
 
 var orleans = builder.AddOrleans("cluster")
@@ -228,7 +230,7 @@ var orleans = builder.AddOrleans("cluster")
 
 builder.AddProject<Projects.MySilo>("silo")
     .WithReference(orleans)
-    .WithReference(database);
+    .WaitFor(cosmos);
 
 builder.Build().Run();
 ```

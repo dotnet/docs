@@ -99,8 +99,7 @@ public static class AppHostExamples
 
         builder.AddProject<Projects.Silo>("silo")
             .WithReference(orleans)
-            .WithReference(tables)
-            .WithReference(blobs)
+            .WaitFor(storage)
             .WithReplicas(3);
 
         builder.Build().Run();
@@ -172,7 +171,7 @@ public static class AppHostExamples
 
         builder.AddProject<Projects.Silo>("silo")
             .WithReference(orleans)
-            .WithReference(reminders);
+            .WaitFor(storage);
 
         builder.Build().Run();
     }

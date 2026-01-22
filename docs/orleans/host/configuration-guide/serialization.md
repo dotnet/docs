@@ -130,7 +130,7 @@ You can then use these types in grain interfaces:
 | Object identity | Yes | No | No |
 | Payload size | Small | Smallest | Largest |
 | Cross-platform | .NET only | Any MessagePack client | Any JSON client |
-| Version tolerance | Excellent | Good | Good |
+| Version tolerance | Yes | Yes | Yes |
 | Setup required | None | Explicit attributes | Explicit attributes |
 
 ## Surrogates for serializing foreign types

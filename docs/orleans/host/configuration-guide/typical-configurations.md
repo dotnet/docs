@@ -85,7 +85,8 @@ This configuration uses Azure Table Storage for clustering and Azure Blob Storag
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);
 
-var storage = builder.AddAzureStorage("storage");
+var storage = builder.AddAzureStorage("storage")
+    .RunAsEmulator();  // Use Azurite for local development
 var tables = storage.AddTables("clustering");
 var blobs = storage.AddBlobs("grainstate");
 
@@ -95,8 +96,7 @@ var orleans = builder.AddOrleans("cluster")
 
 builder.AddProject<Projects.MySilo>("silo")
     .WithReference(orleans)
-    .WithReference(tables)
-    .WithReference(blobs)
+    .WaitFor(storage)
     .WithReplicas(3);
 
 builder.Build().Run();
@@ -116,7 +116,7 @@ builder.Build().Run();
 ```
 
 > [!TIP]
-> During local development, Aspire automatically uses the Azurite emulator for Azure Storage. In production deployments, Aspire connects to your real Azure Storage account based on your Azure deployment configuration.
+> To use the Azurite emulator for local development, call `.RunAsEmulator()` on the Azure Storage resource as shown above. Without this call, Aspire expects a real Azure Storage connection. In production deployments, remove `.RunAsEmulator()` and configure your Azure Storage account connection.
 
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureBlobServiceClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.

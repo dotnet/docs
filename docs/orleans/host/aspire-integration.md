@@ -103,6 +103,9 @@ The `Aspire.Hosting.Orleans` package provides these extension methods:
 | `.AsClient()` | Returns a client-only reference to the Orleans resource (doesn't include silo capabilities). |
 | `project.WithReference(orleans)` | Adds the Orleans resource reference to a project, enabling configuration injection. |
 
+> [!NOTE]
+> When you configure a backing resource using `.WithClustering(resource)`, `.WithGrainStorage(name, resource)`, or similar methods, the Orleans resource automatically includes a reference to that backing resource. You don't need to call `.WithReference()` separately for each backing resource—only `.WithReference(orleans)` is required. However, you should use `.WaitFor()` on the backing resource to ensure it's ready before the silo starts.
+
 ### Clustering
 
 | Method | Description |

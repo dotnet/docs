@@ -1,21 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <!-- Additional nullable warnings specific to this project -->
     <NoWarn>$(NoWarn);CS8602;CS8603</NoWarn>
-    <EnableSourceLink>false</EnableSourceLink>
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
     <PackageReference Include="MessagePack" Version="3.1.4" />
   </ItemGroup>
 </Project>

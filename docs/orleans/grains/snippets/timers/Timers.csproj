@@ -1,24 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <EnableSourceLink>false</EnableSourceLink>
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.Redis" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.Cosmos" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.AdoNet" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
-    <PackageReference Include="Azure.Identity" Version="1.13.2" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.Redis" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.Cosmos" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AdoNet" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.17.0" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
   </ItemGroup>
 
 </Project>

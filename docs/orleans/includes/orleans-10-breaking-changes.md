@@ -10,5 +10,5 @@
 | `CancelRequestOnTimeout` default changed | Behavioral | Explicitly set to `true` if needed |
 | ADO.NET provider requires `Microsoft.Data.SqlClient` | Compile/Runtime error | Replace `System.Data.SqlClient` package |
 | `[Unordered]` attribute obsoleted | Warning | Remove attribute (has no effect) |
-| `OrleansConstructorAttribute` obsoleted | Warning | Use `GeneratedActivatorConstructorAttribute` |
+| `OrleansConstructorAttribute` obsoleted | Warning | Use <xref:Orleans.GeneratedActivatorConstructorAttribute> |
 | `RegisterTimer` obsoleted | Warning | Use `RegisterGrainTimer` |

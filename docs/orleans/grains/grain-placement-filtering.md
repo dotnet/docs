@@ -11,7 +11,7 @@ Grain placement filtering in Orleans allows developers additional control over t
 
 This filtering takes place before candidate silos are passed on to the configured placement method allowing for more flexibility and reuse of the filters.
 
-For example, the existing `PreferLocal` placement strategy is hard coded to fall back to `Random` placement if the local silo is unable to host the grain type. But by using filters, a `PreferLocalPlacementFilter` could be implemented to filter down to either the local silo or all compatible silos. Then any placement strategy (`Random`, `ResourceOptimizedPlacement`, `ActivationCount`, etc.) could be configured for that grain type. This allows for any set of filters and any placement strategy to be configured for a grain type.
+For example, the existing `PreferLocal` placement strategy is hard coded to fall back to `Random` placement if the local silo is unable to host the grain type. But by using filters, a `PreferLocalPlacementFilter` could be implemented to filter down to either the local silo or all compatible silos. Then any placement strategy (`Random`, <xref:Orleans.Runtime.ResourceOptimizedPlacement>, `ActivationCount`, etc.) could be configured for that grain type. This allows for any set of filters and any placement strategy to be configured for a grain type.
 
 ## How placement filtering works
 

@@ -36,7 +36,7 @@ A timer stops triggering if the grain deactivates or when a fault occurs and its
 
 ### GrainTimerCreationOptions
 
-The `GrainTimerCreationOptions` structure provides the following properties:
+The <xref:Orleans.Runtime.GrainTimerCreationOptions> structure provides the following properties:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -54,9 +54,9 @@ The `GrainTimerCreationOptions` structure provides the following properties:
 - When activation collection is enabled, executing a timer callback doesn't change the activation's state from idle to in-use by default. Set `KeepAlive = true` if you want timer callbacks to prevent deactivation.
 - The period passed to `Grain.RegisterGrainTimer` is the amount of time passing from the moment the <xref:System.Threading.Tasks.Task> returned by `callback` resolves to the moment the next invocation of `callback` should occur. This not only prevents successive calls to `callback` from overlapping but also means the time `callback` takes to complete affects the frequency at which `callback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
 - Each invocation of `callback` is delivered to an activation on a separate turn and never runs concurrently with other turns on the same activation.
-- Callbacks don't interleave by default. You can enable interleaving by setting `Interleave` to `true` on `GrainTimerCreationOptions`.
+- Callbacks don't interleave by default. You can enable interleaving by setting `Interleave` to `true` on <xref:Orleans.Runtime.GrainTimerCreationOptions>.
 - You can update grain timers using the `Change(TimeSpan, TimeSpan)` method on the returned <xref:Orleans.Runtime.IGrainTimer> instance.
-- Callbacks can keep the grain active, preventing collection if the timer period is relatively short. Enable this by setting `KeepAlive` to `true` on `GrainTimerCreationOptions`.
+- Callbacks can keep the grain active, preventing collection if the timer period is relatively short. Enable this by setting `KeepAlive` to `true` on <xref:Orleans.Runtime.GrainTimerCreationOptions>.
 - Callbacks can receive a <xref:System.Threading.CancellationToken> that is canceled when the timer is disposed or the grain starts to deactivate.
 - Callbacks can dispose of the grain timer that fired them.
 - Callbacks are subject to grain call filters.
@@ -146,7 +146,7 @@ public class MyGrain : Grain, IMyGrain
 :::code language="csharp" source="./snippets/timers/TimerExamples.cs" id="migrate_after":::
 
 > [!WARNING]
-> The default interleaving behavior changed in Orleans 8.2. The old `RegisterTimer` API allowed timer callbacks to interleave with other grain calls by default. The new `RegisterGrainTimer` API does **not** interleave by default. If your grain logic depends on interleaving behavior, set `Interleave = true` in `GrainTimerCreationOptions` to preserve the old behavior.
+> The default interleaving behavior changed in Orleans 8.2. The old `RegisterTimer` API allowed timer callbacks to interleave with other grain calls by default. The new `RegisterGrainTimer` API does **not** interleave by default. If your grain logic depends on interleaving behavior, set `Interleave = true` in <xref:Orleans.Runtime.GrainTimerCreationOptions> to preserve the old behavior.
 
 :::zone-end
 

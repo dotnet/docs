@@ -156,7 +156,7 @@ public interface IMyGrain : IGrainWithStringKey
 
 ### Breaking change: `OrleansConstructorAttribute` obsoleted
 
-The `OrleansConstructorAttribute` has been obsoleted. Use `GeneratedActivatorConstructorAttribute` or `ActivatorUtilitiesConstructorAttribute` instead to specify which constructor the serializer should use.
+The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or `ActivatorUtilitiesConstructorAttribute` instead to specify which constructor the serializer should use.
 
 ```csharp
 // Orleans 7.x
@@ -225,7 +225,7 @@ If you're upgrading from Orleans 8.x, note these additional changes introduced i
 - **Full CancellationToken support**: Grain methods now fully support CancellationToken parameters
 - **Memory-based activation shedding**: Automatic grain deactivation under memory pressure
 - **Faster membership protocol**: Default failure detection time reduced from 10 minutes to 90 seconds
-- **Default placement changed to ResourceOptimized** (9.2+): The default grain placement strategy changed from <xref:Orleans.Runtime.RandomPlacement> to `ResourceOptimizedPlacement`
+- **Default placement changed to ResourceOptimized** (9.2+): The default grain placement strategy changed from <xref:Orleans.Runtime.RandomPlacement> to <xref:Orleans.Runtime.ResourceOptimizedPlacement>
 
 If your application relies on random placement, explicitly configure it:
 

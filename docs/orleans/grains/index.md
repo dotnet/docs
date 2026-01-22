@@ -20,11 +20,11 @@ The following is an excerpt from the Orleans Presence Service sample:
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
 {
-    Task<IGameGrain> GetCurrentGame();
+    Task<IGameGrain> GetCurrentGame(CancellationToken cancellationToken = default);
 
-    Task JoinGame(IGameGrain game);
+    Task JoinGame(IGameGrain game, CancellationToken cancellationToken = default);
 
-    Task LeaveGame(IGameGrain game);
+    Task LeaveGame(IGameGrain game, CancellationToken cancellationToken = default);
 }
 
 public class PlayerGrain : Grain, IPlayerGrain
@@ -32,13 +32,13 @@ public class PlayerGrain : Grain, IPlayerGrain
     private IGameGrain _currentGame;
 
     // Game the player is currently in. May be null.
-    public Task<IGameGrain> GetCurrentGame()
+    public Task<IGameGrain> GetCurrentGame(CancellationToken cancellationToken = default)
     {
        return Task.FromResult(_currentGame);
     }
 
     // Game grain calls this method to notify that the player has joined the game.
-    public Task JoinGame(IGameGrain game)
+    public Task JoinGame(IGameGrain game, CancellationToken cancellationToken = default)
     {
        _currentGame = game;
 
@@ -49,7 +49,7 @@ public class PlayerGrain : Grain, IPlayerGrain
     }
 
    // Game grain calls this method to notify that the player has left the game.
-   public Task LeaveGame(IGameGrain game)
+   public Task LeaveGame(IGameGrain game, CancellationToken cancellationToken = default)
    {
        _currentGame = null;
 
@@ -70,12 +70,12 @@ Extending the previous `PlayerGrain` implementation, the following example shows
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
 {
-    Task<IGameGrain> GetCurrentGame();
+    Task<IGameGrain> GetCurrentGame(CancellationToken cancellationToken = default);
 
-    Task JoinGame(IGameGrain game);
+    Task JoinGame(IGameGrain game, CancellationToken cancellationToken = default);
 
     [ResponseTimeout("00:00:05")] // 5s timeout
-    Task LeaveGame(IGameGrain game);
+    Task LeaveGame(IGameGrain game, CancellationToken cancellationToken = default);
 }
 ```
 
@@ -88,11 +88,11 @@ public interface IDataProcessingGrain : IGrainWithGuidKey
 {
     // 2 minute timeout using hours, minutes, seconds
     [ResponseTimeout(0, 2, 0)]
-    Task<ProcessingResult> ProcessLargeDatasetAsync(Dataset data);
+    Task<ProcessingResult> ProcessLargeDatasetAsync(Dataset data, CancellationToken cancellationToken = default);
     
     // 500ms timeout using TimeSpan.FromMilliseconds equivalent
     [ResponseTimeout("00:00:00.500")]
-    Task<HealthStatus> GetHealthAsync();
+    Task<HealthStatus> GetHealthAsync(CancellationToken cancellationToken = default);
 }
 ```
 
@@ -315,7 +315,7 @@ The Orleans programming model is based on [asynchronous programming](../../cshar
 
 ```csharp
 // Invoking a grain method asynchronously
-Task joinGameTask = player.JoinGame(this);
+Task joinGameTask = player.JoinGame(this, GrainCancellationToken);
 
 // The await keyword effectively makes the remainder of the
 // method execute asynchronously at a later point

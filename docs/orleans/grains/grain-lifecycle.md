@@ -75,7 +75,7 @@ builder.Configure<GrainCollectionOptions>(options =>
 | `MemoryUsageLimitPercentage` | `int` | 80 | Memory usage percentage at which shedding begins. Valid range: 0-100. |
 | `MemoryUsageTargetPercentage` | `int` | 75 | Target memory usage percentage after shedding. Valid range: 0-100. |
 | `MemoryUsagePollingPeriod` | `TimeSpan` | 5 seconds | How often to check memory usage. |
-| `CollectionAge` | `TimeSpan` | 2 hours | Minimum time a grain must be idle before eligible for collection. |
+| `CollectionAge` | `TimeSpan` | 15 minutes | Minimum time a grain must be idle before eligible for collection. |
 | `CollectionQuantum` | `TimeSpan` | 1 minute | How often idle grain collection runs. |
 
 ### Best practices

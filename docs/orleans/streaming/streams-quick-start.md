@@ -37,26 +37,16 @@ In this guide, use a simple message-based stream that uses grain messaging to se
 
 On the silo, where `hostBuilder` is an `ISiloHostBuilder`, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
-```csharp
-hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
-           .AddMemoryGrainStorage("PubSubStore");
-```
+:::code language="csharp" source="snippets-v3/streams-quickstart/StreamConfiguration.cs" id="silo_sms_provider":::
 
 On the cluster client, where `clientBuilder` is an `IClientBuilder`, call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
 
-```csharp
-clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");
-```
+:::code language="csharp" source="snippets-v3/streams-quickstart/StreamConfiguration.cs" id="client_sms_provider":::
 
 > [!NOTE]
 > By default, messages passed over the Simple Message Stream are considered immutable and might be passed by reference to other grains. To turn off this behavior, configure the SMS provider to turn off <xref:Orleans.Configuration.SimpleMessageStreamProviderOptions.OptimizeForImmutableData?displayProperty=nameWithType>.
 
-```csharp
-siloBuilder
-    .AddSimpleMessageStreamProvider(
-        "SMSProvider",
-        options => options.OptimizeForImmutableData = false);
-```
+:::code language="csharp" source="snippets-v3/streams-quickstart/StreamConfiguration.cs" id="silo_sms_provider_immutable":::
 
 :::zone-end
 
@@ -84,14 +74,7 @@ var stream = streamProvider.GetStream<int>(streamId);
 
 It's relatively easy to produce events for streams. First, get access to the stream provider defined in the config previously (`"SMSProvider"`), then choose a stream and push data to it.
 
-```csharp
-// Pick a GUID for a chat room grain and chat room stream
-var guid = new Guid("some guid identifying the chat room");
-// Get one of the providers which we defined in our config
-var streamProvider = GetStreamProvider("SMSProvider");
-// Get the reference to a stream
-var stream = streamProvider.GetStream<int>(guid, "RANDOMDATA");
-```
+:::code language="csharp" source="snippets-v3/streams-quickstart/ProducerGrain.cs" id="produce_events":::
 
 :::zone-end
 
@@ -152,26 +135,7 @@ await stream.SubscribeAsync<int>(
 
 :::zone target="docs" pivot="orleans-3-x"
 
-```csharp
-// Create a GUID based on our GUID as a grain
-var guid = this.GetPrimaryKey();
-
-// Get one of the providers which we defined in config
-var streamProvider = GetStreamProvider("SMSProvider");
-
-// Get the reference to a stream
-var stream = streamProvider.GetStream<int>(guid, "RANDOMDATA");
-
-// Set our OnNext method to the lambda which simply prints the data.
-// This doesn't make new subscriptions, because we are using implicit
-// subscriptions via [ImplicitStreamSubscription].
-await stream.SubscribeAsync<int>(
-    async (data, token) =>
-    {
-        Console.WriteLine(data);
-        await Task.CompletedTask;
-    });
-```
+:::code language="csharp" source="snippets-v3/streams-quickstart/ReceiverGrain.cs" id="subscribe_events":::
 
 :::zone-end
 

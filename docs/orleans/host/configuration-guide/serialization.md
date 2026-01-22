@@ -43,56 +43,17 @@ To support version tolerance, the serializer requires you to be explicit about w
 
 Here is an example of a serializable type in Orleans, demonstrating how to apply the attributes.
 
-```csharp
-[GenerateSerializer]
-public class Employee
-{
-    [Id(0)]
-    public string Name { get; set; }
-}
-```
+:::code language="csharp" source="snippets/serialization/BasicTypes.cs" id="basic_employee_class":::
 
 Orleans supports inheritance and serializes the individual layers in the hierarchy separately, allowing them to have distinct member IDs.
 
-```csharp
-[GenerateSerializer]
-public class Publication
-{
-    [Id(0)]
-    public string Title { get; set; }
-}
-
-[GenerateSerializer]
-public class Book : Publication
-{
-    [Id(0)]
-    public string ISBN { get; set; }
-}
-```
+:::code language="csharp" source="snippets/serialization/BasicTypes.cs" id="inheritance_publication_book":::
 
 In the preceding code, note that both `Publication` and `Book` have members with `[Id(0)]`, even though `Book` derives from `Publication`. This is the recommended practice in Orleans because member identifiers are scoped to the inheritance level, not the type as a whole. You can add and remove members from `Publication` and `Book` independently, but you cannot insert a new base class into the hierarchy once the application is deployed without special consideration.
 
 Orleans also supports serializing types with `internal`, `private`, and `readonly` members, such as in this example type:
 
-```csharp
-[GenerateSerializer]
-public struct MyCustomStruct
-{
-    public MyCustom(int intProperty, int intField)
-    {
-        IntProperty = intProperty;
-        _intField = intField;
-    }
-
-    [Id(0)]
-    public int IntProperty { get; }
-
-    [Id(1)] private readonly int _intField;
-    public int GetIntField() => _intField;
-
-    public override string ToString() => $"{nameof(_intField)}: {_intField}, {nameof(IntProperty)}: {IntProperty}";
-}
-```
+:::code language="csharp" source="snippets/serialization/BasicTypes.cs" id="custom_struct_private_readonly":::
 
 By default, Orleans serializes your type by encoding its full name. You can override this by adding an <xref:Orleans.AliasAttribute?displayProperty=nameWithType>. Doing so results in your type being serialized using a name resilient to renaming the underlying class or moving it between assemblies. Type aliases are globally scoped, and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick; for example, `MyGenericType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
 
@@ -100,15 +61,7 @@ By default, Orleans serializes your type by encoding its full name. You can over
 
 Members defined in a record's primary constructor have implicit IDs by default. In other words, Orleans supports serializing `record` types. This means you cannot change the parameter order for an already deployed type, as that breaks compatibility with previous versions of your application (in a rolling upgrade scenario) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
-```csharp
-[GenerateSerializer]
-public record MyRecord(string A, string B)
-{
-    // ID 0 won't clash with A in primary constructor as they don't share identities
-    [Id(0)]
-    public string C { get; init; }
-}
-```
+:::code language="csharp" source="snippets/serialization/BasicTypes.cs" id="record_primary_constructor":::
 
 If you don't want the primary constructor parameters automatically included as serializable fields, use `[GenerateSerializer(IncludePrimaryConstructorParameters = false)]`.
 
@@ -139,21 +92,7 @@ dotnet add package Microsoft.Orleans.Serialization.MessagePack
 
 To configure MessagePack serialization, use the `AddMessagePackSerializer` extension method:
 
-```csharp
-using Orleans.Serialization;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder
-        .UseLocalhostClustering()
-        .AddSerializer(serializerBuilder => serializerBuilder.AddMessagePackSerializer(
-            isSerializable: type => type.Namespace?.StartsWith("MyApp.Messages") == true,
-            isCopyable: type => false
-        ));
-});
-```
+:::code source="./snippets/serialization/MessagePackExamples.cs" id="messagepack_basic_config":::
 
 The `isSerializable` delegate controls which types are handled by the MessagePack serializer. Types not matching this predicate fall back to the default Orleans serializer.
 
@@ -170,60 +109,17 @@ You can configure the MessagePack serializer using `MessagePackCodecOptions`:
 
 ### Example: Configure with options
 
-```csharp
-using MessagePack;
-using Orleans.Serialization;
-
-builder.UseOrleans(siloBuilder =>
-{
-    siloBuilder
-        .UseLocalhostClustering()
-        .AddSerializer(serializerBuilder => serializerBuilder.AddMessagePackSerializer(
-            isSerializable: type => type.GetCustomAttribute<MessagePackObjectAttribute>() != null,
-            isCopyable: type => false,
-            configureOptions: options => options.Configure(opts =>
-            {
-                opts.SerializerOptions = MessagePackSerializerOptions.Standard
-                    .WithCompression(MessagePackCompression.Lz4BlockArray);
-                opts.AllowDataContractAttributes = true;
-            })
-        ));
-});
-```
+:::code source="./snippets/serialization/MessagePackExamples.cs" id="messagepack_with_options":::
 
 ### Define MessagePack types
 
 Types serialized by MessagePack should use MessagePack attributes:
 
-```csharp
-using MessagePack;
-
-[MessagePackObject]
-public class OrderMessage
-{
-    [Key(0)]
-    public string OrderId { get; set; }
-
-    [Key(1)]
-    public decimal Amount { get; set; }
-
-    [Key(2)]
-    public DateTime CreatedAt { get; set; }
-
-    [Key(3)]
-    public List<string> Items { get; set; }
-}
-```
+:::code source="./snippets/serialization/MessagePackExamples.cs" id="messagepack_type_definition":::
 
 You can then use these types in grain interfaces:
 
-```csharp
-public interface IOrderGrain : IGrainWithStringKey
-{
-    Task<OrderMessage> GetOrder();
-    Task PlaceOrder(OrderMessage order);
-}
-```
+:::code source="./snippets/serialization/MessagePackExamples.cs" id="messagepack_grain_interface":::
 
 ### Serializer comparison
 
@@ -241,56 +137,7 @@ public interface IOrderGrain : IGrainWithStringKey
 
 Sometimes, you might need to pass types between grains over which you don't have full control. In these cases, manually converting to and from a custom-defined type in your application code might be impractical. Orleans offers a solution for these situations: surrogate types. Surrogates are serialized in place of their target type and have functionality to convert to and from the target type. Consider the following example of a foreign type and a corresponding surrogate and converter:
 
-``` csharp
-// This is the foreign type, which you do not have control over.
-public struct MyForeignLibraryValueType
-{
-    public MyForeignLibraryValueType(int num, string str, DateTimeOffset dto)
-    {
-        Num = num;
-        String = str;
-        DateTimeOffset = dto;
-    }
-
-    public int Num { get; }
-    public string String { get; }
-    public DateTimeOffset DateTimeOffset { get; }
-}
-
-// This is the surrogate which will act as a stand-in for the foreign type.
-// Surrogates should use plain fields instead of properties for better performance.
-[GenerateSerializer]
-public struct MyForeignLibraryValueTypeSurrogate
-{
-    [Id(0)]
-    public int Num;
-
-    [Id(1)]
-    public string String;
-
-    [Id(2)]
-    public DateTimeOffset DateTimeOffset;
-}
-
-// This is a converter that converts between the surrogate and the foreign type.
-[RegisterConverter]
-public sealed class MyForeignLibraryValueTypeSurrogateConverter :
-    IConverter<MyForeignLibraryValueType, MyForeignLibraryValueTypeSurrogate>
-{
-    public MyForeignLibraryValueType ConvertFromSurrogate(
-        in MyForeignLibraryValueTypeSurrogate surrogate) =>
-        new(surrogate.Num, surrogate.String, surrogate.DateTimeOffset);
-
-    public MyForeignLibraryValueTypeSurrogate ConvertToSurrogate(
-        in MyForeignLibraryValueType value) =>
-        new()
-        {
-            Num = value.Num,
-            String = value.String,
-            DateTimeOffset = value.DateTimeOffset
-        };
-}
-```
+:::code source="./snippets/serialization/SurrogateExamples.cs" id="surrogate_value_type":::
 
 In the preceding code:
 
@@ -300,83 +147,7 @@ In the preceding code:
 
 Orleans supports serialization of types in type hierarchies (types deriving from other types). If a foreign type might appear in a type hierarchy (e.g., as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator%602?displayProperty=nameWithType> interface. Consider the following example:
 
-``` csharp
-// The foreign type is not sealed, allowing other types to inherit from it.
-public class MyForeignLibraryType
-{
-    public MyForeignLibraryType() { }
-
-    public MyForeignLibraryType(int num, string str, DateTimeOffset dto)
-    {
-        Num = num;
-        String = str;
-        DateTimeOffset = dto;
-    }
-
-    public int Num { get; set; }
-    public string String { get; set; }
-    public DateTimeOffset DateTimeOffset { get; set; }
-}
-
-// The surrogate is defined as it was in the previous example.
-[GenerateSerializer]
-public struct MyForeignLibraryTypeSurrogate
-{
-    [Id(0)]
-    public int Num;
-
-    [Id(1)]
-    public string String;
-
-    [Id(2)]
-    public DateTimeOffset DateTimeOffset;
-}
-
-// Implement the IConverter and IPopulator interfaces on the converter.
-[RegisterConverter]
-public sealed class MyForeignLibraryTypeSurrogateConverter :
-    IConverter<MyForeignLibraryType, MyForeignLibraryTypeSurrogate>,
-    IPopulator<MyForeignLibraryType, MyForeignLibraryTypeSurrogate>
-{
-    public MyForeignLibraryType ConvertFromSurrogate(
-        in MyForeignLibraryTypeSurrogate surrogate) =>
-        new(surrogate.Num, surrogate.String, surrogate.DateTimeOffset);
-
-    public MyForeignLibraryTypeSurrogate ConvertToSurrogate(
-        in MyForeignLibraryType value) =>
-        new()
-    {
-        Num = value.Num,
-        String = value.String,
-        DateTimeOffset = value.DateTimeOffset
-    };
-
-    public void Populate(
-        in MyForeignLibraryTypeSurrogate surrogate, MyForeignLibraryType value)
-    {
-        value.Num = surrogate.Num;
-        value.String = surrogate.String;
-        value.DateTimeOffset = surrogate.DateTimeOffset;
-    }
-}
-
-// Application types can inherit from the foreign type, assuming they're not sealed
-// since Orleans knows how to serialize it.
-[GenerateSerializer]
-public sealed class DerivedFromMyForeignLibraryType : MyForeignLibraryType
-{
-    public DerivedFromMyForeignLibraryType() { }
-
-    public DerivedFromMyForeignLibraryType(
-        int intValue, int num, string str, DateTimeOffset dto) : base(num, str, dto)
-    {
-        IntValue = intValue;
-    }
-
-    [Id(0)]
-    public int IntValue { get; set; }
-}
-```
+:::code source="./snippets/serialization/SurrogateExamples.cs" id="surrogate_class_with_populator":::
 
 ## Versioning rules
 
@@ -413,21 +184,7 @@ Orleans promotes safety by default, including safety from some classes of concur
 - ✅ **Do** replace usages of <xref:System.SerializableAttribute> with <xref:Orleans.GenerateSerializerAttribute> and corresponding <xref:Orleans.IdAttribute> declarations.
 - ✅ **Do** start all member IDs at zero for each type. IDs in a subclass and its base class can safely overlap. Both properties in the following example have IDs equal to `0`.
 
-    ```csharp
-    [GenerateSerializer]
-    public sealed class MyBaseClass
-    {
-        [Id(0)]
-        public int MyBaseInt { get; set; }
-    }
-    
-    [GenerateSerializer]
-    public sealed class MySubClass : MyBaseClass
-    {
-        [Id(0)]
-        public int MyBaseInt { get; set; }
-    }
-    ```
+    :::code language="csharp" source="snippets/serialization/BasicTypes.cs" id="best_practices_id_overlap":::
 
 - ✅ **Do** widen numeric member types as needed. You can widen `sbyte` to `short` to `int` to `long`.
   - You can narrow numeric member types, but it results in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value is encountered.
@@ -444,15 +201,7 @@ Orleans includes a provider-backed persistence model for grains, accessed via th
 
 Grain storage serialization currently defaults to `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
 
-```csharp
-siloBuilder.AddAzureBlobGrainStorage(
-    "MyGrainStorage",
-    (OptionsBuilder<AzureBlobStorageOptions> optionsBuilder) =>
-    {
-        optionsBuilder.Configure<IMySerializer>(
-            (options, serializer) => options.GrainStorageSerializer = serializer);
-    });
-```
+:::code language="csharp" source="snippets/serialization/GrainStorageExamples.cs" id="grain_storage_serializer_config":::
 
 For more information, see [OptionsBuilder API](../../../core/extensions/options.md#optionsbuilder-api).
 

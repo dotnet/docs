@@ -50,6 +50,8 @@ When you have some experience with Orleans and have a use case requiring a stron
 
 ## Strongly-consistent in-cluster directory
 
+[!INCLUDE [orleans-10-preview](../includes/orleans-10-preview.md)]
+
 Orleans also provides a strongly-consistent grain directory using a distributed hash table with virtual nodes (similar to Amazon Dynamo and Apache Cassandra). Unlike the default eventually-consistent directory, this implementation prevents duplicate grain activations even during cluster instability.
 
 ### Key features

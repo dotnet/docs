@@ -16,15 +16,15 @@ Use the `where` clause in a query expression to specify which elements from the 
 
 In the following example, the `where` clause filters out all numbers except those that are less than five. If you remove the `where` clause, the query returns all numbers from the data source. The expression `num < 5` is the predicate that the query applies to each element.
 
-:::code language="csharp" source="./snippets/Where.cs" id="5":::
+:::code language="csharp" source="./snippets/where.cs" id="5":::
 
 Within a single `where` clause, you can specify as many predicates as necessary by using the [&&](../operators/boolean-logical-operators.md#conditional-logical-and-operator-) and [&#124;&#124;](../operators/boolean-logical-operators.md#conditional-logical-or-operator-) operators. In the following example, the query specifies two predicates in order to select only the even numbers that are less than five.
 
-:::code language="csharp" source="./snippets/Where.cs" id="6":::
+:::code language="csharp" source="./snippets/where.cs" id="6":::
 
 A `where` clause can contain one or more methods that return Boolean values. In the following example, the `where` clause uses a method to determine whether the current value of the range variable is even or odd.
 
-:::code language="csharp" source="./snippets/Where.cs" id="7":::
+:::code language="csharp" source="./snippets/where.cs" id="7":::
 
 ## Remarks
 

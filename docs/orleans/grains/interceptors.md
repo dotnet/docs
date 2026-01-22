@@ -11,7 +11,7 @@ Grain call filters provide a way to intercept grain calls. Filters can execute c
 
 Some example uses of grain call filters are:
 
-- **Authorization**: A filter can inspect the method being invoked and the arguments, or authorization information in the `RequestContext`, to determine whether to allow the call to proceed.
+- **Authorization**: A filter can inspect the method being invoked and the arguments, or authorization information in the <xref:Orleans.Runtime.RequestContext>, to determine whether to allow the call to proceed.
 - **Logging/Telemetry**: A filter can log information and capture timing data and other statistics about method invocation.
 - **Error Handling**: A filter can intercept exceptions thrown by a method invocation and transform them into other exceptions or handle the exceptions as they pass through the filter.
 
@@ -108,7 +108,7 @@ Another use case for filters is access control, as shown in this example:
 
 :::code language="csharp" source="snippets/interceptors/GrainFilters.cs" id="access_control_grain":::
 
-In the preceding example, the `SpecialAdminOnlyOperation` method can only be called if `"isAdmin"` is set to `true` in the `RequestContext`. In this way, you can use grain call filters for authorization. In this example, it's the caller's responsibility to ensure the `"isAdmin"` value is set correctly and that authentication is performed correctly. Note that the `[AdminOnly]` attribute is specified on the grain class method. This is because the `ImplementationMethod` property returns the `MethodInfo` of the implementation, not the interface. The filter could also check the `InterfaceMethod` property.
+In the preceding example, the `SpecialAdminOnlyOperation` method can only be called if `"isAdmin"` is set to `true` in the <xref:Orleans.Runtime.RequestContext>. In this way, you can use grain call filters for authorization. In this example, it's the caller's responsibility to ensure the `"isAdmin"` value is set correctly and that authentication is performed correctly. Note that the `[AdminOnly]` attribute is specified on the grain class method. This is because the `ImplementationMethod` property returns the `MethodInfo` of the implementation, not the interface. The filter could also check the `InterfaceMethod` property.
 
 ## Grain call filter ordering
 
@@ -175,7 +175,7 @@ Register a delegate as a call filter like this:
 
 :::code language="csharp" source="snippets/interceptors/Configuration.cs" id="outgoing_delegate_filter":::
 
-In the above code, `builder` may be either an instance of `ISiloBuilder` or `IClientBuilder`.
+In the above code, `builder` may be either an instance of <xref:Orleans.Hosting.ISiloBuilder> or <xref:Orleans.IClientBuilder>.
 
 Similarly, you can register a class as an outgoing grain call filter. Here's an example of a grain call filter that logs the results of every grain method:
 
@@ -189,7 +189,7 @@ Alternatively, the filter can be registered without the extension method:
 
 :::code language="csharp" source="snippets/interceptors/Configuration.cs" id="register_outgoing_filter_di":::
 
-As with the delegate call filter example, `builder` may be an instance of either `ISiloBuilder` or `IClientBuilder`.
+As with the delegate call filter example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloBuilder> or <xref:Orleans.IClientBuilder>.
 
 ## Use cases
 
@@ -203,7 +203,7 @@ When the client tries to deserialize the `EntityException`, it fails due to the 
 
 One might argue this is acceptable since the client would never handle the `EntityException`; otherwise, it would need to reference `EntityFramework.dll`.
 
-But what if the client wants at least to log the exception? The problem is that the original error message is lost. One way to work around this issue is to intercept server-side exceptions and replace them with plain exceptions of type `Exception` if the exception type is presumably unknown on the client-side.
+But what if the client wants at least to log the exception? The problem is that the original error message is lost. One way to work around this issue is to intercept server-side exceptions and replace them with plain exceptions of type <xref:System.Exception> if the exception type is presumably unknown on the client-side.
 
 However, keep one important thing in mind: you only want to replace an exception **if the caller is the grain client**. You don't want to replace an exception if the caller is another grain (or the Orleans infrastructure making grain calls, for example,, on the `GrainBasedReminderTable` grain).
 

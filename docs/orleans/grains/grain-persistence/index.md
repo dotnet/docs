@@ -60,7 +60,7 @@ public interface IPersistentState<TState> where TState : new()
 
 :::zone-end
 
-Orleans injects instances of `IPersistentState<TState>` into the grain as constructor parameters. You can annotate these parameters with a <xref:Orleans.Runtime.PersistentStateAttribute> attribute to identify the name of the state being injected and the name of the storage provider supplying it. The following example demonstrates this by injecting two named states into the `UserGrain` constructor:
+Orleans injects instances of <xref:Orleans.Runtime.IPersistentState%601> into the grain as constructor parameters. You can annotate these parameters with a <xref:Orleans.Runtime.PersistentStateAttribute> attribute to identify the name of the state being injected and the name of the storage provider supplying it. The following example demonstrates this by injecting two named states into the `UserGrain` constructor:
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="user_grain_multiple_states":::
 
@@ -70,7 +70,7 @@ Different grain types can use different configured storage providers, even if bo
 
 Grain state automatically reads when the grain activates, but grains are responsible for explicitly triggering the write for any changed grain state when necessary.
 
-If a grain wishes to explicitly re-read its latest state from the backing store, it should call the <xref:Orleans.Grain%601.ReadStateAsync%2A> method. This reloads the grain state from the persistent store via the storage provider. The previous in-memory copy of the grain state is overwritten and replaced when the `Task` from `ReadStateAsync()` completes.
+If a grain wishes to explicitly re-read its latest state from the backing store, it should call the <xref:Orleans.Grain%601.ReadStateAsync%2A> method. This reloads the grain state from the persistent store via the storage provider. The previous in-memory copy of the grain state is overwritten and replaced when the <xref:System.Threading.Tasks.Task> from `ReadStateAsync()` completes.
 
 Access the value of the state using the `State` property. For example, the following method accesses the profile state declared in the code above:
 
@@ -158,16 +158,16 @@ Now that you've configured a storage provider named `"profileStore"`, you can ac
 
 You can add persistent state to a grain in two primary ways:
 
-1. By injecting `IPersistentState<TState>` into the grain's constructor.
+1. By injecting <xref:Orleans.Runtime.IPersistentState%601> into the grain's constructor.
 1. By inheriting from <xref:Orleans.Grain%601>.
 
-The recommended way to add storage to a grain is by injecting `IPersistentState<TState>` into the grain's constructor with an associated `[PersistentState("stateName", "providerName")]` attribute. For details on `Grain<TState>`, see [Using `Grain<TState>` to add storage to a grain](#using-graintstate-to-add-storage-to-a-grain) below. Using `Grain<TState>` is still supported but considered a legacy approach.
+The recommended way to add storage to a grain is by injecting <xref:Orleans.Runtime.IPersistentState%601> into the grain's constructor with an associated `[PersistentState("stateName", "providerName")]` attribute. For details on <xref:Orleans.Grain%601>, see [Using <xref:Orleans.Grain%601> to add storage to a grain](#using-graintstate-to-add-storage-to-a-grain) below. Using <xref:Orleans.Grain%601> is still supported but considered a legacy approach.
 
 Declare a class to hold your grain's state:
 
 :::code language="csharp" source="./snippets/persistence/StateTypes.cs" id="profile_state":::
 
-Inject `IPersistentState<ProfileState>` into the grain's constructor:
+Inject <xref:Orleans.Runtime.IPersistentState%601> into the grain's constructor:
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="user_grain_constructor_injection":::
 
@@ -182,15 +182,15 @@ Now that the grain has a persistent state, you can add methods to read and write
 
 ### Failure modes for read operations
 
-Failures returned by the storage provider during the initial read of state data for a particular grain fail the activation operation for that grain. In such cases, there won't be any call to that grain's `OnActivateAsync` lifecycle callback method. The original request to the grain that caused the activation faults back to the caller, just like any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain result in an exception from the `ReadStateAsync` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
+Failures returned by the storage provider during the initial read of state data for a particular grain fail the activation operation for that grain. In such cases, there won't be any call to that grain's `OnActivateAsync` lifecycle callback method. The original request to the grain that caused the activation faults back to the caller, just like any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain result in an exception from the `ReadStateAsync` <xref:System.Threading.Tasks.Task>. The grain can choose to handle or ignore the <xref:System.Threading.Tasks.Task> exception, just like any other <xref:System.Threading.Tasks.Task> in Orleans.
 
 Any attempt to send a message to a grain that failed to load at silo startup due to a missing or bad storage provider configuration returns the permanent error <xref:Orleans.Storage.BadProviderConfigException>.
 
 ### Failure modes for write operations
 
-Failures encountered by the storage provider when writing state data for a particular grain result in an exception thrown by the `WriteStateAsync()` `Task`. Usually, this means the grain call exception is thrown back to the client caller, provided the `WriteStateAsync()` `Task` is correctly chained into the final return `Task` for this grain method. However, in certain advanced scenarios, you can write grain code to specifically handle such write errors, just like handling any other faulted `Task`.
+Failures encountered by the storage provider when writing state data for a particular grain result in an exception thrown by the `WriteStateAsync()` <xref:System.Threading.Tasks.Task>. Usually, this means the grain call exception is thrown back to the client caller, provided the `WriteStateAsync()` <xref:System.Threading.Tasks.Task> is correctly chained into the final return <xref:System.Threading.Tasks.Task> for this grain method. However, in certain advanced scenarios, you can write grain code to specifically handle such write errors, just like handling any other faulted <xref:System.Threading.Tasks.Task>.
 
-Grains executing error-handling or recovery code *must* catch exceptions or faulted `WriteStateAsync()` `Task`s and not rethrow them, signifying they have successfully handled the write error.
+Grains executing error-handling or recovery code *must* catch exceptions or faulted `WriteStateAsync()` <xref:System.Threading.Tasks.Task>s and not rethrow them, signifying they have successfully handled the write error.
 
 ## Recommendations
 
@@ -198,26 +198,26 @@ Grains executing error-handling or recovery code *must* catch exceptions or faul
 
 Code evolves, and this often includes storage types. To accommodate these changes, configure an appropriate serializer. For most storage providers, a `UseJson` option or similar is available to use JSON as the serialization format. Ensure that when evolving data contracts, already-stored data can still be loaded.
 
-## Using `Grain<TState>` to add storage to a grain
+## Using <xref:Orleans.Grain%601> to add storage to a grain
 
 > [!IMPORTANT]
-> Using `Grain<T>` to add storage to a grain is considered *legacy* functionality. Add grain storage using `IPersistentState<T>` as previously described.
+> Using <xref:Orleans.Grain%601> to add storage to a grain is considered *legacy* functionality. Add grain storage using <xref:Orleans.Runtime.IPersistentState%601> as previously described.
 
-Grain classes inheriting from `Grain<T>` (where `T` is an application-specific state data type needing persistence) have their state loaded automatically from the specified storage.
+Grain classes inheriting from <xref:Orleans.Grain%601> (where `T` is an application-specific state data type needing persistence) have their state loaded automatically from the specified storage.
 
 Mark such grains with a <xref:Orleans.Providers.StorageProviderAttribute> specifying a named instance of a storage provider to use for reading/writing the state data for this grain.
 
 :::code language="csharp" source="./snippets/persistence/GrainExamples.cs" id="storage_provider_attribute":::
 
-The `Grain<T>` base class defines the following methods for subclasses to call:
+The <xref:Orleans.Grain%601> base class defines the following methods for subclasses to call:
 
 :::code language="csharp" source="./snippets/persistence/StorageProviderTypes.cs" id="grain_base_methods":::
 
-The behavior of these methods corresponds to their counterparts on `IPersistentState<TState>` defined earlier.
+The behavior of these methods corresponds to their counterparts on <xref:Orleans.Runtime.IPersistentState%601> defined earlier.
 
 ## Create a storage provider
 
-There are two parts to the state persistence APIs: the API exposed to the grain via `IPersistentState<T>` or `Grain<T>`, and the storage provider API, centered around `IGrainStorage`—the interface storage providers must implement:
+There are two parts to the state persistence APIs: the API exposed to the grain via <xref:Orleans.Runtime.IPersistentState%601> or <xref:Orleans.Grain%601>, and the storage provider API, centered around <xref:Orleans.Storage.IGrainStorage>—the interface storage providers must implement:
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
@@ -266,11 +266,11 @@ Create a custom storage provider by implementing this interface and [registering
 
 An opaque provider-specific <xref:Orleans.GrainState.Etag%2A> value (`string`) *may* be set by a storage provider as part of the grain state metadata populated when the state was read. Some providers may choose to leave this as `null` if they don't use `Etag`s.
 
-Any attempt to perform a write operation when the storage provider detects an `Etag` constraint violation *should* cause the write `Task` to be faulted with transient error <xref:Orleans.Storage.InconsistentStateException> and wrapping the underlying storage exception.
+Any attempt to perform a write operation when the storage provider detects an `Etag` constraint violation *should* cause the write <xref:System.Threading.Tasks.Task> to be faulted with transient error <xref:Orleans.Storage.InconsistentStateException> and wrapping the underlying storage exception.
 
 :::code language="csharp" source="./snippets/persistence/StorageProviderTypes.cs" id="inconsistent_state_exception":::
 
-Any other failure conditions from a storage operation *must* cause the returned `Task` to be broken with an exception indicating the underlying storage issue. In many cases, this exception might be thrown back to the caller who triggered the storage operation by calling a method on the grain. It's important to consider whether the caller can deserialize this exception. For example, the client might not have loaded the specific persistence library containing the exception type. For this reason, it's advisable to convert exceptions into exceptions that can propagate back to the caller.
+Any other failure conditions from a storage operation *must* cause the returned <xref:System.Threading.Tasks.Task> to be broken with an exception indicating the underlying storage issue. In many cases, this exception might be thrown back to the caller who triggered the storage operation by calling a method on the grain. It's important to consider whether the caller can deserialize this exception. For example, the client might not have loaded the specific persistence library containing the exception type. For this reason, it's advisable to convert exceptions into exceptions that can propagate back to the caller.
 
 ### Data mapping
 
@@ -278,9 +278,9 @@ Individual storage providers should decide how best to store grain state – blo
 
 ### Register a storage provider
 
-The Orleans runtime resolves a storage provider from the service provider (<xref:System.IServiceProvider>) when a grain is created. The runtime resolves an instance of <xref:Orleans.Storage.IGrainStorage>. If the storage provider is named (for example, via the `[PersistentState(stateName, storageName)]` attribute), then a named instance of `IGrainStorage` is resolved.
+The Orleans runtime resolves a storage provider from the service provider (<xref:System.IServiceProvider>) when a grain is created. The runtime resolves an instance of <xref:Orleans.Storage.IGrainStorage>. If the storage provider is named (for example, via the `[PersistentState(stateName, storageName)]` attribute), then a named instance of <xref:Orleans.Storage.IGrainStorage> is resolved.
 
-To register a named instance of `IGrainStorage`, use the <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A> extension method, following the example of the [AzureTableGrainStorage provider here](https://github.com/dotnet/orleans/blob/af974d37864f85bfde5dc02f2f60bba997f2162d/src/Azure/Orleans.Persistence.AzureStorage/Hosting/AzureTableSiloBuilderExtensions.cs#L78).
+To register a named instance of <xref:Orleans.Storage.IGrainStorage>, use the <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A> extension method, following the example of the [AzureTableGrainStorage provider here](https://github.com/dotnet/orleans/blob/af974d37864f85bfde5dc02f2f60bba997f2162d/src/Azure/Orleans.Persistence.AzureStorage/Hosting/AzureTableSiloBuilderExtensions.cs#L78).
 
 ## Redis grain persistence
 

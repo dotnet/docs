@@ -31,7 +31,7 @@ public interface IChat : IGrainObserver
 }
 ```
 
-The only special requirement is that the interface must inherit from `IGrainObserver`.
+The only special requirement is that the interface must inherit from <xref:Orleans.IGrainObserver>.
 Now, any client wanting to observe these messages should implement a class that implements `IChat`.
 
 The simplest case looks something like this:
@@ -131,7 +131,7 @@ Starting with Orleans 9.0, observer interface methods fully support <xref:System
 
 ### Define an observer interface with CancellationToken
 
-Add a `CancellationToken` parameter as the last parameter in your observer interface method:
+Add a <xref:System.Threading.CancellationToken> parameter as the last parameter in your observer interface method:
 
 ```csharp
 public interface IDataObserver : IGrainObserver
@@ -185,7 +185,7 @@ For more information about using cancellation tokens in Orleans, see [Use cancel
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0"
 
-CancellationToken support for observers was introduced in Orleans 9.0. For earlier versions, you can use `GrainCancellationToken` as a workaround, but direct `CancellationToken` support in observer methods isn't available.
+CancellationToken support for observers was introduced in Orleans 9.0. For earlier versions, you can use <xref:Orleans.GrainCancellationToken> as a workaround, but direct <xref:System.Threading.CancellationToken> support in observer methods isn't available.
 
 For full CancellationToken support, consider upgrading to Orleans 9.0 or later.
 
@@ -193,6 +193,6 @@ For full CancellationToken support, consider upgrading to Orleans 9.0 or later.
 
 :::zone target="docs" pivot="orleans-3-x"
 
-CancellationToken support for observers is available in Orleans 9.0 and later. Orleans 3.x uses the legacy `GrainCancellationToken` mechanism for cancellation.
+CancellationToken support for observers is available in Orleans 9.0 and later. Orleans 3.x uses the legacy <xref:Orleans.GrainCancellationToken> mechanism for cancellation.
 
 :::zone-end

@@ -17,8 +17,8 @@ Orleans supports cooperative cancellation in grain methods through the standard 
 
 Orleans supports passing <xref:System.Threading.CancellationToken> instances to grain interface methods. This works for:
 
-- Regular grain methods that return `Task`, `Task<T>`, etcetera
-- Streaming methods that return `IAsyncEnumerable<T>`
+- Regular grain methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, etcetera
+- Streaming methods that return <xref:System.Collections.Generic.IAsyncEnumerable%601>
 - Both client-to-grain and grain-to-grain calls
 
 Cancellation is cooperative, meaning your grain implementation must observe the token and respond appropriately for it to be effective. If a cancellation token is not observed, the runtime will not automatically stop a method from executing. This behavior is consistent with the majority of libraries that support <xref:System.Threading.CancellationToken>. In other words, .NET uses cooperative cancellation. The major benefit of this approach is that cancellation can only occur at clearly identifiable points, not at any given instruction. This lets you run cleanup logic when cancellation is signalled.
@@ -83,7 +83,7 @@ public class ProcessingGrain : Grain, IProcessingGrain
 
 ### 3. Call the grain with cancellation
 
-Create a `CancellationTokenSource` and pass its token to the grain method:
+Create a <xref:System.Threading.CancellationTokenSource> and pass its token to the grain method:
 
 ```csharp
 var grain = grainFactory.GetGrain<IProcessingGrain>(Guid.NewGuid());
@@ -200,7 +200,7 @@ catch (OperationCanceledException)
 
 #### Approach 2: Using the `WithCancellation` extension method
 
-For scenarios where you have an existing `IAsyncEnumerable<T>` instance or need to override the cancellation token:
+For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token:
 
 ```csharp
 var grain = grainFactory.GetGrain<IDataStreamGrain>(Guid.NewGuid());
@@ -235,7 +235,7 @@ This flexibility allows you to incrementally adopt cancellation in your Orleans 
 
 ## Configuration
 
-Configure cancellation behavior through `SiloMessagingOptions` (for silos) and `ClientMessagingOptions` (for clients):
+Configure cancellation behavior through <xref:Orleans.Configuration.SiloMessagingOptions> (for silos) and <xref:Orleans.Configuration.ClientMessagingOptions> (for clients):
 
 ```csharp
 // In your silo configuration
@@ -412,7 +412,7 @@ When handling `OperationCanceledException`, always check if the cancellation is 
 
 ### IAsyncEnumerable&lt;T&gt; behavior
 
-For streaming scenarios with `IAsyncEnumerable<T>`:
+For streaming scenarios with <xref:System.Collections.Generic.IAsyncEnumerable%601>:
 
 - **Pre-enumeration cancellation**: If the token is canceled before enumeration starts, no items are yielded and an `OperationCanceledException` is thrown immediately.
 - **Mid-enumeration cancellation**: If canceled during enumeration, the stream stops at the next cancellation check point (typically the next `yield` or `await` operation).
@@ -449,19 +449,19 @@ public async IAsyncEnumerable<DataPoint> StreamDataAsync(
 
 ## Legacy: GrainCancellationToken and GrainCancellationTokenSource
 
-Prior to the direct support for `System.Threading.CancellationToken` in grain methods, Orleans provided a specific mechanism using `GrainCancellationToken` and `GrainCancellationTokenSource`. **This approach is now considered legacy, and `System.Threading.CancellationToken` is the recommended method for implementing cancellation in Orleans grains.**
+Prior to the direct support for `System.Threading.CancellationToken` in grain methods, Orleans provided a specific mechanism using <xref:Orleans.GrainCancellationToken> and `GrainCancellationTokenSource`. **This approach is now considered legacy, and `System.Threading.CancellationToken` is the recommended method for implementing cancellation in Orleans grains.**
 
 The following information is provided for context on older systems or for specific backward compatibility needs. For new development, see the <xref:System.Threading.CancellationToken> usage described earlier in this article.
 
 ### Overview of GrainCancellationToken
 
-<xref:Orleans.GrainCancellationToken> is a wrapper around the standard <xref:System.Threading.CancellationToken>. It enables cooperative cancellation between threads, thread pool work items, or `Task` objects, and can be passed as a grain method argument.
+<xref:Orleans.GrainCancellationToken> is a wrapper around the standard <xref:System.Threading.CancellationToken>. It enables cooperative cancellation between threads, thread pool work items, or <xref:System.Threading.Tasks.Task> objects, and can be passed as a grain method argument.
 
-A <xref:Orleans.GrainCancellationTokenSource> provides a `GrainCancellationToken` through its `Token` property and sends a cancellation message when its <xref:Orleans.GrainCancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method is called.
+A <xref:Orleans.GrainCancellationTokenSource> provides a <xref:Orleans.GrainCancellationToken> through its `Token` property and sends a cancellation message when its <xref:Orleans.GrainCancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method is called.
 
 ### Using GrainCancellationToken
 
-To use the legacy `GrainCancellationToken`:
+To use the legacy <xref:Orleans.GrainCancellationToken>:
 
 1. Instantiate a `GrainCancellationTokenSource` object. This object manages and sends cancellation notifications to individual grain cancellation tokens.
 
@@ -475,7 +475,7 @@ To use the legacy `GrainCancellationToken`:
     var waitTask = grain.LongIoWork(tcs.Token, TimeSpan.FromSeconds(10));
     ```
 
-1. A cancellable grain operation needs to handle the underlying <xref:System.Threading.CancellationToken> property of `GrainCancellationToken` just like in any other .NET code.
+1. A cancellable grain operation needs to handle the underlying <xref:System.Threading.CancellationToken> property of <xref:Orleans.GrainCancellationToken> just like in any other .NET code.
 
     ```csharp
     public async Task LongIoWork(GrainCancellationToken tc, TimeSpan delay)
@@ -492,7 +492,7 @@ To use the legacy `GrainCancellationToken`:
     }
     ```
 
-1. Call the `GrainCancellationTokenSource.Cancel()` method to initiate cancellation. This signals all `GrainCancellationToken` instances created from this source.
+1. Call the `GrainCancellationTokenSource.Cancel()` method to initiate cancellation. This signals all <xref:Orleans.GrainCancellationToken> instances created from this source.
 
     ```csharp
     // Request cancellation
@@ -507,9 +507,9 @@ To use the legacy `GrainCancellationToken`:
 
 #### Important considerations for GrainCancellationToken
 
-- The `GrainCancellationTokenSource.Cancel()` method returns a `Task`. To ensure cancellation is robust against transient communication failures, you might need to retry the cancel call.
+- The `GrainCancellationTokenSource.Cancel()` method returns a <xref:System.Threading.Tasks.Task>. To ensure cancellation is robust against transient communication failures, you might need to retry the cancel call.
 - Callbacks registered on the underlying `System.Threading.CancellationToken` (accessed via `GrainCancellationToken.CancellationToken`) are subject to single-threaded execution guarantees within the grain activation where they were registered. This means they will run on the grain's task scheduler.
-- Each `GrainCancellationToken` can be passed through multiple method invocations if needed.
+- Each <xref:Orleans.GrainCancellationToken> can be passed through multiple method invocations if needed.
 
 ## Related topics
 

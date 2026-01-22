@@ -48,7 +48,7 @@ When enabled, Orleans monitors memory usage and begins deactivating grains when 
 
 ### Configuration
 
-Configure memory-based activation shedding using `GrainCollectionOptions`:
+Configure memory-based activation shedding using <xref:Orleans.Configuration.GrainCollectionOptions>:
 
 ```csharp
 builder.Configure<GrainCollectionOptions>(options =>
@@ -74,9 +74,9 @@ builder.Configure<GrainCollectionOptions>(options =>
 | `EnableActivationSheddingOnMemoryPressure` | `bool` | `false` | Enable automatic deactivation under memory pressure. |
 | `MemoryUsageLimitPercentage` | `int` | 80 | Memory usage percentage at which shedding begins. Valid range: 0-100. |
 | `MemoryUsageTargetPercentage` | `int` | 75 | Target memory usage percentage after shedding. Valid range: 0-100. |
-| `MemoryUsagePollingPeriod` | `TimeSpan` | 5 seconds | How often to check memory usage. |
-| `CollectionAge` | `TimeSpan` | 15 minutes | Minimum time a grain must be idle before eligible for collection. |
-| `CollectionQuantum` | `TimeSpan` | 1 minute | How often idle grain collection runs. |
+| `MemoryUsagePollingPeriod` | <xref:System.TimeSpan> | 5 seconds | How often to check memory usage. |
+| `CollectionAge` | <xref:System.TimeSpan> | 15 minutes | Minimum time a grain must be idle before eligible for collection. |
+| `CollectionQuantum` | <xref:System.TimeSpan> | 1 minute | How often idle grain collection runs. |
 
 ### Best practices
 

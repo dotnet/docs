@@ -34,7 +34,7 @@ The Orleans runtime uses generated code to ensure proper serialization of types 
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-At build time, Orleans generates code for all types marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with `GenerateSerializer`, Orleans won't serialize it.
+At build time, Orleans generates code for all types marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with <xref:Orleans.GenerateSerializerAttribute>, Orleans won't serialize it.
 
 If developing with F# or Visual Basic, code generation can also be used. For more information, see these samples:
 

@@ -51,7 +51,7 @@ Configure this placement strategy by adding the <xref:Orleans.Placement.Activati
 
 ## Stateless worker placement
 
-Stateless worker placement is a special placement strategy used by [*stateless worker* grains](stateless-worker-grains.md). This placement operates almost identically to `PreferLocalPlacement`, except each server can have multiple activations of the same grain, and the grain isn't registered in the grain directory since there's no need.
+Stateless worker placement is a special placement strategy used by [*stateless worker* grains](stateless-worker-grains.md). This placement operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement>, except each server can have multiple activations of the same grain, and the grain isn't registered in the grain directory since there's no need.
 
 Configure this placement strategy by adding the <xref:Orleans.Concurrency.StatelessWorkerAttribute> to the grain class.
 
@@ -115,7 +115,7 @@ siloBuilder.Configure<ResourceOptimizedPlacementOptions>(options =>
 | `AvailableMemoryWeight` | `int` | 20 | The importance of available memory. Higher values favor silos with more available memory. Valid range: 0-100. |
 | `MaxAvailableMemoryWeight` | `int` | 5 | The importance of maximum available memory. Higher values favor silos with higher physical memory capacity. Useful in clusters with unevenly distributed resources. Valid range: 0-100. |
 | `ActivationCountWeight` | `int` | 15 | The importance of activation count. Higher values favor silos with fewer active grains. Valid range: 0-100. |
-| `LocalSiloPreferenceMargin` | `int` | 5 | Margin for preferring the local silo. When set to 0, always selects the silo with lowest utilization. When set to 100, always prefers the local silo (equivalent to `PreferLocalPlacement`). Recommended: 5-10. Valid range: 0-100. |
+| `LocalSiloPreferenceMargin` | `int` | 5 | Margin for preferring the local silo. When set to 0, always selects the silo with lowest utilization. When set to 100, always prefers the local silo (equivalent to <xref:Orleans.Runtime.PreferLocalPlacement>). Recommended: 5-10. Valid range: 0-100. |
 
 > [!NOTE]
 > The weight values don't need to sum to 100. Orleans normalizes them automatically, so they represent relative importance rather than absolute percentages.
@@ -232,7 +232,7 @@ public class MyGrain : Grain, IMyGrain
 }
 ```
 
-Finally, register the strategy when building the `ISiloHost`:
+Finally, register the strategy when building the <xref:Orleans.Hosting.ISiloHost>:
 
 ```csharp
 private static async Task<ISiloHost> StartSilo()
@@ -325,9 +325,9 @@ siloBuilder.Configure<ActivationRepartitionerOptions>(options =>
 |--------|------|---------|-------------|
 | `MaxEdgeCount` | `int` | 10,000 | Maximum number of edges (grain communication links) to track. Higher values improve accuracy but use more memory. Values under 100 are not recommended. |
 | `MaxUnprocessedEdges` | `int` | 100,000 | Maximum number of unprocessed edges to buffer. Oldest edges are discarded when exceeded. |
-| `MinRoundPeriod` | `TimeSpan` | 1 minute | Minimum time between repartitioning rounds. |
-| `MaxRoundPeriod` | `TimeSpan` | 2 minutes | Maximum time between repartitioning rounds. Actual timing is random between min and max. For optimal results, aim for ~10 seconds multiplied by the maximum silo count. |
-| `RecoveryPeriod` | `TimeSpan` | 1 minute | Time a silo waits after a repartitioning round before participating in another. Must be less than or equal to `MinRoundPeriod`. |
+| `MinRoundPeriod` | <xref:System.TimeSpan> | 1 minute | Minimum time between repartitioning rounds. |
+| `MaxRoundPeriod` | <xref:System.TimeSpan> | 2 minutes | Maximum time between repartitioning rounds. Actual timing is random between min and max. For optimal results, aim for ~10 seconds multiplied by the maximum silo count. |
+| `RecoveryPeriod` | <xref:System.TimeSpan> | 1 minute | Time a silo waits after a repartitioning round before participating in another. Must be less than or equal to `MinRoundPeriod`. |
 | `AnchoringFilterEnabled` | `bool` | `true` | Enables tracking of well-partitioned grains to avoid unnecessarily migrating them. Reduces accuracy slightly but improves effectiveness. |
 | `ProbabilisticFilteringMaxAllowedErrorRate` | `double` | 0.01 | Maximum error rate for the probabilistic filter (0.1% to 1% range). Only applies when `AnchoringFilterEnabled` is `true`. |
 
@@ -414,8 +414,8 @@ siloBuilder.Configure<ActivationRebalancerOptions>(options =>
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `RebalancerDueTime` | `TimeSpan` | 60 seconds | Initial delay before the first rebalancing session starts after the cluster stabilizes. |
-| `SessionCyclePeriod` | `TimeSpan` | 15 seconds | Time between rebalancing cycles within a session. Must be at least twice the statistics publishing interval. |
+| `RebalancerDueTime` | <xref:System.TimeSpan> | 60 seconds | Initial delay before the first rebalancing session starts after the cluster stabilizes. |
+| `SessionCyclePeriod` | <xref:System.TimeSpan> | 15 seconds | Time between rebalancing cycles within a session. Must be at least twice the statistics publishing interval. |
 | `MaxStagnantCycles` | `int` | 3 | Maximum consecutive cycles without improvement before a session ends. |
 | `EntropyQuantum` | `double` | 0.0001 | Minimum entropy change considered an improvement. Smaller values make the rebalancer more sensitive. |
 | `AllowedEntropyDeviation` | `double` | 0.0001 | Base threshold for acceptable deviation from maximum entropy. When deviation is below this threshold, the cluster is considered balanced. |

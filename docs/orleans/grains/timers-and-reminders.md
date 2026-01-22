@@ -40,8 +40,8 @@ The `GrainTimerCreationOptions` structure provides the following properties:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `DueTime` | `TimeSpan` | *Required* | The amount of time to delay before invoking the callback. Use `TimeSpan.Zero` to start immediately, or `Timeout.InfiniteTimeSpan` to prevent the timer from starting. |
-| `Period` | `TimeSpan` | *Required* | The time interval between invocations of the callback. Use `Timeout.InfiniteTimeSpan` to disable periodic signaling (one-shot timer). |
+| `DueTime` | <xref:System.TimeSpan> | *Required* | The amount of time to delay before invoking the callback. Use `TimeSpan.Zero` to start immediately, or `Timeout.InfiniteTimeSpan` to prevent the timer from starting. |
+| `Period` | <xref:System.TimeSpan> | *Required* | The time interval between invocations of the callback. Use `Timeout.InfiniteTimeSpan` to disable periodic signaling (one-shot timer). |
 | `Interleave` | `bool` | `false` | When `true`, timer callbacks can interleave with other timers and grain calls. When `false`, callbacks are treated like grain calls and don't interleave (unless the grain is reentrant). |
 | `KeepAlive` | `bool` | `false` | When `true`, timer callbacks extend the grain activation's lifetime, preventing idle collection. When `false`, timer callbacks don't prevent grain collection. |
 
@@ -52,16 +52,16 @@ The `GrainTimerCreationOptions` structure provides the following properties:
 ***Important considerations:***
 
 - When activation collection is enabled, executing a timer callback doesn't change the activation's state from idle to in-use by default. Set `KeepAlive = true` if you want timer callbacks to prevent deactivation.
-- The period passed to `Grain.RegisterGrainTimer` is the amount of time passing from the moment the `Task` returned by `callback` resolves to the moment the next invocation of `callback` should occur. This not only prevents successive calls to `callback` from overlapping but also means the time `callback` takes to complete affects the frequency at which `callback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
+- The period passed to `Grain.RegisterGrainTimer` is the amount of time passing from the moment the <xref:System.Threading.Tasks.Task> returned by `callback` resolves to the moment the next invocation of `callback` should occur. This not only prevents successive calls to `callback` from overlapping but also means the time `callback` takes to complete affects the frequency at which `callback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
 - Each invocation of `callback` is delivered to an activation on a separate turn and never runs concurrently with other turns on the same activation.
 - Callbacks don't interleave by default. You can enable interleaving by setting `Interleave` to `true` on `GrainTimerCreationOptions`.
-- You can update grain timers using the `Change(TimeSpan, TimeSpan)` method on the returned `IGrainTimer` instance.
+- You can update grain timers using the `Change(TimeSpan, TimeSpan)` method on the returned <xref:Orleans.Runtime.IGrainTimer> instance.
 - Callbacks can keep the grain active, preventing collection if the timer period is relatively short. Enable this by setting `KeepAlive` to `true` on `GrainTimerCreationOptions`.
-- Callbacks can receive a `CancellationToken` that is canceled when the timer is disposed or the grain starts to deactivate.
+- Callbacks can receive a <xref:System.Threading.CancellationToken> that is canceled when the timer is disposed or the grain starts to deactivate.
 - Callbacks can dispose of the grain timer that fired them.
 - Callbacks are subject to grain call filters.
 - Callbacks are visible in distributed tracing when distributed tracing is enabled.
-- POCO grains (grain classes that don't inherit from `Grain`) can register grain timers using the `RegisterGrainTimer` extension method.
+- POCO grains (grain classes that don't inherit from <xref:Orleans.Grain>) can register grain timers using the `RegisterGrainTimer` extension method.
 
 :::zone-end
 
@@ -87,7 +87,7 @@ A timer stops triggering if the grain deactivates or when a fault occurs and its
 ***Important considerations:***
 
 - When activation collection is enabled, executing a timer callback doesn't change the activation's state from idle to in-use. This means you can't use a timer to postpone the deactivation of otherwise idle activations.
-- The period passed to `Grain.RegisterTimer` is the amount of time passing from the moment the `Task` returned by `asyncCallback` resolves to the moment the next invocation of `asyncCallback` should occur. This not only prevents successive calls to `asyncCallback` from overlapping but also means the time `asyncCallback` takes to complete affects the frequency at which `asyncCallback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
+- The period passed to `Grain.RegisterTimer` is the amount of time passing from the moment the <xref:System.Threading.Tasks.Task> returned by `asyncCallback` resolves to the moment the next invocation of `asyncCallback` should occur. This not only prevents successive calls to `asyncCallback` from overlapping but also means the time `asyncCallback` takes to complete affects the frequency at which `asyncCallback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
 - Each invocation of `asyncCallback` is delivered to an activation on a separate turn and never runs concurrently with other turns on the same activation.
 - Timer callbacks can interleave with other grain calls and timers.
 
@@ -104,7 +104,7 @@ If you're upgrading from Orleans 7.x to Orleans 8.x or later, you should migrate
 | Aspect | `RegisterTimer` (Orleans 7.x) | `RegisterGrainTimer` (Orleans 8.x+) |
 |--------|-------------------------------|-------------------------------------|
 | **Interleaving** | Callbacks interleave by default | Callbacks do **not** interleave by default |
-| **Return type** | `IDisposable` | `IGrainTimer` |
+| **Return type** | <xref:System.IDisposable> | <xref:Orleans.Runtime.IGrainTimer> |
 | **Callback signature** | `Func<object, Task>` | `Func<TState, CancellationToken, Task>` |
 | **State type** | `object` (untyped) | `TState` (strongly typed) |
 | **CancellationToken** | Not supported | Supported, canceled on disposal or deactivation |

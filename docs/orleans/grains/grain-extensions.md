@@ -30,7 +30,7 @@ public interface IGrainDeactivateExtension : IGrainExtension
 
 Next, implement the `GrainDeactivateExtension` class, providing the implementation for the `Deactivate` method.
 
-To access the target grain, retrieve the `IGrainContext` from the constructor. It's injected via dependency injection when creating the extension.
+To access the target grain, retrieve the <xref:Orleans.Runtime.IGrainContext> from the constructor. It's injected via dependency injection when creating the extension.
 
 ```csharp
 public sealed class GrainDeactivateExtension : IGrainDeactivateExtension

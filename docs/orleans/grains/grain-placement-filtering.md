@@ -129,7 +129,7 @@ To implement a custom placement filter in Orleans, follow these steps:
 3. **Apply the Filter**
    - Add the Attribute to a grain class to apply the filter
 
-Here is an example of a simple custom Placement Filter. It is similar in behavior to using `[PreferLocalPlacement]` without any filter, but this has the advantage of being able to specify any placement method. Whereas `PreferLocalPlacement` falls back to Random placement if the local silo is unable to host a grain, this example has configured `ActivationCountBasedPlacement`. Any other placement could similarly be used with this filter
+Here is an example of a simple custom Placement Filter. It is similar in behavior to using `[PreferLocalPlacement]` without any filter, but this has the advantage of being able to specify any placement method. Whereas <xref:Orleans.Runtime.PreferLocalPlacement> falls back to Random placement if the local silo is unable to host a grain, this example has configured <xref:Orleans.Runtime.ActivationCountBasedPlacement>. Any other placement could similarly be used with this filter
 
 ```csharp
 [AttributeUsage(

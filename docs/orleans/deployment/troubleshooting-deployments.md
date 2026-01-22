@@ -37,9 +37,17 @@ If this exception occurs during initial client connection (`IClusterClient.Conne
 - **Mismatched configuration between components**: All silos and clients must use the same clustering provider and configuration to join the same cluster.
 - **Using local configuration when deploying to cloud environments**: Ensure clustering provider configuration is appropriate for the deployment environment.
 
-## Version issues
+## Version considerations
 
-Ensure the same version of Orleans is used in every project in the solution. Mixing Orleans versions can lead to serialization errors, communication failures, or unexpected behavior.
+Orleans 7.0 and later includes a version-tolerant serializer that supports rolling upgrades and mixed-version clusters. You can safely run silos with different Orleans versions during deployments, as long as the versions are within the same major version family (for example, 8.x with 8.y).
+
+However, it's still recommended to keep Orleans versions consistent across your solution to:
+
+- Avoid confusion during debugging
+- Ensure all features work as expected
+- Simplify dependency management
+
+For information about the version-tolerant serializer, see [Orleans serialization](../host/configuration-guide/serialization.md).
 
 ## Missing logs
 

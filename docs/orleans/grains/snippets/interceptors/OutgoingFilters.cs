@@ -1,47 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Orleans.Hosting;
 using Orleans.Runtime;
 
 namespace Orleans.Docs.Snippets.Interceptors;
-
-// <logging_outgoing_filter>
-public class OutgoingLoggingCallFilter : IOutgoingGrainCallFilter
-{
-    private readonly ILogger<OutgoingLoggingCallFilter> _logger;
-
-    public OutgoingLoggingCallFilter(ILogger<OutgoingLoggingCallFilter> logger)
-    {
-        _logger = logger;
-    }
-
-    public async Task Invoke(IOutgoingGrainCallContext context)
-    {
-        try
-        {
-            await context.Invoke();
-
-            _logger.LogInformation(
-                "{GrainType}.{MethodName} returned value {Result}",
-                context.Grain.GetType(),
-                context.MethodName,
-                context.Result);
-        }
-        catch (Exception exception)
-        {
-            _logger.LogError(
-                exception,
-                "{GrainType}.{MethodName} threw an exception",
-                context.Grain.GetType(),
-                context.MethodName);
-
-            // If this exception is not re-thrown, it is considered to be
-            // handled by this filter.
-            throw;
-        }
-    }
-}
-// </logging_outgoing_filter>
 
 public static class OutgoingFilterRegistration
 {

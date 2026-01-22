@@ -72,23 +72,11 @@ In Orleans 7+, nothing happens during initialization. Code generation occurs onl
 
 Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> extension method:
 
-```csharp
-builder.ConfigureApplicationParts(
-    parts => parts
-        .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
-        .WithCodeGeneration());
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="with_code_generation":::
 
 In the preceding example, `builder` can be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>. Pass an optional <xref:Microsoft.Extensions.Logging.ILoggerFactory> instance to `WithCodeGeneration` to enable logging during code generation, for example:
 
-```csharp
-ILoggerFactory codeGenLoggerFactory = new LoggerFactory();
-codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
-    builder.ConfigureApplicationParts(
-        parts => parts
-            .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
-            .WithCodeGeneration(codeGenLoggerFactory));
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="with_code_generation_logging":::
 
 :::zone-end
 
@@ -129,10 +117,7 @@ The <xref:Orleans.CodeGeneration.KnownAssemblyAttribute> instructs the code gene
 
 Then, add the generated assembly to the client/silo during initialization:
 
-```csharp
-builder.ConfigureApplicationParts(
-    parts => parts.AddApplicationPart("CodeGenAssembly"));
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="add_application_part":::
 
 In the preceding example, `builder` can be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 

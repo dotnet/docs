@@ -97,7 +97,7 @@ Orleans 3.x is a legacy version. For new projects, consider upgrading to Orleans
 
 Key differences from newer versions:
 
-- Uses `ClientBuilder` and `SiloHostBuilder` instead of the unified `UseOrleans()` pattern.
+- Uses <xref:Orleans.ClientBuilder> and <xref:Orleans.Hosting.SiloHostBuilder> instead of the unified `UseOrleans()` pattern.
 - Requires `ConfigureApplicationParts()` for assembly scanning.
 - Uses the legacy code generator instead of source generators.
 
@@ -124,7 +124,7 @@ The grain is one of several Orleans primitives. In terms of the actor model, a g
 
 Grain identities are user-defined keys, making grains always available for invocation. Other grains or any number of external clients can invoke grains. Each grain is an instance of a class implementing one or more of the following interfaces:
 
-- <xref:Orleans.IGrainWithGuidKey>: Marker interface for grains with `Guid` keys.
+- <xref:Orleans.IGrainWithGuidKey>: Marker interface for grains with <xref:System.Guid> keys.
 - <xref:Orleans.IGrainWithIntegerKey>: Marker interface for grains with `Int64` keys.
 - <xref:Orleans.IGrainWithStringKey>: Marker interface for grains with `string` keys.
 - <xref:Orleans.IGrainWithGuidCompoundKey>: Marker interface for grains with compound keys.

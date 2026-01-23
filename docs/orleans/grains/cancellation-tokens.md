@@ -25,7 +25,7 @@ Cancellation is cooperative, meaning your grain implementation must observe the 
 
 Before a grain call is made, the runtime checks if the provided <xref:System.Threading.CancellationToken> is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without issuing the request. Similarly, if an enqueued request is canceled before a grain begins executing it, it is cancelled without being executed.
 
-While the grain call is executing, the runtime listens for cancellation, propagating the cancellation signal to the remote caller. Cancellation signals are only propagated while the call is active. Once the call completes (either normally or with an error), any subsequent cancellation signal will not be propagated to the remote caller even if it is still executing. These semantics are similar to how cancellation with remote calls works with other APIs such as `HttpClient`, gRPC, or Azure API clients.
+While the grain call is executing, the runtime listens for cancellation, propagating the cancellation signal to the remote caller. Cancellation signals are only propagated while the call is active. Once the call completes (either normally or with an error), any subsequent cancellation signal will not be propagated to the remote caller even if it is still executing. These semantics are similar to how cancellation with remote calls works with other APIs such as <xref:System.Net.Http.HttpClient>, gRPC, or Azure API clients.
 
 ## Basic usage
 
@@ -168,11 +168,11 @@ public record DataPoint(int Index, double Value);
 
 ### Consuming the stream
 
-When you consume async enumerables, you have two approaches for passing cancellation tokens: [Direct method call with cancellation](#approach-1-direct-method-call-with-cancellation) and [using the WithCancellation extension method](#approach-2-using-the-withcancellation-extension-method).
+When you consume async enumerables, you have two approaches for passing cancellation tokens: [Direct method call with cancellation](#approach-1-direct-method-call-with-cancellation) and [using the `WithCancellation` extension method](#approach-2-using-the-withcancellation-extension-method).
 
 #### Approach 1: Direct method call with cancellation
 
-When the async enumerable method has a `[EnumeratorCancellation]` parameter, pass the token directly:
+When the async enumerable method has an <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute> parameter, pass the token directly:
 
 ```csharp
 var grain = grainFactory.GetGrain<IDataStreamGrain>(Guid.NewGuid());
@@ -198,7 +198,7 @@ catch (OperationCanceledException)
 }
 ```
 
-#### Approach 2: Using the `WithCancellation` extension method
+#### Approach 2: Using the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method
 
 For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token:
 
@@ -259,9 +259,9 @@ clientBuilder.Configure<ClientMessagingOptions>(options =>
 
 ### Configuration options explained
 
-- **`CancelRequestOnTimeout`**: When `true`, Orleans automatically sends a cancellation signal to the target grain if a request times out. This helps notify long-running operations that the caller is no longer waiting.
+- **<xref:Orleans.Configuration.MessagingOptions.CancelRequestOnTimeout>**: When `true`, Orleans automatically sends a cancellation signal to the target grain if a request times out. This helps notify long-running operations that the caller is no longer waiting.
 
-- **`WaitForCancellationAcknowledgement`**: When `true`, the cancellation call waits for the target grain to acknowledge that it received the cancellation signal. This provides stronger guarantees but can impact performance in high-throughput scenarios.
+- **<xref:Orleans.Configuration.MessagingOptions.WaitForCancellationAcknowledgement>**: When `true`, the cancellation call waits for the target grain to acknowledge that it received the cancellation signal. This provides stronger guarantees but can impact performance in high-throughput scenarios.
 
 ## Diagnostics and troubleshooting
 
@@ -515,7 +515,7 @@ To use the legacy <xref:Orleans.GrainCancellationToken>:
 
 - <xref:System.Threading.CancellationToken>
 - <xref:System.OperationCanceledException>
-- <xref:System.Collections.Generic.IAsyncEnumerable`1>
+- <xref:System.Collections.Generic.IAsyncEnumerable%601>
 - <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute>
 - <xref:Orleans.Configuration.SiloMessagingOptions>
 - <xref:Orleans.Configuration.ClientMessagingOptions>

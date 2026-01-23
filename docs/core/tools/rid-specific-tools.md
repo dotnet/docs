@@ -75,7 +75,7 @@ Use **`ToolPackageRuntimeIdentifiers`** when:
 
 - You want to define **RID-specific behavior only for the tool packaging**, without changing how the project builds for other deployment scenarios.
 - You're using **Native AOT** and plan to **manually build** AOT binaries per RID with `dotnet pack -r <RID>`.
-  - You want a **hybrid model** where some RIDs get Native AOT and others fall back to a portable CoreCLR implementation.
+- You want a **hybrid model** where some RIDs get Native AOT and others fall back to a portable CoreCLR implementation.
 
 When you don't set `PublishAot`, the set of RIDs in `ToolPackageRuntimeIdentifiers` should be equal to or a subset of the RIDs in `RuntimeIdentifiers`. When you enable `PublishAot`, RID-specific packages are generated only when you build for a specific RID (for example, `dotnet pack -r linux-x64`).
 

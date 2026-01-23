@@ -161,11 +161,11 @@ You can achieve this "hybrid" model with the following pattern:
 
 1. **Build Native AOT packages for selected RIDs.**
 
-   For each AOT-enabled RID, run `dotnet pack -r <RID>` on a suitable build environment. For example:
+   Native AOT compilation requires building on the target platform. Build each AOT-enabled RID package on the matching platform using `dotnet pack -r <RID>`:
 
-   ```dotnetcli
-   dotnet pack -r win-x64      # on Windows x64
-   ```
+   - On Windows x64: `dotnet pack -r win-x64`
+   - On Linux ARM64: `dotnet pack -r linux-arm64`
+   - On macOS ARM64: `dotnet pack -r osx-arm64`
 
 1. **Build a CoreCLR fallback package.**
 
@@ -230,24 +230,43 @@ This makes it a useful way to experiment with RID-specific, AOT-compiled tools a
 
 ## Package structure
 
-### Package types
+When you create a RID-specific tool, the packaging process generates multiple NuGet packages:
 
-RID-specific tool packages use two package types:
+- **Top-level package** (`yourtool.1.0.0.nupkg`): Contains metadata that identifies the tool as RID-specific and lists which RID-specific packages are available. This package has the type `DotnetTool`.
+- **RID-specific packages** (for example, `yourtool.linux-x64.1.0.0.nupkg`, `yourtool.osx-arm64.1.0.0.nupkg`): Contain the actual tool binaries for each platform. These packages have the type `DotnetToolRidPackage`.
 
-- **DotnetTool**: The top-level package that contains metadata.
-- **DotnetToolRidPackage**: The RID-specific packages that contain the actual tool binaries.
+When you run `dotnet tool install`, the CLI:
 
-### Package metadata
-
-The top-level package includes metadata that signals it's a RID-specific tool and lists the RID-specific packages. When you run `dotnet tool install`, the CLI reads this metadata to determine which RID-specific package to install for the current platform.
+1. Downloads the top-level package.
+1. Reads the metadata to see which RID-specific packages are available.
+1. Determines which RID-specific package matches the current platform.
+1. Downloads and installs the appropriate RID-specific package.
 
 ## Publish your tool
 
-Publish all packages to NuGet.org or your package feed by using [dotnet nuget push](dotnet-nuget-push.md):
+When publishing RID-specific tool packages, the .NET CLI uses the version number of the top-level package to select the matching RID-specific packages. This means:
 
-```dotnetcli
-dotnet nuget push path/to/package/root/*.nupkg
-```
+- All RID-specific packages must have the exact same version as the top-level package.
+- All packages must be published to your feed before the top-level package becomes available.
+
+To ensure a smooth publishing process:
+
+1. Publish all RID-specific packages first:
+
+   ```dotnetcli
+   dotnet nuget push yourtool.win-x64.1.0.0.nupkg
+   dotnet nuget push yourtool.linux-x64.1.0.0.nupkg
+   dotnet nuget push yourtool.osx-arm64.1.0.0.nupkg
+   dotnet nuget push yourtool.any.1.0.0.nupkg
+   ```
+
+1. Publish the top-level package last:
+
+   ```dotnetcli
+   dotnet nuget push yourtool.1.0.0.nupkg
+   ```
+
+Publishing the top-level package last ensures that all referenced RID-specific packages are available when users install your tool. If a user installs your tool before all RID packages are published, the installation will fail.
 
 ## Install and run tools
 

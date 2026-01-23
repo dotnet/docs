@@ -12,9 +12,7 @@ One important aspect of Orleans is its support for customization of serializatio
 
 ## Serialization providers
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans provides two serializer implementations:
 
@@ -95,9 +93,7 @@ Additional considerations would be to expose an overload that accepts custom ser
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this article. Integrations for some common serializers are maintained alongside Orleans, for example:
 

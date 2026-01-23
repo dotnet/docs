@@ -1,8 +1,9 @@
 ---
 title: Orleans silo lifecycles
 description: Learn about .NET Orleans silo lifecycles.
-ms.date: 05/23/2025
+ms.date: 01/22/2026
 ms.topic: overview
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans silo lifecycle overview
@@ -110,22 +111,20 @@ class StartupTask : ILifecycleParticipant<ISiloLifecycle>
 
 From the preceding implementation, you can see that in the `Participate(...)` call, it subscribes to the silo lifecycle at the configured stage, passing the application callback rather than its initialization logic. Components needing initialization at a given stage would provide their callback, but the pattern remains the same. Now that you have a `StartupTask` ensuring the application's hook is called at the configured stage, you need to ensure the `StartupTask` participates in the silo lifecycle.
 
-For this, you only need to register it in the container. Do this using an extension function on <xref:Orleans.Hosting.ISiloHostBuilder>:
+For this, register it in the container using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on the silo builder:
 
 ```csharp
-public static ISiloHostBuilder AddStartupTask(
-    this ISiloHostBuilder builder,
-    Func<IServiceProvider, CancellationToken, Task> startupTask,
-    int stage = ServiceLifecycleStage.Active)
-{
-    builder.ConfigureServices(services =>
-        services.AddTransient<ILifecycleParticipant<ISiloLifecycle>>(
-            serviceProvider =>
-                new StartupTask(
-                    serviceProvider, startupTask, stage)));
-
-    return builder;
-}
+siloBuilder.AddStartupTask(
+    async (serviceProvider, cancellationToken) =>
+    {
+        var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
+        logger.LogInformation("Silo is starting up...");
+        
+        // Perform initialization logic, such as warming caches or validating configuration
+        var config = serviceProvider.GetRequiredService<IConfiguration>();
+        await ValidateExternalDependenciesAsync(config, cancellationToken);
+    },
+    ServiceLifecycleStage.Active);
 ```
 
 By registering the `StartupTask` in the silo's service container as the marker interface `ILifecycleParticipant<ISiloLifecycle>`, you signal to the silo that this component needs to participate in the silo lifecycle.

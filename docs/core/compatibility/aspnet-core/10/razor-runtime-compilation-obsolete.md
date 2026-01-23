@@ -2,6 +2,7 @@
 title: "Breaking change: Razor runtime compilation is obsolete"
 description: Learn about the breaking change in ASP.NET Core 10.0 where Razor runtime compilation APIs have been marked obsolete.
 ms.date: 08/08/2025
+ms.custom: https://github.com/aspnet/Announcements/issues/522
 ---
 
 # Razor runtime compilation is obsolete

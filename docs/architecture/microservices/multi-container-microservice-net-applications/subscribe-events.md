@@ -345,9 +345,6 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 - **Introducing Event Sourcing** \
     [https://learn.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)](/previous-versions/msp-n-p/jj591559(v=pandp.10))
 
-- **Event Store database**. Official site. \
-    <https://geteventstore.com/>
-
 - **Patrick Nommensen. Event-Driven Data Management for Microservices** \
     <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
 

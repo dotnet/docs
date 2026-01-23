@@ -42,6 +42,6 @@ void DisableStatsCollection()
 
 Retrieve the statistics by calling:
 
- ```csharp
+```csharp
 LogConsistencyStatistics GetStats()
 ```

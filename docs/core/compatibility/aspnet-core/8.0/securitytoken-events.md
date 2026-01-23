@@ -2,6 +2,7 @@
 title: "Breaking change: Security token events return a JsonWebToken"
 description: Learn about the breaking change in ASP.NET Core 8.0 where the JwtBearer, WsFederation, and OpenIdConnect events context properties of type 'SecurityToken' now return a 'JsonWebToken' by default.
 ms.date: 07/31/2023
+ms.custom: https://github.com/aspnet/Announcements/issues/508
 ---
 # Security token events return a JsonWebToken
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Output caching API changes"
 description: Learn about the breaking change in ASP.NET Core 7.0 where changes were made to some output caching APIs.
 ms.date: 10/10/2022
+ms.custom: https://github.com/aspnet/Announcements/issues/492
 ---
 # Output caching API changes
 

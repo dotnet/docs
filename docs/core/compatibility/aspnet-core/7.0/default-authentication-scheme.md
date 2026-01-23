@@ -2,6 +2,7 @@
 title: "Breaking change: Default authentication scheme"
 description: Learn about the breaking change in ASP.NET Core 7.0 where a singly registered authentication scheme will cause it to be used as the default.
 ms.date: 07/20/2022
+ms.custom: https://github.com/aspnet/Announcements/issues/490
 ---
 # Default authentication scheme
 

@@ -1,7 +1,7 @@
 ---
 title: "Namespace alias operator - the `::` is used to access a member of an aliased namespace."
 description: "The C# namespace alias qualifier `::` is used to access a member of an aliased namespace. The `::` operator is often used with the `global` alias, an alias for the global namespace"
-ms.date: 11/28/2022
+ms.date: 01/20/2026
 f1_keywords: 
   - "::_CSharpKeyword"
   - "global_CSharpKeyword"
@@ -14,7 +14,11 @@ helpviewer_keywords:
 ---
 # :: operator - the namespace alias operator
 
-Use the namespace alias qualifier `::` to access a member of an aliased namespace. You can use the `::` qualifier only between two identifiers. The left-hand identifier can be one of a namespace alias, an extern alias, or the `global` alias. For example:
+Use the namespace alias qualifier `::` to access a member of an aliased namespace. You can use the `::` qualifier only between two identifiers. The left-hand identifier can be one of a namespace alias, an extern alias, or the `global` alias.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+For example:
 
 - A namespace alias created with a [using alias directive](../keywords/using-directive.md):
 

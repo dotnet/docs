@@ -3,6 +3,7 @@ title: "Breaking change: Pubternal APIs removed"
 description: "Learn about the breaking change in ASP.NET Core 5.0 where some pubternal localization APIs were removed"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/377
 ---
 # Localization: "Pubternal" APIs removed
 

@@ -8,7 +8,11 @@ zone_pivot_groups: orleans-version
 
 # Grain lifecycle overview
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
 Orleans grains use an observable lifecycle (see [Orleans Lifecycle](../implementation/orleans-lifecycle.md)) for ordered activation and deactivation. This allows grain logic, system components, and application logic to start and stop in an ordered manner during grain activation and collection.
+
+:::zone-end
 
 ## Stages
 
@@ -225,3 +229,150 @@ public class MyGrain : Grain, IMyGrain
     }
 }
 ```
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## Grain migration
+
+Grain migration allows grain activations to move from one silo to another while preserving their in-memory state. This enables load balancing and cluster optimization without losing grain state. The migration process involves:
+
+1. **Dehydration**: Serializing the grain's state on the source silo before deactivation
+2. **Transfer**: Sending the serialized state to the target silo
+3. **Rehydration**: Restoring the grain's state on the new activation before `OnActivateAsync` is called
+
+### When migration occurs
+
+Migration can occur in several scenarios:
+
+- **Application-initiated**: A grain can request migration by calling `this.MigrateOnIdle()`
+- **Activation repartitioner**: Automatically collocates frequently communicating grains to optimize call locality (experimental)
+- **Activation rebalancer**: Distributes activations to balance load across silos (experimental)
+
+### Implementing migration support
+
+Grains can participate in migration by implementing <xref:Orleans.IGrainMigrationParticipant>:
+
+```csharp
+public interface IGrainMigrationParticipant
+{
+    void OnDehydrate(IDehydrationContext dehydrationContext);
+    void OnRehydrate(IRehydrationContext rehydrationContext);
+}
+```
+
+#### Option 1: Implement IGrainMigrationParticipant directly
+
+For grains with custom in-memory state that should be preserved during migration:
+
+```csharp
+public class MyMigratableGrain : Grain, IMyGrain, IGrainMigrationParticipant
+{
+    private int _cachedValue;
+    private string _sessionData;
+
+    public void OnDehydrate(IDehydrationContext dehydrationContext)
+    {
+        // Save state before migration
+        dehydrationContext.TryAddValue("cached", _cachedValue);
+        dehydrationContext.TryAddValue("session", _sessionData);
+    }
+
+    public void OnRehydrate(IRehydrationContext rehydrationContext)
+    {
+        // Restore state after migration
+        rehydrationContext.TryGetValue("cached", out _cachedValue);
+        rehydrationContext.TryGetValue("session", out _sessionData);
+    }
+}
+```
+
+#### Option 2: Use Grain&lt;TState&gt; or IPersistentState&lt;T&gt;
+
+Grains using <xref:Orleans.Grain%601> or <xref:Orleans.Runtime.IPersistentState%601> automatically support migration. Their state is serialized and restored without additional code:
+
+```csharp
+// Automatic migration support via Grain<TState>
+public class MyStatefulGrain : Grain<MyGrainState>, IMyGrain
+{
+    public Task UpdateValue(int value)
+    {
+        State.Value = value;
+        return WriteStateAsync();
+    }
+}
+
+// Automatic migration support via IPersistentState<T>
+public class MyOtherGrain : Grain, IMyGrain
+{
+    private readonly IPersistentState<MyGrainState> _state;
+
+    public MyOtherGrain(
+        [PersistentState("state", "storage")] IPersistentState<MyGrainState> state)
+    {
+        _state = state;
+    }
+}
+```
+
+### Triggering migration
+
+A grain can request migration to a new silo:
+
+```csharp
+public class MyGrain : Grain, IMyGrain
+{
+    public Task RequestMigration()
+    {
+        // Request migration when the grain becomes idle
+        this.MigrateOnIdle();
+        return Task.CompletedTask;
+    }
+}
+```
+
+You can also specify a preferred target silo using placement hints:
+
+```csharp
+public Task MigrateToSilo(SiloAddress targetSilo)
+{
+    RequestContext.Set(IPlacementDirector.PlacementHintKey, targetSilo);
+    this.MigrateOnIdle();
+    return Task.CompletedTask;
+}
+```
+
+### Preventing automatic migration
+
+Use the <xref:Orleans.Placement.ImmovableAttribute> to prevent automatic migration by the repartitioner or rebalancer:
+
+```csharp
+// Prevent all automatic migration
+[Immovable]
+public class MyImmovableGrain : Grain, IMyGrain { }
+
+// Prevent only repartitioner migration
+[Immovable(ImmovableKind.Repartitioner)]
+public class MyPartiallyImmovableGrain : Grain, IMyGrain { }
+```
+
+The `ImmovableKind` enum provides these options:
+
+| Value | Description |
+|-------|-------------|
+| `Repartitioner` | Won't be migrated by the activation repartitioner |
+| `Rebalancer` | Won't be migrated by the activation rebalancer |
+| `Any` | Won't be migrated by any automatic process (default) |
+
+> [!NOTE]
+> The `[Immovable]` attribute only prevents *automatic* migration. User-initiated migration via `MigrateOnIdle()` still works.
+
+### Non-migratable grain types
+
+The following grain types cannot be migrated:
+
+- Client grains
+- System targets
+- Grain services
+- Stateless worker grains
+
+:::zone-end

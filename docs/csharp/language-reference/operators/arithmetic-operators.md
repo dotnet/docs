@@ -124,7 +124,7 @@ The remainder operator `%` computes the remainder after dividing its left-hand o
 
 ### Integer remainder
 
-For operands of integer types, the result of `a % b` is the value produced by $a - (a / b) \times b$. The sign of the non-zero remainder matches the sign of the left-hand operand, as the following example shows:
+For operands of integer types, the result of `a % b` is the value produced by $a - \frac{a}{b} \times b$. The sign of the non-zero remainder matches the sign of the left-hand operand, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="IntegerRemainder":::
 

@@ -45,6 +45,7 @@ To learn more, see the following resources:
 
 - [Conceptual overview of System.CommandLine](conceptual-overview.md)
 - [Supported types in System.CommandLine](supported-types.md)
+- [DefaultValueFactory vs CustomParser](defaultvalue-vs-customparser.md)
 
 ### How-to guides
 
@@ -55,6 +56,12 @@ To learn more, see the following resources:
 - [How to customize help](how-to-customize-help.md)
 - [How to enable and customize tab completion](how-to-enable-tab-completion.md)
 - [How to use System.CommandLine with NativeAOT](nativeaot.md)
+
+### Advanced patterns
+
+- [Sharing options across commands](sharing-options.md)
+- [Using environment variables with options](environment-variables.md)
+- [Option actions for cross-cutting behaviors](option-actions.md)
 
 ### Additional resources
 

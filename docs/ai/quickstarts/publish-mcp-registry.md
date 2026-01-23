@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Publish an MCP server on NuGet.org to the Official MCP Registry
 
-In this quickstart, you publish your NuGet-based local MCP server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
+In this quickstart, you publish your NuGet-based local MCP server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/design/ecosystem-vision.md).
 
 The Official MCP Registry is an *upstream data source* for the MCP ecosystem. Other MCP registries, such as the [GitHub MCP Registry](https://github.com/mcp), will soon use the Official MCP Registry as a source of MCP server listings.
 

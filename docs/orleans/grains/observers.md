@@ -14,9 +14,9 @@ Client observers are a mechanism allowing asynchronous notification of clients. 
 
 You can use a utility class like <xref:Orleans.Utilities.ObserverManager%601> to simplify the development of observed grain types. Unlike grains, which Orleans automatically reactivates as needed after failure, clients aren't fault-tolerant: a client that fails might never recover. For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Active clients should resubscribe on a timer to keep their subscriptions active.
 
-To subscribe to a notification, the client must first create a local object implementing the observer interface. It then calls a method on the observer factory, <xref:Orleans.IGrainFactory.CreateObjectReference%2A>`, to turn the object into a grain reference. You can then pass this reference to the subscription method on the notifying grain.
+To subscribe to a notification, the client must first create a local object implementing the observer interface. It then calls the <xref:Orleans.IGrainFactory.CreateObjectReference*> method on the grain factory to turn the object into a grain reference. You can then pass this reference to the subscription method on the notifying grain.
 
-Other grains can also use this model to receive asynchronous notifications. Grains can implement <xref:Orleans.IGrainObserver> interfaces. Unlike the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example,, `this.AsReference<IMyGrainObserverInterface>()`). There's no need for `CreateObjectReference()` because grains are already addressable.
+Other grains can also use this model to receive asynchronous notifications. Grains can implement <xref:Orleans.IGrainObserver> interfaces. Unlike the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example, `this.AsReference<IMyGrainObserverInterface>()`). There's no need for <xref:Orleans.IGrainFactory.CreateObjectReference*> because grains are already addressable.
 
 ## Code example
 
@@ -47,7 +47,7 @@ public class Chat : IChat
 }
 ```
 
-On the server, you should next have a grain that sends these chat messages to clients. The grain should also provide a mechanism for clients to subscribe and unsubscribe from notifications. For subscriptions, the grain can use an instance of the utility class <xref:Orleans.Utilities.ObserverManager%601>.
+On the server, you should next have a grain that sends these chat messages to clients. The grain should also provide a mechanism for clients to subscribe and unsubscribe from notifications. For subscriptions, the grain can use an instance of the utility class [ObserverManager\<IChat>](<xref:Orleans.Utilities.ObserverManager%601>).
 
 > [!NOTE]
 > <xref:Orleans.Utilities.ObserverManager%601> is part of Orleans since version 7.0. For older versions, the following [implementation](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12) can be copied.
@@ -82,7 +82,7 @@ class HelloGrain : Grain, IHello
 }
 ```
 
-To send a message to clients, use the `Notify` method of the `ObserverManager<IChat>` instance. The method takes an `Action<T>` method or lambda expression (where `T` is of type `IChat` here). You can call any method on the interface to send it to clients. In our case, we only have one method, `ReceiveMessage`, and our sending code on the server looks like this:
+To send a message to clients, use the <xref:Orleans.Utilities.ObserverManager%602.Notify*> method of the [ObserverManager\<IChat>](<xref:Orleans.Utilities.ObserverManager%601>) instance. The method takes an `Action<T>` method or lambda expression (where `T` is of type `IChat` here). You can call any method on the interface to send it to clients. In our case, we only have one method, `ReceiveMessage`, and our sending code on the server looks like this:
 
 ```csharp
 public Task SendUpdateMessage(string message)
@@ -112,7 +112,7 @@ await friend.Subscribe(obj);
 Now, whenever our grain on the server calls the `SendUpdateMessage` method, all subscribed clients receive the message. In our client code, the `Chat` instance in the variable `c` receives the message and outputs it to the console.
 
 > [!IMPORTANT]
-> Objects passed to `CreateObjectReference` are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
+> Objects passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
 
 You should maintain a reference for each observer you don't want collected.
 

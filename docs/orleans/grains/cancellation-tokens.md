@@ -198,7 +198,7 @@ catch (OperationCanceledException)
 }
 ```
 
-#### Approach 2: Using the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method
+#### Approach 2: Using the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method {#approach-2-using-the-withcancellation-extension-method}
 
 For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token:
 

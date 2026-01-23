@@ -139,7 +139,7 @@ With `PublishAot=true`:
 
 Some tools want the best of both worlds:
 
-- **Native AOT** for a subset of high-priority platforms (for example, Linux and macOS).
+- **Native AOT** for a subset of high-priority platforms (per your needs).
 - A **portable CoreCLR fallback** that works on any platform, including those without an AOT build (for example, Windows when no AOT build is produced).
 
 You can achieve this "hybrid" model with the following pattern:

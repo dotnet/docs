@@ -128,10 +128,7 @@ When you set `PublishAot` to `true`, the packing behavior changes:
   - Produces the **top-level pointer package** (package type `DotnetTool`).
   - Does **not** automatically produce RID-specific packages, because Native AOT requires building on (or for) a specific platform.
 
-- RID-specific AOT packages are produced only when you explicitly pass `-r <RID>`:
-  - `dotnet pack -r linux-x64`
-  - `dotnet pack -r osx-arm64`
-  - and so on.
+- RID-specific AOT packages are produced only when you explicitly pass `-r <RID>`, for example, `dotnet pack -r linux-x64` or `dotnet pack -r osx-arm64`.
 
 With `PublishAot=true`:
 
@@ -147,7 +144,7 @@ Some tools want the best of both worlds:
 
 You can achieve this "hybrid" model with the following pattern:
 
-1. **Configure the tool for Native AOT and tool-specific RIDs**
+1. **Configure the tool for Native AOT and tool-specific RIDs.**
 
    In your project file, use `ToolPackageRuntimeIdentifiers` and enable `PublishAot`:
 
@@ -156,7 +153,7 @@ You can achieve this "hybrid" model with the following pattern:
    <PublishAot>true</PublishAot>
    ```
 
-1. **Create the pointer package**
+1. **Create the pointer package.**
 
    Run `dotnet pack` once (on any platform) to build the top-level package that points to the RID-specific packages:
 
@@ -164,7 +161,7 @@ You can achieve this "hybrid" model with the following pattern:
    dotnet pack
    ```
 
-1. **Build Native AOT packages for selected RIDs**
+1. **Build Native AOT packages for selected RIDs.**
 
    For each AOT-enabled RID, run `dotnet pack -r <RID>` on a suitable build environment. For example:
 
@@ -174,7 +171,7 @@ You can achieve this "hybrid" model with the following pattern:
    dotnet pack -r linux-x64      # on Linux x64
    ```
 
-1. **Build a CoreCLR fallback package**
+1. **Build a CoreCLR fallback package.**
 
    To provide a universal fallback, pack the `any` RID without AOT:
 

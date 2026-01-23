@@ -17,7 +17,7 @@ The `group` clause returns a sequence of <xref:System.Linq.IGrouping%602> object
 
 You can end a query expression with a `group` clause, as shown in the following example:
 
-:::code language="csharp" source="./snipets/group.cs" id="10":::
+:::code language="csharp" source="./snippets/group.cs" id="10":::
 
 If you want to perform additional query operations on each group, specify a temporary identifier by using the [into](into.md) contextual keyword. When you use `into`, you must continue with the query, and eventually end it with either a `select` statement or another `group` clause, as shown in the following excerpt:
 

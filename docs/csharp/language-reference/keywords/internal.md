@@ -67,7 +67,7 @@ In this example, use the same files you used in the first example, but change th
 ```csharp
 // Assembly2.cs
 // Compile with: /target:library
-public class BaseClasS
+public class BaseClass
 {
    internal static int intM = 0;
 }

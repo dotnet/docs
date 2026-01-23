@@ -96,7 +96,7 @@ After the code changes finish, the migration proceeds with a validation and fix 
 
 After all processes complete, the migration generates a summary as the final step. Review the code changes and confirm them by selecting **Keep**.
 
-### Chat based migration
+### Chat-based migration
 
 The `AppModernization-DotNet` custom agent is optimized for application modernization tasks and enables you to use simple, natural language prompts to perform complex migration scenarios.
 

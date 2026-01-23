@@ -10,17 +10,17 @@ ai-usage: ai-assisted
 
 **This article applies to:** ✔️ .NET SDK 10 and later versions
 
-Package .NET tools for specific platforms and architectures so you can distribute native, fast, and trimmed applications. This capability makes it easier to distribute native, fast, trimmed .NET applications for command-line tools like MCP servers or other platform-specific utilities.
+Package .NET tools for specific platforms and architectures so you can distribute native, fast, and trimmed applications. This capability makes it easier to distribute optimized applications for command-line tools like MCP servers or other platform-specific utilities.
 
 ## Overview
 
-Starting with .NET SDK 10, you can create .NET tools that target specific Runtime Identifiers (RIDs). These tools can be:
+Starting with .NET SDK 10, you can create .NET tools that target specific operating system environments (represented by Runtime Identifiers (RIDs)). These tools can be:
 
 - **RID-specific**: Compiled for particular operating systems and architectures.
 - **Self-contained**: Include the .NET runtime and don't require a separate .NET installation.
 - **Native AOT**: Use Ahead-of-Time compilation for faster startup and smaller memory footprint.
 
-When users install a RID-specific tool, the .NET CLI automatically selects and installs the appropriate package for their platform.
+Users don't notice a difference when they install the tool. The .NET CLI automatically selects and installs the best package for their platform.
 
 ## Opt in to RID-specific packaging
 
@@ -52,9 +52,9 @@ Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configu
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
+    <PublishAot>true</PublishAot>
     <ToolCommandName>mytool</ToolCommandName>
     <ToolPackageRuntimeIdentifiers>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifiers>
-    <PublishAot>true</PublishAot>
   </PropertyGroup>
 </Project>
 ```
@@ -68,7 +68,7 @@ Both `RuntimeIdentifiers` and `ToolPackageRuntimeIdentifiers` opt your tool into
 Use **`RuntimeIdentifiers`** when:
 
 - You want the project to **build and publish RID-specific apps in general** (not just as a tool).
-- You're primarily targeting **CoreCLR** (non-AOT) or you want the standard SDK behavior where a single `dotnet pack` can produce RID-specific packages.
+- You're primarily targeting **CoreCLR** (non-AOT) or you want the standard SDK behavior where a single `dotnet pack` produces multiple RID-specific packages.
 - You may conditionalize `PublishAot` for a subset of RIDs, but you still want a CoreCLR-based package for every RID in `RuntimeIdentifiers`.
 
 Use **`ToolPackageRuntimeIdentifiers`** when:
@@ -77,9 +77,12 @@ Use **`ToolPackageRuntimeIdentifiers`** when:
 - You're using **Native AOT** and plan to **manually build** AOT binaries per RID with `dotnet pack -r <RID>`.
 - You want a **hybrid model** where some RIDs get Native AOT and others fall back to a portable CoreCLR implementation.
 
-When you don't enable `PublishAot`, the set of RIDs in `ToolPackageRuntimeIdentifiers` should be equal to or a subset of the RIDs in `RuntimeIdentifiers`. When you enable `PublishAot`, RID-specific packages are generated only when you build for a specific RID (for example, `dotnet pack -r linux-x64`).
+Notes:
 
-The top-level pointer package is informed by `ToolPackageRuntimeIdentifiers` or `RuntimeIdentifiers`, in that precedence order: if you specify `ToolPackageRuntimeIdentifiers`, it determines the tool RIDs; otherwise, `RuntimeIdentifiers` is used.
+- The top-level pointer package specifies the available RID-specific packages. If you specify `ToolPackageRuntimeIdentifiers`, it determines the tool RIDs; otherwise, `RuntimeIdentifiers` is used.
+- `ToolPackageRuntimeIdentifiers` should be equal to or a subset of the RIDs in `RuntimeIdentifiers`
+- When `PublishAot=true`, RID-specific packages are generated only when you pack for a specific RID (for example, `dotnet pack -r linux-x64`).
+- Native AOT builds (`PublishAot=true`) is only supported when the build OS and target OS match.
 
 ## Package your tool
 
@@ -87,7 +90,7 @@ The packaging process differs depending on whether you're using AOT compilation.
 
 ### RID-specific and self-contained tools
 
-For tools without AOT compilation, run `dotnet pack` once:
+Run `dotnet pack` once:
 
 ```dotnetcli
 dotnet pack
@@ -136,29 +139,23 @@ You must run each RID-specific pack command on a platform where the OS matches t
 
 When you set `PublishAot` to `true`, the packing behavior changes:
 
-- A regular `dotnet pack` with `PublishAot=true`:
-  - Produces the **top-level pointer package** (package type `DotnetTool`).
-  - Does **not** automatically produce RID-specific packages, because Native AOT requires building on (or for) a specific platform.
-
+- `dotnet pack` produces the **top-level pointer package** (package type `DotnetTool`).
 - RID-specific AOT packages are produced only when you explicitly pass `-r <RID>`, for example, `dotnet pack -r linux-x64` or `dotnet pack -r osx-arm64`.
-
-With `PublishAot=true`:
-
-- `RuntimeIdentifiers` or `ToolPackageRuntimeIdentifiers` describe the set of RIDs your tool intends to support.
-- You're responsible for invoking `dotnet pack -r <RID>` for each of those RIDs on the appropriate build environment (for example, on Windows for `win-x64`).
 
 ### Hybrid AOT + CoreCLR packaging pattern (example)
 
 Some tools want the best of both worlds:
 
-- **Native AOT** for a subset of high-priority platforms (for example, Linux and macOS).
+- **Native AOT** for a subset of high-priority platforms (depending on the tool).
 - A **portable CoreCLR fallback** that works on platforms not targeted by the Native AOT builds.
 
 You can achieve this "hybrid" model with the following pattern:
 
 1. **Configure the tool for Native AOT and tool-specific RIDs.**
 
-   In your project file, use `ToolPackageRuntimeIdentifiers` and enable `PublishAot`:
+   In your project file, use `ToolPackageRuntimeIdentifiers` and enable `PublishAot`.
+
+   For example:
 
    ```xml
    <ToolPackageRuntimeIdentifiers>osx-arm64;linux-arm64;linux-x64;any</ToolPackageRuntimeIdentifiers>
@@ -175,11 +172,13 @@ You can achieve this "hybrid" model with the following pattern:
 
 1. **Build Native AOT packages for selected RIDs.**
 
-   Native AOT compilation requires building on the target platform. Build each AOT-enabled RID package on the matching platform using `dotnet pack -r <RID>`:
+   Native AOT compilation requires building on the target platform. Build each AOT-enabled RID package on the matching platform using `dotnet pack -r <RID>`.
 
-   - On Windows x64: `dotnet pack -r win-x64`
-   - On Linux ARM64: `dotnet pack -r linux-arm64`
-   - On macOS ARM64: `dotnet pack -r osx-arm64`
+  For example:
+
+  ```
+  dotnet pack -r linux-x64
+  ```
 
 1. **Build a CoreCLR fallback package.**
 
@@ -203,7 +202,7 @@ In this hybrid setup:
 - The pointer package (`yourtool.<version>.nupkg`) references both:
   - RID-specific Native AOT packages (for example, `yourtool.osx-arm64`, `yourtool.linux-x64`).
   - The `any` CoreCLR package as a fallback.
-- The .NET CLI automatically picks the most appropriate package for the user's platform when they run `dotnet tool install`.
+- The .NET CLI automatically picks the most appropriate package for the user's platform when they run `dotnet tool install` or `dnx`.
 
 #### Example: `dotnet10-hybrid-tool`
 
@@ -241,20 +240,6 @@ Mode: CoreCLR
 ```
 
 This makes it a useful way to experiment with RID-specific, AOT-compiled tools and the CoreCLR fallback behavior.
-
-## Package structure
-
-When you create a RID-specific tool, the packaging process generates multiple NuGet packages:
-
-- **Top-level package** (`yourtool.1.0.0.nupkg`): Contains metadata that identifies the tool as RID-specific and lists which RID-specific packages are available. This package has the type `DotnetTool`.
-- **RID-specific packages** (for example, `yourtool.linux-x64.1.0.0.nupkg`, `yourtool.osx-arm64.1.0.0.nupkg`): Contain the actual tool binaries for each platform. These packages have the type `DotnetToolRidPackage`.
-
-When you run `dotnet tool install`, the CLI:
-
-1. Downloads the top-level package.
-1. Reads the metadata to see which RID-specific packages are available.
-1. Determines which RID-specific package matches the current platform.
-1. Downloads and installs the appropriate RID-specific package.
 
 ## Publish your tool
 

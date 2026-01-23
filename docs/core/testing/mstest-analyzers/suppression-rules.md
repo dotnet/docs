@@ -14,9 +14,9 @@ Suppression rules automatically suppress diagnostics from other analyzers (like 
 
 | Rule ID | Title | Suppresses |
 |---------|-------|------------|
-| [MSTEST0027](mstest0027.md) | Suppress async suffix for test methods | VSTHRD200 |
-| [MSTEST0028](mstest0028.md) | Suppress async suffix for test fixture methods | VSTHRD200 |
-| [MSTEST0033](mstest0033.md) | Suppress non-nullable reference not initialized | CS8618 |
+| [MSTEST0027](mstest0027.md) | Suppress async suffix for test methods. | VSTHRD200 |
+| [MSTEST0028](mstest0028.md) | Suppress async suffix for test fixture methods. | VSTHRD200 |
+| [MSTEST0033](mstest0033.md) | Suppress non-nullable reference not initialized. | CS8618 |
 
 ## How suppression rules work
 

@@ -168,7 +168,7 @@ public record DataPoint(int Index, double Value);
 
 ### Consuming the stream
 
-When you consume async enumerables, you have two approaches for passing cancellation tokens: [Direct method call with cancellation](#approach-1-direct-method-call-with-cancellation) and [using the `WithCancellation` extension method](#approach-2-using-the-withcancellation-extension-method).
+When you consume async enumerables, you have two approaches for passing cancellation tokens: [Direct method call with cancellation](#approach-1-direct-method-call-with-cancellation) and [WithCancellation extension method](#approach-2-withcancellation-extension-method).
 
 #### Approach 1: Direct method call with cancellation
 
@@ -198,7 +198,7 @@ catch (OperationCanceledException)
 }
 ```
 
-#### Approach 2: Using the WithCancellation extension method {#approach-2-using-the-withcancellation-extension-method}
+#### Approach 2: WithCancellation extension method
 
 For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method:
 

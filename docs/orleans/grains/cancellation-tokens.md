@@ -198,9 +198,9 @@ catch (OperationCanceledException)
 }
 ```
 
-#### Approach 2: Using the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method {#approach-2-using-the-withcancellation-extension-method}
+#### Approach 2: Using the `WithCancellation` extension method
 
-For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token:
+For scenarios where you have an existing <xref:System.Collections.Generic.IAsyncEnumerable%601> instance or need to override the cancellation token, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*> extension method:
 
 ```csharp
 var grain = grainFactory.GetGrain<IDataStreamGrain>(Guid.NewGuid());

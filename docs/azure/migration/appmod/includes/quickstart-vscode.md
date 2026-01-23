@@ -95,3 +95,23 @@ After the code changes finish, the migration proceeds with a validation and fix 
 1. Analyze the code for migration items missed in the initial code migration and fix them.
 
 After all processes complete, the migration generates a summary as the final step. Review the code changes and confirm them by selecting **Keep**.
+
+### Chat based migration
+
+The `AppModernization-DotNet` custom agent is optimized for application modernization tasks and enables you to use simple, natural language prompts to perform complex migration scenarios.
+
+Use the following steps to select the custom agent and start migration:
+
+1. Make sure you have a Dotnet project open in Visual Studio Code.
+1. Open the Copilot chat window by selecting the chat icon in the **Activity Bar**.
+1. In the chat window, locate the agent selector dropdown menu at the top of the chat input box and select **AppModernization-DotNet** from the list. This custom agent is designed for Dotnet application modernization and migration scenarios.
+
+:::image type="content" source="../media/vscode/custom-agent.png" alt-text="Screenshot of selecting dotnet custom agent in chat window.":::
+
+1. Enter a prompt using the format `migrate from <source> to <target>` in the chat window. For example:
+
+   ```
+   migrate from rabbitmq to Azure service bus
+   ```
+
+1. The agent analyzes your code, creates a migration plan, makes code changes, runs validations, and generates a summary. Select **Continue** to proceed through each step and **Keep** to accept the changes.

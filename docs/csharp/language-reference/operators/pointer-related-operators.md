@@ -88,7 +88,7 @@ You can't use the `->` operator on an expression of type `void*`.
 
 ## Pointer element access operator `[]`
 
-For an expression `p` of a pointer type, a pointer element access of the form `p[n]` is evaluated as `*(p + n)`. The value `n` must be of a type implicitly convertible to `int`, `uint`, `long`, or `ulong`. For information about the behavior of the `+` operator with pointers, see the [Addition or subtraction of an integral value to or from a pointer](#adding-or-subtracting-an-integral-value-to-or-from-a-pointer) section.
+For an expression `p` of a pointer type, a pointer element access of the form `p[n]` is evaluated as `*(p + n)`. The value `n` must be of a type implicitly convertible to `int`, `uint`, `long`, or `ulong`. For information about the behavior of the `+` operator with pointers, see the [Addition or subtraction of an integral value to or from a pointer](#add-or-subtract-an-integral-value-to-or-from-a-pointer) section.
 
 The following example demonstrates how to access array elements by using a pointer and the `[]` operator:
 
@@ -138,7 +138,7 @@ The following example shows pointer subtraction:
 
 ### Pointer increment and decrement
 
-The `++` increment operator [adds](#adding-or-subtracting-an-integral-value-to-or-from-a-pointer) 1 to its pointer operand. The `--` decrement operator [subtracts](#adding-or-subtracting-an-integral-value-to-or-from-a-pointer) 1 from its pointer operand.
+The `++` increment operator [adds](#add-or-subtract-an-integral-value-to-or-from-a-pointer) 1 to its pointer operand. The `--` decrement operator [subtracts](#add-or-subtract-an-integral-value-to-or-from-a-pointer) 1 from its pointer operand.
 
 Both operators support two forms: postfix (`p++` and `p--`) and prefix (`++p` and `--p`). The result of `p++` and `p--` is the value of `p` *before* the operation. The result of `++p` and `--p` is the value of `p` *after* the operation.
 

@@ -124,7 +124,7 @@ The remainder operator `%` computes the remainder after dividing its left-hand o
 
 ### Integer remainder
 
-For operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder matches the sign of the left-hand operand, as the following example shows:
+For operands of integer types, the result of `a % b` is the value produced by $a - (a / b) \times b$. The sign of the non-zero remainder matches the sign of the left-hand operand, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="IntegerRemainder":::
 
@@ -135,7 +135,7 @@ Use the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method to comp
 For the `float` and `double` operands, the result of `x % y` for the finite `x` and `y` is the value `z` such that
 
 - The sign of `z`, if non-zero, matches the sign of `x`.
-- The absolute value of `z` comes from the calculation `|x| - n * |y|`, where `n` is the largest integer less than or equal to `|x| / |y|`. Here, `|x|` and `|y|` represent the absolute values of `x` and `y`, respectively.
+- The absolute value of `z` comes from the calculation $|x| - n \times |y|$, where `n` is the largest integer less than or equal to $|x| / |y|$. Here, $|x|$ and $|y|$ represent the absolute values of `x` and `y`, respectively.
 
 > [!NOTE]
 > This method of computing the remainder is similar to the method used for integer operands, but it differs from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.

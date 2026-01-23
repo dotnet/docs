@@ -241,28 +241,29 @@ Publish all packages to NuGet.org or your package feed by using [dotnet nuget pu
 dotnet nuget push path/to/package/root/*.nupkg
 ```
 
-## Run a RID-specific tool
+## Install and run tools
 
-Users can run RID-specific tools in multiple ways.
+Whether a tool uses RID-specific packaging is an implementation detail that's transparent to users. You install and run tools the same way, regardless of whether the tool developer opted into RID-specific packaging.
 
-If the tool is installed globally and on the `PATH`, you can invoke it directly:
+To install a tool globally:
+
+```dotnetcli
+dotnet tool install -g mytool
+```
+
+Once installed, you can invoke it directly:
 
 ```dotnetcli
 mytool
 ```
 
-You can also use the `dnx` helper, which behaves similarly to `npx` in the Node.js ecosystem: it downloads and launches the tool in a single gesture if it isn't already present:
+You can also use the `dnx` helper, which behaves similarly to `npx` in the Node.js ecosystem: it downloads and launches a tool in a single gesture if it isn't already present:
 
 ```dotnetcli
 dnx mytool
 ```
 
-In both cases, the .NET CLI automatically:
-
-1. Downloads the top-level package.
-1. Reads the RID-specific metadata.
-1. Identifies the most appropriate package for the current platform.
-1. Downloads and runs the RID-specific package.
+When a tool uses RID-specific packaging, the .NET CLI automatically selects the correct package for your platform. You don't need to specify a RID—the CLI infers it from your system and downloads the appropriate RID-specific package.
 
 ## Example: Create an AOT tool
 

@@ -55,30 +55,30 @@ Run the specific task in the **TASKS - .NET** section. For example, the **Migrat
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot starts a session in agent mode.
+When you start the migration, GitHub Copilot starts a session in agent mode.
 
-- The tool creates two files in the `.github/appmod/code-migration/<target-branch-name>` folder:
-  - `plan.md`: The overall migration plan.
-  - `progress.md`: A progress tracker that GitHub Copilot updates as it completes tasks.
+The tool creates two files in the `.github/appmod/code-migration/<target-branch-name>` folder:
+- `plan.md`: The overall migration plan.
+- `progress.md`: A progress tracker that GitHub Copilot updates as it completes tasks.
 
-- Edit these files to customize your migration before you continue.
+Edit these files to customize your migration before you continue.
 
 :::image type="content" source="../media/vscode/start-migration.png" alt-text="Screenshot of plan generation during a migration task.":::
 
 ### Start code remediation
 
-- When you're satisfied with the plan and progress tracker, enter **continue** to start the migration.
+When you're satisfied with the plan and progress tracker, enter **continue** to start the migration.
 
-- GitHub Copilot starts the migration process and might ask for your approval to use knowledge base tools in the Model Context Protocol (MCP) server. Grant permission when prompted.
+GitHub Copilot starts the migration process and might ask for your approval to use knowledge base tools in the Model Context Protocol (MCP) server. Grant permission when prompted.
 
-- Copilot follows the plan and progress tracker to:
-  - Manage dependencies.
-  - Apply configuration changes.
-  - Make code changes.
-  - Build the project, fix all compilation and configuration errors, and ensure a successful build.
-  - Fix security vulnerabilities.
+Copilot follows the plan and progress tracker to:
+- Manage dependencies.
+- Apply configuration changes.
+- Make code changes.
+- Build the project, fix all compilation and configuration errors, and ensure a successful build.
+- Fix security vulnerabilities.
 
-- Repeatedly select or enter **Continue** to confirm the use of tools or commands and wait for the code changes to finish.
+Repeatedly select or enter **Continue** to confirm the use of tools or commands and wait for the code changes to finish.
 
 > [!NOTE]
 > In Visual Studio Code, app modernization uses the `AppModernization-DotNet` custom agent with Claude Sonnet 4.5 by default for best results when updating .NET code to migrate to Azure. It falls back to the 'auto' model if Sonnet 4.5 is not available to you. You can configure the custom agent to [modify the 'model' setting](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) by selecting **Configure Custom Agents** from the **Agent** menu. Alternatively, you can use the language model picker in the chat window to switch models for the current chat session.

@@ -104,7 +104,21 @@ This command creates multiple NuGet packages:
 
 ### AOT tools
 
-For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack separately for each platform:
+For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack separately for each platform.
+
+#### Platform requirements for Native AOT
+
+Native AOT compilation requires the operating system (OS) part of the SDK RID to match the target RID's OS. The SDK can cross-compile for different architectures (for example, x64 to ARM64) but not across operating systems (for example, Windows to Linux).
+
+This means you have several options for building Native AOT packages:
+
+- **Build only for your development machine**: Support Native AOT only for the OS you're developing on.
+- **Use containers for Linux builds**: If you're on macOS or Windows, use containers to cross-compile for Linux. For example, use `mcr.microsoft.com/dotnet/sdk:10.0-noble-aot` container images.
+- **Federate your build across machines**: Use CI/CD systems like GitHub Actions or Azure DevOps Pipelines to build on different operating systems.
+
+You don't need to build all RID-specific packages on the same machine or at the same time. You just need to build and publish them before you publish the top-level package.
+
+#### Packing Native AOT tools
 
 Pack the top-level package once (on any platform):
 
@@ -118,7 +132,7 @@ Pack for each specific RID on the corresponding platform, for example:
 dotnet pack -r linux-x64
 ```
 
-   You must run each RID-specific pack command on the matching platform because AOT compilation produces native binaries. For more information about the prerequisites for Native AOT compilation, see [Native AOT deployment](../deploying/native-aot/index.md).
+You must run each RID-specific pack command on a platform where the OS matches the target RID's OS. For more information about the prerequisites for Native AOT compilation, see [Native AOT deployment](../deploying/native-aot/index.md).
 
 When you set `PublishAot` to `true`, the packing behavior changes:
 

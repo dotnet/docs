@@ -106,19 +106,17 @@ This command creates multiple NuGet packages:
 
 For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack separately for each platform:
 
-- Pack the top-level package once (on any platform):
+Pack the top-level package once (on any platform):
 
-   ```dotnetcli
-   dotnet pack
-   ```
+```dotnetcli
+dotnet pack
+```
 
-- Pack for each specific RID on the corresponding platform:
+Pack for each specific RID on the corresponding platform, for example:
 
-   ```dotnetcli
-   dotnet pack -r win-x64
-   dotnet pack -r linux-x64
-   dotnet pack -r osx-arm64
-   ```
+```dotnetcli
+dotnet pack -r linux-x64
+```
 
    You must run each RID-specific pack command on the matching platform because AOT compilation produces native binaries. For more information about the prerequisites for Native AOT compilation, see [Native AOT deployment](../deploying/native-aot/index.md).
 
@@ -166,9 +164,7 @@ You can achieve this "hybrid" model with the following pattern:
    For each AOT-enabled RID, run `dotnet pack -r <RID>` on a suitable build environment. For example:
 
    ```dotnetcli
-   dotnet pack -r osx-arm64      # on macOS
-   dotnet pack -r linux-arm64    # on Linux ARM64
-   dotnet pack -r linux-x64      # on Linux x64
+   dotnet pack -r win-x64      # on Windows x64
    ```
 
 1. **Build a CoreCLR fallback package.**

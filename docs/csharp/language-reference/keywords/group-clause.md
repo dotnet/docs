@@ -17,11 +17,11 @@ The `group` clause returns a sequence of <xref:System.Linq.IGrouping%602> object
 
 You can end a query expression with a `group` clause, as shown in the following example:
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="10":::
+:::code language="csharp" source="./snipets/group.cs" id="10":::
 
 If you want to perform additional query operations on each group, specify a temporary identifier by using the [into](into.md) contextual keyword. When you use `into`, you must continue with the query, and eventually end it with either a `select` statement or another `group` clause, as shown in the following excerpt:
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="11":::
+:::code language="csharp" source="./snippets/group.cs" id="11":::
 
 More complete examples of the use of `group` with and without `into` are provided in the Example section of this article.
 
@@ -29,7 +29,7 @@ More complete examples of the use of `group` with and without `into` are provide
 
 Because the <xref:System.Linq.IGrouping%602> objects that a `group` query produces are essentially a list of lists, you must use a nested [foreach](../statements/iteration-statements.md#the-foreach-statement) loop to access the items in each group. The outer loop iterates over the group keys, and the inner loop iterates over each item in the group itself. A group can have a key but no elements. The following `foreach` loop executes the query in the previous code examples:
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="12":::
+:::code language="csharp" source="./snippets/group.cs" id="12":::
 
 ## Key types
 
@@ -39,19 +39,19 @@ Group keys can be any type, such as a string, a built-in numeric type, or a user
 
 The previous code examples used a `char`. You can also specify a string key, such as the complete last name:
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="13":::
+:::code language="csharp" source="./snippets/group.cs" id="13":::
 
 ### Grouping by bool
 
 The following example uses a bool value for a key to divide the results into two groups. The value comes from a sub-expression in the `group` clause.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="14":::
+:::code language="csharp" source="./snippets/group.cs" id="14":::
 
 ### Grouping by numeric range
 
 The next example uses an expression to create numeric group keys that represent a percentile range. It uses [`let`](let-clause.md) to store a method call result, so you don't have to call the method twice in the `group` clause. For more information about how to safely use methods in query expressions, see [Handle exceptions in query expressions](../../linq/get-started/write-linq-queries.md).
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="15":::
+:::code language="csharp" source="./snippets/group.cs" id="15":::
 
 ### Grouping by composite keys
 
@@ -69,11 +69,11 @@ The following example shows the standard pattern for ordering source data into g
 
 The result of a `group` clause is a sequence of sequences. To access the individual elements within each returned group, use a nested `foreach` loop inside the loop that iterates the group keys, as shown in the following example.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="16":::
+:::code language="csharp" source="./snippets/group.cs" id="16":::
 
 The following example shows how to perform extra logic on the groups after you create them, by using a *continuation* with `into`. For more information, see [`into`](into.md). The following example queries each group to select only those whose key value is a vowel.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs" id="17":::
+:::code language="csharp" source="./snippets/group.cs" id="17":::
 
 At compile time, the compiler translates `group` clauses into calls to the <xref:System.Linq.Enumerable.GroupBy%2A> method.
 

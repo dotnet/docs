@@ -22,7 +22,7 @@ Both the range variable and the data source are strongly typed. The data source 
 
 In the following example, `numbers` is the data source and `num` is the range variable. Note that both variables are strongly typed even though the [var](../statements//declarations.md#implicitly-typed-local-variables) keyword is used.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs" id="1":::
+:::code language="csharp" source="./snippets/from.cs" id="1":::
 
 ## The range variable
 
@@ -36,7 +36,7 @@ The range variable is like an iteration variable in a [foreach](../statements/it
 
 In some cases, each element in the source sequence might itself be either a sequence or contain a sequence. For example, your data source might be an `IEnumerable<Student>` where each student object in the sequence contains a list of test scores. To access the inner list within each `Student` element, you can use compound `from` clauses. The technique is like using nested [foreach](../statements/iteration-statements.md#the-foreach-statement) statements. You can add [where](partial-member.md) or [orderby](orderby-clause.md) clauses to either `from` clause to filter the results. The following example shows a sequence of `Student` objects, each of which contains an inner `List` of integers representing test scores. To access the inner list, use a compound `from` clause. You can insert clauses between the two `from` clauses if necessary.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs" id="2":::
+:::code language="csharp" source="./snippets/from.cs" id="2":::
 
 ## Using multiple from clauses to perform joins
 
@@ -44,7 +44,7 @@ Use a compound `from` clause to access inner collections in a single data source
 
 The following example shows how two `from` clauses form a complete cross join of two data sources.
 
-:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs" id="3":::
+:::code language="csharp" source="./snippets/from.cs" id="3":::
 
 For more information about join operations that use multiple `from` clauses, see [Perform left outer joins](../../linq/standard-query-operators/join-operations.md).
 

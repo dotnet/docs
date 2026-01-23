@@ -213,11 +213,29 @@ dotnet tool install -g dotnet10-hybrid-tool
 dotnet10-hybrid-tool
 ```
 
-The tool reports:
+The tool reports its runtime framework description, runtime identifier (RID), and compilation mode (Native AOT or CoreCLR).
 
-- Runtime framework description
-- Runtime identifier (RID)
-- Compilation mode (Native AOT or CoreCLR)
+Example output on a platform with Native AOT:
+
+```output
+Hi, I'm a 'DotNetCliTool v2' tool!
+Yes, I'm quite fancy.
+
+Version: .NET 10.0.2
+RID: osx-arm64
+Mode: Native AOT
+```
+
+Example output on a platform using the CoreCLR fallback:
+
+```output
+Hi, I'm a 'DotNetCliTool v2' tool!
+Yes, I'm quite fancy.
+
+Version: .NET 10.0.2
+RID: win-x64
+Mode: CoreCLR
+```
 
 This makes it a useful way to experiment with RID-specific, AOT-compiled tools and the CoreCLR fallback behavior.
 

@@ -427,13 +427,13 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.0.0)<br>NuGet [1.1.0-rc](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0-rc) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.12) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.12](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.12) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.13) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.13](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.13) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
@@ -638,8 +638,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.6.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.1)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.40.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.40.0) |  |  |
-| ProviderHub Controller | NuGet [0.26.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.26.0) |  |  |
-| ProviderHub Templates | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.19.0) |  |  |
+| MSBuild | NuGet [0.41.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.41.0) |  |  |
+| ProviderHub Controller | NuGet [0.27.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.27.0) |  |  |
+| ProviderHub Templates | NuGet [1.20.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.20.0) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/mgmt-legacy/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

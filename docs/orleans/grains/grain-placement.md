@@ -27,44 +27,12 @@ By default, Orleans picks a random compatible server.
 
 Configure the placement strategy Orleans uses globally or per grain class.
 
-## Random placement
-
-Orleans randomly selects a server from the compatible servers in the cluster. To configure this placement strategy, add the <xref:Orleans.Placement.RandomPlacementAttribute> to the grain class.
-
-## Local placement
-
-If the local server is compatible, Orleans selects the local server; otherwise, it selects a random server. Configure this placement strategy by adding the <xref:Orleans.Placement.PreferLocalPlacementAttribute> to the grain class.
-
-## Hash-based placement
-
-Orleans hashes the grain ID to a non-negative integer and applies a modulo operation with the number of compatible servers. It then selects the corresponding server from the list of compatible servers ordered by server address. Note that this placement isn't guaranteed to remain stable as cluster membership changes. Specifically, adding, removing, or restarting servers can alter the server selected for a given grain ID. Because grains placed using this strategy register in the grain directory, this change in placement decision as membership changes typically doesn't have a noticeable effect.
-
-Configure this placement strategy by adding the <xref:Orleans.Placement.HashBasedPlacementAttribute> to the grain class.
-
-## Activation-count-based placement
-
-This placement strategy attempts to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism where all servers periodically publish their total activation count to all other servers. The placement director then selects a server predicted to have the fewest activations by examining the most recently reported activation count and predicting the current count based on recent activations made by the placement director on the current server. The director selects several servers randomly when making this prediction to avoid multiple separate servers overloading the same server. By default, two servers are selected randomly, but this value can be configured via <xref:Orleans.Configuration.ActivationCountBasedPlacementOptions>.
-
-This algorithm is based on the thesis [*The Power of Two Choices in Randomized Load Balancing* by Michael David Mitzenmacher](https://www.eecs.harvard.edu/~michaelm/postscripts/mythesis.pdf). It's also used in Nginx for distributed load balancing, as described in the article [*NGINX and the "Power of Two Choices" Load-Balancing Algorithm*](https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/).
-
-Configure this placement strategy by adding the <xref:Orleans.Placement.ActivationCountBasedPlacementAttribute> to the grain class.
-
-## Stateless worker placement
-
-Stateless worker placement is a special placement strategy used by [*stateless worker* grains](stateless-worker-grains.md). This placement operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement>, except each server can have multiple activations of the same grain, and the grain isn't registered in the grain directory since there's no need.
-
-Configure this placement strategy by adding the <xref:Orleans.Concurrency.StatelessWorkerAttribute> to the grain class.
-
-## Silo-role-based placement
-
-This is a deterministic placement strategy placing grains on silos with a specific role. Configure this placement strategy by adding the <xref:Orleans.Placement.SiloRoleBasedPlacementAttribute> to the grain class.
-
-## Resource-optimized placement
+## Resource-optimized placement (default)
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
-> [!IMPORTANT]
-> Starting in Orleans 9.2, resource-optimized placement is the **default** placement strategy. You no longer need to explicitly configure it unless you want to customize the options.
+> [!NOTE]
+> Starting in Orleans 9.2, resource-optimized placement is the **default** placement strategy. You don't need to explicitly configure it unless you want to customize the options.
 
 :::zone-end
 
@@ -121,6 +89,38 @@ siloBuilder.Configure<ResourceOptimizedPlacementOptions>(options =>
 > The weight values don't need to sum to 100. Orleans normalizes them automatically, so they represent relative importance rather than absolute percentages.
 
 :::zone-end
+
+## Random placement
+
+Orleans randomly selects a server from the compatible servers in the cluster. To configure this placement strategy, add the <xref:Orleans.Placement.RandomPlacementAttribute> to the grain class.
+
+## Local placement
+
+If the local server is compatible, Orleans selects the local server; otherwise, it selects a random server. Configure this placement strategy by adding the <xref:Orleans.Placement.PreferLocalPlacementAttribute> to the grain class.
+
+## Hash-based placement
+
+Orleans hashes the grain ID to a non-negative integer and applies a modulo operation with the number of compatible servers. It then selects the corresponding server from the list of compatible servers ordered by server address. Note that this placement isn't guaranteed to remain stable as cluster membership changes. Specifically, adding, removing, or restarting servers can alter the server selected for a given grain ID. Because grains placed using this strategy register in the grain directory, this change in placement decision as membership changes typically doesn't have a noticeable effect.
+
+Configure this placement strategy by adding the <xref:Orleans.Placement.HashBasedPlacementAttribute> to the grain class.
+
+## Activation-count-based placement
+
+This placement strategy attempts to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism where all servers periodically publish their total activation count to all other servers. The placement director then selects a server predicted to have the fewest activations by examining the most recently reported activation count and predicting the current count based on recent activations made by the placement director on the current server. The director selects several servers randomly when making this prediction to avoid multiple separate servers overloading the same server. By default, two servers are selected randomly, but this value can be configured via <xref:Orleans.Configuration.ActivationCountBasedPlacementOptions>.
+
+This algorithm is based on the thesis [*The Power of Two Choices in Randomized Load Balancing* by Michael David Mitzenmacher](https://www.eecs.harvard.edu/~michaelm/postscripts/mythesis.pdf). It's also used in Nginx for distributed load balancing, as described in the article [*NGINX and the "Power of Two Choices" Load-Balancing Algorithm*](https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/).
+
+Configure this placement strategy by adding the <xref:Orleans.Placement.ActivationCountBasedPlacementAttribute> to the grain class.
+
+## Stateless worker placement
+
+Stateless worker placement is a special placement strategy used by [*stateless worker* grains](stateless-worker-grains.md). This placement operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement>, except each server can have multiple activations of the same grain, and the grain isn't registered in the grain directory since there's no need.
+
+Configure this placement strategy by adding the <xref:Orleans.Concurrency.StatelessWorkerAttribute> to the grain class.
+
+## Silo-role-based placement
+
+This is a deterministic placement strategy placing grains on silos with a specific role. Configure this placement strategy by adding the <xref:Orleans.Placement.SiloRoleBasedPlacementAttribute> to the grain class.
 
 ## Choose a placement strategy
 

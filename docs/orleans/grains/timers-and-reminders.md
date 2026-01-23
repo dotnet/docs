@@ -169,7 +169,7 @@ Reminders are similar to timers, with a few important differences:
 
 ## Configuration
 
-Since reminders are persistent, they rely on storage to function. You must specify which storage backing to use before the reminder subsystem can function. Do this by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider (for example, <xref:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAzureTableReminderService%2A>).
+Since reminders are persistent, they rely on storage to function. You must specify which storage backing to use before the reminder subsystem can function. Do this by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider (for example, <xref:Orleans.Hosting.AzureStorageReminderSiloBuilderExtensions.UseAzureTableReminderService*>).
 
 Azure Table configuration:
 

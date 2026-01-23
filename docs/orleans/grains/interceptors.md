@@ -82,7 +82,7 @@ You can register a delegate as a silo-wide grain call filter using Dependency In
 
 :::code language="csharp" source="snippets/interceptors/Configuration.cs" id="silo_delegate_filter":::
 
-Similarly, you can register a class as a grain call filter using the <xref:Orleans.Hosting.SiloHostBuilderGrainCallFilterExtensions.AddIncomingGrainCallFilter%2A> helper method. Here's an example of a grain call filter that logs the results of every grain method:
+Similarly, you can register a class as a grain call filter using the <xref:Orleans.Hosting.GrainCallFilterSiloBuilderExtensions.AddIncomingGrainCallFilter*> helper method. Here's an example of a grain call filter that logs the results of every grain method:
 
 :::code language="csharp" source="snippets/interceptors/LoggingFilters.cs" id="logging_incoming_filter":::
 

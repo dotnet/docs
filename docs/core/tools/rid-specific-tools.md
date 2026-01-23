@@ -54,6 +54,7 @@ Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configu
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>mytool</ToolCommandName>
     <ToolPackageRuntimeIdentifiers>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifiers>
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
 </Project>
 ```

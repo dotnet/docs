@@ -32,7 +32,7 @@ This is analogous to using e-tags with conditional storage updates and provides 
 
 It's possible and sensible to use both conditional and unconditional events for the same grain, such as `DepositEvent` and `WithdrawalEvent`. Deposits don't need to be conditional: even if a `DepositEvent` loses a race, it doesn't have to be canceled but can still be appended to the global event sequence.
 
-Awaiting the task returned by `RaiseConditionalEvent` is sufficient to confirm the event; you don't need to call `ConfirmEvents` as well.
+Awaiting the task returned by <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent*> is sufficient to confirm the event; you don't need to call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*> as well.
 
 ## Explicit synchronization
 

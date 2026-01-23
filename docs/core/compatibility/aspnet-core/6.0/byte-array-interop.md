@@ -3,6 +3,7 @@ title: "Breaking change: Blazor: Byte Array Interop"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Blazor: Byte Array Interop"
 no-loc: [ Blazor ]
 ms.date: 06/21/2021
+ms.custom: https://github.com/dotnet/Announcements/issues/187
 ---
 # Blazor: Byte-array interop
 

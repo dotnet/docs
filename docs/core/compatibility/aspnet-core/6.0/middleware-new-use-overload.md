@@ -2,6 +2,7 @@
 title: "Breaking change: Middleware: New Use overload"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where a new overload of Use middleware was introduced."
 ms.date: 05/06/2021
+ms.custom: https://github.com/aspnet/Announcements/issues/461
 ---
 # Middleware: New Use overload
 

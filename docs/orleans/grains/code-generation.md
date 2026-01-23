@@ -8,13 +8,15 @@ zone_pivot_groups: orleans-version
 
 # Orleans code generation
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
 Before Orleans 7.0, source generation was more manual and required explicit developer intervention. Starting with Orleans 7.0, code generation is automatic and typically requires no intervention. However, cases still exist where influencing code generation might be desired, for example, to generate code for types not automatically generated or for types in another assembly.
+
+:::zone-end
 
 ## Enable code generation
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 Orleans generates C# source code for the app at build time. All projects, including the host, need the appropriate NuGet packages installed to enable code generation. The following packages are available:
 
@@ -26,9 +28,7 @@ Use the <xref:Orleans.GenerateSerializerAttribute> to specify that the type is i
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 The Orleans runtime uses generated code to ensure proper serialization of types used across the cluster and to generate boilerplate code. This boilerplate abstracts away implementation details of method dispatching, exception propagation, and other internal runtime concepts. Code generation can be performed either when building projects or when the application initializes.
 
@@ -36,11 +36,9 @@ The Orleans runtime uses generated code to ensure proper serialization of types 
 
 ### Build-time code generation
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-At build time, Orleans generates code for all types marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with `GenerateSerializer`, Orleans won't serialize it.
+At build time, Orleans generates code for all types marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with <xref:Orleans.GenerateSerializerAttribute>, Orleans won't serialize it.
 
 If developing with F# or Visual Basic, code generation can also be used. For more information, see these samples:
 
@@ -51,9 +49,7 @@ These examples demonstrate using the <xref:Orleans.GenerateCodeForDeclaringAssem
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 The preferred method for code generation is at build time. Enable build-time code generation using one of the following packages:
 
@@ -70,53 +66,33 @@ Emit additional diagnostics at build time by specifying a value for `OrleansCode
 
 ### Initialization-time code generation
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 In Orleans 7+, nothing happens during initialization. Code generation occurs only at build time.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> extension method:
 
-```csharp
-builder.ConfigureApplicationParts(
-    parts => parts
-        .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
-        .WithCodeGeneration());
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="with_code_generation":::
 
 In the preceding example, `builder` can be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>. Pass an optional <xref:Microsoft.Extensions.Logging.ILoggerFactory> instance to `WithCodeGeneration` to enable logging during code generation, for example:
 
-```csharp
-ILoggerFactory codeGenLoggerFactory = new LoggerFactory();
-codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
-    builder.ConfigureApplicationParts(
-        parts => parts
-            .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
-            .WithCodeGeneration(codeGenLoggerFactory));
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="with_code_generation_logging":::
 
 :::zone-end
 
 ## Influence code generation
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 When applying <xref:Orleans.GenerateSerializerAttribute> to a type, the <xref:Orleans.IdAttribute> can also be applied to uniquely identify the member. Likewise, an alias can be applied using the <xref:Orleans.AliasAttribute>. For more information on influencing code generation, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 During code generation, the generation of code for a specific type can be influenced. Orleans automatically generates code for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type doesn't fit these criteria, use the following methods to guide code generation further.
 
@@ -145,10 +121,7 @@ The <xref:Orleans.CodeGeneration.KnownAssemblyAttribute> instructs the code gene
 
 Then, add the generated assembly to the client/silo during initialization:
 
-```csharp
-builder.ConfigureApplicationParts(
-    parts => parts.AddApplicationPart("CodeGenAssembly"));
-```
+:::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="add_application_part":::
 
 In the preceding example, `builder` can be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 

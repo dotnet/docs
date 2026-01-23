@@ -1,7 +1,7 @@
 ---
 title: ADO.NET grain persistence
 description: Learn about ADO.NET grain persistence in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: how-to
 ms.custom: sfi-ropc-nochange
 ---
@@ -31,19 +31,22 @@ Install-Package Microsoft.Orleans.Persistence.AdoNet
 
 Read the [ADO.NET configuration](../../host/configuration-guide/adonet-configuration.md) article for information on configuring your database, including the corresponding ADO.NET Invariant and setup scripts.
 
-The following example shows how to configure an ADO.NET storage provider via <xref:Orleans.Hosting.ISiloHostBuilder>:
+The following example shows how to configure an ADO.NET storage provider via the silo builder:
 
 ```csharp
-var siloHostBuilder = new HostBuilder()
-    .UseOrleans(c =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddAdoNetGrainStorage("OrleansStorage", options =>
     {
-        c.AddAdoNetGrainStorage("OrleansStorage", options =>
-        {
-            options.Invariant = "<Invariant>";
-            options.ConnectionString = "<ConnectionString>";
-            options.UseJsonFormat = true;
-        });
+        options.Invariant = "<Invariant>";
+        options.ConnectionString = "<ConnectionString>";
+        options.UseJsonFormat = true;
     });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 Essentially, you only need to set the database-vendor-specific connection string and an `Invariant` (see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md)) identifying the vendor. You can also choose the format for saving data: binary (default), JSON, or XML. While binary is the most compact option, it's opaque, and you won't be able to read or work with the data directly. JSON is the recommended option.

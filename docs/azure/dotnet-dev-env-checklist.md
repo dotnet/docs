@@ -3,7 +3,7 @@ title: .NET Development on Azure Configuration Checklist
 description: Provides a quick summary of all the tools you should have installed to do .NET development with Azure
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 8/15/2024
+ms.date: 01/16/2026
 ---
 
 # .NET on Azure development environment checklist
@@ -37,10 +37,10 @@ In addition to using the Azure portal, you will want to install the Azure CLI to
 
 These additional tools are designed to make you more productive when working with Azure.
 
-* [Install Azure PowerShell](/powershell/azure/install-az-ps) if you plan on using PowerShell scripts to create and manage Azure resources.
+* [Install GitHub Copilot for Azure](/azure/developer/github-copilot-azure/get-started)
 * [Install Azure Developer CLI](/azure/developer/azure-developer-cli/overview) if you plan on using the Developer CLI to streamline development workflows.
+* [Install Azure PowerShell](/powershell/azure/install-az-ps) if you plan on using PowerShell scripts to create and manage Azure resources.
 * [Install Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) to upload, download, and manage data in Azure storage resources including blobs, queues, tables, and CosmosDB.
-* [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) if you are working with Azure SQL. Azure Data Studio extensions also provide support for other database options such as MySQL, PostgreSQL, and Azure Cosmos DB.
 
 ## Bookmark the following sites
 

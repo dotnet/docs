@@ -3,6 +3,7 @@ title: "Breaking change: SignalR: MessagePack Hub Protocol moved to MessagePack 
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/404
 ---
 # SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package
 

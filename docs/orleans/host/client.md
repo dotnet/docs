@@ -1,7 +1,7 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: article
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -28,15 +28,11 @@ Despite these drawbacks, co-hosting client code with grain code is a popular opt
 
 If you host using the [.NET Generic Host](../../core/extensions/generic-host.md), the client is automatically available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container. You can inject it into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Alternatively, you can obtain a client interface like <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> from <xref:Orleans.Hosting.ISiloHost>:
 
@@ -64,63 +60,81 @@ In a typical setup, a frontend web server:
 
 Before you can use a grain client to make calls to grains hosted in an Orleans cluster, you need to configure, initialize, and connect it to the cluster.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Consider the following example of a client configuration:
 
-```csharp
-// Alternatively, call Host.CreateDefaultBuilder(args) if using the
-// Microsoft.Extensions.Hosting NuGet package.
-using IHost host = new HostBuilder()
-    .UseOrleansClient(clientBuilder =>
-    {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        });
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
-        clientBuilder.UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(connectionString))
-    })
-    .Build();
+Using a `TokenCredential` with a service URI is the recommended approach. This pattern avoids storing secrets in configuration and leverages Microsoft Entra ID for secure authentication.
+
+<xref:Azure.Identity.DefaultAzureCredential> provides a credential chain that works seamlessly across local development and production environments. During development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the managed identity assigned to your resource.
+
+[!INCLUDE [credential-chain-guidance](../includes/credential-chain-guidance.md)]
+
+```csharp
+using Azure.Identity;
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
+    });
+
+    clientBuilder.UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(
+            new Uri("https://<your-storage-account>.table.core.windows.net"),
+            new DefaultAzureCredential());
+    });
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
+
+### [Connection string](#tab/connection-string)
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
+    });
+
+    clientBuilder.UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(connectionString));
+});
+
+using var host = builder.Build();
+await host.StartAsync();
+```
+
+---
 
 When you start the `host`, the client is configured and available through its constructed service provider instance.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Provide configuration via <xref:Orleans.ClientBuilder> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Example of a client configuration:
 
-```csharp
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "my-first-cluster";
-        options.ServiceId = "MyOrleansService";
-    })
-    .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_config":::
 
-Finally, you need to call the `Connect()` method on the constructed client object to connect it to the Orleans cluster. It's an asynchronous method returning a `Task`, so you need to wait for its completion using `await` or `.Wait()`.
+Finally, you need to call the `Connect()` method on the constructed client object to connect it to the Orleans cluster. It's an asynchronous method returning a <xref:System.Threading.Tasks.Task>, so you need to wait for its completion using `await` or `.Wait()`.
 
-```csharp
-await client.Connect();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="client_connect":::
 
 :::zone-end
 
@@ -135,7 +149,7 @@ Task joinGameTask = player.JoinGame(game)
 await joinGameTask;
 ```
 
-A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned `Task` without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
+A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned <xref:System.Threading.Tasks.Task> without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
 
 The major difference between making calls to grains from client code and from within another grain is the single-threaded execution model of grains. The Orleans runtime constrains grains to be single-threaded, while clients can be multi-threaded. Orleans doesn't provide any such guarantee on the client-side, so it's up to the client to manage its concurrency using appropriate synchronization constructs for its environment—locks, events, `Tasks`, etc.
 
@@ -149,9 +163,7 @@ Another mechanism for delivering asynchronous messages to clients is [Streams](.
 
 ### Client connectivity
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -164,9 +176,7 @@ In the first case, the client attempts to connect to a silo. If the client canno
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -177,14 +187,7 @@ In the first case, the `Connect` method throws an exception indicating what went
 
 If `Connect` returns successfully, the cluster client is guaranteed to be usable until disposed. This means that even if the client experiences connection issues, it attempts to recover indefinitely. You can configure the exact recovery behavior on a <xref:Orleans.Configuration.GatewayOptions> object provided by the <xref:Orleans.ClientBuilder>, e.g.:
 
-```csharp
-var client = new ClientBuilder()
-    // ...
-    .Configure<GatewayOptions>(
-        options =>                         // Default is 1 min.
-        options.GatewayListRefreshPeriod = TimeSpan.FromMinutes(10))
-    .Build();
-```
+:::code language="csharp" source="snippets-v3/client/ClientExamples.cs" id="gateway_options":::
 
 :::zone-end
 
@@ -203,42 +206,15 @@ The recommended way to create an external client in a program using the .NET Gen
 
 When connecting to a cluster in a different process (on a different machine), a common pattern is to create a hosted service like this:
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code source="snippets/ClusterClientHostedService.cs":::
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
-```csharp
-public class ClusterClientHostedService : IHostedService
-{
-    private readonly IClusterClient _client;
-
-    public ClusterClientHostedService(IClusterClient client)
-    {
-        _client = client;
-    }
-
-    public async Task StartAsync(CancellationToken cancellationToken)
-    {
-        // A retry filter could be provided here.
-        await _client.Connect();
-    }
-
-    public async Task StopAsync(CancellationToken cancellationToken)
-    {
-        await _client.Close();
-
-        _client.Dispose();
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/client/ClusterClientHostedService.cs" id="cluster_client_hosted_service":::
 
 :::zone-end
 
@@ -261,97 +237,14 @@ await Host.CreateDefaultBuilder(args)
 
 Here's an extended version of the previous example showing a client application that connects to Orleans, finds the player account, subscribes for updates to the game session the player is part of using an observer, and prints notifications until the program is manually terminated.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 :::code source="snippets/ExampleExternalProgram.cs" id="program":::
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
-```csharp
-await RunWatcherAsync();
-
-// Block the main thread so that the process doesn't exit.
-// Updates arrive on thread pool threads.
-Console.ReadLine();
-
-static async Task RunWatcherAsync()
-{
-    try
-    {
-        var client = new ClientBuilder()
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "my-first-cluster";
-                options.ServiceId = "MyOrleansService";
-            })
-            .UseAzureStorageClustering(
-                options => options.ConnectionString = connectionString)
-            .ConfigureApplicationParts(
-                parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
-            .Build();
-
-            // Hardcoded player ID
-            Guid playerId = new("{2349992C-860A-4EDA-9590-000000000006}");
-            IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
-            IGameGrain game = null;
-            while (game is null)
-            {
-                Console.WriteLine(
-                    $"Getting current game for player {playerId}...");
-
-                try
-                {
-                    game = await player.GetCurrentGame();
-                    if (game is null) // Wait until the player joins a game
-                    {
-                        await Task.Delay(TimeSpan.FromMilliseconds(5_000));
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Exception: {ex.GetBaseException()}");
-                }
-            }
-
-            Console.WriteLine(
-                $"Subscribing to updates for game {game.GetPrimaryKey()}...");
-
-            // Subscribe for updates
-            var watcher = new GameObserver();
-            await game.SubscribeForGameUpdates(
-                await client.CreateObjectReference<IGameObserver>(watcher));
-
-            Console.WriteLine(
-                "Subscribed successfully. Press <Enter> to stop.");
-
-            Console.ReadLine();
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(
-                $"Unexpected Error: {e.GetBaseException()}");
-        }
-    }
-}
-
-/// <summary>
-/// Observer class that implements the observer interface.
-/// Need to pass a grain reference to an instance of
-/// this class to subscribe for updates.
-/// </summary>
-class GameObserver : IGameObserver
-{
-    public void UpdateGameScore(string score)
-    {
-        Console.WriteLine("New game score: {0}", score);
-    }
-}
-```
+:::code language="csharp" source="snippets-v3/client/ExternalClientExample.cs" id="external_client_example":::
 
 :::zone-end

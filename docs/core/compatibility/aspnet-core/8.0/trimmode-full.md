@@ -2,6 +2,7 @@
 title: "Breaking change: TrimMode defaults to full for Web SDK projects"
 description: Learn about the breaking change in ASP.NET Core 8.0 where 'TrimMode' defaults to 'full' for Web SDK projects.
 ms.date: 07/31/2023
+ms.custom: https://github.com/aspnet/Announcements/issues/507
 ---
 # TrimMode defaults to full for Web SDK projects
 

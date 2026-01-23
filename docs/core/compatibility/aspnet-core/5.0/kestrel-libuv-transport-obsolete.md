@@ -3,6 +3,7 @@ title: "Breaking change: Kestrel: Libuv transport marked as obsolete"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Kestrel: Libuv transport marked as obsolete"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/424
 ---
 # Kestrel: Libuv transport marked as obsolete
 

@@ -46,7 +46,7 @@ Also, since the state returned by the <xref:Orleans.EventSourcing.JournaledGrain
 StateType TentativeState { get; }
 ```
 
-This property returns a "tentative" state, obtained from `State` by applying all unconfirmed events. The tentative state is essentially a "best guess" at what will likely become the next confirmed state after all unconfirmed events are confirmed. However, there's no guarantee it actually will become the confirmed state. This is because the grain might fail, or the events might race against other events and lose, causing them to be canceled (if conditional) or appear later in the sequence than anticipated (if unconditional).
+This property returns a "tentative" state, obtained from <xref:Orleans.Grain%601.State> by applying all unconfirmed events. The tentative state is essentially a "best guess" at what will likely become the next confirmed state after all unconfirmed events are confirmed. However, there's no guarantee it actually will become the confirmed state. This is because the grain might fail, or the events might race against other events and lose, causing them to be canceled (if conditional) or appear later in the sequence than anticipated (if unconditional).
 
 ## Concurrency guarantees
 

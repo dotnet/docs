@@ -2,7 +2,7 @@
 title: Use GitHub Copilot for Visual Studio with the Azure Migrate application and code assessment for .NET
 description: Learn how to use GitHub Copilot with the Azure Migrate application and code assessment tool for .NET when evaluating apps for Azure migrations.
 ms.topic: concept-article
-ms.date: 10/09/2024
+ms.date: 01/16/2026
 ms.custom: sfi-image-nochange
 ms.collection: ce-skilling-ai-copilot
 ms.update-cycle: 180-days

@@ -8,7 +8,11 @@ zone_pivot_groups: orleans-version
 
 # Grain services
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
 Grain services are remotely accessible, partitioned services for supporting grain functionality. Each instance of a grain service is responsible for some set of grains. Those grains can get a reference to the grain service currently responsible for servicing them by using a `GrainServiceClient`.
+
+:::zone-end
 
 Grain services exist to support cases where responsibility for servicing grains should be distributed around the Orleans cluster. For example, Orleans Reminders are implemented using grain services: each silo handles reminder operations for a subset of grains and notifies those grains when their reminders fire.
 

@@ -9,7 +9,11 @@ ms.custom: sfi-ropc-nochange
 
 # Grain persistence
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
 Grains can have multiple named persistent data objects associated with them. These state objects load from storage during grain activation so they're available during requests. Grain persistence uses an extensible plugin model, allowing you to use storage providers for any database. This persistence model is designed for simplicity and isn't intended to cover all data access patterns. Grains can also access databases directly without using the grain persistence model.
+
+:::zone-end
 
 :::image type="content" source="media/grain-state-diagram.png" alt-text="Grain persistence diagram" lightbox="media/grain-state-diagram.png":::
 

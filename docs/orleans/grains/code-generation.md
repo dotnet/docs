@@ -8,7 +8,11 @@ zone_pivot_groups: orleans-version
 
 # Orleans code generation
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
 Before Orleans 7.0, source generation was more manual and required explicit developer intervention. Starting with Orleans 7.0, code generation is automatic and typically requires no intervention. However, cases still exist where influencing code generation might be desired, for example, to generate code for types not automatically generated or for types in another assembly.
+
+:::zone-end
 
 ## Enable code generation
 

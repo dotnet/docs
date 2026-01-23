@@ -65,13 +65,15 @@ Use a semicolon-delimited list of RID values. For a list of Runtime Identifiers,
 
 Both `RuntimeIdentifiers` and `ToolPackageRuntimeIdentifiers` opt your tool into RID-specific packaging, but they serve slightly different purposes:
 
-- Use **`RuntimeIdentifiers`** when:
-  - You want the project to **build and publish RID-specific apps in general** (not just as a tool).
-  - You're primarily targeting **CoreCLR** (non-AOT) or you want the standard SDK behavior where a single `dotnet pack` can produce RID-specific packages.
-  - You may conditionalize `PublishAot` for a subset of RIDs, but you still want a CoreCLR-based package for every RID in `RuntimeIdentifiers`.
+Use **`RuntimeIdentifiers`** when:
 
-- Use **`ToolPackageRuntimeIdentifiers`** when:
-  - You want to define **RID-specific behavior only for the tool packaging**, without changing how the project builds for other deployment scenarios.
+- You want the project to **build and publish RID-specific apps in general** (not just as a tool).
+- You're primarily targeting **CoreCLR** (non-AOT) or you want the standard SDK behavior where a single `dotnet pack` can produce RID-specific packages.
+- You may conditionalize `PublishAot` for a subset of RIDs, but you still want a CoreCLR-based package for every RID in `RuntimeIdentifiers`.
+
+Use **`ToolPackageRuntimeIdentifiers`** when:
+
+- You want to define **RID-specific behavior only for the tool packaging**, without changing how the project builds for other deployment scenarios.
   - You're using **Native AOT** and plan to **manually build** AOT binaries per RID with `dotnet pack -r <RID>`.
   - You want a **hybrid model** where some RIDs get Native AOT and others fall back to a portable CoreCLR implementation.
 

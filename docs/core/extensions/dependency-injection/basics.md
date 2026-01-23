@@ -3,7 +3,7 @@ title: Dependency injection basics quickstart
 description: Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
 ms.date: 01/22/2025
 no-loc: [Transient, Scoped, Singleton, Example]
-ms.topic: tutorial
+ms.topic: quickstart
 ---
 
 # Quickstart: Dependency injection basics in .NET

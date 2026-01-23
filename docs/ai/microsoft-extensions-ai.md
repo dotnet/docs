@@ -63,6 +63,6 @@ For more samples, see the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHu
 
 - [Request a response with structured output](./quickstarts/structured-output.md)
 - [Build an AI chat app with .NET](./quickstarts/build-chat-app.md)
-- [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [Dependency injection in .NET](../core/extensions/dependency-injection/overview.md)
 - [Caching in .NET](../core/extensions/caching.md)
 - [Rate limit an HTTP handler in .NET](../core/extensions/http-ratelimiter.md)

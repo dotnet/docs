@@ -9,29 +9,29 @@ ai-usage: ai-assisted
 
 # Tutorial: Use dependency injection in .NET
 
-This tutorial shows how to use [dependency injection (DI) in .NET](dependency-injection.md). With *Microsoft Extensions*, DI is managed by adding services and configuring them in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
+This tutorial shows how to use [dependency injection (DI) in .NET](overview.md). DI is managed by adding services and configuring them in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Create a .NET console app that uses dependency injection
-> - Build and configure a [Generic Host](generic-host.md)
-> - Write several interfaces and corresponding implementations
-> - Use service lifetime and scoping for DI
+> - Create a .NET console app that uses dependency injection.
+> - Build and configure a [Generic host](../generic-host.md).
+> - Write several interfaces and corresponding implementations.
+> - Use service lifetime and scoping for DI.
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+- [.NET Core 8.0 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 - Familiarity with creating new .NET applications and installing NuGet packages.
 
 ## Create a new console application
 
-Using either the [dotnet new](../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
+Using either the [dotnet new](../../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
 
 Your new console app project file should resemble the following:
 
-:::code language="xml" source="snippets/configuration/console-di/console-di.csproj":::
+:::code language="xml" source="snippets/console/console-di.csproj":::
 
 > [!IMPORTANT]
 > In this example, the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package is required to build and run the app. Some metapackages might contain the `Microsoft.Extensions.Hosting` package, in which case an explicit package reference isn't required.
@@ -42,7 +42,7 @@ In this sample app, you learn how dependency injection handles service lifetime.
 
 *IReportServiceLifetime.cs*
 
-:::code source="snippets/configuration/console-di/IReportServiceLifetime.cs":::
+:::code source="snippets/console/IReportServiceLifetime.cs":::
 
 The `IReportServiceLifetime` interface defines:
 
@@ -51,15 +51,15 @@ The `IReportServiceLifetime` interface defines:
 
 *IExampleTransientService.cs*
 
-:::code source="snippets/configuration/console-di/IExampleTransientService.cs":::
+:::code source="snippets/console/IExampleTransientService.cs":::
 
 *IExampleScopedService.cs*
 
-:::code source="snippets/configuration/console-di/IExampleScopedService.cs":::
+:::code source="snippets/console/IExampleScopedService.cs":::
 
 *IExampleSingletonService.cs*
 
-:::code source="snippets/configuration/console-di/IExampleSingletonService.cs":::
+:::code source="snippets/console/IExampleSingletonService.cs":::
 
 All of the subinterfaces of `IReportServiceLifetime` explicitly implement the `IReportServiceLifetime.Lifetime` with a default. For example, `IExampleTransientService` explicitly implements `IReportServiceLifetime.Lifetime` with the `ServiceLifetime.Transient` value.
 
@@ -69,15 +69,15 @@ The example implementations all initialize their `Id` property with the result o
 
 *ExampleTransientService.cs*
 
-:::code source="snippets/configuration/console-di/ExampleTransientService.cs":::
+:::code source="snippets/console/ExampleTransientService.cs":::
 
 *ExampleScopedService.cs*
 
-:::code source="snippets/configuration/console-di/ExampleScopedService.cs":::
+:::code source="snippets/console/ExampleScopedService.cs":::
 
 *ExampleSingletonService.cs*
 
-:::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
+:::code source="snippets/console/ExampleSingletonService.cs":::
 
 Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type isn't extended, it's marked as `sealed`. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
@@ -87,7 +87,7 @@ Add the following service lifetime reporter class, which acts as a service to th
 
 *ServiceLifetimeReporter.cs*
 
-:::code source="snippets/configuration/console-di/ServiceLifetimeReporter.cs":::
+:::code source="snippets/console/ServiceLifetimeReporter.cs":::
 
 The `ServiceLifetimeReporter` defines a constructor that requires each of the aforementioned service interfaces, that is, `IExampleTransientService`, `IExampleScopedService`, and `IExampleSingletonService`. The object exposes a single method that allows the consumer to report on the service with a given `lifetimeDetails` parameter. When invoked, the `ReportServiceLifetimeDetails` method logs each service's unique identifier with the service lifetime message. The log messages help to visualize the service lifetime.
 
@@ -95,7 +95,7 @@ The `ServiceLifetimeReporter` defines a constructor that requires each of the af
 
 Update *Program.cs* with the following code:
 
-:::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
+:::code source="snippets/console/Program.cs" id="Program" highlight="8-11":::
 
 Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
@@ -104,7 +104,7 @@ Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially 
 
 The app:
 
-- Creates an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder> instance with [host builder settings](generic-host.md#host-builder-settings).
+- Creates an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder> instance with [host builder settings](../generic-host.md#host-builder-settings).
 - Configures services and adds them with their corresponding service lifetime.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
 - Calls `ExemplifyServiceLifetime`, passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.
@@ -115,7 +115,7 @@ In this sample app, you created several interfaces and corresponding implementat
 
 When you run the app, it displays output similar to the following:
 
-:::code source="snippets/configuration/console-di/Program.cs" id="Output":::
+:::code source="snippets/console/Program.cs" id="Output":::
 
 From the app output, you can see that:
 
@@ -125,6 +125,6 @@ From the app output, you can see that:
 
 ## See also
 
-- [Dependency injection guidelines](dependency-injection-guidelines.md)
-- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
+- [Dependency injection guidelines](guidelines.md)
+- [Quickstart: Dependency injection basics](basics.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

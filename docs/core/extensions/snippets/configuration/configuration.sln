@@ -13,12 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-basic", "console-ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-custom-logging", "console-custom-logging\console-custom-logging.csproj", "{43322C7A-36CD-4EBE-880F-EAAB26BEA8F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-di", "console-di\console-di.csproj", "{0D667FE4-D288-44CC-954E-8E24F249C534}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-di-disposable", "console-di-disposable\console-di-disposable.csproj", "{1B517FD0-A269-4087-B58B-7DCC40C47866}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-di-ienumerable", "console-di-ienumerable\console-di-ienumerable.csproj", "{37083C11-8B5C-44AD-BE9C-6EE4DF4C232B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-env", "console-env\console-env.csproj", "{1CEEE236-B214-436E-9740-F90171777332}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-host", "console-host\console-host.csproj", "{8F38E687-904B-4862-BC76-720B55833715}"
@@ -44,8 +38,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-xml", "console-xml\console-xml.csproj", "{84067C0B-A350-492A-85A7-725003A4D575}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "custom-provider", "custom-provider\custom-provider.csproj", "{B366FEA5-FB69-4CE2-87B9-2470FA3C69F1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "di-anti-patterns", "di-anti-patterns\di-anti-patterns.csproj", "{BEF829E5-EED9-4B9D-8ECE-2DFC3C240946}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "options-action", "options-action\options-action.csproj", "{BBCE4882-E6C2-4017-B5F9-3AF4ED8CADF3}"
 EndProject

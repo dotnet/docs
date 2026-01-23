@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # - and -= operators - subtraction (minus)
 
-The built-in [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types, and [delegate](../builtin-types/reference-types.md#the-delegate-type) types all support the `-` and `-=` operators.
+The built-in [delegate](../builtin-types/reference-types.md#the-delegate-type) types and [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types all support the `-` and `-=` operators.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

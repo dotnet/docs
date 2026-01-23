@@ -40,7 +40,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   For pointer types, you can use a `stackalloc` expression only in a local variable declaration to initialize the variable.
 
-The amount of memory available on the stack is limited. If you allocate too much memory on the stack, a <xref:System.StackOverflowException> is thrown. To avoid that exception, follow the rules below:
+The amount of memory available on the stack is limited. If you allocate too much memory on the stack, a <xref:System.StackOverflowException> is thrown. To avoid that exception, follow these rules:
 
 - Limit the amount of memory you allocate with `stackalloc`. For example, if the intended buffer size is below a certain limit, you allocate the memory on the stack; otherwise, use an array of the required length, as the following code shows:
 

@@ -115,7 +115,7 @@ You can't perform those operations with pointers of type `void*`.
 
 For information about supported arithmetic operations by using numeric types, see [Arithmetic operators](arithmetic-operators.md).
 
-### Adding or subtracting an integral value to or from a pointer
+### Add or subtract an integral value to or from a pointer
 
 For a pointer `p` of type `T*` and an expression `n` of a type implicitly convertible to `int`, `uint`, `long`, or `ulong`, addition and subtraction work as follows:
 

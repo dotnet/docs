@@ -35,7 +35,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## Aspire
 
-For information about what's new in Aspire, see [Aspire — what's new?](/dotnet/aspire/whats-new/).
+For information about what's new in Aspire, see [What's new in Aspire 13.1](https://aspire.dev/whats-new/aspire-13-1/).
 
 ## ASP.NET Core
 

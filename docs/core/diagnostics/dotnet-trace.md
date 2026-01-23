@@ -40,15 +40,15 @@ dotnet-trace [-h, --help] [--version] <command>
 
 The `dotnet-trace` tool:
 
-* Is a cross-platform .NET Core tool.
-* Enables the collection of .NET Core traces of a running process without a native profiler.
-* Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
-* Supports two different ways of collecting traces:
+- Is a cross-platform .NET Core tool.
+- Enables the collection of .NET Core traces of a running process without a native profiler.
+- Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
+- Supports two different ways of collecting traces:
 
   - The [`collect` verb](#dotnet-trace-collect) offers consistent functionality on any OS.
   - The [`collect-linux` verb](#dotnet-trace-collect-linux) uses Linux-specific OS capabilities to provide additional features.
 
-  | Characteristic                           | `collect` | `collect-linux`                  |
+  | Feature                                  | `collect` | `collect-linux`                  |
   |------------------------------------------|----------|-----------------------------------|
   | Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
   | Requires Admin/Root Privilege            | No       | Yes                               |
@@ -133,47 +133,47 @@ dotnet-trace collect
 
   A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option is ignored. The following table shows the list of available keywords:
 
-  | Keyword String Alias | Keyword Hex Value |
-  | ------------ | ------------------- |
-  | `gc` | `0x1` |
-  | `gchandle` | `0x2` |
-  | `assemblyloader` | `0x4` |
-  | `loader` | `0x8` |
-  | `jit` | `0x10` |
-  | `ngen` | `0x20` |
-  | `startenumeration` | `0x40` |
-  | `endenumeration` | `0x80` |
-  | `security` | `0x400` |
-  | `appdomainresourcemanagement` | `0x800` |
-  | `jittracing` | `0x1000` |
-  | `interop` | `0x2000` |
-  | `contention` | `0x4000` |
-  | `exception` | `0x8000` |
-  | `threading` | `0x10000` |
-  | `jittedmethodiltonativemap` | `0x20000` |
-  | `overrideandsuppressngenevents` | `0x40000` |
-  | `type` | `0x80000` |
-  | `gcheapdump` | `0x100000` |
-  | `gcsampledobjectallocationhigh` | `0x200000` |
-  | `gcheapsurvivalandmovement` | `0x400000` |
-  | `managedheapcollect` | `0x800000` |
-  | `gcheapandtypenames` | `0x1000000` |
-  | `gcsampledobjectallocationlow` | `0x2000000` |
-  | `perftrack` | `0x20000000` |
-  | `stack` | `0x40000000` |
-  | `threadtransfer` | `0x80000000` |
-  | `debugger` | `0x100000000` |
-  | `monitoring` | `0x200000000` |
-  | `codesymbols` | `0x400000000` |
-  | `eventsource` | `0x800000000` |
-  | `compilation` | `0x1000000000` |
-  | `compilationdiagnostic` | `0x2000000000` |
-  | `methoddiagnostic` | `0x4000000000` |
-  | `typediagnostic` | `0x8000000000` |
-  | `jitinstrumentationdata` | `0x10000000000` |
-  | `profiler` | `0x20000000000` |
-  | `waithandle` | `0x40000000000` |
-  | `allocationsampling` | `0x80000000000` |
+  | Keyword string alias            | Keyword hex value |
+  |---------------------------------|-------------------|
+  | `gc`                            | `0x1`             |
+  | `gchandle`                      | `0x2`             |
+  | `assemblyloader`                | `0x4`             |
+  | `loader`                        | `0x8`             |
+  | `jit`                           | `0x10`            |
+  | `ngen`                          | `0x20`            |
+  | `startenumeration`              | `0x40`            |
+  | `endenumeration`                | `0x80`            |
+  | `security`                      | `0x400`           |
+  | `appdomainresourcemanagement`   | `0x800`           |
+  | `jittracing`                    | `0x1000`          |
+  | `interop`                       | `0x2000`          |
+  | `contention`                    | `0x4000`          |
+  | `exception`                     | `0x8000`          |
+  | `threading`                     | `0x10000`         |
+  | `jittedmethodiltonativemap`     | `0x20000`         |
+  | `overrideandsuppressngenevents` | `0x40000`         |
+  | `type`                          | `0x80000`         |
+  | `gcheapdump`                    | `0x100000`        |
+  | `gcsampledobjectallocationhigh` | `0x200000`        |
+  | `gcheapsurvivalandmovement`     | `0x400000`        |
+  | `managedheapcollect`            | `0x800000`        |
+  | `gcheapandtypenames`            | `0x1000000`       |
+  | `gcsampledobjectallocationlow`  | `0x2000000`       |
+  | `perftrack`                     | `0x20000000`      |
+  | `stack`                         | `0x40000000`      |
+  | `threadtransfer`                | `0x80000000`      |
+  | `debugger`                      | `0x100000000`     |
+  | `monitoring`                    | `0x200000000`     |
+  | `codesymbols`                   | `0x400000000`     |
+  | `eventsource`                   | `0x800000000`     |
+  | `compilation`                   | `0x1000000000`    |
+  | `compilationdiagnostic`         | `0x2000000000`    |
+  | `methoddiagnostic`              | `0x4000000000`    |
+  | `typediagnostic`                | `0x8000000000`    |
+  | `jitinstrumentationdata`        | `0x10000000000`   |
+  | `profiler`                      | `0x20000000000`   |
+  | `waithandle`                    | `0x40000000000`   |
+  | `allocationsampling`            | `0x80000000000`   |
 
   You can read about the CLR provider in more detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 
@@ -229,13 +229,13 @@ dotnet-trace collect
 
   Available profiles:
 
-  | Profile | Description |
-  |---------|-------------|
-  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
-  |`dotnet-sampled-thread-time`|Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks.|
-  |`gc-verbose`|Tracks GC collections and samples object allocations.|
-  |`gc-collect`|Tracks GC collections only at very low overhead.|
-  |`database`|Captures ADO.NET and Entity Framework database commands.|
+  | Profile      | Description                                              |
+  |--------------|----------------------------------------------------------|
+  | `dotnet-common` | Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`. |
+  | `dotnet-sampled-thread-time` | Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks. |
+  | `gc-verbose` | Tracks GC collections and samples object allocations.    |
+  | `gc-collect` | Tracks GC collections only at very low overhead.         |
+  | `database`   | Captures ADO.NET and Entity Framework database commands. |
 
   > [!NOTE]
   > In past versions of the dotnet-trace tool, the collect verb supported a profile called `cpu-sampling`. This profile was removed because the name was misleading. It sampled all threads regardless of their CPU usage. You can achieve a similar result now using `--profile dotnet-sampled-thread-time,dotnet-common`. If you need to match the former `cpu-sampling` behavior exactly, use `--profile dotnet-sampled-thread-time --providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
@@ -295,13 +295,13 @@ dotnet-trace collect
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
 
-|                                          | collect  | collect-linux                     |
-|------------------------------------------|----------|-----------------------------------|
-| Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
-| Requires Admin/Root privilege            | No       | Yes                               |
-| Trace all processes simultaneously       | No       | Supported                         |
-| Capture native library and kernel events | No       | Supported                         |
-| Event callstacks include native frames   | No       | Yes                               |
+| Feature                                  | `collect` | `collect-linux`                   |
+|------------------------------------------|-----------|-----------------------------------|
+| Supported OS                             | Any       | Linux only, kernel version >= 6.4 |
+| Requires Admin/Root privilege            | No        | Yes                               |
+| Trace all processes simultaneously       | No        | Supported                         |
+| Capture native library and kernel events | No        | Supported                         |
+| Event callstacks include native frames   | No        | Yes                               |
 
 ### Prerequisites
 
@@ -381,47 +381,47 @@ By default, all processes on the machine are traced. To trace only one process, 
 
     A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect-linux --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect-linux --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option is ignored. The following table shows the list of available keywords:
 
-  | Keyword String Alias | Keyword Hex Value |
-  | ------------ | ------------------- |
-  | `gc` | `0x1` |
-  | `gchandle` | `0x2` |
-  | `assemblyloader` | `0x4` |
-  | `loader` | `0x8` |
-  | `jit` | `0x10` |
-  | `ngen` | `0x20` |
-  | `startenumeration` | `0x40` |
-  | `endenumeration` | `0x80` |
-  | `security` | `0x400` |
-  | `appdomainresourcemanagement` | `0x800` |
-  | `jittracing` | `0x1000` |
-  | `interop` | `0x2000` |
-  | `contention` | `0x4000` |
-  | `exception` | `0x8000` |
-  | `threading` | `0x10000` |
-  | `jittedmethodiltonativemap` | `0x20000` |
-  | `overrideandsuppressngenevents` | `0x40000` |
-  | `type` | `0x80000` |
-  | `gcheapdump` | `0x100000` |
-  | `gcsampledobjectallocationhigh` | `0x200000` |
-  | `gcheapsurvivalandmovement` | `0x400000` |
-  | `managedheapcollect` | `0x800000` |
-  | `gcheapandtypenames` | `0x1000000` |
-  | `gcsampledobjectallocationlow` | `0x2000000` |
-  | `perftrack` | `0x20000000` |
-  | `stack` | `0x40000000` |
-  | `threadtransfer` | `0x80000000` |
-  | `debugger` | `0x100000000` |
-  | `monitoring` | `0x200000000` |
-  | `codesymbols` | `0x400000000` |
-  | `eventsource` | `0x800000000` |
-  | `compilation` | `0x1000000000` |
-  | `compilationdiagnostic` | `0x2000000000` |
-  | `methoddiagnostic` | `0x4000000000` |
-  | `typediagnostic` | `0x8000000000` |
-  | `jitinstrumentationdata` | `0x10000000000` |
-  | `profiler` | `0x20000000000` |
-  | `waithandle` | `0x40000000000` |
-  | `allocationsampling` | `0x80000000000` |
+  | Keyword string alias            | Keyword hex value |
+  |---------------------------------|-------------------|
+  | `gc`                            | `0x1`             |
+  | `gchandle`                      | `0x2`             |
+  | `assemblyloader`                | `0x4`             |
+  | `loader`                        | `0x8`             |
+  | `jit`                           | `0x10`            |
+  | `ngen`                          | `0x20`            |
+  | `startenumeration`              | `0x40`            |
+  | `endenumeration`                | `0x80`            |
+  | `security`                      | `0x400`           |
+  | `appdomainresourcemanagement`   | `0x800`           |
+  | `jittracing`                    | `0x1000`          |
+  | `interop`                       | `0x2000`          |
+  | `contention`                    | `0x4000`          |
+  | `exception`                     | `0x8000`          |
+  | `threading`                     | `0x10000`         |
+  | `jittedmethodiltonativemap`     | `0x20000`         |
+  | `overrideandsuppressngenevents` | `0x40000`         |
+  | `type`                          | `0x80000`         |
+  | `gcheapdump`                    | `0x100000`        |
+  | `gcsampledobjectallocationhigh` | `0x200000`        |
+  | `gcheapsurvivalandmovement`     | `0x400000`        |
+  | `managedheapcollect`            | `0x800000`        |
+  | `gcheapandtypenames`            | `0x1000000`       |
+  | `gcsampledobjectallocationlow`  | `0x2000000`       |
+  | `perftrack`                     | `0x20000000`      |
+  | `stack`                         | `0x40000000`      |
+  | `threadtransfer`                | `0x80000000`      |
+  | `debugger`                      | `0x100000000`     |
+  | `monitoring`                    | `0x200000000`     |
+  | `codesymbols`                   | `0x400000000`     |
+  | `eventsource`                   | `0x800000000`     |
+  | `compilation`                   | `0x1000000000`    |
+  | `compilationdiagnostic`         | `0x2000000000`    |
+  | `methoddiagnostic`              | `0x4000000000`    |
+  | `typediagnostic`                | `0x8000000000`    |
+  | `jitinstrumentationdata`        | `0x10000000000`   |
+  | `profiler`                      | `0x20000000000`   |
+  | `waithandle`                    | `0x40000000000`   |
+  | `allocationsampling`            | `0x80000000000`   |
 
   You can read about the CLR provider in more detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 
@@ -439,14 +439,14 @@ By default, all processes on the machine are traced. To trace only one process, 
 
   Available profiles:
 
-  | Profile | Description |
-  |---------|-------------|
-  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
-  |`cpu-sampling`|Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution.|
-  |`thread-time`|Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis.|
-  |`gc-verbose`|Tracks GC collections and samples object allocations.|
-  |`gc-collect`|Tracks GC collections only at very low overhead.|
-  |`database`|Captures ADO.NET and Entity Framework database commands.|
+  | Profile      | Description                                              |
+  |--------------|----------------------------------------------------------|
+  | `dotnet-common` | Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`. |
+  | `cpu-sampling` | Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution. |
+  | `thread-time` | Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis. |
+  | `gc-verbose` | Tracks GC collections and samples object allocations.    |
+  | `gc-collect` | Tracks GC collections only at very low overhead.         |
+  | `database`   | Captures ADO.NET and Entity Framework database commands. |
 
 #### Trace Collection Options
 

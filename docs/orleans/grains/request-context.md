@@ -7,7 +7,7 @@ ms.topic: article
 
 # Request context
 
-The <xref:Orleans.Runtime.RequestContext> is an Orleans feature allowing application metadata, such as a trace ID, to flow with requests. You can add application metadata on the client; it flows with Orleans requests to the receiving grain. The feature is implemented by a public static class, `RequestContext`, in the Orleans namespace. This class exposes two simple methods:
+The <xref:Orleans.Runtime.RequestContext> is an Orleans feature allowing application metadata, such as a trace ID, to flow with requests. You can add application metadata on the client; it flows with Orleans requests to the receiving grain. The feature is implemented by a public static class, <xref:Orleans.Runtime.RequestContext>, in the Orleans namespace. This class exposes two simple methods:
 
 ```csharp
 void Set(string key, object value)
@@ -21,14 +21,14 @@ object Get(string key)
 
 Use the preceding API to retrieve a value from the current request context.
 
-The backing storage for `RequestContext` is async-local. When a caller (client-side or within Orleans) sends a request, the contents of the caller's `RequestContext` are included with the Orleans message for the request. When the grain code receives the request, that metadata is accessible from the local `RequestContext`. If the grain code doesn't modify the `RequestContext`, then any grain it requests receives the same metadata, and so on.
+The backing storage for <xref:Orleans.Runtime.RequestContext> is async-local. When a caller (client-side or within Orleans) sends a request, the contents of the caller's <xref:Orleans.Runtime.RequestContext> are included with the Orleans message for the request. When the grain code receives the request, that metadata is accessible from the local <xref:Orleans.Runtime.RequestContext>. If the grain code doesn't modify the <xref:Orleans.Runtime.RequestContext>, then any grain it requests receives the same metadata, and so on.
 
-Application metadata is also maintained when you schedule a future computation using <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> or <xref:System.Threading.Tasks.Task.ContinueWith%2A>. In both cases, the continuation executes with the same metadata as the scheduling code had when the computation was scheduled. That is, the system copies the current metadata and passes it to the continuation, so the continuation won't see changes made after the call to `StartNew` or `ContinueWith`.
+Application metadata is also maintained when you schedule a future computation using <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> or <xref:System.Threading.Tasks.Task.ContinueWith%2A>. In both cases, the continuation executes with the same metadata as the scheduling code had when the computation was scheduled. That is, the system copies the current metadata and passes it to the continuation, so the continuation won't see changes made after the call to <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> or <xref:System.Threading.Tasks.Task.ContinueWith%2A>.
 
 > [!IMPORTANT]
-> Application metadata doesn't flow back with responses. Code that runs as a result of receiving a response (either within a `ContinueWith` continuation or after a call to <xref:System.Threading.Tasks.Task.Wait?displayProperty=nameWithType> or `GetValue`) still runs within the current context set by the original request.
+> Application metadata doesn't flow back with responses. Code that runs as a result of receiving a response (either within a <xref:System.Threading.Tasks.Task.ContinueWith%2A> continuation or after a call to <xref:System.Threading.Tasks.Task.Wait%2A> or <xref:System.Threading.Tasks.Task%601.Result>) still runs within the current context set by the original request.
 
-For example, to set a trace ID in the client to a new `Guid`, call:
+For example, to set a trace ID in the client to a new <xref:System.Guid?displayProperty=nameWithType>, call:
 
 ```csharp
 RequestContext.Set("TraceId", Guid.NewGuid());

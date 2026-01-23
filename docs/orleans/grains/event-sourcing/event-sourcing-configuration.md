@@ -73,9 +73,9 @@ public class ChatGrain :
 }
 ```
 
-### `StorageProvider` attributes
+### <xref:Orleans.Providers.StorageProviderAttribute> attributes
 
-Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard `StorageProvider` to communicate with storage. Specify this provider using a separate `StorageProvider` attribute, as follows:
+Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard <xref:Orleans.Providers.StorageProviderAttribute> to communicate with storage. Specify this provider using a separate <xref:Orleans.Providers.StorageProviderAttribute> attribute, as follows:
 
 ```csharp
 [LogConsistencyProvider(ProviderName = "LogStorage")]
@@ -89,7 +89,7 @@ public class ChatGrain :
 
 ## Default providers
 
-You can omit the `LogConsistencyProvider` and/or `StorageProvider` attributes if a default is specified in the configuration. Do this by using the special name `Default` for the respective provider. For example:
+You can omit the `LogConsistencyProvider` and/or <xref:Orleans.Providers.StorageProviderAttribute> attributes if a default is specified in the configuration. Do this by using the special name `Default` for the respective provider. For example:
 
 ```xml
 <LogConsistencyProviders>

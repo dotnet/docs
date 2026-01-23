@@ -24,10 +24,90 @@ The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Micr
 
 Note that the Kubernetes hosting package doesn't use Kubernetes for clustering. A separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](../host/configuration-guide/server-configuration.md) documentation.
 
+## Deploy to Kubernetes with .NET Aspire
+
+.NET Aspire simplifies Kubernetes deployment by automatically generating Kubernetes manifests from your AppHost configuration. Instead of manually writing YAML files, Aspire can produce the necessary deployment, service, and configuration resources based on your application's dependency graph.
+
+### Add the Kubernetes hosting integration
+
+First, install the [Aspire.Hosting.Kubernetes](https://www.nuget.org/packages/Aspire.Hosting.Kubernetes) NuGet package in your AppHost project:
+
+```bash
+dotnet add package Aspire.Hosting.Kubernetes
+```
+
+Then add a Kubernetes environment to your AppHost:
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+// Add the Kubernetes environment
+var k8s = builder.AddKubernetesEnvironment("k8s");
+
+// Add your Orleans silo project
+var silo = builder.AddProject<Projects.MySilo>("silo");
+
+builder.Build().Run();
+```
+
+You can optionally customize the Kubernetes environment properties:
+
+```csharp
+builder.AddKubernetesEnvironment("k8s")
+    .WithProperties(k8s =>
+    {
+        k8s.HelmChartName = "my-orleans-app";
+    });
+```
+
+### Generate Kubernetes manifests
+
+Use the Aspire CLI to generate Kubernetes manifests from your Aspire project:
+
+```bash
+aspire publish -o ./k8s-manifests
+```
+
+This generates a complete set of Kubernetes YAML files in the specified output directory, including:
+
+- **Deployments or StatefulSets** for each service in your AppHost
+- **Services** for network connectivity
+- **ConfigMaps and Secrets** for configuration
+- **Helm charts** for easier deployment management
+- **PersistentVolumes and PersistentVolumeClaims** for storage resources
+
+### Deploy to your cluster
+
+After generating the manifests, deploy them using `kubectl` or Helm:
+
+```bash
+# Using kubectl
+kubectl apply -f ./k8s-manifests
+
+# Or using Helm (if Helm charts were generated)
+helm install my-orleans-app ./k8s-manifests/charts/my-orleans-app
+```
+
+### Benefits of Aspire-generated manifests
+
+- **Consistent configuration**: Environment variables, ports, and resource references are automatically synchronized
+- **Dependency management**: Services are configured with correct connection strings and service references
+- **Orleans-aware**: The Orleans hosting integration ensures proper silo configuration is included
+- **Helm support**: Generated Helm charts allow parameterized deployments across environments
+
+> [!TIP]
+> For production deployments, review and customize the generated manifests as needed. Use [external parameters](https://aspire.dev/get-started/resources/) to configure environment-specific values.
+
+For detailed information about the Aspire Kubernetes integration, see the [Aspire Kubernetes integration documentation](https://aspire.dev/integrations/compute/kubernetes/).
+
+For more information about configuring Orleans with .NET Aspire, see [.NET Aspire Orleans integration](../host/aspire-integration.md).
+
+## Manual Kubernetes configuration
+
 This functionality imposes some requirements on service deployment:
 
 - Silo names must match pod names.
-- Pods must have `orleans/serviceId` and `orleans/clusterId` labels corresponding to the silo's `ServiceId` and `ClusterId`. The `UseKubernetesHosting` method propagates these labels into the corresponding Orleans options from environment variables.
+- Pods must have `orleans/serviceId` and `orleans/clusterId` labels corresponding to the silo's <xref:Orleans.Configuration.ClusterOptions.ServiceId> and <xref:Orleans.Configuration.ClusterOptions.ClusterId>. The `UseKubernetesHosting` method propagates these labels into the corresponding Orleans options from environment variables.
 - Pods must have the following environment variables set: `POD_NAME`, `POD_NAMESPACE`, `POD_IP`, `ORLEANS_SERVICE_ID`, `ORLEANS_CLUSTER_ID`.
 
 The following example shows how to configure these labels and environment variables correctly:

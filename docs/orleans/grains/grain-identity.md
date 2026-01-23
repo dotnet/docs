@@ -141,7 +141,7 @@ In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.G
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);
 ```
 
-To access the compound key in the grain, call an overload of the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (such as <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
+To access the compound key in the grain, call an overload of the <xref:Orleans.GrainExtensions.GetPrimaryKey*> method (such as <xref:Orleans.GrainExtensions.GetPrimaryKeyLong*>):
 
 ```csharp
 public class ExampleGrain : Orleans.Grain, IExampleGrain

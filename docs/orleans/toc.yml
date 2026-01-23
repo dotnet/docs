@@ -8,7 +8,7 @@ items:
         href: overview.md
       - name: Benefits
         href: benefits.md
-      - name: "Migrate from Orleans 3.x to 7.0"
+      - name: Migration guide
         href: migration-guide.md
   - name: Quickstarts
     items:
@@ -120,14 +120,16 @@ items:
     items:
       - name: Clients
         href: host/client.md
+      - name: Dashboard
+        href: dashboard/index.md
+      - name: .NET Aspire integration
+        href: host/aspire-integration.md
       - name: Silo lifecycle
         href: host/silo-lifecycle.md
       - name: Heterogeneous silos
         href: host/heterogeneous-silos.md
       - name: Grain directory
         href: host/grain-directory.md
-      - name: PowerShell client module
-        href: host/powershell-client.md
       - name: Configuration guide
         items:
           - name: Overview
@@ -189,12 +191,10 @@ items:
         href: deployment/service-fabric.md
       - name: Handle failures
         href: deployment/handling-failures.md
-      - name: Troubleshooting Azure Cloud Services deployments
+      - name: Troubleshooting Azure Cloud Services (Legacy)
         href: deployment/troubleshooting-azure-cloud-services-deployments.md
       - name: Consul deployments
         href: deployment/consul-deployment.md
-      - name: Docker deployment
-        href: deployment/docker-deployment.md
       - name: Troubleshoot deployments
         href: deployment/troubleshooting-deployments.md
   - name: Code samples

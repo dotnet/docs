@@ -82,6 +82,12 @@ groups:
   title: Orleans version
   prompt: Choose an Orleans version
   pivots:
+    - id: orleans-10-0
+      title: Orleans 10.0
+    - id: orleans-9-0
+      title: Orleans 9.x
+    - id: orleans-8-0
+      title: Orleans 8.x
     - id: orleans-7-0
       title: Orleans 7.0
     - id: orleans-3-x

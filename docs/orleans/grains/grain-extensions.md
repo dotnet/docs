@@ -30,7 +30,7 @@ public interface IGrainDeactivateExtension : IGrainExtension
 
 Next, implement the `GrainDeactivateExtension` class, providing the implementation for the `Deactivate` method.
 
-To access the target grain, retrieve the `IGrainContext` from the constructor. It's injected via dependency injection when creating the extension.
+To access the target grain, retrieve the <xref:Orleans.Runtime.IGrainContext> from the constructor. It's injected via dependency injection when creating the extension.
 
 ```csharp
 public sealed class GrainDeactivateExtension : IGrainDeactivateExtension
@@ -151,7 +151,7 @@ var value = await accessor.GetState();
 await accessor.SetState(10);
 ```
 
-In the preceding example, get a reference to the `IGrainStateAccessor<int>` extension for a specific grain instance using the <xref:Orleans.GrainExtensions.AsReference%2A?displayProperty=nameWithType> method. Then, use this reference to call the `GetState()` and `SetState(T state)` methods to read and modify the state value of the target grain.
+In the preceding example, get a reference to the `IGrainStateAccessor<int>` extension for a specific grain instance using the <xref:Orleans.GrainExtensions.AsReference*> method. Then, use this reference to call the `GetState()` and `SetState(T state)` methods to read and modify the state value of the target grain.
 
 ## See also
 

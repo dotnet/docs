@@ -250,7 +250,7 @@ Migration can occur in several scenarios:
 
 ### Implementing migration support
 
-Grains can participate in migration by implementing <xref:Orleans.IGrainMigrationParticipant>:
+Grains can participate in migration by implementing <xref:Orleans.Runtime.IGrainMigrationParticipant>:
 
 ```csharp
 public interface IGrainMigrationParticipant

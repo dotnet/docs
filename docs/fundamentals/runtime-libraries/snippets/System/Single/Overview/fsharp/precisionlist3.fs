@@ -10,8 +10,8 @@ for value in values do
 if total.Equals result then
     printfn "The sum of the values equals the total."
 else
-    printfn "The sum of the values ({total}) does not equal the total ({result})."
-    
+    printfn $"The sum of the values ({total}) does not equal the total ({result})."
+
 // The example displays the following output on .NET:
 //      The sum of the values (27.650002) does not equal the total (27.65).
 // The example displays the following output on .NET Framework:

@@ -79,7 +79,7 @@ To be considered equal, two <xref:System.Single> values must represent identical
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison1.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison1.vb" id="Snippet9":::
 
-Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals(System.Single)> method indicates that they are not equal. Using the "G9" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.
+Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals(System.Single)> method indicates that they are not equal.
 
 :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison2.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison2.fs" id="Snippet10":::
@@ -134,7 +134,7 @@ Operations with floating-point values do not throw exceptions, unlike operations
 
 The <xref:System.Single> structure does not define any explicit or implicit conversion operators; instead, conversions are implemented by the compiler.
 
-The following table lists the possible conversions of a value of the other primitive numeric types to a <xref:System.Single> value, It also indicates whether the conversion is widening or narrowing and whether the resulting <xref:System.Single> may have less precision than the original value.
+The following table lists the possible conversions of a value of the other primitive numeric types to a <xref:System.Single> value. It also indicates whether the conversion is widening or narrowing and whether the resulting <xref:System.Single> may have less precision than the original value.
 
 | Conversion from     | Widening/narrowing | Possible loss of precision |
 |---------------------|--------------------|----------------------------|

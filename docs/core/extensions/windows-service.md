@@ -106,7 +106,7 @@ Replace the template *Program.cs* file contents with the following C# code:
 
 The `AddWindowsService` extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
-For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+For more information on registering services, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 ## Publish the app
 

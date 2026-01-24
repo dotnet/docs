@@ -96,5 +96,5 @@ Running this simple application will render color output to the console window s
 
 - [Logging in .NET](logging.md)
 - [Logging providers in .NET](logging-providers.md)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)

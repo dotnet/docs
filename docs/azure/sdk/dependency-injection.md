@@ -8,7 +8,7 @@ ms.date: 04/25/2025
 
 # Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](../../core/extensions/dependency-injection.md). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
+This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](../../core/extensions/dependency-injection/overview.md). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
 
 ## Install packages
 
@@ -66,7 +66,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection/overview.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]
@@ -75,7 +75,7 @@ public class MyApiController : ControllerBase
 {
     private readonly BlobServiceClient _blobServiceClient;
     private readonly ServiceBusSender _serviceBusSender;
-  
+
     public MyApiController(
         BlobServiceClient blobServiceClient,
         IAzureClientFactory<ServiceBusSender> senderFactory)
@@ -83,11 +83,11 @@ public class MyApiController : ControllerBase
         _blobServiceClient = blobServiceClient;
         _serviceBusSender = senderFactory.CreateClient("myQueueName");
     }
-  
+
     [HttpGet]
     public async Task<IEnumerable<string>> Get()
     {
-        BlobContainerClient containerClient = 
+        BlobContainerClient containerClient =
             _blobServiceClient.GetBlobContainerClient("demo");
         var results = new List<string>();
 
@@ -270,7 +270,7 @@ At some point, you may want to change the default settings for a service client.
 ```
 
 You can change the retry policy to suit your needs like so:
-  
+
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {

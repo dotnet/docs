@@ -153,5 +153,5 @@ Consumers in this pattern provide a lambda expression (or a delegate that satisf
 ## See also
 
 - [Options pattern in .NET](options.md)
-- [Dependency injection in .NET](dependency-injection.md)
-- [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
+- [Dependency injection guidelines](dependency-injection/guidelines.md)

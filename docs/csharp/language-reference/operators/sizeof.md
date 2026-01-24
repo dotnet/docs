@@ -1,7 +1,7 @@
 ---
 title: "sizeof operator - determine the storage needs for a type"
 description: "Learn about the C# `sizeof` operator that returns the memory amount occupied by a variable of a given type."
-ms.date: 12/16/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "sizeof_CSharpKeyword"
   - "sizeof"
@@ -11,6 +11,8 @@ helpviewer_keywords:
 # sizeof operator - determine the memory needs for a given type
 
 The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The expressions presented in the following table are evaluated at compile time to the corresponding constant values and don't require an unsafe context:
 

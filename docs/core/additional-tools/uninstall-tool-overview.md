@@ -79,7 +79,7 @@ winget install --id Microsoft.DotNet.UninstallTool --source winget
 
 To uninstall using winget, execute the following:
 
-```powersehll
+```powershell
 winget uninstall --id Microsoft.DotNet.UninstallTool
 ```
 

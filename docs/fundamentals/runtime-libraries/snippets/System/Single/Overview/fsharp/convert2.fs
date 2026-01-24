@@ -8,7 +8,7 @@ let values =
     [ Single.MinValue; -67890.1234f; -12345.6789f
       12345.6789f; 67890.1234f; Single.MaxValue
       Single.NaN; Single.PositiveInfinity
-      Single.Negative∞ ]
+      Single.NegativeInfinity ]
 
 for value in values do
     try

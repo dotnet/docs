@@ -12,6 +12,7 @@ let fromParse = Double.Parse "-4.42330604244772E-305"
 printfn $"Double value from literal: {fromLiteral,29:R}"
 printfn $"Double value from variable: {fromVariable,28:R}"
 printfn $"Double value from Parse method: {fromParse,24:R}"
+
 // On 32-bit versions of the .NET Framework, the output is:
 //    Double value from literal:        -4.42330604244772E-305
 //    Double value from variable:       -4.42330604244772E-305

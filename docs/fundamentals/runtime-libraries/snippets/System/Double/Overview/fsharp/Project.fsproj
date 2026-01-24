@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="convert1.fs" />
+    <Compile Include="convert2.fs" />
+    <Compile Include="exceptional1.fs" />
+    <Compile Include="exceptional2.fs" />
+    <Compile Include="precision1.fs" />
+    <Compile Include="precisionlist1.fs" />
+    <Compile Include="precisionlist3.fs" />
+    <Compile Include="precisionlist4.fs" />
+    <Compile Include="representation1.fs" />
+    <Compile Include="representation2.fs" />
+  </ItemGroup>
+</Project>

@@ -15,6 +15,7 @@ let values: obj[] =
 for value in values do
     let dblValue = value :?> double
     printfn $"{value} ({value.GetType().Name}) --> {dblValue:R} ({dblValue.GetType().Name})"
+
 // The example displays the following output:
 //    0 (Byte) --> 0 (Double)
 //    255 (Byte) --> 255 (Double)

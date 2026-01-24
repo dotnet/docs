@@ -17,10 +17,9 @@ public class Example9
             Console.WriteLine($"The sum of the values ({total}) does not equal the total ({result}).");
     }
 }
-// The example displays the following output:
-//      The sum of the values (27.65) does not equal the total (27.65).   
-//
-// If the index items in the Console.WriteLine statement are changed to {0:R},
-// the example displays the following output:
-//       The sum of the values (27.6500015) does not equal the total (27.65).   
+
+// The example displays the following output on .NET:
+//      The sum of the values (27.650002) does not equal the total (27.65).
+// The example displays the following output on .NET Framework:
+//      The sum of the values (27.65) does not equal the total (27.65).
 // </Snippet6>

@@ -10,7 +10,7 @@ Module Example9
         Console.WriteLine("{0} = {1}: {2}", value1, value2, value1.Equals(value2))
     End Sub
 End Module
-' The example displays the following output:
-'       0.33333333333333331 = 0.3333333432674408: False
+' The example displays the following output on .NET:
+'       0.3333333333333333 = 0.3333333432674408: False
 ' </Snippet5>
 

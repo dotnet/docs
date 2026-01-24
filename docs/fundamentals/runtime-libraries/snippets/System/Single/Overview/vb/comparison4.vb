@@ -1,8 +1,8 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-' <Snippet12>
 Module Example4
+    ' <Snippet12>
     Public Sub Main()
         Dim one1 As Single = 0.1 * 10
         Dim one2 As Single = 0
@@ -27,7 +27,7 @@ Module Example4
             Return value1.Equals(value2)
         End If
 
-        ' Handle zero to avoid division by zero
+        ' Handle zero to avoid division by zero.
         Dim divisor As Single = Math.Max(value1, value2)
         If divisor.Equals(0) Then
             divisor = Math.Min(value1, value2)
@@ -35,8 +35,9 @@ Module Example4
 
         Return Math.Abs(value1 - value2) / divisor <= epsilon
     End Function
+
+    ' The example displays the following output:
+    '       1 = 1.0000001: False
+    '       1 is approximately equal to 1.0000001: True
+    ' </Snippet12>
 End Module
-' The example displays the following output:
-'       1 = 1.00000012: False
-'       1 is approximately equal to 1.00000012: True
-' </Snippet12>

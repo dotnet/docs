@@ -13,15 +13,13 @@ Module Example10
         If total.Equals(result) Then
             Console.WriteLine("The sum of the values equals the total.")
         Else
-            Console.WriteLine("The sum of the values ({0}) does not equal the total ({1}).",
-                           total, result)
+            Console.WriteLine($"The sum of the values ({total}) does not equal the total ({result}).")
         End If
     End Sub
 End Module
-' The example displays the following output:
-'      The sum of the values (27.65) does not equal the total (27.65).   
-'
-' If the index items in the Console.WriteLine statement are changed to {0:R},
-' the example displays the following output:
-'       The sum of the values (27.639999999999997) does not equal the total (27.64).   
+
+' The example displays the following output on .NET:
+'      The sum of the values (27.650002) does not equal the total (27.65).
+' The example displays the following output on .NET Framework:
+'      The sum of the values (27.65) does not equal the total (27.65).
 ' </Snippet6>

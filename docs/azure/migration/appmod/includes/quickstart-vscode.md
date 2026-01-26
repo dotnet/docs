@@ -33,11 +33,11 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 1. The assessment starts automatically and analyzes your project for migration readiness.
 
-    :::image type="content" source="../media/vscode/assessment-in-process.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+    :::image type="content" source="../media/vscode/assessment-in-process.png" alt-text="Screenshot of run a task analyzing your project for migration readiness.":::
 
 1. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
 
-    :::image type="content" source="../media/vscode/assessment-report.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+    :::image type="content" source="../media/vscode/assessment-report.png" alt-text="Screenshot of run an assessment report UI page and a list of migration tasks.":::
 
 ## App migrations
 
@@ -77,7 +77,7 @@ Select the **Run Task** button in the Assessment Report from the previous step t
 
 Run the specific task in the **TASKS - .NET** section. For example, the **Migrate Database to Azure Database for PostgreSQL** task under **Database Tasks** updates your database connection, configurations, dependencies, and data access code to use Azure Database for PostgreSQL.
 
-:::image type="content" source="../media/vscode/run-task.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+:::image type="content" source="../media/vscode/run-task.png" alt-text="Screenshot of running a specific predefined task.":::
 
 ### Plan and progress tracker generation
 

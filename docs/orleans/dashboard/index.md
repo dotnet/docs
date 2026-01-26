@@ -2,7 +2,7 @@
 title: Orleans Dashboard
 description: Learn how to use the Orleans Dashboard for real-time monitoring of your Orleans cluster, silos, and grains.
 ms.date: 01/20/2026
-ms.topic: conceptual
+ms.topic: concept-article
 zone_pivot_groups: orleans-version
 ---
 

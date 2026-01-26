@@ -70,11 +70,11 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 - GitHub Copilot starts the migration process and might ask for your approval to use knowledge base tools in the Model Context Protocol (MCP) server. Grant permission when prompted.
 - Copilot follows the plan and progress tracker to:
-  - Manage dependencies
-  - Apply configuration changes
-  - Make code changes
-  - Build the solution, fix all compilation and configuration errors, and ensure a successful build
-  - Fix security vulnerabilities
+  - Manage dependencies.
+  - Apply configuration changes.
+  - Make code changes.
+  - Build the solution, fix all compilation and configuration errors, and ensure a successful build.
+  - Fix security vulnerabilities.
 
 ## Default chat messages
 

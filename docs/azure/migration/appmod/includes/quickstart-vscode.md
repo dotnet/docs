@@ -32,7 +32,7 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 1. Select **Run Assessment** in the upper-right corner of the page.
 
-:::image type="content" source="../media/vscode/start-assessment.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+    :::image type="content" source="../media/vscode/start-assessment.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
 1. The assessment starts automatically and analyzes your project for migration readiness.
 
@@ -48,13 +48,13 @@ GitHub Copilot app modernization for .NET includes [predefined tasks](../predefi
 
 ### Chat-based migration (recommended)
 
-Chat-based migration is the recommended way to start a migration. The `AppModernization-DotNet` custom agent is optimized for application modernization tasks. By using this agent, you can use simple, natural language prompts to perform complex migration scenarios.
+Chat-based migration is the recommended way to start a migration. The `AppModernization-DotNet` custom agent is optimized for application modernization tasks. This agent lets you use simple, natural language prompts to perform complex migration scenarios.
 
-Use the following steps to select the custom agent and start the migration:
+Complete the following steps to select the custom agent and start the migration:
 
 1. Make sure you have a .NET project open in Visual Studio Code.
 
-1. Open the Copilot chat window by selecting the chat icon in the **Activity Bar**.
+1. Select the chat icon in the **Activity Bar** to open the Copilot chat window.
 
 1. In the chat window, locate the agent selector dropdown menu at the top of the chat input box. Select **AppModernization-DotNet** from the list. This custom agent is designed for .NET application modernization and migration scenarios.
 

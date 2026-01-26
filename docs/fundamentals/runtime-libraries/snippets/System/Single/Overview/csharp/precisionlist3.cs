@@ -1,7 +1,7 @@
-// <Snippet6>
+﻿// <Snippet6>
 using System;
 
-public class Example9
+public class PrecisionList3Example
 {
     public static void Main()
     {

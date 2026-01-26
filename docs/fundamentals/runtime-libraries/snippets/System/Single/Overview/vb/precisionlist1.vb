@@ -1,7 +1,4 @@
-﻿﻿' Visual Basic .NET Document
-Option Strict On
-
-Module Example10
+﻿Module Example10
     Public Sub Main()
         ' <Snippet5>
         Dim value1 As Double = 1 / 3

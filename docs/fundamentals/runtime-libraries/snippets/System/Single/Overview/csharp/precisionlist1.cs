@@ -10,7 +10,7 @@ public class Example9
         Double value2 = (Double)sValue2;
         Console.WriteLine($"{value1:R} = {value2:R}: {value1.Equals(value2)}");
 
-        // The example displays the following output:
+        // The example displays the following output on .NET:
         //        0.3333333333333333 = 0.3333333432674408: False
         // </Snippet5>
     }

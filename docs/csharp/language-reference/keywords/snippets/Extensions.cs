@@ -189,6 +189,16 @@ public static class GenericExtensions
                 yield return item;
             }
         }
+
+        /// <summary>
+        /// Gets an empty sequence of the receiver's element type.
+        /// </summary>
+        /// <returns>An empty sequence of the receiver's element type.</returns>
+        /// <remarks>
+        /// This property can be used as a neutral starting point when aggregating or composing
+        /// sequences of the receiver's element type. The returned sequence is always empty and does not allocate any storage.
+        /// </remarks>
+        public static IEnumerable<TReceiver> Empty => Enumerable.Empty<TReceiver>();
     }
 }
 // </GenericExtension>

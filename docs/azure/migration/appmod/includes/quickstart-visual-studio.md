@@ -62,7 +62,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ### Start code remediation
 
-- If you're satisfied with the plan and progress tracker, enter a prompt to start the migration, such as:
+- If you're satisfied with the plan and progress tracker, enter a prompt to start the migration process, such as:
 
     ```console
     The plan and progress tracker look good to me. Go ahead with the migration.
@@ -78,11 +78,11 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ## Default chat messages
 
-GitHub Copilot app modernization for .NET gives you default chat message options to streamline your workflow.
+GitHub Copilot app modernization for .NET provides default chat message options to streamline your workflow.
 
 :::image type="content" source="../media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 
-You can choose one of the predefined options and send it in the chat:
+Choose one of the predefined options and send it in the chat:
 
 - **Run modernization assessment**: Starts a new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
 - **View assessment report**: Opens the previous assessment report and shows a summary of migration tasks based on the results. If no previous assessment exists, it runs a new assessment first.
@@ -91,7 +91,7 @@ You can choose one of the predefined options and send it in the chat:
 > [!TIP]
 > These default messages help you quickly navigate common workflows without typing custom prompts. You can also enter your own messages to interact with Copilot for specific questions or needs.
 
-## Next Steps
+## Next steps
 
 - [Working with assessment](../working-with-assessment.md)
 - [Predefined Tasks](../predefined-tasks.md)

@@ -1,14 +1,21 @@
 ---
 ms.topic: include
-ms.date: 01/22/2026
+ms.date: 01/26/2026
+author: alexwolfmsft
+ms.author: alexwolf
+ms.reviewer: alexwolf
+title: GitHub Copilot App Modernization for .NET in VS Code
+description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot in Visual Studio Code. Follow step-by-step guidance for seamless modernization.
 ---
 
 ## Prerequisites
 
 - A GitHub account with an active [GitHub Copilot](https://github.com/features/copilot) subscription under any plan.
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/). Must be version 1.101 or later.
-    - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). For setup instructions, see [Set up GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/setup). Be sure to sign in to your GitHub account within Visual Studio Code.
-    - [GitHub Copilot app modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code after installation.
+
+  - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). For setup instructions, see [Set up GitHub Copilot in VisualStudio Code](https://code.visualstudio.com/docs/copilot/setup). Be sure to sign in to your GitHub account within Visual Studio Code.
+  - [GitHub Copilot app modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code afterinstallation.
+
 - A .NET development environment to build and test the project.
 
 ## Assess app readiness
@@ -17,23 +24,23 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your computer.
 
-2. In Visual Studio Code, open the **Contoso University** solution from the samples repository.
+1. In Visual Studio Code, open the **Contoso University** solution from the samples repository.
 
-3. Open the **GitHub Copilot app modernization** extension.
+1. Open the **GitHub Copilot app modernization** extension.
 
-4. In the **QUICKSTART** section, select **Start Assessment**. The **Assessment reports** page opens.
+1. In the **QUICKSTART** section, select **Start Assessment**. The **Assessment reports** page opens.
 
-5. Select **Run Assessment** in the upper-right corner of the page.
+1. Select **Run Assessment** in the upper-right corner of the page.
 
 :::image type="content" source="../media/vscode/start-assessment.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
-6. The assessment starts automatically and analyzes your project for migration readiness.
+1. The assessment starts automatically and analyzes your project for migration readiness.
 
-:::image type="content" source="../media/vscode/assessment-in-process.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+    :::image type="content" source="../media/vscode/assessment-in-process.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
-7. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
+1. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
 
-:::image type="content" source="../media/vscode/assessment-report.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
+    :::image type="content" source="../media/vscode/assessment-report.png" alt-text="Screenshot of run a task in tasks section to start a migration task.":::
 
 ## App migrations
 
@@ -41,7 +48,7 @@ GitHub Copilot app modernization for .NET includes [predefined tasks](../predefi
 
 ### Chat-based migration (recommended)
 
-Chat-based migration is the recommended way to start a migration. The `AppModernization-DotNet` custom agent is optimized for application modernization tasks and enables you to use simple, natural language prompts to perform complex migration scenarios.
+Chat-based migration is the recommended way to start a migration. The `AppModernization-DotNet` custom agent is optimized for application modernization tasks. By using this agent, you can use simple, natural language prompts to perform complex migration scenarios.
 
 Use the following steps to select the custom agent and start the migration:
 
@@ -49,7 +56,7 @@ Use the following steps to select the custom agent and start the migration:
 
 1. Open the Copilot chat window by selecting the chat icon in the **Activity Bar**.
 
-1. In the chat window, locate the agent selector dropdown menu at the top of the chat input box and select **AppModernization-DotNet** from the list. This custom agent is designed for .NET application modernization and migration scenarios.
+1. In the chat window, locate the agent selector dropdown menu at the top of the chat input box. Select **AppModernization-DotNet** from the list. This custom agent is designed for .NET application modernization and migration scenarios.
 
    :::image type="content" source="../media/vscode/custom-agent.png" alt-text="Screenshot of selecting the .NET custom agent in the chat window.":::
 
@@ -61,7 +68,7 @@ Use the following steps to select the custom agent and start the migration:
 
 1. The agent analyzes your code, creates a migration plan, makes code changes, runs validations, and generates a summary. Select **Continue** to proceed through each step and **Keep** to accept the changes.
 
-### Start a migration task from UI
+### Start a migration task from the UI
 
 You can also start a migration task from the UI:
 
@@ -80,6 +87,7 @@ Run the specific task in the **TASKS - .NET** section. For example, the **Migrat
 When you start the migration, GitHub Copilot starts a session in agent mode.
 
 The tool creates two files in the `.github/appmod/code-migration/<target-branch-name>` folder:
+
 - `plan.md`: The overall migration plan.
 - `progress.md`: A progress tracker that GitHub Copilot updates as it completes tasks.
 
@@ -94,6 +102,7 @@ When you're satisfied with the plan and progress tracker, enter **continue** to 
 GitHub Copilot starts the migration process and might ask for your approval to use knowledge base tools in the Model Context Protocol (MCP) server. Grant permission when prompted.
 
 Copilot follows the plan and progress tracker to:
+
 - Manage dependencies.
 - Apply configuration changes.
 - Make code changes.
@@ -103,12 +112,11 @@ Copilot follows the plan and progress tracker to:
 Repeatedly select or enter **Continue** to confirm the use of tools or commands and wait for the code changes to finish.
 
 > [!NOTE]
-> In Visual Studio Code, app modernization uses the `AppModernization-DotNet` custom agent with Claude Sonnet 4.5 by default for best results when updating .NET code to migrate to Azure. It falls back to the 'auto' model if Sonnet 4.5 is not available to you. You can configure the custom agent to [modify the 'model' setting](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) by selecting **Configure Custom Agents** from the **Agent** menu. Alternatively, you can use the language model picker in the chat window to switch models for the current chat session.
-
+> In Visual Studio Code, app modernization uses the `AppModernization-DotNet` custom agent with Claude Sonnet 4.5 by default for best results when updating .NET code to migrate to Azure. It falls back to the 'auto' model if Sonnet 4.5 isn't available to you. You can configure the custom agent to [modify the 'model' setting](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) by selecting **Configure Custom Agents** from the **Agent** menu. Alternatively, you can use the language model picker in the chat window to switch models for the current chat session.
 
 ### Validation iteration
 
-After the code changes finish, the migration proceeds with a validation and fix iteration loop. This loop includes the following five parts:
+After the code changes finish, the migration tool starts a validation and fix iteration loop. This loop includes the following five steps:
 
 1. Detect Common Vulnerabilities and Exposures (CVEs) in current dependencies and fix them.
 1. Build the project and resolve any build errors.
@@ -116,7 +124,7 @@ After the code changes finish, the migration proceeds with a validation and fix 
 1. Analyze the project for unit test failures and automatically generate a plan to fix them until the tests pass.
 1. Analyze the code for migration items missed in the initial code migration and fix them.
 
-After all processes complete, the migration generates a summary as the final step. Review the code changes and confirm them by selecting **Keep**.
+After all processes complete, the migration tool generates a summary. Review the code changes and confirm them by selecting **Keep**.
 
 ## Next Steps
 

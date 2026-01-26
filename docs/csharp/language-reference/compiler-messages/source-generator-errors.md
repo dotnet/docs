@@ -79,7 +79,7 @@ ms.date: 05/23/2025
 
 The following errors are generated when source generators or interceptors are loaded during a compilation:
 
-- [**CS9137**](#interceptors-are-experimental): *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview<Features>` to your project.*
+- [**CS9137**](#interceptors-are-experimental): *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview</Features>` to your project.*
 - [**CS9138**](#incorrect-interceptor-declaration): *Method cannot be used as an interceptor because it or its containing type has type parameters.*
 - [**CS9139**](#incorrect-mapping): *Cannot intercept: compilation does not contain a file with path.*
 - [**CS9140**](#incorrect-mapping): *Cannot intercept: compilation does not contain a file with path. Did you mean to use a different path?*
@@ -126,11 +126,11 @@ These errors and warnings follow these themes:
 
 This error indicates you must enable the experimental feature.
 
-- **CS9137**: *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview<Features>` to your project.*
+- **CS9137**: *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview</Features>` to your project.*
 
 In C# 12, interceptors are experimental. Interceptors are subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
 
-In order to use interceptors, you must set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
+In order to use interceptors, you must set the `<Features>InterceptorsPreview</Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
 
 ## Signature mismatch
 

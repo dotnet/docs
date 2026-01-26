@@ -2,14 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-    }
-}
+using System.Windows;
+using System.Windows.Controls;
 
 namespace n1
 {

@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="comparison1.fs" />
+    <Compile Include="comparison2.fs" />
+    <Compile Include="comparison3.fs" />
+    <Compile Include="comparison4.fs" />
     <Compile Include="convert1.fs" />
     <Compile Include="convert2.fs" />
     <Compile Include="exceptional1.fs" />
@@ -15,5 +19,6 @@
     <Compile Include="precisionlist4.fs" />
     <Compile Include="representation1.fs" />
     <Compile Include="representation2.fs" />
+    <Compile Include="source.fs" />
   </ItemGroup>
 </Project>

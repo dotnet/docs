@@ -61,6 +61,32 @@ Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configu
 
 Use a semicolon-delimited list of RID values. For a list of Runtime Identifiers, see the [RID catalog](../rid-catalog.md).
 
+### Provide a framework-dependent version
+
+When you opt into RID-specific tool packaging, the .NET SDK creates self-contained packages for each specified RID. However, you lose the default framework-dependent packaging that works on any platform with the .NET runtime installed.
+
+To provide a framework-dependent version alongside RID-specific packages, add `any` to your `ToolPackageRuntimeIdentifiers` list:
+
+```xml
+<PropertyGroup>
+  <PublishTrimmed>true</PublishTrimmed>
+  <ToolPackageRuntimeIdentifiers>win-x64;osx-arm64;linux-x64;any</ToolPackageRuntimeIdentifiers>
+</PropertyGroup>
+```
+
+This configuration creates five packages:
+
+- One top-level pointer package that lists all available sub-packages.
+- Three RID-specific packages (`win-x64`, `osx-arm64`, `linux-x64`) that are self-contained and trimmed.
+- One RID-agnostic package (`any`) that is framework-dependent and requires the .NET runtime to be installed.
+
+When users install your tool:
+
+- On `win-x64`, `osx-arm64`, or `linux-x64` systems, the self-contained, trimmed packages are downloaded and executed.
+- On any other operating system or architecture, the framework-dependent `any` package is used.
+
+This approach provides optimized, self-contained binaries for common platforms while maintaining compatibility with less common platforms through the framework-dependent fallback.
+
 ### When to use `RuntimeIdentifiers` vs `ToolPackageRuntimeIdentifiers`
 
 Both `RuntimeIdentifiers` and `ToolPackageRuntimeIdentifiers` opt your tool into RID-specific packaging, but they serve slightly different purposes:
@@ -104,32 +130,6 @@ This command creates multiple NuGet packages:
   - Example: `mytool.osx-arm64.1.0.0.nupkg`
 - One RID-agnostic pointer package: `<packageName>.<packageVersion>.nupkg`
   - Example: `mytool.1.0.0.nupkg`
-
-### Including a framework-dependent version
-
-When you opt into RID-specific tool packaging, the .NET SDK creates self-contained packages for each specified RID. However, you lose the default framework-dependent packaging that works on any platform with the .NET runtime installed.
-
-To provide a framework-dependent version alongside RID-specific packages, add `any` to your `ToolPackageRuntimeIdentifiers` list:
-
-```xml
-<PropertyGroup>
-  <PublishTrimmed>true</PublishTrimmed>
-  <ToolPackageRuntimeIdentifiers>win-x64;osx-arm64;linux-x64;any</ToolPackageRuntimeIdentifiers>
-</PropertyGroup>
-```
-
-This configuration creates five packages:
-
-- One top-level pointer package that lists all available sub-packages.
-- Three RID-specific packages (`win-x64`, `osx-arm64`, `linux-x64`) that are self-contained and trimmed.
-- One RID-agnostic package (`any`) that is framework-dependent and requires the .NET runtime to be installed.
-
-When users install your tool:
-
-- On `win-x64`, `osx-arm64`, or `linux-x64` systems, the self-contained, trimmed packages are downloaded and executed.
-- On any other operating system or architecture, the framework-dependent `any` package is used.
-
-This approach provides optimized, self-contained binaries for common platforms while maintaining compatibility with less common platforms through the framework-dependent fallback.
 
 ### AOT tools
 

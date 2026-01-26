@@ -1,9 +1,6 @@
 ---
 ms.topic: include
 ms.date: 01/26/2026
-author: alexwolfmsft
-ms.author: alexwolf
-ms.reviewer: alexwolf
 title: GitHub Copilot App Modernization for .NET in VS Code
 description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot in Visual Studio Code. Follow step-by-step guidance for seamless modernization.
 ---

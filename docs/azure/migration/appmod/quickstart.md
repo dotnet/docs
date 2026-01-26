@@ -1,7 +1,7 @@
 ---
 title: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET
 ms.reviewer: alexwolf
-description: Learn how to assess and migrate a .NET project by using GitHub Copilot app modernization for .NET.
+description: Assess and migrate your .NET project with GitHub Copilot. Learn how to evaluate migration readiness and start modernizing your app effectively.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/22/2025

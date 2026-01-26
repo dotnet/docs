@@ -1,49 +1,48 @@
 ---
 description: "sealed modifier - C# Reference"
 title: "sealed modifier"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "sealed"
   - "sealed_CSharpKeyword"
 helpviewer_keywords: 
   - "sealed keyword [C#]"
-ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
 ---
 # sealed (C# Reference)
 
-When applied to a class, the `sealed` modifier prevents other classes from inheriting from it. In the following example, class `B` inherits from class `A`, but no class can inherit from class `B`.
+When you apply the `sealed` modifier to a class, it prevents other classes from inheriting from that class. In the following example, class `B` inherits from class `A`, but no class can inherit from class `B`.
 
 ```csharp
 class A {}
 sealed class B : A {}
 ```
 
-You can also use the `sealed` modifier on a method or property that overrides a virtual method or property in a base class. This enables you to allow classes to derive from your class and prevent them from overriding specific virtual methods or properties.
+You can also use the `sealed` modifier on a method or property that overrides a virtual method or property in a base class. By using this approach, you enable developers to derive classes from your class while preventing them from overriding specific virtual methods or properties.
 
-## Example
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-In the following example, `Z` inherits from `Y` but `Z` cannot override the virtual function `F` that is declared in `X` and sealed in `Y`.
+In the following example, `Z` inherits from `Y` but `Z` can't override the virtual function `F` that is declared in `X` and sealed in `Y`.
 
-[!code-csharp[csrefKeywordsModifiers#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#16)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="16":::
 
 When you define new methods or properties in a class, you can prevent deriving classes from overriding them by not declaring them as [virtual](virtual.md).
-When you override a `virtual` member declared in a base type, you can prevent deriving types from overriding them by using sealed keyword as in the following example:
+When you override a `virtual` member declared in a base type, you can prevent deriving types from overriding it by using the `sealed` keyword as shown in the following example:
 
 ```
 public sealed override string ToString() => Value;
 ```
 
-It is an error to use the [abstract](abstract.md) modifier with a sealed class, because an abstract class must be inherited by a class that provides an implementation of the abstract methods or properties.
+It's an error to use the [abstract](abstract.md) modifier with a sealed class, because an abstract class must be inherited by a class that provides an implementation of the abstract methods or properties.
 
-When applied to a method or property, the `sealed` modifier must always be used with [override](override.md).
+When you apply the `sealed` modifier to a method or property, always use it with [override](override.md).
 
-Because structs are implicitly sealed, they cannot be inherited.
+Because structs are implicitly sealed, you can't inherit from them.
 
 For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 For more examples, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
-[!code-csharp[csrefKeywordsModifiers#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#17)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="17":::
 
 In the previous example, you might try to inherit from the sealed class by using the following statement:
 
@@ -53,13 +52,10 @@ The result is an error message:
 
 `'MyDerivedC': cannot derive from sealed type 'SealedClass'`
 
-## Remarks
-
-To determine whether to seal a class, method, or property, you should generally consider the following two points:
+To determine whether to seal a class, method, or property, generally consider the following two points:
 
 - The potential benefits that deriving classes might gain through the ability to customize your class.
-
-- The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.
+- The potential that deriving classes could modify your classes in such a way that they no longer work correctly or as expected.
 
 ## C# language specification
 

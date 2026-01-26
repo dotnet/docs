@@ -1,7 +1,7 @@
 ---
 title: "Extension member declarations"
 description: "Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface."
-ms.date: 12/11/2025
+ms.date: 01/21/2026
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"
@@ -9,6 +9,8 @@ f1_keywords:
 # Extension declaration (C# Reference)
 
 Starting with C# 14, top-level, nongeneric `static class` declarations can use `extension` blocks to declare *extension members*. Extension members are methods or properties and can appear to be instance or static members. Earlier versions of C# enable *extension methods* by adding `this` as a modifier to the first parameter of a static method declared in a top-level, nongeneric static class.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
 

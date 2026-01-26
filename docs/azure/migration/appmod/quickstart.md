@@ -23,3 +23,8 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 ::: zone pivot="vscode"  
 [!INCLUDE [quickstart-vscode](./includes/quickstart-vscode.md)]
 ::: zone-end
+
+## Next Steps
+
+- [Predefined Tasks](../predefined-tasks.md)
+- [Frequently Asked Questions](../../../../core/porting/github-copilot-app-modernization/faq.yml)

@@ -122,8 +122,3 @@ After the code changes finish, the migration tool starts a validation and fix it
 1. Analyze the code for migration items missed in the initial code migration and fix them.
 
 After all processes complete, the migration tool generates a summary. Review the code changes and confirm them by selecting **Keep**.
-
-## Next Steps
-
-- [Predefined Tasks](../predefined-tasks.md)
-- [Frequently Asked Questions](../../../../core/porting/github-copilot-app-modernization/faq.yml)

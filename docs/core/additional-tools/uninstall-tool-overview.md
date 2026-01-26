@@ -83,7 +83,7 @@ To uninstall using winget, execute the following:
 winget uninstall --id Microsoft.DotNet.UninstallTool
 ```
 
-### Manually uninstalling
+### Uninstall manually
 
 To manually uninstall the tool, perform the following steps:
 

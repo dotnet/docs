@@ -198,7 +198,7 @@ public static class GenericExtensions
         /// This property can be used as a neutral starting point when aggregating or composing
         /// sequences of the receiver's element type. The returned sequence is always empty and does not allocate any storage.
         /// </remarks>
-        public static IEnumerable<TReceiver> Empty => Enumerable.Empty<TReceiver>();
+        public static IEnumerable<TReceiver> Identity => Enumerable.Empty<TReceiver>();
     }
 }
 // </GenericExtension>

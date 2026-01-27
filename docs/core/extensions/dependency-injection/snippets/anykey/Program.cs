@@ -29,6 +29,13 @@ static void FallbackExample()
 
     ICache? standardCache = provider.GetKeyedService<ICache>("standard");
     Console.WriteLine($"Standard key: {standardCache}");
+
+    /* This example outputs:
+     * 
+     * Premium key: Premium cache
+     * Basic key: basic cache
+     * Standard key: standard cache
+    */
     // </FallbackRegistration>
 
     // <AnyKeyQuery>
@@ -37,5 +44,10 @@ static void FallbackExample()
     {
         Console.WriteLine($"AnyKey registered cache: {cache}");
     }
+
+    /* This example outputs:
+     * 
+     * AnyKey registered cache: Premium cache
+    */
     // </AnyKeyQuery>
 }

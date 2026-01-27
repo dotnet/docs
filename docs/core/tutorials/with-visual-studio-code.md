@@ -48,7 +48,7 @@ In this tutorial, you:
 
 ## Open Codespaces
 
-To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment.
+To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green **Code** button, and the **Codespaces** tab. Then select the `+` sign to create a new Codespace using this environment.
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ The program displays "Hello, World!" and ends.
 
 ::: zone pivot="codespaces"
 
-In the terminal window, make ure the tutorials folder is the current folder, and run your program::
+In the terminal window, make sure the tutorials folder is the current folder, and run your program:
 
 ```dotnetcli
 cd tutorials
@@ -156,6 +156,8 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Select **Run**>**Run without debugging**.
 
+1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+
 ::: zone-end
 
 ::: zone pivot="codespaces"
@@ -176,9 +178,9 @@ Enhance the application to prompt the user for their name and display it along w
    dotnet HelloWorld.cs
    ```
 
-::: zone-end
-
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+
+::: zone-end
 
 ::: zone pivot="vscode"
 
@@ -198,7 +200,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ::: zone-end
 
-1. Press <kbd>Enter</kbd> to exit the program.
+Press any key to exit the program.
 
 ## Additional resources
 

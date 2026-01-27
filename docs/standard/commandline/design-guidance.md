@@ -6,7 +6,7 @@ no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line"
   - "System.CommandLine"
-ms.topic: article
+ms.topic: best-practice
 ---
 
 # Design guidance

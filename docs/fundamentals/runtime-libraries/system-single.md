@@ -1,7 +1,7 @@
 ---
 title: System.Single struct
 description: Learn about the System.Single struct.
-ms.date: 12/31/2023
+ms.date: 01/23/2026
 dev_langs:
   - CSharp
   - FSharp
@@ -41,13 +41,13 @@ All floating-point numbers have a limited number of significant digits, which al
 
 The limited precision of a floating-point number has several consequences:
 
-- Two floating-point numbers that appear equal for a particular precision might not compare equal because their least significant digits are different. In the following example, a series of numbers are added together, and their total is compared with their expected total. Although the two values appear to be the same, a call to the `Equals` method indicates that they are not.
+- Two floating-point numbers that appear equal for a particular precision might not compare equal because their least significant digits are different. In the following example, a series of numbers are added together, and their total is compared with their expected total. A call to the `Equals` method indicates that the values aren't equal.
 
   :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist3.cs" id="Snippet6":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist3.fs" id="Snippet6":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/precisionlist3.vb" id="Snippet6":::
 
-  If you change the format items in the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%2CSystem.Object%29?displayProperty=nameWithType> statement from `{0}` and `{1}` to `{0:R}` and `{1:R}` to display all significant digits of the two <xref:System.Single> values, it is clear that the two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29?displayProperty=nameWithType> method to round the <xref:System.Single> values to the desired precision before performing the comparison.
+  The two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round(System.Double,System.Int32)?displayProperty=nameWithType> method to round the <xref:System.Single> values to the desired precision before performing the comparison.
 
 - A mathematical or comparison operation that uses a floating-point number might not yield the same result if a decimal number is used, because the binary floating-point number might not equal the decimal number. A previous example illustrated this by displaying the result of multiplying .3 by 10 and adding .3 to .3 nine times.
 
@@ -79,7 +79,7 @@ To be considered equal, two <xref:System.Single> values must represent identical
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison1.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison1.vb" id="Snippet9":::
 
-Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "G9" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.
+Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals(System.Single)> method indicates that they are not equal.
 
 :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison2.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison2.fs" id="Snippet10":::
@@ -93,14 +93,14 @@ In cases where a loss of precision is likely to affect the result of a compariso
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison3.fs" id="Snippet11":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison3.vb" id="Snippet11":::
 
-  The problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.
+  The problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)?displayProperty=nameWithType> method.
 
 - Test for approximate equality instead of equality. This technique requires that you define either an absolute amount by which the two values can differ but still be equal, or that you define a relative amount by which the smaller value can diverge from the larger value.
 
   > [!WARNING]
   > <xref:System.Single.Epsilon?displayProperty=nameWithType> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality. However, <xref:System.Single.Epsilon?displayProperty=nameWithType> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=nameWithType> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.
 
-  The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.
+  The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals(System.Single)> method.
 
   :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison4.cs" id="Snippet12":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison4.fs" id="Snippet12":::
@@ -122,7 +122,7 @@ Operations with floating-point values do not throw exceptions, unlike operations
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional2.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional2.vb" id="Snippet2":::
 
-     <xref:System.Single.PositiveInfinity> also results from a division by zero with a positive dividend, and <xref:System.Single.NegativeInfinity> results from a division by zero with a negative dividend.
+  <xref:System.Single.PositiveInfinity> also results from a division by zero with a positive dividend, and <xref:System.Single.NegativeInfinity> results from a division by zero with a negative dividend.
 
 - If a floating-point operation is invalid, the result of the operation is <xref:System.Single.NaN>. For example, <xref:System.Single.NaN> results from the following operations:
 
@@ -134,14 +134,14 @@ Operations with floating-point values do not throw exceptions, unlike operations
 
 The <xref:System.Single> structure does not define any explicit or implicit conversion operators; instead, conversions are implemented by the compiler.
 
-The following table lists the possible conversions of a value of the other primitive numeric types to a <xref:System.Single> value, It also indicates whether the conversion is widening or narrowing and whether the resulting <xref:System.Single> may have less precision than the original value.
+The following table lists the possible conversions of a value of the other primitive numeric types to a <xref:System.Single> value. It also indicates whether the conversion is widening or narrowing and whether the resulting <xref:System.Single> may have less precision than the original value.
 
-|Conversion from|Widening/narrowing|Possible loss of precision|
-|---------------------|-------------------------|--------------------------------|
-|<xref:System.Byte>|Widening|No|
+| Conversion from     | Widening/narrowing | Possible loss of precision |
+|---------------------|--------------------|----------------------------|
+| <xref:System.Byte>  | Widening           | No                         |
 |<xref:System.Decimal>|Widening<br /><br />Note that C# requires a cast operator.|Yes. <xref:System.Decimal> supports 29 decimal digits of precision; <xref:System.Single> supports 9.|
 |<xref:System.Double>|Narrowing; out-of-range values are converted to <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> or <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.|Yes. <xref:System.Double> supports 17 decimal digits of precision; <xref:System.Single> supports 9.|
-|<xref:System.Int16>|Widening|No|
+| <xref:System.Int16> | Widening           | No                         |
 |<xref:System.Int32>|Widening|Yes. <xref:System.Int32> supports 10 decimal digits of precision; <xref:System.Single> supports 9.|
 |<xref:System.Int64>|Widening|Yes. <xref:System.Int64> supports 19 decimal digits of precision; <xref:System.Single> supports 9.|
 |<xref:System.SByte>|Widening|No|
@@ -163,10 +163,10 @@ The conversion of a <xref:System.Single> value to a <xref:System.Double> is a wi
 
 The conversion of a <xref:System.Single> value to a value of any primitive numeric data type other than a <xref:System.Double> is a narrowing conversion and requires a cast operator (in C#) or a conversion method (in Visual Basic). Values that are outside the range of the target data type, which are defined by the target type's `MinValue` and `MaxValue` properties, behave as shown in the following table.
 
-|Target type|Result|
-|-----------------|------------|
-|Any integral type|An <xref:System.OverflowException> exception if the conversion occurs in a checked context.<br /><br />If the conversion occurs in an unchecked context (the default in C#), the conversion operation succeeds but the value overflows.|
-|<xref:System.Decimal>|An <xref:System.OverflowException> exception,|
+| Target type           | Result                                        |
+|-----------------------|-----------------------------------------------|
+| Any integral type     | An <xref:System.OverflowException> exception if the conversion occurs in a checked context.<br /><br />If the conversion occurs in an unchecked context (the default in C#), the conversion operation succeeds but the value overflows. |
+| <xref:System.Decimal> | An <xref:System.OverflowException> exception. |
 
 In addition, <xref:System.Single.NaN?displayProperty=nameWithType>, <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> throw an <xref:System.OverflowException> for conversions to integers in a checked context, but these values overflow when converted to integers in an unchecked context. For conversions to <xref:System.Decimal>, they always throw an <xref:System.OverflowException>. For conversions to <xref:System.Double>, they convert to <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.
 
@@ -197,7 +197,7 @@ The <xref:System.Single> structure and related types provide methods to perform 
 
   You can perform other mathematical operations by calling `static` (`Shared` in Visual Basic) methods in the <xref:System.Math?displayProperty=nameWithType> class. These include additional methods commonly used for arithmetic (such as <xref:System.Math.Abs%2A?displayProperty=nameWithType>, <xref:System.Math.Sign%2A?displayProperty=nameWithType>, and <xref:System.Math.Sqrt%2A?displayProperty=nameWithType>), geometry (such as <xref:System.Math.Cos%2A?displayProperty=nameWithType> and <xref:System.Math.Sin%2A?displayProperty=nameWithType>), and calculus (such as <xref:System.Math.Log%2A?displayProperty=nameWithType>). In all cases, the <xref:System.Single> value is converted to a <xref:System.Double>.
 
-  You can also manipulate the individual bits in a <xref:System.Single> value. The <xref:System.BitConverter.GetBytes%28System.Single%29?displayProperty=nameWithType> method returns its bit pattern in a byte array. By passing that byte array to the <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> method, you can also preserve the <xref:System.Single> value's bit pattern in a 32-bit integer.
+  You can also manipulate the individual bits in a <xref:System.Single> value. The <xref:System.BitConverter.GetBytes(System.Single)?displayProperty=nameWithType> method returns its bit pattern in a byte array. By passing that byte array to the <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> method, you can also preserve the <xref:System.Single> value's bit pattern in a 32-bit integer.
 
 - **Rounding**. Rounding is often used as a technique for reducing the impact of differences between values caused by problems of floating-point representation and precision. You can round a <xref:System.Single> value by calling the <xref:System.Math.Round%2A?displayProperty=nameWithType> method. However, note that the <xref:System.Single> value is converted to a <xref:System.Double> before the method is called, and the conversion can involve a loss of precision.
 
@@ -209,12 +209,12 @@ The <xref:System.Single> structure and related types provide methods to perform 
 
   However, conversion of 32-bit and 64-bit integer values can involve a loss of precision. The following table lists the differences in precision for 32-bit, 64-bit, and <xref:System.Double> types:
 
-  |Type|Maximum precision (in decimal digits)|Internal precision (in decimal digits)|
-  |----------|---------------------------------------------|----------------------------------------------|
-  |<xref:System.Double>|15|17|
-  |<xref:System.Int32> and <xref:System.UInt32>|10|10|
-  |<xref:System.Int64> and <xref:System.UInt64>|19|19|
-  |<xref:System.Single>|7|9|
+  | Type                 | Maximum precision (decimal digits) | Internal precision (decimal digits) |
+  |----------------------|------------------------------------|-------------------------------------|
+  | <xref:System.Double> | 15                                 | 17                                  |
+  | <xref:System.Int32> and <xref:System.UInt32> | 10         | 10                                  |
+  | <xref:System.Int64> and <xref:System.UInt64> | 19         | 19                                  |
+  | <xref:System.Single> | 7                                  | 9                                   |
 
   The problem of precision most frequently affects <xref:System.Single> values that are converted to <xref:System.Double> values. In the following example, two values produced by identical division operations are unequal, because one of the values is a single-precision floating point value that is converted to a <xref:System.Double>.
 

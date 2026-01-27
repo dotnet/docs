@@ -2,7 +2,7 @@
 title: Orleans and .NET Aspire integration
 description: Learn how to integrate Orleans with .NET Aspire for cloud-native development.
 ms.date: 01/21/2026
-ms.topic: conceptual
+ms.topic: concept-article
 zone_pivot_groups: orleans-version
 ---
 

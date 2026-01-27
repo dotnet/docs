@@ -42,6 +42,7 @@ Module Example6
         Next
     End Sub
 End Module
+
 ' The example displays the following output for conversions performed
 ' in a checked context:
 '       Unable to convert -3.402823E+38 to Int64.
@@ -79,59 +80,13 @@ End Module
 '       Unable to convert NaN to Decimal.
 '       NaN (Single) --> NaN (Double)
 '
-'       Unable to convert Infinity to Int64.
-'       Unable to convert Infinity to UInt64.
-'       Unable to convert Infinity to Decimal.
-'       Infinity (Single) --> Infinity (Double)
+'       Unable to convert ∞ to Int64.
+'       Unable to convert ∞ to UInt64.
+'       Unable to convert ∞ to Decimal.
+'       ∞ (Single) --> ∞ (Double)
 '
-'       Unable to convert -Infinity to Int64.
-'       Unable to convert -Infinity to UInt64.
-'       Unable to convert -Infinity to Decimal.
-'       -Infinity (Single) --> -Infinity (Double)
-' The example displays the following output for conversions performed
-' in an unchecked context:
-'       -3.402823E+38 (Single) --> -9223372036854775808 (0x8000000000000000) (Int64)
-'       -3.402823E+38 (Single) --> 9223372036854775808 (0x8000000000000000) (UInt64)
-'       Unable to convert -3.402823E+38 to Decimal.
-'       -3.402823E+38 (Single) --> -3.40282346638529E+38 (Double)
-'
-'       -67890.13 (Single) --> -67890 (0xFFFFFFFFFFFEF6CE) (Int64)
-'       -67890.13 (Single) --> 18446744073709483726 (0xFFFFFFFFFFFEF6CE) (UInt64)
-'       -67890.13 (Single) --> -67890.12 (Decimal)
-'       -67890.13 (Single) --> -67890.125 (Double)
-'
-'       -12345.68 (Single) --> -12346 (0xFFFFFFFFFFFFCFC6) (Int64)
-'       -12345.68 (Single) --> 18446744073709539270 (0xFFFFFFFFFFFFCFC6) (UInt64)
-'       -12345.68 (Single) --> -12345.68 (Decimal)
-'       -12345.68 (Single) --> -12345.6787109375 (Double)
-'
-'       12345.68 (Single) --> 12346 (0x000000000000303A) (Int64)
-'       12345.68 (Single) --> 12346 (0x000000000000303A) (UInt64)
-'       12345.68 (Single) --> 12345.68 (Decimal)
-'       12345.68 (Single) --> 12345.6787109375 (Double)
-'
-'       67890.13 (Single) --> 67890 (0x0000000000010932) (Int64)
-'       67890.13 (Single) --> 67890 (0x0000000000010932) (UInt64)
-'       67890.13 (Single) --> 67890.12 (Decimal)
-'       67890.13 (Single) --> 67890.125 (Double)
-'
-'       3.402823E+38 (Single) --> -9223372036854775808 (0x8000000000000000) (Int64)
-'       3.402823E+38 (Single) --> 0 (0x0000000000000000) (UInt64)
-'       Unable to convert 3.402823E+38 to Decimal.
-'       3.402823E+38 (Single) --> 3.40282346638529E+38 (Double)
-'
-'       NaN (Single) --> -9223372036854775808 (0x8000000000000000) (Int64)
-'       NaN (Single) --> 0 (0x0000000000000000) (UInt64)
-'       Unable to convert NaN to Decimal.
-'       NaN (Single) --> NaN (Double)
-'
-'       Infinity (Single) --> -9223372036854775808 (0x8000000000000000) (Int64)
-'       Infinity (Single) --> 0 (0x0000000000000000) (UInt64)
-'       Unable to convert Infinity to Decimal.
-'       Infinity (Single) --> Infinity (Double)
-'
-'       -Infinity (Single) --> -9223372036854775808 (0x8000000000000000) (Int64)
-'       -Infinity (Single) --> 9223372036854775808 (0x8000000000000000) (UInt64)
-'       Unable to convert -Infinity to Decimal.
-'       -Infinity (Single) --> -Infinity (Double)
+'       Unable to convert -∞ to Int64.
+'       Unable to convert -∞ to UInt64.
+'       Unable to convert -∞ to Decimal.
+'       -∞ (Single) --> -∞ (Double)
 ' </Snippet21>

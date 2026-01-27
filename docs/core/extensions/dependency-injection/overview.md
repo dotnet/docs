@@ -231,7 +231,7 @@ In the preceding example:
 
 #### Query for services
 
-You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>
+You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>.
 
 > [!IMPORTANT]
 > Starting in .NET 10, calling `GetKeyedService()` (singular) with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` shouldn't be used to resolve a single service. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).

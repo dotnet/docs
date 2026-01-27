@@ -14,7 +14,7 @@ Beginning with C# 14, there are two syntaxes you can use to define extension met
 
 ## Extension blocks (C# 14 and later)
 
-Beginning with C# 14, you can declare extension methods using *extension blocks*. An extension block is a block in a non-nested, nongeneric, static class that contains extension members for a type or an instance of that type.
+Beginning with C# 14, you can declare extension methods using *extension blocks*. An extension block is a block in a non-nested, non-generic, static class that contains extension members for a type or an instance of that type.
 
 To define and call an extension method using extension blocks:
 
@@ -48,7 +48,7 @@ The following example implements an extension method named `WordCount` using the
 
 ## General information
 
-Overload resolution prefers instance or static method defined by the type itself to extension methods. Extension methods can't access any private data in the extended class.
+Overload resolution prefers instance or static methods defined by the type itself to extension methods. Extension methods can't access any private data in the extended class.
 
 ## See also
 

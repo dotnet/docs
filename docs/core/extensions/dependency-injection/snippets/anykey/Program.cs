@@ -17,17 +17,25 @@ static void FallbackExample()
     // Register a specific cache for the "premium" key.
     services.AddKeyedSingleton<ICache>("premium", new PremiumCache());
 
-    var provider = services.BuildServiceProvider();
+    ServiceProvider provider = services.BuildServiceProvider();
 
     // Requesting with "premium" key returns PremiumCache.
-    var premiumCache = provider.GetKeyedService<ICache>("premium");
+    ICache? premiumCache = provider.GetKeyedService<ICache>("premium");
     Console.WriteLine($"Premium key: {premiumCache}");
 
     // Requesting with any other key uses the AnyKey fallback.
-    var basicCache = provider.GetKeyedService<ICache>("basic");
+    ICache? basicCache = provider.GetKeyedService<ICache>("basic");
     Console.WriteLine($"Basic key: {basicCache}");
 
-    var standardCache = provider.GetKeyedService<ICache>("standard");
+    ICache? standardCache = provider.GetKeyedService<ICache>("standard");
     Console.WriteLine($"Standard key: {standardCache}");
     // </FallbackRegistration>
+
+    // <AnyKeyQuery>
+    IEnumerable<ICache>? keyedCaches = provider.GetKeyedServices<ICache>(KeyedService.AnyKey);
+    foreach (ICache cache in keyedCaches)
+    {
+        Console.WriteLine($"AnyKey registered cache: {cache}");
+    }
+    // </AnyKeyQuery>
 }

@@ -233,25 +233,12 @@ In the preceding example:
 
 You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>
 
+:::code language="csharp" source="snippets/anykey/Program.cs" id="FallbackRegistration":::
+
+In the preceding example, calling `GetKeyedServices<T>(KeyedService.AnyKey)` returns only the `PremiumCache` instance since it's the only cache that was registered using a specific key.
+
 > [!IMPORTANT]
 > Starting in .NET 10, calling `GetKeyedService()` (singular) with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` shouldn't be used to resolve a single service. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).
-
-#### Factories
-
-You can also use `KeyedService.AnyKey` for factories:
-
-```csharp
-services.AddKeyedSingleton<ILogger>(
-    KeyedService.AnyKey,
-    (sp, key) => sp.GetRequiredService<ILoggerFactory>().CreateLogger(key.ToString())
-);
-```
-
-Then you can inject <xref:Microsoft.Extensions.Logging.ILogger> with any key without registering it directly:
-
-```csharp
-class C([FromKeyedServices("key1")] ILogger logger) { ... }
-```
 
 ## See also
 

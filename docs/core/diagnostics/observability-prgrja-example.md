@@ -2,7 +2,7 @@
 title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
 description: A walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
 ms.date: 6/14/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger

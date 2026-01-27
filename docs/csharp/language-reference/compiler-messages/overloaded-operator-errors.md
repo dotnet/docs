@@ -71,6 +71,7 @@ helpviewer_keywords:
   - "CS9023"
   - "CS9024"
   - "CS9025"
+  - "CS9027"
   - "CS9308"
   - "CS9310"
   - "CS9311"
@@ -119,6 +120,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
 - [**CS9025**](#checked-operators): *Operator requires a matching non-checked version to also be declared.*
+- [**CS9027**](#checked-operators): *Unexpected keyword 'unchecked'*
 - [**CS9308**](#operator-declaration-requirements): *User-defined operator must be declared public.*
 - [**CS9310**](#operator-signature-requirements): *The return type for this operator must be void.*
 - [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
@@ -386,11 +388,13 @@ public class C4
 - **CS9023**: *Operator can't be made checked*
 - **CS9024**: *Operator can't be made unchecked*
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
+- **CS9027**: *Unexpected keyword 'unchecked'*
 
 To use checked operators correctly, follow these requirements. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
 
 - Apply `checked` or `unchecked` keywords only to supported arithmetic operators: `+`, `-`, `*`, `/`, `++`, `--`, and explicit conversions (**CS9023**, **CS9024**).
 - Provide both checked and unchecked versions when declaring a checked operator (**CS9025**). The compiler needs both to handle different contexts.
+- Use the `unchecked` keyword only in valid operator declaration contexts (**CS9027**). Don't place it in locations where it's syntactically unexpected.
 
 ## Interface and inheritance requirements
 

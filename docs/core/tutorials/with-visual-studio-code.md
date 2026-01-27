@@ -16,7 +16,7 @@ In this tutorial, you:
 >
 > * Launch Visual Studio Code with a C# development environment.
 > * Create a "HelloWorld" .NET console application.
-> * Enhance the app to prompt the user for their name and display it.
+> * Enhance the app to prompt the user for their name and display it in the console window.
 
 ::: zone-end
 
@@ -29,8 +29,8 @@ In this tutorial, you:
 > [!div class="checklist"]
 >
 > * Launch a GitHub Codespace with a C# development environment.
-> * Create a "HelloWorld" single-file app.
-> * Enhance the app to prompt the user for their name and display it.
+> * Create a "HelloWorld" .NET single-file app.
+> * Enhance the app to prompt the user for their name and display it in the console window.
 
 ::: zone-end
 
@@ -143,7 +143,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program-Read.cs" id="MainMethod":::
 
-   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
    <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
 
@@ -166,7 +166,7 @@ Enhance the application to prompt the user for their name and display it along w
 
     :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="MainMethod":::
 
-   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
    <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
 
@@ -195,12 +195,12 @@ Enhance the application to prompt the user for their name and display it along w
    ```output
    What is your name? John
    Hello, John on 01/26/2026 10:30:00 AM
-   Press any key to exit...
+   Press Enter to exit...
    ```
 
 ::: zone-end
 
-Press any key to exit the program.
+Press <kbd>Enter</kbd> to exit the program.
 
 ## Additional resources
 
@@ -217,7 +217,7 @@ Press any key to exit the program.
 
 ## Cleanup resources
 
-GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
+GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace. Then select "delete".
 
 ::: zone-end
 

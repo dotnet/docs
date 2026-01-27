@@ -1,7 +1,7 @@
 ---
 title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to define service lifetimes and express dependencies in C#.
-ms.date: 10/21/2025
+ms.date: 01/26/2026
 ms.topic: overview
 ai-usage: ai-assisted
 ---
@@ -216,7 +216,11 @@ public class ExampleService
 
 ### KeyedService.AnyKey property
 
-The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services. You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
+The <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> property provides a special key for working with keyed services.
+
+#### Service registration
+
+You can register a service using `KeyedService.AnyKey` as a fallback that matches any key. This is useful when you want to provide a default implementation for any key that doesn't have an explicit registration.
 
 :::code language="csharp" source="snippets/anykey/Program.cs" id="FallbackRegistration":::
 
@@ -225,8 +229,29 @@ In the preceding example:
 - Requesting `ICache` with key `"premium"` returns the `PremiumCache` instance.
 - Requesting `ICache` with any other key (like `"basic"` or `"standard"`) creates a new `DefaultCache` using the `AnyKey` fallback.
 
+#### Query for services
+
+You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>
+
 > [!IMPORTANT]
-> Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` is intended as a registration fallback, not as a query key. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).
+> Starting in .NET 10, calling `GetKeyedService()` (singular) with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` shouldn't be used to resolve a single service. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).
+
+#### Factories
+
+You can also use `KeyedService.AnyKey` for factories:
+
+```csharp
+services.AddKeyedSingleton<ILogger>(
+    KeyedService.AnyKey,
+    (sp, key) => sp.GetRequiredService<ILoggerFactory>().CreateLogger(key.ToString())
+);
+```
+
+Then you can inject <xref:Microsoft.Extensions.Logging.ILogger> with any key without registering it directly:
+
+```csharp
+class C([FromKeyedServices("key1")] ILogger logger) { ... }
+```
 
 ## See also
 

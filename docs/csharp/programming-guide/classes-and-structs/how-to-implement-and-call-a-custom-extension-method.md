@@ -13,7 +13,9 @@ This article shows how to implement your own extension methods for any .NET type
 To define and call the extension method:
 
 1. Define a static [class](./static-classes-and-static-class-members.md) to contain the extension method. The class can't be nested inside another type and must be visible to client code. For more information about accessibility rules, see [Access Modifiers](./access-modifiers.md).
-1. Use an [extension](../../language-reference/keywords/extension.md) block to declare extension members for a type (C# 14 and later), or implement the extension method as a static method with the first parameter preceded by the [this](../../language-reference/keywords/this.md) modifier (earlier versions).
+1. Define the extension method using one of the following approaches:
+   - **C# 14 and later**: Use an [extension](../../language-reference/keywords/extension.md) block to declare extension members for a type.
+   - **Earlier versions**: Implement the extension method as a static method with the first parameter preceded by the [this](../../language-reference/keywords/this.md) modifier.
 1. In the calling code, add a `using` directive to specify the [namespace](../../language-reference/keywords/namespace.md) that contains the extension method class.
 1. Call the methods as instance methods on the type.
 

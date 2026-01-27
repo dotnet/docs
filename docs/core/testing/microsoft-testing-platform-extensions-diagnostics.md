@@ -16,9 +16,9 @@ The following [platform options](./microsoft-testing-platform-intro.md#options) 
 
 - `--info`
 - `--diagnostic`
-- `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite`
+- `--diagnostic-synchronous-write`
 - `--diagnostic-verbosity`
-- `--diagnostic-output-fileprefix`
+- `--diagnostic-file-prefix`
 - `--diagnostic-output-directory`
 
 You can also enable the diagnostics logs using the environment variables:
@@ -59,5 +59,5 @@ To configure the hang dump file generation, use the following options:
 |--|--|
 | `--hangdump` | Generates a dump file in case the test host process hangs. |
 | `-⁠-hangdump-filename` | Specifies the file name of the dump. |
-| `--hangdump-timeout` | Specifies the timeout after which the dump is generated. The timeout value is specified in one of the following formats:<br/>`1.5h`, `1.5hour`, `1.5hours`<br/>`90m`, `90min`, `90minute`, `90minutes`<br/>`5400s`, `5400sec`, `5400second`, `5400seconds`. Defaults to `30m` (30 minutes). |
+| `--hangdump-timeout` | Specifies the duration of no activity after which the dump is generated. The timeout value is specified in one of the following formats:<br/>`1.5h`, `1.5hour`, `1.5hours`<br/>`90m`, `90min`, `90minute`, `90minutes`<br/>`5400s`, `5400sec`, `5400second`, `5400seconds`. Defaults to `30m` (30 minutes). |
 | `--hangdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps). |

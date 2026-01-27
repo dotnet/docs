@@ -1,8 +1,6 @@
 ---
 title: Logging providers
 description: Learn how the logging provider API is used in .NET applications.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---
@@ -190,7 +188,7 @@ For more information, see the following resources:
 - [Application Insights overview](/azure/application-insights/app-insights-overview)
 - [ApplicationInsightsLoggerProvider for .NET Core ILogger logs](/azure/azure-monitor/app/ilogger) - Start here if you want to implement the logging provider without the rest of Application Insights telemetry.
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
-- [Install, configure, and initialize the Application Insights SDK](/training/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
+- [Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications](/training/modules/monitor-app-performance/).
 
 ## Logging provider design considerations
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Changed MessagePack library in signalr-protocol-msgpack package"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the MessagePack library was changed and two options were removed in the @microsoft/signalr-protocol-msgpack package."
 ms.date: 04/07/2021
+ms.custom: https://github.com/aspnet/Announcements/issues/454
 ---
 # Changed MessagePack library in @microsoft/signalr-protocol-msgpack
 

@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `using-statement-declaration-errors.md.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to `using` statements and `using` variable declarations. Note that the `using` keyword can also be used for a `using` directive. Don't include those error messages.
+- For the duration of this chat, all references to "destination file" refer to `pattern-matching-warnings.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to list patterns, and other pattern matching features.
 
 The destination file already contains a skeleton for the final output.
 
@@ -21,7 +21,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 - Add the contents of the source file to the destination.md file.
   - Include the source error code in the YML header for f1_keywords and helpviewer_keywords.
-  - Add an entry with an anchor for the error error code and its corresponding error message.
+  - Add an entry with an anchor for the error error code and its corresponding error message. The error message should be the verbatim compiler error message.
   - Add the contents of the source file as a new H2 in the destination file.
   - Add a redirection for the source file in the file .openpublishing.redirection.csharp.json. Make the destination point to destination file. Place the new entry in sorted order based on 'source_path_from_root'.
 - Update the TOC file:
@@ -31,7 +31,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 ## Search for other related articles that may be missed.
 
-Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
+First, let's find candidate source files. Search all files whose names start with "CS" in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
 
 ## Final search in roslyn source
 
@@ -46,7 +46,7 @@ To make sure you've found all related errors, we'll check the source.  Look in `
 I'll give you error codes one by one. For each, I want you to do the following:
 
 - Add the new error code to the front matter of the destination file, for both the `f1_keywords` and `helpview_keywords` table.
-- Add the new error code and error message to the table at the top of the destination file.
+- Add the new error code and error message to the table at the top of the destination file. The error message should be the verbatim text from the compiler
 - Add the new error code to the list of `displayName` elements in the TOC file entry for the destination file.
 - Remove the new error code from the front matter in the file `csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-errors.md` file.
 
@@ -61,3 +61,19 @@ To do that, make a new H2 section for the theme. Remove all the H2s for the indi
 The list of errors at the top of the file should remain in numerical order, so it's easy for readers to scan. Each impacted error code should now have a link to the anchor tag for the new section. Repeat the list in the new section, but without the anchors, as shown in the highlighted text.
 
 Understand these instructions, then suggest a list of themes and the included error codes. I'll approve each theme before you begin editing.
+
+## Move from description to resolution
+
+Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affected error codes in parentheses, and in **bold** style. Remove extensive examples. Remove all H3 headings in this section. If any errors are no longer produced in the latest version of C#, make a note of that.
+
+## Verify error messages
+
+For every line in this list, verify that the error message associated with this error code matches the verbatim text in CSharpResources.resx. You can find the mapping using ErrorCodes.cs:
+
+1. Find that number as a constant in `ErrorCodes.cs`.
+2. Locate the corresponding `data` element in CSharpResources.resx. The `name` atttribute should match the number of the constant.
+3. Read the error message found in the `<value>` element that is a child of that `<data>` element.
+
+<make your own hand edits>
+
+Now, ensure every instance of an error message matches the text in the highlighted table.

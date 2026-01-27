@@ -2,12 +2,12 @@
 title: PowerShell client module
 description: Learn about the PowerShell client module in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # PowerShell client module
 
-The Orleans PowerShell client module is a set of [PowerShell Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) wrapping the <xref:Orleans.GrainClient>. It provides convenient commands allowing interaction not just with the `ManagementGrain` but with any `IGrain`, just as a regular Orleans application can, by using PowerShell scripts.
+The Orleans PowerShell client module is a set of [PowerShell Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) wrapping the <xref:Orleans.GrainClient>. It provides convenient commands allowing interaction not just with the `ManagementGrain` but with any <xref:Orleans.IGrain>, just as a regular Orleans application can, by using PowerShell scripts.
 
 These cmdlets enable various scenarios, from starting maintenance tasks, tests, monitoring, or any other kind of automation by leveraging PowerShell scripts.
 
@@ -97,9 +97,9 @@ Stop-GrainClient
 
 The preceding command takes no parameters. When called, if the `GrainClient` is initialized, it will be gracefully uninitialized.
 
-#### Get a `Grain`
+#### Get a <xref:Orleans.Grain>
 
-To get a `Grain`, this cmdlet wraps `GrainClient.GrainFactory.GetGrain<T>()` and its overloads. The mandatory parameter is `-GrainType`. You also need the `-XXXKey` parameter corresponding to the grain key type supported by Orleans (`string`, `Guid`, `long`), and optionally the `-KeyExtension` parameter for grains with compound keys.
+To get a <xref:Orleans.Grain>, this cmdlet wraps `GrainClient.GrainFactory.GetGrain<T>()` and its overloads. The mandatory parameter is `-GrainType`. You also need the `-XXXKey` parameter corresponding to the grain key type supported by Orleans (`string`, <xref:System.Guid>, `long`), and optionally the `-KeyExtension` parameter for grains with compound keys.
 
 This cmdlet returns a grain reference of the type passed via the `-GrainType` parameter. Here's an example of calling the `MyInterfacesNamespace.IMyGrain.SayHelloTo` grain method:
 

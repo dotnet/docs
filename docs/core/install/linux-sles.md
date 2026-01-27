@@ -3,7 +3,7 @@ title: Install .NET on SUSE Enterprise Linux
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 11/14/2025
 ms.custom: linux-related-content
 ---
 
@@ -15,12 +15,13 @@ ms.custom: linux-related-content
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
+The following table is a list of currently supported .NET releases on SLES. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
-| SLES   | .NET     |
-|--------|----------|
-| 15.6   | 9.0, 8.0 |
-| 15.5   | 9.0, 8.0 |
+| SLES   | .NET      |
+|--------|-----------|
+| 16.0   | 10, 9, 8  |
+| 15.7   | 10, 9, 8  |
+| 15.6   | 10, 9, 8  |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -32,6 +33,38 @@ The following table is a list of currently supported .NET releases on SLES 15. T
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## SLES 16
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-prod.rpm
+```
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
+
 ## SLES 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -40,13 +73,31 @@ The following table is a list of currently supported .NET releases on SLES 15. T
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
 ```
 
-Currently, the SLES 15 Microsoft repository setup package installs the *microsoft-prod.repo* file to the wrong directory, preventing zypper from finding the .NET packages. To fix this problem, create a symlink in the correct directory.
+Currently, the SLES 15 Microsoft repository setup package installs the `microsoft-prod.repo` file to the wrong directory, preventing zypper from finding the .NET packages. To fix this problem, create a symlink in the correct directory.
 
 ```bash
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
 
 ## How to install other versions
 
@@ -54,7 +105,11 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 
 ## Troubleshoot the package manager
 
-This section provides information on common errors you may get while using the package manager to install .NET.
+This section provides information on common errors you might get while using the package manager to install .NET.
+
+### Unable to find package
+
+[!INCLUDE [linux-install-package-manager-unsupported-architectures](includes/linux-install-package-manager-unsupported-architectures.md)]
 
 ### Failed to fetch
 
@@ -62,13 +117,14 @@ This section provides information on common errors you may get while using the p
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must make sure these libraries are installed:
 
 - krb5
 - libicu
-- libopenssl1_1
+- libopenssl3 (OpenSSL 3.x)
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+> [!IMPORTANT]
+> Starting with .NET 8, .NET packages for SLES depend on OpenSSL 3.x (libopenssl3). This change also applies to .NET 6 and .NET 7 packages. For more information, see [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](../compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md).
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 

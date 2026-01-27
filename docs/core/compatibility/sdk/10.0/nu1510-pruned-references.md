@@ -26,7 +26,7 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 Starting with the .NET 10 SDK, if pruning is enabled and the project targets .NET 10 or a later version, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
 
 > [!NOTE]
-> In a later .NET 10 preview, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
+> Later in .NET 10, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
 
 ## Type of breaking change
 

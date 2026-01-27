@@ -3,6 +3,7 @@ title: "Breaking change: Localization: ResourceManagerWithCultureStringLocalizer
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/346
 ---
 # Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
 
@@ -24,7 +25,7 @@ The `ResourceManagerWithCultureStringLocalizer` class and the `ResourceManagerSt
 
 ## Reason for change
 
-The `ResourceManagerWithCultureStringLocalizer` class and `ResourceManagerStringLocalizer.WithCulture` method were often sources of confusion for users of localization. The confusion was especially high when creating a custom <xref:Microsoft.Extensions.Localization.IStringLocalizer> implementation. This class and method give consumers the impression that an `IStringLocalizer` instance is expected to be "per-language, per-resource". In reality, the instance should only be "per-resource". At run time, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property determines the language to be used.
+The `ResourceManagerWithCultureStringLocalizer` class and `ResourceManagerStringLocalizer.WithCulture` method were often sources of confusion for users of localization. The confusion was especially high when creating a custom <xref:Microsoft.Extensions.Localization.IStringLocalizer> implementation. This class and method give consumers the impression that an `IStringLocalizer` instance is expected to be "per-language, per-resource". In reality, the instance should only be "per-resource". At runtime, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property determines the language to be used.
 
 ## Recommended action
 

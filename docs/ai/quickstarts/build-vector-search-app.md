@@ -4,7 +4,6 @@ description: Create an AI powered app to search and integrate with vector stores
 ms.date: 05/29/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
 # Build a .NET AI vector search app
@@ -21,9 +20,6 @@ The app uses the <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.V
 
 - Perform create-read-update-delete (CRUD) operations on vector stores.
 - Use vector and text search on vector stores.
-
-> [!NOTE]
-> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
 
 <!--Prerequisites section-->
 
@@ -68,7 +64,7 @@ Complete the following steps to create a .NET console app that can:
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -90,7 +86,7 @@ Complete the following steps to create a .NET console app that can:
 
     ```bash
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets

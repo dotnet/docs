@@ -35,7 +35,7 @@ In .NET Core 2.0 - 3.1, abstract cryptographic primitive factories such as <xref
 HashAlgorithm alg = HashAlgorithm.Create();
 ```
 
-In .NET 5 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete and produce a compile-time warning with ID `SYSLIB0007`. At run time, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
+In .NET 5 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete and produce a compile-time warning with ID `SYSLIB0007`. At runtime, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
 
 ```csharp
 // Throws PlatformNotSupportedException.
@@ -43,7 +43,7 @@ In .NET 5 and later versions, abstract cryptographic primitive factories such as
 HashAlgorithm alg = HashAlgorithm.Create();
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core.
+This is a compile-time only change. There is no runtime change from previous versions of .NET Core.
 
 > [!NOTE]
 >
@@ -108,7 +108,7 @@ Best practice dictates that libraries that consume cryptographic primitives (suc
   ```
 
   > [!NOTE]
-  > Suppressing `SYSLIB0007` disables only the obsoletion warnings for the cryptography APIs listed here. It does not disable any other warnings. Additionally, even if you suppress the warning, these obsoleted APIs will still throw a <xref:System.PlatformNotSupportedException> at run time.
+  > Suppressing `SYSLIB0007` disables only the obsoletion warnings for the cryptography APIs listed here. It does not disable any other warnings. Additionally, even if you suppress the warning, these obsoleted APIs will still throw a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## Affected APIs
 

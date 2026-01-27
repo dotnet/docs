@@ -1,16 +1,35 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/08/2023
+ms.date: 11/20/2025
 ---
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET 6 SDK and later versions
-
-In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
+This article lists the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
+
+This section defines the following environment variables:
+
+- [`DOTNET_SYSTEM_NET_HTTP_*`](#dotnet_system_net_http_)
+- [`DOTNET_SYSTEM_GLOBALIZATION_*`](#dotnet_system_globalization_)
+- [`DOTNET_SYSTEM_GLOBALIZATION_USENLS`](#dotnet_system_globalization_usenls)
+- [`DOTNET_SYSTEM_NET_SOCKETS_*`](#dotnet_system_net_sockets_)
+- [`DOTNET_SYSTEM_NET_DISABLEIPV6`](#dotnet_system_net_disableipv6)
+- [`DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`](#dotnet_system_net_http_usesocketshttphandler)
+- [`DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`](#dotnet_running_in_container-and-dotnet_running_in_containers)
+- [`DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION`](#dotnet_system_console_allow_ansi_color_redirection)
+- [`DOTNET_SYSTEM_DIAGNOSTICS` and related variables](#dotnet_system_diagnostics-and-related-variables)
+- [`DOTNET_DiagnosticPorts`](#dotnet_diagnosticports)
+- [`DOTNET_DefaultDiagnosticPortSuspend`](#dotnet_defaultdiagnosticportsuspend)
+- [`DOTNET_EnableDiagnostics`](#dotnet_enablediagnostics)
+- [`DOTNET_EnableDiagnostics_IPC`](#dotnet_enablediagnostics_ipc)
+- [`DOTNET_EnableDiagnostics_Debugger`](#dotnet_enablediagnostics_debugger)
+- [`DOTNET_EnableDiagnostics_Profiler`](#dotnet_enablediagnostics_profiler)
+- [EventPipe variables](#eventpipe-variables)
+
+For more information about configuring the .NET runtime, see [.NET runtime configuration settings](../runtime-config/index.md).
 
 ### `DOTNET_SYSTEM_NET_HTTP_*`
 
@@ -62,7 +81,7 @@ Applications can enable the invariant mode in any of the following ways:
 1. By setting environment variable value `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` to `true` or `1`.
 
 > [!IMPORTANT]
-> A value set in the project file or _runtimeconfig.json_ has a higher priority than the environment variable.
+> In .NET 9 and later versions, environment variables have a higher priority than values set in the project file or _runtimeconfig.json_.
 
 For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
@@ -163,6 +182,43 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 ## .NET SDK and CLI environment variables
 
+This section describes the following environment variables:
+
+- [`DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`](#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64)
+- [`DOTNET_HOST_PATH`](#dotnet_host_path)
+- [`DOTNET_LAUNCH_PROFILE`](#dotnet_launch_profile)
+- [`NUGET_PACKAGES`](#nuget_packages)
+- [`DOTNET_SERVICING`](#dotnet_servicing)
+- [`DOTNET_NOLOGO`](#dotnet_nologo)
+- [`DOTNET_CLI_PERF_LOG`](#dotnet_cli_perf_log)
+- [`DOTNET_GENERATE_ASPNET_CERTIFICATE`](#dotnet_generate_aspnet_certificate)
+- [`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`](#dotnet_add_global_tools_to_path)
+- [`DOTNET_CLI_TELEMETRY_OPTOUT`](#dotnet_cli_telemetry_optout)
+- [`DOTNET_SKIP_FIRST_TIME_EXPERIENCE`](#dotnet_skip_first_time_experience)
+- [`DOTNET_MULTILEVEL_LOOKUP`](#dotnet_multilevel_lookup)
+- [`DOTNET_ROLL_FORWARD`](#dotnet_roll_forward)
+- [`DOTNET_ROLL_FORWARD_TO_PRERELEASE`](#dotnet_roll_forward_to_prerelease)
+- [`DOTNET_CLI_FORCE_UTF8_ENCODING`](#dotnet_cli_force_utf8_encoding)
+- [`DOTNET_CLI_UI_LANGUAGE`](#dotnet_cli_ui_language)
+- [`DOTNET_DISABLE_GUI_ERRORS`](#dotnet_disable_gui_errors)
+- [`DOTNET_ADDITIONAL_DEPS`](#dotnet_additional_deps)
+- [`DOTNET_RUNTIME_ID`](#dotnet_runtime_id)
+- [`DOTNET_SHARED_STORE`](#dotnet_shared_store)
+- [`DOTNET_STARTUP_HOOKS`](#dotnet_startup_hooks)
+- [`DOTNET_BUNDLE_EXTRACT_BASE_DIR`](#dotnet_bundle_extract_base_dir)
+- [`DOTNET_CLI_HOME`](#dotnet_cli_home)
+- [`DOTNET_CLI_CONTEXT_*`](#dotnet_cli_context_)
+- [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`](#dotnet_cli_workload_update_notify_disable)
+- [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`](#dotnet_cli_workload_update_notify_interval_hours)
+- [`DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`](#dotnet_skip_workload_integrity_check)
+- [`DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`](#dotnet_tools_allow_manifest_in_root)
+- [`DOTNET_HOST_TRACE`](#dotnet_host_trace)
+- [`COREHOST_TRACE`](#corehost_trace)
+- [`SuppressNETCoreSdkPreviewMessage`](#suppressnetcoresdkpreviewmessage)
+- [Configure MSBuild in the .NET CLI](#configure-msbuild-in-the-net-cli)
+- [`DOTNET_NEW_PREFERRED_LANG`](#dotnet_new_preferred_lang)
+- [`dotnet watch` environment variables](#dotnet-watch-environment-variables)
+
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`
 
 Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location for the x64 runtimes on an arm64 OS is under an x64 subfolder (so `C:\Program Files\dotnet\x64` on windows and `/usr/local/share/dotnet/x64` on macOS. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
@@ -183,15 +239,13 @@ These environment variables are used only when running apps via generated execut
 
 ### `DOTNET_HOST_PATH`
 
-Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS). This path represents either the host used to launch the currently running `dotnet` process, or the host that would be used when running `dotnet` commands for the currently building project when executing under MSBuild. The .NET SDK uses this variable to help tools that run during .NET SDK commands ensure they use the same `dotnet` host configuration for any child `dotnet` processes they create for the duration of the command. Tools and any MSBuild logic that run within a build and invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
 
-Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
-
-- if `DOTNET_HOST_PATH` is set, use that value directly
-- otherwise, rely on `dotnet` via the system's `PATH`
+Starting in Visual Studio 2026, MSBuild in Visual Studio _also_ ensures that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on
+`DOTNET_HOST_PATH` and should consider emitting a diagnostic (warning or error) when the variable is not present.
 
 > [!NOTE]
-> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by binaries and tools that are invoked by the .NET SDK or MSBuild.
 
 ### `DOTNET_LAUNCH_PROFILE`
 
@@ -358,6 +412,10 @@ Disables background download of advertising manifests for workloads. Default is 
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
+
+Specifies whether to skip the workload integrity check on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set the value to `true`, `1`, or `yes` to skip the check. The default is `false`, meaning the integrity check is performed.
 
 ### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
 

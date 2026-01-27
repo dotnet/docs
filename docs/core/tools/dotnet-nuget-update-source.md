@@ -36,7 +36,7 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 ## Options
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
 - **`-p|--password <PASSWORD>`**
 

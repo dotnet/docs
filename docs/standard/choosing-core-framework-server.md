@@ -1,12 +1,12 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 11/22/2024
+ms.date: 11/07/2025
 ms.custom: updateeachrelease
 ---
 # .NET vs. .NET Framework for server apps
 
-There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps: .NET and .NET Framework. **The latest .NET version (currently .NET 9) is the preferred version of .NET to use for server development.** The reasons to continue using .NET Framework are specific and limited.
+There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps: .NET and .NET Framework. **The latest .NET version (currently .NET 10) is the preferred version of .NET to use for server development.** The reasons to continue using .NET Framework are specific and limited.
 
 | Implementation | Included versions                                   |
 |----------------|-----------------------------------------------------|
@@ -45,7 +45,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 
   The .NET implementation supports side-by-side installations of different versions of the .NET runtime on the same machine. That capability allows multiple services on the same server, each on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
 
-  Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time: each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine because the previous version was replaced.
+  Side-by-side installation isn't possible with .NET Framework 4. It's a Windows component, and only one version of .NET Framework 4 can exist on a machine at a time: each version of .NET Framework 4 replaces the previous version. (.NET Framework 3.5 is separate and optional.)
 
 - **Is more secure.**
 

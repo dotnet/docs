@@ -312,3 +312,56 @@ public class ParamsAndParamRefs
     }
 }
 //</GenericExample>
+
+// <ExtensionExample>
+/// <summary>
+/// This is an example of extension methods documentation.
+/// </summary>
+public static class Extensions
+{
+    /// <summary>
+    /// Defines extensions for generic enumerable sequences.
+    /// </summary>
+    /// <param name="sequence">The receiver sequence</param>
+    /// <typeparam name="TSequence">The type of the items in the sequence.</typeparam>
+    extension<TSequence>(IEnumerable<TSequence> sequence)
+    {
+        /// <summary>
+        /// Returns an enumerable collection containing the elements of the sequence in reverse order.
+        /// </summary>
+        /// <remarks>
+        /// The returned sequence is evaluated lazily. Enumerating the result will consume all
+        /// elements of the original sequence before yielding any items in reverse order.
+        /// </remarks>
+        /// <returns>
+        /// An <see cref="IEnumerable{TSequence}"/> that enumerates the elements of the sequence from last to first.
+        /// </returns>
+        public IEnumerable<TSequence> ReverseSequence()
+        {
+            var stack = new Stack<TSequence>();
+            foreach (var item in sequence)
+            {
+                stack.Push(item);
+            }
+            while (stack.Count > 0)
+            {
+                yield return stack.Pop();
+            }
+        }
+
+        /// <summary>
+        /// Generates a sequence of items using a generator function.
+        /// </summary>
+        /// <param name="count">The number of items.</param>
+        /// <param name="generator">The generator function.</param>
+        /// <returns>A new sequence of <paramref name="count"/> items.</returns>
+        public static IEnumerable<TSequence> Generate(int count, Func<TSequence> generator)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                yield return generator();
+            }
+        }
+    }
+}
+// </ExtensionExample>

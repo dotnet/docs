@@ -10,13 +10,13 @@ helpviewer_keywords:
   - "TimeSpan_LegacyFormatMode element"
 ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
 ---
-# \<TimeSpan_LegacyFormatMode> Element
+# `<TimeSpan_LegacyFormatMode>` Element
 
 Determines whether the runtime preserves legacy behavior in formatting operations with <xref:System.TimeSpan?displayProperty=nameWithType> values.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<TimeSpan_LegacyFormatMode>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<TimeSpan_LegacyFormatMode>`
 
 ## Syntax
 

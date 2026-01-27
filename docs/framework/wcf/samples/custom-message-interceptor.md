@@ -6,9 +6,9 @@ ms.assetid: 73f20972-53f8-475a-8bfe-c133bfa225b0
 ---
 # Custom Message Interceptor
 
-The [MessageInterceptor sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates the use of the channel extensibility model. In particular, it shows how to implement a custom binding element that creates channel factories and channel listeners to intercept all incoming and outgoing messages at a particular point in the run-time stack. The sample also includes a client and server that demonstrate the use of these custom factories.
+The [MessageInterceptor sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates the use of the channel extensibility model. In particular, it shows how to implement a custom binding element that creates channel factories and channel listeners to intercept all incoming and outgoing messages at a particular point in the runtime stack. The sample also includes a client and server that demonstrate the use of these custom factories.
 
-In this sample, both the client and the service are console programs (.exe). The client and service both make use of a common library (.dll) that contains the custom binding element and its associated run-time objects.
+In this sample, both the client and the service are console programs (.exe). The client and service both make use of a common library (.dll) that contains the custom binding element and its associated runtime objects.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -47,7 +47,7 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 
 ## Adding a Binding Element
 
-The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.
+The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public runtime interfaces.
 
 ```csharp
 public class InterceptingBindingElement : BindingElement
@@ -102,7 +102,7 @@ You can access it from configuration as follows:
 </configuration>
 ```
 
-The client and server both use this newly created configuration section to insert the custom factories into the lowest-level of their run-time channel stacks (above the transport level).
+The client and server both use this newly created configuration section to insert the custom factories into the lowest-level of their runtime channel stacks (above the transport level).
 
 ```xml
 <customBinding>

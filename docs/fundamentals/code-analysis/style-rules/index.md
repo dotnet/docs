@@ -146,6 +146,9 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
 > | [IDE0340](ide0340.md) | Use unbound generic type | [csharp_style_prefer_unbound_generic_type_in_nameof](ide0340.md#csharp_style_prefer_unbound_generic_type_in_nameof) |
 > | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
+> | [IDE0360](ide0360.md) | Simplify property accessor | [csharp_style_prefer_simple_property_accessors](ide0360.md#csharp_style_prefer_simple_property_accessors) |
+> | [IDE0370](ide0370.md) | Remove unnecessary suppression | |
+> | [IDE0380](ide0380.md) | Remove unnecessary 'unsafe' modifier | |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 > | [IDE2000](ide2000.md) | Avoid multiple blank lines | [dotnet_style_allow_multiple_blank_lines_experimental](ide2000.md#dotnet_style_allow_multiple_blank_lines_experimental)† |

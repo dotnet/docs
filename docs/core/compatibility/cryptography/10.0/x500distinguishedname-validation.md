@@ -18,7 +18,7 @@ Starting in .NET 10, components that violate encoding rules throw a <xref:System
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

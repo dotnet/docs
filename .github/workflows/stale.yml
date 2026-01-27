@@ -16,11 +16,11 @@ jobs:
 
     steps:
     - name: Harden Runner
-      uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+      uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
       with:
         egress-policy: audit
 
-    - uses: actions/stale@5f858e3efba33a5ca4407a664cc011ad407f2008
+    - uses: actions/stale@997185467fa4f803885201cee163a9f38240193d
       with:
         start-date: '2022-03-01T00:00:00Z' # ISO 8601 or RFC 2822
         repo-token: ${{ secrets.GITHUB_TOKEN }}

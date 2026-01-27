@@ -69,7 +69,7 @@ Assembly binding behavior can be configured at different levels based on three X
 
 - Machine configuration file.
 
-These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [\<assemblyBinding> element](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [\<assemblyBinding> element](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [\<dependentAssembly> element](../configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [\<dependentAssembly> element](../configure-apps/file-schema/runtime/dependentassembly-element.md) include the [\<assemblyIdentity> element](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment), the [\<bindingRedirect> element](../configure-apps/file-schema/runtime/bindingredirect-element.md), and the [\<codeBase> element](../configure-apps/file-schema/runtime/codebase-element.md).
+These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [`<assemblyBinding>` element](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [`<assemblyBinding>` element](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [`<dependentAssembly>` element](../configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [`<dependentAssembly>` element](../configure-apps/file-schema/runtime/dependentassembly-element.md) include the [`<assemblyIdentity>` element](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment), the [`<bindingRedirect>` element](../configure-apps/file-schema/runtime/bindingredirect-element.md), and the [`<codeBase>` element](../configure-apps/file-schema/runtime/codebase-element.md).
 
 > [!NOTE]
 > Configuration information can be found in the three configuration files; not all elements are valid in all configuration files. For example, binding mode and private path information can only be in the application configuration file. For a complete list of the information that is contained in each file, see [Configuring Apps by Using Configuration Files](../configure-apps/index.md).
@@ -78,7 +78,7 @@ These files follow the same syntax and provide information such as binding redir
 
 First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in a Web-based scenario, the configuration file must be downloaded.
 
-For client executables, the application configuration file resides in the same directory as the application's executable and has the same base name as the executable with a .config extension. For example, the configuration file for C:\Program Files\Myapp\Myapp.exe is C:\Program Files\Myapp\Myapp.exe.config. In a browser-based scenario, the HTML file must use the **\<link>** element to explicitly point to the configuration file.
+For client executables, the application configuration file resides in the same directory as the application's executable and has the same base name as the executable with a .config extension. For example, the configuration file for C:\Program Files\Myapp\Myapp.exe is C:\Program Files\Myapp\Myapp.exe.config. In a browser-based scenario, the HTML file must use the `<link>` element to explicitly point to the configuration file.
 
 The following code provides a simple example of an application configuration file. This example adds a <xref:System.Diagnostics.TextWriterTraceListener> to the <xref:System.Diagnostics.Debug.Listeners%2A> collection to enable recording debug information to a file.
 
@@ -149,7 +149,7 @@ If the requested assembly has also been requested in previous calls, the common 
 If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
 
 > [!NOTE]
-> To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [\<disableCachingBindingFailures> Element](../configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.
+> To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [`<disableCachingBindingFailures>` Element](../configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.
 
 <a name="step3"></a>
 

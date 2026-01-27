@@ -13,11 +13,9 @@ Observability is one of the most important aspects of a distributed system. It's
 
 ## Logging
 
-Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
+Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection/overview.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 ## Metrics
 
@@ -321,7 +319,7 @@ The following table shows a collection of transaction meters used to monitor the
 
 Various third-party metrics providers are available for use with Orleans. One popular example is [Prometheus](https://prometheus.io), which you can use to collect metrics from your app with OpenTelemetry.
 
-To use OpenTelemetry and Prometheus with Orleans, call the following `IServiceCollection` extension method:
+To use OpenTelemetry and Prometheus with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -356,7 +354,9 @@ Regardless of the distributed tracing exporter you choose, call:
 - <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: which enables distributed tracing for the silo.
 - <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: which enables distributed tracing for the client.
 
-Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
+Or set the `EnableDistributedTracing` config option to `true`.
+
+Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -388,9 +388,7 @@ For more information, see [Distributed tracing](../../../core/diagnostics/distri
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Orleans outputs its runtime statistics and metrics through the <xref:Orleans.Runtime.ITelemetryConsumer> interface. Your application can register one or more telemetry consumers for its silos and clients to receive statistics and metrics the Orleans runtime periodically publishes. These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose. Three telemetry consumers are currently included in the Orleans codebase.
 

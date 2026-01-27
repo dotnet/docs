@@ -335,7 +335,7 @@ namespace CoolStuff.AwesomeFeature
 
 In general, use the following format for code samples:
 
-- Use four spaces for indentation. Don't use tabs.
+- Use four spaces for indentation. Don't use tab characters.
 - Align code consistently to improve readability.
 - Limit lines to 65 characters to enhance code readability on docs, especially on mobile screens.
 - Improve clarity and user experience by breaking long statements into multiple lines.

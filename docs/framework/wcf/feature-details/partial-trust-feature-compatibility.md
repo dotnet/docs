@@ -16,7 +16,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 - Internet Zone permissions
 
- Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at run time.
+ Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.
 
 ## Contracts
 
@@ -56,7 +56,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 ### Security
 
- Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at run time.
+ Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.
 
 ### Unsupported Bindings
 
@@ -168,7 +168,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 - Performance counters
 
- Use of WCF features that are not supported in a partial trust environment may result in exceptions at run time.
+ Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.
 
 ## Unlisted Features
 

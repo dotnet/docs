@@ -74,7 +74,7 @@ The following terms are used to discuss generics in .NET:
 
 There are many advantages to using generic collections and delegates:
 
-- Type safety. Generics shift the burden of type safety from you to the compiler. There is no need to write code to test for the correct data type because it is enforced at compile time. The need for type casting and the possibility of run-time errors are reduced.
+- Type safety. Generics shift the burden of type safety from you to the compiler. There is no need to write code to test for the correct data type because it is enforced at compile time. The need for type casting and the possibility of runtime errors are reduced.
 
 - Less code and code is more easily reused. There is no need to inherit from a base type and override members. For example, the <xref:System.Collections.Generic.LinkedList%601> is ready for immediate use. For example, you can create a linked list of strings with the following variable declaration:
 

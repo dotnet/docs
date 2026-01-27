@@ -58,6 +58,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/10.0.md",
+            "redirect_url": "/dotnet/core/compatibility/10",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
@@ -112,6 +117,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/optimizeforreading-arg.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/10.0/ymm-embedded-rounding.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/corefx.md",
@@ -198,6 +207,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/10.0/version-requirements.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",
@@ -745,12 +758,32 @@
             "redirect_url": "/dotnet/core/whats-new/dotnet-5"
         },
         {
+            "source_path_from_root": "/docs/core/enrichment/application-metadata.md",
+            "redirect_url": "/dotnet/core/diagnostics/ambient-metadata/application-metadata"
+        },
+        {
             "source_path_from_root": "/docs/core/extensions/artificial-intelligence.md",
             "redirect_url": "/dotnet/ai/microsoft-extensions-ai"
         },
         {
             "source_path_from_root": "/docs/core/extensions/culture-insensitive-string-operations.md",
             "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-basics.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/basics"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-guidelines.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/guidelines"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-usage.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/usage"
         },
         {
             "source_path_from_root": "/docs/core/getting-started.md",
@@ -940,7 +973,7 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-install.md",
-            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-overview"
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/overview"
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/csproj.md",
@@ -1218,6 +1251,14 @@
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-runsettings.md",
             "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions-vstest-bridge#runsettings-support",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-copilot.md",
+            "redirect_url": "/visualstudio/ide/copilot-chat-context#slash-commands"
+        },
+        {
+            "source_path_from_root": "/docs/core/additional-tools/xml-serializer-generator.md",
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/xml-serializer-generator"
         },
         {
             "source_path_from_root": "/docs/core/tools/cli-msbuild-architecture.md",

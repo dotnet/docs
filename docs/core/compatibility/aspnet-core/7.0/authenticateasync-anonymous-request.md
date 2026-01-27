@@ -2,6 +2,7 @@
 title: "Breaking change: AuthenticateAsync for remote auth providers"
 description: Learn about the breaking change in ASP.NET Core 7.0 where AuthenticateAsync for remote authentication providers no longer fails if there is no current user.
 ms.date: 09/13/2022
+ms.custom: https://github.com/aspnet/Announcements/issues/491
 ---
 # AuthenticateAsync for remote auth providers
 

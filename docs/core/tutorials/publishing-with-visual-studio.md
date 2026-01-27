@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
-ms.date: 10/23/2025
+ms.date: 01/14/2026
 ai-usage: ai-assisted
 ms.custom:
   - "vs-dotnet"
@@ -39,13 +39,13 @@ This tutorial works with the console app that you create in [Create a .NET conso
 
 1. On the **Location** tab of the **Publish** page, select **Finish**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab-net8.png" alt-text="Visual Studio Publish page Location tab":::
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab.png" alt-text="Visual Studio Publish page Location tab":::
 
 1. On the **Publish profile creation progress** page, select **Close**.
 
 1. On the **Publish** tab of the **Publish** window, select **Publish**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/publish-page-net8.png" alt-text="Visual Studio Publish window":::
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page.png" alt-text="Visual Studio Publish window":::
 
 ## Inspect the files
 
@@ -55,9 +55,9 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, select **Show all files**.
 
-1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net8.0_.)
+1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net10.0_.)
 
-   :::image type="content" source="media/publishing-with-visual-studio/published-files-output-net8.png" alt-text="Solution Explorer showing published files":::
+   :::image type="content" source="media/publishing-with-visual-studio/published-files-output.png" alt-text="Solution Explorer showing published files":::
 
    As the image shows, the published output includes the following files:
 
@@ -88,7 +88,7 @@ In the following steps, you'll look at the files created by the publish process.
 1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
    ```console
-   cd C:\Projects\HelloWorld\bin\Release\net8.0\publish\
+   cd C:\Projects\HelloWorld\bin\Release\net10.0\publish\
    ```
 
 1. Run the app by using the executable:

@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), interface pointer not marshalable"
   - "interface pointer not marshalable MDA"
   - "MDAs (managed debugging assistants), interface pointer not marshalable"
-  - "marshaling, run-time errors"
+  - "marshaling, runtime errors"
   - "managed debugging assistants (MDAs), marshalling"
   - "marshalable interface pointers"
   - "MDAs (managed debugging assistants), marshalling"

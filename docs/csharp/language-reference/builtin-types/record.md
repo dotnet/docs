@@ -1,7 +1,7 @@
 ---
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-ms.date: 08/15/2025
+ms.date: 01/14/2026
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,9 +10,11 @@ helpviewer_keywords:
 ---
 # Records (C# reference)
 
-You use the `record` modifier to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. The `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality.
+The `record` modifier provides built-in functionality for encapsulating data. The `record class` and `record` syntax define [reference types](reference-types.md). The `record struct` syntax defines a [value type](value-types.md).
 
-When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are referred to as *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
 
 The following two examples demonstrate `record` (or `record class`) reference types:
 
@@ -47,11 +49,11 @@ The preceding examples show some distinctions between records that are reference
 - A `record` or a `record class` declares a reference type. The `class` keyword is optional, but can add clarity for readers. A `record struct` declares a value type.
 - Positional properties are *immutable* in a `record class` and a `readonly record struct`. They're *mutable* in a `record struct`.
 
-The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively.
+The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. Decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* describes behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively.
 
 ## Positional syntax for property and field definition
 
-You can use positional parameters to declare properties of a record or to initialize property or field values. The following example creates a record with two positional properties:
+Use positional parameters to declare properties of a record or to initialize property or field values. The following example creates a record with two positional properties:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="InstantiatePositional":::
 
@@ -70,7 +72,7 @@ You might want to add attributes to any of these elements the compiler creates f
 
 The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
 
-If the generated automatically implemented property definition isn't what you want, you can define your own property or field of the same name. For example, you might want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the member in your source, you must initialize it from the positional parameter of the record. If your property is an automatically implemented property, you must initialize the property. If you add a backing field in your source, you must initialize the backing field. The generated deconstructor uses your property or field definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
+If the generated automatically implemented property definition isn't what you want, define your own property or field of the same name. For example, you might want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the member in your source, you must initialize it from the positional parameter of the record. If your property is an automatically implemented property, you must initialize the property. If you add a backing field in your source, you must initialize the backing field. The generated deconstructor uses your property or field definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
@@ -88,9 +90,9 @@ Properties that the compiler generates from positional parameters are `public`. 
 
 A *positional record class* and a *positional readonly record struct* declare init-only properties. A *positional record struct* declares read-write properties. You can override either of those defaults, as shown in the previous section.
 
-Immutability can be useful when you need a data-centric type to be thread-safe or you're depending on a hash code remaining the same in a hash table. Immutability isn't appropriate for all data scenarios, however. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
+Immutability might be useful when you need a data-centric type to be thread-safe or when you depend on a hash code remaining the same in a hash table. However, immutability isn't appropriate for all data scenarios. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
 
-Init-only properties, whether created from positional parameters (`record class`, and `readonly record struct`) or by specifying `init` accessors, have *shallow immutability*. After initialization, you can't change the value of value-type properties or the reference of reference-type properties. However, the data that a reference-type property refers to can be changed. The following example shows that the content of a reference-type immutable property (an array in this case) is mutable:
+Init-only properties, whether created from positional parameters (`record class` and `readonly record struct`) or by specifying `init` accessors, have *shallow immutability*. After initialization, you can't change the value of value-type properties or the reference of reference-type properties. However, the data that a reference-type property refers to can be changed. The following example shows that the content of a reference-type immutable property (an array in this case) is mutable:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ShallowImmutability":::
 
@@ -114,40 +116,43 @@ The following example illustrates value equality of record types:
 
 To implement value equality, the compiler synthesizes several methods, including:
 
-* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It's an error if the override is declared explicitly.
+* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It's an error if you declare the override explicitly.
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
-* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. This method can be declared explicitly.
+* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. You can declare this method explicitly.
 
-* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
+* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if you declare the override explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
-* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
+* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. You can declare this method explicitly.
 
-* Overrides of operators `==` and `!=`. It's an error if the operators are declared explicitly.
+* Overrides of [operator `==`](../operators/equality-operators.md#equality-operator-) and [operator `!=`](../operators/equality-operators.md#inequality-operator-). It's an error if you declare the operators explicitly.
 
-* If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
+* If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. You can declare this property explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
 
-The compiler doesn't synthesize a method when a record type has a method that matches the signature of a synthesized method allowed to be declared explicitly.
+The compiler doesn't synthesize a method when a record type has a method that matches the signature of a synthesized method and the method is allowed to be declared explicitly.
 
 ## Nondestructive mutation
 
-If you need to copy an instance with some modifications, you can use a `with` expression to achieve *nondestructive mutation*. A `with` expression makes a new record instance that is a copy of an existing record instance, with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to be changed, as shown in the following example:
+If you need to copy an instance with some modifications, use a `with` expression to achieve *nondestructive mutation*. A `with` expression creates a new record instance that's a copy of an existing record instance, but with specified properties and fields modified. Use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to change, as shown in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressions":::
 
 The `with` expression can set positional properties or properties created by using standard property syntax. Explicitly declared properties must have an `init` or `set` accessor to be changed in a `with` expression.
 
-The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
+The result of a `with` expression is a *shallow copy*. For a reference property, the expression copies only the reference to an instance. Both the original record and the copy end up with a reference to the same instance.
 
-To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
+To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that the `with` expression includes.
 
-If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
+> [!IMPORTANT]
+> The compiler also synthesizes a public parameterless constructor when the record lacks a primary constructor or any user-defined constructors. This parameterless constructor initializes all fields to their default values. Without this synthesized constructor, no public constructor is available.
+
+If you need different copying behavior, write your own copy constructor in a `record class`. If you do, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`. Otherwise, make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
 
 > [!IMPORTANT]
-> In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
+> In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields that the `with` expression includes. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
 
 You ensure correctness on computed properties by computing the value on access, as shown in the following declaration:
 
@@ -157,7 +162,7 @@ The preceding record type computes the `Distance` when accessed, as shown in the
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherComputedUsage":::
 
-Contrast that with the following declaration, where the `Distance` property is computed and cached as part of the initialization of a new instance:
+Contrast that approach with the following declaration, where the `Distance` property is computed and cached as part of the initialization of a new instance:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherInit":::
 
@@ -169,7 +174,7 @@ The `Distance` computation isn't expensive to compute on each access. However, s
 
 ## Built-in formatting for display
 
-Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string of the following format:
+Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string in the following format:
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 
@@ -240,7 +245,7 @@ Here's an example of code that replaces the synthesized `PrintMembers` methods, 
 
 ### Deconstructor behavior in derived records
 
-The `Deconstruct` method of a derived record returns the values of all positional properties of the compile-time type. If the variable type is a base record, only the base record properties are deconstructed unless the object is cast to the derived type. The following example demonstrates calling a deconstructor on a derived record.
+The `Deconstruct` method of a derived record returns the values of all positional properties of the compile-time type. If the variable type is a base record, the deconstruct operation returns only the base record properties unless the object is cast to the derived type. The following example demonstrates calling a deconstructor on a derived record.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="DeconstructorInheritance":::
 
@@ -263,4 +268,5 @@ For more information about these features, see the following feature proposal no
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
 - [The C# type system](../../fundamentals/types/index.md)
+- [Operator overloading](../operators/operator-overloading.md)
 - [`with` expression](../operators/with-expression.md)

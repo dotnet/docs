@@ -28,7 +28,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
 
 2. Locate the `<listeners>` section in the application configuration file.
 
-     You will find the \<listeners> section in the \<source> section with the name attribute "DefaultSource", which is nested under the \<system.diagnostics> section, which is nested under the top-level \<configuration> section.
+     You will find the `<listeners>` section in the `<source>` section with the name attribute "DefaultSource", which is nested under the `<system.diagnostics>` section, which is nested under the top-level `<configuration>` section.
 
 3. Add this element to that `<listeners>` section:
 

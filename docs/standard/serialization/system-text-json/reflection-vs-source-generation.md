@@ -16,13 +16,13 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 * How to access property getters and fields for serialization.
 * How to access a constructor, property setters, and fields for deserialization.
 * Information about which attributes have been used to customize serialization or deserialization.
-* Run-time configuration from <xref:System.Text.Json.JsonSerializerOptions>.
+* Runtime configuration from <xref:System.Text.Json.JsonSerializerOptions>.
 
 This information is referred to as *metadata*.
 
 ## Reflection
 
-By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time by using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
+By default, <xref:System.Text.Json.JsonSerializer> collects metadata at runtime by using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 ## Source generation
 
@@ -54,7 +54,7 @@ Choose reflection or source-generation modes based on the following benefits tha
 | Supports all available serialization customizations. | ✔️        | ❌<sup>†</sup>      | ❌<sup>†</sup>            |
 | Reduces start-up time.                               | ❌        | ✔️                  | ✔️                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
-| Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
+| Eliminates runtime reflection.                      | ❌        | ✔️                  | ✔️                        |
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 

@@ -8,15 +8,15 @@ metadata:
   description: Samples, tutorials, and education for building AI apps with .NET
   ms.topic: landing-page
   ms.service: dotnet
-  ms.date: 8/26/2025
+  ms.date: 12/10/2025
   author: alexwolfmsft
   ms.author: alexwolf
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
 
   # Card
   - title: Get started
@@ -45,16 +45,16 @@ landingContent:
         links:
           - text: How generative AI and LLMs work
             url: conceptual/how-genai-and-llms-work.md
-          - text: Understand tokens
-            url: conceptual/understanding-tokens.md
+          - text: Build agents to automate workflows
+            url: conceptual/agents.md
           - text: Preserve semantic meaning with embeddings
             url: conceptual/embeddings.md
           - text: Semantic search with vector databases
             url: conceptual/vector-databases.md
-          - text: Prompt engineering
-            url: conceptual/prompt-engineering-dotnet.md
-          - text: Evaluation libraries
-            url: conceptual/evaluation-libraries.md
+          - text: Data ingestion
+            url: conceptual/data-ingestion.md
+          - text: Retrieval-augmented generation
+            url: conceptual/rag.md
 
   # Card
   - title: Common tasks
@@ -77,13 +77,13 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Fundamentals of Azure OpenAI Service
-            url: /training/modules/explore-azure-openai
+          - text: Plan and prepare to develop AI solutions on Azure
+            url: /training/modules/prepare-azure-ai-development/
           - text: Generate conversations Azure OpenAI completions
             url: /training/modules/open-ai-dotnet-text-completions
           - text: .NET enterprise chat sample using RAG
             url: get-started-app-chat-template.md
-          - text: Develop AI agents using Azure OpenAI
+          - text: Develop generative AI apps with Azure OpenAI and Semantic Kernel
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 
   # Card

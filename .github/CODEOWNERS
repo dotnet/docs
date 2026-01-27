@@ -55,10 +55,10 @@
 /docs/machine-learning/ @gewarren @luisquintanilla @JakeRadMSFT @dotnet/docs
 
 # The .NET Architecture Guide:
-/docs/architecture/ @IEvangelist @dotnet/docs
+/docs/architecture/ @dotnet/docs
 
 # .NET Orleans
-/docs/orleans/ @IEvangelist @dotnet/docs
+/docs/orleans/ @meaghanlewis @ReubenBond
 
 # IoT Guide
 /docs/iot/ @dotnet/docs
@@ -108,9 +108,9 @@
 # Diagnostics
 /docs/core/diagnostics/ @tommcdon @dotnet/docs
 # Docker
-/docs/core/docker/ @IEvangelist @dotnet/docs
+/docs/core/docker/ @adegeo @dotnet/docs
 # Extensions
-/docs/core/extensions/ @IEvangelist @dotnet/docs
+/docs/core/extensions/ @gewarren @dotnet/docs
 # Install
 /docs/core/install/ @adegeo @dotnet/docs
 # Project SDKs
@@ -118,7 +118,7 @@
 # Config settings
 /docs/core/runtime-config/ @gewarren @dotnet/docs
 # Testing
-/docs/core/testing/ @IEvangelist @dotnet/docs
+/docs/core/testing/ @meaghanlewis @Youssef1313
 # Tools
 /docs/core/tools/ @meaghanlewis @dotnet/docs
 # Tutorials
@@ -164,9 +164,9 @@
 
 ################## .NET Standard ##################
 # Analyzers
-/docs/standard/analyzers/ @IEvangelist @dotnet/docs
+/docs/standard/analyzers/ @gewarren @dotnet/docs
 # Assembly
-/docs/standard/assembly/ @IEvangelist @dotnet/docs
+/docs/standard/assembly/ @gewarren @dotnet/docs
 # Asynchronous Programming Patterns
 /docs/standard/asynchronous-programming-patterns/ @BillWagner @dotnet/docs
 # Attributes
@@ -177,7 +177,7 @@
 # Base types
 /docs/standard/base-types/ @adegeo @dotnet/docs
 # Collections
-/docs/standard/collections/ @IEvangelist @dotnet/docs
+/docs/standard/collections/ @adegeo @dotnet/docs
 # System.CommandLine
 /docs/standard/commandline/ @gewarren @dotnet/docs
 # Data
@@ -189,7 +189,7 @@
 # Design guidelines
 /docs/standard/design-guidelines/ @BillWagner @dotnet/docs
 # Events
-/docs/standard/events/ @IEvangelist @dotnet/docs
+/docs/standard/events/ @adegeo @dotnet/docs
 # Exceptions
 /docs/standard/exceptions/ @gewarren @dotnet/docs
 # GC
@@ -201,7 +201,7 @@
 # I/O
 /docs/standard/io/ @adegeo @dotnet/docs
 # Library guidance
-/docs/standard/library-guidance/ @jamesnk @IEvangelist @dotnet/docs
+/docs/standard/library-guidance/ @jamesnk @dotnet/docs
 # LINQ
 /docs/standard/linq/ @dotnet/docs
 # Memory and spans
@@ -209,9 +209,9 @@
 # Native Interop
 /docs/standard/native-interop/ @jkoritzinsky @dotnet/docs
 # Parallel programming
-/docs/standard/parallel-programming/ @IEvangelist @dotnet/docs
+/docs/standard/parallel-programming/ @adegeo @dotnet/docs
 # Security
-/docs/standard/security/ @IEvangelist @dotnet/docs
+/docs/standard/security/ @BillWagner @dotnet/docs
 # Serialization
 /docs/standard/serialization/ @gewarren @dotnet/docs
 # Threading
@@ -221,18 +221,16 @@
 
 ################## E-books ##################
 # Blazor:
-/docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist @dotnet/docs
-# gRPC:
-/docs/architecture/grpc-for-wcf-developers/ @IEvangelist @dotnet/docs
+/docs/architecture/blazor-for-web-forms-developers/ @danroth27 @dotnet/docs
 # Desktop:
-/docs/architecture/modernize-desktop/ @IEvangelist @dotnet/docs
+/docs/architecture/modernize-desktop/ @adegeo @dotnet/docs
 
 ################# Samples folder ##############
 
 ## These have been pulled directly from the samples repo:
 
 # C# snippets:
-/samples/snippets/csharp/ @BillWagner @IEvangelist @dotnet/docs
+/samples/snippets/csharp/ @BillWagner @dotnet/docs
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner @dotnet/docs
 # F# Snippets:

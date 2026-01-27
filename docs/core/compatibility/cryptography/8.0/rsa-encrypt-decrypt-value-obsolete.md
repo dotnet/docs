@@ -16,7 +16,7 @@ All references to these methods will result in a [SYSLIB0048](../../../../fundam
 
 ## Previous behavior
 
-Previously, code could call the [affected methods](#affected-apis) without any compilation warnings. However, they threw a <xref:System.NotSupportedException> at run time.
+Previously, code could call the [affected methods](#affected-apis) without any compilation warnings. However, they threw a <xref:System.NotSupportedException> at runtime.
 
 ## New behavior
 

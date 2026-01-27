@@ -12,15 +12,15 @@ The default trace context propagator has been switched from the legacy propagato
 
 ## Version introduced
 
-.NET 10 Preview 4
+.NET 10
 
 ## Previous behavior
 
-The <xref:System.Diagnostics.DistributedContextPropagator.CreateDefaultPropagator?displayProperty=nameWithType> method returned an instance of the legacy propagator. By default, <xref:System.Diagnostics.DistributedContextPropagator.Current?displayProperty=nameWithType> was set to this legacy instance.
+Previously, the <xref:System.Diagnostics.DistributedContextPropagator.CreateDefaultPropagator?displayProperty=nameWithType> method returned an instance of the legacy propagator. By default, <xref:System.Diagnostics.DistributedContextPropagator.Current?displayProperty=nameWithType> was set to this legacy instance.
 
 ## New behavior
 
-The <xref:System.Diagnostics.DistributedContextPropagator.CreateDefaultPropagator?displayProperty=nameWithType> method now returns an instance of the W3C propagator. By default, <xref:System.Diagnostics.DistributedContextPropagator.Current?displayProperty=nameWithType> is set to this W3C instance.
+Starting in .NET 10, the <xref:System.Diagnostics.DistributedContextPropagator.CreateDefaultPropagator?displayProperty=nameWithType> method returns an instance of the W3C propagator. By default, <xref:System.Diagnostics.DistributedContextPropagator.Current?displayProperty=nameWithType> is set to this W3C instance.
 
 Example of setting the default propagator to the legacy propagator:
 
@@ -30,7 +30,7 @@ DistributedContextPropagator.Current = DistributedContextPropagator.CreatePreW3C
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

@@ -4,10 +4,36 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 11
+        items:
+          - name: Overview
+            href: 11.md
+          - name: Core .NET libraries
+            items:
+              - name: DeflateStream and GZipStream write headers and footers for empty payload
+                href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
+              - name: Environment.TickCount made consistent with Windows timeout behavior
+                href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: MemoryStream maximum capacity updated and exception behavior changed
+                href: core-libraries/11/memorystream-max-capacity.md
+              - name: TAR-reading APIs verify header checksums when reading
+                href: core-libraries/11/tar-checksum-validation.md
+          - name: Cryptography
+            items:
+              - name: DSA removed from macOS
+                href: cryptography/11/dsa-removed-macos.md
+          - name: Globalization
+            items:
+              - name: Japanese Calendar minimum supported date corrected
+                href: globalization/11/japanese-calendar-min-date.md
+          - name: JIT compiler
+            items:
+              - name: Minimum hardware requirements updated
+                href: jit/11/minimum-hardware-requirements.md
       - name: .NET 10
         items:
           - name: Overview
-            href: 10.0.md
+            href: 10.md
           - name: ASP.NET Core
             items:
               - name: Cookie login redirects disabled for known API endpoints
@@ -66,10 +92,10 @@ items:
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
-              - name: YMM embedded rounding removed from AVX10.2
-                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
+              - name: CompositeMLDsa updated to draft-08
+                href: cryptography/10.0/composite-mldsa-draft-08.md
               - name: CoseSigner.Key can be null
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
@@ -78,6 +104,8 @@ items:
                 href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
+              - name: OpenSSL 1.1.1 or later required on Unix
+                href: cryptography/10.0/openssl-version-requirement.md
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
@@ -88,6 +116,8 @@ items:
             items:
               - name: BackgroundService runs all of ExecuteAsync as a Task
                 href: extensions/10.0/backgroundservice-executeasync-task.md
+              - name: Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey
+                href: extensions/10.0/getkeyedservice-anykey.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration
@@ -100,8 +130,14 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Install tool
+            items:
+              - name: dotnet.acquire API for VS Code no longer always downloads latest
+                href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
+              - name: Casting IDispatchEx COM object to IReflect fails
+                href: interop/10.0/idispatchex-ireflect-cast.md
               - name: Single-file apps no longer look for native libraries in executable directory
                 href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
@@ -110,16 +146,22 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
+              - name: MailAddress enforces validation for consecutive dots
+                href: networking/10.0/mailaddress-consecutive-dots.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
                 href: networking/10.0/uri-length-limits-removed.md
           - name: Reflection
             items:
+              - name: More restricted annotations on InvokeMember/FindMembers/DeclaredMembers
+                href: reflection/10/ireflect-damt-annotations.md
               - name: Type.MakeGenericSignatureType argument validation
                 href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
             items:
+              - name: Code coverage EnableDynamicNativeInstrumentation defaults to false
+                href: sdk/10.0/code-coverage-dynamic-native-instrumentation.md
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet` CLI commands log non-command-relevant data to stderr"
@@ -128,6 +170,8 @@ items:
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: dnx.ps1 file is no longer included in .NET SDK
                 href: sdk/10.0/dnx-ps1-removed.md
+              - name: Double quotes in file-level directives are disallowed
+                href: sdk/10.0/file-level-directive-double-quotes.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
@@ -160,10 +204,12 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
-              - name: Version requirements for .NET 10 SDK
-                href: sdk/10.0/version-requirements.md
+              - name: "'ToolCommandName' not set for non-tool packages"
+                href: sdk/10.0/toolcommandname-not-set.md
           - name: Serialization
             items:
+              - name: System.Text.Json checks for property name conflicts
+                href: serialization/10/property-name-validation.md
               - name: XmlSerializer no longer ignores properties marked with ObsoleteAttribute
                 href: serialization/10/xmlserializer-obsolete-properties.md
           - name: Windows Forms
@@ -222,7 +268,7 @@ items:
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
-              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+              - name: BinaryReader.ReadString() returns "/uFFFD" on malformed sequences
                 href: core-libraries/9.0/binaryreader.md
               - name: C# overload resolution prefers `params` span-type overloads
                 href: core-libraries/9.0/params-overloads.md
@@ -266,6 +312,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Environment variables take precedence in app runtime configuration settings
+                href: deployment/9.0/envvar-precedence.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
@@ -442,6 +490,8 @@ items:
                 href: deployment/8.0/rid-asset-list.md
               - name: .NET Monitor only includes distroless images
                 href: deployment/8.0/monitor-image.md
+              - name: .NET packages for openSUSE and SLES depend on OpenSSL 3.x
+                href: deployment/8.0/opensuse-sles-openssl3-dependency.md
               - name: StripSymbols defaults to true
                 href: deployment/8.0/stripsymbols-default.md
           - name: Entity Framework Core

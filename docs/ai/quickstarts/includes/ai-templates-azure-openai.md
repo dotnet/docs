@@ -1,15 +1,13 @@
 ---
 ms.date: 2/21/2025
-ms.topic: quickstart
-author: alexwolfmsft
-ms.author: alexwolf
+ms.topic: include
 ---
 
 ## Prerequisites
 
 * [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
 * One of the following IDEs (optional):
-  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
   * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template

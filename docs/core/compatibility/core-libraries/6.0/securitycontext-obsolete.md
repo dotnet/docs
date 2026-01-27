@@ -12,7 +12,7 @@ ms.date: 08/16/2021
 
 ## Old behavior
 
-Prior to .NET 6, the <xref:System.Security.SecurityContext> type was not marked obsolete, however, all of its public members throw a <xref:System.PlatformNotSupportedException> at run time.
+Prior to .NET 6, the <xref:System.Security.SecurityContext> type was not marked obsolete, however, all of its public members throw a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## New behavior
 
@@ -28,7 +28,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-All of the public members of <xref:System.Security.SecurityContext> throw a <xref:System.PlatformNotSupportedException> at run time. The <xref:System.Security.SecurityContext> is part of [Code access security (CAS)](/previous-versions/dotnet/framework/code-access-security/code-access-security), which is an unsupported legacy technology.
+All of the public members of <xref:System.Security.SecurityContext> throw a <xref:System.PlatformNotSupportedException> at runtime. The <xref:System.Security.SecurityContext> is part of [Code access security (CAS)](/previous-versions/dotnet/framework/code-access-security/code-access-security), which is an unsupported legacy technology.
 
 ## Recommended action
 

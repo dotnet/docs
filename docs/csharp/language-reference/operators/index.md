@@ -1,10 +1,10 @@
 ---
 title: "Operators and expressions - List all operators and expression"
 description: "Learn the C# operators and expressions, operator precedence, and operator associativity."
-ms.date: 11/28/2022
-f1_keywords: 
+ms.date: 01/20/2026
+f1_keywords:
   - "cs.operators"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "operators [C#]"
   - "operator precedence [C#]"
   - "operator associativity [C#]"
@@ -12,7 +12,11 @@ helpviewer_keywords:
 ---
 # C# operators and expressions
 
-C# provides a number of operators. Many of them are supported by the [built-in types](../builtin-types/built-in-types.md) and allow you to perform basic operations with values of those types. Those operators include the following groups:
+C# provides many operators. The [built-in types](../builtin-types/built-in-types.md) support many of these operators, so you can perform basic operations with values of those types.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+These operators include the following groups:
 
 - [Arithmetic operators](arithmetic-operators.md) that perform arithmetic operations with numeric operands
 - [Comparison operators](comparison-operators.md) that compare numeric operands
@@ -20,13 +24,13 @@ C# provides a number of operators. Many of them are supported by the [built-in t
 - [Bitwise and shift operators](bitwise-and-shift-operators.md) that perform bitwise or shift operations with operands of the integral types
 - [Equality operators](equality-operators.md) that check if their operands are equal or not
 
-Typically, you can [overload](operator-overloading.md) those operators, that is, specify the operator behavior for the operands of a user-defined type.
+Typically, you can [overload](operator-overloading.md) these operators. By overloading an operator, you specify the operator behavior for the operands of a user-defined type.
 
 The simplest C# expressions are literals (for example, [integer](../builtin-types/integral-numeric-types.md#integer-literals) and [real](../builtin-types/floating-point-numeric-types.md#real-literals) numbers) and names of variables. You can combine them into complex expressions by using operators. Operator [precedence](#operator-precedence) and [associativity](#operator-associativity) determine the order in which the operations in an expression are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 
-In the following code, examples of expressions are at the right-hand side of assignments:
+In the following code, examples of expressions appear on the right-hand side of assignments:
 
-[!code-csharp[expression examples](snippets/shared/Overview.cs#Expressions)]
+:::code language="csharp" source="snippets/shared/Overview.cs" id="Expressions":::
 
 Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
 
@@ -38,15 +42,15 @@ Here are some other kinds of expressions that C# provides:
 
 - [Interpolated string expressions](../tokens/interpolated.md) that provide convenient syntax to create formatted strings:
 
-  [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
+  :::code language="csharp" source="snippets/shared/Overview.cs" id="InterpolatedString":::
 
 - [Lambda expressions](lambda-expressions.md) that allow you to create anonymous functions:
 
-  [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
+  :::code language="csharp" source="snippets/shared/Overview.cs" id="Lambda":::
 
 - [Query expressions](../keywords/query-keywords.md) that allow you to use query capabilities directly in C#:
 
-  [!code-csharp-interactive[query expression](snippets/shared/Overview.cs#Query)]
+  :::code language="csharp" source="snippets/shared/Overview.cs" id="Query":::
 
 You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 
@@ -54,14 +58,14 @@ You can use an [expression body definition](../../programming-guide/statements-e
 
 In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. In the following example, the multiplication is performed first because it has higher precedence than addition:
 
-```csharp-interactive
+```csharp
 var a = 2 + 2 * 2;
 Console.WriteLine(a); //  output: 6
 ```
 
 Use parentheses to change the order of evaluation imposed by operator precedence:
 
-```csharp-interactive
+```csharp
 var a = (2 + 2) * 2;
 Console.WriteLine(a); //  output: 8
 ```
@@ -102,7 +106,7 @@ When operators have the same precedence, associativity of the operators determin
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
-```csharp-interactive
+```csharp
 int a = 13 / 5 / 2;
 int b = 13 / (5 / 2);
 Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
@@ -112,14 +116,14 @@ Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
 
 Unrelated to operator precedence and associativity, operands in an expression are evaluated from left to right. The following examples demonstrate the order in which operators and operands are evaluated:
 
-| Expression | Order of evaluation |
-| ---------- | ------------------- |
-|`a + b`|a, b, +|
-|`a + b * c`|a, b, c, *, +|
-|`a / b + c * d`|a, b, /, c, d, *, +|
-|`a / (b + c) * d`|a, b, c, +, /, d, *|
+| Expression        | Order of evaluation |
+|-------------------|---------------------|
+| `a + b`           | a, b, +             |
+| `a + b * c`       | a, b, c, *, +       |
+| `a / b + c * d`   | a, b, /, c, d, *, + |
+| `a / (b + c) * d` | a, b, c, +, /, d, * |
 
-Typically, all operator operands are evaluated. However, some operators evaluate operands conditionally. That is, the value of the leftmost operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). For more information, see the description of each operator.
+Typically, all operator operands are evaluated. However, some operators evaluate operands conditionally. That condition means the value of the leftmost operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). For more information, see the description of each operator.
 
 ## C# language specification
 

@@ -58,3 +58,24 @@ public static class Nullable3
     // </Deserialization>
 }
 
+public static class Nullable4
+{
+    // <MissingVsNull>
+    public static void RunIt()
+    {
+#nullable enable
+        JsonSerializerOptions options = new()
+        {
+            RespectNullableAnnotations = true
+        };
+
+        // Missing property - does NOT throw an exception.
+        string jsonMissing = """{}""";
+        var resultMissing = JsonSerializer.Deserialize<Person>(jsonMissing, options);
+        Console.WriteLine(resultMissing.Name is null); // True.
+    }
+
+    record Person(string Name);
+    // </MissingVsNull>
+}
+

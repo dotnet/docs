@@ -16,13 +16,16 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
+Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)).
 
 You also need to build a .NET component to test the host with, so you should install the [latests .NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with.
 
 ## Hosting APIs
 
 Hosting the .NET runtime is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
+
+> [!IMPORTANT]
+> The `nethost` and `hostfxr` hosting APIs only support framework-dependent deployments. Self-contained deployments should be treated as stand-alone executables. If you're evaluating deployment models for your application, use a framework-dependent deployment to ensure compatibility with these native hosting APIs.
 
 ## Create a host using `nethost.h` and `hostfxr.h`
 

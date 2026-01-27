@@ -1,9 +1,6 @@
 ﻿namespace OOProgramming;
 
-/// <summary>
-/// Represents a gift card account that extends <see cref="BankAccount"/> with optional recurring monthly deposits.
-/// Designed for prepaid gift cards that can optionally receive automatic monthly top-ups.
-/// </summary>
+/// <inheritdoc/>
 /// <remarks>
 /// A gift card account is a specialized prepaid account that can be loaded with an initial balance and optionally
 /// configured to receive automatic monthly deposits. This account type is ideal for gift cards, allowances, or

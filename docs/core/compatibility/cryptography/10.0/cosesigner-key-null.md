@@ -12,15 +12,15 @@ In .NET 10, the <xref:System.Security.Cryptography.Cose.CoseSigner.Key?displayPr
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 
-`CoseSigner.Key` couldn't be `null`. It had type `AsymmetricAlgorithm`.
+Previously, `CoseSigner.Key` couldn't be `null`. It had type `AsymmetricAlgorithm`.
 
 ## New behavior
 
-`CoseSigner.Key` can be `null`. Its type is `AsymmetricAlgorithm?`.
+Starting in .NET 10, `CoseSigner.Key` can be `null`. Its type is `AsymmetricAlgorithm?`.
 
 ```csharp
 using RSA rsaKey = RSA.Create();

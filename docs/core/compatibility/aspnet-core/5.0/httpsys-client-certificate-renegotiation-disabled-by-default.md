@@ -3,6 +3,7 @@ title: "Breaking change: HttpSys: Client certificate renegotiation disabled by d
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled HttpSys: Client certificate renegotiation disabled by default"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/422
 ---
 # HttpSys: Client certificate renegotiation disabled by default
 

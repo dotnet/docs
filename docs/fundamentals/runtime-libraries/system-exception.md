@@ -15,7 +15,7 @@ The <xref:System.Exception> class is the base class for all exceptions. When an 
 
 ## Errors and exceptions
 
-Run-time errors can occur for a variety of reasons. However, not all errors should be handled as exceptions in your code. Here are some categories of errors that can occur at run time and the appropriate ways to respond to them.
+Runtime errors can occur for a variety of reasons. However, not all errors should be handled as exceptions in your code. Here are some categories of errors that can occur at runtime and the appropriate ways to respond to them.
 
 - **Usage errors.** A usage error represents an error in program logic that can result in an exception. However, the error should be addressed not through exception handling but by modifying the faulty code. For example, the override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method in the following example assumes that the `obj` argument must always be non-null.
 
@@ -25,19 +25,19 @@ Run-time errors can occur for a variety of reasons. However, not all errors shou
 
   The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.
 
-  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/usageerrors2.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Exception/Overview/vb/usageerrors2.vb" id="Snippet5":::
 
   Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).
 
-- **Program errors.** A program error is a run-time error that cannot necessarily be avoided by writing bug-free code.
+- **Program errors.** A program error is a runtime error that cannot necessarily be avoided by writing bug-free code.
 
   In some cases, a program error may reflect an expected or routine error condition. In this case, you may want to avoid using exception handling to deal with the program error and instead retry the operation. For example, if the user is expected to input a date in a particular format, you can parse the date string by calling the <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method, which returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded, instead of using the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method, which throws a <xref:System.FormatException> exception if the date string cannot be converted to a <xref:System.DateTime> value. Similarly, if a user tries to open a file that does not exist, you can first call the <xref:System.IO.File.Exists%2A?displayProperty=nameWithType> method to check whether the file exists and, if it does not, prompt the user whether they want to create it.
 
   In other cases, a program error reflects an unexpected error condition that can be handled in your code. For example, even if you've checked to ensure that a file exists, it may be deleted before you can open it, or it may be corrupted. In that case, trying to open the file by instantiating a <xref:System.IO.StreamReader> object or calling the <xref:System.IO.File.Open%2A> method may throw a <xref:System.IO.FileNotFoundException> exception. In these cases, you should use exception handling to recover from the error.
 
-- **System failures.** A system failure is a run-time error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> and call the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method to log exception information and notify the user of the failure before the application terminates.
+- **System failures.** A system failure is a runtime error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> and call the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method to log exception information and notify the user of the failure before the application terminates.
 
 ## Try/catch blocks
 
@@ -225,6 +225,6 @@ The following example makes two calls to the `GetPrimesFrom` method with non-pri
 
 The following example demonstrates a `catch` (`with` in F#) block that is defined to handle <xref:System.ArithmeticException> errors. This `catch` block also catches <xref:System.DivideByZeroException> errors, because <xref:System.DivideByZeroException> derives from <xref:System.ArithmeticException> and there is no `catch` block explicitly defined for <xref:System.DivideByZeroException> errors.
 
-:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/catchexception.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Exception/Overview/vb/catchexception.vb" id="Snippet1":::

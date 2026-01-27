@@ -8,7 +8,7 @@ ms.date: 12/18/2023
 
 # Compile-time options validation source generation
 
-In the [options pattern](options.md), various methods for validating options are presented. These methods include using data annotation attributes or employing a custom validator. Data annotation attributes are validated at run time and can incur performance costs. This article demonstrates how to utilize the options validation source generator to produce optimized validation code at compile time.
+In the [options pattern](options.md), various methods for validating options are presented. These methods include using data annotation attributes or employing a custom validator. Data annotation attributes are validated at runtime and can incur performance costs. This article demonstrates how to utilize the options validation source generator to produce optimized validation code at compile time.
 
 ## Automatic IValidateOptions implementation generation
 

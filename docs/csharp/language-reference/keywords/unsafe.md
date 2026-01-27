@@ -1,19 +1,20 @@
 ---
 description: "unsafe keyword - C# Reference"
 title: "unsafe keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords:
   - "unsafe_CSharpKeyword"
   - "unsafe"
 helpviewer_keywords:
   - "unsafe keyword [C#]"
-ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
 ---
 # unsafe (C# Reference)
 
 The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
 
-You can use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is therefore considered an unsafe context. For example, the following is a method declared with the `unsafe` modifier:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+Use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is an unsafe context. For example, the following method is declared with the `unsafe` modifier:
 
 ```csharp
 unsafe static void FastCopy(byte[] src, byte[] dst, int count)
@@ -22,13 +23,13 @@ unsafe static void FastCopy(byte[] src, byte[] dst, int count)
 }
 ```
 
-The scope of the unsafe context extends from the parameter list to the end of the method, so pointers can also be used in the parameter list:
+The scope of the unsafe context extends from the parameter list to the end of the method, so you can also use pointers in the parameter list:
 
 ```csharp
 unsafe static void FastCopy ( byte* ps, byte* pd, int count ) {...}
 ```
 
-You can also use an unsafe block to enable the use of an unsafe code inside this block. For example:
+You can also use an unsafe block to enable the use of unsafe code inside this block. For example:
 
 ```csharp
 unsafe
@@ -37,11 +38,11 @@ unsafe
 }
 ```
 
-To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option. Unsafe code is not verifiable by the common language runtime.
+To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option. The common language runtime can't verify unsafe code.
 
 ## Example
 
-[!code-csharp[csrefKeywordsModifiers#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#22)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="22":::
 
 ## C# language specification
 

@@ -43,7 +43,7 @@ HRESULT PutInstanceWmi (
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-| `WBEM_FLAG_USE_AMENDED_QUALIFIERS` | 0x20000 | If set, WMI does not store any qualifiers with the **Amended** flavor. <br> If not set, it is assumed that this object is not localized, and all qualifiers are stored with this instance. |
+| `WBEM_FLAG_USE_AMENDED_QUALIFIERS` | 0x20000 | If set, WMI does not store any qualifiers with the `Amended` flavor. <br> If not set, it is assumed that this object is not localized, and all qualifiers are stored with this instance. |
 | `WBEM_FLAG_CREATE_OR_UPDATE` | 0 | Create the instance if it does not exist, or overwrite it if it exists already. |
 | `WBEM_FLAG_UPDATE_ONLY` | 1 | Update the instance. The instance must exist for the call to be successful. |
 | `WBEM_FLAG_CREATE_ONLY` | 2 | Create the instance. The call fails if the instance already exists. |
@@ -64,7 +64,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_ACCESS_DENIED` | 0x80041003 | The user does not have permission to update an instance of the specified class. |
 | `WBEM_E_FAILED` | 0x80041001 | An unspecified error has occurred. |
 | `WBEM_E_INVALID_CLASS` | 0x80041010 | The class supporting this instance is not valid. |
-| `WBEM_E_ILLEGAL_NULL` | 0x80041028 | a `null` was specified for a property that cannot be `null`, such as one that is marked by an **Indexed** or **Not_Null** qualifier. |
+| `WBEM_E_ILLEGAL_NULL` | 0x80041028 | a `null` was specified for a property that cannot be `null`, such as one that is marked by an `Indexed` or `Not_Null` qualifier. |
 | `WBEM_E_INVALID_OBJECT` | 0x8004100f | The specified instance is not valid. (For example, calling `PutInstanceWmi` with a class returns this value.) |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is not valid. |
 | `WBEM_E_ALREADY_EXISTS` | 0x80041019 | The `WBEM_FLAG_CREATE_ONLY` flag was specified, but the instance already exists. |
@@ -83,7 +83,7 @@ The `PutInstanceWmi` function supports creating instances and updating instances
 When the instance pointed to by `pInst` belongs to a subclass, Windows Management calls all the providers responsible for the classes from which the subclass derives. All of these providers must succeed for the original `PutInstanceWmi` request to succeed. The provider supporting the topmost class in the hierarchy is called first. The calling order continues with the subclass of the topmost class and proceeds from top to bottom until Windows Management reaches the provider for the class owning the instance pointed to by `pInst`.
 Windows Management does not call the providers for any of the child classes of an instance.
 
-When an application must update an instance that belongs to a class hierarchy, the `pInst` parameter must point to the instance containing the properties to be modified. That is, consider a target instance that belongs to **ClassB**. The **ClassB** instance derives from **ClassA**, and **ClassA** defines the property **PropA**. If an application wants to make a change to the value of **PropA** in the **ClassB** instance, it must set `pInst` to that instance rather than an instance of **ClassA**.
+When an application must update an instance that belongs to a class hierarchy, the `pInst` parameter must point to the instance containing the properties to be modified. That is, consider a target instance that belongs to **ClassB**. The `ClassB` instance derives from **ClassA**, and `ClassA` defines the property **PropA**. If an application wants to make a change to the value of `PropA` in the `ClassB` instance, it must set `pInst` to that instance rather than an instance of **ClassA**.
 
 Calling `PutInstanceWmi` on an instance of an abstract class is not allowed.
 

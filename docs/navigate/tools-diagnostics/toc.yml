@@ -9,6 +9,8 @@ items:
         href: ../../core/sdk.md
       - name: Environment variables
         href: ../../core/tools/dotnet-environment-variables.md
+      - name: File-based apps
+        href: ../../core/sdk/file-based-apps.md
       - name: dotnet-install scripts
         href: ../../core/tools/dotnet-install-script.md
       - name: global.json overview
@@ -182,6 +184,8 @@ items:
             items:
               - name: dotnet package add
                 href: ../../core/tools/dotnet-package-add.md
+              - name: dotnet package download
+                href: ../../core/tools/dotnet-package-download.md
               - name: dotnet package list
                 href: ../../core/tools/dotnet-package-list.md
               - name: dotnet package remove
@@ -192,6 +196,8 @@ items:
                 href: ../../core/tools/dotnet-package-update.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet project convert
+            href: ../../core/tools/dotnet-project-convert.md
           - name: dotnet reference add/list/remove
             items:
               - name: dotnet reference add
@@ -211,7 +217,13 @@ items:
           - name: dotnet store
             href: ../../core/tools/dotnet-store.md
           - name: dotnet test
-            href: ../../core/tools/dotnet-test.md
+            items:
+              - name: Overview
+                href: ../../core/tools/dotnet-test.md
+              - name: dotnet test with VSTest
+                href: ../../core/tools/dotnet-test-vstest.md
+              - name: dotnet test with MTP
+                href: ../../core/tools/dotnet-test-mtp.md
           - name: dotnet tool
             items:
               - name: dotnet tool exec
@@ -263,7 +275,7 @@ items:
                 href: ../../core/tools/dotnet-workload-update.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md
-      - name: Enable Tab completion
+      - name: Enable tab completion
         href: ../../core/tools/enable-tab-autocomplete.md
       - name: Develop libraries with the CLI
         href: ../../core/tutorials/libraries.md
@@ -312,6 +324,9 @@ items:
       - name: Manage tools
         displayName: global tool,local tool
         href: ../../core/tools/global-tools.md
+      - name: RID-specific, self-contained, and AOT tools
+        displayName: rid-specific tool,self-contained tool,aot tool
+        href: ../../core/tools/rid-specific-tools.md
       - name: Troubleshoot tools
         displayName: global tool troubleshooting,local tool troubleshooting,
         href: ../../core/tools/troubleshoot-usage-issues.md
@@ -355,9 +370,6 @@ items:
       - name: WCF service XML serializer
         displayName: dotnet-svcutil.xmlserializer
         href: ../../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-      - name: XML serializer generator
-        displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
-        href: ../../core/additional-tools/xml-serializer-generator.md
   - name: Diagnostics and instrumentation
     items:
       - name: Overview
@@ -446,12 +458,16 @@ items:
             href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
           - name: Built-in activities
             href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
+      - name: Ambient metadata
+        items:
+          - name: Application metadata
+            href: ../../core/diagnostics/ambient-metadata/application-metadata.md
+          - name: Ambient metadata about build
+            href: ../../core/diagnostics/ambient-metadata/build-metadata.md
       - name: Enrichment
         items:
           - name: Overview
             href: ../../core/enrichment/overview.md
-          - name: Application metadata
-            href: ../../core/enrichment/application-metadata.md
           - name: Application log enricher
             href: ../../core/enrichment/application-log-enricher.md
           - name: Process log enricher
@@ -3287,6 +3303,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1874.md
                   - name: CA1875
                     href: ../../fundamentals/code-analysis/quality-rules/ca1875.md
+                  - name: CA1877
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1877.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -3347,6 +3365,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
                   - name: CA2025
                     href: ../../fundamentals/code-analysis/quality-rules/ca2025.md
+                  - name: CA2026
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2026.md
               - name: Security rules
                 items:
                   - name: Overview
@@ -3868,6 +3888,12 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0340.md
                   - name: IDE0350
                     href: ../../fundamentals/code-analysis/style-rules/ide0350.md
+                  - name: IDE0360
+                    href: ../../fundamentals/code-analysis/style-rules/ide0360.md
+                  - name: IDE0370
+                    href: ../../fundamentals/code-analysis/style-rules/ide0370.md
+                  - name: IDE0380
+                    href: ../../fundamentals/code-analysis/style-rules/ide0380.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
                   - name: IDE2000
@@ -3924,7 +3950,7 @@ items:
       - name: Obsoletions
         items:
           - name: Overview
-            displayName: syslib, obsolete, obsoletion
+            displayName: syslib, extobs, obsolete, obsoletion
             href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
           - name: SYSLIB0001
             href: ../../fundamentals/syslib-diagnostics/syslib0001.md
@@ -4106,6 +4132,14 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1022.md
           - name: SYSLIB1023
             href: ../../fundamentals/syslib-diagnostics/syslib1023.md
+          - name: SYSLIB1024
+            href: ../../fundamentals/syslib-diagnostics/syslib1024.md
+          - name: SYSLIB1025
+            href: ../../fundamentals/syslib-diagnostics/syslib1025.md
+          - name: SYSLIB1026
+            href: ../../fundamentals/syslib-diagnostics/syslib1026.md
+          - name: SYSLIB1027
+            href: ../../fundamentals/syslib-diagnostics/syslib1027.md
           - name: SYSLIB1030
             href: ../../fundamentals/syslib-diagnostics/syslib1030.md
           - name: SYSLIB1031
@@ -4150,6 +4184,12 @@ items:
           - name: SYSLIB1230
             href: ../../fundamentals/syslib-diagnostics/syslib1230.md
             displayProperty: syslib1230, syslib1231, syslib1232, syslib1233, syslib1234, syslib1235, syslib1236, syslib1237, syslib1238, syslib1239
+  - name: EXTOBS diagnostics
+    items:
+      - name: EXTOBS0001
+        href: ../../fundamentals/syslib-diagnostics/extobs0001.md
+      - name: EXTOBS0002
+        href: ../../fundamentals/syslib-diagnostics/extobs0002.md
   - name: API compatibility
     items:
       - name: Overview

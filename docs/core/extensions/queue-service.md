@@ -1,13 +1,11 @@
 ---
 title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
-author: IEvangelist
-ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 10/20/2025
 ms.topic: tutorial
 ---
 
-# Create a Queue Service
+# Create a queue service
 
 A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you build out new functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 
@@ -77,7 +75,7 @@ The services are registered in (*Program.cs*). The hosted service is registered 
 
 :::code source="snippets/workers/queue-service/Program.cs" range="18-19":::
 
-For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+For more information on registering services, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 ## Verify service functionality
 

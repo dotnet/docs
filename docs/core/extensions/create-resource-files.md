@@ -1,7 +1,7 @@
 ---
 title: Create resource files
 description: Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -191,7 +191,7 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 [!code-csharp[Conceptual.Resources.Resources#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
 [!code-vb[Conceptual.Resources.Resources#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
 
- After you create the .resources file, you can embed it in a run-time executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
+ After you create the .resources file, you can embed it in a runtime executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
 

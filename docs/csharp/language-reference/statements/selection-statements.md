@@ -1,7 +1,7 @@
 ---
 title: "if and switch statements - select a code path to execute"
 description: "The `if` and `switch` statements provide branching logic in C#. You use `if, `else` and `switch` to choose the path your program follows."
-ms.date: 11/22/2022
+ms.date: 01/16/2026
 f1_keywords:
   - "if_CSharpKeyword"
   - "else_CSharpKeyword"
@@ -19,7 +19,9 @@ helpviewer_keywords:
 ---
 # Selection statements - `if`, `if-else`, and `switch`
 
-The `if`, `if-else` and `switch` statements select statements to execute from many possible paths based on the value of an expression. The [`if` statement](#the-if-statement) executes a statement only if a provided Boolean expression evaluates to `true`. The [`if-else` statement](#the-if-statement) allows you to choose which of the two code paths to follow based on a Boolean expression. The [`switch` statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
+The `if`, `if-else`, and `switch` statements select statements to execute from many possible paths based on the value of an expression. The [`if` statement](#the-if-statement) executes a statement only if a provided Boolean expression evaluates to `true`. The [`if-else` statement](#the-if-statement) lets you choose which of the two code paths to follow based on a Boolean expression. The [`switch` statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## The `if` statement
 
@@ -27,25 +29,25 @@ An `if` statement can be any of the following two forms:
 
 - An `if` statement with an `else` part selects one of the two statements to execute based on the value of a Boolean expression, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="IfElse":::
+  :::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="IfElse":::
 
 - An `if` statement without an `else` part executes its body only if a Boolean expression evaluates to `true`, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="OnlyIf":::
+  :::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="OnlyIf":::
 
 You can nest `if` statements to check multiple conditions, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="NestedIf":::
+:::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="NestedIf":::
 
-In an expression context, you can use the [conditional operator `?:`](../operators/conditional-operator.md) to evaluate one of the two expressions based on the value of a Boolean expression.
+In an expression context, use the [conditional operator `?:`](../operators/conditional-operator.md) to evaluate one of the two expressions based on the value of a Boolean expression.
 
 ## The `switch` statement
 
-The `switch` statement selects a statement list to execute based on a pattern match with a match expression, as the following example shows:
+The `switch` statement selects a series of statements to execute based on a pattern match with a match expression, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="Example":::
 
-At the preceding example, the `switch` statement uses the following patterns:
+In the preceding example, the `switch` statement uses the following patterns:
 
 - A [relational pattern](../operators/patterns.md#relational-patterns): to compare an expression result with a constant.
 - A [constant pattern](../operators/patterns.md#constant-pattern): test if an expression result equals a constant.
@@ -55,7 +57,7 @@ At the preceding example, the `switch` statement uses the following patterns:
 
 The preceding example also demonstrates the `default` case. The `default` case specifies statements to execute when a match expression doesn't match any other case pattern. If a match expression doesn't match any case pattern and there's no `default` case, control falls through a `switch` statement.
 
-A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
+A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That error occurs when an upper case already handles the case or when the pattern is impossible to match.
 
 > [!NOTE]
 > The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is evaluated only if all other case patterns aren't matched or the `goto default;` statement is executed in one of the switch sections.
@@ -67,7 +69,7 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
 > [!IMPORTANT]
-> Every *switch section* must end with a `break`, `goto` or `return`. Falling through from one switch section to the next generates a compiler error. However, multiple switch labels can be applied to the same switch section, like `case < 0:` in example above. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
+> Every *switch section* must end with a `break`, `goto`, or `return`. Falling through from one switch section to the next generates a compiler error. However, you can apply multiple switch labels to the same switch section, like `case < 0:` in the preceding example. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.<br>
 
@@ -75,12 +77,12 @@ In an expression context, you can use the [`switch` expression](../operators/swi
 > Differences between **switch expression** and **switch statement**:
 >
 > - **switch statement** is used to control the execution flow within a block of code.
-> - **switch expression** is typically used in contexts of value return and value assignment, often as a [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
-> - a **switch expression** case section cannot be empty, a **switch statement** can.
+> - **switch expression** is typically used in contexts of value return and value assignment, often as [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+> - a **switch expression** case section can't be empty, but a **switch statement** case section can.
 
 ### Case guards
 
-A case pattern may not be expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A case pattern might not be expressive enough to specify the condition for the execution of the switch section. In such a case, use a *case guard*. The condition must be satisfied together with a matched pattern. A case guard must be a Boolean expression. Specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="WithCaseGuard":::
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
-ms.date: 09/10/2021
+ms.date: 11/12/2025
 no-loc: [dotnet workload install]
 ---
 # dotnet workload install
@@ -74,29 +74,29 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 ## Options
 
-[!INCLUDE [config-file](../../../includes/cli-configfile.md)]
+- [!INCLUDE [config-file](includes/cli-configfile.md)]
 
-[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
+- [!INCLUDE [disable-parallel](includes/cli-disable-parallel.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
+- [!INCLUDE [ignore-failed-sources](includes/cli-ignore-failed-sources.md)]
 
-[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
+- [!INCLUDE [include-previews](includes/cli-include-previews.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
+- [!INCLUDE [no-cache](includes/cli-no-cache.md)]
 
-[!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
+- [!INCLUDE [skip-manifest-update](includes/cli-skip-manifest-update.md)]
 
-[!INCLUDE [source](../../../includes/cli-source.md)]
+- [!INCLUDE [source](includes/cli-source.md)]
 
-[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
+- [!INCLUDE [temp-dir](includes/cli-temp-dir.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-packages.md)]
 
-[!INCLUDE [version](../../../includes/cli-version.md)]
+- [!INCLUDE [workload-version](includes/cli-workload-version.md)]
 
 ## Examples
 
@@ -110,4 +110,10 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   
   ```dotnetcli
   dotnet workload install maui-android maui-ios
+  ```
+
+- Install the workload version specified by the `@` character:
+
+  ```dotnetcli
+  dotnet workload install maui@10.0.100
   ```

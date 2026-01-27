@@ -12,7 +12,7 @@ When logging to the console using the JSON formatter, log messages are no longer
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 
@@ -51,7 +51,7 @@ Starting in .NET 10, `Message` appears only at the top level and not inside the 
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

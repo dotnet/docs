@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-You can use the <xref:System.Reflection.Emit.DynamicMethod> class to generate and execute a method at run time, without having to generate a dynamic assembly and a dynamic type to contain the method. The executable code created by the just-in-time (JIT) compiler is reclaimed when the <xref:System.Reflection.Emit.DynamicMethod> object is reclaimed. Dynamic methods are the most efficient way to generate and execute small amounts of code.
+You can use the <xref:System.Reflection.Emit.DynamicMethod> class to generate and execute a method at runtime, without having to generate a dynamic assembly and a dynamic type to contain the method. The executable code created by the just-in-time (JIT) compiler is reclaimed when the <xref:System.Reflection.Emit.DynamicMethod> object is reclaimed. Dynamic methods are the most efficient way to generate and execute small amounts of code.
 
 A dynamic method can be anonymously hosted, or it can be logically associated with a module or with a type.
 

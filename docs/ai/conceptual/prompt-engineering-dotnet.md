@@ -76,7 +76,7 @@ John Adams ...' ///Text truncated
 
 An example is text that shows the model how to respond by providing sample user input and model output. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed.
 
-An example starts with a prompt and can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+An example starts with a prompt and can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.
 
 Examples are classified as [zero-shot learning](zero-shot-learning.md) or [few-shot learning](zero-shot-learning.md) based on whether they contain verbatim completions.
 
@@ -103,7 +103,7 @@ First president to be declared an honorary citizen of a foreign country, and an 
 John Adams ...  /// Text truncated
 
 DOMESTIC POLICY
-- George Washington: 
+- George Washington:
 - John Adams:
 """;
 ```
@@ -114,7 +114,7 @@ DOMESTIC POLICY
 
 ## Example prompt using .NET
 
-.NET provides various tools to prompt and chat with different AI models. Use [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to connect to a wide variety of AI models and services, as well as other SDKs such as the official [OpenAI .NET library](https://www.nuget.org/packages/OpenAI-DotNet/). Semantic Kernel includes tools to create prompts with different roles and maintain chat history, as well as many other features.
+.NET provides various tools to prompt and chat with different AI models. Use [Semantic Kernel](/semantic-kernel/overview/) to connect to a wide variety of AI models and services, as well as other SDKs such as the official [OpenAI .NET library](https://www.nuget.org/packages/OpenAI-DotNet/). Semantic Kernel includes tools to create prompts with different roles and maintain chat history, as well as many other features.
 
 Consider the following code example:
 

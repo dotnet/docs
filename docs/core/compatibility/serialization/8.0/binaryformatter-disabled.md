@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: BinaryFormatter disabled across most project types"
-description: Learn about the .NET 8 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now throw an exception at run time.
+description: Learn about the .NET 8 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now throw an exception at runtime.
 ms.date: 05/01/2023
 ---
 # BinaryFormatter disabled across most project types
 
-The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods now throw a <xref:System.NotSupportedException> at run time across nearly all project types, including console applications.
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods now throw a <xref:System.NotSupportedException> at runtime across nearly all project types, including console applications.
 
 ## Previous behavior
 
@@ -13,7 +13,7 @@ In .NET 7, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormat
 
 ## New behavior
 
-Starting in .NET 8, the affected methods throw a <xref:System.NotSupportedException> at run time across all project types except Windows Forms and WPF. The APIs continue to remain obsolete (as error) across all project types, including Windows Forms and WPF.
+Starting in .NET 8, the affected methods throw a <xref:System.NotSupportedException> at runtime across all project types except Windows Forms and WPF. The APIs continue to remain obsolete (as error) across all project types, including Windows Forms and WPF.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This run-time change is the next stage of the [BinaryFormatter obsoletion plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md), in which <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> will eventually be removed from .NET.
+This runtime change is the next stage of the [BinaryFormatter obsoletion plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md), in which <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> will eventually be removed from .NET.
 
 ## Recommended action
 

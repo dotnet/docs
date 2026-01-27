@@ -106,6 +106,10 @@ If you have calls to `TestContext.Properties.Contains`, update them to `TestCont
 This enum only had a single member, `Infinite`, whose value was `int.MaxValue`.
 If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout(int.MaxValue)]`.
 
+### TestContext.ManagedType is now removed
+
+The property `TestContext.ManagedType` is removed. Use `TestContext.FullyQualifiedTestClassName` instead.
+
 ### Types not intended for public consumption are made internal or removed
 
 - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` is made internal.
@@ -191,7 +195,7 @@ The default severity of the following analyzers changed from Info to Warning:
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
 ### DisableAppDomain now defaults to true when running under Microsoft.Testing.Platform
 

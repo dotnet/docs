@@ -69,5 +69,4 @@ Note that although it is culture-sensitive, the <xref:System.Globalization.TextI
 
 ## See also
 
-- [Basic String Operations](basic-string-operations.md)
 - [Perform culture-insensitive string operations](../../core/extensions/performing-culture-insensitive-string-operations.md)

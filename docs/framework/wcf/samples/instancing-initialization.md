@@ -13,7 +13,7 @@ The [Initialization sample](https://github.com/dotnet/samples/tree/main/framewor
 
 ## Extensibility Points
 
-The first step in creating a Windows Communication Foundation (WCF) extension is to decide the extensibility point to use. In WCF, the term *EndpointDispatcher* refers to a run-time component responsible for converting incoming messages into method invocations on the user's service and for converting return values from that method to an outgoing message. A WCF service creates an EndpointDispatcher for each endpoint.
+The first step in creating a Windows Communication Foundation (WCF) extension is to decide the extensibility point to use. In WCF, the term *EndpointDispatcher* refers to a runtime component responsible for converting incoming messages into method invocations on the user's service and for converting return values from that method to an outgoing message. A WCF service creates an EndpointDispatcher for each endpoint.
 
 The EndpointDispatcher offers endpoint scope (for all messages received or sent by the service) extensibility using the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> class. This class allows you to customize various properties that control the behavior of the EndpointDispatcher. This sample focuses on the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property that points to the object that provides the instances of the service class.
 

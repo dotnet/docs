@@ -3,6 +3,7 @@ title: "Breaking change: SignalR: MessagePack Hub Protocol options type changed"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled SignalR: MessagePack Hub Protocol options type changed"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.custom: https://github.com/aspnet/Announcements/issues/404
 ---
 # SignalR: MessagePack Hub Protocol options type changed
 

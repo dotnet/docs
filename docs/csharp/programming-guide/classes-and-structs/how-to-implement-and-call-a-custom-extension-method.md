@@ -13,8 +13,7 @@ This article shows how to implement your own extension methods for any .NET type
 To define and call the extension method:
 
 1. Define a static [class](./static-classes-and-static-class-members.md) to contain the extension method. The class can't be nested inside another type and must be visible to client code. For more information about accessibility rules, see [Access Modifiers](./access-modifiers.md).
-1. Implement the extension method as a static method with at least the same visibility as the containing class.
-1. The first parameter of the method specifies the type that the method operates on; it must be preceded with the [this](../../language-reference/keywords/this.md) modifier.
+1. Use an [extension](../../language-reference/keywords/extension.md) block to declare extension members for a type (C# 14 and later), or implement the extension method as a static method with the first parameter preceded by the [this](../../language-reference/keywords/this.md) modifier (earlier versions).
 1. In the calling code, add a `using` directive to specify the [namespace](../../language-reference/keywords/namespace.md) that contains the extension method class.
 1. Call the methods as instance methods on the type.
 
@@ -23,6 +22,9 @@ To define and call the extension method:
 > The first parameter is not specified by calling code because it represents the type on which the operator is being applied, and the compiler already knows the type of your object. You only have to provide arguments for parameters 2 through `n`.
 
 The following example implements an extension method named `WordCount` in the `CustomExtensions.StringExtension` class. The method operates on the <xref:System.String> class, which is specified as the first method parameter. The `CustomExtensions` namespace is imported into the application namespace, and the method is called inside the `Main` method.
+
+> [!NOTE]
+> This example uses the C# 14 [`extension`](../../language-reference/keywords/extension.md) syntax for defining extension methods and requires .NET 10. For the syntax used in earlier versions of C#, see [Extension methods](./extension-methods.md).
 
 :::code language="csharp" source="./snippets/how-to-implement-and-call-a-custom-extension-method/Program.cs" :::
 

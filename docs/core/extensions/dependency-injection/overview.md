@@ -233,7 +233,7 @@ In the preceding example:
 
 You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>.
 
-:::code language="csharp" source="snippets/anykey/Program.cs" id="FallbackRegistration":::
+:::code language="csharp" source="snippets/anykey/Program.cs" id="AnyKeyQuery":::
 
 In the preceding example, calling `GetKeyedServices<T>(KeyedService.AnyKey)` returns only the `PremiumCache` instance since it's the only cache that was registered using a specific key.
 

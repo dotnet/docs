@@ -1,17 +1,60 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code.
-ms.date: 11/22/2024
+ms.date: 01/26/2026
+zone_pivot_groups: code-editor-set-one
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
 
+::: zone pivot="vscode"
+
 This tutorial shows how to create and run a .NET console application by using Visual Studio Code.
+
+In this tutorial, you:
+
+> [!div class="checklist"]
+>
+> * Launch Visual Studio Code with a C# development environment.
+> * Create a "HelloWorld" .NET console application.
+> * Enhance the app to prompt the user for their name and display it.
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+This tutorial shows how to create and run a .NET console application by using GitHub Codespaces.
+
+In this tutorial, you:
+
+> [!div class="checklist"]
+>
+> * Launch a GitHub Codespace with a C# development environment.
+> * Create a "HelloWorld" single-file app.
+> * Enhance the app to prompt the user for their name and display it.
+
+::: zone-end
 
 ## Prerequisites
 
+::: zone pivot="vscode"
+
 [!INCLUDE [Prerequisites](../../../includes/prerequisites-basic-winget.md)]
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+
+## Open Codespaces
+
+To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment.
+
+::: zone-end
+
 ## Create the app
+
+::: zone pivot="vscode"
 
 Create a .NET console app project named "HelloWorld".
 
@@ -43,11 +86,29 @@ Create a .NET console app project named "HelloWorld".
    }
    ```
 
-   The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array. The code in `Main` calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
+  The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array. The code in `Main` calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
 
    C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the `Program` class and the `Main` method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference. By setting **Do not use top-level statements to true** when you created the project, you prevented top-level statements from being used.
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+Create a .NET single-file app named "HelloWorld".
+
+1. When your codespace loads, create a new file in the *tutorials* folder named *HelloWorld.cs*.
+
+1. Open your new file.
+
+1. Type or copy the following code into *HelloWorld.cs*:
+
+  :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="HelloWorld":::
+
+::: zone-end
+
 ## Run the app
+
+::: zone pivot="vscode"
 
 To run your app, select **Run** > **Run without Debugging** in the upper menu, or use the keyboard shortcut (Ctrl+F5).
 
@@ -55,9 +116,26 @@ If asked to select a debugger, select **C#**, then select **C#: HelloWorld**
 
 The program displays "Hello, World!" and ends.
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+In the terminal window, make ure the tutorials folder is the current folder, and run your program::
+
+```dotnetcli
+cd tutorials
+dotnet HelloWorld.cs
+```
+
+The program displays "Hello, World!" and ends.
+
+::: zone-end
+
 ## Enhance the app
 
 Enhance the application to prompt the user for their name and display it along with the date and time.
+
+::: zone pivot="vscode"
 
 1. Open *Program.cs*.
 
@@ -78,15 +156,68 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Select **Run**>**Run without debugging**.
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Update *HelloWorld.cs* with the following code:
+
+    :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="MainMethod":::
+
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
+
+   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
+
+   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
+
+1. Run the updated app using the following command:
+
+   ```dotnetcli
+   dotnet HelloWorld.cs
+   ```
+
+::: zone-end
+
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
+::: zone pivot="vscode"
+
    :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+   You'll see output similar to the following:
+
+   ```output
+   What is your name? John
+   Hello, John on 01/26/2026 10:30:00 AM
+   Press any key to exit...
+   ```
+
+::: zone-end
 
 1. Press <kbd>Enter</kbd> to exit the program.
 
 ## Additional resources
 
+::: zone pivot="vscode"
+
 * [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+* [GitHub Codespaces documentation](https://docs.github.com/codespaces)
+* [Getting started with GitHub Codespaces](https://docs.github.com/codespaces/getting-started)
+
+## Cleanup resources
+
+GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
+
+::: zone-end
 
 ## Next steps
 

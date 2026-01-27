@@ -231,7 +231,7 @@ In the preceding example:
 
 #### Query for services
 
-You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>
+You can query for all services that were registered *using a specific key* (that is, not with `KeyedService.AnyKey`), by passing `KeyedService.AnyKey` to <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices``1(System.IServiceProvider,System.Object)>.
 
 :::code language="csharp" source="snippets/anykey/Program.cs" id="FallbackRegistration":::
 

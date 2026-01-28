@@ -35,7 +35,7 @@ items:
           - name: Overview
             href: 10.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/10/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/10/overview
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -219,7 +219,7 @@ items:
           - name: Overview
             href: 9.0.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/9/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/9/overview
           - name: Containers
             items:
               - name: Container images no longer install zlib
@@ -367,7 +367,7 @@ items:
           - name: Overview
             href: 8.0.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/8/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/8/overview
           - name: Containers
             items:
               - name: "'ca-certificates' removed from Alpine images"
@@ -579,7 +579,7 @@ items:
           - name: Overview
             href: 7.0.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/7/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/7/overview
           - name: Configuration
             items:
               - name: System.diagnostics entry in app.config
@@ -737,7 +737,7 @@ items:
           - name: Overview
             href: 6.0.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/6/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/6/overview
           - name: Containers
             items:
               - name: Default console logger formatting in container images
@@ -909,7 +909,7 @@ items:
           - name: Overview
             href: 5.0.md
           - name: ASP.NET Core
-            href: /aspnet/core/breaking-changes/5/overview?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /aspnet/core/breaking-changes/5/overview
           - name: Code analysis
             items:
               - name: CA1416 warning

@@ -235,7 +235,7 @@ You can query for all services that were registered *using a specific key* (that
 
 :::code language="csharp" source="snippets/anykey/Program.cs" id="AnyKeyQuery":::
 
-In the preceding example, calling `GetKeyedServices<T>(KeyedService.AnyKey)` returns only the `PremiumCache` instance since it's the only cache that was registered using a specific key.
+In the preceding example, calling `GetKeyedServices<T>(KeyedService.AnyKey)` returns only the `PremiumCache` instance since it's the only cache that was registered using a specific key in the [service registration](#service-registration) code example.
 
 > [!IMPORTANT]
 > Starting in .NET 10, calling `GetKeyedService()` (singular) with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException> because `AnyKey` shouldn't be used to resolve a single service. For more information, see [Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey](../../compatibility/extensions/10.0/getkeyedservice-anykey.md).

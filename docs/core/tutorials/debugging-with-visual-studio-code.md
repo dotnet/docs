@@ -1,15 +1,36 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 10/23/2025
+ms.date: 01/27/2026
+zone_pivot_groups: code-editor-set-one
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
+::: zone pivot="vscode"
+
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+This tutorial introduces the debugging tools available in GitHub Codespaces for working with .NET apps.
+
+::: zone-end
 
 ## Prerequisites
 
+::: zone pivot="vscode"
+
 This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+
+::: zone-end
 
 ## Use Debug build configuration
 
@@ -17,17 +38,39 @@ This tutorial works with the console app that you create in [Create a .NET conso
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
+::: zone pivot="vscode"
+
 By default, Visual Studio Code launch settings use the Debug build configuration, so you don't need to change it before debugging.
 
 1. Start Visual Studio Code.
 
 1. Open the folder of the project that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+By default, GitHub Codespaces uses the Debug build configuration, so you don't need to change it before debugging.
+
+1. Open your GitHub Codespace that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+
+::: zone-end
+
 ## Set a breakpoint
 
 A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is run.
 
+::: zone pivot="vscode"
+
 1. Open the *Program.cs* file.
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Open the *HelloWorld.cs* file.
+
+::: zone-end
 
 1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
 
@@ -127,7 +170,17 @@ The program displays the string that the user enters. What happens if the user d
 
 Visual Studio Code also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
+::: zone pivot="vscode"
+
 1. Set a breakpoint on the opening curly brace of the `Main` method.
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Set a breakpoint on the first line of code in *HelloWorld.cs* that displays the "What is your name?" prompt.
+
+::: zone-end
 
 1. Press <kbd>F5</kbd> to start debugging.
 
@@ -177,15 +230,40 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 Once you've tested the Debug version of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in multithreaded applications.
 
+::: zone pivot="vscode"
+
 To build and test the Release version of your console application, open the **Terminal** and run the following command:
 
 ```dotnetcli
 dotnet run --configuration Release
 ```
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+To build and test the Release version of your console application, run the following command in the terminal:
+
+```dotnetcli
+dotnet run --configuration Release HelloWorld.cs
+```
+
+::: zone-end
+
 ## Additional resources
 
+::: zone pivot="vscode"
+
 - [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
+- [GitHub Codespaces documentation](https://docs.github.com/codespaces)
+
+::: zone-end
 
 ## Next steps
 

@@ -121,43 +121,32 @@ Structured logging stores may use the event name when it's supplied with the eve
 
 ## Define logger message scope with source generation
 
-You can define [log scopes](logging.md#log-scopes) using source-generated logging by creating instance methods that return `IDisposable`. The scope wraps a series of log messages with additional context.
+You can define [log scopes](logging.md#log-scopes) to wrap a series of log messages with additional context. With source-generated logging, you combine the `LoggerMessageAttribute` methods with the standard `ILogger.BeginScope` method.
 
 Enable `IncludeScopes` in the console logger section of *appsettings.json*:
 
 :::code language="json" source="snippets/logging/worker-service-options/appsettings.json" highlight="3-5":::
 
-Define a partial logging method that includes scope parameters:
+Create source-generated logging methods and wrap them in a scope using `BeginScope`:
 
 ```csharp
-public partial class WorkerLogger
+public static partial class Log
 {
-    private readonly ILogger _logger;
-
-    public WorkerLogger(ILogger logger)
-    {
-        _logger = logger;
-    }
-
     [LoggerMessage(
         EventId = 1,
         Level = LogLevel.Information,
         Message = "Processing priority item: {Item}")]
-    public partial void PriorityItemProcessed(WorkItem item);
-
-    public IDisposable? ProcessingWorkScope(DateTime startTime)
-    {
-        return _logger.BeginScope("Processing scope, started at: {DateTime}", startTime);
-    }
+    public static partial void PriorityItemProcessed(
+        ILogger logger, WorkItem item);
 }
 ```
 
-The scope wraps the logging calls in a [using](../../csharp/language-reference/statements/using.md) block:
+Use the logging method within a scope in your application code:
 
 ```csharp
-using (logger.ProcessingWorkScope(DateTime.Now))
+using (_logger.BeginScope("Processing scope, started at: {DateTime}", DateTime.Now))
 {
-    logger.PriorityItemProcessed(workItem);
+    Log.PriorityItemProcessed(_logger, workItem);
 }
 ```
 
@@ -173,12 +162,12 @@ info: WorkerServiceOptions.Example.Worker[1]
 
 Using source-generated logging with C# provides several key benefits:
 
-- Allows the logging structure to be preserved and enables the exact format syntax required by [Message Templates](https://messagetemplates.org).
-- Allows supplying alternative names for the template placeholders and using format specifiers.
-- Allows the passing of all original data as-is, without any complication around how it's stored before something is done with it (other than creating a `string`).
-- Provides logging-specific diagnostics and emits warnings for duplicate event IDs.
+- **Preserves structured logging format:** Maintains structured log data and supports Message Templates syntax with compile-time validation.
+- **Supports template placeholders and format specifiers:** Allows alternative names for template placeholders and format specifiers (such as `:E` for scientific notation).
+- **Reduces runtime overhead:** Passes data directly without additional allocations or conversions beyond string creation.
+- **Provides compile-time diagnostics:** Emits warnings for issues like duplicate event IDs at compile time rather than runtime.
 - **Shorter and simpler syntax:** Declarative attribute usage rather than coding boilerplate.
-- **Guided developer experience:** The generator gives warnings to help developers do the right thing.
+- **Guided developer experience:** The generator provides warnings to help developers follow best practices.
 - **Support for an arbitrary number of logging parameters:** No limits on the number of parameters.
 - **Support for dynamic log level:** The log level can be passed as a parameter.
 

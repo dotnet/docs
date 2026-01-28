@@ -120,7 +120,7 @@ The following warnings are generated when source generators or interceptors are 
 - [**CS8784**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
 - [**CS8785**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
 - [**CS9057**](#analyzer-compatibility): *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
-- [**CS9067**](#analyzer-compatibility): *Analyzer reference specified multiple times*
+- [**CS9067**](#analyzer-compatibility): *Analyzer reference specified multiple times.*
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
 - [**CS9159**](#signature-mismatch): *Nullability of reference types in type of parameter doesn't match interceptable method.*
@@ -225,7 +225,7 @@ To correct interceptor declaration errors, follow these rules for valid intercep
 The following warnings indicate issues with analyzer or source generator assemblies:
 
 - **CS9057**: *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
-- **CS9067**: *Analyzer reference specified multiple times*
+- **CS9067**: *Analyzer reference specified multiple times.*
 
 These warnings occur when there are compatibility issues with analyzer assemblies:
 

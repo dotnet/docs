@@ -120,7 +120,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
 - [**CS9025**](#checked-operators): *Operator requires a matching non-checked version to also be declared.*
-- [**CS9027**](#checked-operators): *Unexpected keyword 'unchecked'*
+- [**CS9027**](#checked-operators): *Unexpected keyword 'unchecked'.*
 - [**CS9308**](#operator-declaration-requirements): *User-defined operator must be declared public.*
 - [**CS9310**](#operator-signature-requirements): *The return type for this operator must be void.*
 - [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*

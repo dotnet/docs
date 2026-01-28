@@ -29,6 +29,7 @@ f1_keywords:
  - "CS1716"
  - "CS1919"
  - "CS8812"
+ - "CS9049"
  - "CS9123"
 helpviewer_keywords:
  - "CS0193"
@@ -58,8 +59,9 @@ helpviewer_keywords:
  - "CS4004"
  - "CS1919"
  - "CS8812"
+ - "CS9049"
  - "CS9123"
-ms.date: 10/21/2025
+ms.date: 01/27/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in unsafe code constructs
@@ -96,6 +98,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1919**](#unsafe-context-restrictions): *Unsafe type 'type name' cannot be used in object creation.*
 - [**CS4004**](#unsafe-context-restrictions): *Cannot `await` in an unsafe context*
 - [**CS8812**](#function-pointers): *Cannot convert `&Method` group to non-function pointer type.*
+- [**CS9049**](#fixed-size-buffers): *A fixed field must not be a ref field.*
 - [**CS9123**](#unsafe-context-restrictions): *The '`&`' operator should not be used on parameters or local variables in async methods.*
 
 ## Pointer operations and dereferencing
@@ -106,7 +109,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 To use pointer operations correctly, follow the rules for dereferencing, indexing, and arithmetic operations. For more information, see [Pointer types](../unsafe-code.md#pointer-types) and [Function pointers](../unsafe-code.md#function-pointers).
 
-- Apply the `*` or `->` operator only to data pointers (**CS0193**). Don't use these operators with nonpointer types or function pointers. Function pointers can't be dereferenced in C#, unlike in C/C++.
+- Apply the `*` or `->` operator only to data pointers (**CS0193**). Don't use these operators with nonpointer types or function pointers. Unlike in C/C++, you can't dereference function pointers in C#.
 - Index pointers with only one value (**CS0196**). Multidimensional indexing isn't supported on pointers.
 - Avoid operations that are undefined on void pointers (**CS0242**). For example, don't increment a void pointer because the compiler doesn't know the size of the data being pointed to.
 
@@ -159,12 +162,12 @@ These errors occur when you use unsafe code constructs without proper unsafe con
 
 To use unsafe code correctly:
 
-- Mark methods, types, or code blocks that use pointers or fixed-size buffers with the `unsafe` keyword (**CS0214**).
+- Mark methods, types, or code blocks that use pointers or fixed-size buffers by using the `unsafe` keyword (**CS0214**).
 - Enable the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option in your project settings when using the `unsafe` keyword (**CS0227**).
 - Don't use the [`is`](../operators/type-testing-and-cast.md#the-is-operator) or [`as`](../operators/type-testing-and-cast.md#the-as-operator) operators with pointer types (**CS0244**). These type-testing operators aren't valid for pointers.
 - Don't use the `new` operator to create pointer type instances (**CS1919**). To create objects in unmanaged memory, use interop to call native methods that return pointers.
 - Keep unsafe code separate from async code (**CS4004**). Create separate methods for unsafe operations and call them from async methods.
-- Don't use the address-of operator (`&`) on parameters or local variables in async methods (**CS9123**). The variable may not exist when the async operation completes.
+- Don't use the address-of operator (`&`) on parameters or local variables in async methods (**CS9123**). The variable might not exist when the async operation completes.
 
 ## Fixed-size buffers
 
@@ -175,6 +178,7 @@ To use unsafe code correctly:
 - **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement*
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*
 - **CS1716**: *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead*
+- **CS9049**: *A fixed field must not be a ref field*
 
 These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../unsafe-code.md#fixed-size-buffers).
 
@@ -186,9 +190,10 @@ To declare and use fixed-size buffers correctly:
 - Use a `fixed` statement to pin the containing struct before accessing the buffer (**CS1666**).
 - Access fixed-size buffers only through locals or fields, not through intermediate expressions (**CS1708**).
 - Use the `fixed` field modifier instead of the `System.Runtime.CompilerServices.FixedBuffer` attribute (**CS1716**).
+- Don't declare fixed-size buffers as `ref` fields (**CS9049**). Fixed-size buffers must be value fields.
 
 ## Function pointers
 
 - **CS8812**: *Cannot convert `&Method` group to non-function pointer type*
 
-To obtain a function pointer, use the address-of operator with an explicit function pointer type cast. Don't use the [address-of operator `&`](../operators/pointer-related-operators.md#address-of-operator-) to assign method groups to `void*` or other non-function pointer types. For more information, see [Function pointers](../unsafe-code.md#function-pointers).
+To get a function pointer, use the address-of operator with an explicit function pointer type cast. Don't use the [address-of operator `&`](../operators/pointer-related-operators.md#address-of-operator-) to assign method groups to `void*` or other non-function pointer types. For more information, see [Function pointers](../unsafe-code.md#function-pointers).

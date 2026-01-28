@@ -44,11 +44,13 @@ internal class LlamaExample
 
     private static void AdvancedOptions()
     {
-        // For demonstration purposes, we'll use a mock tokenizer.
-        // In real scenarios, you would initialize this properly.
-        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
-
         // <LlamaAdvanced>
+        // Note: This example requires a Llama tokenizer instance.
+        // In a real application, you would create it from a model file as shown in BasicUsageAsync.
+        // For demonstration purposes, we show the syntax using any tokenizer that supports these options.
+        
+        // Example with any tokenizer that supports advanced encoding options:
+        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
         ReadOnlySpan<char> textSpan = "Hello World".AsSpan();
 
         // Bypass normalization during encoding.

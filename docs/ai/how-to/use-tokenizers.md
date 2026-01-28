@@ -15,6 +15,9 @@ This article shows you how to use the library's key features and work with diffe
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 
+> [!NOTE]
+> The Microsoft.ML.Tokenizers library also supports .NET Standard 2.0, making it compatible with .NET Framework 4.6.1 and later.
+
 ## Install the package
 
 Install the Microsoft.ML.Tokenizers NuGet package:

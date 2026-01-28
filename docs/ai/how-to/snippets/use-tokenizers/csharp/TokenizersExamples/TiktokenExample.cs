@@ -25,7 +25,7 @@ internal class TiktokenExample
         // Encode text to token IDs.
         IReadOnlyList<int> ids = tokenizer.EncodeToIds(source);
         Console.WriteLine($"Token IDs: {string.Join(", ", ids)}");
-        // Output: Token IDs: 1199, 4037, 2065, 374, 279, 1920, 315, 45473, 264, 925, 1139, 264, 1160, 315, 11460, 13
+        // Output: Token IDs: 1279, 6602, 2860, 382, 290, 2273, 328, 87130, 261, 1621, 1511, 261, 1562, 328, 20290, 13
 
         // Decode token IDs back to text.
         string? decoded = tokenizer.Decode(ids);
@@ -43,19 +43,15 @@ internal class TiktokenExample
 
         // Get the last 5 tokens from the text.
         var trimIndex = tokenizer.GetIndexByTokenCountFromEnd(source, 5, out string? processedText, out _);
-        if (processedText is not null)
-        {
-            Console.WriteLine($"Last 5 tokens: {processedText.Substring(trimIndex)}");
-            // Output: Last 5 tokens:  a list of tokens.
-        }
+        processedText ??= source;
+        Console.WriteLine($"Last 5 tokens: {processedText.Substring(trimIndex)}");
+        // Output: Last 5 tokens:  a list of tokens.
 
         // Get the first 5 tokens from the text.
         trimIndex = tokenizer.GetIndexByTokenCount(source, 5, out processedText, out _);
-        if (processedText is not null)
-        {
-            Console.WriteLine($"First 5 tokens: {processedText.Substring(0, trimIndex)}");
-            // Output: First 5 tokens: Text tokenization is the
-        }
+        processedText ??= source;
+        Console.WriteLine($"First 5 tokens: {processedText.Substring(0, trimIndex)}");
+        // Output: First 5 tokens: Text tokenization is the
         // </TiktokenTrim>
     }
 }

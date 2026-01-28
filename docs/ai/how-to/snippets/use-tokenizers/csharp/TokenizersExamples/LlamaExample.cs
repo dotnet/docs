@@ -9,11 +9,10 @@ internal class LlamaExample
 {
     public static async Task RunAsync()
     {
-        await BasicUsageAsync();
-        AdvancedOptions();
+        await BasicUsageAndAdvancedOptionsAsync();
     }
 
-    private static async Task BasicUsageAsync()
+    private static async Task BasicUsageAndAdvancedOptionsAsync()
     {
         // <LlamaBasic>
         // Open a stream to the remote Llama tokenizer model data file.
@@ -40,27 +39,18 @@ internal class LlamaExample
         Console.WriteLine($"Decoded: {decoded}");
         // Output: Decoded: Hello, world!
         // </LlamaBasic>
-    }
 
-    private static void AdvancedOptions()
-    {
         // <LlamaAdvanced>
-        // Note: This example requires a Llama tokenizer instance.
-        // In a real application, you would create it from a model file as shown in BasicUsageAsync.
-        // For demonstration purposes, we show the syntax using any tokenizer that supports these options.
-        
-        // Example with any tokenizer that supports advanced encoding options:
-        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
         ReadOnlySpan<char> textSpan = "Hello World".AsSpan();
 
         // Bypass normalization during encoding.
-        IReadOnlyList<int> ids = tokenizer.EncodeToIds(textSpan, considerNormalization: false);
+        ids = llamaTokenizer.EncodeToIds(textSpan, considerNormalization: false);
 
         // Bypass pretokenization during encoding.
-        ids = tokenizer.EncodeToIds(textSpan, considerPreTokenization: false);
+        ids = llamaTokenizer.EncodeToIds(textSpan, considerPreTokenization: false);
 
         // Bypass both normalization and pretokenization.
-        ids = tokenizer.EncodeToIds(textSpan, considerNormalization: false, considerPreTokenization: false);
+        ids = llamaTokenizer.EncodeToIds(textSpan, considerNormalization: false, considerPreTokenization: false);
         // </LlamaAdvanced>
     }
 }

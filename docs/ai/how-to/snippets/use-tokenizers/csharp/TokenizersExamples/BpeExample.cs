@@ -49,7 +49,7 @@ internal class BpeExample
         string? decoded = bpeTokenizer.Decode(ids);
         Console.WriteLine($"Decoded: {decoded}");
         
-        // Note: BpeTokenizer may not always decode IDs to the exact original text
+        // Note: BpeTokenizer might not always decode IDs to the exact original text
         // as it can remove spaces during tokenization depending on the model configuration.
         // </BpeBasic>
     }

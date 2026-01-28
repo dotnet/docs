@@ -16,4 +16,11 @@ catch (Exception ex)
 }
 
 Console.WriteLine("\n=== BPE Examples ===");
-BpeExample.Run();
+try
+{
+    await BpeExample.RunAsync();
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Note: BPE example requires network access to download tokenizer files: {ex.Message}");
+}

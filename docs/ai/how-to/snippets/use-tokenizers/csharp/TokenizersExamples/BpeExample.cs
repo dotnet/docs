@@ -1,41 +1,44 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 using Microsoft.ML.Tokenizers;
 
 internal class BpeExample
 {
-    public static void Run()
+    public static async Task RunAsync()
     {
-        BasicUsage();
+        await BasicUsageAsync();
     }
 
-    private static void BasicUsage()
+    private static async Task BasicUsageAsync()
     {
         // <BpeBasic>
         // BPE (Byte Pair Encoding) tokenizer can be created from vocabulary and merges files.
-        // This is useful when working with custom trained models.
-        
-        // Example: To create a BPE tokenizer for GPT-2 or similar models:
-        // string vocabFile = "path/to/vocab.json";
-        // string mergesFile = "path/to/merges.txt";
-        // Tokenizer bpeTokenizer = BpeTokenizer.Create(vocabFile, mergesFile);
-        
-        // For this example, we'll demonstrate with Tiktoken which uses BPE internally.
-        // Tiktoken is a specific implementation of BPE tokenization.
-        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
+        // Download the GPT-2 tokenizer files from Hugging Face.
+        using HttpClient httpClient = new();
+        const string vocabUrl = @"https://huggingface.co/openai-community/gpt2/raw/main/vocab.json";
+        const string mergesUrl = @"https://huggingface.co/openai-community/gpt2/raw/main/merges.txt";
+
+        using Stream vocabStream = await httpClient.GetStreamAsync(vocabUrl);
+        using Stream mergesStream = await httpClient.GetStreamAsync(mergesUrl);
+
+        // Create the BPE tokenizer using the vocabulary and merges streams.
+        Tokenizer bpeTokenizer = BpeTokenizer.Create(vocabStream, mergesStream);
 
         string text = "Hello, how are you doing today?";
 
         // Encode text to token IDs.
-        IReadOnlyList<int> ids = tokenizer.EncodeToIds(text);
+        IReadOnlyList<int> ids = bpeTokenizer.EncodeToIds(text);
         Console.WriteLine($"Token IDs: {string.Join(", ", ids)}");
 
         // Count tokens.
-        int tokenCount = tokenizer.CountTokens(text);
+        int tokenCount = bpeTokenizer.CountTokens(text);
         Console.WriteLine($"Token count: {tokenCount}");
 
         // Get detailed token information.
-        IReadOnlyList<EncodedToken> tokens = tokenizer.EncodeToTokens(text, out string? normalizedString);
+        IReadOnlyList<EncodedToken> tokens = bpeTokenizer.EncodeToTokens(text, out string? normalizedString);
         Console.WriteLine("Tokens:");
         foreach (EncodedToken token in tokens)
         {
@@ -43,7 +46,7 @@ internal class BpeExample
         }
 
         // Decode tokens back to text.
-        string? decoded = tokenizer.Decode(ids);
+        string? decoded = bpeTokenizer.Decode(ids);
         Console.WriteLine($"Decoded: {decoded}");
         
         // Note: BpeTokenizer may not always decode IDs to the exact original text

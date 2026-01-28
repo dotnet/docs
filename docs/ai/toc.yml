@@ -90,6 +90,10 @@ items:
       href: quickstarts/build-mcp-server.md
     - name: Publish to the Official MCP Registry
       href: quickstarts/publish-mcp-registry.md
+- name: Tokenization
+  items:
+    - name: Use Microsoft.ML.Tokenizers
+      href: how-to/use-tokenizers.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

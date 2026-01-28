@@ -12,15 +12,15 @@ body:
     id: version
     attributes:
       label: .NET 11 Preview
-      description: Which .NET 11 preview version contains this feature?
+      description: Which .NET 11 Preview version contains this feature?
       options:
-        - ".NET 11 preview 1"
-        - ".NET 11 preview 2"
-        - ".NET 11 preview 3"
-        - ".NET 11 preview 4"
-        - ".NET 11 preview 5"
-        - ".NET 11 preview 6"
-        - ".NET 11 preview 7"
+        - ".NET 11 Preview 1"
+        - ".NET 11 Preview 2"
+        - ".NET 11 Preview 3"
+        - ".NET 11 Preview 4"
+        - ".NET 11 Preview 5"
+        - ".NET 11 Preview 6"
+        - ".NET 11 Preview 7"
         - "other - specify below"
   - type: input
     id: Speclet

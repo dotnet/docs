@@ -59,7 +59,7 @@ The Llama tokenizer is designed for the Llama family of models. It requires a to
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/LlamaExample.cs" id="LlamaBasic":::
 
-The tokenizer supports advanced encoding options, such as controlling normalization and pretokenization:
+All tokenizers support advanced encoding options, such as controlling normalization and pretokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/LlamaExample.cs" id="LlamaAdvanced":::
 

@@ -1,21 +1,21 @@
 ---
 description: "Learn more about: Asynchronous programming with Async and Await (Visual Basic)"
 title: "Asynchronous Programming with Async and Await"
-ms.date: 08/29/2025
+ms.date: 01/27/2026
 ai-usage: ai-generated
 ---
 # Asynchronous programming with Async and Await (Visual Basic)
 
-The [Task asynchronous programming (TAP) model](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) provides a layer of abstraction over typical asynchronous coding. In this model, you write code as a sequence of statements, the same as usual. The difference is you can read your task-based code as the compiler processes each statement and before it starts processing the next statement. To accomplish this model, the compiler performs many transformations to complete each task. Some statements can initiate work and return a <xref:System.Threading.Tasks.Task> object that represents the ongoing work and the compiler must resolve these transformations. The goal of task asynchronous programming is to enable code that reads like a sequence of statements, but executes in a more complicated order. Execution is based on external resource allocation and when tasks complete.
+The [Task asynchronous programming (TAP) model](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) provides a layer of abstraction over typical asynchronous coding. In this model, you write code as a sequence of statements, the same as usual. The difference is that you can read your task-based code as the compiler processes each statement and before it starts processing the next statement. To accomplish this model, the compiler performs many transformations to complete each task. Some statements can initiate work and return a <xref:System.Threading.Tasks.Task> object that represents the ongoing work. The compiler must resolve these transformations. The goal of task asynchronous programming is to enable code that reads like a sequence of statements but executes in a more complicated order. Execution is based on external resource allocation and when tasks complete.
 
 The task asynchronous programming model is analogous to how people give instructions for processes that include asynchronous tasks. This article uses an example with instructions for making breakfast to show how the `Async` and `Await` keywords make it easier to reason about code that includes a series of asynchronous instructions. The instructions for making a breakfast might be provided as a list:
 
 1. Pour a cup of coffee.
-2. Heat a pan, then fry two eggs.
-3. Cook three hash brown patties.
-4. Toast two pieces of bread.
-5. Spread butter and jam on the toast.
-6. Pour a glass of orange juice.
+1. Heat a pan, then fry two eggs.
+1. Cook three hash brown patties.
+1. Toast two pieces of bread.
+1. Spread butter and jam on the toast.
+1. Pour a glass of orange juice.
 
 If you have experience with cooking, you might complete these instructions **asynchronously**. You start warming the pan for eggs, then start cooking the hash browns. You put the bread in the toaster, then start cooking the eggs. At each step of the process, you start a task, and then transition to other tasks that are ready for your attention.
 
@@ -29,6 +29,10 @@ Consider the same list of synchronous instructions written as Visual Basic code 
 
 :::code language="vb" source="snippets/breakfast/Program.vb" id="SynchronousBreakfast":::
 
+If you try the preceding code yourself, you need to define the following additional types:
+
+:::code language="vb" source="snippets/breakfast/Program.vb" id="HelperClasses":::
+
 If you interpret these instructions as a computer would, breakfast takes about 30 minutes to prepare. The duration is the sum of the individual task times. The computer blocks for each statement until all work completes, and then it proceeds to the next task statement. This approach can take significant time. In the breakfast example, the computer method creates an unsatisfying breakfast. Later tasks in the synchronous list, like toasting the bread, don't start until earlier tasks complete. Some food gets cold before the breakfast is ready to serve.
 
 If you want the computer to execute instructions asynchronously, you must write asynchronous code. When you write client programs, you want the UI to be responsive to user input. Your application shouldn't freeze all interaction while downloading data from the web. When you write server programs, you don't want to block threads that might be serving other requests. Using synchronous code when asynchronous alternatives exist hurts your ability to scale out less expensively. You pay for blocked threads.
@@ -37,7 +41,7 @@ Successful modern apps require asynchronous code. Without language support, writ
 
 ## Don't block, await instead
 
-The previous code highlights an unfortunate programming practice: Writing synchronous code to perform asynchronous operations. The code blocks the current thread from doing any other work. The code doesn't interrupt the thread while there are running tasks. The outcome of this model is similar to staring at the toaster after you put in the bread. You ignore any interruptions and don't start other tasks until the bread pops up. You don't take the butter and jam out of the fridge. You might miss seeing a fire starting on the stove. You want to both toast the bread and handle other concerns at the same time. The same is true with your code.
+The previous code highlights an unfortunate programming practice: writing synchronous code to perform asynchronous operations. The code blocks the current thread from doing any other work. The code doesn't interrupt the thread while there are running tasks. The outcome of this model is similar to staring at the toaster after you put in the bread. You ignore any interruptions and don't start other tasks until the bread pops up. You don't take the butter and jam out of the fridge. You might miss seeing a fire starting on the stove. You want to both toast the bread and handle other concerns at the same time. The same is true with your code.
 
 You can start by updating the code so the thread doesn't block while tasks are running. The `Await` keyword provides a nonblocking way to start a task, then continue execution when the task completes. A simple asynchronous version of the breakfast code looks like the following snippet:
 
@@ -48,17 +52,17 @@ The code updates the original method bodies of `FryEggs`, `FryHashBrowns`, and `
 > [!NOTE]
 > The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the final version of the code later in this article.
 
-Let's apply the breakfast example to the updated code. The thread doesn't block while the eggs or hash browns are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
+Let's apply the breakfast example to the updated code. The thread isn't blocked while the eggs or hash browns are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
 
 In the updated code, the thread working on the breakfast isn't blocked while waiting for any started task that's unfinished. For some applications, this change is all you need. You can enable your app to support user interaction while data downloads from the web. In other scenarios, you might want to start other tasks while waiting for the previous task to complete.
 
 ## Start tasks concurrently
 
-For most operations, you want to start several independent tasks immediately. As each task completes, you initiate other work that's ready to start. When you apply this methodology to the breakfast example, you can prepare breakfast more quickly. You also get everything ready close to the same time, so you can enjoy a hot breakfast.
+For most operations, you can start several independent tasks immediately. As each task completes, you can initiate other work that's ready to start. When you apply this methodology to the breakfast example, you can prepare breakfast more quickly. You also get everything ready close to the same time, so you can enjoy a hot breakfast.
 
-The <xref:System.Threading.Tasks.Task> class and related types are classes you can use to apply this style of reasoning to tasks that are in progress. This approach enables you to write code that more closely resembles the way you create breakfast in real life. You start cooking the eggs, hash browns, and toast at the same time. As each food item requires action, you turn your attention to that task, take care of the action, and then wait for something else that requires your attention.
+Use the <xref:System.Threading.Tasks.Task> class and related types to apply this style of reasoning to tasks that are in progress. This approach enables you to write code that more closely resembles the way you create breakfast in real life. You start cooking the eggs, hash browns, and toast at the same time. As each food item requires action, you turn your attention to that task, take care of the action, and then wait for something else that requires your attention.
 
-In your code, you start a task and hold on to the <xref:System.Threading.Tasks.Task> object that represents the work. You use the `Await` method on the task to delay acting on the work until the result is ready.
+In your code, start a task and hold on to the <xref:System.Threading.Tasks.Task> object that represents the work. Use the `Await` expression on the task to delay acting on the work until the result is ready.
 
 Apply these changes to the breakfast code. The first step is to store the tasks for operations when they start, rather than using the `Await` expression:
 
@@ -223,7 +227,7 @@ Unhandled exception. System.InvalidOperationException: The toaster is on fire
 
 Notice that quite a few tasks finish between the time when the toaster catches fire and the system observes the exception. When a task that runs asynchronously throws an exception, that task is **faulted**. The <xref:System.Threading.Tasks.Task> object holds the exception that was thrown in the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property. Faulted tasks *throw* the exception when the `Await` expression is applied to the task.
 
-There are two important mechanisms to understand about this process:
+Two important mechanisms explain this process:
 
 - How an exception is stored in a faulted task.
 - How an exception is unpackaged and rethrown when code waits (`Await`) on a faulted task.
@@ -242,7 +246,7 @@ Before you continue to the next section, comment out the following two statement
 ' Throw New InvalidOperationException("The toaster is on fire")
 ```
 
-## Apply await expressions to tasks efficiently
+## Efficiently apply await expressions to tasks
 
 You can improve the series of `Await` expressions at the end of the previous code by using methods of the <xref:System.Threading.Tasks.Task> class. One API is the <xref:System.Threading.Tasks.Task.WhenAll%2A> method, which returns a <xref:System.Threading.Tasks.Task> object that completes when all the tasks in its argument list are complete. The following code demonstrates this method:
 
@@ -258,7 +262,7 @@ Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny%2A> metho
 
 :::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
 
-Near the end of the code snippet, notice the `Await finishedTask` expression. This line is important because `Task.WhenAny` returns a `Task(Of Task)` - a wrapper task that contains the completed task. When you `Await Task.WhenAny`, you're waiting for the wrapper task to complete, and the result is the actual task that finished first. However, to retrieve that task's result or ensure any exceptions are properly thrown, you must `Await` the completed task itself (stored in `finishedTask`). Even though you know the task has finished, awaiting it again allows you to access its result or handle any exceptions that might have caused it to fault.
+Near the end of the code snippet, notice the `Await finishedTask` expression. This line is important because `Task.WhenAny` returns a `Task(Of Task)` - a wrapper task that contains the completed task. When you `Await Task.WhenAny`, you're waiting for the wrapper task to complete, and the result is the actual task that finished first. However, to retrieve that task's result or ensure any exceptions are properly thrown, you must `Await` the completed task itself (stored in `finishedTask`). Even though you know the task is finished, awaiting it again allows you to access its result or handle any exceptions that might have caused it to fault.
 
 ### Review final code
 
@@ -276,7 +280,7 @@ The final code is asynchronous. It more accurately reflects how a person might c
 
 The `Async` and `Await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A> directly. While `Async`/`Await` and `ContinueWith` have similar semantics for handling asynchronous operations, the compiler doesn't necessarily translate `Await` expressions directly into `ContinueWith` method calls. Instead, the compiler generates optimized state machine code that provides the same logical behavior. This transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
 
-Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented with `ContinueWith` compared to `Async`/`Await`:
+Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented by using `ContinueWith` compared to `Async`/`Await`:
 
 ### Using ContinueWith
 
@@ -351,7 +355,7 @@ The `Async`/`Await` approach offers several advantages:
 - **Debugging**: The call stack and debugger experience is much better with `Async`/`Await`.
 - **Performance**: The compiler optimizations for `Async`/`Await` are more sophisticated than manual `ContinueWith` chains.
 
-The benefit becomes even more apparent as the number of chained operations increases. While a single continuation might be manageable with `ContinueWith`, sequences of 3-4 or more asynchronous operations quickly become difficult to read and maintain. This pattern, known as "monadic do-notation" in functional programming, allows you to compose multiple asynchronous operations in a sequential, readable manner.
+The benefit becomes even more apparent as the number of chained operations increases. While a single continuation might be manageable by using `ContinueWith`, sequences of three or four or more asynchronous operations quickly become difficult to read and maintain. This pattern, known as "monadic do-notation" in functional programming, allows you to compose multiple asynchronous operations in a sequential, readable manner.
 
 ## See also
 

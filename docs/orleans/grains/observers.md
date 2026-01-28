@@ -2,7 +2,7 @@
 title: Observers
 description: Learn about observers in .NET Orleans.
 ms.date: 01/21/2026
-ms.topic: article
+ms.topic: concept-article
 zone_pivot_groups: orleans-version
 ---
 

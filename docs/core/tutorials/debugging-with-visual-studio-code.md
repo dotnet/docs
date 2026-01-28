@@ -64,21 +64,27 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Open the *Program.cs* file.
 
-::: zone-end
-
-::: zone pivot="codespaces"
-
-1. Open the *HelloWorld.cs* file.
-
-::: zone-end
-
 1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
 
    Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Open the *HelloWorld.cs* file.
+
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-set.png" alt-text="Breakpoint set":::
+
+::: zone-end
+
 ## Start debugging
+
+::: zone pivot="vscode"
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
@@ -100,6 +106,26 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit-net6.png" alt-text="Breakpoint hit, showing Locals":::
 
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Open the Debug view by selecting the Debugging icon on the left side menu.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
+
+1. Select **Run and Debug**. If asked, select **C#** as the debugger and then select **C#: Debug Active File** as the Launch Configuration.
+
+1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
+
+1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
+
+   Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
+
+::: zone-end
+
 ## Use the Debug Console
 
 The **Debug Console** window lets you interact with the application you're debugging. You can change the value of variables to see how it affects your program.
@@ -120,7 +146,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
    The values displayed in the console window correspond to the changes you made in the **Debug Console**.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/changed-variable-values.png" alt-text="Terminal showing the entered values":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-changed-variable-values.png" alt-text="Terminal showing the entered values":::
 
 1. Press <kbd>Enter</kbd> to exit the application and stop debugging.
 
@@ -170,17 +196,7 @@ The program displays the string that the user enters. What happens if the user d
 
 Visual Studio Code also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
-::: zone pivot="vscode"
-
-1. Set a breakpoint on the opening curly brace of the `Main` method.
-
-::: zone-end
-
-::: zone pivot="codespaces"
-
-1. Set a breakpoint on the first line of code in *HelloWorld.cs* that displays the "What is your name?" prompt.
-
-::: zone-end
+1. Set a breakpoint on the line of code that displays the "What is your name?" prompt.
 
 1. Press <kbd>F5</kbd> to start debugging.
 
@@ -188,37 +204,35 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
    At this point, the **Variables** window shows that the `args` array is empty, and `name` and `currentDate` have default values.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
+1. Select **Step Into** from the Debug toolbar or press <kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Step-Into button":::
 
    Visual Studio Code highlights the next line.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
+1. Visual Studio Code runs the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
 
-   Visual Studio Code runs the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
-
-   Visual Studio highlights the `name` variable assignment. The **Variables** window shows that `name` is still `null`.
+   Visual Studio Code highlights the `name` variable assignment. The **Variables** window shows that `name` is still `null`.
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
    The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code highlights the `currentDate` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    The **Variables** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property.
 
-1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The console window displays the formatted string.
 
-1. Select **Run** > **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
+1. Select **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
 

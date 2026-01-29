@@ -63,12 +63,10 @@ The .NET CLI is used to publish the app.
    The command output is similar to the following example:
 
    ```output
-   Microsoft (R) Build Engine version 17.8.0+b89cb5fde for .NET
-   Copyright (C) Microsoft Corporation. All rights reserved.
-     Determining projects to restore...
-     All projects are up-to-date for restore.
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net8.0\HelloWorld.dll
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net8.0\publish\
+   Restore complete (1.1s)
+     HelloWorld net10.0 succeeded (7.8s) → bin\Release\net10.0\publish\
+
+   Build succeeded in 10.3s
    ```
 
 ::: zone-end
@@ -98,9 +96,9 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Select the **Explorer** in the left navigation bar.
 
-1. Expand *bin/Release/net8.0/publish*.
+1. Expand *bin/Release/net10.0/publish*.
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net8.png" alt-text="Explorer showing published files":::
+   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output.png" alt-text="Explorer showing published files":::
 
    As the image shows, the published output includes the following files:
 

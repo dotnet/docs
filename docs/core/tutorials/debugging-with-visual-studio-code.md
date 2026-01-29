@@ -20,17 +20,7 @@ This tutorial introduces the debugging tools available in GitHub Codespaces for 
 
 ## Prerequisites
 
-::: zone pivot="vscode"
-
 This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
-
-::: zone-end
-
-::: zone pivot="codespaces"
-
-This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
-
-::: zone-end
 
 ## Use Debug build configuration
 

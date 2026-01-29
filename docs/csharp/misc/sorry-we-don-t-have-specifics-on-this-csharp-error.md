@@ -444,8 +444,6 @@ f1_keywords:
   # C# 11 errors start here
   - "CS8984"
   - "CS8989"
-  - "CS9011"
-  - "CS9012"
   - "CS9044"
   - "CS9046"
   - "CS9064"

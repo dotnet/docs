@@ -23,6 +23,8 @@ f1_keywords:
   - "CS0694"
   - "CS0695"
   - "CS0698"
+  - "CS9011"
+  - "CS9012"
   - "CS9338"
 helpviewer_keywords:
   - "CS0080"
@@ -46,8 +48,10 @@ helpviewer_keywords:
   - "CS0695"
   - "CS0698"
   - "CS0417"
+  - "CS9011"
+  - "CS9012"
   - "CS9338"
-ms.date: 11/13/2025
+ms.date: 01/29/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to generic type parameters and generic type arguments
@@ -78,6 +82,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter 'identifier' has the same name as the containing type, or method.*
 - [**CS0695**](#generic-type-usage-restrictions): *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
 - [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from 'type' because it is an attribute class.*
+- [**CS9011**](#constraint-syntax): *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
+- [**CS9012**](#type-parameter-declaration-and-naming): *Unexpected keyword 'record'. Did you mean 'record struct' or 'record class'?*
 - [**CS9338**](#generic-type-usage-restrictions): *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
 
 ## Type parameter declaration and naming
@@ -88,14 +94,28 @@ The following errors relate to how type parameters are declared and named in gen
 - **CS0081**: *Type parameter declaration must be an identifier not a type.*
 - **CS0412**: *'parameter': a parameter, local variable, or local function cannot have the same name as a method type parameter.*
 - **CS0694**: *Type parameter 'identifier' has the same name as the containing type, or method.*
+- **CS9012**: *Unexpected keyword 'record'. Did you mean 'record struct' or 'record class'?*
 
 To correct these errors, ensure that type parameters are declared with valid identifiers, constraint clauses are only applied to generic declarations, and type parameter names don't conflict with other identifiers in scope:
 
 - Remove the constraint clause from non-generic declarations (**CS0080**). The `where` clause can only be used on generic types and methods that declare type parameters, because constraints define requirements that type arguments must satisfy. If you need to apply constraints, first add type parameters to your type or method declaration. For example, change `public class MyClass where MyClass : System.IDisposable` to `public class MyClass<T> where T : System.IDisposable`.
 - Replace actual type names with identifiers in type parameter declarations (**CS0081**). Type parameters must be declared using identifiers (like `T`, `TKey`, or `TValue`) rather than concrete types (like `int` or `string`), because the purpose of a type parameter is to serve as a placeholder that is substituted with actual types when the generic type or method is used. For example, change `public void F<int>()` to `public void F<T>()`.
 - Rename type parameters, local variables, or parameters to avoid naming conflicts (**CS0412**, **CS0694**). Type parameter names can't shadow identifiers in the same scope. They can't match the name of the containing type or method. Such conflicts create ambiguity about which identifier is being referenced. For example, if you have a method `public void F<T>()`, you can't declare a local variable `double T` inside that method, and you can't name a type parameter the same as its containing type (`class C<C>`).
+- Use the correct record declaration syntax (**CS9012**). When declaring a record type, you must use either `record class` or `record struct` (or just `record` for a reference type). The `record` keyword alone can't appear in positions where the compiler expects a type declaration syntax. For example, if you meant to declare a record type, write `record class MyRecord` or `record struct MyRecord` instead of placing `record` where a different keyword is expected.
 
 For more information, see [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md) and [Generics](../../fundamentals/types/generics.md).
+
+## Constraint syntax
+
+The following error relates to invalid syntax in generic type parameter constraints:
+
+- **CS9011**: *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
+
+To correct this error, use the fully qualified type name instead of the keyword:
+
+- Replace `delegate` with `System.Delegate` in constraint clauses (**CS9011**). The `delegate` keyword is used for declaring delegate types, not as a constraint. To constrain a type parameter to delegate types, use `System.Delegate` as the constraint type. For example, change `void M<T>() where T : delegate` to `void M<T>() where T : System.Delegate`. This constraint ensures that the type argument is a delegate type, allowing you to work with delegate-specific functionality within the generic type or method.
+
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## Type argument count and usage
 

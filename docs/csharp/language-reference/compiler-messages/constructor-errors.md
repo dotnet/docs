@@ -179,7 +179,7 @@ Static constructors initialize static data for a type. For more information, see
 
 To correct these errors, ensure your static constructor declaration follows these rules:
 
-- Remove any parameters from the static constructor declaration, because a static constructor must be parameterless (**CS0132**). If you need to pass initialization values, consider using static fields or properties that are set before the static constructor runs.
+- Remove any parameters from the static constructor declaration, because a static constructor must be parameterless (**CS0132**). If you need to pass initialization values, consider using static fields or properties that you set before the static constructor runs.
 - Remove any access modifiers such as `public`, `protected`, `private`, or `internal` from the static constructor, because the runtime controls when the static constructor executes and access modifiers aren't meaningful (**CS0515**).
 - Remove any `: base()` or `: this()` constructor initializer calls from the static constructor, because static constructors can't chain to other constructors (**CS0514**). The runtime automatically invokes the base class static constructor if one exists.
 
@@ -191,15 +191,15 @@ To correct these errors, ensure your static constructor declaration follows thes
 - **CS8358**: *Cannot use attribute constructor because it has 'in' parameters.*
 - **CS8091**: *A constructor cannot be extern and have a constructor initializer.*
 
-Constructors are allowed only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance Constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
+You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance Constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
-To correct these errors, consider the following guidance:
+To fix these errors, try the following suggestions:
 
-Move the constructor to a `class` or `struct` type, because constructors can't be declared in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
+Move the constructor to a `class` or `struct` type, because you can't declare constructors in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
 
 Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
 
-Change `in` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` parameter modifiers (**CS8358**). Attributes are instantiated by the runtime using reflection, which doesn't support the `in` modifier.
+Change `in` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` modifier.
 
 Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
 
@@ -219,9 +219,9 @@ When a constructor is marked `extern`, the compiler can't verify that an impleme
 
 Struct types have specific rules for constructors and field initialization. For more information, see the [Struct initialization and default values](../builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../builtin-types/struct.md) article.
 
-To correct these errors, consider the following guidance:
+To fix these errors, try the following suggestions:
 
-- Upgrade to C# 10 or later if you encounter **CS0568** or **CS0573**, because these errors are generated only in older versions of C#. Modern C# allows explicit parameterless constructors and field initializers in structs.
+- Upgrade to C# 10 or later if you encounter **CS0568** or **CS0573**, because these errors occur only in older versions of C#. Modern C# allows explicit parameterless constructors and field initializers in structs.
 - Add the `public` access modifier to any parameterless struct constructor, because parameterless struct constructors must be public to ensure the `default` expression and array allocation can properly initialize struct instances (**CS8958**).
 - Add a `: this(...)` initializer to explicitly declared constructors in a struct that has a primary constructor, because all non-parameterless constructors must chain to the primary constructor or another explicitly declared constructor to ensure consistent initialization (**CS8982**).
 - Declare an explicit constructor when your struct uses field initializers, because the compiler requires an explicit constructor to ensure field initializers are invoked (**CS8983**). This constructor can be a parameterless constructor with an empty body.
@@ -230,11 +230,11 @@ The following warnings indicate that a field or property isn't explicitly assign
 
 - **CS9018**: *Auto-implemented property is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - **CS9019**: *Field is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
-- **CS9020**: *The 'this' object is read before all of its fields have been assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
+- **CS9020**: *The 'this' object is read before all of its fields are assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
 - **CS9021**: *Control is returned to caller before auto-implemented property is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - **CS9022**: *Control is returned to caller before field is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 
-To silence these warnings, explicitly assign all fields and auto-implemented properties before reading them or before control returns from the constructor (**CS9018**, **CS9019**, **CS9020**, **CS9021**, **CS9022**). When unassigned members are read, the compiler implicitly assigns `default` to them, which may not be the intended behavior.
+To silence these warnings, explicitly assign all fields and auto-implemented properties before reading them or before control returns from the constructor (**CS9018**, **CS9019**, **CS9020**, **CS9021**, **CS9022**). When unassigned members are read, the compiler implicitly assigns `default` to them, which might not be the intended behavior.
 
 ## Constructor calls with `base` and `this`
 
@@ -244,12 +244,12 @@ To silence these warnings, explicitly assign all fields and auto-implemented pro
 - **CS0768**: *Constructor cannot call itself through another constructor.*
 - **CS1018**: *Keyword 'this' or 'base' expected.*
 
-Constructor initializers allow one constructor to call another using `: this()` or `: base()`. For more information, see [Using Constructors](../../programming-guide/classes-and-structs/using-constructors.md).
+By using constructor initializers, one constructor can call another constructor by using `: this()` or `: base()`. For more information, see [Using Constructors](../../programming-guide/classes-and-structs/using-constructors.md).
 
-To correct these errors, consider the following guidance:
+To fix these errors, try the following suggestions:
 
-- Break any circular constructor call chains, because a constructor can't call itself either directly or indirectly through another constructor (**CS0516**, **CS0768**). Ensure that constructor chaining eventually terminates at a constructor that doesn't call another constructor in the same type.
-- Remove the `: base()` initializer from constructors in struct types or from constructors in <xref:System.Object?displayProperty=nameWithType>, because these types have no base class constructor to call (**CS0517**, **CS0522**). Struct types implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, but you can't explicitly call its constructor.
+- Break any circular constructor call chains, because a constructor can't call itself either directly or indirectly through another constructor (**CS0516**, **CS0768**). Make sure that constructor chaining eventually ends at a constructor that doesn't call another constructor in the same type.
+- Remove the `: base()` initializer from constructors in struct types or from constructors in <xref:System.Object?displayProperty=nameWithType>, because these types don't have a base class constructor to call (**CS0517**, **CS0522**). Struct types implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, but you can't explicitly call its constructor.
 - Complete the constructor initializer or remove the colon (`:`) from the constructor declaration, because when a colon follows a constructor signature, the compiler expects either `this()` or `base()` (**CS1018**). Either add the appropriate constructor call or remove the colon entirely if no chaining is intended.
 
 ## Records and copy constructors
@@ -258,18 +258,18 @@ To correct these errors, consider the following guidance:
 - **CS8868**: *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
 - **CS8878**: *A copy constructor must be public or protected because the record is not sealed.*
 - **CS8910**: *The primary constructor conflicts with the synthesized copy constructor.*
-In a derived record type, your explicit copy constructor must call the base type's copy constructor using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
+In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
 
-[Records](../builtin-types/record.md) include a compiler-synthesized [copy constructor](../builtin-types/record.md#nondestructive-mutation). You can write an explicit copy constructor, but it must meet specific requirements. The compiler issues errors when record copy constructors violate these requirements:
+[Records](../builtin-types/record.md) include a compiler-synthesized [copy constructor](../builtin-types/record.md#nondestructive-mutation). You can write an explicit copy constructor, but it must meet specific requirements. The compiler generates errors when record copy constructors violate these requirements:
 
 - The base type must have an accessible copy constructor. All `record` types have a copy constructor. Ensure the base type is a `record`, or add an accessible copy constructor to it (**CS8867**).
-- In a derived record type, your explicit copy constructor must call the base type's copy constructor using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
+- In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
 - Copy constructors must be `public` or `protected` unless the record type is [`sealed`](../keywords/sealed.md). Add the appropriate access modifier to the copy constructor (**CS8878**).
 - If your explicit copy constructor has the same signature as the synthesized copy constructor, the definitions conflict. Remove your explicit copy constructor or modify its signature (**CS8910**).
 
 ## Primary constructor declaration
 
-[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when it's used in members or field initializers.
+[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when you use it in members or field initializers.
 
 ### Constructor chaining
 
@@ -277,7 +277,7 @@ In a derived record type, your explicit copy constructor must call the base type
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9122**: *Unexpected parameter list.*
 
-When a type has a primary constructor, all other explicitly declared constructors must chain to it using `: this(...)`. Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor (**CS8862**).
+When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`. Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor (**CS8862**).
 
 Remove a parameter list from the base type reference when the base type doesn't have a primary constructor. The syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**). Similarly, remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
 
@@ -286,9 +286,9 @@ Remove a parameter list from the base type reference when the base type doesn't 
 - **CS9105**: *Cannot use primary constructor parameter in this context.*
 - **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
 
-Primary constructor parameters can only be used in the base constructor call when passed as part of the primary constructor declaration. Move the parameter usage to the type declaration's base clause rather than using it in an explicitly declared constructor's `: base()` call (**CS9105**).
+You can only use primary constructor parameters in the base constructor call if you pass them as part of the primary constructor declaration. To fix **CS9105**, move the parameter usage to the type declaration's base clause instead of using it in an explicitly declared constructor's `: base()` call.
 
-When a type and a primary constructor parameter have the same name, the reference is ambiguous. Rename either the type or the parameter to resolve the ambiguity (**CS9106**).
+If a type and a primary constructor parameter share the same name, the reference becomes ambiguous. To fix **CS9106**, rename either the type or the parameter.
 
 ### Ref-like type parameters
 
@@ -299,8 +299,8 @@ When a type and a primary constructor parameter have the same name, the referenc
 
 To address these errors:
 
-- Primary constructor parameters of `ref struct` type have restrictions on where they can be used. Move the parameter access out of lambda expressions, query expressions, or local functions (**CS9108**). In types that aren't `ref struct`, access `ref struct` parameters only in field initializers or the constructor body, not in instance members (**CS9110**, **CS9136**).
-- For `ref struct` types, primary constructor parameters with `in`, `ref`, or `out` modifiers can't be used in instance methods or property accessors. Copy the parameter value to a field in the constructor and use that field in instance members instead (**CS9109**).
+- Primary constructor parameters of `ref struct` type have restrictions on where you can use them. Move the parameter access out of lambda expressions, query expressions, or local functions (**CS9108**). In types that aren't `ref struct`, access `ref struct` parameters only in field initializers or the constructor body, not in instance members (**CS9110**, **CS9136**).
+- For `ref struct` types, you can't use primary constructor parameters with `in`, `ref`, or `out` modifiers in instance methods or property accessors. Copy the parameter value to a field in the constructor and use that field in instance members instead (**CS9109**).
 
 ### Struct type restrictions
 
@@ -311,8 +311,8 @@ To address these errors:
 
 To address these errors:
 
-- In struct types, primary constructor parameters can't be captured in lambda expressions, query expressions, or local functions inside instance members. Copy the parameter to a local variable or field before using it in these contexts (**CS9111**, **CS9112**).
-- Primary constructor parameters in struct types can't be returned by reference. Store the value in a field and return that field by reference if needed (**CS9120**).
+- In struct types, you can't capture primary constructor parameters in lambda expressions, query expressions, or local functions inside instance members. Copy the parameter to a local variable or field before using it in these contexts (**CS9111**, **CS9112**).
+- You can't return primary constructor parameters by reference in struct types. Store the value in a field and return that field by reference if needed (**CS9120**).
 - Ensure that a primary constructor parameter's type doesn't create a cycle in the struct layout. A struct can't contain a field of its own type either directly or indirectly (**CS9121**).
 
 ### Readonly struct restrictions
@@ -326,9 +326,9 @@ To address these errors:
 
 To address these errors:
 
-- In `readonly struct` types, primary constructor parameters and their members can't be modified outside of init-only setters or variable initializers. Move assignments to field initializers or init-only property setters (**CS9114**, **CS9117**).
-- Primary constructor parameters and their members in `readonly struct` types can't be returned by writable reference. Return by `readonly ref` or by value instead (**CS9115**, **CS9118**).
-- Primary constructor parameters and their members in `readonly struct` types can't be passed as `ref` or `out` arguments. Pass them by value or as `in` arguments instead (**CS9116**, **CS9119**).
+- In `readonly struct` types, you can't modify primary constructor parameters and their members outside of init-only setters or variable initializers. Move assignments to field initializers or init-only property setters (**CS9114**, **CS9117**).
+- You can't return primary constructor parameters and their members by writable reference in `readonly struct` types. Return by `readonly ref` or by value instead (**CS9115**, **CS9118**).
+- You can't pass primary constructor parameters and their members as `ref` or `out` arguments in `readonly struct` types. Pass them by value or as `in` arguments instead (**CS9116**, **CS9119**).
 
 ### Warnings for captured and shadowed parameters
 
@@ -337,10 +337,10 @@ To address these errors:
 - **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
 - **CS9179**: *Primary constructor parameter is shadowed by a member from base.*
 
-The following warnings indicate potential issues with how primary constructor parameters are stored or accessed:
+The following warnings indicate potential problems with how you store or access primary constructor parameters:
 
-- A parameter that's both passed to the base constructor and accessed in the derived type may be stored twice—once in the base class and once in the derived class. Consider whether both copies are necessary, or restructure your code to avoid the duplication (**CS9107**).
-- A primary constructor parameter that's never read isn't needed. Remove unused parameters from the primary constructor declaration (**CS9113**).
-- A parameter that's both captured by the enclosing type and used to initialize a field, property, or event may be stored twice. Consider using the captured parameter directly instead of initializing a separate member (**CS9124**).
-- When a base type member has the same name as a primary constructor parameter, the base member shadows the parameter. Rename the parameter to avoid confusion (**CS9179**).
-- When a base type member has the same name as a primary constructor parameter, the base member shadows the parameter. Rename the parameter to avoid confusion (**CS9179**).
+- You might store a parameter twice if you both pass it to the base constructor and access it in the derived type. You might have one copy in the base class and another in the derived class. Consider whether you need both copies, or restructure your code to avoid the duplication (**CS9107**).
+- You don't need a primary constructor parameter if you never read it. Remove unused parameters from the primary constructor declaration (**CS9113**).
+- You might store a parameter twice if you both capture it in the enclosing type and use it to initialize a field, property, or event. Consider using the captured parameter directly instead of initializing a separate member (**CS9124**).
+- A base type member shadows a primary constructor parameter when both have the same name. Rename the parameter to avoid confusion (**CS9179**).
+- A base type member shadows a primary constructor parameter when both have the same name. Rename the parameter to avoid confusion (**CS9179**).

@@ -175,7 +175,7 @@ In addition, the following warnings are covered in this article:
 - **CS0514**: *Static constructor cannot have an explicit 'this' or 'base' constructor call.*
 - **CS0515**: *Access modifiers are not allowed on static constructors.*
 
-Static constructors initialize static data for a type. For more information, see [Static Constructors](../../programming-guide/classes-and-structs/static-constructors.md).
+Static constructors initialize static data for a type. For more information, see [Static constructors](../../programming-guide/classes-and-structs/static-constructors.md).
 
 To correct these errors, ensure your static constructor declaration follows these rules:
 
@@ -191,7 +191,7 @@ To correct these errors, ensure your static constructor declaration follows thes
 - **CS8358**: *Cannot use attribute constructor because it has 'in' parameters.*
 - **CS8091**: *A constructor cannot be extern and have a constructor initializer.*
 
-You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance Constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
+You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
 To fix these errors, try the following suggestions:
 
@@ -244,7 +244,7 @@ To silence these warnings, explicitly assign all fields and auto-implemented pro
 - **CS0768**: *Constructor cannot call itself through another constructor.*
 - **CS1018**: *Keyword 'this' or 'base' expected.*
 
-By using constructor initializers, one constructor can call another constructor by using `: this()` or `: base()`. For more information, see [Using Constructors](../../programming-guide/classes-and-structs/using-constructors.md).
+By using constructor initializers, one constructor can call another constructor by using `: this()` or `: base()`. For more information, see [Using constructors](../../programming-guide/classes-and-structs/using-constructors.md).
 
 To fix these errors, try the following suggestions:
 
@@ -258,6 +258,7 @@ To fix these errors, try the following suggestions:
 - **CS8868**: *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
 - **CS8878**: *A copy constructor must be public or protected because the record is not sealed.*
 - **CS8910**: *The primary constructor conflicts with the synthesized copy constructor.*
+
 In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
 
 [Records](../builtin-types/record.md) include a compiler-synthesized [copy constructor](../builtin-types/record.md#nondestructive-mutation). You can write an explicit copy constructor, but it must meet specific requirements. The compiler generates errors when record copy constructors violate these requirements:

@@ -344,4 +344,3 @@ The following warnings indicate potential problems with how you store or access 
 - You don't need a primary constructor parameter if you never read it. Remove unused parameters from the primary constructor declaration (**CS9113**).
 - You might store a parameter twice if you both capture it in the enclosing type and use it to initialize a field, property, or event. Consider using the captured parameter directly instead of initializing a separate member (**CS9124**).
 - A base type member shadows a primary constructor parameter when both have the same name. Rename the parameter to avoid confusion (**CS9179**).
-- A base type member shadows a primary constructor parameter when both have the same name. Rename the parameter to avoid confusion (**CS9179**).

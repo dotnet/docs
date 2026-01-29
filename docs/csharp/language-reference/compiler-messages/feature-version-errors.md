@@ -152,7 +152,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS8929**: *Method cannot implement interface member in type because the target runtime doesn't support static abstract members in interfaces.*
 - **CS8957**: *Conditional expression is not valid in language version because a common type was not found between types.*
 - **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C#*
-- **CS9041**: *Requires compiler feature, which is not supported by this version of the C# compiler.*
+- **CS9041**: *Requires compiler feature that is not supported by this version of the C# compiler.*
 - **CS9014**: *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9015**: *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9016**: *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*

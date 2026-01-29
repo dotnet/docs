@@ -490,11 +490,11 @@ items:
     href: ./compiler-messages/constructor-errors.md
     displayName: >
       Primary constructors,
-      CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0710, CS0768, CS0824,
-      CS8054, CS8091, CS8358, CS8862, CS8867, CS8868, CS8878, CS8910, CS8958, CS8982,
-      CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113,
-      CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124,
-      CS9136, CS9179
+      CS0132, CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0573, CS0710,
+      CS0768, CS0824, CS1018, CS8054, CS8091, CS8358, CS8862, CS8867, CS8868, CS8878,
+      CS8910, CS8958, CS8982, CS8983, CS9018, CS9019, CS9020, CS9021, CS9022, CS9105,
+      CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113, CS9114, CS9115,
+      CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
   - name: Property declarations
     href: ./compiler-messages/property-declaration-errors.md
     displayName: >
@@ -843,8 +843,6 @@ items:
       href: ../misc/cs0128.md
     - name: CS0131
       href: ../misc/cs0131.md
-    - name: CS0132
-      href: ../misc/cs0132.md
     - name: CS0133
       href: ../misc/cs0133.md
     - name: CS0134
@@ -1131,8 +1129,6 @@ items:
       href: ./compiler-messages/property-declaration-errors.md
     - name: CS0572
       href: ../misc/cs0572.md
-    - name: CS0573
-      href: ../misc/cs0573.md
     - name: CS0574
       href: ../misc/cs0574.md
     - name: CS0575
@@ -1345,8 +1341,6 @@ items:
       href: ../misc/cs1015.md
     - name: CS1017
       href: ../misc/cs1017.md
-    - name: CS1018
-      href: ./compiler-messages/cs1018.md
     - name: CS1021
       href: ../misc/cs1021.md
     - name: CS1022

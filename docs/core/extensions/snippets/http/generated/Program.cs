@@ -10,7 +10,7 @@ HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddRefitClient<ITodoService>()
     .ConfigureHttpClient(client =>
     {
-        // Set the base address of the named client.
+        // Set the base address of the typed client.
         client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 
         // Add a user-agent default request header.

@@ -269,32 +269,13 @@ In a derived record type, your explicit copy constructor must call the base type
 
 ## Primary constructor declaration
 
-[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when it's used in members or field initializers. The compiler issues errors when code violates rules for primary constructor usage.
+[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when it's used in members or field initializers.
+
+### Constructor chaining
 
 - **CS8861**: *Unexpected argument list.*
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
-- **CS9105**: *Cannot use primary constructor parameter in this context.*
-- **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
-- **CS9108**: *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
-- **CS9109**: *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
-- **CS9110**: *Cannot use primary constructor parameter that has ref-like type inside an instance member.*
-- **CS9111**: *Anonymous methods, lambda expressions, query expressions, and local functions inside an instance member of a struct cannot access primary constructor parameter.*
-- **CS9112**: *Anonymous methods, lambda expressions, query expressions, and local functions inside a struct cannot access primary constructor parameter also used inside an instance member.*
-- **CS9114**: *A primary constructor parameter of a readonly type cannot be assigned to (except in init-only setter of the type or a variable initializer).*
-- **CS9115**: *A primary constructor parameter of a readonly type cannot be returned by writable reference.*
-- **CS9116**: *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
-- **CS9117**: *Members of primary constructor parameter of a readonly type cannot be modified (except in init-only setter of the type or a variable initializer).*
-- **CS9118**: *Members of primary constructor parameter of a readonly type cannot be returned by writable reference.*
-- **CS9119**: *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
-- **CS9120**: *Cannot return primary constructor parameter by reference.*
-- **CS9121**: *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - **CS9122**: *Unexpected parameter list.*
-- **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
-- **CS9136**: *Cannot use primary constructor parameter of type inside an instance member.*
-
-[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when it's used in members or field initializers. The compiler issues errors when code violates rules for primary constructor usage.
-
-### Constructor chaining
 
 When a type has a primary constructor, all other explicitly declared constructors must chain to it using `: this(...)`. Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor (**CS8862**).
 
@@ -302,40 +283,64 @@ Remove a parameter list from the base type reference when the base type doesn't 
 
 ### Parameter usage in base constructor calls
 
+- **CS9105**: *Cannot use primary constructor parameter in this context.*
+- **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
+
 Primary constructor parameters can only be used in the base constructor call when passed as part of the primary constructor declaration. Move the parameter usage to the type declaration's base clause rather than using it in an explicitly declared constructor's `: base()` call (**CS9105**).
 
 When a type and a primary constructor parameter have the same name, the reference is ambiguous. Rename either the type or the parameter to resolve the ambiguity (**CS9106**).
 
 ### Ref-like type parameters
 
-Primary constructor parameters of `ref struct` type have restrictions on where they can be used. Move the parameter access out of lambda expressions, query expressions, or local functions (**CS9108**). In types that aren't `ref struct`, access `ref struct` parameters only in field initializers or the constructor body, not in instance members (**CS9110**, **CS9136**).
+- **CS9108**: *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
+- **CS9109**: *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
+- **CS9110**: *Cannot use primary constructor parameter that has ref-like type inside an instance member.*
+- **CS9136**: *Cannot use primary constructor parameter of type inside an instance member.*
 
-For `ref struct` types, primary constructor parameters with `in`, `ref`, or `out` modifiers can't be used in instance methods or property accessors. Copy the parameter value to a field in the constructor and use that field in instance members instead (**CS9109**).
+To address these errors:
+
+- Primary constructor parameters of `ref struct` type have restrictions on where they can be used. Move the parameter access out of lambda expressions, query expressions, or local functions (**CS9108**). In types that aren't `ref struct`, access `ref struct` parameters only in field initializers or the constructor body, not in instance members (**CS9110**, **CS9136**).
+- For `ref struct` types, primary constructor parameters with `in`, `ref`, or `out` modifiers can't be used in instance methods or property accessors. Copy the parameter value to a field in the constructor and use that field in instance members instead (**CS9109**).
 
 ### Struct type restrictions
 
-In struct types, primary constructor parameters can't be captured in lambda expressions, query expressions, or local functions inside instance members. Copy the parameter to a local variable or field before using it in these contexts (**CS9111**, **CS9112**).
+- **CS9111**: *Anonymous methods, lambda expressions, query expressions, and local functions inside an instance member of a struct cannot access primary constructor parameter.*
+- **CS9112**: *Anonymous methods, lambda expressions, query expressions, and local functions inside a struct cannot access primary constructor parameter also used inside an instance member.*
+- **CS9120**: *Cannot return primary constructor parameter by reference.*
+- **CS9121**: *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 
-Primary constructor parameters in struct types can't be returned by reference. Store the value in a field and return that field by reference if needed (**CS9120**).
+To address these errors:
 
-Ensure that a primary constructor parameter's type doesn't create a cycle in the struct layout. A struct can't contain a field of its own type either directly or indirectly (**CS9121**).
+- In struct types, primary constructor parameters can't be captured in lambda expressions, query expressions, or local functions inside instance members. Copy the parameter to a local variable or field before using it in these contexts (**CS9111**, **CS9112**).
+- Primary constructor parameters in struct types can't be returned by reference. Store the value in a field and return that field by reference if needed (**CS9120**).
+- Ensure that a primary constructor parameter's type doesn't create a cycle in the struct layout. A struct can't contain a field of its own type either directly or indirectly (**CS9121**).
 
 ### Readonly struct restrictions
 
-In `readonly struct` types, primary constructor parameters and their members can't be modified outside of init-only setters or variable initializers. Move assignments to field initializers or init-only property setters (**CS9114**, **CS9117**).
+- **CS9114**: *A primary constructor parameter of a readonly type cannot be assigned to (except in init-only setter of the type or a variable initializer).*
+- **CS9115**: *A primary constructor parameter of a readonly type cannot be returned by writable reference.*
+- **CS9116**: *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
+- **CS9117**: *Members of primary constructor parameter of a readonly type cannot be modified (except in init-only setter of the type or a variable initializer).*
+- **CS9118**: *Members of primary constructor parameter of a readonly type cannot be returned by writable reference.*
+- **CS9119**: *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
 
-Primary constructor parameters and their members in `readonly struct` types can't be returned by writable reference. Return by `readonly ref` or by value instead (**CS9115**, **CS9118**).
+To address these errors:
 
-Primary constructor parameters and their members in `readonly struct` types can't be passed as `ref` or `out` arguments. Pass them by value or as `in` arguments instead (**CS9116**, **CS9119**).
+- In `readonly struct` types, primary constructor parameters and their members can't be modified outside of init-only setters or variable initializers. Move assignments to field initializers or init-only property setters (**CS9114**, **CS9117**).
+- Primary constructor parameters and their members in `readonly struct` types can't be returned by writable reference. Return by `readonly ref` or by value instead (**CS9115**, **CS9118**).
+- Primary constructor parameters and their members in `readonly struct` types can't be passed as `ref` or `out` arguments. Pass them by value or as `in` arguments instead (**CS9116**, **CS9119**).
 
 ### Warnings for captured and shadowed parameters
 
+- **CS9107**: *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.*
+- **CS9113**: *Parameter is unread.*
+- **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
+- **CS9179**: *Primary constructor parameter is shadowed by a member from base.*
+
 The following warnings indicate potential issues with how primary constructor parameters are stored or accessed:
 
-A parameter that's both passed to the base constructor and accessed in the derived type may be stored twice—once in the base class and once in the derived class. Consider whether both copies are necessary, or restructure your code to avoid the duplication (**CS9107**).
-
-A primary constructor parameter that's never read isn't needed. Remove unused parameters from the primary constructor declaration (**CS9113**).
-
-A parameter that's both captured by the enclosing type and used to initialize a field, property, or event may be stored twice. Consider using the captured parameter directly instead of initializing a separate member (**CS9124**).
-
-When a base type member has the same name as a primary constructor parameter, the base member shadows the parameter. Rename the parameter to avoid confusion (**CS9179**).
+- A parameter that's both passed to the base constructor and accessed in the derived type may be stored twice—once in the base class and once in the derived class. Consider whether both copies are necessary, or restructure your code to avoid the duplication (**CS9107**).
+- A primary constructor parameter that's never read isn't needed. Remove unused parameters from the primary constructor declaration (**CS9113**).
+- A parameter that's both captured by the enclosing type and used to initialize a field, property, or event may be stored twice. Consider using the captured parameter directly instead of initializing a separate member (**CS9124**).
+- When a base type member has the same name as a primary constructor parameter, the base member shadows the parameter. Rename the parameter to avoid confusion (**CS9179**).
+- When a base type member has the same name as a primary constructor parameter, the base member shadows the parameter. Rename the parameter to avoid confusion (**CS9179**).

@@ -132,7 +132,7 @@ These errors and warnings follow these themes:
 
 - **CS9137**: *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview</Features>` to your project.*
 
-To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**), because interceptors are an experimental feature that isn't enabled by default. This explicit opt-in is required because interceptors are subject to breaking changes or removal in future releases, and the compiler needs confirmation that you understand the risks before allowing their use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-12.md#interceptors) in the C# 12 features documentation.
+To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**), because interceptors are an experimental feature that isn't enabled by default. This explicit opt-in is required because the interceptors feature is subject to breaking changes or removal in future releases, and the compiler needs confirmation that you understand the risks before allowing its use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-12.md#interceptors) in the C# 12 features documentation.
 
 ## Signature mismatch
 
@@ -229,5 +229,5 @@ The following warnings indicate issues with analyzer or source generator assembl
 
 These warnings occur when there are compatibility issues with analyzer assemblies:
 
-- **CS9057** is generated when an analyzer assembly references a version of the Roslyn compiler that is newer than the one currently running. This prevents the analyzer from loading because it may depend on APIs or behaviors not available in the current compiler version. To resolve this, either upgrade your compiler/SDK to match the analyzer's requirements or use a version of the analyzer compatible with your current compiler version.
-- **CS9067** warns when the same analyzer assembly is referenced multiple times in your project. This typically happens when an analyzer is included through multiple paths or package references. While not an error, duplicate references can impact build performance and may cause unexpected behavior. Remove the duplicate references to resolve this warning.
+- **CS9057** is generated when an analyzer assembly references a version of the Roslyn compiler that is newer than the one currently running. This prevents the analyzer from loading because it might depend on APIs or behaviors not available in the current compiler version. To resolve this, either upgrade your compiler/SDK to match the analyzer's requirements or use a version of the analyzer compatible with your current compiler version.
+- **CS9067** warns when the same analyzer assembly is referenced multiple times in your project. This typically happens when an analyzer is included through multiple paths or package references. While not an error, duplicate references can impact build performance and might cause unexpected behavior. Remove the duplicate references to resolve this warning.

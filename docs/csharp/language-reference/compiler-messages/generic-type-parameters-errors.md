@@ -103,28 +103,28 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'parameter name' in the generic type or method 'type2'. The nullable type 'type1' does not satisfy the constraint of 'type2'. Nullable types can not satisfy any interface constraints.*
 - [**CS0314**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'name' in the generic type or method 'name'. There is no boxing conversion or type parameter conversion from 'type1' to 'type2'.*
 - [**CS0315**](#constraint-satisfaction-and-conversions): *The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod\<T>'. There is no boxing conversion from 'valueType' to 'referenceType'.*
-- [**CS0401**](#cs0401): *The new() constraint must be the last constraint specified.*
+- [**CS0401**](#constraint-declaration-and-ordering): *The new() constraint must be the last constraint specified.*
 - [**CS0403**](#generic-type-usage-restrictions): *Cannot convert null to type parameter 'name' because it could be a non-nullable value type. Consider using 'default('T')' instead.*
-- [**CS0405**](#cs0405): *Duplicate constraint 'constraint' for type parameter 'type parameter'.*
+- [**CS0405**](#valid-constraint-types): *Duplicate constraint 'constraint' for type parameter 'type parameter'.*
 - [**CS0412**](#type-parameter-declaration-and-naming): *'parameter': a parameter, local variable, or local function cannot have the same name as a method type parameter.*
 - [**CS0413**](#generic-type-usage-restrictions): *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint.*
 - [**CS0417**](#constructor-constraints): *'identifier': cannot provide arguments when creating an instance of a variable type.*
-- [**CS0449**](#cs0449): *The 'class', 'struct', 'unmanaged', 'notnull', and 'default' constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
-- [**CS0450**](#cs0450): *'Type Parameter Name': cannot specify both a constraint class and the 'class' or 'struct' constraint.*
-- [**CS0451**](#cs0451): *The 'new()' constraint cannot be used with the 'struct' constraint.*
-- [**CS0454**](#cs0454): *Circular constraint dependency involving 'Type Parameter 1' and 'Type Parameter 2'.*
-- [**CS0455**](#cs0455): *Type parameter 'Type Parameter Name' inherits conflicting constraints 'Constraint Name 1' and 'Constraint Name 2'.*
+- [**CS0449**](#constraint-declaration-and-ordering): *The 'class', 'struct', 'unmanaged', 'notnull', and 'default' constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
+- [**CS0450**](#constraint-declaration-and-ordering): *'Type Parameter Name': cannot specify both a constraint class and the 'class' or 'struct' constraint.*
+- [**CS0451**](#constraint-declaration-and-ordering): *The 'new()' constraint cannot be used with the 'struct' constraint.*
+- [**CS0454**](#constraint-conflicts-and-circular-dependencies): *Circular constraint dependency involving 'Type Parameter 1' and 'Type Parameter 2'.*
+- [**CS0455**](#constraint-conflicts-and-circular-dependencies): *Type parameter 'Type Parameter Name' inherits conflicting constraints 'Constraint Name 1' and 'Constraint Name 2'.*
 - [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter 'identifier' has the same name as the containing type, or method.*
 - [**CS0695**](#generic-type-usage-restrictions): *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
 - [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from 'type' because it is an attribute class.*
-- [**CS0702**](#cs0702): *Constraint cannot be special class 'identifier'.*
-- [**CS0703**](#cs0703): *Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'.*
-- [**CS0706**](#cs0706): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
-- [**CS0717**](#cs0717): *'static class': static classes cannot be used as constraints.*
-- [**CS1961**](#cs1961): *Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
-- [**CS7002**](#cs7002): *Unexpected use of a generic name.*
-- [**CS8322**](#cs8322): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
-- [**CS9011**](#constraint-syntax): *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
+- [**CS0702**](#valid-constraint-types): *Constraint cannot be special class 'identifier'.*
+- [**CS0703**](#valid-constraint-types): *Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'.*
+- [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
+- [**CS0717**](#valid-constraint-types): *'static class': static classes cannot be used as constraints.*
+- [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
+- [**CS7002**](#type-argument-count-and-usage): *Unexpected use of a generic name.*
+- [**CS8322**](#generic-type-usage-restrictions): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
+- [**CS9011**](#constraint-declaration-and-ordering): *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
 - [**CS9012**](#type-parameter-declaration-and-naming): *Unexpected keyword 'record'. Did you mean 'record struct' or 'record class'?*
 - [**CS9338**](#generic-type-usage-restrictions): *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
 
@@ -147,15 +147,40 @@ To correct these errors, ensure that type parameters are declared with valid ide
 
 For more information, see [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md) and [Generics](../../fundamentals/types/generics.md).
 
-## Constraint syntax
+## Constraint declaration and ordering
 
-The following error relates to invalid syntax in generic type parameter constraints:
+The following errors relate to the syntax and ordering of constraints on generic type parameters:
 
+- **CS0401**: *The new() constraint must be the last constraint specified.*
+- **CS0449**: *The 'class', 'struct', 'unmanaged', 'notnull', and 'default' constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
+- **CS0450**: *'Type Parameter Name': cannot specify both a constraint class and the 'class' or 'struct' constraint.*
+- **CS0451**: *The 'new()' constraint cannot be used with the 'struct' constraint.*
 - **CS9011**: *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
 
-To correct this error, use the fully qualified type name instead of the keyword:
+Constraints on type parameters must follow a specific order: primary constraints (`class`, `struct`, `unmanaged`, `notnull`, or `default`) come first, followed by interface or class constraints, and finally the `new()` constructor constraint. Some constraints are mutually exclusive and can't be combined.
 
-- Replace `delegate` with `System.Delegate` in constraint clauses (**CS9011**). The `delegate` keyword is used for declaring delegate types, not as a constraint. To constrain a type parameter to delegate types, use `System.Delegate` as the constraint type. For example, change `void M<T>() where T : delegate` to `void M<T>() where T : System.Delegate`. This constraint ensures that the type argument is a delegate type, allowing you to work with delegate-specific functionality within the generic type or method.
+To correct these errors:
+
+- Place the `new()` constraint at the end of the constraint list (**CS0401**). The `new()` constraint must appear after all other constraints. For example, change `where T : new(), IDisposable` to `where T : IDisposable, new()`.
+- Place primary constraints first and don't combine mutually exclusive constraints (**CS0449**). You can specify at most one of `class`, `struct`, `unmanaged`, `notnull`, or `default`, and it must appear first in the constraint list. The `class` and `struct` constraints are mutually exclusive, as are `class` and `unmanaged`. In a nullable context, `class` already implies `notnull`, so they can't be combined.
+- Don't combine a specific class constraint with `struct` (**CS0450**). If a type parameter is constrained to a specific class type, it's implicitly a reference type, which contradicts the `struct` constraint. Remove either the class constraint or the `struct` constraint.
+- Don't combine `new()` with `struct` (**CS0451**). All value types (structs) implicitly have a public parameterless constructor, so the `new()` constraint is redundant when combined with `struct`. Remove the `new()` constraint when using `struct`.
+- Replace `delegate` with `System.Delegate` in constraint clauses (**CS9011**). The `delegate` keyword is used for declaring delegate types, not as a constraint. To constrain a type parameter to delegate types, use `System.Delegate` as the constraint type. For example, change `where T : delegate` to `where T : System.Delegate`.
+
+The following example shows correct constraint ordering:
+
+```csharp
+using System;
+
+// Primary constraint first, then interface constraints, then new()
+class C<T> where T : class, IDisposable, new() { }
+
+// struct doesn't need new() - it's implicit
+class D<T> where T : struct, IComparable { }
+
+// Delegate constraint using System.Delegate
+class E<T> where T : System.Delegate { }
+```
 
 For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
@@ -168,6 +193,7 @@ The following errors relate to providing the correct number and type of type arg
 - **CS0306**: *The type 'type' may not be used as a type argument.*
 - **CS0307**: *The 'construct' 'identifier' is not a generic method. If you intended an expression list, use parentheses around the < expression.*
 - **CS0308**: *The non-generic type-or-method 'identifier' cannot be used with type arguments.*
+- **CS7002**: *Unexpected use of a generic name.*
 
 To correct these errors, ensure that you provide the exact number of type arguments required by the generic declaration. Use only valid types as type arguments. Don't apply type arguments to non-generic constructs:
 
@@ -175,6 +201,7 @@ To correct these errors, ensure that you provide the exact number of type argume
 - Supply the exact number of type arguments specified in the generic type or method declaration (**CS0305**). Each generic type parameter declared in the definition must have a corresponding type argument when the generic type is instantiated. The compiler needs to know which concrete type to substitute for each type parameter. For example, if a class is declared as `class MyList<T>`, you must provide exactly one type argument when using it, such as `MyList<int>`, not `MyList<int, string>`.
 - Use only valid types as type arguments (**CS0306**). Pointer types, such as `int*` or `char*`, can't be used as type arguments because generic types require managed types that the garbage collector can track, and pointer types are unmanaged. If you need to work with pointers in a generic context, consider using `IntPtr` or restructuring your code to avoid mixing generics with unsafe code.
 - Remove type argument syntax from non-generic constructs (**CS0307**, **CS0308**). Type arguments enclosed in angle brackets (like `<int>`) can only be applied to generic types and methods that declare type parameters. You must either remove the type arguments entirely or ensure you imported the namespace that contains the generic version of the type. For example, `IEnumerator<T>` requires the `using System.Collections.Generic;` directive, whereas `IEnumerator` is in `System.Collections`.
+- Remove type parameters from declarations that don't support generics (**CS7002**). Some constructs, such as enums, can't be generic. If you need a generic container for enum values, consider using a generic class or struct instead.
 
 For more information, see [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md) and [Generics](../../fundamentals/types/generics.md).
 
@@ -221,6 +248,7 @@ The following errors relate to restrictions on how generic types can be used:
 - **CS0413**: *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint.*
 - **CS0695**: *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
 - **CS0698**: *A generic type cannot derive from 'type' because it is an attribute class.*
+- **CS8322**: *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
 - **CS9338**: *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
 
 To correct these errors, use `default` instead of `null` for unconstrained type parameters, add class constraints when using the `as` operator, avoid interface unification conflicts, don't create generic attribute classes, and ensure type arguments match the visibility of their containing members:
@@ -231,336 +259,120 @@ To correct these errors, use `default` instead of `null` for unconstrained type 
 - Remove generic type parameters from attribute classes (**CS0698**).
   > [!NOTE]
   > This error is no longer produced in current versions of C#, as generic attributes are now supported.
+- Explicitly specify type arguments when passing dynamic values to generic local functions (**CS8322**). When you pass a `dynamic` argument to a generic local function, the compiler can't infer type arguments because the actual type isn't known until runtime. To fix this error, explicitly specify the type argument (e.g., `LocalFunc<int>(d)`), cast the dynamic value to the expected type, or use a non-dynamic variable.
 - Ensure type arguments used in public or protected signatures are at least as accessible as the member using them (**CS9338**). A public or protected generic member must use type arguments that are publicly accessible. Otherwise external code couldn't properly reference or use the member's signature. For example, if you have `public class Container<T>` where `T` is an internal type, external assemblies can see the `Container` but can't properly work with it because they can't see `T`. To fix this error, either make the type argument public, or reduce the accessibility of the member using it to match the type argument's accessibility.
 
 For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md), [default value expressions](../operators/default.md), and [Attributes](../attributes/general.md).
 
-## CS0702
+## Valid constraint types
 
-*Constraint cannot be special class 'identifier'*
+The following errors relate to using invalid types as constraints on generic type parameters:
 
-The following types can't be used as constraints: <xref:System.Object>, <xref:System.Array>, or <xref:System.ValueType>. These types have special meaning in the .NET type system and don't function as meaningful constraints. Every type already derives from `Object`, so constraining to it provides no value. `Array` and `ValueType` are abstract base types that can't be directly inherited by user-defined types, making them invalid as constraints.
+- **CS0405**: *Duplicate constraint 'constraint' for type parameter 'type parameter'.*
+- **CS0702**: *Constraint cannot be special class 'identifier'.*
+- **CS0703**: *Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'.*
+- **CS0706**: *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
+- **CS0717**: *'static class': static classes cannot be used as constraints.*
 
-The following sample generates CS0702:
+A constraint must be an interface, a non-sealed class, or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.
+
+To correct these errors:
+
+- Remove duplicate constraints (**CS0405**). Each constraint can only appear once in a constraint clause. If you have `where T : I, I`, remove the duplicate.
+- Don't use special classes as constraints (**CS0702**). The types <xref:System.Object>, <xref:System.Array>, and <xref:System.ValueType> can't be used as constraints. Every type already derives from `Object`, so constraining to it provides no value. `Array` and `ValueType` are abstract base types that can't be directly inherited. If you need array-like behavior, use `IList<T>` or `IEnumerable<T>` instead.
+- Ensure constraint types are at least as accessible as the generic type (**CS0703**). A public generic type can't have constraints using internal types, because external code wouldn't be able to provide valid type arguments. Either make the constraint type public, or reduce the accessibility of the generic type.
+- Use only interfaces, non-sealed classes, or type parameters as constraints (**CS0706**). You can't use arrays, sealed classes, structs, enums, or other invalid types as constraints. If you need specific behavior, consider using an interface that the desired types implement.
+- Don't use static classes as constraints (**CS0717**). Static classes can't be extended because they only contain static members. No type can exist that derives from a static class, making it useless as a constraint. Use a non-static class or interface instead.
+
+The following example shows valid constraint types:
 
 ```csharp
-class C<T> where T : System.Array  // CS0702
-{
-}
+public interface IMyInterface { }
+public class MyBaseClass { }
+
+// Valid: interface constraint
+class A<T> where T : IMyInterface { }
+
+// Valid: non-sealed class constraint
+class B<T> where T : MyBaseClass { }
+
+// Valid: type parameter constraint
+class C<T, U> where T : U { }
 ```
 
-To fix this error, remove the constraint or use a more specific interface or base class that provides the functionality you need. For example, if you need array-like behavior, consider using `IList<T>` or `IEnumerable<T>` as constraints instead.
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
-## CS0703
+## Constraint conflicts and circular dependencies
 
-*Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'*
+The following errors relate to conflicts between constraints or circular dependencies in constraint declarations:
 
-A constraint can't force the generic parameter to be less accessible than the generic class itself. In the following example, while the generic class `C<T>` is declared public, the constraint attempts to force `T` to implement an internal interface. Even if this were allowed, only clients with internal access would be able to create the parameter for the class, so in effect, the class could be used only by clients with internal access.
+- **CS0454**: *Circular constraint dependency involving 'Type Parameter 1' and 'Type Parameter 2'.*
+- **CS0455**: *Type parameter 'Type Parameter Name' inherits conflicting constraints 'Constraint Name 1' and 'Constraint Name 2'.*
 
-To fix this error, make sure the access level of the generic class isn't less restrictive than any classes or interfaces that appear in the constraints.
+Constraints can't create circular dependencies, and type parameters can't inherit conflicting constraints that are impossible to satisfy simultaneously.
 
-The following sample generates CS0703:
+To correct these errors:
 
-```csharp
-internal interface I {}
-public class C<T> where T : I  // CS0703 – I is internal; C<T> is public
-{
-}
-```
+- Remove circular constraint dependencies (**CS0454**). A type parameter can't directly or indirectly depend on itself through its constraints. For example, `where T : U where U : T` creates a circular dependency because `T` depends on `U` and `U` depends on `T`. Break the cycle by removing one of the constraints.
+- Remove conflicting inherited constraints (**CS0455**). A type parameter can't be constrained to multiple unrelated classes, because C# doesn't support multiple class inheritance. Similarly, it can't be constrained to both `struct` and a class type, as these are mutually exclusive. Restructure your type hierarchy or remove one of the conflicting constraints.
 
-## CS0401
-
-*The new() constraint must be the last constraint specified*
-
-When using multiple constraints on a type parameter, you must list the `new()` constraint last. The `new()` constraint indicates that the type argument must have a public parameterless constructor, and C# syntax requires it to appear after all other constraints.
-
-To fix this error, reorder your constraints so that `new()` appears at the end of the constraint list.
-
-The following sample generates CS0401:
+The following example shows the problems:
 
 ```csharp
-using System;
+// CS0454: Circular dependency - T depends on U and U depends on T
+class Circular<T, U> where T : U where U : T { }
 
-class C<T> where T : new(), IDisposable {}  // CS0401
-
-class D<T> where T : IDisposable
-{
-   static void F<U>() where U : new(), IDisposable {}   // CS0401
-}
-```
-
-To fix this error, place the `new()` constraint last:
-
-```csharp
-using System;
-
-class C<T> where T : IDisposable, new() {}  // OK
-
-class D<T> where T : IDisposable
-{
-   static void F<U>() where U : IDisposable, new() {}   // OK
-}
-```
-
-## CS0405
-
-*Duplicate constraint 'constraint' for type parameter 'type parameter'*
-
-Two of the constraints on the generic declaration are identical. Remove the duplicate constraint to fix this error.
-
-The following sample generates CS0405:
-
-```csharp
-interface I
-{
-}
-
-class C<T> where T : I, I  // CS0405
-{
-}
-```
-
-To fix this error, remove the duplicate constraint:
-
-```csharp
-interface I
-{
-}
-
-class C<T> where T : I  // OK
-{
-}
-```
-
-## CS0449
-
-*The 'class', 'struct', 'unmanaged', 'notnull', and 'default' constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
-
-The constraints on the type parameter of a generic type or method must occur in a specific order. You can apply at most one of the `class`, `struct`, `unmanaged`, `notnull`, or `default` constraints, and if you specify any of these constraints, it must be the first constraint specified for that type parameter. These are followed by interface constraints, and finally any constructor constraints. This error is caused by one of these primary constraints not appearing first, or by attempting to combine multiple primary constraints.
-
-> [!NOTE]
-> In a nullable context, the `class` constraint already implies `notnull`, so they can't be combined.
-
-The following sample generates CS0449:
-
-```csharp
-public interface I {}
-
-public class C4
-{
-   public void F1<T>() where T : class, struct, I {}   // CS0449 - cannot combine class and struct
-   public void F2<T>() where T : I, struct {}   // CS0449 - struct must be first
-   public void F3<T>() where T : I, class {}   // CS0449 - class must be first
-   public void F4<T>() where T : class, notnull {}   // CS0449 - class already implies notnull
-   public void F5<T>() where T : unmanaged, struct {}   // CS0449 - cannot combine unmanaged and struct
-   public void F6<T>() where T : I, unmanaged {}   // CS0449 - unmanaged must be first
-   public void F7<T>() where T : notnull, default {}   // CS0449 - cannot combine notnull and default
-
-   // OK
-   public void F8<T>() where T : class {}
-   public void F9<T>() where T : struct {}
-   public void F10<T>() where T : unmanaged {}
-   public void F11<T>() where T : notnull {}
-   public void F12<T>() where T : I {}
-}
-```
-
-To fix this error, reorder the constraint clauses so that the primary constraint appears first, or remove duplicate/conflicting constraints.
-
-## CS0450
-
-*'Type Parameter Name': cannot specify both a constraint class and the 'class' or 'struct' constraint*
-
-If a type parameter is constrained by the `struct` type constraint, it's logically contradictory for it to also be constrained by a specific class type, since `struct` and `class` are mutually exclusive categories. If a type parameter is constrained by a specific class type constraint, then it's by definition constrained by the `class` type constraint, and so specifying the `class` type constraint is redundant.
-
-The following sample generates CS0450:
-
-```csharp
-public class B { }
-public class G3<T> where T : struct, B { } // CS0450
-```
-
-To fix this error, remove either the `struct` constraint or the class constraint:
-
-```csharp
-public class B { }
-public class G3<T> where T : B { }  // OK
-```
-
-## CS0451
-
-*The 'new()' constraint cannot be used with the 'struct' constraint*
-
-When specifying constraints on the type of a generic, the `new()` constraint can only be used with class type constraints, interface type constraints, reference type constraints, and type parameter constraints, but not with value type constraints. All value types (structs) implicitly have a public parameterless constructor, so the `new()` constraint is redundant and therefore not allowed when combined with the `struct` constraint.
-
-The following sample generates CS0451:
-
-```csharp
-public class C4
-{
-   public void F4<T>() where T : struct, new() {}   // CS0451
-}
-```
-
-To fix this error, remove either the `struct` constraint or the `new()` constraint:
-
-```csharp
-public class C5
-{
-   public void F5<T>() where T : struct {}  // OK - new() is implicit for structs
-}
-
-public class C6
-{
-   public void F6<T>() where T : new() {}  // OK - allows both class and struct types
-}
-```
-
-## CS0454
-
-*Circular constraint dependency involving 'Type Parameter 1' and 'Type Parameter 2'*
-
-This error arises because at some point one type parameter refers to another, and the second refers back to the first. To fix this error, break the circular dependency by removing one of the constraints. The circular constraint dependency can be indirect.
-
-The following examples generate CS0454:
-
-```csharp
-// Direct circular dependency - T depends on itself
-public class G4<T> where T : T { } // CS0454
-
-// Mutual circular dependency - T depends on U and U depends on T
-public class Gen<T, U> where T : U where U : T  // CS0454
-{
-}
-```
-
-To fix this error, remove one of the constraints that creates the circular dependency.
-
-## CS0455
-
-*Type parameter 'Type Parameter Name' inherits conflicting constraints 'Constraint Name 1' and 'Constraint Name 2'*
-
-Two common ways to get this error are to set up constraints so that the type parameter derives from two non-related classes, or so that it derives from a class type or reference type constraint and a `struct` type or value type constraint. To resolve this error, remove the conflict from your inheritance hierarchy.
-
-The following example generates CS0455:
-
-```csharp
+// CS0455: Conflicting constraints - U can't derive from both B and B2
 public class B { }
 public class B2 { }
-public class G6<T> where T : B
+public class G<T> where T : B
 {
-    public class N<U> where U : B2, T { } // CS0455
+    public class N<U> where U : B2, T { }
 }
 ```
 
-In this example, the constraint `U : B2, T` creates a conflict because `U` must derive from both `B2` and whatever type is substituted for `T` (which must derive from `B`). Since `B` and `B2` are unrelated classes, and C# doesn't support multiple inheritance, this constraint is impossible to satisfy.
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
-## CS0706
+## Type parameter variance
 
-*Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
+The following error relates to variance modifiers on generic type parameters:
 
-This error occurs when an invalid construct is used in a constraint clause. A constraint must be an interface, a non-sealed class, or a type parameter. You can't use arrays, sealed classes, structs, enums, or other invalid types as constraints.
+- **CS1961**: *Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
 
-The following sample generates CS0706:
+Variance modifiers (`in` for contravariance, `out` for covariance) control how type parameters can be used in interface and delegate declarations. A covariant (`out`) type parameter can only appear in output positions (return types), while a contravariant (`in`) type parameter can only appear in input positions (parameter types).
+
+To correct this error:
+
+- Use `out` (covariant) for type parameters that only appear in return types. Covariance allows a more derived type to be used where a less derived type is expected.
+- Use `in` (contravariant) for type parameters that only appear in parameter types. Contravariance allows a less derived type to be used where a more derived type is expected.
+- Remove the variance modifier if the type parameter must appear in both input and output positions.
+
+The following example shows correct and incorrect variance usage:
 
 ```csharp
-class A {}
-class C<T> where T : int[] {}  // CS0706 - arrays can't be constraints
-class D<T> where T : A {}  // OK - A is a non-sealed class
-```
-
-To fix this error, use an interface or non-sealed class instead of the construct that caused the error.
-
-## CS0717
-
-*'static class': static classes cannot be used as constraints*
-
-Static classes can't be extended as they only contain static members and not instance members. Because they can't be extended, this makes them useless as type parameters and constraints, as no type can exist that is a specialization of a static class.
-
-The following sample generates CS0717:
-
-```csharp
-public static class SC
+// Incorrect: out T can't appear in input position
+interface IWrong<out T>
 {
-    public static void F()
-    {
-    }
+    void Method(T arg);  // CS1961
 }
 
-public class G<T> where T : SC  // CS0717
+// Correct: out T only in output positions
+interface ICovariant<out T>
 {
+    T GetValue();
+}
+
+// Correct: in T only in input positions
+interface IContravariant<in T>
+{
+    void Process(T arg);
+}
+
+// No modifier needed for both input and output
+interface IInvariant<T>
+{
+    T Transform(T arg);
 }
 ```
 
-To fix this error, use a non-static class or interface as the constraint instead.
-
-## CS1961
-
-*Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
-
-This error occurs when a type parameter's variance modifier (`in` or `out`) conflicts with how the type parameter is used in the declaration. Covariant (`out`) type parameters can only appear in output positions (return types), and contravariant (`in`) type parameters can only appear in input positions (parameter types).
-
-The following sample generates CS1961:
-
-```csharp
-// Covariant type parameter used in input position
-interface IContravariant<out T>
-{
-    void Method(T argument);  // CS1961: T should be 'in' for input positions
-}
-
-// Contravariant type parameter used in output position
-interface ICovariant<in T>
-{
-    T Method();  // CS1961: T should be 'out' for output positions
-}
-```
-
-To fix this error, ensure the variance modifier matches how the type parameter is used:
-
-- Use `out` (covariant) for type parameters that only appear in return types.
-- Use `in` (contravariant) for type parameters that only appear in parameter types.
-- Remove the variance modifier if the type parameter must appear in both positions.
-
-## CS7002
-
-*Unexpected use of a generic name*
-
-This error occurs when you use a generic type name in a context where generic types aren't allowed. For example, enums can't be generic, so using a generic name in an enum declaration causes this error.
-
-The following sample generates CS7002:
-
-```csharp
-enum Colors<T>  // CS7002: Unexpected use of a generic name
-{
-    Red,
-    Green,
-    Blue
-}
-```
-
-To fix this error, remove the type parameter from the declaration. If you need a generic container for your enum values, consider using a generic class or struct instead.
-
-## CS8322
-
-*Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
-
-This error occurs when you pass a `dynamic` argument to a generic local function that relies on type inference. The compiler can't infer type arguments from `dynamic` because the actual type isn't known until runtime.
-
-The following sample generates CS8322:
-
-```csharp
-void Example()
-{
-    void LocalFunc<T>(T arg) { }
-    
-    dynamic d = 42;
-    LocalFunc(d);  // CS8322: Cannot infer type argument from dynamic
-}
-```
-
-To fix this error, either:
-
-- Explicitly specify the type argument: `LocalFunc<int>(d);`
-- Cast the dynamic value to the expected type: `LocalFunc((int)d);`
-- Use a non-dynamic variable instead.
+For more information, see [Covariance and Contravariance in Generics](../../../standard/generics/covariance-and-contravariance.md).

@@ -264,7 +264,7 @@ In a derived record type, your explicit copy constructor must call the base type
 [Records](../builtin-types/record.md) include a compiler-synthesized [copy constructor](../builtin-types/record.md#nondestructive-mutation). You can write an explicit copy constructor, but it must meet specific requirements. The compiler generates errors when record copy constructors violate these requirements:
 
 - The base type must have an accessible copy constructor. All `record` types have a copy constructor. Ensure the base type is a `record`, or add an accessible copy constructor to it (**CS8867**).
-- In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: this()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
+- In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: base()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
 - Copy constructors must be `public` or `protected` unless the record type is [`sealed`](../keywords/sealed.md). Add the appropriate access modifier to the copy constructor (**CS8878**).
 - If your explicit copy constructor has the same signature as the synthesized copy constructor, the definitions conflict. Remove your explicit copy constructor or modify its signature (**CS8910**).
 

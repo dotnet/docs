@@ -24,8 +24,7 @@ If a class has many injected dependencies, it might be a sign that the class has
 
 The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> instances. Services resolved from the container should never be disposed by the developer. The container disposes services automatically based on their lifetime:
 
-- **Transient** services are disposed at the end of the scope in which they were resolved. In apps that process requests, this is typically at the end of the request.
-- **Scoped** services are disposed at the end of the scope in which they were resolved. In apps that process requests, this is typically at the end of the request.
+- **Transient** and **scoped** services are disposed at the end of the scope in which they were resolved. In apps that process requests, this is typically at the end of the request.
 - **Singleton** services are disposed when the service container is disposed, usually at application shutdown.
 
 In the following example, the services are created by the service container and disposed automatically:

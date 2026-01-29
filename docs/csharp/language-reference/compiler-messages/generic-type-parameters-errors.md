@@ -34,6 +34,9 @@ f1_keywords:
   - "CS0703"
   - "CS0706"
   - "CS0717"
+  - "CS1961"
+  - "CS7002"
+  - "CS8322"
   - "CS9011"
   - "CS9012"
   - "CS9338"
@@ -64,6 +67,9 @@ helpviewer_keywords:
   - "CS0703"
   - "CS0706"
   - "CS0717"
+  - "CS1961"
+  - "CS7002"
+  - "CS8322"
   - "CS0417"
   - "CS0449"
   - "CS0450"
@@ -115,6 +121,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0703**](#cs0703): *Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'.*
 - [**CS0706**](#cs0706): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - [**CS0717**](#cs0717): *'static class': static classes cannot be used as constraints.*
+- [**CS1961**](#cs1961): *Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
+- [**CS7002**](#cs7002): *Unexpected use of a generic name.*
+- [**CS8322**](#cs8322): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
 - [**CS9011**](#constraint-syntax): *Keyword 'delegate' cannot be used as a constraint. Did you mean 'System.Delegate'?*
 - [**CS9012**](#type-parameter-declaration-and-naming): *Unexpected keyword 'record'. Did you mean 'record struct' or 'record class'?*
 - [**CS9338**](#generic-type-usage-restrictions): *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
@@ -484,3 +493,74 @@ public class G<T> where T : SC  // CS0717
 ```
 
 To fix this error, use a non-static class or interface as the constraint instead.
+
+## CS1961
+
+*Invalid variance: The type parameter 'name' must be validly variant on 'type'. 'name' is variant.*
+
+This error occurs when a type parameter's variance modifier (`in` or `out`) conflicts with how the type parameter is used in the declaration. Covariant (`out`) type parameters can only appear in output positions (return types), and contravariant (`in`) type parameters can only appear in input positions (parameter types).
+
+The following sample generates CS1961:
+
+```csharp
+// Covariant type parameter used in input position
+interface IContravariant<out T>
+{
+    void Method(T argument);  // CS1961: T should be 'in' for input positions
+}
+
+// Contravariant type parameter used in output position
+interface ICovariant<in T>
+{
+    T Method();  // CS1961: T should be 'out' for output positions
+}
+```
+
+To fix this error, ensure the variance modifier matches how the type parameter is used:
+
+- Use `out` (covariant) for type parameters that only appear in return types.
+- Use `in` (contravariant) for type parameters that only appear in parameter types.
+- Remove the variance modifier if the type parameter must appear in both positions.
+
+## CS7002
+
+*Unexpected use of a generic name*
+
+This error occurs when you use a generic type name in a context where generic types aren't allowed. For example, enums can't be generic, so using a generic name in an enum declaration causes this error.
+
+The following sample generates CS7002:
+
+```csharp
+enum Colors<T>  // CS7002: Unexpected use of a generic name
+{
+    Red,
+    Green,
+    Blue
+}
+```
+
+To fix this error, remove the type parameter from the declaration. If you need a generic container for your enum values, consider using a generic class or struct instead.
+
+## CS8322
+
+*Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
+
+This error occurs when you pass a `dynamic` argument to a generic local function that relies on type inference. The compiler can't infer type arguments from `dynamic` because the actual type isn't known until runtime.
+
+The following sample generates CS8322:
+
+```csharp
+void Example()
+{
+    void LocalFunc<T>(T arg) { }
+    
+    dynamic d = 42;
+    LocalFunc(d);  // CS8322: Cannot infer type argument from dynamic
+}
+```
+
+To fix this error, either:
+
+- Explicitly specify the type argument: `LocalFunc<int>(d);`
+- Cast the dynamic value to the expected type: `LocalFunc((int)d);`
+- Use a non-dynamic variable instead.

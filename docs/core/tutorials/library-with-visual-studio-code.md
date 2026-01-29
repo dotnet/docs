@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 09/12/2024
+ms.date: 01/29/2026
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
 

@@ -32,6 +32,17 @@ The .NET CLI is used to publish the app.
    dotnet publish
    ```
 
+   The default build configuration is *Release*, which is appropriate for a deployed site running in production. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
+
+   The command output is similar to the following example:
+
+   ```output
+   Restore complete (1.1s)
+     HelloWorld net10.0 succeeded (7.8s) → bin\Release\net10.0\publish\
+
+   Build succeeded in 10.3s
+   ```
+
 ::: zone-end
 
 ::: zone pivot="codespaces"
@@ -53,25 +64,6 @@ The .NET CLI is used to publish the app.
    ```dotnetcli
    dotnet publish HelloWorld.cs
    ```
-
-::: zone-end
-
-::: zone pivot="vscode"
-
-   The default build configuration is *Release*, which is appropriate for a deployed site running in production. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
-
-   The command output is similar to the following example:
-
-   ```output
-   Restore complete (1.1s)
-     HelloWorld net10.0 succeeded (7.8s) → bin\Release\net10.0\publish\
-
-   Build succeeded in 10.3s
-   ```
-
-::: zone-end
-
-::: zone pivot="codespaces"
 
    The command creates an independent executable.
 
@@ -138,25 +130,27 @@ In the following steps, you'll look at the files created by the publish process.
 
    As the image shows, the published output includes the following files:
 
-      - *HelloWorld*
+   - *HelloWorld*
 
-      This is the [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) version of the application. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) version of the application. The file is operating-system-specific. Codespaces runs on Linux, so this a Linux executable.
 
-      - *HelloWorld.deps.json*
+   - *HelloWorld.deps.json*
 
       This is the application's runtime dependencies file. It defines the .NET components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/4af56f867f2f638b4562c3b8432d70f7b09577b3/Documentation/specs/runtime-configuration-file.md).
 
-      - *HelloWorld.dll*
+   - *HelloWorld.dll*
 
       This is the [framework-dependent deployment](../deploying/index.md#cross-platform-dll-deployment) version of the application. To run this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
-      - *HelloWorld.pdb* (optional for deployment)
+   - *HelloWorld.pdb* (optional for deployment)
 
       This is the debug symbols file. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
 
-      - *HelloWorld.runtimeconfig.json*
+   - *HelloWorld.runtimeconfig.json*
 
       This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
+
+   Right-click and select **Download...** to download files from Codespaces to your local computer.
 
 ::: zone-end
 

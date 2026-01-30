@@ -56,7 +56,7 @@ You can use an [expression body definition](../../programming-guide/statements-e
 
 ## Operator precedence
 
-In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. In the following example, the multiplication is performed first because it has higher precedence than addition:
+In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. Operands of the same precedence are evaluated in lexical order. In the following example, the multiplication is performed first because it has higher precedence than addition:
 
 ```csharp
 var a = 2 + 2 * 2;

@@ -197,12 +197,12 @@ You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an
 
 ## Operator precedence and associativity
 
-The following list orders arithmetic operators from highest precedence to lowest precedence:
+The following list orders arithmetic operators in groups from highest precedence to lowest precedence:
 
-- Postfix increment `x++` and decrement `x--` operators
-- Prefix increment `++x` and decrement `--x` operators, and unary `+` and `-` operators
-- Multiplicative `*`, `/`, and `%` operators
-- Additive `+` and `-` operators
+- ([Primary](./index.md#operator-precedence)) operators: postfix increment `x++` and decrement `x--`.
+- ([Unary](./index.md#operator-precedence)) operators: Prefix increment `++x` and decrement `--x` operators, and unary `+` and `-` operators.
+- ([Multiplicative](./index.md#operator-precedence)) operators: `*`, `/`, and `%` operators.
+- ([Additive](./index.md#operator-precedence)) operators: Additive `+` and `-` operators.
 
 Binary arithmetic operators are left-associative. That is, the compiler evaluates operators with the same precedence level from left to right.
 

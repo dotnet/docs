@@ -26,7 +26,7 @@ The following rules govern the interpretation of a multiline raw string literal:
 - The newline before the closing quotes isn't included in the literal string.
 - When whitespace precedes the end delimiter on the same line, the exact number and kind of whitespace characters (for example, spaces vs. tabs) must exist at the beginning of each content line. Specifically, a space doesn't match a horizontal tab, and vice versa.
 
-The last rule is easy if you're consistent in how you use tabs (`u+009`) or spaces (`u+020`) for indenting your code, including raw string literals. You can use either, but don't mix them in the same multiline raw string literal. For example, the following declarations are legal (whitespace is drawn as `\b` for a space character and `\t` for a tab character:)
+The last rule is easy if you're consistent in how you use tabs (`U+0009`) or spaces (`U+0020`) for indenting your code, including raw string literals. You can use either, but don't mix them in the same multiline raw string literal. For example, the following declarations are legal (whitespace is drawn as `\b` for a space character and `\t` for a tab character:)
 
 ```csharp
 var xml = """

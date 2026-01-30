@@ -92,7 +92,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0080**](#type-parameter-declaration-and-naming): *Constraints are not allowed on non-generic declarations.*
 - [**CS0081**](#type-parameter-declaration-and-naming): *Type parameter declaration must be an identifier, not a type.*
 - [**CS0224**](#type-argument-count-and-usage): *A method with vararg cannot be generic, be in a generic type, or have a params parameter.*
-- [**CS0304**](#constructor-constraints): *Cannot create an instance of the variable type because it does not have the new() constraint.*
+- [**CS0304**](#constructor-constraints): *Cannot create an instance of the variable type because it does not have the `new()` constraint.*
 - [**CS0305**](#type-argument-count-and-usage): *Using the generic type requires N type arguments.*
 - [**CS0306**](#type-argument-count-and-usage): *The type may not be used as a type argument.*
 - [**CS0307**](#type-argument-count-and-usage): *The identifier is not a generic method. If you intended an expression list, use parentheses around the expression.*
@@ -103,7 +103,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter in the generic type or method. The nullable type 'type1' does not satisfy the constraint. Nullable types can not satisfy any interface constraints.*
 - [**CS0314**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter in the generic type or method. There is no boxing conversion or type parameter conversion.*
 - [**CS0315**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter `T` in the generic type or method. There is no boxing conversion.*
-- [**CS0401**](#constraint-declaration-and-ordering): *The new() constraint must be the last constraint specified.*
+- [**CS0401**](#constraint-declaration-and-ordering): *The `new()` constraint must be the last constraint specified.*
 - [**CS0403**](#generic-type-usage-restrictions): *Cannot convert null to type parameter because it could be a non-nullable value type. Consider using `default(T)` instead.*
 - [**CS0405**](#valid-constraint-types): *Duplicate constraint for type parameter.*
 - [**CS0412**](#type-parameter-declaration-and-naming): *Parameter: a parameter, local variable, or local function cannot have the same name as a method type parameter.*
@@ -114,12 +114,12 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0451**](#constraint-declaration-and-ordering): *The `new()` constraint cannot be used with the `struct` constraint.*
 - [**CS0454**](#constraint-conflicts-and-circular-dependencies): *Circular constraint dependency involving Type Parameter 1 and Type Parameter 2.*
 - [**CS0455**](#constraint-conflicts-and-circular-dependencies): *Type parameter inherits conflicting constraints.*
-- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter has the same name as the containing type, or method.*
-- [**CS0695**](#generic-type-usage-restrictions): *T cannot implement both interfaces because they may unify for some type parameter substitutions.*
+- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter has the same name as the containing type or method.*
+- [**CS0695**](#generic-type-usage-restrictions): *`T` cannot implement both interfaces because they may unify for some type parameter substitutions.*
 - [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from type because it is an attribute class.*
 - [**CS0702**](#valid-constraint-types): *Constraint cannot be special class.*
 - [**CS0703**](#valid-constraint-types): *Inconsistent accessibility: constraint type is less accessible than declaration.*
-- [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
+- [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class, or a type parameter.*
 - [**CS0717**](#valid-constraint-types): *Static class: static classes cannot be used as constraints.*
 - [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter must be validly variant on type.*
 - [**CS7002**](#type-argument-count-and-usage): *Unexpected use of a generic name.*
@@ -135,7 +135,7 @@ The following errors relate to how you declare and name type parameters in gener
 - **CS0080**: *Constraints are not allowed on non-generic declarations.*
 - **CS0081**: *Type parameter declaration must be an identifier, not a type.*
 - **CS0412**: *Parameter: a parameter, local variable, or local function cannot have the same name as a method type parameter.*
-- **CS0694**: *Type parameter has the same name as the containing type, or method.*
+- **CS0694**: *Type parameter has the same name as the containing type or method.*
 - **CS9012**: *Unexpected keyword `record`. Did you mean `record struct` or `record class`?*
 
 To correct these errors, ensure that you declare type parameters with valid identifiers, apply constraint clauses only to generic declarations, and avoid naming conflicts with other identifiers in scope:
@@ -271,7 +271,7 @@ The following errors relate to using invalid types as constraints on generic typ
 - **CS0405**: *Duplicate constraint for type parameter.*
 - **CS0702**: *Constraint cannot be special class.*
 - **CS0703**: *Inconsistent accessibility: constraint type is less accessible than declaration.*
-- **CS0706**: *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
+- **CS0706**: *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class, or a type parameter.*
 - **CS0717**: *`static class`: static classes cannot be used as constraints.*
 
 A constraint must be an interface, a non-sealed class, or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.

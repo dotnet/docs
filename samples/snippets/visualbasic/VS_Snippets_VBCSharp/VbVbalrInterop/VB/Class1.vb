@@ -7,9 +7,10 @@ Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 
 ' <snippet40>
+Imports INKEDLib
 
 Class Sample
-    'Private s As IInkCursor
+    Private s As IInkCursor
 
 End Class
 ' </snippet40>

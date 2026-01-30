@@ -160,3 +160,11 @@ groups:
       title: OpenAI
     - id: ollama
       title: Ollama
+- id: code-editor-set-one
+  title: Code editor
+  prompt: Choose a code editor
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: codespaces
+      title: GitHub Codespaces

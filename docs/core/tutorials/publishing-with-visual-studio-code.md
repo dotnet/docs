@@ -55,7 +55,7 @@ The .NET CLI is used to publish the app.
     #:property PublishAot=false
     ```
 
-   This property directive, disables native ahead-of-time (AOT) compilation and the app will use the standard just-in-time (JIT) compiler at runtime. The published output will be framework-dependent or a standard self-contained deployment (not native code).
+   This property directive, disables native ahead-of-time (AOT) compilation and the app will use the standard just-in-time (JIT) compiler at runtime. The published output will be framework-dependent.
 
 1. In the terminal, make sure you're in the *tutorials* folder.
 

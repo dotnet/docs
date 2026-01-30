@@ -156,10 +156,10 @@ For information about the behavior of those operators for operands of other type
 
 The following list orders pointer related operators in groups starting from the highest precedence to the lowest:
 
-- ([Primary](./index.md#operator-precedence)) operators: Postfix increment `x++` and decrement `x--` operators and the `->` and `[]` operators.
-- ([Unary](./index.md#operator-precedence)) operators: Prefix increment `++x` and decrement `--x` operators and the address-of `&` and indirection `*` operators.
-- ([Additive](./index.md#operator-precedence)) operators: `+` and `-` operators.
-- ([Relational and type testing](./index.md#operator-precedence)) operators: Comparison `<`, `>`, `<=`, and `>=` operators.
+- ([Primary](./index.md#operator-precedence)) operators: postfix increment `x++` and decrement `x--` operators and the `->` and `[]` operators.
+- ([Unary](./index.md#operator-precedence)) operators: prefix increment `++x` and decrement `--x` operators and the address-of `&` and indirection `*` operators.
+- ([Additive](./index.md#operator-precedence)) operators: binary `+` and `-` operators.
+- ([Relational and type-testing](./index.md#operator-precedence)) operators: comparison `<`, `>`, `<=`, and `>=` operators.
 - ([Equality](./index.md#operator-precedence)) operators: `==` and `!=` operators.
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence.

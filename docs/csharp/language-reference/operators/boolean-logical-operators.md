@@ -170,9 +170,9 @@ The `&`, `|`, and `^` operators support compound assignment, as the following ex
 The following list orders logical operators in groups starting from the highest precedence to the lowest:
 
 - ([Primary](./index.md#operator-precedence)) operators: Logical negation operator `!`.
-- ([Logical AND](./index.md#operator-precedence)) operators: `&`.
-- ([Logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR operator `^`.
-- ([Logical OR](./index.md#operator-precedence)) operators: `|`.
+- ([Boolean logical AND](./index.md#operator-precedence)) operators: `&`.
+- ([Boolean logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR operator `^`.
+- ([Boolean logical OR](./index.md#operator-precedence)) operators: `|`.
 - ([Conditional AND](./index.md#operator-precedence)) operators: `&&`.
 - ([Conditional OR](./index.md#operator-precedence)) operators: `||`.
 

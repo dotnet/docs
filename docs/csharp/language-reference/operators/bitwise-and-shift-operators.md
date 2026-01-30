@@ -155,9 +155,9 @@ The following list orders bitwise and shift operators in groups from highest pre
 
 - ([Unary](./index.md#operator-precedence)) operators: Bitwise complement operator `~`.
 - ([Shift](./index.md#operator-precedence)) operators: Shift operators `<<`, `>>`, and `>>>`.
-- ([Logical AND](./index.md#operator-precedence)) operators: `&`.
-- ([Logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR `^`.
-- ([Logical OR](./index.md#operator-precedence)) operators: `|`.
+- ([Bitwise logical AND](./index.md#operator-precedence)) operators: `&`.
+- ([Bitwise logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR `^`.
+- ([Bitwise logical OR](./index.md#operator-precedence)) operators: `|`.
 
 Use parentheses, `()`, to change the order of evaluation from the default operator precedence:
 

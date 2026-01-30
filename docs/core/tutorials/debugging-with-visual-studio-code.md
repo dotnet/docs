@@ -58,8 +58,6 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 *Debug* and *Release* are .NET's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
-In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
-
 ::: zone pivot="vscode"
 
 By default, Visual Studio Code launch settings use the Debug build configuration, so you don't need to change it before debugging.
@@ -72,7 +70,7 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
-1. If asked to **Select Launch Configuration**, select **C#: HelloWorld HelloWorld**.
+1. If asked to **Select Launch Configuration**, select **C#: Debug Active File**.
 
 1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 

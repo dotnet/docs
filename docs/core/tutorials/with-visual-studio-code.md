@@ -58,7 +58,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-:::image type="content" source="media/with-visual-studio-code/create-dotnet-project.png" alt-text="The .NET: New Project command in the Command Palette":::
+    :::image type="content" source="media/with-visual-studio-code/create-dotnet-project.png" alt-text="The .NET: New Project command in the Command Palette":::
 
 1. After selecting the command, you need to choose the project template. Choose **Console App**.
 
@@ -77,21 +77,7 @@ Create a .NET console app project named "HelloWorld".
    Console.WriteLine("Hello, World!");
    ```
 
-  The code defines a class, `Program`, that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
-
-   This class uses a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the `Program` class and the `Main` method. Whether you use top-level statements in your programs is a matter of style preference. If you created this class and set **Do not use top-level statements to true**, the `Program` class would look like the following:
-
-   ```csharp
-   namespace HelloWorld;
-
-   class Program
-   {
-       static void Main(string[] args)
-       {
-           Console.WriteLine("Hello, World!");
-       }
-   }
-   ```
+    The code defines a class, `Program`, that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
 
 ::: zone-end
 
@@ -107,9 +93,9 @@ Start a GitHub Codespace with the tutorial environment.
 
 1. Select the `+` sign or the green **Create codespace on main** button to create a new Codespace using this environment.
 
-:::image type="content" source="media/with-visual-studio-code/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
+    :::image type="content" source="media/with-visual-studio-code/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
 
-### Create a .NET file-based app named "HelloWorld".
+### Create a .NET file-based app
 
 In Codespaces, you'll create a [file-based app](../sdk/file-based-apps.md). File-based apps let you build .NET applications from a single C# file without creating a traditional project file.
 
@@ -119,7 +105,7 @@ In Codespaces, you'll create a [file-based app](../sdk/file-based-apps.md). File
 
 1. *HelloWorld.cs* opens in the editor. Type or copy the following code into the file:
 
-  :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="HelloWorld":::
+    :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="HelloWorld":::
 
 ::: zone-end
 
@@ -177,7 +163,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::image type="content" source="media/with-visual-studio-code/run-program-class.png" alt-text="Terminal window with modified program output":::
 
-Press <kbd>Enter</kbd> to exit the program.
+    Press <kbd>Enter</kbd> to exit the program.
 
 ::: zone-end
 

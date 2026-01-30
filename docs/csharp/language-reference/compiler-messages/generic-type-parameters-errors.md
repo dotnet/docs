@@ -209,7 +209,7 @@ For more information, see [Generic Type Parameters](../../programming-guide/gene
 
 The following errors relate to the `new()` constraint on generic type parameters:
 
-- **CS0304**: *Cannot create an instance of the variable type because it does not have the new() constraint.*
+- **CS0304**: *Cannot create an instance of the variable type because it does not have the `new()` constraint.*
 - **CS0310**: *The type must be a non-abstract type with a public parameterless constructor in order to use it as parameter in the generic type or method.*
 - **CS0417**: *Identifier: cannot provide arguments when creating an instance of a variable type.*
 
@@ -219,13 +219,13 @@ To correct these errors, add the `new()` constraint to type parameters that need
 - Ensure that type arguments used with `new()` constrained type parameters have public parameterless constructors (**CS0310**). When a generic type or method declares a `new()` constraint on a type parameter, any concrete type used as a type argument must be non-abstract and must provide a public parameterless constructor. If a type only has non-public constructors (such as `private` or `protected` constructors) or only has constructors with parameters, it can't satisfy the `new()` constraint. To fix this error, either add a public parameterless constructor to the type or use a different type argument that already has one.
 - Remove constructor arguments when instantiating type parameters (**CS0417**). The `new()` constraint only guarantees the existence of a parameterless constructor, so you can't pass arguments to `new T(arguments)` because the compiler can't verify that a constructor with those specific parameter types exists on the types that are substituted for `T`. If you need to construct instances with specific arguments, consider using factory methods, abstract factory patterns, or specific base class or interface constraints that define the construction behavior you need.
 
-For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md) and the [new() constraint](../keywords/new-constraint.md).
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md) and the [`new()` constraint](../keywords/new-constraint.md).
 
 ## Constraint satisfaction and conversions
 
 The following errors relate to type arguments not satisfying the constraints of generic type parameters:
 
-- **CS0311**: *The type cannot be used as type parameter `T` in the generic type or method. There is no implicit reference conversion from.*
+- **CS0311**: *The type cannot be used as type parameter `T` in the generic type or method. There is no implicit reference conversion.*
 - **CS0312**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint.*
 - **CS0313**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint. Nullable types can not satisfy any interface constraints.*
 - **CS0314**: *The type cannot be used as the type parameter in the generic type or method. There is no boxing conversion or type parameter conversion.*

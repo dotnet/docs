@@ -29,6 +29,7 @@ The following rules govern the interpretation of a multiline raw string literal:
 The last rule is easy if you're consistent in how you use tabs (`u+009`) or spaces (`u+020`) for indenting your code, including raw string literals. You can use either, but don't mix them in the same multiline raw string literal. For example, the following declarations are legal (whitespace is drawn as `\b` for a space character and `\t` for a tab character:)
 
 ```csharp
+// Using `\b` and `\t` to visual the actual whitespace characters
 var xml = """
 \b\b\b\b<element attr="content">
 \b\b\b\b\b\b<body>
@@ -36,6 +37,7 @@ var xml = """
 \b\b\b\b</element>
 \b\b\b\b""";
 
+// Using `\b` and `\t` to visual the actual whitespace characters
 var xmlTabs = """
 \t\t\t\t<element attr="content">
 \t\t\t\t\t\t<body>
@@ -47,6 +49,7 @@ var xmlTabs = """
 However, because the following declaration doesn't use a consistent format for the whitespace to the left of the closing `"""`, the declaration is invalid:
 
 ```csharp
+// Using `\b` and `\t` to visual the actual whitespace characters
 var xml = """
 \t\b\b\b<element attr="content">
 \b\t\b\b\b\b<body>

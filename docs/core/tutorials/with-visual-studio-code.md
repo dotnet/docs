@@ -111,7 +111,7 @@ Start a GitHub Codespace with the tutorial environment.
 
 ### Create a .NET file-based app named "HelloWorld".
 
-In Codespaces, you'll create a [file-based app](dotnet/core/sdk/file-based-apps). File-based apps let you build .NET applications from a single C# file without creating a traditional project file.
+In Codespaces, you'll create a [file-based app](../sdk/file-based-apps.md). File-based apps let you build .NET applications from a single C# file without creating a traditional project file.
 
 1. When your codespace loads, right-click on the *tutorials* folder and select **New File...**. Enter the name *HelloWorld.cs* and then press <kbd>Enter</kbd>.
 

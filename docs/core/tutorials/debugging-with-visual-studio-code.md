@@ -22,7 +22,39 @@ This tutorial introduces the debugging tools available in GitHub Codespaces for 
 
 This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
 
-## Use Debug build configuration
+## Set a breakpoint
+
+A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is run.
+
+::: zone pivot="vscode"
+
+1. Start Visual Studio Code.
+
+1. Open the folder of the project that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+
+1. Open the *Program.cs* file.
+
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
+
+   Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set.png" alt-text="Breakpoint set":::
+
+::: zone-end
+
+::: zone pivot="codespaces"
+
+1. Open your GitHub Codespace that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+
+1. Open the *HelloWorld.cs* file.
+
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. You can also set a breakpoint are by pressing <kbd>F9</kbd> while the line of code is selected.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-set.png" alt-text="Breakpoint set":::
+
+::: zone-end
+
+## Start debugging
 
 *Debug* and *Release* are .NET's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
@@ -32,53 +64,9 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
 By default, Visual Studio Code launch settings use the Debug build configuration, so you don't need to change it before debugging.
 
-1. Start Visual Studio Code.
-
-1. Open the folder of the project that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
-
-::: zone-end
-
-::: zone pivot="codespaces"
-
-By default, GitHub Codespaces uses the Debug build configuration, so you don't need to change it before debugging.
-
-1. Open your GitHub Codespace that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
-
-::: zone-end
-
-## Set a breakpoint
-
-A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is run.
-
-::: zone pivot="vscode"
-
-1. Open the *Program.cs* file.
-
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
-
-   Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
-
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
-
-::: zone-end
-
-::: zone pivot="codespaces"
-
-1. Open the *HelloWorld.cs* file.
-
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers.
-
-   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-set.png" alt-text="Breakpoint set":::
-
-::: zone-end
-
-## Start debugging
-
-::: zone pivot="vscode"
-
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane-net6.png" alt-text="Open the Debug tab in Visual Studio Code":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
 1. Select **Run and Debug**. If asked, select **C#** and then select **C#: Launch startup project**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
 
@@ -94,11 +82,13 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit-net6.png" alt-text="Breakpoint hit, showing Locals":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
 
 ::: zone-end
 
 ::: zone pivot="codespaces"
+
+By default, GitHub Codespaces uses the Debug build configuration, so you don't need to change it before debugging.
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
@@ -124,9 +114,9 @@ The **Debug Console** window lets you interact with the application you're debug
 
 1. Enter `name = "Gracie"` at the prompt at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values-net6.png" alt-text="Change variable values":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values.png" alt-text="Change variable values":::
 
-1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
+1. Enter `currentDate = DateTime.Parse("2026-01-28T20:54:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
    The **Variables** window displays the new values of the `name` and `currentDate` variables.
 
@@ -146,7 +136,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click (<kbd>Ctrl</kbd>-click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu-net6.png" alt-text="Breakpoint context menu":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
 
 1. Select `Expression` in the drop-down, enter the following conditional expression, and press <kbd>Enter</kbd>.
 
@@ -154,7 +144,7 @@ The program displays the string that the user enters. What happens if the user d
    String.IsNullOrEmpty(name)
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression-net6.png" alt-text="Enter a conditional expression":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression.png" alt-text="Enter a conditional expression":::
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 

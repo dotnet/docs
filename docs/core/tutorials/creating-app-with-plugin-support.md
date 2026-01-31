@@ -81,6 +81,13 @@ namespace AppWithPlugin
                     {
                         Console.WriteLine($"-- {commandName} --");
 
+                        // Skip command-line switches/flags (arguments starting with '/' or '-')
+                        if (commandName.StartsWith("/") || commandName.StartsWith("-"))
+                        {
+                            Console.WriteLine($"Skipping command-line flag: {commandName}");
+                            continue;
+                        }
+
                         // Execute the command with the name passed as an argument.
 
                         Console.WriteLine();
@@ -138,8 +145,8 @@ Replace the `// Execute the command with the name passed as an argument` comment
 ICommand command = commands.FirstOrDefault(c => c.Name == commandName);
 if (command == null)
 {
-    Console.WriteLine("No such command is known.");
-    return;
+    Console.WriteLine($"No such command is known: {commandName}");
+    continue;
 }
 
 command.Execute();

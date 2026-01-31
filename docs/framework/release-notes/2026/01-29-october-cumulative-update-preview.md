@@ -22,7 +22,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 Addresses an issue to add verification logic for ClickOnce to support SHA384 and SHA512. (*Applies to: .NET Framework 4.8.1*)
 
-Addresses an issue in cases where the arm64 CLR could crash when code generates and catches a NullReferenceException within the same function. (*Applies to: .NET Framework 4.8.1*)
+Addresses an issue in cases where the Arm64 CLR could crash when code generates and catches a NullReferenceException within the same function. (*Applies to: .NET Framework 4.8.1*)
 
 ## Known issues in this release
 

@@ -1,7 +1,7 @@
 ---
 title: October 2025 cumulative update
 description: Learn about the improvements in the .NET Framework October 2025 cumulative update.
-ms.date: 10/14/2025
+ms.date: 11/10/2025
 ---
 # October 2025 cumulative update
 

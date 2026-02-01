@@ -121,7 +121,7 @@ To configure these options, you can use the `Configure` extension method on the 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
+builder.Services.Configure<ConfigurationServiceEndpointProviderOptions>(
     static options =>
     {
         options.SectionName = "MyServiceEndpoints";

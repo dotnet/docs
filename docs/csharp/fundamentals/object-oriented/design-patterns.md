@@ -2,7 +2,7 @@
 title: "Design patterns in C#"
 description: Provides an overview of common design patterns and their use in C# applications.
 ms.date: 01/30/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "design patterns [C#]"
   - "creational patterns"
   - "structural patterns"
@@ -24,10 +24,10 @@ This article provides a high-level overview of the most commonly used design pat
 
 A *design pattern* describes:
 
-- A common problem in software design  
-- The context in which the problem occurs  
-- A reusable solution structure  
-- The consequences and trade-offs of using that solution  
+- A common problem in software design
+- The context in which the problem occurs
+- A reusable solution structure
+- The consequences and trade-offs of using that solution
 
 Design patterns do not depend on a specific programming language, but their implementation can vary depending on language features. C# provides strong support for design patterns through interfaces, inheritance, delegates, generics, and dependency injection.
 
@@ -140,6 +140,7 @@ The following articles in this series describe individual design patterns with p
 
 Each article explains when to use the pattern, how it works, and its advantages and disadvantages.
 
-## C# Language Specification  
+## C# Language Specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+

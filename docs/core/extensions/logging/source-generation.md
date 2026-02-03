@@ -7,9 +7,9 @@ ai-usage: ai-assisted
 
 # Compile-time logging source generation
 
-.NET 6 introduces the `LoggerMessageAttribute` type. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used, it source-generates performant logging APIs. The source-generation logging support is designed to deliver a highly usable and highly performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
+Source-generated logging is designed to deliver a highly usable and highly performant logging solution for modern .NET apps. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
-The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it's either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is considerably faster at runtime than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
+The source generator is triggered when <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> is used on `partial` logging methods. When triggered, it autogenerates the implementation of the `partial` methods it's decorating. If there's a problem, it produces compile-time diagnostics with hints about proper usage. This compile-time logging solution is considerably faster at runtime than previously available logging approaches. It eliminates boxing, temporary allocations, and copies to the maximum extent possible.
 
 ## Basic usage
 
@@ -114,7 +114,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ## Log method constraints
 
-When using the `LoggerMessageAttribute` on logging methods, some constraints must be followed:
+Logging methods that are decorated with `LoggerMessageAttribute` must meet the following requirements:
 
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
@@ -122,15 +122,7 @@ When using the `LoggerMessageAttribute` on logging methods, some constraints mus
 - Logging methods *can't* be generic.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
-The code-generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
-
-```xml
-<PropertyGroup>
-  <LangVersion>9.0</LangVersion>
-</PropertyGroup>
-```
-
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md).
+The code-generation model depends on code being compiled with a modern C# compiler, that is, version 9 or later. For information about changing the language version, see [C# language versioning](../../csharp/language-reference/configure-language-version.md).
 
 ## Log method anatomy
 
@@ -433,7 +425,7 @@ With the advent of C# source generators, writing highly performant logging APIs 
 - Allows the logging structure to be preserved and enables the exact format syntax required by [Message Templates](https://messagetemplates.org).
 - Allows supplying alternative names for the template placeholders and using format specifiers.
 - Allows the passing of all original data as-is, without any complication around how it's stored before something is done with it (other than creating a `string`).
-- Provides logging-specific diagnostics, and emits warnings for duplicate event IDs.
+- Provides logging-specific diagnostics and emits warnings for duplicate event IDs.
 
 Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType>:
 

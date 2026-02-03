@@ -18,7 +18,7 @@ This first example shows the basics, but it's only suitable for a trivial consol
 
 In the next section you see how to improve the code considering scale, performance, configuration, and typical programming patterns.
 
-:::code language="csharp" source="snippets/getting-started/Program.cs":::
+:::code language="csharp" source="../snippets/logging/getting-started/Program.cs":::
 
 The preceding example:
 
@@ -28,7 +28,7 @@ The preceding example:
 
 This project file for this example includes two NuGet packages:
 
-:::code language="xml" source="snippets/getting-started/getting-started.csproj":::
+:::code language="xml" source="../snippets/logging/getting-started/getting-started.csproj":::
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
@@ -40,15 +40,15 @@ Consider making these changes to the previous example when logging in a less tri
 
 - [Compile-time source generation](source-generation.md) for logging is usually a better alternative to `ILogger` extension methods like `LogInformation`. Source-generated logging offers better performance and stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
-   :::code language="csharp" source="snippets/getting-started-logger-message/Program.cs" highlight="9,12-13":::
+   :::code language="csharp" source="../snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
 - The recommended practice for choosing a log category name is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. Specify the class type in the type parameter of the <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> method.
 
-   :::code language="csharp" source="snippets/getting-started-type-category-name/Program.cs" highlight="8":::
+   :::code language="csharp" source="../snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
 - If you don't use console logs as your sole production monitoring solution, add the [logging providers](providers.md) you plan to use. For example, use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-   :::code language="csharp" source="snippets/getting-started-open-telemetry/Program.cs" highlight="6-9":::
+   :::code language="csharp" source="../snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
 
 ## Integration with hosts and dependency injection
 
@@ -58,7 +58,7 @@ If your application uses [Dependency Injection (DI)](../dependency-injection/ove
 
 This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview):
 
-:::code language="csharp" source="snippets/minimal-web/Program.cs" highlight="12":::
+:::code language="csharp" source="../snippets/logging/minimal-web/Program.cs" highlight="12":::
 
 The preceding example:
 
@@ -73,13 +73,13 @@ Host builders initialize [default configuration](../generic-host.md#host-builder
 
 This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/minimal-web-open-telemetry/Program.cs" range="3-6" highlight="2":::
+:::code language="csharp" source="../snippets/logging/minimal-web-open-telemetry/Program.cs" range="3-6" highlight="2":::
 
 ### Create an ILoggerFactory with DI
 
 If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
 
-:::code language="csharp" source="snippets/di-without-host/Program.cs" highlight="6":::
+:::code language="csharp" source="../snippets/logging/di-without-host/Program.cs" highlight="6":::
 
 The preceding example:
 

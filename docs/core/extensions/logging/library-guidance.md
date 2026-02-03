@@ -23,7 +23,7 @@ For more information, see [How filtering rules are applied](overview.md#how-filt
 
 The `ILogger` API supports two approaches to using the API. You can either call methods such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A?displayProperty=nameWithType>, or you can use the logging source generator to define strongly typed logging methods. For most situations, the source generator is recommended because it offers superior performance and stronger typing. It also isolates logging-specific concerns such as message templates, IDs, and log levels from the calling code. The non-source-generated approach is primarily useful for scenarios where you're willing to give up those advantages to make the code more concise.
 
-:::code source="snippets/library-authors/LogMessages.cs":::
+:::code source="../snippets/logging/library-authors/LogMessages.cs":::
 
 The preceding code:
 

@@ -22,26 +22,26 @@ This article covers some different techniques for extracting parts of a string.
 
 The following examples show three different overloads of `String.Split()`. The first example calls the <xref:System.String.Split(System.Char[])> overload without passing any separator characters. When you don't specify any delimiting characters, `String.Split()` uses default delimiters, which are white-space characters, to split up the string.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#1)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#1)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="1":::
 
 As you can see, the period characters (`.`) are included in two of the substrings. If you want to exclude the period characters, you can add the period character as an additional delimiting character. The next example shows how to do this.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#2)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#2)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="2":::
 
 The periods are gone from the substrings, but now two extra empty substrings have been included. These empty substring represent the substring between the word and the period that follows it. To omit empty substrings from the resulting array, you can call the
 <xref:System.String.Split(System.Char[],System.StringSplitOptions)> overload and specify
 <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> for the `options` parameter.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#3)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#3)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="3":::
 
 ## Regular expressions
 
 If your string conforms to a fixed pattern, you can use a regular expression to extract and handle its elements. For example, if strings take the form "*number* *operand* *number*", you can use a [regular expression](regular-expressions.md) to extract and handle the string's elements. Here's an example:
 
-:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="1" interactive="try-dotnet":::
+:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="1":::
 :::code language="vb" source="snippets/parse-strings/vb/regex.vb" id="1":::
 
 The regular expression pattern `(\d+)\s+([-+*/])\s+(\d+)` is defined like this:
@@ -69,7 +69,7 @@ For example, the <xref:System.String.Split%2A> method cannot be used to split th
 
 A regular expression can split this string easily, as the following example shows.
 
-:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="2" interactive="try-dotnet":::
+:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="2":::
 :::code language="vb" source="snippets/parse-strings/vb/regex.vb" id="2":::
 
 The regular expression pattern `\[([^\[\]]+)\]` is defined like this:
@@ -82,7 +82,7 @@ The regular expression pattern `\[([^\[\]]+)\]` is defined like this:
 
 The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method is almost identical to <xref:System.String.Split%2A?displayProperty=nameWithType>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.
 
-:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="3" interactive="try-dotnet":::
+:::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="3":::
 :::code language="vb" source="snippets/parse-strings/vb/regex.vb" id="3":::
 
 The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:
@@ -109,11 +109,10 @@ If you aren't interested in all of the substrings in a string, you might prefer 
 
 The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.
 
-:::code language="csharp" source="snippets/parse-strings/csharp/indexof.cs" id="1" interactive="try-dotnet":::
+:::code language="csharp" source="snippets/parse-strings/csharp/indexof.cs" id="1":::
 :::code language="vb" source="snippets/parse-strings/vb/indexof.vb" id="1":::
 
 ## See also
 
-- [Basic string operations in .NET](basic-string-operations.md)
 - [.NET regular expressions](regular-expressions.md)
 - [How to parse strings using String.Split in C#](../../csharp/how-to/parse-strings-using-split.md)

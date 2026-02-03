@@ -147,6 +147,10 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 11
+        items:
+          - name: Breaking changes
+            href: ../core/compatibility/11.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 10
         items:
           - name: What's new
@@ -161,7 +165,7 @@ items:
               - name: SDK
                 href: ../core/whats-new/dotnet-10/sdk.md
           - name: Breaking changes
-            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: ../core/compatibility/10.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new
@@ -255,7 +259,7 @@ items:
                     href: runtime-libraries/system-convert.md
           - name: Choose between anonymous and tuple types
             href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-          - name: Class library overview
+          - name: Core .NET libraries overview
             href: ../standard/class-library-overview.md
           - name: Supplemental API remarks
             items:
@@ -617,10 +621,8 @@ items:
             href: ../standard/base-types/string-comparison-net-5-plus.md
           - name: Basic string operations
             items:
-              - name: Overview
-                href: ../standard/base-types/basic-string-operations.md
-                displayName: string operations
               - name: Create new strings
+                displayName: string operations
                 href: ../standard/base-types/creating-new.md
               - name: Trim and remove characters
                 href: ../standard/base-types/trimming.md
@@ -1039,22 +1041,23 @@ items:
       - name: The System.Random class
         href: runtime-libraries/system-random.md
       - name: Artificial intelligence (AI)
-        displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
+        displayName: ai,microsoft.extensions.ai,ollama,openai,azure inference,ichatclient
         href: ../ai/microsoft-extensions-ai.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Dependency injection
         items:
           - name: Overview
-            href: ../core/extensions/dependency-injection.md
+            href: ../core/extensions/dependency-injection/overview.md
             displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-          - name: Dependency injection basics
-            href: ../core/extensions/dependency-injection-basics.md
-            displayName: dependency injection basics,di basics,ioc basics,ioc container basics,dependency container basics,inversion of control basics
-          - name: Use dependency injection
-            href: ../core/extensions/dependency-injection-usage.md
-            displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-          - name: Dependency injection guidelines
-            href: ../core/extensions/dependency-injection-guidelines.md
-            displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+          - name: Service registration
+            href: ../core/extensions/dependency-injection/service-registration.md
+          - name: Service lifetimes
+            href: ../core/extensions/dependency-injection/service-lifetimes.md
+          - name: "Quickstart: Dependency injection basics"
+            href: ../core/extensions/dependency-injection/basics.md
+          - name: "Tutorial: Use dependency injection"
+            href: ../core/extensions/dependency-injection/usage.md
+          - name: Guidelines
+            href: ../core/extensions/dependency-injection/guidelines.md
       - name: Configuration
         items:
           - name: Overview
@@ -1333,12 +1336,12 @@ items:
                 href: runtime-libraries/system-resources-resourcereader.md
               - name: SatelliteContractVersionAttribute class
                 href: runtime-libraries/system-resources-satellitecontractversionattribute.md
-      - name: Worker Services
+      - name: Worker services
         items:
           - name: Overview
             displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
             href: ../core/extensions/workers.md
-          - name: Create a Queue Service
+          - name: Create a queue service
             href: ../core/extensions/queue-service.md
           - name: Use scoped services with a BackgroundService
             href: ../core/extensions/scoped-service.md
@@ -1349,7 +1352,7 @@ items:
             displayName: msi,windows service installer,setup.exe
           - name: Implement the IHostedService interface
             href: ../core/extensions/timer-service.md
-          - name: Deploy a Worker Service to Azure
+          - name: Deploy a worker service to Azure
             href: ../core/extensions/cloud-service.md
       - name: Caching
         href: ../core/extensions/caching.md
@@ -1495,7 +1498,7 @@ items:
       - name: Reflection
         items:
           - name: Overview
-            href: reflection/reflection.md
+            href: reflection/overview.md
           - name: View type information
             href: reflection/viewing-type-information.md
           - name: Reflection and generic types

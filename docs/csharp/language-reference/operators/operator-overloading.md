@@ -1,7 +1,7 @@
 ---
 title: "Operator overloading - Define unary, arithmetic, equality, and comparison operators."
 description: "Learn how to overload a C# operator and which C# operators are overloadable. In general, the unary, arithmetic, equality, and comparison operators are overloadable."
-ms.date: 06/11/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "operator_CSharpKeyword"
   - operator
@@ -11,7 +11,9 @@ helpviewer_keywords:
 ---
 # Operator overloading - predefined unary, arithmetic, equality, and comparison operators
 
-A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
+You can overload a predefined C# operator in a user-defined type. By overloading an operator, you provide a custom implementation for the operation when one or both operands are of that type. See the [Overloadable operators](#overloadable-operators) section for a list of C# operators that you can overload.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 
@@ -46,7 +48,7 @@ A compound assignment overloaded operator must follow these rules:
 - The return type must be `void`.
 - The declaration must include one parameter, which represents the right hand side of the compound assignment.
 
-Beginning with C# 14, the increment (`++`) and decrement (`--`) operators can be overloaded as instance members. Instance operators can improve performance by avoiding the creation of a new instance. An instance operator must follow these rules:
+Starting in C# 14, you can overload the increment (`++`) and decrement (`--`) operators as instance members. Instance operators can improve performance by avoiding the creation of a new instance. An instance operator must follow these rules:
 
 - It must include the `public` modifier.
 - It can't include the `static` modifier.
@@ -59,7 +61,7 @@ The following table shows the operators that can't be overloaded:
 
 | Operators | Alternatives |
 | :---------: | --------------- |
-|[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-), [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12153-user-defined-conditional-logical-operators ).|
+|[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-), [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12163-user-defined-conditional-logical-operators ).|
 |[<code>a&#91;i&#93;</code>](member-access-operators.md#indexer-operator-), [`a?[i]`](member-access-operators.md#null-conditional-operators--and-)|Define an [indexer](../../programming-guide/indexers/index.md).|
 |[`(T)x`](type-testing-and-cast.md#cast-expression)|Define custom type conversions performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).|
 |[`^x`](member-access-operators.md#index-from-end-operator-), [`x = y`](assignment-operator.md), [`x.y`](member-access-operators.md#member-access-expression-), [`x?.y`](member-access-operators.md#null-conditional-operators--and-), [`c ? t : f`](conditional-operator.md), [`x ?? y`](null-coalescing-operator.md), [`??= y`](null-coalescing-operator.md),<br />[`x..y`](member-access-operators.md#range-operator-), [`x->y`](pointer-related-operators.md#pointer-member-access-operator--), [`=>`](lambda-operator.md), [`f(x)`](member-access-operators.md#invocation-expression-), [`as`](type-testing-and-cast.md#the-as-operator), [`await`](await.md), [`checked`](../statements/checked-and-unchecked.md), [`unchecked`](../statements/checked-and-unchecked.md), [`default`](default.md), [`delegate`](delegate-operator.md), [`is`](type-testing-and-cast.md#the-is-operator), [`nameof`](nameof.md), [`new`](new-operator.md), <br />[`sizeof`](sizeof.md), [`stackalloc`](stackalloc.md), [`switch`](switch-expression.md), [`typeof`](type-testing-and-cast.md#the-typeof-operator), [`with`](with-expression.md)|None.|
@@ -71,7 +73,7 @@ Before C# 14, the compound operators can't be overloaded. Overloading the corres
 > [!IMPORTANT]
 > This section applies to C# 14 and later. Before C# 14, user-defined compound assignment operators and instance increment and decrement operators aren't allowed.
 
-If `x` is classified as a variable in a compound assignment expression such as `x «op»= y`, instance operators are preferred over any static operator for `«op»`. If an overloaded `«op»=` operator isn't declared for the type of `x` or `x` isn't classified as a variable, the static operators are used.
+If `x` is classified as a variable in a compound assignment expression such as `x «op»= y`, instance operators take precedence over any static operator for `«op»`. If the type of `x` doesn't declare an overloaded `«op»=` operator or `x` isn't classified as a variable, the static operators are used.
 
 For the postfix operator `++`, if `x` isn't classified as a variable *or* the expression `x++` is used, the instance `operator++` is ignored. Otherwise, preference is given to the instance `operator ++`. For example,
 
@@ -97,4 +99,3 @@ For more information, see the following sections of the [C# language specificati
 - [User-defined conversion operators](user-defined-conversion-operators.md)
 - [Design guidelines - Operator overloads](../../../standard/design-guidelines/operator-overloads.md)
 - [Design guidelines - Equality operators](../../../standard/design-guidelines/equality-operators.md)
-- [Why are overloaded operators always static in C#?](/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)

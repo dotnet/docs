@@ -1,7 +1,7 @@
 ---
 title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
-ms.date: 10/09/2023
+ms.date: 11/13/2025
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
@@ -15,7 +15,7 @@ ms.topic: how-to
 
 # How to use source generation in System.Text.Json
 
-Source generation in System.Text.Json is available in .NET 6 and later versions. When used in an app, the app's language version must be C# 9.0 or later. This article shows you how to use source-generation-backed serialization in your apps.
+This article shows you how to use source-generation-backed System.Text.Json serialization in your apps.
 
 For information about the different source-generation modes, see [Source-generation modes](source-generation-modes.md).
 
@@ -29,15 +29,15 @@ To use source generation with all defaults (both modes, default options):
 
    - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> instance, or
    - Takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance, or
-   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type (.NET 7 and later only).
+   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type.
 
-By default, both source generation modes are used if you don't specify one. For information about how to specify the mode to use, see [Specify source generation mode](#specify-source-generation-mode) later in this article.
+By default, both source generation modes (*metadata-based* and *serialization optimization*) are used if you don't specify one. For information about how to specify the mode to use, see [Specify source generation mode](#specify-source-generation-mode) later in this article.
 
-Here's the type that is used in the following examples:
+Here's the type that's used in the following examples:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="WF":::
 
-Here's the context class configured to do source generation for the preceding `WeatherForecast` class:
+Here's the context class configured to generate source for the preceding `WeatherForecast` class:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DefineContext":::
 
@@ -45,7 +45,7 @@ The types of `WeatherForecast` members don't need to be explicitly specified wit
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WF":::
 
-And you know that at runtime it may have `boolean` and `int` objects:
+And you know that at runtime it might have `boolean` and `int` objects:
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WFInit":::
 
@@ -95,7 +95,7 @@ Here are the preceding examples in a complete program:
 
 ## Specify source-generation mode
 
-You can specify metadata-based mode or serialization-optimization mode for an entire context, which may include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
+You can specify metadata-based mode or serialization-optimization mode for an entire context, which might include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
 
 - For an entire context, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.GenerationMode?displayProperty=nameWithType> property.
 - For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode?displayProperty=nameWithType> property.
@@ -161,13 +161,11 @@ services.AddControllers().AddJsonOptions(
 ```
 
 > [!NOTE]
-> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization.
->
-> In .NET 7 and earlier versions, this limitation also applies to synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>. Starting with .NET 8, even though streaming serialization requires metadata-based models, it will fall back to fast-path if the payloads are known to be small enough to fit in the predetermined buffer size. For more information, see <https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/#json>.
+> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or *fast-path* serialization, isn't supported for asynchronous serialization. Even though streaming serialization requires metadata-based models, it falls back to fast-path if the payloads are known to be small enough to fit in the predetermined buffer size. For more information, see <https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/#json>.
 
 ## Disable reflection defaults
 
-Because System.Text.Json uses reflection by default, calling a basic serialization method can break Native AOT apps, which doesn't support all required reflection APIs. These breaks can be challenging to diagnose since they can be unpredictable, and apps are often debugged using the CoreCLR runtime, where reflection works. Instead, if you explicitly disable reflection-based serialization, breaks are easier to diagnose. Code that uses reflection-based serialization will cause an <xref:System.InvalidOperationException> with a descriptive message to be thrown at run time.
+Because System.Text.Json uses reflection by default, calling a basic serialization method can break Native AOT apps, which doesn't support all required reflection APIs. These breaks can be challenging to diagnose since they can be unpredictable, and apps are often debugged using the CoreCLR runtime, where reflection works. Instead, if you explicitly disable reflection-based serialization, breaks are easier to diagnose. Code that uses reflection-based serialization will cause an <xref:System.InvalidOperationException> with a descriptive message to be thrown at runtime.
 
 To disable default reflection in your app, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file:
 
@@ -218,7 +216,7 @@ If you call a method that lets you pass in your own instance of `Utf8JsonWriter`
 
 If you create and use a context instance by calling the constructor that takes a `JsonSerializerOptions` instance, the supplied instance will be used instead of the options specified by `JsonSourceGenerationOptionsAttribute`.
 
-Here are the preceding examples in a complete program:
+The following code shows the preceding examples in a complete program:
 
 :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyWithOptions.cs" id="All":::
 

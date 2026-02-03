@@ -1,8 +1,6 @@
 ---
 title: Logging in C#
-author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
-ms.author: dapine
 ms.date: 10/21/2025
 ai-usage: ai-assisted
 ---
@@ -38,7 +36,7 @@ This project file for this example includes two NuGet packages:
 
 Consider making these changes to the previous example when logging in a less trivial scenario:
 
-- If your application uses [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
+- If your application uses [Dependency Injection (DI)](dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
 
 - Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
@@ -54,7 +52,7 @@ Consider making these changes to the previous example when logging in a less tri
 
 ## Integration with hosts and dependency injection
 
-If your application uses [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
+If your application uses [Dependency Injection (DI)](dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
 
 ### Get an ILogger from DI
 
@@ -505,7 +503,7 @@ public void Test(string id)
 
 Exception logging is provider-specific.
 
-### Default log level
+## Default log level
 
 If the default log level isn't set, the default log level value is `Information`.
 
@@ -528,7 +526,7 @@ using IHost host = builder.Build();
 await host.RunAsync();
 ```
 
-### Filter function
+## Filter function
 
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:
 

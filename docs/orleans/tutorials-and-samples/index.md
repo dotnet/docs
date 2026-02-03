@@ -48,7 +48,7 @@ Before graphical user interfaces, game consoles, and massive-multiplayer games, 
 ### Adventure demonstrates
 
 - How to structure an application (in this case, a game) using grains
-- How to connect an external client to an Orleans cluster (`ClientBuilder`)
+- How to connect an external client to an Orleans cluster (<xref:Orleans.ClientBuilder>)
 
 ## [Chirper](/samples/dotnet/samples/orleans-chirper-social-media-sample-app)
 
@@ -59,10 +59,10 @@ A social network pub/sub system where users send short text messages to each oth
 ### Chirper demonstrates
 
 - How to build a simplified social media / social network application using Orleans
-- How to store state within a grain using grain persistence (`IPersistentState<T>`)
+- How to store state within a grain using grain persistence (<xref:Orleans.Runtime.IPersistentState%601>)
 - Grains implementing multiple grain interfaces
 - Reentrant grains, allowing multiple grain calls to execute concurrently in a single-threaded, interleaving fashion
-- Using a *grain observer* (`IGrainObserver`) to receive push notifications from grains
+- Using a *grain observer* (<xref:Orleans.IGrainObserver>) to receive push notifications from grains
 
 ## [GPS Tracker](/samples/dotnet/samples/orleans-gps-device-tracker-sample)
 
@@ -101,7 +101,7 @@ A gaming presence service, similar to one of the Orleans-based services built fo
 ### Presence Service demonstrates
 
 - A simplified version of a real-world use of Orleans
-- Using a *grain observer* (`IGrainObserver`) to receive push notifications from grains
+- Using a *grain observer* (<xref:Orleans.IGrainObserver>) to receive push notifications from grains
 
 ## [Tic Tac Toe](/samples/dotnet/samples/orleans-tictactoe-web-based-game)
 

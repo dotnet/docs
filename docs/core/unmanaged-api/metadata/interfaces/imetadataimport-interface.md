@@ -15,7 +15,7 @@ topic_type:
 ---
 # IMetaDataImport Interface
 
-Provides methods for importing and manipulating existing metadata from a portable executable (PE) file or other source, such as a type library or a stand-alone, run-time metadata binary.
+Provides methods for importing and manipulating existing metadata from a portable executable (PE) file or other source, such as a type library or a stand-alone, runtime metadata binary.
 
 ## Methods
 

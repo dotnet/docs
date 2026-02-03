@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 09/30/2025
+ms.date: 11/07/2025
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -114,7 +114,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
-> This property is ignored if `TargetFramework` (singular) is specified.
+> If `TargetFrameworks` (plural) is specified, `TargetFramework` (singular) is ignored.
 
 ```xml
 <PropertyGroup>
@@ -169,8 +169,7 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
 
 > [!NOTE]
 >
-> - Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
-> - .NET 7 SDK only: To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). For solutions that have many projects, setting this variable increases the time required to pack.
+> Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
 
 ## Package validation properties
 
@@ -345,7 +344,7 @@ The `PackageValidationReferencePath` item specifies the directory path where the
 
 ```xml
 <ItemGroup>
-  <PackageValidationReferencePath Include="path/to/reference-assembly" TargetFramework="net7.0" />
+  <PackageValidationReferencePath Include="path/to/reference-assembly" TargetFramework="net9.0" />
 </ItemGroup>
 ```
 
@@ -371,6 +370,7 @@ The following MSBuild properties are documented in this section:
 - [PublishDocumentationFile](#publishdocumentationfile)
 - [PublishDocumentationFiles](#publishdocumentationfiles)
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
+- [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
@@ -479,9 +479,9 @@ This property is useful if you run `dotnet publish` on a solution file, as it al
 
 ### PreserveCompilationContext
 
-The `PreserveCompilationContext` property allows a built or published application to compile more code at run time using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
+The `PreserveCompilationContext` property allows a built or published application to compile more code at runtime using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
 
-This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support run-time compilation of Razor files.
+This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support runtime compilation of Razor files.
 
 ```xml
 <PropertyGroup>
@@ -526,7 +526,11 @@ This property is an enablement flag for several other properties that control wh
 
 ### PublishReferencesDocumentationFiles
 
-When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
+
+### PublishReferencesSymbols
+
+When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 
@@ -541,8 +545,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > [!NOTE]
 >
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
-> - This property does not affect the behavior of `dotnet build /t:Publish`, and it only changes the configuration only when publishing via the .NET CLI.
-> - .NET 7 SDK only: To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish. For solutions that have many projects, use of this setting increases the time required to publish.
+> - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
 ### PublishSelfContained
 
@@ -734,7 +737,7 @@ Additionally, if you specify an operating system-specific target framework in th
 - Platform with version (`IOS15_1`)
 - Platform with version minimum bound (`IOS15_1_OR_GREATER`)
 
-For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#os-specific-tfms).
 
 Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the *Framework with version minimum bound* symbol will be defined.
 
@@ -881,6 +884,9 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](../tools/dotnet-watch.md#ignore-specified-files-and-folders).
+
 ### DefaultItemExcludesInProjectFolder
 
 Use the `DefaultItemExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
@@ -977,6 +983,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `10.0` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10.0-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `10` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9.0` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
 | `9.0-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
@@ -985,10 +995,6 @@ The following table shows the values you can specify.
 | `8.0-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
 | `8-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `7.0` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
-| `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
-| `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
 >
@@ -1347,7 +1353,7 @@ Example *Directory.Packages.props* file:
 </PropertyGroup>
 ...
 <ItemGroup>
-  <PackageVersion Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  <PackageVersion Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
 </ItemGroup>
 ```
 

@@ -1,8 +1,6 @@
 ---
 title: Create a security scan GitHub workflow
 description: In this quickstart, you will learn how to create a CodeQL GitHub workflow to automate the discovery of vulnerabilities in your .NET codebase.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
 ---

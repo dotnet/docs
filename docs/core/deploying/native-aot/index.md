@@ -18,7 +18,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Windows](#tab/windows)
 
-[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+[Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
 # [Alpine](#tab/linux-alpine)
 
@@ -107,6 +107,46 @@ The preceding configuration assigns a default of `true` to the following propert
 
 These analyzers help to ensure that a library is compatible with Native AOT.
 
+### Target framework requirements
+
+When preparing libraries for AOT compatibility, target the latest supported TFM. This helps you benefit from the latest analyzer improvements. At a minimum, target `net8.0` or later. This version is required for AOT analysis warnings.
+
+If your library also targets frameworks earlier than `net8.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net8.0`. This ensures that apps targeting `net8.0` or later get a version of your library that supports AOT analysis.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net8.0` and later:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
+  <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>
+</PropertyGroup>
+```
+
+For more information, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
+
+### Verify referenced assemblies are AOT-compatible
+
+When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for AOT compatibility by setting the `VerifyReferenceAotCompatibility` property to `true`:
+
+```xml
+<PropertyGroup>
+  <IsAotCompatible>true</IsAotCompatible>
+  <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
+</PropertyGroup>
+```
+
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsAotCompatible` metadata. This helps ensure that all dependencies in your project are annotated for Native AOT compatibility. The warning that's emitted is [IL3058](warnings/il3058.md).
+
+This verification is opt-in because:
+
+- Not all AOT-compatible libraries have been updated to include the `IsAotCompatible` metadata.
+- The warning can be noisy if you have many dependencies that work correctly with Native AOT but aren't explicitly marked as such.
+
+> [!NOTE]
+> The `IsAotCompatible` assembly metadata was introduced in .NET 10. Libraries that were published targeting earlier versions of .NET won't have this attribute, even if they were built with `<IsAotCompatible>true</IsAotCompatible>`.
+
+Consider enabling this verification when you want to ensure that all your dependencies are explicitly marked as AOT-compatible by their authors.
+
 ## Native debug information
 
 By default, Native AOT publishing produces debug information in a separate file:
@@ -128,19 +168,19 @@ The debug file is necessary for running the app under the [debugger or inspectin
 Native AOT apps have the following limitations:
 
 - No dynamic loading, for example, `Assembly.LoadFile`.
-- No run-time code generation, for example, `System.Reflection.Emit`.
+- No runtime code generation, for example, `System.Reflection.Emit`.
 - No C++/CLI.
 - Windows: No built-in COM.
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#self-contained-deployment), increasing their size as compared to framework-dependent apps).
-- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
+- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than runtime generated compiled code.
 - Generic parameters substituted with struct type arguments have specialized code generated for each instantiation. In the dynamic runtime, many instantiations are generated on-demand. In Native AOT, all instantiations are pre-generated. This can have significant impact to the disk size of the application. Generic virtual methods and generic instance methods will also have an instantiation for every implementing or overriding type.
 - Not all the runtime libraries are fully annotated to be Native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).
 
-The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app might encounter at run time.
+The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app might encounter at runtime.
 
 ## Platform/architecture restrictions
 

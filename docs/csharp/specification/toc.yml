@@ -46,6 +46,8 @@ items:
     href: ../../../_csharpstandard/standard/structs.md
   - name: Arrays
     href: ../../../_csharpstandard/standard/arrays.md
+  - name: Extended indexing and slicing
+    href: ../../../_csharpstandard/standard/ranges.md
   - name: Interfaces
     href: ../../../_csharpstandard/standard/interfaces.md
   - name: Enums
@@ -125,8 +127,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/first-class-span-types.md
   - name: Patterns
     items:
-    - name: Recursive pattern matching
-      href: ../../../_csharplang/proposals/csharp-8.0/patterns.md
     - name: Pattern matching enhancements
       href: ../../../_csharplang/proposals/csharp-9.0/patterns3.md
     - name: Extended property patterns

@@ -2,7 +2,7 @@
 title: JournaledGrain diagnostics
 description: Learn how to use JournaledGrain diagnostics in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # JournaledGrain diagnostics
@@ -42,6 +42,6 @@ void DisableStatsCollection()
 
 Retrieve the statistics by calling:
 
- ```csharp
+```csharp
 LogConsistencyStatistics GetStats()
 ```

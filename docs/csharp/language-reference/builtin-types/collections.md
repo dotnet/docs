@@ -1,11 +1,11 @@
 ---
 title: "Collections"
 description: Learn about collections in C#, which are used to work with groups of objects. Collections have different characteristics regarding adding and removing elements, modifying elements, and enumerating the collection elements.
-ms.date: 02/04/2025
+ms.date: 01/14/2026
 ---
 # Collections
 
-The .NET runtime provides many collection types that store and manage groups of related objects. Some of the collection types, such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> are recognized [in the C# language](./built-in-types.md). In addition, interfaces like <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> are recognized in the language for enumerating the elements of a collection.
+The .NET runtime provides many collection types that store and manage groups of related objects. Some of the collection types, such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType>, are recognized [in the C# language](./built-in-types.md). In addition, interfaces like <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> are recognized in the language for enumerating the elements of a collection.
 
 Collections provide a flexible way to work with groups of objects. You can classify different collections by these characteristics:
 
@@ -13,7 +13,7 @@ Collections provide a flexible way to work with groups of objects. You can class
 - **Performance profile**: Every collection has different performance profiles for actions like adding an element, finding an element, or removing an element. You can pick a collection type based on the operations used most in your app.
 - **Grow and shrink dynamically**: Most collections support adding or removing elements dynamically. Notably, <xref:System.Array>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> don't.
 
-In addition to those characteristics, the runtime provides specialized collections that prevent adding or removing elements or modifying the elements of the collection. Other specialized collections provide safety for concurrent access in multi-threaded apps.
+In addition to those characteristics, the runtime provides specialized collections that prevent adding or removing elements or modifying the elements of the collection. Other specialized collections provide safety for concurrent access in multithreaded apps.
 
 You can find all the collection types in the [.NET API reference](/dotnet/api/?term=collection). For more information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md) and [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md).
 
@@ -24,11 +24,11 @@ You can find all the collection types in the [.NET API reference](/dotnet/api/?t
 
 <xref:System.Span%601?displayProperty=nameWithType> is a [`ref struct`](./ref-struct.md) type that provides a snapshot over a sequence of elements without copying those elements. The compiler enforces safety rules to ensure the `Span` can't be accessed after the sequence it references is no longer in scope. It's used in many .NET APIs to improve performance. <xref:System.Memory%601> provides similar behavior when you can't use a `ref struct` type.
 
-Beginning with C# 12, all of the collection types can be initialized using a [Collection expression](../operators/collection-expressions.md).
+Beginning with C# 12, all of the collection types can be initialized by using a [Collection expression](../operators/collection-expressions.md).
 
 ## Indexable collections
 
-An *indexable collection* is one where you can access each element using its index. Its *index* is the number of elements before it in the sequence. Therefore, the element reference by index `0` is the first element, index `1` is the second, and so on. These examples use the <xref:System.Collections.Generic.List%601> class. It's the most common indexable collection.
+An *indexable collection* is a collection where you can access each element by using its index. An element's *index* is the number of elements before it in the sequence. Therefore, the element referenced by index `0` is the first element, index `1` is the second, and so on. These examples use the <xref:System.Collections.Generic.List%601> class. It's the most common indexable collection.
 
 The following example creates and initializes a list of strings, removes an element, and adds an element to the end of the list. After each modification, it iterates through the strings by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement or a `for` loop:
 
@@ -38,7 +38,7 @@ The following example removes elements from a list by index. Instead of a `forea
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetRemoveItemByIndex":::
 
-For the type of elements in the <xref:System.Collections.Generic.List%601>, you can also define your own class. In the following example, the `Galaxy` class that is used by the <xref:System.Collections.Generic.List%601> is defined in the code.
+For the type of elements in the <xref:System.Collections.Generic.List%601>, you can also define your own class. In the following example, the `Galaxy` class that the <xref:System.Collections.Generic.List%601> uses is defined in the code.
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCustomList":::
 
@@ -56,7 +56,7 @@ The following example uses the <xref:System.Collections.Generic.Dictionary%602.C
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetFindInDictionary":::
 
-The following example instead uses the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method to quickly find an item by key.
+The following example uses the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method to quickly find an item by key.
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetFindInDictionary2":::
 
@@ -64,7 +64,7 @@ The following example instead uses the <xref:System.Collections.Generic.Dictiona
 
 An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../statements/yield.md) statement to return each element of the collection one at a time.
 
-You call an iterator by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
+You call an iterator by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution restarts from that location the next time that the iterator is called.
 
 For more information, see [Iterators (C#)](../../programming-guide/concepts/iterators.md).
 
@@ -74,7 +74,7 @@ The following example uses an iterator method. The iterator method has a `yield 
 
 ## LINQ and collections
 
-Language-integrated query (LINQ) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in C#](../../linq/index.md).
+You can use language-integrated query (LINQ) to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in C#](../../linq/index.md).
 
 The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.
 

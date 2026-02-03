@@ -26,7 +26,7 @@ Addresses an issue with bypass serialization binder with binary formatter mutati
 
 Addresses an issue to remove meta tags information referencing "Recreational Software Advisory Council" and the content-rating schema from ASP.NET WebForms SmartNavigation feature
 
-Addresses an issue with .NET Framework interaction with Visual Studio. The fix avoids conflicts between design-time and debug or run-time compilation of some .NET Framework ASP.NET projects that could result in slowed developer experience for large projects.
+Addresses an issue with .NET Framework interaction with Visual Studio. The fix avoids conflicts between design-time and debug or runtime compilation of some .NET Framework ASP.NET projects that could result in slowed developer experience for large projects.
 
 #### .NET libraries
 

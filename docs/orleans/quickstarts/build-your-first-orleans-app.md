@@ -4,6 +4,7 @@ description: Learn how to use Orleans to build a scalable, distributed ASP.NET C
 ms.date: 08/14/2024
 ms.topic: quickstart
 ms.devlang: csharp
+zone_pivot_groups: orleans-version
 ---
 
 # Quickstart: Build your first Orleans app with ASP.NET Core
@@ -21,8 +22,8 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 # [Visual Studio](#tab/visual-studio)
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) with the ASP.NET and web development workload
+- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/) with the **ASP.NET and web development** workload
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -34,7 +35,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 # [Visual Studio](#tab/visual-studio)
 
-1. Start Visual Studio 2022 and select **Create a new project**.
+1. Start Visual Studio and select **Create a new project**.
 
 1. On the **Create a new project** dialog, select **ASP.NET Core Web API**, and then select **Next**.
 
@@ -108,7 +109,7 @@ app.Run();
 
 [Silos](../overview.md#what-are-silos) are a core building block of Orleans responsible for storing and managing grains. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
-At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
+At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The <xref:Orleans.Hosting.ISiloBuilder> also uses the <xref:Orleans.Hosting.MemoryGrainStorageSiloBuilderExtensions.AddMemoryGrainStorage*> to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
 :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="configuration" :::
 
@@ -122,7 +123,7 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 - <xref:Orleans.IGrainWithGuidCompoundKey>
 - <xref:Orleans.IGrainWithIntegerCompoundKey>
 
-For this quickstart, you use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
+For this quickstart, you use the <xref:Orleans.IGrainWithStringKey>, since strings are a logical choice for working with URL values and short codes.
 
 Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 
@@ -133,7 +134,7 @@ Orleans grains can also use a custom interface to define their methods and prope
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="graininterface":::
 
-1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
+1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the <xref:Orleans.Grain> class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the <xref:Orleans.Runtime.IPersistentState%601> interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="grain":::
 
@@ -181,3 +182,69 @@ Test the application in the browser using the following steps:
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://learn.microsoft.com](https://learn.microsoft.com).
 
 ---
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+## Next steps: Production-ready Orleans with .NET Aspire
+
+The quickstart above uses in-memory storage and localhost clustering, which works well for development but isn't suitable for production deployments. When you're ready to build production-ready Orleans applications, **.NET Aspire** provides a streamlined approach with:
+
+- **Resource management**: Easily add Redis, Azure Storage, or SQL databases as backing stores for clustering, grain storage, and reminders
+- **Service discovery**: Automatic configuration of Orleans silos and clients without manual endpoint configuration
+- **Observability**: Built-in OpenTelemetry integration for distributed tracing, metrics, and logging
+- **Health checks**: Automatic health check endpoints for your Orleans cluster
+- **Multi-replica support**: Scale your Orleans silos horizontally with `WithReplicas()`
+
+### Quick example with Aspire
+
+Here's how the URL shortener app would look with .NET Aspire and Redis:
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+// Add Redis for clustering and grain storage
+var redis = builder.AddRedis("redis");
+
+// Configure Orleans to use Redis
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(redis)
+    .WithGrainStorage("urls", redis);
+
+// Add the Orleans silo project
+builder.AddProject<Projects.OrleansURLShortener>("silo")
+    .WithReference(orleans)
+    .WithReference(redis);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleans();
+
+var app = builder.Build();
+// ... rest of app configuration
+```
+
+With Aspire, Orleans automatically picks up the cluster configuration from environment variables injected by the AppHost, eliminating the need for manual configuration code.
+
+> [!div class="nextstepaction"]
+> [Learn more about Orleans and .NET Aspire integration](../host/aspire-integration.md)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x,orleans-7-0"
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Tutorial: Create a minimal Orleans application](../tutorials-and-samples/tutorial-1.md)
+
+:::zone-end

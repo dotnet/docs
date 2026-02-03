@@ -20,7 +20,7 @@ The only valid values for the <xref:System.IO.Compression.CompressionLevel> para
 - <xref:System.IO.Compression.CompressionLevel.NoCompression?displayProperty=nameWithType>
 - <xref:System.IO.Compression.CompressionLevel.SmallestSize?displayProperty=nameWithType>
 
-If you pass any other value, an <xref:System.ArgumentException> is thrown at run time.
+If you pass any other value, an <xref:System.ArgumentException> is thrown at runtime.
 
 ## Version introduced
 

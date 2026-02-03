@@ -113,7 +113,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 
 |Configuration|Description|
 |-------------------|-----------------|
-|`/ExeConfig:` `exePath`|Use the configuration of the specified executable assembly.<br /><br /> Ngen.exe needs to make the same decisions as the loader when binding to dependencies. When a shared component is loaded at run time, using the <xref:System.Reflection.Assembly.Load%2A> method, the application's configuration file determines the dependencies that are loaded for the shared component — for example, the version of a dependency that is loaded. The `/ExeConfig` switch gives Ngen.exe guidance on which dependencies would be loaded at run time.|
+|`/ExeConfig:` `exePath`|Use the configuration of the specified executable assembly.<br /><br /> Ngen.exe needs to make the same decisions as the loader when binding to dependencies. When a shared component is loaded at runtime, using the <xref:System.Reflection.Assembly.Load%2A> method, the application's configuration file determines the dependencies that are loaded for the shared component — for example, the version of a dependency that is loaded. The `/ExeConfig` switch gives Ngen.exe guidance on which dependencies would be loaded at runtime.|
 |`/AppBase:` `directoryPath`|When locating dependencies, use the specified directory as the application base.|
 
 <a name="OptionTable"></a>
@@ -265,7 +265,7 @@ In addition to these general considerations, the nature of your application must
 
 - Large applications generally benefit from compilation to native images. Small applications generally do not benefit.
 
-- For long-running applications, run-time JIT compilation performs slightly better than native images. (Hard binding can mitigate this performance difference to some degree.)
+- For long-running applications, runtime JIT compilation performs slightly better than native images. (Hard binding can mitigate this performance difference to some degree.)
 
 <a name="BaseAddresses"></a>
 

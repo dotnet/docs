@@ -82,12 +82,12 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
 
 You can use the <xref:System.Version.CompareTo%2A> method to determine whether one <xref:System.Version> object is earlier than, the same as, or later than a second <xref:System.Version> object. The following example indicates that Version 2.1 is later than Version 2.0.
 
-:::code language="csharp" source="./snippets/System/Version/Overview/csharp/comparisons1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Version/Overview/csharp/comparisons1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/comparisons1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Version/Overview/vb/comparisons1.vb" id="Snippet1":::
 
 For two versions to be equal, the major, minor, build, and revision numbers of the first <xref:System.Version> object must be identical to those of the second <xref:System.Version> object. If the build or revision number of a <xref:System.Version> object is undefined, that <xref:System.Version> object is considered to be earlier than a <xref:System.Version> object whose build or revision number is equal to zero. The following example illustrates this by comparing three <xref:System.Version> objects that have undefined version components.
 
-:::code language="csharp" source="./snippets/System/Version/Overview/csharp/comparisons2.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Version/Overview/csharp/comparisons2.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/comparisons2.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Version/Overview/vb/comparisons2.vb" id="Snippet2":::

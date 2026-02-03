@@ -51,21 +51,21 @@ Also see [Hierarchical Organization of Resources for Localization](/previous-ver
 
 Winres.exe cannot convert a .resx file into its corresponding .resources file; use the Resgen.exe tool instead. For more information about Resgen.exe, see [Resgen.exe (Resource File Generator)](resgen-exe-resource-file-generator.md).
 
-Winres.exe is a graphical application that recreates a design-time version of a Windows Forms form from just the resource file, without having access to the source code. Winres.exe hosts Visual Studio's **Windows Forms Form Designer** and **Properties** window. These features enable visual editing of a .resources or .resx file containing a Windows Forms form. Typically, localizers use Winres.exe to edit control labels and adjust the location and size of controls to accommodate the labels for the target culture.
+Winres.exe is a graphical application that recreates a design-time version of a Windows Forms form from just the resource file, without having access to the source code. Winres.exe hosts Visual Studio's **Windows Forms Form Designer** and `Properties` window. These features enable visual editing of a .resources or .resx file containing a Windows Forms form. Typically, localizers use Winres.exe to edit control labels and adjust the location and size of controls to accommodate the labels for the target culture.
 
-If Winres.exe cannot resolve the type of a control, it creates a placeholder control in the localized .resx or .resources file. The placeholder control appears on the Windows Forms form as a hatched window. The size and position of the hatched window matches that of the actual control. All the available localizable properties for the placeholder control appear in the **Properties** window. Any changes that you make to the placeholder control are saved for the actual control.
+If Winres.exe cannot resolve the type of a control, it creates a placeholder control in the localized .resx or .resources file. The placeholder control appears on the Windows Forms form as a hatched window. The size and position of the hatched window matches that of the actual control. All the available localizable properties for the placeholder control appear in the `Properties` window. Any changes that you make to the placeholder control are saved for the actual control.
 
 ## Winres.exe versus Visual Studio
 
 In general, before you begin to localize an application's Windows Forms forms, you should decide whether you want to use Visual Studio or Winres.exe as the localization tool. Version compatibility, as described later, may prevent you from switching from one tool to the other.
 
-The advantage of Visual Studio is that you can use it to both develop and localize an application. To localize a form, after development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the **Localizable** property in the **Properties** editor) to `true` and change its **Language** property to the desired target culture. Then, edit strings and adjust the location and size of controls to accommodate the strings for the target culture. When you save the localized .resx file, Visual Studio writes only the localizable properties (properties that changed in the target culture) to the file. Visual Studio automatically creates a satellite assembly for the localized .resx file in the correct directory location.
+The advantage of Visual Studio is that you can use it to both develop and localize an application. To localize a form, after development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the `Localizable` property in the `Properties` editor) to `true` and change its `Language` property to the desired target culture. Then, edit strings and adjust the location and size of controls to accommodate the strings for the target culture. When you save the localized .resx file, Visual Studio writes only the localizable properties (properties that changed in the target culture) to the file. Visual Studio automatically creates a satellite assembly for the localized .resx file in the correct directory location.
 
 Although Visual Studio provides an integrated development and localization environment, Winres.exe is the recommended tool to use if localization is done by third-party localizers. Because Winres.exe is a localization tool only, it allows for a cleaner separation of an application's code from the forms to be localized, which is more practical for managing large projects.
 
 ## Using Winres.exe
 
-To localize using Winres.exe, you must first develop an application using a visual designer like the **Windows Forms Designer** in Visual Studio. When development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the **Localizable** property in the **Properties** editor) to `true`, and then hand off the .resx file for the default culture to a third-party localizer. This .resx file contains extra information that Winres.exe uses to recreate a design-time version of the original form.
+To localize using Winres.exe, you must first develop an application using a visual designer like the **Windows Forms Designer** in Visual Studio. When development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the `Localizable` property in the `Properties` editor) to `true`, and then hand off the .resx file for the default culture to a third-party localizer. This .resx file contains extra information that Winres.exe uses to recreate a design-time version of the original form.
 
 > [!NOTE]
 > Winres.exe cannot be used to edit the default resource file. Winres.exe interprets all changed properties as localized properties and saves them to the target culture resource file.
@@ -78,7 +78,7 @@ Winres.exe has the following features and capabilities:
 
 - An error-reporting window, docked to the bottom-left of the main window.
 
-- Hotkeys can be checked for duplicates: from the **Format** menu, click the **Check HotKeys** command.
+- Hotkeys can be checked for duplicates: from the `Format` menu, click the **Check HotKeys** command.
 
 ## Version compatibility
 
@@ -123,7 +123,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
 3. Select controls on the form and change their <xref:System.Windows.Forms.Control.Text%2A> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
 
-4. To save the localized version of the .resx or .resources file, click the **Save** icon or select **File > Save**. The tool displays the **Select Culture** window.
+4. To save the localized version of the .resx or .resources file, click the `Save` icon or select **File > Save**. The tool displays the **Select Culture** window.
 
 5. Select the appropriate culture and file mode then click **OK**.
 

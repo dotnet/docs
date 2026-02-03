@@ -2,20 +2,20 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 10/15/2025
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for RC 2.
+This article describes new features and enhancements in the .NET SDK for .NET 10.
 
 ## .NET tools enhancements
 
 ### Platform-specific .NET tools
 
-.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or run time. This makes cross-platform tool authoring and distribution much easier.
+.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or runtime. This makes cross-platform tool authoring and distribution much easier.
 
 These enhanced tools support various packaging variations:
 
@@ -251,10 +251,10 @@ The `--interactive` flag is now enabled by default for CLI commands in interacti
 
 ## Native shell tab-completion scripts
 
-The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions generate [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
+The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions script [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
 
 ```powershell
-dotnet completions script pwsh | out-String | Invoke-Expression -ErrorAction SilentlyContinue
+dotnet completions script pwsh | Out-String | Invoke-Expression
 ```
 
 ## Console apps can natively create container images

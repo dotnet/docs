@@ -7,9 +7,9 @@ ms.date: 09/20/2021
 
 # Platform compatibility analyzer
 
-You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET SDK includes ASP.NET Core, Entity Framework Core, Windows Forms, WPF, and ML.NET, and will add support for more platforms over time. .NET 5+ strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes and WinRT.
+.NET is a single, unified platform for building any type of application. It strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You can continue to call platform-specific APIs, for example, P/Invokes and WinRT.
 
-But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5 introduced the [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+But using platform-specific APIs on a component means the code no longer works across all platforms. The [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs provide diagnostics to help you identify and use platform-specific APIs where appropriate.
 
 The complementary APIs include:
 
@@ -37,7 +37,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - If the platform is a [subset of another platform](#platform-inclusion), the attribute implies that the superset platform is also unsupported. For example, `[UnsupportedOSPlatform("iOS")]` implies that the API is unsupported on `iOS` and also on its superset platform, `MacCatalyst`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
-    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
+    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` `<SupportedPlatform>` items group:
 
       ```xml
       <ItemGroup>
@@ -216,11 +216,11 @@ The following code snippet shows how you can combine attributes to set the right
 
 The recommended way to deal with these diagnostics is to make sure you only call platform-specific APIs when running on an appropriate platform. Following are the options you can use to address the warnings; choose whichever is most appropriate for your situation:
 
-- **Guard the call**. You can achieve this by conditionally calling the code at run time. Check whether you're running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`. [Example](#guard-platform-specific-apis-with-guard-methods).
+- **Guard the call**. You can achieve this by conditionally calling the code at runtime. Check whether you're running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`. [Example](#guard-platform-specific-apis-with-guard-methods).
 
 - **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. Mark the containing method or type or the entire assembly with the same attributes as the referenced platform-dependent call. [Examples](#mark-call-site-as-platform-specific).
 
-- **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
+- **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at runtime, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
 
 - **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you're likely better off using that over platform-specific APIs.
 

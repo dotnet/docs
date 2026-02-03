@@ -6,7 +6,7 @@ ms.author: ygerges
 ms.date: 10/08/2025
 ---
 
-# Mirate from Microsoft.Testing.Platform v1 to v2
+# Migrate from Microsoft.Testing.Platform v1 to v2
 
 The stable version Microsoft.Testing.Platform v2 is now available. This migration guide explores what's changed in Microsoft.Testing.Platform v2 and how you can migrate to this version.
 
@@ -40,7 +40,7 @@ This breaking change doesn't affect typical users of test frameworks. It only af
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
 ### Compatibility with VSTest-based `dotnet test`
 

@@ -1,11 +1,11 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 04/01/2025
+ms.date: 10/28/2025
 ---
 # dotnet command
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -157,7 +157,7 @@ The following options are available only when `dotnet` runs an application by us
 
 - **`--runtimeconfig <PATH>`**
 
-  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains run-time settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains runtime settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## dotnet commands
 

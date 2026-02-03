@@ -12,7 +12,7 @@ Starting in .NET 10, the [NU3043](/nuget/reference/errors-and-warnings/nu3043) w
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 

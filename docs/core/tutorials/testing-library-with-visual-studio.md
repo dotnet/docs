@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
-ms.date: 10/23/2025
+ms.date: 01/14/2026
 ai-usage: ai-assisted
 dev_langs:
   - "csharp"
@@ -34,19 +34,23 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 8** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 10** in the **Framework** box, select **Microsoft.Testing.Platform** for the **Test runner**, and then choose **Create**.
+
+   :::image type="content" source="./media/testing-library-with-visual-studio/additional-information-mstest.png" alt-text="Enter additional information for the MSTest Test Project":::
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use isn't shown, change the language selector at the top of the page.
 
    ```csharp
-   namespace StringLibraryTest;
-
-   [TestClass]
-   public class UnitTest1
+   namespace StringLibraryTest
    {
-       [TestMethod]
-       public void TestMethod1()
+
+       [TestClass]
+       public sealed class Test1
        {
+           [TestMethod]
+           public void TestMethod1()
+           {
+           }
        }
    }
    ```
@@ -56,7 +60,7 @@ Unit tests provide automated software testing during your development and publis
 
    Namespace StringLibraryTest
        <TestClass>
-       Public Class UnitTest1
+       Public Class Test1
            <TestMethod>
            Sub TestSub()
 
@@ -67,19 +71,21 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - Imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing. In C#, the namespace is imported via a `global using` directive in *GlobalUsings.cs*.
-   - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
+   - Includes <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in the StringLibraryTest project file in C#, and imports <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in Visual Basic.
+   - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `Test1` class.
    - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) executes automatically when the unit test runs.
 
 ## Add a project reference
 
-For the test project to work with the `StringLibrary` class, add a reference in the **StringLibraryTest** project to the `StringLibrary` project.
+For the test project to work with the `StringLibrary` class, add a reference in the **StringLibraryTest** project to the `StringLibrary` project. Adding a reference to the `StringLibrary` assembly lets the compiler find **StringLibrary** methods while compiling the **StringLibraryTest** project.
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Project Reference** from the context menu.
 
-1. In the **Reference Manager** dialog, expand the **Projects** node, and select the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly lets the compiler find **StringLibrary** methods while compiling the **StringLibraryTest** project.
+1. In the **Reference Manager** dialog, select the box next to **StringLibrary**.
+
+   :::image type="content" source="./media/testing-library-with-visual-studio/add-project-reference-string-library-test.png" alt-text="Add StringLibrary as a project reference for StringLibraryTest.":::
 
 1. Select **OK**.
 
@@ -106,22 +112,18 @@ Define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTo
 
 To create the test methods:
 
-1. In the *UnitTest1.cs* or *UnitTest1.vb* code window, replace the code with the following code:
+1. In the *Test1.cs* or *Test1.vb* code window, replace the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTestNet8/UnitTest1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
    :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
-
-   :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
+1. On the menu bar, select **File** > **Save Test1.cs As** or **File** > **Save Test1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
-
-   :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio might save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results aren't correct.
 
@@ -166,11 +168,7 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
-
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
-
-   :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 

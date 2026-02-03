@@ -154,7 +154,7 @@ A type definition includes the following:
 
 ### Attributes
 
-Attributes provide additional user-defined metadata. Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or run-time environment.
+Attributes provide additional user-defined metadata. Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or runtime environment.
 
 Attributes are themselves classes that inherit from <xref:System.Attribute?displayProperty=nameWithType>. Languages that support the use of attributes each have their own syntax for applying attributes to a language element. Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the <xref:System.AttributeUsageAttribute> that is applied to that attribute class.
 
@@ -268,7 +268,7 @@ The common type system allows type members to have a variety of characteristics;
 |literal|Fields|The value assigned to the field is a fixed value, known at compile time, of a built-in value type. Literal fields are sometimes referred to as constants.|
 |newslot or override|All|Defines how the member interacts with inherited members that have the same signature:<br /><br /> newslot<br /> Hides inherited members that have the same signature.<br /><br /> override<br /> Replaces the definition of an inherited virtual method.<br /><br /> The default is newslot.|
 |static|Fields, methods, properties, and events|The member belongs to the type it is defined on, not to a particular instance of the type; the member exists even if an instance of the type is not created, and it is shared among all instances of the type.|
-|virtual|Methods, properties, and events|The method can be implemented by a derived type and can be invoked either statically or dynamically. If dynamic invocation is used, the type of the instance that makes the call at run time (rather than the type known at compile time) determines which implementation of the method is called. To invoke a virtual method statically, the variable might have to be cast to a type that uses the desired version of the method.|
+|virtual|Methods, properties, and events|The method can be implemented by a derived type and can be invoked either statically or dynamically. If dynamic invocation is used, the type of the instance that makes the call at runtime (rather than the type known at compile time) determines which implementation of the method is called. To invoke a virtual method statically, the variable might have to be cast to a type that uses the desired version of the method.|
 
 ### Overloading
 
@@ -283,7 +283,7 @@ A derived type inherits all members of its base type; that is, these members are
 
 - A derived type can hide an inherited member by defining a new member with the same signature. This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as `sealed`.
 
-- A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `sealed` and the new method is at least as accessible as the virtual method.
+- A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at runtime rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `sealed` and the new method is at least as accessible as the virtual method.
 
 ## See also
 

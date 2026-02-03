@@ -59,13 +59,15 @@ The following example calls the <xref:System.Convert.ToInt32%28System.String%29?
 
 You can use AI tools, such as GitHub Copilot, to generate C# code to convert a string to a number. You can customize the prompt to use a string per your requirements.
 
-The following text shows an example prompt for Copilot Chat:
+Here's an example Copilot Chat prompt:
 
 ```copilot-prompt
 Show me how to parse a string as a number, but don't throw an exception if the input string doesn't represent a number.
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them.
+
+For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## See also
 

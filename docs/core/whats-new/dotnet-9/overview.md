@@ -101,7 +101,7 @@ The latest release introduces significant new capabilities for tokenizers:
 
 ## Aspire
 
-Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
+Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in Aspire 9](https://aspire.dev/whats-new/aspire-9/).
 
 ## ASP.NET Core
 

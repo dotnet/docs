@@ -1,8 +1,6 @@
 ---
 title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---
@@ -151,7 +149,7 @@ dotnet sln XUnit.Coverage.sln add (ls **/*.csproj) --in-root
 Build the solution using the [`dotnet build`](../tools/dotnet-build.md) command:
 
 ```dotnetcli
-dotnet build
+dotnet build XUnit.Coverage.sln
 ```
 
 If the build is successful, you've created the three projects, appropriately referenced projects and packages, and updated the source code correctly. Well done!

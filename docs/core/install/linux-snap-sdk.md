@@ -3,9 +3,10 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 11/14/2025
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content, updateeachrelease
+ai-usage: ai-assisted
 #customer intent: As a Linux user, I want to install .NET SDK through Snap.
 ---
 
@@ -37,38 +38,58 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 [!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
-Snap packages for the .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK.
+Starting with .NET 9, snap packages for the .NET SDK are published under version-specific identifiers (for example, `dotnet-sdk-90` for .NET 9 and `dotnet-sdk-100` for .NET 10). Prior to .NET 9, all SDK versions were published under the same identifier `dotnet-sdk`, and you specified the version through a channel. Additionally, .NET 9 and later snap packages support both x64 and Arm64 architectures, while earlier versions only support x64. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK.
 
 > [!TIP]
 > The [Snapcraft .NET SDK package page](https://snapcraft.io/dotnet-sdk) includes distribution-specific instructions on how to install Snapcraft and .NET.
 
 01. Open a terminal.
-01. Use `snap install` to install the .NET SDK snap package. For example, the following command installs the `latest/stable` channel, which is the default.
+01. Use `snap install` to install the .NET SDK snap package.
 
-    ```bash
-    sudo snap install dotnet-sdk --classic
-    ```
+    The `--classic` parameter is required.
 
-    - The `--classic` parameter is required.
-    - Use the `--channel` parameter to specify which version to install. If this parameter is omitted, `latest/stable` is used. For example, `--channel 8.0/stable` installs .NET SDK 8.0.
+    - **For .NET 9 and later**
+
+      Install the version-specific package. For example, the following command installs .NET SDK 10:
+
+      ```bash
+      sudo snap install dotnet-sdk-100 --classic
+      ```
+
+    - **For .NET 8 and earlier**
+
+      Install from the `dotnet-sdk` package and specify a channel. If this parameter is omitted, `latest/stable` is used. For example, the following command installs .NET SDK 8:
+
+      ```bash
+      sudo snap install dotnet-sdk --classic --channel 8.0/stable
+      ```
 
 The `dotnet` snap alias is automatically created and mapped to the snap package's `dotnet` command.
 
-The following table lists the package channels you can install:
+The following table lists the snap packages and channels you can install:
 
-| .NET version | Snap package channel            |
-|--------------|---------------------------------|
-| 9 (STS)      | *Not yet available              |
-| 8 (LTS)      | `8.0/stable`<br>`lts/stable`    |
-| 7 (STS)      | `7.0/stable` (out of support)   |
-| 6 (LTS)      | `6.0/stable` (out of support)   |
-| 5            | `5.0/stable` (out of support)   |
-| 3.1          | `3.1/stable` (out of support)   |
-| 2.1          | `2.1/stable` (out of support)   |
+| .NET version | Snap package or channel                |
+|--------------|----------------------------------------|
+| 10 (LTS)     | `dotnet-sdk-100` (preview)             |
+| 9 (STS)      | `dotnet-sdk-90`                        |
+| 8 (LTS)      | `dotnet-sdk --channel 8.0/stable`      |
+| 7            | `dotnet-sdk --channel 7.0/stable` (out of support) |
+| 6            | `dotnet-sdk --channel 6.0/stable` (out of support) |
+| 5            | `dotnet-sdk --channel 5.0/stable` (out of support) |
+| 3.1          | `dotnet-sdk --channel 3.1/stable` (out of support) |
+| 2.1          | `dotnet-sdk --channel 2.1/stable` (out of support) |
 
 ## 2. Export the install location
 
 The `DOTNET_ROOT` environment variable is often used by tools to determine where .NET is installed. When .NET is installed through Snap, this environment variable isn't configured. You should configure the *DOTNET_ROOT* environment variable in your profile. The path to the snap uses the following format: `/snap/{package}/current`.
+
+For .NET 9 and later, use the version-specific package name:
+
+```bash
+export DOTNET_ROOT=/snap/dotnet-sdk-100/current
+```
+
+For .NET 8 and earlier, use the shared package name:
 
 ```bash
 export DOTNET_ROOT=/snap/dotnet-sdk/current
@@ -84,7 +105,7 @@ You can edit your shell profile to permanently add the commands. There are many 
 - **Korn Shell**: _~/.kshrc_ or _.profile_
 - **Z Shell**: _~/.zshrc* or _.zprofile_
 
-Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-sdk/current`.
+Edit the appropriate source file for your shell and add the export command for your installed .NET version. For .NET 9+, use `export DOTNET_ROOT=/snap/dotnet-sdk-100/current` (adjust the version number as needed). For .NET 8 and earlier, use `export DOTNET_ROOT=/snap/dotnet-sdk/current`.
 
 ## 3. Use the .NET CLI
 
@@ -121,7 +142,15 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ### The dotnet terminal command doesn't work
 
-Snap packages can map an alias to a command provided by the package. By default, the .NET SDK snap packages create an alias for the `dotnet` command. If the alias wasn't created or was previously removed, the following command shows how to map the alias:
+Snap packages can map an alias to a command provided by the package. By default, the .NET SDK snap packages create an alias for the `dotnet` command. If the alias wasn't created or was previously removed, use the following command to map the alias.
+
+For .NET 9 and later:
+
+```bash
+sudo snap alias dotnet-sdk-100.dotnet dotnet
+```
+
+For .NET 8 and earlier:
 
 ```bash
 sudo snap alias dotnet-sdk.dotnet dotnet
@@ -160,7 +189,13 @@ Try the following steps to fix the issue:
     - `/usr/local/bin/dotnet`
     - `/usr/share/dotnet`
 
-    Use the following command to create a symbolic link to the snap package:
+    Use the following command to create a symbolic link to the snap package. For .NET 9 and later, use the version-specific package name:
+
+    ```bash
+    ln -s /snap/dotnet-sdk-100/current/dotnet /usr/local/bin/dotnet
+    ```
+
+    For .NET 8 and earlier:
 
     ```bash
     ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet

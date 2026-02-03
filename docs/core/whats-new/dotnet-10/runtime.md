@@ -2,13 +2,13 @@
 title: What's new in .NET 10 runtime
 description: Learn about the new features introduced in the .NET 10 runtime.
 titleSuffix: ""
-ms.date: 10/15/2025
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 # What's new in the .NET 10 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 10. It's been updated for RC 2.
+This article describes new features and performance improvements in the .NET runtime for .NET 10.
 
 ## JIT compiler improvements
 
@@ -218,7 +218,7 @@ public class Program
         public int[] arr;
     }
 
-    public static void Main()
+    public static int Main()
     {
         int[] x = new int[10];
         GCStruct y = new GCStruct() { arr = x };
@@ -264,7 +264,7 @@ For more information about de-abstraction improvements in .NET 10, see [dotnet/r
 
 #### Delegates
 
-When source code is compiled to IL, each delegate is transformed into a closure class with a method corresponding to the delegate's definition and fields matching any captured variables. At run time, a closure object is created to instantiate the captured variables, along with a `Func` object to invoke the delegate. If escape analysis determines the `Func` object won't outlive its current scope, the JIT allocates it on the stack.
+When source code is compiled to IL, each delegate is transformed into a closure class with a method corresponding to the delegate's definition and fields matching any captured variables. At runtime, a closure object is created to instantiate the captured variables, along with a `Func` object to invoke the delegate. If escape analysis determines the `Func` object won't outlive its current scope, the JIT allocates it on the stack.
 
 Consider the following `Main` method:
 

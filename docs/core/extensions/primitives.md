@@ -1,8 +1,6 @@
 ---
 title: "Use the Microsoft.Extensions.Primitives library"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
-author: IEvangelist
-ms.author: dapine
 ms.date: 03/13/2023
 ---
 

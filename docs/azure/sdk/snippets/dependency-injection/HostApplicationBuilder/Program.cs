@@ -3,7 +3,9 @@ using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Hosting;
-using Azure.AI.OpenAI;
+using OpenAI;
+using OpenAI.Responses;
+using System.ClientModel.Primitives;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
@@ -15,26 +17,36 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
             clientBuilder.AddServiceBusClientWithNamespace("<your_namespace>.servicebus.windows.net");
             
-            // Set a credential for all clients to use by default
+            // AddAzureClients implicitly creates a DefaultAzureCredential instance
+            // Create a credential manually to override the type or access it explicitly for DI registrations
+            // This example shows credential reuse for GetQueueNames and AddClient calls downstream
             DefaultAzureCredential credential = new();
             clientBuilder.UseCredential(credential);
 
-            // Register subclients for Service Bus
+            // Register a subclient for each Service Bus Queue
             List<string> queueNames = await GetQueueNames(credential);
             foreach (string queueName in queueNames)
             {
                 clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>((_, _, provider) =>
-                provider.GetService(typeof(ServiceBusClient)) switch
-                {
-                    ServiceBusClient client => client.CreateSender(queueName),
-                    _ => throw new InvalidOperationException("Unable to create ServiceBusClient")
-                }).WithName(queueName);
+                    provider.GetService(typeof(ServiceBusClient)) switch
+                    {
+                        ServiceBusClient client => client.CreateSender(queueName),
+                        _ => throw new InvalidOperationException("Unable to create ServiceBusClient")
+                    }).WithName(queueName);
             }
 
+            var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT")
+                ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is required.");
+
             // Register a custom client factory
-            clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
-                (options, _, _) => new AzureOpenAIClient(
-                    new Uri("<url_here>"), credential, options)); 
+            #pragma warning disable OPENAI001 // Type is for evaluation purposes and is subject to change in future updates.
+            clientBuilder.AddClient<ResponsesClient, OpenAIClientOptions>(
+                (options, credential, _) => new ResponsesClient(
+                    "<deployment_name>",
+                    new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
+                    new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
+                ));
+            #pragma warning restore OPENAI001
         });
     }).Build();
 

@@ -1,7 +1,7 @@
 ---
 title: "The `is` operator - Match an expression against a type or constant pattern"
 description: "Learn about the C# `is` operator that matches an expression against a pattern. The `is` operator returns true when the expression matches the pattern."
-ms.date: 02/18/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "is_CSharpKeyword"
   - "is"
@@ -15,6 +15,8 @@ The `is` operator checks if the result of an expression is compatible with a giv
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 
 In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) patterns.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The `is` operator can be useful in the following scenarios:
 
@@ -30,11 +32,11 @@ The `is` operator can be useful in the following scenarios:
 
   When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked.
 
-- You can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
+- To do a non-null check by using a [negation pattern](patterns.md#logical-patterns), as the following example shows:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
 
-- Beginning with C# 11, you can use [list patterns](patterns.md#list-patterns) to match elements of a list or array. The following code checks arrays for integer values in expected positions:
+- To match elements of a list or array by using [list patterns](patterns.md#list-patterns). The following code checks arrays for integer values in expected positions:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="ListPatterns":::
 
@@ -43,7 +45,7 @@ The `is` operator can be useful in the following scenarios:
 
 ## C# language specification
 
-For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#121312-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and [Pattern matching](/dotnet/csharp/language-reference/language-specification/patterns).
+For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#121412-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and [Pattern matching](/dotnet/csharp/language-reference/language-specification/patterns).
 
 ## See also
 

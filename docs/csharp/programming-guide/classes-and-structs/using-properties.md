@@ -1,7 +1,7 @@
 ---
 title: "Using Properties"
 description: These examples illustrate using properties in C#. See how the get and set accessors implement read and write access and find out about uses for properties.
-ms.date: 10/31/2024
+ms.date: 11/18/2025
 helpviewer_keywords: 
   - "set accessor [C#]"
   - "get accessor [C#]"
@@ -25,11 +25,9 @@ Properties are declared in the class block by specifying the access level of the
 
 In this example, `Month` is declared as a property so that the `set` accessor can make sure that the `Month` value is set between 1 and 12. The `Month` property uses a private field to track the actual value. The real location of a property's data is often referred to as the property's "backing store." It's common for properties to use private fields as a backing store. The field is marked private in order to make sure that it can only be changed by calling the property. For more information about public and private access restrictions, see [Access Modifiers](./access-modifiers.md). Automatically implemented properties provide simplified syntax for simple property declarations. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
 
-Beginning with C# 13, you can use [field backed properties](../../language-reference/keywords/field.md) to add validation to the `set` accessor of an automatically implemented property, as shown in the following example:
+Beginning with C# 14, you can use [field backed properties](../../language-reference/keywords/field.md) to add validation to the `set` accessor of an automatically implemented property, as shown in the following example:
 
 :::code language="csharp" source="./snippets/properties/TimePeriod.cs" id="FieldExample":::
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 ## The get accessor
 
@@ -80,7 +78,7 @@ A property can be marked as a virtual property by using the [virtual](../../lang
 A property overriding a virtual property can also be [sealed](../../language-reference/keywords/sealed.md), specifying that for derived classes it's no longer virtual. Lastly, a property can be declared [abstract](../../language-reference/keywords/abstract.md). Abstract properties don't define an implementation in the class, and derived classes must write their own implementation. For more information about these options, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
 
 > [!NOTE]
-> It is an error to use a [virtual](../../language-reference/keywords/virtual.md), [abstract](../../language-reference/keywords/abstract.md), or [override](../../language-reference/keywords/override.md) modifier on an accessor of a [static](../../language-reference/keywords/static.md) property.
+> It's an error to use a [virtual](../../language-reference/keywords/virtual.md), [abstract](../../language-reference/keywords/abstract.md), or [override](../../language-reference/keywords/override.md) modifier on an accessor of a [static](../../language-reference/keywords/static.md) property.
 
 ## Examples
 
@@ -90,7 +88,7 @@ This example demonstrates instance, static, and read-only properties. It accepts
 
 ## Hidden property example
 
-This example demonstrates how to access a property in a base class that is hidden by another property that has the same name in a derived class:
+This example demonstrates how to access a property in a base class that's hidden by another property that has the same name in a derived class:
 
 :::code language="csharp" source="./snippets/Properties/HidingProperty.cs" id="Hiding":::
 

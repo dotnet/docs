@@ -1,17 +1,404 @@
 ---
 title: Cluster management in Orleans
 description: Learn about cluster management in .NET Orleans.
-ms.date: 05/23/2025
-ms.topic: conceptual
+ms.date: 01/22/2026
+ms.topic: concept-article
+zone_pivot_groups: orleans-version
 ---
 
 # Cluster management in Orleans
 
 Orleans provides cluster management via a built-in membership protocol, sometimes referred to as **Cluster membership**. The goal of this protocol is for all silos (Orleans servers) to agree on the set of currently alive silos, detect failed silos, and allow new silos to join the cluster.
 
+:::zone target="docs" pivot="orleans-9-0,orleans-10-0"
+
+## Membership protocol configuration
+
+The membership protocol uses the following default configuration:
+
+- Every silo is monitored by 10 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+- Probes are sent every 10 seconds
+- 3 missed probes trigger a suspicion
+
+With these defaults, typical failure detection time is approximately 15 seconds. In disaster recovery scenarios where silos crash without proper cleanup, the cluster uses the `IAmAlive` timestamp (updated every 30 seconds by default) to recover; silos that haven't updated their timestamp for several periods are ignored during startup connectivity checks. By skipping these unresponsive silos, new silos can start up and quickly clear the cluster of defunct silos by declaring them dead.
+
+### Configuration
+
+You can configure membership protocol settings using `ClusterMembershipOptions`:
+
+```csharp
+siloBuilder.Configure<ClusterMembershipOptions>(options =>
+{
+    // Number of silos each silo monitors (default: 10)
+    options.NumProbedSilos = 10;
+
+    // Number of suspicions required to declare a silo dead (default: 2)
+    options.NumVotesForDeathDeclaration = 2;
+
+    // Time window for suspicions to be valid (default: 180 seconds)
+    options.DeathVoteExpirationTimeout = TimeSpan.FromSeconds(180);
+
+    // Interval between probes (default: 10 seconds)
+    options.ProbeTimeout = TimeSpan.FromSeconds(10);
+
+    // Number of missed probes before suspecting a silo (default: 3)
+    options.NumMissedProbesLimit = 3;
+});
+```
+
+### When to adjust settings
+
+In most cases, the default settings are appropriate. However, you might consider adjustments in these scenarios:
+
+- **High-latency networks**: Increase `ProbeTimeout` if your silos are distributed across regions with high network latency.
+- **Critical availability requirements**: Decrease `DeathVoteExpirationTimeout` for faster failure detection, but be cautious of false positives.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0"
+
+## Membership protocol configuration
+
+The membership protocol uses the following default configuration:
+
+- Every silo is monitored by 3 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+- Probes are sent every 10 seconds
+- 3 missed probes trigger a suspicion
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+## Membership protocol configuration
+
+The membership protocol uses the following default configuration:
+
+- Every silo is monitored by 3 other silos
+- 2 suspicions are required to declare a silo dead
+- Suspicions are valid for 3 minutes
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0,orleans-3-x"
+
 The protocol relies on an external service to provide an abstraction of <xref:Orleans.IMembershipTable>. `IMembershipTable` is a flat, durable table used for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, it stores the current membership view (list of alive silos) and helps coordinate agreement on this view.
 
-Currently, there are several implementations of `IMembershipTable`: based on [Azure Table Storage](/azure/storage/storage-dotnet-how-to-use-tables), [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db), ADO.NET (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle), [Apache ZooKeeper](https://ZooKeeper.apache.org/), [Consul IO](https://www.consul.io), [AWS DynamoDB](https://aws.amazon.com/dynamodb/), [MongoDB](https://www.mongodb.com/), [Redis](https://redis.io), [Apache Cassandra](https://cassandra.apache.org), and an in-memory implementation for development.
+The following official implementations of `IMembershipTable` are currently available:
+
+* [ADO.NET](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle),
+* [AWS DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB),
+* [Apache Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra),
+* [Apache ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper),
+* [Azure Cosmos DB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos),
+* [Azure Table Storage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage),
+* [HashiCorp Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul),
+* [Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis),
+* and an in-memory implementation for development.
+
+### Configure Redis clustering
+
+Configure Redis as the clustering provider using the <xref:Microsoft.Extensions.Hosting.RedisClusteringISiloBuilderExtensions.UseRedisClustering%2A> extension method:
+
+```csharp
+using StackExchange.Redis;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseRedisClustering(options =>
+    {
+        options.ConfigurationOptions = new ConfigurationOptions
+        {
+            EndPoints = { "localhost:6379" },
+            AbortOnConnectFail = false
+        };
+    });
+});
+```
+
+Alternatively, you can use a connection string:
+
+```csharp
+siloBuilder.UseRedisClustering("localhost:6379");
+```
+
+The <xref:Orleans.Clustering.Redis.RedisClusteringOptions> class provides the following configuration options:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `ConfigurationOptions` | `ConfigurationOptions` | The StackExchange.Redis client configuration. Required. |
+| `EntryExpiry` | `TimeSpan?` | Optional expiration time for entries. Only set this for ephemeral environments like testing. Default is `null`. |
+| `CreateMultiplexer` | `Func<RedisClusteringOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
+| `CreateRedisKey` | `Func<ClusterOptions, RedisKey>` | Custom function to generate the Redis key for the membership table. Default format is `{ServiceId}/members/{ClusterId}`. |
+
+> [!IMPORTANT]
+> Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+### .NET Aspire integration for clustering
+
+When using [.NET Aspire](../host/aspire-integration.md), you can configure Orleans clustering declaratively in your AppHost project. Aspire automatically injects the necessary configuration into your silo projects via environment variables.
+
+#### Redis clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var redis = builder.AddRedis("redis");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(redis);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WithReference(redis);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedRedisClient("redis");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+#### Azure Table Storage clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var storage = builder.AddAzureStorage("storage")
+    .RunAsEmulator();  // Use Azurite for local development
+var tables = storage.AddTables("clustering");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(tables);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WaitFor(storage);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureTableServiceClient("clustering");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!TIP]
+> To use the Azurite emulator for local development, call `.RunAsEmulator()` on the Azure Storage resource. Without this call, Aspire expects a real Azure Storage connection.
+
+#### Azure Cosmos DB clustering with Aspire
+
+**AppHost project (Program.cs):**
+
+```csharp
+var builder = DistributedApplication.CreateBuilder(args);
+
+var cosmos = builder.AddAzureCosmosDB("cosmos")
+    .RunAsEmulator();  // Use emulator for local development
+var database = cosmos.AddCosmosDatabase("orleans");
+
+var orleans = builder.AddOrleans("cluster")
+    .WithClustering(database);
+
+builder.AddProject<Projects.MySilo>("silo")
+    .WithReference(orleans)
+    .WaitFor(cosmos);
+
+builder.Build().Run();
+```
+
+**Silo project (Program.cs):**
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.AddServiceDefaults();
+builder.AddKeyedAzureCosmosClient("cosmos");
+builder.UseOrleans();
+
+builder.Build().Run();
+```
+
+> [!NOTE]
+> Aspire's Cosmos DB integration for Orleans currently supports clustering only. For grain storage and reminders with Cosmos DB, you'll need to configure those providers manually in the silo project.
+
+> [!IMPORTANT]
+> You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureCosmosClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
+
+For more information about Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0,orleans-3-x"
+
+### Configure Cassandra clustering
+
+Configure Apache Cassandra as the clustering provider using the <xref:Orleans.Clustering.Cassandra.Hosting.CassandraMembershipHostingExtensions.UseCassandraClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Orleans.Clustering.Cassandra
+```
+
+Configure Cassandra clustering with a connection string:
+
+```csharp
+using Orleans.Clustering.Cassandra.Hosting;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseCassandraClustering(
+        connectionString: "Contact Points=localhost;Port=9042",
+        keyspace: "orleans");
+});
+```
+
+Alternatively, use the options-based configuration for more control:
+
+```csharp
+siloBuilder.UseCassandraClustering(options =>
+{
+    options.ConfigureClient("Contact Points=cassandra-node1,cassandra-node2;Port=9042", "orleans");
+    options.UseCassandraTtl = true;
+    options.InitializeRetryMaxDelay = TimeSpan.FromSeconds(30);
+});
+```
+
+Or provide a custom session factory for advanced scenarios:
+
+```csharp
+using Cassandra;
+
+siloBuilder.UseCassandraClustering(async serviceProvider =>
+{
+    var cluster = Cluster.Builder()
+        .AddContactPoints("cassandra-node1", "cassandra-node2")
+        .WithPort(9042)
+        .WithCredentials("username", "password")
+        .WithQueryOptions(new QueryOptions().SetConsistencyLevel(ConsistencyLevel.Quorum))
+        .Build();
+
+    return await cluster.ConnectAsync("orleans");
+});
+```
+
+The <xref:Orleans.Clustering.Cassandra.Hosting.CassandraClusteringOptions> class provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `UseCassandraTtl` | `bool` | `false` | When `true`, configures time-to-live for membership table rows in Cassandra, allowing defunct silo cleanup even if the cluster is no longer running. Uses `DefunctSiloExpiration` from `ClusterMembershipOptions`. |
+| `InitializeRetryMaxDelay` | <xref:System.TimeSpan> | 20 seconds | The maximum delay between retries when encountering contention during initialization. This is typically needed with large numbers of silos connecting simultaneously to multi-datacenter Cassandra clusters. |
+
+#### When to use Cassandra clustering
+
+Consider Cassandra for clustering when:
+
+- You already have a Cassandra infrastructure in your organization
+- You need a clustering provider that works across multiple data centers with tunable consistency
+- You require automatic defunct silo cleanup via Cassandra TTL even when the Orleans cluster isn't running
+- You need high write throughput for large clusters
+
+### Configure Azure Cosmos DB clustering
+
+Configure Azure Cosmos DB as the clustering provider using the <xref:Orleans.Hosting.HostingExtensions.UseCosmosClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Orleans.Clustering.Cosmos
+```
+
+Configure Cosmos DB clustering with a connection string:
+
+```csharp
+using Azure.Identity;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseCosmosClustering(options =>
+    {
+        options.ConfigureCosmosClient(
+            "https://myaccount.documents.azure.com:443/",
+            new DefaultAzureCredential());
+        options.DatabaseName = "Orleans";
+        options.ContainerName = "OrleansCluster";
+        options.IsResourceCreationEnabled = true;
+    });
+});
+```
+
+Alternatively, you can use a connection string:
+
+```csharp
+siloBuilder.UseCosmosClustering(options =>
+{
+    options.ConfigureCosmosClient("AccountEndpoint=https://myaccount.documents.azure.com:443/;AccountKey=...");
+});
+```
+
+The <xref:Orleans.Clustering.Cosmos.CosmosClusteringOptions> class inherits from `CosmosOptions` and provides the following configuration options:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `DatabaseName` | `string` | `"Orleans"` | The name of the Cosmos DB database. |
+| `ContainerName` | `string` | `"OrleansCluster"` | The name of the container for cluster membership data. |
+| `IsResourceCreationEnabled` | `bool` | `false` | When `true`, automatically creates the database and container if they don't exist. |
+| `DatabaseThroughput` | `int?` | `null` | The provisioned throughput for the database. If `null`, uses serverless mode. |
+| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container. |
+| `ClientOptions` | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client. |
+| `CleanResourcesOnInitialization` | `bool` | `false` | Deletes the database on initialization. **Only for testing.** |
+
+#### When to use Cosmos DB clustering
+
+Consider Azure Cosmos DB for clustering when:
+
+- You're already using Azure Cosmos DB in your application
+- You need a globally distributed database with multi-region write capabilities
+- You want a fully managed, serverless option with automatic scaling
+- You need low-latency reads and writes with guaranteed SLAs
+
+For Orleans clients, use `UseCosmosGatewayListProvider` to configure gateway discovery:
+
+```csharp
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.UseCosmosGatewayListProvider(options =>
+    {
+        options.ConfigureCosmosClient(
+            "https://myaccount.documents.azure.com:443/",
+            new DefaultAzureCredential());
+    });
+});
+```
 
 In addition to `IMembershipTable`, each silo participates in a fully distributed peer-to-peer membership protocol that detects failed silos and reaches an agreement on the set of alive silos. The internal implementation of Orleans's membership protocol is described below.
 
@@ -111,13 +498,15 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
     In addition to heartbeats sent between silos, each silo periodically updates an "I Am Alive" timestamp in its table row. This serves two purposes:
 
-    1. **Diagnostics**: Provides system administrators a simple way to check cluster liveness and determine when a silo was last active. The timestamp is typically updated every 5 minutes.
+    1. **Diagnostics**: Provides system administrators a simple way to check cluster liveness and determine when a silo was last active. The timestamp is by default updated every 30 seconds.
 
-    1. **Disaster recovery**: If a silo hasn't updated its timestamp for several periods (configured via `NumMissedTableIAmAliveLimit`), new silos ignore it during startup connectivity checks. This allows the cluster to recover from scenarios where silos crashed without proper cleanup.
+    1. **Disaster recovery**: If a silo hasn't updated its timestamp for several periods (configured via `NumMissedTableIAmAliveLimit`, default: 3), new silos ignore it during startup connectivity checks. This allows the cluster to recover from scenarios where silos crashed without proper cleanup.
 
 ### Membership table
 
-As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. It also helps coordinate agreement on the membership view. The main Orleans repository contains implementations for many systems, including Azure Table Storage, Azure Cosmos DB, PostgreSQL, MySQL/MariaDB, SQL Server, Apache ZooKeeper, Consul IO, Apache Cassandra, MongoDB, Redis, AWS DynamoDB, and an in-memory implementation for development.
+As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. It also helps coordinate agreement on the membership view.
+
+The following listing contains implementation notes for some of the official implementations of the `IMembershipTable`:
 
 1. **[Azure Table Storage](/azure/storage/storage-dotnet-how-to-use-tables)**: In this implementation, the Azure deployment ID serves as the partition key, and the silo identity (`ip:port:epoch`) acts as the row key. Together, they guarantee a unique key per silo. For concurrency control, optimistic concurrency control based on [Azure Table ETags](/rest/api/storageservices/Update-Entity2) is used. Every time data is read from the table, the ETag for each read row is stored and used when trying to write back. The Azure Table service automatically assigns and checks ETags on every write. For multi-row transactions, the support for [batch transactions provided by Azure Table](/rest/api/storageservices/Performing-Entity-Group-Transactions) is utilized, guaranteeing serializable transactions over rows with the same partition key.
 
@@ -125,7 +514,7 @@ As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find 
 
 1. **[Apache ZooKeeper](https://zookeeper.apache.org/)**: In this implementation, the configured deployment ID is used as a root node, and the silo identity (`ip:port@epoch`) as its child node. Together, they guarantee a unique path per silo. For concurrency control, optimistic concurrency control based on the [node version](https://zookeeper.apache.org/doc/r3.4.6/zookeeperOver.html#Nodes+and+ephemeral+nodes) is used. Every time data is read from the deployment root node, the version for every read child silo node is stored and used when trying to write back. Each time a node's data changes, the ZooKeeper service atomically increases the version number. For multi-row transactions, the [multi method](https://zookeeper.apache.org/doc/r3.4.6/api/org/apache/zookeeper/ZooKeeper.html#multi(java.lang.Iterable)) is utilized, guaranteeing serializable transactions over silo nodes with the same parent deployment ID node.
 
-1. **[Consul IO](https://www.consul.io)**: Consul's Key/Value store was used to implement the membership table. See [Consul Deployment](../deployment/consul-deployment.md) for more details.
+1. **[HashiCorp Consul](https://www.consul.io)**: Consul's Key/Value store was used to implement the membership table. See [Consul Deployment](../deployment/consul-deployment.md) for more details.
 
 1. **[AWS DynamoDB](https://aws.amazon.com/dynamodb/)**: In this implementation, the cluster Deployment ID is used as the Partition Key and Silo Identity (`ip-port-generation`) as the RangeKey, making the record unique. Optimistic concurrency is achieved using the `ETag` attribute by making conditional writes on DynamoDB. The implementation logic is quite similar to Azure Table Storage.
 
@@ -183,3 +572,5 @@ A natural question might be why not rely completely on [Apache ZooKeeper](https:
 
 Acknowledgments for the contribution of Alex Kogan to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
 The implementation of ZooKeeper based `IMembershipTable` was done by [Shay Hazor](https://github.com/shayhatsor), the implementation of SQL `IMembershipTable` was done by [Veikko Eeva](https://github.com/veikkoeeva), the implementation of AWS DynamoDB `IMembershipTable` was done by [Gutemberg Ribeiro](https://github.com/galvesribeiro/), the implementation of Consul based `IMembershipTable` was done by [Paul North](https://github.com/PaulNorth), and finally the implementation of the Apache Cassandra `IMembershipTable` was adapted from `OrleansCassandraUtils` by [Arshia001](https://github.com/Arshia001).
+
+:::zone-end

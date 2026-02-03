@@ -26,7 +26,7 @@ It's beneficial to use a consistent format for switch names, since they're a for
 - *Switch*.*namespace*.*switchname*
 - *Switch*.*library*.*switchname*
 
-Once you define and document the switch, callers can use it by calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method programmatically. .NET Framework apps can also use the switch by adding an [\<AppContextSwitchOverrides>](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element to their application configuration file or by using the registry. For more information about how callers use and set the value of <xref:System.AppContext> configuration switches, see the [AppContext for library consumers](#appcontext-for-library-consumers) section.
+Once you define and document the switch, callers can use it by calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method programmatically. .NET Framework apps can also use the switch by adding an [`<AppContextSwitchOverrides>`](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element to their application configuration file or by using the registry. For more information about how callers use and set the value of <xref:System.AppContext> configuration switches, see the [AppContext for library consumers](#appcontext-for-library-consumers) section.
 
 In .NET Framework, when the common language runtime runs an application, it automatically reads the registry's compatibility settings and loads the application configuration file to populate the application's <xref:System.AppContext> instance. Because the <xref:System.AppContext> instance is populated either programmatically by the caller or by the runtime, .NET Framework apps don't have to take any action, such as calling the <xref:System.AppContext.SetSwitch%2A> method, to configure the <xref:System.AppContext> instance.
 
@@ -90,9 +90,9 @@ You can set the value of a switch by calling the <xref:System.AppContext.SetSwit
 
 .NET Framework apps have additional ways to set the value of a switch:
 
-- By adding an `<AppContextSwitchOverrides>` element to the [\<runtime>](../../framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app.config file. The switch has a single attribute, `value`, whose value is a string that represents a key/value pair containing both the switch name and its value.
+- By adding an `<AppContextSwitchOverrides>` element to the [`<runtime>`](../../framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app.config file. The switch has a single attribute, `value`, whose value is a string that represents a key/value pair containing both the switch name and its value.
 
-  To define multiple switches, separate each switch's key/value pair in the [\<AppContextSwitchOverrides>](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element's `value` attribute with a semicolon. In that case, the `<AppContextSwitchOverrides>` element has the following format:
+  To define multiple switches, separate each switch's key/value pair in the [`<AppContextSwitchOverrides>`](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element's `value` attribute with a semicolon. In that case, the `<AppContextSwitchOverrides>` element has the following format:
 
   ```xml
   <AppContextSwitchOverrides value="switchName1=value1;switchName2=value2" />
@@ -101,7 +101,7 @@ You can set the value of a switch by calling the <xref:System.AppContext.SetSwit
   Using the `<AppContextSwitchOverrides>` element to define a configuration setting has application scope; that is, it affects only the application.
 
   > [!NOTE]
-  > For information on the switches defined by .NET Framework, see [\<AppContextSwitchOverrides> element](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md).
+  > For information on the switches defined by .NET Framework, see [`<AppContextSwitchOverrides>` element](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md).
 
 - By adding an entry to the registry. Add a new string value to the **HKLM\SOFTWARE\Microsoft\\.NETFramework\AppContext** subkey. Set the name of the entry to the name of the switch. Set its value to one of the following options: `True`, `true`, `False`, or `false`. If the runtime encounters any other value, it ignores the switch.
 
@@ -109,7 +109,7 @@ You can set the value of a switch by calling the <xref:System.AppContext.SetSwit
 
   Using the registry to define an <xref:System.AppContext> switch has machine scope; that is, it affects every application running on the machine.
 
-For ASP.NET and ASP.NET Core applications, you set a switch by adding an [\<Add>](../../framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../../framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. For example:
+For ASP.NET and ASP.NET Core applications, you set a switch by adding an [`<Add>`](../../framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [`<appSettings>`](../../framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. For example:
 
 ```xml
 <appSettings>

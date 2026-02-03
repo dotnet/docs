@@ -11,6 +11,18 @@ public static class MyExtensions
 }
 // </ExtensionBlock>
 
+// <GenericExtensionBlock>
+public static class MyGenericExtensions
+{
+    extension<T>(IEnumerable<T> source)
+        where T : IEquatable<T>
+    {
+        public IEnumerable<T> ValuesEqualTo(T threshold)
+            => source.Where(x => x.Equals(threshold));
+    }
+}
+// </GenericExtensionBlock>
+
 public interface IMyInterface
 {
     void MethodB();

@@ -44,7 +44,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 
 ## The WAS Runtime
 
- Applications are organized into sites for the purposes of addressing and management. At run time, applications are also grouped together into application pools. An application pool can house many different applications from many different sites. All of the applications inside an application pool share a common set of run-time characteristics. For example, they all run under the same version of the common language runtime (CLR) and they all share a common process identity. Each application pool corresponds to an instance of a worker process (w3wp.exe). Each managed application running inside of a shared application pool is isolated from other applications by means of a CLR AppDomain.
+ Applications are organized into sites for the purposes of addressing and management. At runtime, applications are also grouped together into application pools. An application pool can house many different applications from many different sites. All of the applications inside an application pool share a common set of runtime characteristics. For example, they all run under the same version of the common language runtime (CLR) and they all share a common process identity. Each application pool corresponds to an instance of a worker process (w3wp.exe). Each managed application running inside of a shared application pool is isolated from other applications by means of a CLR AppDomain.
 
 ## See also
 

@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "gcHeapCount element"
   - "<gcHeapCount> element"
 ---
-# \<GCHeapCount> element
+# `<GCHeapCount>` element
 
 Specifies the number of heaps/threads to use for server garbage collection.
 
@@ -50,7 +50,7 @@ None.
 
 ## Remarks
 
-By default, server GC threads are hard-affinitized with their respective CPU so that there is one GC heap, one server GC thread, and one background server GC thread for each processor. Starting with .NET Framework 4.6.2, you can use the **GCHeapCount** element to limit the number of heaps used by your application for server GC. Limiting the number of heaps used for server GC is particularly useful for systems that run multiple instances of a server application.
+By default, server GC threads are hard-affinitized with their respective CPU so that there is one GC heap, one server GC thread, and one background server GC thread for each processor. Starting with .NET Framework 4.6.2, you can use the `GCHeapCount` element to limit the number of heaps used by your application for server GC. Limiting the number of heaps used for server GC is particularly useful for systems that run multiple instances of a server application.
 
 **GCHeapCount** is typically used along with two other flags:
 
@@ -58,13 +58,13 @@ By default, server GC threads are hard-affinitized with their respective CPU so 
 
 - [GCHeapAffinitizeMask](gcheapaffinitizemask-element.md), which controls the affinity of GC threads/heaps with CPUs.
 
-If **GCHeapCount** is set and **GCNoAffinitize** is disabled (its default setting), there is an affinity between the *nn* GC threads/heaps and the first *nn* processors. You can use the **GCHeapAffinitizeMask** element to specify which processors are used by the process's server GC heaps. Otherwise, if multiple server processes are running on a system, their processor usage will overlap.
+If `GCHeapCount` is set and `GCNoAffinitize` is disabled (its default setting), there is an affinity between the *nn* GC threads/heaps and the first *nn* processors. You can use the `GCHeapAffinitizeMask` element to specify which processors are used by the process's server GC heaps. Otherwise, if multiple server processes are running on a system, their processor usage will overlap.
 
-If **GCHeapCount** is set and **GCNoAffinitize** is enabled, the garbage collector limits the number of processors used for server GC but does not affinitize GC heaps and processors.
+If `GCHeapCount` is set and `GCNoAffinitize` is enabled, the garbage collector limits the number of processors used for server GC but does not affinitize GC heaps and processors.
 
 ## Example
 
-The following example indicates that an application uses server GC with 10 heaps/threads. Since you don't want those heaps to overlap with heaps from other applications running on the system, you use the **GCHeapAffinitizeMask** to specify that the process should use CPUs 0 through 9.
+The following example indicates that an application uses server GC with 10 heaps/threads. Since you don't want those heaps to overlap with heaps from other applications running on the system, you use the `GCHeapAffinitizeMask` to specify that the process should use CPUs 0 through 9.
 
 ```xml
 <configuration>

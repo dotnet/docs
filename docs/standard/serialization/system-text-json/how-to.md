@@ -1,7 +1,7 @@
 ---
 title: "How to serialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code."
-ms.date: 02/11/2025
+ms.date: 11/20/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -110,14 +110,14 @@ Starting in .NET 9, you can also customize the indent character and size using <
 
 ## Use AI to serialize to JSON
 
-You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to use object fields that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to fit your object fields and serialization needs.
 
-The following text shows an example prompt for Copilot Chat:
+Here's an example prompt you can use to generate serialization code:
 
 ```copilot-prompt
-Generate code to use System.Text.Json to serialize an object to a JSON string.
-The object contains the following fields: FirstName (string), Lastname (string), Age (int).
-Provide example output.
+I have a variable named weatherForecast of type WeatherForecast.
+Serialize the variable using System.Text.Json and write the result directly to a file named "output.json" with the JSON indented for pretty formatting.
+Ensure the code includes all necessary using directives and compiles without errors.
 ```
 
 Review Copilot's suggestions before applying them.
@@ -127,4 +127,4 @@ For more information about GitHub Copilot, see GitHub's [FAQs](https://github.co
 ## See also
 
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)

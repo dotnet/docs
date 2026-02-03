@@ -3,7 +3,7 @@ title: Best practices for using the Azure SDK with ASP.NET Core
 description: Learn best practices and the steps to properly implement the Azure SDK for .NET in your ASP.NET Core apps.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
-ms.date: 10/22/2024
+ms.date: 01/16/2026
 ---
 
 # Use the Azure SDK for .NET in ASP.NET Core apps
@@ -54,7 +54,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="52-73" highlight="1-3,6,8,11-12":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="50-71" highlight="1-3,6,8,11-12":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
@@ -80,9 +80,9 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
     dotnet add package Azure.Identity
     ```
 
-1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
+1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" :::
 
     `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview). Using a shared `DefaultAzureCredential` instance ensures the underlying token cache is used, which improves application resilience and performance due to fewer requests for a new token.
 
@@ -106,7 +106,7 @@ Complete the steps in the following sections to update your app to use JSON file
     In the preceding JSON sample:
 
     - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code.  You will pass these names to `AddClient` extension methods to configure a given client. All other key names map to specific client options, and JSON serialization is performed in a case-insensitive manner.
-    - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=name> method call.
+    - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively.
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
@@ -122,7 +122,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 2. In the `Program.cs` file, call the `ConfigureDefaults` extension method to retrieve the default settings and apply them to your service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-41" highlight="26-27":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-41" highlight="24-25":::
 
 ## Configure logging
 

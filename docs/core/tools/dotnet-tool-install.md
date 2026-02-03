@@ -1,11 +1,11 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 08/27/2025
+ms.date: 11/12/2025
 ---
 # dotnet tool install
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -18,7 +18,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -26,7 +26,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -35,7 +35,7 @@ dotnet tool install <PACKAGE_NAME> [--local]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -94,21 +94,21 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Name/ID of the NuGet package that contains the .NET tool to install.
 
+  Starting in .NET 10.0.100 SDK, use the name/ID, and version separated by `@` to install a .NET tool.
+
 ## Options
 
-[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+- [!INCLUDE [allow-downgrade](includes/cli-allow-downgrade.md)]
 
 - **`--allow-roll-forward`**
 
   Available starting with .NET 9.0 SDK. Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
-- **`-a|--arch <ARCHITECTURE>`**
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
+- [!INCLUDE [add-source](includes/cli-add-source.md)]
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
-
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
 - **`--create-manifest-if-needed`**
 
@@ -131,9 +131,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   > [!WARNING]
   > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.
 
-- **`--disable-parallel`**
-
-  Prevent restoring multiple projects in parallel.
+- [!INCLUDE [disable-parallel](includes/cli-disable-parallel.md)]
 
 - **`--framework <FRAMEWORK>`**
 
@@ -143,17 +141,15 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-- **`--source <SOURCE>`**
+- [!INCLUDE [source](includes/cli-tool-source.md)]
 
-  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
-
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--local`**
 
@@ -175,7 +171,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies the location to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--version <VERSION_NUMBER>`**
 
@@ -201,9 +197,17 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Installs version 2.0.0 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool.
 
+- **`dotnet tool install -g dotnetsay@2.1.7`**
+
+  Installs version 2.1.7 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool.
+
 - **`dotnet tool install dotnetsay`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
+
+- **`dotnet tool install dotnetsay@2.1.7`**
+
+  Installs version 2.1.7 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
 
 - **`dotnet tool install -g dotnetsay --verbosity minimal`**
 

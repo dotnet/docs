@@ -1,7 +1,7 @@
 ---
 description: "The `using` directive imports types from a namespace, or creates an alias for a given type. Using directives enable you to use simple names for types instead of the fully qualified type name."
 title: "The using directive: Import types from a namespace"
-ms.date: 01/27/2025
+ms.date: 01/22/2026
 f1_keywords:
   - "using_CSharpKeyword"
   - "using-static_CSharpKeyword"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # The `using` directive
 
-The `using` directive allows you to use types defined in a namespace without specifying the fully qualified namespace of that type. In its basic form, the `using` directive imports all the types from a single namespace, as shown in the following example:
+The `using` directive enables you to use types defined in a namespace without specifying the fully qualified namespace of that type. In its basic form, the `using` directive imports all the types from a single namespace, as shown in the following example:
 
 ```csharp
 using System.Text;
@@ -32,6 +32,8 @@ using Project = PC.MyCompany.Project;
 
 You can use the `global` modifier on a *using alias directive*.
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 > [!NOTE]
 > The `using` keyword is also used to create *`using` statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *`using` statement*, see [`using` statement](../statements/using.md).
 
@@ -50,22 +52,22 @@ Create a `using` directive to use the types in a namespace without having to spe
 
 ## The `global` modifier
 
-Adding the `global` modifier to a `using` directive means that using is applied to all files in the compilation (typically a project):
+When you add the `global` modifier to a `using` directive, you apply the using to all files in the compilation (typically a project):
 
 ```csharp
 global using <fully-qualified-namespace>;
 ```
 
-Where *fully-qualified-namespace* is the fully qualified name of the namespace whose types can be referenced without specifying the namespace.
+Where *fully-qualified-namespace* is the fully qualified name of the namespace whose types you can reference without specifying the namespace.
 
 A *global using* directive can appear at the beginning of any source code file. All `global using` directives in a single file must appear before:
 
 - All `using` directives without the `global` modifier.
 - All namespace and type declarations in the file.
 
-You can add `global using` directives to any source file. Typically, you want to keep them in a single location. The order of `global using` directives doesn't matter, either in a single file, or between files.
+You can add `global using` directives to any source file. Typically, you keep them in a single location. The order of `global using` directives doesn't matter, either in a single file or between files.
 
-The `global` modifier can be combined with the `static` modifier. The `global` modifier can be applied to a *using alias directive*. In both cases, the directive's scope is all files in the current compilation. The following example enables using all the methods declared in the <xref:System.Math?displayProperty=fullName> in all files in your project:
+You can combine the `global` modifier with the `static` modifier. You can apply the `global` modifier to a *using alias directive*. In both cases, the directive's scope is all files in the current compilation. The following example enables using all the methods declared in the <xref:System.Math?displayProperty=fullName> in all files in your project:
 
 ```csharp
 global using static System.Math;
@@ -86,11 +88,11 @@ The `using static` directive names a type whose static members and nested types 
 using static <fully-qualified-type-name>;
 ```
 
-The `<fully-qualified-type-name>` is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/assembly-references.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
+The `<fully-qualified-type-name>` is the name of the type whose static members and nested types you can reference without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/assembly-references.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
 
-If the `using static` directive is applied within the context of a namespace (either file-scoped or nested in a `namespace` block, it is not necessary to fully qualify the type.
+If you apply the `using static` directive within the context of a namespace (either file-scoped or nested in a `namespace` block), you don't need to fully qualify the type.
 
-The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, instance members can only be invoked through the type instance.
+The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, you can only invoke instance members through the type instance.
 
 You can access static members of a type without having to qualify the access with the type name:
 
@@ -114,9 +116,9 @@ By eliminating the need to explicitly reference the <xref:System.Math> class eac
 
 :::code language="csharp" source="./snippets/using-static2.cs":::
 
-`using static` imports only accessible static members and nested types declared in the specified type. Inherited members aren't imported. You can import from any named type with a `using static` directive, including Visual Basic modules. If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
+`using static` imports only accessible static members and nested types declared in the specified type. Inherited members aren't imported. You can import from any named type with a `using static` directive, including Visual Basic modules. If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, the F# functions can be imported.
 
-`using static` makes extension methods declared in the specified type available for extension method lookup. However, the names of the extension methods aren't imported into scope for unqualified reference in code.
+`using static` makes extension members declared in the specified type available for extension member lookup. However, the names of the extension members aren't imported into scope for unqualified reference in code.
 
 Methods with the same name imported from different types by different `using static` directives in the same compilation unit or namespace form a method group. Overload resolution within these method groups follows normal C# rules.
 
@@ -124,9 +126,9 @@ The following example uses the `using static` directive to make the static membe
 
 :::code language="csharp" source="./snippets/using-static3.cs" id="Snippet1":::
 
-In the example, the `using static` directive could also be applied to the <xref:System.Double> type. Adding that directive would make it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, using `TryParse` without a type name creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
+In the example, you could also apply the `using static` directive to the <xref:System.Double> type. Adding that directive would make it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, using `TryParse` without a type name creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
-`using static` also applies to `enum` types. By adding `using static` with the enum, the type is no longer required to use the enum members.
+`using static` also applies to `enum` types. By adding `using static` with the enum, you no longer need to use the enum type to access its members.
 
 ```csharp
 using static Color;
@@ -149,7 +151,7 @@ class Program
 
 ## The `using` alias
 
-Create a `using` alias directive to make it easier to qualify an identifier to a namespace or type. In any `using` directive, the fully qualified namespace or type must be used regardless of the `using` directives that come before it. No `using` alias can be used in the declaration of a `using` directive. For example, the following example generates a compiler error:
+Create a `using` alias directive to make it easier to qualify an identifier to a namespace or type. In any `using` directive, you must use the fully qualified namespace or type regardless of the `using` directives that come before it. You can't use a `using` alias in the declaration of a `using` directive. For example, the following example generates a compiler error:
 
 ```csharp
 using s = System.Text;
@@ -170,7 +172,7 @@ Beginning with C# 12, you can create aliases for types that were previously rest
 
 ## Qualified alias member
 
-The namespace alias qualifier, `::` provides explicit access to the global namespace or other using aliases potentially hidden by other entities.
+The namespace alias qualifier, `::` provides explicit access to the global namespace or other using aliases that other entities might hide.
 
 The `global::` ensures that the namespace lookup for the namespace following the `::` token is relative to the global namespace. Otherwise, the token must resolve to a using alias, and the token following the `::` must resolve to a type in that aliased namespace. The following example shows both forms:
 

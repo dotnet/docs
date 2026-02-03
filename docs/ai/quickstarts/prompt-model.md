@@ -1,10 +1,9 @@
 ---
 title: Quickstart - Connect to and prompt an AI model with .NET
 description: Create a simple chat app using Microsoft.Extensions.AI to summarize a text.
-ms.date: 05/02/2025
+ms.date: 11/20/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
 # Connect to and prompt an AI model

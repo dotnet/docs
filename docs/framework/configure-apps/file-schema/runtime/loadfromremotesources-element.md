@@ -7,16 +7,16 @@ helpviewer_keywords:
   - "<loadFromRemoteSources> element"
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 ---
-# \<loadFromRemoteSources> element
+# `<loadFromRemoteSources>` element
 
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
 
 > [!NOTE]
 > If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<loadFromRemoteSources>`
 
 ## Syntax
 

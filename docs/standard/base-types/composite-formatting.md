@@ -42,7 +42,7 @@ Consider the following <xref:System.String.Format%2A> code fragment:
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
 
 <!-- markdownlint-disable-next-line no-space-in-code -->
-The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the object `name`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
+The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the string literal `"Fred"`, and `{1:hh}`, whose index of 1 corresponds to the value of `DateTime.Now`.
 
 ## Format item syntax
 
@@ -64,7 +64,7 @@ Multiple format items can refer to the same element in the list of objects by sp
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="multiple":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="multiple":::
 
-Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.
+Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at runtime if a parameter specifier designates an item outside the bounds of the list of objects.
 
 ### Width component
 

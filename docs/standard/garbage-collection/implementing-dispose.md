@@ -170,7 +170,7 @@ The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespac
 
 ## See also
 
-- [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)
+- [Disposal of services](../../core/extensions/dependency-injection/guidelines.md#disposal-of-services)
 - <xref:System.GC.SuppressFinalize%2A>
 - <xref:System.IDisposable>
 - <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>

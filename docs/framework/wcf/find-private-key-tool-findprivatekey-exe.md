@@ -45,5 +45,5 @@ FindPrivateKey My CurrentUser -n "CN=John Doe"
 The following command retrieves the private key for the local machine:
 
 ```console
-FindPrivateKey My LocalMachine -t "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52" –a
+FindPrivateKey My LocalMachine -t "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52" -a
 ```

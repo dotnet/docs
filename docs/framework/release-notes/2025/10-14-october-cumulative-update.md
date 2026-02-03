@@ -6,6 +6,7 @@ ms.date: 10/14/2025
 # October 2025 cumulative update
 
 _Released October 14, 2025_
+_Updated November 10, 2025_
 
 ## Summary of what's new in this release
 
@@ -14,9 +15,9 @@ _Released October 14, 2025_
 
 ### Security improvements
 
-#### CVE-2025-21176 – Remote Code Execution vulnerability
+#### CVE-2025-55248 – Information Disclosure vulnerability
 
-This security update addresses a remote code execution vulnerability detailed in [CVE 2025-21176](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21176).
+This security update addresses an information disclosure vulnerability detailed in [CVE 2025-55248](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55248).
 
 ### Quality and reliability improvements
 

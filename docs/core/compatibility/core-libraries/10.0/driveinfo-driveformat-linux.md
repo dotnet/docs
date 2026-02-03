@@ -21,7 +21,7 @@ For cgroup file systems, `DriveFormat` returns `cgroup`/`cgroup2`. For the SELin
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Type of breaking change
 

@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "gcHeapCount element"
   - "<gcHeapCount> element"
 ---
-# \<GCHeapAffinitizeMask> element
+# `<GCHeapAffinitizeMask>` element
 
 Defines the affinity between GC heaps and individual processors.
 
@@ -50,11 +50,11 @@ None.
 
 ## Remarks
 
-By default, server GC threads are hard-affinitized with their respective CPU so that there is one GC heap, one server GC thread, and one background server GC thread for each processor. Starting with .NET Framework 4.6.2, you can use the **GCHeapAffinitizeMask** element to control the affinity between server GC heaps and processors when the number of heaps is limited by the **GCHeapCount** element.
+By default, server GC threads are hard-affinitized with their respective CPU so that there is one GC heap, one server GC thread, and one background server GC thread for each processor. Starting with .NET Framework 4.6.2, you can use the `GCHeapAffinitizeMask` element to control the affinity between server GC heaps and processors when the number of heaps is limited by the `GCHeapCount` element.
 
 **GCHeapAffinitizeMask** is typically used along with two other flags:
 
-- [GCNoAffinitize](gcnoaffinitize-element.md), which controls whether server GC threads/heaps are affinitized with CPUs. The `enabled` attribute of the [GCNoAffinitize](gcnoaffinitize-element.md) element must be `false` (its default value) for the **GCHeapAffinitizeMask** setting to be used.
+- [GCNoAffinitize](gcnoaffinitize-element.md), which controls whether server GC threads/heaps are affinitized with CPUs. The `enabled` attribute of the [GCNoAffinitize](gcnoaffinitize-element.md) element must be `false` (its default value) for the `GCHeapAffinitizeMask` setting to be used.
 
 - [GCHeapCount](gcheapcount-element.md), which limits the number of heaps used by the process for server GC. By default, there is one heap for each processor.
 
@@ -68,7 +68,7 @@ A value of 1023 is 0x3FF or 0011 1111 1111b. The process uses 10 processors, fro
 
 ## Example
 
-The following example indicates that an application uses server GC with 10 heaps/threads. Since you don't want those heaps to overlap with heaps from other applications running on the system, use **GCHeapAffinitizeMask** to specify that the process should use CPUs 0 through 9.
+The following example indicates that an application uses server GC with 10 heaps/threads. Since you don't want those heaps to overlap with heaps from other applications running on the system, use `GCHeapAffinitizeMask` to specify that the process should use CPUs 0 through 9.
 
 ```xml
 <configuration>

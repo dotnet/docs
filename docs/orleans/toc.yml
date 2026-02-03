@@ -8,7 +8,7 @@ items:
         href: overview.md
       - name: Benefits
         href: benefits.md
-      - name: "Migrate from Orleans 3.x to 7.0"
+      - name: Migration guide
         href: migration-guide.md
   - name: Quickstarts
     items:
@@ -120,14 +120,16 @@ items:
     items:
       - name: Clients
         href: host/client.md
+      - name: Dashboard
+        href: dashboard/index.md
+      - name: .NET Aspire integration
+        href: host/aspire-integration.md
       - name: Silo lifecycle
         href: host/silo-lifecycle.md
       - name: Heterogeneous silos
         href: host/heterogeneous-silos.md
       - name: Grain directory
         href: host/grain-directory.md
-      - name: PowerShell client module
-        href: host/powershell-client.md
       - name: Transport Layer Security (TLS)
         href: host/transport-layer-security.md
       - name: Configuration guide
@@ -191,26 +193,12 @@ items:
         href: deployment/service-fabric.md
       - name: Handle failures
         href: deployment/handling-failures.md
-      - name: Troubleshooting Azure Cloud Services deployments
+      - name: Troubleshooting Azure Cloud Services (Legacy)
         href: deployment/troubleshooting-azure-cloud-services-deployments.md
       - name: Consul deployments
         href: deployment/consul-deployment.md
-      - name: Docker deployment
-        href: deployment/docker-deployment.md
       - name: Troubleshoot deployments
         href: deployment/troubleshooting-deployments.md
-      - name: Multi-cluster support
-        items:
-          - name: Overview
-            href: deployment/multi-cluster-support/overview.md
-          - name: Multi-cluster configuration
-            href: deployment/multi-cluster-support/multi-cluster-configuration.md
-          - name: Gossip channels
-            href: deployment/multi-cluster-support/gossip-channels.md
-          - name: Silo configuration
-            href: deployment/multi-cluster-support/silo-configuration.md
-          - name: Global-single-instance grains
-            href: deployment/multi-cluster-support/global-single-instance.md
   - name: Code samples
     items:
       - name: Overview

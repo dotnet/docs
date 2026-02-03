@@ -1,9 +1,7 @@
 ---
 title: Implement a custom logging provider
 description: Discover how to implement a custom logging provider with colorized logs, writing custom C# ILogger and ILoggerProvider implementations.
-author: IEvangelist
-ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 ms.topic: how-to
 ---
 
@@ -98,5 +96,5 @@ Running this simple application will render color output to the console window s
 
 - [Logging in .NET](logging.md)
 - [Logging providers in .NET](logging-providers.md)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)

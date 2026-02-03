@@ -9,7 +9,7 @@ ms.date: 01/28/2021
 
 This article explains how to add and remove package dependencies by editing the project file or by using the CLI.
 
-## The \<PackageReference> element
+## The `<PackageReference>` element
 
 The `<PackageReference>` project file element has the following structure:
 

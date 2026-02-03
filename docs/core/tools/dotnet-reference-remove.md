@@ -1,11 +1,11 @@
 ---
 title: dotnet reference remove command
 description: The dotnet reference remove command provides a convenient option to remove project to project references.
-ms.date: 04/02/2025
+ms.date: 10/28/2025
 ---
 # dotnet reference remove
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -39,7 +39,7 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

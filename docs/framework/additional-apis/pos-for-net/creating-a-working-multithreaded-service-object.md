@@ -18,13 +18,13 @@ This sample combines all of these steps to create a working, multithreaded MSR S
 
 ## To customize this code for your Service Object
 
-1. Modify the **PosAssembly** attribute in **AssemblyInfo.cs** so that it contains your organization's name.
+1. Modify the `PosAssembly` attribute in **AssemblyInfo.cs** so that it contains your organization's name.
 
 2. Be sure that the name of the namespace is appropriate for your organization and Service Object.
 
-3. Modify the **ServiceObject** attribute to contain the type, name, description, and version number of the Service Object that you are creating.
+3. Modify the `ServiceObject` attribute to contain the type, name, description, and version number of the Service Object that you are creating.
 
-4. Add a **HardwareId** attribute to associate this Service Object with a Plug and Play device, or a range of devices.
+4. Add a `HardwareId` attribute to associate this Service Object with a Plug and Play device, or a range of devices.
 
 5. Include the **ThreadHelper** class presented in [Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md). You can do this by either pasting the code into your source file, or compiling it as a separate source file in your project. Be sure that the **ThreadHelper** class is in an accessible namespace.
 

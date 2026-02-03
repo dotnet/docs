@@ -32,18 +32,18 @@ public void DoSomething()
 }
 ```
 
-Additionally, programmatic calls to expansive APIs (`Assert`) always succeed, while programmatic calls to restrictive APIs (`Deny`, `PermitOnly`) always throw an exception at run time. (<xref:System.Security.Permissions.PrincipalPermission> is an exception to this rule. See the [Recommended action](#cas-action) section below.)
+Additionally, programmatic calls to expansive APIs (`Assert`) always succeed, while programmatic calls to restrictive APIs (`Deny`, `PermitOnly`) always throw an exception at runtime. (<xref:System.Security.Permissions.PrincipalPermission> is an exception to this rule. See the [Recommended action](#cas-action) section below.)
 
 ```csharp
 public void DoAssert()
 {
-    // The line below has no effect at run time.
+    // The line below has no effect at runtime.
     new SocketPermission(PermissionState.Unrestricted).Assert();
 }
 
 public void DoDeny()
 {
-    // The line below throws PlatformNotSupportedException at run time.
+    // The line below throws PlatformNotSupportedException at runtime.
     new SocketPermission(PermissionState.Unrestricted).Deny();
 }
 ```
@@ -59,13 +59,13 @@ public void DoSomething()
 }
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5 and later.
+This is a compile-time only change. There is no runtime change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at runtime in .NET 5 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at runtime in .NET 5 and later.
 
 ## Reason for change
 
 [Code access security (CAS)](/previous-versions/dotnet/framework/code-access-security/code-access-security) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
 
-Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../porting/net-framework-tech-unavailable.md) or .NET 5+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
+Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../porting/net-framework-tech-unavailable.md) or .NET 5+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at runtime. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
 
 ## Version introduced
 
@@ -105,7 +105,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
   }
   ```
 
-- If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand. All demands will succeed at run time.
+- If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand. All demands will succeed at runtime.
 
   ```csharp
   // REMOVE the attribute below; it will always succeed.

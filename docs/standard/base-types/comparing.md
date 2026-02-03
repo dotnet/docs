@@ -2,7 +2,7 @@
 title: "Comparing Strings in .NET"
 description: Read about methods to compare strings in .NET. Learn about the Compare, CompareOrdinal, CompareTo, StartsWith, EndsWith, Equals, IndexOf, & LastIndexOf methods.
 ms.date: "03/30/2017"
-ms.topic: article
+ms.topic: concept-article
 dev_langs:
   - "csharp"
   - "vb"
@@ -144,7 +144,6 @@ The following example uses the `IndexOf` method to search for the first occurren
 ## See also
 
 - [Best practices for using strings in .NET](best-practices-strings.md)
-- [Basic string operations](basic-string-operations.md)
 - [Perform culture-insensitive string operations](../../core/extensions/performing-culture-insensitive-string-operations.md)
 - [Sorting weight tables](https://www.microsoft.com/download/details.aspx?id=10921) - used by .NET Framework and .NET Core 1.0-3.1 on Windows
 - [Default Unicode collation element table](https://www.unicode.org/Public/UCA/latest/allkeys.txt) - used by .NET 5 on all platforms, and by .NET Core on Linux and macOS

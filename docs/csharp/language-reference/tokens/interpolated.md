@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 10/07/2025
+ms.date: 01/14/2026
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -14,17 +14,19 @@ author: pkulikov
 
 # String interpolation using `$`
 
-The `$` character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, the compiler replaces items with interpolation expressions by the string representations of the expression results.
+Use the `$` character to identify a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When you resolve an interpolated string to a result string, the compiler replaces items with interpolation expressions by the string representations of the expression results.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than [string composite formatting](../../../standard/base-types/composite-formatting.md). The following example uses both features to produce the same output:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="CompareWithCompositeFormatting":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="CompareWithCompositeFormatting":::
 
 You can use an interpolated string to initialize a [constant](../keywords/const.md) string. You can do that only if all interpolation expressions within the interpolated string are constant strings as well.
 
 ## Structure of an interpolated string
 
-To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal.
+To make a string literal an interpolated string, add the `$` symbol at the beginning. Don't include any white space between the `$` and the `"` that starts a string literal.
 
 The structure of an item with an interpolation expression is as follows:
 
@@ -42,15 +44,15 @@ Elements in square brackets are optional. The following table describes each ele
 
 The following example uses optional formatting components described in the preceding table:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
 
-Beginning with C# 11, you can use new-lines within an interpolation expression to make the expression's code more readable. The following example shows how new-lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
+To make the code more readable, use new lines within an interpolation expression. The following example shows how new lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="MultiLineExpression":::
 
 ## Interpolated raw string literals
 
-Beginning with C# 11, you can use an interpolated [raw string literal](../builtin-types/reference-types.md#string-literals), as the following example shows:
+You can use an interpolated [raw string literal](../builtin-types/reference-types.md#string-literals), as the following example shows:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteral":::
 
@@ -66,11 +68,11 @@ In the preceding example, an interpolated raw string literal starts with two `$`
 
 To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article.
 
-As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
+The colon (":") has special meaning in an interpolation expression item. To use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="BraceAndConditional":::
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="BraceAndConditional":::
 
 An interpolated [verbatim](verbatim.md) string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
@@ -90,16 +92,16 @@ For more information about custom formatting, see the [Custom formatting with IC
 
 ## Other resources
 
-If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) interactive tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
+If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 
 ## Compilation of interpolated strings
 
-The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, it's processed by the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
+The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName> processes it. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
 
 > [!NOTE]
-> One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions might not occur.
+> One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That behavior means side effects of those expressions might not occur.
 
-If an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+If an interpolated string has the type `string`, the compiler typically transforms it into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
 
@@ -108,8 +110,8 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
 
 - [Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
-- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [C# 11 - New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
+- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
+- [New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
 
 ## See also
 

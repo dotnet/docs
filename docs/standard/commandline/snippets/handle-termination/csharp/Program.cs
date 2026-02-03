@@ -5,7 +5,10 @@ class Program
     // <asyncaction>
     static Task<int> Main(string[] args)
     {
-        Option<string> urlOption = new("--url", "A URL.");
+        Option<string> urlOption = new("--url")
+        {
+            Description = "A URL"
+        };
         RootCommand rootCommand = new("Handle termination example") { urlOption };
 
         rootCommand.SetAction((ParseResult parseResult, CancellationToken cancellationToken) =>

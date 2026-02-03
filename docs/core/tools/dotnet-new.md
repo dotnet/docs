@@ -2,11 +2,11 @@
 title: dotnet new <TEMPLATE>
 description: The dotnet new command creates new .NET projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/15/2024
+ms.date: 10/28/2025
 ---
 # dotnet new &lt;TEMPLATE&gt;
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -30,7 +30,7 @@ The `dotnet new` command creates a .NET project or other artifacts based on a te
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 
 ### Tab completion
 
@@ -49,12 +49,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   You can run [`dotnet new list`](dotnet-new-list.md) to see a list of all installed templates.
 
-  Starting with .NET Core 3.0 SDK and ending with .NET SDK 5.0.300, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
-
-  - If the CLI can't find a template match when invoking `dotnet new`, not even partial.
-  - If there's a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
-
-  Starting with .NET SDK 5.0.300, the [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
+  The [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
 
   For a list of templates that ship with the .NET SDK, see [Preinstalled templates](dotnet-new-sdk-templates.md#preinstalled-templates).
 
@@ -62,15 +57,13 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
 - **`--dry-run`**
 
-  Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
+  Displays a summary of what would happen if the given command were run if it would result in a template creation.
 
 - **`--force`**
 
   Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-- **`-?|-h|--help`**
-
-  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-lang|--language {C#|F#|VB}`**
 
@@ -105,9 +98,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Template options
 

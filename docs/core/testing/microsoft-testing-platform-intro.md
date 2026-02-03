@@ -40,7 +40,7 @@ The main driving factors for the evolution of the new testing platform are detai
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
-* xUnit.net: In xUnit.net, the support of `Microsoft.Testing.Platform` is done via [xUnit.net runner](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform).
+* xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
 * TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
 ## Run and debug tests
@@ -175,16 +175,35 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 ### [Continuous integration (CI)](#tab/continuous-integration)
 
-There's no special pipeline task, or any extra tooling to run `Testing.Platform` tests. There's also no other tooling required to run multiple tests projects through a single command.
+- To run a single test project in CI, add one step for each test executable that you wish to run, such as the following on Azure DevOps:
 
-To run a test project in CI add one step for each test executable that you wish to run, such as this on Azure DevOps:
+  ```yml
+  - task: CmdLine@2
+    displayName: "Run Contoso.MyTests"
+    inputs:
+      script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
+  ```
 
-```yml
-- task: CmdLine@2
-  displayName: "Run Contoso.MyTests"
-  inputs:
-    script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
-```
+- Run the `dotnet test` command manually, similar to the typical local workflow:
+
+  ```yml
+  - task: CmdLine@2
+    displayName: "Run tests"
+    inputs:
+      script: 'dotnet test' # add command-line options as needed
+  ```
+
+- Run using the `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global-json.md) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
+
+  ```yml
+  - task: DotNetCoreCLI@2
+    displayName: "Run tests"
+    inputs:
+      command: test
+  ```
+
+  > [!NOTE]
+  > Support for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
 
 ---
 
@@ -227,7 +246,7 @@ The list below described only the platform options. To see the specific options 
 
   Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
 
-- **`--diagnostic-filelogger-synchronouswrite`**
+- **`--diagnostic-synchronous-write`**
 
   Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
 
@@ -235,9 +254,9 @@ The list below described only the platform options. To see the specific options 
 
   The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
 
-- **`--diagnostic-output-fileprefix`**
+- **`--diagnostic-file-prefix`**
 
-  The prefix for the log file name. Defaults to `"log_"`.
+  The prefix for the log file name. Defaults to `"log"`.
 
 - **`--diagnostic-verbosity`**
 

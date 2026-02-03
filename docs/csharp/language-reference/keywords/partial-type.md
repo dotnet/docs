@@ -1,7 +1,7 @@
 ---
 description: "A partial type is a type declaration that allows you to split the declaration of the type into multiple files."
 title: "Partial type"
-ms.date: 03/13/2025
+ms.date: 01/22/2026
 f1_keywords: 
   - "partialtype"
   - "partialtype_CSharpKeyword"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Partial type (C# Reference)
 
-Partial type definitions allow for the definition of a class, struct, interface, or record to be split into multiple definitions. These multiple definitions can be in different files in the same project. One type declaration contains only the signatures for [partial members](./partial-member.md):
+Partial type definitions allow you to split the definition of a class, struct, interface, or record into multiple definitions. You can put these multiple definitions in different files within the same project. One type declaration contains only the signatures for [partial members](./partial-member.md):
 
 :::code language="csharp" source="./snippets/PartialMembers.cs" id="DeclaringPart":::
 
@@ -20,11 +20,13 @@ The other declaration contains the implementation of the partial members:
 
 The declarations for a partial type can appear in either the same or multiple files. Typically, the two declarations are in different files. You split a class, struct, or interface type when you're working with large projects, with automatically generated code such as that provided by the [Windows Forms Designer](/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time), or [Source generators like RegEx](../../../standard/base-types/regular-expression-source-generators.md). A partial type can contain [partial members](partial-member.md).
 
-Beginning with C# 13, you can define partial properties and partial indexers. Beginning with C# 14, you can define partial instance constructors and partial events. Before C# 13, only methods could be defined as partial members.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-Documentation comments can be provided on either the declaring declaration or the implementing declaration. When documentation comments are applied to both type declarations, the XML elements from each declaration are included in the output XML. See the article on [partial members](./partial-member.md) for the rules on partial member declarations.
+Starting with C# 13, you can define partial properties and partial indexers. Starting with C# 14, you can define partial instance constructors and partial events. Before C# 13, only methods could be defined as partial members.
 
-You can apply attributes to either declaration. All attributes are both declarations, including duplicates, are combined in the compiled output.
+You can provide documentation comments on either the declaring declaration or the implementing declaration. When you apply documentation comments to both type declarations, the XML elements from each declaration are included in the output XML. For the rules on partial member declarations, see the article on [partial members](./partial-member.md).
+
+You can apply attributes to either declaration. The compiler combines all attributes from both declarations, including duplicates.
 
 For more information, see [Partial Classes and Methods](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
 

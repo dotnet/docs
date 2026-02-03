@@ -2,7 +2,7 @@
 title: Scheduling overview
 description: Explore the scheduling overview in .NET Orleans.
 ms.date: 03/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Scheduling overview
@@ -52,18 +52,18 @@ Here's a graphical representation of how a request is scheduled and executed as 
 
 :::image type="content" source="media/scheduler/scheduling-1.png" alt-text="Two-Task-based request execution example.":::
 
-The description above isn't specific to Orleans; it describes how task scheduling works in .NET. The C# compiler converts asynchronous methods into an asynchronous state machine, and execution progresses through this state machine in discrete steps. Each step schedules on the current <xref:System.Threading.Tasks.TaskScheduler> (accessed via <xref:System.Threading.Tasks.TaskScheduler.Current?displayProperty=nameWithType>, defaulting to <xref:System.Threading.Tasks.TaskScheduler.Default?displayProperty=nameWithType>) or the current <xref:System.Threading.SynchronizationContext>. If a `TaskScheduler` is used, each step in the method represents a `Task` instance passed to that `TaskScheduler`. Therefore, a `Task` in .NET can represent two conceptual things:
+The description above isn't specific to Orleans; it describes how task scheduling works in .NET. The C# compiler converts asynchronous methods into an asynchronous state machine, and execution progresses through this state machine in discrete steps. Each step schedules on the current <xref:System.Threading.Tasks.TaskScheduler> (accessed via <xref:System.Threading.Tasks.TaskScheduler.Current?displayProperty=nameWithType>, defaulting to <xref:System.Threading.Tasks.TaskScheduler.Default?displayProperty=nameWithType>) or the current <xref:System.Threading.SynchronizationContext>. If a <xref:System.Threading.Tasks.TaskScheduler> is used, each step in the method represents a <xref:System.Threading.Tasks.Task> instance passed to that <xref:System.Threading.Tasks.TaskScheduler>. Therefore, a <xref:System.Threading.Tasks.Task> in .NET can represent two conceptual things:
 
-1. An asynchronous operation that can be awaited. The execution of the `DelayExecution()` method above is represented by a `Task` that can be awaited.
-1. A synchronous block of work. Each stage within the `DelayExecution()` method above is represented by a `Task`.
+1. An asynchronous operation that can be awaited. The execution of the `DelayExecution()` method above is represented by a <xref:System.Threading.Tasks.Task> that can be awaited.
+1. A synchronous block of work. Each stage within the `DelayExecution()` method above is represented by a <xref:System.Threading.Tasks.Task>.
 
-When `TaskScheduler.Default` is used, continuations schedule directly onto the .NET <xref:System.Threading.ThreadPool> and aren't wrapped in a `Task` object. The wrapping of continuations in `Task` instances occurs transparently, so developers rarely need to be aware of these implementation details.
+When `TaskScheduler.Default` is used, continuations schedule directly onto the .NET <xref:System.Threading.ThreadPool> and aren't wrapped in a <xref:System.Threading.Tasks.Task> object. The wrapping of continuations in <xref:System.Threading.Tasks.Task> instances occurs transparently, so developers rarely need to be aware of these implementation details.
 
 ### Task scheduling in Orleans
 
-Each grain activation has its own `TaskScheduler` instance responsible for enforcing the *single-threaded* execution model of grains. Internally, this `TaskScheduler` is implemented via `ActivationTaskScheduler` and `WorkItemGroup`. `WorkItemGroup` keeps enqueued tasks in a <xref:System.Collections.Generic.Queue%601> (where `T` is internally a `Task`) and implements <xref:System.Threading.IThreadPoolWorkItem>. To execute each currently enqueued `Task`, `WorkItemGroup` schedules *itself* on the .NET `ThreadPool`. When the .NET `ThreadPool` invokes the `WorkItemGroup`'s `IThreadPoolWorkItem.Execute()` method, the `WorkItemGroup` executes the enqueued `Task` instances one by one.
+Each grain activation has its own <xref:System.Threading.Tasks.TaskScheduler> instance responsible for enforcing the *single-threaded* execution model of grains. Internally, this <xref:System.Threading.Tasks.TaskScheduler> is implemented via `ActivationTaskScheduler` and `WorkItemGroup`. `WorkItemGroup` keeps enqueued tasks in a <xref:System.Collections.Generic.Queue%601> (where `T` is internally a <xref:System.Threading.Tasks.Task>) and implements <xref:System.Threading.IThreadPoolWorkItem>. To execute each currently enqueued <xref:System.Threading.Tasks.Task>, `WorkItemGroup` schedules *itself* on the .NET <xref:System.Threading.ThreadPool>. When the .NET <xref:System.Threading.ThreadPool> invokes the `WorkItemGroup`'s `IThreadPoolWorkItem.Execute()` method, the `WorkItemGroup` executes the enqueued <xref:System.Threading.Tasks.Task> instances one by one.
 
-Each grain has a scheduler that executes by scheduling itself on the .NET `ThreadPool`:
+Each grain has a scheduler that executes by scheduling itself on the .NET <xref:System.Threading.ThreadPool>:
 
 :::image type="content" source="media/scheduler/scheduling-2.png" alt-text="Orleans grains scheduling themselves on the .NET ThreadPool.":::
 
@@ -71,9 +71,9 @@ Each scheduler contains a queue of tasks:
 
 :::image type="content" source="media/scheduler/scheduling-3.png" alt-text="Scheduler queue of scheduled tasks.":::
 
-The .NET `ThreadPool` executes each work item enqueued to it. This includes *grain schedulers* as well as other work items, such as those scheduled via `Task.Run(...)`:
+The .NET <xref:System.Threading.ThreadPool> executes each work item enqueued to it. This includes *grain schedulers* as well as other work items, such as those scheduled via `Task.Run(...)`:
 
 :::image type="content" source="media/scheduler/scheduling-4.png" alt-text="Visualization of the all schedulers running in the .NET ThreadPool.":::
 
 > [!NOTE]
-> A grain's scheduler can only execute on one thread at a time, but it doesn't always execute on the same thread. The .NET `ThreadPool` is free to use a different thread each time the grain's scheduler executes. The grain's scheduler ensures it only executes on one thread at a time, implementing the *single-threaded* execution model of grains.
+> A grain's scheduler can only execute on one thread at a time, but it doesn't always execute on the same thread. The .NET <xref:System.Threading.ThreadPool> is free to use a different thread each time the grain's scheduler executes. The grain's scheduler ensures it only executes on one thread at a time, implementing the *single-threaded* execution model of grains.

@@ -61,9 +61,9 @@ Orleans is not the best fit when:
 - Common Scenarios:
   - Return a concrete value:
   - `return Task.FromResult(value);`
-  - Return a `Task` of the same type:
+  - Return a <xref:System.Threading.Tasks.Task> of the same type:
   - `return foo.Bar();`
-  - `await` a `Task` and continue execution:
+  - `await` a <xref:System.Threading.Tasks.Task> and continue execution:
 
     ```csharp
     var x = await bar.Foo();
@@ -116,7 +116,7 @@ Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.
 
 - <xref:Orleans.IGrainState?displayProperty=nameWithType> is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
-- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed `State` property into the grain's base class.
+- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed <xref:Orleans.Grain%601.State> property into the grain's base class.
 - The initial <xref:Orleans.Grain%601.ReadStateAsync?displayProperty=nameWithType> automatically occurs before `ActiveAsync()` has been called for a grain.
 - When the grain's state object's data is changed, then the grain should call <xref:Orleans.Grain%601.WriteStateAsync?displayProperty=nameWithType>.
   - Typically, grains call `State.WriteStateAsync()` at the end of grain method to return the Write promise.
@@ -177,7 +177,7 @@ External changing data:
 Writing custom providers:
 
 - Storage providers are simple to write which is also a significant extension element for Orleans.
-- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, `ReadStateAsync`).
+- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, <xref:Orleans.Grain%601.ReadStateAsync*>).
 - The storage behavior is typically configurable (Batch writing, Hard or Soft Deletions, and so on) and defined by the storage provider.
 
 ## Cluster management

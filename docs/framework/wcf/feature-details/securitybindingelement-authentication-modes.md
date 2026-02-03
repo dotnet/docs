@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
 
 ### AnonymousForSslNegotiated
 
- With this authentication mode, the client is anonymous and the service is authenticated using an X.509 certificate that is negotiated at run time. The security binding element is a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSslNegotiationBindingElement%2A> method when a value of `false` is passed for the first parameter. Alternatively, set the `authenticationMode` attribute to `AnonymousForSslNegotiated`.
+ With this authentication mode, the client is anonymous and the service is authenticated using an X.509 certificate that is negotiated at runtime. The security binding element is a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSslNegotiationBindingElement%2A> method when a value of `false` is passed for the first parameter. Alternatively, set the `authenticationMode` attribute to `AnonymousForSslNegotiated`.
 
 ### CertificateOverTransport
 

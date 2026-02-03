@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 - [Download the dataset](https://aka.ms/mlnet-object-detection-tutorial-dataset) of 50 stop-sign images.
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 

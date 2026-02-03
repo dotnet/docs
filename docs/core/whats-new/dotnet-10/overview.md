@@ -2,14 +2,14 @@
 title: What's new in .NET 10
 description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 10/15/2025
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation. This page has been updated for RC 2.
+Learn about the new features in .NET 10 and find links to further documentation.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
@@ -35,7 +35,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## Aspire
 
-For information about what's new in Aspire, see [Aspire — what's new?](/dotnet/aspire/whats-new/).
+For information about what's new in Aspire, see [What's new in Aspire 13.1](https://aspire.dev/whats-new/aspire-13-1/).
 
 ## ASP.NET Core
 
@@ -75,7 +75,7 @@ The F# updates in .NET 10 include several new features and improvements across t
 
   General improvements and bug fixes in the compiler implementation.
 
-For more information, see the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
+For more information, see [What's new in F# 10](../../../fsharp/whats-new/fsharp-10.md) or the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
 
 ## Visual Basic
 

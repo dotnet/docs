@@ -3,7 +3,6 @@ title: "Breaking change - BufferedStream.WriteByte no longer performs implicit f
 description: "Learn about the breaking change in .NET 10 where BufferedStream.WriteByte no longer performs an implicit flush when the internal buffer is full."
 ms.date: 10/13/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/496356
 dev_langs:
   - "csharp"
   - "vb"
@@ -15,7 +14,7 @@ The <xref:System.IO.BufferedStream.WriteByte(System.Byte)?displayProperty=nameWi
 
 ## Version introduced
 
-.NET 10 Preview 4
+.NET 10
 
 ## Previous behavior
 

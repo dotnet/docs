@@ -5,6 +5,7 @@ ms.date: 05/23/2025
 ms.topic: how-to
 uid: orleans-serialization-configuration
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Serialization configuration in Orleans

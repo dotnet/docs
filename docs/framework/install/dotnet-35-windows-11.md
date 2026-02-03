@@ -34,6 +34,8 @@ There are a few different ways you can find the version of Windows you're using:
 
 [!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
 
+For more information about this change to .NET Framework 3.5, see [.NET Framework 3.5 on Windows 11 FAQ](../dotnet-35-windows-11-faq.yml).
+
 ## .NET Framework 3.5 optional components
 
 _Applies to **Windows 11 Insider Preview Build 27965 and later**_

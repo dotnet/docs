@@ -79,6 +79,8 @@ If you still can't resolve your installation issue or you don't have an internet
 
 [!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
 
+For more information about this change to .NET Framework 3.5, see [.NET Framework 3.5 on Windows 11 FAQ](../dotnet-35-windows-11-faq.yml).
+
 Additionally, the optional components that rely on .NET Framework 3.5 have also been removed:
 
 - ASP.NET 3.5

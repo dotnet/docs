@@ -24,10 +24,10 @@ partial class C(ILogger logger)
 
 ## Workarounds
 
-Either remove the field or the primary constructor. For more information, see [Basic usage](../../core/extensions/logging/source-generation.md.md#basic-usage).
+Either remove the field or the primary constructor. For more information, see [Basic usage](../../core/extensions/logging/source-generation.md#basic-usage).
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
 
 ## See also
 
-- [Compile-time logging source generation](../../core/extensions/logging/source-generation.md.md)
+- [Compile-time logging source generation](../../core/extensions/logging/source-generation.md)

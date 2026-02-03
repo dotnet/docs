@@ -11,14 +11,14 @@ Logging providers persist logs, except for the `Console` provider, which only di
 
 The default .NET Worker app templates:
 
-- Use the [Generic Host](generic-host.md).
+- Use the [Generic Host](../generic-host.md).
 - Call <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, which adds the following logging providers:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
   - [EventLog](#windows-eventlog) (Windows only)
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="17":::
+:::code language="csharp" source="../snippets/configuration/console/Program.cs" highlight="17":::
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
@@ -83,9 +83,9 @@ The `EventSource` provider writes to a cross-platform event source with the name
 
 #### dotnet trace tooling
 
-The [dotnet-trace](../diagnostics/dotnet-trace.md) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
+The [dotnet-trace](../../diagnostics/dotnet-trace.md) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
 
-See [dotnet-trace](../diagnostics/dotnet-trace.md) for installation instructions. For a diagnostic tutorial using `dotnet-trace`, see [Debug high CPU usage in .NET Core](../diagnostics/debug-highcpu.md).
+See [dotnet-trace](../../diagnostics/dotnet-trace.md) for installation instructions. For a diagnostic tutorial using `dotnet-trace`, see [Debug high CPU usage in .NET Core](../../diagnostics/debug-highcpu.md).
 
 ### Windows EventLog
 
@@ -199,7 +199,7 @@ If you plan to develop your own implementation of the <xref:Microsoft.Extensions
 
 An implementation of `ILoggerProvider` creates an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
 
-For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
+For more information, see [Implement a custom logging provider in .NET](custom-provider.md).
 
 ## Third-party logging providers
 
@@ -229,5 +229,5 @@ For more information, see each provider's documentation. Third-party logging pro
 ## See also
 
 - [Logging in .NET](overview.md).
-- [Implement a custom logging provider in .NET](custom-logging-provider.md).
+- [Implement a custom logging provider in .NET](custom-provider.md).
 - [High-performance logging in .NET](high-performance-logging.md).

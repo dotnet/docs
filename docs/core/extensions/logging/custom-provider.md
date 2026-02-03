@@ -16,7 +16,7 @@ There are many [logging providers](providers.md) available for common logging ne
 
 The sample creates different color console entries per log level and event ID using the following configuration type:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerConfiguration.cs":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLoggerConfiguration.cs":::
 
 The preceding code sets the default level to `Information`, the color to `Green`, and the `EventId` is implicitly `0`.
 
@@ -24,7 +24,7 @@ The preceding code sets the default level to `Information`, the color to `Green`
 
 The `ILogger` implementation category name is typically the logging source. For example, the type where the logger is created:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLogger.cs":::
 
 The preceding code:
 
@@ -33,7 +33,7 @@ The preceding code:
 
 It's a good practice to call <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled%2A?displayProperty=nameWithType> within <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> implementations since `Log` can be called by any consumer, and there are no guarantees that it was previously checked. The `IsEnabled` method should be very fast in most implementations.
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="15-16":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="15-16":::
 
 The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>`, which returns the current config&mdash;this handles updates to the config values as monitored through the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601.OnChange%2A?displayProperty=nameWithType> callback.
 
@@ -44,22 +44,22 @@ The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfigu
 
 The `ILoggerProvider` object is responsible for creating logger instances. It's not necessary to create a logger instance per category, but it makes sense for some loggers, like NLog or log4net. This strategy allows you to choose different logging output targets per category, as in the following example:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
 
 In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger%2A> creates a single instance of the `ColorConsoleLogger` per category name and stores it in the [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2). Additionally, the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface is required to update changes to the underlying `ColorConsoleLoggerConfiguration` object.
 
 To control the configuration of the `ColorConsoleLogger`, you define an alias on its provider:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs" range="6-8" highlight="6-7":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs" range="6-8" highlight="6-7":::
 
 The `ColorConsoleLoggerProvider` class defines two class-scoped attributes:
 
 - <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>: The `ColorConsoleLogger` type is _not supported_ in the `"browser"`.
 - <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute>: Configuration sections can define options using the `"ColorConsole"` key.
 
-The configuration can be specified with any valid [configuration provider](configuration-providers.md). Consider the following _appsettings.json_ file:
+The configuration can be specified with any valid [configuration provider](../configuration-providers.md). Consider the following _appsettings.json_ file:
 
-:::code language="json" source="snippets/configuration/console-custom-logging/appsettings.json":::
+:::code language="json" source="../snippets/configuration/console-custom-logging/appsettings.json":::
 
 This configures the log levels to the following values:
 
@@ -75,7 +75,7 @@ By convention, registering services for dependency injection happens as part of 
 
 To add the custom logging provider and corresponding logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> with <xref:Microsoft.Extensions.Logging.ILoggingBuilder> from the <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" highlight="6-14":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/Program.cs" highlight="6-14":::
 
 The `ILoggingBuilder` creates one or more `ILogger` instances. The `ILogger` instances are used by the framework to log the information.
 
@@ -86,7 +86,7 @@ The configuration from the _appsettings.json_ file overrides the following value
 
 By convention, extension methods on `ILoggingBuilder` are used to register the custom provider:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/Extensions/ColorConsoleLoggerExtensions.cs":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/Extensions/ColorConsoleLoggerExtensions.cs":::
 
 Running this simple application will render color output to the console window similar to the following image:
 
@@ -96,5 +96,5 @@ Running this simple application will render color output to the console window s
 
 - [Logging in .NET](overview.md)
 - [Logging providers in .NET](providers.md)
-- [Dependency injection in .NET](dependency-injection/overview.md)
+- [Dependency injection in .NET](../dependency-injection/overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)

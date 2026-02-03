@@ -59,7 +59,7 @@ The example produces output similar to the following log messages:
 
 ### Json
 
-To write logs in a JSON format, the `Json` console formatter is used. The sample source code shows how an ASP.NET Core app might register it. Using the `webapp` template, create a new ASP.NET Core app with the [dotnet new](../tools/dotnet-new.md) command:
+To write logs in a JSON format, the `Json` console formatter is used. The sample source code shows how an ASP.NET Core app might register it. Using the `webapp` template, create a new ASP.NET Core app with the [dotnet new](../../tools/dotnet-new.md) command:
 
 ```dotnetcli
 dotnet new webapp -o Console.ExampleFormatters.Json
@@ -102,7 +102,7 @@ Run the app again, with the above change, the log message is now formatted as JS
 
 ## Set formatter with configuration
 
-The previous samples showed how to register a formatter programmatically. Alternatively, this can be done with [configuration](configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
+The previous samples showed how to register a formatter programmatically. Alternatively, this can be done with [configuration](../../configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
 
 :::code language="json" source="snippets/console-formatter-json/appsettings.json" highlight="14-23":::
 
@@ -134,7 +134,7 @@ In the preceding code, the options are a subclass of <xref:Microsoft.Extensions.
 The `AddConsoleFormatter` API:
 
 - Registers a subclass of `ConsoleFormatter`.
-- Handles configuration. It uses a change token to synchronize updates, based on the [options pattern](options.md), and the [IOptionsMonitor](xref:Microsoft.Extensions.Options.IOptionsMonitor%601) interface.
+- Handles configuration. It uses a change token to synchronize updates, based on the [options pattern](../options.md), and the [IOptionsMonitor](xref:Microsoft.Extensions.Options.IOptionsMonitor%601) interface.
 
 :::code language="csharp" source="snippets/console-formatter-custom/Program.cs" highlight="6-7":::
 
@@ -152,7 +152,7 @@ For inspiration on further customizing formatting, see the existing implementati
 
 ### Custom configuration options
 
-To further customize the logging extensibility, your derived <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> class can be configured from any [configuration provider](configuration-providers.md). For example, you could use the [JSON configuration provider](configuration-providers.md#json-configuration-provider) to define your custom options. First define your <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> subclass.
+To further customize the logging extensibility, your derived <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> class can be configured from any [configuration provider](../configuration-providers.md). For example, you could use the [JSON configuration provider](../configuration-providers.md#json-configuration-provider) to define your custom options. First define your <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> subclass.
 
 :::code language="csharp" source="snippets/console-formatter-custom-with-config/CustomWrappingConsoleFormatterOptions.cs":::
 
@@ -224,5 +224,5 @@ When you run the application, the logs will show the `CustomPrefix` message in t
 ## See also
 
 - [Logging in .NET](overview.md)
-- [Implement a custom logging provider in .NET](custom-logging-provider.md)
+- [Implement a custom logging provider in .NET](custom-provider.md)
 - [High-performance logging in .NET](high-performance-logging.md)

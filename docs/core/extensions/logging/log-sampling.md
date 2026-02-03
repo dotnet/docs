@@ -40,11 +40,11 @@ dotnet add package Microsoft.Extensions.Telemetry
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../../tools/dependencies.md).
 
 ## Configure trace-based sampling
 
-Trace-based sampling ensures that logs are sampled consistently with the underlying <xref:System.Diagnostics.Activity>. This is useful when you want to maintain correlation between traces and logs. You can enable trace sampling (as described in the [guide](../diagnostics/distributed-tracing-concepts.md#sampling)), and then configure trace-based log sampling accordingly:
+Trace-based sampling ensures that logs are sampled consistently with the underlying <xref:System.Diagnostics.Activity>. This is useful when you want to maintain correlation between traces and logs. You can enable trace sampling (as described in the [guide](../../diagnostics/distributed-tracing-concepts.md#sampling)), and then configure trace-based log sampling accordingly:
 
 :::code language="csharp" source="snippets/log-sampling/trace-based/Program.cs" range="20":::
 
@@ -82,7 +82,7 @@ To register the sampler with the configuration, consider the following code:
 
 #### Change sampling rules in a running app
 
-Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
+Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which effectively acts as a no-op:
 

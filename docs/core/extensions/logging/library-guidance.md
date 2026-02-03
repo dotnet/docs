@@ -74,7 +74,7 @@ For more information, see [Compile-time logging source generation](source-genera
 
 ## Avoid string interpolation in logging
 
-A common mistake is to use [string interpolation](../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic for performance, as the string is evaluated even if the corresponding `LogLevel` isn't enabled. Instead of string interpolation, use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](overview.md#log-message-template).
+A common mistake is to use [string interpolation](../../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic for performance, as the string is evaluated even if the corresponding `LogLevel` isn't enabled. Instead of string interpolation, use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](overview.md#log-message-template).
 
 ## Use no-op logging defaults
 

@@ -122,7 +122,7 @@ Logging methods that are decorated with `LoggerMessageAttribute` must meet the f
 - Logging methods *can't* be generic.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
-The code-generation model depends on code being compiled with a modern C# compiler, that is, version 9 or later. For information about changing the language version, see [C# language versioning](../../csharp/language-reference/configure-language-version.md).
+The code-generation model depends on code being compiled with a modern C# compiler, that is, version 9 or later. For information about changing the language version, see [C# language versioning](../../../csharp/language-reference/configure-language-version.md).
 
 ## Log method anatomy
 
@@ -415,8 +415,8 @@ The output should be like this:
 
 This approach ensures that only redacted data is logged, even when using compile-time generated logging APIs. You can use different redactors for different data types or classifications, and update your redaction logic centrally.
 
-For more information about how to classify your data, see [Data classification in .NET](data-classification.md).
-For more information about redaction and redactors, see [Data redaction in .NET](data-redaction.md).
+For more information about how to classify your data, see [Data classification in .NET](../data-classification.md).
+For more information about redaction and redactors, see [Data redaction in .NET](../data-redaction.md).
 
 ## Summary
 
@@ -439,6 +439,6 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 - [Logging in .NET](overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [Console log formatting](console-log-formatter.md)
-- [Data redaction in .NET](data-redaction.md)
-- [Data classification in .NET](data-classification.md)
+- [Data redaction in .NET](../data-redaction.md)
+- [Data classification in .NET](../data-classification.md)
 - [NuGet: Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions)

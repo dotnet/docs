@@ -4,6 +4,7 @@ description: Learn from the streaming quickstart in .NET Orleans.
 ms.date: 03/30/2025
 ms.topic: quickstart
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Orleans streaming quickstart

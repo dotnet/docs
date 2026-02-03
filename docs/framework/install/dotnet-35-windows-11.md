@@ -6,10 +6,10 @@ ai-usage: ai-assisted
 ---
 # Install .NET Framework 3.5 on Windows 11
 
-.NET Framework 3.5 is supported Windows 11. How you obtain .NET Framework 3.5 depends on which version of Windows 11 you're using. Use the following list to identify the installation method that's applicable to you:
+.NET Framework 3.5 is supported on Windows 11. How you obtain .NET Framework 3.5 depends on which version of Windows 11 you're using. Use the following list to identify the installation method that's applicable to you:
 
 - [Windows 11 25H2 and earlier versions.](dotnet-35-windows.md#install-net-framework-35-on-demand)
-- [Windows 11 Insider Preview Build 27965 and later versions.](#install-net-framework-35-on-windows-11)
+- [Windows 11 Insider Preview Build 27965 and later versions.](#windows-11-insider-preview-build-27965-and-later)
 
 ## How do I determine which version of Windows I'm using?
 

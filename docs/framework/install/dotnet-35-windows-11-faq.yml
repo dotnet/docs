@@ -29,7 +29,7 @@ sections:
             Yes. Windows includes .NET Framework 3.5 as a built-in optional component. Enable it through Windows Features on Demand.
 
       - question: How long is the .NET Framework 3.5 standalone installer supported?
-        answer: Support ends January 9, 2029, according to the official [Microsoft .NET Framework lifecycle policy](/lifecycle/products/net-framework).
+        answer: Support ends January 9, 2029, according to the official [Microsoft .NET Framework lifecycle policy](/lifecycle/products/microsoft-net-framework).
 
       - question: When I upgrade to a newer version of Windows, is .NET Framework 3.5 included or persisted?
         answer: No. When you upgrade Windows to the next release, reinstall .NET Framework 3.5.
@@ -49,7 +49,7 @@ sections:
     questions:
       - question: What is the recommended migration path?
         answer: |
-          Update your application from .NET Framework to modern .NET, such as .NET 10. If you can't move to .NET, update your application to .NET Framework 4.8.1. For more information, see [Microsoft .NET Framework lifecycle policy](/lifecycle/products/net-framework).
+          Update your application from .NET Framework to modern .NET, such as .NET 10. If you can't move to .NET, update your application to .NET Framework 4.8.1. For more information, see [Microsoft .NET Framework lifecycle policy](/lifecycle/products/microsoft-net-framework).
 
       - question: Where can enterprises and ISVs get additional help with compatibility?
         answer: |
@@ -70,4 +70,6 @@ sections:
 additionalContent: |
     ## Related content
 
-    To learn more, see [What is GitHub Copilot app modernization?](overview.md).
+    - [Install .NET Framework 3.5 on Windows 11](dotnet-35-windows-11.md)
+    - [Developers and .NET Framework 3.5](dotnet-35-windows.md#developers-and-net-framework-35)
+

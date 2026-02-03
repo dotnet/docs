@@ -47,7 +47,7 @@ To run the script:
    Set-ExecutionPolicy RemoteSigned
    ```
 
-   For more information about execution policy settings, see [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-5.1).
+   For more information about execution policy settings, see [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-5.1&preserve-view=true).
 
 1. Go to the directory where you downloaded the script.
 1. Run the script:

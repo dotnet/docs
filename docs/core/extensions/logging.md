@@ -38,17 +38,17 @@ Consider making these changes to the previous example when logging in a less tri
 
 - If your application uses [Dependency Injection (DI)](dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
 
-- Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
+- [Compile-time source generation](logger-message-generator.md) for logging is usually a better alternative to `ILogger` extension methods like `LogInformation`. Source-generated logging offers better performance and stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
-:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
+   :::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
-- The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
+- The recommended practice for choosing a log category name is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. Specify the class type in the type parameter of the <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> method.
 
-:::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
+   :::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
 - If you don't use console logs as your sole production monitoring solution, add the [logging providers](logging-providers.md) you plan to use. For example, use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
+   :::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
 
 ## Integration with hosts and dependency injection
 

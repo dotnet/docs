@@ -9,6 +9,10 @@
             "redirect_url": "/dotnet/orleans/deployment/deploy-to-azure-app-service"
         },
         {
+            "source_path_from_root": "/docs/orleans/deployment/docker-deployment.md",
+            "redirect_url": "/dotnet/orleans/deployment/deploy-to-azure-container-apps"
+        },
+        {
             "source_path_from_root": "/docs/orleans/whats-new-in-orleans.md",
             "redirect_url": "/dotnet/orleans/migration-guide"
         },

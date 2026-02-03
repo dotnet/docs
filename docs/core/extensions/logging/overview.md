@@ -655,7 +655,7 @@ Logging should be so fast that it isn't worth the performance cost of asynchrono
 
 ## Change log levels in a running app
 
-The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers can reload configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](../../configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If you change the configuration in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
+The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers can reload configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](../configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If you change the configuration in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
 
 ## NuGet packages
 

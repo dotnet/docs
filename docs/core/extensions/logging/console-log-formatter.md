@@ -14,7 +14,7 @@ The `Microsoft.Extensions.Logging.Console` namespace provides support for custom
 In this article, you will learn about console log formatters. The sample source code demonstrates how to:
 
 - Register a new formatter.
-- Select a registered formatter to use, either through code or [configuration](configuration.md).
+- Select a registered formatter to use, either through code or [configuration](../configuration.md).
 - Implement a custom formatter. You update configuration via <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> and enable custom color formatting.
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
@@ -102,7 +102,7 @@ Run the app again, with the above change, the log message is now formatted as JS
 
 ## Set formatter with configuration
 
-The previous samples showed how to register a formatter programmatically. Alternatively, this can be done with [configuration](../../configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
+The previous samples showed how to register a formatter programmatically. Alternatively, this can be done with [configuration](../configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
 
 :::code language="json" source="snippets/console-formatter-json/appsettings.json" highlight="14-23":::
 

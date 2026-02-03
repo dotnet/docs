@@ -364,7 +364,7 @@ Caching improves build performance but can cause confusion when:
 - Moving files to different directories doesn't invalidate cache.
 
 > [!NOTE]
-> Concurrent invocations of a file-based app (i.e. running more than one instance of the same file-based app in parallel) can cause errors due to contention over the build output files. To avoid this, first build the file-based app via `dotnet build file.cs` before starting the concurrent instances via `dotnet run file.cs --no-build`.
+> Concurrent invocations of a file-based app (for example, running more than one instance of the same file-based app in parallel) can cause errors due to contention over the build output files. To avoid this, first build the file-based app via `dotnet build file.cs` before starting the concurrent instances via `dotnet run file.cs --no-build`.
 
 ### Workarounds
 

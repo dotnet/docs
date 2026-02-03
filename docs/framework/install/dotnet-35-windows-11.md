@@ -17,7 +17,7 @@ The following optional .NET Framework 3.5 components were previously available a
 - WCF HTTP Activation
 - WCF non-HTTP Activation
 
-## Enable ASP.NET 3.5 and WCF in IIS
+## How to enable ASP.NET 3.5 and WCF in IIS
 
 ASP.NET 3.5 and WCF require additional registration to run in IIS.
 
@@ -29,7 +29,7 @@ Enable ASP.NET 3.5 on your device using the [`Enable-ASPNet35.ps1`](https://go.m
 > [!NOTE]
 > The script only restores the functionality of these optional components so that applications that depend on them can continue working. The optional components are still missing from Windows 11 and tools like DISM won't detect these optional components as present after running the script.
 
-To run the script, make sure your device meets these prerequisites:
+### Prerequisites
 
 - Windows Insider Preview Build 27965 or later
 - Windows PowerShell 5.1
@@ -37,7 +37,7 @@ To run the script, make sure your device meets these prerequisites:
 - The Web Server (IIS) feature or role enabled, along with the **ISAPI Filters** and **ISAPI Extensions** optional components
 - An administrative PowerShell command window
 
-To run the script:
+### Run the script
 
 1. Download the [`Enable-ASPNet35.ps1`](https://go.microsoft.com/fwlink/?linkid=2348600&clcid=0x409) script to a local directory.
 1. Open a Windows PowerShell command window **as Administrator**.

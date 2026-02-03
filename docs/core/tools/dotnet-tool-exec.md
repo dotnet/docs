@@ -18,7 +18,7 @@ dotnet tool exec <PACKAGE_NAME>[@<VERSION>]
     [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-http-cache] [--prerelease]
+    [--no-http-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>]
     [--] [<tool-arguments>...]
 
@@ -63,15 +63,15 @@ This command also exists in two other forms for easier use
 
   Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not in a fallback cascade sequence. If the same package and version is available in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed](/nuget/concepts/package-installation-process#what-happens-when-a-nuget-package-is-installed). You can control this through the use of NuGet package source mapping. For more information, see [Package Source Mapping](/nuget/consume-packages/package-source-mapping).
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
+- [!INCLUDE [disable-parallel](includes/cli-disable-parallel.md)]
 
 - **`--ignore-failed-sources`**
 
   Treats package source failures as warnings.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--no-http-cache`**
 
@@ -81,9 +81,11 @@ This command also exists in two other forms for easier use
 
   Allows prerelease packages to be selected when resolving the version to install.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
+- [!INCLUDE [source](includes/cli-tool-source.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-normal.md)]
+
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

@@ -18,7 +18,7 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ DO define P/Invoke and function pointer signatures that match the C function's arguments.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
 - ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
-- ✔️ DO prefer using function pointers, as opposed to `Delegate` types, when passing callbacks to unmanaged functions in C#.
+- ✔️ DO prefer using function pointers and <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> as opposed to `Delegate` types, when passing callbacks to unmanaged functions in C#. For more information, see <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate(System.Delegate)>.
 - ✔️ DO use `[In]` and `[Out]` attributes on array parameters.
 - ✔️ DO only use `[In]` and `[Out]` attributes on other types when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.

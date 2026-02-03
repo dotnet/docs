@@ -8,7 +8,7 @@ ms.date: 04/25/2025
 
 # Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](../../core/extensions/dependency-injection.md). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
+This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](../../core/extensions/dependency-injection/overview.md). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
 
 ## Install packages
 
@@ -26,13 +26,13 @@ To register and configure service clients from an [`Azure.`-prefixed package](pa
     dotnet add package Azure.Identity
     ```
 
-For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, Service Bus, and Azure OpenAI libraries. Install the following packages to follow along:
+For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, Service Bus, and OpenAI libraries. Install the following packages to follow along:
 
 ```dotnetcli
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
 dotnet add package Azure.Messaging.ServiceBus
-dotnet add package Azure.AI.OpenAI
+dotnet add package OpenAI
 ```
 
 ## Register clients and subclients
@@ -43,15 +43,15 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="9-39":::
+:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="11-48":::
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="11-40":::
+:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="13-50":::
 
 ### [HostBuilder](#tab/host-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="10-39":::
+:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="12-49":::
 
 ---
 
@@ -60,13 +60,13 @@ In the preceding code:
 * Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * Each registered client automatically uses <xref:Azure.Identity.DefaultAzureCredential> for `TokenCredential` unless you configure a different type of credential (for example, using `WithCredential`).
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
-* An Azure OpenAI client is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
+* A `ResponsesClient` is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
   * You need to use other dependencies during the client construction.
   * A registration extension method doesn't exist for the service client you want to register.
 
 ## Use the registered clients
 
-With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection/overview.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]
@@ -75,7 +75,7 @@ public class MyApiController : ControllerBase
 {
     private readonly BlobServiceClient _blobServiceClient;
     private readonly ServiceBusSender _serviceBusSender;
-  
+
     public MyApiController(
         BlobServiceClient blobServiceClient,
         IAzureClientFactory<ServiceBusSender> senderFactory)
@@ -83,11 +83,11 @@ public class MyApiController : ControllerBase
         _blobServiceClient = blobServiceClient;
         _serviceBusSender = senderFactory.CreateClient("myQueueName");
     }
-  
+
     [HttpGet]
     public async Task<IEnumerable<string>> Get()
     {
-        BlobContainerClient containerClient = 
+        BlobContainerClient containerClient =
             _blobServiceClient.GetBlobContainerClient("demo");
         var results = new List<string>();
 
@@ -270,7 +270,7 @@ At some point, you may want to change the default settings for a service client.
 ```
 
 You can change the retry policy to suit your needs like so:
-  
+
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {

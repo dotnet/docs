@@ -1,7 +1,7 @@
 ---
 title: "yield statement - provide the next element in an iterator"
 description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
-ms.date: 11/24/2025
+ms.date: 01/16/2026
 f1_keywords:
   - "yield"
   - "yield_CSharpKeyword"
@@ -10,19 +10,21 @@ helpviewer_keywords:
 ---
 # yield statement - provide the next element
 
-You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
+Use the `yield` statement in an [iterator](../../iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="YieldReturn":::
+  :::code language="csharp" source="snippets/yield/Program.cs" id="YieldReturn":::
 
 - `yield break`: to explicitly signal the end of iteration, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="YieldBreak":::
+  :::code language="csharp" source="snippets/yield/Program.cs" id="YieldBreak":::
 
   Iteration also finishes when control reaches the end of an iterator.
 
-In the preceding examples, the return type of iterators is <xref:System.Collections.Generic.IEnumerable%601> (in nongeneric cases, use <xref:System.Collections.IEnumerable> as the return type of an iterator). You can also use <xref:System.Collections.Generic.IAsyncEnumerable%601> as the return type of an iterator. That makes an iterator async. Use the [`await foreach` statement](iteration-statements.md#await-foreach) to iterate over iterator's result, as the following example shows:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+In the preceding examples, the return type of iterators is <xref:System.Collections.Generic.IEnumerable%601>. In nongeneric cases, use <xref:System.Collections.IEnumerable> as the return type of an iterator. You can also use <xref:System.Collections.Generic.IAsyncEnumerable%601> as the return type of an iterator. That makes an iterator async. Use the [`await foreach` statement](iteration-statements.md#await-foreach) to iterate over iterator's result, as the following example shows:
 
 :::code language="csharp" source="snippets/yield/Program.cs" id="IteratorAsync":::
 
@@ -42,19 +44,19 @@ You can't use the `yield` statements in:
 
 ## `using` statements in iterators
 
-You can use [`using` statements](using.md) in iterator methods. Since `using` statements are compiled into `try` blocks with `finally` clauses (and no `catch` blocks), they work correctly with iterators. The disposable resources are properly managed throughout the iterator's execution:
+You can use [`using` statements](using.md) in iterator methods. Since `using` statements compile into `try` blocks with `finally` clauses (and no `catch` blocks), they work correctly with iterators. The disposable resources are properly managed throughout the iterator's execution:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="UsingInIterator":::
+:::code language="csharp" source="snippets/yield/Program.cs" id="UsingInIterator":::
 
 As the preceding example shows, the resource acquired in the `using` statement remains available throughout the iterator's execution, even when the iterator suspends and resumes execution at `yield return` statements. The resource is disposed when the iterator completes (either by reaching the end or via `yield break`) or when the iterator itself is disposed (for example, when the caller breaks out of enumeration early).
 
 ## Execution of an iterator
 
-The call of an iterator doesn't execute it immediately, as the following example shows:
+Calling an iterator doesn't execute it immediately, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="IteratorExecution":::
+:::code language="csharp" source="snippets/yield/Program.cs" id="IteratorExecution":::
 
-As the preceding example shows, when you start to iterate over an iterator's result, an iterator is executed until the first `yield return` statement is reached. Then, the execution of an iterator is suspended and the caller gets the first iteration value and processes it. On each subsequent iteration, the execution of an iterator resumes after the `yield return` statement that caused the previous suspension and continues until the next `yield return` statement is reached. The iteration completes when control reaches the end of an iterator or a `yield break` statement.
+As the preceding example shows, when you start to iterate over an iterator's result, the iterator executes until the first `yield return` statement is reached. Then, the execution of the iterator is suspended and the caller gets the first iteration value and processes it. On each subsequent iteration, the execution of the iterator resumes after the `yield return` statement that caused the previous suspension and continues until the next `yield return` statement is reached. The iteration completes when control reaches the end of an iterator or a `yield break` statement.
 
 ## C# language specification
 

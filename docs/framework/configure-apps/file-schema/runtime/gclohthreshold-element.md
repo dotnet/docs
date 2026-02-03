@@ -10,8 +10,8 @@ helpviewer_keywords:
 
 Specifies the threshold size, in bytes, that causes the garbage collector to put objects on the large object heap (LOH).
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCLOHThreshold>
 
 ## Syntax

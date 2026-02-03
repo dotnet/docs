@@ -7,12 +7,12 @@ ms.date: 05/10/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. New in .NET 9, the <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class adds a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET, runnable and persisted. To run the persisted assembly, first save it into a memory stream or a file, then load it back.
+The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. .NET 9 added the <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class, which provides a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET: *runnable* and *persisted*. To run the persisted assembly, first save it into a memory stream or a file, then load it back.
 
 Before `PersistedAssemblyBuilder`, you could only run a generated assembly and not save it. Since the assembly was in-memory only, it was difficult to debug. Advantages of saving a dynamic assembly to a file are:
 
 - You can verify the generated assembly with tools such as ILVerify, or decompile and manually examine it with tools such as ILSpy.
-- The saved assembly can be loaded directly, no need to compile again, which can decrease application startup time.
+- The saved assembly can be loaded directly, without needing to compile again, which can decrease application startup time.
 
 To create a `PersistedAssemblyBuilder` instance, use the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.%23ctor(System.Reflection.AssemblyName,System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})> constructor. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning:
 

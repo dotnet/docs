@@ -9,6 +9,8 @@ items:
         href: ../../core/sdk.md
       - name: Environment variables
         href: ../../core/tools/dotnet-environment-variables.md
+      - name: File-based apps
+        href: ../../core/sdk/file-based-apps.md
       - name: dotnet-install scripts
         href: ../../core/tools/dotnet-install-script.md
       - name: global.json overview
@@ -215,7 +217,13 @@ items:
           - name: dotnet store
             href: ../../core/tools/dotnet-store.md
           - name: dotnet test
-            href: ../../core/tools/dotnet-test.md
+            items:
+              - name: Overview
+                href: ../../core/tools/dotnet-test.md
+              - name: dotnet test with VSTest
+                href: ../../core/tools/dotnet-test-vstest.md
+              - name: dotnet test with MTP
+                href: ../../core/tools/dotnet-test-mtp.md
           - name: dotnet tool
             items:
               - name: dotnet tool exec
@@ -267,7 +275,7 @@ items:
                 href: ../../core/tools/dotnet-workload-update.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md
-      - name: Enable Tab completion
+      - name: Enable tab completion
         href: ../../core/tools/enable-tab-autocomplete.md
       - name: Develop libraries with the CLI
         href: ../../core/tutorials/libraries.md
@@ -362,9 +370,6 @@ items:
       - name: WCF service XML serializer
         displayName: dotnet-svcutil.xmlserializer
         href: ../../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-      - name: XML serializer generator
-        displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
-        href: ../../core/additional-tools/xml-serializer-generator.md
   - name: Diagnostics and instrumentation
     items:
       - name: Overview
@@ -453,12 +458,16 @@ items:
             href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
           - name: Built-in activities
             href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
+      - name: Ambient metadata
+        items:
+          - name: Application metadata
+            href: ../../core/diagnostics/ambient-metadata/application-metadata.md
+          - name: Ambient metadata about build
+            href: ../../core/diagnostics/ambient-metadata/build-metadata.md
       - name: Enrichment
         items:
           - name: Overview
             href: ../../core/enrichment/overview.md
-          - name: Application metadata
-            href: ../../core/enrichment/application-metadata.md
           - name: Application log enricher
             href: ../../core/enrichment/application-log-enricher.md
           - name: Process log enricher
@@ -4179,6 +4188,8 @@ items:
     items:
       - name: EXTOBS0001
         href: ../../fundamentals/syslib-diagnostics/extobs0001.md
+      - name: EXTOBS0002
+        href: ../../fundamentals/syslib-diagnostics/extobs0002.md
   - name: API compatibility
     items:
       - name: Overview

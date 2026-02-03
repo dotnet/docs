@@ -2,7 +2,7 @@
 title: Grain interface versioning
 description: Learn how to use grain interface versioning in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Grain interface versioning
@@ -52,13 +52,16 @@ By default:
 You can change this default behavior via <xref:Orleans.Configuration.GrainVersioningOptions>:
 
 ```csharp
-var silo = new HostBuilder()
-    .UseOrleans(c =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<GrainVersioningOptions>(options =>
     {
-        c.Configure<GrainVersioningOptions>(options =>
-        {
-            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-            options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
-        });
+        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+        options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
     });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```

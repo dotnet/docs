@@ -1,7 +1,7 @@
 ---
 title: "Equality operators - test if two objects are equal or not equal"
 description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality"
-ms.date: 02/18/2025
+ms.date: 01/20/2026
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
@@ -20,6 +20,8 @@ helpviewer_keywords:
 
 The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not. Value types are equal when their contents are equal. Reference types are equal when the two variables refer to the same storage.
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 You can use the [`is`](./is.md) pattern matching operator as an alternative to an `==` test when you test against a [constant value](./patterns.md#constant-pattern). The `is` operator uses the default equality semantics for all value and reference types.
 
 ## Equality operator ==
@@ -30,10 +32,10 @@ The equality operator `==` returns `true` if its operands are equal, `false` oth
 
 Operands of the [built-in value types](../builtin-types/value-types.md#built-in-value-types) are equal if their values are equal:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="ValueTypesEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="ValueTypesEquality":::
 
 > [!NOTE]
-> For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands isn't a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value isn't greater than, less than, or equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
+> For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands isn't a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That condition means that the `NaN` value isn't greater than, less than, or equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
 Two operands of the same [enum](../builtin-types/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
@@ -61,40 +63,40 @@ As the preceding example shows, for reference-type members their reference value
 
 Two [string](../builtin-types/reference-types.md#the-string-type) operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
 
 String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
 
 ### Delegate equality
 
-Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
+Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are the same length and have equal entries in each position:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="DelegateEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="DelegateEquality":::
 
 > [!IMPORTANT]
 > Equal entries in an invocation list include all fixed parameters in the invocation, including the receiver. The receiver is the instance of an object represented by `this` when the entry is invoked.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
 
 For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12149-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-Delegates that are produced from evaluation of semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
+Delegates that come from evaluating semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="IdenticalLambdas":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="IdenticalLambdas":::
 
 ## Inequality operator `!=`
 
-The inequality operator `!=` returns `true` if its operands aren't equal, `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
+The inequality operator `!=` returns `true` if its operands aren't equal, and `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
 
-The following example demonstrates the usage of the `!=` operator:
+The following example demonstrates how to use the `!=` operator:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="NonEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="NonEquality":::
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `==` and `!=` operators. If a type overloads one of the two operators, it must also overload the other one.
+You can [overload](operator-overloading.md) the `==` and `!=` operators in a user-defined type. If you overload one of these two operators, you must also overload the other operator.
 
-A record type can't explicitly overload the `==` and `!=` operators. If you need to change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method with the following signature:
+You can't explicitly overload the `==` and `!=` operators in a record type. To change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method with the following signature:
 
 ```csharp
 public virtual bool Equals(T? other);

@@ -21,10 +21,10 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [25.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2510)       | 10.0, 9.0, 8.0          | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
-| [25.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2504)       | 10.0, 9.0, 8.0          | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 10.0, 9.0, 8.0          | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 10.0, 9.0, 8.0          | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
+| [25.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2510)       | 10.0, 9.0, 8.0          | 10.0, 9.0, 8.0                       | None                                                                                                   | None                                                                         |
+| [25.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2504)       | 10.0, 9.0, 8.0          | 10.0, 9.0, 8.0                       | None                                                                                                   | None                                                                         |
+| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 10.0, 9.0, 8.0          | 10.0, 8.0                            | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 10.0, 9.0, 8.0          | 8.0, 7.0, 6.0                        | 10.0, 9.0                                                                                              | 8.0, 7.0, 6.0, 3.1                                                           |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 
@@ -36,7 +36,7 @@ Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of
 
 Upgrading Ubuntu to 22.04 or later? Consider uninstalling .NET first.
 
-If you used a package manager to install .NET from the Microsoft package repository, you'll end up with a package mix-up problem after upgrading Ubuntu. Now that Canonical publishes .NET to the package feeds for Ubuntu 22.04 (and later versions), the package manager won't know about the previously installed .NET version. The packages can't be upgraded to the latest .NET. First, uninstall them, then reinstall them from the [Ubuntu package repository].
+If you used a package manager to install .NET from the Microsoft package repository, you'll end up with a package mix-up problem after upgrading Ubuntu. Now that Canonical publishes .NET to the package feeds for Ubuntu 22.04 (and later versions), the package manager won't know about the previously installed .NET version. The packages can't be upgraded to the latest .NET. First, uninstall them, then reinstall them from the Ubuntu package repository.
 
 ## Decide how to install .NET
 

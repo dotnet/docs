@@ -1,8 +1,6 @@
 ---
 title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
-author: IEvangelist
-ms.author: dapine
 ms.date: 05/06/2025
 ---
 
@@ -378,7 +376,7 @@ builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [hcf-issues]: httpclient-factory-troubleshooting.md
-[di]: dependency-injection.md
+[di]: dependency-injection/overview.md
 [logging]: logging.md
 [config]: configuration.md
 [httpclient]: ../../fundamentals/networking/http/httpclient.md

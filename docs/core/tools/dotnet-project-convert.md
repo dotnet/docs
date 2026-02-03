@@ -56,13 +56,13 @@ The command performs the following operations:
 
   Forces conversion even if there are malformed directives. By default, the command fails if it encounters directives that cannot be properly parsed or converted.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Specifies the output directory for the converted project. If not specified, a directory is created with the same name as the input file (without extension) in the current directory.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

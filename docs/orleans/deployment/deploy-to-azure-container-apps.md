@@ -23,6 +23,118 @@ In this tutorial, you learn how to:
 > - Automate deployment using GitHub Actions and Azure Bicep
 > - Configure HTTP ingress
 
+## Deploy with .NET Aspire (Recommended)
+
+If your Orleans application uses [.NET Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Aspire CLI (`aspire`). The Aspire CLI automatically provisions all required infrastructure and handles the deployment.
+
+### Aspire deployment prerequisites
+
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/) installed
+- [Azure CLI](/cli/azure/install-azure-cli) installed
+- [.NET Aspire workload](/dotnet/aspire/fundamentals/setup-tooling)
+- An Azure subscription with permissions to create resources
+- Docker Desktop or Podman running (for building container images)
+
+#### Install the Aspire CLI
+
+### [Windows](#tab/windows)
+
+```powershell
+irm https://aspire.dev/install.ps1 | iex
+```
+
+### [macOS/Linux](#tab/macos-linux)
+
+```bash
+curl -sSL https://aspire.dev/install.sh | bash
+```
+
+---
+
+### Enable the deploy command
+
+The `aspire deploy` command is currently in preview and must be explicitly enabled:
+
+### [Windows (PowerShell)](#tab/windows)
+
+```powershell
+$env:DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND="true"
+```
+
+### [macOS/Linux](#tab/macos-linux)
+
+```bash
+export DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND=true
+```
+
+---
+
+### Authenticate and deploy
+
+1. **Sign in to Azure**:
+
+   ```bash
+   az login
+   ```
+
+2. **Deploy your application**:
+
+   Navigate to your AppHost project directory and run:
+
+   ```bash
+   aspire deploy
+   ```
+
+   This single command performs the following steps:
+   - Validates your configuration
+   - Provisions Azure resources (Container Apps environment, Container Registry, storage, etc.)
+   - Builds and pushes container images
+   - Deploys your application
+
+### Specify deployment parameters
+
+You can provide deployment parameters inline:
+
+```bash
+aspire deploy --deployment-param location=eastus --deployment-param environment=production
+```
+
+Or use a parameters file for complex deployments:
+
+```json
+{
+  "location": "eastus",
+  "environment": "production",
+  "resourceGroupName": "my-orleans-app-rg"
+}
+```
+
+```bash
+aspire deploy --deployment-params-file deployment-params.json
+```
+
+### What Aspire provisions automatically
+
+When you deploy an Orleans Aspire application to Azure Container Apps, `aspire deploy` automatically provisions:
+
+- **Azure Container Apps environment** - The hosting environment for your containers
+- **Azure Container Registry (ACR)** - For storing your container images
+- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders
+- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming
+- **Azure Monitor / Application Insights** - For observability and distributed tracing
+- **Managed identities** - For secure, passwordless authentication between services
+
+> [!TIP]
+> To update your app after code changes, simply run `aspire deploy` again. The CLI handles incremental updates efficiently.
+
+For comprehensive guidance on deploying .NET Aspire applications to Azure, see [Deploy Aspire to Azure Container Apps using the Aspire CLI](https://aspire.dev/deployment/azure/aca-deployment-aspire-cli/).
+
+---
+
+## Traditional deployment (without Aspire)
+
+The following sections describe how to deploy Orleans to Azure Container Apps using GitHub Actions and Azure Bicep, without .NET Aspire.
+
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)

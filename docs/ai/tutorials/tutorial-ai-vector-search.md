@@ -13,7 +13,7 @@ This tutorial explores integration of the RAG pattern using Open AI models and v
 
 ## Prerequisites
 
-- [.NET 8.0 installed](https://dotnet.microsoft.com/)
+- [.NET 8.0](https://dotnet.microsoft.com/)
 - An [Azure Account](https://azure.microsoft.com/free)
 - An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/introduction) service
 - An [Azure Open AI](/azure/ai-services/openai/overview) service

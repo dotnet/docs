@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 11/07/2025
+ms.date: 01/08/2026
 ---
 # APIs that always throw exceptions on .NET (Core)
 
@@ -265,6 +265,11 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.DSA.Create*?displayProperty=nameWithType>\* | macOS |
+| <xref:System.Security.Cryptography.DSACryptoServiceProvider.%23ctor*>\* | macOS |
+| <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>\* | macOS |
+| <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>\* | macOS |
+| <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.DSA)?displayProperty=nameWithType>\* | macOS |
 | <xref:System.Security.Cryptography.DSAOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
@@ -296,6 +301,8 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.SafeEvpPKeyHandle?displayProperty=nameWithType> | macOS |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
+
+\* .NET 11 and later versions.
 
 ## System.Security.Cryptography.Pkcs
 

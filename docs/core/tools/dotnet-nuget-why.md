@@ -53,7 +53,7 @@ To use the command with projects that can't be restored with the .NET SDK, you c
 
     The target framework(s) for which dependency graphs are shown. You can pass multiple `--framework` options to see graphs for more than one framework.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

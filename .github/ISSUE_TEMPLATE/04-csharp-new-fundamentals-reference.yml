@@ -1,8 +1,8 @@
-name: "C# 14 - New feature - Fundamentals and reference"
-description: Create the issue for adding reference docs and optional fundamentals updates for a new feature in C# 14 
-title: "[C# 14-Fundamentals and reference]: New Feature - "
+name: "C# 15 - New feature - Fundamentals and reference"
+description: Create the issue for adding reference docs and optional fundamentals updates for a new feature in C# 15 
+title: "[C# 15-Fundamentals and reference]: New Feature - "
 labels:
-  - ":checkered_flag: Release: .NET 10"
+  - ":checkered_flag: Release: .NET 11"
   - dotnet-csharp/svc
   - whats-new/subsvc
 assignees:
@@ -11,18 +11,16 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Visual Studio release
-      description: What Visual Studio (preview) contains this feature?
+      label: .NET 11 Preview
+      description: Which .NET 11 Preview version contains this feature?
       options:
-        - "17.13.p3"
-        - "17.13"
-        - "17.14.p1"
-        - "17.14.p2"
-        - "17.14.p3"
-        - "17.14.p4"
-        - "17.14.p5"
-        - "17.14.p6"
-        - "17.14"
+        - ".NET 11 Preview 1"
+        - ".NET 11 Preview 2"
+        - ".NET 11 Preview 3"
+        - ".NET 11 Preview 4"
+        - ".NET 11 Preview 5"
+        - ".NET 11 Preview 6"
+        - ".NET 11 Preview 7"
         - "other - specify below"
   - type: input
     id: Speclet

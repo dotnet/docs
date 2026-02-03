@@ -1,16 +1,26 @@
 ---
 title: Troubleshoot Azure Cloud Service deployments
 description: Learn how to troubleshoot an Orleans app deployed to Azure Cloud Services.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: troubleshooting
 ms.custom: devops
 ---
 
 # Troubleshoot Azure Cloud Service deployments
 
+> [!CAUTION]
+> **Azure Cloud Services (classic) is retired.** This article is provided for legacy reference only. Azure Cloud Services (classic) was retired on August 31, 2024. For new Orleans deployments, use one of the following modern hosting options:
+>
+> - [Azure Kubernetes Service (AKS)](kubernetes.md)
+> - [Azure Container Apps](deploy-to-azure-container-apps.md)
+> - [Azure App Service](deploy-to-azure-app-service.md)
+> - [Service Fabric](service-fabric.md)
+>
+> For general deployment troubleshooting, see [Troubleshoot deployments](troubleshooting-deployments.md).
+
 This page provides general guidelines for troubleshooting issues occurring when deploying to Azure Cloud Services. These are common issues to watch out for. Check the logs for more detailed information.
 
-## The `SiloUnavailableException`
+## The <xref:Orleans.Runtime.SiloUnavailableException>
 
 First, ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so trying to initialize the client multiple times can be beneficial. If it still throws an exception, another issue might exist with the silos.
 

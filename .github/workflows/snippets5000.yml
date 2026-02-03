@@ -31,17 +31,17 @@ jobs:
     steps:
     # Checkout the repository for the PR
     - name: Harden Runner
-      uses: step-security/harden-runner@df199fb7be9f65074067a9eb93f12bb4c5547cf2 # v2.13.3
+      uses: step-security/harden-runner@e3f713f2d8f53843e71c69a996d56f51aa9adfb9 # v2.14.1
       with:
         egress-policy: audit
 
     - name: Checkout repository
-      uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 #@v6.0.1
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #@v6.0.2
 
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
-      uses: actions/setup-dotnet@2016bd2012dba4e32de620c46fe006a3ac9f0602 #@5.0.1
+      uses: actions/setup-dotnet@baa11fbfe1d6520db94683bd5c7a3818018e4309 #@5.1.0
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
         dotnet-quality: ${{ env.DOTNET_QUALITY }}

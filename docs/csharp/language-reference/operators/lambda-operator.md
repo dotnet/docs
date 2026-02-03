@@ -1,7 +1,7 @@
 ---
 title: "The lambda operator - The `=>` operator is used to define a lambda expression"
 description: "The C# => operator defines lambda expressions and expression bodied members. Lambda expressions define a block of code used as data."
-ms.date: 02/19/2025
+ms.date: 01/20/2026
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 
@@ -13,35 +13,37 @@ helpviewer_keywords:
 
 The `=>` token is supported in two forms: as the [lambda operator](#lambda-operator) and as a separator of a member name and the member implementation in an [expression body definition](#expression-body-definition).
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 ## Lambda operator
 
 In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
 
 The following example uses the [LINQ](../../linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="InferredTypes":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="InferredTypes":::
 
-Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you can omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
+Input parameters of a lambda expression are strongly typed at compile time. When the compiler infers the types of input parameters, like in the preceding example, you can omit type declarations. If you need to specify the type of input parameters, you must specify the type for each parameter, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="ExplicitTypes":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="ExplicitTypes":::
 
 The following example shows how to define a lambda expression without input parameters:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="WithoutInput":::
+:::code language="csharp" source="snippets/shared/LambdaOperator.cs" id="WithoutInput":::
 
 For more information, see [Lambda expressions](lambda-expressions.md).
 
 ## Expression body definition
 
-An expression body definition has the following general syntax:
+An expression body definition uses the following general syntax:
 
 ```csharp
 member => expression;
 ```
 
-Where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
+The `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
 
-- Has a `void` return type or
+- Has a `void` return type, or
 - Is a:
   - Constructor
   - Finalizer
@@ -68,7 +70,7 @@ You can create expression body definitions for methods, operators, read-only pro
 
 ## Operator overloadability
 
-The `=>` operator can't be overloaded.
+You can't overload the `=>` operator.
 
 ## C# language specification
 

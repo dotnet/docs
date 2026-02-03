@@ -1,37 +1,41 @@
 ---
 title: "Collection expressions (Collection literals)"
 description: Collection expressions convert to many collection types. You can write literal values, expressions, or other collections to create a new collection.
-ms.date: 03/07/2024
+ms.date: 01/20/2026
 helpviewer_keywords:
   - "Collection expressions"
 ---
 # Collection expressions - C# language reference
 
-You can use a *collection expression* to create common collection values. A *collection expression* is a terse syntax that, when evaluated, can be assigned to many different collection types. A collection expression contains a sequence of elements between `[` and `]` brackets. The following example declares a <xref:System.Span%601?displayProperty=nameWithType> of `string` elements and initializes them to the days of the week:
+Use a *collection expression* to create common collection values. A *collection expression* is a terse syntax that you can assign to many different collection types. A collection expression contains a sequence of elements between `[` and `]` brackets.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+The following example declares a <xref:System.Span%601?displayProperty=nameWithType> of `string` elements and initializes them to the days of the week:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="FirstCollectionExpression":::
 
-A *collection expression* can be converted to many different collection types. The first example demonstrated how to initialize a variable using a collection expression. The following code shows many of the other locations where you can use a collection expression:
+You can convert a *collection expression* to many different collection types. The first example demonstrated how to initialize a variable by using a collection expression. The following code shows many of the other locations where you can use a collection expression:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="CompileTimeExpressions":::
 
-You can't use a collection expression where a compile-time constant is expected, such as initializing a constant, or as the default value for a method argument.
+You can't use a collection expression where a compile-time constant is expected, such as when initializing a constant, or as the default value for a method argument.
 
-Both of the previous examples used constants as the elements of a collection expression. You can also use variables for the elements as shown in the following example:
+Both of the previous examples used constants as the elements of a collection expression. You can also use variables for the elements, as shown in the following example:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="UseVariables":::
 
 ## Spread element
 
-You use a *spread element* `..` to inline collection values in a collection expression. The following example creates a collection for the full alphabet by combining a collection of the vowels, a collection of the consonants, and the letter "y", which can be either:
+Use a *spread element* `..` to inline collection values in a collection expression. The following example creates a collection for the full alphabet by combining a collection of the vowels, a collection of the consonants, and the letter "y", which can be either:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="SpreadOperator":::
 
-The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"e"`, `"i"`, `"o"`, and `"u"`. The spread element `..consonants` produces 20 elements, the number in the `consonants` array. The variable in a spread element must be enumerable using a [`foreach`](../statements/iteration-statements.md#the-foreach-statement) statement. As shown in the previous example, you can combine spread elements with individual elements in a collection expression.
+The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"e"`, `"i"`, `"o"`, and `"u"`. The spread element `..consonants` produces 20 elements, the number in the `consonants` array. The expression in a spread element must be enumerable by using a [`foreach`](../statements/iteration-statements.md#the-foreach-statement) statement. As shown in the previous example, you can combine spread elements with individual elements in a collection expression.
 
 ## Conversions
 
-A *collection expression* can be converted to different collection types, including:
+You can convert a *collection expression* to different collection types, including:
 
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
 - [Arrays](../builtin-types/arrays.md), such as `int[]` or `string[]`.
@@ -45,7 +49,7 @@ A *collection expression* can be converted to different collection types, includ
   - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.
 
 > [!NOTE]
-> Collection expressions can't be used to initialize [inline arrays](../builtin-types/struct.md#inline-arrays). Inline arrays require different initialization syntax.
+> You can't use collection expressions to initialize [inline arrays](../builtin-types/struct.md#inline-arrays). Inline arrays require different initialization syntax.
 
 > [!IMPORTANT]
 > A collection expression always creates a collection that includes all elements in the collection expression, regardless of the target type of the conversion. For example, when the target of the conversion is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, the generated code evaluates the collection expression and stores the results in an in-memory collection.
@@ -60,26 +64,26 @@ Many APIs are overloaded with multiple collection types as parameters. Because a
 - Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 
-When a collection expression is converted to a `Span` or `ReadOnlySpan`, the span object's *safe context* is taken from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
+When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span object's *safe context* comes from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
 
 ## Collection builder
 
 Collection expressions work with any collection type that's *well-behaved*. A well-behaved collection has the following characteristics:
 
 - The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
-- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise not be exposed.
-- A call to some applicable `.AddRange(x)` member on a collection will result in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection with `.Add`.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise aren't exposed.
+- A call to some applicable `.AddRange(x)` member on a collection results in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection with `.Add`.
 
 All the collection types in the .NET runtime are well-behaved.
 
 > [!WARNING]
-> If a custom collection type isn't well-behaved, the behavior when you use that collection type with collection expressions is undefined.
+> If a custom collection type isn't well-behaved, the behavior is undefined when you use that collection type with collection expressions.
 
 Your types opt in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BufferDeclaration":::
 
-You'd like to use it with collection expressions as shown in the following sample:
+You want to use it with collection expressions as shown in the following sample:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="CustomBuilderUsage":::
 
@@ -87,7 +91,7 @@ The `LineBuffer` type implements `IEnumerable<char>`, so the compiler recognizes
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClass":::
 
-The `Create` method must return a `LineBuffer` object, and it must take a single parameter of the type `ReadOnlySpan<char>`. The type parameter of the `ReadOnlySpan` must match the element type of the collection. A builder method that returns a generic collection would have the generic `ReadOnlySpan<T>` as its parameter. The method must be accessible and `static`.
+The `Create` method must return a `LineBuffer` object, and it must take a single parameter of the type `ReadOnlySpan<char>`. The type parameter of the `ReadOnlySpan` must match the element type of the collection. A builder method that returns a generic collection has the generic `ReadOnlySpan<T>` as its parameter. The method must be accessible and `static`.
 
 Finally, you must add the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute> to the `LineBuffer` class declaration:
 

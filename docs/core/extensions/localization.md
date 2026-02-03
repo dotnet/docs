@@ -1,8 +1,6 @@
 ---
 title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/20/2025
 helpviewer_keywords:
   - "culture, localization"
@@ -244,6 +242,6 @@ The sample application does not provide resource files for `"fr-CA"`, but when c
 - [Globalizing and localizing .NET applications](globalization-and-localization.md)
 - [Package and deploy resources in .NET apps](package-and-deploy-resources.md)
 - [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - [Logging in .NET](logging.md)
 - [ASP.NET Core localization](/aspnet/core/fundamentals/localization)

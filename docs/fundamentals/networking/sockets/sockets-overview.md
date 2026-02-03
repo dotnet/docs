@@ -1,8 +1,6 @@
 ---
 title: Sockets in .NET
 description: Learn how the Socket class functions as a cross-platform abstraction of socket networking communication in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 08/24/2022
 helpviewer_keywords:
   - "application protocols, sockets"

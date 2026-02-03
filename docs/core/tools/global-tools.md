@@ -62,7 +62,7 @@ You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.1.4') was successfully installed.
 ```
 
-[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
+[!INCLUDE[](includes/dotnet-tool-install-arch-options.md)]
 
 The default location for a tool's binaries depends on the operating system:
 

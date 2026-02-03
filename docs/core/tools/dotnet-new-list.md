@@ -27,7 +27,7 @@ The `dotnet new list` command lists available templates to use with `dotnet new`
 Starting with .NET SDK 7.0.100, the `list` command might not show all the templates installed on the machine. It takes the result of template constraints into account, and the templates that can't be used won't be shown. To force show all the templates, use the `--ignore-constraints` option.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -75,7 +75,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--ignore-constraints`**
 
@@ -104,7 +104,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
   
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 

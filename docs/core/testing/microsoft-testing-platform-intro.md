@@ -40,7 +40,7 @@ The main driving factors for the evolution of the new testing platform are detai
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
-* xUnit.net: In xUnit.net, the support of `Microsoft.Testing.Platform` is done via [xUnit.net runner](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform).
+* xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
 * TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
 ## Run and debug tests
@@ -246,7 +246,7 @@ The list below described only the platform options. To see the specific options 
 
   Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
 
-- **`--diagnostic-filelogger-synchronouswrite`**
+- **`--diagnostic-synchronous-write`**
 
   Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
 
@@ -254,9 +254,9 @@ The list below described only the platform options. To see the specific options 
 
   The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
 
-- **`--diagnostic-output-fileprefix`**
+- **`--diagnostic-file-prefix`**
 
-  The prefix for the log file name. Defaults to `"log_"`.
+  The prefix for the log file name. Defaults to `"log"`.
 
 - **`--diagnostic-verbosity`**
 

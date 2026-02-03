@@ -4,16 +4,16 @@ title: "<clientCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
 ---
-# \<clientCredentials>
+# `<clientCredentials>`
 
 Specifies the credentials used to authenticate the client to a service.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clientCredentials>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<behaviors>`](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<endpointBehaviors>`](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<behavior>`](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<clientCredentials>`
 
 ## Syntax
 

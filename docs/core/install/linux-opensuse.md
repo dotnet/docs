@@ -122,7 +122,10 @@ When you install with a package manager, these libraries are installed for you. 
 
 - krb5
 - libicu
-- libopenssl1_1
+- libopenssl3 (OpenSSL 3.x)
+
+> [!IMPORTANT]
+> Starting with .NET 8, .NET packages for openSUSE depend on OpenSSL 3.x (libopenssl3). This change also applies to .NET 6 and .NET 7 packages. For more information, see [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](../compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md).
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 

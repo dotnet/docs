@@ -1,7 +1,7 @@
 ---
 title: "Boolean logical operators - the boolean and, or, not, and xor operators"
 description: "C# logical operators perform logical negation (`!`), conjunction (AND - `&`, `&&`), and inclusive and exclusive disjunction (OR - `|`, `||`, `^`) operations with Boolean operands."
-ms.date: 06/10/2025
+ms.date: 01/20/2026
 author: pkulikov
 f1_keywords: 
   - "!_CSharpKeyword"
@@ -46,33 +46,35 @@ The logical Boolean operators perform logical operations with [bool](../builtin-
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 ## Logical negation operator !
 
-The unary prefix `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
+The unary prefix `!` operator computes the logical negation of its operand. It produces `true` if the operand evaluates to `false`, and `false` if the operand evaluates to `true`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Negation":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Negation":::
 
 The unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
-The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`.
+The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` are `true`. Otherwise, the result is `false`.
 
-The `&` operator always evaluates both operands. When the left-hand operand evaluates to `false`, the operation result is `false` regardless of the value of the right-hand operand. However, even then, the right-hand operand is evaluated.
+The `&` operator always evaluates both operands. When the left-hand operand is `false`, the operation result is `false` regardless of the value of the right-hand operand. However, the right-hand operand is still evaluated.
 
-In the following example, the right-hand operand of the `&` operator is a method call, which is performed regardless of the value of the left-hand operand:
+In the following example, the right-hand operand of the `&` operator is a method call, which runs regardless of the value of the left-hand operand:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="And":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="And":::
 
-The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `false`.
+The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but it doesn't evaluate the right-hand operand if the left-hand operand is `false`.
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `&` operator computes the [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) of its operands. The unary `&` operator is the [address-of operator](pointer-related-operators.md#address-of-operator-).
 
 ## Logical exclusive OR operator ^
 
-The `^` operator computes the logical exclusive OR, also known as the logical XOR, of its operands. The result of `x ^ y` is `true` if `x` evaluates to `true` and `y` evaluates to `false`, or `x` evaluates to `false` and `y` evaluates to `true`. Otherwise, the result is `false`. That is, for the `bool` operands, the `^` operator computes the same result as the [inequality operator](equality-operators.md#inequality-operator-) `!=`.
+The `^` operator computes the logical exclusive OR, also known as the logical XOR, of its operands. The result of `x ^ y` is `true` if `x` is `true` and `y` is `false`, or `x` is `false` and `y` is `true`. Otherwise, the result is `false`. For `bool` operands, the `^` operator computes the same result as the [inequality operator](equality-operators.md#inequality-operator-) `!=`.
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Xor":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Xor":::
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `^` operator computes the [bitwise logical exclusive OR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) of its operands.
 
@@ -84,37 +86,37 @@ The `|` operator always evaluates both operands. When the left-hand operand eval
 
 In the following example, the right-hand operand of the `|` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Or":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Or":::
 
-The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `true`.
+The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but it doesn't evaluate the right-hand operand if the left-hand operand evaluates to `true`.
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `|` operator computes the [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) of its operands.
 
-## <a name="conditional-logical-and-operator-"></a> Conditional logical AND operator &amp;&amp;
+## <a name="conditional-logical-and-operator-"></a> Conditional logical AND operator `&&`
 
 The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If `x` evaluates to `false`, `y` isn't evaluated.
 
 In the following example, the right-hand operand of the `&&` operator is a method call, which isn't performed if the left-hand operand evaluates to `false`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalAnd":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalAnd":::
 
-The [logical AND operator](#logical-and-operator-) `&` also computes the logical AND of its operands, but always evaluates both operands.
+The [logical AND operator](#logical-and-operator-) `&` also computes the logical AND of its operands, but it always evaluates both operands.
 
-## Conditional logical OR operator ||
+## Conditional logical OR operator `||`
 
 The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If `x` evaluates to `true`, `y` isn't evaluated.
 
 In the following example, the right-hand operand of the `||` operator is a method call, which isn't performed if the left-hand operand evaluates to `true`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalOr":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalOr":::
 
 The [logical OR operator](#logical-or-operator-) `|` also computes the logical OR of its operands, but always evaluates both operands.
 
 ## Nullable Boolean logical operators
 
-For `bool?` operands, the [`&` (logical AND)](#logical-and-operator-) and [`|` (logical OR)](#logical-or-operator-) operators support the three-valued logic as follows:
+For `bool?` operands, the [`&` (logical AND)](#logical-and-operator-) and [`|` (logical OR)](#logical-or-operator-) operators support three-valued logic as follows:
 
-- The `&` operator produces `true` only if both its operands evaluate to `true`. If either `x` or `y` evaluates to `false`, `x & y` produces `false` (even if another operand evaluates to `null`). Otherwise, the result of `x & y` is `null`.
+- The `&` operator returns `true` only if both its operands evaluate to `true`. If either `x` or `y` evaluates to `false`, `x & y` returns `false` (even if another operand evaluates to `null`). Otherwise, the result of `x & y` is `null`.
 
 - The `|` operator produces `false` only if both its operands evaluate to `false`. If either `x` or `y` evaluates to `true`, `x | y` produces `true` (even if another operand evaluates to `null`). Otherwise, the result of `x | y` is `null`.
 
@@ -132,11 +134,11 @@ The following table presents that semantics:
 | null  | false | false | null     |
 | null  | null  | null  | null     |
 
-The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator that is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands evaluates to `null`. However, the `&` and `|` operators can produce non-null even if one of the operands evaluates to `null`. For more information about the operator behavior with nullable value types, see the [Lifted operators](../builtin-types/nullable-value-types.md#lifted-operators) section of the [Nullable value types](../builtin-types/nullable-value-types.md) article.
+The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator that is defined for operands of a value type can also be used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands evaluates to `null`. However, the `&` and `|` operators can produce non-null even if one of the operands evaluates to `null`. For more information about the operator behavior with nullable value types, see the [Lifted operators](../builtin-types/nullable-value-types.md#lifted-operators) section of the [Nullable value types](../builtin-types/nullable-value-types.md) article.
 
 You can also use the `!` and `^` operators with `bool?` operands, as the following example shows:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="WithNullableBoolean":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="WithNullableBoolean":::
 
 The conditional logical operators `&&` and `||` don't support `bool?` operands.
 
@@ -158,25 +160,25 @@ Except that `x` is only evaluated once.
 
 The `&`, `|`, and `^` operators support compound assignment, as the following example shows:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="CompoundAssignment":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="CompoundAssignment":::
 
 > [!NOTE]
 > The conditional logical operators `&&` and `||` don't support compound assignment.
 
 ## Operator precedence
 
-The following list orders logical operators starting from the highest precedence to the lowest:
+The following list orders logical operators in groups starting from the highest precedence to the lowest:
 
-- Logical negation operator `!`
-- Logical AND operator `&`
-- Logical exclusive OR operator `^`
-- Logical OR operator `|`
-- Conditional logical AND operator `&&`
-- Conditional logical OR operator `||`
+- ([Primary](./index.md#operator-precedence)) operators: Logical negation operator `!`.
+- ([Boolean logical AND](./index.md#operator-precedence)) operators: `&`.
+- ([Boolean logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR operator `^`.
+- ([Boolean logical OR](./index.md#operator-precedence)) operators: `|`.
+- ([Conditional AND](./index.md#operator-precedence)) operators: `&&`.
+- ([Conditional OR](./index.md#operator-precedence)) operators: `||`.
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Precedence":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Precedence":::
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 

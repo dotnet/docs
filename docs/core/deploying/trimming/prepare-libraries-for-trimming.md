@@ -3,7 +3,7 @@ title: Prepare .NET libraries for trimming
 description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
-ms.date: 06/12/2023
+ms.date: 11/20/2025
 ---
 
 # Prepare .NET libraries for trimming
@@ -40,6 +40,26 @@ Setting the MSBuild property `IsTrimmable` to `true` marks the assembly as "trim
 The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
 
 To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
+
+#### Verify referenced assemblies are trim-compatible
+
+When you enable trim analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for trim compatibility by setting the `VerifyReferenceTrimCompatibility` property to `true`:
+
+```xml
+<PropertyGroup>
+  <IsTrimmable>true</IsTrimmable>
+  <VerifyReferenceTrimCompatibility>true</VerifyReferenceTrimCompatibility>
+</PropertyGroup>
+```
+
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsTrimmable` metadata. This helps ensure that all dependencies in your project are annotated for trim compatibility. The warning that's emitted is [IL2125](trim-warnings/il2125.md).
+
+This verification is opt-in because:
+
+- Not all trim-compatible libraries have been updated to include the `IsTrimmable` metadata.
+- The warning can be noisy if you have many dependencies that work correctly with trimming but aren't explicitly marked as such.
+
+Consider enabling this verification when you want to ensure that all your dependencies are explicitly marked as trim-compatible by their authors.
 
 ### Show all warnings with test app
 
@@ -89,6 +109,23 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 * If the new version added non-understood reflection patterns.
 * Even if there were no API changes.
 * Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
+
+## Target framework requirements
+
+When preparing libraries for trimming, target the latest supported TFM. This helps you benefit from the latest analyzer improvements. At a minimum, target `net6.0` or later. This version is required for trim analysis warnings.
+
+If your library also targets frameworks earlier than `net6.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net6.0`. This ensures that apps targeting `net6.0` or later get a version of your library that supports trim analysis.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and later:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net6.0;net10.0</TargetFrameworks>
+  <IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>
+</PropertyGroup>
+```
+
+For more information, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
 
 ## Resolve trim warnings
 

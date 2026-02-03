@@ -63,7 +63,7 @@ The <xref:System.Convert> class includes static methods that you can call to con
 
 The following example converts the value of <xref:System.Int16.MaxValue?displayProperty=nameWithType> to a string in all supported numeric formats. It then converts the string value back to a <xref:System.Int16> value.
 
-:::code language="csharp" source="./snippets/System/Convert/Overview/csharp/NonDecimal1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Convert/Overview/csharp/NonDecimal1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Convert/Overview/fsharp/NonDecimal1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Convert/Overview/vb/NonDecimal1.vb" id="Snippet2":::
 

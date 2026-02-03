@@ -1,8 +1,6 @@
 ---
 title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---
@@ -234,7 +232,7 @@ For more information, see [Options pattern in .NET](../extensions/options.md).
 
 ## Example usage
 
-Your app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+Your app relies on [dependency injection](../extensions/dependency-injection/overview.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
 :::code language="csharp" source="snippets/http-resilience/Program.cs" id="usage":::
 

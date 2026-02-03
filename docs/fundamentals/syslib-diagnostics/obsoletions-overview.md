@@ -95,6 +95,7 @@ The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Exten
 | Diagnostic ID | Warning or error | Description |
 |---------------|------------------|-------------|
 | [EXTOBS0001](extobs0001.md) | Warning | <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> is obsolete and will be removed in a future version. Consider using [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring). |
+| [EXTOBS0002](extobs0002.md) | Warning | The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in package version 10.1.0. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods. |
 
 ## Suppress warnings
 

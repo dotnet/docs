@@ -86,7 +86,7 @@ The following example shows how to configure TLS on an Orleans client:
 
 In the preceding code:
 
-- The <xref:Orleans.Hosting.OrleansConnectionSecurityClientBuilderExtensions.UseTls%2A> extension method configures TLS for the client.
+- The <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method configures TLS for the client.
 - The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsServer%2A> callback configures server authentication options.
 - The `ClientCertificateRequired` property enables mutual TLS by requiring the client to present a certificate.
 

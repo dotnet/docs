@@ -9,7 +9,7 @@ ms.update-cycle: 365-days
 
 C# 15 includes the following new features. You can try these features using the latest [Visual Studio 2026](https://visualstudio.microsoft.com/) version or the [.NET 11 preview SDK](https://dotnet.microsoft.com/download/dotnet):
 
-- [Collection expression parameters](#collection-expression-parameters)
+- [Collection expression arguments](#collection-expression-arguments)
 
 C# 15 is the latest C# release. C# 15 is supported on **.NET 11**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -21,7 +21,7 @@ You can find any breaking changes introduced in C# 15 in our article on [breakin
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
-## Collection expression parameters
+## Collection expression arguments
 
 Next commit.
 

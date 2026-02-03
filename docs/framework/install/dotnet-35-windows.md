@@ -1,7 +1,7 @@
 ---
 title: Install .NET Framework 3.5 on Windows
 description: Learn how to install .NET Framework 3.5 on Windows and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
-ms.date: 07/10/2025
+ms.date: 02/02/2026
 ai-usage: ai-assisted
 ---
 # Install .NET Framework 3.5 on Windows and Windows Server
@@ -13,9 +13,17 @@ If you're a developer that requires .NET Framework 3.5, see the section [Develop
 > [!TIP]
 > You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [Migration: Retarget or recompile](../migration-guide/migrating-from-the-net-framework-1-1.md#retarget-or-recompile).
 
+## Install .NET Framework 3.5 on Windows 11 Insiders Preview
+
+[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
+
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
+
 ## Install .NET Framework 3.5 on demand
 
 You might see the following configuration dialog if you try to run an app that requires an older version of .NET Framework. Depending on your version of Windows, the dialog might be slightly different. Choose **Download and install this feature** to enable .NET Framework 3.5. This option requires an internet connection.
+
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
 
 :::image type="content" source="./media/dotnet-35-windows/dotnet-framework-installation-dialog.png" alt-text="Screenshot of the .NET Framework installation dialog.":::
 
@@ -26,6 +34,8 @@ You might see the following configuration dialog if you try to run an app that r
 ## Enable .NET Framework 3.5 on Windows Server
 
 Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
+
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
 
 1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
 1. Search for **Add Roles and Features Wizard** and open it.
@@ -38,7 +48,9 @@ Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 
 ## Enable .NET Framework 3.5 on Windows
 
-You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an internet connection.
+You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an internet connection. If you're using Windows 11, consider the [.NET Framework 3.5 on Windows 11 FAQ](dotnet-35-windows-11-faq.yml).
+
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
 
 1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
 1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears.
@@ -52,6 +64,14 @@ You don't need to select the child items for **Windows Communication Foundation 
 
 The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**. For more information, see [.NET Framework 3.5 SP1 download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
+
+### Windows 11
+
+[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
+
+### Windows 10
+
 Starting with Windows 10 and Windows Server 2016 operating systems, the only supported way of installing .NET Framework 3.5 in an offline mode is by using the original installation media's _:::no-loc text="cab":::_ files. For more information, see [Microsoft .NET Framework 3.5 deployment considerations](/windows-hardware/manufacture/desktop/microsoft-net-framework-35-deployment-considerations).
 
 ## Troubleshoot the installation
@@ -64,6 +84,18 @@ If you still can't resolve your installation issue or you don't have an internet
 > If you're not relying on Windows Update as the source for installing .NET Framework 3.5, you must ensure to strictly use sources from the same corresponding Windows operating system version. Using sources from a different Windows operating system version will either install a mismatched version of .NET Framework 3.5 or cause the installation to fail, leaving the system in an unsupported and unserviceable state.
 
 ## Developers and .NET Framework 3.5
+
+[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
+
+Additionally, the optional components that rely on .NET Framework 3.5 have also been removed:
+
+- ASP.NET 3.5
+- .NET Extensibility 3.5
+- WCF HTTP Activation
+- WCF non-HTTP Activation
+
+> [!IMPORTANT]
+> Microsoft strongly recommends you upgrade your application from .NET Framework to modern .NET, such as .NET 10. If you can't move to .NET, upgrade your application to .NET Framework 4.8 or 4.8.1. For more information about upgrading from .NET Framework 3.5, see [.NET Framework 4 migration issues](../migration-guide/net-framework-4-migration-issues.md) and [Overview of porting from .NET Framework to .NET](../../core/porting/framework-overview.md).
 
 If you're a developer that maintains existing software and you need to use .NET Framework 3.5, enable it with the following steps:
 

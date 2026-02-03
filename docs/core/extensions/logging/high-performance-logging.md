@@ -2,6 +2,7 @@
 title: High-performance logging
 description: Learn how to use source-generated logging with LoggerMessageAttribute to create high-performance logs with minimal overhead in .NET apps.
 ms.date: 02/02/2026
+ai-usage: ai-assisted
 ---
 
 # High-performance logging in .NET

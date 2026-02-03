@@ -6,11 +6,39 @@ ai-usage: ai-assisted
 ---
 # Install .NET Framework 3.5 on Windows 11
 
+.NET Framework 3.5 is supported Windows 11. How you obtain .NET Framework 3.5 depends on which version of Windows 11 you're using. Use the following list to identify the installation method that's applicable to you:
+
+- [Windows 11 25H2 and earlier versions.](dotnet-35-windows.md#install-net-framework-35-on-demand)
+- [Windows 11 Insider Preview Build 27965 and later versions.](#install-net-framework-35-on-windows-11)
+
+## How do I determine which version of Windows I'm using?
+
+There are a few different ways you can find the version of Windows you're using:
+
+- Try [this link (ms-settings:about)](ms-settings:about) which might open the Settings app.
+
+  1. Scroll down to the **Windows specifications** section and find the **Version** field.
+
+- Try using the start menu:
+
+  1. Press the <kbd>Windows</kbd> key to open the **Start** menu.
+  1. Type `Settings` to find the **Settings** app and open it.
+  1. Scroll down to the **Windows specifications** section and find the **Version** field.
+
+- Try running the `winver.exe` app:
+
+  1. Press the <kbd>Windows+R</kbd> keyboard shortcut to open the **Run** dialog.
+  1. Type `winver.exe` and press <kbd>Enter</kbd>.
+
+## Windows 11 Insider Preview Build 27965 and later
+
 [!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
 
 ## .NET Framework 3.5 optional components
 
-The following optional .NET Framework 3.5 components were previously available as Windows Features on Demand. Windows 11 removes these components:
+_Applies to **Windows 11 Insider Preview Build 27965 and later**_
+
+The following optional .NET Framework 3.5 components were previously available as Windows Features on Demand. Windows 11 Insider Preview Build 27965 removes these components:
 
 - ASP.NET 3.5
 - .NET Extensibility 3.5
@@ -19,7 +47,7 @@ The following optional .NET Framework 3.5 components were previously available a
 
 ## How to enable ASP.NET 3.5 and WCF in IIS
 
-ASP.NET 3.5 and WCF require additional registration to run in IIS.
+Starting with Windows 11 Insider Preview Build 27965, ASP.NET 3.5 and WCF require additional registration to run in IIS.
 
 Enable ASP.NET 3.5 on your device using the [`Enable-ASPNet35.ps1`](https://go.microsoft.com/fwlink/?linkid=2348600&clcid=0x409) PowerShell script. The script enables the functionality of the following optional components that have been removed from Windows:
 

@@ -6,18 +6,14 @@ ai-usage: ai-assisted
 ---
 # Install .NET Framework 3.5 on Windows and Windows Server
 
+[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
+
 .NET Framework is software that allows programs to run on your computer. Think of it as an engine that apps need to function—just like a car needs an engine to run, some apps need .NET Framework to work. This article helps you install version 3.5, which is an older version that some apps still require. You might need .NET Framework 3.5 to run an app on Windows or Windows Server. Windows and Windows Server come with .NET Framework 4, which doesn't support apps built with .NET Framework 1.1 through 3.5. To run these apps, install .NET Framework 3.5.
 
 If you're a developer that requires .NET Framework 3.5, see the section [Developers and .NET Framework 3.5](#developers-and-net-framework-35).
 
 > [!TIP]
 > You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [Migration: Retarget or recompile](../migration-guide/migrating-from-the-net-framework-1-1.md#retarget-or-recompile).
-
-## Install .NET Framework 3.5 on Windows 11 Insiders Preview
-
-[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
-
-[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
 
 ## Install .NET Framework 3.5 on demand
 
@@ -48,9 +44,7 @@ Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 
 ## Enable .NET Framework 3.5 on Windows
 
-You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an internet connection. If you're using Windows 11, consider the [.NET Framework 3.5 on Windows 11 FAQ](dotnet-35-windows-11-faq.yml).
-
-[!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
+[!INCLUDE [dotnet-35-windows-11-caution-version](includes/dotnet-35-windows-11-caution-version.md)]
 
 1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
 1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears.
@@ -62,13 +56,11 @@ You don't need to select the child items for **Windows Communication Foundation 
 
 ## Download the offline installer
 
-The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**. For more information, see [.NET Framework 3.5 SP1 download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
+[!INCLUDE [dotnet-35-windows-11-caution-version](includes/dotnet-35-windows-11-caution-version.md)]
+
+The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**, such as **Windows 8**. For more information, see [.NET Framework 3.5 SP1 download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
 [!INCLUDE [dotnet-35-find-update](includes/dotnet-35-find-update.md)]
-
-### Windows 11
-
-[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
 
 ### Windows 10
 

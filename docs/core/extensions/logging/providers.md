@@ -228,6 +228,6 @@ For more information, see each provider's documentation. Third-party logging pro
 
 ## See also
 
-- [Logging in .NET](logging.md).
+- [Logging in .NET](overview.md).
 - [Implement a custom logging provider in .NET](custom-logging-provider.md).
 - [High-performance logging in .NET](high-performance-logging.md).

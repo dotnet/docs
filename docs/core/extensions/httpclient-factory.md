@@ -377,7 +377,7 @@ builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
 
 [hcf-issues]: httpclient-factory-troubleshooting.md
 [di]: dependency-injection/overview.md
-[logging]: logging.md
+[logging]: logging/overview.md
 [config]: configuration.md
 [httpclient]: ../../fundamentals/networking/http/httpclient.md
 [http-retry]: ../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

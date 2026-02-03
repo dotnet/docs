@@ -93,7 +93,7 @@ public static partial class Log
 
 You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> is provided for the message. The state contains the arguments, formatted as key-value pairs.
 
-:::code source="snippets/logging/logger-message-generator/Program.cs":::
+:::code source="snippets/logger-message-generator/Program.cs":::
 
 Consider the example logging output when using the `JsonConsole` formatter.
 
@@ -436,7 +436,7 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 
 ## See also
 
-- [Logging in .NET](logging.md)
+- [Logging in .NET](overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [Console log formatting](console-log-formatter.md)
 - [Data redaction in .NET](data-redaction.md)

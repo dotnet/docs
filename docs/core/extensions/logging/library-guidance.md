@@ -17,13 +17,13 @@ When writing a library that emits logs, you need an <xref:Microsoft.Extensions.L
 
 If you're designing a public API that must remain stable over time, keep in mind that you might desire to refactor your internal implementation in the future. Even if a class doesn't create any internal helper types initially, that might change as the code evolves. Using `ILoggerFactory` accommodates creating new `ILogger<TCategoryName>` objects for any new classes without changing the public API.
 
-For more information, see [How filtering rules are applied](logging.md#how-filtering-rules-are-applied).
+For more information, see [How filtering rules are applied](overview.md#how-filtering-rules-are-applied).
 
 ## Prefer source-generated logging
 
 The `ILogger` API supports two approaches to using the API. You can either call methods such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A?displayProperty=nameWithType>, or you can use the logging source generator to define strongly typed logging methods. For most situations, the source generator is recommended because it offers superior performance and stronger typing. It also isolates logging-specific concerns such as message templates, IDs, and log levels from the calling code. The non-source-generated approach is primarily useful for scenarios where you're willing to give up those advantages to make the code more concise.
 
-:::code source="snippets/logging/library-authors/LogMessages.cs":::
+:::code source="snippets/library-authors/LogMessages.cs":::
 
 The preceding code:
 
@@ -70,11 +70,11 @@ if (_logger.IsEnabled(LogLevel.Information))
 }
 ```
 
-For more information, see [Compile-time logging source generation](logger-message-generator.md) and [High-performance logging in .NET](high-performance-logging.md).
+For more information, see [Compile-time logging source generation](source-generation.md) and [High-performance logging in .NET](high-performance-logging.md).
 
 ## Avoid string interpolation in logging
 
-A common mistake is to use [string interpolation](../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic for performance, as the string is evaluated even if the corresponding `LogLevel` isn't enabled. Instead of string interpolation, use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](logging.md#log-message-template).
+A common mistake is to use [string interpolation](../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic for performance, as the string is evaluated even if the corresponding `LogLevel` isn't enabled. Instead of string interpolation, use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](overview.md#log-message-template).
 
 ## Use no-op logging defaults
 

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Implement a custom logging provider in .NET
 
-There are many [logging providers](logging-providers.md) available for common logging needs. You might need to implement a custom <xref:Microsoft.Extensions.Logging.ILoggerProvider> when one of the available providers doesn't suit your application needs. In this article, you learn how to implement a custom logging provider that can be used to colorize logs in the console.
+There are many [logging providers](providers.md) available for common logging needs. You might need to implement a custom <xref:Microsoft.Extensions.Logging.ILoggerProvider> when one of the available providers doesn't suit your application needs. In this article, you learn how to implement a custom logging provider that can be used to colorize logs in the console.
 
 > [!TIP]
 > The custom logging provider example source code is available in the **Docs GitHub repo**. For more information, see [GitHub: .NET Docs - Console Custom Logging](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/configuration/console-custom-logging).
@@ -94,7 +94,7 @@ Running this simple application will render color output to the console window s
 
 ## See also
 
-- [Logging in .NET](logging.md)
-- [Logging providers in .NET](logging-providers.md)
+- [Logging in .NET](overview.md)
+- [Logging providers in .NET](providers.md)
 - [Dependency injection in .NET](dependency-injection/overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)

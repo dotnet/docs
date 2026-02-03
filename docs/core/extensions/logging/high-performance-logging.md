@@ -95,11 +95,11 @@ Structured logging stores can use the event name when it's supplied with the eve
 
 ## Define logger message scope with source generation
 
-You can define [log scopes](logging.md#log-scopes) to wrap a series of log messages with additional context. With source-generated logging, you combine the `LoggerMessageAttribute` methods with the standard `ILogger.BeginScope` method.
+You can define [log scopes](overview.md#log-scopes) to wrap a series of log messages with additional context. With source-generated logging, you combine the `LoggerMessageAttribute` methods with the standard `ILogger.BeginScope` method.
 
 Enable `IncludeScopes` in the console logger section of *appsettings.json*:
 
-:::code language="json" source="snippets/logging/worker-service-options/appsettings.json" highlight="3-5":::
+:::code language="json" source="snippets/worker-service-options/appsettings.json" highlight="3-5":::
 
 Create source-generated logging methods and wrap them in a scope using `BeginScope`:
 
@@ -152,7 +152,7 @@ The string provided to the <xref:Microsoft.Extensions.Logging.LoggerMessage.Defi
 
 Each log message is an <xref:System.Action> held in a static field created by [LoggerMessage.Define](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A). For example, the sample app creates a field to describe a log message for the processing of work items:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingField":::
+:::code language="csharp" source="snippets/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingField":::
 
 For the <xref:System.Action>, specify:
 
@@ -166,7 +166,7 @@ As work items are dequeued for processing, the worker service app sets the:
 - Event ID to `13` with the name of the `FailedToProcessWorkItem` method.
 - Message template (named format string) to a string.
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
+:::code language="csharp" source="snippets/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
 The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define an <xref:System.Action> delegate, which represents a log message.
 
@@ -174,7 +174,7 @@ Structured logging stores can use the event name when it's supplied with the eve
 
 The <xref:System.Action> is invoked through a strongly typed extension method. The `PriorityItemProcessed` method logs a message every time a work item is processed. `FailedToProcessWorkItem` is called if and when an exception occurs:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Worker.cs" range="9-33" highlight="17-20":::
+:::code language="csharp" source="snippets/worker-service-options/Worker.cs" range="9-33" highlight="17-20":::
 
 Inspect the app's console output:
 
@@ -188,19 +188,19 @@ crit: WorkerServiceOptions.Example.Worker[13]
 
 To pass parameters to a log message, define up to six types when creating the static field. The sample app logs the work item details when processing items by defining a `WorkItem` type for the <xref:System.Action> field:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemField":::
+:::code language="csharp" source="snippets/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemField":::
 
 The delegate's log message template receives its placeholder values from the types provided. The sample app defines a delegate for adding a work item where the item parameter is a `WorkItem`:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemAssignment":::
+:::code language="csharp" source="snippets/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemAssignment":::
 
 The static extension method for logging that a work item is being processed, `PriorityItemProcessed`, receives the work item argument value and passes it to the <xref:System.Action> delegate:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemMethod":::
+:::code language="csharp" source="snippets/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemMethod":::
 
 In the worker service's `ExecuteAsync` method, `PriorityItemProcessed` is called to log the message:
 
-:::code language="csharp" source="snippets/logging/worker-service-options/Worker.cs" range="9-33" highlight="14":::
+:::code language="csharp" source="snippets/worker-service-options/Worker.cs" range="9-33" highlight="14":::
 
 Inspect the app's console output:
 
@@ -220,5 +220,5 @@ For more information, see:
 
 ## See also
 
-- [Logging in .NET](logging.md)
+- [Logging in .NET](overview.md)
 - [Compile-time logging source generation](source-generation.md)

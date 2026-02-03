@@ -13,7 +13,7 @@ Observability is one of the most important aspects of a distributed system. It's
 
 ## Logging
 
-Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection/overview.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
+Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection/overview.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging/overview.md).
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
@@ -440,7 +440,7 @@ clientBuilder.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);
 
 ## See also
 
-- [Logging in .NET](../../../core/extensions/logging.md)
+- [Logging in .NET](../../../core/extensions/logging/overview.md)
 - [.NET metrics](../../../core/diagnostics/metrics.md)
 - [Investigate performance counters (dotnet-counters)](../../../core/diagnostics/dotnet-counters.md)
 - [.NET distributed tracing](../../../core/diagnostics/distributed-tracing.md)

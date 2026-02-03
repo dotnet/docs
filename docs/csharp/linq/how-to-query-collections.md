@@ -47,6 +47,24 @@ The second, *scores.csv*, contains student IDs in the first column, followed by 
 
 The following example shows how to use a named record `Student` to store merged data from two in-memory collections of strings that simulate spreadsheet data in .csv format. The ID is used as the key to map students to their scores.
 
+```csharp
+public class Student
+{
+    public int ID { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int[] ExamScores { get; set; }
+
+    public Student(int ID, string FirstName, string LastName, int[] ExamScores)
+    {
+        this.ID = ID;
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+        this.ExamScores = ExamScores;
+    }
+}
+```
+
 :::code language="csharp" source="./snippets/HowToCollections/Program.cs" id="PopulateCollection":::
 
 In the [select](../language-reference/keywords/select-clause.md) clause, each new `Student` object is initialized from the data in the two sources.

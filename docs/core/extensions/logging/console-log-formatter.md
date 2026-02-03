@@ -21,7 +21,7 @@ In this article, you will learn about console log formatters. The sample source 
 
 ## Register formatter
 
-The [`Console` logging provider](loggingproviders.md#console) has several predefined formatters, and exposes the ability to author your own custom formatter. To register any of the available formatters, use the corresponding `Add{Type}Console` extension method:
+The [`Console` logging provider](providers.md#console) has several predefined formatters, and exposes the ability to author your own custom formatter. To register any of the available formatters, use the corresponding `Add{Type}Console` extension method:
 
 | Available types | Method to register type |
 |-----------------|-------------------------|

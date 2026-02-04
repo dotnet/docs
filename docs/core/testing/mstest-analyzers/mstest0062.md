@@ -19,11 +19,11 @@ dev_langs:
 | Property                            | Value                                              |
 |-------------------------------------|----------------------------------------------------|
 | **Rule ID**                         | MSTEST0062                                         |
-| **Title**                           | Avoid out and ref parameters in test methods      |
+| **Title**                           | Avoid out and ref parameters in test methods       |
 | **Category**                        | Usage                                              |
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
-| **Default severity**                | Info                                               |
+| **Default severity**                | Warning                                            |
 | **Introduced in version**           | 4.1.0                                              |
 | **Is there a code fix**             | Yes                                                |
 

@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Caching in .NET
 
-In this article, you'll learn about various caching mechanisms. Caching is the act of storing data in an intermediate-layer, making subsequent data retrievals faster. Conceptually, caching is a performance optimization strategy and design consideration. Caching can significantly improve app performance by making infrequently changing (or expensive to retrieve) data more readily available. This article introduces three caching approaches, and provides sample source code for each:
+In this article, you'll learn about various caching mechanisms. Caching is the act of storing data in an intermediate-layer, making subsequent data retrievals faster. Conceptually, caching is a performance optimization strategy and design consideration. Caching can significantly improve app performance by making infrequently changing (or expensive to retrieve) data more readily available. This article introduces three caching approaches and provides sample source code for each:
 
 - [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory): In-memory caching for single-server scenarios
 - [Microsoft.Extensions.Caching.Hybrid](/dotnet/api/microsoft.extensions.caching.hybrid): Hybrid caching that combines in-memory and distributed caching with additional features
@@ -344,7 +344,7 @@ For distributed caching scenarios, `HybridCache` requires serialization. By defa
 
 :::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="CustomSerialization":::
 
-### Configuring distributed cache
+### Configure distributed cache
 
 `HybridCache` uses the configured <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> implementation for its distributed (L2) cache. Even without an `IDistributedCache` configured, `HybridCache` still provides in-memory caching and stampede protection. To add Redis as a distributed cache:
 

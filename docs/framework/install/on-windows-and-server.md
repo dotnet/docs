@@ -28,7 +28,7 @@ The following versions of .NET Framework are still supported:
 
 ### .NET Framework 3.5
 
-.NET Framework 3.5 is still supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports running apps that target versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
+.NET Framework 3.5 is supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports running apps that target versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
 
 [!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
 

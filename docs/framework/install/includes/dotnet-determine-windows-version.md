@@ -10,13 +10,13 @@ There are a few different ways you can find the version of Windows you're using:
 
   1. Scroll down to the **Windows specifications** section and find the **Version** field.
 
-- Try using the start menu:
+- Use the start menu:
 
   1. Press the <kbd>Windows</kbd> key to open the **Start** menu.
   1. Type `Settings` to find the **Settings** app and open it.
   1. Scroll down to the **Windows specifications** section and find the **Version** field.
 
-- Try running the `winver.exe` app:
+- Run the `winver.exe` app:
 
   1. Press the <kbd>Windows+R</kbd> keyboard shortcut to open the **Run** dialog.
   1. Type `winver.exe` and press <kbd>Enter</kbd>.

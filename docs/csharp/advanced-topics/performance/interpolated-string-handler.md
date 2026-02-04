@@ -1,7 +1,7 @@
 ---
 title: Explore C# string interpolation handlers
 description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
-ms.date: 11/22/2024
+ms.date: 02/05/2026
 ---
 # Tutorial: Write a custom string interpolation handler
 
@@ -51,6 +51,9 @@ This step is to build an *interpolated string handler* that recreates the curren
 Internally, the builder creates the formatted string, and provides a member for a client to retrieve that string. The following code shows a `LogInterpolatedStringHandler` type that meets these requirements:
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Logger-v2.cs" id="CoreInterpolatedStringHandler":::
+
+> [!NOTE]
+> When the interpolated string expression is a compile-time constant (that is, it contains no placeholders), the compiler uses the target type `string` instead of invoking a custom interpolated string handler. This means constant interpolated strings bypass custom handlers entirely.
 
 You can now add an overload to `LogMessage` in the `Logger` class to try your new interpolated string handler:
 
@@ -112,6 +115,9 @@ Next, you need to update the `LogMessage` declaration so that the compiler passe
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
 
 This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. The arguments that you add are string arguments.
+
+> [!NOTE]
+> If the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute> constructor argument list is empty, the behavior is the same as if the attribute was omitted entirely.
 
 You can run this version using the same test code. This time, you see the following results:
 
@@ -201,18 +207,18 @@ This example illustrates an important point for interpolated string handlers, es
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideEffects":::
 
-You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` doesn't match the expectation:
+You can see the `index` variable is incremented each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` doesn't match the expectation:
 
 ```powershell
 Critical
-Critical: Increment index a few times 0, 1, 2, 3, 4
+Critical: Increment index 0
 Error
-Error: Increment index a few times 5, 6, 7, 8, 9
+Error: Increment index 1
 Warning
-Warning: Increment index a few times 10, 11, 12, 13, 14
+Warning: Increment index 2
 Information
 Trace
-Value of index 15, value of numberOfIncrements: 25
+Value of index 3, value of numberOfIncrements: 5
 ```
 
 Interpolated string handlers provide greater control over how an interpolated string expression is converted to a string. The .NET runtime team used this feature to improve performance in several areas. You can make use of the same capability in your own libraries. To explore further, look at the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. It provides a more complete implementation than you built here. You see many more overloads that are possible for the `Append` methods.

@@ -6,7 +6,7 @@ ms.topic: include
 
 There are a few different ways you can find the version of Windows you're using:
 
-- Try [this link (ms-settings:about)](ms-settings:about) which might open the Settings app.
+- Select [this (ms-settings:about) link](ms-settings:about) which might open the Settings app.
 
   1. Scroll down to the **Windows specifications** section and find the **Version** field.
 

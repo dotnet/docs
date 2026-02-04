@@ -243,5 +243,5 @@ The sample application does not provide resource files for `"fr-CA"`, but when c
 - [Package and deploy resources in .NET apps](package-and-deploy-resources.md)
 - [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization)
 - [Dependency injection in .NET](dependency-injection/overview.md)
-- [Logging in .NET](logging.md)
+- [Logging in .NET](logging/overview.md)
 - [ASP.NET Core localization](/aspnet/core/fundamentals/localization)

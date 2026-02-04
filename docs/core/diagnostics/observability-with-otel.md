@@ -18,7 +18,7 @@ Observability in the context of a distributed system is the ability to monitor a
 
 Observability is commonly done using a combination of:
 
-- [Logs](../extensions/logging.md), which record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
+- [Logs](../extensions/logging/overview.md), which record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
 - [Metrics](./metrics.md), which are measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
 - [Distributed tracing](./distributed-tracing.md), which tracks requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
 
@@ -56,7 +56,7 @@ There are OpenTelemetry implementations for most languages and platforms, includ
 
 The .NET OpenTelemetry implementation is a little different from other platforms, as .NET provides logging, metrics, and activity APIs in the framework. That means OTel doesn't need to provide APIs for library authors to use. The .NET OTel implementation uses these platform APIs for instrumentation:
 
-- <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging.md)
+- <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging/overview.md)
 - <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> for [metrics](./metrics-instrumentation.md)
 - <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and
 <xref:System.Diagnostics.Activity?displayProperty=nameWithType> for [distributed tracing](./distributed-tracing.md)

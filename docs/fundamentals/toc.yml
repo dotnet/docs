@@ -1083,29 +1083,29 @@ items:
       - name: Logging
         items:
           - name: Overview
-            href: ../core/extensions/logging.md
+            href: ../core/extensions/logging/overview.md
             displayName: logging,logger,log,loggers
           - name: Logging providers
-            href: ../core/extensions/logging-providers.md
+            href: ../core/extensions/logging/providers.md
             displayName: logging providers,log providers
           - name: Compile-time logging source generation
-            href: ../core/extensions/logger-message-generator.md
+            href: ../core/extensions/logging/source-generation.md
             displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
           - name: Logging guidance for library authors
-            href: ../core/extensions/logging-library-authors.md
+            href: ../core/extensions/logging/library-guidance.md
             displayName: logging guidance,logger guidance,log guidance
           - name: Implement a custom logging provider
-            href: ../core/extensions/custom-logging-provider.md
+            href: ../core/extensions/logging/custom-provider.md
             displayName: custom logging,custom log,custom logging provider,custom log provider
           - name: High-performance logging
-            href: ../core/extensions/high-performance-logging.md
+            href: ../core/extensions/logging/high-performance-logging.md
             displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
           - name: Log Sampling
-            href: ../core/extensions/log-sampling.md
+            href: ../core/extensions/logging/log-sampling.md
           - name: Log Buffering
-            href: ../core/extensions/log-buffering.md
+            href: ../core/extensions/logging/log-buffering.md
           - name: Console log formatting
-            href: ../core/extensions/console-log-formatter.md
+            href: ../core/extensions/logging/console-log-formatter.md
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
       - name: HostBuilder (generic host)
         href: ../core/extensions/generic-host.md

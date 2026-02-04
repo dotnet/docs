@@ -321,7 +321,7 @@ To ensure a smooth transition of clients to a new destination when working with 
 ## See also
 
 - [Dependency injection in .NET](dependency-injection/overview.md)
-- [Logging in .NET](logging.md)
+- [Logging in .NET](logging/overview.md)
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)

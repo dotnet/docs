@@ -96,7 +96,7 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 > }
 > ```
 >
-> For more information on configuring log levels, see [Logging providers in .NET: Configure Windows EventLog](logging-providers.md#windows-eventlog).
+> For more information on configuring log levels, see [Logging providers in .NET: Configure Windows EventLog](logging/providers.md#windows-eventlog).
 
 ## Rewrite the `Program` class
 

@@ -1,10 +1,10 @@
 ﻿using OpenTelemetry.Logs;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Logging.AddOpenTelemetry(logging => logging.AddOtlpExporter());
 builder.Services.AddSingleton<ExampleHandler>();
-var app = builder.Build();
-var handler = app.Services.GetRequiredService<ExampleHandler>();
+WebApplication app = builder.Build();
+ExampleHandler handler = app.Services.GetRequiredService<ExampleHandler>();
 app.MapGet("/", handler.HandleRequest);
 app.Run();
 

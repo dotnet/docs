@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Logging in C# and .NET
 
-.NET supports high performance, structured logging via the <xref:Microsoft.Extensions.Logging.ILogger> API to help monitor application behavior and diagnose issues. Configure different [logging providers](logging-providers.md) to write logs to different destinations. Basic logging providers are built-in, and many third-party providers are available.
+.NET supports high performance, structured logging via the <xref:Microsoft.Extensions.Logging.ILogger> API to help monitor application behavior and diagnose issues. Configure different [logging providers](providers.md) to write logs to different destinations. Basic logging providers are built-in, and many third-party providers are available.
 
 ## Get started
 
@@ -18,17 +18,17 @@ This first example shows the basics, but it's only suitable for a trivial consol
 
 In the next section you see how to improve the code considering scale, performance, configuration, and typical programming patterns.
 
-:::code language="csharp" source="snippets/logging/getting-started/Program.cs":::
+:::code language="csharp" source="../snippets/logging/getting-started/Program.cs":::
 
 The preceding example:
 
-- Creates an <xref:Microsoft.Extensions.Logging.ILoggerFactory>. The `ILoggerFactory` stores all the configuration that determines where log messages are sent. In this case, configure the console [logging provider](logging-providers.md) so that log messages are written to the console.
+- Creates an <xref:Microsoft.Extensions.Logging.ILoggerFactory>. The `ILoggerFactory` stores all the configuration that determines where log messages are sent. In this case, configure the console [logging provider](providers.md) so that log messages are written to the console.
 - Creates an <xref:Microsoft.Extensions.Logging.ILogger> with a category named "Program". The [category](#log-category) is a `string` that's associated with each message logged by the `ILogger` object. It groups log messages from the same class (or category) together when searching or filtering logs.
 - Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event and filters out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {Description}."` and a key-value pair `Description = fun`. The key name (or placeholder) comes from the word inside the curly braces in the template, and the value comes from the remaining method argument.
 
 This project file for this example includes two NuGet packages:
 
-:::code language="xml" source="snippets/logging/getting-started/getting-started.csproj":::
+:::code language="xml" source="../snippets/logging/getting-started/getting-started.csproj":::
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
@@ -36,50 +36,50 @@ This project file for this example includes two NuGet packages:
 
 Consider making these changes to the previous example when logging in a less trivial scenario:
 
-- If your application uses [Dependency Injection (DI)](dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
+- If your application uses [Dependency Injection (DI)](../dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](../generic-host.md), use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
 
-- Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
+- [Compile-time source generation](source-generation.md) for logging is usually a better alternative to `ILogger` extension methods like `LogInformation`. Source-generated logging offers better performance and stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
-:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
+   :::code language="csharp" source="../snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
-- The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
+- The recommended practice for choosing a log category name is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. Specify the class type in the type parameter of the <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> method.
 
-:::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
+   :::code language="csharp" source="../snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
-- If you don't use console logs as your sole production monitoring solution, add the [logging providers](logging-providers.md) you plan to use. For example, use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
+- If you don't use console logs as your sole production monitoring solution, add the [logging providers](providers.md) you plan to use. For example, use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
+   :::code language="csharp" source="../snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
 
 ## Integration with hosts and dependency injection
 
-If your application uses [Dependency Injection (DI)](dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md), use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
+If your application uses [Dependency Injection (DI)](../dependency-injection/overview.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](../generic-host.md), use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
 
 ### Get an ILogger from DI
 
 This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview):
 
-:::code language="csharp" source="snippets/logging/minimal-web/Program.cs" highlight="12":::
+:::code language="csharp" source="../snippets/logging/minimal-web/Program.cs" highlight="12":::
 
 The preceding example:
 
 - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
-- Line 12 defines a [primary constructor](../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor works equally well but is a little more verbose.
+- Line 12 defines a [primary constructor](../../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor works equally well but is a little more verbose.
 - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 - The `logger` parameter received in the constructor is used for logging in the `HandleRequest` function.
 
 ### Host-provided ILoggerFactory
 
-Host builders initialize [default configuration](generic-host.md#host-builder-settings), then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built, adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources like _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](configuration.md).
+Host builders initialize [default configuration](../generic-host.md#host-builder-settings), then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built, adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources like _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](../configuration.md).
 
 This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/minimal-web-open-telemetry/Program.cs" range="3-6" highlight="2":::
+:::code language="csharp" source="../snippets/logging/minimal-web-open-telemetry/Program.cs" range="3-6" highlight="2":::
 
 ### Create an ILoggerFactory with DI
 
 If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
 
-:::code language="csharp" source="snippets/logging/di-without-host/Program.cs" highlight="6":::
+:::code language="csharp" source="../snippets/logging/di-without-host/Program.cs" highlight="6":::
 
 The preceding example:
 
@@ -94,11 +94,11 @@ Set logging configuration in code or via external sources, such as config files 
 
 ### Configure logging without code
 
-For apps that [use a host](#integration-with-hosts-and-dependency-injection), the `"Logging"` section of _appsettings_`.{Environment}`_.json_ files commonly provides logging configuration. For apps that don't use a host, [set up external configuration sources explicitly](configuration.md) or [configure them in code](#configure-logging-with-code) instead.
+For apps that [use a host](#integration-with-hosts-and-dependency-injection), the `"Logging"` section of _appsettings_`.{Environment}`_.json_ files commonly provides logging configuration. For apps that don't use a host, [set up external configuration sources explicitly](../configuration.md) or [configure them in code](#configure-logging-with-code) instead.
 
 The following _appsettings.Development.json_ file is generated by the .NET Worker service templates:
 
-:::code language="json" source="snippets/configuration/worker-service/appsettings.Development.json":::
+:::code language="json" source="../snippets/configuration/worker-service/appsettings.Development.json":::
 
 In the preceding JSON:
 
@@ -107,7 +107,7 @@ In the preceding JSON:
 - The `"Microsoft"` category applies to all categories that start with `"Microsoft"`.
 - The `"Microsoft"` category logs at a log level of `Warning` and higher.
 - The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level `"Information"` and higher.
-- A specific log provider isn't specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](logging-providers.md#windows-eventlog).
+- A specific log provider isn't specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](providers.md#windows-eventlog).
 
 The `Logging` property can have <xref:Microsoft.Extensions.Logging.LogLevel> and log provider properties. The `LogLevel` specifies the minimum [level](#log-level) to log for selected categories. In the preceding JSON, `Information` and `Warning` log levels are specified. `LogLevel` indicates the severity of the log and ranges from 0 to 6:
 
@@ -117,7 +117,7 @@ When a `LogLevel` is specified, logging is enabled for messages at the specified
 
 A provider property can specify a `LogLevel` property. `LogLevel` under a provider specifies levels to log for that provider, and overrides the non-provider log settings. Consider the following *appsettings.json* file:
 
-:::code language="json" source="snippets/configuration/worker-service/appsettings.Staging.json":::
+:::code language="json" source="../snippets/configuration/worker-service/appsettings.Staging.json":::
 
 Settings in `Logging.{ProviderName}.LogLevel` override settings in `Logging.LogLevel`. In the preceding JSON, the `Debug` provider's default log level is set to `Information`:
 
@@ -142,7 +142,7 @@ If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whet
 
 The following *appsettings.json* file contains settings for all of the built-in providers:
 
-:::code language="json" source="snippets/configuration/worker-service/appsettings.Production.json":::
+:::code language="json" source="../snippets/configuration/worker-service/appsettings.Production.json":::
 
 In the preceding sample:
 
@@ -159,7 +159,7 @@ In the preceding sample:
 
 ### Set log level by command line, environment variables, and other configuration
 
-Set the log level using any of the [configuration providers](configuration-providers.md). For example, create a persisted environment variable named `Logging:LogLevel:Microsoft` with a value of `Information`.
+Set the log level using any of the [configuration providers](../configuration-providers.md). For example, create a persisted environment variable named `Logging:LogLevel:Microsoft` with a value of `Information`.
 
 ## [Command Line](#tab/command-line)
 
@@ -233,7 +233,7 @@ On [Azure App Service](https://azure.microsoft.com/services/app-service/), selec
 - Encrypted at rest and transmitted over an encrypted channel.
 - Exposed as environment variables.
 
-For more information on setting .NET configuration values using environment variables, see [environment variables](configuration-providers.md#environment-variable-configuration-provider).
+For more information on setting .NET configuration values using environment variables, see [environment variables](../configuration-providers.md#environment-variable-configuration-provider).
 
 ### Configure logging with code
 
@@ -243,7 +243,7 @@ To configure logging in code, use the <xref:Microsoft.Extensions.Logging.ILoggin
 - When using DI without a host, configure in <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A?displayProperty=nameWithType>.
 - When using a host, configure with <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType> or other host specific APIs.
 
-This example shows setting the console [logging provider](logging-providers.md) and several [filters](#how-filtering-rules-are-applied).
+This example shows setting the console [logging provider](providers.md) and several [filters](#how-filtering-rules-are-applied).
 
 ```csharp
 using Microsoft.Extensions.Logging;
@@ -376,7 +376,7 @@ Configure the appropriate log level and call the correct `Log{LogLevel}` methods
 
 The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
-:::code language="json" source="snippets/configuration/worker-service/appsettings.MSFT.json":::
+:::code language="json" source="../snippets/configuration/worker-service/appsettings.MSFT.json":::
 
 ## Log event ID
 
@@ -452,7 +452,7 @@ For example, when logging to Azure Table Storage:
 
 ### Log message template formatting
 
-Log message templates support placeholder formatting. Templates can specify [any valid format](../../standard/base-types/formatting-types.md) for the given type argument. For example, consider the following `Information` logger message template:
+Log message templates support placeholder formatting. Templates can specify [any valid format](../../../standard/base-types/formatting-types.md) for the given type argument. For example, consider the following `Information` logger message template:
 
 ```csharp
 _logger.LogInformation("Logged on {PlaceHolderName:MMMM dd, yyyy}", DateTimeOffset.UtcNow);
@@ -461,7 +461,7 @@ _logger.LogInformation("Logged on {PlaceHolderName:MMMM dd, yyyy}", DateTimeOffs
 
 In the preceding example, the `DateTimeOffset` instance is the type that corresponds to the `PlaceHolderName` in the logger message template. This name can be anything as the values are ordinal-based. The `MMMM dd, yyyy` format is valid for the `DateTimeOffset` type.
 
-For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
+For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../../standard/base-types/custom-date-and-time-format-strings.md).
 
 #### Examples
 
@@ -476,7 +476,7 @@ logger.LogInformation($"{{{{Number}}}}: {{Number}}", 5);    // {Number}: 5
 > [!TIP]
 >
 > - In most cases, you should use log message template formatting when logging. Use of string interpolation can cause performance issues.
-> - Code analysis rule [CA2254: Template should be a static expression](../../fundamentals/code-analysis/quality-rules/ca2254.md) helps alert you to places where your log messages don't use proper formatting.
+> - Code analysis rule [CA2254: Template should be a static expression](../../../fundamentals/code-analysis/quality-rules/ca2254.md) helps alert you to places where your log messages don't use proper formatting.
 
 ## Log exceptions
 
@@ -592,7 +592,7 @@ public async Task<T> GetAsync<T>(string id)
 
 The following JSON enables scopes for the console provider:
 
-:::code language="json" source="snippets/configuration/worker-service/appsettings.IncludeScopes.json" highlight="9":::
+:::code language="json" source="../snippets/configuration/worker-service/appsettings.IncludeScopes.json" highlight="9":::
 
 The following code enables scopes for the console provider:
 
@@ -655,7 +655,7 @@ Logging should be so fast that it isn't worth the performance cost of asynchrono
 
 ## Change log levels in a running app
 
-The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers can reload configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If you change the configuration in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
+The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers can reload configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](../configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If you change the configuration in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
 
 ## NuGet packages
 
@@ -664,13 +664,13 @@ The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensio
 - The interfaces are in [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions).
 - The default implementations are in [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging).
 
-For more information about which .NET SDK includes implicit package references, see [.NET SDK: table to implicit namespace](../project-sdk/overview.md#implicit-using-directives).
+For more information about which .NET SDK includes implicit package references, see [.NET SDK: table to implicit namespace](../../project-sdk/overview.md#implicit-using-directives).
 
 ## See also
 
-- [Logging providers in .NET](logging-providers.md)
-- [Implement a custom logging provider in .NET](custom-logging-provider.md)
+- [Logging providers in .NET](providers.md)
+- [Implement a custom logging provider in .NET](custom-provider.md)
 - [Console log formatting](console-log-formatter.md)
 - [High-performance logging in .NET](high-performance-logging.md)
-- [Logging guidance for .NET library authors](logging-library-authors.md)
+- [Logging guidance for .NET library authors](library-guidance.md)
 - Logging bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime//issues) repo

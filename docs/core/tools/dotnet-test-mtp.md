@@ -82,7 +82,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--config-file <CONFIG_FILE>`**
 
-  Specifies the configuration file to use for test execution. If a relative path is provided, it's converted to an absolute path based on the current directory.
+  Specifies the configuration file to use for test execution. If a relative path is provided, it's converted to an absolute path based on the current directory. For more information about the configuration file settings, see [testconfig.json](../testing/microsoft-testing-platform-config#testconfigjson).
 
 - **`--results-directory <RESULTS_DIRECTORY>`**
 
@@ -94,7 +94,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--minimum-expected-tests <NUMBER>`**
 
-  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9.
+  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [Microsoft.Testing.Platform exit codes](../testing/microsoft-testing-platform-exit-codes.md).
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 

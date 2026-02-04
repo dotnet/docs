@@ -195,7 +195,7 @@ Enhance the application to prompt the user for their name and display it along w
    Press Enter to exit...
    ```
 
-Press <kbd>Enter</kbd> to exit the program.
+   Press <kbd>Enter</kbd> to exit the program.
 
 ::: zone-end
 

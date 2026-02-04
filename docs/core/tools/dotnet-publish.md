@@ -204,7 +204,7 @@ For more information, see the following resources:
 
   > [!NOTE]
   > Publishing can be done on the *solution* level and on the single *project* level. When publishing from the *solution* level by specifying the optional `<SOLUTION>` parameter or leaving it default, MSBuild first compiles the output into the `publish` directory **without** any symbols. This means that later compilations done by MSBuild, based on the initial compilation, will still not include any details for specified `<RUNTIME_IDENTIFIER>`.
-  
+  >
   > This is expected behavior. To avoid this behavior either publish for a single project by specifying the optional `<PROJECT>` parameter for your RID or specify RIDs directly in the project config by adding the [`<RuntimeIdentifiers>`](../project-sdk/msbuild-props.md#runtimeidentifiers) property.
 
 - [!INCLUDE [tl](includes/cli-tl.md)]

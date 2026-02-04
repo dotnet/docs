@@ -45,7 +45,7 @@ The main driving factors for the evolution of the new testing platform are detai
 
 ## Supported target frameworks
 
-Microsoft.Testing.Platform supports both .NET (NET8+) and .NET Framework (4.6.2+), and targets NETStandard 2.0 for maximum compatiblity with other runtimes.
+Microsoft.Testing.Platform supports .NET (.NET 8 SDK and later), .NET Framework (versions 4.6.2 and later), and targets NETStandard 2.0 for maximum compatiblity with other runtimes.
 
 ## Run and debug tests
 

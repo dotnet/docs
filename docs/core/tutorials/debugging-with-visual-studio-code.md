@@ -242,21 +242,6 @@ dotnet run --configuration Release HelloWorld.cs
 
 ::: zone-end
 
-## Additional resources
-
-::: zone pivot="vscode"
-
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
-
-::: zone-end
-
-::: zone pivot="codespaces"
-
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
-- [GitHub Codespaces documentation](https://docs.github.com/codespaces)
-
-::: zone-end
-
 ## Next steps
 
 In this tutorial, you used Visual Studio Code debugging tools. In the next tutorial, you publish a deployable version of the app.

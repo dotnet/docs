@@ -148,7 +148,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
-   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
+   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break.
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
@@ -175,7 +175,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
-   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
+   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break.
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 

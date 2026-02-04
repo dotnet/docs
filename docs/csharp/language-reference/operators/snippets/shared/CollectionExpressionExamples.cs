@@ -2,7 +2,6 @@
 using System.Runtime.CompilerServices;
 using System.Collections;
 
-
 // <BuilderAttribute>
 [CollectionBuilder(typeof(LineBufferBuilder), "Create")]
 // </BuilderAttribute>
@@ -54,6 +53,35 @@ internal static class LineBufferBuilder
     internal static LineBuffer Create(ReadOnlySpan<char> values) => new LineBuffer(values);
 }
 // </BuilderClass>
+
+// <BuilderClassWithComparer>
+internal static class MySetBuilder
+{
+    internal static MySet<T> Create<T>(ReadOnlySpan<T> items) => new MySet<T>(items);
+    internal static MySet<T> Create<T>(IEqualityComparer<T> comparer, ReadOnlySpan<T> items) => 
+        new MySet<T>(items, comparer);
+}
+// </BuilderClassWithComparer>
+
+// <MySetDeclaration>
+[CollectionBuilder(typeof(MySetBuilder), "Create")]
+public class MySet<T> : IEnumerable<T>
+{
+    private readonly HashSet<T> _set;
+
+    public MySet(ReadOnlySpan<T> items, IEqualityComparer<T>? comparer = null)
+    {
+        _set = new HashSet<T>(comparer);
+        foreach (var item in items)
+        {
+            _set.Add(item);
+        }
+    }
+
+    public IEnumerator<T> GetEnumerator() => _set.GetEnumerator();
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+}
+// </MySetDeclaration>
 
 public class CollectionExpressionExamples
 {
@@ -124,5 +152,32 @@ public class CollectionExpressionExamples
         }
         // </CompileTimeExpressions>
     }
+
+    // <WithArgumentsExamples>
+    public void CollectionArgumentsExamples()
+    {
+        string[] values = ["one", "two", "three"];
+
+        // Pass capacity argument to List<T> constructor
+        List<string> names = [with(capacity: values.Length * 2), .. values];
+
+        // Pass comparer argument to HashSet<T> constructor
+        HashSet<string> set = [with(StringComparer.OrdinalIgnoreCase), "Hello", "HELLO", "hello"];
+        // set contains only one element because all strings are equal with OrdinalIgnoreCase
+
+        // Pass capacity to IList<T> (uses List<T> constructor)
+        IList<int> numbers = [with(capacity: 100), 1, 2, 3];
+    }
+    // </WithArgumentsExamples>
+
+    // <WithBuilderArgumentsExample>
+    public void CollectionBuilderArgumentsExample()
+    {
+        // Pass comparer to a type with CollectionBuilder attribute
+        // The comparer argument is passed before the ReadOnlySpan<T> parameter
+        MySet<string> mySet = [with(StringComparer.OrdinalIgnoreCase), "A", "a", "B"];
+        // mySet contains only two elements: "A" and "B"
+    }
+    // </WithBuilderArgumentsExample>
 }
 

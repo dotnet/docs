@@ -91,10 +91,61 @@ The `LineBuffer` type implements `IEnumerable<char>`, so the compiler recognizes
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClass":::
 
-The `Create` method must return a `LineBuffer` object, and it must take a single parameter of the type `ReadOnlySpan<char>`. The type parameter of the `ReadOnlySpan` must match the element type of the collection. A builder method that returns a generic collection has the generic `ReadOnlySpan<T>` as its parameter. The method must be accessible and `static`.
+The `Create` method must return a `LineBuffer` object, and it must take a final parameter of the type `ReadOnlySpan<char>`. The type parameter of the `ReadOnlySpan` must match the element type of the collection. A builder method that returns a generic collection has the generic `ReadOnlySpan<T>` as its parameter. The method must be accessible and `static`.
+
+Starting in C# 15, the `Create` method can have additional parameters before the `ReadOnlySpan<T>` parameter. You can pass values to these parameters by using a `with(...)` element in the collection expression. See [Collection builder arguments](#collection-builder-arguments) for details.
 
 Finally, you must add the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute> to the `LineBuffer` class declaration:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderAttribute":::
 
 The first parameter provides the name of the *Builder* class. The second attribute provides the name of the builder method.
+
+## Collection expression arguments
+
+Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+
+The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element are passed to the appropriate constructor or create method based on the target type.
+
+### Constructor arguments
+
+When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are passed to the constructor. The compiler uses overload resolution to select the best matching constructor:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithArgumentsExamples":::
+
+In the preceding example:
+
+- The `List<string>` constructor with a `capacity` parameter is called with `values.Length * 2`.
+- The `HashSet<string>` constructor with an <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType> parameter is called with `StringComparer.OrdinalIgnoreCase`.
+- For interface target types like <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType>, the compiler creates a `List<T>` with the specified capacity.
+
+### Collection builder arguments
+
+For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the arguments declared in the `with(...)` element are passed to the create method *before* the `ReadOnlySpan<T>` parameter. This allows create methods to accept configuration parameters:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClassWithComparer":::
+
+You can then use the `with(...)` element to pass the comparer:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithBuilderArgumentsExample":::
+
+The create method is selected using overload resolution based on the arguments provided. The `ReadOnlySpan<T>` containing the collection elements is always the last parameter.
+
+### Interface target types
+
+Collection expression arguments are supported for several interface target types. The following table shows the supported interfaces and their applicable constructor signatures:
+
+| Interface | Supported `with` elements |
+|-----------|---------------------|
+| <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IReadOnlyCollection%601>, <xref:System.Collections.Generic.IReadOnlyList%601> | `()` (empty only) |
+| <xref:System.Collections.Generic.ICollection%601>, <xref:System.Collections.Generic.IList%601> | `()`, `(int capacity)` |
+
+For <xref:System.Collections.Generic.IList%601> and <xref:System.Collections.Generic.ICollection%601>, the compiler uses a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> with the specified constructor.
+
+### Restrictions
+
+The `with(...)` element has the following restrictions:
+
+- It must be the first element in the collection expression.
+- Arguments can't have `dynamic` type.
+- It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).

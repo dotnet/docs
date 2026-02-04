@@ -240,6 +240,8 @@ The following example shows an object that implements <xref:System.Collections.I
 
 ## See also
 
+- [Collection expressions](../../language-reference/operators/collection-expressions.md)
+- [What's new in C# 15 - Collection expression arguments](../../whats-new/csharp-15.md#collection-expression-arguments)
 - [Use object initializers (style rule IDE0017)](../../../fundamentals/code-analysis/style-rules/ide0017.md)
 - [Use collection initializers (style rule IDE0028)](../../../fundamentals/code-analysis/style-rules/ide0028.md)
 - [LINQ in C#](../../linq/index.md)

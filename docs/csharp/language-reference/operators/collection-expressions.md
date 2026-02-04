@@ -149,3 +149,10 @@ The `with(...)` element has the following restrictions:
 - It must be the first element in the collection expression.
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
+
+## See also
+
+- [What's new in C# 15 - Collection expression arguments](../../whats-new/csharp-15.md#collection-expression-arguments)
+- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Collection expression feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md)
+- [Collection expression arguments feature specification](~/_csharplang/proposals/collection-expression-arguments.md)

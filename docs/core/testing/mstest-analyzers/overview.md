@@ -111,6 +111,7 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0056](mstest0056.md) - TestMethodAttribute should set DisplayName correctly
 - [MSTEST0057](mstest0057.md) - TestMethodAttribute should propagate source information
 - [MSTEST0060](mstest0060.md) - Duplicate TestMethodAttribute
+- [MSTEST0063](mstest0063.md) - Test class should have valid constructor
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md), [Attributes](../unit-testing-mstest-writing-tests-attributes.md)
 
@@ -276,6 +277,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0060](mstest0060.md) | Usage | Duplicate TestMethodAttribute | Warning |
 | [MSTEST0061](mstest0061.md) | Usage | Use OSCondition attribute instead of runtime check | Info |
 | [MSTEST0062](mstest0062.md) | Usage | Avoid out/ref test method parameters | Warning |
+| [MSTEST0063](mstest0063.md) | Usage | Test class should have valid constructor | Warning |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

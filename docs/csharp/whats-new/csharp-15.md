@@ -1,9 +1,10 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 02/04/2025
+ms.date: 02/04/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
+ai-usage: ai-assisted
 ---
 # What's new in C# 15
 

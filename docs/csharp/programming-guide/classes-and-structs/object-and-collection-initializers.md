@@ -1,5 +1,5 @@
 ---
-title: "Object and Collection Initializers"
+title: "Object and collection initializers"
 description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
 ms.date: 02/04/2026
 helpviewer_keywords: 
@@ -100,7 +100,7 @@ It's a typical practice to guarantee that your object is properly initialized, e
 
 ## Object initializers with the `init` accessor
 
-By using an `init` accessor, you can limit making sure no one changes the designed object. It helps to restrict the setting of the property value.
+By using an `init` accessor, you can make sure the object doesn't change after initializtion. It helps to restrict the setting of the property value.
 
 ```csharp
 public class Person

@@ -7,10 +7,11 @@ ai-usage: ai-assisted
 
 # Caching in .NET
 
-In this article, you'll learn about various caching mechanisms. Caching is the act of storing data in an intermediate-layer, making subsequent data retrievals faster. Conceptually, caching is a performance optimization strategy and design consideration. Caching can significantly improve app performance by making infrequently changing (or expensive to retrieve) data more readily available. This article introduces the two primary types of caching, and provides sample source code for both:
+In this article, you'll learn about various caching mechanisms. Caching is the act of storing data in an intermediate-layer, making subsequent data retrievals faster. Conceptually, caching is a performance optimization strategy and design consideration. Caching can significantly improve app performance by making infrequently changing (or expensive to retrieve) data more readily available. This article introduces three caching approaches, and provides sample source code for each:
 
-- [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory)
-- [Microsoft.Extensions.Caching.Distributed](/dotnet/api/microsoft.extensions.caching.distributed)
+- [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory): In-memory caching for single-server scenarios
+- [Microsoft.Extensions.Caching.Hybrid](/dotnet/api/microsoft.extensions.caching.hybrid): Hybrid caching that combines in-memory and distributed caching with additional features
+- [Microsoft.Extensions.Caching.Distributed](/dotnet/api/microsoft.extensions.caching.distributed): Distributed caching for multi-server scenarios
 
 > [!IMPORTANT]
 > There are two `MemoryCache` classes within .NET, one in the `System.Runtime.Caching` namespace and the other in the `Microsoft.Extensions.Caching` namespace:
@@ -243,6 +244,114 @@ In the preceding C# code:
 
 Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.
 
+## HybridCache
+
+The <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache> library combines the benefits of in-memory and distributed caching while addressing common challenges with existing caching APIs. Introduced in .NET 9, `HybridCache` provides a unified API that simplifies caching implementation and includes built-in features like stampede protection and configurable serialization.
+
+### Key features
+
+`HybridCache` offers several advantages over using `IMemoryCache` and `IDistributedCache` separately:
+
+- **Two-level caching**: Automatically manages both in-memory (L1) and distributed (L2) cache layers. Data is retrieved from in-memory cache first for speed, then from distributed cache if needed, and finally from the source.
+- **Stampede protection**: Prevents multiple concurrent requests from executing the same expensive operation. Only one request fetches the data while others wait for the result.
+- **Configurable serialization**: Supports multiple serialization formats including JSON (default), protobuf, and XML.
+- **Tag-based invalidation**: Groups related cache entries with tags for efficient batch invalidation.
+- **Simplified API**: The `GetOrCreateAsync` method handles cache misses, serialization, and storage automatically.
+
+### When to use HybridCache
+
+Consider using `HybridCache` when:
+
+- You need both local (in-memory) and distributed caching in a multi-server environment.
+- You want protection against cache stampede scenarios.
+- You prefer a simplified API over manually coordinating `IMemoryCache` and `IDistributedCache`.
+- You need tag-based cache invalidation for related entries.
+
+> [!TIP]
+> For single-server applications with simple caching needs, [in-memory caching](#in-memory-caching) might be sufficient. For multi-server applications without the need for stampede protection or tag-based invalidation, consider [distributed caching](#distributed-caching).
+
+### HybridCache setup
+
+To use `HybridCache`, install the [`Microsoft.Extensions.Caching.Hybrid`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Hybrid) NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Caching.Hybrid
+```
+
+Register the `HybridCache` service with DI by calling <xref:Microsoft.Extensions.DependencyInjection.HybridCacheServiceExtensions.AddHybridCache%2A>:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="1-8" highlight="7-8":::
+
+The preceding code registers `HybridCache` with default options. You can also configure global options:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="11-21":::
+
+### Basic usage
+
+The primary method for interacting with `HybridCache` is <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync%2A>. This method checks the cache for an entry with the specified key and, if not found, calls the factory method to retrieve the data:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="24-35":::
+
+In the preceding C# code:
+
+- The `GetOrCreateAsync` method takes a unique key and a factory method.
+- If the data isn't in the cache, the factory method is called to retrieve it.
+- The data is automatically stored in both in-memory and distributed caches.
+- Only one concurrent request executes the factory method; others wait for the result.
+
+### Entry options
+
+You can override global defaults for specific cache entries using <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions>:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="38-51":::
+
+The entry options allow you to configure:
+
+- <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.Expiration?displayProperty=nameWithType>: How long the entry should be cached in the distributed cache.
+- <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.LocalCacheExpiration?displayProperty=nameWithType>: How long the entry should be cached in local memory.
+- <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.Flags?displayProperty=nameWithType>: Additional flags for controlling cache behavior.
+
+### Tag-based invalidation
+
+Tags allow you to group related cache entries and invalidate them together. This is useful for scenarios where related data needs to be refreshed as a unit:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="54-64":::
+
+To invalidate all entries with a specific tag:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="67-70":::
+
+You can also invalidate multiple tags at once:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="73-76":::
+
+> [!NOTE]
+> Tag-based invalidation is a logical operation. It doesn't actively remove values from the cache but ensures that tagged entries are treated as cache misses. The entries eventually expire based on their configured lifetime.
+
+### Remove cache entries
+
+To remove a specific cache entry by key, use the <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.RemoveAsync%2A> method:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="79-82":::
+
+To invalidate all cached entries, use the reserved wildcard tag `"*"`:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="85-88":::
+
+### Serialization
+
+For distributed caching scenarios, `HybridCache` requires serialization. By default, it handles `string` and `byte[]` internally and uses `System.Text.Json` for other types. You can configure custom serializers for specific types or use a general-purpose serializer:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="91-100":::
+
+### Configuring distributed cache
+
+`HybridCache` uses the configured <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> implementation for its distributed (L2) cache. Even without an `IDistributedCache` configured, `HybridCache` still provides in-memory caching and stampede protection. To add Redis as a distributed cache:
+
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="103-116":::
+
+For more information about distributed cache implementations, see [Distributed caching](#distributed-caching).
+
 ## Distributed caching
 
 In some scenarios, a distributed cache is required&mdash;such is the case with multiple app servers. A distributed cache supports higher scale-out than the in-memory caching approach. Using a distributed cache offloads the cache memory to an external process, but does require extra network I/O and introduces a bit more latency (even if nominal).
@@ -327,3 +436,4 @@ To delete values in the distributed cache, call one of the remove APIs:
 - [Azure for .NET developers](../../azure/index.yml)
 - [Cache in-memory in ASP.NET Core](/aspnet/core/performance/caching/memory)
 - [Distributed caching in ASP.NET Core](/aspnet/core/performance/caching/distributed)
+- [HybridCache library in ASP.NET Core](/aspnet/core/performance/caching/hybrid)

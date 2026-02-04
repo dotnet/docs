@@ -129,6 +129,24 @@ public class CollectionExpressionExamples
                                "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
         string[] alphabet = [.. vowels, .. consonants, "y"];
         // </SpreadOperator>
+
+        // Test CollectionArgumentsExamples method
+        Console.WriteLine("\nTesting collection expressions with arguments:");
+        var examples = new CollectionExpressionExamples();
+        examples.CollectionArgumentsExamples();
+
+        // Additional test code for collection expressions with arguments
+        string[] testValues = ["apple", "banana", "cherry"];
+
+        // Test List with capacity
+        List<string> fruits = [with(capacity: testValues.Length * 3), .. testValues];
+        Console.WriteLine($"List capacity: {fruits.Capacity}, Count: {fruits.Count}");
+        Console.WriteLine($"Fruits: {string.Join(", ", fruits)}");
+
+        // Test HashSet with comparer
+        HashSet<string> uniqueWords = [with(StringComparer.OrdinalIgnoreCase), "Hello", "HELLO", "World", "world"];
+        Console.WriteLine($"HashSet count (case-insensitive): {uniqueWords.Count}");
+        Console.WriteLine($"Unique words: {string.Join(", ", uniqueWords)}");
     }
 
 

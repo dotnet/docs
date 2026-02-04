@@ -52,7 +52,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
 - **`--allow-insecure-connections`**
   
-  Allows pushing to HTTP sources (insecure). Available since .NET 9 SDK.
+  Allows pushing to HTTP sources (insecure). Available since .NET 10 SDK.
 
 - **`-d|--disable-buffering`**
 

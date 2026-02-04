@@ -20,8 +20,8 @@ Previously, when you created a `ZipArchive` using `CreateAsync`, accessing the `
 using System.IO;
 using System.IO.Compression;
 
-var stream = new FileStream("archive.zip", FileMode.Open);
-var archive = await ZipArchive.CreateAsync(stream, ZipArchiveMode.Read);
+using var stream = new FileStream("archive.zip", FileMode.Open);
+using var archive = await ZipArchive.CreateAsync(stream, ZipArchiveMode.Read);
 
 // This call performs synchronous reads on the stream.
 // Might throw if the file entries are malformed
@@ -37,11 +37,11 @@ Starting in .NET 11, the central directory of the ZIP archive is read asynchrono
 using System.IO;
 using System.IO.Compression;
 
-var stream = new FileStream("archive.zip", FileMode.Open);
+using var stream = new FileStream("archive.zip", FileMode.Open);
 
 // This call eagerly loads the ZIP archive entries.
 // Any exceptions related to malformed entries are surfaced here.
-var archive = await ZipArchive.CreateAsync(stream, ZipArchiveMode.Read);
+using var archive = await ZipArchive.CreateAsync(stream, ZipArchiveMode.Read);
 
 // Accessing Entries no longer performs stream read operations.
 var entries = archive.Entries;
@@ -53,7 +53,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was made to improve consistency and reliability when working with asynchronous streams. By eagerly loading entries during the `CreateAsync` call, the API avoids unexpected synchronous read operations later, which is especially important for streams that don't support synchronous reads (such as network streams). This aligns with the approved API design and provides a more predictable programming experience.
+This change was made to improve consistency and reliability when working with asynchronous streams. By eagerly loading entries during the `CreateAsync` call, the API avoids unexpected synchronous read operations later. Avoiding synchronous reads is especially important for streams that might end up blocking until data are available (such as network streams). This aligns with the approved API design and provides a more predictable programming experience.
 
 For more information, see [dotnet/runtime#121938](https://github.com/dotnet/runtime/pull/121938), [dotnet/runtime#121624](https://github.com/dotnet/runtime/issues/121624), and the [API design discussion](https://github.com/dotnet/runtime/issues/1541#issuecomment-2715269236).
 

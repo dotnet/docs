@@ -58,6 +58,7 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0060](mstest0060.md) | Duplicate TestMethodAttribute. | Warning | Yes |
 | [MSTEST0061](mstest0061.md) | Use OSCondition attribute instead of runtime check. | Info | Yes |
 | [MSTEST0062](mstest0062.md) | Avoid out/ref test method parameters. | Warning | Yes |
+| [MSTEST0063](mstest0063.md) | Test class should have valid constructor. | Warning | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -70,6 +71,7 @@ Ensure your test classes, methods, and fixtures follow MSTest requirements:
 - **[MSTEST0002](mstest0002.md)**: Test class layout requirements (for example, public, non-static).
 - **[MSTEST0003](mstest0003.md)**: Test method layout requirements (⚠️ escalated to Error).
 - **[MSTEST0030](mstest0030.md)**: Methods with [TestMethod] must be in a [TestClass].
+- **[MSTEST0063](mstest0063.md)**: Test class constructor validation.
 
 ### Lifecycle methods
 

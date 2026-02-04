@@ -23,7 +23,22 @@ You can find any breaking changes introduced in C# 15 in our article on [breakin
 
 ## Collection expression arguments
 
-Next commit.
+You can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+
+The following example shows how to pass a capacity argument to a `List<T>` constructor and a comparer to a `HashSet<T>`:
+
+```csharp
+string[] values = ["one", "two", "three"];
+
+// Pass capacity argument to List<T> constructor
+List<string> names = [with(capacity: values.Length * 2), .. values];
+
+// Pass comparer argument to HashSet<T> constructor
+HashSet<string> set = [with(StringComparer.OrdinalIgnoreCase), "Hello", "HELLO", "hello"];
+// set contains only one element because all strings are equal with OrdinalIgnoreCase
+```
+
+You can learn more about collection expression arguments in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md#collection-expression-arguments) or the [feature specification](~/_csharplang/proposals/collection-expression-arguments.md). For information on using collection expression arguments in collection initializers, see [Object and Collection Initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-expression-arguments).
 
 <!-- Add when available
 ## See also

@@ -3,11 +3,12 @@ using Microsoft.Extensions.Caching.Hybrid;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-// Basic registration
+// <BasicRegistration>
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHybridCache();
+// </BasicRegistration>
 
-// Configuration with options
+// <ConfigurationWithOptions>
 var builderWithOptions = Host.CreateApplicationBuilder(args);
 builderWithOptions.Services.AddHybridCache(options =>
 {
@@ -19,8 +20,9 @@ builderWithOptions.Services.AddHybridCache(options =>
         LocalCacheExpiration = TimeSpan.FromMinutes(2)
     };
 });
+// </ConfigurationWithOptions>
 
-// Basic GetOrCreateAsync usage
+// <BasicGetOrCreateAsync>
 async Task<WeatherData> GetWeatherDataAsync(HybridCache cache, string city)
 {
     return await cache.GetOrCreateAsync(
@@ -33,8 +35,9 @@ async Task<WeatherData> GetWeatherDataAsync(HybridCache cache, string city)
         }
     );
 }
+// </BasicGetOrCreateAsync>
 
-// GetOrCreateAsync with entry options
+// <GetOrCreateAsyncWithOptions>
 async Task<WeatherData> GetWeatherWithOptionsAsync(HybridCache cache, string city)
 {
     var entryOptions = new HybridCacheEntryOptions
@@ -49,8 +52,9 @@ async Task<WeatherData> GetWeatherWithOptionsAsync(HybridCache cache, string cit
         entryOptions
     );
 }
+// </GetOrCreateAsyncWithOptions>
 
-// Tag-based caching
+// <TagBasedCaching>
 async Task<CustomerData> GetCustomerAsync(HybridCache cache, int customerId)
 {
     var tags = new[] { "customer", $"customer:{customerId}" };
@@ -62,32 +66,39 @@ async Task<CustomerData> GetCustomerAsync(HybridCache cache, int customerId)
         tags
     );
 }
+// </TagBasedCaching>
 
-// Invalidate by tag
+// <InvalidateByTag>
 async Task InvalidateCustomerCacheAsync(HybridCache cache, int customerId)
 {
     await cache.RemoveByTagAsync($"customer:{customerId}");
 }
+// </InvalidateByTag>
 
-// Invalidate multiple tags
+// <InvalidateMultipleTags>
 async Task InvalidateAllCustomersAsync(HybridCache cache)
 {
     await cache.RemoveByTagAsync(new[] { "customer", "orders" });
 }
+// </InvalidateMultipleTags>
 
-// Remove specific entry
+// <RemoveEntry>
 async Task RemoveWeatherDataAsync(HybridCache cache, string city)
 {
     await cache.RemoveAsync($"weather:{city}");
 }
+// </RemoveEntry>
 
-// Invalidate all entries
+// <InvalidateAll>
 async Task InvalidateAllCacheAsync(HybridCache cache)
 {
     await cache.RemoveByTagAsync("*");
 }
+// </InvalidateAll>
 
-// Custom serialization example (conceptual - would need actual serializer implementation)
+// <CustomSerialization>
+// Custom serialization example
+// Note: This requires implementing a custom IHybridCacheSerializer<T>
 var builderWithSerializer = Host.CreateApplicationBuilder(args);
 builderWithSerializer.Services.AddHybridCache(options =>
 {
@@ -97,9 +108,12 @@ builderWithSerializer.Services.AddHybridCache(options =>
         LocalCacheExpiration = TimeSpan.FromMinutes(5)
     };
 });
-// .AddSerializer<WeatherData, CustomSerializer<WeatherData>>();
+// To add a custom serializer, uncomment and provide your implementation:
+// .AddSerializer<WeatherData, CustomWeatherDataSerializer>();
+// </CustomSerialization>
 
-// Distributed cache with Redis example (conceptual)
+// <RedisConfiguration>
+// Distributed cache with Redis
 var builderWithRedis = Host.CreateApplicationBuilder(args);
 builderWithRedis.Services.AddStackExchangeRedisCache(options =>
 {
@@ -113,6 +127,7 @@ builderWithRedis.Services.AddHybridCache(options =>
         LocalCacheExpiration = TimeSpan.FromMinutes(5)
     };
 });
+// </RedisConfiguration>
 
 // Example data classes
 file record WeatherData(string City, int Temperature, string Condition);

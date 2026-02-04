@@ -280,17 +280,17 @@ dotnet add package Microsoft.Extensions.Caching.Hybrid
 
 Register the `HybridCache` service with DI by calling <xref:Microsoft.Extensions.DependencyInjection.HybridCacheServiceExtensions.AddHybridCache%2A>:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="1-8" highlight="7-8":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicRegistration" highlight="2-3":::
 
 The preceding code registers `HybridCache` with default options. You can also configure global options:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="11-21":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="ConfigurationWithOptions":::
 
 ### Basic usage
 
 The primary method for interacting with `HybridCache` is <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync%2A>. This method checks the cache for an entry with the specified key and, if not found, calls the factory method to retrieve the data:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="24-35":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicGetOrCreateAsync":::
 
 In the preceding C# code:
 
@@ -303,7 +303,7 @@ In the preceding C# code:
 
 You can override global defaults for specific cache entries using <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions>:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="38-51":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="GetOrCreateAsyncWithOptions":::
 
 The entry options allow you to configure:
 
@@ -315,15 +315,15 @@ The entry options allow you to configure:
 
 Tags allow you to group related cache entries and invalidate them together. This is useful for scenarios where related data needs to be refreshed as a unit:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="54-64":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="TagBasedCaching":::
 
 To invalidate all entries with a specific tag:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="67-70":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="InvalidateByTag":::
 
 You can also invalidate multiple tags at once:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="73-76":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="InvalidateMultipleTags":::
 
 > [!NOTE]
 > Tag-based invalidation is a logical operation. It doesn't actively remove values from the cache but ensures that tagged entries are treated as cache misses. The entries eventually expire based on their configured lifetime.
@@ -332,23 +332,23 @@ You can also invalidate multiple tags at once:
 
 To remove a specific cache entry by key, use the <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.RemoveAsync%2A> method:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="79-82":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="RemoveEntry":::
 
 To invalidate all cached entries, use the reserved wildcard tag `"*"`:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="85-88":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="InvalidateAll":::
 
 ### Serialization
 
 For distributed caching scenarios, `HybridCache` requires serialization. By default, it handles `string` and `byte[]` internally and uses `System.Text.Json` for other types. You can configure custom serializers for specific types or use a general-purpose serializer:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="91-100":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="CustomSerialization":::
 
 ### Configuring distributed cache
 
 `HybridCache` uses the configured <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> implementation for its distributed (L2) cache. Even without an `IDistributedCache` configured, `HybridCache` still provides in-memory caching and stampede protection. To add Redis as a distributed cache:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" range="103-116":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="RedisConfiguration":::
 
 For more information about distributed cache implementations, see [Distributed caching](#distributed-caching).
 

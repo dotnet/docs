@@ -1,7 +1,7 @@
 ---
 title: "Collection expressions (Collection literals)"
 description: Collection expressions convert to many collection types. You can write literal values, expressions, or other collections to create a new collection.
-ms.date: 01/20/2026
+ms.date: 02/04/2026
 helpviewer_keywords:
   - "Collection expressions"
 ---
@@ -68,18 +68,18 @@ When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span
 
 ## Collection builder
 
-Collection expressions work with any collection type that's *well-behaved*. A well-behaved collection has the following characteristics:
+Collection expressions work with any collection type that is *well-behaved*. A well-behaved collection has the following characteristics:
 
 - The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
-- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise aren't exposed.
-- A call to some applicable `.AddRange(x)` member on a collection results in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection with `.Add`.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are side-effect free. The compiler can optimize scenarios where these types might be used as intermediary values, but it doesn't expose them otherwise.
+- A call to an applicable `.AddRange(x)` member on a collection results in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection by using `.Add`.
 
 All the collection types in the .NET runtime are well-behaved.
 
 > [!WARNING]
 > If a custom collection type isn't well-behaved, the behavior is undefined when you use that collection type with collection expressions.
 
-Your types opt in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
+Your types opt in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> attribute on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BufferDeclaration":::
 
@@ -103,13 +103,13 @@ The first parameter provides the name of the *Builder* class. The second attribu
 
 ## Collection expression arguments
 
-Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax. For more information, see the [collection expression arguments feature specification](~/_csharplang/proposals/collection-expression-arguments.md).
 
-The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element are passed to the appropriate constructor or create method based on the target type.
+The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element are passed to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
 
 ### Constructor arguments
 
-When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are passed to the constructor. The compiler uses overload resolution to select the best matching constructor:
+When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are evaluated and the results are passed to the constructor. The compiler uses overload resolution to select the best matching constructor:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithArgumentsExamples":::
 
@@ -121,7 +121,7 @@ In the preceding example:
 
 ### Collection builder arguments
 
-For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the arguments declared in the `with(...)` element are passed to the create method *before* the `ReadOnlySpan<T>` parameter. This allows create methods to accept configuration parameters:
+For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the arguments declared in the `with(...)` element are evaluated and the results are passed to the create method *before* the `ReadOnlySpan<T>` parameter. This feature allows create methods to accept configuration parameters:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClassWithComparer":::
 
@@ -133,7 +133,7 @@ The create method is selected using overload resolution based on the arguments p
 
 ### Interface target types
 
-Collection expression arguments are supported for several interface target types. The following table shows the supported interfaces and their applicable constructor signatures:
+Several interface target types support collection expression arguments. The following table shows the supported interfaces and their applicable constructor signatures:
 
 | Interface | Supported `with` elements |
 |-----------|---------------------|
@@ -149,10 +149,3 @@ The `with(...)` element has the following restrictions:
 - It must be the first element in the collection expression.
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
-
-## See also
-
-- [What's new in C# 15 - Collection expression arguments](../../whats-new/csharp-15.md#collection-expression-arguments)
-- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [Collection expression feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md)
-- [Collection expression arguments feature specification](~/_csharplang/proposals/collection-expression-arguments.md)

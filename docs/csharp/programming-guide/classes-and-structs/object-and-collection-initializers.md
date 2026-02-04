@@ -188,6 +188,14 @@ The preceding sample generates code that calls the <xref:System.Collections.Gene
 
 This initializer example calls <xref:System.Collections.Generic.Dictionary%602.Add(%600,%601)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the method calls the compiler generates. Both variants work with the `Dictionary` class. Other types might only support one or the other based on their public API.
 
+### Collection expression arguments
+
+Starting in C# 15, you can use the `with(...)` element as the first element in a [collection expression](../../language-reference/operators/collection-expressions.md) to pass arguments to the collection's constructor. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax:
+
+:::code language="csharp" source="./snippets/object-collection-initializers/CollectionExpressionArguments.cs" id="CollectionExpressionWithArguments":::
+
+For more information about collection expression arguments, including supported target types and restrictions, see [Collection expression arguments](../../language-reference/operators/collection-expressions.md#collection-expression-arguments).
+
 ## Object Initializers with collection read-only property initialization
 
 Some classes might have collection properties where the property is read-only, like the `Cats` property of `CatOwner` in the following case:

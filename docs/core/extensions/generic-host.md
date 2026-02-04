@@ -1,7 +1,7 @@
 ---
 title: .NET Generic Host
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
-ms.date: 09/11/2024
+ms.date: 02/04/2026
 ---
 
 # .NET Generic Host
@@ -19,6 +19,16 @@ A *host* is an object that encapsulates an app's resources and lifetime function
 When a host starts, it calls <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A?displayProperty=nameWithType> on each implementation of <xref:Microsoft.Extensions.Hosting.IHostedService> registered in the service container's collection of hosted services. In a worker service app, all `IHostedService` implementations that contain <xref:Microsoft.Extensions.Hosting.BackgroundService> instances have their <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=nameWithType> methods called.
 
 The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown.
+
+## Host builder options
+
+.NET provides two approaches for configuring and building a Generic Host:
+
+- **IHostApplicationBuilder** (`Host.CreateApplicationBuilder`): Introduced in .NET 6, this approach uses a linear, property-based configuration style. Services, configuration, and logging are configured by directly accessing properties on the builder object (for example, `builder.Services`, `builder.Configuration`). This approach is recommended for new projects and is the default in current .NET templates.
+
+- **IHostBuilder** (`Host.CreateDefaultBuilder`): This is the traditional callback-based approach where configuration is done through chained extension methods (for example, `ConfigureServices`, `ConfigureAppConfiguration`). While fully supported, it's considered legacy and is primarily used for compatibility with existing codebases.
+
+Both approaches provide the same core functionality and default behaviors. Choose `IHostApplicationBuilder` for new projects to align with modern .NET patterns and simpler configuration code. Use `IHostBuilder` when maintaining existing applications or when third-party libraries require the callback-based pattern.
 
 ## Set up a host
 

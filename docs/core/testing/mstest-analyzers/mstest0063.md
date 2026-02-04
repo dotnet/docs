@@ -71,7 +71,7 @@ public class MyTestClass
 
 Ensure your test class has a valid constructor. A valid constructor must be:
 
-1. Declared as `public`
+1. Declared as `public`.
 1. Either parameterless or accepts a single <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter
 
 ### Parameterless constructor

@@ -34,7 +34,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was made because running .NET Framework applications on Linux using Mono is no longer officially supported. Mono ownership was transitioned last year, and the .NET SDK should not automatically configure launch targets for unsupported scenarios.
+This change was made because running .NET Framework applications on Linux using Mono is no longer officially supported. Mono ownership has transitioned, and the .NET SDK should not automatically configure launch targets for unsupported scenarios.
 
 For more information, see [dotnet/sdk PR #52091](https://github.com/dotnet/sdk/pull/52091).
 

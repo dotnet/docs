@@ -3,6 +3,7 @@
   <PropertyGroup>
     <Description>Demonstrates how to use log sampling feature.</Description>
     <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
     <NoWarn>$(NoWarn);EXTEXP0003</NoWarn>
   </PropertyGroup>
 

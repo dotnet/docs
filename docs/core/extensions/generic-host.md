@@ -223,7 +223,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
+App configuration is accessed through the public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property. This property allows consumers to read from or make changes to the existing configuration using available extension methods.
 
 # [IHostBuilder](#tab/hostbuilder)
 
@@ -321,7 +321,7 @@ To ensure a smooth transition of clients to a new destination when working with 
 ## See also
 
 - [Dependency injection in .NET](dependency-injection/overview.md)
-- [Logging in .NET](logging.md)
+- [Logging in .NET](logging/overview.md)
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)

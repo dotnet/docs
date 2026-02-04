@@ -15,7 +15,7 @@ ms.date: 04/29/2025
 > [!NOTE]
 > Only one sampler can be used at a time. If you register multiple samplers, the last one is used.
 
-Log sampling extends [filtering capabilities](logging.md#configure-logging-with-code) by giving you more fine-grained control over which logs are emitted by your application. Instead of simply enabling or disabling logs, you can configure sampling to emit only a fraction of them.
+Log sampling extends [filtering capabilities](overview.md#configure-logging-with-code) by giving you more fine-grained control over which logs are emitted by your application. Instead of simply enabling or disabling logs, you can configure sampling to emit only a fraction of them.
 
 For example, while filtering typically uses probabilities like `0` (emit no logs) or `1` (emit all logs), sampling lets you choose any value in between—such as `0.1` to emit 10% of logs, or `0.25` to emit 25%.
 
@@ -40,13 +40,13 @@ dotnet add package Microsoft.Extensions.Telemetry
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../../tools/dependencies.md).
 
 ## Configure trace-based sampling
 
-Trace-based sampling ensures that logs are sampled consistently with the underlying <xref:System.Diagnostics.Activity>. This is useful when you want to maintain correlation between traces and logs. You can enable trace sampling (as described in the [guide](../diagnostics/distributed-tracing-concepts.md#sampling)), and then configure trace-based log sampling accordingly:
+Trace-based sampling ensures that logs are sampled consistently with the underlying <xref:System.Diagnostics.Activity>. This is useful when you want to maintain correlation between traces and logs. You can enable trace sampling (as described in the [guide](../../diagnostics/distributed-tracing-concepts.md#sampling)), and then configure trace-based log sampling accordingly:
 
-:::code language="csharp" source="snippets/logging/log-sampling/trace-based/Program.cs" range="20":::
+:::code language="csharp" source="../snippets/logging/log-sampling/trace-based/Program.cs" range="20":::
 
 When trace-based sampling is enabled, logs will only be emitted if the underlying <xref:System.Diagnostics.Activity> is sampled. The sampling decision comes from the current <xref:System.Diagnostics.Activity.Recorded> value.
 
@@ -64,7 +64,7 @@ There are several ways to configure random probabilistic sampling with its rules
 
 Create a configuration section in your _appsettings.json_, for example:
 
-:::code language="json" source="snippets/logging/log-sampling/file-config/appsettings.json" :::
+:::code language="json" source="../snippets/logging/log-sampling/file-config/appsettings.json" :::
 
 The preceding configuration:
 
@@ -78,25 +78,25 @@ The preceding configuration:
 
 To register the sampler with the configuration, consider the following code:
 
-:::code language="csharp" source="snippets/logging/log-sampling/file-config/Program.cs" range="16":::
+:::code language="csharp" source="../snippets/logging/log-sampling/file-config/Program.cs" range="16":::
 
 #### Change sampling rules in a running app
 
-Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
+Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which effectively acts as a no-op:
 
-:::code language="json" source="snippets/logging/log-sampling/appsettings.noop.json" :::
+:::code language="json" source="../snippets/logging/log-sampling/appsettings.noop.json" :::
 
 While the app is running, you can update the _appsettings.json_ with the following configuration:
 
-:::code language="json" source="snippets/logging/log-sampling/appsettings.updated.json" :::
+:::code language="json" source="../snippets/logging/log-sampling/appsettings.updated.json" :::
 
 The new rules will be applied automatically, for instance, with the preceding configuration, 1% of logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> are sampled.
 
 #### How sampling rules are applied
 
-The algorithm is very similar to [log filtering](logging.md#how-filtering-rules-are-applied), yet there are some differences.
+The algorithm is very similar to [log filtering](overview.md#how-filtering-rules-are-applied), yet there are some differences.
 
 Log sampling rules evaluation is performed on each log record, however, there are performance optimizations in place, such as caching. The following algorithm is used for each log record for a given category:
 
@@ -108,7 +108,7 @@ Log sampling rules evaluation is performed on each log record, however, there ar
 
 ### Inline code configuration
 
-:::code language="csharp" source="snippets/logging/log-sampling/code-config/Program.cs" range="16-22":::
+:::code language="csharp" source="../snippets/logging/log-sampling/code-config/Program.cs" range="16-22":::
 
 The preceding configuration:
 
@@ -119,7 +119,7 @@ The preceding configuration:
 
 For basic scenarios, you can configure a single probability value that applies to all logs at or below a specified level:
 
-:::code language="csharp" source="snippets/logging/log-sampling/Program.cs" range="14-15":::
+:::code language="csharp" source="../snippets/logging/log-sampling/Program.cs" range="14-15":::
 
 The code above registers the sampler which would sample 10% of <xref:Microsoft.Extensions.Logging.LogLevel.Warning> logs and 1% of <xref:Microsoft.Extensions.Logging.LogLevel.Information> (and below) logs.
 If the configuration did not have the rule for <xref:Microsoft.Extensions.Logging.LogLevel.Information>, it would have sampled 10% of <xref:Microsoft.Extensions.Logging.LogLevel.Warning> logs and all levels below, including <xref:Microsoft.Extensions.Logging.LogLevel.Information>.
@@ -166,6 +166,6 @@ For the built-in sampling, see [Benchmarks](https://github.com/dotnet/extensions
 
 ## See also
 
-- [Logging in .NET](logging.md)
+- [Logging in .NET](overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [OpenTelemetry Tracing Sampling](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk.md#sampling)

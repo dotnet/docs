@@ -130,4 +130,4 @@ As such, it can be iterated over and each `value` can be interacted with as need
 
 - [Options pattern in .NET](options.md)
 - [Configuration in .NET](configuration.md)
-- [Logging providers in .NET](logging-providers.md)
+- [Logging providers in .NET](logging/providers.md)

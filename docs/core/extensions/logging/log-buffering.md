@@ -28,7 +28,7 @@ There are two buffering strategies available:
 
 Log buffering works with all logging providers. If a logging provider you use does not implement the <xref:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger> interface, log buffering will call log methods directly on each buffered log record when flushing the buffer.
 
-Log buffering extends [filtering capabilities](logging.md#configure-logging-with-code) by allowing you to capture and store logs temporarily. Rather than making an immediate emit-or-discard decision, buffering lets you hold logs in memory and decide later whether to emit them.
+Log buffering extends [filtering capabilities](overview.md#configure-logging-with-code) by allowing you to capture and store logs temporarily. Rather than making an immediate emit-or-discard decision, buffering lets you hold logs in memory and decide later whether to emit them.
 
 ## Get started
 
@@ -55,7 +55,7 @@ dotnet add package Microsoft.AspNetCore.Diagnostics.Middleware
 
 ---
 
-For more information about adding packages, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information about adding packages, see [dotnet add package](../../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../../tools/dependencies.md).
 
 ## Global buffering
 
@@ -65,7 +65,7 @@ Global buffering allows you to buffer logs across your entire application. You c
 
 To enable global buffering at or below a specific log level, specify that level:
 
-:::code language="csharp" source="snippets/logging/log-buffering/global/basic/Program.cs" range="18-19":::
+:::code language="csharp" source="../snippets/logging/log-buffering/global/basic/Program.cs" range="18-19":::
 
 The preceding configuration enables buffering logs with level <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> and below.
 
@@ -73,7 +73,7 @@ The preceding configuration enables buffering logs with level <xref:Microsoft.Ex
 
 Create a configuration section in your _appsettings.json_, for example:
 
-:::code language="json" source="snippets/logging/log-buffering/global/file-based/appsettings.json" range="1-22" highlight="7-20" :::
+:::code language="json" source="../snippets/logging/log-buffering/global/file-based/appsettings.json" range="1-22" highlight="7-20" :::
 
 The preceding configuration:
 
@@ -85,11 +85,11 @@ The preceding configuration:
 
 To register the log buffering with the configuration, consider the following code:
 
-:::code language="csharp" source="snippets/logging/log-buffering/global/file-based/Program.cs" range="21-22":::
+:::code language="csharp" source="../snippets/logging/log-buffering/global/file-based/Program.cs" range="21-22":::
 
 ### Inline code configuration
 
-:::code language="csharp" source="snippets/logging/log-buffering/global/code-based/Program.cs" range="18-28" :::
+:::code language="csharp" source="../snippets/logging/log-buffering/global/code-based/Program.cs" range="18-28" :::
 
 The preceding configuration:
 
@@ -103,7 +103,7 @@ The preceding configuration:
 
 To flush the buffered logs, inject the `GlobalLogBuffer` abstract class and call the `Flush()` method:
 
-:::code language="cs" source="snippets/logging/log-buffering/global/basic/myservice.cs" range="6-22" highlight="5,12" :::
+:::code language="cs" source="../snippets/logging/log-buffering/global/basic/myservice.cs" range="6-22" highlight="5,12" :::
 
 ## Per-request buffering
 
@@ -117,13 +117,13 @@ of buffering attempt, it will be buffered to the global buffer instead. If buffe
 
 To buffer only logs at or below a specific log level:
 
-:::code language="cs" source="snippets/logging/log-buffering/per-request/basic/program.cs" range="16" :::
+:::code language="cs" source="../snippets/logging/log-buffering/per-request/basic/program.cs" range="16" :::
 
 ### File-based configuration
 
 Create a configuration section in your _appsettings.json_:
 
-:::code language="json" source="snippets/logging/log-buffering/per-request/file-based/appsettings.json" range="1-18" highlight="8-16":::
+:::code language="json" source="../snippets/logging/log-buffering/per-request/file-based/appsettings.json" range="1-18" highlight="8-16":::
 
 The preceding configuration:
 
@@ -132,11 +132,11 @@ The preceding configuration:
 
 To register the log buffering with the configuration, consider the following code:
 
-:::code language="cs" source="snippets/logging/log-buffering/per-request/file-based/program.cs" range="16" :::
+:::code language="cs" source="../snippets/logging/log-buffering/per-request/file-based/program.cs" range="16" :::
 
 ### Inline code configuration
 
-:::code language="cs" source="snippets/logging/log-buffering/per-request/code-based/program.cs" range="16-20" :::
+:::code language="cs" source="../snippets/logging/log-buffering/per-request/code-based/program.cs" range="16-20" :::
 
 The preceding configuration:
 
@@ -147,7 +147,7 @@ The preceding configuration:
 
 To flush the buffered logs for the current request, inject the `PerRequestLogBuffer` abstract class and call its `Flush()` method:
 
-:::code language="cs" source="snippets/logging/log-buffering/per-request/basic/homecontroller.cs" range="8-48" highlight="8,11,34" :::
+:::code language="cs" source="../snippets/logging/log-buffering/per-request/basic/homecontroller.cs" range="8-48" highlight="8,11,34" :::
 
 > [!NOTE]
 > Flushing the per-request buffer also flushes the global buffer.
@@ -171,15 +171,15 @@ For each log record, the algorithm checks:
 
 ### Change buffer filtering rules in a running app
 
-Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
+Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which enables log buffering for logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level and category starting with `PerRequestLogBufferingFileBased.`:
 
-:::code language="json" source="snippets/logging/log-buffering/per-request/file-based/appsettings.json" range="1-19" :::
+:::code language="json" source="../snippets/logging/log-buffering/per-request/file-based/appsettings.json" range="1-19" :::
 
 While the app is running, you can update the _appsettings.json_ with the following configuration:
 
-:::code language="json" source="snippets/logging/log-buffering/per-request/file-based/appsettingsUpdated.json" range="1-17" highlight="9-13" :::
+:::code language="json" source="../snippets/logging/log-buffering/per-request/file-based/appsettingsUpdated.json" range="1-17" highlight="9-13" :::
 
 The new rules are applied automatically. For example, with the preceding configuration, all logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level will be buffered.
 
@@ -215,5 +215,5 @@ However, be mindful of the memory consumption, especially in high-throughput app
 ## See also
 
 - [Log sampling](log-sampling.md)
-- [Logging in .NET](logging.md)
+- [Logging in .NET](overview.md)
 - [High-performance logging in .NET](high-performance-logging.md)

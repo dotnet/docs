@@ -28,7 +28,7 @@ The following table shows some examples of package-provided libraries.
 | [`Microsoft.Extensions.Hosting`][host] | [Generic Host](../core/extensions/generic-host.md) |
 | [`Microsoft.Extensions.Http`][http] | [HTTP](../core/extensions/httpclient-factory.md) |
 | [`Microsoft.Extensions.Localization`][loc] | [Localization](../core/extensions/localization.md) |
-| [`Microsoft.Extensions.Logging`][log] | [Logging](../core/extensions/logging.md) |
+| [`Microsoft.Extensions.Logging`][log] | [Logging](../core/extensions/logging/overview.md) |
 
 [ai]: https://www.nuget.org/packages/Microsoft.Extensions.AI
 [configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration

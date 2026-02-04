@@ -4,7 +4,7 @@
     <Description>Demonstrates how to use log buffering feature.</Description>
     <OutputType>Exe</OutputType>
     <NoWarn>$(NoWarn);EXTEXP0003</NoWarn>
-    <TargetFrameworks>$(LatestTargetFramework)</TargetFrameworks>
+    <TargetFrameworks>net10.0</TargetFrameworks>
     <RootNamespace>GlobalLogBufferingBasic</RootNamespace>
   </PropertyGroup>
 

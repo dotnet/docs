@@ -1,11 +1,15 @@
 ---
 title: dotnet store command
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
-ms.date: 09/29/2025
+ms.date: 02/04/2026
+ai-usage: ai-assisted
 ---
 # dotnet store
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
+
+> [!WARNING]
+> The `dotnet store` command and the runtime package store feature are **deprecated and no longer supported**. This command has known issues with .NET 6 and later versions and **is not recommended for use**. The .NET team plans to eventually stop shipping this command. For more information, see [GitHub issue #24752](https://github.com/dotnet/sdk/issues/24752).
 
 ## Name
 
@@ -26,6 +30,9 @@ dotnet store -h|--help
 ```
 
 ## Description
+
+> [!CAUTION]
+> The runtime package store feature is deprecated and no longer functional on .NET 6+. This command might fail with crossgen-related errors. Even when using the `--skip-optimization` workaround, the generated stores might not work correctly.
 
 `dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-store.md). By default, assemblies are optimized for the target runtime and framework. For more information, see the [runtime package store](../deploying/runtime-store.md) topic.
 

@@ -32,6 +32,10 @@ items:
             items:
               - name: Minimum hardware requirements updated
                 href: jit/11/minimum-hardware-requirements.md
+          - name: SDK and MSBuild
+            items:
+              - name: mono launch target not set for .NET Framework apps
+                href: sdk/11/mono-launch-target-removed.md
       - name: .NET 10
         items:
           - name: Overview

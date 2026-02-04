@@ -82,7 +82,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--config-file <CONFIG_FILE>`**
 
-  Specifies the configuration file to use for test execution. If a relative path is provided, it's converted to an absolute path based on the current directory. For more information about the configuration file settings, see [testconfig.json](../testing/microsoft-testing-platform-config#testconfigjson).
+  Specifies the configuration file to use for test execution. If a relative path is provided, it's converted to an absolute path based on the current directory. For more information about the configuration file settings, see [testconfig.json](../testing/microsoft-testing-platform-config.md#testconfigjson).
 
 - **`--results-directory <RESULTS_DIRECTORY>`**
 

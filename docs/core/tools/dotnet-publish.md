@@ -202,8 +202,10 @@ For more information, see the following resources:
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing overview](../deploying/index.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
-  **Note**, that publishing can be done on the *solution* level and on the single *project* level. When publishing from the *solution* level (by specifying optional `<SOLUTION>` parameter or leaving it default) MSBuild first compiles the output into `publish` directory **without** any symbols, which means that later compilations done by MSBuild, based on the initial compilation, will still not include any details for specified `<RUNTIME_IDENTIFIER>`.
-  <br/>This is expected behavior, and to avoid it either publish for a single project (by specifying optional `<PROJECT>` parameter) regarding your RID, or specify RIDs directly in the project config by adding [`<RuntimeIdentifiers>`](../project-sdk/msbuild-props.md#runtimeidentifiers) property. 
+  > [!NOTE]
+  > Publishing can be done on the *solution* level and on the single *project* level. When publishing from the *solution* level by specifying the optional `<SOLUTION>` parameter or leaving it default, MSBuild first compiles the output into the `publish` directory **without** any symbols. This means that later compilations done by MSBuild, based on the initial compilation, will still not include any details for specified `<RUNTIME_IDENTIFIER>`.
+  
+  > This is expected behavior. To avoid this behavior either publish for a single project by specifying the optional `<PROJECT>` parameter for your RID or specify RIDs directly in the project config by adding the [`<RuntimeIdentifiers>`](../project-sdk/msbuild-props.md#runtimeidentifiers) property.
 
 - [!INCLUDE [tl](includes/cli-tl.md)]
 

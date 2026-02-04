@@ -1,0 +1,75 @@
+### YamlMime:FAQ
+metadata:
+  title: .NET Framework 3.5 on Windows 11 FAQ
+  description: "This article answers frequently asked questions about .NET Framework 3.5 on Windows 11."
+  titleSuffix: ""
+  ms.topic: faq
+  ms.date: 02/02/2026
+  ai-usage: ai-assisted
+
+title: .NET Framework 3.5 on Windows 11 FAQ
+summary: |
+  This article answers frequently asked questions about .NET Framework 3.5 on Windows 11. For more information, see [Install .NET Framework 3.5 on Windows 11](dotnet-35-windows-11.md).
+
+  [!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
+
+sections:
+  - name: Availability and lifecycle
+    questions:
+      - question: Is .NET Framework 3.5 included in Windows 11?
+        answer: |
+          Your Windows 11 version determines availability:
+
+          - Windows 11 Insider Preview Build 27965 and later versions.
+          
+            No. Windows doesn't include .NET Framework 3.5 as a built-in or optional component.
+
+          - Windows 11 25H2 and earlier versions.
+
+            Yes. Windows includes .NET Framework 3.5 as a built-in optional component. Enable it through Windows Features on Demand.
+
+      - question: How long is the .NET Framework 3.5 standalone installer supported?
+        answer: Support ends January 9, 2029, according to the official [Microsoft .NET Framework lifecycle policy](/lifecycle/products/microsoft-net-framework).
+
+      - question: When I upgrade to a newer version of Windows, is .NET Framework 3.5 included or persisted?
+        answer: No. When you upgrade Windows to the next release, reinstall .NET Framework 3.5.
+
+  - name: Installation and deployment
+    questions:
+      - question: How do I get .NET Framework 3.5 if my application requires it?
+        answer: Use the standalone installer. For more details, including a link to the installer, see [Announcing Windows 11 Insider Preview Build 27965 (Canary Channel)](https://blogs.windows.com/windows-insider/2025/10/08/announcing-windows-11-insider-preview-build-27965-canary-channel/).
+
+      - question: Are silent installs supported for the new .NET Framework 3.5 standalone installer?
+        answer: Yes. Use `/q` and `/quiet` command-line options for unattended deployment.
+
+      - question: Can I apply .NET Framework 3.5 to an offline Windows image?
+        answer: No. Offline installation and servicing isn't supported because .NET Framework 3.5 is no longer an optional Windows Feature on Demand component. DISM and other tools that customize offline Windows deployment images can't manage .NET Framework 3.5. Use **online servicing** to modify a Windows installation. For more information, see [Modify a Windows image](/windows-hardware/manufacture/desktop/modify-an-image?view=windows-11).
+
+  - name: Migration and support
+    questions:
+      - question: What is the recommended migration path?
+        answer: |
+          Update your application from .NET Framework to .NET. If you can't move to .NET, update your application to .NET Framework 4.8.1. For more information, see [Microsoft .NET Framework lifecycle policy](/lifecycle/products/microsoft-net-framework).
+
+      - question: Where can enterprises and ISVs get additional help with compatibility?
+        answer: |
+          Use the [Microsoft FastTrack – App Assure](/microsoft-365/fasttrack/windows-365-and-app-assure#app-assure) program for personalized migration and compatibility assistance.
+
+  - name: Troubleshooting
+    questions:
+      - question: |
+          When I try to run a legacy .NET Framework 3.5 application or its installer, I see a "Program Compatibility Assistant" or a Microsoft .NET Framework runtime message box. Is this expected?
+        answer: |
+          Yes. Your application or its installer requires .NET Framework 3.5 to run. The message box links to this document.
+
+      - question: |
+          My .NET Framework 3.5 application displays an unclear message, like "runtime error" without further guidance when I don't have .NET 3.5 installed. Is this expected?
+        answer: |
+          Legacy applications might handle the missing dependency in various ways, including unclear messages. Use the mitigation guidance in this document or contact your software vendor for more information.
+
+additionalContent: |
+    ## Related content
+
+    - [Install .NET Framework 3.5 on Windows 11](dotnet-35-windows-11.md)
+    - [Developers and .NET Framework 3.5](dotnet-35-windows.md#developers-and-net-framework-35)
+

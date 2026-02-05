@@ -150,6 +150,28 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 You should see the following output:
 "Hello dotnet-svcutil!"
 
+## Updating the service reference
+
+If the web service changes, you can update the service reference to reflect those changes. The `-u` option updates the generated code based on the metadata from the service endpoint or WSDL file.
+
+To update an existing service reference:
+
+# [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
+
+```dotnetcli
+dotnet-svcutil -u .\path\to\reference\folder
+```
+
+# [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
+
+```dotnetcli
+dotnet svcutil -u .\path\to\reference\folder
+```
+
+---
+
+The reference folder should contain the `ConnectedService.json` file that was created when you initially added the service reference. The tool reads this configuration file to determine the service endpoint and regenerates the proxy code with the updated metadata.
+
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)

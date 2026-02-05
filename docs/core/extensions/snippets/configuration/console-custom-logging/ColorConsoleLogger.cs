@@ -4,7 +4,8 @@ public sealed class ColorConsoleLogger(
     string name,
     Func<ColorConsoleLoggerConfiguration> getCurrentConfig) : ILogger
 {
-    public IDisposable? BeginScope<TState>(TState state) where TState : notnull => default!;
+    public IDisposable? BeginScope<TState>(TState state)
+        where TState : notnull => default!;
 
     public bool IsEnabled(LogLevel logLevel) =>
         getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel);
@@ -16,12 +17,10 @@ public sealed class ColorConsoleLogger(
         Exception? exception,
         Func<TState, Exception?, string> formatter)
     {
-        // <SnippetIsEnabledCheck>
         if (!IsEnabled(logLevel))
         {
             return;
         }
-        // </SnippetIsEnabledCheck>
 
         ColorConsoleLoggerConfiguration config = getCurrentConfig();
         if (config.EventId == 0 || config.EventId == eventId.Id)

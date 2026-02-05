@@ -1,6 +1,5 @@
 Imports System
 Imports System.Linq
-Imports System.Threading
 
 Class RaceConditionExample
     Shared Sub Main()

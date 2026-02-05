@@ -54,10 +54,10 @@ The test framework is built on top of the test platform. It defines the set of a
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in MSTest (MSTest runner)](unit-testing-mstest-runner-intro.md)
-- [Unit testing with C#](unit-testing-csharp-with-mstest.md)
-- [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
-- [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
+- [Run tests with MSTest](unit-testing-mstest-running-tests.md)
+- [Get started with C#](unit-testing-csharp-with-mstest.md)
+- [Get started with F#](unit-testing-fsharp-with-mstest.md)
+- [Get started with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
 #### NUnit
 

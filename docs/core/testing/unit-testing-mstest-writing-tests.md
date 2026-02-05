@@ -140,7 +140,7 @@ You can test private members using reflection wrapper classes:
 
 ## See also
 
-- [MSTest samples and tutorials](unit-testing-mstest-samples.md)
+- [Get started with MSTest](unit-testing-mstest-getting-started.md)
 - [MSTest analyzers](mstest-analyzers/overview.md)
 - [Unit testing best practices](unit-testing-best-practices.md)
 - [Run selective unit tests](selective-unit-tests.md)

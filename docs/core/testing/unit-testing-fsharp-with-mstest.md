@@ -1,11 +1,11 @@
 ---
-title: Unit testing F# in .NET Core with dotnet test and MSTest
-description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
+title: Get started with MSTest and F#
+description: Learn unit test concepts for F# in .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
 ---
-# Unit testing F# libraries in .NET Core using dotnet test and MSTest
+# Get started with MSTest and F#
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-with-fsharp-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 

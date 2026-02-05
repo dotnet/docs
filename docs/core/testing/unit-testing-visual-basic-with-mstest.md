@@ -1,11 +1,11 @@
 ---
-title: Unit testing Visual Basic in .NET Core with dotnet test and MSTest
-description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
+title: Get started with MSTest and Visual Basic
+description: Learn unit test concepts in .NET through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
 ---
-# Unit testing Visual Basic .NET Core libraries using dotnet test and MSTest
+# Get started with MSTest and Visual Basic
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-vb-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 

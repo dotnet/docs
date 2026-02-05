@@ -40,35 +40,20 @@ items:
         href: ../../core/testing/unit-testing-best-practices.md
       - name: Test frameworks
         items:
-          - name: xUnit
-            items:
-              - name: C# unit testing
-                href: ../../core/testing/unit-testing-csharp-with-xunit.md
-              - name: F# unit testing
-                href: ../../core/testing/unit-testing-fsharp-with-xunit.md
-              - name: VB unit testing
-                href: ../../core/testing/unit-testing-visual-basic-with-xunit.md
-              - name: Microsoft.Testing.Platform support in xUnit.net v3
-                href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
-              - name: Organize a project and test with xUnit
-                href: ../../core/tutorials/testing-with-cli.md
-                displayName: tutorials, cli
-          - name: NUnit
-            items:
-              - name: C# unit testing
-                href: ../../core/testing/unit-testing-csharp-with-nunit.md
-              - name: F# unit testing
-                href: ../../core/testing/unit-testing-fsharp-with-nunit.md
-              - name: VB unit testing
-                href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
-              - name: Microsoft.Testing.Platform support (NUnit runner)
-                href: ../../core/testing/unit-testing-nunit-runner-intro.md
           - name: MSTest
             items:
               - name: Overview
                 href: ../../core/testing/unit-testing-mstest-intro.md
               - name: Getting started
-                href: ../../core/testing/unit-testing-mstest-getting-started.md
+                items:
+                  - name: Overview
+                    href: ../../core/testing/unit-testing-mstest-getting-started.md
+                  - name: Getting started with C#
+                    href: ../../core/testing/unit-testing-csharp-with-mstest.md
+                  - name: Getting started with F#
+                    href: ../../core/testing/unit-testing-fsharp-with-mstest.md
+                  - name: Getting started with VB
+                    href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
               - name: Writing tests
                 items:
                   - name: Overview
@@ -93,18 +78,6 @@ items:
                     href: ../../core/testing/unit-testing-mstest-configure.md
                   - name: MSTest SDK
                     href: ../../core/testing/unit-testing-mstest-sdk.md
-                  - name: Microsoft.Testing.Platform support (MSTest runner)
-                    href: ../../core/testing/unit-testing-mstest-runner-intro.md
-              - name: Tutorials and samples
-                items:
-                  - name: Overview
-                    href: ../../core/testing/unit-testing-mstest-samples.md
-                  - name: C# example
-                    href: ../../core/testing/unit-testing-csharp-with-mstest.md
-                  - name: F# example
-                    href: ../../core/testing/unit-testing-fsharp-with-mstest.md
-                  - name: VB example
-                    href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
               - name: Code analysis
                 items:
                   - name: Overview
@@ -257,6 +230,29 @@ items:
                     href: ../../core/testing/unit-testing-mstest-migration-v3-v4.md
                   - name: Migrate from Legacy Test runner to MSTest
                     href: ../../core/testing/unit-testing-mstest-migration-from-tmi.md
+          - name: NUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-csharp-with-nunit.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-nunit.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
+              - name: Microsoft.Testing.Platform support (NUnit runner)
+                href: ../../core/testing/unit-testing-nunit-runner-intro.md
+          - name: xUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-csharp-with-xunit.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-xunit.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-xunit.md
+              - name: Microsoft.Testing.Platform support in xUnit.net v3
+                href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
+              - name: Organize a project and test with xUnit
+                href: ../../core/tutorials/testing-with-cli.md
+                displayName: tutorials, cli
       - name: Test platforms
         items:
           - name: Microsoft.Testing.Platform

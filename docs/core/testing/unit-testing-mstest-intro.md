@@ -115,10 +115,10 @@ public class MixedTests
 
 MSTest supports two test execution platforms:
 
-- **[Microsoft.Testing.Platform (MTP)](unit-testing-mstest-runner-intro.md)**: The modern, recommended test platform with improved performance and extensibility
+- **[Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md)**: The modern, recommended test platform with improved performance and extensibility
 - **VSTest**: The legacy platform, still supported for backward compatibility
 
-For new projects, we recommend using Microsoft.Testing.Platform with [MSTest.Sdk](unit-testing-mstest-sdk.md).
+For new projects, we recommend using [Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md) with [MSTest.Sdk](unit-testing-mstest-sdk.md).
 
 ## MSTest support policy
 

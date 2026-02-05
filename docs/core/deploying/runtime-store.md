@@ -136,7 +136,7 @@ An alternative to specifying target manifests with the [`dotnet publish`](../too
 
 Specify the target manifests in the project file only when the target environment for the app is well-known, such as for .NET Core projects. This isn't the case for open-source projects. The users of an open-source project typically deploy it to different production environments. These production environments generally have different sets of packages pre-installed. You can't make assumptions about the target manifest in such environments, so you should use the `--manifest` option of [`dotnet publish`](../tools/dotnet-publish.md).
 
-## ASP.NET Core implicit store (.NET Core 2.0 only - Legacy)
+## ASP.NET Core implicit store (.NET Core 2.0, legacy)
 
 > [!NOTE]
 > This section describes legacy functionality that only applied to .NET Core 2.0. This feature is no longer relevant for modern .NET applications.

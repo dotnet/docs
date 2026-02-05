@@ -113,7 +113,7 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0060](mstest0060.md) - Duplicate TestMethodAttribute
 - [MSTEST0063](mstest0063.md) - Test class should have valid constructor
 
-Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md), [Attributes](../unit-testing-mstest-writing-tests-attributes.md)
+Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
 ### Async/await patterns
 
@@ -141,7 +141,7 @@ Rules for working with data-driven test scenarios:
 - [MSTEST0052](mstest0052.md) - Avoid explicit DynamicDataSourceType
 - [MSTEST0062](mstest0062.md) - Avoid out/ref test method parameters
 
-Related documentation: [Attributes used for data-driven testing](../unit-testing-mstest-writing-tests-attributes.md#attributes-used-for-data-driven-testing)
+Related documentation: [Data-driven testing](../unit-testing-mstest-writing-tests-data-driven.md)
 
 ### Lifecycle & initialization
 

@@ -437,6 +437,6 @@ For more information on test filtering, see [Run selective unit tests](selective
 ## See also
 
 - [Run selective unit tests](selective-unit-tests.md)
-- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [Test execution and control](unit-testing-mstest-writing-tests-execution-control.md)
 - [MSTEST0030: Test category naming](mstest-analyzers/mstest0030.md)

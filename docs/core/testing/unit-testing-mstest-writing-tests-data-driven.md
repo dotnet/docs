@@ -468,7 +468,7 @@ public class UnfoldingExample
 ## See also
 
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
-- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)
 - [MSTEST0014: DataRow argument type mismatch](mstest-analyzers/mstest0014.md)
 - [MSTEST0018: DynamicData source issues](mstest-analyzers/mstest0018.md)

@@ -10,9 +10,12 @@ ms.date: 07/15/2025
 
 In this article, you learn about the APIs and conventions used by MSTest to help you write and shape your tests.
 
+> [!NOTE]
+> Attribute names ending with "Attribute" can use the short form. `TestClass` and `TestClassAttribute` are equivalent. Attributes with parameterless constructors can omit parentheses.
+
 ## Test structure
 
-Every MSTest test class and method uses attributes to identify tests:
+Every MSTest test class must have the `TestClass` attribute, and every test method must have the `TestMethod` attribute:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -35,34 +38,85 @@ public class CalculatorTests
 }
 ```
 
-For complete attribute documentation, see [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md).
+### `TestClassAttribute`
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> marks a class that contains tests and, optionally, initialize or cleanup methods. You can extend this attribute to customize test class behavior.
+
+### `TestMethodAttribute`
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> marks a method as a test to run. Test methods must be:
+
+- Instance methods (not static)
+- Public
+- Return `void`, `Task`, or `ValueTask` (MSTest v3.3+)
+- Parameterless, unless using [data-driven attributes](unit-testing-mstest-writing-tests-data-driven.md)
+
+```csharp
+[TestClass]
+public class TestMethodExamples
+{
+    [TestMethod]
+    public void SynchronousTest()
+    {
+        Assert.IsTrue(true);
+    }
+
+    [TestMethod]
+    public async Task AsynchronousTest()
+    {
+        await Task.Delay(100);
+        Assert.IsTrue(true);
+    }
+}
+```
+
+> [!WARNING]
+> Don't use `async void` for test methods. Use `async Task` or `async ValueTask` instead.
+
+### `DiscoverInternalsAttribute`
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DiscoverInternalsAttribute> assembly attribute enables MSTest to discover `internal` test classes and methods. By default, only `public` tests are discovered.
+
+```csharp
+[assembly: DiscoverInternals]
+
+[TestClass]
+internal class InternalTests
+{
+    [TestMethod]
+    internal void InternalTest()
+    {
+        Assert.IsTrue(true);
+    }
+}
+```
 
 ## Core concepts
 
 MSTest documentation is organized by topic:
 
-| Topic | Description | Guide |
-|-------|-------------|-------|
-| **Test attributes** | Core attributes for test identification | [Attributes](unit-testing-mstest-writing-tests-attributes.md) |
-| **Assertions** | Verify expected results with Assert classes | [Assertions](unit-testing-mstest-writing-tests-assertions.md) |
-| **Data-driven testing** | Run tests with multiple inputs | [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) |
-| **Test lifecycle** | Setup and cleanup at assembly, class, and test levels | [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md) |
-| **Execution control** | Threading, parallelization, timeouts, and retries | [Execution control](unit-testing-mstest-writing-tests-execution-control.md) |
-| **Test organization** | Categories, priorities, and metadata | [Test organization](unit-testing-mstest-writing-tests-organization.md) |
-| **TestContext** | Access test runtime information | [TestContext](unit-testing-mstest-writing-tests-testcontext.md) |
+| Topic | Description |
+|-------|-------------|
+| [Assertions](unit-testing-mstest-writing-tests-assertions.md) | Verify expected results with Assert classes |
+| [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) | Run tests with multiple inputs (`DataRow`, `DynamicData`) |
+| [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md) | Setup and cleanup at assembly, class, and test levels |
+| [Execution control](unit-testing-mstest-writing-tests-execution-control.md) | Threading, parallelization, timeouts, retries, and conditional execution |
+| [Test organization](unit-testing-mstest-writing-tests-organization.md) | Categories, priorities, owners, and metadata |
+| [TestContext](unit-testing-mstest-writing-tests-testcontext.md) | Access test runtime information |
 
-## Attributes
+## Attribute quick reference
 
-MSTest uses custom attributes to identify and customize tests. Attribute elements whose names end with "Attribute" can use the short form (`TestClass` or `TestClassAttribute`). Attributes with parameterless constructors can omit parentheses.
-
-MSTest attributes are organized by purpose:
-
-- **[Test identification](unit-testing-mstest-writing-tests-attributes.md#test-identification-attributes)**: `TestClass`, `TestMethod`, `DiscoverInternals`
-- **[Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)**: `DataRow`, `DynamicData`, `TestDataRow`
-- **[Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md)**: `AssemblyInitialize`, `ClassInitialize`, `TestInitialize`, and cleanup counterparts
-- **[Execution control](unit-testing-mstest-writing-tests-execution-control.md)**: Threading (`STATestClass`, `UITestMethod`), parallelization (`Parallelize`), timeouts, retries, conditional execution
-- **[Test organization](unit-testing-mstest-writing-tests-organization.md)**: `TestCategory`, `Priority`, `Owner`, `WorkItem`
-- **[Utilities](unit-testing-mstest-writing-tests-attributes.md#utility-attributes)**: `DeploymentItem`, `ExpectedException`
+| Category | Attributes | See |
+|----------|-----------|------|
+| Test identification | `TestClass`, `TestMethod`, `DiscoverInternals` | This page |
+| Data-driven | `DataRow`, `DynamicData`, `TestDataRow` | [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) |
+| Lifecycle | `AssemblyInitialize`, `ClassInitialize`, `TestInitialize`, and cleanup counterparts | [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md) |
+| Threading | `STATestClass`, `STATestMethod`, `UITestMethod` | [Execution control](unit-testing-mstest-writing-tests-execution-control.md) |
+| Parallelization | `Parallelize`, `DoNotParallelize` | [Execution control](unit-testing-mstest-writing-tests-execution-control.md) |
+| Timeout/Retry | `Timeout`, `Retry` | [Execution control](unit-testing-mstest-writing-tests-execution-control.md) |
+| Conditional | `Ignore`, `OSCondition`, `CICondition` | [Execution control](unit-testing-mstest-writing-tests-execution-control.md) |
+| Metadata | `TestCategory`, `TestProperty`, `Owner`, `Priority` | [Test organization](unit-testing-mstest-writing-tests-organization.md) |
+| Work tracking | `WorkItem`, `GitHubWorkItem` | [Test organization](unit-testing-mstest-writing-tests-organization.md) |
 
 ## Assertions
 
@@ -73,12 +127,6 @@ MSTest assertions are divided into:
 - **[`Assert` class](unit-testing-mstest-writing-tests-assertions.md#the-assert-class)**: General-purpose assertions (`AreEqual`, `IsTrue`, `ThrowsException`)
 - **[`StringAssert` class](unit-testing-mstest-writing-tests-assertions.md#the-stringassert-class)**: String-specific assertions (`Contains`, `Matches`, `StartsWith`)
 - **[`CollectionAssert` class](unit-testing-mstest-writing-tests-assertions.md#the-collectionassert-class)**: Collection assertions (`Contains`, `AllItemsAreUnique`, `AreEquivalent`)
-
-## The `TestContext` class
-
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment.
-
-For more information, see [TestContext class](unit-testing-mstest-writing-tests-testcontext.md).
 
 ## Testing private members
 

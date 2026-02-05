@@ -520,7 +520,7 @@ public class TrackedIgnoreExamples
 
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md)
-- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [MSTEST0017: Timeout attribute configuration](mstest-analyzers/mstest0017.md)
 - [MSTEST0019: Parallelize attribute usage](mstest-analyzers/mstest0019.md)
 - [MSTEST0024: Ignore message validation](mstest-analyzers/mstest0024.md)

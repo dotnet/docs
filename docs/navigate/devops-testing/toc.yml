@@ -67,38 +67,34 @@ items:
             items:
               - name: Overview
                 href: ../../core/testing/unit-testing-mstest-intro.md
-              - name: Microsoft.Testing.Platform support (MSTest runner)
-                href: ../../core/testing/unit-testing-mstest-runner-intro.md
               - name: Getting started
-                items:
-                  - name: Overview
-                    href: ../../core/testing/unit-testing-mstest-getting-started.md
-                  - name: MSTest SDK
-                    href: ../../core/testing/unit-testing-mstest-sdk.md
+                href: ../../core/testing/unit-testing-mstest-getting-started.md
               - name: Writing tests
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-writing-tests.md
-                  - name: Test attributes
-                    href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
                   - name: Assertions
                     href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
                   - name: TestContext
                     href: ../../core/testing/unit-testing-mstest-writing-tests-testcontext.md
-              - name: Data-driven testing
-                href: ../../core/testing/unit-testing-mstest-writing-tests-data-driven.md
-              - name: Test lifecycle
-                href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
-              - name: Test execution and control
-                href: ../../core/testing/unit-testing-mstest-writing-tests-execution-control.md
-              - name: Test organization
-                href: ../../core/testing/unit-testing-mstest-writing-tests-organization.md
+                  - name: Data-driven testing
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-data-driven.md
+                  - name: Test lifecycle
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
+                  - name: Test execution and control
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-execution-control.md
+                  - name: Test organization
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-organization.md
               - name: Running tests
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-running-tests.md
                   - name: Configure MSTest
                     href: ../../core/testing/unit-testing-mstest-configure.md
+                  - name: MSTest SDK
+                    href: ../../core/testing/unit-testing-mstest-sdk.md
+                  - name: Microsoft.Testing.Platform support (MSTest runner)
+                    href: ../../core/testing/unit-testing-mstest-runner-intro.md
               - name: Tutorials and samples
                 items:
                   - name: Overview

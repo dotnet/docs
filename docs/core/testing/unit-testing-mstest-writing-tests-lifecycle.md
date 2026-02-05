@@ -367,6 +367,6 @@ public class TestLevelCleanupExample : IAsyncDisposable
 ## See also
 
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
-- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [Test execution and control](unit-testing-mstest-writing-tests-execution-control.md)
 - [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)

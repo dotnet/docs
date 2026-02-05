@@ -154,7 +154,7 @@ Available APIs are:
 ## See also
 
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
-- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)
 - [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)
 - [MSTest analyzers](mstest-analyzers/overview.md)

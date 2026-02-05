@@ -1,18 +1,72 @@
 ---
 title: MSTest assertions
-description: Learn about MSTest assertions.
+description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 07/15/2025
 ---
 
 # MSTest assertions
 
-Use the `Assert` classes of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace to verify specific functionality. A test method exercises the code of a method in your application's code, but it reports the correctness of the code's behavior only if you include `Assert` statements.
+Use the `Assert` classes of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace to verify specific functionality. A test method exercises the code in your application but reports correctness only when you include `Assert` statements.
+
+## Overview
+
+MSTest provides three assertion classes:
+
+| Class | Purpose |
+|-------|---------|
+| `Assert` | General-purpose assertions for values, types, and exceptions |
+| `StringAssert` | String-specific assertions for patterns, substrings, and comparisons |
+| `CollectionAssert` | Collection assertions for comparing and validating collections |
+
+> [!TIP]
+> When functionality exists in both `Assert` and `StringAssert`/`CollectionAssert`, prefer the `Assert` class. The `Assert` class provides better discoverability and is the recommended choice for new code. `StringAssert` and `CollectionAssert` are maintained for backward compatibility.
+
+All assertion methods accept an optional message parameter that displays when the assertion fails, helping you identify the cause:
+
+```csharp
+Assert.AreEqual(expected, actual, "Values should match after processing");
+```
 
 ## The `Assert` class
 
-Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to verify that the code under test behaves as expected. Available APIs are:
+Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to verify that the code under test behaves as expected.
+
+### Common assertion methods
+
+```csharp
+[TestMethod]
+public void AssertExamples()
+{
+    // Equality
+    Assert.AreEqual(5, calculator.Add(2, 3));
+    Assert.AreNotEqual(0, result);
+
+    // Reference equality
+    Assert.AreSame(expected, actual);
+    Assert.AreNotSame(obj1, obj2);
+
+    // Boolean conditions
+    Assert.IsTrue(result > 0);
+    Assert.IsFalse(string.IsNullOrEmpty(name));
+
+    // Null checks
+    Assert.IsNull(optionalValue);
+    Assert.IsNotNull(requiredValue);
+
+    // Type checks
+    Assert.IsInstanceOfType<IDisposable>(obj);
+    Assert.IsNotInstanceOfType<string>(obj);
+
+    // Exception testing (MSTest v3.8+)
+    Assert.ThrowsExactly<ArgumentNullException>(() => service.Process(null!));
+    await Assert.ThrowsExactlyAsync<InvalidOperationException>(
+        async () => await service.ProcessAsync());
+}
+```
+
+### Available APIs
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*?displayProperty=nameWithType>
@@ -51,7 +105,12 @@ Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to veri
 
 ## The `StringAssert` class
 
-Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> class to compare and examine strings. Available APIs are:
+Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> class to compare and examine strings.
+
+> [!NOTE]
+> All `StringAssert` methods have equivalents in the `Assert` class. Prefer the `Assert` methods for better discoverability. The `StringAssert` class is maintained for backward compatibility.
+
+Available APIs are:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.DoesNotMatch*?displayProperty=nameWithType>
@@ -61,7 +120,12 @@ Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> class t
 
 ## The `CollectionAssert` class
 
-Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> class to compare collections of objects, or to verify the state of a collection. Available APIs are:
+Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> class to compare collections of objects, or to verify the state of a collection.
+
+> [!NOTE]
+> When an equivalent method exists in the `Assert` class (such as `Assert.Contains`, `Assert.DoesNotContain`), prefer using `Assert` for better discoverability. The `CollectionAssert` class is maintained primarily for backward compatibility.
+
+Available APIs are:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.AllItemsAreInstancesOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.AllItemsAreNotNull*?displayProperty=nameWithType>
@@ -74,3 +138,23 @@ Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> cla
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.DoesNotContain*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.IsNotSubsetOf*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.IsSubsetOf*?displayProperty=nameWithType>
+
+## Best practices
+
+1. **Use specific assertions**: Prefer `AreEqual` over `IsTrue(a == b)` for better failure messages.
+
+1. **Include descriptive messages**: Help identify failures quickly with clear assertion messages.
+
+1. **Test one thing at a time**: Each test method should verify a single behavior.
+
+1. **Use `Throws`/`ThrowsExactly` for exceptions**: In MSTest v3.8+, prefer `Assert.Throws`, `Assert.ThrowsExactly`, and their async counterparts (`ThrowsAsync`, `ThrowsExactlyAsync`) over the `ExpectedException` attribute.
+
+1. **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: When functionality exists in both classes, use the `Assert` class for better discoverability and consistency.
+
+## See also
+
+- [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
+- [MSTest attributes](unit-testing-mstest-writing-tests-attributes.md)
+- [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)
+- [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)
+- [MSTest analyzers](mstest-analyzers/overview.md)

@@ -79,28 +79,36 @@ items:
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-writing-tests.md
-                  - name: Examples
-                    items:
-                    - name: C# example
-                      href: ../../core/testing/unit-testing-csharp-with-mstest.md
-                    - name: F# example
-                      href: ../../core/testing/unit-testing-fsharp-with-mstest.md
-                    - name: VB example
-                      href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
-                  - name: Lifecycle
-                    href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
-                  - name: Attributes
+                  - name: Test attributes
                     href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
                   - name: Assertions
                     href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
                   - name: TestContext
                     href: ../../core/testing/unit-testing-mstest-writing-tests-testcontext.md
+              - name: Data-driven testing
+                href: ../../core/testing/unit-testing-mstest-writing-tests-data-driven.md
+              - name: Test lifecycle
+                href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
+              - name: Test execution and control
+                href: ../../core/testing/unit-testing-mstest-writing-tests-execution-control.md
+              - name: Test organization
+                href: ../../core/testing/unit-testing-mstest-writing-tests-organization.md
               - name: Running tests
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-running-tests.md
                   - name: Configure MSTest
                     href: ../../core/testing/unit-testing-mstest-configure.md
+              - name: Tutorials and samples
+                items:
+                  - name: Overview
+                    href: ../../core/testing/unit-testing-mstest-samples.md
+                  - name: C# example
+                    href: ../../core/testing/unit-testing-csharp-with-mstest.md
+                  - name: F# example
+                    href: ../../core/testing/unit-testing-fsharp-with-mstest.md
+                  - name: VB example
+                    href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
               - name: Code analysis
                 items:
                   - name: Overview

@@ -1,13 +1,11 @@
-﻿// <snippet5>
-using System;
-
-namespace ConsoleApplication1
+﻿namespace ConsoleApplication1
 {
+    // <snippet5>
     class ProgramOne
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Counter c = new Counter(new Random().Next(10));
+            Counter c = new(new Random().Next(10));
             c.ThresholdReached += c_ThresholdReached;
 
             Console.WriteLine("press 'a' key to increase total");
@@ -18,33 +16,28 @@ namespace ConsoleApplication1
             }
         }
 
-        static void c_ThresholdReached(object sender, EventArgs e)
+        static void c_ThresholdReached(object? sender, EventArgs e)
         {
             Console.WriteLine("The threshold was reached.");
             Environment.Exit(0);
         }
     }
 
-    class Counter
+    class Counter(int passedThreshold)
     {
-        private int threshold;
-        private int total;
-
-        public Counter(int passedThreshold)
-        {
-            threshold = passedThreshold;
-        }
+        private readonly int _threshold = passedThreshold;
+        private int _total;
 
         public void Add(int x)
         {
-            total += x;
-            if (total >= threshold)
+            _total += x;
+            if (_total >= _threshold)
             {
                 ThresholdReached?.Invoke(this, EventArgs.Empty);
             }
         }
 
-        public event EventHandler ThresholdReached;
+        public event EventHandler? ThresholdReached;
     }
+    // </snippet5>
 }
-// </snippet5>

@@ -1,8 +1,8 @@
-'<snippet5>
+﻿'<snippet5>
 Module Module1
 
     Sub Main()
-        Dim c As Counter = New Counter(New Random().Next(10))
+        Dim c As New Counter(New Random().Next(10))
         AddHandler c.ThresholdReached, AddressOf c_ThresholdReached
 
         Console.WriteLine("press 'a' key to increase total")
@@ -19,17 +19,17 @@ Module Module1
 End Module
 
 Class Counter
-    Private threshold As Integer
-    Private total As Integer
+    Private ReadOnly _threshold As Integer
+    Private _total As Integer
 
     Public Sub New(passedThreshold As Integer)
-        threshold = passedThreshold
+        _threshold = passedThreshold
     End Sub
 
     Public Sub Add(x As Integer)
-        total = total + x
-        If (total >= threshold) Then
-            ThresholdReached?.Invoke(this. EventArgs.Empty)
+        _total += x
+        If (_total >= _threshold) Then
+            RaiseEvent ThresholdReached(Me, EventArgs.Empty)
         End If
     End Sub
 

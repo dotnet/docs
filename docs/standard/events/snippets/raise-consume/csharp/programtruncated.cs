@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApplication2
+﻿namespace ConsoleApplication2
 {
     // <snippet2>
     class ProgramTwo
@@ -10,10 +8,10 @@ namespace ConsoleApplication2
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
 
-            // provide remaining implementation for the class
+            // Provide remaining implementation for the class...
         }
 
-        static void c_ThresholdReached(object sender, EventArgs e)
+        static void c_ThresholdReached(object? sender, EventArgs e)
         {
             Console.WriteLine("The threshold was reached.");
         }
@@ -23,14 +21,14 @@ namespace ConsoleApplication2
     // <snippet1>
     class Counter
     {
-        public event EventHandler ThresholdReached;
+        public event EventHandler? ThresholdReached;
 
         protected virtual void OnThresholdReached(EventArgs e)
         {
             ThresholdReached?.Invoke(this, e);
         }
 
-        // provide remaining implementation for the class
+        // Provide remaining implementation for the class...
     }
     // </snippet1>
 
@@ -43,6 +41,8 @@ namespace ConsoleApplication2
     // </snippet3>
 
     //<snippet4>
-    public delegate void ThresholdReachedEventHandler(object sender, ThresholdReachedEventArgs e);
+    public delegate void ThresholdReachedEventHandler(
+        object sender,
+        ThresholdReachedEventArgs e);
     //</snippet4>
 }

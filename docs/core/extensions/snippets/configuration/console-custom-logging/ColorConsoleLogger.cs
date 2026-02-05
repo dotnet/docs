@@ -16,10 +16,12 @@ public sealed class ColorConsoleLogger(
         Exception? exception,
         Func<TState, Exception?, string> formatter)
     {
+        // <SnippetIsEnabledCheck>
         if (!IsEnabled(logLevel))
         {
             return;
         }
+        // </SnippetIsEnabledCheck>
 
         ColorConsoleLoggerConfiguration config = getCurrentConfig();
         if (config.EventId == 0 || config.EventId == eventId.Id)

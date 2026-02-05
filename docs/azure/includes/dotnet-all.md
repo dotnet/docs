@@ -412,7 +412,7 @@
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/1.0.0) |  |  |
-| IoT Operations Protocol | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.0.0) |  |  |
+| IoT Operations Protocol | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.0.1) |  |  |
 | IoT Operations Services | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.0.0)<br>NuGet [1.2.0-rc2](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.0-rc2) |  |  |
 | Item Templates NetCore | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5337) |  |  |
 | Item Templates NetFx | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5337) |  |  |

@@ -83,7 +83,7 @@ The SOS debugging extension (SOS.dll) helps you debug managed programs in Visual
 |**ThreadPool**|Displays information about the managed thread pool, including the number of work requests in the queue, the number of completion port threads, and the number of timers.|
 |**Token2EE** \<*module name*> \<*token*>|Turns the specified metadata token in the specified module into a `MethodTable` structure or `MethodDesc` structure.<br /><br /> You can pass `*` for the module name parameter to find what that token maps to in every loaded managed module. You can also pass the debugger's name for a module, such as `mscorlib` or `image00400000`.|
 |**Threads** [**-live**] [**-special**]|Displays all managed threads in the process.<br /><br /> The **Threads** command displays the debugger shorthand ID, the CLR thread ID, and the operating system thread ID.  Additionally, the **Threads** command displays a Domain column that indicates the application domain in which a thread is executing, an APT column that displays the COM apartment mode, and an Exception column that displays the last exception thrown in the thread.<br /><br /> The **-live** option displays threads associated with a live thread.<br /><br /> The **-special** option displays all special threads created by the CLR. Special threads include garbage collection threads (in concurrent and server garbage collection), debugger helper threads, finalizer threads, <xref:System.AppDomain> unload threads, and thread pool timer threads.|
-|**ThreadState \<** *State value field* **>**|Displays the state of the thread. The `value` parameter is the value of the `State` field in the **Threads** report output. See the [ThreadState example](#threadstate-example) for usage.|
+|**ThreadState \<** *State value field* **>**|Displays the state of the thread. The `value` parameter is the value of the `State` field in the **Threads** report output.<br /><br /> Example:<br /><br /><pre>0:003> !Threads<br />ThreadCount:      2<br />UnstartedThread:  0<br />BackgroundThread: 1<br />PendingThread:    0<br />DeadThread:       0<br />Hosted Runtime:   no<br />                                          PreEmptive   GC Alloc           Lock<br />   ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception<br />0    1  250 0019b068      a020 Disabled 02349668:02349fe8 0015def0     0 MTA<br />2    2  944 001a6020      b220 Enabled  00000000:00000000 0015def0     0 MTA (Finalizer)<br /><br />0:003> !ThreadState b220<br />    Legal to Join<br />    Background<br />    CLR Owns<br />    CoInitialized<br />    In Multi Threaded Apartment</pre>|
 |**TraverseHeap** [**-xml**] \<*filename*>|Writes heap information to the specified file in a format understood by the CLR profiler. The **-xml** option causes the **TraverseHeap** command to format the file as XML.|
 |**U** [**-gcinfo**] [**-ehinfo**] [**-n**] \<*MethodDesc address*> &#124; \<*Code address*>|Displays an annotated disassembly of a managed method specified either by a `MethodDesc` structure pointer for the method or by a code address within the method body. The **U** command displays the entire method from start to finish, with annotations that convert metadata tokens to names.<br /><br /> The **-gcinfo** option causes the **U** command to display the `GCInfo` structure for the method.<br /><br /> The **-ehinfo** option displays exception information for the method. You can also obtain this information with the **EHInfo** command.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS looks up the symbols for every managed frame and, if successful, displays the corresponding source file name and line number. You can specify the **-n** option to disable this behavior.|
 |**VerifyHeap**|Checks the garbage collector heap for signs of corruption and displays any errors found.<br /><br /> Heap corruptions can be caused by platform invoke calls that are constructed incorrectly.|
@@ -199,37 +199,6 @@ The following command displays information about the metadata token at the addre
 
 ```console
 !token2ee unittest.exe 02000003
-```
-
-### ThreadState example
-
-The following example demonstrates using the **ThreadState** command to decode thread state values from the **Threads** command output.
-
-First, display all threads to get state values:
-
-```console
-0:003> !Threads
-ThreadCount:      2
-UnstartedThread:  0
-BackgroundThread: 1
-PendingThread:    0
-DeadThread:       0
-Hosted Runtime:   no
-                                           PreEmptive   GC Alloc           Lock
-       ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception
-    0    1  250 0019b068      a020 Disabled 02349668:02349fe8 0015def0     0 MTA
-    2    2  944 001a6020      b220 Enabled  00000000:00000000 0015def0     0 MTA (Finalizer)
-```
-
-Then decode a specific state value (for example, `b220`):
-
-```console
-0:003> !ThreadState b220
-    Legal to Join
-    Background
-    CLR Owns
-    CoInitialized
-    In Multi Threaded Apartment
 ```
 
 ## See also

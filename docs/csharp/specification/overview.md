@@ -5,7 +5,7 @@ ms.date: 02/05/2026
 ---
 # C# standard specification
 
-The [C# language specification](~/_csharpstandard/standard/README.md) is the authoritative source for the C# language. The [ECMA C# standard committee (TC49-TG2)](https://www.ecma-international.org/task-groups/tc49-tg2/) produces the specification. The standard document versions align with the C# language versions. The C# 8 standard corresponds to C# 8.0.
+The [C# language specification](~/_csharpstandard/standard/README.md) is the definitive source for the C# language. The [ECMA C# standard committee (TC49-TG2)](https://www.ecma-international.org/task-groups/tc49-tg2/) produces the specification. The standard document versions align with the C# language versions. The C# 8 standard corresponds to C# 8.0.
 
 The committee is currently working on version 8 of the standard. The draft published here is a feature complete draft of C# 8. The committee uses [Microsoft specifications](https://github.com/dotnet/csharplang/tree/main/proposals) and [language design meeting (LDM) notes](https://github.com/dotnet/csharplang/tree/main/meetings) to produce the specification.
 

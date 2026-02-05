@@ -53,7 +53,7 @@ Internally, the builder creates the formatted string and provides a member for a
 :::code language="csharp" source="./snippets/interpolated-string-handler/Logger-v2.cs" id="CoreInterpolatedStringHandler":::
 
 > [!NOTE]
-> When the interpolated string expression is a compile-time constant (that is, it contains no placeholders), the compiler uses the target type `string` instead of invoking a custom interpolated string handler. This behavior means constant interpolated strings bypass custom handlers entirely.
+> When the interpolated string expression is a compile-time constant (that is, it has no placeholders), the compiler uses the target type `string` instead of invoking a custom interpolated string handler. This behavior means constant interpolated strings bypass custom handlers entirely.
 
 You can now add an overload to `LogMessage` in the `Logger` class to try your new interpolated string handler:
 

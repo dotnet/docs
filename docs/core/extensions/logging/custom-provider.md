@@ -64,7 +64,7 @@ By convention, services are registered for dependency injection as part of the s
 
 To add the custom logging provider and corresponding logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> by calling a custom extension method, `AddColorConsoleLogger`, on the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> from the <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging?displayProperty=nameWithType> property:
 
-:::code language="csharp" source="../snippets/configuration/console-custom-logging/Program.cs" highlight="8-14":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/Program.cs" highlight="8-16":::
 
 By convention, extension methods on `ILoggingBuilder` are used to register the custom provider:
 

@@ -30,9 +30,9 @@ Each logger instance is instantiated by passing a category name, which is typica
 
 It's a good practice to call <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled*?displayProperty=nameWithType> within <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> implementations since `Log` can be called by any consumer, and there are no guarantees that it was previously checked. The `IsEnabled` method should be very fast in most implementations.
 
-:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="19-22":::
+:::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="20-23":::
 
-The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>`, which returns the current config&mdash;this handles updates to the config values as monitored through the <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange*?displayProperty=nameWithType> callback.
+The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>` that returns the current configuration.
 
 > [!IMPORTANT]
 > The <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> implementation checks if the `config.EventId` value is set. When `config.EventId` is not set or when it matches the exact `logEntry.EventId`, the logger logs in color.
@@ -56,19 +56,11 @@ The configuration can be specified with any valid [configuration provider](../co
 
 :::code language="json" source="../snippets/configuration/console-custom-logging/appsettings.json":::
 
-These settings configure the log levels to the following colors:
-
-| <xref:Microsoft.Extensions.Logging.LogLevel>             | <xref:System.ConsoleColor>           |
-|----------------------------------------------------------|--------------------------------------|
-| <xref:Microsoft.Extensions.Logging.LogLevel.Information> | <xref:System.ConsoleColor.DarkGreen> |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Warning>     | <xref:System.ConsoleColor.Cyan>      |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Error>       | <xref:System.ConsoleColor.Red>       |
-
 The _appsettings.json_ file specifies that the color for the <xref:Microsoft.Extensions.Logging.LogLevel.Information> log level is <xref:System.ConsoleColor.DarkGreen>, which overrides the default value set in the `ColorConsoleLoggerConfiguration` object.
 
 ## Usage and registration of the custom logger
 
-By convention, registering services for dependency injection happens as part of the startup routine of an application. The registration occurs in the `Program` class or in a `Startup` class. In this example, it's registered directly from the _Program.cs_ file.
+By convention, services are registered for dependency injection as part of the startup routine of an application. In this example, the logging service is registered directly from the _Program.cs_ file.
 
 To add the custom logging provider and corresponding logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> by calling a custom extension method, `AddColorConsoleLogger`, on the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> from the <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging?displayProperty=nameWithType> property:
 

@@ -26,7 +26,7 @@ The following code snippet shows the `ILogger` implementation:
 
 :::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLogger.cs":::
 
-Each logger instance is instantiated by passing a category name, which is typically the type where the logger is created. The `IsEnabled` method checks `_getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel)` to see if the requested log level is enabled (that is, in the configuration's dictionary of log levels).
+Each logger instance is instantiated by passing a category name, which is typically the type where the logger is created. The `IsEnabled` method checks `getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel)` to see if the requested log level is enabled (that is, in the configuration's dictionary of log levels).
 
 It's a good practice to call <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled*?displayProperty=nameWithType> within <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> implementations since `Log` can be called by any consumer, and there are no guarantees that it was previously checked. The `IsEnabled` method should be very fast in most implementations.
 
@@ -43,7 +43,7 @@ The `ILoggerProvider` object is responsible for creating logger instances. It's 
 
 :::code language="csharp" source="../snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
 
-In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger*> creates a single instance of the `ColorConsoleLogger` per category name and stores it in the [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2).
+In the preceding code, <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)> creates a single instance of the `ColorConsoleLogger` per category name and stores it in the [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2).
 
 The `ColorConsoleLoggerProvider` class is decorated with two attributes:
 

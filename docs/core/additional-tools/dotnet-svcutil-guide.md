@@ -124,7 +124,7 @@ If the web service changes, you can update the service reference to reflect thos
 To update an existing service reference:
 
 ```dotnetcli
-dotnet-svcutil -u .\path\to\reference\folder
+dotnet-svcutil -u ./path/to/reference/folder
 ```
 
 The reference folder should contain the `ConnectedService.json` file that was created when you initially added the service reference. The tool reads this configuration file to determine the service endpoint and regenerates the proxy code with the updated metadata.

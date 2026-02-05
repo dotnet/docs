@@ -18,8 +18,8 @@ MSTest provides comprehensive testing capabilities:
 
 - **[Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)**: Run tests with multiple inputs using `DataRow`, `DynamicData`, and external data sources
 - **[Test lifecycle management](unit-testing-mstest-writing-tests-lifecycle.md)**: Setup and cleanup at assembly, class, and test levels
-- **[Parallel execution](unit-testing-mstest-writing-tests-execution-control.md#parallelization-attributes)**: Run tests concurrently to reduce execution time
-- **[Test organization](unit-testing-mstest-writing-tests-organization.md)**: Categorize, prioritize, and filter tests with metadata attributes
+- **[Parallel execution](unit-testing-mstest-writing-tests-controlling-execution.md#parallelization-attributes)**: Run tests concurrently to reduce execution time
+- **[Test organization](unit-testing-mstest-writing-tests-organizing.md)**: Categorize, prioritize, and filter tests with metadata attributes
 - **[Code analyzers](mstest-analyzers/overview.md)**: Detect common issues and enforce best practices at compile time
 - **[Assertions](unit-testing-mstest-writing-tests-assertions.md)**: Comprehensive assertion methods for validating results
 

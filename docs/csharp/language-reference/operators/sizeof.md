@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # sizeof operator - determine the memory needs for a given type
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md).
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md) whose size is not platform-dependent.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -32,12 +32,13 @@ The expressions presented in the following table are evaluated at compile time t
 | `sizeof(decimal)` | 16             |
 | `sizeof(bool)`    |  1             |
 
-The size of a built-in, unmanaged type is a compile-time constant.
+The size of the types in the preceding table is a compile-time constant.
 
-In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` as follows:
+In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` type, including types constructed from type parameters.
 
-- A type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type returns the size of that unmanaged type at runtime.
-- A managed type or a pointer type returns the size of the reference or pointer, not the size of the object it refers to.
+- The size of a reference or pointer type is the size of a reference or pointer, not the size of the object it might refer to.
+- The size of a value type, unmanaged or not, is the size of such a value.
+- The size of a `ref struct` type is the size of value. The size of every `ref` field is the size of a reference or pointer, not the size of the value it refers to.
 
 The following example demonstrates the usage of the `sizeof` operator:
 

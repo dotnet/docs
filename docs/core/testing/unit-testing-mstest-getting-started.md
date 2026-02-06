@@ -12,7 +12,7 @@ The recommended way to create an MSTest project is to use the [MSTest.Sdk](https
 
 ## Create a project with MSTest.Sdk
 
-To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` in your project file:
+To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` along with the MSTest version in your project file:
 
 ```xml
 <Project Sdk="MSTest.Sdk/4.1.0">

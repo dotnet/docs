@@ -14,10 +14,10 @@ MSTest provides attributes for organizing tests, adding metadata, and linking te
 
 Metadata attributes appear in the Visual Studio **Properties** window for test methods. They help you:
 
-- **Organize tests**: Group tests by category, priority, or owner
-- **Filter test runs**: Run specific subsets of tests based on metadata
-- **Track test coverage**: Link tests to work items and requirements
-- **Generate reports**: Include metadata in test reports and dashboards
+- **Organize tests**: Group tests by category, priority, or owner.
+- **Filter test runs**: Run specific subsets of tests based on metadata.
+- **Track test coverage**: Link tests to work items and requirements.
+- **Generate reports**: Include metadata in test reports and dashboards.
 
 ## Test categorization
 

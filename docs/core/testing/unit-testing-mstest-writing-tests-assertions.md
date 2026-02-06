@@ -16,9 +16,9 @@ MSTest provides three assertion classes:
 
 | Class | Purpose |
 |-------|---------|
-| `Assert` | General-purpose assertions for values, types, and exceptions |
-| `StringAssert` | String-specific assertions for patterns, substrings, and comparisons |
-| `CollectionAssert` | Collection assertions for comparing and validating collections |
+| `Assert` | General-purpose assertions for values, types, and exceptions. |
+| `StringAssert` | String-specific assertions for patterns, substrings, and comparisons. |
+| `CollectionAssert` | Collection assertions for comparing and validating collections. |
 
 > [!TIP]
 > When functionality exists in both `Assert` and `StringAssert`/`CollectionAssert`, prefer the `Assert` class. The `Assert` class provides better discoverability and is the recommended choice for new code. `StringAssert` and `CollectionAssert` are maintained for backward compatibility.

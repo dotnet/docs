@@ -1,7 +1,7 @@
 ---
 title: Grain persistence
 description: Learn about grain persistence in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 02/06/2026
 ms.topic: overview
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -200,7 +200,7 @@ Grains executing error-handling or recovery code *must* catch exceptions or faul
 
 ### Use JSON serialization or another version-tolerant serialization format
 
-Code evolves, and this often includes storage types. To accommodate these changes, configure an appropriate serializer. For most storage providers, a `UseJson` option or similar is available to use JSON as the serialization format. Ensure that when evolving data contracts, already-stored data can still be loaded.
+Code evolves, and this often includes storage types. To accommodate these changes, configure an appropriate serializer. Starting with Orleans 7.0, you can configure the grain storage serializer using the <xref:Orleans.Storage.IGrainStorageSerializer> interface. By default, grain state serializes using JSON (`Newtonsoft.Json`). Ensure that when evolving data contracts, already-stored data can still be loaded. For more information, see [Grain storage serializers](../../host/configuration-guide/serialization.md#grain-storage-serializers).
 
 ## Using <xref:Orleans.Grain%601> to add storage to a grain <a name="using-graintstate-to-add-storage-to-a-grain"></a>
 

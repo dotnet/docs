@@ -15,17 +15,17 @@ The recommended way to create an MSTest project is to use the [MSTest.Sdk](https
 To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` in your project file:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
 ```
 
 > [!NOTE]
-> `/3.10.2` is given as an example and can be replaced with any newer version.
+> `/4.1.0` is given as an example and can be replaced with any newer version.
 
 To simplify version management across multiple test projects, we recommend specifying the SDK version in a _global.json_ file at the solution level:
 
@@ -33,7 +33,7 @@ To simplify version management across multiple test projects, we recommend speci
 <Project Sdk="MSTest.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -42,7 +42,7 @@ To simplify version management across multiple test projects, we recommend speci
 ```json
 {
     "msbuild-sdks": {
-        "MSTest.Sdk": "3.10.2"
+        "MSTest.Sdk": "4.1.0"
     }
 }
 ```
@@ -56,7 +56,11 @@ When you `build` the project, all needed components are restored and installed u
 
 ## Alternative: Use the MSTest NuGet package
 
-If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.org/packages/MSTest) NuGet meta-package, which includes all recommended packages: `MSTest.TestFramework`, `MSTest.TestAdapter`, `MSTest.Analyzers`, and `Microsoft.NET.Test.Sdk`.
+If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.org/packages/MSTest) NuGet meta-package, which includes:
+
+- `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality
+- `Microsoft.NET.Test.Sdk` for VSTest integration and test host support
+- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for Microsoft Testing Platform extensions
 
 ## NuGet packages overview
 
@@ -81,7 +85,7 @@ For detailed step-by-step tutorials in your preferred .NET language:
 
 ## Sample projects
 
-The MSTest team maintains sample projects in the [microsoft/testfx repository](https://github.com/microsoft/testfx/tree/main/samples) demonstrating various features and scenarios:
+The MSTest team maintains sample projects in the [microsoft/testfx repository](https://github.com/microsoft/testfx/tree/main/samples/public) demonstrating various features and scenarios:
 
 | Sample | Description | Link |
 |--------|-------------|------|

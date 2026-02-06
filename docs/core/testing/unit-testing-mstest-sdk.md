@@ -61,10 +61,10 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 Here's a full example, using the `None` profile:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <TestingExtensionsProfile>None</TestingExtensionsProfile>
     </PropertyGroup>
 
@@ -92,10 +92,10 @@ Extensions can be enabled and disabled by MSBuild properties with the pattern `E
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), you can use the following property `EnableMicrosoftTestingExtensionsCrashDump` set to `true`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
 <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>
 </PropertyGroup>
 
@@ -114,10 +114,10 @@ This property pattern can be used to enable an additional extension on top of th
 You can also disable an extension that's coming from the selected profile. For example, disable the `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>
     </PropertyGroup>
 
@@ -138,10 +138,10 @@ Aspire is an opinionated, cloud-ready stack for building observable, production 
 By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.4.0">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnableAspireTesting>true</EnableAspireTesting>
     </PropertyGroup>
 
@@ -158,10 +158,10 @@ Playwright enables reliable end-to-end testing for modern web apps. For more inf
 By setting the property `EnablePlaywright` to `true` you can bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.4.0">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnablePlaywright>true</EnablePlaywright>
     </PropertyGroup>
 
@@ -186,7 +186,7 @@ Add the version to your `global.json`:
 ```json
 {
     "msbuild-sdks": {
-        "MSTest.Sdk": "3.10.2"
+        "MSTest.Sdk": "4.1.0"
     }
 }
 ```

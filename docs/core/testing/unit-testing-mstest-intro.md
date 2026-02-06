@@ -83,40 +83,14 @@ Native AOT compilation is supported with some limitations due to reduced reflect
 
 ### STA threading support
 
-For Windows COM interop scenarios, MSTest provides STA (single-threaded apartment) attributes:
-
-```csharp
-[STATestClass]
-public class ComTests
-{
-    [TestMethod]
-    public void TestComObject()
-    {
-        // Runs in STA thread
-    }
-}
-
-// Or at method level
-[TestClass]
-public class MixedTests
-{
-    [STATestMethod]
-    public void TestRequiringSTA()
-    {
-        // This specific test runs in STA
-    }
-}
-```
-
-> [!NOTE]
-> `STATestClass` and `STATestMethod` are supported on Windows only in MSTest v3.6 and later.
+For Windows COM interop scenarios, MSTest provides `STATestClass` and `STATestMethod` attributes to run tests in a single-threaded apartment. For details on STA threading, including async continuation support with `UseSTASynchronizationContext`, see [Threading attributes](unit-testing-mstest-writing-tests-controlling-execution.md#threading-attributes).
 
 ## Test runners
 
 MSTest supports two test execution platforms:
 
 - **[Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md)**: The modern, recommended test platform with improved performance and extensibility
-- **VSTest**: The legacy platform, still supported for backward compatibility
+- **VSTest**: The original and default test platform for .NET
 
 For new projects, we recommend using [Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md) with [MSTest.Sdk](unit-testing-mstest-sdk.md).
 

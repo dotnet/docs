@@ -25,10 +25,10 @@ It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly
 When you use `MSTest SDK`, by default you're opted in to using Microsoft.Testing.Platform.
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.8.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -56,7 +56,7 @@ Consider the following example project file:
 
     <OutputType>Exe</OutputType>
 
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -73,16 +73,7 @@ Consider the following example project file:
           Microsoft.Testing.Extensions.TrxReport
           Microsoft.Testing.Extensions.CodeCoverage
     -->
-    <PackageReference Include="MSTest" Version="3.8.0" />
-
-    <!--
-      Coverlet collector isn't compatible with Microsoft.Testing.Platform, you can
-      either switch to Microsoft CodeCoverage (as shown below),
-      or switch to be using coverlet global tool
-      https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
-    -->
-    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage"
-                      Version="17.10.1" />
+    <PackageReference Include="MSTest" Version="4.1.0" />
   </ItemGroup>
 
 </Project>

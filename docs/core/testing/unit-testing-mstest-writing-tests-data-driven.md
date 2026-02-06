@@ -3,7 +3,7 @@ title: Data-driven testing in MSTest
 description: Learn how to use data-driven testing in MSTest with DataRow, DynamicData, and TestDataRow to run the same test with multiple inputs.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 02/05/2026
 ---
 
 # Data-driven testing in MSTest
@@ -18,8 +18,9 @@ MSTest provides several attributes for data-driven testing:
 |-----------|----------|----------|
 | [`DataRow`](#datarowattribute) | Inline test data | Simple, static test cases |
 | [`DynamicData`](#dynamicdataattribute) | Data from methods, properties, or fields | Complex or computed test data |
-| [`TestDataRow`](#testdatarow) | Enhanced data with metadata | Test cases needing display names or categories |
+| [`TestDataRow<T>`](#testdatarow) | Enhanced data with metadata | Test cases needing display names or categories |
 | [`DataSource`](#datasourceattribute) | External data files or databases | Legacy scenarios with external data sources |
+| [`ITestDataSource`](#itestdatasource) | Custom data source attributes | Fully custom data-driven scenarios |
 
 > [!TIP]
 > For combinatorial testing (testing all combinations of multiple parameter sets), use the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) NuGet package. This community-maintained package is [available on GitHub](https://github.com/Youssef1313/Combinatorial.MSTest) but isn't maintained by Microsoft.
@@ -125,7 +126,7 @@ public class DisplayNameExample
 ```
 
 > [!TIP]
-> For more control over test metadata, consider using [TestDataRow](#testdatarow) with `DynamicData`. `TestDataRow` supports display names along with test categories and ignore messages for individual test cases.
+> For more control over test metadata, consider using [TestDataRow\<T>](#testdatarow) with `DynamicData`. `TestDataRow<T>` supports display names along with test categories and ignore messages for individual test cases.
 
 ### Ignoring specific test cases
 
@@ -189,11 +190,11 @@ The data source can return any `IEnumerable<T>` where `T` is one of the types li
 |-------------|-------------|------------------|----------|
 | `ValueTuple` (for example, `(int, string)`) | Compile-time | No | Most scenarios - simple syntax with full type checking |
 | `Tuple<...>` | Compile-time | No | When you can't use `ValueTuple` |
-| `TestDataRow` | Compile-time | Yes | Test cases needing display names, categories, or ignore messages |
+| `TestDataRow<T>` | Compile-time | Yes | Test cases needing display names, categories, or ignore messages |
 | `object[]` | Runtime only | No | Legacy code - avoid for new tests |
 
 > [!TIP]
-> For new test data methods, use `ValueTuple` for simple cases or `TestDataRow` when you need metadata. Avoid `object[]` because it lacks compile-time type checking and can cause runtime errors from type mismatches.
+> For new test data methods, use `ValueTuple` for simple cases or `TestDataRow<T>` when you need metadata. Avoid `object[]` because it lacks compile-time type checking and can cause runtime errors from type mismatches.
 
 ### Data sources
 
@@ -313,7 +314,7 @@ public class DynamicDataDisplayNameExample
 > The display name method must be `public static`, return a `string`, and accept two parameters: `MethodInfo` and `object[]`.
 
 > [!TIP]
-> For a simpler approach to custom display names, consider using [TestDataRow](#testdatarow) with its `DisplayName` property instead of a separate method.
+> For a simpler approach to custom display names, consider using [TestDataRow\<T>](#testdatarow) with its `DisplayName` property instead of a separate method.
 
 ### Ignoring all test cases from a data source
 
@@ -339,7 +340,7 @@ public class IgnoreDynamicDataExample
 ```
 
 > [!TIP]
-> To ignore individual test cases, use `TestDataRow` with its `IgnoreMessage` property. See the [TestDataRow](#testdatarow) section.
+> To ignore individual test cases, use `TestDataRow<T>` with its `IgnoreMessage` property. See the [TestDataRow\<T>](#testdatarow) section.
 
 > [!TIP]
 > Related analyzers:
@@ -373,18 +374,18 @@ public class TestDataRowExample
     {
         yield return new TestDataRow((1, "first"))
         {
-            DisplayName = "Test Case 1: Basic scenario"
+            DisplayName = "Test Case 1: Basic scenario",
         };
 
         yield return new TestDataRow((2, "second"))
         {
             DisplayName = "Test Case 2: Edge case",
-            TestProperties = { ["Priority"] = "High", ["Category"] = "Critical" }
+            TestCategories = ["HighPriority", "Critical"],
         };
 
         yield return new TestDataRow((3, "third"))
         {
-            IgnoreMessage = "Not yet implemented"
+            IgnoreMessage = "Not yet implemented",
         };
     }
 }
@@ -402,6 +403,117 @@ For detailed information, see:
 - [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test)
 - [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source)
 
+## `ITestDataSource`
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ITestDataSource> interface lets you create completely custom data source attributes. Implement this interface when you need behavior that the built-in attributes don't support, such as generating test data based on environment variables, configuration files, or other runtime conditions.
+
+### Interface members
+
+The interface defines two methods:
+
+| Method | Purpose |
+|--------|--------|
+| `GetData(MethodInfo)` | Returns test data as `IEnumerable<object?[]>` |
+| `GetDisplayName(MethodInfo, object?[]?)` | Returns the display name for a test case |
+
+### Creating a custom data source attribute
+
+To create a custom data source, define an attribute class that inherits from `Attribute` and implements `ITestDataSource`:
+
+```csharp
+using System.Globalization;
+using System.Reflection;
+
+[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+public class MyDataSourceAttribute : Attribute, ITestDataSource
+{
+    public IEnumerable<object?[]> GetData(MethodInfo methodInfo)
+    {
+        // Return test data based on your custom logic
+        yield return [1, "first"];
+        yield return [2, "second"];
+        yield return [3, "third"];
+    }
+
+    public string? GetDisplayName(MethodInfo methodInfo, object?[]? data)
+    {
+        return data is null
+            ? null
+            : string.Format(CultureInfo.CurrentCulture, "{0} ({1})", methodInfo.Name, string.Join(",", data));
+    }
+}
+
+[TestClass]
+public class CustomDataSourceExample
+{
+    [TestMethod]
+    [MyDataSource]
+    public void TestWithCustomDataSource(int value, string name)
+    {
+        Assert.IsTrue(value > 0);
+        Assert.IsNotNull(name);
+    }
+}
+```
+
+### Real-world example: Environment-based test data
+
+This example shows a custom attribute that generates test data based on target frameworks, filtering based on the operating system:
+
+```csharp
+using System.Globalization;
+using System.Reflection;
+
+[AttributeUsage(AttributeTargets.Method)]
+public class TargetFrameworkDataAttribute : Attribute, ITestDataSource
+{
+    private readonly string[] _frameworks;
+
+    public TargetFrameworkDataAttribute(params string[] frameworks)
+    {
+        _frameworks = frameworks;
+    }
+
+    public IEnumerable<object?[]> GetData(MethodInfo methodInfo)
+    {
+        bool isWindows = OperatingSystem.IsWindows();
+
+        foreach (string framework in _frameworks)
+        {
+            // Skip .NET Framework on non-Windows platforms
+            if (!isWindows && framework.StartsWith("net4", StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+            yield return [framework];
+        }
+    }
+
+    public string? GetDisplayName(MethodInfo methodInfo, object?[]? data)
+    {
+        return data is null
+            ? null
+            : string.Format(CultureInfo.CurrentCulture, "{0} ({1})", methodInfo.Name, data[0]);
+    }
+}
+
+[TestClass]
+public class CrossPlatformTests
+{
+    [TestMethod]
+    [TargetFrameworkData("net48", "net8.0", "net9.0")]
+    public void TestOnMultipleFrameworks(string targetFramework)
+    {
+        // Test runs once per applicable framework
+        Assert.IsNotNull(targetFramework);
+    }
+}
+```
+
+> [!TIP]
+> For simple cases where you just need to customize display names or add metadata, consider using [TestDataRow\<T>](#testdatarow) with `DynamicData` instead of implementing `ITestDataSource`. Reserve custom `ITestDataSource` implementations for scenarios that require dynamic filtering or complex data generation logic.
+
 ## Unfolding strategy
 
 Data-driven test attributes support the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy> property, which controls how test cases appear in Test Explorer and TRX results. This property also determines whether you can run individual test cases independently.
@@ -410,7 +522,7 @@ Data-driven test attributes support the <xref:Microsoft.VisualStudio.TestTools.U
 
 | Strategy | Behavior |
 |----------|----------|
-| `Auto` (default) | MSTest determines unfolding based on the number of data rows |
+| `Auto` (default) | MSTest determines unfolding best strategy |
 | `Unfold` | All test cases are expanded and shown individually |
 | `Fold` | All test cases are collapsed into a single test node |
 
@@ -428,27 +540,27 @@ For most scenarios, the default `Auto` behavior provides the best balance. Consi
 [TestClass]
 public class UnfoldingExample
 {
-    [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Unfold)]
+    [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Unfold)] // That's the default behavior
     [DataRow(1)]
     [DataRow(2)]
     [DataRow(3)]
-    public void TestMethodWithUnfolding(int value)
+    public void TestMethodWithUnfolding(int value, string text)
     {
         // Each test case appears individually in Test Explorer
     }
 
     [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Fold)]
     [DynamicData(nameof(GetData))]
-    public void TestMethodWithFolding(int value)
+    public void TestMethodWithFolding(int value, string text)
     {
         // All test cases appear as a single collapsed node
     }
 
-    public static IEnumerable<int> GetData()
+    public static IEnumerable<(int, string)> GetData()
     {
-        yield return 1;
-        yield return 2;
-        yield return 3;
+        yield return (1, "one");
+        yield return (2, "two");
+        yield return (3, "three");
     }
 }
 ```
@@ -469,7 +581,7 @@ public class UnfoldingExample
 
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)
-- [MSTEST0014: DataRow argument type mismatch](mstest-analyzers/mstest0014.md)
-- [MSTEST0018: DynamicData source issues](mstest-analyzers/mstest0018.md)
-- [MSTEST0042: DynamicData return type](mstest-analyzers/mstest0042.md)
-- [MSTEST0052: DataRow with collections](mstest-analyzers/mstest0052.md)
+- [MSTEST0014: DataRow should be valid](mstest-analyzers/mstest0014.md)
+- [MSTEST0018: DynamicData should be valid](mstest-analyzers/mstest0018.md)
+- [MSTEST0042: Avoid duplicated 'DataRow' entries](mstest-analyzers/mstest0042.md)
+- [MSTEST0052: Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior](mstest-analyzers/mstest0052.md)

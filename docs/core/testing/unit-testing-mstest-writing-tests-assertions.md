@@ -37,7 +37,7 @@ Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to veri
 
 ```csharp
 [TestMethod]
-public void AssertExamples()
+public async Task AssertExamples()
 {
     // Equality
     Assert.AreEqual(5, calculator.Add(2, 3));

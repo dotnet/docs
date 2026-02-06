@@ -60,6 +60,32 @@ public class MixedThreadingTests
 > [!NOTE]
 > This attribute is only supported on Windows in MSTest v3.6 and later.
 
+#### Preserve STA context for async continuations
+
+Starting with MSTest 4.1, the `STATestMethodAttribute` includes a `UseSTASynchronizationContext` property that ensures async continuations run on the same STA thread. When enabled, the attribute creates a custom `SynchronizationContext` that posts continuations back to the STA thread, which is essential for testing UI components that require STA threading throughout their async operations.
+
+```csharp
+[TestClass]
+public class UIComponentTests
+{
+    [STATestMethod(UseSTASynchronizationContext = true)]
+    public async Task TestAsyncUIOperation()
+    {
+        // Initial code runs on STA thread
+        var control = new MyControl();
+        
+        await control.LoadDataAsync();
+        
+        // Continuation also runs on STA thread,
+        // ensuring UI operations remain valid
+        Assert.IsTrue(control.IsDataLoaded);
+    }
+}
+```
+
+> [!TIP]
+> Use `UseSTASynchronizationContext = true` when testing Windows Forms or WPF components that perform async operations and expect their continuations to run on the UI (STA) thread.
+
 ### `UITestMethodAttribute`
 
 The `UITestMethod` attribute schedules test execution on the UI thread. This attribute is designed for testing UWP and WinUI applications that require UI thread access.
@@ -93,7 +119,7 @@ By default, MSTest runs tests sequentially. The <xref:Microsoft.VisualStudio.Tes
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
 ```
 
 #### Parallelization scope
@@ -119,13 +145,7 @@ The `Workers` property specifies the maximum number of threads for parallel exec
 > You can also configure parallelization through [runsettings](unit-testing-mstest-configure.md#mstest-element) or [testconfig.json](unit-testing-mstest-configure.md#testconfigjson) without modifying code.
 
 > [!TIP]
-> Use the [MSTEST0030](mstest-analyzers/mstest0030.md) analyzer to ensure that every test class explicitly declares its parallelization intent. Being explicit about parallelization forces you to review whether each class safely supports concurrent execution when you enable parallelism. This practice helps stabilize your codebase by identifying tests with shared state. Often, excluding just a few classes or methods with `DoNotParallelize` is sufficient, allowing the majority of your tests to run in parallel for significantly faster test execution.
->
-> Related analyzers:
->
-> - [MSTEST0019](mstest-analyzers/mstest0019.md) - validates `Parallelize` attribute usage.
-> - [MSTEST0020](mstest-analyzers/mstest0020.md) - detects conflicts with parallelization settings.
-> - [MSTEST0030](mstest-analyzers/mstest0030.md) - enforces explicit parallelization declarations on test classes.
+> Enable parallelization at the assembly level by default, even if many tests currently require sequential execution. This approach encourages writing new tests that support parallel execution from the start. Use the [MSTEST0001](mstest-analyzers/mstest0001.md) analyzer to ensure that every test class explicitly declares its parallelization intent, which forces you to review whether each class safely supports concurrent execution. Often, excluding just a few classes or methods with `DoNotParallelize` is sufficient, allowing the majority of your tests to run in parallel for significantly faster test execution.
 
 ### `DoNotParallelizeAttribute`
 
@@ -275,7 +295,7 @@ Benefits of cooperative cancellation:
 - Lower performance overhead (no extra task/thread wrapper per test).
 - Cleaner resource cleanup since your code handles cancellation explicitly.
 - Aligns with standard .NET cancellation patterns.
-- Works with both async and sync methods.
+- Deterministic behavior by avoiding race conditions between test code and unobserved background execution.
 
 > [!NOTE]
 > Cooperative cancellation requires your test code to check the cancellation token regularly. If your code doesn't check the token, the test won't actually stop when timeout is reached.
@@ -286,7 +306,6 @@ Benefits of cooperative cancellation:
 > [!TIP]
 > Related analyzers:
 >
-> - [MSTEST0017](mstest-analyzers/mstest0017.md) - validates timeout attribute configuration.
 > - [MSTEST0045](mstest-analyzers/mstest0045.md) - recommends using cooperative cancellation for timeout attributes.
 
 ## Retry attributes
@@ -499,9 +518,6 @@ public class TrackedIgnoreExamples
 }
 ```
 
-> [!TIP]
-> Related analyzer: [MSTEST0024](mstest-analyzers/mstest0024.md) - detects tests with trivial or missing ignore messages.
-
 ## Best practices
 
 1. **Use parallelization wisely**: Enable parallelization for independent tests, but use `DoNotParallelize` for tests that share state.
@@ -521,7 +537,5 @@ public class TrackedIgnoreExamples
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md)
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
-- [MSTEST0017: Timeout attribute configuration](mstest-analyzers/mstest0017.md)
-- [MSTEST0019: Parallelize attribute usage](mstest-analyzers/mstest0019.md)
-- [MSTEST0024: Ignore message validation](mstest-analyzers/mstest0024.md)
+- [MSTEST0001: Explicitly enable or disable tests parallelization](mstest-analyzers/mstest0001.md)
 - [MSTEST0045: Use cooperative cancellation for timeout](mstest-analyzers/mstest0045.md)

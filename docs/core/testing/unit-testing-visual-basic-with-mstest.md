@@ -1,11 +1,11 @@
 ---
-title: Get started with MSTest and Visual Basic
+title: Get started with Visual Basic and MSTest
 description: Learn unit test concepts in .NET through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
 ---
-# Get started with MSTest and Visual Basic
+# Get started with Visual Basic and MSTest
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-vb-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
@@ -55,9 +55,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-  <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
-  <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
 

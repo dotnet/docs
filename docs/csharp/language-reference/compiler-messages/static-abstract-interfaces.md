@@ -50,7 +50,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8931**](#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
 - [**CS8932**](#errors-in-type-implementing-interface-declaration): *'UnmanagedCallersOnly' method cannot implement interface member in type*
 - [**CS9044**](#errors-in-type-implementing-interface-declaration): *Type does not implement interface member. Method cannot implicitly implement an inaccessible member.*
-- [**CS9046**](#errors-in-interface-declaration): *One of the parameters of an equality, or inequality operator declared in an interface must be a type parameter constrained to the interface*
+- [**CS9046**](#errors-in-interface-declaration): *One of the parameters of an equality or inequality operator declared in an interface must be a type parameter constrained to the interface*
 
 These errors occur in three places in your code:
 
@@ -68,7 +68,7 @@ You might encounter the following errors when you declare an interface with `sta
 - **CS8924**: *One of the parameters of a binary operator must be the containing type, or its type parameter constrained to it.*
 - **CS8925**: *The first operand of an overloaded shift operator must have the same type as the containing type or its type parameter constrained to it*
 - **CS8931**: *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
-- **CS9046**: *One of the parameters of an equality, or inequality operator declared in interface must be a type parameter constrained to the interface*
+- **CS9046**: *One of the parameters of an equality or inequality operator declared in interface must be a type parameter constrained to the interface*
 
 For unary operators declared in an interface, ensure the parameter is either the interface type itself or a type parameter `T` where `T` is constrained to implement the interface (**CS8921**). This constraint ensures the operator can only be applied to types that implement the interface, enabling the compiler to resolve the correct implementation at compile time.
 

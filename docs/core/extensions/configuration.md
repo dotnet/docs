@@ -110,6 +110,61 @@ The following table represents example keys and their corresponding values for t
 | `"Parent:Child:Name"`           | `"Example"` |
 | `"Parent:Child:GrandChild:Age"` | `3`         |
 
+#### Advanced binding scenarios
+
+The configuration binder has specific behaviors and limitations when working with certain types. Understanding these scenarios helps avoid common pitfalls.
+
+##### Binding to dictionaries
+
+When binding configuration to a <xref:System.Collections.Generic.Dictionary%602> where the value is a mutable collection type (like arrays or lists), binding behavior changed in .NET 7. Starting with .NET 7, binding to the same key multiple times extends the collection values instead of replacing them. For more information, see [Binding config to dictionary extends values](../compatibility/extensions/7.0/config-bind-dictionary.md).
+
+The following example demonstrates this behavior:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="DictionaryWithCollectionValues":::
+
+In .NET 7 and later, each bind operation adds to the existing collection values rather than replacing them entirely.
+
+##### Dictionary keys with colons
+
+The colon (`:`) character is reserved as a hierarchy delimiter in configuration keys. This means you cannot use colons in dictionary keys when binding configuration. If your keys contain colons (such as URLs or other formatted identifiers), the configuration system will interpret them as hierarchy paths rather than literal characters.
+
+The following example shows this limitation:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="DictionaryKeysWithColons":::
+
+**Workarounds for keys with colons:**
+
+- Use alternative delimiter characters (such as double underscores `__`) in your configuration keys and transform them programmatically if needed.
+- Manually deserialize the configuration as raw JSON using <xref:System.Text.Json> or a similar library, which supports colons in keys.
+- Create a custom mapping layer that translates safe keys to your desired keys with colons.
+
+##### Binding to IReadOnly* types
+
+The configuration binder doesn't support binding directly to `IReadOnlyList<T>`, `IReadOnlyDictionary<TKey, TValue>`, or other read-only collection interfaces. These interfaces lack the mechanisms the binder needs to populate the collections.
+
+To work with read-only collections, use mutable types for the properties that the binder populates, then expose them as read-only interfaces for consumers:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="IReadOnlyCollections":::
+
+The configuration class implementation:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="SettingsWithReadOnly":::
+
+This approach allows the binder to populate the mutable `List<string>` while presenting an immutable interface to consumers through `IReadOnlyList<string>`.
+
+##### Binding with parameterized constructors
+
+Starting with .NET 7, the configuration binder supports binding to types with a single public parameterized constructor. This enables immutable types and records to be populated directly from configuration:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="ParameterizedConstructor":::
+
+The immutable settings class:
+
+:::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="AppSettings":::
+
+> [!IMPORTANT]
+> The binder only supports types with a single public parameterized constructor. If a type has multiple public parameterized constructors, the binder cannot determine which one to use and binding will fail. Use either a single parameterized constructor or a parameterless constructor with property setters.
+
 ### Basic example
 
 To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> type directly.

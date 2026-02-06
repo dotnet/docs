@@ -20,6 +20,9 @@ f1_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
+  - "CS8954"
+  - "CS8955"
+  - "CS8956"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -44,6 +47,9 @@ helpviewer_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
+  - "CS8954"
+  - "CS8955"
+  - "CS8956"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -71,6 +77,9 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8085**](#restrictions-on-using-aliases): *Error: A 'using static' directive cannot be used to declare an alias.*
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
 - [**CS8915**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
+- [**CS8954**](#file-scoped-namespace): *Error: Source file can only contain one file-scoped namespace declaration.*
+- [**CS8955**](#file-scoped-namespace): *Error: Source file can not contain both file-scoped and normal namespace declarations.*
+- [**CS8956**](#file-scoped-namespace): *Error: File-scoped namespace must precede all other members in a file.*
 - [**CS9130**](#restrictions-on-using-aliases): *Error: Using alias cannot be a `ref` type.*
 - [**CS9131**](#restrictions-on-using-aliases): *Error: Only a using alias can be `unsafe`.*
 - [**CS9132**](#restrictions-on-using-aliases): *Error: Using alias cannot be a nullable reference type.*
@@ -140,6 +149,41 @@ A `global using` directive imports the namespace or type in all source files in 
 Any `global using` directives must precede any non-global `using` directives in that source file, and must not be placed in a `namespace`. Doing so results in **CS8915** and **CS8914**, respectively.
 
 Furthermore, a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
+
+## File-scoped namespace
+
+A [file-scoped namespace](../keywords/namespace.md) declaration sets the namespace for all types declared in a file. A file-scoped namespace declaration must follow `using` directives and precede any type or namespace declarations in the file:
+
+:::code language="csharp" source="./snippets/UsingDirectives/FileScopedName.cs":::
+
+A file can contain only one file-scoped namespace declaration. Declaring multiple file-scoped namespaces produces **CS8954**:
+
+```csharp
+namespace One;
+
+namespace Two; // CS8954
+
+public class C { }
+```
+
+Furthermore, if a file contains a file-scoped namespace declaration, it can't contain any block-scoped namespace declarations. Using both in a single file produces **CS8955**:
+
+```csharp
+namespace One;
+
+namespace Two // CS8955
+{
+    public class C { }
+}
+```
+
+Finally, the file-scoped namespace declaration must precede any type declarations in that file. Declaring types before the file-scoped namespace declaration produces **CS8956**:
+
+```csharp
+public class C { }
+
+namespace One; // CS8956
+```
 
 ## Alias qualifier
 

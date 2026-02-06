@@ -41,7 +41,7 @@ A *cue* is text that conveys the desired structure or format of output. Like an 
 
 ## Example prompt using .NET
 
-.NET provides various tools to prompt and chat with different AI models. You can use [Agent Framework](/agent-framework/overview/) to connect to a wide variety of AI models and services. Agent Framework includes tools to create agents with system instructions and maintain conversation state across multiple turns.
+.NET provides various tools to prompt and chat with different AI models. You can use [Agent Framework](/agent-framework/) to connect to a wide variety of AI models and services. Agent Framework includes tools to create agents with system instructions and maintain conversation state across multiple turns.
 
 Consider the following code example:
 
@@ -49,11 +49,11 @@ Consider the following code example:
 
 The preceding code:
 
-- Creates an AI agent using a chat client configured for a specific model endpoint.
-- Configures the agent with system instructions using `WithInstructions`.
+- Creates an Azure OpenAI client with an endpoint and API key.
+- Gets a chat client for the GPT-4o model and converts it to an AI agent.
 - Creates an agent session to maintain conversation state across multiple turns.
-- Accepts user input to allow for different types of prompts.
-- Asynchronously streams the completion from the AI to provide a dynamic chat experience.
+- Accepts user input in a loop to allow for different types of prompts.
+- Asynchronously streams the AI response and displays it to the console.
 
 ## Related content
 

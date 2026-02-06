@@ -245,7 +245,7 @@ The following table shows the configuration providers available to .NET Core app
 
 | Configuration provider                                                         | Provides configuration from |
 |--------------------------------------------------------------------------------|-----------------------------|
-| [Azure app](/azure/azure-app-configuration/quickstart-aspnet-core-app)         | Azure App Configuration     |
+| [Azure App Configuration](/azure/azure-app-configuration/quickstart-aspnet-core-app) | Azure App Configuration |
 | [Azure Key Vault](/azure/key-vault/general/tutorial-net-virtual-machine)       | Azure Key Vault             |
 | [Command-line](configuration-providers.md#command-line-configuration-provider) | Command-line parameters     |
 | [Custom](custom-configuration-provider.md)                                     | Custom source               |

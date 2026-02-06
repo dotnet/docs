@@ -22,8 +22,6 @@ Console.WriteLine($"After 2nd Bind: {string.Join(", ", dict["Queue"])}");
 
 Console.WriteLine();
 
-Console.WriteLine();
-
 // <IReadOnlyCollections>
 Console.WriteLine("=== IReadOnly* Types (NOT Directly Supported) ===");
 

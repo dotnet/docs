@@ -16,12 +16,12 @@ MSTest is hosted on [GitHub](https://github.com/microsoft/testfx) and works with
 
 MSTest provides comprehensive testing capabilities:
 
-- **[Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)**: Run tests with multiple inputs using `DataRow`, `DynamicData`, and external data sources
-- **[Test lifecycle management](unit-testing-mstest-writing-tests-lifecycle.md)**: Setup and cleanup at assembly, class, and test levels
-- **[Parallel execution](unit-testing-mstest-writing-tests-controlling-execution.md#parallelization-attributes)**: Run tests concurrently to reduce execution time
-- **[Test organization](unit-testing-mstest-writing-tests-organizing.md)**: Categorize, prioritize, and filter tests with metadata attributes
-- **[Code analyzers](mstest-analyzers/overview.md)**: Detect common issues and enforce best practices at compile time
-- **[Assertions](unit-testing-mstest-writing-tests-assertions.md)**: Comprehensive assertion methods for validating results
+- **[Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md)**: Run tests with multiple inputs using `DataRow`, `DynamicData`, and external data sources.
+- **[Test lifecycle management](unit-testing-mstest-writing-tests-lifecycle.md)**: Setup and cleanup at assembly, class, and test levels.
+- **[Parallel execution](unit-testing-mstest-writing-tests-controlling-execution.md#parallelization-attributes)**: Run tests concurrently to reduce execution time.
+- **[Test organization](unit-testing-mstest-writing-tests-organizing.md)**: Categorize, prioritize, and filter tests with metadata attributes.
+- **[Code analyzers](mstest-analyzers/overview.md)**: Detect common issues and enforce best practices at compile time.
+- **[Assertions](unit-testing-mstest-writing-tests-assertions.md)**: Comprehensive assertion methods for validating results.
 
 ## Supported platforms
 
@@ -89,8 +89,8 @@ For Windows COM interop scenarios, MSTest provides `STATestClass` and `STATestMe
 
 MSTest supports two test execution platforms:
 
-- **[Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md)**: The modern, recommended test platform with improved performance and extensibility
-- **VSTest**: The original and default test platform for .NET
+- **[Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md)**: The modern, recommended test platform with improved performance and extensibility.
+- **VSTest**: The original and default test platform for .NET.
 
 For new projects, we recommend using [Microsoft.Testing.Platform (MTP)](unit-testing-mstest-running-tests.md) with [MSTest.Sdk](unit-testing-mstest-sdk.md).
 

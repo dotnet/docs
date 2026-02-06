@@ -25,7 +25,7 @@ To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` in your pro
 ```
 
 > [!NOTE]
-> `/4.1.0` is given as an example and can be replaced with any newer version.
+> `4.1.0` is given as an example and can be replaced with any newer version.
 
 To simplify version management across multiple test projects, we recommend specifying the SDK version in a _global.json_ file at the solution level:
 
@@ -58,9 +58,9 @@ When you `build` the project, all needed components are restored and installed u
 
 If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.org/packages/MSTest) NuGet meta-package, which includes:
 
-- `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality
-- `Microsoft.NET.Test.Sdk` for VSTest integration and test host support
-- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md) extensions
+- `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality.
+- `Microsoft.NET.Test.Sdk` for VSTest integration and test host support.
+- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md) extensions.
 
 ## NuGet packages overview
 
@@ -68,9 +68,9 @@ MSTest functionality is split across multiple NuGet packages:
 
 | Package | Description |
 |---------|-------------|
-| [MSTest.TestFramework](https://www.nuget.org/packages/MSTest.TestFramework) | Contains the attributes and classes used to define MSTest tests |
-| [MSTest.TestAdapter](https://www.nuget.org/packages/MSTest.TestAdapter) | Contains the test adapter that discovers and runs MSTest tests |
-| [MSTest.Analyzers](https://www.nuget.org/packages/MSTest.Analyzers) | Contains analyzers that help you write high-quality tests |
+| [MSTest.TestFramework](https://www.nuget.org/packages/MSTest.TestFramework) | Contains the attributes and classes used to define MSTest tests. |
+| [MSTest.TestAdapter](https://www.nuget.org/packages/MSTest.TestAdapter) | Contains the test adapter that discovers and runs MSTest tests. |
+| [MSTest.Analyzers](https://www.nuget.org/packages/MSTest.Analyzers) | Contains analyzers that help you write high-quality tests. |
 
 > [!NOTE]
 > If you're creating a test infrastructure project intended as a helper library for multiple test projects, install `MSTest.TestFramework` and `MSTest.Analyzers` directly into that project.

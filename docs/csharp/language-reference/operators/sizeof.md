@@ -38,7 +38,7 @@ In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` 
 
 - The size of a reference or pointer type is the size of a reference or pointer, not the size of the object it might refer to.
 - The size of a value type, unmanaged or not, is the size of such a value.
-- The size of a `ref struct` type is the size of value. The size of every `ref` field is the size of a reference or pointer, not the size of the value it refers to.
+- The size of a `ref struct` type is the size of the value. The size of every `ref` field is the size of a reference or pointer, not the size of the value it refers to.
 
 The following example demonstrates the usage of the `sizeof` operator:
 

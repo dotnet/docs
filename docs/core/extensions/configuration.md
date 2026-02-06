@@ -3,6 +3,7 @@ title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
 ms.date: 10/09/2024
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # Configuration in .NET

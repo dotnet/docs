@@ -5,6 +5,7 @@ ms.date: 02/06/2026
 ms.topic: overview
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 
 # Grain persistence

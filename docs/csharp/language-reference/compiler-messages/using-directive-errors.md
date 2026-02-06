@@ -5,13 +5,20 @@ ms.date: 11/02/2023
 f1_keywords:
   - "CS0105"
   - "CS0138"
+  - "CS0430"
   - "CS0431"
   - "CS0432"
+  - "CS0439"
   - "CS0440"
   - "CS0576"
   - "CS0687"
   - "CS1529"
   - "CS1537"
+  - "CS1671"
+  - "CS1679"
+  - "CS1681"
+  - "CS1730"
+  - "CS2034"
   - "CS7000"
   - "CS7007"
   - "CS8019"
@@ -32,13 +39,20 @@ f1_keywords:
 helpviewer_keywords:
   - "CS0105"
   - "CS0138"
+  - "CS0430"
   - "CS0431"
   - "CS0432"
+  - "CS0439"
   - "CS0440"
   - "CS0576"
   - "CS0687"
   - "CS1529"
   - "CS1537"
+  - "CS1671"
+  - "CS1679"
+  - "CS1681"
+  - "CS1730"
+  - "CS2034"
   - "CS7000"
   - "CS7007"
   - "CS8019"
@@ -65,12 +79,19 @@ This article covers the following compiler errors:
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0138**](#using-static-directive): *Error: A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace.*
+- [**CS0430**](#using-directive): *Error: The extern alias 'alias' was not specified in a /reference option.*
 - [**CS0431**](#alias-qualifier): *Error: Cannot use alias 'identifier' with `::` since the alias references a type. Use `.` instead*.
 - [**CS0432**](#alias-qualifier): *Error: Alias 'identifier' not found.*
+- [**CS0439**](#using-directive): *Error: An extern alias declaration must precede all other elements defined in the namespace.*
 - [**CS0576**](#alias-name-conflicts): *Error: Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
 - [**CS0687**](#alias-qualifier): *Error: The namespace alias qualifier `::` always resolves to a type or namespace so is illegal here. Consider using `.` instead.*
 - [**CS1529**](#using-directive): *Error: A using clause must precede all other elements defined in the namespace except extern alias declarations.*
 - [**CS1537**](#alias-name-conflicts): *Error: The using alias 'alias' appeared previously in this namespace.*
+- [**CS1671**](#file-scoped-namespace): *Error: A namespace declaration cannot have modifiers or attributes.*
+- [**CS1679**](#using-directive): *Error: Invalid extern alias for '/reference'; 'identifier' is not a valid identifier.*
+- [**CS1681**](#using-directive): *Error: You cannot redefine the global extern alias.*
+- [**CS1730**](#using-directive): *Error: Assembly and module attributes must precede all other elements defined in a file except using clauses and extern alias declarations.*
+- [**CS2034**](#using-directive): *Error: A /reference option that declares an extern alias can only have one filename. To specify multiple aliases or filenames, use multiple /reference options.*
 - [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
 - [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead*
 - [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
@@ -111,6 +132,53 @@ using System.Text.Json; // CS1529
 To fix this issue, move any `using` declarations to the top of the file or the top of the namespace:
 
 :::code language="csharp" source="./snippets/UsingDirectives/MyClass.cs" id="UsingExample":::
+
+Similarly, an [extern alias](../keywords/extern-alias.md) declaration must precede all `using` directives and other namespace elements. Placing an `extern alias` after a `using` directive produces **CS0439**:
+
+```csharp
+using System;
+
+extern alias MyType; // CS0439
+```
+
+Move the `extern alias` declaration before any `using` directives to fix this error.
+
+The compiler produces **CS0430** when an `extern alias` in your source code doesn't match an alias specified in a [**References**](../compiler-options/inputs.md#references) compiler option. Ensure the alias name matches the alias specified in the project reference or `/reference` option:
+
+```csharp
+extern alias MyType; // CS0430 if MyType isn't specified as an alias
+```
+
+The compiler produces **CS1679** when the alias specified in a `/reference` option isn't a valid C# identifier. Ensure the alias name follows C# identifier naming rules:
+
+```csharp
+// compile with: /reference:123$BadIdentifier%=System.dll
+// CS1679: '123$BadIdentifier%' is not a valid identifier
+```
+
+The compiler produces **CS1681** if you attempt to redefine the `global` extern alias. The `global` alias is predefined to include all unaliased references and can't be redefined:
+
+```csharp
+// compile with: /reference:global=System.dll
+// CS1681: You cannot redefine the global extern alias
+```
+
+The compiler produces **CS2034** when a single `/reference` option declares multiple extern aliases or filenames. Each extern alias must be specified with its own `/reference` option:
+
+```csharp
+// compile with: /r:A1=lib1.dll;A2=lib2.dll
+// CS2034: use separate /reference options instead
+// fix: /r:A1=lib1.dll /r:A2=lib2.dll
+extern alias A1;
+extern alias A2;
+```
+
+Assembly and module level [attributes](../../advanced-topics/reflection-and-attributes/index.md) must precede all other elements defined in a file, except `using` clauses and `extern alias` declarations. Placing these attributes after types or other declarations produces **CS1730**:
+
+```csharp
+class Test { }
+[assembly: System.CLSCompliant(true)] // CS1730
+```
 
 The compiler produces warning **CS8933**, **CS0105** or diagnostic **CS8019** for a duplicate `using` directive from a `using` or `global using` directive. You can remove any duplicates.
 
@@ -183,6 +251,14 @@ Finally, the file-scoped namespace declaration must precede any type declaration
 public class C { }
 
 namespace One; // CS8956
+```
+
+The compiler produces **CS1671** if you apply modifiers or attributes to namespace declarations. Namespaces can't have access modifiers or attributes:
+
+```csharp
+public namespace NS // CS1671
+{
+}
 ```
 
 ## Alias qualifier

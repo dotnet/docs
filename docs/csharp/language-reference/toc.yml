@@ -648,9 +648,10 @@ items:
   - name: Using directive and aliases
     href: ./compiler-messages/using-directive-errors.md
     displayName: >
-      CS0105, CS0138, CS0431, CS0432, CS0440, CS0576, CS0687, CS1529, CS1537, CS7000,
-      CS7007, CS8019, CS8083, CS8085, CS8914, CS8915, CS8933, CS8954, CS8955, CS8956
-      CS9130, CS9131, CS9132, CS9133, CS9162, CS9163
+      CS0105, CS0138, CS0430, CS0431, CS0432, CS0439, CS0440, CS0576, CS0687, CS1529,
+      CS1537, CS1671, CS1679, CS1681, CS1730, CS2034, CS7000, CS7007, CS8019, CS8083,
+      CS8085, CS8914, CS8915, CS8933, CS8954, CS8955, CS8956, CS9130, CS9131, CS9132,
+      CS9133, CS9162, CS9163
   - name: Using statements and declarations
     href: ./compiler-messages/using-statement-declaration-errors.md
     displayName: >
@@ -1010,16 +1011,12 @@ items:
       href: ../misc/cs0426.md
     - name: CS0428
       href: ../misc/cs0428.md
-    - name: CS0430
-      href: ../misc/cs0430.md
     - name: CS0433
       href: ./compiler-messages/cs0433.md
     - name: CS0434
       href: ../misc/cs0434.md
     - name: CS0438
       href: ../misc/cs0438.md
-    - name: CS0439
-      href: ../misc/cs0439.md
     - name: CS0441
       href: ../misc/cs0441.md
     - name: CS0442
@@ -1526,8 +1523,6 @@ items:
       href: ../misc/cs1664.md
     - name: CS1667
       href: ../misc/cs1667.md
-    - name: CS1671
-      href: ../misc/cs1671.md
     - name: CS1672
       href: ../misc/cs1672.md
     - name: CS1675
@@ -1538,12 +1533,8 @@ items:
       href: ../misc/cs1677.md
     - name: CS1678
       href: ../misc/cs1678.md
-    - name: CS1679
-      href: ../misc/cs1679.md
     - name: CS1680
       href: ../misc/cs1680.md
-    - name: CS1681
-      href: ../misc/cs1681.md
     - name: CS1688
       href: ../misc/cs1688.md
     - name: CS1689
@@ -1574,8 +1565,6 @@ items:
       href: ../misc/cs1728.md
     - name: CS1729
       href: ./compiler-messages/cs1729.md
-    - name: CS1730
-      href: ../misc/cs1730.md
     - name: CS1731
       href: ../misc/cs1731.md
     - name: CS1732
@@ -1694,8 +1683,6 @@ items:
       href: ./compiler-messages/cs2032.md
     - name: CS2033
       href: ../misc/cs2033.md
-    - name: CS2034
-      href: ../misc/cs2034.md
     - name: CS2035
       href: ../misc/cs2035.md
     - name: CS2036

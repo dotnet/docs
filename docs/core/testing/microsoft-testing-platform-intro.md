@@ -43,6 +43,10 @@ The main driving factors for the evolution of the new testing platform are detai
 * xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
 * TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
+## Supported target frameworks
+
+Microsoft.Testing.Platform supports .NET (.NET 8 SDK and later), .NET Framework (versions 4.6.2 and later), and targets NETStandard 2.0 for maximum compatibility with other runtimes.
+
 ## Run and debug tests
 
 `Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).

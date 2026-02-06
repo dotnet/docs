@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 05/23/2025
+ms.date: 02/04/2026
 f1_keywords:
   - "CS0190"
   - "CS0257"
@@ -48,6 +48,7 @@ f1_keywords:
   - "CS2045"
   - "CS2046"
   - "CS3028"
+  # C# 5 diagnostics
   - "CS4001"
   - "CS4003"
   - "CS4005"
@@ -75,6 +76,7 @@ f1_keywords:
   - "CS4031"
   - "CS4034"
   - "CS4036"
+  # C# 6 diagnostics
   - "CS7006"
   - "CS7012"
   - "CS7013"
@@ -203,6 +205,7 @@ f1_keywords:
   - "CS8111"
   - "CS8112"
   - "CS8113"
+  # C# 7.0 diagnostics
   - "CS8115"
   - "CS8116"
   - "CS8117"
@@ -231,6 +234,7 @@ f1_keywords:
   - "CS8190"
   - "CS8191"
   - "CS8197"
+  # C# 7.0 diagnostics
   - "CS8199"
   - "CS8202"
   - "CS8204"
@@ -238,6 +242,7 @@ f1_keywords:
   - "CS8206"
   - "CS8208"
   - "CS8209"
+  # C# 7.1 diagnostics
   - "CS8300"
   - "CS8301"
   - "CS8305"
@@ -246,6 +251,7 @@ f1_keywords:
   - "CS8309"
   - "CS8310"
   - "CS8312"
+  # C# 7.2 diagnostics
   - "CS8321"
   - "CS8323"
   - "CS8328"
@@ -278,6 +284,7 @@ f1_keywords:
   - "CS8386"
   - "CS8387"
   - "CS8389"
+  # C# 7.3 diagnostics
   - "CS8412"
   - "CS8413"
   - "CS8414"
@@ -327,6 +334,7 @@ f1_keywords:
   - "CS8715"
   - "CS8716"
   - "CS8750"
+  # C# 9 diagnostics start here
   - "CS8751"
   - "CS8752"
   - "CS8753"
@@ -438,12 +446,6 @@ f1_keywords:
   - "CS8973"
   - "CS8974"
   - "CS8976"
-  # C# 11 errors start here
-  - "CS8984"
-  - "CS8989"
-  - "CS9044"
-  - "CS9046"
-  - "CS9064"
 # Coming in C# 15
   - "CS9343"
   - "CS9344"
@@ -456,12 +458,6 @@ f1_keywords:
   - "CS9351"
   - "CS9352"
   - "CS9353"
-  - "CS9354"
-  - "CS9355"
-  - "CS9356"
-  - "CS9357"
-  - "CS9358"
-  - "CS9359"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

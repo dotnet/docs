@@ -509,8 +509,8 @@ items:
       operator, overloaded operator, user defined operator,
       CS0056, CS0057, CS0215, CS0216, CS0217, CS0218, CS0448, CS0552, CS0553, CS0554,
       CS0555, CS0556, CS0557, CS0558, CS0559, CS0562, CS0563, CS0564, CS0567, CS0590,
-      CS0660, CS0661, CS0715, CS1037, CS1553, CS1554, CS8930, CS8931, CS9023, CS9024,
-      CS9025, CS9027, CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
+      CS0660, CS0661, CS0715, CS1037, CS1553, CS1554, CS9023, CS9024, CS9025, CS9027,
+      CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
     displayName: >
@@ -616,7 +616,7 @@ items:
       CS0820, CS0826, CS0846, CS1062, CS1063, CS1064, CS1552, CS1586, CS1920, CS1921,
       CS1925, CS1950, CS1954, CS3007, CS3016, CS9174, CS9176, CS9185, CS9186, CS9187,
       CS9188, CS9203, CS9208, CS9209, CS9210, CS9212, CS9213, CS9214, CS9215, CS9222,
-      CS9332
+      CS9332, CS9354, CS9355, CS9356, CS9357, CS9358, CS9359
   - name: Inline arrays
     href: ./compiler-messages/inline-array-errors.md
     displayName: >
@@ -666,7 +666,7 @@ items:
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: >
       CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, CS8931,
-      CS8932
+      CS8932, CS9044, CS9046
   - name: Thread synchronization
     href: ./compiler-messages/lock-semantics.md
     displayName: CS0185, CS9216, CS9217

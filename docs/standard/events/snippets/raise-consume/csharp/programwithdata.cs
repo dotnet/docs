@@ -1,13 +1,11 @@
-// <snippet7>
-using System;
-
-namespace ConsoleApplication4
+﻿namespace ConsoleApplication3
 {
-    class ProgramFour
+    // <snippet6>
+    class ProgramThree
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Counter c = new Counter(new Random().Next(10));
+            Counter c = new(new Random().Next(10));
             c.ThresholdReached += c_ThresholdReached;
 
             Console.WriteLine("press 'a' key to increase total");
@@ -18,30 +16,25 @@ namespace ConsoleApplication4
             }
         }
 
-        static void c_ThresholdReached(Object sender, ThresholdReachedEventArgs e)
+        static void c_ThresholdReached(object? sender, ThresholdReachedEventArgs e)
         {
             Console.WriteLine($"The threshold of {e.Threshold} was reached at {e.TimeReached}.");
             Environment.Exit(0);
         }
     }
 
-    class Counter
+    class Counter(int passedThreshold)
     {
-        private int threshold;
-        private int total;
-
-        public Counter(int passedThreshold)
-        {
-            threshold = passedThreshold;
-        }
+        private readonly int _threshold = passedThreshold;
+        private int _total;
 
         public void Add(int x)
         {
-            total += x;
-            if (total >= threshold)
+            _total += x;
+            if (_total >= _threshold)
             {
                 ThresholdReachedEventArgs args = new ThresholdReachedEventArgs();
-                args.Threshold = threshold;
+                args.Threshold = _threshold;
                 args.TimeReached = DateTime.Now;
                 OnThresholdReached(args);
             }
@@ -49,14 +42,10 @@ namespace ConsoleApplication4
 
         protected virtual void OnThresholdReached(ThresholdReachedEventArgs e)
         {
-            ThresholdReachedEventHandler handler = ThresholdReached;
-            if (handler != null)
-            {
-                handler(this, e);
-            }
+            ThresholdReached?.Invoke(this, e);
         }
 
-        public event ThresholdReachedEventHandler ThresholdReached;
+        public event EventHandler<ThresholdReachedEventArgs>? ThresholdReached;
     }
 
     public class ThresholdReachedEventArgs : EventArgs
@@ -64,7 +53,5 @@ namespace ConsoleApplication4
         public int Threshold { get; set; }
         public DateTime TimeReached { get; set; }
     }
-
-    public delegate void ThresholdReachedEventHandler(Object sender, ThresholdReachedEventArgs e);
+    // </snippet6>
 }
-// </snippet7>

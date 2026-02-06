@@ -16,11 +16,13 @@ f1_keywords:
   - "CS1537"
   - "CS1671"
   - "CS1679"
+  - "CS1680"
   - "CS1681"
   - "CS1730"
   - "CS2034"
   - "CS7000"
   - "CS7007"
+  - "CS7015"
   - "CS8019"
   - "CS8083"
   - "CS8085"
@@ -50,11 +52,13 @@ helpviewer_keywords:
   - "CS1537"
   - "CS1671"
   - "CS1679"
+  - "CS1680"
   - "CS1681"
   - "CS1730"
   - "CS2034"
   - "CS7000"
   - "CS7007"
+  - "CS7015"
   - "CS8019"
   - "CS8083"
   - "CS8085"
@@ -89,11 +93,13 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS1537**](#alias-name-conflicts): *Error: The using alias 'alias' appeared previously in this namespace.*
 - [**CS1671**](#file-scoped-namespace): *Error: A namespace declaration cannot have modifiers or attributes.*
 - [**CS1679**](#using-directive): *Error: Invalid extern alias for '/reference'; 'identifier' is not a valid identifier.*
+- [**CS1680**](#using-directive): *Error: Invalid reference alias option: 'alias=' -- missing filename.*
 - [**CS1681**](#using-directive): *Error: You cannot redefine the global extern alias.*
 - [**CS1730**](#using-directive): *Error: Assembly and module attributes must precede all other elements defined in a file except using clauses and extern alias declarations.*
 - [**CS2034**](#using-directive): *Error: A /reference option that declares an extern alias can only have one filename. To specify multiple aliases or filenames, use multiple /reference options.*
 - [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
 - [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead*
+- [**CS7015**](#using-directive): *Error: 'extern alias' is not valid in this context.*
 - [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
 - [**CS8085**](#restrictions-on-using-aliases): *Error: A 'using static' directive cannot be used to declare an alias.*
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*

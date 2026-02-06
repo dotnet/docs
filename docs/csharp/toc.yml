@@ -419,6 +419,8 @@ items:
     href: roslyn-sdk/syntax-visualizer.md
   - name: Choose diagnostic IDs
     href: roslyn-sdk/choosing-diagnostic-ids.md
+  - name: Source generators overview
+    href: roslyn-sdk/source-generators-overview.md
   - name: Quick starts
     items:
     - name: Syntax analysis
@@ -431,6 +433,8 @@ items:
     items:
     - name: Build your first analyzer and code fix
       href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+    - name: Create an incremental source generator
+      href: roslyn-sdk/tutorials/incremental-source-generator-tutorial.md
 # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
 #    - name: Get started writing custom analyzers and code fixes
 #  - name: Tutorials

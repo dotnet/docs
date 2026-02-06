@@ -145,7 +145,6 @@ Rules for asynchronous test code:
 ## Related documentation
 
 - [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
-- [Write tests](../unit-testing-mstest-writing-tests.md)
 - [Assertions](../unit-testing-mstest-writing-tests-assertions.md)
 - [Lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md)
 - [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)

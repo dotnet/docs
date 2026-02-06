@@ -49,14 +49,14 @@ You generate embeddings for your raw data by using an AI embedding model, which 
 
 ### Store and process embeddings in a vector database
 
-After you generate embeddings, you'll need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [available vector database solutions](vector-databases.md#semantic-kernel-vector-database-solutions).
+After you generate embeddings, you'll need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [Vector databases for .NET + AI](vector-databases.md).
 
 ### Using embeddings in your LLM solution
 
-When building LLM-based applications, you can use Semantic Kernel to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
+When building LLM-based applications, you can use Agent Framework to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
 
 ## Related content
 
 - [How GenAI and LLMs work](how-genai-and-llms-work.md)
 - [Retrieval-augmented generation](rag.md)
-- [Training: Develop AI agents with Azure OpenAI and Semantic Kernel](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
+- [Training: Develop an AI agent with Microsoft Agent Framework](/training/modules/develop-ai-agent-with-semantic-kernel/)

@@ -1,6 +1,6 @@
 ---
 title: Authenticate to Azure OpenAI using .NET
-description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET
+description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET.
 author: alexwolfmsft
 ms.topic: concept-article
 ms.date: 04/09/2025
@@ -8,7 +8,7 @@ ms.date: 04/09/2025
 
 # Azure AI services authentication and authorization using .NET
 
-Application requests to Azure AI Services must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel SDK, as well as SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
+Application requests to Azure AI Services must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. Most AI services offer two primary ways to authenticate apps and users:
 
 - **Key-based authentication** provides access to an Azure service using secret key values. These secret values are sometimes known as API keys or access keys depending on the service.
 - **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
@@ -80,18 +80,18 @@ az login
 
 ### Configure the app code
 
-Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Microsoft Entra authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. Visit the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation for the full set of supported environment credentials and the order in which they are searched.
+Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Microsoft Entra authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. For the full set of supported environment credentials and the order in which they are searched, see the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation.
 
-For example, configure Semantic Kernel to authenticate using `DefaultAzureCredential` using the following code:
+For example, configure Azure OpenAI to authenticate using `DefaultAzureCredential` using the following code:
 
 ```csharp
-Kernel kernel = Kernel
-    .CreateBuilder()
-    .AddAzureOpenAITextGeneration(
-        "your-model",
-        "your-endpoint",
-        new DefaultAzureCredential())
-    .Build();
+AzureOpenAIClient azureClient =
+    new(
+        new Uri(endpoint),
+        new DefaultAzureCredential(new DefaultAzureCredentialOptions()
+            { TenantId = tenantId }
+        )
+    );
 ```
 
 `DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the AI service. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned to your app.

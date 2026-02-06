@@ -38,13 +38,13 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8947**](#interpolated-string-handler-usage-restrictions): *Parameter occurs after interpolated string handler parameter in the parameter list, but is used as an argument for interpolated string handler conversions. This will require the caller to reorder parameters with named arguments at the call site. Consider putting the interpolated string handler parameter after all arguments involved.*
 - [**CS8953**](#interpolated-string-handler-usage-restrictions): *An interpolated string handler construction cannot use dynamic. Manually construct an instance instead.*
 - [**CS8976**](#interpolated-string-handler-usage-restrictions): *Interpolated string handler conversions that reference the instance being indexed cannot be used in indexer member initializers.*
-- [**CS9205**](#interpolation-expression-syntax): *Expected interpolated string*
+- [**CS9205**](#interpolation-expression-syntax): *Expected interpolated string.*
 - [**CS9325**](#interpolated-string-handler-usage-restrictions): *Interpolated string handler arguments are not allowed in this context.*
 
 ## Interpolation expression syntax
 
 - **CS8361** - *A conditional expression cannot be used directly in a string interpolation because the ':' ends the interpolation. Parenthesize the conditional expression.*
-- **CS9205** - *Expected interpolated string*
+- **CS9205** - *Expected interpolated string.*
 
 To correct these errors, apply the following techniques:
 
@@ -54,7 +54,7 @@ To correct these errors, apply the following techniques:
 ## Interpolated string handler type implementation
 
 - **CS8941** - *Interpolated string handler method is malformed. It does not return 'void' or 'bool'.*
-- **CS8942** - *Interpolated string handler method has inconsistent return type. Expected to return type.*
+- **CS8942** - *Interpolated string handler method has inconsistent return type. Expected to return a different type.*
 - **CS8946** - *Type is not an interpolated string handler type.*
 
 When you implement a custom [interpolated string handler](../../advanced-topics/performance/interpolated-string-handler.md), apply the following techniques:

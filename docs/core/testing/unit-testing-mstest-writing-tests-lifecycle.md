@@ -360,7 +360,7 @@ public class TestLevelCleanupExample
 
 1. **Consider test isolation**: Each test should be independent. Avoid shared mutable state between tests.
 
-1. **Use GlobalTest* sparingly**: Global lifecycle methods run for every test, so keep them lightweight.
+1. **Use GlobalTest sparingly**: Global lifecycle methods run for every test, so keep them lightweight.
 
 ## See also
 

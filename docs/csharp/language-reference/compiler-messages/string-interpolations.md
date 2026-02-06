@@ -76,4 +76,3 @@ When you use interpolated string handlers, apply the following techniques:
 - Don't use `dynamic` typed values as arguments to interpolated string handler conversions (**CS8953**). The compiler can't determine the handler's construction requirements at compile time when dynamic values are involved. Instead, manually construct the handler instance and call its methods directly.
 - Don't use interpolated strings that reference the instance being initialized in indexer member initializers (**CS8976**). During object initialization, the instance isn't fully constructed, so handler conversions that reference it through `this` aren't allowed. Use a separate statement after initialization to set the indexer value.
 - Check the context where you're using interpolated string handler arguments (**CS9325**). Some contexts don't support handler argument attributes. In these cases, use a regular interpolated string or manually construct the handler.
-

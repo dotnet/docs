@@ -609,6 +609,10 @@ items:
       CS1009, CS1010, CS1011, CS1012, CS1039, CS8996, CS8997, CS8998, CS8999, CS9000,
       CS9001, CS9002, CS9003, CS9004, CS9005, CS9006,
       CS9007, CS9008, CS9009, CS9026, CS9047, CS9274, CS9315
+  - name: String interpolations
+    href: ./compiler-messages/string-interpolations.md
+    displayName: >
+      CS8941, CS8942, CS8946, CS8947, CS8953, CS8976
   - name: Array declarations
     href: ./compiler-messages/array-declaration-errors.md
     displayName: >

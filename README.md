@@ -9,16 +9,16 @@
 [![GitHub pulls-unmerged](https://img.shields.io/github/issues-search/dotnet/docs?label=unmerged%20pull%20requests&query=is%3Apr%20is%3Aclosed%20is%3Aunmerged&color=red)](https://github.com/dotnet/docs/pulls?q=is%3Apr+is%3Aclosed+is%3Aunmerged)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9215/badge)](https://www.bestpractices.dev/projects/9215)
 
-This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
+This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories:
 
-- [ASP.NET Core](https://github.com/dotnet/AspNetCore.Docs)
-- [.NET Aspire](https://github.com/dotnet/docs-aspire)
-- [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
-- [.NET MAUI](https://github.com/dotnet/docs-maui)
-- [Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
+- [.NET docs](https://github.com/dotnet/docs)
+- [ASP.NET Core docs](https://github.com/dotnet/AspNetCore.Docs)
+- [.NET Desktop workloads docs](https://github.com/dotnet/docs-desktop)
+- [.NET MAUI docs](https://github.com/dotnet/docs-maui)
+- [Entity Framework docs](https://github.com/dotnet/EntityFramework.Docs)
 - [Community toolkit](https://github.com/MicrosoftDocs/communitytoolkit)
 
-API reference documentation is published from the following repositories. All listed reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
+API reference documentation is published from the following repositories:
 
 - [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)
@@ -26,6 +26,8 @@ API reference documentation is published from the following repositories. All li
 - [Entity Framework 6/Core API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
 - [Roslyn API reference](https://github.com/dotnet/roslyn-api-docs)
 - [Community toolkit API reference](https://github.com/MicrosoftDocs/community-toolkit-api-ref-dotnet)
+
+These API reference doc repositories are public. Only some accept issues and pull requests. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. Some folders in `dotnet-api-docs` use the product repository as the source of truth.
 
 The C# language specification documentation comes from the following two repositories:
 

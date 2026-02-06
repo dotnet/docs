@@ -60,6 +60,15 @@ The following example shows a minimal incremental source generator that produces
 
 The `[Generator]` attribute marks the class as a source generator. The `Initialize` method registers a post-initialization output that injects the `GeneratedHelper` class into every compilation that references this generator.
 
+### Common input providers
+
+The `IncrementalGeneratorInitializationContext` exposes several providers that supply data to the pipeline:
+
+- **`SyntaxProvider`**: Use `CreateSyntaxProvider` to select syntax nodes based on a fast predicate, then transform them with the semantic model. Use `ForAttributeWithMetadataName` when you need to find types or members that carry a specific attribute—it combines syntactic filtering and semantic resolution in a single call.
+- **`AdditionalTextsProvider`**: Access non-C# files (for example, `.csv`, `.json`, or `.xml` files) that are included in the project as `AdditionalFiles`. This provider enables generators that compile external data into C# code at build time.
+- **`CompilationProvider`**: Access the full `Compilation` object for advanced scenarios where you need global compilation information.
+- **`AnalyzerConfigOptionsProvider`**: Read configuration from `.editorconfig` files or MSBuild properties.
+
 ### How the compiler caches results
 
 The compiler tracks the inputs to each pipeline stage. When a file changes, the compiler reruns only the stages whose inputs were affected. If a stage produces the same output as before, downstream stages don't rerun. This caching behavior is automatic—you get it by structuring your generator as a pipeline.
@@ -70,6 +79,7 @@ Source generator projects require a specific setup:
 
 - **Target `netstandard2.0`.** The compiler host loads generators as .NET Standard 2.0 assemblies.
 - **Reference `Microsoft.CodeAnalysis.CSharp`.** This package provides the Roslyn APIs for syntax analysis and code generation.
+- **Reference `Microsoft.CodeAnalysis.Analyzers`.** This package provides analyzer rules that help you author correct generators.
 - **Set `EnforceExtendedAnalyzerRules` to `true`.** This property enables additional rules that help you avoid common source generator pitfalls.
 
 A typical source generator project file looks like this:
@@ -80,13 +90,15 @@ A typical source generator project file looks like this:
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp"
-                      Version="4.12.0"
+                      Version="4.10.0"
+                      PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers"
+                      Version="3.3.4"
                       PrivateAssets="all" />
   </ItemGroup>
 
@@ -107,6 +119,18 @@ The consuming project references the generator as an analyzer, not as a regular 
 
 The `OutputItemType="Analyzer"` attribute tells the compiler to load the referenced project as an analyzer. The `ReferenceOutputAssembly="false"` attribute prevents the consuming project from referencing the generator's types directly at runtime.
 
+### Expose additional files to a generator
+
+To pass non-C# files to a source generator (for example, `.csv` data files), include them as `AdditionalFiles` in the consuming project:
+
+```xml
+<ItemGroup>
+  <AdditionalFiles Include="Data\*.csv" />
+</ItemGroup>
+```
+
+The generator accesses these files through `context.AdditionalTextsProvider` in its pipeline.
+
 ## Debug source generators
 
 To debug a source generator, add the following code at the start of the `Initialize` method:
@@ -126,12 +150,22 @@ When you build the consuming project, the debugger attach dialog appears, and yo
 
 Follow these guidelines when building source generators:
 
-- **Keep the predicate fast.** The `predicate` callback in `CreateSyntaxProvider` runs on every syntax node. Perform only quick syntactic checks—don't access the semantic model in the predicate.
+- **Use `ForAttributeWithMetadataName` for attribute-driven generators.** It's simpler and more efficient than manually filtering with `CreateSyntaxProvider`.
+- **Keep the predicate fast.** The `predicate` callback in `CreateSyntaxProvider` or `ForAttributeWithMetadataName` runs on every syntax node. Perform only quick syntactic checks.
 - **Use `static` lambdas.** Mark your pipeline callbacks as `static` to avoid accidental closures that prevent caching.
-- **Handle the global namespace.** Classes declared without a namespace need special handling in your output.
+- **Return small, immutable data objects from transforms.** This lets the pipeline compare results between runs and skip downstream stages when nothing changed.
+- **Handle the global namespace.** Types declared without a namespace need special handling in your output.
 - **Generate `partial` types.** Emit `partial` classes and methods so your generated code integrates with user-written code.
+- **Use fully qualified type names.** Prefix generated type references with `global::` (for example, `global::System.Text.StringBuilder`) to avoid namespace conflicts.
 - **Include `auto-generated` comments.** Start generated files with `// <auto-generated/>` so code analysis tools skip them.
 - **Report errors as diagnostics.** Use `SourceProductionContext.ReportDiagnostic` instead of throwing exceptions.
+
+## Samples
+
+Working source generator samples are available in the [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/roslyn-sdk/SourceGenerators) repository:
+
+- [**GenerateMembers**](https://github.com/dotnet/samples/tree/main/csharp/roslyn-sdk/SourceGenerators/GenerateMembers)—Uses `ForAttributeWithMetadataName` to add a `Describe()` method and a `PropertyNames` list to any type decorated with a marker attribute.
+- [**CsvGenerator**](https://github.com/dotnet/samples/tree/main/csharp/roslyn-sdk/SourceGenerators/CsvGenerator)—Uses `AdditionalTextsProvider` to read `.csv` files at build time and generate strongly-typed C# classes from them.
 
 ## Next steps
 

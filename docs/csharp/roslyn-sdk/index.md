@@ -130,6 +130,7 @@ To learn more, see the following resources:
 
 - [Source generators overview](source-generators-overview.md)
 - [Tutorial: Create an incremental source generator](tutorials/incremental-source-generator-tutorial.md)
+- [Source generator samples](https://github.com/dotnet/samples/tree/main/csharp/roslyn-sdk/SourceGenerators) in the dotnet/samples repository
 - [Roslyn incremental generators specification](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md)
 
 ## Next steps

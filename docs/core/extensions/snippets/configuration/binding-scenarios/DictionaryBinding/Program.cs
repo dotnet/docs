@@ -30,8 +30,8 @@ Console.WriteLine("=== Dictionary Keys with Colons (NOT Supported) ===");
 var colonConfig = new ConfigurationBuilder()
     .AddInMemoryCollection(new Dictionary<string, string?>
     {
-        // Attempting to use a colon in a key - will be interpreted as hierarchy
-        ["MyDict:key__with__colon"] = "value1",  // Use double underscore as workaround
+        // Using double underscore instead of colon (e.g., "http://example.com" becomes "http__//example.com")
+        ["MyDict:http__//example.com"] = "value1",  
         ["MyDict:normalkey"] = "value2"
     })
     .Build();

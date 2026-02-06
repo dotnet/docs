@@ -116,7 +116,7 @@ The configuration binder has specific behaviors and limitations when working wit
 
 ##### Binding to dictionaries
 
-When binding configuration to a <xref:System.Collections.Generic.Dictionary%602> where the value is a mutable collection type (like arrays or lists), binding behavior changed in .NET 7. Starting with .NET 7, binding to the same key multiple times extends the collection values instead of replacing them. For more information, see [Binding config to dictionary extends values](../compatibility/extensions/7.0/config-bind-dictionary.md).
+When you bind configuration to a <xref:System.Collections.Generic.Dictionary%602> where the value is a mutable collection type (like arrays or lists), the behavior changed in .NET 7. Starting with .NET 7, repeated binds to the same key extend the collection values instead of replacing them. For more information, see [Binding config to dictionary extends values](../compatibility/extensions/7.0/config-bind-dictionary.md).
 
 The following example demonstrates this behavior:
 

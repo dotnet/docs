@@ -75,21 +75,37 @@ public class TestMethodExamples
 
 ### `DiscoverInternalsAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DiscoverInternalsAttribute> assembly attribute enables MSTest to discover `internal` test classes and methods. By default, only `public` tests are discovered.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DiscoverInternalsAttribute> assembly attribute enables MSTest to discover `internal` test classes and methods. By default, only `public` tests are discovered. This attribute is particularly useful when you have parameterized tests that use internal types as parameters:
 
 ```csharp
 [assembly: DiscoverInternals]
 
+internal record TestInput(int Value, string Description);
+
 [TestClass]
-internal class InternalTests
+public class CalculatorTests
 {
-    [TestMethod]
-    internal void InternalTest()
+    internal static IEnumerable<TestInput> TestData
     {
-        Assert.IsTrue(true);
+        get
+        {
+            yield return new TestInput(1, "one");
+            yield return new TestInput(2, "two");
+        }
+    }
+
+    [TestMethod]
+    [DynamicData(nameof(TestData))]
+    internal void Add_WithTestInput_ReturnsExpected(TestInput input)
+    {
+        var calculator = new Calculator();
+        var result = calculator.Add(input.Value, 1);
+        Assert.AreEqual(input.Value + 1, result);
     }
 }
 ```
+
+Without `DiscoverInternals`, the test method and its internal `TestInput` parameter type wouldn't be discovered by the test runner.
 
 ## Core concepts
 

@@ -120,9 +120,6 @@ In Visual Studio Test Explorer, use the search box with `Trait:` prefix:
 - `Trait:"TestCategory=Integration"` - shows integration tests
 - `-Trait:"TestCategory=Slow"` - excludes slow tests
 
-> [!TIP]
-> Related analyzer: [MSTEST0030](mstest-analyzers/mstest0030.md) - validates test category naming conventions.
-
 ### `TestPropertyAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> adds custom key-value metadata to tests. Use this attribute when built-in attributes don't meet your needs.
@@ -156,7 +153,7 @@ Properties appear in the Visual Studio **Properties** window under **Test specif
 
 ```bash
 # Filter by custom property
-dotnet test --filter "TestProperty.Feature=Authentication"
+dotnet test --filter "Feature=Authentication"
 ```
 
 ## Test ownership and priority
@@ -235,6 +232,9 @@ dotnet test --filter "Priority=0|Priority=1"
 ### `DescriptionAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute> provides a human-readable description of what the test verifies.
+
+> [!WARNING]
+> Use `Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute`, not `System.ComponentModel.DescriptionAttribute`. The [MSTEST0031](mstest-analyzers/mstest0031.md) analyzer detects incorrect usage.
 
 ```csharp
 [TestClass]
@@ -321,44 +321,6 @@ public void KnownIssue_AwaitingFix()
 }
 ```
 
-## Team Foundation Server integration
-
-These attributes link tests to Team Foundation Server (Azure DevOps) project hierarchy.
-
-### `CssIterationAttribute`
-
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssIterationAttribute> associates tests with a TFS iteration path.
-
-```csharp
-[TestClass]
-[CssIteration("MyProject\\Release 1\\Sprint 5")]
-public class Sprint5Tests
-{
-    [TestMethod]
-    public void NewFeature_WorksCorrectly()
-    {
-        // Test for Sprint 5 work
-    }
-}
-```
-
-### `CssProjectStructureAttribute`
-
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute> associates tests with a TFS project area path.
-
-```csharp
-[TestClass]
-[CssProjectStructure("MyProject\\Payments\\Billing")]
-public class BillingTests
-{
-    [TestMethod]
-    public void GenerateInvoice_CreatesValidDocument()
-    {
-        // Test in the Billing area
-    }
-}
-```
-
 ## Combining attributes
 
 Combine multiple metadata attributes for comprehensive test organization:
@@ -421,7 +383,7 @@ dotnet test --filter "TestCategory=Smoke|TestCategory=Critical"
 dotnet test --filter TestCategory!=Slow
 
 # Filter by custom property
-dotnet test --filter "TestProperty.Feature=Payments"
+dotnet test --filter "Feature=Payments"
 ```
 
 ### Visual Studio Test Explorer
@@ -439,4 +401,5 @@ For more information on test filtering, see [Run selective unit tests](selective
 - [Run selective unit tests](selective-unit-tests.md)
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
 - [Test execution and control](unit-testing-mstest-writing-tests-controlling-execution.md)
-- [MSTEST0030: Test category naming](mstest-analyzers/mstest0030.md)
+- [MSTEST0015: Test method should not be ignored](mstest-analyzers/mstest0015.md)
+- [MSTEST0031: Do not use System.ComponentModel.DescriptionAttribute](mstest-analyzers/mstest0031.md)

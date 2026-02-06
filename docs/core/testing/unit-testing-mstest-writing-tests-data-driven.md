@@ -31,6 +31,12 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> allows 
 
 The number and types of arguments must exactly match the test method signature.
 
+> [!TIP]
+> Related analyzers:
+>
+> - [MSTEST0014](mstest-analyzers/mstest0014.md) validates that `DataRow` arguments match the test method signature.
+> - [MSTEST0042](mstest-analyzers/mstest0042.md) detects duplicate `DataRow` entries that would run the same test case multiple times.
+
 ### Basic usage
 
 ```csharp
@@ -147,36 +153,6 @@ public class IgnoreDataRowExample
     }
 }
 ```
-
-### Custom DataRow attributes
-
-Create specialized `DataRow` attributes by inheriting from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>:
-
-```csharp
-[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
-public class MyCustomDataRowAttribute : DataRowAttribute
-{
-    public MyCustomDataRowAttribute(params object[] data) : base(data)
-    {
-        // Add custom logic if needed
-    }
-}
-
-[TestClass]
-public class CustomDataRowExample
-{
-    [TestMethod]
-    [MyCustomDataRow(1, 2)]
-    [MyCustomDataRow(3, 4)]
-    public void TestMethod(int i, int j)
-    {
-        Assert.IsTrue(i < j);
-    }
-}
-```
-
-> [!TIP]
-> Related analyzer: [MSTEST0014](mstest-analyzers/mstest0014.md) detects type mismatches between `DataRow` arguments and method parameters.
 
 ## `DynamicDataAttribute`
 
@@ -341,12 +317,6 @@ public class IgnoreDynamicDataExample
 
 > [!TIP]
 > To ignore individual test cases, use `TestDataRow<T>` with its `IgnoreMessage` property. See the [TestDataRow\<T>](#testdatarow) section.
-
-> [!TIP]
-> Related analyzers:
->
-> - [MSTEST0018](mstest-analyzers/mstest0018.md) - validates `DynamicData` source exists and is accessible.
-> - [MSTEST0042](mstest-analyzers/mstest0042.md) - ensures `DynamicData` returns the correct type.
 
 ## TestDataRow
 
@@ -583,5 +553,6 @@ public class UnfoldingExample
 - [TestContext class](unit-testing-mstest-writing-tests-testcontext.md)
 - [MSTEST0014: DataRow should be valid](mstest-analyzers/mstest0014.md)
 - [MSTEST0018: DynamicData should be valid](mstest-analyzers/mstest0018.md)
-- [MSTEST0042: Avoid duplicated 'DataRow' entries](mstest-analyzers/mstest0042.md)
-- [MSTEST0052: Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior](mstest-analyzers/mstest0052.md)
+- [MSTEST0042: Duplicate DataRow](mstest-analyzers/mstest0042.md)
+- [MSTEST0052: Avoid explicit DynamicDataSourceType](mstest-analyzers/mstest0052.md)
+- [MSTEST0062: Avoid out/ref test method parameters](mstest-analyzers/mstest0062.md)

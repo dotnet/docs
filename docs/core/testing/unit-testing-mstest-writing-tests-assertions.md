@@ -151,6 +151,25 @@ Available APIs are:
 
 1. **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: When functionality exists in both classes, use the `Assert` class for better discoverability and consistency.
 
+## Related analyzers
+
+The following analyzers help ensure proper usage of assertions:
+
+- [MSTEST0006](mstest-analyzers/mstest0006.md) - Avoid `ExpectedException` attribute, use `Assert.Throws` methods instead.
+- [MSTEST0017](mstest-analyzers/mstest0017.md) - Assertion arguments should be passed in the correct order.
+- [MSTEST0023](mstest-analyzers/mstest0023.md) - Do not negate boolean assertions.
+- [MSTEST0025](mstest-analyzers/mstest0025.md) - Prefer `Assert.Fail` over always-false conditions.
+- [MSTEST0026](mstest-analyzers/mstest0026.md) - Assertion arguments should avoid conditional access.
+- [MSTEST0032](mstest-analyzers/mstest0032.md) - Review always-true assert conditions.
+- [MSTEST0037](mstest-analyzers/mstest0037.md) - Use proper assert methods.
+- [MSTEST0038](mstest-analyzers/mstest0038.md) - Avoid `Assert.AreSame` with value types.
+- [MSTEST0039](mstest-analyzers/mstest0039.md) - Use newer `Assert.Throws` methods.
+- [MSTEST0040](mstest-analyzers/mstest0040.md) - Avoid using asserts in async void context.
+- [MSTEST0046](mstest-analyzers/mstest0046.md) - Use `Assert` instead of `StringAssert`.
+- [MSTEST0051](mstest-analyzers/mstest0051.md) - `Assert.Throws` should contain a single statement.
+- [MSTEST0053](mstest-analyzers/mstest0053.md) - Avoid `Assert` format parameters.
+- [MSTEST0058](mstest-analyzers/mstest0058.md) - Avoid asserts in catch blocks.
+
 ## See also
 
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)

@@ -84,8 +84,8 @@ public class AssemblyLifecycleExample
 > [!TIP]
 > Related analyzers:
 >
-> - [MSTEST0009](mstest-analyzers/mstest0009.md) - validates `AssemblyInitialize` signature.
-> - [MSTEST0010](mstest-analyzers/mstest0010.md) - validates `AssemblyCleanup` signature.
+> - [MSTEST0012](mstest-analyzers/mstest0012.md) - validates `AssemblyInitialize` signature.
+> - [MSTEST0013](mstest-analyzers/mstest0013.md) - validates `AssemblyCleanup` signature.
 
 ## Class-level lifecycle
 
@@ -167,8 +167,9 @@ public class DerivedTestClass : BaseTestClass
 > [!TIP]
 > Related analyzers:
 >
-> - [MSTEST0011](mstest-analyzers/mstest0011.md) - validates `ClassInitialize` signature.
-> - [MSTEST0012](mstest-analyzers/mstest0012.md) - validates `ClassCleanup` signature.
+> - [MSTEST0010](mstest-analyzers/mstest0010.md) - validates `ClassInitialize` signature.
+> - [MSTEST0011](mstest-analyzers/mstest0011.md) - validates `ClassCleanup` signature.
+> - [MSTEST0034](mstest-analyzers/mstest0034.md) - recommends using `ClassCleanupBehavior.EndOfClass`.
 
 ## Global test-level lifecycle
 
@@ -209,6 +210,9 @@ public class GlobalTestLifecycleExample
 
 > [!NOTE]
 > When multiple `GlobalTestInitialize` or `GlobalTestCleanup` methods exist, the execution order isn't guaranteed. The `TimeoutAttribute` isn't supported on `GlobalTestInitialize` methods.
+
+> [!TIP]
+> Related analyzer: [MSTEST0050](mstest-analyzers/mstest0050.md) - validates global test fixture methods.
 
 ## Test-level lifecycle
 
@@ -256,6 +260,7 @@ public class TestLevelSetupExample
 | Timeout support | No | Yes (with `[Timeout]` attribute) |
 | Execution order | First | After constructor |
 | Inheritance | Base then derived | Base then derived |
+| Exception behavior | Cleanup and Dispose don't run (no instance exists) | Cleanup and Dispose still run |
 
 > [!TIP]
 > **Which approach should I use?** Constructors are generally preferred because they allow you to use `readonly` fields, which enforces immutability and makes your test class easier to reason about. Use `TestInitialize` when you need async initialization or timeout support.
@@ -280,7 +285,7 @@ Use `TestCleanup` or `IDisposable`/`IAsyncDisposable` for per-test cleanup:
 
 ```csharp
 [TestClass]
-public class TestLevelCleanupExample : IAsyncDisposable
+public class TestLevelCleanupExample
 {
     private HttpClient? _client;
 
@@ -293,18 +298,10 @@ public class TestLevelCleanupExample : IAsyncDisposable
     [TestCleanup]
     public void TestCleanup()
     {
-        // Runs after each test method
-        // Runs before Dispose/DisposeAsync
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        // Runs after TestCleanup
         if (_client != null)
         {
             _client.Dispose();
         }
-        await Task.CompletedTask;
     }
 
     [TestMethod]
@@ -347,8 +344,9 @@ public class TestLevelCleanupExample : IAsyncDisposable
 > [!TIP]
 > Related analyzers:
 >
-> - [MSTEST0013](mstest-analyzers/mstest0013.md) - validates `TestInitialize` signature.
-> - [MSTEST0063](mstest-analyzers/mstest0063.md) - validates async fixture patterns.
+> - [MSTEST0008](mstest-analyzers/mstest0008.md) - validates `TestInitialize` signature.
+> - [MSTEST0009](mstest-analyzers/mstest0009.md) - validates `TestCleanup` signature.
+> - [MSTEST0063](mstest-analyzers/mstest0063.md) - validates test class constructor.
 
 ## Best practices
 

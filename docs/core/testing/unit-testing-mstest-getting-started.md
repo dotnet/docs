@@ -60,7 +60,7 @@ If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.
 
 - `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality
 - `Microsoft.NET.Test.Sdk` for VSTest integration and test host support
-- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for Microsoft Testing Platform extensions
+- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md) extensions
 
 ## NuGet packages overview
 

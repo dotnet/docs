@@ -84,7 +84,7 @@ public class UIComponentTests
 ```
 
 > [!TIP]
-> Use `UseSTASynchronizationContext = true` when testing Windows Forms or WPF components that perform async operations and expect their continuations to run on the UI (STA) thread.
+> Use `UseSTASynchronizationContext = true` when testing Windows Forms or WPF components that perform async operations and expect their continuations to run on the same thread.
 
 ### `UITestMethodAttribute`
 
@@ -347,12 +347,17 @@ public class RetryTests
 
 | Property | Description | Default |
 |----------|-------------|---------|
-| `MaxRetryCount` | Maximum number of retry attempts | Required |
+| `MaxRetryAttempts` | Maximum number of retry attempts (read-only, set via constructor) | Required |
 | `MillisecondsDelayBetweenRetries` | Base delay between retries (in ms) | 0 |
 | `BackoffType` | `Constant` or `Exponential` delay | `Constant` |
 
 > [!NOTE]
 > Only one `RetryAttribute` can be present on a test method. You can't use `RetryAttribute` on methods that aren't marked with `TestMethod`.
+
+> [!TIP]
+> Related analyzers:
+>
+> - [MSTEST0043](mstest-analyzers/mstest0043.md) - recommends using `RetryAttribute` on test methods.
 
 ### Custom retry implementations
 
@@ -382,7 +387,12 @@ Conditional execution attributes control whether tests run based on specific con
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute> is the abstract base class for conditional execution. MSTest provides several built-in implementations.
 
 > [!NOTE]
-> Condition attributes aren't inherited. Applying them to a base class doesn't affect derived classes.
+> By default, condition attributes aren't inherited. Applying them to a base class doesn't affect derived classes. Custom condition attributes can override this behavior by redefining `AttributeUsage`, but this isn't recommended to maintain consistency with the built-in condition attributes.
+
+> [!TIP]
+> Related analyzers:
+>
+> - [MSTEST0041](mstest-analyzers/mstest0041.md) - recommends using condition-based attributes with test classes.
 
 ### `OSConditionAttribute`
 
@@ -426,6 +436,11 @@ public class OSSpecificTests
 
 Combine operating systems with the bitwise OR operator (`|`).
 
+> [!TIP]
+> Related analyzers:
+>
+> - [MSTEST0061](mstest-analyzers/mstest0061.md) - recommends using `OSCondition` attribute instead of runtime checks.
+
 ### `CIConditionAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CIConditionAttribute> runs or skips tests based on whether they're executing in a continuous integration environment.
@@ -460,6 +475,9 @@ public class CIAwareTests
 ### `IgnoreAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> unconditionally skips a test class or method. Optionally provide a reason for ignoring.
+
+> [!TIP]
+> Related analyzer: [MSTEST0015](mstest-analyzers/mstest0015.md) - Test method should not be ignored. Enable this analyzer to detect tests that are permanently ignored.
 
 ```csharp
 [TestClass]
@@ -537,5 +555,9 @@ public class TrackedIgnoreExamples
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md)
 - [Write tests in MSTest](unit-testing-mstest-writing-tests.md)
-- [MSTEST0001: Explicitly enable or disable tests parallelization](mstest-analyzers/mstest0001.md)
+- [MSTEST0001: Use Parallelize attribute](mstest-analyzers/mstest0001.md)
+- [MSTEST0041: Use condition-based attributes with test class](mstest-analyzers/mstest0041.md)
+- [MSTEST0043: Use retry attribute on test method](mstest-analyzers/mstest0043.md)
 - [MSTEST0045: Use cooperative cancellation for timeout](mstest-analyzers/mstest0045.md)
+- [MSTEST0059: Use Parallelize attribute correctly](mstest-analyzers/mstest0059.md)
+- [MSTEST0061: Use OSCondition attribute instead of runtime check](mstest-analyzers/mstest0061.md)

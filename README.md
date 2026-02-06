@@ -18,7 +18,7 @@ This repository contains the conceptual documentation for .NET. The [.NET docume
 - [Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
 - [Community toolkit](https://github.com/MicrosoftDocs/communitytoolkit)
 
-API reference documentation is published from the following repositories. The following reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
+API reference documentation is published from the following repositories. All listed reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
 
 - [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)

@@ -1,11 +1,11 @@
 ---
-title: January 2026 cumulative update preview
-description: Learn about the improvements in the .NET Framework January 2026 cumulative update preview.
-ms.date: 01/29/2026
+title: February 2026 cumulative update
+description: Learn about the improvements in the .NET Framework February 2026 cumulative update.
+ms.date: 02/10/2026
 ---
-# January 2026 cumulative update preview
+# February 2026 cumulative update preview
 
-_Released January 29, 2026_
+_Released February 10, 2026_
 
 ## Summary of what's new in this release
 

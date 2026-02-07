@@ -3,7 +3,7 @@ title: February 2026 cumulative update
 description: Learn about the improvements in the .NET Framework February 2026 cumulative update.
 ms.date: 02/10/2026
 ---
-# February 2026 cumulative update preview
+# February 2026 cumulative update
 
 _Released February 10, 2026_
 
@@ -36,7 +36,7 @@ This release contains no known issues.
 
 The following table outlines the updates in this release.
 
-| Product version | Cumulative update preview |
+| Product version | Cumulative update |
 | --- | --- |
 | **Windows 11, version 26H1** | |
 | .NET Framework 4.8.1 | [5074837][kbLink] |

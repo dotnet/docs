@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # What you can build with C\#
 
-C# and the [.NET platform](../../standard/glossary.md#net-implementation) support a wide range of application types. Whatever kind of software you want to build, there's likely a .NET [workload](../../standard/glossary.md#workload) for it. This article gives you an overview of the most common types of applications, with links to get started on each one.
+C# and the [.NET platform](../../standard/glossary.md#implementation-of-net) support a wide range of application types. Whatever kind of software you want to build, there's likely a .NET [workload](../../standard/glossary.md#workload) for it. This article gives you an overview of the most common types of applications, with links to get started on each one.
 
 > [!TIP]
 > **New to programming?** Don't worry about choosing a workload yet. Focus on [learning the C# language](tutorials/index.md) first. You can explore these application types once you're comfortable with the basics.
@@ -33,7 +33,7 @@ C# supports building desktop applications for Windows and macOS:
 - **[Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)** builds rich Windows desktop apps with advanced graphics and data binding.
 - **[Windows Forms](/dotnet/desktop/winforms/)** provides a straightforward way to create Windows desktop apps with a visual designer.
 
-Get started: [.NET MAUI tutorials](/dotnet/maui/tutorials)
+Get started: [.NET MAUI tutorials](/dotnet/maui/get-started/first-app)
 
 ## Mobile applications
 

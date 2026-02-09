@@ -85,7 +85,7 @@ if (value is string s) { /* use s */ }
 
 Learn more: [Pattern matching](../fundamentals/functional/pattern-matching.md)
 
-## What's new for you in C#
+## What's new for you in C\#
 
 As you learn C#, you encounter concepts that aren't part of JavaScript. Some of these concepts might be familiar to you if you use TypeScript:
 

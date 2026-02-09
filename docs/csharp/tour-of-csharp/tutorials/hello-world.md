@@ -117,7 +117,7 @@ You're not limited to a single variable between the curly braces.
 You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, to print messages. A *method* is a block of code that implements some action. It has a name, so you can access it.
 
 > [!TIP]
-> **Learn more:** Explore [strings](../../fundamentals/types/strings.md) in depth, or read about [methods and program structure](../../fundamentals/program-structure/index.md) in the C# Fundamentals section.
+> **Learn more:** Explore [strings](../../programming-guide/strings/index.md) in depth, or read about [methods and program structure](../../fundamentals/program-structure/index.md) in the C# Fundamentals section.
 
 ## Remove whitespace from strings
 

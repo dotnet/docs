@@ -175,7 +175,6 @@ Did you come up with something like the following code (expand to see the answer
 
 For further reading on the `string` type:
 
-- [Strings in C# Fundamentals](../../fundamentals/types/strings.md).
 - [C# programming guide article on strings](../../programming-guide/strings/index.md).
 - [How to tips on working with strings](../../how-to/index.md#working-with-strings).
 
@@ -190,6 +189,6 @@ Continue to the next tutorial in this series, or explore related topics in C# Fu
 > [!div class="nextstepaction"]
 > [Explore numbers in C#](numbers-in-csharp.md)
 
-- [Strings](../../fundamentals/types/strings.md) — Learn more about the `string` type you used in this tutorial.
+- [Strings](../../programming-guide/strings/index.md) — Learn more about the `string` type you used in this tutorial.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Understand how C# programs are organized.
-- [File-based programs](../../fundamentals/program-structure/file-based-programs.md) — Learn about the `dotnet run` command you used to run your code.
+- [File-based programs](../../fundamentals/tutorials/file-based-programs.md) — Learn about the `dotnet run` command you used to run your code.

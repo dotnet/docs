@@ -1,11 +1,18 @@
 ---
 title: Interactive tutorials
 description: Learn C# using GitHub Codespaces, and get started with your own development environment.
-ms.date: 12/10/2025
+ms.date: 02/06/2026
 ---
 # Introduction to C\#
 
-Welcome to the introduction to C# tutorials. These lessons start with interactive code that you can run in GitHub codespaces. You can learn the basics of C# from the [C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
+Welcome to the introduction to C# tutorials. These lessons start with interactive code that you can run in GitHub Codespaces. You can learn the basics of C# from the [C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
+
+> [!TIP]
+> **New to programming?** Start with tutorial 1 ([Hello world](hello-world.md)) and work through each lesson in order.
+>
+> **Coming from another language?** You can skim tutorials 1–2 and start with [Tuples and types](tuples-and-types.md) for concepts that might be new.
+
+All tutorials use file-based apps—you don't need project files or a complex setup. Install the [.NET SDK](../../../core/install/index.md), and you're ready to go.
 
 <!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]
@@ -37,3 +44,12 @@ The [List collection](list-collection.md) lesson gives you a tour of the List co
 ## Pattern matching
 
 The [Pattern matching](pattern-matching.md) lesson provides an introduction to *pattern matching*. Pattern matching enables you to compare an expression against a pattern. The success of the match determines which program logic to follow. Patterns can compare types, properties of a type, or contents of a list. You can combine multiple patterns by using `and`, `or`, and `not` logic. Patterns provide a rich vocabulary to inspect data and make decisions in your program based on that inspection.
+
+## What's next?
+
+After you finish these tutorials, continue your learning journey:
+
+- [Build file-based apps](../../fundamentals/tutorials/file-based-programs.md): Learn how to create and run single-file C# programs from the command line.
+- [What you can build with C#](../what-you-can-build.md): Explore the types of applications you can create with C# and .NET.
+- [C# type system](../../fundamentals/types/index.md): Dive deeper into value types, reference types, generics, and more.
+- [C# fundamentals](../../fundamentals/program-structure/index.md): Learn about program structure, object-oriented programming, and error handling.

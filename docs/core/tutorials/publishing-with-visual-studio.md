@@ -23,7 +23,7 @@ This tutorial works with the console app that you create in [Create a .NET conso
 
 1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build selected.":::
+   :::image type="content" source="media/publishing-with-visual-studio/use-release-configuration.png" alt-text="Visual Studio toolbar with release build selected.":::
 
 1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu.
 

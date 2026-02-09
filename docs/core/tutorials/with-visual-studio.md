@@ -42,7 +42,7 @@ Create a .NET console app project named "HelloWorld".
    - Select **.NET 10.0 (Long Term Support)**.
    - Select **Create**.
 
-   :::image type="content" source="./media/with-visual-studio/additional-information.png" alt-text="Enter additional information for the cosole app.":::
+   :::image type="content" source="./media/with-visual-studio/additional-information.png" alt-text="Enter additional information for the console app.":::
 
    The template creates a simple application that displays "Hello, World!" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 

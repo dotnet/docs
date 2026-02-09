@@ -154,7 +154,7 @@ The following errors relate to `using static` directives:
 - **CS9133**: *`static` modifier must precede `unsafe` modifier.*
 - **CS9162**: *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
 
-See the [using static directive](../keywords/using-directive.md#the-using-static-modifier) language reference for usage rules.
+See the [using static directive](../keywords/using-directive.md#the-static-modifier) language reference for usage rules.
 
 Add the `static` modifier when importing a type's members directly, because omitting `static` tells the compiler you're importing a namespace rather than a type (**CS0138**). Remove the `static` modifier when importing a namespace, because `using static` can only be applied to types, not namespaces (**CS7007**). Ensure the target of a `using static` directive is a class, struct, interface, enum, or delegate, because other types aren't valid targets for static imports (**CS9162**). Place the `static` modifier before the `unsafe` modifier when combining both, because the language requires modifiers in a specific order (**CS9133**).
 
@@ -165,7 +165,7 @@ The following errors relate to `global using` directives:
 - **CS8914**: *A global using directive cannot be used in a namespace declaration.*
 - **CS8915**: *A global using directive must precede all non-global using directives.*
 
-See the [global using directive](../keywords/using-directive.md#global-modifier) language reference for usage rules.
+See the [global using directive](../keywords/using-directive.md#the-global-modifier) language reference for usage rules.
 
 Move `global using` directives outside of any namespace declaration to file scope, because global usings apply project-wide and can't be scoped to a namespace (**CS8914**). Place all `global using` directives before any non-global `using` directives in the file, because the language requires global directives to precede local ones (**CS8915**). Note that a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
 
@@ -213,4 +213,3 @@ See the [using alias](../keywords/using-directive.md#the-using-alias) language r
 Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**). Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**). Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
 
 Starting with C# 12, the following restrictions apply to using aliases: Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**). Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**). Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
-

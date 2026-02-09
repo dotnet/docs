@@ -9,7 +9,7 @@ If you're starting a new job or joining a team that uses C#, this article helps 
 
 C# and Java have many similarities. As you learn C#, you can apply much of the knowledge you already have from programming in Java:
 
-1. ***Similar syntax***: Both Java and C# are in the C family of languages. That similarity means you can already read and understand C#. There are some differences, but most of the syntax is the same as Java, and C. The curly braces and semicolons are familiar. The control statements like `if`, `else`, `switch` are the same. The looping statements of `for`, `while`, and `do`...`while` are same. The same keywords for `class` and `interface` are in both languages. The access modifiers from `public` to `private` are the same. Even many of the builtin types use the same keywords: `int`, `string`, and `double`.
+1. ***Similar syntax***: Both Java and C# are in the C family of languages. That similarity means you can already read and understand C#. There are some differences, but most of the syntax is the same as Java, and C. The curly braces and semicolons are familiar. The control statements like `if`, `else`, `switch` are the same. The looping statements of `for`, `while`, and `do`...`while` are same. The same keywords for `class` and `interface` are in both languages. The access modifiers from `public` to `private` are the same. Even many of the built-in types use the same keywords: `int`, `string`, and `double`.
 1. ***Object-oriented paradigm***: Both Java and C# are object-oriented languages. The concepts of polymorphism, abstraction, and encapsulation apply in both languages. Both added new constructs, but the core features are still relevant.
 1. ***Strongly typed***: Both Java and C# are strongly typed languages. You declare the data type of variables, either explicitly or implicitly. The compiler enforces type safety. The compiler catches type-related errors in your code, before you run the code.
 1. ***Cross-platform***: Both Java and C# are cross-platform. You can run your development tools on your favorite platform. Your application can run on multiple platforms. Your development platform isn't required to match your target platform.
@@ -91,7 +91,7 @@ You can work productively in C# almost immediately because of the similarities. 
 > [!TIP]
 > To learn more about C#'s type system—including `struct` vs. `class`, records, and interfaces—visit the [Type system](../fundamentals/types/index.md) overview in the Fundamentals section.
 
-There are other features in C# that aren't in Java. Features like [`async` and `await`](../asynchronous-programming/index.md) model asynchronous operations in sequential syntax. The [`using`](../language-reference/statements/using.md) statement automatically free nonmemory resources.
+There are other features in C# that aren't in Java. Features like [`async` and `await`](../asynchronous-programming/index.md) model asynchronous operations in sequential syntax. The [`using`](../language-reference/statements/using.md) statement automatically frees nonmemory resources.
 
 There are also some similar features between C# and Java that have subtle but important differences:
 

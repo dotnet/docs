@@ -68,5 +68,5 @@ Similarly, choose between Dispose and TestCleanup:
 
 - [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 - [Lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md)
-- [Attributes](../unit-testing-mstest-writing-tests-attributes.md)
+- [Write tests](../unit-testing-mstest-writing-tests.md)
 - [Assertions](../unit-testing-mstest-writing-tests-assertions.md)

@@ -19,20 +19,6 @@ The lifecycle groups into four stages, executed from highest level (assembly) to
 1. **Global test-level**: Runs before and after every test method in the assembly
 1. **Test-level**: Runs for each test method (including each data row in parameterized tests)
 
-### Execution order
-
-```text
-Assembly Initialize
-├── Class Initialize (for each test class)
-│   ├── Global Test Initialize (for each test method)
-│   │   ├── Test Initialize
-│   │   │   └── Test Method Execution
-│   │   ├── Test Cleanup
-│   │   └── Global Test Cleanup
-│   └── Class Cleanup
-└── Assembly Cleanup
-```
-
 ## Assembly-level lifecycle
 
 Assembly lifecycle methods run once when the test assembly loads and unloads. Use these for expensive one-time setup like database initialization or service startup.

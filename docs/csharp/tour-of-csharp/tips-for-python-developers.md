@@ -84,7 +84,7 @@ Learn more: [Records](../fundamentals/types/records.md)
 
 ## Key differences
 
-As you learn C#, you discover these important concepts where C# is different than Python:
+As you learn C#, you discover these important concepts where C# is different from Python:
 
 1. [***Indentation vs. tokens***](./tutorials/branches-and-loops.md): In Python, newlines and indentation are first-class syntactic elements. In C#, whitespace isn't significant. Tokens, like `;` separate statements, and other tokens `{` and `}` control block scope for `if` and other block statements. However, for readability, most coding styles (including the style used in these docs) use indentation to reinforce the block scopes declared by `{` and `}`.
 1. [***Static typing***](../fundamentals/types/index.md): In C#, a variable declaration includes its type. Reassigning a variable to an object of a different type generates a compiler error. In Python, the type can change when reassigned.
@@ -95,7 +95,7 @@ As you learn C#, you discover these important concepts where C# is different tha
 > [!TIP]
 > To learn more about C#'s type system—including `class` vs. `struct`, generics, and interfaces—visit the [Type system](../fundamentals/types/index.md) overview in the Fundamentals section.
 
-Finally, there are some features of Python that aren't available in C#:
+Finally, some features of Python aren't available in C#:
 
 1. ***Structural (duck) typing***: In C#, types have names and declarations. Except for [tuples](../language-reference/builtin-types/value-tuples.md), types with the same structure aren't interchangeable.
 1. ***REPL***: C# doesn't have a Read-Eval-Print Loop (REPL) to quickly prototype solutions.

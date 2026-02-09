@@ -1,6 +1,6 @@
 ---
 title: WCF svcutil tool overview
-description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
+description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET and ASP.NET projects, similar to the WCF svcutil tool for .NET Framework projects.
 author: honggit
 ms.date: 02/22/2019
 ---
@@ -10,7 +10,7 @@ The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET too
 
 Similar to the [**Service Model Metadata - svcutil**](../../framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool for .NET Framework projects, the **dotnet-svcutil** is a command-line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
 
-The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider. The **dotnet-svcutil** tool as a .NET tool, is available cross-platform on Linux, macOS, and Windows.
+The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider. As a .NET tool, the **dotnet-svcutil** tool is available cross-platform on Linux, macOS, and Windows.
 
 > [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.
@@ -22,7 +22,7 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## Getting started
 
-The following example walks you through the steps required to add a web service reference to a .NET Core web project and invoke the service. You'll create a .NET Core web application named *HelloSvcutil* and add a reference to a web service that implements the following contract:
+The following example walks you through the steps required to add a web service reference to a .NET web project and invoke the service. You'll create a .NET web application named *HelloSvcutil* and add a reference to a web service that implements the following contract:
 
 ```csharp
 [ServiceContract]

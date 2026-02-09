@@ -200,11 +200,7 @@ Did you come up with something like this?
 </details>
 <!-- markdownlint-enable MD033 -->
 
-You completed the "branches and loops" tutorial. You can learn more about these concepts in these articles:
-
-- [Selection statements](../../language-reference/statements/selection-statements.md)
-- [Iteration statements](../../language-reference/statements/iteration-statements.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md) — Explore a more powerful alternative to `if`/`else` chains.
+You completed the "branches and loops" tutorial.
 
 ## Cleanup resources
 
@@ -222,3 +218,5 @@ Or explore related topics in C# Fundamentals:
 - [Pattern matching](../../fundamentals/functional/pattern-matching.md) — A powerful alternative to complex `if`/`else` chains.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn how to organize the methods you created in this tutorial.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.
+- [Selection statements](../../language-reference/statements/selection-statements.md)
+- [Iteration statements](../../language-reference/statements/iteration-statements.md)

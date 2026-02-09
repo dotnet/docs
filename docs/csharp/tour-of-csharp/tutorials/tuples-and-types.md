@@ -137,11 +137,7 @@ You can also define `interface` types to declare behavioral contracts that diffe
 
 You typically use all these types in larger programs and libraries. Once you install the .NET SDK, you can explore those types using tutorials on [classes](../../fundamentals/tutorials/classes.md) in the fundamentals section.
 
-You completed the "Create types in C#" tutorial. You can learn more about types in C# in the following articles:
-
-- [Types in C#](../../fundamentals/types/index.md)
-- [Records](../../fundamentals/types/records.md)
-- [Classes](../../fundamentals/types/classes.md)
+You completed the "Create types in C#" tutorial.
 
 ## Cleanup resources
 

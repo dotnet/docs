@@ -264,13 +264,6 @@ You should get an answer between 19 and 20.
 
 Try some other formulas if you'd like.
 
-You can learn more about numbers in C# in the following articles:
-
-- [Numeric types in C# Fundamentals](../../fundamentals/types/index.md) — Understand how C# represents numbers in the type system.
-- [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
-- [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
-- [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)
-
 ## Cleanup resources
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and go to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
@@ -287,3 +280,7 @@ Or explore related topics in C# Fundamentals:
 - [The C# type system](../../fundamentals/types/index.md) — Dive deeper into the types you used in this tutorial.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn more about the methods you created to organize your code.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.
+- [Numeric types in C# Fundamentals](../../fundamentals/types/index.md) — Understand how C# represents numbers in the type system.
+- [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
+- [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
+- [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)

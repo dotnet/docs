@@ -2,9 +2,13 @@
 
 > Building command-line applications with argument parsing, help generation, and tab completion. `System.CommandLine` provides a modern API for defining commands, options, and arguments with automatic validation. Used by the .NET CLI and many global tools.
 
-*Topics available: 10*
+*Topics available: 18; Last updated: 2026-02-09*
 
+- [Conceptual overview of System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/conceptual-overview.md): Understand the design philosophy and conceptual model of System.CommandLine and how it compares to other .NET command-line libraries.
+- [Custom type parsing in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/custom-types.md): Learn how to define options and arguments that accept custom data types, including complex types, specialized parsing, and collection scenarios.
+- [DefaultValueFactory vs CustomParser in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/defaultvalue-vs-customparser.md): Understand the difference between DefaultValueFactory and CustomParser, when to use each, and how they work together in System.CommandLine.
 - [Command-line design guidance for System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/design-guidance.md): Provides guidance for designing a command-line interface.
+- [Using environment variables with System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/environment-variables.md): Learn how to integrate environment variables into command-line options using DefaultValueFactory and CustomParser.
 - [Tutorial: Get started with System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/get-started-tutorial.md): Learn how to use the System.CommandLine library for command-line apps.
 - [How to configure the parser in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/how-to-configure-the-parser.md): Learn how to configure the parser in System.CommandLine.
 - [How to customize help in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/how-to-customize-help.md): Learn how to use and customize help in apps that are built with the System.Commandline library.
@@ -13,4 +17,8 @@
 - [How to parse and invoke the result](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/how-to-parse-and-invoke.md): Learn how to get parsed values and define actions for your commands.
 - [System.CommandLine overview](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/index.md): Learn how to develop and use command-line apps that are based on the System.CommandLine library.
 - [System.CommandLine migration guide to 2.0.0-beta5+](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/migration-guide-2.0.0-beta5.md): Learn about how to migrate to System.CommandLine 2.0.0-beta5+.
+- [How to use System.CommandLine with NativeAOT](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/nativeaot.md): Learn how to build trim-friendly and NativeAOT-compatible command-line applications using System.CommandLine.
+- [Option actions for cross-cutting behaviors in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/option-actions.md): Learn how to use the Action property on options to implement middleware-like behaviors such as debugging, logging, and early termination.
+- [Sharing options across commands in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/sharing-options.md): Learn different approaches for sharing common options across multiple commands, including the Recursive property and factory pattern.
+- [Supported types in System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/supported-types.md): Learn about the types that System.CommandLine can parse automatically, including primitives, common .NET types, enums, and collections.
 - [Command-line syntax overview for System.CommandLine](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/commandline/syntax.md): An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Shows how to define commands, options, and arguments.

@@ -38,7 +38,7 @@ The main driving factors for the evolution of the new testing platform are detai
 
 ## Supported test frameworks
 
-* MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
+* MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-running-tests.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
 * xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
 * TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
@@ -101,7 +101,7 @@ dotnet Contoso.MyTests.dll
 >   file extension:
 >     package: 'Contoso.MyTests', version: '1.0.0'
 >     path: 'Contoso.MyTests.dll'
->     previously found assembly: 'S:\t\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
+>     previously found assembly: 'S:\t\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
 > ```
 
 For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#options-for-running-an-application-with-the-exec-command).
@@ -185,7 +185,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
   - task: CmdLine@2
     displayName: "Run Contoso.MyTests"
     inputs:
-      script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
+      script: '.\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
   ```
 
 - Run the `dotnet test` command manually, similar to the typical local workflow:

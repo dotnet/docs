@@ -1525,7 +1525,7 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#tes
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
+The `EnableMSTestRunner` property enables or disables the use of [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.

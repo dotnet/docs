@@ -103,7 +103,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
 - [**CS8915**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
 - [**CS8954**](#file-scoped-namespace): *Error: Source file can only contain one file-scoped namespace declaration.*
-- [**CS8955**](#file-scoped-namespace): *Error: Source file can not contain both file-scoped and normal namespace declarations.*
+- [**CS8955**](#file-scoped-namespace): *Error: Source file cannot contain both file-scoped and normal namespace declarations.*
 - [**CS8956**](#file-scoped-namespace): *Error: File-scoped namespace must precede all other members in a file.*
 - [**CS9130**](#using-alias-restrictions): *Error: Using alias cannot be a `ref` type.*
 - [**CS9131**](#using-alias-restrictions): *Error: Only a using alias can be `unsafe`.*

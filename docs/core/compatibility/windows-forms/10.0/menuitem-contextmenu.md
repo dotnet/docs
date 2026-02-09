@@ -48,7 +48,7 @@ Use aliases to resolve conflicting namespaces. For example:
 using ContextMenu = System.Windows.Controls.ContextMenu;
 ```
 
-Refer to the [alias name conflicts documentation](../../../../csharp/language-reference/compiler-messages/using-directive-errors.md#alias-qualifier) for more details.
+Refer to the [alias name conflicts documentation](../../../../csharp/language-reference/compiler-messages/using-directive-errors.md#using-alias-restrictions) for more details.
 
 ## Affected APIs
 

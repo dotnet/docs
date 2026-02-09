@@ -23,7 +23,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-You must have one of the following:
+You must have one of the following options:
 
 - A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
@@ -33,7 +33,7 @@ You must have one of the following:
 
 ## A basic list example
 
-To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment. If you completed other tutorials in this series, you can open that codespace instead of creating a new one.
+To start a GitHub Codespace with the tutorial environment, open a browser window to the [tutorial codespace](https://github.com/dotnet/tutorial-codespace) repository. Select the green *Code* button, and select the *Codespaces* tab. Then select the `+` sign to create a new Codespace using this environment. If you completed other tutorials in this series, you can open that codespace instead of creating a new one.
 
 1. When your codespace loads, create a new file in the *tutorials* folder named *lists.cs*.
 1. Open your new file.
@@ -61,7 +61,7 @@ The collection you created uses the <xref:System.Collections.Generic.List%601> t
 > [!TIP]
 > **Learn more:** Explore [collections](../../../standard/collections/index.md) and [generics](../../fundamentals/types/generics.md) in the .NET documentation.
 
-One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. You can see the results by modifying the contents after you displayed its contents.
+One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, so you can add or remove elements. You can see the results by modifying the contents after you displayed its contents.
 
 1. Add the following code after the code you already wrote (the loop that prints the contents):
 
@@ -69,11 +69,11 @@ One important aspect of this <xref:System.Collections.Generic.List%601> type is 
 
    You added two more names to the end of the list. You also removed one as well. The output from this block of code shows the initial contents, then prints a blank line and the new contents.
 
-1. The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code after what you already wrote and try it:
+1. The <xref:System.Collections.Generic.List%601> type also enables you to reference individual items by **index**. You access items by using the `[` and `]` tokens. Add the following code after what you already wrote and try it:
 
    :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Indexers":::
 
-   You're not allowed to access past the end of the list. You can check how long the list is by using the <xref:System.Collections.Generic.List%601.Count%2A> property.
+   You can't access past the end of the list. You can check how long the list is by using the <xref:System.Collections.Generic.List%601.Count%2A> property.
 
 1. Add the following code:
 
@@ -85,15 +85,15 @@ For more information about indices, see the [Explore indexes and ranges](../../t
 
 ## Search and sort lists
 
-Our samples use relatively small lists, but your applications might often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`.
+The samples use relatively small lists, but your applications might often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`.
 
 1. Try it to see how it works. Add the following code after what you wrote so far:
 
    :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Search":::
 
-   You might not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it's `-1`, the item wasn't found.
+   You might not know if an item is in the list, so always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it's `-1`, the item wasn't found.
 
-1. You can also sort the items in your list. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run again:
+1. You can also sort the items in your list. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run it again:
 
    :::code language="csharp" source="./snippets/ListCollection/list.cs" id="Sort":::
 
@@ -105,7 +105,7 @@ So far, you've been using the `string` type in lists. Let's make a <xref:System.
 
    :::code language="csharp" source="./snippets/ListCollection/list.cs" id="CreateList":::
 
-   That code creates a list of integers and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1's. Each next Fibonacci number is found by taking the sum of the previous two numbers.
+   That code creates a list of integers and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1s. Each next Fibonacci number is found by taking the sum of the previous two numbers.
 
 1. Add this code:
 
@@ -115,9 +115,9 @@ So far, you've been using the `string` type in lists. Let's make a <xref:System.
 
 ## Challenge
 
-See if you can put together some of the concepts from this and earlier lessons. Expand on what you built so far with Fibonacci Numbers. Try to write the code to generate the first 20 numbers in the sequence. (As a hint, the 20th Fibonacci number is 6765.)
+See if you can put together some of the concepts from this and earlier lessons. Expand on what you built so far with Fibonacci numbers. Try to write the code to generate the first 20 numbers in the sequence. (As a hint, the 20th Fibonacci number is 6765.)
 
-Did you come up with something like this?
+Did you come up with something like this code?
 
 <!-- markdownlint-disable MD033 -->
 <details>
@@ -128,12 +128,7 @@ With each iteration of the loop, you take the last two integers in the list, sum
 </details>
 <!-- markdownlint-disable MD033 -->
 
-You completed the list tutorial. You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
-
-- [Generics in C#](../../fundamentals/types/generics.md) — Understand the `<T>` syntax you used throughout this tutorial.
-- [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
-- [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
-- [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)
+You completed the list tutorial.
 
 ## Cleanup resources
 
@@ -148,6 +143,9 @@ Continue to the next tutorial in this series:
 
 Or explore related topics in C# Fundamentals:
 
-- [Generics](../../fundamentals/types/generics.md) — Learn more about the `List<T>` generic type you used in this tutorial.
-- [LINQ overview](../../linq/index.md) — Query and transform collections with Language Integrated Query.
+- [Generics in C#](../../fundamentals/types/generics.md) — Understand the `<T>` syntax you used throughout this tutorial.
+- [LINQ overview](../../linq/index.md) — Query and transform collections by using Language Integrated Query.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.
+- [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
+- [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
+- [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)

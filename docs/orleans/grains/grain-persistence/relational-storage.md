@@ -5,6 +5,7 @@ ms.date: 02/06/2026
 ms.topic: how-to
 ms.custom: sfi-ropc-nochange
 ai-usage: ai-assisted
+zone_pivot_groups: orleans-version
 ---
 
 # ADO.NET grain persistence
@@ -32,6 +33,8 @@ Install-Package Microsoft.Orleans.Persistence.AdoNet
 
 Read the [ADO.NET configuration](../../host/configuration-guide/adonet-configuration.md) article for information on configuring your database, including the corresponding ADO.NET Invariant and setup scripts.
 
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
 The following example shows how to configure an ADO.NET storage provider via the silo builder:
 
 ```csharp
@@ -53,14 +56,20 @@ Essentially, you only need to set the database-vendor-specific connection string
 
 ## Configure serialization
 
-Starting with Orleans 7.0, grain storage serialization is configured using the <xref:Orleans.Storage.IGrainStorageSerializer> interface. By default, grain state serializes using `Newtonsoft.Json`. You can customize the serializer by setting the <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer> property. The following example demonstrates configuring a custom serializer:
+Grain storage serialization is configured using the <xref:Orleans.Storage.IGrainStorageSerializer> interface. By default, grain state serializes using `Newtonsoft.Json`. You can customize the serializer by setting the <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer> property.
+
+The following example demonstrates configuring a custom serializer. Your custom serializer (for example, `MyCustomSerializer`) must implement <xref:Orleans.Storage.IGrainStorageSerializer> and be registered in the dependency injection container:
 
 ```csharp
+// Register your custom serializer in DI
+siloBuilder.Services.AddSingleton<IGrainStorageSerializer, MyCustomSerializer>();
+
+// Configure the storage provider to use your serializer
 siloBuilder.AddAdoNetGrainStorage(
     "OrleansStorage",
     (OptionsBuilder<AdoNetGrainStorageOptions> optionsBuilder) =>
     {
-        optionsBuilder.Configure<IMySerializer>(
+        optionsBuilder.Configure<IGrainStorageSerializer>(
             (options, serializer) =>
             {
                 options.Invariant = "<Invariant>";
@@ -122,6 +131,91 @@ public class AdoNetGrainStorageOptions
 }
 ```
 
+:::zone-end
+:::zone target="docs" pivot="orleans-3-x"
+
+The following example shows how to configure an ADO.NET storage provider via the silo builder:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.AddAdoNetGrainStorage("OrleansStorage", options =>
+    {
+        options.Invariant = "<Invariant>";
+        options.ConnectionString = "<ConnectionString>";
+        options.UseJsonFormat = true;
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
+```
+
+Essentially, you only need to set the database-vendor-specific connection string and an `Invariant` (see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md)) identifying the vendor. You can also choose the format for saving data: binary (default), JSON, or XML. While binary is the most compact option, it's opaque, and you won't be able to read or work with the data directly. JSON is the recommended option.
+
+You can set the following properties via <xref:Orleans.Configuration.AdoNetGrainStorageOptions>:
+
+```csharp
+/// <summary>
+/// Options for AdoNetGrainStorage
+/// </summary>
+public class AdoNetGrainStorageOptions
+{
+    /// <summary>
+    /// Define the property of the connection string
+    /// for AdoNet storage.
+    /// </summary>
+    [Redact]
+    public string ConnectionString { get; set; }
+
+    /// <summary>
+    /// Set the stage of the silo lifecycle where storage should
+    /// be initialized.  Storage must be initialized prior to use.
+    /// </summary>
+    public int InitStage { get; set; } = DEFAULT_INIT_STAGE;
+    /// <summary>
+    /// Default init stage in silo lifecycle.
+    /// </summary>
+    public const int DEFAULT_INIT_STAGE =
+        ServiceLifecycleStage.ApplicationServices;
+
+    /// <summary>
+    /// The default ADO.NET invariant will be used for
+    /// storage if none is given.
+    /// </summary>
+    public const string DEFAULT_ADONET_INVARIANT =
+        AdoNetInvariants.InvariantNameSqlServer;
+
+    /// <summary>
+    /// Define the invariant name for storage.
+    /// </summary>
+    public string Invariant { get; set; } =
+        DEFAULT_ADONET_INVARIANT;
+
+    /// <summary>
+    /// Determine whether the storage string payload should be formatted in JSON.
+    /// <remarks>If neither <see cref="UseJsonFormat"/> nor <see cref="UseXmlFormat"/> is set to true, then BinaryFormatSerializer will be configured to format the storage string payload.</remarks>
+    /// </summary>
+    public bool UseJsonFormat { get; set; }
+    public bool UseFullAssemblyNames { get; set; }
+    public bool IndentJson { get; set; }
+    public TypeNameHandling? TypeNameHandling { get; set; }
+
+    public Action<JsonSerializerSettings> ConfigureJsonSerializerSettings { get; set; }
+
+    /// <summary>
+    /// Determine whether storage string payload should be formatted in Xml.
+    /// <remarks>If neither <see cref="UseJsonFormat"/> nor <see cref="UseXmlFormat"/> is set to true, then BinaryFormatSerializer will be configured to format storage string payload.</remarks>
+    /// </summary>
+    public bool UseXmlFormat { get; set; }
+}
+```
+
+The ADO.NET persistence provider can version data and define arbitrary (de)serializers with custom application rules and streaming, but currently, there's no method to expose this functionality directly to application code.
+
+:::zone-end
+
 ## ADO.NET persistence rationale
 
 The principles for ADO.NET-backed persistence storage are:
@@ -148,9 +242,16 @@ This allows you to choose a serialization format, for example, [Simple Binary En
 - <xref:Orleans.Storage.OrleansStorageDefaultBinarySerializer>
 - <xref:Orleans.Storage.OrleansStorageDefaultBinaryDeserializer>
 
-After implementing the serializers, add them to the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-Starting with Orleans 7.0, you can configure the grain storage serializer using the <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer> property as described in the [Configure serialization](#configure-serialization) section above.
+After implementing a custom serializer, configure it using the <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer> property as described in the [Configure serialization](#configure-serialization) section above. Your custom serializer must implement <xref:Orleans.Storage.IGrainStorageSerializer>.
+
+:::zone-end
+:::zone target="docs" pivot="orleans-3-x"
+
+After implementing the serializers, they're registered internally with the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs). Note that direct application-level access to `AdoNetGrainStorage` to configure serialization isn't available in Orleans 3.x.
+
+:::zone-end
 
 ## Design goals
 

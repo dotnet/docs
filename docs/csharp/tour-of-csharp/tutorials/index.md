@@ -1,7 +1,7 @@
 ---
 title: Interactive tutorials
 description: Learn C# using GitHub Codespaces, and get started with your own development environment.
-ms.date: 02/06/2026
+ms.date: 02/09/2026
 ---
 # Introduction to C\#
 
@@ -12,7 +12,7 @@ Welcome to the introduction to C# tutorials. These lessons start with interactiv
 >
 > **Coming from another language?** You can skim tutorials 1–2 and start with [Tuples and types](tuples-and-types.md) for concepts that might be new.
 
-All tutorials use file-based apps—you don't need project files or a complex setup. Install the [.NET SDK](../../../core/install/index.md), and you're ready to go.
+All tutorials use file-based apps. You can use our [GitHub Codespace](https://github.com/dotnet/tutorial-codespace), or install the [.NET SDK](../../../core/install/index.md), and you're ready to start.
 
 <!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]

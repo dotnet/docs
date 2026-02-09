@@ -3,7 +3,7 @@ title: February 2026 cumulative update
 description: Learn about the improvements in the .NET Framework February 2026 cumulative update.
 ms.date: 02/10/2026
 ---
-# February 2026 cumulative update preview
+# February 2026 cumulative update
 
 _Released February 10, 2026_
 

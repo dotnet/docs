@@ -9,7 +9,7 @@ ms.date: 02/06/2026
 This tutorial teaches you C#. You write your first C# program and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 
 > [!TIP]
-> **New to programming?** Start here — this tutorial assumes no prior experience. **Coming from another language?** You might prefer to skim the code samples and jump ahead to [Numbers in C#](numbers-in-csharp.md) or [Branches and loops](branches-and-loops.md).
+> **New to programming?** Start here - this tutorial assumes no prior experience. **Coming from another language?** You might prefer to skim the code samples and jump ahead to [Numbers in C#](numbers-in-csharp.md) or [Branches and loops](branches-and-loops.md).
 
 In this tutorial, you:
 
@@ -122,7 +122,7 @@ You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=
 ## Remove whitespace from strings
 
 Suppose your strings have leading or trailing spaces that you don't want to display. You want to **trim** the spaces from the strings.
-The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> do that work. You can use those methods to remove leading and trailing spaces.
+The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> perform this task. Use these methods to remove leading and trailing spaces.
 
 1. Try the following code:
 
@@ -152,7 +152,7 @@ You can use other methods to work with a string. For example, you might use a se
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="SearchStrings":::
 
-   The <xref:System.String.Contains%2A> method returns a *boolean* value which tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
+   The <xref:System.String.Contains%2A> method returns a *boolean* value that tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
 
 ## Challenge
 

@@ -1,11 +1,14 @@
 ---
 title: Tuples and types - Introductory tutorial
 description: This tutorial teaches you to create types in C#. You write C# code and see the results of compiling and running your code as you learn the structure of types.
-ms.date: 12/10/2025
+ms.date: 02/06/2026
 ---
 # Tutorial: Create types in C\#
 
 This tutorial teaches you how to create types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore different kinds of types in C#. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> **New to programming?** Work through each section in order — tuples, records, and then structs and classes. **Coming from another language?** If you already know classes and structs, focus on [tuples](#tuples) and [record types](#create-record-types), which might be new to you.
 
 The preceding tutorials worked with text and numbers. Strings and numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
 
@@ -77,6 +80,9 @@ To start a GitHub Codespace with the tutorial environment, open a browser window
 
 While tuples are easy to create, they're limited in their capabilities. Tuple types don't have names, so you can't convey meaning to the set of values. Tuple types can't add behavior. C# has other kinds of types you can create when your type defines behavior.
 
+> [!TIP]
+> **Learn more:** Explore [tuples and other type choices](../../fundamentals/types/index.md) in C# Fundamentals.
+
 ## Create record types
 
 Tuples are great for those times when you want multiple values in the same structure. They're lightweight, and you can declare them as you use them. As your program grows, you might find that you use the same tuple type throughout your code. If your app works in the 2D graph space, the tuples that represent points might be common. When you find this pattern, you can declare a `record` type that stores those values and provides more capabilities.
@@ -141,7 +147,16 @@ You completed the "Create types in C#" tutorial. You can learn more about types 
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
 
-## Next step
+## Next steps
+
+Continue to the next tutorial in this series:
 
 > [!div class="nextstepaction"]
 > [Branches and loops](branches-and-loops.md)
+
+Or explore related topics in C# Fundamentals:
+
+- [The C# type system](../../fundamentals/types/index.md) — Dive deeper into the types you used in this tutorial.
+- [Record types](../../fundamentals/types/records.md) — Learn more about records and when to use them.
+- [Classes](../../fundamentals/types/classes.md) — Explore object-oriented programming in C#.
+- [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.

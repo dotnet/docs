@@ -1,13 +1,16 @@
 ---
 title: Data collections - Introductory tutorial
 description: In this tutorial, you use GitHub Codespaces to learn about C# collections. You write C# code and see the results of compiling and running your code in the Codespaces environment.
-ms.date: 12/10/2025
+ms.date: 02/09/2026
 ---
 # Tutorial: Learn to manage data collections using List\<T> in C\#
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> class.
 
 This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections. You work primarily with the <xref:System.Collections.Generic.List%601> class.
+
+> [!TIP]
+> **New to programming?** Work through each section in order. **Coming from another language?** If you already know dynamic arrays or lists, skim the basics and focus on [search and sort](#search-and-sort-lists), [lists of other types](#lists-of-other-types), and the [challenge](#challenge).
 
 In this tutorial, you:
 
@@ -54,6 +57,9 @@ Let's keep exploring.
 ## Modify list contents
 
 The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
+
+> [!TIP]
+> **Learn more:** Explore [collections](../../../standard/collections/index.md) and [generics](../../fundamentals/types/generics.md) in the .NET documentation.
 
 One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. You can see the results by modifying the contents after you displayed its contents.
 
@@ -124,6 +130,7 @@ With each iteration of the loop, you take the last two integers in the list, sum
 
 You completed the list tutorial. You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
 
+- [Generics in C#](../../fundamentals/types/generics.md) — Understand the `<T>` syntax you used throughout this tutorial.
 - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
 - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
 - [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)
@@ -132,7 +139,15 @@ You completed the list tutorial. You can learn more about [.NET collections](../
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
 
-## Next step
+## Next steps
+
+Continue to the next tutorial in this series:
 
 > [!div class="nextstepaction"]
 > [Pattern matching](pattern-matching.md)
+
+Or explore related topics in C# Fundamentals:
+
+- [Generics](../../fundamentals/types/generics.md) — Learn more about the `List<T>` generic type you used in this tutorial.
+- [LINQ overview](../../linq/index.md) — Query and transform collections with Language Integrated Query.
+- [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.

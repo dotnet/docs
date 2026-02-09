@@ -1,11 +1,14 @@
 ---
 title: Work with Numbers - Introductory tutorial
 description: This tutorial teaches you about the numeric types in C#. The tutorial contains a series of lessons that explore numbers and math operations in C#.
-ms.date: 12/10/2025
+ms.date: 02/06/2026
 ---
 # Tutorial: How to use integer and floating point numbers in C\#
 
 This tutorial teaches you about the numeric types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> **New to programming?** Work through each section in order. **Coming from another language?** You might already know integer vs. floating-point distinctions — skim the basics and focus on the [precision and limits](#explore-integer-precision-and-limits) and [decimal type](#work-with-decimal-types) sections.
 
 In this tutorial, you:
 
@@ -62,7 +65,12 @@ You can also experiment by writing multiple mathematics operations in the same l
 > [!TIP]
 > As you explore C# (or any programming language), you might make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. You can also ask Copilot to find differences or spot mistakes. That exercise helps you learn the structure of C# code.
 
-You finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
+You finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example.
+
+> [!TIP]
+> **Learn more:** Read about [methods and program structure](../../fundamentals/program-structure/index.md) in C# Fundamentals.
+
+When you finish, your code should look like this:
 
 ```csharp
 WorkWithIntegers();
@@ -258,6 +266,7 @@ Try some other formulas if you'd like.
 
 You can learn more about numbers in C# in the following articles:
 
+- [Numeric types in C# Fundamentals](../../fundamentals/types/index.md) — Understand how C# represents numbers in the type system.
 - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
 - [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
 - [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)
@@ -266,7 +275,15 @@ You can learn more about numbers in C# in the following articles:
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and go to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
 
-## Next step
+## Next steps
+
+Continue with the next tutorial in this series:
 
 > [!div class="nextstepaction"]
 > [Tuples and types](tuples-and-types.md)
+
+Or explore related topics in C# Fundamentals:
+
+- [The C# type system](../../fundamentals/types/index.md) — Dive deeper into the types you used in this tutorial.
+- [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn more about the methods you created to organize your code.
+- [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.

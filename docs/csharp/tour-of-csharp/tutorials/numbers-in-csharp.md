@@ -8,7 +8,7 @@ ms.date: 02/06/2026
 This tutorial teaches you about the numeric types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
 > [!TIP]
-> **New to programming?** Work through each section in order. **Coming from another language?** You might already know integer vs. floating-point distinctions — skim the basics and focus on the [precision and limits](#explore-integer-precision-and-limits) and [decimal type](#work-with-decimal-types) sections.
+> **New to programming?** Work through each section in order. **Coming from another language?** You might already know integer vs. floating-point distinctions - skim the basics and focus on the [precision and limits](#explore-integer-precision-and-limits) and [decimal type](#work-with-decimal-types) sections.
 
 In this tutorial, you:
 
@@ -23,7 +23,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-You must have one of the following:
+You must have one of the following options:
 
 - A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
@@ -65,7 +65,7 @@ You can also experiment by writing multiple mathematics operations in the same l
 > [!TIP]
 > As you explore C# (or any programming language), you might make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. You can also ask Copilot to find differences or spot mistakes. That exercise helps you learn the structure of C# code.
 
-You finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example.
+You finished the first step. Before you start the next section, move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example.
 
 > [!TIP]
 > **Learn more:** Read about [methods and program structure](../../fundamentals/program-structure/index.md) in C# Fundamentals.
@@ -99,21 +99,21 @@ void WorkWithIntegers()
 
 ## Explore order of operations
 
-1. Comment out the call to `WorkingWithIntegers()`. It makes the output less cluttered as you work in this section:
+1. Comment out the call to `WorkingWithIntegers()`. This change makes the output less cluttered as you work in this section:
 
    ```csharp
    //WorkWithIntegers();
    ```
 
-   The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments. Because `WorkWithIntegers()` is a method, you need to only comment out one line.
+   The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments. Because `WorkWithIntegers()` is a method, you need to comment out only one line.
 
-1. The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and typing `dotnet numbers.cs` in the terminal window:
+1. The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that precedence by adding the following code after the call to `WorkWithIntegers()`, and typing `dotnet numbers.cs` in the terminal window:
 
    :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precedence":::
 
    The output demonstrates that the multiplication is performed before the addition.
 
-1. You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run again:
+1. You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run the app again:
 
    :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Parentheses":::
 
@@ -129,7 +129,7 @@ void WorkWithIntegers()
 
 1. Type `dotnet numbers.cs` again in the terminal window to see the results.
 
-Before moving on, let's take all the code you wrote in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
+Before moving on, take all the code you wrote in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
 
 ```csharp
 // WorkWithIntegers();
@@ -190,13 +190,13 @@ The previous sample showed that integer division truncates the result. You can g
 
    :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinAndMax":::
 
-1. If a calculation produces a value that exceeds those limits, you have an **underflow** or **overflow** condition. The answer appears to wrap from one limit to the other. To see an example, add these two lines to your code:
+1. If a calculation produces a value that exceeds those limits, you get an **underflow** or **overflow** condition. The answer appears to wrap from one limit to the other. To see an example, add these two lines to your code:
 
    :::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Overflow":::
 
 Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
-There are other numeric types with different limits and precision that you can use when the `int` type doesn't meet your needs. Let's explore those types of numbers next.
+If the `int` type doesn't meet your needs, use other numeric types with different limits and precision. Let's explore those types of numbers next.
 
 ## Work with the double type
 

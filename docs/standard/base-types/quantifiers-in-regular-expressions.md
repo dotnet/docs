@@ -4,6 +4,7 @@ description: Learn about regular expression quantifiers, which specify how many 
 ms.date: "08/09/2022"
 ms.custom: devdivchpfy22
 ms.topic: concept-article
+ai-usage: ai-assisted
 dev_langs: 
   - "csharp"
   - "vb"

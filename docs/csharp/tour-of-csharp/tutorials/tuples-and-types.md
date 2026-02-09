@@ -8,7 +8,7 @@ ms.date: 02/06/2026
 This tutorial teaches you how to create types in C#. You write small amounts of code, then you compile and run that code. The tutorial contains a series of lessons that explore different kinds of types in C#. These lessons teach you the fundamentals of the C# language.
 
 > [!TIP]
-> **New to programming?** Work through each section in order — tuples, records, and then structs and classes. **Coming from another language?** If you already know classes and structs, focus on [tuples](#tuples) and [record types](#create-record-types), which might be new to you.
+> **New to programming?** Work through each section in order - tuples, records, and then structs and classes. **Coming from another language?** If you already know classes and structs, focus on [tuples](#tuples) and [record types](#create-record-types), which might be new to you.
 
 The preceding tutorials worked with text and numbers. Strings and numbers are *simple types*: They each store one single value. As your programs grow larger, you need to work with more sophisticated data structures. C# provides different kinds of types you can define when you need data structures with more fields, properties, or behavior. Let's start to explore those types.
 
@@ -22,7 +22,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-You must have one of the following:
+You must have one of the following options:
 
 - A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
@@ -85,13 +85,13 @@ While tuples are easy to create, they're limited in their capabilities. Tuple ty
 
 ## Create record types
 
-Tuples are great for those times when you want multiple values in the same structure. They're lightweight, and you can declare them as you use them. As your program grows, you might find that you use the same tuple type throughout your code. If your app works in the 2D graph space, the tuples that represent points might be common. When you find this pattern, you can declare a `record` type that stores those values and provides more capabilities.
+Tuples work well when you want multiple values in the same structure. They're lightweight, and you can declare them as you use them. As your program grows, you might find that you use the same tuple type throughout your code. If your app works in the 2D graph space, the tuples that represent points might be common. When you find this pattern, declare a `record` type that stores those values and provides more capabilities.
 
 1. Add the following code to declare and use a `record` type to represent a `Point`:
 
    :::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="PointRecord":::
 
-   The preceding code must be at the bottom of your source file. Type declarations like `record` declarations must follow executable statements in a file-based app.
+   Place the preceding code at the bottom of your source file. Type declarations like `record` declarations must follow executable statements in a file-based app.
 
 1. Add the following code preceding the `record` declaration:
 
@@ -125,7 +125,7 @@ Tuples are great for those times when you want multiple values in the same struc
 
 All concrete named types in C# are either `class` or `struct` types, including `record` types. A `class` is a *reference type*. A `struct` is a *value type*. Variables of a value type store the contents of the instance inline in memory. In other words, a `record struct Point` stores two integers: `X` and `Y`. Variables of a reference type store a reference, or pointer, to the storage for the instance. In other words, a `record class Point` stores a reference to a block of memory that holds the values for `X` and `Y`.
 
-In practice, that means value types are copied when assigned, but a copy of a class instance is a copy of the *reference*. That copied reference refers to the same instance of a point, with the same storage for `X` and `Y`.
+In practice, that difference means value types are copied when assigned, but a copy of a class instance is a copy of the *reference*. That copied reference refers to the same instance of a point, with the same storage for `X` and `Y`.
 
 The `record` modifier instructs the compiler to write several members for you. You can learn more in the article on [record types](../../fundamentals/types/records.md) in the fundamentals section.
 

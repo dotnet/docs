@@ -53,7 +53,7 @@ By default, the publishing process creates a framework-dependent deployment, whi
 
 In the following steps, you'll look at the files created by the publish process.
 
-1. In **Solution Explorer**, select **Show all files**.
+1. In **Solution Explorer**, select **Show All Files**.
 
    :::image type="content" source="media/publishing-with-visual-studio/show-all-files.png" alt-text="Solution Explorer option to Show All Files.":::
 

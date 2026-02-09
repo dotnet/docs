@@ -47,6 +47,7 @@ C# and .NET are well suited for building cloud-native applications and microserv
 
 - **[Azure SDK for .NET](../../azure/sdk/azure-sdk-for-dotnet.md)** provides libraries for working with Azure services like storage, messaging, and databases.
 - **[Worker Services](../../core/extensions/workers.md)** let you build long-running background services that run in the cloud or on-premises.
+- **[Aspire](https://aspire.dev)** streamlines building, running, deploying, debugging, and deploying distributed apps
 
 Get started: [Get started with Azure and .NET](../../azure/index.yml).
 

@@ -1,11 +1,14 @@
 ---
 title: Branches and loops - Introductory tutorial
 description: In this tutorial about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly. You write C# code and see the results of compiling and running your code directly in the browser.
-ms.date: 12/10/2025
+ms.date: 02/09/2026
 ---
 # Tutorial: C# `if` statements and loops - conditional logic
 
 This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> **New to programming?** Work through every section in order. **Coming from another language?** The `if`/`else` and loop syntax looks familiar - focus on the [nested loops](#created-nested-loops) and the [challenge](#combine-branches-and-loops) to practice C#-specific patterns.
 
 In this tutorial, you:
 
@@ -21,7 +24,7 @@ In this tutorial, you:
 
 You must have one of the following options:
 
-- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, you can create a free account at [GitHub.com](https://github.com).
+- A GitHub account to use [GitHub Codespaces](https://github.com/codespaces). If you don't already have one, create a free account at [GitHub.com](https://github.com).
 - A computer with the following tools installed:
   - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
   - [Visual Studio Code](https://code.visualstudio.com/download).
@@ -63,7 +66,7 @@ This first sample shows the power of `if` and Boolean types. A *Boolean* is a va
 
 ## Make if and else work together
 
-To execute different code in both the true and false branches, you create an `else` branch that executes when the condition is false. Try an `else` branch.
+To execute different code in both the true and false branches, create an `else` branch that runs when the condition is false. Try an `else` branch.
 
 1. Add the last two lines in the following code snippet (you should already have the first four):
 
@@ -97,7 +100,7 @@ To execute different code in both the true and false branches, you create an `el
 
 1. Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explore. You gain more understanding of how the `&&` and `||` operators work.
 
-1. You finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finished those changes, your code should look like the following code:
+1. You finished the first step. Before you start the next section, move the current code into a separate method. That change makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finish those changes, your code should look like the following code:
 
    :::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Refactor":::
 
@@ -107,11 +110,14 @@ To execute different code in both the true and false branches, you create an `el
    //ExploreIf();
    ```
 
-The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments.
+The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but don't execute as code. The compiler doesn't generate any executable code from comments.
 
 ## Use loops to repeat operations
 
 Another important concept for creating larger programs is **loops**. Use loops to repeat statements that you want to execute more than once.
+
+> [!TIP]
+> **Learn more:** Read about [iteration statements](../../language-reference/statements/iteration-statements.md) and [selection statements](../../language-reference/statements/selection-statements.md) in the C# language reference.
 
 1. Add this code after the call to `ExploreIf`:
 
@@ -122,7 +128,7 @@ Another important concept for creating larger programs is **loops**. Use loops t
    There's one other new operator in this example. The `++` after the `counter` variable is the **increment** operator. It adds 1 to the value of `counter` and stores that value in the `counter` variable.
 
    > [!IMPORTANT]
-   > Make sure that the `while` loop condition changes to false as you execute the code. Otherwise, you create an **infinite loop** where your program never ends. That behavior isn't demonstrated in this sample, because you have to force your program to quit by using **CTRL-C** or other means.
+   > Make sure that the `while` loop condition changes to false as you execute the code. Otherwise, you create an **infinite loop** where your program never ends. This sample doesn't demonstrate that behavior, because you have to force your program to quit by using **CTRL-C** or other means.
 
    The `while` loop tests the condition before executing the code following the `while`.
 
@@ -159,7 +165,7 @@ There's one other looping statement that isn't covered in this tutorial: the `fo
 
 ## Created nested loops
 
-You can nest a `while`, `do`, or `for` loop inside another loop to create a matrix by combining each item in the outer loop with each item in the inner loop. Let's build a set of alphanumeric pairs to represent rows and columns.
+You can nest a `while`, `do`, or `for` loop inside another loop. By combining each item in the outer loop with each item in the inner loop, you create a matrix. Let's build a set of alphanumeric pairs to represent rows and columns.
 
 1. Add the following `for` loop that generates the rows:
 
@@ -198,12 +204,21 @@ You completed the "branches and loops" tutorial. You can learn more about these 
 
 - [Selection statements](../../language-reference/statements/selection-statements.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)
+- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md) — Explore a more powerful alternative to `if`/`else` chains.
 
 ## Cleanup resources
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select **delete**.
 
-## Next step
+## Next steps
+
+Continue to the next tutorial in this series:
 
 > [!div class="nextstepaction"]
 > [Learn about collections](list-collection.md)
+
+Or explore related topics in C# Fundamentals:
+
+- [Pattern matching](../../fundamentals/functional/pattern-matching.md) — A powerful alternative to complex `if`/`else` chains.
+- [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn how to organize the methods you created in this tutorial.
+- [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.

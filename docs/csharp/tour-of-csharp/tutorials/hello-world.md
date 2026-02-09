@@ -1,12 +1,15 @@
 ---
 title: Hello World - Introductory tutorial
 description: In this tutorial, you create your first C# apps. You write C# code and learn basic structure and types in C#.
-ms.date: 12/10/2025
+ms.date: 02/06/2026
 # customer intent: As an aspiring developer, I want to learn C#.
 ---
 # Tutorial: Explore the C# language
 
 This tutorial teaches you C#. You write your first C# program and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> **New to programming?** Start here — this tutorial assumes no prior experience. **Coming from another language?** You might prefer to skim the code samples and jump ahead to [Numbers in C#](numbers-in-csharp.md) or [Branches and loops](branches-and-loops.md).
 
 In this tutorial, you:
 
@@ -113,6 +116,9 @@ You're not limited to a single variable between the curly braces.
 
 You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, to print messages. A *method* is a block of code that implements some action. It has a name, so you can access it.
 
+> [!TIP]
+> **Learn more:** Explore [strings](../../fundamentals/types/strings.md) in depth, or read about [methods and program structure](../../fundamentals/program-structure/index.md) in the C# Fundamentals section.
+
 ## Remove whitespace from strings
 
 Suppose your strings have leading or trailing spaces that you don't want to display. You want to **trim** the spaces from the strings.
@@ -169,6 +175,7 @@ Did you come up with something like the following code (expand to see the answer
 
 For further reading on the `string` type:
 
+- [Strings in C# Fundamentals](../../fundamentals/types/strings.md).
 - [C# programming guide article on strings](../../programming-guide/strings/index.md).
 - [How to tips on working with strings](../../how-to/index.md#working-with-strings).
 
@@ -176,7 +183,13 @@ For further reading on the `string` type:
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to explore more tutorials in this series, you can leave your Codespace provisioned. If you're ready to visit the [.NET site](https://dotnet.microsoft.com/download/dotnet) to download the .NET SDK, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the learn tutorial codespace and select "delete".
 
-## Next step
+## Next steps
+
+Continue to the next tutorial in this series, or explore related topics in C# Fundamentals:
 
 > [!div class="nextstepaction"]
 > [Explore numbers in C#](numbers-in-csharp.md)
+
+- [Strings](../../fundamentals/types/strings.md) — Learn more about the `string` type you used in this tutorial.
+- [Methods and program structure](../../fundamentals/program-structure/index.md) — Understand how C# programs are organized.
+- [File-based programs](../../fundamentals/program-structure/file-based-programs.md) — Learn about the `dotnet run` command you used to run your code.

@@ -15,5 +15,5 @@ ai-usage: ai-assisted
 
 The following code example displays the name of a dynamic method. This code example is part of a larger example provided for the <xref:System.Reflection.Emit.DynamicMethod> class.
 
-:::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/Overview/source.cs" id="Snippet27":::
-:::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/Overview/source.vb" id="Snippet27":::
+:::code language="csharp" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/csharp/source.cs" id="Snippet27":::
+:::code language="vb" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/vb/source.vb" id="Snippet27":::

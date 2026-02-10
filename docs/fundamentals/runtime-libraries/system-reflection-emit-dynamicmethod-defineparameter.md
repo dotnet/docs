@@ -16,5 +16,5 @@ If the dynamic method has already been completed, by calling the <xref:System.Re
 
 The following code example shows how to define parameter information for a dynamic method. This code example is part of a larger example provided for the <xref:System.Reflection.Emit.DynamicMethod> class.
 
-:::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/Overview/source.cs" id="Snippet33":::
-:::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/Overview/source.vb" id="Snippet33":::
+:::code language="csharp" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/csharp/source.cs" id="Snippet33":::
+:::code language="vb" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/vb/source.vb" id="Snippet33":::

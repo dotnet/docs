@@ -27,5 +27,5 @@ This method doesn't demand permissions directly, but invoking the dynamic method
 
 The following code example invokes a dynamic method with exact binding, using the US-English culture. This code example is part of a larger example provided for the <xref:System.Reflection.Emit.DynamicMethod> class.
 
-:::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/Overview/source.cs" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/Overview/source.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/csharp/source.cs" id="Snippet4":::
+:::code language="vb" source="./snippets/System.Reflection.Emit/DynamicMethod/Overview/vb/source.vb" id="Snippet4":::

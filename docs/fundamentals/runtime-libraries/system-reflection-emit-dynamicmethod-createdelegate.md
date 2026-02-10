@@ -18,8 +18,8 @@ To create a method body for a dynamic method when you have your own MSIL generat
 
 The following code example creates a dynamic method that takes two parameters. The example emits a simple function body that prints the first parameter to the console, and the example uses the second parameter as the return value of the method. The example completes the method by creating a delegate, invokes the delegate with different parameters, and finally invokes the dynamic method using the <xref:System.Reflection.Emit.DynamicMethod.Invoke*> method.
 
-:::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/.ctor/source1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/.ctor/source1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Reflection.Emit/DynamicMethod/.ctor/csharp/source1.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Reflection.Emit/DynamicMethod/.ctor/vb/source1.vb" id="Snippet1":::
 
 ## <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type,System.Object)>
 
@@ -49,5 +49,5 @@ The example code creates an instance of `Example` and then creates two delegates
 
 The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that's bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromExample`, and the delegate calls are repeated.
 
-:::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/.ctor/source.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/.ctor/source.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Reflection.Emit/DynamicMethod/.ctor/csharp/source.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Reflection.Emit/DynamicMethod/.ctor/vb/source.vb" id="Snippet1":::

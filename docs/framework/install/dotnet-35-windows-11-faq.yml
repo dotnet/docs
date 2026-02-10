@@ -4,7 +4,7 @@ metadata:
   description: "This article answers frequently asked questions about .NET Framework 3.5 on Windows 11."
   titleSuffix: ""
   ms.topic: faq
-  ms.date: 02/02/2026
+  ms.date: 02/09/2026
   ai-usage: ai-assisted
 
 title: .NET Framework 3.5 on Windows 11 FAQ
@@ -20,7 +20,7 @@ sections:
         answer: |
           Your Windows 11 version determines availability:
 
-          - Windows 11 Insider Preview Build 27965 and later versions.
+          - Windows 11 26H1 (build 28000) and later versions.
           
             No. Windows doesn't include .NET Framework 3.5 as a built-in or optional component.
 
@@ -37,7 +37,7 @@ sections:
   - name: Installation and deployment
     questions:
       - question: How do I get .NET Framework 3.5 if my application requires it?
-        answer: Use the standalone installer. For more details, including a link to the installer, see [Announcing Windows 11 Insider Preview Build 27965 (Canary Channel)](https://blogs.windows.com/windows-insider/2025/10/08/announcing-windows-11-insider-preview-build-27965-canary-channel/).
+        answer: Use the standalone installer. For more details, including a link to the installer, see [Install .NET Framework 3.5 on Windows 11](dotnet-35-windows-11.md).
 
       - question: Are silent installs supported for the new .NET Framework 3.5 standalone installer?
         answer: Yes. Use `/q` and `/quiet` command-line options for unattended deployment.

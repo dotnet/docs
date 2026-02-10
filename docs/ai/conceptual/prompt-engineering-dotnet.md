@@ -21,7 +21,7 @@ Models that support chat-based apps use three roles to organize completions: a *
 
 An *instruction* is text that tells the model how to respond. An instruction can be a *directive* or an *imperative*:
 
-- *Directives* tell the model how to behave but aren't simple commands&mdash;think character setup for an improv actor: **"You're helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
+- *Directives* tell the model how to behave but aren't simple commands&mdash;think character setup for an improv actor: **"You're helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries or regions."**
 - *Imperatives* are unambiguous commands for the model to follow. **"Translate to Tagalog:"**
 
 ## Use examples to guide the model

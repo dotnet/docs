@@ -1,18 +1,15 @@
 ---
 title: What's new in .NET 11
 description: Learn about the new features introduced in .NET 11 Preview 1 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
-titleSuffix: ""
 ms.date: 02/10/2026
 ai-usage: ai-generated
 ---
 
 # What's new in .NET 11
 
-Learn about the new features in .NET 11 and find links to further documentation.
+This article describes new features in .NET 11. It was last updated for Preview 1.
 
 .NET 11 is currently in preview. The final release is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
-
-This article has been updated for .NET 11 Preview 1.
 
 Your feedback is important and appreciated. If you have questions or comments, use the discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news).
 
@@ -37,6 +34,10 @@ For more information, see [What's new in the SDK for .NET 11](sdk.md).
 ## ASP.NET Core
 
 For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core for .NET 11](/aspnet/core/release-notes/aspnetcore-11?view=aspnetcore-11.0).
+
+## C# 15
+
+For information about new C# features, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md).
 
 ## Breaking changes
 

@@ -1,14 +1,13 @@
 ---
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
-titleSuffix: ""
 ms.date: 02/10/2026
 ai-usage: ai-generated
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11 Preview 1.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 1.
 
 ## Updated minimum hardware requirements
 

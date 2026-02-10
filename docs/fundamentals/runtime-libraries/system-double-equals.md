@@ -9,7 +9,7 @@ dev_langs:
 ---
 # System.Double.Equals method
 
-Th <xref:System.Double.Equals(System.Double)?displayProperty=nameWithType> method implements the <xref:System.IEquatable`1?displayProperty=nameWithType> interface, and performs slightly better than <xref:System.Double.Equals(System.Object)?displayProperty=nameWithType> because it doesn't have to convert the `obj` parameter to an object.
+The <xref:System.Double.Equals(System.Double)?displayProperty=nameWithType> method implements the <xref:System.IEquatable`1?displayProperty=nameWithType> interface, and performs slightly better than <xref:System.Double.Equals(System.Object)?displayProperty=nameWithType> because it doesn't have to convert the `obj` parameter to an object.
 
 ## Widening conversions
 

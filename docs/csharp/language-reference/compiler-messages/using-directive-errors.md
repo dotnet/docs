@@ -100,7 +100,7 @@ helpviewer_keywords:
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0104**](#namespace-and-type-naming-conflicts): *Error: 'reference' is an ambiguous reference between 'identifier' and 'identifier'.*
 - [**CS0116**](#namespace-declarations): *Error: A namespace cannot directly contain members such as fields, methods or statements.*
@@ -124,7 +124,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1730**](#using-directive): *Error: Assembly and module attributes must precede all other elements defined in a file except using clauses and extern alias declarations.*
 - [**CS2034**](#using-directive): *Error: A /reference option that declares an extern alias can only have one filename. To specify multiple aliases or filenames, use multiple /reference options.*
 - [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
-- [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead*
+- [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead.*
 - [**CS7015**](#using-directive): *Error: 'extern alias' is not valid in this context.*
 - [**CS7021**](#namespace-declarations): *Error: Cannot declare namespace in script code.*
 - [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
@@ -151,7 +151,7 @@ And the following compiler warnings:
 - [**CS8020**](#using-directive): *Info: Unused extern alias.*
 - [**CS8933**](#using-directive): *Info: The using directive appeared previously as global using.*
 
-These errors and warnings indicate issues with `using` directives, namespace declarations, or naming conflicts between types and namespaces. The following sections cover these errors and how to correct them.
+These errors and warnings indicate problems with `using` directives, namespace declarations, or naming conflicts between types and namespaces. The following sections describe these errors and how to correct them.
 
 ## Using directive
 
@@ -243,7 +243,7 @@ The following errors relate to restrictions on using aliases:
 
 See the [using alias](../keywords/using-directive.md#the-using-alias) language reference for the rules that govern these diagnostics.
 
-Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**). Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**). Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive—use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
+Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**). Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**). Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
 
 Starting with C# 12, the following restrictions apply to using aliases: Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**). Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**). Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
 
@@ -273,9 +273,9 @@ The following errors and warnings relate to naming conflicts between namespaces 
 
 See the [using directive](../keywords/using-directive.md), [extern alias](../keywords/extern-alias.md), and [namespace alias qualifier](../operators/namespace-alias-qualifier.md) language reference for the rules that govern these diagnostics.
 
-Use a fully qualified name or a [namespace alias](../operators/namespace-alias-qualifier.md) when your code references a name that exists in multiple imported namespaces, because the compiler can't determine which type you intend to use when the same name appears in two or more namespaces imported by `using` directives (**CS0104**). Rename either the type or the namespace when an imported type and an imported nested namespace share the same fully qualified name, because the compiler can't distinguish between them when the name is referenced (**CS0434**, **CS0438**).
+Use a fully qualified name or a [namespace alias](../operators/namespace-alias-qualifier.md) when your code references a name that exists in multiple imported namespaces. The compiler can't determine which type you intend to use when the same name appears in two or more namespaces imported by `using` directives (**CS0104**). Rename either the type or the namespace when an imported type and an imported nested namespace share the same fully qualified name. The compiler can't distinguish between them when the name is referenced (**CS0434**, **CS0438**).
 
-To resolve the naming conflict warnings, rename one of the conflicting declarations, use a different namespace, remove the unnecessary assembly reference, or use an [extern alias](../keywords/extern-alias.md) to disambiguate between the two definitions. The compiler resolves these conflicts automatically—using the locally defined namespace over the imported type (**CS0435**), the locally defined type over the imported type (**CS0436**), or the locally defined type over the imported namespace (**CS0437**)—but the warnings indicate a potential source of confusion that you should address.
+To resolve the naming conflict warnings, rename one of the conflicting declarations, use a different namespace, remove the unnecessary assembly reference, or use an [extern alias](../keywords/extern-alias.md) to disambiguate between the two definitions. The compiler resolves these conflicts automatically - using the locally defined namespace over the imported type (**CS0435**), the locally defined type over the imported type (**CS0436**), or the locally defined type over the imported namespace (**CS0437**) - but the warnings indicate a potential source of confusion that you should address.
 
 ## Predefined type imports
 
@@ -287,4 +287,4 @@ The following error relates to missing predefined type definitions:
 
 See the [NoStandardLib compiler option](../compiler-options/advanced.md#nostandardlib) language reference for the rules that govern this diagnostic.
 
-Verify that your project targets the correct .NET runtime, because predefined types like `System.Int32` and `System.String` come from the runtime library and an incorrect or missing `<TargetFramework>` specification prevents the compiler from finding them (**CS0518**). Ensure the `<TargetFramework>` property in your `.csproj` file specifies the intended runtime (for example, `net10.0`). Don't specify the [**NoStandardLib**](../compiler-options/advanced.md#nostandardlib) compiler option unless you intend to define your own `System` namespace, because this option prevents importing the standard library that defines all predefined types (**CS0518**). If the error persists, try reloading the project in Visual Studio, deleting the `obj` and `bin` folders and rebuilding, or reinstalling the .NET runtime (**CS0518**).
+Verify that your project targets the correct .NET runtime. Predefined types like `System.Int32` and `System.String` come from the runtime library. An incorrect or missing `<TargetFramework>` specification prevents the compiler from finding them (**CS0518**). Ensure the `<TargetFramework>` property in your `.csproj` file specifies the intended runtime (for example, `net10.0`). Don't specify the [**NoStandardLib**](../compiler-options/advanced.md#nostandardlib) compiler option unless you intend to define your own `System` namespace. This option prevents importing the standard library that defines all predefined types (**CS0518**). If the error persists, try reloading the project in Visual Studio, deleting the `obj` and `bin` folders and rebuilding, or reinstalling the .NET runtime (**CS0518**).

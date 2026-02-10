@@ -262,8 +262,8 @@ See the [using alias](../keywords/using-directive.md#the-using-alias) language r
 
 Starting with C# 12, the following restrictions apply to using aliases:
 
-- Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**). 
-- Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**). 
+- Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**).
+- Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**).
 - Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
 
 ## Namespace declarations

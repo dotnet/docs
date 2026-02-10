@@ -171,13 +171,17 @@ The following errors relate to `using` directives:
 - **CS8020**: *Unused extern alias.*
 - **CS8933**: *The using directive appeared previously as global using.*
 
-See the [using directive](../keywords/using-directive.md) and [extern alias](../keywords/extern-alias.md) language reference for the rules that govern these diagnostics.
+See the [using directive](../keywords/using-directive.md) and [extern alias](../keywords/extern-alias.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Move all `using` directives to the top of the file, or to the top of the namespace declaration, because the C# language requires `using` directives to come before other elements in a namespace (**CS1529**). Move all `extern alias` declarations before any `using` directives, because the language requires extern aliases to come before all other elements including `using` directives (**CS0439**, **CS7015**). Move all assembly and module level attributes after `using` clauses and `extern alias` declarations but before any type declarations, because attributes must follow directives but precede types (**CS1730**).
-
-Ensure that every `extern alias` declaration in your source code has a corresponding alias defined in your project's [reference options](../compiler-options/inputs.md#references), because the compiler can't resolve an alias that wasn't specified (**CS0430**). Use a separate `/reference` option for each extern alias rather than combining multiple aliases in a single option, because the compiler requires one alias per reference option (**CS2034**). Ensure the alias in your `/reference` option is a valid C# identifier, because the alias must follow identifier naming rules (**CS1679**). Include a filename after the `=` sign in your alias reference option, because the compiler needs to know which assembly the alias refers to (**CS1680**). Don't attempt to redefine the `global` extern alias, because `global` is a predefined alias that refers to all unaliased references (**CS1681**).
-
-Remove duplicate `using` directives, because the compiler warns when the same namespace is imported multiple times (**CS0105**, **CS8019**, **CS8933**). Remove unused `extern alias` declarations, because the compiler issues a diagnostic when an extern alias is declared but never referenced in your code (**CS8020**).
+- Move all `using` directives to the top of the file, or to the top of the namespace declaration. The C# language requires `using` directives to come before other elements in a namespace (**CS1529**).
+- Move all `extern alias` declarations before any `using` directives. The language requires extern aliases to come before all other elements, including `using` directives (**CS0439**, **CS7015**).
+- Move all assembly and module level attributes after `using` clauses and `extern alias` declarations but before any type declarations. Attributes must follow directives but precede types (**CS1730**).
+- Ensure that every `extern alias` declaration in your source code has a corresponding alias defined in your project's [reference options](../compiler-options/inputs.md#references). The compiler can't resolve an alias that wasn't specified (**CS0430**).
+- Use a separate `/reference` option for each extern alias rather than combining multiple aliases in a single option. The compiler requires one alias per reference option (**CS2034**).
+- Ensure the alias in your `/reference` option is a valid C# identifier. The alias must follow identifier naming rules (**CS1679**). Include a filename after the `=` sign in your alias reference option. The compiler needs to know which assembly the alias refers to (**CS1680**).
+- Don't attempt to redefine the `global` extern alias. `global` is a predefined alias that refers to all unaliased references (**CS1681**).
+- Remove duplicate `using` directives. The compiler warns when the same namespace is imported multiple times (**CS0105**, **CS8019**, **CS8933**).
+- Remove unused `extern alias` declarations. The compiler issues a diagnostic when an extern alias is declared but never referenced in your code (**CS8020**).
 
 ## Using static directive
 
@@ -188,9 +192,11 @@ The following errors relate to `using static` directives:
 - **CS9133**: *`static` modifier must precede `unsafe` modifier.*
 - **CS9162**: *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
 
-See the [using static directive](../keywords/using-directive.md#the-static-modifier) language reference for the rules that govern these diagnostics.
+See the [using static directive](../keywords/using-directive.md#the-static-modifier) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Add the `static` modifier when importing a type's members directly, because omitting `static` tells the compiler you're importing a namespace rather than a type (**CS0138**). Remove the `static` modifier when importing a namespace, because `using static` can only be applied to types, not namespaces (**CS7007**). Ensure the target of a `using static` directive is a class, struct, interface, enum, or delegate, because other types aren't valid targets for static imports (**CS9162**). Place the `static` modifier before the `unsafe` modifier when combining both, because the language requires modifiers in a specific order (**CS9133**).
+- Add the `static` modifier when importing a type's members directly, because omitting `static` tells the compiler you're importing a namespace rather than a type (**CS0138**).
+- Remove the `static` modifier when importing a namespace, because `using static` can only be applied to types, not namespaces (**CS7007**). Ensure the target of a `using static` directive is a class, struct, interface, enum, or delegate, because other types aren't valid targets for static imports (**CS9162**).
+- Place the `static` modifier before the `unsafe` modifier when combining both, because the language requires modifiers in a specific order (**CS9133**).
 
 ## Global using directive
 
@@ -199,9 +205,11 @@ The following errors relate to `global using` directives:
 - **CS8914**: *A global using directive cannot be used in a namespace declaration.*
 - **CS8915**: *A global using directive must precede all non-global using directives.*
 
-See the [global using directive](../keywords/using-directive.md#the-global-modifier) language reference for the rules that govern these diagnostics.
+See the [global using directive](../keywords/using-directive.md#the-global-modifier) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Move `global using` directives outside of any namespace declaration to file scope, because global usings apply project-wide and can't be scoped to a namespace (**CS8914**). Place all `global using` directives before any non-global `using` directives in the file, because the language requires global directives to precede local ones (**CS8915**). Note that a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
+- Move `global using` directives outside of any namespace declaration to file scope, because global usings apply project-wide and can't be scoped to a namespace (**CS8914**).
+- Place all `global using` directives before any non-global `using` directives in the file, because the language requires global directives to precede local ones (**CS8915**).
+- Note that a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
 
 ## File-scoped namespace
 
@@ -211,9 +219,11 @@ The following errors relate to file-scoped namespaces:
 - **CS8955**: *Source file can not contain both file-scoped and normal namespace declarations.*
 - **CS8956**: *File-scoped namespace must precede all other members in a file.*
 
-See the [file-scoped namespace](../keywords/namespace.md) language reference for the rules that govern these diagnostics.
+See the [file-scoped namespace](../keywords/namespace.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Use only one file-scoped namespace declaration per file, because the language allows only a single file-scoped namespace to set the namespace for all types in a file (**CS8954**). Choose either file-scoped or block-scoped namespace declarations within a single file, because the language doesn't allow mixing both styles (**CS8955**). Move the file-scoped namespace declaration before any type declarations, because the namespace must be established before types are declared (**CS8956**).
+- Use only one file-scoped namespace declaration per file, because the language allows only a single file-scoped namespace to set the namespace for all types in a file (**CS8954**).
+- Choose either file-scoped or block-scoped namespace declarations within a single file, because the language doesn't allow mixing both styles (**CS8955**).
+- Move the file-scoped namespace declaration before any type declarations, because the namespace must be established before types are declared (**CS8956**).
 
 ## Alias qualifier
 
@@ -226,9 +236,12 @@ The following errors relate to the alias qualifier:
 - **CS7000**: *Unexpected use of an aliased name.*
 - **CS8083**: *An alias-qualified name is not an expression.*
 
-See the [namespace alias qualifier](../operators/namespace-alias-qualifier.md) language reference for the rules that govern these diagnostics.
+See the [namespace alias qualifier](../operators/namespace-alias-qualifier.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Replace the `::` operator with the `.` operator when you access members of a type alias, because the `::` qualifier is only valid for namespace aliases, not type aliases (**CS0431**, **CS0687**). Ensure the alias you're referencing is declared with a `using` directive or `extern alias`, because the compiler can't resolve an undefined alias (**CS0432**). Use the alias qualifier only in contexts where a type or namespace name is expected, because alias-qualified names aren't valid as expressions (**CS7000**, **CS8083**). Choose a different name for your alias instead of `global`, because `global` is reserved to refer to the global namespace and can't be redefined (**CS0440**).
+- Replace the `::` operator with the `.` operator when you access members of a type alias, because the `::` qualifier is only valid for namespace aliases, not type aliases (**CS0431**, **CS0687**).
+- Ensure the alias you're referencing is declared with a `using` directive or `extern alias`, because the compiler can't resolve an undefined alias (**CS0432**).
+- Use the alias qualifier only in contexts where a type or namespace name is expected, because alias-qualified names aren't valid as expressions (**CS7000**, **CS8083**).
+- Choose a different name for your alias instead of `global`, because `global` is reserved to refer to the global namespace and can't be redefined (**CS0440**).
 
 ## Using alias restrictions
 
@@ -241,11 +254,17 @@ The following errors relate to restrictions on using aliases:
 - **CS9131**: *Only a using alias can be `unsafe`.*
 - **CS9132**: *Using alias cannot be a nullable reference type.*
 
-See the [using alias](../keywords/using-directive.md#the-using-alias) language reference for the rules that govern these diagnostics.
+See the [using alias](../keywords/using-directive.md#the-using-alias) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**). Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**). Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
+- Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**).
+- Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**).
+- Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
 
-Starting with C# 12, the following restrictions apply to using aliases: Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**). Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**). Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
+Starting with C# 12, the following restrictions apply to using aliases:
+
+- Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**). 
+- Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**). 
+- Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
 
 ## Namespace declarations
 
@@ -256,9 +275,12 @@ The following errors relate to namespace declaration rules:
 - **CS1671**: *A namespace declaration cannot have modifiers or attributes.*
 - **CS7021**: *Cannot declare namespace in script code.*
 
-See the [namespace keyword](../keywords/namespace.md) and [General Structure of a C# Program](../../fundamentals/program-structure/index.md) language reference for the rules that govern these diagnostics.
+See the [namespace keyword](../keywords/namespace.md) and [General Structure of a C# Program](../../fundamentals/program-structure/index.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Ensure all methods, fields, and properties are declared inside a type (class, struct, record, or interface) rather than directly inside a namespace, because namespaces can only contain type declarations, nested namespaces, and `using` directives (**CS0116**). Check for mismatched braces in your source file, because an extra closing brace after a namespace or type definition produces an error when the compiler encounters unexpected content at the end of the file (**CS1022**). Remove any access modifiers or attributes from namespace declarations, because namespaces don't support modifiers like `public` or `private`, and attributes can't be applied to them (**CS1671**). Move namespace declarations out of C# script files (`.csx`) and into regular source files (`.cs`), because script code evaluates in a single execution context that doesn't support namespace declarations (**CS7021**).
+- Ensure all methods, fields, and properties are declared inside a type (class, struct, record, or interface) rather than directly inside a namespace, because namespaces can only contain type declarations, nested namespaces, and `using` directives (**CS0116**).
+- Check for mismatched braces in your source file, because an extra closing brace after a namespace or type definition produces an error when the compiler encounters unexpected content at the end of the file (**CS1022**).
+- Remove any access modifiers or attributes from namespace declarations, because namespaces don't support modifiers like `public` or `private`, and attributes can't be applied to them (**CS1671**).
+- Move namespace declarations out of C# script files (`.csx`) and into regular source files (`.cs`), because script code evaluates in a single execution context that doesn't support namespace declarations (**CS7021**).
 
 ## Namespace and type naming conflicts
 
@@ -271,9 +293,11 @@ The following errors and warnings relate to naming conflicts between namespaces 
 - **CS0437**: *The type 'type' in 'assembly2' conflicts with the imported namespace 'namespace' in 'assembly1'. Using the type defined in 'assembly'.*
 - **CS0438**: *The type 'type' in 'module_1' conflicts with the namespace 'namespace' in 'module_2'.*
 
-See the [using directive](../keywords/using-directive.md), [extern alias](../keywords/extern-alias.md), and [namespace alias qualifier](../operators/namespace-alias-qualifier.md) language reference for the rules that govern these diagnostics.
+See the [using directive](../keywords/using-directive.md), [extern alias](../keywords/extern-alias.md), and [namespace alias qualifier](../operators/namespace-alias-qualifier.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
-Use a fully qualified name or a [namespace alias](../operators/namespace-alias-qualifier.md) when your code references a name that exists in multiple imported namespaces. The compiler can't determine which type you intend to use when the same name appears in two or more namespaces imported by `using` directives (**CS0104**). Rename either the type or the namespace when an imported type and an imported nested namespace share the same fully qualified name. The compiler can't distinguish between them when the name is referenced (**CS0434**, **CS0438**).
+- Use a fully qualified name or a [namespace alias](../operators/namespace-alias-qualifier.md) when your code references a name that exists in multiple imported namespaces.
+- The compiler can't determine which type you intend to use when the same name appears in two or more namespaces imported by `using` directives (**CS0104**).
+- Rename either the type or the namespace when an imported type and an imported nested namespace share the same fully qualified name. The compiler can't distinguish between them when the name is referenced (**CS0434**, **CS0438**).
 
 To resolve the naming conflict warnings, rename one of the conflicting declarations, use a different namespace, remove the unnecessary assembly reference, or use an [extern alias](../keywords/extern-alias.md) to disambiguate between the two definitions. The compiler resolves these conflicts automatically - using the locally defined namespace over the imported type (**CS0435**), the locally defined type over the imported type (**CS0436**), or the locally defined type over the imported namespace (**CS0437**) - but the warnings indicate a potential source of confusion that you should address.
 
@@ -287,4 +311,4 @@ The following error relates to missing predefined type definitions:
 
 See the [NoStandardLib compiler option](../compiler-options/advanced.md#nostandardlib) language reference for the rules that govern this diagnostic.
 
-Verify that your project targets the correct .NET runtime. Predefined types like `System.Int32` and `System.String` come from the runtime library. An incorrect or missing `<TargetFramework>` specification prevents the compiler from finding them (**CS0518**). Ensure the `<TargetFramework>` property in your `.csproj` file specifies the intended runtime (for example, `net10.0`). Don't specify the [**NoStandardLib**](../compiler-options/advanced.md#nostandardlib) compiler option unless you intend to define your own `System` namespace. This option prevents importing the standard library that defines all predefined types (**CS0518**). If the error persists, try reloading the project in Visual Studio, deleting the `obj` and `bin` folders and rebuilding, or reinstalling the .NET runtime (**CS0518**).
+Verify that your project targets the correct .NET runtime. Predefined types like `System.Int32` and `System.String` come from the runtime library. An incorrect or missing `<TargetFramework>` specification prevents the compiler from finding these types (**CS0518**). Ensure the `<TargetFramework>` property in your `.csproj` file specifies the intended runtime (for example, `net10.0`). Don't specify the [**NoStandardLib**](../compiler-options/advanced.md#nostandardlib) compiler option unless you intend to define your own `System` namespace. This option prevents importing the standard library that defines all predefined types (**CS0518**). If the error persists, try reloading the project in Visual Studio, deleting the `obj` and `bin` folders and rebuilding the project, or reinstalling the .NET runtime (**CS0518**).

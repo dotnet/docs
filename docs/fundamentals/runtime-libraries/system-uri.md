@@ -9,7 +9,7 @@ ms.date: 12/31/2023
 
 A uniform resource identifier (URI) is a compact representation of a resource available to your application on the intranet or internet. The <xref:System.Uri> class defines the properties and methods for handling URIs, including parsing, comparing, and combining. The <xref:System.Uri> class properties are read-only; to create a modifiable object, use the <xref:System.UriBuilder> class.
 
-Relative URIs (for example, "/new/index.htm") must be expanded with respect to a base URI so that they are absolute. The <xref:System.Uri.MakeRelativeUri%2A> method is provided to convert absolute URIs to relative URIs when necessary.
+Relative URIs (for example, "/new/index.htm") must be expanded with respect to a base URI so that they are absolute. The <xref:System.Uri.MakeRelativeUri*> method is provided to convert absolute URIs to relative URIs when necessary.
 
 The <xref:System.Uri> constructors do not escape URI strings if the string is a well-formed URI including a scheme identifier.
 
@@ -47,7 +47,7 @@ AbsoluteUri: http://myurl/
 PathAndQuery: /
 ```
 
-You can transform the contents of the <xref:System.Uri> class from an escape encoded URI reference to a readable URI reference by using the <xref:System.Uri.ToString%2A> method. Note that some reserved characters might still be escaped in the output of the <xref:System.Uri.ToString%2A> method. This is to support unambiguous reconstruction of a URI from the value returned by <xref:System.Uri.ToString%2A>.
+You can transform the contents of the <xref:System.Uri> class from an escape encoded URI reference to a readable URI reference by using the <xref:System.Uri.ToString*> method. Note that some reserved characters might still be escaped in the output of the <xref:System.Uri.ToString*> method. This is to support unambiguous reconstruction of a URI from the value returned by <xref:System.Uri.ToString*>.
 
 Some URIs include a fragment identifier or a query or both. A fragment identifier is any text that follows a number sign (#), not including the number sign; the fragment text is stored in the <xref:System.Uri.Fragment> property. Query information is any text that follows a question mark (?) in the URI; the query text is stored in the <xref:System.Uri.Query> property.
 
@@ -78,7 +78,7 @@ In .NET Framework 4.5 and later versions, IRI is always enabled and can't be cha
 
 Enabling IDN converts all Unicode labels in a domain name to their Punycode equivalents. Punycode names contain only ASCII characters and always start with the xn-- prefix. The reason for this is to support existing DNS servers on the Internet, since most DNS servers only support ASCII characters (see RFC 3940).
 
-Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals%2A>, <xref:System.Uri.OriginalString%2A>, <xref:System.Uri.GetComponents%2A>, and <xref:System.Uri.IsWellFormedOriginalString%2A> methods.
+Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals*>, <xref:System.Uri.OriginalString*>, <xref:System.Uri.GetComponents*>, and <xref:System.Uri.IsWellFormedOriginalString*> methods.
 
 There are three possible values for IDN depending on the DNS servers that are used:
 
@@ -117,7 +117,7 @@ These implicit file paths are not compliant with the URI specification and shoul
 
 ## Security considerations
 
-Because of security concerns, your application should use caution when accepting <xref:System.Uri> instances from untrusted sources and with `dontEscape` set to `true` in the [constructor](xref:System.Uri.%23ctor(System.String,System.Boolean)). You can check a URI string for validity by calling the <xref:System.Uri.IsWellFormedOriginalString%2A> method.
+Because of security concerns, your application should use caution when accepting <xref:System.Uri> instances from untrusted sources and with `dontEscape` set to `true` in the [constructor](xref:System.Uri.%23ctor(System.String,System.Boolean)). You can check a URI string for validity by calling the <xref:System.Uri.IsWellFormedOriginalString*> method.
 
 When dealing with untrusted user input, confirm assumptions about the newly created `Uri` instance before trusting its properties.
 This can be done in the following way:

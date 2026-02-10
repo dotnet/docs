@@ -91,15 +91,15 @@ Disposing of the `HttpClient` instance closes the open connections and cancels a
 
 ## Buffering and request lifetime
 
-By default, `HttpClient` methods (except <xref:System.Net.Http.HttpClient.GetStreamAsync%2A>) buffer the responses from the server, reading all the response body into memory before returning the async result. Those requests will continue until one of the following occurs:
+By default, `HttpClient` methods (except <xref:System.Net.Http.HttpClient.GetStreamAsync*>) buffer the responses from the server, reading all the response body into memory before returning the async result. Those requests will continue until one of the following occurs:
 
-- The <xref:System.Threading.Tasks.Task%601> succeeds and returns a result.
-- The <xref:System.Net.Http.HttpClient.Timeout> is reached, in which case the <xref:System.Threading.Tasks.Task%601> will be cancelled.
+- The <xref:System.Threading.Tasks.Task`1> succeeds and returns a result.
+- The <xref:System.Net.Http.HttpClient.Timeout> is reached, in which case the <xref:System.Threading.Tasks.Task`1> will be cancelled.
 - The <xref:System.Threading.CancellationToken> passable to some method overloads is fired.
 - <xref:System.Net.Http.HttpClient.CancelPendingRequests> is called.
 - The HttpClient is disposed.
 
-You can change the buffering behavior on a per-request basis using the <xref:System.Net.Http.HttpCompletionOption> parameter available on some method overloads. This argument can be used to specify if the <xref:System.Threading.Tasks.Task%601> should be considered complete after reading just the response headers, or after reading and buffering the response content.
+You can change the buffering behavior on a per-request basis using the <xref:System.Net.Http.HttpCompletionOption> parameter available on some method overloads. This argument can be used to specify if the <xref:System.Threading.Tasks.Task`1> should be considered complete after reading just the response headers, or after reading and buffering the response content.
 
 If your app that uses <xref:System.Net.Http.HttpClient> and related classes in the <xref:System.Net.Http> namespace intends to download large amounts of data (50 megabytes or more), then the app should stream those downloads and not use the default buffering. If you use the default buffering, the client memory usage will get very large, potentially resulting in substantially reduced performance.
 
@@ -107,15 +107,15 @@ If your app that uses <xref:System.Net.Http.HttpClient> and related classes in t
 
 The following methods are thread safe:
 
-- <xref:System.Net.Http.HttpClient.CancelPendingRequests%2A>
-- <xref:System.Net.Http.HttpClient.DeleteAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetStreamAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetStringAsync%2A>
-- <xref:System.Net.Http.HttpClient.PostAsync%2A>
-- <xref:System.Net.Http.HttpClient.PutAsync%2A>
-- <xref:System.Net.Http.HttpClient.SendAsync%2A>
+- <xref:System.Net.Http.HttpClient.CancelPendingRequests*>
+- <xref:System.Net.Http.HttpClient.DeleteAsync*>
+- <xref:System.Net.Http.HttpClient.GetAsync*>
+- <xref:System.Net.Http.HttpClient.GetByteArrayAsync*>
+- <xref:System.Net.Http.HttpClient.GetStreamAsync*>
+- <xref:System.Net.Http.HttpClient.GetStringAsync*>
+- <xref:System.Net.Http.HttpClient.PostAsync*>
+- <xref:System.Net.Http.HttpClient.PutAsync*>
+- <xref:System.Net.Http.HttpClient.SendAsync*>
 
 ## Proxies
 
@@ -130,13 +130,13 @@ Proxy settings (like <xref:System.Net.IWebProxy.Credentials>) should be changed 
 
 ## Timeouts
 
-You can use <xref:System.Net.Http.HttpClient.Timeout> to set a default timeout for all HTTP requests from the `HttpClient` instance. The timeout only applies to the xxxAsync methods that cause a request/response to be initiated. If the timeout is reached, the <xref:System.Threading.Tasks.Task%601> for that request is cancelled.
+You can use <xref:System.Net.Http.HttpClient.Timeout> to set a default timeout for all HTTP requests from the `HttpClient` instance. The timeout only applies to the xxxAsync methods that cause a request/response to be initiated. If the timeout is reached, the <xref:System.Threading.Tasks.Task`1> for that request is cancelled.
 
 You can set some additional timeouts if you pass in a <xref:System.Net.Http.SocketsHttpHandler> instance when constructing the `HttpClient` object:
 
 | Property | Description |
 | ------------ | -------------- |
-| <xref:System.Net.Http.SocketsHttpHandler.ConnectTimeout> | Specifies a timeout that's used when a request requires a new TCP connection to be created. If the timeout occurs, the request <xref:System.Threading.Tasks.Task%601> is cancelled. |
+| <xref:System.Net.Http.SocketsHttpHandler.ConnectTimeout> | Specifies a timeout that's used when a request requires a new TCP connection to be created. If the timeout occurs, the request <xref:System.Threading.Tasks.Task`1> is cancelled. |
 | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> | Specifies a timeout to be used for each connection in the connection pool. If the connection is idle, the connection is immediately closed; otherwise, the connection is closed at the end of the current request. |
 | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | If a connection in the connection pool is idle for this long, the connection is closed. |
 | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | If request has an "Expect: 100-continue" header, it delays sending content until the timeout or until a "100-continue" response is received. |

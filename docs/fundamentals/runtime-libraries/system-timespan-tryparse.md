@@ -67,9 +67,9 @@ The <xref:System.TimeSpan.TryParse(System.String,System.IFormatProvider,System.T
 
 The `formatProvider` parameter is an <xref:System.IFormatProvider> implementation that provides culture-specific information about the format of the returned string. The `formatProvider` parameter can be any of the following:
 
-- A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be reflected in the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting of the returned string.
+- A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be reflected in the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat*?displayProperty=nameWithType> property defines the formatting of the returned string.
 - A <xref:System.Globalization.DateTimeFormatInfo> object that defines the formatting of the returned string.
-- A custom object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides formatting information.
+- A custom object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat*?displayProperty=nameWithType> method returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides formatting information.
 
 If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.
 

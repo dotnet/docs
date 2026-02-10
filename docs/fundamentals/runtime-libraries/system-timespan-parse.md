@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The input string to the <xref:System.TimeSpan.Parse%2A> methods contains a time interval specification in the form:
+The input string to the <xref:System.TimeSpan.Parse*> methods contains a time interval specification in the form:
 
 `[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]`
 
@@ -30,7 +30,7 @@ Elements in square brackets (`[` and `]`) are optional. One selection from the l
 | *.*     | A culture-sensitive symbol that separates seconds from fractions of a second. The invariant format uses a period (".") character. |
 | *ff*    | Optional fractional seconds, consisting of one to seven decimal digits. |
 
-If the input string is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse%2A> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
+If the input string is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse*> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
 
 The components of the input string must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.
 

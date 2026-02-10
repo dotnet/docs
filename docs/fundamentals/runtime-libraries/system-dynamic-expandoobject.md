@@ -113,7 +113,7 @@ The following code example demonstrates how you can create and use a method to p
 
 The `ExpandoObject` class implements the `IDictionary<String, Object>` interface. This enables enumeration of members added to the instance of the `ExpandoObject` class at runtime. This can be useful if you do not know at compile time what members an instance might have.
 
-The following code example shows how you can cast an instance of the `ExpandoObject` class to the <xref:System.Collections.Generic.IDictionary%602> interface and enumerate the instance's members.
+The following code example shows how you can cast an instance of the `ExpandoObject` class to the <xref:System.Collections.Generic.IDictionary`2> interface and enumerate the instance's members.
 
 :::code language="csharp" source="./snippets/System.Dynamic/ExpandoObject/Overview/csharp/program.cs" id="Snippet5":::
 :::code language="vb" source="./snippets/System.Dynamic/ExpandoObject/Overview/vb/module1.vb" id="Snippet5":::

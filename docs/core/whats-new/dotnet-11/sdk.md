@@ -1,8 +1,10 @@
 ---
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
+titleSuffix: ""
 ms.date: 02/10/2026
 ai-usage: ai-generated
+ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11

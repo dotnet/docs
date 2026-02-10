@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Reflection.Emit.DynamicMethod.IsSecurityCritical%2A>, <xref:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical%2A>, and <xref:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent%2A> properties report the transparency level of the dynamic method as determined by the common language runtime (CLR). The combinations of these properties are shown in the following table:
+The <xref:System.Reflection.Emit.DynamicMethod.IsSecurityCritical*>, <xref:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical*>, and <xref:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent*> properties report the transparency level of the dynamic method as determined by the common language runtime (CLR). The combinations of these properties are shown in the following table:
 
 | Security level | IsSecurityCritical | IsSecuritySafeCritical | IsSecurityTransparent |
 |----------------|--------------------|-----------------------|-----------------------|

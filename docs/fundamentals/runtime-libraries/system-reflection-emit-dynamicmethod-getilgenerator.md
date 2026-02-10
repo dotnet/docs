@@ -10,21 +10,21 @@ ai-usage: ai-assisted
 
 ## <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator>
 
-After a dynamic method has been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> or <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method, any further attempt to add MSIL is ignored. No exception is thrown.
+After a dynamic method has been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> or <xref:System.Reflection.Emit.DynamicMethod.Invoke*> method, any further attempt to add MSIL is ignored. No exception is thrown.
 
 > [!NOTE]
 > There are restrictions on unverifiable code in dynamic methods, even in some full-trust scenarios. See the "Verification" section in Remarks for <xref:System.Reflection.Emit.DynamicMethod>.
 
 ### Examples
 
-The following code example creates a dynamic method that takes two parameters. The example emits a simple function body that prints the first parameter to the console, and the example uses the second parameter as the return value of the method. The example completes the method by creating a delegate, invokes the delegate with different parameters, and finally invokes the dynamic method using the <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method.
+The following code example creates a dynamic method that takes two parameters. The example emits a simple function body that prints the first parameter to the console, and the example uses the second parameter as the return value of the method. The example completes the method by creating a delegate, invokes the delegate with different parameters, and finally invokes the dynamic method using the <xref:System.Reflection.Emit.DynamicMethod.Invoke*> method.
 
 :::code language="csharp" source="~/snippets/csharp/System.Reflection.Emit/DynamicMethod/.ctor/source1.cs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/System.Reflection.Emit/DynamicMethod/.ctor/source1.vb" id="Snippet1":::
 
 ## <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)>
 
-After a dynamic method has been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> or <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method, any further attempt to add MSIL is ignored. No exception is thrown.
+After a dynamic method has been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> or <xref:System.Reflection.Emit.DynamicMethod.Invoke*> method, any further attempt to add MSIL is ignored. No exception is thrown.
 
 > [!NOTE]
 > There are restrictions on unverifiable code in dynamic methods, even in some full-trust scenarios. See the "Verification" section in Remarks for <xref:System.Reflection.Emit.DynamicMethod>.

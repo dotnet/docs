@@ -8,9 +8,9 @@ ai-usage: ai-assisted
 
 [!INCLUDE [context](includes/context.md)]
 
-If `position` is 0, the <xref:System.Reflection.Emit.DynamicMethod.DefineParameter%2A> method refers to the return value. Setting parameter information has no effect on the return value.
+If `position` is 0, the <xref:System.Reflection.Emit.DynamicMethod.DefineParameter*> method refers to the return value. Setting parameter information has no effect on the return value.
 
-If the dynamic method has already been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> or <xref:System.Reflection.Emit.DynamicMethod.Invoke%2A> method, the <xref:System.Reflection.Emit.DynamicMethod.DefineParameter%2A> method has no effect. No exception is thrown.
+If the dynamic method has already been completed, by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> or <xref:System.Reflection.Emit.DynamicMethod.Invoke*> method, the <xref:System.Reflection.Emit.DynamicMethod.DefineParameter*> method has no effect. No exception is thrown.
 
 ## Examples
 

@@ -37,6 +37,10 @@ For information about what's new in ASP.NET Core, see [What's new in ASP.NET Cor
 
 ## C# 15
 
+C# 15 includes these features:
+
+- [Collection expression arguments](../../../csharp/whats-new/csharp-15.md#collection-expression-arguments)
+
 For information about new C# features, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md).
 
 ## Breaking changes

@@ -33,7 +33,7 @@ For more information, see [What's new in the SDK for .NET 11](sdk.md).
 
 ## ASP.NET Core
 
-For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core for .NET 11](/aspnet/core/release-notes/aspnetcore-11?view=aspnetcore-11.0).
+For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core for .NET 11](/aspnet/core/release-notes/aspnetcore-11.0).
 
 ## C# 15
 

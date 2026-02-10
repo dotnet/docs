@@ -13,11 +13,11 @@ This article describes new features and enhancements in the .NET SDK for .NET 11
 
 .NET 11 includes the following breaking change in the SDK:
 
-### Mono launch target removed
+### Mono launch target no longer set automatically
 
-Starting in .NET 11, the Mono launch target has been removed from the .NET SDK. This change affects scenarios where applications were explicitly targeting Mono for execution.
+Starting in .NET 11, the .NET SDK no longer automatically sets `mono` as the launch target for .NET Framework apps on Linux. If you rely on Mono for execution, update your launch configuration to specify `mono` explicitly.
 
-For more information, see [Mono launch target removed](../../compatibility/sdk/11/mono-launch-target-removed.md).
+For more information, see [Mono launch target no longer set automatically](../../compatibility/sdk/11/mono-launch-target-removed.md).
 
 ## See also
 

@@ -36,7 +36,7 @@ This release contains no known issues.
 
 The following table outlines the updates in this release.
 
-| Product version | Cumulative update preview |
+| Product version | Cumulative update |
 | --- | --- |
 | **Windows 11, version 26H1** | |
 | .NET Framework 4.8.1 | [5074837][kbLink] |

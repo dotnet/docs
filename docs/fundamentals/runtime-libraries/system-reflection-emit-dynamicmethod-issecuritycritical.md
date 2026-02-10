@@ -8,6 +8,9 @@ ai-usage: ai-assisted
 
 [!INCLUDE [context](includes/context.md)]
 
+> [!NOTE]
+> The remarks in this article apply only to .NET Framework and not to modern .NET.
+
 The <xref:System.Reflection.Emit.DynamicMethod.IsSecurityCritical*>, <xref:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical*>, and <xref:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent*> properties report the transparency level of the dynamic method as determined by the common language runtime (CLR). The combinations of these properties are shown in the following table:
 
 | Security level | IsSecurityCritical | IsSecuritySafeCritical | IsSecurityTransparent |

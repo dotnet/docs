@@ -36,7 +36,7 @@ The <xref:System.Globalization.TextInfo> class now provides `ToLower` and `ToUpp
 
 ## Base64 encoding improvements
 
-.NET 11 introduces a new <xref:System.Buffers.Text.Base64> class that provides comprehensive APIs for Base64 encoding and decoding. This class offers improved performance and flexibility compared to existing methods.
+.NET 11 adds new APIs and overloads to the existing <xref:System.Buffers.Text.Base64> type, providing comprehensive support for Base64 encoding and decoding. These additions offer improved performance and flexibility compared to existing methods.
 
 ### New Base64 APIs
 

@@ -28,7 +28,7 @@ Character sets include ignorable characters, which are characters that are not c
 
 ## Security considerations
 
-If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture*> property to ensure that the behavior is consistent, regardless of the culture settings of the operating system.
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture> property to ensure that the behavior is consistent, regardless of the culture settings of the operating system.
 
 > [!NOTE]
 > When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions.Ordinal> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> for security comparisons.

@@ -25,9 +25,9 @@ A <xref:System.Globalization.DateTimeFormatInfo> object can represent the format
 
 The invariant culture represents a culture that is culture-insensitive. It is based on the English language, but not on any specific English-speaking country/region. Although the data of specific cultures can be dynamic and can change to reflect new cultural conventions or user preferences, the data of the invariant culture does not change. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the invariant culture in the following ways:
 
-- By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo*> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
+- By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 - By calling the parameterless <xref:System.Globalization.DateTimeFormatInfo.%23ctor*> constructor. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.
-- By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat*> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture*?displayProperty=nameWithType> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
+- By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture*?displayProperty=nameWithType> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 
 The following example uses each of these methods to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the invariant culture. It then indicates whether the object is read-only.
 
@@ -65,9 +65,9 @@ You can use code like the following to determine which specific culture's format
 
 You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the current culture in the following ways:
 
-- By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo*> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
+- By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 
-- By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat*> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
+- By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 
 - By calling the <xref:System.Globalization.NumberFormatInfo.GetInstance*> method with a <xref:System.Globalization.CultureInfo> object that represents the current culture. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 
@@ -77,11 +77,11 @@ The following example uses each of these methods to instantiate a <xref:System.G
 
 You can create a writable <xref:System.Globalization.DateTimeFormatInfo> object that represents the conventions of the current culture in one of these ways:
 
-- By retrieving a <xref:System.Globalization.DateTimeFormatInfo> object in any of the three previous ways and calling the <xref:System.Globalization.DateTimeFormatInfo.Clone*> method on the returned <xref:System.Globalization.DateTimeFormatInfo> object. This creates a copy of the original <xref:System.Globalization.DateTimeFormatInfo> object, except that its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly*> property is `false`.
+- By retrieving a <xref:System.Globalization.DateTimeFormatInfo> object in any of the three previous ways and calling the <xref:System.Globalization.DateTimeFormatInfo.Clone*> method on the returned <xref:System.Globalization.DateTimeFormatInfo> object. This creates a copy of the original <xref:System.Globalization.DateTimeFormatInfo> object, except that its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly> property is `false`.
 
 - By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture*?displayProperty=nameWithType> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.DateTimeFormat*?displayProperty=nameWithType> property to retrieve the <xref:System.Globalization.DateTimeFormatInfo> object.
 
-The following example illustrates each way of instantiating a read/write <xref:System.Globalization.DateTimeFormatInfo> object and displays the value of its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly*> property.
+The following example illustrates each way of instantiating a read/write <xref:System.Globalization.DateTimeFormatInfo> object and displays the value of its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly> property.
 
 :::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/instantiate2.cs" id="Snippet7":::
 
@@ -97,9 +97,9 @@ The culture-specific data for formatting date and time values provided by the <x
 
 - Replacement cultures. The <xref:System.Globalization.CultureAndRegionInfoBuilder> class can be used to replace the data of an existing culture.
 
-- Cascading changes to property values. A number of culture-related properties can change at runtime, which, in turn, causes <xref:System.Globalization.DateTimeFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo*> property changes to an object associated with the current culture. Similarly, a culture's calendar can change, which can result in changes to numerous <xref:System.Globalization.DateTimeFormatInfo> property values.
+- Cascading changes to property values. A number of culture-related properties can change at runtime, which, in turn, causes <xref:System.Globalization.DateTimeFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo> property changes to an object associated with the current culture. Similarly, a culture's calendar can change, which can result in changes to numerous <xref:System.Globalization.DateTimeFormatInfo> property values.
 
-- User preferences. Users of your application might choose to override some of the values associated with the current system culture through the regional and language options in Control Panel. For example, users might choose to display the date in a different format. If the <xref:System.Globalization.CultureInfo.UseUserOverride*?displayProperty=nameWithType> property is set to `true`, the properties of the <xref:System.Globalization.DateTimeFormatInfo> object is also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars indicated by the <xref:System.Globalization.CultureInfo.OptionalCalendars*> property), the results of the methods and the values of the properties are undefined.
+- User preferences. Users of your application might choose to override some of the values associated with the current system culture through the regional and language options in Control Panel. For example, users might choose to display the date in a different format. If the <xref:System.Globalization.CultureInfo.UseUserOverride*?displayProperty=nameWithType> property is set to `true`, the properties of the <xref:System.Globalization.DateTimeFormatInfo> object is also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars indicated by the <xref:System.Globalization.CultureInfo.OptionalCalendars> property), the results of the methods and the values of the properties are undefined.
 
 To minimize the possibility of inconsistent data, all user-overridable properties of a <xref:System.Globalization.DateTimeFormatInfo> object are initialized when the object is created. There is still a possibility of inconsistency, because neither object creation nor the user override process is atomic and the relevant values can change during object creation. However, this situation should be extremely rare.
 
@@ -139,7 +139,7 @@ The following example illustrates the relationship between the <xref:System.IFor
 
 The <xref:System.Globalization.DateTimeFormatInfo> object includes three kinds of properties that are used in formatting operations with date and time values:
 
-- Calendar-related properties. Properties such as <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames*>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames*>, <xref:System.Globalization.DateTimeFormatInfo.DayNames*>, and <xref:System.Globalization.DateTimeFormatInfo.MonthNames*>, are associated with the calendar used by the culture, which is defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar*> property. These properties are used for long date and time formats.
+- Calendar-related properties. Properties such as <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames*>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames*>, <xref:System.Globalization.DateTimeFormatInfo.DayNames*>, and <xref:System.Globalization.DateTimeFormatInfo.MonthNames*>, are associated with the calendar used by the culture, which is defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar> property. These properties are used for long date and time formats.
 
 - Properties that produce a standards-defined result string. The <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern*>, <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern*>, and <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern*> properties contain custom format strings that produce result strings defined by international standards. These properties are  read-only and cannot be modified.
 
@@ -175,7 +175,7 @@ The [standard date and time format strings](../../standard/base-types/standard-d
 
 ## Modify DateTimeFormatInfo properties
 
-You can change the result string produced by date and time format strings by modifying the associated properties of a writable <xref:System.Globalization.DateTimeFormatInfo> object. To determine if a <xref:System.Globalization.DateTimeFormatInfo> object is writable, use the <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly*> property. To customize a <xref:System.Globalization.DateTimeFormatInfo> object in this way:
+You can change the result string produced by date and time format strings by modifying the associated properties of a writable <xref:System.Globalization.DateTimeFormatInfo> object. To determine if a <xref:System.Globalization.DateTimeFormatInfo> object is writable, use the <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly> property. To customize a <xref:System.Globalization.DateTimeFormatInfo> object in this way:
 
 1. Create a read/write copy of a <xref:System.Globalization.DateTimeFormatInfo> object whose formatting conventions you want to modify.
 
@@ -191,23 +191,23 @@ There are two other ways to change the format of a result string:
 
 ### Change the short date pattern
 
-The following example changes the format of a result string produced by the "d" (short date) standard format string. It changes the associated <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern*> property for the en-US or English (United States) culture from its default of "M/d/yyyy" to "yyyy'-"MM"-"dd" and uses the "d" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern*> property is changed.
+The following example changes the format of a result string produced by the "d" (short date) standard format string. It changes the associated <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern> property for the en-US or English (United States) culture from its default of "M/d/yyyy" to "yyyy'-"MM"-"dd" and uses the "d" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern> property is changed.
 
 :::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example1.cs" id="Snippet10":::
 
 ### Change the date separator character
 
-The following example changes the date separator character in a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the fr-FR culture. The example uses the "g" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator*> property is changed.
+The following example changes the date separator character in a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the fr-FR culture. The example uses the "g" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator> property is changed.
 
 :::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example3.cs" id="Snippet12":::
 
 ### Change day name abbreviations and the long date pattern
 
-In some cases, the long date pattern, which typically displays the full day and month name along with the number of the day of the month and the year, may be too long. The following example shortens the long date pattern for the en-US culture to return a one-character or two-character day name abbreviation followed by the day number, the month name abbreviation, and the year. It does this by assigning shorter day name abbreviations to the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames*> array, and by modifying the custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> property. This affects the result strings returned by the "D" and "f" standard format strings.
+In some cases, the long date pattern, which typically displays the full day and month name along with the number of the day of the month and the year, may be too long. The following example shortens the long date pattern for the en-US culture to return a one-character or two-character day name abbreviation followed by the day number, the month name abbreviation, and the year. It does this by assigning shorter day name abbreviations to the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames*> array, and by modifying the custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern> property. This affects the result strings returned by the "D" and "f" standard format strings.
 
 :::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example2.cs" id="Snippet13":::
 
-Ordinarily, the change to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> property also affects the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern*> property, which in turn defines the result string returned by the "F" standard format string. To preserve the original full date and time pattern, the example reassigns the original custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern*> property after the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> property is modified.
+Ordinarily, the change to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern> property also affects the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern> property, which in turn defines the result string returned by the "F" standard format string. To preserve the original full date and time pattern, the example reassigns the original custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern> property after the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern> property is modified.
 
 ### Change from a 12-hour clock to a 24-hour clock
 
@@ -228,15 +228,15 @@ The `nonHours` capturing group contains the minute and possibly the second compo
 
 ### Display and change the era in a date
 
-The following example adds the "g" custom format specifier to the  <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> property of an object that represents the formatting conventions of the en-US culture. This addition affects the following three standard format strings:
+The following example adds the "g" custom format specifier to the  <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern> property of an object that represents the formatting conventions of the en-US culture. This addition affects the following three standard format strings:
 
-- The "D" (long date) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> property.
+- The "D" (long date) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern> property.
 
 - The "f" (full date / short time) standard format string, which produces a result string that concatenates the substrings produced by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> and <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern*> properties.
 
-- The "F" (full date / long time) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern*> property. Because we have not explicitly set this property value, it is generated dynamically by concatenating the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> and <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern*> properties.
+- The "F" (full date / long time) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern> property. Because we have not explicitly set this property value, it is generated dynamically by concatenating the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern*> and <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern*> properties.
 
-The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern*> property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName*> method from private data in the culture tables supplied by either .NET or the operating system.
+The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern> property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName*> method from private data in the culture tables supplied by either .NET or the operating system.
 
 :::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example4.cs" id="Snippet11":::
 
@@ -269,7 +269,7 @@ The following example illustrates the difference between a parsing operation tha
 
 ### Serialize and deserialize date and time data
 
-Serialized date and time data are expected to round-trip; that is, all serialized and deserialized values should be identical. If a date and time value represents a single moment in time, the deserialized value should represent the same moment in time regardless of the culture or time zone of the system on which it was restored. To round-trip date and time data successfully, you must use the conventions of the invariant culture, which is returned by the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo*> property, to generate and parse the data. The formatting and parsing operations should never reflect the conventions of the default culture. If you use default cultural settings, the portability of the data is strictly limited; it can be successfully deserialized only on a thread whose cultural-specific settings are identical to those of the thread on which it was serialized. In some cases, this means that the data cannot even be successfully serialized and deserialized on the same system.
+Serialized date and time data are expected to round-trip; that is, all serialized and deserialized values should be identical. If a date and time value represents a single moment in time, the deserialized value should represent the same moment in time regardless of the culture or time zone of the system on which it was restored. To round-trip date and time data successfully, you must use the conventions of the invariant culture, which is returned by the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo> property, to generate and parse the data. The formatting and parsing operations should never reflect the conventions of the default culture. If you use default cultural settings, the portability of the data is strictly limited; it can be successfully deserialized only on a thread whose cultural-specific settings are identical to those of the thread on which it was serialized. In some cases, this means that the data cannot even be successfully serialized and deserialized on the same system.
 
 If the time component of a date and time value is significant, it should also be converted to UTC and serialized by using the "o" or "r" [standard format string](../../standard/base-types/standard-date-and-time-format-strings.md). The time data can then be restored by calling a parsing method and passing it the appropriate format string along with the invariant culture as the `provider` argument.
 

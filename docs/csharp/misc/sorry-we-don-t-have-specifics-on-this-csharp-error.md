@@ -85,7 +85,6 @@ f1_keywords:
   - "CS7018"
   - "CS7019"
   - "CS7020"
-  - "CS7021"
   - "CS7022" # build only diagnostic
   - "CS7024"
   - "CS7025"
@@ -158,7 +157,6 @@ f1_keywords:
   - "CS8016"
   - "CS8017"
   - "CS8018"
-  - "CS8020"
   - "CS8021"
   - "CS8027"
   - "CS8028"

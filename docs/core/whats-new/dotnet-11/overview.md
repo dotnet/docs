@@ -1,6 +1,6 @@
 ---
 title: What's new in .NET 11
-description: Learn about the new features introduced in .NET 11 Preview 1 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
+description: Learn about the new features introduced in .NET 11 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 ms.date: 02/10/2026
 ai-usage: ai-generated
 ---

@@ -1549,12 +1549,8 @@ items:
                         href: runtime-libraries/system-reflection-emit-dynamicmethod-getilgenerator.md
                       - name: Invoke method
                         href: runtime-libraries/system-reflection-emit-dynamicmethod-invoke.md
-                      - name: IsSecurityCritical property
+                      - name: IsSecurity* properties
                         href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritycritical.md
-                      - name: IsSecuritySafeCritical property
-                        href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritysafecritical.md
-                      - name: IsSecurityTransparent property
-                        href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritytransparent.md
                   - name: The MethodBuilder class
                     href: runtime-libraries/system-reflection-emit-methodbuilder.md
                   - name: The PersistedAssemblyBuilder class

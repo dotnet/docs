@@ -3,6 +3,9 @@ title: System.Reflection.Emit.DynamicMethod.GetILGenerator methods
 description: Learn about the System.Reflection.Emit.DynamicMethod.GetILGenerator methods.
 ms.date: 02/10/2026
 ai-usage: ai-assisted
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Reflection.Emit.DynamicMethod.GetILGenerator methods
 

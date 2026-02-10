@@ -77,7 +77,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 The program displays the string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*.
 
-1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Conditions...** to open the **Breakpoint Settings** dialog. Select the box for **Conditions** if it's not already selected.
+1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Select the box for **Conditions** if it's not already selected.
 
    :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
 

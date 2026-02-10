@@ -63,7 +63,7 @@ Create a .NET console app project named "HelloWorld".
 
    If the language you want to use is not shown, change the language selector at the top of the page.
 
-   The code defines a class, `Program`, that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
+   The C# template uses top-level statements to call the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window. The Visual Basic template defines a `Module Program` with a `Sub Main` method that calls the same method.
 
 ## Run the app
 

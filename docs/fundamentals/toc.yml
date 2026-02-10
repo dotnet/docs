@@ -151,6 +151,21 @@ items:
         items:
           - name: Breaking changes
             href: ../core/compatibility/11.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 11
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-11/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-11/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-11/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-11/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/11.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 10
         items:
           - name: What's new

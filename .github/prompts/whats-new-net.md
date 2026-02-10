@@ -2,14 +2,14 @@ When you're assigned an issue where one label includes the word "Release" and yo
 
 ## Task
 
-You'll update 4 articles. For .NET 10, you update these:
+You'll update 4 articles. For .NET 11, you create or update these:
 
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/overview.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/runtime.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/sdk.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/overview.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/runtime.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/libraries.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/sdk.md
 
-For other releases, replace "dotnet-10" in the preceding paths with the correct release. For example, use "dotnet-11" for the ".NET 11" releases.
+For other releases, replace "dotnet-11" in the preceding paths with the correct release. For example, use "dotnet-10" for the ".NET 10" releases.
 
 ## Source material
 

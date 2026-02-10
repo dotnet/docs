@@ -53,6 +53,41 @@ Sets an MSBuild property value.
 #:property PublishAot=false
 ```
 
+#### Conditional property values
+
+Property directives support MSBuild variables and expressions, enabling conditional property values based on environment variables or other MSBuild properties. Use this capability to create environment variables with sensible defaults, or to set different values based on the operating system or other conditions.
+
+**Use environment variables with defaults:**
+
+```csharp
+#:property AppVersion=$(APP_VERSION)
+#:property AppVersion=$([System.Environment]::GetEnvironmentVariable('APP_VERSION', 'Machine'))
+#:property LogLevel=$(LOG_LEVEL)
+#:property LogLevel=$([MSBuild]::ValueOrDefault('$(LOG_LEVEL)', 'Information'))
+```
+
+The `ValueOrDefault` function provides a default value when an environment variable isn't set:
+
+```csharp
+#:property ConnectionString=$([MSBuild]::ValueOrDefault('$(DB_CONNECTION)', 'Server=localhost;Database=dev'))
+```
+
+**Use OS-specific values:**
+
+```csharp
+#:property NativeLibPath=$([MSBuild]::IsOSPlatform('Windows') ? 'win-x64' : 'linux-x64')
+#:property OutputPath=$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)) ? 'bin\win' : 'bin/unix')
+```
+
+**Use conditional logic:**
+
+```csharp
+#:property IsProduction=$([MSBuild]::ValueOrDefault('$(ENVIRONMENT)', 'Development').Equals('Production'))
+#:property EnableLogging=$([System.Convert]::ToBoolean($([MSBuild]::ValueOrDefault('$(ENABLE_LOGGING)', 'true'))))
+```
+
+For more information about MSBuild property functions, see [Property functions](/visualstudio/msbuild/property-functions).
+
 ### `#:sdk`
 
 Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.

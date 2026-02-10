@@ -1,7 +1,7 @@
 ---
 title: What you can build with C#
 description: Explore the types of applications you can build with C# and .NET, including web, desktop, mobile, cloud, IoT, AI, and games.
-ms.date: 02/06/2026
+ms.date: 02/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -14,6 +14,16 @@ C# and the [.NET platform](../../standard/glossary.md#implementation-of-net) sup
 >
 > **Experienced developer?** Jump directly to the workload that matches your goals. Each section links to the documentation and tutorials you need.
 
+## AI and machine learning
+
+C# integrates with AI and machine learning tools:
+
+- **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
+- **[Semantic Kernel](/semantic-kernel/)** - Integrate large language models (LLMs) into your applications.
+- **[Azure AI services](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
+
+Get started with [ML.NET tutorials](../../machine-learning/index.yml).
+
 ## Web applications
 
 Build web applications with [ASP.NET Core](/aspnet/core/), the cross-platform framework for creating modern web apps and APIs. You can build:
@@ -21,7 +31,6 @@ Build web applications with [ASP.NET Core](/aspnet/core/), the cross-platform fr
 - **Server-rendered web apps** using Razor Pages or MVC.
 - **Interactive web UIs** using [Blazor](/aspnet/core/blazor/), which lets you write client-side logic in C# instead of JavaScript.
 - **Web APIs** and [minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview) for backend services.
-- **Real-time apps** using [SignalR](/aspnet/core/signalr/introduction) for features like chat and live dashboards.
 
 Get started: [ASP.NET Core tutorials](/aspnet/core/tutorials)
 
@@ -51,22 +60,6 @@ C# and .NET are well suited for building cloud-native applications and microserv
 
 Get started: [Get started with Azure and .NET](../../azure/index.yml).
 
-## Internet of Things (IoT)
-
-Control devices and read sensor data by using the [.NET IoT libraries](../../iot/index.yml). You can run C# apps on devices like [Raspberry Pi](../../iot/quickstarts/sensehat.md) and other single-board computers to build IoT solutions.
-
-Get started: [.NET IoT tutorials](../../iot/tutorials/blink-led.md)
-
-## AI and machine learning
-
-C# integrates with AI and machine learning tools:
-
-- **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
-- **[Semantic Kernel](/semantic-kernel/)** - Integrate large language models (LLMs) into your applications.
-- **[Azure AI services](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
-
-Get started with [ML.NET tutorials](../../machine-learning/index.yml).
-
 ## Games
 
 C# is one of the most popular languages for game development:
@@ -76,6 +69,12 @@ C# is one of the most popular languages for game development:
 - **[CryEngine](https://docs.cryengine.com/display/CEPROG/C%23+Programming)** - Supports C# for game scripting.
 
 You can also use [Visual Studio for game development](https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with these engines.
+
+## Internet of Things (IoT)
+
+Control devices and read sensor data by using the [.NET IoT libraries](../../iot/index.yml). You can run C# apps on devices like [Raspberry Pi](../../iot/quickstarts/sensehat.md) and other single-board computers to build IoT solutions.
+
+Get started: [.NET IoT tutorials](../../iot/tutorials/blink-led.md)
 
 ## Next steps
 

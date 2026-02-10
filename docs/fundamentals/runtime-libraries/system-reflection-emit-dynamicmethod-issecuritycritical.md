@@ -1,6 +1,6 @@
 ---
 title: System.Reflection.Emit.DynamicMethod.IsSecurity* properties
-description: Learn about the System.Reflection.Emit.DynamicMethod.IsSecurity*Critical* properties.
+description: Learn about the System.Reflection.Emit.DynamicMethod.IsSecurity* properties.
 ms.date: 02/10/2026
 ai-usage: ai-assisted
 ---

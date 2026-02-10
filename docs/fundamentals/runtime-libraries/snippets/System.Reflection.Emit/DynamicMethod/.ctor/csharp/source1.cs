@@ -2,7 +2,6 @@
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
-using Microsoft.VisualBasic;
 
 public class Test
 {
@@ -42,15 +41,15 @@ public class Test
         // Call the overload of Console.WriteLine that prints a string.
         il.EmitCall(OpCodes.Call, writeString, null);
         // The Hello method returns the value of the second argument;
-        // to do this, load the onto the stack and return.
+        // to do this, load the second argument onto the stack and return.
         il.Emit(OpCodes.Ldarg_1);
         il.Emit(OpCodes.Ret);
         // </Snippet2>
 
         // <Snippet3>
         // Create a delegate that represents the dynamic method. This
-        // action completes the method, and any further attempts to
-        // change the method will cause an exception.
+        // action completes the method. Further attempts to change the
+        // method are ignored and no exception is thrown.
         HelloInvoker hi =
             (HelloInvoker) hello.CreateDelegate(typeof(HelloInvoker));
         // </Snippet3>

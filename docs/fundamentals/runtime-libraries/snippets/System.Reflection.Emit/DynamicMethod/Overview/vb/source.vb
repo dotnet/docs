@@ -42,7 +42,7 @@ Public Class Test
         ' Call the overload of Console.WriteLine that prints a string.
         il.EmitCall(OpCodes.Call, writeString, Nothing)
         ' The Hello method returns the value of the second argument;
-        ' to do this, load the onto the stack and return.
+        ' to do this, load the second argument onto the stack and return.
         il.Emit(OpCodes.Ldarg_1)
         il.Emit(OpCodes.Ret)
         ' </Snippet2>

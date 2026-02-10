@@ -59,7 +59,7 @@ The parameterless constructor is used to create a list of strings with the defau
 
 The <xref:System.Collections.Generic.List`1.Contains*> method is used to test for the presence of an item in the list, the <xref:System.Collections.Generic.List`1.Insert*> method is used to insert a new item in the middle of the list, and the contents of the list are displayed again.
 
-The default <xref:System.Collections.Generic.List`1.Item> property (the indexer in C#) is used to retrieve an item, the <xref:System.Collections.Generic.List`1.Remove*> method is used to remove the first instance of the duplicate item added earlier, and the contents are displayed again. The <xref:System.Collections.Generic.List`1.Remove*> method always removes the first instance it encounters.
+The default <xref:System.Collections.Generic.List`1.Item(System.Int32)> property (the indexer in C#) is used to retrieve an item, the <xref:System.Collections.Generic.List`1.Remove*> method is used to remove the first instance of the duplicate item added earlier, and the contents are displayed again. The <xref:System.Collections.Generic.List`1.Remove*> method always removes the first instance it encounters.
 
 The <xref:System.Collections.Generic.List`1.TrimExcess*> method is used to reduce the capacity to match the count, and the <xref:System.Collections.Generic.List`1.Capacity*> and <xref:System.Collections.Generic.List`1.Count*> properties are displayed. If the unused capacity had been less than 10 percent of total capacity, the list would not have been resized.
 

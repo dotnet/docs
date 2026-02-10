@@ -102,7 +102,7 @@ Embedded null characters in a string are also treated differently when a string 
 
 An index is the position of a <xref:System.Char> object (not a Unicode character) in a <xref:System.String>. An index is a zero-based, nonnegative number that starts from the first position in the string, which is index position zero. A number of search methods, such as <xref:System.String.IndexOf*> and <xref:System.String.LastIndexOf*>, return the index of a character or substring in the string instance.
 
-The <xref:System.String.Chars> property lets you access individual <xref:System.Char> objects by their index position in the string. Because the <xref:System.String.Chars> property is the default property (in Visual Basic) or the indexer (in C# and F#), you can access the individual <xref:System.Char> objects in a string by using code such as the following. This code looks for white space or punctuation characters in a string to determine how many words the string contains.
+The <xref:System.String.Chars(System.Int32)> property lets you access individual <xref:System.Char> objects by their index position in the string. Because the <xref:System.String.Chars(System.Int32)> property is the default property (in Visual Basic) or the indexer (in C# and F#), you can access the individual <xref:System.Char> objects in a string by using code such as the following. This code looks for white space or punctuation characters in a string to determine how many words the string contains.
 
 :::code language="csharp" source="./snippets/System/String/Overview/csharp/index11.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index11.fs" id="Snippet4":::

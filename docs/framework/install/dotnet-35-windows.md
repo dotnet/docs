@@ -1,6 +1,6 @@
 ---
 title: Install .NET Framework 3.5 on Windows 10
-description: Learn how to install .NET Framework 3.5 on Windows and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
+description: Learn how to install .NET Framework 3.5 on Windows 10 and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
 ms.date: 02/02/2026
 ai-usage: ai-assisted
 ---

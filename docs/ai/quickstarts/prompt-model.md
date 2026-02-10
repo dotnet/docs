@@ -22,8 +22,6 @@ In this quickstart, you learn how to create a .NET console chat app to connect t
 
 :::zone-end
 
-[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
-
 ## Create the app
 
 Complete the following steps to create a .NET console app to connect to an AI model.

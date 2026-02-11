@@ -166,7 +166,7 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`when` (filter condition)](when.md)  
         [`where` (generic type constraint)](where-generic-type-constraint.md)  
         [`where` (query clause)](where-clause.md)  
-        [`with`](../operators/with-expression.md)  
+        [`with`](with.md)  
         [`yield`](../statements/yield.md)  
     :::column-end:::
 :::row-end:::

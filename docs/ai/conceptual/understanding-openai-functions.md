@@ -43,12 +43,6 @@ Some models support parallel function calling, which enables the model to reques
 
 Not all OpenAI models are trained to support function calling. For a list of models that support function calling or parallel function calling, see [OpenAI - Supported Models](https://platform.openai.com/docs/guides/function-calling/supported-models).
 
-## Function calling with the Semantic Kernel SDK
-
-The [Semantic Kernel SDK](/semantic-kernel/overview/) supports describing which functions are available to your AI [using the `KernelFunction` decorator](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp#use-the-kernelfunction-decorator-to-define-a-native-function).
-
-The Kernel builds the `tools` parameter of a request based on your decorators, orchestrates the requested function calls to your code, and returns results back to the model.
-
 ## Token counts
 
 Function descriptions are included in the system message of your request to a model. These function descriptions count against your model's [token limit](/azure/ai-services/openai/quotas-limits) and are [included in the cost of the request](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
@@ -61,5 +55,4 @@ If your request exceeds the model's token limit, try the following modifications
 ## Related content
 
 * [Understanding tokens](understanding-tokens.md)
-* [Creating native functions for AI to call](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp)
 * [Prompt engineering](prompt-engineering-dotnet.md)

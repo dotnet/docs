@@ -33,7 +33,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 | Google Gemini | Google's multimodal AI models |
 | Amazon Bedrock | AWS's managed service for foundation models |
 
-Any AI provider that's usable with `Microsoft.Extensions.AI` is also usable with Agent Framework and Semantic Kernel.
+Any AI provider that's usable with `Microsoft.Extensions.AI` is also usable with Agent Framework.
 
 ## What can you build with AI and .NET?
 

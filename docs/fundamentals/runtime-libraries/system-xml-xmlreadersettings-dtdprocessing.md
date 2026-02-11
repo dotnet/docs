@@ -17,9 +17,9 @@ The <xref:System.Xml.XmlReaderSettings.DtdProcessing> property can have one of t
 
 To perform validation against a DTD, the <xref:System.Xml.XmlReader> uses the DTD defined in the DOCTYPE declaration of an XML document. The DOCTYPE declaration can either point to an inline DTD or can be a reference to an external DTD file. To validate an XML file against a DTD:
 
-- Set the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> property to `DtdProcessing.Parse`.
-- Set the <xref:System.Xml.XmlReaderSettings.ValidationType%2A?displayProperty=nameWithType> property to `ValidationType.DTD`.
-- If the DTD is an external file stored on a network resource that requires authentication, pass an <xref:System.Xml.XmlResolver> object with the necessary credentials to the <xref:System.Xml.XmlReader.Create%2A> method.
+- Set the <xref:System.Xml.XmlReaderSettings.DtdProcessing*?displayProperty=nameWithType> property to `DtdProcessing.Parse`.
+- Set the <xref:System.Xml.XmlReaderSettings.ValidationType*?displayProperty=nameWithType> property to `ValidationType.DTD`.
+- If the DTD is an external file stored on a network resource that requires authentication, pass an <xref:System.Xml.XmlResolver> object with the necessary credentials to the <xref:System.Xml.XmlReader.Create*> method.
 
 > [!IMPORTANT]
 > If the <xref:System.Xml.XmlReaderSettings.DtdProcessing> property is set to <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType>, the <xref:System.Xml.XmlReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.

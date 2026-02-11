@@ -14,7 +14,7 @@ The <xref:System.Text.Encoding> class represents a character encoding.
 
 Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in .NET](../../standard/base-types/character-encoding.md).
 
-<xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.
+<xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray*?displayProperty=nameWithType>.
 
 .NET provides the following implementations of the <xref:System.Text.Encoding> class to support current Unicode encodings and other encodings:
 
@@ -30,11 +30,11 @@ Encoding is the process of transforming a set of Unicode characters into a seque
 
 The <xref:System.Text.Encoding> class is primarily intended to convert between different encodings and Unicode. Often one of the derived Unicode classes is the correct choice for your app.
 
-Use the <xref:System.Text.Encoding.GetEncoding%2A> method to obtain other encodings, and call the <xref:System.Text.Encoding.GetEncodings%2A> method to get a list of all encodings.
+Use the <xref:System.Text.Encoding.GetEncoding*> method to obtain other encodings, and call the <xref:System.Text.Encoding.GetEncodings*> method to get a list of all encodings.
 
 ## List of encodings
 
-The following table lists the encodings supported by .NET. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> and <xref:System.Text.EncodingInfo.DisplayName%2A?displayProperty=nameWithType> properties. A check mark in the **.NET Framework support**, **.NET Core support**, or **.NET 5 and later support** column indicates that the code page is natively supported by that .NET implementation, regardless of the underlying platform. For .NET Framework, the availability of other encodings listed in the table depends on the operating system. For .NET Core and .NET 5 and later versions, other encodings are available by using the <xref:System.Text.CodePagesEncodingProvider?displayProperty=nameWithType> class or by deriving from the <xref:System.Text.EncodingProvider?displayProperty=nameWithType> class.
+The following table lists the encodings supported by .NET. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name*?displayProperty=nameWithType> and <xref:System.Text.EncodingInfo.DisplayName*?displayProperty=nameWithType> properties. A check mark in the **.NET Framework support**, **.NET Core support**, or **.NET 5 and later support** column indicates that the code page is natively supported by that .NET implementation, regardless of the underlying platform. For .NET Framework, the availability of other encodings listed in the table depends on the operating system. For .NET Core and .NET 5 and later versions, other encodings are available by using the <xref:System.Text.CodePagesEncodingProvider?displayProperty=nameWithType> class or by deriving from the <xref:System.Text.EncodingProvider?displayProperty=nameWithType> class.
 
 > [!NOTE]
 > Code pages whose <xref:System.Text.EncodingInfo.Name?displayProperty=nameWithType> property corresponds to an international standard do not necessarily comply in full with that standard.
@@ -182,12 +182,12 @@ The following table lists the encodings supported by .NET. It lists each encodin
 |65000|utf-7|Unicode (UTF-7)|✓|✓||
 |65001|utf-8|Unicode (UTF-8)|✓|✓|✓|
 
-The following example calls the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29> and <xref:System.Text.Encoding.GetEncoding%28System.String%29> methods to get the Greek (Windows) code page encoding. It compares the <xref:System.Text.Encoding> objects returned by the method calls to show that they are equal, and then maps displays the Unicode code point and the corresponding code page value for each character in the Greek alphabet.
+The following example calls the <xref:System.Text.Encoding.GetEncoding(System.Int32)> and <xref:System.Text.Encoding.GetEncoding(System.String)> methods to get the Greek (Windows) code page encoding. It compares the <xref:System.Text.Encoding> objects returned by the method calls to show that they are equal, and then maps displays the Unicode code point and the corresponding code page value for each character in the Greek alphabet.
 
 :::code language="csharp" source="./snippets/System.Text/Encoding/Overview/csharp/getencoding1.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Text/Encoding/Overview/vb/getencoding1.vb" id="Snippet1":::
 
-If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.
+If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder*> method or the <xref:System.Text.Encoding.GetEncoder*> method, respectively, of a derived class.
 
 The UTF-16 and the UTF-32 encoders can use the big endian byte order (most significant byte first) or the little endian byte order (least significant byte first). For example, the Latin Capital Letter A (U+0041) is serialized as follows (in hexadecimal):
 
@@ -198,7 +198,7 @@ The UTF-16 and the UTF-32 encoders can use the big endian byte order (most signi
 
 It is generally more efficient to store Unicode characters using the native byte order. For example, it is better to use the little endian byte order on little endian platforms, such as Intel computers.
 
-The <xref:System.Text.Encoding.GetPreamble%2A> method retrieves an array of bytes that includes the byte order mark (BOM). If this byte array is prefixed to an encoded stream, it helps the decoder to identify the encoding format used.
+The <xref:System.Text.Encoding.GetPreamble*> method retrieves an array of bytes that includes the byte order mark (BOM). If this byte array is prefixed to an encoded stream, it helps the decoder to identify the encoding format used.
 
 For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://home.unicode.org/).
 

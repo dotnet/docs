@@ -65,35 +65,35 @@ The <xref:System.Runtime.InteropServices.ICustomMarshaler> interface includes me
 
 |Type of operation|ICustomMarshaler method|Description|
 |-----------------------|-----------------------------|-----------------|
-|Conversion (from native to managed code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged%2A>|Marshals a pointer to native data into a managed object. This method returns a custom runtime callable wrapper (RCW) that can marshal the unmanaged interface that is passed as an argument. The marshaller should return an instance of the custom RCW for that type.|
-|Conversion (from managed to native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative%2A>|Marshals a managed object into a pointer to native data. This method returns a custom COM callable wrapper (CCW) that can marshal the managed interface that is passed as an argument. The marshaller should return an instance of the custom CCW for that type.|
-|Cleanup (of native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData%2A>|Enables the marshaller to clean up the native data (the CCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative%2A> method.|
-|Cleanup (of managed code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData%2A>|Enables the marshaller to clean up the managed data (the RCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged%2A> method.|
-|Information (about native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize%2A>|Returns the size of the unmanaged data to be marshaled.|
+|Conversion (from native to managed code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged*>|Marshals a pointer to native data into a managed object. This method returns a custom runtime callable wrapper (RCW) that can marshal the unmanaged interface that is passed as an argument. The marshaller should return an instance of the custom RCW for that type.|
+|Conversion (from managed to native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative*>|Marshals a managed object into a pointer to native data. This method returns a custom COM callable wrapper (CCW) that can marshal the managed interface that is passed as an argument. The marshaller should return an instance of the custom CCW for that type.|
+|Cleanup (of native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData*>|Enables the marshaller to clean up the native data (the CCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative*> method.|
+|Cleanup (of managed code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData*>|Enables the marshaller to clean up the managed data (the RCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged*> method.|
+|Information (about native code)|<xref:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize*>|Returns the size of the unmanaged data to be marshaled.|
 
 ### Conversion
 
-<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged%2A?displayProperty=nameWithType>
+<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged*?displayProperty=nameWithType>
 
 Marshals a pointer to native data into a managed object. This method returns a custom runtime callable wrapper (RCW) that can marshal the unmanaged interface that is passed as an argument. The marshaller should return an instance of the custom RCW for that type.
 
-<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative%2A?displayProperty=nameWithType>
+<xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative*?displayProperty=nameWithType>
 
 Marshals a managed object into a pointer to native data. This method returns a custom COM callable wrapper (CCW) that can marshal the managed interface that is passed as an argument. The marshaller should return an instance of the custom CCW for that type.
 
 ### Cleanup
 
-<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData%2A?displayProperty=nameWithType>
+<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData*?displayProperty=nameWithType>
 
-Enables the marshaller to clean up the native data (the CCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative%2A> method.
+Enables the marshaller to clean up the native data (the CCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative*> method.
 
-<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData%2A?displayProperty=nameWithType>
+<xref:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData*?displayProperty=nameWithType>
 
-Enables the marshaller to clean up the managed data (the RCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged%2A> method.
+Enables the marshaller to clean up the managed data (the RCW) that is returned by the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged*> method.
 
 ### Size information
 
-<xref:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize%2A?displayProperty=nameWithType>
+<xref:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize*?displayProperty=nameWithType>
 
 Returns the size of the unmanaged data to be marshaled.
 
@@ -121,7 +121,7 @@ You must also pass the <xref:System.Runtime.InteropServices.UnmanagedType.Custom
 
 The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute identifies the custom marshaller so it can activate the appropriate wrapper. The common language runtime's interop service then examines the attribute and creates the custom marshaller the first time the argument (parameter or field) needs to be marshaled.
 
-The runtime then calls the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged%2A> and <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative%2A> methods on the custom marshaller to activate the correct wrapper to handle the call.
+The runtime then calls the <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged*> and <xref:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative*> methods on the custom marshaller to activate the correct wrapper to handle the call.
 
 ## Use a custom marshaller
 

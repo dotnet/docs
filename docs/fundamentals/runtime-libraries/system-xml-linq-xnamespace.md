@@ -12,7 +12,7 @@ dev_langs:
 
 This class represents the XML construct of namespaces.
 
-Every <xref:System.Xml.Linq.XName> contains an <xref:System.Xml.Linq.XNamespace>. Even if an element is not in a namespace, the element's <xref:System.Xml.Linq.XName> still contains a namespace, <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=nameWithType>. The <xref:System.Xml.Linq.XName.Namespace?displayProperty=nameWithType> property is guaranteed to not be `null`.
+Every <xref:System.Xml.Linq.XName> contains an <xref:System.Xml.Linq.XNamespace>. Even if an element is not in a namespace, the element's <xref:System.Xml.Linq.XName> still contains a namespace, <xref:System.Xml.Linq.XNamespace.None*?displayProperty=nameWithType>. The <xref:System.Xml.Linq.XName.Namespace?displayProperty=nameWithType> property is guaranteed to not be `null`.
 
 ## Create an XNamespace object
 
@@ -58,7 +58,7 @@ See [Work with XML namespaces](../../standard/linq/namespaces-overview.md) for m
 
 ## Control namespace prefixes
 
-If you create an attribute that declares a namespace, the prefix specified in the attribute will be persisted in the serialized XML. To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns%2A>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace. The following example shows this idiom:
+If you create an attribute that declares a namespace, the prefix specified in the attribute will be persisted in the serialized XML. To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns*>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace. The following example shows this idiom:
 
 ```csharp
 XNamespace aw = "http://www.adventure-works.com";

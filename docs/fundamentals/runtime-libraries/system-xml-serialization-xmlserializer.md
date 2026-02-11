@@ -109,7 +109,7 @@ public class OptionalOrder
 
 You can also override the serialization of any set of objects and their fields and properties by creating one of the appropriate attributes, and adding it to an instance of the <xref:System.Xml.Serialization.XmlAttributes> class. Overriding serialization in this way has two uses: first, you can control and augment the serialization of objects found in a DLL, even if you do not have access to the source; second, you can create one set of serializable classes, but serialize the objects in multiple ways. For more details, see the <xref:System.Xml.Serialization.XmlAttributeOverrides> class and [How to: Control Serialization of Derived Classes](../../standard/serialization/how-to-control-serialization-of-derived-classes.md).
 
-To serialize an object, call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method. To deserialize an object, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.
+To serialize an object, call the <xref:System.Xml.Serialization.XmlSerializer.Serialize*> method. To deserialize an object, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize*> method.
 
 To add XML namespaces to an XML document, see <xref:System.Xml.Serialization.XmlSerializerNamespaces>.
 
@@ -122,9 +122,9 @@ You must have permission to write to the temporary directory (as defined by the 
 
 To increase performance, the XML serialization infrastructure dynamically generates assemblies to serialize and deserialize specified types. The infrastructure finds and reuses those assemblies. This behavior occurs only when using the following constructors:
 
-<xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%29?displayProperty=nameWithType>
+<xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type)?displayProperty=nameWithType>
 
-<xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.String%29?displayProperty=nameWithType>
+<xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type,System.String)?displayProperty=nameWithType>
 
 If you use any of the other constructors, multiple versions of the same assembly are generated and never unloaded, which results in a memory leak and poor performance. The easiest solution is to use one of the previously mentioned two constructors. Otherwise, you must cache the assemblies in a <xref:System.Collections.Hashtable>, as shown in the following example.
 
@@ -181,7 +181,7 @@ End If
 The <xref:System.Xml.Serialization.XmlSerializer> cannot serialize or deserialize the following:
 
 - Arrays of <xref:System.Collections.ArrayList>
-- Arrays of <xref:System.Collections.Generic.List%601>
+- Arrays of <xref:System.Collections.Generic.List`1>
 
 ## Serialization of enumerations of unsigned Long
 

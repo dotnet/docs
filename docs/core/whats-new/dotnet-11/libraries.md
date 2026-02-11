@@ -103,15 +103,6 @@ The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now inclu
 
 These constants can be used with the `StringSyntax` attribute to provide better tooling support for string literals containing code in these languages.
 
-## Additional breaking changes
-
-.NET 11 includes several other breaking changes in the libraries:
-
-- [MemoryStream enforces maximum capacity](../../compatibility/core-libraries/11/memorystream-max-capacity.md) - Starting in .NET 11, <xref:System.IO.MemoryStream> enforces a maximum capacity and throws <xref:System.ArgumentOutOfRangeException> for invalid capacity values.
-- [TarReader validates checksums](../../compatibility/core-libraries/11/tar-checksum-validation.md) - Starting in .NET 11, <xref:System.Formats.Tar.TarReader> validates checksums and throws <xref:System.IO.InvalidDataException> for invalid entries.
-- [Environment.TickCount Windows behavior](../../compatibility/core-libraries/11/environment-tickcount-windows-behavior.md) - On Windows, <xref:System.Environment.TickCount?displayProperty=nameWithType> and <xref:System.Environment.TickCount64?displayProperty=nameWithType> now exclude sleep and hibernation time, consistent with operating system wait APIs.
-- [ZipArchive.CreateAsync eager loading](../../compatibility/core-libraries/11/ziparchive-createasync-eager-load.md) - The <xref:System.IO.Compression.ZipArchive.CreateAsync%2A> method now eagerly loads all ZIP archive entries to avoid synchronous reads on the stream.
-
 ## See also
 
 - [What's new in the .NET 11 runtime](runtime.md)

@@ -280,7 +280,7 @@ dotnet add package Microsoft.Extensions.Caching.Hybrid
 
 Register the `HybridCache` service with DI by calling <xref:Microsoft.Extensions.DependencyInjection.HybridCacheServiceExtensions.AddHybridCache%2A>:
 
-:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicRegistration" highlight="2-3":::
+:::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicRegistration" highlight="2":::
 
 The preceding code registers `HybridCache` with default options. You can also configure global options:
 

@@ -1537,7 +1537,20 @@ items:
                   - name: The AssemblyBuilder class
                     href: runtime-libraries/system-reflection-emit-assemblybuilder.md
                   - name: The DynamicMethod class
-                    href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                    items:
+                      - name: Type remarks
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                        displayName: dynamicmethod
+                      - name: CreateDelegate method
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-createdelegate.md
+                      - name: Constructors
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-ctor.md
+                      - name: GetILGenerator methods
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-getilgenerator.md
+                      - name: Invoke method
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-invoke.md
+                      - name: IsSecurity* properties
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritycritical.md
                   - name: The MethodBuilder class
                     href: runtime-libraries/system-reflection-emit-methodbuilder.md
                   - name: The PersistedAssemblyBuilder class

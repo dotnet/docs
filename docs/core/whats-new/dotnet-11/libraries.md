@@ -19,22 +19,22 @@ This article describes new features in the .NET libraries for .NET 11. It was la
 
 The <xref:System.String> class now includes methods that accept <xref:System.Text.Rune> parameters, enabling you to search, replace, and manipulate strings using Unicode scalar values directly. These new methods include:
 
-- <xref:System.String.Contains%2A> - Check if a string contains a specific rune.
-- <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> - Check if a string starts or ends with a specific rune.
-- <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> - Find the position of a rune in a string.
-- <xref:System.String.Replace%2A> - Replace occurrences of one rune with another.
-- <xref:System.String.Split%2A> - Split a string using a rune as the separator.
-- <xref:System.String.Trim%2A>, <xref:System.String.TrimStart%2A>, and <xref:System.String.TrimEnd%2A> - Trim runes from strings.
+- `Contains` - Check if a string contains a specific rune: <xref:System.String.Contains(System.Text.Rune)?displayProperty=nameWithType> and <xref:System.String.Contains(System.Text.Rune,System.StringComparison)?displayProperty=nameWithType>.
+- `StartsWith` and `EndsWith` - Check if a string starts or ends with a specific rune: <xref:System.String.StartsWith(System.Text.Rune)?displayProperty=nameWithType>, <xref:System.String.StartsWith(System.Text.Rune,System.StringComparison)?displayProperty=nameWithType>, <xref:System.String.EndsWith(System.Text.Rune)?displayProperty=nameWithType>, and <xref:System.String.EndsWith(System.Text.Rune,System.StringComparison)?displayProperty=nameWithType>.
+- `IndexOf` and `LastIndexOf` - Find the position of a rune in a string: <xref:System.String.IndexOf(System.Text.Rune)?displayProperty=nameWithType>, <xref:System.String.IndexOf(System.Text.Rune,System.StringComparison)?displayProperty=nameWithType>, <xref:System.String.LastIndexOf(System.Text.Rune)?displayProperty=nameWithType>, and <xref:System.String.LastIndexOf(System.Text.Rune,System.StringComparison)?displayProperty=nameWithType>.
+- `Replace` - Replace occurrences of one rune with another: <xref:System.String.Replace(System.Text.Rune,System.Text.Rune)?displayProperty=nameWithType>.
+- `Split` - Split a string using a rune as the separator: <xref:System.String.Split(System.Text.Rune,System.StringSplitOptions)?displayProperty=nameWithType> and <xref:System.String.Split(System.Text.Rune,System.Int32,System.StringSplitOptions)?displayProperty=nameWithType>.
+- `Trim`, `TrimStart`, and `TrimEnd` - Trim runes from strings: <xref:System.String.Trim(System.Text.Rune)?displayProperty=nameWithType>, <xref:System.String.TrimStart(System.Text.Rune)?displayProperty=nameWithType>, and <xref:System.String.TrimEnd(System.Text.Rune)?displayProperty=nameWithType>.
 
-Many of these methods also include overloads that accept a <xref:System.StringComparison> parameter for culture-aware comparisons.
+Many of these methods include overloads that accept a <xref:System.StringComparison> parameter for culture-aware comparisons.
 
 ### Char.Equals with StringComparison
 
-The <xref:System.Char> struct now includes an <xref:System.Char.Equals%2A> method that accepts a <xref:System.StringComparison> parameter, allowing you to compare characters using culture-aware or ordinal comparisons.
+The <xref:System.Char> struct now includes an <xref:System.Char.Equals(System.Char,System.StringComparison)?displayProperty=nameWithType> method that accepts a <xref:System.StringComparison> parameter, allowing you to compare characters using culture-aware or ordinal comparisons.
 
 ### Rune support in TextInfo
 
-The <xref:System.Globalization.TextInfo> class now provides `ToLower` and `ToUpper` methods that accept <xref:System.Text.Rune> parameters, enabling you to perform case conversions on individual Unicode scalar values.
+The <xref:System.Globalization.TextInfo> class now provides <xref:System.Globalization.TextInfo.ToLower(System.Text.Rune)?displayProperty=nameWithType> and <xref:System.Globalization.TextInfo.ToUpper(System.Text.Rune)?displayProperty=nameWithType> methods that accept <xref:System.Text.Rune> parameters, enabling you to perform case conversions on individual Unicode scalar values.
 
 ## Base64 encoding improvements
 
@@ -57,7 +57,7 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 ### ZIP archive entry access modes
 
-The <xref:System.IO.Compression.ZipArchiveEntry> class now supports opening entries with specific file access modes through new <xref:System.IO.Compression.ZipArchiveEntry.Open%2A> and <xref:System.IO.Compression.ZipArchiveEntry.OpenAsync%2A> overloads that accept a <xref:System.IO.FileAccess> parameter. This allows you to open ZIP entries for read, write, or read-write access.
+The <xref:System.IO.Compression.ZipArchiveEntry> class now supports opening entries with specific file access modes through new overloads: <xref:System.IO.Compression.ZipArchiveEntry.Open(System.IO.FileAccess)?displayProperty=nameWithType> and <xref:System.IO.Compression.ZipArchiveEntry.OpenAsync(System.IO.FileAccess,System.Threading.CancellationToken)?displayProperty=nameWithType>. These overloads accept a <xref:System.IO.FileAccess> parameter and allow you to open ZIP entries for read, write, or read-write access.
 
 Additionally, a new <xref:System.IO.Compression.ZipArchiveEntry.CompressionMethod> property exposes the compression method used for an entry through the <xref:System.IO.Compression.ZipCompressionMethod> enum, which includes values for `Stored`, `Deflate`, and `Deflate64`.
 
@@ -73,9 +73,9 @@ For more information, see [DeflateStream and GZipStream write headers and footer
 
 The <xref:System.BitConverter> class now includes methods for converting between <xref:System.Numerics.BFloat16> values and byte arrays or bit representations. These new methods include:
 
-- <xref:System.BitConverter.GetBytes%2A> - Convert a BFloat16 value to a byte array.
-- <xref:System.BitConverter.ToBFloat16%2A> - Convert a byte array to a BFloat16 value.
-- Methods for converting between BFloat16 and its bit representation as `short` or `ushort`.
+- <xref:System.BitConverter.GetBytes(System.Numerics.BFloat16)?displayProperty=nameWithType> - Convert a BFloat16 value to a byte array.
+- <xref:System.BitConverter.ToBFloat16(System.Byte[],System.Int32)?displayProperty=nameWithType> and <xref:System.BitConverter.ToBFloat16(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType> - Convert a byte array to a BFloat16 value.
+- <xref:System.BitConverter.BFloat16ToInt16Bits(System.Numerics.BFloat16)?displayProperty=nameWithType>, <xref:System.BitConverter.BFloat16ToUInt16Bits(System.Numerics.BFloat16)?displayProperty=nameWithType>, <xref:System.BitConverter.Int16BitsToBFloat16(System.Int16)?displayProperty=nameWithType>, and <xref:System.BitConverter.UInt16BitsToBFloat16(System.UInt16)?displayProperty=nameWithType> - Methods for converting between BFloat16 and its bit representation as `short` or `ushort`.
 
 BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonly used in machine learning and scientific computing.
 
@@ -83,11 +83,11 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 
 ### BitArray.PopCount
 
-The <xref:System.Collections.BitArray> class now includes a `PopCount` method that returns the number of bits set to `true` in the array. This provides an efficient way to count set bits without manually iterating through the array.
+The <xref:System.Collections.BitArray> class now includes a <xref:System.Collections.BitArray.PopCount?displayProperty=nameWithType> method that returns the number of bits set to `true` in the array. This provides an efficient way to count set bits without manually iterating through the array.
 
 ### IReadOnlySet support in JSON serialization
 
-The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a `CreateIReadOnlySetInfo` method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet%601> collections.
+The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo%2A?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet%601> collections.
 
 ## URI data scheme constant
 

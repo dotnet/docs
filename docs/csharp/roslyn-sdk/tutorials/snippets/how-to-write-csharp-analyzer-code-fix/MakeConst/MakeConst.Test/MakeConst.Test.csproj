@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="3.11.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="4.1.0" />
     <PackageReference Include="MSTest.TestFramework" Version="4.1.0" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="5.0.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.MSTest" Version="1.1.2" />

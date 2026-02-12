@@ -204,7 +204,7 @@ In v4, and when running with Microsoft.Testing.Platform, AppDomains are disabled
 However, the feature remains available. If you have scenarios requiring it, add the `DisableAppDomain` setting in runsettings.
 
 > [!IMPORTANT]
-> When AppDomain isolation is enabled, MSTest unloads the AppDomain after all tests finish, which aborts all the threads associated with the AppDomain, including foreground threads. As a result, if you had a foreground thread running forever in MSTest 3.x, the test run will complete successfully. The same scenario will hang in MSTest 4.x, which is a more correct behavior since the process should not exit when a foreground thread is still running.
+> When AppDomain isolation is enabled, MSTest unloads the AppDomain after all tests finish, which aborts all the threads associated with the AppDomain, including foreground threads. As a result, if you had a foreground thread running forever in MSTest v3, the test run will complete successfully. The same scenario will hang in MSTest v4, which is a more correct behavior since the process should not exit when a foreground thread is still running.
 
 ### TestContext throws when used incorrectly
 

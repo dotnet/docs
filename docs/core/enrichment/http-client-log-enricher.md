@@ -1,14 +1,14 @@
 ---
 title: Http client log enricher
 description: Learn how to use the http client log enricher in .NET.
-ms.date: 02/05/2026
+ms.date: 02/12/2026
 ---
 
 # HTTP client log enricher
 
 You can create a custom HTTP client log enricher by creating a class that implements the <xref:Microsoft.Extensions.Http.Logging.IHttpClientLogEnricher> interface. Unlike general-purpose log enrichers that enrich all logs in your application, HTTP client log enrichers specifically target outgoing HTTP client logs, allowing you to add contextual information based on the HTTP request, response, and any exceptions that occurred.
 
-After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.HttpClientLogEnricherExtensions.AddHttpClientLogEnricher*>. Once registered, the logging infrastructure automatically calls the `Enrich()` method exactly once on every registered enricher for each HTTP request/response produced by the HTTP client.
+After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingServiceCollectionExtensions.AddHttpClientLogEnricher*>. Once registered, the logging infrastructure automatically calls the `Enrich()` method exactly once on every registered enricher for each HTTP request/response produced by the HTTP client.
 
 ## Install the package
 
@@ -46,7 +46,7 @@ Your custom HTTP client log enricher needs to implement a single <xref:Microsoft
 
 :::code language="csharp" source="snippets/httpclientlogenricher/CustomHttpClientLogEnricher.cs" :::
 
-And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.HttpClientLogEnricherExtensions.AddHttpClientLogEnricher``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)>:
+And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingServiceCollectionExtensions.AddHttpClientLogEnricher``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)>:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder();

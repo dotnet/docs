@@ -12,7 +12,7 @@ ms.date: 01/24/2024
 
 ## .NET Framework
 
-In .NET Framework, the <xref:System.Text.Encoding.Default> property always gets the system's active code page and creates a <xref:System.Text.Encoding> object that corresponds to it. The active code page may be an ANSI code page, which includes the ASCII character set along with additional characters that vary by code page. Because all <xref:System.Text.Encoding.Default%2A> encodings based on ANSI code pages lose data, consider using the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> encoding instead. UTF-8 is often identical in the U+00 to U+7F range, but can encode characters outside the ASCII range without loss.
+In .NET Framework, the <xref:System.Text.Encoding.Default> property always gets the system's active code page and creates a <xref:System.Text.Encoding> object that corresponds to it. The active code page may be an ANSI code page, which includes the ASCII character set along with additional characters that vary by code page. Because all <xref:System.Text.Encoding.Default*> encodings based on ANSI code pages lose data, consider using the <xref:System.Text.Encoding.UTF8*?displayProperty=nameWithType> encoding instead. UTF-8 is often identical in the U+00 to U+7F range, but can encode characters outside the ASCII range without loss.
 
 ## .NET Core
 

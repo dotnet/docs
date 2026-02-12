@@ -10,12 +10,12 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Span%601> type is a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) that is allocated on the stack rather than on the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed, they can't be assigned to variables of type <xref:System.Object>, `dynamic` or to any interface type, they can't be fields in a reference type, and they can't be used across `await` and `yield` boundaries. In addition, calls to two methods, <xref:System.Span%601.Equals(System.Object)> and <xref:System.Span%601.GetHashCode%2A>, throw a <xref:System.NotSupportedException>.
+The <xref:System.Span`1> type is a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) that is allocated on the stack rather than on the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed, they can't be assigned to variables of type <xref:System.Object>, `dynamic` or to any interface type, they can't be fields in a reference type, and they can't be used across `await` and `yield` boundaries. In addition, calls to two methods, <xref:System.Span`1.Equals(System.Object)> and <xref:System.Span`1.GetHashCode*>, throw a <xref:System.NotSupportedException>.
 
 > [!IMPORTANT]
-> Because it is a stack-only type, `Span<T>` is unsuitable for many scenarios that require storing references to buffers on the heap. This is true, for example, of routines that make asynchronous method calls. For such scenarios, you can use the complementary <xref:System.Memory%601?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType> types.
+> Because it is a stack-only type, `Span<T>` is unsuitable for many scenarios that require storing references to buffers on the heap. This is true, for example, of routines that make asynchronous method calls. For such scenarios, you can use the complementary <xref:System.Memory`1?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory`1?displayProperty=nameWithType> types.
 
-For spans that represent immutable or read-only structures, use <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+For spans that represent immutable or read-only structures, use <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>.
 
 ## Memory
 
@@ -50,12 +50,12 @@ The following example creates a slice of the middle five elements of a 10-elemen
 
 ## Slices
 
-`Span<T>` includes two overloads of the <xref:System.Span%601.Slice%2A> method that form a slice out of the current span that starts at a specified index. This makes it possible to treat the data in a `Span<T>` as a set of logical chunks that can be processed as needed by portions of a data processing pipeline with minimal performance impact. For example, since modern server protocols are often text-based, manipulation of strings and substrings is particularly important. In the <xref:System.String> class, the major method for extracting substrings is <xref:System.String.Substring%2A>. For data pipelines that rely on extensive string manipulation, its use offers some performance penalties, since it:
+`Span<T>` includes two overloads of the <xref:System.Span`1.Slice*> method that form a slice out of the current span that starts at a specified index. This makes it possible to treat the data in a `Span<T>` as a set of logical chunks that can be processed as needed by portions of a data processing pipeline with minimal performance impact. For example, since modern server protocols are often text-based, manipulation of strings and substrings is particularly important. In the <xref:System.String> class, the major method for extracting substrings is <xref:System.String.Substring*>. For data pipelines that rely on extensive string manipulation, its use offers some performance penalties, since it:
 
 1. Creates a new string to hold the substring.
 2. Copies a subset of the characters from the original string to the new string.
 
-This allocation and copy operation can be eliminated by using either `Span<T>` or <xref:System.ReadOnlySpan%601>, as the following example shows:
+This allocation and copy operation can be eliminated by using either `Span<T>` or <xref:System.ReadOnlySpan`1>, as the following example shows:
 
 :::code language="csharp" source="./snippets/System/Span/Slice/csharp/Program2.cs":::
 :::code language="fsharp" source="./snippets/System/Span/Slice/fsharp/Program2.fs":::

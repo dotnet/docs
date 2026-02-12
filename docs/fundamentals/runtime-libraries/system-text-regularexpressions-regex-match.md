@@ -39,7 +39,7 @@ You can determine whether the regular expression pattern has been found in the i
 
 ## First or multiple matches
 
-This method returns the first substring found at or after the `startat` character position in `input` that matches the regular expression pattern. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method. You can also retrieve all matches in a single method call by calling the <xref:System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)?displayProperty=nameWithType> method.
+This method returns the first substring found at or after the `startat` character position in `input` that matches the regular expression pattern. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch*?displayProperty=nameWithType> method. You can also retrieve all matches in a single method call by calling the <xref:System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)?displayProperty=nameWithType> method.
 
 ## Time-out exceptions
 

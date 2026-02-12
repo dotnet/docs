@@ -41,7 +41,7 @@ You can instantiate an <xref:System.Int32> value in several ways:
   :::code language="fsharp" source="./snippets/System/Int32/Overview/fsharp/toint32_1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Convert/Overview/vb/toint32_1.vb" id="Snippet4":::
 
-- You can call the <xref:System.Int32.Parse%2A> or <xref:System.Int32.TryParse%2A> method to convert the string representation of an <xref:System.Int32> value to an <xref:System.Int32>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.
+- You can call the <xref:System.Int32.Parse*> or <xref:System.Int32.TryParse*> method to convert the string representation of an <xref:System.Int32> value to an <xref:System.Int32>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.
 
   :::code language="csharp" source="./snippets/System/Int32/Overview/csharp/Instantiate1.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/Int32/Overview/fsharp/Instantiate1.fs" id="Snippet3":::
@@ -51,7 +51,7 @@ You can instantiate an <xref:System.Int32> value in several ways:
 
 The <xref:System.Int32> type supports standard mathematical operations such as addition, subtraction, division, multiplication, negation, and unary negation. Like the other integral types, the <xref:System.Int32> type also supports the bitwise `AND`, `OR`, `XOR`, left shift, and right shift operators.
 
-You can use the standard numeric operators to compare two <xref:System.Int32> values, or you can call the <xref:System.Int32.CompareTo%2A> or <xref:System.Int32.Equals%2A> method.
+You can use the standard numeric operators to compare two <xref:System.Int32> values, or you can call the <xref:System.Int32.CompareTo*> or <xref:System.Int32.Equals*> method.
 
 You can also call the members of the <xref:System.Math> class to perform a wide range of numeric operations, including getting the absolute value of a number, calculating the quotient and remainder from integral division, determining the maximum or minimum value of two integers, getting the sign of a number, and rounding a number.
 
@@ -65,7 +65,7 @@ To format an <xref:System.Int32> value as an integral string with no leading zer
 :::code language="fsharp" source="./snippets/System/Int32/Overview/fsharp/Formatting1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Int32/Overview/vb/Formatting1.vb" id="Snippet1":::
 
-You can also format an <xref:System.Int32> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString%28System.Int32%2CSystem.Int32%29> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of integer values.
+You can also format an <xref:System.Int32> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString(System.Int32,System.Int32)> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of integer values.
 
 :::code language="csharp" source="./snippets/System/Int32/Overview/csharp/Formatting1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Int32/Overview/fsharp/Formatting1.fs" id="Snippet2":::

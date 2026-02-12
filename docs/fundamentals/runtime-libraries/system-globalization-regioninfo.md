@@ -35,4 +35,4 @@ In scenarios such as the following, use culture names instead of country/region 
   | <xref:System.Globalization.RegionInfo.CurrencyNativeName> | `US Dollar`     | `US Dollar`     | `Dólar de EE.UU.` |
   | <xref:System.Globalization.RegionInfo.Name>               | `US`            | `en-US`         | `es-US`           |
   | <xref:System.Globalization.RegionInfo.NativeName>         | `United States` | `United States` | `Estados Unidos`  |
-  | <xref:System.Globalization.RegionInfo.ToString%2A>        | `US`            | `en-US`         | `es-US`           |
+  | <xref:System.Globalization.RegionInfo.ToString*>        | `US`            | `en-US`         | `es-US`           |

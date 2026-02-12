@@ -8,7 +8,7 @@ ms.date: 12/31/2023
 [!INCLUDE [context](includes/context.md)]
 
 > [!NOTE]
-> We recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.
+> We recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create*?displayProperty=nameWithType> method to take advantage of new functionality.
 
 <xref:System.Xml.XmlTextReader> provides forward-only, read-only access to a stream of XML data. The current node refers to the node on which the reader is positioned. The reader is advanced using any of the read methods and properties reflect the value of the current node.
 
@@ -20,7 +20,7 @@ This class implements <xref:System.Xml.XmlReader> and conforms to the W3C Extens
 
 - Checks that `DocumentType` nodes are well-formed. `XmlTextReader` checks the DTD for well-formedness, but does not validate using the DTD.
 
-- For nodes where <xref:System.Xml.XmlTextReader.NodeType%2A> is `XmlNodeType.EntityReference`, a single empty `EntityReference` node is returned (that is, the <xref:System.Xml.XmlTextReader.Value> property is `String.Empty`).
+- For nodes where <xref:System.Xml.XmlTextReader.NodeType*> is `XmlNodeType.EntityReference`, a single empty `EntityReference` node is returned (that is, the <xref:System.Xml.XmlTextReader.Value> property is `String.Empty`).
 
 > [!NOTE]
 > The actual declarations of entities in the DTD are called `Entity` nodes. When you refer to these nodes in your data, they are called `EntityReference` nodes.
@@ -53,6 +53,6 @@ The following are things to consider when using the <xref:System.Xml.XmlTextRead
 
 - XML data can contain a large number of attributes, namespace declarations, nested elements and so on that require a substantial amount of time to process. To limit the size of the input that is sent to the <xref:System.Xml.XmlTextReader>, create a custom IStream implementation and supply it the <xref:System.Xml.XmlTextReader>.
 
-- The <xref:System.Xml.XmlReader.ReadValueChunk%2A> method can be used to handle large streams of data. This method reads a small number of characters at a time instead of allocating a single string for the whole value.
+- The <xref:System.Xml.XmlReader.ReadValueChunk*> method can be used to handle large streams of data. This method reads a small number of characters at a time instead of allocating a single string for the whole value.
 
-- By default general entities are not expanded. General entities are expanded when you call the <xref:System.Xml.XmlTextReader.ResolveEntity%2A> method.
+- By default general entities are not expanded. General entities are expanded when you call the <xref:System.Xml.XmlTextReader.ResolveEntity*> method.

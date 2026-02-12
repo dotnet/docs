@@ -55,7 +55,7 @@ Sets an MSBuild property value.
 
 #### Conditional property values
 
-Property directives support MSBuild variables and expressions, enabling conditional property values based on environment variables or other MSBuild properties. Use this capability to create environment variables with sensible defaults, or to set different values based on conditions.
+Property directives support MSBuild properties and expressions, so you can set conditional property values based on environment variables or other MSBuild properties. Use this capability to read environment variables with sensible defaults, or to set different MSBuild property values based on conditions.
 
 **Use environment variables with defaults:**
 

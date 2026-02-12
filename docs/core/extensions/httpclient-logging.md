@@ -2,7 +2,6 @@
 title: HTTP client logging in .NET
 description: Learn how to enable enhanced logging for HTTP clients with redaction, enrichment, and compliance features in your .NET workloads.
 ms.date: 02/12/2026
-ai-usage: ai-assisted
 ---
 
 # HTTP client logging in .NET

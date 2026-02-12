@@ -23,29 +23,29 @@ This tutorial works with the console app that you create in [Create a .NET conso
 
 1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build selected":::
+   :::image type="content" source="media/publishing-with-visual-studio/use-release-configuration.png" alt-text="Visual Studio toolbar with release build selected.":::
 
 1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu.
 
-   :::image type="content" source="media/publishing-with-visual-studio/publish-context-menu.png" alt-text="Visual Studio Publish context menu":::
+   :::image type="content" source="media/publishing-with-visual-studio/publish-context-menu.png" alt-text="Visual Studio Publish context menu.":::
 
 1. On the **Target** tab of the **Publish** page, select **Folder**, and then select **Next**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/pick-publish-target.png" alt-text="Pick a publish target in Visual Studio":::
+   :::image type="content" source="media/publishing-with-visual-studio/pick-publish-target.png" alt-text="Pick a publish target in Visual Studio.":::
 
 1. On the **Specific Target** tab of the **Publish** page, select **Folder**, and then select **Next**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/pick-specific-publish-target.png" alt-text="Pick the specific publish target in Visual Studio":::
+   :::image type="content" source="media/publishing-with-visual-studio/pick-specific-publish-target.png" alt-text="Pick the specific publish target in Visual Studio.":::
 
 1. On the **Location** tab of the **Publish** page, select **Finish**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab.png" alt-text="Visual Studio Publish page Location tab":::
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab.png" alt-text="Visual Studio Publish page Location tab.":::
 
 1. On the **Publish profile creation progress** page, select **Close**.
 
 1. On the **Publish** tab of the **Publish** window, select **Publish**.
 
-   :::image type="content" source="media/publishing-with-visual-studio/publish-page.png" alt-text="Visual Studio Publish window":::
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page.png" alt-text="Visual Studio Publish window.":::
 
 ## Inspect the files
 
@@ -53,11 +53,13 @@ By default, the publishing process creates a framework-dependent deployment, whi
 
 In the following steps, you'll look at the files created by the publish process.
 
-1. In **Solution Explorer**, select **Show all files**.
+1. In **Solution Explorer**, select **Show All Files**.
+
+   :::image type="content" source="media/publishing-with-visual-studio/show-all-files.png" alt-text="Solution Explorer option to Show All Files.":::
 
 1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net10.0_.)
 
-   :::image type="content" source="media/publishing-with-visual-studio/published-files-output.png" alt-text="Solution Explorer showing published files":::
+   :::image type="content" source="media/publishing-with-visual-studio/published-files-output.png" alt-text="Solution Explorer showing published files.":::
 
    As the image shows, the published output includes the following files:
 

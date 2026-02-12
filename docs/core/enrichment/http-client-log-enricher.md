@@ -1,7 +1,8 @@
 ---
-title: Http client log enricher
-description: Learn how to use the http client log enricher in .NET.
+title: HTTP client log enricher
+description: Learn how to use the HTTP client log enricher in .NET.
 ms.date: 02/12/2026
+ai-usage: ai-assisted
 ---
 
 # HTTP client log enricher
@@ -63,7 +64,6 @@ HTTP client log enrichers differ from general-purpose log enrichers (<xref:Micro
 
 - **Scope**: HTTP client log enrichers only enrich logs produced by HTTP client requests, while general log enrichers enrich all logs in the application.
 - **Context**: HTTP client log enrichers have access to the `HttpRequestMessage`, `HttpResponseMessage`, and any exceptions that occurred during the request, allowing for HTTP-specific enrichment.
-- **Registration**: HTTP client log enrichers are registered per HTTP client using `AddHttpClientLogEnricher()` on the `IHttpClientBuilder`, while general log enrichers are registered globally on the `IServiceCollection`.
 - **Package**: HTTP client log enrichers require the `Microsoft.Extensions.Http.Diagnostics` package, while general log enrichers use the `Microsoft.Extensions.Telemetry.Abstractions` package.
 
 ## Remarks

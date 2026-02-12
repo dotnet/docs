@@ -19,9 +19,9 @@ internal class HostedService : IHostedService
         }
         catch (HttpRequestException e)
         {
-            System.Diagnostics.Debug.WriteLine($"Exception occured while sending the request. Exception message: '{e.Message}'");
+            System.Diagnostics.Debug.WriteLine($"Exception occurred while sending the request. Exception message: '{e.Message}'");
         }
     }
 
-    public async Task StopAsync(CancellationToken cancellationToken) => await Task.CompletedTask;
+    public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
 }

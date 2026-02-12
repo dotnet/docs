@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Extensions.Diagnostics.Enrichment;
+﻿using Microsoft.Extensions.Diagnostics.Enrichment;
 using Microsoft.Extensions.Http.Logging;
 
 public class CustomHttpClientLogEnricher : IHttpClientLogEnricher
@@ -15,7 +12,7 @@ public class CustomHttpClientLogEnricher : IHttpClientLogEnricher
         // Add tags based on the response (if available)
         if (response is not null)
         {
-            collector.Add("response_status_code", ((int)response.StatusCode).ToString());
+            collector.Add("response_status_code", (int)response.StatusCode);
         }
 
         // Add tags based on the exception (if available)

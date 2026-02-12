@@ -1,7 +1,7 @@
 ---
 title: .NET Tutorials
 description: Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
-ms.date: 10/23/2025
+ms.date: 02/12/2026
 ai-usage: ai-assisted
 ms.custom: devdivchpfy22
 titleSuffix: ""
@@ -10,29 +10,22 @@ titleSuffix: ""
 
 The following tutorials show how to develop console apps and libraries for .NET Core, .NET 5, and later versions. For other types of applications, see [Tutorials for getting started with .NET](../../standard/get-started.md).
 
-## Use Visual Studio
+## Create apps and libraries
 
-- [Create a console app](with-visual-studio.md)
-- [Debug an app](debugging-with-visual-studio.md)
-- [Publish an app](publishing-with-visual-studio.md)
-- [Create a class library](library-with-visual-studio.md)
-- [Unit test a class library](testing-library-with-visual-studio.md)
+These tutorials support Visual Studio, Visual Studio Code, and GitHub Codespaces. Choose your preferred development environment using the zone pivot selector at the top of each article.
+
+- [Create a console app](console-app.md)
+- [Debug an app](debugging-console-app.md)
+- [Publish an app](publishing-console-app.md)
+- [Create a class library](console-app-class-library.md)
+- [Unit test a class library](testing-console-app-class-library.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [Create an F# console app](../../fsharp/get-started/get-started-visual-studio.md)
 
-## Use Visual Studio Code
+## F# tutorials
 
-Choose these tutorials if you want to use Visual Studio Code or another code editor. All of them use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
-
-- [Create a console app](with-visual-studio-code.md)
-- [Debug an app](debugging-with-visual-studio-code.md)
-- [Publish an app](publishing-with-visual-studio-code.md)
-- [Create a class library](library-with-visual-studio-code.md)
-- [Unit test a class library](testing-library-with-visual-studio-code.md)
-- [Install and use a package](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
-- [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
-- [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
+- [Create an F# console app in Visual Studio](../../fsharp/get-started/get-started-visual-studio.md)
+- [Create an F# console app in Visual Studio Code](../../fsharp/get-started/get-started-vscode.md)
 
 ## Advanced articles
 

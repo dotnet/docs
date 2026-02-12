@@ -97,52 +97,33 @@ items:
         items:
           - name: .NET 6 template changes
             href: ../core/tutorials/top-level-templates.md
-          - name: Use Visual Studio
-            items:
-              - name: Create a console app
-                href: ../core/tutorials/with-visual-studio.md
-                displayName: tutorials, visual studio, vs
-              - name: Debug an app
-                href: ../core/tutorials/debugging-with-visual-studio.md
-                displayName: tutorials, visual studio, vs
-              - name: Publish an app
-                href: ../core/tutorials/publishing-with-visual-studio.md
-                displayName: tutorials, visual studio, vs
-              - name: Create a library
-                href: ../core/tutorials/library-with-visual-studio.md
-                displayName: tutorials, visual studio, vs
-              - name: Unit test a library
-                href: ../core/tutorials/testing-library-with-visual-studio.md
-                displayName: tutorials, visual studio, vs
-              - name: Install and use a package
-                href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-                displayName: tutorials, visual studio, vs
-              - name: Create and publish a package
-                href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-                displayName: tutorials, visual studio, vs
-          - name: Use Visual Studio Code
-            items:
-              - name: Create a console app
-                href: ../core/tutorials/with-visual-studio-code.md
-                displayName: tutorials, visual studio code, vs code, cli
-              - name: Debug an app
-                href: ../core/tutorials/debugging-with-visual-studio-code.md
-                displayName: tutorials, visual studio code, vs code
-              - name: Publish an app
-                href: ../core/tutorials/publishing-with-visual-studio-code.md
-                displayName: tutorials, visual studio code, vs code
-              - name: Create a library
-                href: ../core/tutorials/library-with-visual-studio-code.md
-                displayName: tutorials, visual studio code, vs code
-              - name: Unit test a library
-                href: ../core/tutorials/testing-library-with-visual-studio-code.md
-                displayName: tutorials, visual studio code, vs code
-              - name: Install and use a package
-                href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-                displayName: tutorials, cli
-              - name: Create and publish a package
-                href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-                displayName: tutorials
+          - name: Create a console app
+            href: ../core/tutorials/console-app.md
+            displayName: tutorials, visual studio, vs, visual studio code, vs code
+          - name: Debug an app
+            href: ../core/tutorials/debugging-console-app.md
+            displayName: tutorials, visual studio, vs, visual studio code, vs code
+          - name: Publish an app
+            href: ../core/tutorials/publishing-console-app.md
+            displayName: tutorials, visual studio, vs, visual studio code, vs code
+          - name: Create a library
+            href: ../core/tutorials/console-app-class-library.md
+            displayName: tutorials, visual studio, vs, visual studio code, vs code
+          - name: Unit test a library
+            href: ../core/tutorials/testing-console-app-class-library.md
+            displayName: tutorials, visual studio, vs, visual studio code, vs code
+          - name: Install and use a package using Visual Studio
+            href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: tutorials, visual studio, vs
+          - name: Create and publish a package using Visual Studio
+            href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: tutorials, visual studio, vs
+          - name: Install and use a package using the .NET CLI
+            href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: tutorials, cli
+          - name: Create and publish a package using the .NET CLI
+            href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: tutorials, cli
           - name: More tutorials
             href: ../core/tutorials/index.md
   - name: What's new in .NET

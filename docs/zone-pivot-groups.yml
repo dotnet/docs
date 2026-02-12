@@ -164,6 +164,8 @@ groups:
   title: Code editor
   prompt: Choose a code editor
   pivots:
+    - id: visualstudio
+      title: Visual Studio
     - id: vscode
       title: Visual Studio Code
     - id: codespaces

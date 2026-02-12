@@ -8,9 +8,9 @@ ai-usage: ai-assisted
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Reflection.Emit.DynamicILInfo> class allows developers to write their own MSIL generators instead of using <xref:System.Reflection.Emit.ILGenerator>.
+Use the <xref:System.Reflection.Emit.DynamicILInfo> class to write your own MSIL generators instead of using <xref:System.Reflection.Emit.ILGenerator>.
 
-To create instances of other types, call methods, and so on, the MSIL you generate must include tokens for those entities. The <xref:System.Reflection.Emit.DynamicILInfo> class provides several overloads of the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method, which return tokens valid in the scope of the current <xref:System.Reflection.Emit.DynamicILInfo>. For example, if you need to call an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, you can obtain a <xref:System.RuntimeMethodHandle> for that overload and pass it to the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method to obtain a token to embed in your MSIL.
+To create instances of other types, call methods, access fields, or reference types, the MSIL you generate must include tokens for those entities. The <xref:System.Reflection.Emit.DynamicILInfo> class provides several overloads of the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method, which return tokens valid in the scope of the current <xref:System.Reflection.Emit.DynamicILInfo>. For example, if you need to call an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, you can obtain a <xref:System.RuntimeMethodHandle> for that overload and pass it to the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method to obtain a token to embed in your MSIL.
 
 Once you have created <xref:System.Byte> arrays for your local variable signature, exceptions, and code body, you can use the <xref:System.Reflection.Emit.DynamicILInfo.SetCode%2A>, <xref:System.Reflection.Emit.DynamicILInfo.SetExceptions%2A>, and <xref:System.Reflection.Emit.DynamicILInfo.SetLocalSignature%2A> methods to insert them into the <xref:System.Reflection.Emit.DynamicMethod> associated with your <xref:System.Reflection.Emit.DynamicILInfo> object.
 

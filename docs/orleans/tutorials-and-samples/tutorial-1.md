@@ -54,9 +54,9 @@ For this tutorial, create four projects as part of the same solution:
 
 Replace the default code with the code provided for each project.
 
-1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
+1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application](../../core/tutorials/console-app.md).
 1. Add another Console App project and name it `Client`.
-1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
+1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library](../../core/tutorials/console-app-class-library.md).
 1. Add another Class Library and name it `Grains`.
 
 #### Delete default source files

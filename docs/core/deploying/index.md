@@ -15,13 +15,13 @@ This article explains the different ways to publish a .NET application. It cover
 
 ::: zone pivot="vscode"
 
-For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio Code](../tutorials/publishing-with-visual-studio-code.md).
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application](../tutorials/publishing-console-app.md).
 
 ::: zone-end
 
 ::: zone pivot="visualstudio"
 
-For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio](../tutorials/publishing-with-visual-studio.md).
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application](../tutorials/publishing-console-app.md).
 
 ::: zone-end
 

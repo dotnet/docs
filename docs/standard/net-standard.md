@@ -149,5 +149,5 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
 - [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions.md)
 - [.NET Standard versions (interactive UI)](https://dotnet.microsoft.com/platform/dotnet-standard#versions)
-- [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
+- [Build a .NET Standard library](../core/tutorials/console-app-class-library.md)
 - [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

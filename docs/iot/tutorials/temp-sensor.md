@@ -55,7 +55,7 @@ The following are the connections from the Raspberry Pi to the BME280 breakout. 
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *SensorTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/console-app.md). Name it *SensorTutorial*.
 
     ```dotnetcli
     dotnet new console -o SensorTutorial

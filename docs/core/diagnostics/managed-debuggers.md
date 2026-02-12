@@ -13,7 +13,7 @@ Microsoft provides debuggers for managed code in **Visual Studio** and **Visual 
 
 **Visual Studio** is an integrated development environment with the most comprehensive debugger available. Visual Studio is an excellent choice for developers working on Windows.
 
-- [Tutorial - Debugging a .NET Core application on Windows with Visual Studio](../tutorials/debugging-with-visual-studio.md)
+- [Tutorial - Debugging a .NET application](../tutorials/debugging-console-app.md)
 - [Debug ASP.NET Core apps in Visual Studio](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications#debug-aspnet-core-apps)
 
 While Visual Studio is a Windows application, it can also be used to debug Linux apps running remotely, in WSL, or in Docker containers:
@@ -26,5 +26,5 @@ While Visual Studio is a Windows application, it can also be used to debug Linux
 
 **Visual Studio Code** is a lightweight cross-platform code editor. It uses the same .NET Core debugger implementation as Visual Studio, but with a simplified user interface.
 
-- [Tutorial - Debugging a .NET Core application with Visual Studio Code](../tutorials/debugging-with-visual-studio-code.md)
+- [Tutorial - Debugging a .NET application](../tutorials/debugging-console-app.md)
 - [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)

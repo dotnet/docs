@@ -60,7 +60,7 @@ Refer to the following pinout diagrams as needed:
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *AdcTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/console-app.md). Name it *AdcTutorial*.
 
     ```dotnetcli
     dotnet new console -o AdcTutorial

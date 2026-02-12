@@ -509,8 +509,7 @@ Install the Microsoft Visual C++ 2015-2019 Redistributable ([64-bit][vcc64] or [
 - [.NET CLI overview](../tools/index.md)
 - [Upgrade to a new .NET version](upgrade.md).
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-windows).
-- [Tutorial: Hello World tutorial](../tutorials/with-visual-studio.md).
-- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Create a new console application](../tutorials/console-app.md).
 
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
 [vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe

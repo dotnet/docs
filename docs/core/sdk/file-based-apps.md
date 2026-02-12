@@ -61,7 +61,6 @@ Property directives support MSBuild variables and expressions, enabling conditio
 
 ```csharp
 #:property LogLevel=$([MSBuild]::ValueOrDefault('$(LOG_LEVEL)', 'Information'))
-#:property ConnectionString=$([MSBuild]::ValueOrDefault('$(DB_CONNECTION)', 'Server=localhost;Database=dev'))
 ```
 
 The `ValueOrDefault` function provides a default value when an environment variable isn't set. Alternatively, you can reference environment variables directly using `$(VARIABLE_NAME)` syntax, but this doesn't provide a fallback value if the variable is missing.
@@ -69,9 +68,7 @@ The `ValueOrDefault` function provides a default value when an environment varia
 **Use conditional expressions:**
 
 ```csharp
-#:property IsProduction=$([MSBuild]::ValueOrDefault('$(ENVIRONMENT)', 'Development').Equals('Production'))
 #:property EnableLogging=$([System.Convert]::ToBoolean($([MSBuild]::ValueOrDefault('$(ENABLE_LOGGING)', 'true'))))
-#:property Version=$([MSBuild]::ValueOrDefault('$(BUILD_VERSION)', '1.0.0'))
 ```
 
 For more information about MSBuild property functions, see [Property functions](/visualstudio/msbuild/property-functions).

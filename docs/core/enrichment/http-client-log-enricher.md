@@ -46,7 +46,7 @@ Your custom HTTP client log enricher needs to implement a single <xref:Microsoft
 
 :::code language="csharp" source="snippets/httpclientlogenricher/CustomHttpClientLogEnricher.cs" :::
 
-And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingServiceCollectionExtensions.AddHttpClientLogEnricher``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)>:
+And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingServiceCollectionExtensions.AddHttpClientLogEnricher``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder();

@@ -53,6 +53,26 @@ Sets an MSBuild property value.
 #:property PublishAot=false
 ```
 
+#### Conditional property values
+
+Property directives support MSBuild properties and expressions, so you can set conditional property values based on environment variables or other MSBuild properties. Use this capability to read environment variables with sensible defaults, or to set different MSBuild property values based on conditions.
+
+**Use environment variables with defaults:**
+
+```csharp
+#:property LogLevel=$([MSBuild]::ValueOrDefault('$(LOG_LEVEL)', 'Information'))
+```
+
+The `ValueOrDefault` function provides a default value when an environment variable isn't set. Alternatively, you can reference environment variables directly using `$(VARIABLE_NAME)` syntax, but this doesn't provide a fallback value if the variable is missing.
+
+**Use conditional expressions:**
+
+```csharp
+#:property EnableLogging=$([System.Convert]::ToBoolean($([MSBuild]::ValueOrDefault('$(ENABLE_LOGGING)', 'true'))))
+```
+
+For more information about MSBuild property functions, see [Property functions](/visualstudio/msbuild/property-functions).
+
 ### `#:sdk`
 
 Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.

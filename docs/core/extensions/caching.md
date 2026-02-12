@@ -244,7 +244,7 @@ In the preceding C# code:
 
 Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.
 
-## HybridCache
+## Hybrid caching
 
 The <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache> library combines the benefits of in-memory and distributed caching while addressing common challenges with existing caching APIs. Introduced in .NET 9, `HybridCache` provides a unified API that simplifies caching implementation and includes built-in features like stampede protection and configurable serialization.
 

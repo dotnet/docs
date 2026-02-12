@@ -114,7 +114,7 @@
 | Text Translation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Text/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.AI.Translation.Text/2.0.0-beta.1) | [docs](/dotnet/api/overview/azure/AI.Translation.Text-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0/sdk/translation/Azure.AI.Translation.Text/)<br>GitHub [2.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_2.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/) |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/IoT.TimeSeriesInsights-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.TimeSeriesInsights_1.0.0-beta.1/sdk/timeseriesinsights/Azure.IoT.TimeSeriesInsights/) |
 | TimeZone | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Maps.TimeZones-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Maps.TimeZones_1.0.0-beta.1/sdk/maps/Azure.Maps.TimeZones/) |
-| unknown | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.AI.AgentServer.AgentFramework/1.0.0-beta.6) | [docs](/dotnet/api/overview/azure/AI.AgentServer.AgentFramework-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.6/sdk/agentserver/Azure.AI.AgentServer.AgentFramework/) |
+| unknown | NuGet [1.0.0-beta.7](https://www.nuget.org/packages/Azure.AI.AgentServer.AgentFramework/1.0.0-beta.7) | [docs](/dotnet/api/overview/azure/AI.AgentServer.AgentFramework-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.7/sdk/agentserver/Azure.AI.AgentServer.AgentFramework/) |
 | unknown | NuGet [1.0.0-beta.7](https://www.nuget.org/packages/Azure.AI.AgentServer.Contracts/1.0.0-beta.7) | [docs](/dotnet/api/overview/azure/AI.AgentServer.Contracts-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.Contracts_1.0.0-beta.7/sdk/agentserver/Azure.AI.AgentServer.Contracts/) |
 | unknown | NuGet [1.0.0-beta.7](https://www.nuget.org/packages/Azure.AI.AgentServer.Core/1.0.0-beta.7) | [docs](/dotnet/api/overview/azure/AI.AgentServer.Core-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.Core_1.0.0-beta.7/sdk/agentserver/Azure.AI.AgentServer.Core/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.AI.ContentUnderstanding/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.ContentUnderstanding_1.0.0-beta.1/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/) |
@@ -423,26 +423,26 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.0.0)<br>NuGet [1.1.0-rc](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0-rc) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.17) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.17](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.17) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.18) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.18](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.18) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.48.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.48.1) |  |  |
 | Unknown Display Name | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.1) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-arm64/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-x64/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-arm64/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-x64/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-arm64/0.0.0-beta.7) |  |  |
-| Unknown Display Name | NuGet [0.0.0-beta.7](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/0.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-arm64/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.linux-x64/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-arm64/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-x64/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-arm64/0.0.0-beta.8) |  |  |
+| Unknown Display Name | NuGet [0.0.0-beta.8](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/0.0.0-beta.8) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-x64/0.0.12) |  |  |
@@ -548,8 +548,8 @@
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.527](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.527) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.14.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.14.0) |  | GitHub [4.14.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [3.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.10.0) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.10.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.14.0) |  |  |
+| Functions extension for Durable Task Framework | NuGet [3.10.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.10.1) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.10.1](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.14.1) |  |  |
 | Functions extension for HTTP | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.3.0) |  | GitHub [3.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.2.0) |  | GitHub [4.2.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

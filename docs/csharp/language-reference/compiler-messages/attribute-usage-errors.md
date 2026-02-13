@@ -274,7 +274,7 @@ To correct these errors, follow these rules. For more information, see <xref:Sys
 
 The following errors occur when you apply <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> incorrectly or in conflict with other caller info attributes:
 
-- **CS8959**: *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type 2*
+- **CS8959**: *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
 - **CS8960**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - **CS8961**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
 - **CS8962**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*

@@ -148,7 +148,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 ## Attribute arguments and parameters
 
-The following errors occur when you use attribute arguments or parameters incorrectly:
+You see the following errors when you use attribute arguments or parameters incorrectly:
 
 - **CS0181**: *Attribute constructor parameter has a type, which is not a valid attribute parameter type*
 - **CS0416**: *'type parameter': an attribute argument cannot use type parameters.*
@@ -160,25 +160,25 @@ The following errors occur when you use attribute arguments or parameters incorr
 - **CS8968**: *An attribute type argument cannot use type parameters*
 - **CS8970**: *Type cannot be used in this context because it cannot be represented in metadata.*
 
-To correct these errors, follow these rules.
+To correct these errors, follow these rules:
 
-- Use only valid attribute parameter types (**CS0181**). Valid types include primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers and other non-metadata types aren't valid attribute parameter types.
-- Use compile-time constant values for attribute arguments instead of type parameters (**CS0416**). Attribute arguments must be evaluated at compile time.
-- Don't use type arguments with attributes (**CS0447**). Type arguments aren't allowed in attribute usage.
-- Ensure attribute arguments are valid for the attribute type (**CS0647**). Check that values passed to the attribute constructor are correctly formatted and within the valid range for each parameter.
-- Provide all required attribute parameters when you apply the attribute (**CS7046**, **CS7047**). Check the attribute's constructor to see which parameters are mandatory.
-- Specify default values for optional constructor parameters when you define custom attributes (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor.
-- Use concrete types instead of type parameters as generic attribute type arguments (**CS8968**). Generic attributes require type arguments that are fully determined at compile time.
-- Ensure types used in attribute arguments can be represented in metadata (**CS8970**). Some constructed types, such as those involving `dynamic` or certain tuple element names, can't be encoded in metadata and aren't permitted as attribute type arguments.
+- Attribute constructor parameters must use valid attribute parameter types (**CS0181**). The C# language specification restricts attribute parameter types to primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers and other types that can't be represented in metadata aren't valid attribute parameter types.
+- Attribute arguments must be compile-time constant values, so you can't use type parameters as attribute arguments (**CS0416**). The compiler must resolve attribute arguments at compile time, and type parameters aren't known until the generic type is constructed.
+- You can't apply type arguments to a non-generic attribute (**CS0447**). If an attribute class isn't generic, its usage can't include type arguments in angle brackets.
+- All values passed to an attribute constructor must be correctly formatted and within the valid range for each parameter (**CS0647**). For example, a <xref:System.Runtime.InteropServices.GuidAttribute> requires a valid GUID format string.
+- You must provide all required attribute parameters when you apply the attribute (**CS7046**, **CS7047**). Check the attribute's constructor signature to determine which parameters are mandatory, and supply valid arguments for each parameter.
+- When you define a custom attribute with optional constructor parameters, specify default values for those parameters (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor so callers can omit those arguments.
+- Generic attribute type arguments must be concrete types, not type parameters (**CS8968**). The compiler must fully determine generic attribute type arguments at compile time, so open type parameters aren't permitted.
+- Types used as attribute arguments must be representable in metadata (**CS8970**). Some constructed types, such as those involving `dynamic` or certain tuple element names, can't be encoded in metadata and aren't permitted as attribute type arguments.
 
-For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md) and [Generics](../../fundamentals/types/generics.md).
+For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md), [Generics](../../fundamentals/types/generics.md), and the [C# language specification section on attributes](~/_csharpstandard/standard/attributes.md).
 
 > [!NOTE]
-> **CS0447** and **CS0647** are no longer used in Roslyn.
+> **CS0447** and **CS0647** are deprecated. The current compiler doesn't emit these errors.
 
 ## Attribute class requirements
 
-The following errors occur when you define attribute classes that don't meet the required constraints:
+You see the following errors when you define attribute classes that don't meet the required constraints:
 
 - **CS0404**: *Attribute is not valid on this declaration type.*
 - **CS0579**: *Duplicate attribute*
@@ -187,20 +187,20 @@ The following errors occur when you define attribute classes that don't meet the
 - **CS0653**: *Cannot apply attribute class 'class' because it is abstract.*
 - **CS1614**: *Attribute name is ambiguous. Either use '@name' or explicitly include the 'Attribute' suffix.*
 
-To correct these errors, follow these rules.
+To correct these errors, follow these rules:
 
-- Apply attributes only to valid declaration types (**CS0404**). Check the attribute's `AttributeUsage` to see which targets are allowed.
-- Either remove the duplicate attribute, or set `AllowMultiple = true` in the attribute's <xref:System.AttributeUsageAttribute> (**CS0579**). By default, attributes can only be applied once to a single target.
-- Ensure the type used as an attribute inherits from <xref:System.Attribute?displayProperty=nameWithType> (**CS0616**). Only classes derived from `System.Attribute` can be used in attribute syntax.
-- Apply <xref:System.AttributeUsageAttribute> only to classes that derive from `Attribute` (**CS0641**). This attribute controls how other attributes are used.
-- Remove the `abstract` modifier from attribute classes, or derive from a non-abstract attribute class (**CS0653**). Attributes must be instantiable.
-- Disambiguate attribute names by using `@name` to refer to the shorter class name, or by specifying the full name with the `Attribute` suffix (**CS1614**). This ambiguity arises when both `Example` and `ExampleAttribute` classes exist.
+- Apply attributes only to declaration types that the attribute's <xref:System.AttributeUsageAttribute> allows (**CS0404**). Check the `AttributeTargets` value specified in the attribute's `AttributeUsage` to see which targets are valid.
+- If you apply the same attribute more than once to a single target, either remove the duplicate or set `AllowMultiple = true` in the attribute's <xref:System.AttributeUsageAttribute> (**CS0579**). By default, attributes can only appear once on each target.
+- The type used in attribute syntax must inherit from <xref:System.Attribute?displayProperty=nameWithType> (**CS0616**). Only classes derived from `System.Attribute` can be used as attributes. Other types cause this error even if they have a similar name.
+- You can apply <xref:System.AttributeUsageAttribute> only to classes that derive from `Attribute` (**CS0641**). The `AttributeUsage` attribute controls how other attributes are used, and is itself restricted to attribute classes.
+- Attribute classes can't be `abstract` because the compiler must instantiate them (**CS0653**). Remove the `abstract` modifier from the attribute class, or derive a concrete class from the abstract base.
+- When both `Example` and `ExampleAttribute` attribute classes exist, the compiler can't determine which one `[Example]` refers to (**CS1614**). Disambiguate by using `[@Example]` for the shorter name, or `[ExampleAttribute]` for the longer name.
 
-For more information, see [Create custom attributes](../../advanced-topics/reflection-and-attributes/creating-custom-attributes.md).
+For more information, see [Create custom attributes](../../advanced-topics/reflection-and-attributes/creating-custom-attributes.md) and the [C# language specification section on attributes](~/_csharpstandard/standard/attributes.md).
 
 ## Attribute location context
 
-The following errors occur when you apply attributes in invalid locations or with incorrect target specifiers:
+The following errors occur when you apply attributes in invalid locations or use incorrect target specifiers:
 
 - **CS0592**: *Attribute is not valid on this declaration type. It is only valid on specific declarations.*
 - **CS0657**: *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
@@ -208,14 +208,13 @@ The following errors occur when you apply attributes in invalid locations or wit
 - **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
 
-To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets).
+To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#2223-attribute-specification).
 
-- Check the attribute's <xref:System.AttributeUsageAttribute> to see which declaration types it targets, and apply it only to those types (**CS0592**). For example, an attribute targeting `AttributeTargets.Interface` can't be applied to a class.
-- Use valid attribute target specifiers for the declaration (**CS0657**). Check the error message to see which targets are valid for the specific declaration.
-- Remove invalid attribute target specifiers (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
-- Move attributes from property or event accessors to the property or event declaration itself (**CS1667**). Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on accessors.
-- Move attributes to valid contexts (**CS7014**). Attributes can only be applied to program elements that support them, as defined by <xref:System.AttributeUsageAttribute>.
-- Apply attributes at the appropriate scope level. Use `assembly:` or `module:` prefixes for assembly-level or module-level attributes.
+- Each attribute's <xref:System.AttributeUsageAttribute> specifies which declaration types it targets. You must apply the attribute only to those types (**CS0592**). For example, you can't apply an attribute defined with `AttributeTargets.Interface` to a class.
+- When you use an attribute target specifier such as `method:` or `property:`, the specifier must be valid for the declaration where it appears (**CS0657**). Check the error message to see which target specifiers are allowed for the specific declaration.
+- The attribute target specifier you used isn't a recognized specifier (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
+- Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Move the attribute from the accessor to the property or event declaration itself.
+- Attributes can only appear on program elements that support them (**CS7014**). If you're applying assembly-level or module-level attributes, use the `assembly:` or `module:` target specifiers and place them at the top of the file.
 
 ## Predefined attributes
 
@@ -233,23 +232,23 @@ The following errors occur when you use specific predefined .NET attributes inco
 - **CS1608**: *The RequiredAttribute attribute is not permitted on C# types*
 - **CS9331**: *Attribute cannot be applied manually.*
 
-To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md) and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
+To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
 
-- Remove <xref:System.Runtime.CompilerServices.IndexerNameAttribute> from explicit interface implementations (**CS0415**). Apply it only to public indexers.
-- Remove `IndexerName` from indexers marked with `override` (**CS0609**). Override indexers inherit the name from the base class.
-- Add <xref:System.Runtime.InteropServices.FieldOffsetAttribute> to all instance fields in types with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit` (**CS0625**). Explicit layout requires explicit field positions.
-- Apply `FieldOffset` only to types with `StructLayout(LayoutKind.Explicit)` (**CS0636**). Add the `StructLayout` attribute to the type declaration.
-- Remove `FieldOffset` from `static` or `const` fields (**CS0637**). Explicit layout applies only to instance fields.
-- Remove <xref:System.Reflection.DefaultMemberAttribute> from types that contain indexers (**CS0646**). Indexers automatically define the default member.
-- Use the same name in all <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attributes within a type (**CS0668**). All indexers in a type must share the same `IndexerName` value.
-- Use only valid types as arguments for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> (**CS0735**). Non-generic, non-nested, non-pointer, and non-array types are the only valid forwarding targets.
-- Remove duplicate <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> declarations for the same type (**CS0739**). An assembly can have only one `TypeForwardedTo` for each external type.
-- Remove <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> from C# type definitions (**CS1608**). This attribute is used by other languages and isn't permitted in C#.
-- Replace compiler-generated attributes with the equivalent C# syntax (**CS9331**). Use language keywords instead of manually applying reserved attributes.
+- The <xref:System.Runtime.CompilerServices.IndexerNameAttribute> can only be applied to indexers that aren't explicit interface member declarations (**CS0415**). Remove the attribute from explicit interface indexers, because the interface already defines the indexer name.
+- You can't apply `IndexerName` to indexers marked with `override` because override indexers inherit their name from the base class (**CS0609**). Remove the `IndexerName` attribute from the override indexer.
+- Every instance field in a type marked with `StructLayout(LayoutKind.Explicit)` must have a <xref:System.Runtime.InteropServices.FieldOffsetAttribute> (**CS0625**). Explicit layout requires that you specify the byte offset for each instance field.
+- The <xref:System.Runtime.InteropServices.FieldOffsetAttribute> can only be placed on members of types that have <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit` (**CS0636**). Add the `StructLayout` attribute to the containing type declaration.
+- The `FieldOffset` attribute isn't allowed on `static` or `const` fields because explicit layout applies only to instance fields (**CS0637**). Remove the `FieldOffset` attribute from the static or const field.
+- You can't apply <xref:System.Reflection.DefaultMemberAttribute> to a type that already contains an indexer because the compiler automatically defines the default member for types with indexers (**CS0646**). Remove the `DefaultMember` attribute.
+- All <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attributes within a type must specify the same name (**CS0668**). Change the names to match, because the runtime uses a single name for all indexers on a type.
+- The type specified as an argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> must be a non-generic, non-nested, non-pointer, non-array type (**CS0735**). Only top-level named types are valid forwarding targets.
+- An assembly can have only one <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for each external type (**CS0739**). Locate and remove the duplicate `TypeForwardedTo` declaration.
+- The <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> isn't permitted on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
+- Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
 
 ## Conditional attribute usage
 
-The following errors occur when you apply the <xref:System.Diagnostics.ConditionalAttribute> in ways that violate its usage restrictions:
+You see the following errors when you apply the <xref:System.Diagnostics.ConditionalAttribute> in ways that violate its usage restrictions:
 
 - **CS0243**: *The Conditional attribute is not valid on 'method' because it is an override method.*
 - **CS0577**: *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation.*
@@ -260,16 +259,16 @@ The following errors occur when you apply the <xref:System.Diagnostics.Condition
 - **CS1618**: *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
 - **CS1689**: *Attribute is only valid on methods or attribute classes*
 
-To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute> and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
+To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute>, [Conditional methods](~/_csharpstandard/standard/attributes.md#22532-conditional-methods), and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
 
-- Remove the `Conditional` attribute from [override](../keywords/override.md) methods, or remove the `override` keyword (**CS0243**). The compiler binds to the base method, not the override.
-- Don't apply `Conditional` to constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, lambda expressions, or explicit interface implementations (**CS0577**). These member types don't support conditional compilation.
-- Change the method's return type to `void`, or remove the `Conditional` attribute (**CS0578**). Conditional methods must return `void` because calls may be compiled out.
-- Remove the `Conditional` attribute from interface member declarations (**CS0582**). Interface members can't be conditional.
-- Remove the `Conditional` attribute from interface member implementations (**CS0629**). Methods implementing interface members can't be conditional.
-- Remove `out` parameters from conditional methods, or remove the `Conditional` attribute (**CS0685**). The `out` variable value would be undefined when the method call is compiled out.
-- Don't create delegates with conditional methods (**CS1618**). Because conditional methods might not exist in some builds, delegate references to them are invalid. Remove the `Conditional` attribute from the method, or don't use it as a delegate target.
-- Apply the `Conditional` attribute only to methods or attribute classes (**CS1689**). The `Conditional` attribute isn't valid on other declaration types such as classes, structs, or interfaces.
+- The compiler binds calls to the base method declaration, not the override, so you can't apply the `Conditional` attribute to [override](../keywords/override.md) methods (**CS0243**). Remove the `Conditional` attribute from the override method, or remove the `override` keyword.
+- The `Conditional` attribute isn't valid on constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, lambda expressions, or explicit interface implementations (**CS0577**). These member types can't be conditionally omitted because they have required roles in the type's lifecycle or contract.
+- Conditional methods must return `void` because the compiler might omit the call entirely, and no return value would be available to the caller (**CS0578**). Change the method's return type to `void`, or remove the `Conditional` attribute.
+- Interface members can't be conditional because all interface members must be implemented (**CS0582**). Remove the `Conditional` attribute from the interface member declaration.
+- Methods that implement interface members can't be conditional because the interface contract requires them to be present in all builds (**CS0629**). Remove the `Conditional` attribute from the implementing method.
+- Conditional methods can't have `out` parameters because the `out` variable value would be undefined when the compiler omits the method call (**CS0685**). Remove the `out` parameters from the method, or remove the `Conditional` attribute.
+- You can't create a delegate that references a conditional method because the method might not exist in builds where the condition symbol isn't defined (**CS1618**). Remove the `Conditional` attribute from the method, or don't use it as a delegate target.
+- The `Conditional` attribute is only valid on methods and attribute classes (**CS1689**). It isn't valid on other declaration types such as non-attribute classes, structs, or interfaces.
 
 ## CallerArgumentExpression attribute usage
 
@@ -281,8 +280,8 @@ The following errors occur when you apply <xref:System.Runtime.CompilerServices.
 - **CS8962**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
 - **CS8963**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
 
-To correct these errors, follow these rules. For more information, see [Caller information attributes](../../language-reference/attributes/caller-information.md).
+To correct these errors, follow these rules. For more information, see [Caller information attributes](../../language-reference/attributes/caller-information.md) and <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>.
 
-- Ensure the parameter type is `string` or has a standard conversion from `string` when applying `CallerArgumentExpression` (**CS8959**). The attribute injects a `string` representation of the caller's argument expression, so the target parameter must be compatible with `string`.
-- Remove `CallerArgumentExpression` from parameters that also have <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, or <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute> (**CS8960**, **CS8961**, **CS8962**). These caller info attributes take precedence over `CallerArgumentExpression`, so the `CallerArgumentExpression` attribute has no effect when combined with them.
-- Specify a valid parameter name in the `CallerArgumentExpression` constructor (**CS8963**). The string argument must match the name of another parameter in the same method signature.
+- The parameter decorated with `CallerArgumentExpression` must have type `string` or a type with a standard conversion from `string`, because the attribute injects a `string` representation of the caller's argument expression (**CS8959**). Change the parameter type to `string` or a compatible type.
+- The `CallerArgumentExpression` attribute has no effect on a parameter that also has <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, or <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute> (**CS8960**, **CS8961**, **CS8962**). Those caller info attributes take precedence, so remove the `CallerArgumentExpression` attribute from the parameter.
+- The string argument passed to the `CallerArgumentExpression` constructor must match the name of another parameter in the same method signature (**CS8963**). If the parameter name is misspelled or refers to a nonexistent parameter, the attribute has no effect.

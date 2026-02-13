@@ -38,10 +38,10 @@ param(
 
 # Find the root of the git repository
 function Get-GitRepoRoot {
-    $currentPath = Get-Location
+    $currentPath = (Get-Location).Path
     while ($currentPath -ne $null) {
         if (Test-Path (Join-Path $currentPath ".git")) {
-            return $currentPath.Path
+            return $currentPath
         }
         $parentPath = Split-Path $currentPath -Parent
         if ($parentPath -eq $currentPath) {

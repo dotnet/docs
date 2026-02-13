@@ -1231,6 +1231,9 @@ items:
               - name: Distributed tracing
                 href: networking/telemetry/tracing.md
                 displayName: networking distributed tracing
+              - name: HTTP client logging
+                href: ../core/extensions/httpclient-logging.md
+                displayName: http client logging
               - name: Events
                 href: networking/telemetry/events.md
                 displayName: networking events
@@ -1394,6 +1397,8 @@ items:
                     href: runtime-libraries/system-type-gettype.md
                   - name: MakeGenericType method
                     href: runtime-libraries/system-type-makegenerictype.md
+              - name: The CustomReflectionContext class
+                href: runtime-libraries/system-reflection-context-customreflectioncontext.md
       - name: Graphics
         items:
           - name: Supplemental API remarks
@@ -1562,6 +1567,8 @@ items:
                         href: runtime-libraries/system-reflection-emit-dynamicmethod-invoke.md
                       - name: IsSecurity* properties
                         href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritycritical.md
+                  - name: The DynamicILInfo class
+                    href: runtime-libraries/system-reflection-emit-dynamicilinfo.md
                   - name: The MethodBuilder class
                     href: runtime-libraries/system-reflection-emit-methodbuilder.md
                   - name: The PersistedAssemblyBuilder class

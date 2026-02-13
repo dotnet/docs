@@ -33,7 +33,7 @@ By default, Visual Studio uses the Debug build configuration, so you don't need 
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   :::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="./media/debugging-with-visual-studio/use-debug-configuration.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 ## Set a breakpoint
 
@@ -43,7 +43,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
+   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press <kbd>F5</kbd> to run the program in Debug mode. Another way to start debugging is by choosing **Debug** > **Start Debugging** from the menu.
 
@@ -61,7 +61,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
-1. Enter `currentDate = DateTime.Parse("2026-01-14T17:25:00Z").ToUniversalTime()` in the **Immediate** window and press the <kbd>Enter</kbd> key.
+1. Enter `currentDate = DateTime.Parse("2026-02-05T20:25:00Z").ToUniversalTime()` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
    The **Immediate** window displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
@@ -129,6 +129,8 @@ The program displays the string that the user enters. What happens if the user d
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
+1. Set a breakpoint on the line of code that displays the "What is your name?" prompt.
+
 1. Choose **Debug** > **Step Into**. Another way to debug one statement at a time is by pressing <kbd>F11</kbd>.
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
@@ -136,10 +138,6 @@ Visual Studio also allows you to step line by line through a program and monitor
    :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank console window.
-
-1. Press <kbd>F11</kbd>. Visual Studio now highlights the next line of execution. The **Locals** window is unchanged, and the console window remains blank.
-
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-source-method.png" alt-text="Visual Studio step in method source - C#":::
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -163,7 +161,7 @@ Once you've tested the Debug version of your application, you should also compil
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-:::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with release highlighted":::
+:::image type="content" source="./media/debugging-with-visual-studio/use-release-configuration.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 

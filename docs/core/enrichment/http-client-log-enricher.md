@@ -42,7 +42,7 @@ Your custom HTTP client log enricher needs to implement a single <xref:Microsoft
 
 > [!NOTE]
 > If your custom HTTP client log enricher calls <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Add(System.String,System.Object)>,
-> it is acceptable to send any type of argument to the `value` parameter as is, because it is parsed into the actual type and serialized internally
+> it's acceptable to send any type of argument to the `value` parameter as-is, because it's parsed into the actual type and serialized internally
 > to be sent further down the logging pipeline.
 
 :::code language="csharp" source="snippets/httpclientlogenricher/CustomHttpClientLogEnricher.cs" :::
@@ -70,8 +70,8 @@ HTTP client log enrichers differ from general-purpose log enrichers (<xref:Micro
 
 - The `Enrich` method is called exactly once during the HTTP request/response lifecycle for each registered enricher to add custom tags to the HTTP client logs.
 - The `request` parameter is always provided and will never be `null`.
-- The `response` parameter may be `null` if the request failed before receiving a response.
-- The `exception` parameter may be `null` if no exception occurred during the request processing.
+- The `response` parameter might be `null` if the request failed before receiving a response.
+- The `exception` parameter might be `null` if no exception occurred during the request processing.
 - Multiple enrichers can be registered for the same HTTP client and will be executed in the order they were registered.
 - HTTP client log enrichers are executed as part of the extended HTTP client logging infrastructure provided by the `Microsoft.Extensions.Http.Diagnostics` package.
 

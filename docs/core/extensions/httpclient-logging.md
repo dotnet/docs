@@ -183,7 +183,7 @@ The <xref:Microsoft.Extensions.Http.Logging.LoggingOptions> class provides the f
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `LogRequestStart` | `bool` | `false` | When `true`, logs the request before processing starts. When `false`, logs a single entry with both request and response data. |
-| `LogBody` | `bool` | `false` | Enable logging of HTTP request and response bodies. **Warning**: Avoid enabling in production as it may leak privacy information. |
+| `LogBody` | `bool` | `false` | Enables logging of HTTP request and response bodies. **Warning**: Avoid enabling in production as it might leak sensitive information. |
 | `BodySizeLimit` | `int` | 32,768 (≈32KB) | Maximum number of bytes to read from request or response body. Keep below 85,000 bytes to avoid [large object heap](../../standard/garbage-collection/large-object-heap.md) allocation. |
 | `BodyReadTimeout` | `TimeSpan` | 1 second | Maximum time to wait when reading request or response body. Must be between 1 millisecond and 1 minute. |
 | `RequestBodyContentTypes` | `ISet<string>` | Empty | HTTP request content types considered text and eligible for serialization. |
@@ -285,7 +285,7 @@ builder.Services.AddExtendedHttpClientLogging(options =>
 ```
 
 > [!CAUTION]
-> Disabling path redaction may expose sensitive information in logs. Only use `HttpRouteParameterRedactionMode.None` in development or when you're certain paths don't contain sensitive data.
+> Disabling path redaction might expose sensitive information in logs. Only use `HttpRouteParameterRedactionMode.None` in development or when you're certain paths don't contain sensitive data.
 
 ## Performance considerations
 

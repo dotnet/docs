@@ -1142,9 +1142,6 @@ items:
               - name: HTTP client factory
                 href: ../core/extensions/httpclient-factory.md
                 displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
-              - name: HTTP client logging
-                href: ../core/extensions/httpclient-logging.md
-                displayName: httpclient,http,client,logging
               - name: Monitor and analyze HTTP client performance
                 href: ../core/extensions/httpclient-latency-extensions.md
                 displayName: httpclient,http,client,factory,dependency injection,keyed,keyed di,keyed services
@@ -1223,6 +1220,9 @@ items:
               - name: Distributed tracing
                 href: networking/telemetry/tracing.md
                 displayName: networking distributed tracing
+              - name: HTTP client logging
+                href: ../core/extensions/httpclient-logging.md
+                displayName: http client logging
               - name: Events
                 href: networking/telemetry/events.md
                 displayName: networking events

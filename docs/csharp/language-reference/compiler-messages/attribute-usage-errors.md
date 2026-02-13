@@ -101,7 +101,7 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter '{0}' has type '{1}', which is not a valid attribute parameter type*
+- [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter has a type, which is not a valid attribute parameter type*
 - [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method.*
 - [**CS0404**](#attribute-class-requirements): *Attribute is not valid on this declaration type.*
 - [**CS0415**](#predefined-attributes): *This attribute is valid only on an indexer that is not an explicit interface member declaration.*
@@ -109,30 +109,30 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0447**](#attribute-arguments-and-parameters): *Attribute cannot be used with type arguments.*
 - [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation.*
 - [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void.*
-- [**CS0579**](#attribute-class-requirements): *Duplicate '{0}' attribute*
+- [**CS0579**](#attribute-class-requirements): *Duplicate attribute*
 - [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members.*
-- [**CS0592**](#attribute-location-context): *Attribute '{0}' is not valid on this declaration type. It is only valid on '{1}' declarations.*
+- [**CS0592**](#attribute-location-context): *Attribute is not valid on this declaration type. It is only valid on specific declarations.*
 - [**CS0609**](#predefined-attributes): *Cannot set the attribute on an indexer marked override.*
-- [**CS0616**](#attribute-class-requirements): *'{0}' is not an attribute class*
+- [**CS0616**](#attribute-class-requirements): *Type is not an attribute class*
 - [**CS0625**](#predefined-attributes): *Instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute.*
 - [**CS0629**](#conditional-attribute-usage): *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'.*
 - [**CS0636**](#predefined-attributes): *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit).*
 - [**CS0637**](#predefined-attributes): *The FieldOffset attribute is not allowed on static or const fields.*
 - [**CS0641**](#attribute-class-requirements): *This attribute is only valid on classes derived from System.Attribute`.*
 - [**CS0646**](#predefined-attributes): *Cannot specify the DefaultMember attribute on a type containing an indexer.*
-- [**CS0647**](#attribute-arguments-and-parameters): *Error emitting '{0}' attribute -- '{1}'*
+- [**CS0647**](#attribute-arguments-and-parameters): *Error emitting attribute*
 - [**CS0653**](#attribute-class-requirements): *Cannot apply attribute class 'class' because it is abstract.*
 - [**CS0657**](#attribute-location-context): *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - [**CS0658**](#attribute-location-context): *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - [**CS0668**](#predefined-attributes): *Two indexers have different names; the IndexerName attribute must be used with the same name on every indexer within a type*
 - [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter.*
 - [**CS0735**](#predefined-attributes): *Invalid type specified as an argument for TypeForwardedTo attribute*
-- [**CS0739**](#predefined-attributes): *'{0}' duplicate TypeForwardedToAttribute*
+- [**CS0739**](#predefined-attributes): *Duplicate TypeForwardedToAttribute*
 - [**CS1608**](#predefined-attributes): *The RequiredAttribute attribute is not permitted on C# types*
-- [**CS1614**](#attribute-class-requirements): *'{0}' is ambiguous between '{1}' and '{2}'. Either use '@{0}' or explicitly include the 'Attribute' suffix.*
-- [**CS1618**](#conditional-attribute-usage): *Cannot create delegate with '{0}' because it or a method it overrides has a Conditional attribute*
-- [**CS1667**](#attribute-location-context): *Attribute '{0}' is not valid on property or event accessors. It is only valid on '{1}' declarations.*
-- [**CS1689**](#conditional-attribute-usage): *Attribute '{0}' is only valid on methods or attribute classes*
+- [**CS1614**](#attribute-class-requirements): *Attribute name is ambiguous. Either use '@name' or explicitly include the 'Attribute' suffix.*
+- [**CS1618**](#conditional-attribute-usage): *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
+- [**CS1667**](#attribute-location-context): *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
+- [**CS1689**](#conditional-attribute-usage): *Attribute is only valid on methods or attribute classes*
 - [**CS7014**](#attribute-location-context): *Attributes are not valid in this context.*
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*

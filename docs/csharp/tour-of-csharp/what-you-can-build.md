@@ -36,11 +36,11 @@ Get started: [ASP.NET Core tutorials](/aspnet/core/tutorials)
 
 ## Desktop applications
 
-C# supports building desktop applications for Windows and macOS:
+Use C# to build Windows desktop apps, and cross-platform desktop apps that run on Windows and macOS:
 
 - **[.NET MAUI](/dotnet/maui/)** creates cross-platform desktop apps that run on Windows, macOS, Android, and iOS from a single codebase.
-- **[Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)** builds rich Windows desktop apps with advanced graphics and data binding.
-- **[Windows Forms](/dotnet/desktop/winforms/)** provides a straightforward way to create Windows desktop apps with a visual designer.
+- **[Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)** builds rich Windows-only desktop apps with advanced graphics and data binding.
+- **[Windows Forms](/dotnet/desktop/winforms/)** provides a straightforward way to create Windows-only desktop apps with a visual designer.
 
 Get started: [.NET MAUI tutorials](/dotnet/maui/get-started/first-app)
 

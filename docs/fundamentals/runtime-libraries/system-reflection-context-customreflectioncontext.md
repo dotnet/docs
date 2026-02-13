@@ -29,6 +29,6 @@ To add properties to a reflected type, override the <xref:System.Reflection.Cont
 
 ## Example
 
-The following example demonstrates how to subclass <xref:System.Reflection.Context.CustomReflectionContext> to add a custom attribute to all the members of a given type whose names begin with "To". To run this code, paste it into an empty console project, and make sure to include a reference to System.Reflection.Context.dll.
+The following example demonstrates how to subclass <xref:System.Reflection.Context.CustomReflectionContext> to add a custom attribute to all the members of a given type whose names begin with "To". To run this code, paste it into an empty console project and add a reference to the `System.Reflection.Context` NuGet package.
 
 :::code language="csharp" source="./snippets/system-reflection-context-customreflectioncontext/csharp/program.cs" id="Snippet1":::

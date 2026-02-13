@@ -162,7 +162,7 @@ You see the following errors when you use attribute arguments or parameters inco
 
 To correct these errors, follow these rules:
 
-- Attribute constructor parameters must use valid attribute parameter types (**CS0181**). The C# language specification restricts attribute parameter types to primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers and other types that can't be represented in metadata aren't valid attribute parameter types.
+- Attribute constructor parameters must use valid attribute parameter types (**CS0181**). The C# language specification restricts attribute parameter types to primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, and `string`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers and other types that can't be represented in metadata aren't valid attribute parameter types.
 - Attribute arguments must be compile-time constant values, so you can't use type parameters as attribute arguments (**CS0416**). The compiler must resolve attribute arguments at compile time, and type parameters aren't known until the generic type is constructed.
 - You can't apply type arguments to a non-generic attribute (**CS0447**). If an attribute class isn't generic, its usage can't include type arguments in angle brackets.
 - All values passed to an attribute constructor must be correctly formatted and within the valid range for each parameter (**CS0647**). For example, a <xref:System.Runtime.InteropServices.GuidAttribute> requires a valid GUID format string.

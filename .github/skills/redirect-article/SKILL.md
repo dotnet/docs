@@ -22,9 +22,17 @@ Delete a markdown article from the repository and create a redirect entry that p
 
 1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`.
 2. **Create a redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the appropriate JSON file. Do not manually edit the JSON file.
-3. **Update internal links** - Search the repository for links to the old article and update them with `grep_search` and `replace_string_in_file`.
+3. **Update internal links** - Search the repository for links to the old article and update them to point to the new article.
 
 ## Redirection File Selection
+
+To determine the correct redirection file for an article:
+
+1. **Search for existing redirects** - Search the `.openpublishing.redirection.*.json` files for entries with paths similar to your source article (same folder or parent folder).
+2. **Match by path prefix** - Use the redirection file that contains entries with the longest matching path prefix to your source article.
+3. **Use the reference table** - If no existing entries match, consult the table below based on the content area.
+
+**Reference table:**
 
 | Product Area | Redirection File |
 |--------------|------------------|
@@ -51,15 +59,15 @@ Delete a markdown article from the repository and create a redirect entry that p
 
 ### create-redirect-entry.ps1
 
-**ALWAYS use this script to add redirect entries.** This script automatically adds the entry to the correct JSON file in alphabetical order and handles formatting.
+**ALWAYS use this script to add redirect entries.** This script adds the entry in alphabetical order and handles formatting. It supports both `source_path_from_root` and `source_path` properties when reading existing entries.
 
 Location (relative to this skill file): `./scripts/create-redirect-entry.ps1`
 
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `RedirectionFile` | No | `.openpublishing.redirection.json` | The redirection JSON file name |
-| `SourcePath` | Yes | - | Repository path of the deleted article |
-| `RedirectUrl` | Yes | - | Destination URL to redirect to |
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `RedirectionFile` | Yes | The redirection JSON file name (e.g., `.openpublishing.redirection.csharp.json`) |
+| `SourcePath` | Yes | Repository path of the deleted article (with or without leading `/`) |
+| `RedirectUrl` | Yes | Destination URL to redirect to |
 
 **Example:**
 
@@ -74,16 +82,20 @@ Location (relative to this skill file): `./scripts/create-redirect-entry.ps1`
 
 ```json
 {
-    "source_path": "docs/csharp/fundamentals/old-article.md",
+    "source_path_from_root": "/docs/csharp/fundamentals/old-article.md",
     "redirect_url": "/dotnet/csharp/fundamentals/new-article"
 }
 ```
 
-- **source_path**: File path relative to the repository root (the deleted file's location)
+- **source_path_from_root**: File path from the repository root, starting with `/` (preferred property)
+- **source_path**: Legacy property without leading `/` (some older files use this)
 - **redirect_url**: URL path to redirect to (starts with `/dotnet/`)
+
+> **Note:** The script handles both `source_path_from_root` and `source_path` when reading existing entries, but always writes new entries using `source_path_from_root`.
 
 ## Important Notes
 
-- Redirect entries are sorted **alphabetically** by `source_path` in the JSON file.
+- Redirect entries are sorted **alphabetically** by path (ignoring the leading `/` for `source_path_from_root`).
+- Always determine the correct redirection file by searching for existing entries with similar paths before running the script.
 - Always search the repository for links to the old article and update them.
 - The `redirect_url` shouldn't include the file extension or domain—just the URL path.

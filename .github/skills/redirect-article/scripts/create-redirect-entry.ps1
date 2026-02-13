@@ -3,31 +3,29 @@
     Adds a new redirection entry to an Open Publishing redirection JSON file.
 
 .DESCRIPTION
-    This script finds a redirection JSON file in the root of the current repository
-    and adds a new redirection entry. The entry is inserted alphabetically by source_path.
+    This script adds a new redirection entry to the specified JSON file. The entry
+    is inserted alphabetically by path. The script handles both 'source_path_from_root'
+    (preferred) and 'source_path' properties when reading existing entries.
 
 .PARAMETER RedirectionFile
-    The name of the redirection JSON file. Defaults to '.openpublishing.redirection.json'.
+    The name of the redirection JSON file (e.g., '.openpublishing.redirection.csharp.json').
 
 .PARAMETER SourcePath
     The source path of the article being redirected (relative to repo root).
-    Example: 'dotnet-desktop-guide/wpf/controls/old-article.md'
+    Example: 'docs/csharp/fundamentals/old-article.md'
 
 .PARAMETER RedirectUrl
     The destination URL to redirect to.
-    Example: '/dotnet/desktop/wpf/controls/new-article'
+    Example: '/dotnet/csharp/fundamentals/new-article'
 
 .EXAMPLE
-    .\create-redirect-entry.ps1 -SourcePath "dotnet-desktop-guide/wpf/controls/old-article.md" -RedirectUrl "/dotnet/desktop/wpf/controls/new-article"
-
-.EXAMPLE
-    .\create-redirect-entry.ps1 -RedirectionFile ".openpublishing.redirection.winforms.json" -SourcePath "dotnet-desktop-guide/winforms/controls/old-control.md" -RedirectUrl "/dotnet/desktop/winforms/controls/new-control"
+    .\create-redirect-entry.ps1 -RedirectionFile ".openpublishing.redirection.csharp.json" -SourcePath "docs/csharp/fundamentals/old-article.md" -RedirectUrl "/dotnet/csharp/fundamentals/new-article"
 #>
 
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $false)]
-    [string]$RedirectionFile = ".openpublishing.redirection.json",
+    [Parameter(Mandatory = $true)]
+    [string]$RedirectionFile,
 
     [Parameter(Mandatory = $true)]
     [string]$SourcePath,
@@ -38,10 +36,10 @@ param(
 
 # Find the root of the git repository
 function Get-GitRepoRoot {
-    $currentPath = Get-Location
+    $currentPath = (Get-Location).Path
     while ($currentPath -ne $null) {
         if (Test-Path (Join-Path $currentPath ".git")) {
-            return $currentPath.Path
+            return $currentPath
         }
         $parentPath = Split-Path $currentPath -Parent
         if ($parentPath -eq $currentPath) {
@@ -52,21 +50,42 @@ function Get-GitRepoRoot {
     return $null
 }
 
+# Get the source path from a redirection entry (handles both properties)
+function Get-EntrySourcePath {
+    param($Entry)
+    if ($Entry.source_path_from_root) {
+        return $Entry.source_path_from_root
+    }
+    return $Entry.source_path
+}
+
+# Normalize a path for comparison (strip leading /)
+function Get-NormalizedPath {
+    param([string]$Path)
+    return $Path.TrimStart('/')
+}
+
 # Main script logic
 try {
-    # Find repo root
-    $repoRoot = Get-GitRepoRoot
-    if (-not $repoRoot) {
-        Write-Error "Could not find git repository root. Make sure you're running this script from within a git repository."
-        exit 1
+    # Normalize SourcePath (remove leading / if present for consistent handling)
+    $normalizedSourcePath = Get-NormalizedPath -Path $SourcePath
+
+    # Determine the redirection file path
+    if ([System.IO.Path]::IsPathRooted($RedirectionFile)) {
+        # Absolute path provided
+        $redirectionFilePath = $RedirectionFile
+    }
+    else {
+        # Relative path - find repo root and join
+        $repoRoot = Get-GitRepoRoot
+        if (-not $repoRoot) {
+            Write-Error "Could not find git repository root. Make sure you're running this script from within a git repository."
+            exit 1
+        }
+        Write-Host "Repository root: $repoRoot" -ForegroundColor Cyan
+        $redirectionFilePath = Join-Path $repoRoot $RedirectionFile
     }
 
-    Write-Host "Repository root: $repoRoot" -ForegroundColor Cyan
-
-    # Build full path to redirection file
-    $redirectionFilePath = Join-Path $repoRoot $RedirectionFile
-
-    # Check if file exists
     if (-not (Test-Path $redirectionFilePath)) {
         Write-Error "Redirection file not found: $redirectionFilePath"
         exit 1
@@ -83,27 +102,32 @@ try {
         exit 1
     }
 
-    # Check if entry already exists
-    $existingEntry = $jsonContent.redirections | Where-Object { $_.source_path -eq $SourcePath }
+    # Check if entry already exists (check both source_path_from_root and source_path)
+    $sourcePathWithRoot = "/$normalizedSourcePath"
+    $existingEntry = $jsonContent.redirections | Where-Object { 
+        (Get-NormalizedPath -Path (Get-EntrySourcePath -Entry $_)) -eq $normalizedSourcePath
+    }
     if ($existingEntry) {
-        Write-Warning "A redirection entry for '$SourcePath' already exists."
+        $existingPath = Get-EntrySourcePath -Entry $existingEntry
+        Write-Warning "A redirection entry for '$existingPath' already exists."
         Write-Warning "Existing redirect_url: $($existingEntry.redirect_url)"
         exit 1
     }
 
-    # Create new redirection entry
+    # Create new redirection entry using source_path_from_root (preferred)
     $newEntry = [PSCustomObject]@{
-        source_path  = $SourcePath
-        redirect_url = $RedirectUrl
+        source_path_from_root = $sourcePathWithRoot
+        redirect_url          = $RedirectUrl
     }
 
     # Convert redirections to a list for easier manipulation
     $redirectionsList = [System.Collections.ArrayList]@($jsonContent.redirections)
 
-    # Find the correct position to insert (alphabetically by source_path)
+    # Find the correct position to insert (alphabetically by normalized path)
     $insertIndex = 0
     for ($i = 0; $i -lt $redirectionsList.Count; $i++) {
-        if ($redirectionsList[$i].source_path -gt $SourcePath) {
+        $existingNormalizedPath = Get-NormalizedPath -Path (Get-EntrySourcePath -Entry $redirectionsList[$i])
+        if ($existingNormalizedPath -gt $normalizedSourcePath) {
             $insertIndex = $i
             break
         }
@@ -117,7 +141,6 @@ try {
     $jsonContent.redirections = $redirectionsList.ToArray()
 
     # Convert back to JSON with proper formatting
-    # Use a custom approach to match the existing file format
     $jsonOutput = $jsonContent | ConvertTo-Json -Depth 10
 
     # Write the updated JSON back to the file
@@ -125,7 +148,7 @@ try {
 
     Write-Host ""
     Write-Host "Successfully added redirection entry:" -ForegroundColor Green
-    Write-Host "  Source:      $SourcePath" -ForegroundColor White
+    Write-Host "  Source:      $sourcePathWithRoot" -ForegroundColor White
     Write-Host "  Redirect to: $RedirectUrl" -ForegroundColor White
     Write-Host "  Inserted at index: $insertIndex" -ForegroundColor Gray
     Write-Host ""

@@ -208,7 +208,7 @@ The following errors occur when you apply attributes in invalid locations or use
 - **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
 
-To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#2223-attribute-specification).
+To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
 
 - Each attribute's <xref:System.AttributeUsageAttribute> specifies which declaration types it targets. You must apply the attribute only to those types (**CS0592**). For example, you can't apply an attribute defined with `AttributeTargets.Interface` to a class.
 - When you use an attribute target specifier such as `method:` or `property:`, the specifier must be valid for the declaration where it appears (**CS0657**). Check the error message to see which target specifiers are allowed for the specific declaration.
@@ -259,7 +259,7 @@ You see the following errors when you apply the <xref:System.Diagnostics.Conditi
 - **CS1618**: *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
 - **CS1689**: *Attribute is only valid on methods or attribute classes*
 
-To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute>, [Conditional methods](~/_csharpstandard/standard/attributes.md#22532-conditional-methods), and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
+To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute>, [Conditional methods](~/_csharpstandard/standard/attributes.md#23532-conditional-methods), and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
 
 - The compiler binds calls to the base method declaration, not the override, so you can't apply the `Conditional` attribute to [override](../keywords/override.md) methods (**CS0243**). Remove the `Conditional` attribute from the override method, or remove the `override` keyword.
 - The `Conditional` attribute isn't valid on constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, lambda expressions, or explicit interface implementations (**CS0577**). These member types can't be conditionally omitted because they have required roles in the type's lifecycle or contract.

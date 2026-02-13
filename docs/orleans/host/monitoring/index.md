@@ -315,7 +315,7 @@ The following table shows a collection of transaction meters used to monitor the
 | `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of failed transactions. |
 | `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of throttled transactions. |
 
-### Exporting metrics
+### Export metrics
 
 Various third-party metrics providers are available for use with Orleans. You can export metrics from your app using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/), which is supported by many observability platforms including [Prometheus](https://prometheus.io), Grafana, and Azure Monitor.
 

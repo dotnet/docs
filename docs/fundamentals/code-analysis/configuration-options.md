@@ -1,7 +1,7 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
-ms.date: 12/06/2021
+ms.date: 02/13/2026
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
@@ -30,7 +30,7 @@ For additional options, see [Code analysis properties](../../core/project-sdk/ms
 
 ### Analysis mode
 
-While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
+While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
 
 ```xml
 <PropertyGroup>

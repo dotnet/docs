@@ -8,12 +8,12 @@ namespace ConsoleApplication1
 {
     //<Snippet1>
     //A blank example attribute.
-    class myAttribute : Attribute
+    class MyAttribute : Attribute
     {
     }
 
     //Reflection context with custom rules.
-    class myCRC : CustomReflectionContext
+    class MyCustomReflectionContext : CustomReflectionContext
     {
         //Called whenever the reflection context checks for custom attributes.
         protected override IEnumerable<object> GetCustomAttributes(MemberInfo member, IEnumerable<object> declaredAttributes)
@@ -21,7 +21,7 @@ namespace ConsoleApplication1
             //Add example attribute to "To*" members.
             if (member.Name.StartsWith("To"))
             {
-                yield return new myAttribute();
+                yield return new MyAttribute();
             }
             //Keep existing attributes as well.
             foreach (var attr in declaredAttributes) yield return attr;
@@ -32,7 +32,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            myCRC mc = new myCRC();
+            MyCustomReflectionContext mc = new MyCustomReflectionContext();
             Type t = typeof(String);
 
             //A representation of the type in the default reflection context.
@@ -68,7 +68,7 @@ namespace ConsoleApplication1
             //The same member in the custom reflection context.
             mi1 = myTI.GetDeclaredMethods("ToString").FirstOrDefault();
 
-            //All its attributes, for comparison.  myAttribute is now included.
+            //All its attributes, for comparison.  MyAttribute is now included.
             Console.WriteLine("'ToString' Attributes in Custom Reflection Context:");
             foreach (Attribute cd in mi1.GetCustomAttributes())
             {

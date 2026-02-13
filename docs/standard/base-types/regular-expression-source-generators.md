@@ -22,7 +22,7 @@ There are several downsides to `RegexOptions.Compiled`. The most impactful is th
 
 ## Source generation
 
-.NET 7 introduced a new `RegexGenerator` source generator. A *source generator* is a component that plugs into the compiler and augments the compilation unit with additional source code. The .NET SDK (version 7 and later) includes a source generator that recognizes the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute on a partial method that returns `Regex`. The source generator provides an implementation of that method that contains all the logic for the `Regex`. For example, you previously might have written code like this:
+.NET 7 introduced a new `RegexGenerator` source generator. A *source generator* is a component that plugs into the compiler and augments the compilation unit with additional source code. The .NET SDK (version 7 and later) includes a source generator that recognizes the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute on a partial method that returns `Regex`. Starting with .NET 9, the attribute can also be applied to partial properties. The source generator provides an implementation of that method or property that contains all the logic for the `Regex`. For example, you previously might have written code like this:
 
 ```csharp
 private static readonly Regex s_abcOrDefGeneratedRegex =
@@ -53,6 +53,21 @@ private static void EvaluateText(string text)
 }
 ```
 
+Starting in .NET 9, you can also apply the `GeneratedRegexAttribute` to a partial property instead of a partial method. This is enabled by C# 13's support for partial properties. The following example shows the property equivalent:
+
+```csharp
+[GeneratedRegex("abc|def", RegexOptions.IgnoreCase, "en-US")]
+private static partial Regex AbcOrDefGeneratedRegexProperty { get; }
+
+private static void EvaluateText(string text)
+{
+    if (AbcOrDefGeneratedRegexProperty.IsMatch(text))
+    {
+        // Take action with matching text
+    }
+}
+```
+
 > [!TIP]
 > The `RegexOptions.Compiled` flag is ignored by the source generator, thus it's not needed in the source-generated version.
 
@@ -67,7 +82,7 @@ But as can be seen, it's not just doing `new Regex(...)`. Rather, the source gen
 :::image type="content" source="media/regular-expression-source-generators/debuggable-source.png" lightbox="media/regular-expression-source-generators/debuggable-source.png" alt-text="Debugging through source-generated Regex code":::
 
 > [!TIP]
-> In Visual Studio, right-click on your partial method declaration and select **Go To Definition**. Or, alternatively, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_ to see the generated C# code from this regex generator.
+> In Visual Studio, right-click on your partial method or property declaration and select **Go To Definition**. Or, alternatively, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_ to see the generated C# code from this regex generator.
 
 You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern with your input. The generator even generates [triple-slash (XML) comments](../../csharp/language-reference/xmldoc/index.md) to help make the expression understandable at a glance and where it's used.
 

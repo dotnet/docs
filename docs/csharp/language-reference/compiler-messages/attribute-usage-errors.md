@@ -25,6 +25,13 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8959"
+  - "CS8960"
+  - "CS8961"
+  - "CS8962"
+  - "CS8963"
+  - "CS8968"
+  - "CS8970"
   - "CS9331"
 helpviewer_keywords:
   - "CS0243"
@@ -50,8 +57,15 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8959"
+  - "CS8960"
+  - "CS8961"
+  - "CS8962"
+  - "CS8963"
+  - "CS8968"
+  - "CS8970"
   - "CS9331"
-ms.date: 11/11/2025
+ms.date: 02/13/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -84,6 +98,13 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
+- [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
+- [**CS8962**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
+- [**CS8963**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
+- [**CS8968**](#attribute-arguments-and-parameters): *An attribute type argument cannot use type parameters*
+- [**CS8970**](#attribute-arguments-and-parameters): *Type cannot be used in this context because it cannot be represented in metadata.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
 
 ## Attribute arguments and parameters
@@ -95,6 +116,8 @@ The following errors occur when you use attribute arguments or parameters incorr
 - **CS7046**: *Attribute parameter must be specified.*
 - **CS7047**: *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - **CS7067**: *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- **CS8968**: *An attribute type argument cannot use type parameters*
+- **CS8970**: *Type cannot be used in this context because it cannot be represented in metadata.*
 
 To correct these errors, follow these rules.
 
@@ -102,6 +125,8 @@ To correct these errors, follow these rules.
 - Don't use type arguments with attributes (**CS0447**). Type arguments aren't allowed in attribute usage.
 - Provide all required attribute parameters when you apply the attribute (**CS7046**, **CS7047**). Check the attribute's constructor to see which parameters are mandatory.
 - Specify default values for optional constructor parameters when you define custom attributes (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor.
+- Use concrete types instead of type parameters as generic attribute type arguments (**CS8968**). Generic attributes require type arguments that are fully determined at compile time.
+- Ensure types used in attribute arguments can be represented in metadata (**CS8970**). Some constructed types, such as those involving `dynamic` or certain tuple element names, can't be encoded in metadata and aren't permitted as attribute type arguments.
 
 For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md) and [Generics](../../fundamentals/types/generics.md).
 
@@ -180,3 +205,19 @@ To correct these errors, follow these rules. For more information, see <xref:Sys
 - Remove the `Conditional` attribute from interface member declarations (**CS0582**). Interface members can't be conditional.
 - Remove the `Conditional` attribute from interface member implementations (**CS0629**). Methods implementing interface members can't be conditional.
 - Remove `out` parameters from conditional methods, or remove the `Conditional` attribute (**CS0685**). The `out` variable value would be undefined when the method call is compiled out.
+
+## CallerArgumentExpression attribute usage
+
+The following errors occur when you apply <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> incorrectly or in conflict with other caller info attributes:
+
+- **CS8959**: *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type 2*
+- **CS8960**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- **CS8961**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
+- **CS8962**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
+- **CS8963**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
+
+To correct these errors, follow these rules. For more information, see [Caller information attributes](../../language-reference/attributes/caller-information.md).
+
+- Ensure the parameter type is `string` or has a standard conversion from `string` when applying `CallerArgumentExpression` (**CS8959**). The attribute injects a `string` representation of the caller's argument expression, so the target parameter must be compatible with `string`.
+- Remove `CallerArgumentExpression` from parameters that also have <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, or <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute> (**CS8960**, **CS8961**, **CS8962**). These caller info attributes take precedence over `CallerArgumentExpression`, so the `CallerArgumentExpression` attribute has no effect when combined with them.
+- Specify a valid parameter name in the `CallerArgumentExpression` constructor (**CS8963**). The string argument must match the name of another parameter in the same method signature.

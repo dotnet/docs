@@ -20,6 +20,9 @@ f1_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
+  - "CS8954"
+  - "CS8955"
+  - "CS8956"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -44,6 +47,9 @@ helpviewer_keywords:
   - "CS8914"
   - "CS8915"
   - "CS8933"
+  - "CS8954"
+  - "CS8955"
+  - "CS8956"
   - "CS9130"
   - "CS9131"
   - "CS9132"
@@ -71,6 +77,9 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8085**](#restrictions-on-using-aliases): *Error: A 'using static' directive cannot be used to declare an alias.*
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
 - [**CS8915**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
+- [**CS8954**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
+- [**CS8955**](#global-using-directive): *Error: A file-local type cannot be used in a global using directive.*
+- [**CS8956**](#using-directive-placement): *Error: A using directive must precede all other elements defined in the namespace except extern alias declarations.*
 - [**CS9130**](#restrictions-on-using-aliases): *Error: Using alias cannot be a `ref` type.*
 - [**CS9131**](#restrictions-on-using-aliases): *Error: Only a using alias can be `unsafe`.*
 - [**CS9132**](#restrictions-on-using-aliases): *Error: Using alias cannot be a nullable reference type.*
@@ -107,6 +116,10 @@ The compiler produces warning **CS8933**, **CS0105** or diagnostic **CS8019** fo
 
 Incorrectly combining a `using` directive with the `static`, `global`, or `unsafe` modifiers on a `using` directive are covered later in this article.
 
+The compiler also produces **CS8956** when a using directive doesn't appear before other elements defined in a namespace (except extern alias declarations).
+
+
+
 ## Using static directive
 
 The `using static` directive imports one type's members into the current namespace. The following example imports the methods from `System.Console`, such as `WriteLine` into the current namespace:
@@ -140,6 +153,15 @@ A `global using` directive imports the namespace or type in all source files in 
 Any `global using` directives must precede any non-global `using` directives in that source file, and must not be placed in a `namespace`. Doing so results in **CS8915** and **CS8914**, respectively.
 
 Furthermore, a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
+
+Violating these rules can also produce the following errors:
+
+### CS8954
+A global using directive must precede all non-global using directives.
+
+### CS8955
+A file-local type cannot be used in a global using directive.
+
 
 ## Alias qualifier
 

@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 02/04/2026
+ms.date: 02/13/2026
 f1_keywords:
   - "CS0190"
   - "CS0257"
@@ -80,13 +80,11 @@ f1_keywords:
   - "CS7006"
   - "CS7012"
   - "CS7013"
-  - "CS7015"
   - "CS7016"
   - "CS7017"
   - "CS7018"
   - "CS7019"
   - "CS7020"
-  - "CS7021"
   - "CS7022" # build only diagnostic
   - "CS7024"
   - "CS7025"
@@ -159,7 +157,6 @@ f1_keywords:
   - "CS8016"
   - "CS8017"
   - "CS8018"
-  - "CS8020"
   - "CS8021"
   - "CS8027"
   - "CS8028"
@@ -427,9 +424,6 @@ f1_keywords:
   - "CS8935"
   - "CS8937"
   - "CS8940"
-  - "CS8954"
-  - "CS8955"
-  - "CS8956"
   - "CS8959"
   - "CS8960"
   - "CS8961"

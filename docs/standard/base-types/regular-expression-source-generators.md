@@ -22,7 +22,7 @@ There are several downsides to `RegexOptions.Compiled`. The most impactful is th
 
 ## Source generation
 
-.NET 7 introduced a new `RegexGenerator` source generator. A *source generator* is a component that plugs into the compiler and augments the compilation unit with additional source code. The .NET SDK (version 7 and later) includes a source generator that recognizes the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute on a partial method that returns `Regex`. Starting in .NET 9, the attribute can also be applied to partial properties. The source generator provides an implementation of that method or property that contains all the logic for the `Regex`. For example, you previously might have written code like this:
+.NET 7 introduced a new `RegexGenerator` source generator. A *source generator* is a component that plugs into the compiler and augments the compilation unit with additional source code. The .NET SDK includes a source generator that recognizes the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute on a partial method that returns `Regex`. Starting in .NET 9, the attribute can also be applied to partial properties. The source generator provides an implementation of that method or property that contains all the logic for the `Regex`. For example, you previously might have written code like this:
 
 ```csharp
 private static readonly Regex s_abcOrDefGeneratedRegex =

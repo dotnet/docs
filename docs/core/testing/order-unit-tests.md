@@ -105,18 +105,16 @@ namespace OrderUnitTests.TUnit;
 public class DependencyOrderedTests
 {
     [Test]
-    public async Task FirstTest()
+    public void FirstTest()
     {
         // This test runs first
-        await Task.CompletedTask;
     }
 
     [Test]
     [DependsOn(nameof(FirstTest))]
-    public async Task SecondTest()
+    public void SecondTest()
     {
         // This test runs after FirstTest completes
-        await Task.CompletedTask;
     }
 }
 ```
@@ -134,7 +132,7 @@ When depending on overloaded test methods, specify the parameter types explicitl
 ```csharp
 [Test]
 [DependsOn(nameof(SetupTest), [typeof(string), typeof(int)])]
-public async Task DependentTest()
+public void DependentTest()
 {
     // This test runs after SetupTest(string, int) completes
 }

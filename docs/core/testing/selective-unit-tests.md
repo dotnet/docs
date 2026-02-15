@@ -243,12 +243,12 @@ namespace TUnitNamespace
     public class UnitTest1
     {
         [Test, Property("Priority", "1"), Category("CategoryA")]
-        public async Task TestMethod1()
+        public void TestMethod1()
         {
         }
 
         [Test, Property("Priority", "2")]
-        public async Task TestMethod2()
+        public void TestMethod2()
         {
         }
     }

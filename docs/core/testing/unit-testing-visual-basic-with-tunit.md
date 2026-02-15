@@ -10,6 +10,8 @@ ai-usage: ai-assisted
 
 This tutorial shows how to build a solution containing a unit test project and library project step-by-step.
 
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
+
 ## Prerequisites
 
 TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) and does not support VSTest.
@@ -173,7 +175,7 @@ Namespace PrimeService.Tests
 End Namespace
 ```
 
-The `[Test]` attribute marks a method as a test that's run by the test runner.
+The `<Test>` attribute marks a method as a test that's run by the test runner.
 
 From the *PrimeService.Tests* folder, run `dotnet test`. The [dotnet test](../tools/dotnet-test.md) command builds both projects and runs the tests. The TUnit test runner uses Microsoft.Testing.Platform to execute the tests.
 
@@ -238,7 +240,7 @@ Public Function IsPrime(candidate As Integer) As Boolean
 End Function
 ```
 
-Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-vb-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.vb) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-vb-dotnet-test/PrimeService/PrimeService.vb).
+Following the TDD approach, add more failing tests, then update the target code.
 
 The completed `IsPrime` method is not an efficient algorithm for testing primality.
 

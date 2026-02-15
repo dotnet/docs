@@ -168,7 +168,7 @@ In this section, the focus is on data collector tools.
 .NET provides two different testing platforms, each with its own code coverage approach:
 
 - **VSTest-based frameworks** (MSTest, NUnit, xUnit) - Can use either the built-in .NET code coverage collector or [Coverlet](https://github.com/coverlet-coverage/coverlet), an open-source alternative.
-- **Microsoft.Testing.Platform-based frameworks** (TUnit, MSTest runner, NUnit runner, xUnit runner) - Use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md).
+- **Microsoft.Testing.Platform-based frameworks** (MSTest runner, NUnit runner, TUnit, xUnit runner) - Use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md).
 
 The built-in .NET code coverage data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file isn't human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
 
@@ -179,7 +179,7 @@ Coverlet generates test results as human-readable Cobertura XML files, which can
 
 ## Code coverage with VSTest
 
-VSTest is the traditional testing platform used by MSTest, NUnit, and xUnit. For VSTest-based projects, you can use either Coverlet or the built-in .NET code coverage collector.
+VSTest is a testing platform used by MSTest, NUnit, and xUnit. For VSTest-based projects, you can use either Coverlet or the built-in .NET code coverage collector.
 
 ### Using Coverlet with VSTest
 
@@ -306,13 +306,13 @@ After running this command, an HTML file represents the generated report.
 
 ## Code coverage with Microsoft.Testing.Platform
 
-[Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) is the modern testing platform for .NET. Frameworks built on this platform use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md) for code coverage.
+[Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) is a lightweight and portable alternative to VSTest for running tests. Frameworks built on this platform use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md) for code coverage.
 
 The following frameworks support Microsoft.Testing.Platform:
 - **MSTest** (via MSTest runner)
 - **NUnit** (via NUnit runner)
-- **xUnit** (via xUnit runner)
 - **TUnit**
+- **xUnit** (via xUnit runner)
 
 ### Setting up code coverage with Microsoft.Testing.Platform
 
@@ -364,6 +364,7 @@ For detailed information about using Microsoft.Testing.Platform with specific fr
 - [Unit testing with MSTest runner](unit-testing-mstest-runner-intro.md)
 - [Unit testing with NUnit runner](unit-testing-nunit-runner-intro.md)
 - [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md)
+- [Microsoft Testing Platform with xUnit.net](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)
 
 ## See also
 

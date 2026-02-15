@@ -10,6 +10,8 @@ ai-usage: ai-assisted
 
 This tutorial shows how to build a solution containing a unit test project and source code project step-by-step.
 
+[!INCLUDE [testing an ASP.NET Core project from .NET](../../../includes/core-testing-note-aspnet.md)]
+
 ## Prerequisites
 
 TUnit is built entirely on [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) and does not support VSTest.
@@ -244,7 +246,7 @@ public bool IsPrime(int candidate)
 }
 ```
 
-Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
+Following the TDD approach, add more failing tests, then update the target code.
 
 The completed `IsPrime` method isn't an efficient algorithm for testing primality.
 

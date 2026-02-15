@@ -202,9 +202,9 @@ Dim result As Boolean = _primeService.IsPrime(1)
 Await Assert.That(result).IsFalse()
 ```
 
-Copying test code when only a parameter changes results in code duplication and test bloat. TUnit provides the `[Arguments]` attribute to specify different input values for the same test logic:
+Copying test code when only a parameter changes results in code duplication and test bloat. TUnit provides the `<Arguments>` attribute to specify different input values for the same test logic:
 
-Rather than creating new tests, apply the `[Arguments]` attribute to create parameterized tests. Replace the following code:
+Rather than creating new tests, apply the `<Arguments>` attribute to create parameterized tests. Replace the following code:
 
 ```vb
 <Test>
@@ -227,7 +227,7 @@ Public Async Function IsPrime_ValuesLessThan2_ReturnFalse(ByVal value As Integer
 End Function
 ```
 
-In the preceding code, `[Arguments]` enables testing several values less than two. Two is the smallest prime number. Each `[Arguments]` attribute generates a separate test case, and TUnit executes these tests in parallel by default.
+In the preceding code, `<Arguments>` enables testing several values less than two. Two is the smallest prime number.
 
 Run `dotnet test`, two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
 

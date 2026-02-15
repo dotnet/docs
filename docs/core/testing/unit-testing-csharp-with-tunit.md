@@ -151,6 +151,7 @@ Update the *PrimeService.Tests* project:
 * Replace the code in *PrimeService_IsPrimeShould.cs* with the following code:
 
   ```csharp
+  using TUnit.Core;
   using TUnit.Assertions;
   using TUnit.Assertions.Extensions;
   using Prime.Services;
@@ -231,7 +232,7 @@ public async Task IsPrime_ValuesLessThan2_ReturnFalse(int value)
 }
 ```
 
-In the preceding code, `[Arguments]` enables testing several values less than two. Two is the smallest prime number. Each `[Arguments]` attribute generates a separate test case, and TUnit executes these tests in parallel by default.
+In the preceding code, `[Arguments]` enables testing several values less than two. Two is the smallest prime number.
 
 Run `dotnet test`, and two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
 

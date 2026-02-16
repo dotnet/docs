@@ -3,7 +3,6 @@ title: Orleans silo lifecycles
 description: Learn about .NET Orleans silo lifecycles.
 ms.date: 01/22/2026
 ms.topic: overview
-zone_pivot_groups: orleans-version
 ---
 
 # Orleans silo lifecycle overview

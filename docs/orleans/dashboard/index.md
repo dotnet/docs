@@ -275,11 +275,27 @@ If the `/Trace` endpoint returns 403 Forbidden:
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0,orleans-3-x"
+:::zone target="docs" pivot="orleans-9-0"
 
-The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For earlier versions, consider using:
+The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. Orleans 9.0 doesn't include a dashboard package.
+
+- **OpenTelemetry integration**: Built-in observability features are available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
+
+The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For Orleans 7.0 and 8.0, consider using:
 
 - **[OrleansDashboard (community)](https://github.com/OrleansContrib/OrleansDashboard)**: A community-maintained dashboard for Orleans 3.x through 8.x.
-- **OpenTelemetry integration**: Built-in observability features available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
+- **OpenTelemetry integration**: Built-in observability features are available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For Orleans 3.x, use the community dashboard package:
+
+- **[OrleansDashboard (community)](https://github.com/OrleansContrib/OrleansDashboard)**: A community-maintained dashboard for Orleans 3.x through 8.x.
 
 :::zone-end

@@ -13,7 +13,7 @@ zone_pivot_groups: orleans-version
 
 This page provides general guidelines for troubleshooting common Orleans deployment issues.
 
-## The <xref:Orleans.Runtime.SiloUnavailableException>
+## SiloUnavailableException
 
 This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when:
 

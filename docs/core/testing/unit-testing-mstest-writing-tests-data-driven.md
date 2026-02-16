@@ -22,7 +22,7 @@ MSTest provides several attributes for data-driven testing:
 
 MSTest also provides the following types to extend data-driven scenarios:
 
-- [`TestDataRow<T>`](#testdatarow): A return type for `DynamicData` sources that adds metadata support such as display names, categories, and ignore messages to individual test cases.
+- [`TestDataRow<T>`](#testdatarow): A return type for `ITestDataSource` implementations (including `DynamicData`) that adds metadata support such as display names, categories, and ignore messages to individual test cases.
 - [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
 > [!TIP]
@@ -345,18 +345,18 @@ public class TestDataRowExample
 
     public static IEnumerable<TestDataRow<(int, string)>> GetTestDataRows()
     {
-        yield return new TestDataRow((1, "first"))
+        yield return new TestDataRow<(int, string)>((1, "first"))
         {
             DisplayName = "Test Case 1: Basic scenario",
         };
 
-        yield return new TestDataRow((2, "second"))
+        yield return new TestDataRow<(int, string)>((2, "second"))
         {
             DisplayName = "Test Case 2: Edge case",
             TestCategories = ["HighPriority", "Critical"],
         };
 
-        yield return new TestDataRow((3, "third"))
+        yield return new TestDataRow<(int, string)>((3, "third"))
         {
             IgnoreMessage = "Not yet implemented",
         };

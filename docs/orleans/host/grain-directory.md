@@ -25,13 +25,7 @@ Orleans provides several grain directory implementations:
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-8-0,orleans-7-0"
-
-By default, Orleans uses a built-in distributed in-cluster directory. This directory is eventually consistent and partitioned across all silos in the cluster in the form of a distributed hash table.
-
-:::zone-end
-
-:::zone target="docs" pivot="orleans-3-x"
+:::zone target="docs" pivot="orleans-8-0,orleans-7-0,orleans-3-x"
 
 By default, Orleans uses a built-in distributed in-cluster directory. This directory is eventually consistent and partitioned across all silos in the cluster in the form of a distributed hash table.
 
@@ -52,7 +46,7 @@ We recommend always starting with the default directory (the built-in distribute
 
 When you have some experience with Orleans and have a use case requiring a stronger single-activation guarantee, or if you want to minimize the number of grains deactivated when a silo shuts down, consider using a storage-based grain directory implementation, such as the Redis implementation. Try using it for one or a few grain types first, starting with those that are long-lived, have significant state, or have an expensive initialization process.
 
-:::zone target="docs" pivot="orleans-10-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 ## Strongly-consistent in-cluster directory
 
@@ -87,10 +81,6 @@ Consider external storage-backed directories (Redis, Azure Table, ADO.NET) when:
 
 - You need grain registrations to persist across full cluster restarts
 - You have very large clusters where memory usage is a concern
-
-:::zone-end
-
-:::zone target="docs" pivot="orleans-10-0,orleans-9-0"
 
 ## ADO.NET grain directory
 

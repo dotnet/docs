@@ -28,7 +28,7 @@ int Version { get; }
 The version number always equals the total number of confirmed events, and the state is the result of applying all confirmed events to the initial state. The default constructor of the `GrainState` class determines the initial state, which has version 0 (because no events have been applied to it).
 
 > [!IMPORTANT]
-> Never directly modify the object returned by <xref:Orleans.Grain%601.State>. It's meant for reading only. When your application needs to modify the state, do so indirectly by raising events.
+> Never directly modify the object returned by <xref:Orleans.EventSourcing.JournaledGrain%602.State>. It's meant for reading only. When your application needs to modify the state, do so indirectly by raising events.
 
 ## Raise events
 

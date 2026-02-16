@@ -145,7 +145,7 @@ The `Workers` property specifies the maximum number of threads for parallel exec
 > You can also configure parallelization through [runsettings](unit-testing-mstest-configure.md#mstest-element) or [testconfig.json](unit-testing-mstest-configure.md#testconfigjson) without modifying code.
 
 > [!TIP]
-> Enable parallelization at the assembly level by default, even if many tests currently require sequential execution. This approach encourages writing new tests that support parallel execution from the start. Use the [MSTEST0001](mstest-analyzers/mstest0001.md) analyzer to ensure that every test class explicitly declares its parallelization intent, which forces you to review whether each class safely supports concurrent execution. Often, excluding just a few classes or methods with `DoNotParallelize` is sufficient, allowing the majority of your tests to run in parallel for significantly faster test execution.
+> Enable parallelization at the assembly level by default, even if many tests currently require sequential execution. This approach encourages writing new tests that support parallel execution from the start. Use the [MSTEST0001](mstest-analyzers/mstest0001.md) analyzer to ensure that the assembly explicitly declares its parallelization intent with `[assembly: Parallelize]` or `[assembly: DoNotParallelize]`. Once parallelization is enabled, review each test class to determine whether it safely supports concurrent execution. Often, excluding just a few classes or methods with `DoNotParallelize` is sufficient, allowing the majority of your tests to run in parallel for significantly faster test execution.
 
 ### `DoNotParallelizeAttribute`
 

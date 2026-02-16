@@ -18,9 +18,12 @@ MSTest provides several attributes for data-driven testing:
 |-----------|----------|----------|
 | [`DataRow`](#datarowattribute) | Inline test data | Simple, static test cases |
 | [`DynamicData`](#dynamicdataattribute) | Data from methods, properties, or fields | Complex or computed test data |
-| [`TestDataRow<T>`](#testdatarow) | Enhanced data with metadata | Test cases needing display names or categories |
 | [`DataSource`](#datasourceattribute) | External data files or databases | Legacy scenarios with external data sources |
-| [`ITestDataSource`](#itestdatasource) | Custom data source attributes | Fully custom data-driven scenarios |
+
+MSTest also provides the following types to extend data-driven scenarios:
+
+- [`TestDataRow<T>`](#testdatarow): A return type for `DynamicData` sources that adds metadata support such as display names, categories, and ignore messages to individual test cases.
+- [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
 > [!TIP]
 > For combinatorial testing (testing all combinations of multiple parameter sets), use the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) NuGet package. This community-maintained package is [available on GitHub](https://github.com/Youssef1313/Combinatorial.MSTest) but isn't maintained by Microsoft.
@@ -237,10 +240,10 @@ Specify a different class using the type parameter:
 ```csharp
 public class TestDataProvider
 {
-    public static IEnumerable<object[]> GetTestData()
+    public static IEnumerable<(int, string)> GetTestData()
     {
-        yield return new object[] { 1, "first" };
-        yield return new object[] { 2, "second" };
+        yield return (1, "first");
+        yield return (2, "second");
     }
 }
 
@@ -273,10 +276,10 @@ public class DynamicDataDisplayNameExample
         Assert.IsTrue(value1 > 0);
     }
 
-    public static IEnumerable<object[]> GetTestData()
+    public static IEnumerable<(int, string)> GetTestData()
     {
-        yield return new object[] { 1, "first" };
-        yield return new object[] { 2, "second" };
+        yield return (1, "first");
+        yield return (2, "second");
     }
 
     public static string GetDisplayName(MethodInfo methodInfo, object[] data)
@@ -307,10 +310,10 @@ public class IgnoreDynamicDataExample
         // All test cases from GetTestData are skipped
     }
 
-    public static IEnumerable<object[]> GetTestData()
+    public static IEnumerable<(int, string)> GetTestData()
     {
-        yield return new object[] { 1, "first" };
-        yield return new object[] { 2, "second" };
+        yield return (1, "first");
+        yield return (2, "second");
     }
 }
 ```
@@ -340,7 +343,7 @@ public class TestDataRowExample
         Assert.IsTrue(value1 > 0);
     }
 
-    public static IEnumerable<TestDataRow> GetTestDataRows()
+    public static IEnumerable<TestDataRow<(int, string)>> GetTestDataRows()
     {
         yield return new TestDataRow((1, "first"))
         {
@@ -511,26 +514,21 @@ For most scenarios, the default `Auto` behavior provides the best balance. Consi
 public class UnfoldingExample
 {
     [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Unfold)] // That's the default behavior
-    [DataRow(1)]
-    [DataRow(2)]
-    [DataRow(3)]
+    [DataRow(1, "one")]
+    [DataRow(2, "two")]
+    [DataRow(3, "three")]
     public void TestMethodWithUnfolding(int value, string text)
     {
         // Each test case appears individually in Test Explorer
     }
 
     [TestMethod(UnfoldingStrategy = TestDataSourceUnfoldingStrategy.Fold)]
-    [DynamicData(nameof(GetData))]
+    [DataRow(1, "one")]
+    [DataRow(2, "two")]
+    [DataRow(3, "three")]
     public void TestMethodWithFolding(int value, string text)
     {
         // All test cases appear as a single collapsed node
-    }
-
-    public static IEnumerable<(int, string)> GetData()
-    {
-        yield return (1, "one");
-        yield return (2, "two");
-        yield return (3, "three");
     }
 }
 ```

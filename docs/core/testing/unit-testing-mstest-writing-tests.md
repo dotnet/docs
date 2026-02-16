@@ -30,7 +30,7 @@ public class CalculatorTests
         var calculator = new Calculator();
 
         // Act
-        var result = calculator.Add(2, 3);
+        int result = calculator.Add(2, 3);
 
         // Assert
         Assert.AreEqual(5, result);
@@ -99,7 +99,7 @@ public class CalculatorTests
     internal void Add_WithTestInput_ReturnsExpected(TestInput input)
     {
         var calculator = new Calculator();
-        var result = calculator.Add(input.Value, 1);
+        int result = calculator.Add(input.Value, 1);
         Assert.AreEqual(input.Value + 1, result);
     }
 }

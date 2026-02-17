@@ -5,7 +5,7 @@ ms.date: 02/06/2026
 ---
 # Roadmap for JavaScript and TypeScript developers learning C\#
 
-If you're joining a team that uses C#, or exploring .NET for server-side or full-stack development, this article helps you get productive quickly. It highlights what's familiar from JavaScript and TypeScript and what's new in C#.
+If you're joining a team that uses C#, or exploring it for server-side or full-stack development, this article helps you get productive quickly. It highlights what's familiar from JavaScript and TypeScript and what's new in C#.
 
 C#, TypeScript, and JavaScript are all members of the C family of languages. The similarities between the languages help you quickly become productive in C#.
 
@@ -15,7 +15,7 @@ C#, TypeScript, and JavaScript are all members of the C family of languages. The
 1. ***Async / Await***: All three languages share the same `async` and `await` keywords for asynchronous programming.
 1. ***Garbage collection***: All three languages rely on a garbage collector for automatic memory management.
 1. ***Event model***: C#'s [`event`](../events-overview.md) syntax is similar to JavaScript's model for document object model (DOM) events.
-1. ***Package manager***: [NuGet](https://nuget.org) is the most common package manager for C# and .NET, similar to npm for JavaScript applications. C# libraries are delivered in [assemblies](../../standard/assembly/index.md).
+1. ***Package manager***: [NuGet](https://nuget.org) is the most common package manager for C#, similar to npm for JavaScript applications. C# libraries are delivered in [assemblies](../../standard/assembly/index.md).
 
 ## Syntax at a glance
 
@@ -112,11 +112,11 @@ In addition, a few more TypeScript features aren't available in C#:
 1. ***Decorators***: C# doesn't have decorators. Some common decorators, such as `@sealed` are reserved keywords in C#. Other common decorators might have corresponding [Attributes](../language-reference/attributes/general.md). For other decorators, you can create your own attributes.
 1. ***More forgiving syntax***: The C# compiler parses code more strictly than JavaScript requires.
 
-If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for .NET and C#. Blazor components can run on the server, as .NET assemblies, or on the client using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
+If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for C#. Blazor components can run on the server, as .NET assemblies, or on the client using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
 
 ## Next steps
 
 - [A tour of C#](./overview.md): Get a high-level overview of all C# features.
 - [Beginner tutorials](./tutorials/index.md): Learn C# step by step with interactive lessons.
-- [What you can build with C#](./what-you-can-build.md): Explore the application types you can create with C# and .NET.
+- [What you can build with C#](./what-you-can-build.md): Explore the application types you can create with C#.
 - [C# fundamentals](../fundamentals/program-structure/index.md): Dive deeper into the type system, object-oriented programming, and more.

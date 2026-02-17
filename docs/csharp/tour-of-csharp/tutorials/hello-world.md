@@ -18,7 +18,7 @@ In this tutorial, you:
 > * Launch a GitHub Codespace with a C# development environment.
 > * Create your first C# app.
 > * Create and use variables to store text data.
-> * Use .NET APIs with text data.
+> * Use runtime APIs with text data.
 
 ## Prerequisites
 
@@ -156,7 +156,7 @@ You can use other methods to work with a string. For example, you might use a se
 
 ## Challenge
 
-Two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A>, also search for substrings in a string. These methods find a substring at the beginning or the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
+Two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A>, also search for substrings in a string. These methods find a substring at the beginning or at the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 
 > [!NOTE]
 >

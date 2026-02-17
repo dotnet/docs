@@ -59,7 +59,7 @@ Let's keep exploring.
 The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
 
 > [!TIP]
-> **Learn more:** Explore [collections](../../../standard/collections/index.md) and [generics](../../fundamentals/types/generics.md) in the .NET documentation.
+> **Learn more:** Explore [collections](../../../standard/collections/index.md) and [generics](../../fundamentals/types/generics.md) in the C# documentation.
 
 One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, so you can add or remove elements. You can see the results by modifying the contents after you displayed its contents.
 

@@ -50,6 +50,6 @@ The [Pattern matching](pattern-matching.md) lesson provides an introduction to *
 After you finish these tutorials, continue your learning journey:
 
 - [Build file-based apps](../../fundamentals/tutorials/file-based-programs.md): Learn how to create and run single-file C# programs from the command line.
-- [What you can build with C#](../what-you-can-build.md): Explore the types of applications you can create with C# and .NET.
+- [What you can build with C#](../what-you-can-build.md): Explore the types of applications you can create with C#.
 - [C# type system](../../fundamentals/types/index.md): Dive deeper into value types, reference types, generics, and more.
 - [C# fundamentals](../../fundamentals/program-structure/index.md): Learn about program structure, object-oriented programming, and error handling.

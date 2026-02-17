@@ -1,13 +1,13 @@
 ---
 title: What you can build with C#
-description: Explore the types of applications you can build with C# and .NET, including web, desktop, mobile, cloud, IoT, AI, and games.
+description: Explore the types of applications you can build with C#, including web, desktop, mobile, cloud, IoT, AI, and games.
 ms.date: 02/10/2026
 ai-usage: ai-assisted
 ---
 
 # What you can build with C\#
 
-C# and the [.NET platform](../../standard/glossary.md#implementation-of-net) support a wide range of application types. Whatever kind of software you want to build, there's likely a .NET [workload](../../standard/glossary.md#workload) for it. This article gives you an overview of the most common types of applications, with links to get started on each one.
+C# supports a wide range of application types. Whatever kind of software you want to build, there's likely a [workload](../../standard/glossary.md#workload) for it. This article gives you an overview of the most common types of applications, with links to get started on each one.
 
 > [!TIP]
 > **New to programming?** Don't worry about choosing a workload yet. Focus on [learning the C# language](tutorials/index.md) first. You can explore these application types once you're comfortable with the basics.
@@ -18,9 +18,9 @@ C# and the [.NET platform](../../standard/glossary.md#implementation-of-net) sup
 
 C# integrates with AI and machine learning tools:
 
-- **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
-- **[Semantic Kernel](/semantic-kernel/)** - Integrate large language models (LLMs) into your applications.
+- **[Agent Framework](~/agent-framework/overview/?pivots=programming-language-csharp)** - Build agents and workflows for Azure, OpenAI, Anthropic, Ollama, and more.
 - **[Azure AI services](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
+- **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
 
 Get started with [ML.NET tutorials](../../machine-learning/index.yml).
 
@@ -28,8 +28,8 @@ Get started with [ML.NET tutorials](../../machine-learning/index.yml).
 
 Build web applications with [ASP.NET Core](/aspnet/core/), the cross-platform framework for creating modern web apps and APIs. You can build:
 
-- **Server-rendered web apps** using Razor Pages or MVC.
-- **Interactive web UIs** using [Blazor](/aspnet/core/blazor/), which lets you write client-side logic in C# instead of JavaScript.
+- **Server-rendered web apps** by using Razor Pages or MVC.
+- **Interactive web UIs** by using [Blazor](/aspnet/core/blazor/), which lets you write client-side logic in C# instead of JavaScript.
 - **Web APIs** and [minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview) for backend services.
 
 Get started: [ASP.NET Core tutorials](/aspnet/core/tutorials)
@@ -42,21 +42,21 @@ Use C# to build Windows desktop apps, and cross-platform desktop apps that run o
 - **[Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)** builds rich Windows-only desktop apps with advanced graphics and data binding.
 - **[Windows Forms](/dotnet/desktop/winforms/)** provides a straightforward way to create Windows-only desktop apps with a visual designer.
 
-Get started: [.NET MAUI tutorials](/dotnet/maui/get-started/first-app)
+Get started: [.NET MAUI tutorials](/dotnet/maui/get-started/first-app).
 
 ## Mobile applications
 
 Build native mobile apps for iOS and Android by using [.NET MAUI](/dotnet/maui/). .NET MAUI lets you share code across mobile and desktop platforms while still accessing native device APIs for cameras, sensors, GPS, and more.
 
-Get started: [Build your first .NET MAUI app](/dotnet/maui/get-started/first-app)
+Get started: [Build your first .NET MAUI app](/dotnet/maui/get-started/first-app).
 
 ## Cloud and microservices
 
-C# and .NET are well suited for building cloud-native applications and microservices:
+C# is well suited for building cloud-native applications and microservices:
 
 - **[Azure SDK for .NET](../../azure/sdk/azure-sdk-for-dotnet.md)** provides libraries for working with Azure services like storage, messaging, and databases.
 - **[Worker Services](../../core/extensions/workers.md)** let you build long-running background services that run in the cloud or on-premises.
-- **[Aspire](https://aspire.dev)** streamlines building, running, deploying, debugging, and deploying distributed apps
+- **[Aspire](https://aspire.dev)** streamlines building, running, deploying, debugging, and deploying distributed apps.
 
 Get started: [Get started with Azure and .NET](../../azure/index.yml).
 
@@ -72,9 +72,9 @@ You can also use [Visual Studio for game development](https://visualstudio.micro
 
 ## Internet of Things (IoT)
 
-Control devices and read sensor data by using the [.NET IoT libraries](../../iot/index.yml). You can run C# apps on devices like [Raspberry Pi](../../iot/quickstarts/sensehat.md) and other single-board computers to build IoT solutions.
+Control devices and read sensor data by using the [IoT libraries](../../iot/index.yml). You can run C# apps on devices like [Raspberry Pi](../../iot/quickstarts/sensehat.md) and other single-board computers to build IoT solutions.
 
-Get started: [.NET IoT tutorials](../../iot/tutorials/blink-led.md)
+Get started: [IoT tutorials](../../iot/tutorials/blink-led.md)
 
 ## Next steps
 

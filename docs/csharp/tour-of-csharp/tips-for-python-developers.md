@@ -107,5 +107,5 @@ Learning C# if you know Python is a smooth journey. The languages have similar c
 
 - [A tour of C#](./overview.md): Get a high-level overview of all C# features.
 - [Beginner tutorials](./tutorials/index.md): Learn C# step by step with interactive lessons.
-- [What you can build with C#](./what-you-can-build.md): Explore the application types you can create with C# and .NET.
+- [What you can build with C#](./what-you-can-build.md): Explore the application types you can create with C#.
 - [C# fundamentals](../fundamentals/program-structure/index.md): Dive deeper into the type system, object-oriented programming, and more.

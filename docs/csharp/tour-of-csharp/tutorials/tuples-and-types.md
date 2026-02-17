@@ -135,7 +135,7 @@ Use `struct` types for value types when you need more sophisticated behavior, bu
 
 You can also define `interface` types to declare behavioral contracts that different types must implement. Both `struct` and `class` types can implement interfaces.
 
-You typically use all these types in larger programs and libraries. Once you install the .NET SDK, you can explore those types using tutorials on [classes](../../fundamentals/tutorials/classes.md) in the fundamentals section.
+You typically use all these types in larger programs and libraries. Once you install the SDK, you can explore those types using tutorials on [classes](../../fundamentals/tutorials/classes.md) in the fundamentals section.
 
 You completed the "Create types in C#" tutorial.
 

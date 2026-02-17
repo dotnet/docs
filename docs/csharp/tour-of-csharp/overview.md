@@ -6,18 +6,18 @@ ms.date: 02/06/2026
 
 # A tour of the C# language
 
-This article gives you a high-level overview of the C# language and the .NET platform. Whether you're writing your first program or you're an experienced developer exploring C#, you'll find the key concepts and features here.
+This article gives you a high-level overview of the C# language. Whether you're writing your first program or you're an experienced developer exploring C#, you'll find the key concepts and features here.
 
 > [!TIP]
 > **New to programming?** Skim this article for the big picture, then start the [beginner tutorials](./tutorials/index.md) to write code hands-on.
 >
 > **Coming from Java, JavaScript, or Python?** Read the tips for [Java](./tips-for-java-developers.md), [JavaScript](./tips-for-javascript-developers.md), or [Python](./tips-for-python-developers.md) developers alongside this article.
 >
-> **Experienced developer new to .NET?** This article covers what makes C# distinctive. See [What you can build with C#](./what-you-can-build.md) to find the workload that fits your goals.
+> **Experienced developer new to C#?** This article covers what makes C# distinctive. See [What you can build with C#](./what-you-can-build.md) to find the workload that fits your goals.
 
 The C# language is the most popular language for the [.NET platform](../index.yml), a free, cross-platform, open source development environment. C# programs can run on many different devices, from Internet of Things (IoT) devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers. See [What you can build with C#](./what-you-can-build.md) for an overview of application types.
 
-C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
+C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. C# has broad support in the ecosystem and many [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
 
 C# is in the C family of languages. [C# syntax](../language-reference/keywords/index.md) is familiar if you used C, C++, JavaScript, TypeScript, or Java. Like C and C++, semicolons (`;`) define the end of statements. C# identifiers are case-sensitive. C# has the same use of braces, `{` and `}`, control statements like `if`, `else`, and `switch`, and looping constructs like `for` and `while`. C# also has a `foreach` statement for any collection type.
 
@@ -61,7 +61,7 @@ The source for these programs must be a single file, but otherwise all C# syntax
 
 C# is approachable for beginners yet offers advanced features for experienced developers writing specialized applications. You can be productive quickly. You can learn more specialized techniques as you need them for your applications.
 
-C# apps benefit from the .NET runtime's [automatic memory management](../../standard/automatic-memory-management.md). C# apps also use the extensive [runtime libraries](../../standard/runtime-libraries-overview.md) provided by the .NET SDK. Some components are platform independent, like file system libraries, data collections, and math libraries. Others are specific to a single [workload](./what-you-can-build.md), like the ASP.NET Core web libraries or the .NET MAUI UI library. A rich open source ecosystem on [NuGet](https://nuget.org) augments the libraries that are part of the runtime. These libraries provide even more components you can use.
+C# apps benefit from the runtime's [automatic memory management](../../standard/automatic-memory-management.md). C# apps also use the extensive [runtime libraries](../../standard/runtime-libraries-overview.md) provided by the .NET SDK. Some components are platform independent, like file system libraries, data collections, and math libraries. Others are specific to a single [workload](./what-you-can-build.md), like the ASP.NET Core web libraries or the .NET MAUI UI library. A rich open source ecosystem on [NuGet](https://nuget.org) augments the libraries that are part of the runtime. These libraries provide even more components you can use.
 
 C# is a *strongly typed* language. Every variable you declare has a type known at compile time. The compiler, or editing tools, tell you if you're using that type incorrectly. You can fix those errors before you ever run your program. [Fundamental data types](../fundamentals/types/index.md) are built into the language and runtime: value types like `int`, `double`, `char`, reference types like `string`, arrays, and other collections. As you write your programs, you create your own types. Those types can be `struct` types for values, or `class` types that define object-oriented behavior. You can add the `record` modifier to either `struct` or `class` types so the compiler synthesizes code for equality comparisons. You can also create `interface` definitions, which define a contract, or a set of members, that a type implementing that interface must provide. You can also define generic types and methods. [Generics](../fundamentals/types/generics.md) use *type parameters* to provide a placeholder for an actual type when used.
 
@@ -125,7 +125,7 @@ Finally, as part of the .NET ecosystem, you can use [Visual Studio](https://visu
 
 ## Next steps
 
-This article gave you a quick tour of the C# language. Here's where to go next, depending on your experience:
+This article provided a quick tour of the C# language. Here's where to go next, depending on your experience:
 
 - **Start coding**: Work through the [beginner tutorials](./tutorials/index.md) to learn C# step by step.
 - **Go deeper**: Visit the [C# fundamentals](../fundamentals/program-structure/index.md) section for detailed coverage of the type system, object-oriented programming, and error handling.

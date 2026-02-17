@@ -19,8 +19,8 @@ These tutorials support Visual Studio, Visual Studio Code, and GitHub Codespaces
 - [Publish an app](publish-console-app.md)
 - [Create a class library](create-class-library.md)
 - [Unit test a class library](test-class-library.md)
-- [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
-- [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Install and use a package](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
+- [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
 
 ## F# tutorials
 

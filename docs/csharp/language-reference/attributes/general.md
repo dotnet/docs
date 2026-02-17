@@ -26,7 +26,7 @@ You can apply several attributes to elements in your code to add semantic meanin
 - [`InlineArray`](#inlinearray-attribute): Specify that a `struct` type is an *inline array*.
 - [`IUnknownConstant`](#iunknownconstant-and-idispatchconstant-attributes): Specifies how a missing argument should be supplied for a default parameter.
 - [`IDispatchConstant`](#iunknownconstant-and-idispatchconstant-attributes): Specifies how a missing argument should be supplied for a default parameter.
-- [`ExtendedLayoutAttribute`](#extendedlayout-attribute): Specifies that the runtime provides additional layout options.
+- [`ExtendedLayoutAttribute`](#extendedlayout-attribute): Instructs the compiler to set the `ExtendedLayout` flag in the type's metadata.
 
 The compiler uses those semantic meanings to alter its output and report possible mistakes by developers using your code.
 

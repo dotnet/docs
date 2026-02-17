@@ -79,6 +79,25 @@ The following tabs show the telemetry data captured by SDK version:
 
 # [.NET 8](#tab/dotnet8)
 
+- **SDK version 8.0.400 and later:**
+  - Base image inference telemetry for containerized .NET applications:
+    - Whether base image inference was performed (versus manually specified).
+    - Target framework for base image inference.
+    - Base image name and tag (only for Microsoft-produced images from mcr.microsoft.com).
+    - Container family if specified or inferred (only for Microsoft-produced images).
+    - Project type (ASP.NET Core or Console).
+    - Publish mode (AOT, Trimmed, Self-Contained, or Framework-Dependent).
+    - Whether invariant globalization is used.
+    - Target runtime identifiers.
+  - Container creation and publishing telemetry:
+    - Type of remote registry used for pulling base images (Azure, AWS, Google, GitHub, Docker Hub, MCR, or Other).
+    - Type of local source used for base images (Docker, Podman, or Tarball).
+    - Type of remote registry used for pushing images (Azure, AWS, Google, GitHub, Docker Hub, MCR, or Other).
+    - Type of local destination for images (Docker, Podman, or Tarball).
+    - Error types when failures occur (unknown repository, credential failure, RID mismatch, local load).
+    - For credential failures, whether it was during push or pull.
+    - For RID mismatches, the requested RID and available RIDs in the base image.
+
 - **SDK version 8.0.100 and later:**
   - Hashed TargetPlatformIdentifier used for build (MSBuild property).
   - Hashed HybridGlobalization used for build (MSBuild property).

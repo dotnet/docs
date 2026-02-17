@@ -33,7 +33,7 @@ This tutorial introduces the debugging tools available in GitHub Codespaces for 
 
 ## Prerequisites
 
-This tutorial works with the console app that you create in [Create a .NET console application](console-app.md).
+This tutorial works with the console app that you create in [Create a .NET console application](create-console-app.md).
 
 ::: zone pivot="visualstudio"
 
@@ -47,7 +47,7 @@ By default, Visual Studio uses the Debug build configuration, so you don't need 
 
 1. Start Visual Studio.
 
-1. Open the project that you created in [Create a .NET console application](console-app.md).
+1. Open the project that you created in [Create a .NET console application](create-console-app.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
@@ -81,7 +81,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Start Visual Studio Code.
 
-1. Open the folder of the project that you created in [Create a .NET console application](console-app.md).
+1. Open the folder of the project that you created in [Create a .NET console application](create-console-app.md).
 
 1. Open the *Program.cs* file.
 
@@ -95,7 +95,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 ::: zone pivot="codespaces"
 
-1. Open your GitHub Codespace that you created in [Create a .NET console application](console-app.md).
+1. Open your GitHub Codespace that you created in [Create a .NET console application](create-console-app.md).
 
 1. Open the *HelloWorld.cs* file.
 
@@ -434,4 +434,4 @@ dotnet run --configuration Release HelloWorld.cs
 In this tutorial, you used debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET console application](publishing-console-app.md)
+> [Publish a .NET console application](publish-console-app.md)

@@ -14,11 +14,11 @@ The following tutorials show how to develop console apps and libraries for .NET 
 
 These tutorials support Visual Studio, Visual Studio Code, and GitHub Codespaces. Choose your preferred development environment using the zone pivot selector at the top of each article.
 
-- [Create a console app](console-app.md)
-- [Debug an app](debugging-console-app.md)
-- [Publish an app](publishing-console-app.md)
-- [Create a class library](console-app-class-library.md)
-- [Unit test a class library](testing-console-app-class-library.md)
+- [Create a console app](create-console-app.md)
+- [Debug an app](debug-console-app.md)
+- [Publish an app](publish-console-app.md)
+- [Create a class library](create-class-library.md)
+- [Unit test a class library](test-class-library.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
 

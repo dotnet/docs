@@ -338,4 +338,4 @@ GitHub automatically deletes your Codespace after 30 days of inactivity. If you 
 In this tutorial, you created a .NET console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET console application](debugging-console-app.md)
+> [Debug a .NET console application](debug-console-app.md)

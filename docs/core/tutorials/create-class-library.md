@@ -403,7 +403,7 @@ GitHub automatically deletes your Codespace after 30 days of inactivity. If you 
 In this tutorial, you created a class library. In the next tutorial, you learn how to unit test the class library.
 
 > [!div class="nextstepaction"]
-> [Unit test a .NET class library](testing-console-app-class-library.md)
+> [Unit test a .NET class library](test-class-library.md)
 
 Or, you can skip automated unit testing and learn how to share the library by creating a NuGet package:
 
@@ -413,4 +413,4 @@ Or, you can skip automated unit testing and learn how to share the library by cr
 Or, learn how to publish a console app. If you publish the console app from the solution you created in this tutorial, the class library goes with it as a *.dll* file.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET console application](publishing-console-app.md)
+> [Publish a .NET console application](publish-console-app.md)

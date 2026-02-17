@@ -20,11 +20,11 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Tutorial: Create a .NET console application](../core/tutorials/console-app.md)**
+**[Tutorial: Create a .NET console application](../core/tutorials/create-console-app.md)**
 
 This tutorial shows how to create and run a .NET console application using Visual Studio, Visual Studio Code, or GitHub Codespaces.
 
-**[Tutorial: Create a .NET class library](../core/tutorials/console-app-class-library.md)**
+**[Tutorial: Create a .NET class library](../core/tutorials/create-class-library.md)**
 
 This tutorial shows how to create a class library using Visual Studio, Visual Studio Code, or GitHub Codespaces.
 

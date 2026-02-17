@@ -13,9 +13,9 @@ This section of the documentation helps you get started with Visual Basic applic
 
 ## Get started with Visual Basic and .NET Core
 
-[Build a Hello World application with .NET](../../core/tutorials/console-app.md)
+[Build a Hello World application with .NET](../../core/tutorials/create-console-app.md)
 
-[Build a class library with .NET](../../core/tutorials/console-app-class-library.md)
+[Build a class library with .NET](../../core/tutorials/create-class-library.md)
 
 ## Additional information
 

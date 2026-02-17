@@ -78,7 +78,7 @@ However, returning `int` or `Task<int>` enables the program to communicate statu
 
 The following example shows how the exit code for the process can be accessed.
 
-This example uses [.NET Core](../../../core/introduction.md) command-line tools. If you're unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/console-app.md).
+This example uses [.NET Core](../../../core/introduction.md) command-line tools. If you're unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/create-console-app.md).
 
 Create a new application by running `dotnet new console`. Modify the `Main` method in *Program.cs* as follows:
 

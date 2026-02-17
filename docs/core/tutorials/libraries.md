@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # Develop libraries with the .NET CLI
 
-This article covers how to write libraries for .NET using the .NET CLI. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that's your preferred experience [refer to the Visual Studio guide](console-app-class-library.md).
+This article covers how to write libraries for .NET using the .NET CLI. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that's your preferred experience [refer to the Visual Studio guide](create-class-library.md).
 
 ## Prerequisites
 

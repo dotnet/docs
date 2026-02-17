@@ -352,5 +352,5 @@ Set the following two environment variables in your shell profile:
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-macos).
 - [Working with macOS Catalina notarization](macos-notarization-issues.md).
-- [Tutorial: Create a .NET console application](../tutorials/console-app.md).
+- [Tutorial: Create a .NET console application](../tutorials/create-console-app.md).
 - [Tutorial: Containerize a .NET app](../docker/build-container.md).

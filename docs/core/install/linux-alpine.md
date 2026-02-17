@@ -90,4 +90,4 @@ Use the `apk add` command to install the dependencies.
 
 - [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET](../tutorials/console-app.md)
+- [Tutorial: Create a console application with .NET](../tutorials/create-console-app.md)

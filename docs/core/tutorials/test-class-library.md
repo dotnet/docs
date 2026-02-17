@@ -14,7 +14,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-This tutorial works with the solution that you create in [Create a .NET class library](console-app-class-library.md).
+This tutorial works with the solution that you create in [Create a .NET class library](create-class-library.md).
 
 ## Create a unit test project
 
@@ -24,7 +24,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library](console-app-class-library.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library](create-class-library.md).
 
 1. Add a new unit test project named "StringLibraryTest" to the solution.
 
@@ -85,7 +85,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio Code.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library](console-app-class-library.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library](create-class-library.md).
 
 1. From **Solution Explorer**, select **New Project**, or from the Command Palette select **.NET: New Project**.
 
@@ -371,7 +371,7 @@ The tests pass.
 
 ::: zone pivot="visualstudio"
 
-If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET console application](debugging-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
+If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET console application](debug-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
 
 Visual Studio starts the test project with the debugger attached. Execution stops at any breakpoint you've added to the test project or the underlying library code.
 
@@ -379,7 +379,7 @@ Visual Studio starts the test project with the debugger attached. Execution stop
 
 ::: zone pivot="vscode,codespaces"
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application](debugging-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application](debug-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
@@ -423,4 +423,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET console application](publishing-console-app.md)
+> [Publish a .NET console application](publish-console-app.md)

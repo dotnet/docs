@@ -11,7 +11,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET console application](console-app.md).
+- This tutorial works with the console app that you create in [Create a .NET console application](create-console-app.md).
 
 ## Publish the app
 
@@ -19,7 +19,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 1. Start Visual Studio.
 
-1. Open the *HelloWorld* project that you created in [Create a .NET console application](console-app.md).
+1. Open the *HelloWorld* project that you created in [Create a .NET console application](create-console-app.md).
 
 1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
@@ -53,7 +53,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 1. Start Visual Studio Code.
 
-1. Open the *HelloWorld* project folder that you created in [Create a .NET console application](console-app.md).
+1. Open the *HelloWorld* project folder that you created in [Create a .NET console application](create-console-app.md).
 
 1. Choose **View** > **Terminal** from the main menu.
 
@@ -80,7 +80,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ::: zone pivot="codespaces"
 
-1. Open your GitHub Codespace that you created in [Create a .NET console application](console-app.md).
+1. Open your GitHub Codespace that you created in [Create a .NET console application](create-console-app.md).
 
 1. Add the following line of code to the top of *HelloWorld.cs*:
 
@@ -302,4 +302,4 @@ GitHub automatically deletes your Codespace after 30 days of inactivity. If you 
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET class library](console-app-class-library.md)
+> [Create a .NET class library](create-class-library.md)

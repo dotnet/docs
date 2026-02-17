@@ -45,7 +45,7 @@ public class RequestHandler
 
     public async Task<object> GetDataAsync()
     {
-        await Task.Delay(50);
+        await Task.Yield();
         
         if (_asyncContext.TryGet(out var metadata))
         {
@@ -66,8 +66,8 @@ public class RequestHandler
 // <RequestMetadata>
 public class RequestMetadata
 {
-    public string RequestId { get; set; } = string.Empty;
-    public string RequestPath { get; set; } = string.Empty;
+    public required string RequestId { get; set; }
+    public required string RequestPath { get; set; }
     public DateTimeOffset StartTime { get; set; }
 }
 // </RequestMetadata>

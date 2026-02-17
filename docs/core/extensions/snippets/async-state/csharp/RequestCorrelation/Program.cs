@@ -36,7 +36,7 @@ public class RequestProcessor
 
     private async Task Step1Async()
     {
-        await Task.Delay(100);
+        await Task.Yield();
         
         if (_asyncContext.TryGet(out var context))
         {
@@ -46,7 +46,7 @@ public class RequestProcessor
 
     private async Task Step2Async()
     {
-        await Task.Delay(100);
+        await Task.Yield();
         
         if (_asyncContext.TryGet(out var context))
         {
@@ -59,6 +59,6 @@ public class RequestProcessor
 // <CorrelationContext>
 public class CorrelationContext
 {
-    public string CorrelationId { get; set; } = string.Empty;
+    public required string CorrelationId { get; set; }
 }
 // </CorrelationContext>

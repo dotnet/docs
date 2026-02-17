@@ -20,9 +20,9 @@ ms.custom: devops
 
 This page provides general guidelines for troubleshooting issues occurring when deploying to Azure Cloud Services. These are common issues to watch out for. Check the logs for more detailed information.
 
-## The <xref:Orleans.Runtime.SiloUnavailableException>
+## SiloUnavailableException
 
-First, ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so trying to initialize the client multiple times can be beneficial. If it still throws an exception, another issue might exist with the silos.
+If your client throws a <xref:Orleans.Runtime.SiloUnavailableException>, first ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so trying to initialize the client multiple times can be beneficial. If it still throws an exception, another issue might exist with the silos.
 
 Check the silo configuration and ensure the silos start properly.
 

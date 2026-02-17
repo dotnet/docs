@@ -12,6 +12,8 @@ zone_pivot_groups: orleans-version
 
 The Orleans Dashboard is a built-in web-based monitoring tool that provides real-time visibility into your Orleans cluster. It allows you to monitor silo health, grain activations, method calls, reminders, and system metrics without requiring external monitoring infrastructure.
 
+For Orleans 10.0, use the official dashboard packages: `Microsoft.Orleans.Dashboard` and `Microsoft.Orleans.Dashboard.Abstractions`.
+
 [!INCLUDE [orleans-10-preview](../includes/orleans-10-preview.md)]
 
 ## Features
@@ -275,11 +277,19 @@ If the `/Trace` endpoint returns 403 Forbidden:
 
 :::zone-end
 
-:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0,orleans-3-x"
+:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0"
 
-The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For earlier versions, consider using:
+The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For Orleans 9.0, 8.0, and 7.0, use the unofficial community dashboard package:
 
-- **[OrleansDashboard (community)](https://github.com/OrleansContrib/OrleansDashboard)**: A community-maintained dashboard for Orleans 3.x through 8.x.
-- **OpenTelemetry integration**: Built-in observability features available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
+- **[OrleansDashboard (community)](https://github.com/OrleansContrib/OrleansDashboard)**: A community-maintained dashboard package for Orleans versions earlier than 10.0.
+- **OpenTelemetry integration**: Built-in observability features are available in Orleans 7.0 and later. See [Observability in Orleans](../host/monitoring/index.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+The Orleans Dashboard is a built-in monitoring tool introduced in Orleans 10.0. For Orleans 3.x, use the unofficial community dashboard package:
+
+- **[OrleansDashboard (community)](https://github.com/OrleansContrib/OrleansDashboard)**: A community-maintained dashboard package for Orleans versions earlier than 10.0.
 
 :::zone-end

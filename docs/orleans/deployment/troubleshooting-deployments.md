@@ -13,9 +13,9 @@ zone_pivot_groups: orleans-version
 
 This page provides general guidelines for troubleshooting common Orleans deployment issues.
 
-## The <xref:Orleans.Runtime.SiloUnavailableException>
+## SiloUnavailableException
 
-This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when:
+A <xref:Orleans.Runtime.SiloUnavailableException> indicates that the target silo for a grain call is unavailable. This commonly occurs when:
 
 - **Silo terminated abruptly**: A silo crashed or was forcefully terminated and has been evicted from the cluster. This is expected behavior during cluster membership changes.
 - **Network partition**: The target silo is temporarily unreachable due to network issues.

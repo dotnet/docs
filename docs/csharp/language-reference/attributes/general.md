@@ -279,7 +279,7 @@ The <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=n
 
 ## ExtendedLayout attribute
 
-The <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute?displayProperty=nameWithType> instructs the compiler to add the <xref:System.Reflection.TypeAttributes.ExtendedLayout?displayProperty=nameWithType> in the type's <xref:System.Type.Attributes?displayProperty=nameWithType> flags.
+The <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute?displayProperty=nameWithType> instructs the compiler to set the <xref:System.Reflection.TypeAttributes.ExtendedLayout?displayProperty=nameWithType> flag in the type's <xref:System.Type.Attributes?displayProperty=nameWithType> flags.
 
 > [!IMPORTANT]
 > This attribute can't be combined with the [`StructLayoutAttribute`](pseudo-attributes.md) or the [`InlineArray`](#inlinearray-attribute) attribute.

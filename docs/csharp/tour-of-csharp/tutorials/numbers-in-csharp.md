@@ -280,7 +280,6 @@ Or explore related topics in C# Fundamentals:
 - [The C# type system](../../fundamentals/types/index.md) — Dive deeper into the types you used in this tutorial.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn more about the methods you created to organize your code.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.
-- [Numeric types in C# Fundamentals](../../fundamentals/types/index.md) — Understand how C# represents numbers in the type system.
 - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
 - [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
 - [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)

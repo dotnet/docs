@@ -126,7 +126,7 @@ Did you come up with something like this code?
 
 With each iteration of the loop, you take the last two integers in the list, sum them, and add that value to the list. The loop repeats until you add 20 items to the list.
 </details>
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-enable MD033 -->
 
 You completed the list tutorial.
 

@@ -103,36 +103,7 @@ This method follows the same pattern as other `TryAdd*` methods in the dependenc
 
 Here's a complete example showing how to use auto-activation in a console application:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-// Register service with auto-activation
-builder.Services.AddActivatedSingleton<CacheWarmer>();
-
-var host = builder.Build();
-
-// CacheWarmer is already instantiated and initialized at this point
-await host.RunAsync();
-
-public class CacheWarmer
-{
-    public CacheWarmer()
-    {
-        Console.WriteLine("Warming up cache at startup...");
-        // Perform expensive initialization
-        WarmUpCache();
-    }
-
-    private void WarmUpCache()
-    {
-        // Cache warming logic here
-        Console.WriteLine("Cache warmed up successfully!");
-    }
-}
-```
+:::code language="csharp" source="snippets/dependency-injection-auto-activation/csharp/CompleteExample/Program.cs" id="CacheWarmer":::
 
 When this application starts, you'll see the messages from the `CacheWarmer` constructor printed before the application begins processing requests, confirming that the service was activated at startup.
 
@@ -140,35 +111,7 @@ When this application starts, you'll see the messages from the `CacheWarmer` con
 
 Auto-activated services can depend on other services through dependency injection:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-var services = new ServiceCollection();
-
-services.AddLogging();
-services.AddActivatedSingleton<StartupTaskRunner>();
-
-var provider = services.BuildServiceProvider();
-
-public class StartupTaskRunner
-{
-    private readonly ILogger<StartupTaskRunner> _logger;
-
-    public StartupTaskRunner(ILogger<StartupTaskRunner> logger)
-    {
-        _logger = logger;
-        _logger.LogInformation("Running startup tasks...");
-        RunTasks();
-    }
-
-    private void RunTasks()
-    {
-        // Execute startup tasks
-        _logger.LogInformation("Startup tasks completed.");
-    }
-}
-```
+:::code language="csharp" source="snippets/dependency-injection-auto-activation/csharp/DependenciesExample/Program.cs" id="StartupTaskRunner":::
 
 In this example, the `StartupTaskRunner` service depends on `ILogger<StartupTaskRunner>`, which is automatically provided by the dependency injection container.
 

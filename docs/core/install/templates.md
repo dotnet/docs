@@ -31,11 +31,14 @@ To install a template package from the default NuGet feed, use the `dotnet new i
 dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates
 ```
 
-To install a template package from the default NuGet feed with a specific version, use the `dotnet new install {package-id}::{version}` command:
+To install a template package from the default NuGet feed with a specific version, use the `dotnet new install {package-id}@{version}` command:
 
 ```dotnetcli
-dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.2.6
+dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates@2.2.6
 ```
+
+> [!NOTE]
+> The colon separator `::` was depracated in favor of the `@` character in .NET 9.0.200 SDK.
 
 ### Local NuGet package
 

@@ -29,7 +29,7 @@ Creating and validating your analyzer involves several steps:
 
 ## Create the solution
 
-1. In Visual Studio, select **File > New > Project/Solution** to open the New Project dialog.
+1. In Visual Studio, select **File** > **New** > **Project/Solution** to open the New Project dialog.
 1. In the search box, type **Analyzer** to find the **Analyzer with Code Fix (.NET Standard)** template.
 1. Select **Next**.
 1. Name your project "**MakeConst**" and select **Create**.

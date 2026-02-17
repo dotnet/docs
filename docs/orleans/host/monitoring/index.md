@@ -317,7 +317,7 @@ The following table shows a collection of transaction meters used to monitor the
 
 ### Export metrics
 
-Various third-party metrics providers are available for use with Orleans. You can export metrics from your app using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/), which is supported by many observability platforms including [Prometheus](https://prometheus.io), Grafana, and Azure Monitor.
+Various third-party metrics providers are available for use with Orleans. Export metrics from your app using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). Many observability platforms consume OTLP data directly or through an OpenTelemetry Collector, including [Prometheus](https://prometheus.io), Grafana, and Azure Monitor.
 
 To export metrics using OTLP with Orleans, install the [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/) NuGet package and call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
@@ -347,6 +347,9 @@ builder.Services.AddOpenTelemetry()
             .AddMeter("Microsoft.Orleans");
     });
 ```
+
+> [!NOTE]
+> The default OTLP exporter configuration uses gRPC (typically port `4317`). To export metrics to Prometheus, send telemetry through an OpenTelemetry Collector or configure OTLP/HTTP settings instead.
 
 ## Distributed tracing
 

@@ -66,32 +66,9 @@ This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext%
 
 The <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> interface provides methods to get and set values in the current asynchronous context:
 
-```csharp
-using Microsoft.Extensions.AsyncState;
-using Microsoft.Extensions.DependencyInjection;
+:::code language="csharp" source="snippets/async-state/csharp/IAsyncContextExample/Program.cs" id="snippet":::
 
-var services = new ServiceCollection();
-services.AddAsyncState();
-
-var provider = services.BuildServiceProvider();
-var context = provider.GetRequiredService<IAsyncContext<UserContext>>();
-
-// Set a value in the async context
-var userContext = new UserContext { UserId = "12345", UserName = "Alice" };
-context.Set(userContext);
-
-// Retrieve the value
-if (context.TryGet(out var retrievedContext))
-{
-    Console.WriteLine($"User: {retrievedContext.UserName}");
-}
-
-public class UserContext
-{
-    public string UserId { get; set; } = string.Empty;
-    public string UserName { get; set; } = string.Empty;
-}
-```
+:::code language="csharp" source="snippets/async-state/csharp/IAsyncContextExample/Program.cs" id="UserContext":::
 
 The value set in the context flows through asynchronous operations, making it available to all code executing within the same async context.
 

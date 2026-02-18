@@ -95,8 +95,6 @@ items:
         href: ../standard/glossary.md
       - name: Tutorials
         items:
-          - name: .NET 6 template changes
-            href: ../core/tutorials/top-level-templates.md
           - name: Create a console app
             href: ../core/tutorials/create-console-app.md
             displayName: tutorials, visual studio, vs, visual studio code, vs code
@@ -118,6 +116,8 @@ items:
           - name: Create and publish a package
             href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
             displayName: tutorials, cli
+          - name: .NET 6 template changes
+            href: ../core/tutorials/top-level-templates.md
           - name: More tutorials
             href: ../core/tutorials/index.md
   - name: What's new in .NET

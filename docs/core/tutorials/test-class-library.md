@@ -242,7 +242,7 @@ To create the test methods:
 
 1. Save your changes.
 
-## Build and Run your Tests
+## Build and run your tests
 
 1. In **Solution Explorer**, right-click the solution and select **Build** or from the Command Palette, select **.NET: Build**.
 

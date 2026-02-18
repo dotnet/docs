@@ -47,7 +47,7 @@ In this tutorial, you:
 > [!div class="checklist"]
 >
 > * Launch a GitHub Codespace with a C# development environment.
-> * Create a "HelloWorld" .NET single-file app.
+> * Create a "HelloWorld" .NET file-based app.
 > * Enhance the app to prompt the user for their name and display it in the console window.
 
 ::: zone-end

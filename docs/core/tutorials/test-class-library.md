@@ -248,7 +248,7 @@ To create the test methods:
 
 1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   :::image type="content" source="media/test-class-library-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
+   :::image type="content" source="media/test-class-library/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ::: zone-end
 
@@ -308,7 +308,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-      :::image type="content" source="media/test-class-library-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
+      :::image type="content" source="media/test-class-library/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
 ::: zone-end
 

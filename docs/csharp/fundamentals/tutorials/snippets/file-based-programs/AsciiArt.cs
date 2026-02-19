@@ -26,7 +26,7 @@ Argument<string[]> messagesArgument = new("Messages")
 // </OptionArgument>
 
 // <RootCommand>
-RootCommand rootCommand = new("Ascii Art file-based program sample");
+RootCommand rootCommand = new("Ascii Art file-based app sample");
 
 rootCommand.Options.Add(delayOption);
 rootCommand.Arguments.Add(messagesArgument);

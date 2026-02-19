@@ -181,7 +181,7 @@ In Codespaces, you'll create a [file-based app](../sdk/file-based-apps.md). File
 
 1. *HelloWorld.cs* opens in the editor. Type or copy the following code into the file:
 
-    :::code language="csharp" source="./snippets/create-console-app/csharp/HelloWorld.cs" id="HelloWorld":::
+    :::code language="csharp" source="../snippets/get-started/csharp/hello-world.cs" id="HelloWorld":::
 
 ::: zone-end
 
@@ -253,7 +253,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Replace the contents of the class with the following code:
 
-   :::code language="csharp" source="./snippets/create-console-app/csharp/Program-Read.cs" id="MainMethod":::
+   :::code language="csharp" source="./snippets/create-console-app/csharp/Program.cs" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
@@ -280,7 +280,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Update *HelloWorld.cs* with the following code:
 
-    :::code language="csharp" source="./snippets/create-console-app/csharp/HelloWorld.cs" id="MainMethod":::
+    :::code language="csharp" source="./snippets/create-console-app/csharp/Program.cs" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 

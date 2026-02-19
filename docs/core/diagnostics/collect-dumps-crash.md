@@ -8,6 +8,9 @@ ms.date: 12/13/2022
 
 Configuring your application to collect a dump on crash is done by setting specific environment variables. This is helpful when you want to get an understanding of why a crash happened. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.
 
+> [!NOTE]
+> Dump collection isn't supported on mobile platforms (Android and iOS).
+
 The following table shows the environment variables you can configure for collecting dumps on a crash.
 
 | Environment variable | Description | Default value |

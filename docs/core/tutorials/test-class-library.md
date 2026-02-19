@@ -236,7 +236,7 @@ To create the test methods:
 
 1. Open *StringLibraryTest/Test1.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/test-class-library/csharp/StringLibraryTest/Test1.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibraryTest/Test1.cs":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 

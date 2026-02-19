@@ -341,6 +341,9 @@ The following example includes the "H" custom format specifier in a custom forma
 
 The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
 
+> [!NOTE]
+> Don't combine "HH" or "H" with the "t" or "tt" AM/PM designator specifier in a parsing format string. The 24-hour clock is incompatible with the AM/PM designator in parsing operations, and causes a <xref:System.FormatException>. Use "h" or "hh" instead.
+
 The following example includes the "HH" custom format specifier in a custom format string.
 
 [!code-csharp[Formatting.DateAndTime.Custom#10](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#10)]
@@ -491,6 +494,9 @@ The following example includes the "t" custom format specifier in a custom forma
 The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
 Make sure to use the "tt" specifier for languages for which it's necessary to maintain the distinction between AM and PM. An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.
+
+> [!NOTE]
+> When you parse a string that includes an AM/PM designator, use the "h" or "hh" hour specifier (12-hour clock) instead of "H" or "HH" (24-hour clock). The 24-hour clock specifier is incompatible with the AM/PM designator in a parsing operation, and causes a <xref:System.FormatException>.
 
 The following example includes the "tt" custom format specifier in a custom format string.
 

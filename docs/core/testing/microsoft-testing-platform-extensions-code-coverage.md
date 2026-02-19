@@ -57,7 +57,7 @@ The following table shows the compatibility between different versions of Micros
 
 The `coverlet.MTP` package implements `coverlet.collector` functionality for Microsoft.Testing.Platform.
 
-Starting in coverlet 8.0.0, `coverlet.MTP` is a native extension for Microsoft.Testing.Platform. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
+Starting in .NET 8, `coverlet.MTP` is a native extension for Microsoft.Testing.Platform. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
 
 ```bash
 dotnet add package coverlet.MTP

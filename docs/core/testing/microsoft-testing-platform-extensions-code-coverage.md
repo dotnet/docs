@@ -55,9 +55,7 @@ The following table shows the compatibility between different versions of Micros
 
 ## Coverlet
 
-The `coverlet.MTP` package implements `coverlet.collector` functionality for Microsoft.Testing.Platform.
-
-Starting in .NET 8, `coverlet.MTP` is a native extension for Microsoft.Testing.Platform. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
+The `coverlet.MTP` is a native extension for Microsoft.Testing.Platform that implements `coverlet.collector` functionality. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
 
 ```bash
 dotnet add package coverlet.MTP
@@ -92,6 +90,6 @@ After the test run, a `coverage.json` file containing the results is generated i
 | `--coverlet-single-hit` | Limit the number of hits to one for each location in the code. |
 | `--coverlet-skip-auto-props` | Skip auto-implemented properties in the coverage. |
 | `--coverlet-does-not-return-attribute <attribute>` | Attributes that mark methods as not returning. Specify multiple times to add more attributes. |
-| `--coverlet-exclude-assemblies-without-sources <value>` | Exclude assemblies without source code. Values: `MissingAll`, `MissingAny`, `None`. |
+| `--coverlet-exclude-assemblies-without-sources <value>` | Exclude assemblies without source code. Values: `MissingAll`, `MissingAny`, and `None`. |
 
 For more information, see the [coverlet.MTP documentation](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Coverlet.MTP.Integration.md).

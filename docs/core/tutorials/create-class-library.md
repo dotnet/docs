@@ -20,7 +20,7 @@ When you create a class library, you can distribute it as a third-party componen
 
 ::: zone pivot="visualstudio"
 
-- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -52,7 +52,7 @@ To create the blank solution:
 
 1. On the **Create a new project** page, enter **solution** in the search box. Choose the **Blank Solution** template, and then choose **Next**.
 
-   :::image type="content" source="media/library-with-visual-studio/blank-solution.png" alt-text="Blank solution template in Visual Studio":::
+   :::image type="content" source="media/create-class-library/blank-solution.png" alt-text="Blank solution template in Visual Studio":::
 
 1. On the **Configure your new project** page, enter **ClassLibraryProjects** in the **Solution name** box. Then choose **Create**.
 
@@ -126,14 +126,14 @@ Start by creating a GitHub Codespace with the tutorial environment, then create 
 
 1. If you're using Visual Basic, clear the text in the **Default namespace** text box.
 
-   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties.png" alt-text="Project properties for the class library":::
+   :::image type="content" source="./media/create-class-library/vb/library-project-properties.png" alt-text="Project properties for the class library":::
 
    For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
 
 1. Replace the code in the code window for *Class1.cs*  or *Class1.vb* with the following code, and save the file. If the language you want to use isn't shown, change the language selector at the top of the page.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
-   :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibrary/Class1.vb":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibrary/Class1.cs":::
+   :::code language="vb" source="./snippets/create-class-library/vb/StringLibrary/Class1.vb":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -149,7 +149,7 @@ Start by creating a GitHub Codespace with the tutorial environment, then create 
 
 1. Replace the contents of *Class1.cs* with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -185,7 +185,7 @@ Start by creating a GitHub Codespace with the tutorial environment, then create 
 
 1. Open *Class1.cs* and replace its contents with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -209,11 +209,11 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Add a new .NET console application named **ShowCase** to the solution.
 
-   1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
+   1. Right-click on the solution in **Solution Explorer** and select **Add** > **New Project**.
 
    1. On the **Add a new project** page, enter **console** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
 
-   1. Choose the **Console Application** template, and then choose **Next**.
+   1. Choose the **Console App** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
 
@@ -221,8 +221,8 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
-   :::code language="vb" source="./snippets/library-with-visual-studio/vb/ShowCase/Program.vb":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/ShowCase/Program.cs":::
+   :::code language="vb" source="./snippets/create-class-library/vb/ShowCase/Program.vb":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -240,7 +240,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -261,7 +261,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -279,11 +279,11 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node, and select **Add Project Reference**.
 
-   :::image type="content" source="media/library-with-visual-studio/add-reference-context-menu.png" alt-text="Add reference context menu in Visual Studio":::
+   :::image type="content" source="media/create-class-library/add-reference-context-menu.png" alt-text="Add reference context menu in Visual Studio":::
 
 1. In the **Reference Manager** dialog, select the **StringLibrary** project, and select **OK**.
 
-   :::image type="content" source="media/library-with-visual-studio/manage-project-references.png" alt-text="Reference Manager dialog with StringLibrary selected":::
+   :::image type="content" source="media/create-class-library/manage-project-references.png" alt-text="Reference Manager dialog with StringLibrary selected":::
 
 ::: zone-end
 
@@ -321,13 +321,13 @@ dotnet add reference ../StringLibrary/StringLibrary.csproj
 
 1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-   :::image type="content" source="media/library-with-visual-studio/set-startup-project-context-menu.png" alt-text="Visual Studio project context menu to set startup project":::
+   :::image type="content" source="media/create-class-library/set-startup-project-context-menu.png" alt-text="Visual Studio project context menu to set startup project":::
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
-   :::image type="content" source="media/library-with-visual-studio/run-showcase.png" alt-text="Console window with ShowCase running":::
+   :::image type="content" source="media/create-class-library/run-showcase.png" alt-text="Console window with ShowCase running":::
 
 ::: zone-end
 

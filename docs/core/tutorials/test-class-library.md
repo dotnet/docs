@@ -38,7 +38,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Additional information** page, select **.NET 10** in the **Framework** box, select **Microsoft.Testing.Platform** for the **Test runner**, and then choose **Create**.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/additional-information-mstest.png" alt-text="Enter additional information for the MSTest Test Project":::
+   :::image type="content" source="./media/test-class-library/additional-information-mstest.png" alt-text="Enter additional information for the MSTest Test Project":::
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use isn't shown, change the language selector at the top of the page.
 
@@ -91,13 +91,13 @@ Unit tests provide automated software testing during your development and publis
 
 1. Select **MSTest Test Project**, name it "StringLibraryTest", select the default directory, and select **Create Project**.
 
-   The project template creates a *UnitTest1.cs* file with the following code:
+   The project template creates *StringLibraryTest/Test1.cs* with the following code:
 
    ```csharp
    namespace StringLibraryTest;
 
    [TestClass]
-   public class UnitTest1
+   public class Test1
    {
        [TestMethod]
        public void TestMethod1()
@@ -108,7 +108,7 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
+   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `Test1` class.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1`.
    - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing. The namespace is imported via a `global using` directive in *GlobalUsings.cs*.
 
@@ -126,13 +126,13 @@ Unit tests provide automated software testing during your development and publis
    dotnet new mstest -n StringLibraryTest
    ```
 
-   The project template creates a *UnitTest1.cs* file with the following code:
+   The project template creates *StringLibraryTest/Test1.cs* with the following code:
 
    ```csharp
    namespace StringLibraryTest;
 
    [TestClass]
-   public class UnitTest1
+   public class Test1
    {
        [TestMethod]
        public void TestMethod1()
@@ -143,7 +143,7 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
+   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `Test1` class.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1`.
    - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing.
 
@@ -161,7 +161,7 @@ For the test project to work with the `StringLibrary` class, add a reference in 
 
 1. In the **Reference Manager** dialog, select the box next to **StringLibrary**.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/add-project-reference-string-library-test.png" alt-text="Add StringLibrary as a project reference for StringLibraryTest.":::
+   :::image type="content" source="./media/test-class-library/add-project-reference-string-library-test.png" alt-text="Add StringLibrary as a project reference for StringLibraryTest.":::
 
 1. Select **OK**.
 
@@ -213,8 +213,8 @@ To create the test methods:
 
 1. In the *Test1.cs* or *Test1.vb* code window, replace the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
-   :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibraryTest/Test1.cs":::
+   :::code language="vb" source="./snippets/create-class-library/vb/StringLibraryTest/UnitTest1.vb":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
@@ -228,13 +228,13 @@ To create the test methods:
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
+   :::image type="content" source="./media/test-class-library/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
 
 ::: zone-end
 
 ::: zone pivot="vscode"
 
-1. Open *StringLibraryTest/UnitTest1.cs* and replace all of the code with the following code.
+1. Open *StringLibraryTest/Test1.cs* and replace all of the code with the following code.
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
 
@@ -248,15 +248,15 @@ To create the test methods:
 
 1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
+   :::image type="content" source="media/test-class-library-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ::: zone-end
 
 ::: zone pivot="codespaces"
 
-1. Open *StringLibraryTest/UnitTest1.cs* and replace all of the code with the following code:
+1. Open *StringLibraryTest/Test1.cs* and replace all of the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
+   :::code language="csharp" source="./snippets/create-class-library/csharp/StringLibraryTest/Test1.cs":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
@@ -291,13 +291,14 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
+   :::image type="content" source="./media/test-class-library
+/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
    The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True." Because of the failure, the strings in the array after "Error" weren't tested.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
+   :::image type="content" source="./media/test-class-library/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 ::: zone-end
 
@@ -307,7 +308,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-      :::image type="content" source="media/testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
+      :::image type="content" source="media/test-class-library-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
 ::: zone-end
 
@@ -379,7 +380,7 @@ Visual Studio starts the test project with the debugger attached. Execution stop
 
 ::: zone pivot="vscode,codespaces"
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application](debug-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application](debug-console-app.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/Test1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 

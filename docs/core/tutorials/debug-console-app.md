@@ -51,7 +51,7 @@ By default, Visual Studio uses the Debug build configuration, so you don't need 
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   :::image type="content" source="./media/debugging-with-visual-studio/use-debug-configuration.png" alt-text="Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="./media/debug-console-app/use-debug-configuration.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 ::: zone-end
 
@@ -65,7 +65,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint.png" alt-text="Visual Studio Program window with breakpoint set":::
+   :::image type="content" source="./media/debug-console-app/set-breakpoint.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press <kbd>F5</kbd> to run the program in Debug mode. Another way to start debugging is by choosing **Debug** > **Start Debugging** from the menu.
 
@@ -73,7 +73,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
+   :::image type="content" source="./media/debug-console-app/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
 ::: zone-end
 
@@ -89,7 +89,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set.png" alt-text="Breakpoint set":::
+   :::image type="content" source="media/debug-console-app/breakpoint-set.png" alt-text="Breakpoint set":::
 
 ::: zone-end
 
@@ -101,7 +101,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. You can also set a breakpoint are by pressing <kbd>F9</kbd> while the line of code is selected.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-set.png" alt-text="Breakpoint set":::
+   :::image type="content" source="media/debug-console-app/codespaces-breakpoint-set.png" alt-text="Breakpoint set":::
 
 ::: zone-end
 
@@ -121,23 +121,23 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
+   :::image type="content" source="media/debug-console-app/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
 1. Select **Run and Debug**. If asked, select **C#** and then select **C#: Launch startup project**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
+   :::image type="content" source="media/debug-console-app/start-debugging.png" alt-text="Start debugging":::
 
 1. If asked to **Select Launch Configuration**, select **C#: Debug Active File**.
 
 1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-console.png" alt-text="Select the Debug Console tab":::
+   :::image type="content" source="media/debug-console-app/select-debug-console.png" alt-text="Select the Debug Console tab":::
 
 1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
+   :::image type="content" source="media/debug-console-app/breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
 
 ::: zone-end
 
@@ -147,7 +147,7 @@ By default, GitHub Codespaces uses the Debug build configuration, so you don't n
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
+   :::image type="content" source="media/debug-console-app/codespaces-select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
 1. Select **Run and Debug**. If asked, select **C#** as the debugger and then select **C#: Debug Active File** as the Launch Configuration.
 
@@ -157,7 +157,7 @@ By default, GitHub Codespaces uses the Debug build configuration, so you don't n
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
+   :::image type="content" source="media/debug-console-app/codespaces-breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
 
 ::: zone-end
 
@@ -175,7 +175,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Immediate** window displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::
+   :::image type="content" source="./media/debug-console-app/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::
 
 1. Press <kbd>F5</kbd> to continue program execution. Another way to continue is by choosing **Debug** > **Continue** from the menu.
 
@@ -195,7 +195,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
 1. Enter `name = "Gracie"` at the prompt at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values.png" alt-text="Change variable values":::
+   :::image type="content" source="media/debug-console-app/change-variable-values.png" alt-text="Change variable values":::
 
 1. Enter `currentDate = DateTime.Parse("2026-01-28T20:54:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
@@ -203,11 +203,11 @@ The **Debug Console** window lets you interact with the application you're debug
 
 1. Continue program execution by selecting the **Continue** button in the toolbar. Another way to continue is by pressing <kbd>F5</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/continue-debugging.png" alt-text="Continue debugging":::
+   :::image type="content" source="media/debug-console-app/continue-debugging.png" alt-text="Continue debugging":::
 
    The values displayed in the console window correspond to the changes you made in the **Debug Console**.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/codespaces-changed-variable-values.png" alt-text="Terminal showing the entered values":::
+   :::image type="content" source="media/debug-console-app/codespaces-changed-variable-values.png" alt-text="Terminal showing the entered values":::
 
 1. Press <kbd>Enter</kbd> to exit the application and stop debugging.
 
@@ -221,7 +221,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Select the box for **Conditions** if it's not already selected.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
+   :::image type="content" source="./media/debug-console-app/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
 
 1. For the **Conditional Expression**, enter the following code in the text field.
 
@@ -259,7 +259,7 @@ The program displays the string that the user enters. What happens if the user d
 
    The question mark directs the immediate window to [evaluate an expression](/visualstudio/ide/reference/immediate-window#enter-commands).
 
-   :::image type="content" source="./media/debugging-with-visual-studio/immediate-window-output.png" alt-text="Immediate Window returning a value of true after the statement is executed - C#":::
+   :::image type="content" source="./media/debug-console-app/immediate-window-output.png" alt-text="Immediate Window returning a value of true after the statement is executed - C#":::
 
 1. Press <kbd>F5</kbd> to continue program execution.
 
@@ -273,7 +273,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click (<kbd>Ctrl</kbd>-click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
+   :::image type="content" source="media/debug-console-app/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
 
 1. Select `Expression` in the drop-down, enter the following conditional expression, and press <kbd>Enter</kbd>.
 
@@ -281,7 +281,7 @@ The program displays the string that the user enters. What happens if the user d
    String.IsNullOrEmpty(name)
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression.png" alt-text="Enter a conditional expression":::
+   :::image type="content" source="media/debug-console-app/conditional-expression.png" alt-text="Enter a conditional expression":::
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
@@ -323,7 +323,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
+   :::image type="content" source="./media/debug-console-app/step-into-method.png" alt-text="Visual Studio step into method - C#":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank console window.
 
@@ -359,7 +359,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Step Into** from the Debug toolbar or press <kbd>F11</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Step-Into button":::
+   :::image type="content" source="media/debug-console-app/step-into.png" alt-text="Step-Into button":::
 
    Visual Studio Code highlights the next line.
 
@@ -387,7 +387,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
+   :::image type="content" source="media/debug-console-app/step-out.png" alt-text="Step-Out button":::
 
    The terminal displays "Press any key to exit..."
 
@@ -403,7 +403,7 @@ Once you've tested the Debug version of your application, you should also compil
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-:::image type="content" source="./media/debugging-with-visual-studio/use-release-configuration.png" alt-text="default Visual Studio toolbar with release highlighted":::
+:::image type="content" source="./media/debug-console-app/use-release-configuration.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 

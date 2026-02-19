@@ -56,7 +56,7 @@ In this tutorial, you:
 
 ::: zone pivot="visualstudio"
 
-- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -84,24 +84,24 @@ Create a .NET console app project named "HelloWorld".
 
 1. On the start page, choose **Create a new project**.
 
-   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Create a new project button selected on the Visual Studio start page":::
+   :::image type="content" source="./media/create-console-app/start-window.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
 1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App** template, and then choose **Next**.
 
-   :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Create a new project window with filters selected":::
+   :::image type="content" source="./media/create-console-app/create-new-project.png" alt-text="Create a new project window with filters selected":::
 
    > [!TIP]
    > If you don't see the .NET templates, you're probably missing the required workload. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET desktop development** workload installed.
 
 1. In the **Configure your new project** dialog,  enter **HelloWorld** in the **Project name** box. Then choose **Next**.
 
-   :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
+   :::image type="content" source="./media/create-console-app/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog:
    - Select **.NET 10.0 (Long Term Support)**.
    - Select **Create**.
 
-   :::image type="content" source="./media/with-visual-studio/additional-information.png" alt-text="Enter additional information for the console app.":::
+   :::image type="content" source="./media/create-console-app/additional-information.png" alt-text="Enter additional information for the console app.":::
 
    The template creates a simple application that displays "Hello, World!" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 
@@ -134,7 +134,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-    :::image type="content" source="media/with-visual-studio-code/create-dotnet-project.png" alt-text="The .NET: New Project command in the Command Palette":::
+    :::image type="content" source="media/create-console-app/create-dotnet-project.png" alt-text="The .NET: New Project command in the Command Palette":::
 
 1. After selecting the command, you need to choose the project template. Choose **Console App**.
 
@@ -169,7 +169,7 @@ Start a GitHub Codespace with the tutorial environment.
 
 1. Select the `+` sign or the green **Create codespace on main** button to create a new Codespace using this environment.
 
-    :::image type="content" source="media/with-visual-studio-code/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
+    :::image type="content" source="media/create-console-app/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
 
 ### Create a .NET file-based app
 
@@ -177,11 +177,11 @@ In Codespaces, you'll create a [file-based app](../sdk/file-based-apps.md). File
 
 1. When your codespace loads, right-click on the *tutorials* folder and select **New File...**. Enter the name *HelloWorld.cs* and then press <kbd>Enter</kbd>.
 
-    :::image type="content" source="media/with-visual-studio-code/codespaces-create-new-file.png" alt-text="Create a new file named HelloWorld.cs in the tutorials folder":::
+    :::image type="content" source="media/create-console-app/codespaces-create-new-file.png" alt-text="Create a new file named HelloWorld.cs in the tutorials folder":::
 
 1. *HelloWorld.cs* opens in the editor. Type or copy the following code into the file:
 
-    :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="HelloWorld":::
+    :::code language="csharp" source="./snippets/create-console-app/csharp/HelloWorld.cs" id="HelloWorld":::
 
 ::: zone-end
 
@@ -228,8 +228,8 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. In *Program.cs* or *Program.vb*, replace the contents with the following code:
 
-   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
-   :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
+   :::code language="csharp" source="./snippets/create-console-app/csharp/Program.cs" id="MainMethod":::
+   :::code language="vb" source="./snippets/create-console-app/vb/Program.vb" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
@@ -241,7 +241,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Console window with modified program output":::
+   :::image type="content" source="./media/create-console-app/hello-world-update.png" alt-text="Console window with modified program output":::
 
 1. Press any key to close the console window.
 
@@ -253,7 +253,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Replace the contents of the class with the following code:
 
-   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program-Read.cs" id="MainMethod":::
+   :::code language="csharp" source="./snippets/create-console-app/csharp/Program-Read.cs" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 
@@ -270,7 +270,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   :::image type="content" source="media/with-visual-studio-code/run-program-class.png" alt-text="Terminal window with modified program output":::
+   :::image type="content" source="media/create-console-app/run-program-class.png" alt-text="Terminal window with modified program output":::
 
     Press <kbd>Enter</kbd> to exit the program.
 
@@ -280,7 +280,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Update *HelloWorld.cs* with the following code:
 
-    :::code language="csharp" source="./snippets/with-visual-studio-code/csharp/HelloWorld.cs" id="MainMethod":::
+    :::code language="csharp" source="./snippets/create-console-app/csharp/HelloWorld.cs" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.Read> method to wait for user input.
 

@@ -191,4 +191,4 @@ Continue to the next tutorial in this series, or explore related topics in C# Fu
 
 - [Strings](../../programming-guide/strings/index.md) — Learn more about the `string` type you used in this tutorial.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Understand how C# programs are organized.
-- [File-based programs](../../fundamentals/tutorials/file-based-programs.md) — Learn about the `dotnet run` command you used to run your code.
+- [File-based apps](../../fundamentals/tutorials/file-based-programs.md) — Learn about the `dotnet run` command you used to run your code.

@@ -22,7 +22,7 @@ C# integrates with AI and machine learning tools:
 - **[Azure AI services](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
 - **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
 
-Get started with [ML.NET tutorials](../../machine-learning/index.yml).
+Get started: [ML.NET tutorials](../../machine-learning/index.yml).
 
 ## Web applications
 

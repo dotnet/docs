@@ -154,7 +154,7 @@ GitHub automatically deletes your Codespace after 30 days of inactivity. You com
 
 You completed all the introductory tutorials! Here's where to go next:
 
-- [File-based programs](../../fundamentals/tutorials/file-based-programs.md) — Learn about the `dotnet run` command you used throughout these tutorials.
+- [File-based apps](../../fundamentals/tutorials/file-based-programs.md) — Learn about the `dotnet run` command you used throughout these tutorials.
 - [C# Fundamentals](../../fundamentals/program-structure/index.md) — Dive deeper into program structure, types, and object-oriented programming.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you learned.
 - Download and install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).

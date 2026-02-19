@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform Code Coverage extensions
 description: Learn about the various Microsoft.Testing.Platform Code Coverage extensions and how to use them.
 author: evangelink
 ms.author: amauryleve
-ms.date: 04/10/2024
+ms.date: 02/19/2026
 ai-usage: ai-assisted
 ---
 
@@ -56,12 +56,37 @@ The following table shows the compatibility between different versions of Micros
 ## Coverlet
 
 > [!IMPORTANT]
-> The `coverlet.collector` NuGet package is designed specifically for VSTest and cannot be used with `Microsoft.Testing.Platform`.
+> The `coverlet.collector` NuGet package is designed specifically for VSTest and can't be used with `Microsoft.Testing.Platform`.
 
-There's currently no Coverlet extension, but you can use [Coverlet .NET global tool](https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue).
-
-Assuming you've already installed the Coverlet global tool, you can now run:
+Starting in coverlet 8.0.0, `coverlet.MTP` is a native extension for `Microsoft.Testing.Platform`. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
 
 ```bash
-coverlet .\bin\Debug\net8.0\TestProject2.dll --target "dotnet" --targetargs "test .\bin\Debug\net8.0\TestProject2.dll --no-build"
+dotnet add package coverlet.MTP
 ```
+
+To collect code coverage, run your tests with the `--coverlet` flag:
+
+```bash
+dotnet test --coverlet
+```
+
+After the test run, a `coverage.json` file containing the results is generated in the current directory.
+
+### coverlet.MTP options
+
+| Option | Description |
+| :------- | :------------ |
+| `--coverlet` | Enable code coverage data collection. |
+| `--coverlet-output-format <format>` | Output format(s) for the coverage report. Supported formats: `json`, `lcov`, `opencover`, `cobertura`, and `teamcity`. Can be specified multiple times. |
+| `--coverlet-include <filter>` | Include assemblies matching filters (for example, `[Assembly]Type`). Can be specified multiple times. |
+| `--coverlet-include-directory <path>` | Include additional directories for sources. Can be specified multiple times. |
+| `--coverlet-exclude <filter>` | Exclude assemblies matching filters (for example, `[Assembly]Type`). Can be specified multiple times. |
+| `--coverlet-exclude-by-file <pattern>` | Exclude source files matching glob patterns. Can be specified multiple times. |
+| `--coverlet-exclude-by-attribute <attribute>` | Exclude methods/classes decorated with attributes. Can be specified multiple times. |
+| `--coverlet-include-test-assembly` | Include the test assembly in coverage. |
+| `--coverlet-single-hit` | Limit the number of hits to one for each location. |
+| `--coverlet-skip-auto-props` | Skip auto-implemented properties. |
+| `--coverlet-does-not-return-attribute <attribute>` | Attributes that mark methods as not returning. Can be specified multiple times. |
+| `--coverlet-exclude-assemblies-without-sources <value>` | Exclude assemblies without source code. Values: `MissingAll`, `MissingAny`, `None`. |
+
+For more information, see the [coverlet.MTP documentation](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Coverlet.MTP.Integration.md).

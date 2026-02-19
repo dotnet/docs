@@ -92,7 +92,7 @@ Start by creating a GitHub Codespace with the tutorial environment, then create 
 
 1. Select the `+` sign or the green **Create codespace on main** button to create a new Codespace using this environment.
 
-   :::image type="content" source="media/with-visual-studio-code/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
+   :::image type="content" source="media/create-console-app/create-codespace-on-main.png" alt-text="Create a new Codespace from the tutorial repository":::
 
 1. When your codespace loads, open the terminal and navigate to the tutorials folder:
 

@@ -1,9 +1,10 @@
 ---
 title: dotnet-dump diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
-ms.date: 11/17/2020
+ms.date: 02/20/2026
 ms.topic: reference
 ms.custom: linux-related-content
+ai-usage: ai-assisted
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
@@ -317,7 +318,7 @@ StackTraceString: <none>
 HResult: 80131604
 ```
 
-## Analyzing memory leaks and allocations
+## Analyze memory leaks and allocations
 
 Memory leaks occur when your app holds references to objects that are no longer needed, preventing the garbage collector from reclaiming memory. Use `dotnet-dump` to identify memory leaks, find the largest objects, and understand where memory is being consumed.
 
@@ -377,7 +378,7 @@ Statistics:
 00007f6c1dc021c8     1749        95696 System.SByte[]
 ```
 
-In this example, there are 206,770 `String` instances and 200,000 `Customer` instances.
+This example shows 206,770 `String` instances and 200,000 `Customer` instances.
 
 ### Analyze object references with gcroot
 
@@ -422,7 +423,7 @@ Total 18 objects
 
 This command shows only objects larger than 100,000 bytes, helping you focus on the biggest memory consumers.
 
-## Finding deadlocks
+## Find deadlocks
 
 Use `dotnet-dump` to diagnose deadlock situations where threads are blocked waiting for resources. For a complete deadlock debugging walkthrough, see [Debug a deadlock in .NET](debug-deadlock.md).
 
@@ -468,9 +469,9 @@ The **MonitorHeld** column shows the number of threads waiting for the lock. The
 To understand memory growth over time, collect multiple dumps and compare them:
 
 1. Collect a baseline dump: `dotnet-dump collect -p <pid> -o baseline.dmp`
-1. Let your app run and consume more memory
+1. Let your app run and consume more memory.
 1. Collect a second dump: `dotnet-dump collect -p <pid> -o after.dmp`
-1. Analyze both dumps and compare the `dumpheap -stat` results
+1. Analyze both dumps and compare the `dumpheap -stat` results.
 
 Look for types that have significantly more instances or larger total sizes in the second dump.
 

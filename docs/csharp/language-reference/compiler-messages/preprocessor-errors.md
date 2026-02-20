@@ -112,9 +112,9 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS8996**](#invalid-preprocessor-directive-syntax): *Raw string literals are not allowed in preprocessor directives*
 - [**CS9028**](#line-and-file-directive-errors): *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
 - [**CS9297**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after first token in file*
-- [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based programs (`-features:FileBasedProgram`)*
+- [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - [**CS9299**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after `#if` directive*
-- [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based programs*
+- [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based apps*
 
 ## Invalid preprocessor directive syntax
 
@@ -424,9 +424,9 @@ To fix these errors, ensure your `#line` directives and file-related preprocesso
 ## Incorrect use of file-based apps directives
 
 - **CS9297**: *`#:` directives cannot be after first token in file*
-- **CS9298**: *`#:` directives can be only used in file-based programs (`-features:FileBasedProgram`)*
+- **CS9298**: *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - **CS9299**: *`#:` directives cannot be after `#if` directive*
-- **CS9314**: *`#!` directives can be only used in scripts or file-based programs*
+- **CS9314**: *`#!` directives can be only used in scripts or file-based apps*
 
 These errors indicate that you used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
 

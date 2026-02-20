@@ -28,7 +28,9 @@ The most common ways to synchronize the activities of threads are to block and r
 
 :::code language="csharp" source="./snippets/pausing-and-resuming-threads/csharp/InterruptThread/Program.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/pausing-and-resuming-threads/vb/InterruptThread/Program.vb" id="Snippet1":::
-  
+
+The example calls <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> to block the calling thread until the interrupted thread finishes execution.
+
 ## Interrupting threads
 
  You can interrupt a waiting thread by calling the <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> method on the blocked thread to throw a <xref:System.Threading.ThreadInterruptedException>, which breaks the thread out of the blocking call. The thread should catch the <xref:System.Threading.ThreadInterruptedException> and do whatever is appropriate to continue working. If the thread ignores the exception, the runtime catches the exception and stops the thread.  

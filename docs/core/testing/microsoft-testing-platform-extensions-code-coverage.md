@@ -55,7 +55,9 @@ The following table shows the compatibility between different versions of Micros
 
 ## Coverlet
 
-The `coverlet.MTP` is a native extension for Microsoft.Testing.Platform that implements `coverlet.collector` functionality. Add the [`coverlet.MTP`](https://www.nuget.org/packages/coverlet.MTP) NuGet package to your test project:
+The Coverlet Microsoft Testing Platform Integration (`coverlet.MTP`) is a native extension for Microsoft.Testing.Platform that implements `coverlet.collector` functionality.
+
+Add the `coverlet.MTP` NuGet package to your test project:
 
 ```bash
 dotnet add package coverlet.MTP
@@ -75,7 +77,7 @@ dotnet exec <test-assembly.dll> --coverlet
 
 After the test run, a `coverage.json` file containing the results is generated in the current directory.
 
-### coverlet.MTP options
+`coverlet.MTP` provides the following options:
 
 | Option | Description |
 | :------- | :------------ |

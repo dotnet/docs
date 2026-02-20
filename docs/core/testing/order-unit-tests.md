@@ -1,7 +1,8 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-ms.date: 03/17/2023
+ms.date: 02/20/2026
+ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ---
 
@@ -14,9 +15,15 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 > [!TIP]
 > In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer#create-custom-playlists) as an alternative.
 
+> [!NOTE]
+> Test ordering and test parallelization are separate concerns. Specifying an execution order determines the sequence in which tests start, but if parallelization is enabled, multiple tests can still run concurrently. To guarantee that tests run one at a time in the specified order, you must also disable parallelization.
+
 :::zone pivot="mstest"
 
 ## Order alphabetically
+
+> [!NOTE]
+> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class.
 
 MSTest discovers tests in the same order in which they are defined in the test class.
 
@@ -46,6 +53,9 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 :::zone pivot="xunit"
 
 The xUnit test framework allows for more granularity and control of test run order. You implement the `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces to control the order of test cases for a class, or test collections.
+
+> [!NOTE]
+> xUnit runs test classes in parallel by default. Tests within a single class always run sequentially, so `ITestCaseOrderer` controls the sequence within that class. To disable parallelism across all classes, apply `[assembly: CollectionBehavior(DisableTestParallelization = true)]` in an assembly-level file.
 
 ## Order by test case alphabetically
 
@@ -85,6 +95,9 @@ Then in a test class you set the test case order with the `TestCaseOrdererAttrib
 :::zone pivot="nunit"
 
 ## Order by priority
+
+> [!NOTE]
+> NUnit runs tests sequentially within a single thread by default. Unless you've applied `[Parallelizable]` attributes, the `[Order]` attribute alone is sufficient to guarantee serial execution in the specified sequence.
 
 To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nunit.org/articles/nunit/writing-tests/attributes/order). Tests with this attribute are started before tests without. The order value is used to determine the order to run the unit tests.
 

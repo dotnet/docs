@@ -175,3 +175,4 @@ You'd obviously need to add real logic to the `RunAsync` method, but this exampl
   - [Create a Windows Service using `BackgroundService` in .NET](windows-service.md)
 - Custom <xref:Microsoft.Extensions.Hosting.IHostedService> implementation:
   - [Implement the `IHostedService` interface in .NET](timer-service.md)
+- [What is the Aspire AppHost?](https://aspire.dev/get-started/app-host/)—Building a distributed app with workers? Aspire can orchestrate workers, APIs, and dependencies together.

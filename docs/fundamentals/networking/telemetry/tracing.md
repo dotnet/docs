@@ -137,3 +137,7 @@ It's possible to implement the enrichment of the `HTTP client request` activity 
 ## Need more tracing?
 
 If you have suggestions for other useful information that could be exposed via tracing, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).
+
+## See also
+
+- [Service defaults](https://aspire.dev/fundamentals/service-defaults/)—Learn how Aspire's service defaults project configures tracing and other telemetry automatically.

@@ -198,3 +198,4 @@ docker image rm 25aeb97a2e21
 - [Review the Azure services that support containers](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands](https://docs.docker.com/engine/reference/builder/)
 - [Explore the container tools in Visual Studio](/visualstudio/containers/overview)
+- [What is Aspire?](https://aspire.dev/get-started/what-is-aspire/)—Orchestrate containers, .NET projects, and dependencies together for multi-service apps.

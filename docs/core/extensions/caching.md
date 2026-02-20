@@ -437,3 +437,4 @@ To delete values in the distributed cache, call one of the `Remove` APIs:
 - [Cache in-memory in ASP.NET Core](/aspnet/core/performance/caching/memory)
 - [Distributed caching in ASP.NET Core](/aspnet/core/performance/caching/distributed)
 - [HybridCache library in ASP.NET Core](/aspnet/core/performance/caching/hybrid)
+- [Redis distributed caching in Aspire](https://aspire.dev/integrations/redis-distributed-caching/)—With Aspire, Redis is configured as a resource and connection strings are injected automatically.

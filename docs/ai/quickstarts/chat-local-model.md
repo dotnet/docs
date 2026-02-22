@@ -59,6 +59,12 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
+1. Navigate to the directory you created for the app:
+
+    ```dotnetcli
+    cd LocalAI
+    ```
+
 1. Add the [OllamaSharp](https://www.nuget.org/packages/OllamaSharp) package to your app:
 
     ```dotnetcli

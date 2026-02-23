@@ -274,9 +274,9 @@ The <xref:System.Char.ToUpper(System.Char)?displayProperty=nameWithType> and <xr
 
 ### `String.StartsWith` and `String.EndsWith`
 
-Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
+Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> (when the first parameter is a `string`), or <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> (when the first parameter is a `char`).
 
-By default, both of these methods perform a culture-sensitive comparison. In particular, they may ignore non-printing characters.
+There's an inconsistency in how the default overloads of these methods perform comparisons. Overloads that accept a `char` parameter perform an ordinal comparison, but overloads that accept a `string` parameter perform a culture-sensitive comparison and may ignore non-printing characters.
 
 ### `String.IndexOf` and `String.LastIndexOf`
 
@@ -285,6 +285,12 @@ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProp
 There's a lack of consistency in how the default overloads of these methods perform comparisons. All <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.Char> parameter perform an ordinal comparison, but the default <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.String> parameter perform a culture-sensitive comparison.
 
 If you call the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> or <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type. The overloads that include a <xref:System.Char> argument don't allow you to specify a <xref:System.StringComparison> type.
+
+### `String.Contains`
+
+Default interpretation: <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
+
+Unlike <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, the <xref:System.String.Contains%2A?displayProperty=nameWithType> method uses an ordinal comparison by default for both `char` and `string` overloads. However, you should still pass an explicit <xref:System.StringComparison> argument when the intent matters, to make the behavior clear at the call site.
 
 ### `MemoryExtensions.AsSpan.IndexOfAny` and the `SearchValues<T>` type
 
@@ -371,7 +377,7 @@ Because ICU and NLS implement different logic in their linguistic comparers, the
 
 One notable difference is the handling of embedded null and other control characters. When you use a linguistic comparer under NLS, some control characters such as the null character (`\0`) might be treated as ignorable in certain comparison contexts. Under ICU, these characters are treated as actual characters in the string. This can cause `string.IndexOf(string)` to return different results when the search string contains a null character.
 
-For example, if you call `"Hel\0lo".IndexOf("\0")` using the default (culture-sensitive) overload, NLS returns a different value than ICU because NLS may treat the embedded null as ignorable during the linguistic search.
+For example, if you call `"Hel\0lo".IndexOf("\0")` using the default (culture-sensitive) overload, NLS returns `3` (the actual index of the null character) while ICU returns `0`, because NLS treats the embedded null as ignorable during the linguistic search and matches the entire pattern at position 0.
 
 The best way to avoid these cross-platform and cross-implementation surprises is to always pass an explicit <xref:System.StringComparison> argument to string comparison methods, and to use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for non-linguistic comparisons.
 

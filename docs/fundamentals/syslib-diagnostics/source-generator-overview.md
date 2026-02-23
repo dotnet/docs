@@ -30,7 +30,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1008][1008] | One of the arguments to a logging method must implement the `Microsoft.Extensions.Logging.ILogger` interface |
 | [SYSLIB1009][1009] | Logging methods must be `static`                                                                             |
 | [SYSLIB1010][1010] | Logging methods must be `partial`                                                                            |
-| [SYSLIB1011][1011] | Logging methods cannot be generic                                                                            |
+| [SYSLIB1011][1011] | Logging methods cannot use the `allows ref struct` constraint                                                |
 | [SYSLIB1012][1012] | Redundant qualifier in logging message                                                                       |
 | [SYSLIB1013][1013] | Don't include exception parameters as templates in the logging message                                       |
 | [SYSLIB1014][1014] | Logging template has no corresponding method argument                                                        |

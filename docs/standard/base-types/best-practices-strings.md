@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Comparing Strings in .NET"
 description: Learn how to compare strings effectively in .NET applications.
-ms.date: 01/26/2023
+ms.date: 02/23/2026
 ms.topic: concept-article
 dev_langs:
   - "csharp"
@@ -47,6 +47,16 @@ Avoid the following practices when you compare strings:
 - Don't use string operations based on <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> in most cases. One of the few exceptions is when you're persisting linguistically meaningful but culturally agnostic data.
 - Don't use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.
 
+> [!TIP]
+> The [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules help identify call sites where a linguistic comparer is used unintentionally. To enable them and surface violations as build errors, set the following properties in your project file:
+>
+> ```xml
+> <PropertyGroup>
+>   <AnalysisMode>All</AnalysisMode>
+>   <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
+> </PropertyGroup>
+> ```
+
 ## Specify string comparisons explicitly
 
 Most of the string manipulation methods in .NET are overloaded. Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated. Most of the methods that don't rely on defaults include a parameter of type <xref:System.StringComparison>, which is an enumeration that explicitly specifies rules for string comparison by culture and case. The following table describes the <xref:System.StringComparison> enumeration members.
@@ -88,7 +98,7 @@ String comparison is the heart of many string-related operations, particularly s
 
 However, evaluating two strings for equality or sort order doesn't yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) (a locale-agnostic culture based on the English language) may produce different results.
 
-In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode).
+In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode) and [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
 
 ### String comparisons that use the current culture
 
@@ -197,6 +207,25 @@ The following table outlines the mapping from semantic string context to a <xref
 |Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant.|<xref:System.StringComparison.OrdinalIgnoreCase>|
 |Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison.InvariantCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.InvariantCultureIgnoreCase>|
 |Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|
+
+## Security implications
+
+If your app uses string APIs for filtering or access control, use ordinal comparisons. Linguistic comparisons based on the current culture can produce unexpected results that vary by platform and locale. Code patterns like the following might be susceptible to security exploits:
+
+```csharp
+//
+// THIS SAMPLE CODE IS INCORRECT.
+// DO NOT USE IT IN PRODUCTION.
+//
+public bool ContainsHtmlSensitiveCharacters(string input)
+{
+    if (input.IndexOf("<") >= 0) { return true; }
+    if (input.IndexOf("&") >= 0) { return true; }
+    return false;
+}
+```
+
+Because the `string.IndexOf(string)` method uses a linguistic search by default, it's possible for a string to contain a literal `'<'` or `'&'` character and for `string.IndexOf(string)` to return `-1`, indicating that the search substring wasn't found. Code analysis rules CA1307 and CA1309 flag such call sites and alert the developer that there's a potential problem.
 
 ## Common string comparison methods in .NET
 
@@ -317,6 +346,40 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/Program.cs":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/Program.vb":::
 
+## Differences between .NET and .NET Framework
+
+.NET and .NET Framework handle globalization differently. .NET Framework on Windows uses the operating system's [National Language Support (NLS)](https://learn.microsoft.com/windows/win32/intl/national-language-support) facility for linguistic string comparisons. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms.
+
+Because ICU and NLS implement different logic in their linguistic comparers, the results of string methods that use culture-sensitive comparison can differ between .NET and .NET Framework. This matters for any method that uses a linguistic comparer by default, including:
+
+- <xref:System.String.Compare%2A?displayProperty=nameWithType>
+- <xref:System.String.EndsWith%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.IndexOf%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.StartsWith%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.ToLower%2A?displayProperty=nameWithType>
+- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>
+- <xref:System.Globalization.TextInfo?displayProperty=nameWithType> (most members)
+- <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> (most members)
+- <xref:System.Array.Sort%2A?displayProperty=nameWithType> (when sorting arrays of strings)
+- <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=nameWithType> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet%601?displayProperty=nameWithType> (when the set contains strings)
+
+> [!NOTE]
+> This is not an exhaustive list of affected APIs.
+
+One notable difference is the handling of embedded null and other control characters. When you use a linguistic comparer under NLS, some control characters such as the null character (`\0`) might be treated as ignorable in certain comparison contexts. Under ICU, these characters are treated as actual characters in the string. This can cause `string.IndexOf(string)` to return different results when the search string contains a null character.
+
+For example, if you call `"Hel\0lo".IndexOf("\0")` using the default (culture-sensitive) overload, NLS returns a different value than ICU because NLS may treat the embedded null as ignorable during the linguistic search.
+
+The best way to avoid these cross-platform and cross-implementation surprises is to always pass an explicit <xref:System.StringComparison> argument to string comparison methods, and to use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for non-linguistic comparisons.
+
+If you migrate an application from .NET Framework to .NET and rely on legacy NLS behaviors on Windows, you can configure the application to use NLS. For more information, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
+
 ## See also
 
 - [Globalization in .NET apps](../../core/extensions/globalization.md)
+- [.NET globalization and ICU](../../core/extensions/globalization-icu.md)
+- [Behavior changes when comparing strings on .NET 5+](string-comparison-net-5-plus.md)
+- [How to compare strings in C#](../../csharp/how-to/compare-strings.md)

@@ -1,4 +1,4 @@
-﻿### Types in Microsoft.VisualBasic.MyServices namespace not available
+### Types in Microsoft.VisualBasic.MyServices namespace not available
 
 The types in the <xref:Microsoft.VisualBasic.MyServices?displayProperty=fullName> namespace are not available.
 

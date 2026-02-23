@@ -357,7 +357,7 @@ This new capability has an optimized implementation that takes advantage of the 
 
 ### System.Net.ServerSentEvents
 
-Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
+Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its Foundry Tools. To simplify the consumption of SSE, the new <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
 
 The following code demonstrates using the new class.
 
@@ -490,7 +490,7 @@ If you want to serialize with the [default options that ASP.NET Core uses](../..
 
 ### JsonSchemaExporter
 
-JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the <xref:System.Text.Json.Schema.JsonSchemaExporter> type, which supports generating a JSON schema that represents a .NET type.
+JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with Foundry Tools like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the <xref:System.Text.Json.Schema.JsonSchemaExporter> type, which supports generating a JSON schema that represents a .NET type.
 
 For more information, see [JSON schema exporter](../../../standard/serialization/system-text-json/extract-schema.md).
 

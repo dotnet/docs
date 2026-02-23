@@ -21,13 +21,13 @@ Millions of developers use .NET to create applications that run on the web, on m
 
 ## Supported AI providers
 
-.NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers that integrate with `Microsoft.Extensions.AI`:
+.NET libraries support a wide range of Foundry Tool providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers that integrate with `Microsoft.Extensions.AI`:
 
 | Provider | Description |
 |----------|------------------------|---------------------------|-----------------|-------------|
 | OpenAI | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
 | Azure OpenAI | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
-| Azure AI Foundry | Microsoft's managed platform for building and deploying AI agents at scale |
+| Microsoft Foundry | Microsoft's managed platform for building and deploying AI agents at scale |
 | GitHub Models | Access to models available through GitHub's AI model marketplace |
 | Ollama | Run open-source models locally, for example, Llama, Mistral, and Phi-3 |
 | Google Gemini | Google's multimodal AI models |

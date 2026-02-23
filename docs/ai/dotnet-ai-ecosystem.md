@@ -26,14 +26,14 @@ The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/pack
 
 ## Microsoft Agent Framework
 
-If you want to use low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview). Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
+If you want to use low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview). Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Microsoft Foundry, and more.
 
 This framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
 
 Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
 
 - **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and *magentic* (where a lead agent directs other agents) orchestration patterns.
-- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Azure AI Foundry) using plugin and connector models.
+- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Foundry) using plugin and connector models.
 - **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
 - **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.
 
@@ -45,7 +45,7 @@ For more information, see the [Microsoft Agent Framework documentation](/agent-f
 
 ## .NET SDKs for building AI apps
 
-Many different SDKs are available to build .NET apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Azure AI Services provide intelligent solutions for a variety of specific scenarios.
+Many different SDKs are available to build .NET apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Foundry Tools provide intelligent solutions for a variety of specific scenarios.
 
 ### .NET SDKs for OpenAI models
 
@@ -55,19 +55,19 @@ Many different SDKs are available to build .NET apps with AI capabilities depend
 | [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/) | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure OpenAI services documentation](/azure/ai-services/openai/) |
 | [OpenAI SDK](https://www.nuget.org/packages/OpenAI/) | [OpenAI supported models](https://platform.openai.com/docs/models) | [OpenAI SDK for .NET](https://github.com/openai/openai-dotnet) (OpenAI) | [OpenAI services documentation](https://platform.openai.com/docs/overview) |
 
-### .NET SDKs for Azure AI Services
+### .NET SDKs for Foundry Tools
 
-Azure offers many other AI services to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation.
+Azure offers many other Foundry Tools to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
 
 | Service                           | Description                                  |
 |-----------------------------------|----------------------------------------------|
 | [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
 | [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content.                      |
-| [Azure AI Document Intelligence](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
-| [Azure AI Language](/azure/ai-services/language-service/)     | Build apps with industry-leading natural language understanding capabilities. |
-| [Azure AI Speech](/azure/ai-services/speech-service/)         | Speech to text, text to speech, translation, and speaker recognition. |
-| [Azure AI Translator](/azure/ai-services/translator/)         | AI-powered translation technology with support for more than 100 languages and dialects. |
-| [Azure AI Vision](/azure/ai-services/computer-vision/)        | Analyze content in images and videos.                      |
+| [Azure Document Intelligence in Foundry Tools](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
+| [Azure Language in Foundry Tools](/azure/ai-services/language-service/)     | Build apps with industry-leading natural language understanding capabilities. |
+| [Azure Speech in Foundry Tools](/azure/ai-services/speech-service/)         | Speech to text, text to speech, translation, and speaker recognition. |
+| [Azure Translator in Foundry Tools](/azure/ai-services/translator/)         | AI-powered translation technology with support for more than 100 languages and dialects. |
+| [Azure Vision in Foundry Tools](/azure/ai-services/computer-vision/)        | Analyze content in images and videos.                      |
 
 ## Develop with local AI models
 

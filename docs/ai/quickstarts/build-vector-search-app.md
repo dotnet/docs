@@ -153,7 +153,7 @@ Complete the following steps to create a .NET console app that can:
     :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -187,7 +187,7 @@ Complete the following steps to create a .NET console app that can:
 
 If you no longer need them, delete the Azure OpenAI resource and model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end

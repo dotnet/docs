@@ -1,7 +1,7 @@
 The sample app you created is a Blazor Interactive Server web app preconfigured with common AI and data services. The app template handles the following concerns for you:
 
 - Includes essential `Microsoft.Extensions.AI` packages and other dependencies in the `.csproj` file to help you get started working with AI.
-- Creates various AI services and registers them for dependency injection in the `Program.cs` file:
+- Creates various Foundry Tools and registers them for dependency injection in the `Program.cs` file:
   - An `IChatClient` service to chat back and forth with the generative AI model.
   - An `IEmbeddingGenerator` service that's used to generate embeddings, which are essential for vector search functionality.
   - A `JsonVectorStore` to act as an in-memory vector store.

@@ -33,7 +33,7 @@ Use embeddings to help a model understand the meaning and context of text, and t
 
 Use audio embeddings to process audio files or inputs in your app.
 
-For example, [Azure AI Speech](/azure/ai-services/speech-service/) supports a range of audio embeddings, including [speech to text](/azure/ai-services/speech-service/speech-to-text) and [text to speech](/azure/ai-services/speech-service/text-to-speech). You can process audio in real-time or in batches.
+For example, [Azure Speech in Foundry Tools](/azure/ai-services/speech-service/) supports a range of audio embeddings, including [speech to text](/azure/ai-services/speech-service/speech-to-text) and [text to speech](/azure/ai-services/speech-service/text-to-speech). You can process audio in real-time or in batches.
 
 ### Turn text into images or images into text
 

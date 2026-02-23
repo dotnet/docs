@@ -29,7 +29,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     * For the **Framework** option, select **.NET 9.0**.
-    * For the **AI service provider** option, select **Azure OpenAI**.
+    * For the **Foundry Tool provider** option, select **Azure OpenAI**.
     * Make sure the **Use keyless authentication for Azure services** checkbox is checked.
     * For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
@@ -83,7 +83,7 @@ The AI template uses Microsoft Entra ID for seamless, keyless authentication. It
 
 1. Assign a role to your developer account to access the Azure OpenAI resource:
 
-    * In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
+    * In the Azure portal, navigate to the overview page of your Azure OpenAI resource.
     * Select **Access control (IAM)** from the left navigation.
     * [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
 

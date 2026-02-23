@@ -23,7 +23,7 @@ The <xref:Microsoft.Extensions.AI.IImageGenerator> interface provides a unified,
 <!--Prereqs-->
 [!INCLUDE [azure-openai-prereqs](../quickstarts/includes/prerequisites-azure-openai.md)]
 
-## Configure the AI service
+## Configure the Foundry Tool
 
 To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-image-1` model.
 
@@ -173,7 +173,7 @@ When implementing text-to-image generation in your applications, consider these 
 
 When you no longer need the Azure OpenAI resource, delete it to avoid incurring charges:
 
-1. In the [Azure Portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
 1. Select the resource and then select **Delete**.
 
 ## Next steps

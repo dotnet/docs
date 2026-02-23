@@ -1,4 +1,4 @@
-﻿### Types in Microsoft.VisualBasic.ApplicationServices namespace not available
+### Types in Microsoft.VisualBasic.ApplicationServices namespace not available
 
 The types in the <xref:Microsoft.VisualBasic.ApplicationServices?displayProperty=fullName> namespace are not available.
 

@@ -14,7 +14,7 @@ In this tutorial, you create an MSTest app to evaluate the chat response of an O
 - [.NET 8 or a later version](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com/) (optional)
 
-## Configure the AI service
+## Configure the Foundry Tool
 
 To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
 

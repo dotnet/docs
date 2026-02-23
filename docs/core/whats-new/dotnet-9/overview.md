@@ -54,7 +54,7 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 ## AI building blocks
 
-.NET 9 introduces a unified layer of C# abstractions through the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) packages. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
+.NET 9 introduces a unified layer of C# abstractions through the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) packages. These abstractions facilitate interaction with Foundry Tools, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
 
 .NET 9 also includes new tensor types that expand AI capabilities. <xref:System.Numerics.Tensors.TensorPrimitives> and the new <xref:System.Numerics.Tensors.Tensor%601> type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data. You can find these types in the latest release of the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors/).
 

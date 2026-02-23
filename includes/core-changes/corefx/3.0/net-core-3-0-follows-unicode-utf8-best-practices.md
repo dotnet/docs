@@ -1,4 +1,4 @@
-### Replacing ill-formed UTF-8 byte sequences follows Unicode guidelines
+﻿### Replacing ill-formed UTF-8 byte sequences follows Unicode guidelines
 
 When the <xref:System.Text.UTF8Encoding> class encounters an ill-formed UTF-8 byte sequence during a byte-to-character transcoding operation, it replaces that sequence with a '�' (U+FFFD REPLACEMENT CHARACTER) character in the output string. .NET Core 3.0 differs from previous versions of .NET Core and the .NET Framework by following the Unicode best practice for performing this replacement during the transcoding operation.
 

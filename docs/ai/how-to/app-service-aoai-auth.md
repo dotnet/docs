@@ -181,7 +181,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="41-46":::
 
     > [!TIP]
-    > Learn more about ASP.NET Core dependency injection and how to register other Foundry Tools types in the Azure SDK for .NET [dependency injection](../../azure/sdk/dependency-injection.md) documentation.
+    > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [dependency injection](../../azure/sdk/dependency-injection.md) documentation.
 
 ## Related content
 

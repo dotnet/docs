@@ -1,4 +1,4 @@
-### Default value of HttpRequestMessage.Version changed to 1.1
+﻿### Default value of HttpRequestMessage.Version changed to 1.1
 
 The default value of the <xref:System.Net.Http.HttpRequestMessage.Version?displayProperty=fullName> property has changed from 2.0 to 1.1.
 

@@ -1,4 +1,4 @@
-### Types in Microsoft.VisualBasic.Devices namespace not available
+﻿### Types in Microsoft.VisualBasic.Devices namespace not available
 
 The types in the <xref:Microsoft.VisualBasic.Devices?displayProperty=fullName> namespace are not available.
 

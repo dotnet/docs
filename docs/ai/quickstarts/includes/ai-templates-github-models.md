@@ -29,7 +29,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
-    - For the **Foundry Tool provider** option, select **GitHub Models**.
+    - For the **AI service provider** option, select **GitHub Models**.
     - For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
 
@@ -67,7 +67,7 @@ After you install the AI app templates, you can use them to create starter apps 
 The sample app you created is a Blazor Interactive Server web app preconfigured with common AI and data services. The app handles the following concerns for you:
 
 - Includes essential `Microsoft.Extensions.AI` packages and other dependencies in the `csproj` file to help you get started working with AI.
-- Creates various Foundry Tools and registers them for dependency injection in the `Program.cs` file:
+- Creates various AI services and registers them for dependency injection in the `Program.cs` file:
   - An `IChatClient` service to chat back and forth with the generative AI model
   - An `IEmbeddingGenerator` service that's used to generate embeddings, which are essential for vector search functionality
   - A `JsonVectorStore` to act as an in-memory vector store

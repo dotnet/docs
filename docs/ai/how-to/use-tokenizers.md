@@ -38,7 +38,7 @@ The Microsoft.ML.Tokenizers library provides:
 
 - **Extensible tokenizer architecture**: Allows specialization of Normalizer, PreTokenizer, Model/Encoder, and Decoder components.
 - **Multiple tokenization algorithms**: Supports BPE (byte-pair encoding), Tiktoken, Llama, CodeGen, and more.
-- **Token counting and estimation**: Helps manage costs and context limits when working with Foundry Tools.
+- **Token counting and estimation**: Helps manage costs and context limits when working with AI services.
 - **Flexible encoding options**: Provides methods to encode text to token IDs, count tokens, and decode tokens back to text.
 
 ## Use Tiktoken tokenizer

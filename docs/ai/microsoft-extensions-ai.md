@@ -1,12 +1,12 @@
 ---
 title: Microsoft.Extensions.AI libraries
-description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various Foundry Tools in your .NET applications.
+description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
 ms.date: 12/10/2025
 ---
 
 # Microsoft.Extensions.AI libraries
 
-.NET developers need to integrate and interact with a growing variety of artificial intelligence (AI) services in their apps. The `Microsoft.Extensions.AI` libraries provide a unified approach for representing generative AI components, and enable seamless integration and interoperability with various Foundry Tools. This article introduces the libraries and provides in-depth usage examples to help you get started.
+.NET developers need to integrate and interact with a growing variety of artificial intelligence (AI) services in their apps. The `Microsoft.Extensions.AI` libraries provide a unified approach for representing generative AI components, and enable seamless integration and interoperability with various AI services. This article introduces the libraries and provides in-depth usage examples to help you get started.
 
 ## The packages
 
@@ -32,7 +32,7 @@ For information about how to install NuGet packages, see [dotnet package add](..
 
 ### The `IChatClient` interface
 
-The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstraction responsible for interacting with Foundry Tools that provide chat capabilities. It includes methods for sending and receiving messages with multi-modal content (such as text, images, and audio), either as a complete set or streamed incrementally.
+The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstraction responsible for interacting with AI services that provide chat capabilities. It includes methods for sending and receiving messages with multi-modal content (such as text, images, and audio), either as a complete set or streamed incrementally.
 
 For more information and detailed usage examples, see [Use the IChatClient interface](ichatclient.md).
 
@@ -44,7 +44,7 @@ For more information and detailed usage examples, see [Use the IEmbeddingGenerat
 
 ### The IImageGenerator interface (experimental)
 
-The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various Foundry Tools through a consistent API. The interface supports text-to-image generation (by calling <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateAsync(Microsoft.Extensions.AI.ImageGenerationRequest,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)>) and [configuration options](xref:Microsoft.Extensions.AI.ImageGenerationOptions) for image size and format. Like other interfaces in the library, it can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
+The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation (by calling <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateAsync(Microsoft.Extensions.AI.ImageGenerationRequest,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)>) and [configuration options](xref:Microsoft.Extensions.AI.ImageGenerationOptions) for image size and format. Like other interfaces in the library, it can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
 
 For more information, see [Generate images from text using AI](quickstarts/text-to-image.md).
 
@@ -52,8 +52,8 @@ For more information, see [Generate images from text using AI](quickstarts/text-
 
 You can start building with `Microsoft.Extensions.AI` in the following ways:
 
-- **Library developers**: If you own libraries that provide clients for Foundry Tools, consider implementing the interfaces in your libraries. This allows users to easily integrate your NuGet package via the abstractions. For examples, see [IChatClient implementation examples](ichatclient.md#implementation-examples) and [IEmbeddingGenerator implementation examples](iembeddinggenerator.md#implementation-examples).
-- **Service consumers**: If you're developing libraries that consume Foundry Tools, use the abstractions instead of hardcoding to a specific Foundry Tool. This approach gives your consumers the flexibility to choose their preferred provider.
+- **Library developers**: If you own libraries that provide clients for AI services, consider implementing the interfaces in your libraries. This allows users to easily integrate your NuGet package via the abstractions. For examples, see [IChatClient implementation examples](ichatclient.md#implementation-examples) and [IEmbeddingGenerator implementation examples](iembeddinggenerator.md#implementation-examples).
+- **Service consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred provider.
 - **Application developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.
 

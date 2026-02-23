@@ -29,7 +29,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     * For the **Framework** option, select **.NET 9.0**.
-    * For the **Foundry Tool provider** option, select **Azure OpenAI**.
+    * For the **AI service provider** option, select **Azure OpenAI**.
     * Make sure the **Use keyless authentication for Azure services** checkbox is checked.
     * For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.

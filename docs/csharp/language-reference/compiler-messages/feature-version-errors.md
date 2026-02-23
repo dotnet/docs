@@ -22,7 +22,7 @@ f1_keywords:
   - "CS8936" # ERR_FeatureNotAvailableInVersion10  Feature is not available in C# 10. Please use language version.
   - "CS9058" # ERR_FeatureNotAvailableInVersion11  Feature is not available in C# 11. Please use language version.
   - "CS8303" # ERR_LanguageVersionCannotHaveLeadingZeroes  Specified language version cannot have leading zeroes
-  - "CS8304" # ERR_CompilerAndLanguageVersion  Compiler version is lower tha Language version
+  - "CS8304" # ERR_CompilerAndLanguageVersion  Compiler version is lower than Language version
   - "CS8306" # ERR_TupleInferredNamesNotAvailable Tuple element name '{0}' is inferred. Please use language version {1} or greater to access an element by its inferred name.
   - "CS8371" # WRN_AttributesOnBackingFieldsNotAvailable  Field-targeted attributes on auto-properties are not supported in language version
   - "CS8401" # ERR_AltInterpolatedVerbatimStringsNotAvailable  To use '@$' instead of '$@' for an interpolated verbatim string, please use language version '{0}' or greater.

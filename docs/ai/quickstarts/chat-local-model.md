@@ -59,7 +59,7 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
-1. Navigate to the directory you created for the app:
+1. Change directory into the app folder:
 
     ```dotnetcli
     cd LocalAI

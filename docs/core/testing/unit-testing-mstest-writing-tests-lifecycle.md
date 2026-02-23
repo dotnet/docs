@@ -105,7 +105,7 @@ public class ClassLifecycleExample
     [TestMethod]
     public async Task GetUsers_ReturnsSuccess()
     {
-        var response = await _client!.GetAsync("/users");
+        HttpResponseMessage response = await _client!.GetAsync("/users");
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
 }
@@ -232,7 +232,7 @@ public class TestLevelSetupExample
     [TestMethod]
     public void Add_TwoNumbers_ReturnsSum()
     {
-        var result = _calculator!.Add(2, 3);
+        int result = _calculator!.Add(2, 3);
         Assert.AreEqual(5, result);
     }
 }
@@ -293,7 +293,7 @@ public class TestLevelCleanupExample
     [TestMethod]
     public async Task GetData_ReturnsSuccess()
     {
-        var response = await _client!.GetAsync("https://example.com");
+        HttpResponseMessage response = await _client!.GetAsync("https://example.com");
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
 }

@@ -332,7 +332,7 @@ For a reliable production deployment using SQL Server, supply a SQL Server conne
 > [!NOTE]
 > Starting with Orleans 10.0, ADO.NET providers require the `Microsoft.Data.SqlClient` package instead of `System.Data.SqlClient`. Use the invariant `Microsoft.Data.SqlClient` in Orleans 10.0 and later.
 
-### [Orleans 10.0+](#tab/orleans-10)
+### Orleans 10.0+
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
@@ -358,7 +358,7 @@ builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
 using var host = builder.Build();
 ```
 
-### [Orleans 7.0-9.x](#tab/orleans-7)
+### Orleans 7.0-9.x
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
@@ -383,8 +383,6 @@ builder.Logging.SetMinimumLevel(LogLevel.Information).AddConsole();
 
 using var host = builder.Build();
 ```
-
----
 
 Client configuration:
 

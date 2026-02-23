@@ -54,7 +54,8 @@
                     "csharp-11.0/*.md",
                     "csharp-12.0/*.md",
                     "csharp-13.0/*.md",
-                    "csharp-14.0/*.md"
+                    "csharp-14.0/*.md",
+                    "collection-expression-arguments.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -137,7 +138,7 @@
             "ms.author": "dotnetcontent",
             "ms.devlang": "dotnet",
             "ms.service": "dotnet",
-            "ms.topic": "article",
+            "ms.topic": "concept-article",
             "searchScope": [
                 ".NET"
             ],
@@ -257,7 +258,7 @@
                 "docs/csharp/language-reference/compiler-messages/*.md": "error-reference",
                 "docs/csharp/linq/*.md": "how-to",
                 "docs/csharp/misc/*.md": "error-reference",
-                "docs/csharp/programming-guide/**": "article",
+                "docs/csharp/programming-guide/**": "concept-article",
                 "docs/csharp/roslyn-sdk/get-started/*.md": "tutorial",
                 "docs/csharp/roslyn-sdk/tutorials/*.md": "tutorial",
                 "docs/csharp/tour-of-csharp/*.md": "overview",

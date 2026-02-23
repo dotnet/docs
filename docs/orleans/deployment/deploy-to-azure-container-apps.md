@@ -55,7 +55,7 @@ curl -sSL https://aspire.dev/install.sh | bash
 
 The `aspire deploy` command is currently in preview and must be explicitly enabled:
 
-### [Windows (PowerShell)](#tab/windows)
+### [Windows](#tab/windows)
 
 ```powershell
 $env:DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND="true"
@@ -117,12 +117,12 @@ aspire deploy --deployment-params-file deployment-params.json
 
 When you deploy an Orleans Aspire application to Azure Container Apps, `aspire deploy` automatically provisions:
 
-- **Azure Container Apps environment** - The hosting environment for your containers
-- **Azure Container Registry (ACR)** - For storing your container images
-- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders
-- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming
-- **Azure Monitor / Application Insights** - For observability and distributed tracing
-- **Managed identities** - For secure, passwordless authentication between services
+- **Azure Container Apps environment** - The hosting environment for your containers.
+- **Azure Container Registry (ACR)** - For storing your container images.
+- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders.
+- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming.
+- **Azure Monitor / Application Insights** - For observability and distributed tracing.
+- **Managed identities** - For secure, passwordless authentication between services.
 
 > [!TIP]
 > To update your app after code changes, simply run `aspire deploy` again. The CLI handles incremental updates efficiently.

@@ -27,8 +27,19 @@ This tutorial lacks appropriate error handling and other essential code useful f
 
 ## Prerequisites
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads)
+- [The latest .NET SDK](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
 - [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads)
-- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- [.NET SDK compatible with your target Orleans version](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
 
 ## Project setup
 

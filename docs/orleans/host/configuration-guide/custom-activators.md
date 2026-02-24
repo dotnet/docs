@@ -85,6 +85,28 @@ You can implement activators for generic types. The Orleans code generator recog
 
 Both attributes are defined in the `Orleans.Serialization` namespace.
 
+## Simple dependency injection with `[GeneratedActivatorConstructor]`
+
+If your type only needs injected dependencies during deserialization and you don't need custom creation logic such as object pooling, you can use the <xref:Orleans.GeneratedActivatorConstructorAttribute> attribute instead of implementing `IActivator<T>`. This attribute marks a specific constructor for the Orleans code generator to use when activating instances. Constructor parameters are resolved from the <xref:System.IServiceProvider>.
+
+:::code language="csharp" source="snippets/custom-activators/ActivatorConstructor.cs" id="ActivatorConstructorType":::
+
+In the preceding example:
+
+- The `[GeneratedActivatorConstructor]` attribute tells the code generator to use that constructor when creating instances during deserialization.
+- The `ILogger<NotificationMessage>` parameter is resolved from dependency injection automatically.
+- No separate activator class, `[UseActivator]`, or `[RegisterActivator]` attribute is needed.
+
+### When to use each approach
+
+| Approach | Use when |
+|---|---|
+| `[GeneratedActivatorConstructor]` | You need constructor-injected services and standard `new` construction is sufficient. |
+| `IActivator<T>` with `[UseActivator]` | You need custom creation logic (object pooling, complex initialization, factory patterns). |
+
+> [!NOTE]
+> `[GeneratedActivatorConstructor]` and `[UseActivator]` serve different purposes. The constructor attribute tells the code generator which constructor to call, while `[UseActivator]` delegates creation entirely to an `IActivator<T>` implementation. Don't combine them on the same type.
+
 ## How it works
 
 When Orleans deserializes a type marked with `[UseActivator]`:
@@ -99,3 +121,4 @@ If no custom activator is registered and the type doesn't have `[UseActivator]`,
 ## See also
 
 - [Serialization and custom serializers](serialization.md)
+- [Serialization lifecycle hooks](serialization-lifecycle-hooks.md)

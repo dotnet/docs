@@ -10,6 +10,14 @@ ms.date: 09/15/2025
 
 In this article, you learn how to migrate from VSTest to Microsoft.Testing.Platform.
 
+This article focuses on migration steps and argument mapping.
+
+If you still need to choose a platform, start with [Test platforms overview](./test-platforms-overview.md).
+
+If you need detailed behavior of `dotnet test` modes, see [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md).
+
+If you need a single list of platform and extension command-line options, see [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md).
+
 ## Opt-in to use Microsoft.Testing.Platform
 
 The first step in the migration is to opt-in to using Microsoft.Testing.Platform.

@@ -10,7 +10,23 @@ ms.date: 03/17/2024
 
 Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in all contexts, including continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Test Explorer. The Microsoft.Testing.Platform is embedded directly in your test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
 
+> [!TIP]
+> If you need help choosing between VSTest and Microsoft.Testing.Platform, start with [Test platforms overview](./test-platforms-overview.md).
+
+Use this article when you already decided to use Microsoft.Testing.Platform and you want to understand its model, capabilities, and operational behavior.
+
 `Microsoft.Testing.Platform` is open source. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
+
+## Start here
+
+Use the following path, based on what you need next:
+
+- Understand platform behavior in CLI: [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)
+- Find platform and extension CLI switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
+- Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [Microsoft.Testing.Platform support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
+- Migrate an existing VSTest setup: [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md)
+- Add diagnostics, coverage, and reporting: [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md)
+- Build your own extension: [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)
 
 ## Microsoft.Testing.Platform pillars
 
@@ -49,10 +65,10 @@ Microsoft.Testing.Platform supports .NET (.NET 8 and later), .NET Framework (ver
 
 ## Run and debug tests
 
-`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
+`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 > [!TIP]
-> You can ignore a specific [exit code](./microsoft-testing-platform-exit-codes.md) using the [`--ignore-exit-code`](#options) command line option.
+> You can ignore a specific [exit code](./microsoft-testing-platform-troubleshooting.md#ignore-specific-exit-codes) using the [`--ignore-exit-code`](#options) command line option.
 >
 > You can also set command line options that apply to a specific test project in the project file using the [`TestingPlatformCommandLineArguments`](../project-sdk/msbuild-props.md#testingplatformcommandlinearguments) MSBuild property. One common use case is for test projects that have all the tests ignored, which will normally exit with exit code 8 (the test session ran zero tests). In this scenario, you can add the following under a `PropertyGroup` in your project file:
 >
@@ -61,7 +77,7 @@ Microsoft.Testing.Platform supports .NET (.NET 8 and later), .NET Framework (ver
 > ```
 
 > [!IMPORTANT]
-> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
+> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-extensions-telemetry.md).
 
 ### [.NET CLI](#tab/dotnetcli)
 
@@ -276,7 +292,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`--ignore-exit-code`**
 
-  Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./microsoft-testing-platform-exit-codes.md#ignore-specific-exit-codes).
+  Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./microsoft-testing-platform-troubleshooting.md#ignore-specific-exit-codes).
 
 - **`--info`**
 
@@ -295,7 +311,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
+  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-faq.md#exit-codes).
 
   > [!NOTE]
   > This feature is available in Microsoft.Testing.Platform starting with version 1.5.
@@ -326,7 +342,7 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 
 ## See also
 
-- [Microsoft.Testing.Platform and VSTest comparison](microsoft-testing-platform-vs-vstest.md)
+- [Test platforms overview](test-platforms-overview.md)
 - [Microsoft.Testing.Platform extensions](microsoft-testing-platform-extensions.md)
 - [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md)
-- [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md)
+- [Microsoft.Testing.Platform FAQ and troubleshooting](microsoft-testing-platform-faq.md)

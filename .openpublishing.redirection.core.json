@@ -1651,7 +1651,7 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-exit-codes",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting#exit-codes",
             "redirect_document_id": true
         },
         {
@@ -1670,12 +1670,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-telemetry",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-telemetry",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest",
+            "redirect_url": "/dotnet/core/testing/test-platforms-overview",
             "redirect_document_id": true
         },
         {
@@ -1919,7 +1919,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-exit-codes.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-exit-codes"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting#exit-codes"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-exit-codes.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting#exit-codes",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-code-coverage.md",
@@ -1935,7 +1940,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-faq.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-faq"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-faq.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-hosting.md",
@@ -1975,11 +1985,21 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-telemetry.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-telemetry"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-telemetry"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-telemetry.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-telemetry",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-vs-vstest.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest"
+            "redirect_url": "/dotnet/core/testing/test-platforms-overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-vs-vstest.md",
+            "redirect_url": "/dotnet/core/testing/test-platforms-overview",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-published-output.md",

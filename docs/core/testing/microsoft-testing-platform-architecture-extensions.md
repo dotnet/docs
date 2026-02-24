@@ -1000,7 +1000,7 @@ The `ITestApplicationLifecycleCallbacks` is a type of `ITestHostExtension`, whic
 
 *For example, the built-in hang dump feature is composed of both *in-process* and *out-of-process* extensions, and this method is used to exchange information with the *out-of-process* component of the extension.*
 
-`AfterRunAsync`: This method is the final call before exiting the [`int ITestApplication.RunAsync()`](./microsoft-testing-platform-architecture.md) and it provides the [`exit code`](./microsoft-testing-platform-exit-codes.md). It should be used solely for cleanup tasks and to notify any corresponding *out-of-process* extension that the *test host* is about to terminate.
+`AfterRunAsync`: This method is the final call before exiting the [`int ITestApplication.RunAsync()`](./microsoft-testing-platform-architecture.md) and it provides the [`exit code`](./microsoft-testing-platform-troubleshooting.md#exit-codes). It should be used solely for cleanup tasks and to notify any corresponding *out-of-process* extension that the *test host* is about to terminate.
 
 Finally, both APIs take a `CancellationToken` which the extension is expected to honor.
 

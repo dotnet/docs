@@ -81,7 +81,7 @@ Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 5ms - Contoso.Un
 ```
 
 > [!NOTE]
-> The known exit codes returned by the `ITestApplication.RunAsync()` call are detailed in [platform exit codes](./microsoft-testing-platform-exit-codes.md).
+> The known exit codes returned by the `ITestApplication.RunAsync()` call are detailed in [platform exit codes](./microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 ## Step 2: Extending the platform
 

@@ -415,7 +415,7 @@ The same locale-sensitivity issue applies when instantiating a sorted collection
 
 ## Differences between .NET and .NET Framework
 
-.NET and .NET Framework handle globalization differently. .NET Framework on Windows uses the operating system's [National Language Support (NLS)](https://learn.microsoft.com/windows/win32/intl/national-language-support) facility for linguistic string comparisons. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms.
+.NET and .NET Framework handle globalization differently. .NET Framework on Windows uses the operating system's [National Language Support (NLS)](/windows/win32/intl/national-language-support) facility for linguistic string comparisons. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms.
 
 Because ICU and NLS implement different logic in their linguistic comparers, the results of string methods that use culture-sensitive comparison can differ between .NET and .NET Framework. This matters for any method that uses a linguistic comparer by default, including:
 

@@ -212,18 +212,8 @@ The following table outlines the mapping from semantic string context to a <xref
 
 If your app uses string APIs for filtering or access control, use ordinal comparisons. Linguistic comparisons based on the current culture can produce unexpected results that vary by platform and locale. Code patterns like the following might be susceptible to security exploits:
 
-```csharp
-//
-// THIS SAMPLE CODE IS INCORRECT.
-// DO NOT USE IT IN PRODUCTION.
-//
-public bool ContainsHtmlSensitiveCharacters(string input)
-{
-    if (input.IndexOf("<") >= 0) { return true; }
-    if (input.IndexOf("&") >= 0) { return true; }
-    return false;
-}
-```
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="html_example":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="html_example":::
 
 Because the `string.IndexOf(string)` method uses a linguistic search by default, it's possible for a string to contain a literal `'<'` or `'&'` character and for `string.IndexOf(string)` to return `-1`, indicating that the search substring wasn't found. Code analysis rules CA1307 and CA1309 flag such call sites and alert the developer that there's a potential problem.
 
@@ -298,18 +288,8 @@ Unlike <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, the <xref:S
 
 If you're comparing a string against a fixed set of known values repeatedly, consider using the <xref:System.Buffers.SearchValues`1.Contains(`0)?displayProperty=nameWithType> method instead of chained comparisons or LINQ-based approaches. `SearchValues<T>` can precompute internal lookup structures and optimize the comparison logic based on the provided values. To see performance benefits, create and cache the `SearchValues<string>` instance once, then reuse it for comparisons:
 
-```csharp
-using System.Buffers;
-
-private static readonly SearchValues<string> Commands = SearchValues.Create(
-    new[] { "start", "run", "go", "begin", "commence" },
-    StringComparison.OrdinalIgnoreCase);
-
-if (Commands.Contains(command))
-{
-    // ...
-}
-```
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Buffers.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Buffers.vb":::
 
 In .NET 9, `SearchValues` was extended to support searching for substrings within a larger string. For an example, see [`SearchValues` expansion](../../core/whats-new/dotnet-9/libraries.md#searchvalues-expansion).
 
@@ -352,6 +332,13 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/Program.cs":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/Program.vb":::
 
+### Collections example: `SortedSet<T>` and `List<T>.Sort`
+
+The same locale-sensitivity issue applies when instantiating a sorted collection of strings or sorting an existing string-based collection. Always specify an explicit comparer:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/DemoSorting.cs" id="code":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/DemoSorting.vb" id="code":::
+
 ## Differences between .NET and .NET Framework
 
 .NET and .NET Framework handle globalization differently. .NET Framework on Windows uses the operating system's [National Language Support (NLS)](https://learn.microsoft.com/windows/win32/intl/national-language-support) facility for linguistic string comparisons. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms.
@@ -363,7 +350,9 @@ Because ICU and NLS implement different logic in their linguistic comparers, the
 - <xref:System.String.IndexOf%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
 - <xref:System.String.StartsWith%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
 - <xref:System.String.ToLower%2A?displayProperty=nameWithType>
+- <xref:System.String.ToLowerInvariant%2A?displayProperty=nameWithType>
 - <xref:System.String.ToUpper%2A?displayProperty=nameWithType>
+- <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType>
 - <xref:System.Globalization.TextInfo?displayProperty=nameWithType> (most members)
 - <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> (most members)
 - <xref:System.Array.Sort%2A?displayProperty=nameWithType> (when sorting arrays of strings)
@@ -377,7 +366,10 @@ Because ICU and NLS implement different logic in their linguistic comparers, the
 
 One notable difference is the handling of embedded null and other control characters. When you use a linguistic comparer under NLS, some control characters such as the null character (`\0`) might be treated as ignorable in certain comparison contexts. Under ICU, these characters are treated as actual characters in the string. This can cause `string.IndexOf(string)` to return different results when the search string contains a null character.
 
-For example, if you call `"Hel\0lo".IndexOf("\0")` using the default (culture-sensitive) overload, NLS returns `3` (the actual index of the null character) while ICU returns `0`, because NLS treats the embedded null as ignorable during the linguistic search and matches the entire pattern at position 0.
+For example, the following code can produce a different answer depending on the current runtime:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="framework_diffs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="framework_diffs":::
 
 The best way to avoid these cross-platform and cross-implementation surprises is to always pass an explicit <xref:System.StringComparison> argument to string comparison methods, and to use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for non-linguistic comparisons.
 

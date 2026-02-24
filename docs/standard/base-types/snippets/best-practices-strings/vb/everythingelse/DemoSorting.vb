@@ -1,7 +1,6 @@
-﻿Imports System
-
-Module Program
-    Sub Main(args As String())
+﻿Public Class DemoSorting
+    Sub Method1()
+        '<code>
         ' Words to sort
         Dim values As String() = {"able", "ångström", "apple", "Æble",
                                   "Windows", "Visual Studio"}
@@ -21,5 +20,6 @@ Module Program
 
         Dim list2 As New List(Of String)(values)
         list2.Sort(StringComparer.Ordinal)
+        '</code>
     End Sub
-End Module
+End Class

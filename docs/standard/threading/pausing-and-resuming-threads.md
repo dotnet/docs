@@ -38,12 +38,17 @@ The example calls <xref:System.Threading.Thread.Join%2A?displayProperty=nameWith
 > [!NOTE]
 > If the target thread is not blocked when <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> is called, the thread is not interrupted until it blocks. If the thread never blocks, it could complete without ever being interrupted.  
   
- If a wait is a managed wait, then <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> wakes the thread immediately. If a wait is an unmanaged wait (for example, a platform invoke call to the Win32 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) function), <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> can't take control of the thread until it returns to or calls into managed code. In managed code, <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadInterruptedException> to be thrown in the destination thread.
+ If a wait is a managed wait, then <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> wakes the thread immediately. If a wait is an unmanaged wait (for example, a platform invoke call to the Win32 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) function), <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> can't take control of the thread until it returns to or calls into managed code. In managed code, the behavior is as follows:
+
+- <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadInterruptedException> to be thrown in the destination thread.
+
+- .NET Framework only: <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadAbortException> to be thrown on the thread. For details, see [Destroy threads](destroying-threads.md).
   
 ## See also
 
 - <xref:System.Threading.Thread>
 - <xref:System.Threading.ThreadInterruptedException>
+- <xref:System.Threading.ThreadAbortException>
 - [Threading](managed-threading-basics.md)
 - [Using Threads and Threading](using-threads-and-threading.md)
 - [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md)

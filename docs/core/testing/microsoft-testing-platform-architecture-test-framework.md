@@ -97,7 +97,9 @@ public interface ITestFramework : IExtension
 }
 ```
 
-The `ITestFramework` interface inherits from the [IExtension](#the-iextension-interface) interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`. Please make sure that you return `true` from this method if you have no special needs.
+#### The `IExtension` interface
+
+The `ITestFramework` interface inherits from the `IExtension` interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`. Please make sure that you return `true` from this method if you have no special needs.
 
 #### The `CreateTestSessionAsync` method
 
@@ -186,7 +188,7 @@ For a comprehensive list of information that can be published to the testing pla
 > [!WARNING]
 > Neglecting to invoke `Complete()` on the request will result in the test application becoming unresponsive.
 
-To customize your test framework according to your requirements or those of your users, you can use a personalized section inside the [configuration](./microsoft-testing-platform-architecture-services.md#the-iconfiguration-service) file or with custom [command line options](#the-icommandlineoptionsprovider-extensions).
+To customize your test framework according to your requirements or those of your users, you can use a personalized section inside the [configuration](./microsoft-testing-platform-architecture-services.md#the-iconfiguration-service) file or with custom [command line options](./microsoft-testing-platform-architecture-extensions.md#the-icommandlineoptionsprovider-extensions).
 
 ### Handling requests
 
@@ -708,6 +710,3 @@ public sealed record CancelledTestNodeStateProperty : TestNodeStateProperty
 ```
 
 `CancelledTestNodeStateProperty` informs the testing platform that this `TestNode` has failed due to cancellation.
-
-
-

@@ -76,7 +76,7 @@ public interface ICommandLineOptions
 }
 ```
 
-As observed, the `ICommandLineOptionsProvider` extends the [`IExtension`](#the-iextension-interface) interface. Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+As observed, the `ICommandLineOptionsProvider` extends the [`IExtension`](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface) interface. Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 The order of execution of the `ICommandLineOptionsProvider` is:
 
@@ -189,13 +189,13 @@ public interface ITestHostExtension : IExtension
 }
 ```
 
-The `ITestSessionLifetimeHandler` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `ITestSessionLifetimeHandler` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 Consider the following details for this API:
 
 `OnTestSessionStartingAsync`: This method is invoked prior to the commencement of the test session and receives the `SessionUid` object, which provides an opaque identifier for the current test session.
 
-`OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
+`OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
 
 Finally, both APIs take a `CancellationToken` which the extension is expected to honor.
 
@@ -239,7 +239,7 @@ public interface ITestHostExtension : IExtension
 }
 ```
 
-The `ITestApplicationLifecycleCallbacks` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `ITestApplicationLifecycleCallbacks` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 `BeforeRunAsync`: This method serves as the initial point of contact for the *test host* and is the first opportunity for an *in-process* extension to execute a feature. It's typically used to establish a connection with any corresponding *out-of-process* extensions if a feature is designed to operate across both environments.
 
@@ -251,7 +251,7 @@ Finally, both APIs take a `CancellationToken` which the extension is expected to
 
 ### The `IDataConsumer` extensions
 
-The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is pushed to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](#test-framework-extension) and its extensions.
+The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is pushed to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) and its extensions.
 
 *This extension point is crucial as it enables developers to gather and process all the information generated during a test session.*
 
@@ -291,13 +291,13 @@ public interface IData
 }
 ```
 
-The `IDataConsumer` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `IDataConsumer` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 `DataTypesConsumed`: This property returns a list of `Type` that this extension plans to consume. It corresponds to `IDataProducer.DataTypesProduced`. Notably, an `IDataConsumer` can subscribe to multiple types originating from different `IDataProducer` instances without any issues.
 
 `ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is pushed onto the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to push different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
 
-A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](#the-testnodeupdatemessage-data) produced by a [testing framework](#test-framework-extension) could be:
+A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data) produced by a [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) could be:
 
 ```csharp
 internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
@@ -345,7 +345,7 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 Finally, the API takes a `CancellationToken` which the extension is expected to honor.
 
 > [!IMPORTANT]
-> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
+> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
 
 <!-- avoid "No space in block quote" block quotes follow each other -->
 
@@ -419,7 +419,7 @@ public class EnvironmentVariable
 }
 ```
 
-The `ITestHostEnvironmentVariableProvider` is a type of `ITestHostControllersExtension`, which serves as a base for all *test host controller* extensions. Like all other extension points, it also inherits from [IExtension](#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `ITestHostEnvironmentVariableProvider` is a type of `ITestHostControllersExtension`, which serves as a base for all *test host controller* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 Consider the details for this API:
 
@@ -481,7 +481,7 @@ public interface ITestHostProcessInformation
 }
 ```
 
-The `ITestHostProcessLifetimeHandler` is a type of `ITestHostControllersExtension`, which serves as a base for all *test host controller* extensions. Like all other extension points, it also inherits from [IExtension](#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `ITestHostProcessLifetimeHandler` is a type of `ITestHostControllersExtension`, which serves as a base for all *test host controller* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 Consider the following details for this API:
 
@@ -489,7 +489,7 @@ Consider the following details for this API:
 
 `OnTestHostProcessStartedAsync`: This method is invoked immediately after the test host starts. This method offers an object that implements the `ITestHostProcessInformation` interface, which provides key details about the test host process result.
 > [!IMPORTANT]
-> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](#microsofttestingplatform-extensibility) extension such as [`ITestApplicationLifecycleCallbacks`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
+> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](./microsoft-testing-platform-architecture.md#in-process-vs-out-of-process-extensions) extension such as [`ITestApplicationLifecycleCallbacks`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
 
 `OnTestHostProcessExitedAsync`: This method is invoked when the test suite execution is complete. This method supplies an object that adheres to the `ITestHostProcessInformation` interface, which conveys crucial details about the outcome of the test host process.
 
@@ -501,7 +501,7 @@ The `ITestHostProcessInformation` interface provides the following details:
 
 ## Extensions execution order
 
-The testing platform consists of a [testing framework](#test-framework-extension) and any number of extensions that can operate [*in-process*](#microsofttestingplatform-extensibility) or [*out-of-process*](#microsofttestingplatform-extensibility). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked:
+The testing platform consists of a [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) and any number of extensions that can operate [*in-process*](./microsoft-testing-platform-architecture.md#in-process-vs-out-of-process-extensions) or [*out-of-process*](./microsoft-testing-platform-architecture.md#in-process-vs-out-of-process-extensions). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked:
 
 1. [ITestHostEnvironmentVariableProvider.UpdateAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process
 1. [ITestHostEnvironmentVariableProvider.ValidateTestHostEnvironmentVariablesAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process
@@ -510,9 +510,9 @@ The testing platform consists of a [testing framework](#test-framework-extension
 1. [ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process, this event can intertwine the actions of *in-process* extensions, depending on race conditions.
 1. [ITestApplicationLifecycleCallbacks.BeforeRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionStartingAsync](#the-itestsessionlifetimehandler-extensions): In-process
-1. [ITestFramework.CreateTestSessionAsync](#test-framework-extension): In-process
-1. [ITestFramework.ExecuteRequestAsync](#test-framework-extension): In-process, this method can be called one or more times. At this point, the testing framework will transmit information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) that can be utilized by the [IDataConsumer](#the-idataconsumer-extensions).
-1. [ITestFramework.CloseTestSessionAsync](#test-framework-extension): In-process
+1. [ITestFramework.CreateTestSessionAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process
+1. [ITestFramework.ExecuteRequestAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process, this method can be called one or more times. At this point, the testing framework will transmit information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) that can be utilized by the [IDataConsumer](#the-idataconsumer-extensions).
+1. [ITestFramework.CloseTestSessionAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestApplicationLifecycleCallbacks.AfterRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. In-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.
@@ -552,7 +552,7 @@ public interface IAsyncCleanableExtension
 
 ### The CompositeExtensionFactory<T\>
 
-As outlined in the [extensions](#microsofttestingplatform-extensibility) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
+As outlined in the [extensions](#other-extensibility-points) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
 
 Each interface addresses a particular feature, and according to .NET design, you implement this interface in a specific object. You can register the extension itself using the specific registration API `AddXXX` from the `TestHost` or `TestHostController` object from the `ITestApplicationBuilder` as detailed in the corresponding sections.
 
@@ -560,7 +560,7 @@ However, if you need to *share state* between two extensions, the fact that you 
 
 Hence, the testing platform provides a sophisticated method to implement multiple extension points using the same type, making data sharing a straightforward task. All you need to do is utilize the `CompositeExtensionFactory<T>`, which can then be registered using the same API as you would for a single interface implementation.
 
-For instance, consider a type that implements both `ITestSessionLifetimeHandler` and `IDataConsumer`. This is a common scenario because you often want to gather information from the [testing framework](#test-framework-extension) and then, when the testing session concludes, you'll dispatch your artifact using the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) within the `ITestSessionLifetimeHandler.OnTestSessionFinishingAsync`.
+For instance, consider a type that implements both `ITestSessionLifetimeHandler` and `IDataConsumer`. This is a common scenario because you often want to gather information from the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) and then, when the testing session concludes, you'll dispatch your artifact using the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) within the `ITestSessionLifetimeHandler.OnTestSessionFinishingAsync`.
 
 What you should do is to normally implement the interfaces:
 

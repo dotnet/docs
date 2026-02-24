@@ -9,7 +9,7 @@ Module Program
     Sub FrameworkDiffs()
         '<framework_diffs>
         Const greeting As String = "Hel" & vbNullChar & "lo"
-        Console.WriteLine($"{greeting.IndexOf(vbNullChar)}")
+        Console.WriteLine($"{greeting.IndexOf(CStr(vbNullChar))}")
 
         ' The snippet prints:
         '

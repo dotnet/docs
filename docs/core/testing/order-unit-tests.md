@@ -10,13 +10,13 @@ zone_pivot_groups: unit-testing-framework-set-one
 
 Occasionally, you may want to have unit tests run in a specific order. Ideally, the order in which unit tests run should _not_ matter, and it is [best practice](unit-testing-best-practices.md) to avoid ordering unit tests. Regardless, there may be a need to do so. In that case, this article demonstrates how to order test runs.
 
+> [!NOTE]
+> Test ordering and test parallelization are separate concerns. Specifying an execution order determines the sequence in which tests start, but if parallelization is enabled, multiple tests can still run concurrently. To guarantee that tests run one at a time in the specified order, you must also disable parallelization.
+
 If you prefer to browse the source code, see the [order .NET Core unit tests](/samples/dotnet/samples/order-unit-tests-cs) sample repository.
 
 > [!TIP]
 > In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer#create-custom-playlists) as an alternative.
-
-> [!NOTE]
-> Test ordering and test parallelization are separate concerns. Specifying an execution order determines the sequence in which tests start, but if parallelization is enabled, multiple tests can still run concurrently. To guarantee that tests run one at a time in the specified order, you must also disable parallelization.
 
 :::zone pivot="mstest"
 
@@ -105,7 +105,7 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nun
 
 :::zone-end
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Unit test code coverage](unit-testing-code-coverage.md)

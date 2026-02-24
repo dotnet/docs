@@ -30,7 +30,7 @@ public class MyNewService : ServiceBase
 
     //<Snippet16>
     private System.ComponentModel.IContainer _components;
-    private readonly EventLog _eventLog1;
+    private readonly EventLog eventLog1;
     //</Snippet16>
 
     [DebuggerStepThrough()]
@@ -44,13 +44,13 @@ public class MyNewService : ServiceBase
     public MyNewService()
     {
         InitializeComponent();
-        _eventLog1 = new EventLog();
+        eventLog1 = new EventLog();
         if (!EventLog.SourceExists("MySource"))
         {
             EventLog.CreateEventSource("MySource", "MyNewLog");
         }
-        _eventLog1.Source = "MySource";
-        _eventLog1.Log = "MyNewLog";
+        eventLog1.Source = "MySource";
+        eventLog1.Log = "MyNewLog";
     }
     //</Snippet2>
 
@@ -72,36 +72,36 @@ public class MyNewService : ServiceBase
             logName = args[1];
         }
 
-        _eventLog1 = new EventLog();
+        eventLog1 = new EventLog();
 
         if (!EventLog.SourceExists(eventSourceName))
         {
             EventLog.CreateEventSource(eventSourceName, logName);
         }
 
-        _eventLog1.Source = eventSourceName;
-        _eventLog1.Log = logName;
+        eventLog1.Source = eventSourceName;
+        eventLog1.Log = logName;
     }
     // </SnippetContructorWithArgs>
 
     //<Snippet3>
     protected override void OnStart(string[] args)
     {
-        _eventLog1.WriteEntry("In OnStart.");
+        eventLog1.WriteEntry("In OnStart.");
     }
     //</Snippet3>
 
     //<Snippet4>
     protected override void OnStop()
     {
-        _eventLog1.WriteEntry("In OnStop.");
+        eventLog1.WriteEntry("In OnStop.");
     }
     //</Snippet4>
 
     //<Snippet5>
     protected override void OnContinue()
     {
-        _eventLog1.WriteEntry("In OnContinue.");
+        eventLog1.WriteEntry("In OnContinue.");
     }
     //</Snippet5>
 }
@@ -147,12 +147,12 @@ namespace WrapUserService1
 //*******************************************************************
 class UserService2 : ServiceBase
 {
-    readonly EventLog _eventLog1;
+    readonly EventLog eventLog1;
 
     //<Snippet14>
     public UserService2()
     {
-        _eventLog1 = new EventLog();
+        eventLog1 = new EventLog();
         // Turn off autologging
 
         //<Snippet17>
@@ -166,8 +166,8 @@ class UserService2 : ServiceBase
                 "MySource", "MyLog");
         }
         // configure the event log instance to use this source name
-        _eventLog1.Source = "MySource";
-        _eventLog1.Log = "MyLog";
+        eventLog1.Source = "MySource";
+        eventLog1.Log = "MyLog";
     }
     //</Snippet14>
 
@@ -175,7 +175,7 @@ class UserService2 : ServiceBase
     protected override void OnStart(string[] args)
     {
         // write an entry to the log
-        _eventLog1.WriteEntry("In OnStart.");
+        eventLog1.WriteEntry("In OnStart.");
     }
     //</Snippet15>
 }

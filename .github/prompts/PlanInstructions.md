@@ -204,3 +204,204 @@ The hub page for the C# guide provides the roadmap for each of the audiences to 
 - The *experienced C# developer* should be encouraged to visit the *What's new* section to learn what skills to learn. They should be given the option to dive into any of the *Focus* sections. They should be given the option of visiting the *Fundamentals* section for the latest technique, and the *Reference* section for detailed information.
 
 Some sections may include a 2nd level landing page where that can provide value.
+
+## Feature map
+
+In this section, I'm using the information from the [Roslyn Feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) and the [C# version history article](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history) to catalog features, and subsets of features that are part of "Everyday C#".
+
+This is ordered from most recent to oldest. That's to emphasize that readers in the target audience, include AI agents and Copilots will have more information about older features, so that our key content needs to focus more on the newer improvements.
+
+### Include and explain
+
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) `field` keyword* (aka field-backed properties): This makes the transition from auto-properties to some validation easier.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Extensions*: This is a major design space.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Dictionary Expressions*: This like collection expressions.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) `Lock` object*: Yes, this is the *better* `lock`.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) `params` collections*: Yes, it's better than arrays generally.
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Collection expressions*: Yes
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Primary Constructors*: Yes
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Raw string literals*: Yes. Include interpolated raw string literals.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) List patterns*: Yes.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) File-local types*: Yes. Consider for helpers in the context of top level statements.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Required members*: Useful for class and struct design
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Auto-default structs*: Important to discuss in the context of `struct` design.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Record structs*: Yes.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Global using directives*: Yes.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) File-scoped namespaces*: Yes. Prefer this syntax
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170)Parameterless struct constructors*: Yes, include this in the discussion of `struct` design.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Records and `with` expressions*: Yes, it's part of types
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Init-only setters*: Yes, cover as part of class and struct design
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Top-level statements*: Yes.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Pattern matching enhancements - relational, combinator, parenthesized, and type patterns*: Yes. Cover patterns in full.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Native sized integers*: Yes, at least in passing.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Target-typed new expressions*: Yes, prefer it to avoid repetition
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Static anonymous functions*: Yes, similarly to static local functions.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Covariant return types*: Yes, explain as part of class design and generic methods
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Nullable reference types*: All new code should use this.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Recursive patterns (positional and property patterns, switch expressions)*: Yes.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Ranges and indexes*: Yes, this is important for working with data.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Static local functions*: Show examples and explain
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Readonly members*: Yes, it's part of struct design
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Tuple comparison `==` and `!=`*: Core tuple feature. Yes.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Attributes on backing fields*: Yes, needed for many important scenarios.
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) Ref conditional*: Advanced scenario. Maybe mention that both args must be variables?
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) Non-trailing named arguments*: Worth mentioning as part of calling methods
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) Private protected accessibility*: Yes, mention for completion.
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) Digit separator after base specifier*: Not much detail needed here, but it makes code easier to read.
+- *[C# 7.1](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-71---visual-studio-2017-version-153) Async main*: Yes, to the extent that `Main` is shown.
+- *[C# 7.1](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-71---visual-studio-2017-version-153) Default expressions*: Yes, both `default` and `default(T)`
+- *[C# 7.1](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-71---visual-studio-2017-version-153) Inferred tuple element names*: Yes, cover as part of tuples.
+- *[C# 7.1](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-71---visual-studio-2017-version-153) Pattern-matching with generics*: Yes.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Pattern matching*: Yes.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Tuples*: Yes.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Deconstruction*: discuss in terms of tuples and records
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Discards*: Yes, but not a lot of details
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Local Functions*: Yes
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) More expression-bodied members*: Worth mentioning
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Auto property initializers*: Cover as part of properties
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Default values for getter-only properties*: Cover as part of properties
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Expression-bodied members*: Yes, method declarations
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Null propagator `?.` and `?[`*: Yes as part of null analysis and null safety
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) String interpolation*: Yes
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) nameof operator*: Yes
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Dictionary initializer*: Yes.
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Exception filters*: Explain for scenarios where exception carries data (like HTTP exceptions)
+- *[C# 4](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-4---visual-studio-2010) Dynamic binding*: Yes, it's been used to much to ignore.
+- *[C# 4](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-4---visual-studio-2010) Named and optional arguments*: Yes, as part of methods
+- *[C# 4](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-4---visual-studio-2010) Co- and Contra-variance for generic delegates and interfaces*: Yes, as part of generics
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Implicitly typed local variables*: Yes
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Object and collection initializers*: Yes
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Auto-Implemented properties*: Yes
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Lambda expression*: Yes
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Generics*: Of course
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Iterators, a.k.a yield statement*: Yes
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Nullable value types*: Yes
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Getter/setter separate accessibility*: Yes.
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Static classes*: Yes
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Covariance and contravariance*: Covered as part of generics
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Classes*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Structs*: Yes, excluding ref struct types
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Enums*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Interfaces*: Yes. excluding default implementations and static abstract members
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Events*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Properties*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Indexers*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Reference parameters*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) `params` arrays*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Expressions*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) using statement*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) goto statement*: Only in `switch` statements
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Preprocessor directives*: Yes, only the most common symbols
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Attributes*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Literals*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Verbatim identifier*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Unsigned integer types*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Boxing and unboxing*: Yes
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Lock statement*: Yes
+
+### Use in sample code without detailed explanation
+
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Unbound generic types in `nameof`*: This is only interesting if you know it didn't work before.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Simple lambda parameters with modifiers*: This is only interesting if you know it didn't work before.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Null conditional assignment*: Once you know about `?.` and `?[]`, using them as the target of assignment seems obvious.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) ESC escape sequence*: Not a significant regular use case.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) Implicit indexer access in object initializers*: Another "it just works" feature.
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Nameof accessing instance members*: Explaining `nameof` doesn't need to mention that this was added later.
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178)Lambda optional parameters*: This is consistent with "lambda expressions are like methods"
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) UTF-8 string literals*: Use in passing. Mostly needed for web scenarios
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Pattern match `Span<char>` on a constant string*: Use in examples, and it should be obvious to readers.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Newlines in interpolations*: Mention in passing on string interpolation.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Unsigned right-shift operator*: Mention in passing if shift operators are covered. I doubt they will be.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Extended `nameof` scope in attributes*: Just another place to use `nameof`.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) With expression on structs and anonymous types*: Cover as part of `with` ers in general
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Improved definite assignment*: Use, but don't explain.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Constant interpolated strings*: Use, but don't explain.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Extended property patterns*: Yes.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Mixed deconstructions*: Use, but doesn't need explanation.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Lambda improvements: attributes and return types; lambdas and method groups have a natural delegate type*: Use but don't explain
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Target-typed conditional expressions*: Use without a detailed explanation. It extends familiar concepts to new locations.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Lambda discard parameters*: Ensure that discards make an example.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Attributes on local functions*: Mention that attributes can be applied, but nothing more.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Enhanced using (statement, dispose ref structs using a pattern)*: Yes for the new statement form, consider examples for the `ref struct` pattern.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Null-coalescing assignment*: Cover in passing in the list of operators
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Permit `t is null` on unconstrained type parameter*: Use in examples, but not with a detailed explanation.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) `System.Enum`, `System.Delegate` and `unmanaged` constraints*: mention in generics, but don't go into detail.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Expression variables in initializers and queries*: Not necessary to call this out.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Out variables*: Worth mentioning, but not in detail
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Binary Literals*: Brief mention
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Digit Separators*: Brief mention.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Throw expressions*: Worth noting that `throw` can be a statement or an expression
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) static using*: Brief use, but not a detailed explanation.
+- *[C# 6](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-6---visual-studio-2015) Await in catch/finally blocks*: Not a detailed explanation.
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Extension methods*: Subsumed by the section on new extensions (which will cover this syntax)
+- *[C# 1.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-12---visual-studio-net-2003) Dispose in foreach*: This is implied
+- *[C# 1.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-12---visual-studio-net-2003) foreach over string specialization*: iterating can show a sample
+
+### Include a subset
+
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Partial events and constructors*: I think `partial` gets a mention in the context of source generators and templates, but not in general.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) Partial properties*: Only to the extend "partial" types are covered.
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Using aliases for any type*: Consider a subset of uses for aliases.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168)Partial methods with returned values*: Consider a subset so readers have context for source generators
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Async streams*: This should be covered as a subset.
+- *[C# 5](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-5---visual-studio-2012) Asynchronous methods*: Cover the core scenarios, but complex async scenarios are covered in advanced topics.
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) LINQ (Language Integrated Query)*: Subset only. LINQ has its own section
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Expression trees*: No, other than to mention how they are used in LINQ expressions for providers like EF
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Partial methods*: Only a subset.
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Partial types*: Subset. This is mainly useful for tools (source generators and templates)
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Type and namespace aliases*: A subset of scenarios are useful
+
+### Exclude
+
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) First class span types*: This supports library authors with existing APIs that can be made better with Span overloads.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) String literals in data section in UTF8*: Advanced scenario, and a preview feature.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) Ignored directives*: Special purpose feature.
+- *[C# 14.0](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set-c) User defined compound assignment operators*: Special purpose feature.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) Method group natural type improvements*: Very small scope of areas where this one matters. When readers see this, it will be a "just works" kind of think
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) `ref`/`unsafe` in iterators/async*: No. advanced feature.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) `ref struct` interfaces*: No. advanced feature.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) Overload resolution priority*: No, an advanced feature for library authors.
+- *[C# 13.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-130---net-9-and-visual-studio-2022-version-1712) Better conversion from collection expression element*: No. An It just works feature.
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Inline Arrays*: No. Advanced performance scenario
+- *[C# 12.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-120---net-8-and-visual-studio-2022-version-178) Ref readonly parameters*: No. Advanced scenario
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Ref fields*: Advanced scenario
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Static abstract members in interfaces*: Advanced scenario
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) `checked` user-defined operators*: Advanced scenario.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Relaxing shift operator requirements*: Advanced scenario. Readers that use this will find it.
+- *[C# 11.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-110---net-7-and-visual-studio-2022-version-174) Numeric IntPtr (`nint`/`nuint`)*: Advanced high performance scenario.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Incremental source generators*: Advanced scenario.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Incremental source generators*: Advanced scenario.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Method-level AsyncMethodBuilder*: Advanced scenario.
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) #line span directive*: Advanced scenario
+- *[C# 10.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-100---net-6-and-visual-studio-2022-version-170) Interpolated string handlers*: Advanced scenario
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Function pointers*: Advanced scenario
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Suppress emitting `localsinit` flag*: Advanced scenario
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Module initializers*: Advanced scenario.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168) Extension `GetEnumerator`*: This is primarily for library authors. Readers will discover its use because it exists.
+- *[C# 9.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-90---net-5-and-visual-studio-2019-version-168)Source Generators*: Advanced scenario
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Default interface members*: This is useful only in advanced scenarios
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Unmanaged generic structs*: This is an advanced scenario.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Stackalloc in nested contexts*: Almost bug fix to the grammar. Not needed here.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Alternative interpolated verbatim strings*: Feels like a bug fix for users.
+- *[C# 8.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-80---net-core-30-and-visual-studio-2019-version-163) Obsolete on property accessors*: Very niche scenario
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Ref local re-assignment*: `= ref` is an advanced scenario.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Stackalloc initializers*: The syntax is simple, and this is an advanced scenario.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Indexing movable fixed buffers*: Advanced scenario
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Custom `fixed` statement*: Advanced scenario.
+- *[C# 7.3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-73---visual-studio-2017-version-157) Improved overload candidates*: Niche scenario.
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) Span and ref-like types*: Advanced scenario
+- *[C# 7.2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-72---visual-studio-2017-version-155) In parameters and readonly references*: Advanced scenario
+- *[C# 7.1](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-71---visual-studio-2017-version-153) Reference assemblies*: No, not needed for most developers.
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Ref returns and locals*: No, advanced scenario
+- *[C# 7.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-70---visual-studio-2017) Generalized async return types*: No, advanced scenario
+- *[C# 5](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-5---visual-studio-2012) Caller info attributes*: Not necessary.
+- *[C# 5](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-5---visual-studio-2012) `foreach` loop generates a new loop variable each iteration*: Not discussed in detail.
+- *[C# 4](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-4---visual-studio-2010) Embedded interop types ("NoPIA")*: Niche scenario
+- *[C# 3](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-3---visual-studio-2008) Anonymous types*: No, tuples are a better solution now.
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Anonymous methods*: Generally subsumed by lambda expressions
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Method group conversions (delegates)*: Generally subsumed by lambda expressions
+- *[C# 2](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-2---visual-studio-2005) Delegate inference*: Covered under lambda expressions
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Operator overloading*: No
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) User-defined conversion operators*: No
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Delegates*: No (prefer lambda expressions)
+- *[C# 1.0](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md#c-10---visual-studio-net-2002) Unsafe code and pointers*: No

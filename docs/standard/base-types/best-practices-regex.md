@@ -20,9 +20,9 @@ This article outlines some of the best practices that developers can adopt to en
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
-## Patterns should be trusted
+## Use trusted patterns
 
-The .NET regular expression engine is designed with the assumption that patterns are trusted — that is, they are authored or reviewed by the application developer, not supplied by end users or other untrusted sources. Patterns can cause excessive resource consumption regardless of the input text, and the regex engine does not attempt to guard against hostile patterns.
+The .NET regular expression engine is designed with the assumption that patterns are trusted, that is, they are authored or reviewed by the application developer, not supplied by end users or other untrusted sources. Patterns can cause excessive resource consumption regardless of the input text, and the regular expression engine does not attempt to guard against hostile patterns.
 
 If your application needs to accept search expressions from users, avoid passing user input directly as a regex pattern. Instead, consider these alternatives:
 

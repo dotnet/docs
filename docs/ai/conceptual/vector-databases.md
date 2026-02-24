@@ -77,7 +77,7 @@ public class Hotel
     [VectorStoreData(IsFullTextIndexed = true)]
     public string? Description { get; set; }
 
-    [VectorStoreVector(Dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity)]
+    [VectorStoreVector(Dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
     public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
 
     [VectorStoreData(IsIndexed = true)]
@@ -85,14 +85,36 @@ public class Hotel
 }
 ```
 
-The `[VectorStoreVector]` attribute requires you to specify the number of dimensions, which must match the output size of the embedding model you use. For example, the `text-embedding-3-small` model produces 1536-dimensional vectors.
+The `Dimensions` parameter must match the output size of the embedding model you use. For example, `text-embedding-3-small` produces 1536-dimensional vectors, while `text-embedding-3-large` produces 3072-dimensional vectors.
+
+### Automatic embedding generation
+
+Instead of generating embeddings yourself before each upsert, you can declare your vector property as a `string` type and configure an `IEmbeddingGenerator` on the vector store. The store then generates the embedding automatically when you upsert a record, using the string value you provide:
+
+```csharp
+public class FinanceInfo
+{
+    [VectorStoreKey]
+    public int Key { get; set; }
+
+    [VectorStoreData]
+    public string Text { get; set; } = "";
+
+    // Declare as string to enable automatic embedding generation on upsert.
+    [VectorStoreVector(1536)]
+    public string EmbeddingSource { get; set; } = "";
+}
+```
+
+You can configure the `IEmbeddingGenerator` at the vector store level, collection level, or on individual vector properties. With auto-embedding, you can also pass a `string` directly to `SearchAsync` instead of a precomputed vector—the store generates the search embedding for you. For more information, see [Use built-in embedding generation](../how-to/use-vector-stores.md#use-built-in-embedding-generation).
 
 ### Key abstractions
 
-The `Microsoft.Extensions.VectorData.Abstractions` library exposes two main abstract classes:
+The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following main abstract classes:
 
 - <xref:Microsoft.Extensions.VectorData.VectorStore>: The top-level class for a vector database. Use it to retrieve and manage collections.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations.
+- <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations. Also inherits from `IVectorSearchable<TRecord>`.
+- `IKeywordHybridSearchable<TRecord>`: Implemented by collections that support hybrid search combining vector similarity with keyword matching.
 
 The following example shows how to get a collection from a vector store and upsert (insert or update) records:
 
@@ -150,6 +172,29 @@ IAsyncEnumerable<VectorSearchResult<Hotel>> results =
     collection.SearchAsync(queryEmbedding, top: 3, searchOptions);
 ```
 
+Filters are expressed as LINQ expressions and compiled into the query syntax of the underlying database. The supported operations vary by connector.
+
+### Hybrid search
+
+Some connectors support *hybrid search*, which combines vector similarity with full-text keyword matching. To use hybrid search, check whether your collection implements `IKeywordHybridSearchable<TRecord>` and use the `HybridSearchAsync` method:
+
+```csharp
+if (collection is IKeywordHybridSearchable<Hotel> hybridSearch)
+{
+    var results = hybridSearch.HybridSearchAsync(
+        queryEmbedding,
+        keywords: ["ocean", "beach"],
+        top: 3);
+
+    await foreach (var result in results)
+    {
+        Console.WriteLine($"Hotel: {result.Record.HotelName}, Score: {result.Score}");
+    }
+}
+```
+
+For hybrid search to work, the data model must have at least one vector property and one string property with `IsFullTextIndexed = true`.
+
 ## Available vector store connectors
 
 The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate connector packages implement them for specific vector databases. Choose the connector that matches your vector database:
@@ -161,19 +206,24 @@ The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstracti
 | Azure Cosmos DB (NoSQL) | [Microsoft.SemanticKernel.Connectors.CosmosNoSQL](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL) |
 | Azure Cosmos DB (MongoDB) | [Microsoft.SemanticKernel.Connectors.CosmosMongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosMongoDB) |
 | Azure SQL / SQL Server | [Microsoft.SemanticKernel.Connectors.SqlServer](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer) |
+| Couchbase | [CouchbaseVectorStore.SemanticKernel](https://www.nuget.org/packages/CouchbaseVectorStore.SemanticKernel) |
+| Elasticsearch | [Elastic.SemanticKernel.Connectors.Elasticsearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch) |
 | MongoDB | [Microsoft.SemanticKernel.Connectors.MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB) |
+| Oracle | [OracleVectorStore.SemanticKernel](https://www.nuget.org/packages/OracleVectorStore.SemanticKernel) |
+| Pinecone | [Microsoft.SemanticKernel.Connectors.Pinecone](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Pinecone) |
 | PostgreSQL (pgvector) | [Microsoft.SemanticKernel.Connectors.PgVector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.PgVector) |
 | Qdrant | [Microsoft.SemanticKernel.Connectors.Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant) |
 | Redis | [Microsoft.SemanticKernel.Connectors.Redis](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis) |
 | SQLite | [Microsoft.SemanticKernel.Connectors.SqliteVec](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqliteVec) |
-| Pinecone | [Microsoft.SemanticKernel.Connectors.Pinecone](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Pinecone) |
 | Weaviate | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate) |
-| Elasticsearch | [Elastic.SemanticKernel.Connectors.Elasticsearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch) |
 
 All connectors implement the same `VectorStore` and `VectorStoreCollection<TKey, TRecord>` abstract classes, so you can switch between them without changing your application logic.
 
 > [!TIP]
 > Use the in-memory connector (`Microsoft.SemanticKernel.Connectors.InMemory`) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production connector later.
+
+> [!IMPORTANT]
+> Not all connectors are maintained by the Microsoft Semantic Kernel project. When evaluating a connector, review its quality, licensing, support, and compatibility to ensure it meets your requirements.
 
 ## Related content
 

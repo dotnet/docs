@@ -1,16 +1,15 @@
+using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
 
 // <CreateVectorStore>
 // Create an in-memory vector store (no external service required).
-// For production, replace this with a connector for your preferred database,
-// such as Azure AI Search or Qdrant.
+// For production, replace this with a connector for your preferred database.
 var vectorStore = new InMemoryVectorStore();
 // </CreateVectorStore>
 
 // <GetCollection>
 // Get a reference to a collection named "hotels".
-// The collection stores records of type Hotel with an integer key.
 VectorStoreCollection<int, Hotel> collection =
     vectorStore.GetCollection<int, Hotel>("hotels");
 
@@ -19,7 +18,10 @@ await collection.EnsureCollectionExistsAsync();
 // </GetCollection>
 
 // <UpsertRecords>
-// Create some sample records.
+// Upsert records into the collection.
+// In a real app, generate embeddings using an IEmbeddingGenerator.
+// The CreateFakeEmbedding helper at the bottom of this file generates
+// placeholder vectors for demonstration purposes only.
 var hotels = new List<Hotel>
 {
     new()
@@ -48,8 +50,6 @@ var hotels = new List<Hotel>
     }
 };
 
-// Upsert records into the collection.
-// Upsert inserts a record if the key doesn't exist, or updates it if it does.
 await collection.UpsertAsync(hotels[0]);
 await collection.UpsertAsync(hotels[1]);
 await collection.UpsertAsync(hotels[2]);
@@ -74,12 +74,10 @@ await foreach (Hotel h in hotelBatch)
 }
 // </GetBatch>
 
-// <SearchBasic>
-// Perform a vector search using a query embedding.
-// In a real app, generate this embedding from the user's search query using
-// an IEmbeddingGenerator. Here we use a placeholder.
 ReadOnlyMemory<float> queryEmbedding = CreateFakeEmbedding(1);
 
+// <SearchBasic>
+// Search for the top 2 hotels most similar to the query embedding.
 IAsyncEnumerable<VectorSearchResult<Hotel>> searchResults =
     collection.SearchAsync(queryEmbedding, top: 2);
 
@@ -90,7 +88,8 @@ await foreach (VectorSearchResult<Hotel> result in searchResults)
 // </SearchBasic>
 
 // <SearchWithFilter>
-// Filter search results to only include a specific hotel.
+// Filter results before the vector comparison.
+// Only properties marked with IsIndexed = true can be used in filters.
 var searchOptions = new VectorSearchOptions<Hotel>
 {
     Filter = h => h.HotelName == "Seaside Retreat"
@@ -104,6 +103,23 @@ await foreach (VectorSearchResult<Hotel> result in filteredResults)
     Console.WriteLine($"Filtered: {result.Record.HotelName} (score: {result.Score:F4})");
 }
 // </SearchWithFilter>
+
+// <SearchOptions>
+// Use VectorSearchOptions to control paging and vector inclusion.
+var pagedOptions = new VectorSearchOptions<Hotel>
+{
+    Skip = 1,           // Skip the first result (useful for paging).
+    IncludeVectors = false  // Don't include vector data in results (default).
+};
+
+IAsyncEnumerable<VectorSearchResult<Hotel>> pagedResults =
+    collection.SearchAsync(queryEmbedding, top: 2, pagedOptions);
+
+await foreach (VectorSearchResult<Hotel> result in pagedResults)
+{
+    Console.WriteLine($"Paged: {result.Record.HotelName}");
+}
+// </SearchOptions>
 
 // <DeleteRecord>
 // Delete a record by its key.

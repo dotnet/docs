@@ -33,12 +33,45 @@ For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory`
 Define a .NET class to represent the records you want to store in the vector store. Use the following attributes from the <xref:Microsoft.Extensions.VectorData> namespace to describe the properties:
 
 - <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>: The primary key of each record.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute>: A data property that gets stored. Set `IsIndexed = true` to enable filtering on the property.
+- <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute>: A data property that gets stored. Set `IsIndexed = true` to enable filtering on the property, or `IsFullTextIndexed = true` to enable full-text search on it.
 - <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>: An embedding vector property. Set the `Dimensions` parameter to match your embedding model's output size.
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Hotel.cs" id="DataModel":::
 
 The `Dimensions` parameter in `[VectorStoreVector]` must match the output size of the embedding model you use. Common values include 1536 for `text-embedding-3-small` and 3072 for `text-embedding-3-large`.
+
+### Attribute parameters
+
+The following tables describe all available parameters for each attribute.
+
+#### VectorStoreKey parameters
+
+| Parameter | Required | Description |
+|---|---|---|
+| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+
+#### VectorStoreData parameters
+
+| Parameter | Required | Description |
+|---|---|---|
+| `IsIndexed` | No | Whether to index this property for filtering. Default is `false`. |
+| `IsFullTextIndexed` | No | Whether to index this property for full-text search. Default is `false`. |
+| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+
+#### VectorStoreVector parameters
+
+| Parameter | Required | Description |
+|---|---|---|
+| `Dimensions` | Yes (for collection creation) | The number of dimensions in the vector. Must match your embedding model. |
+| `IndexKind` | No | The type of index to use. Defaults vary by connector. Common values: `Hnsw`, `Flat`. |
+| `DistanceFunction` | No | The distance function for similarity comparisons. Defaults vary by connector. Common values: `CosineSimilarity`, `DotProductSimilarity`, `EuclideanDistance`. |
+| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+
+## Define a schema programmatically
+
+As an alternative to using attributes, you can define your schema programmatically using a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition>. This approach is useful when you want to use the same data model with different configurations, or when you can't add attributes to the data model class.
+
+:::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/RecordDefinition.cs" id="RecordDefinition":::
 
 ## Create a vector store
 
@@ -61,7 +94,7 @@ Use `UpsertAsync` to insert or update records in the collection. If a record wit
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="UpsertRecords":::
 
 > [!IMPORTANT]
-> In a real app, you should generate the embedding vectors using an `IEmbeddingGenerator` before storing the records. In the following example, the placeholder `CreateFakeEmbedding` method generates dummy vectors. For a working example with real embeddings, see [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md).
+> In a real app, generate the embedding vectors using an `IEmbeddingGenerator` before storing the records. For a working example with real embeddings, see [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md).
 
 ## Get records
 
@@ -86,6 +119,111 @@ Each `VectorSearchResult<T>` contains the matching record and a similarity score
 Use <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1> to filter search results before the vector comparison. You can filter on any property marked with `IsIndexed = true`:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="SearchWithFilter":::
+
+Filters are expressed as LINQ expressions. The supported operations vary by connector, but all connectors support common comparisons like equality, inequality, and logical `&&` and `||`.
+
+## Control search behavior with VectorSearchOptions
+
+Use `VectorSearchOptions<TRecord>` to control various aspects of vector search behavior:
+
+:::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="SearchOptions":::
+
+The following table describes the available options:
+
+| Option | Description |
+|---|---|
+| `Filter` | A LINQ expression to filter records before vector comparison. |
+| `VectorProperty` | The vector property to search on. Required when the data model has multiple vector properties. |
+| `Skip` | Number of results to skip before returning. Useful for paging. Default is `0`. |
+| `IncludeVectors` | Whether to include vector data in the returned records. Omitting vectors reduces data transfer. Default is `false`. |
+
+### Target a specific vector property
+
+When your data model has multiple vector properties, use `VectorProperty` to specify which one to search:
+
+```csharp
+// A data model with two vector properties.
+public class Hotel
+{
+    [VectorStoreKey]
+    public int HotelId { get; set; }
+
+    [VectorStoreData]
+    public string? HotelName { get; set; }
+
+    // Two separate embeddings for different aspects of the hotel.
+    [VectorStoreVector(1536)]
+    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
+
+    [VectorStoreVector(1536)]
+    public ReadOnlyMemory<float>? AmenitiesEmbedding { get; set; }
+}
+
+// Target the amenities embedding specifically.
+var options = new VectorSearchOptions<Hotel>
+{
+    VectorProperty = r => r.AmenitiesEmbedding
+};
+
+IAsyncEnumerable<VectorSearchResult<Hotel>> results =
+    collection.SearchAsync(queryEmbedding, top: 3, options);
+```
+
+## Use built-in embedding generation
+
+Instead of generating embeddings manually before each upsert, you can configure an `IEmbeddingGenerator` on the vector store or collection. When you do, declare your vector property as a `string` type (the source text) and the store generates the embedding automatically.
+
+```csharp
+public class FinanceInfo
+{
+    [VectorStoreKey]
+    public int Key { get; set; }
+
+    [VectorStoreData]
+    public string Text { get; set; } = "";
+
+    // Use a string type to trigger automatic embedding generation on upsert.
+    [VectorStoreVector(1536)]
+    public string EmbeddingSource { get; set; } = "";
+}
+```
+
+Then configure the embedding generator when creating the vector store:
+
+:::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/AutoEmbedding.cs" id="AutoEmbeddingVectorStore":::
+
+With this approach, `SearchAsync` also accepts a `string` query directly—you don't need to generate a query embedding manually.
+
+> [!IMPORTANT]
+> Automatic embedding generation doesn't retrieve or store the original source text. If you need to access the original text later, store it in a separate `[VectorStoreData]` property on your model.
+
+## Hybrid search
+
+Some vector stores support *hybrid search*, which combines vector similarity with keyword matching. This approach can improve result relevance compared to vector-only search.
+
+To use hybrid search, check whether your collection implements `IKeywordHybridSearchable<TRecord>`. Only connectors for databases that support this feature implement this interface.
+
+```csharp
+// Check whether the collection supports hybrid search.
+if (collection is IKeywordHybridSearchable<Hotel> hybridCollection)
+{
+    ReadOnlyMemory<float> queryEmbedding =
+        await embeddingGenerator.GenerateVectorAsync("peaceful beachfront hotel");
+
+    // Provide both a vector and keywords for hybrid search.
+    var results = hybridCollection.HybridSearchAsync(
+        queryEmbedding,
+        keywords: ["ocean", "beach"],
+        top: 3);
+
+    await foreach (var result in results)
+    {
+        Console.WriteLine($"Hotel: {result.Record.HotelName}, Score: {result.Score}");
+    }
+}
+```
+
+For hybrid search to work, the data model must have at least one vector property and one text property with `IsFullTextIndexed = true`. For a list of connectors that support hybrid search, see the documentation for each connector.
 
 ## Delete records
 

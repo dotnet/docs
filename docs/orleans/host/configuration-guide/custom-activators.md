@@ -2,6 +2,7 @@
 title: Custom activators with IActivator<T>
 description: Learn how to control object construction during deserialization in .NET Orleans by implementing IActivator<T>.
 ms.date: 02/24/2026
+ai-usage: ai-assisted
 ---
 
 # Custom activators with IActivator\<T>

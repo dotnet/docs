@@ -2,6 +2,7 @@
 title: Serialization lifecycle hooks
 description: Learn how to use serialization lifecycle hooks in .NET Orleans to run custom logic during serialization, deserialization, and copying.
 ms.date: 02/24/2026
+ai-usage: ai-assisted
 ---
 
 # Serialization lifecycle hooks

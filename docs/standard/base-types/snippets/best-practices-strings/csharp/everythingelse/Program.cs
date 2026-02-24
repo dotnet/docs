@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Globalization;
+
 void FrameworkDiffs()
 {
     //<framework_diffs>
@@ -27,3 +29,32 @@ bool ContainsHtmlSensitiveCharacters(string input)
     return false;
 }
 //</html_example>
+
+//<indexof>
+Console.WriteLine("resume".IndexOf('e', StringComparison.Ordinal)); // "resume": prints '1'
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf('e', StringComparison.Ordinal)); // "résumé": prints '-1'
+Console.WriteLine("r\u00E9sume\u0301".IndexOf('e', StringComparison.Ordinal)); // "résumé": prints '5'
+Console.WriteLine("re\u0301sum\u00E9".IndexOf('e', StringComparison.Ordinal)); // "résumé": prints '1'
+Console.WriteLine("re\u0301sume\u0301".IndexOf('e', StringComparison.Ordinal)); // "résumé": prints '1'
+Console.WriteLine("resume".IndexOf('e', StringComparison.OrdinalIgnoreCase)); // "resume": prints '1'
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf('e', StringComparison.OrdinalIgnoreCase)); // "résumé": prints '-1'
+Console.WriteLine("r\u00E9sume\u0301".IndexOf('e', StringComparison.OrdinalIgnoreCase)); // "résumé": prints '5'
+Console.WriteLine("re\u0301sum\u00E9".IndexOf('e', StringComparison.OrdinalIgnoreCase)); // "résumé": prints '1'
+Console.WriteLine("re\u0301sume\u0301".IndexOf('e', StringComparison.OrdinalIgnoreCase)); // "résumé": prints '1'
+//</indexof>
+
+//<indexof_string>
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // "résumé": prints '-1' (not found)
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf("\u00E9")); // "résumé": prints '1'
+Console.WriteLine("\u00E9".IndexOf("e\u0301")); // prints '0'
+//</indexof_string>
+
+//<endz>
+// Set thread culture to Hungarian
+CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("hu-HU");
+Console.WriteLine("endz".EndsWith("z")); // Prints 'False'
+
+// Set thread culture to invariant culture
+CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+Console.WriteLine("endz".EndsWith("z")); // Prints 'True'
+//</endz>

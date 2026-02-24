@@ -147,6 +147,37 @@ Specifying the <xref:System.StringComparison.Ordinal?displayProperty=nameWithTyp
 
 Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" doesn't match "Windows". This is essentially a call to the C runtime `strcmp` function. Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy. Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.
 
+An `OrdinalIgnoreCase` comparer still operates on a char-by-char basis, but it eliminates case differences while performing the operation. Under an `OrdinalIgnoreCase` comparer, the char pairs `'d'` and `'D'` compare as *equal*, as do the char pairs `'á'` and `'Á'`. But the unaccented char `'a'` compares as *not equal* to the accented char `'á'`.
+
+Some examples of this are provided in the following table:
+
+| String 1   | String 2   | `Ordinal` comparison | `OrdinalIgnoreCase` comparison |
+|------------|------------|----------------------|--------------------------------|
+| `"dog"`    | `"dog"`    | equal                | equal                          |
+| `"dog"`    | `"Dog"`    | not equal            | equal                          |
+| `"resume"` | `"résumé"` | not equal            | not equal                      |
+
+Unicode also allows strings to have several different in-memory representations. For example, an e-acute (é) can be represented in two possible ways:
+
+- A single literal `'é'` character (also written as `'\u00E9'`).
+- A literal unaccented `'e'` character followed by a combining accent modifier character `'\u0301'`.
+
+This means that the following _four_ strings all display as `"résumé"`, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
+
+- `"r\u00E9sum\u00E9"`
+- `"r\u00E9sume\u0301"`
+- `"re\u0301sum\u00E9"`
+- `"re\u0301sume\u0301"`
+
+Under an ordinal comparer, none of these strings compare as equal to each other. This is because they all contain different underlying char sequences, even though when they're rendered to the screen, they all look the same.
+
+When performing a `string.IndexOf(..., StringComparison.Ordinal)` operation, the runtime looks for an exact substring match. The results are as follows.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="indexof":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="indexof":::
+
+Ordinal search and comparison routines are never affected by the current thread's culture setting.
+
 Strings in .NET can contain embedded null characters (and other non-printing characters). One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, strings that contain embedded null characters can be considered equal to strings that don't. Embedded non-printing characters might be skipped for the purpose of string comparison methods, such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
@@ -177,6 +208,49 @@ These comparisons are still very fast.
 Both <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> and <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> use the binary values directly, and are best suited for matching. When you aren't sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they don't sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.
 
 Ordinal semantics are the default for <xref:System.String.Equals%2A?displayProperty=nameWithType> overloads that don't include a <xref:System.StringComparison> argument (including the equality operator). In any case, we recommend that you call an overload that has a <xref:System.StringComparison> parameter.
+
+### Linguistic string comparisons
+
+*Linguistic* search and comparison routines decompose a string into *collation elements* and perform searches or comparisons on these elements. There's not necessarily a 1:1 mapping between a string's characters and its constituent collation elements. For example, a string of length 2 may consist of only a single collation element. When two strings are compared in a linguistic-aware fashion, the comparer checks whether the two strings' collation elements have the same semantic meaning, even if the string's literal characters are different.
+
+Consider the string `"résumé"` and its four different representations described in the previous section. The following table shows each representation broken down into its collation elements.
+
+| String                 | As collation elements                           |
+|------------------------|-------------------------------------------------|
+| `"r\u00E9sum\u00E9"`   | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"`   |
+| `"r\u00E9sume\u0301"`  | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"`  |
+| `"re\u0301sum\u00E9"`  | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"`  |
+| `"re\u0301sume\u0301"` | `"r" + "e\u0301" + "s" + "u" + "m" + "e\u0301"` |
+
+A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
+
+Under a linguistic comparer, exact matches aren't necessary. Collation elements are instead compared based on their semantic meaning. For example, a linguistic comparer treats the substrings `"\u00E9"` and `"e\u0301"` as equal since they both semantically mean "a lowercase e with an acute accent modifier." This allows the `IndexOf` method to match the substring `"e\u0301"` within a larger string that contains the semantically equivalent substring `"\u00E9"`, as shown in the following code sample.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="indexof_string":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="indexof_string":::
+
+As a consequence of this, two strings of different lengths may compare as equal if a linguistic comparison is used. Callers should take care not to special-case logic that deals with string length in such scenarios.
+
+*Culture-aware* search and comparison routines are a special form of linguistic search and comparison routines. Under a culture-aware comparer, the concept of a collation element is extended to include information specific to the specified culture.
+
+For example, [in the Hungarian alphabet](https://en.wikipedia.org/wiki/Hungarian_alphabet), when the two characters \<dz\> appear back-to-back, they are considered their own unique letter distinct from either \<d\> or \<z\>. This means that when \<dz\> is seen in a string, a Hungarian culture-aware comparer treats it as a single collation element.
+
+| String   | As collation elements   | Remarks                                    |
+|----------|-------------------------|--------------------------------------------|
+| `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer)     |
+| `"endz"` | `"e" + "n" + "dz"`      | (using a Hungarian culture-aware comparer) |
+
+When using a Hungarian culture-aware comparer, the string `"endz"` *does not* end with the substring `"z"`, because \<dz\> and \<z\> are considered collation elements with different semantic meaning.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="endz":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="endz":::
+
+> [!NOTE]
+>
+> - **Behavior**: Linguistic and culture-aware comparers can undergo behavioral adjustments from time to time. Both ICU and the older Windows NLS facility are updated to account for how world languages change. For more information, see the blog post [Locale (culture) data churn](/archive/blogs/shawnste/locale-culture-data-churn). The *Ordinal* comparer's behavior will never change since it performs exact bitwise searching and comparison. However, the *OrdinalIgnoreCase* comparer's behavior may change as Unicode grows to encompass more character sets and corrects omissions in existing casing data.
+> - **Usage**: The comparers `StringComparison.InvariantCulture` and `StringComparison.InvariantCultureIgnoreCase` are linguistic comparers that are not culture-aware. That is, these comparers understand concepts such as the accented character é having multiple possible underlying representations, and that all such representations should be treated equal. But non-culture-aware linguistic comparers won't contain special handling for \<dz\> as distinct from \<d\> or \<z\>, as shown above. They also won't special-case characters like the German Eszett (ß).
+
+.NET also offers the *invariant globalization mode*. This opt-in mode disables code paths that deal with linguistic search and comparison routines. In this mode, all operations use *Ordinal* or *OrdinalIgnoreCase* behaviors, regardless of what `CultureInfo` or `StringComparison` argument the caller provides. For more information, see [Runtime configuration options for globalization](../../core/runtime-config/globalization.md) and [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
 ### String operations that use the invariant culture
 

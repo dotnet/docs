@@ -453,5 +453,4 @@ If you migrate an application from .NET Framework to .NET and rely on legacy NLS
 
 - [Globalization in .NET apps](../../core/extensions/globalization.md)
 - [.NET globalization and ICU](../../core/extensions/globalization-icu.md)
-- [Behavior changes when comparing strings on .NET 5+](string-comparison-net-5-plus.md)
 - [How to compare strings in C#](../../csharp/how-to/compare-strings.md)

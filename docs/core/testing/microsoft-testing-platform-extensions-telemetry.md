@@ -1,13 +1,12 @@
 ---
-title: Microsoft.Testing.Platform telemetry
+title: Microsoft.Testing.Platform telemetry extension
 description: Learn about the telemetry data collected by Microsoft.Testing.Platform and how to disable it.
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
-ms.custom: 
 ---
 
-# Microsoft.Testing.Platform telemetry
+# Telemetry extension
 
 `Microsoft.Testing.Platform` collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
 

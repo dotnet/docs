@@ -12,7 +12,7 @@ This article lists and explains all Microsoft.Testing.Platform extensions relate
 
 ## Built-in options
 
-The following [platform options](./microsoft-testing-platform-intro.md#options) provide useful information for troubleshooting your test apps:
+The following [platform options](./microsoft-testing-platform-cli-options.md) provide useful information for troubleshooting your test apps:
 
 - `--info`
 - `--diagnostic`
@@ -38,7 +38,7 @@ You can also enable the diagnostics logs using the environment variables:
 
 This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Extensions.CrashDump](https://nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) NuGet package.
 
-To configure the crash dump file generation, use the following options:
+### Options
 
 | Option | Description |
 |--|--|
@@ -51,9 +51,9 @@ To configure the crash dump file generation, use the following options:
 
 ## Hang dump
 
-This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Extensions.HangDump) package.
+This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Extensions.HangDump) NuGet package.
 
-To configure the hang dump file generation, use the following options:
+### Options
 
 | Option | Description |
 |--|--|

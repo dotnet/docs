@@ -261,44 +261,46 @@ items:
             items:
               - name: Overview
                 href: ../../core/testing/microsoft-testing-platform-intro.md
+              - name: Run and debug tests
+                href: ../../core/testing/microsoft-testing-platform-run-and-debug.md
               - name: CLI options reference
                 href: ../../core/testing/microsoft-testing-platform-cli-options.md
               - name: Configuration
                 href: ../../core/testing/microsoft-testing-platform-config.md
               - name: Troubleshooting
                 href: ../../core/testing/microsoft-testing-platform-troubleshooting.md
-              - name: Migration
-                items:
-                  - name: Migrate from VSTest
-                    href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
-                  - name: Migrate from MTP v1 to v2
-                    href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
               - name: Extensions
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-extensions.md
                   - name: Code coverage
                     href: ../../core/testing/microsoft-testing-platform-extensions-code-coverage.md
+                  - name: Reporting
+                    href: ../../core/testing/microsoft-testing-platform-extensions-reporting.md
                   - name: Crash and hang dumps
                     href: ../../core/testing/microsoft-testing-platform-extensions-diagnostics.md
-                  - name: Test reports (TRX)
-                    href: ../../core/testing/microsoft-testing-platform-extensions-test-reports.md
-                  - name: VSTest Bridge
-                    href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
-                  - name: Hosting
-                    href: ../../core/testing/microsoft-testing-platform-extensions-hosting.md
+                  - name: OpenTelemetry
+                    href: ../../core/testing/microsoft-testing-platform-extensions-opentelemetry.md
                   - name: Policy
                     href: ../../core/testing/microsoft-testing-platform-extensions-policy.md
-                  - name: Output
-                    href: ../../core/testing/microsoft-testing-platform-extensions-output.md
+                  - name: Hosting
+                    href: ../../core/testing/microsoft-testing-platform-extensions-hosting.md
                   - name: Microsoft Fakes
                     href: ../../core/testing/microsoft-testing-platform-extensions-fakes.md
                   - name: Telemetry
                     href: ../../core/testing/microsoft-testing-platform-extensions-telemetry.md
+              - name: Migration
+                items:
+                  - name: Migrate from VSTest
+                    href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
+                  - name: Migrate from MTP v1 to v2
+                    href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
               - name: Create custom extensions
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-architecture.md
+                  - name: VSTest Bridge
+                    href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
                   - name: Capabilities
                     href: ../../core/testing/microsoft-testing-platform-architecture-capabilities.md
                   - name: Extension points

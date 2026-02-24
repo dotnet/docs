@@ -213,5 +213,5 @@ If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest
       displayName: Run unit tests
       inputs:
         command: 'test'
-        arguments: '-- --report-trx --results-directory $(Agent.TempDirectory)
+        arguments: '-- --report-trx --results-directory $(Agent.TempDirectory)'
     ```

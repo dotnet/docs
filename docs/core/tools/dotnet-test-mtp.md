@@ -94,7 +94,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--minimum-expected-tests <NUMBER>`**
 
-  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [Microsoft.Testing.Platform exit codes](../testing/microsoft-testing-platform-exit-codes.md).
+  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [Microsoft.Testing.Platform exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 

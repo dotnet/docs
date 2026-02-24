@@ -17,7 +17,7 @@ Hot reload lets you modify your app's managed source code while the application 
 > [!NOTE]
 > The current version is limited to supporting hot reload in "console mode" only. There is currently no support for hot reload in Test Explorer for Visual Studio or Visual Studio Code.
 
-This extension is shipped as part of the [Microsoft.Testing.Extensions.HotReload](https://nuget.org/packages/Microsoft.Testing.Extensions.HotReload) package.
+This extension is shipped as part of [Microsoft.Testing.Extensions.HotReload](https://nuget.org/packages/Microsoft.Testing.Extensions.HotReload) NuGet package.
 
 > [!NOTE]
 > The package is shipped with the restrictive Microsoft.Testing.Platform Tools license.

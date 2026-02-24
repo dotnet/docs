@@ -1915,7 +1915,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-diagnostics.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-diagnostics"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-diagnostics"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-diagnostics.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-diagnostics",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-exit-codes.md",
@@ -1961,7 +1966,17 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-test-reports.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-test-reports"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-reporting"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-extensions-test-reports.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-reporting",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-extensions-output.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-reporting#terminal-test-reporter",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-vstest-bridge.md",

@@ -26,10 +26,10 @@ Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanage
 
 For more information about Microsoft code coverage, see its [GitHub page](https://github.com/microsoft/codecoverage).
 
-Microsoft Code Coverage provides the following options:
+### Options
 
-| Option                     | Description                                                                   |
-|----------------------------|-------------------------------------------------------------------------------|
+| Option | Description |
+|---|---|
 | `--coverage`               | Collect the code coverage using dotnet-coverage tool.                         |
 | `--coverage-output`        | The name or path of the produced coverage file. By default, the file is `TestResults/<guid>.coverage`. |
 | `--coverage-output-format` | Output file format. Supported values are: `coverage`, `xml`, and `cobertura`. Default is `coverage`. |
@@ -77,10 +77,10 @@ dotnet exec <test-assembly.dll> --coverlet
 
 After the test run, a `coverage.json` file containing the results is generated in the current directory.
 
-`coverlet.MTP` provides the following options:
+### Options
 
 | Option | Description |
-| :------- | :------------ |
+|---|---|
 | `--coverlet` | Enable code coverage data collection. |
 | `--coverlet-output-format <format>` | Output formats for the coverage report. Supported formats: `json`, `lcov`, `opencover`, `cobertura`, and `teamcity`. Specify multiple times to include more than one format. |
 | `--coverlet-include <filter>` | Include assemblies that match filters, such as `[Assembly]Type`. Specify multiple times to add more filters. |

@@ -24,11 +24,14 @@ Use the following path based on your goal:
 
 - Need coverage data: [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md)
 - Need crash and hang diagnostics: [Diagnostics](./microsoft-testing-platform-extensions-diagnostics.md)
-- Need test reports such as TRX: [Test Reports](./microsoft-testing-platform-extensions-test-reports.md)
-- Need compatibility support for VSTest mode workflows: [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md)
+- Need test reports such as TRX or terminal output customization: [Reporting](./microsoft-testing-platform-extensions-reporting.md)
 - Need hosting-level behavior customizations: [Hosting](./microsoft-testing-platform-extensions-hosting.md)
 - Need policy-based controls: [Policy](./microsoft-testing-platform-extensions-policy.md)
 - Need Microsoft Fakes support: [Microsoft Fakes](./microsoft-testing-platform-extensions-fakes.md)
+- Need to retry failed tests: [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
+- Need OpenTelemetry traces and metrics: [OpenTelemetry](./microsoft-testing-platform-extensions-opentelemetry.md)
+- Need terminal output customization: [Reporting](./microsoft-testing-platform-extensions-reporting.md#terminal-test-reporter)
+- Need telemetry opt-out information: [Telemetry](./microsoft-testing-platform-extensions-telemetry.md)
 
 ## Extensions
 
@@ -36,26 +39,30 @@ Use the following path based on your goal:
 
 Extensions designed to provide code coverage support.
 
+**[Reporting](./microsoft-testing-platform-extensions-reporting.md)**
+
+Extensions for test report files (TRX, Azure DevOps) and terminal output.
+
 **[Diagnostics](./microsoft-testing-platform-extensions-diagnostics.md)**
 
 Extensions offering diagnostics and troubleshooting functionalities.
 
-**[Hosting](./microsoft-testing-platform-extensions-hosting.md)**
+**[OpenTelemetry](./microsoft-testing-platform-extensions-opentelemetry.md)**
 
-Extensions affecting how the test execution is hosted.
+This extension integrates OpenTelemetry with Microsoft.Testing.Platform, allowing test runs to emit traces and metrics.
 
 **[Policy](./microsoft-testing-platform-extensions-policy.md)**
 
 Extensions allowing to define policies around the test execution.
 
-**[Test Reports](./microsoft-testing-platform-extensions-test-reports.md)**
+**[Hosting](./microsoft-testing-platform-extensions-hosting.md)**
 
-Extensions allowing to produce test report files that contains information about the execution and outcome of the tests.
-
-**[VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md)**
-
-This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...).
+Extensions affecting how the test execution is hosted.
 
 **[Microsoft Fakes](./microsoft-testing-platform-extensions-fakes.md)**
 
 This extension provides support to execute a test project that makes use of `Microsoft Fakes`.
+
+**[Telemetry](./microsoft-testing-platform-extensions-telemetry.md)**
+
+Built-in telemetry collection. Learn how to opt out and what data is collected.

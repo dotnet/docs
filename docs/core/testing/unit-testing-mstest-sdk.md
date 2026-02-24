@@ -43,7 +43,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   Enables the following extensions:
 
   * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [Trx Report](./microsoft-testing-platform-extensions-reporting.md#visual-studio-test-reports-trx)
 
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
@@ -55,8 +55,8 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
   * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
   * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
-  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
-  * [AzureDevOpsReport](./microsoft-testing-platform-extensions-test-reports.md#azure-devops-reports)
+  * [Trx Report](./microsoft-testing-platform-extensions-reporting.md#visual-studio-test-reports-trx)
+  * [AzureDevOpsReport](./microsoft-testing-platform-extensions-reporting.md#azure-devops-reports)
 
 Here's a full example, using the `None` profile:
 
@@ -80,7 +80,7 @@ Here's a full example, using the `None` profile:
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
-| [AzureDevOpsReport](./microsoft-testing-platform-extensions-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
+| [AzureDevOpsReport](./microsoft-testing-platform-extensions-reporting.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
 
 ¹ MSTest.Sdk 3.7.0+
 ² MSTest.Sdk 3.11.0+

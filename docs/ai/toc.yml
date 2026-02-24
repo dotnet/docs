@@ -94,6 +94,12 @@ items:
   items:
     - name: Use Microsoft.ML.Tokenizers
       href: how-to/use-tokenizers.md
+- name: Vector stores
+  items:
+    - name: Vector databases overview
+      href: conceptual/vector-databases.md
+    - name: Use vector stores
+      href: how-to/use-vector-stores.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure and .NET
+title: Get started with Azure and .NE 
 description: Learn the basics you need to know about Azure and .NET.
 ms.date: 01/16/2026
 ms.topic: overview

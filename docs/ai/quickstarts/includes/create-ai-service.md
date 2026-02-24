@@ -1,4 +1,4 @@
-## Create the Foundry Tool
+## Create the AI service
 
 1. To provision an Azure OpenAI service and model, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource) article.
 

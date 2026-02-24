@@ -23,7 +23,7 @@ The <xref:Microsoft.Extensions.AI.IImageGenerator> interface provides a unified,
 <!--Prereqs-->
 [!INCLUDE [azure-openai-prereqs](../quickstarts/includes/prerequisites-azure-openai.md)]
 
-## Configure the Foundry Tool
+## Configure the AI service
 
 To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-image-1` model.
 

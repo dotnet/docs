@@ -14,7 +14,7 @@ In this tutorial, you create an MSTest app to evaluate the *content safety* of a
 - .NET 8.0 SDK or higher - [Install the .NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 - An Azure subscription - [Create one for free](https://azure.microsoft.com/free).
 
-## Configure the Foundry Tool
+## Configure the AI service
 
 To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
 

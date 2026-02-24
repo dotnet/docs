@@ -20,7 +20,7 @@ By following the instructions in this article, you will:
 
 Once you complete this procedure, you can start modifying the new project with your custom code.
 
-This article is part of a collection of articles that show you how to build a chat app using Azure OpenAI Service and Azure AI Search.
+This article is part of a collection of articles that show you how to build a chat app using Azure OpenAI service and Azure AI Search.
 
 Other articles in the collection include:
 

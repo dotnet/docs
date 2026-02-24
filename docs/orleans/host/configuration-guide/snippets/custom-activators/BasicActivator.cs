@@ -11,7 +11,8 @@ public class MyMessage
     [Id(0)]
     public string? Text { get; set; }
 
-    public DateTime CreatedAt { get; }
+    [Id(1)]
+    public DateTime CreatedAt { get; set; }
 
     public MyMessage()
     {

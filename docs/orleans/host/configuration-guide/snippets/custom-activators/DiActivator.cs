@@ -9,6 +9,7 @@ namespace CustomActivators;
 [UseActivator]
 public class AuditEntry
 {
+    [NonSerialized]
     private readonly ILogger<AuditEntry> _logger;
 
     [Id(0)]

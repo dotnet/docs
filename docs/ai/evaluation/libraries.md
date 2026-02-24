@@ -13,7 +13,7 @@ The evaluation libraries, which are built on top of the [Microsoft.Extensions.AI
 - [📦 Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) – Defines the core abstractions and types for supporting evaluation.
 - [📦 Microsoft.Extensions.AI.Evaluation.NLP](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.NLP) - Contains [evaluators](#nlp-evaluators) that evaluate the similarity of an LLM's response text to one or more reference responses using natural language processing (NLP) metrics. These evaluators aren't LLM or AI-based; they use traditional NLP techniques such as text tokenization and n-gram analysis to evaluate text similarity.
 - [📦 Microsoft.Extensions.AI.Evaluation.Quality](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality) – Contains [evaluators](#quality-evaluators) that assess the quality of LLM responses in an app according to metrics such as relevance and completeness. These evaluators use the LLM directly to perform evaluations.
-- [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) – Contains [evaluators](#safety-evaluators), such as the `ProtectedMaterialEvaluator` and `ContentHarmEvaluator`, that use the [Microsoft Foundry](/azure/ai-foundry/) evaluation service to perform evaluations.
+- [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) – Contains [evaluators](#safety-evaluators), such as the `ProtectedMaterialEvaluator` and `ContentHarmEvaluator`, that use the [Microsoft Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting) – Contains support for caching LLM responses, storing the results of evaluations, and generating reports from that data.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting.Azure](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting.Azure) - Supports the reporting library with an implementation for caching LLM responses and storing the evaluation results in an [Azure Storage](/azure/storage/common/storage-introduction) container.
 - [📦 Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) – A command-line tool for generating reports and managing evaluation data.
@@ -60,7 +60,7 @@ NLP evaluators evaluate the quality of an LLM response by comparing it to a refe
 
 ### Safety evaluators
 
-Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. They rely on the Foundry evaluation service, which uses a model that's fine tuned to perform evaluations.
+Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. They rely on the Foundry Evaluation service, which uses a model that's fine tuned to perform evaluations.
 
 | Evaluator type                                                            | Metric             | Description |
 |---------------------------------------------------------------------------|--------------------|-------------|

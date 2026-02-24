@@ -29,7 +29,7 @@ If your application needs to accept search expressions from users, avoid passing
 - Support a restricted search syntax (such as simple wildcards or substring matching) that you translate into a regex pattern internally.
 - Use <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> to treat any user-supplied text as a literal string within a pattern.
 
-Features such as [time-out values](#use-time-out-values) and <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> help protect against accidental performance problems in developer-authored patterns. They are not intended as a security boundary against malicious patterns.
+Features such as [time-out values](#use-time-out-values) and <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> (which guarantees linear-time processing in the length of the input) help protect against accidental performance problems in developer-authored patterns. They are not intended as a security boundary against malicious patterns.
 
 ## Consider the input source
 

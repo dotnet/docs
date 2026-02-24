@@ -119,11 +119,11 @@ Use the following table to find extension options quickly.
 | Collect code coverage | [Code Coverage extensions](./microsoft-testing-platform-extensions-code-coverage.md) |
 | Collect crash or hang dumps | [Diagnostics extensions](./microsoft-testing-platform-extensions-diagnostics.md) |
 | Generate test reports (for example TRX) or customize terminal output | [Reporting extensions](./microsoft-testing-platform-extensions-reporting.md) |
-| Apply hosting-level controls | [Hosting extensions](./microsoft-testing-platform-extensions-hosting.md) |
-| Apply policy controls | [Policy extensions](./microsoft-testing-platform-extensions-policy.md) |
+| Apply hosting-level controls | [Hot Reload extension](./microsoft-testing-platform-extensions-hot-reload.md) |
+| Apply policy controls | [Retry extension](./microsoft-testing-platform-extensions-retry.md) |
 | Run tests that use Microsoft Fakes | [Microsoft Fakes extension](./microsoft-testing-platform-extensions-fakes.md) |
-| Retry failed tests | [Policy extensions (Retry)](./microsoft-testing-platform-extensions-policy.md#retry) |
-| Emit OpenTelemetry traces and metrics | [OpenTelemetry extension](./microsoft-testing-platform-extensions-opentelemetry.md) |
+| Retry failed tests | [Retry extension](./microsoft-testing-platform-extensions-retry.md#retry) |
+| Emit OpenTelemetry traces and metrics | [OpenTelemetry extension](./microsoft-testing-platform-extensions-open-telemetry.md) |
 
 ## Discover options in your test app
 

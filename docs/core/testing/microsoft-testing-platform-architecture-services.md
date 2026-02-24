@@ -172,7 +172,7 @@ The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICo
 
 `ICommandLineOptions.TryGetOptionArgumentList(string optionName, out string[]? arguments)`: This method enables you to check whether a specific option has been set and, if so, retrieve the corresponding value or values (if the arity is more than one). Similar to the previous case, the `optionName` should be provided without the `--` prefix.
 
-### The `ILoggerFactory` service
+## The `ILoggerFactory` service
 
 The testing platform comes with an integrated logging system that generates a log file. You can view the logging options by running the `--help` command.
 The options you can choose from include:

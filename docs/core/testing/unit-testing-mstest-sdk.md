@@ -53,8 +53,8 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Crash Dump](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)
   * [Fakes](./microsoft-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
   * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
-  * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
-  * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
+  * [Hot Reload](./microsoft-testing-platform-extensions-hot-reload.md#hot-reload)
+  * [Retry](./microsoft-testing-platform-extensions-retry.md#retry)
   * [Trx Report](./microsoft-testing-platform-extensions-reporting.md#visual-studio-test-reports-trx)
   * [AzureDevOpsReport](./microsoft-testing-platform-extensions-reporting.md#azure-devops-reports)
 

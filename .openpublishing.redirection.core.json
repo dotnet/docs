@@ -1652,7 +1652,7 @@
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-troubleshooting#exit-codes",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-extensions.md",
@@ -1671,12 +1671,12 @@
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-telemetry",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
             "redirect_url": "/dotnet/core/testing/test-platforms-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-runsettings.md",
@@ -1954,7 +1954,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-hosting.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-hosting"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-hot-reload"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-extensions-hosting.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-hot-reload",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-output.md",
@@ -1962,7 +1967,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-policy.md",
-            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-policy"
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-retry"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-extensions-policy.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-retry",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-test-reports.md",
@@ -1976,7 +1986,7 @@
         {
             "source_path_from_root": "/docs/core/testing/microsoft-testing-platform-extensions-output.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-reporting#terminal-test-reporter",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-vstest-bridge.md",

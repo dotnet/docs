@@ -25,11 +25,11 @@ Use the following path based on your goal:
 - Need coverage data: [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md)
 - Need crash and hang diagnostics: [Diagnostics](./microsoft-testing-platform-extensions-diagnostics.md)
 - Need test reports such as TRX or terminal output customization: [Reporting](./microsoft-testing-platform-extensions-reporting.md)
-- Need hosting-level behavior customizations: [Hosting](./microsoft-testing-platform-extensions-hosting.md)
-- Need policy-based controls: [Policy](./microsoft-testing-platform-extensions-policy.md)
+- Need hosting-level behavior customizations: [Hot Reload](./microsoft-testing-platform-extensions-hot-reload.md)
+- Need policy-based controls: [Retry](./microsoft-testing-platform-extensions-retry.md)
 - Need Microsoft Fakes support: [Microsoft Fakes](./microsoft-testing-platform-extensions-fakes.md)
-- Need to retry failed tests: [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
-- Need OpenTelemetry traces and metrics: [OpenTelemetry](./microsoft-testing-platform-extensions-opentelemetry.md)
+- Need to retry failed tests: [Retry](./microsoft-testing-platform-extensions-retry.md#retry)
+- Need OpenTelemetry traces and metrics: [OpenTelemetry](./microsoft-testing-platform-extensions-open-telemetry.md)
 - Need terminal output customization: [Reporting](./microsoft-testing-platform-extensions-reporting.md#terminal-test-reporter)
 - Need telemetry opt-out information: [Telemetry](./microsoft-testing-platform-extensions-telemetry.md)
 
@@ -47,15 +47,15 @@ Extensions for test report files (TRX, Azure DevOps) and terminal output.
 
 Extensions offering diagnostics and troubleshooting functionalities.
 
-**[OpenTelemetry](./microsoft-testing-platform-extensions-opentelemetry.md)**
+**[OpenTelemetry](./microsoft-testing-platform-extensions-open-telemetry.md)**
 
 This extension integrates OpenTelemetry with Microsoft.Testing.Platform, allowing test runs to emit traces and metrics.
 
-**[Policy](./microsoft-testing-platform-extensions-policy.md)**
+**[Retry](./microsoft-testing-platform-extensions-retry.md)**
 
 Extensions allowing to define policies around the test execution.
 
-**[Hosting](./microsoft-testing-platform-extensions-hosting.md)**
+**[Hot Reload](./microsoft-testing-platform-extensions-hot-reload.md)**
 
 Extensions affecting how the test execution is hosted.
 

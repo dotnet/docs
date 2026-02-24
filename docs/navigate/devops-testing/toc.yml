@@ -280,11 +280,11 @@ items:
                   - name: Crash and hang dumps
                     href: ../../core/testing/microsoft-testing-platform-extensions-diagnostics.md
                   - name: OpenTelemetry
-                    href: ../../core/testing/microsoft-testing-platform-extensions-opentelemetry.md
-                  - name: Policy
-                    href: ../../core/testing/microsoft-testing-platform-extensions-policy.md
-                  - name: Hosting
-                    href: ../../core/testing/microsoft-testing-platform-extensions-hosting.md
+                    href: ../../core/testing/microsoft-testing-platform-extensions-open-telemetry.md
+                  - name: Retry
+                    href: ../../core/testing/microsoft-testing-platform-extensions-retry.md
+                  - name: Hot Reload
+                    href: ../../core/testing/microsoft-testing-platform-extensions-hot-reload.md
                   - name: Microsoft Fakes
                     href: ../../core/testing/microsoft-testing-platform-extensions-fakes.md
                   - name: Telemetry
@@ -299,12 +299,14 @@ items:
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-architecture.md
+                  - name: Build a test framework
+                    href: ../../core/testing/microsoft-testing-platform-architecture-test-framework.md
                   - name: VSTest Bridge
                     href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
+                  - name: Build extensions
+                    href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
                   - name: Capabilities
                     href: ../../core/testing/microsoft-testing-platform-architecture-capabilities.md
-                  - name: Extension points
-                    href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
           - name: VSTest

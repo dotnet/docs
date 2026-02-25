@@ -47,8 +47,8 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1025][1025] | Multiple logging methods cannot use the same event name within a class |
 | [SYSLIB1026][1026] | C# language version not supported by the logging source generator. |
 | [SYSLIB1027][1027] | Primary constructor parameter of type `Microsoft.Extensions.Logging.ILogger` is hidden by a field |
-| SYSLIB1028 | (Reserved for logging.) |
-| SYSLIB1029 | (Reserved for logging.) |
+| [SYSLIB1028][1028] | Logging method argument uses unsupported `params` parameter modifier |
+| [SYSLIB1029][1029] | Logging method parameter is a ref struct |
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |
 | [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |
@@ -198,6 +198,8 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1025]: syslib1025.md
 [1026]: syslib1026.md
 [1027]: syslib1027.md
+[1028]: syslib1028.md
+[1029]: syslib1029.md
 [1030]: syslib1030.md
 [1031]: syslib1031.md
 [1032]: syslib1032.md

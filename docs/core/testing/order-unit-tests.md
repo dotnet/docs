@@ -55,7 +55,7 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 The xUnit test framework allows for more granularity and control of test run order. You implement the `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces to control the order of test cases for a class, or test collections.
 
 > [!NOTE]
-> xUnit runs test classes in parallel by default. Tests within a single class always run sequentially, so `ITestCaseOrderer` controls the sequence within that class. To disable parallelism across all classes, apply `[assembly: CollectionBehavior(DisableTestParallelization = true)]` in an assembly-level file.
+> xUnit runs test classes in parallel by default. Tests within a single class always run sequentially, so `ITestCaseOrderer` controls the sequence within that class. To disable parallelism across all classes, apply `[assembly: CollectionBehavior(DisableTestParallelization = true)]` at the assembly level, for example in `AssemblyInfo.cs` or in any source file in your test project.
 
 ## Order by test case alphabetically
 

@@ -2,6 +2,7 @@
 using Azure.Identity;
 using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
+using ModelContextProtocol.Protocol;
 
 // Create an IChatClient using Azure OpenAI.
 IChatClient client =
@@ -12,15 +13,16 @@ IChatClient client =
     .UseFunctionInvocation()
     .Build();
 
-// Create the MCP client
+// Create the MCP client.
 // Configure it to start and connect to your MCP server.
-IMcpClient mcpClient = await McpClientFactory.CreateAsync(
-    new StdioClientTransport(new()
-    {
-        Command = "dotnet run",
-        Arguments = ["--project", "<path-to-your-mcp-server-project>"],
-        Name = "Minimal MCP Server",
-    }));
+var transport = new StdioClientTransport(new()
+{
+    Command = "dotnet run",
+    Arguments = ["--project", "<path-to-your-mcp-server-project>"],
+    Name = "Minimal MCP Server",
+});
+ITransport connectedTransport = await transport.ConnectAsync();
+McpClient mcpClient = (McpClient)connectedTransport;
 
 // List all available tools from the MCP server.
 Console.WriteLine("Available tools:");

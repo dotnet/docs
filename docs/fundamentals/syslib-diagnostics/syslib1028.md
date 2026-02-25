@@ -6,12 +6,12 @@ f1_keywords:
   - SYSLIB1028
 ---
 
-# SYSLIB1028: Argument is using the unsupported 'params' parameter modifier
+# SYSLIB1028: Argument is using an unsupported parameter modifier
 
-The `params` parameter modifier isn't supported for <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute>-annotated logging methods.
+The `params` and `scoped` parameter modifiers aren't supported for <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute>-annotated logging methods.
 
 ## Workarounds
 
-Remove the `params` modifier from the parameter.
+Remove the `params` or `scoped` modifier from the parameter.
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

@@ -62,7 +62,7 @@ Azure offers many other Foundry Tools to build specific application capabilities
 | Service                           | Description                                  |
 |-----------------------------------|----------------------------------------------|
 | [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
-| [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content.                      |
+| [Content Safety in Foundry Control Plane](/azure/ai-services/content-safety/) | Detect unwanted or offensive content.                      |
 | [Azure Document Intelligence in Foundry Tools](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
 | [Azure Language in Foundry Tools](/azure/ai-services/language-service/)     | Build apps with industry-leading natural language understanding capabilities. |
 | [Azure Speech in Foundry Tools](/azure/ai-services/speech-service/)         | Speech to text, text to speech, translation, and speaker recognition. |

@@ -2,7 +2,7 @@
 title: Sample documentation
 description: Learn how to properly process parenthetical points for redrect files. Get me that ipsum yo.
 ms.date: 10/21/2025
-----
+---
 
 # Sample article number 1
 

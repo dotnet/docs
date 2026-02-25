@@ -2,7 +2,7 @@
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
 ms.topic: concept-article
-ms.date: 08/13/2025
+ms.date: 11/05/2025
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -112,7 +112,9 @@ When a value of `dev` is used, the chain looks as follows:
 
 :::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-development.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
 
-To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>.
+To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>:
+
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacEnvVar" highlight="8-9":::
 
 #### Use a specific credential
 
@@ -132,7 +134,9 @@ To exclude all credentials except for one, set environment variable `AZURE_TOKEN
 > [!IMPORTANT]
 > The `AZURE_TOKEN_CREDENTIALS` environment variable supports individual credential names in `Azure.Identity` package versions 1.15.0 and later.
 
-To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>.
+To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>:
+
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacEnvVar" highlight="8-9":::
 
 ## ChainedTokenCredential overview
 

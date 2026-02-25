@@ -102,7 +102,7 @@ This app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Mic
     :::code language="csharp" source="snippets/build-chat-app/azure-openai/program.cs" id="GetChatClient":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -134,7 +134,7 @@ This app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Mic
 
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end

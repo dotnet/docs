@@ -19,7 +19,7 @@ C# supports a wide range of application types. Whatever kind of software you wan
 C# integrates with AI and machine learning tools:
 
 - **[Agent Framework](/agent-framework/overview/?pivots=programming-language-csharp)** - Build agents and workflows for Azure, OpenAI, Anthropic, Ollama, and more.
-- **[Azure AI services](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
+- **[Foundry Tools](/azure/ai-services/)** - Access pre-built AI capabilities like vision, language understanding, and speech recognition.
 - **[ML.NET](../../machine-learning/index.yml)** - Build custom machine learning models in C# without requiring deep ML expertise.
 
 Get started: [ML.NET tutorials](../../machine-learning/index.yml).

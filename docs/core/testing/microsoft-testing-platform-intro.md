@@ -26,7 +26,7 @@ Use the following path, based on what you need next:
 - Find platform and extension CLI switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
 - Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [Microsoft.Testing.Platform support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
 - Migrate an existing VSTest setup: [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md)
-- Add diagnostics, coverage, and reporting: [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md)
+- Add diagnostics, coverage, and reporting: [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)
 - Build your own extension: [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)
 
 ## Microsoft.Testing.Platform pillars
@@ -80,6 +80,9 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
 - Automatic generation of the entry point (`Main` method).
 - Automatic generation of the configuration file.
+- Automatic detection and registration of installed extension packages.
+
+When this package is active (the default for MSTest, NUnit, and xUnit runners), installing an extension NuGet package is all that's needed — extensions are auto-registered with no code changes. If you disable the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`, you must register extensions manually in your `Main` method. Each extension page documents its manual registration call.
 
 > [!NOTE]
 > This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.
@@ -87,6 +90,6 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 ## See also
 
 - [Test platforms overview](test-platforms-overview.md)
-- [Microsoft.Testing.Platform extensions](microsoft-testing-platform-extensions.md)
-- [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-extensions-telemetry.md)
+- [Microsoft.Testing.Platform features](microsoft-testing-platform-features.md)
+- [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md)
 - [Microsoft.Testing.Platform troubleshooting](microsoft-testing-platform-troubleshooting.md)

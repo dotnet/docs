@@ -1,22 +1,31 @@
 ---
-title: Microsoft.Testing.Platform policy extensions
-description: Learn about the various Microsoft.Testing.Platform policy extensions and how to use them.
+title: Microsoft.Testing.Platform retry
+description: Learn about retrying failed tests with Microsoft.Testing.Platform.
 author: evangelink
 ms.author: amauryleve
-ms.date: 04/10/2024
+ms.date: 02/25/2026
+ai-usage: ai-assisted
 ---
 
-# Policy extensions
+# Retry
 
-This article lists and explains all Microsoft.Testing.Platform extensions related to the policy capability.
+This feature requires the [Microsoft.Testing.Extensions.Retry](https://nuget.org/packages/Microsoft.Testing.Extensions.Retry) NuGet package.
+
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), this extension is auto-registered when you install its NuGet package — no code changes needed. The manual registration below is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.TestHost.AddRetryProvider();
+```
 
 ## Retry
 
 A .NET test resilience and transient-fault-handling extension.
 
 This extension is intended for integration tests where the test depends heavily on the state of the environment and could experience transient faults.
-
-This extension is shipped as part of [Microsoft.Testing.Extensions.Retry](https://nuget.org/packages/Microsoft.Testing.Extensions.Retry) package.
 
 > [!NOTE]
 > The package is shipped with the restrictive Microsoft.Testing.Platform Tools license.

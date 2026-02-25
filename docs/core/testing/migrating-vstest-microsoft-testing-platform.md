@@ -95,12 +95,12 @@ The test-related arguments are VSTest specific and so need to be transformed to 
 |-----------------|-----------------------|
 | `--test-adapter-path <ADAPTER_PATH>` | Not relevant for Microsoft.Testing.Platform |
 | `--blame` | Not relevant for Microsoft.Testing.Platform |
-| `--blame-crash` | `--crashdump` (requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)) |
-| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` (requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)) |
+| `--blame-crash` | `--crashdump` (requires [Crash dump extension](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)) |
+| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` (requires [Crash dump extension](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)) |
 | `--blame-crash-collect-always` | Not supported |
-| `--blame-hang` | `--hangdump` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
-| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
-| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
+| `--blame-hang` | `--hangdump` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
+| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
+| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
 | `--collect <DATA_COLLECTOR_NAME>` | Depends on the data collector |
 | `-d\|--diag <LOG_FILE>` | `--diagnostic` |
 | `--filter <EXPRESSION>` | Depends upon the selected test framework |

@@ -269,26 +269,28 @@ items:
                 href: ../../core/testing/microsoft-testing-platform-config.md
               - name: Troubleshooting
                 href: ../../core/testing/microsoft-testing-platform-troubleshooting.md
-              - name: Extensions
+              - name: Features
                 items:
                   - name: Overview
-                    href: ../../core/testing/microsoft-testing-platform-extensions.md
+                    href: ../../core/testing/microsoft-testing-platform-features.md
+                  - name: Terminal output
+                    href: ../../core/testing/microsoft-testing-platform-terminal-output.md
+                  - name: Test reports
+                    href: ../../core/testing/microsoft-testing-platform-test-reports.md
                   - name: Code coverage
-                    href: ../../core/testing/microsoft-testing-platform-extensions-code-coverage.md
-                  - name: Reporting
-                    href: ../../core/testing/microsoft-testing-platform-extensions-reporting.md
+                    href: ../../core/testing/microsoft-testing-platform-code-coverage.md
                   - name: Crash and hang dumps
-                    href: ../../core/testing/microsoft-testing-platform-extensions-diagnostics.md
+                    href: ../../core/testing/microsoft-testing-platform-crash-hang-dumps.md
                   - name: OpenTelemetry
-                    href: ../../core/testing/microsoft-testing-platform-extensions-open-telemetry.md
+                    href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
                   - name: Retry
-                    href: ../../core/testing/microsoft-testing-platform-extensions-retry.md
+                    href: ../../core/testing/microsoft-testing-platform-retry.md
                   - name: Hot Reload
-                    href: ../../core/testing/microsoft-testing-platform-extensions-hot-reload.md
+                    href: ../../core/testing/microsoft-testing-platform-hot-reload.md
                   - name: Microsoft Fakes
-                    href: ../../core/testing/microsoft-testing-platform-extensions-fakes.md
+                    href: ../../core/testing/microsoft-testing-platform-fakes.md
                   - name: Telemetry
-                    href: ../../core/testing/microsoft-testing-platform-extensions-telemetry.md
+                    href: ../../core/testing/microsoft-testing-platform-telemetry.md
               - name: Migration
                 items:
                   - name: Migrate from VSTest

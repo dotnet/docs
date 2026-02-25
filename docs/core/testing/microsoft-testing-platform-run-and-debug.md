@@ -21,7 +21,7 @@ ai-usage: ai-assisted
 > ```
 
 > [!IMPORTANT]
-> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-extensions-telemetry.md).
+> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
 
 ## [.NET CLI](#tab/dotnetcli)
 

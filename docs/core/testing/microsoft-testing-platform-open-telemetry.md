@@ -1,20 +1,25 @@
 ---
-title: Microsoft.Testing.Platform OpenTelemetry extension
+title: Microsoft.Testing.Platform OpenTelemetry
 description: Learn how to use the OpenTelemetry extension to emit traces and metrics from Microsoft.Testing.Platform.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 02/25/2026
 ai-usage: ai-assisted
 ---
 
-# OpenTelemetry extension
+# OpenTelemetry
 
-This extension integrates [OpenTelemetry](https://opentelemetry.io/) with Microsoft.Testing.Platform, allowing test runs to emit traces and metrics through the standard OpenTelemetry SDK. This extension is shipped as part of [Microsoft.Testing.Extensions.OpenTelemetry](https://nuget.org/packages/Microsoft.Testing.Extensions.OpenTelemetry) NuGet package.
+This feature requires the [Microsoft.Testing.Extensions.OpenTelemetry](https://nuget.org/packages/Microsoft.Testing.Extensions.OpenTelemetry) NuGet package.
+
+This extension integrates [OpenTelemetry](https://opentelemetry.io/) with Microsoft.Testing.Platform, allowing test runs to emit traces and metrics through the standard OpenTelemetry SDK.
 
 > [!IMPORTANT]
 > This extension is currently experimental. All public APIs are gated behind the `TPEXP` diagnostic ID.
 
 ## Registration
+
+> [!NOTE]
+> This extension doesn't support auto-registration. You must register it manually by disabling the auto-generated entry point (`<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`) and calling `AddOpenTelemetryProvider` in your `Main` method.
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
@@ -31,9 +36,6 @@ builder.AddOpenTelemetryProvider(
 using var app = await builder.BuildAsync();
 return await app.RunAsync();
 ```
-
-> [!NOTE]
-> To use this extension, you must disable the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` in your project file.
 
 ## API
 

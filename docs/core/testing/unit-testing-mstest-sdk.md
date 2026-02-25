@@ -25,7 +25,7 @@ By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mst
 
 ## Extend Microsoft.Testing.Platform
 
-You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
+You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-features.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
 - [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
@@ -42,21 +42,21 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 
   Enables the following extensions:
 
-  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-  * [Trx Report](./microsoft-testing-platform-extensions-reporting.md#visual-studio-test-reports-trx)
+  * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
+  * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
 
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
   Enables the following extensions:
 
-  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-  * [Crash Dump](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)
-  * [Fakes](./microsoft-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
-  * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
-  * [Hot Reload](./microsoft-testing-platform-extensions-hot-reload.md#hot-reload)
-  * [Retry](./microsoft-testing-platform-extensions-retry.md#retry)
-  * [Trx Report](./microsoft-testing-platform-extensions-reporting.md#visual-studio-test-reports-trx)
-  * [AzureDevOpsReport](./microsoft-testing-platform-extensions-reporting.md#azure-devops-reports)
+  * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
+  * [Crash Dump](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)
+  * [Fakes](./microsoft-testing-platform-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
+  * [Hang Dump](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)
+  * [Hot Reload](./microsoft-testing-platform-hot-reload.md#hot-reload)
+  * [Retry](./microsoft-testing-platform-retry.md#retry)
+  * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
+  * [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports)
 
 Here's a full example, using the `None` profile:
 
@@ -80,7 +80,7 @@ Here's a full example, using the `None` profile:
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
-| [AzureDevOpsReport](./microsoft-testing-platform-extensions-reporting.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
+| [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
 
 ¹ MSTest.Sdk 3.7.0+
 ² MSTest.Sdk 3.11.0+
@@ -102,7 +102,7 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 </Project>
 ```
 
-For a list of all available extensions, see [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md).
+For a list of all available extensions, see [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md).
 
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.

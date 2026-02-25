@@ -114,16 +114,16 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 Use the following table to find extension options quickly.
 
-| Scenario | Extension documentation |
+| Scenario | Feature documentation |
 |---|---|
-| Collect code coverage | [Code Coverage extensions](./microsoft-testing-platform-extensions-code-coverage.md) |
-| Collect crash or hang dumps | [Diagnostics extensions](./microsoft-testing-platform-extensions-diagnostics.md) |
-| Generate test reports (for example TRX) or customize terminal output | [Reporting extensions](./microsoft-testing-platform-extensions-reporting.md) |
-| Apply hosting-level controls | [Hot Reload extension](./microsoft-testing-platform-extensions-hot-reload.md) |
-| Apply policy controls | [Retry extension](./microsoft-testing-platform-extensions-retry.md) |
-| Run tests that use Microsoft Fakes | [Microsoft Fakes extension](./microsoft-testing-platform-extensions-fakes.md) |
-| Retry failed tests | [Retry extension](./microsoft-testing-platform-extensions-retry.md#retry) |
-| Emit OpenTelemetry traces and metrics | [OpenTelemetry extension](./microsoft-testing-platform-extensions-open-telemetry.md) |
+| Collect code coverage | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
+| Collect crash or hang dumps | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
+| Generate test reports (for example TRX) | [Test reports](./microsoft-testing-platform-test-reports.md) |
+| Customize terminal output | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
+| Apply hosting-level controls | [Hot Reload](./microsoft-testing-platform-hot-reload.md) |
+| Retry failed tests | [Retry](./microsoft-testing-platform-retry.md#retry) |
+| Run tests that use Microsoft Fakes | [Microsoft Fakes](./microsoft-testing-platform-fakes.md) |
+| Emit OpenTelemetry traces and metrics | [OpenTelemetry](./microsoft-testing-platform-open-telemetry.md) |
 
 ## Discover options in your test app
 
@@ -134,5 +134,5 @@ For advanced diagnostics of registered providers and options, run with `--info`.
 ## See also
 
 - [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)
 - [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)

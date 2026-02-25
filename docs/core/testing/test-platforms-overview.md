@@ -73,4 +73,4 @@ For complete details about `dotnet test` modes and arguments, see [Testing with 
 - Learn MTP concepts: [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
 - Understand VSTest options: [VSTest options](/visualstudio/test/vstest-console-options)
 - Migrate from VSTest: [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md)
-- Add capabilities: [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md)
+- Add capabilities: [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)

@@ -160,7 +160,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md).
 
   > [!TIP]
   > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
@@ -241,6 +241,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with VSTest](dotnet-test-vstest.md)

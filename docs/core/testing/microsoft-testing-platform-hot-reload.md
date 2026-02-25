@@ -1,14 +1,25 @@
 ---
-title: Microsoft.Testing.Platform hosting extensions
-description: Learn about the various Microsoft.Testing.Platform hosting extensions and how to use them.
+title: Microsoft.Testing.Platform Hot Reload
+description: Learn about the Microsoft.Testing.Platform Hot Reload extension for running tests with hot reload.
 author: evangelink
 ms.author: amauryleve
-ms.date: 04/10/2024
+ms.date: 02/25/2026
+ai-usage: ai-assisted
 ---
 
-# Hosting extensions
+# Hot Reload
 
-This article lists and explains all Microsoft.Testing.Platform extensions related to the hosting capability.
+This feature requires the [Microsoft.Testing.Extensions.HotReload](https://nuget.org/packages/Microsoft.Testing.Extensions.HotReload) NuGet package.
+
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), this extension is auto-registered when you install its NuGet package — no code changes needed. The manual registration below is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.TestHost.AddHotReloadProvider();
+```
 
 ## Hot reload
 
@@ -16,8 +27,6 @@ Hot reload lets you modify your app's managed source code while the application 
 
 > [!NOTE]
 > The current version is limited to supporting hot reload in "console mode" only. There is currently no support for hot reload in Test Explorer for Visual Studio or Visual Studio Code.
-
-This extension is shipped as part of [Microsoft.Testing.Extensions.HotReload](https://nuget.org/packages/Microsoft.Testing.Extensions.HotReload) NuGet package.
 
 > [!NOTE]
 > The package is shipped with the restrictive Microsoft.Testing.Platform Tools license.

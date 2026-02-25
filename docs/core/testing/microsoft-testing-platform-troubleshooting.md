@@ -32,13 +32,43 @@ This article contains troubleshooting guidance for `Microsoft.Testing.Platform`.
 | `12` | The exit code `12` indicates that the test session was unable to run because the client does not support any of the supported protocol versions. |
 | `13` | The exit code `13` indicates that the test session was stopped due to reaching the specified number of maximum failed tests using `--maximum-failed-tests` command-line option. For more information, see [the Options section in Microsoft.Testing.Platform CLI options reference](microsoft-testing-platform-cli-options.md) |
 
-To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform Diagnostics extensions](microsoft-testing-platform-extensions-diagnostics.md#built-in-options).
+To enable verbose logging and troubleshoot issues, see [Diagnostic logging](#diagnostic-logging).
 
 ### Ignore specific exit codes
 
 `Microsoft.Testing.Platform` is designed to be strict by default but allows for configurability. As such, it's possible for users to decide which exit codes should be ignored (an exit code of `0` will be returned instead of the original exit code).
 
 To ignore specific exit codes, use the `--ignore-exit-code` command line option or the `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable. The valid format accepted is a semi-colon separated list of exit codes to ignore (for example, `--ignore-exit-code 2;3;8`). A common scenario is to consider that test failures shouldn't result in a nonzero exit code (which corresponds to ignoring exit-code `2`).
+
+## Diagnostic logging
+
+The platform provides built-in diagnostic logging to help you troubleshoot test execution issues. You can enable diagnostic logging through command-line options or environment variables.
+
+### Command-line options
+
+The following [platform options](./microsoft-testing-platform-cli-options.md) provide useful information for troubleshooting your test apps:
+
+- `--info`
+- `--diagnostic`
+- `--diagnostic-synchronous-write`
+- `--diagnostic-verbosity`
+- `--diagnostic-file-prefix`
+- `--diagnostic-output-directory`
+
+### Environment variables
+
+You can also enable the diagnostic logs using the environment variables:
+
+| Environment variable name | Description |
+|--|--|
+| `TESTINGPLATFORM_DIAGNOSTIC` | If set to `1`, enables the diagnostic logging. |
+| `TESTINGPLATFORM_DIAGNOSTIC_VERBOSITY` | Defines the verbosity level. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`. |
+| `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_DIRECTORY` | The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory. |
+| `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` | The prefix for the log file name. Defaults to `"log_"`. |
+| `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. |
+
+> [!NOTE]
+> Environment variables take precedence over the command line arguments.
 
 ## Known issues
 
@@ -62,5 +92,5 @@ Manually defining an entry point (`Main`) in a test project or referencing a tes
 
 This error can occur if not all of the Fakes assemblies are present in the bin folder.
 
-- Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./microsoft-testing-platform-extensions-fakes.md).
+- Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./microsoft-testing-platform-fakes.md).
 - For .NET Framework projects, avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.

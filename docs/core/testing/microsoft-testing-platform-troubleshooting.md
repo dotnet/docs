@@ -42,7 +42,7 @@ To ignore specific exit codes, use the `--ignore-exit-code` command line option 
 
 ## Diagnostic logging
 
-The platform provides built-in diagnostic logging to help you troubleshoot test execution issues. You can enable diagnostic logging through command-line options or environment variables.
+The platform provides built-in diagnostic logging to help you troubleshoot test execution. You can enable diagnostic logging through command-line options or environment variables.
 
 ### Command-line options
 
@@ -70,11 +70,11 @@ You can also enable the diagnostic logs using the environment variables:
 > [!NOTE]
 > Environment variables take precedence over the command line arguments.
 
-## Known issues
+## Resolve configuration errors
 
 ### Microsoft.Testing.Platform.MSBuild
 
-The following are known issues related to Microsoft.Testing.Platform.MSBuild.
+The following are common configuration errors related to Microsoft.Testing.Platform.MSBuild.
 
 #### error CS8892: Method 'TestingPlatformEntryPoint.Main(string[])' will not be used as an entry point because a synchronous entry point 'Program.Main(string[])' was found
 

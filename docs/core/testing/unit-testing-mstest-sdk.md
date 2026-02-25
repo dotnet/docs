@@ -51,7 +51,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 
   * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
   * [Crash Dump](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)
-  * [Fakes](./microsoft-testing-platform-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
+  * [Fakes](./microsoft-testing-platform-fakes.md) (MSTest.Sdk 3.7.0+)
   * [Hang Dump](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)
   * [Hot Reload](./microsoft-testing-platform-hot-reload.md#hot-reload)
   * [Retry](./microsoft-testing-platform-retry.md#retry)

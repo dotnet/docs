@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Test platforms overview for .NET
 
-In .NET, a test framework and a test platform are different components.
+In .NET, a test framework and a test platform are different components that work together to discover and run tests.
 
 - The test framework defines the test model you write against, such as MSTest, NUnit, xUnit.net, or TUnit.
 - The test platform runs tests, integrates with IDEs and CLI, and provides shared extension points.

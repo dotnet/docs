@@ -39,7 +39,7 @@ dotnet add package Microsoft.Extensions.DependencyInjection.AutoActivation
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../../tools/dependencies.md).
 
 ## Register services for auto-activation
 
@@ -128,4 +128,4 @@ When using auto-activation, consider the following best practices:
 
 - [Dependency injection in .NET](overview.md)
 - [Dependency injection guidelines](guidelines.md)
-- [Worker Services in .NET](workers.md)
+- [Worker Services in .NET](../workers.md)

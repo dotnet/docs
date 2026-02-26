@@ -322,6 +322,6 @@ When using audit reports, consider the following best practices:
 ## See also
 
 - [Data classification in .NET](data-classification.md)
-- [Logging in .NET](logging.md)
+- [Logging in .NET](logging/overview.md)
 - [High-performance logging in .NET](logging/high-performance-logging.md)
 - [Compile-time logging source generation](logging/source-generation.md)

@@ -48,24 +48,24 @@ The following tables describe all available parameters for each attribute.
 
 | Parameter | Required | Description |
 |---|---|---|
-| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
 
 #### <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> parameters
 
 | Parameter | Required | Description |
 |---|---|---|
-| `IsIndexed` | No | Whether to index this property for filtering. Default is `false`. |
-| `IsFullTextIndexed` | No | Whether to index this property for full-text search. Default is `false`. |
-| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> | No | Whether to index this property for filtering. Default is `false`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No | Whether to index this property for full-text search. Default is `false`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
 
 #### <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> parameters
 
 | Parameter | Required | Description |
 |---|---|---|
-| `Dimensions` | Yes (for collection creation) | The number of dimensions in the vector. Must match your embedding model. |
-| `IndexKind` | No | The type of index to use. Defaults vary by connector. Common values: `Hnsw`, `Flat`. |
-| `DistanceFunction` | No | The distance function for similarity comparisons. Defaults vary by connector. Common values: `CosineSimilarity`, `DotProductSimilarity`, `EuclideanDistance`. |
-| `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions> | Yes (for collection creation) | The number of dimensions in the vector. Must match your embedding model. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind> | No | The type of index to use. Defaults vary by connector. Common values: `Hnsw`, `Flat`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No | The distance function for similarity comparisons. Defaults vary by connector. Common values: `CosineSimilarity`, `DotProductSimilarity`, `EuclideanDistance`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
 
 ## Define a schema programmatically
 
@@ -81,7 +81,7 @@ Create an instance of the `VectorStore` implementation for your chosen database.
 
 ## Get a collection
 
-Call `GetCollection<TKey, TRecord>` on the <xref:Microsoft.Extensions.VectorData.VectorStore> to get a typed <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> reference. Then call <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.EnsureCollectionExistsAsync*> to create the collection if it doesn't already exist:
+Call <xref:Microsoft.Extensions.VectorData.VectorStore.GetCollection*> on the <xref:Microsoft.Extensions.VectorData.VectorStore> to get a typed <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> reference. Then call <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.EnsureCollectionExistsAsync*> to create the collection if it doesn't already exist:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="GetCollection":::
 
@@ -89,7 +89,7 @@ The collection name maps to the underlying storage concept for your database (fo
 
 ## Upsert records
 
-Use `UpsertAsync` to insert or update records in the collection. If a record with the same key already exists, it gets updated:
+Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.UpsertAsync*> to insert or update records in the collection. If a record with the same key already exists, it gets updated:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="UpsertRecords":::
 
@@ -98,7 +98,7 @@ Use `UpsertAsync` to insert or update records in the collection. If a record wit
 
 ## Get records
 
-Use `GetAsync` to retrieve a single record by its key. To retrieve multiple records, pass an `IEnumerable<TKey>` to `GetAsync`:
+Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync*> to retrieve a single record by its key. To retrieve multiple records, pass an `IEnumerable<TKey>` to <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync*>:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="GetRecord":::
 
@@ -124,7 +124,7 @@ Filters are expressed as LINQ expressions. The supported operations vary by conn
 
 ## Control search behavior with VectorSearchOptions
 
-Use `VectorSearchOptions<TRecord>` to control various aspects of vector search behavior:
+Use <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1> to control various aspects of vector search behavior:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="SearchOptions":::
 

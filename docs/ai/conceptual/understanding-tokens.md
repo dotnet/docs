@@ -77,7 +77,7 @@ As training continues, the model adds any new tokens in the training text to its
 
 The semantic relationships between the tokens can be analyzed by using these token ID sequences. Multi-valued numeric vectors, known as [embeddings](embeddings.md), are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with, or in similar contexts to, the other tokens.
 
-After it's trained, a model can calculate an embedding for text that contains multiple tokens. The model tokenizes the text, then calculates an overall embeddings value based on the learned embeddings of the individual tokens. This technique can be used for semantic document searches or adding [vector stores](/semantic-kernel/concepts/vector-store-connectors/) to an AI.
+After it's trained, a model can calculate an embedding for text that contains multiple tokens. The model tokenizes the text, then calculates an overall embeddings value based on the learned embeddings of the individual tokens. This technique can be used for semantic document searches or adding vector stores to an AI.
 
 During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from its vocabulary based on this vector value. In practice, the model calculates multiple vectors by using various elements of the previous tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 
@@ -103,6 +103,7 @@ Generative AI services might also be limited regarding the maximum number of tok
 
 ## Related content
 
+- [Use Microsoft.ML.Tokenizers for text tokenization](../how-to/use-tokenizers.md)
 - [How generative AI and LLMs work](how-genai-and-llms-work.md)
 - [Understand embeddings](embeddings.md)
 - [Work with vector databases](vector-databases.md)

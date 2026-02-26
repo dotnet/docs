@@ -1,21 +1,22 @@
 ---
 description: "null keyword - C# Reference"
 title: "null keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords:
   - "null"
   - "null_CSharpKeyword"
 helpviewer_keywords:
   - "null keyword [C#]"
-ms.assetid: fecb1c60-6232-4efe-87f7-9a86ba2e9119
 ---
 # null (C# Reference)
 
-The `null` keyword is a literal that represents a null reference, one that does not refer to any object. `null` is the default value of reference-type variables. Ordinary value types cannot be null, except for [nullable value types](../builtin-types/nullable-value-types.md).
+The `null` keyword is a literal that represents a null reference, one that doesn't refer to any object. `null` is the default value of reference-type variables. Ordinary value types can't be null, except for [nullable value types](../builtin-types/nullable-value-types.md).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The following example demonstrates some behaviors of the `null` keyword:
 
-[!code-csharp[csrefKeywordsLiteral#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsLiteral/CS/csrefKeywordsLiteral.cs#1)]
+:::code language="csharp" source="./snippets/csrefKeywordsLiteral.cs" id="1":::
 
 ## C# language specification
 

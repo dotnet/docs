@@ -1,11 +1,8 @@
 ---
 title: "Using Vector Databases to Extend LLM Capabilities"
 description: "Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET."
-ms.topic: concept-article #Don't change.
+ms.topic: concept-article
 ms.date: 05/29/2025
-
-#customer intent: As a .NET developer, I want to learn how vector databases store and process embeddings in .NET so I can make more data available to LLMs in my apps.
-
 ---
 
 # Vector databases for .NET + AI
@@ -44,11 +41,6 @@ Other benefits of the RAG pattern include:
 - Overcome LLM tokens limits - the heavy lifting is done through the database vector search.
 - Reduce the costs from frequent fine-tuning on updated data.
 
-## Available vector database solutions
-
-[!INCLUDE [vector-databases](../includes/vector-databases.md)]
-
 ## Related content
 
 - [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md)
-- [More Semantic Kernel .NET connectors](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors)

@@ -1,7 +1,8 @@
 ---
 title: Test a .NET class library using Visual Studio Code
 description: Learn how to use Visual Studio Code and run a unit test project for a .NET class library.
-ms.date: 06/14/2024
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
@@ -9,7 +10,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
+This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
 ## Create a unit test project
 
@@ -79,7 +80,7 @@ To create the test methods:
 
 1. Open *StringLibraryTest/UnitTest1.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/UnitTest1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 

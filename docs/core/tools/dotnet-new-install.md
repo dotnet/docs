@@ -1,11 +1,11 @@
 ---
 title: dotnet new install
 description: The dotnet new install command installs a template package.
-ms.date: 04/15/2022
+ms.date: 11/12/2025
 ---
 # dotnet new install
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -20,7 +20,7 @@ dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source
 
 ## Description
 
-The `dotnet new install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a specific version or prerelease version of a template package, specify the version in the format `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
+The `dotnet new install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a specific version or prerelease version of a template package, specify the version in the format `<package-name>@<package-version>`. (The colon separator `::` was deprecated in favor of the `@` character in .NET 9.0.200 SDK.) By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
 
 If a version of the template package was already installed when you run this command, the template package will be updated to the specified version. If no version is specified, the package is updated to the latest stable version.
 Starting with .NET SDK 6.0.100, if the argument specifies the version, and that version of the NuGet package is already installed, it won't be reinstalled.
@@ -32,7 +32,7 @@ For example, if you install the template package using `dotnet new --install` in
 Starting with .NET SDK 6.0.100, installed template packages are available in later .NET SDK versions installed on your machine. A template package installed in .NET SDK 6.0.100 will also be available in .NET SDK 6.0.101, .NET SDK 6.0.200, and so on. However, these template packages won't be available in .NET SDK versions prior to .NET SDK 6.0.100. To use a template package installed in .NET SDK 6.0.100 or later in earlier .NET SDK versions, you need to install it using `dotnet new install` in that .NET SDK version.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of old syntax:
 >
@@ -43,14 +43,14 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 >   ```
 
 > [!WARNING]
-> Templates can run MSBuild code when triggered, don't install or run untrusted .NET templates.
+> Templates can run MSBuild code and other arbitrary code when triggered. Don't install or run untrusted .NET templates.
 
 ## Arguments
 
 - **`<PATH|NUGET_ID>`**
 
   The folder on the file system or the NuGet package identifier to install the template package from. `dotnet new` attempts to install the NuGet package from the NuGet sources available for the current working directory and the sources specified via the `--add-source` option.
-  If you want to install a specific version or prerelease version of a template package from NuGet source, specify the version in the format `<package-name>::<package-version>`.
+  If you want to install a specific version or prerelease version of a template package from NuGet source, specify the version in the format `<package-name>@<package-version>`. (The colon separator `::` was deprecated in favor of the `@` character in .NET 9.0.200 SDK.)
 
 ## Options
 
@@ -70,15 +70,11 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
   Allows installing template packages from the specified sources even if they would override a template package from another source. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](includes/cli-help.md)]
 
-  Prints out help for the install command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 
@@ -91,13 +87,13 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 - Install version 2.0 of the SPA templates for ASP.NET Core:
 
   ```dotnetcli
-  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0
+  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates@2.0.0
   ```
 
 - Install version 2.0 of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
 
   ```dotnetcli
-  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
+  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates@2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
   ```
 
 ## See also

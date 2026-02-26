@@ -5,7 +5,7 @@ ms.date: 04/29/2021
 ---
 # dotnet new uninstall
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -23,7 +23,7 @@ dotnet new uninstall <PATH|NUGET_ID>
 The `dotnet new uninstall` command uninstalls a template package at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packages and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -51,13 +51,9 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](includes/cli-help.md)]
 
-  Prints out help for the uninstall command. Available since .NET SDK 7.0.100.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 

@@ -18,7 +18,7 @@ The update also includes improvements to support binding `null` values within ar
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

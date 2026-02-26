@@ -10,7 +10,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Diagnostics.Tracing.EventSource> class is intended to be inherited by a user class that provides specific events to be used for event tracing. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> methods are called to log the events.
+The <xref:System.Diagnostics.Tracing.EventSource> class is intended to be inherited by a user class that provides specific events to be used for event tracing. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent*?displayProperty=nameWithType> methods are called to log the events.
 
 The basic functionality of <xref:System.Diagnostics.Tracing.EventSource> is sufficient for most applications. If you want more control over the event metadata that's created, you can apply the <xref:System.Diagnostics.Tracing.EventAttribute> attribute to the methods. For advanced event source applications, it is possible to intercept the commands being sent to the derived event source and change the filtering, or to cause actions (such as dumping a data structure) to be performed by the inheritor. An event source can be activated in-process using <xref:System.Diagnostics.Tracing.EventListener> and out-of-process using EventPipe-based tools such as `dotnet-trace` or Event Tracing for Windows (ETW) based tools like `PerfView` or `Logman`. It is also possible to programmatically control and intercept the data dispatcher. The <xref:System.Diagnostics.Tracing.EventListener> class provides additional functionality.
 
@@ -59,7 +59,7 @@ Traditionally, user-defined <xref:System.Diagnostics.Tracing.EventSource> object
 > Abstract <xref:System.Diagnostics.Tracing.EventSource> objects cannot define keywords, tasks, opcodes, channels, or events.
 
 > [!IMPORTANT]
-> To avoid name collisions at run time when generating event metadata, don't explicitly implement interface methods when using interfaces with <xref:System.Diagnostics.Tracing.EventSource>.
+> To avoid name collisions at runtime when generating event metadata, don't explicitly implement interface methods when using interfaces with <xref:System.Diagnostics.Tracing.EventSource>.
 
 The following example shows an implementation of <xref:System.Diagnostics.Tracing.EventSource> that uses an interface.
 

@@ -1,13 +1,14 @@
 ---
-title: "Cross-platform cryptography in .NET"
+title: "Cross-platform cryptography"
 description: Learn about cryptographic capabilities on platforms supported by .NET.
-ms.date: "06/19/2020"
+ms.date: "11/04/2025"
 ms.subservice: standard-library
 helpviewer_keywords:
   - "cryptography, cross-platform"
   - "encryption, cross-platform"
+ai-usage: ai-assisted
 ---
-# Cross-Platform Cryptography in .NET
+# Cross-platform cryptography in .NET
 
 Cryptographic operations in .NET are done by operating system (OS) libraries. This dependency has advantages:
 
@@ -76,19 +77,17 @@ The underlying ciphers and chaining are done by the system libraries.
 
 Authenticated encryption (AE) support is provided for AES-CCM, AES-GCM, and ChaCha20Poly1305 via the <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName>, <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, and <xref:System.Security.Cryptography.ChaCha20Poly1305?displayProperty=fullName> classes, respectively.
 
-Since authenticated encryption requires newer platform APIs to support the algorithm, support may not be present on all platforms. The `IsSupported` static property on the classes for the algorithm can be used to detect at runtime if the current platform supports the algorithm or not.
+Since authenticated encryption requires newer platform APIs to support the algorithm, support might not be present on all platforms. To detect at runtime whether the current platform supports the algorithm, you can use the `IsSupported` static property on the class for the algorithm.
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
 | AES-GCM           | ✔️                      | ✔️            | ✔️      | ⚠️                     | ✔️            | ❌      |
-| AES-CCM           | ✔️                      | ✔️            | ⚠️      | ❌                     | ✔️            | ❌      |
+| AES-CCM           | ✔️                      | ✔️            | ❌      | ❌                     | ✔️            | ❌      |
 | ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ✔️      | ⚠️                     | API Level 28+ | ❌      |
 
 ### AES-CCM on macOS
 
-On macOS, the system libraries don't support AES-CCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> class uses OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for this type to function, and it must be in a path that the system would load a library from by default. We recommend that you install OpenSSL from a package manager such as Homebrew.
-
-The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from earlier versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
+Prior to .NET 10, AES-CCM worked if a supported version of OpenSSL was present and the dynamic library loader could locate it. OpenSSL support on macOS was removed in .NET 10.
 
 ### AES-GCM and ChaCha20Poly1305 on iOS, tvOS, and MacCatalyst
 
@@ -119,9 +118,10 @@ Support for AES-GCM and ChaCha20Poly1305 is available starting in .NET 9 on iOS 
   The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
+
   On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On Apple platforms, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
 
-### ChaCha20Poly1305 keys, nonces, and tags.
+### ChaCha20Poly1305 keys, nonces, and tags
 
 ChaCha20Poly1305 has a fixed size for the key, nonce, and authentication tag. ChaCha20Poly1305 always uses a 256-bit key, a 96-bit (12-byte) nonce, and 128-bit (16-byte) tag.
 
@@ -173,11 +173,11 @@ Padding and digest support vary by platform:
 |--------------------------------------------------------------|---------|---------------|-----------------|-------------------------|-----------------|
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup> | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>          | ⚠️<sup>1</sup>  |
 | <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌             | ❌             | ❌                      | ❌              |
-| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️             | ⚠️<sup>2</sup> | ❌                      | ❌              |
+| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️             | ❌<sup>2</sup> | ❌                      | ❌              |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>2</sup> On macOS, prior to .NET 10, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDSA
 
@@ -210,9 +210,9 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | Type                                             | Windows | Linux | macOS | iOS, tvOS, MacCatalyst | Android |
 |--------------------------------------------------|---------|-------|-------|------------------------|---------|
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️      | ❌   | ❌    | ❌                     | ❌      |
-| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ⚠️\*  | ❌                     | ❌      |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ❌\*  | ❌                     | ❌      |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDH
 
@@ -230,7 +230,7 @@ The <xref:System.Security.Cryptography.ECDiffieHellman> class supports the "raw"
 
 ECDH key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10     | Windows 7 - 8.1 | Linux          | macOS           | iOS, tvOS, MacCatalyst | Android        |
+| Elliptic Curve                     | Windows 10+    | Windows 7 - 8.1 | Linux          | macOS           | iOS, tvOS, MacCatalyst | Android        |
 |------------------------------------|----------------|-----------------|----------------|-----------------|------------------------|----------------|
 | NIST P-256 (secp256r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️                     | ✔️             |
 | NIST P-384 (secp384r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️                     | ✔️             |
@@ -255,9 +255,9 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | Type                                                       | Windows | Linux | macOS | iOS, tvOS, MacCatalyst | Android  |
 |------------------------------------------------------------|---------|-------|-------|------------------------|----------|
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌    | ❌                     | ❌       |
-| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\*  | ❌                     | ❌       |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ❌\*  | ❌                     | ❌       |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### DSA
 
@@ -290,11 +290,103 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 |--------------------------------------------------------------|---------|----------------|-----------------|------------------------|----------------|
 | <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️      | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>  | ❌                    | ⚠️<sup>1</sup> |
 | <xref:System.Security.Cryptography.DSACng>                   | ✔️      | ❌             | ❌              | ❌                    | ❌             |
-| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️             | ⚠️<sup>2</sup>  | ❌                    | ❌             |
+| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️             | ❌<sup>2</sup>  | ❌                    | ❌             |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>2</sup> On macOS, prior to .NET 10, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
+
+## Post-quantum cryptography
+
+Post-quantum algorithms are available starting in .NET 10. They're also available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from the base class might have different support behaviors.
+
+For the built-in algorithms, an `IsSupported` static property is available to determine if the platform supports any of the parameter sets.
+
+The native interop types for post-quantum algorithms do not support key generation or importing. They exist specifically for interop scenarios with the native platform types, such as an `EVP_PKEY` on OpenSSL or `CngKey` on Windows.
+
+### ML-KEM
+
+| Algorithm    | Windows                       | Linux          | Apple | Android | Browser |
+|--------------|-------------------------------|----------------|-------|---------|---------|
+| ML-KEM-512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-KEM-768   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-KEM-1024  | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+#### Native interop ML-KEM
+
+* <xref:System.Security.Cryptography.MLKemOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.MLKemCng>: Windows 11 Insiders (Latest)
+
+### ML-DSA
+
+ML-DSA has a pure and prehash variant (HashML-DSA). The following table reflects both the pure and prehash variants.
+
+| Algorithm                                   | Windows                       | Linux          | Apple | Android | Browser |
+|---------------------------------------------|-------------------------------|----------------|-------|---------|---------|
+| ML-DSA-44                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-65                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-87                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-44 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-65 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-87 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+<sup>1</sup> External Mu support is for signing and verifying Mu only. Computation of Mu isn't supported.
+
+#### Native interop ML-DSA
+
+* <xref:System.Security.Cryptography.MLDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.MLDsaCng>: Windows 11 Insiders (latest)
+
+### SLH-DSA
+
+SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflects both the pure and prehash variants.
+
+| Algorithm           | Windows | Linux          | Apple | Android | Browser |
+|---------------------|---------|----------------|-------|---------|---------|
+| SLH-DSA-SHA2-128f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-128s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-192f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-192s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-256f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-256s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-128f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-128s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-192f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-192s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-256f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-256s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+
+#### Native interop SLH-DSA
+
+* <xref:System.Security.Cryptography.SlhDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.SlhDsaCng>: Not supported
+
+### Composite ML-DSA
+
+| Algorithm                              | Windows                       | Linux          | Apple | Android | Browser |
+|----------------------------------------|-------------------------------|----------------|-------|---------|---------|
+| MLDSA44-RSA2048-PSS-SHA256             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PKCS15-SHA256          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA44-ECDSA-P256-SHA256              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-P256-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-Ed448-SHAKE256                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA87-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P521-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+#### Native interop composite ML-DSA
+
+* <xref:System.Security.Cryptography.CompositeMLDsaCng>: Not supported
 
 ## X.509 Certificates
 
@@ -331,7 +423,7 @@ Windows and Linux both emit DER-encoded PKCS7 blobs. macOS emits indefinite-leng
 
 ### X509Store
 
-On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs. Those APIs work the same in .NET Core and .NET 5 as they do in .NET Framework.
+On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs. Those APIs work the same in .NET as they do in .NET Framework.
 
 On non-Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-write), and user key storage (read-write).
 
@@ -364,6 +456,21 @@ On macOS, the `CurrentUser\My` store is the user's default keychain, which is `l
 On Linux, the `LocalMachine\Root` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
 On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSettings` results for the user trust domain. The `LocalMachine\Root` store is an interpretation of the `SecTrustSettings` results for the admin and system trust domains.
+
+##### Trusted root certificate locations on Linux
+
+On Linux, .NET uses OpenSSL (libssl) to locate trusted root certificates. OpenSSL determines the certificate store location using environment variables (`SSL_CERT_FILE` and `SSL_CERT_DIR`) and distribution-specific default paths. When the root store directory configured for OpenSSL doesn't contain any certificates, .NET falls back to checking `/etc/ssl/certs`. This fallback ensures compatibility with distributions like SUSE Linux Enterprise Server (SLES) where the directory specified by `SSL_CERT_DIR` might only contain certificates with the `BEGIN TRUSTED CERTIFICATE` format, which .NET doesn't support as root certificates.
+
+This fallback only occurs when:
+
+1. The `SSL_CERT_DIR` environment variable isn't explicitly set.
+1. The default certificate directory contains no usable certificates.
+
+If your certificates aren't loading correctly, verify that:
+
+* Your certificate files are in PEM format with the `BEGIN CERTIFICATE` marker (not `BEGIN TRUSTED CERTIFICATE`).
+* The `SSL_CERT_DIR` and `SSL_CERT_FILE` environment variables point to the correct locations, if set.
+* The certificate bundle file or directory has the appropriate read permissions.
 
 #### The Intermediate store
 
@@ -410,6 +517,24 @@ On macOS, custom store creation with the X509Store API is supported only for `Cu
 macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
 
 macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation List) / OCSP (Online Certificate Status Protocol) / AIA (Authority Information Access) downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
+
+### Post-quantum cryptography certificates and PKCS12/PFX
+
+Post-quantum certificate support also requires support from the primitive algorithm.
+
+| Operation               | Algorithm | Windows | Linux | Apple | Android | Browser |
+|-------------------------|-----------|---------|-------|-------|---------|---------|
+| PKCS#12 Import          | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| &nbsp;                  |           |         |       |       |         |         |
+| PKCS#12 Import          | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| &nbsp;                  |           |         |       |       |         |         |
+| PKCS#12 Import          | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
 
 ## Additional resources
 

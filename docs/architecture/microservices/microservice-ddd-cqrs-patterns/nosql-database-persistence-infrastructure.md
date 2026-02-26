@@ -132,7 +132,7 @@ Cosmos DB databases support MongoDB API for .NET as well as the native MongoDB w
 
 **Figure 7-20**. Using MongoDB API and protocol to access Azure Cosmos DB
 
-This is a very convenient approach for proof of concepts in Docker environments with Linux containers because the [MongoDB Docker image](https://hub.docker.com/r/_/mongo/) is a multi-arch image that supports Docker Linux containers and Docker Windows containers.
+This is a very convenient approach for proof of concepts in Docker environments with Linux containers because the [MongoDB Docker image](https://hub.docker.com/_/mongo/) is a multi-arch image that supports Docker Linux containers and Docker Windows containers.
 
 As shown in the following image, by using the MongoDB API, eShopOnContainers supports MongoDB Linux and Windows containers for the local development environment but then, you can move to a scalable, PaaS cloud solution as Azure Cosmos DB by simply [changing the MongoDB connection string to point to Azure Cosmos DB](/azure/cosmos-db/connect-mongodb-account).
 

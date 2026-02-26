@@ -1,13 +1,11 @@
 ---
 title: Compilation config settings
-description: Learn about run-time settings that configure how the JIT compiler works for .NET apps.
+description: Learn about runtime settings that configure how the JIT compiler works for .NET apps.
 ms.date: 10/29/2021
 ---
 # Runtime configuration options for compilation
 
 This article details the settings you can use to configure .NET compilation.
-
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 ## Tiered compilation
 
@@ -22,7 +20,7 @@ This article details the settings you can use to configure .NET compilation.
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TieredCompilation` or `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -72,7 +70,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TC_QuickJit` or `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -121,7 +119,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 | **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
-| **Environment variable** | `COMPlus_TC_QuickJitForLoops` or `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
 
 ### Examples
 
@@ -161,22 +159,22 @@ Project file:
 
 ## ReadyToRun
 
-- Configures whether the .NET Core runtime uses pre-compiled code for images with available ReadyToRun data. Disabling this option forces the runtime to JIT-compile framework code.
+- Configures whether the .NET runtime uses pre-compiled code for images with available ReadyToRun data. Disabling this option forces the runtime to JIT-compile framework code.
 - For more information, see [Ready to Run](../deploying/ready-to-run.md).
 - If you omit this setting, .NET uses ReadyToRun data when it's available. This is equivalent to setting the value to `1`.
 
-| | Setting name | Values |
-| - | - | - |
-| **Environment variable** | `COMPlus_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+|                          | Setting name        | Values                           |
+|--------------------------|---------------------|----------------------------------|
+| **Environment variable** | `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
 
 ## Profile-guided optimization
 
 This setting enables dynamic (tiered) profile-guided optimization (PGO) in .NET 6 and later versions.
 
-| | Setting name | Values |
-| - | - | - |
-| **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |
-| **MSBuild property** | `TieredPGO` | `true` - enabled<br/>`false` - disabled |
+|                          | Setting name       | Values                                  |
+|--------------------------|--------------------|-----------------------------------------|
+| **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled        |
+| **MSBuild property**     | `TieredPGO`        | `true` - enabled<br/>`false` - disabled |
 
 Profile-guided optimization (PGO) is where the JIT compiler generates optimized code in terms of the types and code paths that are most frequently used. *Dynamic* PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
 

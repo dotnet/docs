@@ -12,7 +12,7 @@ The primary goal of this glossary is to clarify meanings of selected terms and a
 
 Ahead-of-time compiler.
 
-Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at run time, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
+Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at runtime, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
 
@@ -86,7 +86,7 @@ See [CLR](#clr).
 
 ## CoreRT
 
-In contrast to the [CLR](#clr), CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for run-time type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. Not requiring metadata enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
+In contrast to the [CLR](#clr), CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for runtime type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. Not requiring metadata enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
 
 See [Intro to CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md) and [.NET Runtime Lab](https://github.com/dotnet/runtimelab/blob/docs/README.md).
 
@@ -141,7 +141,7 @@ Higher-level .NET languages, such as C#, compile down to a hardware-agnostic ins
 
 Just-in-time compiler.
 
-Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that the processor understands. Unlike AOT, JIT compilation happens on demand and is performed on the same machine that the code needs to run on. Since JIT compilation occurs during execution of the application, the compile time is part of the run time. Thus, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT knows the actual hardware and can free developers from having to ship different implementations.
+Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that the processor understands. Unlike AOT, JIT compilation happens on demand and is performed on the same machine that the code needs to run on. Since JIT compilation occurs during execution of the application, the compile time is part of the runtime. Thus, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT knows the actual hardware and can free developers from having to ship different implementations.
 
 ## implementation of .NET
 
@@ -181,7 +181,7 @@ For more information, see the [Mono documentation](https://www.mono-project.com/
 
 ## Native AOT
 
-A deployment mode where the app is self-contained and is [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at run time. They can run on machines that don't have the .NET runtime installed.
+A deployment mode where the app is self-contained and is [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at runtime. They can run on machines that don't have the .NET runtime installed.
 
 For more information, see [Native AOT deployment](../core/deploying/native-aot/index.md).
 

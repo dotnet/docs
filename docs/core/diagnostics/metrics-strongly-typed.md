@@ -78,6 +78,26 @@ The following code shows how to create and use these metrics in a class:
 
 In the preceding `MyClass.DoWork` method, a `MetricTags` object is populated with values for each tag. This single `tags` object is then passed to all three instruments when recording data. The `Latency` metric (a histogram) records the elapsed time, and both counters (`TotalCount` and `TotalFailures`) record occurrence counts. Because all metrics share the same tag object type, the tags (`Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, `DimensionNameOfParentOperation`) are present on every measurement.
 
+## Specifying units
+
+Starting with .NET 10.2, you can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (for example, "seconds", "bytes", and "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
+
+The following code demonstrates how to use the generator with primitive types with units specified:
+
+```csharp
+public static partial class Metric
+{
+    [Histogram<long>(typeof(MetricTags), Unit = "ms")]
+    public static partial Latency CreateLatency(Meter meter);
+
+    [Counter<long>(typeof(MetricTags), Unit = "requests")]
+    public static partial TotalCount CreateTotalCount(Meter meter);
+
+    [Counter<int>(typeof(MetricTags), Unit = "failures")]
+    public static partial TotalFailures CreateTotalFailures(Meter meter);
+}
+```
+
 ## Performance considerations
 
 Using strongly-typed tags via source generation adds no overhead compared to using metrics directly. If you need to further minimize allocations for very high-frequency metrics, consider defining your tag object as a `struct` (value type) instead of a `class`. Using a `struct` for the tag object can avoid heap allocations when recording metrics, since the tags would be passed by value.
@@ -100,4 +120,4 @@ Adhering to these requirements ensures that the source generator can successfull
 - [Source generated metrics in .NET](metrics-generator.md)
 - [Creating metrics in .NET (Instrumentation tutorial)](metrics-instrumentation.md)
 - [Collecting metrics in .NET (Using MeterListener and exporters)](metrics-collection.md)
-- [Logging source generation in .NET](../extensions/logger-message-generator.md) (for a similar source-generation approach applied to logging)
+- [Compile-time logging source generation](../extensions/logging/source-generation.md) (for a similar source-generation approach applied to logging)

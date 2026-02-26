@@ -13,11 +13,11 @@ The following GAC-related APIs are marked obsolete:
 
 - <xref:System.Reflection.Assembly.GlobalAssemblyCache?displayProperty=nameWithType>
 
-  Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about run-time behavior, as it always returns `false` in .NET Core and .NET 5+.
+  Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about runtime behavior, as it always returns `false` in .NET Core and .NET 5+.
 
 ## Workarounds
 
-If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET 5+ application.
+If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at runtime, reconsider whether the flow still makes sense for a .NET 5+ application.
 
 ## Suppress a warning
 

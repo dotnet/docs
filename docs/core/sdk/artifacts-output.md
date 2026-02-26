@@ -21,7 +21,7 @@ The following table shows the default values for each level in the folder struct
 | Folder level   | Description                       | Examples                           |
 |----------------|-----------------------------------|------------------------------------|
 | Type of output | Categories of build outputs, such as binaries, intermediate/generated files, published applications, and NuGet packages. | `bin`, `obj`, `publish`, `package` |
-| Project name†  | Separates output by each project. | `MyApp`                            |
+| Project name†  | Separates output by each project. Defaults to the MSBuild project name. Can be [customized](#how-to-configure) using the `ArtifactsProjectName` MSBuild property. | `MyApp`                            |
 | Pivot†         | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). Can be [customized](#how-to-configure) using the `ArtifactsPivots` MSBuild property. | `debug`, `debug_net8.0`, `release`, `release_linux-x64` |
 
 † The project name subfolder is omitted for package output paths. In addition, the pivot subfolder includes only the configuration.
@@ -72,5 +72,13 @@ The "pivot" folder name defaults to a combination of target framework moniker (T
 <PropertyGroup>
   ...
   <ArtifactsPivots>$(ArtifactsPivots)_MyCustomPivot</ArtifactsPivots>
+</PropertyGroup>
+```
+
+The "project name" folder name defaults to the MSBuild project name. To customize it for a specific project, set the `ArtifactsProjectName` MSBuild property in the project file. For example:
+
+```xml
+<PropertyGroup>
+  <ArtifactsProjectName>CustomProjectName</ArtifactsProjectName>
 </PropertyGroup>
 ```

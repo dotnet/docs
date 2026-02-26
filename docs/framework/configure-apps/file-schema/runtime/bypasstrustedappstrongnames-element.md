@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "<bypassTrustedAppStrongNames> element"
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
 ---
-# \<bypassTrustedAppStrongNames> Element
+# `<bypassTrustedAppStrongNames>` Element
 
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<bypassTrustedAppStrongNames>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<bypassTrustedAppStrongNames>`
 
 ## Syntax
 

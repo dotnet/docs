@@ -28,7 +28,7 @@ On Windows Vista, the service is hosted in the Windows Activation Service (WAS).
 
 The service and client specify access details in configuration file settings, which provide flexibility at the time of deployment. This includes an endpoint definition that specifies an address, binding, and contract. The binding specifies transport and security details for how the service is to be accessed.
 
-The service configures a run-time behavior to publish its metadata.
+The service configures a runtime behavior to publish its metadata.
 
 The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (add, subtract, multiply, and divide). The client makes requests to a given math operation and the service replies with the result. The service implements an `ICalculator` contract that is defined in the following code.
 

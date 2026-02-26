@@ -1,11 +1,11 @@
 ---
 title: dotnet tool uninstall command
 description: The dotnet tool uninstall command uninstalls the specified .NET tool from your machine.
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool uninstall
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -43,7 +43,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET too
 
   Specifies that the tool to be removed is from a user-wide installation. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--tool-path <PATH>`**
 

@@ -14,6 +14,8 @@ The .NET Upgrade Assistant is a command-line tool that can assist with upgrading
 - A demonstration of how to run the tool against a WCF Server-side project on .NET Framework.
 - Troubleshooting tips.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Things to know before starting
 
 This tool currently supports C# projects and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side projects to .NET 6.
@@ -38,7 +40,7 @@ The current version of the tool does not support WCF projects hosted via .svc fi
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.1 or newer](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 - [.NET SDK 6 or later](https://dotnet.microsoft.com/download/dotnet/).
 - Version `0.4.421302` of .NET Upgrade Assistant, known as the "legacy" version.
 
@@ -469,7 +471,7 @@ using Microsoft.Extensions.DependencyInjection;
         // Configure CoreWCF endpoints in the ASP.NET Core hosts
         app.UseServiceModel(serviceBuilder =>
         {
-            serviceBuilder.AddService<CalculatorSample.CalculatorService>(serviceOptions => 
+            serviceBuilder.AddService<CalculatorSample.CalculatorService>(serviceOptions =>
             {
                 serviceOptions.DebugBehavior.IncludeExceptionDetailInFaults = true;
             });
@@ -479,7 +481,7 @@ using Microsoft.Extensions.DependencyInjection;
 
             });
         });
-            
+
         await app.StartAsync();
         Console.WriteLine("The service is ready.");
         Console.WriteLine("Press <ENTER> to terminate service.");

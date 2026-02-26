@@ -82,5 +82,4 @@ helpviewer_keywords:
 
 ## See also
 
-- [Basic String Operations](basic-string-operations.md)
 - [Composite Formatting](composite-formatting.md)

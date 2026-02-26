@@ -1,22 +1,109 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 01/20/2026
 ms.topic: overview
+zone_pivot_groups: orleans-version
 ---
 
 # Microsoft Orleans
 
 Orleans is a cross-platform framework designed to simplify building distributed apps. Whether scaling from a single server to thousands of cloud-based apps, Orleans provides tools to help manage the complexities of distributed systems. It extends familiar C# concepts to multi-server environments, allowing developers to focus on the app's logic.
 
-Here’s what Orleans offers:
+Here's what Orleans offers:
 
-- It’s designed to scale elastically. Add or remove servers, and Orleans adjusts accordingly to maintain fault tolerance and scalability.
+- It's designed to scale elastically. Add or remove servers, and Orleans adjusts accordingly to maintain fault tolerance and scalability.
 - It simplifies distributed app development with a common set of patterns and APIs, making it accessible even for those new to distributed systems.
-- It’s cloud-native and runs on platforms where .NET is supported—Linux, Windows, macOS, and more.
+- It's cloud-native and runs on platforms where .NET is supported—Linux, Windows, macOS, and more.
 - It supports modern deployment options like Kubernetes, Azure App Service, and Azure Container Apps.
 
-Orleans is often referred to as "Distributed .NET" because of its focus on building resilient, scalable cloud-native services. Let’s explore the actor model next.
+Orleans is often referred to as "Distributed .NET" because of its focus on building resilient, scalable cloud-native services.
+
+:::zone target="docs" pivot="orleans-10-0"
+
+## What's new in Orleans 10.0
+
+Orleans 10.0 introduces several new features and improvements:
+
+- **Orleans Dashboard**: A built-in dashboard for real-time monitoring of your Orleans cluster, grains, and silos.
+- **Redis Providers**: Stable Redis providers for clustering, persistence, and reminders.
+- **CancellationToken support for system targets**: Extended cancellation token support throughout the framework.
+
+> [!TIP]
+> Orleans 10.0 targets .NET 8.0, .NET 9.0, and .NET 10.0.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0"
+
+## What's new in Orleans 9.x
+
+Orleans 9.x introduces several significant features:
+
+- **Full CancellationToken support**: Grain methods now fully support cancellation tokens.
+- **Strong-Consistency Grain Directory**: A new distributed in-memory directory with strong consistency guarantees.
+- **Memory-Based Activation Shedding**: Automatic deactivation of grains under memory pressure.
+- **In-Process Test Cluster**: Simplified testing infrastructure for Orleans applications.
+- **Improved Membership Protocol**: Faster failure detection (90 seconds vs 10 minutes in earlier versions).
+- **Activation Rebalancing**: Automatic grain rebalancing across silos (stable, experimental in 8.2).
+- **Default Placement Change (9.2)**: Default placement strategy changed from Random to ResourceOptimized.
+
+> [!TIP]
+> Orleans 9.x targets .NET 8.0 and .NET 9.0.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-8-0"
+
+## What's new in Orleans 8.x
+
+Orleans 8.x introduced several important features:
+
+- **[.NET Aspire Integration](host/aspire-integration.md)**: First-class support for .NET Aspire for simplified cloud-native development.
+- **Resource-Optimized Placement**: A new placement strategy based on CPU and memory utilization.
+- **Activation Repartitioning (8.2, Experimental)**: Automatic redistribution of grains for improved performance.
+- **New Grain Timer API (8.2)**: <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> replaces the deprecated `RegisterTimer` method.
+- **MessagePack Serializer (8.2)**: A new high-performance serialization option.
+- **Cassandra Clustering Provider (8.2)**: Support for Apache Cassandra as a clustering provider.
+
+> [!TIP]
+> Orleans 8.x targets .NET 8.0.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0"
+
+## What's new in Orleans 7.0
+
+Orleans 7.0 was a major release with significant improvements:
+
+- **Simplified APIs**: Streamlined builder patterns using <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> and <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*>.
+- **Source Generators**: Replaced code generation with source generators for better build-time performance.
+- **New Serialization System**: A new high-performance, version-tolerant serialization framework.
+- **IAsyncEnumerable Support (7.2)**: Streaming responses from grain methods.
+- **Per-call Timeouts (7.2.2)**: Specify timeouts on individual grain calls.
+- **Cosmos DB Providers (7.2)**: Azure Cosmos DB support for clustering, persistence, and reminders.
+
+> [!TIP]
+> Orleans 7.0 targets .NET 7.0 and later.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+## Orleans 3.x (Legacy)
+
+Orleans 3.x is a legacy version. For new projects, consider upgrading to Orleans 7.0 or later to take advantage of improved performance, simplified APIs, and new features.
+
+Key differences from newer versions:
+
+- Uses <xref:Orleans.ClientBuilder> and <xref:Orleans.Hosting.SiloHostBuilder> instead of the unified <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> pattern.
+- Requires `ConfigureApplicationParts()` for assembly scanning.
+- Uses the legacy code generator instead of source generators.
+
+For migration guidance, see the [Migration guide](migration-guide.md).
+
+:::zone-end
 
 ## The actor model
 
@@ -37,7 +124,7 @@ The grain is one of several Orleans primitives. In terms of the actor model, a g
 
 Grain identities are user-defined keys, making grains always available for invocation. Other grains or any number of external clients can invoke grains. Each grain is an instance of a class implementing one or more of the following interfaces:
 
-- <xref:Orleans.IGrainWithGuidKey>: Marker interface for grains with `Guid` keys.
+- <xref:Orleans.IGrainWithGuidKey>: Marker interface for grains with <xref:System.Guid> keys.
 - <xref:Orleans.IGrainWithIntegerKey>: Marker interface for grains with `Int64` keys.
 - <xref:Orleans.IGrainWithStringKey>: Marker interface for grains with `string` keys.
 - <xref:Orleans.IGrainWithGuidCompoundKey>: Marker interface for grains with compound keys.

@@ -1,10 +1,10 @@
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet
 
 // <ColorfulPackage>
 #:package Colorful.Console@1.2.15
 // </ColorfulPackage>
 // <CommandLinePackage>
-#:package System.CommandLine@2.0.0-beta6
+#:package System.CommandLine@2.0.0
 // </CommandLinePackage>
 
 // <Usings>
@@ -26,7 +26,7 @@ Argument<string[]> messagesArgument = new("Messages")
 // </OptionArgument>
 
 // <RootCommand>
-RootCommand rootCommand = new("Ascii Art file-based program sample");
+RootCommand rootCommand = new("Ascii Art file-based app sample");
 
 rootCommand.Options.Add(delayOption);
 rootCommand.Arguments.Add(messagesArgument);
@@ -71,7 +71,8 @@ async Task<AsciiMessageOptions> ProcessParseResults(ParseResult result)
 }
 // </ProcessParsedArgs>
 
-// <WriteAscii>
+
+// <WriteAsciiArt>
 async Task WriteAsciiArt(AsciiMessageOptions options)
 {
     foreach (string message in options.Messages)
@@ -80,7 +81,7 @@ async Task WriteAsciiArt(AsciiMessageOptions options)
         await Task.Delay(options.Delay);
     }
 }
-// </WriteAscii>
+// </WriteAsciiArt>
 
 // <Record>
 public record AsciiMessageOptions(string[] Messages, int Delay);

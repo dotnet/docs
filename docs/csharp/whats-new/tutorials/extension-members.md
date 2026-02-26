@@ -26,12 +26,12 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- The .NET 10 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
-- Visual Studio 2026 (preview). Download it from the [Visual Studio insiders page](https://visualstudio.microsoft.com/insiders/).
+- The .NET 10 SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
+- Visual Studio 2026. Download it from the [Visual Studio page](https://visualstudio.microsoft.com).
 
 ## Create the sample application
 
-Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax.
+Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax. You'll create extensions for the <xref:System.Drawing.Point?displayProperty=fullName> type. This type comes from the `System.Drawing` namespace and is typically used in Windows Forms applications.
 
 1. Create a new console application:
 
@@ -185,6 +185,6 @@ Run the complete application to see both approaches side by side and observe how
 
 ## Related content
 
-- [Extension methods (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
-- [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14)
-- [Operator overloading (C# reference)](/dotnet/csharp/language-reference/operators/operator-overloading)
+- [Extension methods (C# Programming Guide)](../../programming-guide/classes-and-structs/extension-methods.md)
+- [What's new in C# 14](../csharp-14.md)
+- [Operator overloading (C# reference)](../../language-reference/operators/operator-overloading.md)

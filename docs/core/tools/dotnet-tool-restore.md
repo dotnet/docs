@@ -1,11 +1,11 @@
 ---
 title: dotnet tool restore command
 description: The dotnet tool restore command installs on your machine the .NET local tools that are in scope for the current directory.
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool restore
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -31,17 +31,15 @@ For information about where local tools are stored, see [dotnet tool install](do
 
 ## Options
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+- [!INCLUDE [add-source](includes/cli-add-source.md)]
 
 - **`--tool-manifest <PATH>`**
 
   Path to the manifest file.
 
-- **`--disable-parallel`**
-
-  Prevent restoring multiple projects in parallel.
+- [!INCLUDE [disable-parallel](includes/cli-disable-parallel.md)]
 
 - **`--ignore-failed-sources`**
 
@@ -51,11 +49,11 @@ For information about where local tools are stored, see [dotnet tool install](do
 
   Do not cache packages and http requests.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Example
 

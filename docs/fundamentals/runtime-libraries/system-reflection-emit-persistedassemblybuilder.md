@@ -7,12 +7,12 @@ ms.date: 05/10/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. New in .NET 9, the <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class adds a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET, runnable and persisted. To run the persisted assembly, first save it into a memory stream or a file, then load it back.
+The <xref:System.Reflection.Emit.AssemblyBuilder.Save*?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. .NET 9 added the <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class, which provides a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET: *runnable* and *persisted*. To run the persisted assembly, first save it into a memory stream or a file, then load it back.
 
 Before `PersistedAssemblyBuilder`, you could only run a generated assembly and not save it. Since the assembly was in-memory only, it was difficult to debug. Advantages of saving a dynamic assembly to a file are:
 
 - You can verify the generated assembly with tools such as ILVerify, or decompile and manually examine it with tools such as ILSpy.
-- The saved assembly can be loaded directly, no need to compile again, which can decrease application startup time.
+- The saved assembly can be loaded directly, without needing to compile again, which can decrease application startup time.
 
 To create a `PersistedAssemblyBuilder` instance, use the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.%23ctor(System.Reflection.AssemblyName,System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})> constructor. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning:
 
@@ -37,7 +37,7 @@ The symbols metadata is populated into the `pdbBuilder` out parameter when you c
 1. Create <xref:System.Diagnostics.SymbolStore.ISymbolDocumentWriter> instances with the <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)?displayProperty=nameWithType> method. While emitting the method's IL, also emit the corresponding symbol info.
 2. Create a <xref:System.Reflection.Metadata.Ecma335.PortablePdbBuilder> instance using the `pdbBuilder` instance produced by the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder@,System.Reflection.Metadata.BlobBuilder@)> method.
 3. Serialize the `PortablePdbBuilder` into a <xref:System.Reflection.Metadata.Blob>, and write the `Blob` into a PDB file stream (only if you're generating a standalone PDB).
-4. Create a <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder> instance and add a <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddCodeViewEntry%2A?displayProperty=nameWithType> (standalone PDB) or <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddEmbeddedPortablePdbEntry%2A?displayProperty=nameWithType>.
+4. Create a <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder> instance and add a <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddCodeViewEntry*?displayProperty=nameWithType> (standalone PDB) or <xref:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddEmbeddedPortablePdbEntry*?displayProperty=nameWithType>.
 5. Set the optional `debugDirectoryBuilder` argument when creating the <xref:System.Reflection.PortableExecutable.PEBuilder> instance.
 
 The following example shows how to emit symbol info and generate a PDB file.
@@ -125,7 +125,7 @@ The following example shows how to read resources from the created assembly.
 :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet3":::
 
 > [!NOTE]
-> The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
+> The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save*> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
 >
 > Some APIs that aren't important for emitting an assembly aren't implemented; for example, `GetCustomAttributes()` is not implemented. With the runtime implementation, you were able to use those APIs after creating the type. For the persisted `AssemblyBuilder`, they throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that requires those APIs, file an issue in the [dotnet/runtime repo](https://github.com/dotnet/runtime).
 

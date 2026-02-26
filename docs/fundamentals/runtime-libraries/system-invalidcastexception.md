@@ -32,13 +32,13 @@ The following intermediate language (IL) instructions throw an <xref:System.Inva
 
 <xref:System.InvalidCastException> uses the HRESULT `COR_E_INVALIDCAST`, which has the value 0x80004002.
 
-For a list of initial property values for an instance of <xref:System.InvalidCastException>, see the <xref:System.InvalidCastException.%23ctor%2A> constructors.
+For a list of initial property values for an instance of <xref:System.InvalidCastException>, see the <xref:System.InvalidCastException.%23ctor*> constructors.
 
 ## Primitive types and IConvertible
 
-You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar%2A?displayProperty=nameWithType> and <xref:System.Convert.ToChar%28System.Boolean%29?displayProperty=nameWithType> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.
+You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar*?displayProperty=nameWithType> and <xref:System.Convert.ToChar(System.Boolean)?displayProperty=nameWithType> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/iconvertible1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/iconvertible1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/iconvertible1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/InvalidCastException/Overview/vb/iconvertible1.vb" id="Snippet2":::
 
@@ -46,7 +46,7 @@ Because the conversion is not supported, there is no workaround.
 
 ## The Convert.ChangeType method
 
-You've called the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method to convert an object from one type to another, but one or both types don't implement the <xref:System.IConvertible> interface.
+You've called the <xref:System.Convert.ChangeType*?displayProperty=nameWithType> method to convert an object from one type to another, but one or both types don't implement the <xref:System.IConvertible> interface.
 
 In most cases, because the conversion is not supported, there is no workaround. In some cases, a possible workaround is to manually assign property values from the source type to similar properties of a the target type.
 
@@ -62,7 +62,7 @@ In most cases, because the conversion is not supported, there is no workaround.
 
 You're downcasting, that is, trying to convert an instance of a base type to one of its derived types. In the following example, trying to convert a `Person` object to a `PersonWithID` object fails.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/basetoderived1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/basetoderived1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/basetoderived1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/InvalidCastException/Overview/vb/basetoderived1.vb" id="Snippet1":::
 
@@ -88,9 +88,9 @@ You're trying to convert a value or an object to its string representation by us
 > [!NOTE]
 > Using the Visual Basic `CStr` operator to convert a value of a primitive type to a string succeeds. The operation does not throw an <xref:System.InvalidCastException> exception.
 
-To successfully convert an instance of any type to its string representation, call its `ToString` method, as the following example does. The `ToString` method is always present, since the <xref:System.Object.ToString%2A> method is defined by the <xref:System.Object> class and therefore is either inherited or overridden by all managed types.
+To successfully convert an instance of any type to its string representation, call its `ToString` method, as the following example does. The `ToString` method is always present, since the <xref:System.Object.ToString*> method is defined by the <xref:System.Object> class and therefore is either inherited or overridden by all managed types.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/ToString2.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/ToString2.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/ToString2.fs" id="Snippet5":::
 
 ## Visual Basic 6.0 migration

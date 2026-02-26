@@ -43,42 +43,42 @@ This class is thread safe; multiple threads can concurrently read from an instan
 
 The <xref:System.Type> object associated with a particular type can be obtained in the following ways:
 
-- The instance <xref:System.Object.GetType%2A?displayProperty=nameWithType> method returns a <xref:System.Type> object that represents the type of an instance. Because all managed types derive from <xref:System.Object>, the <xref:System.Object.GetType%2A> method can be called on an instance of any type.
+- The instance <xref:System.Object.GetType*?displayProperty=nameWithType> method returns a <xref:System.Type> object that represents the type of an instance. Because all managed types derive from <xref:System.Object>, the <xref:System.Object.GetType*> method can be called on an instance of any type.
 
-  The following example calls the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to determine the runtime type of each object in an object array.
+  The following example calls the <xref:System.Object.GetType*?displayProperty=nameWithType> method to determine the runtime type of each object in an object array.
 
-  :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" interactive="try-dotnet-method" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/GetType1.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/Type/Overview/vb/GetType1.vb" id="Snippet2":::
 
-- The static <xref:System.Type.GetType%2A?displayProperty=nameWithType> methods return a <xref:System.Type> object that represents a type specified by its fully qualified name.
+- The static <xref:System.Type.GetType*?displayProperty=nameWithType> methods return a <xref:System.Type> object that represents a type specified by its fully qualified name.
 
-- The <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Module.FindTypes%2A?displayProperty=nameWithType> methods return `Type` objects that represent the types defined in a module. The first method can be used to obtain an array of <xref:System.Type> objects for all the public and private types defined in a module. (You can obtain an instance of `Module` through the <xref:System.Reflection.Assembly.GetModule%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetModules%2A?displayProperty=nameWithType> method, or through the <xref:System.Type.Module?displayProperty=nameWithType> property.)
+- The <xref:System.Reflection.Module.GetTypes*?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType*?displayProperty=nameWithType>, and <xref:System.Reflection.Module.FindTypes*?displayProperty=nameWithType> methods return `Type` objects that represent the types defined in a module. The first method can be used to obtain an array of <xref:System.Type> objects for all the public and private types defined in a module. (You can obtain an instance of `Module` through the <xref:System.Reflection.Assembly.GetModule*?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetModules*?displayProperty=nameWithType> method, or through the <xref:System.Type.Module?displayProperty=nameWithType> property.)
 
-- The <xref:System.Reflection.Assembly?displayProperty=nameWithType> object contains a number of methods to retrieve the classes defined in an assembly, including <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetExportedTypes%2A?displayProperty=nameWithType>.
+- The <xref:System.Reflection.Assembly?displayProperty=nameWithType> object contains a number of methods to retrieve the classes defined in an assembly, including <xref:System.Reflection.Assembly.GetType*?displayProperty=nameWithType>, <xref:System.Reflection.Assembly.GetTypes*?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetExportedTypes*?displayProperty=nameWithType>.
 
-- The <xref:System.Type.FindInterfaces%2A> method returns a filtered list of interface types supported by a type.
+- The <xref:System.Type.FindInterfaces*> method returns a filtered list of interface types supported by a type.
 
-- The <xref:System.Type.GetElementType%2A> method returns a `Type` object that represents the element.
+- The <xref:System.Type.GetElementType*> method returns a `Type` object that represents the element.
 
-- The <xref:System.Type.GetInterfaces%2A> and <xref:System.Type.GetInterface%2A> methods return <xref:System.Type> objects representing the interface types supported by a type.
+- The <xref:System.Type.GetInterfaces*> and <xref:System.Type.GetInterface*> methods return <xref:System.Type> objects representing the interface types supported by a type.
 
-- The <xref:System.Type.GetTypeArray%2A> method returns an array of <xref:System.Type> objects representing the types specified by an arbitrary set of objects. The objects are specified with an array of type <xref:System.Object>.
+- The <xref:System.Type.GetTypeArray*> method returns an array of <xref:System.Type> objects representing the types specified by an arbitrary set of objects. The objects are specified with an array of type <xref:System.Object>.
 
-- The <xref:System.Type.GetTypeFromProgID%2A> and <xref:System.Type.GetTypeFromCLSID%2A> methods are provided for COM interoperability. They return a <xref:System.Type> object that represents the type specified by a `ProgID` or `CLSID`.
+- The <xref:System.Type.GetTypeFromProgID*> and <xref:System.Type.GetTypeFromCLSID*> methods are provided for COM interoperability. They return a <xref:System.Type> object that represents the type specified by a `ProgID` or `CLSID`.
 
-- The <xref:System.Type.GetTypeFromHandle%2A> method is provided for interoperability. It returns a `Type` object that represents the type specified by a class handle.
+- The <xref:System.Type.GetTypeFromHandle*> method is provided for interoperability. It returns a `Type` object that represents the type specified by a class handle.
 
 - The C# `typeof` operator, the C++ `typeid` operator, and the Visual Basic `GetType` operator obtain the `Type` object for a type.
 
-- The <xref:System.Type.MakeGenericType%2A> method returns a <xref:System.Type> object representing a constructed generic type, which is an open constructed type if its <xref:System.Type.ContainsGenericParameters> property returns `true`, and a closed constructed type otherwise. A generic type can be instantiated only if it is closed.
+- The <xref:System.Type.MakeGenericType*> method returns a <xref:System.Type> object representing a constructed generic type, which is an open constructed type if its <xref:System.Type.ContainsGenericParameters> property returns `true`, and a closed constructed type otherwise. A generic type can be instantiated only if it is closed.
 
-- The <xref:System.Type.MakeArrayType%2A>, <xref:System.Type.MakePointerType%2A>, and <xref:System.Type.MakeByRefType%2A> methods return <xref:System.Type> objects that represent, respectively, an array of a specified type, a pointer to a specified type, and the type of a reference parameter (`ref` in C#, 'byref' in F#, `ByRef` in Visual Basic).
+- The <xref:System.Type.MakeArrayType*>, <xref:System.Type.MakePointerType*>, and <xref:System.Type.MakeByRefType*> methods return <xref:System.Type> objects that represent, respectively, an array of a specified type, a pointer to a specified type, and the type of a reference parameter (`ref` in C#, 'byref' in F#, `ByRef` in Visual Basic).
 
 ## Compare type objects for equality
 
 A <xref:System.Type> object that represents a type is unique; that is, two <xref:System.Type> object references refer to the same object if and only if they represent the same type. This allows for comparison of <xref:System.Type> objects using reference equality. The following example compares the <xref:System.Type> objects that represent a number of integer values to determine whether they are of the same type.
 
-:::code language="csharp" source="./snippets/System/Type/Overview/csharp/Equals1.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Type/Overview/csharp/Equals1.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/Equals1.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Type/Overview/vb/Equals1.vb" id="Snippet3":::

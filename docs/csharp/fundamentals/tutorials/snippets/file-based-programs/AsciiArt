@@ -1,7 +1,7 @@
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet
 
 #:package Colorful.Console@1.2.15
-#:package System.CommandLine@2.0.0-beta6
+#:package System.CommandLine@2.0.0
 
 using System.CommandLine;
 using System.CommandLine.Parsing;
@@ -17,7 +17,7 @@ Argument<string[]> messagesArgument = new("Messages")
     Description = "Text to render."
 };
 
-RootCommand rootCommand = new("Ascii Art file-based program sample");
+RootCommand rootCommand = new("Ascii Art file-based app sample");
 
 rootCommand.Options.Add(delayOption);
 rootCommand.Arguments.Add(messagesArgument);

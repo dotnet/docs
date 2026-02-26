@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "invalid member declaration"
   - "InvalidMemberDeclaration MDA"
-  - "marshaling, run-time errors"
+  - "marshaling, runtime errors"
   - "managed debugging assistants (MDAs), marshalling"
   - "MDAs (managed debugging assistants), marshalling"
 ms.assetid: a84dd9a3-d6cf-4824-989a-ecbbf443eeb4

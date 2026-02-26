@@ -40,7 +40,7 @@ The following scenario outlines the process of signing an assembly with a strong
 
 3. Assembly B is a consumer of Assembly A. The reference section of Assembly B's manifest includes a token that represents Assembly A's public key. A token is a portion of the full public key and is used rather than the key itself to save space.
 
-4. The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at run time, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.
+4. The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at runtime, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.
 
 > [!NOTE]
 > This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.
@@ -68,7 +68,7 @@ This feature can be disabled for individual applications or for a computer. See 
 |[How to: Create a public-private key pair](create-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
 |[How to: Sign an assembly with a strong name](sign-strong-name.md)|Describes how to create a strong-named assembly.|
 |[Enhanced strong naming](enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
-|[How to: Reference a strong-named assembly](reference-strong-named.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
+|[How to: Reference a strong-named assembly](reference-strong-named.md)|Describes how to reference types or resources in a strong-named assembly at compile time or runtime.|
 |[How to: Disable the strong-name bypass feature](disable-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
 |[Create assemblies](create.md)|Provides an overview of single-file and multifile assemblies.|
 |[How to delay sign an assembly in Visual Studio](/visualstudio/ide/managing-assembly-and-manifest-signing#how-to-sign-an-assembly-in-visual-studio)|Explains how to sign an assembly with a strong name after the assembly has been created.|

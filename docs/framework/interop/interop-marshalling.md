@@ -10,7 +10,7 @@ ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
 ---
 # Interop Marshaling
 
-Interop marshalling governs how data is passed in method arguments and return values between managed and unmanaged memory during calls. Interop marshalling is a run-time activity performed by the common language runtime's marshalling service.
+Interop marshalling governs how data is passed in method arguments and return values between managed and unmanaged memory during calls. Interop marshalling is a runtime activity performed by the common language runtime's marshalling service.
 
 Most data types have common representations in both managed and unmanaged memory. The interop marshaller handles these types for you. Other types can be ambiguous or not represented at all in managed memory.
 

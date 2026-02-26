@@ -44,7 +44,7 @@ Demonstrates how extensibility points can consume custom message data formats.
 demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.
 
  [Custom Service Host](custom-service-host.md)
-Demonstrates how to use a custom derivative of the <xref:System.ServiceModel.ServiceHost> class to alter the run-time behavior of a service.
+Demonstrates how to use a custom derivative of the <xref:System.ServiceModel.ServiceHost> class to alter the runtime behavior of a service.
 
  [DataContract Surrogate](datacontract-surrogate.md)
 Demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class.

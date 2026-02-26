@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Tutorial: Evaluate response safety with caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the *content safety* of a response from an OpenAI model. Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. The test app uses the safety evaluators from the [Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package to perform the evaluations. These safety evaluators use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
+In this tutorial, you create an MSTest app to evaluate the *content safety* of a response from an OpenAI model. Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. The test app uses the safety evaluators from the [Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package to perform the evaluations. These safety evaluators use the [Microsoft Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
 
 ## Prerequisites
 
@@ -21,11 +21,11 @@ To provision an Azure OpenAI service and model using the Azure portal, complete 
 > [!TIP]
 > The previous configuration step is only required to fetch the response to be evaluated. To evaluate the safety of a response you already have in hand, you can skip this configuration.
 
-The evaluators in this tutorial use the Azure AI Foundry Evaluation service, which requires some additional setup:
+The evaluators in this tutorial use the Foundry Evaluation service, which requires some additional setup:
 
-- [Create a resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) within one of the Azure [regions that support Azure AI Foundry Evaluation service](/azure/ai-foundry/how-to/develop/evaluate-sdk#region-support).
-- [Create an Azure AI Foundry hub](/azure/ai-foundry/how-to/create-azure-ai-resource?tabs=portal#create-a-hub-in-azure-ai-foundry-portal) in the resource group you just created.
-- Finally, [create an Azure AI Foundry project](/azure/ai-foundry/how-to/create-projects?tabs=ai-studio#create-a-project) in the hub you just created.
+- [Create a resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) within one of the Azure [regions that support Foundry Evaluation service](/azure/ai-foundry/how-to/develop/evaluate-sdk#region-support).
+- [Create a Foundry hub](/azure/ai-foundry/how-to/create-azure-ai-resource?tabs=portal#create-a-hub-in-azure-ai-foundry-portal) in the resource group you just created.
+- Finally, [create a Foundry project](/azure/ai-foundry/how-to/create-projects?tabs=ai-studio#create-a-project) in the hub you just created.
 
 ## Create the test app
 
@@ -42,9 +42,9 @@ Complete the following steps to create an MSTest project.
    ```dotnetcli
    dotnet add package Azure.AI.OpenAI
    dotnet add package Azure.Identity
-   dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+   dotnet add package Microsoft.Extensions.AI.Abstractions
+   dotnet add package Microsoft.Extensions.AI.Evaluation
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
    dotnet add package Microsoft.Extensions.AI.Evaluation.Safety --prerelease
    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
    dotnet add package Microsoft.Extensions.Configuration
@@ -93,7 +93,7 @@ Complete the following steps to create an MSTest project.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="GetEvaluators":::
 
-1. Add a <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> object, which configures the connection parameters that the safety evaluators need to communicate with the Azure AI Foundry Evaluation service.
+1. Add a <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> object, which configures the connection parameters that the safety evaluators need to communicate with the Foundry Evaluation service.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ServiceConfig":::
 
@@ -105,12 +105,12 @@ Complete the following steps to create an MSTest project.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ReportingConfig":::
 
-   Response caching functionality is supported and works the same way regardless of whether the evaluators talk to an LLM or to the Azure AI Foundry Evaluation service. The response will be reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the the LLM endpoint or the question being asked, is changed.
+   Response caching functionality is supported and works the same way regardless of whether the evaluators talk to an LLM or to the Foundry Evaluation service. The response will be reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the LLM endpoint or the question being asked, is changed.
 
    > [!NOTE]
    > This code example passes the LLM <xref:Microsoft.Extensions.AI.IChatClient> as `originalChatClient` to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.IChatClient)>. The reason to include the LLM chat client here is to enable getting a chat response from the LLM, and notably, to enable response caching for it. (If you don't want to cache the LLM's response, you can create a separate, local <xref:Microsoft.Extensions.AI.IChatClient> to fetch the response from the LLM.) Instead of passing a <xref:Microsoft.Extensions.AI.IChatClient>, if you already have a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> for an LLM from another reporting configuration, you can pass that instead, using the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)> overload.
    >
-   > Similarly, if you configure both [LLM-based evaluators](libraries.md#quality-evaluators) and [Azure AI Foundry Evaluation service&ndash;based evaluators](libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. Then it returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
+   > Similarly, if you configure both [LLM-based evaluators](libraries.md#quality-evaluators) and [Foundry Evaluation service&ndash;based evaluators](libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. Then it returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
 
 1. Add a method to define the [chat options](xref:Microsoft.Extensions.AI.ChatOptions) and ask the model for a response to a given question.
 
@@ -132,7 +132,7 @@ Complete the following steps to create an MSTest project.
    This test method:
 
    - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>. The use of `await using` ensures that the `ScenarioRun` is correctly disposed and that the results of this evaluation are correctly persisted to the result store.
-   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the responses that the evaluators fetch from the Azure AI Foundry Evaluation service as part of performing their evaluations.)
+   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the responses that the evaluators fetch from the Foundry Evaluation service as part of performing their evaluations.)
    - Runs the evaluators against the response. Like the LLM response, on subsequent runs, the evaluation is fetched from the (disk-based) response cache that was configured in `s_safetyReportingConfig`.
    - Runs some safety validation on the evaluation result.
 

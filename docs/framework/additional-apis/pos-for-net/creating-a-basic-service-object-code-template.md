@@ -18,7 +18,7 @@ The previous section, [Setting up a Service Object Project](setting-up-a-service
 
 3. If you are building your class on top of Point of Service **Basic** classes, also add a **using** directive for **Microsoft.PointOfService.BasicServiceObjects**.
 
-4. Apply a **ServiceObject** attribute to your Service Object class. This includes the following elements:
+4. Apply a `ServiceObject` attribute to your Service Object class. This includes the following elements:
 
       - Device Type
       - Service Object name
@@ -30,7 +30,7 @@ The previous section, [Setting up a Service Object Project](setting-up-a-service
 
 ## Example
 
-In this sample, notice the additional **using** directives, the **ServiceObject** attribute applied to the Service Object class, the **Base** class used for the Service Object class, and finally the public constructor without arguments.
+In this sample, notice the additional **using** directives, the `ServiceObject` attribute applied to the Service Object class, the **Base** class used for the Service Object class, and finally the public constructor without arguments.
 
 ```csharp
 using system;

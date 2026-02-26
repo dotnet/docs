@@ -11,7 +11,7 @@ Starting in .NET 10, the <xref:System.Type.MakeGenericSignatureType(System.Type,
 
 ## Version introduced
 
-.NET 10 Preview 3
+.NET 10
 
 ## Previous behavior
 

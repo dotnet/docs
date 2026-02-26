@@ -71,10 +71,10 @@ class Program
         // Output:
         // Author and Title List
         // 
-        // |Author                   |Title                          |
-        // |Doyle, Arthur Conan      |Hound of the Baskervilles, The |
-        // |London, Jack             |         Call of the Wild, The |
-        // |Shakespeare, William     |                  Tempest, The |
+        // |Author                   |                         Title|
+        // |Doyle, Arthur Conan      |Hound of the Baskervilles, The|
+        // |London, Jack             |         Call of the Wild, The|
+        // |Shakespeare, William     |                  Tempest, The|
         // </AlignmentString>
     }
 

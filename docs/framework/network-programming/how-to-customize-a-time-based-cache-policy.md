@@ -100,21 +100,21 @@ End Function
 ```
 
 For the following invocation:
-  
+
 ```csharp
-CreateFreshAndAgePolicy(new TimeSpan(5,0,0), new TimeSpan(10,0,0));  
-```  
+CreateFreshAndAgePolicy(new TimeSpan(5,0,0), new TimeSpan(10,0,0));
+```
 
 The output is:
-  
+
 ```output
-Level:Default MaxAge:36000 MinFresh:18000  
-```  
-  
+Level:Default MaxAge:36000 MinFresh:18000
+```
+
 ## See also
 
 - [Cache Management for Network Applications](cache-management-for-network-applications.md)
 - [Cache Policy](cache-policy.md)
 - [Location-Based Cache Policies](location-based-cache-policies.md)
 - [Time-Based Cache Policies](time-based-cache-policies.md)
-- [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [`<requestCaching>` Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

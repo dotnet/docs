@@ -1,7 +1,8 @@
 ---
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
-ms.date: 08/23/2023
+ms.date: 01/14/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,7 +14,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio](library-with-visual-studio.md).
+This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio](library-with-visual-studio.md).
 
 ## Create a unit test project
 
@@ -33,19 +34,23 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 8** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 10** in the **Framework** box, select **Microsoft.Testing.Platform** for the **Test runner**, and then choose **Create**.
 
-1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
+   :::image type="content" source="./media/testing-library-with-visual-studio/additional-information-mstest.png" alt-text="Enter additional information for the MSTest Test Project":::
+
+1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use isn't shown, change the language selector at the top of the page.
 
    ```csharp
-   namespace StringLibraryTest;
-
-   [TestClass]
-   public class UnitTest1
+   namespace StringLibraryTest
    {
-       [TestMethod]
-       public void TestMethod1()
+
+       [TestClass]
+       public sealed class Test1
        {
+           [TestMethod]
+           public void TestMethod1()
+           {
+           }
        }
    }
    ```
@@ -55,7 +60,7 @@ Unit tests provide automated software testing during your development and publis
 
    Namespace StringLibraryTest
        <TestClass>
-       Public Class UnitTest1
+       Public Class Test1
            <TestMethod>
            Sub TestSub()
 
@@ -66,25 +71,27 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing. In C#, the namespace is imported via a `global using` directive in *GlobalUsings.cs*.
-   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
-   - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
+   - Includes <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in the StringLibraryTest project file in C#, and imports <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> in Visual Basic.
+   - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `Test1` class.
+   - Applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
 
-   Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is executed automatically when the unit test is run.
+   Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) executes automatically when the unit test runs.
 
 ## Add a project reference
 
-For the test project to work with the `StringLibrary` class, add a reference in the **StringLibraryTest** project to the `StringLibrary` project.
+For the test project to work with the `StringLibrary` class, add a reference in the **StringLibraryTest** project to the `StringLibrary` project. Adding a reference to the `StringLibrary` assembly lets the compiler find **StringLibrary** methods while compiling the **StringLibraryTest** project.
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Project Reference** from the context menu.
 
-1. In the **Reference Manager** dialog, expand the **Projects** node, and select the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods while compiling the **StringLibraryTest** project.
+1. In the **Reference Manager** dialog, select the box next to **StringLibrary**.
+
+   :::image type="content" source="./media/testing-library-with-visual-studio/add-project-reference-string-library-test.png" alt-text="Add StringLibrary as a project reference for StringLibraryTest.":::
 
 1. Select **OK**.
 
 ## Add and run unit test methods
 
-When Visual Studio runs a unit test, it executes each method that is marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute in a class that is marked with the  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute. A test method ends when the first failure is found or when all tests contained in the method have succeeded.
+When Visual Studio runs a unit test, it executes each method marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute in a class marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute. A test method ends when the first failure is found or when all tests contained in the method succeed.
 
 The most common tests call members of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class. Many assert methods include at least two parameters, one of which is the expected test result and the other of which is the actual test result. Some of the `Assert` class's most frequently called methods are shown in the following table:
 
@@ -97,32 +104,28 @@ The most common tests call members of the <xref:Microsoft.VisualStudio.TestTools
 
 You can also use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> (or `Assert.Throws` and `Assert.ThrowsExactly` if using MSTest 3.8 and later) method in a test method to indicate the type of exception it's expected to throw. The test fails if the specified exception isn't thrown.
 
-In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType> method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A?displayProperty=nameWithType> method.
+In testing the `StringLibrary.StartsWithUpper` method, you want to provide many strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType> method. Similarly, you want to provide many strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A?displayProperty=nameWithType> method.
 
-Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose <xref:System.String.Length> is 0, and a `null` string that hasn't been initialized. You can call `StartsWithUpper` directly as a static method and pass a single <xref:System.String> argument. Or you can call `StartsWithUpper` as an extension method on a `string` variable assigned to `null`.
+Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose <xref:System.String.Length> is 0, and a `null` string that hasn't been initialized. Call `StartsWithUpper` directly as a static method and pass a single <xref:System.String> argument. Or call `StartsWithUpper` as an extension method on a `string` variable assigned to `null`.
 
-You'll define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> method for each element in a string array. You'll call a method overload that lets you specify an error message to be displayed in case of test failure. The message identifies the string that caused the failure.
+Define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> method for each element in a string array. Call a method overload that lets you specify an error message to be displayed in case of test failure. The message identifies the string that caused the failure.
 
 To create the test methods:
 
-1. In the *UnitTest1.cs* or *UnitTest1.vb* code window, replace the code with the following code:
+1. In the *Test1.cs* or *Test1.vb* code window, replace the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTestNet8/UnitTest1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/Test1.cs":::
    :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
-
-   :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
+1. On the menu bar, select **File** > **Save Test1.cs As** or **File** > **Save Test1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
-
-   If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
+   If you fail to save your source code as a UTF8-encoded file, Visual Studio might save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results aren't correct.
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
@@ -151,7 +154,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
-   The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
+   The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True." Because of the failure, the strings in the array after "Error" weren't tested.
 
    :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
@@ -159,17 +162,13 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 ## Test the Release version of the library
 
-Now that the tests have all passed when running the Debug build of the library, run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
+Now that the tests have all passed when running the Debug build of the library, run the tests another time against the Release build of the library. Some factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
 
 To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
-
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
-
-   :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 
@@ -177,7 +176,7 @@ To test the Release build:
 
 If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET console application using Visual Studio](debugging-with-visual-studio.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
 
-Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+Visual Studio starts the test project with the debugger attached. Execution stops at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 
@@ -186,7 +185,7 @@ Visual Studio starts the test project with the debugger attached. Execution will
 
 ## Next steps
 
-In this tutorial, you unit tested a class library. You can make the library available to others by publishing it to [NuGet](https://nuget.org) as a package. To learn how, follow a NuGet tutorial:
+In this tutorial, you unit tested a class library. Make the library available to others by publishing it to [NuGet](https://nuget.org) as a package. To learn how, follow a NuGet tutorial:
 
 > [!div class="nextstepaction"]
 > [Create and publish a NuGet package using Visual Studio](/nuget/quickstart/create-and-publish-a-package-using-visual-studio?tabs=netcore-cli)

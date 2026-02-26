@@ -21,6 +21,9 @@ The <xref:System.Text.RegularExpressions.Regex> class represents .NET's regular 
 
 To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.
 
+> [!IMPORTANT]
+> The regular expression engine assumes that patterns are trusted. Do not pass patterns from untrusted sources to <xref:System.Text.RegularExpressions.Regex> methods. Untrusted patterns can cause excessive resource consumption regardless of the input text. If your application needs to accept search expressions from users, use a restricted syntax that you translate into a regex pattern, or use <xref:System.Text.RegularExpressions.Regex.Escape%2A> to treat user input as a literal string. For more information, see [Best Practices for Regular Expressions - Use trusted patterns](../../standard/base-types/best-practices-regex.md#use-trusted-patterns).
+
 For more information about the regular expression language, see [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:
 
 [Quick Reference in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
@@ -28,13 +31,13 @@ For more information about the regular expression language, see [Regular express
 
 ## Regex vs. String methods
 
-The <xref:System.String?displayProperty=nameWithType> class includes several search and comparison methods that you can use to perform pattern matching with text. For example, the <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> methods determine whether a string instance contains a specified substring; and the <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.IndexOfAny%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.LastIndexOfAny%2A?displayProperty=nameWithType> methods return the starting position of a specified substring in a string. Use the methods of the <xref:System.String?displayProperty=nameWithType> class when you are searching for a specific string. Use the <xref:System.Text.RegularExpressions.Regex> class when you are searching for a specific pattern in a string. For more information and examples, see [.NET Regular Expressions](../../standard/base-types/regular-expressions.md).
+The <xref:System.String?displayProperty=nameWithType> class includes several search and comparison methods that you can use to perform pattern matching with text. For example, the <xref:System.String.Contains*?displayProperty=nameWithType>, <xref:System.String.EndsWith*?displayProperty=nameWithType>, and <xref:System.String.StartsWith*?displayProperty=nameWithType> methods determine whether a string instance contains a specified substring; and the <xref:System.String.IndexOf*?displayProperty=nameWithType>, <xref:System.String.IndexOfAny*?displayProperty=nameWithType>, <xref:System.String.LastIndexOf*?displayProperty=nameWithType>, and <xref:System.String.LastIndexOfAny*?displayProperty=nameWithType> methods return the starting position of a specified substring in a string. Use the methods of the <xref:System.String?displayProperty=nameWithType> class when you are searching for a specific string. Use the <xref:System.Text.RegularExpressions.Regex> class when you are searching for a specific pattern in a string. For more information and examples, see [.NET Regular Expressions](../../standard/base-types/regular-expressions.md).
 
 ## Static vs. instance methods
 
 After you define a regular expression pattern, you can provide it to the regular expression engine in either of two ways:
 
-- By instantiating a <xref:System.Text.RegularExpressions.Regex> object that represents the regular expression. To do this, you pass the regular expression pattern to a <xref:System.Text.RegularExpressions.Regex.%23ctor%2A> constructor. A <xref:System.Text.RegularExpressions.Regex> object is immutable; when you instantiate a <xref:System.Text.RegularExpressions.Regex> object with a regular expression, that object's regular expression cannot be changed.
+- By instantiating a <xref:System.Text.RegularExpressions.Regex> object that represents the regular expression. To do this, you pass the regular expression pattern to a <xref:System.Text.RegularExpressions.Regex.%23ctor*> constructor. A <xref:System.Text.RegularExpressions.Regex> object is immutable; when you instantiate a <xref:System.Text.RegularExpressions.Regex> object with a regular expression, that object's regular expression cannot be changed.
 
 - By supplying both the regular expression and the text to search to a `static` (`Shared` in Visual Basic) <xref:System.Text.RegularExpressions.Regex> method. This enables you to use a regular expression without explicitly creating a <xref:System.Text.RegularExpressions.Regex> object.
 
@@ -58,21 +61,21 @@ The regular expression engine must compile a particular pattern before the patte
 
 Whether you decide to instantiate a <xref:System.Text.RegularExpressions.Regex> object and call its methods or call static methods, the <xref:System.Text.RegularExpressions.Regex> class offers the following pattern-matching functionality:
 
-- Validation of a match. You call the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method to determine whether a match is present.
+- Validation of a match. You call the <xref:System.Text.RegularExpressions.Regex.IsMatch*> method to determine whether a match is present.
 
-- Retrieval of a single match. You call the <xref:System.Text.RegularExpressions.Regex.Match%2A> method to retrieve a <xref:System.Text.RegularExpressions.Match> object that represents the first match in a string or in part of a string. Subsequent matches can be retrieved by calling the <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method.
+- Retrieval of a single match. You call the <xref:System.Text.RegularExpressions.Regex.Match*> method to retrieve a <xref:System.Text.RegularExpressions.Match> object that represents the first match in a string or in part of a string. Subsequent matches can be retrieved by calling the <xref:System.Text.RegularExpressions.Match.NextMatch*?displayProperty=nameWithType> method.
 
-- Retrieval of all matches. You call the <xref:System.Text.RegularExpressions.Regex.Matches%2A> method to retrieve a <xref:System.Text.RegularExpressions.MatchCollection?displayProperty=nameWithType> object that represents all the matches found in a string or in part of a string.
+- Retrieval of all matches. You call the <xref:System.Text.RegularExpressions.Regex.Matches*> method to retrieve a <xref:System.Text.RegularExpressions.MatchCollection?displayProperty=nameWithType> object that represents all the matches found in a string or in part of a string.
 
-- Replacement of matched text. You call the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to replace matched text. The replacement text can also be defined by a regular expression. In addition, some of the <xref:System.Text.RegularExpressions.Regex.Replace%2A> methods include a <xref:System.Text.RegularExpressions.MatchEvaluator> parameter that enables you to programmatically define the replacement text.
+- Replacement of matched text. You call the <xref:System.Text.RegularExpressions.Regex.Replace*> method to replace matched text. The replacement text can also be defined by a regular expression. In addition, some of the <xref:System.Text.RegularExpressions.Regex.Replace*> methods include a <xref:System.Text.RegularExpressions.MatchEvaluator> parameter that enables you to programmatically define the replacement text.
 
-- Creation of a string array that is formed from parts of an input string. You call the <xref:System.Text.RegularExpressions.Regex.Split%2A> method to split an input string at positions that are defined by the regular expression.
+- Creation of a string array that is formed from parts of an input string. You call the <xref:System.Text.RegularExpressions.Regex.Split*> method to split an input string at positions that are defined by the regular expression.
 
 In addition to its pattern-matching methods, the <xref:System.Text.RegularExpressions.Regex> class includes several special-purpose methods:
 
-- The <xref:System.Text.RegularExpressions.Regex.Escape%2A> method escapes any characters that may be interpreted as regular expression operators in a regular expression or input string.
-- The <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method removes these escape characters.
-- The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method creates an assembly that contains predefined regular expressions. .NET contains examples of these special-purpose assemblies in the <xref:System.Web.RegularExpressions?displayProperty=nameWithType> namespace.
+- The <xref:System.Text.RegularExpressions.Regex.Escape*> method escapes any characters that may be interpreted as regular expression operators in a regular expression or input string.
+- The <xref:System.Text.RegularExpressions.Regex.Unescape*> method removes these escape characters.
+- The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*> method creates an assembly that contains predefined regular expressions. .NET contains examples of these special-purpose assemblies in the <xref:System.Web.RegularExpressions?displayProperty=nameWithType> namespace.
 
 ## Define a time-out value
 
@@ -84,7 +87,7 @@ How you handle the exception depends on the cause of the exception. If the excep
 
 You can set a time-out interval by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)> constructor when you instantiate a regular expression object. For static methods, you can set a time-out interval by calling an overload of a matching method that has a `matchTimeout` parameter. If you do not set a time-out value explicitly, the default time-out value is determined as follows:
 
-- By using the application-wide time-out value, if one exists. Set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
+- By using the application-wide time-out value, if one exists. Set the application-wide time-out value by calling the <xref:System.AppDomain.SetData*?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
 > [!IMPORTANT]
@@ -102,10 +105,10 @@ The following example uses a regular expression to check for repeated occurrence
 | `(\k<word>)`   | Match the captured group that's named `word`.                                             |
 | `\b`           | Match a word boundary.                                                                    |
 
-:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/words.cs" interactive="try-dotnet" id="Snippet0":::
+:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/words.cs" id="Snippet0":::
 :::code language="vb" source="./snippets/System.Text.RegularExpressions/Regex/Overview/vb/words.vb" id="Snippet0":::
 
-The next example illustrates the use of a regular expression to check whether a string either represents a currency value or has the correct format to represent a currency value. In this case, the regular expression is built dynamically from the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType>, and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties for the en-US culture. The resulting regular expression is `^\s*[\+-]?\s?\$?\s?(\d*\.?\d{2}?){1}$`. This regular expression can be interpreted as shown in the following table.
+The next example illustrates the use of a regular expression to check whether a string either represents a currency value or has the correct format to represent a currency value. In this case, the regular expression is built dynamically from the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator*?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits*>, <xref:System.Globalization.NumberFormatInfo.CurrencySymbol*?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeSign*?displayProperty=nameWithType>, and <xref:System.Globalization.NumberFormatInfo.PositiveSign*?displayProperty=nameWithType> properties for the en-US culture. The resulting regular expression is `^\s*[\+-]?\s?\$?\s?(\d*\.?\d{2}?){1}$`. This regular expression can be interpreted as shown in the following table.
 
 | Pattern    | Description                                                                    |
 |------------|--------------------------------------------------------------------------------|
@@ -123,7 +126,7 @@ The next example illustrates the use of a regular expression to check whether a 
 
 In this case, the regular expression assumes that a valid currency string does not contain group separator symbols, and that it has either no fractional digits or the number of fractional digits defined by the specified culture's <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits> property.
 
-:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/regex_example1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/regex_example1.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Text.RegularExpressions/Regex/Overview/vb/regex_example1.vb" id="Snippet1":::
 
-Because the regular expression in this example is built dynamically, you don't know at design time whether the currency symbol, decimal sign, or positive and negative signs of the specified culture (en-US in this example) might be misinterpreted by the regular expression engine as regular expression language operators. To prevent any misinterpretation, the example passes each dynamically generated string to the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method.
+Because the regular expression in this example is built dynamically, you don't know at design time whether the currency symbol, decimal sign, or positive and negative signs of the specified culture (en-US in this example) might be misinterpreted by the regular expression engine as regular expression language operators. To prevent any misinterpretation, the example passes each dynamically generated string to the <xref:System.Text.RegularExpressions.Regex.Escape*> method.

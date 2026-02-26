@@ -106,6 +106,10 @@ If you have calls to `TestContext.Properties.Contains`, update them to `TestCont
 This enum only had a single member, `Infinite`, whose value was `int.MaxValue`.
 If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout(int.MaxValue)]`.
 
+### TestContext.ManagedType is now removed
+
+The property `TestContext.ManagedType` is removed. Use `TestContext.FullyQualifiedTestClassName` instead.
+
 ### Types not intended for public consumption are made internal or removed
 
 - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` is made internal.
@@ -191,13 +195,16 @@ The default severity of the following analyzers changed from Info to Warning:
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
 ### DisableAppDomain now defaults to true when running under Microsoft.Testing.Platform
 
 In v4, and when running with Microsoft.Testing.Platform, AppDomains are disabled by default (when not specified) as the custom isolation provided is useless in most of the cases and has an important impact on performances (up to 30% slower when running under isolation).
 
 However, the feature remains available. If you have scenarios requiring it, add the `DisableAppDomain` setting in runsettings.
+
+> [!IMPORTANT]
+> When AppDomain isolation is enabled, MSTest unloads the AppDomain after all tests finish, which aborts all the threads associated with the AppDomain, including foreground threads. As a result, if you had a foreground thread running forever in MSTest v3, the test run will complete successfully. The same scenario will hang in MSTest v4, which is ideal behavior because the process shouldn't exit when a foreground thread is still running.
 
 ### TestContext throws when used incorrectly
 

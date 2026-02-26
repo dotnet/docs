@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
 ---
 
-# \<relativeBindForResources> Element
+# `<relativeBindForResources>` Element
 
 Optimizes the probe for satellite assemblies.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<relativeBindForResources>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<relativeBindForResources>`
 
 ## Syntax
 

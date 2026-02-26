@@ -3,7 +3,7 @@ title: Install .NET Runtime on Linux with Snap
 description: Learn about how to install the .NET Runtime snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/13/2024
+ms.date: 01/16/2026
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content
 #customer intent: As a Linux user, I want to install .NET Runtime through Snap.
@@ -34,25 +34,26 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 The following steps install the .NET 9 runtime snap package:
 
 01. Open a terminal.
-01. Use `snap install` to install the .NET Runtime snap package. For example, the following command installs the .NET 8 runtime.
+01. Use `snap install` to install the .NET Runtime snap package. For example, the following command installs the .NET 9 runtime.
 
     ```bash
-    sudo snap install dotnet-runtime-80
+    sudo snap install dotnet-runtime-90
     ```
 
 Each .NET Runtime is published as an individual snap package. The following table lists the packages:
 
-| .NET version                                      | Snap package        | .NET version supported by Microsoft |
-|---------------------------------------------------|---------------------|-----|
-| [9 (STS)](https://snapcraft.io/dotnet-runtime-90) | `dotnet-runtime-90` | Yes |
-| [8 (LTS)](https://snapcraft.io/dotnet-runtime-80) | `dotnet-runtime-80` | Yes |
-| [7 (STS)](https://snapcraft.io/dotnet-runtime-70) | `dotnet-runtime-70` | No  |
-| [6 (LTS)](https://snapcraft.io/dotnet-runtime-60) | `dotnet-runtime-60` | No  |
-| [5](https://snapcraft.io/dotnet-runtime-50)       | `dotnet-runtime-50` | No  |
-| [3.1](https://snapcraft.io/dotnet-runtime-31)     | `dotnet-runtime-31` | No  |
-| [3.0](https://snapcraft.io/dotnet-runtime-30)     | `dotnet-runtime-30` | No  |
-| [2.2](https://snapcraft.io/dotnet-runtime-22)     | `dotnet-runtime-22` | No  |
-| [2.1](https://snapcraft.io/dotnet-runtime-21)     | `dotnet-runtime-21` | No  |
+| .NET version                                        | Snap package         | .NET version supported by Microsoft |
+|-----------------------------------------------------|----------------------|-------------------------------------|
+| [10 (LTS)](https://snapcraft.io/dotnet-runtime-100) | `dotnet-runtime-100` | Yes                                 |
+| [9 (STS)](https://snapcraft.io/dotnet-runtime-90)   | `dotnet-runtime-90`  | Yes                                 |
+| [8 (LTS)](https://snapcraft.io/dotnet-runtime-80)   | `dotnet-runtime-80`  | Yes                                 |
+| [7 (STS)](https://snapcraft.io/dotnet-runtime-70)   | `dotnet-runtime-70`  | No                                  |
+| [6 (LTS)](https://snapcraft.io/dotnet-runtime-60)   | `dotnet-runtime-60`  | No                                  |
+| [5](https://snapcraft.io/dotnet-runtime-50)         | `dotnet-runtime-50`  | No                                  |
+| [3.1](https://snapcraft.io/dotnet-runtime-31)       | `dotnet-runtime-31`  | No                                  |
+| [3.0](https://snapcraft.io/dotnet-runtime-30)       | `dotnet-runtime-30`  | No                                  |
+| [2.2](https://snapcraft.io/dotnet-runtime-22)       | `dotnet-runtime-22`  | No                                  |
+| [2.1](https://snapcraft.io/dotnet-runtime-21)       | `dotnet-runtime-21`  | No                                  |
 
 ## 2. Enable the dotnet command
 

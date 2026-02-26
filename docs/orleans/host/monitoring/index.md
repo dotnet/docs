@@ -13,11 +13,9 @@ Observability is one of the most important aspects of a distributed system. It's
 
 ## Logging
 
-Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
+Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection/overview.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging/overview.md).
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 ## Metrics
 
@@ -317,35 +315,41 @@ The following table shows a collection of transaction meters used to monitor the
 | `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of failed transactions. |
 | `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of throttled transactions. |
 
-### Prometheus
+### Export metrics
 
-Various third-party metrics providers are available for use with Orleans. One popular example is [Prometheus](https://prometheus.io), which you can use to collect metrics from your app with OpenTelemetry.
+Various third-party metrics providers are available for use with Orleans. Export metrics from your app using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). Many observability platforms consume OTLP data directly or through an OpenTelemetry Collector, including [Prometheus](https://prometheus.io), Grafana, and Azure Monitor.
 
-To use OpenTelemetry and Prometheus with Orleans, call the following `IServiceCollection` extension method:
+To export metrics using OTLP with Orleans, install the [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/) NuGet package and call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
     .WithMetrics(metrics =>
     {
         metrics
-            .AddPrometheusExporter()
+            .AddOtlpExporter()
             .AddMeter("Microsoft.Orleans");
     });
 ```
 
-> [!IMPORTANT]
-> Both the [OpenTelemetry.Exporter.Prometheus](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus) and [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore) NuGet packages are currently in preview as release candidates. They're not recommended for production use.
+The `AddOtlpExporter` method ensures the OTLP exporter is added to the `builder`. Orleans uses a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. Use the `AddMeter` method to specify the name of the meter to subscribe to, in this case, `"Microsoft.Orleans"`.
 
-The `AddPrometheusExporter` method ensures the `PrometheusExporter` is added to the `builder`. Orleans uses a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. Use the `AddMeter` method to specify the name of the meter to subscribe to, in this case, `"Microsoft.Orleans"`.
-
-After configuring the exporter and building your app, call `MapPrometheusScrapingEndpoint` on the `IEndpointRouteBuilder` (the `app` instance) to expose the metrics to Prometheus. For example:
+You can configure the OTLP exporter endpoint and other options as needed. For example:
 
 ```csharp
-WebApplication app = builder.Build();
-
-app.MapPrometheusScrapingEndpoint();
-app.Run();
+builder.Services.AddOpenTelemetry()
+    .WithMetrics(metrics =>
+    {
+        metrics
+            .AddOtlpExporter(options =>
+            {
+                options.Endpoint = new Uri("http://localhost:4317");
+            })
+            .AddMeter("Microsoft.Orleans");
+    });
 ```
+
+> [!NOTE]
+> The default OTLP exporter configuration uses gRPC (typically port `4317`). To export metrics to Prometheus, send telemetry through an OpenTelemetry Collector or configure OTLP/HTTP settings instead.
 
 ## Distributed tracing
 
@@ -356,7 +360,9 @@ Regardless of the distributed tracing exporter you choose, call:
 - <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: which enables distributed tracing for the silo.
 - <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: which enables distributed tracing for the client.
 
-Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
+Or set the `EnableDistributedTracing` config option to `true`.
+
+Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can export distributed traces using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). To use OpenTelemetry with OTLP and Orleans, install the [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/) NuGet package and call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method in _Program.cs_:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -370,17 +376,14 @@ builder.Services.AddOpenTelemetry()
         tracing.AddSource("Microsoft.Orleans.Runtime");
         tracing.AddSource("Microsoft.Orleans.Application");
 
-        tracing.AddZipkinExporter(zipkin =>
+        tracing.AddOtlpExporter(otlp =>
         {
-            zipkin.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
+            otlp.Endpoint = new Uri("http://localhost:4317");
         });
     });
 ```
 
-> [!IMPORTANT]
-> The [OpenTelemetry.Exporter.Zipkin](https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin) NuGet package is currently in preview as a release candidate. It is not recommended for production use.
-
-The Zipkin trace is shown in the Jaeger UI (an alternative to Zipkin that uses the same data format):
+The OTLP exporter works with many observability backends including Jaeger, Zipkin, Grafana Tempo, and Azure Monitor. The traces can be visualized in tools like Jaeger UI:
 
 :::image type="content" source="../media/jaeger-ui.png" lightbox="../media/jaeger-ui.png" alt-text="Orleans GPS Tracker sample app: Jaeger UI trace.":::
 
@@ -388,9 +391,7 @@ For more information, see [Distributed tracing](../../../core/diagnostics/distri
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Orleans outputs its runtime statistics and metrics through the <xref:Orleans.Runtime.ITelemetryConsumer> interface. Your application can register one or more telemetry consumers for its silos and clients to receive statistics and metrics the Orleans runtime periodically publishes. These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose. Three telemetry consumers are currently included in the Orleans codebase.
 
@@ -442,7 +443,7 @@ clientBuilder.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);
 
 ## See also
 
-- [Logging in .NET](../../../core/extensions/logging.md)
+- [Logging in .NET](../../../core/extensions/logging/overview.md)
 - [.NET metrics](../../../core/diagnostics/metrics.md)
 - [Investigate performance counters (dotnet-counters)](../../../core/diagnostics/dotnet-counters.md)
 - [.NET distributed tracing](../../../core/diagnostics/distributed-tracing.md)

@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Comparing Strings in .NET"
 description: Learn how to compare strings effectively in .NET applications.
-ms.date: 01/26/2023
+ms.date: 02/23/2026
 ms.topic: concept-article
 dev_langs:
   - "csharp"
@@ -17,7 +17,6 @@ helpviewer_keywords:
   - "string sorting"
   - "comparing strings"
   - "strings [.NET],comparing"
-ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 ---
 # Best practices for comparing strings in .NET
 
@@ -48,18 +47,28 @@ Avoid the following practices when you compare strings:
 - Don't use string operations based on <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> in most cases. One of the few exceptions is when you're persisting linguistically meaningful but culturally agnostic data.
 - Don't use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.
 
-## Specifying string comparisons explicitly
+> [!TIP]
+> The [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules help identify call sites where a linguistic comparer is used unintentionally. To enable them and surface violations as build errors, set the following properties in your project file:
+>
+> ```xml
+> <PropertyGroup>
+>   <AnalysisMode>All</AnalysisMode>
+>   <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
+> </PropertyGroup>
+> ```
+
+## Specify string comparisons explicitly
 
 Most of the string manipulation methods in .NET are overloaded. Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated. Most of the methods that don't rely on defaults include a parameter of type <xref:System.StringComparison>, which is an enumeration that explicitly specifies rules for string comparison by culture and case. The following table describes the <xref:System.StringComparison> enumeration members.
 
-|StringComparison member|Description|
-|-----------------------------|-----------------|
-|<xref:System.StringComparison.CurrentCulture>|Performs a case-sensitive comparison using the current culture.|
-|<xref:System.StringComparison.CurrentCultureIgnoreCase>|Performs a case-insensitive comparison using the current culture.|
-|<xref:System.StringComparison.InvariantCulture>|Performs a case-sensitive comparison using the invariant culture.|
-|<xref:System.StringComparison.InvariantCultureIgnoreCase>|Performs a case-insensitive comparison using the invariant culture.|
-|<xref:System.StringComparison.Ordinal>|Performs an ordinal comparison.|
-|<xref:System.StringComparison.OrdinalIgnoreCase>|Performs a case-insensitive ordinal comparison.|
+| `StringComparison` member                               | Description                                                       |
+|---------------------------------------------------------|-------------------------------------------------------------------|
+| <xref:System.StringComparison.CurrentCulture>           | Performs a case-sensitive comparison using the current culture.   |
+| <xref:System.StringComparison.CurrentCultureIgnoreCase> | Performs a case-insensitive comparison using the current culture. |
+| <xref:System.StringComparison.InvariantCulture>         | Performs a case-sensitive comparison using the invariant culture. |
+| <xref:System.StringComparison.InvariantCultureIgnoreCase> | Performs a case-insensitive comparison using the invariant culture. |
+| <xref:System.StringComparison.Ordinal> | Performs an ordinal comparison. |
+| <xref:System.StringComparison.OrdinalIgnoreCase> | Performs a case-insensitive ordinal comparison. |
 
 For example, the <xref:System.String.IndexOf%2A> method, which returns the index of a substring in a <xref:System.String> object that matches either a character or a string, has nine overloads:
 
@@ -89,7 +98,7 @@ String comparison is the heart of many string-related operations, particularly s
 
 However, evaluating two strings for equality or sort order doesn't yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) (a locale-agnostic culture based on the English language) may produce different results.
 
-In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode).
+In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode) and [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
 
 ### String comparisons that use the current culture
 
@@ -138,6 +147,37 @@ Specifying the <xref:System.StringComparison.Ordinal?displayProperty=nameWithTyp
 
 Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" doesn't match "Windows". This is essentially a call to the C runtime `strcmp` function. Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy. Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.
 
+An `OrdinalIgnoreCase` comparer still operates on a char-by-char basis, but it eliminates case differences while performing the operation. Under an `OrdinalIgnoreCase` comparer, the char pairs `'d'` and `'D'` compare as *equal*, as do the char pairs `'á'` and `'Á'`. But the unaccented char `'a'` compares as *not equal* to the accented char `'á'`.
+
+Some examples of this are provided in the following table:
+
+| String 1   | String 2   | `Ordinal` comparison | `OrdinalIgnoreCase` comparison |
+|------------|------------|----------------------|--------------------------------|
+| `"dog"`    | `"dog"`    | equal                | equal                          |
+| `"dog"`    | `"Dog"`    | not equal            | equal                          |
+| `"resume"` | `"résumé"` | not equal            | not equal                      |
+
+Unicode also allows strings to have several different in-memory representations. For example, an e-acute (é) can be represented in two possible ways:
+
+- A single literal `'é'` character (also written as `'\u00E9'`).
+- A literal unaccented `'e'` character followed by a combining accent modifier character `'\u0301'`.
+
+This means that the following _four_ strings all display as `"résumé"`, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
+
+- `"r\u00E9sum\u00E9"`
+- `"r\u00E9sume\u0301"`
+- `"re\u0301sum\u00E9"`
+- `"re\u0301sume\u0301"`
+
+Under an ordinal comparer, none of these strings compare as equal to each other. This is because they all contain different underlying char sequences, even though when they're rendered to the screen, they all look the same.
+
+When performing a `string.IndexOf(..., StringComparison.Ordinal)` operation, the runtime looks for an exact substring match. The results are as follows.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="indexof":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="indexof":::
+
+Ordinal search and comparison routines are never affected by the current thread's culture setting.
+
 Strings in .NET can contain embedded null characters (and other non-printing characters). One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, strings that contain embedded null characters can be considered equal to strings that don't. Embedded non-printing characters might be skipped for the purpose of string comparison methods, such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
@@ -169,6 +209,49 @@ Both <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> and <xr
 
 Ordinal semantics are the default for <xref:System.String.Equals%2A?displayProperty=nameWithType> overloads that don't include a <xref:System.StringComparison> argument (including the equality operator). In any case, we recommend that you call an overload that has a <xref:System.StringComparison> parameter.
 
+### Linguistic string comparisons
+
+*Linguistic* search and comparison routines decompose a string into *collation elements* and perform searches or comparisons on these elements. There's not necessarily a 1:1 mapping between a string's characters and its constituent collation elements. For example, a string of length 2 may consist of only a single collation element. When two strings are compared in a linguistic-aware fashion, the comparer checks whether the two strings' collation elements have the same semantic meaning, even if the string's literal characters are different.
+
+Consider the string `"résumé"` and its four different representations described in the previous section. The following table shows each representation broken down into its collation elements.
+
+| String                 | As collation elements                           |
+|------------------------|-------------------------------------------------|
+| `"r\u00E9sum\u00E9"`   | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"`   |
+| `"r\u00E9sume\u0301"`  | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"`  |
+| `"re\u0301sum\u00E9"`  | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"`  |
+| `"re\u0301sume\u0301"` | `"r" + "e\u0301" + "s" + "u" + "m" + "e\u0301"` |
+
+A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
+
+Under a linguistic comparer, exact matches aren't necessary. Collation elements are instead compared based on their semantic meaning. For example, a linguistic comparer treats the substrings `"\u00E9"` and `"e\u0301"` as equal since they both semantically mean "a lowercase e with an acute accent modifier." This allows the `IndexOf` method to match the substring `"e\u0301"` within a larger string that contains the semantically equivalent substring `"\u00E9"`, as shown in the following code sample.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="indexof_string":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="indexof_string":::
+
+As a consequence of this, two strings of different lengths may compare as equal if a linguistic comparison is used. Callers should take care not to special-case logic that deals with string length in such scenarios.
+
+*Culture-aware* search and comparison routines are a special form of linguistic search and comparison routines. Under a culture-aware comparer, the concept of a collation element is extended to include information specific to the specified culture.
+
+For example, [in the Hungarian alphabet](https://en.wikipedia.org/wiki/Hungarian_alphabet), when the two characters \<dz\> appear back-to-back, they are considered their own unique letter distinct from either \<d\> or \<z\>. This means that when \<dz\> is seen in a string, a Hungarian culture-aware comparer treats it as a single collation element.
+
+| String   | As collation elements   | Remarks                                    |
+|----------|-------------------------|--------------------------------------------|
+| `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer)     |
+| `"endz"` | `"e" + "n" + "dz"`      | (using a Hungarian culture-aware comparer) |
+
+When using a Hungarian culture-aware comparer, the string `"endz"` *does not* end with the substring `"z"`, because \<dz\> and \<z\> are considered collation elements with different semantic meaning.
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="endz":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="endz":::
+
+> [!NOTE]
+>
+> - **Behavior**: Linguistic and culture-aware comparers can undergo behavioral adjustments from time to time. Both ICU and the older Windows NLS facility are updated to account for how world languages change. For more information, see the blog post [Locale (culture) data churn](/archive/blogs/shawnste/locale-culture-data-churn). The *Ordinal* comparer's behavior will never change since it performs exact bitwise searching and comparison. However, the *OrdinalIgnoreCase* comparer's behavior may change as Unicode grows to encompass more character sets and corrects omissions in existing casing data.
+> - **Usage**: The comparers `StringComparison.InvariantCulture` and `StringComparison.InvariantCultureIgnoreCase` are linguistic comparers that are not culture-aware. That is, these comparers understand concepts such as the accented character é having multiple possible underlying representations, and that all such representations should be treated equal. But non-culture-aware linguistic comparers won't contain special handling for \<dz\> as distinct from \<d\> or \<z\>, as shown above. They also won't special-case characters like the German Eszett (ß).
+
+.NET also offers the *invariant globalization mode*. This opt-in mode disables code paths that deal with linguistic search and comparison routines. In this mode, all operations use *Ordinal* or *OrdinalIgnoreCase* behaviors, regardless of what `CultureInfo` or `StringComparison` argument the caller provides. For more information, see [Runtime configuration options for globalization](../../core/runtime-config/globalization.md) and [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+
 ### String operations that use the invariant culture
 
 Comparisons with the invariant culture use the <xref:System.Globalization.CultureInfo.CompareInfo%2A> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters. This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.
@@ -188,22 +271,31 @@ When interpreting file names, cookies, or anything else where a combination such
 
 On balance, the invariant culture has few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it isn't the choice for display in any culture. One of the few reasons to use <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> for comparison is to persist ordered data for a cross-culturally identical display. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.
 
-## Choosing a StringComparison member for your method call
+## How to choose a StringComparison member
 
 The following table outlines the mapping from semantic string context to a <xref:System.StringComparison> enumeration member:
 
-|Data|Behavior|Corresponding System.StringComparison<br /><br /> value|
-|----------|--------------|-----------------------------------------------------|
+| Data | Behavior | Corresponding System.StringComparison<br /><br /> value |
+|------|----------|---------------------------------------------------------|
 |Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison.Ordinal>|
 |Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant.|<xref:System.StringComparison.OrdinalIgnoreCase>|
 |Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison.InvariantCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.InvariantCultureIgnoreCase>|
 |Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|
 
+## Security implications
+
+If your app uses string APIs for filtering or access control, use ordinal comparisons. Linguistic comparisons based on the current culture can produce unexpected results that vary by platform and locale. Code patterns like the following might be susceptible to security exploits:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="html_example":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="html_example":::
+
+Because the `string.IndexOf(string)` method uses a linguistic search by default, it's possible for a string to contain a literal `'<'` or `'&'` character and for `string.IndexOf(string)` to return `-1`, indicating that the search substring wasn't found. Code analysis rules CA1307 and CA1309 flag such call sites and alert the developer that there's a potential problem.
+
 ## Common string comparison methods in .NET
 
 The following sections describe the methods that are most commonly used for string comparison.
 
-### String.Compare
+### `String.Compare`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
@@ -211,7 +303,7 @@ As the operation most central to string interpretation, all instances of these m
 
 The <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class, which is returned by the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property, also includes a <xref:System.Globalization.CompareInfo.Compare%2A> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <xref:System.Globalization.CompareOptions> flag enumeration.
 
-### String.CompareTo
+### `String.CompareTo`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
@@ -222,13 +314,13 @@ Types that implement the <xref:System.IComparable> and <xref:System.IComparable%
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/stringcomparer/Program.cs" id="class":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/stringcomparer/Program.vb" id="class":::
 
-### String.Equals
+### `String.Equals`
 
 Default interpretation: <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
 
 The <xref:System.String> class lets you test for equality by calling either the static or instance <xref:System.String.Equals%2A> method overloads, or by using the static equality operator. The overloads and operator use ordinal comparison by default. However, we still recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type even if you want to perform an ordinal comparison; this makes it easier to search code for a certain string interpretation.
 
-### String.ToUpper and String.ToLower
+### `String.ToUpper` and `String.ToLower`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
@@ -238,25 +330,42 @@ The <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> and <x
 
 Overloads are also available for converting to uppercase and lowercase in a specific culture, by passing a <xref:System.Globalization.CultureInfo> object that represents that culture to the method.
 
-### Char.ToUpper and Char.ToLower
+### `Char.ToUpper` and `Char.ToLower`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
 The <xref:System.Char.ToUpper(System.Char)?displayProperty=nameWithType> and <xref:System.Char.ToLower(System.Char)?displayProperty=nameWithType> methods work similarly to the <xref:System.String.ToUpper?displayProperty=nameWithType> and <xref:System.String.ToLower?displayProperty=nameWithType> methods described in the previous section.
 
-### String.StartsWith and String.EndsWith
+### `String.StartsWith` and `String.EndsWith`
 
-Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
+Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> (when the first parameter is a `string`), or <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> (when the first parameter is a `char`).
 
-By default, both of these methods perform a culture-sensitive comparison. In particular, they may ignore non-printing characters.
+There's an inconsistency in how the default overloads of these methods perform comparisons. Overloads that accept a `char` parameter perform an ordinal comparison, but overloads that accept a `string` parameter perform a culture-sensitive comparison and may ignore non-printing characters.
 
-### String.IndexOf and String.LastIndexOf
+### `String.IndexOf` and `String.LastIndexOf`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
 There's a lack of consistency in how the default overloads of these methods perform comparisons. All <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.Char> parameter perform an ordinal comparison, but the default <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.String> parameter perform a culture-sensitive comparison.
 
 If you call the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> or <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type. The overloads that include a <xref:System.Char> argument don't allow you to specify a <xref:System.StringComparison> type.
+
+### `String.Contains`
+
+Default interpretation: <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
+
+Unlike <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, the <xref:System.String.Contains%2A?displayProperty=nameWithType> method uses an ordinal comparison by default for both `char` and `string` overloads. However, you should still pass an explicit <xref:System.StringComparison> argument when the intent matters, to make the behavior clear at the call site.
+
+### `MemoryExtensions.AsSpan.IndexOfAny` and the `SearchValues<T>` type
+
+.NET 8 introduced the <xref:System.Buffers.SearchValues`1> type, which provides an optimized solution for searching for specific sets of characters or bytes within spans.
+
+If you're comparing a string against a fixed set of known values repeatedly, consider using the <xref:System.Buffers.SearchValues`1.Contains(`0)?displayProperty=nameWithType> method instead of chained comparisons or LINQ-based approaches. `SearchValues<T>` can precompute internal lookup structures and optimize the comparison logic based on the provided values. To see performance benefits, create and cache the `SearchValues<string>` instance once, then reuse it for comparisons:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Buffers.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Buffers.vb":::
+
+In .NET 9, `SearchValues` was extended to support searching for substrings within a larger string. For an example, see [`SearchValues` expansion](../../core/whats-new/dotnet-9/libraries.md#searchvalues-expansion).
 
 ## Methods that perform string comparison indirectly
 
@@ -269,7 +378,7 @@ Some non-string methods that have string comparison as a central operation use t
 - Ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> property.
 - Case-insensitive ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> property.
 
-### Array.Sort and Array.BinarySearch
+### `Array.Sort` and `Array.BinarySearch`
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
@@ -288,7 +397,7 @@ If this data is persisted and moved across cultures, and sorting is used to pres
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="invariant" highlight="11,15":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="invariant" highlight="10,14":::
 
-### Collections example: Hashtable constructor
+### Collections example: `Hashtable` constructor
 
 Hashing strings provides a second example of an operation that is affected by the way in which strings are compared.
 
@@ -297,6 +406,51 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/Program.cs":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/Program.vb":::
 
+### Collections example: `SortedSet<T>` and `List<T>.Sort`
+
+The same locale-sensitivity issue applies when instantiating a sorted collection of strings or sorting an existing string-based collection. Always specify an explicit comparer:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/DemoSorting.cs" id="code":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/DemoSorting.vb" id="code":::
+
+## Differences between .NET and .NET Framework
+
+.NET and .NET Framework handle globalization differently. .NET Framework on Windows uses the operating system's [National Language Support (NLS)](/windows/win32/intl/national-language-support) facility for linguistic string comparisons. .NET uses the [International Components for Unicode (ICU)](https://icu.unicode.org/) library for linguistic string comparisons on all supported platforms.
+
+Because ICU and NLS implement different logic in their linguistic comparers, the results of string methods that use culture-sensitive comparison can differ between .NET and .NET Framework. This matters for any method that uses a linguistic comparer by default, including:
+
+- <xref:System.String.Compare%2A?displayProperty=nameWithType>
+- <xref:System.String.EndsWith%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.IndexOf%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.StartsWith%2A?displayProperty=nameWithType> (when the first parameter is a `string`)
+- <xref:System.String.ToLower%2A?displayProperty=nameWithType>
+- <xref:System.String.ToLowerInvariant%2A?displayProperty=nameWithType>
+- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>
+- <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType>
+- <xref:System.Globalization.TextInfo?displayProperty=nameWithType> (most members)
+- <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> (most members)
+- <xref:System.Array.Sort%2A?displayProperty=nameWithType> (when sorting arrays of strings)
+- <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=nameWithType> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet%601?displayProperty=nameWithType> (when the set contains strings)
+
+> [!NOTE]
+> This is not an exhaustive list of affected APIs.
+
+One notable difference is the handling of embedded null and other control characters. When you use a linguistic comparer under NLS, some control characters such as the null character (`\0`) might be treated as ignorable in certain comparison contexts. Under ICU, these characters are treated as actual characters in the string. This can cause `string.IndexOf(string)` to return different results when the search string contains a null character.
+
+For example, the following code can produce a different answer depending on the current runtime:
+
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/everythingelse/Program.cs" id="framework_diffs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/everythingelse/Program.vb" id="framework_diffs":::
+
+The best way to avoid these cross-platform and cross-implementation surprises is to always pass an explicit <xref:System.StringComparison> argument to string comparison methods, and to use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for non-linguistic comparisons.
+
+If you migrate an application from .NET Framework to .NET and rely on legacy NLS behaviors on Windows, you can configure the application to use NLS. For more information, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
+
 ## See also
 
 - [Globalization in .NET apps](../../core/extensions/globalization.md)
+- [.NET globalization and ICU](../../core/extensions/globalization-icu.md)
+- [How to compare strings in C#](../../csharp/how-to/compare-strings.md)

@@ -14,9 +14,9 @@ helpviewer_keywords:
 ---
 # Dynamically load and use types
 
-Reflection provides infrastructure used by language compilers to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at run time rather than at compile time, it's called late binding. Visual Basic allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at run time. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).
+Reflection provides infrastructure used by language compilers to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at runtime rather than at compile time, it's called late binding. Visual Basic allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at runtime. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).
 
-In the following example, the Visual Basic compiler uses reflection implicitly to call a method on an object whose type is not known at compile time. A `HelloWorld` class has a `PrintHello` method that prints out "Hello World" concatenated with some text that's passed to the `PrintHello` method. The `PrintHello` method called in this example is actually a <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; the Visual Basic code allows the `PrintHello` method to be invoked as if the type of the object (`helloObj`) were known at compile time (early binding) rather than at run time (late binding).
+In the following example, the Visual Basic compiler uses reflection implicitly to call a method on an object whose type is not known at compile time. A `HelloWorld` class has a `PrintHello` method that prints out "Hello World" concatenated with some text that's passed to the `PrintHello` method. The `PrintHello` method called in this example is actually a <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; the Visual Basic code allows the `PrintHello` method to be invoked as if the type of the object (`helloObj`) were known at compile time (early binding) rather than at runtime (late binding).
 
 ```vb
 Module Hello
@@ -38,7 +38,7 @@ In addition to being used implicitly by compilers for late binding, reflection c
 
 The [common language runtime](../../standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.
 
-Using custom binding, you can load an assembly at run time, obtain information about types in that assembly, specify the type that you want, and then invoke methods or access fields or properties on that type. This technique is useful if you don't know an object's type at compile time, such as when the object type is dependent on user input.
+Using custom binding, you can load an assembly at runtime, obtain information about types in that assembly, specify the type that you want, and then invoke methods or access fields or properties on that type. This technique is useful if you don't know an object's type at compile time, such as when the object type is dependent on user input.
 
 The following example demonstrates a simple custom binder that provides no argument type conversion. Code for `Simple_Type.dll` precedes the main example. Be sure to build `Simple_Type.dll` and then include a reference to it in the project at build time.
 
@@ -72,21 +72,21 @@ In Case 3 of the code example, an actual argument of type `String` with a value 
 
 `ChangeType` performs only lossless or [widening coercions](../../standard/base-types/type-conversion.md), as shown in the following table.
 
-| Source type       | Target type                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| Any type          | Its base type                                                     |
-| Any type          | Interface it implements                                           |
-| Char              | UInt16, UInt32, Int32, UInt64, Int64, Single, Double              |
-| Byte              | Char, UInt16, Int16, UInt32, Int32, UInt64, Int64, Single, Double |
-| SByte             | Int16, Int32, Int64, Single, Double                               |
-| UInt16            | UInt32, Int32, UInt64, Int64, Single, Double                      |
-| Int16             | Int32, Int64, Single, Double                                      |
-| UInt32            | UInt64, Int64, Single, Double                                     |
-| Int32             | Int64, Single, Double                                             |
-| UInt64            | Single, Double                                                    |
-| Int64             | Single, Double                                                    |
-| Single            | Double                                                            |
-| Nonreference type | Reference type                                                    |
+| Source type | Target type                                                                         |
+|-------------|-------------------------------------------------------------------------------------|
+| Any type    | Its base type                                                                       |
+| Any type    | The interface it implements                                                         |
+| `Char`      | `UInt16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`                  |
+| `Byte`      | `Char`, `UInt16`, `Int16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double` |
+| `SByte`     | `Int16`, `Int32`, `Int64`, `Single`, `Double`                                       |
+| `UInt16`    | `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`                            |
+| `Int16`     | `Int32`, `Int64`, `Single`, `Double`                                                |
+| `UInt32`    | `UInt64`, `Int64`, `Single`, `Double`                                               |
+| `Int32`     | `Int64`, `Single`, `Double`                                                         |
+| `UInt64`    | `Single`, `Double`                                                                  |
+| `Int64`     | `Single`, `Double`                                                                  |
+| `Single`    | `Double`                                                                            |
+| Nonreference type | Reference type                                                                |
 
 The <xref:System.Type> class has `Get` methods that use parameters of type `Binder` to resolve references to a particular member. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>, and <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> search for a particular member of the current type by providing signature information for that member. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> and <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType> are called back on to select the given signature information of the appropriate methods.
 

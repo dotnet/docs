@@ -29,13 +29,13 @@ This topic describes various properties in different areas of the Windows Commun
 
  Typically, when writing the application and debugging it, you set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` in the configuration file or programmatically. This instructs WCF to return service exception stack traces to the client application for viewing. This feature reports most application-level exceptions in such a way as to display which quota settings might be involved, if that is the problem.
 
- Some exceptions happen at run time below the visibility of the application layer and are not returned using this mechanism, and they might not be handled by a custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=nameWithType> implementation. If you are in a development environment like Microsoft Visual Studio, most of these exceptions are displayed automatically. However, some exceptions can be masked by development environment settings such as [Just My Code](/visualstudio/debugger/just-my-code) Visual Studio.
+ Some exceptions happen at runtime below the visibility of the application layer and are not returned using this mechanism, and they might not be handled by a custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=nameWithType> implementation. If you are in a development environment like Microsoft Visual Studio, most of these exceptions are displayed automatically. However, some exceptions can be masked by development environment settings such as [Just My Code](/visualstudio/debugger/just-my-code) Visual Studio.
 
  Regardless of the capabilities of your development environment, you can use capabilities of WCF tracing and message logging to debug all exceptions and tune the performance of your applications. For more information, see [Using Tracing to Troubleshoot Your Application](./diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
 
 ## Performance Issues and XmlSerializer
 
- Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.
+ Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance.
 
 > [!NOTE]
 > Pre-generated serialization code can be used only in client applications and not in services.

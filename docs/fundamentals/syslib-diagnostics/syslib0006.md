@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0006: Thread.Abort is not supported
 
-The following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0006` at compile time and a <xref:System.PlatformNotSupportedException> at run time.
+The following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0006` at compile time and a <xref:System.PlatformNotSupportedException> at runtime.
 
 - <xref:System.Threading.Thread.Abort?displayProperty=nameWithType>
 - <xref:System.Threading.Thread.Abort(System.Object)?displayProperty=nameWithType>

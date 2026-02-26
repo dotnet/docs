@@ -1,11 +1,11 @@
 ---
 title: dotnet new list
 description: The dotnet new list command lists available templates.
-ms.date: 04/29/2021
+ms.date: 10/28/2025
 ---
 # dotnet new list
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -27,7 +27,7 @@ The `dotnet new list` command lists available templates to use with `dotnet new`
 Starting with .NET SDK 7.0.100, the `list` command might not show all the templates installed on the machine. It takes the result of template constraints into account, and the templates that can't be used won't be shown. To force show all the templates, use the `--ignore-constraints` option.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -75,9 +75,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
-
-  Prints out help for the list command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--ignore-constraints`**
 
@@ -106,9 +104,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
   
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 

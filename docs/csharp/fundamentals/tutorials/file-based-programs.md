@@ -1,25 +1,20 @@
 ---
 title: Build file-based apps
 description: File-based apps are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
-ms.date: 08/14/2025
+ms.date: 01/12/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
-#customer intent: As a developer, I want build utilities so that more work is automated.
+#customer intent: As a developer, I want to build utilities so that more work is automated.
 ---
 
 # Tutorial: Build file-based C# programs
 
-> [!IMPORTANT]
-> File-based apps are a feature of .NET 10, which is in preview.
-> Some information relates to prerelease product that might be modified before release. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) directives.
-
+*File-based apps* are programs contained within a single `*.cs` file that you build and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, you can run file-based apps by using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md).
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> * Create a file-based program.
+> * Create a file-based app.
 > * Add Unix shebang (`#!`) support.
 > * Read command line arguments.
 > * Handle standard input.
@@ -28,15 +23,15 @@ In this tutorial, you:
 > * Use parsed command line results.
 > * Test the final application.
 
-You build a file-based program that writes text as ASCII art. The app is contained in a single file, uses NuGet packages that implement some of the core features.
+You build a file-based app that writes text as ASCII art. The app is contained in a single file, uses NuGet packages, and implements core features.
 
 ## Prerequisites
 
-- The .NET 10 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
+- The .NET 10 SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
 - Visual Studio Code. Download it from the [Visual Studio Code homepage](https://code.visualstudio.com/Download).
 - (Optional) The C# DevKit extension for Visual Studio Code. Download it from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-## Create a file-based program
+## Create a file-based app
 
 1. Open Visual Studio Code and create a new file named `AsciiArt.cs`. Enter the following text:
 
@@ -47,18 +42,18 @@ You build a file-based program that writes text as ASCII art. The app is contain
 1. Save the file. Then, open the integrated terminal in Visual Studio Code and type:
 
    ```dotnetcli
-   dotnet run AsciiArt.cs
+   dotnet AsciiArt.cs
    ```
 
-The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, then runs the created executable. You can verify this experience by typing `dotnet run AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current, and runs the executable without building it again. You don't see any build output.
+The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, and then runs the created executable. You can verify this experience by typing `dotnet AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current and runs the executable without building it again. You don't see any build output.
 
-The preceding steps demonstrate that file-based apps aren't script files. They're C# source files that are built using a generated project file in a temporary folder. One of the lines of output displayed when you built the program should look something like this (on Windows):
+The preceding steps demonstrate that file-based apps aren't script files. They're C# source files that the `dotnet` host builds by using a generated project file in a temporary folder. One of the lines of output displayed when you build the program should look something like this (on Windows):
 
 ```dotnetcli
 AsciiArt succeeded (7.3s) → AppData\Local\Temp\dotnet\runfile\AsciiArt-85c58ae0cd68371711f06f297fa0d7891d0de82afde04d8c64d5f910ddc04ddc\bin\debug\AsciiArt.dll
 ```
 
-On unix platforms, the output folder is something similar to:
+On Unix platforms, the output folder is something similar to:
 
 ```dotnetcli
 AsciiArt succeeded (7.3s) → Library/Application Support/dotnet/runfile/AsciiArt-85c58ae0cd68371711f06f297fa0d7891d0de82afde04d8c64d5f910ddc04ddc/bin/debug/AsciiArt.dll
@@ -66,15 +61,15 @@ AsciiArt succeeded (7.3s) → Library/Application Support/dotnet/runfile/AsciiAr
 
 That output tells you where the temporary files and build outputs are placed. Throughout this tutorial, anytime you edit the source file, the `dotnet` host updates the executable before it runs.
 
-File-based apps are regular C# programs. The only limitation is that they must be written in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file-based program the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file-based program is growing too large for a single file, you can convert it to a project based program and split the source into multiple files. File-based apps are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
+File-based apps are regular C# programs. The only limitation is that you must write them in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file-based app the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file-based app is growing too large for a single file, you can convert it to a project-based program and split the source into multiple files. File-based apps are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
 
 ## Unix shebang (`#!`) support
 
 > [!NOTE]
 >
-> Support for `#!` directives applies on unix platforms only. There isn't a similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet run` on the command line.
+> Support for `#!` directives applies on Unix platforms only. There's no similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet` on the command line.
 
-On unix, you can run file-based apps directly, typing the source file name on the command line instead of `dotnet run`. You need to make two changes:
+On Unix, run file-based apps directly by typing just the source file name. Instead of using `dotnet AsciiArt.cs`, type the source file name on the command line. You need to make two changes:
 
 1. Set *execute* permissions on the source file:
 
@@ -85,10 +80,16 @@ On unix, you can run file-based apps directly, typing the source file name on th
 1. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
 
    ```csharp
-   #!/usr/local/share/dotnet/dotnet run
+   #!/usr/local/share/dotnet/dotnet
    ```
 
-The location of `dotnet` can be different on different unix installations. Use the command `whence dotnet` to local the `dotnet` host in your environment.
+The location of `dotnet` can be different on different Unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
+
+Alternatively, you can use `#!/usr/bin/env dotnet` to resolve the dotnet path from the PATH environment variable automatically:
+
+```csharp
+#!/usr/bin/env dotnet
+```
 
 After making these two changes, you can run the program from the command line directly:
 
@@ -115,20 +116,20 @@ Now, write all arguments on the command line to the output.
 1. You can run this version by typing the following command:
 
    ```dotnetcli
-   dotnet run AsciiArt.cs -- This is the command line.
+   dotnet AsciiArt.cs -- This is the command line.
    ```
 
    The `--` option indicates that all following command arguments should be passed to the AsciiArt program. The arguments `This is the command line.` are passed as an array of strings, where each string is one word: `This`, `is`, `the`, `command`, and `line.`.
 
 This version demonstrates these new concepts:
 
-- The command line arguments are passed to the program using the predefined variable `args`. The `args` variable is an array of strings: `string[]`. If the length of `args` is 0, that means no arguments were provided. Otherwise, each word on the argument list is stored in the corresponding entry in the array.
+- The predefined variable `args` passes the command line arguments to the program. The `args` variable is an array of strings: `string[]`. If the length of `args` is 0, no arguments were provided. Otherwise, each word on the argument list is stored in the corresponding entry in the array.
 - The [`string.Join`](xref:System.String.Join*) method joins multiple strings into a single string, with the specified separator. In this case, the separator is a single space.
 - <xref:System.Console.WriteLine*?displayProperty=nameWithType> writes the string to the standard output console, followed by a new line.
 
 ## Handle standard input
 
-That handles command line arguments correctly. Now, add the code to handle reading input from standard input (`stdin`) instead of command line arguments.
+The preceding code handles command line arguments correctly. Now, add the code to handle reading input from standard input (`stdin`) instead of command line arguments.
 
 1. Add the following `else` clause to the `if` statement you added in the preceding code:
 
@@ -152,25 +153,25 @@ That handles command line arguments correctly. Now, add the code to handle readi
 
 1. Run the program again.
 
-   With bash:
+   By using bash:
 
    ```bash
-   cat input.txt | dotnet run AsciiArt.cs
+   cat input.txt | dotnet AsciiArt.cs
    ```
 
-   Or, with PowerShell:
+   Or, by using PowerShell:
 
    ```powershell
-   Get-Content input.txt | dotnet run AsciiArt.cs
+   Get-Content input.txt | dotnet AsciiArt.cs
    ```
 
 Now your program can accept either command line arguments or standard input.
 
-## Write ASCII Art output
+## Write ASCII art output
 
-Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file-based program, you use the `#:package` directive.
+Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file-based app, use the `#:package` directive.
 
-1. Add the following directive after the `#!` directive in your AsciiArt.cs file:
+1. Add the following directive after the `#!` directive in your `AsciiArt.cs` file:
 
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ColorfulPackage":::
 
@@ -181,11 +182,11 @@ Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuge
 
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
 
-1. Run the program, and you see ASCII art output instead of echoed text.
+1. Run the program. You see ASCII art output instead of echoed text.
 
 ## Process command options
 
-Next, let's add command line parsing. The current version writes each word as a different line of output. The command line arguments you added support two features:
+Next, add command line parsing. The current version writes each word as a different line of output. The command line arguments you add support two features:
 
 1. Quote multiple words that should be written on one line:
 
@@ -199,9 +200,9 @@ Next, let's add command line parsing. The current version writes each word as a 
    AsciiArt.cs --delay 1000
    ```
 
-Users should be able to use both arguments together.
+Users can use both arguments together.
 
-Most command line applications need to parse command line arguments to handle options, commands, and user input effectively. The [`System.CommandLine` library](../../../standard/commandline/index.md) provides comprehensive capabilities to handle commands, subcommands, options, and arguments, allowing you to concentrate on what your application does rather than the mechanics of parsing command line input.
+Most command line applications need to parse command line arguments to handle options, commands, and user input effectively. The [`System.CommandLine` library](../../../standard/commandline/index.md) provides comprehensive capabilities to handle commands, subcommands, options, and arguments. You can concentrate on what your application does rather than the mechanics of parsing command line input.
 
 The `System.CommandLine` library offers several key benefits:
 
@@ -215,7 +216,7 @@ The `System.CommandLine` library offers several key benefits:
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="CommandLinePackage":::
 
    > [!IMPORTANT]
-   > The version `2.0.0-beta6` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
+   > The version `2.0.0` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
 
 1. Add the necessary using statements at the top of your file (after the `#!` and `#:package` directives):
 
@@ -237,7 +238,7 @@ The `System.CommandLine` library offers several key benefits:
 
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ParseAndValidate":::
 
-The preceding code validates all command line arguments. If the validation fails, errors are written to the console, and the app exits.
+The preceding code validates all command line arguments. If the validation fails, the app writes errors to the console and exits.
 
 ## Use parsed command line results
 
@@ -253,9 +254,9 @@ Now, finish the app to use the parsed options and write the output. First, defin
 
 1. Create a local function to write the ASCII art with the specified delay. This function writes each message in the record with the specified delay between each message:
 
-   :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
+   :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAsciiArt":::
 
-1. Replace the `if` clause you wrote earlier with the following code that processes the command line arguments and write the output:
+1. Replace the `if` clause you wrote earlier with the following code that processes the command line arguments and writes the output:
 
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="InvokeCommand":::
 
@@ -267,10 +268,11 @@ Test the application by running several different commands. If you have trouble,
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt":::
 
-In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
+In this tutorial, you learned to build a file-based app, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on Unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
 
 ## Related content
 
+- [File-based apps reference](../../../core/sdk/file-based-apps.md)
 - [Top level statement](../program-structure/top-level-statements.md)
 - [Preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps)
 - [What's new in C# 14](../../whats-new/csharp-14.md)

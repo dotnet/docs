@@ -19,7 +19,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-- (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+- (Optional) [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 You can run the generated C# code projects with Visual Studio by pressing the <kbd>F5</kbd> key or with `dotnet run` (.NET CLI).
 

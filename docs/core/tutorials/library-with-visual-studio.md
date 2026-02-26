@@ -1,7 +1,8 @@
 ---
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
-ms.date: 03/21/2024
+ms.date: 01/13/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,35 +12,35 @@ ms.custom: vs-dotnet
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 8, it can be called by any application that targets .NET 8. This tutorial shows how to target .NET 8.
+A *class library* defines types and methods that an application calls. If the library targets .NET Standard 2.0, any .NET implementation (including .NET Framework) that supports .NET Standard 2.0 can call it. If the library targets .NET 10, any application that targets .NET 10 can call it. This tutorial shows how to target .NET 10.
 
 When you create a class library, you can distribute it as a NuGet package or as a component bundled with the application that uses it.
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 8 SDK is automatically installed when you select this workload.
+- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
 ## Create a solution
 
-Start by creating a blank solution to put the class library project in. A Visual Studio solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
+Start by creating a blank solution to hold the class library project. A Visual Studio solution serves as a container for one or more projects. Add related projects to the same solution.
 
 To create the blank solution:
 
 1. Start Visual Studio.
 
-2. On the start window, choose **Create a new project**.
+1. On the start window, choose **Create a new project**.
 
-3. On the **Create a new project** page, enter **solution** in the search box. Choose the **Blank Solution** template, and then choose **Next**.
+1. On the **Create a new project** page, enter **solution** in the search box. Choose the **Blank Solution** template, and then choose **Next**.
 
    :::image type="content" source="media/library-with-visual-studio/blank-solution.png" alt-text="Blank solution template in Visual Studio":::
 
-4. On the **Configure your new project** page, enter **ClassLibraryProjects** in the **Solution name** box. Then choose **Create**.
+1. On the **Configure your new project** page, enter **ClassLibraryProjects** in the **Solution name** box. Then choose **Create**.
 
 ## Create a class library project
 
-1. Add a new .NET class library project named "StringLibrary" to the solution.
+1. Add a new .NET class library project named **StringLibrary** to the solution.
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New Project**.
 
@@ -47,13 +48,13 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 8**, and then choose **Create**.
+   1. On the **Additional information** page, select **.NET 10**, and then choose **Create**.
 
-1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 8.0.
+1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 10.0.
 
-1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
+1. If you're using Visual Basic, clear the text in the **Default namespace** text box.
 
-   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net8.png" alt-text="Project properties for the class library":::
+   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties.png" alt-text="Project properties for the class library":::
 
    For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
 
@@ -70,9 +71,9 @@ To create the blank solution:
 
 ## Add a console app to the solution
 
-Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
+Add a console application that uses the class library. The app prompts the user to enter a string and reports whether the string begins with an uppercase character.
 
-1. Add a new .NET console application named "ShowCase" to the solution.
+1. Add a new .NET console application named **ShowCase** to the solution.
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
@@ -82,7 +83,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 8** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 10** in the **Framework** box. Then choose **Create**.
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 
@@ -115,7 +116,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
-   :::image type="content" source="media/library-with-visual-studio/run-showcase-net6.png" alt-text="Console window with ShowCase running":::
+   :::image type="content" source="media/library-with-visual-studio/run-showcase.png" alt-text="Console window with ShowCase running":::
 
 ## Additional resources
 
@@ -129,12 +130,12 @@ In this tutorial, you created a class library. In the next tutorial, you learn h
 > [!div class="nextstepaction"]
 > [Unit test a .NET class library using Visual Studio](testing-library-with-visual-studio.md)
 
-Or you can skip automated unit testing and learn how to share the library by creating a NuGet package:
+Or, you can skip automated unit testing and learn how to share the library by creating a NuGet package:
 
 > [!div class="nextstepaction"]
 > [Create and publish a package using Visual Studio](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
 
-Or learn how to publish a console app. If you publish the console app from the solution you created in this tutorial, the class library goes with it as a *.dll* file.
+Or, learn how to publish a console app. If you publish the console app from the solution you created in this tutorial, the class library goes with it as a *.dll* file.
 
 > [!div class="nextstepaction"]
 > [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)

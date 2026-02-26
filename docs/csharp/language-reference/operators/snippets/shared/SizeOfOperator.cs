@@ -20,6 +20,9 @@ public class SizeOfOperator
         unsafe
         {
             Console.WriteLine(sizeof(Point*));  // output: 8
+            Console.WriteLine(sizeof(nint));  // output: 8 on 64-bit, 4 on 32-bit
+            Console.WriteLine(sizeof(nuint)); // output: 8 on 64-bit, 4 on 32-bit
+            Console.WriteLine(sizeof(Span<int>));  // output: 16 on 64-bit, 12 on 32-bit
         }
     }
 

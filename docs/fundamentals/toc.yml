@@ -147,6 +147,21 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 11
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-11/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-11/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-11/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-11/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/11.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 10
         items:
           - name: What's new
@@ -161,7 +176,7 @@ items:
               - name: SDK
                 href: ../core/whats-new/dotnet-10/sdk.md
           - name: Breaking changes
-            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: ../core/compatibility/10.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new
@@ -255,7 +270,7 @@ items:
                     href: runtime-libraries/system-convert.md
           - name: Choose between anonymous and tuple types
             href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-          - name: Class library overview
+          - name: Core .NET libraries overview
             href: ../standard/class-library-overview.md
           - name: Supplemental API remarks
             items:
@@ -613,14 +628,11 @@ items:
                 href: ../standard/base-types/best-practices-strings.md
               - name: Displaying and persisting formatted data
                 href: ../standard/base-types/best-practices-display-data.md
-          - name: Behavior changes in .NET 5+ (Windows)
-            href: ../standard/base-types/string-comparison-net-5-plus.md
+
           - name: Basic string operations
             items:
-              - name: Overview
-                href: ../standard/base-types/basic-string-operations.md
-                displayName: string operations
               - name: Create new strings
+                displayName: string operations
                 href: ../standard/base-types/creating-new.md
               - name: Trim and remove characters
                 href: ../standard/base-types/trimming.md
@@ -1039,22 +1051,23 @@ items:
       - name: The System.Random class
         href: runtime-libraries/system-random.md
       - name: Artificial intelligence (AI)
-        displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
+        displayName: ai,microsoft.extensions.ai,ollama,openai,azure inference,ichatclient
         href: ../ai/microsoft-extensions-ai.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Dependency injection
         items:
           - name: Overview
-            href: ../core/extensions/dependency-injection.md
+            href: ../core/extensions/dependency-injection/overview.md
             displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-          - name: Dependency injection basics
-            href: ../core/extensions/dependency-injection-basics.md
-            displayName: dependency injection basics,di basics,ioc basics,ioc container basics,dependency container basics,inversion of control basics
-          - name: Use dependency injection
-            href: ../core/extensions/dependency-injection-usage.md
-            displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-          - name: Dependency injection guidelines
-            href: ../core/extensions/dependency-injection-guidelines.md
-            displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+          - name: Service registration
+            href: ../core/extensions/dependency-injection/service-registration.md
+          - name: Service lifetimes
+            href: ../core/extensions/dependency-injection/service-lifetimes.md
+          - name: "Quickstart: Dependency injection basics"
+            href: ../core/extensions/dependency-injection/basics.md
+          - name: "Tutorial: Use dependency injection"
+            href: ../core/extensions/dependency-injection/usage.md
+          - name: Guidelines
+            href: ../core/extensions/dependency-injection/guidelines.md
       - name: Configuration
         items:
           - name: Overview
@@ -1080,29 +1093,29 @@ items:
       - name: Logging
         items:
           - name: Overview
-            href: ../core/extensions/logging.md
+            href: ../core/extensions/logging/overview.md
             displayName: logging,logger,log,loggers
           - name: Logging providers
-            href: ../core/extensions/logging-providers.md
+            href: ../core/extensions/logging/providers.md
             displayName: logging providers,log providers
           - name: Compile-time logging source generation
-            href: ../core/extensions/logger-message-generator.md
+            href: ../core/extensions/logging/source-generation.md
             displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
           - name: Logging guidance for library authors
-            href: ../core/extensions/logging-library-authors.md
+            href: ../core/extensions/logging/library-guidance.md
             displayName: logging guidance,logger guidance,log guidance
           - name: Implement a custom logging provider
-            href: ../core/extensions/custom-logging-provider.md
+            href: ../core/extensions/logging/custom-provider.md
             displayName: custom logging,custom log,custom logging provider,custom log provider
           - name: High-performance logging
-            href: ../core/extensions/high-performance-logging.md
+            href: ../core/extensions/logging/high-performance-logging.md
             displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
           - name: Log Sampling
-            href: ../core/extensions/log-sampling.md
+            href: ../core/extensions/logging/log-sampling.md
           - name: Log Buffering
-            href: ../core/extensions/log-buffering.md
+            href: ../core/extensions/logging/log-buffering.md
           - name: Console log formatting
-            href: ../core/extensions/console-log-formatter.md
+            href: ../core/extensions/logging/console-log-formatter.md
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
       - name: HostBuilder (generic host)
         href: ../core/extensions/generic-host.md
@@ -1217,6 +1230,9 @@ items:
               - name: Distributed tracing
                 href: networking/telemetry/tracing.md
                 displayName: networking distributed tracing
+              - name: HTTP client logging
+                href: ../core/extensions/httpclient-logging.md
+                displayName: http client logging
               - name: Events
                 href: networking/telemetry/events.md
                 displayName: networking events
@@ -1333,12 +1349,12 @@ items:
                 href: runtime-libraries/system-resources-resourcereader.md
               - name: SatelliteContractVersionAttribute class
                 href: runtime-libraries/system-resources-satellitecontractversionattribute.md
-      - name: Worker Services
+      - name: Worker services
         items:
           - name: Overview
             displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
             href: ../core/extensions/workers.md
-          - name: Create a Queue Service
+          - name: Create a queue service
             href: ../core/extensions/queue-service.md
           - name: Use scoped services with a BackgroundService
             href: ../core/extensions/scoped-service.md
@@ -1349,7 +1365,7 @@ items:
             displayName: msi,windows service installer,setup.exe
           - name: Implement the IHostedService interface
             href: ../core/extensions/timer-service.md
-          - name: Deploy a Worker Service to Azure
+          - name: Deploy a worker service to Azure
             href: ../core/extensions/cloud-service.md
       - name: Caching
         href: ../core/extensions/caching.md
@@ -1380,6 +1396,8 @@ items:
                     href: runtime-libraries/system-type-gettype.md
                   - name: MakeGenericType method
                     href: runtime-libraries/system-type-makegenerictype.md
+              - name: The CustomReflectionContext class
+                href: runtime-libraries/system-reflection-context-customreflectioncontext.md
       - name: Graphics
         items:
           - name: Supplemental API remarks
@@ -1495,7 +1513,7 @@ items:
       - name: Reflection
         items:
           - name: Overview
-            href: reflection/reflection.md
+            href: reflection/overview.md
           - name: View type information
             href: reflection/viewing-type-information.md
           - name: Reflection and generic types
@@ -1534,7 +1552,22 @@ items:
                   - name: The AssemblyBuilder class
                     href: runtime-libraries/system-reflection-emit-assemblybuilder.md
                   - name: The DynamicMethod class
-                    href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                    items:
+                      - name: Type remarks
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                        displayName: dynamicmethod
+                      - name: CreateDelegate method
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-createdelegate.md
+                      - name: Constructors
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-ctor.md
+                      - name: GetILGenerator methods
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-getilgenerator.md
+                      - name: Invoke method
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-invoke.md
+                      - name: IsSecurity* properties
+                        href: runtime-libraries/system-reflection-emit-dynamicmethod-issecuritycritical.md
+                  - name: The DynamicILInfo class
+                    href: runtime-libraries/system-reflection-emit-dynamicilinfo.md
                   - name: The MethodBuilder class
                     href: runtime-libraries/system-reflection-emit-methodbuilder.md
                   - name: The PersistedAssemblyBuilder class

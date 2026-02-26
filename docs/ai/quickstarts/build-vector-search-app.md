@@ -4,7 +4,6 @@ description: Create an AI powered app to search and integrate with vector stores
 ms.date: 05/29/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
 # Build a .NET AI vector search app
@@ -17,13 +16,10 @@ Vector stores, or vector databases, are essential for tasks like semantic search
 
 The app uses the <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData> libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 
-[📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores. The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
+[📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library that provides a unified layer of abstractions for interacting with vector stores. The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
 
 - Perform create-read-update-delete (CRUD) operations on vector stores.
 - Use vector and text search on vector stores.
-
-> [!NOTE]
-> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
 
 <!--Prerequisites section-->
 
@@ -68,7 +64,7 @@ Complete the following steps to create a .NET console app that can:
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -90,7 +86,7 @@ Complete the following steps to create a .NET console app that can:
 
     ```bash
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -157,7 +153,7 @@ Complete the following steps to create a .NET console app that can:
     :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -191,7 +187,7 @@ Complete the following steps to create a .NET console app that can:
 
 If you no longer need them, delete the Azure OpenAI resource and model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
@@ -199,4 +195,4 @@ If you no longer need them, delete the Azure OpenAI resource and model deploymen
 ## Next steps
 
 - [Quickstart - Chat with a local AI model](chat-local-model.md)
-- [Generate images using AI with .NET](generate-images.md)
+- [Generate images from text using AI](text-to-image.md)

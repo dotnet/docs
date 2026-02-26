@@ -1,9 +1,8 @@
 ---
 title: .NET Generic Host
-author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
-ms.author: dapine
-ms.date: 09/11/2024
+ms.date: 02/04/2026
+ai-usage: ai-assisted
 ---
 
 # .NET Generic Host
@@ -21,6 +20,16 @@ A *host* is an object that encapsulates an app's resources and lifetime function
 When a host starts, it calls <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A?displayProperty=nameWithType> on each implementation of <xref:Microsoft.Extensions.Hosting.IHostedService> registered in the service container's collection of hosted services. In a worker service app, all `IHostedService` implementations that contain <xref:Microsoft.Extensions.Hosting.BackgroundService> instances have their <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=nameWithType> methods called.
 
 The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown.
+
+## Host builder options
+
+.NET provides two approaches for configuring and building a Generic Host:
+
+- <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder> (`Host.CreateApplicationBuilder`): Introduced in .NET 6, this approach uses a linear, property-based configuration style. Services, configuration, and logging are configured by directly accessing properties on the builder object (for example, `builder.Services`, `builder.Configuration`). This approach is recommended for new projects and is the default in current .NET templates.
+
+- <xref:Microsoft.Extensions.Hosting.IHostBuilder> (`Host.CreateDefaultBuilder`): This is the traditional callback-based approach where configuration is done through chained extension methods (for example, `ConfigureServices`, `ConfigureAppConfiguration`). While fully supported, this legacy approach works best for maintaining compatibility with existing codebases.
+
+Both approaches provide the same core functionality and default behaviors. Choose `IHostApplicationBuilder` for new projects to align with modern .NET patterns and simpler configuration code. Use `IHostBuilder` when maintaining existing applications or when third-party libraries require the callback-based pattern.
 
 ## Set up a host
 
@@ -225,7 +234,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
+App configuration is accessed through the public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property. This property allows consumers to read from or make changes to the existing configuration using available extension methods.
 
 # [IHostBuilder](#tab/hostbuilder)
 
@@ -322,8 +331,8 @@ To ensure a smooth transition of clients to a new destination when working with 
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
-- [Logging in .NET](logging.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
+- [Logging in .NET](logging/overview.md)
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)

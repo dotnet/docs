@@ -59,6 +59,12 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
+1. Change directory into the app folder:
+
+    ```dotnetcli
+    cd LocalAI
+    ```
+
 1. Add the [OllamaSharp](https://www.nuget.org/packages/OllamaSharp) package to your app:
 
     ```dotnetcli
@@ -73,7 +79,7 @@ Complete the following steps to create a .NET console app that connects to your 
 
 ## Connect to and chat with the AI model
 
-The Semantic Kernel SDK provides many services and features to connect to AI models and manage interactions. In the steps ahead, you'll create a simple app that connects to the local AI and stores conversation history to improve the chat experience.
+In the steps ahead, you'll create a simple app that connects to the local AI and stores conversation history to improve the chat experience.
 
 1. Open the _Program.cs_ file and replace the contents of the file with the following code:
 

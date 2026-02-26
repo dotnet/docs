@@ -10,14 +10,14 @@ ms.assetid: 1d26e0fb-f6e0-4afa-9a9c-b8d55b8f20dc
 
 # Viewing Data in a DataTable
 
-You can access the contents of a <xref:System.Data.DataTable> by using the **Rows** and **Columns** collections of the **DataTable**. You can also use the <xref:System.Data.DataTable.Select%2A> method to return subsets of the data in a **DataTable** according to criteria including search criteria, sort order, and row state. Additionally, you can use the <xref:System.Data.DataRowCollection.Find%2A> method of the **DataRowCollection** when searching for a particular row using a primary key value.
+You can access the contents of a <xref:System.Data.DataTable> by using the `Rows` and `Columns` collections of the **DataTable**. You can also use the <xref:System.Data.DataTable.Select%2A> method to return subsets of the data in a `DataTable` according to criteria including search criteria, sort order, and row state. Additionally, you can use the <xref:System.Data.DataRowCollection.Find%2A> method of the `DataRowCollection` when searching for a particular row using a primary key value.
 
-The **Select** method of the **DataTable** object returns a set of <xref:System.Data.DataRow> objects that match the specified criteria. **Select** takes optional arguments of a filter expression, sort expression, and **DataViewRowState**. The filter expression identifies which rows to return based on **DataColumn** values, such as `LastName = 'Smith'`. The sort expression follows standard SQL conventions for ordering columns, for example `LastName ASC, FirstName ASC`. For rules about writing expressions, see the <xref:System.Data.DataColumn.Expression%2A> property of the **DataColumn** class.
+The `Select` method of the `DataTable` object returns a set of <xref:System.Data.DataRow> objects that match the specified criteria. `Select` takes optional arguments of a filter expression, sort expression, and **DataViewRowState**. The filter expression identifies which rows to return based on `DataColumn` values, such as `LastName = 'Smith'`. The sort expression follows standard SQL conventions for ordering columns, for example `LastName ASC, FirstName ASC`. For rules about writing expressions, see the <xref:System.Data.DataColumn.Expression%2A> property of the `DataColumn` class.
 
 > [!TIP]
-> If you are performing a number of calls to the **Select** method of a **DataTable**, you can increase performance by first creating a <xref:System.Data.DataView> for the **DataTable**. Creating the **DataView** indexes the rows of the table. The **Select** method then uses that index, significantly reducing the time to generate the query result. For information about creating a **DataView** for a **DataTable**, see [DataViews](dataviews.md).
+> If you are performing a number of calls to the `Select` method of a **DataTable**, you can increase performance by first creating a <xref:System.Data.DataView> for the **DataTable**. Creating the `DataView` indexes the rows of the table. The `Select` method then uses that index, significantly reducing the time to generate the query result. For information about creating a `DataView` for a **DataTable**, see [DataViews](dataviews.md).
 
-The **Select** method determines which version of the rows to view or manipulate based on a <xref:System.Data.DataViewRowState>. The following table describes the possible **DataViewRowState** enumeration values.
+The `Select` method determines which version of the rows to view or manipulate based on a <xref:System.Data.DataViewRowState>. The following table describes the possible `DataViewRowState` enumeration values.
 
 |DataViewRowState value|Description|
 |----------------------------|-----------------|
@@ -30,7 +30,7 @@ The **Select** method determines which version of the rows to view or manipulate
 |**OriginalRows**|Original rows, including unchanged and deleted rows.|
 |**Unchanged**|An unchanged row.|
 
-In the following example, the **DataSet** object is filtered so that you are only working with rows whose **DataViewRowState** is set to **CurrentRows**.
+In the following example, the `DataSet` object is filtered so that you are only working with rows whose `DataViewRowState` is set to **CurrentRows**.
 
 ```vb
 Dim column As DataColumn
@@ -83,7 +83,7 @@ else
 }
 ```
 
-The **Select** method can be used to return rows with differing **RowState** values or field values. The following example returns a **DataRow** array that references all rows that have been deleted, and returns another **DataRow** array that references all rows, ordered by **CustLName**, where the **CustID** column is greater than 5. For information about how to view the information in the **Deleted** row, see [Row States and Row Versions](row-states-and-row-versions.md).
+The `Select` method can be used to return rows with differing `RowState` values or field values. The following example returns a `DataRow` array that references all rows that have been deleted, and returns another `DataRow` array that references all rows, ordered by **CustLName**, where the `CustID` column is greater than 5. For information about how to view the information in the `Deleted` row, see [Row States and Row Versions](row-states-and-row-versions.md).
 
 ```vb
 ' Retrieve all deleted rows.

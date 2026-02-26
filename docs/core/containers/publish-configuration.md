@@ -304,7 +304,7 @@ The `ContainerDefaultArgs` configuration has a single `Include` property, which 
 
 ### `ContainerEnvironmentVariable`
 
-The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the app running in the container immediately, and are often used to change the run-time behavior of the running app.
+The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the app running in the container immediately, and are often used to change the runtime behavior of the running app.
 
 The `ContainerEnvironmentVariable` node has two attributes:
 

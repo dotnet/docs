@@ -17,7 +17,7 @@ These are among the subtlest and hardest security bugs to find because, although
 
 Some important considerations involving user data include the following:
 
-- Any user data in a server response runs in the context of the server's site on the client. If your Web server takes user data and inserts it into the returned Web page, it might, for example, include a **\<script>** tag and run as if from the server.
+- Any user data in a server response runs in the context of the server's site on the client. If your Web server takes user data and inserts it into the returned Web page, it might, for example, include a `<script>` tag and run as if from the server.
 
 - Remember that the client can request any URL.
 

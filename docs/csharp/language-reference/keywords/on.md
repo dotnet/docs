@@ -1,23 +1,22 @@
 ---
 description: "on keyword - C# Reference"
 title: "on keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "on_CSharpKeyword"
   - "on"
 helpviewer_keywords: 
   - "on keyword [C#]"
-ms.assetid: 06abc536-e07c-4e34-88c1-425208bdcb21
 ---
 # on (C# Reference)
 
-The `on` contextual keyword is used in the [join clause](join-clause.md) of a query expression to specify the join condition.
+Use the `on` contextual keyword in the [join clause](join-clause.md) of a query expression to specify the join condition.
 
-## Example
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows the use of `on` in a `join` clause.
+The following example shows how to use `on` in a `join` clause.
 
-[!code-csharp[csrefKeywordsContextual#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#12)]
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="12":::
 
 ## See also
 

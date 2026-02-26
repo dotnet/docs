@@ -1,9 +1,7 @@
 ---
 title: Service discovery in .NET
 description: Learn how to use the Microsoft.Extensions.ServiceDiscovery library to simplify the integration of service discovery patterns in .NET applications.
-author: IEvangelist
-ms.author: dapine
-ms.date: 04/10/2024
+ms.date: 10/20/2025
 ms.topic: overview
 ---
 
@@ -18,20 +16,19 @@ To get started with service discovery in .NET, install the [Microsoft.Extensions
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet add package Microsoft.Extensions.ServiceDiscovery
 ```
 
 Or, if you're using .NET 10+ SDK:
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet package add Microsoft.Extensions.ServiceDiscovery
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.ServiceDiscovery"
-                  Version="[SelectVersion]" />
+<PackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
 ```
 
 ---
@@ -119,12 +116,12 @@ The configuration resolver is configured using the <xref:Microsoft.Extensions.Se
 
 - **ApplyHostNameMetadata**: A delegate used to determine if host name metadata should be applied to resolved endpoints. It defaults to a function that returns `false`.
 
-To configure these options, you can use the `Configure` extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
+To configure these options, you can call the <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*> extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
+builder.Services.Configure<ConfigurationServiceEndpointProviderOptions>(
     static options =>
     {
         options.SectionName = "MyServiceEndpoints";

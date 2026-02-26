@@ -58,12 +58,397 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/10.0.md",
+            "redirect_url": "/dotnet/core/compatibility/10",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/apidescription-client-deprecated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/apidescription-client-deprecated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/cookie-authentication-api-endpoints.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/cookie-authentication-api-endpoints"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/exception-handler-diagnostics-suppressed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/iactioncontextaccessor-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/iactioncontextaccessor-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/ipnetwork-knownnetworks-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/ipnetwork-knownnetworks-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/openapi-analyzers-deprecated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/openapi-analyzers-deprecated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/razor-runtime-compilation-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/razor-runtime-compilation-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/webhostbuilder-deprecated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/webhostbuilder-deprecated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/10/withopenapi-deprecated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/10/withopenapi-deprecated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/authentication-aad-packages-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/authentication-aad-packages-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/authorization-resource-in-endpoint-routing.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/authorization-resource-in-endpoint-routing"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/azure-integration-packages-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/azure-integration-packages-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-browser-support-updated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-browser-support-updated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-components-trim-insignificant-whitespace"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-jsobjectreference-to-internal.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-jsobjectreference-to-internal"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-packages-target-framework-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-packages-target-framework-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-protectedbrowserstorage-moved"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-rendertreeframe-fields-become-properties"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-routing-logic-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-routing-logic-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/blazor-static-web-assets-validation-logic-updated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/extensions-package-reference-changes.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/extensions-package-reference-changes"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/http-badhttprequestexception-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/http-badhttprequestexception-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/http-httpclient-instances-log-integer-status-codes"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/httpsys-client-certificate-renegotiation-disabled-by-default"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/iis-urlrewrite-middleware-query-strings-are-preserved"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/kestrel-configuration-changes-at-run-time-detected-by-default"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/kestrel-default-supported-tls-protocol-versions-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/kestrel-disables-http2-over-tls.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/kestrel-disables-http2-over-tls"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/kestrel-libuv-transport-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/kestrel-libuv-transport-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/localization-members-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/localization-members-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/localization-pubternal-apis-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/localization-pubternal-apis-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/localization-requestlocalizationmiddleware-constructor-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/middleware-database-error-page-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/middleware-database-error-page-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/middleware-exception-handler-throws-original-exception"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/mvc-objectmodelvalidator-calls-new-overload"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/security-cookie-name-encoding-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/security-cookie-name-encoding-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/security-identitymodel-nuget-package-versions-updated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/signalr-messagepack-hub-protocol-options-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/signalr-messagepack-package.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/signalr-messagepack-package"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/signalr-usesignalr-useconnections-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/5.0/static-files-csv-content-type-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/5/static-files-csv-content-type-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/actionresult-statuscode.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/actionresult-statuscode"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/adddataannotationsvalidation-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/adddataannotationsvalidation-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/assemblies-removed-from-shared-framework.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/assemblies-removed-from-shared-framework"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-eventargstype-property-replaced.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/blazor-eventargstype-property-replaced"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-parameter-name-changed-in-method.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/blazor-parameter-name-changed-in-method"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/byte-array-interop.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/byte-array-interop"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/clientcertificate-doesnt-trigger-renegotiation"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/endpointname-metadata.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/endpointname-metadata"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/iasyncenumerable-not-buffered-by-mvc"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/identity-bootstrap4-to-5.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/identity-bootstrap4-to-5"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/kestrel-log-message-attributes-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/kestrel-log-message-attributes-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/messagepack-library-change.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/messagepack-library-change"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/microsoft-aspnetcore-http-features-package-split.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/microsoft-aspnetcore-http-features-package-split"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/middleware-ambiguous-https-ports-exception"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/middleware-new-use-overload.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/middleware-new-use-overload"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/nullable-reference-type-annotations-changed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/nullable-reference-type-annotations-changed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/obsolete-removed-apis.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/obsolete-removed-apis"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/preservecompilationcontext-not-set-by-default"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/razor-compiler-doesnt-produce-views-assembly"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/razor-engine-apis-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/razor-engine-apis-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/razor-pages-logging-ids.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/razor-pages-logging-ids"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/rc1-minimal-api-renames.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/rc1-minimal-api-renames"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/rc2-minimal-api-renames.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/rc2-minimal-api-renames"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/signalr-java-client-updated.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/signalr-java-client-updated"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/tryparse-bindasync-validation.md",
+            "redirect_url": "/aspnet/core/breaking-changes/6/tryparse-bindasync-validation"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/api-controller-action-parameters-di.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/api-controller-action-parameters-di"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/authenticateasync-anonymous-request.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/authenticateasync-anonymous-request"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/default-authentication-scheme.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/default-authentication-scheme"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/environment-variable-precedence.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/environment-variable-precedence"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/fallback-file-endpoints.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/fallback-file-endpoints"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/https-binding-kestrel.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/https-binding-kestrel"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/iendpointmetadataprovider-changes.md",
             "redirect_url": "/dotnet/core/compatibility/7.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/ihubclients-ihubcallerclients.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/ihubclients-ihubcallerclients"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/libuv-transport-dll-removed.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/libuv-transport-dll-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/microsoft-aspnetcore-mvc-core-log-event-ids"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/microsoft-data-sqlclient-updated-to-4-0-1"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/middleware-null-requestdelegate.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/middleware-null-requestdelegate"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/mvc-empty-body-model-binding.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/mvc-empty-body-model-binding"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/output-caching-renames.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/output-caching-renames"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/signalr-hub-method-parameters-di.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/signalr-hub-method-parameters-di"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/wasm-app-authentication.md",
+            "redirect_url": "/aspnet/core/breaking-changes/7/wasm-app-authentication"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/addratelimiter-requirement.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/addratelimiter-requirement"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/antiforgery-checks.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/antiforgery-checks"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/concurrencylimitermiddleware-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/forwarded-headers-unknown-proxies.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/forwarded-headers-unknown-proxies"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/httplogging-addhttplogging-requirement.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/httplogging-addhttplogging-requirement"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/isystemclock-obsolete.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/isystemclock-obsolete"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/problemdetails-custom-converters.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/problemdetails-custom-converters"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/securitytoken-events.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/securitytoken-events"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/8.0/trimmode-full.md",
+            "redirect_url": "/aspnet/core/breaking-changes/8/trimmode-full"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/9.0/certificate-export.md",
+            "redirect_url": "/aspnet/core/breaking-changes/9/certificate-export"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/9.0/hostbuilder-validation.md",
+            "redirect_url": "/aspnet/core/breaking-changes/9/hostbuilder-validation"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/9.0/key-resolution.md",
+            "redirect_url": "/aspnet/core/breaking-changes/9/key-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/9.0/legacy-apis.md",
+            "redirect_url": "/aspnet/core/breaking-changes/9/legacy-apis"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/9.0/middleware-constructors.md",
+            "redirect_url": "/aspnet/core/breaking-changes/9/middleware-constructors"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/aspnetcore.md",
@@ -112,6 +497,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/optimizeforreading-arg.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/10.0/ymm-embedded-rounding.md",
+            "redirect_url": "/dotnet/core/compatibility/10"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/corefx.md",
@@ -181,7 +570,7 @@
         },
         {
             "source_path_from_root": "/docs/core/compatibility/networking/10.0/ssl-certificate-revocation-check-default.md",
-            "redirect_url": "/dotnet/core/compatibility/10.0"
+            "redirect_url": "/dotnet/core/compatibility/10"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
@@ -198,6 +587,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/10.0/version-requirements.md",
+            "redirect_url": "/dotnet/core/compatibility/10"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",
@@ -745,12 +1138,68 @@
             "redirect_url": "/dotnet/core/whats-new/dotnet-5"
         },
         {
+            "source_path_from_root": "/docs/core/enrichment/application-metadata.md",
+            "redirect_url": "/dotnet/core/diagnostics/ambient-metadata/application-metadata"
+        },
+        {
             "source_path_from_root": "/docs/core/extensions/artificial-intelligence.md",
             "redirect_url": "/dotnet/ai/microsoft-extensions-ai"
         },
         {
             "source_path_from_root": "/docs/core/extensions/culture-insensitive-string-operations.md",
             "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-basics.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/basics"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-guidelines.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/guidelines"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/dependency-injection-usage.md",
+            "redirect_url": "/dotnet/core/extensions/dependency-injection/usage"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/high-performance-logging.md",
+            "redirect_url": "/dotnet/core/extensions/logging/high-performance-logging"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/console-log-formatter.md",
+            "redirect_url": "/dotnet/core/extensions/logging/console-log-formatter"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/custom-logging-provider.md",
+            "redirect_url": "/dotnet/core/extensions/logging/custom-provider"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/logging-library-authors.md",
+            "redirect_url": "/dotnet/core/extensions/logging/library-guidance"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/log-buffering.md",
+            "redirect_url": "/dotnet/core/extensions/logging/log-buffering"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/log-sampling.md",
+            "redirect_url": "/dotnet/core/extensions/logging/log-sampling"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/logging.md",
+            "redirect_url": "/dotnet/core/extensions/logging/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/logging-providers.md",
+            "redirect_url": "/dotnet/core/extensions/logging/providers"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/logger-message-generator.md",
+            "redirect_url": "/dotnet/core/extensions/logging/source-generation"
         },
         {
             "source_path_from_root": "/docs/core/getting-started.md",
@@ -940,7 +1389,7 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-install.md",
-            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-overview"
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/overview"
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/csproj.md",
@@ -1136,6 +1585,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-samples.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-mstest-getting-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-intro.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-mstest-running-tests",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-writing-tests-attributes.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-mstest-writing-tests",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-design.md",
             "redirect_url": "/dotnet/core/testing/mstest-analyzers/design-rules",
             "redirect_document_id": true
@@ -1218,6 +1682,14 @@
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-runsettings.md",
             "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions-vstest-bridge#runsettings-support",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-copilot.md",
+            "redirect_url": "/visualstudio/ide/copilot-chat-context#slash-commands"
+        },
+        {
+            "source_path_from_root": "/docs/core/additional-tools/xml-serializer-generator.md",
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/xml-serializer-generator"
         },
         {
             "source_path_from_root": "/docs/core/tools/cli-msbuild-architecture.md",
@@ -1386,7 +1858,7 @@
         },
         {
             "source_path_from_root": "/docs/core/whats-new/index.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-10/overview",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-11/overview",
             "ms.custom": "updateeachrelease"
         },
         {

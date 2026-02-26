@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 ---
-# \<AppContextSwitchOverrides> element
+# `<AppContextSwitchOverrides>` element
 
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<AppContextSwitchOverrides>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<AppContextSwitchOverrides>`
 
 ## Syntax
 
@@ -61,6 +61,8 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 | Switch name | Description | Introduced |
 |-------------|-------------|------------|
 |`Switch.MS.Internal.`<br/>`DoNotApplyLayoutRoundingToMarginsAndBorderThickness`|Controls whether Windows Presentation Foundation uses legacy a algorithm for control layout. For more information, see [Mitigation: WPF Layout](../../../migration-guide/mitigation-wpf-layout.md).|.NET Framework 4.6|
+| `Switch.MS.Internal.`<br/>`EnableCleanupSchedulingImprovements` | When set to `true`, improves the cleanup scheduling behavior of the weak-event pattern. | |
+| `Switch.MS.Internal.`<br/>`EnableWeakEventMemoryImprovements` | When set to `true`, improves the memory allocation behavior of the weak-event pattern. | |
 |`Switch.MS.Internal.`<br/>`UseSha1AsDefaultHashAlgorithmForDigitalSignatures`|Controls whether the default algorithm used for signing parts of a package by PackageDigitalSignatureManager is SHA1 or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
 |`Switch.System.Activities.`<br/>`UseMD5CryptoServiceProviderForWFDebugger`|When set to `false`, allows debugging of XAML-based workflow projects with Visual Studio when FIPS is enabled. Without it, a <xref:System.NullReferenceException> is thrown in calls to methods in the System.Activities assembly.|.NET Framework 4.7|
 |`Switch.System.Activities.`<br/>`UseMD5ForWFDebugger`|Controls whether the checksum for a workflow instance in the debugger uses MD5 or SHA1. | .NET Framework 4.7|
@@ -180,5 +182,5 @@ The following example uses the `<add>` element to add two settings to the `<appS
 - [Configure apps by using configuration files](../../index.md)
 - [Mitigate new behaviors in .NET Framework 4.6 and later](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>
-- [\<runtime> Element](runtime-element.md)
-- [\<configuration> Element](../configuration-element.md)
+- [`<runtime>` Element](runtime-element.md)
+- [`<configuration>` Element](../configuration-element.md)

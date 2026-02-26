@@ -16,9 +16,9 @@ The following remoting APIs are marked obsolete.
 | <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=nameWithType> | 5.0 RC1 |
 | <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=nameWithType> | 5.0 RC1 |
 
-In .NET Framework 2.x - 4.x, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods control the lifetime of instances involved with .NET remoting. In .NET Core 2.x- 3.x, these methods always throw a <xref:System.PlatformNotSupportedException> at run time.
+In .NET Framework 2.x - 4.x, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods control the lifetime of instances involved with .NET remoting. In .NET Core 2.x- 3.x, these methods always throw a <xref:System.PlatformNotSupportedException> at runtime.
 
-In .NET 5 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at run time.
+In .NET 5 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at runtime.
 
 ```csharp
 // MemoryStream, like all Stream instances, subclasses MarshalByRefObject.
@@ -27,7 +27,7 @@ MemoryStream stream = new MemoryStream();
 obj.InitializeLifetimeService();
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core.
+This is a compile-time only change. There is no runtime change from previous versions of .NET Core.
 
 ## Reason for change
 
@@ -65,7 +65,7 @@ To help steer developers away from these APIs, we are obsoleting selected remoti
   </Project>
   ```
 
-  Suppressing `SYSLIB0010` disables only the remoting API obsoletion warnings. It does not disable any other warnings. Additionally, it doesn't change the hardcoded run-time behavior of always throwing <xref:System.PlatformNotSupportedException>.
+  Suppressing `SYSLIB0010` disables only the remoting API obsoletion warnings. It does not disable any other warnings. Additionally, it doesn't change the hardcoded runtime behavior of always throwing <xref:System.PlatformNotSupportedException>.
 
 ## Affected APIs
 

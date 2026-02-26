@@ -79,7 +79,7 @@ By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithT
 
 You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it isn't ordinal.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
+For more information, see [Best practices for comparing strings in .NET](../../standard/base-types/best-practices-strings.md).
 
 #### String.EndsWith
 
@@ -180,7 +180,7 @@ Using ICU instead of NLS might result in behavioral differences with some global
 - By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to the value `true` or `1`.
 
 > [!NOTE]
-> A value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
+> In .NET 9 and later versions, an environment variable setting takes precedence. In previous versions, a value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
 
 For more information, see [Runtime config settings](../../core/runtime-config/globalization.md#nls).
 

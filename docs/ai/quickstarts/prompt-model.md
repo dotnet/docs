@@ -1,10 +1,9 @@
 ---
 title: Quickstart - Connect to and prompt an AI model with .NET
 description: Create a simple chat app using Microsoft.Extensions.AI to summarize a text.
-ms.date: 05/02/2025
+ms.date: 11/20/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
 # Connect to and prompt an AI model
@@ -22,8 +21,6 @@ In this quickstart, you learn how to create a .NET console chat app to connect t
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
-
-[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 ## Create the app
 
@@ -103,7 +100,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
    :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" id="CreateChatClient":::
 
    > [!NOTE]
-   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
 
    :::zone-end
 
@@ -135,7 +132,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end

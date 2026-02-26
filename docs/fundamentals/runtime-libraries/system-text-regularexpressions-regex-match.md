@@ -15,7 +15,7 @@ You can optionally specify a starting position in the string by using the `start
 
 Although the regular expression engine doesn't return any match starting before `startat`, it doesn't ignore the string before `startat`. This means that assertions such as [anchors](../../standard/base-types/anchors-in-regular-expressions.md) or [lookbehind assertions](../../standard/base-types/backtracking-in-regular-expressions.md#lookbehind-assertions) still apply to the input as a whole. For example, the following code includes a pattern with a lookbehind assertion that's satisfied even though it occurs before the `startat` index of 5 in the input string.
 
-:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Match/csharp/startat.cs" interactive="try-dotnet":::
+:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Match/csharp/startat.cs":::
 
 > [!TIP]
 >
@@ -39,7 +39,7 @@ You can determine whether the regular expression pattern has been found in the i
 
 ## First or multiple matches
 
-This method returns the first substring found at or after the `startat` character position in `input` that matches the regular expression pattern. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method. You can also retrieve all matches in a single method call by calling the <xref:System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)?displayProperty=nameWithType> method.
+This method returns the first substring found at or after the `startat` character position in `input` that matches the regular expression pattern. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch*?displayProperty=nameWithType> method. You can also retrieve all matches in a single method call by calling the <xref:System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)?displayProperty=nameWithType> method.
 
 ## Time-out exceptions
 

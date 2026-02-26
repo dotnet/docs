@@ -2,7 +2,7 @@
 title: The JournaledGrain API
 description: Learn the concepts of the JournaledGrain API in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # JournaledGrain basics
@@ -27,7 +27,8 @@ int Version { get; }
 
 The version number always equals the total number of confirmed events, and the state is the result of applying all confirmed events to the initial state. The default constructor of the `GrainState` class determines the initial state, which has version 0 (because no events have been applied to it).
 
-_Important:_ Your application should never directly modify the object returned by `State`. It's meant for reading only. When your application needs to modify the state, it must do so indirectly by raising events.
+> [!IMPORTANT]
+> Never directly modify the object returned by <xref:Orleans.EventSourcing.JournaledGrain%602.State>. It's meant for reading only. When your application needs to modify the state, do so indirectly by raising events.
 
 ## Raise events
 
@@ -43,7 +44,7 @@ RaiseEvent(new PostedEvent()
 });
 ```
 
-Note that `RaiseEvent` initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
+Note that <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
 
 ```csharp
 RaiseEvent(new DepositTransaction()
@@ -54,7 +55,7 @@ RaiseEvent(new DepositTransaction()
 await ConfirmEvents();
 ```
 
-Note that even if you don't explicitly call `ConfirmEvents`, the events eventually get confirmed automatically in the background.
+Note that even if you don't explicitly call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>, the events eventually get confirmed automatically in the background.
 
 ## State transition methods
 
@@ -95,7 +96,7 @@ Some providers, like the <xref:Orleans.EventSourcing.LogStorage> log-consistency
 
 ## Raise multiple events
 
-You can make multiple calls to `RaiseEvent` before calling `ConfirmEvents`:
+You can make multiple calls to <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> before calling <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>:
 
 ```csharp
 RaiseEvent(e1);

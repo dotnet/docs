@@ -13,7 +13,7 @@ This tutorial explores integration of the RAG pattern using Open AI models and v
 
 ## Prerequisites
 
-- [.NET 8.0 installed](https://dotnet.microsoft.com/)
+- [.NET 8.0](https://dotnet.microsoft.com/)
 - An [Azure Account](https://azure.microsoft.com/free)
 - An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/introduction) service
 - An [Azure Open AI](/azure/ai-services/openai/overview) service
@@ -186,7 +186,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
 
 1. Select the **Ask AI Assistant (search for a recipe by name or description, or ask a question)** option in the application to run a user query.
 
-   The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
+   The user query is converted to an embedding using the OpenAI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 
     ```C#
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)
@@ -275,7 +275,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
     }
     ```
 
-   The app also uses prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
+   The app also uses prompt engineering to ensure OpenAI service limits and formats the response for supplied recipes.
 
     ```C#
     //System prompts to send with user prompts to instruct the model for chat session

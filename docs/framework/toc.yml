@@ -34,7 +34,13 @@ items:
     - name: Troubleshoot 'This application could not be started'
       href: install/application-not-started.md
   - name: .NET Framework 3.5
-    href: install/dotnet-35-windows.md
+    items:
+    - name: Windows 11
+      href: install/dotnet-35-windows-11.md
+    - name: Windows 11 and .NET Framework 3.5 FAQ
+      href: install/dotnet-35-windows-11-faq.yml
+    - name: Windows 10, Windows Server, and other Windows
+      href: install/dotnet-35-windows.md
 - name: Migration guide
   items:
   - name: Overview
@@ -108,7 +114,7 @@ items:
       href: migration-guide/version-compatibility.md
   - name: Configure an app to support .NET Framework 4 or later
     href: migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
-  - name: Migrate from .NET Framework 1.1
+  - name: Migrate from .NET Framework 1.1 - 3.5
     href: migration-guide/migrating-from-the-net-framework-1-1.md
   - name: .NET Framework 4 migration issues
     href: migration-guide/net-framework-4-migration-issues.md
@@ -705,6 +711,12 @@ items:
       href: release-notes/2025/09-09-september-cumulative-update.md
     - name: October 2025 cumulative update
       href: release-notes/2025/10-14-october-cumulative-update.md
+    - name: October 2025 cumulative update preview
+      href: release-notes/2025/10-28-october-cumulative-update-preview.md
+    - name: January 2026 cumulative update preview
+      href: release-notes/2026/01-29-january-cumulative-update-preview.md
+    - name: February 2026 cumulative update
+      href: release-notes/2026/02-10-february-cumulative-update.md
   - name: What's new
     href: whats-new/index.md
   - name: What's new in accessibility

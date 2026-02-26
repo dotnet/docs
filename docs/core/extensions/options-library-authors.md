@@ -1,8 +1,6 @@
 ---
 title: Options pattern guidance for .NET library authors
-author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
-ms.author: dapine
 ms.date: 06/23/2023
 ---
 
@@ -155,5 +153,5 @@ Consumers in this pattern provide a lambda expression (or a delegate that satisf
 ## See also
 
 - [Options pattern in .NET](options.md)
-- [Dependency injection in .NET](dependency-injection.md)
-- [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
+- [Dependency injection guidelines](dependency-injection/guidelines.md)

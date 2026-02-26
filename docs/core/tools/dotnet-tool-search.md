@@ -1,11 +1,11 @@
 ---
 title: dotnet tool search command
 description: The dotnet tool search command searches the .NET tools that are published to NuGet.org.
-ms.date: 11/11/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool search
 
-**This article applies to:** ✔️ .NET 5 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -44,7 +44,7 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
 
   Specifies the number of query results to show. Used for pagination.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

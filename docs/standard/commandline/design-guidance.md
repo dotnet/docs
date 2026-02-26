@@ -6,7 +6,7 @@ no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line"
   - "System.CommandLine"
-ms.topic: conceptual
+ms.topic: best-practice
 ---
 
 # Design guidance
@@ -33,7 +33,7 @@ Options should provide parameters to commands, rather than specifying actions th
 
 ### Short-form aliases
 
-In general, we recommend that you minimize the number of short-form option aliases that you define.
+In general, it's best to minimize the number of short-form option aliases that you define.
 
 In particular, avoid using any of the following aliases differently than their common usage in the .NET CLI and other .NET command-line apps:
 

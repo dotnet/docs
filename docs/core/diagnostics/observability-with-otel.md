@@ -2,7 +2,7 @@
 title: .NET Observability with OpenTelemetry
 description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
-ms.topic: article
+ms.topic: concept-article
 ms.custom:
   - sfi-image-nochange
   - sfi-ropc-nochange
@@ -18,7 +18,7 @@ Observability in the context of a distributed system is the ability to monitor a
 
 Observability is commonly done using a combination of:
 
-- [Logs](../extensions/logging.md), which record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
+- [Logs](../extensions/logging/overview.md), which record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
 - [Metrics](./metrics.md), which are measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
 - [Distributed tracing](./distributed-tracing.md), which tracks requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
 
@@ -56,7 +56,7 @@ There are OpenTelemetry implementations for most languages and platforms, includ
 
 The .NET OpenTelemetry implementation is a little different from other platforms, as .NET provides logging, metrics, and activity APIs in the framework. That means OTel doesn't need to provide APIs for library authors to use. The .NET OTel implementation uses these platform APIs for instrumentation:
 
-- <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging.md)
+- <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging/overview.md)
 - <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> for [metrics](./metrics-instrumentation.md)
 - <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and
 <xref:System.Diagnostics.Activity?displayProperty=nameWithType> for [distributed tracing](./distributed-tracing.md)
@@ -99,7 +99,7 @@ This topic is continued with a couple of example walkthroughs for using OpenTele
 
 [Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
 
-The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/9.5/Extensions.cs) file. For exporting telemetry, Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. For exporting telemetry, Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 
 The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The Aspire dashboard is launched automatically when you <kbd>F5</kbd> the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 

@@ -25,7 +25,7 @@ var chatOptions = new ChatOptions
         return "Periods of rain or drizzle, 15 C";
     },
     "get_current_weather",
-    "Get the current weather in a given location")]
+    "Gets the current weather in a given location")]
 };
 // </SnippetAddOptions>
 

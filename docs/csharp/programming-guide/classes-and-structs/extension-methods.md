@@ -1,7 +1,7 @@
 ---
 title: "Extension members"
 description: Extension members in C# enable you to add methods, properties, or operators to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
-ms.date: 09/17/2025
+ms.date: 11/20/2025
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
@@ -33,6 +33,10 @@ Extension methods are defined as static methods but are called by using instance
 Beginning with C# 14, you can declare *extension blocks*. An extension block is a block in a non-nested, nongeneric, static class that contains extension members for a type or an instance of that type. The following code example defines an extension block for the `string` type. The extension block contains one member: a method that counts the words in the string:
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="ExtensionBlock":::
+
+Extension members in an extension block can use open or closed generics. The type parameters can include constraints:
+
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="GenericExtensionBlock":::
 
 Before C# 14, you declare an extension method by adding the `this` modifier to the first parameter:
 

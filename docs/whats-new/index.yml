@@ -5,9 +5,17 @@ summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate 
 metadata:
   title: .NET what's new?
   description: Learn about new .NET features and new and updated content in .NET docs.
-  ms.date: 07/01/2025
+  ms.date: 02/10/2026
   ms.topic: landing-page
 landingContent:
+- title: .NET 11 release updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET 11
+      url: ../core/whats-new/dotnet-11/overview.md
+    - text: ASP.NET Core 11.0
+      url: /aspnet/core/release-notes/aspnetcore-11.0
 - title: .NET 10 release updates
   linkLists:
   - linkListType: whats-new
@@ -40,10 +48,10 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: What's new in C# 13
-      url: ../csharp/whats-new/csharp-13.md
-    - text: What's new in F# 9
-      url: ../fsharp/whats-new/fsharp-9.md
+    - text: What's new in C# 14
+      url: ../csharp/whats-new/csharp-14.md
+    - text: What's new in F# 10
+      url: ../fsharp/whats-new/fsharp-10.md
     - text: What's new for Visual Basic
       url: ../visual-basic/whats-new/index.md
 - title: Contribute to docs

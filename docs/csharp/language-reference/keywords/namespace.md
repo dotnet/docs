@@ -1,7 +1,7 @@
 ---
 description: "Organize related types and functionality using the namespace keyword - C# Reference"
 title: "The namespace keyword"
-ms.date: 11/22/2024
+ms.date: 01/22/2026
 f1_keywords: 
   - "namespace_CSharpKeyword"
   - "namespace"
@@ -11,20 +11,22 @@ helpviewer_keywords:
 ---
 # The `namespace` keyword
 
-The `namespace` keyword is used to declare a scope that contains a set of related objects. You can use a namespace to organize code elements and to create globally unique types.
+Use the `namespace` keyword to declare a scope that contains a set of related objects. Use a namespace to organize code elements and to create globally unique types.
 
 :::code language="csharp" source="snippets/csrefKeywordsNamespace.cs" id="Snippet1":::
 
-*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. The following example is similar to the previous example, but uses a file scoped namespace declaration:
+*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. The following example is similar to the previous example but uses a file scoped namespace declaration:
 
 :::code language="csharp" source="snippets/filescopednamespace.cs" :::
 
-## Using Statements in File Scoped Namespaces
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+## Using statements in file-scoped namespaces
 
 When you use *file-scoped namespaces*, the placement of `using` statements affects their scope within the file. File-scoped namespaces lower to the equivalent traditional namespace declaration that ends with a closing bracket at the end of the file. This behavior determines where `using` directives are applied as follows:
 
-- If the `using` statements are placed before the file-scoped namespace declaration, they're treated as being outside of the namespace and are interpreted as fully qualified namespaces.
-- If the `using` statements are placed after the file-scoped namespace declaration, they're scoped within the namespace itself.
+- If you place the `using` statements before the file-scoped namespace declaration, they're treated as being outside of the namespace and are interpreted as fully qualified namespaces.
+- If you place the `using` statements after the file-scoped namespace declaration, they're scoped within the namespace itself.
 
 For example:
 

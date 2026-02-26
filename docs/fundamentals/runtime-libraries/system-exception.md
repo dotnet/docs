@@ -15,29 +15,29 @@ The <xref:System.Exception> class is the base class for all exceptions. When an 
 
 ## Errors and exceptions
 
-Run-time errors can occur for a variety of reasons. However, not all errors should be handled as exceptions in your code. Here are some categories of errors that can occur at run time and the appropriate ways to respond to them.
+Runtime errors can occur for a variety of reasons. However, not all errors should be handled as exceptions in your code. Here are some categories of errors that can occur at runtime and the appropriate ways to respond to them.
 
-- **Usage errors.** A usage error represents an error in program logic that can result in an exception. However, the error should be addressed not through exception handling but by modifying the faulty code. For example, the override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method in the following example assumes that the `obj` argument must always be non-null.
+- **Usage errors.** A usage error represents an error in program logic that can result in an exception. However, the error should be addressed not through exception handling but by modifying the faulty code. For example, the override of the <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method in the following example assumes that the `obj` argument must always be non-null.
 
   :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors1.cs" id="Snippet4":::
   :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/usageerrors1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Exception/Overview/vb/usageerrors1.vb" id="Snippet4":::
 
-  The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.
+  The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals*?displayProperty=nameWithType> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.
 
-  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/usageerrors2.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Exception/Overview/vb/usageerrors2.vb" id="Snippet5":::
 
-  Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).
+  Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert*?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).
 
-- **Program errors.** A program error is a run-time error that cannot necessarily be avoided by writing bug-free code.
+- **Program errors.** A program error is a runtime error that cannot necessarily be avoided by writing bug-free code.
 
-  In some cases, a program error may reflect an expected or routine error condition. In this case, you may want to avoid using exception handling to deal with the program error and instead retry the operation. For example, if the user is expected to input a date in a particular format, you can parse the date string by calling the <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method, which returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded, instead of using the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method, which throws a <xref:System.FormatException> exception if the date string cannot be converted to a <xref:System.DateTime> value. Similarly, if a user tries to open a file that does not exist, you can first call the <xref:System.IO.File.Exists%2A?displayProperty=nameWithType> method to check whether the file exists and, if it does not, prompt the user whether they want to create it.
+  In some cases, a program error may reflect an expected or routine error condition. In this case, you may want to avoid using exception handling to deal with the program error and instead retry the operation. For example, if the user is expected to input a date in a particular format, you can parse the date string by calling the <xref:System.DateTime.TryParseExact*?displayProperty=nameWithType> method, which returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded, instead of using the <xref:System.DateTime.ParseExact*?displayProperty=nameWithType> method, which throws a <xref:System.FormatException> exception if the date string cannot be converted to a <xref:System.DateTime> value. Similarly, if a user tries to open a file that does not exist, you can first call the <xref:System.IO.File.Exists*?displayProperty=nameWithType> method to check whether the file exists and, if it does not, prompt the user whether they want to create it.
 
-  In other cases, a program error reflects an unexpected error condition that can be handled in your code. For example, even if you've checked to ensure that a file exists, it may be deleted before you can open it, or it may be corrupted. In that case, trying to open the file by instantiating a <xref:System.IO.StreamReader> object or calling the <xref:System.IO.File.Open%2A> method may throw a <xref:System.IO.FileNotFoundException> exception. In these cases, you should use exception handling to recover from the error.
+  In other cases, a program error reflects an unexpected error condition that can be handled in your code. For example, even if you've checked to ensure that a file exists, it may be deleted before you can open it, or it may be corrupted. In that case, trying to open the file by instantiating a <xref:System.IO.StreamReader> object or calling the <xref:System.IO.File.Open*> method may throw a <xref:System.IO.FileNotFoundException> exception. In these cases, you should use exception handling to recover from the error.
 
-- **System failures.** A system failure is a run-time error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> and call the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method to log exception information and notify the user of the failure before the application terminates.
+- **System failures.** A system failure is a runtime error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> and call the <xref:System.Environment.FailFast*?displayProperty=nameWithType> method to log exception information and notify the user of the failure before the application terminates.
 
 ## Try/catch blocks
 
@@ -63,7 +63,7 @@ Exception types support the following features:
 
 ## Exception class properties
 
-The <xref:System.Exception> class includes a number of properties that help identify the code location, the type, the help file, and the reason for the exception: <xref:System.Exception.StackTrace%2A>, <xref:System.Exception.InnerException%2A>, <xref:System.Exception.Message%2A>, <xref:System.Exception.HelpLink%2A>, <xref:System.Exception.HResult%2A>, <xref:System.Exception.Source%2A>, <xref:System.Exception.TargetSite%2A>, and <xref:System.Exception.Data%2A>.
+The <xref:System.Exception> class includes a number of properties that help identify the code location, the type, the help file, and the reason for the exception: <xref:System.Exception.StackTrace*>, <xref:System.Exception.InnerException*>, <xref:System.Exception.Message*>, <xref:System.Exception.HelpLink*>, <xref:System.Exception.HResult*>, <xref:System.Exception.Source*>, <xref:System.Exception.TargetSite*>, and <xref:System.Exception.Data*>.
 
 When a causal relationship exists between two or more exceptions, the <xref:System.Exception.InnerException> property maintains this information. The outer exception is thrown in response to this inner exception. The code that handles the outer exception can use the information from the earlier inner exception to handle the error more appropriately. Supplementary information about the exception can be stored as a collection of key/value pairs in the <xref:System.Exception.Data> property.
 
@@ -73,7 +73,7 @@ To provide the user with extensive information about why the exception occurred,
 
 The <xref:System.Exception> class uses the HRESULT `COR_E_EXCEPTION`, which has the value 0x80131500.
 
-For a list of initial property values for an instance of the <xref:System.Exception> class, see the <xref:System.Exception.%23ctor%2A> constructors.
+For a list of initial property values for an instance of the <xref:System.Exception> class, see the <xref:System.Exception.%23ctor*> constructors.
 
 ## Performance considerations
 
@@ -89,13 +89,13 @@ In many cases, an exception handler simply wants to pass the exception on to the
 
 - An application or library that encounters a fatal exception. The exception handler can log the exception and then re-throw the exception.
 
-The recommended way to re-throw an exception is to simply use the [throw](/dotnet/csharp/language-reference/keywords/throw) statement in C#, the [reraise](../../fsharp/language-reference/exception-handling/the-raise-function.md#reraising-an-exception) function in F#, and the [Throw](../../visual-basic/language-reference/statements/throw-statement.md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> without validating its arguments beforehand.
+The recommended way to re-throw an exception is to simply use the [throw](/dotnet/csharp/language-reference/keywords/throw) statement in C#, the [reraise](../../fsharp/language-reference/exception-handling/the-raise-function.md#reraising-an-exception) function in F#, and the [Throw](../../visual-basic/language-reference/statements/throw-statement.md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf(System.String,System.Int32)?displayProperty=nameWithType> without validating its arguments beforehand.
 
 :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/rethrow1.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/rethrow1.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Exception/Overview/vb/rethrow1.vb" id="Snippet6":::
 
-A caller then calls `FindOccurrences` twice. In the second call to `FindOccurrences`, the caller passes a `null` as the search string, which causes the <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> method to throw an <xref:System.ArgumentNullException> exception. This exception is handled by the `FindOccurrences` method and passed back to the caller. Because the throw statement is used with no expression, the output from the example shows that the call stack is preserved.
+A caller then calls `FindOccurrences` twice. In the second call to `FindOccurrences`, the caller passes a `null` as the search string, which causes the <xref:System.String.IndexOf(System.String,System.Int32)?displayProperty=nameWithType> method to throw an <xref:System.ArgumentNullException> exception. This exception is handled by the `FindOccurrences` method and passed back to the caller. Because the throw statement is used with no expression, the output from the example shows that the call stack is preserved.
 
 :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/rethrow1.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/rethrow1.fs" id="Snippet7":::
@@ -197,11 +197,11 @@ To define your own exception class:
 
    - <xref:System.Exception.%23ctor>, which uses default values to initialize the properties of a new exception object.
 
-   - <xref:System.Exception.%23ctor%28System.String%29>, which initializes a new exception object with a specified error message.
+   - <xref:System.Exception.%23ctor(System.String)>, which initializes a new exception object with a specified error message.
 
-   - <xref:System.Exception.%23ctor%28System.String%2CSystem.Exception%29>, which initializes a new exception object with a specified error message and inner exception.
+   - <xref:System.Exception.%23ctor(System.String,System.Exception)>, which initializes a new exception object with a specified error message and inner exception.
 
-   - <xref:System.Exception.%23ctor%28System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext%29>, which is a `protected` constructor that initializes a new exception object from serialized data. You should implement this constructor if you've chosen to make your exception object serializable.
+   - <xref:System.Exception.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)>, which is a `protected` constructor that initializes a new exception object from serialized data. You should implement this constructor if you've chosen to make your exception object serializable.
 
 The following example illustrates the use of a custom exception class. It defines a `NotPrimeException` exception that is thrown when a client tries to retrieve a sequence of prime numbers by specifying a starting number that is not prime. The exception defines a new property, `NonPrime`, that returns the non-prime number that caused the exception. Besides implementing a protected parameterless constructor and a constructor with <xref:System.Runtime.Serialization.SerializationInfo> and <xref:System.Runtime.Serialization.StreamingContext> parameters for serialization, the `NotPrimeException` class defines three additional constructors to support the `NonPrime` property. Each constructor calls a base class constructor in addition to preserving the value of the non-prime number. The `NotPrimeException` class is also marked with the <xref:System.SerializableAttribute> attribute.
 
@@ -225,6 +225,6 @@ The following example makes two calls to the `GetPrimesFrom` method with non-pri
 
 The following example demonstrates a `catch` (`with` in F#) block that is defined to handle <xref:System.ArithmeticException> errors. This `catch` block also catches <xref:System.DivideByZeroException> errors, because <xref:System.DivideByZeroException> derives from <xref:System.ArithmeticException> and there is no `catch` block explicitly defined for <xref:System.DivideByZeroException> errors.
 
-:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/catchexception.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Exception/Overview/vb/catchexception.vb" id="Snippet1":::

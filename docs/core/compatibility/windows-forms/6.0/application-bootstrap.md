@@ -69,7 +69,7 @@ static class Program
 - [ApplicationUseCompatibleTextRendering](../../../project-sdk/msbuild-props-desktop.md#applicationusecompatibletextrendering)
 - [ApplicationVisualStyles](../../../project-sdk/msbuild-props-desktop.md#applicationvisualstyles)
 
-If you don't explicitly configure any properties, the following code is executed at run time:
+If you don't explicitly configure any properties, the following code is executed at runtime:
 
 ```csharp
 static class Program

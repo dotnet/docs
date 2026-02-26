@@ -2,12 +2,12 @@
 title: Replicated grains
 description: Learn the concepts of replicated grains in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Replicated grains
 
-Sometimes, multiple instances of the same grain can be active, such as when operating a multi-cluster and using the <xref:Orleans.MultiCluster.OneInstancePerClusterAttribute>. `JournaledGrain` is designed to support replicated instances with minimal friction. It relies on *log-consistency providers* to run the necessary protocols ensuring all instances agree on the same sequence of events. In particular, it handles the following aspects:
+Multiple instances of the same grain can be active in certain scenarios. `JournaledGrain` is designed to support replicated instances with minimal friction. It relies on *log-consistency providers* to run the necessary protocols ensuring all instances agree on the same sequence of events. In particular, it handles the following aspects:
 
 - **Consistent versions**: All versions of the grain state (except tentative versions) are based on the same global sequence of events. In particular, if two instances see the same version number, they see the same state.
 
@@ -32,7 +32,7 @@ This is analogous to using e-tags with conditional storage updates and provides 
 
 It's possible and sensible to use both conditional and unconditional events for the same grain, such as `DepositEvent` and `WithdrawalEvent`. Deposits don't need to be conditional: even if a `DepositEvent` loses a race, it doesn't have to be canceled but can still be appended to the global event sequence.
 
-Awaiting the task returned by `RaiseConditionalEvent` is sufficient to confirm the event; you don't need to call `ConfirmEvents` as well.
+Awaiting the task returned by <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent*> is sufficient to confirm the event; you don't need to call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*> as well.
 
 ## Explicit synchronization
 

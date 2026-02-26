@@ -19,7 +19,7 @@ Developers might want to make sure that a shared assembly they are building work
 
  For example, assume that you are building a shared assembly called MySharedAssembly and the output directory is C:\MySharedAssembly\Debug. You can put C:\MySharedAssembly\Debug in the DEVPATH variable. You must then specify the [\<developmentMode>](./file-schema/runtime/developmentmode-element.md) element in the machine configuration file. This element tells the common language runtime to use DEVPATH to locate assemblies.
 
- The shared assembly must be discoverable by the runtime.  To specify a private directory for resolving assembly references use the [\<codeBase> Element](./file-schema/runtime/codebase-element.md) or [\<probing> Element](./file-schema/runtime/probing-element.md) in a configuration file, as described in [Specifying an Assembly's Location](specify-assembly-location.md).  You can also put the assembly in a subdirectory of the application directory. For more information, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).
+ The shared assembly must be discoverable by the runtime.  To specify a private directory for resolving assembly references use the [`<codeBase>` Element](./file-schema/runtime/codebase-element.md) or [`<probing>` Element](./file-schema/runtime/probing-element.md) in a configuration file, as described in [Specifying an Assembly's Location](specify-assembly-location.md).  You can also put the assembly in a subdirectory of the application directory. For more information, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).
 
 > [!NOTE]
 > This is an advanced feature, intended only for development.

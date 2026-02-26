@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "defaultProxy element"
   - "<defaultProxy> element"
 ---
-# \<defaultProxy> element (network settings)
+# `<defaultProxy>` element (network settings)
 
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultProxy>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;`<defaultProxy>`
 
 > [!NOTE]
 > If you're migrating to .NET 6+, configure the proxy server using the <xref:System.Net.Http.HttpClient.DefaultProxy?displayProperty=nameWithType> property.

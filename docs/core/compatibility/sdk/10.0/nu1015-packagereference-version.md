@@ -14,7 +14,7 @@ There's no change when using Central Package Management, since by design the Pac
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 

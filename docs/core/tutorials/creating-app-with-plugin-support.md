@@ -3,7 +3,7 @@ title: Create a .NET Core application with plugins
 description: Learn how to create a .NET Core application that supports plugins.
 author: jkoritzinsky
 ms.author: jekoritz
-ms.date: 11/20/2024
+ms.date: 02/04/2026
 ---
 
 # Create a .NET Core application with plugins
@@ -81,6 +81,13 @@ namespace AppWithPlugin
                     {
                         Console.WriteLine($"-- {commandName} --");
 
+                        // Skip command-line switches/flags (arguments starting with '/' or '-')
+                        if (commandName.StartsWith("/") || commandName.StartsWith("-"))
+                        {
+                            Console.WriteLine($"Skipping command-line flag: {commandName}");
+                            continue;
+                        }
+
                         // Execute the command with the name passed as an argument.
 
                         Console.WriteLine();
@@ -138,8 +145,8 @@ Replace the `// Execute the command with the name passed as an argument` comment
 ICommand command = commands.FirstOrDefault(c => c.Name == commandName);
 if (command == null)
 {
-    Console.WriteLine("No such command is known.");
-    return;
+    Console.WriteLine($"No such command is known: {commandName}");
+    continue;
 }
 
 command.Execute();
@@ -157,16 +164,12 @@ static IEnumerable<ICommand> CreateCommands(Assembly assembly)
 {
     int count = 0;
 
-    foreach (Type type in assembly.GetTypes())
+    foreach (var type in assembly.GetTypes().Where(t => typeof(ICommand).IsAssignableFrom(t)))
     {
-        if (typeof(ICommand).IsAssignableFrom(type))
+        if (Activator.CreateInstance(type) is ICommand result)
         {
-            ICommand result = Activator.CreateInstance(type) as ICommand;
-            if (result != null)
-            {
-                count++;
-                yield return result;
-            }
+            count++;
+            yield return result;
         }
     }
 
@@ -194,17 +197,13 @@ Now that the `AppWithPlugin` project has the `PluginLoadContext` type, update th
 static Assembly LoadPlugin(string relativePath)
 {
     // Navigate up to the solution root
-    string root = Path.GetFullPath(Path.Combine(
-        Path.GetDirectoryName(
-            Path.GetDirectoryName(
-                Path.GetDirectoryName(
-                    Path.GetDirectoryName(
-                        Path.GetDirectoryName(typeof(Program).Assembly.Location)))))));
+    string root = Path.GetFullPath(
+        Path.Combine(typeof(Program).Assembly.Location, "..", "..", "..", "..", ".."));
 
     string pluginLocation = Path.GetFullPath(Path.Combine(root, relativePath.Replace('\\', Path.DirectorySeparatorChar)));
     Console.WriteLine($"Loading commands from: {pluginLocation}");
-    PluginLoadContext loadContext = new PluginLoadContext(pluginLocation);
-    return loadContext.LoadFromAssemblyName(new AssemblyName(Path.GetFileNameWithoutExtension(pluginLocation)));
+    PluginLoadContext loadContext = new(pluginLocation);
+    return loadContext.LoadFromAssemblyName(new(Path.GetFileNameWithoutExtension(pluginLocation)));
 }
 ```
 
@@ -236,7 +235,9 @@ Now, open the *HelloPlugin.csproj* file. It should look similar to the following
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>
@@ -266,7 +267,7 @@ The `<Private>false</Private>` element is important. This tells MSBuild to not c
 
 Similarly, the `<ExcludeAssets>runtime</ExcludeAssets>` element is also important if the `PluginBase` references other packages. This setting has the same effect as `<Private>false</Private>` but works on package references that the `PluginBase` project or one of its dependencies may include.
 
-Now that the `HelloPlugin` project is complete, you should update the `AppWithPlugin` project to know where the `HelloPlugin` plugin can be found. After the `// Paths to plugins to load` comment, add `@"HelloPlugin\bin\Debug\net5.0\HelloPlugin.dll"` (this path could be different based on the .NET Core version you use) as an element of the `pluginPaths` array.
+Now that the `HelloPlugin` project is complete, you should update the `AppWithPlugin` project to know where the `HelloPlugin` plugin can be found. After the `// Paths to plugins to load` comment, add `@"HelloPlugin\bin\Debug\net10.0\HelloPlugin.dll"` (this path could be different based on the .NET Core version you use) as an element of the `pluginPaths` array.
 
 ## Plugin with library dependencies
 
@@ -292,7 +293,7 @@ This prevents the `A.PluginBase` assemblies from being copied to the output dire
 
 ## Plugin target framework recommendations
 
-Because plugin dependency loading uses the *.deps.json* file, there is a gotcha related to the plugin's target framework. Specifically, your plugins should target a runtime, such as .NET 5, instead of a version of .NET Standard. The *.deps.json* file is generated based on which framework the project targets, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the *.deps.json* may not correctly see implementation assemblies, or it may grab the .NET Standard version of an assembly instead of the .NET Core version you expect.
+Because plugin dependency loading uses the *.deps.json* file, there is a gotcha related to the plugin's target framework. Specifically, your plugins should target a runtime, such as .NET 10, instead of a version of .NET Standard. The *.deps.json* file is generated based on which framework the project targets, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the *.deps.json* may not correctly see implementation assemblies, or it may grab the .NET Standard version of an assembly instead of the .NET Core version you expect.
 
 ## Plugin framework references
 

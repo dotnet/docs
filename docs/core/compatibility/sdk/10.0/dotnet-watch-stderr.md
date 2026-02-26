@@ -11,7 +11,7 @@ Starting in .NET 10, [`dotnet watch`](../../../tools/dotnet-watch.md) emits its 
 
 ## Version introduced
 
-.NET 10 RC 2
+.NET 10
 
 ## Previous behavior
 

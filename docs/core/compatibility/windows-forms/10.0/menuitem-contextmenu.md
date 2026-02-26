@@ -8,11 +8,11 @@ ms.custom: https://github.com/dotnet/docs/issues/44738
 
 # Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types
 
-This document describes a breaking change introduced in .NET 10 Preview 1. Applications that reference both Windows Presentation Foundation (WPF) and Windows Forms (WinForms) must disambiguate certain types, such as `MenuItem` and `ContextMenu`, to avoid compile-time errors.
+Applications that reference both Windows Presentation Foundation (WPF) and Windows Forms (WinForms) must now disambiguate certain types, such as `MenuItem` and `ContextMenu`, to avoid compile-time errors.
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
@@ -48,7 +48,7 @@ Use aliases to resolve conflicting namespaces. For example:
 using ContextMenu = System.Windows.Controls.ContextMenu;
 ```
 
-Refer to the [alias name conflicts documentation](../../../../csharp/language-reference/compiler-messages/using-directive-errors.md#alias-name-conflicts) for more details.
+Refer to the [alias name conflicts documentation](../../../../csharp/language-reference/compiler-messages/using-directive-errors.md#using-alias-restrictions) for more details.
 
 ## Affected APIs
 

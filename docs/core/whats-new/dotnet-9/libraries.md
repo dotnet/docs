@@ -135,7 +135,7 @@ Those methods all used content-sniffing to figure out if the input was something
 
 ### OpenSSL providers support
 
-.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
+.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL `ENGINE` components and use hardware security modules (HSM), for example.
 
 .NET 9 introduces <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider(System.String,System.String)?displayProperty=nameWithType>, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
 
@@ -520,7 +520,7 @@ For more information, see [Non-optional constructor parameters](../../../standar
 
 ### Order JsonObject properties
 
-The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
+The <xref:System.Text.Json.Nodes.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 

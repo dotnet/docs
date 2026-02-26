@@ -3,7 +3,7 @@ title: .NET SDK, MSBuild, and Visual Studio versioning
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/VS.
 author: StephenBonikowsky
 ms.custom: updateeachrelease
-ms.date: 10/23/2025
+ms.date: 02/25/2026
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -11,9 +11,13 @@ The versioning of the .NET SDK and how it relates to Visual Studio and MSBuild c
 
 ## Versioning
 
-The first part of the .NET SDK version matches the .NET version that it includes, runs on, and targets by default. The feature band starts at 1 and increases for each quarterly Visual Studio minor release. The patch version increments with each month's servicing updates.
+The .NET SDK version number uses the format `major.minor.patch`, where:
 
-For example, version 7.0.203 ships with .NET 7, is the second minor Visual Studio release since 7.0.100 first came out, and is the third patch since 7.0.200 released.
+- `major.minor` matches the .NET version the SDK includes, runs on, and targets by default.
+- The hundreds digit of `patch` identifies the *feature band*—for example, `1xx`, `2xx`, `3xx`, or `4xx`. The feature band starts at 1 and increases for each quarterly Visual Studio minor release.
+- The last two digits of `patch` are the *patch version*, which increments with each month's servicing update.
+
+For example, version 7.0.203 ships with .NET 7, is in the second feature band (second minor Visual Studio release since 7.0.100 first came out), and is the third patch since 7.0.200 released.
 
 An installation of Visual Studio includes a single matching copy of the .NET SDK. If you update your Visual Studio instance, the .NET SDK installed by Visual Studio is also updated, including across .NET SDK feature bands and major bands. If you want to use a different .NET SDK than what's installed by Visual Studio, you can install it from the [.NET download page](https://aka.ms/dotnet/download), and Visual Studio upgrade won't touch that version. You're responsible for updating that copy of the .NET SDK from then on.
 

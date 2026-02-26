@@ -44,13 +44,13 @@ The `Dimensions` parameter in `[VectorStoreVector]` must match the output size o
 
 The following tables describe all available parameters for each attribute.
 
-#### <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> parameters
+#### VectorStoreKeyAttribute parameters
 
 | Parameter | Required | Description |
 |---|---|---|
 | <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
 
-#### <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> parameters
+#### VectorStoreDataAttribute parameters
 
 | Parameter | Required | Description |
 |---|---|---|
@@ -58,7 +58,7 @@ The following tables describe all available parameters for each attribute.
 | <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No | Whether to index this property for full-text search. Default is `false`. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
 
-#### <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> parameters
+#### VectorStoreVectorAttribute parameters
 
 | Parameter | Required | Description |
 |---|---|---|

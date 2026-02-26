@@ -47,7 +47,7 @@ On Windows, Native AOT uses a prepopulated list of direct P/Invoke methods that 
 
 ### Linking
 
-To statically link against an unmanaged library, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
+To statically link against one or more unmanaged libraries, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems for each library.
 
 Examples:
 
@@ -60,6 +60,10 @@ Examples:
   <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
 </ItemGroup>
 ```
+
+If the specified native library has a dependency on other static libraries, then `NativeLibrary` items will need to be added for each of the transitive depenencies as well, otherwise the native linker will fail because of missing symbols.
+
+Platform conventions are followed when it comes to the format of `NativeLibrary` entries. The underlying native linker may search standard library paths or allow rooted file paths.
 
 To specify additional flags to the native linker, use the `<LinkerArg>` item.
 

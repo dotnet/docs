@@ -46,7 +46,7 @@ dotnet add package Microsoft.Extensions.TimeProvider.Testing
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Basic usage
 
@@ -396,4 +396,4 @@ When using `FakeTimeProvider`, consider the following best practices:
 
 - <xref:System.TimeProvider>
 - [Unit testing in .NET](../testing/index.md)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)

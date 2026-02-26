@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Dependency injection auto-activation
 
-The [`Microsoft.Extensions.DependencyInjection.AutoActivation`](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.AutoActivation) NuGet package provides functionality to automatically activate singleton services at application startup, rather than waiting for their first use. This approach can help minimize latency for initial requests by ensuring services are ready to handle requests immediately when the application starts.
+The [📦 `Microsoft.Extensions.DependencyInjection.AutoActivation`](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.AutoActivation) NuGet package provides functionality to automatically activate singleton services at application startup, rather than waiting for their first use. This approach can help minimize latency for initial requests by ensuring services are ready to handle requests immediately when the application starts.
 
 ## When to use auto-activation
 
@@ -39,7 +39,7 @@ dotnet add package Microsoft.Extensions.DependencyInjection.AutoActivation
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Register services for auto-activation
 
@@ -126,6 +126,6 @@ When using auto-activation, consider the following best practices:
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
-- [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Dependency injection in .NET](overview.md)
+- [Dependency injection guidelines](guidelines.md)
 - [Worker Services in .NET](workers.md)

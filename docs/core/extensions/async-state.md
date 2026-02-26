@@ -44,7 +44,7 @@ dotnet add package Microsoft.Extensions.AsyncState
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Register async state services
 
@@ -139,6 +139,6 @@ When using async state, consider the following best practices:
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)
 - <xref:System.Threading.AsyncLocal%601>
 - [ASP.NET Core middleware](/aspnet/core/fundamentals/middleware/)

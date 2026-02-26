@@ -40,7 +40,7 @@ dotnet add package Microsoft.Extensions.AuditReports
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Report types
 
@@ -323,5 +323,5 @@ When using audit reports, consider the following best practices:
 
 - [Data classification in .NET](data-classification.md)
 - [Logging in .NET](logging.md)
-- [High-performance logging in .NET](high-performance-logging.md)
-- [Compile-time logging source generation](logger-message-generator.md)
+- [High-performance logging in .NET](logging/high-performance-logging.md)
+- [Compile-time logging source generation](logging/source-generation.md)

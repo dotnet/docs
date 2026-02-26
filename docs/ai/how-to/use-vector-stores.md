@@ -3,7 +3,7 @@ title: Use vector stores in .NET AI apps
 description: Learn how to use Microsoft.Extensions.VectorData to store, search, and manage embeddings in vector databases for .NET AI applications.
 ms.topic: how-to
 ms.date: 02/24/2026
-ai-usage: ai-assisted
+ai-usage: ai-generated
 ---
 
 # Use vector stores in .NET AI apps
@@ -44,13 +44,13 @@ The `Dimensions` parameter in `[VectorStoreVector]` must match the output size o
 
 The following tables describe all available parameters for each attribute.
 
-#### VectorStoreKey parameters
+#### <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> parameters
 
 | Parameter | Required | Description |
 |---|---|---|
 | `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
 
-#### VectorStoreData parameters
+#### <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> parameters
 
 | Parameter | Required | Description |
 |---|---|---|
@@ -58,7 +58,7 @@ The following tables describe all available parameters for each attribute.
 | `IsFullTextIndexed` | No | Whether to index this property for full-text search. Default is `false`. |
 | `StorageName` | No | An alternative name for the property in storage. Not supported by all connectors. |
 
-#### VectorStoreVector parameters
+#### <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> parameters
 
 | Parameter | Required | Description |
 |---|---|---|
@@ -81,7 +81,7 @@ Create an instance of the `VectorStore` implementation for your chosen database.
 
 ## Get a collection
 
-Call `GetCollection<TKey, TRecord>` on the vector store to get a typed reference to a collection. Then call `EnsureCollectionExistsAsync` to create the collection if it doesn't already exist:
+Call `GetCollection<TKey, TRecord>` on the <xref:Microsoft.Extensions.VectorData.VectorStore> to get a typed <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> reference. Then call <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.EnsureCollectionExistsAsync*> to create the collection if it doesn't already exist:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="GetCollection":::
 
@@ -108,11 +108,11 @@ To retrieve multiple records at once:
 
 ## Perform vector search
 
-Use `SearchAsync` to find records that are semantically similar to a query. Pass the embedding vector for your query and the number of results to return:
+Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> to find records that are semantically similar to a query. Pass the embedding vector for your query and the number of results to return:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="SearchBasic":::
 
-Each `VectorSearchResult<T>` contains the matching record and a similarity score. Higher scores indicate a closer semantic match.
+Each <xref:Microsoft.Extensions.VectorData.VectorSearchResult`1> contains the matching record and a similarity score. Higher scores indicate a closer semantic match.
 
 ## Filter search results
 
@@ -201,7 +201,7 @@ With this approach, `SearchAsync` also accepts a `string` query directly—you d
 
 Some vector stores support *hybrid search*, which combines vector similarity with keyword matching. This approach can improve result relevance compared to vector-only search.
 
-To use hybrid search, check whether your collection implements `IKeywordHybridSearchable<TRecord>`. Only connectors for databases that support this feature implement this interface.
+To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only connectors for databases that support this feature implement this interface.
 
 ```csharp
 // Check whether the collection supports hybrid search.
@@ -227,19 +227,19 @@ For hybrid search to work, the data model must have at least one vector property
 
 ## Delete records
 
-To delete a single record by key, use `DeleteAsync`:
+To delete a single record by key, use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.DeleteAsync*>:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="DeleteRecord":::
 
 ## Delete a collection
 
-To remove an entire collection from the vector store, use `EnsureCollectionDeletedAsync`:
+To remove an entire collection from the vector store, use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.EnsureCollectionDeletedAsync*>:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="DeleteCollection":::
 
 ## Switch vector store connectors
 
-Because all connectors implement the same `VectorStore` abstract class, you can switch between them by changing the concrete type at startup. Your collection and search code remains the same.
+Because all connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> abstract class, you can switch between them by changing the concrete type at startup. Your collection and search code remains the same.
 
 For example, to switch from in-memory to Azure AI Search:
 

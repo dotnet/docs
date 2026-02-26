@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Vector databases for .NET AI apps
 
-Vector databases store and manage vector [embeddings](embeddings.md)—numeric representations of data that preserve semantic meaning. Words, documents, images, audio, and other types of data can all be vectorized. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text, finding contextually related data, or creating images from text descriptions.
+Vector databases store and manage vector [*embeddings*](embeddings.md). Embeddings are numeric representations of data that preserve semantic meaning. Words, documents, images, audio, and other types of data can all be vectorized. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text, finding contextually related data, or creating images from text descriptions.
 
 For example, you can use a vector database to:
 
@@ -106,7 +106,7 @@ public class FinanceInfo
 }
 ```
 
-You can configure the `IEmbeddingGenerator` at the vector store level, collection level, or on individual vector properties. With auto-embedding, you can also pass a `string` directly to `SearchAsync` instead of a precomputed vector—the store generates the search embedding for you. For more information, see [Use built-in embedding generation](../how-to/use-vector-stores.md#use-built-in-embedding-generation).
+You can configure the `IEmbeddingGenerator` at the vector store or collection level, or on individual vector properties. With auto-embedding, you can also pass a `string` directly to `SearchAsync` instead of a precomputed vector—the store generates the search embedding for you. For more information, see [Use built-in embedding generation](../how-to/use-vector-stores.md#use-built-in-embedding-generation).
 
 ### Key abstractions
 

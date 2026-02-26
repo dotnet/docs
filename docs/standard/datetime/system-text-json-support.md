@@ -59,7 +59,24 @@ If you attempt to read non-compliant formats with <xref:System.Text.Json.Utf8Jso
 
 ## Serialize DateOnly and TimeOnly properties
 
-[!INCLUDE [dateonly-and-timeonly-serialization-cs](includes/dateonly-and-timeonly-serialization-cs.md)]
+Starting ith .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
+
+<!-- This section is somewhat duplicated in how-to-use-dateonly-timeonly.md section 'Serialize DateOnly and TimeOnly types' -->
+
+:::code source="snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="appointment":::
+
+The following example serializes an `Appointment` object, displays the resulting JSON, and then deserializes it back into a new instance of the `Appointment` type. Finally, the original and newly deserialized instances are compared for equality and the results are written to the console:
+
+:::code source="snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="serialization":::
+
+In the preceding code:
+
+- An `Appointment` object is instantiated and assigned to the `appointment` variable.
+- The `appointment` instance is serialized to JSON using <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>.
+- The resulting JSON is written to the console.
+- The JSON is deserialized back into a new instance of the `Appointment` type using <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
+- The original and newly deserialized instances are compared for equality.
+- The result of the comparison is written to the console.
 
 ## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset>
 

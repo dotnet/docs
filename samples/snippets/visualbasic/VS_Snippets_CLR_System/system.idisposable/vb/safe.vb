@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.IO
 Imports System.Runtime.InteropServices
+Imports System.Threading
 Imports Microsoft.Win32.SafeHandles
 
 ' Wraps the IntPtr allocated by Marshal.AllocHGlobal() into a SafeHandle.
@@ -29,8 +30,10 @@ End Class
 Public Class DisposableBaseWithSafeHandle
     Implements IDisposable
 
-    ' Detect redundant Dispose() calls.
-    Private _isDisposed As Boolean
+    ' Detect redundant Dispose() calls in a thread-safe manner.
+    ' _isDisposed = 0 means Dispose(bool) has not been called yet.
+    ' _isDisposed = 1 means Dispose(bool) has been already called.
+    Private _isDisposed As Integer
 
     ' Managed disposable objects owned by this class
     Private _safeHandle As LocalAllocHandle = LocalAllocHandle.Allocate(10)
@@ -44,9 +47,9 @@ Public Class DisposableBaseWithSafeHandle
 
     ' Protected implementation of Dispose pattern.
     Protected Overridable Sub Dispose(disposing As Boolean)
-        If Not _isDisposed Then
-            _isDisposed = True
-
+        ' In case _isDisposed is 0, atomically set it to 1.
+        ' Enter the branch only if the original value is 0.
+        If Interlocked.CompareExchange(_isDisposed, 1, 0) = 0 Then
             If disposing Then
                 ' Dispose managed state.
                 _otherUnmanagedResource?.Dispose()

@@ -88,7 +88,7 @@ If this exception occurs during initial client connection, ensure silos start be
 - **Using the local connection string when deploying to Azure**: The website fails to connect.
 - **Using different connection strings for silos and the front end (web and worker roles)**: The website fails to initialize the client because it cannot connect to the silos.
 
-Check the connection string configuration in the Azure Portal. Logs might not display properly if connection strings aren't set up correctly.
+Check the connection string configuration in the Azure portal. Logs might not display properly if connection strings aren't set up correctly.
 
 ## Improperly modified configuration files
 

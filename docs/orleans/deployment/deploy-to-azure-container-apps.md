@@ -563,7 +563,7 @@ As source code is updated and changes are `push`ed to the `main` branch of the r
 
 In addition to the visualizer from the Bicep extension, the Azure portal resource group page looks similar to the following example after provisioning and deploying the application:
 
-:::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
+:::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
 
 ## See also
 

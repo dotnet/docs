@@ -1,0 +1,22 @@
+id: mention.meaghanlewis
+name: GitOps.IssueManagement
+description: Mention team members when @meaghanlewis is referenced in issues
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Mention team members when @meaghanlewis is mentioned in an issue
+        if:
+          - payloadType: Issues
+          - isAction:
+              action: Opened
+          - bodyContains:
+              pattern: '@meaghanlewis'
+              isRegex: False
+        then:
+          - addReply:
+              reply: >-
+                CC @gewarren @cmastr @BillWagner @adegeo

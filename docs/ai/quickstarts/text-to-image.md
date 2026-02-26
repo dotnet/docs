@@ -173,7 +173,7 @@ When implementing text-to-image generation in your applications, consider these 
 
 When you no longer need the Azure OpenAI resource, delete it to avoid incurring charges:
 
-1. In the [Azure Portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
 1. Select the resource and then select **Delete**.
 
 ## Next steps

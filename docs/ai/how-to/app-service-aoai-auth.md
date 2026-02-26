@@ -96,7 +96,7 @@ az webapp identity assign --name <appName> --resource-group <groupName>
 
 :::zone target="docs" pivot="azure-portal"
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope that you want to grant **Azure OpenAI** access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the scope that you want to grant **Azure OpenAI** access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
 1. In the left navigation pane, select **Access control (IAM)**.
 1. Select **Add**, then select **Add role assignment**.
 

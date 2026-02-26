@@ -34,7 +34,7 @@ dotnet add package Microsoft.Extensions.DependencyInjection.AutoActivation
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.DependencyInjection.AutoActivation" Version="9.8.0" />
+<PackageReference Include="Microsoft.Extensions.DependencyInjection.AutoActivation" Version="10.0.0" />
 ```
 
 ---
@@ -57,8 +57,6 @@ var services = new ServiceCollection();
 services.AddActivatedSingleton<MyService>();
 
 var provider = services.BuildServiceProvider();
-
-// MyService is already instantiated at this point
 ```
 
 In this example, `MyService` is instantiated when `BuildServiceProvider()` is called, not when it's first requested from the service provider.
@@ -76,8 +74,6 @@ services.AddSingleton<MyService>();
 services.ActivateSingleton<MyService>();
 
 var provider = services.BuildServiceProvider();
-
-// MyService is already instantiated at this point
 ```
 
 This approach is useful when you have existing service registrations that you want to activate at startup without changing the registration code.
@@ -103,7 +99,7 @@ This method follows the same pattern as other `TryAdd*` methods in the dependenc
 
 Here's a complete example showing how to use auto-activation in a console application:
 
-:::code language="csharp" source="snippets/dependency-injection-auto-activation/csharp/CompleteExample/Program.cs" id="CacheWarmer":::
+:::code language="csharp" source="../snippets/dependency-injection-auto-activation/csharp/CompleteExample/Program.cs" id="CacheWarmer":::
 
 When this application starts, you'll see the messages from the `CacheWarmer` constructor printed before the application begins processing requests, confirming that the service was activated at startup.
 
@@ -111,7 +107,7 @@ When this application starts, you'll see the messages from the `CacheWarmer` con
 
 Auto-activated services can depend on other services through dependency injection:
 
-:::code language="csharp" source="snippets/dependency-injection-auto-activation/csharp/DependenciesExample/Program.cs" id="StartupTaskRunner":::
+:::code language="csharp" source="../snippets/dependency-injection-auto-activation/csharp/DependenciesExample/Program.cs" id="StartupTaskRunner":::
 
 In this example, the `StartupTaskRunner` service depends on `ILogger<StartupTaskRunner>`, which is automatically provided by the dependency injection container.
 

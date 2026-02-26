@@ -35,7 +35,7 @@ dotnet add package Microsoft.Extensions.AuditReports
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.9.0" />
+<PackageReference Include="Microsoft.Extensions.AuditReports" Version="10.0.0" />
 ```
 
 ---
@@ -48,15 +48,15 @@ The package can generate three types of reports:
 
 ### Metrics report
 
-Reports on the usage of source-generated metric definitions in your code. This helps you understand what metrics your application produces.
+Generates a report on source-generated metric definitions used in your code, so you can understand what metrics your application emits.
 
 ### Compliance report
 
-Reports on the usage of privacy-sensitive data, including source-generated logging methods that handle personal or sensitive information.
+Generates a report on the usage of privacy-sensitive data, including source-generated logging methods that handle personal or sensitive information.
 
 ### Metadata report
 
-A comprehensive report that combines both metrics and compliance information.
+Generates a comprehensive report that combines both metrics and compliance information.
 
 ## Configure report generation
 
@@ -76,7 +76,7 @@ Configure report generation by setting MSBuild properties in your project file:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.9.0" />
+    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="10.0.0" />
   </ItemGroup>
 
 </Project>
@@ -272,9 +272,9 @@ Here's a complete example showing how to set up privacy auditing:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.9.0" />
-    <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="9.9.0" />
-    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="9.9.0" />
+    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="10.0.0" />
   </ItemGroup>
 
 </Project>

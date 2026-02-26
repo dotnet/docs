@@ -41,7 +41,7 @@ dotnet add package Microsoft.Extensions.TimeProvider.Testing
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="9.10.0" />
+<PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="10.0.0" />
 ```
 
 ---

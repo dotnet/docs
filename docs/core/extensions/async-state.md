@@ -39,7 +39,7 @@ dotnet add package Microsoft.Extensions.AsyncState
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.AsyncState" Version="9.8.0" />
+<PackageReference Include="Microsoft.Extensions.AsyncState" Version="10.0.0" />
 ```
 
 ---
@@ -74,40 +74,7 @@ The value set in the context flows through asynchronous operations, making it av
 
 ## Use IAsyncState
 
-The <xref:Microsoft.Extensions.AsyncState.IAsyncState> interface provides a simpler property-based API for accessing async state:
-
-```csharp
-using Microsoft.Extensions.AsyncState;
-using Microsoft.Extensions.DependencyInjection;
-
-var services = new ServiceCollection();
-services.AddAsyncState();
-
-var provider = services.BuildServiceProvider();
-var asyncState = provider.GetRequiredService<IAsyncState>();
-
-// Initialize the state
-asyncState.Initialize();
-
-// Set a value
-asyncState.Value = new RequestInfo 
-{ 
-    RequestId = Guid.NewGuid().ToString(),
-    Timestamp = DateTimeOffset.UtcNow
-};
-
-// Access the value
-Console.WriteLine($"Request ID: {asyncState.Value.RequestId}");
-
-// Reset the state
-asyncState.Reset();
-
-public class RequestInfo
-{
-    public string RequestId { get; set; } = string.Empty;
-    public DateTimeOffset Timestamp { get; set; }
-}
-```
+The <xref:Microsoft.Extensions.AsyncState.IAsyncState> interface is the base lifecycle interface that `IAsyncContext<T>` extends. It provides `Initialize()` and `Reset()` methods for managing the async state lifecycle. For typed access to async state values, use `IAsyncContext<T>` instead.
 
 ## Practical example: Request correlation
 
@@ -131,10 +98,10 @@ In ASP.NET Core applications, you can use async state to flow request-specific i
 
 When using async state, consider the following best practices:
 
-- **Limit state size**: Keep async state objects small to minimize memory overhead and serialization costs in scenarios where async state might need to be serialized.
-- **Initialize state early**: Set async state values as early as possible in your async operation to ensure they're available throughout the execution flow.
+- **Limit state size**: Keep async state objects small to reduce memory overhead and maintain performance.
+- **Initialize state early**: Set async state values as early as possible to ensure they're available to all downstream async operations.
 - **Clean up state**: Reset or clear async state when it's no longer needed to avoid memory leaks in long-running applications.
-- **Use appropriate interfaces**: Use `IAsyncContext<T>` when you need explicit control over state initialization and reset. Use `IAsyncState` for simpler property-based access.
+- **Use appropriate interfaces**: Use `IAsyncContext<T>` to get and set typed values within the current async context. Use `IAsyncState` when you need to directly manage the initialization and reset lifecycle.
 - **Type safety**: Create specific context types rather than using generic dictionaries to maintain type safety and improve code clarity.
 
 ## See also

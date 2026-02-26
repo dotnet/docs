@@ -42,21 +42,24 @@ class FunctionInvoker
 
         var chatOptions = new ChatOptions
         {
-            Tools = [AIFunctionFactory.Create((string location, int temperature) =>
-    {
-        if (string.IsNullOrWhiteSpace(location))
-        {
-            throw new ArgumentException("Location cannot be empty", nameof(location));
-        }
-        return $"Recorded temperature of {temperature}°C for {location}";
-    },
-    "record_temperature",
-    "Records the temperature for a location")]
+            Tools = [
+                AIFunctionFactory.Create(
+                    (string location, int temperature) =>
+                    {
+                        if (string.IsNullOrWhiteSpace(location))
+                        {
+                            throw new ArgumentException("Location cannot be empty", nameof(location));
+                        }
+                        return $"Recorded temperature of {temperature}°C for {location}";
+                    },
+                    "record_temperature",
+                    "Records the temperature for a location")
+            ]
         };
 
         List<ChatMessage> chatHistory = [
             new(ChatRole.System, "You are a weather data recorder."),
-    new(ChatRole.User, "Record the temperature as 25 degrees for London")
+            new(ChatRole.User, "Record the temperature as 25 degrees for London")
         ];
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);

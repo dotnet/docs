@@ -40,7 +40,7 @@ class IncludeDetailedErrors
 
         List<ChatMessage> chatHistory = [
             new(ChatRole.System, "You are a helpful weather assistant."),
-    new(ChatRole.User, "What's the temperature in Paris?")
+            new(ChatRole.User, "What's the temperature in Paris?")
         ];
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);

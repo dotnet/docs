@@ -11,21 +11,25 @@ the [feature inclusion notes](#feature-coverage-decisions).
 
 1. **Make Fundamentals complete.** A developer learning C# should be able to read the Fundamentals section and understand "Everyday C#" — the features and patterns used in the vast majority of production code.
 1. **Pull content toward the goal.** Rather than focusing on migrating content *out* of legacy sections (Tutorials, C# concepts, How-to, Programming guide), we focus on building a great Fundamentals section and pull content in as it fits.
+1. **Teach through examples.** Most engineers learn software languages by reading and writing example code, not by reading *about* the language. Every article in the Fundamentals section should be example-heavy: short prose introduces a concept, then one or more code samples demonstrate it in context. Favor showing over telling.
 1. **Follow the C# standard's organization.** The section ordering mirrors the [C# standard](https://github.com/dotnet/csharpstandard/blob/main/standard/README.md) (§7 Basic concepts → §8 Types → §11 Patterns → §12 Expressions → §15 Classes → §22 Exceptions → §23 Attributes). Content not in the standard appears after standard-aligned sections.
-1. **Emphasize modern C#.** Newer features get fuller explanations. Older features that readers (including AI agents and Copilots) already have extensive information about receive lighter treatment. All sample code uses the latest stable syntax and idioms.
-1. **Target audience.** Developers who know at least one other programming language and are learning C#, or C# developers updating their knowledge of modern idioms. Not absolute beginners in programming.
+1. **Emphasize everday C#.** Everyday C# features get fuller explanations. Older features that readers (including AI agents and Copilots) already have extensive information about receive lighter treatment. All sample code uses the latest released syntax and idioms.
+1. **Target audience.** Developers who know at least one other programming language and are learning C#, or C# developers updating their knowledge of the latest features and idioms. Not absolute beginners in programming.
+1. **Samples showcase Everday C# feature sets.** All sample code across the Fundamentals section should incorporate the language features listed in [Include and explain](#include-and-explain), [Use in sample code without detailed explanation](#use-in-sample-code-without-detailed-explanation), and the relevant subsets from [Include a subset](#include-a-subset). This means even an article about, for example, exception handling should use collection expressions, file-scoped namespaces, nullable reference types, raw string literals, and other everyday C# features in its samples — not just the feature under discussion. Readers absorb these idioms organically by seeing them used consistently.
 
 ## Include major topic types
 
-The following table describes each topic type. Every section should include an *Overview*, any number of *Concepts* articles, pertinent *Tutorials*. Where necesssary, *troubleshooting* and *how to* articles can be added. All *Reference* articles are in the *language reference section*.
+The following table lists each topic type. Every section should include an *Overview*, any number of *Concepts* articles, pertinent *Tutorials*. Where necessary, *troubleshooting* and *how to* articles can be added. All *Reference* articles are in the *language reference section*.
+
+**All content types should be example-heavy.** Short prose introduces or connects concepts; code samples do the teaching. Samples in every article should restrict features to the set of C# features in Goals 6 and 7, and [Decision 10](#decision-10-example-heavy-articles-with-everyday-c-feature-saturation)).
 
 | Content type | What is it |
 | --- | --- |
-| Overview | An article explaining the feature from a technical point of view. And/or an article comparing features across related features. |
-| Tutorials | Scenario-based procedures for top tasks using the feature.The focus is on showing the customer how to do the task, not on helping them set up their own environment. |
-| Concepts | In-depth explanation of functionality related to the feature that are fundamental to understanding and use. |
-| How-to guides | Procedural articles that show the reader how to complete a task. |
-| Troubleshooting articles | Articles that help users solve a common issue. |
+| Overview | An article explaining the feature from a technical point of view. And/or an article comparing features across related features. Leads with a motivating example before diving into details. |
+| Tutorials | Scenario-based procedures for top tasks using the feature. The focus is on showing the customer how to do the task, not on helping them set up their own environment. Code-first from the opening paragraph. |
+| Concepts | In-depth explanation of functionality related to the feature that are fundamental to understanding and use. Each concept is illustrated with at least one focused code sample. |
+| How-to guides | Procedural articles that show the reader how to complete a task. Each step includes the code to accomplish it. |
+| Troubleshooting articles | Articles that help users solve a common issue. Include before-and-after code showing the problem and the fix. |
 | Reference | Documentation for language-based syntax and semantics. |
 
 ## Key Decisions
@@ -34,13 +38,13 @@ The following table describes each topic type. Every section should include an *
 
 **Choice:** Null safety gets a standalone sub-section within Fundamentals, covering both nullable value types and nullable reference types with a comparison between the two.
 
-**Rationale:** Null safety is cross-cutting. It touches the type system, expressions, patterns, and API design. Nullable reference types are the single most impactful feature for code quality in modern C#, and "all new code should use this." Giving it its own section signals that  importance and provides a single place to learn the complete null safety story.
+**Rationale:** Null safety is cross-cutting. It touches the type system, expressions, patterns, and API design. Nullable reference types are the single most impactful feature for code quality in C#, and "all new code should use this." Giving it its own section signals that  importance and provides a single place to learn the complete null safety story.
 
 ### Decision 2: Strings is its own section
 
 **Choice:** Strings get a standalone sub-section within Fundamentals.
 
-**Rationale:** Strings are one of the most-used types in C#, and the existing how-to articles (search, split, concatenate, modify, compare) are among the highest-traffic pages in the C# docs. Modern C# has significantly improved string handling with interpolation (C# 6), raw string literals (C# 11), and interpolated raw strings. The string type also has a rich API surface already documented in the API reference — the Fundamentals content focuses on *using* strings idiomatically, not exhaustively documenting every method.
+**Rationale:** Strings are one of the most-used types in C#, and the existing how-to articles (search, split, concatenate, modify, compare) are among the highest-traffic pages in the C# docs. C# has significantly improved string handling with interpolation (C# 6), raw string literals (C# 11), and interpolated raw strings. The string type also has a rich API surface already documented in the API reference — the Fundamentals content focuses on *using* strings idiomatically, not exhaustively documenting every method.
 
 **Scope boundary:** Custom interpolated string handlers, allocation avoidance techniques, and `Span<char>` manipulation are deferred to Focus
 or Advanced sections.
@@ -56,7 +60,7 @@ entirely.
 
 **Choice:** A small async sub-section appears in Fundamentals, after OOP. It covers consuming async methods with `await` and declaring `async` methods that call other async methods. A brief mention of `await foreach` (async streams) links to the Async Focus section.
 
-**Rationale:** Almost all modern C# applications consume async APIs. Developers need to understand `await` and the `async` method declaration pattern as part of everyday coding. However, the full async model (cancellation, `ConfigureAwait`, parallel patterns, custom awaiters, `TaskCompletionSource`, etc.) belongs in the dedicated Async Focus section.
+**Rationale:** Almost all C# applications consume async APIs. Developers need to understand `await` and the `async` method declaration pattern as part of everyday coding. However, the full async model (cancellation, `ConfigureAwait`, parallel patterns, custom awaiters, `TaskCompletionSource`, etc.) belongs in the dedicated Async Focus section.
 
 ### Decision 5: New extensions syntax replaces `this` extension methods
 
@@ -91,6 +95,19 @@ entirely.
 **Choice:** Basic event usage (subscribing, unsubscribing, the standard event pattern) appears in Fundamentals. Custom event accessors, advanced multicast scenarios, and designing event-based architectures are deferred.
 
 **Rationale:** Events are pervasive in .NET (UI frameworks, ASP.NET middleware, domain events). Developers need to know how to subscribe to and raise events. The internal mechanics of custom event accessors are a niche topic.
+
+### Decision 10: Example-heavy articles with "Everyday C#" feature saturation
+
+**Choice:** Every Fundamentals article leads with code examples and uses everyday C# features throughout its samples — not only the feature the article teaches.
+
+**Rationale:** Most engineers learn a language by reading and writing code, not by reading prose descriptions. Articles should therefore be structured as short explanatory text followed by meaningful, runnable examples. Additionally, samples should incorporate the full "Everyday C#" feature set: features from "Include and explain," features from "Use in sample code without detailed explanation," and the applicable subsets from "Include a subset." For instance, an article on exception handling should still use file-scoped namespaces, collection expressions, nullable reference types, and raw string literals when they fit naturally. This consistent exposure helps readers internalize idioms across the entire Fundamentals section.
+
+**Implications for authors:**
+
+- *Structure each article as concept → example → concept → example*, not as a wall of prose with a code block at the end.
+- *Prefer small, focused examples* that each illustrate one point, over large monolithic samples.
+- *Review every sample's using directives, type declarations, and local variables* to confirm they use the latest syntax (e.g., `global using`, file-scoped namespace, `var`, collection expressions, primary constructors) even when those features aren't the article's topic.
+- *Treat the three feature tables as a checklist* when writing or reviewing samples. If a feature from "Use in sample code without detailed explanation" appears naturally, use it without commentary. If a feature from "Include a subset" is relevant to the scenario, include it with a brief link to its full article.
 
 ## Feature Coverage Decisions
 
@@ -471,7 +488,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | String how-tos (5 articles) | `how-to/` string articles | Pull |
 | Access modifiers | `programming-guide/classes-and-structs/access-modifiers.md` | Pull + revise |
 | Fields and constants | `programming-guide/classes-and-structs/fields.md` + `constants.md` | Merge + revise |
-| Properties | `programming-guide/classes-and-structs/properties.md` + related | Pull + major revise for modern features |
+| Properties | `programming-guide/classes-and-structs/properties.md` + related | Pull + major revise for everday C# features |
 | Constructors | `programming-guide/classes-and-structs/constructors.md` + related | Pull + add primary constructors |
 | Methods | `programming-guide/classes-and-structs/methods.md` + `concepts/methods.md` | Merge + revise |
 | Polymorphism | `programming-guide/classes-and-structs/polymorphism.md` | Merge into Inheritance |

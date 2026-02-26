@@ -1,10 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 public class DisposableBase : IDisposable
 {
-    // Detect redundant Dispose() calls.
-    private bool _isDisposed;
+    // Detect redundant Dispose() calls in a thread-safe manner.
+    // _isDisposed == 0 means Dispose(bool) has not been called yet.
+    // _isDisposed == 1 means Dispose(bool) has been already called.
+    private int _isDisposed;
 
     // Instantiate a disposable object owned by this class.
     private Stream? _managedResource = new MemoryStream();
@@ -19,10 +22,10 @@ public class DisposableBase : IDisposable
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)
     {
-        if (!_isDisposed)
+        // In case _isDisposed is 0, atomically set it to 1.
+        // Enter the branch only if the original value is 0.
+        if (Interlocked.CompareExchange(ref _isDisposed, 1, 0) == 0)
         {
-            _isDisposed = true;
-
             if (disposing)
             {
                 // Dispose managed state.

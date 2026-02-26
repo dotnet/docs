@@ -99,7 +99,7 @@ public interface ITestFramework : IExtension
 
 #### The `IExtension` interface
 
-The `ITestFramework` interface inherits from the `IExtension` interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`. Please make sure that you return `true` from this method if you have no special needs.
+The `ITestFramework` interface inherits from the `IExtension` interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`. Please make sure that you return `true` from this method if you have no specific requirements to disable it.
 
 #### The `CreateTestSessionAsync` method
 

@@ -148,7 +148,6 @@ In the preceding code:
 - The original and newly deserialized instances are compared for equality.
 - The result of the comparison is written to the console.
 
-
 For more information, see [How to serialize and deserialize JSON in .NET](../serialization/system-text-json/how-to.md).
 
 ### Work with TimeSpan and DateTime

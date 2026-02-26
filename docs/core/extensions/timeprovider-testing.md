@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Testing with FakeTimeProvider
 
-The [`Microsoft.Extensions.TimeProvider.Testing`](https://www.nuget.org/packages/Microsoft.Extensions.TimeProvider.Testing) NuGet package provides a `FakeTimeProvider` class that enables deterministic testing of code that depends on time. This fake implementation allows you to control the system time within your tests, ensuring predictable and repeatable results.
+The [📦 `Microsoft.Extensions.TimeProvider.Testing`](https://www.nuget.org/packages/Microsoft.Extensions.TimeProvider.Testing) NuGet package provides a `FakeTimeProvider` class that enables deterministic testing of code that depends on time. This fake implementation allows you to control the system time within your tests, ensuring predictable and repeatable results.
 
 ## Why use FakeTimeProvider
 

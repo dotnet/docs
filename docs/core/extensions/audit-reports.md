@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Audit reports for privacy and compliance
 
-The [`Microsoft.Extensions.AuditReports`](https://www.nuget.org/packages/Microsoft.Extensions.AuditReports) NuGet package provides functionality to generate audit reports about the code being compiled. These reports are particularly useful for privacy audits, compliance reviews, and understanding what telemetry data your application collects and transmits.
+The [📦 `Microsoft.Extensions.AuditReports`](https://www.nuget.org/packages/Microsoft.Extensions.AuditReports) NuGet package provides functionality to generate audit reports about the code being compiled. These reports are particularly useful for privacy audits, compliance reviews, and understanding what telemetry data your application collects and transmits.
 
 ## Why use audit reports
 
@@ -46,17 +46,11 @@ For more information, see [dotnet add package](../tools/dotnet-package-add.md) o
 
 The package can generate three types of reports:
 
-### Metrics report
-
-Generates a report on source-generated metric definitions used in your code, so you can understand what metrics your application emits.
-
-### Compliance report
-
-Generates a report on the usage of privacy-sensitive data, including source-generated logging methods that handle personal or sensitive information.
-
-### Metadata report
-
-Generates a comprehensive report that combines both metrics and compliance information.
+| Report type | Description |
+|-------------|-------------|
+| Metrics     | Generates a report on [source-generated metric definitions](../diagnostics/metrics-generator.md) used in your code, so you can understand what metrics your application emits. |
+| Compliance  | Generates a report on the usage of privacy-sensitive data, including source-generated logging methods that handle personal or sensitive information. |
+| Metadata    | Generates a comprehensive report that combines both metrics and compliance information. |
 
 ## Configure report generation
 

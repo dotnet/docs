@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Asynchronous state management
 
-The [`Microsoft.Extensions.AsyncState`](https://www.nuget.org/packages/Microsoft.Extensions.AsyncState) NuGet package provides functionality to store and retrieve objects within the current asynchronous context. This package offers performance and usability improvements over using <xref:System.Threading.AsyncLocal%601> directly, particularly when multiple objects need to be shared across asynchronous operations.
+The [📦 `Microsoft.Extensions.AsyncState`](https://www.nuget.org/packages/Microsoft.Extensions.AsyncState) NuGet package provides functionality to store and retrieve objects within the current asynchronous context. This package offers performance and usability improvements over using <xref:System.Threading.AsyncLocal%601> directly, particularly when multiple objects need to be shared across asynchronous operations.
 
 ## Why use AsyncState
 

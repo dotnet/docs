@@ -40,8 +40,8 @@ The main driving factors for the evolution of the new testing platform are detai
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-running-tests.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
+* TUnit. Built entirely on Microsoft.Testing.Platform and doesn't support VSTest. For more information, see [TUnit documentation](https://tunit.dev/) and [Getting started with TUnit](unit-testing-csharp-with-tunit.md).
 * xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
-* TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
 ## Supported target frameworks
 

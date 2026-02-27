@@ -51,6 +51,7 @@ For more information, see [dotnet add package](../tools/dotnet-package-add.md) o
 The `FakeTimeProvider` extends <xref:System.TimeProvider> to provide controllable time for testing:
 
 :::code language="csharp" source="snippets/timeprovider-testing/csharp/basic-usage.cs" id="BasicUsage":::
+
 ## Initialize with specific time
 
 You can initialize `FakeTimeProvider` with a specific starting time:
@@ -150,14 +151,8 @@ public class DelayedOperationTests
     }
 }
 
-public class DelayedOperation
+public class DelayedOperation(TimeProvider timeProvider)
 {
-    private readonly TimeProvider _timeProvider;
-
-    public DelayedOperation(TimeProvider timeProvider)
-    {
-        _timeProvider = timeProvider;
-    }
 
     public async Task ExecuteAsync(TimeSpan delay)
     {
@@ -200,17 +195,11 @@ public class PeriodicOperationTests
     }
 }
 
-public class PeriodicCounter
+public class PeriodicCounter(TimeProvider timeProvider)
 {
-    private readonly TimeProvider _timeProvider;
     private ITimer? _timer;
     
     public int Count { get; private set; }
-
-    public PeriodicCounter(TimeProvider timeProvider)
-    {
-        _timeProvider = timeProvider;
-    }
 
     public void Start(TimeSpan interval)
     {
@@ -262,15 +251,9 @@ public class SubscriptionTests
     }
 }
 
-public class Subscription
+public class Subscription(TimeProvider timeProvider)
 {
-    private readonly TimeProvider _timeProvider;
     private DateTimeOffset _activationDate;
-
-    public Subscription(TimeProvider timeProvider)
-    {
-        _timeProvider = timeProvider;
-    }
 
     public void Activate()
     {
@@ -328,15 +311,9 @@ public class CacheServiceTests
     }
 }
 
-public class CacheService
+public class CacheService(TimeProvider timeProvider)
 {
-    private readonly TimeProvider _timeProvider;
     private readonly Dictionary<string, CacheEntry> _cache = new();
-
-    public CacheService(TimeProvider timeProvider)
-    {
-        _timeProvider = timeProvider;
-    }
 
     public void Set(string key, string value, TimeSpan expiration)
     {

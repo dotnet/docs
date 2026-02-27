@@ -21,7 +21,7 @@ if (context.TryGet(out var retrievedContext))
 // </snippet>
 
 // <UserContext>
-public class UserContext
+public record class UserContext
 {
     public required string UserId { get; set; }
     public required string UserName { get; set; }

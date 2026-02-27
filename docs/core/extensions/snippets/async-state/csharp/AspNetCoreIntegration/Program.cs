@@ -34,14 +34,8 @@ app.MapGet("/api/data", async (RequestHandler handler) =>
 app.Run();
 
 // <RequestHandler>
-public class RequestHandler
+public class RequestHandler(IAsyncContext<RequestMetadata> asyncContext)
 {
-    private readonly IAsyncContext<RequestMetadata> _asyncContext;
-
-    public RequestHandler(IAsyncContext<RequestMetadata> asyncContext)
-    {
-        _asyncContext = asyncContext;
-    }
 
     public async Task<object> GetDataAsync()
     {
@@ -64,7 +58,7 @@ public class RequestHandler
 // </RequestHandler>
 
 // <RequestMetadata>
-public class RequestMetadata
+public record class RequestMetadata
 {
     public required string RequestId { get; set; }
     public required string RequestPath { get; set; }

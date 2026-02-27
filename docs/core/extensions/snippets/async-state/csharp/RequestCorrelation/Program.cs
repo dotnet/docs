@@ -15,14 +15,8 @@ var processor = host.Services.GetRequiredService<RequestProcessor>();
 await processor.ProcessRequestAsync("ABC-123");
 
 // <RequestProcessor>
-public class RequestProcessor
+public class RequestProcessor(IAsyncContext<CorrelationContext> asyncContext)
 {
-    private readonly IAsyncContext<CorrelationContext> _asyncContext;
-
-    public RequestProcessor(IAsyncContext<CorrelationContext> asyncContext)
-    {
-        _asyncContext = asyncContext;
-    }
 
     public async Task ProcessRequestAsync(string correlationId)
     {

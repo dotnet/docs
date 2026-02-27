@@ -56,7 +56,7 @@ var services = new ServiceCollection();
 
 services.AddActivatedSingleton<MyService>();
 
-var provider = services.BuildServiceProvider();
+ServiceProvider provider = services.BuildServiceProvider();
 ```
 
 In this example, `MyService` is instantiated when `BuildServiceProvider()` is called, not when it's first requested from the service provider.
@@ -73,7 +73,7 @@ var services = new ServiceCollection();
 services.AddSingleton<MyService>();
 services.ActivateSingleton<MyService>();
 
-var provider = services.BuildServiceProvider();
+ServiceProvider provider = services.BuildServiceProvider();
 ```
 
 This approach is useful when you have existing service registrations that you want to activate at startup without changing the registration code.
@@ -90,7 +90,7 @@ var services = new ServiceCollection();
 services.TryAddActivatedSingleton<MyService>();
 services.TryAddActivatedSingleton<MyService>(); // This has no effect
 
-var provider = services.BuildServiceProvider();
+ServiceProvider provider = services.BuildServiceProvider();
 ```
 
 This method follows the same pattern as other `TryAdd*` methods in the dependency injection framework, ensuring services are only registered once.

@@ -57,7 +57,7 @@ var services = new ServiceCollection();
 
 services.AddAsyncState();
 
-var provider = services.BuildServiceProvider();
+ServiceProvider provider = services.BuildServiceProvider();
 ```
 
 This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> and <xref:Microsoft.Extensions.AsyncState.IAsyncState> interfaces available for dependency injection.

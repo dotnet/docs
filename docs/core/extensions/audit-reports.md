@@ -60,7 +60,7 @@ Configure report generation by setting MSBuild properties in your project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     
     <!-- Enable audit report generation -->
     <GenerateComplianceReport>true</GenerateComplianceReport>
@@ -202,7 +202,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '9.0.x'
+        dotnet-version: '10.0.x'
     
     - name: Build with compliance report
       run: dotnet build -p:GenerateComplianceReport=true
@@ -258,7 +258,7 @@ Here's a complete example showing how to set up privacy auditing:
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     
     <!-- Enable compliance reporting -->
     <GenerateComplianceReport>true</GenerateComplianceReport>
@@ -280,14 +280,8 @@ Here's a complete example showing how to set up privacy auditing:
 using Microsoft.Extensions.Compliance.Classification;
 using Microsoft.Extensions.Logging;
 
-public partial class OrderService
+public partial class OrderService(ILogger<OrderService> logger)
 {
-    private readonly ILogger<OrderService> _logger;
-
-    public OrderService(ILogger<OrderService> logger)
-    {
-        _logger = logger;
-    }
 
     [LoggerMessage(Level = LogLevel.Information, Message = "Order created for customer {CustomerId}")]
     public partial void LogOrderCreated(

@@ -1,7 +1,3 @@
----
-ai-usage: ai-assisted
----
-
 # C# Fundamentals Section: Restructuring Plan
 
 This document captures the decisions, rationale, and proposed outline for restructuring the C# Fundamentals section. It's the result of planning discussions informed by the [GitHub project board](https://github.com/orgs/dotnet/projects/225/views/1), the [C# standard](https://github.com/dotnet/csharpstandard), and
@@ -123,7 +119,6 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | `field` keyword (field-backed properties) | C# 14 | OOP > Properties |
 | Extensions (new syntax) | C# 14 | OOP > Extensions |
 | Dictionary expressions | C# 14 | Type system > Generics |
-| `Lock` object | C# 13 | Lock statement |
 | `params` collections | C# 13 | OOP > Methods |
 | Collection expressions | C# 12 | Type system > Generics |
 | Primary constructors | C# 12 | OOP > Constructors |
@@ -179,6 +174,7 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Object and collection initializers | C# 3 | Type system > Classes |
 | Auto-implemented properties | C# 3 | OOP > Properties |
 | Lambda expressions | C# 3 | Type system > Delegates/lambdas |
+| LINQ query expressions | C# 3 | Statements > LINQ |
 | Generics | C# 2 | Type system > Generics |
 | Iterators (`yield`) | C# 2 | Functional techniques > Iterators |
 | Nullable value types | C# 2 | Null safety > Nullable value types |
@@ -191,6 +187,8 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Reference parameters (`ref`/`out`) | C# 1 | OOP > Methods |
 | `params` arrays | C# 1 | OOP > Methods |
 | Expressions | C# 1 | Throughout |
+| Selection statements (`if`/`else`, `switch`) | C# 1 | Statements |
+| Iteration statements (`for`, `foreach`, `while`, `do`-`while`) | C# 1 | Statements |
 | `using` statement | C# 1 | OOP > Object lifetime |
 | `goto` in `switch` | C# 1 | Mentioned in pattern matching context only |
 | Preprocessor directives | C# 1 | Program structure > Preprocessor directives |
@@ -199,7 +197,6 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Verbatim identifier | C# 1 | Type system > Built-in types |
 | Unsigned integer types | C# 1 | Type system > Built-in types |
 | Boxing and unboxing | C# 1 | Type system > Conversions |
-| Lock statement | C# 1 | Lock statement |
 
 ### Use in sample code without detailed explanation
 
@@ -383,6 +380,15 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 31 | Compare strings | 📥 Pull | From how-to |
 | 76 | Tutorial: Explore string interpolation | 📥 Pull from Tutorials | |
 
+### Statements and expressions (§12–§13)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 83 | Selection statements | 📝 New | `if`/`else` branching, `switch` statement, ternary conditional operator; links to pattern matching for `switch` expressions |
+| 84 | Iteration statements | 📝 New | `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops |
+| 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12); ranges and indexes (C# 8) applied to collections |
+| 86 | LINQ and query expressions | 📝 New | Query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios |
+
 ### Pattern matching (§11)
 
 | # | Article | Status | Notes |
@@ -421,6 +427,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 51 | Events | 📥 Pull subset | Subscribe/unsubscribe, standard event pattern |
 | 52 | Partial types and members | 📝 New | Brief: partial classes/structs, partial methods (C# 9), partial properties (C# 13), partial events/constructors (C# 14); source generator context |
 | 53 | Object lifetime and `IDisposable` | 📝 New | `using` statement (C# 1), `using` declaration (C# 8), dispose pattern; exclude finalizers |
+| 87 | Encapsulation and composition | 📝 New | Encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs |
 | 70 | Tutorial: Object-oriented C# | ✅ Exists | |
 | 71 | Tutorial: Inheritance in C# and .NET | ✅ Exists | |
 | 75 | Tutorial: Explore indexes and ranges | 📥 Pull from Tutorials | |
@@ -471,9 +478,9 @@ The following outline shows every article in the proposed Fundamentals section, 
 |---|---|---|
 | ✅ Exists, no change needed | 20 | Exceptions, Coding style, some Tutorials, some Program structure |
 | 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching, Deconstruction, Functional overview, OOP overview, Inheritance merge |
-| 📝 New article to write | 22 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Lock, and others |
+| 📝 New article to write | 27 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, and others |
 | 📥 Pull and revise from other section | 21 | From Programming Guide, Concepts, How-to, Tutorials |
-| **Total** | **~72** | Not including potential article splits |
+| **Total** | **~77** | Not including potential article splits |
 
 ## Content Sources for Pull Articles
 
@@ -676,6 +683,27 @@ The following is the complete proposed TOC:
       # PULL from current Tutorials section
       href: fundamentals/tutorials/string-interpolation.md
 
+  # ─── §12–§13 Statements and expressions ───
+  - name: Statements and expressions
+    items:
+    - name: Selection statements
+      # NEW: if/else branching, switch statement, ternary conditional;
+      # links to pattern matching for switch expressions
+      href: fundamentals/statements/selection-statements.md
+    - name: Iteration statements
+      # NEW: for, foreach, while, do-while; iterating collections;
+      # break and continue in loops
+      href: fundamentals/statements/iteration-statements.md
+    - name: Working with collections
+      # NEW: Arrays, List<T>, Dictionary<K,V>; adding, removing, searching;
+      # collection expressions (C# 12); ranges and indexes (C# 8)
+      href: fundamentals/statements/collections.md
+    - name: LINQ and query expressions
+      # NEW (subset): query syntax, fluent syntax, common operators
+      # (Where, Select, OrderBy, GroupBy); lambda expressions in LINQ;
+      # link to LINQ Focus section for advanced scenarios
+      href: fundamentals/statements/linq.md
+
   # ─── §11 Patterns and pattern matching ───
   - name: Pattern matching
     items:
@@ -788,6 +816,10 @@ The following is the complete proposed TOC:
       # NEW: using statement (C# 1), using declaration (C# 8),
       # dispose pattern; exclude finalizers
       href: fundamentals/object-oriented/object-lifetime.md
+    - name: Encapsulation and composition
+      # NEW: encapsulation as information hiding; composition over
+      # inheritance; combining objects to build complex behavior
+      href: fundamentals/object-oriented/encapsulation-composition.md
     - name: "Tutorial: Object-oriented C#"
       href: fundamentals/tutorials/oop.md
     - name: "Tutorial: Inheritance in C# and .NET"

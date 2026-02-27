@@ -6,7 +6,7 @@ ms.date: 03/13/2023
 
 # File globbing in .NET
 
-In this article, you'll learn how to use file globbing with the [`Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is the act of defining one or more glob patterns, and yielding files from either inclusive or exclusive matches.
+In this article, you'll learn how to use file globbing with the [📦 `Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is the act of defining one or more glob patterns, and yielding files from either inclusive or exclusive matches.
 
 ## Patterns
 

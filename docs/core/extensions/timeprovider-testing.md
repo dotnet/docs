@@ -3,7 +3,7 @@ title: Testing with FakeTimeProvider
 description: Learn how to test time-dependent code using FakeTimeProvider from Microsoft.Extensions.TimeProvider.Testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2025
+ms.date: 02/26/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -52,22 +52,7 @@ For more information, see [dotnet add package](../tools/dotnet-package-add.md) o
 
 The `FakeTimeProvider` extends <xref:System.TimeProvider> to provide controllable time for testing:
 
-```csharp
-using Microsoft.Extensions.Time.Testing;
-
-var fakeTimeProvider = new FakeTimeProvider();
-
-// Get the current time
-var now = fakeTimeProvider.GetUtcNow();
-Console.WriteLine($"Current time: {now}");
-
-// Advance time by 1 hour
-fakeTimeProvider.Advance(TimeSpan.FromHours(1));
-
-var later = fakeTimeProvider.GetUtcNow();
-Console.WriteLine($"Time after advance: {later}");
-```
-
+:::code language="csharp" source="snippets/timeprovider-testing/csharp/basic-usage.cs" id="BasicUsage":::
 ## Initialize with specific time
 
 You can initialize `FakeTimeProvider` with a specific starting time:
@@ -119,12 +104,14 @@ Console.WriteLine($"Time advanced by: {elapsed.TotalMinutes} minutes");
 Set the local time zone for the fake time provider:
 
 ```csharp
+using System;
 using Microsoft.Extensions.Time.Testing;
 
 var fakeTimeProvider = new FakeTimeProvider();
 
-// Set to Pacific Standard Time
-var pacificTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
+// Set to Pacific time zone in a cross-platform way
+var timeZoneId = OperatingSystem.IsWindows() ? "Pacific Standard Time" : "America/Los_Angeles";
+var pacificTimeZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
 fakeTimeProvider.SetLocalTimeZone(pacificTimeZone);
 
 var localTime = fakeTimeProvider.GetLocalNow();

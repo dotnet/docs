@@ -3,7 +3,7 @@ title: Audit reports for privacy and compliance
 description: Learn how to generate audit reports for privacy-sensitive data and metrics using Microsoft.Extensions.AuditReports in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2025
+ms.date: 02/26/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -35,7 +35,7 @@ dotnet add package Microsoft.Extensions.AuditReports
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.AuditReports" Version="10.0.0" />
+<PackageReference Include="Microsoft.Extensions.AuditReports" Version="10.0.0" PrivateAssets="all" />
 ```
 
 ---

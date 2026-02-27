@@ -19,7 +19,7 @@ app.Use(async (context, next) =>
     asyncContext.Set(new RequestMetadata
     {
         RequestId = context.TraceIdentifier,
-        RequestPath = context.Request.Path,
+        RequestPath = context.Request.Path.ToString(),
         StartTime = DateTimeOffset.UtcNow
     });
 

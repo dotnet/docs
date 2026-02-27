@@ -3,7 +3,7 @@ title: Dependency injection auto-activation
 description: Learn how to use auto-activation for singleton services in .NET to ensure services are instantiated at startup rather than on first use.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2025
+ms.date: 02/26/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---

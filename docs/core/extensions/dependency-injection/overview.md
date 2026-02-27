@@ -37,7 +37,7 @@ Dependency injection addresses hard-coded dependency problems through:
   .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 
   > [!IMPORTANT]
-  > Desktop apps control their own lifetime. Frameworks like WPF and Windows Forms require you to build your own <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> implementation and integrate it with the lifetime events of the app.
+  > Desktop apps control their own lifetime. Frameworks like WPF and Windows Forms require you to integrate the host lifetime with the application lifetime events.
 
 - Injection of the service into the constructor of the class where it's used.
 

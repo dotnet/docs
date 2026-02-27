@@ -129,7 +129,7 @@ Because `TimeOnly` only represents a 24-hour period, it rolls over forwards or b
 
 <!-- This section is somewhat duplicated in system-text-json-support.md section 'Serialize DateOnly and TimeOnly properties' -->
 
-Starting with .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
+Starting in .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
 
 :::code source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="appointment":::
 :::code source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="appointment":::

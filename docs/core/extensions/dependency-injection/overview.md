@@ -51,7 +51,7 @@ As an example, assume the `IMessageWriter` interface defines the `Write` method.
 > [!IMPORTANT]
 > The `Microsoft.Extensions.Hosting` NuGet package provides the types used in this article.
 
-:::code language="csharp" source="snippets/overview/Program.cs" highlight="3-6" id="All":::
+:::code language="csharp" source="snippets/overview/Program.cs" highlight="5-8" id="All":::
 
 In the preceding code example, the highlighted lines:
 

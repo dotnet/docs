@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/aspire/index.yml",
+      "redirect_url": "https://aspire.dev/"
+    },
+    {
       "source_path_from_root": "/docs/aspire/storage/quickstart-azure-storage.md",
       "redirect_url": "https://aspire.dev/integrations/cloud/azure/azure-storage-blobs/"
     },

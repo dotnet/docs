@@ -33,6 +33,9 @@ Docker is becoming the de facto standard in the container industry, supported by
 
 In addition, the [microservices](https://martinfowler.com/articles/microservices.html) architecture is emerging as an important approach for distributed mission-critical applications. In a microservice-based architecture, the application is built on a collection of services that can be developed, tested, deployed, and versioned independently.
 
+> [!TIP]
+> For the modern .NET developer experience for distributed apps, see [Aspire](https://aspire.dev/get-started/what-is-aspire/). Aspire provides orchestration, service discovery, and built-in integrations for common services like databases, caches, and messaging.
+
 ## About this guide
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET and Docker containers. To make it easier to get started with containers and microservices, the guide focuses on a reference containerized and microservice-based application that you can explore. The sample application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.

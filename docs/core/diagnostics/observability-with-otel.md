@@ -110,6 +110,7 @@ For more details on Aspire see:
 - [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
 - [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
+- [Aspire dashboard overview](https://aspire.dev/dashboard/aspire-dashboard-overview/) (aspire.dev)
 
 ### Reuse Service Defaults project without Aspire Orchestration
 

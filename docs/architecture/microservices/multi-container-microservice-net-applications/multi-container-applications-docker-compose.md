@@ -469,6 +469,9 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 - **Building Docker Images for .NET Applications**
   [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
+- **Migrate from Docker Compose to Aspire** \
+  <https://aspire.dev/app-host/migrate-from-docker-compose-to-aspire/>—Aspire offers a code-first alternative to Docker Compose with built-in service discovery and health checks.
+
 > [!div class="step-by-step"]
 > [Previous](data-driven-crud-microservice.md)
 > [Next](database-server-container.md)

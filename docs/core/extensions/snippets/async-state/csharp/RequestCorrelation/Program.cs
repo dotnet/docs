@@ -21,7 +21,7 @@ public class RequestProcessor(IAsyncContext<CorrelationContext> asyncContext)
     public async Task ProcessRequestAsync(string correlationId)
     {
         // Set correlation context at the beginning of request processing
-        _asyncContext.Set(new CorrelationContext { CorrelationId = correlationId });
+        asyncContext.Set(new CorrelationContext { CorrelationId = correlationId });
 
         // The correlation ID flows through all async operations
         await Step1Async();
@@ -32,7 +32,7 @@ public class RequestProcessor(IAsyncContext<CorrelationContext> asyncContext)
     {
         await Task.Yield();
         
-        if (_asyncContext.TryGet(out var context))
+        if (asyncContext.TryGet(out var context))
         {
             Console.WriteLine($"Step 1 - Correlation ID: {context.CorrelationId}");
         }
@@ -42,7 +42,7 @@ public class RequestProcessor(IAsyncContext<CorrelationContext> asyncContext)
     {
         await Task.Yield();
         
-        if (_asyncContext.TryGet(out var context))
+        if (asyncContext.TryGet(out var context))
         {
             Console.WriteLine($"Step 2 - Correlation ID: {context.CorrelationId}");
         }

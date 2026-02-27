@@ -41,7 +41,7 @@ public class RequestHandler(IAsyncContext<RequestMetadata> asyncContext)
     {
         await Task.Yield();
         
-        if (_asyncContext.TryGet(out var metadata))
+        if (asyncContext.TryGet(out var metadata))
         {
             var duration = DateTimeOffset.UtcNow - metadata.StartTime;
             return new

@@ -49,7 +49,7 @@ Dependency injection addresses hard-coded dependency problems through:
 As an example, assume the `IMessageWriter` interface defines the `Write` method. This interface is implemented by a concrete type, `MessageWriter`, shown previously. The following sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a [*singleton* lifetime](service-lifetimes.md#singleton), which means it isn't disposed until the app shuts down.
 
 > [!IMPORTANT]
-> The `Microsoft.Extensions.Hosting` NuGet package provides the types used in this article.
+> The [`Microsoft.Extensions.Hosting` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/) provides the types used in this article.
 
 :::code language="csharp" source="snippets/overview/Program.cs" highlight="5-8" id="All":::
 

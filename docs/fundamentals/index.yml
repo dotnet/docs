@@ -89,10 +89,8 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro
       - linkListType: tutorial
         links:
-          - text: Create a Hello World app in Visual Studio Code
-            url: ../core/tutorials/with-visual-studio-code.md
-          - text: Create a Hello World app in Visual Studio
-            url: ../core/tutorials/with-visual-studio.md
+          - text: Create a Hello World app
+            url: ../core/tutorials/create-console-app.md
           - text: Containerize a .NET Core app
             url: ../core/docker/build-container.md
       - linkListType: concept

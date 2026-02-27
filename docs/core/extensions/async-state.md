@@ -1,9 +1,7 @@
 ---
 title: Asynchronous state management
 description: Learn how to efficiently manage ambient state in asynchronous contexts using Microsoft.Extensions.AsyncState in .NET.
-author: IEvangelist
-ms.author: dapine
-ms.date: 02/26/2026
+ms.date: 02/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---

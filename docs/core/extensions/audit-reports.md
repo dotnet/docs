@@ -1,8 +1,6 @@
 ---
 title: Audit reports for privacy and compliance
 description: Learn how to generate audit reports for privacy-sensitive data and metrics using Microsoft.Extensions.AuditReports in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/26/2026
 ms.topic: concept-article
 ai-usage: ai-assisted

@@ -1,8 +1,6 @@
 ---
 title: Testing with FakeTimeProvider
 description: Learn how to test time-dependent code using FakeTimeProvider from Microsoft.Extensions.TimeProvider.Testing in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/26/2026
 ms.topic: concept-article
 ai-usage: ai-assisted

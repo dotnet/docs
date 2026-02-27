@@ -23,7 +23,7 @@ var specificTime = new DateTimeOffset(2025, 6, 15, 10, 30, 0, TimeSpan.Zero);
 fakeTimeProvider.SetUtcNow(specificTime);
 Console.WriteLine($"After setting specific time: {fakeTimeProvider.GetUtcNow()}");
 
-// </AdvanceTime>
+// <AdvanceTime>
 // Advance time by 30 minutes.
 fakeTimeProvider.Advance(TimeSpan.FromMinutes(30));
 Console.WriteLine($"After advancing 30 minutes: {fakeTimeProvider.GetUtcNow()}");

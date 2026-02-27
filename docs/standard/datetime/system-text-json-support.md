@@ -59,7 +59,7 @@ If you attempt to read non-compliant formats with <xref:System.Text.Json.Utf8Jso
 
 ## Serialize DateOnly and TimeOnly properties
 
-Starting ith .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
+Starting in .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
 
 <!-- This section is somewhat duplicated in how-to-use-dateonly-timeonly.md section 'Serialize DateOnly and TimeOnly types' -->
 

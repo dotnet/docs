@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Time.Testing;
+﻿using Microsoft.Extensions.Time.Testing;
 using Xunit;
 
 // <SubscriptionTests>
@@ -41,8 +41,8 @@ public class Subscription(TimeProvider timeProvider)
     {
         get
         {
-            var currentTime = timeProvider.GetUtcNow();
-            var expirationDate = _activationDate.AddYears(1);
+            DateTimeOffset currentTime = timeProvider.GetUtcNow();
+            DateTimeOffset expirationDate = _activationDate.AddYears(1);
             return currentTime < expirationDate;
         }
     }

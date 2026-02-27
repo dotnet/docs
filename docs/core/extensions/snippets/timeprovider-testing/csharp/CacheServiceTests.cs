@@ -1,4 +1,4 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Time.Testing;
 using Xunit;
 
@@ -15,14 +15,14 @@ public class CacheServiceTests
         services.AddSingleton<TimeProvider>(fakeTimeProvider);
         services.AddSingleton<CacheService>();
 
-        var provider = services.BuildServiceProvider();
-        var cache = provider.GetRequiredService<CacheService>();
+        ServiceProvider provider = services.BuildServiceProvider();
+        CacheService cache = provider.GetRequiredService<CacheService>();
 
         // Act
         cache.Set("key", "value", TimeSpan.FromMinutes(10));
 
         // Assert - value is present
-        Assert.True(cache.TryGet("key", out var value));
+        Assert.True(cache.TryGet("key", out string? value));
         Assert.Equal("value", value);
 
         // Advance time beyond expiration
@@ -35,17 +35,17 @@ public class CacheServiceTests
 
 public class CacheService(TimeProvider timeProvider)
 {
-    private readonly Dictionary<string, CacheEntry> _cache = new();
+    private readonly Dictionary<string, CacheEntry> _cache = [];
 
     public void Set(string key, string value, TimeSpan expiration)
     {
-        var expiresAt = timeProvider.GetUtcNow() + expiration;
+        DateTimeOffset expiresAt = timeProvider.GetUtcNow() + expiration;
         _cache[key] = new CacheEntry(value, expiresAt);
     }
 
     public bool TryGet(string key, out string? value)
     {
-        if (_cache.TryGetValue(key, out var entry))
+        if (_cache.TryGetValue(key, out CacheEntry? entry))
         {
             if (timeProvider.GetUtcNow() < entry.ExpiresAt)
             {

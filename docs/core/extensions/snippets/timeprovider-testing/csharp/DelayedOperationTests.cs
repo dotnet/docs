@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Time.Testing;
+﻿using Microsoft.Extensions.Time.Testing;
 using Xunit;
 
 // <DelayedOperationTests>
@@ -12,7 +12,7 @@ public class DelayedOperationTests
         var operation = new DelayedOperation(fakeTimeProvider);
 
         // Act
-        var task = operation.ExecuteAsync(TimeSpan.FromMinutes(5));
+        Task task = operation.ExecuteAsync(TimeSpan.FromMinutes(5));
 
         // Assert - operation should not be complete yet
         Assert.False(task.IsCompleted);

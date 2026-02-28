@@ -37,11 +37,7 @@ The connector has the following characteristics.
 
 Here is an example of how to call `UseVector`.
 
-```csharp
-NpgsqlDataSourceBuilder dataSourceBuilder = new("Host=localhost;Port=5432;Username=postgres;Password=example;Database=postgres;");
-dataSourceBuilder.UseVector();
-NpgsqlDataSource dataSource = dataSourceBuilder.Build();
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="Limitations":::
 
 When using the `AddPostgresVectorStore` dependency injection registration method with a connection string, the datasource will be constructed by this method and will automatically have `UseVector` applied.
 
@@ -55,78 +51,27 @@ dotnet add package Microsoft.SemanticKernel.Connectors.PgVector --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods from the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-var services = new ServiceCollection();
-services.AddPostgresVectorStore("<Connection String>");
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted1":::
 
 Where `<Connection String>` is a connection string to the Postgres instance, in the format that [Npgsql](https://www.npgsql.org/) expects, for example `Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=postgres`.
 
 Extension methods that take no parameters are also provided. These require an instance of [NpgsqlDataSource](https://www.npgsql.org/doc/api/Npgsql.NpgsqlDataSource.html) to be separately registered with the dependency injection container. Note that `UseVector` must be called on the builder to enable vector support via [pgvector-dotnet](https://github.com/pgvector/pgvector-dotnet?tab=readme-ov-file#npgsql-c):
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted2":::
 
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddPostgresVectorStore("<Connection String>");
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Npgsql;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<NpgsqlDataSource>(sp =>
-{
-    NpgsqlDataSourceBuilder dataSourceBuilder = new("<Connection String>");
-    dataSourceBuilder.UseVector();
-    return dataSourceBuilder.Build();
-});
-builder.Services.AddPostgresVectorStore();
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted3":::
 
 You can construct a Postgres Vector Store instance directly with a custom data source or with a connection string.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.PgVector;
-using Npgsql;
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted4":::
 
-NpgsqlDataSourceBuilder dataSourceBuilder = new("<Connection String>");
-dataSourceBuilder.UseVector();
-NpgsqlDataSource dataSource = dataSourceBuilder.Build();
-var vectorStore = new PostgresVectorStore(dataSource, ownsDataSource: true);
-```
-
-```csharp
-using Microsoft.SemanticKernel.Connectors.PgVector;
-
-var connection = new PostgresVectorStore("<Connection String>");
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection with a custom data source or with a connection string.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.PgVector;
-using Npgsql;
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted6":::
 
-NpgsqlDataSourceBuilder dataSourceBuilder = new("<Connection String>");
-dataSourceBuilder.UseVector();
-var dataSource = dataSourceBuilder.Build();
-
-var collection = new PostgresCollection<string, Hotel>(dataSource, "skhotels", ownsDataSource: true);
-```
-
-```csharp
-using Microsoft.SemanticKernel.Connectors.PgVector;
-
-var collection = new PostgresCollection<string, Hotel>("<Connection String>", "skhotels");
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="GetStarted7":::
 
 ## Data mapping
 
@@ -148,25 +93,7 @@ The property name override is done by setting the <xref:Microsoft.Extensions.Vec
 
 Here is an example of a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set on its attributes and how it will be represented in Postgres as a table, assuming the Collection name is `Hotels`.
 
-```csharp
-using System;
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey(StorageName = "hotel_id")]
-    public int HotelId { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_name")]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_description")]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineDistance, IndexKind = IndexKind.Hnsw, StorageName = "hotel_description_embedding")]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="PropertyNameOverride":::
 
 ```sql
 CREATE TABLE IF NOT EXISTS public."Hotels" (
@@ -192,136 +119,10 @@ Azure Database for PostgreSQL provides the ability to connect to your database u
 This removes the need to store a username and password in your connection string.
 To use Entra authentication for an Azure DB for PostgreSQL database, you can use the following Npgsql extension method and set a connection string that does not have a username or password:
 
-```csharp
-using System.Text;
-using System.Text.Json;
-using Azure.Core;
-using Azure.Identity;
-using Npgsql;
-
-namespace Program;
-
-public static class NpgsqlDataSourceBuilderExtensions
-{
-    private static readonly TokenRequestContext s_azureDBForPostgresTokenRequestContext = new(["https://ossrdbms-aad.database.windows.net/.default"]);
-
-    public static NpgsqlDataSourceBuilder UseEntraAuthentication(this NpgsqlDataSourceBuilder dataSourceBuilder, TokenCredential? credential = default)
-    {
-        credential ??= new DefaultAzureCredential();
-
-        if (dataSourceBuilder.ConnectionStringBuilder.Username == null)
-        {
-            var token = credential.GetToken(s_azureDBForPostgresTokenRequestContext, default);
-            SetUsernameFromToken(dataSourceBuilder, token.Token);
-        }
-
-        SetPasswordProvider(dataSourceBuilder, credential, s_azureDBForPostgresTokenRequestContext);
-
-        return dataSourceBuilder;
-    }
-
-    public static async Task<NpgsqlDataSourceBuilder> UseEntraAuthenticationAsync(this NpgsqlDataSourceBuilder dataSourceBuilder, TokenCredential? credential = default, CancellationToken cancellationToken = default)
-    {
-        credential ??= new DefaultAzureCredential();
-
-        if (dataSourceBuilder.ConnectionStringBuilder.Username == null)
-        {
-            var token = await credential.GetTokenAsync(s_azureDBForPostgresTokenRequestContext, cancellationToken).ConfigureAwait(false);
-            SetUsernameFromToken(dataSourceBuilder, token.Token);
-        }
-
-        SetPasswordProvider(dataSourceBuilder, credential, s_azureDBForPostgresTokenRequestContext);
-
-        return dataSourceBuilder;
-    }
-
-    private static void SetPasswordProvider(NpgsqlDataSourceBuilder dataSourceBuilder, TokenCredential credential, TokenRequestContext tokenRequestContext)
-    {
-        dataSourceBuilder.UsePasswordProvider(_ =>
-        {
-            var token = credential.GetToken(tokenRequestContext, default);
-            return token.Token;
-        }, async (_, ct) =>
-        {
-            var token = await credential.GetTokenAsync(tokenRequestContext, ct).ConfigureAwait(false);
-            return token.Token;
-        });
-    }
-
-    private static void SetUsernameFromToken(NpgsqlDataSourceBuilder dataSourceBuilder, string token)
-    {
-        var username = TryGetUsernameFromToken(token);
-
-        if (username != null)
-        {
-            dataSourceBuilder.ConnectionStringBuilder.Username = username;
-        }
-        else
-        {
-            throw new Exception("Could not determine username from token claims");
-        }
-    }
-
-    private static string? TryGetUsernameFromToken(string jwtToken)
-    {
-        // Split the token into its parts (Header, Payload, Signature)
-        var tokenParts = jwtToken.Split('.');
-        if (tokenParts.Length != 3)
-        {
-            return null;
-        }
-
-        // The payload is the second part, Base64Url encoded
-        var payload = tokenParts[1];
-
-        // Add padding if necessary
-        payload = AddBase64Padding(payload);
-
-        // Decode the payload from Base64Url
-        var decodedBytes = Convert.FromBase64String(payload);
-        var decodedPayload = Encoding.UTF8.GetString(decodedBytes);
-
-        // Parse the decoded payload as JSON
-        var payloadJson = JsonSerializer.Deserialize<JsonElement>(decodedPayload);
-
-        // Try to get the username from 'upn', 'preferred_username', or 'unique_name' claims
-        if (payloadJson.TryGetProperty("upn", out var upn))
-        {
-            return upn.GetString();
-        }
-        else if (payloadJson.TryGetProperty("preferred_username", out var preferredUsername))
-        {
-            return preferredUsername.GetString();
-        }
-        else if (payloadJson.TryGetProperty("unique_name", out var uniqueName))
-        {
-            return uniqueName.GetString();
-        }
-
-        return null;
-    }
-
-    private static string AddBase64Padding(string base64) => (base64.Length % 4) switch
-    {
-        2 => base64 + "==",
-        3 => base64 + "=",
-        _ => base64,
-    };
-}
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="UseWithEntraAuthentication1":::
 
 Now you can use the `UseEntraAuthentication` method to set up the connection string for the Postgres connector:
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Postgres;
-
-var connectionString = "Host=mydb.postgres.database.azure.com;Port=5432;Database=postgres;SSL Mode=Require;";  // No Username or Password
-var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
-dataSourceBuilder.UseEntraAuthentication();
-dataSourceBuilder.UseVector();
-var dataSource = dataSourceBuilder.Build();
-
-var vectorStore = new PostgresVectorStore(dataSource, ownsDataSource: true);
-```
+:::code language="csharp" source="./snippets/postgres-connector.cs" id="UseWithEntraAuthentication2":::
 
 By default, the `UseEntraAuthentication` method uses the [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential) to authenticate with Azure AD. You can also provide a custom `TokenCredential` implementation if needed.

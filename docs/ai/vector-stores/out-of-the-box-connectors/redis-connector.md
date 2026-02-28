@@ -40,90 +40,31 @@ dotnet add package Microsoft.SemanticKernel.Connectors.Redis --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddRedisVectorStore("localhost:6379");
-```
-
-```csharp
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddRedisVectorStore("localhost:6379");
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also provided. These require an instance of the Redis `IDatabase` to be separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using StackExchange.Redis;
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<IDatabase>(sp => ConnectionMultiplexer.Connect("localhost:6379").GetDatabase());
-services.AddRedisVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using StackExchange.Redis;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<IDatabase>(sp => ConnectionMultiplexer.Connect("localhost:6379").GetDatabase());
-builder.Services.AddRedisVectorStore();
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted4":::
 
 You can construct a Redis Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Redis;
-using StackExchange.Redis;
-
-var vectorStore = new RedisVectorStore(ConnectionMultiplexer.Connect("localhost:6379").GetDatabase());
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 When doing so, you have to choose between the JSON or Hashes instance depending on how you wish to store data in Redis.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Redis;
-using StackExchange.Redis;
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted6":::
 
-// Using Hashes.
-var hashesCollection = new RedisHashSetCollection<string, Hotel>(
-    ConnectionMultiplexer.Connect("localhost:6379").GetDatabase(),
-    "skhotelshashes");
-```
-
-```csharp
-using Microsoft.SemanticKernel.Connectors.Redis;
-using StackExchange.Redis;
-
-// Using JSON.
-var jsonCollection = new RedisJsonCollection<string, Hotel>(
-    ConnectionMultiplexer.Connect("localhost:6379").GetDatabase(),
-    "skhotelsjson");
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted7":::
 
 When constructing a `RedisVectorStore` or registering it with the dependency injection container, it's possible to pass a `RedisVectorStoreOptions` instance
 that configures the preferred storage type / mode used: Hashes or JSON. If not specified, the default is JSON.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Redis;
-using StackExchange.Redis;
-
-var vectorStore = new RedisVectorStore(
-    ConnectionMultiplexer.Connect("localhost:6379").GetDatabase(),
-    new() { StorageType = RedisStorageType.HashSet });
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="GetStarted8":::
 
 ## Index prefixes
 
@@ -141,17 +82,7 @@ By default, the connector will also prefix all keys with the this prefix when do
 If you didn't want to use a prefix consisting of the collection name and a colon, it is possible to switch
 off the prefixing behavior and pass in the fully prefixed key to the record operations.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Redis;
-using StackExchange.Redis;
-
-var collection = new RedisJsonCollection<string, Hotel>(
-    ConnectionMultiplexer.Connect("localhost:6379").GetDatabase(),
-    "skhotelsjson",
-    new() { PrefixCollectionNameToKeyNames = false });
-
-await collection.GetAsync("myprefix_h1");
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="IndexPrefixes":::
 
 ## Data mapping
 
@@ -167,37 +98,12 @@ Usage of the `JsonPropertyNameAttribute` is supported if a different storage nam
 data model property name is required. It's also possible to use a custom `JsonSerializerOptions` instance with a customized property naming policy. To enable this, the `JsonSerializerOptions`
 must be passed to the `RedisJsonCollection` on construction.
 
-```csharp
-var jsonSerializerOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper };
-var collection = new RedisJsonCollection<string, Hotel>(
-    ConnectionMultiplexer.Connect("localhost:6379").GetDatabase(),
-    "skhotelsjson",
-    new() { JsonSerializerOptions = jsonSerializerOptions });
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="DataMappingWhenUsingTheJSONStorageType1":::
 
 Since a naming policy of snake case upper was chosen, here is an example of how this data type will be set in Redis.
 Also note the use of `JsonPropertyNameAttribute` on the `Description` property to further customize the storage naming.
 
-```csharp
-using System.Text.Json.Serialization;
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public string HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [JsonPropertyName("HOTEL_DESCRIPTION")]
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="DataMappingWhenUsingTheJSONStorageType2":::
 
 ```redis
 JSON.SET skhotelsjson:h1 $ '{ "HOTEL_NAME": "Hotel Happy", "HOTEL_DESCRIPTION": "A place where everyone can be happy.", "DESCRIPTION_EMBEDDING": [0.9, 0.1, 0.1, 0.1] }'
@@ -215,24 +121,7 @@ Property name overriding is done by setting the <xref:Microsoft.Extensions.Vecto
 
 Here is an example of a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set on its attributes and how these are set in Redis.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public string HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true, StorageName = "hotel_name")]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true, StorageName = "hotel_description")]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw, StorageName = "hotel_description_embedding")]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/redis-connector.cs" id="DataMappingWhenUsingTheHashesStorageType":::
 
 ```redis
 HSET skhotelshashes:h1 hotel_name "Hotel Happy" hotel_description 'A place where everyone can be happy.' hotel_description_embedding <vector_bytes>

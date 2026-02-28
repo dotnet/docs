@@ -39,69 +39,23 @@ dotnet add package Microsoft.SemanticKernel.Connectors.Pinecone --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddPineconeVectorStore(pineconeApiKey);
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddPineconeVectorStore(pineconeApiKey);
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also provided. These require an instance of the `PineconeClient` to be separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using PineconeClient = Pinecone.PineconeClient;
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<PineconeClient>(
-    sp => new PineconeClient(pineconeApiKey));
-services.AddPineconeVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using PineconeClient = Pinecone.PineconeClient;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<PineconeClient>(
-    sp => new PineconeClient(pineconeApiKey));
-builder.Services.AddPineconeVectorStore();
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted4":::
 
 You can construct a Pinecone Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Pinecone;
-using PineconeClient = Pinecone.PineconeClient;
-
-var vectorStore = new PineconeVectorStore(
-    new PineconeClient(pineconeApiKey));
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Pinecone;
-using PineconeClient = Pinecone.PineconeClient;
-
-var collection = new PineconeCollection<string, Hotel>(
-    new PineconeClient(pineconeApiKey),
-    "skhotels");
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="GetStarted6":::
 
 ## Index namespace
 
@@ -111,15 +65,7 @@ and no second level exists in the abstraction. Pinecone does support a second le
 By default the Pinecone connector will pass null as the namespace for all operations. However it is possible to pass a single namespace to the
 Pinecone collection when constructing it and use this instead for all operations.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Pinecone;
-using PineconeClient = Pinecone.PineconeClient;
-
-var collection = new PineconeCollection<string, Hotel>(
-    new PineconeClient(pineconeApiKey),
-    "skhotels",
-    new() { IndexNamespace = "seasidehotels" });
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="IndexNamespace":::
 
 ## Data mapping
 
@@ -140,24 +86,7 @@ The property name override is done by setting the <xref:Microsoft.Extensions.Vec
 
 Here is an example of a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set on its attributes and how that will be represented in Pinecone.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public string HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true, StorageName = "hotel_name")]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true, StorageName = "hotel_description")]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/pinecone-connector.cs" id="PropertyNameOverride":::
 
 ```json
 {

@@ -40,54 +40,19 @@ dotnet add package Microsoft.SemanticKernel.Connectors.MongoDB --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods from the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddMongoVectorStore(connectionString, databaseName);
-```
+:::code language="csharp" source="./snippets/mongodb-connector.cs" id="GetStarted1":::
 
 Extension methods that take no parameters are also provided. These require an instance of `MongoDB.Driver.IMongoDatabase` to be separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using MongoDB.Driver;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<IMongoDatabase>(
-    sp =>
-    {
-        var mongoClient = new MongoClient(connectionString);
-        return mongoClient.GetDatabase(databaseName);
-    });
-builder.Services.AddMongoVectorStore();
-```
+:::code language="csharp" source="./snippets/mongodb-connector.cs" id="GetStarted2":::
 
 You can construct a MongoDB Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.MongoDB;
-using MongoDB.Driver;
-
-var mongoClient = new MongoClient(connectionString);
-var database = mongoClient.GetDatabase(databaseName);
-var vectorStore = new MongoVectorStore(database);
-```
+:::code language="csharp" source="./snippets/mongodb-connector.cs" id="GetStarted3":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.MongoDB;
-using MongoDB.Driver;
-
-var mongoClient = new MongoClient(connectionString);
-var database = mongoClient.GetDatabase(databaseName);
-var collection = new MongoCollection<string, Hotel>(
-    database,
-    "skhotels");
-```
+:::code language="csharp" source="./snippets/mongodb-connector.cs" id="GetStarted4":::
 
 ## Data mapping
 
@@ -107,25 +72,4 @@ The property name override is done by setting the `BsonElement` attribute on the
 
 Here is an example of a data model with `BsonElement` set.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-using MongoDB.Bson.Serialization.Attributes;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public ulong HotelId { get; set; }
-
-    [BsonElement("hotel_name")]
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [BsonElement("hotel_description")]
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [BsonElement("hotel_description_embedding")]
-    [VectorStoreVector(4, DistanceFunction = DistanceFunction.CosineSimilarity)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/mongodb-connector.cs" id="PropertyNameOverride":::

@@ -17,28 +17,13 @@ This can be useful in multiple scenarios:
 
 Here is an example of how to create a record definition.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-var hotelDefinition = new VectorStoreCollectionDefinition
-{
-    Properties = new List<VectorStoreProperty>
-    {
-        new VectorStoreKeyProperty("HotelId", typeof(ulong)),
-        new VectorStoreDataProperty("HotelName", typeof(string)) { IsIndexed = true },
-        new VectorStoreDataProperty("Description", typeof(string)) { IsFullTextIndexed = true },
-        new VectorStoreVectorProperty("DescriptionEmbedding", typeof(float), dimensions: 4) { DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw },
-    }
-};
-```
+:::code language="csharp" source="./snippets/schema-with-record-definition.cs" id="DefineYourStorageSchemaUsingARecordDefin1":::
 
 When creating a definition you always have to provide a name and type for each property in your schema, since this is required for index creation and data mapping.
 
 To use the definition, pass it to the GetCollection method.
 
-```csharp
-var collection = vectorStore.GetCollection<ulong, Hotel>("skhotels", hotelDefinition);
-```
+:::code language="csharp" source="./snippets/schema-with-record-definition.cs" id="DefineYourStorageSchemaUsingARecordDefin2":::
 
 ## Record property configuration classes
 
@@ -46,9 +31,7 @@ var collection = vectorStore.GetCollection<ulong, Hotel>("skhotels", hotelDefini
 
 Use this class to indicate that your property is the key of the record.
 
-```csharp
-new VectorStoreKeyProperty("HotelId", typeof(ulong)),
-```
+:::code language="csharp" source="./snippets/schema-with-record-definition.cs" id="VectorStoreKeyProperty":::
 
 #### VectorStoreKeyProperty configuration settings
 
@@ -65,9 +48,7 @@ new VectorStoreKeyProperty("HotelId", typeof(ulong)),
 
 Use this class to indicate that your property contains general data that is not a key or a vector.
 
-```csharp
-new VectorStoreDataProperty("HotelName", typeof(string)) { IsIndexed = true },
-```
+:::code language="csharp" source="./snippets/schema-with-record-definition.cs" id="VectorStoreDataProperty":::
 
 #### VectorStoreDataProperty configuration settings
 
@@ -86,9 +67,7 @@ new VectorStoreDataProperty("HotelName", typeof(string)) { IsIndexed = true },
 
 Use this class to indicate that your property contains a vector.
 
-```csharp
-new VectorStoreVectorProperty("DescriptionEmbedding", typeof(float), dimensions: 4) { DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw },
-```
+:::code language="csharp" source="./snippets/schema-with-record-definition.cs" id="VectorStoreVectorProperty":::
 
 #### VectorStoreVectorProperty configuration settings
 

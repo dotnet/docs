@@ -42,95 +42,27 @@ dotnet add package Oracle.VectorData --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods from the Semantic Kernel connector packages. In this case, an instance of the `Oracle.VectorData.OracleVectorStore` class also gets registered with the container.
 
-```csharp
-using Oracle.VectorData;
-using Microsoft.Extensions.DependencyInjection;
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddOracleVectorStore("<connection string>");
-```
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Oracle.VectorData;
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddOracleVectorStore("<connection string>");
-```
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also available. These require an instance of the `Oracle.ManagedDataAccess.Client.OracleDataSource` class to be separately registered with the dependency injection container.
 
-```csharp
-using Oracle.VectorData;
-using Microsoft.Extensions.DependencyInjection;
-using Oracle.ManagedDataAccess.Client;
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<OracleDataSource>(sp =>
-{
-    OracleDataSourceBuilder dataSourceBuilder = new("<connection string>");
-    return dataSourceBuilder.Build();
-});
-
-services.AddOracleVectorStore();
-```
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Oracle.VectorData;
-using Microsoft.Extensions.DependencyInjection;
-using Oracle.ManagedDataAccess.Client;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<OracleDataSource>(sp =>
-{
-    OracleDataSourceBuilder dataSourceBuilder = new("<connection string>");
-    return dataSourceBuilder.Build();
-});
-
-builder.Services.AddOracleVectorStore();
-```
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted4":::
 
 You can construct an Oracle Database Vector Store instance directly with a custom data source or with a connection string.
 
-```csharp
-using Oracle.VectorData;
-using Oracle.ManagedDataAccess.Client;
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted5":::
 
-OracleDataSourceBuilder dataSourceBuilder = new("<connection string>");
-var dataSource = dataSourceBuilder.Build();
-
-var connection = new OracleVectorStore(dataSource);
-```
-
-```csharp
-using Oracle.VectorData;
-
-var connection = new OracleVectorStore("<connection string>");
-```
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted6":::
 
 It's possible to construct a direct reference to a named collection with a custom data source or with a connection string.
 
-```csharp
-using Oracle.VectorData;
-using Oracle.ManagedDataAccess.Client;
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted7":::
 
-OracleDataSourceBuilder dataSourceBuilder = new("<connection string>");
-var dataSource = dataSourceBuilder.Build();
-
-var collection = new OracleCollection<string, Hotel>(dataSource, "skhotels");
-```
-
-```csharp
-using Oracle.VectorData;
-
-var collection = new OracleCollection<string, Hotel>("<connection string>", "skhotels");
-```
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="GetStarted8":::
 
 ## Data mapping
 
@@ -184,24 +116,7 @@ For data properties and vector properties, you can override names to use in stor
 
 Here is a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set code sample and how that will be represented in an Oracle SQL command.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public long HotelId { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_name")]
-    public string? HotelName { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_description")]
-    public string? Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 384, DistanceFunction = DistanceFunction.CosineDistance)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/oracle-connector.cs" id="PropertyNameOverride":::
 
 ```SQL
 CREATE TABLE "MYSCHEMA"."Hotels"

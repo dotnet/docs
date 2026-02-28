@@ -46,82 +46,23 @@ dotnet add package Microsoft.SemanticKernel.Connectors.AzureAISearch --prereleas
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Azure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddAzureAISearchVectorStore(new Uri(azureAISearchUri), new AzureKeyCredential(secret));
-```
-
-```csharp
-using Azure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddAzureAISearchVectorStore(new Uri(azureAISearchUri), new AzureKeyCredential(secret));
-```
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also provided. These require an instance of the Azure AI Search `SearchIndexClient` to be separately registered with the dependency injection container.
 
-```csharp
-using Azure;
-using Azure.Search.Documents.Indexes;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<SearchIndexClient>(
-    sp => new SearchIndexClient(
-        new Uri(azureAISearchUri),
-        new AzureKeyCredential(secret)));
-services.AddAzureAISearchVectorStore();
-```
-
-```csharp
-using Azure;
-using Azure.Search.Documents.Indexes;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<SearchIndexClient>(
-    sp => new SearchIndexClient(
-        new Uri(azureAISearchUri),
-        new AzureKeyCredential(secret)));
-builder.Services.AddAzureAISearchVectorStore();
-```
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted4":::
 
 You can construct an Azure AI Search Vector Store instance directly.
 
-```csharp
-using Azure;
-using Azure.Search.Documents.Indexes;
-using Microsoft.SemanticKernel.Connectors.AzureAISearch;
-
-var vectorStore = new AzureAISearchVectorStore(
-    new SearchIndexClient(
-        new Uri(azureAISearchUri),
-        new AzureKeyCredential(secret)));
-```
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Azure;
-using Azure.Search.Documents.Indexes;
-using Microsoft.SemanticKernel.Connectors.AzureAISearch;
-
-var collection = new AzureAISearchCollection<string, Hotel>(
-    new SearchIndexClient(new Uri(azureAISearchUri), new AzureKeyCredential(secret)),
-    "skhotels");
-```
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="GetStarted6":::
 
 ## Data mapping
 
@@ -134,13 +75,4 @@ data model property name is required.
 It's also possible to use a custom `JsonSerializerOptions` instance with a customized property naming policy. To enable this, the `JsonSerializerOptions`
 must be passed to both the `SearchIndexClient` and the `AzureAISearchCollection` on construction.
 
-```csharp
-var jsonSerializerOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper };
-var collection = new AzureAISearchCollection<string, Hotel>(
-    new SearchIndexClient(
-        new Uri(azureAISearchUri),
-        new AzureKeyCredential(secret),
-        new() { Serializer = new JsonObjectSerializer(jsonSerializerOptions) }),
-    "skhotels",
-    new() { JsonSerializerOptions = jsonSerializerOptions });
-```
+:::code language="csharp" source="./snippets/azure-ai-search-connector.cs" id="DataMapping":::

@@ -130,10 +130,7 @@ additional custom strings might be accepted.
 For example, the goal is for a user to be able to specify a standard distance function, like `DotProductSimilarity`
 for any connector that supports this distance function, without needing to use different naming for each connector.
 
-```csharp
-[VectorStoreVector(1536, DistanceFunction = DistanceFunction.DotProductSimilarity]
-public ReadOnlyMemory<float>? Embedding { get; set; }
-```
+:::code language="csharp" source="./snippets/build-your-own-connector.cs" id="4CollectionAndIndexCreation":::
 
 4.2 A user can optionally choose whether each data property should be indexed or full text indexed.
 In some databases, all properties might already be filterable or full text searchable by default, however
@@ -237,20 +234,7 @@ using the native database support.
 
 Here is an example of an <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> constructor following this pattern.
 
-```csharp
-public sealed class MyDBCollection<TRecord> : VectorStoreCollection<string, TRecord>
-{
-    public MyDBCollection(MyDBClient myDBClient, string collectionName, MyDBCollectionOptions<TRecord>? options = default)
-    {
-    }
-
-    ...
-}
-
-public class MyDBCollectionOptions<TRecord> : VectorStoreCollectionOptions
-{
-}
-```
+:::code language="csharp" source="./snippets/build-your-own-connector.cs" id="RecommendedCommonPatternsAndPractices":::
 
 ## SDK changes
 

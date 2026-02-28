@@ -41,36 +41,14 @@ dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/inmemory-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddInMemoryVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddInMemoryVectorStore();
-```
+:::code language="csharp" source="./snippets/inmemory-connector.cs" id="GetStarted2":::
 
 You can construct an InMemory Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.InMemory;
-
-var vectorStore = new InMemoryVectorStore();
-```
+:::code language="csharp" source="./snippets/inmemory-connector.cs" id="GetStarted3":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.InMemory;
-
-var collection = new InMemoryCollection<string, Hotel>("skhotels");
-```
+:::code language="csharp" source="./snippets/inmemory-connector.cs" id="GetStarted4":::

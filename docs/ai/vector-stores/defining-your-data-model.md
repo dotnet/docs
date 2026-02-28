@@ -20,27 +20,7 @@ The properties on these classes are decorated with attributes that indicate the 
 
 Here is an example of a model that is decorated with these attributes.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public ulong HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string[] Tags { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="Overview":::
 
 ## Attributes
 
@@ -48,10 +28,7 @@ public class Hotel
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute to indicate that your property is the key of the record.
 
-```csharp
-[VectorStoreKey]
-public ulong HotelId { get; set; }
-```
+:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreKeyAttribute":::
 
 #### VectorStoreKeyAttribute parameters
 
@@ -63,10 +40,7 @@ public ulong HotelId { get; set; }
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribute to indicate that your property contains general data that is not a key or a vector.
 
-```csharp
-[VectorStoreData(IsIndexed = true)]
-public string HotelName { get; set; }
-```
+:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreDataAttribute":::
 
 #### VectorStoreDataAttribute parameters
 
@@ -83,20 +57,14 @@ public string HotelName { get; set; }
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> attribute to indicate that your property contains a vector.
 
-```csharp
-[VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-```
+:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreVectorAttribute1":::
 
 It's also possible to use <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> on properties that dont' have a vector type, for example, a property of type `string`.
 When a property is decorated in this way, you need to provide an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> instance to the vector store.
 When upserting the record, the text that is in the `string` property is automatically converted and stored as a vector in the database.
 It's not possible to retrieve a vector using this mechanism.
 
-```csharp
-[VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-public string DescriptionEmbedding { get; set; }
-```
+:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreVectorAttribute2":::
 
 > [!TIP]
 > For more information on how to use built-in embedding generation, see [Let the Vector Store generate embeddings](./embedding-generation.md#letting-the-vector-store-generate-embeddings).

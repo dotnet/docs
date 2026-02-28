@@ -40,165 +40,26 @@ dotnet add package CouchbaseConnector.SemanticKernel --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.SemanticKernel;
-using Couchbase.SemanticKernel;
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var kernelBuilder = Kernel
-    .CreateBuilder()
-    .AddCouchbaseVectorStore(
-        connectionString: "couchbases://your-cluster-address",
-        username: "username",
-        password: "password",
-        bucketName: "bucket-name",
-        scopeName: "scope-name");
-```
-
-```csharp
-using Couchbase.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddCouchbaseVectorStore(
-    connectionString: "couchbases://your-cluster-address",
-    username: "username",
-    password: "password",
-    bucketName: "bucket-name",
-    scopeName: "scope-name");
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="GetStarted2":::
 
 ## Configure index type
 
 The vector store defaults to using Hyperscale indexes. You can specify a different index type by passing `CouchbaseVectorStoreOptions`:
 
-```csharp
-using Couchbase.SemanticKernel;
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Option 1: Use Hyperscale index
-builder.Services.AddCouchbaseVectorStore(
-    connectionString: "couchbases://your-cluster-address",
-    username: "username",
-    password: "password",
-    bucketName: "bucket-name",
-    scopeName: "scope-name",
-    options: new CouchbaseVectorStoreOptions
-    {
-        IndexType = CouchbaseIndexType.Hyperscale
-    });
-
-// Option 2: Use Composite index
-builder.Services.AddCouchbaseVectorStore(
-    connectionString: "couchbases://your-cluster-address",
-    username: "username",
-    password: "password",
-    bucketName: "bucket-name",
-    scopeName: "scope-name",
-    options: new CouchbaseVectorStoreOptions
-    {
-        IndexType = CouchbaseIndexType.Composite
-    });
-
-// Option 3: Use Search vector index
-builder.Services.AddCouchbaseVectorStore(
-    connectionString: "couchbases://your-cluster-address",
-    username: "username",
-    password: "password",
-    bucketName: "bucket-name",
-    scopeName: "scope-name",
-    options: new CouchbaseVectorStoreOptions
-    {
-        IndexType = CouchbaseIndexType.Search
-    });
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="ConfigureIndexType1":::
 
 Extension methods that take no parameters are also provided. These require an instance of the `IScope` class to be
 separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Couchbase;
-using Couchbase.KeyValue;
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="ConfigureIndexType2":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<ICluster>(sp =>
-{
-    var clusterOptions = new ClusterOptions
-    {
-        ConnectionString = "couchbases://your-cluster-address",
-        UserName = "username",
-        Password = "password"
-    };
-
-    return Cluster.ConnectAsync(clusterOptions).GetAwaiter().GetResult();
-});
-
-services.AddSingleton<IScope>(sp =>
-{
-    var cluster = sp.GetRequiredService<ICluster>();
-    var bucket = cluster.BucketAsync("bucket-name").GetAwaiter().GetResult();
-    return bucket.Scope("scope-name");
-});
-
-// Add Couchbase Vector Store
-services.AddCouchbaseVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Couchbase.KeyValue;
-using Couchbase;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddSingleton<ICluster>(sp =>
-{
-    var clusterOptions = new ClusterOptions
-    {
-        ConnectionString = "couchbases://your-cluster-address",
-        UserName = "username",
-        Password = "password"
-    };
-
-    return Cluster.ConnectAsync(clusterOptions).GetAwaiter().GetResult();
-});
-
-builder.Services.AddSingleton<IScope>(sp =>
-{
-    var cluster = sp.GetRequiredService<ICluster>();
-    var bucket = cluster.BucketAsync("bucket-name").GetAwaiter().GetResult();
-    return bucket.Scope("scope-name");
-});
-
-// Add Couchbase Vector Store
-builder.Services.AddCouchbaseVectorStore();
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="ConfigureIndexType3":::
 
 You can construct a Couchbase Vector Store instance directly.
 
-```csharp
-using Couchbase;
-using Couchbase.KeyValue;
-using Couchbase.SemanticKernel;
-
-var clusterOptions = new ClusterOptions
-{
-    ConnectionString = "couchbases://your-cluster-address",
-    UserName = "username",
-    Password = "password"
-};
-
-var cluster = await Cluster.ConnectAsync(clusterOptions);
-var bucket = await cluster.BucketAsync("bucket-name");
-var scope = bucket.Scope("scope-name");
-
-var vectorStore = new CouchbaseVectorStore(scope);
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="ConfigureIndexType4":::
 
 It's possible to construct a direct reference to a named collection.
 
@@ -206,45 +67,13 @@ It's possible to construct a direct reference to a named collection.
 
 For high-performance vector search with Hyperscale indexes:
 
-```csharp
-using Couchbase.SemanticKernel;
-using Couchbase;
-using Couchbase.KeyValue;
-
-var cluster = await Cluster.ConnectAsync(clusterOptions);
-var bucket = await cluster.BucketAsync("bucket-name");
-var scope = bucket.Scope("scope-name");
-
-// Using Hyperscale index (default)
-var collection = new CouchbaseQueryCollection<string, Hotel>(
-    scope,
-    "skhotels",
-    indexType: CouchbaseIndexType.Hyperscale);
-
-// Or using Composite index
-var collectionComposite = new CouchbaseQueryCollection<string, Hotel>(
-    scope,
-    "skhotels",
-    indexType: CouchbaseIndexType.Composite);
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="UseQueryCollectionHyperscaleOrCompositeI":::
 
 ### Use search collection (seach vector index)
 
 For hybrid search scenarios combining full-text search:
 
-```csharp
-using Couchbase.SemanticKernel;
-using Couchbase;
-using Couchbase.KeyValue;
-
-var cluster = await Cluster.ConnectAsync(clusterOptions);
-var bucket = await cluster.BucketAsync("bucket-name");
-var scope = bucket.Scope("scope-name");
-
-var collection = new CouchbaseSearchCollection<string, Hotel>(
-    scope,
-    "skhotels");
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="UseSearchCollectionSeachVectorIndex":::
 
 ### Index type comparison
 
@@ -290,46 +119,11 @@ The Couchbase connector will use `System.Text.Json.JsonSerializer` to do mapping
 
 Usage of the `JsonPropertyNameAttribute` is supported if a different storage name to the data model property name is required. It's also possible to use a custom `JsonSerializerOptions` instance with a customized property naming policy.
 
-```csharp
-using Couchbase.SemanticKernel;
-using Couchbase.KeyValue;
-using System.Text.Json;
-
-var jsonSerializerOptions = new JsonSerializerOptions
-{
-    PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper
-};
-
-var options = new CouchbaseQueryCollectionOptions
-{
-    JsonSerializerOptions = jsonSerializerOptions
-};
-
-var collection = new CouchbaseQueryCollection<string, Hotel>(scope, "skhotelsjson", options);
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="DataMapping1":::
 
 Since a naming policy of snake case upper was chosen, here is an example of how this data type will be stored in Couchbase. Also note the use of `JsonPropertyNameAttribute` on the `Description` property to further customize the storage naming.
 
-```csharp
-using System.Text.Json.Serialization;
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public string HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [JsonPropertyName("HOTEL_DESCRIPTION")]
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction.CosineSimilarity)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/couchbase-connector.cs" id="DataMapping2":::
 
 ```json
 {

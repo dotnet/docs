@@ -54,76 +54,28 @@ It can be provided via options or by setting the base address of the `HttpClient
 This first example shows how to set the service URL via options.
 Also note that these methods will retrieve an `HttpClient` instance for making calls to the Weaviate service from the dependency injection service provider.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddWeaviateVectorStore(new Uri("http://localhost:8080/v1/"), apiKey: null);
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddWeaviateVectorStore(new Uri("http://localhost:8080/v1/"), apiKey: null);
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted2":::
 
 Overloads where you can specify your own `HttpClient` are also provided.
 In this case it's possible to set the service url via the `HttpClient` `BaseAddress` option.
 
-```csharp
-using System.Net.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-using HttpClient client = new HttpClient { BaseAddress = new Uri("http://localhost:8080/v1/") };
-services.AddWeaviateVectorStore(_ => client);
-```
-
-```csharp
-using System.Net.Http;
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-using HttpClient client = new HttpClient { BaseAddress = new Uri("http://localhost:8080/v1/") };
-builder.Services.AddWeaviateVectorStore(_ => client);
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted4":::
 
 You can construct a Weaviate Vector Store instance directly as well.
 
-```csharp
-using System.Net.Http;
-using Microsoft.SemanticKernel.Connectors.Weaviate;
-
-var vectorStore = new WeaviateVectorStore(
-    new HttpClient { BaseAddress = new Uri("http://localhost:8080/v1/") });
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using System.Net.Http;
-using Microsoft.SemanticKernel.Connectors.Weaviate;
-
-var collection = new WeaviateCollection<Guid, Hotel>(
-    new HttpClient { BaseAddress = new Uri("http://localhost:8080/v1/") },
-    "Skhotels");
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted6":::
 
 If needed, it is possible to pass an API key, as an option, when using any of the previously mentioned mechanisms. For example:
 
-```csharp
-using Microsoft.SemanticKernel;
-
-var services = new ServiceCollection();
-services.AddWeaviateVectorStore(new Uri("http://localhost:8080/v1/"), secretVar);
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="GetStarted7":::
 
 ## Data mapping
 
@@ -141,26 +93,7 @@ data model property name is required.
 
 Here is an example of a data model with `JsonPropertyNameAttribute` set and how that will be represented in Weaviate.
 
-```csharp
-using System.Text.Json.Serialization;
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public Guid HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [JsonPropertyName("HOTEL_DESCRIPTION_EMBEDDING")]
-    [VectorStoreVector(4, DistanceFunction = DistanceFunction.CosineDistance, IndexKind = IndexKind.QuantizedFlat)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/weaviate-connector.cs" id="DataMapping":::
 
 ```json
 {

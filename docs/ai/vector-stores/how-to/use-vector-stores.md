@@ -141,52 +141,13 @@ The following table describes the available options:
 
 When your data model has multiple vector properties, use `VectorProperty` to specify which one to search:
 
-```csharp
-// A data model with two vector properties.
-public class Hotel
-{
-    [VectorStoreKey]
-    public int HotelId { get; set; }
-
-    [VectorStoreData]
-    public string? HotelName { get; set; }
-
-    // Two separate embeddings for different aspects of the hotel.
-    [VectorStoreVector(1536)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-
-    [VectorStoreVector(1536)]
-    public ReadOnlyMemory<float>? AmenitiesEmbedding { get; set; }
-}
-
-// Target the amenities embedding specifically.
-var options = new VectorSearchOptions<Hotel>
-{
-    VectorProperty = r => r.AmenitiesEmbedding
-};
-
-IAsyncEnumerable<VectorSearchResult<Hotel>> results =
-    collection.SearchAsync(queryEmbedding, top: 3, options);
-```
+:::code language="csharp" source="./snippets/VectorStoresExamples/AdditionalExamples.cs" id="TargetVectorProperty":::
 
 ## Use built-in embedding generation
 
 Instead of generating embeddings manually before each upsert, you can configure an `IEmbeddingGenerator` on the vector store or collection. When you do, declare your vector property as a `string` type (the source text) and the store generates the embedding automatically.
 
-```csharp
-public class FinanceInfo
-{
-    [VectorStoreKey]
-    public int Key { get; set; }
-
-    [VectorStoreData]
-    public string Text { get; set; } = "";
-
-    // Use a string type to trigger automatic embedding generation on upsert.
-    [VectorStoreVector(1536)]
-    public string EmbeddingSource { get; set; } = "";
-}
-```
+:::code language="csharp" source="./snippets/VectorStoresExamples/AdditionalExamples.cs" id="EmbeddingSourceModel":::
 
 Then configure the embedding generator when creating the vector store:
 
@@ -203,25 +164,7 @@ Some vector stores support *hybrid search*, which combines vector similarity wit
 
 To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only connectors for databases that support this feature implement this interface.
 
-```csharp
-// Check whether the collection supports hybrid search.
-if (collection is IKeywordHybridSearchable<Hotel> hybridCollection)
-{
-    ReadOnlyMemory<float> queryEmbedding =
-        await embeddingGenerator.GenerateVectorAsync("peaceful beachfront hotel");
-
-    // Provide both a vector and keywords for hybrid search.
-    var results = hybridCollection.HybridSearchAsync(
-        queryEmbedding,
-        keywords: ["ocean", "beach"],
-        top: 3);
-
-    await foreach (var result in results)
-    {
-        Console.WriteLine($"Hotel: {result.Record.HotelName}, Score: {result.Score}");
-    }
-}
-```
+:::code language="csharp" source="./snippets/VectorStoresExamples/AdditionalExamples.cs" id="HybridSearch":::
 
 For hybrid search to work, the data model must have at least one vector property and one text property with `IsFullTextIndexed = true`. For a list of connectors that support hybrid search, see the documentation for each connector.
 
@@ -243,13 +186,7 @@ Because all connectors implement the same <xref:Microsoft.Extensions.VectorData.
 
 For example, to switch from in-memory to Azure AI Search:
 
-```csharp
-// Development: in-memory
-var vectorStore = new InMemoryVectorStore();
-
-// Production: Azure AI Search (swap in at startup)
-// var vectorStore = new AzureAISearchVectorStore(new SearchIndexClient(...));
-```
+:::code language="csharp" source="./snippets/VectorStoresExamples/AdditionalExamples.cs" id="SwitchConnectors":::
 
 This approach lets you develop and test locally without any external services, then deploy to a production database with minimal changes.
 

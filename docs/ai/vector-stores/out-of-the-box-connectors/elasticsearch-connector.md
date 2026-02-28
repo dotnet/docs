@@ -45,71 +45,23 @@ dotnet add package Elastic.SemanticKernel.Connectors.Elasticsearch --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.SemanticKernel;
-using Elastic.Clients.Elasticsearch;
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var kernelBuilder = Kernel
-    .CreateBuilder()
-    .AddElasticsearchVectorStore(new ElasticsearchClientSettings(new Uri("http://localhost:9200")));
-```
-
-```csharp
-using Microsoft.SemanticKernel;
-using Elastic.Clients.Elasticsearch;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddElasticsearchVectorStore(new ElasticsearchClientSettings(new Uri("http://localhost:9200")));
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also provided. These require an instance of the `Elastic.Clients.Elasticsearch.ElasticsearchClient` class to be separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Elastic.Clients.Elasticsearch;
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<ElasticsearchClient>(sp =>
-    new ElasticsearchClient(new ElasticsearchClientSettings(new Uri("http://localhost:9200"))));
-services.AddElasticsearchVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Elastic.Clients.Elasticsearch;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<ElasticsearchClient>(sp =>
-    new ElasticsearchClient(new ElasticsearchClientSettings(new Uri("http://localhost:9200"))));
-builder.Services.AddElasticsearchVectorStore();
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted4":::
 
 You can construct an Elasticsearch Vector Store instance directly.
 
-```csharp
-using Elastic.SemanticKernel.Connectors.Elasticsearch;
-using Elastic.Clients.Elasticsearch;
-
-var vectorStore = new ElasticsearchVectorStore(
-    new ElasticsearchClient(new ElasticsearchClientSettings(new Uri("http://localhost:9200"))));
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Elastic.SemanticKernel.Connectors.Elasticsearch;
-using Elastic.Clients.Elasticsearch;
-
-var collection = new ElasticsearchVectorStoreRecordCollection<Hotel>(
-    new ElasticsearchClient(new ElasticsearchClientSettings(new Uri("http://localhost:9200"))),
-    "skhotels");
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="GetStarted6":::
 
 ## Data mapping
 
@@ -121,63 +73,16 @@ Usage of the `JsonPropertyNameAttribute` is supported if a different storage nam
 data model property name is required. It's also possible to use a custom `JsonSerializerOptions` instance with a customized property naming policy. To enable this,
 a custom source serializer must be configured.
 
-```csharp
-using Elastic.SemanticKernel.Connectors.Elasticsearch;
-using Elastic.Clients.Elasticsearch;
-using Elastic.Clients.Elasticsearch.Serialization;
-using Elastic.Transport;
-
-var nodePool = new SingleNodePool(new Uri("http://localhost:9200"));
-var settings = new ElasticsearchClientSettings(
-    nodePool,
-    sourceSerializer: (defaultSerializer, settings) =>
-        new DefaultSourceSerializer(settings, options =>
-            options.PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseUpper));
-var client = new ElasticsearchClient(settings);
-
-var collection = new ElasticsearchVectorStoreRecordCollection<Hotel>(
-    client,
-    "skhotelsjson");
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="DataMapping1":::
 
 As an alternative, the `DefaultFieldNameInferrer` lambda function can be configured to achieve the same result or to even further customize property naming based on dynamic conditions.
 
-```csharp
-using Elastic.SemanticKernel.Connectors.Elasticsearch;
-using Elastic.Clients.Elasticsearch;
-
-var settings = new ElasticsearchClientSettings(new Uri("http://localhost:9200"));
-settings.DefaultFieldNameInferrer(name => JsonNamingPolicy.SnakeCaseUpper.ConvertName(name));
-var client = new ElasticsearchClient(settings);
-
-var collection = new ElasticsearchVectorStoreRecordCollection<Hotel>(
-    client,
-    "skhotelsjson");
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="DataMapping2":::
 
 Since a naming policy of snake case upper was chosen, here is an example of how this data type will be set in Elasticsearch.
 Also note the use of `JsonPropertyNameAttribute` on the `Description` property to further customize the storage naming.
 
-```csharp
-using System.Text.Json.Serialization;
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public string HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string HotelName { get; set; }
-
-    [JsonPropertyName("HOTEL_DESCRIPTION")]
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction.CosineSimilarity, IndexKind.Hnsw)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/elasticsearch-connector.cs" id="DataMapping3":::
 
 ```json
 {

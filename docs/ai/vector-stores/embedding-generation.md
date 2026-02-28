@@ -16,10 +16,7 @@ You can configure an embedding generator on your vector store, allowing embeddin
 
 To enable generating vectors automatically on upsert, the vector property on your data model is defined as the source type, for example, string but still decorated with a <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>.
 
-```csharp
-[VectorStoreVector(1536)]
-public string Embedding { get; set; }
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="LetTheVectorStoreGenerateEmbeddings":::
 
 Before upsert, the `Embedding` property should contain the string from which a vector should be generated. The type of the vector stored in the database (for example, float32, float16, etc.) will be derived from the configured embedding generator.
 
@@ -33,161 +30,29 @@ Embedding generators implementing the `Microsoft.Extensions.AI` abstractions are
 
    You can set a default embedding generator for the entire vector store. This generator will be used for all collections and properties unless overridden.
 
-   ```csharp
-   using Microsoft.Extensions.AI;
-   using Microsoft.SemanticKernel.Connectors.Qdrant;
-   using OpenAI;
-   using Qdrant.Client;
-
-   var embeddingGenerator = new OpenAIClient("your key")
-       .GetEmbeddingClient("your chosen model")
-       .AsIEmbeddingGenerator();
-
-   var vectorStore = new QdrantVectorStore(
-       new QdrantClient("localhost"),
-       ownsClient: true,
-       new QdrantVectorStoreOptions
-       {
-            EmbeddingGenerator = embeddingGenerator
-       });
-   ```
+   :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnTheVectorStore":::
 
 2. **On a Collection**:
 
    You can configure an embedding generator for a specific collection, overriding the store-level generator.
 
-   ```csharp
-   using Microsoft.Extensions.AI;
-   using Microsoft.SemanticKernel.Connectors.Qdrant;
-   using OpenAI;
-   using Qdrant.Client;
-
-   var embeddingGenerator = new OpenAIClient("your key")
-       .GetEmbeddingClient("your chosen model")
-       .AsIEmbeddingGenerator();
-
-   var collectionOptions = new QdrantCollectionOptions
-   {
-       EmbeddingGenerator = embeddingGenerator
-   };
-   var collection = new QdrantCollection<ulong, MyRecord>(
-       new QdrantClient("localhost"),
-       "myCollection",
-       ownsClient: true,
-       collectionOptions);
-   ```
+   :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnACollection":::
 
 3. **On a Record Definition**:
     When defining properties programmatically using <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition>, you can specify an embedding generator for all properties.
 
-    ```csharp
-    using Microsoft.Extensions.AI;
-    using Microsoft.Extensions.VectorData;
-    using Microsoft.SemanticKernel.Connectors.Qdrant;
-    using OpenAI;
-    using Qdrant.Client;
-
-    var embeddingGenerator = new OpenAIClient("your key")
-        .GetEmbeddingClient("your chosen model")
-        .AsIEmbeddingGenerator();
-
-    var definition = new VectorStoreCollectionDefinition
-    {
-        EmbeddingGenerator = embeddingGenerator,
-        Properties = new List<VectorStoreProperty>
-        {
-            new VectorStoreKeyProperty("Key", typeof(ulong)),
-            new VectorStoreVectorProperty("DescriptionEmbedding", typeof(string), dimensions: 1536)
-        }
-    };
-
-    var collectionOptions = new QdrantCollectionOptions
-    {
-        Definition = definition
-    };
-    var collection = new QdrantCollection<ulong, MyRecord>(
-        new QdrantClient("localhost"),
-        "myCollection",
-        ownsClient: true,
-        collectionOptions);
-    ```
+    :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnARecordDefinition":::
 
 4. **On a Vector Property Definition**:
     When defining properties programmatically, you can set an embedding generator directly on the property.
 
-    ```csharp
-    using Microsoft.Extensions.AI;
-    using Microsoft.Extensions.VectorData;
-    using OpenAI;
-
-    var embeddingGenerator = new OpenAIClient("your key")
-        .GetEmbeddingClient("your chosen model")
-        .AsIEmbeddingGenerator();
-
-    var vectorProperty = new VectorStoreVectorProperty("DescriptionEmbedding", typeof(string), dimensions: 1536)
-    {
-         EmbeddingGenerator = embeddingGenerator
-    };
-    ```
+    :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnAVectorPropertyDefinition":::
 
 ### Example usage
 
 The following example demonstrates how to use the embedding generator to automatically generate vectors during both upsert and search operations. This approach simplifies workflows by eliminating the need to precompute embeddings manually.
 
-```csharp
-
-// The data model
-internal class FinanceInfo
-{
-    [VectorStoreKey]
-    public string Key { get; set; } = string.Empty;
-
-    [VectorStoreData]
-    public string Text { get; set; } = string.Empty;
-
-    // Note that the vector property is typed as a string, and
-    // its value is derived from the Text property. The string
-    // value will however be converted to a vector on upsert and
-    // stored in the database as a vector.
-    [VectorStoreVector(1536)]
-    public string Embedding => this.Text;
-}
-
-// Create an OpenAI embedding generator.
-var embeddingGenerator = new OpenAIClient("your key")
-    .GetEmbeddingClient("your chosen model")
-    .AsIEmbeddingGenerator();
-
-// Use the embedding generator with the vector store.
-var vectorStore = new InMemoryVectorStore(new() { EmbeddingGenerator = embeddingGenerator });
-var collection = vectorStore.GetCollection<string, FinanceInfo>("finances");
-await collection.EnsureCollectionExistsAsync();
-
-// Create some test data.
-string[] budgetInfo =
-{
-    "The budget for 2020 is EUR 100 000",
-    "The budget for 2021 is EUR 120 000",
-    "The budget for 2022 is EUR 150 000",
-    "The budget for 2023 is EUR 200 000",
-    "The budget for 2024 is EUR 364 000"
-};
-
-// Embeddings are generated automatically on upsert.
-var records = budgetInfo.Select((input, index) => new FinanceInfo { Key = index.ToString(), Text = input });
-await collection.UpsertAsync(records);
-
-// Embeddings for the search is automatically generated on search.
-var searchResult = collection.SearchAsync(
-    "What is my budget for 2024?",
-    top: 1);
-
-// Output the matching result.
-await foreach (var result in searchResult)
-{
-    Console.WriteLine($"Key: {result.Record.Key}, Text: {result.Record.Text}");
-}
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="ExampleUsage":::
 
 ## Generate embeddings yourself
 
@@ -197,54 +62,11 @@ For information on how to construct `Microsoft.Extensions.AI` embedding generato
 
 ### Generate embeddings on upsert with `IEmbeddingGenerator`
 
-```csharp
-public async Task GenerateEmbeddingsAndUpsertAsync(
-    IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator,
-    VectorStoreCollection<ulong, Hotel> collection)
-{
-    // Upsert a record.
-    string descriptionText = "A place where everyone can be happy.";
-    ulong hotelId = 1;
-
-    // Generate the embedding.
-    ReadOnlyMemory<float> embedding =
-        (await embeddingGenerator.GenerateEmbeddingAsync(descriptionText)).Vector;
-
-    // Create a record and upsert with the already generated embedding.
-    await collection.UpsertAsync(new Hotel
-    {
-        HotelId = hotelId,
-        HotelName = "Hotel Happy",
-        Description = descriptionText,
-        DescriptionEmbedding = embedding,
-        Tags = new[] { "luxury", "pool" }
-    });
-}
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="GenerateEmbeddingsOnUpsertWithIEmbedding":::
 
 ### Generate embeddings on search with `IEmbeddingGenerator`
 
-```csharp
-public async Task GenerateEmbeddingsAndSearchAsync(
-    IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator,
-    VectorStoreCollection<ulong, Hotel> collection)
-{
-    // Upsert a record.
-    string descriptionText = "Find me a hotel with happiness in mind.";
-
-    // Generate the embedding.
-    ReadOnlyMemory<float> searchEmbedding =
-        (await embeddingGenerator.GenerateEmbeddingAsync(descriptionText)).Vector;
-
-    // Search using the already generated embedding.
-    IAsyncEnumerable<VectorSearchResult<Hotel>> searchResult = collection.SearchAsync(searchEmbedding, top: 1);
-    List<VectorSearchResult<Hotel>> resultItems = await searchResult.ToListAsync();
-
-    // Print the first search result.
-    Console.WriteLine("Score for first result: " + resultItems.FirstOrDefault()?.Score);
-    Console.WriteLine("Hotel description for first result: " + resultItems.FirstOrDefault()?.Record.Description);
-}
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="GenerateEmbeddingsOnSearchWithIEmbedding":::
 
 ## Embedding dimensions
 
@@ -261,14 +83,9 @@ If creating a collection using the Vector Store abstractions, you need to specif
 required for each vector property either via annotations or via the record definition. Here are examples of both setting
 the number of dimensions to 1536.
 
-```csharp
-[VectorStoreVector(Dimensions: 1536)]
-public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="EmbeddingDimensions1":::
 
-```csharp
-new VectorStoreVectorProperty("DescriptionEmbedding", typeof(float), dimensions: 1536);
-```
+:::code language="csharp" source="./snippets/embedding-generation.cs" id="EmbeddingDimensions2":::
 
 ## See also
 

@@ -39,38 +39,17 @@ dotnet add package Microsoft.SemanticKernel.Connectors.SqlServer --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods from the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
+:::code language="csharp" source="./snippets/sql-connector.cs" id="GetStarted1":::
 
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSqlServerVectorStore(_ => "<connectionstring>");
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSqlServerVectorStore(_ => "<connectionstring>")
-```
+:::code language="csharp" source="./snippets/sql-connector.cs" id="GetStarted2":::
 
 You can construct a Sql Server Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.SqlServer;
-
-var vectorStore = new SqlServerVectorStore("<connectionstring>");
-```
+:::code language="csharp" source="./snippets/sql-connector.cs" id="GetStarted3":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.SqlServer;
-
-var collection = new SqlServerCollection<string, Hotel>("<connectionstring>", "skhotels");
-```
+:::code language="csharp" source="./snippets/sql-connector.cs" id="GetStarted4":::
 
 ## Data mapping
 
@@ -84,24 +63,7 @@ The property name override is done by setting the <xref:Microsoft.Extensions.Vec
 
 Here is an example of a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set on its attributes and how that will be represented in a SQL Server command.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public ulong HotelId { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_name")]
-    public string? HotelName { get; set; }
-
-    [VectorStoreData(StorageName = "hotel_description")]
-    public string? Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineDistance)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/sql-connector.cs" id="PropertyNameOverride":::
 
 ```sql
 CREATE TABLE Hotel (

@@ -38,67 +38,23 @@ dotnet add package Microsoft.SemanticKernel.Connectors.Qdrant --prerelease
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddQdrantVectorStore("localhost");
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddQdrantVectorStore("localhost");
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted2":::
 
 Extension methods that take no parameters are also provided. These require an instance of the `Qdrant.Client.QdrantClient` class to be separately registered with the dependency injection container.
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Qdrant.Client;
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted3":::
 
-// Using a ServiceCollection.
-var services = new ServiceCollection();
-services.AddSingleton<QdrantClient>(sp => new QdrantClient("localhost"));
-services.AddQdrantVectorStore();
-```
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
-using Qdrant.Client;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<QdrantClient>(sp => new QdrantClient("localhost"));
-builder.Services.AddQdrantVectorStore();
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted4":::
 
 You can construct a Qdrant Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Qdrant;
-using Qdrant.Client;
-
-var vectorStore = new QdrantVectorStore(new QdrantClient("localhost"), ownsClient: true);
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted5":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Qdrant;
-using Qdrant.Client;
-
-var collection = new QdrantCollection<ulong, Hotel>(
-    new QdrantClient("localhost"),
-    "skhotels",
-    ownsClient: true);
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="GetStarted6":::
 
 ## Data mapping
 
@@ -120,24 +76,7 @@ The property name override is done by setting the <xref:Microsoft.Extensions.Vec
 
 Here is an example of a data model with <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> set on its attributes and how that will be represented in Qdrant.
 
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public ulong HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true, StorageName = "hotel_name")]
-    public string HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true, StorageName = "hotel_description")]
-    public string Description { get; set; }
-
-    [VectorStoreVector(4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw, StorageName = "hotel_description_embedding")]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="PropertyNameOverride":::
 
 ```json
 {
@@ -159,15 +98,7 @@ The default mode is *single unnamed vector*.
 With this option a collection might only contain a single vector and it will be unnamed in the storage model in Qdrant.
 Here is an example of how an object is represented in Qdrant when using *single unnamed vector* mode:
 
-```csharp
-new Hotel
-{
-    HotelId = 1,
-    HotelName = "Hotel Happy",
-    Description = "A place where everyone can be happy.",
-    DescriptionEmbedding = new float[4] { 0.9f, 0.1f, 0.1f, 0.1f }
-};
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="SingleUnnamedVector":::
 
 ```json
 {
@@ -182,16 +113,7 @@ new Hotel
 If using the named vectors mode, it means that each point in a collection might contain more than one vector, and each will be named.
 Here is an example of how an object is represented in Qdrant when using *named vectors* mode:
 
-```csharp
-new Hotel
-{
-    HotelId = 1,
-    HotelName = "Hotel Happy",
-    Description = "A place where everyone can be happy.",
-    HotelNameEmbedding = new float[4] { 0.9f, 0.5f, 0.5f, 0.5f }
-    DescriptionEmbedding = new float[4] { 0.9f, 0.1f, 0.1f, 0.1f }
-};
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="NamedVectors1":::
 
 ```json
 {
@@ -207,18 +129,4 @@ new Hotel
 To enable named vectors mode, pass this as an option when constructing a Vector Store or collection.
 The same options can also be passed to any of the provided dependency injection container extension methods.
 
-```csharp
-using Microsoft.SemanticKernel.Connectors.Qdrant;
-using Qdrant.Client;
-
-var vectorStore = new QdrantVectorStore(
-    new QdrantClient("localhost"),
-    ownsClient: true,
-    new() { HasNamedVectors = true });
-
-var collection = new QdrantCollection<ulong, Hotel>(
-    new QdrantClient("localhost"),
-    "skhotels",
-    ownsClient: true,
-    new() { HasNamedVectors = true });
-```
+:::code language="csharp" source="./snippets/qdrant-connector.cs" id="NamedVectors2":::

@@ -39,35 +39,14 @@ dotnet add package Microsoft.SemanticKernel.Core
 
 You can add the vector store to the `IServiceCollection` dependency injection container using extension methods provided by the Semantic Kernel connector packages.
 
-```csharp
-using Microsoft.SemanticKernel;
+:::code language="csharp" source="./snippets/volatile-connector.cs" id="GetStarted1":::
 
-// Using a ServiceCollection.
-var kernelBuilder = Kernel
-    .CreateBuilder()
-    .AddVolatileVectorStore();
-```
-
-```csharp
-using Microsoft.SemanticKernel;
-
-// Using IServiceCollection with ASP.NET Core.
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddVolatileVectorStore();
-```
+:::code language="csharp" source="./snippets/volatile-connector.cs" id="GetStarted2":::
 
 You can construct a Volatile Vector Store instance directly.
 
-```csharp
-using Microsoft.SemanticKernel.Data;
-
-var vectorStore = new VolatileVectorStore();
-```
+:::code language="csharp" source="./snippets/volatile-connector.cs" id="GetStarted3":::
 
 It's possible to construct a direct reference to a named collection.
 
-```csharp
-using Microsoft.SemanticKernel.Data;
-
-var collection = new VolatileVectorStoreRecordCollection<string, Hotel>("skhotels");
-```
+:::code language="csharp" source="./snippets/volatile-connector.cs" id="GetStarted4":::

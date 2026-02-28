@@ -15,7 +15,7 @@ This article shows you how to use the key features of the library.
 ## Prerequisites
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) or later
-- An understanding of [embeddings](../conceptual/embeddings.md) and [vector databases](../conceptual/vector-databases.md)
+- An understanding of [embeddings](../conceptual/embeddings.md) and [vector databases](../overview.md)
 
 ## Install the packages
 
@@ -26,7 +26,7 @@ dotnet add package Microsoft.Extensions.VectorData.Abstractions
 dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 ```
 
-For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database. For a full list of available connectors, see [Available vector store connectors](../conceptual/vector-databases.md#available-vector-store-connectors).
+For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database. For a full list of available connectors, see [Available vector store connectors](../overview.md#available-vector-store-connectors).
 
 ## Define a data model
 
@@ -75,7 +75,7 @@ As an alternative to using attributes, you can define your schema programmatical
 
 ## Create a vector store
 
-Create an instance of the `VectorStore` implementation for your chosen database. The following example creates an in-memory vector store:
+Create an instance of the <xref:Microsoft.Extensions.VectorData.VectorStore> implementation for your chosen database. The following example creates an in-memory vector store:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/Program.cs" id="CreateVectorStore":::
 
@@ -192,7 +192,7 @@ Then configure the embedding generator when creating the vector store:
 
 :::code language="csharp" source="./snippets/use-vector-stores/csharp/VectorStoresExamples/AutoEmbedding.cs" id="AutoEmbeddingVectorStore":::
 
-With this approach, `SearchAsync` also accepts a `string` query directly—you don't need to generate a query embedding manually.
+With this approach, <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602.SearchAsync*> also accepts a `string` query directly—you don't need to generate a query embedding manually.
 
 > [!IMPORTANT]
 > Automatic embedding generation doesn't retrieve or store the original source text. If you need to access the original text later, store it in a separate `[VectorStoreData]` property on your model.
@@ -255,7 +255,7 @@ This approach lets you develop and test locally without any external services, t
 
 ## Related content
 
-- [Vector databases for .NET AI apps](../conceptual/vector-databases.md)
+- [Vector databases for .NET AI apps](../overview.md)
 - [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md)
 - [Data ingestion](../conceptual/data-ingestion.md)
 - [Embeddings in .NET](../conceptual/embeddings.md)

@@ -9,7 +9,7 @@ ms.author: alexwolf
 
 # Implement Azure OpenAI with RAG using vector search in a .NET app
 
-This tutorial explores integration of the RAG pattern using Open AI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections that follow, you'll set up a sample application and explore key code examples that demonstrate these concepts.
+This tutorial explores integration of the RAG pattern using OpenAI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections that follow, you'll set up a sample application and explore key code examples that demonstrate these concepts.
 
 ## Prerequisites
 
@@ -186,7 +186,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
 
 1. Select the **Ask AI Assistant (search for a recipe by name or description, or ask a question)** option in the application to run a user query.
 
-   The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
+   The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602.SearchAsync*> method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 
     ```C#
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)

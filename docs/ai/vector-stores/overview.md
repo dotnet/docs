@@ -34,7 +34,7 @@ Vector databases and their search features are especially useful in [RAG pattern
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings in your database.
 1. Use a language model such as GPT-4 to assemble a user-friendly completion from the vector search results.
 
-Visit the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial for a hands-on example of this flow.
+For a hands-on example of this flow, see the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial.
 
 Other benefits of the RAG pattern include:
 
@@ -53,61 +53,6 @@ The library provides the following key capabilities:
 - **Vector and text search**: Query records by semantic similarity using vector search, or by keyword using text search.
 - **Collection management**: Create, list, and delete collections (tables or indices) in a vector store.
 
-### Define a data model
-
-To store records in a vector store, define a .NET class and annotate its properties with the following attributes from the <xref:Microsoft.Extensions.VectorData> namespace:
-
-- <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>: Marks the property that uniquely identifies each record (the primary key).
-- <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute>: Marks properties that contain regular data (strings, numbers, and so on) to store and optionally filter on.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>: Marks properties that store embedding vectors. You specify the number of dimensions and the distance function to use for similarity comparisons.
-
-The following example defines a data model for a hotel:
-
-```csharp
-using Microsoft.Extensions.VectorData;
-
-public class Hotel
-{
-    [VectorStoreKey]
-    public int HotelId { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string? HotelName { get; set; }
-
-    [VectorStoreData(IsFullTextIndexed = true)]
-    public string? Description { get; set; }
-
-    [VectorStoreVector(Dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-    public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
-
-    [VectorStoreData(IsIndexed = true)]
-    public string[]? Tags { get; set; }
-}
-```
-
-The `Dimensions` parameter must match the output size of the embedding model you use. For example, `text-embedding-3-small` produces 1536-dimensional vectors, while `text-embedding-3-large` produces 3072-dimensional vectors.
-
-### Automatic embedding generation
-
-Instead of generating embeddings yourself before each upsert, you can declare your vector property as a `string` type and configure an `IEmbeddingGenerator` on the vector store. The store then generates the embedding automatically when you upsert a record, using the string value you provide:
-
-```csharp
-public class FinanceInfo
-{
-    [VectorStoreKey]
-    public int Key { get; set; }
-
-    [VectorStoreData]
-    public string Text { get; set; } = "";
-
-    // Declare as string to enable automatic embedding generation on upsert.
-    [VectorStoreVector(1536)]
-    public string EmbeddingSource { get; set; } = "";
-}
-```
-
-You can configure the `IEmbeddingGenerator` at the vector store or collection level, or on individual vector properties. With auto-embedding, you can also pass a `string` directly to `SearchAsync` instead of a precomputed vector—the store generates the search embedding for you. For more information, see [Use built-in embedding generation](../how-to/use-vector-stores.md#use-built-in-embedding-generation).
-
 ### Key abstractions
 
 The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following main abstract classes:
@@ -116,84 +61,7 @@ The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following
 - <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations. Also inherits from `IVectorSearchable<TRecord>`.
 - `IKeywordHybridSearchable<TRecord>`: Implemented by collections that support hybrid search combining vector similarity with keyword matching.
 
-The following example shows how to get a collection from a vector store and upsert (insert or update) records:
-
-```csharp
-// Get or create a collection named "hotels".
-VectorStoreCollection<int, Hotel> collection =
-    vectorStore.GetCollection<int, Hotel>("hotels");
-
-// Ensure the collection exists in the database.
-await collection.EnsureCollectionExistsAsync();
-
-// Upsert a record.
-await collection.UpsertAsync(new Hotel
-{
-    HotelId = 1,
-    HotelName = "Seaside Retreat",
-    Description = "A peaceful hotel on the coast with stunning ocean views.",
-    DescriptionEmbedding = await embeddingGenerator.GenerateVectorAsync(
-        "A peaceful hotel on the coast with stunning ocean views."),
-    Tags = ["beach", "ocean", "relaxation"]
-});
-```
-
-### Perform vector search
-
-Use the `SearchAsync` method to search for semantically similar records. Pass in an embedding vector for your query and specify the number of results to return:
-
-```csharp
-// Generate an embedding for the search query.
-ReadOnlyMemory<float> queryEmbedding =
-    await embeddingGenerator.GenerateVectorAsync("beachfront hotel");
-
-// Search for the top 3 most similar hotels.
-IAsyncEnumerable<VectorSearchResult<Hotel>> results =
-    collection.SearchAsync(queryEmbedding, top: 3);
-
-await foreach (VectorSearchResult<Hotel> result in results)
-{
-    Console.WriteLine($"Hotel: {result.Record.HotelName}");
-    Console.WriteLine($"Score: {result.Score}");
-}
-```
-
-### Filter search results
-
-Use the <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1> class to filter vector search results by field values. Only properties marked with `IsIndexed = true` in `[VectorStoreData]` can be used in filters:
-
-```csharp
-var searchOptions = new VectorSearchOptions<Hotel>
-{
-    Filter = hotel => hotel.HotelName == "Seaside Retreat"
-};
-
-IAsyncEnumerable<VectorSearchResult<Hotel>> results =
-    collection.SearchAsync(queryEmbedding, top: 3, searchOptions);
-```
-
-Filters are expressed as LINQ expressions and compiled into the query syntax of the underlying database. The supported operations vary by connector.
-
-### Hybrid search
-
-Some connectors support *hybrid search*, which combines vector similarity with full-text keyword matching. To use hybrid search, check whether your collection implements `IKeywordHybridSearchable<TRecord>` and use the `HybridSearchAsync` method:
-
-```csharp
-if (collection is IKeywordHybridSearchable<Hotel> hybridSearch)
-{
-    var results = hybridSearch.HybridSearchAsync(
-        queryEmbedding,
-        keywords: ["ocean", "beach"],
-        top: 3);
-
-    await foreach (var result in results)
-    {
-        Console.WriteLine($"Hotel: {result.Record.HotelName}, Score: {result.Score}");
-    }
-}
-```
-
-For hybrid search to work, the data model must have at least one vector property and one string property with `IsFullTextIndexed = true`.
+For a step-by-step guide covering data model definition, CRUD operations, vector search, filtering, hybrid search, and embedding generation, see [Use vector stores in .NET AI apps](how-to/use-vector-stores.md).
 
 ## Available vector store connectors
 
@@ -217,18 +85,18 @@ The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstracti
 | SQLite | [Microsoft.SemanticKernel.Connectors.SqliteVec](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqliteVec) |
 | Weaviate | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate) |
 
-All connectors implement the same `VectorStore` and `VectorStoreCollection<TKey, TRecord>` abstract classes, so you can switch between them without changing your application logic.
+All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> abstract classes, so you can switch between them without changing your application logic.
 
 > [!TIP]
 > Use the in-memory connector (`Microsoft.SemanticKernel.Connectors.InMemory`) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production connector later.
 
 > [!IMPORTANT]
-> Not all connectors are maintained by the Microsoft Semantic Kernel project. When evaluating a connector, review its quality, licensing, support, and compatibility to ensure it meets your requirements.
+> Not all connectors are maintained by the Microsoft Semantic Kernel team. When evaluating a connector, review its quality, licensing, support, and compatibility to ensure it meets your requirements.
 
 ## Related content
 
+- [Use vector stores in .NET AI apps](how-to/use-vector-stores.md)
 - [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md)
 - [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md)
-- [Use vector stores in .NET AI apps](../how-to/use-vector-stores.md)
-- [Data ingestion](data-ingestion.md)
-- [Embeddings in .NET](embeddings.md)
+- [Data ingestion](../conceptual/data-ingestion.md)
+- [Embeddings in .NET](../conceptual/embeddings.md)

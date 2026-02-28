@@ -1,9 +1,10 @@
 ---
 title: dotnet-dump diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
-ms.date: 11/17/2020
+ms.date: 02/20/2026
 ms.topic: reference
 ms.custom: linux-related-content
+ai-usage: ai-assisted
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
@@ -315,6 +316,190 @@ SP               IP               Function
 
 StackTraceString: <none>
 HResult: 80131604
+```
+
+## Analyze memory leaks and allocations
+
+Memory leaks occur when your app holds references to objects that are no longer needed, preventing the garbage collector from reclaiming memory. Use `dotnet-dump` to identify memory leaks, find the largest objects, and understand where memory is being consumed.
+
+For a complete walkthrough of debugging a memory leak, see [Debug a memory leak in .NET](debug-memory-leak.md).
+
+### Identify the largest objects
+
+Use the `dumpheap` command with the `-stat` option to see a summary of objects on the heap, sorted by total size:
+
+```console
+> dumpheap -stat
+
+Statistics:
+              MT    Count    TotalSize Class Name
+00007f6c1eeefba8      576        59904 System.Reflection.RuntimeMethodInfo
+00007f6c1dc021c8     1749        95696 System.SByte[]
+00000000008c9db0     3847       116080      Free
+00007f6c1e784a18      175       128640 System.Char[]
+00007f6c1dbf5510      217       133504 System.Object[]
+00007f6c1dc014c0      467       416464 System.Byte[]
+00007f6c21625038        6      4063376 testwebapi.Controllers.Customer[]
+00007f6c20a67498   200000      4800000 testwebapi.Controllers.Customer
+00007f6c1dc00f90   206770     19494060 System.String
+Total 428516 objects
+```
+
+This output shows you which types consume the most memory. In this example, `System.String` objects consume about 19 MB, and `Customer` objects consume about 4.8 MB.
+
+### Identify objects by namespace or assembly
+
+To find which modules or namespaces are consuming memory, use the `-type` option with a partial type name to filter results:
+
+```console
+> dumpheap -type MyCompany.Data -stat
+
+Statistics:
+              MT    Count    TotalSize Class Name
+00007f6c21625038    15000      3600000 MyCompany.Data.CustomerRecord
+00007f6c21625040     8000      2560000 MyCompany.Data.OrderHistory
+00007f6c21625048     2000       960000 MyCompany.Data.ProductCache
+Total 25000 objects, 7120000 bytes
+```
+
+This approach helps you identify which parts of your codebase are responsible for memory consumption.
+
+### Find the highest number of instantiations
+
+To see which types have the most instances, regardless of total size, look at the **Count** column in the `dumpheap -stat` output. Objects with high instance counts might indicate inefficient object creation or caching issues:
+
+```console
+> dumpheap -stat
+
+Statistics:
+              MT    Count    TotalSize Class Name
+00007f6c1dc00f90   206770     19494060 System.String
+00007f6c20a67498   200000      4800000 testwebapi.Controllers.Customer
+00007f6c1dc021c8     1749        95696 System.SByte[]
+```
+
+This example shows 206,770 `String` instances and 200,000 `Customer` instances.
+
+### Analyze object references with gcroot
+
+After identifying large or numerous objects, use `gcroot` to find out why an object isn't being garbage collected. The `gcroot` command shows the reference chain from GC roots to a specific object:
+
+```console
+> dumpheap -mt 00007f6c20a67498
+         Address               MT     Size
+00007f6ad09421f8 00007f6c20a67498       24
+...
+
+> gcroot 00007f6ad09421f8
+
+Thread 3f68:
+    00007F6795BB58A0 00007F6C1D7D0745 testwebapi.Controllers.CustomerCache.GetAll()
+        rbx:  (interior)
+            ->  00007F6BDFFFF038 System.Object[]
+            ->  00007F69D0033570 testwebapi.Controllers.Processor
+            ->  00007F69D0033588 testwebapi.Controllers.CustomerCache
+            ->  00007F69D00335A0 System.Collections.Generic.List`1[[testwebapi.Controllers.Customer]]
+            ->  00007F6C000148A0 testwebapi.Controllers.Customer[]
+            ->  00007F6AD0942258 testwebapi.Controllers.Customer
+
+Found 1 root.
+```
+
+This output shows that the `Customer` object is held by a `CustomerCache` object, which helps you identify the source of the leak in your code.
+
+### Analyze memory by object size
+
+Use the `-min` and `-max` options to filter objects by size:
+
+```console
+> dumpheap -min 100000 -stat
+
+Statistics:
+              MT    Count    TotalSize Class Name
+00007f6c21625038        6      4063376 testwebapi.Controllers.Customer[]
+00007f6c1dc014c0       12       416464 System.Byte[]
+Total 18 objects
+```
+
+This command shows only objects larger than 100,000 bytes, helping you focus on the biggest memory consumers.
+
+## Find deadlocks
+
+Use `dotnet-dump` to diagnose deadlock situations where threads are blocked waiting for resources. For a complete deadlock debugging walkthrough, see [Debug a deadlock in .NET](debug-deadlock.md).
+
+### List all threads
+
+Use the `threads` command to see all managed threads:
+
+```console
+> threads
+*0 0x1DBFF (121855)
+ 1 0x1DC01 (121857)
+ 2 0x1DC02 (121858)
+ ...
+```
+
+### Examine thread stacks
+
+Use `clrstack -all` to see the call stacks of all threads:
+
+```console
+> clrstack -all
+```
+
+Look for patterns where multiple threads are blocked on `Monitor.Enter` or similar synchronization primitives.
+
+### Find lock owners
+
+Use the `syncblk` command to see which threads hold locks and which threads are waiting:
+
+```console
+> syncblk
+Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
+   43 00000246E51268B8          603         1 0000024B713F4E30 5634  28   00000249654b14c0 System.Object
+   44 00000246E5126908            3         1 0000024B713F47E0 51d4  29   00000249654b14d8 System.Object
+```
+
+The **MonitorHeld** column shows the number of threads waiting for the lock. The **Owning Thread Info** column shows which thread owns the lock.
+
+## Advanced memory analysis scenarios
+
+### Compare multiple dumps
+
+To understand memory growth over time, collect multiple dumps and compare them:
+
+1. Collect a baseline dump: `dotnet-dump collect -p <pid> -o baseline.dmp`
+1. Let your app run and consume more memory.
+1. Collect a second dump: `dotnet-dump collect -p <pid> -o after.dmp`
+1. Analyze both dumps and compare the `dumpheap -stat` results.
+
+Look for types that have significantly more instances or larger total sizes in the second dump.
+
+### Analyze memory for specific object types
+
+To dump all instances of a specific type:
+
+```console
+> dumpheap -type Customer
+         Address               MT     Size
+00007f6ad09421f8 00007f6c20a67498       24
+00007f6ad0942210 00007f6c20a67498       24
+...
+```
+
+Then use `dumpobj` to examine individual objects:
+
+```console
+> dumpobj 00007f6ad09421f8
+Name:        testwebapi.Controllers.Customer
+MethodTable: 00007f6c20a67498
+EEClass:     00007f6c21625000
+Size:        24(0x18) bytes
+File:        /app/testwebapi.dll
+Fields:
+              MT    Field   Offset                 Type VT     Attr            Value Name
+00007f6c1dc00f90  4000001        8        System.String  0 instance 00007f6ad09421f0 Name
+00007f6c1dbf4c18  4000002       10         System.Int32  1 instance               42 Id
 ```
 
 ## Troubleshooting dump collection issues

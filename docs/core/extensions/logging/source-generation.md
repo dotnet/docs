@@ -119,7 +119,8 @@ Logging methods that are decorated with `LoggerMessageAttribute` must meet the f
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
-- Logging methods *can't* be generic.
+- Logging methods support generic type parameters, but the C# 13 `allows ref struct` anti-constraint isn't supported.
+- Logging method parameters can't use the `params`, `scoped`, or `out` modifiers, and can't be ref struct types.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
 The code-generation model depends on code being compiled with a modern C# compiler, that is, version 9 or later. For information about changing the language version, see [C# language versioning](../../../csharp/language-reference/configure-language-version.md).

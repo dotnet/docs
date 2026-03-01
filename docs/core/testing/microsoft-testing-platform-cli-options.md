@@ -50,7 +50,7 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 - **`--diagnostic-synchronous-write`**
 
-  Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
+  Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This slows down the test execution.
 
 - **`--diagnostic-output-directory`**
 

@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Build a minimal .NET AI RAG app
 description: Create an AI powered app to search and integrate with vector stores using embeddings and the Microsoft.Extensions.VectorData package for .NET
-ms.date: 05/29/2025
+ms.date: 02/28/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
 ---
@@ -25,13 +25,13 @@ The app uses the <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.V
 
 :::zone target="docs" pivot="openai"
 
-[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
+[!INCLUDE [openai-prereqs](../../quickstarts/includes/prerequisites-openai.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
 
-[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
+[!INCLUDE [azure-openai-prereqs](../../quickstarts/includes/prerequisites-azure-openai.md)]
 
 :::zone-end
 
@@ -111,7 +111,7 @@ Complete the following steps to create a .NET console app that can:
 
 :::zone target="docs" pivot="azure-openai"
 
-[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
+[!INCLUDE [create-ai-service](../../quickstarts/includes/create-ai-service.md)]
 
 :::zone-end
 
@@ -138,48 +138,48 @@ Complete the following steps to create a .NET console app that can:
 
 1. Add a new class named `CloudService` to your project with the following properties:
 
-   :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
+   :::code language="csharp" source="../snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
-    The <xref:Microsoft.Extensions.VectorData> attributes, such as <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>, influence how each property is handled when used in a vector store. The `Vector` property stores a generated embedding that represents the semantic meaning of the `Description` value for vector searches.
+   The <xref:Microsoft.Extensions.VectorData> attributes, such as <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>, influence how each property is handled when used in a vector store. The `Vector` property stores a generated embedding that represents the semantic meaning of the `Description` value for vector searches.
 
 1. In the `Program.cs` file, add the following code to create a data set that describes a collection of cloud services:
 
-   :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="DataSet":::
+   :::code language="csharp" source="../snippets/chat-with-data/azure-openai/program.cs" id="DataSet":::
 
 1. Create and configure an `IEmbeddingGenerator` implementation to send requests to an embedding AI model:
 
-    :::zone target="docs" pivot="azure-openai"
+   :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
+   :::code language="csharp" source="../snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
-    > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+   > [!NOTE]
+   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../../azure-ai-services-authentication.md).
 
-    :::zone-end
+   :::zone-end
 
-    :::zone target="docs" pivot="openai"
+   :::zone target="docs" pivot="openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/openai/program.cs" id="EmbeddingGenerator":::
+   :::code language="csharp" source="../snippets/chat-with-data/openai/program.cs" id="EmbeddingGenerator":::
 
-    :::zone-end
+   :::zone-end
 
 1. Create and populate a vector store with the cloud service data. Use the `IEmbeddingGenerator` implementation to create and assign an embedding vector for each record in the cloud service data:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="VectorStore":::
+   :::code language="csharp" source="../snippets/chat-with-data/azure-openai/program.cs" id="VectorStore":::
 
    The embeddings are numerical representations of the semantic meaning for each data record, which makes them compatible with vector search features.
 
 1. Create an embedding for a search query and use it to perform a vector search on the vector store:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="Search":::
+   :::code language="csharp" source="../snippets/chat-with-data/azure-openai/program.cs" id="Search":::
 
 1. Use the `dotnet run` command to run the app:
 
-    ```dotnetcli
-    dotnet run
-    ```
+   ```dotnetcli
+   dotnet run
+   ```
 
-    The app prints out the top result of the vector search, which is the cloud service that's most relevant to the original query. You can modify the query to try different search scenarios.
+   The app prints out the top result of the vector search, which is the cloud service that's most relevant to the original query. You can modify the query to try different search scenarios.
 
 :::zone target="docs" pivot="azure-openai"
 
@@ -194,5 +194,5 @@ If you no longer need them, delete the Azure OpenAI resource and model deploymen
 
 ## Next steps
 
-- [Quickstart - Chat with a local AI model](chat-local-model.md)
-- [Generate images from text using AI](text-to-image.md)
+- [Quickstart - Chat with a local AI model](../../quickstarts/chat-local-model.md)
+- [Generate images from text using AI](../../quickstarts/text-to-image.md)

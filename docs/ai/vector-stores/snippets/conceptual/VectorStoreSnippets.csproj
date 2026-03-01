@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8019;CS0219;CS1591;CS8602</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Search.Documents" Version="11.8.0-beta.1" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="10.3.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.3.0" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureAISearch" Version="1.*-*" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.*-*" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Qdrant" Version="1.*-*" />
+    <PackageReference Include="OpenAI" Version="2.*" />
+    <PackageReference Include="Qdrant.Client" Version="1.*" />
+  </ItemGroup>
+
+</Project>

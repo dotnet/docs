@@ -92,7 +92,7 @@ All non-sealed classes (or Visual Basic classes not modified as `NotInheritable`
 
 ### Base class with managed resources
 
-Here's a general example of implementing the dispose pattern for a base class that only owns managed resources.
+Here's a general example of implementing the dispose pattern for a base class that only owns managed resources. The example uses <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> to ensure thread-safe disposal.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb":::

@@ -628,8 +628,7 @@ items:
                 href: ../standard/base-types/best-practices-strings.md
               - name: Displaying and persisting formatted data
                 href: ../standard/base-types/best-practices-display-data.md
-          - name: Behavior changes in .NET 5+ (Windows)
-            href: ../standard/base-types/string-comparison-net-5-plus.md
+
           - name: Basic string operations
             items:
               - name: Create new strings
@@ -1069,6 +1068,9 @@ items:
             href: ../core/extensions/dependency-injection/usage.md
           - name: Guidelines
             href: ../core/extensions/dependency-injection/guidelines.md
+          - name: Auto-activation
+            href: ../core/extensions/dependency-injection/auto-activation.md
+            displayName: auto-activation,singleton activation,startup activation,di auto-activation
       - name: Configuration
         items:
           - name: Overview
@@ -1120,6 +1122,15 @@ items:
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
       - name: HostBuilder (generic host)
         href: ../core/extensions/generic-host.md
+      - name: Asynchronous state management
+        href: ../core/extensions/async-state.md
+        displayName: async state,asynclocal,ambient data,async context,asynchronous context
+      - name: Testing with FakeTimeProvider
+        href: ../core/extensions/timeprovider-testing.md
+        displayName: fake time provider,time testing,testing time,test timers,mock time
+      - name: Audit reports for privacy and compliance
+        href: ../core/extensions/audit-reports.md
+        displayName: audit reports,compliance reports,privacy audit,data classification,telemetry audit
       - name: Resilience
         href: ../core/resilience/index.md
         displayName: resilience,transient fault handling,recovery,polly

@@ -89,7 +89,7 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 - **`--list-tests`**
 
-  List available tests. Tests will not be executed.
+  List available tests. Tests won't be executed.
 
 - **`--maximum-failed-tests`**
 

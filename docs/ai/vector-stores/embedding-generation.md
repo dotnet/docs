@@ -15,7 +15,7 @@ You can configure an embedding generator on your vector store, allowing embeddin
 
 To enable generating vectors automatically on upsert, the vector property on your data model is defined as the source type, for example, string but still decorated with a <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>.
 
-:::code language="csharp" source="./snippets/embedding-generation.cs" id="LetTheVectorStoreGenerateEmbeddings":::
+:::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="LetTheVectorStoreGenerateEmbeddings":::
 
 Before upsert, the `Embedding` property should contain the string from which a vector should be generated. The type of the vector stored in the database (for example, float32, float16, etc.) will be derived from the configured embedding generator.
 
@@ -28,31 +28,31 @@ Embedding generators that implement the `Microsoft.Extensions.AI` abstractions a
 
   You can set a default embedding generator for the entire vector store. This generator will be used for all collections and properties unless overridden.
 
-  :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnTheVectorStore":::
+  :::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="OnTheVectorStore":::
 
 - **On a Collection**:
 
   You can configure an embedding generator for a specific collection, overriding the store-level generator.
 
-  :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnACollection":::
+  :::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="OnACollection":::
 
 - **On a Record Definition**:
 
   When defining properties programmatically using <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition>, you can specify an embedding generator for all properties.
 
-  :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnARecordDefinition":::
+  :::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="OnARecordDefinition":::
 
 - **On a Vector Property Definition**:
 
   When defining properties programmatically, you can set an embedding generator directly on the property.
 
-  :::code language="csharp" source="./snippets/embedding-generation.cs" id="OnAVectorPropertyDefinition":::
+  :::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="OnAVectorPropertyDefinition":::
 
 ### Example usage
 
 The following example demonstrates how to use the embedding generator to automatically generate vectors during both upsert and search operations. This approach simplifies workflows by eliminating the need to precompute embeddings manually.
 
-:::code language="csharp" source="./snippets/embedding-generation.cs" id="ExampleUsage":::
+:::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="ExampleUsage":::
 
 ## Generate embeddings yourself
 
@@ -62,11 +62,11 @@ For information on how to construct `Microsoft.Extensions.AI` embedding generato
 
 ### Generate embeddings on upsert with `IEmbeddingGenerator`
 
-:::code language="csharp" source="./snippets/embedding-generation.cs" id="GenerateEmbeddingsOnUpsertWithIEmbedding":::
+:::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="GenerateEmbeddingsOnUpsertWithIEmbedding":::
 
 ### Generate embeddings on search with `IEmbeddingGenerator`
 
-:::code language="csharp" source="./snippets/embedding-generation.cs" id="GenerateEmbeddingsOnSearchWithIEmbedding":::
+:::code language="csharp" source="./snippets/conceptual/embedding-generation.cs" id="GenerateEmbeddingsOnSearchWithIEmbedding":::
 
 ## Embedding dimensions
 

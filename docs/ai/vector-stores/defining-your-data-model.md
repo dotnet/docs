@@ -12,12 +12,12 @@ All methods to upsert or get records use strongly typed model classes. The prope
 
 > [!TIP]
 >
-> - For an alternative to using attributes, see [defining your schema with a record definition](./schema-with-record-definition.md).
-> - For an alternative to defining your own data model, see [using Vector Store abstractions without defining your own data model](./generic-data-model.md).
+> - For an alternative to using attributes, see [Define your storage schema using a record definition](./schema-with-record-definition.md).
+> - For an alternative to defining your own data model, see [Use Vector Store abstractions without defining your own data model](./dynamic-data-model.md).
 
 Here's an example of a model that's decorated with these attributes.
 
-:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="Overview":::
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
 
 ## Attributes
 
@@ -25,7 +25,7 @@ Here's an example of a model that's decorated with these attributes.
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute to indicate that your property is the key of the record.
 
-:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreKeyAttribute":::
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreKeyAttribute":::
 
 #### VectorStoreKeyAttribute parameters
 
@@ -37,7 +37,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribute to indicate that your property contains general data that is not a key or a vector.
 
-:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreDataAttribute":::
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreDataAttribute":::
 
 #### VectorStoreDataAttribute parameters
 
@@ -51,7 +51,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribut
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> attribute to indicate that your property contains a vector.
 
-:::code language="csharp" source="./snippets/defining-your-data-model.cs" id="VectorStoreVectorAttribute1":::
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreVectorAttribute1":::
 
 It's also possible to use <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> on properties that don't have a vector type, for example, a property of type `string`. When a property is decorated in this way, you need to provide an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> instance to the vector store. When upserting the record, the text that's in the `string` property is automatically converted and stored as a vector in the database. (It's not possible to retrieve a vector using this mechanism.)
 
@@ -61,7 +61,7 @@ public string DescriptionEmbedding { get; set; }
 ```
 
 > [!TIP]
-> For more information on how to use built-in embedding generation, see [Let the Vector Store generate embeddings](./embedding-generation.md#letting-the-vector-store-generate-embeddings).
+> For more information on how to use built-in embedding generation, see [Let the Vector Store generate embeddings](embedding-generation.md#let-the-vector-store-generate-embeddings).
 
 #### VectorStoreVectorAttribute parameters
 

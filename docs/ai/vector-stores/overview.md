@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Vector databases for .NET AI apps
 
-Vector databases store and manage vector [*embeddings*](embeddings.md). Embeddings are numeric representations of data that preserve semantic meaning. Words, documents, images, audio, and other types of data can all be vectorized. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text, finding contextually related data, or creating images from text descriptions.
+Vector databases store and manage vector [*embeddings*](../conceptual/embeddings.md). Embeddings are numeric representations of data that preserve semantic meaning. Words, documents, images, audio, and other types of data can all be vectorized. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text, finding contextually related data, or creating images from text descriptions.
 
 For example, you can use a vector database to:
 
@@ -26,7 +26,7 @@ Some services, such as [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mong
 
 ## Vector search workflows with .NET and OpenAI
 
-Vector databases and their search features are especially useful in [RAG pattern](rag.md) workflows with Azure OpenAI. This pattern allows you to augment or enhance your AI model with additional semantically rich knowledge of your data. A common AI workflow using vector databases includes the following steps:
+Vector databases and their search features are especially useful in [RAG pattern](../conceptual/rag.md) workflows with Azure OpenAI. This pattern allows you to augment or enhance your AI model with additional semantically rich knowledge of your data. A common AI workflow using vector databases includes the following steps:
 
 1. Create embeddings for your data using an OpenAI embedding model.
 1. Store and index the embeddings in a vector database or search service.
@@ -34,7 +34,7 @@ Vector databases and their search features are especially useful in [RAG pattern
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings in your database.
 1. Use a language model such as GPT-4 to assemble a user-friendly completion from the vector search results.
 
-For a hands-on example of this flow, see the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial.
+For a hands-on example of this flow, see the [Implement Azure OpenAI with RAG using vector search in a .NET app](tutorial-vector-search.md) tutorial.
 
 Other benefits of the RAG pattern include:
 
@@ -75,7 +75,7 @@ All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorSt
 ## Related content
 
 - [Use vector stores in .NET AI apps](how-to/use-vector-stores.md)
-- [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md)
-- [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md)
+- [Build a .NET AI vector search app](how-to/build-vector-search-app.md)
+- [Implement Azure OpenAI with RAG using vector search in a .NET app](tutorial-vector-search.md)
 - [Data ingestion](../conceptual/data-ingestion.md)
 - [Embeddings in .NET](../conceptual/embeddings.md)

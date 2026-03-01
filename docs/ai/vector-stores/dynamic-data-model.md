@@ -23,4 +23,4 @@ A record definition can be used to provide the schema information. Unlike a data
 
 To use the `Dictionary` with a connector, specify it as your data model when you create a collection. Also provide a record definition.
 
-:::code language="csharp" source="./snippets/dynamic-data-model.cs" id="Example1":::
+:::code language="csharp" source="./snippets/conceptual/dynamic-data-model.cs" id="Example1":::

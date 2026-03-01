@@ -9,7 +9,7 @@ ms.date: 02/28/2026
 The <xref:Microsoft.Extensions.VectorData> library provides vector search capabilities as part of its Vector Store abstractions. These capabilities include filtering and many other options.
 
 > [!TIP]
-> To see how you can search without generating embeddings yourself, see [Let the Vector Store generate embeddings](./embedding-generation.md#letting-the-vector-store-generate-embeddings).
+> To see how you can search without generating embeddings yourself, see [Let the Vector Store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
 
 ## Vector search
 
@@ -22,7 +22,7 @@ Note that <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> impleme
 
 Assuming you have a collection that already contains data, you can easily search it. Here is an example using Qdrant.
 
-:::code language="csharp" source="./snippets/vector-search.cs" id="VectorSearch":::
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorSearch":::
 
 > [!TIP]
 > For more information on how to generate embeddings see [embedding generation](./embedding-generation.md).
@@ -41,14 +41,14 @@ The following options can be provided using the `VectorSearchOptions<TRecord>` c
 
 Use the `VectorProperty` option to specify the vector property to target during the search. If none is provided and the data model contains only one vector, that vector will be used. If the data model contains no vector or multiple vectors and `VectorProperty` is not provided, the search method throws an exceptoin.
 
-:::code language="csharp" source="./snippets/vector-search.cs" id="VectorProperty":::
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorProperty":::
 
 ### `Top` and `Skip`
 
 The `Top` and `Skip` options allow you to limit the number of results to the top `n` results and
 to skip a number of results from the top of the resultset. You can use `Top` and `Skip` to do paging if you want to retrieve a large number of results using separate calls.
 
-:::code language="csharp" source="./snippets/vector-search.cs" id="TopAndSkip":::
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="TopAndSkip":::
 
 The default value for `Skip` is 0.
 
@@ -59,7 +59,7 @@ If `false`, the vector properties on the returned model are left null. Using `fa
 
 The default value for `IncludeVectors` is `false`.
 
-:::code language="csharp" source="./snippets/vector-search.cs" id="IncludeVectors":::
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="IncludeVectors":::
 
 ### Filter
 
@@ -77,4 +77,4 @@ If you're creating a collection via the Vector Store abstractions and you want t
 
 Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported will vary depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, equals, not equals, `and`, and `or`.
 
-:::code language="csharp" source="./snippets/vector-search.cs" id="Filter":::
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="Filter":::

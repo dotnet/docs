@@ -19,6 +19,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/ai/conceptual/vector-databases.md",
+            "redirect_url": "/dotnet/ai/vector-stores/overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/ai/get-started/dotnet-ai-overview.md",
             "redirect_url": "/dotnet/ai/overview",
             "redirect_document_id": true
@@ -34,6 +39,11 @@
         {
             "source_path_from_root": "/docs/ai/how-to/work-with-local-models.md",
             "redirect_url": "/dotnet/ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/build-vector-search-app.md",
+            "redirect_url": "/dotnet/ai/vector-stores/how-to/build-vector-search-app",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/evaluate-ai-response.md",
@@ -92,6 +102,11 @@
         {
             "source_path_from_root": "/docs/ai/tutorials/evaluate-with-reporting.md",
             "redirect_url": "/dotnet/ai/evaluation/evaluate-with-reporting",
+            "redirect_document_id": true
+        }
+        {
+            "source_path_from_root": "/docs/ai/tutorials/tutorial-ai-vector-search.md",
+            "redirect_url": "/dotnet/ai/vector-stores/tutorial-vector-search",
             "redirect_document_id": true
         }
     ]

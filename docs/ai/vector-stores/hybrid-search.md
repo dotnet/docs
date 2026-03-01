@@ -23,7 +23,7 @@ Only connectors for databases that support vector plus keyword hybrid search imp
 
 The following example shows how to perform a hybrid search on a collection in a Qdrant database.
 
-:::code language="csharp" source="./snippets/hybrid-search.cs" id="HybridSearch":::
+:::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="HybridSearch":::
 
 > [!TIP]
 > For more information on how to generate embeddings, see [embedding generation](./embedding-generation.md).
@@ -55,13 +55,13 @@ When no `AdditionalProperty` is provided:
 - If the data model contains only one full-text search property, that property is used.
 - If the data model contains no full-text search property or multiple full-text search properties, the search method throws an exception.
 
-:::code language="csharp" source="./snippets/hybrid-search.cs" id="VectorPropertyAndAdditionalProperty":::
+:::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="VectorPropertyAndAdditionalProperty":::
 
 ### `Top` and `Skip`
 
 The `Top` and `Skip` options allow you to limit the number of results to the top `n` results and to skip a number of results from the top of the result set. You can use `Top` and `Skip` to do paging if you want to retrieve a large number of results using separate calls.
 
-:::code language="csharp" source="./snippets/hybrid-search.cs" id="TopAndSkip":::
+:::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="TopAndSkip":::
 
 The default value for `Skip` is 0.
 
@@ -71,7 +71,7 @@ The `IncludeVectors` option allows you to specify whether you want to return vec
 
 The default value for `IncludeVectors` is `false`.
 
-:::code language="csharp" source="./snippets/hybrid-search.cs" id="IncludeVectors":::
+:::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="IncludeVectors":::
 
 ### Filter
 
@@ -85,8 +85,8 @@ For fields to be used for filtering, many vector stores require them to be index
 If you're creating a collection via the Vector Store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
-> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstorerecorddatafield-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).
+> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).
 
 Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported varies depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, `equals`, `not equals`, `and`, and `or`.
 
-:::code language="csharp" source="./snippets/hybrid-search.cs" id="Filter":::
+:::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="Filter":::

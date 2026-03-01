@@ -18,7 +18,7 @@ For this sample you need:
 
 - An embedding generation model hosted in Azure or another provider of your choice.
 - An instance of Redis or Docker Desktop so that you can run Redis locally.
-- A Word document to parse and load. Here is a zip containing a sample Word document you can download and use: [vector-store-data-ingestion-input.zip](../../../media/vector-store-data-ingestion-input.zip).
+- A Word document to parse and load.
 
 ## Set up Redis
 
@@ -53,12 +53,12 @@ You can do this by creating a data model with attributes that describe the funct
 
 Add a new file to the project called `TextParagraph.cs` and add the following model to it.
 
-:::code language="csharp" source="./snippets/DataIngestion.cs" id="AddADataModel":::
+:::code language="csharp" source="./snippets/conceptual/DataIngestion.cs" id="AddADataModel":::
 
 The value `1536`, which is the dimension size of the vector, is passed to the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>. This value must match the size of vector that your chosen embedding generator produces.
 
 > [!TIP]
-> For more information on how to annotate your data model and what additional options are available for each attribute, see [defining your data model](../../../concepts/vector-store-connectors/defining-your-data-model.md).
+> For more information on how to annotate your data model and what additional options are available for each attribute, see [defining your data model](../defining-your-data-model.md).
 
 ## Read the paragraphs in the document
 
@@ -66,7 +66,7 @@ Next, you add the code to read the Word document and find the text of each parag
 
 Add a new file to the project called `DocumentReader.cs` and add the following class to read the paragraphs from a document.
 
-:::code language="csharp" source="./snippets/DataIngestion.cs" id="ReadTheParagraphsInTheDocument":::
+:::code language="csharp" source="./snippets/conceptual/DataIngestion.cs" id="ReadTheParagraphsInTheDocument":::
 
 ## Generate embeddings and upload the data
 
@@ -74,7 +74,7 @@ Next, you add a new class to generate embeddings and upload the paragraphs to Re
 
 Add a new file called `DataUploader.cs` with the following contents:
 
-:::code language="csharp" source="./snippets/DataIngestion.cs" id="GenerateEmbeddingsAndUploadTheData":::
+:::code language="csharp" source="./snippets/conceptual/DataIngestion.cs" id="GenerateEmbeddingsAndUploadTheData":::
 
 ## Put it all together
 
@@ -82,11 +82,11 @@ Finally, you put together the different pieces. In this example, you use standar
 
 Add the following code to your `Program.cs` file to set up the container, register the Redis vector store, and register the embedding service. Replace the text embedding generation settings with your own values.
 
-:::code language="csharp" source="./snippets/DataIngestion.cs" id="PutItAllTogether1":::
+:::code language="csharp" source="./snippets/conceptual/DataIngestion.cs" id="PutItAllTogether1":::
 
 Lastly, add code to read the paragraphs from the Word document and call the data uploader to generate the embeddings and upload the paragraphs.
 
-:::code language="csharp" source="./snippets/DataIngestion.cs" id="PutItAllTogether2":::
+:::code language="csharp" source="./snippets/conceptual/DataIngestion.cs" id="PutItAllTogether2":::
 
 ## See your data in Redis
 

@@ -15,7 +15,7 @@ This article shows you how to use the key features of the library.
 ## Prerequisites
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) or later
-- An understanding of [embeddings](../conceptual/embeddings.md) and [vector databases](../overview.md)
+- An understanding of [embeddings](../../conceptual/embeddings.md) and [vector databases](../overview.md)
 
 ## Install the packages
 
@@ -94,7 +94,7 @@ Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.UpsertAsync*> 
 :::code language="csharp" source="../snippets/how-to/Program.cs" id="UpsertRecords":::
 
 > [!IMPORTANT]
-> In a real app, generate the embedding vectors using an `IEmbeddingGenerator` before storing the records. For a working example with real embeddings, see [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md).
+> In a real app, generate the embedding vectors using an `IEmbeddingGenerator` before storing the records. For a working example with real embeddings, see [Build a .NET AI vector search app](build-vector-search-app.md).
 
 ## Get records
 
@@ -172,6 +172,6 @@ Because all connectors implement the same <xref:Microsoft.Extensions.VectorData.
 ## Related content
 
 - [Vector databases for .NET AI apps](../overview.md)
-- [Build a .NET AI vector search app](../quickstarts/build-vector-search-app.md)
-- [Data ingestion](../conceptual/data-ingestion.md)
-- [Embeddings in .NET](../conceptual/embeddings.md)
+- [Build a .NET AI vector search app](build-vector-search-app.md)
+- [Data ingestion](../../conceptual/data-ingestion.md)
+- [Embeddings in .NET](../../conceptual/embeddings.md)

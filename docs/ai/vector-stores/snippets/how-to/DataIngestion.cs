@@ -1,19 +1,23 @@
-// <AddADataModel>
+﻿using System.Text;
+using System.Xml;
+using DocumentFormat.OpenXml.Packaging;
+using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
 
-namespace SKVectorIngest;
+namespace VectorIngest;
 
+// <AddADataModel>
 internal class TextParagraph
 {
     /// <summary>A unique key for the text paragraph.</summary>
     [VectorStoreKey]
     public required string Key { get; init; }
 
-    /// <summary>A uri that points at the original location of the document containing the text.</summary>
+    /// <summary>A URI that points at the original location of the document containing the text.</summary>
     [VectorStoreData]
     public required string DocumentUri { get; init; }
 
-    /// <summary>The id of the paragraph from the document containing the text.</summary>
+    /// <summary>The ID of the paragraph from the document containing the text.</summary>
     [VectorStoreData]
     public required string ParagraphId { get; init; }
 
@@ -21,19 +25,13 @@ internal class TextParagraph
     [VectorStoreData]
     public required string Text { get; init; }
 
-    /// <summary>The embedding generated from the Text.</summary>
+    /// <summary>The embedding generated from the text.</summary>
     [VectorStoreVector(1536)]
     public ReadOnlyMemory<float> TextEmbedding { get; set; }
 }
 // </AddADataModel>
 
 // <ReadTheParagraphsInTheDocument>
-using System.Text;
-using System.Xml;
-using DocumentFormat.OpenXml.Packaging;
-
-namespace SKVectorIngest;
-
 internal class DocumentReader
 {
     public static IEnumerable<TextParagraph> ReadParagraphs(Stream documentContents, string documentUri)
@@ -82,7 +80,7 @@ internal class DocumentReader
             }
 
             // Yield a new TextParagraph if the combined text is not empty.
-            var combinedText = textBuilder.ToString();
+            string combinedText = textBuilder.ToString();
             if (!string.IsNullOrWhiteSpace(combinedText))
             {
                 Console.WriteLine("Found paragraph:");
@@ -103,12 +101,10 @@ internal class DocumentReader
 // </ReadTheParagraphsInTheDocument>
 
 // <GenerateEmbeddingsAndUploadTheData>
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.VectorData;
-
-namespace SKVectorIngest;
-
-internal class DataUploader(VectorStore vectorStore, IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator)
+internal class DataUploader(
+    VectorStore vectorStore,
+    IEmbeddingGenerator<string,
+    Embedding<float>> embeddingGenerator)
 {
     /// <summary>
     /// Generate an embedding for each text paragraph and upload it to the specified collection.
@@ -118,14 +114,15 @@ internal class DataUploader(VectorStore vectorStore, IEmbeddingGenerator<string,
     /// <returns>An async task.</returns>
     public async Task GenerateEmbeddingsAndUpload(string collectionName, IEnumerable<TextParagraph> textParagraphs)
     {
-        var collection = vectorStore.GetCollection<string, TextParagraph>(collectionName);
+        VectorStoreCollection<string, TextParagraph> collection =
+            vectorStore.GetCollection<string, TextParagraph>(collectionName);
         await collection.EnsureCollectionExistsAsync();
 
-        foreach (var paragraph in textParagraphs)
+        foreach (TextParagraph paragraph in textParagraphs)
         {
             // Generate the text embedding.
             Console.WriteLine($"Generating embedding for paragraph: {paragraph.ParagraphId}");
-            paragraph.TextEmbedding = (await embeddingGenerator.GenerateEmbeddingAsync(paragraph.Text)).Vector;
+            paragraph.TextEmbedding = (await embeddingGenerator.GenerateAsync(paragraph.Text)).Vector;
 
             // Upload the text paragraph.
             Console.WriteLine($"Upserting paragraph: {paragraph.ParagraphId}");
@@ -136,47 +133,3 @@ internal class DataUploader(VectorStore vectorStore, IEmbeddingGenerator<string,
     }
 }
 // </GenerateEmbeddingsAndUploadTheData>
-
-// <PutItAllTogether1>
-using Azure;
-using Azure.AI.OpenAI;
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.VectorData;
-using Microsoft.SemanticKernel.Connectors.Redis;
-using SKVectorIngest;
-
-// Replace with your values.
-var deploymentName = "text-embedding-ada-002";
-var endpoint = "https://sksample.openai.azure.com/";
-var apiKey = "your-api-key";
-
-// Register Azure OpenAI embedding generator and Redis vector store.
-var services = new ServiceCollection();
-services.AddSingleton<IEmbeddingGenerator<string, Embedding<float>>>(
-    new AzureOpenAIClient(new Uri(endpoint), new AzureKeyCredential(apiKey))
-        .GetEmbeddingClient(deploymentName)
-        .AsIEmbeddingGenerator());
-
-services.AddRedisVectorStore("localhost:6379");
-
-// Register the data uploader.
-services.AddSingleton<DataUploader>();
-
-// Build the service provider and get the data uploader.
-var serviceProvider = services.BuildServiceProvider();
-var dataUploader = serviceProvider.GetRequiredService<DataUploader>();
-// </PutItAllTogether1>
-
-// <PutItAllTogether2>
-// Load the data.
-var textParagraphs = DocumentReader.ReadParagraphs(
-    new FileStream(
-        "vector-store-data-ingestion-input.docx",
-        FileMode.Open),
-    "file:///c:/vector-store-data-ingestion-input.docx");
-
-await dataUploader.GenerateEmbeddingsAndUpload(
-    "sk-documentation",
-    textParagraphs);
-// </PutItAllTogether2>

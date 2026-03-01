@@ -1,10 +1,10 @@
 ---
-title: How to build your own Vector Store connector (Preview)
+title: How to build your own Vector Store connector
 description: Describes how to build your own Vector Store connector connector
 ms.topic: tutorial
-ms.date: 07/08/2024
+ms.date: 02/28/2026
 ---
-# How to build your own Vector Store connector (Preview)
+# How to build your own Vector Store connector
 
 This article provides guidance for building a Vector Store connector. This article can be used by database providers that want to build and maintain their own implementation, or for anyone that wants to build and maintain an unofficial connector for a database that lacks support.
 
@@ -18,7 +18,7 @@ To contribute your connector to the Semantic Kernel code base:
 Vector Store connectors are implementations of the [Vector Store abstraction](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions). Some of the decisions that were made when designing the Vector Store abstraction mean that a Vector Store connector requires certain features to provide users with a good experience.
 
 A key design decision is that the Vector Store abstraction takes a strongly typed approach to working with database records.
-This means that <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602.UpsertAsync*> takes a strongly typed record as input, while <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602.GetAsync*> returns a strongly typed record.
+This means that <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.UpsertAsync*> takes a strongly typed record as input, while <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync*> returns a strongly typed record.
 The design uses C# generics to achieve the strong typing. This means that a connector has to be able to map from this data model to the storage model used by the underlying database. It also means that a connector might need to find out certain information about the record properties in order to know how to map each of these properties. For example, some vector databases (such as Chroma, Qdrant and Weaviate) require vectors to be stored in a specific structure and non-vectors in a different structure, or require record keys to be stored in a specific field.
 
 At the same time, the Vector Store abstraction also provides a generic data model that allows a developer to work with a database without needing to create a custom data model.
@@ -37,7 +37,7 @@ To be considered a full implementation of the Vector Store abstractions, the fol
 - <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>
 - <xref:Microsoft.Extensions.VectorData.IVectorSearchable`1>
 
-<xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> implements `IVectorSearchable<TRecord>`, so only two inheriting classes are required. Use the following naming convention:
+<xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> implements `IVectorSearchable<TRecord>`, so only two inheriting classes are required. Use the following naming convention:
 
 - {database type}VectorStore : VectorStore
 - {database type}Collection<TKey, TRecord\> : VectorStoreCollection\<TKey, TRecord\>
@@ -47,7 +47,7 @@ For example:
 - MyDbVectorStore : VectorStore
 - MyDbCollection<TKey, TRecord\> : VectorStoreCollection\<TKey, TRecord\>
 
-The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> implementation should accept the name of the collection as a constructor parameter and each instance of it is therefore tied to a specific collection instance in the database.
+The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> implementation should accept the name of the collection as a constructor parameter and each instance of it is therefore tied to a specific collection instance in the database.
 
 Here follows specific requirements for individual methods on these abstract base classes and interfaces.
 
@@ -113,10 +113,10 @@ As mentioned in [Support data model attributes](#2-support-data-model-attributes
 be supplied via a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> and if supplied, the connector should avoid trying to read this information from the data model or try and validate that the
 data model matches the definition in any way.
 
-The user should be able to provide a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> to the <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> implementation via options.
+The user should be able to provide a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> to the <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> implementation via options.
 
 > [!TIP]
-> Refer to [Defining your storage schema using a record definition](../schema-with-record-definition.md) for a detailed list of > all record definition settings that need to be supported.
+> For a detailed list of all record definition settings that need to be supported, see [Defining your storage schema using a record definition](../schema-with-record-definition.md).
 
 ### 4. Collection and index creation
 
@@ -130,7 +130,9 @@ additional custom strings might be accepted.
 For example, the goal is for a user to be able to specify a standard distance function, like `DotProductSimilarity`
 for any connector that supports this distance function, without needing to use different naming for each connector.
 
-:::code language="csharp" source="./snippets/build-your-own-connector.cs" id="4CollectionAndIndexCreation":::
+```csharp
+[VectorStoreVector(1536, DistanceFunction = DistanceFunction.DotProductSimilarity]
+```
 
 4.2 A user can optionally choose whether each data property should be indexed or full text indexed.
 In some databases, all properties might already be filterable or full text searchable by default, however
@@ -142,7 +144,7 @@ this additional indexing per property.
 ### 5. Data model validation
 
 Every database doesn't support every data type. To improve the user experience it's important to validate
-the data types of any record properties and to do so early, for example, when an <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602>
+the data types of any record properties and to do so early, for example, when an <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>
 instance is constructed. This way the user will be notified of any potential failures before starting to use the database.
 
 ### 6. Storage property naming
@@ -171,7 +173,7 @@ mappers.
 7.1 All connectors should come with a built in mapper that can map between the user supplied
 data model and the storage model required by the underlying database.
 
-7.2. All connectors should have a built in mapper that works with the <xref:Microsoft.Extensions.VectorData.VectorStoreGenericDataModel%602>.
+7.2. All connectors should have a built in mapper that works with the <xref:Microsoft.Extensions.VectorData.VectorStoreGenericDataModel`2>.
 See [Support GenericDataModel](#8-support-genericdatamodel) for more information.
 
 ### 8. Support GenericDataModel
@@ -219,22 +221,32 @@ the original exception as an inner exception.
 
 ### 11. Batching
 
-The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> abstract base class includes batching overloads for Get, Upsert and Delete.
-Not all underlying database clients might have the same level of support for batching.
+The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract base class includes batching overloads for Get, Upsert, and Delete. Not all underlying database clients might have the same level of support for batching.
 
-The base batch method implementations on <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> calls the abstract non-batch implementations in serial.
-If the database supports batching natively, these base batch implementations should be overridden and implemented
-using the native database support.
+The base batch method implementations on <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> calls the abstract non-batch implementations in serial. If the database supports batching natively, these base batch implementations should be overridden and implemented using the native database support.
 
 ## Recommended common patterns and practices
 
-- Keep <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> implementations sealed. It's recommended to use a decorator pattern to override a default vector store behavior.
+- Keep <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> implementations sealed. It's recommended to use a decorator pattern to override a default vector store behavior.
 - Always use options classes for optional settings with smart defaults.
 - Keep required parameters on the main signature and move optional parameters to options.
 
-Here is an example of an <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> constructor following this pattern.
+Here is an example of an <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> constructor following this pattern.
 
-:::code language="csharp" source="./snippets/build-your-own-connector.cs" id="RecommendedCommonPatternsAndPractices":::
+```csharp
+public sealed class MyDBCollection<TRecord> : VectorStoreCollection<string, TRecord>
+{
+    public MyDBCollection(MyDBClient myDBClient, string collectionName, MyDBCollectionOptions<TRecord>? options = default)
+    {
+    }
+
+    //...
+}
+
+public class MyDBCollectionOptions<TRecord> : VectorStoreCollectionOptions
+{
+}
+```
 
 ## SDK changes
 
@@ -246,15 +258,14 @@ See the following articles for a history of changes to the SDK and therefore imp
 
 ## Documentation
 
-To share the features and limitations of your implementation, you can contribute an article to this
-Microsoft Learn website. For the documentation on existing connectors, see [Out-of-the-box Vector Store connectors](../out-of-the-box-connectors/index.md).
+To share the features and limitations of your implementation, you can contribute an article to this Microsoft Learn website.
 
 To create your article, create a pull request in the [.NET docs GitHub repository](https://github.com/dotnet/docs).
 
 Areas to cover:
 
-1. An `Overview` with a standard table describing the main features of the connector.
-1. An optional `Limitations` section with any limitations for your connector.
-1. A `Getting started` section that describes how to import your NuGet and construct your <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602>.
-1. A `Data mapping` section showing the connector's default data mapping mechanism to the database storage model, including any property renaming it might support.
-1. Information about additional features your connector supports.
+- An `Overview` with a standard table describing the main features of the connector.
+- An optional `Limitations` section with any limitations for your connector.
+- A `Getting started` section that describes how to import your NuGet and construct your <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>.
+- A `Data mapping` section showing the connector's default data mapping mechanism to the database storage model, including any property renaming it might support.
+- Information about additional features your connector supports.

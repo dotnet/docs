@@ -2,7 +2,7 @@
 title: How to ingest data into a Vector Store
 description: Step by step instructions on how to ingest data into a Vector Store.
 ms.topic: tutorial
-ms.date: 07/08/2024
+ms.date: 02/28/2026
 ---
 # How to ingest data into a Vector Store
 
@@ -53,7 +53,7 @@ You can do this by creating a data model with attributes that describe the funct
 
 Add a new file to the project called `TextParagraph.cs` and add the following model to it.
 
-:::code language="csharp" source="./snippets/vector-store-data-ingestion.cs" id="AddADataModel":::
+:::code language="csharp" source="./snippets/DataIngestion.cs" id="AddADataModel":::
 
 The value `1536`, which is the dimension size of the vector, is passed to the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>. This value must match the size of vector that your chosen embedding generator produces.
 
@@ -66,7 +66,7 @@ Next, you add the code to read the Word document and find the text of each parag
 
 Add a new file to the project called `DocumentReader.cs` and add the following class to read the paragraphs from a document.
 
-:::code language="csharp" source="./snippets/vector-store-data-ingestion.cs" id="ReadTheParagraphsInTheDocument":::
+:::code language="csharp" source="./snippets/DataIngestion.cs" id="ReadTheParagraphsInTheDocument":::
 
 ## Generate embeddings and upload the data
 
@@ -74,26 +74,23 @@ Next, you add a new class to generate embeddings and upload the paragraphs to Re
 
 Add a new file called `DataUploader.cs` with the following contents:
 
-:::code language="csharp" source="./snippets/vector-store-data-ingestion.cs" id="GenerateEmbeddingsAndUploadTheData":::
+:::code language="csharp" source="./snippets/DataIngestion.cs" id="GenerateEmbeddingsAndUploadTheData":::
 
 ## Put it all together
 
-Finally, you put together the different pieces.
-In this example, you use standard .NET dependency injection to register the Redis vector store and the embedding generator.
+Finally, you put together the different pieces. In this example, you use standard .NET dependency injection to register the Redis vector store and the embedding generator.
 
 Add the following code to your `Program.cs` file to set up the container, register the Redis vector store, and register the embedding service. Replace the text embedding generation settings with your own values.
 
-:::code language="csharp" source="./snippets/vector-store-data-ingestion.cs" id="PutItAllTogether1":::
+:::code language="csharp" source="./snippets/DataIngestion.cs" id="PutItAllTogether1":::
 
-Lastly, add code to read the paragraphs from the Word document and call the data uploader
-to generate the embeddings and upload the paragraphs.
+Lastly, add code to read the paragraphs from the Word document and call the data uploader to generate the embeddings and upload the paragraphs.
 
-:::code language="csharp" source="./snippets/vector-store-data-ingestion.cs" id="PutItAllTogether2":::
+:::code language="csharp" source="./snippets/DataIngestion.cs" id="PutItAllTogether2":::
 
 ## See your data in Redis
 
-Navigate to the Redis stack browser, for example, [http://localhost:8001/redis-stack/browser](http://localhost:8001/redis-stack/browser), where you should now be able to see
-your uploaded paragraphs. Following is an example of what you should see for one of the uploaded paragraphs.
+Navigate to the Redis stack browser, for example, [http://localhost:8001/redis-stack/browser](http://localhost:8001/redis-stack/browser), where you should now be able to see your uploaded paragraphs. Following is an example of what you should see for one of the uploaded paragraphs.
 
 ```json
 {

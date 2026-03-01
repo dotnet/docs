@@ -1,5 +1,4 @@
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.VectorData;
+﻿using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
 
 // <CreateVectorStore>
@@ -50,9 +49,10 @@ var hotels = new List<Hotel>
     }
 };
 
-await collection.UpsertAsync(hotels[0]);
-await collection.UpsertAsync(hotels[1]);
-await collection.UpsertAsync(hotels[2]);
+foreach (Hotel h in hotels)
+{
+    await collection.UpsertAsync(h);
+}
 // </UpsertRecords>
 
 // <GetRecord>

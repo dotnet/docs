@@ -1,7 +1,7 @@
 // <DataModel>
 using Microsoft.Extensions.VectorData;
 
-public class Hotel
+public record class Hotel
 {
     [VectorStoreKey]
     public int HotelId { get; set; }

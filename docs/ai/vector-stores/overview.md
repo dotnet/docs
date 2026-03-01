@@ -2,7 +2,7 @@
 title: "Vector databases for .NET AI apps"
 description: "Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET, and how to use Microsoft.Extensions.VectorData to build semantic search features."
 ms.topic: concept-article
-ms.date: 02/24/2026
+ms.date: 02/28/2026
 ai-usage: ai-assisted
 ---
 
@@ -22,7 +22,7 @@ For example, you can use a vector database to:
 
 Vector databases provide vector search capabilities to find similar items based on their data characteristics rather than by exact matches on a property field. Vector search works by analyzing the vector representations of your data that you created using an AI embedding model such as the [Azure OpenAI embedding models](/azure/ai-services/openai/concepts/models#embeddings-models). The search process measures the distance between the data vectors and your query vector. The data vectors that are closest to your query vector are the ones that are most similar semantically.
 
-Some services such as [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/vector-search) provide native vector search capabilities for your data. Other databases can be enhanced with vector search by indexing the stored data using a service such as Azure AI Search, which can scan and index your data to provide vector search capabilities.
+Some services, such as [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/vector-search), provide native vector search capabilities for your data. Other databases can be enhanced with vector search by indexing the stored data using a service such as Azure AI Search, which can scan and index your data to provide vector search capabilities.
 
 ## Vector search workflows with .NET and OpenAI
 
@@ -58,40 +58,19 @@ The library provides the following key capabilities:
 The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following main abstract classes:
 
 - <xref:Microsoft.Extensions.VectorData.VectorStore>: The top-level class for a vector database. Use it to retrieve and manage collections.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations. Also inherits from `IVectorSearchable<TRecord>`.
-- `IKeywordHybridSearchable<TRecord>`: Implemented by collections that support hybrid search combining vector similarity with keyword matching.
+- <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations. Also implements `IVectorSearchable<TRecord>`.
+- `IKeywordHybridSearchable<TRecord>`: Implemented by collections that support hybrid search, combining vector similarity with keyword matching.
 
 For a step-by-step guide covering data model definition, CRUD operations, vector search, filtering, hybrid search, and embedding generation, see [Use vector stores in .NET AI apps](how-to/use-vector-stores.md).
 
 ## Available vector store connectors
 
-The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate connector packages implement them for specific vector databases. Choose the connector that matches your vector database:
+The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate connector packages implement them for specific vector databases. Choose the connector that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
 
-| Connector | NuGet package |
-|---|---|
-| In-memory (for testing/development) | [Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) |
-| Azure AI Search | [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch) |
-| Azure Cosmos DB (NoSQL) | [Microsoft.SemanticKernel.Connectors.CosmosNoSQL](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL) |
-| Azure Cosmos DB (MongoDB) | [Microsoft.SemanticKernel.Connectors.CosmosMongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosMongoDB) |
-| Azure SQL / SQL Server | [Microsoft.SemanticKernel.Connectors.SqlServer](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer) |
-| Couchbase | [CouchbaseVectorStore.SemanticKernel](https://www.nuget.org/packages/CouchbaseVectorStore.SemanticKernel) |
-| Elasticsearch | [Elastic.SemanticKernel.Connectors.Elasticsearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch) |
-| MongoDB | [Microsoft.SemanticKernel.Connectors.MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB) |
-| Oracle | [OracleVectorStore.SemanticKernel](https://www.nuget.org/packages/OracleVectorStore.SemanticKernel) |
-| Pinecone | [Microsoft.SemanticKernel.Connectors.Pinecone](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Pinecone) |
-| PostgreSQL (pgvector) | [Microsoft.SemanticKernel.Connectors.PgVector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.PgVector) |
-| Qdrant | [Microsoft.SemanticKernel.Connectors.Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant) |
-| Redis | [Microsoft.SemanticKernel.Connectors.Redis](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis) |
-| SQLite | [Microsoft.SemanticKernel.Connectors.SqliteVec](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqliteVec) |
-| Weaviate | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate) |
-
-All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection%602> abstract classes, so you can switch between them without changing your application logic.
+All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
 
 > [!TIP]
-> Use the in-memory connector (`Microsoft.SemanticKernel.Connectors.InMemory`) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production connector later.
-
-> [!IMPORTANT]
-> Not all connectors are maintained by the Microsoft Semantic Kernel team. When evaluating a connector, review its quality, licensing, support, and compatibility to ensure it meets your requirements.
+> Use the in-memory connector ([Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory)) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production connector later.
 
 ## Related content
 

@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: 303 - UserDefinedInformationEventOccurred"
-title: "303 - UserDefinedInformationEventOccurred"
+description: "Learn more about: 303 - UserDefinedInformationEventOccured"
+title: "303 - UserDefinedInformationEventOccured"
 ms.date: "03/30/2017"
 ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
 ---
-# 303 - UserDefinedInformationEventOccurred
+# 303 - UserDefinedInformationEventOccured
 
 ## Properties
 

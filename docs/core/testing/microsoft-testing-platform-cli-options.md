@@ -15,7 +15,7 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 - **`@`**
 
-  Specifies the name of the response file. The response file name must immediately follow the @ character with no white space between the @ character and the response file name.
+  Specifies the name of the response file. The response file name must immediately follow the `@` character with no white space between the `@` character and the response file name.
 
   Options in a response file are interpreted as if they were present at that place in the command line. Each argument in a response file must begin and end on the same line. You can't use the backslash character `\` to concatenate lines. Using a response file helps for very long commands that might exceed the terminal limits. You can combine a response file with inline command-line arguments. For example:
 

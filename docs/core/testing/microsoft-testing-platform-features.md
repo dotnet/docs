@@ -21,7 +21,7 @@ Extensions that require a NuGet package are shipped with their own licensing mod
 
 Use the following path based on your goal:
 
-- Find command-line switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
+- Find command-line switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md).
 - Add capabilities to your test runs: use the feature pages in this article.
 - Create your own extension: [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md).
 

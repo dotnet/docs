@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # VSTest Bridge extension
 
-This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...). This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) package.
+This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, `dotnet test`, `VSTest task` on Azure DevOps, Test Explorers of Visual Studio and Visual Studio Code). This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) NuGet package.
 
 ## Compatibility with VSTest
 
@@ -41,7 +41,7 @@ The following **RunConfiguration** elements are not supported by `Microsoft.Test
 
 `Microsoft.Testing.Platform` is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file or through the command line.
 
-Most importantly [hang](microsoft-testing-platform-extensions-diagnostics.md#hang-dump) and [crash](microsoft-testing-platform-extensions-diagnostics.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-extensions-code-coverage.md) extension.
+Most importantly [hang](microsoft-testing-platform-crash-hang-dumps.md#hang-dump) and [crash](microsoft-testing-platform-crash-hang-dumps.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-code-coverage.md) extension.
 
 ### LoggerRunSettings element
 

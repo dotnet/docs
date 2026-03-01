@@ -3,11 +3,23 @@ title: Microsoft.Testing.Platform telemetry
 description: Learn about the telemetry data collected by Microsoft.Testing.Platform and how to disable it.
 author: nohwnd
 ms.author: jajares
-ms.date: 12/15/2023
-ms.custom: 
+ms.date: 02/25/2026
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform telemetry
+# Telemetry
+
+This feature requires the [Microsoft.Testing.Extensions.Telemetry](https://nuget.org/packages/Microsoft.Testing.Extensions.Telemetry) NuGet package.
+
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), this extension is auto-registered when you install its NuGet package — no code changes needed. The manual registration in the following section is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddAppInsightsTelemetryProvider();
+```
 
 `Microsoft.Testing.Platform` collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
 

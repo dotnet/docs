@@ -115,11 +115,11 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
  Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
 
-- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
-- <xref:System.Type>
-- Enum types that are accessible at the attribute usage site
-- In C#, `object` (when the value is one of the valid attribute argument types or a single-dimensional array of them)
-- Single-dimensional arrays of any of the preceding types
+- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`.
+- <xref:System.Type>.
+- Enum types that are accessible at the attribute usage site.
+- In C#, `object` (when the value is one of the valid attribute argument types or a single-dimensional array of them).
+- Single-dimensional arrays of any of the preceding types.
 
 If you define a constructor that accepts a type outside this list, the attribute compiles successfully, but a compiler error occurs when you try to apply it. For more information about what expressions are allowed when applying an attribute, see [Apply attributes](applying-attributes.md).
 

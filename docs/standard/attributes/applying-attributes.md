@@ -40,11 +40,11 @@ When you pass arguments to an attribute, use one of the following kinds of expre
 
 The following types are valid as attribute parameter types:
 
-- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
-- `object` (in C#, when the value is one of the valid attribute argument types or a single-dimensional array of them)
-- <xref:System.Type>
-- Enum types that are accessible at the usage site
-- Single-dimensional arrays of any of the preceding types
+- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`.
+- `object` (in C#, when the value is one of the valid attribute argument types or a single-dimensional array of them).
+- <xref:System.Type>.
+- Enum types that are accessible at the usage site.
+- Single-dimensional arrays of any of the preceding types.
 
 > [!NOTE]
 > The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.

@@ -16,7 +16,7 @@ Starting with .NET 6, the project template for new C# console apps generates the
 Console.WriteLine("Hello, World!");
 ```
 
-The new output uses recent C# features that simplify the code you need to write for a program. For .NET 5 and earlier versions, the console app template generates the following code:
+For .NET 5 and earlier versions, the console app template generates the following code:
 
 ```csharp
 using System;

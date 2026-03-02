@@ -148,7 +148,7 @@ class Program
     ```
 
 > [!NOTE]
-> Visual Studio preserves the option value for the next time you create a project based on the same template. By default, the **Do not use top-level statements** check box is checked when you create the next Console App project.
+> Visual Studio preserves the option value for the next time you create a project based on the same template. If you last created a Console App project with the **Do not use top-level statements** check box checked, that option is checked when you create the next Console App project.
 > The content of the `Program.cs` file might be different to match the code style defined in the global Visual Studio text editor settings or the `EditorConfig` file.
 >
 > For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced).

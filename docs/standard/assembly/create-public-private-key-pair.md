@@ -1,7 +1,7 @@
 ---
 title: "How to: Create a public-private key pair"
 description: Learn how to create a public/private cryptographic key pair to use during compilation to create a strong-named assembly.
-ms.date: "08/20/2019"
+ms.date: "03/02/2026"
 helpviewer_keywords:
   - "key pairs for strong-named assemblies"
   - "signing assemblies"
@@ -16,15 +16,22 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 # How to: Create a public-private key pair
 
 To sign an assembly with a strong name, you must have a public/private key pair. This public and private cryptographic key pair is used during compilation to create a strong-named assembly. You can create a key pair using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md). Key pair files usually have an *.snk* extension.
 
 > [!NOTE]
+> On .NET 5 and later, strong names have no runtime validation. Strong-name signing is mainly relevant for .NET Standard 2.0 and .NET Framework interoperability scenarios. If you're targeting .NET 5 or later only, you don't need to strong-name your assembly.
+
+> [!NOTE]
 > In Visual Studio, the C# and Visual Basic project property pages include a **Signing** tab that enables you to select existing key files or to generate new key files without using *Sn.exe*. In Visual C++, you can specify the location of an existing key file in the **Advanced** property page in the **Linker** section of the **Configuration Properties** section of the **Property Pages** window. The use of the <xref:System.Reflection.AssemblyKeyFileAttribute> attribute to identify key file pairs was made obsolete beginning with Visual Studio 2005.
 
 ## Create a key pair
+
+> [!NOTE]
+> `Sn.exe` is available on Windows only. It ships with Visual Studio and the Windows SDK and isn't available through the .NET SDK on Unix/Linux.
 
 To create a key pair, at a command prompt, type the following command:
 

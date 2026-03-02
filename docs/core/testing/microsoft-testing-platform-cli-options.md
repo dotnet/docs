@@ -17,7 +17,7 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
   Specifies the name of the response file. The response file name must immediately follow the `@` character with no white space between the `@` character and the response file name.
 
-  Options in a response file are interpreted as if they were present at that place in the command line. Each argument in a response file must begin and end on the same line. You can't use the backslash character `\` to concatenate lines. Using a response file helps for very long commands that might exceed the terminal limits. You can combine a response file with inline command-line arguments. For example:
+  Options in a response file are interpreted as if they were present at that place in the command line. You can't use the backslash character `\` to concatenate lines. Using a response file helps for very long commands that might exceed the terminal limits. You can combine a response file with inline command-line arguments. For example:
 
   ```console
   ./TestExecutable.exe @"filter.rsp" --timeout 10s
@@ -36,9 +36,18 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
   ```
 
   ```rsp
-  --filter "A very long filter"
-  --timeout 10s
+  --filter "A very long filter" --timeout 10s
   ```
+
+  > [!NOTE]
+  > When using `dotnet test`, the SDK command-line parser uses a token-per-line approach where each line in the response file is treated as a single token. In that case, each argument must be on a separate line:
+  >
+  > ```rsp
+  > --filter
+  > A very long filter
+  > --timeout
+  > 10s
+  > ```
 
 - **`--config-file`**
 

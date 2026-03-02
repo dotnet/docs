@@ -334,6 +334,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 68 | Tutorial: Display command-line arguments | ✅ Exists | Consider a top-level statements pivot, and a file-based apps pivot. File-based apps pivot should be the default. |
 | 77 | Tutorial: Console application | 📥 Pull from Tutorials | |
 | 90 | Tutorial: Build a command-line app with System.CommandLine | 📝 New | Demonstrate `System.CommandLine` for commands, subcommands, arguments, and options |
+| 98 | Organizing programs | 📝 New | Assemblies, namespaces, and types as organizational tools. Addresses [#34836](https://github.com/dotnet/docs/issues/34836). |
 
 ### Type system (§8)
 
@@ -367,6 +368,8 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 22 | Nullable migration strategies | 📥 Pull | Existing migration content |
 | 74 | Tutorial: Explore nullable reference types | 📥 Pull from Tutorials | |
 
+> This section's unified Null safety design (NVT overview + NRT overview + shared operators article) addresses [#36934](https://github.com/dotnet/docs/issues/36934) by consolidating nullable documentation for both value and reference types under one section.
+
 ### Strings
 
 | # | Article | Status | Notes |
@@ -390,6 +393,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 84 | Iteration statements | 📝 New | `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops |
 | 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12) including spread elements (`..`) to compose sequences; ranges and indexes (C# 8) applied to collections |
 | 86 | LINQ and query expressions | 📝 New | Query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios |
+| 99 | Reference vs. value equality | 📝 New | Value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics |
 
 ### Pattern matching (§11)
 
@@ -410,11 +414,17 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 35 | Overview | 🟡 Revise | C# as a multi-paradigm language, functional style. Emphasize pattern matching expressions as a key functional technique. |
+| 35 | Overview | 🟡 Revise | C# as a multi-paradigm language, functional style. Emphasize pattern matching expressions as a key functional technique. Emphasize lambda expressions as a form of "code as data". |
 | 36 | Lambda expressions in depth | 📝 New | Closures, captures, expression vs. statement lambdas, method group conversions |
 | 37 | Local functions | 📥 Pull | From concepts/programming guide: local functions (C# 7), static (C# 8), attributes (C# 9) |
 | 38 | Iterators | 📥 Pull | `yield return`/`yield break` (C# 2), iterator pattern, foreach over strings |
 | 97 | Tutorial: Functional techniques in C# | 📝 New | Breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area |
+
+### Namespaces (§14)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 100 | Namespaces | 📝 New | Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; nested namespaces. Complements OOP section's structural concepts. |
 
 ### Object-oriented programming (§15)
 
@@ -480,7 +490,8 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 63 | C# identifier names | ✅ Exists | |
 | 64 | C# coding conventions | ✅ Exists | |
 | 65 | C# documentation comments | ✅ Exists | |
-| 66 | Design alternatives | 📝 New | When to use patterns vs. branching statements; classes vs. structs; when to add `record` modifier; when to use tuples; interfaces vs. abstract base classes; `enum` vs. sealed hierarchy (discriminated union pattern); `string` interpolation vs. `StringBuilder` vs. `string.Concat`; delegates (`Func<>`/`Action<>`) vs. single-method interfaces; `IEnumerable<T>` vs. `IReadOnlyList<T>` vs. arrays as return types; extension methods vs. wrapper/decorator; `async Task` vs. sync methods; exceptions vs. result types (Try pattern) |
+| 66 | Design alternatives | 📝 New | When to use patterns vs. branching statements; classes vs. structs; when to add `record` modifier; when to use tuples; interfaces vs. abstract base classes; `enum` vs. sealed hierarchy (discriminated union pattern); `string` interpolation vs. `StringBuilder` vs. `string.Concat`; delegates (`Func<>`/`Action<>`) vs. single-method interfaces; `IEnumerable<T>` vs. `IReadOnlyList<T>` vs. arrays as return types; extension methods vs. wrapper/decorator; `async Task` vs. sync methods; exceptions vs. result types (Try pattern); immutability patterns: `readonly struct` with fields vs. `init` properties vs. constructor-only properties |
+| 101 | Using .NET analyzers | 📝 New | Roslyn analyzers, .NET SDK analyzers, StyleCop, enabling/configuring via `.editorconfig` and `AnalysisLevel`; finding and fixing code issues |
 
 ## Article Status Summary
 
@@ -488,9 +499,9 @@ The following outline shows every article in the proposed Fundamentals section, 
 |---|---|---|
 | ✅ Exists, no change needed | 19 | Exceptions, Coding style, some Tutorials, some Program structure |
 | 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching overview, Deconstruction, Functional overview, OOP overview, Inheritance merge |
-| 📝 New article to write | 37 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, and others |
+| 📝 New article to write | 41 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, Using .NET analyzers, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, Organizing programs, Reference vs. value equality, Namespaces, and others |
 | 📥 Pull and revise from other section | 22 | From Programming Guide, Concepts, How-to, Tutorials, Async section |
-| **Total** | **~87** | Not including potential article splits |
+| **Total** | **~91** | Not including potential article splits |
 
 ## Content Sources for Pull Articles
 
@@ -575,6 +586,9 @@ The following is the complete proposed TOC:
     - name: "Tutorial: Build a command-line app with System.CommandLine"
       # NEW: System.CommandLine for commands, subcommands, arguments, options
       href: fundamentals/tutorials/system-commandline.md
+    - name: Organizing programs
+      # NEW: assemblies, namespaces, types as organizational tools (#34836)
+      href: fundamentals/program-structure/organizing-programs.md
 
   # ─── §8 Types ───
   - name: Type system
@@ -721,6 +735,10 @@ The following is the complete proposed TOC:
       # (Where, Select, OrderBy, GroupBy); lambda expressions in LINQ;
       # link to LINQ Focus section for advanced scenarios
       href: fundamentals/statements/linq.md
+    - name: Reference vs. value equality
+      # NEW: value vs reference equality, Equals, ==, ReferenceEquals,
+      # struct vs class defaults, IEquatable<T>, record equality
+      href: fundamentals/types/equality.md
 
   # ─── §11 Patterns and pattern matching ───
   - name: Pattern matching
@@ -783,6 +801,14 @@ The following is the complete proposed TOC:
       # NEW: breadth-focused tutorial demonstrating functional techniques
       # (lambdas, local functions, pattern matching, iterators, LINQ)
       href: fundamentals/tutorials/functional-techniques.md
+
+  # ─── §14 Namespaces ───
+  - name: Namespaces
+    items:
+    - name: Organizing code with namespaces
+      # NEW: motivation for namespaces, declaring, file-scoped (C# 10),
+      # using directives, aliases, nested namespaces
+      href: fundamentals/namespaces/overview.md
 
   # ─── §15 Classes / OOP ───
   - name: Object-oriented programming
@@ -928,6 +954,10 @@ The following is the complete proposed TOC:
     - name: Design alternatives
       # NEW: when to use patterns vs. branching, classes vs. structs,
       # record modifier, tuples, interfaces vs. abstract base classes,
-      # and other common design decisions
+      # immutability patterns, and other common design decisions
       href: fundamentals/coding-style/design-alternatives.md
+    - name: Using .NET analyzers
+      # NEW: Roslyn analyzers, .NET SDK analyzers, StyleCop,
+      # .editorconfig and AnalysisLevel configuration
+      href: fundamentals/coding-style/analyzers.md
 ```

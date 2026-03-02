@@ -117,7 +117,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 - Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
 - <xref:System.Type>
-- Enum types with public accessibility
+- Enum types that are accessible at the attribute usage site
 - In C#, `object` (when the value is one of the valid attribute argument types or a single-dimensional array of them)
 - Single-dimensional arrays of any of the preceding types
 

@@ -31,18 +31,19 @@ Use the following process to apply an attribute to an element of your code.
 
 ## Valid attribute arguments
 
-When you pass arguments to an attribute, the expressions you use must be compile-time constants. The compiler accepts the following kinds of expressions:
+When you pass arguments to an attribute, use one of the following kinds of expressions:
 
-- Constant expressions (literals, `const` values, and enum values)
-- `typeof()` expressions
-- `nameof()` expressions (which produce string constants at compile time)
-- Array creation expressions using only values from the preceding list
+- Constant expressions (literals, `const`/`Const` values, and enum values).
+- Type expressions (`typeof` in C#, `GetType` in Visual Basic).
+- Name expressions (`nameof` in C#, `NameOf` in Visual Basic), which produce string constants at compile time.
+- Array creation expressions of an attribute parameter type that use only the preceding expressions as element values.
 
 The following types are valid as attribute parameter types:
 
 - Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
+- `object` (in C#, when the value is one of the valid attribute argument types or a single-dimensional array of them)
 - <xref:System.Type>
-- Enum types with public accessibility
+- Enum types that are accessible at the usage site
 - Single-dimensional arrays of any of the preceding types
 
 > [!NOTE]

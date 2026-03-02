@@ -325,20 +325,21 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 1 | Overview | 🟡 Revise | Add file-scoped namespaces, global usings as default style |
-| 2 | Main method and entry points | ✅ Exists | Include async Main (C# 7.1) |
+| 1 | Overview | 🟡 Revise | Add file-scoped namespaces, global usings as default style. Distinguish the uses of file-based apps, top-level statements / project-based apps, and `Main`-style project-based apps. |
+| 2 | Main method and entry points | ✅ Exists | Include async Main (C# 7.1). Include file-based apps |
 | 3 | Top-level statements | ✅ Exists | Mention file-local types (C# 11) as helpers |
-| 4 | Namespaces and using directives | 📝 New | File-scoped namespaces (C# 10), global usings (C# 10), static using (C# 6), type/namespace aliases (subset) |
+| 4 | Namespaces and using directives | 📝 New | File-scoped namespaces (C# 10), global usings (C# 10), static using (C# 6), type/namespace aliases (subset). Link to information about implicit usings in the SDK section. |
 | 5 | Preprocessor directives | 📝 New | `#if`, `#region`, `#nullable`, `#pragma warning` only |
 | 67 | Tutorial: Build file-based apps | ✅ Exists | |
-| 68 | Tutorial: Display command-line arguments | ✅ Exists | |
+| 68 | Tutorial: Display command-line arguments | ✅ Exists | Consider a top-level statements pivot, and a file-based apps pivot. File-based apps pivot should be the default. |
 | 77 | Tutorial: Console application | 📥 Pull from Tutorials | |
+| 90 | Tutorial: Build a command-line app with System.CommandLine | 📝 New | Demonstrate `System.CommandLine` for commands, subcommands, arguments, and options |
 
 ### Type system (§8)
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 6 | Overview | 🟡 Revise | Value vs. reference, unified type system, built-in types overview |
+| 6 | Overview | 🟡 Revise | Value vs. reference, unified type system, built-in types overview. Discuss use cases for tuples vs. records vs. structs vs. classes vs. interfaces. |
 | 7 | Built-in types and literals | 📝 New | Numeric (incl. unsigned, `nint`), `bool`, `char`, `string` intro, literal syntax (binary, digit separators, raw string literals), `default` expressions, `var`, target-typed `new` (C# 9), `dynamic` (C# 4) |
 | 8 | Classes | 📝 New | What a class is, static classes (C# 2), object initializers (C# 3), collection initializers (C# 3) |
 | 9 | Structs | 📝 New | Struct design, auto-default (C# 11), parameterless constructors (C# 10), readonly members (C# 8), record structs (C# 10) |
@@ -352,6 +353,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 69 | Tutorial: Introduction to classes | ✅ Exists | |
 | 72 | Tutorial: Explore record types | 📥 Pull from Tutorials | |
 | 79 | Tutorial: Converting types | ✅ Exists | |
+| 91 | Tutorial: Choosing between tuples, records, structs, and classes | 📝 New | Teach readers to decide between using tuples, defining records, defining structs or classes, and defining interfaces |
 
 ### Null safety
 
@@ -360,7 +362,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 17 | Overview | 📝 New | Unified null safety story, NVT vs. NRT comparison |
 | 18 | Nullable value types | 📝 New/Pull | `T?` for value types (C# 2), `HasValue`, `GetValueOrDefault` |
 | 19 | Nullable reference types | 📥 Consolidate | Pull from tutorials + concepts: enable NRT, annotating, `?`, `!`, flow analysis |
-| 20 | Null operators | 📝 New | `?.`, `?[]`, `??`, `??=` (C# 8), `is null`/`is not null` |
+| 20 | Null operators | 📝 New | `?.`, `?[]`, `??`, `??=` (C# 8), `is null`/`is not null`. Include how pattern matching (`is null`, `is not null`) helps with null checks. |
 | 21 | Resolve nullable warnings | 📥 Pull | Existing nullable warnings content |
 | 22 | Nullable migration strategies | 📥 Pull | Existing migration content |
 | 74 | Tutorial: Explore nullable reference types | 📥 Pull from Tutorials | |
@@ -369,7 +371,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 23 | Overview | 📝 New | Basics, immutability, `string` vs. `String`, verbatim strings, escape sequences, `\e` (C# 13) |
+| 23 | Overview | 📝 New | Basics, immutability, `string` vs. `String`, verbatim strings, escape sequences, `\e` (C# 13). Include discussion of UTF-8 string literals (`u8` suffix) in the context of HTTP usage. |
 | 24 | String interpolation | 📥 Pull/Revise | `$""` (C# 6), newlines (C# 11), constant interpolated strings (C# 10) |
 | 25 | Raw string literals | 📝 New | `"""` syntax (C# 11), raw interpolated strings |
 | 26 | `nameof` operator | 📝 New | `nameof` (C# 6) |
@@ -386,14 +388,19 @@ The following outline shows every article in the proposed Fundamentals section, 
 |---|---|---|---|
 | 83 | Selection statements | 📝 New | `if`/`else` branching, `switch` statement, ternary conditional operator; links to pattern matching for `switch` expressions |
 | 84 | Iteration statements | 📝 New | `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops |
-| 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12); ranges and indexes (C# 8) applied to collections |
+| 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12) including spread elements (`..`) to compose sequences; ranges and indexes (C# 8) applied to collections |
 | 86 | LINQ and query expressions | 📝 New | Query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios |
 
 ### Pattern matching (§11)
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 32 | Overview | 🟡 Major revise | Comprehensive: type, constant, var, property, extended property (C# 10), positional (C# 8), relational/combinator/parenthesized (C# 9), list (C# 11), switch expressions (C# 8), generics (C# 7.1). May need 2 articles. |
+| 32 | Overview | 🟡 Major revise | High-level introduction to pattern matching and switch expressions (C# 8). Motivate when and why to use patterns vs. imperative branching. |
+| 92 | Declaration, constant, and var patterns | 📝 New | Declaration patterns, constant patterns, var patterns. Combined into one article because each is brief on its own. |
+| 93 | Type patterns | 📝 New | Type-testing patterns, pattern matching with generics (C# 7.1) |
+| 94 | Property and positional patterns | 📝 New | Property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8) |
+| 95 | Relational and logical patterns | 📝 New | Relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9) |
+| 96 | List patterns | 📝 New | List patterns (C# 11), slice patterns |
 | 33 | Discards | ✅ Exists | Keep or merge into pattern matching |
 | 34 | Deconstruction | 🟡 Revise | Records, tuples, custom `Deconstruct` |
 | 73 | Tutorial: Explore pattern matching | 📥 Pull from Tutorials | |
@@ -403,10 +410,11 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 35 | Overview | 🟡 Revise | C# as a multi-paradigm language, functional style |
+| 35 | Overview | 🟡 Revise | C# as a multi-paradigm language, functional style. Emphasize pattern matching expressions as a key functional technique. |
 | 36 | Lambda expressions in depth | 📝 New | Closures, captures, expression vs. statement lambdas, method group conversions |
 | 37 | Local functions | 📥 Pull | From concepts/programming guide: local functions (C# 7), static (C# 8), attributes (C# 9) |
 | 38 | Iterators | 📥 Pull | `yield return`/`yield break` (C# 2), iterator pattern, foreach over strings |
+| 97 | Tutorial: Functional techniques in C# | 📝 New | Breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area |
 
 ### Object-oriented programming (§15)
 
@@ -436,6 +444,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
+| 88 | Async programming overview | 📥 Pull | Move from `asynchronous-programming/index.md`; redirect old URL |
 | 54 | Consuming async methods | 📝 New | `async`/`await` (C# 5), task-based pattern, declaring async methods, async Main (C# 7.1), brief `await foreach` (C# 8), link to Async Focus |
 
 ### Exceptions and errors (§22)
@@ -461,6 +470,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | # | Article | Status | Notes |
 |---|---|---|---|
 | 62 | XML documentation | 📝 New or Pull | `///` comments, common tags |
+| 89 | Documentation generation tools | 📝 New | Generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools |
 | 80 | Tutorial: Generate API documentation | ✅ Exists | |
 
 ### Coding style (post-standard)
@@ -470,17 +480,17 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 63 | C# identifier names | ✅ Exists | |
 | 64 | C# coding conventions | ✅ Exists | |
 | 65 | C# documentation comments | ✅ Exists | |
-| 66 | Self-documenting code | ✅ Exists | |
+| 66 | Design alternatives | 📝 New | When to use patterns vs. branching statements; classes vs. structs; when to add `record` modifier; when to use tuples; interfaces vs. abstract base classes; `enum` vs. sealed hierarchy (discriminated union pattern); `string` interpolation vs. `StringBuilder` vs. `string.Concat`; delegates (`Func<>`/`Action<>`) vs. single-method interfaces; `IEnumerable<T>` vs. `IReadOnlyList<T>` vs. arrays as return types; extension methods vs. wrapper/decorator; `async Task` vs. sync methods; exceptions vs. result types (Try pattern) |
 
 ## Article Status Summary
 
 | Status | Count | Description |
 |---|---|---|
-| ✅ Exists, no change needed | 20 | Exceptions, Coding style, some Tutorials, some Program structure |
-| 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching, Deconstruction, Functional overview, OOP overview, Inheritance merge |
-| 📝 New article to write | 27 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, and others |
-| 📥 Pull and revise from other section | 21 | From Programming Guide, Concepts, How-to, Tutorials |
-| **Total** | **~77** | Not including potential article splits |
+| ✅ Exists, no change needed | 19 | Exceptions, Coding style, some Tutorials, some Program structure |
+| 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching overview, Deconstruction, Functional overview, OOP overview, Inheritance merge |
+| 📝 New article to write | 37 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, and others |
+| 📥 Pull and revise from other section | 22 | From Programming Guide, Concepts, How-to, Tutorials, Async section |
+| **Total** | **~87** | Not including potential article splits |
 
 ## Content Sources for Pull Articles
 
@@ -505,6 +515,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | Local functions | `concepts/` + `programming-guide/` | Merge + revise |
 | Iterators | `concepts/iterators.md` + `programming-guide/` | Merge + revise |
 | Type conversions | `programming-guide/types/` casting/conversion articles | Pull + revise |
+| Async overview | `asynchronous-programming/index.md` | Pull + redirect |
 | Tutorials (6 articles) | `tutorials/` section | Move into Fundamentals tutorials |
 
 ## Sections That Will Shrink
@@ -517,6 +528,7 @@ As content moves into Fundamentals, these existing top-level sections will lose 
 | **C# concepts** | Methods, iterators, delegates/events subset | Delegates/events (advanced), versioning |
 | **How-to C# articles** | 5 string articles | Catch non-CLS exception |
 | **C# programming guide** | ~15 articles from Classes/Structs, Interfaces, Indexers, Types | Covariance, generics (advanced), strings (advanced) |
+| **Asynchronous programming** | 1 (index/overview) | Cancellation, ConfigureAwait, parallel patterns, advanced async |
 
 ## Open Items for Future Discussion
 
@@ -560,6 +572,9 @@ The following is the complete proposed TOC:
     - name: "Tutorial: Console application"
       # PULL from current Tutorials section
       href: fundamentals/tutorials/console-app.md
+    - name: "Tutorial: Build a command-line app with System.CommandLine"
+      # NEW: System.CommandLine for commands, subcommands, arguments, options
+      href: fundamentals/tutorials/system-commandline.md
 
   # ─── §8 Types ───
   - name: Type system
@@ -617,6 +632,9 @@ The following is the complete proposed TOC:
     - name: "Tutorial: Converting types"
       displayName: cast, is, as
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+    - name: "Tutorial: Choosing between tuples, records, structs, and classes"
+      # NEW: teach readers to decide between tuple/record/struct/class/interface
+      href: fundamentals/tutorials/choosing-types.md
 
   # ─── Null safety (§8 nullability, cross-cutting) ───
   - name: Null safety
@@ -708,12 +726,26 @@ The following is the complete proposed TOC:
   - name: Pattern matching
     items:
     - name: Overview
-      # REVISE: comprehensive pattern matching covering all pattern types:
-      # type (C# 7), constant, var, property (C# 8), extended property (C# 10),
-      # positional (C# 8), relational/combinator/parenthesized (C# 9),
-      # list patterns (C# 11), pattern matching with generics (C# 7.1)
-      # switch expressions (C# 8). May need 2 articles.
+      # REVISE: high-level intro to pattern matching and switch expressions (C# 8).
+      # Motivate when/why to use patterns vs. imperative branching.
       href: fundamentals/functional/pattern-matching.md
+    - name: Declaration, constant, and var patterns
+      # NEW: declaration patterns, constant patterns, var patterns
+      href: fundamentals/functional/declaration-constant-var-patterns.md
+    - name: Type patterns
+      # NEW: type-testing patterns, pattern matching with generics (C# 7.1)
+      href: fundamentals/functional/type-patterns.md
+    - name: Property and positional patterns
+      # NEW: property patterns (C# 8), extended property (C# 10),
+      # positional patterns (C# 8)
+      href: fundamentals/functional/property-positional-patterns.md
+    - name: Relational and logical patterns
+      # NEW: relational patterns, and/or/not combinators,
+      # parenthesized patterns (C# 9)
+      href: fundamentals/functional/relational-logical-patterns.md
+    - name: List patterns
+      # NEW: list patterns (C# 11), slice patterns
+      href: fundamentals/functional/list-patterns.md
     - name: Discards
       # EXISTS: keep or merge into pattern matching
       href: fundamentals/functional/discards.md
@@ -747,6 +779,10 @@ The following is the complete proposed TOC:
       # PULL: yield return/yield break (C# 2), iterator pattern,
       # foreach over strings, dispose in foreach
       href: fundamentals/functional/iterators.md
+    - name: "Tutorial: Functional techniques in C#"
+      # NEW: breadth-focused tutorial demonstrating functional techniques
+      # (lambdas, local functions, pattern matching, iterators, LINQ)
+      href: fundamentals/tutorials/functional-techniques.md
 
   # ─── §15 Classes / OOP ───
   - name: Object-oriented programming
@@ -831,6 +867,9 @@ The following is the complete proposed TOC:
   # ─── Async basics (after OOP, per decision) ───
   - name: Asynchronous programming basics
     items:
+    - name: Overview
+      # PULL from asynchronous-programming/index.md; redirect old URL
+      href: fundamentals/async/index.md
     - name: Consuming async methods
       # NEW (subset): async/await (C# 5), Task-based pattern,
       # declaring async methods that call other async methods,
@@ -871,6 +910,9 @@ The following is the complete proposed TOC:
     - name: Overview
       # NEW (brief) or PULL: documenting code with ///, common tags
       href: fundamentals/xml-comments.md
+    - name: Documentation generation tools
+      # NEW: dotnet build XML output, DocFX, Sandcastle, other current tools
+      href: fundamentals/xml-comments/documentation-tools.md
     - name: "Tutorial: Generate API documentation with XML comments"
       href: fundamentals/tutorials/xml-documentation.md
 
@@ -883,6 +925,9 @@ The following is the complete proposed TOC:
       href: fundamentals/coding-style/coding-conventions.md
     - name: C# documentation comments
       href: fundamentals/coding-style/documenting-code.md
-    - name: Self-documenting code
-      href: fundamentals/coding-style/self-documenting-code.md
+    - name: Design alternatives
+      # NEW: when to use patterns vs. branching, classes vs. structs,
+      # record modifier, tuples, interfaces vs. abstract base classes,
+      # and other common design decisions
+      href: fundamentals/coding-style/design-alternatives.md
 ```

@@ -46,7 +46,7 @@ The following types are valid as attribute parameter types:
 - Single-dimensional arrays of any of the preceding types
 
 > [!NOTE]
-> The types `sbyte`, `ushort`, `uint`, `ulong`, and `decimal` aren't valid attribute parameter types, even though they support literal constants.
+> The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
 
 The following examples show valid attribute arguments:
 

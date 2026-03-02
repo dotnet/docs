@@ -122,6 +122,9 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 If you define a constructor that accepts a type outside this list, the attribute compiles successfully, but a compiler error occurs when you try to apply it. For more information about what expressions are allowed when applying an attribute, see [Apply attributes](applying-attributes.md).
 
+> [!NOTE]
+> The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
+
  The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
 
  [!code-csharp[Conceptual.Attributes.Usage#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#17)]

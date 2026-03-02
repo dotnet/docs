@@ -6,7 +6,7 @@ f1_keywords:
   - SYSLIB1028
 ---
 
-# SYSLIB1028: Argument is using an unsupported parameter modifier
+# SYSLIB1028: Argument is using the unsupported 'params' or 'scoped' parameter modifier
 
 The `params` and `scoped` parameter modifiers aren't supported for <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute>-annotated logging methods.
 

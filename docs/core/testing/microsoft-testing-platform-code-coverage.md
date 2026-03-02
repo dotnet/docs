@@ -1,21 +1,22 @@
 ---
-title: Microsoft.Testing.Platform Code Coverage extensions
-description: Learn about the various Microsoft.Testing.Platform Code Coverage extensions and how to use them.
+title: Microsoft.Testing.Platform code coverage
+description: Learn about collecting code coverage data with Microsoft.Testing.Platform.
 author: evangelink
 ms.author: amauryleve
-ms.date: 02/19/2026
+ms.date: 02/25/2026
 ai-usage: ai-assisted
 ---
 
-# Code coverage extensions
+# Code coverage
 
-This article lists and explains all Microsoft.Testing.Platform extensions related to the code coverage capability.
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), code coverage extensions are auto-registered when you install their NuGet packages — no code changes needed.
 
 You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
 ## Microsoft code coverage
 
-Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.
+Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension requires the [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.
 
 > [!NOTE]
 > Unmanaged (native) code coverage is disabled in the extension by default. Use flags `EnableStaticNativeInstrumentation` and `EnableDynamicNativeInstrumentation` to enable it if needed.
@@ -26,10 +27,10 @@ Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanage
 
 For more information about Microsoft code coverage, see its [GitHub page](https://github.com/microsoft/codecoverage).
 
-Microsoft Code Coverage provides the following options:
+### Options
 
-| Option                     | Description                                                                   |
-|----------------------------|-------------------------------------------------------------------------------|
+| Option | Description |
+|---|---|
 | `--coverage`               | Collect the code coverage using dotnet-coverage tool.                         |
 | `--coverage-output`        | The name or path of the produced coverage file. By default, the file is `TestResults/<guid>.coverage`. |
 | `--coverage-output-format` | Output file format. Supported values are: `coverage`, `xml`, and `cobertura`. Default is `coverage`. |
@@ -77,10 +78,10 @@ dotnet exec <test-assembly.dll> --coverlet
 
 After the test run, a `coverage.json` file containing the results is generated in the current directory.
 
-`coverlet.MTP` provides the following options:
+### Options
 
 | Option | Description |
-| :------- | :------------ |
+|---|---|
 | `--coverlet` | Enable code coverage data collection. |
 | `--coverlet-output-format <format>` | Output formats for the coverage report. Supported formats: `json`, `lcov`, `opencover`, `cobertura`, and `teamcity`. Specify multiple times to include more than one format. |
 | `--coverlet-include <filter>` | Include assemblies that match filters, such as `[Assembly]Type`. Specify multiple times to add more filters. |

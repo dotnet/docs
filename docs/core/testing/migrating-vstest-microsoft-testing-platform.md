@@ -10,6 +10,14 @@ ms.date: 09/15/2025
 
 In this article, you learn how to migrate from VSTest to Microsoft.Testing.Platform.
 
+This article focuses on migration steps and argument mapping.
+
+If you still need to choose a platform, start with [Test platforms overview](./test-platforms-overview.md).
+
+If you need detailed behavior of `dotnet test` modes, see [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md).
+
+If you need a single list of platform and extension command-line options, see [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md).
+
 ## Opt-in to use Microsoft.Testing.Platform
 
 The first step in the migration is to opt-in to using Microsoft.Testing.Platform.
@@ -87,12 +95,12 @@ The test-related arguments are VSTest specific and so need to be transformed to 
 |-----------------|-----------------------|
 | `--test-adapter-path <ADAPTER_PATH>` | Not relevant for Microsoft.Testing.Platform |
 | `--blame` | Not relevant for Microsoft.Testing.Platform |
-| `--blame-crash` | `--crashdump` (requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)) |
-| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` (requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)) |
+| `--blame-crash` | `--crashdump` (requires [Crash dump extension](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)) |
+| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` (requires [Crash dump extension](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)) |
 | `--blame-crash-collect-always` | Not supported |
-| `--blame-hang` | `--hangdump` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
-| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
-| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` (requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)) |
+| `--blame-hang` | `--hangdump` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
+| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
+| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` (requires [Hang dump extension](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)) |
 | `--collect <DATA_COLLECTOR_NAME>` | Depends on the data collector |
 | `-d\|--diag <LOG_FILE>` | `--diagnostic` |
 | `--filter <EXPRESSION>` | Depends upon the selected test framework |
@@ -205,5 +213,5 @@ If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest
       displayName: Run unit tests
       inputs:
         command: 'test'
-        arguments: '-- --report-trx --results-directory $(Agent.TempDirectory)
+        arguments: '-- --report-trx --results-directory $(Agent.TempDirectory)'
     ```

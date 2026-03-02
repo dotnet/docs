@@ -1,6 +1,6 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~87-article restructuring into ~29 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 3 and 7.
+**TL;DR:** Break the ~91-article restructuring into ~31 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 3 and 7.
 
 **Conventions for every PR:**
 - Update `toc.yml` incrementally so new content is navigable immediately.
@@ -21,8 +21,9 @@
 1. Revise `fundamentals/program-structure/index.md` — add file-scoped namespaces, global usings as default style
 2. Move+revise `fundamentals/types/namespaces.md` → `fundamentals/program-structure/namespaces.md` — add file-scoped namespaces (C# 10), global usings (C# 10), static using (C# 6), type/namespace aliases (subset)
 3. New `fundamentals/program-structure/preprocessor-directives.md` — `#if`, `#region`, `#nullable`, `#pragma warning`
-4. Snippet files for both new/revised articles
-5. toc.yml + redirect for old namespaces path
+4. New `fundamentals/program-structure/organizing-programs.md` — assemblies, namespaces, and types as organizational tools (addresses [#34836](https://github.com/dotnet/docs/issues/34836))
+5. Snippet files for new/revised articles
+6. toc.yml + redirect for old namespaces path
 
 ### PR 2 — Tutorial: System.CommandLine
 
@@ -140,13 +141,14 @@
 3. New `fundamentals/statements/iteration-statements.md` — `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops
 4. Snippet files + toc.yml
 
-### PR 14 — Statements: collections + LINQ
+### PR 14 — Statements: collections + LINQ + equality
 
-> ~8 files
+> ~10 files
 
 1. New `fundamentals/statements/collections.md` — Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12); ranges and indexes (C# 8) applied to collections
 2. New `fundamentals/statements/linq.md` — query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios
-3. Snippet files + toc.yml
+3. New `fundamentals/types/equality.md` — value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics
+4. Snippet files + toc.yml
 
 ## Phase F: Pattern Matching + Functional (§11–§12) — 5 PRs
 
@@ -193,9 +195,16 @@
 1. New `fundamentals/tutorials/functional-techniques.md` — breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area
 2. Snippet files + toc.yml
 
-## Phase G: Object-Oriented Programming (§15) — 7 PRs
+## Phase G: Namespaces (§14) + Object-Oriented Programming (§15) — 8 PRs
 
-### PR 20 — OOP: overview, access modifiers, fields/constants
+### PR 20 — Namespaces
+
+> ~4 files
+
+1. New `fundamentals/namespaces/overview.md` — motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; nested namespaces
+2. Snippet files + toc.yml
+
+### PR 21 — OOP: overview, access modifiers, fields/constants
 
 > ~10 files
 
@@ -204,7 +213,7 @@
 3. Pull+merge `fundamentals/object-oriented/fields-constants.md` — from `programming-guide/classes-and-structs/fields.md` + `constants.md`; add backing field attributes (C# 7.3)
 4. toc.yml + redirects
 
-### PR 21 — OOP: properties + constructors
+### PR 22 — OOP: properties + constructors
 
 > ~10 files
 
@@ -212,7 +221,7 @@
 2. Pull+revise `fundamentals/object-oriented/constructors.md` — from `programming-guide/classes-and-structs/constructors.md` + related; add primary constructors (C# 12)
 3. toc.yml + redirects
 
-### PR 22 — OOP: methods + lambdas in OOP
+### PR 23 — OOP: methods + lambdas in OOP
 
 > ~10 files
 
@@ -220,7 +229,7 @@
 2. New `fundamentals/object-oriented/lambdas-in-oop.md` — `Func<>`/`Action<>` as parameters, callback patterns, event handlers as lambdas
 3. Snippet files + toc.yml + redirects
 
-### PR 23 — OOP: inheritance merge + interfaces
+### PR 24 — OOP: inheritance merge + interfaces
 
 > ~10 files
 
@@ -228,7 +237,7 @@
 2. Pull+revise `fundamentals/object-oriented/interfaces.md` — from `programming-guide/interfaces/`; implementing, explicit implementation, interfaces vs. abstract classes
 3. toc.yml + redirects
 
-### PR 24 — OOP: indexers, extensions, ranges tutorial
+### PR 25 — OOP: indexers, extensions, ranges tutorial
 
 > ~10 files
 
@@ -237,7 +246,7 @@
 3. Pull `tutorials/ranges-indexes.md` → `fundamentals/tutorials/ranges.md`
 4. toc.yml + redirects
 
-### PR 25 — OOP: events, partial types, object lifetime
+### PR 26 — OOP: events, partial types, object lifetime
 
 > ~10 files
 
@@ -246,16 +255,16 @@
 3. New `fundamentals/object-oriented/object-lifetime.md` — `using` statement, `using` declaration (C# 8), dispose pattern
 4. Snippet files + toc.yml + redirects
 
-### PR 26 — OOP: encapsulation and composition
+### PR 27 — OOP: encapsulation and composition
 
 > ~6 files
 
 1. New `fundamentals/object-oriented/encapsulation-composition.md` — encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs
 2. Snippet files + toc.yml
 
-## Phase H: Remaining Sections — 3 PRs
+## Phase H: Remaining Sections — 4 PRs
 
-### PR 27 — Async basics + Attributes
+### PR 28 — Async basics + Attributes
 
 > ~10 files
 
@@ -265,7 +274,7 @@
 4. New `fundamentals/attributes.md` — common attributes, syntax, targets; defer custom attribute creation
 5. Snippet files + toc.yml + redirect
 
-### PR 28 — XML docs + Coding style + Console app tutorial
+### PR 29 — XML docs + Coding style + Console app tutorial
 
 > ~10 files
 
@@ -275,13 +284,26 @@
 4. Pull `tutorials/console-teleprompter.md` → `fundamentals/tutorials/console-app.md` + redirect
 5. toc.yml + redirects
 
-### PR 29 — Exceptions modernization pass
+> Addresses [#34830](https://github.com/dotnet/docs/issues/34830) — XML documentation content from Language Reference moves into Fundamentals via the XML docs articles in this PR.
+
+6. Cross-cutting: all Coding style articles should mention `.editorconfig` usage and link to the EditorConfig section in "Get started". Link to pertinent analyzer rules and code style rules relevant to each article's design decisions.
+
+### PR 30 — Using .NET analyzers
+
+> ~4 files
+
+1. New `fundamentals/coding-style/analyzers.md` — Roslyn analyzers, .NET SDK analyzers, StyleCop, enabling/configuring via `.editorconfig` and `AnalysisLevel`; finding and fixing code issues
+2. Snippet files + toc.yml
+
+### PR 31 — Exceptions modernization pass
 
 > ~9 files
 
 1. Revise all 5 exception articles + 2 tutorials in `fundamentals/exceptions/` for latest feature saturation — update all code samples to use file-scoped namespaces, collection expressions, NRT, raw string literals, primary constructors where natural
 2. Updated snippet files
 3. toc.yml (reorder to match proposed TOC if needed)
+
+> Addresses [#34831](https://github.com/dotnet/docs/issues/34831) — clean up the Exceptions section, move LINQ exceptions article to LINQ section, move Non-CLS exceptions to Advanced section.
 
 ## Verification
 
@@ -295,6 +317,8 @@
 - *~10 total files per PR* including toc.yml, redirects, and snippets; tutorial-only PRs may be smaller (~4 files)
 - *Move + revise in same PR* rather than two-step
 - *Incremental TOC updates* — each PR makes its section live immediately
-- *Polymorphism → redirect to merged Inheritance article* (PR 23)
+- *Polymorphism → redirect to merged Inheritance article* (PR 24)
 - *Pattern matching split into 3 PRs* (PRs 15–17) per project map decision: overview + basics | structural patterns | deconstruct + tutorial
+- *Namespaces (§14) gets its own small PR (PR 20)* at the start of Phase G; single-article section
+- *Using .NET analyzers gets its own PR (PR 30)* after the Coding style PR; keeps PR 29 at ~10 files
 - *PRs within a phase are sequential* (e.g., Type system PRs 3→6 go in order); *phases are largely independent* and can run in parallel if multiple authors contribute

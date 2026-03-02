@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "08/05/2022"
+ms.date: "03/02/2026"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "AttributeUsageAttribute class, custom attributes"
   - "Inherited property"
   - "attribute classes, declaring"
+ai-usage: ai-assisted
 ---
 # Write custom attributes
 
@@ -111,6 +112,15 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 > [!NOTE]
 > In Visual Basic, constructors for an attribute class shouldn't use a `ParamArray` argument.
+
+ Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
+
+- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
+- <xref:System.Type>
+- Enum types with public accessibility
+- Single-dimensional arrays of any of the preceding types
+
+If you define a constructor that accepts a type outside this list, the attribute compiles successfully, but a compiler error occurs when you try to apply it. For more information about what expressions are allowed when applying an attribute, see [Apply attributes](applying-attributes.md).
 
  The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
 

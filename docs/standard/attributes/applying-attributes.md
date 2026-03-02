@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Apply attributes"
 title: "Applying Attributes"
-ms.date: "03/30/2017"
+ms.date: "03/02/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "assemblies [.NET], attributes"
   - "attributes [.NET], applying"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 # Apply attributes
 
@@ -27,6 +28,56 @@ Use the following process to apply an attribute to an element of your code.
  The attribute is emitted into metadata when you compile your code and is available to the common language runtime and any custom tool or application through the runtime reflection services.
 
  By convention, all attribute names end with "Attribute". However, several languages that target the runtime, such as Visual Basic and C#, do not require you to specify the full name of an attribute. For example, if you want to initialize <xref:System.ObsoleteAttribute?displayProperty=nameWithType>, you only need to reference it as **Obsolete**.
+
+## Valid attribute arguments
+
+When you pass arguments to an attribute, the expressions you use must be compile-time constants. The compiler accepts the following kinds of expressions:
+
+- Constant expressions (literals, `const` values, and enum values)
+- `typeof()` expressions
+- `nameof()` expressions (which produce string constants at compile time)
+- Array creation expressions using only values from the preceding list
+
+The following types are valid as attribute parameter types:
+
+- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`
+- <xref:System.Type>
+- Enum types with public accessibility
+- Single-dimensional arrays of any of the preceding types
+
+> [!NOTE]
+> The types `sbyte`, `ushort`, `uint`, `ulong`, and `decimal` aren't valid attribute parameter types, even though they support literal constants.
+
+The following examples show valid attribute arguments:
+
+```csharp
+[MyAttr(true)]                            // bool literal
+[MyAttr(42)]                              // int literal
+[MyAttr("hello")]                         // string literal
+[MyAttr(MyEnum.Value)]                    // enum value
+[MyAttr(typeof(string))]                  // typeof expression
+[MyAttr(nameof(MyClass))]                 // nameof expression (string constant)
+[MyAttr(new int[] { 1, 2, 3 })]          // array of constants
+[MyAttr(new string[] { "a", "b" })]      // array of strings
+```
+
+```vb
+<MyAttr(True)>                            ' Boolean literal
+<MyAttr(42)>                              ' Integer literal
+<MyAttr("hello")>                         ' String literal
+<MyAttr(MyEnum.Value)>                    ' Enum value
+<MyAttr(GetType(String))>                 ' GetType expression
+<MyAttr(NameOf(MyClass))>                 ' NameOf expression (string constant)
+<MyAttr(New Integer() {1, 2, 3})>         ' Array of constants
+```
+
+The following examples show arguments that cause a compiler error:
+
+```csharp
+string value = "test";
+[MyAttr(value)]        // Error CS0182: not a constant expression
+[MyAttr(GetValue())]   // Error CS0182: method calls aren't allowed
+```
 
 ## Apply an attribute to a method
 

@@ -8,6 +8,9 @@ ms.date: 05/21/2024
 
 # Microsoft.Testing.Platform support in NUnit (NUnit runner)
 
+> [!TIP]
+> Before enabling a runner, see [Test platforms overview](./test-platforms-overview.md).
+
 NUnit supports running tests with both VSTest and [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md). The support for MTP is powered by the NUnit runner, which can run tests in all contexts (for example, continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Text Explorer). The NUnit runner is embedded directly in your NUnit test projects, and there are no other app dependencies, such as `vstest.console` or `dotnet test`, needed to run your tests. However, you can still run your tests using `dotnet test`.
 
 The NUnit runner is open source, and builds on top of [`Microsoft.Testing.Platform`](./microsoft-testing-platform-intro.md). You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The NUnit runner is supported in NUnit3TestAdapter version 5.0 or greater. For more information, see [NUnit and Microsoft.Testing.Platform](https://docs.nunit.org/articles/vs-test-adapter/NUnit-And-Microsoft-Test-Platform.html)

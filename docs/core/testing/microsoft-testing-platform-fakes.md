@@ -1,12 +1,18 @@
 ---
-title: Microsoft.Testing.Platform Fakes extension
-description: Learn about the various Microsoft.Testing.Platform Fakes extension capabilities and how to use it.
+title: Microsoft.Testing.Platform Microsoft Fakes
+description: Learn about the Microsoft.Testing.Platform Fakes extension capabilities and how to use it.
 author: drognanar
 ms.author: arturs
-ms.date: 06/21/2024
+ms.date: 02/25/2026
+ai-usage: ai-assisted
 ---
 
-# Fakes extension
+# Microsoft Fakes
+
+This feature requires the [Microsoft.Testing.Extensions.Fakes](https://nuget.org/packages/Microsoft.Testing.Extensions.Fakes) NuGet package.
+
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), this extension is auto-registered when you install its NuGet package — no code changes needed.
 
 The `Microsoft.Testing.Extensions.Fakes` extension provides support to execute a test project that makes use of `Microsoft Fakes`.
 

@@ -2,6 +2,7 @@
 title: "Redirecting Assembly Versions"
 description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies. Learn how to enable binding redirects for unit test projects.
 ms.date: "03/02/2026"
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"

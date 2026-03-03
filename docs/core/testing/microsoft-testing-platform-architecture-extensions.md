@@ -7,13 +7,13 @@ ms.date: 02/24/2026
 ai-usage: ai-assisted
 ---
 
-# Build extensions
+# Build extensions for Microsoft.Testing.Platform
 
 This article covers the extensibility points for Microsoft.Testing.Platform beyond the test framework itself. For test framework creation, see [Build a test framework](./microsoft-testing-platform-architecture-test-framework.md).
 
 For the full extension point summary and in-process/out-of-process concepts, see [Create custom extensions](./microsoft-testing-platform-architecture.md).
 
-## Other extensibility points
+## Extensibility points
 
 The testing platform provides additional extensibility points that allow you to customize the behavior of the platform and the test framework. These extensibility points are optional and can be used to enhance the testing experience.
 

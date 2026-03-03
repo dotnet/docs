@@ -59,11 +59,11 @@ The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following
 
 - <xref:Microsoft.Extensions.VectorData.VectorStore>: The top-level class for a vector database. Use it to retrieve and manage collections.
 - <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>: Represents a named collection of records within a vector store. Use it to perform CRUD and search operations. Also implements `IVectorSearchable<TRecord>`.
-- `IKeywordHybridSearchable<TRecord>`: Implemented by collections that support hybrid search, combining vector similarity with keyword matching.
+- <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>: Implemented by collections that support hybrid search, combining vector similarity with keyword matching.
 
 For a step-by-step guide covering data model definition, CRUD operations, vector search, filtering, hybrid search, and embedding generation, see [Use vector stores in .NET AI apps](how-to/use-vector-stores.md).
 
-## Available vector store connectors
+## Vector store connectors
 
 The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate connector packages implement them for specific vector databases. Choose the connector that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
 

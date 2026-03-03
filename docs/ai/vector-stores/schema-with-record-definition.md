@@ -1,12 +1,12 @@
 ---
 title: Defining your storage schema using a record definition
-description: Describes how to create a record definition to use when writing to or reading from a Vector Store.
+description: Describes how to create a record definition to use when writing to or reading from a vector store.
 ms.topic: reference
 ms.date: 02/28/2026
 ---
 # Define your storage schema using a record definition
 
-The Vector Store connectors use a model first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
+The vector store connectors use a model first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
 
 Another way of providing this information is via record definitions, which can be defined and supplied separately to the data model. This can be useful in multiple scenarios:
 
@@ -19,9 +19,7 @@ Here's an example of how to create a record definition:
 
 When you create a definition, you always have to provide a name and type for each property in your schema, since this is required for index creation and data mapping.
 
-To use the definition, pass it to the `GetCollection` method.
-
-:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="UseRecordDefinition":::
+To use the definition, pass it to the <xref:Microsoft.Extensions.VectorData.VectorStore.GetCollection``2(System.String,Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition)> method.
 
 ## Record property configuration classes
 

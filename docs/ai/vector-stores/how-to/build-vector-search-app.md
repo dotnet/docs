@@ -61,14 +61,14 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.Identity
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions
-    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
-    dotnet add package System.Linq.AsyncEnumerable
+    dotnet package add Azure.Identity
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet package add Microsoft.Extensions.VectorData.Abstractions
+    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add System.Linq.AsyncEnumerable
     ```
 
     The following list describes each package in the `VectorDataAI` app:
@@ -85,12 +85,12 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions
-    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
-    dotnet add package System.Linq.AsyncEnumerable
+    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet package add Microsoft.Extensions.VectorData.Abstractions
+    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add System.Linq.AsyncEnumerable
     ```
 
     The following list describes each package in the `VectorDataAI` app:

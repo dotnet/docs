@@ -1,15 +1,15 @@
 ---
-title: Vector search using Vector Store connectors
-description: Describes the different options you can use when doing a vector search using Vector Store connectors.
+title: Vector search using vector store connectors
+description: Describes the different options you can use when doing a vector search using vector store connectors.
 ms.topic: concept-article
 ms.date: 02/28/2026
 ---
-# Vector search using Vector Store connectors
+# Vector search using vector store connectors
 
-The <xref:Microsoft.Extensions.VectorData> library provides vector search capabilities as part of its Vector Store abstractions. These capabilities include filtering and many other options.
+The <xref:Microsoft.Extensions.VectorData> library provides vector search capabilities as part of its vector store abstractions. These capabilities include filtering and many other options.
 
 > [!TIP]
-> To see how you can search without generating embeddings yourself, see [Let the Vector Store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
+> To see how you can search without generating embeddings yourself, see [Let the vector store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
 
 ## Vector search
 
@@ -43,10 +43,9 @@ Use the `VectorProperty` option to specify the vector property to target during 
 
 :::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorProperty":::
 
-### `Top` and `Skip`
+### Skip results or select top results
 
-The `Top` and `Skip` options allow you to limit the number of results to the top `n` results and
-to skip a number of results from the top of the resultset. You can use `Top` and `Skip` to do paging if you want to retrieve a large number of results using separate calls.
+The `top` parameter on <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync``1(``0,System.Int32,Microsoft.Extensions.VectorData.VectorSearchOptions{`1},System.Threading.CancellationToken)> and the <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Skip?displayProperty=nameWithType> option let you limit the number of results. The `top` parameter limits the results to the top `n` results. The <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Skip> option skips a number of results from the top of the result set. You can use these controls to perform paging if you want to retrieve a large number of results using separate calls.
 
 :::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="TopAndSkip":::
 
@@ -54,8 +53,7 @@ The default value for `Skip` is 0.
 
 ### IncludeVectors
 
-The `IncludeVectors` option allows you to specify whether you want to return vectors in the search results.
-If `false`, the vector properties on the returned model are left null. Using `false` can significantly reduce the amount of data retrieved from the vector store during search, making searches more efficient.
+The <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.IncludeVectors?displayProperty=nameWithType> option lets you specify whether you want to return vectors in the search results. If `false`, the vector properties on the returned model are left null. Using `false` can significantly reduce the amount of data retrieved from the vector store during search, making searches more efficient.
 
 The default value for `IncludeVectors` is `false`.
 
@@ -63,14 +61,14 @@ The default value for `IncludeVectors` is `false`.
 
 ### Filter
 
-The vector search filter option can be used to provide a filter for filtering the records in the chosen collection before applying the vector search. This has multiple benefits:
+Use the <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Filter?displayProperty=nameWithType> option to filter the records in the chosen collection before applying the vector search. This has multiple benefits:
 
-- Reduce latency and processing cost, since only records remaining after filtering need to be compared with the search vector and therefore fewer vector comparisons have to be done.
-- Limit the resultset for for example, access control purposes, by excluding data that the user shouldn't have access to.
+- Reduces latency and processing cost, since only records remaining after filtering need to be compared with the search vector and therefore fewer vector comparisons have to be done.
+- Limits the result set. For example, you can implement access control by excluding data that the user shouldn't have access to.
 
 For fields to be used for filtering, many vector stores require those fields to be indexed first. Some vector stores will allow filtering using any field, but might optionally allow indexing to improve filtering performance.
 
-If you're creating a collection via the Vector Store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
+If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
 > For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings).

@@ -1,10 +1,10 @@
 ---
-title: How to ingest data into a Vector Store
-description: Step by step instructions on how to ingest data into a Vector Store.
+title: How to ingest data into a vector store
+description: Step by step instructions on how to ingest data into a vector store.
 ms.topic: tutorial
 ms.date: 02/28/2026
 ---
-# How to ingest data into a Vector Store
+# How to ingest data into a vector store
 
 This article demonstrates how to create an application to:
 
@@ -38,12 +38,12 @@ The rest of these instructions assume that you're using a container with these s
 Create a new project and add NuGet package references for the Redis connector, the OpenXml package to read the Word document, and the Azure OpenAI packages for generating embeddings.
 
 ```dotnetcli
-dotnet new console --framework net8.0 --name SKVectorIngest
-cd SKVectorIngest
-dotnet add package Azure.AI.OpenAI
-dotnet add package Microsoft.Extensions.AI.OpenAI
-dotnet add package Microsoft.SemanticKernel.Connectors.Redis --prerelease
-dotnet add package DocumentFormat.OpenXml
+dotnet new console --framework net8.0 --name VectorIngest
+cd VectorIngest
+dotnet package add Azure.AI.OpenAI
+dotnet package add Microsoft.Extensions.AI.OpenAI
+dotnet package add Microsoft.SemanticKernel.Connectors.Redis --prerelease
+dotnet package add DocumentFormat.OpenXml
 ```
 
 ## Add a data model

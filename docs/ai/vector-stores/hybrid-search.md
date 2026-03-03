@@ -1,16 +1,16 @@
 ---
-title: Hybrid search using Vector Store connectors
-description: Describes the different options you can use when doing a hybrid search using Vector Store connectors.
+title: Hybrid search using vector store connectors
+description: Describes the different options you can use when doing a hybrid search using vector store connectors.
 ms.topic: concept-article
 ms.date: 02/28/2026
 ---
-# Hybrid search using Vector Store connectors
+# Hybrid search using vector store connectors
 
-The <xref:Microsoft.Extensions.VectorData> library provides hybrid search capabilities, including filtering, as part of its Vector Store abstractions.
+The <xref:Microsoft.Extensions.VectorData> library provides hybrid search capabilities, including filtering, as part of its vector store abstractions.
 
 The hybrid search is based on a vector search and a keyword search, both of which are executed in parallel. The hybrid search returns a union of the two result sets. (Sparse vector&ndash;based hybrid search isn't currently supported.)
 
-To execute a hybrid search, your database schema needs to have a vector field and a string field with full-text search capabilities enabled. If you're creating a collection using the Vector Store connectors, enable the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> option on the string field that you want to target for the keyword search.
+To execute a hybrid search, your database schema needs to have a vector field and a string field with full-text search capabilities enabled. If you're creating a collection using the vector store connectors, enable the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> option on the string field that you want to target for the keyword search.
 
 > [!TIP]
 > For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings)
@@ -57,17 +57,15 @@ When no `AdditionalProperty` is provided:
 
 :::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="VectorPropertyAndAdditionalProperty":::
 
-### `Top` and `Skip`
+### Skip results or select top results
 
-The `Top` and `Skip` options allow you to limit the number of results to the top `n` results and to skip a number of results from the top of the result set. You can use `Top` and `Skip` to do paging if you want to retrieve a large number of results using separate calls.
+The `top` parameter on <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1.HybridSearchAsync``1(``0,System.Collections.Generic.ICollection{System.String},System.Int32,Microsoft.Extensions.VectorData.HybridSearchOptions{`0},System.Threading.CancellationToken)> and the <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1.Skip?displayProperty=nameWithType> option let you limit the number of results. The `top` parameter limits the results to the top `n` results. The `Skip` property skips a number of results from the top of the result set. You can use these controls to perform paging if you want to retrieve a large number of results using separate calls.
 
 :::code language="csharp" source="./snippets/conceptual/hybrid-search.cs" id="TopAndSkip":::
 
-The default value for `Skip` is 0.
-
 ### IncludeVectors
 
-The `IncludeVectors` option allows you to specify whether you want to return vectors in the search results. If `false`, the vector properties on the returned model are left null. Using `false` can significantly reduce the amount of data retrieved from the vector store during search, making searches more efficient.
+The <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1.IncludeVectors?displayProperty=nameWithType> option lets you specify whether you want to return vectors in the search results. If `false`, the vector properties on the returned model are left null. Using `false` can significantly reduce the amount of data retrieved from the vector store during search, making searches more efficient.
 
 The default value for `IncludeVectors` is `false`.
 
@@ -75,14 +73,14 @@ The default value for `IncludeVectors` is `false`.
 
 ### Filter
 
-Use the vector search filter option to provide a filter for filtering the records in the chosen collection before applying the vector search. This has multiple benefits:
+Use the <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1.Filter?displayProperty=nameWithType> option to provide a filter for filtering the records in the chosen collection before applying the vector search. This has multiple benefits:
 
 - Reduce latency and processing cost, since only records remaining after filtering need to be compared with the search vector and therefore fewer vector comparisons have to be done.
 - Limit the result set for by excluding data that the user shouldn't have access to. This can be useful for access-control purposes.
 
 For fields to be used for filtering, many vector stores require them to be indexed first. Some vector stores allow filtering using any field, but might optionally allow indexing to improve filtering performance.
 
-If you're creating a collection via the Vector Store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
+If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
 > For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).

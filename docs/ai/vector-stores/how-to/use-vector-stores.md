@@ -22,50 +22,15 @@ This article shows you how to use the key features of the library.
 Install the `Microsoft.Extensions.VectorData.Abstractions` package and a connector for your vector database. The following example uses the in-memory connector for development and testing:
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.VectorData.Abstractions
-dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+dotnet package add Microsoft.Extensions.VectorData.Abstractions
+dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 ```
 
-For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database. For a full list of available connectors, see [Available vector store connectors](../overview.md#available-vector-store-connectors).
+For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database.
 
 ## Define a data model
 
-Define a .NET class to represent the records you want to store in the vector store. Use the following attributes from the <xref:Microsoft.Extensions.VectorData> namespace to describe the properties:
-
-- <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>: The primary key of each record.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute>: A data property that gets stored. Set `IsIndexed = true` to enable filtering on the property, or `IsFullTextIndexed = true` to enable full-text search on it.
-- <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>: An embedding vector property. Set the `Dimensions` parameter to match your embedding model's output size.
-
-:::code language="csharp" source="../snippets/how-to/Hotel.cs" id="DataModel":::
-
-The `Dimensions` parameter in `[VectorStoreVector]` must match the output size of the embedding model you use. Common values include 1536 for `text-embedding-3-small` and 3072 for `text-embedding-3-large`.
-
-### Attribute parameters
-
-The following tables describe all available parameters for each attribute.
-
-#### VectorStoreKeyAttribute parameters
-
-| Parameter | Required | Description |
-|---|---|---|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
-
-#### VectorStoreDataAttribute parameters
-
-| Parameter | Required | Description |
-|---|---|---|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> | No | Whether to index this property for filtering. Default is `false`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No | Whether to index this property for full-text search. Default is `false`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
-
-#### VectorStoreVectorAttribute parameters
-
-| Parameter | Required | Description |
-|---|---|---|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions> | Yes (for collection creation) | The number of dimensions in the vector. Must match your embedding model. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind> | No | The type of index to use. Defaults vary by connector. Common values: `Hnsw`, `Flat`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No | The distance function for similarity comparisons. Defaults vary by connector. Common values: `CosineSimilarity`, `DotProductSimilarity`, `EuclideanDistance`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | An alternative name for the property in storage. Not supported by all connectors. |
+Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data. For more information, see [Define your data model](../defining-your-data-model.md).
 
 ## Define a schema programmatically
 
@@ -143,7 +108,7 @@ For more information, see [Vector search options](../vector-search.md#vector-sea
 
 Instead of generating embeddings manually before each upsert, you can configure an `IEmbeddingGenerator` on the vector store or collection. When you do, declare your vector property as a `string` type (the source text) and the store generates the embedding automatically.
 
-For more information, see [Let the Vector Store generate embeddings](../embedding-generation.md#let-the-vector-store-generate-embeddings).
+For more information, see [Let the vector store generate embeddings](../embedding-generation.md#let-the-vector-store-generate-embeddings).
 
 ## Hybrid search
 
@@ -151,7 +116,7 @@ Some vector stores support *hybrid search*, which combines vector similarity wit
 
 To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only connectors for databases that support this feature implement this interface.
 
-For more information, see [Hybrid search using Vector Store connectors](../hybrid-search.md).
+For more information, see [Hybrid search using vector store connectors](../hybrid-search.md).
 
 ## Delete records
 

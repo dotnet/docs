@@ -1,29 +1,33 @@
 ---
-title: Define your Vector Store data model
-description: Describes how to create a data model with Microsoft.Extensions.VectorData to use when writing to or reading from a Vector Store.
+title: Define your vector store data model
+description: Describes how to create a data model with Microsoft.Extensions.VectorData to use when writing to or reading from a vector store.
 ms.topic: reference
 ms.date: 02/28/2026
 ---
 # Define your data model
 
-The Vector Store connectors use a model-first approach to interacting with databases.
+The vector store connectors use a model-first approach to interacting with databases.
 
-All methods to upsert or get records use strongly typed model classes. The properties on these classes are decorated with attributes that indicate the purpose of each property.
+All methods to upsert or get records use strongly typed model classes. The properties on these classes are decorated with [attributes](#attributes) that indicate the purpose of each property. Here's an example of a model that's decorated with these attributes.
+
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
 
 > [!TIP]
 >
 > - For an alternative to using attributes, see [Define your storage schema using a record definition](./schema-with-record-definition.md).
-> - For an alternative to defining your own data model, see [Use Vector Store abstractions without defining your own data model](./dynamic-data-model.md).
-
-Here's an example of a model that's decorated with these attributes.
-
-:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
+> - For an alternative to defining your own data model, see [Use vector store abstractions without defining your own data model](./dynamic-data-model.md).
 
 ## Attributes
 
+The attributes that define data models for vector databases are:
+
+- [VectorStoreKeyAttribute](#vectorstorekeyattribute)
+- [VectorStoreDataAttribute](#vectorstoredataattribute)
+- [VectorStoreVectorAttribute](#vectorstorevectorattribute)
+
 ### VectorStoreKeyAttribute
 
-Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute to indicate that your property is the key of the record.
+Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute to indicate that your property is the primary key of the record.
 
 :::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreKeyAttribute":::
 
@@ -61,16 +65,16 @@ public string DescriptionEmbedding { get; set; }
 ```
 
 > [!TIP]
-> For more information on how to use built-in embedding generation, see [Let the Vector Store generate embeddings](embedding-generation.md#let-the-vector-store-generate-embeddings).
+> For more information on how to use built-in embedding generation, see [Let the vector store generate embeddings](embedding-generation.md#let-the-vector-store-generate-embeddings).
 
 #### VectorStoreVectorAttribute parameters
 
 | Parameter    | Required | Description |
 |--------------|:--------:|-------------|
-| `Dimensions` | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
-| <xref:Microsoft.Extensions.VectorData.IndexKind> | No | The type of index to index the vector with. Default varies by vector store type. |
-| <xref:Microsoft.Extensions.VectorData.DistanceFunction> | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions> | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind> | No | The type of index to index the vector with. Default varies by vector store type. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 
 Common index kinds and distance function types are supplied as static values on the <xref:Microsoft.Extensions.VectorData.IndexKind> and <xref:Microsoft.Extensions.VectorData.DistanceFunction> classes.
-Individual Vector Store implementations might also use their own index kinds and distance functions, where the database supports unusual types.
+Individual vector store implementations might also use their own index kinds and distance functions, where the database supports unusual types.

@@ -382,11 +382,11 @@ items:
       - name: Logging & tracing options
         href: ../../core/diagnostics/logging-tracing.md
       - name: ILogger Logging
-        href: ../../core/extensions/logging.md
+        href: ../../core/extensions/logging/overview.md
       - name: Log sampling
-        href: ../../core/extensions/log-sampling.md
+        href: ../../core/extensions/logging/log-sampling.md
       - name: Log buffering
-        href: ../../core/extensions/log-buffering.md
+        href: ../../core/extensions/logging/log-buffering.md
       - name: Observability with OpenTelemetry
         items:
           - name: Overview

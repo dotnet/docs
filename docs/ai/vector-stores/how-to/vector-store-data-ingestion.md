@@ -3,14 +3,15 @@ title: How to ingest data into a vector store
 description: Step by step instructions on how to ingest data into a vector store.
 ms.topic: tutorial
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # How to ingest data into a vector store
 
 This article demonstrates how to create an application to:
 
 1. Take text from each paragraph in a Microsoft Word document.
-2. Generate an embedding for each paragraph.
-3. Upsert the text, embedding, and a reference to the original location into a Redis instance.
+1. Generate an embedding for each paragraph.
+1. Upsert the text, embedding, and a reference to the original location into a Redis instance.
 
 ## Prerequisites
 

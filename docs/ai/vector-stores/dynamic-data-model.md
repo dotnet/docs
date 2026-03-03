@@ -1,6 +1,7 @@
 ---
-title: Using vector store abstractions without defining your own data model
+title: Use vector store abstractions without defining your own data model
 description: Describes how to use vector store abstractions without defining your own data model.
+ai-usage: ai-assisted
 ms.topic: reference
 ms.date: 02/28/2026
 ---

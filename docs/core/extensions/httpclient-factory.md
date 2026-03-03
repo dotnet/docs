@@ -77,6 +77,9 @@ You can use configuration to specify HTTP client names, which is helpful to avoi
 
 It's easy to extend this configuration and store more details about how you'd like your HTTP client to function. For more information, see [Configuration in .NET][config].
 
+> [!Note]
+> The number of distinct registered named clients should not be unbounded as it could lead to resource exhaustion. For example, your code should not derive the naming from unbounded inputs.
+
 #### Create client
 
 Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:

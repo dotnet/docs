@@ -1104,7 +1104,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
-<br/>(Note however, that for performance reasons, a handful of code-style rules will apply only in the Visual Studio IDE.)
+(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>

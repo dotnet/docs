@@ -123,10 +123,9 @@ _grainFactory.DeleteObjectReference<IChat>(obj);
 ```
 
 > [!IMPORTANT]
-> Always call <xref:Orleans.IGrainFactory.DeleteObjectReference*> when you no longer need an observer. Without it, a reference remains in the client's internal object manager, causing a memory leak that can eventually crash the client process.
-
-> [!IMPORTANT]
 > Objects passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
+>
+> Always call <xref:Orleans.IGrainFactory.DeleteObjectReference*> when you no longer need an observer. Without it, a reference remains in the client's internal object manager, causing a memory leak that can eventually crash the client process.
 
 You should maintain a reference for each observer you don't want collected.
 

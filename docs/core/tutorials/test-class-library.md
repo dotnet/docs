@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library
 description: Learn how to create and run a unit test project for a .NET class library using Visual Studio, Visual Studio Code, or GitHub Codespaces.
-ms.date: 02/12/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 zone_pivot_groups: code-editor-set-one
 dev_langs:

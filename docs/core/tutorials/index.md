@@ -1,7 +1,7 @@
 ---
 title: .NET Tutorials
 description: Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
-ms.date: 02/12/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 ms.custom: devdivchpfy22
 titleSuffix: ""

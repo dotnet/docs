@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application
 description: Learn how to debug a .NET console app using Visual Studio, Visual Studio Code, or GitHub Codespaces.
-ms.date: 02/12/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 zone_pivot_groups: code-editor-set-one
 dev_langs:
@@ -233,7 +233,7 @@ The program displays the string that the user enters. What happens if the user d
    String.IsNullOrEmpty(name)
    ```
 
-   Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
+   Each time the breakpoint is hit, the debugger calls the `String.IsNullOrWhiteSpace(name)` method, and it breaks on this line only if the method call returns `true`.
 
    Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 

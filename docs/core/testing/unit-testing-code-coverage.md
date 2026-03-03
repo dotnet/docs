@@ -1,7 +1,7 @@
 ---
 title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
-ms.date: 10/22/2025
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 ---
 

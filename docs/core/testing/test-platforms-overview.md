@@ -20,7 +20,7 @@ You can choose between two test platforms:
 - **Microsoft.Testing.Platform (MTP)**
 
 > [!TIP]
-> For the simplest setup, choose one platform for your repository and configure test projects, CI, and tooling consistently for that platform. Mixing VSTest and MTP test projects in the same run configuration is possible (for example, using MTP for .NET tests and VSTest for C++ or JavaScript tests), but requires careful configuration.
+> For the simplest setup, choose one platform for your repository, and configure test projects, CI, and tooling consistently for that platform. Don't mix VSTest-based and Microsoft.Testing.Platform-based .NET test projects in the same solution or run configuration because that scenario isn't supported. If you also run non-.NET tests that depend on VSTest (for example, C++ or JavaScript tests), run those tests in separate configurations from your MTP-based .NET tests.
 
 ## How to choose your platform
 

@@ -6,8 +6,8 @@ using Qdrant.Client;
 
 public class VectorSearchExample
 {
-    private object searchVector;
-    private VectorStoreCollection<string, Product> collection;
+    private ReadOnlyMemory<float> searchVector;
+    private VectorStoreCollection<int, Product> collection;
 
     // <VectorSearch>
     public async Task SearchAsync()
@@ -127,8 +127,8 @@ public class VectorSearchExample
 
 public class FilterExample
 {
-    private static object searchVector;
-    private static VectorStoreCollection<string, Glossary> collection;
+    private static ReadOnlyMemory<float> searchVector;
+    private static VectorStoreCollection<ulong, Glossary> collection;
 
     // <Filter>
     public static async Task FilteredSearchAsync()

@@ -29,7 +29,7 @@ you can easily start a Redis container using Docker:
 docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ```
 
-To verify that it's running successfully, navigate to [http://localhost:8001/redis-stack/browser](http://localhost:8001/redis-stack/browser) in your browser.
+To verify that it's running successfully, navigate to <http://localhost:8001/redis-stack/browser> in your browser.
 
 The rest of these instructions assume that you're using a container with these settings.
 

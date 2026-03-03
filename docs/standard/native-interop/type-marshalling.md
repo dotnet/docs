@@ -29,10 +29,13 @@ Generally, the runtime tries to do the "right thing" when marshalling to require
 This first table describes the mappings for types for which the marshalling is the same for both P/Invoke and field marshalling.
 
 > [!IMPORTANT]
-> C# `long` maps to `int64_t`, but C/C++ `long` is **not** `int64_t` on all platforms. C `long` is 32-bit on Windows and 64-bit on 64-bit Unix. When calling a C function that uses `long`, use <xref:System.Runtime.InteropServices.CLong> or <xref:System.Runtime.InteropServices.CULong> (.NET 6+) instead of C# `long`. See [Cross-platform data type considerations](best-practices.md#cross-platform-data-type-considerations) for details and workarounds for earlier .NET versions.
+> C# `long` maps to `int64_t`, but C/C++ `long` is **not** `int64_t` on all platforms. C `long` is 32-bit on Windows and 64-bit on 64-bit Unix. When calling a C function that uses `long`, use <xref:System.Runtime.InteropServices.CLong> or <xref:System.Runtime.InteropServices.CULong> (.NET 6+) instead of C# `long`. For details and workarounds for earlier .NET versions, see [Cross-platform data type considerations](best-practices.md#cross-platform-data-type-considerations).
 
 > [!NOTE]
-> The `wchar_t` type is UTF-16 (2 bytes) on Windows but is compiler-defined on other platforms — typically UTF-32 (4 bytes) on Linux and macOS. When calling cross-platform C functions that use `char*`, use <xref:System.Runtime.InteropServices.StringMarshalling.Utf8?displayProperty=nameWithType> rather than <xref:System.Runtime.InteropServices.StringMarshalling.Utf16?displayProperty=nameWithType>.
+> The `wchar_t` type is UTF-16 (2 bytes) on Windows but is compiler-defined on other platforms—typically UTF-32 (4 bytes) on Linux and macOS. Because of this, `wchar_t*` is hard to use as a single cross-platform ABI. When you design a cross-platform native API, prefer `char*` with a clearly defined encoding contract (for example, UTF-8) instead of `wchar_t*`.
+>
+> [!NOTE]
+> Native `char*` strings use the encoding that the library or platform defines. When you call a C function that takes `char*`, match that expected encoding by choosing the correct string marshalling option, such as <xref:System.Runtime.InteropServices.StringMarshalling.Utf8?displayProperty=nameWithType> for UTF-8, <xref:System.Runtime.InteropServices.StringMarshalling.Utf16?displayProperty=nameWithType> for UTF-16, or <xref:System.Runtime.InteropServices.StringMarshalling.Custom?displayProperty=nameWithType> for other encodings.
 
 | C# keyword  | .NET Type        | Native Type             |
 |-------------|------------------|-------------------------|

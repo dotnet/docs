@@ -438,11 +438,11 @@ internal unsafe struct SYSTEM_PROCESS_INFORMATION
 
 However, there are some gotchas with fixed buffers. Fixed buffers of non-blittable types won't be correctly marshalled, so the in-place array needs to be expanded out to multiple individual fields. Additionally, in .NET Framework and .NET Core before 3.0, if a struct containing a fixed buffer field is nested within a non-blittable struct, the fixed buffer field won't be correctly marshalled to native code.
 
-## Troubleshooting P/Invoke failures
+## Troubleshoot P/Invoke failures
 
 The following table maps common symptoms to their likely cause and recommended fix.
 
-| Symptom | Likely Cause | Fix |
+| Symptom | Likely cause | Fix |
 |---------|-------------|-----|
 | <xref:System.DllNotFoundException> | Library not found at runtime | Check library name, path, and platform. Use <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A> to test loading. On Linux, verify `LD_LIBRARY_PATH` or `rpath`. |
 | <xref:System.EntryPointNotFoundException> | Export name mismatch | Inspect native exports (`dumpbin /exports` on Windows, `nm -D` on Linux). Check for C++ name mangling (missing `extern "C"`). Set `EntryPoint` explicitly. |
@@ -451,7 +451,7 @@ The following table maps common symptoms to their likely cause and recommended f
 | Intermittent crashes | GC moved an unpinned object or collected a delegate | Root callback delegates for their full lifetime. Use `GCHandle` or `fixed` for pointers held across calls. |
 | Heap corruption on free | Wrong allocator | Match the allocator: never mix `malloc`/`free` with `CoTaskMemAlloc`/`CoTaskMemFree` or `Marshal.FreeHGlobal`. Use the library's own free function. |
 
-## Preventing delegate collection with `GC.KeepAlive`
+## Prevent delegate collection with `GC.KeepAlive`
 
 When you use <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A> to convert a delegate to a function pointer, the garbage collector does **not** track the relationship between the returned pointer and the source delegate. If the delegate is eligible for collection before the native code finishes using the pointer, the application will crash.
 
@@ -471,6 +471,6 @@ GC.KeepAlive(callback); // Prevent collection — fnPtr does not root the delega
 
 If native code stores the function pointer beyond the call (for example, as a persistent callback), the delegate must be rooted for its entire lifetime — typically by storing it in a `static` field.
 
-## Resolving conflicts between documentation and native headers
+## Resolve conflicts between documentation and native headers
 
 When writing P/Invoke signatures, it's possible to encounter discrepancies between online API documentation and the actual native header files. Header files are the authoritative source for function signatures, struct layouts, type sizes, and calling conventions. When in doubt, verify your P/Invoke signatures against the header rather than relying solely on documentation.

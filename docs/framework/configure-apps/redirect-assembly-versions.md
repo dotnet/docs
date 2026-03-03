@@ -1,7 +1,7 @@
 ---
 title: "Redirecting Assembly Versions"
-description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies. Learn how to enable binding redirects for unit test projects.
-ms.date: "03/02/2026"
+description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies. Learn how to enable binding redirects for unit test projects, and fix CS0012 errors from Razor view precompilation.
+ms.date: "03/03/2026"
 ai-usage: ai-assisted
 helpviewer_keywords:
   - "assembly binding, redirection"
@@ -190,6 +190,35 @@ For example, to redirect one reference to a .NET Framework 3.5 assembly and anot
   <!-- redirects meant for all versions of the runtime -->
 </assemblyBinding>
 ```
+
+## Fix CS0012 errors from Razor view precompilation in ASP.NET web apps
+
+In ASP.NET Framework web applications that use `aspnet_compiler.exe` to precompile Razor (*.cshtml*) views, you might see errors like the following after you upgrade a NuGet package:
+
+```
+error CS0012: The type 'X' is defined in an assembly that is not referenced. You must add a reference to assembly 'AssemblyName, Version=..., Culture=neutral, PublicKeyToken=...'.
+```
+
+This error occurs when a NuGet package you're using (directly or transitively) depends on an assembly that is a *facade* on your target framework version—for example, `System.ValueTuple`, `System.Runtime`, `netstandard`, or `System.Net.Http` on .NET Framework 4.7 and later. Because these assemblies are part of the framework itself, NuGet doesn't copy their DLLs into your application's bin folder.
+
+The MSBuild compiler resolves these references correctly during a normal build. However, `aspnet_compiler.exe` uses a separate mechanism: it reads assembly references from the bin folder and from the `<compilation><assemblies>` section of your *web.config* file. When the assembly isn't in either location, the Razor compiler can't find it and reports a CS0012 error.
+
+> [!NOTE]
+> This error only affects *.cshtml* (Razor) files. Files like *.aspx* and *.ascx* compile with a different code path and don't have this limitation.
+
+To fix the error, add the missing assembly to the `<system.web>` `<compilation>` `<assemblies>` section of your *web.config* file:
+
+```xml
+<system.web>
+  <compilation>
+    <assemblies>
+      <add assembly="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51"/>
+    </assemblies>
+  </compilation>
+</system.web>
+```
+
+Replace the assembly name, version, and public key token with those of the assembly in the CS0012 error message.
 
 ## See also
 

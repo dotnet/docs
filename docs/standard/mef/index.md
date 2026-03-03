@@ -1,7 +1,7 @@
 ---
 title: "Managed Extensibility Framework (MEF)"
-description: Explore the Managed Extensibility Framework (MEF), which lets application developers discover and use extensions without configuration in .NET 4 or above.
-ms.date: 06/09/2021
+description: Explore the Managed Extensibility Framework (MEF), which lets application developers discover and use extensions with no configuration required.
+ms.date: 03/03/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
+ai-usage: ai-assisted
 ---
 
 # Managed Extensibility Framework (MEF)
@@ -47,7 +48,7 @@ An extensible application written by using MEF declares an import that can be fi
 
 ## Where MEF is available
 
-MEF is an integral part of the .NET Framework 4, and is available wherever the .NET Framework is used. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
+MEF is available in .NET Framework 4 and later versions, and in .NET 5 and later versions. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
 
 ## MEF and MAF
 

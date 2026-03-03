@@ -140,7 +140,7 @@ public class ExampleUsage
             Console.WriteLine($"Key: {result.Record.Key}, Text: {result.Record.Text}");
         }
     }
-    // </ExampleUsage
+    // </ExampleUsage>
 
     // <GenerateEmbeddingsOnUpsertWithIEmbedding>
     async Task GenerateEmbeddingsAndUpsertAsync(

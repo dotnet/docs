@@ -75,7 +75,7 @@ public class VectorSearchExample
         [VectorStoreVector(1536)]
         public ReadOnlyMemory<float> FeatureListEmbedding { get; set; }
     }
-    // </VectorProperty
+    // </VectorProperty>
 
     public async Task TopAndSkipSearch()
     {

@@ -21,7 +21,7 @@ When you create a definition, you always have to provide a name and type for eac
 
 To use the definition, pass it to the `GetCollection` method.
 
-:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="DefineYourStorageSchemaUsingARecordDefin2":::
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="UseRecordDefinition":::
 
 ## Record property configuration classes
 
@@ -29,7 +29,7 @@ To use the definition, pass it to the `GetCollection` method.
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyProperty> class to indicate that your property is the key of the record.
 
-:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="VectorStoreKeyProperty":::
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" range=12:::
 
 #### VectorStoreKeyProperty configuration settings
 
@@ -43,7 +43,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyProperty> class to i
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataProperty> class to indicate that your property contains general data that isn't a key or a vector.
 
-:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="VectorStoreDataProperty":::
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" range=13-14:::
 
 #### VectorStoreDataProperty configuration settings
 
@@ -59,7 +59,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataProperty> class to 
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorProperty> class to indicate that your property contains a vector.
 
-:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="VectorStoreVectorProperty":::
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" range=15:::
 
 #### VectorStoreVectorProperty configuration settings
 

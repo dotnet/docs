@@ -31,14 +31,13 @@ The [`GenerateAssemblyInfo` MSBuild property](../../core/project-sdk/msbuild-pro
 | `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
 | `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
 | `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
-| `SourceRevisionId`     | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `IncludeSourceRevisionInInformationalVersion`   |
+| `SourceRevisionId`     | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | N/A |
 
 Notes about these settings:
 
 - `AssemblyVersion` and `FileVersion` default to the value of `$(Version)` without the suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
 - `InformationalVersion` defaults to the value of `$(Version)`.
 - `SourceRevisionId` is always appended to `InformationalVersion` when building with the .NET 8 SDK or later. The .NET 8 SDK includes [Source Link](https://github.com/dotnet/sourcelink), which automatically sets `SourceRevisionId` to the commit hash for git repository builds. For non-repository builds, `SourceRevisionId` is empty. You can disable this behavior by setting `IncludeSourceRevisionInInformationalVersion` to `false`.
-- Unlike the other properties in the **Property to disable attribute generation** column, `IncludeSourceRevisionInInformationalVersion` doesn't disable attribute generation entirely. Instead, it controls whether `SourceRevisionId` is appended to `InformationalVersion`.
 - `Copyright` and `Description` properties are also used for NuGet metadata.
 - `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../../core/tools/dotnet-pack.md).
 - Some of the properties are used when creating a NuGet package. For more information, see [Package properties](../../core/project-sdk/msbuild-props.md#package-properties).

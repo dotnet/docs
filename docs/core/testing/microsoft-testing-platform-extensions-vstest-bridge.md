@@ -11,7 +11,7 @@ ms.date: 04/10/2024
 This extension provides a compatibility layer with VSTest allowing test frameworks that are already implemented with VSTest to:
 
 1. Run easily with Microsoft.Testing.Platform without a major rewrite.
-2. Support both VSTest and Microsoft.Testing.Platform with the same test framework implementation.
+1. Support both VSTest and Microsoft.Testing.Platform with the same test framework implementation.
 
 This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) NuGet package.
 

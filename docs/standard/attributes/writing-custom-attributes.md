@@ -113,7 +113,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 > [!NOTE]
 > In Visual Basic, constructors for an attribute class shouldn't use a `ParamArray` argument.
 
- Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
+Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
 
 - Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`.
 - <xref:System.Type>.
@@ -126,7 +126,7 @@ If you define a constructor that accepts a type outside this list, the attribute
 > [!NOTE]
 > The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
 
- The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
+The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
 
  [!code-csharp[Conceptual.Attributes.Usage#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#17)]
  [!code-vb[Conceptual.Attributes.Usage#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#17)]

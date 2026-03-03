@@ -116,16 +116,16 @@ When the observer is no longer needed, unsubscribe from the grain and delete the
 
 ```csharp
 // Unsubscribe the observer when it's no longer needed.
-await friend.UnSubscribe(obj);
+await friend.Unsubscribe(obj);
 
 // Delete the object reference to free resources and avoid a memory leak.
 _grainFactory.DeleteObjectReference<IChat>(obj);
 ```
 
 > [!IMPORTANT]
-> Objects passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
+> The client holds observer instances passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> in its internal object manager by using a <xref:System.WeakReference%601>, so the observer instance itself might be garbage collected if no other references exist, but the object reference registration stays active until you delete it.
 >
-> Always call <xref:Orleans.IGrainFactory.DeleteObjectReference*> when you no longer need an observer. Without it, a reference remains in the client's internal object manager, causing a memory leak that can eventually crash the client process.
+> Always call <xref:Orleans.IGrainFactory.DeleteObjectReference*> when you no longer need an observer to remove that registration. Without it, a reference remains in the client's internal object manager, causing a memory leak that can eventually crash the client process.
 
 You should maintain a reference for each observer you don't want collected.
 

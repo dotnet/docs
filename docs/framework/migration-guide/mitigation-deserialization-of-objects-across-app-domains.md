@@ -9,7 +9,7 @@ ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
 
 In some cases, when an app uses two or more app domains with different application bases, the attempt to deserialize objects in the logical call context across app domains throws an exception.
 
-## Diagnosing the issue
+## Diagnose the issue
 
 The issue arises under the following sequence of conditions:
 
@@ -29,7 +29,7 @@ The issue arises under the following sequence of conditions:
 
     1. The call to get evidence for the default app domain triggers a cross-app domain call from the non-default app domain to the default app domain.
 
-    1. As part of the cross-app domain contract in .NET Framework, the contents of the logical call context also have to be marshaled across app domain boundaries.
+    1. As part of the cross-app domain contract in the .NET Framework, the contents of the logical call context also have to be marshaled across app domain boundaries.
 
 1. Because the types in the logical call context can't be resolved in the default app domain, an exception is thrown.
 
@@ -37,20 +37,20 @@ The issue arises under the following sequence of conditions:
 
 To work around this issue:
 
-1. Look for the following calls in the call stack when the exception is thrown. The exception can be any of a large subset of exceptions, including <xref:System.IO.FileNotFoundException> and <xref:System.Runtime.Serialization.SerializationException>.
+1. Look for the following calls in the call stack when the exception is thrown. Different exception types might appear, including <xref:System.IO.FileNotFoundException> and <xref:System.Runtime.Serialization.SerializationException>.
 
    - On earlier versions of .NET Framework, look for `get_Evidence`.
    - On .NET Framework 4.7.2 and later, look for `GetHostEvidence` or `GetEvidenceInfo`.
 
 1. Choose a mitigation based on how the exception occurs:
 
-   - **If the exception occurs when objects are added to the logical call context**: Identify the place in the app where objects are added to the logical call context and add the following code before that point:
+   - **If objects added to the logical call context later cause an exception during configuration system initialization or a cross-app domain call**: Identify the place in the app where objects are added to the logical call context and add the following code before that point:
 
      ```csharp
      System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");
      ```
 
-   - **If the exception occurs due to a cross-app domain call** (as indicated by `GetHostEvidence` or `GetEvidenceInfo` in the stack trace): In the non-default app domain, call the following code before making any cross-app domain calls, or ensure the configuration system is initialized before the cross-app domain calls begin:
+   - **If the exception occurs due to a cross-app domain call** (as indicated by `GetHostEvidence` or `GetEvidenceInfo` in the stack trace): In the non-default app domain, initialize the configuration system by calling the following code before any cross-app domain calls:
 
      ```csharp
      System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");

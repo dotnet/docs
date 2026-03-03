@@ -40,7 +40,20 @@ When you pass arguments to an attribute, use one of the following kinds of expre
 
 The following types are valid as attribute parameter types:
 
-- Simple types: `bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, `string`.
+- Simple types (C# keyword / Visual Basic keyword / .NET runtime type):
+
+  | C# | Visual Basic | .NET runtime type |
+  |----|-------------|-------------------|
+  | `bool` | `Boolean` | <xref:System.Boolean> |
+  | `byte` | `Byte` | <xref:System.Byte> |
+  | `char` | `Char` | <xref:System.Char> |
+  | `double` | `Double` | <xref:System.Double> |
+  | `float` | `Single` | <xref:System.Single> |
+  | `int` | `Integer` | <xref:System.Int32> |
+  | `long` | `Long` | <xref:System.Int64> |
+  | `short` | `Short` | <xref:System.Int16> |
+  | `string` | `String` | <xref:System.String> |
+
 - `object` (in C#, when the value is one of the valid attribute argument types or a single-dimensional array of them).
 - <xref:System.Type>.
 - Enum types that are accessible at the usage site.

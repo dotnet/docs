@@ -82,11 +82,11 @@ Finally, you put together the different pieces. In this example, you use standar
 
 Add the following code to your `Program.cs` file to set up the container, register the Redis vector store, and register the embedding service. Replace the text embedding generation settings with your own values.
 
-:::code language="csharp" source="../snippets/how-to/DataIngestion.cs" id="PutItAllTogether1":::
+:::code language="csharp" source="../snippets/how-to/PutItTogether.cs" id="PutItAllTogether1":::
 
 Lastly, add code to read the paragraphs from the Word document and call the data uploader to generate the embeddings and upload the paragraphs.
 
-:::code language="csharp" source="../snippets/how-to/DataIngestion.cs" id="PutItAllTogether2":::
+:::code language="csharp" source="../snippets/how-to/PutItTogether.cs" id="PutItAllTogether2":::
 
 ## See your data in Redis
 

@@ -13,7 +13,7 @@ public class PutItAllTogether
         // <PutItAllTogether1>
         // Replace with your values.
         string deploymentName = "text-embedding-ada-002";
-        string endpoint = "https://sksample.openai.azure.com/";
+        string endpoint = "https://someendpoint.openai.azure.com/";
         string apiKey = "your-api-key";
 
         // Register Azure OpenAI embedding generator and Redis vector store.
@@ -42,9 +42,8 @@ public class PutItAllTogether
             "file:///c:/vector-store-data-ingestion-input.docx");
 
         await dataUploader.GenerateEmbeddingsAndUpload(
-            "sk-documentation",
+            "documentation",
             textParagraphs);
-
         // </PutItAllTogether2>
     }
 }

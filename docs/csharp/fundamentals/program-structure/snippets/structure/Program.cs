@@ -1,37 +1,28 @@
-﻿// A skeleton of a C# program
-using System;
-namespace YourNamespace
+﻿// A skeleton of a C# program using an explicit Main method
+namespace YourNamespace;
+
+class YourClass
 {
-    class YourClass
-    {
-    }
+}
 
-    struct YourStruct
-    {
-    }
+struct YourStruct
+{
+}
 
-    interface IYourInterface
-    {
-    }
+interface IYourInterface
+{
+}
 
-    delegate int YourDelegate();
+delegate int YourDelegate();
 
-    enum YourEnum
-    {
-    }
+enum YourEnum
+{
+}
 
-    namespace YourNestedNamespace
+class Program
+{
+    static void Main(string[] args)
     {
-        struct YourStruct
-        {
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello world!");
-        }
+        Console.WriteLine("Hello, World!");
     }
 }

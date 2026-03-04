@@ -3,6 +3,7 @@ title: Quickstart - Extend OpenAI using functions and execute a local function w
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
 ms.date: 11/13/2025
 ms.topic: quickstart
+ai-usage: ai-assisted
 zone_pivot_groups: openai-library
 ---
 

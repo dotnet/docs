@@ -68,7 +68,7 @@ Tool descriptions are included in the request sent to the model and count agains
 If your request approaches the model's token limit, consider these adjustments:
 
 - Reduce the number of tools registered for the conversation.
-- Shorten the method names and descriptions used to generate function definitions.
+- Shorten the method names and descriptions used to generate tool definitions.
 - Limit tool registration to only the tools relevant for a given conversation context.
 
 ## Related content

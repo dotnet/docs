@@ -11,7 +11,7 @@ When AI models call functions in your .NET code, they might sometimes provide in
 
 ## Common scenarios for invalid input
 
-AI models can provide invalid function-call input in several ways:
+AI models can provide invalid function call input in several ways:
 
 - Missing required parameters.
 - Incorrect data types (for example, sending a string when an integer is expected).

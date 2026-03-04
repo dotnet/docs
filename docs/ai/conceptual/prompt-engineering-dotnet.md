@@ -2,7 +2,8 @@
 title: Prompt engineering concepts
 description: Learn basic prompt engineering concepts and how to implement them using .NET tools such as Microsoft Agent Framework.
 ms.topic: concept-article
-ms.date: 02/05/2026
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 ---
 
 # Prompt engineering in .NET
@@ -30,18 +31,18 @@ An example is text that shows the model how to respond by providing sample user 
 
 An example starts with a prompt and can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.
 
-Examples are classified as [zero-shot learning](zero-shot-learning.md#zero-shot-learning) or [few-shot learning](zero-shot-learning.md#few-shot-learning) based on whether they contain verbatim completions.
+Classify examples as [zero-shot learning](zero-shot-learning.md#zero-shot-learning) or [few-shot learning](zero-shot-learning.md#few-shot-learning) based on whether they contain verbatim completions.
 
 - **Zero-shot learning** examples include a prompt with no verbatim completion. This approach tests a model's responses without giving it example data output. Zero-shot prompts can have completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## Cues
 
-A *cue* is text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. You can add as many cues as you want, so you can iterate to get the result you want. Cues are used with an instruction or an example and should be at the end of the prompt.
+A *cue* is text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. Add as many cues as you want to iterate toward the result you want. Use cues with an instruction or an example, and place them at the end of the prompt.
 
 ## Example prompt using .NET
 
-.NET provides various tools to prompt and chat with different AI models. You can use [Agent Framework](/agent-framework/) to connect to a wide variety of AI models and services. Agent Framework includes tools to create agents with system instructions and maintain conversation state across multiple turns.
+.NET provides various tools to prompt and chat with different AI models. Use [Agent Framework](/agent-framework/) to connect to a wide variety of AI models and services. Agent Framework includes tools to create agents with system instructions and maintain conversation state across multiple turns.
 
 Consider the following code example:
 

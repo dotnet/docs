@@ -1,11 +1,11 @@
 ---
-title: Handle invalid tool input from AI models
-description: Learn strategies to handle invalid tool input when AI models provide incorrect or malformed function call parameters.
+title: Handle invalid function input from AI models
+description: Learn strategies to handle invalid function input when AI models provide incorrect or malformed function call parameters.
 ms.date: 01/05/2026
 ai-usage: ai-assisted
 ---
 
-# Handle invalid tool input from AI models
+# Handle invalid function input from AI models
 
 When AI models call functions in your .NET code, they might sometimes provide invalid input that doesn't match the expected schema. The `Microsoft.Extensions.AI` library provides several strategies to handle these scenarios gracefully.
 

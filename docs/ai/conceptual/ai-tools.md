@@ -1,5 +1,5 @@
 ---
-title: "Understand AI tool calling"
+title: "AI tool calling"
 description: "Understand how tool calling lets you integrate external tools with AI models across providers using Microsoft.Extensions.AI."
 ms.topic: concept-article
 ms.date: 03/03/2026
@@ -9,11 +9,9 @@ ai-usage: ai-assisted
 
 ---
 
-# Understand AI tool calling
+# AI tool calling
 
 *Tool calling* is an AI model capability that lets you describe .NET methods to an AI model so the model can request that your application invoke them. Instead of directly executing those methods, the model returns a structured output describing which tools to call and with what arguments. Your application invokes those tools and sends the results back to the model, enabling it to build a more accurate and grounded response.
-
-Microsoft.Extensions.AI (MEAI) provides provider-agnostic abstractions for tool calling that work across AI services, including Azure OpenAI, OpenAI, Ollama, and others. You write your tool-calling logic once, and it works regardless of which underlying model or provider you use.
 
 ## Why use tool calling
 

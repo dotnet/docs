@@ -1,13 +1,17 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-ms.date: 03/17/2023
+ms.date: 02/20/2026
+ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ---
 
 # Order unit tests
 
 Occasionally, you may want to have unit tests run in a specific order. Ideally, the order in which unit tests run should _not_ matter, and it is [best practice](unit-testing-best-practices.md) to avoid ordering unit tests. Regardless, there may be a need to do so. In that case, this article demonstrates how to order test runs.
+
+> [!NOTE]
+> Test ordering and test parallelization are separate concerns. Specifying an execution order determines the sequence in which tests start, but if parallelization is enabled, multiple tests can still run concurrently. To guarantee that tests run one at a time in the specified order, you must also disable parallelization.
 
 If you prefer to browse the source code, see the [order .NET Core unit tests](/samples/dotnet/samples/order-unit-tests-cs) sample repository.
 
@@ -17,6 +21,9 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 :::zone pivot="mstest"
 
 ## Order alphabetically
+
+> [!NOTE]
+> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class.
 
 MSTest discovers tests in the same order in which they are defined in the test class.
 
@@ -46,6 +53,9 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 :::zone pivot="xunit"
 
 The xUnit test framework allows for more granularity and control of test run order. You implement the `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces to control the order of test cases for a class, or test collections.
+
+> [!NOTE]
+> xUnit runs test classes in parallel by default. Tests within a single class always run sequentially, so `ITestCaseOrderer` controls the sequence within that class. To disable parallelism across all classes, apply `[assembly: CollectionBehavior(DisableTestParallelization = true)]` at the assembly level, for example in `AssemblyInfo.cs` or in any source file in your test project.
 
 ## Order by test case alphabetically
 
@@ -86,13 +96,16 @@ Then in a test class you set the test case order with the `TestCaseOrdererAttrib
 
 ## Order by priority
 
+> [!NOTE]
+> NUnit runs tests sequentially within a single thread by default. Unless you've applied `[Parallelizable]` attributes, the `[Order]` attribute alone is sufficient to guarantee serial execution in the specified sequence.
+
 To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nunit.org/articles/nunit/writing-tests/attributes/order). Tests with this attribute are started before tests without. The order value is used to determine the order to run the unit tests.
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 
 :::zone-end
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Unit test code coverage](unit-testing-code-coverage.md)

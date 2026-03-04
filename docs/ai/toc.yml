@@ -60,13 +60,13 @@ items:
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
-  - name: OpenAI function calling
-    href: conceptual/understanding-openai-functions.md
-- name: Call functions
+  - name: AI tool calling
+    href: conceptual/ai-tools.md
+- name: Call tools
   items:
-    - name: "Quickstart: Execute a local function"
+    - name: "Quickstart: Execute a local tool"
       href: quickstarts/use-function-calling.md
-    - name: Access data in AI functions
+    - name: Access data in AI tools
       href: how-to/access-data-in-functions.md
     - name: Handle invalid tool input
       href: how-to/handle-invalid-tool-input.md

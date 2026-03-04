@@ -418,14 +418,11 @@ f1_keywords:
   - "CS8911"
   # C# 10 errors start here:
   - "CS8913"
-  - "CS8917"
   - "CS8918"
-  - "CS8934"
   - "CS8935"
   - "CS8937"
   - "CS8940"
   - "CS8973"
-  - "CS8974"
 # Coming in C# 15
   - "CS9343"
   - "CS9344"

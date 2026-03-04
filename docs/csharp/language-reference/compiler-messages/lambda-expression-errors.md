@@ -13,7 +13,10 @@ f1_keywords:
   - "CS8030"
   - "CS8175"
   - "CS8916"
+  - "CS8917" # ERR_CannotInferDelegateType: The delegate type could not be inferred.
+  - "CS8934" # ERR_CantConvAnonMethReturnType: Cannot convert {0} to type '{1}' because the return type does not match the delegate return type.
   - "CS8971"
+  - "CS8974" # WRN_MethGrpToNonDel: Converting method group '{0}' to non-delegate type '{1}'. Did you intend to invoke the method?
   - "CS8975"
   - "CS9098" # ERR_ImplicitlyTypedDefaultParameter: Implicitly typed lambda parameter '{0}' cannot have a default value.
   - "CS9099" # WRN_OptionalParamValueMismatch: The default parameter value does not match in the target delegate type.
@@ -31,13 +34,16 @@ helpviewer_keywords:
   - "CS8030"
   - "CS8175"
   - "CS8916"
+  - "CS8917"
+  - "CS8934"
   - "CS8971"
+  - "CS8974"
   - "CS8975"
   - "CS9098"
   - "CS9099"
   - "CS9100"
   - "CS9236"
-ms.date: 05/04/2023
+ms.date: 03/04/2026
 ---
 # Errors and warnings when using lambda expressions and anonymous functions
 
@@ -56,6 +62,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8030**](#syntax-limitations-in-lambda-expressions): *Anonymous function converted to a void returning delegate cannot return a value.*
 - [**CS8175**](#syntax-limitations-in-lambda-expressions): *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
 - [**CS8916**](#lambda-expression-parameters-and-returns): *Attributes on lambda expressions require a parenthesized parameter list.*
+- [**CS8917**](#lambda-expression-delegate-type): *The delegate type could not be inferred.*
+- [**CS8934**](#lambda-expression-parameters-and-returns): *Cannot convert anonymous method to type 'type' because the return type does not match the delegate return type.*
 - [**CS8971**](#syntax-limitations-in-lambda-expressions): *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - [**CS8975**](#lambda-expression-parameters-and-returns): *The contextual keyword `var` cannot be used as an explicit lambda return type.*
 - [**CS9098**](#lambda-expression-parameters-and-returns): *Implicitly typed lambda parameter '...' cannot have a default value.*
@@ -63,6 +71,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 In addition, there are several *warnings* related to declaring and using lambda expressions:
 
 - [**CS8971**](#syntax-limitations-in-lambda-expressions): *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
+- [**CS8974**](#lambda-expression-delegate-type): *Converting method group 'method' to non-delegate type 'type'. Did you intend to invoke the method?*
 - [**CS9099**](#lambda-expression-delegate-type): *The default parameter value does not match in the target delegate type.*
 - [**CS9100**](#lambda-expression-delegate-type): *Parameter has params modifier in lambda but not in target delegate type.*
 

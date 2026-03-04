@@ -10,8 +10,8 @@ description: Learn how to assess .NET app readiness and migrate to Azure with Gi
 - A GitHub account with an active [GitHub Copilot](https://github.com/features/copilot) subscription under any plan.
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/). Must be version 1.101 or later.
 
-  - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). For setup instructions, see [Set up GitHub Copilot in VisualStudio Code](https://code.visualstudio.com/docs/copilot/setup). Be sure to sign in to your GitHub account within Visual Studio Code.
-  - [GitHub Copilot modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code afterinstallation.
+  - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). For setup instructions, see [Set up GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/setup). Be sure to sign in to your GitHub account within Visual Studio Code.
+  - [GitHub Copilot modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code after installation.
 
 - A .NET development environment to build and test the project.
 

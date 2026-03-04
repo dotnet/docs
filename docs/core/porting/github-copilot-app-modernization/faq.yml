@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: GitHub Copilot modernization for .NET FAQ
-  description: "This article answers frequently asked questions about GitHub Copilot modernization for .NET."
+  title: GitHub Copilot app modernization for .NET FAQ
+  description: "This article answers frequently asked questions about GitHub Copilot app modernization for .NET."
   titleSuffix: ""
   ms.topic: faq
   ms.date: 03/04/2026
 
-title: GitHub Copilot modernization FAQ
+title: GitHub Copilot app modernization FAQ
 summary: |
-  GitHub Copilot modernization is an interactive GitHub Copilot agent that adds powerful capabilities to your development environment. This article answers frequently asked questions. For more information about the modernization agent, see [What is GitHub Copilot modernization](overview.md).
+  GitHub Copilot app modernization is an interactive GitHub Copilot agent that adds powerful capabilities to your development environment. This article answers frequently asked questions. For more information about the modernization agent, see [What is GitHub Copilot app modernization](overview.md).
 
   The tool requires one of the following GitHub Copilot subscriptions:
 
@@ -18,14 +18,14 @@ summary: |
   - Copilot Business
   - Copilot Enterprise
 
-  GitHub Copilot modernization is available in Visual Studio, Visual Studio Code, GitHub Copilot CLI, and on GitHub.com. In Visual Studio, it's included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer). For setup details, see the [install article](install.md).
+  GitHub Copilot app modernization is available in Visual Studio, Visual Studio Code, GitHub Copilot CLI, and on GitHub.com. In Visual Studio, it's included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer). For setup details, see the [install article](install.md).
 
 sections:
   - name: Modernization agent
     questions:
       - question: What can the agent do?
         answer: |
-          Currently, GitHub Copilot modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps migrate services to Azure. It also upgrades dependencies and fixes errors in the code post-migration. The agent performs the following steps in a Copilot chat session:
+          Currently, GitHub Copilot app modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps migrate services to Azure. It also upgrades dependencies and fixes errors in the code post-migration. The agent performs the following steps in a Copilot chat session:
 
           - Analyzes your projects and proposes a modernization plan.
           - According to the plan, runs a series of tasks to modernize your projects.
@@ -70,7 +70,7 @@ sections:
     questions:
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET projects or migrate them to Azure. Besides upgrading the target framework, the agent can work with the following types of projects:
+          GitHub Copilot app modernization helps you upgrade your .NET projects or migrate them to Azure. Besides upgrading the target framework, the agent can work with the following types of projects:
 
           - Azure Functions.
           - Console apps and class libraries.
@@ -123,4 +123,4 @@ sections:
 additionalContent: |
     ## Related content
 
-    To learn more, see [What is GitHub Copilot modernization?](overview.md).
+    To learn more, see [What is GitHub Copilot app modernization?](overview.md).

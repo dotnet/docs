@@ -1,20 +1,20 @@
 ---
-title: GitHub Copilot modernization overview
-description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, VS Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
+title: GitHub Copilot app modernization overview
+description: "Learn about GitHub Copilot app modernization, a Copilot agent available across Visual Studio, VS Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 03/04/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn about what GitHub Copilot modernization is, so that I understand its capabilities and how I can take advantage of it.
+#customer intent: As a developer, I want to learn about what GitHub Copilot app modernization is, so that I understand its capabilities and how I can take advantage of it.
 
 ---
 
-# What is GitHub Copilot modernization?
+# What is GitHub Copilot app modernization?
 
-GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+GitHub Copilot app modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
-This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot modernization is an all-in-one upgrade and migration agent that uses AI to improve developer velocity, quality, and results.
+This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration agent that uses AI to improve developer velocity, quality, and results.
 
 With this agent, you can:
 
@@ -32,7 +32,7 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 
 ## Prerequisites
 
-Set up GitHub Copilot modernization in your development environment before using the agent. For installation steps, see [Install GitHub Copilot modernization](install.md).
+Set up GitHub Copilot app modernization in your development environment before using the agent. For installation steps, see [Install GitHub Copilot app modernization](install.md).
 
 ## Upgrade .NET projects
 
@@ -46,7 +46,7 @@ The modernization agent supports upgrading projects coded in C#. The agent suppo
 - Class libraries
 - Console apps
 
-To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md).
+To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md).
 
 ### Upgrade paths
 
@@ -79,7 +79,7 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 ### Predefined tasks for migration
 
-Predefined tasks capture industry best practices for using Azure services. Currently, GitHub Copilot modernization for .NET offers predefined tasks that cover common migration scenarios.
+Predefined tasks capture industry best practices for using Azure services. Currently, GitHub Copilot app modernization for .NET offers predefined tasks that cover common migration scenarios.
 
 - **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
 
@@ -158,7 +158,7 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 
 ## Related content
 
-- [Install GitHub Copilot modernization](install.md)
-- [How to upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Install GitHub Copilot app modernization](install.md)
+- [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
 - [Quickstart to migrate a .NET Project](../../../azure/migration/appmod/quickstart.md)
-- [GitHub Copilot modernization FAQ](faq.yml)
+- [GitHub Copilot app modernization FAQ](faq.yml)

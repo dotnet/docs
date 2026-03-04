@@ -1,6 +1,6 @@
 ---
-title: Migrate .NET apps to Azure using GitHub Copilot app modernization in Coding Agent
-description: Overview of migrating .NET applications to Azure using GitHub Copilot app modernization in the Copilot Coding Agent.
+title: Migrate .NET apps to Azure using GitHub Copilot modernization in Coding Agent
+description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization in the Copilot Coding Agent.
 ms.author: ninpan
 ms.reviewer: jessiehuang
 ms.topic: overview
@@ -9,9 +9,9 @@ ms.custom: devx-track-dotnet
 ms.subservice: migration-copilot
 ---
 
-# Migrate .NET apps using GitHub Copilot app modernization in the Copilot Coding Agent
+# Migrate .NET apps using GitHub Copilot modernization in the Copilot Coding Agent
 
-This article shows you how to migrate .NET apps using **GitHub Copilot app modernization** in the [**Copilot Coding Agent**](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent). The agent works independently in the background to complete modernization tasks. Delegate tasks through issues or pull requests; the agent runs them in the cloud to help your team complete modernization efficiently.
+This article shows you how to migrate .NET apps using **GitHub Copilot modernization** in the [**Copilot Coding Agent**](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent). The agent works independently in the background to complete modernization tasks. Delegate tasks through issues or pull requests; the agent runs them in the cloud to help your team complete modernization efficiently.
 
 > [!NOTE]
 > Copilot Coding Agent is available with GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans. The agent is available in all GitHub repositories except those owned by managed user accounts or where it's explicitly disabled.

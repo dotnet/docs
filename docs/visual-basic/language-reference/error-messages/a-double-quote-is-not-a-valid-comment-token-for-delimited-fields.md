@@ -13,10 +13,12 @@ A quotation mark has been supplied as a comment token for the `TextFieldParser`,
 
 ## To correct this error
 
-- Set `HasFieldsEnclosedInQuotes` to `False`.
+- Remove or replace the double-quote in `TextFieldParser.CommentTokens` with a different comment token that doesn't conflict with quoted fields.
+- Set `HasFieldsEnclosedInQuotes` to `False` if your delimited file doesn't use quoted fields.
 
 ## See also
 
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes%2A>

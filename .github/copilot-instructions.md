@@ -95,3 +95,9 @@ When assigned an issue or directly given a task in GitHub:
 4. If warnings exist:
    - Click "View Details" to open the build report
    - Resolve any build warnings you introduced
+
+### New pages
+
+Include any newly created pages in the relevant toc.yml file. The exact location of this file might not be obvious, so you might need to search in which toc.yml file are files from the same directory referenced.
+
+If the new page used to be a redirect (this most often happens when a previously undocumented error is documented), remove it from the .openpublishing.redirection.fundamentals.json file.

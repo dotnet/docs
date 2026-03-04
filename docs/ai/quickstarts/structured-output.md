@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Request a response with structured output
 description: Learn how to create a chat app that responds with structured output, that is, output that conforms to a type that you specify.
-ms.date: 04/30/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Request a response with structured output
@@ -34,7 +35,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```

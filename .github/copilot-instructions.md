@@ -98,6 +98,6 @@ When assigned an issue or directly given a task in GitHub:
 
 ### New pages
 
-Include any newly created pages in the relevant toc.yml file. The exact location of this file might not be obvious, so you might need to search in which toc.yml file are files from the same directory referenced.
+Include any newly created pages in the relevant toc.yml file. The exact location of this file might not be obvious, so search for the toc.yml that already references pages from the same directory, then add the new page there.
 
-If the new page used to be a redirect (this most often happens when a previously undocumented error is documented), remove it from the .openpublishing.redirection.fundamentals.json file.
+If the new page used to be a redirect (this most often happens when a previously undocumented error is documented), remove its entry from the appropriate `.openpublishing.redirection.*.json` file (that is, from whichever redirection file currently contains that redirect).

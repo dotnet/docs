@@ -504,11 +504,11 @@ Fields:
 
 ## Collect a dump in a Docker container
 
-To collect dumps from .NET processes running in Docker containers, use either `dotnet-dump` (for privileged containers) or `dotnet-gcdump` (for non-privileged containers). For complete guidance, see [Collect diagnostics in Linux containers](diagnostics-in-containers.md).
+To collect dumps from .NET processes running in Docker containers, use either `dotnet-dump` (requires `ptrace` permissions) or `dotnet-gcdump` (no additional permissions required). For complete guidance, see [Collect diagnostics in Linux containers](diagnostics-in-containers.md).
 
-The following two tools are available depending on your container's privilege level:
+The following two tools are available depending on your container's `ptrace` permissions:
 
-- **dotnet-dump** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires a privileged container because it uses `ptrace`. To grant the necessary permissions, start the container with `--cap-add=SYS_PTRACE` or `--privileged`.
+- **dotnet-dump** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires `ptrace` capabilities in the container. A common way to grant them is to start the container with `--cap-add=SYS_PTRACE`. Depending on your environment, you might also need to adjust the container's seccomp profile. See the [Dumps: FAQ](faq-dumps.yml) for help diagnosing container security configuration issues.
 
 - **[dotnet-gcdump](dotnet-gcdump.md)** — Captures all objects on the GC heap, including their types and references to other objects, without requiring container privileges. On Windows, load the dump file in Visual Studio or PerfView for analysis.
 

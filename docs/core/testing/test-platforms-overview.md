@@ -29,7 +29,7 @@ Use the following scenarios to choose quickly.
 | Use case | Choose | Why |
 |---|---|---|
 | You need Native AOT or trimming test execution scenarios. | Microsoft.Testing.Platform | MTP supports these modern deployment scenarios, while VSTest doesn't. |
-| You're building WinUI (packaged) or UWP test projects. | VSTest | These project types aren't currently supported by MTP. |
+| You're building packaged WinUI or UWP test projects. | VSTest | These project types aren't currently supported by MTP. |
 | You need to mix .NET tests and non-.NET test adapters (for example JavaScript or C++ adapters). | VSTest | VSTest supports mixed-language adapter scenarios, while MTP is .NET-specific. |
 | You want test projects to behave like regular executables (`dotnet run`, direct executable run, `dotnet watch`, and startup-project F5 flows). | Microsoft.Testing.Platform | MTP is executable-first, so test apps run like standard .NET apps in local and CI workflows. |
 | You rely on long-established integrations across existing tooling. | VSTest | VSTest has the longest compatibility track record across existing products, tasks, and pipelines. MTP support is growing in the ecosystem, but some integrations may lag behind VSTest. |

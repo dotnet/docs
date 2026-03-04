@@ -552,7 +552,7 @@ public interface IAsyncCleanableExtension
 
 ### The CompositeExtensionFactory<T\>
 
-As outlined in the [extensions](#other-extensibility-points) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
+As outlined in the [extensions](#extensibility-points) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
 
 Each interface addresses a particular feature, and according to .NET design, you implement this interface in a specific object. You can register the extension itself using the specific registration API `AddXXX` from the `TestHost` or `TestHostController` object from the `ITestApplicationBuilder` as detailed in the corresponding sections.
 

@@ -510,7 +510,7 @@ The following two tools are available depending on your container's privilege le
 
 - **dotnet-dump** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires a privileged container because it uses `ptrace`. To grant the necessary permissions, start the container with `--cap-add=SYS_PTRACE` or `--privileged`.
 
-- **[dotnet-gcdump](dotnet-gcdump.md)** — Captures all objects on the GC heap, including their types and references to other objects, without requiring container privileges. You can load the dump file in Visual Studio for analysis.
+- **[dotnet-gcdump](dotnet-gcdump.md)** — Captures all objects on the GC heap, including their types and references to other objects, without requiring container privileges. On Windows, load the dump file in Visual Studio or PerfView for analysis.
 
 You can install these tools in a production image without the .NET SDK by using a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) to copy the tool binaries from an SDK image.
 

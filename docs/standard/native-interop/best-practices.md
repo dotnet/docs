@@ -446,7 +446,7 @@ The following table maps common symptoms to their likely cause and recommended f
 |---------|-------------|-----|
 | <xref:System.DllNotFoundException> | Library not found at runtime | Check library name, path, and platform. Use <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A> to test loading. On Linux, verify `LD_LIBRARY_PATH` or `rpath`. |
 | <xref:System.EntryPointNotFoundException> | Export name mismatch | Inspect native exports (`dumpbin /exports` on Windows, `nm -D` on Linux). Check for C++ name mangling (missing `extern "C"`). Set `EntryPoint` explicitly. |
-| <xref:System.AccessViolationException> | Signature mismatch, use-after-free, or missing pinning | Compare managed and native signatures. Check struct sizes with `Marshal.SizeOf<T>()` vs native `sizeof`. Verify memory lifetime. |
+| <xref:System.AccessViolationException> | Signature mismatch, use-after-free, or missing pinning | Compare managed and native signatures. Check struct sizes with `Marshal.SizeOf<T>()` vs native `sizeof`. Verify memory lifetime. Use a blittable signature to troubleshoot marshalling issue  |
 | Silent data corruption | Wrong type size or encoding | Add boundary logging. Compare `Marshal.SizeOf<T>()` to native `sizeof`. Test with known input/output pairs. |
 | Intermittent crashes | GC moved an unpinned object or collected a delegate | Root callback delegates for their full lifetime. Use `GCHandle` or `fixed` for pointers held across calls. |
 | Heap corruption on free | Wrong allocator | Match the allocator: never mix `malloc`/`free` with `CoTaskMemAlloc`/`CoTaskMemFree` or `Marshal.FreeHGlobal`. Use the library's own free function. |

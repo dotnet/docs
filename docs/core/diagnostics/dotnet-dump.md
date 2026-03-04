@@ -508,7 +508,7 @@ To collect dumps from .NET processes running in Docker containers, use either `d
 
 The following two tools are available depending on your container's privilege level:
 
-- **[dotnet-dump](dotnet-dump.md)** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires a privileged container because it uses `ptrace`. To grant the necessary permissions, start the container with `--cap-add=SYS_PTRACE` or `--privileged`.
+- **dotnet-dump** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires a privileged container because it uses `ptrace`. To grant the necessary permissions, start the container with `--cap-add=SYS_PTRACE` or `--privileged`.
 
 - **[dotnet-gcdump](dotnet-gcdump.md)** — Captures all objects on the GC heap, including their types and references to other objects, without requiring container privileges. You can load the dump file in Visual Studio for analysis.
 

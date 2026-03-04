@@ -1994,8 +1994,6 @@ In .NET Framework 4.5, the Managed Extensibility Framework (MEF) provides the fo
 
 - A subset of MEF that you can use when you create Windows 8.x Store apps. This subset is available as a [downloadable package](https://www.nuget.org/packages/Microsoft.Composition) from the NuGet Gallery. To install the package, open your project in Visual Studio, choose **Manage NuGet Packages** from the **Project** menu, and search online for the `Microsoft.Composition` package.
 
-For more information, see [Managed Extensibility Framework (MEF)](../mef/index.md).
-
 ### Asynchronous file operations
 
 In .NET Framework 4.5, new asynchronous features were added to the C# and Visual Basic languages. These features add a task-based model for performing asynchronous operations. To use this new model, use the asynchronous methods in the I/O classes. See [Asynchronous File I/O](../../standard/io/asynchronous-file-i-o.md).

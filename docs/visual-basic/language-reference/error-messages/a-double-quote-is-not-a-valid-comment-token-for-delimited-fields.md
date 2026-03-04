@@ -5,6 +5,7 @@ ms.date: 03/03/2026
 f1_keywords: 
   - "vbrTextFieldParser_InvalidComment"
 ms.assetid: 636d4b81-00ba-4cfd-98f7-4d57036f494d
+ai-usage: ai-assisted
 ---
 # A double quote is not a valid comment token for delimited fields where HasFieldsEnclosedInQuotes is set to True
 

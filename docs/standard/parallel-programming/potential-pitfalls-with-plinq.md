@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Potential pitfalls with PLINQ"
 title: "Potential pitfalls with PLINQ"
-ms.date: "03/30/2017"
+ms.date: "03/04/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

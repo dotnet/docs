@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ---
 # Understand tokens
 
-Large language models (LLMs) generate tokens—words, character sets, or combinations of words and punctuation—by decomposing text. Tokenization is the first step in training. The LLM analyzes the semantic relationships between tokens, such as how commonly they're used together or whether they're used in similar contexts. After training, the LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
+Large language models (LLMs) generate *tokens*, which are words, character sets, or combinations of words and punctuation, by decomposing text. Tokenization is the first step in training. The LLM analyzes the semantic relationships between tokens, such as how commonly they're used together or whether they're used in similar contexts. After training, the LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
 
 ## Turn text into tokens
 

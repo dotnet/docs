@@ -40,7 +40,7 @@ The architecture of the chat app is shown in the following diagram:
 - **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
 - **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
   - [**Azure AI Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
-  - [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Semantic Kernel](/semantic-kernel/overview/) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
+  - [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
 
 ## Cost
 
@@ -158,7 +158,7 @@ The sample repository contains all the code and configuration files you need to 
 1. When prompted, select a subscription to create the resources in.
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. If you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
-1. Wait until the app is deployed. The deployment may take up to 20 minutes to complete.
+1. Wait until the app is deployed. The deployment might take up to 20 minutes to complete.
 1. After the application deploys successfully, a URL appears in the terminal.
 1. Select that URL labeled `Deploying service web` to open the chat application in a browser.
 

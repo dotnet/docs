@@ -98,7 +98,7 @@ For more information on taking advantage of High DPI support in Windows Forms ap
 
 ### AutoScaleMode
 
-The default <xref:System.Windows.Forms.AutoScaleMode.Font?displayProperty=nameWithType> mode scales controls based on the current system font size. Font metrics can vary at different DPI levels, so Font scaling may not be linear under `SystemAware` or `PerMonitorV2` DPI awareness. This can cause discrepancies in height-to-width ratios. The <xref:System.Windows.Forms.AutoScaleMode.Dpi?displayProperty=nameWithType> mode is always linear and doesn't have this limitation.
+The default <xref:System.Windows.Forms.AutoScaleMode.Font?displayProperty=nameWithType> mode scales controls based on the current system font size. Font metrics can vary at different DPI levels, so Font scaling might not be linear when the app runs as system DPI-aware or per-monitor v2 DPI-aware (see <xref:System.Windows.Forms.HighDpiMode.SystemAware> and <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2>). This can cause discrepancies in height-to-width ratios. The <xref:System.Windows.Forms.AutoScaleMode.Dpi?displayProperty=nameWithType> mode is always linear and doesn't have this limitation.
 
 Keep in mind that certain controls—such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.Label>—always use Font scaling regardless of the `AutoScaleMode` setting. Because of these per-control differences, it's not always straightforward to determine which mode works better without knowing your specific design requirements.
 

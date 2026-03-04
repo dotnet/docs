@@ -25,12 +25,12 @@ In sequential code, it is not uncommon to read from or write to static variables
 
 ### Example: Race condition with shared memory
 
-The following example demonstrates a race condition that occurs when multiple threads write to a shared variable. The variable `total` is accessed concurrently by multiple threads without synchronization, leading to unpredictable results:
+The following example demonstrates a race condition that occurs when multiple threads write to a shared variable. The variable `total` is accessed and modified concurrently by multiple threads without synchronization, leading to unpredictable results:
 
 :::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionBad":::
 :::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionBad":::
 
-In this code, the operation `total += n` is not atomic. It involves reading the current value, adding `n`, and writing the result back. When multiple threads execute this operation simultaneously, they can read the same value, add to it, and write back results that overwrite each other. This causes some additions to be lost, producing an incorrect final result.
+In this code, the operation `total += n` is not atomic. It involves reading the current value of `total`, adding `n`, and writing the result back to `total`. When multiple threads execute this operation simultaneously, they can read the same value, add to it in different threads, and write back results that overwrite each other. This causes some additions to be lost, producing an incorrect final result.
 
 The correct approach is to use thread-safe operations that don't require shared mutable state:
 

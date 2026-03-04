@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Publish a .NET MCP server to the MCP Registry
 description: Learn how to publish your NuGet-based MCP server to the Official MCP Registry, including creating a server.json manifest, updating your package README, and using the MCP Publisher tool.
-ms.date: 11/17/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 author: joelverhagen
 zone_pivot_groups: operating-systems-set-one

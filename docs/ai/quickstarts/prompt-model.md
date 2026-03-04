@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Connect to and prompt an AI model with .NET
 description: Create a simple chat app using Microsoft.Extensions.AI to summarize a text.
-ms.date: 11/20/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Connect to and prompt an AI model

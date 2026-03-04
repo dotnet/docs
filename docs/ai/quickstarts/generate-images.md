@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Generate images using OpenAI.Images.ImageClient
 description: Create a simple app using to generate images using OpenAI.Images.ImageClient in .NET.
-ms.date: 04/09/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Generate images using OpenAI.Images.ImageClient

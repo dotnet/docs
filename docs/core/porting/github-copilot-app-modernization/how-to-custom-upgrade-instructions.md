@@ -1,9 +1,9 @@
 ---
 title: Apply custom upgrade instructions for .NET upgrades
-description: "Create and apply custom upgrade instructions with GitHub Copilot to automate .NET upgrades. Learn to write, test, and integrate instructions for consistent transformations."
+description: "Create and apply custom upgrade instructions with GitHub Copilot modernization to automate .NET upgrades. Write, test, and integrate instructions for consistent transformations."
 author: kschlobohm
 ms.topic: how-to
-ms.date: 12/12/2025
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to apply custom upgrade instructions during a .NET upgrade so that I can automate specific changes consistently.
@@ -12,19 +12,17 @@ ai-usage: ai-assisted
 
 # Apply custom upgrade instructions for .NET upgrades
 
-Custom upgrade instructions are markdown files that guide GitHub Copilot app modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or guiding how to apply a specific upgrade of an API.
+Custom upgrade instructions are markdown files that guide GitHub Copilot modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or guiding how to apply a specific upgrade of an API.
 
-This article explains how to create a custom upgrade instruction file, test it in isolation, and use it during the assessment stage of an upgrade. You learn how to structure the instruction file, verify it works correctly, and integrate it into the upgrade workflow.
+This article explains how to create a custom upgrade instruction file, test it in isolation, and use it during the assessment stage of an upgrade. You'll learn how to structure the instruction file, verify it works correctly, and integrate it into the upgrade workflow.
 
 ## Prerequisites
 
-Before you begin, ensure you have these requirements:
-
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
+Set up GitHub Copilot modernization in your development environment before creating custom instructions. For installation steps, see [Install GitHub Copilot modernization](install.md).
 
 ## Understand custom upgrade instructions
 
-GitHub Copilot app modernization retrieves custom upgrade instructions as markdown files on demand during the assessment and planning stages of an upgrade. They differ from `copilot-instructions.md` because they're:
+GitHub Copilot modernization retrieves custom upgrade instructions as markdown files on demand during the assessment and planning stages of an upgrade. They differ from `copilot-instructions.md` because they're:
 
 - Targeted to automating code and dependency changes.
 - Retrieved only when relevant to the current upgrade assessment or plan.
@@ -37,11 +35,17 @@ Structure your instruction files with:
 - Explicit step logic ("If X is found, do Y")—avoid vague language.
 - (Recommended) One or more diff examples captured from actual local edits to guide transformations.
 
+GitHub Copilot modernization is extensible through the standard skills and instructions system supported by your development environment and Copilot. Custom upgrade instructions are one part of this system. Skills let you extend the agent with extra capabilities, and instruction files (like `copilot-instructions.md`) provide global guidance to the agent.
+
 ## Create a custom upgrade instruction
 
 Follow these steps to generate and refine a new instruction file. These sections focus on replacing `Newtonsoft.Json` with `System.Text.Json` to explain this feature with an example.
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+
+   > [!NOTE]
+   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+
 1. In the chat, type: `I want to generate a custom upgrade instruction`.
 1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.
 1. When Copilot creates the new file, such as `replace_newtonsoft_with_system_text_json.md`, review the content and refine it in chat. For example, ask Copilot to "clarify detection criteria" or "add a prerequisite section."
@@ -68,7 +72,7 @@ Follow these guidelines to write clear, effective custom upgrade instructions th
 
 Before running the instruction during an upgrade, validate it in isolation. This fast inner loop helps you refine detection and validate the code changes.
 
-1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+1. In Visual Studio, in the **Solution Explorer** window, right-click the **solution** > **Modernize**. In VS Code and other environments, invoke the `modernize-dotnet` agent from the Copilot chat panel.
 1. In chat, invoke the instruction by using wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
 1. Confirm in the chat window that Copilot retrieved the instruction file:
 
@@ -94,7 +98,7 @@ If the test run doesn't produce the expected results, use these troubleshooting 
 
 Use these steps to incorporate an existing custom upgrade instruction into the assessment stage of an upgrade.
 
-1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+1. In Visual Studio, in the **Solution Explorer** window, right-click the **solution** > **Modernize**. In VS Code and other environments, invoke the `modernize-dotnet` agent from the Copilot chat panel.
 1. In the chat, choose `Upgrade to a newer version of .NET`. Answer Copilot's questions until it begins the assessment.
 1. Monitor the chat to see if Copilot automatically retrieves your custom instruction file during the assessment. You should see a message indicating it opened the markdown instruction file.
 
@@ -137,6 +141,7 @@ If you create temporary instruction files for experimentation, remove or consoli
 
 ## Related content
 
-- [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
-- [GitHub Copilot app modernization FAQ](faq.yml)
-- [What is GitHub Copilot app modernization](overview.md)
+- [How to upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [GitHub Copilot modernization FAQ](faq.yml)
+- [What is GitHub Copilot modernization](overview.md)
+- [Install GitHub Copilot modernization](install.md)

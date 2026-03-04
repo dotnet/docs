@@ -48,7 +48,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1026][1026] | C# language version not supported by the logging source generator. |
 | [SYSLIB1027][1027] | Primary constructor parameter of type `Microsoft.Extensions.Logging.ILogger` is hidden by a field |
 | [SYSLIB1028][1028] | Logging method argument uses unsupported `params` or `scoped` parameter modifier |
-| [SYSLIB1029][1029] | Logging method parameter is a ref struct |
+| [SYSLIB1029][1029] | Logging method parameter is a `ref struct` |
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |
 | [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |

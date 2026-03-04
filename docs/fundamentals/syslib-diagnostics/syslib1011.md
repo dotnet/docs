@@ -8,7 +8,7 @@ f1_keywords:
 
 # SYSLIB1011: Logging methods cannot use the `allows ref struct` constraint
 
-A method annotated with `LoggerMessageAttribute` uses the C# 13 `allows ref struct` anti-constraint on a type parameter. The logging source generator stores parameters in struct fields, so it can't hold ref struct type arguments.
+A method annotated with `LoggerMessageAttribute` uses the C# 13 `allows ref struct` anti-constraint on a type parameter. The logging source generator stores parameters in struct fields, so it can't hold `ref struct` type arguments.
 
 ## Workarounds
 

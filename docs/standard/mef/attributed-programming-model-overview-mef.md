@@ -1,7 +1,7 @@
 ---
 title: "Attributed programming model overview (MEF)"
 description: Get started with the attributed programming model, which is the default programming model for the Managed Extensibility Framework (MEF) in .NET.
-ms.date: 06/09/2021
+ms.date: 03/03/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,13 +9,14 @@ helpviewer_keywords:
   - "MEF, attributed programming model"
   - "attributed programming model [MEF]"
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
+ai-usage: ai-assisted
 ---
 
 # Attributed programming model overview (MEF)
 
 In the Managed Extensibility Framework (MEF), a *programming model* is a particular method of defining the set of conceptual objects on which MEF operates. These conceptual objects include parts, imports, and exports. MEF uses these objects, but does not specify how they should be represented. Therefore, a wide variety of programming models are possible, including customized programming models.
 
-The default programming model used in MEF is the *attributed programming model*. In the attributed programming model parts, imports, exports, and other objects are defined with attributes that decorate ordinary .NET Framework classes. This topic explains how to use the attributes provided by the attributed programming model to create a MEF application.
+The default programming model used in MEF is the *attributed programming model*. In the attributed programming model parts, imports, exports, and other objects are defined with attributes that decorate ordinary .NET classes. This article explains how to use the attributes provided by the attributed programming model to create a MEF application.
 
 <a name="import_and_export_basics"></a>
 
@@ -970,7 +971,7 @@ public class PartSeven
 
 Because parts are hosted in the composition container, their life cycle can be more complex than ordinary objects. Parts can implement two important life cycle-related interfaces: `IDisposable` and `IPartImportsSatisfiedNotification`.
 
-Parts that require work to be performed at shut down or that need to release resources should implement `IDisposable`, as usual for .NET Framework objects. However, since the container creates and maintains references to parts, only the container that owns a part should call the `Dispose` method on it. The container itself implements `IDisposable`, and as portion of its cleanup in `Dispose` it will call `Dispose` on all the parts that it owns. For this reason, you should always dispose the composition container when it and any parts it owns are no longer needed.
+Parts that require work to be performed at shut down or that need to release resources should implement `IDisposable`, as usual for .NET objects. However, since the container creates and maintains references to parts, only the container that owns a part should call the `Dispose` method on it. The container itself implements `IDisposable`, and as portion of its cleanup in `Dispose` it will call `Dispose` on all the parts that it owns. For this reason, you should always dispose the composition container when it and any parts it owns are no longer needed.
 
 For long-lived composition containers, memory consumption by parts with a creation policy of non-shared can become a problem. These non-shared parts can be created multiple times and will not be disposed until the container itself is disposed. To deal with this, the container provides the `ReleaseExport` method. Calling this method on a non-shared export removes that export from the composition container and disposes it. Parts that are used only by the removed export, and so on down the tree, are also removed and disposed. In this way, resources can be reclaimed without disposing the composition container itself.
 

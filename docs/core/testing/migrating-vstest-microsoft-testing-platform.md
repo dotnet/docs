@@ -222,8 +222,8 @@ If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest
 
 If a test assembly ran zero tests, VSTest tolerates that and exits with success. However, Microsoft.Testing.Platform will fail with exit code 8. There are multiple ways to work around this:
 
-1. Pass `--ignore-exit-code 8` when running your tests.
-2. If you want to ignore that exit code for a specific test project, add the following in the project file:
+- Pass `--ignore-exit-code 8` when running your tests.
+- If you want to ignore that exit code for a specific test project, add the following in the project file:
 
   ```xml
   <PropertyGroup>
@@ -231,7 +231,7 @@ If a test assembly ran zero tests, VSTest tolerates that and exits with success.
   </PropertyGroup>
   ```
 
-3. Use the `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable.
+- Use the `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable.
 
 ### Console.InputEncoding preservation
 

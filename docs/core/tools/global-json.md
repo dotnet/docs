@@ -2,7 +2,7 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 03/05/2026
 ms.custom: "updateeachrelease"
 ai-usage: ai-assisted
 ---
@@ -23,7 +23,10 @@ If you always want to use the latest SDK version that is installed on your machi
 }
 ```
 
-The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its ancestor directories.
+Two components within the .NET SDK search for a *global.json* file, each starting from a different location and searching up through ancestor directories:
+
+- **The .NET SDK muxer** (which handles `dotnet` CLI commands) starts from the current working directory, which isn't necessarily the same as the project directory.
+- **The .NET MSBuild project SDK resolver** (which resolves project SDKs during builds) starts from the directory that contains a solution file, if one is available. If no solution file is present, it starts from the directory that contains the current project file. If neither is available, it falls back to the current working directory.
 
 For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 

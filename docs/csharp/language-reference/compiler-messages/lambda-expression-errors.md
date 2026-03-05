@@ -27,9 +27,12 @@ f1_keywords:
   - "CS1706"
   - "CS1731" # ERR_CantConvAnonMethReturnsNoDelegate (not used in Roslyn): Cannot convert expression to delegate because some of the return types in the block are not implicitly convertible to the delegate return type.
   - "CS1732" # ERR_ParameterExpected (not used in Roslyn): Expected parameter.
+  - "CS1764" # ERR_FixedLocalInLambda: Cannot use fixed local '{0}' inside an anonymous method, lambda expression, or query expression.
   - "CS1911" # WRN_BaseAccessInClosureError: Access to member through 'base' keyword from anonymous method, lambda expression, query expression, or iterator results in unverifiable code.
   - "CS8030"
   - "CS8175"
+  - "CS8820" # ERR_StaticAnonymousFunctionCannotCaptureVariable: A static anonymous function cannot contain a reference to '{0}'.
+  - "CS8821" # ERR_StaticAnonymousFunctionCannotCaptureThis: A static anonymous function cannot contain a reference to 'this' or 'base'.
   - "CS8916"
   - "CS8917" # ERR_CannotInferDelegateType: The delegate type could not be inferred.
   - "CS8934" # ERR_CantConvAnonMethReturnType: Cannot convert {0} to type '{1}' because the return type does not match the delegate return type.
@@ -66,9 +69,12 @@ helpviewer_keywords:
   - "CS1706"
   - "CS1731"
   - "CS1732"
+  - "CS1764"
   - "CS1911"
   - "CS8030"
   - "CS8175"
+  - "CS8820"
+  - "CS8821"
   - "CS8916"
   - "CS8917"
   - "CS8934"
@@ -111,8 +117,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1706**](#syntax-limitations-in-lambda-expressions): *Expression cannot contain anonymous methods or lambda expressions.*
 - [**CS1731**](#lambda-expression-parameters-and-returns): *Cannot convert expression to delegate because some of the return types in the block are not implicitly convertible to the delegate return type.*
 - [**CS1732**](#lambda-expression-parameters-and-returns): *Expected parameter.*
+- [**CS1764**](#syntax-limitations-in-lambda-expressions): *Cannot use fixed local inside an anonymous method, lambda expression, or query expression.*
 - [**CS8030**](#syntax-limitations-in-lambda-expressions): *Anonymous function converted to a void returning delegate cannot return a value.*
 - [**CS8175**](#syntax-limitations-in-lambda-expressions): *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
+- [**CS8820**](#syntax-limitations-in-lambda-expressions): *A static anonymous function cannot contain a reference to 'variable'.*
+- [**CS8821**](#syntax-limitations-in-lambda-expressions): *A static anonymous function cannot contain a reference to 'this' or 'base'.*
 - [**CS8916**](#lambda-expression-parameters-and-returns): *Attributes on lambda expressions require a parenthesized parameter list.*
 - [**CS8917**](#lambda-expression-delegate-type): *The delegate type could not be inferred.*
 - [**CS8934**](#lambda-expression-parameters-and-returns): *Cannot convert anonymous method to type 'type' because the return type does not match the delegate return type.*
@@ -143,17 +152,26 @@ Some C# syntax is prohibited in lambda expressions and anonymous methods. Using 
 - **CS1632**: *Control cannot leave the body of an anonymous method or lambda expression.*
 - **CS1673**: *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of `this`.*
 - **CS1686**: *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
+- **CS1764**: *Cannot use fixed local inside an anonymous method, lambda expression, or query expression.*
 - **CS8175**: *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
+- **CS8820**: *A static anonymous function cannot contain a reference to 'variable'.*
+- **CS8821**: *A static anonymous function cannot contain a reference to 'this' or 'base'.*
 
 All the following constructs are disallowed in lambda expressions:
 
 - `yield` statements (`yield return` or `yield break`)
 - Calling a method that has an `in`, `ref`, or `out` parameter
 - `ref` local variables
+- `fixed` local variables
 - `break`, `goto`, and `continue` statements
 - `this` access when `this` is a `struct` type
 - Anonymous methods or lambda expressions inside another expression, such as an Attribute constructor.
 - Lambda expressions, anonymous methods, and method groups as the first operand of `is` or `as`.
+
+In addition, a `static` anonymous function or lambda expression can't capture local variables, parameters, `this`, or `base`:
+
+- **CS8820**: *A static anonymous function cannot contain a reference to 'variable'.*
+- **CS8821**: *A static anonymous function cannot contain a reference to 'this' or 'base'.*
 
 You can't use any of these constructs in a lambda expression or an anonymous method. Many are allowed in a [local function](../../programming-guide/classes-and-structs/local-functions.md).
 

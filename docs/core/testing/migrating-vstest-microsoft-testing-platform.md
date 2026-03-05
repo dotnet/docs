@@ -250,3 +250,9 @@ If you have a test that starts yet another child process and redirects its stand
 - The child process is started with non-UTF8 encoding. This can also happen if your own test also sets `CreateNoWindow = true`.
 
 This is especially problematic when the child process doesn't expect to see the UTF8 BOM (Byte-Order-Mark) byte, which it might get in the above scenario on .NET Framework.
+
+As this behavior difference is likely to be problematic specifically for the BOM byte, a workaround is to set InputEncoding during assembly initialization to UTF8 without BOM:
+
+```csharp
+Console.InputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+```

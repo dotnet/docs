@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # Preprocessor directives
 
-C# preprocessor directives are instructions to the compiler that affect compilation without changing your program's run-time behavior. They always start with `#` and must be the only instruction on a line. While the [language reference](../../language-reference/preprocessor-directives.md) documents all available directives, four groups cover the vast majority of everyday use:
+C# preprocessor directives tell the compiler what code to include, exclude, or treat differently when it builds your app, which can change the resulting program's run-time behavior. They always start with `#` and must appear as a directive on their own line (ignoring leading whitespace), although you can add a trailing comment after the directive. While the [language reference](../../language-reference/preprocessor-directives.md) documents all available directives, four groups cover the vast majority of everyday use:
 
 - **Conditional compilation** (`#if` / `#elif` / `#else` / `#endif`) — include or exclude code based on build configuration or target framework.
 - **Regions** (`#region` / `#endregion`) — mark collapsible sections in your editor.

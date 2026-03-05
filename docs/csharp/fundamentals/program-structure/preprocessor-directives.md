@@ -25,13 +25,13 @@ Use `#if`, `#elif`, `#else`, and `#endif` to include or exclude code based on wh
 
 :::code language="csharp" source="snippets/preprocessor-directives/Program.cs" id="ConditionalCompilation":::
 
-The `DEBUG` symbol is defined when you build in the Debug configuration. You don't need to define it yourself—the build system handles it. Target framework symbols like `NET10_0_OR_GREATER` and `NET8_0_OR_GREATER` let you write code that adapts to different .NET versions in multi-targeting projects.
+The build system defines the `DEBUG` symbol when you build in the Debug configuration. You don't need to define it yourself. Target framework symbols like `NET10_0_OR_GREATER` and `NET8_0_OR_GREATER` let you write code that adapts to different .NET versions in multi-targeting projects.
 
-You can combine symbols with logical operators—`&&` (and), `||` (or), and `!` (not):
+You can combine symbols with logical operators: `&&` (and), `||` (or), and `!` (not):
 
 :::code language="csharp" source="snippets/preprocessor-directives/Program.cs" id="CombinedConditions":::
 
-Use `#define` at the top of a file to define your own symbols. You can also define symbols project-wide with the `DefineConstants` property in your project file.
+Use `#define` at the top of a file to define your own symbols. You can also define symbols for the entire project by using the [`DefineConstants`](../../language-reference/compiler-options/language.md#defineconstants) property in your project file.
 
 ## Regions
 
@@ -39,11 +39,11 @@ Use `#region` and `#endregion` to mark collapsible sections of code in your edit
 
 :::code language="csharp" source="snippets/preprocessor-directives/Regions.cs" id="RegionExample":::
 
-Regions can group related members. For example, Regions can define members of an interface when a type implements multiple interfaces. 
+Use regions to group related members. For example, you might use regions to define members of an interface when a type implements multiple interfaces.
 
 ## Nullable context
 
-The `#nullable` directive controls nullable reference type analysis within a file. While you typically enable nullable analysis project-wide in your `.csproj` file with `<Nullable>enable</Nullable>`, the `#nullable` directive lets you fine-tune the setting for specific sections of code:
+The `#nullable` directive controls nullable reference type analysis within a file. While you typically enable nullable analysis project-wide in your `.csproj` file by using `<Nullable>enable</Nullable>`, use the `#nullable` directive to fine-tune the setting for specific sections of code:
 
 :::code language="csharp" source="snippets/preprocessor-directives/NullableContext.cs" id="NullableDirective":::
 
@@ -62,11 +62,11 @@ Use `#pragma warning disable` to suppress specific compiler warnings, and `#prag
 :::code language="csharp" source="snippets/preprocessor-directives/PragmaWarning.cs" id="PragmaWarning":::
 
 > [!TIP]
-> Always specify the warning number (like `CS0168`) rather than disabling all warnings. This keeps the suppression targeted and makes it clear *why* a warning is being suppressed.
+> Always specify the warning number, such as `CS0168`, rather than disabling all warnings. This approach keeps the suppression targeted and makes it clear *why* a warning is being suppressed.
 
 ## File-based app directives
 
-Beginning with C# 14, [file-based apps](index.md) use two additional directives:
+Starting with C# 14, [file-based apps](index.md) use two additional directives:
 
 - `#!` — the *shebang* line that lets Unix shells run the file directly (for example, `#!/usr/bin/env dotnet run`).
 - `#:` — build-system directives that configure packages, SDK settings, and other options for single-file programs.

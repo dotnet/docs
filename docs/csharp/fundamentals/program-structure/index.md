@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # General structure of a C# program
 
-A C# program is built from a few core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time. The way you structure the entry point—where your program starts running—depends on which application style you choose.
+You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time. The way you structure the entry point - where your program starts running - depends on which application style you choose.
 
 The following example shows a modern C# program that uses [file-scoped namespaces](namespaces.md), [top-level statements](top-level-statements.md), and everyday C# features:
 
@@ -18,7 +18,7 @@ This example uses *top-level statements* for the program's entry point. Only one
 
 ## Choosing your application style
 
-When you create a C# program, you make two independent choices about how to structure it:
+When you create a C# program, make two independent choices about how to structure it:
 
 1. **File-based or project-based?** A file-based app runs from a single `.cs` file with no project file. A project-based app uses a `.csproj` file and can span multiple source files.
 1. **Top-level statements or `Main` method?** Top-level statements let you write executable code directly at the top of a file. A `Main` method wraps the entry point in an explicit static method.
@@ -27,7 +27,7 @@ Both project-based apps and file-based apps support either entry-point style.
 
 ### File-based apps vs. project-based apps
 
-Beginning with C# 14 and .NET 10, *file-based apps* let you run a program contained in a single `*.cs` file without a project file. Store the following code in a file named `hello-world.cs` and run it with `dotnet run hello-world.cs`:
+Starting with C# 14 and .NET 10, *file-based apps* let you run a program contained in a single `*.cs` file without a project file. Store the following code in a file named `hello-world.cs` and run it with `dotnet run hello-world.cs`:
 
 :::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
 
@@ -39,11 +39,11 @@ The `#!` line enables Unix shells to run the file directly. On any Unix system, 
 
 File-based apps support all C# syntax and can use [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) to configure the build system. Use file-based apps for small command-line utilities, prototypes, and experiments.
 
-*Project-based apps* use a `.csproj` file and the [.NET CLI commands](../../../core/tools/index.md) `dotnet new`, `dotnet build`, and `dotnet run` workflow. Choose project-based apps when your program spans multiple files, or needs fine-grained build configuration.
+*Project-based apps* use a `.csproj` file and the [.NET CLI commands](../../../core/tools/index.md) `dotnet new`, `dotnet build`, and `dotnet run` workflow. Choose project-based apps when your program spans multiple files or needs fine-grained build configuration.
 
 ### Top-level statements vs. `Main` method
 
-[Top-level statements](top-level-statements.md) let you write executable code directly in one file, without wrapping it in a class and `Main` method. This is the default style when you create a new console app with `dotnet new console`. The first code example on this page uses this style.
+[Top-level statements](top-level-statements.md) let you write executable code directly in one file, without wrapping it in a class and `Main` method. This style is the default when you create a new console app with `dotnet new console`. The first code example in this article uses this style.
 
 You can also define an explicit static [`Main`](main-command-line.md) method as the program's entry point:
 
@@ -55,13 +55,13 @@ Either entry-point style works with both file-based and project-based apps. Both
 
 C# is a *compiled* language. For project-based apps, use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile source files into a binary package and [`dotnet run`](../../../core/tools/dotnet-run.md) to build and run in one step. The `dotnet` CLI, included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to create, build, and manage C# projects.
 
-For file-based apps, `dotnet run hello-world.cs` compiles and runs the single file directly—no project file required.
+For file-based apps, `dotnet run hello-world.cs` compiles and runs the single file directly - no project file required.
 
 ## Expressions and statements
 
-C# programs are built from *expressions* and *statements*.
+C# programs use *expressions* and *statements*.
 
-An *expression* evaluates to a single value. The following are expressions:
+An *expression* produces a single value. The following are expressions:
 
 - `42` (literal value)
 - `x + y` (arithmetic operation)
@@ -84,12 +84,12 @@ For detailed information about statements, see [Statements](../../programming-gu
 
 Learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
 
-- [Classes](../types/classes.md)
-- [Structs](../../language-reference/builtin-types/struct.md)
-- [Namespaces](namespaces.md)
-- [Interfaces](../types/interfaces.md)
-- [Enums](../../language-reference/builtin-types/enum.md)
-- [Delegates](../../delegates-overview.md)
+- [Classes](../types/classes.md).
+- [Structs](../../language-reference/builtin-types/struct.md).
+- [Namespaces](namespaces.md).
+- [Interfaces](../types/interfaces.md).
+- [Enums](../../language-reference/builtin-types/enum.md).
+- [Delegates](../../delegates-overview.md).
 
 ## C# language specification
 

@@ -15,9 +15,9 @@ As a C# application grows, you need a clear strategy for organizing code. .NET p
 
 ## The organizational hierarchy
 
-A typical .NET application is organized in layers, from broadest to most specific:
+Organize a typical .NET application in layers, from broadest to most specific:
 
-| Level | What it is | Example |
+| Level | Description | Example |
 |---|---|---|
 | **Solution** | A container that groups related projects | `MyApp.slnx` |
 | **Project** | A build unit that produces one assembly | `MyApp.Web.csproj` |
@@ -25,7 +25,7 @@ A typical .NET application is organized in layers, from broadest to most specifi
 | **Namespace** | A logical grouping of types | `MyApp.Web.Controllers` |
 | **Type** | A class, struct, interface, enum, or delegate | `OrderController` |
 
-Each level serves a different purpose. Solutions organize your development workflow. Projects define what gets compiled together, and each project produces one assembly. Assemblies are the unit of deployment and versioning. Namespaces prevent naming collisions and make types discoverable—a single assembly can contain multiple namespaces, and a single namespace can span multiple assemblies. Types define the actual behavior and data.
+Each level serves a different purpose. Solutions organize your development workflow. Projects define what gets compiled together, and each project produces one assembly. Assemblies are the unit of deployment and versioning. Namespaces prevent naming collisions and make types easy to find. A single assembly can contain multiple namespaces, and a single namespace can span multiple assemblies. Types define the actual behavior and data.
 
 ## Projects and assemblies
 
@@ -39,7 +39,7 @@ The following project structure demonstrates a common pattern:
 
 :::code language="csharp" source="snippets/organizing-programs/AppDemo.cs" id="ProjectStructure":::
 
-Create and reference projects with the `dotnet` CLI:
+Create and reference projects by using the `dotnet` CLI:
 
 ```dotnetcli
 dotnet new classlib -n MyApp.Core
@@ -53,7 +53,7 @@ By convention, namespace names follow the folder structure of your project. This
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 
-The .NET SDK supports this convention automatically. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file: but following the convention makes source easier to find.
+The .NET SDK supports this convention automatically. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file. However, following the convention makes source easier to find.
 
 ## Choosing how to split namespaces
 
@@ -61,24 +61,24 @@ Group related types into namespaces by feature or responsibility, not by type ki
 
 :::code language="csharp" source="snippets/organizing-programs/Payments.cs" id="FeatureOrganization":::
 
-Over grouping by type kind (like putting all interfaces in a `MyApp.Interfaces`). Feature-based organization keeps related types together, making the code easier to navigate and understand.
+Avoid grouping by type kind, such as putting all interfaces in a `MyApp.Interfaces` namespace. Feature-based organization keeps related types together, so it's easier to navigate and understand the code.
 
 ## Access modifiers and assemblies
 
-Access modifiers interact with the project/assembly structure to control accessibility:
+Access modifiers work with the project and assembly structure to control accessibility:
 
-- [`public`](../../language-reference/keywords/public.md) — accessible from any assembly that references this one.
+- [`public`](../../language-reference/keywords/public.md) — accessible from any assembly that references this assembly.
 - [`internal`](../../language-reference/keywords/internal.md) — accessible only within the same assembly (the default for top-level types).
 - [`private`](../../language-reference/keywords/private.md), [`protected`](../../language-reference/keywords/protected.md), [`private protected`](../../language-reference/keywords/private-protected.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) — accessible based on the containing type, the assembly, or derived types.
 
-Use `internal` to hide implementation details that other projects shouldn't depend on. This is especially useful for shared libraries:
+Use `internal` to hide implementation details that other projects shouldn't depend on. This modifier is especially useful for shared libraries:
 
 :::code language="csharp" source="snippets/organizing-programs/Inventory.cs" id="AccessModifiers":::
 
 ## Practical tips
 
 - **Start simple.** A single project works well for small applications. Split into multiple projects only when you have a clear reason.
-- **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern—for example, `Contoso.Inventory.Shipping`.
+- **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern. For example, use `Contoso.Inventory.Shipping`.
 - **Keep projects focused.** Each project should have a clear responsibility. If a project does too many unrelated things, consider splitting it.
 - **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax reduces nesting and is the recommended style for new code.
 - **Leverage `global using` directives.** Place common imports in a `GlobalUsings.cs` file to reduce repetition across files. For more information, see [Namespaces and using directives](namespaces.md).
@@ -87,4 +87,4 @@ Use `internal` to hide implementation details that other projects shouldn't depe
 
 - [Namespaces and using directives](namespaces.md) — declare namespaces, import types with `using`, and configure global usings.
 - [Assemblies in .NET](../../../standard/assembly/index.md) — learn about assemblies, versioning, and deployment.
-- [.NET project SDKs](../../../core/project-sdk/overview.md) — project file settings including `RootNamespace` and `ImplicitUsings`.
+- [.NET project SDKs](../../../core/project-sdk/overview.md) — view project file settings including `RootNamespace` and `ImplicitUsings`.

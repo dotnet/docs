@@ -1,6 +1,8 @@
 ---
-title: Lambda expression warnings
+title: Lambda expression errors and warnings
+ai-usage: ai-assisted
 description: This article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
+ai-usage: ai-assisted
 f1_keywords:
   - "CS0407" # ERR_BadRetType: '{1} {0}' has the wrong return type.
   - "CS0428" # ERR_MethGrpToNonDel: Cannot convert method group '{0}' to non-delegate type '{1}'. Did you intend to invoke the method?
@@ -164,7 +166,7 @@ The compiler prohibits certain C# constructs inside [lambda expressions](../oper
 You can correct these errors by using the following guidance:
 
 - Move any [`yield return` or `yield break`](../statements/yield.md) statement out of the lambda body and into the enclosing [iterator method](../statements/yield.md), or convert the lambda to a [local function](../../programming-guide/classes-and-structs/local-functions.md), which supports `yield` statements (**CS1621**).
-- Avoid passing [`in`, `ref`, or `out`](../keywords/method-parameters.md) parameters from the enclosing method into the lambda body. Because the compiler captures these parameters as part of a [closure](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions), the reference semantics of `ref`-like parameters can't be preserved. Copy the value to a local variable and use that local instead, or convert the lambda to a local function (**CS1628**).
+- Avoid referencing [`in`, `ref`, or `out`](../keywords/method-parameters.md) parameters from the enclosing method inside the lambda body. When the lambda captures these parameters as part of a [closure](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions), the reference semantics of `ref`-like parameters can't be preserved. Copy the value to a local variable and use that local instead, or convert the lambda to a local function (**CS1628**).
 - Remove any `break`, `goto`, or `continue` statement that transfers control out of the lambda body. Control flow statements must target labels or loops within the same lambda body (**CS1632**).
 - In a `struct` type, avoid referencing instance members through `this` inside a lambda expression, anonymous method, or query expression. Because the compiler captures `this` by value in a `struct`, mutations inside the lambda don't affect the original instance. Extract the needed member values into local variables before the lambda, or convert to a local function, which can access `this` directly (**CS1673**).
 - Don't take the address of a local variable that the lambda also captures. The compiler moves captured variables to a heap-allocated closure object, making their address unstable. Separate the address-taking logic from the lambda, or use a local function instead (**CS1686**).

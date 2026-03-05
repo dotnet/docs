@@ -90,10 +90,10 @@ ms.date: 03/05/2026
 # Errors and warnings when using lambda expressions and anonymous functions
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
-There are several *errors* related to declaring and using [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md):
+Several *errors* relate to declaring and using [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md):
 
 - [**CS0407**](#lambda-expression-delegate-type): *'method' has the wrong return type.*
 - [**CS0428**](#lambda-expression-delegate-type): *Cannot convert method group 'Identifier' to non-delegate type 'type'. Did you intend to invoke the method?*
@@ -129,7 +129,7 @@ There are several *errors* related to declaring and using [lambda expressions](.
 - [**CS8975**](#lambda-expression-parameters-and-returns): *The contextual keyword `var` cannot be used as an explicit lambda return type.*
 - [**CS9098**](#lambda-expression-parameters-and-returns): *Implicitly typed lambda parameter '...' cannot have a default value.*
 
-In addition, there are several *warnings* related to declaring and using lambda expressions:
+In addition, several *warnings* relate to declaring and using lambda expressions:
 
 - [**CS0467**](#lambda-expression-delegate-type): *Ambiguity between method 'method' and non-method 'non-method'. Using method group.*
 - [**CS1911**](#syntax-limitations-in-lambda-expressions): *Access to member through a 'base' keyword from an anonymous method, lambda expression, query expression, or iterator results in unverifiable code.*
@@ -161,7 +161,7 @@ The compiler also produces the following *informational* message:
 
 The compiler prohibits certain C# constructs inside [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md). These restrictions exist because the compiler transforms lambdas and anonymous methods into [delegate](../../programming-guide/delegates/index.md) invocations or [expression trees](../../advanced-topics/expression-trees/index.md), and some constructs can't be represented in those forms. For more information, see the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the C# specification.
 
-You can correct these errors using the following guidance:
+You can correct these errors by using the following guidance:
 
 - Move any [`yield return` or `yield break`](../statements/yield.md) statement out of the lambda body and into the enclosing [iterator method](../statements/yield.md), or convert the lambda to a [local function](../../programming-guide/classes-and-structs/local-functions.md), which supports `yield` statements (**CS1621**).
 - Avoid passing [`in`, `ref`, or `out`](../keywords/method-parameters.md) parameters from the enclosing method into the lambda body. Because the compiler captures these parameters as part of a [closure](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions), the reference semantics of `ref`-like parameters can't be preserved. Copy the value to a local variable and use that local instead, or convert the lambda to a local function (**CS1628**).
@@ -201,13 +201,13 @@ These errors indicate a problem with a [lambda expression parameter](../operator
 > [!NOTE]
 > **CS1731** and **CS1732** are no longer produced by the current version of the C# compiler (Roslyn). They might appear if you're using an older compiler version.
 
-You can correct these errors using the following guidance:
+You can correct these errors by using the following guidance:
 
 - Ensure that all parameters in a lambda expression use the same typing style. When a lambda has multiple parameters, each parameter must be either [explicitly typed](../operators/lambda-expressions.md#explicitly-typed-parameters) or implicitly typed—you can't mix the two styles in the same parameter list (**CS0748**).
 - Add explicit types to any lambda parameter that has a [default value](../operators/lambda-expressions.md#defaults). The compiler requires explicit types on parameters with defaults because it must generate a custom delegate type that encodes the default value. Implicitly typed parameters don't provide enough information for the compiler to construct that delegate type (**CS1065**, **CS9098**).
-- Remove default parameter values from anonymous methods declared with the [`delegate` operator](../operators/delegate-operator.md). Default parameter values are supported only in lambda expressions, not in anonymous methods. Convert the anonymous method to a lambda expression if you need default values (**CS1065**).
+- Remove default parameter values from anonymous methods declared by using the [`delegate` operator](../operators/delegate-operator.md). Default parameter values are supported only in lambda expressions, not in anonymous methods. Convert the anonymous method to a lambda expression if you need default values (**CS1065**).
 - Match the parameter types, `ref`/`out`/`in` modifiers, and parameter count of the lambda or anonymous method to the target [delegate type](../../programming-guide/delegates/index.md). The compiler performs an exact match of parameter signatures when converting an anonymous function to a delegate: each parameter must have the correct type, and any `ref`, `out`, or `in` modifier must be present exactly when the delegate expects it (**CS1661**, **CS1676**, **CS1677**, **CS1678**).
-- Add a parameter list to the anonymous method when the target delegate type has `out` parameters. An anonymous method declared without a parameter list (using `delegate { }` syntax) can match most delegate types, but the compiler can't synthesize the required `out` parameters implicitly. Declare the parameters explicitly to match the delegate signature (**CS1688**).
+- Add a parameter list to the anonymous method when the target delegate type has `out` parameters. An anonymous method declared without a parameter list (by using `delegate { }` syntax) can match most delegate types, but the compiler can't synthesize the required `out` parameters implicitly. Declare the parameters explicitly to match the delegate signature (**CS1688**).
 - Ensure that all code paths in the lambda or anonymous method return a value when the target delegate type has a non-void return type. Every branch through the body must produce a return value that's implicitly convertible to the delegate's return type (**CS1643**, **CS1662**, **CS1731**, **CS8934**).
 - Remove any `return` statement with a value from a lambda or anonymous method that's assigned to a `void`-returning delegate type such as `Action`. Because the delegate's return type is `void`, the body can't return a value (**CS8030**).
 - Enclose the parameter list in parentheses when [attributes](../operators/lambda-expressions.md#attributes) are applied to any lambda parameter. The compiler needs the parenthesized form to distinguish attribute syntax from other expressions. For example, write `([MyAttribute] int x) => x` instead of `[MyAttribute] x => x` (**CS8916**).
@@ -230,9 +230,9 @@ You can correct these errors using the following guidance:
 These errors indicate a problem with the [delegate type](../../programming-guide/delegates/index.md) that the compiler infers or expects for a [lambda expression](../operators/lambda-expressions.md), [anonymous method](../operators/delegate-operator.md), or [method group](~/_csharpstandard/standard/conversions.md#108-method-group-conversions). For the full rules on delegate conversions, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the C# specification.
 
 > [!NOTE]
-> **CS0467** is no longer produced by the current version of the C# compiler (Roslyn). It might appear if you're using an older compiler version.
+> The current version of the C# compiler (Roslyn) doesn't produce **CS0467**. You might see this error if you're using an older compiler version.
 
-You can correct these errors using the following guidance:
+You can correct these errors by using the following guidance:
 
 - Ensure that the target type of the assignment or conversion is a [delegate type](../../programming-guide/delegates/index.md) or `System.Expression`. A lambda expression or anonymous method can't be assigned to a non-delegate type such as `object` or an interface. Change the variable's type to a compatible delegate type like `Func<>` or `Action<>`, or use `var` to let the compiler infer the delegate type (**CS1660**).
 - Provide enough context for the compiler to determine a single delegate type for the lambda expression. When assigned to `var`, the compiler needs an unambiguous return type and parameter list. When assigned to an anonymous type property, the compiler can't infer a delegate type at all. Assign the lambda to a variable with an explicit delegate type, then use that variable in the anonymous type initializer (**CS0815**, **CS0828**, **CS8917**).

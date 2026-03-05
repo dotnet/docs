@@ -1,6 +1,5 @@
 ---
 title: Lambda expression errors and warnings
-ai-usage: ai-assisted
 description: This article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
 ai-usage: ai-assisted
 f1_keywords:

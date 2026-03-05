@@ -15,7 +15,7 @@ This example demonstrates how to create multicast delegates. A useful property o
 
 > [!NOTE]
 >
-> You can add the same delegate to a multicast delegate multiple times. When you call the multicast delegate, it invokes all the delegates in the list, including duplicates.
+> You can add the same delegate to a multicast delegate multiple times. When you call the multicast delegate, it invokes all the delegates in the list, including duplicates. When you remove a delegate from a multicast delegate, it removes the rightmost matching entry, so only one instance is removed if there are multiple copies.
 
 ## See also
 

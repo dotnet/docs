@@ -39,7 +39,7 @@ Use `#region` and `#endregion` to mark collapsible sections of code in your edit
 
 :::code language="csharp" source="snippets/preprocessor-directives/Regions.cs" id="RegionExample":::
 
-Regions are helpful in longer files to group related members. Many teams use them to separate fields, properties, constructors, and methods.
+Regions can group related members. For example, Regions can define members of an interface when a type implements multiple interfaces. 
 
 ## Nullable context
 

@@ -1,6 +1,6 @@
 ---
 title: "General structure of a C# program"
-description: Learn how C# programs are structured, including the three application styles—file-based apps, top-level statements, and Main method programs—and the building blocks that make up every program.
+description: Learn how C# programs are structured, including the choice between file-based and project-based apps, top-level statements and Main method entry points, and the building blocks that make up every program.
 ms.date: 03/04/2026
 ai-usage: ai-assisted
 helpviewer_keywords:
@@ -16,11 +16,16 @@ The following example shows a modern C# program that uses [file-scoped namespace
 
 This example uses *top-level statements* for the program's entry point. Only one file in a project can have top-level statements, and the entry point is the first line of program text in that file. File-scoped namespaces (the `namespace YourNamespace;` syntax) reduce nesting by applying the namespace to the entire file.
 
-## Three application styles
+## Choosing your application style
 
-C# supports three styles for structuring an application's entry point. Choose the one that fits your scenario:
+When you create a C# program, you make two independent choices about how to structure it:
 
-### File-based apps
+1. **File-based or project-based?** A file-based app runs from a single `.cs` file with no project file. A project-based app uses a `.csproj` file and can span multiple source files.
+1. **Top-level statements or `Main` method?** Top-level statements let you write executable code directly at the top of a file. A `Main` method wraps the entry point in an explicit static method.
+
+Both project-based apps and file-based apps support either entry-point style.
+
+### File-based apps vs. project-based apps
 
 Beginning with C# 14 and .NET 10, *file-based apps* let you run a program contained in a single `*.cs` file without a project file. Store the following code in a file named `hello-world.cs` and run it with `dotnet run hello-world.cs`:
 
@@ -34,15 +39,17 @@ The `#!` line enables Unix shells to run the file directly. On any Unix system, 
 
 File-based apps support all C# syntax and can use [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) to configure the build system. Use file-based apps for small command-line utilities, prototypes, and experiments.
 
-### Top-level statements (project-based)
+*Project-based apps* use a `.csproj` file and the [.NET CLI commands](../../../core/tools/index.md) `dotnet new`, `dotnet build`, and `dotnet run` workflow. Choose project-based apps when your program spans multiple files, or needs fine-grained build configuration.
 
-For project-based apps, [top-level statements](top-level-statements.md) let you write executable code directly in one file, without wrapping it in a class and `Main` method. This is the default style when you create a new console app with `dotnet new console`. The first code example on this page uses this style.
+### Top-level statements vs. `Main` method
 
-### Main method (project-based)
+[Top-level statements](top-level-statements.md) let you write executable code directly in one file, without wrapping it in a class and `Main` method. This is the default style when you create a new console app with `dotnet new console`. The first code example on this page uses this style.
 
-You can also define an explicit static [`Main`](main-command-line.md) method as the program's entry point. This style is common in larger applications and when you need to control the method signature—for example, to return an exit code or accept `string[] args`:
+You can also define an explicit static [`Main`](main-command-line.md) method as the program's entry point:
 
 :::code language="csharp" source="snippets/structure/Program.cs":::
+
+Either entry-point style works with both file-based and project-based apps. Both styles support the same features.
 
 ## Building and running C# programs
 

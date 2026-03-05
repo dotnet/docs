@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # Namespaces and using directives
 
-Namespaces organize C# types into logical groups and prevent naming collisions between types that share the same name. Every .NET type belongs to a namespace—`System.Console`, `System.Collections.Generic.List<T>`, and `System.Threading.Tasks.Task` are all examples. You encounter namespaces constantly, whether you're consuming .NET libraries or organizing your own code.
+Namespaces organize C# types into logical groups and prevent naming collisions between types that share the same simple name. Every .NET type belongs to a namespace—`System.Console`, `System.Collections.Generic.List<T>`, and `System.Threading.Tasks.Task` are all examples. You encounter namespaces constantly, whether you're consuming .NET libraries or organizing your own code.
 
 The following example shows how namespaces work together with `using` directives in a modern C# file:
 
@@ -20,11 +20,11 @@ The following example shows how namespaces work together with `using` directives
 
 ## Using directives
 
-Without a `using` directive, you must refer to every type by its *fully qualified name*—the complete namespace path plus the type name:
+Without a `using` directive, you must refer to every type by its *fully qualified name*: the complete namespace path plus the type name:
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="FullyQualifiedName":::
 
-A `using` directive at the top of a file imports a namespace so you can use its types by their short names:
+A `using` directive at the top of a file imports a namespace so you can use its types by their simple names:
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="UsingDirective":::
 
@@ -36,7 +36,7 @@ When you declare your own namespace, use the *file-scoped* syntax (introduced in
 
 :::code language="csharp" source="snippets/namespaces/FileScopedExample.cs" id="FileScopedNamespace":::
 
-File-scoped namespaces are the recommended style for new code. They reduce nesting and make files easier to read. You can only have one file-scoped namespace declaration per file.
+File-scoped namespaces reduce nesting and make files easier to read. You can only have one file-scoped namespace declaration per file.
 
 The older block-scoped syntax wraps all types in braces. This style is still valid but adds an extra level of indentation:
 
@@ -55,13 +55,13 @@ After declaring a global using, every file in the project can use types from tha
 
 ### Implicit usings
 
-The .NET SDK automatically generates global using directives for the most common namespaces based on your project type. Implicit usings are enabled by default when `<ImplicitUsings>enable</ImplicitUsings>` is set in your project file. For example, a console app project automatically imports `System`, `System.Collections.Generic`, `System.IO`, `System.Linq`, `System.Threading`, and `System.Threading.Tasks`.
+The .NET SDK automatically generates global using directives for the most common namespaces based on your project type. Implicit usings are enabled when `<ImplicitUsings>enable</ImplicitUsings>` is set in your project file. For example, a console app project automatically imports `System`, `System.Collections.Generic`, `System.IO`, `System.Linq`, `System.Threading`, and `System.Threading.Tasks`. The current SDK enables `ImplicitUsings` when you create a new project using `dotnet new`.
 
 For more information, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
 
 ## Static using directives
 
-A `static using` directive (C# 6) imports the static members of a type so you can call them without the type name prefix:
+A `static using` directive imports the static members of a type so you can call them without the type name prefix:
 
 :::code language="csharp" source="snippets/namespaces/StaticUsing.cs" id="StaticUsing":::
 

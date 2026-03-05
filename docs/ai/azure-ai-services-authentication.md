@@ -3,12 +3,13 @@ title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET.
 author: alexwolfmsft
 ms.topic: concept-article
-ms.date: 04/09/2025
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 ---
 
 # Foundry Tools authentication and authorization using .NET
 
-Application requests to Foundry Tools must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other Foundry Tools using .NET. Most Foundry Tools offer two primary ways to authenticate apps and users:
+Foundry Tools require authentication for all application requests. This article covers the options available to authenticate to Azure OpenAI and other Foundry Tools using .NET. Most Foundry Tools offer two primary ways to authenticate apps and users:
 
 - **Key-based authentication** provides access to an Azure service using secret key values. These secret values are sometimes known as API keys or access keys depending on the service.
 - **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
@@ -34,14 +35,14 @@ builder.Services.AddAzureOpenAIChatCompletion(
 var kernel = builder.Build();
 ```
 
-Using keys is a straightforward option, but this approach should be used with caution. Keys aren't the recommended authentication option because they:
+Keys are straightforward to use, but treat them with caution. Keys aren't the recommended authentication option because they:
 
 - Don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access). They provide elevated permissions regardless of who uses them or for what task.
-- Can accidentally be checked into source control or stored in unsafe locations.
+- Can accidentally end up in source control or unsafe storage locations.
 - Can easily be shared with or sent to parties who shouldn't have access.
 - Often require manual administration and rotation.
 
-Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
+Instead, consider using [Microsoft Entra ID](#authentication-using-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
 
 ## Authentication using Microsoft Entra ID
 
@@ -49,16 +50,16 @@ Microsoft Entra ID is a cloud-based identity and access management service that 
 
 - Keyless authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
 - Role-based access control (RBAC) to assign identities the minimum required permissions.
-- Can use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library to detect [different credentials across environments](/dotnet/api/azure.identity.defaultazurecredential) without requiring code changes.
+- Lets you use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library to detect [different credentials across environments](/dotnet/api/azure.identity.defaultazurecredential) without requiring code changes.
 - Automatically handles administrative maintenance tasks such as rotating underlying keys.
 
 The workflow to implement Microsoft Entra authentication in your app generally includes the following steps:
 
 - Local development:
 
-    1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
+    1. Sign in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
     1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
-    1. Assign Azure roles to the account you signed-in with to enable access to the Foundry Tool.
+    1. Assign Azure roles to the account you signed in with to enable access to the Foundry Tool.
 
 - Azure-hosted app:
 
@@ -70,7 +71,7 @@ The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
-When developing apps locally that connect to Foundry Tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](/#configure-your-app-code) section.
+When developing apps locally that connect to Foundry Tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](#configure-the-app-code) section.
 
 For example, to authenticate to Azure locally using the Azure CLI, run the following command:
 
@@ -80,7 +81,7 @@ az login
 
 ### Configure the app code
 
-Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Microsoft Entra authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. For the full set of supported environment credentials and the order in which they are searched, see the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation.
+Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Microsoft Entra authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. For the full set of supported environment credentials and the order in which `DefaultAzureCredential` searches them, see the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation.
 
 For example, configure Azure OpenAI to authenticate using `DefaultAzureCredential` using the following code:
 
@@ -94,7 +95,7 @@ AzureOpenAIClient azureClient =
     );
 ```
 
-`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the Foundry Tool. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned to your app.
+`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the Foundry Tool. When you deploy the app to Azure, `DefaultAzureCredential` uses the managed identity assigned to your app.
 
 ### Assign roles to your identity
 
@@ -125,7 +126,7 @@ There are two types of managed identities you can assign to your app:
 - A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can only have one system-assigned identity.
 - A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
 
-Assign roles to a managed identity just like you would an individual user account, such as the **Cognitive Services OpenAI User** role. learn more about working with managed identities using the following resources:
+Assign roles to a managed identity just like you would an individual user account, such as the **Cognitive Services OpenAI User** role. Learn more about working with managed identities using the following resources:
 
 - [Managed identities overview](/entra/identity/managed-identities-azure-resources/overview)
 - [Authenticate App Service to Azure OpenAI using Microsoft Entra ID](/dotnet/ai/how-to/app-service-aoai-auth?pivots=azure-portal)

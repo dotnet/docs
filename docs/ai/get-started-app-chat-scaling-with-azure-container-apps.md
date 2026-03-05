@@ -1,7 +1,8 @@
 ---
 title: Scale Azure OpenAI for .NET chat sample using RAG
 description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
-ms.date: 05/29/2025
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 ms.topic: get-started
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my Azure OpenAI capacity to avoid rate limit errors with Azure Container Apps.
 ---
@@ -18,7 +19,7 @@ ms.topic: get-started
 
 #### [Codespaces (recommended)](#tab/github-codespaces)
 
-* Only a [GitHub account](https://www.github.com/login) is required to use CodeSpaces
+* You only need a [GitHub account](https://www.github.com/login) to use Codespaces.
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 

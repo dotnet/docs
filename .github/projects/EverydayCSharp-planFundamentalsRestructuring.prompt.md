@@ -11,6 +11,7 @@
 - Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered.
 - Prefer articles that are between a 5 and 10 minute read (roughly 1000–2000 words). Longer and shorter artiles are allowed, but should be the exception.
 - Cross reference liberally. However, it's assumed that readers are familiar with content in the "Get started" section. Links to that section should be minimal, and possibly scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
+- If and only if a feature was first added in one of the last three released versions (C# 12 - 14) mention the first it was first introduced.
 
 ## Phase A: Program Structure (§7)
 

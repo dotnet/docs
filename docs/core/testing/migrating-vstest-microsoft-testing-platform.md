@@ -256,3 +256,5 @@ As this behavior difference is likely to be problematic specifically for the BOM
 ```csharp
 Console.InputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 ```
+
+A different workaround for that is to not use `CreateNoWindow = true` for child processes that redirect standard input.

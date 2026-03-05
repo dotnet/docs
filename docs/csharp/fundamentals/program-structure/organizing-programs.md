@@ -19,17 +19,17 @@ A typical .NET application is organized in layers, from broadest to most specifi
 
 | Level | What it is | Example |
 |---|---|---|
-| **Solution** | A container that groups related projects | `MyApp.sln` |
+| **Solution** | A container that groups related projects | `MyApp.slnx` |
 | **Project** | A build unit that produces one assembly | `MyApp.Web.csproj` |
-| **Assembly** | A compiled `.dll` or `.exe` file | `MyApp.Web.dll` |
-| **Namespace** | A logical grouping of types within an assembly | `MyApp.Web.Controllers` |
+| **Assembly** | The compiled `.dll` or `.exe` produced by a project | `MyApp.Web.dll` |
+| **Namespace** | A logical grouping of types | `MyApp.Web.Controllers` |
 | **Type** | A class, struct, interface, enum, or delegate | `OrderController` |
 
-Each level serves a different purpose. Solutions organize your development workflow. Projects define what gets compiled together. Assemblies are the unit of deployment and versioning. Namespaces prevent naming collisions and make types discoverable. Types define the actual behavior and data.
+Each level serves a different purpose. Solutions organize your development workflow. Projects define what gets compiled together, and each project produces one assembly. Assemblies are the unit of deployment and versioning. Namespaces prevent naming collisions and make types discoverable—a single assembly can contain multiple namespaces, and a single namespace can span multiple assemblies. Types define the actual behavior and data.
 
 ## Projects and assemblies
 
-Each project compiles into a single assembly—a `.dll` (class library) or `.exe` (executable). Split your code into multiple projects when you want to:
+Each project compiles into a single assembly: a `.dll` (class library) or `.exe` (executable). Split your code into multiple projects when you want to:
 
 - **Separate concerns** — keep your data access, business logic, and presentation layers independent.
 - **Share code** — create a class library that multiple applications reference.
@@ -41,7 +41,7 @@ The following project structure demonstrates a common pattern:
 
 Create and reference projects with the `dotnet` CLI:
 
-```bash
+```dotnetcli
 dotnet new classlib -n MyApp.Core
 dotnet new console -n MyApp.Console
 dotnet add MyApp.Console reference MyApp.Core
@@ -53,7 +53,7 @@ By convention, namespace names follow the folder structure of your project. This
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 
-The .NET SDK supports this convention automatically. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file—but following the convention keeps your codebase predictable.
+The .NET SDK supports this convention automatically. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file: but following the convention makes source easier to find.
 
 ## Choosing how to split namespaces
 
@@ -61,15 +61,15 @@ Group related types into namespaces by feature or responsibility, not by type ki
 
 :::code language="csharp" source="snippets/organizing-programs/Payments.cs" id="FeatureOrganization":::
 
-Over grouping by type kind (like putting all interfaces in a `MyApp.Interfaces` namespace or all models in `MyApp.Models`). Feature-based organization keeps related types together, making the code easier to navigate and understand.
+Over grouping by type kind (like putting all interfaces in a `MyApp.Interfaces`). Feature-based organization keeps related types together, making the code easier to navigate and understand.
 
 ## Access modifiers and assemblies
 
-Access modifiers interact with the project/assembly structure to control visibility:
+Access modifiers interact with the project/assembly structure to control accessibility:
 
-- `public` — accessible from any assembly that references this one.
-- `internal` — accessible only within the same assembly (the default for top-level types).
-- `private`, `protected`, `private protected`, `protected internal` — control visibility at the type member level.
+- [`public`](../../language-reference/keywords/public.md) — accessible from any assembly that references this one.
+- [`internal`](../../language-reference/keywords/internal.md) — accessible only within the same assembly (the default for top-level types).
+- [`private`](../../language-reference/keywords/private.md), [`protected`](../../language-reference/keywords/protected.md), [`private protected`](../../language-reference/keywords/private-protected.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) — accessible based on the containing type, the assembly, or derived types.
 
 Use `internal` to hide implementation details that other projects shouldn't depend on. This is especially useful for shared libraries:
 
@@ -79,8 +79,8 @@ Use `internal` to hide implementation details that other projects shouldn't depe
 
 - **Start simple.** A single project works well for small applications. Split into multiple projects only when you have a clear reason.
 - **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern—for example, `Contoso.Inventory.Shipping`.
-- **Keep projects focused.** Each project should have a single responsibility. If a project does too many unrelated things, consider splitting it.
-- **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax (C# 10) reduces nesting and is the recommended style for new code.
+- **Keep projects focused.** Each project should have a clear responsibility. If a project does too many unrelated things, consider splitting it.
+- **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax reduces nesting and is the recommended style for new code.
 - **Leverage `global using` directives.** Place common imports in a `GlobalUsings.cs` file to reduce repetition across files. For more information, see [Namespaces and using directives](namespaces.md).
 
 ## See also

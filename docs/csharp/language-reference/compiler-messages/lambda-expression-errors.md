@@ -159,26 +159,23 @@ The compiler also produces the following *informational* message:
 - **CS8971**: Warning: *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - **CS9236**: Informational: *Compiling requires binding the lambda expression at least count times. Consider declaring the lambda expression with explicit parameter types, or if the containing method call is generic, consider using explicit type arguments.*
 
-Some C# syntax is prohibited in [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md). Using invalid constructs in a lambda expression causes errors. The following constructs are all disallowed in lambda expressions:
+The compiler prohibits certain C# constructs inside [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md). These restrictions exist because the compiler transforms lambdas and anonymous methods into [delegate](../../programming-guide/delegates/index.md) invocations or [expression trees](../../advanced-topics/expression-trees/index.md), and some constructs can't be represented in those forms. For more information, see the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the C# specification.
 
-- `yield` statements (`yield return` or `yield break`)
-- Calling a method that has an `in`, `ref`, or `out` parameter
-- `ref` local variables
-- `fixed` local variables
-- `break`, `goto`, and `continue` statements
-- `this` access when `this` is a `struct` type
-- Anonymous methods or lambda expressions inside another expression, such as an Attribute constructor.
-- Lambda expressions, anonymous methods, and method groups as the first operand of `is` or `as`.
+You can correct these errors using the following guidance:
 
-You can't use any of these constructs in a lambda expression or an anonymous method. Many of them are allowed in a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-
-A [`static`](../operators/lambda-expressions.md#static-lambdas) anonymous function or lambda expression can't capture local variables, parameters, `this`, or `base`. If a `static` lambda or anonymous method references any of those, the compiler generates **CS8820** or **CS8821**.
-
-Interpolated string handler types are ignored when applied to a lambda parameter. If you use one, you see warning **CS8971**.
-
-Accessing a virtual member through the `base` keyword inside an anonymous method or lambda expression produces unverifiable code, producing warning **CS1911**.
-
-When the complexity of lambda expressions and how they invoke other lambda expressions negatively impacts compiler performance, the compiler emits informational message **CS9236**. The compiler must infer parameter and argument types through the lambda expressions, and the number of potential types takes time. You can address this by declaring the lambda expression with explicit parameter types, or by using explicit type arguments for the containing generic method call.
+- Move any [`yield return` or `yield break`](../statements/yield.md) statement out of the lambda body and into the enclosing [iterator method](../statements/yield.md), or convert the lambda to a [local function](../../programming-guide/classes-and-structs/local-functions.md), which supports `yield` statements (**CS1621**).
+- Avoid passing [`in`, `ref`, or `out`](../keywords/method-parameters.md) parameters from the enclosing method into the lambda body. Because the compiler captures these parameters as part of a [closure](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions), the reference semantics of `ref`-like parameters can't be preserved. Copy the value to a local variable and use that local instead, or convert the lambda to a local function (**CS1628**).
+- Remove any `break`, `goto`, or `continue` statement that transfers control out of the lambda body. Control flow statements must target labels or loops within the same lambda body (**CS1632**).
+- In a `struct` type, avoid referencing instance members through `this` inside a lambda expression, anonymous method, or query expression. Because the compiler captures `this` by value in a `struct`, mutations inside the lambda don't affect the original instance. Extract the needed member values into local variables before the lambda, or convert to a local function, which can access `this` directly (**CS1673**).
+- Don't take the address of a local variable that the lambda also captures. The compiler moves captured variables to a heap-allocated closure object, making their address unstable. Separate the address-taking logic from the lambda, or use a local function instead (**CS1686**).
+- Move the lambda expression or anonymous method out of the containing expression that prohibits it. Some expressions, such as attribute constructors, don't support lambda expressions or anonymous methods as arguments (**CS1706**).
+- Don't use a `fixed` local variable inside a lambda body. The pinning guarantee of the [`fixed` statement](../statements/fixed.md) applies only to the enclosing scope, not to the closure that the compiler generates (**CS1764**).
+- Don't use a [`ref` local](../statements/declarations.md#ref-locals) inside a lambda body. Like `ref` parameters, `ref` locals can't be captured in the closure the compiler generates for the lambda. Assign the value to a non-`ref` local variable, or convert the lambda to a local function (**CS8175**).
+- Don't use a lambda expression, anonymous method, or method group as the first operand of the [`is`](../operators/type-testing-and-cast.md#is-operator) or [`as`](../operators/type-testing-and-cast.md#as-operator) operator. These constructs don't have a type that can be tested at run time. Assign the expression to a variable first, then test the variable (**CS0837**).
+- Remove the `static` modifier from the lambda, or remove the reference to the captured variable. A [`static` lambda](../operators/lambda-expressions.md#static-lambdas) explicitly prohibits capturing local variables, parameters, or `this` to avoid unintended closure allocations. If you need to reference outer variables, remove the `static` modifier. If you want to keep heap allocation minimal, pass the values as parameters to the lambda (**CS8820**, **CS8821**).
+- Remove the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute> from the lambda parameter, or move the logic to a method where the attribute is honored. The compiler ignores this attribute on lambda parameters because lambda invocations don't use the same interpolated string handler lowering as regular method calls (**CS8971**).
+- Avoid calling a virtual member through the `base` keyword inside a lambda or anonymous method. The compiler generates a non-virtual call through a helper method, which produces unverifiable code. Consider extracting the `base` call into a separate method and calling that method from the lambda instead (**CS1911**).
+- Reduce the complexity of overloaded method calls that accept lambda expressions, or add explicit type information. When the compiler must bind a lambda expression multiple times to resolve overloads, it emits this informational diagnostic. Declaring the lambda with [explicit parameter types](../operators/lambda-expressions.md#explicitly-typed-parameters), or providing explicit type arguments on the generic method call, reduces the number of binding passes the compiler must perform (**CS9236**).
 
 ## Lambda expression parameters and returns
 
@@ -199,17 +196,23 @@ When the complexity of lambda expressions and how they invoke other lambda expre
 - **CS8975**: *The contextual keyword 'var' cannot be used as an explicit lambda return type.*
 - **CS9098**: *Implicitly typed lambda parameter '...' cannot have a default value.*
 
-These errors indicate a problem with a [lambda expression parameter](../operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) or return type declaration. Lambda expression parameters must follow these rules:
+These errors indicate a problem with a [lambda expression parameter](../operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) or return type declaration. For the full rules on lambda parameter and return types, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the C# specification.
 
-- When a lambda expression has multiple parameters, either all parameters must be explicitly typed or all parameters must be implicitly typed.
-- All lambda parameters with a [default value](../operators/lambda-expressions.md#defaults) must be explicitly typed.
-- Default values aren't allowed in anonymous methods declared with the [`delegate` operator](../operators/delegate-operator.md).
-- If [attributes](../operators/lambda-expressions.md#attributes) are applied to any parameters, the parameter list must be enclosed in parentheses.
+> [!NOTE]
+> **CS1731** and **CS1732** are no longer produced by the current version of the C# compiler (Roslyn). They might appear if you're using an older compiler version.
 
-Return types of lambda expressions must follow these rules:
+You can correct these errors using the following guidance:
 
-- A lambda expression that returns any value can't be converted to a `void` returning delegate, such as `Action`.
-- The return type is either inferred, or an explicit type. A return type declared using the keyword `var` isn't allowed.
+- Ensure that all parameters in a lambda expression use the same typing style. When a lambda has multiple parameters, each parameter must be either [explicitly typed](../operators/lambda-expressions.md#explicitly-typed-parameters) or implicitly typed—you can't mix the two styles in the same parameter list (**CS0748**).
+- Add explicit types to any lambda parameter that has a [default value](../operators/lambda-expressions.md#defaults). The compiler requires explicit types on parameters with defaults because it must generate a custom delegate type that encodes the default value. Implicitly typed parameters don't provide enough information for the compiler to construct that delegate type (**CS1065**, **CS9098**).
+- Remove default parameter values from anonymous methods declared with the [`delegate` operator](../operators/delegate-operator.md). Default parameter values are supported only in lambda expressions, not in anonymous methods. Convert the anonymous method to a lambda expression if you need default values (**CS1065**).
+- Match the parameter types, `ref`/`out`/`in` modifiers, and parameter count of the lambda or anonymous method to the target [delegate type](../../programming-guide/delegates/index.md). The compiler performs an exact match of parameter signatures when converting an anonymous function to a delegate: each parameter must have the correct type, and any `ref`, `out`, or `in` modifier must be present exactly when the delegate expects it (**CS1661**, **CS1676**, **CS1677**, **CS1678**).
+- Add a parameter list to the anonymous method when the target delegate type has `out` parameters. An anonymous method declared without a parameter list (using `delegate { }` syntax) can match most delegate types, but the compiler can't synthesize the required `out` parameters implicitly. Declare the parameters explicitly to match the delegate signature (**CS1688**).
+- Ensure that all code paths in the lambda or anonymous method return a value when the target delegate type has a non-void return type. Every branch through the body must produce a return value that's implicitly convertible to the delegate's return type (**CS1643**, **CS1662**, **CS1731**, **CS8934**).
+- Remove any `return` statement with a value from a lambda or anonymous method that's assigned to a `void`-returning delegate type such as `Action`. Because the delegate's return type is `void`, the body can't return a value (**CS8030**).
+- Enclose the parameter list in parentheses when [attributes](../operators/lambda-expressions.md#attributes) are applied to any lambda parameter. The compiler needs the parenthesized form to distinguish attribute syntax from other expressions. For example, write `([MyAttribute] int x) => x` instead of `[MyAttribute] x => x` (**CS8916**).
+- Use a specific type name instead of `var` as the explicit return type of a lambda expression. The keyword `var` is reserved for [implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables) and can't be used as a lambda return type annotation. Specify the actual return type, or omit the return type and let the compiler infer it (**CS8975**).
+- Fix the parameter list so the compiler can recognize it as a valid parameter declaration. This error indicates a malformed parameter list where the compiler expected a parameter identifier but found something else (**CS1732**).
 
 ## Lambda expression delegate type
 
@@ -224,25 +227,16 @@ Return types of lambda expressions must follow these rules:
 - **CS9099**: Warning: *The default parameter value does not match in the target delegate type.*
 - **CS9100**: Warning: *Parameter has params modifier in lambda but not in target delegate type.*
 
-A [lambda expression](../operators/lambda-expressions.md) or [anonymous method](../operators/delegate-operator.md) must be convertible to a [delegate type](../../programming-guide/delegates/index.md). The compiler must be able to infer a delegate type from the lambda expression. The following conditions cause these errors:
+These errors indicate a problem with the [delegate type](../../programming-guide/delegates/index.md) that the compiler infers or expects for a [lambda expression](../operators/lambda-expressions.md), [anonymous method](../operators/delegate-operator.md), or [method group](~/_csharpstandard/standard/conversions.md#108-method-group-conversions). For the full rules on delegate conversions, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the C# specification.
 
-- The target type isn't a delegate type (**CS1660**), or can't be inferred (**CS0815**, **CS0828**, **CS8917**).
-- The return type of a method group doesn't match the delegate's return type (**CS0407**).
-- A method group is assigned to a non-delegate type (**CS0428**, **CS8974**).
-- There's ambiguity between a method and a non-method member (**CS0467**).
+> [!NOTE]
+> **CS0467** is no longer produced by the current version of the C# compiler (Roslyn). It might appear if you're using an older compiler version.
 
-When you declare a [default value](../operators/lambda-expressions.md#defaults) or add the [`params` modifier](../operators/lambda-expressions.md#params) with a lambda expression parameter, the delegate type isn't one of the `Func` or `Action` types. Rather, it's a custom type that includes the default parameter value or `params` modifier. The following code generates warnings because it assigns a lambda expression that has a default parameter to an `Action` type:
+You can correct these errors using the following guidance:
 
-```csharp
-Action<int> a1 = (int i = 2) => { };
-Action<string[]> a3 = (params string[] s) => { };
-```
-
-To fix the error, either remove the default parameter or use an implicitly typed variable for the delegate type:
-
-```csharp
-Action<int> a1 = (int i) => { };
-var a2 = (int i = 2) => { };
-Action<string[]> a3 = (string[] s) => { };
-var a4 = (params string[] s) => { };
-```
+- Ensure that the target type of the assignment or conversion is a [delegate type](../../programming-guide/delegates/index.md) or `System.Expression`. A lambda expression or anonymous method can't be assigned to a non-delegate type such as `object` or an interface. Change the variable's type to a compatible delegate type like `Func<>` or `Action<>`, or use `var` to let the compiler infer the delegate type (**CS1660**).
+- Provide enough context for the compiler to determine a single delegate type for the lambda expression. When assigned to `var`, the compiler needs an unambiguous return type and parameter list. When assigned to an anonymous type property, the compiler can't infer a delegate type at all. Assign the lambda to a variable with an explicit delegate type, then use that variable in the anonymous type initializer (**CS0815**, **CS0828**, **CS8917**).
+- Match the return type of the method group to the delegate's declared return type. A [method group conversion](~/_csharpstandard/standard/conversions.md#108-method-group-conversions) requires the method's return type to be identity-convertible or implicitly convertible to the delegate's return type. Change the method's return type, or change the delegate type to match (**CS0407**).
+- Invoke the method instead of assigning the method group when the target type isn't a delegate. If the target type is `string`, `int`, or another non-delegate type, you likely intended to call the method and assign its result. Add parentheses and arguments to invoke the method (**CS0428**, **CS8974**).
+- Resolve ambiguity between a method and a non-method member that share the same name. Rename one of the conflicting members, or use a fully qualified reference to remove the ambiguity (**CS0467**).
+- Remove the [default parameter value](../operators/lambda-expressions.md#defaults) or [`params` modifier](../operators/lambda-expressions.md#params) from the lambda when the target delegate type is a standard `Func<>` or `Action<>` type. Default values and `params` modifiers cause the compiler to generate a custom delegate type that doesn't match `Func<>` or `Action<>`. Either use `var` to let the compiler synthesize the correct delegate type, or remove the default value or `params` modifier so the lambda matches the declared delegate type (**CS9099**, **CS9100**).

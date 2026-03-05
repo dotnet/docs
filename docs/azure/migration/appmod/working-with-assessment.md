@@ -1,6 +1,6 @@
 ---
 title: "Working with Assessment: Comprehensive guide to application assessment"
-description: Learn how to effectively work with application assessments in GitHub Copilot app modernization, including configuration, interpretation, and report management.
+description: Learn how to effectively work with application assessments in GitHub Copilot modernization, including configuration, interpretation, and report management.
 author: KarlErickson
 ms.author: karler
 ms.reviewer: fenzho
@@ -10,9 +10,9 @@ ms.custom: devx-track-dotnet
 ai-usage: ai-assisted
 ---
 
-# Application assessment with GitHub Copilot app modernization
+# Application assessment with GitHub Copilot modernization
 
-This article shows you how to use assessment capabilities in GitHub Copilot app modernization to maximize the value of your application modernization process.
+This article shows you how to use assessment capabilities in GitHub Copilot modernization to maximize the value of your application modernization process.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Application assessment is a critical first step in your modernization journey. T
 
 You can open the `.appmod/.appcat/assessment-config.json` file in your project to edit the configuration for application assessment to specify your target Azure service if it exists. For the first run of the assessment, the configuration file will be generated automatically.
 
-:::image type="content" source="media/configure-azure-service-target-for-assessment-report.png" lightbox="media/configure-azure-service-target-for-assessment-report.png" alt-text="Screenshot of Visual Studio that shows the GitHub Copilot app modernization assessment configuration.":::
+:::image type="content" source="media/configure-azure-service-target-for-assessment-report.png" lightbox="media/configure-azure-service-target-for-assessment-report.png" alt-text="Screenshot of Visual Studio that shows the GitHub Copilot modernization assessment configuration.":::
 
 ### Configuration properties
 
@@ -70,7 +70,7 @@ The following provide two examples of proper configurations:
 
 After the assessment runs, the interactive dashboard opens automatically to provide comprehensive analysis results. When you configure the target Azure service as `Any`, you can switch between them to compare migration approaches and view service-specific recommendations. If you configure a specific target Azure service, you can only see one Azure service in the dropdown list.
 
-:::image type="content" source="./media/list-azure-service-target-for-assessment-report.png" lightbox="./media/list-azure-service-target-for-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment dashboard with Azure service target selection options.":::
+:::image type="content" source="./media/list-azure-service-target-for-assessment-report.png" lightbox="./media/list-azure-service-target-for-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment dashboard with Azure service target selection options.":::
 
 ## Interpreting assessment report
 
@@ -84,7 +84,7 @@ The assessment report consists of several key sections:
 - **Issue Summary**: Overview of migration issues categorized by domain with criticality percentages.
 - **Issues**: Provides a concise summary of all issues that require attention.
 
-:::image type="content" source="./media/assessment-report-dashboard.png" lightbox="./media/assessment-report-dashboard.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment report dashboard.":::
+:::image type="content" source="./media/assessment-report-dashboard.png" lightbox="./media/assessment-report-dashboard.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment report dashboard.":::
 
 #### Issues
 
@@ -105,7 +105,7 @@ For more information, you can expand each reported issue by selecting the title.
 - A list of files where the incidents occurred, along with the number of code lines impacted. If the file is a .NET source file, then selecting the file line number directs you to the corresponding source report.
 - A detailed description of the issue. This description outlines the problem, provides any known solutions, and references supporting documentation regarding either the issue or resolution.
 
-:::image type="content" source="./media/assessment-report-issue-detail.png" lightbox="./media/assessment-report-issue-detail.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment report issue details.":::
+:::image type="content" source="./media/assessment-report-issue-detail.png" lightbox="./media/assessment-report-issue-detail.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment report issue details.":::
 
 ## Operate assessment report
 
@@ -113,13 +113,13 @@ Effective report management enables collaboration, maintains assessment history,
 
 ### Import assessment report
 
-Besides running the assessment directly in GitHub Copilot app modernization, you can also import assessment reports. The report can come from a .NET AppCAT CLI result, GitHub Copilot app modernization exported report, or app context file from Dr.Migrate.
+Besides running the assessment directly in GitHub Copilot modernization, you can also import assessment reports. The report can come from a .NET AppCAT CLI result, GitHub Copilot modernization exported report, or app context file from Dr.Migrate.
 
 You can trigger importing a report by typing "import assessment report" in the chat when you enter the `Modernize` agent, or select the `Import` button in the assessment dashboard to import the report from the file explorer.
 
-:::image type="content" source="./media/import-assessment-report-in-chat.png" lightbox="./media/import-assessment-report-in-chat.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment report import from chat.":::
+:::image type="content" source="./media/import-assessment-report-in-chat.png" lightbox="./media/import-assessment-report-in-chat.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment report import from chat.":::
 
-:::image type="content" source="./media/import-assessment-report.png" lightbox="./media/import-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment report import interface.":::
+:::image type="content" source="./media/import-assessment-report.png" lightbox="./media/import-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment report import interface.":::
 
 ### Export assessment report
 
@@ -127,7 +127,7 @@ In the assessment dashboard, you can view the issues detected by AppCAT and choo
 
 You can select the `Export` button in the assessment dashboard to export the report to the file explorer.
 
-:::image type="content" source="./media/export-assessment-report.png" lightbox="./media/export-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment report export options and interface.":::
+:::image type="content" source="./media/export-assessment-report.png" lightbox="./media/export-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot modernization assessment report export options and interface.":::
 
 ## Next Steps
 

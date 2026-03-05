@@ -1,16 +1,16 @@
 ---
-title: Predefined tasks for GitHub Copilot app modernization for .NET
-description: Learn about the predefined tasks that are available for GitHub Copilot app modernization for .NET
+title: Predefined tasks for GitHub Copilot modernization for .NET
+description: Learn about the predefined tasks that are available for GitHub Copilot modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 9/17/2025
 ---
 
-# Predefined tasks for GitHub Copilot app modernization for .NET
+# Predefined tasks for GitHub Copilot modernization for .NET
 
-This article describes the predefined tasks available for GitHub Copilot app modernization for .NET.
+This article describes the predefined tasks available for GitHub Copilot modernization for .NET.
 
-Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
+Predefined tasks capture industry best practices for using Azure services. Currently, Modernization for .NET offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
 
 - Database migration
 - Storage migration
@@ -22,7 +22,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 
 ## Predefined task list
 
-App Modernization for .NET currently supports the following predefined tasks:
+Modernization for .NET currently supports the following predefined tasks:
 
 - **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI and Azure PostgreSQL**
 

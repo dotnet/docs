@@ -102,7 +102,7 @@ The default <xref:System.Windows.Forms.AutoScaleMode.Font?displayProperty=nameWi
 
 Keep in mind that certain controls—such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.Label>—always use Font scaling regardless of the `AutoScaleMode` setting. Because of these per-control differences, it's not always straightforward to determine which mode works better without knowing your specific design requirements.
 
-Starting with .NET 8, when a Windows Forms app runs in `PerMonitorV2` DPI awareness, top-level window sizing respects <xref:System.Windows.Forms.AutoScaleMode>, which improves consistency with how child controls scale. For more information, see [Top-level window scaling](../../../core/compatibility/windows-forms/8.0/top-level-window-scaling.md).
+Starting with .NET 8, when a Windows Forms app runs in `PerMonitorV2` DPI awareness, top-level window sizing respects <xref:System.Windows.Forms.AutoScaleMode>, which improves consistency with how child controls scale. For more information, see [Top-level window scaling](../../../../core/compatibility/windows-forms/8.0/top-level-window-scaling.md).
 
 ### DisableDpiChangedMessageHandling
 

@@ -9,7 +9,7 @@ namespace PInvokeSamples
         private delegate int DirClbk(string fName, ref Stat stat, int typeFlag);
 
         // Import the libc and define the method to represent the native function.
-        [LibraryImport("libc.so.6", StringMarshalling = StringMarshalling.Utf16)]
+        [LibraryImport("libc.so.6", StringMarshalling = StringMarshalling.Utf8)]
         private static partial int ftw(string dirpath, DirClbk cl, int descriptors);
 
         // Implement the above DirClbk delegate;

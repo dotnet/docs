@@ -18,6 +18,8 @@ The following example shows how namespaces work together with `using` directives
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="NamespaceBasics":::
 
+In the preceding sample, the `using` directive means you can use the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> by the name `CultureInfo` without specifying the full name of `System.Globalization.CultureInfo`. The `namespace` directive declares that the `Greeter` class is part of the `MyApp.Services` namespace. Its fully qualified name is `MyApp.Services.Greeter`.
+
 ## Using directives
 
 Without a `using` directive, you must refer to every type by its *fully qualified name*: the complete namespace path plus the type name:
@@ -43,7 +45,7 @@ The older block-scoped syntax wraps all types in braces. This style is still val
 :::code language="csharp" source="snippets/namespaces/BlockScoped.cs" id="BlockScopedNamespace":::
 
 > [!TIP]
-> Use file-scoped namespaces in new code. Most .NET templates and code analyzers recommend this style.
+> Use file-scoped namespaces in new code when all types in the file should be declared in the same samespace. Most .NET templates and code analyzers recommend this style.
 
 ## Global using directives
 

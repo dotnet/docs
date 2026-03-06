@@ -8,11 +8,9 @@ helpviewer_keywords:
 ---
 # Top-level statements - programs without `Main` methods
 
-You don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write.
+You can use the *top-level statements* feature to minimize the code you have to write. You don't have to explicitly include a [`Main` method](./main-command-line.md) in a console application project.
 
-Top-level statements allow you to write executable code directly at the root of a file, eliminating the need for wrapping your code in a class or method.
-This means you can create programs without the ceremony of a `Program` class and a `Main` method.
-In this case, the compiler generates a `Program` class with an entry point method for the application. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly.
+Top-level statements allow you to write executable code directly at the root of a file, eliminating the need for wrapping your code in a class or method. This means you can create programs without the ceremony of a `Program` class and a `Main` method. In this case, the compiler generates a `Program` class with an entry point method for the application. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly.
 
 Here's a *Program.cs* file that is a complete C# program:
 
@@ -20,7 +18,7 @@ Here's a *Program.cs* file that is a complete C# program:
 Console.WriteLine("Hello World!");
 ```
 
-Top-level statements let you write simple programs for small utilities such as Azure Functions and GitHub Actions. They also make it simpler for new C# programmers to get started learning and writing code.
+Top-level statements let you write simple programs for small utilities such as Azure Functions and GitHub Actions. They provide a natural evolution as file-based apps grow to include more files.
 
 The following sections explain the rules on what you can and can't do with top-level statements.
 

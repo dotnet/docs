@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time. The way you structure the entry point - where your program starts running - depends on which application style you choose.
 
-The following example shows a modern C# program that uses [file-scoped namespaces](namespaces.md), [top-level statements](top-level-statements.md), and everyday C# features:
+The following example shows a modern C# program that uses [namespaces](namespaces.md), [top-level statements](top-level-statements.md), and typical C# features:
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
@@ -84,12 +84,12 @@ For detailed information about statements, see [Statements](../../programming-gu
 
 Learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
 
-- [Classes](../types/classes.md).
-- [Structs](../../language-reference/builtin-types/struct.md).
-- [Namespaces](namespaces.md).
-- [Interfaces](../types/interfaces.md).
-- [Enums](../../language-reference/builtin-types/enum.md).
-- [Delegates](../../delegates-overview.md).
+- [Classes](../types/classes.md)
+- [Structs](../../language-reference/builtin-types/struct.md)
+- [Namespaces](namespaces.md)
+- [Interfaces](../types/interfaces.md)
+- [Enums](../../language-reference/builtin-types/enum.md)
+- [Delegates](../../delegates-overview.md)
 
 ## C# language specification
 

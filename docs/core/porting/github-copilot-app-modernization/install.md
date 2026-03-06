@@ -21,15 +21,15 @@ GitHub Copilot app modernization is available across multiple development enviro
 Before you install, make sure you have the following:
 
 - Windows operating system
-- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer)
+- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot app modernization**
 - GitHub Copilot subscription (paid or free)
-- [Signed in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan)
-- Code must be written in C#
+- [Sign in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan)
+- Code written in C#
 
 ## Install
 
-GitHub Copilot app modernization is included in Visual Studio. No separate installation is required. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+GitHub Copilot app modernization is included in Visual Studio and doesn't require a separate installation. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 
@@ -70,7 +70,7 @@ Before you install, make sure you have the following:
 
 ## Install
 
-Installation is a two-step process:
+Complete these three steps to install:
 
 1. Open GitHub Copilot.
 
@@ -88,7 +88,7 @@ Installation is a two-step process:
 
 ## Verify the installation
 
-Use the `/agent` command to browse a list of agents and see if the `modernize-dotnet` agent is available.
+Run `/agent` to confirm that `modernize-dotnet` appears in the agent list.
 
 ::: zone-end
 
@@ -116,6 +116,6 @@ The `modernize-dotnet` agent appears as an available coding agent in your reposi
 
 ## Related content
 
-- [GitHub Copilot app modernization overview](overview.md)
-- [Upgrade .NET apps with GitHub Copilot](how-to-upgrade-with-github-copilot.md)
-- [FAQ](faq.yml)
+- [What is GitHub Copilot app modernization?](overview.md)
+- [Upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
+- [GitHub Copilot app modernization FAQ](faq.yml)

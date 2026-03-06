@@ -57,7 +57,7 @@ Many different SDKs are available to build .NET apps with AI capabilities depend
 
 ### .NET SDKs for Foundry Tools
 
-Azure offers many other AI services to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
+Azure offers many other AI services, such as Foundry Tools, to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
 
 | Service                           | Description                                  |
 |-----------------------------------|----------------------------------------------|

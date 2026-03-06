@@ -1,8 +1,9 @@
 ---
 title: About AssemblyLoadContext - .NET
 description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET.
-ms.date: 08/18/2022
+ms.date: 03/05/2026
 author: sdmaclea
+ai-usage: ai-assisted
 ---
 # About System.Runtime.Loader.AssemblyLoadContext
 
@@ -109,3 +110,52 @@ There are two design patterns for solving these type conversion issues.
 1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#shared-dependencies).
 
 2. Use marshalling techniques to convert from one type to another.
+
+## Access static members
+
+Types loaded into a custom <xref:System.Runtime.Loader.AssemblyLoadContext> are isolated from types in other contexts, so you must use reflection to access their static members from outside the context.
+
+For example, consider this static class in a dynamically loaded assembly:
+
+```csharp
+namespace MyPlugin;
+
+public static class Paths
+{
+    public static DirectoryInfo RootIO { get; private set; }
+}
+```
+
+Use <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithType> to read the property value. Pass `null` as the first argument because static members don't require an instance. Pass the fully qualified type name (including the namespace) to <xref:System.Reflection.Assembly.GetType(System.String)?displayProperty=nameWithType>:
+
+```csharp
+// Get the type from the loaded assembly using the fully qualified name
+Type pathsType = loadedAssembly.GetType("MyPlugin.Paths")
+    ?? throw new InvalidOperationException("Type 'MyPlugin.Paths' not found in loaded assembly.");
+
+// Use PropertyInfo to access a static property
+PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO")
+    ?? throw new InvalidOperationException("Property 'RootIO' was not found on type 'MyPlugin.Paths'.");
+DirectoryInfo rootIo = (DirectoryInfo)rootIoProperty.GetValue(null);
+```
+
+Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these accessor methods directly using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>. However, <xref:System.Type.GetMethod(System.String)?displayProperty=nameWithType> only returns public methods. When an accessor is non-public (such as the `private set` in the example), you must use the overload that accepts <xref:System.Reflection.BindingFlags>:
+
+```csharp
+// Public getter — no BindingFlags needed
+MethodInfo getRootIo = pathsType.GetMethod("get_RootIO")
+    ?? throw new InvalidOperationException("Accessor method 'get_RootIO' was not found on type 'MyPlugin.Paths'.");
+DirectoryInfo rootIo = (DirectoryInfo)getRootIo.Invoke(null, null);
+
+// Non-public setter — must use BindingFlags
+MethodInfo setRootIo = pathsType.GetMethod(
+    "set_RootIO",
+    BindingFlags.Static | BindingFlags.NonPublic)
+    ?? throw new InvalidOperationException("Accessor method 'set_RootIO' was not found on type 'MyPlugin.Paths'.");
+setRootIo.Invoke(null, new object[] { newValue });
+```
+
+The same pattern applies to static fields, which you can access via <xref:System.Reflection.FieldInfo.GetValue%2A?displayProperty=nameWithType> and <xref:System.Reflection.FieldInfo.SetValue%2A?displayProperty=nameWithType>, and to static methods, which you invoke with <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=nameWithType>.
+
+> [!NOTE]
+> If you retrieve a value whose type is defined in the loaded assembly, you might encounter type-conversion issues when you try to cast it in the calling context. For more information, see [Type-conversion issues](#type-conversion-issues).

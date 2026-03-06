@@ -20,12 +20,12 @@ GitHub Copilot app modernization is available across multiple development enviro
 
 Before you install, make sure you have the following:
 
-- Windows operating system
-- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+)
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot app modernization**
-- GitHub Copilot subscription (paid or free)
-- [Sign in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan)
-- Code written in C#
+- Windows operating system.
+- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+).
+- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot app modernization**.
+- GitHub Copilot subscription (paid or free).
+- [Sign in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan).
+- Code written in C#.
 
 ## Install
 
@@ -44,9 +44,9 @@ GitHub Copilot app modernization is included in Visual Studio and doesn't requir
 
 Before you install, make sure you have the following:
 
-- Visual Studio Code
-- GitHub Copilot extension installed
-- GitHub Copilot subscription (paid or free)
+- Visual Studio Code.
+- GitHub Copilot extension installed.
+- GitHub Copilot subscription (paid or free).
 
 ## Install
 
@@ -65,8 +65,8 @@ Install the [GitHub Copilot app modernization extension](https://marketplace.vis
 
 Before you install, make sure you have the following:
 
-- GitHub Copilot CLI installed
-- GitHub Copilot subscription (paid or free)
+- GitHub Copilot CLI installed.
+- GitHub Copilot subscription (paid or free).
 
 ## Install
 
@@ -98,8 +98,8 @@ Run `/agent` to confirm that `modernize-dotnet` appears in the agent list.
 
 Before you install, make sure you have the following:
 
-- GitHub Copilot Enterprise or Business subscription with coding agents enabled
-- Repository admin access
+- GitHub Copilot Enterprise or Business subscription with coding agents enabled.
+- Repository admin access.
 
 ## Install
 

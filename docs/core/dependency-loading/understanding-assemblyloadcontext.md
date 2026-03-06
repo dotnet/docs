@@ -128,17 +128,20 @@ Use <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithTyp
 
 ```csharp
 // Get the type from the loaded assembly
-Type pathsType = loadedAssembly.GetType("Paths");
+Type pathsType = loadedAssembly.GetType("Paths")
+    ?? throw new InvalidOperationException("Type 'Paths' not found in loaded assembly.");
 
 // Use PropertyInfo to access a static property
-PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO");
+PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO")
+    ?? throw new InvalidOperationException("Property 'RootIO' was not found on type 'Paths'.");
 DirectoryInfo rootIo = (DirectoryInfo)rootIoProperty.GetValue(null);
 ```
 
 Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these backing methods directly using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>:
 
 ```csharp
-MethodInfo getRootIo = pathsType.GetMethod("get_RootIO");
+MethodInfo getRootIo = pathsType.GetMethod("get_RootIO")
+    ?? throw new InvalidOperationException("Accessor method 'get_RootIO' was not found on type 'Paths'.");
 DirectoryInfo rootIo = (DirectoryInfo)getRootIo.Invoke(null, null);
 ```
 

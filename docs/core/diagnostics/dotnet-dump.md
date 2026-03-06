@@ -504,15 +504,9 @@ Fields:
 
 ## Collect a dump in a Docker container
 
-To collect dumps from .NET processes running in Docker containers, use either `dotnet-dump` (requires `ptrace` permissions) or `dotnet-gcdump` (no additional permissions required). For complete guidance, see [Collect diagnostics in Linux containers](diagnostics-in-containers.md).
+`dotnet-dump` requires `ptrace` capabilities in the container. A common way to grant them is to start the container with `--cap-add=SYS_PTRACE`. Depending on your environment, you might also need to adjust the container's seccomp profile. See the [Dumps: FAQ](faq-dumps.yml) for help diagnosing container security configuration issues.
 
-The following two tools are available depending on your container's `ptrace` permissions:
-
-- **dotnet-dump** — Collects a dump in the traditional Linux core format that you can load in a native debugger such as `lldb` or analyze using the `dotnet-dump analyze` command. This tool requires `ptrace` capabilities in the container. A common way to grant them is to start the container with `--cap-add=SYS_PTRACE`. Depending on your environment, you might also need to adjust the container's seccomp profile. See the [Dumps: FAQ](faq-dumps.yml) for help diagnosing container security configuration issues.
-
-- **[dotnet-gcdump](dotnet-gcdump.md)** — Captures all objects on the GC heap, including their types and references to other objects, without requiring container privileges. On Windows, load the dump file in Visual Studio or PerfView for analysis.
-
-You can install these tools in a production image without the .NET SDK by using a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) to copy the tool binaries from an SDK image.
+To install `dotnet-dump` in a production image without the .NET SDK, use the [direct download links](#install) from the Install section, or use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) to copy the tool binaries from an SDK image. For complete container diagnostics guidance, see [Collect diagnostics in Linux containers](diagnostics-in-containers.md).
 
 ## Troubleshooting dump collection issues
 

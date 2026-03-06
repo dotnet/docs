@@ -12,12 +12,12 @@ helpviewer_keywords:
 ---
 # Preprocessor directives
 
-C# preprocessor directives tell the compiler what code to include, exclude, or treat differently when it builds your app, which can change the resulting program's run-time behavior. They always start with `#` and must appear as a directive on their own line (ignoring leading whitespace), although you can add a trailing comment after the directive. While the [language reference](../../language-reference/preprocessor-directives.md) documents all available directives, four groups cover the vast majority of everyday use:
+C# preprocessor directives tell the compiler what code to include, exclude, or treat differently when it builds your app, which can change the resulting program. Preprocessor directives always start with `#` and must appear on their own line (ignoring leading whitespace). You can add a trailing comment after the directive. While the [language reference](../../language-reference/preprocessor-directives.md) documents all available directives, three groups cover the vast majority of everyday use:
 
 - **Conditional compilation** (`#if` / `#elif` / `#else` / `#endif`) — include or exclude code based on build configuration or target framework.
-- **Regions** (`#region` / `#endregion`) — mark collapsible sections in your editor.
 - **Nullable context** (`#nullable`) — control nullable reference type analysis at a fine-grained level.
 - **Warning suppression** (`#pragma warning`) — suppress or restore specific compiler warnings.
+- **File-based apps** (`#:`) - configure file-based apps.
 
 ## Conditional compilation
 
@@ -32,14 +32,6 @@ You can combine symbols with logical operators: `&&` (and), `||` (or), and `!` (
 :::code language="csharp" source="snippets/preprocessor-directives/Program.cs" id="CombinedConditions":::
 
 Use `#define` at the top of a file to define your own symbols. You can also define symbols for the entire project by using the [`DefineConstants`](../../language-reference/compiler-options/language.md#defineconstants) property in your project file.
-
-## Regions
-
-Use `#region` and `#endregion` to mark collapsible sections of code in your editor. Regions don't affect compilation—they're purely an organizational tool:
-
-:::code language="csharp" source="snippets/preprocessor-directives/Regions.cs" id="RegionExample":::
-
-Use regions to group related members. For example, you might use regions to define members of an interface when a type implements multiple interfaces.
 
 ## Nullable context
 

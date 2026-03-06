@@ -137,12 +137,20 @@ PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO")
 DirectoryInfo rootIo = (DirectoryInfo)rootIoProperty.GetValue(null);
 ```
 
-Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these backing methods directly using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>:
+Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these accessor methods directly using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>. However, <xref:System.Type.GetMethod(System.String)?displayProperty=nameWithType> only returns public methods. When an accessor is non-public (such as the `private set` in the example), you must use the overload that accepts <xref:System.Reflection.BindingFlags>:
 
 ```csharp
+// Public getter — no BindingFlags needed
 MethodInfo getRootIo = pathsType.GetMethod("get_RootIO")
     ?? throw new InvalidOperationException("Accessor method 'get_RootIO' was not found on type 'Paths'.");
 DirectoryInfo rootIo = (DirectoryInfo)getRootIo.Invoke(null, null);
+
+// Non-public setter — must use BindingFlags
+MethodInfo setRootIo = pathsType.GetMethod(
+    "set_RootIO",
+    BindingFlags.Static | BindingFlags.NonPublic)
+    ?? throw new InvalidOperationException("Accessor method 'set_RootIO' was not found on type 'Paths'.");
+setRootIo.Invoke(null, new object[] { newValue });
 ```
 
 The same pattern applies to static fields, which you can access via <xref:System.Reflection.FieldInfo.GetValue%2A?displayProperty=nameWithType> and <xref:System.Reflection.FieldInfo.SetValue%2A?displayProperty=nameWithType>, and to static methods, which you invoke with <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=nameWithType>.

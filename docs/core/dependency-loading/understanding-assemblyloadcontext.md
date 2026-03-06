@@ -118,22 +118,24 @@ Types loaded into a custom <xref:System.Runtime.Loader.AssemblyLoadContext> are 
 For example, consider this static class in a dynamically loaded assembly:
 
 ```csharp
+namespace MyPlugin;
+
 public static class Paths
 {
     public static DirectoryInfo RootIO { get; private set; }
 }
 ```
 
-Use <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithType> to read the property value. Pass `null` as the first argument because static members don't require an instance:
+Use <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithType> to read the property value. Pass `null` as the first argument because static members don't require an instance. Pass the fully qualified type name (including the namespace) to <xref:System.Reflection.Assembly.GetType(System.String)?displayProperty=nameWithType>:
 
 ```csharp
-// Get the type from the loaded assembly
-Type pathsType = loadedAssembly.GetType("Paths")
-    ?? throw new InvalidOperationException("Type 'Paths' not found in loaded assembly.");
+// Get the type from the loaded assembly using the fully qualified name
+Type pathsType = loadedAssembly.GetType("MyPlugin.Paths")
+    ?? throw new InvalidOperationException("Type 'MyPlugin.Paths' not found in loaded assembly.");
 
 // Use PropertyInfo to access a static property
 PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO")
-    ?? throw new InvalidOperationException("Property 'RootIO' was not found on type 'Paths'.");
+    ?? throw new InvalidOperationException("Property 'RootIO' was not found on type 'MyPlugin.Paths'.");
 DirectoryInfo rootIo = (DirectoryInfo)rootIoProperty.GetValue(null);
 ```
 
@@ -142,14 +144,14 @@ Alternatively, C# compiles property accessors into methods with `get_` and `set_
 ```csharp
 // Public getter — no BindingFlags needed
 MethodInfo getRootIo = pathsType.GetMethod("get_RootIO")
-    ?? throw new InvalidOperationException("Accessor method 'get_RootIO' was not found on type 'Paths'.");
+    ?? throw new InvalidOperationException("Accessor method 'get_RootIO' was not found on type 'MyPlugin.Paths'.");
 DirectoryInfo rootIo = (DirectoryInfo)getRootIo.Invoke(null, null);
 
 // Non-public setter — must use BindingFlags
 MethodInfo setRootIo = pathsType.GetMethod(
     "set_RootIO",
     BindingFlags.Static | BindingFlags.NonPublic)
-    ?? throw new InvalidOperationException("Accessor method 'set_RootIO' was not found on type 'Paths'.");
+    ?? throw new InvalidOperationException("Accessor method 'set_RootIO' was not found on type 'MyPlugin.Paths'.");
 setRootIo.Invoke(null, new object[] { newValue });
 ```
 

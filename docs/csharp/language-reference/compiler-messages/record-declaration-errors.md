@@ -78,7 +78,7 @@ In addition, this article covers the following warning:
 - **CS8877**: *Record member may not be static.*
 - **CS8879**: *Record member must be private.*
 
-When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [C# language specification for records](~/_csharpstandard/standard/classes.md#1428-record-types).
+When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
 
 To correct these errors, apply the following changes to your explicitly declared record members:
 
@@ -92,19 +92,19 @@ To correct these errors, apply the following changes to your explicitly declared
 
 ## Positional members
 
-- **CS8866**: *Record member must be a readable instance property or field of type to match positional parameter.*
+- **CS8866**: *Record member must be a readable instance property or field of the type to match the positional parameter.*
 - **CS8907**: *Parameter is unread. Did you forget to use it to initialize the property with that name?*
 - **CS8908**: *The type may not be used for a field of a record.*
 - **CS8913**: *The positional member found corresponding to this parameter is hidden.*
 
-When you declare a [positional record](../builtin-types/record.md#positional-syntax-for-property-definition), the compiler synthesizes properties that correspond to each positional parameter. These diagnostics indicate that your explicit declarations conflict with those synthesized properties. For the complete rules, see the [C# language specification for records](~/_csharpstandard/standard/classes.md#1428-record-types).
+When you declare a [positional record](../builtin-types/record.md#positional-syntax-for-property-and-field-definition), the compiler synthesizes properties that correspond to each positional parameter. These diagnostics indicate that your explicit declarations conflict with those synthesized properties. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
 
 To correct these errors, apply the following changes to your positional record declarations:
 
-1. Change any explicitly declared member that corresponds to a positional parameter so that it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/functional/pattern-matching-overview.md) can access the value correctly (**CS8866**).
+1. Change any explicitly declared member that corresponds to a positional parameter so that it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../../fundamentals/functional/pattern-matching-overview.md) can access the value correctly (**CS8866**).
 1. Ensure that each positional parameter is used to initialize its corresponding property in the constructor body when you provide an explicit constructor. The compiler raises a warning when a parameter goes unused because it typically indicates a typo or a mismatch between the parameter name and the property name, which would leave the property uninitialized (**CS8907**).
 1. Change the type of a field declared in a record to a type that's valid in that context. Certain types, such as `Span<T>` or other ref struct types, can't be used as fields in a record because record types require all fields to be compatible with heap allocation and value-based equality (**CS8908**).
-1. Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/functional/pattern-matching-overview.md) (**CS8913**).
+1. Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../../fundamentals/functional/pattern-matching-overview.md) (**CS8913**).
 
 ## Equality members
 
@@ -123,7 +123,7 @@ To correct these errors, apply the following changes:
 - **CS8864**: *Records may only inherit from object or another record*
 - **CS8865**: *Only records may inherit from records.*
 
-[Record class types](../builtin-types/record.md) follow specific [inheritance](../builtin-types/record.md#equality-in-inheritance-hierarchies) rules. For the complete rules, see the [C# language specification for records](~/_csharpstandard/standard/classes.md#1428-record-types).
+[Record class types](../builtin-types/record.md) follow specific [inheritance](../builtin-types/record.md#equality-in-inheritance-hierarchies) rules. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
 
 To correct these errors, apply the following changes:
 
@@ -135,7 +135,7 @@ To correct these errors, apply the following changes:
 - **CS8859**: *Members named 'Clone' are disallowed in records.*
 - **CS8860**: *Types and aliases should not be named 'record'.*
 
-The compiler reserves certain names for use with [record types](../builtin-types/record.md). For the complete rules, see the [C# language specification for records](~/_csharpstandard/standard/classes.md#1428-record-types).
+The compiler reserves certain names for use with [record types](../builtin-types/record.md). For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
 
 To correct these errors, apply the following changes:
 

@@ -34,7 +34,7 @@ GitHub Copilot app modernization is included in Visual Studio and doesn't requir
 ## Verify the installation
 
 1. Open a solution in Visual Studio.
-1. Right-click a project in **Solution Explorer** and select **Modernize**, or open **GitHub Copilot Chat** and type `@modernize-dotnet`.
+1. Right-click a project in **Solution Explorer** and select **Modernize**, or open **GitHub Copilot Chat** and type `@Modernize`.
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ Before you install, make sure you have the following:
 
 Complete these three steps to install:
 
-1. Open GitHub Copilot.
+1. Open the GitHub Copilot chat window.
 
 1. Add the marketplace plugin:
 

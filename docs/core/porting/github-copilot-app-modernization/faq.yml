@@ -42,7 +42,7 @@ sections:
 
       - question: Which model should I use?
         answer: |
-          Use a good coding model, such as Claude Sonnet 4.5 or GPT 5.2-codex.
+          Use a good coding model. Model availability is dependent on your Copilot subscription and environment. For a comparison of models, see [GitHub Copilot AI model comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison).
 
       - question: Can I train the model based on my code base?
         answer: |
@@ -54,7 +54,7 @@ sections:
         answer: |
           The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports.
 
-          If you manually adjust a fix, provide additional instructions in chat, or update the markdown in the plan file, it learns from that interaction in the short term.
+          If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, it learns from that interaction in the short term.
 
       - question: Does the agent store my source code?
         answer: |

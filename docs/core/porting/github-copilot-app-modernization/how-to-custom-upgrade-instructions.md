@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Apply custom upgrade instructions for .NET upgrades
 
-Custom upgrade instructions are markdown files that guide GitHub Copilot app modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or applying a specific API upgrade.
+Custom upgrade instructions are Markdown files that guide GitHub Copilot app modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or applying a specific API upgrade.
 
 This article explains how to create and structure a custom upgrade instruction file, test it in isolation, and integrate it into the assessment stage of an upgrade workflow.
 
@@ -43,8 +43,12 @@ Follow these steps to generate and refine a new instruction file. These sections
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 
+   \-or-
+
+   Open the Copilot chat panel and type `@Modernize` to start a conversation with the agent.
+
    > [!NOTE]
-   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel. In Visual Studio, the agent is named `Modernize`.
 
 1. In the chat, type: `I want to generate a custom upgrade instruction`.
 1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.

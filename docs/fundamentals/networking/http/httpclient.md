@@ -358,7 +358,7 @@ The default instance returned by this property initializes according to a differ
 - **macOS**: Read proxy configuration from environment variables, or if variables aren't defined, read from system proxy settings.
 - **Linux**: Read proxy configuration from environment variables, or if variables aren't defined, initialize a nonconfigured instance to bypass all addresses.
 
-On Windows, when you enable **Automatically detect settings** in the proxy settings, the system uses the Web Proxy Auto-Discovery (WPAD) protocol. WPAD queries DNS for a host named `wpad` and downloads a Proxy Auto-Config (PAC) file from `http://wpad/wpad.dat`. The PAC file is a JavaScript file that the system evaluates to determine the correct proxy for each URL.
+On Windows, when you enable **Automatically detect settings** in the proxy settings, the system typically uses the Web Proxy Auto-Discovery (WPAD) protocol. In the most common configuration, WPAD queries DNS for a host named `wpad` (and might try variants based on DNS search suffixes), then downloads a Proxy Auto-Config (PAC) file, often from a URL such as `http://wpad/wpad.dat`. Network administrators can also configure WPAD through DHCP or custom PAC URLs, so the exact discovery steps and PAC URL depend on your network configuration. The PAC file is a JavaScript file that the system evaluates to determine the correct proxy for each URL.
 
 The `DefaultProxy` property initialization on Windows and Unix-based platforms uses the following environment variables:
 

@@ -55,7 +55,7 @@ For corresponding types in Visual Basic, C#, and C++, see the [Introduction to t
 
 ## PinvokeLib.dll
 
-The following code defines the library functions provided by Pinvoke.dll. Many samples described in this section call this library.
+The following code defines the library functions provided by PInvokeLib.dll. Many samples described in this section call this library.
 
 ### Example
 

@@ -13,8 +13,8 @@ internal struct MyPoint
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
 internal struct MyPerson
 {
-    public string? first;
-    public string? last;
+    public string first;
+    public string last;
 }
 
 [StructLayout(LayoutKind.Sequential)]
@@ -44,7 +44,7 @@ internal struct MyArrayStruct
     public bool flag;
 
     [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-    public int[]? vals;
+    public int[] vals;
 }
 // </ManagedTypes>
 

@@ -1,8 +1,8 @@
 ---
 title: How to upgrade a .NET app with GitHub Copilot app modernization
-description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot app modernization in Visual Studio. This step-by-step guide covers the three-stage workflow: assessment, planning, and execution."
+description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot app modernization. This step-by-step guide covers the three-stage workflow: assessment, planning, and execution."
 ms.topic: how-to
-ms.date: 12/12/2025
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to upgrade my .NET app using GitHub Copilot app modernization so that I can modernize my codebase efficiently with AI assistance through a structured three-stage process.
@@ -11,19 +11,17 @@ ai-usage: ai-assisted
 
 # Upgrade a .NET app with GitHub Copilot app modernization
 
-GitHub Copilot app modernization is an AI-powered agent in Visual Studio that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications using a structured three-stage workflow: assessment, planning, and execution.
+GitHub Copilot app modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications using a structured three-stage workflow: assessment, planning, and execution.
 
-The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and assists with code fixes throughout the process. It supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
+The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. It supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following requirements:
-
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
+Set up GitHub Copilot app modernization in your development environment before starting an upgrade. For installation steps, see [Install GitHub Copilot app modernization](install.md).
 
 ## Initiate the upgrade
 
-To start an upgrade, interact with GitHub Copilot chat to initiate the modernization agent:
+To start an upgrade, use the `modernize-dotnet` agent in Copilot:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
@@ -39,7 +37,7 @@ The three stages are:
 
 The assessment stage examines your project structure, dependencies, and code patterns to identify what needs to change. Copilot automatically starts this stage and generates an `assessment.md` file in `.github/upgrades`.
 
-The assessment lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope so you know exactly what needs attention. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 9.0:
+The assessment lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope so you know what needs attention. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 10.0:
 
 ```markdown
 # Projects and dependencies analysis
@@ -70,7 +68,7 @@ This document provides a comprehensive overview of the projects and their depend
 ...
 ```
 
-To review and customize the plan:
+To review and customize the assessment:
 
 1. Open the `assessment.md` file in `.github/upgrades`.
 1. Review the identified breaking changes and compatibility problems.
@@ -131,7 +129,7 @@ To review and customize the plan:
 
 The execution stage breaks the plan into sequential, concrete tasks with validation criteria. When you tell Copilot to proceed to execution, it generates a `tasks.md` file in `.github/upgrades`.
 
-The task list describes each task and explains how Copilot confirms it succeeded. The following example shows the task list for a solution containing ASP.NET Core and WPF projects:
+The task list describes each task and how Copilot validates success. The following example shows the task list for a solution containing ASP.NET Core and WPF projects:
 
 ```markdown
 # MvcMovieNet6 .NET 10 Upgrade Tasks
@@ -185,13 +183,15 @@ To run the upgrade:
 1. Tell Copilot to start the upgrade.
 1. Monitor progress by reviewing the `tasks.md` file as Copilot updates task statuses.
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
-1. Let Copilot learn from your interventions and continue the upgrade.
+1. Copilot learns from your changes and continues the upgrade.
 
 The tool creates a Git commit for every portion of the process, so you can easily roll back changes or get detailed information about what changed.
 
 ## Verify the upgrade
 
-When the upgrade finishes, Copilot shows next steps in the chat response to guide you on what to do after the process. Review the `tasks.md` file for the status of every step. The tool creates a Git commit for every portion of the upgrade process, so you can easily roll back changes or get detailed information about what changed.
+When the upgrade finishes, Copilot shows recommended next steps in the chat response. Review the `tasks.md` file for the status of every step.
+
+The tool creates a Git commit for every portion of the upgrade process, so you can easily roll back changes or get detailed information about what changed.
 
 The following example shows completed tasks for an ASP.NET Core project upgrade:
 
@@ -228,4 +228,5 @@ To verify the upgrade:
 ## Related content
 
 - [What is GitHub Copilot app modernization?](overview.md)
+- [Install GitHub Copilot app modernization](install.md)
 - [GitHub Copilot app modernization FAQ](faq.yml)

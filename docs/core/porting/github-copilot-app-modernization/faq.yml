@@ -18,7 +18,9 @@ summary: |
   - Copilot Business
   - Copilot Enterprise
 
-  GitHub Copilot app modernization is available in Visual Studio, Visual Studio Code, GitHub Copilot CLI, and on GitHub.com. In Visual Studio, it's included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer). For setup details, see the [install article](install.md).
+  GitHub Copilot app modernization is available in Visual Studio, Visual Studio Code, GitHub Copilot CLI, and on GitHub.com. For Visual Studio, it's included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer).
+  
+  For more information about installation, [Install GitHub Copilot app modernization](install.md).
 
 sections:
   - name: Modernization agent
@@ -46,11 +48,9 @@ sections:
 
       - question: Can I train the model based on my code base?
         answer: |
-          No. Unlike traditional AI tools where you might enter freeform prompts, the agent operates in a structured way. The AI is embedded in the build-and-fix process, so the prompts it uses are predefined and tied to the upgrade plan. You can't train it on your codebase or manually steer it with custom instructions, beyond the changes you make to the plan Markdown file.
+          No. Unlike traditional AI tools where you might enter freeform prompts, the agent operates in a structured way. The AI is embedded in the build-and-fix process, so the prompts it uses are predefined and tied to the upgrade plan. You can't train it on your codebase, but it's used as context by the agent.
 
-          
-
-      - question: Can I customize or steer the agent?
+      - question: Can I customize or guide the agent?
         answer: |
           The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports.
 

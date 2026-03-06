@@ -48,7 +48,7 @@ Follow these steps to generate and refine a new instruction file. These sections
    Open the Copilot chat panel and type `@Modernize` to start a conversation with the agent.
 
    > [!NOTE]
-   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel. In Visual Studio, the agent is named `Modernize`.
+   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel. In Visual Studio, the agent is named `Modernize`.
 
 1. In the chat, type: `I want to generate a custom upgrade instruction`.
 1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.

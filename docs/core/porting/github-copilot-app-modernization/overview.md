@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot app modernization overview
-description: "Learn about GitHub Copilot app modernization, a Copilot agent available across Visual Studio, VS Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
+description: "Learn about GitHub Copilot app modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 03/04/2026

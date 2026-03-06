@@ -1,14 +1,17 @@
 ---
 title: "Marshalling Data with Platform Invoke"
 description: Marshal data with platform invoke in .NET. See a list of data types used in Windows APIs and C-style functions, and find their .NET managed type equivalents.
-ms.date: "03/20/2019"
+ms.date: "03/06/2026"
 dev_langs:
+  - "csharp"
+  - "vb"
   - "cpp"
 helpviewer_keywords:
   - "platform invoke, marshalling data"
   - "data marshalling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
+ai-usage: ai-assisted
 ---
 # Marshalling Data with Platform Invoke
 
@@ -52,7 +55,7 @@ For corresponding types in Visual Basic, C#, and C++, see the [Introduction to t
 
 ## PinvokeLib.dll
 
-The following code defines the library functions provided by Pinvoke.dll. Many samples described in this section call this library.
+The following code defines the library functions provided by PInvokeLib.dll. Many samples described in this section call this library.
 
 ### Example
 
@@ -60,17 +63,21 @@ The following code defines the library functions provided by Pinvoke.dll. Many s
 
 [!code-cpp[PInvokeLib#2](../../../samples/snippets/cpp/VS_Snippets_CLR/pinvokelib/cpp/pinvokelib.h#2)]
 
-To call the library functions from managed code, first implement the managed prototypes for each function you want to invoke.
-If the unmanaged code uses any custom types, you must also declare those types in your managed code.  
-Decorate the prototype with the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute.
+To call the library functions from managed code, implement managed prototypes for each function you want to invoke. If the unmanaged code uses any custom types, you must also declare those types in your managed code. Decorate each prototype with the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute, and use <xref:System.Runtime.InteropServices.StructLayoutAttribute> to control the layout of managed structures so they match the unmanaged equivalents.
 
-The following code shows an example prototype:
+### Managed type declarations
 
-```csharp
-// Managed prototype for TestingStructInStruct, which is declared and defined in an unmanaged library.
-[DllImport("..\\LIB\\PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
-internal static extern int TestStructInStruct(ref MyPerson2 person2);
-```
+The following code shows the managed equivalents of the unmanaged types defined in `PInvokeLib.h`. Each structure uses `StructLayout` to ensure the field layout matches the unmanaged layout:
+
+:::code language="csharp" source="./snippets/marshalling-data-with-platform-invoke/csharp/PInvokeLibManaged/NativeMethods.cs" id="ManagedTypes":::
+:::code language="vb" source="./snippets/marshalling-data-with-platform-invoke/vb/PInvokeLibManaged/NativeMethods.vb" id="ManagedTypes":::
+
+### Managed function prototypes
+
+The following code shows the `DllImport` declarations that expose the unmanaged functions from `PinvokeLib.dll` to managed code:
+
+:::code language="csharp" source="./snippets/marshalling-data-with-platform-invoke/csharp/PInvokeLibManaged/NativeMethods.cs" id="NativeMethods":::
+:::code language="vb" source="./snippets/marshalling-data-with-platform-invoke/vb/PInvokeLibManaged/NativeMethods.vb" id="NativeMethods":::
 
 For more information and examples, see the following articles:
 

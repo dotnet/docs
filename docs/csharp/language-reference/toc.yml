@@ -488,6 +488,12 @@ items:
     displayName: >
       CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1704, CS1683, CS1714,
       CS1760, CS7008, CS7068, CS7069, CS7071, CS7079, CS8090, CS8203, CS9286
+  - name: Record declarations
+    href: ./compiler-messages/record-declaration-errors.md
+    displayName: >
+      record, record struct, record class, positional record,
+      CS8851, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8870, CS8872, CS8873,
+      CS8874, CS8875, CS8877, CS8879, CS8907, CS8908, CS8913
   - name: Constructor declarations
     href: ./compiler-messages/constructor-errors.md
     displayName: >

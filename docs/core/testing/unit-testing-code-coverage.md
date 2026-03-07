@@ -163,14 +163,25 @@ There are two types of code coverage tools:
 
 In this section, the focus is on data collector tools.
 
-.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file isn't human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
+### Code coverage approaches
+
+.NET provides two different testing platforms, each with its own code coverage approach:
+
+- **VSTest-based frameworks** (MSTest, NUnit, xUnit) - Can use either the built-in .NET code coverage collector or [Coverlet](https://github.com/coverlet-coverage/coverlet), an open-source alternative.
+- **Microsoft.Testing.Platform-based frameworks** (MSTest runner, NUnit runner, TUnit, xUnit runner) - Use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md).
+
+The built-in .NET code coverage data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file isn't human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
 
 > [!TIP]
 > The `dotnet-coverage` tool is a cross-platform tool that can be used to convert the binary coverage test results file to a human-readable format. For more information, see [dotnet-coverage](../additional-tools/dotnet-coverage.md).
 
-[Coverlet](https://github.com/coverlet-coverage/coverlet) is an open-source alternative to the built-in collector. It generates test results as human-readable Cobertura XML files, which can then be used to generate HTML reports. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md) and the corresponding [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package.
+Coverlet generates test results as human-readable Cobertura XML files, which can then be used to generate HTML reports. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md) and the corresponding [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package.
 
-## Integrate with .NET test
+## Code coverage with VSTest
+
+VSTest is a testing platform used by MSTest, NUnit, and xUnit. For VSTest-based projects, you can use either Coverlet or the built-in .NET code coverage collector.
+
+### Using Coverlet with VSTest
 
 The xUnit test project template already integrates with [coverlet.collector](https://www.nuget.org/packages/coverlet.collector) by default.
 From the command prompt, change directories to the *XUnit.Coverlet.Collector* project, and run the [`dotnet test`](../tools/dotnet-test.md) command:
@@ -292,6 +303,68 @@ reportgenerator
 After running this command, an HTML file represents the generated report.
 
 :::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test-generated report":::
+
+## Code coverage with Microsoft.Testing.Platform
+
+[Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) is a lightweight and portable alternative to VSTest for running tests. Frameworks built on this platform use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md) for code coverage.
+
+The following frameworks support Microsoft.Testing.Platform:
+- **MSTest** (via MSTest runner)
+- **NUnit** (via NUnit runner)
+- **TUnit**
+- **xUnit** (via xUnit runner)
+
+### Setting up code coverage with Microsoft.Testing.Platform
+
+The setup process is consistent across all Microsoft.Testing.Platform-based frameworks. Add the code coverage package to your test project:
+
+```dotnetcli
+dotnet add package Microsoft.Testing.Extensions.CodeCoverage
+```
+
+### Configuring Microsoft.Testing.Platform mode
+
+Some frameworks require Microsoft.Testing.Platform mode to be explicitly configured. Add this configuration to your `global.json` file in the solution root:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
+
+> [!NOTE]
+> This configuration requires .NET 10 SDK or later. Frameworks like MSTest runner, NUnit runner, and xUnit runner support both VSTest and Microsoft.Testing.Platform, so this configuration is optional for those frameworks. TUnit only supports Microsoft.Testing.Platform, so this configuration is required.
+
+### Running code coverage
+
+Run tests with code coverage using the `--coverage` flag:
+
+```dotnetcli
+dotnet test --coverage
+```
+
+This generates a `.coverage` file in the `TestResults` directory. The `--coverage` flag is specific to Microsoft.Testing.Platform and provides a unified code coverage experience across all supported frameworks.
+
+To generate reports in other formats, use the `--coverage-output-format` option:
+
+```dotnetcli
+dotnet test --coverage --coverage-output-format cobertura
+```
+
+Supported output formats include:
+- `coverage` (binary format, default)
+- `cobertura` (XML format)
+- `xml` (XML format)
+
+### Framework-specific documentation
+
+For detailed information about using Microsoft.Testing.Platform with specific frameworks, see:
+- [Unit testing with MSTest runner](unit-testing-mstest-runner-intro.md)
+- [Unit testing with NUnit runner](unit-testing-nunit-runner-intro.md)
+- [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md)
+- [Microsoft Testing Platform with xUnit.net](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)
 
 ## See also
 

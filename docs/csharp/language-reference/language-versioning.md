@@ -2,7 +2,7 @@
 title: Language versioning
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice.
 ms.custom: "updateeachrelease"
-ms.date: 01/16/2026
+ms.date: 02/04/2026
 ---
 
 # C# language versioning
@@ -11,7 +11,7 @@ The latest C# compiler determines a default language version based on your proje
 
 [!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
-[C# 14](../whats-new/csharp-14.md) is supported only on .NET 10 and newer versions. [C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. [C# 12](../whats-new/csharp-12.md) is supported only on .NET 8 and newer versions. Using a C# language version newer than the version associated with your target TFM is unsupported.
+[C# 15](../whats-new/csharp-15.md) is supported only on .NET 11 and newer versions. [C# 14](../whats-new/csharp-14.md) is supported only on .NET 10 and newer versions. [C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. Using a C# language version newer than the version associated with your target TFM is unsupported.
 
 For details on which .NET versions are supported by versions of Visual Studio, see the [Visual Studio platform compatibility](/visualstudio/releases/2026/compatibility#-visual-studio-support-for-net-development) page.
 

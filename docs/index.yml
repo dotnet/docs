@@ -34,7 +34,7 @@ highlightedContent:
     # Card
     - title: Aspire
       itemType: overview
-      url: /dotnet/aspire
+      url: https://aspire.dev/
     # Card
     - title: "Build .NET apps with C#"
       itemType: learn
@@ -123,7 +123,7 @@ conceptualContent:
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
-        - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
+        - url: https://aspire.dev/get-started/first-app/
           itemType: quickstart
           text: Build cloud-native apps with Aspire
         - url: core/docker/build-container.md
@@ -297,7 +297,7 @@ additionalContent:
           links:
             - url: azure/index.yml
               text: Azure for .NET developers
-            - url: /dotnet/aspire
+            - url: https://aspire.dev/
               text: Aspire
             - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
               text: Migrate on-premises .NET web apps or services

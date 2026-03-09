@@ -7,15 +7,15 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-You use the <xref:System.Xml.XmlReader.Create%2A> method to obtain <xref:System.Xml.XmlReader> instances. This method uses the <xref:System.Xml.XmlReaderSettings> class to specify which features to implement in the <xref:System.Xml.XmlReader> object it creates.
+You use the <xref:System.Xml.XmlReader.Create*> method to obtain <xref:System.Xml.XmlReader> instances. This method uses the <xref:System.Xml.XmlReaderSettings> class to specify which features to implement in the <xref:System.Xml.XmlReader> object it creates.
 
-See the Remarks sections of the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlReader.Create%2A> reference pages for information about which settings to use for conformance checks, validation, and other common scenarios. See the <xref:System.Xml.XmlReaderSettings.%23ctor> constructor for a list of default settings.
+See the Remarks sections of the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlReader.Create*> reference pages for information about which settings to use for conformance checks, validation, and other common scenarios. See the <xref:System.Xml.XmlReaderSettings.%23ctor> constructor for a list of default settings.
 
 ## Security considerations
 
 Consider the following when using the <xref:System.Xml.XmlReaderSettings> class.
 
-- The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.
+- The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver*> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver*> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.
 
 - Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.
 

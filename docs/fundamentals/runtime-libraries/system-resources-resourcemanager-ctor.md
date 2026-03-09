@@ -88,7 +88,7 @@ This section pertains to the <xref:System.Resources.ResourceManager.%23ctor(Syst
 In desktop apps, the individual culture-specific resource files should be contained in satellite assemblies, and the default culture's resource file should be contained in the main assembly. A satellite assembly is assumed to contain resources for a single culture specified in that assembly's manifest, and is loaded as necessary.
 
 > [!NOTE]
-> To retrieve resources from *.resources* files directly instead of retrieving them from assemblies, you must call the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method instead to instantiate a <xref:System.Resources.ResourceManager> object.
+> To retrieve resources from *.resources* files directly instead of retrieving them from assemblies, you must call the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager*> method instead to instantiate a <xref:System.Resources.ResourceManager> object.
 
 If the resource file identified by `baseName` cannot be found in `assembly`, the method instantiates a <xref:System.Resources.ResourceManager> object, but the attempt to retrieve a specific resource throws an exception, typically <xref:System.Resources.MissingManifestResourceException>. For information about diagnosing the cause of the exception, see the "Handling the MissingManifestResourceException Exception" section of the <xref:System.Resources.ResourceManager> class topic.
 
@@ -120,4 +120,4 @@ It can be compiled by using the following command in C#:
 csc Example.cs /resource:ExampleResources.resources
 ```
 
-The example retrieves a reference to the assembly that contains the resource file by passing a type defined in that assembly to the `typeof` function (in C#) or the `GetType` function (in Visual Basic) and retrieving the value of its <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property.
+The example retrieves a reference to the assembly that contains the resource file by passing a type defined in that assembly to the `typeof` function (in C#) or the `GetType` function (in Visual Basic) and retrieving the value of its <xref:System.Type.Assembly*?displayProperty=nameWithType> property.

@@ -35,15 +35,7 @@ public class CalendarEntry
     {
         DateTime dt = Convert.ToDateTime(dateString);
 
-        // Set some reasonable boundaries for likely birth dates.
-        if (dt.Year > 1900 && dt.Year <= DateTime.Today.Year)
-        {
-            _date = dt;
-        }
-        else
-        {
-            throw new ArgumentOutOfRangeException("dateString");
-        }
+        Date = dt;
     }
 
     public TimeSpan GetTimeSpan(string dateString)

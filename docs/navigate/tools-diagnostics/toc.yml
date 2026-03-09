@@ -382,11 +382,11 @@ items:
       - name: Logging & tracing options
         href: ../../core/diagnostics/logging-tracing.md
       - name: ILogger Logging
-        href: ../../core/extensions/logging.md
+        href: ../../core/extensions/logging/overview.md
       - name: Log sampling
-        href: ../../core/extensions/log-sampling.md
+        href: ../../core/extensions/logging/log-sampling.md
       - name: Log buffering
-        href: ../../core/extensions/log-buffering.md
+        href: ../../core/extensions/logging/log-buffering.md
       - name: Observability with OpenTelemetry
         items:
           - name: Overview
@@ -474,6 +474,8 @@ items:
             href: ../../core/enrichment/process-log-enricher.md
           - name: Custom enricher
             href: ../../core/enrichment/custom-enricher.md
+          - name: HTTP client log enricher
+            href: ../../core/enrichment/http-client-log-enricher.md
       - name: Specialized diagnostics
         items:
           - name: Overview
@@ -573,6 +575,8 @@ items:
             href: ../../core/diagnostics/dotnet-counters.md
           - name: dotnet-coverage
             href: ../../core/additional-tools/dotnet-coverage.md
+          - name: dotnet-debug
+            href: ../../core/diagnostics/dotnet-debug.md
           - name: dotnet-dump
             href: ../../core/diagnostics/dotnet-dump.md
           - name: dotnet-gcdump
@@ -4140,6 +4144,10 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1026.md
           - name: SYSLIB1027
             href: ../../fundamentals/syslib-diagnostics/syslib1027.md
+          - name: SYSLIB1028
+            href: ../../fundamentals/syslib-diagnostics/syslib1028.md
+          - name: SYSLIB1029
+            href: ../../fundamentals/syslib-diagnostics/syslib1029.md
           - name: SYSLIB1030
             href: ../../fundamentals/syslib-diagnostics/syslib1030.md
           - name: SYSLIB1031

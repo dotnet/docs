@@ -13,9 +13,9 @@ The `cultureName` parameter specifies the name of the new <xref:System.Globaliza
 
 The `flags` parameter is used for a <xref:System.Globalization.CultureAndRegionModifiers> value that specifies whether the new <xref:System.Globalization.CultureAndRegionInfoBuilder> object is a new custom culture, or replaces an existing neutral culture, specific culture, or Windows locale.
 
-If the `cultureName` parameter specifies an existing .NET culture, registered custom culture, or culture generated from a Windows locale, the <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%2A> constructor automatically populates the new <xref:System.Globalization.CultureAndRegionInfoBuilder> object with culture and country/region information.
+If the `cultureName` parameter specifies an existing .NET culture, registered custom culture, or culture generated from a Windows locale, the <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor*> constructor automatically populates the new <xref:System.Globalization.CultureAndRegionInfoBuilder> object with culture and country/region information.
 
-Populate the new <xref:System.Globalization.CultureAndRegionInfoBuilder> object with culture and country/region information by invoking the <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromCultureInfo%2A> and <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromRegionInfo%2A> methods.
+Populate the new <xref:System.Globalization.CultureAndRegionInfoBuilder> object with culture and country/region information by invoking the <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromCultureInfo*> and <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromRegionInfo*> methods.
 
 ## Custom culture names
 

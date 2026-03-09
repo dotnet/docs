@@ -110,7 +110,7 @@ The Azure CLI provides different commands to assign a user-assigned managed iden
     az containerapp identity assign \
         --resource-group <resource-group-name> \
         --name <containerapp-name> \
-        --identities <user-assigned-identity-resource-id>
+        --user-assigned <user-assigned-identity-resource-id>
     ```
 
     For Azure Virtual Machines, use the Azure CLI command [`az vm identity assign`](/cli/azure/vm/identity#az-vm-identity-assign):

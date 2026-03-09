@@ -90,7 +90,7 @@ The following are considered breaking changes and are not allowed for primitive 
 
 After a component, type, or member is marked with the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange> guarantee, it cannot be changed to either <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> or <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None>.
 
-Typically, exchange types are the basic types (such as <xref:System.Int32> and <xref:System.String> in .NET) and interfaces (such as <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.IEnumerable%601>, and <xref:System.IComparable%601>) that are commonly used in public interfaces.
+Typically, exchange types are the basic types (such as <xref:System.Int32> and <xref:System.String> in .NET) and interfaces (such as <xref:System.Collections.Generic.IList`1>, <xref:System.Collections.Generic.IEnumerable`1>, and <xref:System.IComparable`1>) that are commonly used in public interfaces.
 
 Exchange types may publicly expose only other types that are also marked with <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange> compatibility. In addition, exchange types cannot depend on the behavior of Windows APIs that are prone to change.
 

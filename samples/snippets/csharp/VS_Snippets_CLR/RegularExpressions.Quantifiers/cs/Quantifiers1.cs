@@ -126,7 +126,7 @@ public class Class1
    {
       //  <Snippet6>
       string pattern = @"(00\s){2,4}";
-      string input = "0x00 FF 00 00 18 17 FF 00 00 00 21 00 00 00 00 00";
+      string input = "0x00 FF 00 00 18 17 FF 00 00 00 21 00 00 00 00 00 ";
       foreach (Match match in Regex.Matches(input, pattern))
          Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 

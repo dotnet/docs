@@ -17,7 +17,7 @@ Typically, the <xref:System.TypeInitializationException> exception reflects a ca
 
 <xref:System.TypeInitializationException> uses the HRESULT `COR_E_TYPEINITIALIZATION`, which has the value 0x80131534.
 
-For a list of initial property values for an instance of <xref:System.TypeInitializationException>, see the <xref:System.TypeInitializationException.%23ctor%2A> constructors.
+For a list of initial property values for an instance of <xref:System.TypeInitializationException>, see the <xref:System.TypeInitializationException.%23ctor*> constructors.
 
 The following sections describe some of the situations in which a <xref:System.TypeInitializationException> exception is thrown.
 
@@ -98,7 +98,7 @@ Most commonly, a <xref:System.TypeInitializationException> exception is thrown w
 
 ## Regular expression match timeout values
 
-You can set the default timeout value for a regular expression pattern matching operation on a per-application domain basis. The timeout is defined by a specifying a <xref:System.TimeSpan> value for the "REGEX_DEFAULT_MATCH_TIMEOUT" property to the  <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method. The time interval must be a valid <xref:System.TimeSpan> object that is greater than zero and less than approximately 24 days. If these requirements are not met, the attempt to set the default timeout value throws an <xref:System.ArgumentOutOfRangeException>, which in turn is wrapped in a <xref:System.TypeInitializationException> exception.
+You can set the default timeout value for a regular expression pattern matching operation on a per-application domain basis. The timeout is defined by a specifying a <xref:System.TimeSpan> value for the "REGEX_DEFAULT_MATCH_TIMEOUT" property to the  <xref:System.AppDomain.SetData*?displayProperty=nameWithType> method. The time interval must be a valid <xref:System.TimeSpan> object that is greater than zero and less than approximately 24 days. If these requirements are not met, the attempt to set the default timeout value throws an <xref:System.ArgumentOutOfRangeException>, which in turn is wrapped in a <xref:System.TypeInitializationException> exception.
 
 The following example shows the <xref:System.TypeInitializationException> that is thrown when the value assigned to the "REGEX_DEFAULT_MATCH_TIMEOUT" property is invalid. To eliminate the exception, set the"REGEX_DEFAULT_MATCH_TIMEOUT" property to a  <xref:System.TimeSpan> value that is greater than zero and less than approximately 24 days.
 

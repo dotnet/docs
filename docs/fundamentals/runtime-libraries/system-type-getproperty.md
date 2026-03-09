@@ -19,7 +19,7 @@ The search for `name` is case-sensitive. The search includes public static and p
 
 Situations in which <xref:System.Reflection.AmbiguousMatchException> occurs include the following:
 
-- A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty%2A> method that specifies parameter types.
+- A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty*> method that specifies parameter types.
 - A derived type declares a property that hides an inherited property with the same name, by using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, use the <xref:System.Type.GetProperty(System.String,System.Reflection.BindingFlags)> method overload and add the <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> flag to restrict the search to members that aren't inherited.
 
 ## <xref:System.Type.GetProperty(System.String,System.Reflection.BindingFlags)> method
@@ -38,7 +38,7 @@ The following <xref:System.Reflection.BindingFlags> modifier flags can be used t
 
 Situations in which <xref:System.Reflection.AmbiguousMatchException> occurs include the following:
 
-- A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty%2A> method that specifies parameter types.
+- A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty*> method that specifies parameter types.
 - A derived type declares a property that hides an inherited property with the same name, using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, include <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> to restrict the search to members that are not inherited.
 
 ## [GetProperty(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Type, System.Type[], System.Reflection.ParameterModifier[])](xref:System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])) method
@@ -78,6 +78,6 @@ The following <xref:System.Reflection.BindingFlags> modifier flags can be used t
 
 Visual Basic, C#, and C++ have simplified syntax for accessing indexed properties and allow one indexed property to be a default for its type. For example, if the variable `myList` refers to an <xref:System.Collections.ArrayList>, the syntax `myList[3]` (`myList(3)` in Visual Basic) retrieves the element with the index of 3. You can overload the property.
 
-In C#, this feature is called an indexer and cannot be referred to by name. By default, a C# indexer appears in metadata as an indexed property named `Item`. However, a class library developer can use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attribute to change the name of the indexer in the metadata. For example, the <xref:System.String> class has an indexer named <xref:System.String.Chars%2A>. Indexed properties created using languages other than C# can have names other than `Item`, as well.
+In C#, this feature is called an indexer and cannot be referred to by name. By default, a C# indexer appears in metadata as an indexed property named `Item`. However, a class library developer can use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attribute to change the name of the indexer in the metadata. For example, the <xref:System.String> class has an indexer named <xref:System.String.Chars*>. Indexed properties created using languages other than C# can have names other than `Item`, as well.
 
 To determine whether a type has a default property, use the <xref:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)> method to test for the <xref:System.Reflection.DefaultMemberAttribute> attribute. If the type has <xref:System.Reflection.DefaultMemberAttribute>, the <xref:System.Reflection.DefaultMemberAttribute.MemberName> property returns the name of the default property.

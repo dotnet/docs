@@ -2,11 +2,6 @@
 title: "The with expression - create new objects that are modified copies of existing objects"
 description: "Learn about a with expression that performs nondestructive mutation of C# records and structures. The `with` keyword provides the means to modify one or more properties in the new object."
 ms.date: 01/20/2026
-f1_keywords:
-  - "with_CSharpKeyword"
-helpviewer_keywords:
-  - "with expression [C#]"
-  - "with operator [C#]"
 ---
 # The `with` expression - Nondestructive mutation creates a new object with modified properties
 

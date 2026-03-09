@@ -151,13 +151,13 @@ Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1247-n
 
 ## Operator precedence
 
-The following list orders bitwise and shift operators from highest precedence to lowest precedence:
+The following list orders bitwise and shift operators in groups from highest precedence to lowest precedence:
 
-- Bitwise complement operator `~`
-- Shift operators `<<`, `>>`, and `>>>`
-- Logical AND operator `&`
-- Logical exclusive OR operator `^`
-- Logical OR operator `|`
+- ([Unary](./index.md#operator-precedence)) operators: Bitwise complement operator `~`.
+- ([Shift](./index.md#operator-precedence)) operators: Shift operators `<<`, `>>`, and `>>>`.
+- ([Bitwise logical AND](./index.md#operator-precedence)) operators: `&`.
+- ([Bitwise logical XOR](./index.md#operator-precedence)) operators: Logical exclusive OR `^`.
+- ([Bitwise logical OR](./index.md#operator-precedence)) operators: `|`.
 
 Use parentheses, `()`, to change the order of evaluation from the default operator precedence:
 

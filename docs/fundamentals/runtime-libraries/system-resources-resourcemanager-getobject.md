@@ -10,7 +10,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Resources.ResourceManager.GetObject%2A> method is used to retrieve non-string resources. These include values that belong to primitive data types such as <xref:System.Int32> or <xref:System.Double>, bitmaps (such as a <xref:System.Drawing.Bitmap?displayProperty=nameWithType> object), or custom serialized objects. Typically, the returned object must be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.
+The <xref:System.Resources.ResourceManager.GetObject*> method is used to retrieve non-string resources. These include values that belong to primitive data types such as <xref:System.Int32> or <xref:System.Double>, bitmaps (such as a <xref:System.Drawing.Bitmap?displayProperty=nameWithType> object), or custom serialized objects. Typically, the returned object must be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.
 
 The <xref:System.Resources.ResourceManager.IgnoreCase> property determines whether the comparison of `name` with the names of resources is case-insensitive or case-sensitive (the default).
 
@@ -19,7 +19,7 @@ The <xref:System.Resources.ResourceManager.IgnoreCase> property determines wheth
 
 ## <xref:System.Resources.ResourceManager.GetObject(System.String)> method
 
-The returned resource is localized for the UI culture of the current thread, which is defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the <xref:System.Resources.ResourceManager> falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.
+The returned resource is localized for the UI culture of the current thread, which is defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture*?displayProperty=nameWithType> property. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the <xref:System.Resources.ResourceManager> falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.
 
 ### Example
 
@@ -53,7 +53,7 @@ GetObject.exe
 
 ## <xref:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)> method
 
-The returned resource is localized for the culture that is specified by `culture`, or for the culture that is specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property if `culture` is `null`. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.
+The returned resource is localized for the culture that is specified by `culture`, or for the culture that is specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture*?displayProperty=nameWithType> property if `culture` is `null`. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.
 
 ### Example
 
@@ -100,4 +100,4 @@ ShowNumbers.exe
 
 ## Performance considerations
 
-If you call the <xref:System.Resources.ResourceManager.GetObject%2A> method multiple times with the same `name` parameter, do not depend on the method returning a reference to the same object with each call. This is because the <xref:System.Resources.ResourceManager.GetObject%2A> method can return a reference to an existing resource object in a cache, or it can reload the resource and return a reference to a new resource object.
+If you call the <xref:System.Resources.ResourceManager.GetObject*> method multiple times with the same `name` parameter, do not depend on the method returning a reference to the same object with each call. This is because the <xref:System.Resources.ResourceManager.GetObject*> method can return a reference to an existing resource object in a cache, or it can reload the resource and return a reference to a new resource object.

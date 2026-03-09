@@ -50,9 +50,9 @@ You can also instantiate an enumeration value in the following ways:
   :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/class2.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/Enum/Overview/vb/class2.vb" id="Snippet3":::
 
-- By calling the <xref:System.Enum.Parse%2A> or <xref:System.Enum.TryParse%2A> method to parse a string that contains the name of a constant in the enumeration. For more information, see the [Parse enumeration values](#parse-enumeration-values) section.
+- By calling the <xref:System.Enum.Parse*> or <xref:System.Enum.TryParse*> method to parse a string that contains the name of a constant in the enumeration. For more information, see the [Parse enumeration values](#parse-enumeration-values) section.
 
-- By calling the <xref:System.Enum.ToObject%2A> method to convert an integral value to an enumeration type. For more information, see the [Perform conversions](#perform-conversions) section.
+- By calling the <xref:System.Enum.ToObject*> method to convert an integral value to an enumeration type. For more information, see the [Perform conversions](#perform-conversions) section.
 
 ## Enumeration best practices
 
@@ -80,19 +80,19 @@ You can convert between an enumeration member and its underlying type by using a
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/class2.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/class2.vb" id="Snippet5":::
 
-The <xref:System.Enum> class also includes a <xref:System.Enum.ToObject%2A> method that converts a value of any integral type to an enumeration value. The following example uses the <xref:System.Enum.ToObject%28System.Type%2CSystem.Int32%29> method to convert an <xref:System.Int32> to an `ArrivalStatus` value. Note that, because the <xref:System.Enum.ToObject%2A> returns a value of type <xref:System.Object>, the use of a casting or conversion operator may still be necessary to cast the object to the enumeration type.
+The <xref:System.Enum> class also includes a <xref:System.Enum.ToObject*> method that converts a value of any integral type to an enumeration value. The following example uses the <xref:System.Enum.ToObject(System.Type,System.Int32)> method to convert an <xref:System.Int32> to an `ArrivalStatus` value. Note that, because the <xref:System.Enum.ToObject*> returns a value of type <xref:System.Object>, the use of a casting or conversion operator may still be necessary to cast the object to the enumeration type.
 
 :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/class2.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/class2.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/class2.vb" id="Snippet6":::
 
-When converting an integer to an enumeration value, it is possible to assign a value that is not actually a member of the enumeration. To prevent this, you can pass the integer to the <xref:System.Enum.IsDefined%2A> method before performing the conversion. The following example uses this method to determine whether the elements in an array of integer values can be converted to `ArrivalStatus` values.
+When converting an integer to an enumeration value, it is possible to assign a value that is not actually a member of the enumeration. To prevent this, you can pass the integer to the <xref:System.Enum.IsDefined*> method before performing the conversion. The following example uses this method to determine whether the elements in an array of integer values can be converted to `ArrivalStatus` values.
 
 :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classconversion1.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classconversion1.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/classconversion1.vb" id="Snippet7":::
 
-Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32%2A>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType%2A> method along with the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.
+Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32*>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType*> method along with the <xref:System.Convert.ChangeType*?displayProperty=nameWithType> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.
 
 :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classconversion2.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classconversion2.fs" id="Snippet8":::
@@ -100,7 +100,7 @@ Although the <xref:System.Enum> class provides explicit interface implementation
 
 ### Parse enumeration values
 
-The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined%2A> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> and <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29?displayProperty=nameWithType> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C# and F#) or convert (in Visual Basic) to the appropriate enumeration type.
+The <xref:System.Enum.Parse*> and <xref:System.Enum.TryParse*> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined*> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse(System.Type,System.String)> and <xref:System.Enum.TryParse`%601(System.String,%60%600%40)?displayProperty=nameWithType> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C# and F#) or convert (in Visual Basic) to the appropriate enumeration type.
 
 :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classparse1.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classparse1.fs" id="Snippet9":::
@@ -108,7 +108,7 @@ The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow
 
 ### Format enumeration values
 
-You can convert enumeration values to their string representations by calling the static <xref:System.Enum.Format%2A> method, as well as the overloads of the instance <xref:System.Enum.ToString%2A> method. You can use a format string to control the precise way in which an enumeration value is represented as a string. For more information, see [Enumeration Format Strings](../../standard/base-types/enumeration-format-strings.md). The following example uses each of the supported enumeration format strings ("G" or "g", "D" or "d", "X" or "x", and "F" or "f" ) to convert a member of the `ArrivalStatus` enumeration to its string representations.
+You can convert enumeration values to their string representations by calling the static <xref:System.Enum.Format*> method, as well as the overloads of the instance <xref:System.Enum.ToString*> method. You can use a format string to control the precise way in which an enumeration value is represented as a string. For more information, see [Enumeration Format Strings](../../standard/base-types/enumeration-format-strings.md). The following example uses each of the supported enumeration format strings ("G" or "g", "D" or "d", "X" or "x", and "F" or "f" ) to convert a member of the `ArrivalStatus` enumeration to its string representations.
 
 :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classformat1.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classformat1.fs" id="Snippet10":::
@@ -116,15 +116,15 @@ You can convert enumeration values to their string representations by calling th
 
 ### Iterate enumeration members
 
-The <xref:System.Enum> type does not implement the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, which would enable you to iterate members of a collection by using a `foreach` (in C#), `for..in` (in F#), or `For Each` (in Visual Basic) construct. However, you can enumerate members in either of two ways.
+The <xref:System.Enum> type does not implement the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable`1> interface, which would enable you to iterate members of a collection by using a `foreach` (in C#), `for..in` (in F#), or `For Each` (in Visual Basic) construct. However, you can enumerate members in either of two ways.
 
-- You can call the <xref:System.Enum.GetNames%2A> method to retrieve a string array containing the names of the enumeration members. Next, for each element of the string array, you can call the <xref:System.Enum.Parse%2A> method to convert the string to its equivalent enumeration value. The following example illustrates this approach.
+- You can call the <xref:System.Enum.GetNames*> method to retrieve a string array containing the names of the enumeration members. Next, for each element of the string array, you can call the <xref:System.Enum.Parse*> method to convert the string to its equivalent enumeration value. The following example illustrates this approach.
 
     :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classiterate.cs" id="Snippet11":::
     :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classiterate.fs" id="Snippet11":::
     :::code language="vb" source="./snippets/System/Enum/Overview/vb/classiterate.vb" id="Snippet11":::
 
-- You can call the <xref:System.Enum.GetValues%2A> method to retrieve an array that contains the underlying values in the enumeration. Next, for each element of the array, you can call the <xref:System.Enum.ToObject%2A> method to convert the integer to its equivalent enumeration value. The following example illustrates this approach.
+- You can call the <xref:System.Enum.GetValues*> method to retrieve an array that contains the underlying values in the enumeration. Next, for each element of the array, you can call the <xref:System.Enum.ToObject*> method to convert the integer to its equivalent enumeration value. The following example illustrates this approach.
 
     :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classiterate.cs" id="Snippet12":::
     :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classiterate.fs" id="Snippet12":::
@@ -156,7 +156,7 @@ The following best practices should be used when defining a bitwise enumeration 
 
 - Use caution if you define a negative number as a flag enumerated constant because many flag positions might be set to 1, which might make your code confusing and encourage coding errors.
 
-- A convenient way to test whether a flag is set in a numeric value is to call the instance <xref:System.Enum.HasFlag%2A> method, as shown in the following example.
+- A convenient way to test whether a flag is set in a numeric value is to call the instance <xref:System.Enum.HasFlag*> method, as shown in the following example.
 
   :::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classbitwise1.cs" id="Snippet15":::
   :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classbitwise1.fs" id="Snippet15":::

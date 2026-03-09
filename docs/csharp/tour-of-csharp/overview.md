@@ -1,38 +1,45 @@
 ---
 title: Overview
 description: New to C#? Learn the basics of the language. Start with this overview.
-ms.date: 06/20/2025
+ms.date: 02/06/2026
 ---
 
 # A tour of the C# language
 
-The C# language is the most popular language for the [.NET platform](../index.yml), a free, cross-platform, open source development environment. C# programs can run on many different devices, from Internet of Things (IoT) devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers.
+This article gives you a high-level overview of the C# language. Whether you're writing your first program or you're an experienced developer exploring C#, you'll find the key concepts and features here.
 
-C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
+> [!TIP]
+> **New to programming?** Skim this article for the big picture, then start the [beginner tutorials](./tutorials/index.md) to write code hands-on.
+>
+> **Coming from Java, JavaScript, or Python?** Read the tips for [Java](./tips-for-java-developers.md), [JavaScript](./tips-for-javascript-developers.md), or [Python](./tips-for-python-developers.md) developers alongside this article.
+>
+> **Experienced developer new to C#?** This article covers what makes C# distinctive. See [What you can build with C#](./what-you-can-build.md) to find the workload that fits your goals.
 
-C# is in the C family of languages. [C# syntax](../language-reference/keywords/index.md) is familiar if you used C, C++, JavaScript, TypeScript, or Java. Like C and C++, semi-colons (`;`) define the end of statements. C# identifiers are case-sensitive. C# has the same use of braces, `{` and `}`, control statements like `if`, `else` and `switch`, and looping constructs like `for`, and `while`. C# also has a `foreach` statement for any collection type.
+The C# language is the most popular language for the [.NET platform](../index.yml), a free, cross-platform, open source development environment. C# programs can run on many different devices, from Internet of Things (IoT) devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers. See [What you can build with C#](./what-you-can-build.md) for an overview of application types.
+
+C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. C# has broad support in the ecosystem and many [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
+
+C# is in the C family of languages. [C# syntax](../language-reference/keywords/index.md) is familiar if you used C, C++, JavaScript, TypeScript, or Java. Like C and C++, semicolons (`;`) define the end of statements. C# identifiers are case-sensitive. C# has the same use of braces, `{` and `}`, control statements like `if`, `else`, and `switch`, and looping constructs like `for` and `while`. C# also has a `foreach` statement for any collection type.
 
 ## Hello world
 
-The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:
+The "Hello, World" program traditionally introduces a programming language. Here's the program in C#:
 
 ```csharp
 // This line prints "Hello, World"
 Console.WriteLine("Hello, World");
 ```
 
-The line starting with `//` is a *single line comment*. C# single line comments start with  `//` and continue to the end of the current line. C# also supports *multi-line comments*. Multi-line comments start with `/*` and end with `*/`. The `WriteLine` method of the `Console` class, which is in the `System` namespace, produces the output of the program. This class is provided by the standard class libraries, which, by default, are automatically referenced in every C# program. Another program form requires you to declare the containing class and method for the program's entry point. The compiler synthesizes these elements when you use top-level statements.
+The line starting with `//` is a *single line comment*. C# single line comments start with  `//` and continue to the end of the current line. C# also supports *multi-line comments*. Multi-line comments start with `/*` and end with `*/`. The `WriteLine` method of the `Console` class, which is in the `System` namespace, produces the output of the program. The standard class libraries provide this class, and every C# program automatically references these libraries by default. Another program form requires you to declare the containing class and method for the program's entry point. The compiler synthesizes these elements when you use top-level statements.
 
 This alternative format is still valid and contains many of the basic concepts in all C# programs. Many existing C# samples use the following equivalent format:
 
 :::code language="csharp" source="./snippets/shared/HelloWorld.cs":::
 
-The preceding "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the `System` namespace contains many types, such as the `Console` class referenced in the program, and many other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`. In the earlier example, that namespace was [implicitly](../language-reference/keywords/using-directive.md#the-global-modifier) included.
+The preceding "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces. For example, the `System` namespace contains many types, such as the `Console` class referenced in the program, and many other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`. In the earlier example, that namespace was [implicitly](../language-reference/keywords/using-directive.md#the-global-modifier) included.
 
-The `Program` class declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the `static` modifier. While instance methods can reference a particular enclosing object instance using the keyword `this`, static methods operate without reference to a particular object. By convention, when there are no top-level statements a static method named `Main` serves as the [entry point](../fundamentals/program-structure/main-command-line.md) of a C# program. The class containing the `Main` method is typically named `Program`.
-
-> [!TIP]
-> The examples in this article give you a first look at C# code. Some samples might show elements of C# that you're not familiar with. When you're ready to learn C#, start with our [beginner tutorials](./tutorials/index.md), or dive into the links in each section. If you're experienced in [Java](./tips-for-java-developers.md), [JavaScript](./tips-for-javascript-developers.md), [TypeScript](./tips-for-javascript-developers.md), or [Python](./tips-for-python-developers.md), read our tips to help you find the information you need to quickly learn C#.
+> [!NOTE]
+> The preceding program declares the `Program` class with a single member: the method named `Main`. Many existing C# samples and tutorials use this format. By convention, when there are no top-level statements, a static method named `Main` serves as the [entry point](../fundamentals/program-structure/main-command-line.md) of a C# program. Both formats compile to the same code. You don't need to use this format—file-based apps and top-level statements are simpler ways to get started.
 
 ## File-based apps
 
@@ -54,13 +61,16 @@ The source for these programs must be a single file, but otherwise all C# syntax
 
 C# is approachable for beginners yet offers advanced features for experienced developers writing specialized applications. You can be productive quickly. You can learn more specialized techniques as you need them for your applications.
 
-C# apps benefit from the .NET Runtime's [automatic memory management](../../standard/automatic-memory-management.md). C# apps also use the extensive [runtime libraries](../../standard/runtime-libraries-overview.md) provided by the .NET SDK. Some components are platform independent, like file system libraries, data collections, and math libraries. Others are specific to a single workload, like the ASP.NET Core web libraries, or the .NET MAUI UI library. A rich Open Source ecosystem on [NuGet](https://nuget.org) augments the libraries that are part of the runtime. These libraries provide even more components you can use.
+C# apps benefit from the runtime's [automatic memory management](../../standard/automatic-memory-management.md). C# apps also use the extensive [runtime libraries](../../standard/runtime-libraries-overview.md) provided by the .NET SDK. Some components are platform independent, like file system libraries, data collections, and math libraries. Others are specific to a single [workload](./what-you-can-build.md), like the ASP.NET Core web libraries or the .NET MAUI UI library. A rich open source ecosystem on [NuGet](https://nuget.org) augments the libraries that are part of the runtime. These libraries provide even more components you can use.
 
-C# is a *strongly typed* language. Every variable you declare has a type known at compile time. The compiler, or editing tools tell you if you're using that type incorrectly. You can fix those errors before you ever run your program. [Fundamental data types](../fundamentals/types/index.md) are built into the language and runtime: value types like `int`, `double`, `char`, reference types like `string`, arrays, and other collections. As you write your programs, you create your own types. Those types can be `struct` types for values, or `class` types that define object-oriented behavior. You can add the `record` modifier to either `struct` or `class` types so the compiler synthesizes code for equality comparisons. You can also create `interface` definitions, which define a contract, or a set of members, that a type implementing that interface must provide. You can also define generic types and methods. [Generics](../fundamentals/types/generics.md) use *type parameters* to provide a placeholder for an actual type when used.
+C# is a *strongly typed* language. Every variable you declare has a type known at compile time. The compiler, or editing tools, tell you if you're using that type incorrectly. You can fix those errors before you ever run your program. [Fundamental data types](../fundamentals/types/index.md) are built into the language and runtime: value types like `int`, `double`, `char`, reference types like `string`, arrays, and other collections. As you write your programs, you create your own types. Those types can be `struct` types for values, or `class` types that define object-oriented behavior. You can add the `record` modifier to either `struct` or `class` types so the compiler synthesizes code for equality comparisons. You can also create `interface` definitions, which define a contract, or a set of members, that a type implementing that interface must provide. You can also define generic types and methods. [Generics](../fundamentals/types/generics.md) use *type parameters* to provide a placeholder for an actual type when used.
 
-As you write code, you define functions, also called [methods](../programming-guide/classes-and-structs/methods.md), as members of `struct` and `class` types. These methods define the behavior of your types. Methods can be overloaded, with different number or types of parameters. Methods can optionally return a value. In addition to methods, C# types can have [properties](../programming-guide/classes-and-structs/properties.md), which are data elements backed by functions called *accessors*. C# types can define [events](../events-overview.md), which allow a type to notify subscribers of important actions. C# supports object oriented techniques such as inheritance and polymorphism for `class` types.
+As you write code, you define functions, also called [methods](../programming-guide/classes-and-structs/methods.md), as members of `struct` and `class` types. These methods define the behavior of your types. You can overload methods with different numbers or types of parameters. Methods can optionally return a value. In addition to methods, C# types can have [properties](../programming-guide/classes-and-structs/properties.md), which are data elements backed by functions called *accessors*. C# types can define [events](../events-overview.md), which allow a type to notify subscribers of important actions. C# supports object oriented techniques such as inheritance and polymorphism for `class` types.
 
 C# apps use [exceptions](../fundamentals/exceptions/index.md) to report and handle errors. This practice is familiar if you used C++ or Java. Your code throws an exception when it can't do what was intended. Other code, no matter how many levels up the call stack, can optionally recover by using a `try` - `catch` block.
+
+> [!TIP]
+> To learn more about types, methods, and exceptions, visit the [C# fundamentals](../fundamentals/program-structure/index.md) section. It covers the [type system](../fundamentals/types/index.md), [object-oriented programming](../fundamentals/object-oriented/index.md), and [exception handling](../fundamentals/exceptions/index.md) in depth.
 
 ## Distinctive C# features
 
@@ -70,7 +80,7 @@ C# provides [pattern matching](../fundamentals/functional/pattern-matching.md). 
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="PatternExamples":::
 
-Pattern matching expressions can be simplified using `_` as a catch all for any value. The following example shows how you can simplify the *and* method:
+Pattern matching expressions can be simplified by using `_` as a catchall for any value. The following example shows how you can simplify the *and* method:
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="ReducedPattern":::
 
@@ -80,7 +90,7 @@ The preceding examples also declare *tuples*, lightweight data structures. A *tu
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressions.cs" id="CollectionExpressions":::
 
-The previous example shows different collection types that can be initialized using collection expressions. One example uses the `[]` empty collection expression to declare an empty collection. Another example uses the `..` *spread element* to expand a collection and add all its values to the collection expression.
+The previous example shows different collection types that you can initialize by using collection expressions. One example uses the `[]` empty collection expression to declare an empty collection. Another example uses the `..` *spread element* to expand a collection and add all its values to the collection expression.
 
 You can use *index* and *range* expressions to retrieve one or more elements from an indexable collection:
 
@@ -104,8 +114,21 @@ C# also supports an `await foreach` statement to iterate a collection backed by 
 
 :::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="ReadDataAsync":::
 
-Callers can iterate the collection using an `await foreach` statement:
+Callers can iterate the collection by using an `await foreach` statement:
 
 :::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="UseReadSequence":::
 
 Finally, as part of the .NET ecosystem, you can use [Visual Studio](https://visualstudio.microsoft.com/vs), or [Visual Studio Code](https://code.visualstudio.com) with the [C# DevKit](https://code.visualstudio.com/docs/csharp/get-started). These tools provide rich understanding of C#, including the code you write. They also provide debugging capabilities.
+
+> [!TIP]
+> To learn more about pattern matching, LINQ, and async programming, see the [functional techniques](../fundamentals/functional/pattern-matching.md), [LINQ overview](../linq/index.md), and [asynchronous programming](../asynchronous-programming/index.md) sections.
+
+## Next steps
+
+This article provided a quick tour of the C# language. Here's where to go next, depending on your experience:
+
+- **Start coding**: Work through the [beginner tutorials](./tutorials/index.md) to learn C# step by step.
+- **Go deeper**: Visit the [C# fundamentals](../fundamentals/program-structure/index.md) section for detailed coverage of the type system, object-oriented programming, and error handling.
+- **Build something**: Explore [what you can build with C#](./what-you-can-build.md) to find ideas that interest you.
+- **Coming from another language?** Read the guides for [Java](./tips-for-java-developers.md), [JavaScript](./tips-for-javascript-developers.md), or [Python](./tips-for-python-developers.md) developers.
+- **Build file-based apps**: Learn how to [build file-based apps](../fundamentals/tutorials/file-based-programs.md) for small programs and prototypes.

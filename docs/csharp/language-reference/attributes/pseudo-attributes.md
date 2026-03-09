@@ -1,6 +1,6 @@
 ---
 title: "Attributes interpreted by the compiler: Pseudo-attributes"
-ms.date: 01/14/2026
+ms.date: 02/17/2026
 description: "Learn about attributes you can add to code that are written to IL as modifiers. These custom attributes aren't emitted as attributes in the compiled output."
 ---
 # Custom attributes that generate flags or options in the Intermediate Language (IL) output
@@ -22,6 +22,9 @@ Add these attributes to your code for the compiler to emit a specified Intermedi
 | <xref:System.SerializableAttribute?displayProperty=fullName>                         | `serializable`  |           |
 | <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> | `auto`, `sequential`, or `explicit` | Layout options can be set using the parameters. |
 | <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=fullName> |                 | Add this attribute to an indexer to set a different method name. By default, indexers are compiled to a property named `Item`. You can specify a different name using this attribute. |
+
+> [!IMPORTANT]
+> The [`StructLayoutAttribute`] can't be combined with the [`ExtendedLayout`](general.md#extendedlayout-attribute) attribute.
 
 Some of these custom attributes are applied by using other C# syntax rather than adding the attribute to your source code.
 

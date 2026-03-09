@@ -7,15 +7,17 @@ HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.AddColorConsoleLogger(configuration =>
 {
-    // Replace warning value from appsettings.json of "Cyan"
-    configuration.LogLevelToColorMap[LogLevel.Warning] = ConsoleColor.DarkCyan;
-    // Replace warning value from appsettings.json of "Red"
-    configuration.LogLevelToColorMap[LogLevel.Error] = ConsoleColor.DarkRed;
+    // Replace value of "Cyan" from appsettings.json.
+    configuration.LogLevelToColorMap[LogLevel.Warning]
+        = ConsoleColor.DarkCyan;
+    // Replace value of "Red" from appsettings.json.
+    configuration.LogLevelToColorMap[LogLevel.Error]
+        = ConsoleColor.DarkRed;
 });
 
 using IHost host = builder.Build();
 
-var logger = host.Services.GetRequiredService<ILogger<Program>>();
+ILogger<Program> logger = host.Services.GetRequiredService<ILogger<Program>>();
 
 logger.LogDebug(1, "Does this line get hit?");    // Not logged
 logger.LogInformation(3, "Nothing to see here."); // Logs in ConsoleColor.DarkGreen

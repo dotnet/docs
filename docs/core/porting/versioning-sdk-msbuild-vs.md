@@ -11,7 +11,11 @@ The versioning of the .NET SDK and how it relates to Visual Studio and MSBuild c
 
 ## Versioning
 
-The first part of the .NET SDK version matches the .NET version that it includes, runs on, and targets by default. The feature band starts at 1 and increases for each quarterly .NET SDK release. The patch version increments with each month's servicing updates.
+The .NET SDK version number uses the format `major.minor.patch`, where:
+
+- `major.minor` matches the .NET version the SDK includes, runs on, and targets by default.
+- The hundreds digit of `patch` identifies the *feature band*—for example, `1xx`, `2xx`, `3xx`, or `4xx`. The feature band starts at 1 and increases for each quarterly .NET SDK release.
+- The last two digits of `patch` are the *patch version*, which increments with each month's servicing update.
 
 For example, version 7.0.203 ships with .NET 7, is the second quarterly feature band release since 7.0.100 first came out, and is the third patch since 7.0.200 released.
 

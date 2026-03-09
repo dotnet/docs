@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `pattern-matching-warnings.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to list patterns, and other pattern matching features.
+- For the duration of this chat, all references to "destination file" refer to `string-interpolations.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to string interpolations, and string interpolation handlers.
 
 The destination file already contains a skeleton for the final output.
 

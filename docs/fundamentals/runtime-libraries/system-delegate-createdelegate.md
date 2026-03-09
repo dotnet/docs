@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Delegate.CreateDelegate%2A> methods create a delegate of a specified type.
+The <xref:System.Delegate.CreateDelegate*> methods create a delegate of a specified type.
 
 ## <xref:System.Delegate.CreateDelegate(System.Type,System.Reflection.MethodInfo)> method
 
@@ -25,10 +25,10 @@ The second code example demonstrates compatible parameter types and return types
 
 #### Example 1
 
-The following code example demonstrates the two ways a delegate can be created using this overload of the <xref:System.Delegate.CreateDelegate%2A> method.
+The following code example demonstrates the two ways a delegate can be created using this overload of the <xref:System.Delegate.CreateDelegate*> method.
 
 > [!NOTE]
-> There are two overloads of the <xref:System.Delegate.CreateDelegate%2A> method that specify a <xref:System.Reflection.MethodInfo> but not a first argument; their functionality is the same except that one allows you to specify whether to throw on failure to bind, and the other always throws. This code example uses both overloads.
+> There are two overloads of the <xref:System.Delegate.CreateDelegate*> method that specify a <xref:System.Reflection.MethodInfo> but not a first argument; their functionality is the same except that one allows you to specify whether to throw on failure to bind, and the other always throws. This code example uses both overloads.
 
 The example declares a class `C` with a static method `M2` and an instance method `M1`, and two delegate types: `D1` takes an instance of `C` and a string, and `D2` takes a string.
 
@@ -112,10 +112,10 @@ For example, a delegate with a parameter of type <xref:System.Collections.Hashta
 
 Another useful way to think of the flexibility provided by the <xref:System.Delegate.CreateDelegate(System.Type,System.Object,System.Reflection.MethodInfo)> overload is that any given delegate can represent four different combinations of method signature and method kind (static versus instance). Consider a delegate type `D` with one argument of type `C`. The following describes the methods `D` can represent, ignoring the return type since it must match in all cases:
 
-- `D` can represent any instance method that has exactly one argument of type `C`, regardless of what type the instance method belongs to. When <xref:System.Delegate.CreateDelegate%2A> is called, `firstArgument` is an instance of the type `method` belongs to, and the resulting delegate is said to be closed over that instance. (Trivially, `D` can also be closed over a null reference if `firstArgument` is a null reference.)
+- `D` can represent any instance method that has exactly one argument of type `C`, regardless of what type the instance method belongs to. When <xref:System.Delegate.CreateDelegate*> is called, `firstArgument` is an instance of the type `method` belongs to, and the resulting delegate is said to be closed over that instance. (Trivially, `D` can also be closed over a null reference if `firstArgument` is a null reference.)
 
-- `D` can represent an instance method of `C` that has no arguments. When <xref:System.Delegate.CreateDelegate%2A> is called, `firstArgument` is a null reference. The resulting delegate represents an open instance method, and an instance of `C` must be supplied each time it is invoked.
+- `D` can represent an instance method of `C` that has no arguments. When <xref:System.Delegate.CreateDelegate*> is called, `firstArgument` is a null reference. The resulting delegate represents an open instance method, and an instance of `C` must be supplied each time it is invoked.
 
-- `D` can represent a static method that takes one argument of type `C`, and that method can belong to any type. When <xref:System.Delegate.CreateDelegate%2A> is called, `firstArgument` is a null reference. The resulting delegate represents an open static method, and an instance of `C` must be supplied each time it is invoked.
+- `D` can represent a static method that takes one argument of type `C`, and that method can belong to any type. When <xref:System.Delegate.CreateDelegate*> is called, `firstArgument` is a null reference. The resulting delegate represents an open static method, and an instance of `C` must be supplied each time it is invoked.
 
-- `D` can represent a static method that belongs to type `F` and has two arguments, of type `F` and type `C`. When <xref:System.Delegate.CreateDelegate%2A> is called, `firstArgument` is an instance of `F`. The resulting delegate represents a static method that is closed over that instance of `F`. Note that in the case where `F` and `C` are the same type, the static method has two arguments of that type. (In this case, `D` is closed over a null reference if `firstArgument` is a null reference.)
+- `D` can represent a static method that belongs to type `F` and has two arguments, of type `F` and type `C`. When <xref:System.Delegate.CreateDelegate*> is called, `firstArgument` is an instance of `F`. The resulting delegate represents a static method that is closed over that instance of `F`. Note that in the case where `F` and `C` are the same type, the static method has two arguments of that type. (In this case, `D` is closed over a null reference if `firstArgument` is a null reference.)

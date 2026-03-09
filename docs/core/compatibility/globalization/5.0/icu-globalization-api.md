@@ -38,7 +38,7 @@ To fix this code by conducting an ordinal search instead of a culture-sensitive 
 
 You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../../fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../../../../standard/base-types/string-comparison-net-5-plus.md).
+For more information, see [Best practices for comparing strings in .NET](../../../../standard/base-types/best-practices-strings.md).
 
 ### Currency symbol
 

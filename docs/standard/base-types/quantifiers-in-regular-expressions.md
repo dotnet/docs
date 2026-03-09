@@ -4,6 +4,7 @@ description: Learn about regular expression quantifiers, which specify how many 
 ms.date: "08/09/2022"
 ms.custom: devdivchpfy22
 ms.topic: concept-article
+ai-usage: ai-assisted
 dev_langs: 
   - "csharp"
   - "vb"
@@ -99,7 +100,7 @@ Quantifiers specify how many instances of a character, group, or character class
 
  The `{`*n*`}` quantifier matches the preceding element exactly *n* times, where *n* is any integer. `{`*n*`}` is a greedy quantifier whose lazy equivalent is `{`*n*`}?`.  
   
- For example, the regular expression `\b\d+\,\d{3}\b` tries to match a word boundary followed by one or more decimal digits followed by three decimal digits followed by a word boundary. The following example illustrates this regular expression:
+ For example, the regular expression `\b\d+\,\d{3}\b` tries to match a word boundary followed by one or more decimal digits, followed by a comma, and then three decimal digits followed by a word boundary. The following example illustrates this regular expression:
   
  [!code-csharp[RegularExpressions.Quantifiers#4](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#4)]
  [!code-vb[RegularExpressions.Quantifiers#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#4)]  
@@ -118,7 +119,7 @@ Quantifiers specify how many instances of a character, group, or character class
 
  The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`,}?`.  
   
- For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks"` and `"300 years"`.  
+ For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and one or more non-digit characters. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks"` and `"300 years"`.  
   
  [!code-csharp[RegularExpressions.Quantifiers#5](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#5)]
  [!code-vb[RegularExpressions.Quantifiers#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#5)]  

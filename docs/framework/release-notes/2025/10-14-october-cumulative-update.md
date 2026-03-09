@@ -6,6 +6,7 @@ ms.date: 10/14/2025
 # October 2025 cumulative update
 
 _Released October 14, 2025_
+_Updated November 10, 2025_
 
 ## Summary of what's new in this release
 

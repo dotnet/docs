@@ -9,7 +9,7 @@
             // The following call to exampleMethod1 causes a compiler error
             // if exampleMethod1 has only one parameter. Uncomment the line
             // to see the error.
-            //ec.exampleMethod1(10, 4);
+            // ec.exampleMethod1(10, 4);
 
             dynamic dynamic_ec = new ExampleClass();
             // The following line is not identified as an error by the
@@ -74,8 +74,10 @@
             // The following statement does not cause a compiler error, even though ec is not
             // dynamic. A run-time exception is raised because the run-time type of d1 is int.
             ec.exampleMethod2(d1);
+
             // The following statement does cause a compiler error.
-            //ec.exampleMethod2(7);
+            // Uncomment the line to see the error.
+            // ec.exampleMethod2(7);
             //</Snippet55>
         }
     }

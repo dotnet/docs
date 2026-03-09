@@ -7,7 +7,7 @@ metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 11/14/2023
+  ms.date: 03/02/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -37,16 +37,14 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 11
+            url: ../core/whats-new/dotnet-11/overview.md
           - text: What's new in .NET 10
             url: ../core/whats-new/dotnet-10/overview.md
           - text: What's new in .NET 9
             url: ../core/whats-new/dotnet-9/overview.md
           - text: What's new in .NET 8
             url: ../core/whats-new/dotnet-8/overview.md
-          - text: What's new in .NET 7
-            url: ../core/whats-new/dotnet-7.md
-          - text: What's new in .NET 6
-            url: ../core/whats-new/dotnet-6.md
 
   # Card
   - title: Install .NET
@@ -89,10 +87,8 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro
       - linkListType: tutorial
         links:
-          - text: Create a Hello World app in Visual Studio Code
-            url: ../core/tutorials/with-visual-studio-code.md
-          - text: Create a Hello World app in Visual Studio
-            url: ../core/tutorials/with-visual-studio.md
+          - text: Create a Hello World app
+            url: ../core/tutorials/create-console-app.md
           - text: Containerize a .NET Core app
             url: ../core/docker/build-container.md
       - linkListType: concept

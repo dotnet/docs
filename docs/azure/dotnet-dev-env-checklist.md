@@ -46,5 +46,5 @@ These additional tools are designed to make you more productive when working wit
 
 You will use these sites frequently when doing Azure development.  Bookmark them for quick reference.
 
-* Azure Portal - [https://portal.azure.com/](https://portal.azure.com/)
+* Azure portal - [https://portal.azure.com/](https://portal.azure.com/)
 * Azure Cloud Shell - [https://shell.azure.com/](https://shell.azure.com/)

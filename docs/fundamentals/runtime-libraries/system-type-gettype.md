@@ -10,16 +10,16 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-Use the <xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean,System.Boolean)> method overload and its associated overloads (<xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type})> and <xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean)>) to replace the default implementation of the <xref:System.Type.GetType%2A> method with more flexible implementations. By providing your own methods that resolve type names and the names of the assemblies that contain them, you can do the following:
+Use the <xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean,System.Boolean)> method overload and its associated overloads (<xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type})> and <xref:System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean)>) to replace the default implementation of the <xref:System.Type.GetType*> method with more flexible implementations. By providing your own methods that resolve type names and the names of the assemblies that contain them, you can do the following:
 
 - Control which version of an assembly a type is loaded from.
 - Provide another place to look for a type name that does not include an assembly name.
 - Load assemblies using partial assembly names.
 - Return subclasses of <xref:System.Type?displayProperty=nameWithType> that are not created by the common language runtime (CLR).
 
-For example, in version-tolerant serialization this method enables you to search for a "best fit" assembly by using a partial name. Other overloads of the <xref:System.Type.GetType%2A> method require an assembly-qualified type name, which includes the version number.
+For example, in version-tolerant serialization this method enables you to search for a "best fit" assembly by using a partial name. Other overloads of the <xref:System.Type.GetType*> method require an assembly-qualified type name, which includes the version number.
 
-Alternate implementations of the type system may need to return subclasses of <xref:System.Type?displayProperty=nameWithType> that are not created by the CLR; all types that are returned by other overloads of the <xref:System.Type.GetType%2A> method are runtime types.
+Alternate implementations of the type system may need to return subclasses of <xref:System.Type?displayProperty=nameWithType> that are not created by the CLR; all types that are returned by other overloads of the <xref:System.Type.GetType*> method are runtime types.
 
 ## Usage notes
 
@@ -47,11 +47,11 @@ General usage notes:
 
 The `assemblyResolver` method receives an <xref:System.Reflection.AssemblyName> object, which is produced by parsing the string assembly name that is included in `typeName`. If `typeName` does not contain an assembly name, `assemblyResolver` is not called and `null` is passed to `typeResolver`.
 
-If `assemblyResolver` is not supplied, standard assembly probing is used to locate the assembly. If `assemblyResolver` is provided, the <xref:System.Type.GetType%2A> method does not do standard probing; in that case you must ensure that your `assemblyResolver` can handle all the assemblies you pass to it.
+If `assemblyResolver` is not supplied, standard assembly probing is used to locate the assembly. If `assemblyResolver` is provided, the <xref:System.Type.GetType*> method does not do standard probing; in that case you must ensure that your `assemblyResolver` can handle all the assemblies you pass to it.
 
 The `assemblyResolver` method should return `null` if the assembly cannot be resolved. If `assemblyResolver` returns `null`, `typeResolver` is not called and no further processing occurs; additionally, if `throwOnError` is `true`, a <xref:System.IO.FileNotFoundException> is thrown.
 
-If the <xref:System.Reflection.AssemblyName> that is passed to `assemblyResolver` is a partial name, one or more of its parts are `null`. For example, if it has no version, the <xref:System.Reflection.AssemblyName.Version> property is `null`. If the <xref:System.Reflection.AssemblyName.Version> property, the <xref:System.Reflection.AssemblyName.CultureInfo> property, and the <xref:System.Reflection.AssemblyName.GetPublicKeyToken%2A> method all return `null`, then only the simple name of the assembly was supplied. The `assemblyResolver` method can use or ignore all parts of the assembly name.
+If the <xref:System.Reflection.AssemblyName> that is passed to `assemblyResolver` is a partial name, one or more of its parts are `null`. For example, if it has no version, the <xref:System.Reflection.AssemblyName.Version> property is `null`. If the <xref:System.Reflection.AssemblyName.Version> property, the <xref:System.Reflection.AssemblyName.CultureInfo> property, and the <xref:System.Reflection.AssemblyName.GetPublicKeyToken*> method all return `null`, then only the simple name of the assembly was supplied. The `assemblyResolver` method can use or ignore all parts of the assembly name.
 
 The effects of different assembly resolution options are displayed as a table in the [Mixed name resolution](#mixed-name-resolution) section, for simple and assembly-qualified type names.
 
@@ -65,17 +65,17 @@ The `typeResolver` method receives three arguments:
 - The simple name of the type. In the case of a nested type, this is the outermost containing type. In the case of a generic type, this is the simple name of the generic type.
 - A Boolean value that's `true` if the case of type names is to be ignored.
 
-The implementation determines the way these arguments are used. The `typeResolver` method should return `null` if it cannot resolve the type. If `typeResolver` returns `null` and `throwOnError` is `true`, this overload of <xref:System.Type.GetType%2A> throws a <xref:System.TypeLoadException>.
+The implementation determines the way these arguments are used. The `typeResolver` method should return `null` if it cannot resolve the type. If `typeResolver` returns `null` and `throwOnError` is `true`, this overload of <xref:System.Type.GetType*> throws a <xref:System.TypeLoadException>.
 
 The effects of different type resolution options are displayed as a table in the [Mixed name resolution](#mixed-name-resolution) section, for simple and assembly-qualified type names.
 
 #### Resolve nested types
 
-If `typeName` is a nested type, only the name of the outermost containing type is passed to `typeResolver`. When `typeResolver` returns this type, the <xref:System.Type.GetNestedType%2A> method is called recursively until the innermost nested type has been resolved.
+If `typeName` is a nested type, only the name of the outermost containing type is passed to `typeResolver`. When `typeResolver` returns this type, the <xref:System.Type.GetNestedType*> method is called recursively until the innermost nested type has been resolved.
 
 #### Resolve generic types
 
-The <xref:System.Type.GetType%2A> is called recursively to resolve generic types: First to resolve the generic type itself, and then to resolve its type arguments. If a type argument is generic, <xref:System.Type.GetType%2A> is called recursively to resolve its type arguments, and so on.
+The <xref:System.Type.GetType*> is called recursively to resolve generic types: First to resolve the generic type itself, and then to resolve its type arguments. If a type argument is generic, <xref:System.Type.GetType*> is called recursively to resolve its type arguments, and so on.
 
 The combination of `assemblyResolver` and `typeResolver` that you provide must be capable of resolving all levels of this recursion. For example, suppose you supply an `assemblyResolver` that controls the loading of `MyAssembly`. Suppose you want to resolve the generic type `Dictionary<string, MyType>` (`Dictionary(Of String, MyType)` in Visual Basic). You might pass the following generic type name:
 
@@ -83,7 +83,7 @@ The combination of `assemblyResolver` and `typeResolver` that you provide must b
 "System.Collections.Generic.Dictionary`2[System.String,[MyNamespace.MyType, MyAssembly]]"
 ```
 
-Notice that `MyType` is the only assembly-qualified type argument. The names of the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String> classes are not assembly-qualified. Your `typeResolver` must be able to handle either an assembly or `null`, because it will receive `null` for <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String>. It can handle that case by calling an overload of the <xref:System.Type.GetType%2A> method that takes a string, because both of the unqualified type names are in mscorlib.dll/System.Private.CoreLib.dll:
+Notice that `MyType` is the only assembly-qualified type argument. The names of the <xref:System.Collections.Generic.Dictionary`2> and <xref:System.String> classes are not assembly-qualified. Your `typeResolver` must be able to handle either an assembly or `null`, because it will receive `null` for <xref:System.Collections.Generic.Dictionary`2> and <xref:System.String>. It can handle that case by calling an overload of the <xref:System.Type.GetType*> method that takes a string, because both of the unqualified type names are in mscorlib.dll/System.Private.CoreLib.dll:
 
 :::code language="csharp" source="./snippets/System/Type/GetType/csharp/source.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Type/GetType/fsharp/source.fs" id="Snippet1":::
@@ -103,7 +103,7 @@ Because this assembly is neither mscorlib.dll/System.Private.CoreLib.dll nor the
 
 #### Resolve type names with special characters
 
-Certain characters have special meanings in assembly-qualified names. If a simple type name contains these characters, the characters cause parsing errors when the simple name is part of an assembly-qualified name. To avoid the parsing errors, you must escape the special characters with a backslash before you can pass the assembly-qualified name to the <xref:System.Type.GetType%2A> method. For example, if a type is named `Strange]Type`, the escape character must be added ahead of the square bracket as follows: `Strange\]Type`.
+Certain characters have special meanings in assembly-qualified names. If a simple type name contains these characters, the characters cause parsing errors when the simple name is part of an assembly-qualified name. To avoid the parsing errors, you must escape the special characters with a backslash before you can pass the assembly-qualified name to the <xref:System.Type.GetType*> method. For example, if a type is named `Strange]Type`, the escape character must be added ahead of the square bracket as follows: `Strange\]Type`.
 
 > [!NOTE]
 > Names with such special characters cannot be created in Visual Basic or C#, but can be created by using common intermediate language (CIL) or by emitting dynamic assemblies.
@@ -119,7 +119,7 @@ The following table shows the special characters for type names.
 |`+` (plus)|Delimiter for nested types.|
 |`\` (backslash)|Escape character.|
 
-Properties such as <xref:System.Type.AssemblyQualifiedName%2A> return correctly escaped strings. You must pass correctly escaped strings to the <xref:System.Type.GetType%2A> method. In turn, the <xref:System.Type.GetType%2A> method passes correctly escaped names to `typeResolver` and to the default type resolution methods. If you need to compare a name to an unescaped name in `typeResolver`, you must remove the escape characters.
+Properties such as <xref:System.Type.AssemblyQualifiedName*> return correctly escaped strings. You must pass correctly escaped strings to the <xref:System.Type.GetType*> method. In turn, the <xref:System.Type.GetType*> method passes correctly escaped names to `typeResolver` and to the default type resolution methods. If you need to compare a name to an unescaped name in `typeResolver`, you must remove the escape characters.
 
 ## Mixed name resolution
 

@@ -11,7 +11,7 @@ The <xref:System.Runtime.InteropServices.SafeHandle> class provides critical fin
 
 ## Why SafeHandle?
 
-Although overrides to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method allow cleanup of unmanaged resources when an object is being garbage collected, in some circumstances, finalizable objects can be reclaimed by garbage collection while executing a method within a platform invoke call. If a finalizer frees the handle passed to that platform invoke call, it could lead to handle corruption. The handle could also be reclaimed while your method is blocked during a platform invoke call, such as while reading a file.
+Although overrides to the <xref:System.Object.Finalize*?displayProperty=nameWithType> method allow cleanup of unmanaged resources when an object is being garbage collected, in some circumstances, finalizable objects can be reclaimed by garbage collection while executing a method within a platform invoke call. If a finalizer frees the handle passed to that platform invoke call, it could lead to handle corruption. The handle could also be reclaimed while your method is blocked during a platform invoke call, such as while reading a file.
 
 More critically, because Windows aggressively recycles handles, a handle could be recycled and point to another resource that might contain sensitive data. This is known as a recycle attack and can potentially corrupt data and be a security threat.
 

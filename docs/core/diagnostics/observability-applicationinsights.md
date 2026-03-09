@@ -43,7 +43,7 @@ If you're not already an Azure customer, you can create a free account at [https
 
 Application Insights identifies which instance to use to store and process data through an instrumentation key and connection string that are found at the top right side of the portal UI.
 
-[![Connection String in Azure Portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
+[![Connection String in Azure portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
 
 If you're using Azure App Service, this connection string is automatically passed to the application as an environment variable. For other services or when running locally, you need to pass it using the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in _appsettings.json_. For running locally, it's easiest to add the value to _appsettings.development.json_:
 

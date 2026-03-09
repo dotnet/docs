@@ -90,10 +90,10 @@ helm install my-orleans-app ./k8s-manifests/charts/my-orleans-app
 
 ### Benefits of Aspire-generated manifests
 
-- **Consistent configuration**: Environment variables, ports, and resource references are automatically synchronized
-- **Dependency management**: Services are configured with correct connection strings and service references
-- **Orleans-aware**: The Orleans hosting integration ensures proper silo configuration is included
-- **Helm support**: Generated Helm charts allow parameterized deployments across environments
+- **Consistent configuration**: Environment variables, ports, and resource references are automatically synchronized.
+- **Dependency management**: Services are configured with correct connection strings and service references.
+- **Orleans-aware**: The Orleans hosting integration ensures proper silo configuration is included.
+- **Helm support**: Generated Helm charts allow parameterized deployments across environments.
 
 > [!TIP]
 > For production deployments, review and customize the generated manifests as needed. Use [external parameters](https://aspire.dev/get-started/resources/) to configure environment-specific values.

@@ -26,13 +26,13 @@ It's beneficial to use a consistent format for switch names, since they're a for
 - *Switch*.*namespace*.*switchname*
 - *Switch*.*library*.*switchname*
 
-Once you define and document the switch, callers can use it by calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method programmatically. .NET Framework apps can also use the switch by adding an [`<AppContextSwitchOverrides>`](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element to their application configuration file or by using the registry. For more information about how callers use and set the value of <xref:System.AppContext> configuration switches, see the [AppContext for library consumers](#appcontext-for-library-consumers) section.
+Once you define and document the switch, callers can use it by calling the <xref:System.AppContext.SetSwitch(System.String,System.Boolean)?displayProperty=nameWithType> method programmatically. .NET Framework apps can also use the switch by adding an [`<AppContextSwitchOverrides>`](../../framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element to their application configuration file or by using the registry. For more information about how callers use and set the value of <xref:System.AppContext> configuration switches, see the [AppContext for library consumers](#appcontext-for-library-consumers) section.
 
-In .NET Framework, when the common language runtime runs an application, it automatically reads the registry's compatibility settings and loads the application configuration file to populate the application's <xref:System.AppContext> instance. Because the <xref:System.AppContext> instance is populated either programmatically by the caller or by the runtime, .NET Framework apps don't have to take any action, such as calling the <xref:System.AppContext.SetSwitch%2A> method, to configure the <xref:System.AppContext> instance.
+In .NET Framework, when the common language runtime runs an application, it automatically reads the registry's compatibility settings and loads the application configuration file to populate the application's <xref:System.AppContext> instance. Because the <xref:System.AppContext> instance is populated either programmatically by the caller or by the runtime, .NET Framework apps don't have to take any action, such as calling the <xref:System.AppContext.SetSwitch*> method, to configure the <xref:System.AppContext> instance.
 
 ### Check the setting
 
-You can check if a consumer has declared the value of the switch and act appropriately by calling the <xref:System.AppContext.TryGetSwitch%2A?displayProperty=nameWithType> method. The method returns `true` if the `switchName` argument is found, and its `isEnabled` argument indicates the value of the switch. Otherwise, the method returns `false`.
+You can check if a consumer has declared the value of the switch and act appropriately by calling the <xref:System.AppContext.TryGetSwitch*?displayProperty=nameWithType> method. The method returns `true` if the `switchName` argument is found, and its `isEnabled` argument indicates the value of the switch. Otherwise, the method returns `false`.
 
 ### Example
 
@@ -86,7 +86,7 @@ When the application is run with the configuration file present, it produces the
 
 If you're the consumer of a library, the <xref:System.AppContext> class allows you to take advantage of a library or library method's opt-out mechanism for new functionality. Individual methods of the class library that you are calling define particular switches that enable or disable a new behavior. The value of the switch is a Boolean. If it is `false`, which is typically the default value, the new behavior is enabled; if it is `true`, the new behavior is disabled, and the member behaves as it did previously.
 
-You can set the value of a switch by calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method in your code. The `switchName` argument defines the switch name, and the `isEnabled` property defines the value of the switch. Because <xref:System.AppContext> is a static class, it is available on a per-application domain basis. Calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> has application scope; that is, it affects only the application.
+You can set the value of a switch by calling the <xref:System.AppContext.SetSwitch(System.String,System.Boolean)?displayProperty=nameWithType> method in your code. The `switchName` argument defines the switch name, and the `isEnabled` property defines the value of the switch. Because <xref:System.AppContext> is a static class, it is available on a per-application domain basis. Calling the <xref:System.AppContext.SetSwitch(System.String,System.Boolean)?displayProperty=nameWithType> has application scope; that is, it affects only the application.
 
 .NET Framework apps have additional ways to set the value of a switch:
 

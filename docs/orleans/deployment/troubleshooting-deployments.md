@@ -13,9 +13,9 @@ zone_pivot_groups: orleans-version
 
 This page provides general guidelines for troubleshooting common Orleans deployment issues.
 
-## The <xref:Orleans.Runtime.SiloUnavailableException>
+## SiloUnavailableException
 
-This exception indicates that the target silo for a grain call is unavailable. This commonly occurs when:
+A <xref:Orleans.Runtime.SiloUnavailableException> indicates that the target silo for a grain call is unavailable. This commonly occurs when:
 
 - **Silo terminated abruptly**: A silo crashed or was forcefully terminated and has been evicted from the cluster. This is expected behavior during cluster membership changes.
 - **Network partition**: The target silo is temporarily unreachable due to network issues.
@@ -88,7 +88,7 @@ If this exception occurs during initial client connection, ensure silos start be
 - **Using the local connection string when deploying to Azure**: The website fails to connect.
 - **Using different connection strings for silos and the front end (web and worker roles)**: The website fails to initialize the client because it cannot connect to the silos.
 
-Check the connection string configuration in the Azure Portal. Logs might not display properly if connection strings aren't set up correctly.
+Check the connection string configuration in the Azure portal. Logs might not display properly if connection strings aren't set up correctly.
 
 ## Improperly modified configuration files
 

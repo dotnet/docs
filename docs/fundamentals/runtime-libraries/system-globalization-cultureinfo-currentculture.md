@@ -37,27 +37,27 @@ For more information about how the culture of a thread is determined, see the "C
 
 ## Get the current culture
 
-The <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property is a per-thread setting; that is, each thread can have its own culture. You get the culture of the current thread by retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, as the following example illustrates.
+The <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property is a per-thread setting; that is, each thread can have its own culture. You get the culture of the current thread by retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property, as the following example illustrates.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/Get1.cs" id="Snippet5":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/Get1.vb" id="Snippet5":::
 
 ## Set the CurrentCulture property explicitly
 
-To change the culture that's used by an existing thread, you set the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property to the new culture. If you explicitly change a thread's culture in this way, that change persists if the thread crosses application domain boundaries. The following example changes the current thread culture to Dutch (Netherlands). It also shows that, when the current thread crosses application domain boundaries, its current culture remains changed.
+To change the culture that's used by an existing thread, you set the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property to the new culture. If you explicitly change a thread's culture in this way, that change persists if the thread crosses application domain boundaries. The following example changes the current thread culture to Dutch (Netherlands). It also shows that, when the current thread crosses application domain boundaries, its current culture remains changed.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/changeculture11.cs" id="Snippet11":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/changeculture11.vb" id="Snippet11":::
 
 > [!NOTE]
-> Changing the culture by using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property requires a <xref:System.Security.Permissions.SecurityPermission> permission with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread> value set. Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only to trustworthy code, and then only as necessary. You cannot change thread culture in semi-trusted code.
+> Changing the culture by using the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property requires a <xref:System.Security.Permissions.SecurityPermission> permission with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread> value set. Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only to trustworthy code, and then only as necessary. You cannot change thread culture in semi-trusted code.
 
-Starting with .NET Framework 4, you can explicitly change the current thread culture to either a specific culture (such as French (Canada)) or a neutral culture (such as French). When a <xref:System.Globalization.CultureInfo> object represents a neutral culture, the values of <xref:System.Globalization.CultureInfo> properties such as <xref:System.Globalization.CultureInfo.Calendar%2A>, <xref:System.Globalization.CultureInfo.CompareInfo%2A>, <xref:System.Globalization.CultureInfo.DateTimeFormat%2A>, <xref:System.Globalization.CultureInfo.NumberFormat%2A>, and <xref:System.Globalization.CultureInfo.TextInfo%2A> reflect the specific culture that is associated with the neutral culture. For example, the dominant culture for the English neutral culture is English (United States); the dominant culture for the German culture is German (Germany). The following example illustrates the difference in formatting when the current culture is set to a specific culture, French (Canada), and a neutral culture, French.
+Starting with .NET Framework 4, you can explicitly change the current thread culture to either a specific culture (such as French (Canada)) or a neutral culture (such as French). When a <xref:System.Globalization.CultureInfo> object represents a neutral culture, the values of <xref:System.Globalization.CultureInfo> properties such as <xref:System.Globalization.CultureInfo.Calendar*>, <xref:System.Globalization.CultureInfo.CompareInfo*>, <xref:System.Globalization.CultureInfo.DateTimeFormat*>, <xref:System.Globalization.CultureInfo.NumberFormat*>, and <xref:System.Globalization.CultureInfo.TextInfo*> reflect the specific culture that is associated with the neutral culture. For example, the dominant culture for the English neutral culture is English (United States); the dominant culture for the German culture is German (Germany). The following example illustrates the difference in formatting when the current culture is set to a specific culture, French (Canada), and a neutral culture, French.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/specific12.cs" id="Snippet12":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/specific12.vb" id="Snippet12":::
 
-You can also use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property along with the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property to set the <xref:System.Globalization.CultureInfo.CurrentCulture> property of an ASP.NET application to the user's preferred culture, as the following example illustrates.
+You can also use the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property along with the <xref:System.Web.HttpRequest.UserLanguages*?displayProperty=nameWithType> property to set the <xref:System.Globalization.CultureInfo.CurrentCulture> property of an ASP.NET application to the user's preferred culture, as the following example illustrates.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/aspculture13.cs" id="Snippet13":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/aspculture13.vb" id="Snippet13":::
@@ -70,7 +70,7 @@ Windows allows users to override the standard property values of the <xref:Syste
 
 - If the current thread culture defined by the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture> property corresponds to the current Windows system culture.
 
-- If the current thread culture is set explicitly to a culture returned by the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A> method, and that culture corresponds to the current Windows system culture.
+- If the current thread culture is set explicitly to a culture returned by the <xref:System.Globalization.CultureInfo.CreateSpecificCulture*> method, and that culture corresponds to the current Windows system culture.
 
 - If the current thread culture is set explicitly to a culture instantiated by the <xref:System.Globalization.CultureInfo.%23ctor(System.String)> constructor, and that culture corresponds to the current Windows system culture.
 
@@ -78,10 +78,10 @@ In some cases, particularly for server applications, setting the current culture
 
 - By calling the <xref:System.Globalization.CultureInfo.%23ctor(System.String,System.Boolean)> constructor with a value of `false` for the `useUserOverride` argument.
 
-- By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A> method, which returns a cached, read-only <xref:System.Globalization.CultureInfo> object.
+- By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo*> method, which returns a cached, read-only <xref:System.Globalization.CultureInfo> object.
 
 ## The current culture and UWP apps
 
-In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.
+In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The <xref:System.Globalization.CultureInfo.CurrentCulture*> and <xref:System.Globalization.CultureInfo.CurrentUICulture*> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.
 
 In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture> property reflects the culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) property, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture> property changes the culture of the entire app; culture cannot be set on a per-thread basis.

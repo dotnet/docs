@@ -4,7 +4,8 @@ public sealed class ColorConsoleLogger(
     string name,
     Func<ColorConsoleLoggerConfiguration> getCurrentConfig) : ILogger
 {
-    public IDisposable? BeginScope<TState>(TState state) where TState : notnull => default!;
+    public IDisposable? BeginScope<TState>(TState state)
+        where TState : notnull => default!;
 
     public bool IsEnabled(LogLevel logLevel) =>
         getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel);

@@ -14,7 +14,7 @@ The measurements can be consumed in two ways:
 - Using the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface. This interface is deprecated, so use the metrics-based approach instead. If you still need to listen to metric values manually, see [Migrate to metrics-based resource monitoring](#migrate-to-metrics-based-resource-monitoring).
 
 > [!IMPORTANT]
-> The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception. Furthermore, you can enable internal library logging by configuring the [`Debug`](xref:Microsoft.Extensions.Logging.LogLevel.Debug) log level for the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` category as per the [guide](../extensions/logging.md#log-category).
+> The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception. Furthermore, you can enable internal library logging by configuring the [`Debug`](xref:Microsoft.Extensions.Logging.LogLevel.Debug) log level for the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` category as per the [guide](../extensions/logging/overview.md#log-category).
 
 ## Use .NET metrics of resource monitoring
 

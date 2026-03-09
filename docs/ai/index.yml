@@ -25,10 +25,10 @@ landingContent:
         links:
           - text: Develop .NET apps with AI features
             url: overview.md
-          - text: Microsoft.Extensions.AI libraries
-            url: microsoft-extensions-ai.md
           - text: Microsoft Agent Framework
             url: /agent-framework/overview/agent-framework-overview?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+          - text: Microsoft.Extensions.AI libraries
+            url: microsoft-extensions-ai.md
       - linkListType: get-started
         links:
           - text: Connect to and prompt an AI model
@@ -63,28 +63,24 @@ landingContent:
         links:
           - text: Authenticate App Service to Azure OpenAI
             url: how-to/app-service-aoai-auth.md
-          - text: Authenticate App Service to a vector database
-            url: how-to/app-service-db-auth.md
-          - text: Use Redis with the Semantic Kernel SDK
-            url: how-to/use-redis-for-memory.md
-          - text: Use custom and local AI models with the Semantic Kernel SDK
-            url: how-to/work-with-local-models.md
-          - text: Work with content filtering
-            url: how-to/work-with-local-models.md
+          - text: Access data in AI functions
+            url: how-to/access-data-in-functions.md
+          - text: Use Microsoft.ML.Tokenizers for text tokenization
+            url: how-to/use-tokenizers.md
 
   # Card
   - title: Training
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Develop an AI agent with Microsoft Agent Framework
+            url: /training/modules/develop-ai-agent-with-semantic-kernel/
           - text: Plan and prepare to develop AI solutions on Azure
             url: /training/modules/prepare-azure-ai-development/
           - text: Generate conversations Azure OpenAI completions
             url: /training/modules/open-ai-dotnet-text-completions
           - text: .NET enterprise chat sample using RAG
             url: get-started-app-chat-template.md
-          - text: Develop generative AI apps with Azure OpenAI and Semantic Kernel
-            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 
   # Card
   - title: Tutorials

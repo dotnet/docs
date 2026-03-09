@@ -35,7 +35,7 @@ You can instantiate a <xref:System.Byte> value in several ways:
   :::code language="fsharp" source="./snippets/System/Byte/Overview/fsharp/tobyte1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Convert/Overview/vb/tobyte1.vb" id="Snippet4":::
 
-- You can call the <xref:System.Byte.Parse%2A> or <xref:System.Byte.TryParse%2A> method to convert the string representation of a <xref:System.Byte> value to a <xref:System.Byte>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.
+- You can call the <xref:System.Byte.Parse*> or <xref:System.Byte.TryParse*> method to convert the string representation of a <xref:System.Byte> value to a <xref:System.Byte>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.
 
   :::code language="csharp" source="./snippets/System/Byte/Overview/csharp/byteinstantiation1.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/Byte/Overview/fsharp/byteinstantiation1.fs" id="Snippet3":::
@@ -45,7 +45,7 @@ You can instantiate a <xref:System.Byte> value in several ways:
 
 The <xref:System.Byte> type supports standard mathematical operations such as addition, subtraction, division, multiplication, subtraction, negation, and unary negation. Like the other integral types, the <xref:System.Byte> type also supports the bitwise `AND`, `OR`, `XOR`, left shift, and right shift operators.
 
-You can use the standard numeric operators to compare two <xref:System.Byte> values, or you can call the <xref:System.Byte.CompareTo%2A> or <xref:System.Byte.Equals%2A> method.
+You can use the standard numeric operators to compare two <xref:System.Byte> values, or you can call the <xref:System.Byte.CompareTo*> or <xref:System.Byte.Equals*> method.
 
 You can also call the members of the <xref:System.Math> class to perform a wide range of numeric operations, including getting the absolute value of a number, calculating the quotient and remainder from integral division, determining the maximum or minimum value of two integers, getting the sign of a number, and rounding a number.
 
@@ -59,7 +59,7 @@ To format a <xref:System.Byte> value as an integral string with no leading zeros
 :::code language="fsharp" source="./snippets/System/Byte/Overview/fsharp/formatting1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Byte/Overview/vb/formatting1.vb" id="Snippet1":::
 
-You can also format a <xref:System.Byte> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString%28System.Byte%2CSystem.Int32%29> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of byte values.
+You can also format a <xref:System.Byte> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString(System.Byte,System.Int32)> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of byte values.
 
 :::code language="csharp" source="./snippets/System/Byte/Overview/csharp/formatting1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Byte/Overview/fsharp/formatting1.fs" id="Snippet2":::
@@ -67,7 +67,7 @@ You can also format a <xref:System.Byte> value as a binary, octal, decimal, or h
 
 ## Work with non-decimal Byte values
 
-In addition to working with individual bytes as decimal values, you might want to perform bitwise operations with byte values, or work with byte arrays or with the binary or hexadecimal representations of byte values. For example, overloads of the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method can convert each of the primitive data types to a byte array, and the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=nameWithType> method converts a <xref:System.Numerics.BigInteger> value to a byte array.
+In addition to working with individual bytes as decimal values, you might want to perform bitwise operations with byte values, or work with byte arrays or with the binary or hexadecimal representations of byte values. For example, overloads of the <xref:System.BitConverter.GetBytes*?displayProperty=nameWithType> method can convert each of the primitive data types to a byte array, and the <xref:System.Numerics.BigInteger.ToByteArray*?displayProperty=nameWithType> method converts a <xref:System.Numerics.BigInteger> value to a byte array.
 
 <xref:System.Byte> values are represented in 8 bits by their magnitude only, without a sign bit. This is important to keep in mind when you perform bitwise operations on <xref:System.Byte> values or when you work with individual bits. To perform a numeric, Boolean, or comparison operation on any two non-decimal values, both values must use the same representation.
 

@@ -20,6 +20,17 @@ This article outlines some of the best practices that developers can adopt to en
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
+## Use trusted patterns
+
+The .NET regular expression engine is designed with the assumption that patterns are trusted, that is, they are authored or reviewed by the application developer, not supplied by end users or other untrusted sources. Patterns can cause excessive resource consumption regardless of the input text, and the regular expression engine does not attempt to guard against hostile patterns.
+
+If your application needs to accept search expressions from users, avoid passing user input directly as a regex pattern. Instead, consider these alternatives:
+
+- Support a restricted search syntax (such as simple wildcards or substring matching) that you translate into a regex pattern internally.
+- Use <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> to treat any user-supplied text as a literal string within a pattern.
+
+Features such as [time-out values](#use-time-out-values) and <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> (which guarantees linear-time processing in the length of the input) help protect against accidental performance problems in developer-authored patterns. They are not intended as a security boundary against malicious patterns.
+
 ## Consider the input source
 
 In general, regular expressions can accept two types of input: constrained or unconstrained. Constrained input is a text that originates from a known or reliable source and follows a predefined format. Unconstrained input is a text that originates from an unreliable source, such as a web user, and might not follow a predefined or expected format.

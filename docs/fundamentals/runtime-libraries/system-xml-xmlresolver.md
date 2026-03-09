@@ -22,7 +22,7 @@ The <xref:System.Xml> namespace includes two concrete implementations of the <xr
 
 You can create and specify your own resolver. If you don't specify a resolver, the reader uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.
 
-You specify the <xref:System.Xml.XmlResolver> to use by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver?displayProperty=nameWithType> property and passing the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method.
+You specify the <xref:System.Xml.XmlResolver> to use by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver?displayProperty=nameWithType> property and passing the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create*> method.
 
 If the resource is stored on a system that requires authentication, you use the <xref:System.Xml.XmlResolver.Credentials?displayProperty=nameWithType> property to specify the necessary credentials.
 
@@ -48,6 +48,6 @@ Consider the following items when working with the <xref:System.Xml.XmlResolver>
 
 - If you are designing a class property that uses the <xref:System.Xml.XmlResolver> class, the property should be defined as a write-only property. The property can be used to specify the <xref:System.Xml.XmlResolver> to use, but it cannot be used to return an <xref:System.Xml.XmlResolver> object.
 
-- If your application accepts <xref:System.Xml.XmlResolver> objects from untrusted code, you cannot assume that the URI passed into the <xref:System.Xml.XmlResolver.GetEntity%2A> method will be the same as that returned by the <xref:System.Xml.XmlResolver.ResolveUri%2A> method. Classes derived from the <xref:System.Xml.XmlResolver> class can override the <xref:System.Xml.XmlResolver.GetEntity%2A> method and return data that is different than what was contained in the original URI.
+- If your application accepts <xref:System.Xml.XmlResolver> objects from untrusted code, you cannot assume that the URI passed into the <xref:System.Xml.XmlResolver.GetEntity*> method will be the same as that returned by the <xref:System.Xml.XmlResolver.ResolveUri*> method. Classes derived from the <xref:System.Xml.XmlResolver> class can override the <xref:System.Xml.XmlResolver.GetEntity*> method and return data that is different than what was contained in the original URI.
 
-- Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlResolver.GetEntity%2A> method by implementing an <xref:System.Runtime.InteropServices.ComTypes.IStream> that limits the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlResolver.GetEntity%2A> method.
+- Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlResolver.GetEntity*> method by implementing an <xref:System.Runtime.InteropServices.ComTypes.IStream> that limits the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlResolver.GetEntity*> method.

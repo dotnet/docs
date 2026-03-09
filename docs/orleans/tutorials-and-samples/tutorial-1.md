@@ -27,8 +27,19 @@ This tutorial lacks appropriate error handling and other essential code useful f
 
 ## Prerequisites
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads)
+- [The latest .NET SDK](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
 - [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads)
-- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- [.NET SDK compatible with your target Orleans version](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
 
 ## Project setup
 
@@ -43,9 +54,9 @@ For this tutorial, create four projects as part of the same solution:
 
 Replace the default code with the code provided for each project.
 
-1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
+1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application](../../core/tutorials/create-console-app.md).
 1. Add another Console App project and name it `Client`.
-1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
+1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library](../../core/tutorials/create-class-library.md).
 1. Add another Class Library and name it `Grains`.
 
 #### Delete default source files

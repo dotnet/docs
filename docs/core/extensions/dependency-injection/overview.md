@@ -10,27 +10,16 @@ ai-usage: ai-assisted
 
 .NET supports the *dependency injection* (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
+> [!IMPORTANT]
+> The examples in this article use the `Microsoft.NET.Sdk.Worker` SDK. For more information, see [Worker services in .NET](../workers.md).
+
 A *dependency* is an object that another object depends on. The following `MessageWriter` class has a `Write` method that other classes might depend on:
 
 :::code language="csharp" source="snippets/overview/Program.cs" id="SnippetMW":::
 
 A class can create an instance of the `MessageWriter` class to use its `Write` method. In the following example, the `MessageWriter` class is a *dependency* of the `Worker` class:
 
-```csharp
-public class Worker : BackgroundService
-{
-    private readonly MessageWriter _messageWriter = new();
-
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        while (!stoppingToken.IsCancellationRequested)
-        {
-            _messageWriter.Write($"Worker running at: {DateTimeOffset.Now}");
-            await Task.Delay(1_000, stoppingToken);
-        }
-    }
-}
-```
+:::code language="csharp" source="snippets/overview/StandaloneWorker.cs" id="WorkerClass":::
 
 In this case, the `Worker` class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies like this are problematic and should be avoided for the following reasons:
 
@@ -47,6 +36,9 @@ Dependency injection addresses hard-coded dependency problems through:
 
   .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 
+  > [!IMPORTANT]
+  > Desktop apps control their own lifetime. Frameworks like WPF and Windows Forms require you to integrate the host lifetime with the application lifetime events.
+
 - Injection of the service into the constructor of the class where it's used.
 
   The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
@@ -56,7 +48,10 @@ Dependency injection addresses hard-coded dependency problems through:
 
 As an example, assume the `IMessageWriter` interface defines the `Write` method. This interface is implemented by a concrete type, `MessageWriter`, shown previously. The following sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a [*singleton* lifetime](service-lifetimes.md#singleton), which means it isn't disposed until the app shuts down.
 
-:::code language="csharp" source="snippets/overview/Program.cs" highlight="3-6":::
+> [!IMPORTANT]
+> The [`Microsoft.Extensions.Hosting` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/) provides the types used in this article.
+
+:::code language="csharp" source="snippets/overview/Program.cs" highlight="5-8" id="All":::
 
 In the preceding code example, the highlighted lines:
 

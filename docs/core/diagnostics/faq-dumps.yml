@@ -59,6 +59,11 @@ sections:
             On macOS the use of `ptrace` requires the host of the target process to be properly entitled. For information about the minimum required entitlements, see [Default entitlements](../install/macos-notarization-issues.md#default-entitlements).
 
       - question: |
+          Why can't I collect dumps on Android or iOS?
+        answer: |
+          Dump collection isn't supported on mobile platforms (Android and iOS). These platforms use the Mono runtime, which doesn't support memory dump generation.
+
+      - question: |
           Where can I learn more about how I can leverage dumps to help diagnose problems in my .NET application?
         answer: |
           Here are some additional resources:

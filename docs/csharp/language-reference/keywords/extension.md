@@ -42,7 +42,7 @@ The following example shows an extension method using the `this` modifier:
 
 :::code language="csharp" source="./snippets/ExtensionMethods.cs" id="ExtensionMethod":::
 
-You can call the `Add` method from any other method as though it was a member of the `IEnumerable<int>` interface:
+You can call the `AddValue` method from any other method as though it was a member of the `IEnumerable<int>` interface:
 
 :::code language="csharp" source="./snippets/ExtensionMethods.cs" id="UseExtensionMethod":::
 

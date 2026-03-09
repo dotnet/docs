@@ -43,7 +43,7 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 >   ```
 
 > [!WARNING]
-> Templates can run MSBuild code when triggered, don't install or run untrusted .NET templates.
+> Templates can run MSBuild code and other arbitrary code when triggered. Don't install or run untrusted .NET templates.
 
 ## Arguments
 

@@ -20,14 +20,14 @@ The <xref:System.Runtime.Serialization.XsdDataContractExporter> generates an <xr
 
 To create an instance of the <xref:System.Xml.Schema.XmlSchemaSet> class that contains XML schema files, you should be aware of the following.
 
-The set of types you are exporting are recorded as an internal set of data contracts. Thus, you can call the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport%2A> method multiple times to add new types to the schema set without degrading performance because only the new types will be added to the set. During the <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> operation, the existing schemas are compared to the new schemas being added. If there are conflicts, an exception will be thrown. A conflict is usually detected if two types with the same data contract name but different contracts (different members) are exported by the same <xref:System.Runtime.Serialization.XsdDataContractExporter> instance.
+The set of types you are exporting are recorded as an internal set of data contracts. Thus, you can call the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport*> method multiple times to add new types to the schema set without degrading performance because only the new types will be added to the set. During the <xref:System.Runtime.Serialization.XsdDataContractExporter.Export*> operation, the existing schemas are compared to the new schemas being added. If there are conflicts, an exception will be thrown. A conflict is usually detected if two types with the same data contract name but different contracts (different members) are exported by the same <xref:System.Runtime.Serialization.XsdDataContractExporter> instance.
 
 ## Use the exporter
 
 A recommended way of using this class is as follows:
 
-1. Use one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport%2A> overloads to determine whether the specified type or set of types can be exported. Use one of the overloads that is appropriate to your requirements.
+1. Use one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport*> overloads to determine whether the specified type or set of types can be exported. Use one of the overloads that is appropriate to your requirements.
 
-2. Call the corresponding <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> method.
+2. Call the corresponding <xref:System.Runtime.Serialization.XsdDataContractExporter.Export*> method.
 
 3. Retrieve the schemas from the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas> property.

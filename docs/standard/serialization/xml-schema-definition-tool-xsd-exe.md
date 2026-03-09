@@ -1,8 +1,9 @@
 ---
 title: "XML Schema Definition Tool (Xsd.exe)"
-description: The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly, which improves the startup performance of XmlSerializer.
-ms.date: "03/30/2017"
+description: Use the XML Schema Definition tool (Xsd.exe) to generate XML schemas or common language runtime (CLR) classes from XDR, XML, and XSD files, or from types in compiled assemblies.
+ms.date: "03/06/2026"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
+ai-usage: ai-assisted
 ---
 # XML Schema Definition Tool (Xsd.exe)
 
@@ -235,3 +236,4 @@ xsd myAssembly.dll
 - [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md)
 - [LINQ (Language-Integrated Query) (C#)](../../csharp/linq/index.md)
 - [LINQ (Language-Integrated Query) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Xsd.exe source code (Reference Source)](https://github.com/microsoft/referencesource/blob/master/xsd/microsoft/devapps/xsd/xsd.cs)

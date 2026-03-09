@@ -41,7 +41,7 @@ Using keys is a straightforward option, but this approach should be used with ca
 - Can easily be shared with or sent to parties who shouldn't have access.
 - Often require manual administration and rotation.
 
-Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
+Instead, consider using [Microsoft Entra ID](#authentication-using-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
 
 ## Authentication using Microsoft Entra ID
 
@@ -56,15 +56,15 @@ The workflow to implement Microsoft Entra authentication in your app generally i
 
 - Local development:
 
-    1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
-    1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
-    1. Assign Azure roles to the account you signed-in with to enable access to the Foundry tool.
+   1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
+   1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
+   1. Assign Azure roles to the account you signed-in with to enable access to the Foundry tool.
 
 - Azure-hosted app:
 
-    1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
-    1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
-    1. Assign Azure roles to the managed identity to enable access to the Foundry tool.
+   1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
+   1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
+   1. Assign Azure roles to the managed identity to enable access to the Foundry tool.
 
 The key concepts of this workflow are explored in the following sections.
 

@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 Tool calling simplifies how you connect external tools to AI models. You describe each tool to the model as part of the conversation. The model then decides which tools to invoke based on the user's question. After your application invokes the requested tools and returns the results, the model uses those results to construct a more complete and accurate response.
 
-Common use cases for tool-calling include:
+Common use cases for tool calling include:
 
 - Answering questions by calling external APIs. For example, checking the weather forecast, or sending email.
 - Retrieving information from internal data stores. For example, aggregating sales data to answer, "What are my best-selling products?"

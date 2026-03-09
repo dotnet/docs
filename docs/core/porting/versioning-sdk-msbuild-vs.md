@@ -147,8 +147,8 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 |---------------------|-----------------------|
 | 10.0.100 RC 1       | 18.0.0 Insiders (11010.61)|
 | 10.0.100 RC 2       | 18.0.0 Insiders (11111.16)|
-| 11.0.100 Preview 1  | 18.4.0 Insiders 1         |
-| 11.0.100 Preview 2  | 18.5.0 Insiders 1         |
+| 11.0.100 Preview 1  | 18.4.0 Insiders           |
+| 11.0.100 Preview 2  | 18.5.0 Insiders           |
 
 ## Reference
 

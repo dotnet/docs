@@ -121,7 +121,7 @@ Starting with .NET 10, `msbuild.exe` and Visual Studio 2026 can run MSBuild task
 
 ### Configure .NET tasks
 
-For task authors, it's easy to opt into this new behavior. Just change your `UsingTask` declaration to tell MSBuild about your task.
+For task authors, it's easy to opt in to this new behavior. Just change your `UsingTask` declaration to tell MSBuild about your task.
 
 ```xml
 <UsingTask TaskName="MyTask"

@@ -2,7 +2,7 @@
 title: Debug .NET apps on ARM single-board computers
 description: Learn how to debug .NET apps on ARM single-board computers (SBCs) such as Raspberry Pi.
 author: camsoper
-ms.date: 07/31/2024
+ms.date: 03/07/2026
 ms.topic: how-to
 zone_pivot_groups: ide-set-one
 ---
@@ -16,13 +16,10 @@ For these reasons, it's strongly recommended that you develop your app on a deve
 - A 64-bit OS with a desktop environment, such as Raspberry Pi OS (64-bit).
 - [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
   - Disable the [hardware acceleration](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance).
-- .NET SDK 6.0 or later.
+- .NET SDK 10 or later.
   - Install using the *dotnet-install* script [as in a framework-dependent deployment](deployment.md#deploying-a-framework-dependent-app). Be sure to add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH`.
 
 The rest of this article describes how to debug .NET apps on single-board computers remotely from a development computer.
-
-> [!IMPORTANT]
-> As of this writing, remotely debugging .NET 7 apps in `linux-arm` environments is unreliable and may cause the process to exit prematurely. This issue is under investigation. .NET 6 apps that target `linux-arm` and .NET 7 apps that target `linux-arm64` are unaffected.
 
 ::: zone pivot="vscode"
 

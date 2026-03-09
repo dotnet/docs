@@ -2,7 +2,7 @@
 title: Develop apps for IoT devices with the .NET IoT Libraries
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
-ms.date: 07/31/2024
+ms.date: 03/07/2026
 ms.topic: overview
 ---
 

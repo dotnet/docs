@@ -27,7 +27,7 @@ public struct Point3
 
     public override int GetHashCode()
     {
-        return Tuple.Create(x, y).GetHashCode();
+        return HashCode.Combine(x, y);
     }
 }
 
@@ -42,7 +42,8 @@ public class Example
         Console.WriteLine(pt.GetHashCode());
    }
 }
-// The example displays the following output:
-//       173
-//       269
+// The example displays output similar to the following.
+// Note: HashCode.Combine results are not stable across .NET versions.
+//       185727722
+//       -363254492
 // </Snippet3>

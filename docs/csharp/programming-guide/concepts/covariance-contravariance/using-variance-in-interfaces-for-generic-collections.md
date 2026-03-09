@@ -81,10 +81,7 @@ class PersonComparer : IEqualityComparer<Person>
     public int GetHashCode(Person person)  
     {  
         if (Object.ReferenceEquals(person, null)) return 0;  
-        int hashFirstName = person.FirstName == null  
-            ? 0 : person.FirstName.GetHashCode();  
-        int hashLastName = person.LastName.GetHashCode();  
-        return hashFirstName ^ hashLastName;  
+        return HashCode.Combine(person.FirstName, person.LastName);  
     }  
 }  
   

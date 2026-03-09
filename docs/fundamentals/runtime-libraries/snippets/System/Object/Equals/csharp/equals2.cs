@@ -30,7 +30,7 @@ class Point2
 
     public override int GetHashCode()
     {
-        return (x << 2) ^ y;
+        return HashCode.Combine(x, y);
     }
 
     public override string ToString()
@@ -59,7 +59,7 @@ sealed class Point3D : Point2
 
     public override int GetHashCode()
     {
-        return (base.GetHashCode() << 2) ^ z;
+        return HashCode.Combine(base.GetHashCode(), z);
     }
 
     public override String ToString()

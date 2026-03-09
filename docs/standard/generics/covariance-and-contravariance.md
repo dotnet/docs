@@ -15,21 +15,21 @@ ms.assetid: 2678dc63-c7f9-4590-9ddc-0a4df684d42e
 ---
 # Covariance and contravariance in generics
 
-*Covariance* and *contravariance* describe how generic type parameters relate to the type hierarchy. When you encounter a generic type parameter, it's either covariant, contravariant, or invariant—and this determines what types you can use in place of the specified type. Generic type parameters support covariance and contravariance to provide greater flexibility in assigning and using generic types.
+*Covariance* and *contravariance* describe how a generic type argument can be substituted for a different type in a conversion. By default, a generic type argument is *invariant*—you must use exactly the type specified. Some generic interfaces and delegates support *covariant* or *contravariant* type parameters, which allow substitution with a more derived or more generic type.
 
 The following definitions and examples assume a base class named `Base` and a derived class named `Derived`.
 
-- *Covariant* type parameters let you use a more derived type than originally specified.
+- *Invariant* type arguments require you to use exactly the type specified. You can't substitute a more derived or more generic type.
+
+     For example, you can't assign an instance of `List<Base>` to a variable of type `List<Derived>`, or vice versa.
+
+- *Covariant* type arguments let you use a more derived type than originally specified.
 
      For example, you can assign an instance of `IEnumerable<Derived>` to a variable of type `IEnumerable<Base>`.
 
-- *Contravariant* type parameters let you use a more generic (less derived) type than originally specified.
+- *Contravariant* type arguments let you use a more generic (less derived) type than originally specified.
 
      For example, you can assign an instance of `Action<Base>` to a variable of type `Action<Derived>`.
-
-- *Invariant* type parameters require you to use exactly the type specified. You can't use a more derived or more generic type.
-
-     For example, you can't assign an instance of `List<Base>` to a variable of type `List<Derived>`, or vice versa.
   
  Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](../../csharp/fundamentals/object-oriented/polymorphism.md), as shown in the following code.  
   

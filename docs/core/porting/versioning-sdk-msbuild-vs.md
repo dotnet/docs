@@ -3,7 +3,7 @@ title: .NET SDK, MSBuild, and Visual Studio versioning
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/Visual Studio.
 author: StephenBonikowsky
 ms.custom: updateeachrelease
-ms.date: 10/23/2025
+ms.date: 03/09/2026
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -17,7 +17,7 @@ For example, version 7.0.203 ships with .NET 7, is the second quarterly feature 
 
 An installation of Visual Studio includes a single matching copy of the .NET SDK. If you update your Visual Studio instance, the .NET SDK installed by Visual Studio is also updated, including across .NET SDK feature bands and major bands. If you want to use a different .NET SDK than what's installed by Visual Studio, you can install it from the [.NET download page](https://aka.ms/dotnet/download), and Visual Studio upgrade won't touch that version. You're responsible for updating that copy of the .NET SDK from then on.
 
-Starting in Visual Studio 18.0, there are monthly minor versions of Visual Studio but the .NET SDK will remain quarterly. The in-between Visual Studio releases will contain patch versions of the latest current .NET SDK version.
+Starting with Visual Studio 18.0, Visual Studio ships monthly minor versions, while the .NET SDK continues to ship quarterly. Visual Studio releases between quarterly .NET SDK releases contain only patch versions of the latest .NET SDK.
 
 > [!NOTE]
 > The .NET SDK supports targeting down-level versions of .NET, so we recommend always updating your .NET SDK along with your Visual Studio version.
@@ -58,11 +58,11 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 |-------------|-------------------------------|-----------|---------------------|
 | 8.0.1xx     | 17.8                          | Nov '23   | Nov '26<sup>1</sup> |
 | 8.0.2xx     | 17.9                          | Feb '24   | May '24             |
-| 8.0.3xx     | 17.10                         | May '24   | Jan '26                 |
+| 8.0.3xx     | 17.10                         | May '24   | Jan '26             |
 | 8.0.4xx     | 17.11                         | Aug '24   | Nov '26<sup>2</sup> |
 | 9.0.1xx     | 17.12                         | Nov '24   | May '26             |
 | 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
-| 9.0.3xx     | 17.14                         | May '25   | Nov '26<sup>2</sup>             |
+| 9.0.3xx     | 17.14                         | May '25   | Nov '26<sup>2</sup> |
 | 10.0.1xx    | 18.0                          | Nov '25   | Nov '28             |
 | 10.0.2xx    | 18.4                          | Mar '26   | May '26             |
 
@@ -110,28 +110,28 @@ To ensure consistent tooling, you should use `dotnet build` rather than `msbuild
 
 ## SDK and Visual Studio support matrix
 
-While most developers use the .NET SDK bundled with their Visual Studio version, some configurations involve mismatched SDK and Visual Studio versions. We cannot ensure every Visual Studio version works with every in-support .NET SDK but rather test the most common configurations and make a best effort to ensure compatibility.
+While most developers use the .NET SDK bundled with their Visual Studio version, some configurations involve mismatched SDK and Visual Studio versions. There is no guarantee every Visual Studio version works with every in-support .NET SDK. The most common configurations are tested to ensure a best effort of compatibility.
 
 ### Backward and forward compatibility
 
 - **Primary supported configuration**: Use the SDK version bundled with your Visual Studio installation
-    - Visual Studio 17.14 and .NET 9.0.3xx
-    - Visual Studio 18.0 and .NET 10.0.1xx
-- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 8.0.4xx in Visual Studio 17.14) is supported with best-effort compatibility. We'll determine when to backport fixes based on risk and customer impact. 
-While older SDKs than the latest of the prior band may work, we will not test them or make an effor to ensure any compatibility.
-- **Forward compatibility**: Using a newer SDK (for example, .NET 10 SDK in Visual Studio 17.14) is allowed without blocking, but targeting newer runtimes in older Visual Studio versions is not supported and should provide a build warning.
+  - Visual Studio 17.14 and .NET 9.0.3xx
+  - Visual Studio 18.0 and .NET 10.0.1xx
+- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 8.0.4xx in Visual Studio 17.14) is supported with best-effort compatibility. The .NET team determines when to backport fixes based on risk and customer impact.
+  While SDKs that are older than the latest of the prior band might work, the .NET team does not test them or make an effort to ensure any compatibility.
+- **Forward compatibility**: Using a newer SDK (for example, .NET 10 SDK in Visual Studio 17.14) is allowed without blocking, but targeting newer runtimes in older Visual Studio versions isn't supported and produces a build warning.
 
 ### Guidance
 
-Our guidance is to use the SDK that came with your Visual Studio instance (or latest available in CI or Visual Studio Code) as that will always have newest features including security updates.
+Use the SDK that came with your Visual Studio instance (or latest available in CI or Visual Studio Code), as that version always has the newest features, including security updates.
 
-## Downlevel targeting support
+## Down-level targeting support
 
 The .NET SDK maintains targeting support for out-of-support .NET versions. The 10.0.100 SDK can build apps targeting `net9.0` all the way down to `netcoreapp1.0`.
 
 ### Guiding principles
 
-- **Existing support preserved**: Targeting support for out-of-support versions remains in the SDK without active removal. Customers upgrading their SDK or Visual Studio version should not have their builds broken simply by targeting an older .NET version.
+- **Existing support preserved**: Targeting support for out-of-support versions remains in the SDK without active removal. Customers that upgrade their SDK or Visual Studio version should not have their builds broken simply by targeting an older .NET version.
 - **New features**: New SDK features aren't required to support out-of-support versions unless excluding such support poses considerable cost or risk.
 - **Breakage fixes**: If issues arise when targeting out-of-support versions, a fix is applied based on the cost of the fix. The goal is to prevent customers from being broken on upgrade.
 
@@ -143,7 +143,8 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 |---------------------|-----------------------|
 | 10.0.100 RC 1       | 18.0.0 Insiders (11010.61)|
 | 10.0.100 RC 2       | 18.0.0 Insiders (11111.16)|
-| 11.0.100 Preview 1       | 18.4.0 Insiders 1 |
+| 11.0.100 Preview 1  | 18.4.0 Insiders 1         |
+| 11.0.100 Preview 2  | 18.5.0 Insiders 1         |
 
 ## Reference
 

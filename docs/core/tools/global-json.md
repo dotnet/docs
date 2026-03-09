@@ -23,10 +23,10 @@ If you always want to use the latest SDK version that is installed on your machi
 }
 ```
 
-Two components within the .NET SDK search for a *global.json* file, each starting from a different location and searching up through ancestor directories:
+You rely on two components in the .NET SDK to search for a *global.json* file. Each component starts from a different location and searches up through ancestor directories:
 
-- **The .NET SDK muxer** (which handles `dotnet` CLI commands) starts from the current working directory, which isn't necessarily the same as the project directory.
-- **The .NET MSBuild project SDK resolver** (which resolves project SDKs during builds) starts from the directory that contains a solution file, if one is available. If no solution file is present, it starts from the directory that contains the current project file. If neither is available, it falls back to the current working directory.
+- **.NET SDK muxer** handles `dotnet` CLI commands. It starts from the current working directory, which isn't necessarily the same as the project directory.
+- **.NET MSBuild project SDK resolver** resolves project SDKs during builds. It starts from the directory that contains a solution file, if one exists. If no solution file exists, it starts from the directory that contains the current project file. If neither file exists, it uses the current working directory.
 
 For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 

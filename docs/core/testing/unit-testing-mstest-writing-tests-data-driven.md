@@ -325,7 +325,7 @@ public class IgnoreDynamicDataExample
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601> class provides enhanced control over test data in data-driven tests. Use `IEnumerable<TestDataRow<T>>` as your data source return type to specify:
 
-- **Custom display names**: Set a unique display name per test case
+- **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.DisplayName> property
 - **Test categories**: Attach metadata to individual test cases
 - **Ignore messages**: Skip specific test cases with reasons
 - **Type-safe data**: Use generics for strongly-typed test data

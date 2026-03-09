@@ -239,7 +239,7 @@ If you run your tests in a console where the codepage was explicitly changed (fo
 
 - With Microsoft.Testing.Platform, that encoding is always preserved.
 - With VSTest not running in isolation mode (the default behavior of vstest.console), that encoding is preserved, similar to Microsoft.Testing.Platform.
-- With VSTest running in isolation mode (the default behavior of dotnet test), that encoding isn't preserved in the testhost, which is the process that runs the tests.
+- With VSTest running in isolation mode (the default behavior of `dotnet test`), that encoding isn't preserved in the testhost, which is the process that runs the tests.
 
 > [!TIP]
 > The reason the encoding isn't preserved with VSTest isolation mode is that the testhost process is started with `CreateNoWindow = true`. So it's not attached to the original console.

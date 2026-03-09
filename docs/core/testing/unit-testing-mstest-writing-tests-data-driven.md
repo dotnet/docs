@@ -3,7 +3,7 @@ title: Data-driven testing in MSTest
 description: Learn how to use data-driven testing in MSTest with DataRow, DynamicData, and TestDataRow to run the same test with multiple inputs.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/05/2026
+ms.date: 03/09/2026
 ---
 
 # Data-driven testing in MSTest
@@ -325,10 +325,10 @@ public class IgnoreDynamicDataExample
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601> class provides enhanced control over test data in data-driven tests. Use `IEnumerable<TestDataRow<T>>` as your data source return type to specify:
 
-- **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.DisplayName> property
-- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.TestCategories> property
-- **Ignore messages**: Skip specific test cases with reasons
-- **Type-safe data**: Use generics for strongly-typed test data
+- **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.DisplayName> property.
+- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.TestCategories> property.
+- **Ignore messages**: Skip specific test cases with reasons using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.IgnoreMessage> property.
+- **Type-safe data**: Use generics for strongly-typed test data.
 
 ### Basic usage
 

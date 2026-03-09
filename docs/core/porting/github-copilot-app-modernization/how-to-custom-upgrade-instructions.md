@@ -79,7 +79,7 @@ Before running the instruction during an upgrade, validate it in isolation. This
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 
    > [!NOTE]
-   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
 
 1. In chat, invoke the instruction with wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
 1. Confirm in the chat window that Copilot retrieved the instruction file:
@@ -109,7 +109,7 @@ Use these steps to incorporate an existing custom upgrade instruction into the a
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 
    > [!NOTE]
-   > These steps apply to Visual Studio. In VS Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
 
 1. In the chat, choose `Upgrade to a newer version of .NET`. Answer Copilot's questions until it begins the assessment.
 1. Monitor the chat to see if Copilot automatically retrieves your custom instruction file during the assessment. Look for a message indicating it opened the markdown instruction file.

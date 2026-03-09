@@ -1,5 +1,5 @@
 ---
-title: Microsoft.Testing.Platform Microsoft Fakes
+title: Microsoft Fakes support for Microsoft.Testing.Platform
 description: Learn about the Microsoft.Testing.Platform Fakes extension capabilities and how to use it.
 author: drognanar
 ms.author: arturs

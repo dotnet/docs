@@ -1,7 +1,7 @@
 ---
 author: adegeo
 ms.author: adegeo
-ms.date: 12/08/2025
+ms.date: 03/04/2026
 ms.topic: include
 # Shared by Azure.NET app mod and .NET app mod
 ---
@@ -21,3 +21,6 @@ ms.topic: include
   > If you change subscriptions, you must restart Visual Studio.
 
 - Code must be written in C#.
+
+> [!NOTE]
+> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot app modernization](../core/porting/github-copilot-app-modernization/install.md).

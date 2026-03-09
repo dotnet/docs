@@ -1,7 +1,7 @@
 ---
 title: dotnet-dump diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
-ms.date: 02/20/2026
+ms.date: 03/04/2026
 ms.topic: reference
 ms.custom: linux-related-content
 ai-usage: ai-assisted
@@ -502,11 +502,18 @@ Fields:
 00007f6c1dbf4c18  4000002       10         System.Int32  1 instance               42 Id
 ```
 
+## Collect a dump in a Docker container
+
+`dotnet-dump` requires `ptrace` capabilities in the container. A common way to grant them is to start the container with `--cap-add=SYS_PTRACE`. Depending on your environment, you might also need to adjust the container's seccomp profile. See the [Dumps: FAQ](faq-dumps.yml) for help diagnosing container security configuration issues.
+
+To install `dotnet-dump` in a production image without the .NET SDK, use the [direct download links](#install) from the Install section, or use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) to copy the tool binaries from an SDK image. For complete container diagnostics guidance, see [Collect diagnostics in Linux containers](diagnostics-in-containers.md).
+
 ## Troubleshooting dump collection issues
 
 Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](faq-dumps.yml) for troubleshooting tips and potential solutions to common issues.
 
 ## See also
 
+- [Collect diagnostics in Linux containers](diagnostics-in-containers.md)
 - [Collecting and analyzing memory dumps blog](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)
 - [Heap analysis tool (dotnet-gcdump)](dotnet-gcdump.md)

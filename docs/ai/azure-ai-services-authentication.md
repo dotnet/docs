@@ -3,7 +3,7 @@ title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET.
 author: alexwolfmsft
 ms.topic: concept-article
-ms.date: 04/09/2025
+ms.date: 03/06/2026
 ---
 
 # Foundry tools authentication and authorization using .NET
@@ -70,7 +70,7 @@ The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
-When developing apps locally that connect to Foundry tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](/#configure-your-app-code) section.
+When developing apps locally that connect to Foundry tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](#configure-the-app-code) section.
 
 For example, to authenticate to Azure locally using the Azure CLI, run the following command:
 

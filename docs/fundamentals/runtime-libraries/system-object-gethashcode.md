@@ -64,7 +64,7 @@ The previous example returns the same hash code for (n1, n2) and (n2, n1), and s
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor2.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor2.vb" id="Snippet3":::
 
-Before `HashCode.Combine` was available, an alternative was to weight the individual hash codes by left-shifting the hash codes of successive fields by two or more bits. Optimally, bits shifted beyond bit 31 should wrap around rather than be discarded. Since bits are discarded by the left-shift operators in both C# and Visual Basic, this requires creating a left shift-and-wrap method like the following:
+In .NET Framework, an alternative is to weight the individual hash codes by left-shifting the hash codes of successive fields by two or more bits. Optimally, bits shifted beyond bit 31 should wrap around rather than be discarded. Since bits are discarded by the left-shift operators in both C# and Visual Basic, this requires creating a left shift-and-wrap method like the following:
 
 :::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/shift1.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/shift1.fs" id="Snippet4":::

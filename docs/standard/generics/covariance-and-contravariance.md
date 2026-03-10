@@ -15,11 +15,11 @@ ms.assetid: 2678dc63-c7f9-4590-9ddc-0a4df684d42e
 ---
 # Covariance and contravariance in generics
 
-*Covariance* and *contravariance* describe how a generic type argument can be substituted for a different type in a conversion. By default, a generic type argument is *invariant*—you must use exactly the type specified. Some generic interfaces and delegates support *covariant* or *contravariant* type parameters, which allow substitution with a more derived or more generic type.
+*Covariance* and *contravariance* describe how reference conversions work between constructed generic types when their type arguments are related by inheritance, for example, between `IEnumerable<Derived>` and `IEnumerable<Base>`. Variance is a property of a generic interface or delegate type's type parameter, and it controls which implicit conversions exist between constructed types that use different type arguments. By default, generic type parameters are *invariant*—even if one type argument derives from another, the corresponding constructed generic types, such as `List<Derived>` and `List<Base>`, are unrelated unless the type parameter is explicitly declared as *covariant* or *contravariant*.
 
 The following definitions and examples assume a base class named `Base` and a derived class named `Derived`.
 
-- *Invariant* type arguments require you to use exactly the type specified. You can't substitute a more derived or more generic type.
+- *Invariant* type arguments require you to use exactly the type specified. You can't substitute a derived or base type.
 
      For example, you can't assign an instance of `List<Base>` to a variable of type `List<Derived>`, or vice versa.
 

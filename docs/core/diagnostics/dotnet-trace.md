@@ -699,6 +699,30 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 ## (Linux-only) Collect a machine-wide trace using dotnet-trace
 
+### Get symbols for native runtime frames
+
+`collect-linux` captures native frames in callstacks. To resolve native method names for runtime libraries (such as `libcoreclr.so`), place the corresponding debug symbol files on disk beside the libraries. Without these symbols, native frames appear as unresolved addresses in the trace.
+
+Unlike [`perfcollect`](./trace-perfcollect-lttng.md), `collect-linux` doesn't require you to set environment variables like `DOTNET_PerfMapEnabled` or `DOTNET_EnableEventLog` before starting your application. `collect-linux` dynamically enables perfmap generation for JIT-compiled code when the trace begins, so you don't need to restart any .NET processes.
+
+To download native runtime symbols, use [dotnet-symbol](./dotnet-symbol.md):
+
+1. Install `dotnet-symbol`:
+
+   ```bash
+   dotnet tool install -g dotnet-symbol
+   ```
+
+1. Download the debug symbols for your runtime version. For example, if your runtime is installed at `/usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.0`:
+
+   ```bash
+   dotnet-symbol --symbols /usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.0/lib*.so
+   ```
+
+1. Place the downloaded `.so.dbg` files beside the runtime libraries they correspond to (for example, `libcoreclr.so.dbg` next to `libcoreclr.so`). If you run `dotnet-symbol` from the runtime directory, it places the symbols there automatically.
+
+After you place the symbols, `collect-linux` resolves native method names when it processes the trace.
+
 This example captures CPU samples for all processes on the machine. Any processes running .NET 10+ will also include some additional lightweight events describing GC, JIT, and Assembly loading behavior.
 
   ```output

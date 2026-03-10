@@ -173,7 +173,7 @@ At this point, you can safely say the CPU is running higher than you expect. Ide
 
 ## Analyze High CPU with Profiler
 
-When analyzing an app with high CPU usage, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from. `dotnet-trace` can be used on all operating systems, however, its limitations of safe-point bias and managed-only callstacks result in more general information compared to a kernel-aware profiler like 'perf' for Linux or ETW for Windows. If your performance investigation involves only managed code, generally `dotnet-trace` will be sufficient.
+When analyzing an app with high CPU usage, use a profiler to understand what the code is doing. `dotnet-trace` works on all operating systems, but safe-point bias and managed-only callstacks limit it to more general information than a kernel-aware profiler like ETW for Windows or `perf` for Linux. On Linux, [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) eliminates these limitations by combining EventPipe with OS-level perf_events in a single unified trace. If your performance investigation involves only managed code, `dotnet-trace collect` is generally sufficient.
 
 ### [Linux](#tab/linux)
 

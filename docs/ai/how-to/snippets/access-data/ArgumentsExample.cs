@@ -38,7 +38,7 @@ class ArgumentsExample
 
         string endpoint = config["AZURE_OPENAI_ENDPOINT"];
         string apiKey = config["AZURE_OPENAI_API_KEY"];
-        string model = "gpt-4o";
+        string model = config["AZURE_OPENAI_GPT_NAME"];
 
         // <SnippetUseAdditionalProperties>
         FunctionInvokingChatClient client = new FunctionInvokingChatClient(

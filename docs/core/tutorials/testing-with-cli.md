@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Organizing and testing projects with the .NET CLI
 
-This tutorial follows [Tutorial: Create a console application with .NET using Visual Studio Code](with-visual-studio-code.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, the tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
+This tutorial follows [Tutorial: Create a .NET console application](create-console-app.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, the tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
 
 > [!NOTE]
 > This tutorial recommends that you place the application project and test project in separate folders. Some developers prefer to keep these projects in the same folder. For more information, see GitHub issue [dotnet/docs #26395](https://github.com/dotnet/docs/issues/26395).

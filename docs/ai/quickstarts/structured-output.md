@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Request a response with structured output
 description: Learn how to create a chat app that responds with structured output, that is, output that conforms to a type that you specify.
-ms.date: 04/30/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Request a response with structured output
@@ -34,7 +35,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -64,7 +65,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="GetChatClient":::
 
    > [!NOTE]
-   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your environment or local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your environment or local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
 1. Send a request to the model with a single product review, and then print the analyzed sentiment to the console. You declare the requested structured output type by passing it as the type argument to the <xref:Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync``1(Microsoft.Extensions.AI.IChatClient,System.String,Microsoft.Extensions.AI.ChatOptions,System.Nullable{System.Boolean},System.Threading.CancellationToken)?displayProperty=nameWithType> extension method.
 

@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Build a minimal .NET AI RAG app
 description: Create an AI powered app to search and integrate with vector stores using embeddings and the Microsoft.Extensions.VectorData package for .NET
-ms.date: 02/28/2026
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Build a .NET AI vector search app
@@ -61,14 +62,14 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet package add Azure.Identity
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add Microsoft.Extensions.VectorData.Abstractions
-    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet package add Microsoft.Extensions.Configuration
-    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
-    dotnet package add System.Linq.AsyncEnumerable
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions
+    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package System.Linq.AsyncEnumerable
     ```
 
     The following list describes each package in the `VectorDataAI` app:
@@ -152,8 +153,8 @@ Complete the following steps to create a .NET console app that can:
 
    :::code language="csharp" source="../snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
-   > [!NOTE]
-   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../../azure-ai-services-authentication.md).
+    > [!NOTE]
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
    :::zone-end
 

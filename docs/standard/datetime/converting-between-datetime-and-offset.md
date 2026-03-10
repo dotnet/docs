@@ -38,7 +38,7 @@ For UTC and local <xref:System.DateTime> values, the <xref:System.DateTimeOffset
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#1)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#1)]
 
-In this case, the offset of the `utcTime2` variable is 00:00. Similarly, the following code converts a local time to its equivalent <xref:System.DateTimeOffset> value:
+In this case, the offset of the `utcTime2` variable is 00:00. Similarly, the following code converts a local time to its equivalent <xref:System.DateTimeOffset> value. The conversion is run in the U.S. Pacific Standard Time zone:
 
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#2)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#2)]

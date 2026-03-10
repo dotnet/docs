@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2025
+ms.date: 03/03/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -62,6 +62,8 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 
 - [GenerateAssemblyInfo](#generateassemblyinfo)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [IncludeSourceRevisionInInformationalVersion](#includesourcerevisionininformationalversion)
+- [SourceRevisionId](#sourcerevisionid)
 
 ### GenerateAssemblyInfo
 
@@ -88,6 +90,30 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
+
+### IncludeSourceRevisionInInformationalVersion
+
+The `IncludeSourceRevisionInInformationalVersion` property controls whether the [`SourceRevisionId`](#sourcerevisionid) value is appended to the `InformationalVersion` assembly attribute. The default value is `true`. Set it to `false` to disable this behavior:
+
+```xml
+<PropertyGroup>
+  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
+### SourceRevisionId
+
+The `SourceRevisionId` property holds the source control revision ID for the build, such as a Git commit hash. Starting in .NET 8, the .NET SDK automatically populates this property with the commit hash when [Source Link](https://github.com/dotnet/sourcelink) is present. When set, its value is appended to the `InformationalVersion` assembly attribute.
+
+```xml
+<PropertyGroup>
+  <SourceRevisionId>abc1234</SourceRevisionId>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
 
 ## Framework properties
 
@@ -1104,6 +1130,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1496,7 +1523,7 @@ When your project references the [Microsoft.Testing.Platform.MSBuild](https://ww
 - Generates the configuration file.
 - Detects the extensions.
 
-Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 If your test project references MSTest, NUnit, or xUnit, this property is set to the same value as [EnableMSTestRunner](#enablemstestrunner), [EnableNUnitRunner](#enablenunitrunner), or `UseMicrosoftTestingPlatformRunner` (for xUnit).
 
@@ -1539,7 +1566,7 @@ The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of 
 
 Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
-For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
 

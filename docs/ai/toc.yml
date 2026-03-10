@@ -57,15 +57,16 @@ items:
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
-  - name: OpenAI function calling
-    href: conceptual/understanding-openai-functions.md
-- name: Call functions
+- name: Call tools
   items:
+    - name: Overview
+      href: conceptual/ai-tools.md
+      displayName: ai tool, ai function, tools, functions
     - name: "Quickstart: Execute a local function"
       href: quickstarts/use-function-calling.md
     - name: Access data in AI functions
       href: how-to/access-data-in-functions.md
-    - name: Handle invalid tool input
+    - name: Handle invalid function input
       href: how-to/handle-invalid-tool-input.md
 - name: Text to image
   items:
@@ -77,6 +78,8 @@ items:
   items:
     - name: Get started with the RAG sample
       href: get-started-app-chat-template.md
+    - name: Process custom data for AI
+      href: quickstarts/process-data.md
     - name: Implement RAG using vector search
       href: vector-stores/tutorial-vector-search.md
     - name: Scale Azure OpenAI with Azure Container Apps

@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Build an AI chat app with .NET
 description: Create a simple AI powered chat app using Microsoft.Extensions.AI and the OpenAI or Azure OpenAI SDKs
-ms.date: 11/20/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Build an AI chat app with .NET
@@ -102,7 +103,7 @@ This app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Mic
     :::code language="csharp" source="snippets/build-chat-app/azure-openai/program.cs" id="GetChatClient":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 

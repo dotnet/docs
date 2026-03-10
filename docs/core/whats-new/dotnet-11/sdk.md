@@ -44,7 +44,17 @@ warning CA1873: Evaluation of this argument may be expensive and unnecessary if 
 warning CA1873: Evaluation of this argument may be expensive and unnecessary if logging is disabled (method invocation)
 ```
 
-The nine specific reasons are: method invocation, object creation, array creation, boxing conversion, string interpolation, collection expression, anonymous object creation, await expression, and with expression.
+The nine specific reasons are:
+
+- Method invocation
+- Object creation
+- Array creation
+- Boxing conversion
+- String interpolation
+- Collection expression
+- Anonymous object creation
+- Await expression
+- With expression
 
 ### Analyzer bug fixes
 

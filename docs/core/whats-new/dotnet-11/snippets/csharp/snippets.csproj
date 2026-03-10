@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Exclude all C# files from compilation as they are code snippets, not a complete application -->
+  <ItemGroup>
+    <Compile Remove="**/*.cs" />
+  </ItemGroup>
+
+  <!-- Include C# files as content for documentation purposes -->
+  <ItemGroup>
+    <Content Include="**/*.cs" />
+  </ItemGroup>
+
+</Project>

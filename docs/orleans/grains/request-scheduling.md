@@ -112,9 +112,9 @@ The following table summarizes all available reentrancy options:
 |--------|-------|-------------|
 | <xref:Orleans.Concurrency.ReentrantAttribute> | Grain class | All methods in the grain can freely interleave with each other. |
 | <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> | Interface method | The marked method always interleaves with any other request, and any other request can interleave with it. |
-| <xref:Orleans.Concurrency.ReadOnlyAttribute> | Interface method | The method doesn't modify grain state and can run concurrently with other `[ReadOnly]` methods. |
+| <xref:Orleans.Concurrency.ReadOnlyAttribute> | Interface method | The method doesn't modify grain state and can run concurrently with other <xref:Orleans.Concurrency.ReadOnlyAttribute> methods. |
 | <xref:Orleans.Concurrency.MayInterleaveAttribute> | Grain class | A predicate method determines on a per-call basis whether a specific request should interleave. |
-| `RequestContext.AllowCallChainReentrancy()` | Call site | Allows reentrancy for the duration of the call chain scoped to callers further down the chain, giving fine-grained control over where reentrancy is enabled. |
+| <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy> | Call site | Allows reentrancy for the duration of the call chain scoped to callers further down the chain, giving fine-grained control over where reentrancy is enabled. |
 
 With reentrancy, the following case becomes a valid execution, removing the possibility of the deadlock described above.
 

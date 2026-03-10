@@ -6,7 +6,7 @@ ms.date: 02/28/2026
 ---
 # Define your data model
 
-The vector store connectors use a model-first approach to interacting with databases.
+Vector store connectors use a model-first approach to interacting with databases.
 
 All methods to upsert or get records use strongly typed model classes. The properties on these classes are decorated with [attributes](#attributes) that indicate the purpose of each property. Here's an example of a model that's decorated with these attributes.
 

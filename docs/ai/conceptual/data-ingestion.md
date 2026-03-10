@@ -108,9 +108,11 @@ These processors use [Microsoft.Extensions.AI.Abstractions](https://www.nuget.or
 
 ### Document writer and storage
 
-<xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1> stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions), the library provides the <xref:Microsoft.Extensions.DataIngestion.VectorStoreWriter`1> class that supports storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
+<xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1> stores processed chunks into a data store for later retrieval. The library, which uses <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData>, provides the <xref:Microsoft.Extensions.DataIngestion.VectorStoreWriter`1> class. This type supports storing chunks in any vector store supported by <xref:Microsoft.Extensions.VectorData>.
 
-Vector stores include popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch), and many more. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, readying them for semantic search and retrieval scenarios.
+Vector stores include popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), and [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch). For more information about connectors, see [Out-of-the-box Vector Store connectors](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the connector package names, these connectors have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
+
+The writer can also automatically generate embeddings for your chunks using <xref:Microsoft.Extensions.AI>, readying them for semantic search and retrieval scenarios.
 
 ```csharp
 OpenAIClient openAIClient = new(

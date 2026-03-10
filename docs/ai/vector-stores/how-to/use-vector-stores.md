@@ -26,7 +26,7 @@ dotnet package add Microsoft.Extensions.VectorData.Abstractions
 dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 ```
 
-For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database.
+For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database. For available connectors, see [Out-of-the-box Vector Store connectors](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the connector package names, these connectors have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
 
 ## Define a data model
 

@@ -6,7 +6,7 @@ ms.date: 02/28/2026
 ---
 # Use vector store abstractions without defining your own data model
 
-The vector store connectors use a model-first approach to interact with databases. This makes using the connectors easy and simple, since your data model reflects the schema of your database records. To add any additional schema information, you can simply add attributes to your data model properties.
+Vector store connectors use a model-first approach to interact with databases. This makes using the connectors easy and simple, since your data model reflects the schema of your database records. To add any additional schema information, you can simply add attributes to your data model properties.
 
 However, there are cases where it isn't desirable or possible to define your own data model. For example, imagine that you don't know at compile time what your database schema looks like, and the schema is only provided via configuration. Creating a data model that reflects the schema would be impossible in this case. Instead, you can use a `Dictionary<string, object?>` for the record type. Properties are added to the `Dictionary` with key as the property name and the value as the property value.
 
@@ -21,6 +21,6 @@ A record definition can be used to provide the schema information. Unlike a data
 
 ## Example
 
-To use the `Dictionary` with a connector, specify it as your data model when you create the collection. Also provide a record definition.
+To use `Dictionary` with a connector, specify it as your data model when you create the collection. Also provide a record definition.
 
 :::code language="csharp" source="./snippets/conceptual/dynamic-data-model.cs" id="Example1":::

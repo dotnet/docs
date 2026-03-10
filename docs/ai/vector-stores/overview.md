@@ -65,7 +65,10 @@ For a step-by-step guide covering data model definition, CRUD operations, vector
 
 ## Vector store connectors
 
-The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate connector packages implement them for specific vector databases. Choose the connector that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
+The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate [connector packages](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/) provide implementations for specific vector databases. Choose the connector that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
+
+> [!NOTE]
+> Despite the inclusion of "SemanticKernel" in the connector package names, these connectors have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.
 
 All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
 

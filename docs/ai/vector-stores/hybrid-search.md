@@ -19,7 +19,7 @@ To execute a hybrid search, your database schema needs to have a vector field an
 
 The <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1.HybridSearchAsync``1(``0,System.Collections.Generic.ICollection{System.String},System.Int32,Microsoft.Extensions.VectorData.HybridSearchOptions{`0},System.Threading.CancellationToken)?displayProperty=nameWithType> method searches using a vector and an `ICollection` of string keywords. It also takes an optional `HybridSearchOptions<TRecord>` class as input.
 
-Only connectors for databases that support vector plus keyword hybrid search implement [the interface](xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1) that provides this method.
+Only connectors for databases that support vector-plus-keyword hybrid search implement [the interface](xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1) that provides this method.
 
 The following example shows how to perform a hybrid search on a collection in a Qdrant database.
 

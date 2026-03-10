@@ -6,7 +6,7 @@ ms.date: 02/28/2026
 ---
 # Define your storage schema using a record definition
 
-The vector store connectors use a model first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
+Vector store connectors use a model-first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
 
 Another way of providing this information is via record definitions, which can be defined and supplied separately to the data model. This can be useful in multiple scenarios:
 

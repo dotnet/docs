@@ -35,7 +35,7 @@ The rest of these instructions assume that you're using a container with these s
 
 ## Create your project
 
-Create a new project and add NuGet package references for the Redis connector, the OpenXml package to read the Word document, and the Azure OpenAI packages for generating embeddings.
+Create a new project and add NuGet package references for the [Redis connector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis), the [OpenXml package](https://www.nuget.org/packages/DocumentFormat.OpenXml) to read the Word document, and the Azure OpenAI packages for generating embeddings.
 
 ```dotnetcli
 dotnet new console --framework net8.0 --name VectorIngest

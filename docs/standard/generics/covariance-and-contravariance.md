@@ -23,11 +23,11 @@ The following definitions and examples assume a base class named `Base` and a de
 
      For example, you can't assign an instance of `List<Base>` to a variable of type `List<Derived>`, or vice versa.
 
-- *Covariant* type arguments let you use a more derived type than originally specified.
+- *Covariant* type parameters let you substitute a more derived type for the original type argument.
 
      For example, you can assign an instance of `IEnumerable<Derived>` to a variable of type `IEnumerable<Base>`.
 
-- *Contravariant* type arguments let you use a more generic (less derived) type than originally specified.
+- *Contravariant* type parameters let you substitute a base type for a derived type argument instead of the original.
 
      For example, you can assign an instance of `Action<Base>` to a variable of type `Action<Derived>`.
   

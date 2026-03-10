@@ -77,9 +77,9 @@ Multiple variants of .NET exist, each supporting a different type of app for bot
 
 .NET implementations:
 
-* **.NET (Core)** — Modern .NET. A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It's evolving and actively supported.
-* **.NET Framework** — The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It's actively supported in maintenance mode.
-* **Mono** — The original community and open source .NET. A cross-platform implementation of .NET Framework.
+* **.NET (Core)** — Modern .NET. A cross-platform and open-source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It's evolving and actively supported.
+* **.NET Framework** — The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It's actively supported, in maintenance.
+* **Mono** — The original community and open-source .NET. A cross-platform implementation of .NET Framework.
 
 ## Next steps
 

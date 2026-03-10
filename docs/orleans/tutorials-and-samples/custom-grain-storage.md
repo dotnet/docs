@@ -134,7 +134,7 @@ Next, create a factory that allows scoping the options to the provider name whil
 
 :::code source="snippets/custom-grain-storage/FileGrainStorageFactory.cs":::
 
-Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension registers the grain storage as a keyed singleton using <xref:Microsoft.Extensions.DependencyInjection.KeyedServiceExtensions.AddKeyedSingleton%2A?displayProperty=nameWithType>, the standard .NET 8+ keyed DI API.
+Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension registers the grain storage as a keyed singleton using <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedSingleton%2A?displayProperty=nameWithType>, the standard .NET 8+ keyed DI API.
 
 :::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 

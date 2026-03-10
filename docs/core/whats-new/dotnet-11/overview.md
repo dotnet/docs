@@ -19,9 +19,9 @@ Your feedback is important and appreciated. If you have questions or comments, u
 
 The .NET 11 runtime includes:
 
-- Updated minimum hardware requirements for x86/x64 and Arm64 architectures, requiring more modern instruction sets to improve performance and reduce maintenance complexity
-- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead
-- JIT improvements for bounds check elimination, redundant checked context removal, and new Arm SVE2 intrinsics
+- Updated minimum hardware requirements for x86/x64 and Arm64 architectures, requiring more modern instruction sets to improve performance and reduce maintenance complexity.
+- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead.
+- JIT improvements for bounds check elimination, redundant checked context removal, and new Arm SVE2 intrinsics.
 
 For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
@@ -29,11 +29,11 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
 The .NET 11 libraries include new APIs for:
 
-- String and character manipulation, including Rune-based operations in String and BFloat16 support in BitConverter
-- Compression, including improved Base64 APIs and new methods for ZIP archive entries
-- Generic type info retrieval in System.Text.Json
-- Tar archive format selection
-- Numerics, including a Matrix4x4 performance improvement
+- String and character manipulation, including Rune-based operations in String and BFloat16 support in BitConverter.
+- Compression, including improved Base64 APIs and new methods for ZIP archive entries.
+- Generic type info retrieval in System.Text.Json.
+- Tar archive format selection.
+- Numerics, including a Matrix4x4 performance improvement.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
@@ -41,10 +41,10 @@ For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
 The .NET 11 SDK includes:
 
-- Smaller SDK installers on Linux and macOS through assembly deduplication
-- Improved CA1873 code analyzer with reduced noise and clearer diagnostic messages
-- Analyzer bug fixes for CA1515, CA1034, and CA1859
-- A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool
+- Smaller SDK installers on Linux and macOS through assembly deduplication.
+- Improved CA1873 code analyzer with reduced noise and clearer diagnostic messages.
+- Analyzer bug fixes for CA1515, CA1034, and CA1859.
+- A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool.
 
 For more information, see [What's new in the SDK for .NET 11](sdk.md).
 

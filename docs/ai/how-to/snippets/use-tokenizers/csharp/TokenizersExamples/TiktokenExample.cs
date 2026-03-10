@@ -13,8 +13,8 @@ internal class TiktokenExample
     private static void BasicUsage()
     {
         // <TiktokenBasic>
-        // Initialize the tokenizer for the gpt-4o model.
-        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
+        // Initialize the tokenizer for the gpt-5 model.
+        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-5");
 
         string source = "Text tokenization is the process of splitting a string into a list of tokens.";
 
@@ -37,7 +37,7 @@ internal class TiktokenExample
     private static void TrimText()
     {
         // <TiktokenTrim>
-        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4o");
+        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-5");
 
         string source = "Text tokenization is the process of splitting a string into a list of tokens.";
 

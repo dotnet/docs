@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Generate images from text using AI
 description: Learn how to use Microsoft.Extensions.AI to generate images from text prompts using AI models in a .NET application.
-ms.date: 03/04/2026
+ms.date: 10/21/2025
 ms.topic: quickstart
 ai-usage: ai-assisted
 ---
@@ -44,7 +44,7 @@ Complete the following steps to create a .NET console application that generates
 
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -54,7 +54,6 @@ Complete the following steps to create a .NET console application that generates
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-image-1
     dotnet user-secrets set AZURE_OPENAI_API_KEY <your-azure-openai-api-key>
     ```
 
@@ -173,7 +172,7 @@ When implementing text-to-image generation in your applications, consider these 
 
 When you no longer need the Azure OpenAI resource, delete it to avoid incurring charges:
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
+1. In the [Azure Portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
 1. Select the resource and then select **Delete**.
 
 ## Next steps

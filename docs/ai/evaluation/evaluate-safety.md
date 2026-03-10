@@ -16,7 +16,7 @@ In this tutorial, you create an MSTest app to evaluate the *content safety* of a
 
 ## Configure the AI service
 
-To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
+To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-5` model.
 
 > [!TIP]
 > The previous configuration step is only required to fetch the response to be evaluated. To evaluate the safety of a response you already have in hand, you can skip this configuration.
@@ -56,7 +56,6 @@ Complete the following steps to create an MSTest project.
    ```bash
    dotnet user-secrets init
    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-   dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
    dotnet user-secrets set AZURE_SUBSCRIPTION_ID <your-subscription-ID>
    dotnet user-secrets set AZURE_RESOURCE_GROUP <your-resource-group>

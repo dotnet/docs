@@ -19,11 +19,11 @@ In this quickstart, you create an MSTest app to evaluate the quality of a chat r
 
 ## Configure the AI service
 
-To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
+To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-5` model.
 
 ## Create the test app
 
-Complete the following steps to create an MSTest project that connects to the `gpt-4o` AI model.
+Complete the following steps to create an MSTest project that connects to the `gpt-5` AI model.
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 
@@ -49,7 +49,6 @@ Complete the following steps to create an MSTest project that connects to the `g
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
     dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 

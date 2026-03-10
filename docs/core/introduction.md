@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 To learn how to [download .NET](https://dotnet.microsoft.com/download/) and start writing your first app, see [Getting started](./get-started.md).
 
-The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It's type-safe and memory-safe, because it uses a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance on multiple operating systems and chip architectures.
+The .NET platform is designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It's type-safe and memory-safe, because it uses a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and that are optimized for performance on multiple operating systems and chip architectures.
 
 .NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
@@ -30,10 +30,10 @@ The .NET platform has been designed to deliver productivity, performance, securi
 .NET includes the following components:
 
 - Runtime — executes application code.
-- Libraries — provides utility functionality like [JSON parsing](../standard/serialization/system-text-json/overview.md).
+- Libraries — provide utility functionality like [JSON parsing](../standard/serialization/system-text-json/overview.md).
 - Compiler — compiles C# (and other languages) source code into (runtime) executable code.
 - SDK and other tools — enable building and monitoring apps with modern workflows.
-- App stacks — like ASP.NET Core and Windows Forms, that enable writing apps.
+- App stacks — like ASP.NET Core and Windows Forms that enable writing apps.
 
 The runtime, libraries, and languages are the pillars of the .NET stack. Higher-level components, like .NET tools, and app stacks, like ASP.NET Core, build on top of these pillars. C# is the primary programming language for .NET and much of .NET is written in C#.
 
@@ -78,7 +78,7 @@ Multiple variants of .NET exist, each supporting a different type of app for bot
 .NET implementations:
 
 * **.NET (Core)** — Modern .NET. A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It's evolving and actively supported.
-* **.NET Framework** — The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It's actively supported, in maintenance.
+* **.NET Framework** — The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It's actively supported in maintenance mode.
 * **Mono** — The original community and open source .NET. A cross-platform implementation of .NET Framework.
 
 ## Next steps

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="direct1.fs" />
+    <Compile Include="shift1.fs" />
+    <Compile Include="xor1.fs" />
+    <Compile Include="xor2.fs" />
+  </ItemGroup>
+
+</Project>

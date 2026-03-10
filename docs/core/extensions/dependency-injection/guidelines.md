@@ -66,7 +66,7 @@ SingletonDisposable.Dispose()
 ```
 
 > [!NOTE]
-Individual <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> calls from <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.DisposeAsync?displayProperty=nameWithType> are executed with `ConfigureAwait(false)`, which means disposal operations do not attempt to resume on the original synchronization context. Services should not rely on disposal completing on any particular context.
+<xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.DisposeAsync?displayProperty=nameWithType> awaits each <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> with `ConfigureAwait(false)`, so continuations from disposal do not attempt to resume on the original synchronization context. Do not rely on disposal completing on any particular context.
 
 ### Services not created by the service container
 

@@ -61,7 +61,7 @@ For more information, see [Minimum hardware requirements updated](../../compatib
 
 .NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead.
 
-Runtime Async is still a preview feature in .NET 11 Preview 2. To opt in, add the following properties to your project file:
+Runtime Async is a preview feature. To opt in, add the following properties to your project file:
 
 ```xml
 <PropertyGroup>
@@ -107,7 +107,7 @@ The most visible improvement is in *live stack traces*—what profilers, debugge
 > [!NOTE]
 > Exception stack traces (from `catch (Exception ex)`) already look the same with or without Runtime Async, because existing `ExceptionDispatchInfo` cleanup in compiler-generated code handles that case. The improvement is in what you see *during* live execution.
 
-This improvement benefits profiling tools, diagnostic logging, and the debugger call stack window—anything that inspects the live execution stack.
+This improvement benefits anything that inspects the live execution stack, including profiling tools, diagnostic logging, and the debugger call stack window.
 
 ### Debugging improvements
 
@@ -122,7 +122,7 @@ Breakpoints now bind correctly inside runtime-async methods, and the debugger ca
 
 ## VM improvements
 
-- **Cached interface dispatch on non-JIT platforms:** On platforms that lack JIT support—such as iOS—interface dispatch was falling back to an expensive generic fixup path. Enabling cached dispatch by default yields up to 200x improvements in interface-heavy code on these targets.
+- **Cached interface dispatch on non-JIT platforms:** On platforms that lack JIT support, such as iOS, interface dispatch was falling back to an expensive generic fixup path. Cached dispatch yields up to 200x improvements in interface-heavy code on these targets.
 - **`Guid.NewGuid()` on Linux:** <xref:System.Guid.NewGuid?displayProperty=nameWithType> on Linux now uses the `getrandom()` syscall with batch caching instead of reading from `/dev/urandom`, yielding approximately 12% throughput improvement for GUID generation.
 
 ## See also

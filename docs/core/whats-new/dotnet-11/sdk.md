@@ -15,7 +15,7 @@ This article describes new features and enhancements in the .NET SDK for .NET 11
 
 The .NET SDK installer size on Linux and macOS has been reduced by deduplicating assemblies using symbolic links. Duplicate `.dll` and `.exe` files are identified by content hash and replaced with symbolic links pointing to a single copy. This affects tarballs, `.pkg`, `.deb`, and `.rpm` installers.
 
-Analysis found that 35% of the SDK directory consists of duplicate files—816 files totaling 140 MB on disk (53 MB compressed) on Linux x64. By replacing duplicates with symbolic links, the Linux x64 archive drops significantly in size:
+Analysis found that 35% of the SDK directory consists of duplicate files. On Linux x64, that's 816 files totaling 140 MB on disk (53 MB compressed). By replacing duplicates with symbolic links, the Linux x64 archive drops significantly in size:
 
 | Platform | SDK artifact | .NET 10 size (MB) | .NET 11 Preview 2 size (MB) | Reduction |
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ Windows deduplication is planned for a future preview.
 
 ### CA1873: Reduced noise and improved messages
 
-Two improvements were made to [CA1873](/dotnet/fundamentals/code-analysis/quality-rules/ca1873) (Avoid potentially expensive logging):
+Two improvements were made to [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) (Avoid potentially expensive logging):
 
 **Reduced false positives:** Property accesses, `GetType()`, `GetHashCode()`, and `GetTimestamp()` calls are no longer flagged. Diagnostics now apply only to Information-level logging and below by default, since warning, error, and critical code paths are rarely hot paths.
 
@@ -60,13 +60,13 @@ The nine specific reasons are:
 
 | Analyzer | Fix |
 |----------|-----|
-| [CA1515](/dotnet/fundamentals/code-analysis/quality-rules/ca1515) | Fixed false positive when C# extension members are present |
-| [CA1034](/dotnet/fundamentals/code-analysis/quality-rules/ca1034) | Fixed false positive when C# extension members are present |
-| [CA1859](/dotnet/fundamentals/code-analysis/quality-rules/ca1859) | Fixed improper handling of default interface implementations |
+| [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md) | Fixed false positive when C# extension members are present |
+| [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) | Fixed false positive when C# extension members are present |
+| [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md) | Fixed improper handling of default interface implementations |
 
 ### AnalysisLevel corrected for .NET 11
 
-Projects with `AnalysisLevel=latest` were incorrectly using .NET 9.0 analyzer rules instead of the expected 11.0 rules. This is now fixed.
+Projects with `AnalysisLevel=latest` were incorrectly using .NET 9 analyzer rules instead of the expected .NET 11 rules. This is now fixed.
 
 ## New SDK warnings
 

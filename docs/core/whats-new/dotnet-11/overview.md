@@ -29,11 +29,11 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
 The .NET 11 libraries include new APIs for:
 
-- String and character manipulation, including Rune-based operations in String and BFloat16 support in BitConverter.
+- String and character manipulation, including Rune-based operations in <xref:System.String> and BFloat16 support in <xref:System.BitConverter>.
 - Compression, including improved Base64 APIs and new methods for ZIP archive entries.
-- Generic type info retrieval in System.Text.Json.
+- Generic type info retrieval in <xref:System.Text.Json?displayProperty=fullName>.
 - Tar archive format selection.
-- Numerics, including a Matrix4x4 performance improvement.
+- Numerics, including a <xref:System.Numerics.Matrix4x4> performance improvement.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
@@ -42,8 +42,8 @@ For more information, see [What's new in the .NET 11 libraries](libraries.md).
 The .NET 11 SDK includes:
 
 - Smaller SDK installers on Linux and macOS through assembly deduplication.
-- Improved CA1873 code analyzer with reduced noise and clearer diagnostic messages.
-- Analyzer bug fixes for CA1515, CA1034, and CA1859.
+- Improved [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) code analyzer with reduced noise and clearer diagnostic messages.
+- Analyzer bug fixes for [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md), [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md), and [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md).
 - A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool.
 
 For more information, see [What's new in the SDK for .NET 11](sdk.md).

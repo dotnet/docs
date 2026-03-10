@@ -1,4 +1,6 @@
+using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 // <RuntimeAsyncStackTrace>
 // To enable runtime async, add the following to your .csproj:

@@ -38,7 +38,7 @@ The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a
 > The member names follow the pattern `{CallDirection}{DataFlow}`:
 >
 > - **Call direction** (`ManagedToUnmanaged` or `UnmanagedToManaged`) indicates which side initiates the call. `ManagedToUnmanaged` means managed code calling unmanaged code (P/Invoke). `UnmanagedToManaged` means unmanaged code calling managed code (Reverse P/Invoke, COM).
-> - **Data flow** (`In`, `Out`, or `Ref`) indicates how data moves relative to the call. `In` means data flows from the caller to the callee. `Out` means data flows from the callee back to the caller — this includes both `out` parameters and return values. `Ref` means data flows in both directions.
+> - **Data flow** (`In`, `Out`, or `Ref`) indicates how data moves relative to the call. `In` means data flows from the caller to the callee. `Out` means data flows from the callee back to the caller&mdash;this includes both `out` parameters and return values. `Ref` means data flows in both directions.
 >
 > For example, `ManagedToUnmanagedOut` is used for `out` parameters and return values when managed code calls unmanaged code. Even though the name starts with "ManagedToUnmanaged", the marshaller for this mode converts *from* the unmanaged representation *to* the managed representation, because the data flows back to the managed caller.
 

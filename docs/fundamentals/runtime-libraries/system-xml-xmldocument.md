@@ -146,7 +146,7 @@ This example locates a book by using the ISBN number.
 
 The string used in this example is an Xpath query. You can find more examples of them at [XPath examples](/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)).
 
-You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you'll have to define ID's in the document type definition declarations of your XML file.
+You can also use the <xref:System.Xml.XmlDocument.GetElementById*> to retrieve nodes. To use this approach, you'll have to define ID's in the document type definition declarations of your XML file.
 
 After you get a node, you get the value of attributes or child nodes. This example does that with a book node.
 
@@ -178,11 +178,11 @@ For more information, see [Modifying Nodes, Content, and Values in an XML Docume
 
 ## Add nodes
 
-To add a node, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method or the <xref:System.Xml.XmlDocument.CreateNode%2A> method.
+To add a node, use the <xref:System.Xml.XmlDocument.CreateElement*> method or the <xref:System.Xml.XmlDocument.CreateNode*> method.
 
-To add a data node such as a book, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method.
+To add a data node such as a book, use the <xref:System.Xml.XmlDocument.CreateElement*> method.
 
-For any other type of node such as a comment, whitespace node, or CDATA node, use the <xref:System.Xml.XmlDocument.CreateNode%2A> method.
+For any other type of node such as a comment, whitespace node, or CDATA node, use the <xref:System.Xml.XmlDocument.CreateNode*> method.
 
 This example creates a book node, adds attributes to that node, and then adds that node to the document.
 
@@ -193,7 +193,7 @@ For more information, see [Inserting Nodes into an XML Document](../../standard/
 
 ## Remove nodes
 
-To remove a node, use the <xref:System.Xml.XmlNode.RemoveChild%2A> method.
+To remove a node, use the <xref:System.Xml.XmlNode.RemoveChild*> method.
 
 This example removes a book from the document and any whitespace that appears just before the book node.
 
@@ -204,7 +204,7 @@ For more information, see [Removing Nodes, Content, and Values from an XML Docum
 
 ## Position nodes
 
-You can choose where you want a node to appear in your document by using the <xref:System.Xml.XmlNode.InsertBefore%2A> and <xref:System.Xml.XmlNode.InsertAfter%2A> methods.
+You can choose where you want a node to appear in your document by using the <xref:System.Xml.XmlNode.InsertBefore*> and <xref:System.Xml.XmlNode.InsertAfter*> methods.
 
 This example shows two helper methods. One of them moves a node higher in a list. The other one moves a node lower.
 

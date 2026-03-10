@@ -4,20 +4,20 @@ title: "<security> element of <ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
 ---
-# \<security> element of \<ws2007FederationHttpBinding>
+# `<security>` element of \<ws2007FederationHttpBinding>
 
-Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) element.  
-  
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<ws2007FederationHttpBinding>**](ws2007federationhttpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
-  
-## Syntax  
-  
-```xml  
+Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) element.
+
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<ws2007FederationHttpBinding>`](ws2007federationhttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<binding>`\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<security>`
+
+## Syntax
+
+```xml
 <ws2007FederationBinding>
   <binding>
     <security mode="None/Message/TransportWithMessageCredential">
@@ -30,38 +30,38 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007fede
     </security>
   </binding>
 </ws2007FederationBinding>
-```  
-  
-## Attributes and Elements  
+```
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|`mode`|Optional. Specifies the type of security that is applied. The default value is `Message`. This attribute is of type <xref:System.ServiceModel.WSFederationHttpSecurityMode>.|  
-  
-## mode Attribute  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|None|The SOAP message is not secure during transfer.|  
-|Message|Integrity, confidentiality, server authentication and client authentication are provided using SOAP message security. By default, the body is encrypted and signed. The service must be configured with a certificate. Client authentication is based on the token issued to the client by a security token service.|  
-|TransportWithMessageCredential|Integrity, confidentiality and server authentication are provided by HTTPS. The service must be configured with a certificate. Client authentication is provided by means of SOAP message security and is based on the token issued to the client by a security token service.|  
-  
-### Child Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<message>](message-of-ws2007httpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.|  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<binding>](bindings.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|  
-  
+## Attributes and Elements
+
+ The following sections describe attributes, child elements, and parent elements.
+
+### Attributes
+
+|Attribute|Description|
+|---------------|-----------------|
+|`mode`|Optional. Specifies the type of security that is applied. The default value is `Message`. This attribute is of type <xref:System.ServiceModel.WSFederationHttpSecurityMode>.|
+
+## mode Attribute
+
+|Value|Description|
+|-----------|-----------------|
+|None|The SOAP message is not secure during transfer.|
+|Message|Integrity, confidentiality, server authentication and client authentication are provided using SOAP message security. By default, the body is encrypted and signed. The service must be configured with a certificate. Client authentication is based on the token issued to the client by a security token service.|
+|TransportWithMessageCredential|Integrity, confidentiality and server authentication are provided by HTTPS. The service must be configured with a certificate. Client authentication is provided by means of SOAP message security and is based on the token issued to the client by a security token service.|
+
+### Child Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<message>](message-of-ws2007httpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.|
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<binding>](bindings.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|
+
 ## See also
 
 - <xref:System.ServiceModel.WSFederationHttpSecurity>

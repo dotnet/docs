@@ -1,7 +1,7 @@
 ---
 title: "The this keyword"
 description: The `this` keyword clarifies access to the current instance of a type, or declares an indexer on the type.
-ms.date: 04/17/2025
+ms.date: 01/22/2026
 f1_keywords: 
   - "this"
   - "this_CSharpKeyword"
@@ -10,30 +10,29 @@ helpviewer_keywords:
 ---
 # The this keyword
 
-The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
+The `this` keyword refers to the current instance of the class. It also serves as a modifier for the first parameter of an extension method.
 
 > [!NOTE]
 > This article discusses the use of `this` to refer to the receiver instance in the current member. For more information about its use in extension methods, see the [`extension`](./extension.md) keyword.
 
-The following are common uses of `this`:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-- To qualify members hidden by similar names, for example:
+Common uses of `this` include:
 
+- Qualifying members hidden by similar names, such as:
   :::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet4":::
-
-- To pass an object as a parameter to other methods, for example:
+- Passing an object as a parameter to other methods.
 
   ```csharp
   CalcTax(this);
   ```
 
-- To declare [indexers](../../programming-guide/indexers/index.md), for example:
-
+- Declaring [indexers](../../programming-guide/indexers/index.md), such as:
   :::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet5":::
 
-Static member functions, because they exist at the class level and not as part of an object, don't have a `this` pointer. It's an error to refer to `this` in a static method.
+Static member functions exist at the class level and not as part of an object. They don't have a `this` pointer. Referring to `this` in a static method is an error.
 
-In this example, the parameters `name`, and `alias` hide fields with the same names. The `this` keyword qualifies those variables as `Employee` class members. The `this` keyword also specifies the object for the method `CalcTax`, which belongs to another class.
+In the following example, the parameters `name` and `alias` hide fields with the same names. The `this` keyword qualifies those variables as `Employee` class members. The `this` keyword also specifies the object for the method `CalcTax`, which belongs to another class.
 
 :::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet3":::
 

@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 37a87222-ec78-4728-8105-9ca1bd961f0c
 ---
 
-# \<filters>
+# `<filters>`
 
 The `filters` element holds a collection of XPath filters used to control what kind of message is logged.
 
@@ -16,8 +16,8 @@ To add a filter to the collection, use the `add` keyword. When one or more filte
 Filters support the full XPath syntax, and are applied in the order they appear in the configuration file. A syntactically incorrect filter results in a configuration exception.
 
 The following is an example of how to configure a filter that records only messages that have a SOAP Header section.
-  
-```xml  
+
+```xml
 <messageLogging logEntireMessage="true"
                 logMalformedMessages="true"
                 logMessagesAtServiceLevel="true"
@@ -29,8 +29,8 @@ The following is an example of how to configure a filter that records only messa
     </add>
   </filters>
 </messageLogging>
-```  
-  
+```
+
 ## See also
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>

@@ -16,10 +16,10 @@ ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 
 Clears all authentication modules from the application.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<authenticationModules>`](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
 
 ## Syntax
 

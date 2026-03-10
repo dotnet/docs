@@ -3,9 +3,8 @@ title: Additional Azure Tools
 description: This article describes additional tools and utilities for working with Azure and how you can install them.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurepowershell
-ms.date: 8/15/2024
-author: alexwolfmsft
-ms.author: alexwolf
+ai-usage: ai-assisted
+ms.date: 01/16/2026
 ---
 
 # Additional Tools for Azure Developers
@@ -35,12 +34,12 @@ Azure Storage Explorer is a free, GUI tool for managing storage resources and da
 > [!div class="nextstepaction"]
 > [Download Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
-## Azure Data Studio
+## GitHub Copilot for Azure
 
-Azure Data Studio is a cross-platform database tool for accessing both on-premises and cloud databases. It allows you to edit and execute SQL queries in addition to charting and visualizing result sets. It supports all versions of SQL Server from SQL Server 2014 and later and Azure SQL. Azure Data Studio extensions also provide support for other database options such as MySQL, PostgreSQL, and Azure Cosmos DB. If you plan to work with Azure SQL, download and install Azure Data Studio.
+GitHub Copilot for Azure is an AI companion that helps you design, build, and operate cloud-native applications. It integrates with your editor to answer questions about Azure services, generate configuration, and troubleshoot issues. If you want to accelerate your Azure development with AI assistance, install GitHub Copilot for Azure.
 
 > [!div class="nextstepaction"]
-> [Download Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
+> [Get started with GitHub Copilot for Azure](/azure/developer/github-copilot-azure/get-started)
 
 ## Next steps
 

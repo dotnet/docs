@@ -1,8 +1,10 @@
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Threading.Tasks
 
 ' These classes are intentionally empty for the purpose of this example. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
+
+' <HelperClasses>
 Friend Class HashBrown
 End Class
 
@@ -17,6 +19,7 @@ End Class
 
 Friend Class Toast
 End Class
+' </HelperClasses>
 
 Module Program
     ' <SynchronousBreakfast>

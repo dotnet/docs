@@ -13,9 +13,9 @@ ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
 
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<enforceFIPSPolicy>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<enforceFIPSPolicy>`
 
 ## Syntax
 

@@ -1,13 +1,16 @@
 ---
 title: "Breaking change: Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey"
 description: "Learn about the breaking change in .NET 10 where GetKeyedService() and GetKeyedServices() behavior changed when using KeyedService.AnyKey as the lookup key."
-ms.date: 11/19/2025
+ms.date: 01/26/2026
 ai-usage: ai-assisted
 ---
 
 # Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey
 
-The behavior of the <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedService(System.IServiceProvider,System.Type,System.Object)> and <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices(System.IServiceProvider,System.Type,System.Object)> methods in the `Microsoft.Extensions.DependencyInjection` library was updated to address inconsistencies in handling the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration. Specifically, `GetKeyedService()` now throws an exception when you attempt to resolve a single service using `KeyedService.AnyKey` as the lookup key, and `GetKeyedServices()` (plural) no longer returns `AnyKey` registrations when queried with `KeyedService.AnyKey`.
+The behavior of the <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedService(System.IServiceProvider,System.Type,System.Object)> and <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices(System.IServiceProvider,System.Type,System.Object)> methods in the `Microsoft.Extensions.DependencyInjection` library was updated to address inconsistencies in handling the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration. Specifically:
+
+- `GetKeyedService()` now throws an exception when you attempt to resolve a single service using `KeyedService.AnyKey` as the lookup key.
+- `GetKeyedServices()` (plural) no longer returns `AnyKey` registrations when queried with `KeyedService.AnyKey`.
 
 ## Version introduced
 
@@ -21,7 +24,7 @@ Calling `GetKeyedServices()` with `KeyedService.AnyKey` returned all registratio
 
 ## New behavior
 
-Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException>. This ensures that `AnyKey` can't be used to resolve a single service, as it's intended to represent a special case rather than a specific key.
+Starting in .NET 10, calling `GetKeyedService()` with `KeyedService.AnyKey` throws an <xref:System.InvalidOperationException>. This ensures that `AnyKey` can't be used to resolve a single service, as it's [intended to represent a special case](../../../extensions/dependency-injection/overview.md#keyedserviceanykey-property) rather than a specific key.
 
 ```csharp
 var service = serviceProvider.GetKeyedService(typeof(IMyService), KeyedService.AnyKey);
@@ -32,7 +35,7 @@ Additionally, calling `GetKeyedServices()` with `KeyedService.AnyKey` no longer 
 
 ```csharp
 var services = serviceProvider.GetKeyedServices(typeof(IMyService), KeyedService.AnyKey);
-// Returns an empty collection.
+// Returns only services that were registered with a specific key.
 ```
 
 ## Type of breaking change
@@ -41,17 +44,25 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The previous behavior of `GetKeyedService()` and `GetKeyedServices()` with `KeyedService.AnyKey` was inconsistent with the intended semantics of `AnyKey`. The changes were introduced to ensure that `AnyKey` is treated as a special case and can't be used to resolve a single service, and to prevent `GetKeyedServices()` from returning `AnyKey` registrations when queried with `AnyKey`. These updates improve the predictability and correctness of the `Microsoft.Extensions.DependencyInjection` library's behavior when working with keyed services. For more details, see the [pull request](https://github.com/dotnet/runtime/pull/113137) and the associated [merge commit](https://github.com/dotnet/runtime/commit/deee462fc8421a7e18b8916eb5a5eacb9d09169d).
+The previous behavior of `GetKeyedService()` and `GetKeyedServices()` with `KeyedService.AnyKey` was inconsistent with the intended semantics of `AnyKey`. The changes were introduced to:
+
+- Ensure that `AnyKey` is treated as a special case and can't be used to resolve a single service.
+- Prevent `GetKeyedServices()` from returning `AnyKey` registrations when queried with `AnyKey`.
+
+These updates improve the predictability and correctness of the `Microsoft.Extensions.DependencyInjection` library's behavior when working with keyed services. For more details, see the [pull request](https://github.com/dotnet/runtime/pull/113137) and the associated [merge commit](https://github.com/dotnet/runtime/commit/deee462fc8421a7e18b8916eb5a5eacb9d09169d).
 
 ## Recommended action
 
-If you use `GetKeyedService()` or `GetKeyedServices()` with `KeyedService.AnyKey`, review your code and update it to use specific keys instead of `AnyKey`.
+If you use `GetKeyedService()` or `GetKeyedServices()` with `KeyedService.AnyKey`, review your code and update it to use specific keys instead of `AnyKey`:
 
-For `GetKeyedService(KeyedService.AnyKey)`, replace calls to `GetKeyedService()` with `KeyedService.AnyKey` with specific keys or alternative logic to handle service resolution.
-
-For `GetKeyedServices(KeyedService.AnyKey)`, replace calls to `GetKeyedServices()` with `KeyedService.AnyKey` with calls that use specific keys, or update your logic to enumerate only the services you intend to retrieve.
+- Update `GetKeyedService(KeyedService.AnyKey)` calls to pass specific keys, or use alternative logic to handle service resolution.
+- Update `GetKeyedServices(KeyedService.AnyKey)` calls to pass specific keys, or use alternative logic to enumerate only the services you intend to retrieve.
 
 ## Affected APIs
 
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedService(System.IServiceProvider,System.Type,System.Object)?displayProperty=fullName>
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions.GetKeyedServices(System.IServiceProvider,System.Type,System.Object)?displayProperty=fullName>
+
+## See also
+
+- [Use KeyedService.AnyKey for fallbacks](../../../extensions/dependency-injection/overview.md#keyedserviceanykey-property)

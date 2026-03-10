@@ -11,9 +11,9 @@ ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
 
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainResourceMonitoring>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<appDomainResourceMonitoring>`
 
 ## Syntax
 

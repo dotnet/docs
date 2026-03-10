@@ -120,7 +120,7 @@ Module modMain
     Private Sub ShowNM()
         ' <Snippet6>
         Dim pattern As String = "(00\s){2,4}"
-        Dim input As String = "0x00 FF 00 00 18 17 FF 00 00 00 21 00 00 00 00 00"
+        Dim input As String = "0x00 FF 00 00 18 17 FF 00 00 00 21 00 00 00 00 00 "
         For Each match As Match In Regex.Matches(input, pattern)
             Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
         Next

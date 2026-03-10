@@ -31,7 +31,7 @@ In this tutorial, you:
 
 ## Create the sample application
 
-Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax.
+Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax. You'll create extensions for the <xref:System.Drawing.Point?displayProperty=fullName> type. This type comes from the `System.Drawing` namespace and is typically used in Windows Forms applications.
 
 1. Create a new console application:
 

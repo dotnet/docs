@@ -13,9 +13,9 @@ ms.assetid: 0d4ddb53-eb2b-49c0-9c33-a8dec5c39b46
 
 Adds custom application settings. Each `<add>` tag contains a key/value pair.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<sectionName>`](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 
@@ -34,7 +34,7 @@ Adds custom application settings. Each `<add>` tag contains a key/value pair.
 
 | Element | Description |
 | ------- | ------------|
-| [`<sectionName>` Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [`<sectionName>`](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 

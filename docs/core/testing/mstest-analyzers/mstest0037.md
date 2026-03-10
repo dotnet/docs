@@ -13,16 +13,16 @@ ms.author: ygerges
 ---
 # MSTEST0037: Use proper 'Assert' methods
 
-| Property                            | Value                                                                  |
-|-------------------------------------|------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0037                                                             |
-| **Title**                           | Use proper 'Assert' methods                                            |
-| **Category**                        | Usage                                                                  |
-| **Fix is breaking or non-breaking** | Non-breaking                                                           |
-| **Enabled by default**              | Yes                                                                    |
-| **Default severity**                | Warning starting with 4.0.0, Info before                               |
-| **Introduced in version**           | 3.7.0                                                                  |
-| **Is there a code fix**             | Yes                                                                    |
+| Property                            | Value                        |
+|-------------------------------------|------------------------------|
+| **Rule ID**                         | MSTEST0037                   |
+| **Title**                           | Use proper 'Assert' methods  |
+| **Category**                        | Usage                        |
+| **Fix is breaking or non-breaking** | Non-breaking                 |
+| **Enabled by default**              | Yes                          |
+| **Default severity**                | Info (Warning in 4.0)        |
+| **Introduced in version**           | 3.7.0                        |
+| **Is there a code fix**             | Yes                          |
 
 ## Cause
 

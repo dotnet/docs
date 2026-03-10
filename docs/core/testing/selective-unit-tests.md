@@ -235,7 +235,7 @@ For more information, see [TestCase filter](https://github.com/Microsoft/vstest-
 ## See also
 
 - [dotnet test](../tools/dotnet-test.md)
-- [dotnet test --filter](../tools/dotnet-test.md#filter-option-details)
+- [dotnet test --filter](../tools/dotnet-test-vstest.md#filter-option-details)
 
 ## Next steps
 

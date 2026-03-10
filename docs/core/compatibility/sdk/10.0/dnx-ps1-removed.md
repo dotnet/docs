@@ -3,7 +3,6 @@ title: "Breaking change - dnx.ps1 file is no longer included in .NET SDK"
 description: "Learn about the breaking change in .NET 10 where the dnx.ps1 script is no longer included in Windows versions of the .NET SDK."
 ms.date: 10/13/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/497988
 ---
 
 # dnx.ps1 file is no longer included in .NET SDK

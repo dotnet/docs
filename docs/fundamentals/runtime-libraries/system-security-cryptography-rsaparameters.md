@@ -9,7 +9,7 @@ ms.date: 12/31/2023
 
 The <xref:System.Security.Cryptography.RSAParameters> structure represents the standard parameters for the RSA algorithm.
 
-The <xref:System.Security.Cryptography.RSA> class exposes an <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method that enables you to retrieve the raw RSA key in the form of an <xref:System.Security.Cryptography.RSAParameters> structure.
+The <xref:System.Security.Cryptography.RSA> class exposes an <xref:System.Security.Cryptography.RSA.ExportParameters*> method that enables you to retrieve the raw RSA key in the form of an <xref:System.Security.Cryptography.RSAParameters> structure.
 
 To understand the contents of this structure, it helps to be familiar with how the <xref:System.Security.Cryptography.RSA> algorithm works. The next section discusses the algorithm briefly.
 
@@ -42,6 +42,6 @@ The following table summarizes the fields of the <xref:System.Security.Cryptogra
 | <xref:System.Security.Cryptography.RSAParameters.P>        | p                       | prime1                      |
 | <xref:System.Security.Cryptography.RSAParameters.Q>        | q                       | prime2                      |
 
-The security of RSA derives from the fact that, given the public key { e, n }, it is computationally infeasible to calculate d, either directly or by factoring n into p and q. Therefore, any part of the key related to d, p, or q must be kept secret. If you call <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters%2A> and ask for only the public key information, this is why you will receive only <xref:System.Security.Cryptography.RSAParameters.Exponent> and <xref:System.Security.Cryptography.RSAParameters.Modulus>. The other fields are available only if you have access to the private key, and you request it.
+The security of RSA derives from the fact that, given the public key { e, n }, it is computationally infeasible to calculate d, either directly or by factoring n into p and q. Therefore, any part of the key related to d, p, or q must be kept secret. If you call <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters*> and ask for only the public key information, this is why you will receive only <xref:System.Security.Cryptography.RSAParameters.Exponent> and <xref:System.Security.Cryptography.RSAParameters.Modulus>. The other fields are available only if you have access to the private key, and you request it.
 
 <xref:System.Security.Cryptography.RSAParameters> is not encrypted in any way, so you must be careful when you use it with the private key information. All members of <xref:System.Security.Cryptography.RSAParameters> are serialized. If anyone can derive or intercept the private key parameters, the key and all the information encrypted or signed with it are compromised.

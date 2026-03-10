@@ -30,7 +30,7 @@ Subsequent versions of an assembly that differ only by build or revision numbers
 > [!IMPORTANT]
 > The value of <xref:System.Version> properties that have not been explicitly assigned a value is undefined (-1).
 
-The <xref:System.Version.MajorRevision%2A> and <xref:System.Version.MinorRevision%2A> properties enable you to identify a temporary version of your application that, for example, corrects a problem until you can release a permanent solution. Furthermore, the Windows NT operating system uses the <xref:System.Version.MajorRevision> property to encode the service pack number.
+The <xref:System.Version.MajorRevision*> and <xref:System.Version.MinorRevision*> properties enable you to identify a temporary version of your application that, for example, corrects a problem until you can release a permanent solution. Furthermore, the Windows NT operating system uses the <xref:System.Version.MajorRevision> property to encode the service pack number.
 
 ## Assign version information to assemblies
 
@@ -52,7 +52,7 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
   :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/GettingVersions1.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/GettingVersions1.vb" id="Snippet2":::
 
-- Retrieving the current application's assembly version. The following example uses the <xref:System.Reflection.Assembly.GetEntryAssembly%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the application executable and then retrieves its assembly version number.
+- Retrieving the current application's assembly version. The following example uses the <xref:System.Reflection.Assembly.GetEntryAssembly*?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the application executable and then retrieves its assembly version number.
 
   :::code language="csharp" source="./snippets/System/Version/Overview/csharp/currentapp.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentapp.fs" id="Snippet5":::
@@ -64,7 +64,7 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
   :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentassem.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Version/Overview/vb/currentassem.vb" id="Snippet4":::
 
-- Retrieving the version of a specific assembly. The following example uses the <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that has a particular file name, and then retrieves its version information. Note that several other methods also exist to instantiate an <xref:System.Reflection.Assembly> object by file name or by strong name.
+- Retrieving the version of a specific assembly. The following example uses the <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom*?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that has a particular file name, and then retrieves its version information. Note that several other methods also exist to instantiate an <xref:System.Reflection.Assembly> object by file name or by strong name.
 
   :::code language="csharp" source="./snippets/System/Version/Overview/csharp/specificassem.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/specificassem.fs" id="Snippet3":::
@@ -80,7 +80,7 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
 
 ## Compare version objects
 
-You can use the <xref:System.Version.CompareTo%2A> method to determine whether one <xref:System.Version> object is earlier than, the same as, or later than a second <xref:System.Version> object. The following example indicates that Version 2.1 is later than Version 2.0.
+You can use the <xref:System.Version.CompareTo*> method to determine whether one <xref:System.Version> object is earlier than, the same as, or later than a second <xref:System.Version> object. The following example indicates that Version 2.1 is later than Version 2.0.
 
 :::code language="csharp" source="./snippets/System/Version/Overview/csharp/comparisons1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/comparisons1.fs" id="Snippet1":::

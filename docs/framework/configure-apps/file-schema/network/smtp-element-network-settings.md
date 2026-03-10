@@ -14,10 +14,10 @@ ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
 
 Configures the delivery format, delivery method, and from address for sending emails.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<mailSettings>**](mailsettings-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<smtp>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<mailSettings>`](mailsettings-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<smtp>`
 
 ## Syntax
 

@@ -1,7 +1,7 @@
 ---
 title: "Jump statements - break, continue, return, and goto"
 description: "C# jump statements (break, continue, return, and goto) unconditionally transfer control from the current location to a different statement."
-ms.date: 11/22/2022
+ms.date: 01/16/2026
 f1_keywords:
   - "break_CSharpKeyword"
   - "continue_CSharpKeyword"
@@ -22,6 +22,8 @@ helpviewer_keywords:
 The jump statements unconditionally transfer control. The [`break` statement](#the-break-statement) terminates the closest enclosing [iteration statement](iteration-statements.md) or [`switch` statement](selection-statements.md#the-switch-statement). The [`continue` statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md). The [`return` statement](#the-return-statement) terminates execution of the function in which it appears and returns control to the caller. The [`goto` statement](#the-goto-statement) transfers control to a statement that is marked by a label.
 
 For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [The `throw` statement](exception-handling-statements.md#the-throw-statement) section of the [Exception-handling statements](exception-handling-statements.md) article.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## The `break` statement
 
@@ -45,19 +47,19 @@ The `continue` statement starts a new iteration of the closest enclosing [iterat
 
 ## The `return` statement
 
-The `return` statement terminates execution of the function in which it appears and returns control and the function's result, if any, to the caller.
+The `return` statement terminates execution of the function where it appears. It returns control and the function's result, if any, to the caller.
 
-If a function member doesn't compute a value, you use the `return` statement without expression, as the following example shows:
+If a function member doesn't compute a value, use the `return` statement without an expression, as the following example shows:
 
 :::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="WithoutExpression":::
 
-As the preceding example shows, you typically use the `return` statement without expression to terminate a function member early. If a function member doesn't contain the `return` statement, it terminates after its last statement is executed.
+As the preceding example shows, typically use the `return` statement without an expression to terminate a function member early. If a function member doesn't contain the `return` statement, it terminates after its last statement executes.
 
-If a function member computes a value, you use the `return` statement with an expression, as the following example shows:
+If a function member computes a value, use the `return` statement with an expression, as the following example shows:
 
 :::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
 
-When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, you use the `return` statement without expression.
+When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, use the `return` statement without expression.
 
 ### Ref returns
 
@@ -106,7 +108,7 @@ Here's a more complete ref return example, showing both the method signature and
 
 :::code language="csharp" source="snippets/jump-statements/RefParameterModifier.cs" id="SnippetFindReturningRef":::
 
-The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local `ref readonly` reference variable.
+The called method can also declare the return value as `ref readonly` to return the value by reference and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local `ref readonly` reference variable.
 
 The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
 
@@ -118,14 +120,14 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
 
 ## The `goto` statement
 
-The `goto` statement transfers control to a statement that is marked by a label, as the following example shows:
+The `goto` statement transfers control to a statement that a label marks, as the following example shows:
 
 :::code language="csharp" source="snippets/jump-statements/GotoStatement.cs" id="NestedLoops":::
 
-As the preceding example shows, you can use the `goto` statement to get out of a nested loop.
+As the preceding example shows, you can use the `goto` statement to exit a nested loop.
 
 > [!TIP]
-> When you work with nested loops, consider refactoring separate loops into separate methods. That may lead to a simpler, more readable code without the `goto` statement.
+> When you work with nested loops, consider refactoring separate loops into separate methods. That approach can lead to simpler, more readable code without the `goto` statement.
 
 You can also use the `goto` statement in the [`switch` statement](selection-statements.md#the-switch-statement) to transfer control to a switch section with a constant case label, as the following example shows:
 
@@ -133,7 +135,7 @@ You can also use the `goto` statement in the [`switch` statement](selection-stat
 
 Within the `switch` statement, you can also use the statement `goto default;` to transfer control to the switch section with the `default` label.
 
-If a label with the given name doesn't exist in the current function member, or if the `goto` statement isn't within the scope of the label, a compile-time error occurs. That is, you can't use the `goto` statement to transfer control out of the current function member or into any nested scope.
+If a label with the given name doesn't exist in the current function member, or if the `goto` statement isn't within the scope of the label, a compile-time error occurs. You can't use the `goto` statement to transfer control out of the current function member or into any nested scope.
 
 ## C# language specification
 

@@ -42,7 +42,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
   Forces the application to run using an invariant, English-based culture.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-c|--clear`**
 

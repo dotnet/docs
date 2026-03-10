@@ -35,7 +35,7 @@ Cloud native applications typically implement a distributed caching architecture
 
 In the previous figure, note how the cache is independent of and shared by the microservices. In this scenario, the cache is invoked by the [API Gateway](./front-end-communication.md). As discussed in chapter 4, the gateway serves as a front end for all incoming requests. The distributed cache increases system responsiveness by returning cached data whenever possible. Additionally, separating the cache from the services allows the cache to scale up or out independently to meet increased traffic demands.
 
-The previous figure presents a common caching pattern known as the [cache-aside pattern](/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache (step \#1) for a response. If found, the data is returned immediately. If the data doesn't exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it's retrieved from a local database in a downstream service (step \#2). It's then written to the cache for future requests (step \#3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains timely and consistent.
+The previous figure presents a common caching pattern known as the [*cache-aside pattern*](/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache (step \#1) for a response. If found, the data is returned immediately. If the data doesn't exist in the cache (known as a *cache miss*), it's retrieved from a local database in a downstream service (step \#2). It's then written to the cache for future requests (step \#3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains timely and consistent.
 
 As a shared cache grows, it might prove beneficial to partition its data across multiple nodes. Doing so can help minimize contention and improve scalability. Many Caching services support the ability to dynamically add and remove nodes and rebalance data across partitions. This approach typically involves clustering. Clustering exposes a collection of federated nodes as a seamless, single cache. Internally, however, the data is dispersed across the nodes following a predefined distribution strategy that balances the load evenly.
 
@@ -51,7 +51,7 @@ Azure Cache for Redis is more than a simple cache server. It can support a numbe
 - A distributed non-relational database
 - A message broker
 - A configuration or discovery server
-  
+
 For advanced scenarios, a copy of the cached data can be [persisted to disk](/azure/azure-cache-for-redis/cache-how-to-premium-persistence). If a catastrophic event disables both the primary and replica caches, the cache is reconstructed from the most recent snapshot.
 
 Azure Redis Cache is available across a number of predefined configurations and pricing tiers. The [Premium tier](/azure/azure-cache-for-redis/cache-overview#service-tiers) features many enterprise-level features such as clustering, data persistence, geo-replication, and virtual-network isolation.

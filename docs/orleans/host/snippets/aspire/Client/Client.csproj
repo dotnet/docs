@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <!-- <client_packages> -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Client" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="9.0.0" />
+  </ItemGroup>
+  <!-- </client_packages> -->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceDefaults\ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -11,11 +11,11 @@ The <xref:System.Net.Http.HttpClient> class instance acts as a session to send H
 
 ## Instancing
 
-<xref:System.Net.Http.HttpClient> is intended to be instantiated once and reused throughout the life of an application. In .NET Core and .NET 5+, HttpClient pools connections inside the handler instance and reuses a connection across multiple requests. If you instantiate an HttpClient class for every request, the number of sockets available under heavy loads will be exhausted. This exhaustion will result in <xref:System.Net.Sockets.SocketException> errors.
+<xref:System.Net.Http.HttpClient> is intended to be instantiated once and reused throughout the life of an application. In .NET Core and .NET 5+, `HttpClient` pools connections inside the handler instance and reuses a connection across multiple requests. If you instantiate an `HttpClient` class for every request, the number of sockets available under heavy loads will be exhausted. This exhaustion will result in <xref:System.Net.Sockets.SocketException> errors.
 
-You can configure additional options by passing in a "handler", such as <xref:System.Net.Http.HttpClientHandler> (or <xref:System.Net.Http.SocketsHttpHandler> in .NET Core 2.1 or later), as part of the constructor. The connection properties on the handler cannot be changed once a request has been submitted, so one reason to create a new HttpClient instance would be if you need to change the connection properties. If different requests require different settings, this may also lead to an application having multiple <xref:System.Net.Http.HttpClient> instances, where each instance is configured appropriately, and then requests are issued on the relevant client.
+You can configure additional options by passing in a "handler", such as <xref:System.Net.Http.HttpClientHandler> (or <xref:System.Net.Http.SocketsHttpHandler> in .NET Core 2.1 or later), as part of the constructor. The connection properties on the handler cannot be changed once a request has been submitted, so one reason to create a new `HttpClient` instance would be if you need to change the connection properties. If different requests require different settings, this may also lead to an application having multiple <xref:System.Net.Http.HttpClient> instances, where each instance is configured appropriately, and then requests are issued on the relevant client.
 
-HttpClient only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some container scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime?displayProperty=nameWithType> property, so that DNS lookup is required when the connection is replaced.
+`HttpClient` only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some container scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime?displayProperty=nameWithType> property, so that DNS lookup is required when the connection is replaced.
 
 ```csharp
 public class GoodController : ApiController
@@ -34,11 +34,11 @@ public class GoodController : ApiController
 }
 ```
 
-As an alternative to creating only one HttpClient instance, you can also use <xref:System.Net.Http.IHttpClientFactory> to manage the HttpClient instances for you. For more information, see [Guidelines for using HttpClient](/dotnet/fundamentals/networking/httpclient-guidelines).
+As an alternative to creating only one `HttpClient` instance, you can also use <xref:System.Net.Http.IHttpClientFactory> to manage the `HttpClient` instances for you. For more information, see [Guidelines for using HttpClient](/dotnet/fundamentals/networking/httpclient-guidelines).
 
 ## Derivation
 
-The <xref:System.Net.Http.HttpClient> also acts as a base class for more specific HTTP clients. An example would be a FacebookHttpClient that provides additional methods specific to a Facebook web service (for example, a `GetFriends` method). Derived classes should not override the virtual methods on the class. Instead, use a constructor overload that accepts <xref:System.Net.Http.HttpMessageHandler> to configure any pre-request or post-request processing.
+The <xref:System.Net.Http.HttpClient> also acts as a base class for more specific HTTP clients. An example would be a `FacebookHttpClient` that provides additional methods specific to a Facebook web service (for example, a `GetFriends` method). Derived classes should not override the virtual methods on the class. Instead, use a constructor overload that accepts <xref:System.Net.Http.HttpMessageHandler> to configure any pre-request or post-request processing.
 
 ## Transports
 
@@ -80,26 +80,26 @@ Certain aspects of <xref:System.Net.Http.HttpClient>'s behavior are customizable
 
 ## Connection pooling
 
-HttpClient pools HTTP connections where possible and uses them for more than one request. This can have a significant performance benefit, especially for HTTPS requests, as the connection handshake is only done once.
+`HttpClient` pools HTTP connections where possible and uses them for more than one request. This can have a significant performance benefit, especially for HTTPS requests, as the connection handshake is only done once.
 
 Connection pool properties can be configured on a <xref:System.Net.Http.HttpClientHandler> or <xref:System.Net.Http.SocketsHttpHandler> passed in during construction, including <xref:System.Net.Http.HttpClientHandler.MaxConnectionsPerServer>, <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout>, and <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime>.
 
-Disposing of the HttpClient instance closes the open connections and cancels any pending requests.
+Disposing of the `HttpClient` instance closes the open connections and cancels any pending requests.
 
 > [!NOTE]
 > If you concurrently send HTTP/1.1 requests to the same server, new connections can be created. Even if you reuse the `HttpClient` instance, if the rate of requests is high, or if there are any firewall limitations, that can exhaust the available sockets because of default TCP cleanup timers. To limit the number of concurrent connections, you can set the `MaxConnectionsPerServer` property. By default, the number of concurrent HTTP/1.1 connections is unlimited.
 
 ## Buffering and request lifetime
 
-By default, HttpClient methods (except <xref:System.Net.Http.HttpClient.GetStreamAsync%2A>) buffer the responses from the server, reading all the response body into memory before returning the async result. Those requests will continue until one of the following occurs:
+By default, `HttpClient` methods (except <xref:System.Net.Http.HttpClient.GetStreamAsync*>) buffer the responses from the server, reading all the response body into memory before returning the async result. Those requests will continue until one of the following occurs:
 
-- The <xref:System.Threading.Tasks.Task%601> succeeds and returns a result.
-- The <xref:System.Net.Http.HttpClient.Timeout> is reached, in which case the <xref:System.Threading.Tasks.Task%601> will be cancelled.
+- The <xref:System.Threading.Tasks.Task`1> succeeds and returns a result.
+- The <xref:System.Net.Http.HttpClient.Timeout> is reached, in which case the <xref:System.Threading.Tasks.Task`1> will be cancelled.
 - The <xref:System.Threading.CancellationToken> passable to some method overloads is fired.
 - <xref:System.Net.Http.HttpClient.CancelPendingRequests> is called.
 - The HttpClient is disposed.
 
-You can change the buffering behavior on a per-request basis using the <xref:System.Net.Http.HttpCompletionOption> parameter available on some method overloads. This argument can be used to specify if the <xref:System.Threading.Tasks.Task%601> should be considered complete after reading just the response headers, or after reading and buffering the response content.
+You can change the buffering behavior on a per-request basis using the <xref:System.Net.Http.HttpCompletionOption> parameter available on some method overloads. This argument can be used to specify if the <xref:System.Threading.Tasks.Task`1> should be considered complete after reading just the response headers, or after reading and buffering the response content.
 
 If your app that uses <xref:System.Net.Http.HttpClient> and related classes in the <xref:System.Net.Http> namespace intends to download large amounts of data (50 megabytes or more), then the app should stream those downloads and not use the default buffering. If you use the default buffering, the client memory usage will get very large, potentially resulting in substantially reduced performance.
 
@@ -107,38 +107,38 @@ If your app that uses <xref:System.Net.Http.HttpClient> and related classes in t
 
 The following methods are thread safe:
 
-- <xref:System.Net.Http.HttpClient.CancelPendingRequests%2A>
-- <xref:System.Net.Http.HttpClient.DeleteAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetStreamAsync%2A>
-- <xref:System.Net.Http.HttpClient.GetStringAsync%2A>
-- <xref:System.Net.Http.HttpClient.PostAsync%2A>
-- <xref:System.Net.Http.HttpClient.PutAsync%2A>
-- <xref:System.Net.Http.HttpClient.SendAsync%2A>
+- <xref:System.Net.Http.HttpClient.CancelPendingRequests*>
+- <xref:System.Net.Http.HttpClient.DeleteAsync*>
+- <xref:System.Net.Http.HttpClient.GetAsync*>
+- <xref:System.Net.Http.HttpClient.GetByteArrayAsync*>
+- <xref:System.Net.Http.HttpClient.GetStreamAsync*>
+- <xref:System.Net.Http.HttpClient.GetStringAsync*>
+- <xref:System.Net.Http.HttpClient.PostAsync*>
+- <xref:System.Net.Http.HttpClient.PutAsync*>
+- <xref:System.Net.Http.HttpClient.SendAsync*>
 
 ## Proxies
 
-By default, HttpClient reads proxy configuration from environment variables or user/system settings, depending on the platform. You can change this behavior by passing a <xref:System.Net.WebProxy> or <xref:System.Net.IWebProxy> to, in order of precedence:
+By default, `HttpClient` reads proxy configuration from environment variables or user/system settings, depending on the platform. You can change this behavior by passing a <xref:System.Net.WebProxy> or <xref:System.Net.IWebProxy> to, in order of precedence:
 
-- The <xref:System.Net.Http.HttpClientHandler.Proxy> property on a HttpClientHandler passed in during HttpClient construction
+- The <xref:System.Net.Http.HttpClientHandler.Proxy> property on an `HttpClientHandler` passed in during `HttpClient` construction
 - The <xref:System.Net.Http.HttpClient.DefaultProxy> static property (affects all instances)
 
 You can disable the proxy using <xref:System.Net.Http.HttpClientHandler.UseProxy>. The default configuration for Windows users is to try and detect a proxy using network discovery, which can be slow. For high throughput applications where it's known that a proxy isn't required, you should disable the proxy.
 
-Proxy settings (like <xref:System.Net.IWebProxy.Credentials>) should be changed only before the first request is made using the HttpClient. Changes made after using the HttpClient for the first time may not be reflected in subsequent requests.
+Proxy settings (like <xref:System.Net.IWebProxy.Credentials>) should be changed only before the first request is made using the `HttpClient`. Changes made after using the `HttpClient` for the first time may not be reflected in subsequent requests.
 
 ## Timeouts
 
-You can use <xref:System.Net.Http.HttpClient.Timeout> to set a default timeout for all HTTP requests from the HttpClient instance. The timeout only applies to the xxxAsync methods that cause a request/response to be initiated. If the timeout is reached, the <xref:System.Threading.Tasks.Task%601> for that request is cancelled.
+You can use <xref:System.Net.Http.HttpClient.Timeout> to set a default timeout for all HTTP requests from the `HttpClient` instance. The timeout only applies to the xxxAsync methods that cause a request/response to be initiated. If the timeout is reached, the <xref:System.Threading.Tasks.Task`1> for that request is cancelled.
 
-You can set some additional timeouts if you pass in a <xref:System.Net.Http.SocketsHttpHandler> instance when constructing the HttpClient object:
+You can set some additional timeouts if you pass in a <xref:System.Net.Http.SocketsHttpHandler> instance when constructing the `HttpClient` object:
 
 | Property | Description |
 | ------------ | -------------- |
-| <xref:System.Net.Http.SocketsHttpHandler.ConnectTimeout> | Specifies a timeout that's used when a request requires a new TCP connection to be created. If the timeout occurs, the request <xref:System.Threading.Tasks.Task%601> is cancelled. |
+| <xref:System.Net.Http.SocketsHttpHandler.ConnectTimeout> | Specifies a timeout that's used when a request requires a new TCP connection to be created. If the timeout occurs, the request <xref:System.Threading.Tasks.Task`1> is cancelled. |
 | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> | Specifies a timeout to be used for each connection in the connection pool. If the connection is idle, the connection is immediately closed; otherwise, the connection is closed at the end of the current request. |
 | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | If a connection in the connection pool is idle for this long, the connection is closed. |
 | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | If request has an "Expect: 100-continue" header, it delays sending content until the timeout or until a "100-continue" response is received. |
 
-HttpClient only resolves DNS entries when the connections are created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries are changing regularly, which can happen in some container scenarios, you can use the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> to limit the lifetime of the connection so that DNS lookup is required when replacing the connection.
+`HttpClient` only resolves DNS entries when the connections are created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries are changing regularly, which can happen in some container scenarios, you can use the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> to limit the lifetime of the connection so that DNS lookup is required when replacing the connection.

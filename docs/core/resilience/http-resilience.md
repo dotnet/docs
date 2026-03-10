@@ -1,9 +1,7 @@
 ---
 title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
-author: IEvangelist
-ms.author: dapine
-ms.date: 10/22/2025
+ms.date: 02/24/2026
 ai-usage: ai-assisted
 ---
 
@@ -38,7 +36,7 @@ To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on t
 There are several resilience-centric extensions available. Some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
-> All examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
+> All examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler. If you need to add resilience to a `static` or *singleton* `HttpClient` without a DI container, see [Resilience with static clients](../../fundamentals/networking/http/httpclient-guidelines.md#resilience-with-static-clients).
 
 ## Add standard resilience handler
 
@@ -234,7 +232,7 @@ For more information, see [Options pattern in .NET](../extensions/options.md).
 
 ## Example usage
 
-Your app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+Your app relies on [dependency injection](../extensions/dependency-injection/overview.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
 :::code language="csharp" source="snippets/http-resilience/Program.cs" id="usage":::
 

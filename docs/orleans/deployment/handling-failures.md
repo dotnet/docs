@@ -2,7 +2,7 @@
 title: Failure handling
 description: Learn how to handle failures in Orleans apps.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Failure handling
@@ -18,7 +18,7 @@ When coding grains, all calls are asynchronous and potentially go over the netwo
 
 - The grain was activated on a silo currently unavailable due to a network partition, crash, or other reason. If the silo hasn't been declared dead yet, the request might time out.
 - The grain method call can throw an exception, signaling failure and inability to continue its job.
-- An activation of the grain doesn't exist and cannot be created because the `OnActivateAsync` method throws an exception or deadlocks.
+- An activation of the grain doesn't exist and can't be created because the <xref:Orleans.Grain.OnActivateAsync*> method throws an exception or deadlocks.
 - Network failures prevent communication with the grain before the timeout occurs.
 - Other potential reasons.
 
@@ -33,7 +33,7 @@ Part of the recovery job is automatic in Orleans. If a grain is no longer access
 After observing a grain operation failure, take one or more of the following actions:
 
 - **Retry the action**: Often suitable, especially if the action doesn't involve state changes that might be left half-done. This is the most common approach.
-- **Fix/reset state**: Try to correct the partially changed state. Do this by calling a method that resets the state to the last known correct state or by simply reading the correct state from storage using `ReadStateAsync`.
+- **Fix/reset state**: Try to correct the partially changed state. Do this by calling a method that resets the state to the last known correct state or by simply reading the correct state from storage using <xref:Orleans.Grain%601.ReadStateAsync*>.
 - **Reset related states**: Reset the state of all related activations as well to ensure a consistent state across all involved grains.
 - **Use transactions or process managers**: Perform multi-grain state manipulations using a Process Manager pattern or database transactions. This ensures the operation either completes entirely or leaves the state unchanged, avoiding partial updates.
 

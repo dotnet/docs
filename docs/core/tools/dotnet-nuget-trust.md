@@ -29,7 +29,7 @@ The `dotnet nuget trust` command manages the trusted signers. By default, NuGet 
 
 ## Options
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Commands
 
@@ -47,11 +47,11 @@ dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVE
 
 #### Options:
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `sync`
 
@@ -71,11 +71,11 @@ dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosit
 
 #### Options:
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `remove`
 
@@ -95,11 +95,11 @@ dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbos
   
 #### Options:
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `author`
 
@@ -127,11 +127,11 @@ dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfil
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `repository`
 
@@ -159,15 +159,15 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--owners <LIST>`**
 
   Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `certificate`
 
@@ -199,11 +199,11 @@ dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [-
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ### `source`
 
@@ -223,9 +223,9 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LI
 
 #### Options:
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--owners <LIST>`**
 
@@ -235,7 +235,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LI
 
   If a `source-url` is provided, it must be a v3 package source URL (like `https://api.nuget.org/v3/index.json`). Other package source types are not supported.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Generate images using OpenAI.Images.ImageClient
 description: Create a simple app using to generate images using OpenAI.Images.ImageClient in .NET.
-ms.date: 04/09/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Generate images using OpenAI.Images.ImageClient
@@ -21,8 +22,6 @@ In this quickstart, you create a .NET console app that uses `OpenAI.Images.Image
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
-
-[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 ## Create the app
 
@@ -100,7 +99,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::code language="csharp" source="snippets/image-generation/azure-openai/program.cs" :::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -131,7 +130,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end

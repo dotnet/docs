@@ -1,21 +1,18 @@
 ---
 description: "private protected - C# Reference"
 title: "private protected keyword"
-ms.date: 11/15/2017
+ms.date: 01/22/2026
 f1_keywords:
   - "privateprotected_CSharpKeyword"
 author: "sputier"
 ---
 # private protected (C# Reference)
 
-The `private protected` keyword combination is a member access modifier. A private protected member is accessible by types derived from the containing class, but only within its containing assembly. For a comparison of `private protected` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md).
+The `private protected` keyword combination is a member access modifier. Types that derive from the class and are declared in the containing assembly can access a private protected member. For a comparison of `private protected` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md).
 
-> [!NOTE]
-> The `private protected` access modifier is valid in C# version 7.2 and later.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-## Example
-
-A private protected member of a base class is accessible from derived types in its containing assembly only if the static type of the variable is the derived class type. For example, consider the following code segment:
+Derived types can access a private protected member of a base class in its containing assembly only if the static type of the variable is the derived class type. For example, consider the following code segment:
 
 ```csharp
 // Assembly1.cs
@@ -58,9 +55,9 @@ class DerivedClass2 : BaseClass
 This example contains two files, `Assembly1.cs` and `Assembly2.cs`.
 The first file contains a public base class, `BaseClass`, and a type derived from it, `DerivedClass1`. `BaseClass` owns a private protected member, `myValue`, which `DerivedClass1` can access as an inherited member within the same assembly.
 
-In the second file, an attempt to access `myValue` as an inherited member of `DerivedClass2` will produce an error, because `private protected` members are only accessible by derived types **within the same assembly**. This is the key difference from `protected` (which allows access from derived classes in any assembly) and `protected internal` (which allows access from any class within the same assembly or derived classes in any assembly).
+In the second file, an attempt to access `myValue` as an inherited member of `DerivedClass2` produces an error, because `private protected` members are only accessible by derived types **within the same assembly**. This restriction is the key difference from `protected` (which allows access from derived classes in any assembly) and `protected internal` (which allows access from any class within the same assembly or derived classes in any assembly).
 
-If `Assembly1.cs` contains an <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> that names `Assembly2`, the derived class `DerivedClass2` will have access to `private protected` members declared in `BaseClass`. `InternalsVisibleTo` makes `private protected` members visible to derived classes in other assemblies.
+If `Assembly1.cs` contains an <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> that names `Assembly2`, the derived class `DerivedClass2` has access to `private protected` members declared in `BaseClass`. `InternalsVisibleTo` makes `private protected` members visible to derived classes in other assemblies.
 
 ## Comparison with other protected access modifiers
 
@@ -72,11 +69,11 @@ The following table summarizes the key differences between the three protected a
 | `protected internal` | ✔️ | ✔️ | ✔️ |
 | `private protected` | ✔️ | ❌ | ❌ |
 
-- Use `protected` when you want derived classes in any assembly to access the member
-- Use `protected internal` when you want the most permissive access (any class in same assembly OR derived classes anywhere)
-- Use `private protected` when you want the most restrictive protected access (only derived classes in the same assembly)
+- Use `protected` when you want derived classes in any assembly to access the member.
+- Use `protected internal` when you want the most permissive access (any class in the same assembly or derived classes anywhere).
+- Use `private protected` when you want the most restrictive protected access (only derived classes in the same assembly).
 
-Struct members cannot be `private protected` because the struct cannot be inherited.
+You can't declare `private protected` struct members because structs can't be inherited.
 
 ## C# language specification
 

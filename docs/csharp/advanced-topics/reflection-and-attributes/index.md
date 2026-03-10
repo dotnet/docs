@@ -16,7 +16,7 @@ Attributes have the following properties:
 
 ## Work with reflection
 
-[Reflection](../../../fundamentals/reflection/reflection.md) APIs provided by <xref:System.Type> describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
+[Reflection](../../../fundamentals/reflection/overview.md) APIs provided by <xref:System.Type> describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
 
 Here's a simple example of reflection with the <xref:System.Object.GetType> method. All types from the `Object` base class inherit this method, which is used to obtain the type of a variable:
 
@@ -187,7 +187,7 @@ Reflection is useful in the following scenarios:
 - [Common attributes (C#)](../../language-reference/attributes/global.md)
 - [Caller information (C#)](../../language-reference/attributes/caller-information.md)
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](../../../fundamentals/reflection/reflection.md)
+- [Reflection](../../../fundamentals/reflection/overview.md)
 - [View type information](../../../fundamentals/reflection/viewing-type-information.md)
 - [Reflection and generic types](../../../fundamentals/reflection/reflection-and-generic-types.md)
 - <xref:System.Reflection.Emit>

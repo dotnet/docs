@@ -4,8 +4,6 @@ description: Overview of migrating .NET applications to Azure using GitHub Copil
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 11/11/2025
-author: alexwolfmsft
-ms.author: alexwolf
 ms.reviewer: jessiehuang
 ---
 

@@ -43,4 +43,4 @@ For a complete code example, see the [Inspect assembly contents using MetadataLo
 
 ## See also
 
-- [Reflection in .NET](../../fundamentals/reflection/reflection.md)
+- [Reflection in .NET](../../fundamentals/reflection/overview.md)

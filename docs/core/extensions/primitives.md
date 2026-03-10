@@ -1,8 +1,6 @@
 ---
 title: "Use the Microsoft.Extensions.Primitives library"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
-author: IEvangelist
-ms.author: dapine
 ms.date: 03/13/2023
 ---
 
@@ -132,4 +130,4 @@ As such, it can be iterated over and each `value` can be interacted with as need
 
 - [Options pattern in .NET](options.md)
 - [Configuration in .NET](configuration.md)
-- [Logging providers in .NET](logging-providers.md)
+- [Logging providers in .NET](logging/providers.md)

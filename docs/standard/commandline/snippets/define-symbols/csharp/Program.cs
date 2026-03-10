@@ -40,12 +40,12 @@ class Program
         // <defineoptions>
         Option<int> delayOption = new("--delay", "-d")
         {
-            Description = "An option whose argument is parsed as an int.",
+            Description = "An option whose argument is parsed as an int",
             DefaultValueFactory = parseResult => 42,
         };
         Option<string> messageOption = new("--message", "-m")
         {
-            Description = "An option whose argument is parsed as a string."
+            Description = "An option whose argument is parsed as a string"
         };
 
         RootCommand rootCommand = new();
@@ -88,7 +88,7 @@ class Program
         // <parseerrors>
         Option<string> verbosityOption = new("--verbosity", "-v")
         {
-            Description = "Set the verbosity level.",
+            Description = "Set the verbosity level",
         };
         verbosityOption.AcceptOnlyFromAmong("quiet", "minimal", "normal", "detailed", "diagnostic");
         RootCommand rootCommand = new() { verbosityOption };

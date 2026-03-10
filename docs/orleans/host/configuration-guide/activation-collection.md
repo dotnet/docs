@@ -2,20 +2,16 @@
 title: Activation collection
 description: Learn about activation collection in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 zone_pivot_groups: orleans-version
 ---
 
 # Activation collection
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 This article applies to: ✔️ Orleans 7.x and later versions
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 This article applies to: ✔️ Orleans 3.x and earlier versions
 :::zone-end
 
@@ -43,14 +39,10 @@ As a result, without burdening your application code, only recently used grain a
 
 **Collection age limit**
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 The time after which an idle grain activation becomes subject to collection is called the Collection Age Limit. The default Collection Age Limit is 15 minutes, but you can change it globally or for individual grain classes.
 :::zone-end
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 The time after which an idle grain activation becomes subject to collection is called the Collection Age Limit. The default Collection Age Limit is 2 hours, but you can change it globally or for individual grain classes.
 :::zone-end
 
@@ -90,9 +82,9 @@ A grain activation can also instruct the runtime to deactivate it the next time 
 protected void DeactivateOnIdle()
 ```
 
-A grain activation is considered idle if it isn't processing any messages at the moment. If you call `DeactivateOnIdle` while a grain is processing a message, it deactivates as soon as the processing of the current message finishes. If any requests are queued for the grain, they'll be forwarded to the next activation.
+A grain activation is considered idle if it isn't processing any messages at the moment. If you call <xref:Orleans.GrainBaseExtensions.DeactivateOnIdle*> while a grain is processing a message, it deactivates as soon as the processing of the current message finishes. If any requests are queued for the grain, they'll be forwarded to the next activation.
 
-`DeactivateOnIdle` takes priority over any activation collection settings specified in the configuration or `DelayDeactivation`.
+<xref:Orleans.GrainBaseExtensions.DeactivateOnIdle*> takes priority over any activation collection settings specified in the configuration or `DelayDeactivation`.
 
 > [!NOTE]
 > This setting only applies to the specific grain activation from which it was called; it doesn't apply to other activations of this grain type.
@@ -100,6 +92,24 @@ A grain activation is considered idle if it isn't processing any messages at the
 ## Configuration
 
 Configure activation collection using <xref:Orleans.Configuration.GrainCollectionOptions>:
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
+```csharp
+siloBuilder.Configure<GrainCollectionOptions>(options =>
+{
+    // Set the value of CollectionAge to 10 minutes for all grain
+    options.CollectionAge = TimeSpan.FromMinutes(10);
+
+    // Override the value of CollectionAge to 5 minutes for MyGrainImplementation
+    options.ClassSpecificCollectionAge[typeof(MyGrainImplementation).FullName] =
+        TimeSpan.FromMinutes(5);
+});
+```
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
 
 ```csharp
 mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
@@ -110,8 +120,60 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
     // Override the value of CollectionAge to 5 minutes for MyGrainImplementation
     options.ClassSpecificCollectionAge[typeof(MyGrainImplementation).FullName] =
         TimeSpan.FromMinutes(5);
-})
+});
 ```
+
+:::zone-end
+
+## Memory-based activation shedding
+
+Memory-based activation shedding automatically deactivates grain activations when memory pressure exceeds configured thresholds. This helps prevent out-of-memory conditions by proactively freeing memory when the silo is under memory pressure.
+
+When enabled, the silo monitors memory usage and begins collecting grain activations when memory usage exceeds the configured limit. Collection continues until memory usage falls below the target percentage.
+
+### Enable memory-based activation shedding
+
+Configure memory-based activation shedding using <xref:Orleans.Configuration.GrainCollectionOptions>:
+
+```csharp
+siloBuilder.Configure<GrainCollectionOptions>(options =>
+{
+    // Enable memory-based activation shedding
+    options.EnableActivationSheddingOnMemoryPressure = true;
+
+    // Trigger collection when memory usage exceeds 80% (default)
+    options.MemoryUsageLimitPercentage = 80;
+
+    // Stop collection when memory usage drops below 75% (default)
+    options.MemoryUsageTargetPercentage = 75;
+
+    // Poll memory usage every 5 seconds (default)
+    options.MemoryUsagePollingPeriod = TimeSpan.FromSeconds(5);
+});
+```
+
+### Configuration options
+
+The following table describes the memory-based activation shedding configuration options:
+
+| Property | Default | Description |
+|----------|---------|-------------|
+| `EnableActivationSheddingOnMemoryPressure` | `false` | When `true`, enables automatic grain deactivation when memory pressure exceeds the configured limit. |
+| `MemoryUsageLimitPercentage` | `80` | The memory usage percentage (0–100) at which grain collection is triggered. Must be greater than 0 and less than or equal to 100. |
+| `MemoryUsageTargetPercentage` | `75` | The target memory usage percentage (0–100) to reach after grain collection. Must be greater than 0, less than or equal to 100, and less than `MemoryUsageLimitPercentage`. |
+| `MemoryUsagePollingPeriod` | `5 seconds` | The interval at which memory usage is polled. |
+
+### How it works
+
+When memory-based activation shedding is enabled:
+
+1. The silo periodically polls memory usage at the configured interval.
+2. When memory usage exceeds `MemoryUsageLimitPercentage`, the silo begins deactivating idle grain activations.
+3. Grains are deactivated starting with the least recently used activations.
+4. Collection continues until memory usage drops below `MemoryUsageTargetPercentage`.
+5. The standard grain lifecycle methods (<xref:Orleans.Grain.OnDeactivateAsync*>) are called during deactivation.
+
+This feature works in conjunction with standard activation collection. Grains that have called `DelayDeactivation` or have the `[KeepAlive]` attribute are still respected, though they may be deactivated if memory pressure is severe enough.
 
 ## Keep alive
 

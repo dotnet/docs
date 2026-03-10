@@ -16,12 +16,15 @@ ms.date: 09/29/2025
 ```dotnetcli
 dotnet run [<applicationArguments>]
   [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
-  [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
-  [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
-  [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
-  [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
-  [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+  [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
+  [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
+  [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [-lp|--launch-profile <NAME>] [--no-build] [--no-cache]
+  [--no-dependencies] [--no-launch-profile] [--no-restore] [--os <OS>]
+  [-p|--property:<PROPERTYNAME>=<VALUE>]
+  [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+  [--sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -29,9 +32,6 @@ dotnet run -h|--help
 ## Description
 
 The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build apply to `dotnet run` as well.
-
-> [!NOTE]
-> `dotnet run` doesn't respect arguments like `/property:property=value`, which are respected by `dotnet build`.
 
 Output files are written into the default location, which is `bin/<configuration>/<target>`. For example if you have a `netcoreapp2.1` application and you run `dotnet run`, the output is placed in `bin/Debug/netcoreapp2.1`. Files are overwritten as needed. Temporary files are placed in the `obj` directory.
 
@@ -49,9 +49,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ### Implicit restore
 
-[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+[!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -67,13 +67,13 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
-- [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
-- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <KEY=VALUE>`**
 
@@ -109,9 +109,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-- **`--launch-profile <NAME>`**
+- **`-lp|--launch-profile <NAME>`**
 
   The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`, `Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
@@ -135,9 +135,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
-- [!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
+- [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
-- [!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`--project <PATH>`**
 
@@ -166,13 +166,13 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
-- [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+- [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
-- [!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Environment variables
 
@@ -236,4 +236,3 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   ```dotnetcli
   dotnet run -f net6.0 -arg1 -- arg2 arg3
   ```
-  

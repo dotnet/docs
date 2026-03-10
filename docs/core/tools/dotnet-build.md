@@ -44,7 +44,7 @@ For executable projects targeting .NET Core 3.0 and later, library dependencies 
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
 
-[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+[!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
 ### Executable or library output
 
@@ -69,17 +69,17 @@ In addition to its options, the `dotnet build` command accepts MSBuild options, 
 
 Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; however, the default verbosity of the output is different.
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
-[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
+[!INCLUDE [arguments-project-solution-file](includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
-- [!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
 - **`-bl|--binaryLogger:<FILE>`**
 
@@ -94,9 +94,9 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
   dotnet build -bl:build-log.binlog
   ```
 
-- [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
-- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -106,7 +106,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--no-dependencies`**
 
@@ -124,7 +124,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Doesn't display the startup banner or the copyright message.
 
-- [!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
+- [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -134,7 +134,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
     If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
 
-- [!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`-p|--property:<PROPERTYNAME>=<VALUE>`**
 
@@ -149,23 +149,23 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
-- [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+- [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
   The URI of the NuGet package source to use during the restore operation.
 
-- [!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-- [!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
+- [!INCLUDE [use-current-runtime](includes/cli-use-current-runtime.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
   Sets the value of the `$(VersionSuffix)` property to use when building the project. This only works if the `$(Version)` property isn't set. Then, `$(Version)` is set to the `$(VersionPrefix)` combined with the `$(VersionSuffix)`, separated by a dash.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

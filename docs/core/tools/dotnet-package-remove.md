@@ -39,13 +39,13 @@ The package reference to remove.
 
   The file-based app to operate on.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`-p|--project <PROJECT>`**
 
   The project file to operate on. If a solution file is specified, the command will update the package in all projects in the solution that reference it. If not specified, the command will search the current directory for a project file.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

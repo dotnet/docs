@@ -1,7 +1,7 @@
 ---
 title: Client configuration
 description: Learn about client configurations in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 01/21/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -9,17 +9,13 @@ ms.custom: sfi-ropc-nochange
 
 # Client configuration
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Microsoft.Extensions.Hosting.IHostBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Orleans.ClientBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
@@ -27,6 +23,13 @@ Configure a client for connecting to a cluster of silos and sending requests to 
 
 > [!TIP]
 > If you just want to start a local silo and a local client for development purposes, see [Local development configuration](local-development-configuration.md).
+
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+> [!TIP]
+> If you're using [.NET Aspire](../aspire-integration.md), client configuration is handled automatically. Aspire injects <xref:Orleans.Configuration.ClusterOptions.ClusterId>, <xref:Orleans.Configuration.ClusterOptions.ServiceId>, and clustering provider settings via environment variables, so you can use the simpler parameterless <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> method. See [Orleans and .NET Aspire integration](../aspire-integration.md) for the recommended approach.
+
+:::zone-end
 
 Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) NuGet package to your client project.
 
@@ -38,48 +41,66 @@ There are several key aspects of client configuration:
 
 Example of a client configuration:
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
+
+Using a `TokenCredential` with a service URI is the recommended approach. This pattern avoids storing secrets in configuration and leverages Microsoft Entra ID for secure authentication.
+
+<xref:Azure.Identity.DefaultAzureCredential> provides a credential chain that works seamlessly across local development and production environments. During development, it uses your Azure CLI or Visual Studio credentials. In production on Azure, it automatically uses the managed identity assigned to your resource.
+
+[!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
 
 ```csharp
-var client = new HostBuilder()
-    .UseOrleansClient((context, clientBuilder) =>
+using Azure.Identity;
+
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
-        clientBuilder.Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "MyOrleansService";
-        })
-        .UseAzureStorageClustering(
-            options => options.ConfigureTableServiceClient(
-                context.Configuration["ORLEANS_AZURE_STORAGE_CONNECTION_STRING"]));
+        options.ClusterId = "my-first-cluster";
+        options.ServiceId = "MyOrleansService";
     })
-    .Build();
+    .UseAzureStorageClustering(options =>
+    {
+        options.ConfigureTableServiceClient(
+            new Uri("https://<your-storage-account>.table.core.windows.net"),
+            new DefaultAzureCredential());
+    });
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
 
-:::zone-end
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
+### [Connection string](#tab/connection-string)
 
 ```csharp
-using Orleans.Hosting;
-
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleansClient(clientBuilder =>
+{
+    clientBuilder.Configure<ClusterOptions>(options =>
     {
         options.ClusterId = "my-first-cluster";
         options.ServiceId = "MyOrleansService";
     })
     .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(
-            typeof(IValueGrain).Assembly))
-    .Build();
+        options => options.ConfigureTableServiceClient(
+            builder.Configuration["ORLEANS_AZURE_STORAGE_CONNECTION_STRING"]));
+});
+
+using var host = builder.Build();
+await host.StartAsync();
 ```
+
+---
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="full_client_config":::
 
 :::zone-end
 
@@ -97,30 +118,40 @@ Let's break down the steps used in this sample:
 
 Here, we set two things:
 
-- The <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can directly talk to each other. Some might choose to use a different `ClusterId` for each deployment, for example.
+- The <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can directly talk to each other. Some might choose to use a different <xref:Orleans.Configuration.ClusterOptions.ClusterId> for each deployment, for example.
 - The <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to `"AspNetSampleApp"`: This is a unique ID for your application, used by some providers (e.g., persistence providers). This ID should remain stable across deployments.
 
 ## Clustering provider
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
+### [Microsoft Entra ID (recommended)](#tab/entra-id)
+
+[!INCLUDE [credential-chain-guidance](../../includes/credential-chain-guidance.md)]
+
+```csharp
+clientBuilder.UseAzureStorageClustering(options =>
+{
+    options.ConfigureTableServiceClient(
+        new Uri("https://<your-storage-account>.table.core.windows.net"),
+        new DefaultAzureCredential());
+});
+```
+
+### [Connection string](#tab/connection-string)
 
 ```csharp
 .UseAzureStorageClustering(
-    options => options.ConfigureTableServiceClient(connectionString);
+    options => options.ConfigureTableServiceClient(connectionString));
 ```
+
+---
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
-```csharp
-.UseAzureStorageClustering(
-    options => options.ConnectionString = connectionString)
-```
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="azure_clustering":::
 
 :::zone-end
 
@@ -128,24 +159,11 @@ The client discovers all available gateways in the cluster using this provider. 
 
 For more information, see [Server configuration](server-configuration.md).
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
-
-:::zone-end
-
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Application parts
 
-```csharp
-.ConfigureApplicationParts(
-    parts => parts.AddApplicationPart(
-        typeof(IValueGrain).Assembly))
-        .WithReferences())
-```
+:::code language="csharp" source="snippets-v3/client-config/Configuration.cs" id="application_parts":::
 
 For more information, see [Server configuration](server-configuration.md).
 

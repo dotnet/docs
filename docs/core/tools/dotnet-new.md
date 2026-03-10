@@ -30,7 +30,7 @@ The `dotnet new` command creates a .NET project or other artifacts based on a te
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 
 ### Tab completion
 
@@ -63,7 +63,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`-lang|--language {C#|F#|VB}`**
 
@@ -98,7 +98,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Template options
 

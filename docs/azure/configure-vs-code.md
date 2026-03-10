@@ -2,9 +2,8 @@
 title: Configure Visual Studio Code for Azure development with .NET
 description: This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
 ms.topic: concept-article
-ms.date: 8/15/2024
-author: alexwolfmsft
-ms.author: alexwolf
+ms.date: 01/16/2026
+ai-usage: ai-assisted
 ms.custom:
   - devx-track-dotnet
   - vscode-azure-extension-update-completed
@@ -36,6 +35,18 @@ To install the extension from Visual Studio Code:
 :::image type="content" source="media/visual-studio-code-azure-tools.png" lightbox="media/visual-studio-code-azure-tools.png" alt-text="A screenshot of Visual Studio Code showing the extensions panel searching for the Azure Tools extension pack.":::
 
 To learn more about installing extensions in Visual Studio Code, refer to the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) document on the Visual Studio Code website.
+
+### Install GitHub Copilot for Azure
+
+[GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat-azure) connects GitHub Copilot Chat to your Azure subscription, enabling you to manage resources, troubleshoot issues, and deploy applications using natural language.
+
+To install the extension from Visual Studio Code:
+
+1. Open the **Extensions** view.
+1. Search for *GitHub Copilot for Azure*.
+1. Select the **Install** button.
+
+This extension requires the GitHub Copilot and GitHub Copilot Chat extensions.
 
 ### Sign in to your Azure account with Azure Tools
 

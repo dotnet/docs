@@ -1,7 +1,7 @@
 ---
 title: "Iteration statements -for, foreach, do, and while"
 description: "C# iteration statements (for, foreach, do, and while) repeatedly execute a block of code. You use those statements to create loops or iterate through a collection."
-ms.date: 11/22/2022
+ms.date: 01/16/2026
 f1_keywords:
   - "for_CSharpKeyword"
   - "foreach_CSharpKeyword"
@@ -20,9 +20,11 @@ helpviewer_keywords:
 ---
 # Iteration statements - `for`, `foreach`, `do`, and `while`
 
-The iteration statements repeatedly execute a statement or a block of statements. The [`for` statement](#the-for-statement) executes its body while a specified Boolean expression evaluates to `true`. The [`foreach` statement](#the-foreach-statement) enumerates the elements of a collection and executes its body for each element of the collection. The [`do` statement](#the-do-statement) conditionally executes its body one or more times. The [`while` statement](#the-while-statement) conditionally executes its body zero or more times.
+Use iteration statements to repeatedly execute a statement or a block of statements. The [`for` statement](#the-for-statement) executes its body while a specified Boolean expression evaluates to `true`. The [`foreach` statement](#the-foreach-statement) enumerates the elements of a collection and executes its body for each element of the collection. The [`do` statement](#the-do-statement) conditionally executes its body one or more times. The [`while` statement](#the-while-statement) conditionally executes its body zero or more times.
 
-At any point within the body of an iteration statement, you can break out of the loop using the [`break` statement](jump-statements.md#the-break-statement). You can step to the next iteration in the loop using the [`continue` statement](jump-statements.md#the-continue-statement).
+At any point within the body of an iteration statement, you can exit the loop by using the [`break` statement](jump-statements.md#the-break-statement). You can step to the next iteration in the loop by using the [`continue` statement](jump-statements.md#the-continue-statement).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## The `for` statement
 
@@ -32,7 +34,7 @@ The `for` statement executes a statement or a block of statements while a specif
 
 The preceding example shows the elements of the `for` statement:
 
-- The *initializer* section that is executed only once, before entering the loop. Typically, you declare and initialize a local loop variable in that section. The declared variable can't be accessed from outside the `for` statement.
+- The *initializer* section that executes only once, before entering the loop. Typically, you declare and initialize a local loop variable in that section. You can't access the declared variable from outside the `for` statement.
 
   The *initializer* section in the preceding example declares and initializes an integer counter variable:
 
@@ -40,7 +42,7 @@ The preceding example shows the elements of the `for` statement:
   int i = 0
   ```
 
-- The *condition* section that determines if the next iteration in the loop should be executed. If it evaluates to `true` or isn't present, the next iteration is executed; otherwise, the loop is exited. The *condition* section must be a Boolean expression.
+- The *condition* section that determines if the next iteration in the loop should run. If it evaluates to `true` or isn't present, the next iteration runs. Otherwise, the loop exits. The *condition* section must be a Boolean expression.
 
   The *condition* section in the preceding example checks if a counter value is less than three:
 
@@ -94,31 +96,31 @@ If the enumerator's `Current` property returns a [reference return value](jump-s
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="RefIterationVariable" :::
 
-If the source collection of the `foreach` statement is empty, the body of the `foreach` statement isn't executed and skipped. If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown.
+If the source collection of the `foreach` statement is empty, the `foreach` statement's body isn't executed and skipped. If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown.
 
 ### await foreach
 
-You can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop can be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
+Use the `await foreach` statement to consume an asynchronous stream of data, that is, a collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop can suspend while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="AwaitForeach" :::
 
 You can also use the `await foreach` statement with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetAsyncEnumerator` method. That method can be an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetAsyncEnumerator` method. This method can be an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task%601), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
 
-By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
+By default, the `await foreach` statement processes stream elements in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
 
 ### Type of an iteration variable
 
-You can use the [`var` keyword](declarations.md#implicitly-typed-local-variables) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
+Use the [`var` keyword](declarations.md#implicitly-typed-local-variables) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
 
 ```csharp
 foreach (var item in collection) { }
 ```
 
 > [!NOTE]
-> The type of a `var` declaration can be inferred by the compiler as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
+> The compiler can infer the type of a `var` declaration as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
 > For more information, see [Implicitly-typed local variables](./declarations.md#implicitly-typed-local-variables).
 
 You can also explicitly specify the type of an iteration variable, as the following code shows:
@@ -132,7 +134,7 @@ In the preceding form, type `T` of a collection element must be implicitly or ex
 
 ## The `do` statement
 
-The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated after each execution of the loop, a `do` loop executes one or more times. The `do` loop differs from the [`while` loop](#the-while-statement), which executes zero or more times.
+The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because the loop evaluates that expression after each execution, a `do` loop executes one or more times. The `do` loop differs from the [`while` loop](#the-while-statement), which executes zero or more times.
 
 The following example shows the usage of the `do` statement:
 
@@ -140,7 +142,7 @@ The following example shows the usage of the `do` statement:
 
 ## The `while` statement
 
-The `while` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. The `while` loop differs from the [`do` loop](#the-do-statement), which executes one or more times.
+The `while` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because the loop evaluates that expression before each execution, a `while` loop executes zero or more times. The `while` loop differs from the [`do` loop](#the-do-statement), which executes one or more times.
 
 The following example shows the usage of the `while` statement:
 

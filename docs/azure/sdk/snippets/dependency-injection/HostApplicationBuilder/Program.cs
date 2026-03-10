@@ -3,7 +3,9 @@ using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Hosting;
-using Azure.AI.OpenAI;
+using OpenAI;
+using OpenAI.Responses;
+using System.ClientModel.Primitives;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
@@ -33,10 +35,18 @@ IHost host = Host.CreateDefaultBuilder(args)
                     }).WithName(queueName);
             }
 
+            var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT")
+                ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is required.");
+
             // Register a custom client factory
-            clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
-                (options, credential, _) => new AzureOpenAIClient(
-                    new Uri("<url_here>"), credential, options));
+            #pragma warning disable OPENAI001 // Type is for evaluation purposes and is subject to change in future updates.
+            clientBuilder.AddClient<ResponsesClient, OpenAIClientOptions>(
+                (options, credential, _) => new ResponsesClient(
+                    "<deployment_name>",
+                    new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
+                    new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
+                ));
+            #pragma warning restore OPENAI001
         });
     }).Build();
 

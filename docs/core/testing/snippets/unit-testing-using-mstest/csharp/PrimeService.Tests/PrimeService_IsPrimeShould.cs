@@ -16,7 +16,7 @@ namespace Prime.UnitTests.Services
         [TestMethod]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var result = _primeService.IsPrime(1);
+            bool result = _primeService.IsPrime(1);
 
             Assert.IsFalse(result, $"1 should not be prime");
         }
@@ -28,7 +28,7 @@ namespace Prime.UnitTests.Services
         [DataRow(1)]
         public void IsPrime_ValuesLessThan2_ReturnFalse(int value)
         {
-            var result = _primeService.IsPrime(value);
+            bool result = _primeService.IsPrime(value);
 
             Assert.IsFalse(result, $"{value} should not be prime");
         }

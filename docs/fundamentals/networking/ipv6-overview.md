@@ -1,8 +1,6 @@
 ---
 title: "Internet Protocol version 6 (IPv6) overview"
 description: Learn about the IPv6 protocol and how it differs from IPv4.
-author: IEvangelist
-ms.author: dapine
 ms.date: 08/24/2022
 helpviewer_keywords: 
 - "Internet Protocol version 6"

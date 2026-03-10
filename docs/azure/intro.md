@@ -1,8 +1,9 @@
 ---
 title: Get started with Azure and .NET
 description: Learn the basics you need to know about Azure and .NET.
-ms.date: 08/15/2024
+ms.date: 01/16/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ms.custom: devx-track-dotnet, engagement-fy23
 ---
 
@@ -19,6 +20,11 @@ You can incorporate Azure into your application in different ways depending on y
 - **Consuming cloud services from applications -** Existing apps can incorporate Azure services to extend their capabilities.  This could include adding full-text searching capability with [Azure Cognitive Search](/azure/search/search-what-is-azure-search), securely storing application secrets in [Azure Key Vault](/azure/key-vault/) or adding vision, speech and language understanding capabilities with [Azure Cognitive Services](/azure/cognitive-services/).  These services are fully managed by Azure and can be easily added to your application without changing your current application architecture or deployment model.
 
 - **Modern serverless architectures -** Azure Functions simplify building solutions to handle event-driven workflows, whether responding to HTTP requests, handling file uploads in Blob storage, or processing events in a queue.  You write only the code necessary to handle your event without worrying about servers or framework code.  Further, you can take advantage of over 250 connectors to other Azure and third-party services to tackle your toughest integration problems.
+
+- **Developing AI solutions -** Azure allows you to build next-generation intelligent applications. The Azure SDK for .NET provides first-class support for building AI-powered apps with:
+  - [Microsoft Foundry](/azure/ai-foundry/what-is-foundry): Explore models, build agents, and manage your AI development lifecycle in a unified platform.
+  - [Azure OpenAI in Microsoft Foundry Models](/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure): Build applications that use large language models (LLM) to summarize text, generate content, and answer questions.
+  - [Foundry Agent Service](/azure/ai-foundry/agents/overview): Combine models, tools, frameworks, and governance into a unified system for building intelligent agents.
 
 ## Access Azure services from .NET applications
 

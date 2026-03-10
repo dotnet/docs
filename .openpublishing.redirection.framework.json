@@ -1118,6 +1118,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/framework/mef/index.md",
+            "redirect_url": "/dotnet/standard/mef/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/mef/attributed-programming-model-overview-mef.md",
+            "redirect_url": "/dotnet/standard/mef/attributed-programming-model-overview-mef",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
@@ -2021,6 +2031,11 @@
         {
             "source_path_from_root": "/docs/framework/release-notes/2024/04-april-security-and-quality-rollup.md",
             "redirect_url": "/dotnet/framework/release-notes/2024/04-09-april-security-and-quality-rollup",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/release-notes/2026/01-29-october-cumulative-update-preview.md",
+            "redirect_url": "/dotnet/framework/release-notes/2026/01-29-january-cumulative-update-preview",
             "redirect_document_id": true
         },
         {

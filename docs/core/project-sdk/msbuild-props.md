@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2025
+ms.date: 03/03/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -62,6 +62,8 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 
 - [GenerateAssemblyInfo](#generateassemblyinfo)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [IncludeSourceRevisionInInformationalVersion](#includesourcerevisionininformationalversion)
+- [SourceRevisionId](#sourcerevisionid)
 
 ### GenerateAssemblyInfo
 
@@ -88,6 +90,30 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
+
+### IncludeSourceRevisionInInformationalVersion
+
+The `IncludeSourceRevisionInInformationalVersion` property controls whether the [`SourceRevisionId`](#sourcerevisionid) value is appended to the `InformationalVersion` assembly attribute. The default value is `true`. Set it to `false` to disable this behavior:
+
+```xml
+<PropertyGroup>
+  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
+### SourceRevisionId
+
+The `SourceRevisionId` property holds the source control revision ID for the build, such as a Git commit hash. Starting in .NET 8, the .NET SDK automatically populates this property with the commit hash when [Source Link](https://github.com/dotnet/sourcelink) is present. When set, its value is appended to the `InformationalVersion` assembly attribute.
+
+```xml
+<PropertyGroup>
+  <SourceRevisionId>abc1234</SourceRevisionId>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
 
 ## Framework properties
 
@@ -370,6 +396,7 @@ The following MSBuild properties are documented in this section:
 - [PublishDocumentationFile](#publishdocumentationfile)
 - [PublishDocumentationFiles](#publishdocumentationfiles)
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
+- [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
@@ -526,6 +553,10 @@ This property is an enablement flag for several other properties that control wh
 ### PublishReferencesDocumentationFiles
 
 When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
+
+### PublishReferencesSymbols
+
+When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 
@@ -684,9 +715,6 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 ### ContinuousIntegrationBuild
 
 The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger isn't able to find local source files if file paths are normalized.
-
-> [!NOTE]
-> Currently, setting this property to `true` works only if you add either a specific [SourceLink](https://github.com/dotnet/sourcelink) provider package reference or a `<SourceRoot Include="$(MyDirectory)" />` item. For more information, see [dotnet/roslyn issue 55860](https://github.com/dotnet/roslyn/issues/55860).
 
 You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
 
@@ -880,7 +908,7 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 ```
 
 > [!NOTE]
-> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](/dotnet/core/tools/dotnet-watch#ignore-specified-files-and-folders).
+> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](../tools/dotnet-watch.md#ignore-specified-files-and-folders).
 
 ### DefaultItemExcludesInProjectFolder
 
@@ -1102,6 +1130,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1494,7 +1523,7 @@ When your project references the [Microsoft.Testing.Platform.MSBuild](https://ww
 - Generates the configuration file.
 - Detects the extensions.
 
-Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 If your test project references MSTest, NUnit, or xUnit, this property is set to the same value as [EnableMSTestRunner](#enablemstestrunner), [EnableNUnitRunner](#enablenunitrunner), or `UseMicrosoftTestingPlatformRunner` (for xUnit).
 
@@ -1520,7 +1549,7 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#tes
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
+The `EnableMSTestRunner` property enables or disables the use of [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
@@ -1537,7 +1566,7 @@ The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of 
 
 Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
-For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
 

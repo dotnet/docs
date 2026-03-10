@@ -1,10 +1,13 @@
 ---
 title: Language strategy
 description: We keep evolving C# to meet the changing needs of developers and remain a state-of-the-art programming language. We will innovate eagerly and broadly in collaboration with C# developers
-ms.date: 03/17/2025
+ms.date: 02/06/2026
 ms.update-cycle: 1825-days
 ---
 # Annotated C# strategy
+
+> [!TIP]
+> This article is most useful for professionals and students who want to understand C#'s design philosophy and how the language evolves. If you're new to C#, start with [A tour of C#](./overview.md) or the [beginner tutorials](./tutorials/index.md) instead.
 
 [!INCLUDE [csharp](../../../includes/csharp-strategy.md)]
 
@@ -22,7 +25,7 @@ We evaluate new ideas in the spirit and history of the C# language. We prioritiz
 
 > "improvements that benefit all or most developers"
 
-Developers use C# in all .NET workloads. Developers build web front and back ends, cloud native apps, and desktop apps with C#. C# enables cross platform applications. We focus on new features that have the most impact either directly, or by empowering improvements to common libraries. Language feature development includes integration into our developer tools and learning resources.
+Developers use C# in all .NET [workloads](./what-you-can-build.md). Developers build web front and back ends, cloud native apps, and desktop apps with C#. C# enables cross platform applications. We focus on new features that have the most impact either directly, or by empowering improvements to common libraries. Language feature development includes integration into our developer tools and learning resources.
 
 > "high commitment to backwards compatibility"
 

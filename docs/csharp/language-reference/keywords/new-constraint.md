@@ -1,26 +1,27 @@
 ---
 description: "new constraint - C# Reference"
 title: "new constraint"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 helpviewer_keywords: 
   - "new constraint keyword [C#]"
-ms.assetid: 58850b64-cb97-4136-be50-1f3bc7fc1da9
 ---
 # new constraint (C# Reference)
 
-The `new` constraint specifies that a type argument in a generic class or method declaration must have a public parameterless constructor. To use the `new` constraint, the type cannot be abstract.
+The `new` constraint specifies that a type argument in a generic class or method declaration must have a public parameterless constructor. To use the `new` constraint, the type can't be abstract.
 
 Apply the `new` constraint to a type parameter when a generic class creates new instances of the type, as shown in the following example:
 
-[!code-csharp[csrefKeywordsOperator#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#5)]
+:::code language="csharp" source="./snippets/csrefKeywordsOperators.cs" id="5":::
 
-When you use the `new()` constraint with other constraints, it must be specified last:
+When you use the `new()` constraint with other constraints, you must specify it last:
 
-[!code-csharp[csrefKeywordsOperator#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#6)]
+:::code language="csharp" source="./snippets/csrefKeywordsOperators.cs" id="6":::
 
 For more information, see [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 You can also use the `new` keyword to [create an instance of a type](../operators/new-operator.md) or as a [member declaration modifier](new-modifier.md).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## C# language specification
 

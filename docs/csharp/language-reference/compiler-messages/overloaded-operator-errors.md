@@ -27,8 +27,6 @@ f1_keywords:
   - "CS0715"
   - "CS1037"
   - "CS1553"
-  - "CS8930"
-  - "CS8931"
   - "CS9023"
   - "CS9024"
   - "CS9025"
@@ -66,11 +64,10 @@ helpviewer_keywords:
   - "CS0715"
   - "CS1037"
   - "CS1553"
-  - "CS8930"
-  - "CS8931"
   - "CS9023"
   - "CS9024"
   - "CS9025"
+  - "CS9027"
   - "CS9308"
   - "CS9310"
   - "CS9311"
@@ -114,11 +111,12 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0715**](#operator-declaration-requirements): *Static classes cannot contain user-defined operators*
 - [**CS1037**](#operator-declaration-requirements): *Overloadable operator expected*
 - [**CS1553**](#operator-declaration-requirements): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
-- [**CS8930**](#operator-declaration-requirements): *Explicit implementation of a user-defined operator must be static.*
-- [**CS8931**](#operator-declaration-requirements): *Explicit implementation must be declared public to implement interface member in type.*
+- [**CS8930**](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration): *Explicit implementation of a user-defined operator must be declared static*
+- [**CS8931**](static-abstract-interfaces.md#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
 - [**CS9025**](#checked-operators): *Operator requires a matching non-checked version to also be declared.*
+- [**CS9027**](#checked-operators): *Unexpected keyword 'unchecked'.*
 - [**CS9308**](#operator-declaration-requirements): *User-defined operator must be declared public.*
 - [**CS9310**](#operator-signature-requirements): *The return type for this operator must be void.*
 - [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
@@ -205,8 +203,6 @@ public class C6
 - **CS0715**: *Static classes can't contain user-defined operators.*
 - **CS1037**: *Overloadable operator expected.*
 - **CS1553**: *Declaration isn't valid; use 'modifier operator \<dest-type\> (...' instead.*
-- **CS8930**: *Explicit implementation of a user-defined operator must be static.*
-- **CS8931**: *Explicit implementation must be declared public to implement interface member in type.*
 - **CS9308**: *User-defined operator must be declared public.*
 
 To declare operators correctly, follow these requirements for modifiers and containing types. For more information, see [Operator overloading](../operators/operator-overloading.md) and [User-defined conversion operators](../operators/user-defined-conversion-operators.md).
@@ -215,7 +211,8 @@ To declare operators correctly, follow these requirements for modifiers and cont
 - Don't declare operators in static classes (**CS0715**). Use regular classes or structs.
 - Use valid, overloadable operator symbols (**CS1037**).
 - Follow the correct syntax for conversion operators: `public static implicit/explicit operator <dest-type>(<source-type> parameter)` (**CS1553**).
-- Ensure explicit interface implementations of operators are `static` (**CS8930**) and `public` (**CS8931**).
+
+For errors related to explicit interface implementations of operators in static abstract interfaces, see [Static abstract and virtual interface member errors](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration).
 
 The following example demonstrates declaration errors:
 
@@ -386,11 +383,13 @@ public class C4
 - **CS9023**: *Operator can't be made checked*
 - **CS9024**: *Operator can't be made unchecked*
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
+- **CS9027**: *Unexpected keyword 'unchecked'*
 
 To use checked operators correctly, follow these requirements. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
 
 - Apply `checked` or `unchecked` keywords only to supported arithmetic operators: `+`, `-`, `*`, `/`, `++`, `--`, and explicit conversions (**CS9023**, **CS9024**).
 - Provide both checked and unchecked versions when declaring a checked operator (**CS9025**). The compiler needs both to handle different contexts.
+- Use the `unchecked` keyword only in valid operator declaration contexts (**CS9027**). Don't place it in locations where it's syntactically unexpected.
 
 ## Interface and inheritance requirements
 

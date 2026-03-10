@@ -35,23 +35,23 @@ class Program
 
         Option<int> delayOption = new("--delay")
         {
-            Description = "Delay between lines, specified as milliseconds per character in a line.",
+            Description = "Delay between lines, specified as milliseconds per character in a line",
             DefaultValueFactory = parseResult => 42
         };
         Option<ConsoleColor> fgcolorOption = new("--fgcolor")
         {
-            Description = "Foreground color of text displayed on the console.",
+            Description = "Foreground color of text displayed on the console",
             DefaultValueFactory = parseResult => ConsoleColor.White
         };
         Option<bool> lightModeOption = new("--light-mode")
         {
-            Description = "Background color of text displayed on the console: default is black, light mode is white."
+            Description = "Background color of text displayed on the console: default is black, light mode is white"
         };
 
         // <optionsandargs>
         Option<string[]> searchTermsOption = new("--search-terms")
         {
-            Description = "Strings to search for when deleting entries.",
+            Description = "Strings to search for when deleting entries",
             Required = true,
             AllowMultipleArgumentsPerToken = true
         };

@@ -1,7 +1,7 @@
 ---
 title: Microsoft.Diagnostics.NETCore.Client API
 description: In this article, you'll learn about the Microsoft.Diagnostics.NETCore.Client APIs.
-ms.date: 06/22/2021
+ms.date: 12/08/2025
 author: tommcdon
 ms.author: tommcdon
 ms.topic: reference
@@ -14,7 +14,7 @@ This section describes the APIs of the diagnostics client library.
 ## DiagnosticsClient class
 
 ```cs
-public DiagnosticsClient
+public sealed class DiagnosticsClient
 {
     public DiagnosticsClient(int processId);
 
@@ -23,21 +23,50 @@ public DiagnosticsClient
         bool requestRundown = true,
         int circularBufferMB = 256);
 
+    public EventPipeSession StartEventPipeSession(
+        EventPipeProvider provider,
+        bool requestRundown = true,
+        int circularBufferMB = 256);
+
+    public EventPipeSession StartEventPipeSession(
+        EventPipeSessionConfiguration config);
+
     public Task<EventPipeSession> StartEventPipeSessionAsync(
         IEnumerable<EventPipeProvider> providers,
         bool requestRundown,
         int circularBufferMB = 256,
         CancellationToken token = default);
 
+    public Task<EventPipeSession> StartEventPipeSessionAsync(
+        EventPipeProvider provider,
+        bool requestRundown,
+        int circularBufferMB = 256,
+        CancellationToken token = default);
+
+    public Task<EventPipeSession> StartEventPipeSessionAsync(
+        EventPipeSessionConfiguration configuration,
+        CancellationToken token);
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration = false);
 
-    public async Task WriteDumpAsync(
+    public void WriteDump(
+        DumpType dumpType,
+        string dumpPath,
+        WriteDumpFlags flags);
+
+    public Task WriteDumpAsync(
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration,
+        CancellationToken token);
+
+    public Task WriteDumpAsync(
+        DumpType dumpType,
+        string dumpPath,
+        WriteDumpFlags flags,
         CancellationToken token);
 
     public void AttachProfiler(
@@ -57,6 +86,18 @@ public DiagnosticsClient
         string value);
 
     public Dictionary<string, string> GetProcessEnvironment();
+
+    public void ApplyStartupHook(
+        string startupHookPath);
+
+    public Task ApplyStartupHookAsync(
+        string startupHookPath,
+        CancellationToken token);
+
+    public void EnablePerfMap(
+        PerfMapType type);
+
+    public void DisablePerfMap();
 
     public static IEnumerable<int> GetPublishedProcesses();
 }
@@ -79,6 +120,7 @@ public EventPipeSession StartEventPipeSession(
     IEnumerable<EventPipeProvider> providers,
     bool requestRundown = true,
     int circularBufferMB = 256);
+
 public Task<EventPipeSession> StartEventPipeSessionAsync(
     IEnumerable<EventPipeProvider> providers,
     bool requestRundown,
@@ -91,17 +133,41 @@ Starts an EventPipe tracing session using the given providers and settings.
 * `providers` : An `IEnumerable` of [`EventPipeProvider`](#eventpipeprovider-class)s to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
-* `token` (for the Async overload): The token to monitor for cancellation requests.
+* `token` (for the async overload): The token to monitor for cancellation requests.
 
 ```csharp
-public EventPipeSession StartEventPipeSession(EventPipeProvider provider, bool requestRundown = true, int circularBufferMB = 256)
-public Task<EventPipeSession> StartEventPipeSessionAsync(EventPipeProvider provider, bool requestRundown, int circularBufferMB = 256, CancellationToken token = default)
+public EventPipeSession StartEventPipeSession(
+    EventPipeProvider provider,
+    bool requestRundown = true,
+    int circularBufferMB = 256);
+
+public Task<EventPipeSession> StartEventPipeSessionAsync(
+    EventPipeProvider provider,
+    bool requestRundown,
+    int circularBufferMB = 256,
+    CancellationToken token = default);
 ```
+
+Starts an EventPipe tracing session using a single provider.
 
 * `provider` : An [`EventPipeProvider`](#eventpipeprovider-class) to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
-* `token` (for the Async overload): The token to monitor for cancellation requests.
+* `token` (for the async overload): The token to monitor for cancellation requests.
+
+```csharp
+public EventPipeSession StartEventPipeSession(
+    EventPipeSessionConfiguration config);
+
+public Task<EventPipeSession> StartEventPipeSessionAsync(
+    EventPipeSessionConfiguration configuration,
+    CancellationToken token);
+```
+
+Starts an EventPipe tracing session using an [`EventPipeSessionConfiguration`](#eventpipesessionconfiguration-class).
+
+* `config` / `configuration` : An `EventPipeSessionConfiguration` that defines the session.
+* `token` (for the async overload): The token to monitor for cancellation requests.
 
 > [!NOTE]
 > Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting `requestRundown` to true. In large applications, this may take a while.
@@ -122,7 +188,10 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
 
 ```csharp
-public void WriteDump(DumpType dumpType, string dumpPath, WriteDumpFlags flags)
+public void WriteDump(
+    DumpType dumpType,
+    string dumpPath,
+    WriteDumpFlags flags)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -132,7 +201,11 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
 
 ```csharp
-public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, bool logDumpGeneration, CancellationToken token)
+public Task WriteDumpAsync(
+    DumpType dumpType,
+    string dumpPath,
+    bool logDumpGeneration,
+    CancellationToken token)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -143,7 +216,11 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `token` : The token to monitor for cancellation requests.
 
 ```csharp
-public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, WriteDumpFlags flags, CancellationToken token)
+public Task WriteDumpAsync(
+    DumpType dumpType,
+    string dumpPath,
+    WriteDumpFlags flags,
+    CancellationToken token)
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -152,6 +229,35 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `dumpPath` : The path to the dump to be written out to.
 * `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
 * `token` : The token to monitor for cancellation requests.
+
+### ApplyStartupHook methods
+
+```csharp
+public void ApplyStartupHook(
+    string startupHookPath);
+
+public Task ApplyStartupHookAsync(
+    string startupHookPath,
+    CancellationToken token);
+```
+
+Loads the specified assembly with a `StartupHook` in the target process.
+
+* `startupHookPath` : The path to the assembly containing the startup hook.
+* `token` (for the async overload): The token to monitor for cancellation requests.
+
+### PerfMap methods
+
+```csharp
+public void EnablePerfMap(
+    PerfMapType type);
+
+public void DisablePerfMap();
+```
+
+Controls generation of perf maps in the target process.
+
+* `type` : The [`PerfMapType`](#perfmaptype-enum) indicating the type of perf map to enable.
 
 ### AttachProfiler method
 
@@ -219,6 +325,43 @@ public static IEnumerable<int> GetPublishedProcesses();
 ```
 
 Get an `IEnumerable` of process IDs of all the active .NET processes that can be attached to.
+
+## EventPipeSessionConfiguration class
+
+```csharp
+public sealed class EventPipeSessionConfiguration
+{
+    public EventPipeSessionConfiguration(
+        IEnumerable<EventPipeProvider> providers,
+        int circularBufferSizeMB = 256,
+        bool requestRundown = true,
+        bool requestStackwalk = true);
+
+    public EventPipeSessionConfiguration(
+        IEnumerable<EventPipeProvider> providers,
+        int circularBufferSizeMB,
+        long rundownKeyword,
+        bool requestStackwalk = true);
+
+    public bool RequestRundown { get; }
+
+    public int CircularBufferSizeInMB { get; }
+
+    public bool RequestStackwalk { get; }
+
+    public long RundownKeyword { get; }
+
+    public IReadOnlyCollection<EventPipeProvider> Providers { get; }
+}
+```
+
+Represents the configuration for an `EventPipeSession`.
+
+* `providers` : An `IEnumerable` of [`EventPipeProvider`](#eventpipeprovider-class)s to enable.
+* `circularBufferSizeMB` : The size in MB of the runtime's buffer for collecting events.
+* `requestRundown` : If `true`, request rundown events from the runtime.
+* `requestStackwalk` : If `true`, record a stack trace for every emitted event.
+* `rundownKeyword` : The keyword mask used for rundown events.
 
 ## EventPipeProvider class
 
@@ -305,13 +448,19 @@ This class is immutable, because EventPipe does not allow a provider's configura
 public class EventPipeSession : IDisposable
 {
     public Stream EventStream { get; }
+
     public void Stop();
+
+    public Task StopAsync(
+        CancellationToken cancellationToken);
+
+    public void Dispose();
 }
 ```
 
 This class represents an ongoing EventPipe session. It is immutable and acts as a handle to an EventPipe session of the given runtime.
 
-## EventStream property
+### EventStream property
 
 ```csharp
 public Stream EventStream { get; }
@@ -319,13 +468,56 @@ public Stream EventStream { get; }
 
 Gets a `Stream` that can be used to read the event stream.
 
-## Stop method
+### Stop methods
 
 ```csharp
 public void Stop();
+
+public Task StopAsync(
+    CancellationToken cancellationToken);
 ```
 
 Stops the given `EventPipe` session.
+
+* `cancellationToken` (for the async overload): The token to monitor for cancellation requests.
+
+### Dispose method
+
+```csharp
+public void Dispose();
+```
+
+Releases resources associated with the `EventPipeSession`.
+
+## DiagnosticsClientConnector class
+
+```csharp
+public sealed class DiagnosticsClientConnector : IAsyncDisposable
+{
+    public DiagnosticsClient Instance { get; }
+
+    public ValueTask DisposeAsync();
+
+    public static Task<DiagnosticsClientConnector> FromDiagnosticPort(
+        string diagnosticPort,
+        CancellationToken ct);
+}
+```
+
+Represents a helper that creates a `DiagnosticsClient` from a diagnostic port and manages the lifetime of the underlying diagnostics server connection.
+
+* `Instance` : The `DiagnosticsClient` connected to the target runtime.
+* `DisposeAsync` : Disposes the underlying server/connection asynchronously.
+* `FromDiagnosticPort` : Creates a new `DiagnosticsClientConnector` from the specified diagnostic port.
+
+```csharp
+public static Task<DiagnosticsClientConnector> FromDiagnosticPort(
+    string diagnosticPort,
+    CancellationToken ct)
+```
+
+* `diagnosticPort` : The diagnostic port string (for example, a listen or connect port) to connect through.
+* `ct` : The token to monitor for cancellation requests.
 
 ## DumpType enum
 
@@ -345,6 +537,44 @@ Represents the type of dump that can be requested.
 * `WithHeap`: Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.
 * `Triage`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information. Some content that is known to contain potentially sensitive information such as full module paths will be redacted. While this is intended to mitigate some cases of sensitive data exposure, there is no guarantee this redaction feature on its own is sufficient to comply with any particular law or standard regarding data privacy.
 * `Full`: Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large dump file.
+
+## WriteDumpFlags enum
+
+```csharp
+public enum WriteDumpFlags
+{
+    None = 0x00,
+    LoggingEnabled = 0x01,
+    VerboseLoggingEnabled = 0x02,
+    CrashReportEnabled = 0x04
+}
+```
+
+Represents additional options that can be specified when requesting a dump.
+
+* `None` : No additional behavior.
+* `LoggingEnabled` : Enable basic logging during dump generation.
+* `VerboseLoggingEnabled` : Enable verbose logging during dump generation.
+* `CrashReportEnabled` : Enable generation of a crash report.
+
+## PerfMapType enum
+
+```csharp
+public enum PerfMapType
+{
+    None = 0,
+    All = 1,
+    JitDump = 2,
+    PerfMap = 3
+}
+```
+
+Represents the type of perf map behavior that can be enabled.
+
+* `None` : No perf map output.
+* `All` : Enable all perf map outputs supported by the runtime.
+* `JitDump` : Enable JIT dump perf map output.
+* `PerfMap` : Enable traditional perf map output.
 
 ## Exceptions
 
@@ -385,3 +615,11 @@ public class ServerErrorException : DiagnosticsClientException
 ```
 
 This may be thrown when the runtime responds with an error to a given command.
+
+### ProfilerAlreadyActiveException
+
+```csharp
+public class ProfilerAlreadyActiveException : ServerErrorException
+```
+
+This exception is thrown when a profiler is already loaded into the target runtime and another attach is attempted.

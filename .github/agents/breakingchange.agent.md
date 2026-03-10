@@ -16,20 +16,22 @@ Start with this header (replace placeholders):
 
 ```
 ---
-title: "Breaking change - <Concise descriptive title>"
+title: "Breaking change: <Concise descriptive title>"
 description: "Learn about the breaking change in <product/version without preview> where <brief description>."
 ms.date: <Today's date in MM/DD/YYYY format>
 ai-usage: ai-assisted
 ---
 ```
 
-> **Note:** Use today's date in the format MM/DD/YYYY. This date cannot be earlier than 11/12/2025.
+> **Note:**
+> - Use today's date in the format MM/DD/YYYY. This date cannot be earlier than 01/12/2026.
+> - Do NOT include ms.custom metadata with an issue number.
 
 Then, include these sections in this order:
 
 ### 1. H1 Title
 
-- Use the header title, but remove "Breaking change - ".
+- Use the header title, but remove "Breaking change: ".
 
 **Intro paragraph:**
 Summarize the breaking change.

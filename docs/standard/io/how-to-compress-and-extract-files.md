@@ -3,10 +3,10 @@ title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
 ms.date: "08/10/2022"
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "I/O [.NET], compression"
   - "compression"
   - "compress files"
@@ -69,9 +69,9 @@ You can also use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO
 
 ## See also
 
-- <xref:System.IO.Compression.ZipArchive>  
-- <xref:System.IO.Compression.ZipFile>  
-- <xref:System.IO.Compression.ZipArchiveEntry>  
-- <xref:System.IO.Compression.DeflateStream>  
-- <xref:System.IO.Compression.GZipStream>  
+- <xref:System.IO.Compression.ZipArchive>
+- <xref:System.IO.Compression.ZipFile>
+- <xref:System.IO.Compression.ZipArchiveEntry>
+- <xref:System.IO.Compression.DeflateStream>
+- <xref:System.IO.Compression.GZipStream>
 - [File and stream I/O](index.md)

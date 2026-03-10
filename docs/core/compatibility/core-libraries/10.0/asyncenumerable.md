@@ -1,7 +1,7 @@
 ---
 title: "Breaking change - System.Linq.AsyncEnumerable in .NET 10"
 description: "Learn about the breaking change in .NET 10 where the AsyncEnumerable class is now included."
-ms.date: 2/21/2025
+ms.date: 12/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44886
 ---
@@ -32,7 +32,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Recommended action
 
-If you're upgrading to .NET 10 and your code includes a direct package reference to `System.Linq.Async`, remove that package reference. For multitargeting both .NET 10 and a previous version, add a package reference to `System.Linq.AsyncEnumerable` instead.
+If you're upgrading to .NET 10 and your code includes a direct package reference to `System.Linq.Async`, remove that package reference or [upgrade to version 7.0.0](https://endjin.com/blog/2025/11/ix-v7-dotnet-10-linq-iasyncenumerable). For multitargeting both .NET 10 and a previous version, add a package reference to `System.Linq.AsyncEnumerable` instead.
 
 If `System.Linq.Async` is consumed indirectly via another package, avoid ambiguity errors by adding `<ExcludeAssets>` metadata with a value of `compile` or `all`:
 
@@ -56,12 +56,13 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
 
   Use this configuration only if you're certain no dependencies require System.Linq.Async at runtime.
 
-Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures. For example, a `Select` call like `e.Select(i => i * 2)` will work the same before and after. However, the call `e.SelectAwait(async (int i, CancellationToken ct) => i * 2)` will need to be changed to use `Select` instead of `SelectAwait`, as in `e.Select(async (int i, CancellationToken ct) => i * 2)`.
+Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures. For example, a `Select` call like `e.Select(i => i * 2)` works the same before and after. However, the call `e.SelectAwait(async (int i, CancellationToken ct) => i * 2)` needs to be changed to use `Select` instead of `SelectAwait`, as in `e.Select(async (int i, CancellationToken ct) => i * 2)`.
 
-Refer to the [System.Linq.AsyncEnumerable API documentation](xref:System.Linq.AsyncEnumerable) for the full set of LINQ extension methods available for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
+For the full set of LINQ extension methods available for <xref:System.Collections.Generic.IAsyncEnumerable`1>, see the [System.Linq.AsyncEnumerable API documentation](xref:System.Linq.AsyncEnumerable).
 
 ## Affected APIs
 
 - <xref:System.Linq.AsyncEnumerable?displayProperty=fullName>
 - <xref:System.Collections.Generic.IAsyncEnumerable`1?displayProperty=fullName>
 - [System.Linq.Async package](https://www.nuget.org/packages/System.Linq.Async) (community-maintained)
+- [Ix.NET v7.0: .NET 10 and LINQ for IAsyncEnumerable\<T>](https://endjin.com/blog/2025/11/ix-v7-dotnet-10-linq-iasyncenumerable)

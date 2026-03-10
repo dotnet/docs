@@ -4,8 +4,6 @@ description: This article helps you configure Visual Studio for Azure developmen
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 3/20/2025
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Configure Visual Studio for Azure development with .NET

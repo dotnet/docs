@@ -2,14 +2,14 @@
 title: External tasks and grains
 description: Learn about external tasks and grains in .NET Orleans.
 ms.date: 03/31/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # External tasks and grains
 
 By design, any sub-tasks spawned from grain code (e.g., using `await`, `ContinueWith`, or `Task.Factory.StartNew`) dispatch on the same per-activation <xref:System.Threading.Tasks.TaskScheduler> as the parent task. Therefore, they inherit the same *single-threaded execution model* as the rest of the grain code. This is the main point behind the single-threaded execution of grain turn-based concurrency.
 
-In some cases, grain code might need to "break out" of the Orleans task scheduling model and "do something special," such as explicitly pointing a `Task` to a different task scheduler or the .NET <xref:System.Threading.ThreadPool>. An example is when grain code needs to execute a synchronous remote blocking call (like remote I/O). Executing that blocking call in the grain context blocks the grain and thus should never be done. Instead, the grain code can execute this piece of blocking code on a thread pool thread, join (`await`) the completion of that execution, and then proceed in the grain context. Escaping the Orleans scheduler is expected to be a very advanced and seldom-required usage scenario beyond typical usage patterns.
+In some cases, grain code might need to "break out" of the Orleans task scheduling model and "do something special," such as explicitly pointing a <xref:System.Threading.Tasks.Task> to a different task scheduler or the .NET <xref:System.Threading.ThreadPool>. An example is when grain code needs to execute a synchronous remote blocking call (like remote I/O). Executing that blocking call in the grain context blocks the grain and thus should never be done. Instead, the grain code can execute this piece of blocking code on a thread pool thread, join (`await`) the completion of that execution, and then proceed in the grain context. Escaping the Orleans scheduler is expected to be a very advanced and seldom-required usage scenario beyond typical usage patterns.
 
 ## Task-based APIs
 
@@ -17,7 +17,7 @@ In some cases, grain code might need to "break out" of the Orleans task scheduli
 
 1. Both <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> and the `endMethod` delegate of <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A?displayProperty=nameWithType> do *not* respect the current task scheduler. They both use the `TaskScheduler.Default` scheduler, the .NET thread pool task scheduler. Therefore, code inside `Task.Run` and the `endMethod` in `Task.Factory.FromAsync` *always* runs on the .NET thread pool, outside the single-threaded execution model for Orleans grains. However, any code after `await Task.Run` or `await Task.Factory.FromAsync` runs back under the scheduler active at the point the task was created, which is the grain's scheduler.
 
-1. <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> with `false` is an explicit API to escape the current task scheduler. It causes the code after an awaited `Task` to execute on the <xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=nameWithType> scheduler (the .NET thread pool), thus breaking the single-threaded execution of the grain.
+1. <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> with `false` is an explicit API to escape the current task scheduler. It causes the code after an awaited <xref:System.Threading.Tasks.Task> to execute on the <xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=nameWithType> scheduler (the .NET thread pool), thus breaking the single-threaded execution of the grain.
 
     > [!CAUTION]
     > Generally, **never use `ConfigureAwait(false)` directly in grain code.**
@@ -115,7 +115,7 @@ public async Task MyGrainMethod()
 
 Some external libraries used by the code might use `ConfigureAwait(false)` internally. Using `ConfigureAwait(false)` is a good and correct practice in .NET [when implementing general-purpose libraries](https://devblogs.microsoft.com/dotnet/configureawait-faq/#when-should-i-use-configureawaitfalse). This isn't a problem in Orleans. As long as the grain code invoking the library method awaits the library call with a regular `await`, the grain code is correct. The result is exactly as desired: the library code runs continuations on the default scheduler (the value returned by `TaskScheduler.Default`, which doesn't guarantee continuations run on a <xref:System.Threading.ThreadPool> thread, as they are often inlined on the previous thread), while the grain code runs on the grain's scheduler.
 
-Another frequently asked question is whether library calls need executing with `Task.Run`—that is, whether library code needs explicit offloading to the `ThreadPool` (e.g., `await Task.Run(() => myLibrary.FooAsync())`). The answer is no. Offloading code to the `ThreadPool` isn't necessary except when library code makes blocking synchronous calls. Usually, any well-written and correct .NET async library (methods returning `Task` and named with an `Async` suffix) doesn't make blocking calls. Thus, offloading anything to the `ThreadPool` isn't needed unless the async library is suspected to be buggy or a synchronous blocking library is deliberately used.
+Another frequently asked question is whether library calls need executing with `Task.Run`—that is, whether library code needs explicit offloading to the <xref:System.Threading.ThreadPool> (e.g., `await Task.Run(() => myLibrary.FooAsync())`). The answer is no. Offloading code to the <xref:System.Threading.ThreadPool> isn't necessary except when library code makes blocking synchronous calls. Usually, any well-written and correct .NET async library (methods returning <xref:System.Threading.Tasks.Task> and named with an `Async` suffix) doesn't make blocking calls. Thus, offloading anything to the <xref:System.Threading.ThreadPool> isn't needed unless the async library is suspected to be buggy or a synchronous blocking library is deliberately used.
 
 ## Deadlocks
 
@@ -127,7 +127,7 @@ Since grains execute single-threaded, deadlocking a grain is possible by synchro
 - `Task.WaitAll(...)`
 - `task.GetAwaiter().GetResult()`
 
-Avoid these methods in any high-concurrency service because they can lead to poor performance and instability. They starve the .NET `ThreadPool` by blocking threads that could perform useful work and require the `ThreadPool` to inject additional threads for completion. When executing grain code, these methods can cause the grain to deadlock, so avoid them in grain code as well.
+Avoid these methods in any high-concurrency service because they can lead to poor performance and instability. They starve the .NET <xref:System.Threading.ThreadPool> by blocking threads that could perform useful work and require the <xref:System.Threading.ThreadPool> to inject additional threads for completion. When executing grain code, these methods can cause the grain to deadlock, so avoid them in grain code as well.
 
 If some *sync-over-async* work is unavoidable, moving that work to a separate scheduler is best. The simplest way is using `await Task.Run(() => task.Wait())`, for example. Note that avoiding *sync-over-async* work is strongly recommended, as it harms application scalability and performance.
 

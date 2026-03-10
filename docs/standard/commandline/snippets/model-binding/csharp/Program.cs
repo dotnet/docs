@@ -22,11 +22,11 @@ class Program
         // <intandstring>
         Option<int> delayOption = new("--delay")
         {
-            Description = "An option whose argument is parsed as an int."
+            Description = "An option whose argument is parsed as an int"
         };
         Option<string> messageOption = new("--message")
         {
-            Description = "An option whose argument is parsed as a string."
+            Description = "An option whose argument is parsed as a string"
         };
 
         RootCommand rootCommand = new("Parameter binding example")
@@ -62,11 +62,11 @@ class Program
         {
             new Option<int>("--delay")
             {
-                Description = "An option whose argument is parsed as an int."
+                Description = "An option whose argument is parsed as an int"
             },
             new Option<string>("--message")
             {
-                Description = "An option whose argument is parsed as a string."
+                Description = "An option whose argument is parsed as a string"
             }
         };
         // </collectioninitializersyntax>

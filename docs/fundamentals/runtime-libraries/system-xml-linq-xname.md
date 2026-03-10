@@ -35,7 +35,7 @@ Assigning a string to an <xref:System.Xml.Linq.XName> uses the implicit conversi
 
 The Visual Basic example creates the <xref:System.Xml.Linq.XElement> using XML literals. Even though XML literals are used, an <xref:System.Xml.Linq.XName> object is created for the <xref:System.Xml.Linq.XElement>.
 
-In addition, you can call the <xref:System.Xml.Linq.XName.Get%2A> method for an <xref:System.Xml.Linq.XName> object. However, the recommended way is to use the implicit conversion from string.
+In addition, you can call the <xref:System.Xml.Linq.XName.Get*> method for an <xref:System.Xml.Linq.XName> object. However, the recommended way is to use the implicit conversion from string.
 
 ## Create an XName in a namespace
 
@@ -70,7 +70,7 @@ This example produces the following output:
 
 ## Create an XName in no namespace
 
-The <xref:System.Xml.Linq.XName.Namespace> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace> property will be set to <xref:System.Xml.Linq.XNamespace.None%2A>. The following code demonstrates this:
+The <xref:System.Xml.Linq.XName.Namespace> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace> property will be set to <xref:System.Xml.Linq.XNamespace.None*>. The following code demonstrates this:
 
 ```csharp
 XElement root = new XElement("ElementName", "content");

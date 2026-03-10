@@ -9,9 +9,9 @@ ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
 
 Determines whether the common language runtime uses the legacy 64-bit JIT compiler for just-in-time compilation.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<useLegacyJit>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<useLegacyJit>`
 
 ## Syntax
 

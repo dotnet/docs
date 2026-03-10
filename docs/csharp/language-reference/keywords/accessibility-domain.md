@@ -1,27 +1,26 @@
 ---
 description: "Accessibility Domain - C# Reference"
 title: "Accessibility Domain"
-ms.date: 07/20/2015
+ms.date: 01/21/2026
 helpviewer_keywords: 
   - "accessibility domain [C#]"
-ms.assetid: 8af779c1-275b-44be-a864-9edfbca71bcc
 ---
-# Accessibility Domain (C# Reference)
+# Accessibility domain (C# reference)
 
-The accessibility domain of a member specifies in which program sections a member can be referenced. If the member is nested within another type, its accessibility domain is determined by both the [accessibility level](./accessibility-levels.md) of the member and the accessibility domain of the immediately containing type.  
-  
- The accessibility domain of a top-level type is at least the program text of the project that it is declared in. That is, the domain includes all of the source files of this project. The accessibility domain of a nested type is at least the program text of the type in which it is declared. That is, the domain is the type body, which includes all nested types. The accessibility domain of a nested type never exceeds that of the containing type. These concepts are demonstrated in the following example.  
-  
-## Example  
+The accessibility domain of a member specifies the program sections where you can reference that member. If the member is nested within another type, both the [accessibility level](./accessibility-levels.md) of the member and the accessibility domain of the immediately containing type determine its accessibility domain.
 
- This example contains a top-level type, `T1`, and two nested classes, `M1` and `M2`. The classes contain fields that have different declared accessibilities. In the `Main` method, a comment follows each statement to indicate the accessibility domain of each member. Notice that the statements that try to reference the inaccessible members are commented out. If you want to see the compiler errors caused by referencing an inaccessible member, remove the comments one at a time.  
-  
-[!code-csharp[csrefKeywordsModifiers#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#4)]
-  
-## C# Language Specification  
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+The accessibility domain of a top-level type always includes at least the program text of the project where you declare it. In other words, the domain includes all source files in the project. The accessibility domain of a nested type always includes at least the program text of the type where you declare it. In other words, the domain is the type body, which includes all nested types. The accessibility domain of a nested type never exceeds that of the containing type. The following example demonstrates these concepts.
+
+This example contains a top-level type, `T1`, and two nested classes, `M1` and `M2`. The classes contain fields that have different declared accessibilities. In the `Main` method, a comment follows each statement to indicate the accessibility domain of each member. The statements that try to reference the inaccessible members are commented out. If you want to see the compiler errors caused by referencing an inaccessible member, remove the comments one at a time.
+
+:::code language="csharp" source="snippets/csrefKeywordsModifiers.cs" id="4":::
+
+## C# Language Specification
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+
 ## See also
 
 - [C# Keywords](./index.md)

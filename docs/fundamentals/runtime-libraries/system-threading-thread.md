@@ -17,7 +17,7 @@ When a process starts, the common language runtime automatically creates a singl
 
 ## Start a thread
 
-You start a thread by supplying a delegate that represents the method the thread is to execute in its class constructor. You then call the <xref:System.Threading.Thread.Start%2A> method to begin execution.
+You start a thread by supplying a delegate that represents the method the thread is to execute in its class constructor. You then call the <xref:System.Threading.Thread.Start*> method to begin execution.
 
 The <xref:System.Threading.Thread> constructors can take either of two delegate types, depending on whether you can pass an argument to the method to be executed:
 
@@ -49,7 +49,7 @@ The <xref:System.Threading.Thread> constructors can take either of two delegate 
 
   The method executed by the delegate can then cast (in C#) or convert (in Visual Basic) the parameter to the appropriate type.
 
-  The following example is identical to the previous one, except that it calls the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29> constructor. This version of the `ExecuteInForeground` method has a single parameter that represents the approximate number of milliseconds the loop is to execute.
+  The following example is identical to the previous one, except that it calls the <xref:System.Threading.Thread.%23ctor(System.Threading.ParameterizedThreadStart)> constructor. This version of the `ExecuteInForeground` method has a single parameter that represents the approximate number of milliseconds the loop is to execute.
 
   :::code language="csharp" source="./snippets/System.Threading/Thread/Overview/csharp/ThreadStart2.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System.Threading/Thread/Overview/fsharp/ThreadStart2.fs" id="Snippet2":::
@@ -80,7 +80,7 @@ The following threads execute in the background by default:
 - Thread pool threads, which come from a pool of worker threads maintained by the runtime. You can configure the thread pool and schedule work on thread pool threads by using the <xref:System.Threading.ThreadPool> class.
 
     > [!NOTE]
-    > Task-based asynchronous operations automatically execute on thread pool threads. Task-based asynchronous operations use the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> classes to implement the [task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
+    > Task-based asynchronous operations automatically execute on thread pool threads. Task-based asynchronous operations use the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> classes to implement the [task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 - All threads that enter the managed execution environment from unmanaged code.
 
@@ -100,16 +100,16 @@ Each thread has a culture, represented by the <xref:System.Threading.Thread.Curr
 > The <xref:System.Threading.Thread.CurrentCulture> and <xref:System.Threading.Thread.CurrentUICulture> properties don't work reliably when used with any thread other than the current thread. In .NET Framework, reading these properties is reliable, although setting these properties for a thread other than the current thread is not. On .NET Core, an <xref:System.InvalidOperationException> is thrown if a thread attempts to read or write these properties on a different thread.
 > We recommend that you use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> properties to retrieve and set the current culture.
 
-When a new thread is instantiated, its culture and UI culture are defined by the current system culture and UI culture, and not by the culture and UI culture of the thread from which the new thread is created. This means, for example, that if the current system culture is English (United States) and the current culture of the primary application thread is French (France), the culture of a new thread created by calling the   <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29> constructor from the primary thread is English (United States), and not French (France). For more information, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class topic.
+When a new thread is instantiated, its culture and UI culture are defined by the current system culture and UI culture, and not by the culture and UI culture of the thread from which the new thread is created. This means, for example, that if the current system culture is English (United States) and the current culture of the primary application thread is French (France), the culture of a new thread created by calling the   <xref:System.Threading.Thread.%23ctor(System.Threading.ParameterizedThreadStart)> constructor from the primary thread is English (United States), and not French (France). For more information, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class topic.
 
 > [!IMPORTANT]
 > This is not true of threads that execute asynchronous operations for apps that target .NET Framework 4.6 and later versions. In this case, the culture and UI culture is part of an asynchronous operation's context; the thread on which an asynchronous operation executes by default inherits the culture and UI culture of the thread from which the asynchronous operation was launched. For more information, see the "Culture and task-based asynchronous operations" section of the <xref:System.Globalization.CultureInfo> class remarks.
 
 You can do either of the following to ensure that all of the threads executing in an application share the same culture and UI culture:
 
-- You can pass a <xref:System.Globalization.CultureInfo> object that represents that culture to the <xref:System.Threading.ParameterizedThreadStart> delegate or the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%2CSystem.Object%29?displayProperty=nameWithType> method.
+- You can pass a <xref:System.Globalization.CultureInfo> object that represents that culture to the <xref:System.Threading.ParameterizedThreadStart> delegate or the <xref:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)?displayProperty=nameWithType> method.
 
-- For apps running on .NET Framework 4.5 and later versions, you can define the culture and UI culture that is to be assigned to all threads created in an application domain by setting the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> properties. Note that this is a per-application domain setting.
+- For apps running on .NET Framework 4.5 and later versions, you can define the culture and UI culture that is to be assigned to all threads created in an application domain by setting the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture*?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture*?displayProperty=nameWithType> properties. Note that this is a per-application domain setting.
 
 For more information and examples, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class remarks.
 
@@ -119,7 +119,7 @@ You can retrieve a number of property values that provide information about a th
 
 - A name. <xref:System.Threading.Thread.Name> is a write-once property that you can use to identify a thread. Its default value is `null`.
 
-- A hash code, which you can retrieve by calling the <xref:System.Threading.Thread.GetHashCode%2A> method. The hash code can be used to uniquely identify a thread; for the lifetime of your thread, its hash code will not collide with the value from any other thread, regardless of the application domain from which you obtain the value.
+- A hash code, which you can retrieve by calling the <xref:System.Threading.Thread.GetHashCode*> method. The hash code can be used to uniquely identify a thread; for the lifetime of your thread, its hash code will not collide with the value from any other thread, regardless of the application domain from which you obtain the value.
 
 - A thread ID. The value of the read-only <xref:System.Threading.Thread.ManagedThreadId> property is assigned by the runtime and uniquely identifies a thread within its process.
 

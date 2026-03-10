@@ -60,14 +60,17 @@ items:
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
-  - name: OpenAI function calling
-    href: conceptual/understanding-openai-functions.md
-- name: Call functions
+- name: Call tools
   items:
+    - name: Overview
+      href: conceptual/ai-tools.md
+      displayName: ai tool, ai function, tools, functions
     - name: "Quickstart: Execute a local function"
       href: quickstarts/use-function-calling.md
     - name: Access data in AI functions
       href: how-to/access-data-in-functions.md
+    - name: Handle invalid function input
+      href: how-to/handle-invalid-tool-input.md
 - name: Text to image
   items:
     - name: Generate images using MEAI
@@ -86,10 +89,16 @@ items:
       href: get-started-app-chat-scaling-with-azure-container-apps.md
 - name: MCP client/server
   items:
-    - name: Build a minimal MCP server and publish to NuGet
-      href: quickstarts/build-mcp-server.md
     - name: Build a minimal MCP client
       href: quickstarts/build-mcp-client.md
+    - name: Build a minimal MCP server and publish to NuGet
+      href: quickstarts/build-mcp-server.md
+    - name: Publish to the Official MCP Registry
+      href: quickstarts/publish-mcp-registry.md
+- name: Tokenization
+  items:
+    - name: Use Microsoft.ML.Tokenizers
+      href: how-to/use-tokenizers.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

@@ -9,23 +9,23 @@ class Program
     {
         Option<FileInfo> fileOption = new("--file")
         {
-            Description = "The file to read and display on the console."
+            Description = "The file to read and display on the console"
         };
 
         // <options>
         Option<int> delayOption = new("--delay")
         {
-            Description = "Delay between lines, specified as milliseconds per character in a line.",
+            Description = "Delay between lines, specified as milliseconds per character in a line",
             DefaultValueFactory = parseResult => 42
         };
         Option<ConsoleColor> fgcolorOption = new("--fgcolor")
         {
-            Description = "Foreground color of text displayed on the console.",
+            Description = "Foreground color of text displayed on the console",
             DefaultValueFactory = parseResult => ConsoleColor.White
         };
         Option<bool> lightModeOption = new("--light-mode")
         {
-            Description = "Background color of text displayed on the console: default is black, light mode is white."
+            Description = "Background color of text displayed on the console: default is black, light mode is white"
         };
         // </options>
 

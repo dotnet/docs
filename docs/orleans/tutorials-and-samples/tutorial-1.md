@@ -3,6 +3,7 @@ title: Minimal Orleans app sample project
 description: Explore the minimal Orleans app sample project.
 ms.date: 03/30/2025
 ms.topic: tutorial
+zone_pivot_groups: orleans-version
 ---
 
 # Tutorial: Create a minimal Orleans application
@@ -11,10 +12,34 @@ In this tutorial, follow step-by-step instructions to create the foundational mo
 
 This tutorial lacks appropriate error handling and other essential code useful for a production environment. However, it should help you gain a hands-on understanding of the common Orleans app structure and allow you to focus your continued learning on the parts most relevant to you.
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+> [!TIP]
+> For production-ready Orleans applications, consider using **.NET Aspire** to simplify resource management, service discovery, observability, and deployment. Aspire handles configuration for clustering, grain storage, reminders, and streaming automatically. See [.NET Aspire Orleans integration](../host/aspire-integration.md) to learn more.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
+<!-- This zone intentionally left empty to satisfy pivot validation -->
+
+:::zone-end
+
 ## Prerequisites
 
+:::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
+
+- [Visual Studio 2026 or later](https://visualstudio.microsoft.com/downloads)
+- [The latest .NET SDK](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-3-x"
+
 - [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads)
-- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- [.NET SDK compatible with your target Orleans version](https://dotnet.microsoft.com/download/dotnet)
+
+:::zone-end
 
 ## Project setup
 
@@ -29,9 +54,9 @@ For this tutorial, create four projects as part of the same solution:
 
 Replace the default code with the code provided for each project.
 
-1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
+1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application](../../core/tutorials/create-console-app.md).
 1. Add another Console App project and name it `Client`.
-1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
+1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library](../../core/tutorials/create-class-library.md).
 1. Add another Class Library and name it `Grains`.
 
 #### Delete default source files

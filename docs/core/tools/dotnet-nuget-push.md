@@ -52,7 +52,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
 - **`--allow-insecure-connections`**
   
-  Allows pushing to HTTP sources (insecure).
+  Allows pushing to HTTP sources (insecure). Available since .NET 10 SDK.
 
 - **`-d|--disable-buffering`**
 
@@ -62,9 +62,9 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
   Forces the application to run using an invariant, English-based culture.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`-k|--api-key <API_KEY>`**
 
@@ -101,7 +101,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
 - **`--configfile`**
 
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET 9 SDK.
 
 ## Examples
 

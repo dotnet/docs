@@ -1,12 +1,12 @@
 ---
-title: Unit testing C# with MSTest and .NET
+title: Get started with C# and MSTest
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
 ms.date: 10/22/2025
 ai-usage: ai-assisted
 ---
-# Unit testing C# with MSTest and .NET
+# Get started with C# and MSTest
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
@@ -66,8 +66,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="MSTest" Version="3.2.0" />
-  <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.10.1" />
+  <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
 

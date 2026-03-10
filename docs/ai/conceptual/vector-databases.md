@@ -41,11 +41,6 @@ Other benefits of the RAG pattern include:
 - Overcome LLM tokens limits - the heavy lifting is done through the database vector search.
 - Reduce the costs from frequent fine-tuning on updated data.
 
-## Semantic Kernel vector database solutions
-
-[!INCLUDE [sk-connectors](../includes/sk-connectors.md)]
-
 ## Related content
 
 - [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md)
-- [More Semantic Kernel .NET connectors](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors)

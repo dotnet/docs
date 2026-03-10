@@ -4,13 +4,13 @@ title: "<diagnostics>"
 ms.date: "03/30/2017"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
 ---
-# \<diagnostics>
+# `<diagnostics>`
 
 The `diagnostics` element defines settings that can be used by an administrator for runtime inspection and control.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<diagnostics>`
 
 ## Syntax
 

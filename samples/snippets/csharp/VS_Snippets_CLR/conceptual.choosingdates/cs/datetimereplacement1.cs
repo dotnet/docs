@@ -20,7 +20,7 @@ public struct StoreInfo
 
       // Is the store in the same time zone?
       if (tz.Equals(local)) {
-         return time >= open & time <= close;
+         return time >= open && time <= close;
       }
       else {
          TimeSpan delta = TimeSpan.Zero;

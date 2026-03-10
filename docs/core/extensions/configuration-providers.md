@@ -1,8 +1,6 @@
 ---
 title: Configuration providers
 description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
-author: IEvangelist
-ms.author: dapine
 ms.date: 12/16/2024
 ---
 
@@ -127,11 +125,14 @@ The previous configuration file loads the following keys with `value`:
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime.
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
 :::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-12,19-23" highlight="7-11":::
+
+> [!NOTE]
+> You must install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini) NuGet package to have access to the <xref:Microsoft.Extensions.Configuration.IniConfigurationExtensions.AddIniFile*> method.
 
 An example *appsettings.ini* file with various configuration settings follows:
 

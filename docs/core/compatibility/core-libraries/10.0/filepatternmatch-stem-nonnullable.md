@@ -48,7 +48,7 @@ The previous nullability annotations were inaccurate, and a `null` value for the
 
 ## Recommended action
 
-If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be paTssed in as `null`.
+If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be passed in as `null`.
 
 If you applied nullability warning suppressions when consuming the `FilePatternMatch.Stem` property, you can remove those suppressions.
 

@@ -1,37 +1,34 @@
 ---
 description: "Restrictions on using accessibility levels - C# Reference"
 title: "Restrictions on using accessibility levels"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility level restrictions"
-ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045
 ---
 # Restrictions on using accessibility levels (C# Reference)
 
-When you specify a type in a declaration, check whether the accessibility level of the type is dependent on the accessibility level of a member or of another type. For example, the direct base class must be at least as accessible as the derived class. The following declarations cause a compiler error because the base class `BaseClass` is less accessible than `MyClass`:
+When you specify a type in a declaration, check whether the accessibility level of the type depends on the accessibility level of a member or another type. For example, the direct base class must be at least as accessible as the derived class. The following declarations cause a compiler error because the base class `BaseClass` is less accessible than `MyClass`:
 
 ```csharp
 class BaseClass {...}
 public class MyClass: BaseClass {...} // Error
 ```
 
-The following table summarizes the restrictions on declared accessibility levels.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-|Context|Remarks|
-|-------------|-------------|
-|[Classes](../../fundamentals/types/classes.md)|The direct base class of a class type must be at least as accessible as the class type itself.|
-|[Interfaces](../../fundamentals/types/interfaces.md)|The explicit base interfaces of an interface type must be at least as accessible as the interface type itself.|
-|[Delegates](../../programming-guide/delegates/index.md)|The return type and parameter types of a delegate type must be at least as accessible as the delegate type itself.|
-|[Constants](../../programming-guide/classes-and-structs/constants.md)|The type of a constant must be at least as accessible as the constant itself.|
-|[Fields](../../programming-guide/classes-and-structs/fields.md)|The type of a field must be at least as accessible as the field itself.|
-|[Methods](../../programming-guide/classes-and-structs/methods.md)|The return type and parameter types of a method must be at least as accessible as the method itself.|
-|[Properties](../../programming-guide/classes-and-structs/properties.md)|The type of a property must be at least as accessible as the property itself.|
-|[Events](../../programming-guide/events/index.md)|The type of an event must be at least as accessible as the event itself.|
-|[Indexers](../../programming-guide/indexers/index.md)|The type and parameter types of an indexer must be at least as accessible as the indexer itself.|
-|[Operators](../operators/index.md)|The return type and parameter types of an operator must be at least as accessible as the operator itself.|
-|[Constructors](../../programming-guide/classes-and-structs/constructors.md)|The parameter types of a constructor must be at least as accessible as the constructor itself.|
+The following list summarizes the restrictions on declared accessibility levels.
 
-## Example
+- [Classes](../../fundamentals/types/classes.md): The direct base class of a class type must be at least as accessible as the class type itself.
+- [Interfaces](../../fundamentals/types/interfaces.md): The explicit base interfaces of an interface type must be at least as accessible as the interface type itself.
+- [Delegates](../../programming-guide/delegates/index.md): The return type and parameter types of a delegate type must be at least as accessible as the delegate type itself.
+- [Constants](../../programming-guide/classes-and-structs/constants.md): The type of a constant must be at least as accessible as the constant itself.
+- [Fields](../../programming-guide/classes-and-structs/fields.md): The type of a field must be at least as accessible as the field itself.
+- [Methods](../../programming-guide/classes-and-structs/methods.md): The return type and parameter types of a method must be at least as accessible as the method itself.
+- [Properties](../../programming-guide/classes-and-structs/properties.md): The type of a property must be at least as accessible as the property itself.
+- [Events](../../programming-guide/events/index.md): The type of an event must be at least as accessible as the event itself.
+- [Indexers](../../programming-guide/indexers/index.md): The type and parameter types of an indexer must be at least as accessible as the indexer itself.
+- [Operators](../operators/index.md): The return type and parameter types of an operator must be at least as accessible as the operator itself.
+- [Constructors](../../programming-guide/classes-and-structs/constructors.md): The parameter types of a constructor must be at least as accessible as the constructor itself.
 
 The following example contains erroneous declarations of different types. The comment following each declaration indicates the expected compiler error.
 

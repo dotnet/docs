@@ -1,24 +1,24 @@
 ---
 description: "out keyword - C# Reference"
 title: "out keyword"
-ms.date: 03/01/2017
+ms.date: 01/22/2026
 f1_keywords: 
   - "out_CSharpKeyword"
   - "out"
 helpviewer_keywords: 
   - "out [C#]"
   - "out keyword [C#]"
-ms.assetid: 7e911a0c-3f98-4536-87be-d539b7536ca8
 ---
 # out (C# Reference)
 
-You can use the `out` keyword in two contexts:
+Use the `out` keyword in two contexts:
 
-- As a [parameter modifier](method-parameters.md#out-parameter-modifier), which lets you pass an argument to a method by reference rather than by value.
+- As a [parameter modifier](method-parameters.md#out-parameter-modifier), which you use to pass an argument to a method by reference rather than by value.
+- In [generic type parameter declarations](out-generic-modifier.md) for interfaces and delegates, which you use to specify that a type parameter is covariant.
 
-- In [generic type parameter declarations](out-generic-modifier.md) for interfaces and delegates, which specifies that a type parameter is covariant.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The `out` keyword is especially useful when a method needs to return more than one value since more than one `out` parameter can be used e.g.
+The `out` parameter modifier is especially useful when a method needs to return more than one value since you can use more than one `out` parameter. For example,
 
 ```csharp
     public void Main()
@@ -41,6 +41,6 @@ The `out` keyword is especially useful when a method needs to return more than o
 
 The following limitations apply to using the `out` keyword:
 
-- `out` parameters are not allowed in asynchronous methods.
-- `out` parameters are not allowed in iterator methods.
-- Properties cannot be passed as `out` parameters.
+- You can't use `out` parameters in asynchronous methods.
+- You can't use `out` parameters in iterator methods.
+- You can't pass properties as `out` parameters.

@@ -1,7 +1,7 @@
 ---
 title: "Declaration statements - local variables and constants, var, local reference variables (ref locals)"
 description: "Declaration statements introduce a new local variable, local constant, or local reference variable (ref local). Local variables can be explicitly or implicitly typed. A declaration statement can also include initialization of a variable's value."
-ms.date: 06/21/2023
+ms.date: 01/16/2026
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
@@ -12,7 +12,11 @@ helpviewer_keywords:
 ---
 # Declaration statements
 
-A declaration statement declares a new local variable, local constant, or [local reference variable](#reference-variables). To declare a local variable, specify its type and provide its name. You can declare multiple variables of the same type in one statement, as the following example shows:
+A declaration statement declares a new local variable, local constant, or [local reference variable](#reference-variables).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+To declare a local variable, specify its type and provide its name. You can declare multiple variables of the same type in one statement, as the following example shows:
 
 :::code language="csharp" source="snippets/declarations/Declaration.cs" id="Declare":::
 
@@ -30,18 +34,18 @@ When you declare a local constant, you must also initialize it.
 
 For information about local reference variables, see the [Reference variables](#reference-variables) section.
 
-## Implicitly-typed local variables
+## Implicitly typed local variables
 
-When you declare a local variable, you can let the compiler infer the type of the variable from the initialization expression. To do that use the `var` keyword instead of the name of a type:
+When you declare a local variable, you can let the compiler infer the type of the variable from the initialization expression. To do that, use the `var` keyword instead of the name of a type:
 
 :::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="ImplicitlyTyped":::
 
-As the preceding example shows, implicitly-typed local variables are strongly typed.
+As the preceding example shows, implicitly typed local variables are strongly typed.
 
 > [!NOTE]
 > When you use `var` in the enabled [nullable aware context](../builtin-types/nullable-reference-types.md) and the type of an initialization expression is a reference type, the compiler always infers a **nullable** reference type even if the type of an initialization expression isn't nullable.
 
-A common use of `var` is with a [constructor invocation expression](../operators/new-operator.md#constructor-invocation). The use of `var` allows you to not repeat a type name in a variable declaration and object instantiation, as the following example shows:
+A common use of `var` is with a [constructor invocation expression](../operators/new-operator.md#constructor-invocation). The use of `var` allows you to avoid repeating a type name in a variable declaration and object instantiation, as the following example shows:
 
 ```csharp
 var xs = new List<int>();
@@ -54,13 +58,13 @@ List<int> xs = new();
 List<int>? ys = new();
 ```
 
-When you work with [anonymous types](../../fundamentals/types/anonymous-types.md), you must use implicitly-typed local variables. The following example shows a [query expression](../keywords/query-keywords.md) that uses an anonymous type to hold a customer's name and phone number:
+When you work with [anonymous types](../../fundamentals/types/anonymous-types.md), you must use implicitly typed local variables. The following example shows a [query expression](../keywords/query-keywords.md) that uses an anonymous type to hold a customer's name and phone number:
 
 :::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
 
 In the preceding example, you can't explicitly specify the type of the `fromPhoenix` variable. The type is <xref:System.Collections.Generic.IEnumerable%601> but in this case `T` is an anonymous type and you can't provide its name. That's why you need to use `var`. For the same reason, you must use `var` when you declare the `customer` iteration variable in the `foreach` statement.
 
-For more information about implicitly-typed local variables, see [Implicitly-typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+For more information about implicitly typed local variables, see [Implicitly-typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 In pattern matching, the `var` keyword is used in a [`var` pattern](../operators/patterns.md#var-pattern).
 
@@ -72,7 +76,7 @@ When you declare a local variable and add the `ref` keyword before the variable'
 ref int aliasOfvariable = ref variable;
 ```
 
-A reference variable is a variable that refers to another variable, which is called the *referent*. That is, a reference variable is an *alias* to its referent. When you assign a value to a reference variable, that value is assigned to the referent. When you read the value of a reference variable, the referent's value is returned. The following example demonstrates that behavior:
+A reference variable is a variable that refers to another variable, which is called the *referent*. That is, a reference variable is an *alias* to its referent. When you assign a value to a reference variable, you assign that value to the referent. When you read the value of a reference variable, you return the referent's value. The following example demonstrates that behavior:
 
 :::code language="csharp" source="snippets/declarations/ReferenceVariables.cs" id="AliasToLocalVariable":::
 
@@ -82,7 +86,7 @@ Use the [`ref` assignment operator](../operators/assignment-operator.md#ref-assi
 
 In the preceding example, the `element` reference variable is initialized as an alias to the first array element. Then it's `ref` reassigned to refer to the last array element.
 
-You can define a `ref readonly` local variable. You can't assign a value to a `ref readonly` variable. However you can `ref` reassign such a reference variable, as the following example shows:
+You can define a `ref readonly` local variable. You can't assign a value to a `ref readonly` variable. However, you can `ref` reassign such a reference variable, as the following example shows:
 
 :::code language="csharp" source="snippets/declarations/ReferenceVariables.cs" id="RefReadonly":::
 
@@ -102,9 +106,9 @@ For information about the `ref` fields, see the [`ref` fields](../builtin-types/
 
 ## scoped ref
 
-The contextual keyword `scoped` restricts the lifetime of a value. The `scoped` modifier restricts the [*ref-safe-to-escape* or *safe-to-escape* lifetime](../keywords/method-parameters.md#safe-context-of-references-and-values), respectively, to the current method. Effectively, adding the `scoped` modifier asserts that your code won't extend the lifetime of the variable.
+The contextual keyword `scoped` restricts the lifetime of a value. The `scoped` modifier restricts the [*ref-safe-to-escape* or *safe-to-escape* lifetime](../keywords/method-parameters.md#safe-context-of-references-and-values), respectively, to the current method. By adding the `scoped` modifier, you assert that your code doesn't extend the lifetime of the variable.
 
-You can apply `scoped` to a parameter or local variable. The `scoped` modifier may be applied to parameters and locals when the type is a [`ref struct`](../builtin-types/ref-struct.md). Otherwise, the `scoped` modifier may be applied only to local [reference variables](#reference-variables). That includes local variables declared with the `ref` modifier and parameters declared with the `in`, `ref` or `out` modifiers.
+Apply `scoped` to a parameter or local variable. You can apply the `scoped` modifier to parameters and locals when the type is a [`ref struct`](../builtin-types/ref-struct.md). Otherwise, apply the `scoped` modifier only to local [reference variables](#reference-variables). That rule includes local variables declared with the `ref` modifier and parameters declared with the `in`, `ref`, or `out` modifiers.
 
 The `scoped` modifier is implicitly added to `this` in methods declared in a `struct`, `out` parameters, and `ref` parameters when the type is a `ref struct`.
 

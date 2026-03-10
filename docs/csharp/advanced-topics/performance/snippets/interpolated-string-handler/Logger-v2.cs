@@ -32,7 +32,7 @@ namespace interpolated_string_handler.Version2
             Console.WriteLine($"\tAppended the formatted object");
         }
 
-        internal string GetFormattedText() => builder.ToString();
+        public override string ToString() => builder.ToString();
     }
     // </CoreInterpolatedStringHandler>
 
@@ -61,7 +61,7 @@ namespace interpolated_string_handler.Version2
         public void LogMessage(LogLevel level, LogInterpolatedStringHandler builder)
         {
             if (EnabledLevel < level) return;
-            Console.WriteLine(builder.GetFormattedText());
+            Console.WriteLine(builder.ToString());
         }
         // </LogMessageOverload>
     }

@@ -50,7 +50,7 @@ Create an Azure App Service where you'll deploy your application. Create a Web A
 
 ![AzureWebApp](./media/image10-2.png)
 
-**Figure 10-1.** Creating a new Azure App Service Web App in the Azure Portal.
+**Figure 10-1.** Creating a new Azure App Service Web App in the Azure portal.
 
 Your CI build process will perform an automated build whenever new code is committed to the project's source control repository. This process gives you immediate feedback that the code builds (and, ideally, passes automated tests) and can potentially be deployed. This CI build will produce a web deploy package artifact and publish it for consumption by your CD process.
 
@@ -90,7 +90,7 @@ Once a build has succeeded, the CD process will pick up the build artifacts prod
 
 #### Step 5. Azure App Service Web App
 
-Once deployed, the ASP.NET Core application runs within the context of an Azure App Service Web App. This Web App can be monitored and further configured using the Azure Portal.
+Once deployed, the ASP.NET Core application runs within the context of an Azure App Service Web App. This Web App can be monitored and further configured using the Azure portal.
 
 #### Step 6. Production monitoring and diagnostics
 

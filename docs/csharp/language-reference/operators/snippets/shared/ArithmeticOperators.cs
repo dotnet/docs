@@ -30,6 +30,7 @@ public static class ArithmeticOperators
 
         Console.WriteLine("==== Special cases");
         CheckedUnchecked();
+        IntegerDivisionOverflow();
         FloatingPointOverflow();
         RoundOffErrors();
     }
@@ -224,6 +225,22 @@ public static class ArithmeticOperators
             Console.WriteLine($"Overflow occurred when adding {a} to {b}.");
         }
         // </SnippetCheckedUnchecked>
+    }
+
+    private static void IntegerDivisionOverflow()
+    {
+        // <SnippetIntegerDivisionOverflow>
+        int a = int.MinValue;
+        int b = -1;
+        try
+        {
+            int c = unchecked(a / b);
+        }
+        catch (ArithmeticException)
+        {
+            Console.WriteLine($"Overflow occurred when dividing {a} by {b}.");
+        }
+        // </SnippetIntegerDivisionOverflow>
     }
 
     // <CheckedOperator>

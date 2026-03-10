@@ -7,7 +7,7 @@ ms.date: 01/02/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The `CommandBehavior` values are used by the <xref:System.Data.IDbCommand.ExecuteReader%2A> method of <xref:System.Data.IDbCommand> and any implementing classes.
+The `CommandBehavior` values are used by the <xref:System.Data.IDbCommand.ExecuteReader*> method of <xref:System.Data.IDbCommand> and any implementing classes.
 
 A bitwise combination of these values may be used.
 

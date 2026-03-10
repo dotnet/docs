@@ -1,7 +1,7 @@
 let str1 =
     "abc
-def"
+     def"
 
 let str2 =
     "abc\
-def"
+     def"

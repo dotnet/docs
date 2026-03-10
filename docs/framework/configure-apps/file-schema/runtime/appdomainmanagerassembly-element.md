@@ -11,9 +11,9 @@ ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
 
 Specifies the assembly that provides the application domain manager for the default application domain in the process.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerAssembly>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<appDomainManagerAssembly>`
 
 ## Syntax
 

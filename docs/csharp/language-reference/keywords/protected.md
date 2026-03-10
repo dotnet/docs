@@ -1,50 +1,45 @@
 ---
 description: "protected keyword - C# Reference"
 title: "protected keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords:
   - "protected"
   - "protected_CSharpKeyword"
 helpviewer_keywords:
   - "protected keyword [C#]"
-ms.assetid: 05ce3794-6675-4025-bddb-eaaa0ec22892
 ---
 # protected (C# Reference)
 
 The `protected` keyword is a member access modifier.
 
 > [!NOTE]
-> This page covers `protected` access. The `protected` keyword is also part of the [`protected internal`](protected-internal.md) and [`private protected`](private-protected.md) access modifiers.
+> This article covers `protected` access. The `protected` keyword is also part of the [`protected internal`](protected-internal.md) and [`private protected`](private-protected.md) access modifiers.
 
-A protected member is accessible within its class and by derived class instances.
+You can access a protected member within its class and by derived class instances.
 
 For a comparison of `protected` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md).
 
-## Example 1
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:
+You can access a protected member of a base class in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:
 
 :::code language="csharp" source="./snippets/protected/Example1.cs" id="snippet1":::
 
-The statement `baseObject.myValue = 10` generates an error because it accesses the protected member through a base class reference (`baseObject` is of type `BaseClass`). Protected members can only be accessed through the derived class type or types derived from it.
+The statement `baseObject.myValue = 10` generates an error because it accesses the protected member through a base class reference (`baseObject` is of type `BaseClass`). You can only access protected members through the derived class type or types derived from it.
 
-Unlike `private protected`, the `protected` access modifier allows access from derived classes **in any assembly**. Unlike `protected internal`, it does **not** allow access from non-derived classes within the same assembly.
+Unlike `private protected`, the `protected` access modifier allows access from derived classes **in any assembly**. Unlike `protected internal`, it doesn't allow access from non-derived classes within the same assembly.
 
-Struct members cannot be protected because the struct cannot be inherited.
-
-## Example 2
+You can't declare struct members as protected because structs can't be inherited.
 
 In this example, the class `DerivedPoint` is derived from `Point`. Therefore, you can access the protected members of the base class directly from the derived class.
 
 :::code language="csharp" source="./snippets/protected/Example2.cs" id="snippet1":::  
 
-If you change the access levels of `x` and `y` to [private](private.md), the compiler will issue the error messages:
+If you change the access levels of `x` and `y` to [private](private.md), the compiler returns the error messages:
 
 `'Point.y' is inaccessible due to its protection level.`
 
 `'Point.x' is inaccessible due to its protection level.`
-
-## Cross-assembly access
 
 The following example demonstrates that `protected` members are accessible from derived classes even when they're in different assemblies:
 

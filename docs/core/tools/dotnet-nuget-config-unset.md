@@ -32,9 +32,9 @@ The `dotnet nuget config unset` unsets the values for NuGet configuration settin
 
 ## Options
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

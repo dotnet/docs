@@ -133,7 +133,6 @@ static IEnumerable<object?> TransactionRecordType(string inputText)
             else if (transactionType?.ToUpper() is "WITHDRAWAL")
                 yield return new Withdrawal(amount, parts[2]);
         }
-        yield return default;
     }
 }
 // </ParseToRecord>

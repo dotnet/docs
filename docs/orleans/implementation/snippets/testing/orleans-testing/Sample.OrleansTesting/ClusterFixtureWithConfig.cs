@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Orleans.TestingHost;
 
 namespace Tests;
@@ -18,10 +18,7 @@ file sealed class TestSiloConfigurations : ISiloConfigurator
 {
     public void Configure(ISiloBuilder siloBuilder)
     {
-        siloBuilder.ConfigureServices(static services =>
-        {
-            // TODO: Call required service registrations here.
-            // services.AddSingleton<T, Impl>(/* ... */);
-        });
+        // TODO: Call required service registrations here.
+        // siloBuilder.Services.AddSingleton<T, Impl>(/* ... */);
     }
 }

@@ -15,9 +15,9 @@ ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
 
 Specifies the size of the global memory shared by performance counters.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)
-&nbsp;&nbsp;&nbsp;&nbsp;**\<performanceCounters>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.diagnostics>`](system-diagnostics-element.md)
+&nbsp;&nbsp;&nbsp;&nbsp;`<performanceCounters>`
 
 ## Syntax
 

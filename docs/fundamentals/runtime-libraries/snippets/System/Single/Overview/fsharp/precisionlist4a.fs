@@ -20,8 +20,8 @@ let restoredValues =
 
 for i = 0 to values.Length - 1 do
     printfn $"""{values[i]} {if values[i].Equals restoredValues[i] then "=" else "<>"} {restoredValues[i]}"""
-                    
-// The example displays the following output:
+
+// The example displays the following output on .NET Framework:
 //       2.882883 <> 2.882883
 //       0.3333333 <> 0.3333333
 //       3.141593 <> 3.141593

@@ -1,6 +1,6 @@
 ---
 title: "Example: Use OpenTelemetry with Azure Monitor and Application Insights"
-description: An walkthrough of how to use OpenTelemetry in .NET to export telemetry to Application Insights
+description: A walkthrough of how to use OpenTelemetry in .NET to export telemetry to Application Insights
 ms.date: 8/21/2024
 ms.topic: concept-article
 ms.custom: sfi-ropc-nochange
@@ -14,7 +14,7 @@ There are many commercial Application Performance Management (APM) systems avail
 
 To make the ASP.NET experience with Azure Monitor easier, a wrapper package (called a Distro in OTel parlance) is provided that does most of the heavy lifting of configuring OpenTelemetry.
 
-This example is based off the [OTLP walkthrough](./observability-otlp-example.md). Follow the steps 1-5 to create the application code using the OTLP exporter. In this example, we will extend the code to send data to Application Insights.
+This example is based off the [OTLP walkthrough](./observability-otlp-example.md). Follow the steps 1-5 to create the application code using the OTLP exporter. In this example, you extend the code to send data to Application Insights.
 
 Take the same project from [Step 5](./observability-otlp-example.md#5-configure-opentelemetry-with-the-correct-providers) and add the following NuGet package:
 
@@ -27,23 +27,23 @@ Take the same project from [Step 5](./observability-otlp-example.md#5-configure-
 > [!NOTE]
 > Replace the version with the latest available
 
-## 2. Setup the exporter
+## 2. Set up the exporter
 
 Add the following OTel initialization code before `builder.Build();`:
 
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_AzureMonitor":::
 
-[`UseAzureMonitor()`](https://github.com/Azure/azure-sdk-for-net/blob/d51f02c6ef46f2c5d9b38a9d8974ed461cde9a81/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/OpenTelemetryBuilderExtensions.cs#L80) is the magic that will add the common instrumentation libraries and exporters for Application Insights. You just need to add your custom `Meter` and `ActivitySource` names to the registration.
+[`UseAzureMonitor()`](https://github.com/Azure/azure-sdk-for-net/blob/d51f02c6ef46f2c5d9b38a9d8974ed461cde9a81/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/OpenTelemetryBuilderExtensions.cs#L80) is the magic that adds the common instrumentation libraries and exporters for Application Insights. You just need to add your custom `Meter` and `ActivitySource` names to the registration.
 
 The same OTel initialization works for OTLP as for Application Insights, the difference is which exporters you select. You can use both in the same application, and select between them by defining the appropriate environment variables.
 
 ## 3. Specify the connection string
 
-If you're not already an Azure customer, you can create a free account at [https://azure.microsoft.com/free/](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). Log in to the Azure Portal, and either select an existing Application Insights resource or create a new one with [https://ms.portal.azure.com/#create/Microsoft.AppInsights](https://ms.portal.azure.com/#create/Microsoft.AppInsights).
+If you're not already an Azure customer, you can create a free account at [https://azure.microsoft.com/free/](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). Sign in to the Azure portal, and either select an existing Application Insights resource or create a new one with [https://ms.portal.azure.com/#create/Microsoft.AppInsights](https://ms.portal.azure.com/#create/Microsoft.AppInsights).
 
 Application Insights identifies which instance to use to store and process data through an instrumentation key and connection string that are found at the top right side of the portal UI.
 
-[![Connection String in Azure Portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
+[![Connection String in Azure portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
 
 If you're using Azure App Service, this connection string is automatically passed to the application as an environment variable. For other services or when running locally, you need to pass it using the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in _appsettings.json_. For running locally, it's easiest to add the value to _appsettings.development.json_:
 
@@ -58,7 +58,7 @@ If you're using Azure App Service, this connection string is automatically passe
 
 ## 4. Examine your app in Application Insights
 
-When you run the application, telemetry will be sent to Application Insights. You should now get logs, metrics, and distributed traces for your application. Open the Application Insights resource in the Azure Portal.
+When you run the application, telemetry will be sent to Application Insights. You should now get logs, metrics, and distributed traces for your application. Open the Application Insights resource in the Azure portal.
 
 :::row:::
    :::column span="":::

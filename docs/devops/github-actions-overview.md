@@ -1,8 +1,6 @@
 ---
 title: GitHub Actions and .NET
 description: Learn what role GitHub Actions play in .NET application development.
-author: IEvangelist
-ms.author: dapine
 ms.date: 12/14/2023
 ms.topic: overview
 ms.custom: linux-related-content

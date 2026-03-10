@@ -1,8 +1,6 @@
 ---
 title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface in C#, much like the inbuilt .NET BackgroundService.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/20/2025
 ms.topic: tutorial
 ---
@@ -54,7 +52,7 @@ Replace the existing `Program` contents with the following C# code:
 
 The service is registered in (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 
-For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+For more information on registering services, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 ## Verify service functionality
 

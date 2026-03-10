@@ -1,8 +1,6 @@
 ---
 title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
-author: IEvangelist
-ms.author: dapine
 ms.date: 05/06/2025
 ---
 
@@ -77,6 +75,9 @@ You can use configuration to specify HTTP client names, which is helpful to avoi
 :::code language="json" source="snippets/http/named/appsettings.json":::
 
 It's easy to extend this configuration and store more details about how you'd like your HTTP client to function. For more information, see [Configuration in .NET][config].
+
+> [!NOTE]
+> The number of distinct registered named clients should not be unbounded, because it could lead to resource exhaustion. For example, don't derive the client name from unbounded input.
 
 #### Create client
 
@@ -378,8 +379,8 @@ builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [hcf-issues]: httpclient-factory-troubleshooting.md
-[di]: dependency-injection.md
-[logging]: logging.md
+[di]: dependency-injection/overview.md
+[logging]: logging/overview.md
 [config]: configuration.md
 [httpclient]: ../../fundamentals/networking/http/httpclient.md
 [http-retry]: ../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

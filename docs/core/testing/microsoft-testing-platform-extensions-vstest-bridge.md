@@ -8,7 +8,12 @@ ms.date: 04/10/2024
 
 # VSTest Bridge extension
 
-This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...). This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) package.
+This extension provides a compatibility layer with VSTest allowing test frameworks that are already implemented with VSTest to:
+
+1. Run easily with Microsoft.Testing.Platform without a major rewrite.
+1. Support both VSTest and Microsoft.Testing.Platform with the same test framework implementation.
+
+This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) NuGet package.
 
 ## Compatibility with VSTest
 
@@ -41,7 +46,7 @@ The following **RunConfiguration** elements are not supported by `Microsoft.Test
 
 `Microsoft.Testing.Platform` is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file or through the command line.
 
-Most importantly [hang](microsoft-testing-platform-extensions-diagnostics.md#hang-dump) and [crash](microsoft-testing-platform-extensions-diagnostics.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-extensions-code-coverage.md) extension.
+Most importantly [hang](microsoft-testing-platform-crash-hang-dumps.md#hang-dump) and [crash](microsoft-testing-platform-crash-hang-dumps.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-code-coverage.md) extension.
 
 ### LoggerRunSettings element
 
@@ -49,7 +54,7 @@ Loggers in `Microsoft.Testing.Platform` are configured through command-line para
 
 ## VSTest filter support
 
-This extension also offer the ability to use VSTest filtering mechanism to discover or run only the tests that matches the filter expression. For more information, see the [Filter option details](../tools/dotnet-test.md#filter-option-details) section or for framework specific details see the [Running selective unit tests](./selective-unit-tests.md) page.
+This extension also offer the ability to use VSTest filtering mechanism to discover or run only the tests that matches the filter expression. For more information, see the [Filter option details](../tools/dotnet-test-vstest.md#filter-option-details) section or for framework specific details see the [Running selective unit tests](./selective-unit-tests.md) page.
 
 When enabled by the test framework, you can use `--filter <FILTER_EXPRESSION>`.
 

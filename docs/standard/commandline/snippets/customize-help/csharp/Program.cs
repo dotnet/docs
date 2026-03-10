@@ -18,7 +18,7 @@ class Program
         // <original>
         Option<FileInfo> fileOption = new("--file")
         {
-            Description = "The file to print out.",
+            Description = "The file to print out",
         };
         Option<bool> lightModeOption = new("--light-mode")
         {
@@ -44,7 +44,7 @@ class Program
     {
         Option<FileInfo> fileOption = new("--file")
         {
-            Description = "The file to print out.",
+            Description = "The file to print out",
         };
         Option<bool> lightModeOption = new("--light-mode")
         {
@@ -79,7 +79,7 @@ class Program
     {
         Option<FileInfo> fileOption = new("--file")
         {
-            Description = "The file to print out.",
+            Description = "The file to print out",
         };
         Option<bool> lightModeOption = new("--light-mode")
         {

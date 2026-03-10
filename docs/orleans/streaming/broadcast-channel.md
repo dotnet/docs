@@ -2,6 +2,7 @@
 title: Broadcast channels
 description: Learn how to work with Orleans broadcast channels.
 ms.date: 07/03/2024
+ai-usage: ai-assisted
 ---
 
 # Broadcast channels in Orleans
@@ -30,36 +31,89 @@ The broadcast channel decouples the producer and consumer of the stock price upd
 
 ## Define a consumer grain
 
-To consume broadcast channel messages, your grain needs to implement the <xref:Orleans.BroadcastChannel.IOnBroadcastChannelSubscribed> interface. Your implementation will use the <xref:Orleans.BroadcastChannel.IBroadcastChannelSubscription.Attach%2A?displayProperty=nameWithType> method to attach to the broadcast channel. The `Attach` method takes a generic-type parameter for the message type you're going to receive. The following example shows a grain that subscribes to a broadcast channel of type `Stock`:
+To consume broadcast channel messages, your grain needs to implement the <xref:Orleans.BroadcastChannel.IOnBroadcastChannelSubscribed> interface. This interface enables implicit subscriptions, meaning grains are automatically subscribed to the broadcast channel when they're activated. Your implementation uses the <xref:Orleans.BroadcastChannel.IBroadcastChannelSubscription.Attach%2A?displayProperty=nameWithType> method to attach to the broadcast channel. The `Attach` method takes a generic-type parameter for the message type you're going to receive.
+
+First, define the grain interface that consumers use to interact with the grain:
+
+:::code source="./snippets/broadcastchannel/BroadcastChannel.GrainInterfaces/ILiveStockGrain.cs":::
+
+The `ILiveStockGrain` interface uses `IGrainWithGuidKey`, which means the grain is identified by a GUID key. Next, implement the grain that subscribes to the broadcast channel:
 
 :::code source="./snippets/broadcastchannel/BroadcastChannel.Silo/LiveStockGrain.cs":::
 
 In the preceding code:
 
 - The `LiveStockGrain` grain implements the `IOnBroadcastChannelSubscribed` interface.
-- The `OnSubscribed` method is called when the grain subscribes to the broadcast channel.
+- The `[ImplicitChannelSubscription]` attribute marks this grain for automatic subscription to broadcast channels.
+- The `OnSubscribed` method is called automatically when the grain is activated (when it's first used or after recovery from a failure).
 - The `subscription` parameter is used to call the `Attach` method to attach to the broadcast channel.
   - The `OnStockUpdated` method is passed to `Attach` as a callback that fires when the `Stock` message is received.
   - The `OnError` method is passed to `Attach` as a callback that fires when an error occurs.
 
-This example grain will contain the latest stock prices as published on the broadcast channel. Any client that asks this grain for the latest stock price will get the latest price from the broadcast channel.
+This example grain contains the latest stock prices as published on the broadcast channel. Any client that asks this grain for the latest stock price gets the latest price from the broadcast channel.
 
 ## Publish messages to a broadcast channel
 
-To publish messages to the broadcast channel, you need to get a reference to the broadcast channel. To do this, you need to get the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider> from the <xref:Orleans.IClusterClient>. With the provider, you can call the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider.GetChannelWriter%2A?displayProperty=nameWithType> method to get an instance of <xref:Orleans.BroadcastChannel.IBroadcastChannelWriter%601>. The writer is used to publish messages to the broadcast channel. The following example shows how to publish messages to the broadcast channel:
+To publish messages to the broadcast channel, you need to get a reference to the broadcast channel. To do this, get the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider> from the <xref:Orleans.IClusterClient>. With the provider, call the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider.GetChannelWriter%2A?displayProperty=nameWithType> method to get an instance of <xref:Orleans.BroadcastChannel.IBroadcastChannelWriter%601>. The writer is used to publish messages to the broadcast channel.
+
+First, define a constant for the channel name to ensure the producer and consumers use the same channel identifier:
+
+:::code source="./snippets/broadcastchannel/BroadcastChannel.GrainInterfaces/ChannelNames.cs":::
+
+Then, create a publisher that sends messages to the broadcast channel:
 
 :::code source="./snippets/broadcastchannel/BroadcastChannel.Silo/Services/StockWorker.cs":::
 
 In the preceding code:
 
 - The `StockWorker` class is a background service that publishes messages to the broadcast channel.
-- The constructor takes an `IStockClient` and <xref:Orleans.IClusterClient> as parameters.
-- From the cluster client instance, the <xref:Orleans.Hosting.ChannelHostingExtensions.GetBroadcastChannelProvider%2A> method is used to get the broadcast channel provider.
-- Using the `IStockClient`, the `StockWorker` class gets the latest stock price for a stock symbol.
-- Every 15 seconds, the `StockWorker` class publishes a `Stock` message to the broadcast channel.
+- The constructor takes a `StockClient` and <xref:Orleans.IClusterClient> as parameters.
+- From the cluster client instance, the <xref:Orleans.Hosting.ChannelHostingExtensions.GetBroadcastChannelProvider%2A> method is used to get the broadcast channel provider for the `LiveStockTicker` channel.
+- The `ChannelId.Create` method creates a channel identifier using:
+  - The channel name (`ChannelNames.LiveStockTicker`)—this must match the name used when configuring the broadcast channel in the silo setup.
+  - `Guid.Empty` as the namespace—for broadcast channels, all subscribers receive all messages, so the namespace is typically set to `Guid.Empty` to indicate a single shared broadcast.
+- Using the `StockClient`, the `StockWorker` class gets the latest stock price for each stock symbol.
+- Every 15 seconds, the `StockWorker` class publishes `Stock` messages to the broadcast channel.
 
-The publishing of messages to a broadcast channel is decoupled from the consumer grain. The consumer grain subscribes to the broadcast channel and receives messages from the broadcast channel. The producer lives in a silo and is responsible for publishing messages to the broadcast channel and doesn't know anything about consuming grains.
+The publishing of messages to a broadcast channel is decoupled from the consumer grain. The producer doesn't know about specific consumer grains. Instead, it publishes to the broadcast channel, and all implicitly subscribed grains automatically receive the messages.
+
+## Broadcast channels vs. streams
+
+Broadcast channels and Orleans streams (including in-memory streams) are both messaging mechanisms, but they serve different purposes and have different characteristics. The following table compares the key differences:
+
+| Feature | Broadcast channels | Orleans streams |
+|---------|-------------------|-----------------|
+| **Subscription model** | Implicit—grains are automatically subscribed when activated | Explicit—grains must explicitly subscribe to streams |
+| **Message persistence** | Not persistent—messages are lost if no subscribers are active | Can be persistent (Azure Queues, Event Hubs) or transient (in-memory) |
+| **Message delivery** | Best-effort, fire-and-forget delivery | Depends on provider—can support at-least-once or exactly-once delivery |
+| **Use case** | Broadcasting the same message to all interested grains in real-time | Point-to-point or pub-sub messaging with delivery guarantees |
+| **Message history** | No message history—only current broadcasts | Streams can support rewindable subscriptions with message history |
+| **Scalability** | Optimized for fan-out to many consumers | Optimized for queue-based processing with backpressure |
+| **Consumer lifecycle** | Consumers are implicitly managed by Orleans | Consumers must manage subscription lifecycle |
+| **Configuration** | Simple—requires only channel name | More complex—requires stream provider configuration |
+
+### When to use broadcast channels
+
+Use broadcast channels when:
+
+- You need to send the same message to all instances of a grain type.
+- Message delivery isn't critical (occasional losses are acceptable).
+- You want implicit subscription without managing subscription lifecycle.
+- You need real-time updates without message history.
+- You want simple configuration and setup.
+
+### When to use streams
+
+Use streams when:
+
+- You need guaranteed message delivery.
+- You need message persistence and replay capabilities.
+- You want explicit control over subscription lifecycle.
+- You need backpressure and flow control mechanisms.
+- Your messaging pattern is point-to-point or requires more complex routing.
+- You're integrating with external queuing systems (Event Hubs, Service Bus, Kafka).
 
 ## See also
 
 - [Streaming with Orleans](index.md)
+- [Orleans stream providers](stream-providers.md)

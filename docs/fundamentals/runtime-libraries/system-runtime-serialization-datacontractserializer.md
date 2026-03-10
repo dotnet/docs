@@ -11,7 +11,7 @@ Use the <xref:System.Runtime.Serialization.DataContractSerializer> class to seri
 
 For a list of types that can be serialized, see [Types Supported by the Data Contract Serializer](../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).
 
-To use the <xref:System.Runtime.Serialization.DataContractSerializer>, first create an instance of a class and an object appropriate to writing or reading the format; for example, an instance of the <xref:System.Xml.XmlDictionaryWriter>. Then call the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method to persist the data. To retrieve data, create an object appropriate to reading the data format (such as an <xref:System.Xml.XmlDictionaryReader> for an XML document) and call the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method.
+To use the <xref:System.Runtime.Serialization.DataContractSerializer>, first create an instance of a class and an object appropriate to writing or reading the format; for example, an instance of the <xref:System.Xml.XmlDictionaryWriter>. Then call the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject*> method to persist the data. To retrieve data, create an object appropriate to reading the data format (such as an <xref:System.Xml.XmlDictionaryReader> for an XML document) and call the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject*> method.
 
 For more information about using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Serialization and Deserialization](../../framework/wcf/feature-details/serialization-and-deserialization.md).
 
@@ -32,7 +32,7 @@ If you are creating a class that has fields or properties that must be populated
 
 ## Add to the collection of known types
 
-When serializing or deserializing an object, it is required that the type is "known" to the <xref:System.Runtime.Serialization.DataContractSerializer>. Begin by creating an instance of a class that implements <xref:System.Collections.Generic.IEnumerable%601> (such as <xref:System.Collections.Generic.List%601>) and adding the known types to the collection. Then create an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> using one of the overloads that takes the <xref:System.Collections.Generic.IEnumerable%601> (for example, <xref:System.Runtime.Serialization.DataContractSerializer.%23ctor%28System.Type%2CSystem.Collections.Generic.IEnumerable%7BSystem.Type%7D%29>).
+When serializing or deserializing an object, it is required that the type is "known" to the <xref:System.Runtime.Serialization.DataContractSerializer>. Begin by creating an instance of a class that implements <xref:System.Collections.Generic.IEnumerable`1> (such as <xref:System.Collections.Generic.List`1>) and adding the known types to the collection. Then create an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> using one of the overloads that takes the <xref:System.Collections.Generic.IEnumerable`1> (for example, <xref:System.Runtime.Serialization.DataContractSerializer.%23ctor(System.Type,System.Collections.Generic.IEnumerable%7BSystem.Type%7D)>).
 
 > [!NOTE]
 > Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types (see [Data Contract Known Types](../../framework/wcf/feature-details/data-contract-known-types.md)).

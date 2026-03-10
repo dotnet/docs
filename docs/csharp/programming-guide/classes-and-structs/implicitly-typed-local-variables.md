@@ -81,7 +81,11 @@ You may find that `var` can also be useful with query expressions in which the e
 
 The `var` keyword can also be useful when the specific type of the variable is tedious to type on the keyboard, or is obvious, or does not add to the readability of the code. One example where `var` is helpful in this manner is with nested generic types such as those used with group operations. In the following query, the type of the query variable is `IEnumerable<IGrouping<string, Student>>`. As long as you and others who must maintain your code understand this, there is no problem with using implicit typing for convenience and brevity.
 
-[!code-csharp[cscsrefQueryKeywords#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#13)]
+```csharp
+var studentQuery =
+    from student in students
+    group student by student.Last;
+```
 
 The use of `var` helps simplify your code, but its use should be restricted to cases where it is required, or when it makes your code easier to read. For more information about when to use `var` properly, see the [Implicitly typed local variables](../../fundamentals/coding-style/coding-conventions.md#implicitly-typed-local-variables) section on the C# Coding Guidelines article.
 

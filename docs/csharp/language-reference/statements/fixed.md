@@ -1,7 +1,7 @@
 ---
 title: "fixed statement - pin a moveable variable"
 description: "Use the C# `fixed` statement to pin a moveable variable and declare a pointer to that variable. The address of a pinned variable doesn't change during execution of the statement."
-ms.date: 11/22/2022
+ms.date: 01/16/2026
 f1_keywords: 
   - "fixed_CSharpKeyword"
   - "fixed"
@@ -15,8 +15,10 @@ The `fixed` statement prevents the [garbage collector](../../../standard/garbage
 
 :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedArray":::
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 > [!NOTE]
-> You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+> You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled by using the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
 
 You can initialize the declared pointer as follows:
 
@@ -25,7 +27,7 @@ You can initialize the declared pointer as follows:
 
   :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedVariable":::
 
-  Object fields are another example of moveable variables that can be pinned.
+  Object fields are another example of moveable variables that you can pin.
 
   When the initialized pointer contains the address of an object field or an array element, the `fixed` statement guarantees that the garbage collector doesn't relocate or dispose of the containing object instance during the execution of the statement body.
 

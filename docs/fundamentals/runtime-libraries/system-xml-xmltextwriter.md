@@ -10,7 +10,7 @@ ms.date: 12/31/2023
 The <xref:System.Xml.XmlTextWriter> class implements the <xref:System.Xml.XmlWriter> class.
 
 > [!NOTE]
-> We recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.
+> We recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create*?displayProperty=nameWithType> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.
 
 `XmlTextWriter` maintains a namespace stack corresponding to all the namespaces defined in the current element stack. Using `XmlTextWriter` you can declare namespaces manually.
 
@@ -100,9 +100,9 @@ The following items are things to consider when working with the <xref:System.Xm
 
 - Exceptions thrown by the <xref:System.Xml.XmlTextWriter> can disclose path information that you do not want bubbled up to the application. Your applications must catch exceptions and process them appropriately.
 
-- When you pass the <xref:System.Xml.XmlTextWriter> to another application the underlying stream is exposed to that application. If you need to pass the <xref:System.Xml.XmlTextWriter> to a semi-trusted application, you should use an <xref:System.Xml.XmlWriter> object created by the <xref:System.Xml.XmlWriter.Create%2A> method instead.
+- When you pass the <xref:System.Xml.XmlTextWriter> to another application the underlying stream is exposed to that application. If you need to pass the <xref:System.Xml.XmlTextWriter> to a semi-trusted application, you should use an <xref:System.Xml.XmlWriter> object created by the <xref:System.Xml.XmlWriter.Create*> method instead.
 
-- The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the <xref:System.Xml.XmlTextWriter.WriteDocType%2A> or <xref:System.Xml.XmlTextWriter.WriteRaw%2A> methods. You should not pass arbitrary data to these methods.
+- The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the <xref:System.Xml.XmlTextWriter.WriteDocType*> or <xref:System.Xml.XmlTextWriter.WriteRaw*> methods. You should not pass arbitrary data to these methods.
 
 - If the default settings are changed, there is no guarantee that the generated output is well-formed XML data.
 

@@ -31,7 +31,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
   Removes and uninstalls all workload components from all SDK versions. Defaults to `false`.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

@@ -1,7 +1,8 @@
 ---
-model: GPT-4.1 (copilot)
-mode: agent
+name: RefreshLinks
+agent: agent
 description: "Updates link text to match target content headings"
+model: GPT-4.1 (copilot)
 ---
 
 # Refresh Links Prompt

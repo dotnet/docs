@@ -14,9 +14,9 @@ ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<settings>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<settings>`
 
 ## Syntax
 

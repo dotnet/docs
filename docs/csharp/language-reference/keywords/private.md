@@ -1,21 +1,22 @@
 ---
 description: "private keyword - C# Reference"
 title: "private keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "private_CSharpKeyword"
   - "private"
 helpviewer_keywords: 
   - "private keyword [C#]"
-ms.assetid: 654c0bb8-e6ac-4086-bf96-7474fa6aa1c8
 ---
 # private (C# Reference)
 
 The `private` keyword is a member access modifier.
 
-> This page covers `private` access. The `private` keyword is also part of the [`private protected`](./private-protected.md) access modifier.
+> This article covers `private` access. The `private` keyword is also part of the [`private protected`](./private-protected.md) access modifier.
 
-Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared, as in this example:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+Private access is the least permissive access level. You can access private members only within the body of the class or the struct where you declare them, as shown in the following example:
 
 ```csharp
 class Employee
@@ -27,15 +28,13 @@ class Employee
 
 Nested types in the same body can also access those private members.
 
-It is a compile-time error to reference a private member outside the class or the struct in which it is declared.
+If you reference a private member outside the class or the struct where you declare it, the compiler returns an error.
 
 For a comparison of `private` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
-## Example
+In this example, the `Employee` class contains two private data members, `_name` and `_salary`. As private members, member methods are the only way to access them. The example adds public methods named `GetName` and `Salary` to allow controlled access to the private members. The `_name` member is accessed by way of a public method, and the `_salary` member is accessed by way of a public read-only property. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
 
-In this example, the `Employee` class contains two private data members, `_name` and `_salary`. As private members, they cannot be accessed except by member methods. Public methods named `GetName` and `Salary` are added to allow controlled access to the private members. The `_name` member is accessed by way of a public method, and the `_salary` member is accessed by way of a public read-only property. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
-
-[!code-csharp[csrefKeywordsModifiers#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#10)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="10":::
 
 ## C# language specification  
 

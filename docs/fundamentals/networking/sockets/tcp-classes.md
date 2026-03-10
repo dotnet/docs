@@ -1,8 +1,6 @@
 ---
 title: Use TcpClient and TcpListener
 description: Learn how to use the TcpClient class to create a socket to request and receive data using TCP in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/20/2025
 helpviewer_keywords: 
   - "protocols, TCP"

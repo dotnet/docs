@@ -1,8 +1,6 @@
 ---
 title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
-author: IEvangelist
-ms.author: dapine
 ms.date: 10/22/2025
 ms.custom: devdivchpfy22
 ai-usage: ai-assisted
@@ -40,11 +38,11 @@ When running tests in .NET, there are two components involved: the test platform
 
 ### Test platforms
 
-The test platform is the engine that runs the tests and acts as a communication channel with IDEs and CLI. For example, Visual Studio can send a discovery request to the test platform so that it can display the available tests in Test Explorer. The test platform responds back to the IDE with the tests it found. Similar communication happens for test execution.
+The test platform is the engine that runs tests and communicates with tools such as IDEs and CLI.
 
-VSTest has been used for many years in .NET and was the only test platform in the ecosystem. Early in 2024, the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md), was released. For more information about migrating from VSTest to Microsoft.Testing.Platform, see [Migration guide from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md).
+Use [Test platforms overview](./test-platforms-overview.md) to understand the differences between VSTest and Microsoft.Testing.Platform, and choose the best platform for your scenario.
 
-The test platform also provides extensibility APIs so that additional features can be implemented and made available for all test frameworks. There are usually built-in features built on top of the extensibility APIs, such as TRX reporting and hang and crash dumps. The community can also build custom extensions that work for all test frameworks.
+For migration guidance, see [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md).
 
 ### Test frameworks
 
@@ -56,10 +54,10 @@ The test framework is built on top of the test platform. It defines the set of a
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in MSTest (MSTest runner)](unit-testing-mstest-runner-intro.md)
-- [Unit testing with C#](unit-testing-csharp-with-mstest.md)
-- [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
-- [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
+- [Run tests with MSTest](unit-testing-mstest-running-tests.md)
+- [Get started with C#](unit-testing-csharp-with-mstest.md)
+- [Get started with F#](unit-testing-fsharp-with-mstest.md)
+- [Get started with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
 #### NUnit
 

@@ -13,9 +13,9 @@ ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
 
 Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<NetFx45_CultureAwareComparerGetHashCode_LongStrings>`
 
 ## Syntax
 

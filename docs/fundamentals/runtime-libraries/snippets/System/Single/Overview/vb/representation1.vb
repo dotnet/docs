@@ -14,8 +14,9 @@ Module Example13
         Console.WriteLine(".2 Added 10 times: {0:R}", result2)
     End Sub
 End Module
+
 ' The example displays the following output:
 '       .2 * 10:           2
-'       .2 Added 10 times: 2.00000024
+'       .2 Added 10 times: 2.0000002
 ' </Snippet3>
 

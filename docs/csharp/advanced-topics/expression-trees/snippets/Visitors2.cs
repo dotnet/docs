@@ -21,9 +21,9 @@ public abstract class Visitor
             ExpressionType.Parameter   => new ParameterVisitor((ParameterExpression)node),
             ExpressionType.Add         => new BinaryVisitor((BinaryExpression)node),
             ExpressionType.Equal       => new BinaryVisitor((BinaryExpression)node),
-            ExpressionType.Multiply    => new BinaryVisitor((BinaryExpression) node),
-            ExpressionType.Conditional => new ConditionalVisitor((ConditionalExpression) node),
-            ExpressionType.Call        => new MethodCallVisitor((MethodCallExpression) node),
+            ExpressionType.Multiply    => new BinaryVisitor((BinaryExpression)node),
+            ExpressionType.Conditional => new ConditionalVisitor((ConditionalExpression)node),
+            ExpressionType.Call        => new MethodCallVisitor((MethodCallExpression)node),
             _ => throw new NotImplementedException($"Node not processed yet: {node.NodeType}"),
         };
     // </UpdatedVisitor>

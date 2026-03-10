@@ -16,11 +16,11 @@ ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
 
 Adds an IP address or DNS name to the proxy bypass list.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<bypasslist>**](bypasslist-element-network-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;[`<defaultProxy>`](defaultproxy-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<bypasslist>`](bypasslist-element-network-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 

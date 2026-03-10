@@ -15,8 +15,8 @@ ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 
 Specifies whether the common language runtime runs garbage collection on a separate thread.
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<gcConcurrent>
 
 ## Syntax

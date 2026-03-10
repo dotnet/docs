@@ -8,7 +8,7 @@ ms.date: 04/23/2024
 The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly. The serialization assembly improves the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.
 
 > [!NOTE]
-> This tool is specific to .NET Framework assemblies. To generator XML serializers for .NET (Core) assemblies, see [Use Microsoft XML Serializer Generator on .NET Core](../../core/additional-tools/xml-serializer-generator.md).
+> This tool is specific to .NET Framework assemblies. To generator XML serializers for .NET (Core) assemblies, see [Use Microsoft XML Serializer Generator on .NET Core](/previous-versions/dotnet/fundamentals/serialization/xml-serializer-generator).
 
 ## Syntax
 
@@ -67,6 +67,5 @@ The *Data.XmlSerializers.dll* assembly can be referenced from code that needs to
 
 ## See also
 
-- [Use Microsoft XML Serializer Generator on .NET Core](../../core/additional-tools/xml-serializer-generator.md)
 - [Tools](../../framework/tools/index.md)
 - [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

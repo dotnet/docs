@@ -45,7 +45,7 @@ public class Program
         //Console.WriteLine("\n============================= Roundtrip enum as string\n");
         //RoundtripEnumAsString.Run();
 
-        SerializeEnumCustomName.Run();
+        //SerializeEnumCustomName.Run();
 
         //Console.WriteLine("\n============================= Roundtrip enum using JsonConverterAttribute\n");
         //RoundtripEnumUsingConverterAttribute.Run();

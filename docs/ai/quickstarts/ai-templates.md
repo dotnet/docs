@@ -1,11 +1,10 @@
 ---
 title: Quickstart - Create a .NET AI app using the AI app template
 description: Create a .NET AI app to chat with custom data using the AI app template extensions and the Microsoft.Extensions.AI libraries
-ms.date: 07/30/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
-author: alexwolfmsft
-ms.author: alexwolf
 zone_pivot_groups: meai-targets
+ai-usage: ai-assisted
 ---
 
 # Create a .NET AI app to chat with custom data using the AI app template extensions

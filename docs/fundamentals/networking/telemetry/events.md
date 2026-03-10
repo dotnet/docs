@@ -288,13 +288,19 @@ You should think about such events separately. Monitor DNS resolutions or TLS ha
 ## Internal diagnostics
 
 Some components in .NET are instrumented with additional debug-level events that provide more insight into exactly what's happening internally.
-These events come with high performance overhead and their shape is constantly changing. As the name suggests, they are not part of the public API and you should therefore not rely on their behavior or existence.
+These events come with high performance overhead and their shape is constantly changing. As the name suggests, they are not part of the public API and you should therefore not rely on their behavior or existence. Moreover, they are not redacted and might contain PII.
 
 Regardless, these events can offer a lot of insights when all else fails.
 The `System.Net` stack emits such events from `Private.InternalDiagnostics.System.Net.*` namespaces.
 
 If you change the condition in the `EventListener` example above to `eventSource.Name.Contains("System.Net")`, you will see 100+ events from different layers in the stack.
 For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/internal-diag-telemetry/Program.cs).
+
+To consume them outside of the process, use `dotnet-trace`, for example:
+
+```console
+dotnet-trace collect --providers Private.InternalDiagnostics.System.Net.Http:0xf --process-id 1234
+```
 
 ## Samples
 

@@ -136,7 +136,7 @@ For scenarios where you need a different implementation for `GetResponseAsync` a
 
 ## Dependency injection
 
-<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In the following example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
+<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection/overview.md). In the following example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.DependencyInjection/Program.cs":::
 
@@ -170,7 +170,6 @@ The following sample implements `IChatClient` to show the general structure.
 
 For more realistic, concrete implementations of `IChatClient`, see:
 
-- [AzureAIInferenceChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.AzureAIInference/AzureAIInferenceChatClient.cs)
 - [OpenAIChatClient.cs](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.AI.OpenAI/OpenAIChatClient.cs)
 - [Microsoft.Extensions.AI chat clients](https://github.com/dotnet/extensions/tree/main/src/Libraries/Microsoft.Extensions.AI/ChatCompletion)
 

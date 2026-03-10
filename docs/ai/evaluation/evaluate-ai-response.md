@@ -97,7 +97,7 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## Next steps

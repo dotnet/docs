@@ -107,6 +107,23 @@ The preceding configuration assigns a default of `true` to the following propert
 
 These analyzers help to ensure that a library is compatible with Native AOT.
 
+### Target framework requirements
+
+When preparing libraries for AOT compatibility, target the latest supported TFM. This helps you benefit from the latest analyzer improvements. At a minimum, target `net8.0` or later. This version is required for AOT analysis warnings.
+
+If your library also targets frameworks earlier than `net8.0` (such as `netstandard2.0`, or `net472`), multi-target to include `net8.0`. This ensures that apps targeting `net8.0` or later get a version of your library that supports AOT analysis.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net8.0` and later:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
+  <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>
+</PropertyGroup>
+```
+
+For more information, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
+
 ### Verify referenced assemblies are AOT-compatible
 
 When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for AOT compatibility by setting the `VerifyReferenceAotCompatibility` property to `true`:

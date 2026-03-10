@@ -508,7 +508,6 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>
 
 ## Microsoft.VisualBasic.FileSystem Module
 

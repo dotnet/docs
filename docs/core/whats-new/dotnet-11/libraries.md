@@ -109,7 +109,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 
 A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> from <xref:System.Text.Json.JsonSerializerOptions>.
 Previously, you had to manually downcast from the non-generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method.
-New generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1> and `TryGetTypeInfo<T>()` methods return strongly typed metadata directly, eliminating the cast.
+New generic `System.Text.Json.JsonSerializerOptions.GetTypeInfo<T>` and `TryGetTypeInfo<T>()` methods return strongly typed metadata directly, eliminating the cast.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
 

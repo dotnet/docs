@@ -46,7 +46,7 @@ Complete the following steps to create a .NET console app.
 
 ## Create the AI service
 
-1. To provision an Azure OpenAI service and model, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource) article. For this quickstart, you need to provision two models: `gpt-4o` and `text-embedding-3-small`.
+1. To provision an Azure OpenAI service and model, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource) article. For this quickstart, you need to provision two models: `gpt-5` and `text-embedding-3-small`.
 
 1. From a terminal or command prompt, navigate to the root of your project directory.
 

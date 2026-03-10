@@ -1,6 +1,7 @@
 ---
 title: Generate embeddings for vector store connectors
 description: Describes how you can generate embeddings to use with vector store connectors.
+ai-usage: ai-assisted
 ms.topic: concept-article
 ms.date: 02/28/2026
 ---

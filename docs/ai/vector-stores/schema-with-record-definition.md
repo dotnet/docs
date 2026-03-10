@@ -1,8 +1,9 @@
 ---
-title: Defining your storage schema using a record definition
+title: Define your storage schema using a record definition
 description: Describes how to create a record definition to use when writing to or reading from a vector store.
 ms.topic: reference
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # Define your storage schema using a record definition
 
@@ -11,7 +12,7 @@ Vector store connectors use a model-first approach to interacting with databases
 Another way of providing this information is via record definitions, which can be defined and supplied separately to the data model. This can be useful in multiple scenarios:
 
 - You want to use the same data model with more than one configuration.
-- You want to use a built-in type, like a `Dictionary`, or an optimized format, like a dataframe, and still wants to leverage the vector store functionality.
+- You want to use a built-in type, like a `Dictionary`, or an optimized format, like a dataframe, and still want to leverage the vector store functionality.
 
 Here's an example of how to create a record definition:
 

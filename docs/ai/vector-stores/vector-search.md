@@ -3,6 +3,7 @@ title: Vector search using vector store connectors
 description: Describes the different options you can use when doing a vector search using vector store connectors.
 ms.topic: concept-article
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # Vector search using vector store connectors
 
@@ -39,7 +40,7 @@ The following options can be provided using the `VectorSearchOptions<TRecord>` c
 
 ### VectorProperty
 
-Use the `VectorProperty` option to specify the vector property to target during the search. If none is provided and the data model contains only one vector, that vector will be used. If the data model contains no vector or multiple vectors and `VectorProperty` is not provided, the search method throws an exceptoin.
+Use the `VectorProperty` option to specify the vector property to target during the search. If none is provided and the data model contains only one vector, that vector will be used. If the data model contains no vector or multiple vectors and `VectorProperty` is not provided, the search method throws an exception.
 
 :::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorProperty":::
 

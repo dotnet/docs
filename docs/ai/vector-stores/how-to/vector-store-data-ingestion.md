@@ -3,14 +3,15 @@ title: How to ingest data into a vector store
 description: Step by step instructions on how to ingest data into a vector store.
 ms.topic: tutorial
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # How to ingest data into a vector store
 
 This article demonstrates how to create an application to:
 
 1. Take text from each paragraph in a Microsoft Word document.
-2. Generate an embedding for each paragraph.
-3. Upsert the text, embedding, and a reference to the original location into a Redis instance.
+1. Generate an embedding for each paragraph.
+1. Upsert the text, embedding, and a reference to the original location into a Redis instance.
 
 ## Prerequisites
 
@@ -29,7 +30,7 @@ you can easily start a Redis container using Docker:
 docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ```
 
-To verify that it's running successfully, navigate to [http://localhost:8001/redis-stack/browser](http://localhost:8001/redis-stack/browser) in your browser.
+To verify that it's running successfully, navigate to <http://localhost:8001/redis-stack/browser> in your browser.
 
 The rest of these instructions assume that you're using a container with these settings.
 

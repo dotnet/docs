@@ -4,7 +4,7 @@ using Qdrant.Client;
 
 public class HybridSearchExample
 {
-    public async static void Run()
+    public static async Task Run()
     {
         // <HybridSearch>
         // Create a Qdrant VectorStore object and choose

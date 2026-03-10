@@ -36,9 +36,7 @@ public class PutItAllTogether
         // <PutItAllTogether2>
         // Load the data.
         IEnumerable<TextParagraph> textParagraphs = DocumentReader.ReadParagraphs(
-            new FileStream(
-                "vector-store-data-ingestion-input.docx",
-                FileMode.Open),
+            File.OpenRead("vector-store-data-ingestion-input.docx"),
             "file:///c:/vector-store-data-ingestion-input.docx");
 
         await dataUploader.GenerateEmbeddingsAndUpload(

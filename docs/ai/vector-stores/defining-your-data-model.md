@@ -3,6 +3,7 @@ title: Define your vector store data model
 description: Describes how to create a data model with Microsoft.Extensions.VectorData to use when writing to or reading from a vector store.
 ms.topic: reference
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # Define your data model
 

@@ -3,6 +3,7 @@ title: Hybrid search using vector store connectors
 description: Describes the different options you can use when doing a hybrid search using vector store connectors.
 ms.topic: concept-article
 ms.date: 02/28/2026
+ai-usage: ai-assisted
 ---
 # Hybrid search using vector store connectors
 

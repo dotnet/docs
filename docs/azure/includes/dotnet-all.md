@@ -427,8 +427,8 @@
 | Fabric MCP | NuGet [0.0.0-beta.9](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.osx-x64/0.0.0-beta.9) |  |  |
 | Fabric MCP | NuGet [0.0.0-beta.9](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-arm64/0.0.0-beta.9) |  |  |
 | Fabric MCP | NuGet [0.0.0-beta.9](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/0.0.0-beta.9) |  |  |
-| Functions Extension MCP | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.2.0) |  |  |
-| Functions Worker Extension MCP | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.1.0)<br>NuGet [1.2.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.2.0-preview.1) |  |  |
+| Functions Extension MCP | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.3.0) |  |  |
+| Functions Worker Extension MCP | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.3.0) |  |  |
 | Functions Worker Extension MCP SDK | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.2) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |

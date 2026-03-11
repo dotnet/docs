@@ -290,10 +290,10 @@ You might also consider passing a <xref:System.Text.StringBuilder> instead of a 
 > [!CAUTION]
 > Avoid `StringBuilder` parameters when performance matters. Marshalling a `StringBuilder` *always* creates a native buffer copy. A typical call to get a string out of native code can result in four allocations:
 >
-> 1. A managed `StringBuilder` buffer **(1)**
-> 2. A native buffer allocated during marshalling **(2)**
-> 3. If `[Out]`, the native buffer contents are copied into a newly allocated managed array **(3)**
-> 4. A `string` allocated by `ToString()` **(4)**
+> 1. A managed `StringBuilder` buffer.
+> 2. A native buffer allocated during marshalling.
+> 3. If `[Out]`, the native buffer contents are copied into a newly allocated managed array.
+> 4. A `string` allocated by `ToString()`.
 >
 > Reusing the same `StringBuilder` across calls saves only one allocation. Using a character buffer rented from `ArrayPool<char>` is much more efficient—it reduces subsequent calls to just the allocation for `ToString()`.
 >

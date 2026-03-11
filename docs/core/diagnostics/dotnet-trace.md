@@ -40,7 +40,7 @@ dotnet-trace [-h, --help] [--version] <command>
 
 The `dotnet-trace` tool:
 
-- Is a cross-platform .NET (Core) tool.
+- Is a cross-platform .NET diagnostic tool.
 - Enables the collection of .NET traces of a running process without a native profiler.
 - Is built on [`EventPipe`](./eventpipe.md) of the .NET runtime.
 - Supports two different ways of collecting traces:
@@ -648,7 +648,7 @@ Output File    : E:\temp\gcperfsim\trace.nettrace
 Press <Enter> or <Ctrl+C> to exit...
 ```
 
-You can stop collecting the trace by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd> key. Doing this also exits `hello.exe`.
+You can stop collecting the trace by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd>. Doing this also exits `hello.exe`.
 
 > [!NOTE]
 > Launching `hello.exe` via dotnet-trace redirects its input/output and you won't be able to interact with it on the console by default. Use the `--show-child-io` switch to interact with its stdin/stdout.

@@ -1,7 +1,8 @@
 ---
 title: "Inheritance Basics"
 description: "Learn more about: Inheritance Basics (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 03/11/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "derived classes [Visual Basic], inheritance"
   - "MyClass keyword [Visual Basic], using"
@@ -145,3 +146,11 @@ Even though `derivedClass` overrides `testMethod`, the `MyClass` keyword in `use
 
 - [Inherits Statement](../../../language-reference/statements/inherits-statement.md)
 - [Me, My, MyBase, and MyClass](../../program-structure/me-my-mybase-and-myclass.md)
+- [Object-oriented programming (Visual Basic)](../../concepts/object-oriented-programming.md)
+- [Interfaces (Visual Basic)](../interfaces/index.md)
+- [Differences between shadowing and overriding](../declared-elements/differences-between-shadowing-and-overriding.md)
+- [Generic types in Visual Basic](../data-types/generic-types.md)
+- [Covariance and contravariance (Visual Basic)](../../concepts/covariance-contravariance/index.md)
+- [Variance in generic interfaces (Visual Basic)](../../concepts/covariance-contravariance/variance-in-generic-interfaces.md)
+- [Abstract class design](../../../../standard/design-guidelines/abstract-class.md)
+- [Base classes for implementing abstractions](../../../../standard/design-guidelines/base-classes-for-implementing-abstractions.md)

@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Request a response with structured output
 description: Learn how to create a chat app that responds with structured output, that is, output that conforms to a type that you specify.
-ms.date: 04/30/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Request a response with structured output
@@ -34,7 +35,7 @@ Complete the following steps to create a console app that connects to the `gpt-5
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -110,9 +111,9 @@ Complete the following steps to create a console app that connects to the `gpt-5
 
 ## Clean up resources
 
-If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+If you no longer need them, delete the Azure OpenAI resource and model deployment.
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## See also

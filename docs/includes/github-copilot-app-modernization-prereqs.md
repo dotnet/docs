@@ -11,7 +11,7 @@ ms.topic: include
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
 
   - GitHub Copilot
-  - GitHub Copilot app modernization
+  - GitHub Copilot modernization agent
 
 - GitHub Copilot Subscription (paid or free).
 
@@ -23,4 +23,4 @@ ms.topic: include
 - Code must be written in C#.
 
 > [!NOTE]
-> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot app modernization](../core/porting/github-copilot-app-modernization/install.md).
+> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot modernization](../core/porting/github-copilot-app-modernization/install.md).

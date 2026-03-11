@@ -123,11 +123,11 @@ Instead of manually porting an application from .NET Framework to .NET, you can 
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
-### GitHub Copilot app modernization assistant
+### GitHub Copilot modernization agent
 
-[GitHub Copilot app modernization](github-copilot-app-modernization/overview.md) is a GitHub Copilot chat assistant that helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
+[GitHub Copilot modernization](github-copilot-app-modernization/overview.md) is a GitHub Copilot chat agent that helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
 
-This chat assistant supports the following upgrade paths:
+This chat agent supports the following upgrade paths:
 
 - Upgrade projects from older .NET versions to the latest.
 - Upgrade projects from .NET Framework to the latest version of .NET.
@@ -146,17 +146,17 @@ It also works on various project types, such as:
 
 **When to use:**
 
-Use GitHub Copilot app modernization when you want an AI-powered, end-to-end experience to upgrade .NET Framework projects and dependencies to modern .NET&mdash;covering assessment, planning, remediation, and guidance for migrating applications to Azure.
+Use GitHub Copilot modernization when you want an AI-powered, end-to-end experience to upgrade .NET Framework projects and dependencies to modern .NET&mdash;covering assessment, planning, remediation, and guidance for migrating applications to Azure.
 
 ### Application and code assessment for .NET
 
 [Azure Migrate application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
 
-This tool is also used by the GitHub Copilot app modernization for .NET experience.
+This tool is also used by the GitHub Copilot modernization for .NET experience.
 
 **When to use:**
 
-Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot app modernization for .NET experience.
+Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot modernization for .NET experience.
 
 ### .NET Upgrade Assistant
 
@@ -172,7 +172,7 @@ This tool uses the other tools listed in this article, such as **try-convert**, 
 
 **When to use:**
 
-Use when an AI powered solution like GitHub Copilot app modernization isn't available.
+Use when an AI powered solution like GitHub Copilot modernization isn't available.
 
 ### `try-convert`
 
@@ -190,7 +190,7 @@ For more information, see [Platform compatibility analyzer](../../standard/analy
 
 When porting your application to .NET, consider the following suggestions in order:
 
-✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization/overview.md) to upgrade your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your upgrade path.
+✔️ CONSIDER using the [GitHub Copilot modernization](github-copilot-app-modernization/overview.md) to upgrade your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your upgrade path.
 
 ✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET, .NET Standard, or .NET Core.
 
@@ -210,7 +210,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ## See also
 
-- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
+- [What is GitHub Copilot modernization](github-copilot-app-modernization/overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
 - [Upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Upgrade a Windows Forms app to .NET](/dotnet/desktop/winforms/migration/)

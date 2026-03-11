@@ -404,13 +404,13 @@
 | Resource Management - Workloadssapvirtualinstance | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadsSapVirtualInstance/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.WorkloadsSapVirtualInstance-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadsSapVirtualInstance_1.0.0-beta.1/sdk/workloadssapvirtualinstance/Azure.ResourceManager.WorkloadsSapVirtualInstance/) |
 | App Configuration Extension | NuGet [8.5.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.5.0)<br>NuGet [8.6.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.6.0-preview) |  |  |
 | App Configuration Provider | NuGet [8.5.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.5.0)<br>NuGet [8.6.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.6.0-preview) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.25) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.25](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.25) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.26) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.26](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.26) |  |  |
 | Azure MCP Types Internal | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Caching - PostgreSQL | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.1) |  |  |

@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.date: 01/26/2026
-title: GitHub Copilot App Modernization for .NET in VS Code
+title: GitHub Copilot modernization for .NET in VS Code
 description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot in Visual Studio Code. Follow step-by-step guidance for seamless modernization.
 ---
 
@@ -11,19 +11,19 @@ description: Learn how to assess .NET app readiness and migrate to Azure with Gi
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/). Must be version 1.101 or later.
 
   - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). For setup instructions, see [Set up GitHub Copilot in VisualStudio Code](https://code.visualstudio.com/docs/copilot/setup). Be sure to sign in to your GitHub account within Visual Studio Code.
-  - [GitHub Copilot app modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code afterinstallation.
+  - [GitHub Copilot modernization](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure). Restart Visual Studio Code afterinstallation.
 
 - A .NET development environment to build and test the project.
 
 ## Assess app readiness
 
-GitHub Copilot app modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
+GitHub Copilot modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your computer.
 
 1. In Visual Studio Code, open the **Contoso University** solution from the samples repository.
 
-1. Open the **GitHub Copilot app modernization** extension.
+1. Open the **GitHub Copilot modernization** extension.
 
 1. In the **QUICKSTART** section, select **Start Assessment**. The **Assessment reports** page opens.
 
@@ -41,7 +41,7 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 ## App migrations
 
-GitHub Copilot app modernization for .NET includes [predefined tasks](../predefined-tasks.md) for common migration scenarios and follows Microsoft's best practices.
+GitHub Copilot modernization for .NET includes [predefined tasks](../predefined-tasks.md) for common migration scenarios and follows Microsoft's best practices.
 
 ### Chat-based migration (recommended)
 

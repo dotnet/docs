@@ -1,6 +1,6 @@
 ---
-title: Deploy your project to Azure by using GitHub Copilot app modernization for .NET
-description: Learn how to deploy your migrated .NET project to Azure by using GitHub Copilot app modernization for .NET.
+title: Deploy your project to Azure by using GitHub Copilot modernization for .NET
+description: Learn how to deploy your migrated .NET project to Azure by using GitHub Copilot modernization for .NET.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/17/2025
@@ -8,9 +8,9 @@ author: JiDong
 ms.author: donji
 ---
 
-# Quickstart: Use GitHub Copilot app modernization for .NET to deploy your project to Azure
+# Quickstart: Use GitHub Copilot modernization for .NET to deploy your project to Azure
 
-In this quickstart, you learn how to deploy your project to Azure with GitHub Copilot app modernization for .NET. This tool lets you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
+In this quickstart, you learn how to deploy your project to Azure with GitHub Copilot modernization for .NET. This tool lets you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
 
 ## Prerequisites
 

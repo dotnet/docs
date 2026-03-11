@@ -19,6 +19,9 @@ Before configuring TLS, ensure you have:
 - The [Microsoft.Orleans.Connections.Security](https://www.nuget.org/packages/Microsoft.Orleans.Connections.Security) NuGet package installed for both silos and clients.
 - A valid X.509 certificate for authentication, either in the Windows certificate store or as a file.
 
+> [!TIP]
+> The accompanying `SiloExample` and `ClientExample` projects include a development-only startup path that creates temporary self-signed certificates so you can run the sample locally. The inline snippets below focus on the certificate store and certificate file patterns you would typically adapt for your own deployments.
+
 ## Configure TLS on silos
 
 To enable TLS on an Orleans silo, use the <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method. This method provides several overloads for different certificate configuration scenarios.
@@ -35,7 +38,7 @@ In the preceding code:
 - The `"my-certificate-subject"` parameter identifies the certificate by its subject name.
 - The `allowInvalid: false` parameter ensures that only valid certificates are accepted in production.
 - The `StoreLocation.CurrentUser` parameter specifies the certificate store scope.
-- The `OnAuthenticateAsClient` callback sets the target host for client authentication.
+- The `OnAuthenticateAsClient` callback sets the `TargetHost` for outbound connections initiated by the silo.
 
 ### Development environment configuration
 
@@ -87,8 +90,8 @@ The following example shows how to configure TLS on an Orleans client:
 In the preceding code:
 
 - The <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method configures TLS for the client.
-- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient%2A> callback configures client-side TLS options, such as the `TargetHost`, client certificate selection, and server certificate validation.
-- The client participates in mutual TLS by selecting and sending a client certificate in `OnAuthenticateAsClient`, while the silo must be configured separately to require and validate client certificates.
+- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient%2A> callback configures client-side TLS options and sets the `TargetHost` to match the server certificate name.
+- When you call `UseTls` with a client certificate, the client sends that certificate during the TLS handshake so the silo can enforce mutual TLS.
 
 ### Development client configuration
 

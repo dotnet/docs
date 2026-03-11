@@ -64,7 +64,7 @@ The previous behavior was also problematic for value types such as `int[]`. For 
       options.ErrorOnUnknownConfiguration = true);
   ```
 
-  This causes <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> to throw an <xref:System.InvalidOperationException> when a value can't be converted, making misconfiguration immediately visible.
+  Starting in .NET 8, this option also causes <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> to throw an <xref:System.InvalidOperationException> when a value can't be converted to the target type. For more information, see [ConfigurationBinder throws for mismatched value](configurationbinder-exceptions.md).
 
 - **Fix invalid configuration values.** Ensure all values in your configuration source match the expected types for the bound model.
 

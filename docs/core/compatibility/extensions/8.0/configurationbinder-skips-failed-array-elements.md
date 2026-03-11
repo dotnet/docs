@@ -15,7 +15,7 @@ Starting in .NET 8, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder
 
 ## Previous behavior
 
-Previously, when binding an array or list property via <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%60%601(Microsoft.Extensions.Configuration.IConfiguration)> or <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)>, if an element's value couldn't be converted to the target type, that element was preserved as a `null` placeholder in the result. The collection length matched the number of elements in the configuration.
+Previously, when binding an array or list property via <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get``1(Microsoft.Extensions.Configuration.IConfiguration)> or <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)>, if an element's value couldn't be converted to the target type, that element was preserved as a `null` placeholder in the result. The collection length matched the number of elements in the configuration.
 
 ```csharp
 // Configuration source, for example, appsettings.json:
@@ -42,7 +42,6 @@ var settings = configuration.GetSection("Items").Get<MyItem[]>();
 // .NET 8+ result:
 // settings.Length == 1
 // settings[0] = { Name = "A", Interval = 10 }
-// settings[1] is gone entirely -- no null placeholder
 ```
 
 ## Type of breaking change
@@ -57,7 +56,7 @@ The previous behavior was also problematic for value types such as `int[]`. For 
 
 ## Recommended action
 
-- **Enable `ErrorOnUnknownConfiguration` during development** to surface invalid configuration values immediately rather than silently dropping elements:
+- **Enable <xref:Microsoft.Extensions.Configuration.BinderOptions.ErrorOnUnknownConfiguration> during development** to surface invalid configuration values immediately rather than silently dropping elements:
 
   ```csharp
   var settings = configuration.GetSection("Items").Get<MyItem[]>(options =>
@@ -74,7 +73,7 @@ The previous behavior was also problematic for value types such as `int[]`. For 
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%60%601(Microsoft.Extensions.Configuration.IConfiguration)?displayProperty=fullName>
-- <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%60%601(Microsoft.Extensions.Configuration.IConfiguration,System.Action{Microsoft.Extensions.Configuration.BinderOptions})?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get``1(Microsoft.Extensions.Configuration.IConfiguration)?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get``1(Microsoft.Extensions.Configuration.IConfiguration,System.Action{Microsoft.Extensions.Configuration.BinderOptions})?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object,System.Action{Microsoft.Extensions.Configuration.BinderOptions})?displayProperty=fullName>

@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="OpenAI" Version="2.9.1" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.3.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.4" />
   </ItemGroup>
 
 </Project>

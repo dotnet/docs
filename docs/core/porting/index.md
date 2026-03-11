@@ -30,7 +30,7 @@ It's important to keep your developer tools up-to-date as each new release addre
 
 ## Use GitHub Copilot modernization agent
 
-The GitHub Copilot modernization agent provides an AI-assisted, end-to-end experience to speed porting and modernization work. The agent analyzes your project and writes a plan to complete your desired upgrade. You can adjust and iterate on the plan, then perform the upgrades. With this assistant, you can:
+The GitHub Copilot modernization agent provides an AI-assisted, end-to-end experience to speed porting and modernization work. The agent analyzes your project and writes a plan to complete your desired upgrade. You can adjust and iterate on the plan, then perform the upgrades. With this agent, you can:
 
 - Upgrade projects to a newer .NET version.
 - Assess your application's code, configuration, and dependencies.

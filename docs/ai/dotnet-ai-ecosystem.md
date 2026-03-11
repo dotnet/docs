@@ -20,7 +20,7 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 ## Other AI-related Microsoft.Extensions libraries
 
-The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](quickstarts/build-vector-search-app.md).
+The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](vector-stores/how-to/build-vector-search-app.md).
 
 The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET building blocks for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially retrieval-augmented generation (RAG) scenarios. For more information, see [Data ingestion](conceptual/data-ingestion.md).
 

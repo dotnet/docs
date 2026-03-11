@@ -53,7 +53,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 |-----------------------------|-------------------------------------------------------------------------|
 | Create a chat application   | [Build an Azure AI chat app with .NET](./quickstarts/build-chat-app.md) |
 | Summarize text              | [Summarize text using Azure AI chat app](./quickstarts/prompt-model.md) |
-| Chat with your data         | [Get insight about your data from a .NET Azure AI chat app](./quickstarts/build-vector-search-app.md) |
+| Chat with your data         | [Get insight about your data from a .NET Azure AI chat app](./vector-stores/how-to/build-vector-search-app.md) |
 | Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](./quickstarts/use-function-calling.md) |
 | Generate images             | [Generate images from text](./quickstarts/text-to-image.md) |
 | Train your own model        | [ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |

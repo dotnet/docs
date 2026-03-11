@@ -173,5 +173,5 @@ If you no longer need them, delete the Azure OpenAI resource and model deploymen
 ## Next steps
 
 - [Data ingestion concepts](../conceptual/data-ingestion.md)
-- [Implement RAG using vector search](../tutorials/tutorial-ai-vector-search.md)
-- [Build a .NET AI vector search app](build-vector-search-app.md)
+- [Implement RAG using vector search](../vector-stores/tutorial-vector-search.md)
+- [Build a .NET AI vector search app](../vector-stores/how-to/build-vector-search-app.md)

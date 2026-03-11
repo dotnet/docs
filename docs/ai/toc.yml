@@ -20,7 +20,6 @@ items:
   - name: C# SDK for MCP
     href: get-started-mcp.md
 - name: Quickstarts
-  expanded: true
   items:
   - name: Connect to and prompt an AI model
     href: quickstarts/prompt-model.md
@@ -29,7 +28,7 @@ items:
   - name: Request structured output
     href: quickstarts/structured-output.md
   - name: Build a .NET AI vector search app
-    href: quickstarts/build-vector-search-app.md
+    href: vector-stores/how-to/build-vector-search-app.md
   - name: Execute a local .NET function
     href: quickstarts/use-function-calling.md
   - name: Chat with a local AI model
@@ -48,8 +47,6 @@ items:
     href: conceptual/understanding-tokens.md
   - name: Embeddings
     href: conceptual/embeddings.md
-  - name: Vector databases
-    href: conceptual/vector-databases.md
   - name: Data ingestion
     href: conceptual/data-ingestion.md
   - name: Prompt engineering
@@ -84,7 +81,7 @@ items:
     - name: Process custom data for AI
       href: quickstarts/process-data.md
     - name: Implement RAG using vector search
-      href: tutorials/tutorial-ai-vector-search.md
+      href: vector-stores/tutorial-vector-search.md
     - name: Scale Azure OpenAI with Azure Container Apps
       href: get-started-app-chat-scaling-with-azure-container-apps.md
 - name: MCP client/server
@@ -99,6 +96,31 @@ items:
   items:
     - name: Use Microsoft.ML.Tokenizers
       href: how-to/use-tokenizers.md
+- name: Vector stores
+  items:
+  - name: overview
+    href: vector-stores/overview.md
+    displayName: vector databases, vector stores
+  - name: How-to
+    items:
+    - name: Use vector stores
+      href: vector-stores/how-to/use-vector-stores.md
+    - name: Build a vector search app
+      href: vector-stores/how-to/build-vector-search-app.md
+    - name: Ingest data into a vector store
+      href: vector-stores/how-to/vector-store-data-ingestion.md
+  - name: Define your data model
+    href: vector-stores/defining-your-data-model.md
+  - name: Define schema with record definitions
+    href: vector-stores/schema-with-record-definition.md
+  - name: Dynamic data model
+    href: vector-stores/dynamic-data-model.md
+  - name: Generate embeddings
+    href: vector-stores/embedding-generation.md
+  - name: Vector search
+    href: vector-stores/vector-search.md
+  - name: Hybrid search
+    href: vector-stores/hybrid-search.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

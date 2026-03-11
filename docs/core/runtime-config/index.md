@@ -112,7 +112,7 @@ MSBuild properties for configuring the behavior of the runtime are noted in the 
 
 ## Environment variables
 
-Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix `DOTNET_`. (For .NET Framework runtime configuration, use the `COMPlus_` prefix instead.)
+Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix `DOTNET_`.
 
 > [!NOTE]
 > Starting in .NET 9, environment variables take precedence over both MSBuild properties and *runtimeconfig.json* settings. For more information about this breaking change, see [Environment variables take precedence in app runtime configuration settings](../compatibility/deployment/9.0/envvar-precedence.md).

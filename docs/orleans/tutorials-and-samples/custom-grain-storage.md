@@ -140,6 +140,8 @@ Lastly, to register the grain storage, create an extension on <xref:Orleans.Host
 
 The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two keyed singleton services, one for each interface.
 
+:::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs" id="KeyedRegistrations":::
+
 This enables adding the file storage using the extension on <xref:Orleans.Hosting.ISiloBuilder>:
 
 :::code source="snippets/custom-grain-storage/Program.cs":::

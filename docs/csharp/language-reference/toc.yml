@@ -538,7 +538,8 @@ items:
     displayName: >
       async, await,
       CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997,
-      CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS9123, CS9330
+      CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS8935, CS8940, CS9123,
+      CS9330
   - name: Interface implementation
     href: ./compiler-messages/interface-implementation-errors.md
     displayName: >
@@ -609,8 +610,8 @@ items:
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: >
-      CS8509, CS8978, CS8979, CS8980, CS8985, CS9013, CS9060, CS9134, CS9135, CS9335,
-      CS9336, CS9337
+      CS8509, CS8918, CS8978, CS8979, CS8980, CS8985, CS9013, CS9060, CS9134, CS9135,
+      CS9335, CS9336, CS9337
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
     displayName: >

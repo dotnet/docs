@@ -19,6 +19,8 @@ f1_keywords:
  - "CS4032"
  - "CS4033"
  - "CS8892"
+ - "CS8935"
+ - "CS8940"
  - "CS9123"
  - "CS9330"
 helpviewer_keywords:
@@ -39,18 +41,17 @@ helpviewer_keywords:
  - "CS4032"
  - "CS4033"
  - "CS8892"
+ - "CS8935"
+ - "CS8940"
  - "CS9123"
  - "CS9330"
 ms.date: 11/10/2025
 ai-usage: ai-assisted
 ---
-# Resolve errors and warnings in async methods using the await operator
+# Resolve errors and warnings in async methods that use the await operator
 
 This article covers the following compiler errors:
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
- -->
 - [**CS1983**](#async-method-signature-requirements): *Since this is an async method, the return expression must be of type '`Task<T>`' rather than '`T`'.*
 - [**CS1985**](#await-expression-requirements): *Cannot await in a catch clause.*
 - [**CS1986**](#await-expression-requirements): *'`await`' requires that the type have a suitable '`GetAwaiter`' method.*
@@ -68,6 +69,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS4032**](#await-expression-requirements): *The '`await`' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to '`Task<T>`'.*
 - [**CS4033**](#await-expression-requirements): *The '`await`' operator can only be used within an async method. Consider marking this method with the '`async`' modifier and changing its return type to '`Task`'.*
 - [**CS8892**](#async-method-signature-requirements): *Method will not be used as an entry point because a synchronous entry point was found.*
+- [**CS8935**](#async-method-signature-requirements): *The AsyncMethodBuilder attribute is disallowed on anonymous methods without an explicit return type.*
+- [**CS8940**](#async-method-signature-requirements): *A generic task-like return type was expected, but the type '{0}' found in 'AsyncMethodBuilder' attribute was not suitable. It must be an unbound generic type of arity one, and its containing type (if any) must be non-generic.*
 - [**CS9123**](#async-practices): *The '`&`' operator should not be used on parameters or local variables in async methods.*
 - [**CS9330**](#async-method-signature-requirements): *'`MethodImplAttribute.Async`' cannot be manually applied to methods. Mark the method 'async'.*
 
@@ -98,6 +101,8 @@ To use the `await` operator correctly, follow these rules. For more information,
 - **CS1994**: *The '`async`' modifier can only be used in methods that have a body.*
 - **CS4009**: *A void or int returning entry point cannot be async.*
 - **CS8892**: *Method will not be used as an entry point because a synchronous entry point was found.*
+- **CS8935**: *The AsyncMethodBuilder attribute is disallowed on anonymous methods without an explicit return type.*
+- **CS8940**: *A generic task-like return type was expected, but the type '{0}' found in 'AsyncMethodBuilder' attribute was not suitable. It must be an unbound generic type of arity one, and its containing type (if any) must be non-generic.*
 - **CS9330**: *'`MethodImplAttribute.Async`' cannot be manually applied to methods. Mark the method '`async`'.*
 
 To declare async methods correctly, follow these signature requirements. For more information, see [Async main return values](../../fundamentals/program-structure/main-command-line.md#async-main-return-values).
@@ -106,6 +111,8 @@ To declare async methods correctly, follow these signature requirements. For mor
 - Use the `async` modifier only on methods with a body (**CS1994**). Remove the `async` modifier on abstract methods in interfaces or classes.
 - Update to C# 7.1 or higher to use `async` on the `Main` entry point, or avoid using `async` on entry points in earlier versions (**CS4009**).
 - Remove synchronous entry points if you have both sync and async entry points (**CS8892**).
+- Don't apply the `AsyncMethodBuilder` attribute to anonymous methods (lambdas) that don't have an explicit return type (**CS8935**). The compiler needs to know the return type to resolve the builder type. Provide an explicit return type on the lambda, or remove the attribute.
+- Ensure the type specified in the `AsyncMethodBuilder` attribute is an unbound generic type of arity one when a generic task-like return type is expected (**CS8940**). The builder type must match the expected pattern (for example, `MyTaskMethodBuilder<>` rather than `MyTaskMethodBuilder<T>` or a non-generic type), and its containing type, if any, must be non-generic.
 - Use the `async` keyword instead of manually applying `MethodImplAttribute.Async` (**CS9330**).
 
 ## Async practices

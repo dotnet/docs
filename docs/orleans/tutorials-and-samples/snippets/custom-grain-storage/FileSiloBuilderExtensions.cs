@@ -28,7 +28,7 @@ public static class FileSiloBuilderExtensions
             IPostConfigureOptions<FileGrainStorageOptions>,
             DefaultStorageProviderSerializerOptionsConfigurator<FileGrainStorageOptions>>();
 
-        // Use keyed services for Orleans 10.0+
+        // <KeyedRegistrations>
         services.AddKeyedSingleton<IGrainStorage>(
             providerName,
             (sp, key) => FileGrainStorageFactory.Create(sp, key?.ToString() ?? providerName));
@@ -36,6 +36,7 @@ public static class FileSiloBuilderExtensions
         services.AddKeyedSingleton<ILifecycleParticipant<ISiloLifecycle>>(
             providerName,
             (sp, key) => (ILifecycleParticipant<ISiloLifecycle>)sp.GetRequiredKeyedService<IGrainStorage>(key));
+        // </KeyedRegistrations>
 
         return services;
     }

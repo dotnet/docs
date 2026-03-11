@@ -4,11 +4,13 @@ This folder contains the runnable snippet projects used by `docs/orleans/host/tr
 
 ## Run the sample locally
 
-1. Open a terminal in `docs/orleans/host/snippets/transport-layer-security/csharp/SiloExample`.
-2. Run `dotnet run`.
-3. Open a second terminal in `docs/orleans/host/snippets/transport-layer-security/csharp/ClientExample`.
+1. Open a terminal in `docs/orleans/host/snippets/transport-layer-security`.
+2. Run `dotnet build .\TransportLayerSecurity.sln`.
+3. Open a terminal in `docs/orleans/host/snippets/transport-layer-security/csharp/SiloExample`.
 4. Run `dotnet run`.
+5. Open a second terminal in `docs/orleans/host/snippets/transport-layer-security/csharp/ClientExample`.
+6. Run `dotnet run`.
 
-The executable entry points create temporary self-signed certificates in memory and configure Orleans for development-only certificate validation so the sample can run locally without any certificate store setup.
+The executable entry points create temporary self-signed certificates in memory and configure Orleans for development-only certificate validation so the sample can run locally without any certificate store setup. The generated certificate is loaded into user key storage so Windows TLS can use it for the server-side handshake.
 
 The inline snippets in each `Program.cs` file remain focused on the certificate store and certificate file configuration patterns described in the article.

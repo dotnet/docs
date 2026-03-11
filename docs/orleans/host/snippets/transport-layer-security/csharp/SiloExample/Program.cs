@@ -197,6 +197,7 @@ static class SampleCertificates
             DateTimeOffset.UtcNow.AddDays(30));
 
         var password = Guid.NewGuid().ToString("N");
+        // Windows server-side TLS requires a key container instead of an ephemeral key.
         return X509CertificateLoader.LoadPkcs12(
             created.Export(X509ContentType.Pfx, password),
             password,

@@ -13,11 +13,11 @@ using IHost host = Host.CreateDefaultBuilder(args)
     {
         builder
             .UseLocalhostClustering()
-            .UseTls(StoreName.My, "my-certificate-subject", allowInvalid: false, StoreLocation.CurrentUser, options =>
+            .UseTls(StoreName.My, "localhost", allowInvalid: false, StoreLocation.CurrentUser, options =>
             {
                 options.OnAuthenticateAsClient = (connection, sslOptions) =>
                 {
-                    sslOptions.TargetHost = "my-certificate-subject";
+                    sslOptions.TargetHost = "localhost";
                 };
             });
     })

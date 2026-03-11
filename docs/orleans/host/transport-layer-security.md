@@ -1,7 +1,7 @@
 ---
 title: Orleans Transport Layer Security (TLS)
 description: Learn how to configure Transport Layer Security (TLS) and mutual TLS (mTLS) in .NET Orleans to secure network communication between hosts.
-ms.date: 10/28/2025
+ms.date: 03/11/2026
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
@@ -64,7 +64,7 @@ In the preceding code:
 
 ### Advanced TLS configuration
 
-For production deployments, you might need more control over certificate validation and protocol selection. The following example demonstrates advanced TLS configuration:
+For production deployments, you might need more control over certificate selection and validation. The following example demonstrates advanced TLS configuration:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/SiloExample/Program.cs" id="AdvancedTlsConfiguration":::
 
@@ -87,8 +87,8 @@ The following example shows how to configure TLS on an Orleans client:
 In the preceding code:
 
 - The <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method configures TLS for the client.
-- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsServer%2A> callback configures server authentication options.
-- The `ClientCertificateRequired` property enables mutual TLS by requiring the client to present a certificate.
+- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient%2A> callback configures client-side TLS options, such as the `TargetHost`, client certificate selection, and server certificate validation.
+- The client participates in mutual TLS by selecting and sending a client certificate in `OnAuthenticateAsClient`, while the silo must be configured separately to require and validate client certificates.
 
 ### Development client configuration
 
@@ -115,7 +115,7 @@ Follow these best practices when configuring TLS in Orleans:
 - **Keep certificates current**: Monitor certificate expiration dates and renew certificates before they expire.
 - **Keep software updated**: Regularly update your .NET runtime and operating system to receive the latest security patches and protocol support.
 
-For more information on .NET TLS best practices, see [Transport Layer Security (TLS) best practices with .NET](../../framework/network-programming/tls.md) and [TLS/SSL best practices](../../core/extensions/sslstream-best-practices.md).
+For more information on .NET TLS best practices, see [TLS/SSL best practices](../../core/extensions/sslstream-best-practices.md).
 
 ## See also
 

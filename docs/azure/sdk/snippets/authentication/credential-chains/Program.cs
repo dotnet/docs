@@ -20,13 +20,10 @@ using AzureEventSourceListener listener = new((args, message) =>
 #endregion snippet_FilteredLogging
 
 #region snippet_Dac
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddSecretClient(
-        new Uri($"https://{keyVaultName}.vault.azure.net"));
-    clientBuilder.AddBlobServiceClient(
-        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
-});
+DefaultAzureCredential credential = new();
+BlobServiceClient client = new(
+    new Uri($"https://{storageAccountName}.blob.core.windows.net"),
+    credential);
 #endregion snippet_Dac
 
 #region snippet_DacExcludes

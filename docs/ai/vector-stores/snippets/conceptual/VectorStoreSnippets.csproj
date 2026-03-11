@@ -11,7 +11,7 @@
     <PackageReference Include="Azure.Search.Documents" Version="11.8.0-beta.1" />
     <PackageReference Include="Microsoft.Extensions.AI" Version="10.3.0" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.3.0" />
-    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="10.0.1" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureAISearch" Version="1.*-*" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.*-*" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.Qdrant" Version="1.*-*" />

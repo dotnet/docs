@@ -13,6 +13,7 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 
 ## Core .NET libraries
 
+- [Assembly.LoadFrom only accepts a file path, not a URI](core-libraries/1.0/assembly-loadfrom-path-only.md)
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [IDispatchImplAttribute API is removed](#net-8)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
@@ -31,6 +32,10 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 ***
 
 ### .NET Core 1.0
+
+[Assembly.LoadFrom only accepts a file path, not a URI](core-libraries/1.0/assembly-loadfrom-path-only.md)
+
+***
 
 [!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
 

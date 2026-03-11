@@ -1110,6 +1110,12 @@ items:
         href: 3.0.md
       - name: .NET Core 2.1
         href: 2.1.md
+      - name: .NET Core 1.0
+        items:
+          - name: Core .NET libraries
+            items:
+              - name: Assembly.LoadFrom only accepts a file path, not a URI
+                href: core-libraries/1.0/assembly-loadfrom-path-only.md
   - name: WCF Client breaking changes
     items:
     - name: "Version 8.0"

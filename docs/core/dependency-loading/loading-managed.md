@@ -30,7 +30,7 @@ The direct use of the following APIs will also trigger loads:
 | <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>|If type `name` describes an assembly qualified generic type, trigger a `Load-by-name`.|Inferred from caller.<br/>Prefer <xref:System.Type.GetType%2A?displayProperty=nameWithType> when using assembly qualified type names.|
 | <xref:System.Activator.CreateInstance(System.String,System.String)?displayProperty=nameWithType><br/><xref:System.Activator.CreateInstance(System.String,System.String,System.Object[])?displayProperty=nameWithType><br/><xref:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])?displayProperty=nameWithType>|`Load-by-name`.|Inferred from caller.<br/>Prefer <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> methods taking a <xref:System.Type> argument.|
 
-> [!NOTE]
+> [!IMPORTANT]
 > Unlike .NET Framework, the `assemblyFile` parameter of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> is treated as a file path in .NET, not a URI. In .NET Framework, you can pass a `file://` URI—such as one constructed from <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>—and the assembly loads successfully. In .NET, the `assemblyFile` value is passed to <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType>, which doesn't properly handle URIs, so the load fails. To get the file path of an already-loaded assembly, use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead of `CodeBase`.
 
 ## Algorithm

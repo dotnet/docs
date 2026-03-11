@@ -103,7 +103,7 @@ This app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Mic
     :::code language="csharp" source="snippets/build-chat-app/azure-openai/program.cs" id="GetChatClient":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 

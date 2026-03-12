@@ -1,8 +1,9 @@
 ---
 title: "Get started with the 'chat using your own data sample' for .NET"
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
-ms.date: 05/28/2025
+ms.date: 03/04/2026
 ms.topic: get-started
+ai-usage: ai-assisted
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.
 ---
 
@@ -12,13 +13,13 @@ This article shows you how to deploy and run the [Chat with your own data sample
 
 * [Demo video](https://aka.ms/azai/net/video)
 
-By following the instructions in this article, you will:
+In this article, you:
 
 - Deploy a chat app to Azure.
 - Get answers about employee benefits.
 - Change settings to change behavior of responses.
 
-Once you complete this procedure, you can start modifying the new project with your custom code.
+Once you complete this procedure, start modifying the new project with your custom code.
 
 This article is part of a collection of articles that show you how to build a chat app using Azure OpenAI service and Azure AI Search.
 
@@ -43,7 +44,7 @@ The architecture of the chat app is shown in the following diagram:
 
 ## Cost
 
-Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge, but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
+Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there's a charge, but it's minimal. When you're done with the article, delete the resources to stop incurring charges.
 
 For more information, see [Azure Samples: Cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo-csharp#cost-estimation).
 
@@ -145,7 +146,7 @@ The sample repository contains all the code and configuration files you need to 
 ### Deploy chat app to Azure
 
 > [!IMPORTANT]
-> Azure resources created in this section incur immediate costs, primarily from the Azure AI Search resource. These resources may accrue costs even if you interrupt the command before it is fully executed.
+> Azure resources created in this section incur immediate costs, primarily from the Azure AI Search resource. These resources may accrue costs even if you interrupt the command before it's fully executed.
 
 1. Run the following Azure Developer CLI command to provision the Azure resources and deploy the source code:
 
@@ -153,12 +154,12 @@ The sample repository contains all the code and configuration files you need to 
     azd up
     ```
 
-1. When you're prompted to enter an environment name, keep it short and lowercase. For example, `myenv`. Its used as part of the resource group name.
+1. When you're prompted to enter an environment name, keep it short and lowercase. For example, `myenv`. It's used as part of the resource group name.
 1. When prompted, select a subscription to create the resources in.
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. If you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
-1. Wait until app is deployed. It may take up to 20 minutes for the deployment to complete.
-1. After the application has been successfully deployed, you see a URL displayed in the terminal.
+1. Wait until the app is deployed. The deployment might take up to 20 minutes to complete.
+1. After the application deploys successfully, a URL appears in the terminal.
 1. Select that URL labeled `Deploying service web` to open the chat application in a browser.
 
     :::image type="content" source="./media/get-started-app-chat-template/browser-chat-with-your-data.png" alt-text="Screenshot of chat app in browser showing several suggestions for chat input and the chat text box to enter a question.":::
@@ -172,7 +173,7 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
 
     :::image type="content" source="./media/get-started-app-chat-template/browser-chat-initial-answer.png" lightbox="./media/get-started-app-chat-template/browser-chat-initial-answer.png" alt-text="Screenshot of chat app's first answer.":::
 
-1. From the answer, select a citation. A pop-up window will open displaying the source of the information.
+1. From the answer, select a citation. A pop-up window opens displaying the source of the information.
 
     :::image type="content" source="./media/get-started-app-chat-template/browser-chat-initial-answer-citation-highlighted.png" lightbox="./media/get-started-app-chat-template/browser-chat-initial-answer-citation-highlighted.png" alt-text="Screenshot of chat app's first answer with its citation highlighted in a red box.":::
 
@@ -259,14 +260,14 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+You don't need to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code locally.
 
 1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
 
     :::image type="content" source="./media/get-started-app-chat-template/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
 
 > [!TIP]
-> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+> Visual Studio Code stops the running development container, but the container still exists in Docker in a stopped state. You can also delete the container instance, container image, and volumes from Docker to free up more space on your local machine.
 
 ---
 

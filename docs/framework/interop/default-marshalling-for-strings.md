@@ -250,7 +250,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("User32.dll", CharSet = CharSet.Unicode)]
-    public static extern void GetWindowText(IntPtr hWnd, [Out] char[] lpString, int nMaxCount);
+    public static extern int GetWindowText(IntPtr hWnd, [Out] char[] lpString, int nMaxCount);
 }
 
 public class Window
@@ -259,8 +259,15 @@ public class Window
     public string GetText()
     {
         char[] buffer = ArrayPool<char>.Shared.Rent(256 + 1);
-        NativeMethods.GetWindowText(h, buffer, buffer.Length);
-        return new string(buffer);
+        try
+        {
+            int length = NativeMethods.GetWindowText(h, buffer, buffer.Length);
+            return new string(buffer, 0, length);
+        }
+        finally
+        {
+            ArrayPool<char>.Shared.Return(buffer);
+        }
     }
 }
 ```
@@ -271,17 +278,21 @@ Imports System.Buffers
 Imports System.Runtime.InteropServices
 
 Friend Class NativeMethods
-    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
-        (hWnd As IntPtr, <Out> lpString() As Char, nMaxCount As Integer)
+    Public Declare Auto Function GetWindowText Lib "User32.dll" _
+        (hWnd As IntPtr, <Out> lpString() As Char, nMaxCount As Integer) As Integer
 End Class
 
 Public Class Window
     Friend h As IntPtr ' Friend handle to Window.
     Public Function GetText() As String
         Dim buffer() As Char = ArrayPool(Of Char).Shared.Rent(256 + 1)
-        NativeMethods.GetWindowText(h, buffer, buffer.Length)
-        Return New String(buffer)
-   End Function
+        Try
+            Dim length As Integer = NativeMethods.GetWindowText(h, buffer, buffer.Length)
+            Return New String(buffer, 0, length)
+        Finally
+            ArrayPool(Of Char).Shared.Return(buffer)
+        End Try
+    End Function
 End Class
 ```
 

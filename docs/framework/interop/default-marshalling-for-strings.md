@@ -1,7 +1,7 @@
 ---
 title: "Default Marshalling for Strings"
 description: Review the default marshalling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
-ms.date: 03/10/2026
+ms.date: 03/11/2026
 ai-usage: ai-assisted
 dev_langs:
   - "csharp"

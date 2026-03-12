@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Implement Azure OpenAI with RAG using vector search in a .NET app
 
-This tutorial explores integration of the RAG pattern using OpenAI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections that follow, you'll set up a sample application and explore key code examples that demonstrate these concepts.
+This tutorial explores integration of the RAG pattern using OpenAI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as gpt-5. In the sections that follow, you set up a sample application and explore key code examples that demonstrate these concepts.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ This tutorial explores integration of the RAG pattern using OpenAI models and ve
 The Cosmos Recipe Guide app lets you perform vector and AI-driven searches against a set of recipe data. Search directly for available recipes or prompt the app with ingredient names to find related recipes. The app and the sections ahead guide you through the following workflow to demonstrate this type of functionality:
 
 1. Upload sample data to an Azure Cosmos DB for MongoDB database.
-1. Create embeddings and a vector index for the uploaded sample data using the Azure OpenAI `text-embedding-ada-002` model.
+1. Create embeddings and a vector index for the uploaded sample data using the Azure OpenAI `text-embedding-3-small` model.
 1. Perform vector similarity search based on the user prompts.
 1. Use the Azure OpenAI `gpt-35-turbo` completions model to compose more meaningful answers based on the search results data.
 

@@ -1,9 +1,10 @@
 ---
 title: Observers
 description: Learn about observers in .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 03/03/2026
 ms.topic: concept-article
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Observers
@@ -14,7 +15,7 @@ Client observers are a mechanism allowing asynchronous notification of clients. 
 
 You can use a utility class like <xref:Orleans.Utilities.ObserverManager%601> to simplify the development of observed grain types. Unlike grains, which Orleans automatically reactivates as needed after failure, clients aren't fault-tolerant: a client that fails might never recover. For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Active clients should resubscribe on a timer to keep their subscriptions active.
 
-To subscribe to a notification, the client must first create a local object implementing the observer interface. It then calls the <xref:Orleans.IGrainFactory.CreateObjectReference*> method on the grain factory to turn the object into a grain reference. You can then pass this reference to the subscription method on the notifying grain.
+To subscribe to a notification, the client must first create a local object implementing the observer interface. It then calls the <xref:Orleans.IGrainFactory.CreateObjectReference*> method on the grain factory to turn the object into a grain reference. You can then pass this reference to the subscription method on the notifying grain. When the observer is no longer needed, call <xref:Orleans.IGrainFactory.DeleteObjectReference*> to clean up the reference and avoid a memory leak in the client process.
 
 Other grains can also use this model to receive asynchronous notifications. Grains can implement <xref:Orleans.IGrainObserver> interfaces. Unlike the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example, `this.AsReference<IMyGrainObserverInterface>()`). There's no need for <xref:Orleans.IGrainFactory.CreateObjectReference*> because grains are already addressable.
 
@@ -111,8 +112,20 @@ await friend.Subscribe(obj);
 
 Now, whenever our grain on the server calls the `SendUpdateMessage` method, all subscribed clients receive the message. In our client code, the `Chat` instance in the variable `c` receives the message and outputs it to the console.
 
+When the observer is no longer needed, unsubscribe from the grain and delete the object reference:
+
+```csharp
+// Unsubscribe the observer when it's no longer needed.
+await friend.Unsubscribe(obj);
+
+// Delete the object reference to free resources and avoid a memory leak.
+_grainFactory.DeleteObjectReference<IChat>(obj);
+```
+
 > [!IMPORTANT]
-> Objects passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
+> The client holds observer instances passed to <xref:Orleans.IGrainFactory.CreateObjectReference*> in its internal object manager by using a <xref:System.WeakReference%601>, so the observer instance itself might be garbage collected if no other references exist, but the object reference registration stays active until you delete it.
+>
+> Always call <xref:Orleans.IGrainFactory.DeleteObjectReference*> when you no longer need an observer to remove that registration. Without it, a reference remains in the client's internal object manager, causing a memory leak that can eventually crash the client process.
 
 You should maintain a reference for each observer you don't want collected.
 

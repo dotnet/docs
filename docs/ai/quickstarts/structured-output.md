@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Request a response with structured output
 description: Learn how to create a chat app that responds with structured output, that is, output that conforms to a type that you specify.
-ms.date: 04/30/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Request a response with structured output
@@ -16,11 +17,11 @@ In this quickstart, you create a chat app that requests a response with *structu
 
 ## Configure the AI service
 
-To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
+To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-5` model.
 
 ## Create the chat app
 
-Complete the following steps to create a console app that connects to the `gpt-4o` AI model.
+Complete the following steps to create a console app that connects to the `gpt-5` AI model.
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new console app with the `dotnet new` command:
 
@@ -34,17 +35,16 @@ Complete the following steps to create a console app that connects to the `gpt-4
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and tenant ID:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
     dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
@@ -64,7 +64,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="GetChatClient":::
 
    > [!NOTE]
-   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your environment or local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+   > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your environment or local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
 1. Send a request to the model with a single product review, and then print the analyzed sentiment to the console. You declare the requested structured output type by passing it as the type argument to the <xref:Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync``1(Microsoft.Extensions.AI.IChatClient,System.String,Microsoft.Extensions.AI.ChatOptions,System.Nullable{System.Boolean},System.Threading.CancellationToken)?displayProperty=nameWithType> extension method.
 
@@ -111,7 +111,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
 ## Clean up resources
 
-If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+If you no longer need them, delete the Azure OpenAI resource and model deployment.
 
 1. In the [Azure portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.

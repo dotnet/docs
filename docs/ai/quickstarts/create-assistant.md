@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Create a minimal AI assistant using .NET
 description: Learn to create a minimal AI assistant with tooling capabilities using .NET and the Azure OpenAI SDK libraries
-ms.date: 01/25/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Create a minimal AI assistant using .NET
@@ -91,7 +92,7 @@ Complete the following steps to create a .NET console app and add the package ne
 1. Add the [Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI) package to your app:
 
     ```dotnetcli
-    dotnet add package Azure.AI.OpenAI --prerelease
+    dotnet add package Azure.AI.OpenAI
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.

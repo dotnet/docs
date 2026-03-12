@@ -1,12 +1,9 @@
 ---
-title: "Manage OpenAI content filtering in a .NET app"
-description: "Learn how to manage OpenAI content filtering programmatically in a .NET app using the OpenAI client library."
+title: "Manage Azure OpenAI content filtering in a .NET app"
+description: "Learn how to manage Azure OpenAI content filtering programmatically in a .NET app using the Azure OpenAI client library."
 ms.topic: how-to
 ms.date: 03/04/2026
 ai-usage: ai-assisted
-
-#customer intent: As a .NET developer, I want to manage OpenAI Content Filtering in a .NET app
-
 ---
 
 # Work with Azure OpenAI content filtering in a .NET app

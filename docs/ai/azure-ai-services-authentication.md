@@ -3,13 +3,13 @@ title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET.
 author: alexwolfmsft
 ms.topic: concept-article
-ms.date: 03/04/2026
+ms.date: 03/06/2026
 ai-usage: ai-assisted
 ---
 
-# Foundry Tools authentication and authorization using .NET
+# Foundry tools authentication and authorization using .NET
 
-Foundry Tools require authentication for all application requests. This article covers the options available to authenticate to Azure OpenAI and other Foundry Tools using .NET. Most Foundry Tools offer two primary ways to authenticate apps and users:
+Application requests to Microsoft Foundry tools must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other Foundry tools using .NET. Most Foundry tools offer two primary ways to authenticate apps and users:
 
 - **Key-based authentication** provides access to an Azure service using secret key values. These secret values are sometimes known as API keys or access keys depending on the service.
 - **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
@@ -21,11 +21,11 @@ The sections ahead provide conceptual overviews for these two approaches, rather
 - [What is Azure RBAC?](/azure/role-based-access-control/overview)
 
 > [!NOTE]
-> The examples in this article focus primarily on connections to Azure OpenAI, but the same concepts and implementation steps directly apply to many other Foundry Tools as well.
+> The examples in this article focus primarily on connections to Azure OpenAI, but the same concepts and implementation steps directly apply to many other Foundry tools as well.
 
 ## Authentication using keys
 
-Access keys allow apps and tools to authenticate to a Foundry Tool, such as Azure OpenAI, using a secret key provided by the service. Retrieve the secret key using tools such as the Azure portal or Azure CLI and use it to configure your app code to connect to the Foundry Tool:
+Access keys allow apps and tools to authenticate to a Foundry tool, such as Azure OpenAI, using a secret key provided by the service. Retrieve the secret key using tools such as the Azure portal or Azure CLI and use it to configure your app code to connect to the Foundry tool:
 
 ```csharp
 builder.Services.AddAzureOpenAIChatCompletion(
@@ -46,7 +46,7 @@ Instead, consider using [Microsoft Entra ID](#authentication-using-microsoft-ent
 
 ## Authentication using Microsoft Entra ID
 
-Microsoft Entra ID is a cloud-based identity and access management service that provides a vast set of features for different business and app scenarios. Microsoft Entra ID is the recommended solution to connect to Azure OpenAI and other Foundry Tools and provides the following benefits:
+Microsoft Entra ID is a cloud-based identity and access management service that provides a vast set of features for different business and app scenarios. Microsoft Entra ID is the recommended solution to connect to Azure OpenAI and other Foundry tools and provides the following benefits:
 
 - Keyless authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
 - Role-based access control (RBAC) to assign identities the minimum required permissions.
@@ -57,21 +57,21 @@ The workflow to implement Microsoft Entra authentication in your app generally i
 
 - Local development:
 
-    1. Sign in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
-    1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
-    1. Assign Azure roles to the account you signed in with to enable access to the Foundry Tool.
+   1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
+   1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
+   1. Assign Azure roles to the account you signed-in with to enable access to the Foundry tool.
 
 - Azure-hosted app:
 
-    1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
-    1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
-    1. Assign Azure roles to the managed identity to enable access to the Foundry Tool.
+   1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
+   1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
+   1. Assign Azure roles to the managed identity to enable access to the Foundry tool.
 
 The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
-When developing apps locally that connect to Foundry Tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](#configure-the-app-code) section.
+When developing apps locally that connect to Foundry tools, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](#configure-the-app-code) section.
 
 For example, to authenticate to Azure locally using the Azure CLI, run the following command:
 
@@ -95,11 +95,11 @@ AzureOpenAIClient azureClient =
     );
 ```
 
-`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the Foundry Tool. When you deploy the app to Azure, `DefaultAzureCredential` uses the managed identity assigned to your app.
+`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the Foundry tool. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned to your app.
 
 ### Assign roles to your identity
 
-[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control) is a system that provides fine-grained access management of Azure resources. Assign a role to the security principal used by `DefaultAzureCredential` to connect to a Foundry Tool, whether that's an individual user, group, service principal, or managed identity. Azure roles are a collection of permissions that allow the identity to perform various tasks, such as generate completions or create and delete resources.
+[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control) is a system that provides fine-grained access management of Azure resources. Assign a role to the security principal used by `DefaultAzureCredential` to connect to a Foundry tool, whether that's an individual user, group, service principal, or managed identity. Azure roles are a collection of permissions that allow the identity to perform various tasks, such as generate completions or create and delete resources.
 
 Assign roles such as **Cognitive Services OpenAI User** (role ID: `5e0bd9bd-7b93-4f28-af87-19fc36ad61bd`) to the relevant identity using tools such as the Azure CLI, Bicep, or the Azure portal. For example, use the `az role assignment create` command to assign a role using the Azure CLI:
 

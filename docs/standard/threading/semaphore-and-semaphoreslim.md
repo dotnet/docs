@@ -38,10 +38,10 @@ Create a <xref:System.Threading.Semaphore> object that represents a named system
 
 > [!NOTE]
 > Because named semaphores are system wide, it's possible to have multiple <xref:System.Threading.Semaphore> objects that represent the same named semaphore. Each time you call a constructor or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method, a new <xref:System.Threading.Semaphore> object is created. Specifying the same name repeatedly creates multiple objects that represent the same named semaphore.
-
-Be careful when you use named semaphores. Because they're system wide, another process that uses the same name can enter your semaphore unexpectedly. Malicious code executing on the same computer could use this as the basis of a denial-of-service attack.
-
-Use access control security to protect a <xref:System.Threading.Semaphore> object that represents a named semaphore, preferably by using a constructor that specifies a <xref:System.Security.AccessControl.SemaphoreSecurity?displayProperty=nameWithType> object. You can also apply access control security using the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method, but this leaves a window of vulnerability between the time the semaphore is created and the time it's protected. Protecting semaphores with access control security helps prevent malicious attacks, but doesn't solve the problem of unintentional name collisions.
+>
+> Be careful when you use named semaphores. Because they're system wide, another process that uses the same name can enter your semaphore unexpectedly. Malicious code executing on the same computer could use this as the basis of a denial-of-service attack.
+>
+> Use access control security to protect a <xref:System.Threading.Semaphore> object that represents a named semaphore, preferably by using a constructor that specifies a <xref:System.Security.AccessControl.SemaphoreSecurity?displayProperty=nameWithType> object. You can also apply access control security using the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method, but this leaves a window of vulnerability between the time the semaphore is created and the time it's protected. Protecting semaphores with access control security helps prevent malicious attacks, but doesn't solve the problem of unintentional name collisions.
 
 ## See also
 

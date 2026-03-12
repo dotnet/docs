@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Create a minimal MCP client using .NET
 description: Learn to create a minimal MCP client and connect it to an MCP server using .NET
-ms.date: 05/27/2025
+ms.date: 03/12/2026
 ms.topic: quickstart
 author: alexwolfmsft
 ---

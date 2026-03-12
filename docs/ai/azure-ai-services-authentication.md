@@ -3,7 +3,7 @@ title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET
 author: alexwolfmsft
 ms.topic: concept-article
-ms.date: 04/09/2025
+ms.date: 03/12/2026
 ---
 
 # Azure AI services authentication and authorization using .NET

@@ -2,7 +2,7 @@
 title: Authenticate .NET apps to Azure services during local development using service principals
 description: Learn how to authenticate your app to Azure services during local development using dedicated application service principals.
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 03/12/2026
 ms.custom:
   - devx-track-dotnet
   - engagement-fy23

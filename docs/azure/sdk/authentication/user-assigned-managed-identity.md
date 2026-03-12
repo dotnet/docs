@@ -3,7 +3,7 @@ title: Authenticate Azure-hosted .NET apps to Azure resources using a user-assig
 description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned managed identity.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 02/06/2025
+ms.date: 03/12/2026
 ---
 
 # Authenticate Azure-hosted .NET apps to Azure resources using a user-assigned managed identity

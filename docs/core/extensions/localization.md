@@ -115,7 +115,7 @@ This would cause the localization services to look in the *Resources* directory 
 
 When `ResourcesPath` is configured, `IStringLocalizerFactory.Create(Type)` resolves the resource file path by computing the type's relative name (relative to the root namespace) and prepending the `ResourcesPath`. This means the placement of your shared resource class relative to the project root namespace matters.
 
-For example, consider a shared resource class used to consolidate strings across multiple components. If `ResourcesPath = "Resources"` is set and your shared resource class `SharedResource` lives *inside* the `Resources` folder with namespace `MyApp.Resources.SharedResource`, the factory resolves the base name as `Resources.SharedResource` (relative to the root namespace `MyApp`) and then prepends `ResourcesPath`, resulting in a path equivalent to `Resources/Resources/SharedResource.resx`—which doesn't match the actual file location.
+For example, consider a shared resource class used to consolidate strings across multiple components. If `ResourcesPath = "Resources"` is set and your shared resource class `SharedResource` lives *inside* the `Resources` folder in the namespace `MyApp.Resources` (fully qualified type name `MyApp.Resources.SharedResource`), the factory resolves the base name as `Resources.SharedResource` (relative to the root namespace `MyApp`) and then prepends `ResourcesPath`, resulting in a path equivalent to `Resources/Resources/SharedResource.resx`—which doesn't match the actual file location.
 
 You have two options to avoid this:
 
@@ -124,8 +124,8 @@ You have two options to avoid this:
 - **Use `factory.Create(string baseName, string location)`.** Provide the base name and assembly name explicitly, which gives direct control over resource file resolution:
 
   ```csharp
-  var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
-  IStringLocalizer localizer = factory.Create("SharedResource", assemblyName.Name);
+  var assemblyName = typeof(SharedResource).Assembly.GetName().Name;
+  IStringLocalizer localizer = factory.Create("SharedResource", assemblyName);
   ```
 
   This approach works regardless of where `SharedResource.cs` is located in the project.

@@ -33,14 +33,14 @@ This article details the settings you can use to configure threading in .NET.
 
 ## Set the stack size for threads created by the .NET runtime
 
-- The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
-- This setting allows overriding the default for threads created by .NET runtime. For example, threads created by the <xref:System.Threading.Thread.%23ctor*> API.
-- The specified size should be between 64 kB and 2 GB.
+- The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when the .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
+- This setting allows overriding the default for threads created by the .NET runtime. For example, threads created by the <xref:System.Threading.Thread.%23ctor*> API.
+- The specified size should be between 64 KB and 2 GB.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the size of stack | .NET 10 |
-| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the size of stack | .NET 10 |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
 
 ## Minimum threads
 

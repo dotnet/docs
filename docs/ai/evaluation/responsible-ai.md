@@ -1,7 +1,7 @@
 ---
 title: Responsible AI with .NET
 description: Learn what responsible AI is and how you can use .NET to evaluate the safety of your AI apps.
-ms.date: 09/08/2025
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 ---
 

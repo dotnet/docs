@@ -1,8 +1,9 @@
 ---
 title: Tutorial - Evaluate response safety with caching and reporting
 description: Create an MSTest app that evaluates the content safety of a model's response using the evaluators in the Microsoft.Extensions.AI.Evaluation.Safety package and with caching and reporting.
-ms.date: 05/12/2025
+ms.date: 03/03/2026
 ms.topic: tutorial
+ai-usage: ai-assisted
 ---
 
 # Tutorial: Evaluate response safety with caching and reporting
@@ -46,7 +47,7 @@ Complete the following steps to create an MSTest project.
    dotnet add package Microsoft.Extensions.AI.Evaluation
    dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
    dotnet add package Microsoft.Extensions.AI.Evaluation.Safety --prerelease
-   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+   dotnet add package Microsoft.Extensions.AI.OpenAI
    dotnet add package Microsoft.Extensions.Configuration
    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
    ```

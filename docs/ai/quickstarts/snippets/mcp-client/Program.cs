@@ -21,8 +21,7 @@ var transport = new StdioClientTransport(new()
     Arguments = ["--project", "<path-to-your-mcp-server-project>"],
     Name = "Minimal MCP Server",
 });
-ITransport connectedTransport = await transport.ConnectAsync();
-McpClient mcpClient = (McpClient)connectedTransport;
+McpClient mcpClient = await McpClient.CreateAsync(transport);
 
 // List all available tools from the MCP server.
 Console.WriteLine("Available tools:");

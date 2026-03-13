@@ -65,7 +65,7 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ### [Azure PowerShell](#tab/sign-in-azure-powershell)
 
-[!INCLUDE [sign-in-azure-powershell](~/azure-dev-docs-pr/articles/includes/authentication/sign-in-azure-powershell.md)]
+[!INCLUDE [sign-in-azure-PowerShell](~/azure-dev-docs-pr/articles/includes/authentication/sign-in-azure-powershell.md)]
 
 ---
 

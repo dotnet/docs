@@ -45,7 +45,7 @@ The following table defines the event levels, identifiers, and messages associat
 |[226 - IdleServicesClosed](226-idleservicesclosed.md)|LogAlways|%1 idle services out of total %2 activated services closed.|HealthMonitoring WebHost|  
 |[301 - UserDefinedErrorOccurred](301-userdefinederroroccurred.md)|Error|Name: '%1', Reference: '%2', Payload:  %3.|UserEvents, HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
 |[302 - UserDefinedWarningOccurred](302-userdefinedwarningoccurred.md)|Warning|Name: '%1', Reference: '%2', Payload: %3.|UserEvents, HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
-|[303 - UserDefinedInformationEventOccured](303-userdefinedinformationeventoccured.md)|Information|Name: '%1', Reference: '%2', Payload: %3.|UserEvents, HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
+|[303 - UserDefinedInformationEventOccurred](303-userdefinedinformationeventoccured.md)|Information|Name: '%1', Reference: '%2', Payload: %3.|UserEvents, HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
 |[401- StopSignPostEvent](401-stopsignpostevent.md)|Information|Activity boundary.|Troubleshooting|  
 |[402 - StartSignpostEvent](402-startsignpostevent.md)|Information|Activity boundary.|Troubleshooting|  
 |[403 - SuspendSignpostEvent](403-suspendsignpostevent.md)|Information|Activity boundary.|Troubleshooting|  

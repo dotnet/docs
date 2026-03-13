@@ -1,12 +1,17 @@
 ---
 title: "Program organization"
 description: Learn how to organize C# programs using solutions, projects, assemblies, namespaces, and types to build maintainable, well-structured applications.
-ms.date: 03/04/2026
+ms.date: 03/13/2026
 ai-usage: ai-assisted
 ---
 # Program organization
 
-As a C# application grows, you need a clear strategy for organizing code. .NET provides a hierarchy of organizational tools—solutions, projects, assemblies, namespaces, and types—that work together to keep large codebases manageable.
+> [!TIP]
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll learn about program organization naturally as your projects grow.
+>
+> **Experienced in another language?** If you're familiar with solutions and projects in Visual Studio, or build systems like Maven or Cargo, this article maps those concepts to .NET.
+
+As a C# application grows, you need to organize the code. .NET provides a hierarchy of organizational tools—solutions, projects, assemblies, namespaces, and types—that work together to keep large codebases manageable. The conventions described here represent broad consensus in the .NET community. You might deviate for specific reasons, but following these conventions makes your code familiar and navigable to other .NET developers.
 
 ## The organizational hierarchy
 
@@ -24,11 +29,13 @@ Each level serves a different purpose. Solutions organize your development workf
 
 ## Projects and assemblies
 
-Each project compiles into a single assembly: a class library or (executable). Split your code into multiple projects when you want to:
+Each project compiles into a single assembly: a class library or executable. Start with a single project for small applications—don't split prematurely. Add projects when you have a concrete reason:
 
 - **Separate concerns** — keep your data access, business logic, and presentation layers independent.
 - **Share code** — create a class library that multiple applications reference.
 - **Control dependencies** — a project can only use types from projects it explicitly references.
+
+A single project works well for many applications. Resist the urge to create separate projects "just in case." You can always refactor later when the need is clear.
 
 The following project structure demonstrates a common pattern:
 
@@ -42,21 +49,21 @@ dotnet new console -n MyApp.Console
 dotnet add MyApp.Console reference MyApp.Core
 ```
 
-## Namespaces mirror folder structure
+## Match namespaces to folder structure
 
-By convention, namespace names follow the folder structure of your project. This convention makes it easy to find types. When you see `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder:
+Namespace names should follow the folder structure of your project. When you see `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder. This convention is so widely followed that violating it actively confuses other developers:
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 
-The .NET SDK supports this convention. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file. However, following the convention makes it easier to find source files.
+The .NET SDK supports this convention. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file—but always keep them in sync.
 
-## Choosing how to split namespaces
+## Organize namespaces by feature, not by type kind
 
-Group related types into namespaces by feature or responsibility, not by type kind. For example, prefer this organization:
+Group related types into namespaces by feature or responsibility. Place an interface, its implementations, and supporting types together:
 
 :::code language="csharp" source="snippets/organizing-programs/Payments.cs" id="FeatureOrganization":::
 
-Avoid grouping by type kind, such as putting all interfaces in a `MyApp.Interfaces` namespace. Feature-based organization keeps related types together, so it's easier to navigate and understand the code.
+Feature-based organization keeps everything you need in one place, making the code easier to navigate and reason about.
 
 ## Access modifiers and assemblies
 
@@ -66,17 +73,17 @@ Access modifiers work with the project and assembly structure to control accessi
 - [`internal`](../../language-reference/keywords/internal.md) — accessible only within the same assembly (the default for top-level types).
 - [`private`](../../language-reference/keywords/private.md), [`protected`](../../language-reference/keywords/protected.md), [`private protected`](../../language-reference/keywords/private-protected.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) — accessible based on the containing type, the assembly, or derived types.
 
-Use `internal` to hide implementation details that other projects shouldn't depend on. This modifier is especially useful for shared libraries:
+Default to `internal` for types that other projects don't need. This practice hides implementation details and gives you freedom to refactor without breaking consumers. It's especially important for shared libraries:
 
 :::code language="csharp" source="snippets/organizing-programs/Inventory.cs" id="AccessModifiers":::
 
-## Practical tips
+## Recommended practices
 
-- **Start simple.** A single project works well for small applications. Split into multiple projects only when you have a clear reason.
-- **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern. For example, use `Contoso.Inventory.Shipping`.
-- **Keep projects focused.** Each project should have a clear responsibility. If a project does too many unrelated things, consider splitting it.
-- **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax reduces nesting and is the recommended style for new code.
-- **Leverage `global using` directives.** Place common imports in a `GlobalUsings.cs` file to reduce repetition across files. For more information, see [Namespaces and using directives](namespaces.md).
+- **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern. For example, use `Contoso.Inventory.Shipping`. Consistent naming helps developers find types without searching.
+- **Keep projects focused.** Each project should have a single, clear responsibility. When a project handles too many unrelated concerns, split it.
+- **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax reduces indentation and is the recommended style. Use it in all new code.
+- **Use `global using` directives.** Place common imports in a `GlobalUsings.cs` file to eliminate repetitive `using` lines across files. For more information, see [Namespaces and using directives](namespaces.md).
+- **Default to `internal`.** Only mark types `public` when other assemblies genuinely need them. You can always widen access later; narrowing it is a breaking change.
 
 ## See also
 

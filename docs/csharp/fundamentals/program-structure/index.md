@@ -1,10 +1,8 @@
 ---
 title: "General structure of a C# program"
 description: Learn how C# programs are structured, including the choice between file-based and project-based apps, top-level statements and Main method entry points, and the building blocks that make up every program.
-ms.date: 03/11/2026
+ms.date: 03/13/2026
 ai-usage: ai-assisted
-helpviewer_keywords:
-  - "C# language, program structure"
 ---
 # General structure of a C# program
 

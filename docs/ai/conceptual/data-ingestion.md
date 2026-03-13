@@ -88,7 +88,7 @@ The library provides several chunking strategies to fit different use cases:
 These chunking strategies build on the Microsoft.ML.Tokenizers library to intelligently split text into appropriately sized pieces that work well with large language models. The right chunking strategy depends on your document types and how you plan to retrieve information.
 
 ```csharp
-Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4");
+Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-5");
 IngestionChunkerOptions options = new(tokenizer)
 {
     MaxTokensPerChunk = 2000,

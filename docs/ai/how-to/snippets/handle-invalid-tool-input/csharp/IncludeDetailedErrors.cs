@@ -11,7 +11,7 @@ class IncludeDetailedErrors
         string? key = config["OpenAIKey"];
 
         IChatClient client = new ChatClientBuilder(
-            new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
+            new OpenAIClient(key).GetChatClient(model ?? "gpt-5").AsIChatClient())
             .UseFunctionInvocation()
             .Build();
 

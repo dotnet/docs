@@ -1,6 +1,6 @@
 ---
-title: GitHub Copilot app modernization for .NET (Preview) sample
-description: Learn about the sample project for GitHub Copilot app modernization for .NET
+title: GitHub Copilot modernization for .NET (Preview) sample
+description: Learn about the sample project for GitHub Copilot modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 7/15/2025
@@ -8,7 +8,7 @@ ms.date: 7/15/2025
 
 # Contoso University migration sample
 
-The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot app modernization for .NET (Preview). For more information and step-by-step instructions, see the [quickstart guide](quickstart.md).
+The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot modernization for .NET (Preview). For more information and step-by-step instructions, see the [quickstart guide](quickstart.md).
 
 ## Scenario overview
 
@@ -26,7 +26,7 @@ The legacy system relies on Windows-based components:
 
 ## Modernization with Azure
 
-Using App Modernization for .NET (Preview), you can update the sample to use modern, cloud-native Azure services:
+Using Modernization for .NET (Preview), you can update the sample to use modern, cloud-native Azure services:
 
 - **Azure SQL Database** replaces SQL Server LocalDB
 - **Azure Blob Storage** replaces local file system access
@@ -37,4 +37,4 @@ This migration illustrates how to transform a legacy, on-premises application in
 
 ## Learn more
 
-- [Quickstart: Assess and migrate a .NET project using GitHub Copilot app modernization for .NET (Preview)](quickstart.md)
+- [Quickstart: Assess and migrate a .NET project using GitHub Copilot modernization for .NET (Preview)](quickstart.md)

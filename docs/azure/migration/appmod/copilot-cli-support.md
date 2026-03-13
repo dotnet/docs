@@ -1,23 +1,23 @@
 ---
-title: Migrate .NET apps to Azure using GitHub Copilot app modernization in Copilot CLI
-description: Overview of migrating .NET applications to Azure using GitHub Copilot app modernization in Copilot CLI.
+title: Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
+description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization in Copilot CLI.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 11/11/2025
 ms.reviewer: jessiehuang
 ---
 
-# Migrate .NET apps to Azure using GitHub Copilot app modernization in Copilot CLI
+# Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
 
 ## Overview
 
-Learn how to migrate .NET applications to Azure with **GitHub Copilot app modernization** in the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
+Learn how to migrate .NET applications to Azure with **GitHub Copilot modernization** in the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
 
 >[!NOTE]
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 > If you receive Copilot through an organization, an admin must enable the Copilot CLI policy in the organization settings.
 
-## Why use Copilot CLI with app modernization
+## Why use Copilot CLI with modernization
 
 - Run modernization tasks from the terminal - no need to switch to an IDE.
 - Use interactive (human-in-the-loop) and batch workflows.
@@ -37,7 +37,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     copilot
     ```
 
-    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of app modernization entrance in Copilot CLI.":::
+    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of modernization entrance in Copilot CLI.":::
 
     Copilot asks you to confirm that you trust the files in this folder. For details, see [Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#trusted-directories).
 

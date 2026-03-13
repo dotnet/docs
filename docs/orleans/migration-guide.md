@@ -541,8 +541,23 @@ builder.Services.AddOpenTelemetry()
             .AddService(serviceName: "ExampleService", serviceVersion: "1.0"));
 
         tracing.AddAspNetCoreInstrumentation();
-        tracing.AddSource("Microsoft.Orleans.Runtime");
-        tracing.AddSource("Microsoft.Orleans.Application");
+
+        // Good baseline for general Orleans observability
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.ApplicationGrainActivitySourceName);
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.LifecycleActivitySourceName);
+
+        /*
+        // Other source also available
+        // Persistence spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.StorageActivitySourceName);
+        // Internal Runtime spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.RuntimeActivitySourceName);
+        */
+
+        /*
+        // Optionally add all Microsoft.Orleans.* Sources at once
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.AllActivitySourceName);
+        */
 
         tracing.AddZipkinExporter(options =>
         {
@@ -553,8 +568,8 @@ builder.Services.AddOpenTelemetry()
 
 In the preceding code, OpenTelemetry is configured to monitor:
 
-- `Microsoft.Orleans.Runtime`
 - `Microsoft.Orleans.Application`
+- `Microsoft.Orleans.Lifecycle`
 
 To propagate activity, call <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation%2A>:
 

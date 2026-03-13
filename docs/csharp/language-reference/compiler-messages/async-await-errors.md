@@ -100,7 +100,7 @@ To use the `await` operator correctly, follow these rules. For more information,
 - **CS8892**: *Method will not be used as an entry point because a synchronous entry point was found.*
 - **CS9330**: *'`MethodImplAttribute.Async`' cannot be manually applied to methods. Mark the method '`async`'.*
 
-To declare async methods correctly, follow these signature requirements. For more information, see [Async main return values](../../fundamentals/program-structure/main-command-line.md#async-main-return-values).
+To declare async methods correctly, follow these signature requirements. For more information, see [Async main return values](../../fundamentals/program-structure/main-command-line.md#main-return-values).
 
 - Return one of the valid types: `void`, <xref:System.Threading.Tasks.Task>, `Task<T>`, a task-like type, <xref:System.Collections.Generic.IAsyncEnumerable%601>, or <xref:System.Collections.Generic.IAsyncEnumerator%601> (**CS1983**).
 - Use the `async` modifier only on methods with a body (**CS1994**). Remove the `async` modifier on abstract methods in interfaces or classes.

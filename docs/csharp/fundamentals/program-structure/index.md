@@ -1,73 +1,124 @@
 ---
-title: "General Structure of a Program"
-description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
-ms.date: 06/20/2025
-helpviewer_keywords: 
-  - "C# language, program structure"
+title: "General structure of a C# program"
+description: Learn how C# programs are structured, including the choice between file-based and project-based apps, top-level statements and Main method entry points, and the building blocks that make up every program.
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 ---
-# General Structure of a C# Program
+# General structure of a C# program
 
-C# programs consist of one or more files. Each file contains zero or more namespaces. A namespace contains types such as classes, structs, interfaces, enumerations, and delegates, or other namespaces. The following example is the skeleton of a C# program that contains all of these elements.
+> [!TIP]
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. They walk you through writing your first C# programs before you learn about program structure.
+>
+> **Experienced in another language?** You might want to skim the [Get started](../../tour-of-csharp/tutorials/index.md) section for C#-specific syntax, then come back here.
 
-:::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
+You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time. The way you structure the entry point depends on which application style you choose.
 
-The preceding example uses [*top-level statements*](top-level-statements.md) for the program's entry point. Only one file can have top-level statements. The program's entry point is the first text line of program text in that file. In this case, it's the `Console.WriteLine("Hello world!");`.
-You can also create a static method named [`Main`](main-command-line.md) as the program's entry point, as shown in the following example:
+## Choosing your application style
 
-:::code language="csharp" source="snippets/structure/Program.cs":::
+When you create a C# program, make two independent choices about how to structure it:
 
-In that case the program starts in the opening brace of `Main` method, which is `Console.WriteLine("Hello world!");`
+- **File-based or project-based?**
+  - A file-based app runs from a single `.cs` file with no project file.
+  - A project-based app uses a `.csproj` file and can span multiple source files.
+- **Top-level statements or `Main` method?**
+  - Top-level statements let you write executable code directly at the top of a file.
+  - A `Main` method wraps the entry point in an explicit static method.
 
-## Building and running C# programs
+Both project-based apps and file-based apps support either entry-point style.
 
-C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command-line switches. The `dotnet` command line interface (CLI), which is included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to generate and modify C# files.  
+### File-based apps vs. project-based apps
 
-Beginning with C# 14 and .NET 10, you can create *file-based apps*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following snippet is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
+Starting with C# 14 and .NET 10, *file-based apps* let you run a program contained in a single `*.cs` file without a project file. Store the following code in a file named `hello-world.cs` and run it with `dotnet run hello-world.cs` or `dotnet hello-world.cs`:
 
 :::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
 
-The first line of the program contains the `#!` sequence for Unix shells. The location of the `dotnet` CLI can vary on different distributions. On any Unix system, if you set the *execute* (`+x`) permission on a C# file, you can run the C# file from the command line:
+> [!NOTE]
+> The `#!` line enables Unix shells to run the file directly. On any Unix system, set the *execute* (`+x`) permission and run the file from the command line:
 
-```bash
-./hello-world.cs
+File-based apps support all C# syntax and can use [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) to configure the build system. Use file-based apps for small command-line utilities, prototypes, and experiments. A file-based app consists of a single file in a directory:
+
+```
+my-app/
+└── hello-world.cs
 ```
 
-The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file-based apps for small command-line utilities, prototypes, or other experiments. file-based apps allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) that configure the build system.
+*Project-based apps* use a `.csproj` file and the [.NET CLI commands](../../../core/tools/index.md) `dotnet new`, `dotnet build`, and `dotnet run` workflow. Choose project-based apps when your program spans multiple files or needs fine-grained build configuration. A project-based app includes a project file alongside one or more source files:
+
+```
+my-app/
+├── my-app.csproj
+├── Program.cs
+├── Models/
+│   └── Person.cs
+└── Services/
+    └── GreetingService.cs
+```
+
+If your file-based app grows, you can easily convert it to a project-based app. Run [`dotnet project convert`](../../../core/tools/dotnet-project-convert.md) to generate a project file from your existing source file.
+
+If you know your app needs multiple source files from the start, begin with a project-based app. You avoid the conversion step and can organize your code into separate files right away.
+
+### Top-level statements vs. `Main` method
+
+By using [top-level statements](top-level-statements.md), you can write executable code directly in one file without wrapping it in a class and `Main` method. This style is the default when you create a new console app with `dotnet new console`. The following example shows a modern C# program that uses [top-level statements](top-level-statements.md):
+
+:::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
+
+Only one file in a project can have top-level statements, and the entry point is the first line of program text in that file. As you build larger programs, you include more program elements.
+
+You can also define an explicit static [`Main`](main-command-line.md) method as the program's entry point:
+
+:::code language="csharp" source="snippets/structure/Program.cs":::
+
+Both entry-point styles work with file-based and project-based apps. Both styles support the same features.
+
+## Building and running C# programs
+
+C# is a *compiled* language. For project-based apps, use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile source files into a binary package. Use [`dotnet run`](../../../core/tools/dotnet-run.md) to build and run in one step. The `dotnet` CLI, included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to create, build, and manage C# projects.
+
+For file-based apps, `dotnet run hello-world.cs` compiles and runs the single file directly - no project file required.
 
 ## Expressions and statements
 
-C# programs are built using *expressions* and *statements*. Expressions produce a value, and statements perform an action:
+If you followed the [Get started](../../tour-of-csharp/overview.md) tutorials, you already wrote expressions and statements. Every line of code you typed was one or the other (or both). Now let's define those terms.
 
-An *expression* is a combination of values, variables, operators, and method calls that evaluate to a single value. Expressions produce a result and can be used wherever a value is expected. The following examples are expressions:
+Expressions and statements are the fundamental building blocks of a C# program. An *expression* produces a value. A *statement* performs an action and typically ends in a semicolon.
+
+The following are expressions:
 
 - `42` (literal value)
 - `x + y` (arithmetic operation)
-- `Math.Max(a, b)` (method call)
+- `Math.Max(a, b)` (method call that produces a value)
 - `condition ? trueValue : falseValue` (conditional expression)
 - `new Person("John")` (object creation)
 
-A *statement* is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations. The following examples are statements:
+A *statement* performs an action. Statements control program flow, declare variables, or invoke operations. The following are statements:
 
-- `int x = 42;` (declaration statement)
-- `Console.WriteLine("Hello");` (expression statement - wraps a method call expression)
+- `int x;` (declaration statement)
+- `int x = 42;` (declaration statement with initialization)
+- `Console.WriteLine("Hello");` (method call statement)
 - `if (condition) { /* code */ }` (conditional statement)
 - `return result;` (return statement)
 
-The key distinction: expressions evaluate to values, while statements perform actions. Some constructs, like method calls, can be both. For example, `Math.Max(a, b)` is an expression when used in `int result = Math.Max(a, b);`, but becomes an expression statement when written alone as `Math.Max(a, b);`.
+Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `f` to the result of an addition expression. That addition expression adds the results of two method call expressions:
 
-For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members and other expression features, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+```csharp
+var f = Math.Max(a, b) + Math.Max(c, d);
+```
 
-## Related Sections
+For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
-You learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
+## Related sections
 
-- [Classes](../types/classes.md)  
-- [Structs](../../language-reference/builtin-types/struct.md)  
-- [Namespaces](../types/namespaces.md)  
-- [Interfaces](../types/interfaces.md)  
+Learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
+
+- [Classes](../types/classes.md)
+- [Structs](../../language-reference/builtin-types/struct.md)
+- [Namespaces](namespaces.md)
+- [Interfaces](../types/interfaces.md)
 - [Enums](../../language-reference/builtin-types/enum.md)
 - [Delegates](../../delegates-overview.md)
-  
-## C# Language Specification  
+
+## C# language specification
 
 For more information, see [Basic concepts](~/_csharpstandard/standard/basic-concepts.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.

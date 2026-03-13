@@ -13,7 +13,7 @@ This article explains how to create a custom test framework for Microsoft.Testin
 
 For the full extension point summary and in-process/out-of-process concepts, see [Create custom extensions](./microsoft-testing-platform-architecture.md).
 
-If you're migrating an existing VSTest-based test framework to Microsoft.Testing.Platform, use the [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md) extension to simplify the transition.
+If you're migrating an existing VSTest-based test framework, implementing the `ITestFramework` interface natively is the recommended approach. The [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md) extension is available as a transitional step, but a native implementation provides the best experience.
 
 ## Test framework extension
 
@@ -103,33 +103,19 @@ The `ITestFramework` interface inherits from the `IExtension` interface, which i
 
 #### The `CreateTestSessionAsync` method
 
-The `CreateTestSessionAsync` method is called at the start of the test session and is used to initialize the test framework. The API accepts a `CloseTestSessionContext` object and returns a `CloseTestSessionResult`.
+The `CreateTestSessionAsync` method is called at the start of the test session and is used to initialize the test framework. The API accepts a `CreateTestSessionContext` object and returns a `CreateTestSessionResult`.
 
 ```csharp
 public sealed class CreateTestSessionContext : TestSessionContext
 {
-    public SessionUid SessionUid { get; }
-    public ClientInfo Client { get; }
     public CancellationToken CancellationToken { get; }
-}
-
-public readonly struct SessionUid
-{
-    public string Value { get; }
-}
-
-public sealed class ClientInfo
-{
-    public string Id { get; }
-    public string Version { get; }
 }
 ```
 
-The `SessionUid` serves as the unique identifier for the current test session, providing a logical connection to the session's results.
-The `ClientInfo` provides details about the entity invoking the test framework. This information can be utilized by the test framework to modify its behavior. For example, as of the time this document was written, a console execution would report a client name such as "testingplatform-console".
+The `SessionUid` property is inherited from `TestSessionContext` (see the [TestSessionContext section](#testsessioncontext)).
 The `CancellationToken` is used to halt the execution of `CreateTestSessionAsync`.
 
-The return object is a `CloseTestSessionResult`:
+The return object is a `CreateTestSessionResult`:
 
 ```csharp
 public sealed class CreateTestSessionResult
@@ -204,32 +190,22 @@ The `TestSessionContext` is a shared property across all requests, providing inf
 public class TestSessionContext
 {
     public SessionUid SessionUid { get; }
-    public ClientInfo Client { get; }
 }
 
 public readonly struct SessionUid(string value)
 {
     public string Value { get; }
 }
-
-public sealed class ClientInfo
-{
-    public string Id { get; }
-    public string Version { get; }
-}
 ```
 
-The `TestSessionContext` consists of the `SessionUid`, a unique identifier for the ongoing test session that aids in logging and correlating test session data. It also includes the `ClientInfo` type, which provides details about the *initiator* of the test session. The test framework may choose different routes or publish varying information based on the identity of the test session's *initiator*.
+The `TestSessionContext` consists of the `SessionUid`, a unique identifier for the ongoing test session that aids in logging and correlating test session data.
 
 #### DiscoverTestExecutionRequest
 
 ```csharp
 public class DiscoverTestExecutionRequest
 {
-    // Detailed in the custom section below
     public TestSessionContext Session { get; }
-
-    // This is experimental and intended for future use, please disregard for now.
     public ITestExecutionFilter Filter { get; }
 }
 ```
@@ -261,10 +237,7 @@ await context.MessageBus.PublishAsync(
 ```csharp
 public class RunTestExecutionRequest
 {
-    // Detailed in the custom section below
     public TestSessionContext Session { get; }
-
-    // This is experimental and intended for future use, please disregard for now.
     public ITestExecutionFilter Filter { get; }
 }
 ```
@@ -360,7 +333,7 @@ public class TestNode
     public PropertyBag Properties { get; init; } = new();
 }
 
-public sealed class TestNodeUid(string value)
+public sealed class TestNodeUid(string value);
 
 public sealed partial class PropertyBag
 {
@@ -499,10 +472,7 @@ public sealed record TestMethodIdentifierProperty(
     string ReturnTypeFullName)
 ```
 
-`TestMethodIdentifierProperty` is a unique identifier for a test method, adhering to the ECMA-335 standard.
-
-> [!NOTE]
-> The data needed to create this property can be conveniently obtained using the .NET reflection feature, using types from the `System.Reflection` namespace.
+`TestMethodIdentifierProperty` is a unique identifier for a test method.
 
 ```csharp
 public sealed record TestMetadataProperty(

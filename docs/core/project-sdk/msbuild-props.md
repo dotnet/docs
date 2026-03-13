@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2025
+ms.date: 03/03/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -62,6 +62,8 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 
 - [GenerateAssemblyInfo](#generateassemblyinfo)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [IncludeSourceRevisionInInformationalVersion](#includesourcerevisionininformationalversion)
+- [SourceRevisionId](#sourcerevisionid)
 
 ### GenerateAssemblyInfo
 
@@ -88,6 +90,30 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
+
+### IncludeSourceRevisionInInformationalVersion
+
+The `IncludeSourceRevisionInInformationalVersion` property controls whether the [`SourceRevisionId`](#sourcerevisionid) value is appended to the `InformationalVersion` assembly attribute. The default value is `true`. Set it to `false` to disable this behavior:
+
+```xml
+<PropertyGroup>
+  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
+### SourceRevisionId
+
+The `SourceRevisionId` property holds the source control revision ID for the build, such as a Git commit hash. Starting in .NET 8, the .NET SDK automatically populates this property with the commit hash when [Source Link](https://github.com/dotnet/sourcelink) is present. When set, its value is appended to the `InformationalVersion` assembly attribute.
+
+```xml
+<PropertyGroup>
+  <SourceRevisionId>abc1234</SourceRevisionId>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
 
 ## Framework properties
 
@@ -1104,6 +1130,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>

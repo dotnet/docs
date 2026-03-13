@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Build a minimal .NET AI RAG app
 description: Create an AI powered app to search and integrate with vector stores using embeddings and the Microsoft.Extensions.VectorData package for .NET
-ms.date: 05/29/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Build a .NET AI vector search app
@@ -63,7 +64,7 @@ Complete the following steps to create a .NET console app that can:
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.VectorData.Abstractions
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
@@ -153,7 +154,7 @@ Complete the following steps to create a .NET console app that can:
     :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 

@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Potential pitfalls with PLINQ"
 title: "Potential pitfalls with PLINQ"
-ms.date: "03/30/2017"
+ms.date: "03/04/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -21,6 +22,22 @@ Parallelization sometimes causes a PLINQ query to run slower than its LINQ to Ob
 ## Avoid writing to shared memory locations
 
 In sequential code, it is not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there is a big potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a PLINQ query as much as possible.
+
+### Example: Race condition with shared memory
+
+The following example demonstrates a race condition that occurs when multiple threads write to a shared variable. The variable `total` is accessed and modified concurrently by multiple threads without synchronization, leading to unpredictable results:
+
+:::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionBad":::
+:::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionBad":::
+
+In this code, the operation `total += n` is not atomic. It involves reading the current value of `total`, adding `n`, and writing the result back to `total`. When multiple threads execute this operation simultaneously, they can read the same value, add to it in different threads, and write back results that overwrite each other. This causes some additions to be lost, producing an incorrect final result.
+
+The correct approach is to use thread-safe operations that don't require shared mutable state:
+
+:::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionGood":::
+:::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionGood":::
+
+The `Sum` method handles parallelization internally in a thread-safe manner, ensuring correct results without the need for explicit synchronization. Other safe approaches include using <xref:System.Linq.ParallelEnumerable.Aggregate%2A> for custom aggregations or collecting results into thread-safe collections like <xref:System.Collections.Concurrent.ConcurrentBag%601>.
 
 ## Avoid over-parallelization
 

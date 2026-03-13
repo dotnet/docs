@@ -1,9 +1,10 @@
 ---
 title: Quickstart - Generate images using OpenAI.Images.ImageClient
 description: Create a simple app using to generate images using OpenAI.Images.ImageClient in .NET.
-ms.date: 04/09/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 zone_pivot_groups: openai-library
+ai-usage: ai-assisted
 ---
 
 # Generate images using OpenAI.Images.ImageClient
@@ -98,7 +99,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::code language="csharp" source="snippets/image-generation/azure-openai/program.cs" :::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry Tools with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Foundry tools with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 

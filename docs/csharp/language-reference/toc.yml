@@ -488,6 +488,12 @@ items:
     displayName: >
       CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1704, CS1683, CS1714,
       CS1760, CS7008, CS7068, CS7069, CS7071, CS7079, CS8090, CS8203, CS9286
+  - name: Record declarations
+    href: ./compiler-messages/record-declaration-errors.md
+    displayName: >
+      record, record struct, record class, positional record,
+      CS8851, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8870, CS8872, CS8873,
+      CS8874, CS8875, CS8877, CS8879, CS8907, CS8908, CS8913
   - name: Constructor declarations
     href: ./compiler-messages/constructor-errors.md
     displayName: >
@@ -631,8 +637,11 @@ items:
   - name: Lambda expressions
     href: ./compiler-messages/lambda-expression-errors.md
     displayName: >
-      CS0748, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1989, CS3006, CS8030,
-      CS8175, CS8916, CS8971, CS8972, CS8975, CS9098, CS9099, CS9100, CS9236
+      CS0407, CS0428, CS0467, CS0748, CS0815, CS0828, CS0837, CS1065, CS1621, CS1628, CS1632,
+      CS1643, CS1660, CS1661, CS1662, CS1673, CS1676, CS1677, CS1678, CS1686, CS1688,
+      CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175, CS8820,
+      CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098, CS9099,
+      CS9100, CS9236
   - name: Overload resolution
     href: ./compiler-messages/overload-resolution.md
     displayName: >
@@ -990,8 +999,6 @@ items:
       href: ../misc/cs0316.md
     - name: CS0406
       href: ../misc/cs0406.md
-    - name: CS0407
-      href: ../misc/cs0407.md
     - name: CS0409
       href: ../misc/cs0409.md
     - name: CS0410
@@ -1006,8 +1013,6 @@ items:
       href: ../misc/cs0424.md
     - name: CS0426
       href: ../misc/cs0426.md
-    - name: CS0428
-      href: ../misc/cs0428.md
     - name: CS0433
       href: ./compiler-messages/cs0433.md
     - name: CS0441
@@ -1246,8 +1251,6 @@ items:
       href: ../misc/cs0766.md
     - name: CS0811
       href: ../misc/cs0811.md
-    - name: CS0815
-      href: ../misc/cs0815.md
     - name: CS0818
       href: ../misc/cs0818.md
     - name: CS0819
@@ -1256,14 +1259,10 @@ items:
       href: ../misc/cs0822.md
     - name: CS0825
       href: ../misc/cs0825.md
-    - name: CS0828
-      href: ../misc/cs0828.md
     - name: CS0833
       href: ../misc/cs0833.md
     - name: CS0836
       href: ../misc/cs0836.md
-    - name: CS0837
-      href: ../misc/cs0837.md
     - name: CS0840
       href: ./compiler-messages/property-declaration-errors.md
     - name: CS0841
@@ -1324,8 +1323,6 @@ items:
       href: ../misc/cs1059.md
     - name: CS1061
       href: ./compiler-messages/cs1061.md
-    - name: CS1065
-      href: ./compiler-messages/cs1065.md
     - name: CS1107
       href: ../misc/cs1107.md
     - name: CS1108
@@ -1468,8 +1465,6 @@ items:
       href: ../misc/cs1639.md
     - name: CS1640
       href: ./compiler-messages/cs1640.md
-    - name: CS1643
-      href: ../misc/cs1643.md
     - name: CS1644
       href: ./compiler-messages/cs1644.md
     - name: CS1646
@@ -1482,26 +1477,12 @@ items:
       href: ../misc/cs1650.md
     - name: CS1654
       href: ../misc/cs1654.md
-    - name: CS1660
-      href: ../misc/cs1660.md
-    - name: CS1661
-      href: ../misc/cs1661.md
-    - name: CS1662
-      href: ../misc/cs1662.md
     - name: CS1664
       href: ../misc/cs1664.md
     - name: CS1672
       href: ../misc/cs1672.md
     - name: CS1675
       href: ../misc/cs1675.md
-    - name: CS1676
-      href: ../misc/cs1676.md
-    - name: CS1677
-      href: ../misc/cs1677.md
-    - name: CS1678
-      href: ../misc/cs1678.md
-    - name: CS1688
-      href: ../misc/cs1688.md
     - name: CS1703
       href: ./compiler-messages/cs1703.md
     - name: CS1705
@@ -1528,10 +1509,6 @@ items:
       href: ../misc/cs1728.md
     - name: CS1729
       href: ./compiler-messages/cs1729.md
-    - name: CS1731
-      href: ../misc/cs1731.md
-    - name: CS1732
-      href: ../misc/cs1732.md
     - name: CS1733
       href: ../misc/cs1733.md
     - name: CS1736
@@ -1842,8 +1819,6 @@ items:
       href: ../misc/cs1723.md
     - name: CS1762
       href: ./compiler-messages/cs1762.md
-    - name: CS1911
-      href: ../misc/cs1911.md
     - name: CS1956
       href: ./compiler-messages/cs1956.md
     - name: CS1957
@@ -1926,8 +1901,6 @@ items:
       href: ../misc/cs0458.md
     - name: CS0464
       href: ../misc/cs0464.md
-    - name: CS0467
-      href: ./compiler-messages/cs0467.md
     - name: CS0469
       href: ../misc/cs0469.md
     - name: CS0472

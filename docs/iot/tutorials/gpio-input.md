@@ -2,7 +2,7 @@
 title: Use GPIO for binary input
 description: Learn how to use GPIO for binary input with the .NET IoT Libraries.
 author: camsoper
-ms.date: 07/31/2024
+ms.date: 03/07/2026
 ms.topic: tutorial
 ---
 

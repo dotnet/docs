@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Generate images from text using AI
 description: Learn how to use Microsoft.Extensions.AI to generate images from text prompts using AI models in a .NET application.
-ms.date: 10/21/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 ai-usage: ai-assisted
 ---
@@ -44,17 +44,16 @@ Complete the following steps to create a .NET console application that generates
 
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and API key:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and API key:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-image-1
     dotnet user-secrets set AZURE_OPENAI_API_KEY <your-azure-openai-api-key>
     ```
 

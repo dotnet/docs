@@ -1,15 +1,15 @@
 ---
-title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
+title: Quickstart - Extend OpenAI using functions and execute a local function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
-ms.date: 11/13/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
 ---
 
 # Invoke .NET functions using an AI model
 
-In this quickstart, you create a .NET console AI chat app that connects to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you create a .NET console AI chat app that connects to an AI model with local function-calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 :::zone target="docs" pivot="openai"
 
@@ -47,7 +47,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -58,7 +58,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```

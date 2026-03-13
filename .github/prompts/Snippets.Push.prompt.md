@@ -1,6 +1,6 @@
 ---
 agent: agent
-model: Claude Sonnet 4 (copilot)
+model: Claude Sonnet 4.6 (copilot)
 description: Push inline code block snippets out of articles into standalone files with proper project structure.
 ---
 
@@ -15,92 +15,78 @@ description: Push inline code block snippets out of articles into standalone fil
 ## Quick Reference
 
 **WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
-**FOLDER PATTERN:** `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
-**PROJECT CREATION:** Always use `dotnet new {winforms|wpf|console|classlib}` commands to create a new project for the code language
-**LANGUAGES:** Create both C# and VB versions
+**FOLDER PATTERN:** `./snippets/{doc-file}/[optional-sub-subject]/{csharp|vb}/`
+**PROJECT CREATION:** Always use `dotnet new` CLI commands — never create project files manually. Default to console apps.
+**LANGUAGES:** Create both C# and VB versions (see language guide exception below)
 **SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`
 **ARTICLE REFS:** Replace with `:::code language="csharp" source="./path" id="SnippetId":::`
 
 ## When to push snippets out of articles
 
 **PUSH SNIPPETS WHEN:**
-- Code blocks are longer than 6 lines or the rest of the article is using them
+- Code blocks are longer than 6 lines
 - Code demonstrates complete, compilable examples
 - Code represents a complete application or significant functionality
 - User specifically requests snippet extraction
 
 **KEEP INLINE WHEN:**
 - Code blocks are 6 lines or shorter
-- Code shows configuration snippets (XAML, JSON, XML)
-- XAML snippets that are more than 3 lines
 - Code is pseudo-code or conceptual examples
 
 ## Target folder structure
 
-**IMPORTANT**: Follow a folder structure based on the article and code language:
-
-### New snippet location (standard)
-- Path pattern: `./snippets/{doc-file}/[net-or-framework]/{code-language}/`
-- Example: `./snippets/create-windows-forms-app/net/csharp/`
+- Path pattern: `./snippets/{doc-file}/[optional-sub-subject]/{code-language}/`
+- Example C#: `./snippets/create-app/csharp/`
+- Example VB: `./snippets/create-app/vb/`
 
 **Path components explained:**
+- `./`: Current folder of the article being edited
+- `snippets/`: Root folder for all snippets
 - `{doc-file}`: The markdown article filename WITHOUT the `.md` extension
-  - Example: For article `create-windows-forms-app.md` → use `create-windows-forms-app`
-- `[net-or-framework]`: Choose based on target framework:
-  - `net`: For .NET (.NET 6 and newer)
-  - `framework`: For .NET Framework (4.8 and older)
-  - **Rule**: Only include this subfolder when the article demonstrates BOTH .NET and .NET Framework approaches. Otherwise, omit this folder. When in doubt, ask.
-- `{code-language}`: 
-  - `csharp`: For C# code or when demonstrating XAML
+  - Example: For article `create-app.md` → use `create-app`
+- `[optional-sub-subject]`: An optional subfolder to avoid clashes. Used when snippets in the same article can't be merged — for example, two snippets that both require a `Program.cs` file but demonstrate different things. Use descriptive subfolder names like `AsyncProgram/` and `SyncProgram/`.
+- `{code-language}`:
+  - `csharp`: For C# code (also use for XAML snippets)
   - `vb`: For Visual Basic code
 
-## Framework targeting and project types
-
-**Determine target framework:**
-- Check article frontmatter `ms.service` value:
-  - `dotnet-framework` → .NET Framework 4.8
-  - `dotnet-desktop` → Current .NET (e.g., .NET 10)
-- Examine code patterns and article content
-
-**Create appropriate project with `dotnet new`:**
-
-| Project Type | Indicators | .NET Command | .NET Framework Command |
-|--------------|------------|--------------|------------------------|
-| **Windows Forms** | `System.Windows.Forms`, `Form`, `/winforms/` path | `dotnet new winforms` | `dotnet new winforms --framework net48` |
-| **WPF** | `System.Windows`, `Window`, XAML, `/wpf/` path | `dotnet new wpf` | `dotnet new wpf --framework net48` |
-| **Console** | `Console.WriteLine`, simple examples, no UI | `dotnet new console` | `dotnet new console --framework net48` |
-| **Class Library** | Reusable components, no entry point | `dotnet new classlib` | `dotnet new classlib --framework net48` |
+**Language guide exception**: For articles in the C# or VB language guides, only the guide's language is required — do not create a version in the other language, and omit the `{code-language}/` subfolder:
+- C# guide path: `./snippets/{doc-file}/`
+- VB guide path: `./snippets/{doc-file}/`
 
 ## Push process
 
 ### 1. Analyze and prepare
 - Locate code blocks >6 lines or complete examples (unless overridden by user request)
-- Determine project type from code patterns and article location
-- Check framework targeting from frontmatter
-- Create folder structure: `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
+- Identify the programming language(s) used
+- Determine if the article is in a language guide (C# or VB) to apply the language exception
 
 ### 2. Create projects and extract code
-- Run appropriate `dotnet new` command in each language folder, **don't** specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible
-- Copy and complete code to make it compilable
-- Add missing using statements, namespaces, class declarations
-- Modernize code patterns if targeting current .NET
-- Test compilation with `dotnet build`
-- If snippets are XAML-based, store them in a C# project
+- **NEVER** create project files manually. Always use the `dotnet` CLI. Default to console apps (`dotnet new console`) unless the snippet requires a different project type (for example, `dotnet new winforms` for a Windows Forms snippet). Don't specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible.
+- Copy and complete code to make it compilable. Code only needs to compile — it doesn't have to run from `Main`.
+- Add missing using statements, namespaces, and class declarations as needed.
+- Build to verify compilation with `dotnet build`.
 
-### 3. Add snippet references and update article
-- Add CamelCase region markers: `// <ButtonClick>` and `// </ButtonClick>`
-- Use same identifiers across C# and VB versions
-- Replace inline code with snippet references:
+### 3. Add snippet markers and update article references
+- Add CamelCase region markers around each snippet:
+  - C#: `// <SnippetId>` and `// </SnippetId>`
+  - VB: `' <SnippetId>` and `' </SnippetId>`
+- Use the same identifiers across C# and VB versions.
+- Use meaningful, descriptive identifiers — avoid `1`, `2`, `code1`, or `snippet1`.
+- Replace each inline code block with a `:::code:::` reference:
   ```markdown
-  :::code language="xaml" source="./snippets/doc-name/net/csharp/File.xaml" id="ButtonClick":::
-  :::code language="csharp" source="./snippets/doc-name/net/csharp/File.cs" id="ButtonClick":::
-  :::code language="vb" source="./snippets/doc-name/net/vb/File.vb" id="ButtonClick":::
+  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="SnippetId":::
+  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="SnippetId":::
   ```
-- DO NOT use language tabs, simply put them side-by-side
-- Verify all paths and references are correct
+- DO NOT use language tabs — place references side-by-side, like so:
+  ```markdown
+  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="SnippetId":::
+  
+  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="SnippetId":::
+  ```
+- Verify all paths and identifiers are correct.
 
-### 4. Make sure frontmatter specifies a language when required
-If both CSharp and VB examples are provided make sure the following frontmatter is at the top of the article:
+### 4. Update article frontmatter
+If both C# and VB examples are provided, ensure the following frontmatter is present at the top of the article:
 
 ```yml
 dev_langs:
@@ -108,22 +94,14 @@ dev_langs:
   - "vb"
 ```
 
-If just XAML is provided, don't use a `dev_langs` section.
+If a single language is used (like in the language guides), omit the `dev_langs` section.
 
 ## Common mistakes to avoid
 
-- ❌ Extracting short snippets (≤6 lines) without request
-- ❌ Skipping `dotnet new` commands or creating incomplete projects
-- ❌ Missing C# or VB versions
-- ❌ Using language tabs
-- ❌ Wrong project type (winforms vs wpf vs console)
-- ❌ Incorrect framework targeting (net vs framework)
+- ❌ Extracting short snippets (≤6 lines) without being asked
+- ❌ Creating project files manually instead of using `dotnet new`
+- ❌ Missing C# or VB versions for standard articles
+- ❌ Creating VB projects for XAML-only snippets
+- ❌ Using language tabs instead of side-by-side references
 - ❌ Missing or inconsistent snippet region identifiers
 - ❌ Code that doesn't compile
-
-## Quality checklist
-
-- ✅ Correct folder structure and project type
-- ✅ Both C# and VB versions compile successfully
-- ✅ Snippet regions use CamelCase identifiers
-- ✅ Article uses correct `:::code...:::` syntax with valid paths

@@ -1,10 +1,12 @@
 ---
 agent: agent
-model: Claude Sonnet 4 (copilot)
+model: Claude Sonnet 4.6 (copilot)
 description: Migrate code from the old ~/samples/snippets/ location to the relative ./snippets location.
 ---
 
 # Migrate code snippets
+
+We no longer use the `~/samples/snippets/` location for code snippets. All code snippets must be migrated to the new `./snippets/` location, which is relative to the article using the snippet. Generally, snippets in the old location are outdated, incomplete, and often can't compile. The new location requires that all snippets be complete, compilable, and include project files. Additionally, the new location requires both C# and Visual Basic versions of each snippet.
 
 **IMPORTANT**: Unless otherwise asked to, **only** edit the article file in context. At the end of your operations you may ask for permission to edit other articles referencing the same snippets.
 
@@ -15,45 +17,38 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 ### Old location (legacy - to be migrated FROM)
 - Path: `~/samples/snippets/`
 - Example: `~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs`
-- Status: Legacy, should be migrated to new location
 
+**Problems with legacy code:**
+- Written for .NET Framework (outdated)
+- Often incomplete and can't compile
+- May lack project files
+- Uses outdated syntax and patterns
+
+**Legacy article references generally use old syntax:**
+```markdown
+[!code-{code-language}[description](~/samples/snippets/{path-to-file}#{snippet-identifier})]
+```
 ### New location (current standard - migrate TO)
-- Path pattern: `./snippets/{doc-file}/[net-or-framework]/{code-language}/`
-- Example: `./snippets/how-to-add-data-to-the-clipboard/net/csharp/form1.cs`
+- Path pattern: `./snippets/{article-filename-using-snippet}/[optional-sub-subject]/{code-language}/`
+- Example C#: `./snippets/anchors-in-regular-expressions/csharp/form1.cs`
+- Example VB: `./snippets/anchors-in-regular-expressions/vb/form1.vb`
 
 **Path components explained:**
-- `{doc-file}`: The markdown article filename WITHOUT the `.md` extension
-  - Example: For article `how-to-add-data-to-the-clipboard.md` → use `how-to-add-data-to-the-clipboard`
-- `[net-or-framework]`: Choose based on target framework:
-  - `net`: For .NET (.NET 6 and newer)
-  - `framework`: For .NET Framework (4.8 and older)
-  - **Rule**: Only include this subfolder when the article demonstrates BOTH .NET and .NET Framework approaches
+- `./`: Current folder of the article being edited
+- `snippets/`: Root folder for all snippets
+- `{article-filename-using-snippet}`: The markdown article filename WITHOUT the `.md` extension
+  - Example: For article `anchors-in-regular-expressions.md` → use `anchors-in-regular-expressions`
+- `[optional-sub-subject]`: An optional subfolder to avoid clashes. Used when a snippet in the article can't be merged with existing snippets. Examples of this would be two different snippets that both use a `Program.cs` file. For example, if there were two snippets in the same file demonstrating an Async `main` and a non-Async `main`, you could create descriptive subfolders like `AsyncProgram/` and `SyncProgram/` to avoid conflicts.
 - `{code-language}`: 
   - `csharp`: For C# code
   - `vb`: For Visual Basic code
 
-## Legacy code characteristics (migrate FROM these)
-
-**Location**: `~/samples/snippets/` folder
-**Problems with legacy code:**
-- Written for .NET Framework (outdated)
-- Often incomplete or non-compilable
-- May lack project files
-- Uses outdated syntax and patterns
-
-**Legacy article references look like this:**
-```markdown
-[!code-{code-language}[description](~/samples/snippets/{path-to-file}#{snippet-identifier})]
-```
-
-## Current code requirements (migrate TO these)
-
-**Location**: `./snippets/{doc-file}/[framework]/{code-language}/`
+**IMPORTANT**: Exception to the rules about having multiple code languages: For language guide articles, only the guide's language is required — do not create a version in the other language. The C# Language guide only contains CS code snippets, and the VB Language guide only contains VB code snippets. All other articles should follow the full path pattern including the `{code-language}/` subfolder. For example, you wouldn't use the `./snippets/article-name/csharp/` or `./snippets/article-name/vb/` folder structures for an article in the C# language guide, the folder would simply be `./snippets/article-name/` and the code in C#. The same applies to the VB language guide.
 
 **Requirements for current code standards:**
 - ✅ MUST be complete and compilable
 - ✅ MUST include a project file
-- ✅ MUST target appropriate .NET version (see targeting rules below)
+- ✅ MUST target the latest .NET version
 - ✅ MUST provide BOTH C# and Visual Basic versions
 - ✅ MUST use appropriate syntax for the target framework
 - ✅ MUST use meaningful, descriptive snippet identifiers in CamelCase format
@@ -62,82 +57,55 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 
 **Current article references look like this:**
 ```markdown
-:::code language="{code-language}" source="{file-path}" id="{snippet-identifier}":::
+:::code language="{code-language}" source="{relative-file-path}" id="{snippet-identifier}":::
 ```
 
-**Framework targeting rules:**
-- **Migration vs. Modernization**: 
-  - **Migration**: Move code to new location with minimal changes
-  - **Modernization**: Update code to use latest .NET features and best practices
-- **When to migrate only**: When article has `ms.service: dotnet-framework` frontmatter or is specifically about .NET Framework features
-- **When to modernize**: When article demonstrates both .NET and .NET Framework, or when specifically requested
-- **Default targeting**: 
-  - For .NET Framework-specific articles: Keep targeting .NET Framework
-  - For general articles: Target latest .NET version (e.g., .NET 10)
-  - For mixed articles: Create separate snippets in `net/` and `framework/` subfolders
-
 ## Migration steps (follow in order)
-
-**WHEN TO MIGRATE**: Migrate code when you encounter articles with references to `~/samples/snippets/` paths.
 
 **STEP-BY-STEP PROCESS:**
 
 ### 1. Analyze existing code and article context
-- **Find**: Locate the legacy snippet file in `~/samples/snippets/`
-- **Check frontmatter**: Look for `ms.service: dotnet-framework` in the article's frontmatter
-- **Determine scope**: 
-  - If frontmatter has `ms.service: dotnet-framework` → this is likely a .NET Framework-specific article
-  - if frontmatter has `ms.service: dotnet-desktop` or similar → this is likely a dual-framework or general article
-  - If article demonstrates both .NET and .NET Framework → prepare for dual targeting
-  - If article is general purpose → consider targeting current .NET
+- **Find**: Locate the legacy snippet file references to `~/samples/snippets/` (path may be relative, navigating back to the root `samples` folder)
 - **Identify**: Determine the programming language (C# or Visual Basic)
 - **Extract**: Note the snippet identifier used in the article reference
 
-### 2. Create new folder structure
-- **Pattern**: `./snippets/{doc-file}/[net-or-framework]/{code-language}/`
-- **Example**: For article `clipboard-operations.md` → create `./snippets/clipboard-operations/net/csharp/`
-- **Decision tree for framework folder**:
-  - Article has `ms.service: dotnet-framework` frontmatter → use `./snippets/{doc-file}/framework/{code-language}/`
-  - Article shows ONLY current .NET examples → use `./snippets/{doc-file}/{code-language}/` (omit framework folder)
-  - Article shows BOTH .NET and .NET Framework → create both `./snippets/{doc-file}/net/{code-language}/` and `./snippets/{doc-file}/framework/{code-language}/`
+### 2. Create new or reuse existing folder structure
+- **Pattern**: `./snippets/{article-filename-using-snippet}/[optional-sub-subject]/{code-language}/`
+- **Example**: For article `clipboard-operations.md` → create `./snippets/clipboard-operations/csharp/`
+- **Reuse**: If the article already has snippets in the new location, reuse the existing folder structure and try to merge the code into the existing snippets if possible. Use new classes and code files as needed. Code **ONLY** needs to compile, it doesn't have to run from the program main.
+- **Create**: If no existing folder structure exists for the article, create a new one following the pattern above.
+- **New projects**: **NEVER** create project files manually. Always use the `dotnet` CLI to ensure correct formatting and structure of new code. Projects should be console apps unless otherwise required (such as a Windows Forms-related snippet)
 
 ### 3. Migrate and update code
 - **Copy**: Copy only the snippet code (and any supporting code to compile the snippet) to the new location
-- **Update approach**:
-  - **For .NET Framework articles**: Migrate with minimal changes, keep .NET Framework targeting
-  - **For dual-framework articles**: Create both versions with appropriate targeting and update frontmatter to `ms.service: dotnet-desktop`
-  - **For general articles**: Update to target current .NET only if specifically requested or if article demonstrates modernization
 - **Complete**: Ensure code is fully functional and compilable
-- **Project file**: Create or update project file with appropriate target framework
 
 ### 4. Create both language versions
-- **Requirement**: MUST provide both C# and Visual Basic versions
-- **C# path**: `./snippets/{doc-file}/[framework]/csharp/`
-- **VB path**: `./snippets/{doc-file}/[framework]/vb/`
+- **Requirement**: MUST provide both C# and Visual Basic versions, except for language guide articles (C# or VB guide), where only the guide's language is required.
+- **Standard articles** (both languages required):
+  - **C# path**: `./snippets/{article-filename-using-snippet}/csharp/`
+  - **VB path**: `./snippets/{article-filename-using-snippet}/vb/`
+- **Language guide articles** (single language, no `{code-language}` subfolder):
+  - **C# guide path**: `./snippets/{article-filename-using-snippet}/`
+  - **VB guide path**: `./snippets/{article-filename-using-snippet}/`
 
 ### 5. Update article references
 - **Replace**: Change from legacy `[!code-...]` format to modern `:::code...:::` format
 - **Before**: `[!code-csharp[description](~/samples/snippets/path/file.cs#snippet1)]`
-- **After**: `:::code language="csharp" source="./snippets/doc-name/net/csharp/file.cs" id="BasicClipboardData":::`
+- **After**: `:::code language="csharp" source="./snippets/article-name/csharp/file.cs" id="BasicClipboardData":::`
 - **Note**: Use meaningful CamelCase identifiers instead of simple numbers
 
 ### 6. Validate
 - **Build**: Ensure all code compiles successfully
-- **Test**: Verify snippet references work in the article
-- **Clean**: Remove unused legacy files (if no other articles reference them)
 
 ### 7. Delete
 - **Identify**:
-  - Check if the old snippet file is used by any other articles
-  - Some articles may use a relative path to the `samples` folder, so simply search for links to `samples/snippets/...`
-  - Be confident that all legacy snippets use a `samples/snippets` folder structure
-- **Delete**: If old snippet is no longer used by any article, delete it.
+  - Check if the old snippet file is used by any other articles. Search for the old snippet path across the repository to find any references. This can be done by searching for links to `samples/snippets/...` (the file path used in the snippet reference) since some articles may use a relative path to the `samples` folder instead of absolute paths.
+- **Delete**: If old snippet was migrated and is no longer used by any other article, delete it.
 
 ## Common mistakes to avoid
 
 - ❌ **Don't** assume all code needs to be modernized - check article context first
-- ❌ **Don't** modernize .NET Framework-specific articles unless specifically requested
-- ❌ **Don't** ignore the `ms.service: dotnet-framework` frontmatter indicator
 - ❌ **Don't** forget to create both C# and VB versions
 - ❌ **Don't** mix up the framework targeting (net vs framework)
 - ❌ **Don't** forget to update ALL article references to the migrated code

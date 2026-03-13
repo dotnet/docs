@@ -14,14 +14,15 @@ type Point(x: int, y: int) =
             false
 
     override _.GetHashCode() =
-        (x, y).GetHashCode()
+        System.HashCode.Combine(x, y)
 
 let pt = Point(5, 8)
 printfn $"{pt.GetHashCode()}"
 
 let pt2 = Point(8, 5)
 printfn $"{pt2.GetHashCode()}"
-// The example displays the following output:
-//       173
-//       269
+// The example displays output similar to the following.
+// Note: HashCode.Combine results are not stable across .NET versions.
+//       185727722
+//       -363254492
 // </Snippet3>

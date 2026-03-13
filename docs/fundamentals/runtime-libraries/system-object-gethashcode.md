@@ -58,13 +58,13 @@ Frequently, a type has multiple data fields that can participate in generating t
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor1.vb" id="Snippet2":::
 
-The previous example returns the same hash code for (n1, n2) and (n2, n1), and so may generate more collisions than are desirable. A number of solutions are available so that hash codes in these cases are not identical. One is to return the hash code of a `Tuple` object that reflects the order of each field. The following example shows a possible implementation that uses the <xref:System.Tuple`2> class. Note, though, that the performance overhead of instantiating a `Tuple` object may significantly impact the overall performance of an application that stores large numbers of objects in hash tables.
+The previous example returns the same hash code for (n1, n2) and (n2, n1), and so may generate more collisions than are desirable. On .NET 5+, the recommended solution is to use <xref:System.HashCode.Combine%2A?displayProperty=nameWithType>. It avoids the symmetry problem and produces a well-distributed hash code without the overhead of creating a `Tuple` object.
 
 :::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/xor2.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor2.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor2.vb" id="Snippet3":::
 
-A second alternative solution involves weighting the individual hash codes by left-shifting the hash codes of successive fields by two or more bits. Optimally, bits shifted beyond bit 31 should wrap around rather than be discarded. Since bits are discarded by the left-shift operators in both C# and Visual Basic, this requires creating a left shift-and-wrap method like the following:
+In .NET Framework, an alternative is to weight the individual hash codes by left-shifting the hash codes of successive fields by two or more bits. Optimally, bits shifted beyond bit 31 should wrap around rather than be discarded. Since bits are discarded by the left-shift operators in both C# and Visual Basic, this requires creating a left shift-and-wrap method like the following:
 
 :::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/shift1.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/shift1.fs" id="Snippet4":::

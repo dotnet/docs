@@ -15,7 +15,7 @@ type Point(x, y) =
             false
 
     override _.GetHashCode() =
-        (x <<< 2) ^^^ y
+        System.HashCode.Combine(x, y)
 
     override _.ToString() =
         $"Point({x}, {y})"
@@ -32,7 +32,7 @@ type Point3D(x, y, z) =
             false
 
     override _.GetHashCode() =
-        (base.GetHashCode() <<< 2) ^^^ z
+        System.HashCode.Combine(base.GetHashCode(), z)
 
     override _.ToString() =
         $"Point({x}, {y}, {z})"

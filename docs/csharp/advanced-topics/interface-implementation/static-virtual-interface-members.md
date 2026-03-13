@@ -71,7 +71,7 @@ This small example demonstrates the motivation for this feature. You can use nat
 
 The previous example used `static abstract` to declare the `++` operator: every implementing type *must* provide its own implementation. You can also declare `static virtual` members that provide a default implementation. Implementing types can use the default or override it. This distinction is useful when there's a reasonable default that works for most types, but some types need specialized behavior.
 
-The following example defines an `IDescribable<T>` interface with a `static abstract` property, `TypeName`, and a `static virtual` method, `Describe()`. The `TypeName` property is abstract because each type must supply its own name. The `Describe()` method is virtual because the default—returning the type name—is sensible for most types:
+The following example defines an `IDescribable<T>` interface with a `static abstract` property, `TypeName`, and a `static virtual` method, `Describe()`. The `TypeName` property is abstract because each type must supply its own name. The `Describe()` method is virtual because returning the type name is a sensisble default for most types:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Describable.cs" id="Describable":::
 
@@ -94,9 +94,7 @@ Widget
 Gadget (version 2.0)
 ```
 
-`Widget` uses the default implementation of `Describe()`, which returns `TypeName`. `Gadget` overrides `Describe()` with its own version. The compiler resolves the correct implementation at compile time based on the type argument.
-
-In summary, use `static abstract` when every implementing type must provide its own implementation. Use `static virtual` when you can provide a useful default that most types will accept.
+`Widget` uses the default implementation of `Describe()`, which returns `TypeName`. `Gadget` overrides `Describe()` with its own version. The compiler resolves the correct implementation at compile time based on the type argument. In summary, use `static abstract` when every implementing type must provide its own implementation. Use `static virtual` when you can provide a useful default that most types will accept.
 
 ## Generic math
 

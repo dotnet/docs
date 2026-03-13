@@ -2,9 +2,25 @@
 
 > High-performance JSON serialization and deserialization for .NET applications.
 
-*Topics available: 31*
+## What's New in .NET 10
 
-**.NET 10 adds:** `JsonSerializerOptions.Strict` preset for best-practice defaults, `AllowDuplicateProperties` option to reject duplicate JSON properties, `PipeReader` deserialization support, and `ReferenceHandler` in `JsonSourceGenerationOptions`.
+The following APIs were added in .NET 10:
+   
+   - `JsonSerializerOptions.Strict` / `JsonSerializerDefaults.Strict` — best-practice preset that disallows unmapped members, duplicate properties, and enforces nullable annotations.
+   - `JsonSerializerOptions.AllowDuplicateProperties` — option to reject duplicate JSON keys (disabled in Strict).
+   - `JsonSerializer.DeserializeAsync<T>(PipeReader)` — direct PipeReader deserialization without Stream conversion.
+   - `JsonSourceGenerationOptionsAttribute.ReferenceHandler` — specify ReferenceHandler in source-generated contexts to handle circular references.
+
+For full details and code examples, see: [.NET 10 Serialization update](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization).
+
+## Best Practices
+
+- **Reuse `JsonSerializerOptions` instances.** Creating a new instance per call is expensive — the metadata cache is rebuilt each time. Use a shared static instance or the built-in singletons (`JsonSerializerOptions.Default`, `.Web`, `.Strict`).
+- **Use source generation for AOT/trimming.** Reflection-based serialization is incompatible with Native AOT. Use `[JsonSerializable]` attribute to the context classes for AOT-safe serialization. See the source generation topic below.
+- **Prefer `Strict` for new projects.** The `Strict` preset catches common mistakes (unmapped members, duplicate keys, null violations) at deserialization time rather than silently ignoring them.
+- **Serialize to UTF-8 when possible.** `SerializeToUtf8Bytes()` is 5–10% faster than string-based serialization because it avoids UTF-16 conversion.
+
+## Topics
 
 - [Serialize and deserialize JSON using C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/overview.md): This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
 - [How to serialize JSON in C#](https://raw.githubusercontent.com/dotnet/docs/refs/heads/llmstxt/docs/standard/serialization/system-text-json/how-to.md): Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code.

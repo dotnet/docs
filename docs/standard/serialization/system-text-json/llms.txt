@@ -2,76 +2,9 @@
 
 > High-performance JSON serialization and deserialization for .NET applications.
 
-*Topics available: 31*
-
 ## What's New in .NET 10
 
-### `JsonSerializerOptions.Strict` preset
-
-A new best-practice defaults preset that enforces stricter serialization and deserialization rules:
-
-- Applies `JsonUnmappedMemberHandling.Disallow` (rejects unmapped JSON properties)
-- Disables `AllowDuplicateProperties` (rejects duplicate JSON keys)
-- Preserves case-sensitive property binding
-- Enables `RespectNullableAnnotations` and `RespectRequiredConstructorParameters`
-
-`Strict` is read-compatible with `Default` — an object serialized with `Default` can be deserialized with `Strict`.
-
-```csharp
-// Use the Strict preset for best-practice defaults
-var options = new JsonSerializerOptions(JsonSerializerDefaults.Strict);
-var result = JsonSerializer.Deserialize<MyType>(json, options);
-
-// Or use the singleton
-var result = JsonSerializer.Deserialize<MyType>(json, JsonSerializerOptions.Strict);
-```
-
-### `AllowDuplicateProperties` option
-
-Controls whether duplicate JSON properties are allowed during deserialization. Disabled by default in the `Strict` preset.
-
-```csharp
-string json = """{ "Value": 1, "Value": -1 }""";
-
-// Default behavior: last value wins
-JsonSerializer.Deserialize<MyRecord>(json).Value; // -1
-
-// Strict behavior: throws JsonException
-var options = new JsonSerializerOptions { AllowDuplicateProperties = false };
-JsonSerializer.Deserialize<MyRecord>(json, options); // throws JsonException
-
-// Also works with JsonDocument
-var docOptions = new JsonDocumentOptions { AllowDuplicateProperties = false };
-JsonDocument.Parse(json, docOptions); // throws JsonException
-```
-
-### `PipeReader` deserialization support
-
-`JsonSerializer.DeserializeAsync<T>()` now supports `System.IO.Pipelines.PipeReader` directly, complementing existing `PipeWriter` support. This eliminates the need to convert a `PipeReader` to a `Stream` before deserializing.
-
-```csharp
-// Before (.NET 9 and earlier) — required Stream conversion
-Stream stream = pipeReader.AsStream();
-var result = await JsonSerializer.DeserializeAsync<MyType>(stream, options);
-
-// After (.NET 10) — deserialize directly from PipeReader
-var result = await JsonSerializer.DeserializeAsync<MyType>(pipeReader, options);
-```
-
-### `ReferenceHandler` in `JsonSourceGenerationOptions`
-
-Source-generated contexts can now specify `ReferenceHandler` to handle circular references and preserve object identity.
-
-```csharp
-[JsonSourceGenerationOptions(ReferenceHandler = JsonKnownReferenceHandler.Preserve)]
-[JsonSerializable(typeof(SelfReference))]
-internal partial class MyContext : JsonSerializerContext { }
-
-var selfRef = new SelfReference();
-selfRef.Me = selfRef;
-Console.WriteLine(JsonSerializer.Serialize(selfRef, MyContext.Default.SelfReference));
-// Output: {"$id":"1","Me":{"$ref":"1"}}
-```
+`JsonSerializerOptions.Strict` preset for best-practice defaults, `AllowDuplicateProperties` option to reject duplicate JSON properties, `PipeReader` deserialization support, and `ReferenceHandler` in `JsonSourceGenerationOptions`. For more details, see: [.NET 10 Serialization updates](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization).
 
 ## Best Practices
 

@@ -151,3 +151,4 @@ If service discovery was added to the host using the `AddServiceDiscoveryCore` e
 ## See also
 
 - [Service discovery in Aspire](/dotnet/aspire/service-discovery/overview)
+- [Service discovery](https://aspire.dev/fundamentals/service-discovery/) (aspire.dev)—Aspire is the primary consumer and orchestrator for this library.

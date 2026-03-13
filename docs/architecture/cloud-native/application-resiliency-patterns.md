@@ -83,6 +83,9 @@ Testing for resiliency cannot always be done the same way that you test applicat
 
 Application resiliency is a must for handling problematic requested operations. But, it's only half of the story. Next, we cover resiliency features available in the Azure cloud.
 
+> [!TIP]
+> [Aspire's service defaults](https://aspire.dev/fundamentals/service-defaults/) configure standard resilience pipelines for `HttpClient` automatically, reducing the need for manual Polly configuration.
+
 >[!div class="step-by-step"]
 >[Previous](resiliency.md)
 >[Next](infrastructure-resiliency-azure.md)

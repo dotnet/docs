@@ -162,6 +162,9 @@ The Microsoft .NET platform is an excellent choice. Free and open source, it has
 
 [.NET](https://github.com/dotnet/core) is maintained by Microsoft and the .NET community on GitHub.
 
+> [!TIP]
+> For the modern cloud-native developer experience with .NET, see [Aspire](https://aspire.dev/get-started/what-is-aspire/). Aspire provides orchestration, service discovery, resilience, and telemetry for distributed apps out of the box.
+
 ### Microservice challenges
 
 While distributed cloud-native microservices can provide immense agility and speed, they present many challenges:

@@ -268,6 +268,9 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 - **Azure Monitor** \
   <https://azure.microsoft.com/services/monitor/>
 
+- **Health checks in Aspire** \
+  <https://aspire.dev/fundamentals/health-checks/>—Aspire's service defaults project configures health check endpoints automatically.
+
 >[!div class="step-by-step"]
 >[Previous](implement-circuit-breaker-pattern.md)
 >[Next](../secure-net-microservices-web-applications/index.md)

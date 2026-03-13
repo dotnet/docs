@@ -312,3 +312,7 @@ The issue can be fixed by updating .NET Application Insights to version **2.23.0
 services.AddApplicationInsightsTelemetry();
 services.AddHttpClient().AddStandardResilienceHandler();
 ```
+
+## See also
+
+- [Service defaults](https://aspire.dev/fundamentals/service-defaults/)—Aspire's service defaults project configures standard resilience pipelines for `HttpClient` out of the box.

@@ -512,3 +512,4 @@ Use the `docker images` command to see a list of images installed.
 - [Azure services that support containers](https://azure.microsoft.com/overview/containers/)
 - [Dockerfile commands](https://docs.docker.com/engine/reference/builder/)
 - [Container Tools for Visual Studio](/visualstudio/containers/overview)
+- [Docker Compose to Aspire AppHost](https://aspire.dev/app-host/docker-compose-to-aspire-apphost/)—If your app has multiple services, consider Aspire as a code-first alternative to Docker Compose.

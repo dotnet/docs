@@ -3,7 +3,7 @@ title: "Breaking change: `DefineConstants` for target frameworks not available a
 description: "Learn about the breaking change in .NET 10 SDK where DefineConstants items for target frameworks are no longer available at MSBuild evaluation time."
 ms.date: 03/12/2026
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/46082
+ms.custom: https://github.com/dotnet/docs/issues/51763
 ---
 
 # `DefineConstants` for target frameworks not available at evaluation time
@@ -37,14 +37,6 @@ For example, the following condition no longer evaluates correctly because `NET9
 </ItemGroup>
 ```
 
-Instead, use the [MSBuild `TargetFramework` and `TargetPlatform` functions](/visualstudio/msbuild/property-functions#msbuild-targetframework-and-targetplatform-functions):
-
-```xml
-<ItemGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))">
-  <PackageReference Include="SomePackage" Version="1.0.0" />
-</ItemGroup>
-```
-
 ## Type of breaking change
 
 This change is a [behavioral change](../../categories.md#behavioral-change).
@@ -70,7 +62,7 @@ Direct access or manipulation of `DefineConstants` led to users accidentally ove
   </ItemGroup>
   ```
 
-- **Continue** to use `DefineConstants` in `Condition` attributes for constants that you define and control yourself—this change only affects the TFM-related constants that the SDK sets automatically.
+- **Continue** to use `DefineConstants` in `Condition` attributes for constants that you define and control yourself. This change only affects the TFM-related constants that the SDK sets automatically.
 
 ## Affected APIs
 

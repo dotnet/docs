@@ -1,7 +1,7 @@
 ---
 title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
-ms.date: 10/22/2025
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 ---
 
@@ -158,7 +158,7 @@ If the build is successful, you've created the three projects, appropriately ref
 
 There are two types of code coverage tools:
 
-- **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/main/docs/extensions/datacollector.md).
+- **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/microsoft/vstest/blob/main/docs/extensions/datacollector.md).
 - **Report generators:** Use data collected from test runs to generate reports, often as styled HTML.
 
 In this section, the focus is on data collector tools.

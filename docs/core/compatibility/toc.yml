@@ -164,6 +164,8 @@ items:
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
+              - name: "`DefineConstants` for target frameworks not available at evaluation time"
+                href: sdk/10.0/defineconstants-not-available-at-evaluation.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: "`dotnet new sln` defaults to SLNX file format"

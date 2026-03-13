@@ -12,15 +12,6 @@ description: Push inline code block snippets out of articles into standalone fil
 
 **IMPORTANT**: If only XAML snippets are present, only create C# projects to hold the XAML. Do not create VB projects for XAML-only snippets.
 
-## Quick Reference
-
-**WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
-**FOLDER PATTERN:** `./snippets/{doc-file}/[optional-sub-subject]/{csharp|vb}/`
-**PROJECT CREATION:** Always use `dotnet new` CLI commands — never create project files manually. Default to console apps.
-**LANGUAGES:** Create both C# and VB versions (see language guide exception below)
-**SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`
-**ARTICLE REFS:** Replace with `:::code language="csharp" source="./path" id="SnippetId":::`
-
 ## When to push snippets out of articles
 
 **PUSH SNIPPETS WHEN:**
@@ -35,14 +26,14 @@ description: Push inline code block snippets out of articles into standalone fil
 
 ## Target folder structure
 
-- Path pattern: `./snippets/{doc-file}/[optional-sub-subject]/{code-language}/`
+- Path pattern: `./snippets/{article-name}/[optional-sub-subject]/{code-language}/`
 - Example C#: `./snippets/create-app/csharp/`
 - Example VB: `./snippets/create-app/vb/`
 
 **Path components explained:**
 - `./`: Current folder of the article being edited
 - `snippets/`: Root folder for all snippets
-- `{doc-file}`: The markdown article filename WITHOUT the `.md` extension
+- `{article-name}`: The markdown article filename WITHOUT the `.md` extension
   - Example: For article `create-app.md` → use `create-app`
 - `[optional-sub-subject]`: An optional subfolder to avoid clashes. Used when snippets in the same article can't be merged — for example, two snippets that both require a `Program.cs` file but demonstrate different things. Use descriptive subfolder names like `AsyncProgram/` and `SyncProgram/`.
 - `{code-language}`:
@@ -50,8 +41,8 @@ description: Push inline code block snippets out of articles into standalone fil
   - `vb`: For Visual Basic code
 
 **Language guide exception**: For articles in the C# or VB language guides, only the guide's language is required — do not create a version in the other language, and omit the `{code-language}/` subfolder:
-- C# guide path: `./snippets/{doc-file}/`
-- VB guide path: `./snippets/{doc-file}/`
+- C# guide path: `./snippets/{article-name}/`
+- VB guide path: `./snippets/{article-name}/`
 
 ## Push process
 
@@ -67,10 +58,10 @@ description: Push inline code block snippets out of articles into standalone fil
 - Build to verify compilation with `dotnet build`.
 
 ### 3. Add snippet markers and update article references
-- Add CamelCase region markers around each snippet:
+- Add CamelCase region markers around each snippet. Snippet markers are added as comments in the language of the code file:
   - C#: `// <SnippetId>` and `// </SnippetId>`
   - VB: `' <SnippetId>` and `' </SnippetId>`
-- The angle brackets (`<` and `>`) are part of the comment markers only. The snippet identifier itself is the bare CamelCase name (for example, `ButtonClick`), which is what you use in the `id` attribute.
+- The angle brackets (`<` and `>`) are part of the comment markers only. The snippet identifier itself is the bare CamelCase name (for example, `SnippetId`), which is what you use in the `id` attribute.
 - Use the same identifiers across C# and VB versions.
 - Use meaningful, descriptive identifiers — avoid `1`, `2`, `code1`, or `snippet1`.
 - Replace each inline code block with a `:::code:::` reference:

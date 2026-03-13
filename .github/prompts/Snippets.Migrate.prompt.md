@@ -30,8 +30,8 @@ We no longer use the `~/samples/snippets/` location for code snippets. All code 
 ```
 ### New location (current standard - migrate TO)
 - Path pattern: `./snippets/{article-filename-using-snippet}/[optional-sub-subject]/{code-language}/`
-- Example C#: `./snippets/anchors-in-regular-expressions/csharp/form1.cs`
-- Example VB: `./snippets/anchors-in-regular-expressions/vb/form1.vb`
+- Example C#: `./snippets/anchors-in-regular-expressions/csharp/Form1.cs`
+- Example VB: `./snippets/anchors-in-regular-expressions/vb/Form1.vb`
 
 **Path components explained:**
 - `./`: Current folder of the article being edited

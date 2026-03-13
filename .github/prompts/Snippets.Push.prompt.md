@@ -70,18 +70,19 @@ description: Push inline code block snippets out of articles into standalone fil
 - Add CamelCase region markers around each snippet:
   - C#: `// <SnippetId>` and `// </SnippetId>`
   - VB: `' <SnippetId>` and `' </SnippetId>`
+- The angle brackets (`<` and `>`) are part of the comment markers only. The snippet identifier itself is the bare CamelCase name (for example, `ButtonClick`), which is what you use in the `id` attribute.
 - Use the same identifiers across C# and VB versions.
 - Use meaningful, descriptive identifiers — avoid `1`, `2`, `code1`, or `snippet1`.
 - Replace each inline code block with a `:::code:::` reference:
   ```markdown
-  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="SnippetId":::
-  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="SnippetId":::
+  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
+  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
   ```
 - DO NOT use language tabs — place references side-by-side, like so:
   ```markdown
-  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="SnippetId":::
+  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
   
-  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="SnippetId":::
+  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
   ```
 - Verify all paths and identifiers are correct.
 

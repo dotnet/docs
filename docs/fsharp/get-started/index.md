@@ -19,6 +19,9 @@ There are multiple guides on how to install and use F# for the first time on you
 
 In general, there is no specific way that is better than the rest. We recommend trying all ways to use F# on your machine to see what you like the best!
 
+> [!TIP]
+> If you want to start exploring F# quickly without setting up a project, you can write F# scripts (`.fsx` files) and run them with `dotnet fsi`. The [Visual Studio Code guide](get-started-vscode.md#explore-f-with-scripts-and-the-repl) shows how to get started with scripts and the F# Interactive REPL.
+
 ## Get started online
 
 If you'd rather not install F# and .NET on your machine, you can also get started with F# in the browser:

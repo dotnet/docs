@@ -2,18 +2,17 @@
 title: "How Embeddings Extend Your AI Model's Reach"
 description: "Learn how embeddings extend the limits and capabilities of AI models in .NET."
 ms.topic: concept-article #Don't change.
-ms.date: 05/29/2025
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 
 #customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 
 ---
 # Embeddings in .NET
 
-Embeddings are the way LLMs capture semantic meaning. They are numeric representations of non-numeric data that an LLM can use to determine relationships between concepts. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
+Embeddings are the way LLMs capture semantic meaning. They're numeric representations of non-numeric data that an LLM can use to determine relationships between concepts. Use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as needed.
 
 ## Use cases for embeddings
-
-This section lists the main use cases for embeddings.
 
 ### Use your own data to improve completion relevance
 
@@ -23,7 +22,7 @@ Use your own databases to generate embeddings for your data and integrate it wit
 
 Use embeddings to increase the amount of context you can fit in a prompt without increasing the number of tokens required.
 
-For example, suppose you want to include 500 pages of text in a prompt. The number of tokens for that much raw text will exceed the input token limit, making it impossible to directly include in a prompt. You can use embeddings to summarize and break down large amounts of that text into pieces that are small enough to fit in one input, and then assess the similarity of each piece to the entire raw text. Then you can choose a piece that best preserves the semantic meaning of the raw text and use it in your prompt without hitting the token limit.
+For example, suppose you want to include 500 pages of text in a prompt. The number of tokens for that much raw text exceeds the input token limit, making it impossible to directly include in a prompt. You can use embeddings to summarize and break down large amounts of that text into pieces that are small enough to fit in one input, and then assess the similarity of each piece to the entire raw text. Then you can choose a piece that best preserves the semantic meaning of the raw text and use it in your prompt without hitting the token limit.
 
 ### Perform text classification, summarization, or translation
 
@@ -45,11 +44,11 @@ Use embeddings to help a model create code from text or vice versa, by convertin
 
 ## Choose an embedding model
 
-You generate embeddings for your raw data by using an AI embedding model, which can encode non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. There are many embedding models available for you to use, with OpenAI's `text-embedding-ada-002` model being one of the common models that's used. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
+You generate embeddings for your raw data by using an AI embedding model, which can encode non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. OpenAI's `text-embedding-3-small` and `text-embedding-3-large` are the currently recommended embedding models, replacing the older `text-embedding-ada-002`. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
 
 ### Store and process embeddings in a vector database
 
-After you generate embeddings, you'll need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [Vector databases for .NET + AI](vector-databases.md).
+After you generate embeddings, you need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities. Choose one based on your raw data and your goals. For information about your options, see [Vector databases for .NET + AI](vector-databases.md).
 
 ### Using embeddings in your LLM solution
 

@@ -26,7 +26,7 @@ The legacy system relies on Windows-based components:
 
 ## Modernization with Azure
 
-Using App Modernization for .NET (Preview), you can update the sample to use modern, cloud-native Azure services:
+Using Modernization for .NET (Preview), you can update the sample to use modern, cloud-native Azure services:
 
 - **Azure SQL Database** replaces SQL Server LocalDB
 - **Azure Blob Storage** replaces local file system access

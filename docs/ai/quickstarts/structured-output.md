@@ -40,7 +40,7 @@ Complete the following steps to create a console app that connects to the `gpt-5
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and tenant ID:
 
     ```bash
     dotnet user-secrets init

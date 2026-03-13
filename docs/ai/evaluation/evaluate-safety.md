@@ -51,7 +51,7 @@ Complete the following steps to create an MSTest project.
    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
    ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, tenant ID, subscription ID, resource group, and project:
 
    ```bash
    dotnet user-secrets init

@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.date: 01/26/2026
-title: GitHub Copilot modernization for .NET in VS Code
+title: GitHub Copilot Modernization for .NET in VS Code
 description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot in Visual Studio Code. Follow step-by-step guidance for seamless modernization.
 ---
 
@@ -109,7 +109,7 @@ Copilot follows the plan and progress tracker to:
 Repeatedly select or enter **Continue** to confirm the use of tools or commands and wait for the code changes to finish.
 
 > [!NOTE]
-> In Visual Studio Code, app modernization uses the `AppModernization-DotNet` custom agent with Claude Sonnet 4.5 by default for best results when updating .NET code to migrate to Azure. It falls back to the 'auto' model if Sonnet 4.5 isn't available to you. You can configure the custom agent to [modify the 'model' setting](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) by selecting **Configure Custom Agents** from the **Agent** menu. Alternatively, you can use the language model picker in the chat window to switch models for the current chat session.
+> In Visual Studio Code, modernization uses the `AppModernization-DotNet` custom agent with Claude Sonnet 4.5 by default for best results when updating .NET code to migrate to Azure. It falls back to the 'auto' model if Sonnet 4.5 isn't available to you. You can configure the custom agent to [modify the 'model' setting](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) by selecting **Configure Custom Agents** from the **Agent** menu. Alternatively, you can use the language model picker in the chat window to switch models for the current chat session.
 
 ### Validation iteration
 

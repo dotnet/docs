@@ -35,7 +35,7 @@ Use the following path based on your goal:
 - Need hot reload support: [Hot Reload](./microsoft-testing-platform-hot-reload.md) (extension)
 - Need Microsoft Fakes support: [Microsoft Fakes](./microsoft-testing-platform-fakes.md) (extension)
 - Need OpenTelemetry traces and metrics: [OpenTelemetry](./microsoft-testing-platform-open-telemetry.md) (extension)
-- Need telemetry opt-out information: [Telemetry](./microsoft-testing-platform-telemetry.md) (extension)
+- Telemetry data collection and opt-out: [Telemetry](./microsoft-testing-platform-telemetry.md) (extension)
 
 ## Built-in features
 

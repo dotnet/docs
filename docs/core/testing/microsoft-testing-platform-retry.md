@@ -18,7 +18,7 @@ This feature requires the [Microsoft.Testing.Extensions.Retry](https://nuget.org
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
-builder.TestHost.AddRetryProvider();
+builder.AddRetryProvider();
 ```
 
 ## Retry

@@ -1,7 +1,8 @@
 ---
 title: Containerize your project using GitHub Copilot modernization for .NET
 description: Learn how to containerize your .NET project using GitHub Copilot modernization for .NET.
-#customer intent: As a .NET developer, I want to containerize my project using GitHub Copilot Modernization so that I can modernize my application efficiently.
+
+#customer intent: As a .NET developer, I want to containerize my project using GitHub Copilot modernization so that I can modernize my application efficiently.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/17/2025

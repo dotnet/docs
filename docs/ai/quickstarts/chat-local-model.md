@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Connect to and chat with a local AI using .NET
 description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
-ms.date: 05/28/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Chat with a local AI model using .NET

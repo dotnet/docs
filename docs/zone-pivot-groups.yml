@@ -46,6 +46,18 @@ groups:
       title: Visual Studio Code
     - id: visualstudio
       title: Visual Studio
+- id: copilot-modernization-install
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: copilot-cli
+      title: GitHub Copilot CLI
+    - id: github-com
+      title: GitHub.com
 - id: development-environment-one
   title: Development environment
   prompt: Choose a development environment
@@ -164,6 +176,8 @@ groups:
   title: Code editor
   prompt: Choose a code editor
   pivots:
+    - id: visualstudio
+      title: Visual Studio
     - id: vscode
       title: Visual Studio Code
     - id: codespaces

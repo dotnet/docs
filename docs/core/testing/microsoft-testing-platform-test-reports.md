@@ -25,12 +25,15 @@ var builder = await TestApplication.CreateBuilderAsync(args);
 builder.AddTrxReportProvider();
 ```
 
+> [!NOTE]
+> When using manual registration, register the TRX report provider last. The current implementation depends on registration order, so registering it after all other extensions ensures it captures all test data.
+
 ### Options
 
 | Option | Description |
 |---|---|
 | `--report-trx` | Generates the TRX report. |
-| `--report-trx-filename` | The name of the generated TRX report. The default name matches the following format `<UserName>_<MachineName>_<yyyy-MM-dd HH:mm:ss>.trx`. |
+| `--report-trx-filename` | The name of the generated TRX report. The default name matches the following format `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. |
 
 The report is saved inside the default _TestResults_ folder that can be specified through the `--results-directory` command line argument.
 

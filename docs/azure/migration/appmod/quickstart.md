@@ -27,4 +27,4 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)
-- [GitHub Copilot app modernization FAQ](../../../core/porting/github-copilot-app-modernization/faq.yml)
+- [GitHub Copilot modernization FAQ](../../../core/porting/github-copilot-app-modernization/faq.yml)

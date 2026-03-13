@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 02/10/2026
-ai-usage: ai-generated
+ms.date: 03/10/2026
+ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 1.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 2.
 
 ## String and character enhancements
 
@@ -102,6 +102,30 @@ The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now inclu
 - `VisualBasic` - Indicates Visual Basic syntax.
 
 These constants can be used with the `StringSyntax` attribute to provide better tooling support for string literals containing code in these languages.
+
+## System.Text.Json improvements
+
+### Generic type info retrieval
+
+A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> from <xref:System.Text.Json.JsonSerializerOptions>.
+Previously, you had to manually downcast from the non-generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method.
+New generic `System.Text.Json.JsonSerializerOptions.GetTypeInfo<T>` and `TryGetTypeInfo<T>()` methods return strongly typed metadata directly, eliminating the cast.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
+
+This is particularly useful when working with source generation, NativeAOT, and polymorphic serialization scenarios where type metadata access is common.
+
+## Tar archive format selection
+
+New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory%2A> and <xref:System.Formats.Tar.TarFile.CreateFromDirectoryAsync%2A> accept a <xref:System.Formats.Tar.TarEntryFormat> parameter, giving you direct control over the archive format. Previously, `CreateFromDirectory` always produced Pax archives. The new overloads support all four tar formats—Pax, Ustar, GNU, and V7—for compatibility with specific tools and environments.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="TarArchiveFormat":::
+
+## Numerics improvements
+
+### Matrix4x4 performance
+
+<xref:System.Numerics.Matrix4x4.GetDeterminant?displayProperty=nameWithType> now uses an SSE-vectorized implementation, improving performance by approximately 15%.
 
 ## See also
 

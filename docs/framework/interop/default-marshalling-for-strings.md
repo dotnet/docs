@@ -1,7 +1,8 @@
 ---
 title: "Default Marshalling for Strings"
 description: Review the default marshalling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
-ms.date: 10/04/2021
+ms.date: 03/11/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -239,7 +240,7 @@ int GetWindowText(
 );
 ```
 
-A `char[]` can be dereferenced and modified by the callee. The following code example demonstrates how `ArrayPool<char>` can be used to pre-allocate a `char[]`.
+A `char[]` can be dereferenced and modified by the callee. The recommended approach is to use <xref:System.Buffers.ArrayPool%601> to rent a `char[]`, which avoids repeated heap allocations. The following code example demonstrates this pattern.
 
 ```csharp
 using System;
@@ -249,7 +250,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("User32.dll", CharSet = CharSet.Unicode)]
-    public static extern void GetWindowText(IntPtr hWnd, [Out] char[] lpString, int nMaxCount);
+    public static extern int GetWindowText(IntPtr hWnd, [Out] char[] lpString, int nMaxCount);
 }
 
 public class Window
@@ -258,8 +259,15 @@ public class Window
     public string GetText()
     {
         char[] buffer = ArrayPool<char>.Shared.Rent(256 + 1);
-        NativeMethods.GetWindowText(h, buffer, buffer.Length);
-        return new string(buffer);
+        try
+        {
+            int length = NativeMethods.GetWindowText(h, buffer, buffer.Length);
+            return new string(buffer, 0, length);
+        }
+        finally
+        {
+            ArrayPool<char>.Shared.Return(buffer);
+        }
     }
 }
 ```
@@ -270,24 +278,39 @@ Imports System.Buffers
 Imports System.Runtime.InteropServices
 
 Friend Class NativeMethods
-    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
-        (hWnd As IntPtr, <Out> lpString() As Char, nMaxCount As Integer)
+    Public Declare Auto Function GetWindowText Lib "User32.dll" _
+        (hWnd As IntPtr, <Out> lpString() As Char, nMaxCount As Integer) As Integer
 End Class
 
 Public Class Window
     Friend h As IntPtr ' Friend handle to Window.
     Public Function GetText() As String
         Dim buffer() As Char = ArrayPool(Of Char).Shared.Rent(256 + 1)
-        NativeMethods.GetWindowText(h, buffer, buffer.Length)
-        Return New String(buffer)
-   End Function
+        Try
+            Dim length As Integer = NativeMethods.GetWindowText(h, buffer, buffer.Length)
+            Return New String(buffer, 0, length)
+        Finally
+            ArrayPool(Of Char).Shared.Return(buffer)
+        End Try
+    End Function
 End Class
 ```
 
-Another solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+You might also consider passing a <xref:System.Text.StringBuilder> instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it doesn't exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` doesn't.
 
-> [!NOTE]
-> In general, passing `StringBuilder` arguments is not recommended if you're concerned about performance. For more information, see [String parameters](../../standard/native-interop/best-practices.md#string-parameters).
+> [!CAUTION]
+> Avoid `StringBuilder` parameters when performance matters. Marshalling a `StringBuilder` *always* creates a native buffer copy. A typical call to get a string out of native code can result in four allocations:
+>
+> 1. A managed `StringBuilder` buffer.
+> 1. A native buffer allocated during marshalling.
+> 1. If `[Out]`, the native buffer contents are copied into a newly allocated managed array.
+> 1. A `string` allocated by `ToString()`.
+>
+> Reusing the same `StringBuilder` across calls saves only one allocation. Using a character buffer rented from `ArrayPool<char>` is much more efficient—it reduces subsequent calls to just the allocation for `ToString()`.
+>
+> Additionally, the `StringBuilder` capacity does **not** include a hidden null terminator, which interop always accounts for. This is a common mistake, because most APIs want the size of the buffer *including* the null. This can result in wasted or unnecessary allocations, and it prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
+>
+> For more information, see [String parameters](../../standard/native-interop/best-practices.md#string-parameters) and [CA1838: Avoid `StringBuilder` parameters for P/Invokes](../../fundamentals/code-analysis/quality-rules/ca1838.md).
 
 ## See also
 

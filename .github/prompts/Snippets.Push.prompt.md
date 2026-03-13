@@ -1,4 +1,6 @@
 ---
+agent: agent
+model: Claude Sonnet 4 (copilot)
 description: Push inline code block snippets out of articles into standalone files with proper project structure.
 ---
 
@@ -8,12 +10,14 @@ description: Push inline code block snippets out of articles into standalone fil
 
 **IMPORTANT**: Don't share code across multiple articles. Each article should have its own copy of the snippet in its own folder structure.
 
+**IMPORTANT**: If only XAML snippets are present, only create C# projects to hold the XAML. Do not create VB projects for XAML-only snippets.
+
 ## Quick Reference
 
 **WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
-**FOLDER PATTERN:** `./snippets/{doc-file}/{csharp|vb}/`
-**PROJECT CREATION:** Always use the `dotnet new console` command to create a new project for the code language
-**LANGUAGES:** Create both C# and Visual Basic versions (if applicable).
+**FOLDER PATTERN:** `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
+**PROJECT CREATION:** Always use `dotnet new {winforms|wpf|console|classlib}` commands to create a new project for the code language
+**LANGUAGES:** Create both C# and VB versions
 **SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`
 **ARTICLE REFS:** Replace with `:::code language="csharp" source="./path" id="SnippetId":::`
 
@@ -26,9 +30,9 @@ description: Push inline code block snippets out of articles into standalone fil
 - User specifically requests snippet extraction
 
 **KEEP INLINE WHEN:**
-- Code blocks are 6 lines or shorter (unless you find an example in the article's snippets folder)
-- Code shows configuration snippets (XAML, JSON, XML) (unless you find an example in the article's snippets folder)
-- Code demonstrates simple one-liner examples (unless you find an example in the article's snippets folder)
+- Code blocks are 6 lines or shorter
+- Code shows configuration snippets (XAML, JSON, XML)
+- XAML snippets that are more than 3 lines
 - Code is pseudo-code or conceptual examples
 
 ## Target folder structure
@@ -36,21 +40,44 @@ description: Push inline code block snippets out of articles into standalone fil
 **IMPORTANT**: Follow a folder structure based on the article and code language:
 
 ### New snippet location (standard)
-- Path pattern: `./snippets/{doc-file}/{code-language}/`
-- Example: `./snippets/create-windows-forms-app/csharp/`
+- Path pattern: `./snippets/{doc-file}/[net-or-framework]/{code-language}/`
+- Example: `./snippets/create-windows-forms-app/net/csharp/`
 
 **Path components explained:**
 - `{doc-file}`: The markdown article filename WITHOUT the `.md` extension
   - Example: For article `create-windows-forms-app.md` → use `create-windows-forms-app`
+- `[net-or-framework]`: Choose based on target framework:
+  - `net`: For .NET (.NET 6 and newer)
+  - `framework`: For .NET Framework (4.8 and older)
+  - **Rule**: Only include this subfolder when the article demonstrates BOTH .NET and .NET Framework approaches. Otherwise, omit this folder. When in doubt, ask.
 - `{code-language}`: 
-  - `csharp`: For C# code
+  - `csharp`: For C# code or when demonstrating XAML
   - `vb`: For Visual Basic code
+
+## Framework targeting and project types
+
+**Determine target framework:**
+- Check article frontmatter `ms.service` value:
+  - `dotnet-framework` → .NET Framework 4.8
+  - `dotnet-desktop` → Current .NET (e.g., .NET 10)
+- Examine code patterns and article content
+
+**Create appropriate project with `dotnet new`:**
+
+| Project Type | Indicators | .NET Command | .NET Framework Command |
+|--------------|------------|--------------|------------------------|
+| **Windows Forms** | `System.Windows.Forms`, `Form`, `/winforms/` path | `dotnet new winforms` | `dotnet new winforms --framework net48` |
+| **WPF** | `System.Windows`, `Window`, XAML, `/wpf/` path | `dotnet new wpf` | `dotnet new wpf --framework net48` |
+| **Console** | `Console.WriteLine`, simple examples, no UI | `dotnet new console` | `dotnet new console --framework net48` |
+| **Class Library** | Reusable components, no entry point | `dotnet new classlib` | `dotnet new classlib --framework net48` |
 
 ## Push process
 
 ### 1. Analyze and prepare
-- Locate code to migrate
-- Create folder structure: `./snippets/{doc-file}/{csharp|vb}/`
+- Locate code blocks >6 lines or complete examples (unless overridden by user request)
+- Determine project type from code patterns and article location
+- Check framework targeting from frontmatter
+- Create folder structure: `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
 
 ### 2. Create projects and extract code
 - Run appropriate `dotnet new` command in each language folder, **don't** specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible
@@ -58,20 +85,21 @@ description: Push inline code block snippets out of articles into standalone fil
 - Add missing using statements, namespaces, class declarations
 - Modernize code patterns if targeting current .NET
 - Test compilation with `dotnet build`
+- If snippets are XAML-based, store them in a C# project
 
 ### 3. Add snippet references and update article
 - Add CamelCase region markers: `// <ButtonClick>` and `// </ButtonClick>`
 - Use same identifiers across C# and VB versions
 - Replace inline code with snippet references:
   ```markdown
-  :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
-  :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
+  :::code language="xaml" source="./snippets/doc-name/net/csharp/File.xaml" id="ButtonClick":::
+  :::code language="csharp" source="./snippets/doc-name/net/csharp/File.cs" id="ButtonClick":::
+  :::code language="vb" source="./snippets/doc-name/net/vb/File.vb" id="ButtonClick":::
   ```
 - DO NOT use language tabs, simply put them side-by-side
 - Verify all paths and references are correct
 
 ### 4. Make sure frontmatter specifies a language when required
-
 If both CSharp and VB examples are provided make sure the following frontmatter is at the top of the article:
 
 ```yml
@@ -79,6 +107,8 @@ dev_langs:
   - "csharp"
   - "vb"
 ```
+
+If just XAML is provided, don't use a `dev_langs` section.
 
 ## Common mistakes to avoid
 

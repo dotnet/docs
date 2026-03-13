@@ -1,14 +1,8 @@
 ---
 title: "Namespaces and using directives"
 description: Learn how to organize C# code with namespaces, file-scoped namespace declarations, global usings, static usings, and type aliases.
-ms.date: 03/04/2026
+ms.date: 03/13/2026
 ai-usage: ai-assisted
-helpviewer_keywords:
-  - "C# language, namespaces"
-  - "namespaces [C#]"
-  - "using directive [C#]"
-  - "global using [C#]"
-  - "file-scoped namespace [C#]"
 ---
 # Namespaces and using directives
 

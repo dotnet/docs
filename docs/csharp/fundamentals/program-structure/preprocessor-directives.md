@@ -6,6 +6,11 @@ ai-usage: ai-assisted
 ---
 # Preprocessor directives
 
+> [!TIP]
+> **New to developing software?** You won't need preprocessor directives right away. Focus on the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first and come back here when your projects require conditional compilation or build configuration.
+>
+> **Experienced in another language?** If you're familiar with `#ifdef` in C/C++ or conditional compilation in other languages, C# preprocessor directives work similarly. Skim ahead to the syntax you need.
+
 C# preprocessor directives tell the compiler what code to include, exclude, or treat differently when it builds your app. This guidance can change the resulting program. Preprocessor directives always start with `#` and must appear on their own line (ignoring leading whitespace). You can add a trailing comment after the directive. While the [language reference](../../language-reference/preprocessor-directives.md) documents all available directives, three groups cover everyday use:
 
 - **File-based apps** (`#:`) - configure file-based apps.

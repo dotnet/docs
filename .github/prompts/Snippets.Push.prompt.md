@@ -6,7 +6,7 @@ description: Push inline code block snippets out of articles into standalone fil
 
 # Push inline code snippets to files
 
-**IMPORTANT**: Unless otherwise asked to, **only** edit the article file in context. At the end of your operations you may ask for permission to edit other articles that might benefit from the same snippet extraction.
+**IMPORTANT**: Unless otherwise asked to, **only** extract snippets from the article file in context. At the end of your operations you may ask for permission to edit other articles that might benefit from the same snippet extraction.
 
 **IMPORTANT**: Don't share code across multiple articles. Each article should have its own copy of the snippet in its own folder structure.
 

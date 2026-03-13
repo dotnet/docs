@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Managed and unmanaged threading in Windows"
 title: "Managed and Unmanaged Threading in Windows"
-ms.date: "10/24/2018"
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 elpviewer_keywords: 
   - "threading [.NET], unmanaged"
   - "threading [.NET], managed"
@@ -20,7 +21,10 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
   
 ## Mapping from Win32 threading to managed threading
 
- The following table maps Win32 threading elements to their approximate runtime equivalent. Note that this mapping does not represent identical functionality. For example, **TerminateThread** does not execute **finally** clauses or free up resources, and cannot be prevented. However, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> executes all your rollback code, reclaims all the resources, and can be denied using <xref:System.Threading.Thread.ResetAbort%2A>. Be sure to read the documentation closely before making assumptions about functionality.  
+ The following table maps Win32 threading elements to their approximate runtime equivalent. Note that this mapping does not represent identical functionality. For example, **TerminateThread** does not execute **finally** clauses or free up resources, and cannot be prevented. However, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> executes all your rollback code, reclaims all the resources, and can be denied using <xref:System.Threading.Thread.ResetAbort%2A>. Be sure to read the documentation closely before making assumptions about functionality.
+
+> [!NOTE]
+> <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> is only available in .NET Framework. In .NET 5 and later versions, it throws a <xref:System.PlatformNotSupportedException>. For more information, see [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md).
   
 |In Win32|In the common language runtime|  
 |--------------|------------------------------------|  

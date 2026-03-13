@@ -1,7 +1,8 @@
 ---
 title: "Using threads and threading"
 description: Learn about using threads and threading in .NET, so you can write applications to perform many operations at the same time (multithreading).
-ms.date: "08/05/2022"
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "threading [.NET], about threading"
@@ -25,7 +26,9 @@ You create a new thread by creating a new instance of the <xref:System.Threading
 
 To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides a unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
-Sometimes it's not possible to stop a thread cooperatively because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method isn't supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use the <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType> method.
+Sometimes it's not possible to stop a thread cooperatively because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. In .NET Framework, you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method, which raises a <xref:System.Threading.ThreadAbortException> on the target thread. For more information, see [Destroying threads](destroying-threads.md).
+
+In .NET 5 and later versions (including .NET Core), <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> isn't supported and throws a <xref:System.PlatformNotSupportedException>. For more information, see [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md). If you need to terminate the execution of third-party code forcibly in .NET 5+, run it in a separate process and use the <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType> method.
 
 The <xref:System.Threading.CancellationToken?displayProperty=nameWithType> isn't available before .NET Framework 4. To stop a thread in older .NET Framework versions, use the thread synchronization techniques to implement the cooperative cancellation manually. For example, you can create the volatile boolean field `shouldStop` and use it to request the code executed by the thread to stop. For more information, see [volatile](../../csharp/language-reference/keywords/volatile.md) in C# Reference and <xref:System.Threading.Volatile?displayProperty=nameWithType>.
 

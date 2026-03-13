@@ -3,11 +3,6 @@ title: "Program organization"
 description: Learn how to organize C# programs using solutions, projects, assemblies, namespaces, and types to build maintainable, well-structured applications.
 ms.date: 03/04/2026
 ai-usage: ai-assisted
-helpviewer_keywords:
-  - "C# language, program organization"
-  - "assemblies [C#]"
-  - "namespaces [C#], organizing"
-  - "solutions [C#]"
 ---
 # Program organization
 
@@ -29,7 +24,7 @@ Each level serves a different purpose. Solutions organize your development workf
 
 ## Projects and assemblies
 
-Each project compiles into a single assembly: a `.dll` (class library) or `.exe` (executable). Split your code into multiple projects when you want to:
+Each project compiles into a single assembly: a class library or (executable). Split your code into multiple projects when you want to:
 
 - **Separate concerns** — keep your data access, business logic, and presentation layers independent.
 - **Share code** — create a class library that multiple applications reference.
@@ -49,11 +44,11 @@ dotnet add MyApp.Console reference MyApp.Core
 
 ## Namespaces mirror folder structure
 
-By convention, namespace names follow the folder structure of your project. This convention makes types easy to find—when you see `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder:
+By convention, namespace names follow the folder structure of your project. This convention makes it easy to find types. When you see `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder:
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 
-The .NET SDK supports this convention. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file. However, following the convention makes source easier to find.
+The .NET SDK supports this convention. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file. However, following the convention makes it easier to find source files.
 
 ## Choosing how to split namespaces
 

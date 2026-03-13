@@ -9,9 +9,9 @@ helpviewer_keywords:
 # General structure of a C# program
 
 > [!TIP]
-> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/overview.md) tutorials first. They walk you through writing your first C# programs before you learn about program structure.
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. They walk you through writing your first C# programs before you learn about program structure.
 >
-> **Experienced in another language?** You might want to skim the [Get started](../../tour-of-csharp/tutorials/overview.md) section for C#-specific syntax, then come back here.
+> **Experienced in another language?** You might want to skim the [Get started](../../tour-of-csharp/tutorials/index.md) section for C#-specific syntax, then come back here.
 
 You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time. The way you structure the entry point depends on which application style you choose.
 

@@ -11,7 +11,7 @@ The following APIs were added in .NET 10:
    - `JsonSerializer.DeserializeAsync<T>(PipeReader)` — direct PipeReader deserialization without Stream conversion.
    - `JsonSourceGenerationOptionsAttribute.ReferenceHandler` — specify ReferenceHandler in source-generated contexts to handle circular references.
 
-For full details and code examples, see: [.NET 10 Serialization update](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization)
+For full details and code examples, see: [.NET 10 Serialization update](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization).
 
 ## Best Practices
 

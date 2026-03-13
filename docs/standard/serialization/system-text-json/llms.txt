@@ -4,7 +4,14 @@
 
 ## What's New in .NET 10
 
-`JsonSerializerOptions.Strict` preset for best-practice defaults, `AllowDuplicateProperties` option to reject duplicate JSON properties, `PipeReader` deserialization support, and `ReferenceHandler` in `JsonSourceGenerationOptions`. For more details, see: [.NET 10 Serialization updates](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization).
+The following APIs were added in .NET 10:
+   
+   - `JsonSerializerOptions.Strict` / `JsonSerializerDefaults.Strict` — best-practice preset that disallows unmapped members, duplicate properties, and enforces nullable annotations.
+   - `JsonSerializerOptions.AllowDuplicateProperties` — option to reject duplicate JSON keys (disabled in Strict).
+   - `JsonSerializer.DeserializeAsync<T>(PipeReader)` — direct PipeReader deserialization without Stream conversion.
+   - `JsonSourceGenerationOptionsAttribute.ReferenceHandler` — specify ReferenceHandler in source-generated contexts to handle circular references.
+
+For full details and code examples, see: [.NET 10 Serialization update](https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md#serialization)
 
 ## Best Practices
 

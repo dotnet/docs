@@ -1,30 +1,42 @@
 ﻿using System;
 using UtilityLibraries;
 
-int row = 0;
+const int EntriesPerPage = 7;
 
-do
+int entryCount = 0;
+
+ResetConsole();
+
+while (true)
 {
-    if (row == 0 || row >= 25)
-        ResetConsole();
-
     string? input = Console.ReadLine();
-    if (string.IsNullOrWhiteSpace(input)) break;
-    Console.WriteLine($"Input: {input} {"Begins with uppercase? ",30}: " +
-                      $"{(input.StartsWithUpper() ? "Yes" : "No")}{Environment.NewLine}");
-    row += 3;
-} while (true);
-return;
 
-// Declare a ResetConsole local method
-void ResetConsole()
-{
-    if (row > 0)
+    if (string.IsNullOrWhiteSpace(input))
+        break;
+
+    if (entryCount >= EntriesPerPage)
     {
         Console.WriteLine("Press any key to continue...");
-        Console.ReadKey();
+        Console.ReadKey(true);
+        ResetConsole();
+        entryCount = 0;
     }
+
+    string result = input.StartsWithUpper() ? "Yes" : "No";
+
+    Console.WriteLine($"Input: {input}");
+    Console.WriteLine($"{"Begins with uppercase?",30}: {result}");
+    Console.WriteLine();
+
+    entryCount++;
+}
+
+return;
+
+void ResetConsole()
+{
     Console.Clear();
-    Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}");
-    row = 3;
+    Console.WriteLine();
+    Console.WriteLine("Press <Enter> only to exit; otherwise, enter a string and press <Enter>:");
+    Console.WriteLine();
 }

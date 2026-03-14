@@ -9,29 +9,29 @@ zone_pivot_groups: operating-systems-set-one
 
 # Authenticate .NET apps to Azure services during local development using brokered authentication
 
-[!INCLUDE [broker-intro](../includes/broker-intro.md)]
+[!INCLUDE [broker-intro](~/azure-dev-docs-pr/articles/includes/authentication/broker-introduction.md)]
 
 :::zone target="docs" pivot="os-windows"
 
-[!INCLUDE [broker-windows](../includes/broker-windows.md)]
+[!INCLUDE [broker-windows](~/azure-dev-docs-pr/articles/includes/authentication/broker-windows.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
-[!INCLUDE [broker-mac](../includes/broker-mac.md)]
+[!INCLUDE [broker-mac](~/azure-dev-docs-pr/articles/includes/authentication/broker-mac.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-[!INCLUDE [broker-linux](../includes/broker-linux.md)]
+[!INCLUDE [broker-linux](~/azure-dev-docs-pr/articles/includes/authentication/broker-linux.md)]
 
 :::zone-end
 
-[!INCLUDE [broker-configure-app](../includes/broker-configure-app.md)]
+[!INCLUDE [broker-configure-app](~/azure-dev-docs-pr/articles/includes/authentication/broker-configure-application.md)]
 
-[!INCLUDE [broker-assign-roles](../includes/broker-assign-roles.md)]
+[!INCLUDE [broker-assign-roles](~/azure-dev-docs-pr/articles/includes/authentication/broker-assign-roles.md)]
 
 ## Implement the code
 

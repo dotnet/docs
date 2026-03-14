@@ -21,7 +21,7 @@ Using dedicated application service principals allows you to adhere to the princ
 
 A different app registration should be created for each environment the app is hosted in. This allows environment specific resource permissions to be configured for each service principal and make sure an app deployed to one environment doesn't talk to Azure resources that are part of another environment.
 
-[!INCLUDE [auth-create-app-registration](../includes/auth-create-app-registration.md)]
+[!INCLUDE [auth-create-app-registration](~/azure-dev-docs-pr/articles/includes/authentication/create-app-registration.md)]
 
 ## Assign roles to the application service principal
 

@@ -10,7 +10,7 @@ ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
 # How to: Perform an XSLT transformation by using an assembly
 
 > [!NOTE]
-> Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
+> Script blocks and the XSLT compiler are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later, and assemblies compiled using xsltc.exe cannot be loaded into .NET Core or .NET 5 or later.
 
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The assembly can be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load(System.Type)?displayProperty=nameWithType> method.  
   

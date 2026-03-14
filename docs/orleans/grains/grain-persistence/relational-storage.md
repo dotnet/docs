@@ -249,7 +249,7 @@ After implementing a custom serializer, configure it using the <xref:Orleans.Con
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
 
-After implementing the serializers, they're registered internally with the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs). Note that direct application-level access to `AdoNetGrainStorage` to configure serialization isn't available in Orleans 3.x.
+After implementing the serializers, they're registered internally with the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStoreTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/Orleans.AdoNet.Tests/StorageTests/RelationalStoreTests.cs). Note that direct application-level access to `AdoNetGrainStorage` to configure serialization isn't available in Orleans 3.x.
 
 :::zone-end
 
@@ -331,4 +331,4 @@ You can test the altered scripts by running the Orleans test suite or directly i
 
 1. Add a new database setup script according to the [Realization of the goals](#realization-of-the-goals) section above.
 1. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are potentially used in some query operations, for example,, to select the correct statistics insert mode (i.e., `UNION ALL` with or without `FROM DUAL`).
-1. Orleans has comprehensive tests for all system stores: membership, reminders, and statistics. Add tests for the new database script by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) to define test functionality for the ADO invariant.
+1. Orleans has comprehensive tests for all system stores: membership, reminders, and statistics. Add tests for the new database script by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/Orleans.AdoNet.Tests/RelationalUtilities/RelationalStorageForTesting.cs) to define test functionality for the ADO invariant.

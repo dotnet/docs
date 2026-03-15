@@ -120,14 +120,12 @@ public class DependencyOrderedTests
     [Test]
     public void FirstTest()
     {
-        // This test runs first
     }
 
     [Test]
     [DependsOn(nameof(FirstTest))]
     public void SecondTest()
     {
-        // This test runs after FirstTest completes
     }
 }
 ```
@@ -147,7 +145,6 @@ When depending on overloaded test methods, specify the parameter types explicitl
 [DependsOn(nameof(SetupTest), [typeof(string), typeof(int)])]
 public void DependentTest()
 {
-    // This test runs after SetupTest(string, int) completes
 }
 ```
 

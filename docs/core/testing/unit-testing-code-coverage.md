@@ -309,6 +309,7 @@ After running this command, an HTML file represents the generated report.
 [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) is a lightweight and portable alternative to VSTest for running tests. Frameworks built on this platform use [Microsoft.Testing.Extensions.CodeCoverage](microsoft-testing-platform-extensions-code-coverage.md) for code coverage.
 
 The following frameworks support Microsoft.Testing.Platform:
+
 - **MSTest** (via MSTest runner)
 - **NUnit** (via NUnit runner)
 - **TUnit**
@@ -354,6 +355,7 @@ dotnet test --coverage --coverage-output-format cobertura
 ```
 
 Supported output formats include:
+
 - `coverage` (binary format, default)
 - `cobertura` (XML format)
 - `xml` (XML format)
@@ -361,7 +363,8 @@ Supported output formats include:
 ### Framework-specific documentation
 
 For detailed information about using Microsoft.Testing.Platform with specific frameworks, see:
-- [Unit testing with MSTest runner](unit-testing-mstest-runner-intro.md)
+
+- [Unit testing with MSTest](unit-testing-mstest-intro.md)
 - [Unit testing with NUnit runner](unit-testing-nunit-runner-intro.md)
 - [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md)
 - [Microsoft Testing Platform with xUnit.net](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)

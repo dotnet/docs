@@ -1,4 +1,8 @@
-﻿HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+﻿// <All>
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddHostedService<Worker>();
 builder.Services.AddSingleton<IMessageWriter, MessageWriter>();
@@ -24,7 +28,6 @@ public interface IMessageWriter
 }
 // </SnippetIMW>
 
-// <SnippetWorker>
 public sealed class Worker(IMessageWriter messageWriter) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -36,5 +39,4 @@ public sealed class Worker(IMessageWriter messageWriter) : BackgroundService
         }
     }
 }
-
-// </SnippetWorker>
+// </All>

@@ -1,9 +1,10 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 03/10/2026
 ms.topic: tutorial
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Custom grain storage
@@ -133,17 +134,13 @@ Next, create a factory that allows scoping the options to the provider name whil
 
 :::code source="snippets/custom-grain-storage/FileGrainStorageFactory.cs":::
 
-Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension internally registers the grain storage as a named service using <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A>, an extension provided by `Orleans.Core`.
+Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension registers the grain storage as a keyed singleton using <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedSingleton%2A?displayProperty=nameWithType>, the standard .NET 8+ keyed DI API.
 
 :::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 
-The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface:
+The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two keyed singleton services, one for each interface.
 
-```csharp
-return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
-    .AddSingletonNamedService(providerName,
-        (p, n) => (ILifecycleParticipant<ISiloLifecycle>)p.GetRequiredServiceByName<IGrainStorage>(n));
-```
+:::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs" id="KeyedRegistrations":::
 
 This enables adding the file storage using the extension on <xref:Orleans.Hosting.ISiloBuilder>:
 

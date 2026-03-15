@@ -18,7 +18,7 @@ When coding grains, all calls are asynchronous and potentially go over the netwo
 
 - The grain was activated on a silo currently unavailable due to a network partition, crash, or other reason. If the silo hasn't been declared dead yet, the request might time out.
 - The grain method call can throw an exception, signaling failure and inability to continue its job.
-- An activation of the grain doesn't exist and cannot be created because the <xref:Orleans.Grain.OnActivateAsync*> method throws an exception or deadlocks.
+- An activation of the grain doesn't exist and can't be created because the <xref:Orleans.Grain.OnActivateAsync*> method throws an exception or deadlocks.
 - Network failures prevent communication with the grain before the timeout occurs.
 - Other potential reasons.
 

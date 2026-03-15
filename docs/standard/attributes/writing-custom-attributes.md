@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "08/05/2022"
+ms.date: "03/02/2026"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "AttributeUsageAttribute class, custom attributes"
   - "Inherited property"
   - "attribute classes, declaring"
+ai-usage: ai-assisted
 ---
 # Write custom attributes
 
@@ -112,7 +113,33 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 > [!NOTE]
 > In Visual Basic, constructors for an attribute class shouldn't use a `ParamArray` argument.
 
- The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
+Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
+
+- Simple types (C# keyword / Visual Basic keyword / .NET runtime type):
+
+  | C# | Visual Basic | .NET runtime type |
+  |----|-------------|-------------------|
+  | `bool` | `Boolean` | <xref:System.Boolean> |
+  | `byte` | `Byte` | <xref:System.Byte> |
+  | `char` | `Char` | <xref:System.Char> |
+  | `double` | `Double` | <xref:System.Double> |
+  | `float` | `Single` | <xref:System.Single> |
+  | `int` | `Integer` | <xref:System.Int32> |
+  | `long` | `Long` | <xref:System.Int64> |
+  | `short` | `Short` | <xref:System.Int16> |
+  | `string` | `String` | <xref:System.String> |
+
+- <xref:System.Type>.
+- Enum types that are accessible at the attribute usage site.
+- In C#, `object` (when the value is one of the valid attribute argument types or a single-dimensional array of them).
+- Single-dimensional arrays of any of the preceding types.
+
+If you define a constructor that accepts a type outside this list, the attribute compiles successfully, but a compiler error occurs when you try to apply it. For more information about what expressions are allowed when applying an attribute, see [Apply attributes](applying-attributes.md).
+
+> [!NOTE]
+> The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
+
+The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
 
  [!code-csharp[Conceptual.Attributes.Usage#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#17)]
  [!code-vb[Conceptual.Attributes.Usage#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#17)]

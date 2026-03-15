@@ -105,7 +105,7 @@ public class ClassLifecycleExample
     [TestMethod]
     public async Task GetUsers_ReturnsSuccess()
     {
-        var response = await _client!.GetAsync("/users");
+        HttpResponseMessage response = await _client!.GetAsync("/users");
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
 }
@@ -232,7 +232,7 @@ public class TestLevelSetupExample
     [TestMethod]
     public void Add_TwoNumbers_ReturnsSum()
     {
-        var result = _calculator!.Add(2, 3);
+        int result = _calculator!.Add(2, 3);
         Assert.AreEqual(5, result);
     }
 }
@@ -293,7 +293,7 @@ public class TestLevelCleanupExample
     [TestMethod]
     public async Task GetData_ReturnsSuccess()
     {
-        var response = await _client!.GetAsync("https://example.com");
+        HttpResponseMessage response = await _client!.GetAsync("https://example.com");
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
 }
@@ -312,7 +312,7 @@ public class TestLevelCleanupExample
 > - [MSTEST0021](mstest-analyzers/mstest0021.md) - Prefer Dispose over TestCleanup methods
 > - [MSTEST0022](mstest-analyzers/mstest0022.md) - Prefer TestCleanup over Dispose methods
 >
-> If you have non-MSTest analyzers enabled, such as .NET code analysis rules, you might see [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) suggesting that you implement the dispose pattern when your test class owns disposable resources. This is expected behavior and you should follow the analyzer's guidance.
+> If you have non-MSTest analyzers enabled, such as .NET code analysis rules, you might see [CA1001](../../fundamentals/code-analysis/quality-rules/ca1001.md) suggesting that you implement the dispose pattern when your test class owns disposable resources. This is expected behavior and you should follow the analyzer's guidance.
 
 ### Complete test-level order
 

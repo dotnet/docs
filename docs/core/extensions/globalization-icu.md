@@ -79,7 +79,7 @@ By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithT
 
 You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it isn't ordinal.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
+For more information, see [Best practices for comparing strings in .NET](../../standard/base-types/best-practices-strings.md).
 
 #### String.EndsWith
 

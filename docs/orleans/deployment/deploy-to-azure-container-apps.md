@@ -55,7 +55,7 @@ curl -sSL https://aspire.dev/install.sh | bash
 
 The `aspire deploy` command is currently in preview and must be explicitly enabled:
 
-### [Windows (PowerShell)](#tab/windows)
+### [Windows](#tab/windows)
 
 ```powershell
 $env:DOTNET_ASPIRE_ENABLE_DEPLOY_COMMAND="true"
@@ -117,12 +117,12 @@ aspire deploy --deployment-params-file deployment-params.json
 
 When you deploy an Orleans Aspire application to Azure Container Apps, `aspire deploy` automatically provisions:
 
-- **Azure Container Apps environment** - The hosting environment for your containers
-- **Azure Container Registry (ACR)** - For storing your container images
-- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders
-- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming
-- **Azure Monitor / Application Insights** - For observability and distributed tracing
-- **Managed identities** - For secure, passwordless authentication between services
+- **Azure Container Apps environment** - The hosting environment for your containers.
+- **Azure Container Registry (ACR)** - For storing your container images.
+- **Redis Cache** - If your Orleans cluster uses Redis for clustering, grain storage, or reminders.
+- **Azure Storage** - If your Orleans cluster uses Azure Storage for clustering, grain storage, reminders, or streaming.
+- **Azure Monitor / Application Insights** - For observability and distributed tracing.
+- **Managed identities** - For secure, passwordless authentication between services.
 
 > [!TIP]
 > To update your app after code changes, simply run `aspire deploy` again. The CLI handles incremental updates efficiently.
@@ -563,7 +563,7 @@ As source code is updated and changes are `push`ed to the `main` branch of the r
 
 In addition to the visualizer from the Bicep extension, the Azure portal resource group page looks similar to the following example after provisioning and deploying the application:
 
-:::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
+:::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
 
 ## See also
 

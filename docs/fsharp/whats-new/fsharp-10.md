@@ -129,7 +129,7 @@ This feature strengthens parity with other F# language constructs that already s
 ## Tail-call support in computation expressions
 
 F# 10 adds [tail-call](../language-reference/functions/recursive-functions-the-rec-keyword.md#tail-recursion) optimizations for [computation expressions](../language-reference/computation-expressions.md).
-Computation-expression builders can now opt into these optimizations by implementing special methods.
+Computation-expression builders can now opt in to these optimizations by implementing special methods.
 
 When the compiler translates computation expressions into regular F# code (a process called desugaring), it recognizes when an expression like `return!`, `yield!`, or `do!` appears in a tail position.
 If your builder provides the following methods, the compiler routes those calls to optimized entry points:

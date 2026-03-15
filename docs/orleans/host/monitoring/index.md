@@ -315,35 +315,41 @@ The following table shows a collection of transaction meters used to monitor the
 | `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of failed transactions. |
 | `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of throttled transactions. |
 
-### Prometheus
+### Export metrics
 
-Various third-party metrics providers are available for use with Orleans. One popular example is [Prometheus](https://prometheus.io), which you can use to collect metrics from your app with OpenTelemetry.
+Various third-party metrics providers are available for use with Orleans. Export metrics from your app using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). Many observability platforms consume OTLP data directly or through an OpenTelemetry Collector, including [Prometheus](https://prometheus.io), Grafana, and Azure Monitor.
 
-To use OpenTelemetry and Prometheus with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
+To export metrics using OTLP with Orleans, install the [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/) NuGet package and call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
     .WithMetrics(metrics =>
     {
         metrics
-            .AddPrometheusExporter()
+            .AddOtlpExporter()
             .AddMeter("Microsoft.Orleans");
     });
 ```
 
-> [!IMPORTANT]
-> Both the [OpenTelemetry.Exporter.Prometheus](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus) and [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore) NuGet packages are currently in preview as release candidates. They're not recommended for production use.
+The `AddOtlpExporter` method ensures the OTLP exporter is added to the `builder`. Orleans uses a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. Use the `AddMeter` method to specify the name of the meter to subscribe to, in this case, `"Microsoft.Orleans"`.
 
-The `AddPrometheusExporter` method ensures the `PrometheusExporter` is added to the `builder`. Orleans uses a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. Use the `AddMeter` method to specify the name of the meter to subscribe to, in this case, `"Microsoft.Orleans"`.
-
-After configuring the exporter and building your app, call `MapPrometheusScrapingEndpoint` on the `IEndpointRouteBuilder` (the `app` instance) to expose the metrics to Prometheus. For example:
+You can configure the OTLP exporter endpoint and other options as needed. For example:
 
 ```csharp
-WebApplication app = builder.Build();
-
-app.MapPrometheusScrapingEndpoint();
-app.Run();
+builder.Services.AddOpenTelemetry()
+    .WithMetrics(metrics =>
+    {
+        metrics
+            .AddOtlpExporter(options =>
+            {
+                options.Endpoint = new Uri("http://localhost:4317");
+            })
+            .AddMeter("Microsoft.Orleans");
+    });
 ```
+
+> [!NOTE]
+> The default OTLP exporter configuration uses gRPC (typically port `4317`). To export metrics to Prometheus, send telemetry through an OpenTelemetry Collector or configure OTLP/HTTP settings instead.
 
 ## Distributed tracing
 
@@ -356,7 +362,7 @@ Regardless of the distributed tracing exporter you choose, call:
 
 Or set the `EnableDistributedTracing` config option to `true`.
 
-Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method:
+Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can export distributed traces using the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). To use OpenTelemetry with OTLP and Orleans, install the [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/) NuGet package and call the following <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> extension method in _Program.cs_:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -370,17 +376,14 @@ builder.Services.AddOpenTelemetry()
         tracing.AddSource("Microsoft.Orleans.Runtime");
         tracing.AddSource("Microsoft.Orleans.Application");
 
-        tracing.AddZipkinExporter(zipkin =>
+        tracing.AddOtlpExporter(otlp =>
         {
-            zipkin.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
+            otlp.Endpoint = new Uri("http://localhost:4317");
         });
     });
 ```
 
-> [!IMPORTANT]
-> The [OpenTelemetry.Exporter.Zipkin](https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin) NuGet package is currently in preview as a release candidate. It is not recommended for production use.
-
-The Zipkin trace is shown in the Jaeger UI (an alternative to Zipkin that uses the same data format):
+The OTLP exporter works with many observability backends including Jaeger, Zipkin, Grafana Tempo, and Azure Monitor. The traces can be visualized in tools like Jaeger UI:
 
 :::image type="content" source="../media/jaeger-ui.png" lightbox="../media/jaeger-ui.png" alt-text="Orleans GPS Tracker sample app: Jaeger UI trace.":::
 

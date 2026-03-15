@@ -22,7 +22,7 @@ If a class has many injected dependencies, it might be a sign that the class has
 
 ### Disposal of services
 
-The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> instances. Services resolved from the container should never be disposed by the developer. The container disposes services automatically based on their lifetime:
+The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> (or <xref:System.IAsyncDisposable.DisposeAsync%2A> on <xref:System.IAsyncDisposable>) instances. Services resolved from the container should never be disposed by the developer. The container disposes services automatically based on their lifetime:
 
 - **Transient** and **scoped** services are disposed at the end of the scope in which they were resolved. In apps that process requests, this is typically at the end of the request.
 - **Singleton** services are disposed when the service container is disposed, usually at application shutdown.
@@ -64,6 +64,9 @@ info: Microsoft.Hosting.Lifetime[0]
      Application is shutting down...
 SingletonDisposable.Dispose()
 ```
+
+> [!NOTE]
+> <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.DisposeAsync?displayProperty=nameWithType> awaits each <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> with `ConfigureAwait(false)`, so continuations from disposal do not attempt to resume on the original synchronization context. Do not rely on disposal completing on any particular context.
 
 ### Services not created by the service container
 

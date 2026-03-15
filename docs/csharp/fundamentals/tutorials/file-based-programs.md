@@ -14,7 +14,7 @@ In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> * Create a file-based program.
+> * Create a file-based app.
 > * Add Unix shebang (`#!`) support.
 > * Read command line arguments.
 > * Handle standard input.
@@ -23,7 +23,7 @@ In this tutorial, you:
 > * Use parsed command line results.
 > * Test the final application.
 
-You build a file-based program that writes text as ASCII art. The app is contained in a single file, uses NuGet packages, and implements core features.
+You build a file-based app that writes text as ASCII art. The app is contained in a single file, uses NuGet packages, and implements core features.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ You build a file-based program that writes text as ASCII art. The app is contain
 - Visual Studio Code. Download it from the [Visual Studio Code homepage](https://code.visualstudio.com/Download).
 - (Optional) The C# DevKit extension for Visual Studio Code. Download it from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-## Create a file-based program
+## Create a file-based app
 
 1. Open Visual Studio Code and create a new file named `AsciiArt.cs`. Enter the following text:
 
@@ -61,7 +61,7 @@ AsciiArt succeeded (7.3s) → Library/Application Support/dotnet/runfile/AsciiAr
 
 That output tells you where the temporary files and build outputs are placed. Throughout this tutorial, anytime you edit the source file, the `dotnet` host updates the executable before it runs.
 
-File-based apps are regular C# programs. The only limitation is that you must write them in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file-based program the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file-based program is growing too large for a single file, you can convert it to a project-based program and split the source into multiple files. File-based apps are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
+File-based apps are regular C# programs. The only limitation is that you must write them in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file-based app the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file-based app is growing too large for a single file, you can convert it to a project-based program and split the source into multiple files. File-based apps are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
 
 ## Unix shebang (`#!`) support
 
@@ -169,7 +169,7 @@ Now your program can accept either command line arguments or standard input.
 
 ## Write ASCII art output
 
-Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file-based program, use the `#:package` directive.
+Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file-based app, use the `#:package` directive.
 
 1. Add the following directive after the `#!` directive in your `AsciiArt.cs` file:
 
@@ -268,7 +268,7 @@ Test the application by running several different commands. If you have trouble,
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt":::
 
-In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on Unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
+In this tutorial, you learned to build a file-based app, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on Unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
 
 ## Related content
 

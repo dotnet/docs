@@ -538,8 +538,10 @@ items:
     displayName: >
       async, await,
       CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997,
-      CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS8935, CS8940, CS9123,
-      CS9330
+      CS1998, CS4001, CS4003, CS4005, CS4006, CS4007, CS4008, CS4009, CS4010, CS4011,
+      CS4012, CS4014, CS4015, CS4016, CS4027, CS4028, CS4029, CS4030, CS4031, CS4032,
+      CS4033, CS4034, CS8031, CS8100, CS8177, CS8178, CS8204, CS8403, CS8411, CS8892,
+      CS8935, CS8940, CS9123, CS9330
   - name: Interface implementation
     href: ./compiler-messages/interface-implementation-errors.md
     displayName: >
@@ -1699,10 +1701,6 @@ items:
       href: ./compiler-messages/cs8173.md
     - name: CS8174
       href: ./compiler-messages/cs8174.md
-    - name: CS8177
-      href: ./compiler-messages/cs8177.md
-    - name: CS8178
-      href: ./compiler-messages/cs8178.md
     - name: CS8210
       href: ./compiler-messages/cs8210.md
     - name: CS8333
@@ -1715,10 +1713,6 @@ items:
       href: ./compiler-messages/cs8354.md
     - name: CS8355
       href: ./compiler-messages/cs8355.md
-    - name: CS8403
-      href: ./compiler-messages/cs8403.md
-    - name: CS8411
-      href: ./compiler-messages/cs8411.md
     - name: CS8422
       href: ./compiler-messages/cs8422.md
     - name: CS8802

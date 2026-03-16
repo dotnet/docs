@@ -84,6 +84,13 @@ Complete the following steps:
     dotnet add package Microsoft.Extensions.Azure
     ```
 
+    > [!NOTE]
+    > When using `VisualStudioCodeCredential`, you must also install the `Azure.Identity.Broker` package:
+    >
+    > ```bash
+    > dotnet add package Azure.Identity.Broker
+    > ```
+
 1. In `Program.cs`, add `using` directives for the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces.
 
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.

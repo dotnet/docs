@@ -59,7 +59,7 @@ Jump to:
 |                    | Versions              |
 |--------------------|-----------------------|
 | **CLR**            | 4                     |
-| **Windows**        | ✔️ 11 September 2025 Release (version 26200)<br/>✔️ 11 October 2024 Release (version 26100)<br/>✔️ 11 October 2023 Release (version 22631)<br/>✔️ 11 September 2022 Release (version 22621)<br/>➕ 11 October 2021 Release (version 22000)<br/>➕ 10 October 2022 Update (22H2)<br/>➕ 10 November 2021 Update (Version 21H2)<br/>➕ 10 May 2021 Update (Version 21H1)<br/>➕ 10 October 2020 Update (Version 20H2)<br/>|
+| **Windows**        | ✔️ 11 September 2025 Release (Version 26200)<br/>✔️ 11 October 2024 Release (Version 26100)<br/>✔️ 11 October 2023 Release (Version 22631)<br/>✔️ 11 September 2022 Release (Version 22621)<br/>➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 October 2022 Update (Version 22H2)<br/>➕ 10 November 2021 Update (Version 21H2)<br/>➕ 10 May 2021 Update (Version 21H1)<br/>➕ 10 October 2020 Update (Version 20H2)<br/>|
 | **Windows Server** | ✔️ Windows Server 2025<br/>➕ Windows Server 2022 |
 
 To determine the installed .NET version, use the following `Release` DWORD:
@@ -79,7 +79,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 |         | Versions |
 |---------|----------|
 | **CLR** | 4        |
-|**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 October 2022 Update (22H2)<br/>✔️ 10 November 2021 Update (Version 21H2)<br/>✔️ 10 May 2021 Update (Version 21H1)<br/>✔️ 10 October 2020 Update (Version 20H2)<br/>✔️ 10 May 2020 Update (Version 2004)<br/>✔️ 10 November 2019 Update (Version 1909)<br/>✔️ 10 May 2019 Update (Version 1903)<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 October 2022 Update (Version 22H2)<br/>✔️ 10 November 2021 Update (Version 21H2)<br/>✔️ 10 May 2021 Update (Version 21H1)<br/>✔️ 10 October 2020 Update (Version 20H2)<br/>✔️ 10 May 2020 Update (Version 2004)<br/>✔️ 10 November 2019 Update (Version 1909)<br/>✔️ 10 May 2019 Update (Version 1903)<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 To determine the installed .NET version, use the following `Release` DWORD:

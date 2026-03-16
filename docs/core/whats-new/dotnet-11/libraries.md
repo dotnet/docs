@@ -97,9 +97,9 @@ A new <xref:System.Uri.UriSchemeData?displayProperty=nameWithType> constant has 
 
 The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now includes constants for common programming languages:
 
-- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.CSharp?displayProperty=nameWithType> - Indicates C# syntax.
-- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.FSharp?displayProperty=nameWithType> - Indicates F# syntax.
-- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.VisualBasic?displayProperty=nameWithType> - Indicates Visual Basic syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.CSharp> - Indicates C# syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.FSharp> - Indicates F# syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.VisualBasic> - Indicates Visual Basic syntax.
 
 These constants can be used with the `StringSyntax` attribute to provide better tooling support for string literals containing code in these languages.
 
@@ -109,7 +109,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 
 A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> from <xref:System.Text.Json.JsonSerializerOptions>.
 Previously, you had to manually downcast from the non-generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method.
-New generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)?displayProperty=nameWithType> methods return strongly typed metadata directly, eliminating the cast.
+New generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)> methods return strongly typed metadata directly, eliminating the cast.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
 

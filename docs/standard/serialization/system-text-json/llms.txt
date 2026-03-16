@@ -15,7 +15,7 @@ For full details and code examples, see: [.NET 10 Serialization update](https://
 
 ### Breaking Changes
 
-- **Property name conflict validation** — System.Text.Json now validates that user-defined property names don't conflict with metadata property names (`$type`, `$id`, `$ref`, or custom `TypeDiscriminatorPropertyName`). Previously, conflicts silently produced invalid JSON with duplicate properties; now an `InvalidOperationException` is thrown. Apply `[JsonIgnore]` on conflicting properties to resolve.
+- **Property name conflict validation** — System.Text.Json now validates that user-defined property names don't conflict with metadata property names (`$type`, `$id`, `$ref`, or custom `TypeDiscriminatorPropertyName`). Previously, conflicts silently produced invalid JSON with duplicate properties; now an `InvalidOperationException` is thrown. Rename the conflicting property or apply `[JsonIgnore]` to resolve.
 
 For details, see: [System.Text.Json checks for property name conflicts](https://github.com/dotnet/docs/blob/main/docs/core/compatibility/serialization/10/property-name-validation.md).
 

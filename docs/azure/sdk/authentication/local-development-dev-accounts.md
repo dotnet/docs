@@ -49,7 +49,7 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ### [Visual Studio](#tab/sign-in-visual-studio)
 
-[!INCLUDE [auth-visual-studio](~/azure-dev-docs-pr/articles/includes/authentication/visual-studio.md)]
+[!INCLUDE [auth-visual-studio](../includes/auth-visual-studio.md)]
 
 ### [Visual Studio Code](#tab/sign-in-visual-studio-code)
 

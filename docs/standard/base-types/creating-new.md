@@ -25,7 +25,7 @@ The easiest way to create a new <xref:System.String> object is simply to assign 
 
 ## Create strings using a class constructor
 
-You can use overloads of the <xref:System.String> class constructor to create strings from character arrays. You can also create a new string by duplicating a particular character a specified number of times. The <xref:System.String.%23ctor(System.ReadOnlySpan{System.Char})> constructor overload accepts a <xref:System.ReadOnlySpan%601> or a stack-allocated <xref:System.Span%601> of characters, which avoids a heap allocation for small strings of known size.
+You can use overloads of the <xref:System.String> class constructor to create strings from character arrays. You can also create a new string by duplicating a particular character a specified number of times. The <xref:System.String.%23ctor(System.ReadOnlySpan{System.Char})> constructor overload accepts a <xref:System.ReadOnlySpan%601> or a stack-allocated <xref:System.Span%601> of characters and avoids allocating an intermediate character array on the managed heap when you build small strings of a known size, although the resulting string instance is still allocated on the managed heap.
 
 ## Methods that return strings
 

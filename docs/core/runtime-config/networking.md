@@ -1,7 +1,7 @@
 ---
 title: Networking config settings
 description: Learn about runtime settings that configure networking for .NET apps.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
 ai-usage: ai-assisted
 ---
 # Runtime configuration options for networking
@@ -20,12 +20,11 @@ ai-usage: ai-assisted
 
 ## HTTP/3 protocol
 
-- Configures whether support for the HTTP/3 protocol is enabled.
 - Starting in .NET 7, HTTP/3 is enabled by default.
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled <br/>`true` - enabled |
+| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled <br>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
@@ -37,8 +36,8 @@ ai-usage: ai-assisted
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br/>`false` - don't include port in SPN, for example, `HTTP/host` |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br/>`0` - don't include port in SPN, for example, `HTTP/host` |
+| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br>`false` - don't include port in SPN, for example, `HTTP/host` |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br>`0` - don't include port in SPN, for example, `HTTP/host` |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
@@ -110,19 +109,5 @@ Configures whether Internet Protocol version 6 (IPv6) is disabled.
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.DisableIPv6` | `false` - enabled (default)<br/>`true` - disabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_DISABLEIPV6` | `0` - enabled (default)<br/>`1` - disabled |
-
-[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
-
-## UseSocketsHttpHandler
-
-Configures whether <xref:System.Net.Http.HttpClient> uses <xref:System.Net.Http.SocketsHttpHandler> or the older HTTP handler implementations. When set to `false`, <xref:System.Net.Http.HttpClientHandler> is used instead.
-
-> [!NOTE]
-> Starting in .NET 5, this setting is no longer available. <xref:System.Net.Http.SocketsHttpHandler> is the only HTTP handler available.
-
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | `true` - use <xref:System.Net.Http.SocketsHttpHandler> (default)<br/>`false` - use <xref:System.Net.Http.HttpClientHandler> |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | `1` - use <xref:System.Net.Http.SocketsHttpHandler> (default)<br/>`0` - use <xref:System.Net.Http.HttpClientHandler> |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]

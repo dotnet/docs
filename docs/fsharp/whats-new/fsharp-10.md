@@ -59,7 +59,7 @@ Script behavior has also changed.
 Previously, when you added a `#nowarn` directive anywhere in a script, it applied to the whole compilation.
 Now, its behavior in scripts matches that in `.fs` files, applying only until the end of the file or a corresponding `#warnon`.
 
-This feature implements [RFC FS-1146](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1146-scoped-nowarn.md).
+This feature implements [RFC FS-1146](https://github.com/fsharp/fslang-design/blob/main/FSharp-10.0/FS-1146-scoped-nowarn.md).
 
 ## Access modifiers on auto property accessors
 
@@ -91,7 +91,7 @@ type Ledger() =
     member private Balance : decimal with set
 ```
 
-This feature implements [RFC FS-1141](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1141-Allow-access-modifiers-to-auto-properties-getters-and-setters.md).
+This feature implements [RFC FS-1141](https://github.com/fsharp/fslang-design/blob/main/FSharp-10.0/FS-1141-Allow-access-modifiers-to-auto-properties-getters-and-setters.md).
 
 ## ValueOption optional parameters
 
@@ -165,7 +165,7 @@ This change can be breaking if a computation expression builder already defines 
 In most cases, existing builders continue to work without modification when compiled with F# 10.
 Older compilers will ignore the new `*Final` methods, so builders that must remain compatible with earlier compiler versions should not assume the compiler will invoke these methods.
 
-This feature implements [RFC FS-1330](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1330-support-tailcalls-in-computation-expressions.md).
+This feature implements [RFC FS-1330](https://github.com/fsharp/fslang-design/blob/main/FSharp-10.0/FS-1330-support-tailcalls-in-computation-expressions.md).
 
 ## Typed bindings in computation expressions without parentheses
 
@@ -268,7 +268,7 @@ If you want to suppress this warning, use the `NoWarn` property in your project 
 The explicit `seq` form improves code clarity and consistency with other computation expressions.
 Future versions of F# may make this an error, so we recommend adopting the explicit syntax when you update your code.
 
-This feature implements [RFC FS-1033](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1033-Deprecate-places-where-seq-can-be-omitted.md).
+This feature implements [RFC FS-1033](https://github.com/fsharp/fslang-design/blob/main/FSharp-10.0/FS-1033-Deprecate-places-where-seq-can-be-omitted.md).
 
 ## Attribute target enforcement
 

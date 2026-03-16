@@ -18,6 +18,7 @@ f1_keywords:
   - "CS8510"
   - "CS8512"
   - "CS8513"
+  - "CS8515"
   - "CS8516"
   - "CS8517"
   - "CS8518"
@@ -27,6 +28,7 @@ f1_keywords:
   - "CS8522"
   - "CS8523"
   - "CS8524"
+  - "CS8525"
   - "CS8780"
   - "CS8781"
   - "CS8782"
@@ -63,6 +65,7 @@ helpviewer_keywords:
   - "CS8510"
   - "CS8512"
   - "CS8513"
+  - "CS8515"
   - "CS8516"
   - "CS8517"
   - "CS8518"
@@ -72,6 +75,7 @@ helpviewer_keywords:
   - "CS8522"
   - "CS8523"
   - "CS8524"
+  - "CS8525"
   - "CS8780"
   - "CS8781"
   - "CS8782"
@@ -90,7 +94,7 @@ helpviewer_keywords:
   - "CS9337"
   - "CS9344"
   - "CS9345"
-ms.date: 12/12/2025
+ms.date: 03/16/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in pattern matching expressions
@@ -113,6 +117,7 @@ This article covers the following compiler errors and warnings:
 - [**CS8510**](#pattern-completeness-and-redundancy): *The pattern is unreachable. It has already been handled by a previous arm of the switch expression or it is impossible to match.*
 - [**CS8512**](#subpattern-errors): *The name '\_' refers to the constant, not the discard pattern. Use 'var \_' to discard the value, or '@\_' to refer to a constant by that name.*
 - [**CS8513**](#type-pattern-errors): *The name '\_' refers to the type '{0}', not the discard pattern. Use '@\_' for the type, or 'var \_' to discard.*
+- [**CS8515**](#switch-expression-syntax-errors): *Parentheses are required around the switch governing expression.*
 - [**CS8516**](#subpattern-errors): *The name '{0}' does not identify tuple element '{1}'.*
 - [**CS8517**](#subpattern-errors): *The name '{0}' does not match the corresponding 'Deconstruct' parameter '{1}'.*
 - [**CS8518**](#pattern-completeness-and-redundancy): *An expression of type '{0}' can never match the provided pattern.*
@@ -122,6 +127,7 @@ This article covers the following compiler errors and warnings:
 - [**CS8522**](#subpattern-errors): *Element names are not permitted when pattern-matching via 'System.Runtime.CompilerServices.ITuple'.*
 - [**CS8523**](#switch-expression-syntax-errors): *The discard pattern is not permitted as a case label in a switch statement. Use 'case var \_:' for a discard pattern, or 'case @\_:' for a constant named '\_'.*
 - [**CS8524**](#pattern-completeness-and-redundancy): *The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '{0}' is not covered.*
+- [**CS8525**](#subpattern-errors): *A variable designator must come after a property pattern.*
 - [**CS8780**](#subpattern-errors): *A variable may not be declared within a 'not' or 'or' pattern.*
 - [**CS8781**](#type-pattern-errors): *Relational patterns may not be used for a value of type '{0}'.*
 - [**CS8782**](#type-pattern-errors): *Relational patterns may not be used for a floating-point NaN.*
@@ -148,6 +154,7 @@ This article covers the following compiler errors and warnings:
 - **CS8504**: *Pattern missing*
 - **CS8505**: *A default literal 'default' is not valid as a pattern. Use another literal (e.g. '0' or 'null') as appropriate. To match everything, use a discard pattern '\_'.*
 - **CS8506**: *No best type was found for the switch expression.*
+- **CS8515**: *Parentheses are required around the switch governing expression.*
 - **CS8523**: *The discard pattern is not permitted as a case label in a switch statement. Use 'case var \_:' for a discard pattern, or 'case @\_:' for a constant named '\_'.*
 - **CS9134**: *A switch expression arm does not begin with a 'case' keyword.*
 - **CS9135**: *A constant value of type is expected*
@@ -161,6 +168,8 @@ Provide a pattern where one is expected (**CS8504**). A switch arm or `is` expre
 Don't use the `default` literal as a pattern (**CS8505**). The `default` keyword isn't valid in pattern matching. Use a specific literal value like `0` or `null` instead, or use the discard pattern `_` to match any value.
 
 Specify an explicit type for the switch expression result when the compiler can't deduce the best type from the arms (**CS8506**). This error occurs when the arms return values of different types that don't share a common type the compiler can infer automatically, such as method groups or lambdas. Assign the result to an explicitly typed variable instead of using `var`.
+
+Enclose the governing expression of a `switch` statement in parentheses and the body in curly braces (**CS8515**). The `switch` statement requires parentheses around the expression being evaluated and curly braces around the body. This error occurs when either the parentheses or curly braces are missing.
 
 Use `case var _:` instead of the bare discard `_` as a case label in a `switch` statement (**CS8523**). The bare discard pattern isn't allowed in switch statements because of ambiguity with a constant named `_`. Use `case var _:` for a discard, or `case @_:` to match a constant named `_`.
 
@@ -185,7 +194,7 @@ For more information about the correct syntax, see [Switch expression](../operat
 - **CS9336**: *The pattern is redundant.*
 - **CS9337**: *The pattern is too complex to analyze for redundancy.*
 
-Reorder or remove unreachable case labels in switch statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This can happen when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
+Reorder or remove unreachable case labels in switch statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This occurs when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
 
 Add switch arms that handle all possible input values to create exhaustive switch expressions (**CS8509**, **CS8524**, **CS8846**). Switch expressions must cover every possible value of the input type. Otherwise, the compiler can't guarantee that the expression produces a result for all inputs. The compiler warns separately for unnamed enum values (**CS8524**) and for cases where a `when` clause might match an otherwise-unhandled value (**CS8846**). Use the discard pattern (`_`) as a final catch-all arm to match any remaining values that you don't need to handle explicitly.
 
@@ -256,6 +265,7 @@ For more information about list pattern requirements and syntax, see [List patte
 - **CS8516**: *The name '{0}' does not identify tuple element '{1}'.*
 - **CS8517**: *The name '{0}' does not match the corresponding 'Deconstruct' parameter '{1}'.*
 - **CS8522**: *Element names are not permitted when pattern-matching via 'System.Runtime.CompilerServices.ITuple'.*
+- **CS8525**: *A variable designator must come after a property pattern.*
 - **CS8780**: *A variable may not be declared within a 'not' or 'or' pattern.*
 - **CS8918**: *Identifier or a simple member access expected.*
 
@@ -269,7 +279,9 @@ Use the correct element names in positional patterns for tuples (**CS8516**) and
 
 Don't use element names in positional patterns when matching via `ITuple` (**CS8522**). When a type is matched through the `ITuple` interface rather than through a `Deconstruct` method, there are no named elements. Remove the element names from the pattern.
 
-Don't declare variables within `not` or `or` pattern combinators (**CS8780**). Variable declarations in `not` patterns would never be definitely assigned, and variables in `or` patterns would only be assigned in one branch. Move the variable declaration outside the pattern combinator.
+Place the variable designator after the property pattern, not before it (**CS8525**). In a property pattern with a variable designation, the variable name must follow the closing brace of the pattern. For example, write `{ Length: > 0 } s` rather than `s { Length: > 0 }`.
+
+You can't declare variables within `not` or `or` pattern combinators (**CS8780**). Variable declarations in `not` patterns aren't definitely assigned, and variables in `or` patterns are only assigned in one branch. Move the variable declaration outside the pattern combinator.
 
 Use an identifier or a simple member access expression as property names in property patterns and positional subpatterns (**CS8918**). Complex expressions, method calls, or other non-simple member accesses aren't valid as the left-hand side of a property subpattern. Each subpattern name must be a direct property or field name, or a dotted member access path like `Property.SubProperty`.
 

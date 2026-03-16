@@ -1,8 +1,11 @@
 ---
 title: "Program organization"
 description: Learn how to organize C# programs using solutions, projects, assemblies, namespaces, and types to build maintainable, well-structured applications.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
 ai-usage: ai-assisted
+
+#customer intent: As a C# developer, I want to understand how to organize my code using solutions, projects, assemblies, and namespaces so that I can build maintainable applications.
+
 ---
 # Program organization
 
@@ -85,8 +88,8 @@ Default to `internal` for types that other projects don't need. This practice hi
 - **Use `global using` directives.** Place common imports in a `GlobalUsings.cs` file to eliminate repetitive `using` lines across files. For more information, see [Namespaces and using directives](namespaces.md).
 - **Default to `internal`.** Only mark types `public` when other assemblies genuinely need them. You can always widen access later; narrowing it is a breaking change.
 
-## See also
+## Related content
 
-- [Namespaces and using directives](namespaces.md) — declare namespaces, import types with `using`, and configure global usings.
-- [Assemblies in .NET](../../../standard/assembly/index.md) — learn about assemblies, versioning, and deployment.
-- [.NET project SDKs](../../../core/project-sdk/overview.md) — view project file settings including `RootNamespace` and `ImplicitUsings`.
+- [Namespaces and using directives](namespaces.md)
+- [Assemblies in .NET](../../../standard/assembly/index.md)
+- [.NET project SDKs](../../../core/project-sdk/overview.md)

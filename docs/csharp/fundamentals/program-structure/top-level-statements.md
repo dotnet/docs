@@ -1,7 +1,11 @@
 ---
 title: "Top-level statements - programs without Main methods"
 description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
+ai-usage: ai-assisted
+
+#customer intent: As a C# developer, I want to understand top-level statements so that I can write programs without explicit Main method boilerplate.
+
 ---
 # Top-level statements - programs without `Main` methods
 
@@ -65,7 +69,8 @@ The compiler generates a method to serve as the program entry point for a projec
 
 Starting with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* by using the command `dotnet <file.cs>`, or by using the `#!/usr/bin/env dotnet` directive as the first line (Unix shells only).
 
-## C# language specification
+## Related content
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-[Feature specification - Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)
+- [Main() and command-line arguments](main-command-line.md)
+- [General structure of a C# program](index.md)
+- [Feature specification - Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)

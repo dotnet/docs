@@ -1,7 +1,9 @@
 ---
 title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
+ai-usage: ai-assisted
+#customer intent: As a C# developer, I want to understand the Main() method and command-line arguments so that I can define and control the entry point of my application.
 ---
 # Main() and command-line arguments
 
@@ -89,7 +91,7 @@ For a working example, see [How to display command-line arguments](../tutorials/
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See also
+## Related content
 
 - <xref:System.Environment?displayProperty=nameWithType>
 - [How to display command line arguments](../tutorials/how-to-display-command-line-arguments.md)

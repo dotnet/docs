@@ -1,8 +1,12 @@
 ---
 title: "General structure of a C# program"
 description: Learn how C# programs are structured, including the choice between file-based and project-based apps, top-level statements and Main method entry points, and the building blocks that make up every program.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
+ms.topic: concept-article
 ai-usage: ai-assisted
+
+#customer intent: As a C# developer, I want to understand how C# programs are structured so that I can choose the right application style and organize my code effectively.
+
 ---
 # General structure of a C# program
 
@@ -108,9 +112,7 @@ var f = Math.Max(a, b) + Math.Max(c, d);
 
 For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
-## Related sections
-
-Learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
+## Related content
 
 - [Classes](../types/classes.md)
 - [Structs](../../language-reference/builtin-types/struct.md)
@@ -118,7 +120,4 @@ Learn about these program elements in the [types](../types/index.md) section of 
 - [Interfaces](../types/interfaces.md)
 - [Enums](../../language-reference/builtin-types/enum.md)
 - [Delegates](../../delegates-overview.md)
-
-## C# language specification
-
-For more information, see [Basic concepts](~/_csharpstandard/standard/basic-concepts.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+- [Basic concepts in the C# language specification](~/_csharpstandard/standard/basic-concepts.md)

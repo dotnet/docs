@@ -1,8 +1,11 @@
 ---
 title: "Preprocessor directives"
-description: Learn how to use the most common C# preprocessor directives—conditional compilation, regions, nullable context control, and warning suppression—in everyday development.
-ms.date: 03/13/2026
+description: Learn how to use the most common C# preprocessor directives—conditional compilation, regions, and warning suppression—in everyday development.
+ms.date: 03/16/2026
 ai-usage: ai-assisted
+
+#customer intent: As a C# developer, I want to understand preprocessor directives so that I can control conditional compilation, configure file-based apps, and manage compiler warnings.
+
 ---
 # Preprocessor directives
 
@@ -16,7 +19,6 @@ C# preprocessor directives tell the compiler what code to include, exclude, or t
 - **File-based apps** (`#:`) - configure file-based apps.
 - **Conditional compilation** (`#if` / `#elif` / `#else` / `#endif`) — include or exclude code based on build configuration or target framework.
 - **Warning suppression** (`#pragma warning`) — suppress or restore specific compiler warnings.
-- **Nullable context** (`#nullable`) — control nullable reference type analysis at a fine-grained level.
 
 ## File-based app directives
 
@@ -73,6 +75,7 @@ Use `#pragma warning disable` to suppress specific compiler warnings, and `#prag
 > [!TIP]
 > Always specify the warning number, such as `CS0168`, rather than disabling all warnings. This approach keeps the suppression targeted and makes it clear *why* a warning is being suppressed.
 
-## See also
+## Related content
 
-- [C# preprocessor directives (language reference)](../../language-reference/preprocessor-directives.md) — complete reference for all preprocessor directives.
+- [C# preprocessor directives (language reference)](../../language-reference/preprocessor-directives.md)
+- [File-based apps](../../../core/sdk/file-based-apps.md)

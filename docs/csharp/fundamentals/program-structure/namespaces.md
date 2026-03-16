@@ -1,8 +1,11 @@
 ---
 title: "Namespaces and using directives"
 description: Learn how to organize C# code with namespaces, file-scoped namespace declarations, global usings, static usings, and type aliases.
-ms.date: 03/13/2026
+ms.date: 03/16/2026
 ai-usage: ai-assisted
+
+#customer intent: As a C# developer, I want to understand namespaces and using directives so that I can organize my types and simplify how I reference them in code.
+
 ---
 # Namespaces and using directives
 
@@ -90,6 +93,7 @@ Starting with C# 12, you can alias any type, including tuples and pointer types:
 
 For more advanced scenarios where two assemblies define the same fully qualified type name, use [extern alias](../../language-reference/keywords/extern-alias.md) to disambiguate between them.
 
-## C# language specification
+## Related content
 
-For more information, see the [Namespaces](~/_csharpstandard/standard/namespaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+- [`using` directive (language reference)](../../language-reference/keywords/using-directive.md)
+- [Namespaces in the C# language specification](~/_csharpstandard/standard/namespaces.md)

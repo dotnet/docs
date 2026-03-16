@@ -85,7 +85,7 @@ Complete the following steps:
     ```
 
     > [!NOTE]
-    > When using `VisualStudioCodeCredential`, you must also install the `Azure.Identity.Broker` package:
+    > When using `VisualStudioCodeCredential`, you must also install the [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) package:
     >
     > ```dotnetcli
     > dotnet add package Azure.Identity.Broker

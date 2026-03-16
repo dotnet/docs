@@ -21,11 +21,11 @@ ai-usage: ai-assisted
 ## HTTP/3 protocol
 
 - Configures whether support for the HTTP/3 protocol is enabled.
-- In .NET 6, HTTP/3 is disabled by default and must be enabled explicitly. Starting in .NET 7, HTTP/3 is enabled by default.
+- Starting in .NET 7, HTTP/3 is enabled by default.
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled (default in .NET 6)<br/>`true` - enabled |
+| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled <br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
@@ -37,8 +37,8 @@ ai-usage: ai-assisted
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - includes port number in SPN, for example, `HTTP/host:port`<br/>`false` - doesn't include port in SPN, for example, `HTTP/host` |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - includes port number in SPN, for example, `HTTP/host:port`<br/>`0` - doesn't include port in SPN, for example, `HTTP/host` |
+| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br/>`false` - don't include port in SPN, for example, `HTTP/host` |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br/>`0` - don't include port in SPN, for example, `HTTP/host` |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 

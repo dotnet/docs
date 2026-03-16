@@ -1,5 +1,6 @@
 ﻿' <snippet100>
 ' <snippet1>
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Threading.Tasks.Dataflow
@@ -76,8 +77,8 @@ Namespace DataflowBatchDatabase
                     For i As Integer = 0 To employees.Length - 1
                         ' Set parameters.
                         command.Parameters.Clear()
-                        command.Parameters.Add("@lastName", employees(i).LastName)
-                        command.Parameters.Add("@firstName", employees(i).FirstName)
+                        command.Parameters.Add("@lastName", SqlDbType.NVarChar).Value = employees(i).LastName
+                        command.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = employees(i).FirstName
 
                         ' Execute the command.
                         command.ExecuteNonQuery()

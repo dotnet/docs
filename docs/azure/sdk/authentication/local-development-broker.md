@@ -97,7 +97,7 @@ The Azure Identity library provide interactive brokered authentication using <xr
 2. Get a reference to the parent window on top of which the account picker dialog should appear.
 3. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> using <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
+    :::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
 
 :::zone-end
 

@@ -212,7 +212,7 @@ For more information about exhaustiveness requirements and pattern optimization,
 - **CS8117**: *Invalid operand for pattern match; value required, but found expression.*
 - **CS8121**: *An expression of source type cannot be handled by a pattern of target type.*
 - **CS8208**: *It is not legal to use the type 'dynamic' in a pattern.*
-- **CS8508**: *The syntax 'var' for a pattern is not permitted to refer to a type, but `var` is in scope here.*
+- **CS8508**: *The syntax 'var' for a pattern is not permitted to refer to a type, but `var` type is in scope here.*
 - **CS8513**: *The name '\_' refers to the type `_`, not the discard pattern. Use '@\_' for the type, or 'var \_' to discard.*
 - **CS8521**: *Pattern-matching is not permitted for pointer types.*
 - **CS8781**: *Relational patterns may not be used for a value of type.*

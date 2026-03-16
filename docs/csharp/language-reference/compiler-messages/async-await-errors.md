@@ -98,7 +98,7 @@ ai-usage: ai-assisted
 
 This article covers the following compiler errors:
 
-- [**CS1983**](#async-method-signature-requirements): *Since this is an async method, the return expression must be of type '`Task<T>`' rather than '`T`'.*
+- [**CS1983**](#async-method-signature-requirements): *Since this is an async method, the return expression must be of type '`T`' rather than '`Task<T>`'.*
 - [**CS1985**](#await-expression-requirements): *Cannot await in a catch clause.*
 - [**CS1986**](#await-expression-requirements): *'`await`' requires that the type have a suitable '`GetAwaiter`' method.*
 - [**CS1989**](#async-practices): *Async lambda expressions cannot be converted to expression trees.*
@@ -168,7 +168,7 @@ The following items explain how to correct each error. For more information abou
 
 - Add the [`async`](../keywords/async.md) modifier to the method or lambda expression that contains the [`await`](../operators/await.md) expression (**CS1992**, **CS4032**, **CS4033**, **CS4034**). The compiler requires the `async` modifier so it can generate the state machine that handles asynchronous suspension and resumption. The three variants of this error provide context-specific suggestions for the correct return type.
 - Move `await` expressions out of [`catch`](../statements/exception-handling-statements.md#the-try-catch-statement) blocks when you target C# 5 or earlier (**CS1985**). Starting with C# 6, the compiler supports `await` in both `catch` and `finally` blocks. This error is no longer produced in C# 6 and later.
-- Move `await` expressions out of [`lock` statement](../statements/lock.md) blocks (**CS1996**). Async suspension while holding a lock risks deadlocks - the lock is held across thread switches where other code might be waiting for the same lock.
+- Move `await` expressions out of [`lock` statement](../statements/lock.md) blocks (**CS1996**). Async suspension while holding a lock risks deadlocks. The lock is held across thread switches where other code might be waiting for the same lock.
 - Restructure [query expressions](../keywords/query-keywords.md) so that `await` appears only in the first collection expression of the initial `from` clause or in the collection expression of a `join` clause (**CS1995**). Other query clauses translate into lambda expressions that don't support async suspension.
 - Change the awaited expression's type so that it exposes an accessible `GetAwaiter()` method that follows the [awaiter pattern](../operators/await.md) (**CS1986**, **CS4028**). The type can implement the pattern directly or through an extension method. If the `GetAwaiter` method exists but you're missing a `using` directive for `System`, the compiler produces the more specific **CS4028** message instead of **CS1986**.
 - Ensure the awaiter type returned by `GetAwaiter()` has `IsCompleted`, `OnCompleted`, and `GetResult` members and implements <xref:System.Runtime.CompilerServices.INotifyCompletion> or <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion> (**CS4011**, **CS4027**). The [`await` expression](../operators/await.md) depends on these members to check completion status, register continuations, and retrieve results.
@@ -182,7 +182,7 @@ The following items explain how to correct each error. For more information abou
 
 ## Async method signature requirements
 
-- **CS1983**: *Since this is an async method, the return expression must be of type '`Task<T>`' rather than '`T`'.*
+- **CS1983**: *Since this is an async method, the return expression must be of type 'T' rather than '`Task<T>`'.*
 - **CS1994**: *The '`async`' modifier can only be used in methods that have a body.*
 - **CS4009**: *A void or int returning entry point cannot be async.*
 - **CS8892**: *Method will not be used as an entry point because a synchronous entry point was found.*

@@ -213,4 +213,3 @@ When enabled, <xref:System.Net.HttpListener> buffers response data in the kernel
 | **runtimeconfig.json** | `System.Net.HttpListener.EnableKernelResponseBuffering` | `false` - disabled (default)<br>`true` - enabled |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
-

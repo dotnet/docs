@@ -1,9 +1,10 @@
 ---
 title: SIMD-accelerated types in .NET
-description: This article describes SIMD-enable types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
+description: This article describes SIMD-enabled types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
 author: FIVIL
 ms.author: tagoo
-ms.date: 04/28/2020
+ms.date: 03/17/2026
+ai-usage: ai-assisted
 ---
 
 # Use SIMD-accelerated numeric types
@@ -33,7 +34,7 @@ The SIMD-accelerated types are implemented in such a way that they can be used w
 
 Before executing custom SIMD algorithms, it's possible to check if the host machine supports SIMD by using <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>, which returns a <xref:System.Boolean>. This doesn't guarantee that SIMD-acceleration is enabled for a specific type, but is an indicator that it's supported by some types.
 
-## Simple Vectors
+## Simple vectors
 
 The most primitive SIMD-accelerated types in .NET are <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> types, which represent vectors with 2, 3, and 4 <xref:System.Single> values. The example below uses <xref:System.Numerics.Vector2> to add two vectors.
 

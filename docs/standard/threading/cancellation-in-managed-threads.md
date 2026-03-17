@@ -132,9 +132,9 @@ The general pattern for implementing the cooperative cancellation model is:
 
 ### Listening to multiple tokens simultaneously
 
- In some cases, a listener may have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation may have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token.
+ In some cases, a listener might have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation might have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token.
 
- The following example shows the most common use of a linked token: a child operation that is cancelled whenever either the parent token or the child token is cancelled.
+ The following example shows the most common use of a linked token: a child token that is cancelled when the parent token is cancelled. You can also cancel the child independently by calling `Cancel` on the child `CancellationTokenSource`.
 
 :::code language="csharp" source="./snippets/cancellation-in-managed-threads/csharp/LinkedTokens/Program.cs" id="LinkedTokens":::
 :::code language="vb" source="./snippets/cancellation-in-managed-threads/vb/LinkedTokens/Program.vb" id="LinkedTokens":::

@@ -1,6 +1,6 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~91-article restructuring into ~31 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 3 and 7.
+**TL;DR:** Break the ~91-article restructuring into ~31 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
 
 **Conventions for every PR:**
 - Update `toc.yml` incrementally so new content is navigable immediately.
@@ -12,6 +12,11 @@
 - Prefer articles that are between a 5 and 10 minute read (roughly 1000–2000 words). Longer and shorter artiles are allowed, but should be the exception.
 - Cross reference liberally. However, it's assumed that readers are familiar with content in the "Get started" section. Links to that section should be minimal, and possibly scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
 - If and only if a feature was first added in one of the last three released versions (C# 12 - 14) mention the first it was first introduced.
+- Every article must include a tip near the top that identifies where the article sits in the four-tier content structure (*Get started* → *Fundamentals* → *Deep dives* → *Reference*), describes who it's written for, and routes readers to the right tier based on their experience level (Goal 1).
+- Set the `ms.topic` metadata value in each article's YAML front matter to match the article's content type (`overview`, `tutorial`, `concept`, `how-to`, `troubleshooting`, or `reference`).
+- After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links).
+- Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
+- When recommending a modern feature over an older alternative, always include a justification—state *why* the recommended approach is preferred. Never describe older features as obsolete or deprecated (Goal 9).
 
 ## Phase A: Program Structure (§7)
 
@@ -310,7 +315,7 @@
 
 - After each PR: verify redirect JSON entries resolve correctly
 - After each "pull" PR: confirm the old URL redirects to the new location
-- Spot-check 2–3 code samples per PR against the feature checklist (Goals 3 & 7)
+- Spot-check 2–3 code samples per PR against the feature checklist (Goals 4 & 8)
 - After all PRs: full link-check pass across the Fundamentals section and cross-referencing sections
 
 ## Decisions

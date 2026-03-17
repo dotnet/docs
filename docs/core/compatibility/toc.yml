@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 11.md
+          - name: Extensions
+            items:
+              - name: LoggerMessage source generator diagnostics can't be suppressed with #pragma
+                href: extensions/11.0/loggermessage-pragma-suppression.md
           - name: Core .NET libraries
             items:
               - name: DeflateStream and GZipStream write headers and footers for empty payload

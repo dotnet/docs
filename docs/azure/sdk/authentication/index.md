@@ -88,4 +88,4 @@ A service principal is created in a Microsoft Entra tenant to represent an app a
 For apps hosted on-premises, you can use a service principal to authenticate to Azure resources. This involves creating a service principal in Microsoft Entra ID, assigning it the necessary permissions, and configuring your app to use its credentials. This method allows your on-premises app to securely access Azure services.
 
 > [!div class="nextstepaction"]
-> [Authenticate your on-prem app using a service principal](local-development-service-principal.md)
+> [Authenticate your on-prem app using a service principal](on-premises-apps.md)

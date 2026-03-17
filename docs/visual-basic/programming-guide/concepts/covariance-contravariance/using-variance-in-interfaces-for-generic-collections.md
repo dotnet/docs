@@ -82,11 +82,7 @@ Class PersonComparer
         Implements IEqualityComparer(Of Person).GetHashCode
 
         If person Is Nothing Then Return 0
-        Dim hashFirstName =
-            If(person.FirstName Is Nothing,
-            0, person.FirstName.GetHashCode())
-        Dim hashLastName = person.LastName.GetHashCode()
-        Return hashFirstName Xor hashLastName
+        Return HashCode.Combine(person.FirstName, person.LastName)
     End Function
 End Class
 

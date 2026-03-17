@@ -56,7 +56,7 @@ ai-usage: ai-assisted
 ## HTTP/2 stream receive window size
 
 - Configures the maximum size of the HTTP/2 stream receive window.
-- Defaults to 16 MB. The value can't be less than 65,535.
+- Defaults to 16 MB. Values below 65,535 are clamped to 65,535. There's no hard upper limit, but increasing this setting beyond the default is only beneficial on networks that are both high throughput and high latency.
 
 | | Setting name | Values |
 | - | - | - |
@@ -64,8 +64,11 @@ ai-usage: ai-assisted
 
 ## HTTP/2 stream window scale threshold
 
-- Configures the multiplier used for the HTTP/2 stream window scale threshold. This multiplier controls how aggressively the receive window grows. Higher values result in a more conservative window growth, which reduces peak throughput. The value can't be less than 0.
-- Defaults to 1.0.
+- Configures the multiplier that controls how aggressively the HTTP/2 stream receive window grows. Higher values result in a more conservative window growth, which reduces peak throughput.
+- Defaults to 1.0. Values below 0 are reset to the default. There's no hard upper limit, but values much above the default progressively limit per-request throughput.
+
+> [!NOTE]
+> This setting is intended for advanced diagnostics and internal tuning. Most developers don't need to change it.
 
 | | Setting name | Values |
 | - | - | - |
@@ -87,6 +90,9 @@ Configures whether distributed tracing activity propagation is enabled for <xref
 Configures the timeout (in milliseconds) for completing a pending connection attempt after its initiating HTTP request finishes. When a connection is still being established after the request completes, this timeout determines how long to wait before abandoning the connection attempt.
 
 - Defaults to 5,000 (5 seconds).
+- Set to `-1` to wait indefinitely until the connection completes.
+- Set to `0` to cancel the pending connection immediately when the request completes.
+- There's no hard upper limit, but very large values are impractical.
 
 | | Setting name | Values |
 | - | - | - |
@@ -132,7 +138,10 @@ Configures whether socket continuations are allowed to run on the event thread i
 
 ## Socket thread count
 
-Configures the number of threads used for socket I/O. When not overridden, the value is calculated based on processor count and architecture. Use this setting for extreme loads only.
+Configures the number of threads used for socket I/O. When not overridden, the value is calculated based on processor count and architecture. Practical values are in the range `[1, ProcessorCount]`. Values outside this range aren't rejected but are unlikely to improve performance.
+
+> [!NOTE]
+> This setting is intended for extreme load scenarios. Most developers don't need to change it.
 
 | | Setting name | Values |
 | - | - | - |

@@ -1,7 +1,7 @@
 ---
 title: Channels
 description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
-ms.date: 10/22/2025
+ms.date: 03/17/2026
 ai-usage: ai-assisted
 ---
 
@@ -14,49 +14,6 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 ## Producer/consumer conceptual programming model
 
 Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model passes data from one party to another through a first-in first-out ("FIFO") queue. Think of channels as any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or whether the channel is accessed by multiple producers or multiple consumers concurrently.
-
-## Bounding strategies
-
-Depending on how a `Channel<T>` is created, its reader and writer behave differently.
-
-To create a channel that specifies a maximum capacity, call <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType>. To create a channel that is used by any number of readers and writers concurrently, call <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType>. Each bounding strategy exposes various creator-defined options, either <xref:System.Threading.Channels.BoundedChannelOptions> or <xref:System.Threading.Channels.UnboundedChannelOptions> respectively.
-
-> [!NOTE]
-> Regardless of the bounding strategy, a channel always throws a <xref:System.Threading.Channels.ChannelClosedException> when it's used after it's been closed.
-
-### Unbounded channels
-
-To create an unbounded channel, call one of the <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType> overloads:
-
-```csharp
-var channel = Channel.CreateUnbounded<T>();
-```
-
-When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify nondefault behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's capacity is unbounded and all writes are performed synchronously. For more examples, see [Unbounded creation patterns](#unbounded-creation-patterns).
-
-### Bounded channels
-
-To create a bounded channel, call one of the <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType> overloads:
-
-```csharp
-var channel = Channel.CreateBounded<T>(7);
-```
-
-The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel asynchronously blocks the producer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Bounded channels can be created with any capacity value greater than zero. For other examples, see [Bounded creation patterns](#bounded-creation-patterns).
-
-#### Full mode behavior
-
-When using a bounded channel, you can specify the behavior the channel adheres to when the configured bound is reached. The following table lists the full mode behaviors for each <xref:System.Threading.Channels.BoundedChannelFullMode> value:
-
-| Value | Behavior |
-|--|--|
-| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync` wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
-| <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
-| <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
-| <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |
-
-> [!IMPORTANT]
-> Whenever a <xref:System.Threading.Channels.Channel%602.Writer%2A?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel%602.Reader%2A?displayProperty=nameWithType> can consume, the channel's writer experiences back pressure.
 
 ## Producer APIs
 
@@ -165,6 +122,66 @@ In the preceding code, the consumer waits to read data. Once the data is availab
 :::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="awaitforeach":::
 
 The preceding code uses the <xref:System.Threading.Channels.ChannelReader%601.ReadAllAsync%2A> method to read all of the coordinates from the channel.
+
+### Multiple producers and consumers
+
+Channels support multiple concurrent producers and consumers. To enable this, create a channel with `SingleWriter = false` and `SingleReader = false` in the channel options. You then fan-out writing across multiple producer tasks and fan-in reading across multiple consumer tasks.
+
+:::code language="csharp" source="snippets/channels/Program.MultipleReadersWriters.cs" id="multiplerw":::
+
+The preceding code:
+
+- Creates an unbounded channel that explicitly supports multiple concurrent writers and readers.
+- Starts three concurrent producer tasks, each writing a series of coordinates with a unique device identifier.
+- Starts two concurrent consumer tasks, each reading from the same channel using `ReadAllAsync`.
+- Waits for all producers to finish, then calls <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A> to signal that no more data is written to the channel.
+- Waits for all consumers to finish draining the remaining data from the channel.
+
+> [!TIP]
+> With multiple producers, only call `channel.Writer.Complete()` after **all** producers finish writing. This signals that no more data is written, allowing `ReadAllAsync()` to complete after consuming all remaining items.
+
+## Bounding strategies
+
+Depending on how a `Channel<T>` is created, its reader and writer behave differently.
+
+To create a channel that specifies a maximum capacity, call <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType>. To create a channel that is used by any number of readers and writers concurrently, call <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType>. Each bounding strategy exposes various creator-defined options, either <xref:System.Threading.Channels.BoundedChannelOptions> or <xref:System.Threading.Channels.UnboundedChannelOptions> respectively.
+
+> [!NOTE]
+> Regardless of the bounding strategy, a channel always throws a <xref:System.Threading.Channels.ChannelClosedException> when it's used after it's been closed.
+
+### Unbounded channels
+
+To create an unbounded channel, call one of the <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType> overloads:
+
+```csharp
+var channel = Channel.CreateUnbounded<T>();
+```
+
+When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify nondefault behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's capacity is unbounded and all writes are performed synchronously. For more examples, see [Unbounded creation patterns](#unbounded-creation-patterns).
+
+### Bounded channels
+
+To create a bounded channel, call one of the <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType> overloads:
+
+```csharp
+var channel = Channel.CreateBounded<T>(7);
+```
+
+The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel asynchronously blocks the producer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Bounded channels can be created with any capacity value greater than zero. For other examples, see [Bounded creation patterns](#bounded-creation-patterns).
+
+#### Full mode behavior
+
+When using a bounded channel, you can specify the behavior the channel adheres to when the configured bound is reached. The following table lists the full mode behaviors for each <xref:System.Threading.Channels.BoundedChannelFullMode> value:
+
+| Value | Behavior |
+|--|--|
+| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync` wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |
+
+> [!IMPORTANT]
+> Whenever a <xref:System.Threading.Channels.Channel%602.Writer%2A?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel%602.Reader%2A?displayProperty=nameWithType> can consume, the channel's writer experiences back pressure.
 
 ## See also
 

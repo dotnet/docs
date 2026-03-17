@@ -26,7 +26,7 @@ partial class C(ILogger logger)
 
 Either remove the field or the primary constructor. For more information, see [Basic usage](../../core/extensions/logging/source-generation.md#basic-usage).
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]
 
 ## See also
 

@@ -14,4 +14,4 @@ The logging source generator generates code using the [nullable](../../csharp/nu
 
 Set your C# language version to 8 or later.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

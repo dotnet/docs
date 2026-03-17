@@ -14,4 +14,4 @@ The name of a method annotated with the `LoggerMessageAttribute` starts with an 
 
 Choose a different method name that doesn't start with an underscore.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

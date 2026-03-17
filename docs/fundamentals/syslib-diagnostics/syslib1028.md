@@ -14,4 +14,4 @@ The `params` and `scoped` parameter modifiers aren't supported for <xref:Microso
 
 Remove the `params` or `scoped` modifier from the parameter.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

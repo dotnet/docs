@@ -26,4 +26,4 @@ Ensure the type containing the logging method includes a field of type `ILogger`
 > ```
 <!-- markdownlint-enable MD027 -->
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

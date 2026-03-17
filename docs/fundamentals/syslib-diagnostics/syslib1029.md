@@ -14,4 +14,4 @@ Ref struct types aren't supported as parameters for <xref:Microsoft.Extensions.L
 
 Use a non-ref struct type for the parameter.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

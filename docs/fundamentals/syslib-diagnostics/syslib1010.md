@@ -14,4 +14,4 @@ A method annotated with the `LoggerMessageAttribute` is not marked as partial.
 
 All logging methods must be declared partial.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

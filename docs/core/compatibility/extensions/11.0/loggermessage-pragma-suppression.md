@@ -5,9 +5,9 @@ ms.date: 03/17/2026
 ai-usage: ai-assisted
 ---
 
-# LoggerMessage source generator diagnostics can't be suppressed with #pragma
+# LoggerMessage source generator diagnostics can't be suppressed with `#pragma`
 
-In .NET 11, `LoggerMessage` source generator diagnostics (such as `SYSLIB1002`, `SYSLIB1013`, and `SYSLIB1018`) can no longer be suppressed using `#pragma warning disable` directives.
+`LoggerMessage` source generator diagnostics (such as `SYSLIB1002`, `SYSLIB1013`, and `SYSLIB1018`) can no longer be suppressed using `#pragma warning disable` directives.
 
 ## Version introduced
 

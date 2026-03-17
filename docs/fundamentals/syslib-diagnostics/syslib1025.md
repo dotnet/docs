@@ -14,4 +14,4 @@ Within the scope of a class, log methods annotated with <xref:Microsoft.Extensio
 
 Use a unique event name.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

@@ -1,8 +1,11 @@
 ## Suppress warnings
 
-It's recommended that you use one of the workarounds when possible. However, if you can't change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. If the `SYSLIB1XXX` source generator diagnostic doesn't surface as an error, you can suppress the warning in code or in your project file.
+It's recommended that you use one of the workarounds when possible. However, if you can't change your code, you can suppress the warning through a `<NoWarn>` project setting. If the `SYSLIB1XXX` source generator diagnostic doesn't surface as an error, you can suppress the warning in your project file.
 
-To suppress the warnings in code (replace the diagnostic ID as necessary):
+> [!NOTE]
+> Starting in .NET 11, `#pragma warning disable` directives no longer suppress diagnostics emitted by the `LoggerMessage` source generator. Use `<NoWarn>` in your project file or `.editorconfig` instead. For more information, see [LoggerMessage source generator diagnostics can't be suppressed with `#pragma`](/dotnet/core/compatibility/extensions/11.0/loggermessage-pragma-suppression).
+
+To suppress the warnings in code on .NET 10 and earlier (replace the diagnostic ID as necessary):
 
 ```csharp
 // Disable the warning.

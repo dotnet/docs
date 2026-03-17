@@ -14,4 +14,4 @@ The `LoggerMessageAttribute` attribute was applied to a method that has a method
 
 Remove the method body.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

@@ -14,4 +14,4 @@ The `out` parameter modifier isn't supported for <xref:Microsoft.Extensions.Logg
 
 Remove the `out` parameter modifier.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

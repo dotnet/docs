@@ -14,4 +14,4 @@ A method annotated with `LoggerMessageAttribute` uses the C# 13 `allows ref stru
 
 Logging methods support generic type parameters and most constraint forms (`class`, `struct`, `unmanaged`, `notnull`, base types, interfaces, and `new()`). Remove the `allows ref struct` anti-constraint from the type parameter to resolve this error.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

@@ -14,4 +14,4 @@ A method annotated with the `LoggerMessageAttribute` attribute returns a value.
 
 All logging methods must return void.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

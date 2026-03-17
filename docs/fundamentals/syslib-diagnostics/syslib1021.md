@@ -14,4 +14,4 @@ A method annotated with the `LoggerMessageAttribute` attribute has multiple temp
 
 Make sure the message-template item names aren't repeated with different casing in the method annotated with `LoggerMessageAttribute`.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

@@ -14,4 +14,4 @@ An argument in the logging method doesn't have a corresponding template in the l
 
 Ensure that all arguments to the logging method have corresponding templates in the associated logging message.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

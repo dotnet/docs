@@ -14,4 +14,4 @@ The first exception argument to a logging method is referenced as a template in 
 
 Remove the template that references the exception argument from the logging message.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+[!INCLUDE [suppress-loggermessage-warning](includes/suppress-loggermessage-diagnostics.md)]

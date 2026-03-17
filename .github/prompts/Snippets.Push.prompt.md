@@ -25,7 +25,6 @@ description: Push inline code block snippets out of articles into standalone fil
 - Code is pseudo-code or conceptual examples
 
 ## Target folder structure
-
 - Path pattern: `./snippets/{article-name}/[optional-sub-subject]/{code-language}/`
 - Example C#: `./snippets/create-app/csharp/`
 - Example VB: `./snippets/create-app/vb/`
@@ -51,13 +50,30 @@ description: Push inline code block snippets out of articles into standalone fil
 - Identify the programming language(s) used
 - Determine if the article is in a language guide (C# or VB) to apply the language exception
 
-### 2. Create projects and extract code
-- **NEVER** create project files manually. Always use the `dotnet` CLI. Default to console apps (`dotnet new console`) unless the snippet requires a different project type (for example, `dotnet new winforms` for a Windows Forms snippet). Don't specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible.
+### 2. Decide how code will be placed
+- If the article talks about single-file apps, **STOP** and ask the user if they want to use a single-file app or a traditional project-based app
+- If the article doesn't talk about single-file apps, assume the code samples must be put into a project-based app
+
+### 2.1 Project-based apps
+- This is the default for moving code snippets from an article
+- **NEVER** create project files manually.
+- **ALWAYS** use the `dotnet` CLI. Default to console apps (`dotnet new console`) unless the snippet requires a different project type (for example, `dotnet new winforms` for a Windows Forms snippet). Don't specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible.
+
+### 2.2 Single-file apps
+- This is not the default. You must have a good reason to use this mode, such as the user requested it or the article itself references single-file apps along with the snippets
+- Only C# is supported
+- VB snippets must use a project-based app approach
+- Multiple single-file apps can share the same folder for the article
+- Instead of `Program.cs`, they can be named anything
+- They are compiled with `dotnet run file.cs`
+- Folder must not have a project file
+
+### 3. Extract code
 - Copy and complete code to make it compilable. Code only needs to compile — it doesn't have to run from `Main`.
 - Add missing using statements, namespaces, and class declarations as needed.
 - Build to verify compilation with `dotnet build`.
 
-### 3. Add snippet markers and update article references
+### 4. Add snippet markers and update article references
 - Add CamelCase region markers around each snippet. Snippet markers are added as comments in the language of the code file:
   - C#: `// <SnippetId>` and `// </SnippetId>`
   - VB: `' <SnippetId>` and `' </SnippetId>`
@@ -69,7 +85,7 @@ description: Push inline code block snippets out of articles into standalone fil
   :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
   :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
   ```
-- DO NOT use language tabs — place references side-by-side, like so:
+- DO NOT use language tabs in the article — place references side-by-side, like so:
   ```markdown
   :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
   
@@ -77,7 +93,7 @@ description: Push inline code block snippets out of articles into standalone fil
   ```
 - Verify all paths and identifiers are correct.
 
-### 4. Update article frontmatter
+### 5. Update article frontmatter
 If both C# and VB examples are provided, ensure the following frontmatter is present at the top of the article:
 
 ```yml
@@ -91,7 +107,7 @@ If a single language is used (like in the language guides), omit the `dev_langs`
 ## Common mistakes to avoid
 
 - ❌ Extracting short snippets (≤6 lines) without being asked
-- ❌ Creating project files manually instead of using `dotnet new`
+- ❌ Creating project files manually instead of using `dotnet new` (when using project-based apps)
 - ❌ Missing C# or VB versions for standard articles
 - ❌ Creating VB projects for XAML-only snippets
 - ❌ Using language tabs instead of side-by-side references

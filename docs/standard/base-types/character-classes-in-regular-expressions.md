@@ -170,7 +170,7 @@ The period character (.) matches any character except `\n` (the newline characte
   :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="AnyCharacterMultiline":::
 
 > [!NOTE]
-> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character).
+> By default, because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character). With <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>, `.` excludes `\r` and other newline sequences as well.
 
 - In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this article. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.
 

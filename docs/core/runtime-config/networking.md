@@ -24,7 +24,7 @@ ai-usage: ai-assisted
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled <br>`true` - enabled |
+| **runtimeconfig.json** | `System.Net.SocketsHttpHandler.Http3Support` | `false` - disabled <br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
@@ -36,8 +36,8 @@ ai-usage: ai-assisted
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br>`false` - don't include port in SPN, for example, `HTTP/host` |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br>`0` - don't include port in SPN, for example, `HTTP/host` |
+| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br/>`false` - don't include port in SPN, for example, `HTTP/host` |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br/>`0` - don't include port in SPN, for example, `HTTP/host` |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
@@ -64,7 +64,7 @@ ai-usage: ai-assisted
 
 ## HTTP/2 stream window scale threshold
 
-- Configures the multiplier that controls how aggressively the HTTP/2 stream receive window grows. Higher values result in a more conservative window growth, which reduces peak throughput.
+- Configures the multiplier that controls how aggressively the HTTP/2 stream-receive window grows. Higher values result in a more conservative window growth, which reduces peak throughput.
 - Defaults to 1.0. Values below 0 are reset to the default. There's no hard upper limit, but values much above the default progressively limit per-request throughput.
 
 > [!NOTE]
@@ -89,7 +89,7 @@ Configures whether distributed tracing activity propagation is enabled for <xref
 
 Configures the timeout (in milliseconds) for completing a pending connection attempt after its initiating HTTP request finishes. When a connection is still being established after the request completes, this timeout determines how long to wait before abandoning the connection attempt.
 
-- Defaults to 5,000 (5 seconds).
+- Defaults to `5000` (5 seconds).
 - Set to `-1` to wait indefinitely until the connection completes.
 - Set to `0` to cancel the pending connection immediately when the request completes.
 - There's no hard upper limit, but very large values are impractical.
@@ -160,7 +160,7 @@ Configures whether Internet Protocol version 6 (IPv6) is disabled.
 
 ## TLS session resumption
 
-Disables TLS session resumption for <xref:System.Net.Security.SslStream>. Session resumption allows TLS reconnections to skip a full handshake by reusing previously negotiated session parameters, which reduces latency.
+Control whether TLS session resumption disables TLS session resumption for <xref:System.Net.Security.SslStream>. Session resumption allows TLS reconnections to skip a full handshake by reusing previously negotiated session parameters, which reduces latency.
 
 | | Setting name | Values |
 | - | - | - |

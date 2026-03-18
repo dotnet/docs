@@ -13,7 +13,7 @@ After the class is created, you register it with `TryAddTraceEnricher` or `AddTr
 
 ## Install the package
 
-To get started, install the [📦 OpenTelemetry.Extensions.Enrichment](https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment) NuGet package:
+To get started, install the 📦 [OpenTelemetry.Extensions.Enrichment](https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment) NuGet package:
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -48,7 +48,7 @@ public class CustomTraceEnricher : TraceEnricher
     public override void Enrich(in TraceEnrichmentBag bag)
     {
         bag.Add("deployment.environment", "production");
-        bag.Add("service.instance", Environment.MachineName);
+        bag.Add("service.instance.id", Environment.MachineName);
     }
 }
 ```

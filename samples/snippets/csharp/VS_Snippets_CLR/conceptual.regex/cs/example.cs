@@ -17,8 +17,8 @@ public class Example
                      "Ink jet printer                        $69.95\n\n" +
                      "Total Expenses                        $ 81.58\n";
 
-      // Get current culture's NumberFormatInfo object.
-      NumberFormatInfo nfi = CultureInfo.CurrentCulture.NumberFormat;
+      // Get the en-US culture's NumberFormatInfo object.
+      NumberFormatInfo nfi = CultureInfo.CreateSpecificCulture("en-US").NumberFormat;
       // Assign needed property values to variables.
       string currencySymbol = nfi.CurrencySymbol;
       bool symbolPrecedesIfPositive = nfi.CurrencyPositivePattern % 2 == 0;

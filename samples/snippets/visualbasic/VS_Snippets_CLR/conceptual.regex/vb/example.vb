@@ -15,8 +15,8 @@ Public Module Example
                               "Erasers                                 $2.19" + vbCrLf + _
                               "Ink jet printer                        $69.95" + vbCrLf + vbCrLf + _
                               "Total Expenses                        $ 81.58" + vbCrLf
-        ' Get current culture's NumberFormatInfo object.
-        Dim nfi As NumberFormatInfo = CultureInfo.CurrentCulture.NumberFormat
+        ' Get the en-US culture's NumberFormatInfo object.
+        Dim nfi As NumberFormatInfo = CultureInfo.CreateSpecificCulture("en-US").NumberFormat
         ' Assign needed property values to variables.
         Dim currencySymbol As String = nfi.CurrencySymbol
         Dim symbolPrecedesIfPositive As Boolean = CBool(nfi.CurrencyPositivePattern Mod 2 = 0)

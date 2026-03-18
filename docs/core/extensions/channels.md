@@ -18,30 +18,6 @@ Channels are an implementation of the producer/consumer conceptual programming m
 - How many elements they're allowed to store and what happens if that limit is reached.
 - Whether the channel is accessed by multiple producers or multiple consumers concurrently.
 
-### Producer APIs
-
-The producer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType>. The producer APIs and expected behavior are detailed in the following table:
-
-| API | Expected behavior |
-|-----|-------------------|
-| <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType> | Marks the channel as being complete, meaning no more items are written to it. |
-| <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType> | Attempts to mark the channel as being completed, meaning no more data is written to it. |
-| <xref:System.Threading.Channels.ChannelWriter`1.TryWrite*?displayProperty=nameWithType> | Attempts to write the specified item to the channel. When used with an unbounded channel, this always returns `true` unless the channel's writer signals completion with either <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType>, or <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType>. |
-| <xref:System.Threading.Channels.ChannelWriter`1.WaitToWriteAsync*?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask`1> that completes when space is available to write an item. |
-| <xref:System.Threading.Channels.ChannelWriter`1.WriteAsync*?displayProperty=nameWithType> | Asynchronously writes an item to the channel. |
-
-### Consumer APIs
-
-The consumer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType>. The consumer APIs and expected behavior are detailed in the following table:
-
-| API | Expected behavior |
-|-----|-------------------|
-| <xref:System.Threading.Channels.ChannelReader`1.ReadAllAsync*?displayProperty=nameWithType> | Creates an <xref:System.Collections.Generic.IAsyncEnumerable`1> that enables reading all of the data from the channel. |
-| <xref:System.Threading.Channels.ChannelReader`1.ReadAsync*?displayProperty=nameWithType> | Asynchronously reads an item from the channel. |
-| <xref:System.Threading.Channels.ChannelReader`1.TryPeek*?displayProperty=nameWithType> | Attempts to peek at an item from the channel. |
-| <xref:System.Threading.Channels.ChannelReader`1.TryRead*?displayProperty=nameWithType> | Attempts to read an item from the channel. |
-| <xref:System.Threading.Channels.ChannelReader`1.WaitToReadAsync*?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask`1> that completes when data is available to read. |
-
 ## Basic usage
 
 The following example demonstrates the basic usage of a channel, where a producer writes items and a consumer reads them:
@@ -114,6 +90,30 @@ When using a bounded channel, you can specify the behavior the channel adheres t
 
 > [!IMPORTANT]
 > Whenever a <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType> can consume, the channel's writer experiences back pressure.
+
+### Producer APIs
+
+The producer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType>. The producer APIs and expected behavior are detailed in the following table:
+
+| API | Expected behavior |
+|-----|-------------------|
+| <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType> | Marks the channel as being complete, meaning no more items are written to it. |
+| <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType> | Attempts to mark the channel as being completed, meaning no more data is written to it. |
+| <xref:System.Threading.Channels.ChannelWriter`1.TryWrite*?displayProperty=nameWithType> | Attempts to write the specified item to the channel. When used with an unbounded channel, this always returns `true` unless the channel's writer signals completion with either <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType>, or <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType>. |
+| <xref:System.Threading.Channels.ChannelWriter`1.WaitToWriteAsync*?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask`1> that completes when space is available to write an item. |
+| <xref:System.Threading.Channels.ChannelWriter`1.WriteAsync*?displayProperty=nameWithType> | Asynchronously writes an item to the channel. |
+
+### Consumer APIs
+
+The consumer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType>. The consumer APIs and expected behavior are detailed in the following table:
+
+| API | Expected behavior |
+|-----|-------------------|
+| <xref:System.Threading.Channels.ChannelReader`1.ReadAllAsync*?displayProperty=nameWithType> | Creates an <xref:System.Collections.Generic.IAsyncEnumerable`1> that enables reading all of the data from the channel. |
+| <xref:System.Threading.Channels.ChannelReader`1.ReadAsync*?displayProperty=nameWithType> | Asynchronously reads an item from the channel. |
+| <xref:System.Threading.Channels.ChannelReader`1.TryPeek*?displayProperty=nameWithType> | Attempts to peek at an item from the channel. |
+| <xref:System.Threading.Channels.ChannelReader`1.TryRead*?displayProperty=nameWithType> | Attempts to read an item from the channel. |
+| <xref:System.Threading.Channels.ChannelReader`1.WaitToReadAsync*?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask`1> that completes when data is available to read. |
 
 ## Common usage patterns
 

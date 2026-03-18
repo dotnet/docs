@@ -22,38 +22,7 @@ Channels are an implementation of the producer/consumer conceptual programming m
 
 The following example demonstrates the basic usage of a channel, where a producer writes items and a consumer reads them:
 
-```csharp
-using System;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-
-// Create an unbounded channel.
-var channel = Channel.CreateUnbounded<int>();
-
-// Start the producer and consumer.
-var producer = ProduceAsync(channel.Writer);
-var consumer = ConsumeAsync(channel.Reader);
-
-await Task.WhenAll(producer, consumer);
-
-async Task ProduceAsync(ChannelWriter<int> writer)
-{
-    for (int i = 0; i < 5; i++)
-    {
-        await writer.WriteAsync(i);
-    }
-
-    writer.Complete();
-}
-
-async Task ConsumeAsync(ChannelReader<int> reader)
-{
-    await foreach (var item in reader.ReadAllAsync())
-    {
-        Console.WriteLine($"Received: {item}");
-    }
-}
-```
+:::code language="csharp" source="snippets/channels/Program.BasicUsage.cs" id="basicusage":::
 
 ## Bounding strategies
 

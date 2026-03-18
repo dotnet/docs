@@ -10,7 +10,7 @@
                 SingleReader = false
             });
 
-        // Start three concurrent producer tasks
+        // Start three concurrent producer tasks.
         Task[] producerTasks = Enumerable.Range(0, 3).Select(id => Task.Run(async () =>
         {
             Coordinates coordinates = new(
@@ -29,7 +29,7 @@
             }
         })).ToArray();
 
-        // Start two concurrent consumer tasks
+        // Start two concurrent consumer tasks.
         Task[] consumerTasks = Enumerable.Range(0, 2).Select(_ => Task.Run(async () =>
         {
             await foreach (Coordinates coordinates in channel.Reader.ReadAllAsync())
@@ -38,11 +38,11 @@
             }
         })).ToArray();
 
-        // Wait for all producers to finish, then mark the channel as complete
+        // Wait for all producers to finish, then mark the channel as complete.
         await Task.WhenAll(producerTasks);
         channel.Writer.Complete();
 
-        // Wait for all consumers to finish
+        // Wait for all consumers to finish.
         await Task.WhenAll(consumerTasks);
     }
     // </multiplerw>

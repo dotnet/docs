@@ -27,7 +27,7 @@ public static partial class Log
 }
 ```
 
-In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When using the attribute in a static context, either the `ILogger` instance is required as a parameter, or modify the definition to use the `this` keyword to define the method as an extension method.
+In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When you use `LoggerMessageAttribute` in a static context, the `ILogger` instance must be passed as an argument. Or, add the `this` modifier to the `ILogger` parameter to define the method as an extension method.
 
 ```csharp
 public static partial class Log
@@ -76,6 +76,8 @@ public partial class InstanceLoggingExample(ILogger logger)
 
 If there's both an `ILogger` field and a primary constructor parameter, the logging method gets the logger from the field.
 
+### Dynamic log level
+
 Sometimes, the log level needs to be dynamic rather than statically built into the code. You can do this by omitting the log level from the attribute and instead requiring it as a parameter to the logging method.
 
 ```csharp
@@ -91,29 +93,9 @@ public static partial class Log
 }
 ```
 
-The following example demonstrates a logging method with a dynamic log level and a message template:
+### `Message` property
 
-:::code source="../snippets/logging/logger-message-generator/Program.cs":::
-
-Consider the example logging output when using the `JsonConsole` formatter.
-
-```json
-{
-  "EventId": 23,
-  "LogLevel": "Information",
-  "Category": "\u003CProgram\u003EF...9CB42__SampleObject",
-  "Message": "Liana lives in Seattle.",
-  "State": {
-    "Message": "Liana lives in Seattle.",
-    "name": "Liana",
-    "city": "Seattle",
-    "{OriginalFormat}": "{Name} lives in {City}."
-  }
-}
-```
-
-> [!NOTE]
-> The `Message` property on `LoggerMessageAttribute` is optional. When omitted, <xref:System.String.Empty?displayProperty=nameWithType> is used for the message. However, if the logging method has parameters without corresponding template placeholders, the compiler emits a [SYSLIB1015](../../../fundamentals/syslib-diagnostics/syslib1015.md) warning. Those parameters are stored in the log state but don't appear in the formatted log output. Only structured logging providers that enumerate the log state surface them.
+The <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute.Message> property on `LoggerMessageAttribute` is optional. If you omit it, <xref:System.String.Empty?displayProperty=nameWithType> is used for the message. However, if the logging method has parameters without corresponding template placeholders, the compiler emits a [SYSLIB1015](../../../fundamentals/syslib-diagnostics/syslib1015.md) warning. Those parameters are stored in the log state but don't appear in the formatted log output. Only structured logging providers that enumerate the log state surface them.
 
 ## Log method constraints
 

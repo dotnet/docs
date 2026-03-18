@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="equals2.fs" />
+    <Compile Include="equals3.fs" />
+    <Compile Include="equals4.fs" />
+    <Compile Include="equals_ref.fs" />
+    <Compile Include="equals_val1.fs" />
+    <Compile Include="equals_val2.fs" />
+    <Compile Include="equalsoverride.fs" />
+    <Compile Include="equalssb1.fs" />
+  </ItemGroup>
+
+</Project>

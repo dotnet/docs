@@ -124,6 +124,15 @@ When editing, focus on these areas in order of priority:
 - ❌ Remove filler words: "quite", "very", "easily", "simply" (unless essential)
 - Look for ANY unnecessary prepositional phrases or filler words
 
+**SCAN FOR AND REPLACE ambiguous "this" references (these are examples - find ALL similar patterns):**
+- "This" at the start of a sentence or clause is often ambiguous — replace it with the specific noun it refers to
+- ❌ "This creates a file" → ✅ "The command creates a file"
+- ❌ "This is useful when..." → ✅ "The feature is useful when..."
+- ❌ "This can be configured by..." → ✅ "The setting can be configured by..."
+- ❌ "Configure this before deploying" → ✅ "Configure the connection string before deploying"
+- Look for ANY sentence or clause where "this" starts or is the subject, and replace it with the explicit noun
+- **NOTE:** "this" is acceptable when used as an adjective directly before a noun ("this method", "this file"), but avoid it when used alone as a pronoun
+
 **SCAN FOR AND ENSURE consistent terminology (apply this principle throughout):**
 - Pick one term for each concept and use it throughout
 - ❌ "Because" and "Since" mixed → ✅ "Because" consistently
@@ -219,6 +228,7 @@ After editing, you MUST verify:
 - [ ] ALL contractions added where appropriate
 - [ ] ALL verbose phrases simplified
 - [ ] ALL weak constructions eliminated
+- [ ] ALL ambiguous "this" pronoun uses replaced with explicit nouns
 - [ ] Content maintains technical accuracy
 - [ ] Tone is conversational and helpful
 - [ ] Sentences are concise and scannable

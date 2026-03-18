@@ -11,7 +11,23 @@
             });
 
         // Start three concurrent producer tasks.
-        Task[] producerTasks = Enumerable.Range(0, 3).Select(id => Task.Run(async () =>
+        Task[] producerTasks = Enumerable.Range(0, 3)
+            .Select(id => ProduceAsync(id, channel))
+            .ToArray();
+
+        // Start two concurrent consumer tasks.
+        Task[] consumerTasks = Enumerable.Range(0, 2)
+            .Select(_ => ConsumeAsync(channel))
+            .ToArray();
+
+        // Wait for all producers to finish, then mark the channel as complete.
+        await Task.WhenAll(producerTasks);
+        channel.Writer.Complete();
+
+        // Wait for all consumers to finish.
+        await Task.WhenAll(consumerTasks);
+
+        static async Task ProduceAsync(int id, Channel<Coordinates> channel)
         {
             Coordinates coordinates = new(
                 DeviceId: Guid.NewGuid(),
@@ -23,27 +39,19 @@
                 await channel.Writer.WriteAsync(
                     coordinates = coordinates with
                     {
-                        Latitude = coordinates.Latitude + .5,
+                        Latitude = coordinates.Latitude + 0.5,
                         Longitude = coordinates.Longitude + 1
                     });
             }
-        })).ToArray();
+        }
 
-        // Start two concurrent consumer tasks.
-        Task[] consumerTasks = Enumerable.Range(0, 2).Select(_ => Task.Run(async () =>
+        static async Task ConsumeAsync(Channel<Coordinates> channel)
         {
             await foreach (Coordinates coordinates in channel.Reader.ReadAllAsync())
             {
                 Console.WriteLine(coordinates);
             }
-        })).ToArray();
-
-        // Wait for all producers to finish, then mark the channel as complete.
-        await Task.WhenAll(producerTasks);
-        channel.Writer.Complete();
-
-        // Wait for all consumers to finish.
-        await Task.WhenAll(consumerTasks);
+        }
     }
     // </multiplerw>
 }

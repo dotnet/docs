@@ -1,7 +1,7 @@
 ---
 title: System.Uri class
 description: Learn about the System.Uri class.
-ms.date: 03/18/2026
+ms.date: 12/31/2023
 ai-usage: ai-assisted
 ---
 # System.Uri class

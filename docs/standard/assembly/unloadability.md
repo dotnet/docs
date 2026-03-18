@@ -92,7 +92,7 @@ Due to the cooperative nature of the unloading, it's easy to forget about refere
 - Threads running code from an assembly loaded into the collectible `AssemblyLoadContext`.
 - Instances of custom, noncollectible `AssemblyLoadContext` types created inside of the collectible `AssemblyLoadContext`.
 - Pending <xref:System.Threading.RegisteredWaitHandle> instances with callbacks set to methods in the custom `AssemblyLoadContext`.
-- Fields on your custom `AssemblyLoadContext` subclass that reference assemblies, types, or instances of types loaded into the collectible `AssemblyLoadContext`. The runtime holds a strong GC handle to the `AssemblyLoadContext` itself, so the GC won't collect those field references even after you drop your own reference to the `AssemblyLoadContext`. Clear these fields before unloading can complete.
+- Fields on your custom `AssemblyLoadContext` subclass that reference assemblies, types, or instances of types loaded into the collectible `AssemblyLoadContext`. While unloading is in progress, the runtime holds a strong GC handle to the `AssemblyLoadContext` to coordinate the unload. This means the GC won't collect those field references even after you drop your own reference to the `AssemblyLoadContext`. Clear these fields so unloading can complete.
 
 > [!TIP]
 > Object references that are stored in stack slots or processor registers and that could prevent unloading of an `AssemblyLoadContext` can occur in the following situations:

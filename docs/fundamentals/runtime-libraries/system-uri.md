@@ -145,7 +145,7 @@ This validation can be used in other cases, like when dealing with UNC paths, by
 Uri baseUri = new Uri(@"\\host\share\some\directory\name\");
 ```
 
-For a detailed analysis of security threats, parsing behavior, and best practices when working with <xref:System.Uri> and <xref:System.UriBuilder>, see the following threat model documents:
+Review the following threat model documents for a detailed analysis of security threats, parsing behavior, and best practices when working with <xref:System.Uri> and <xref:System.UriBuilder>:
 
 - [System.Uri threat model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.Uri/docs/System.Uri%20Threat%20Model.md)
 - [System.UriBuilder threat model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.Uri/docs/System.UriBuilder%20Threat%20Model.md)

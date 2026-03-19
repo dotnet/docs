@@ -3,6 +3,9 @@
 [TestClass]
 public class TestClassCancellationToken
 {
+    // MSTest automatically sets the TestContext property before each test runs.
+    // MSTest.Analyzers includes a diagnostic suppressor that removes CS8618
+    // (non-nullable property uninitialized) for this property.
     public TestContext TestContext { get; set; }
 
     [TestMethod]

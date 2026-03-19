@@ -1,21 +1,22 @@
 ---
 title: Introduction to .NET
 description: Learn about .NET. .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 1/5/2024
+ms.date: 03/10/2026
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 # Introduction to .NET
 
-.NET is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](apps.md). It can run programs written in [multiple languages](../fundamentals/languages.md), with [C#](../csharp/index.yml) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+.NET is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](apps.md). It can run programs written in [multiple languages](../fundamentals/languages.md), with [C#](../csharp/index.yml) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
 To learn how to [download .NET](https://dotnet.microsoft.com/download/) and start writing your first app, see [Getting started](./get-started.md).
 
-The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It is type-safe and memory-safe, due to using a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance on multiple operating systems and chip architectures.
+The .NET platform is designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It's type-safe and memory-safe, because it uses a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and that are optimized for performance on multiple operating systems and chip architectures.
 
 .NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
 * **Productivity is full-stack** with runtime, libraries, languages, and tools all contributing to developer user experience.
-* **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables additional manual optimizations.
+* **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables more manual optimizations.
 * **Static and dynamic code** are both supported, enabling a broad set of distinct scenarios.
 * **Native code interop and hardware intrinsics** are low cost and high-fidelity (raw API and instruction access).
 * **Code is portable across platforms** (OS and chip architecture), while platform targeting enables specialization and optimization.
@@ -28,11 +29,11 @@ The .NET platform has been designed to deliver productivity, performance, securi
 
 .NET includes the following components:
 
-- Runtime -- executes application code.
-- Libraries -- provides utility functionality like [JSON parsing](../standard/serialization/system-text-json/overview.md).
-- Compiler -- compiles C# (and other languages) source code into (runtime) executable code.
-- SDK and other tools -- enable building and monitoring apps with modern workflows.
-- App stacks -- like ASP.NET Core and Windows Forms, that enable writing apps.
+- Runtime — executes application code.
+- Libraries — provide utility functionality like [JSON parsing](../standard/serialization/system-text-json/overview.md).
+- Compiler — compiles C# (and other languages) source code into (runtime) executable code.
+- SDK and other tools — enable building and monitoring apps with modern workflows.
+- App stacks — like ASP.NET Core and Windows Forms that enable writing apps.
 
 The runtime, libraries, and languages are the pillars of the .NET stack. Higher-level components, like .NET tools, and app stacks, like ASP.NET Core, build on top of these pillars. C# is the primary programming language for .NET and much of .NET is written in C#.
 
@@ -54,7 +55,7 @@ Exceptions are the primary error handling model in .NET. Exceptions have the ben
 
 App stacks, like ASP.NET Core and Windows Forms, build on and take advantage of low-level libraries, language, and runtime. The app stacks define the way that apps are constructed and their lifecycle of execution.
 
-The SDK and other tools enable a modern developer experience, both on a developer desktop and for continuous integration (CI). The modern developer experience includes being able to build, analyze, and test code. .NET projects can often be built by a single `dotnet build` command, which orchestrates restoring NuGet packages and building dependencies.
+The SDK and other tools enable a modern developer experience, both on a developer desktop and for continuous integration (CI). The modern developer experience includes building, analyzing, and testing code. .NET projects can often be built by a single `dotnet build` command, which orchestrates restoring NuGet packages and building dependencies.
 
 NuGet is the package manager for .NET. It contains hundreds of thousands of packages that implement functionality for many scenarios. A majority of apps rely on NuGet packages for some functionality. The [NuGet Gallery](https://nuget.org/) is maintained by Microsoft.
 
@@ -62,23 +63,23 @@ NuGet is the package manager for .NET. It contains hundreds of thousands of pack
 
 .NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) project. .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
-.NET source and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md).
+.NET source and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Other [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md).
 
 ## Support
 
 .NET is [supported by multiple organizations](https://github.com/dotnet/core/blob/main/support.md) that work to ensure that .NET can run on [multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and is kept up to date. It can be used on Arm64, x64, and x86 architectures.
 
-New versions of .NET are released annually in November, per our [releases and support policies](releases-and-support.md). It is [updated monthly](https://github.com/dotnet/announcements/labels/Monthly-Update) on Patch Tuesday (second Tuesday), typically at 10 AM Pacific time.
+New versions of .NET are released annually in November, per the [releases and support policies](releases-and-support.md). It's [updated monthly](https://github.com/dotnet/announcements/labels/Monthly-Update) on Patch Tuesday (second Tuesday), typically at 10 AM Pacific time.
 
 ## .NET ecosystem
 
-There are multiple variants of .NET, each supporting a different type of app. The reason for multiple variants is part historical, part technical.
+Multiple variants of .NET exist, each supporting a different type of app for both historical and technical reasons.
 
 .NET implementations:
 
-* **.NET (Core)** -- Modern .NET. A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It is evolving and actively supported.
-* **.NET Framework** -- The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It is actively supported, in maintenance.
-* **Mono** -- The original community and open source .NET. A cross-platform implementation of .NET Framework.
+* **.NET (Core)** — Modern .NET. A cross-platform and open-source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It's evolving and actively supported.
+* **.NET Framework** — The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It's actively supported, in maintenance.
+* **Mono** — The original community and open-source .NET. A cross-platform implementation of .NET Framework.
 
 ## Next steps
 

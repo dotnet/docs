@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: DateOnly and TimeOnly TryParse methods throw for invalid input
+                href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
@@ -460,6 +462,8 @@ items:
                 href: extensions/8.0/activatorutilities-createinstance-behavior.md
               - name: ActivatorUtilities.CreateInstance requires non-null provider
                 href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+              - name: ConfigurationBinder silently skips invalid array elements
+                href: extensions/8.0/configurationbinder-skips-failed-array-elements.md
               - name: ConfigurationBinder throws for mismatched value
                 href: extensions/8.0/configurationbinder-exceptions.md
               - name: ConfigurationManager package no longer references System.Security.Permissions

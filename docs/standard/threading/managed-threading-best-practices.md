@@ -1,7 +1,8 @@
 ---
 title: "Managed Threading Best Practices"
 description: Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
-ms.date: "10/15/2018"
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -84,7 +85,7 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
 
 Consider the following guidelines when using multiple threads:
 
-- Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate other threads. Calling `Abort` on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing.
+- Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate other threads. Calling `Abort` on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing. In .NET 5 and later versions, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> is obsolete and throws a <xref:System.PlatformNotSupportedException>. Instead, use cooperative cancellation via <xref:System.Threading.CancellationToken>. For more information, see [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md).
 
 - Don't use <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.Resume%2A?displayProperty=nameWithType> to synchronize the activities of multiple threads. Do use <xref:System.Threading.Mutex>, <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.Monitor>.
 

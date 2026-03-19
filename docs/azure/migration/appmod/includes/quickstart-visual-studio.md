@@ -9,7 +9,7 @@ ms.date: 01/22/2026
 
 ## Assess app readiness
 
-GitHub Copilot app modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
+GitHub Copilot modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your computer.
 
@@ -36,7 +36,7 @@ GitHub Copilot app modernization for .NET assessment helps you find app readines
 
 ## App migrations
 
-GitHub Copilot app modernization for .NET includes [predefined tasks](../predefined-tasks.md) for common migration scenarios and follows Microsoft's best practices.
+GitHub Copilot modernization for .NET includes [predefined tasks](../predefined-tasks.md) for common migration scenarios and follows Microsoft's best practices.
 
 ### Start a migration task
 
@@ -54,7 +54,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot starts a session named "App modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
+- When you start the migration, GitHub Copilot starts a session named "Modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
 - The tool creates two files in the `.appmod/.migration` folder:
   - `plan.md`: The overall migration plan.
   - `progress.md`: A progress tracker that GitHub Copilot updates as it completes tasks.
@@ -78,7 +78,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ## Default chat messages
 
-GitHub Copilot app modernization for .NET provides default chat message options to streamline your workflow.
+GitHub Copilot modernization for .NET provides default chat message options to streamline your workflow.
 
 :::image type="content" source="../media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 

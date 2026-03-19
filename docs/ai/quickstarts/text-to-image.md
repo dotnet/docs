@@ -49,12 +49,11 @@ Complete the following steps to create a .NET console application that generates
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and API key:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and API key:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-image-1
     dotnet user-secrets set AZURE_OPENAI_API_KEY <your-azure-openai-api-key>
     ```
 

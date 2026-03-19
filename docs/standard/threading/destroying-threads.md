@@ -1,7 +1,8 @@
 ---
 title: "Destroying threads"
 description: Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
-ms.date: 05/26/2022
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +15,7 @@ ms.topic: how-to
 
 To terminate the execution of the thread, you usually use the [cooperative cancellation model](cancellation-in-managed-threads.md). However, sometimes it's not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. In .NET Framework apps, you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method to terminate a managed thread forcibly. When you call <xref:System.Threading.Thread.Abort%2A>, the Common Language Runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. (However, the .NET Framework runtime always automatically rethrows the exception after the `catch` block.) For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>.
 
-The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method [is not supported](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md) in .NET 5 (including .NET Core) and later versions. If you need to terminate the execution of third-party code forcibly in .NET 5+, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
+The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method throws a <xref:System.PlatformNotSupportedException> at runtime in .NET Core and .NET 5 and later versions. Starting in .NET 5, it's also marked obsolete ([SYSLIB0006](../../fundamentals/syslib-diagnostics/syslib0006.md)), so calling it generates a compile-time warning. If you need to terminate the execution of third-party code forcibly in modern .NET implementations, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
 
 > [!NOTE]
 >
@@ -67,6 +68,7 @@ catch (ThreadAbortException ex)
 ## See also
 
 - [Thread.Abort is obsolete](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md)
+- [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md)
 - <xref:System.Threading.ThreadAbortException>
 - <xref:System.Threading.Thread>
 - [Using Threads and Threading](using-threads-and-threading.md)

@@ -68,10 +68,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="8":::
-
-> [!TIP]
-> The `UseCredential` method in the preceding code snippet is recommended for use in ASP.NET Core apps. For more information, see [Use the Azure SDK for .NET in ASP.NET Core apps](../aspnetcore-guidance.md#authenticate-using-microsoft-entra-id).
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="1":::
 
 ### How to customize DefaultAzureCredential
 
@@ -82,6 +79,9 @@ The following sections describe strategies for controlling which credentials are
 To exclude an individual credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-13":::
+
+> [!TIP]
+> The `UseCredential` method in the preceding code snippet is recommended for use in ASP.NET Core apps. For more information, see [Use the Azure SDK for .NET in ASP.NET Core apps](../aspnetcore-guidance.md#authenticate-using-microsoft-entra-id).
 
 In the preceding code sample, `EnvironmentCredential`, `ManagedIdentityCredential`, and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `VisualStudioCredential`. The modified chain contains only development-time credentials and looks like this:
 

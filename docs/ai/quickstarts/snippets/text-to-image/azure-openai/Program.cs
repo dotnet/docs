@@ -10,7 +10,7 @@ IConfigurationRoot config = new ConfigurationBuilder()
 
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string apiKey = config["AZURE_OPENAI_API_KEY"];
-string model = config["AZURE_OPENAI_GPT_NAME"];
+string model = "gpt-image-1";
 
 // Create the Azure OpenAI client and convert to IImageGenerator.
 AzureOpenAIClient azureClient = new(

@@ -2,7 +2,8 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 01/08/2026
+ms.date: 03/16/2026
+ai-usage: ai-assisted
 ---
 # APIs that always throw exceptions on .NET (Core)
 
@@ -70,12 +71,6 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Console.WindowLeft?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.WindowTop?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.WindowWidth?displayProperty=nameWithType> (set only) | Linux and macOS |
-
-## System.Data.Common
-
-| Member | Platforms that throw |
-|--------|----------------------|
-| <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> (throws <xref:System.NotSupportedException>) | All |
 
 ## System.Diagnostics.Process
 

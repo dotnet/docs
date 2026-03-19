@@ -98,5 +98,5 @@ If you start with the base of your library and move outward from the base and te
 
 ## Next steps
 
-- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
+- [What is GitHub Copilot modernization](github-copilot-app-modernization/overview.md)
 - [Organize your project to support both .NET Framework and .NET Core](project-structure.md)

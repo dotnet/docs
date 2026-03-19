@@ -54,7 +54,7 @@ dotnet add MyApp.Console reference MyApp.Core
 
 ## Match namespaces to folder structure
 
-Namespace names should follow the folder structure of your project. When you see `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder. This convention is so widely followed that violating it actively confuses other developers:
+Namespace names should follow the folder structure of your project. When you see the namespace `MyApp.Services.Payments`, you know to look in the `Services/Payments` folder for the source code of the types defined in that namespace. The .NET SDK supports this convention, and it is so widely followed that violating it actively confuses other developers:
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 

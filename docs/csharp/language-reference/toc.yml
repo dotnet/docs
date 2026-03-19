@@ -538,7 +538,10 @@ items:
     displayName: >
       async, await,
       CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997,
-      CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS9123, CS9330
+      CS1998, CS4001, CS4003, CS4005, CS4006, CS4007, CS4008, CS4009, CS4010, CS4011,
+      CS4012, CS4014, CS4015, CS4016, CS4027, CS4028, CS4029, CS4030, CS4031, CS4032,
+      CS4033, CS4034, CS8031, CS8100, CS8177, CS8178, CS8204, CS8403, CS8411, CS8892,
+      CS8935, CS8940, CS9123, CS9330
   - name: Interface implementation
     href: ./compiler-messages/interface-implementation-errors.md
     displayName: >
@@ -609,8 +612,11 @@ items:
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: >
-      CS8509, CS8978, CS8979, CS8980, CS8985, CS9013, CS9060, CS9134, CS9135, CS9335,
-      CS9336, CS9337
+      CS8116, CS8117, CS8119, CS8120, CS8121, CS8208, CS8502, CS8503, CS8504, CS8505,
+      CS8506, CS8508, CS8509, CS8510, CS8512, CS8513, CS8515, CS8516, CS8517, CS8518,
+      CS8519, CS8520, CS8521, CS8522, CS8523, CS8524, CS8525, CS8780, CS8781, CS8782, CS8793,
+      CS8794, CS8846, CS8918, CS8978, CS8979, CS8980, CS8985, CS9013, CS9060, CS9134,
+      CS9135, CS9335, CS9336, CS9337, CS9344, CS9345
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
     displayName: >
@@ -1695,10 +1701,6 @@ items:
       href: ./compiler-messages/cs8173.md
     - name: CS8174
       href: ./compiler-messages/cs8174.md
-    - name: CS8177
-      href: ./compiler-messages/cs8177.md
-    - name: CS8178
-      href: ./compiler-messages/cs8178.md
     - name: CS8210
       href: ./compiler-messages/cs8210.md
     - name: CS8333
@@ -1711,22 +1713,12 @@ items:
       href: ./compiler-messages/cs8354.md
     - name: CS8355
       href: ./compiler-messages/cs8355.md
-    - name: CS8403
-      href: ./compiler-messages/cs8403.md
-    - name: CS8411
-      href: ./compiler-messages/cs8411.md
     - name: CS8422
       href: ./compiler-messages/cs8422.md
-    - name: CS8506
-      href: ../misc/cs8506.md
-    - name: CS8515
-      href: ./compiler-messages/cs8515.md
     - name: CS8802
       href: ./compiler-messages/cs8802.md
     - name: CS8803
       href: ./compiler-messages/cs8803.md
-    - name: CS8515
-      href: ./compiler-messages/cs8515.md
     - name: CS9036
       href: ./compiler-messages/property-declaration-errors.md
     - name: CS9043

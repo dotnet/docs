@@ -2,7 +2,8 @@
 title: .NET assembly file format
 description: Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
 author: richlander
-ms.date: 08/20/2019
+ms.date: 03/12/2026
+ai-usage: ai-assisted
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
 ---
 
@@ -29,3 +30,6 @@ Assembly Headers from ECMA 335 II.25.1, Structure of the runtime file format.
 ## Process the assemblies
 
 It is possible to write tools or APIs to process assemblies. Assembly information enables making programmatic decisions at runtime, rewriting assemblies, providing API IntelliSense in an editor, and generating documentation. <xref:System.Reflection?displayProperty=nameWithType>, <xref:System.Reflection.MetadataLoadContext?displayProperty=nameWithType>, and [Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/) are good examples of tools that are frequently used for this purpose.
+
+> [!CAUTION]
+> The <xref:System.Reflection.Metadata> library and <xref:System.Reflection.PortableExecutable.PEReader> are not designed to handle untrusted input. Malformed or malicious PE files can cause unexpected behavior, including out-of-bounds memory access, crashes, or hangs. Only use these APIs with trusted assemblies.

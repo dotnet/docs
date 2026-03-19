@@ -1,7 +1,8 @@
 ---
 title: "Cancellation in Managed Threads"
 description: Understand cancellation in managed threads. Learn about cancellation tokens in cooperative cancellation of asynchronous or long-running synchronous operations.
-ms.date: "03/30/2017"
+ms.date: "03/17/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -129,14 +130,21 @@ The general pattern for implementing the cooperative cancellation model is:
 
  For a more complete example, see [How to: Listen for Cancellation Requests That Have Wait Handles](how-to-listen-for-cancellation-requests-that-have-wait-handles.md).
 
-### Listening to Multiple Tokens Simultaneously
+### Listen to multiple tokens simultaneously
 
- In some cases, a listener may have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation may have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token, as shown in the following example.
+ In some cases, a listener might have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation might have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token.
+
+ The following example shows the most common use of a linked token: a child token that is cancelled when the parent token is cancelled. You can also cancel the child independently by calling `Cancel` on the child `CancellationTokenSource`.
+
+:::code language="csharp" source="./snippets/cancellation-in-managed-threads/csharp/LinkedTokens/Program.cs" id="LinkedTokens":::
+:::code language="vb" source="./snippets/cancellation-in-managed-threads/vb/LinkedTokens/Program.vb" id="LinkedTokens":::
+
+ A more complex scenario involves a cancelable operation that must monitor both an external token passed in from a caller and an internal token. The following example shows how to create such a linked token.
 
  [!code-csharp[Cancellation#7](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex13.cs#7)]
  [!code-vb[Cancellation#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex13.vb#7)]
 
- Notice that you must call `Dispose` on the linked token source when you are done with it. For a more complete example, see [How to: Listen for Multiple Cancellation Requests](how-to-listen-for-multiple-cancellation-requests.md).
+ Notice that you must call `Dispose` on the linked token source when you're done with it. For a more complete example, see [How to: Listen for Multiple Cancellation Requests](how-to-listen-for-multiple-cancellation-requests.md).
 
 ## Cooperation Between Library Code and User Code
 

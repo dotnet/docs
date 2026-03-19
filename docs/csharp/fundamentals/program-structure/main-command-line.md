@@ -20,7 +20,8 @@ A C# program can have only one entry point. If you have more than one class with
 
 ## Overview
 
-- The `Main` method is the entry point of an executable program. It's where the program control starts and ends.
+The `Main` method is the entry point of an executable program. When your program starts, the runtime calls `Main` before any other code runs. When `Main` returns, the program ends. You declare `Main` with these rules:
+
 - You must declare `Main` inside a class or struct. The enclosing `class` can be `static`.
 - `Main` must be [`static`](../../language-reference/keywords/static.md).
 - `Main` can have any [access modifier](../../programming-guide/classes-and-structs/access-modifiers.md).
@@ -45,16 +46,16 @@ The preceding examples don't specify an access modifier, so they're implicitly `
 
 The following table summarizes all valid `Main` signatures and when to use each one:
 
-| `Main` declaration                           | Uses `args` | Uses `await` | Returns exit code |
-|----------------------------------------------|-------------|--------------|-------------------|
-| `static void Main()`                         | No          | No           | No                |
-| `static int Main()`                          | No          | No           | Yes               |
-| `static void Main(string[] args)`            | Yes         | No           | No                |
-| `static int Main(string[] args)`             | Yes         | No           | Yes               |
-| `static async Task Main()`                   | No          | Yes          | No                |
-| `static async Task<int> Main()`              | No          | Yes          | Yes               |
-| `static async Task Main(string[] args)`      | Yes         | Yes          | No                |
-| `static async Task<int> Main(string[] args)` | Yes         | Yes          | Yes               |
+| `Main` declaration                           | Uses `args` | contains `await` | Returns exit code |
+|----------------------------------------------|-------------|------------------|-------------------|
+| `static void Main()`                         | No          | No               | No                |
+| `static int Main()`                          | No          | No               | Yes               |
+| `static void Main(string[] args)`            | Yes         | No               | No                |
+| `static int Main(string[] args)`             | Yes         | No               | Yes               |
+| `static async Task Main()`                   | No          | Yes              | No                |
+| `static async Task<int> Main()`              | No          | Yes              | Yes               |
+| `static async Task Main(string[] args)`      | Yes         | Yes              | No                |
+| `static async Task<int> Main(string[] args)` | Yes         | Yes              | Yes               |
 
 Choose the simplest signature that fits your needs. If you don't need command-line arguments, omit the `string[] args` parameter. If you don't need to return an exit code, use `void` or `Task`. If you need to call asynchronous methods, use `async` with a `Task` or `Task<int>` return type.
 
@@ -68,7 +69,7 @@ The following example returns an exit code:
 
 After running the program, you can check the exit code. In PowerShell, use `$LastExitCode`. In a batch file or shell script, use `%ERRORLEVEL%`.
 
-If your `Main` method uses `await`, declare it as `async` with a `Task` or `Task<int>` return type:
+If your `Main` method uses `await`, declare it as `async` with a `Task` or `Task<int>` return type. The runtime calls `Main` and waits for the returned `Task` to complete before the process exits. The return type can't be `void` or `int` because the `async` modifier requires a return type that the runtime can await—`void` and `int` don't represent ongoing work, so the process could exit before asynchronous operations finish. Use `Task` when you don't need an exit code, or `Task<int>` when you do:
 
 :::code language="csharp" source="snippets/main-arguments/Program.cs" id="AsyncMain":::
 

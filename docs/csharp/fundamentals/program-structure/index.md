@@ -107,7 +107,7 @@ A *statement* performs an action. Statements control program flow, declare varia
 Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `f` to the result of an addition expression. That addition expression adds the results of two method call expressions:
 
 ```csharp
-var f = Math.Max(a, b) + Math.Max(c, d);
+var maxResult = Math.Max(a, b) + Math.Max(c, d);
 ```
 
 For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).

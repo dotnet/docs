@@ -32,25 +32,13 @@ Each level serves a different purpose. Solutions organize your development workf
 
 ## Projects and assemblies
 
-Each project compiles into a single assembly: a class library or executable. Start with a single project for small applications—don't split prematurely. Add projects when you have a concrete reason:
+Each project compiles into a single assembly: a class library or executable. Start with a single project for small applications—don't split prematurely. The primary reason to create a separate project is to reuse that code in more than one application. Beyond reuse, add projects when you have a concrete reason:
 
+- **Share code across applications** — extract shared logic into a class library that multiple apps reference.
 - **Separate concerns** — keep your data access, business logic, and presentation layers independent.
-- **Share code** — create a class library that multiple applications reference.
 - **Control dependencies** — a project can only use types from projects it explicitly references.
 
-A single project works well for many applications. Resist the urge to create separate projects "just in case." You can always refactor later when the need is clear.
-
-The following project structure demonstrates a common pattern:
-
-:::code language="csharp" source="snippets/organizing-programs/AppDemo.cs" id="ProjectStructure":::
-
-Create and reference projects by using the `dotnet` CLI:
-
-```dotnetcli
-dotnet new classlib -n MyApp.Core
-dotnet new console -n MyApp.Console
-dotnet add MyApp.Console reference MyApp.Core
-```
+A single project works well for many applications. Resist the urge to create separate projects "just in case." You can always extract a library later when a second application needs the same code.
 
 ## Match namespaces to folder structure
 
@@ -96,7 +84,6 @@ Default to `internal` for types that other projects don't need. This practice hi
 - **Name namespaces consistently.** Use `CompanyName.ProductName.Feature` as your naming pattern. For example, use `Contoso.Inventory.Shipping`. Consistent naming helps developers find types without searching.
 - **Keep projects focused.** Each project should have a single, clear responsibility. When a project handles too many unrelated concerns, split it.
 - **Use file-scoped namespaces.** The `namespace MyApp.Services;` syntax reduces indentation and is the recommended style. Use it in all new code.
-- **Use `global using` directives.** Place common imports in a `GlobalUsings.cs` file to eliminate repetitive `using` lines across files. For more information, see [Namespaces and using directives](namespaces.md).
 - **Default to `internal`.** Only mark types `public` when other assemblies genuinely need them. You can always widen access later; narrowing it is a breaking change.
 
 ## Related content

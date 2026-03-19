@@ -14,9 +14,15 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** Namespaces in C# work similarly to packages in Java or modules in Python. Skim ahead to the syntax you need.
 
-Namespace declarations and `using` directives are two sides of the same coin. A namespace declaration puts your types into an organized structure. A namespace groups related types together and prevents naming collisions. A `using` directive lets your program consume those types by their simple names. You don't have to spell out the full namespace path at every use.
+Namespace declarations and `using` directives are related language features. A namespace declaration puts your types into an organized structure. A namespace groups related types together and prevents naming collisions. A `using` directive lets your program consume those types by their simple names. You don't have to spell out the full namespace path at every use.
 
-Every .NET type belongs to a namespace. For example, the `System` namespace contains fundamental types like `System.Console` and `System.Math`. The `System.Collections.Generic` namespace groups collection types like `List<T>` and `Dictionary<TKey, TValue>`. The `System.Threading.Tasks` namespace holds `Task` and `ValueTask<T>` for asynchronous programming. A single `using` directive for any of these namespaces lets you refer to all its types by their simple names. You write `List<T>` instead of `System.Collections.Generic.List<T>` everywhere you use it.
+You've already used namespaces in every C# program you've written. Every .NET type belongs to a namespace, and every `using` directive at the top of a file references one. For example, `Console` and `Math` belong to the `System` namespace, so their fully qualified names are `System.Console` and `System.Math`. Collection types like `List<T>` and `Dictionary<TKey, TValue>` belong to `System.Collections.Generic`. A single `using` directive for any of these namespaces lets you refer to all its types by their simple names. You write `List<T>` instead of `System.Collections.Generic.List<T>` everywhere you use it.
+
+This article provides more background on how namespaces and `using` directives work, and shows examples of patterns you've already encountered in .NET libraries.
+
+A namespace contains types. Every .NET type belongs to a namespace. For example, consider `System.Threading.Tasks.Task`: the type `Task` belongs to the `System.Threading.Tasks` namespace.
+
+It's good practice to group related or similar types in the same namespace, and that's what .NET does with the types it provides. The `System.Collections.Generic` namespace contains collection-related types and the `System.IO` namespace contains types related reading and writing files, directories, and data. The `System` namespace contains fundamental types like `Math`, `DateTime`, and `Console`.
 
 The following example shows how namespaces work together with `using` directives in a typical C# file:
 
@@ -28,7 +34,7 @@ In the preceding sample, the `using` directive means you can use the <xref:Syste
 
 A namespace declaration assigns your types to a named group. Every type you write should belong to a namespace. The namespace name typically mirrors the folder structure of your project. For example, types in a `Services/Payments` folder often belong to the `MyApp.Services.Payments` namespace.
 
-Namespaces use the `.` operator to express hierarchy, such as `System.Collections.Generic`. The `global` namespace is the root namespace - `global::System` always refers to the .NET <xref:System> namespace. Namespace names must be valid C# [identifier names](../coding-style/identifier-names.md).
+Namespaces use the `.` operator to express hierarchy, such as `System.Collections.Generic`. Namespace names must be valid C# [identifier names](../coding-style/identifier-names.md).
 
 ### File-scoped namespaces
 

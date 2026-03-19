@@ -415,7 +415,7 @@ For more information about backtracking, see [Backtracking in regular expression
 
 ## AnyNewLine mode
 
-By default, .NET's regular expression engine treats only `\n` as a newline character. The anchors `^` and `$` (in <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> mode), `\Z`, and the wildcard `.` all use `\n` as the sole line boundary. This means that `$` doesn't match before `\r\n` (Windows-style line endings), and `.` matches `\r` (unless <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> is enabled, in which case `.` matches all characters), which leads to common bugs when processing text with mixed or non-Unix line endings.
+By default, .NET's regular expression engine treats only `\n` as a newline character. The anchors `^` and `$` (in <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> mode), `\Z`, and the wildcard `.` all use `\n` as the sole line boundary. This means that `$` doesn't match before `\r\n` (Windows-style line endings), and `.` matches `\r` but not `\n` (unless <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> is enabled, in which case `.` matches all characters), which leads to common bugs when processing text with mixed or non-Unix line endings.
 
 The <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> option, which was introduced in .NET 11, makes these constructs recognize all common newline sequences: `\r\n` (CR+LF), `\r` (CR), `\n` (LF), `\u0085` (NEL), `\u2028` (LS), and `\u2029` (PS). This is consistent with [Unicode TR18 RL1.6](https://unicode.org/reports/tr18/#RL1.6).
 

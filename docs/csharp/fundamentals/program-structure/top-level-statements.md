@@ -56,7 +56,7 @@ To return an `int` value when the application ends, use the `return` statement a
 
 ## Entry point rules
 
-An application must have only one entry point. A project can have only one file with top-level statements, but it can have any number of source code files that don't have top-level statements. You can explicitly write a `Main` method, but it can't function as an entry point. In a project with top-level statements, you can't use the [-main](../../language-reference/compiler-options/advanced.md#startupobject) compiler option to select the entry point, even if the project has one or more `Main` methods.
+An application must have only one entry point. A project can have only one file with top-level statements, but it can have any number of source code files that don't have top-level statements. You can explicitly write a `Main` method, but it can't function as an entry point. In a project with top-level statements, you can't use the [`-main`](../../language-reference/compiler-options/advanced.md#startupobject) compiler option to select the entry point, even if the project has one or more `Main` methods.
 
 The compiler generates a method to serve as the program entry point for a project with top-level statements. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature looks like, using the method name `Main` in the table for convenience.
 

@@ -703,7 +703,7 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 `collect-linux` captures native frames in callstacks. To resolve native method names for runtime libraries (such as `libcoreclr.so`), place the corresponding debug symbol files on disk beside the libraries. Without these symbols, native frames appear as unresolved addresses in the trace.
 
-Unlike [`perfcollect`](./trace-perfcollect-lttng.md), `collect-linux` doesn't require you to set environment variables like `DOTNET_PerfMapEnabled` or `DOTNET_EnableEventLog` before starting your application. `collect-linux` dynamically enables perf map generation for JIT-compiled code when the trace begins, so you don't need to restart any .NET processes.
+`collect-linux` dynamically enables perf map generation for JIT-compiled code when the trace begins, so you don't need to restart any .NET processes.
 
 To download native runtime symbols, use [dotnet-symbol](./dotnet-symbol.md):
 

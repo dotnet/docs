@@ -130,7 +130,7 @@ The general pattern for implementing the cooperative cancellation model is:
 
  For a more complete example, see [How to: Listen for Cancellation Requests That Have Wait Handles](how-to-listen-for-cancellation-requests-that-have-wait-handles.md).
 
-### Listening to multiple tokens simultaneously
+### Listen to multiple tokens simultaneously
 
  In some cases, a listener might have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation might have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token.
 

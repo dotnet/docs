@@ -38,7 +38,7 @@ configuration:
                   - labelAdded:
                       label: 'breaking-change'
               then:
-                - assignTo: 'gewarren'
+                - assignTo: gewarren
         
             - description: >-
                 Add "not triaged" label when:

@@ -58,7 +58,18 @@ Namespace names should follow the folder structure of your project. When you see
 
 :::code language="csharp" source="snippets/organizing-programs/OrderService.cs" id="NamespaceMirroring":::
 
-The .NET SDK supports this convention. When you set `<RootNamespace>` in your project file (or accept the default, which matches the project name), the compiler uses it as the base namespace. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file—but always keep them in sync.
+Your root namespace is automatically set to the name of your project file. Types in subfolders don't automatically get sub-namespaces—you declare the namespace explicitly in each file—but always keep them in sync.
+
+> [!TIP]
+> You can change the root namespace by setting `<RootNamespace>` in your project file.
+>
+> ```xml
+> <Project Sdk="Microsoft.NET.Sdk">
+>  <PropertyGroup>
+>    <RootNamespace>MyCompany.MyApp</RootNamespace>
+>  </PropertyGroup>
+> </Project>
+> ```
 
 ## Organize namespaces by feature, not by type kind
 

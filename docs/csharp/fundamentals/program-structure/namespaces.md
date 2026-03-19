@@ -43,7 +43,12 @@ File-scoped namespaces reduce nesting and make files easier to read. You can onl
 
 ### Block-scoped namespaces
 
-The older block-scoped syntax wraps all types in braces. This style is still valid but adds an extra level of indentation:
+Use *block-scoped* syntax when you need to declare more than one namespace in the same file. This style adds an extra level of indentation.
+
+> [!IMPORTANT]
+> It's considered bad-practice to declare more than one namespace in the same file. The more common scenario is to use *file-scoped* namespaces.
+
+The following snippet is an example of a *block-scoped* namespace:
 
 :::code language="csharp" source="snippets/namespaces/BlockScoped.cs" id="BlockScopedNamespace":::
 

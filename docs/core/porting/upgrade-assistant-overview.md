@@ -42,7 +42,6 @@ Some products provide guidance on how to use .NET Upgrade Assistant.
 - [Windows Presentation Foundation](/dotnet/desktop/wpf/migration/)
 - [Windows Forms](/dotnet/desktop/winforms/migration/)
 - [Universal Windows Platform](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant)
-- [Windows Communication Foundation](../../core/porting/upgrade-assistant-wcf.md)
 
 ## Upgrade paths
 

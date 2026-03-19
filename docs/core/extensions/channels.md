@@ -67,7 +67,7 @@ When using a bounded channel, you can specify the behavior the channel adheres t
 > [!IMPORTANT]
 > Whenever a <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType> can consume, the channel's writer experiences back pressure.
 
-### Producer APIs
+## Producer APIs
 
 The producer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType>. The producer APIs and expected behavior are detailed in the following table:
 
@@ -79,7 +79,7 @@ The producer functionality is exposed on the <xref:System.Threading.Channels.Cha
 | <xref:System.Threading.Channels.ChannelWriter`1.WaitToWriteAsync*?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask`1> that completes when space is available to write an item. |
 | <xref:System.Threading.Channels.ChannelWriter`1.WriteAsync*?displayProperty=nameWithType> | Asynchronously writes an item to the channel. |
 
-### Consumer APIs
+## Consumer APIs
 
 The consumer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType>. The consumer APIs and expected behavior are detailed in the following table:
 

@@ -40,7 +40,7 @@
                 {
                     Latitude = coordinates.Latitude + 0.5,
                     Longitude = coordinates.Longitude + 1
-                }
+                };
                     
                 await channel.Writer.WriteAsync(coordinates);
             }

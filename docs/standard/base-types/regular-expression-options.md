@@ -439,7 +439,7 @@ The following table summarizes how `AnyNewLine` affects each construct:
 
 | Construct            | Default behavior                     | With `AnyNewLine`                                                     |
 |----------------------|--------------------------------------|-----------------------------------------------------------------------|
-| `.`                  | Matches any character except `\n`    | Matches any character except `\r`, `\n`, `\u0085`, `\u2028`, `\u2029` |
+| `.` (default)        | Matches any character except `\n`    | Matches any character except `\r`, `\n`, `\u0085`, `\u2028`, `\u2029` |
 | `$` (Multiline)      | Matches before `\n`                  | Matches before `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`       |
 | `^` (Multiline)      | Matches after `\n`                   | Matches after `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`        |
 | `$` (default) / `\Z` | Matches before `\n` at end of string | Matches before any newline sequence at end of string                  |

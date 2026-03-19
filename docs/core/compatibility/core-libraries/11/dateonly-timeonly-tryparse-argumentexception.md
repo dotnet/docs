@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: DateOnly and TimeOnly TryParse methods throw for invalid DateTimeStyles"
+title: "Breaking change: DateOnly and TimeOnly TryParse methods throw for invalid input"
 description: "Learn about the breaking change in .NET 11 where DateOnly and TimeOnly TryParse methods throw ArgumentException for invalid DateTimeStyles values or format specifiers."
-ms.date: 01/12/2026
+ms.date: 03/19/2026
 ai-usage: ai-assisted
 ---
 
-# DateOnly and TimeOnly TryParse methods throw for invalid DateTimeStyles
+# DateOnly and TimeOnly TryParse methods throw for invalid input
 
 The <xref:System.DateOnly> and <xref:System.TimeOnly> `TryParse` and `TryParseExact` methods now throw an <xref:System.ArgumentException> when invalid <xref:System.Globalization.DateTimeStyles> values or format specifiers are provided. This aligns their behavior with other `TryParse` APIs in .NET.
 

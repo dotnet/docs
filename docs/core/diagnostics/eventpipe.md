@@ -1,7 +1,7 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 09/03/2024
+ms.date: 03/19/2026
 ms.topic: overview
 ---
 

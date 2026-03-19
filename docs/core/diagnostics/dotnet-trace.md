@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 05/12/2025
+ms.date: 03/19/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ---
@@ -306,6 +306,7 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 ### Prerequisites
 
 - Linux kernel with `CONFIG_USER_EVENTS=y` support (kernel 6.4+)
+- tracefs mounted (defaults to `/sys/kernel/tracing`)
 - Root permissions
 - .NET 10+
 
@@ -313,6 +314,9 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 > The `collect-linux` verb only runs on linux x64 and linux arm64 environments that have glibc version 2.35 or above.
 > All of the [.NET 10 officially supported Linux distros](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux) support this requirement except Alpine 3.22, CentOS Stream 9, and any distros based off Red Hat Enterprise Linux 9.
 > A quick way to check the version of a system's libc is with the command `ldd --version` or by executing the libc library directly.
+
+> [!TIP]
+> To check if your kernel has `user_events` support, run `zgrep CONFIG_USER_EVENTS /proc/config.gz`. You can also look for `user_events_data` under your tracefs mount (defaults to `/sys/kernel/tracing/user_events_data`).
 
 ### Synopsis
 

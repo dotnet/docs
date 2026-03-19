@@ -2,7 +2,7 @@
 title: Debug high CPU usage - .NET Core
 description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
-ms.date: 07/20/2020
+ms.date: 03/19/2026
 ---
 
 # Debug high CPU usage in .NET Core
@@ -179,7 +179,7 @@ When analyzing an app with high CPU usage, use a profiler to understand what the
 
 #### Use `dotnet-trace collect-linux` (.NET 10+)
 
-On .NET 10 and later, [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) is the recommended profiling approach on Linux. It combines EventPipe with OS-level perf_events to produce a single unified trace that includes both managed and native callstacks, all without requiring a process restart. This requires root permissions and Linux kernel 6.4+ with `CONFIG_USER_EVENTS=y`—see [collect-linux prerequisites](dotnet-trace.md#prerequisites) for full requirements.
+On .NET 10 and later, [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) is the recommended profiling approach on Linux. It combines EventPipe with OS-level perf_events to produce a single unified trace that includes both managed and native callstacks, all without requiring a process restart. This requires root permissions and Linux kernel 6.4+ with `CONFIG_USER_EVENTS=y`. See [collect-linux prerequisites](dotnet-trace.md#prerequisites) for full requirements.
 
 Ensure the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) is configured to target .NET 10 or later, then run it and exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, run `dotnet-trace collect-linux` to capture a machine-wide trace:
 

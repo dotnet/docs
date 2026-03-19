@@ -40,7 +40,7 @@ Top-level statements are implicitly in the global namespace. A file with top-lev
 
 ## `args`
 
-Top-level statements can reference the `args` variable to access any command-line arguments that you enter. The `args` variable is never `null`, but its `Length` is zero if you don't provide any command-line arguments. For example:
+Top-level statements can reference the `args` variable to access any command-line arguments passed to the app when it starts. The `args` variable is never `null`, but its `Length` is zero if no command-line arguments were provided. For example:
 
 :::code language="csharp" source="snippets/top-level-statements-3/Program.cs":::
 

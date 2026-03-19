@@ -20,13 +20,13 @@ As a C# application grows, you need to organize the code. .NET provides a hierar
 
 Organize a typical .NET application in layers, from broadest to most specific:
 
-| Level         | Description                                         | Example                 |
-|---------------|-----------------------------------------------------|-------------------------|
-| **Solution**  | A container that groups related projects            | `MyApp.slnx`            |
-| **Project**   | A build unit that produces one assembly             | `MyApp.Web.csproj`      |
-| **Assembly**  | The compiled `.dll` or `.exe` produced by a project | `MyApp.Web.dll`         |
-| **Namespace** | A logical grouping of types                         | `MyApp.Web.Controllers` |
-| **Type**      | A class, struct, interface, enum, or delegate       | `OrderController`       |
+| Level         | Description                                          | Example                 |
+|---------------|------------------------------------------------------|-------------------------|
+| **Solution**  | A container that groups related projects.            | `MyApp.slnx`            |
+| **Project**   | A build unit that produces one assembly.             | `MyApp.Web.csproj`      |
+| **Assembly**  | The compiled `.dll` or `.exe` produced by a project. | `MyApp.Web.dll`         |
+| **Namespace** | A logical grouping of types.                         | `MyApp.Web.Controllers` |
+| **Type**      | A class, struct, interface, enum, or delegate.       | `OrderController`       |
 
 Each level serves a different purpose. Solutions organize your development workflow. Projects define what gets compiled together, and each project produces one assembly. Assemblies are the unit of deployment and versioning. Namespaces prevent naming collisions and make types easy to find. A single assembly can contain multiple namespaces, and a single namespace can span multiple assemblies. Types define the actual behavior and data.
 

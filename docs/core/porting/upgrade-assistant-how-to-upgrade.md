@@ -4,7 +4,7 @@ description: "Learn how to upgrade one or more projects with .NET Upgrade Assist
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/08/2024
+ms.date: 03/19/2026
 
 #customer intent: As a developer, I want to upgrade my project to take advantage of the latest version of .NET.
 
@@ -20,7 +20,7 @@ Some project types have specific guidance on upgrading. For more information, se
 
 ## Prerequisites
 
-- For Visual Studio, see [Install .NET Upgrade Assistant - Visual Studio extension](upgrade-assistant-install.md#visual-studio-extension).
+- For Visual Studio, see [Enable .NET Upgrade Assistant - Visual Studio](upgrade-assistant-install.md#visual-studio).
 - For the .NET Global Tool, see [Install .NET Upgrade Assistant - .NET Global Tool](upgrade-assistant-install.md#net-global-tool).
 
 ## Upgrade a project in Visual Studio

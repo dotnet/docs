@@ -66,7 +66,7 @@ The following example returns an exit code:
 
 :::code language="csharp" source="snippets/main-command-line/MainReturnValTest.cs":::
 
-After running the program, you can check the exit code. In PowerShell, use `$LastExitCode`. In a batch file, use `ERRORLEVEL`.
+After running the program, you can check the exit code. In PowerShell, use `$LastExitCode`. In a batch file or shell script, use `%ERRORLEVEL%`.
 
 If your `Main` method uses `await`, declare it as `async` with a `Task` or `Task<int>` return type:
 

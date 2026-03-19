@@ -509,7 +509,7 @@
 | LUIS Runtime | NuGet [3.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/3.1.0-preview.1) |  | GitHub [3.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime_3.1.0-preview.1/sdk/cognitiveservices/Language.LUIS.Runtime) |
 | Media Live Video Analytics Edge | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Media.LiveVideoAnalytics.Edge_1.0.4-preview.1/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
 | Microsoft Service Fabric | NuGet [11.3.475](https://www.nuget.org/packages/Microsoft.ServiceFabric/11.3.475) | [docs](/dotnet/api/overview/azure/service-fabric) |  |
-| Microsoft.Azure.Amqp | NuGet [2.7.1](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.7.1) |  |  |
+| Microsoft.Azure.Amqp | NuGet [2.7.2](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.7.2) |  |  |
 | Microsoft.Azure.Devices | NuGet [1.41.0](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.41.0)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices/2.0.0-preview007) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |

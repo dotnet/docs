@@ -75,10 +75,6 @@ When you install with a package manager, these libraries are installed for you. 
 
 ### 3.20+
 
-- ca-certificates
-- libgcc
-- libssl3
-- libstdc++
 - zlib (.NET 8 only)
 - icu-libs and icu-data-full (unless the .NET app is running in [globalization-invariant mode](../runtime-config/globalization.md#invariant-mode))
 - tzdata

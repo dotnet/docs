@@ -128,7 +128,7 @@ Because `None` uses `**/*` as its include glob, it would otherwise include *.cs*
 The .NET Desktop SDK has additional includes and excludes for WPF. For more information, see [WPF default includes and excludes](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
 
 > [!WARNING]
-> Don't explicitly define `Compile`, `EmbeddedResource`, or `None` items in your project file. The SDK already includes these items via the default globs, so defining them again causes the build to include the same files twice, resulting in a [NETSDK1022](../tools/sdk-errors/netsdk1022.md) build error. For information about how to resolve the error, see [NETSDK1022: Duplicate items were included](../tools/sdk-errors/netsdk1022.md).
+> Avoid defining `Compile`, `EmbeddedResource`, or `None` items that duplicate the SDK's default `Include` globs. Duplicating included files causes the build to include the same files twice, which results in a [NETSDK1022](../tools/sdk-errors/netsdk1022.md) build error. Customizations that use `Remove` or `Update`, or that add items after you set `EnableDefaultItems`, `EnableDefaultCompileItems`, or `EnableDefaultEmbeddedResourceItems` to `false`, are supported. For information about how to resolve the error, see [NETSDK1022: Duplicate items were included](../tools/sdk-errors/netsdk1022.md).
 
 ## Implicit using directives
 

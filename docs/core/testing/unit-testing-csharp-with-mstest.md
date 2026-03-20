@@ -75,7 +75,7 @@ The test project requires other packages to create and run unit tests. `dotnet n
 Add the `PrimeService` class library as another dependency to the project. Use the [`dotnet reference add`](../tools/dotnet-reference-add.md) command:
 
 ```dotnetcli
-dotnet reference add ../PrimeService/PrimeService.csproj
+dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.

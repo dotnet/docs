@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/11/2025
+ms.date: 03/20/2026
 ms.custom: linux-related-content
 ---
 

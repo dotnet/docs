@@ -38,7 +38,7 @@ The following steps enable the legacy Upgrade Assistant in Visual Studio.
 
     If the **Open Recent \ Get Started** window opens, select the **Continue without code** link.
 
-01. Select the **Tools** > **Options** menu, which opens the **Options** window.\
+01. Select the **Tools** > **Options** menu, which opens the **Options** window.
 01. Navigate to **All Settings** > **Projects and Solutions** > **Modernization**.
 01. Select the **Enable legacy Upgrade Assistant** item.
 01. Restart Visual Studio

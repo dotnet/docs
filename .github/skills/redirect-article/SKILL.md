@@ -27,9 +27,14 @@ Delete a markdown article from the repository and create a redirect entry that p
 
 **DO NOT manually edit a redirection JSON file.** Use the `create-redirect-entry.ps1` script to handle the redirect creation automatically.
 
-1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`.
+1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`
 2. **Create a redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the appropriate JSON file. Do not manually edit the JSON file
 3. **Update internal links** - Search the repository for links to the old article and update them to point to the new article
+
+### 2. Update the internal links
+
+1. Search for `**/*.md` and `**/*.yml` files that reference the redirected file
+2. Update the links to point to the new article
 
 ## Redirection File Selection
 
@@ -61,11 +66,6 @@ To determine the correct redirection file for an article:
 | .NET Standard | `.openpublishing.redirection.standard.json` |
 | Visual Basic | `.openpublishing.redirection.visual-basic.json` |
 | Default/General | `.openpublishing.redirection.json` |
-
-### 2. Update the internal links
-
-1. Search for `**.md` and `**.yml` files that reference the redirected file
-2. Update the links to point to the new article
 
 ## Scripts
 

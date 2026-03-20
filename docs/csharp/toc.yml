@@ -37,16 +37,20 @@ items:
     items:
     - name: Overview
       href: fundamentals/program-structure/index.md
-    - name: Main method
-      href: fundamentals/program-structure/main-command-line.md
+    - name: Namespaces and using directives
+      href: fundamentals/program-structure/namespaces.md
+    - name: Preprocessor directives
+      href: fundamentals/program-structure/preprocessor-directives.md
+    - name: Program organization
+      href: fundamentals/program-structure/program-organization.md
     - name: Top-level statements
       href: fundamentals/program-structure/top-level-statements.md
+    - name: Main method
+      href: fundamentals/program-structure/main-command-line.md
   - name: Type system
     items:
     - name: Overview
       href: fundamentals/types/index.md
-    - name: Namespaces
-      href: fundamentals/types/namespaces.md
     # TODO: tuples
     - name: Classes
       href: fundamentals/types/classes.md

@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: DateOnly and TimeOnly TryParse methods throw for invalid input
+                href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
@@ -164,6 +166,8 @@ items:
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
+              - name: "`DefineConstants` for target frameworks not available at evaluation time"
+                href: sdk/10.0/defineconstants-not-available-at-evaluation.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: "`dotnet new sln` defaults to SLNX file format"

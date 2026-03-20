@@ -10,7 +10,7 @@ ms.date: 01/27/2025
 
 In this article, you learn how to integrate `IHttpClientFactory` with Keyed Services.
 
-[_Keyed Services_](dependency-injection.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At runtime, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
+[_Keyed Services_](dependency-injection/overview.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At runtime, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
 
 For an overview on how to use `IHttpClientFactory` in your .NET application, see [IHttpClientFactory with .NET][hcf].
 
@@ -237,12 +237,12 @@ public class MyController(
 > `KeyedService.AnyKey` registrations define a mapping from _any_ key value to some service instance. However, as a result, the Container validation doesn't apply, and an _erroneous_ key value _silently_ leads to a _wrong instance_ being injected.
 
 > [!IMPORTANT]
-> For Keyed `HttpClient`s, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
+> For Keyed `HttpClient` clients, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
 
 The same is true for the plain Named clients: `IHttpClientFactory` doesn't require the client name to be explicitly registered (aligning with the way the [Options pattern](options.md) works). The factory gives you an unconfigured&mdash;or, more precisely, default-configured&mdash;`HttpClient` for any unknown name.
 
 > [!NOTE]
-> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient`s, but all the clients that `IHttpClientFactory` is _able to create_.
+> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient` clients, but all the clients that `IHttpClientFactory` is _able to create_.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
@@ -298,5 +298,5 @@ If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKe
 - [Common `IHttpClientFactory` usage issues][hcf-troubleshooting]
 
 [hcf]: httpclient-factory.md
-[di]: dependency-injection.md
+[di]: dependency-injection/overview.md
 [hcf-troubleshooting]: httpclient-factory-troubleshooting.md

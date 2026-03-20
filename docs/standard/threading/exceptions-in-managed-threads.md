@@ -1,7 +1,8 @@
 ---
 title: "Exceptions in Managed Threads"
 description: See how unhandled exceptions are handled in .NET. Most unhandled thread exceptions proceed naturally and lead to application termination.
-ms.date: 05/26/2022
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 helpviewer_keywords: 
   - "unhandled exceptions,in managed threads"
   - "threading [.NET],unhandled exceptions"
@@ -13,7 +14,7 @@ ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
 
 The common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases, this means that the unhandled exception causes the application to terminate. However, the common language runtime provides a backstop for certain unhandled exceptions that are used for controlling program flow:  
   
-- A <xref:System.Threading.ThreadAbortException> is thrown in a thread because <xref:System.Threading.Thread.Abort%2A> was called. This only applies to .NET Framework apps.
+- A <xref:System.Threading.ThreadAbortException> is thrown in a thread because <xref:System.Threading.Thread.Abort%2A> was called. This only applies to .NET Framework apps. In .NET 5 and later versions, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> throws a <xref:System.PlatformNotSupportedException>. For more information, see [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md).
   
 - An <xref:System.AppDomainUnloadedException> is thrown in a thread because the application domain in which the thread is executing is being unloaded.  
   

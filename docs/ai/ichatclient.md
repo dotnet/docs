@@ -1,7 +1,7 @@
 ---
 title: Use the IChatClient interface
 description: Learn how to use the IChatClient interface to get model responses and call tools.
-ms.date: 12/10/2025
+ms.date: 03/13/2026
 no-loc: ["IChatClient"]
 ---
 
@@ -62,13 +62,6 @@ The preceding code:
 For more information about creating AI functions, see [Access data in AI functions](how-to/access-data-in-functions.md).
 
 You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more information, see [Build a minimal MCP client](./quickstarts/build-mcp-client.md).
-
-### Tool reduction (experimental)
-
-> [!IMPORTANT]
-> This feature is experimental and subject to change.
-
-Tool reduction helps manage large tool catalogs by trimming them based on relevance to the current conversation context. The <xref:Microsoft.Extensions.AI.IToolReductionStrategy> interface defines strategies for reducing the number of tools sent to the model. The library provides implementations like <xref:Microsoft.Extensions.AI.EmbeddingToolReductionStrategy> that ranks tools by embedding similarity to the conversation. Use the <xref:Microsoft.Extensions.AI.ChatClientBuilderToolReductionExtensions.UseToolReduction*> extension method to add tool reduction to your chat client pipeline.
 
 ## Cache responses
 
@@ -136,7 +129,7 @@ For scenarios where you need a different implementation for `GetResponseAsync` a
 
 ## Dependency injection
 
-<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In the following example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
+<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection/overview.md). In the following example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.DependencyInjection/Program.cs":::
 

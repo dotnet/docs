@@ -53,6 +53,26 @@ Sets an MSBuild property value.
 #:property PublishAot=false
 ```
 
+#### Conditional property values
+
+Property directives support MSBuild properties and expressions, so you can set conditional property values based on environment variables or other MSBuild properties. Use this capability to read environment variables with sensible defaults, or to set different MSBuild property values based on conditions.
+
+**Use environment variables with defaults:**
+
+```csharp
+#:property LogLevel=$([MSBuild]::ValueOrDefault('$(LOG_LEVEL)', 'Information'))
+```
+
+The `ValueOrDefault` function provides a default value when an environment variable isn't set. Alternatively, you can reference environment variables directly using `$(VARIABLE_NAME)` syntax, but this doesn't provide a fallback value if the variable is missing.
+
+**Use conditional expressions:**
+
+```csharp
+#:property EnableLogging=$([System.Convert]::ToBoolean($([MSBuild]::ValueOrDefault('$(ENABLE_LOGGING)', 'true'))))
+```
+
+For more information about MSBuild property functions, see [Property functions](/visualstudio/msbuild/property-functions).
+
 ### `#:sdk`
 
 Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.
@@ -79,6 +99,9 @@ Or use the `dotnet run` command followed by the name of the file:
 ```dotnetcli
 dotnet run file.cs
 ```
+
+> [!NOTE]
+> When a project file exists in the current working directory, `dotnet run file.cs` without the `--file` option runs that project and passes `file.cs` as an argument to the target app to preserve backwards compatibility.
 
 Or use the shorthand syntax:
 
@@ -359,6 +382,9 @@ Caching improves build performance but can cause confusion when:
 
 - Changes to implicit build files don't trigger rebuilds.
 - Moving files to different directories doesn't invalidate cache.
+
+> [!NOTE]
+> Concurrent invocations of a file-based app (for example, running more than one instance of the same file-based app in parallel) can cause errors due to contention over the build output files. To avoid this, first build the file-based app via `dotnet build file.cs` before starting the concurrent instances via `dotnet run file.cs --no-build`.
 
 ### Workarounds
 

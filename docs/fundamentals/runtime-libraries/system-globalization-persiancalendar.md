@@ -29,7 +29,7 @@ As a result of the changed algorithm:
 - The two algorithms might return different results when converting dates before 1800 and after 2123 in the Gregorian calendar.
 - The <xref:System.Globalization.PersianCalendar.MinSupportedDateTime> property value has changed from March 21, 0622 in the Gregorian calendar to March 22, 0622 in the Gregorian calendar.
 - The <xref:System.Globalization.PersianCalendar.MaxSupportedDateTime> property value has changed from the 10th day of the 10th month of the year 9378 in the Persian calendar to the 13th day of the 10th month of the year 9378 in the Persian calendar.
-- The <xref:System.Globalization.PersianCalendar.IsLeapYear%2A> method might return a different result than it did previously.
+- The <xref:System.Globalization.PersianCalendar.IsLeapYear*> method might return a different result than it did previously.
 
 ## Use the PersianCalendar class
 

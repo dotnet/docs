@@ -786,8 +786,6 @@ For more information about the first 3 settings, see the [Middle ground between 
 | **MSBuild property** | `GarbageCollectionAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
 | **runtimeconfig.json**   | `System.GC.DynamicAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
 
-[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
-
 #### Target TCP
 
 DATAS uses the Throughput Cost Percentage (TCP) as the memory cost measurement on throughput. It takes into consideration both GC pauses and how much allocations have to wait. Usually, GC pauses dominates, so you can use the "% pause time in GC" to approximate this cost. There are two transient cases where the allocation wait time can dominate:

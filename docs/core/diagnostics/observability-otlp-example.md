@@ -2,7 +2,7 @@
 title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
 description: An introduction to observing .NET apps with OTLP and the standalone Aspire Dashboard
 ms.date: 6/14/2023
-ms.topic: article
+ms.topic: how-to
 ms.custom: sfi-image-nochange
 ---
 
@@ -115,7 +115,7 @@ Each time you request the page, it increments the count for the number of greeti
 
 ### 8.1 Log output
 
-The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
+The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging/overview.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
 
 There are a few options for how logs can be egressed from .NET:
 

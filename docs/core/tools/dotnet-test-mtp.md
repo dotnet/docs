@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform
 description: The dotnet test command is used to execute unit tests in a given project using Microsoft.Testing.Platform (MTP).
-ms.date: 12/29/2024
+ms.date: 02/03/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -21,6 +21,10 @@ dotnet test
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
     [--max-parallel-test-modules <NUMBER>]
+    [--config-file <CONFIG_FILE>]
+    [--results-directory <RESULTS_DIRECTORY>]
+    [--diagnostic-output-directory <DIAGNOSTIC_OUTPUT_DIRECTORY>]
+    [--minimum-expected-tests <NUMBER>]
     [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>]
@@ -75,6 +79,22 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--max-parallel-test-modules <NUMBER>`**
 
   Specifies the maximum number of test modules that can run in parallel. The default is <xref:System.Environment.ProcessorCount?displayProperty=nameWithType>.
+
+- **`--config-file <CONFIG_FILE>`**
+
+  Specifies the configuration file to use for test execution. If a relative path is provided, it's converted to an absolute path based on the current directory. For more information about the configuration file settings, see [testconfig.json](../testing/microsoft-testing-platform-config.md#testconfigjson).
+
+- **`--results-directory <RESULTS_DIRECTORY>`**
+
+  Specifies the directory where test results are stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory.
+
+- **`--diagnostic-output-directory <DIAGNOSTIC_OUTPUT_DIRECTORY>`**
+
+  Specifies the directory where diagnostic output is stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory.
+
+- **`--minimum-expected-tests <NUMBER>`**
+
+  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [Microsoft.Testing.Platform exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 
@@ -140,7 +160,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md).
 
   > [!TIP]
   > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
@@ -186,6 +206,24 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   dotnet test --coverage
   ```
 
+- Run the tests and store results in a specific directory:
+
+  ```dotnetcli
+  dotnet test --results-directory ./TestResults
+  ```
+
+- Run the tests with diagnostic output in a specific directory:
+
+  ```dotnetcli
+  dotnet test --diagnostic-output-directory ./Diagnostics
+  ```
+
+- Run the tests ensuring at least 10 tests are executed:
+
+  ```dotnetcli
+  dotnet test --minimum-expected-tests 10
+  ```
+
 - Run the tests in the `TestProject` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli
@@ -203,6 +241,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](../testing/microsoft-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with VSTest](dotnet-test-vstest.md)

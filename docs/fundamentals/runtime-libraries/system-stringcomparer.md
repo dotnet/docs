@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-An object derived from the <xref:System.StringComparer> class embodies string-based comparison, equality, and hash code operations that take into account both case and culture-specific comparison rules. You can use the <xref:System.StringComparer> class to create a type-specific comparison to sort the elements in a generic collection. Classes such as <xref:System.Collections.Hashtable>, <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.SortedList>, and <xref:System.Collections.Generic.SortedList%602> use the <xref:System.StringComparer> class for sorting purposes.
+An object derived from the <xref:System.StringComparer> class embodies string-based comparison, equality, and hash code operations that take into account both case and culture-specific comparison rules. You can use the <xref:System.StringComparer> class to create a type-specific comparison to sort the elements in a generic collection. Classes such as <xref:System.Collections.Hashtable>, <xref:System.Collections.Generic.Dictionary`2>, <xref:System.Collections.SortedList>, and <xref:System.Collections.Generic.SortedList`2> use the <xref:System.StringComparer> class for sorting purposes.
 
 A comparison operation that is represented by the <xref:System.StringComparer> class is defined to be either case-sensitive or case-insensitive, and use either word (culture-sensitive) or ordinal (culture-insensitive) comparison rules. For more information about word and ordinal comparison rules, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>.
 

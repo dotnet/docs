@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "events [.NET]"
   - "events [.NET Core]"
   - "events [.NET]"
-ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-#customer intent: As a .NET developer, I want to raise and handle .NET events based on the delegate model, so I can enable subscribers to register with or receive notifications from providers.
 
 ---
 # Handle and raise events
@@ -33,8 +31,8 @@ Typically, to raise an event, you add a method that is marked as `protected` and
 
 The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and raised in a method named `OnThresholdReached`:
 
-[!code-csharp[EventsOverview#1](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#1)]
-[!code-vb[EventsOverview#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#1)]
+[!code-csharp[EventsOverview#1](./snippets/raise-consume/csharp/programtruncated.cs#1)]
+[!code-vb[EventsOverview#1](./snippets/raise-consume/vb/module1truncated.vb#1)]
 
 ## Declare delegate signatures for event handlers
 
@@ -48,8 +46,8 @@ Delegates are [multicast](xref:System.MulticastDelegate) class objects, which me
 
 Use the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:
 
-[!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
-[!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]
+[!code-csharp[EventsOverview#4](./snippets/raise-consume/csharp/programtruncated.cs#4)]
+[!code-vb[EventsOverview#4](./snippets/raise-consume/vb/module1truncated.vb#4)]
 
 ## Work with event data classes
 
@@ -61,8 +59,8 @@ You can create a class that derives from the <xref:System.EventArgs> class to pr
 
 The following example shows an event data class named `ThresholdReachedEventArgs` that contains properties that are specific to the event being raised:
 
-[!code-csharp[EventsOverview#3](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#3)]
-[!code-vb[EventsOverview#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#3)]
+[!code-csharp[EventsOverview#3](./snippets/raise-consume/csharp/programtruncated.cs#3)]
+[!code-vb[EventsOverview#3](./snippets/raise-consume/vb/module1truncated.vb#3)]
 
 ## Respond to events with handlers
 
@@ -70,8 +68,8 @@ To respond to an event, you define an event handler method in the event receiver
 
 The following example shows an event handler method named `c_ThresholdReached` that matches the signature for the <xref:System.EventHandler> delegate. The method subscribes to the `ThresholdReached` event:
 
-[!code-csharp[EventsOverview#2](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#2)]
-[!code-vb[EventsOverview#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]
+[!code-csharp[EventsOverview#2](./snippets/raise-consume/csharp/programtruncated.cs#2)]
+[!code-vb[EventsOverview#2](./snippets/raise-consume/vb/module1truncated.vb#2)]
 
 ## Use static and dynamic event handlers
 

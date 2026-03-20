@@ -25,6 +25,13 @@ convention in P/Invoke declarations for interop with these libraries.
 
 For non-x86 architectures, both `Stdcall` and `Cdecl` calling conventions are treated as the canonical platform default calling convention.
 
+### When you can omit the calling convention
+
+On x64, ARM, and ARM64 architectures, there is only one calling convention, so specifying one explicitly is unnecessary. You only need to specify a calling convention when targeting **Windows x86 (32-bit)**, where `Stdcall` and `Cdecl` differ.
+
+- ✔️ DO specify the calling convention explicitly when targeting Windows x86.
+- ✔️ DO omit the calling convention on x64, ARM, and ARM64 — the attribute has no effect on these architectures.
+
 ## Specifying calling conventions in managed P/Invoke declarations
 
 The calling conventions are specified by types in the `System.Runtime.CompilerServices` namespace or their combinations:

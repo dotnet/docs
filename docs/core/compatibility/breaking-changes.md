@@ -2,7 +2,7 @@
 title: .NET breaking changes reference
 description: Learn how to navigate the .NET breaking changes reference.
 ms.date: 06/24/2025
-ms.topic: article
+ms.topic: concept-article
 ---
 # Breaking changes in .NET
 

@@ -7,35 +7,27 @@ zone_pivot_groups: orleans-version
 
 # Streaming with Orleans
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans streaming is a feature of the Orleans framework that enables developers to write reactive applications that operate on a sequence of events in a structured way. Orleans streaming provides a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. A stream is a logical entity that always exists and can never fail. Streams are identified by their <xref:Orleans.Runtime.StreamId>. Streams allow the generation of data to be decoupled from its processing, both in time and space. Streams work uniformly across grains and Orleans clients, and can be compatible with and portable across a wide range of existing queuing technologies, such as Event Hubs, ServiceBus, Azure Queues, and Apache Kafka. Orleans streaming also supports dynamic stream bindings, transparent stream consumption lifecycle management, and extensible stream providers.
 
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 
 Orleans v.1.0.0 added support for streaming extensions to the programming model. Streaming extensions provide a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. Streaming extensions allow developers to write reactive applications that operate on a sequence of events in a structured way. The extensibility model of stream providers makes the programming model compatible with and portable across a wide range of existing queuing technologies, such as [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [ServiceBus](https://azure.microsoft.com/services/service-bus/), [Azure Queues](/azure/storage/queues/storage-quickstart-queues-dotnet), and [Apache Kafka](https://kafka.apache.org/). There is no need to write special code or run dedicated processes to interact with such queues.
 
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 
 ## Why should I care?
 
 If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams-why.md) is meant to answer that question.
 
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
 ## Programming model
@@ -58,8 +50,7 @@ The [Quick Start Sample](streams-quick-start.md) is a good quick overview of the
 
 Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans provides several stream provider implementations:
 
@@ -67,10 +58,8 @@ Orleans provides several stream provider implementations:
 - [Azure Queue (AQ) stream provider](stream-providers.md#azure-queue-aq-stream-provider)
 - [Queue adapters](stream-providers.md#queue-adapters)
 
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 
 Orleans currently includes several provider implementations:
@@ -79,7 +68,6 @@ Orleans currently includes several provider implementations:
 - **Azure Queues**, which uses Azure Storage Queues to store messages, and
 - **Azure EventHubs**, which uses Azure EventHubs
 
-<!-- markdownlint-enable MD044 -->
 :::zone-end
 
 For more information, see [Stream Providers](stream-providers.md).
@@ -88,7 +76,7 @@ For more information, see [Stream Providers](stream-providers.md).
 
 **Stream Subscription Semantics**:
 
-Orleans Streams guarantee _Sequential Consistency_ for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken>. For more information, see [Orleans stream providers](stream-providers.md).
+Orleans Streams guarantee _Sequential Consistency_ for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the <xref:System.Threading.Tasks.Task> representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken>. For more information, see [Orleans stream providers](stream-providers.md).
 
 **Individual Stream Events Delivery Guarantees**:
 

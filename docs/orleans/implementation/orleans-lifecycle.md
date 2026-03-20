@@ -2,7 +2,7 @@
 title: Orleans lifecycle
 description: Learn the various lifecycles of .NET Orleans apps.
 ms.date: 03/30/2025
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Orleans lifecycle overview

@@ -36,6 +36,14 @@ namespace interpolated_string_handler.Version4
             builder.Append(t?.ToString(format, null));
             Console.WriteLine($"\tAppended the formatted object");
         }
+
+        public void AppendFormatted<T>(T t, int alignment, string format) where T : IFormattable
+        {
+            Console.WriteLine($"\tAppendFormatted (IFormattable version) called: {t} with alignment {alignment} and format {{{format}}} is of type {typeof(T)},");
+            var formatString =$"{alignment}:{format}";
+            builder.Append(string.Format($"{{0,{formatString}}}", t));
+            Console.WriteLine($"\tAppended the formatted object");
+        }
         // </AppendIFormattable>
 
         public void AppendFormatted<T>(T t)
@@ -46,8 +54,7 @@ namespace interpolated_string_handler.Version4
             Console.WriteLine($"\tAppended the formatted object");
         }
 
-        // Not part of the pattern, but needed to retrieve the formatted string
-        internal string GetFormattedText() => builder.ToString();
+        public override string ToString() => builder.ToString();
     }
 
     public enum LogLevel
@@ -72,7 +79,7 @@ namespace interpolated_string_handler.Version4
         public void LogMessage(LogLevel level, [InterpolatedStringHandlerArgument("", "level")] LogInterpolatedStringHandler builder)
         {
             if (EnabledLevel < level) return;
-            Console.WriteLine(builder.GetFormattedText());
+            Console.WriteLine(builder.ToString());
         }
     }
 }

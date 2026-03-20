@@ -7,7 +7,7 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Linq.Expressions.Expression.Add%2A> method returns a <xref:System.Linq.Expressions.BinaryExpression> that has the <xref:System.Linq.Expressions.BinaryExpression.Method> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted%2A> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion> property is `null`.
+The <xref:System.Linq.Expressions.Expression.Add*> method returns a <xref:System.Linq.Expressions.BinaryExpression> that has the <xref:System.Linq.Expressions.BinaryExpression.Method> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted*> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull*> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion> property is `null`.
 
 The following information describes the implementing method, the node type, and whether a node is lifted.
 

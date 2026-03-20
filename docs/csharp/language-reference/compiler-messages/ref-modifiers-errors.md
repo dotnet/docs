@@ -55,7 +55,6 @@ f1_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
-  - "CS9205"
   - "CS9265"
 helpviewer_keywords:
   - "CS0192"
@@ -111,7 +110,6 @@ helpviewer_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
-  - "CS9205"
   - "CS9265"
 ai-usage: ai-assisted
 ms.date: 11/21/2025
@@ -179,7 +177,6 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9198**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
 - [**CS9200**](#reference-variable-restrictions): *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - [**CS9201**](#reference-variable-restrictions): *Ref field should be ref-assigned before use.*
-- [**CS9205**](#incorrect-syntax): *Expected interpolated string.*
 - [**CS9265**](#reference-variable-restrictions): *Field is never ref-assigned to, and will always have its default value (null reference)*
 
 These errors and warnings follow these themes:
@@ -198,15 +195,12 @@ These errors indicate that you're using incorrect syntax regarding reference var
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388**:  *An `out` variable cannot be declared as a ref local.*
 - **CS9190**:  *`readonly` modifier must be specified after `ref`.*
-- **CS9205**: *Expected interpolated string.*
 
 To correct these errors:
 
 - Ensure the left operand of a `= ref` operator is a reference variable rather than a value expression or non-reference local. Ref assignment requires both sides to be reference variables that can create an alias to the same storage location (**CS8373**).
 - When declaring reference parameters, write the modifier as `ref readonly` rather than `readonly ref`. The C# language specification requires the `ref` keyword to precede the `readonly` modifier in parameter declarations to maintain consistent syntax across all reference parameter types (**CS9190**).
 - Use the `ref` keyword instead of `out` when declaring local reference variables. `out` is exclusively a parameter modifier that indicates a method must assign a value before returning, whereas `ref` is the appropriate keyword for creating local variables that alias other storage locations (**CS8388**).
-- Pass a regular variable or value expression instead of an interpolated string when calling a method with an `out` parameter. Interpolated strings are immutable temporary values that can't be used as output parameters since they don't represent assignable storage locations (**CS9205**).
-
 For more information about reference variables and their syntax requirements, see [reference variables](../statements/declarations.md#reference-variables) and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Reference variable restrictions

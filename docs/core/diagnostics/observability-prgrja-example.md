@@ -2,7 +2,7 @@
 title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
 description: A walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
 ms.date: 6/14/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger
@@ -68,7 +68,7 @@ Each time you request the page, it increments the count for the number of greeti
 
 ### 6.1 Log output
 
-The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
+The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging/overview.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
 
 There are a few options for how logs can be egressed from .NET:
 

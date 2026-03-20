@@ -21,6 +21,7 @@ dotnet run [<applicationArguments>]
   [-f|--framework <FRAMEWORK>] [--force] [--interactive]
   [-lp|--launch-profile <NAME>] [--no-build] [--no-cache]
   [--no-dependencies] [--no-launch-profile] [--no-restore] [--os <OS>]
+  [-p|--property:<PROPERTYNAME>=<VALUE>]
   [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
   [--sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
   [[--] [application arguments]]
@@ -31,9 +32,6 @@ dotnet run -h|--help
 ## Description
 
 The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build apply to `dotnet run` as well.
-
-> [!NOTE]
-> `dotnet run` doesn't respect arguments like `/property:property=value`, which are respected by `dotnet build`.
 
 Output files are written into the default location, which is `bin/<configuration>/<target>`. For example if you have a `netcoreapp2.1` application and you run `dotnet run`, the output is placed in `bin/Debug/netcoreapp2.1`. Files are overwritten as needed. Temporary files are placed in the `obj` directory.
 

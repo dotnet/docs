@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Extensions.Hosting</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.11.1" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.10.1" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.10.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.10.0" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

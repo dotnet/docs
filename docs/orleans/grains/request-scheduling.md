@@ -1,8 +1,9 @@
 ---
 title: Request scheduling
 description: Learn about request scheduling in .NET Orleans.
-ms.date: 05/23/2025
-ms.topic: article
+ms.date: 03/09/2026
+ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Request scheduling
@@ -92,6 +93,9 @@ The following section describes how to prevent deadlocks by allowing multiple re
 
 ## Reentrancy
 
+> [!WARNING]
+> Reentrancy is an advanced feature that requires a solid understanding of concurrency concepts. Incorrect use can lead to race conditions, state corruption, or subtle bugs that are difficult to diagnose. Ensure you understand the implications before enabling reentrancy on your grains.
+
 Orleans defaults to a safe execution flow where the internal state of a grain isn't modified concurrently by multiple requests. Concurrent modification complicates logic and places a greater burden on you, the developer. This protection against concurrency bugs has a cost, primarily *liveness*: certain call patterns can lead to deadlocks, as discussed previously. One way to avoid deadlocks is to ensure grain calls never form a cycle. Often, it's difficult to write code that is cycle-free and guaranteed not to deadlock. Waiting for each request to run from beginning to completion before processing the next can also hurt performance. For example, by default, if a grain method performs an asynchronous request to a database service, the grain pauses request execution until the database response arrives.
 
 Each of these cases is discussed in the following sections. For these reasons, Orleans provides options to allow some or all requests to execute *concurrently*, interleaving their execution. In Orleans, we refer to such concerns as *reentrancy* or *interleaving*. By executing requests concurrently, grains performing asynchronous operations can process more requests in a shorter period.
@@ -101,6 +105,16 @@ Multiple requests may be interleaved in the following cases:
 - The grain class is marked with <xref:Orleans.Concurrency.ReentrantAttribute>.
 - The interface method is marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
 - The grain's <xref:Orleans.Concurrency.MayInterleaveAttribute> predicate returns `true`.
+
+The following table summarizes all available reentrancy options:
+
+| Option | Scope | Description |
+|--------|-------|-------------|
+| <xref:Orleans.Concurrency.ReentrantAttribute> | Grain class | All methods in the grain can freely interleave with each other. |
+| <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> | Interface method | The marked method always interleaves with any other request, and any other request can interleave with it. |
+| <xref:Orleans.Concurrency.ReadOnlyAttribute> | Interface method | The method doesn't modify grain state and can run concurrently with other <xref:Orleans.Concurrency.ReadOnlyAttribute> methods. |
+| <xref:Orleans.Concurrency.MayInterleaveAttribute> | Grain class | A predicate method determines on a per-call basis whether a specific request should interleave. |
+| <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy> | Call site | Allows reentrancy for the duration of the call chain scoped to callers further down the chain, giving fine-grained control over where reentrancy is enabled. |
 
 With reentrancy, the following case becomes a valid execution, removing the possibility of the deadlock described above.
 
@@ -153,7 +167,7 @@ In the end, the answer depends on the specifics of the application.
 
 ### Interleaving methods
 
-Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> always interleave any other request and can always be interleaved by any other request, even requests for non-`[AlwaysInterleave]` methods.
+Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> always interleave any other request and can always be interleaved by any other request, even requests for non-<xref:Orleans.Concurrency.AlwaysInterleaveAttribute> methods.
 
 Consider the following example:
 
@@ -196,7 +210,7 @@ Calls to `GoSlow` aren't interleaved, so the total execution time of the two `Go
 
 ### Readonly methods
 
-When a grain method doesn't modify the grain state, it's safe to execute concurrently with other requests. The <xref:Orleans.Concurrency.ReadOnlyAttribute> indicates that a method doesn't modify the grain's state. Marking methods as `ReadOnly` allows Orleans to process your request concurrently with other `ReadOnly` requests, which can significantly improve your app's performance. Consider the following example:
+When a grain method doesn't modify the grain state, it's safe to execute concurrently with other requests. The <xref:Orleans.Concurrency.ReadOnlyAttribute> indicates that a method doesn't modify the grain's state. Marking methods as <xref:Orleans.Concurrency.ReadOnlyAttribute> allows Orleans to process your request concurrently with other <xref:Orleans.Concurrency.ReadOnlyAttribute> requests, which can significantly improve your app's performance. Consider the following example:
 
 ```csharp
 public interface IMyGrain : IGrainWithIntegerKey
@@ -208,7 +222,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 }
 ```
 
-The `GetCount` method doesn't modify the grain state, so it's marked `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
+The `GetCount` method doesn't modify the grain state, so it's marked <xref:Orleans.Concurrency.ReadOnlyAttribute>. Callers awaiting this method invocation aren't blocked by other <xref:Orleans.Concurrency.ReadOnlyAttribute> requests to the grain, and the method returns immediately.
 
 ### Call chain reentrancy
 
@@ -251,7 +265,7 @@ public class UserGrain : Grain, IUserGrain
 
 In the preceding example, `UserGrain.JoinRoom(roomName)` calls `ChatRoomGrain.OnJoinRoom(user)`, which tries to call back into `UserGrain.GetDisplayName()` to get the user's display name. Since this call chain involves a cycle, it results in a deadlock if `UserGrain` doesn't allow reentrance using one of the supported mechanisms discussed in this article. In this instance, we use <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy>, which allows only `roomGrain` to call back into `UserGrain`. This gives you fine-grained control over where and how reentrancy is enabled.
 
-If you were to prevent the deadlock by annotating the `GetDisplayName()` method declaration on `IUserGrain` with `[AlwaysInterleave]` instead, you would allow *any* grain to interleave a `GetDisplayName` call with any other method. By using `AllowCallChainReentrancy`, you allow *only* `roomGrain` to call methods on the `UserGrain`, and only until `scope` is disposed.
+If you were to prevent the deadlock by annotating the `GetDisplayName()` method declaration on `IUserGrain` with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> instead, you would allow *any* grain to interleave a `GetDisplayName` call with any other method. By using `AllowCallChainReentrancy`, you allow *only* `roomGrain` to call methods on the `UserGrain`, and only until `scope` is disposed.
 
 #### Suppress call chain reentrancy
 

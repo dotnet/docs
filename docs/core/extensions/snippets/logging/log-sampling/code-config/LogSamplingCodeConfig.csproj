@@ -3,13 +3,14 @@
   <PropertyGroup>
     <Description>Demonstrates how to use log sampling feature.</Description>
     <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
     <NoWarn>$(NoWarn);EXTEXP0003</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.4" />
-    <PackageReference Include="Microsoft.Extensions.Telemetry" Version="9.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry" Version="10.3.0" />
   </ItemGroup>
 
 </Project>

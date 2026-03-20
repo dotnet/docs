@@ -1,3 +1,4 @@
+using Azure.Data.Tables;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -21,7 +22,7 @@ internal class ExampleExternalProgram
                         options.ServiceId = "MyOrleansService";
                     })
                     .UseAzureStorageClustering(
-                        options => options.ConfigureTableServiceClient(
+                        options => options.TableServiceClient = new TableServiceClient(
                             context.Configuration["ORLEANS_AZURE_STORAGE_CONNECTION_STRING"]));
                 })
                 .UseConsoleLifetime()

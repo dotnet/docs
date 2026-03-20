@@ -26,7 +26,7 @@ public class Example10
         for (int ctr = 0; ctr < values.Length; ctr++)
             Console.WriteLine($"{values[ctr]} {(values[ctr].Equals(restoredValues[ctr]) ? "=" : "<>")} {restoredValues[ctr]}");
 
-        // The example displays the following output:
+        // The example displays the following output on .NET Framework:
         //       2.882883 <> 2.882883
         //       0.3333333 <> 0.3333333
         //       3.141593 <> 3.141593

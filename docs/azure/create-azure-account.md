@@ -8,7 +8,7 @@ ms.date: 01/16/2026
 
 # Create an Azure account
 
-To use Azure, you need an Azure account.  Your Azure account is the credential you use to sign into Azure services like the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).
+To use Azure, you need an Azure account.  Your Azure account is the credential you use to sign into Azure services like the [Azure portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).
 
 ## Option 1: Use monthly Azure credits for Visual Studio subscribers
 
@@ -24,11 +24,11 @@ You can also create a [pay-as-you-go Azure account](https://azure.microsoft.com/
 
 ## Option 4: Use a corporate account
 
-If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then sign in to your account with the [Azure Portal](https://portal.azure.com).
+If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then sign in to your account with the [Azure portal](https://portal.azure.com).
 
 ## Next steps
 
-After creating an Azure account, be sure to bookmark the [Azure Portal](https://portal.azure.com) in your web browser for easy access to Azure.
+After creating an Azure account, be sure to bookmark the [Azure portal](https://portal.azure.com) in your web browser for easy access to Azure.
 
 Next, you will want to configure Visual Studio or Visual Studio Code for Azure development depending on which IDE you use.
 

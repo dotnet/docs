@@ -7,9 +7,9 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Diagnostics.Tracing.EventWrittenEventArgs> class provides data for the <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten%2A> callback.
+The <xref:System.Diagnostics.Tracing.EventWrittenEventArgs> class provides data for the <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten*> callback.
 
-Whenever an event is dispatched to an <xref:System.Diagnostics.Tracing.EventListener>, the <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten%2A?displayProperty=nameWithType> callback method is invoked. It is passed an `EventWrittenEventArgs` instance that contains information associated with the event. All property values of the `EventWrittenEventArgs` class are valid only during the callback.
+Whenever an event is dispatched to an <xref:System.Diagnostics.Tracing.EventListener>, the <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten*?displayProperty=nameWithType> callback method is invoked. It is passed an `EventWrittenEventArgs` instance that contains information associated with the event. All property values of the `EventWrittenEventArgs` class are valid only during the callback.
 
 The following sections contain additional information about individual `EventWrittenEventArgs` properties.
 

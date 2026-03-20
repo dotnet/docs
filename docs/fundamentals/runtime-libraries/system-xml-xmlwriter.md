@@ -21,7 +21,7 @@ The members of the <xref:System.Xml.XmlWriter> class enable you to:
 
 ## Create an XML writer
 
-To create an <xref:System.Xml.XmlWriter> instance, use the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method. To specify the set of features you want to enable on the XML writer, pass an <xref:System.Xml.XmlWriterSettings> to the <xref:System.Xml.XmlWriter.Create%2A> method. Otherwise, default settings are used. See the <xref:System.Xml.XmlWriter.Create%2A> reference pages for details.
+To create an <xref:System.Xml.XmlWriter> instance, use the <xref:System.Xml.XmlWriter.Create*?displayProperty=nameWithType> method. To specify the set of features you want to enable on the XML writer, pass an <xref:System.Xml.XmlWriterSettings> to the <xref:System.Xml.XmlWriter.Create*> method. Otherwise, default settings are used. See the <xref:System.Xml.XmlWriter.Create*> reference pages for details.
 
 ## Specify the output format
 
@@ -29,20 +29,20 @@ The <xref:System.Xml.XmlWriterSettings> class includes several properties that c
 
 |Property|Description|
 |--------------|-----------------|
-|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|Specifies the text encoding to use. The default is `Encoding.UTF8`.|
-|<xref:System.Xml.XmlWriterSettings.Indent%2A>|Indicates whether to indent elements. The default is `false` (no indentation).|
-|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Specifies the character string to use when indenting. The default is two spaces.|
-|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|Specifies the character string to use for line breaks. The default is `\r\n` (carriage return, line feed) for non-Unix platforms, and `\n` (line feed) for Unix platforms.|
-|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|Specifies how to handle newline characters.|
-|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|Indicates whether to write attributes on a new line. <xref:System.Xml.XmlWriterSettings.Indent%2A> should be set to `true` when using this property. The default is `false`.|
-|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|Indicates whether to write an XML declaration. The default is `false`.|
+|<xref:System.Xml.XmlWriterSettings.Encoding*>|Specifies the text encoding to use. The default is `Encoding.UTF8`.|
+|<xref:System.Xml.XmlWriterSettings.Indent*>|Indicates whether to indent elements. The default is `false` (no indentation).|
+|<xref:System.Xml.XmlWriterSettings.IndentChars*>|Specifies the character string to use when indenting. The default is two spaces.|
+|<xref:System.Xml.XmlWriterSettings.NewLineChars*>|Specifies the character string to use for line breaks. The default is `\r\n` (carriage return, line feed) for non-Unix platforms, and `\n` (line feed) for Unix platforms.|
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling*>|Specifies how to handle newline characters.|
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes*>|Indicates whether to write attributes on a new line. <xref:System.Xml.XmlWriterSettings.Indent*> should be set to `true` when using this property. The default is `false`.|
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration*>|Indicates whether to write an XML declaration. The default is `false`.|
 
-The <xref:System.Xml.XmlWriterSettings.Indent%2A> and <xref:System.Xml.XmlWriterSettings.IndentChars%2A> properties control how insignificant white space is formatted. For example, to indent element nodes:
+The <xref:System.Xml.XmlWriterSettings.Indent*> and <xref:System.Xml.XmlWriterSettings.IndentChars*> properties control how insignificant white space is formatted. For example, to indent element nodes:
 
 :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet8":::
 :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet8":::
 
-Use the <xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A> to write each attribute on a new line with one extra level of indentation:
+Use the <xref:System.Xml.XmlWriterSettings.NewLineOnAttributes*> to write each attribute on a new line with one extra level of indentation:
 
 :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet9":::
 :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet9":::
@@ -67,9 +67,9 @@ You can use the following <xref:System.Xml.XmlWriter> methods to write element n
 
 |Use|To|
 |---------|--------|
-|<xref:System.Xml.XmlWriter.WriteElementString%2A>|Write an entire element node, including a string value.|
-|<xref:System.Xml.XmlWriter.WriteStartElement%2A>|To write an element value by using multiple method calls. For example, you can call <xref:System.Xml.XmlWriter.WriteValue%2A> to write a typed value, <xref:System.Xml.XmlWriter.WriteCharEntity%2A> to write a character entity, <xref:System.Xml.XmlWriter.WriteAttributeString%2A> to write an attribute, or you can write a child element. This is a more sophisticated version of the <xref:System.Xml.XmlWriter.WriteElementString%2A> method.<br /><br />To close the element, you call the <xref:System.Xml.XmlWriter.WriteEndElement%2A> or <xref:System.Xml.XmlWriter.WriteFullEndElement%2A> method.|
-|<xref:System.Xml.XmlWriter.WriteNode%2A>|To copy an element node found at the current position of an <xref:System.Xml.XmlReader> or <xref:System.Xml.XPath.XPathNavigator> object. When called, it copies everything from the source object to the <xref:System.Xml.XmlWriter> instance.|
+|<xref:System.Xml.XmlWriter.WriteElementString*>|Write an entire element node, including a string value.|
+|<xref:System.Xml.XmlWriter.WriteStartElement*>|To write an element value by using multiple method calls. For example, you can call <xref:System.Xml.XmlWriter.WriteValue*> to write a typed value, <xref:System.Xml.XmlWriter.WriteCharEntity*> to write a character entity, <xref:System.Xml.XmlWriter.WriteAttributeString*> to write an attribute, or you can write a child element. This is a more sophisticated version of the <xref:System.Xml.XmlWriter.WriteElementString*> method.<br /><br />To close the element, you call the <xref:System.Xml.XmlWriter.WriteEndElement*> or <xref:System.Xml.XmlWriter.WriteFullEndElement*> method.|
+|<xref:System.Xml.XmlWriter.WriteNode*>|To copy an element node found at the current position of an <xref:System.Xml.XmlReader> or <xref:System.Xml.XPath.XPathNavigator> object. When called, it copies everything from the source object to the <xref:System.Xml.XmlWriter> instance.|
 
 ## Write attributes
 
@@ -77,9 +77,9 @@ You can use the following <xref:System.Xml.XmlWriter> methods to write attribute
 
 |Use|To|
 |---------|--------|
-|<xref:System.Xml.XmlWriter.WriteAttributeString%2A>|To write an entire attribute node, including a string value.|
-|<xref:System.Xml.XmlWriter.WriteStartAttribute%2A>|To write the attribute value using multiple method calls. For example, you can call <xref:System.Xml.XmlWriter.WriteValue%2A> to write a typed value. This is a more sophisticated version of the <xref:System.Xml.XmlWriter.WriteElementString%2A> method.<br /><br />To close the element, you call the <xref:System.Xml.XmlWriter.WriteEndAttribute%2A> method.|
-|<xref:System.Xml.XmlWriter.WriteAttributes%2A>|To copy all the attributes found at the current position of an <xref:System.Xml.XmlReader> object. The attributes that are written depend on the type of node the reader is currently positioned on:<br /><br />- For an attribute node, it writes the current attribute, and then the rest of the attributes until the element closing tag.<br />- For an element node, it writes all attributes contained by the element.<br />- For an XML declaration node, it writes all the attributes in the declaration.<br />- For all other node types, the method throws an exception.|
+|<xref:System.Xml.XmlWriter.WriteAttributeString*>|To write an entire attribute node, including a string value.|
+|<xref:System.Xml.XmlWriter.WriteStartAttribute*>|To write the attribute value using multiple method calls. For example, you can call <xref:System.Xml.XmlWriter.WriteValue*> to write a typed value. This is a more sophisticated version of the <xref:System.Xml.XmlWriter.WriteElementString*> method.<br /><br />To close the element, you call the <xref:System.Xml.XmlWriter.WriteEndAttribute*> method.|
+|<xref:System.Xml.XmlWriter.WriteAttributes*>|To copy all the attributes found at the current position of an <xref:System.Xml.XmlReader> object. The attributes that are written depend on the type of node the reader is currently positioned on:<br /><br />- For an attribute node, it writes the current attribute, and then the rest of the attributes until the element closing tag.<br />- For an element node, it writes all attributes contained by the element.<br />- For an XML declaration node, it writes all the attributes in the declaration.<br />- For all other node types, the method throws an exception.|
 
 ## Handle namespaces
 
@@ -87,9 +87,9 @@ Namespaces are used to qualify element and attribute names in an XML document. N
 
 The <xref:System.Xml.XmlWriter> maintains a namespace stack that corresponds to all the namespaces defined in the current namespace scope. When writing elements and attributes you can utilize namespaces in the following ways:
 
-- Declare namespaces manually by using the <xref:System.Xml.XmlWriter.WriteAttributeString%2A> method. This can be useful when you know how to best optimize the number of namespace declarations. For an example, see the <xref:System.Xml.XmlWriter.WriteAttributeString%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.
+- Declare namespaces manually by using the <xref:System.Xml.XmlWriter.WriteAttributeString*> method. This can be useful when you know how to best optimize the number of namespace declarations. For an example, see the <xref:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String%2CSystem.String,System.String)> method.
 
-- Override the current namespace declaration with a new namespace. In the following code, the <xref:System.Xml.XmlWriter.WriteAttributeString%2A> method changes the namespace URI for the `"x"` prefix from `"123"` to `"abc"`.
+- Override the current namespace declaration with a new namespace. In the following code, the <xref:System.Xml.XmlWriter.WriteAttributeString*> method changes the namespace URI for the `"x"` prefix from `"123"` to `"abc"`.
 
   :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet18":::
   :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet18":::
@@ -102,27 +102,27 @@ The <xref:System.Xml.XmlWriter> maintains a namespace stack that corresponds to 
     </x:root>
     ```
 
-- Specify a namespace prefix when writing attributes or elements. Many of the methods used to write element and attributes enable you to do this. For example, the <xref:System.Xml.XmlWriter.WriteStartElement%28System.String%2CSystem.String%2CSystem.String%29> method writes a start tag and associates it with a specified namespace and prefix.
+- Specify a namespace prefix when writing attributes or elements. Many of the methods used to write element and attributes enable you to do this. For example, the <xref:System.Xml.XmlWriter.WriteStartElement(System.String,System.String,System.String)> method writes a start tag and associates it with a specified namespace and prefix.
 
 ## Write typed data
 
-The <xref:System.Xml.XmlWriter.WriteValue%2A> method accepts a common language runtime (CLR) object, converts the input value to its string representation according to XML schema definition language (XSD) data type conversion rules, and writes it out by using the <xref:System.Xml.XmlWriter.WriteString%2A> method. This is easier than using the methods in the <xref:System.Xml.XmlConvert> class to convert the typed data to a string value before writing it out.
+The <xref:System.Xml.XmlWriter.WriteValue*> method accepts a common language runtime (CLR) object, converts the input value to its string representation according to XML schema definition language (XSD) data type conversion rules, and writes it out by using the <xref:System.Xml.XmlWriter.WriteString*> method. This is easier than using the methods in the <xref:System.Xml.XmlConvert> class to convert the typed data to a string value before writing it out.
 
 When writing to text, the typed value is serialized to text by using the <xref:System.Xml.XmlConvert> rules for that schema type.
 
-For default XSD data types that correspond to CLR types, see the <xref:System.Xml.XmlWriter.WriteValue%2A> method.
+For default XSD data types that correspond to CLR types, see the <xref:System.Xml.XmlWriter.WriteValue*> method.
 
-The <xref:System.Xml.XmlWriter> can also be used to write to an XML data store. For example, the <xref:System.Xml.XPath.XPathNavigator> class can create an <xref:System.Xml.XmlWriter> object to create nodes for an <xref:System.Xml.XmlDocument> object. If the data store has schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method throws an exception if you try to convert to a type that is not allowed. If the data store does not have schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method treats all values as an `xsd:anySimpleType` type.
+The <xref:System.Xml.XmlWriter> can also be used to write to an XML data store. For example, the <xref:System.Xml.XPath.XPathNavigator> class can create an <xref:System.Xml.XmlWriter> object to create nodes for an <xref:System.Xml.XmlDocument> object. If the data store has schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue*> method throws an exception if you try to convert to a type that is not allowed. If the data store does not have schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue*> method treats all values as an `xsd:anySimpleType` type.
 
 ## Close the XML writer
 
-When you use <xref:System.Xml.XmlWriter> methods to output XML, the elements and attributes are not written until you call the <xref:System.Xml.XmlWriter.Close%2A> method. For example, if you are using <xref:System.Xml.XmlWriter> to populate an <xref:System.Xml.XmlDocument> object, you won't be able to see the written elements and attributes in the target document until you close the <xref:System.Xml.XmlWriter> instance.
+When you use <xref:System.Xml.XmlWriter> methods to output XML, the elements and attributes are not written until you call the <xref:System.Xml.XmlWriter.Close*> method. For example, if you are using <xref:System.Xml.XmlWriter> to populate an <xref:System.Xml.XmlDocument> object, you won't be able to see the written elements and attributes in the target document until you close the <xref:System.Xml.XmlWriter> instance.
 
 ## Asynchronous programming
 
-Most of the <xref:System.Xml.XmlWriter> methods have asynchronous counterparts that have "Async" at the end of their method names. For example, the asynchronous equivalent of <xref:System.Xml.XmlWriter.WriteAttributeString%2A> is <xref:System.Xml.XmlWriter.WriteAttributeStringAsync%2A>.
+Most of the <xref:System.Xml.XmlWriter> methods have asynchronous counterparts that have "Async" at the end of their method names. For example, the asynchronous equivalent of <xref:System.Xml.XmlWriter.WriteAttributeString*> is <xref:System.Xml.XmlWriter.WriteAttributeStringAsync*>.
 
-For the <xref:System.Xml.XmlWriter.WriteValue%2A> method, which doesn't have an asynchronous counterpart, convert the return value to a string and use the <xref:System.Xml.XmlWriter.WriteStringAsync%2A> method instead.
+For the <xref:System.Xml.XmlWriter.WriteValue*> method, which doesn't have an asynchronous counterpart, convert the return value to a string and use the <xref:System.Xml.XmlWriter.WriteStringAsync*> method instead.
 
 ## Security considerations
 
@@ -130,4 +130,4 @@ Consider the following when working with the <xref:System.Xml.XmlWriter> class:
 
 - Exceptions thrown by the <xref:System.Xml.XmlWriter> can disclose path information that you do not want bubbled up to the app. Your app must catch exceptions and process them appropriately.
 
-- <xref:System.Xml.XmlWriter> does not validate any data that is passed to the <xref:System.Xml.XmlWriter.WriteDocType%2A> or <xref:System.Xml.XmlWriter.WriteRaw%2A> method. You should not pass arbitrary data to these methods.
+- <xref:System.Xml.XmlWriter> does not validate any data that is passed to the <xref:System.Xml.XmlWriter.WriteDocType*> or <xref:System.Xml.XmlWriter.WriteRaw*> method. You should not pass arbitrary data to these methods.

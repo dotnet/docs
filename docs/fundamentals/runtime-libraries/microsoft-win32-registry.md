@@ -27,7 +27,7 @@ Hardware devices can place information in the registry automatically using the P
 
 ## Static methods for getting and setting values
 
-The <xref:Microsoft.Win32.Registry> class also contains `static` <xref:Microsoft.Win32.Registry.GetValue%2A> and <xref:Microsoft.Win32.Registry.SetValue%2A> methods for setting and retrieving values from registry keys. These methods open and close registry keys each time they're used. So when you access a large number of values, they don't perform as well as analogous methods in the <xref:Microsoft.Win32.RegistryKey> class.
+The <xref:Microsoft.Win32.Registry> class also contains `static` <xref:Microsoft.Win32.Registry.GetValue*> and <xref:Microsoft.Win32.Registry.SetValue*> methods for setting and retrieving values from registry keys. These methods open and close registry keys each time they're used. So when you access a large number of values, they don't perform as well as analogous methods in the <xref:Microsoft.Win32.RegistryKey> class.
 
 The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to:
 

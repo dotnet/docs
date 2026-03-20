@@ -16,7 +16,7 @@ Error messages target the developer who is handling the exception. The text of t
 > [!IMPORTANT]
 > Do not disclose sensitive information in exception messages without checking for the appropriate permissions.
 
-The value of the <xref:System.Exception.Message> property is included in the information returned by <xref:System.Exception.ToString%2A>. The <xref:System.Exception.Message> property is set only when creating an <xref:System.Exception>. If no message was supplied to the constructor for the current instance, the system supplies a default message that is formatted using the current system culture.
+The value of the <xref:System.Exception.Message> property is included in the information returned by <xref:System.Exception.ToString*>. The <xref:System.Exception.Message> property is set only when creating an <xref:System.Exception>. If no message was supplied to the constructor for the current instance, the system supplies a default message that is formatted using the current system culture.
 
 ## Examples
 

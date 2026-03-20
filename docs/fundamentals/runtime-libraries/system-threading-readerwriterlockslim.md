@@ -15,7 +15,7 @@ Use <xref:System.Threading.ReaderWriterLockSlim> to protect a resource that is r
 > [!NOTE]
 >
 > - <xref:System.Threading.ReaderWriterLockSlim> is similar to <xref:System.Threading.ReaderWriterLock>, but it has simplified rules for recursion and for upgrading and downgrading lock state. <xref:System.Threading.ReaderWriterLockSlim> avoids many cases of potential deadlock. In addition, the performance of <xref:System.Threading.ReaderWriterLockSlim> is significantly better than <xref:System.Threading.ReaderWriterLock>. <xref:System.Threading.ReaderWriterLockSlim> is recommended for all new development.
-> - <xref:System.Threading.ReaderWriterLockSlim> is not thread-abort safe. You should not use it in an environment where threads accessing it can be aborted, such as .NET Framework. If you're using .NET Core or .NET 5+, it should be fine. <xref:System.Threading.Thread.Abort%2A> is not supported in .NET Core and [is obsolete](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md) in .NET 5 and later versions.
+> - <xref:System.Threading.ReaderWriterLockSlim> is not thread-abort safe. You should not use it in an environment where threads accessing it can be aborted, such as .NET Framework. If you're using .NET Core or .NET 5+, it should be fine. <xref:System.Threading.Thread.Abort*> is not supported in .NET Core and [is obsolete](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md) in .NET 5 and later versions.
 
 By default, new instances of <xref:System.Threading.ReaderWriterLockSlim> are created with the <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType> flag and do not allow recursion. This default policy is recommended for all new development, because recursion introduces unnecessary complications and makes your code more prone to deadlocks. To simplify migration from existing projects that use <xref:System.Threading.Monitor> or <xref:System.Threading.ReaderWriterLock>, you can use the <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType> flag to create instances of <xref:System.Threading.ReaderWriterLockSlim> that allow recursion.
 
@@ -24,7 +24,7 @@ A thread can enter the lock in three modes: read mode, write mode, and upgradeab
 Regardless of recursion policy, only one thread can be in write mode at any time. When a thread is in write mode, no other thread can enter the lock in any mode. Only one thread can be in upgradeable mode at any time. Any number of threads can be in read mode, and there can be one thread in upgradeable mode while other threads are in read mode.
 
 > [!IMPORTANT]
-> This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.
+> This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose*> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.
 
 <xref:System.Threading.ReaderWriterLockSlim> has managed thread affinity; that is, each <xref:System.Threading.Thread> object must make its own method calls to enter and exit lock modes. No thread can change the mode of another thread.
 
@@ -41,7 +41,7 @@ If a <xref:System.Threading.ReaderWriterLockSlim> does not allow recursion, a th
 
 ## Upgrade and downgrade locks
 
-Upgradeable mode is intended for cases where a thread usually reads from the protected resource, but might need to write to it if some condition is met. A thread that has entered a <xref:System.Threading.ReaderWriterLockSlim> in upgradeable mode has read access to the protected resource, and can upgrade to write mode by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A> or <xref:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock%2A> methods. Because there can be only one thread in upgradeable mode at a time, upgrading to write mode cannot deadlock when recursion is not allowed, which is the default policy.
+Upgradeable mode is intended for cases where a thread usually reads from the protected resource, but might need to write to it if some condition is met. A thread that has entered a <xref:System.Threading.ReaderWriterLockSlim> in upgradeable mode has read access to the protected resource, and can upgrade to write mode by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock*> or <xref:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock*> methods. Because there can be only one thread in upgradeable mode at a time, upgrading to write mode cannot deadlock when recursion is not allowed, which is the default policy.
 
 > [!IMPORTANT]
 > Regardless of recursion policy, a thread that initially entered read mode is not allowed to upgrade to upgradeable mode or write mode, because that pattern creates a strong probability of deadlocks. For example, if two threads in read mode both try to enter write mode, they will deadlock. Upgradeable mode is designed to avoid such deadlocks.
@@ -53,13 +53,13 @@ When the thread in upgradeable mode exits write mode, other threads that are wai
 > [!IMPORTANT]
 > If you allow multiple threads to enter write mode or upgradeable mode, you must not allow one thread to monopolize upgradeable mode. Otherwise, threads that try to enter write mode directly will be blocked indefinitely, and while they are blocked, other threads will be unable to enter read mode.
 
-A thread in upgradeable mode can downgrade to read mode by first calling the <xref:System.Threading.ReaderWriterLockSlim.EnterReadLock%2A> method and then calling the <xref:System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock%2A> method. This downgrade pattern is allowed for all lock recursion policies, even <xref:System.Threading.LockRecursionPolicy.NoRecursion>.
+A thread in upgradeable mode can downgrade to read mode by first calling the <xref:System.Threading.ReaderWriterLockSlim.EnterReadLock*> method and then calling the <xref:System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock*> method. This downgrade pattern is allowed for all lock recursion policies, even <xref:System.Threading.LockRecursionPolicy.NoRecursion>.
 
 After downgrading to read mode, a thread cannot reenter upgradeable mode until it has exited from read mode.
 
 ## Enter the lock recursively
 
-You can create a <xref:System.Threading.ReaderWriterLockSlim> that supports recursive lock entry by using the <xref:System.Threading.ReaderWriterLockSlim.%23ctor%28System.Threading.LockRecursionPolicy%29> constructor that specifies lock policy, and specifying <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType>.
+You can create a <xref:System.Threading.ReaderWriterLockSlim> that supports recursive lock entry by using the <xref:System.Threading.ReaderWriterLockSlim.%23ctor(System.Threading.LockRecursionPolicy)> constructor that specifies lock policy, and specifying <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType>.
 
 > [!NOTE]
 > The use of recursion is not recommended for new development, because it introduces unnecessary complications and makes your code more prone to deadlocks.
@@ -85,7 +85,7 @@ You may find it useful to think of the lock in terms of its states. A <xref:Syst
 - Read: In this state, one or more threads have entered the lock for read access to the protected resource.
 
     > [!NOTE]
-    > A thread can enter the lock in read mode by using the <xref:System.Threading.ReaderWriterLockSlim.EnterReadLock%2A> or <xref:System.Threading.ReaderWriterLockSlim.TryEnterReadLock%2A> methods, or by downgrading from upgradeable mode.
+    > A thread can enter the lock in read mode by using the <xref:System.Threading.ReaderWriterLockSlim.EnterReadLock*> or <xref:System.Threading.ReaderWriterLockSlim.TryEnterReadLock*> methods, or by downgrading from upgradeable mode.
 
 - Upgrade: In this state, one thread has entered the lock for read access with the option to upgrade to write access (that is, in upgradeable mode), and zero or more threads have entered the lock for read access. No more than one thread at a time can enter the lock with the option to upgrade; additional threads that try to enter upgradeable mode are blocked.
 
@@ -114,7 +114,7 @@ The subsequent state of the lock is always Write (W) in the first two cases and 
 
 ## Examples
 
-The following example shows a simple synchronized cache that holds strings with integer keys. An instance of <xref:System.Threading.ReaderWriterLockSlim> is used to synchronize access to the <xref:System.Collections.Generic.Dictionary%602> that serves as the inner cache.
+The following example shows a simple synchronized cache that holds strings with integer keys. An instance of <xref:System.Threading.ReaderWriterLockSlim> is used to synchronize access to the <xref:System.Collections.Generic.Dictionary`2> that serves as the inner cache.
 
 The example includes simple methods to add to the cache, delete from the cache, and read from the cache. To demonstrate time-outs, the example includes a method that adds to the cache only if it can do so within a specified time-out.
 
@@ -129,7 +129,7 @@ The example uses the parameterless constructor to create the lock, so recursion 
 :::code language="csharp" source="./snippets/System.Threading/ReaderWriterLockSlim/Overview/csharp/classexample1.cs" id="Snippet12":::
 :::code language="vb" source="./snippets/System.Threading/ReaderWriterLockSlim/Overview/vb/classexample1.vb" id="Snippet12":::
 
-The following code then uses the `SynchronizedCache` object to store a dictionary of vegetable names. It creates three tasks. The first writes the names of vegetables stored in an array to a `SynchronizedCache` instance. The second and third task display the names of the vegetables, the first in ascending order (from low index to high index), the second in descending order. The final task searches for the string "cucumber" and, when it finds it, calls the <xref:System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock%2A> method to substitute the string "green bean".
+The following code then uses the `SynchronizedCache` object to store a dictionary of vegetable names. It creates three tasks. The first writes the names of vegetables stored in an array to a `SynchronizedCache` instance. The second and third task display the names of the vegetables, the first in ascending order (from low index to high index), the second in descending order. The final task searches for the string "cucumber" and, when it finds it, calls the <xref:System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock*> method to substitute the string "green bean".
 
 :::code language="csharp" source="./snippets/System.Threading/ReaderWriterLockSlim/Overview/csharp/classexample1.cs" id="Snippet11":::
 :::code language="vb" source="./snippets/System.Threading/ReaderWriterLockSlim/Overview/vb/classexample1.vb" id="Snippet11":::

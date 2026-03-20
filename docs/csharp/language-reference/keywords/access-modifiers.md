@@ -1,7 +1,7 @@
 ---
 description: "Access Modifiers - C# Reference"
 title: "Access Modifiers"
-ms.date: 12/15/2025
+ms.date: 01/21/2026
 helpviewer_keywords:
   - "access modifiers [C#]"
 ---
@@ -22,6 +22,8 @@ By using these access modifiers, you can specify the following six accessibility
 - [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.
 - [`private`](private.md): Access is limited to the containing type.
 - [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 In addition, a top-level (non-nested) type can use the [`file`](file.md) modifier. The declared type is only visible in the current source file. File scoped types are generally used for source generators. You can't combine the `file` modifier with any access modifier.
 

@@ -15,7 +15,7 @@ dev_langs:
 
 ## Examples
 
-Numerous examples that call the <xref:System.String.Format%2A> method are interspersed throughout this article. You can also download a complete set of `String.Format` examples, which are included a [.NET Core project for C#](/samples/dotnet/samples/string-format/).
+Numerous examples that call the <xref:System.String.Format*> method are interspersed throughout this article. You can also download a complete set of `String.Format` examples, which are included a [.NET Core project for C#](/samples/dotnet/samples/string-format/).
 
 The following are some of the examples included in the article:
 
@@ -45,7 +45,7 @@ The following are some of the examples included in the article:
 
 ## Get started with the String.Format method
 
-Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:
+Use <xref:System.String.Format*?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting2.cs" id="Snippet35":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting2.fs" id="Snippet35":::
@@ -61,7 +61,7 @@ Besides formatting, you can also control alignment and spacing.
 
 ### Insert a string
 
-<xref:System.String.Format%2A?displayProperty=nameWithType> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:
+<xref:System.String.Format*?displayProperty=nameWithType> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/starting1.cs" id="Snippet30":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting1.fs" id="Snippet30":::
@@ -107,19 +107,19 @@ The following example is similar to the previous one, except that it left-aligns
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting1.fs" id="Snippet34":::
 :::code language="vb" source="./snippets/System/String/Format/vb/starting1.vb" id="Snippet34":::
 
-<xref:System.String.Format%2A?displayProperty=nameWithType> makes use of the composite formatting feature. For more information, see [Composite Formatting](../../standard/base-types/composite-formatting.md).
+<xref:System.String.Format*?displayProperty=nameWithType> makes use of the composite formatting feature. For more information, see [Composite Formatting](../../standard/base-types/composite-formatting.md).
 
 ## Which method do I call?
 
 | Objective | Method to call |
 |-----------|----------------|
-|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining <xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you don't have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.String,System.Object%5B%5D)> method.|
-|Format one or more objects by using the conventions of a specific culture.|Each <xref:System.String.Format%2A> overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you don't have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method.|
+|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining <xref:System.String.Format*> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you don't have to determine which <xref:System.String.Format*> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.String,System.Object%5B%5D)> method.|
+|Format one or more objects by using the conventions of a specific culture.|Each <xref:System.String.Format*> overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you don't have to determine which specific <xref:System.String.Format*> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method.|
 |Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. The compiler selects the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|
 
 ## The Format method in brief
 
-Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](../../standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At runtime, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format(System.String,System.Object,System.Object,System.Object)> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.
+Each overload of the <xref:System.String.Format*> method uses the [composite formatting feature](../../standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At runtime, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format(System.String,System.Object,System.Object,System.Object)> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/formatoverload1.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/formatoverload1.fs" id="Snippet8":::
@@ -174,23 +174,23 @@ The following example uses the `width` and `formatString` arguments to produce f
 
 ## How arguments are formatted
 
-Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format%2A> method retrieves the argument and derives its string representation as follows:
+Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format*> method retrieves the argument and derives its string representation as follows:
 
 - If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string. You don't have to be concerned with handling a <xref:System.NullReferenceException> for null arguments.
 
-- If you call the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> overload and the `provider` object's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns a non-null <xref:System.ICustomFormatter> implementation, the argument is passed to its <xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)?displayProperty=nameWithType> method. If the format item includes a `formatString` argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is available and produces a non-null string, that string is returned as the string representation of the argument; otherwise, the next step executes.
+- If you call the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> overload and the `provider` object's <xref:System.IFormatProvider.GetFormat*?displayProperty=nameWithType> implementation returns a non-null <xref:System.ICustomFormatter> implementation, the argument is passed to its <xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)?displayProperty=nameWithType> method. If the format item includes a `formatString` argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is available and produces a non-null string, that string is returned as the string representation of the argument; otherwise, the next step executes.
 
-- If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation is called.
+- If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString*?displayProperty=nameWithType> implementation is called.
 
 - The argument's parameterless `ToString` method, which either overrides or inherits from a base class implementation, is called.
 
-For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
+For an example that intercepts calls to the <xref:System.ICustomFormatter.Format*?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format*> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
 
 For more information, see [Processing order](../../standard/base-types/composite-formatting.md#processing-order).
 
 ## Format items that have the same index
 
-The <xref:System.String.Format%2A> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format(System.String,System.Object)> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.
+The <xref:System.String.Format*> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format(System.String,System.Object)> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.
 
 :::code language="csharp" source="./snippets/System/String/Format/csharp/Example1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/Format/fsharp/Example1.fs" id="Snippet1":::
@@ -198,17 +198,17 @@ The <xref:System.String.Format%2A> method throws a <xref:System.FormatException>
 
 ## Format and culture
 
-Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format%2A> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.
+Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format*> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.
 
-The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. .NET has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:
+The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat*>, which is responsible for returning the object that provides formatting information. .NET has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:
 
-- <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.
-- <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns itself.
+- <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat*> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.
+- <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat*> method returns itself.
 - <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type)> method returns itself.
 
 ## Custom formatting operations
 
-You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a `provider` parameter of type <xref:System.IFormatProvider> to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.
+You can also call the any of the overloads of the <xref:System.String.Format*> method that have a `provider` parameter of type <xref:System.IFormatProvider> to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format*> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format*> method calls its <xref:System.IFormatProvider.GetFormat*?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format*> method to format each format item in the composite string passed to it.
 
 For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](../../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example: A custom formatting operation](#example-a-custom-formatting-operation). For an example that converts unsigned bytes to Roman numerals, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
 
@@ -224,7 +224,7 @@ This example defines a format provider that formats an integer value as a custom
 
 This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:
 
-- It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> implementation. This enables us to see what parameters the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.
+- It displays the parameters passed to its <xref:System.ICustomFormatter.Format*?displayProperty=nameWithType> implementation. This enables us to see what parameters the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.
 - If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/interceptor2.cs" id="Snippet11":::
@@ -237,7 +237,7 @@ This example defines a custom format provider that implements the <xref:System.I
 
 String interpolation is:
 
-- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>.
+- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format*> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine*?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType>.
 - More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are easier to code and to read. Interpolated strings can also be used in string concatenation operations to produce more concise, clearer code.
 
 A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of multiple string concatenation operations in the following example produces verbose and hard-to-read code.
@@ -246,7 +246,7 @@ A comparison of the following two code examples illustrates the superiority of i
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated1.fs" id="SnippetQAInterpolated":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa-interpolated1.vb":::
 
-In contrast, the use of interpolated strings in the following example produces much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
+In contrast, the use of interpolated strings in the following example produces much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format*> method in the previous example.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa-interpolated2.cs" id="SnippetQAInterpolated2":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated2.fs" id="SnippetQAInterpolated2":::

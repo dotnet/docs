@@ -7,7 +7,7 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-<xref:System.Runtime.InteropServices.Marshal.GetActiveObject%2A> exposes the COM [GetActiveObject](/windows/win32/api/oleauto/nf-oleauto-getactiveobject) function from OLEAUT32.DLL; however, the latter expects a class identifier (CLSID) instead of the programmatic identifier (`ProgID`) expected by this method. To obtain a running instance of a COM object without a registered `ProgID`, use platform invoke to define the COM [GetActiveObject](/windows/win32/api/oleauto/nf-oleauto-getactiveobject) function. For a description of platform invoke, see [Consuming Unmanaged DLL Functions](../../framework/interop/consuming-unmanaged-dll-functions.md).
+<xref:System.Runtime.InteropServices.Marshal.GetActiveObject*> exposes the COM [GetActiveObject](/windows/win32/api/oleauto/nf-oleauto-getactiveobject) function from OLEAUT32.DLL; however, the latter expects a class identifier (CLSID) instead of the programmatic identifier (`ProgID`) expected by this method. To obtain a running instance of a COM object without a registered `ProgID`, use platform invoke to define the COM [GetActiveObject](/windows/win32/api/oleauto/nf-oleauto-getactiveobject) function. For a description of platform invoke, see [Consuming Unmanaged DLL Functions](../../framework/interop/consuming-unmanaged-dll-functions.md).
 
 ## ProgID and CLSID
 

@@ -41,6 +41,16 @@ To install the tool, perform the following steps:
 
 ::: zone pivot="os-windows"
 
+### Install with winget
+
+You can also install the .NET Uninstall Tool using the Windows Package Manager:
+
+```powershell
+winget install --id Microsoft.DotNet.UninstallTool --source winget
+```
+
+### Install with the MSI installer
+
 1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
 1. Run the installer.
 
@@ -65,7 +75,17 @@ To install the tool, perform the following steps:
 
 ::: zone pivot="os-windows"
 
-To uninstall the tool, perform the following steps:
+### Uninstall using winget
+
+To uninstall using winget, execute the following:
+
+```powershell
+winget uninstall --id Microsoft.DotNet.UninstallTool
+```
+
+### Uninstall manually
+
+To manually uninstall the tool, perform the following steps:
 
 1. Open the Start menu.
 1. Search for **Add or Remove Programs** and open it.

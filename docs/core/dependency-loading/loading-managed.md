@@ -1,8 +1,9 @@
 ---
 title: Managed assembly loading algorithm - .NET Core
 description: Description of the details of the managed assembly loading algorithm in .NET Core
-ms.date: 08/09/2019
+ms.date: 03/11/2026
 author: sdmaclea
+ai-usage: ai-assisted
 ---
 # Managed assembly loading algorithm
 
@@ -29,6 +30,9 @@ The direct use of the following APIs will also trigger loads:
 | <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>|If type `name` describes an assembly qualified generic type, trigger a `Load-by-name`.|Inferred from caller.<br/>Prefer <xref:System.Type.GetType%2A?displayProperty=nameWithType> when using assembly qualified type names.|
 | <xref:System.Activator.CreateInstance(System.String,System.String)?displayProperty=nameWithType><br/><xref:System.Activator.CreateInstance(System.String,System.String,System.Object[])?displayProperty=nameWithType><br/><xref:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])?displayProperty=nameWithType>|`Load-by-name`.|Inferred from caller.<br/>Prefer <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> methods taking a <xref:System.Type> argument.|
 
+> [!IMPORTANT]
+> Unlike .NET Framework, the `assemblyFile` parameter of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> is treated as a file path in .NET, not a URI. In .NET Framework, you can pass a file URI (for example, `file:///C:/path/to/assembly.dll`)—such as one constructed from <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>—and the assembly loads successfully. In .NET, the `assemblyFile` value is passed to <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType>, which doesn't properly handle URIs, so the load fails. If you already have a file URI string, first create a <xref:System.Uri> instance and use its <xref:System.Uri.LocalPath> property to get the file path before calling <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>. To get the file path of an already-loaded assembly, use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead of `CodeBase`.
+
 ## Algorithm
 
 The following algorithm describes how the runtime loads a managed assembly.
@@ -51,6 +55,7 @@ The following algorithm describes how the runtime loads a managed assembly.
 3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 
     - Check its `cache-by-name`.
+    - If the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> is <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType>, run the [default probing logic for managed assemblies](default-probing.md#managed-assembly-default-probing).
     - Load from the specified path or raw assembly object. If an assembly is newly loaded, a reference is added to the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
 
 4. In either case, if an assembly is newly loaded, then the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

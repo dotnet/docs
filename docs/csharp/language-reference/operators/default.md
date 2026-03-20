@@ -1,23 +1,25 @@
 ---
 title: "default value expressions - produce the default value for any type"
 description: "Use the default value expressions to obtain the default, uninitialized value of a type. The default value expression can be used with generic type parameters in addition to other types."
-ms.date: 11/29/2022
+ms.date: 01/20/2026
 f1_keywords:
   - "default_CSharpKeyword"
 helpviewer_keywords:
   - "default keyword [C#]"
 ---
-# Default value expressions - produce the default value
+# Default value expressions
 
-A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [`default` operator](#default-operator) call and a [`default` literal](#default-literal).
+A default value expression produces the [default value](../builtin-types/default-values.md) of a type. Two kinds of default value expressions exist: the [`default` operator](#default-operator) call and a [`default` literal](#default-literal).
 
 You also use the `default` keyword as the default case label within a [`switch` statement](../statements/selection-statements.md#the-switch-statement).
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 ## `default` operator
 
 The argument to the `default` operator must be the name of a type or a type parameter, as the following example shows:
 
-[!code-csharp[default of T](snippets/shared/DefaultOperator.cs#WithOperand)]
+:::code language="csharp" source="snippets/shared/DefaultOperator.cs" id="WithOperand":::
 
 ## `default` literal
 
@@ -30,7 +32,7 @@ You can use the `default` literal to produce the default value of a type when th
 
 The following example shows the usage of the `default` literal:
 
-[!code-csharp[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
+:::code language="csharp" source="snippets/shared/DefaultOperator.cs" id="DefaultLiteral":::
 
 > [!TIP]
 > Use .NET style rule [IDE0034](../../../fundamentals/code-analysis/style-rules/ide0034.md) to specify a preference on the use of the `default` literal in your codebase.

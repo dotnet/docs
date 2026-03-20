@@ -2,7 +2,7 @@
 title: Stateless worker grains
 description: Learn how to use stateless worker grains in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Stateless worker grains

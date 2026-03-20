@@ -1,7 +1,7 @@
 ---
 description: "Accessibility Levels - C# Reference"
 title: "Accessibility Levels"
-ms.date: 12/15/2025
+ms.date: 01/21/2026
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility levels"
   - "accessibility levels"
@@ -10,14 +10,14 @@ helpviewer_keywords:
 
 Use the access modifiers `public`, `protected`, `internal`, or `private` to specify one of the following declared accessibility levels for members.
 
-| Declared accessibility                        | Meaning                                                      |
-|-----------------------------------------------|-------------------------------------------------------------|
-| [`public`](public.md)                         | Access isn't restricted.                                                  |
-| [`protected`](protected.md)                   | Access is limited to the containing class or types derived from the containing class. |
-| [`internal`](internal.md)                     | Access is limited to the current assembly.                                                    |
-| [`protected internal`](protected-internal.md) | Access is limited to the current assembly or types derived from the containing class.         |
-| [`private`](private.md)                       | Access is limited to the containing type.                                             |
-| [`private protected`](private-protected.md)   | Access is limited to the containing class or types derived from the containing class within the current assembly.                                                    |
+- [`public`](public.md): Access isn't restricted.
+- [`protected`](protected.md): Access is limited to the containing class or types derived from the containing class.
+- [`internal`](internal.md): Access is limited to the current assembly.
+- [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.
+- [`private`](private.md): Access is limited to the containing type.
+- [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 Top-level (non-nested) types can use the [file](../../language-reference/keywords/file.md) modifier. The `file` modifier restricts access to code in the same source file. You can't combine the `file` modifier with any access modifier.
 

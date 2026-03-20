@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 This article describes how to install the .NET SDK snap package. .NET SDK snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution.
 
-A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Quickstart tour](https://snapcraft.io/docs/quickstart-tour).
+A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Get started](https://snapcraft.io/docs/tutorials/get-started/#tutorials-get-started).
 
 > [!CAUTION]
 > Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
@@ -233,4 +233,4 @@ The certificate location varies by distribution. Here are the locations for the 
 
 - [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI.](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET](../tutorials/create-console-app.md)

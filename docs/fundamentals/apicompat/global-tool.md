@@ -1,10 +1,10 @@
 ---
-title: Microsoft.DotNet.ApiCompat.Tool global tool
-description: Learn about the Microsoft.DotNet.ApiCompat.Tool global tool, which performs API compatibility checks on assemblies and packages.
+title: Microsoft.DotNet.ApiCompat.Tool API compatibility tool
+description: Learn about the Microsoft.DotNet.ApiCompat.Tool API compatibility tool, which performs API compatibility checks on assemblies and packages.
 ms.date: 11/29/2023
 ---
 
-# Microsoft.DotNet.ApiCompat.Tool global tool
+# Microsoft.DotNet.ApiCompat.Tool API compatibility tool
 
 The Microsoft.DotNet.ApiCompat.Tool tool lets you perform API compatibility checks outside of MSBuild. The tool has two modes:
 

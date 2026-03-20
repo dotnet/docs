@@ -5,6 +5,8 @@ items:
   items:
   - name: Tour of C#
     href: tour-of-csharp/overview.md
+  - name: What you can build
+    href: tour-of-csharp/what-you-can-build.md
   - name: Tutorials
     items:
     - name: Choose your first lesson
@@ -35,16 +37,20 @@ items:
     items:
     - name: Overview
       href: fundamentals/program-structure/index.md
-    - name: Main method
-      href: fundamentals/program-structure/main-command-line.md
+    - name: Namespaces and using directives
+      href: fundamentals/program-structure/namespaces.md
+    - name: Preprocessor directives
+      href: fundamentals/program-structure/preprocessor-directives.md
+    - name: Program organization
+      href: fundamentals/program-structure/program-organization.md
     - name: Top-level statements
       href: fundamentals/program-structure/top-level-statements.md
+    - name: Main method
+      href: fundamentals/program-structure/main-command-line.md
   - name: Type system
     items:
     - name: Overview
       href: fundamentals/types/index.md
-    - name: Namespaces
-      href: fundamentals/types/namespaces.md
     # TODO: tuples
     - name: Classes
       href: fundamentals/types/classes.md
@@ -142,6 +148,10 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
+  - name: C# 15
+    items:
+    - name: What's new in C# 15
+      href: whats-new/csharp-15.md
   - name: C# 14
     items:
     - name: What's new in C# 14
@@ -156,6 +166,8 @@ items:
       href: whats-new/csharp-12.md
   - name: Breaking changes
     items:
+    - name: After C# 14
+      href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2011.md
     - name: After C# 13
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md
     - name: After C# 12

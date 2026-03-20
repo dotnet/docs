@@ -19,6 +19,6 @@ The <xref:System.Runtime.Serialization.IExtensibleDataObject> interface provides
 
 4. Implement get and set methods for the property using the new private member.
 
-5. Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class. Set the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> properties to appropriate values if necessary.
+5. Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class. Set the <xref:System.Runtime.Serialization.DataContractAttribute.Name*> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace*> properties to appropriate values if necessary.
 
 For more information about versioning of types, see [Data Contract Versioning](../../framework/wcf/feature-details/data-contract-versioning.md). For information about creating forward-compatible data contracts, see [Forward-Compatible Data Contracts](../../framework/wcf/feature-details/forward-compatible-data-contracts.md). For more information about data contracts, see [Using Data Contracts](../../framework/wcf/feature-details/using-data-contracts.md).

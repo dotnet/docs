@@ -35,9 +35,9 @@ Update code that calls these APIs to reflect the revised nullability contracts.
 
 The following table lists the affected APIs:
 
-| API | What changed | Breaking or nonbreaking |
-| - | - |
-| <xref:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)?displayProperty=fullName> | `instance` parameter type is nullable | Nonbreaking |
+| API | What changed                          | Breaking or nonbreaking |
+|-----|---------------------------------------|-------------------------|
+| <xref:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)?displayProperty=fullName> | `instance` parameter type is nullable | Nonbreaking             |
 | <xref:System.ComponentModel.ISite.Container?displayProperty=fullName> | Property type is nullable | Breaking |
 | <xref:System.Xml.Linq.XContainer.Add(System.Object[])?displayProperty=fullName> | Parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.Linq.XContainer.AddFirst(System.Object[])?displayProperty=fullName> | Parameter type is nullable | Nonbreaking |
@@ -91,4 +91,4 @@ The following table lists the affected APIs:
 ## See also
 
 - [Attributes for null-state static analysis](../../../../csharp/language-reference/attributes/nullable-analysis.md)
-- [Nullable reference type annotation changes in ASP.NET Core](../../aspnet-core/6.0/nullable-reference-type-annotations-changed.md)
+- [Nullable reference type annotation changes in ASP.NET Core](/aspnet/core/breaking-changes/6/nullable-reference-type-annotations-changed)

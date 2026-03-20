@@ -9,7 +9,8 @@ for _ = 1 to 10 do
 
 printfn $".2 * 10:           {result1:R}"
 printfn $".2 Added 10 times: {result2:R}"
+
 // The example displays the following output:
 //       .2 * 10:           2
-//       .2 Added 10 times: 2.00000024
+//       .2 Added 10 times: 2.0000002
 // </Snippet3>

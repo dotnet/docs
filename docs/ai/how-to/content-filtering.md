@@ -1,18 +1,16 @@
 ---
-title: "Manage OpenAI Content Filtering in a .NET app"
-description: "Learn how to manage OpenAI content filtering programmatically in a .NET app using the OpenAI client library."
+title: "Manage Azure OpenAI content filtering in a .NET app"
+description: "Learn how to manage Azure OpenAI content filtering programmatically in a .NET app using the Azure OpenAI client library."
 ms.topic: how-to
-ms.date: 05/29/2025
-
-#customer intent: As a .NET developer, I want to manage OpenAI Content Filtering in a .NET app
-
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 ---
 
 # Work with Azure OpenAI content filtering in a .NET app
 
-This article demonstrates how to handle content filtering concerns in a .NET app. Azure OpenAI Service includes a content filtering system that works alongside core models. This system works by running both the prompt and completion through an ensemble of classification models aimed at detecting and preventing the output of harmful content. The content filtering system detects and takes action on specific categories of potentially harmful content in both input prompts and output completions. Variations in API configurations and application design might affect completions and thus filtering behavior.
+This article shows how to handle content filtering in a .NET app. Azure OpenAI Service includes a content filtering system that works alongside core models. It runs both the prompt and completion through an ensemble of classification models to detect and take action on specific categories of potentially harmful content in both input prompts and output completions. Variations in API configurations and application design might affect completions and thus filtering behavior.
 
-The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) documentation provides a deeper exploration of content filtering concepts and concerns. This article provides examples of how to work with content filtering features programmatically in a .NET app.
+For a deeper exploration of content filtering concepts and concerns, see the [Content Filtering](/azure/ai-services/openai/concepts/content-filter) documentation.
 
 ## Prerequisites
 

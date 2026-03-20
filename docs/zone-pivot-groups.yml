@@ -46,6 +46,18 @@ groups:
       title: Visual Studio Code
     - id: visualstudio
       title: Visual Studio
+- id: copilot-modernization-install
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: copilot-cli
+      title: GitHub Copilot CLI
+    - id: github-com
+      title: GitHub.com
 - id: development-environment-one
   title: Development environment
   prompt: Choose a development environment
@@ -82,6 +94,12 @@ groups:
   title: Orleans version
   prompt: Choose an Orleans version
   pivots:
+    - id: orleans-10-0
+      title: Orleans 10.0
+    - id: orleans-9-0
+      title: Orleans 9.x
+    - id: orleans-8-0
+      title: Orleans 8.x
     - id: orleans-7-0
       title: Orleans 7.0
     - id: orleans-3-x
@@ -109,7 +127,7 @@ groups:
   prompt: Choose an Azure interface
   pivots:
     - id: azure-portal
-      title: Azure Portal
+      title: Azure portal
     - id: azure-cli
       title: Azure CLI
 - id: code-language
@@ -154,3 +172,13 @@ groups:
       title: OpenAI
     - id: ollama
       title: Ollama
+- id: code-editor-set-one
+  title: Code editor
+  prompt: Choose a code editor
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: codespaces
+      title: GitHub Codespaces

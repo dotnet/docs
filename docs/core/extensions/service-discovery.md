@@ -116,12 +116,12 @@ The configuration resolver is configured using the <xref:Microsoft.Extensions.Se
 
 - **ApplyHostNameMetadata**: A delegate used to determine if host name metadata should be applied to resolved endpoints. It defaults to a function that returns `false`.
 
-To configure these options, you can use the `Configure` extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
+To configure these options, you can call the <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*> extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
+builder.Services.Configure<ConfigurationServiceEndpointProviderOptions>(
     static options =>
     {
         options.SectionName = "MyServiceEndpoints";

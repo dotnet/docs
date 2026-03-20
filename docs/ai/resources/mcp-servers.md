@@ -57,4 +57,4 @@ This article contains an organized list of the best learning resources for .NET 
 | Link | Description |
 |------|-------------|
 |[Anthropic MCP Discussions](https://github.com/orgs/modelcontextprotocol/discussions)|An open forum for discussing MCP in Anthropic's official MCP GitHub repo.|
-|[Azure AI Foundry Discord](https://discord.com/invite/ByRwuEEgH4)|A Discord discussion space for developers looking to build with Microsoft AI tooling.|
+|[Microsoft Foundry Discord](https://discord.com/invite/ByRwuEEgH4)|A Discord discussion space for developers looking to build with Microsoft AI tooling.|

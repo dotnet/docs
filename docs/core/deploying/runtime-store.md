@@ -1,11 +1,15 @@
 ---
 title: Runtime package store
 description: Learn how to use the runtime package store to target manifests used by .NET Core.
-ms.date: 08/12/2017
+ms.date: 01/29/2026
+ai-usage: ai-assisted
 ---
 # Runtime package store
 
-Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space usage, and improved startup performance in some cases.
+> [!WARNING]
+> The runtime package store feature is **no longer supported or under active development**. While the `dotnet store` command still exists, it has known issues with .NET 6 and later versions, and **it is not recommended for use**. The .NET team plans to eventually stop shipping this command altogether. For more information, see [GitHub issue #24752](https://github.com/dotnet/sdk/issues/24752).
+
+Starting with .NET Core 2.0, it was possible to package and deploy apps against a known set of packages that exist in the target environment. The intended benefits were faster deployments, lower disk space usage, and improved startup performance in some cases. However, this feature is now deprecated.
 
 This feature is implemented as a *runtime package store*, which is a directory on disk where packages are stored (typically at */usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
@@ -54,6 +58,9 @@ The following example package store manifest (*packages.csproj*) is used to add 
 </Project>
 ```
 
+> [!WARNING]
+> The following commands might fail on .NET 6 and later versions due to missing crossgen dependencies. Even with the `--skip-optimization` workaround, the generated manifests might not work correctly.
+
 Provision the runtime package store by executing `dotnet store` with the package store manifest, runtime, and framework:
 
 ```dotnetcli
@@ -64,6 +71,14 @@ dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> -
 
 ```dotnetcli
 dotnet store --manifest packages.csproj --runtime win-x64 --framework netcoreapp2.0 --framework-version 2.0.0
+```
+
+**Workaround for .NET 6+ (not recommended)**
+
+If you must use this deprecated feature with .NET 6 or later, you can try adding the `--skip-optimization` flag, although this might not work reliably:
+
+```dotnetcli
+dotnet store --manifest packages.csproj --runtime win-x64 --framework net6.0 --skip-optimization
 ```
 
 You can pass multiple target package store manifest paths to a single [`dotnet store`](../tools/dotnet-store.md) command by repeating the option and path in the command.
@@ -83,6 +98,9 @@ The following *artifact.xml* file is produced after running the previous example
 ```
 
 ## Publishing an app against a target manifest
+
+> [!CAUTION]
+> Publishing against target manifests created with the deprecated runtime package store might fail or behave unexpectedly, especially with .NET 6 and later versions.
 
 If you have a target manifest file on disk, you specify the path to the file when publishing your app with the [`dotnet publish`](../tools/dotnet-publish.md) command:
 
@@ -118,9 +136,12 @@ An alternative to specifying target manifests with the [`dotnet publish`](../too
 
 Specify the target manifests in the project file only when the target environment for the app is well-known, such as for .NET Core projects. This isn't the case for open-source projects. The users of an open-source project typically deploy it to different production environments. These production environments generally have different sets of packages pre-installed. You can't make assumptions about the target manifest in such environments, so you should use the `--manifest` option of [`dotnet publish`](../tools/dotnet-publish.md).
 
-## ASP.NET Core implicit store (.NET Core 2.0 only)
+## ASP.NET Core implicit store (.NET Core 2.0, legacy)
 
-The ASP.NET Core implicit store applies only to ASP.NET Core 2.0. We strongly recommend applications use ASP.NET Core 2.1 and later, which does **not** use the implicit store. ASP.NET Core 2.1 and later use the shared framework.
+> [!NOTE]
+> This section describes legacy functionality that only applied to .NET Core 2.0. This feature is no longer relevant for modern .NET applications.
+
+The ASP.NET Core implicit store applied only to ASP.NET Core 2.0. We strongly recommend applications use ASP.NET Core 2.1 and later, which does **not** use the implicit store. ASP.NET Core 2.1 and later use the shared framework.
 
 For .NET Core 2.0, the runtime package store feature is used implicitly by an ASP.NET Core app when the app is deployed as a [framework-dependent deployment](index.md#framework-dependent-deployment) app. The targets in [`Microsoft.NET.Sdk.Web`](https://github.com/aspnet/websdk) include manifests referencing the implicit package store on the target system. Additionally, any framework-dependent app that depends on the `Microsoft.AspNetCore.All` package results in a published app that contains only the app and its assets and not the packages listed in the `Microsoft.AspNetCore.All` metapackage. It's assumed that those packages are present on the target system.
 
@@ -141,3 +162,4 @@ When deploying a [framework-dependent deployment](index.md#framework-dependent-d
 
 - [dotnet-publish](../tools/dotnet-publish.md)
 - [dotnet-store](../tools/dotnet-store.md)
+- [GitHub issue: 'dotnet store' can't find crossgen with .NET 6](https://github.com/dotnet/sdk/issues/24752)

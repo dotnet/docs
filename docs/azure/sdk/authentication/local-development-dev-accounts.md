@@ -80,15 +80,15 @@ Complete the following steps:
 1. Add references to the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) packages in your project:
 
     ```dotnetcli
-    dotnet add package Azure.Identity
-    dotnet add package Microsoft.Extensions.Azure
+    dotnet package add Azure.Identity
+    dotnet package add Microsoft.Extensions.Azure
     ```
 
     > [!NOTE]
     > When using `VisualStudioCodeCredential`, you must also install the [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) package:
     >
     > ```dotnetcli
-    > dotnet add package Azure.Identity.Broker
+    > dotnet package add Azure.Identity.Broker
     > ```
 
 1. In `Program.cs`, add `using` directives for the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces.

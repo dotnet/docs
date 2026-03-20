@@ -100,8 +100,8 @@ If the project has multiple target frameworks, focus the results of the command 
 
 The SDK automatically manages three types of items for your project:
 
-- [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile): source code files (*.cs*, *.vb*, and other language-specific extensions) that get compiled into your assembly.
-- [`EmbeddedResource` items](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource): *.resx* files that get embedded into your assembly.
+- [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile): source code files (`*.cs`, `*.vb`, and other language-specific extensions) that get compiled into your assembly.
+- [`EmbeddedResource` items](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource): `*.resx` files that get embedded into your assembly.
 - [`None` items](/visualstudio/msbuild/common-msbuild-project-items#none): all other files tracked in the project, such as configuration and content files, that aren't compiled or embedded.
 
 Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This behavior makes the project file smaller and easier to understand and edit by hand, if needed.

@@ -12,9 +12,9 @@ ms.date: 03/19/2026
 
 # What is .NET Upgrade Assistant?
 
-.NET Upgrade Assistant helps upgrade projects to newer versions of .NET and analyzes your code to spot and fix potential incompatibilities. One focus of the tool is to help upgrading a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET. You use .NET Upgrade Assistant to upgrade entire .NET projects, or some aspect of the project, such upgrading a configuration file from an older type to a newer type.
+.NET Upgrade Assistant helps upgrade projects to newer versions of .NET and analyzes your code to spot and fix potential incompatibilities. One focus of the tool is to help upgrade a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET. You use .NET Upgrade Assistant to upgrade entire .NET projects, or some aspect of the project, such as upgrading a configuration file from an older type to a newer type.
 
-.NET Upgrade Assistant is built into Visual Studio or can be installed as a command-line interface (CLI) tool.
+.NET Upgrade Assistant is built into Visual Studio and can be installed as a command-line interface (CLI) tool.
 
 [!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 

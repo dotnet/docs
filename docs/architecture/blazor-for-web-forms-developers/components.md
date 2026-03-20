@@ -681,7 +681,7 @@ The preferred approach is to declare the code-behind class as a `partial` class 
 *Counter.razor.cs*
 
 ```csharp
-public partial class Counter : ComponentBase
+public partial class Counter
 {
     private int currentCount = 0;
 
@@ -692,7 +692,7 @@ public partial class Counter : ComponentBase
 }
 ```
 
-With the partial class approach, members don't need to be `protected` — `private` members are accessible because both parts of the partial class compile into the same class.
+With the partial class approach, members don't need to be `protected`. `private` members are accessible because both parts of the partial class compile into the same class.
 
 Alternatively, you can use a base class. Define a base class that derives from `ComponentBase`, then add the `@inherits` directive in the Razor component file to specify the base class. It's common to name the base class after the component with a `Base` suffix (`CounterBase`).
 

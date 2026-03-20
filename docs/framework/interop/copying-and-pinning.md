@@ -20,7 +20,7 @@ Method arguments passed by value are marshalled to unmanaged code as values on t
 
 ![Diagram showing reference types passed by value and by reference.](./media/copying-and-pinning/interop-marshal-reference-pin.gif)
 
-Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaller pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshalling process. Pinning is automatically performed during marshalling for objects such as <xref:System.String>, however you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class. For examples of manual pinning with `GCHandle`, see [Keeping managed objects alive](../../standard/native-interop/best-practices.md#keeping-managed-objects-alive) in the native interoperability best practices article.
+Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaller pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshalling process. Pinning is automatically performed during marshalling for objects such as <xref:System.String>. However you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class. For examples of manual pinning with `GCHandle`, see [Keeping managed objects alive](../../standard/native-interop/best-practices.md#keeping-managed-objects-alive) in the native interoperability best practices article.
 
 ## Formatted Blittable Classes
 

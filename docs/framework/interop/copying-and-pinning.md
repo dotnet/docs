@@ -80,4 +80,4 @@ When a <xref:System.Text.StringBuilder?displayProperty=nameWithType> is passed b
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Interop Marshaling](interop-marshalling.md)
 - [Native interoperability best practices](../../standard/native-interop/best-practices.md)
-- [fixed statement (C# reference)](../../csharp/language-reference/statements/fixed.md)
+- [`fixed` statement (C# reference)](../../csharp/language-reference/statements/fixed.md)

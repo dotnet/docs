@@ -6,15 +6,15 @@
 
   <!-- <silo_packages> -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.0" />
-    <PackageReference Include="Aspire.StackExchange.Redis" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.Redis" Version="10.0.1" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="13.1.3" />
   </ItemGroup>
   <!-- </silo_packages> -->
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Azure.Data.Tables" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="10.0.0" />
+    <PackageReference Include="Aspire.Azure.Data.Tables" Version="13.1.3" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
   </ItemGroup>
 

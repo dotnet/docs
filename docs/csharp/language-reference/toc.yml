@@ -491,7 +491,8 @@ items:
   - name: Program entry point
     href: ./compiler-messages/entry-point-errors.md
     displayName: >
-      CS0028, CS8937
+      CS0028, CS0402, CS1555, CS1556, CS1557, CS1558, CS1559, CS5001, CS8802, CS8803,
+      CS8937
   - name: Record declarations
     href: ./compiler-messages/record-declaration-errors.md
     displayName: >
@@ -1397,16 +1398,6 @@ items:
       href: ./compiler-messages/cs1548.md
     - name: CS1551
       href: ../misc/cs1551.md
-    - name: CS1555
-      href: ../misc/cs1555.md
-    - name: CS1556
-      href: ../misc/cs1556.md
-    - name: CS1557
-      href: ../misc/cs1557.md
-    - name: CS1558
-      href: ../misc/cs1558.md
-    - name: CS1559
-      href: ../misc/cs1559.md
     - name: CS1561
       href: ../misc/cs1561.md
     - name: CS1562
@@ -1637,8 +1628,6 @@ items:
       href: ../misc/cs2035.md
     - name: CS2036
       href: ../misc/cs2036.md
-    - name: CS5001
-      href: ../misc/cs5001.md
     - name: CS7003
       href: ./compiler-messages/cs7003.md
     - name: CS8070
@@ -1719,10 +1708,6 @@ items:
       href: ./compiler-messages/cs8355.md
     - name: CS8422
       href: ./compiler-messages/cs8422.md
-    - name: CS8802
-      href: ./compiler-messages/cs8802.md
-    - name: CS8803
-      href: ./compiler-messages/cs8803.md
     - name: CS9036
       href: ./compiler-messages/property-declaration-errors.md
     - name: CS9043
@@ -1965,8 +1950,6 @@ items:
       href: ../misc/cs0078.md
     - name: CS0109
       href: ../misc/cs0109.md
-    - name: CS0402
-      href: ../misc/cs0402.md
     - name: CS0422
       href: ../misc/cs0422.md
     - name: CS0429

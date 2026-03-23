@@ -1,6 +1,7 @@
 ---
 title: Resolve errors related to the Main method and top-level statements
 description: These compiler errors and warnings indicate problems with the program entry point, including the Main method declaration, the StartupObject compiler option, and top-level statements. This article provides guidance on resolving those errors.
+ai-usage: ai-assisted
 f1_keywords:
   - "CS0017"
   - "CS0028"
@@ -20,23 +21,23 @@ f1_keywords:
   - "CS8899"
   - "CS8937"
 helpviewer_keywords:
- - "CS0017"
- - "CS0028"
- - "CS0402"
- - "CS1555"
- - "CS1556"
- - "CS1557"
- - "CS1558"
- - "CS1559"
- - "CS2017"
- - "CS5001"
- - "CS7022"
- - "CS8801"
- - "CS8802"
- - "CS8803"
- - "CS8805"
- - "CS8899"
- - "CS8937"
+  - "CS0017"
+  - "CS0028"
+  - "CS0402"
+  - "CS1555"
+  - "CS1556"
+  - "CS1557"
+  - "CS1558"
+  - "CS1559"
+  - "CS2017"
+  - "CS5001"
+  - "CS7022"
+  - "CS8801"
+  - "CS8802"
+  - "CS8803"
+  - "CS8805"
+  - "CS8899"
+  - "CS8937"
 ms.date: 03/23/2026
 ---
 # Resolve errors and warnings related to a program entry point

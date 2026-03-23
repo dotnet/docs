@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Build a command-line app with System.CommandLine"
-description: Learn how to use the System.CommandLine library to build a command-line app with commands, subcommands, options, and arguments in a file-based C# program.
+description: "Learn how to use the System.CommandLine library to build a command-line app with commands, subcommands, options, and arguments in a file-based C# program."
 ms.date: 03/23/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 # Tutorial: Build a command-line app with System.CommandLine
 
 > [!TIP]
-> This article is part of the **Fundamentals** section, written for developers who know at least one programming language and are learning C#. If you're new to programming, start with [Get started](../../tour-of-csharp/index.md). If you need comprehensive library coverage, see the [System.CommandLine library documentation](../../../standard/commandline/index.md).
+> This article is part of the **Fundamentals** section, written for developers who know at least one programming language and are learning C#. If you're new to programming, start with [Get started](../../tour-of-csharp/index.yml). If you need comprehensive library coverage, see the [System.CommandLine library documentation](../../../standard/commandline/index.md).
 
 The [`System.CommandLine`](../../../standard/commandline/index.md) library handles command-line parsing, help text generation, and input validation so you can focus on your app's logic. In this tutorial, you build a task tracker CLI that demonstrates the core concepts: commands, subcommands, options, and arguments.
 

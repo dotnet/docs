@@ -1,6 +1,6 @@
 ---
-title: Resolve errors related to constructor declarations
-description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records. This article provides guidance on resolving those errors.
+title: Resolve errors related to the Main method and top-level statements
+description: These compiler errors and warnings indicate problems with the program entry point, including the Main method declaration, the StartupObject compiler option, and top-level statements. This article provides guidance on resolving those errors.
 f1_keywords:
  - "CS0017"
  - "CS0028"
@@ -39,282 +39,103 @@ helpviewer_keywords:
  - "CS8937"
 ms.date: 03/23/2026
 ---
-# Resolve errors and warnings related to a program entry poin
+# Resolve errors and warnings related to a program entry point
 
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0017**](#multiple-entry-points): *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
-- [**CS0028**](#wrong-signature-for-entry-point): *'function declaration' has the wrong signature to be an entry point*
-- [**CS0402**](#generic-entry-point): *'identifier': an entry point cannot be generic or in a generic type*
-- [**CS1555**](#startup-object-not-found): *Could not find 'class' specified for Main method*
-- [**CS1556**](#startup-object-not-valid): *'construct' specified for Main method must be a valid class or struct*
-- [**CS1557**](#startup-object-in-different-output): *Cannot use 'class' for Main method because it is in a different output file*
-- [**CS1558**](#no-suitable-main-method): *'class' does not have a suitable static Main method*
-- [**CS1559**](#startup-object-is-imported): *Cannot use 'object' for Main method because it is imported*
-- [**CS2017**](#main-option-on-library): *Cannot specify /main if building a module or library*
-- [**CS5001**](#no-static-main-method): *Program does not contain a static 'Main' method suitable for an entry point*
-- [**CS7022**](#main-ignored): *The entry point of the program is global code; ignoring '{0}' entry point.*
-- [**CS8801**](#top-level-local-referenced-outside): *Cannot use local variable or local function '{0}' declared in a top-level statement in this context.*
-- [**CS8802**](#multiple-top-level-statements): *Only one compilation unit can have top-level statements.*
-- [**CS8803**](#top-level-statements-order): *Top-level statements must precede namespace and type declarations.*
-- [**CS8805**](#top-level-statements-not-executable): *Program using top-level statements must be an executable.*
-- [**CS8899**](#entry-point-unmanaged-callers-only): *Application entry points cannot be attributed with 'UnmanagedCallersOnly'.*
-- [**CS8937**](#static-constructors): *At least one top-level statement must be non-empty.*
+- [**CS0017**](#main-method-declaration): *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
+- [**CS0028**](#main-method-declaration): *'function declaration' has the wrong signature to be an entry point*
+- [**CS0402**](#main-method-declaration): *'identifier': an entry point cannot be generic or in a generic type*
+- [**CS1555**](#startupobject-compiler-option): *Could not find 'class' specified for Main method*
+- [**CS1556**](#startupobject-compiler-option): *'construct' specified for Main method must be a valid class or struct*
+- [**CS1557**](#startupobject-compiler-option): *Cannot use 'class' for Main method because it is in a different output file*
+- [**CS1558**](#main-method-declaration): *'class' does not have a suitable static Main method*
+- [**CS1559**](#startupobject-compiler-option): *Cannot use 'object' for Main method because it is imported*
+- [**CS2017**](#startupobject-compiler-option): *Cannot specify /main if building a module or library*
+- [**CS5001**](#main-method-declaration): *Program does not contain a static 'Main' method suitable for an entry point*
+- [**CS7022**](#top-level-statements): *The entry point of the program is global code; ignoring '{0}' entry point.*
+- [**CS8801**](#top-level-statements): *Cannot use local variable or local function '{0}' declared in a top-level statement in this context.*
+- [**CS8802**](#top-level-statements): *Only one compilation unit can have top-level statements.*
+- [**CS8803**](#top-level-statements): *Top-level statements must precede namespace and type declarations.*
+- [**CS8805**](#top-level-statements): *Program using top-level statements must be an executable.*
+- [**CS8899**](#main-method-declaration): *Application entry points cannot be attributed with 'UnmanagedCallersOnly'.*
+- [**CS8937**](#top-level-statements): *At least one top-level statement must be non-empty.*
 
-## Multiple entry points
+## `Main` method declaration
 
 - **CS0017**: *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
-
-A program can only have one [Main](../../fundamentals/program-structure/main-command-line.md) method.
-
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
-
-To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option to specify which Main method you want to use.
-
-The following sample generates CS0017:
-
-```csharp
-// CS0017.cs
-// compile with: /target:exe
-public class clx
-{
-   static public void Main()
-   {
-   }
-}
-
-public class cly
-{
-   public static void Main()   // CS0017, delete one Main or use /main
-   {
-   }
-}
-```
-
-## Wrong signature for entry point
-
 - **CS0028**: *'function declaration' has the wrong signature to be an entry point*
-
-The method declaration for `Main` was invalid: it was declared with an invalid signature. `Main` must be declared as static and it must return either [int](../builtin-types/integral-numeric-types.md) or [void](../builtin-types/void.md). For more information, see [Main() and Command-Line Arguments](../../fundamentals/program-structure/main-command-line.md).
-
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
-
-The following sample generates CS0028:
-
-```csharp
-// CS0028.cs
-// compile with: /W:4 /warnaserror
-public class a
-{
-    public static double Main(int i)   // CS0028
-    // Try the following line instead:
-    // public static void Main()
-    {
-    }
-}
-```
-
-## Generic entry point
-
 - **CS0402**: *'identifier': an entry point cannot be generic or in a generic type*
+- **CS1558**: *'class' does not have a suitable static Main method*
+- **CS5001**: *Program does not contain a static 'Main' method suitable for an entry point*
+- **CS8899**: *Application entry points cannot be attributed with 'UnmanagedCallersOnly'.*
 
-The entry point was found in a generic type. To remove this warning, implement Main in a non-generic class or struct.
+A program that compiles to an executable must contain a valid `Main` method as its entry point. For more information, see [Main() and command-line arguments](../../fundamentals/program-structure/main-command-line.md).
 
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
+To correct these errors, ensure your `Main` method declaration follows these rules:
 
-```csharp
-// CS0402.cs
-// compile with: /W:4
-class C<T>
-{
-   public static void Main()  // CS0402
-   {
+Declare the `Main` method as `static` with a return type of `void`, `int`, `Task`, or `Task<int>`, because the runtime requires a specific signature to identify the program's entry point (**CS0028**, **CS1558**). The method can optionally accept a `string[]` parameter for command-line arguments. If you use the `async` modifier, the return type must be `Task` or `Task<int>`, and you must target [C# language version](../configure-language-version.md) 7.1 or higher.
 
-   }
-}
+Move the `Main` method out of any generic type, because the runtime can't resolve a unique entry point when the containing type requires type arguments (**CS0402**).
 
-class CMain
-{
-   public static void Main() {}
-}
-```
+Remove the <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> attribute from the `Main` method, because entry points must be callable from managed code and `UnmanagedCallersOnly` restricts the method to unmanaged callers only (**CS8899**).
 
-## Startup object not found
+When your code contains multiple `Main` methods across different types, use the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option to specify which type contains the intended entry point (**CS0017**). Without that option, the compiler can't determine which `Main` method to use.
+
+Verify that your executable project defines a `Main` method with a correct signature, because a project with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe** requires an entry point (**CS5001**, **CS1558**). The method name is case-sensitive—`main` doesn't qualify. If you don't need an executable, change the output type to **library**.
+
+> [!NOTE]
+> CS0028 is a legacy diagnostic that the current C# compiler doesn't produce. Modern versions of the compiler report **CS1558** or **CS5001** instead when the `Main` method has an invalid signature.
+
+## `StartupObject` compiler option
 
 - **CS1555**: *Could not find 'class' specified for Main method*
-
-A class was specified to the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option, but the class name was not found in the source code.
-
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
-
-## Startup object not valid
-
 - **CS1556**: *'construct' specified for Main method must be a valid class or struct*
-
-The [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option was passed an identifier that was not a class name.
-
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
-
-## Startup object in different output
-
 - **CS1557**: *Cannot use 'class' for Main method because it is in a different output file*
-
-The [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option was specified for one output file in a multi-output file compilation. However, the class was not found in the source code for the /main compilation; it was found in a source code file for one of the other output files in the compilation.
-
-## No suitable Main method
-
-- **CS1558**: *'class' does not have a suitable static Main method*
-
-The [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option specified a class in which to look for a **Main** method. However, the [Main](../../fundamentals/program-structure/main-command-line.md) method was not defined correctly.
-
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
-
-The following example generates CS1558 because of invalid return type.
-
-```csharp
-// CS1558.cs
-// compile with: /main:MyNamespace.MyClass
-
-namespace MyNamespace
-{
-   public class MyClass
-   {
-      public static float Main()
-      {
-         return 0.0; // CS1558 because the return type is a float.
-      }
-   }
-}
-```
-
-## Startup object is imported
-
 - **CS1559**: *Cannot use 'object' for Main method because it is imported*
-
-An invalid class was specified to the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option; the class cannot be used as a location for the [Main](../../fundamentals/program-structure/main-command-line.md) method.
-
-## Main option on library
-
 - **CS2017**: *Cannot specify /main if building a module or library*
 
-You can't specify a main entry point when you're building a **library** [**OutputType**](../compiler-options/output.md#outputtype).
+The [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option (also known as `/main`) specifies which type contains the program's `Main` method when multiple types define one. For more information, see [**StartupObject**](../compiler-options/advanced.md#startupobject) and [Main() and command-line arguments](../../fundamentals/program-structure/main-command-line.md).
 
-The following sample generates CS2017:
+To correct these errors, ensure the `StartupObject` option references a valid type:
 
-```csharp
-// CS2017.cs
-// compile with: /main:MyClass /target:library
-// CS2017 expected
-class MyClass
-{
-   public static void Main()
-   {
-   }
-}
-```
+Verify that the fully qualified class name passed to `StartupObject` matches a type defined in the current compilation's source code, because the compiler searches only the source files being compiled—not referenced assemblies—for the specified type (**CS1555**). Check for typos in the fully qualified name, including the namespace.
 
-## No static Main method
+Ensure the identifier passed to `StartupObject` refers to a non-generic `class` or `struct`, because the compiler requires a concrete type that can contain a valid `Main` method (**CS1556**). Interfaces, enums, delegates, and generic types aren't valid targets.
 
-- **CS5001**: *Program does not contain a static 'Main' method suitable for an entry point*
+Move the specified class into the same output file as the current compilation, because the `/main` option resolves the entry point within a single output assembly and can't reference types compiled into a different output (**CS1557**).
 
-This error occurs when no static `Main` method with a correct signature is found in the code that produces an executable file. It also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case `main`. For information about the rules that apply to the `Main` method, see [Main() and Command-Line Arguments](../../fundamentals/program-structure/main-command-line.md).
+Ensure the specified type is defined in the current project's source code rather than in a referenced assembly, because the compiler can't designate an imported type as the entry point (**CS1559**).
 
-[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
+Remove the `/main` option when building a library or module, because only executable projects (with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe**) have entry points (**CS2017**). If you need an entry point, change the output type to an executable.
 
-If the `Main` method has an `async` modifier, make sure that the [selected C# language version](../configure-language-version.md) is 7.1 or higher and to use `Task` or `Task<int>` as the return type.
+> [!NOTE]
+> CS1557 and CS1559 are legacy diagnostics that the current C# compiler doesn't produce. The scenarios that triggered these errors are no longer supported or occur too infrequently to warrant detection.
 
-The `Main` method is only required when compiling an executable file, that is, when the **exe** or **winexe** element of the [**OutputType**](../compiler-options/output.md#outputtype) compiler option is specified. The following Visual Studio project types specify one of these options by default:
+## Top-level statements
 
-- Console application
-- ASP.NET Core application
-- WPF application
-- Windows Forms application
-
-The following example generates CS5001:
-
-```csharp
-// CS5001.cs
-// CS5001 expected when compiled with -target:exe or -target:winexe
-public class Program
-{
-   // Uncomment the following line to resolve.
-   // static void Main() {}
-}
-```
-
-## Multiple top-level statements
-
+- **CS7022**: *The entry point of the program is global code; ignoring '{0}' entry point.*
+- **CS8801**: *Cannot use local variable or local function '{0}' declared in a top-level statement in this context.*
 - **CS8802**: *Only one compilation unit can have top-level statements.*
-
-This error indicates that there are two or more [top-level statements](../../fundamentals/program-structure/top-level-statements.md) in a single compilation unit (single project or a single group of files compiled into a single binary file).
-
-The following sample of single compilation unit generates CS8802:
-
-```xml
-<!-- SingleCompilationUnit.csproj -->
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
-</Project>
-```
-
-```csharp
-// EntryFile.cs
-
-int a = 0;
-```
-
-```csharp
-// SecondaryEntryFile.cs
-
-int b = 1;    // CS8802: The top level statement already exists in EntryFile.cs
-```
-
-To correct this error, use only one top-level statement in the project. Top-level statements act as an entry point to the program, so only one file can have top-level statements. All other statements must be defined as members of classes or structs.
-
-## Top-level statements order
-
 - **CS8803**: *Top-level statements must precede namespace and type declarations.*
-
-The following sample generates CS8803:
-
-```csharp
-// CS8803.cs (0,0)
-
-public record Person
-{
-    public string? GivenName { get; set; }
-    public string? FamilyName { get; set; }
-}
-
-int i = 0;
-```
-
-In a file with top-level statements, top-level statements must occur prior to any type declarations.
-
-To correct this error, move the code before the namespace declaration:
-
-```csharp
-
-int i = 0;
-
-public record Person
-{
-    public string? GivenName { get; set; }
-    public string? FamilyName { get; set; }
-}
-```
-
-It is common that types are declared within their own file, which would also correct this error by separating the type declaration from the top-level statements.
-
-## Invalid top level statements
-
+- **CS8805**: *Program using top-level statements must be an executable.*
 - **CS8937**: *At least one top-level statement must be non-empty.*
 
-To correct these errors, ensure your static constructor declaration follows these rules:
+[Top-level statements](../../fundamentals/program-structure/top-level-statements.md) replace the explicit `Main` method as the program's entry point. For more information, see [Top-level statements](../../fundamentals/program-structure/top-level-statements.md) in the C# programming guide and the [top-level statements](~/_csharpstandard/standard/basic-concepts.md#754-application-entry-points) feature specification.
 
-- Add an executable statement to your app. (**CS8937**)
+To correct these errors, ensure your use of top-level statements follows these rules:
+
+Consolidate all top-level statements into a single file, because only one compilation unit (file) can contain top-level statements (**CS8802**). Move any top-level code from other files into that single file, and restructure the remaining files so they contain only namespace and type declarations.
+
+Place all top-level statements before any `namespace` or `type` declarations in the file, because the compiler requires top-level statements to appear first (**CS8803**). If you have `using` directives, those can still precede the top-level statements.
+
+Include at least one statement that contains executable code, because a file with only empty statements, whitespace, or comments doesn't qualify as a valid entry point (**CS8937**). Add a statement such as a method call, variable assignment, or expression to satisfy the requirement.
+
+Access local variables and local functions declared in top-level statements only from within the top-level statement context itself, because those declarations are scoped to the generated entry point method and aren't visible to other files or to type members declared in the same file (**CS8801**). If you need to share state across files, declare the variable as a static field or property on a type instead.
+
+Set the project's [**OutputType**](../compiler-options/output.md#outputtype) to **exe**, because top-level statements define an entry point and entry points are only valid in executable projects (**CS8805**). If you're building a library, remove the top-level statements and use types and methods instead.
+
+Remove or rename any explicit `Main` method when top-level statements are present, because the compiler treats the top-level statements as the entry point and ignores any `Main` method, producing a warning (**CS7022**). If you intend to use an explicit `Main` method, move the top-level statement code into that method and remove the top-level statements.

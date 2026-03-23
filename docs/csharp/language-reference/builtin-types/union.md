@@ -55,7 +55,6 @@ A union declaration can include a body with additional members, just like a stru
 
 :::code language="csharp" source="snippets/unions/BodyMembers.cs" id="BodyMembers":::
 
-
 ## Union conversions
 
 An implicit *union conversion* exists from each case type to the union type. You don't need to call a constructor explicitly:

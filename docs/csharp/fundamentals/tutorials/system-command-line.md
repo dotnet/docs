@@ -116,11 +116,13 @@ Each subcommand needs an *action*—a [delegate](../../programming-guide/delegat
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="AddAction":::
 
-1. Set the action for the `list` command. This action uses [LINQ](../../linq/index.md) methods (`Where` and `ToList`) to filter the task list, a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
+1. Set the action for the `list` command. [LINQ](../../linq/index.md) (Language Integrated Query) gives you standard query operators for in-memory collections. In this action, `Where` filters the tasks to only the items that match a condition, and `ToList` materializes the filtered sequence into a list. The action then uses a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="ListAction":::
 
-1. Set the action for the `complete` command. This action uses LINQ's `FirstOrDefault` to find a matching task, an [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists, and a [`with` expression](../../language-reference/operators/with-expression.md) to create a copy of the record with `IsComplete` set to `true`—records are immutable by default, so `with` is how you produce a modified copy:
+   For more detail, see [LINQ](../../linq/index.md).
+
+1. Set the action for the `complete` command. This action uses LINQ's `FirstOrDefault` to find a matching task, an [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists, and a [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="CompleteAction":::
 
@@ -136,9 +138,9 @@ Each subcommand needs an *action*—a [delegate](../../programming-guide/delegat
 
 ## Add supporting types and data helpers
 
-The app needs a few supporting pieces: [local functions](../../programming-guide/classes-and-structs/local-functions.md) (methods declared inside top-level code) that load and save tasks, an [`enum`](../../language-reference/builtin-types/enum.md) (a value type that defines a set of named constants) for priority levels, a [`record`](../../language-reference/builtin-types/record.md) (a reference type with built-in value equality and immutability) to represent a task, and a serialization context for storing tasks as JSON (JavaScript Object Notation). The app uses [System.Text.Json](../../../standard/serialization/system-text-json/overview.md) for serialization. File-based apps require type declarations to appear after all top-level statements and local functions.
+The app needs a few supporting pieces: [local functions](../../programming-guide/classes-and-structs/local-functions.md), an [`enum`](../../language-reference/builtin-types/enum.md), a [`record`](../../language-reference/builtin-types/record.md), and a serialization context. The following sections introduce each concept, explain why you'd choose it, and show the code. The app uses [System.Text.Json](../../../standard/serialization/system-text-json/overview.md) to store tasks as JSON (JavaScript Object Notation). File-based apps require type declarations to appear after all top-level statements and local functions.
 
-1. Add the local functions that load and save tasks:
+1. Add the local functions that load and save tasks. A [local function](../../programming-guide/classes-and-structs/local-functions.md) is a method declared inside another function, including inside other local functions. Local functions keep helper logic close to the code that calls it, which improves readability because a reader doesn't have to jump to a separate class or file to understand the flow. Here, `LoadTasks` and `SaveTasks` encapsulate the file I/O that multiple command actions share, so the load/save logic is written once and reused:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="DataHelpers":::
 
@@ -146,9 +148,11 @@ The app needs a few supporting pieces: [local functions](../../programming-guide
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="EnumDefinition":::
 
+   An [`enum`](../../language-reference/builtin-types/enum.md) is a value type that defines a fixed set of named constants backed by an integral type. You could represent priority levels with plain integers (0, 1, 2), but an `enum` is a better choice for several reasons: the compiler restricts assignments to the defined names, so a typo like `Hihg` causes a compile-time error instead of a silent bug; the names `Low`, `Medium`, and `High` make code more readable; and `System.CommandLine` automatically validates user input against the enum members, so you get free input checking.
+
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RecordDefinition":::
 
-   The `enum` restricts priority to three valid values. The `record` declares five properties through its constructor parameters—the compiler generates a constructor, read-only properties, `Equals`, `GetHashCode`, and the `with` expression support automatically.
+   A [`record`](../../language-reference/builtin-types/record.md) is a type that the compiler equips with value-based equality and nondestructive mutation. A `record` is the right fit for `TaskItem` because task data is plain state with no complex behavior—you compare tasks by their values, not by reference identity. The compiler generates `Equals`, `GetHashCode`, `ToString`, and `with` expression support from the constructor parameters, so you get correct equality checks, easy debugging output, and immutable updates without writing boilerplate. Because records are immutable by default, you use a `with` expression to produce a modified copy (as the `complete` action does) rather than mutating the original, which prevents accidental side effects when the same list is read and written by different actions.
 
 1. Add the JSON serialization context for AOT-compatible serialization:
 

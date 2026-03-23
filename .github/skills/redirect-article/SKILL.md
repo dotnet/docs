@@ -14,23 +14,35 @@ Delete a markdown article from the repository and create a redirect entry that p
 - Renaming or moving an article to a new location
 - Removing outdated content while preserving URL functionality
 
+## Important Notes
+
+- Redirect entries are sorted **alphabetically** by path (ignoring the leading `/` for `source_path_from_root`)
+- Always determine the correct redirection file by searching for existing entries with similar paths before running the script
+- Always search the repository for links to the old article and update them
+- The `redirect_url` shouldn't include the file extension or domain—just the URL path
+
 ## Steps
 
-### Required: Use the provided script
+### 1. Required: Use the provided script
 
-**DO NOT manually edit files or JSON.** Use the `create-redirect-entry.ps1` script to handle the redirect creation automatically.
+**DO NOT manually edit a redirection JSON file.** Use the `create-redirect-entry.ps1` script to handle the redirect creation automatically.
 
-1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`.
-2. **Create a redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the appropriate JSON file. Do not manually edit the JSON file.
-3. **Update internal links** - Search the repository for links to the old article and update them to point to the new article.
+1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`
+2. **Create a redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the appropriate JSON file. Do not manually edit the JSON file
+3. **Update internal links** - Search the repository for links to the old article and update them to point to the new article
+
+### 2. Update the internal links
+
+1. Search for `**/*.md` and `**/*.yml` files that reference the redirected file
+2. Update the links to point to the new article
 
 ## Redirection File Selection
 
 To determine the correct redirection file for an article:
 
-1. **Search for existing redirects** - Search the `.openpublishing.redirection.*.json` files for entries with paths similar to your source article (same folder or parent folder).
-2. **Match by path prefix** - Use the redirection file that contains entries with the longest matching path prefix to your source article.
-3. **Use the reference table** - If no existing entries match, consult the table below based on the content area.
+1. **Search for existing redirects** - Search the `.openpublishing.redirection.*.json` files for entries with paths similar to your source article (same folder or parent folder)
+2. **Match by path prefix** - Use the redirection file that contains entries with the longest matching path prefix to your source article
+3. **Use the reference table** - If no existing entries match, consult the table below based on the content area
 
 **Reference table:**
 
@@ -92,10 +104,3 @@ Location (relative to this skill file): `./scripts/create-redirect-entry.ps1`
 - **redirect_url**: URL path to redirect to (starts with `/dotnet/`)
 
 > **Note:** The script handles both `source_path_from_root` and `source_path` when reading existing entries, but always writes new entries using `source_path_from_root`.
-
-## Important Notes
-
-- Redirect entries are sorted **alphabetically** by path (ignoring the leading `/` for `source_path_from_root`).
-- Always determine the correct redirection file by searching for existing entries with similar paths before running the script.
-- Always search the repository for links to the old article and update them.
-- The `redirect_url` shouldn't include the file extension or domain—just the URL path.

@@ -26,7 +26,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- The .NET 10 SDK or later. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
+- Install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later.
 
 ## Create the app
 
@@ -38,7 +38,7 @@ Start by creating a file-based C# program and adding the `System.CommandLine` pa
    #!/usr/bin/env dotnet
    ```
 
-   The `#!` (shebang) line enables running the file directly on Unix systems. On Windows, run the file with `dotnet run TaskCli.cs`.
+   The `#!` (shebang) line lets you run the file directly on Unix systems. On Windows, run the file with `dotnet run TaskCli.cs`.
 
 1. Add the `System.CommandLine` package directive and the required `using` statements:
 
@@ -47,7 +47,7 @@ Start by creating a file-based C# program and adding the `System.CommandLine` pa
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="Usings":::
 
    > [!IMPORTANT]
-   > Version `2.0.0` was the latest version when this tutorial was last updated. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you have the latest security fixes.
+   > Version `2.0.0` is the latest version at the time of writing. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you have the latest security fixes.
 
 ## Understand the command structure
 
@@ -226,13 +226,10 @@ Run the app with different inputs to exercise each subcommand.
 
 ## Clean up resources
 
-The task tracker stores data in a JSON file under your local application data folder. To remove the sample data, delete the `taskcli-sample` folder:
+The task tracker stores data in a JSON file under your local application data folder. Delete the `taskcli-sample` folder to remove the sample data:
 
-```dotnetcli
-dotnet script -e "System.IO.Directory.Delete(System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData), \"taskcli-sample\"), true)"
-```
-
-Or delete the folder manually from your file explorer. On Windows, the path is `%LOCALAPPDATA%\taskcli-sample`.
+- **Windows**: Delete `%LOCALAPPDATA%\taskcli-sample`
+- **macOS/Linux**: Delete `~/.local/share/taskcli-sample`
 
 ## Related content
 

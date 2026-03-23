@@ -47,37 +47,43 @@ var taskIdArgument = new Argument<int>("id")
 // </Arguments>
 
 // <AddCommand>
-var addCommand = new Command("add", "Add a new task");
-addCommand.Arguments.Add(descriptionArgument);
-addCommand.Options.Add(priorityOption);
-addCommand.Options.Add(dueOption);
+var addCommand = new Command("add", "Add a new task")
+{
+    Arguments = { descriptionArgument },
+    Options = { priorityOption, dueOption }
+};
 // </AddCommand>
 
 // <ListCommand>
-var listCommand = new Command("list", "List all tasks");
-listCommand.Options.Add(allOption);
+var listCommand = new Command("list", "List all tasks")
+{
+    Options = { allOption }
+};
 // </ListCommand>
 
 // <CompleteCommand>
-var completeCommand = new Command("complete", "Mark a task as complete");
-completeCommand.Arguments.Add(taskIdArgument);
+var completeCommand = new Command("complete", "Mark a task as complete")
+{
+    Arguments = { taskIdArgument }
+};
 // </CompleteCommand>
 
 // <RemoveCommand>
-var removeCommand = new Command("remove", "Remove a task");
-removeCommand.Arguments.Add(taskIdArgument);
+var removeCommand = new Command("remove", "Remove a task")
+{
+    Arguments = { taskIdArgument }
+};
 // </RemoveCommand>
 
 // <RootCommand>
-var rootCommand = new RootCommand("A simple task tracker CLI");
-rootCommand.Options.Add(verboseOption);
-rootCommand.Subcommands.Add(addCommand);
-rootCommand.Subcommands.Add(listCommand);
-rootCommand.Subcommands.Add(completeCommand);
-rootCommand.Subcommands.Add(removeCommand);
+var rootCommand = new RootCommand("A simple task tracker CLI")
+{
+    Options = { verboseOption },
+    Subcommands = { addCommand, listCommand, completeCommand, removeCommand }
+};
 // </RootCommand>
 
-// <SetActions>
+// <AddAction>
 addCommand.SetAction(parseResult =>
 {
     var description = parseResult.GetValue(descriptionArgument)!;
@@ -101,7 +107,9 @@ addCommand.SetAction(parseResult =>
         }
     }
 });
+// </AddAction>
 
+// <ListAction>
 listCommand.SetAction(parseResult =>
 {
     var showAll = parseResult.GetValue(allOption);
@@ -130,7 +138,9 @@ listCommand.SetAction(parseResult =>
         }
     }
 });
+// </ListAction>
 
+// <CompleteAction>
 completeCommand.SetAction(parseResult =>
 {
     var id = parseResult.GetValue(taskIdArgument);
@@ -154,7 +164,9 @@ completeCommand.SetAction(parseResult =>
         Console.WriteLine($"  Priority: {task.Priority}");
     }
 });
+// </CompleteAction>
 
+// <RemoveAction>
 removeCommand.SetAction(parseResult =>
 {
     var id = parseResult.GetValue(taskIdArgument);
@@ -178,7 +190,7 @@ removeCommand.SetAction(parseResult =>
         Console.WriteLine($"  Priority: {task.Priority}");
     }
 });
-// </SetActions>
+// </RemoveAction>
 
 // <Invoke>
 return rootCommand.Parse(args).Invoke();

@@ -10,87 +10,77 @@ using System.CommandLine.Parsing;
 using System.Text.Json;
 // </Usings>
 
-// <EnumDefinition>
-public enum Priority { Low, Medium, High }
-// </EnumDefinition>
-
-// <RecordDefinition>
-public record TaskItem(int Id, string Description, Priority Priority, DateOnly? Due, bool IsComplete);
-// </RecordDefinition>
-
-// <JsonContext>
-[System.Text.Json.Serialization.JsonSourceGenerationOptions(WriteIndented = true)]
-[System.Text.Json.Serialization.JsonSerializable(typeof(List<TaskItem>))]
-internal partial class TaskJsonContext : System.Text.Json.Serialization.JsonSerializerContext;
-// </JsonContext>
-
 // <Options>
-var verboseOption = new Option<bool>("--verbose", "Show detailed output")
+var verboseOption = new Option<bool>("--verbose")
 {
+    Description = "Show detailed output",
     Recursive = true
 };
 
-var priorityOption = new Option<Priority>("--priority", "Task priority level")
+var priorityOption = new Option<Priority>("--priority")
 {
+    Description = "Task priority level",
     DefaultValueFactory = _ => Priority.Medium
 };
 
-var dueOption = new Option<DateOnly?>("--due", "Due date in yyyy-MM-dd format");
+var dueOption = new Option<DateOnly?>("--due")
+{
+    Description = "Due date in yyyy-MM-dd format"
+};
 
-var allOption = new Option<bool>("--all", "Include completed tasks");
+var allOption = new Option<bool>("--all")
+{
+    Description = "Include completed tasks"
+};
 // </Options>
 
 // <Arguments>
-var descriptionArgument = new Argument<string>("description", "Task description");
+var descriptionArgument = new Argument<string>("description")
+{
+    Description = "Task description"
+};
 
-var taskIdArgument = new Argument<int>("id", "Task ID");
+var taskIdArgument = new Argument<int>("id")
+{
+    Description = "Task ID"
+};
 // </Arguments>
 
 // <AddCommand>
-var addCommand = new Command("add", "Add a new task")
-{
-    descriptionArgument,
-    priorityOption,
-    dueOption
-};
+var addCommand = new Command("add", "Add a new task");
+addCommand.Arguments.Add(descriptionArgument);
+addCommand.Options.Add(priorityOption);
+addCommand.Options.Add(dueOption);
 // </AddCommand>
 
 // <ListCommand>
-var listCommand = new Command("list", "List all tasks")
-{
-    allOption
-};
+var listCommand = new Command("list", "List all tasks");
+listCommand.Options.Add(allOption);
 // </ListCommand>
 
 // <CompleteCommand>
-var completeCommand = new Command("complete", "Mark a task as complete")
-{
-    taskIdArgument
-};
+var completeCommand = new Command("complete", "Mark a task as complete");
+completeCommand.Arguments.Add(taskIdArgument);
 // </CompleteCommand>
 
 // <RemoveCommand>
-var removeCommand = new Command("remove", "Remove a task")
-{
-    taskIdArgument
-};
+var removeCommand = new Command("remove", "Remove a task");
+removeCommand.Arguments.Add(taskIdArgument);
 // </RemoveCommand>
 
 // <RootCommand>
-var rootCommand = new RootCommand("A simple task tracker CLI")
-{
-    verboseOption,
-    addCommand,
-    listCommand,
-    completeCommand,
-    removeCommand
-};
+var rootCommand = new RootCommand("A simple task tracker CLI");
+rootCommand.Options.Add(verboseOption);
+rootCommand.Subcommands.Add(addCommand);
+rootCommand.Subcommands.Add(listCommand);
+rootCommand.Subcommands.Add(completeCommand);
+rootCommand.Subcommands.Add(removeCommand);
 // </RootCommand>
 
 // <SetActions>
 addCommand.SetAction(parseResult =>
 {
-    var description = parseResult.GetValue(descriptionArgument);
+    var description = parseResult.GetValue(descriptionArgument)!;
     var priority = parseResult.GetValue(priorityOption);
     var due = parseResult.GetValue(dueOption);
     var verbose = parseResult.GetValue(verboseOption);
@@ -220,3 +210,17 @@ static void SaveTasks(List<TaskItem> tasks)
     File.WriteAllText(path, json);
 }
 // </DataHelpers>
+
+// <EnumDefinition>
+public enum Priority { Low, Medium, High }
+// </EnumDefinition>
+
+// <RecordDefinition>
+public record TaskItem(int Id, string Description, Priority Priority, DateOnly? Due, bool IsComplete);
+// </RecordDefinition>
+
+// <JsonContext>
+[System.Text.Json.Serialization.JsonSourceGenerationOptions(WriteIndented = true)]
+[System.Text.Json.Serialization.JsonSerializable(typeof(List<TaskItem>))]
+internal partial class TaskJsonContext : System.Text.Json.Serialization.JsonSerializerContext;
+// </JsonContext>

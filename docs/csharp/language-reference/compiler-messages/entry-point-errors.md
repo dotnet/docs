@@ -12,8 +12,12 @@ f1_keywords:
  - "CS1559"
  - "CS2017"
  - "CS5001"
+ - "CS7022"
+ - "CS8801"
  - "CS8802"
  - "CS8803"
+ - "CS8805"
+ - "CS8899"
  - "CS8937"
 helpviewer_keywords:
  - "CS0017"
@@ -26,8 +30,12 @@ helpviewer_keywords:
  - "CS1559"
  - "CS2017"
  - "CS5001"
+ - "CS7022"
+ - "CS8801"
  - "CS8802"
  - "CS8803"
+ - "CS8805"
+ - "CS8899"
  - "CS8937"
 ms.date: 03/23/2026
 ---
@@ -48,8 +56,12 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1559**](#startup-object-is-imported): *Cannot use 'object' for Main method because it is imported*
 - [**CS2017**](#main-option-on-library): *Cannot specify /main if building a module or library*
 - [**CS5001**](#no-static-main-method): *Program does not contain a static 'Main' method suitable for an entry point*
+- [**CS7022**](#main-ignored): *The entry point of the program is global code; ignoring '{0}' entry point.*
+- [**CS8801**](#top-level-local-referenced-outside): *Cannot use local variable or local function '{0}' declared in a top-level statement in this context.*
 - [**CS8802**](#multiple-top-level-statements): *Only one compilation unit can have top-level statements.*
 - [**CS8803**](#top-level-statements-order): *Top-level statements must precede namespace and type declarations.*
+- [**CS8805**](#top-level-statements-not-executable): *Program using top-level statements must be an executable.*
+- [**CS8899**](#entry-point-unmanaged-callers-only): *Application entry points cannot be attributed with 'UnmanagedCallersOnly'.*
 - [**CS8937**](#static-constructors): *At least one top-level statement must be non-empty.*
 
 ## Multiple entry points

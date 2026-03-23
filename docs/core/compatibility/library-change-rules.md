@@ -239,6 +239,12 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❓ **REQUIRES JUDGMENT: A change in the parsing of input and throwing new exceptions (even if parsing behavior is not specified in the documentation**
 
+- ❌ **DISALLOWED: Adding or removing case types from a `union` declaration**
+
+  Adding or removing a case type from a `union` type is both a binary break and a source break.
+
+  Pattern matching tests are no longer exhaustive after adding a case type. The compiler flags pattern matching expressions as non-exhaustive. At runtime, unexpected values cause runtime exceptions. Removing a case type removes the constructor declaration for that case type.
+
 ### Exceptions
 
 - ✔️ **ALLOWED: Throwing a more derived exception than an existing exception**

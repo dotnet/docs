@@ -18,6 +18,8 @@ A *union type* represents a value that can be one of several *case types*. Union
 
 This declaration creates a `Pet` union with three case types: `Cat`, `Dog`, and `Bird`. You can assign any case type value to a `Pet` variable. The compiler ensures that `switch` expressions cover all case types.
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 Declare a union when a value must be exactly one of a fixed set of types and you want the compiler to enforce that every possibility is handled. Common scenarios include:
 
 - **Result-or-error returns**: A method returns either a success value or an error value, and the caller must handle both. A union like `union Result(Success, Error)` makes the set of outcomes explicit.
@@ -29,8 +31,6 @@ A union differs from other type declarations in important ways:
 - Unlike a `class` or `struct`, a union doesn't define new data members. Instead, it composes existing types into a closed set of alternatives.
 - Unlike an `interface`, a union is closed—you define the complete list of case types in the declaration, and the compiler uses that list for exhaustiveness checks.
 - Unlike a `record`, a union doesn't add equality, cloning, or deconstruction behavior. A union focuses on "which case is it?" rather than "what fields does it have?"
-
-[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 > [!IMPORTANT]
 > In .NET 11 Preview 2, the runtime doesn't include the `UnionAttribute` and `IUnion` interface. To use union types, you must declare them yourself. To see the required declarations, see [Union implementation](#union-implementation).
@@ -51,11 +51,10 @@ public union Pet(Cat, Dog, Bird);
 
 When a case type is a value type (like `int`), the value is boxed when stored in the union's `Value` property. Unions store their contents as a single `object?` reference.
 
-A union declaration can include a body with additional members, just like a struct, subject to some restrictions:
+A union declaration can include a body with additional members, just like a struct, subject to some restrictions. Union declarations can't include instance fields, auto-properties, or field-like events. You also can't declare public constructors with a single parameter, because the compiler generates those constructors as union creation members:
 
 :::code language="csharp" source="snippets/unions/BodyMembers.cs" id="BodyMembers":::
 
-Union declarations can't include instance fields, auto-properties, or field-like events. You also can't declare public constructors with a single parameter, because the compiler generates those constructors as union creation members.
 
 ## Union conversions
 
@@ -130,7 +129,7 @@ The compiler tracks the null state of a union's `Value` property through the fol
 
 ## Custom union types
 
-The compiler lowers a `union` declaration to a `struct` marked with the `[System.Runtime.CompilerServices.Union]` attribute, implements the `IUnion` interface, and generates a public constructor and an implicit conversion for each case type along with a `Value` property. That generated form is opinionated. It's always a struct, always boxes value-type cases, and always stores contents as `object?`.
+The compiler converts a `union` declaration to a `struct` declaration. The struct is marked with the `[System.Runtime.CompilerServices.Union]` attribute, implements the `IUnion` interface. It includes a public constructor and an implicit conversion for each case type along with a `Value` property. That generated form is opinionated. It's always a struct, always boxes value-type cases, and always stores contents as `object?`.
 
 When you need different behavior - such as a class-based union, a custom storage strategy, interop support, or if you want to adapt an existing type - you can create a union type manually.
 

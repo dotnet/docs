@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section, written for developers who know at least one programming language and are learning C#. If you're new to programming, start with [Get started](../../tour-of-csharp/index.yml). If you need comprehensive library coverage, see the [System.CommandLine library documentation](../../../standard/commandline/index.md).
 
-The [`System.CommandLine`](../../../standard/commandline/index.md) library handles command-line parsing, help text generation, and input validation so you can focus on your app's logic. In this tutorial, you build a task tracker CLI that demonstrates the core concepts: commands, subcommands, options, and arguments.
+The [`System.CommandLine`](../../../standard/commandline/index.md) library handles command-line parsing, help-text generation, and input validation so you can focus on your app's logic. In this tutorial, you build a task tracker CLI that demonstrates the core concepts: commands, subcommands, options, and arguments.
 
 In this tutorial, you:
 
@@ -54,18 +54,18 @@ Start by creating a file-based C# program and adding the `System.CommandLine` pa
 Before writing any parsing code, consider what the CLI looks like from the user's perspective. The task tracker supports four operations:
 
 ```console
-TaskCli add "Write documentation" --priority High --due 2026-04-01
-TaskCli list --all
-TaskCli complete 3
-TaskCli remove 3
-TaskCli --verbose list
+dotnet TaskCli.cs -- add "Write documentation" --priority High --due 2026-04-01
+dotnet TaskCli.cs -- list --all
+dotnet TaskCli.cs -- complete 3
+dotnet TaskCli.cs -- remove 3
+dotnet TaskCli.cs -- --verbose list
 ```
 
 Each line uses several command-line concepts:
 
 - **Subcommands** are verbs that tell the app what to do. The task tracker has four: `add`, `list`, `complete`, and `remove`. Each subcommand can define its own parameters.
 - **Arguments** are positional values that follow a subcommand. In `add "Write documentation"`, the string `"Write documentation"` is an argument specifying the task description. In `complete 3`, the number `3` is an argument specifying the task ID.
-- **Options** are named values prefixed with `--`. In `add --priority High --due 2026-04-01`, both `--priority` and `--due` are options with their own values. In `list --all`, the `--all` option is a boolean flag that doesn't need a value.
+- **Options** are named values prefixed with `--`. In `add --priority High --due 2026-04-01`, both `--priority` and `--due` are options with their own values. In `list --all`, the `--all` option is a Boolean flag that doesn't need a value.
 - **Global options** apply to every subcommand. The `--verbose` option is defined on the root command with `Recursive = true`, so it works with any subcommand. In `--verbose list`, the verbose flag appears before the subcommand, but `list --verbose` works equally well.
 
 In the sections that follow, you build these pieces from the bottom up. First, you define the individual options (like `--priority` and `--all`) and arguments (like the task description and ID). Next, you create the four subcommands and attach the relevant options and arguments to each one. Then you wire up an action for each subcommand. The action is the code that runs when the user invokes that command. Finally, you assemble the root command, parse the input, and invoke the matched action.
@@ -76,7 +76,7 @@ For a deeper look at command-line syntax concepts, see [Command-line syntax over
 
 Options represent named values that users specify with a `--` prefix. Arguments represent positional values. Both are strongly typed. `System.CommandLine` parses the input string into the type you specify.
 
-The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*. It tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in <xref:System.CommandLine.Option%601?displayProperty=nameWithType>), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and <xref:System.CommandLine.Argument%601?displayProperty=nameWithType> in the steps that follow. For more on generics, see [Generics](../types/generics.md).
+The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*. It tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in <xref:System.CommandLine.Option%601?displayProperty=nameWithType>), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and <xref:System.CommandLine.Argument`1?displayProperty=nameWithType> in the steps that follow. For more information on generics, see [Generics](../types/generics.md).
 
 1. Define the options. Each `Option<T>` specifies the value type, the name, and a description. The `--priority` option uses an `enum` type, and `System.CommandLine` automatically validates the input against valid enum values:
 
@@ -116,17 +116,21 @@ Each subcommand needs an *action*. An action is a [delegate](../../programming-g
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="AddAction":::
 
-1. Set the action for the `list` command. [LINQ](../../linq/index.md) (Language Integrated Query) gives you standard query operators for in-memory collections. In this action, <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> filters the tasks to only the items that match a condition, and <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> materializes the filtered sequence into a list. The action then uses a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
+1. Set the action for the `list` command. [LINQ](../../linq/index.md) (Language Integrated Query) gives you standard query operators for in-memory collections. In this action, <xref:System.Linq.Enumerable.Where*?displayProperty=nameWithType> filters the tasks to only the items that match a condition, and <xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType> materializes the filtered sequence into a list. The action then uses a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="ListAction":::
 
    For more detail, see [LINQ](../../linq/index.md).
 
-1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType> to find a matching task, an [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists, and a [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
+1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType> to find:
+
+   - A matching task.
+   - An [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists.
+   - A [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="CompleteAction":::
 
-1. Set the action for the `remove` command. This action follows the same lookup-and-validate pattern as `complete`. Use `FirstOrDefault` to find the task and `is null` to handle the missing case:
+1. Set the action for the `remove` command. This action follows the same look-up-and-validate pattern as `complete`. Use `FirstOrDefault` to find the task and `is null` to handle the missing case:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RemoveAction":::
 
@@ -258,8 +262,9 @@ Run the app with different inputs to exercise each subcommand.
 
 The task tracker stores data in a JSON file under your local application data folder. Delete the `taskcli-sample` folder to remove the sample data:
 
-- **Windows**: Delete `%LOCALAPPDATA%\taskcli-sample`
-- **macOS/Linux**: Delete `~/.local/share/taskcli-sample`
+- **Windows**: Delete `%LOCALAPPDATA%\taskcli-sample`.
+- **macOS**: Delete `~/Library/Application Support/taskcli-sample`.
+- **Linux**: Delete `~/.local/share/taskcli-sample`.
 
 ## Related content
 

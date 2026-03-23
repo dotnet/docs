@@ -25,7 +25,7 @@ var priorityOption = new Option<Priority>("--priority")
 
 var dueOption = new Option<DateOnly?>("--due")
 {
-    Description = "Due date in yyyy-MM-dd format"
+    Description = "Due date (uses current culture date format)"
 };
 
 var allOption = new Option<bool>("--all")

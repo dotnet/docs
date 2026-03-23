@@ -75,9 +75,9 @@ Strong naming is not required for libraries that target .NET Core/5+ only. You s
 
 The following popular open-source .NET libraries use strong naming and have the key pair checked into source control. They can serve as references when you set up strong naming for your library:
 
-- [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) (MIT license) checks its strong naming key into source control.
-- [AutoMapper](https://github.com/AutoMapper/AutoMapper) (MIT license) uses strong naming for .NET Framework compatibility.
-- [NodaTime](https://github.com/nodatime/nodatime) (Apache 2 license) multi-targets .NET Standard and includes its strong naming key in source control.
+- [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) (MIT license) is strong-named and checks its key pair into source control.
+- [AutoMapper](https://github.com/AutoMapper/AutoMapper) (MIT license) is strong-named and checks its key pair into source control.
+- [NodaTime](https://github.com/nodatime/nodatime) (Apache 2.0 license) is strong-named and checks its key pair into source control.
 
 For more information about how the .NET team itself approaches strong naming across the runtime and core libraries, see [Strong Name Signing](https://github.com/dotnet/runtime/blob/main/docs/project/strong-name-signing.md) in the dotnet/runtime repository.
 

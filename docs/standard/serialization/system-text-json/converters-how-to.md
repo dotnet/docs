@@ -83,7 +83,7 @@ The following steps explain how to create a converter by following the factory p
 * Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at runtime.
 * Create the converter class that the `CreateConverter` method instantiates.
 
-The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+The factory pattern is required for open generics in .NET 10 and earlier because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle. Starting in .NET 11, you can use open generic converters directly with `[JsonConverter]` for simpler cases. For more information, see [Use open generic converters with \[JsonConverter\]](#use-open-generic-converters-with-jsonconverter).
 
 The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes.
 
@@ -144,7 +144,7 @@ Use open generic converters with `[JsonConverter]` when:
 
 Continue to use <xref:System.Text.Json.Serialization.JsonConverterFactory> when:
 
-* The converter needs to handle types with varying generic arity (for example, `Dictionary<TKey, TValue>` with differing key types).
+* The converter needs to handle types with varying generic arity (for example, a single factory that creates converters for both `Result<T>` and `Result<T, TError>`).
 * You need custom logic in `CanConvert` to determine which types the converter supports.
 * You register the converter through <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> instead of the `[JsonConverter]` attribute.
 

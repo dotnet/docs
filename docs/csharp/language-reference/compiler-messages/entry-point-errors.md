@@ -44,7 +44,7 @@ ms.date: 03/23/2026
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0017**](#main-method-declaration): *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
 - [**CS0028**](#main-method-declaration): *'function declaration' has the wrong signature to be an entry point*
@@ -85,7 +85,7 @@ Remove the <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> a
 
 When your code contains multiple `Main` methods across different types, use the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option to specify which type contains the intended entry point (**CS0017**). Without that option, the compiler can't determine which `Main` method to use.
 
-Verify that your executable project defines a `Main` method with a correct signature, because a project with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe** requires an entry point (**CS5001**, **CS1558**). The method name is case-sensitive—`main` doesn't qualify. If you don't need an executable, change the output type to **library**.
+Verify that your executable project defines a `Main` method with a correct signature, because a project with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe** requires an entry point (**CS5001**, **CS1558**). The method name is case-sensitive - `main` doesn't qualify. If you don't need an executable, change the output type to **library**.
 
 > [!NOTE]
 > CS0028 is a legacy diagnostic that the current C# compiler doesn't produce. Modern versions of the compiler report **CS1558** or **CS5001** instead when the `Main` method has an invalid signature.
@@ -102,15 +102,15 @@ The [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler 
 
 To correct these errors, ensure the `StartupObject` option references a valid type:
 
-Verify that the fully qualified class name passed to `StartupObject` matches a type defined in the current compilation's source code, because the compiler searches only the source files being compiled—not referenced assemblies—for the specified type (**CS1555**). Check for typos in the fully qualified name, including the namespace.
+Verify that the fully qualified class name you pass to `StartupObject` matches a type defined in the current compilation's source code. The compiler searches only the source files being compiled - not referenced assemblies - for the specified type (**CS1555**). Check for typos in the fully qualified name, including the namespace.
 
-Ensure the identifier passed to `StartupObject` refers to a non-generic `class` or `struct`, because the compiler requires a concrete type that can contain a valid `Main` method (**CS1556**). Interfaces, enums, delegates, and generic types aren't valid targets.
+Ensure the identifier you pass to `StartupObject` refers to a non-generic `class` or `struct`. The compiler requires a concrete type that can contain a valid `Main` method (**CS1556**). Interfaces, enums, delegates, and generic types aren't valid targets.
 
-Move the specified class into the same output file as the current compilation, because the `/main` option resolves the entry point within a single output assembly and can't reference types compiled into a different output (**CS1557**).
+Move the specified class into the same output file as the current compilation. The `/main` option resolves the entry point within a single output assembly and can't reference types compiled into a different output (**CS1557**).
 
-Ensure the specified type is defined in the current project's source code rather than in a referenced assembly, because the compiler can't designate an imported type as the entry point (**CS1559**).
+Ensure the specified type is defined in the current project's source code rather than in a referenced assembly. The compiler can't designate an imported type as the entry point (**CS1559**).
 
-Remove the `/main` option when building a library or module, because only executable projects (with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe**) have entry points (**CS2017**). If you need an entry point, change the output type to an executable.
+Remove the `/main` option when building a library or module. Only executable projects (with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe**) have entry points (**CS2017**). If you need an entry point, change the output type to an executable.
 
 > [!NOTE]
 > CS1557 and CS1559 are legacy diagnostics that the current C# compiler doesn't produce. The scenarios that triggered these errors are no longer supported or occur too infrequently to warrant detection.
@@ -128,9 +128,9 @@ Remove the `/main` option when building a library or module, because only execut
 
 To correct these errors, ensure your use of top-level statements follows these rules:
 
-Consolidate all top-level statements into a single file, because only one compilation unit (file) can contain top-level statements (**CS8802**). Move any top-level code from other files into that single file, and restructure the remaining files so they contain only namespace and type declarations.
+Consolidate all top-level statements into a single file, because only one compilation unit (file) can contain top-level statements (**CS8802**). Move any top-level code from other files into that single file. Restructure the remaining files so they contain only namespace and type declarations.
 
-Place all top-level statements before any `namespace` or `type` declarations in the file, because the compiler requires top-level statements to appear first (**CS8803**). If you have `using` directives, those can still precede the top-level statements.
+Place all top-level statements before any `namespace` or `type` declarations in the file, because the compiler requires top-level statements to appear first (**CS8803**). If you have `using` directives, those directives can still precede the top-level statements.
 
 Include at least one statement that contains executable code, because a file with only empty statements, whitespace, or comments doesn't qualify as a valid entry point (**CS8937**). Add a statement such as a method call, variable assignment, or expression to satisfy the requirement.
 

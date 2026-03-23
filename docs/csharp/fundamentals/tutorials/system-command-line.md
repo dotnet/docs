@@ -4,7 +4,7 @@ description: "Learn how to use the System.CommandLine library to build a command
 ms.date: 03/23/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
-#customer intent: As a developer, I want to build a command-line app with System.CommandLine so that I can parse options, arguments, and subcommands without writing my own parser.
+#customer intent: As a developer learning C#, I want to build a command-line app so that I can learn important C# language concepts and .NET libraries while also learning to use System.CommandLine.
 ---
 
 # Tutorial: Build a command-line app with System.CommandLine
@@ -18,7 +18,7 @@ In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> * Create a file-based app with the `System.CommandLine` package.
+> * Create a file-based app by using the `System.CommandLine` package.
 > * Define options and arguments with typed values.
 > * Build subcommands and attach options and arguments to them.
 > * Handle each subcommand with an action.
@@ -64,25 +64,25 @@ TaskCli --verbose list
 Each line uses several command-line concepts:
 
 - **Subcommands** are verbs that tell the app what to do. The task tracker has four: `add`, `list`, `complete`, and `remove`. Each subcommand can define its own parameters.
-- **Arguments** are positional values that follow a subcommand. In `add "Write documentation"`, the string `"Write documentation"` is an argument—the task description. In `complete 3`, the number `3` is an argument—the task ID.
+- **Arguments** are positional values that follow a subcommand. In `add "Write documentation"`, the string `"Write documentation"` is an argument specifying the task description. In `complete 3`, the number `3` is an argument specifying the task ID.
 - **Options** are named values prefixed with `--`. In `add --priority High --due 2026-04-01`, both `--priority` and `--due` are options with their own values. In `list --all`, the `--all` option is a boolean flag that doesn't need a value.
 - **Global options** apply to every subcommand. The `--verbose` option is defined on the root command with `Recursive = true`, so it works with any subcommand. In `--verbose list`, the verbose flag appears before the subcommand, but `list --verbose` works equally well.
 
-In the sections that follow, you build these pieces from the bottom up. First, you define the individual options (like `--priority` and `--all`) and arguments (like the task description and ID). Next, you create the four subcommands and attach the relevant options and arguments to each one. Then you wire up an action for each subcommand—the code that runs when the user invokes that command. Finally, you assemble the root command, parse the input, and invoke the matched action.
+In the sections that follow, you build these pieces from the bottom up. First, you define the individual options (like `--priority` and `--all`) and arguments (like the task description and ID). Next, you create the four subcommands and attach the relevant options and arguments to each one. Then you wire up an action for each subcommand. The action is the code that runs when the user invokes that command. Finally, you assemble the root command, parse the input, and invoke the matched action.
 
 For a deeper look at command-line syntax concepts, see [Command-line syntax overview](../../../standard/commandline/syntax.md).
 
 ## Define options and arguments
 
-Options represent named values that users specify with a `--` prefix. Arguments represent positional values. Both are strongly typed—`System.CommandLine` parses the input string into the type you specify.
+Options represent named values that users specify with a `--` prefix. Arguments represent positional values. Both are strongly typed. `System.CommandLine` parses the input string into the type you specify.
 
-The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*—it tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in `Option<T>`), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and `Argument<string>` in the steps that follow. For more on generics, see [Generics](../types/generics.md).
+The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*. It tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in <xref:System.CommandLine.Option%601?displayProperty=nameWithType>), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and <xref:System.CommandLine.Argument%601?displayProperty=nameWithType> in the steps that follow. For more on generics, see [Generics](../types/generics.md).
 
 1. Define the options. Each `Option<T>` specifies the value type, the name, and a description. The `--priority` option uses an `enum` type, and `System.CommandLine` automatically validates the input against valid enum values:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="Options":::
 
-   The `Recursive = true` setting on `--verbose` makes the option available on every subcommand. The `DefaultValueFactory` on `--priority` provides a default so users can omit the option.
+   The `Recursive = true` setting on `--verbose` makes the option available on every subcommand. The `DefaultValueFactory` on `--priority` provides a default value so users can omit the option.
 
 1. Define the arguments. Each `Argument<T>` specifies the value type and a name:
 
@@ -90,7 +90,7 @@ The `System.CommandLine` library uses *generic types* to enforce type safety. Wh
 
 ## Build commands and subcommands
 
-A `Command` represents an action the user can invoke. Add the relevant options and arguments to each command so that `System.CommandLine` knows which parameters belong where.
+A <xref:System.CommandLine.Command?displayProperty=nameWithType> represents an action that the user can invoke. Add the relevant options and arguments to each command so `System.CommandLine` knows which parameters belong where.
 
 1. Create the four subcommands. Each command gets its own combination of options and arguments:
 
@@ -102,31 +102,31 @@ A `Command` represents an action the user can invoke. Add the relevant options a
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RemoveCommand":::
 
-1. Assemble the root command. The `RootCommand` is the entry point for the CLI. Add the global `--verbose` option and all subcommands:
+1. Assemble the root command. The <xref:System.CommandLine.RootCommand?displayProperty=nameWithType> is the entry point for the CLI. Add the global `--verbose` option and all subcommands:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RootCommand":::
 
-   The root command description appears in the auto-generated help text when the user runs `TaskCli --help`.
+   The autogenerated help text shows the root command description when the user runs `TaskCli --help`.
 
 ## Handle commands with actions
 
-Each subcommand needs an *action*—a [delegate](../../programming-guide/delegates/index.md) that runs when the user invokes that command. A delegate is a type that represents a reference to a method. Here, you pass a [lambda expression](../../language-reference/operators/lambda-expressions.md) (an inline anonymous function defined with `=>`) as the delegate. Call `SetAction` to assign each action. The delegate receives a <xref:System.CommandLine.ParseResult> that provides access to parsed values through `GetValue`.
+Each subcommand needs an *action*. An action is a [delegate](../../programming-guide/delegates/index.md) that runs when the user invokes that command. A delegate is a type that represents a reference to a method. Here, you pass a [lambda expression](../../language-reference/operators/lambda-expressions.md) (an inline anonymous function defined with `=>`) as the delegate. Call `SetAction` to assign each action. The delegate receives a <xref:System.CommandLine.ParseResult> that provides access to parsed values through `GetValue`.
 
 1. Set the action for the `add` command. This action introduces [string interpolation](../../language-reference/tokens/interpolated.md) (`$"..."` strings that embed expressions in braces), the [conditional operator](../../language-reference/operators/conditional-operator.md) (`?:`), and a [type test pattern](../functional/pattern-matching.md) (`due is DateOnly dueDate`) that checks whether a nullable value has a value and assigns it to a new variable in one step:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="AddAction":::
 
-1. Set the action for the `list` command. [LINQ](../../linq/index.md) (Language Integrated Query) gives you standard query operators for in-memory collections. In this action, `Where` filters the tasks to only the items that match a condition, and `ToList` materializes the filtered sequence into a list. The action then uses a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
+1. Set the action for the `list` command. [LINQ](../../linq/index.md) (Language Integrated Query) gives you standard query operators for in-memory collections. In this action, <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> filters the tasks to only the items that match a condition, and <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> materializes the filtered sequence into a list. The action then uses a [`foreach` loop](../../language-reference/statements/iteration-statements.md#the-foreach-statement) to iterate over the results, and the conditional operator to pick a status symbol:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="ListAction":::
 
    For more detail, see [LINQ](../../linq/index.md).
 
-1. Set the action for the `complete` command. This action uses LINQ's `FirstOrDefault` to find a matching task, an [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists, and a [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
+1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType> to find a matching task, an [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists, and a [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="CompleteAction":::
 
-1. Set the action for the `remove` command. This action follows the same lookup-and-validate pattern as `complete`—use `FirstOrDefault` to find the task and `is null` to handle the missing case:
+1. Set the action for the `remove` command. This action follows the same lookup-and-validate pattern as `complete`. Use `FirstOrDefault` to find the task and `is null` to handle the missing case:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RemoveAction":::
 
@@ -140,7 +140,7 @@ Each subcommand needs an *action*—a [delegate](../../programming-guide/delegat
 
 The app needs a few supporting pieces: [local functions](../../programming-guide/classes-and-structs/local-functions.md), an [`enum`](../../language-reference/builtin-types/enum.md), a [`record`](../../language-reference/builtin-types/record.md), and a serialization context. The following sections introduce each concept, explain why you'd choose it, and show the code. The app uses [System.Text.Json](../../../standard/serialization/system-text-json/overview.md) to store tasks as JSON (JavaScript Object Notation). File-based apps require type declarations to appear after all top-level statements and local functions.
 
-1. Add the local functions that load and save tasks. A [local function](../../programming-guide/classes-and-structs/local-functions.md) is a method declared inside another function, including inside other local functions. Local functions keep helper logic close to the code that calls it, which improves readability because a reader doesn't have to jump to a separate class or file to understand the flow. Here, `LoadTasks` and `SaveTasks` encapsulate the file I/O that multiple command actions share, so the load/save logic is written once and reused:
+1. Add the local functions that load and save tasks. A [local function](../../programming-guide/classes-and-structs/local-functions.md) is a method declared inside another function, including inside other local functions. Local functions keep helper logic close to the code that calls it, which improves readability because a reader doesn't have to jump to a separate class or file to understand the flow. Here, `LoadTasks` and `SaveTasks` encapsulate the file I/O that multiple command actions share, so the app writes the load/save logic once and reuses it:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="DataHelpers":::
 
@@ -152,7 +152,7 @@ The app needs a few supporting pieces: [local functions](../../programming-guide
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="RecordDefinition":::
 
-   A [`record`](../../language-reference/builtin-types/record.md) is a type that the compiler equips with value-based equality and nondestructive mutation. A `record` is the right fit for `TaskItem` because task data is plain state with no complex behavior—you compare tasks by their values, not by reference identity. The compiler generates `Equals`, `GetHashCode`, `ToString`, and `with` expression support from the constructor parameters, so you get correct equality checks, easy debugging output, and immutable updates without writing boilerplate. Because records are immutable by default, you use a `with` expression to produce a modified copy (as the `complete` action does) rather than mutating the original, which prevents accidental side effects when the same list is read and written by different actions.
+   A [`record`](../../language-reference/builtin-types/record.md) is a type that the compiler equips with value-based equality and nondestructive mutation. A `record` is the right fit for `TaskItem` because task data is plain state with no complex behavior—you compare tasks by their values, not by reference identity. The compiler generates `Equals`, `GetHashCode`, `ToString`, and `with` expression support from the constructor parameters, so you get correct equality checks, easy debugging output, and immutable updates without writing boilerplate. Because records are immutable by default, you use a `with` expression to produce a modified copy (as the `complete` action does) rather than mutating the original, which prevents accidental side effects when different actions read and write the same list.
 
 1. Add the JSON serialization context for AOT-compatible serialization:
 
@@ -164,7 +164,7 @@ The app needs a few supporting pieces: [local functions](../../programming-guide
 
 Run the app with different inputs to exercise each subcommand.
 
-1. View the auto-generated help:
+1. View the autogenerated help:
 
    ```dotnetcli
    dotnet run TaskCli.cs -- --help

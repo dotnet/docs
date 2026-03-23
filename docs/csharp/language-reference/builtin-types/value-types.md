@@ -28,9 +28,9 @@ If a value type contains a data member of a reference type, you copy only the re
 
 A value type can be one of the following kinds:
 
-- a [structure type](struct.md), which encapsulates data and related functionality
-- an [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices
-- a [union declaration](union.md), which defines a closed set of case types that a value can represent
+- A [structure type](struct.md), which encapsulates data and related functionality.
+- An [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices.
+- A [union declaration](union.md), which defines a closed set of case types that a value can represent.
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You can't assign `null` to a variable of a value type, unless it's a nullable value type.
 

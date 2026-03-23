@@ -91,6 +91,9 @@ Verify that your executable project defines a `Main` method with a correct signa
 > [!NOTE]
 > CS0028 is a legacy diagnostic that the current C# compiler doesn't produce. Modern versions of the compiler report **CS1558** or **CS5001** instead when the `Main` method has an invalid signature.
 
+> [!NOTE]
+> CS0017, CS0028, CS0402, CS1558, and CS5001 are reported only during **Build** or **Rebuild** operations. They don't appear as IntelliSense diagnostics while you type in the IDE.
+
 ## `StartupObject` compiler option
 
 - **CS1555**: *Could not find 'class' specified for Main method*
@@ -113,8 +116,13 @@ Ensure the specified type is defined in the current project's source code rather
 
 Remove the `/main` option when building a library or module. Only executable projects (with an [**OutputType**](../compiler-options/output.md#outputtype) of **exe** or **winexe**) have entry points (**CS2017**). If you need an entry point, change the output type to an executable.
 
+Ensure the type specified by `StartupObject` declares a valid `Main` method. If the type exists but doesn't contain a suitable static `Main` method, the compiler generates [**CS1558**](#main-method-declaration). See the [`Main` method declaration](#main-method-declaration) section for the required signature.
+
 > [!NOTE]
 > CS1557 and CS1559 are legacy diagnostics that the current C# compiler doesn't produce. The scenarios that triggered these errors are no longer supported or occur too infrequently to warrant detection.
+
+> [!NOTE]
+> CS1555 and CS1556 are reported only during **Build** or **Rebuild** operations. They don't appear as IntelliSense diagnostics while you type in the IDE.
 
 ## Top-level statements
 

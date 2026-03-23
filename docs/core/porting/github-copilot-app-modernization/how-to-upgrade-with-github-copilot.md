@@ -1,6 +1,6 @@
 ---
 title: How to upgrade a .NET app with GitHub Copilot modernization
-description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot modernization. This step-by-step guide covers the four-stage workflow: pre-initialization, assessment, planning, and execution."
+description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot modernization. This step-by-step guide covers the three-stage workflow: assessment, planning, and execution."
 ms.topic: how-to
 ms.date: 03/23/2026
 ai-usage: ai-assisted
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Upgrade a .NET app with GitHub Copilot modernization
 
-GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications using a structured four-stage workflow: pre-initialization, assessment, planning, and execution.
+GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications using a structured three-stage workflow: assessment, planning, and execution.
 
 The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. It supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
 

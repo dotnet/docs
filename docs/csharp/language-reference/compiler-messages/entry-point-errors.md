@@ -2,6 +2,7 @@
 title: Resolve errors related to constructor declarations
 description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records. This article provides guidance on resolving those errors.
 f1_keywords:
+ - "CS0017"
  - "CS0028"
  - "CS0402"
  - "CS1555"
@@ -9,11 +10,13 @@ f1_keywords:
  - "CS1557"
  - "CS1558"
  - "CS1559"
+ - "CS2017"
  - "CS5001"
  - "CS8802"
  - "CS8803"
  - "CS8937"
 helpviewer_keywords:
+ - "CS0017"
  - "CS0028"
  - "CS0402"
  - "CS1555"
@@ -21,6 +24,7 @@ helpviewer_keywords:
  - "CS1557"
  - "CS1558"
  - "CS1559"
+ - "CS2017"
  - "CS5001"
  - "CS8802"
  - "CS8803"
@@ -34,6 +38,7 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
+- [**CS0017**](#multiple-entry-points): *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
 - [**CS0028**](#wrong-signature-for-entry-point): *'function declaration' has the wrong signature to be an entry point*
 - [**CS0402**](#generic-entry-point): *'identifier': an entry point cannot be generic or in a generic type*
 - [**CS1555**](#startup-object-not-found): *Could not find 'class' specified for Main method*
@@ -41,10 +46,41 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1557**](#startup-object-in-different-output): *Cannot use 'class' for Main method because it is in a different output file*
 - [**CS1558**](#no-suitable-main-method): *'class' does not have a suitable static Main method*
 - [**CS1559**](#startup-object-is-imported): *Cannot use 'object' for Main method because it is imported*
+- [**CS2017**](#main-option-on-library): *Cannot specify /main if building a module or library*
 - [**CS5001**](#no-static-main-method): *Program does not contain a static 'Main' method suitable for an entry point*
 - [**CS8802**](#multiple-top-level-statements): *Only one compilation unit can have top-level statements.*
 - [**CS8803**](#top-level-statements-order): *Top-level statements must precede namespace and type declarations.*
 - [**CS8937**](#static-constructors): *At least one top-level statement must be non-empty.*
+
+## Multiple entry points
+
+- **CS0017**: *Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.*
+
+A program can only have one [Main](../../fundamentals/program-structure/main-command-line.md) method.
+
+[!INCLUDE[csharp-build-only-diagnostic-note](~/includes/csharp-build-only-diagnostic-note.md)]
+
+To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option to specify which Main method you want to use.
+
+The following sample generates CS0017:
+
+```csharp
+// CS0017.cs
+// compile with: /target:exe
+public class clx
+{
+   static public void Main()
+   {
+   }
+}
+
+public class cly
+{
+   public static void Main()   // CS0017, delete one Main or use /main
+   {
+   }
+}
+```
 
 ## Wrong signature for entry point
 
@@ -147,6 +183,26 @@ namespace MyNamespace
 - **CS1559**: *Cannot use 'object' for Main method because it is imported*
 
 An invalid class was specified to the [**StartupObject**](../compiler-options/advanced.md#startupobject) compiler option; the class cannot be used as a location for the [Main](../../fundamentals/program-structure/main-command-line.md) method.
+
+## Main option on library
+
+- **CS2017**: *Cannot specify /main if building a module or library*
+
+You can't specify a main entry point when you're building a **library** [**OutputType**](../compiler-options/output.md#outputtype).
+
+The following sample generates CS2017:
+
+```csharp
+// CS2017.cs
+// compile with: /main:MyClass /target:library
+// CS2017 expected
+class MyClass
+{
+   public static void Main()
+   {
+   }
+}
+```
 
 ## No static Main method
 

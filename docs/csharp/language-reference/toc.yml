@@ -491,8 +491,8 @@ items:
   - name: Program entry point
     href: ./compiler-messages/entry-point-errors.md
     displayName: >
-      CS0028, CS0402, CS1555, CS1556, CS1557, CS1558, CS1559, CS5001, CS8802, CS8803,
-      CS8937
+      CS0017, CS0028, CS0402, CS1555, CS1556, CS1557, CS1558, CS1559, CS2017, CS5001,
+      CS8802, CS8803, CS8937
   - name: Record declarations
     href: ./compiler-messages/record-declaration-errors.md
     displayName: >
@@ -746,8 +746,6 @@ items:
       href: ./compiler-messages/cs0015.md
     - name: CS0016
       href: ./compiler-messages/cs0016.md
-    - name: CS0017
-      href: ../misc/cs0017.md
     - name: CS0019
       href: ./compiler-messages/cs0019.md
     - name: CS0020
@@ -1606,8 +1604,6 @@ items:
       href: ../misc/cs2015.md
     - name: CS2016
       href: ../misc/cs2016.md
-    - name: CS2017
-      href: ../misc/cs2017.md
     - name: CS2018
       href: ../misc/cs2018.md
     - name: CS2019

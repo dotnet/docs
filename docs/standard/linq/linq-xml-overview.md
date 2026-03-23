@@ -1,6 +1,6 @@
 ---
 title: Overview - LINQ to XML
-description: LINQ to XML provides an in-memory XML programming interface that' based on .NET capabilities, and comparable to an updated DOM API.
+description: LINQ to XML provides an in-memory XML programming interface that's based on .NET capabilities and is comparable to an updated DOM API.
 ms.date: 03/23/2026
 ai-usage: ai-assisted
 dev_langs:
@@ -39,7 +39,7 @@ Another advantage of LINQ to XML is the ability to use query results as paramete
 For example, suppose you have a typical XML purchase order that you want to query with LINQ to XML. The following query gets the part number attribute value for every item element in the purchase order.
 
 > [!TIP]
-> The examples in this section use [Sample XML file: Typical purchase order](sample-xml-file-typical-purchase-order.md). Save the file to your project directory before running the queries.
+> The examples in this section use [Sample XML file: Typical purchase order](sample-xml-file-typical-purchase-order.md). Save the file as `PurchaseOrder.xml` in the directory where you run the app (usually the output folder, such as `bin/Debug/...`) before you run the queries.
 
 ```csharp
 // Load the XML file from our project directory containing the purchase orders

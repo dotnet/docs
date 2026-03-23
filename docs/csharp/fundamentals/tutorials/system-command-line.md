@@ -126,7 +126,9 @@ Each subcommand needs an *action*. An action is a [delegate](../../programming-g
 
    - A matching task.
    - An [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists.
-   - A [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value:
+   - A [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value.
+
+   Because the action can fail (for example, the task ID doesn't exist), the action returns an integer error code that becomes the app's exit code:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="CompleteAction":::
 

@@ -152,7 +152,7 @@ completeCommand.SetAction(parseResult =>
     if (task is null)
     {
         Console.Error.WriteLine($"Task {id} not found.");
-        return;
+        return -1;
     }
 
     tasks[tasks.IndexOf(task)] = task with { IsComplete = true };
@@ -163,6 +163,7 @@ completeCommand.SetAction(parseResult =>
     {
         Console.WriteLine($"  Priority: {task.Priority}");
     }
+    return 0;
 });
 // </CompleteAction>
 
@@ -178,7 +179,7 @@ removeCommand.SetAction(parseResult =>
     if (task is null)
     {
         Console.Error.WriteLine($"Task {id} not found.");
-        return;
+        return -1;
     }
 
     tasks.Remove(task);
@@ -189,6 +190,7 @@ removeCommand.SetAction(parseResult =>
     {
         Console.WriteLine($"  Priority: {task.Priority}");
     }
+    return 0;
 });
 // </RemoveAction>
 

@@ -61,6 +61,9 @@ dotnet TaskCli.cs -- remove 3
 dotnet TaskCli.cs -- --verbose list
 ```
 
+> [!NOTE]
+> The `--` after `TaskCli.cs` in the preceding examples tells [`dotnet run`](../../../core/tools/dotnet-run.md) that all remaining arguments are passed to your app rather than interpreted by the `dotnet` CLI itself.
+
 Each line uses several command-line concepts:
 
 - **Subcommands** are verbs that tell the app what to do. The task tracker has four: `add`, `list`, `complete`, and `remove`. Each subcommand can define its own parameters.

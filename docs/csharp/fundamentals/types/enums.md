@@ -1,11 +1,11 @@
 ---
-title: "Enumerations"
+title: "C# Enumerations"
 description: Learn how to define and use enumeration types in C#, including declaring enums, using them in switch expressions, working with bit flags, and converting between enums and integers.
 ms.date: 03/24/2026
-ms.topic: concept
+ms.topic: concept-article
 ai-usage: ai-assisted
 ---
-# Enumerations
+# C# Enumerations
 
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter enums once you need to represent a fixed set of choices in your code.

@@ -2,7 +2,7 @@
 title: "Built-in types and literals"
 description: Learn about the built-in types in C#, including numeric types, bool, char, and string. Explore literal syntax, default expressions, var, target-typed new, and the dynamic type.
 ms.date: 03/24/2026
-ms.topic: concept
+ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 # Built-in types and literals
@@ -50,7 +50,7 @@ Beyond numbers, C# provides three other frequently used built-in types:
 - **`char`** — Stores a single Unicode character (UTF-16 code unit), enclosed in single quotes.
 - **`string`** — Stores a sequence of characters, enclosed in double quotes. Strings are *immutable*—once created, their contents can't change. Operations that appear to modify a string actually create a new one.
 
-Strings are one of the most-used types in C#. For in-depth coverage of string operations—interpolation, raw string literals, searching, splitting, and comparison—see the [Strings](../strings/index.md) section.
+Strings are one of the most-used types in C#. For in-depth coverage of string operations—interpolation, raw string literals, searching, splitting, and comparison—see the [Strings](../../language-reference/builtin-types/reference-types.md#the-string-type) section.
 
 ## Literal syntax
 

@@ -1,12 +1,13 @@
 ---
 title: Separate strings into substrings
-description: Learn about different techniques to extract parts of a string, including String.Split, regular expressions, and String.Substring.
-ms.date: 10/30/2020
+description: Learn about different techniques to extract parts of a string, including String.Split, regular expressions, String.Substring, and the range operator.
+ms.date: 03/20/2026
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
   - "strings [.NET], breaking up"
+ai-usage: ai-assisted
 ---
 # Extract substrings from a string
 
@@ -15,6 +16,7 @@ This article covers some different techniques for extracting parts of a string.
 - Use the [Split method](#stringsplit-method) when the substrings you want are separated by a known delimiting character (or characters).
 - [Regular expressions](#regular-expressions) are useful when the string conforms to a fixed pattern.
 - Use the [IndexOf and Substring methods](#stringindexof-and-stringsubstring-methods) in conjunction when you don't want to extract *all* of the substrings in a string.
+- Use [ranges and indices](#ranges-and-indices) in C# to extract or trim characters at known positions.
 
 ## String.Split method
 
@@ -112,7 +114,23 @@ The following example uses the <xref:System.String.IndexOf%2A> method to find th
 :::code language="csharp" source="snippets/parse-strings/csharp/indexof.cs" id="1":::
 :::code language="vb" source="snippets/parse-strings/vb/indexof.vb" id="1":::
 
+## Ranges and indices
+
+The C# [range operator `..`](../../csharp/language-reference/operators/member-access-operators.md#range-operator-) and the [index-from-end operator `^`](../../csharp/language-reference/operators/member-access-operators.md#index-from-end-operator-) let you extract substrings using a concise syntax. You can apply these operators directly to strings without calling <xref:System.String.Substring*>.
+
+The following example shows several ways to extract parts of a string using ranges:
+
+:::code language="csharp" source="snippets/parse-strings/csharp/range.cs" id="snippet1":::
+
+The next example uses the index-from-end operator to remove a file extension (the last three characters) from a path:
+
+:::code language="csharp" source="snippets/parse-strings/csharp/range.cs" id="snippet2":::
+
+> [!NOTE]
+> Ranges and the index-from-end operator are C# features. Visual Basic doesn't support this syntax; use <xref:System.String.Substring*> instead.
+
 ## See also
 
 - [.NET regular expressions](regular-expressions.md)
 - [How to parse strings using String.Split in C#](../../csharp/how-to/parse-strings-using-split.md)
+- [Indices and ranges (C# guide)](../../csharp/tutorials/ranges-indexes.md)

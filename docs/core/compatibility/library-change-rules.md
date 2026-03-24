@@ -1,7 +1,7 @@
 ---
 title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 09/30/2025
+ms.date: 03/23/2026
 ms.topic: concept-article
 ---
 # Change rules for compatibility
@@ -238,6 +238,12 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Changing the precision of a numeric return value**
 
 - ❓ **REQUIRES JUDGMENT: A change in the parsing of input and throwing new exceptions (even if parsing behavior is not specified in the documentation**
+
+- ❌ **DISALLOWED: Adding or removing case types from a `union` declaration**
+
+  Adding or removing a case type from a [`union`](../../csharp/language-reference/builtin-types/union.md) type is both a binary break and a source break.
+
+  Pattern matching tests are no longer exhaustive after adding a case type. The compiler flags pattern matching expressions as non-exhaustive. At runtime, unexpected values cause runtime exceptions. Removing a case type removes the constructor declaration for that case type.
 
 ### Exceptions
 

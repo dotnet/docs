@@ -55,7 +55,8 @@
                     "csharp-12.0/*.md",
                     "csharp-13.0/*.md",
                     "csharp-14.0/*.md",
-                    "collection-expression-arguments.md"
+                    "collection-expression-arguments.md",
+                    "unions.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -698,6 +699,7 @@
                 "_csharplang/proposals/csharp-14.0/extension-operators.md": "Extension operators",
                 "_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md": "Optional and named parameters in expression trees",
                 "_csharplang/proposals/collection-expression-arguments.md": "Collection expression arguments",
+                "_csharplang/proposals/unions.md": "Unions",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
@@ -826,6 +828,7 @@
                 "_csharplang/proposals/csharp-14.0/extension-operators.md": "This proposal extends the proposal for extensions to include *extension operators*, where an operator can be an extension member.",
                 "_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md": "This proposal allows an expression tree to include named and optional parameters. This enables expression trees to be more flexible in how they are constructed.",
                 "_csharplang/proposals/collection-expression-arguments.md": "This proposal introduces collection expression arguments.",
+                "_csharplang/proposals/unions.md": "This proposal describes union types and union declarations. Unions allow expressing values from a closed set of types with exhaustive pattern matching.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10 and included in C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11 and included in C# 12",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12 and included in C# 13",

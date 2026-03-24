@@ -43,7 +43,7 @@ Beyond built-in types, you create your own types using several constructs:
 - [**Structs**](../../language-reference/builtin-types/struct.md) — Value types for small, lightweight data. Each variable holds its own copy.
 - [**Records**](records.md) — Classes or structs with compiler-generated equality, `ToString`, and nondestructive mutation through `with` expressions.
 - [**Interfaces**](interfaces.md) — Contracts that define members any class or struct can implement.
-- **Enumerations** — Named sets of integral constants, such as days of the week or file access modes.
+- [**Enumerations**](enums.md) — Named sets of integral constants, such as days of the week or file access modes.
 - [**Tuples**](../../language-reference/builtin-types/value-tuples.md) — Lightweight structural types that group related values without defining a named type.
 - [**Generics**](generics.md) — Type-parameterized constructs like `List<T>` and `Dictionary<TKey, TValue>` that provide type safety while reusing the same logic for different types.
 

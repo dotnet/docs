@@ -11,24 +11,31 @@ ai-usage: ai-assisted
 
 All methods to upsert or get records use strongly typed model classes. There are two ways to define the data model:
 
-- By decorating properties on the model classes with [attributes](#property-attributes) that indicate the purpose of each property. Here's an example of a model that's decorated with these attributes.
-
-  :::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
-
-- By defining your storage schema using a record definition. You define and supply the record definition separately to the data model. This approach can be useful when:
+- By decorating properties on the model classes with [attributes](#data-model-property-attributes) that indicate the purpose of each property.
+- By defining your storage schema using a *record definition* that you supply separately from the data model. The record definition is a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> that contains [properties](#record-definition-properties). This approach can be useful when:
 
   - You want to use the same data model with more than one configuration.
   - You want to use a built-in type, like a `Dictionary`, or an optimized format, like a dataframe, and still want to leverage the vector store functionality.
 
-  Here's an example of how to create a record definition:
+## [Attributes](#tab/attributes)
 
-  :::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="UseRecordDefinition":::
+Here's an example of a class, or data model, whose properties are decorated with `VectorData*Attribute` attributes.
 
-  When you create a definition, you always have to provide a name and type for each property in your schema, since this is required for index creation and data mapping.
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
 
-  To use the definition, pass it to the <xref:Microsoft.Extensions.VectorData.VectorStore.GetCollection``2(System.String,Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition)> method.
+## [Record definition](#tab/record-definition)
 
-## Property attributes
+When you create a record definition, you provide a name and type for each property in your schema, since this information is required for index creation and data mapping. Here's an example of a record definition:
+
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="UseRecordDefinition":::
+
+To use the definition, pass it to the <xref:Microsoft.Extensions.VectorData.VectorStore.GetCollection``2(System.String,Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition)> method.
+
+:::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="PassDefinitionToGetCollection":::
+
+---
+
+## Data model property attributes
 
 The `VectorStore*Attribute` attributes that define data models for vector databases are:
 
@@ -89,7 +96,7 @@ The following table shows the parameters for `VectorStoreVectorAttribute`.
 
 Common index kinds and distance function types are supplied as static values on the <xref:Microsoft.Extensions.VectorData.IndexKind> and <xref:Microsoft.Extensions.VectorData.DistanceFunction> classes. Individual vector store implementations might also use their own index kinds and distance functions, where the database supports unusual types.
 
-## Record property configuration classes
+## Record definition properties
 
 Use the `VectorStore*Property` classes to create a record definition that you pass to the data model:
 
@@ -156,10 +163,7 @@ There are cases where it isn't desirable or possible to define your own data mod
 
 When you use a `Dictionary`, providers still need to know what the database schema looks like. Without the schema information, the provider would not be able to create a collection or know how to map to and from the storage representation that each database uses.
 
-A record definition can be used to provide the schema information. Unlike a data model, a record definition can be created from configuration at *runtime* when schema information isn't known at compile time.
-
-> [!TIP]
-> For information about creating a record definition, see [Defining your schema with a record definition](./schema-with-record-definition.md).
+You can use a record definition to provide the schema information. Unlike a data model, a record definition can be created from configuration at *runtime* when schema information isn't known at compile time.
 
 ### Example
 

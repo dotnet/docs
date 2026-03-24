@@ -2,7 +2,7 @@
 
 public class RecordDefinitionExample
 {
-    public void CreateHotelDefinition()
+    public void CreateHotelDefinition(VectorStore vectorStore)
     {
         // <UseRecordDefinition>
         VectorStoreCollectionDefinition hotelDefinition = new()
@@ -16,5 +16,10 @@ public class RecordDefinitionExample
             ]
         };
         // </UseRecordDefinition>
+
+        // <PassDefinitionToGetCollection>
+        VectorStoreCollection<ulong, Hotel> collection =
+            vectorStore.GetCollection<ulong, Hotel>("hotels", hotelDefinition);
+        // </PassDefinitionToGetCollection>
     }
 }

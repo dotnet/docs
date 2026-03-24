@@ -117,7 +117,7 @@ In this example, the client sets the trace ID to "example-id-set-by-client" befo
 
 ## Example placement access code
 
-The <xref:Orleans.Runtime.RequestContext> data can be accessed during Placement or Placement Filtering through the <xref:Orleans.Runtime.Placement.PlacementTarget> `RequestContextData`. The static <xref:Orleans.Runtime.RequestContext> is not populated at this time as there is not yet an activation of the grain.  The following placement filter code demonstrates how to get <xref:Orleans.Runtime.RequestContext> data while handling placement:
+The <xref:Orleans.Runtime.RequestContext> data can be accessed during placement or placement filtering through the <xref:Orleans.Runtime.Placement.PlacementTarget> `RequestContextData`. The static <xref:Orleans.Runtime.RequestContext> is not populated at this time as there is not yet an activation of the grain. The following placement filter code demonstrates how to get <xref:Orleans.Runtime.RequestContext> data while handling placement:
 
 ```csharp
 internal sealed class ExamplePlacementFilterDirector(ILogger<ExamplePlacementFilterDirector> logger)

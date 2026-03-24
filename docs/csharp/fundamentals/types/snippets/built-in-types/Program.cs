@@ -44,9 +44,14 @@ double scientific = 1.5e6; // 1,500,000
 char newline = '\n';
 char unicode = '\u0041'; // 'A'
 
-string path = @"C:\Users\docs\file.txt";     // verbatim string
-string message = $"Found {dec} items";         // interpolated string
-string combined = @$"Path: C:\Users\{greeting}"; // verbatim + interpolated
+string message = $"Found {dec} items";            // interpolated string
+string path = @"C:\Users\docs\file.txt";        // verbatim string
+string json = """
+    { "name": "Alice", "age": 30 }
+    """;                                           // raw string literal
+string raw = $"""
+    Found {dec} items in "{greeting}"
+    """;                                           // raw + interpolated
 // </CharAndStringLiterals>
 
 // <DefaultExpressions>
@@ -108,7 +113,8 @@ Console.WriteLine($"d: {d}, f: {f}, m: {m}, scientific: {scientific}");
 Console.WriteLine($"newline char: [{newline}], unicode: {unicode}");
 Console.WriteLine($"path: {path}");
 Console.WriteLine($"message: {message}");
-Console.WriteLine($"combined: {combined}");
+Console.WriteLine($"json: {json}");
+Console.WriteLine($"raw: {raw}");
 Console.WriteLine($"defaultInt: {defaultInt}, defaultBool: {defaultBool}, defaultString: {defaultString}");
 Console.WriteLine($"limit: {limit}");
 Console.WriteLine($"count: {count}, name: {name}, items: {items.Count}");

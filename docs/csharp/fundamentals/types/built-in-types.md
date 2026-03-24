@@ -22,15 +22,15 @@ C# has built-in types for integers, floating-point numbers, and decimal numbers.
 
 Each numeric type has a fixed size and range. `int` stores 32-bit integers (roughly ±2.1 billion), `long` stores 64-bit integers, and `short` and `byte` store smaller values. For the full list of sizes and ranges, see [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md).
 
-Use `double` for general floating-point math, `float` when memory is constrained, and `decimal` when you need exact decimal precision (such as financial calculations). The `m` and `f` suffixes distinguish these literal types.
+Use `double` for general floating-point math, `float` when memory is constrained, and `decimal` when you need exact decimal precision (such as financial calculations). Append the `f` suffix for `float` literals and `m` for `decimal` literals. Without a suffix, the compiler treats a number with a decimal point as `double`.
 
 ### Unsigned types
 
-Each signed integer type has an unsigned counterpart that stores only non-negative values with double the positive range:
+Each signed integer type has an unsigned counterpart that stores only non-negative values with twice the positive range:
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="UnsignedTypes":::
 
-Use unsigned types when negative values don't make sense for the data, such as file sizes or network ports.
+Unsigned types are available when negative values aren't valid for the data, such as file sizes or network ports. In practice, many applications use `int` or `long` even for positive-only values because signed types are the default throughout the .NET APIs.
 
 ### Native-sized integers
 
@@ -38,7 +38,7 @@ The `nint` and `nuint` types represent integers whose size matches the platform'
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="NativeSizedIntegers":::
 
-Use `nint` and `nuint` primarily for interop scenarios and low-level memory operations. For most application code, `int` or `long` is a better choice. For more information, see [`nint` and `nuint`](../../language-reference/builtin-types/integral-numeric-types.md#native-sized-integers).
+You're unlikely to need `nint` or `nuint` in everyday code. They exist for interop scenarios and low-level memory operations where matching the platform's pointer size is important. Stick with `int` or `long` unless you have a specific reason to use native-sized types. For more information, see [`nint` and `nuint`](../../language-reference/builtin-types/integral-numeric-types.md#native-sized-integers).
 
 ## `bool`, `char`, and `string`
 
@@ -54,13 +54,25 @@ Strings are one of the most-used types in C#. For in-depth coverage of string op
 
 ## Literal syntax
 
-A *literal* is a value written directly in your code. The compiler assigns each literal a type based on its format and any suffix you provide.
+A *literal* is a value written directly in your code. The compiler assigns each literal a type based on its format and any suffix you provide. C# supports the following kinds of literals:
+
+- **Integer literals** — Decimal (`42`), hexadecimal (`0x2A`), and binary (`0b_0010_1010`).
+- **Floating-point literals** — `double` by default (`3.14`), `float` with the `f` suffix (`3.14f`), and `decimal` with `m` (`3.14m`).
+- **Character literals** — A single character in single quotes (`'A'`), including escape sequences (`'\n'`).
+- **String literals** — Regular (`"hello"`), verbatim (`@"C:\path"`), raw (`""" ... """`), and interpolated (`$"value: {x}"`).
+- **Boolean literals** — `true` and `false`.
+- **The `null` literal** — Represents the absence of a value for reference types and nullable value types.
+- **The `default` literal** — Produces the default value for any type (covered in [`default` expressions](#default-expressions)).
+
+The following sections cover the most common literal forms in detail.
 
 ### Integer literals
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="IntegerLiterals":::
 
-Prefix `0x` for hexadecimal, `0b` for binary. Use the `_` digit separator anywhere within a number for readability—the compiler ignores it. Append `L` for `long`, `U` for `uint`, or `UL` for `ulong`.
+Prefix `0x` for hexadecimal and `0b` for binary. Append `L` for `long`, `U` for `uint`, or `UL` for `ulong`.
+
+Place the `_` digit separator anywhere within a number to make it easier to read. Common patterns include thousand separators in decimal literals (`1_000_000_000`), byte or word boundaries in hexadecimal (`0xFF_FF`), and nibble boundaries in binary (`0b_0010_1010`).
 
 ### Floating-point literals
 
@@ -72,7 +84,11 @@ Without a suffix, a numeric literal with a decimal point is `double`. Append `f`
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="CharAndStringLiterals":::
 
-Character literals use single quotes and support escape sequences (`\n`, `\t`, `\u`). String literals use double quotes. Prefix strings with `@` for verbatim strings (no escape processing), `$` for interpolation, or both `@$` to combine them.
+Character literals use single quotes and support escape sequences (`\n`, `\t`, `\u`). String literals use double quotes.
+
+Prefix strings with `$` for interpolation. When a string contains quotes, backslashes, or embedded JSON/XML, use a raw string literal (delimited by `"""`) instead of escaping each character. Raw string literals also combine with interpolation (`$"""`).
+
+Older code uses `@` (verbatim strings) to avoid escape processing. Raw string literals are easier to read and write, so prefer them for new code.
 
 ## `default` expressions
 
@@ -80,7 +96,7 @@ The `default` expression produces the default value for a type—`0` for numeric
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="DefaultExpressions":::
 
-Use `default` when you need a type's zero-value without specifying it explicitly. The `default` literal (without a type argument) works when the compiler can infer the type from context. Use `default(T)` when the type isn't clear from context.
+The `default` expression is most useful in generic code, where you don't know the concrete type and can't hard-code a specific value like `0` or `null`. Write `default` (without a type argument) when the compiler can infer the type from context, or `default(T)` when the type isn't obvious. For the complete list of default values by type, see [Default values of C# types](../../language-reference/builtin-types/default-values.md).
 
 ## Implicitly typed variables with `var`
 
@@ -88,7 +104,7 @@ The `var` keyword tells the compiler to infer a local variable's type from its i
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="VarKeyword":::
 
-The variable is still strongly typed—`var` doesn't make it dynamic. The compiler determines the type at compile time and enforces type safety as usual. Use `var` when the type is obvious from the right-hand side to reduce visual noise. Spell out the type when it makes the code clearer.
+The variable is still strongly typed—`var` doesn't make it dynamic. The compiler determines the type at compile time and enforces type safety as usual. Use `var` when the type is obvious from the right-hand side to reduce visual noise. Spell out the type when it makes the code clearer. For more information, see [Implicitly typed local variables](../../language-reference/statements/declarations.md#implicitly-typed-local-variables).
 
 ## Target-typed `new` expressions
 
@@ -96,7 +112,7 @@ When the target type is already known from context—such as a variable declarat
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="TargetTypedNew":::
 
-Target-typed `new` reduces repetition when the type name is long or appears on the left-hand side of the assignment. It works anywhere the compiler can determine the target type, including method arguments and return statements.
+Target-typed `new` reduces repetition when the type name is long or appears on the left-hand side of the assignment. It works anywhere the compiler can determine the target type, including method arguments and return statements. For more information, see [`new` operator — target-typed `new`](../../language-reference/operators/new-operator.md#target-typed-new).
 
 ## The `dynamic` type
 
@@ -104,7 +120,7 @@ The `dynamic` type bypasses compile-time type checking. Operations on a `dynamic
 
 :::code language="csharp" source="snippets/built-in-types/Program.cs" ID="DynamicType":::
 
-Use `dynamic` when interacting with COM APIs, dynamic languages, or reflection-heavy scenarios where types aren't known at compile time. Avoid `dynamic` in most application code because you lose compile-time safety—errors that the compiler would normally catch become run-time exceptions instead.
+Use `dynamic` when interacting with COM APIs, dynamic languages, or reflection-heavy scenarios where types aren't known at compile time. Avoid `dynamic` in most application code because you lose compile-time safety—errors that the compiler would normally catch become run-time exceptions instead. For more information, see [The dynamic type](../../language-reference/builtin-types/reference-types.md#the-dynamic-type).
 
 ## See also
 

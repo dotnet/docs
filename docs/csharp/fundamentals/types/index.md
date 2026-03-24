@@ -10,14 +10,14 @@ ai-usage: ai-assisted
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. They walk you through writing programs and introduce types as you go.
 >
-> **Experienced in another language?** If you already understand type systems, skim the [value vs. reference](#value-types-and-reference-types) distinction and the [choosing a type construct](#choose-a-type-construct) guide, then jump to the articles on specific types.
+> **Experienced in another language?** If you already understand type systems, skim the [value vs. reference](#value-types-and-reference-types) distinction and the [choose which kind of type](#choose-which-kind-of-type) guide, then jump to the articles on specific types.
 
 C# is a strongly typed language. Every variable, constant, and expression has a type. The compiler enforces *type safety*—it checks that every operation in your code is valid for the types involved. For example, you can add two `int` values, but you can't add an `int` and a `bool`:
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="TypeSafety":::
 
 > [!NOTE]
-> C and C++ developers, notice that in C#, `bool` isn't convertible to `int`.
+> C and C++ developers, in C#, `bool` isn't convertible to `int`.
 
 Type safety catches errors at compile time, before your code runs. The compiler also embeds type information into the executable as metadata, which the common language runtime (CLR) uses for additional safety checks at run time.
 
@@ -55,17 +55,17 @@ Every type in C# is either a *value type* or a *reference type*. This distinctio
 
 **Reference types** hold a reference to an object on the managed heap. When you assign a reference type to a new variable, both variables point to the same object. Changes through one variable are visible through the other. Classes, arrays, delegates, and strings are reference types.
 
-The following example shows the difference:
-
-:::code language="csharp" source="snippets/index/Program.cs" ID="ValueVsReference":::
+The following example shows the difference. The first block shows the definition for the `Coords` record struct, which is a value type. The second shows the different behavior for value types and reference types.
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="Coords":::
 
+:::code language="csharp" source="snippets/index/Program.cs" ID="ValueVsReference":::
+
 All types ultimately derive from <xref:System.Object?displayProperty=nameWithType>. Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from `object`. This unified hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance, see [Inheritance](../object-oriented/inheritance.md).
 
-## Choose a type construct
+## Choose which kind of type
 
-When you define a new type, the construct you choose shapes how your code behaves. Use the following guidelines to make an initial decision:
+When you define a new type, the kind you choose shapes how your code behaves. Use the following guidelines to make an initial decision:
 
 - **Tuple** — Temporary grouping of values that doesn't need a named type or behavior.
 - **`struct`** or **`record struct`** — Small data (roughly 64 bytes or less), value semantics, or immutability. Record structs add value-based equality and `with` expressions.
@@ -78,11 +78,11 @@ More than one option is often reasonable.
 
 ## Compile-time type and run-time type
 
-A variable can have different types at compile time and run time. The *compile-time type* is the declared or inferred type. The *run-time type* is the actual type of the instance the variable refers to.
+A variable can have different types at compile time and run time. The *compile-time type* is the declared or inferred type in source code. The *run-time type* is the actual type of the instance the variable refers to. The run-time type must be the same as the compile-time type, or a type that derives from it or implements it. Assignment is only valid when an implicit reference conversion exists from the run-time type to the compile-time type.
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="CompileVsRuntime":::
 
-In the preceding example, `boxed` has a compile-time type of `object` but a run-time type of `string`. The compile-time type controls overload resolution and available conversions. The run-time type controls virtual method dispatch, `is` expressions, and `switch` expressions.
+In the preceding example, `boxed` has a compile-time type of `object` but a run-time type of `string`. The assignment works because `string` derives from `object`. Similarly, `characters` has a compile-time type of `IEnumerable<char>`, and the assignment works because `string` implements that interface. The compile-time type controls overload resolution and available conversions. The run-time type controls virtual method dispatch, `is` expressions, and `switch` expressions.
 
 ## See also
 

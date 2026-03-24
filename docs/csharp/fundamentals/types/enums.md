@@ -38,7 +38,7 @@ Enums pair naturally with `switch` expressions and pattern matching. The compile
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingSeason":::
 
-The discard pattern (`_`) handles any value not explicitly listed. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
+The discard pattern (`_`) handles any value not explicitly listed. *Pattern matching* is a C# feature that tests a value against a shape or condition—here, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
 
 ## Bit flags
 

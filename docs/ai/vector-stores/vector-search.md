@@ -28,6 +28,14 @@ Assuming you have a collection that already contains data, you can easily search
 > [!TIP]
 > For more information on how to generate embeddings see [embedding generation](./embedding-generation.md).
 
+## Search with auto-generated embeddings
+
+If you configured an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> on your vector store or collection, you can pass a `string` directly to `SearchAsync` instead of a precomputed vector. The vector store generates the search embedding automatically:
+
+:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorSearchWithAutoEmbedding":::
+
+For information on how to configure an embedding generator on your vector store, see [Let the vector store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
+
 ## Supported vector types
 
 <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> takes a generic type as the vector parameter. The types of vectors supported by each data store vary.

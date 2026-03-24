@@ -14,7 +14,7 @@ The hybrid search is based on a vector search and a keyword search, both of whic
 To execute a hybrid search, your database schema needs to have a vector field and a string field with full-text search capabilities enabled. If you're creating a collection using the vector store providers, enable the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> option on the string field that you want to target for the keyword search.
 
 > [!TIP]
-> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>, see [VectorStoreDataAttribute parameters](./define-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings)
+> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>, see [VectorStoreDataAttribute](./define-your-data-model.md#vectorstoredataattribute) or [VectorStoreDataProperty](./define-your-data-model.md#vectorstoredataproperty).
 
 ## Hybrid search
 
@@ -84,7 +84,7 @@ For fields to be used for filtering, many vector stores require them to be index
 If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
-> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./define-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).
+> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed>, see [VectorStoreDataAttribute](./define-your-data-model.md#vectorstoredataattribute) or [VectorStoreDataProperty](./define-your-data-model.md#vectorstoredataproperty).
 
 Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported varies depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, `equals`, `not equals`, `and`, and `or`.
 

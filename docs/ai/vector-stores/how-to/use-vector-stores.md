@@ -30,13 +30,11 @@ For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory`
 
 ## Define a data model
 
-Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data. For more information, see [Define your data model](../define-your-data-model.md).
-
-## Define a schema programmatically
+Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data.
 
 As an alternative to using attributes, you can define your schema programmatically using a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition>. This approach is useful when you want to use the same data model with different configurations, or when you can't add attributes to the data model class.
 
-For more information, see [Define your storage schema using a record definition](../schema-with-record-definition.md).
+For more information, see [Define your data model](../define-your-data-model.md).
 
 ## Create a vector store
 

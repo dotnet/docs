@@ -89,5 +89,4 @@ new VectorStoreVectorProperty(
 
 ## See also
 
-- [Defining your data model](./define-your-data-model.md)
-- [Defining your schema with a record definition](./schema-with-record-definition.md)
+- [Define your data model](./define-your-data-model.md)

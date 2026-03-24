@@ -20,22 +20,22 @@ The examples use concepts described in the [Events](index.md) article.
 
 This first example shows how to raise and consume an event that doesn't have data. It contains a class named `Counter` that has an event called `ThresholdReached`. This event is raised when a counter value equals or exceeds a threshold value. The <xref:System.EventHandler> delegate is associated with the event because no event data is provided.
 
-[!code-csharp[EventsOverview#5](./snippets/raise-consume/csharp/programnodata.cs#5)]
-[!code-vb[EventsOverview#5](./snippets/raise-consume/vb/module1nodata.vb#5)]
+:::code language="csharp" source="./snippets/raise-consume/csharp/programnodata.cs" id="snippet5":::
+:::code language="vb" source="./snippets/raise-consume/vb/module1nodata.vb" id="snippet5":::
 
 ## Example 2
 
 This second example shows how to raise and consume an event that provides data. The <xref:System.EventHandler`1> delegate is associated with the event, and an instance of a custom event data object is provided.
 
-[!code-csharp[EventsOverview#6](./snippets/raise-consume/csharp/programwithdata.cs#6)]
-[!code-vb[EventsOverview#6](./snippets/raise-consume/vb/module1withdata.vb#6)]
+:::code language="csharp" source="./snippets/raise-consume/csharp/programwithdata.cs" id="snippet6":::
+:::code language="vb" source="./snippets/raise-consume/vb/module1withdata.vb" id="snippet6":::
 
 ## Example 3
 
 This third example shows how to declare a delegate for an event. The delegate is named `ThresholdReachedEventHandler`. This example is just an illustration. Typically, you don't have to declare a delegate for an event because you can use either the <xref:System.EventHandler> or the <xref:System.EventHandler`1> delegate. You should declare a delegate only in rare scenarios, such as making your class available to legacy code that can't use generics.
 
-[!code-csharp[EventsOverview#7](./snippets/raise-consume/csharp/programwithdelegate.cs#7)]
-[!code-vb[EventsOverview#7](./snippets/raise-consume/vb/module1withdelegate.vb#7)]
+:::code language="csharp" source="./snippets/raise-consume/csharp/programwithdelegate.cs" id="snippet7":::
+:::code language="vb" source="./snippets/raise-consume/vb/module1withdelegate.vb" id="snippet7":::
 
 ## See also
 

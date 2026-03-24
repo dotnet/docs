@@ -109,5 +109,5 @@ Specification reference documentation is available for the APIs that support eve
 
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
-- [Events and routed events overview - Universal Windows Platform (UWP) apps](/windows/uwp/xaml-platform/events-and-routed-events-overview)
-- [Events in Windows Store 8.x apps](/previous-versions/windows/apps/hh758286(v=win.10))
+- [How to: Raise and consume events](how-to-raise-and-consume-events.md)
+- [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md)

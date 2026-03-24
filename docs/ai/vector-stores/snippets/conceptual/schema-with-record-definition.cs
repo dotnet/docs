@@ -12,7 +12,11 @@ public class RecordDefinitionExample
                 new VectorStoreKeyProperty("HotelId", typeof(ulong)),
                 new VectorStoreDataProperty("HotelName", typeof(string)) { IsIndexed = true },
                 new VectorStoreDataProperty("Description", typeof(string)) { IsFullTextIndexed = true },
-                new VectorStoreVectorProperty("DescriptionEmbedding", typeof(float), dimensions: 4) { DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw },
+                new VectorStoreVectorProperty("DescriptionEmbedding", typeof(float), dimensions: 4)
+                {
+                    DistanceFunction = DistanceFunction.CosineSimilarity,
+                    IndexKind = IndexKind.Hnsw
+                },
             ]
         };
         // </UseRecordDefinition>

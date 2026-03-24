@@ -12,26 +12,30 @@ ai-usage: ai-assisted
 All methods to upsert or get records use strongly typed model classes. There are two ways to define the data model:
 
 - By decorating properties on the model classes with [attributes](#data-model-property-attributes) that indicate the purpose of each property.
-- By defining your storage schema using a *record definition* that you supply separately from the data model. The record definition is a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> that contains [properties](#record-definition-properties). This approach can be useful when:
-
-  - You want to use the same data model with more than one configuration.
-  - You want to use a built-in type, like a `Dictionary`, or an optimized format, like a dataframe, and still want to leverage the vector store functionality.
+- By defining your storage schema using a *record definition* that you supply separately from the data model. The record definition is a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> that contains [properties](#record-definition-properties).
 
 ## [Attributes](#tab/attributes)
 
-Here's an example of a class, or data model, whose properties are decorated with `VectorData*Attribute` attributes.
+Here's an example of a class, or data model, whose properties are decorated with `VectorStore*Attribute` attributes.
 
 :::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="Overview":::
 
 ## [Record definition](#tab/record-definition)
 
-When you create a record definition, you provide a name and type for each property in your schema, since this information is required for index creation and data mapping. Here's an example of a record definition:
+Here's an example of a record definition:
 
 :::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="UseRecordDefinition":::
+
+When you create a record definition, you provide a name and type for each property in your schema, since this information is required for index creation and data mapping.
 
 To use the definition, pass it to the <xref:Microsoft.Extensions.VectorData.VectorStore.GetCollection``2(System.String,Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition)> method.
 
 :::code language="csharp" source="./snippets/conceptual/schema-with-record-definition.cs" id="PassDefinitionToGetCollection":::
+
+The record-definition approach can be useful when:
+
+- You want to use the same data model with more than one configuration.
+- You want to use a built-in type, like a `Dictionary`, or an optimized format, like a dataframe, and still want to leverage the vector store functionality.
 
 ---
 
@@ -152,7 +156,7 @@ The following table shows the configuration settings for `VectorStoreVectorPrope
 | `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 | `EmbeddingGenerator` | No | Allows specifying a `Microsoft.Extensions.AI.IEmbeddingGenerator` instance to use for generating embeddings automatically for the decorated property. |
 
-## Use vector store abstractions without defining your own data model
+## Use vector store abstractions without defining a data model
 
 There are cases where it isn't desirable or possible to define your own data model. For example, imagine that you don't know at compile time what your database schema looks like, and the schema is only provided via configuration. Creating a data model that reflects the schema would be impossible in this case. Instead, you can map *dynamically* by using a `Dictionary<string, object?>` for the record type. Properties are added to the `Dictionary` with key as the property name and the value as the property value.
 

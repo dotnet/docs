@@ -57,6 +57,7 @@ When building LLM-based applications, you can use Agent Framework to integrate e
 
 ## Related content
 
+- [Generate embeddings for vector store providers](../vector-stores/embedding-generation.md)
 - [How GenAI and LLMs work](how-genai-and-llms-work.md)
 - [Retrieval-augmented generation](rag.md)
 - [Training: Develop an AI agent with Microsoft Agent Framework](/training/modules/develop-ai-agent-with-semantic-kernel/)

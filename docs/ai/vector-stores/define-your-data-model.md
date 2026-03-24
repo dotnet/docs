@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # Define your data model
 
-Vector store connectors use a model-first approach to interacting with databases.
+<xref:Microsoft.Extensions.VectorData> uses a model-first approach to interacting with databases.
 
 All methods to upsert or get records use strongly typed model classes. The properties on these classes are decorated with [attributes](#attributes) that indicate the purpose of each property. Here's an example of a model that's decorated with these attributes.
 
@@ -16,7 +16,6 @@ All methods to upsert or get records use strongly typed model classes. The prope
 > [!TIP]
 >
 > - For an alternative to using attributes, see [Define your storage schema using a record definition](./schema-with-record-definition.md).
-> - For an alternative to defining your own data model, see [Use vector store abstractions without defining your own data model](./dynamic-data-model.md).
 
 ## Attributes
 
@@ -36,7 +35,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute
 
 | Parameter     | Required | Description |
 |---------------|:--------:|-------------|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter isn't supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter isn't supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
 
 ### VectorStoreDataAttribute
 
@@ -50,7 +49,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribut
 |-------------|:--------:|-------------|
 | <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> | No       | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. The default is `false`. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No | Indicates whether the property should be indexed for full text search for databases that support full text search. The default is `false`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
 
 ### VectorStoreVectorAttribute
 
@@ -75,7 +74,31 @@ public string DescriptionEmbedding { get; set; }
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions> | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind> | No | The type of index to index the vector with. Default varies by vector store type. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 
 Common index kinds and distance function types are supplied as static values on the <xref:Microsoft.Extensions.VectorData.IndexKind> and <xref:Microsoft.Extensions.VectorData.DistanceFunction> classes.
 Individual vector store implementations might also use their own index kinds and distance functions, where the database supports unusual types.
+
+## Use vector store abstractions without defining your own data model
+
+Vector store providers use a model-first approach to interact with databases. This makes using the providers easy and simple, since your data model reflects the schema of your database records. To add any additional schema information, you can simply add attributes to your data model properties.
+
+However, there are cases where it isn't desirable or possible to define your own data model. For example, imagine that you don't know at compile time what your database schema looks like, and the schema is only provided via configuration. Creating a data model that reflects the schema would be impossible in this case. Instead, you can map *dynamically* by using a `Dictionary<string, object?>` for the record type. Properties are added to the `Dictionary` with key as the property name and the value as the property value.
+
+> [!NOTE]
+> Most apps will simply use strongly typed .NET types to model their data. Dynamic mapping via `Dictionary<string, object?>` is for advanced, arbitrary data-mapping scenarios.
+
+### Supply schema information when using `Dictionary`
+
+When you use a `Dictionary`, providers still need to know what the database schema looks like. Without the schema information, the provider would not be able to create a collection or know how to map to and from the storage representation that each database uses.
+
+A record definition can be used to provide the schema information. Unlike a data model, a record definition can be created from configuration at *runtime* when schema information isn't known at compile time.
+
+> [!TIP]
+> For information about creating a record definition, see [Defining your schema with a record definition](./schema-with-record-definition.md).
+
+### Example
+
+To use `Dictionary` with a provider, specify it as your data model when you create the collection. Also provide a record definition.
+
+:::code language="csharp" source="./snippets/conceptual/dynamic-data-model.cs" id="Example1":::

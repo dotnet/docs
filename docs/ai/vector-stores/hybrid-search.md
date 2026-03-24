@@ -1,26 +1,26 @@
 ---
-title: Hybrid search using vector store connectors
-description: Describes the different options you can use when doing a hybrid search using vector store connectors.
+title: Hybrid search using vector store providers
+description: Describes the different options you can use when doing a hybrid search using vector store providers.
 ms.topic: concept-article
 ms.date: 02/28/2026
 ai-usage: ai-assisted
 ---
-# Hybrid search using vector store connectors
+# Hybrid search using vector store providers
 
 The <xref:Microsoft.Extensions.VectorData> library provides hybrid search capabilities, including filtering, as part of its vector store abstractions.
 
 The hybrid search is based on a vector search and a keyword search, both of which are executed in parallel. The hybrid search returns a union of the two result sets. (Sparse vector&ndash;based hybrid search isn't currently supported.)
 
-To execute a hybrid search, your database schema needs to have a vector field and a string field with full-text search capabilities enabled. If you're creating a collection using the vector store connectors, enable the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> option on the string field that you want to target for the keyword search.
+To execute a hybrid search, your database schema needs to have a vector field and a string field with full-text search capabilities enabled. If you're creating a collection using the vector store providers, enable the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> option on the string field that you want to target for the keyword search.
 
 > [!TIP]
-> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings)
+> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>, see [VectorStoreDataAttribute parameters](./define-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings)
 
 ## Hybrid search
 
 The <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1.HybridSearchAsync``1(``0,System.Collections.Generic.ICollection{System.String},System.Int32,Microsoft.Extensions.VectorData.HybridSearchOptions{`0},System.Threading.CancellationToken)?displayProperty=nameWithType> method searches using a vector and an `ICollection` of string keywords. It also takes an optional `HybridSearchOptions<TRecord>` class as input.
 
-Only connectors for databases that support vector-plus-keyword hybrid search implement [the interface](xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1) that provides this method.
+Only providers for databases that support vector-plus-keyword hybrid search implement [the interface](xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1) that provides this method.
 
 The following example shows how to perform a hybrid search on a collection in a Qdrant database.
 
@@ -84,7 +84,7 @@ For fields to be used for filtering, many vector stores require them to be index
 If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
-> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).
+> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./define-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md).
 
 Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported varies depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, `equals`, `not equals`, `and`, and `or`.
 

@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # Define your storage schema using a record definition
 
-Vector store connectors use a model-first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
+Vector store providers use a model-first approach to interacting with databases and allows annotating models with information that is needed for creating indexes or mapping data to the database schema.
 
 Another way of providing this information is via record definitions, which can be defined and supplied separately to the data model. This can be useful in multiple scenarios:
 
@@ -36,7 +36,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyProperty> class to i
 |-----------|:--------:|-------------|
 | `Name` | Yes | The name of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
 | `Type` | No | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
-| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 
 ### VectorStoreDataProperty
 
@@ -52,7 +52,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataProperty> class to 
 | `Type` | No | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
 | `IsIndexed` | No | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. Default is false. |
 | `IsFullTextIndexed` | No | Indicates whether the property should be indexed for full text search for databases that support full text search. Default is false. |
-| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 
 ### VectorStoreVectorProperty
 
@@ -69,5 +69,5 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorProperty> class t
 | `Dimensions` | Yes | The number of dimensions that the vector has. This is required for creating a vector index for a collection. |
 | `IndexKind` | No | The type of index to index the vector with. Default varies by vector store type. |
 | `DistanceFunction` | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
-| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all connectors, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 | `EmbeddingGenerator` | No | Allows specifying a `Microsoft.Extensions.AI.IEmbeddingGenerator` instance to use for generating embeddings automatically for the decorated property. |

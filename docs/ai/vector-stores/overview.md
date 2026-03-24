@@ -63,17 +63,17 @@ The `Microsoft.Extensions.VectorData.Abstractions` library exposes the following
 
 For a step-by-step guide covering data model definition, CRUD operations, vector search, filtering, hybrid search, and embedding generation, see [Use vector stores in .NET AI apps](how-to/use-vector-stores.md).
 
-## Vector store connectors
+## Vector store providers
 
-The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate [connector packages](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/) provide implementations for specific vector databases. Choose the connector that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
+The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate [provider packages](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/) provide implementations for specific vector databases. Choose the provider that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
 
 > [!NOTE]
-> Despite the inclusion of "SemanticKernel" in the connector package names, these connectors have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.
+> Despite the inclusion of "SemanticKernel" in the package names, these providers have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.
 
-All connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
+All providers implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
 
 > [!TIP]
-> Use the in-memory connector ([Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory)) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production connector later.
+> Use the in-memory provider ([Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory)) during development and testing. It doesn't require any external service or configuration, and you can swap it out for a production provider later.
 
 ## Related content
 

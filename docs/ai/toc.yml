@@ -98,7 +98,7 @@ items:
       href: how-to/use-tokenizers.md
 - name: Vector stores
   items:
-  - name: overview
+  - name: Overview
     href: vector-stores/overview.md
     displayName: vector databases, vector stores
   - name: How-to
@@ -110,11 +110,9 @@ items:
     - name: Ingest data into a vector store
       href: vector-stores/how-to/vector-store-data-ingestion.md
   - name: Define your data model
-    href: vector-stores/defining-your-data-model.md
+    href: vector-stores/define-your-data-model.md
   - name: Define schema with record definitions
     href: vector-stores/schema-with-record-definition.md
-  - name: Dynamic data model
-    href: vector-stores/dynamic-data-model.md
   - name: Generate embeddings
     href: vector-stores/embedding-generation.md
   - name: Vector search

@@ -1,11 +1,11 @@
 ---
-title: Vector search using vector store connectors
-description: Describes the different options you can use when doing a vector search using vector store connectors.
+title: Vector search using vector store providers
+description: Describes the different options you can use when doing a vector search using vector store providers.
 ms.topic: concept-article
 ms.date: 02/28/2026
 ai-usage: ai-assisted
 ---
-# Vector search using vector store connectors
+# Vector search using vector store providers
 
 The <xref:Microsoft.Extensions.VectorData> library provides vector search capabilities as part of its vector store abstractions. These capabilities include filtering and many other options.
 
@@ -72,7 +72,7 @@ For fields to be used for filtering, many vector stores require those fields to 
 If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
 
 > [!TIP]
-> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./defining-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings).
+> For more information on how to set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property, see [VectorStoreDataAttribute parameters](./define-your-data-model.md#vectorstoredataattribute-parameters) or [VectorStoreDataProperty configuration settings](./schema-with-record-definition.md#vectorstoredataproperty-configuration-settings).
 
 Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported will vary depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, equals, not equals, `and`, and `or`.
 

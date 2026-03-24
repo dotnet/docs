@@ -36,7 +36,7 @@ The rest of these instructions assume that you're using a container with these s
 
 ## Create your project
 
-Create a new project and add NuGet package references for the [Redis connector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis), the [OpenXml package](https://www.nuget.org/packages/DocumentFormat.OpenXml) to read the Word document, and the Azure OpenAI packages for generating embeddings.
+Create a new project and add NuGet package references for the [Redis provider](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis), the [OpenXml package](https://www.nuget.org/packages/DocumentFormat.OpenXml) to read the Word document, and the Azure OpenAI packages for generating embeddings.
 
 ```dotnetcli
 dotnet new console --framework net8.0 --name VectorIngest
@@ -59,7 +59,7 @@ Add a new file to the project called `TextParagraph.cs` and add the following mo
 The value `1536`, which is the dimension size of the vector, is passed to the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute>. This value must match the size of vector that your chosen embedding generator produces.
 
 > [!TIP]
-> For more information on how to annotate your data model and what additional options are available for each attribute, see [defining your data model](../defining-your-data-model.md).
+> For more information on how to annotate your data model and what additional options are available for each attribute, see [defining your data model](../define-your-data-model.md).
 
 ## Read the paragraphs in the document
 

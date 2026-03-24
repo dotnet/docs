@@ -8,7 +8,7 @@ ai-usage: ai-generated
 
 # Use vector stores in .NET AI apps
 
-The [📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) package provides a unified API for working with vector stores in .NET. You can use the same code to store and search embeddings across different vector database providers.
+The [📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) (MEVD) package provides a unified API for working with vector stores in .NET. You can use the same code to store and search embeddings across different vector database providers.
 
 This article shows you how to use the key features of the library.
 
@@ -19,18 +19,18 @@ This article shows you how to use the key features of the library.
 
 ## Install the packages
 
-Install the `Microsoft.Extensions.VectorData.Abstractions` package and a connector for your vector database. The following example uses the in-memory connector for development and testing:
+Install the `Microsoft.Extensions.VectorData.Abstractions` package and a provider for your vector database. The following example uses the in-memory provider for development and testing:
 
 ```dotnetcli
 dotnet package add Microsoft.Extensions.VectorData.Abstractions
 dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 ```
 
-For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the connector for your database. For available connectors, see [Out-of-the-box Vector Store connectors](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the connector package names, these connectors have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
+For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the provider for your database. For available providers, see [Out-of-the-box Vector Store providers](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the provider package names, these providers have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
 
 ## Define a data model
 
-Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data. For more information, see [Define your data model](../defining-your-data-model.md).
+Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data. For more information, see [Define your data model](../define-your-data-model.md).
 
 ## Define a schema programmatically
 
@@ -59,7 +59,7 @@ Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.UpsertAsync*> 
 :::code language="csharp" source="../snippets/how-to/Program.cs" id="UpsertRecords":::
 
 > [!IMPORTANT]
-> In a real app, generate the embedding vectors using an `IEmbeddingGenerator` before storing the records. For a working example with real embeddings, see [Build a .NET AI vector search app](build-vector-search-app.md).
+> In a real app, it's recommended to [let MEVD generate embeddings](../embedding-generation.md#let-the-vector-store-generate-embeddings) before storing the records.
 
 ## Get records
 
@@ -85,7 +85,7 @@ Use <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1> to filter searc
 
 :::code language="csharp" source="../snippets/how-to/Program.cs" id="SearchWithFilter":::
 
-Filters are expressed as LINQ expressions. The supported operations vary by connector, but all connectors support common comparisons like equality, inequality, and logical `&&` and `||`.
+Filters are expressed as LINQ expressions. The supported operations vary by provider, but all providers support common comparisons like equality, inequality, and logical `&&` and `||`.
 
 ## Control search behavior with VectorSearchOptions
 
@@ -114,9 +114,9 @@ For more information, see [Let the vector store generate embeddings](../embeddin
 
 Some vector stores support *hybrid search*, which combines vector similarity with keyword matching. This approach can improve result relevance compared to vector-only search.
 
-To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only connectors for databases that support this feature implement this interface.
+To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only providers for databases that support this feature implement this interface.
 
-For more information, see [Hybrid search using vector store connectors](../hybrid-search.md).
+For more information, see [Hybrid search using vector store providers](../hybrid-search.md).
 
 ## Delete records
 
@@ -130,9 +130,9 @@ To remove an entire collection from the vector store, use <xref:Microsoft.Extens
 
 :::code language="csharp" source="../snippets/how-to/Program.cs" id="DeleteCollection":::
 
-## Switch vector store connectors
+## Switch vector store providers
 
-Because all connectors implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> abstract class, you can switch between them by changing the concrete type at startup. Your collection and search code remains the same. This approach lets you develop and test locally without any external services, then deploy to a production database with minimal changes.
+Because all providers implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> abstract class, you can switch between them by changing the concrete type at startup. For the most part, your collection and search code remains the same. However, some adjustments are usually required, for example, because different databases support different data types.
 
 ## Related content
 

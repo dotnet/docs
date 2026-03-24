@@ -5,7 +5,7 @@ ms.date: 03/24/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
-# C# Enumerations
+# C# enumerations
 
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter enums once you need to represent a fixed set of choices in your code.
@@ -28,17 +28,17 @@ You can choose a different integral type and assign explicit values to control t
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UnderlyingType":::
 
-Explicit values are useful when the numbers have external meaning, such as HTTP status codes or protocol identifiers. The underlying type can be any [integral type](../../language-reference/builtin-types/integral-numeric-types.md) except `char`—use `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `ulong`.
+Use explicit values when the numbers have external meaning, such as HTTP status codes or protocol identifiers. The underlying type can be any [integral type](../../language-reference/builtin-types/integral-numeric-types.md) except `char`. Use `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `ulong`.
 
 ## Use enums in switch expressions
 
-Enums pair naturally with `switch` expressions and pattern matching. The compiler warns you if you don't handle all members, which helps prevent bugs when you add a new value later:
+Enums work naturally with `switch` expressions and pattern matching. The compiler warns you if you don't handle all members, which helps prevent bugs when you add a new value later:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="SwitchEnum":::
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingSeason":::
 
-The discard pattern (`_`) handles any value not explicitly listed. *Pattern matching* is a C# feature that tests a value against a shape or condition—here, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
+The discard pattern (`_`) handles any value not explicitly listed. *Pattern matching* is a C# feature that tests a value against a shape or condition. In this example, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
 
 ## Bit flags
 
@@ -46,11 +46,11 @@ When an enum represents a combination of choices rather than a single choice, de
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="FlagsEnum":::
 
-Combine values with the `|` operator and test for individual flags with <xref:System.Enum.HasFlag%2A>:
+Combine values by using the `|` operator and test for individual flags by using <xref:System.Enum.HasFlag%2A>:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingFlags":::
 
-The `[Flags]` attribute also affects `ToString()`—it displays combined values as comma-separated names (like `Read, Write`) instead of a raw number. For more information, see <xref:System.FlagsAttribute?displayProperty=nameWithType>.
+The `[Flags]` attribute also affects `ToString()`. It displays combined values as comma-separated names (like `Read, Write`) instead of a raw number. For more information, see <xref:System.FlagsAttribute?displayProperty=nameWithType>.
 
 ## Convert between enums and integers
 
@@ -58,7 +58,7 @@ Explicit casts convert between an enum and its underlying integer type:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="Conversions":::
 
-Be aware that casting an integer to an enum doesn't validate whether the value matches a defined member. Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to check validity when accepting numeric input from external sources.
+Be aware that casting an integer to an enum doesn't validate whether the value matches a defined member. Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to check validity when you accept numeric input from external sources.
 
 ## Parse strings and iterate values
 
@@ -66,7 +66,7 @@ The <xref:System.Enum> base class provides methods for parsing strings and itera
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="ParseAndIterate":::
 
-Use <xref:System.Enum.TryParse%60%601(System.String,System.Boolean,%60%600@)?displayProperty=nameWithType> instead of <xref:System.Enum.Parse%60%601(System.String)?displayProperty=nameWithType> when the input might be invalid—it returns `false` instead of throwing an exception.
+Use <xref:System.Enum.TryParse%60%601(System.String,System.Boolean,%60%600@)?displayProperty=nameWithType> instead of <xref:System.Enum.Parse%60%601(System.String)?displayProperty=nameWithType> when the input might be invalid. It returns `false` instead of throwing an exception.
 
 ## See also
 

@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** If you already understand type systems, skim the [value vs. reference](#value-types-and-reference-types) distinction and the [choose which kind of type](#choose-which-kind-of-type) guide, then jump to the articles on specific types.
 
-C# is a strongly typed language. Every variable, constant, and expression has a type. The compiler enforces *type safety*—it checks that every operation in your code is valid for the types involved. For example, you can add two `int` values, but you can't add an `int` and a `bool`:
+C# is a strongly typed language. Every variable, constant, and expression has a type. The compiler enforces *type safety* by checking that every operation in your code is valid for the types involved. For example, you can add two `int` values, but you can't add an `int` and a `bool`:
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="TypeSafety":::
 
@@ -31,13 +31,13 @@ Method parameters and return values also have types. The following method takes 
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="MethodSignature":::
 
-After you declare a variable, you can't change its type or assign a value that's incompatible with the declared type. You can convert values to other types—the compiler performs *implicit conversions* that don't lose data automatically, and *explicit conversions* (casts) require you to indicate the conversion in your code. For more information, see [Casting and type conversions](../../programming-guide/types/casting-and-type-conversions.md).
+After you declare a variable, you can't change its type or assign a value that's incompatible with the declared type. You can convert values to other types. The compiler performs *implicit conversions* that don't lose data automatically. *Explicit conversions* (casts) require you to indicate the conversion in your code. For more information, see [Casting and type conversions](../../programming-guide/types/casting-and-type-conversions.md).
 
 ## Built-in types and custom types
 
-C# provides [built-in types](built-in-types.md) for common data: integers, floating-point numbers, `bool`, `char`, and `string`. These built-in types are available in every C# program without any extra references.
+C# provides [built-in types](built-in-types.md) for common data: integers, floating-point numbers, `bool`, `char`, and `string`. Every C# program can use these built-in types without any extra references.
 
-Beyond built-in types, you create your own types using several constructs:
+Beyond built-in types, you can create your own types by using several constructs:
 
 - [**Classes**](classes.md) — Reference types for modeling behavior and complex objects. Support inheritance and polymorphism.
 - [**Structs**](../../language-reference/builtin-types/struct.md) — Value types for small, lightweight data. Each variable holds its own copy.
@@ -55,7 +55,7 @@ Every type in C# is either a *value type* or a *reference type*. This distinctio
 
 **Reference types** hold a reference to an object on the managed heap. When you assign a reference type to a new variable, both variables point to the same object. Changes through one variable are visible through the other. Classes, arrays, delegates, and strings are reference types.
 
-The following example shows the difference. The first block shows the definition for the `Coords` record struct, which is a value type. The second shows the different behavior for value types and reference types.
+The following example shows the difference. The first block shows the definition for the `Coords` record struct, which is a value type. The second block shows the different behavior for value types and reference types.
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="Coords":::
 

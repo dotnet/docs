@@ -37,6 +37,28 @@ public class VectorSearchExample
     }
     // </VectorSearch>
 
+    // <VectorSearchWithAutoEmbedding>
+    public async Task SearchWithAutoEmbeddingAsync()
+    {
+        // If an IEmbeddingGenerator is configured on the vector store or collection,
+        // you can pass a string directly to SearchAsync. The store generates
+        // the search embedding for you.
+        VectorStore vectorStore = new QdrantVectorStore(new QdrantClient("localhost"), ownsClient: true);
+        VectorStoreCollection<ulong, Hotel> collection =
+            vectorStore.GetCollection<ulong, Hotel>("skhotels");
+
+        // Pass the search text directly — no manual embedding generation required.
+        IAsyncEnumerable<VectorSearchResult<Hotel>> searchResult =
+            collection.SearchAsync("I'm looking for a hotel where customer happiness is the priority.", top: 1);
+
+        await foreach (VectorSearchResult<Hotel> record in searchResult)
+        {
+            Console.WriteLine("Found hotel description: " + record.Record.Description);
+            Console.WriteLine("Found record score: " + record.Score);
+        }
+    }
+    // </VectorSearchWithAutoEmbedding>
+
     private async Task<ReadOnlyMemory<float>> GenerateAsync(string v) =>
         throw new NotImplementedException();
 

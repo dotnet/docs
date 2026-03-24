@@ -19,10 +19,9 @@ This article shows you how to use the key features of the library.
 
 ## Install the packages
 
-Install the `Microsoft.Extensions.VectorData.Abstractions` package and a provider for your vector database. The following example uses the in-memory provider for development and testing:
+Install a provider package for your vector database. The `Microsoft.Extensions.VectorData.Abstractions` package is brought in automatically as a transitive dependency. The following example uses the in-memory provider for development and testing:
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.VectorData.Abstractions
 dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
 ```
 
@@ -31,6 +30,10 @@ For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory`
 ## Define a data model
 
 Define a .NET class to represent the records you want to store in the vector store. Use attributes to annotate properties in the class according to whether they represent the primary key, general data, or vector data. For more information, see [Define your data model](../define-your-data-model.md).
+
+Here's a simple example:
+
+:::code language="csharp" source="../snippets/conceptual/defining-your-data-model.cs" id="Overview":::
 
 ## Define a schema programmatically
 

@@ -116,7 +116,7 @@ The following example uses the <xref:System.String.IndexOf%2A> method to find th
 
 ## Ranges and indices
 
-The C# [range operator `..`](../../csharp/language-reference/operators/member-access-operators.md#range-operator-) and the [index-from-end operator `^`](../../csharp/language-reference/operators/member-access-operators.md#index-from-end-operator-) let you extract substrings using a concise syntax. You can apply these operators directly to strings without calling <xref:System.String.Substring%2A>.
+The C# [range operator `..`](../../csharp/language-reference/operators/member-access-operators.md#range-operator-) and the [index-from-end operator `^`](../../csharp/language-reference/operators/member-access-operators.md#index-from-end-operator-) let you extract substrings using a concise syntax. You can apply these operators directly to strings without calling <xref:System.String.Substring*>.
 
 The following example shows several ways to extract parts of a string using ranges:
 
@@ -127,7 +127,7 @@ The next example uses the index-from-end operator to remove a file extension (th
 :::code language="csharp" source="snippets/parse-strings/csharp/range.cs" id="snippet2":::
 
 > [!NOTE]
-> Ranges and the index-from-end operator are C# features. Visual Basic doesn't support this syntax; use <xref:System.String.Substring%2A> instead.
+> Ranges and the index-from-end operator are C# features. Visual Basic doesn't support this syntax; use <xref:System.String.Substring*> instead.
 
 ## See also
 

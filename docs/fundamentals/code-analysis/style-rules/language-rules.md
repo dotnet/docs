@@ -269,7 +269,7 @@ C# style rules:
 
 .NET style rules (C# and Visual Basic):
 
-- [this and Me preferences (IDE0003, IDE0009)](ide0003-ide0009.md)
+- [Member-access qualification preferences (IDE0003 and IDE0009)](ide0003-ide0009.md)
 
 ### `var` preferences
 

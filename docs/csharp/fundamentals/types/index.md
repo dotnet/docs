@@ -35,7 +35,7 @@ After you declare a variable, you can't change its type or assign a value that's
 
 ## Built-in types and custom types
 
-C# provides built-in types for common data: integers, floating-point numbers, `bool`, `char`, and `string`. These built-in types are available in every C# program without any extra references.
+C# provides [built-in types](built-in-types.md) for common data: integers, floating-point numbers, `bool`, `char`, and `string`. These built-in types are available in every C# program without any extra references.
 
 Beyond built-in types, you create your own types using several constructs:
 

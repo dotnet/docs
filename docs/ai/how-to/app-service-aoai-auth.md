@@ -4,7 +4,8 @@ description: "Learn how to authenticate your Azure hosted .NET app to an Azure O
 author: alexwolfmsft
 ms.author: alexwolf
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 03/04/2026
+ai-usage: ai-assisted
 zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.
 ---
@@ -13,7 +14,7 @@ zone_pivot_groups: azure-interface
 
 This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](../microsoft-extensions-ai.md) to authenticate an Azure hosted app to an Azure OpenAI resource.
 
-A managed identity from Microsoft Entra ID allows your app to easily access other Microsoft Entra protected resources such as Azure OpenAI. The identity is managed by the Azure platform and doesn't require you to provision, manage, or rotate any secrets.
+A managed identity from Microsoft Entra ID lets your app access other Microsoft Entra protected resources such as Azure OpenAI. Azure manages the identity and doesn't require you to provision, manage, or rotate any secrets.
 
 ## Prerequisites
 
@@ -24,7 +25,7 @@ A managed identity from Microsoft Entra ID allows your app to easily access othe
 
 ## Add a managed identity to App Service
 
-Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. Your application can be assigned two types of identities:
+Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. You can assign two types of identities to your application:
 
 * A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can have only one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
@@ -33,7 +34,7 @@ Managed identities provide an automatically managed identity in Microsoft Entra 
 
 # [System-assigned](#tab/system-assigned)
 
-1. Navigate to your app's page in the [Azure portal](https://aka.ms/azureportal), and then scroll down to the **Settings** group.
+1. Go to your app's page in the [Azure portal](https://aka.ms/azureportal), and then scroll down to the **Settings** group.
 1. Select **Identity**.
 1. On the **System assigned** tab, toggle *Status* to **On**, and then select **Save**.
 
@@ -96,7 +97,7 @@ az webapp identity assign --name <appName> --resource-group <groupName>
 
 :::zone target="docs" pivot="azure-portal"
 
-1. In the [Azure portal](https://aka.ms/azureportal), navigate to the scope that you want to grant **Azure OpenAI** access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
+1. In the [Azure portal](https://aka.ms/azureportal), go to the scope that you want to grant **Azure OpenAI** access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
 1. In the left navigation pane, select **Access control (IAM)**.
 1. Select **Add**, then select **Add role assignment**.
 
@@ -110,7 +111,7 @@ az webapp identity assign --name <appName> --resource-group <groupName>
 
 :::zone target="docs" pivot="azure-cli"
 
-You can use the Azure CLI to assign the Cognitive Services OpenAI User role to your managed identity at varying scopes.
+Use the Azure CLI to assign the Cognitive Services OpenAI User role to your managed identity at different scopes.
 
 # [Resource](#tab/resource)
 
@@ -163,10 +164,10 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
     The preceding packages each handle the following concerns for this scenario:
 
     - **[Azure.Identity](https://www.nuget.org/packages/Azure.Identity)**: Provides core functionality to work with Microsoft Entra ID
-    - **[Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)**: Enables your app to interface with the Azure OpenAI service
+    - **[Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)**: Lets your app interface with the Azure OpenAI service
     - **[Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure)**: Provides helper extensions to register services for dependency injection
     - **[Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI)**: Provides AI abstractions for common AI tasks
-    - **[Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI)**: Enables you to use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**
+    - **[Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI)**: Lets you use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**
 
 1. In the `Program.cs` file of your app, create a `DefaultAzureCredential` object to discover and configure available credentials:
 
@@ -181,7 +182,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="41-46":::
 
     > [!TIP]
-    > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [dependency injection](../../azure/sdk/dependency-injection.md) documentation.
+    > For more information about ASP.NET Core dependency injection and registering other AI service types, see the Azure SDK for .NET [dependency injection](../../azure/sdk/dependency-injection.md) documentation.
 
 ## Related content
 

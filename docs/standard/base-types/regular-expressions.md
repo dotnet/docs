@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: concept-article
-ms.date: "10/22/2025"
+ms.date: "03/18/2026"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -104,12 +104,12 @@ The <xref:System.String> class includes string search and replacement methods th
   
 ### Example 3: Dynamically build a culture-sensitive regular expression  
 
- The following example illustrates the power of regular expressions combined with the flexibility offered by .NET's globalization features. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the system's current culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total.
+ The following example illustrates the power of regular expressions combined with the flexibility that .NET globalization features provide. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the en-US culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total. While this example uses the en-US culture, you can apply the same technique with other cultures by constructing the regular expression and parsing logic with the appropriate <xref:System.Globalization.CultureInfo> settings.
   
  [!code-csharp[Conceptual.Regex#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example.cs#1)]
  [!code-vb[Conceptual.Regex#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example.vb#1)]  
   
- On a computer whose current culture is English - United States (en-US), the example dynamically builds the regular expression `\$\s*[-+]?([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`. This regular expression pattern can be interpreted as follows:  
+ The example uses the en-US culture and dynamically builds the regular expression `\$\s*[-+]?([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`. This regular expression pattern can be interpreted as follows:  
 
 > [!div class="mx-tdCol2BreakAll"]
 >

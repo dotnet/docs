@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 01/20/2026
+ms.date: 03/20/2026
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -43,7 +43,7 @@ For an example of how to use those patterns to build a data-driven algorithm, se
 
 ## Declaration and type patterns
 
-Use declaration and type patterns to check if the run-time type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, the variable is assigned to the converted expression result, as the following example shows:
+Use declaration and type patterns to check if the run-time type of an expression is compatible with a given type. By using a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, it assigns the variable to the converted expression result, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 
@@ -101,7 +101,7 @@ Use a constant pattern to check for `null`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NullCheck":::
 
-The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
+The compiler guarantees that it doesn't invoke a user-overloaded equality operator `==` when it evaluates expression `x is null`.
 
 You can use a [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
 
@@ -115,13 +115,13 @@ Use a *relational pattern* to compare an expression result with a constant, as t
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="BasicExample":::
 
-In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. The constant expression can be of an [integer](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
+In a relational pattern, use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. The constant expression can be of an [integer](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
 
 To check if an expression result is in a certain range, match it against a [conjunctive `and` pattern](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="WithCombinators":::
 
-If an expression result is `null` or fails to convert to the type of a constant by a nullable or unboxing conversion, a relational pattern doesn't match an expression.
+If an expression result is `null` or fails to convert to the type of a constant by using a nullable or unboxing conversion, a relational pattern doesn't match the expression.
 
 For more information, see the [Relational patterns](~/_csharplang/proposals/csharp-9.0/patterns3.md#relational-patterns) section of the feature proposal note.
 
@@ -141,17 +141,17 @@ Use the `not`, `and`, and `or` pattern combinators to create the following *logi
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="OrPattern":::
 
-As the preceding example shows, you can repeatedly use the pattern combinators in a pattern.
+As the preceding example shows, you can use the pattern combinators repeatedly in a pattern.
 
 ### Precedence and order of checking
 
-The pattern combinators follow this order, based on the binding order of expressions:
+The pattern combinators check expressions in this order, based on the binding order of expressions:
 
 - `not`
 - `and`
 - `or`
 
-The `not` pattern binds to its operand first. The `and` pattern binds after any `not` pattern expression binding. The `or` pattern binds after all `not` and `and` patterns bind to operands. The following example tries to match all characters that aren't lowercase letters, `a` - `z`. It has an error, because the `not` pattern binds before the `and` pattern:
+The `not` pattern binds to its operand first. The `and` pattern binds after any `not` pattern expression binding. The `or` pattern binds after all `not` and `and` patterns bind to operands. The following example tries to match all characters that aren't lowercase letters, `a` through `z`. It has an error, because the `not` pattern binds before the `and` pattern:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="NegationWithoutParens":::
 
@@ -168,7 +168,7 @@ Adding parentheses becomes more important as your patterns become more complicat
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 
 > [!NOTE]
-> The order in which patterns having the same binding order are checked is undefined. At run time, the right-hand nested patterns of multiple `or` patterns and multiple `and` patterns can be checked first.
+> The order in which the compiler checks patterns that have the same binding order is undefined. At run time, the compiler can check the right-hand nested patterns of multiple `or` patterns and multiple `and` patterns first.
 
 For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
 
@@ -236,7 +236,7 @@ You can also extend a positional pattern in any of the following ways:
 
   :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithPropertyPattern":::
 
-- Combine two preceding usages, as the following example shows:
+- Combine the two preceding usages, as the following example shows:
 
   :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
 
@@ -266,7 +266,7 @@ Use a *discard pattern* `_` to match any expression, including `null`, as the fo
 
 :::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
 
-In the preceding example, a discard pattern handles `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantee ensures that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
+In the preceding example, a discard pattern handles `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantee ensures that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#nonexhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
 A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`. A discard pattern can be a pattern in a `switch` expression.
 
@@ -274,7 +274,7 @@ For more information, see the [Discard pattern](~/_csharpstandard/standard/patte
 
 ## Parenthesized pattern
 
-You can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
+You can put parentheses around any pattern. Typically, you do this to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
@@ -288,7 +288,7 @@ As the preceding example shows, a list pattern matches when each nested pattern 
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="MatchAnyElement":::
 
-The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..`, as the following example shows:
+The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or end - or both - of an input sequence, use the *slice pattern* `..`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="UseSlice":::
 
@@ -299,6 +299,30 @@ You can also nest a subpattern within a slice pattern, as the following example 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="SliceWithPattern":::
 
 For more information, see the [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md) feature proposal note.
+
+## Union patterns
+
+Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns automatically *unwrap* the union. They apply to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
+
+```csharp
+public record class Cat(string Name);
+public record class Dog(string Name);
+public union Pet(Cat, Dog);
+
+string Describe(Pet pet) => pet switch
+{
+    Dog d => d.Name,
+    Cat c => c.Name,
+};
+```
+
+Two patterns are exceptions: the `var` pattern and the discard `_` pattern apply to the union value itself, not its `Value` property.
+
+The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
+
+When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
+
+For more information, see [Union matching](../builtin-types/union.md#union-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
 
 ## C# language specification
 

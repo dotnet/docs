@@ -1,7 +1,7 @@
 ---
 title: "switch expression - Evaluate a pattern match expression using the `switch` expression"
 description: Learn about the C# `switch` expression that provides switch-like semantics based on pattern matching. You can compute a value based on which pattern an input variable matches.
-ms.date: 01/20/2026
+ms.date: 03/20/2026
 f1_keywords:
   - "switch-expression_CSharpKeyword"
 helpviewer_keywords:
@@ -26,7 +26,7 @@ The preceding example shows the basic elements of a `switch` expression:
 In the preceding example, a `switch` expression uses the following patterns:
 
 - A [constant pattern](patterns.md#constant-pattern): to handle the defined values of the `Direction` enumeration.
-- A [discard pattern](patterns.md#discard-pattern): to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That pattern makes the `switch` expression [exhaustive](#non-exhaustive-switch-expressions).
+- A [discard pattern](patterns.md#discard-pattern): to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That pattern makes the `switch` expression [exhaustive](#nonexhaustive-switch-expressions).
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` expression and more examples, see [Patterns](patterns.md).
@@ -43,9 +43,11 @@ A pattern might not be expressive enough to specify the condition for the evalua
 
 The preceding example uses [property patterns](patterns.md#property-pattern) with nested [var patterns](patterns.md#var-pattern).
 
-## Non-exhaustive switch expressions
+## Nonexhaustive switch expressions
 
 If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. In most cases, the compiler generates a warning if a `switch` expression doesn't handle all possible input values. [List patterns](patterns.md#list-patterns) don't generate a warning when all possible inputs aren't handled.
+
+For [union types](../builtin-types/union.md), a `switch` expression is exhaustive when it handles all case types. A catch-all arm isn't needed. If the null state of the union's `Value` property is "maybe null," you must also handle `null` to avoid a warning. For more information, see [Union exhaustiveness](../builtin-types/union.md#union-exhaustiveness).
 
 > [!TIP]
 > To guarantee that a `switch` expression handles all possible input values, provide a `switch` expression arm with a [discard pattern](patterns.md#discard-pattern).

@@ -1,7 +1,7 @@
 ---
 title: "Pausing and interrupting threads"
 description: Learn how to pause & interrupt threads in .NET. Learn how to use methods like Thread.Sleep & Thread.Interrupt, & exceptions such as ThreadInterruptedException.
-ms.date: "02/20/2026"
+ms.date: 03/13/2026
 dev_langs: 
   - "csharp"
   - "vb"
@@ -42,7 +42,7 @@ The example calls <xref:System.Threading.Thread.Join%2A?displayProperty=nameWith
 
 - <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadInterruptedException> to be thrown in the destination thread.
 
-- .NET Framework only: <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadAbortException> to be thrown on the thread. For details, see [Destroy threads](destroying-threads.md).
+- .NET Framework only: <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> wakes a thread out of any wait it might be in and causes a <xref:System.Threading.ThreadAbortException> to be thrown on the thread. For details, see [Destroy threads](destroying-threads.md) and [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md).
   
 ## See also
 

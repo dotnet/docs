@@ -26,13 +26,13 @@ Some services, such as [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mong
 
 ## Vector search workflows with .NET and OpenAI
 
-Vector databases and their search features are especially useful in [RAG pattern](../conceptual/rag.md) workflows with Azure OpenAI. This pattern allows you to augment or enhance your AI model with additional semantically rich knowledge of your data. A common AI workflow using vector databases includes the following steps:
+Vector databases and their search features are especially useful in [RAG pattern](../conceptual/rag.md) workflows with Azure OpenAI. This pattern lets you augment your AI model with additional semantically rich knowledge of your data. A common AI workflow using vector databases includes these steps:
 
 1. Create embeddings for your data using an OpenAI embedding model.
 1. Store and index the embeddings in a vector database or search service.
 1. Convert user prompts from your application to embeddings.
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings in your database.
-1. Use a language model such as GPT-4 to assemble a user-friendly completion from the vector search results.
+1. Use a language model such as gpt-4o to assemble a user-friendly completion from the vector search results.
 
 For a hands-on example of this flow, see the [Implement Azure OpenAI with RAG using vector search in a .NET app](tutorial-vector-search.md) tutorial.
 

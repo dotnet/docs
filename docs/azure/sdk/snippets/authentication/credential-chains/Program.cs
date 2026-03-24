@@ -2,6 +2,7 @@
 using Azure.Core;
 using Azure.Core.Diagnostics;
 using Azure.Identity;
+using Azure.Storage.Blobs;
 using Microsoft.Extensions.Azure;
 
 string userAssignedClientId = "<user-assigned-client-id>";
@@ -19,15 +20,15 @@ using AzureEventSourceListener listener = new((args, message) =>
 }, EventLevel.LogAlways);
 #endregion snippet_FilteredLogging
 
-#region snippet_Dac
-builder.Services.AddAzureClients(clientBuilder =>
+void UseDac()
 {
-    clientBuilder.AddSecretClient(
-        new Uri($"https://{keyVaultName}.vault.azure.net"));
-    clientBuilder.AddBlobServiceClient(
-        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
-});
+#region snippet_Dac
+DefaultAzureCredential credential = new();
+BlobServiceClient client = new(
+    new Uri($"https://{storageAccountName}.blob.core.windows.net"),
+    credential);
 #endregion snippet_Dac
+}
 
 #region snippet_DacExcludes
 builder.Services.AddAzureClients(clientBuilder =>

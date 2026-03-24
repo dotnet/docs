@@ -1,9 +1,7 @@
 ﻿' <snippet100>
 ' <snippet1>
-Imports System.Collections.Generic
+Imports System.Data
 Imports System.Data.SqlClient
-Imports System.Data.SqlServerCe
-Imports System.Diagnostics
 Imports System.IO
 Imports System.Threading.Tasks.Dataflow
 
@@ -17,19 +15,21 @@ Namespace DataflowBatchDatabase
         ' The number of employees to add to the database.
         ' TODO: Change this value to experiment with different numbers of 
         ' employees to insert into the database.
-        Private Shared ReadOnly insertCount As Integer = 256
+        Private Shared ReadOnly s_insertCount As Integer = 256
 
         ' The size of a single batch of employees to add to the database.
         ' TODO: Change this value to experiment with different batch sizes.
-        Private Shared ReadOnly insertBatchSize As Integer = 96
+        Private Shared ReadOnly s_insertBatchSize As Integer = 96
 
         ' The source database file.
         ' TODO: Change this value if Northwind.sdf is at a different location
         ' on your computer.
-        Private Shared ReadOnly sourceDatabase As String = "C:\Program Files\Microsoft SQL Server Compact Edition\v3.5\Samples\Northwind.sdf"
+        Private Shared ReadOnly s_sourceDatabase As String =
+            "C:\Program Files\Microsoft SQL Server Compact Edition\v3.5\Samples\Northwind.sdf"
 
         ' TODO: Change this value if you require a different temporary location.
-        Private Shared ReadOnly scratchDatabase As String = "C:\Temp\Northwind.sdf"
+        Private Shared ReadOnly s_scratchDatabase As String =
+            "C:\Temp\Northwind.sdf"
         ' </snippet2>
 
         ' <snippet3>
@@ -44,17 +44,23 @@ Namespace DataflowBatchDatabase
 
             ' A random number generator that helps tp generate
             ' Employee property values.
-            Private Shared rand As New Random(42)
+            Private Shared ReadOnly s_rand As New Random(42)
 
             ' Possible random first names.
-            Private Shared ReadOnly firstNames() As String = {"Tom", "Mike", "Ruth", "Bob", "John"}
+            Private Shared ReadOnly s_firstNames() As String =
+                {"Tom", "Mike", "Ruth", "Bob", "John"}
             ' Possible random last names.
-            Private Shared ReadOnly lastNames() As String = {"Jones", "Smith", "Johnson", "Walker"}
+            Private Shared ReadOnly s_lastNames() As String =
+                {"Jones", "Smith", "Johnson", "Walker"}
 
             ' Creates an Employee object that contains random 
             ' property values.
             Public Shared Function Random() As Employee
-                Return New Employee With {.EmployeeID = -1, .LastName = lastNames(rand.Next() Mod lastNames.Length), .FirstName = firstNames(rand.Next() Mod firstNames.Length)}
+                Return New Employee With {
+                    .EmployeeID = -1,
+                    .LastName = s_lastNames(s_rand.Next() Mod s_lastNames.Length),
+                    .FirstName = s_firstNames(s_rand.Next() Mod s_firstNames.Length)
+                }
             End Function
         End Class
         ' </snippet3>
@@ -71,8 +77,8 @@ Namespace DataflowBatchDatabase
                     For i As Integer = 0 To employees.Length - 1
                         ' Set parameters.
                         command.Parameters.Clear()
-                        command.Parameters.Add("@lastName", employees(i).LastName)
-                        command.Parameters.Add("@firstName", employees(i).FirstName)
+                        command.Parameters.Add("@lastName", SqlDbType.NVarChar).Value = employees(i).LastName
+                        command.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = employees(i).FirstName
 
                         ' Execute the command.
                         command.ExecuteNonQuery()
@@ -103,7 +109,10 @@ Namespace DataflowBatchDatabase
         ' Retrieves the ID of the first employee that has the provided name.
         Private Shared Function GetEmployeeID(ByVal lastName As String, ByVal firstName As String, ByVal connectionString As String) As Integer
             Using connection As New SqlConnection(connectionString)
-                Dim command As New SqlCommand(String.Format("SELECT [Employee ID] FROM Employees " & "WHERE [Last Name] = '{0}' AND [First Name] = '{1}'", lastName, firstName), connection)
+                Dim query As String = "SELECT [Employee ID] FROM Employees WHERE [Last Name] = @lastName AND [First Name] = @firstName"
+                Dim command As New SqlCommand(query, connection)
+                command.Parameters.Add("@lastName", lastName)
+                command.Parameters.Add("@firstName", firstName)
 
                 connection.Open()
                 Try
@@ -182,17 +191,18 @@ Namespace DataflowBatchDatabase
 
             ' Create an action block that prints employee and error information
             ' to the console.
-            Dim printEmployees = New ActionBlock(Of Tuple(Of IList(Of Employee), IList(Of Exception)))(Sub(data)
-                                                                                                           ' Print information about the employees in this batch.
-                                                                                                           ' Print the error count for this batch.
-                                                                                                           ' Update total error count.
-                                                                                                           Console.WriteLine("Received a batch...")
-                                                                                                           For Each e As Employee In data.Item1
-                                                                                                               Console.WriteLine("Last={0} First={1} ID={2}", e.LastName, e.FirstName, e.EmployeeID)
-                                                                                                           Next e
-                                                                                                           Console.WriteLine("There were {0} errors in this batch...", data.Item2.Count)
-                                                                                                           totalErrors += data.Item2.Count
-                                                                                                       End Sub)
+            Dim printEmployees = New ActionBlock(Of Tuple(Of IList(Of Employee), IList(Of Exception)))(
+                Sub(data)
+                    ' Print information about the employees in this batch.
+                    ' Print the error count for this batch.
+                    ' Update total error count.
+                    Console.WriteLine("Received a batch...")
+                    For Each e As Employee In data.Item1
+                        Console.WriteLine("Last={0} First={1} ID={2}", e.LastName, e.FirstName, e.EmployeeID)
+                    Next e
+                    Console.WriteLine("There were {0} errors in this batch...", data.Item2.Count)
+                    totalErrors += data.Item2.Count
+                End Sub)
 
             ' Link the batched join block to the action block.
             selectEmployees.LinkTo(printEmployees)
@@ -232,53 +242,56 @@ Namespace DataflowBatchDatabase
         End Sub
         ' </Snippet7>
 
-        Shared Sub Main(ByVal args() As String)
+        Shared Sub Main()
             ' Create a connection string for accessing the database.
             ' The connection string refers to the temporary database location.
-            Dim connectionString As String = String.Format("Data Source={0}", scratchDatabase)
+            Dim connectionString As String = String.Format(
+                "Data Source={0}",
+                s_scratchDatabase)
 
             ' Create a Stopwatch object to time database insert operations.
             Dim stopwatch As New Stopwatch()
 
             ' Start with a clean database file by copying the source database to 
             ' the temporary location.
-            File.Copy(sourceDatabase, scratchDatabase, True)
+            File.Copy(s_sourceDatabase, s_scratchDatabase, True)
 
             ' Demonstrate multiple insert operations without batching.
             Console.WriteLine("Demonstrating non-batched database insert operations...")
             Console.WriteLine("Original size of Employee table: {0}.", GetEmployeeCount(connectionString))
             stopwatch.Start()
-            AddEmployees(connectionString, insertCount)
+            AddEmployees(connectionString, s_insertCount)
             stopwatch.Stop()
             Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.", GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds)
 
             Console.WriteLine()
 
             ' Start again with a clean database file.
-            File.Copy(sourceDatabase, scratchDatabase, True)
+            File.Copy(s_sourceDatabase, s_scratchDatabase, True)
 
             ' Demonstrate multiple insert operations, this time with batching.
             Console.WriteLine("Demonstrating batched database insert operations...")
             Console.WriteLine("Original size of Employee table: {0}.", GetEmployeeCount(connectionString))
             stopwatch.Restart()
-            AddEmployeesBatched(connectionString, insertBatchSize, insertCount)
+            AddEmployeesBatched(connectionString, s_insertBatchSize, s_insertCount)
             stopwatch.Stop()
             Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.", GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds)
 
             Console.WriteLine()
 
             ' Start again with a clean database file.
-            File.Copy(sourceDatabase, scratchDatabase, True)
+            File.Copy(s_sourceDatabase, s_scratchDatabase, True)
 
             ' Demonstrate multiple retrieval operations with error reporting.
             Console.WriteLine("Demonstrating batched join database select operations...")
             ' Add a small number of employees to the database.
-            AddEmployeesBatched(connectionString, insertBatchSize, 16)
+            AddEmployeesBatched(connectionString, s_insertBatchSize, 16)
             ' Query for random employees.
-            GetRandomEmployees(connectionString, insertBatchSize, 10)
+            GetRandomEmployees(connectionString, s_insertBatchSize, 10)
         End Sub
     End Class
 End Namespace
+
 ' Sample output:
 'Demonstrating non-batched database insert operations...
 'Original size of Employee table: 15.

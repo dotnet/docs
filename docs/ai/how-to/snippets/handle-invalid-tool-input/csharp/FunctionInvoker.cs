@@ -12,7 +12,7 @@ class FunctionInvoker
         string? key = config["OpenAIKey"];
 
         // <BasicInvoker>
-        IChatClient chatClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient();
+        IChatClient chatClient = new OpenAIClient(key).GetChatClient(model ?? "gpt-5").AsIChatClient();
 
         var functionInvokingClient = new FunctionInvokingChatClient(chatClient)
         {

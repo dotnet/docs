@@ -1,7 +1,8 @@
 ---
 title: "Copying and Pinning"
 description: Review how the interop marshaller can copy or pin data that's being marshalled. Copying data places a copy of data from one memory location into another location.
-ms.date: 05/12/2022
+ms.date: 03/20/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "pinning, interop marshalling"
   - "copying, interop marshalling"
@@ -19,7 +20,7 @@ Method arguments passed by value are marshalled to unmanaged code as values on t
 
 ![Diagram showing reference types passed by value and by reference.](./media/copying-and-pinning/interop-marshal-reference-pin.gif)
 
-Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaller pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshalling process. Pinning is automatically performed during marshalling for objects such as <xref:System.String>, however you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class.
+Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaller pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshalling process. Pinning is automatically performed during marshalling for objects such as <xref:System.String>. However you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class. For examples of manual pinning with `GCHandle`, see [Keeping managed objects alive](../../standard/native-interop/best-practices.md#keeping-managed-objects-alive) in the native interoperability best practices article.
 
 ## Formatted Blittable Classes
 
@@ -78,3 +79,5 @@ When a <xref:System.Text.StringBuilder?displayProperty=nameWithType> is passed b
 - [Default Marshalling Behavior](default-marshalling-behavior.md)
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Interop Marshaling](interop-marshalling.md)
+- [Native interoperability best practices](../../standard/native-interop/best-practices.md)
+- [`fixed` statement (C# reference)](../../csharp/language-reference/statements/fixed.md)

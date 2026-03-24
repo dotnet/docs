@@ -1,7 +1,8 @@
 ---
 title: "The managed thread pool"
 description: Learn about the .NET thread pool that provides background worker threads
-ms.date: "08/02/2018"
+ms.date: 03/13/2026
+ai-usage: ai-assisted
 helpviewer_keywords: 
   - "thread pooling [.NET]"
   - "thread pools [.NET]"
@@ -25,7 +26,7 @@ There is only one thread pool per process.
 
 Unhandled exceptions in thread pool threads terminate the process. There are three exceptions to this rule:  
   
-- A <xref:System.Threading.ThreadAbortException?displayProperty=nameWithType> is thrown in a thread pool thread because <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> was called.  
+- A <xref:System.Threading.ThreadAbortException?displayProperty=nameWithType> is thrown in a thread pool thread because <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> was called. This only applies to .NET Framework. In .NET 5 and later versions, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> throws a <xref:System.PlatformNotSupportedException>. For more information, see [SYSLIB0006: Thread.Abort is not supported](../../fundamentals/syslib-diagnostics/syslib0006.md).
 - A <xref:System.AppDomainUnloadedException?displayProperty=nameWithType> is thrown in a thread pool thread because the application domain is being unloaded.  
 - The common language runtime or a host process terminates the thread.  
   

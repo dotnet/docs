@@ -1,8 +1,9 @@
 ---
 title: "How to: Determine if a file is an assembly"
 description: This article shows you how determine whether a file is a .NET assembly, both manually and programmatically.
-ms.date: 07/24/2021
+ms.date: 03/12/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -35,6 +36,9 @@ This example tests a DLL to see if it is an assembly.
 The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.
 
 ### Using the PEReader class
+
+> [!CAUTION]
+> <xref:System.Reflection.PortableExecutable.PEReader> and the <xref:System.Reflection.Metadata> library are not designed to handle untrusted input. Malformed or malicious PE files can cause unexpected behavior, including out-of-bounds memory access, crashes, or hangs. Only use these APIs with trusted assemblies.
 
 1. If you're targeting .NET Standard or .NET Framework, install the [System.Reflection.Metadata](https://www.nuget.org/packages/System.Reflection.Metadata/) NuGet package. (When targeting .NET Core or .NET 5+, this step isn't required because this library is included in the shared framework.)
 

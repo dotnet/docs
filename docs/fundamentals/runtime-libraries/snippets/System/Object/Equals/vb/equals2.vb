@@ -23,7 +23,7 @@ Class Point1
     End Function
 
     Public Overrides Function GetHashCode() As Integer
-        Return (x << 2) Xor y
+        Return HashCode.Combine(x, y)
     End Function
 
     Public Overrides Function ToString() As String
@@ -49,7 +49,7 @@ Class Point3D : Inherits Point1
     End Function
 
     Public Overrides Function GetHashCode() As Integer
-        Return (MyBase.GetHashCode() << 2) Xor z
+        Return HashCode.Combine(MyBase.GetHashCode(), z)
     End Function
 
     Public Overrides Function ToString() As String

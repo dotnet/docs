@@ -78,7 +78,7 @@ More than one option is often reasonable.
 
 ## Compile-time type and run-time type
 
-A variable can have different types at compile time and run time. The *compile-time type* is the declared or inferred type in source code. The *run-time type* is the actual type of the instance the variable refers to. The run-time type must be the same as the compile-time type, or a type that derives from it or implements it. Assignment is only valid when an implicit reference conversion exists from the run-time type to the compile-time type.
+A variable can have different types at compile time and run time. The *compile-time type* is the declared or inferred type in source code. The *run-time type* is the actual type of the instance the variable refers to. The run-time type must be the same as the compile-time type, or a type that derives from it or implements it. An assignment is only valid when an implicit conversion exists from the run-time type to the compile-time type, such as an identity, reference, boxing, or numeric conversion.
 
 :::code language="csharp" source="snippets/index/Program.cs" ID="CompileVsRuntime":::
 

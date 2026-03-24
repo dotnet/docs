@@ -31,7 +31,7 @@ Console.WriteLine(fromCode); // OK
 var parsed = Enum.Parse<Season>("Winter");
 Console.WriteLine(parsed); // Winter
 
-// Try to parse safely (returns false if the string isn't a valid name):
+// Try to parse safely. It returns false only when the input can't be parsed. Call Enum.IsDefined to validate named members:
 if (Enum.TryParse<Season>("Monsoon", out var unknown))
 {
     Console.WriteLine(unknown);

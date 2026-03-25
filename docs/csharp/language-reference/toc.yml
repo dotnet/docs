@@ -545,7 +545,7 @@ items:
     href: ./compiler-messages/overflow-underflow-errors.md
     displayName: >
       overflow, underflow, checked, unchecked,
-      CS8973
+      CS0031, CS8973
   - name: Asynchronous methods
     href: ./compiler-messages/async-await-errors.md
     displayName: >
@@ -772,8 +772,6 @@ items:
       href: ./compiler-messages/cs0029.md
     - name: CS0030
       href: ../misc/cs0030.md
-    - name: CS0031
-      href: ../misc/cs0031.md
     - name: CS0036
       href: ../misc/cs0036.md
     - name: CS0037

@@ -2,13 +2,18 @@
 title: Resolve errors and warnings related to user-defined operator declarations
 description: This article helps you diagnose and correct compiler errors and warnings when you declare user-defined operators in your types
 f1_keywords:
+  - "CS0031"
   - "CS0056"
   - "CS0057"
   - "CS0215"
   - "CS0216"
   - "CS0217"
   - "CS0218"
+  - "CS0220"
+  - "CS0221"
   - "CS0448"
+  - "CS0463"
+  - "CS0543"
   - "CS0552"
   - "CS0553"
   - "CS0554"
@@ -22,11 +27,15 @@ f1_keywords:
   - "CS0564"
   - "CS0567"
   - "CS0590"
+  - "CS0594"
+  - "CS0652"
   - "CS0660"
   - "CS0661"
   - "CS0715"
+  - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8973"
   - "CS9023"
   - "CS9024"
   - "CS9025"
@@ -39,13 +48,18 @@ f1_keywords:
   - "CS9341"
   - "CS9342"
 helpviewer_keywords:
+  - "CS0031"
   - "CS0056"
   - "CS0057"
   - "CS0215"
   - "CS0216"
   - "CS0217"
   - "CS0218"
+  - "CS0220"
+  - "CS0221"
   - "CS0448"
+  - "CS0463"
+  - "CS0543"
   - "CS0552"
   - "CS0553"
   - "CS0554"
@@ -59,11 +73,15 @@ helpviewer_keywords:
   - "CS0564"
   - "CS0567"
   - "CS0590"
+  - "CS0594"
+  - "CS0652"
   - "CS0660"
   - "CS0661"
   - "CS0715"
+  - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8973"
   - "CS9023"
   - "CS9024"
   - "CS9025"
@@ -76,7 +94,7 @@ helpviewer_keywords:
   - "CS9340"
   - "CS9341"
   - "CS9342"
-ms.date: 11/07/2025
+ms.date: 03/25/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in user-defined operator declarations
@@ -86,13 +104,18 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
+- [**CS0031**](#overflow-and-underflow-errors): *Constant value 'value' cannot be converted to a 'type'*
 - [**CS0056**](#inconsistent-accessibility): *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
 - [**CS0057**](#inconsistent-accessibility): *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'*
 - [**CS0215**](#boolean-and-short-circuit-operators): *The return type of operator True or False must be bool*
 - [**CS0216**](#boolean-and-short-circuit-operators): *The operator 'operator' requires a matching operator 'missing_operator' to also be defined*
 - [**CS0217**](#boolean-and-short-circuit-operators): *In order to be applicable as a short circuit operator a user-defined logical operator ('operator') must have the same return type as the type of its 2 parameters.*
 - [**CS0218**](#boolean-and-short-circuit-operators): *The type ('type') must contain declarations of operator true and operator false*
+- [**CS0220**](#overflow-and-underflow-errors): *The operation overflows at compile time in checked mode*
+- [**CS0221**](#overflow-and-underflow-errors): *Constant value 'value' cannot be converted to a 'type' (use 'unchecked' syntax to override)*
 - [**CS0448**](#operator-signature-requirements): *The return type for `++` or `--` operator must be the containing type or derived from the containing type*
+- [**CS0463**](#overflow-and-underflow-errors): *Evaluation of the decimal constant expression failed with error: 'error'*
+- [**CS0543**](#overflow-and-underflow-errors): *'enumeration' : the enumerator value is too large to fit in its type*
 - [**CS0552**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from interface*
 - [**CS0553**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from base class*
 - [**CS0554**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from derived class*
@@ -106,13 +129,17 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0564**](#operator-signature-requirements): *The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int*
 - [**CS0567**](#operator-signature-requirements): *Interfaces cannot contain operators*
 - [**CS0590**](#operator-signature-requirements): *User-defined operators cannot return void*
+- [**CS0594**](#overflow-and-underflow-errors): *Floating-point constant is outside the range of type 'type'*
+- [**CS0652**](#overflow-and-underflow-errors): *Comparison to integral constant is useless; the constant is outside the range of type 'type'*
 - [**CS0660**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.Equals(object o)`*
 - [**CS0661**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.GetHashCode()`*
 - [**CS0715**](#operator-declaration-requirements): *Static classes cannot contain user-defined operators*
 - [**CS1037**](#operator-declaration-requirements): *Overloadable operator expected*
+- [**CS1021**](#overflow-and-underflow-errors): *Integral constant is too large*
 - [**CS1553**](#operator-declaration-requirements): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
 - [**CS8930**](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration): *Explicit implementation of a user-defined operator must be declared static*
 - [**CS8931**](static-abstract-interfaces.md#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
+- [**CS8973**](#overflow-and-underflow-errors): *The operation may overflow at runtime (use 'unchecked' syntax to override)*
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
 - [**CS9025**](#checked-operators): *Operator requires a matching non-checked version to also be declared.*
@@ -414,3 +441,23 @@ To implement equality correctly, override the corresponding `Object` methods whe
 - Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0661**).
 
 Overriding these methods ensures consistent equality behavior across different APIs and collection types.
+
+## Overflow and underflow errors
+
+- **CS0031**: *Constant value 'value' cannot be converted to a 'type'*
+- **CS0220**: *The operation overflows at compile time in checked mode*
+- **CS0221**: *Constant value 'value' cannot be converted to a 'type' (use 'unchecked' syntax to override)*
+- **CS0463**: *Evaluation of the decimal constant expression failed with error: 'error'*
+- **CS0543**: *'enumeration' : the enumerator value is too large to fit in its type*
+- **CS0594**: *Floating-point constant is outside the range of type 'type'*
+- **CS0652**: *Comparison to integral constant is useless; the constant is outside the range of type 'type'*
+- **CS1021**: *Integral constant is too large*
+- **CS8973**: *The operation may overflow at runtime (use 'unchecked' syntax to override)*
+
+These errors and warnings indicate that a constant expression or operation results in a value outside the valid range of a type. Overflow and underflow can occur at compile time for constant expressions or at run time for non-constant operations.
+
+- Assign a value within the valid range of the target type, or use a larger numeric type (**CS0031**, **CS0543**, **CS0594**, **CS1021**).
+- For compile-time overflow in constant expressions, correct the inputs or use [unchecked](../statements/checked-and-unchecked.md) to suppress the error (**CS0220**, **CS0221**).
+- Use the `unchecked` context to override overflow warnings for runtime operations (**CS8973**).
+- Reduce the size of decimal constant expressions to avoid exceeding `decimal` limits (**CS0463**).
+- Remove or correct comparisons where the constant is outside the range of the variable's type (**CS0652**).

@@ -119,7 +119,7 @@ The following table shows the special characters for type names.
 |`+` (plus)|Delimiter for nested types.|
 |`\` (backslash)|Escape character.|
 
-Properties such as <xref:System.Type.AssemblyQualifiedName*> return correctly escaped strings. You must pass correctly escaped strings to the <xref:System.Type.GetType*> method. In turn, the <xref:System.Type.GetType*> method passes correctly escaped names to `typeResolver` and to the default type resolution methods. If you need to compare a name to an unescaped name in `typeResolver`, you must remove the escape characters.
+Properties such as <xref:System.Type.AssemblyQualifiedName> return correctly escaped strings. You must pass correctly escaped strings to the <xref:System.Type.GetType*> method. In turn, the <xref:System.Type.GetType*> method passes correctly escaped names to `typeResolver` and to the default type resolution methods. If you need to compare a name to an unescaped name in `typeResolver`, you must remove the escape characters.
 
 ## Mixed name resolution
 

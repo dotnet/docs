@@ -47,7 +47,7 @@ The <xref:System.Numerics.Complex> structure in .NET includes members that provi
 - Methods to perform other numerical operations on complex numbers. In addition to the four basic arithmetic operations, you can raise a complex number to a specified power, find the square root of a complex number, and get the absolute value of a complex number.
 - Methods to perform trigonometric operations on complex numbers. For example, you can calculate the tangent of an angle represented by a complex number.
 
-Note that, because the <xref:System.Numerics.Complex.Real*> and  <xref:System.Numerics.Complex.Imaginary*> properties are read-only, you cannot modify the value of an existing <xref:System.Numerics.Complex> object. All methods that perform an operation on a <xref:System.Numerics.Complex> number, if their return value is of type <xref:System.Numerics.Complex>, return a new <xref:System.Numerics.Complex> number.
+Note that, because the <xref:System.Numerics.Complex.Real> and  <xref:System.Numerics.Complex.Imaginary> properties are read-only, you cannot modify the value of an existing <xref:System.Numerics.Complex> object. All methods that perform an operation on a <xref:System.Numerics.Complex> number, if their return value is of type <xref:System.Numerics.Complex>, return a new <xref:System.Numerics.Complex> number.
 
 ## Precision and complex numbers
 

@@ -83,7 +83,7 @@ A generic type is like a template. You can't create instances of it unless you s
 
 ## Example
 
-The following code example defines a `DisplayGenericType` method to examine the generic type definitions and constructed types used in the code and display their information. The `DisplayGenericType` method shows how to use the <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A>, and <xref:System.Type.GenericParameterPosition%2A> properties and the <xref:System.Type.GetGenericArguments%2A> method.
+The following code example defines a `DisplayGenericType` method to examine the generic type definitions and constructed types used in the code and display their information. The `DisplayGenericType` method shows how to use the <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A>, and <xref:System.Type.GenericParameterPosition> properties and the <xref:System.Type.GetGenericArguments%2A> method.
 
 The example also defines a `DisplayGenericParameter` method to examine a generic type parameter and display its constraints.
 

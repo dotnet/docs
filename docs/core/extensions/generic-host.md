@@ -296,7 +296,7 @@ If your application uses hosting, and you want to gracefully stop the host, you 
 
 The following sequence diagram shows how the signals are handled internally in the hosting code. Most users don't need to understand this process. But for developers that need a deep understanding, a good visual may help you get started.
 
-After the host has been started, when a user calls `Run` or `WaitForShutdown`, a handler gets registered for <xref:Microsoft.Extensions.Hosting.IApplicationLifetime.ApplicationStopping%2A?displayProperty=nameWithType>. Execution is paused in `WaitForShutdown`, waiting for the `ApplicationStopping` event to be raised. The `Main` method doesn't return right away, and the app stays running until `Run` or `WaitForShutdown` returns.
+After the host has been started, when a user calls `Run` or `WaitForShutdown`, a handler gets registered for <xref:Microsoft.Extensions.Hosting.IApplicationLifetime.ApplicationStopping?displayProperty=nameWithType>. Execution is paused in `WaitForShutdown`, waiting for the `ApplicationStopping` event to be raised. The `Main` method doesn't return right away, and the app stays running until `Run` or `WaitForShutdown` returns.
 
 When a signal is sent to the process, it initiates the following sequence:
 

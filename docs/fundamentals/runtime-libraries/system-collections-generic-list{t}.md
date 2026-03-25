@@ -61,9 +61,9 @@ The <xref:System.Collections.Generic.List`1.Contains*> method is used to test fo
 
 The default <xref:System.Collections.Generic.List`1.Item(System.Int32)> property (the indexer in C#) is used to retrieve an item, the <xref:System.Collections.Generic.List`1.Remove*> method is used to remove the first instance of the duplicate item added earlier, and the contents are displayed again. The <xref:System.Collections.Generic.List`1.Remove*> method always removes the first instance it encounters.
 
-The <xref:System.Collections.Generic.List`1.TrimExcess*> method is used to reduce the capacity to match the count, and the <xref:System.Collections.Generic.List`1.Capacity*> and <xref:System.Collections.Generic.List`1.Count*> properties are displayed. If the unused capacity had been less than 10 percent of total capacity, the list would not have been resized.
+The <xref:System.Collections.Generic.List`1.TrimExcess*> method is used to reduce the capacity to match the count, and the <xref:System.Collections.Generic.List`1.Capacity> and <xref:System.Collections.Generic.List`1.Count> properties are displayed. If the unused capacity had been less than 10 percent of total capacity, the list would not have been resized.
 
-Finally, the <xref:System.Collections.Generic.List`1.Clear*> method is used to remove all items from the list, and the <xref:System.Collections.Generic.List`1.Capacity*> and <xref:System.Collections.Generic.List`1.Count*> properties are displayed.
+Finally, the <xref:System.Collections.Generic.List`1.Clear*> method is used to remove all items from the list, and the <xref:System.Collections.Generic.List`1.Capacity> and <xref:System.Collections.Generic.List`1.Count> properties are displayed.
 
 :::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/source.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/source.vb" id="Snippet1":::

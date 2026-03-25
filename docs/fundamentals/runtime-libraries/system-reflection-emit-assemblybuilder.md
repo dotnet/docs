@@ -85,7 +85,7 @@ public void CreateRunAndSaveAssembly(string assemblyPath)
 
 Some methods on the base <xref:System.Reflection.Assembly> class, such as `GetModules` and `GetLoadedModules`, won't work correctly when called from <xref:System.Reflection.Emit.AssemblyBuilder> objects. You can load the defined dynamic assembly and call the methods on the loaded assembly. For example, to ensure that resource modules are included in the returned module list, call `GetModules` on the loaded <xref:System.Reflection.Assembly> object. If a dynamic assembly contains more than one dynamic module, the assembly's manifest file name should match the module's name that's specified as the first argument to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule*> method.
 
-The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair*> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.
+The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.
 
 Dynamic assemblies can reference types defined in another assembly. A transient dynamic assembly can safely reference types defined in another transient dynamic assembly, a persistable dynamic assembly, or a static assembly. However, the common language runtime does not allow a persistable dynamic module to reference a type defined in a transient dynamic module. This is because when the persisted dynamic module is loaded after being saved to disk, the runtime cannot resolve the references to types defined in the transient dynamic module.
 

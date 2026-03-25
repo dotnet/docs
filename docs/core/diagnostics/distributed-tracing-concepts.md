@@ -115,7 +115,7 @@ For improved performance in high throughput applications, distributed tracing on
 sampling only a subset of traces rather than recording all of them. For activities created with
 the recommended <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
 API, telemetry collection libraries can control sampling with the
-<xref:System.Diagnostics.ActivityListener.Sample%2A?displayProperty=nameWithType> callback.
+<xref:System.Diagnostics.ActivityListener.Sample?displayProperty=nameWithType> callback.
 The logging library can elect not to create the Activity at all, to create it with minimal
 information necessary to propagate distributing tracing IDs, or to populate it with complete
 diagnostic information. These choices trade-off increasing performance overhead for

@@ -34,7 +34,7 @@ Once you obtain a `Type`, there are many ways you can discover information about
 
 You can also use methods on the `Type` class to retrieve information about one or more constructors, methods, events, fields, or properties that you specify by name. For example, <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> encapsulates a specific constructor of the current class.
 
-If you have a `Type`, you can use the <xref:System.Type.Module%2A?displayProperty=nameWithType> property to obtain an object that encapsulates the module containing that type. Use the <xref:System.Reflection.Module.Assembly%2A?displayProperty=nameWithType> property to locate an object that encapsulates the assembly containing the module. You can obtain the assembly that encapsulates the type directly by using the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property.
+If you have a `Type`, you can use the <xref:System.Type.Module?displayProperty=nameWithType> property to obtain an object that encapsulates the module containing that type. Use the <xref:System.Reflection.Module.Assembly?displayProperty=nameWithType> property to locate an object that encapsulates the assembly containing the module. You can obtain the assembly that encapsulates the type directly by using the <xref:System.Type.Assembly?displayProperty=nameWithType> property.
 
 ## System.Type and ConstructorInfo
 

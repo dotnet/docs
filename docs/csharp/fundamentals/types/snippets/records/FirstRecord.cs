@@ -8,7 +8,7 @@ public record Person(string FirstName, string LastName);
 public record Product
 {
     public required string Name { get; init; }
-    public required decimal Price { get; init; }
+    public decimal Price { get; set; }
 }
 // </RecordWithBody>
 

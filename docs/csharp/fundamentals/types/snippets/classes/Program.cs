@@ -36,10 +36,9 @@ Console.WriteLine($"{options.Host}:{options.Port} (SSL: {options.UseSsl})");
 // </UsingObjectInitializer>
 
 // <CollectionInitializers>
-// Traditional collection initializer:
 List<string> languages = ["C#", "F#", "Visual Basic"];
 
-// Collection expression with spread:
+// The spread operator (..) composes collections from existing sequences:
 List<string> moreLangs = [.. languages, "Python", "TypeScript"];
 Console.WriteLine(string.Join(", ", moreLangs));
 // C#, F#, Visual Basic, Python, TypeScript

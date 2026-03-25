@@ -39,24 +39,6 @@ v.X = 6;
 Console.WriteLine(v.Speed); // 7.211...
 // </UsingReadonlyMembers>
 
-// <UsingRecordStruct>
-var home = new Coordinate(47.6062, -122.3321);
-var copy = home;
-
-Console.WriteLine(home);           // Coordinate { Latitude = 47.6062, Longitude = -122.3321 }
-Console.WriteLine(home == copy);   // True — value equality
-
-var shifted = home with { Longitude = -122.0 };
-Console.WriteLine(shifted);        // Coordinate { Latitude = 47.6062, Longitude = -122 }
-Console.WriteLine(home == shifted); // False
-// </UsingRecordStruct>
-
-// <RecordStructDeconstruct>
-var (lat, lon) = home;
-Console.WriteLine($"Lat: {lat}, Lon: {lon}");
-// Lat: 47.6062, Lon: -122.3321
-// </RecordStructDeconstruct>
-
 // --- Type declarations ---
 
 // <BasicStruct>
@@ -124,15 +106,20 @@ readonly struct Temperature
 // <ReadonlyMembers>
 struct Velocity
 {
-    public double X { get; set; }
-    public double Y { get; set; }
+    public double X
+    {
+        readonly get;
+        set;
+    }
+
+    public double Y
+    {
+        readonly get;
+        set;
+    }
 
     public readonly double Speed => Math.Sqrt(X * X + Y * Y);
 
     public readonly override string ToString() => $"({X}, {Y}) speed={Speed:F2}";
 }
 // </ReadonlyMembers>
-
-// <RecordStruct>
-record struct Coordinate(double Latitude, double Longitude);
-// </RecordStruct>

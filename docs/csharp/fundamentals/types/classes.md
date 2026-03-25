@@ -12,11 +12,11 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# classes are similar to classes in Java or C++. Skim the [object initializers](#object-initializers) and [collection initializers](#collection-initializers) sections for C#-specific patterns, and see [Records](records.md) for a data-focused alternative.
 
-A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap—not the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
+A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap - not the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
 
 ## Declare a class
 
-Define a class with the `class` keyword followed by the type name. An optional access modifier controls visibility—the default is `internal`:
+Define a class with the `class` keyword followed by the type name. An optional access modifier controls visibility. The default is `internal`:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ClassDeclaration":::
 
@@ -28,7 +28,7 @@ A class defines a type, but it isn't an object itself. You create an object (an 
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="CreateObject":::
 
-The variable `customer` holds a reference to the object, not the object itself. You can assign multiple variables to the same object—changes through one reference are visible through the other:
+The variable `customer` holds a reference to the object, not the object itself. You can assign multiple variables to the same object. Changes through one reference are visible through the other:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ReferenceSemantics":::
 
@@ -38,19 +38,23 @@ This reference-sharing behavior is what distinguishes classes from [structs](str
 
 When you create an instance, you want its fields and properties initialized to useful values. C# offers several approaches:
 
-**Field initializers** set a default value directly on the field declaration:
+**[Field initializers](../../programming-guide/classes-and-structs/instance-constructors.md)** set a default value directly on the field declaration:
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerFieldInitializer":::
+
+Field initializers define *internal* defaults. They don't give callers any way to choose the initial value. To let consumers of the class supply a value, use one of the following techniques.
 
 **Constructor parameters** require callers to provide values:
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerConstructor":::
 
-**Primary constructors** (C# 12) add parameters directly to the class declaration. Those parameters are available throughout the class body:
+**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** (C# 12) add parameters directly to the class declaration. Those parameters are available throughout the class body:
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerPrimaryConstructor":::
 
-**Required properties** enforce that callers set specific properties through an object initializer:
+Notice how primary constructors and field initializers work together: the field initializer `_capacity = capacity` uses the primary-constructor parameter as its value. This pattern lets you capture constructor arguments in fields with a single, concise declaration.
+
+**[Required properties](../../language-reference/keywords/required.md)** enforce that callers set specific properties through an object initializer:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="RequiredProperties":::
 
@@ -60,27 +64,27 @@ For a deeper look at constructor patterns, including parameter validation and co
 
 ## Static classes
 
-A `static` class can't be instantiated and contains only static members. Use static classes as containers for utility methods that don't operate on instance data:
+A `static` class can't be instantiated and contains only static members. Use static classes to organize utility methods that don't operate on instance data:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="StaticClass":::
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="UsingStaticClass":::
 
-The .NET class library includes many static classes, such as <xref:System.Math> and <xref:System.Console>. A static class is sealed implicitly—you can't derive from it or instantiate it.
+The .NET class library includes many static classes, such as <xref:System.Math> and <xref:System.Console>. A static class is implicitly sealed. You can't derive from it or instantiate it.
 
 ## Object initializers
 
-*Object initializers* let you set properties when you create an object, without writing a constructor for every combination of values:
+*[Object initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)* let you set properties when you create an object, without writing a constructor for every combination of values:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ObjectInitializer":::
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="UsingObjectInitializer":::
 
-Object initializers work with any accessible settable property. They combine naturally with `required` properties and with constructors that accept some parameters while letting the caller set others.
+Object initializers work with any accessible property that has a `set` or [`init`](../../language-reference/keywords/init.md) accessor. They combine naturally with `required` properties and with constructors that accept some parameters while letting the caller set others.
 
 ## Collection initializers
 
-*Collection initializers* let you populate a collection inline when you create it. You can use the traditional brace syntax or, starting with C# 12, *collection expressions* with bracket syntax:
+*Collection expressions* (C# 12) let you populate a collection inline when you create it using bracket syntax:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="CollectionInitializers":::
 
@@ -88,7 +92,7 @@ Collection expressions work with arrays, `List<T>`, `Span<T>`, and any type that
 
 ## Inheritance
 
-Classes support *inheritance*—you can define a new class that reuses, extends, or modifies the behavior of an existing class. The class you inherit from is the *base class*, and the new class is the *derived class*:
+Classes support *inheritance*. You can define a new class that reuses, extends, or modifies the behavior of an existing class. The class you inherit from is the *base class*, and the new class is the *derived class*:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="Inheritance":::
 

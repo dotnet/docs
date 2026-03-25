@@ -1,3 +1,5 @@
+using FirstRecord;
+
 namespace RecordStructDemo;
 
 // <RecordStructDecl>
@@ -13,6 +15,21 @@ public static class Program
 {
     public static void Main()
     {
+        // <RecordClassVsStruct>
+        // Record class — assignment copies the reference
+        var p1 = new Person("Grace", "Hopper");
+        var p2 = p1;
+        // p1 and p2 point to the same object:
+        Console.WriteLine(ReferenceEquals(p1, p2)); // True
+
+        // Record struct — assignment copies the data
+        var c1 = new Coordinate(47.6062, -122.3321);
+        var c2 = c1;
+        c2.Longitude = 0.0; // mutating c2 doesn't affect c1
+        Console.WriteLine(c1.Longitude); // -122.3321
+        Console.WriteLine(c2.Longitude); // 0
+        // </RecordClassVsStruct>
+
         // <UsingRecordStruct>
         var home = new Coordinate(47.6062, -122.3321);
         var copy = home;

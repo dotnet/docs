@@ -103,7 +103,7 @@ ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for operator declarations and overflow
 
-This article covers the following compiler errors:
+This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.

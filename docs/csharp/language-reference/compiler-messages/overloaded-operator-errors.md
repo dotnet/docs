@@ -1,6 +1,6 @@
 ---
-title: Resolve errors and warnings related to user-defined operator declarations
-description: This article helps you diagnose and correct compiler errors and warnings when you declare user-defined operators in your types
+title: Resolve errors and warnings related to operator declarations and overflow
+description: This article helps you diagnose and correct compiler errors and warnings related to user-defined operator declarations, checked operators, and overflow or underflow in your types
 f1_keywords:
   - "CS0031"
   - "CS0056"
@@ -97,7 +97,7 @@ helpviewer_keywords:
 ms.date: 03/25/2026
 ai-usage: ai-assisted
 ---
-# Resolve errors and warnings in user-defined operator declarations
+# Resolve errors and warnings for operator declarations and overflow
 
 This article covers the following compiler errors:
 

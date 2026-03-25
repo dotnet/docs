@@ -545,7 +545,7 @@ items:
     href: ./compiler-messages/overflow-underflow-errors.md
     displayName: >
       overflow, underflow, checked, unchecked,
-      CS0031, CS8973
+      CS0031, CS0220, CS0221, CS0463, CS0543, CS0594, CS0652, CS1021, CS8973
   - name: Asynchronous methods
     href: ./compiler-messages/async-await-errors.md
     displayName: >
@@ -960,10 +960,6 @@ items:
       href: ../misc/cs0204.md
     - name: CS0205
       href: ../misc/cs0205.md
-    - name: CS0220
-      href: ../misc/cs0220.md
-    - name: CS0221
-      href: ../misc/cs0221.md
     - name: CS0226
       href: ../misc/cs0226.md
     - name: CS0228
@@ -1048,8 +1044,6 @@ items:
       href: ../misc/cs0456.md
     - name: CS0462
       href: ../misc/cs0462.md
-    - name: CS0463
-      href: ../misc/cs0463.md
     - name: CS0468
       href: ../misc/cs0468.md
     - name: CS0470
@@ -1104,8 +1098,6 @@ items:
       href: ./compiler-messages/interface-implementation-errors.md
     - name: CS0542
       href: ../misc/cs0542.md
-    - name: CS0543
-      href: ../misc/cs0543.md
     - name: CS0544
       href: ../misc/cs0544.md
     - name: CS0545
@@ -1146,8 +1138,6 @@ items:
       href: ../misc/cs0588.md
     - name: CS0589
       href: ../misc/cs0589.md
-    - name: CS0594
-      href: ../misc/cs0594.md
     - name: CS0596
       href: ../misc/cs0596.md
     - name: CS0601
@@ -1306,8 +1296,6 @@ items:
       href: ../misc/cs1015.md
     - name: CS1017
       href: ../misc/cs1017.md
-    - name: CS1021
-      href: ../misc/cs1021.md
     - name: CS1023
       href: ../misc/cs1023.md
     - name: CS1026
@@ -1890,8 +1878,6 @@ items:
       href: ../misc/cs0472.md
     - name: CS0618
       href: ./compiler-messages/cs0618.md
-    - name: CS0652
-      href: ../misc/cs0652.md
     - name: CS1571
       href: ../misc/cs1571.md
     - name: CS1572

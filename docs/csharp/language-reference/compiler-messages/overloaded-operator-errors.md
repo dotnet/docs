@@ -139,8 +139,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0660**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.Equals(object o)`*
 - [**CS0661**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.GetHashCode()`*
 - [**CS0715**](#operator-declaration-requirements): *Static classes cannot contain user-defined operators*
-- [**CS1037**](#operator-declaration-requirements): *Overloadable operator expected*
 - [**CS1021**](#overflow-and-underflow-errors): *Integral constant is too large*
+- [**CS1037**](#operator-declaration-requirements): *Overloadable operator expected*
 - [**CS1553**](#operator-declaration-requirements): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
 - [**CS8930**](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration): *Explicit implementation of a user-defined operator must be declared static*
 - [**CS8931**](static-abstract-interfaces.md#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*

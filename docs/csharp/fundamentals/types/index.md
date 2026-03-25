@@ -17,7 +17,7 @@ C# is a strongly typed language. Every variable, constant, and expression has a 
 :::code language="csharp" source="snippets/index/Program.cs" ID="TypeSafety":::
 
 > [!NOTE]
-> C and C++ developers, in C#, `bool` isn't convertible to `int`.
+> Unlike C and C++, in C#, `bool` isn't convertible to `int`.
 
 Type safety catches errors at compile time, before your code runs. The compiler also embeds type information into the executable as metadata, which the common language runtime (CLR) uses for additional safety checks at run time.
 

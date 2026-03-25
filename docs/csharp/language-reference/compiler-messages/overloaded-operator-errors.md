@@ -29,6 +29,7 @@ f1_keywords:
   - "CS0590"
   - "CS0594"
   - "CS0652"
+  - "CS0659"
   - "CS0660"
   - "CS0661"
   - "CS0715"
@@ -75,6 +76,7 @@ helpviewer_keywords:
   - "CS0590"
   - "CS0594"
   - "CS0652"
+  - "CS0659"
   - "CS0660"
   - "CS0661"
   - "CS0715"
@@ -131,6 +133,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0590**](#operator-signature-requirements): *User-defined operators cannot return void*
 - [**CS0594**](#overflow-and-underflow-errors): *Floating-point constant is outside the range of type 'type'*
 - [**CS0652**](#overflow-and-underflow-errors): *Comparison to integral constant is useless; the constant is outside the range of type 'type'*
+- [**CS0659**](#equality-operators): *'class' overrides Object.Equals(object o) but does not override Object.GetHashCode()*
 - [**CS0660**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.Equals(object o)`*
 - [**CS0661**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.GetHashCode()`*
 - [**CS0715**](#operator-declaration-requirements): *Static classes cannot contain user-defined operators*
@@ -432,11 +435,13 @@ To implement and override operators correctly, follow these requirements. For mo
 
 ## Equality operators
 
+- **CS0659**: *'class' overrides Object.Equals(object o) but does not override Object.GetHashCode()*
 - **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
 - **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
 To implement equality correctly, override the corresponding `Object` methods when defining custom equality operators. For more information, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
 
+- Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> when you override <xref:System.Object.Equals%2A?displayProperty=nameWithType> (**CS0659**). Types that override `Equals` should always override `GetHashCode` to ensure correct behavior in hash-based collections.
 - Override <xref:System.Object.Equals%2A?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0660**).
 - Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0661**).
 

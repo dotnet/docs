@@ -526,7 +526,7 @@ items:
       checked, unchecked,
       CS0031, CS0056, CS0057, CS0215, CS0216, CS0217, CS0218, CS0220, CS0221, CS0448,
       CS0463, CS0543, CS0552, CS0553, CS0554, CS0555, CS0556, CS0557, CS0558, CS0559,
-      CS0562, CS0563, CS0564, CS0567, CS0590, CS0594, CS0652, CS0660, CS0661, CS0715,
+      CS0562, CS0563, CS0564, CS0567, CS0590, CS0594, CS0652, CS0659, CS0660, CS0661, CS0715,
       CS1021, CS1037, CS1553, CS1554, CS8973, CS9023, CS9024, CS9025, CS9027, CS9308,
       CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
   - name: Parameter / argument mismatch
@@ -1913,8 +1913,6 @@ items:
       href: ../misc/cs0419.md
     - name: CS0642
       href: ../misc/cs0642.md
-    - name: CS0659
-      href: ../misc/cs0659.md
     - name: CS0665
       href: ../misc/cs0665.md
     - name: CS0675

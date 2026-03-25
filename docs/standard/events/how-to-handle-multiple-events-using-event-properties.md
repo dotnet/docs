@@ -32,8 +32,8 @@ Each event property defines an add accessor and a remove accessor. The add acces
 
 The following example implements the `MouseDown` and `MouseUp` event properties using an <xref:System.ComponentModel.EventHandlerList> to store each event's delegate.
 
-:::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/DrawingCanvas.cs" id="EventProperties":::
-:::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/DrawingCanvas.vb" id="EventProperties":::
+:::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="EventProperties":::
+:::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="EventProperties":::
 
 ## Related content
 

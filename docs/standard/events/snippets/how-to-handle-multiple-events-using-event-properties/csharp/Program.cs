@@ -1,2 +1,2 @@
-﻿_ = typeof(DrawingCanvas);
+﻿_ = typeof(Sensor);
 

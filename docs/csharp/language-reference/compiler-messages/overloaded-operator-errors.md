@@ -173,7 +173,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9341**: *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
 - **CS9342**: *Operator resolution is ambiguous between the following members.*
 
-Each operator type has specific parameter and return type requirements defined by the language specification. For the full rules on which operators can be overloaded, see [Operator overloading](../operators/operator-overloading.md) and [Operators](~/_csharpstandard/standard/expressions.md#1244-operators) in the C# specification.
+Each operator type has specific parameter and return type requirements defined by the language specification. For the full rules on which operators can be overloaded, see [Operator overloading](../operators/operator-overloading.md) and [Operators](~/_csharpstandard/standard/expressions.md#124-operators) in the C# specification.
 
 - Change the return type of `++` or `--` operators to the containing type or a type derived from it (**CS0448**). The language requires that increment and decrement operators return a value compatible with the containing type so the result can be assigned back to the same variable.
 - Change the parameter of `++` or `--` operators to the containing type (**CS0559**). Increment and decrement operators must operate on instances of their own type.
@@ -210,7 +210,7 @@ For errors related to explicit interface implementations of operators in static 
 - **CS0056**: *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'.*
 - **CS0057**: *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'.*
 
-All types used in a public operator's signature must be at least as accessible as the operator itself. For the full rules, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#783-accessibility-constraints) in the C# specification.
+All types used in a public operator's signature must be at least as accessible as the operator itself. For the full rules, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#755-accessibility-constraints) in the C# specification.
 
 - Change the return type to a type that's at least as accessible as the operator, or reduce the accessibility of the operator to match the return type (**CS0056**). A `public` operator can't expose a less-accessible type through its return value because callers outside the assembly wouldn't be able to use the result.
 - Change the parameter type to a type that's at least as accessible as the operator, or reduce the accessibility of the operator to match the parameter type (**CS0057**). A `public` operator can't require a less-accessible type as a parameter because callers outside the assembly wouldn't be able to provide the argument.

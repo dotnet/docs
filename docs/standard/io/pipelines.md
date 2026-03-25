@@ -1,12 +1,13 @@
 ---
 title: System.IO.Pipelines - .NET
 description: Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
-ms.date: 05/09/2022
+ms.date: 03/25/2026
 helpviewer_keywords:
   - "Pipelines"
   - "Pipelines I/O"
   - "I/O [.NET], Pipelines"
 author: rick-anderson
+ai-usage: ai-assisted
 ---
 
 # System.IO.Pipelines in .NET
@@ -199,11 +200,16 @@ The two `SequencePosition` arguments are updated because `TryParseLines` removes
 
 The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or an infinite loop. For more information, see the [PipeReader common problems](#gotchas) section in this article.
 
+> [!IMPORTANT]
+> `ReadSingleMessageAsync` doesn't call `PipeReader.CompleteAsync`. The caller is responsible for completing the `PipeReader`. Calling `PipeReader.CompleteAsync` inside `ReadSingleMessageAsync` signals that no more data can be read, which prevents reading subsequent messages.
+
 ### Reading multiple messages
 
 The following code reads all messages from a `PipeReader` and calls `ProcessMessageAsync` on each.
 
 :::code language="csharp" source="snippets/pipelines_1/MyConnection1.cs" id="snippet":::
+
+Because `ProcessMessagesAsync` owns the complete message-reading loop, it calls `PipeReader.CompleteAsync` when it's done. Unlike the single-message case, the caller doesn't need to complete the reader. `ProcessMessagesAsync` takes full ownership of the `PipeReader` lifetime.
 
 ### Cancellation
 

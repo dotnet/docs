@@ -37,7 +37,7 @@ Starting with C# 14 and .NET 10, *file-based apps* let you run a program contain
 :::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
 
 > [!NOTE]
-> The `#!` line enables Unix shells to run the file directly. On any Unix system, set the *execute* (`+x`) permission and run the file from the command line.
+> The `#!` line enables Unix operating systems to execute the file directly (for example, `./hello-world.cs`). This requires the *execute* permission to be set (`chmod +x <file>`).
 
 File-based apps support all C# syntax and can use [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) to configure the build system. Use file-based apps for small command-line utilities, prototypes, and experiments. A file-based app consists of a single file in a directory:
 

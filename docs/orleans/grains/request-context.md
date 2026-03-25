@@ -138,4 +138,5 @@ internal sealed class ExamplePlacementFilterDirector(ILogger<ExamplePlacementFil
     }
 }
 ```
+
 In this example, the "somekey" value is read from the <xref:Orleans.Runtime.Placement.PlacementTarget> `RequestContextData` during the placement filtering.

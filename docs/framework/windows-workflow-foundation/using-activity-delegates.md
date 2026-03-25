@@ -12,7 +12,7 @@ Activity delegates are useful in scenarios where a child activity must be constr
 
 ## Using ActivityAction
 
-Several .NET Framework 4.6.1 activities use activity actions, such as the <xref:System.Activities.Statements.Catch> activity and the <xref:System.Activities.Statements.ForEach%601> activity. In each case, the activity action represents a location where the workflow author specifies an activity to provide the desired behavior when composing a workflow using one of these activities. In the following example, a <xref:System.Activities.Statements.ForEach%601> activity is used to display text to the console window. The body of the <xref:System.Activities.Statements.ForEach%601> is specified by using an <xref:System.Activities.ActivityAction%601> that matches the type of the <xref:System.Activities.Statements.ForEach%601> which is string. The <xref:System.Activities.Statements.WriteLine> activity specified in the <xref:System.Activities.ActivityDelegate.Handler%2A> has its <xref:System.Activities.Statements.WriteLine.Text%2A> argument bound to the string values in the collection that the <xref:System.Activities.Statements.ForEach%601> activity iterates.
+Several .NET Framework 4.6.1 activities use activity actions, such as the <xref:System.Activities.Statements.Catch> activity and the <xref:System.Activities.Statements.ForEach%601> activity. In each case, the activity action represents a location where the workflow author specifies an activity to provide the desired behavior when composing a workflow using one of these activities. In the following example, a <xref:System.Activities.Statements.ForEach%601> activity is used to display text to the console window. The body of the <xref:System.Activities.Statements.ForEach%601> is specified by using an <xref:System.Activities.ActivityAction%601> that matches the type of the <xref:System.Activities.Statements.ForEach%601> which is string. The <xref:System.Activities.Statements.WriteLine> activity specified in the <xref:System.Activities.ActivityDelegate.Handler> has its <xref:System.Activities.Statements.WriteLine.Text%2A> argument bound to the string values in the collection that the <xref:System.Activities.Statements.ForEach%601> activity iterates.
 
 [!code-csharp[CFX_ActivityExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#6)]
 
@@ -36,7 +36,7 @@ When creating a custom activity that defines an <xref:System.Activities.Activity
 
 [!code-csharp[CFX_ActivityExample#1](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#1)]
 
-When a workflow is created by using the `WriteLineWithNotification` activity, the workflow author specifies the desired custom logic in the activity action’s <xref:System.Activities.ActivityDelegate.Handler%2A>. In this example, a workflow is created that use the `WriteLineWithNotification` activity, and a <xref:System.Activities.Statements.WriteLine> activity is used as the <xref:System.Activities.ActivityDelegate.Handler%2A>.
+When a workflow is created by using the `WriteLineWithNotification` activity, the workflow author specifies the desired custom logic in the activity action’s <xref:System.Activities.ActivityDelegate.Handler>. In this example, a workflow is created that use the `WriteLineWithNotification` activity, and a <xref:System.Activities.Statements.WriteLine> activity is used as the <xref:System.Activities.ActivityDelegate.Handler>.
 
 [!code-csharp[CFX_ActivityExample#2](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#2)]
 
@@ -52,6 +52,6 @@ To supply the text, an activity must be used that takes one `int` argument and h
 
 [!code-csharp[CFX_ActivityExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#4)]
 
-To use the `TextGenerator` activity with the `WriteFillerText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.
+To use the `TextGenerator` activity with the `WriteFillerText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler>.
 
 [!code-csharp[CFX_ActivityExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]

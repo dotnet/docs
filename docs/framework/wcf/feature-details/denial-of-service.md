@@ -28,7 +28,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxCachedCookies%2A>: controls the maximum number of time-bounded `SecurityContextToken`s that the server caches after `SPNego` or `SSL` negotiation.  
   
-- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.IssuedCookieLifetime%2A>: controls the lifetime of the `SecurityContextTokens` that the server issues following `SPNego` or `SSL` negotiation. The server caches the `SecurityContextToken`s for this period of time.  
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.IssuedCookieLifetime>: controls the lifetime of the `SecurityContextTokens` that the server issues following `SPNego` or `SSL` negotiation. The server caches the `SecurityContextToken`s for this period of time.  
   
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxPendingSessions%2A>: controls the maximum number of secure conversations that are established at the server but for which no application messages have been processed. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state per client, but never using them.  
   
@@ -44,7 +44,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
 
  If a malicious user understands that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails.  
   
- To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). For more information, see [Auditing](auditing-security-events.md).  
+ To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). For more information, see [Auditing](auditing-security-events.md).  
   
 ## Invalid Implementations of IAuthorizationPolicy Can Cause Service to Become Unresponsive  
 

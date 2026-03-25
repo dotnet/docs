@@ -82,8 +82,8 @@ On the client, you must prompt the user for the username and password and specif
 - <xref:System.ServiceModel.WSHttpBinding>
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.SecurityMode>
-- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>
-- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password>
 - <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
 - <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>
 - <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>

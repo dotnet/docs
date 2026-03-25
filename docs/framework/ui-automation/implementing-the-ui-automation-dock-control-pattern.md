@@ -42,7 +42,7 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IDockProvider.DockPosition%2A>|Property|None|
+|<xref:System.Windows.Automation.Provider.IDockProvider.DockPosition>|Property|None|
 |<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition%2A>|Method|None|
 
  This control pattern has no associated events.

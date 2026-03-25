@@ -32,7 +32,7 @@ In a calling application, the service model layer is responsible for translating
 
 - Custom Message Transformations. Rather than modifying application code, the user may want to apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.
 
-- Custom Data Model. A user may want to have a data or serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=nameWithType> property.
+- Custom Data Model. A user may want to have a data or serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter?displayProperty=nameWithType> property.
 
 - Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](how-to-inspect-or-modify-parameters.md) or [Client Validation](../samples/client-validation.md).
 
@@ -80,25 +80,25 @@ In a calling application, the service model layer is responsible for translating
 
  Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation. The following properties enable you to insert custom objects into the WCF client system:
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter.
 
 - Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one.
 
  The following properties enable you to modify the system in interaction with the formatter and custom parameter inspectors:
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to control the serialization of an outbound message.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest> property to control the serialization of an outbound message.
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control the deserialization of an inbound message.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply> property to control the deserialization of an inbound message.
 
 - Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Action%2A> property to control the WS-Addressing action of the request message.
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod%2A> to specify which WCF client methods are associated with an asynchronous operation.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod> to specify which WCF client methods are associated with an asynchronous operation.
 
 - Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection that contains the types that can appear in SOAP faults as the detail type.
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsInitiating%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.IsTerminating%2A> properties to control whether a session is initiated or is torn down, respectively, when the operation is called.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsInitiating> and <xref:System.ServiceModel.Dispatcher.ClientOperation.IsTerminating> properties to control whether a session is initiated or is torn down, respectively, when the operation is called.
 
-- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay%2A> property to control whether the operation is a one-way operation.
+- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay> property to control whether the operation is a one-way operation.
 
 - Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Parent%2A> property to obtain the containing <xref:System.ServiceModel.Dispatcher.ClientRuntime> object.
 

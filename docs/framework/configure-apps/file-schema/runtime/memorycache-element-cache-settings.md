@@ -68,7 +68,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
 
 - <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.PhysicalMemoryLimitPercentage%2A>
 
-- <xref:System.Runtime.Caching.MemoryCache.PollingInterval%2A>
+- <xref:System.Runtime.Caching.MemoryCache.PollingInterval>
 
 ## Example
 

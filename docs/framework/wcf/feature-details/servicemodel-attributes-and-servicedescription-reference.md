@@ -16,7 +16,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
   
  There are two types of operation models: the *parameter* model and the *message contract* model. The parameter model uses managed methods that do not have a parameter or return value type that is marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType> class. In this model, developers control the serialization of parameters and return values, but WCF generates the values that are used to populate the description tree for the service and its contract.  
   
- Bindings specified in configuration files are loaded directly into the <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A?displayProperty=nameWithType> property.  
+ Bindings specified in configuration files are loaded directly into the <xref:System.ServiceModel.Description.ServiceEndpoint.Binding?displayProperty=nameWithType> property.  
   
 |ServiceBehaviorAttribute Property|Description Tree Value Affected|  
 |---------------------------------------|-------------------------------------|  
@@ -30,7 +30,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |---------------------------------------|-------------------------------------|  
 |CallbackContract|<xref:System.ServiceModel.Description.ContractDescription.CallbackContractType%2A>, <xref:System.ServiceModel.Description.MessageDescription> added to all operations <xref:System.ServiceModel.Description.OperationDescription.Messages%2A>.|  
 |ConfigurationName|<xref:System.ServiceModel.Description.ContractDescription.ConfigurationName%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> and possibly child protection levels. For more information about the protection-level hierarchy, see [Understanding Protection Level](../understanding-protection-level.md).|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel> and possibly child protection levels. For more information about the protection-level hierarchy, see [Understanding Protection Level](../understanding-protection-level.md).|  
 |SessionMode|<xref:System.ServiceModel.Description.ContractDescription.SessionMode%2A>|  
   
 |ServiceKnownTypesAttribute Value|Description Tree Value Affected|  
@@ -40,12 +40,12 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |OperationContractAttribute Value|Description Tree Value Affected|  
 |--------------------------------------|-------------------------------------|  
 |Action|<xref:System.ServiceModel.Description.MessageDescription.Action%2A> for the output message or input message, depending upon contract/callback contract.|  
-|AsyncPattern|If true, <xref:System.ServiceModel.Description.OperationDescription.BeginMethod%2A> and <xref:System.ServiceModel.Description.OperationDescription.EndMethod%2A>|  
+|AsyncPattern|If true, <xref:System.ServiceModel.Description.OperationDescription.BeginMethod> and <xref:System.ServiceModel.Description.OperationDescription.EndMethod>|  
 |IsOneWay|Maps to a single <xref:System.ServiceModel.Description.MessageDescription> in <xref:System.ServiceModel.Description.OperationDescription.Messages%2A>|  
-|IsInitiating|<xref:System.ServiceModel.Description.OperationDescription.IsInitiating%2A>|  
-|IsTerminating|<xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A>|  
+|IsInitiating|<xref:System.ServiceModel.Description.OperationDescription.IsInitiating>|  
+|IsTerminating|<xref:System.ServiceModel.Description.OperationDescription.IsTerminating>|  
 |Name|<xref:System.ServiceModel.Description.OperationDescription.Name%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> and possibly child protection levels. For more information about the protection-level hierarchy, see [Understanding Protection Level](../understanding-protection-level.md).|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel> and possibly child protection levels. For more information about the protection-level hierarchy, see [Understanding Protection Level](../understanding-protection-level.md).|  
 |ReplyAction|<xref:System.ServiceModel.Description.MessageDescription.Action%2A> for the output message or input message, depending upon contract/callback contract.|  
   
 |FaultContractAttribute Value|Description Tree Value Affected|  
@@ -54,7 +54,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |DetailType|<xref:System.ServiceModel.Description.FaultDescription.DetailType%2A>|  
 |Name|<xref:System.ServiceModel.Description.FaultDescription.Name%2A>|  
 |Namespace|<xref:System.ServiceModel.Description.FaultDescription.Namespace%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel>|  
   
 |DataContractFormatAttribute Value|Description Tree Value Affected|  
 |---------------------------------------|-------------------------------------|  
@@ -71,7 +71,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
   
 |MessageContractAttribute Value|Description Tree Value Affected|  
 |------------------------------------|-------------------------------------|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessageDescription.ProtectionLevel%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessageDescription.ProtectionLevel>|  
 |WrapperName|<xref:System.ServiceModel.Description.MessageBodyDescription.WrapperName%2A>|  
 |WrapperNamespace|<xref:System.ServiceModel.Description.MessageBodyDescription.WrapperNamespace%2A>|  
   
@@ -81,7 +81,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |MustUnderstand|<xref:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand%2A> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |Name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |Namespace|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |Relay|<xref:System.ServiceModel.Description.MessageHeaderDescription.Relay%2A> for the corresponding header in <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
   
 |MessageBodyMemberAttribute Value|Description Tree Value Affected|  
@@ -89,7 +89,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |Name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
 |Namespace|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
 |Order|<xref:System.ServiceModel.Description.MessagePartDescription.Index%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
   
 |MessageHeaderArrayAttribute Value|Description Tree Value Affected|  
 |---------------------------------------|-------------------------------------|  
@@ -97,7 +97,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
 |MustUnderstand|<xref:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand%2A>|  
 |Name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>|  
 |Namespace|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel>|  
 |Relay|<xref:System.ServiceModel.Description.MessageHeaderDescription.Relay%2A>|  
   
 |MessagePropertyAttribute Value|Description Tree Value Affected|  

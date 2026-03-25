@@ -17,7 +17,7 @@ You can use constraints to enforce restrictions on the data in a <xref:System.Da
 
  A `ForeignKeyConstraint` enforces rules about how updates and deletes to related tables are propagated. For example, if a value in a row of one table is updated or deleted, and that same value is also used in one or more related tables, a `ForeignKeyConstraint` determines what happens in the related tables.
 
- The <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> and <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> properties of the `ForeignKeyConstraint` define the action to be taken when the user attempts to delete or update a row in a related table. The following table describes the different settings available for the `DeleteRule` and `UpdateRule` properties of the **ForeignKeyConstraint**.
+ The <xref:System.Data.ForeignKeyConstraint.DeleteRule> and <xref:System.Data.ForeignKeyConstraint.UpdateRule> properties of the `ForeignKeyConstraint` define the action to be taken when the user attempts to delete or update a row in a related table. The following table describes the different settings available for the `DeleteRule` and `UpdateRule` properties of the **ForeignKeyConstraint**.
 
 |Rule setting|Description|
 |------------------|-----------------|
@@ -63,7 +63,7 @@ custDS.Tables["OrdersTable"].Constraints.Add(custOrderFK);
 
 ### Example
 
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets several of its properties, including the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A>, and adds it to the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable> object.
+ The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets several of its properties, including the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule>, and adds it to the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable> object.
 
  [!code-csharp[DataWorks Data.AcceptRejectRule#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.AcceptRejectRule/CS/source.cs#1)]
  [!code-vb[DataWorks Data.AcceptRejectRule#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.AcceptRejectRule/VB/source.vb#1)]

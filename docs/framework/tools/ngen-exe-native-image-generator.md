@@ -149,7 +149,7 @@ The native images that Ngen.exe generates can be shared across application domai
 
 - Apply the <xref:System.LoaderOptimizationAttribute> attribute to your application.
 
-- Set the <xref:System.AppDomainSetup.LoaderOptimization%2A?displayProperty=nameWithType> property when you create setup information for a new application domain.
+- Set the <xref:System.AppDomainSetup.LoaderOptimization?displayProperty=nameWithType> property when you create setup information for a new application domain.
 
 Always use domain-neutral code when loading the same assembly into multiple application domains. If a native image is loaded into a nonshared application domain after having been loaded into a shared domain, it cannot be used.
 

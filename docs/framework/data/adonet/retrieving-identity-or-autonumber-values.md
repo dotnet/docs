@@ -41,7 +41,7 @@ INSERT INTO Categories (CategoryName) VALUES(@CategoryName)
 SET @Identity = SCOPE_IDENTITY()
 ```
 
-The stored procedure can then be specified as the source of the <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> of a <xref:System.Data.SqlClient.SqlDataAdapter> object. The <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> property of the <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> must be set to <xref:System.Data.CommandType.StoredProcedure>. The identity output is retrieved by creating a <xref:System.Data.SqlClient.SqlParameter> that has a <xref:System.Data.ParameterDirection> of <xref:System.Data.ParameterDirection.Output>. When the `InsertCommand` is processed, the auto-incremented identity value is returned and placed in the `CategoryID` column of the current row if you set the <xref:System.Data.SqlClient.SqlCommand.UpdatedRowSource%2A> property of the insert command to `UpdateRowSource.OutputParameters` or to `UpdateRowSource.Both`.
+The stored procedure can then be specified as the source of the <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand> of a <xref:System.Data.SqlClient.SqlDataAdapter> object. The <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> property of the <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand> must be set to <xref:System.Data.CommandType.StoredProcedure>. The identity output is retrieved by creating a <xref:System.Data.SqlClient.SqlParameter> that has a <xref:System.Data.ParameterDirection> of <xref:System.Data.ParameterDirection.Output>. When the `InsertCommand` is processed, the auto-incremented identity value is returned and placed in the `CategoryID` column of the current row if you set the <xref:System.Data.SqlClient.SqlCommand.UpdatedRowSource> property of the insert command to `UpdateRowSource.OutputParameters` or to `UpdateRowSource.Both`.
 
 If your insert command executes a batch that includes both an INSERT statement and a SELECT statement that returns the new identity value, then you can retrieve the new value by setting the `UpdatedRowSource` property of the insert command to `UpdateRowSource.FirstReturnedRecord`.
 
@@ -54,13 +54,13 @@ A common scenario is to call the `GetChanges` method of a `DataTable` to create 
 
 There are two ways to preserve the original values of a `DataColumn` in a `DataRow` during a `DataAdapter` update:
 
-- The first method of preserving the original values is to set the `AcceptChangesDuringUpdate` property of the `DataAdapter` to `false`. This affects every `DataRow` in the `DataTable` being updated. For more information and a code example, see <xref:System.Data.Common.DataAdapter.AcceptChangesDuringUpdate%2A>.
+- The first method of preserving the original values is to set the `AcceptChangesDuringUpdate` property of the `DataAdapter` to `false`. This affects every `DataRow` in the `DataTable` being updated. For more information and a code example, see <xref:System.Data.Common.DataAdapter.AcceptChangesDuringUpdate>.
 
 - The second method is to write code in the `RowUpdated` event handler of the `DataAdapter` to set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> to <xref:System.Data.UpdateStatus.SkipCurrentRow>. The `DataRow` is updated but the original value of each `DataColumn` is preserved. This method enables you to preserve the original values for some rows and not for others. For example, your code can preserve the original values for added rows and not for edited or deleted rows by first checking the <xref:System.Data.Common.RowUpdatedEventArgs.StatementType%2A> and then setting <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> to <xref:System.Data.UpdateStatus.SkipCurrentRow> only for rows with a `StatementType` of `Insert`.
 
 When either of these methods is used to preserve original values in a `DataRow` during a `DataAdapter` update, ADO.NET performs a series of actions to set the current values of the `DataRow` to new values returned by output parameters or by the first returned row of a result set, while still preserving the original value in each `DataColumn`. First, the `AcceptChanges` method of the `DataRow` is called to preserve the current values as original values, and then the new values are assigned. Following these actions, `DataRows` that had their <xref:System.Data.DataRow.RowState%2A> property set to <xref:System.Data.DataRowState.Added> will have their `RowState` property set to <xref:System.Data.DataRowState.Modified>, which may be unexpected.
 
-How the command results are applied to each <xref:System.Data.DataRow> being updated is determined by the <xref:System.Data.Common.DbCommand.UpdatedRowSource%2A> property of each <xref:System.Data.Common.DbCommand>. This property is set to a value from the `UpdateRowSource` enumeration.
+How the command results are applied to each <xref:System.Data.DataRow> being updated is determined by the <xref:System.Data.Common.DbCommand.UpdatedRowSource> property of each <xref:System.Data.Common.DbCommand>. This property is set to a value from the `UpdateRowSource` enumeration.
 
 The following table describes how the `UpdateRowSource` enumeration values affect the <xref:System.Data.DataRow.RowState%2A> property of updated rows.
 
@@ -73,7 +73,7 @@ The following table describes how the `UpdateRowSource` enumeration values affec
 
 ### Example
 
-This example demonstrates extracting changed rows from a `DataTable` and using a <xref:System.Data.SqlClient.SqlDataAdapter> to update the data source and retrieve a new identity column value. The <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> executes two Transact-SQL statements; the first one is the INSERT statement, and the second one is a SELECT statement that uses the SCOPE_IDENTITY function to retrieve the identity value.
+This example demonstrates extracting changed rows from a `DataTable` and using a <xref:System.Data.SqlClient.SqlDataAdapter> to update the data source and retrieve a new identity column value. The <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand> executes two Transact-SQL statements; the first one is the INSERT statement, and the second one is a SELECT statement that uses the SCOPE_IDENTITY function to retrieve the identity value.
 
 ```sql
 INSERT INTO dbo.Shippers (CompanyName)

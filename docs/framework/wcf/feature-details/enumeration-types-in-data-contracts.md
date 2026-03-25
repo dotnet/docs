@@ -43,7 +43,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
   
 - Flag enumerations (discussed later in this topic).  
   
-- Enumeration data members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property set to `false` (in which case, the enumeration with the value zero is omitted from the serialized data).  
+- Enumeration data members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> property set to `false` (in which case, the enumeration with the value zero is omitted from the serialized data).  
   
 ### Customizing Enumeration Member Values  
 

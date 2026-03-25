@@ -100,7 +100,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 
 - A destructor is called when the object reference is destroyed.
 
- Sessions enable a similar behavior between clients and services as long as the default service instance behavior is used. If a service contract requires or supports sessions, one or more contract operations can be marked as initiating or terminating a session by setting the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> and <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> properties.
+ Sessions enable a similar behavior between clients and services as long as the default service instance behavior is used. If a service contract requires or supports sessions, one or more contract operations can be marked as initiating or terminating a session by setting the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating> and <xref:System.ServiceModel.OperationContractAttribute.IsTerminating> properties.
 
  *Initiating operations* are those that must be called as the first operation of a new session. Non-initiating operations can be called only after at least one initiating operation has been called. You can therefore create a kind of session constructor for your service by declaring initiating operations designed to take input from clients appropriate to the beginning of the service instance. (The state is associated with the session, however, and not the service object.)
 
@@ -151,5 +151,5 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 
 ## See also
 
-- <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>
-- <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsInitiating>
+- <xref:System.ServiceModel.OperationContractAttribute.IsTerminating>

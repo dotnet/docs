@@ -70,5 +70,5 @@ When deserializing a fault contract, WCF first attempts to match the fault contr
 - <xref:System.ServiceModel.FaultException.Code%2A>
 - <xref:System.ServiceModel.FaultException.Reason%2A>
 - <xref:System.ServiceModel.FaultCode.SubCode%2A>
-- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>
 - [Defining and Specifying Faults](defining-and-specifying-faults.md)

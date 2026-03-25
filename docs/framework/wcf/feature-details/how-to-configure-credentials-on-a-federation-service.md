@@ -22,7 +22,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
 
 ### To set the properties of IssuedTokenServiceCredential in code
 
-1. Use the <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A> property of the <xref:System.ServiceModel.Description.ServiceCredentials> class to return a reference to an <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> instance. The property is accessed from the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property of the <xref:System.ServiceModel.ServiceHostBase> class.
+1. Use the <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication> property of the <xref:System.ServiceModel.Description.ServiceCredentials> class to return a reference to an <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> instance. The property is accessed from the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property of the <xref:System.ServiceModel.ServiceHostBase> class.
 
 2. Set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowUntrustedRsaIssuers%2A> property to `true` if self-issued tokens such as CardSpace cards are to be authenticated. The default is `false`.
 

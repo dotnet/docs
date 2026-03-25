@@ -48,7 +48,7 @@ For many features described earlier in this document, <xref:System.ComponentMode
 
 ### Generic SortableBindingList
 
-This class inherits from <xref:System.ComponentModel.BindingList%601>, and is a sortable version of <xref:System.ComponentModel.BindingList%601>. Sorting is an in-memory solution and never contacts the database itself. <xref:System.ComponentModel.BindingList%601> implements <xref:System.ComponentModel.IBindingList> but does not support sorting by default. However, <xref:System.ComponentModel.BindingList%601> implements <xref:System.ComponentModel.IBindingList> with virtual *core* methods. You can easily override these methods. Generic `SortableBindingList` overrides <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A>, <xref:System.ComponentModel.BindingList%601.SortPropertyCore%2A>, <xref:System.ComponentModel.BindingList%601.SortDirectionCore%2A>, and <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A>. `ApplySortCore` is called by <xref:System.ComponentModel.IBindingList.ApplySort%2A> and sorts the list of T items for a given property.
+This class inherits from <xref:System.ComponentModel.BindingList%601>, and is a sortable version of <xref:System.ComponentModel.BindingList%601>. Sorting is an in-memory solution and never contacts the database itself. <xref:System.ComponentModel.BindingList%601> implements <xref:System.ComponentModel.IBindingList> but does not support sorting by default. However, <xref:System.ComponentModel.BindingList%601> implements <xref:System.ComponentModel.IBindingList> with virtual *core* methods. You can easily override these methods. Generic `SortableBindingList` overrides <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A>, <xref:System.ComponentModel.BindingList%601.SortPropertyCore>, <xref:System.ComponentModel.BindingList%601.SortDirectionCore>, and <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A>. `ApplySortCore` is called by <xref:System.ComponentModel.IBindingList.ApplySort%2A> and sorts the list of T items for a given property.
 
 An exception is raised if the property does not belong to T.
 
@@ -74,7 +74,7 @@ On the `EntitySet` side, you now have to declare sorting support:
 
 - <xref:System.ComponentModel.IBindingList.ApplySort%2A> calls `entities.ApplySort()` and then `OnListChanged()`.
 
-- <xref:System.ComponentModel.IBindingList.SortDirection%2A> and <xref:System.ComponentModel.IBindingList.SortProperty%2A> properties expose the current sorting definition, which is stored in local members.
+- <xref:System.ComponentModel.IBindingList.SortDirection> and <xref:System.ComponentModel.IBindingList.SortProperty> properties expose the current sorting definition, which is stored in local members.
 
 When you use a System.Windows.Forms.BindingSource and bind an EntitySet\<TEntity> to the System.Windows.Forms.BindingSource.DataSource, you must call EntitySet\<TEntity>.GetNewBindingList to update BindingSource.List.
 

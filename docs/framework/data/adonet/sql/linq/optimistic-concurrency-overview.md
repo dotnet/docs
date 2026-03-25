@@ -81,7 +81,7 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
   
 - <xref:System.Data.Linq.DataContext.Refresh%2A?displayProperty=nameWithType>  
   
-- <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A?displayProperty=nameWithType>  
+- <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck?displayProperty=nameWithType>  
   
 - <xref:System.Data.Linq.Mapping.UpdateCheck?displayProperty=nameWithType>  
   

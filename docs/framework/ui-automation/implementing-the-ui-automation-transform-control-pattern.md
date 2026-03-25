@@ -39,9 +39,9 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanMove%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanResize%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanRotate%2A>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanMove>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanResize>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanRotate>|Property|None|
 |<xref:System.Windows.Automation.Provider.ITransformProvider.Move%2A>|Method|None|
 |<xref:System.Windows.Automation.Provider.ITransformProvider.Resize%2A>|Method|None|
 |<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A>|Method|None|

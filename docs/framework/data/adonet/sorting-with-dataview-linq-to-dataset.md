@@ -15,7 +15,7 @@ The ability to sort data based on specific criteria and then present the data to
 
  A <xref:System.Data.DataView> object can be created from a LINQ to DataSet query. If that query contains an <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.OrderByDescending%2A>, <xref:System.Linq.Enumerable.ThenBy%2A>, or <xref:System.Linq.Enumerable.ThenByDescending%2A> clause the expressions in these clauses are used as the basis for sorting the data in the <xref:System.Data.DataView>. For example, if the query contains the `Order By…`and `Then By…` clauses, the resulting <xref:System.Data.DataView> would order the data by both columns specified.  
   
- Expression-based sorting offers more powerful and complex sorting than the simpler string-based sorting. Note that string-based and expression-based sorting are mutually exclusive. If the string-based <xref:System.Data.DataView.Sort%2A> is set after a <xref:System.Data.DataView> is created from a query, the expression-based filter inferred from the query is cleared and cannot be reset.  
+ Expression-based sorting offers more powerful and complex sorting than the simpler string-based sorting. Note that string-based and expression-based sorting are mutually exclusive. If the string-based <xref:System.Data.DataView.Sort> is set after a <xref:System.Data.DataView> is created from a query, the expression-based filter inferred from the query is cleared and cannot be reset.  
   
  The index for a <xref:System.Data.DataView> is built both when the <xref:System.Data.DataView> is created and when any of the sorting or filtering information is modified. You get the best performance by supplying sorting criteria in the LINQ to DataSet query that the <xref:System.Data.DataView> is created from and not modifying the sorting information, later. For more information, see [DataView Performance](dataview-performance.md).  
   
@@ -45,11 +45,11 @@ The ability to sort data based on specific criteria and then present the data to
   
 ## Using the String-Based Sort Property  
 
- The string-based sorting functionality of <xref:System.Data.DataView> still works with LINQ to DataSet. After a <xref:System.Data.DataView> has been created from a LINQ to DataSet query, you can use the <xref:System.Data.DataView.Sort%2A> property to set the sorting on the <xref:System.Data.DataView>.  
+ The string-based sorting functionality of <xref:System.Data.DataView> still works with LINQ to DataSet. After a <xref:System.Data.DataView> has been created from a LINQ to DataSet query, you can use the <xref:System.Data.DataView.Sort> property to set the sorting on the <xref:System.Data.DataView>.  
   
- The string-based and expression-based sorting functionality are mutually exclusive. Setting the <xref:System.Data.DataView.Sort%2A> property will clear the expression-based sort inherited from the query that the <xref:System.Data.DataView> was created from.  
+ The string-based and expression-based sorting functionality are mutually exclusive. Setting the <xref:System.Data.DataView.Sort> property will clear the expression-based sort inherited from the query that the <xref:System.Data.DataView> was created from.  
   
- For more information about string-based <xref:System.Data.DataView.Sort%2A> filtering, see [Sorting and Filtering Data](./dataset-datatable-dataview/sorting-and-filtering-data.md).  
+ For more information about string-based <xref:System.Data.DataView.Sort> filtering, see [Sorting and Filtering Data](./dataset-datatable-dataview/sorting-and-filtering-data.md).  
   
 ### Example  
 
@@ -67,22 +67,22 @@ The ability to sort data based on specific criteria and then present the data to
   
 ## Clearing the Sort  
 
- The sorting information on a <xref:System.Data.DataView> can be cleared after it has been set using the <xref:System.Data.DataView.Sort%2A> property. There are two ways to clear the sorting information in <xref:System.Data.DataView>:  
+ The sorting information on a <xref:System.Data.DataView> can be cleared after it has been set using the <xref:System.Data.DataView.Sort> property. There are two ways to clear the sorting information in <xref:System.Data.DataView>:  
   
-- Set the <xref:System.Data.DataView.Sort%2A> property to `null`.  
+- Set the <xref:System.Data.DataView.Sort> property to `null`.  
   
-- Set the <xref:System.Data.DataView.Sort%2A> property to an empty string.  
+- Set the <xref:System.Data.DataView.Sort> property to an empty string.  
   
 ### Example  
 
- The following example creates a <xref:System.Data.DataView> from a query and clears the sorting by setting the <xref:System.Data.DataView.Sort%2A> property to an empty string:  
+ The following example creates a <xref:System.Data.DataView> from a query and clears the sorting by setting the <xref:System.Data.DataView.Sort> property to an empty string:  
   
  [!code-csharp[DP DataView Samples#LDVClearSort](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvclearsort)]
  [!code-vb[DP DataView Samples#LDVClearSort](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvclearsort)]  
   
 ### Example  
 
- The following example creates a <xref:System.Data.DataView> from the Contact table and sets the <xref:System.Data.DataView.Sort%2A> property to sort by last name in descending order. The sorting information is then cleared by setting the <xref:System.Data.DataView.Sort%2A> property to `null`:  
+ The following example creates a <xref:System.Data.DataView> from the Contact table and sets the <xref:System.Data.DataView.Sort> property to sort by last name in descending order. The sorting information is then cleared by setting the <xref:System.Data.DataView.Sort> property to `null`:  
   
  [!code-csharp[DP DataView Samples#LDVClearSort2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvclearsort2)]
  [!code-vb[DP DataView Samples#LDVClearSort2](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvclearsort2)]  

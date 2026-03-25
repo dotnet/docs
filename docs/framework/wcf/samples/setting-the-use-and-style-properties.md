@@ -28,7 +28,7 @@ Setting the style to <xref:System.ServiceModel.OperationFormatStyle.Document> me
 </wsdl:message>
 ```
 
-The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property determines the format of the message. Possible values are <xref:System.ServiceModel.OperationFormatUse.Literal> and <xref:System.ServiceModel.OperationFormatUse.Encoded>; the default value is <xref:System.ServiceModel.OperationFormatUse.Literal>. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/ Literal example.
+The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use> property determines the format of the message. Possible values are <xref:System.ServiceModel.OperationFormatUse.Literal> and <xref:System.ServiceModel.OperationFormatUse.Encoded>; the default value is <xref:System.ServiceModel.OperationFormatUse.Literal>. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/ Literal example.
 
 ```xml
 <Add xmlns="http://Microsoft.ServiceModel.Samples">
@@ -50,7 +50,7 @@ The WS-I Basic Profile 1.0 prohibits the use of <xref:System.ServiceModel.Operat
 
 To allow you to see the messages being sent and received, this sample is based on the [Tracing and Message Logging](tracing-and-message-logging.md). The service configuration and source code have been modified to enable and utilize tracing and message logging. In addition, the <xref:System.ServiceModel.WSHttpBinding> has been configured without security, so the logged messages can be viewed in an unencrypted format. The resulting trace logs (System.ServiceModel.e2e and Message.log) should be viewed by using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). The traces are configured to be created in the C:\LOGS folder. Create the folder before running the sample. To view message contents in the Trace Viewer tool, select **Messages** in both the left and the right panes of the tool.
 
-The following code shows the service contract with the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property set to <xref:System.ServiceModel.OperationFormatUse> and the format of the message body changed from the default <xref:System.ServiceModel.OperationFormatStyle> to <xref:System.ServiceModel.OperationFormatStyle.Document>.
+The following code shows the service contract with the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use> property set to <xref:System.ServiceModel.OperationFormatUse> and the format of the message body changed from the default <xref:System.ServiceModel.OperationFormatStyle> to <xref:System.ServiceModel.OperationFormatStyle.Document>.
 
 ```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples"),
@@ -69,7 +69,7 @@ public interface IUseAndStyleCalculator
 }
 ```
 
-To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing `http://localhost/ServiceModelSamples/service.svc?wsdl`. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view `http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0` to observe the message definitions.
+To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing `http://localhost/ServiceModelSamples/service.svc?wsdl`. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view `http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0` to observe the message definitions.
 
 ## To set up, build, and run the sample
 

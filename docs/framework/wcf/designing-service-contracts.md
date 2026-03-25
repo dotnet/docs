@@ -121,7 +121,7 @@ Sub Hello (ByVal greeting As String)
 
  No return message also means that there can be no SOAP fault returned to indicate any errors in processing or communication. (Communicating error information when operations are one-way operations requires a duplex message exchange pattern.)
 
- To specify a one-way message exchange for an operation that returns `void`, set the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`, as in the following C# code example.
+ To specify a one-way message exchange for an operation that returns `void`, set the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property to `true`, as in the following C# code example.
 
 ```csharp
 [OperationContractAttribute(IsOneWay=true)]
@@ -135,7 +135,7 @@ void Hello(string greeting);
 Sub Hello (ByVal greeting As String)
 ```
 
- This method is identical to the preceding request/reply example, but setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` means that although the method is identical, the service operation does not send a return message and clients return immediately once the outbound message has been handed to the channel layer. For an example, see [How to: Create a One-Way Contract](./feature-details/how-to-create-a-one-way-contract.md). For more information about the one-way pattern, see [One-Way Services](./feature-details/one-way-services.md).
+ This method is identical to the preceding request/reply example, but setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property to `true` means that although the method is identical, the service operation does not send a return message and clients return immediately once the outbound message has been handed to the channel layer. For an example, see [How to: Create a One-Way Contract](./feature-details/how-to-create-a-one-way-contract.md). For more information about the one-way pattern, see [One-Way Services](./feature-details/one-way-services.md).
 
 ##### Duplex
 
@@ -188,7 +188,7 @@ End Interface
 > [!IMPORTANT]
 > Deciding whether to explicitly set various scopes of a contract to less than the full protection level of <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType> is generally a decision that trades some degree of security for increased performance. In these cases, your decisions must revolve around your operations and the value of the data they exchange. For more information, see [Securing Services](securing-services.md).
 
- For example, the following code example does not set either the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> or the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property on the contract.
+ For example, the following code example does not set either the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel> or the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel> property on the contract.
 
 ```csharp
 [ServiceContract]
@@ -219,7 +219,7 @@ End Interface
 
  When interacting with an `ISampleService` implementation in an endpoint with a default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType>, which is <xref:System.ServiceModel.SecurityMode.Message>), all messages are encrypted and signed because this is the default protection level. However, when an `ISampleService` service is used with a default <xref:System.ServiceModel.BasicHttpBinding> (the default <xref:System.ServiceModel.SecurityMode>, which is <xref:System.ServiceModel.SecurityMode.None>), all messages are sent as text because there is no security for this binding and so the protection level is ignored (that is, the messages are neither encrypted nor signed). If the <xref:System.ServiceModel.SecurityMode> was changed to <xref:System.ServiceModel.SecurityMode.Message>, then these messages would be encrypted and signed (because that would now be the binding's default protection level).
 
- If you want to explicitly specify or adjust the protection requirements for your contract, set the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> property (or any of the `ProtectionLevel` properties at a smaller scope) to the level your service contract requires. In this case, using an explicit setting requires the binding to support that setting at a minimum for the scope used. For example, the following code example specifies one <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> value explicitly, for the `GetGuid` operation.
+ If you want to explicitly specify or adjust the protection requirements for your contract, set the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel> property (or any of the `ProtectionLevel` properties at a smaller scope) to the level your service contract requires. In this case, using an explicit setting requires the binding to support that setting at a minimum for the scope used. For example, the following code example specifies one <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel> value explicitly, for the `GetGuid` operation.
 
 ```csharp
 [ServiceContract]

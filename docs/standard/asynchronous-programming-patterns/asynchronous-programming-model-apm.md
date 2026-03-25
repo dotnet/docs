@@ -29,8 +29,8 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
 |------------|-----------------|  
 |<xref:System.IAsyncResult.AsyncState%2A>|An optional application-specific object that contains information about the asynchronous operation.|  
 |<xref:System.IAsyncResult.AsyncWaitHandle%2A>|A <xref:System.Threading.WaitHandle> that can be used to block application execution until the asynchronous operation completes.|  
-|<xref:System.IAsyncResult.CompletedSynchronously%2A>|A value that indicates whether the asynchronous operation completed on the thread used to call `BeginOperationName` instead of completing on a separate <xref:System.Threading.ThreadPool> thread.|  
-|<xref:System.IAsyncResult.IsCompleted%2A>|A value that indicates whether the asynchronous operation has completed.|  
+|<xref:System.IAsyncResult.CompletedSynchronously>|A value that indicates whether the asynchronous operation completed on the thread used to call `BeginOperationName` instead of completing on a separate <xref:System.Threading.ThreadPool> thread.|  
+|<xref:System.IAsyncResult.IsCompleted>|A value that indicates whether the asynchronous operation has completed.|  
   
  A `BeginOperationName` method takes any parameters declared in the signature of the synchronous version of the method that are passed by value or by reference. Any out parameters are not part of the `BeginOperationName` method signature. The `BeginOperationName` method signature also includes two additional parameters. The first of these defines an <xref:System.AsyncCallback> delegate that references a method that is called when the asynchronous operation completes. The caller can specify `null` (`Nothing` in Visual Basic) if it does not want a method invoked when the operation completes. The second additional parameter is a user-defined object. This object can be used to pass application-specific state information to the method invoked when the asynchronous operation completes. If a `BeginOperationName` method takes additional operation-specific parameters, such as a byte array to store bytes read from a file, the <xref:System.AsyncCallback> and application state object are the last parameters in the `BeginOperationName` method signature.  
   
@@ -46,7 +46,7 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
 > For either of the undefined scenarios, implementers should consider throwing <xref:System.InvalidOperationException>.  
   
 > [!NOTE]
-> Implementers of this design pattern should notify the caller that the asynchronous operation completed by setting <xref:System.IAsyncResult.IsCompleted%2A> to true, calling the asynchronous callback method (if one was specified) and signaling the <xref:System.IAsyncResult.AsyncWaitHandle%2A>.  
+> Implementers of this design pattern should notify the caller that the asynchronous operation completed by setting <xref:System.IAsyncResult.IsCompleted> to true, calling the asynchronous callback method (if one was specified) and signaling the <xref:System.IAsyncResult.AsyncWaitHandle%2A>.  
   
  Application developers have several design choices for accessing the results of the asynchronous operation. The correct choice depends on whether the application has instructions that can execute while the operation completes. If an application cannot perform any additional work until it receives the results of the asynchronous operation, the application must block until the results are available. To block until an asynchronous operation completes, you can use one of the following approaches:  
   
@@ -56,7 +56,7 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
   
  Applications that do not need to block while the asynchronous operation completes can use one of the following approaches:  
   
-- Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted%2A> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](polling-for-the-status-of-an-asynchronous-operation.md).  
+- Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](polling-for-the-status-of-an-asynchronous-operation.md).  
   
 - Use an <xref:System.AsyncCallback> delegate to specify a method to be invoked when the operation is complete. For an example that illustrates this technique, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   

@@ -247,7 +247,7 @@ The following tables list the types that have been declared obsolete in system a
 |<xref:System.Web.Configuration.PassportAuthentication?displayProperty=nameWithType>|This type is obsolete. The Passport authentication product is no longer supported and has been superseded by [Microsoft Account](https://account.microsoft.com/account/Account?destrt=home-index)|
 |<xref:System.Web.Mail.MailAttachment?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.Attachment?displayProperty=nameWithType>.|
 |<xref:System.Web.Mail.MailEncoding?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mime.TransferEncoding?displayProperty=nameWithType>.|
-|<xref:System.Web.Mail.MailFormat?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.MailMessage.IsBodyHtml%2A?displayProperty=nameWithType>.|
+|<xref:System.Web.Mail.MailFormat?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.MailMessage.IsBodyHtml?displayProperty=nameWithType>.|
 |<xref:System.Web.Mail.MailMessage?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.MailMessage?displayProperty=nameWithType>.|
 |<xref:System.Web.Mail.MailPriority?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.MailPriority?displayProperty=nameWithType>.|
 |<xref:System.Web.Mail.SmtpMail?displayProperty=nameWithType>|The recommended alternative is <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>.|

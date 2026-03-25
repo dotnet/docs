@@ -147,7 +147,7 @@ public class BankingTransaction
 [!code-csharp[MessageHeaderAttribute#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/messageheaderattribute/cs/services.cs#3)]
 [!code-vb[MessageHeaderAttribute#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/messageheaderattribute/vb/services.vb#3)]  
   
- To suppress the wrapper element, set the <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> property to `false`. To control the name and the namespace of the wrapper element, use the <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> and <xref:System.ServiceModel.MessageContractAttribute.WrapperNamespace%2A> properties.  
+ To suppress the wrapper element, set the <xref:System.ServiceModel.MessageContractAttribute.IsWrapped> property to `false`. To control the name and the namespace of the wrapper element, use the <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> and <xref:System.ServiceModel.MessageContractAttribute.WrapperNamespace%2A> properties.  
   
 > [!NOTE]
 > Having more than one message body part in messages that are not wrapped is not compliant with WS-I Basic Profile 1.1 and is not recommended when designing new message contracts. However, it may be necessary to have more than one unwrapped message body part in certain specific interoperability scenarios. If you are going to transmit more than one piece of data in a message body, it is recommended to use the default (wrapped) mode. Having more than one message header in unwrapped messages is completely acceptable.  
@@ -216,13 +216,13 @@ public class BankingDepositLog
 
  A message contract can indicate whether the headers and/or body of the message should be digitally signed and encrypted.  
   
- This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
+ This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel?displayProperty=nameWithType> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  For these security features to work, you must properly configure the binding and behaviors. If you use these security features without the proper configuration (for example, attempting to sign a message without supplying your credentials), an exception is thrown at validation time.  
   
  For message headers, the protection level is determined individually for each header.  
   
- For message body parts, the protection level can be thought of as the "minimum protection level." The body has only one protection level, regardless of the number of body parts. The protection level of the body is determined by the highest <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A> property setting of all the body parts. However, you should set the protection level of each body part to the actual minimum protection level required.  
+ For message body parts, the protection level can be thought of as the "minimum protection level." The body has only one protection level, regardless of the number of body parts. The protection level of the body is determined by the highest <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel> property setting of all the body parts. However, you should set the protection level of each body part to the actual minimum protection level required.  
   
  Consider the class in the following code example.  
   
@@ -384,7 +384,7 @@ public class PatientRecord : PersonRecord
   
 - The message headers are not supported; this means that the attribute <xref:System.ServiceModel.MessageHeaderAttribute> and the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute> are incompatible with SOAP encoding.  
   
-- If the message contract is not wrapped, that is, if the property <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is set to `false`, the message contract can have only one body part.  
+- If the message contract is not wrapped, that is, if the property <xref:System.ServiceModel.MessageContractAttribute.IsWrapped> is set to `false`, the message contract can have only one body part.  
   
 - The name of the wrapper element for the request message contract must match the operation name. Use the `WrapperName` property of the message contract for this.  
   

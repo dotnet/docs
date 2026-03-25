@@ -382,11 +382,11 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 
 - Be part of the entity’s identity.
 - Be expected to be modified.
-- Be a timestamp or have its <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> attribute set to something besides `Never`.
+- Be a timestamp or have its <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck> attribute set to something besides `Never`.
 
- If a table uses a timestamp or version number for an optimistic concurrency check, you must set those members before you call <xref:System.Data.Linq.ITable.Attach%2A>. A member is dedicated for optimistic concurrency checking when the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A> property is set to true on that Column attribute. Any requested updates will be submitted only if the version number or timestamp values are the same on the database.
+ If a table uses a timestamp or version number for an optimistic concurrency check, you must set those members before you call <xref:System.Data.Linq.ITable.Attach%2A>. A member is dedicated for optimistic concurrency checking when the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion> property is set to true on that Column attribute. Any requested updates will be submitted only if the version number or timestamp values are the same on the database.
 
- A member is also used in the optimistic concurrency check as long as the member does not have <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> set to `Never`. The default value is `Always` if no other value is specified.
+ A member is also used in the optimistic concurrency check as long as the member does not have <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck> set to `Never`. The default value is `Always` if no other value is specified.
 
  If any one of these required members is missing, a <xref:System.Data.Linq.ChangeConflictException> is thrown during <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ("Row not found or changed").
 

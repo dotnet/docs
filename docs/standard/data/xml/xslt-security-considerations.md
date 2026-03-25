@@ -22,7 +22,7 @@ The XSLT language has a rich set of features that give you a great deal of power
   
 ### Style Sheet Scripts  
 
- Scripts can be embedded in a style sheet using the `msxsl:script` extension element. Script support is an optional feature on the <xref:System.Xml.Xsl.XslCompiledTransform> class that is disabled by default. Scripting can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.
+ Scripts can be embedded in a style sheet using the `msxsl:script` extension element. Script support is an optional feature on the <xref:System.Xml.Xsl.XslCompiledTransform> class that is disabled by default. Scripting can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.
 
 > [!NOTE]
 > Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
@@ -40,7 +40,7 @@ The XSLT language has a rich set of features that give you a great deal of power
 - When executing the transformation, the <xref:System.Xml.XmlResolver> is used to resolve the `document()` function.  
   
     > [!NOTE]
-    > The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
+    > The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
  The <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> and <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> methods each include overloads that accept an <xref:System.Xml.XmlResolver> as one of its arguments. If an <xref:System.Xml.XmlResolver> is not specified, a default <xref:System.Xml.XmlUrlResolver> with no credentials is used.  
   

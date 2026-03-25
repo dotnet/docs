@@ -38,7 +38,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
 |**GetCurrentThread**|<xref:System.Threading.Thread.CurrentThread%2A?displayProperty=nameWithType>|  
 |**SetThreadPriority**|<xref:System.Threading.Thread.Priority%2A?displayProperty=nameWithType>|  
 |No equivalent|<xref:System.Threading.Thread.Name%2A?displayProperty=nameWithType>|  
-|No equivalent|<xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType>|  
+|No equivalent|<xref:System.Threading.Thread.IsBackground?displayProperty=nameWithType>|  
 |Close to **CoInitializeEx** (OLE32.DLL)|<xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>|  
   
 ## Managed threads and COM apartments

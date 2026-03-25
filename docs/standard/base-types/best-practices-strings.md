@@ -254,9 +254,9 @@ When using a Hungarian culture-aware comparer, the string `"endz"` *does not* en
 
 ### String operations that use the invariant culture
 
-Comparisons with the invariant culture use the <xref:System.Globalization.CultureInfo.CompareInfo%2A> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters. This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.
+Comparisons with the invariant culture use the <xref:System.Globalization.CultureInfo.CompareInfo> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters. This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.
 
-Case-insensitive comparisons with the invariant culture use the static <xref:System.Globalization.CultureInfo.CompareInfo%2A> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property for comparison information as well. Any case differences among these translated characters are ignored.
+Case-insensitive comparisons with the invariant culture use the static <xref:System.Globalization.CultureInfo.CompareInfo> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property for comparison information as well. Any case differences among these translated characters are ignored.
 
 Comparisons that use <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> and <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> work identically on ASCII strings. However, <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> makes linguistic decisions that might not be appropriate for strings that have to be interpreted as a set of bytes. The `CultureInfo.InvariantCulture.CompareInfo` object makes the <xref:System.String.Compare%2A> method interpret certain sets of characters as equivalent. For example, the following equivalence is valid under the invariant culture:
 
@@ -301,7 +301,7 @@ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProp
 
 As the operation most central to string interpretation, all instances of these method calls should be examined to determine whether strings should be interpreted according to the current culture, or dissociated from the culture (symbolically). Typically, it's the latter, and a <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> comparison should be used instead.
 
-The <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class, which is returned by the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property, also includes a <xref:System.Globalization.CompareInfo.Compare%2A> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <xref:System.Globalization.CompareOptions> flag enumeration.
+The <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class, which is returned by the <xref:System.Globalization.CultureInfo.CompareInfo?displayProperty=nameWithType> property, also includes a <xref:System.Globalization.CompareInfo.Compare%2A> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <xref:System.Globalization.CompareOptions> flag enumeration.
 
 ### `String.CompareTo`
 

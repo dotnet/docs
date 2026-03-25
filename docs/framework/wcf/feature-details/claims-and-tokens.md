@@ -17,7 +17,7 @@ You can examine the claims of a client credential by using the <xref:System.Iden
 
 - The <xref:System.IdentityModel.Claims.Claim.Resource%2A> property returns the resource associated with the claim.
 
-Each <xref:System.IdentityModel.Claims.ClaimSet> also has an <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property, which represents the <xref:System.IdentityModel.Claims.ClaimSet> of the `Issuer`.
+Each <xref:System.IdentityModel.Claims.ClaimSet> also has an <xref:System.IdentityModel.Claims.ClaimSet.Issuer> property, which represents the <xref:System.IdentityModel.Claims.ClaimSet> of the `Issuer`.
 
 ## Windows Accounts
 
@@ -63,7 +63,7 @@ Where the client authenticates with a Security Assertions Markup Language (SAML)
 
 ## Identity Claims and ServiceSecurityContext.IsAnonymous
 
-If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity`, then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.
+If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity`, then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.
 
 ## See also
 

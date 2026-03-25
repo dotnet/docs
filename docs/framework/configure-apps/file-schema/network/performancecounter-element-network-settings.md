@@ -54,7 +54,7 @@ Enables or disables networking performance counters.
 
  The default value is that networking performance counters are disabled.
 
- The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType> property can be used to get the current value of the `enabled` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled?displayProperty=nameWithType> property can be used to get the current value of the `enabled` attribute from applicable configuration files.
 
 ## Example
 
@@ -75,6 +75,6 @@ Enables or disables networking performance counters.
 ## See also
 
 - <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
-- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)
 - [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking-performance-counters)

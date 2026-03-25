@@ -17,7 +17,7 @@ When writing a WCF client application you need to know the endpoint address of t
   
  The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class contains two public properties:  
   
-1. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A>, which is used to describe the service you want to call.  
+1. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria>, which is used to describe the service you want to call.  
   
 2. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider%2A> which specifies the discovery endpoint to send discovery messages to.  
   

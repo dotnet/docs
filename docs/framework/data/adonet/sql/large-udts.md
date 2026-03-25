@@ -40,7 +40,7 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
 ## SqlDataReader Considerations
 
- The <xref:System.Data.SqlClient.SqlDataReader> has been extended beginning in SQL Server 2008 to support retrieving large UDT values. How large UDT values are processed by a <xref:System.Data.SqlClient.SqlDataReader> depends on the version of SQL Server you are using, as well as on the `Type System Version` specified in the connection string. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+ The <xref:System.Data.SqlClient.SqlDataReader> has been extended beginning in SQL Server 2008 to support retrieving large UDT values. How large UDT values are processed by a <xref:System.Data.SqlClient.SqlDataReader> depends on the version of SQL Server you are using, as well as on the `Type System Version` specified in the connection string. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
  The following methods of <xref:System.Data.SqlClient.SqlDataReader> will return a <xref:System.Data.SqlTypes.SqlBinary> instead of a UDT when the `Type System Version` is set to SQL Server 2005:
 

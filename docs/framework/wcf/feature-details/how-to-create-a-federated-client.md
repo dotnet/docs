@@ -21,7 +21,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
 3. Set the properties of the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>, which allows certificates needed to communicate securely with given endpoints, such as security token services.
 
 > [!NOTE]
-> A <xref:System.Security.Cryptography.CryptographicException> might be thrown when a client uses impersonated credentials, the <xref:System.ServiceModel.WSFederationHttpBinding> binding or a custom-issued token, and asymmetric keys. Asymmetric keys are used with the <xref:System.ServiceModel.WSFederationHttpBinding> binding and custom-issued tokens when the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType%2A> and <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> properties, respectively, are set to <xref:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey>. The <xref:System.Security.Cryptography.CryptographicException> is thrown when the client attempts to send a message and a user profile doesn’t exist for the identity that the client is impersonating. To mitigate this issue, log on to the client computer or call `LoadUserProfile` before sending the message.
+> A <xref:System.Security.Cryptography.CryptographicException> might be thrown when a client uses impersonated credentials, the <xref:System.ServiceModel.WSFederationHttpBinding> binding or a custom-issued token, and asymmetric keys. Asymmetric keys are used with the <xref:System.ServiceModel.WSFederationHttpBinding> binding and custom-issued tokens when the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType> and <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> properties, respectively, are set to <xref:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey>. The <xref:System.Security.Cryptography.CryptographicException> is thrown when the client attempts to send a message and a user profile doesn’t exist for the identity that the client is impersonating. To mitigate this issue, log on to the client computer or call `LoadUserProfile` before sending the message.
 
  This topic provides detailed information about these procedures. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). For more information about how a federated service works, see [Federation](federation.md).
 
@@ -42,7 +42,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
 
 ### To configure an IssuedTokenClientCredential in code
 
-1. Access the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> through the <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A> property of the <xref:System.ServiceModel.Description.ClientCredentials> class (returned by the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class, or through the <xref:System.ServiceModel.ChannelFactory> class), as shown in the following example code.
+1. Access the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> through the <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken> property of the <xref:System.ServiceModel.Description.ClientCredentials> class (returned by the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class, or through the <xref:System.ServiceModel.ChannelFactory> class), as shown in the following example code.
 
      [!code-csharp[c_CreateSTS#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#9)]
      [!code-vb[c_CreateSTS#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#9)]
@@ -54,7 +54,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
      [!code-csharp[c_CreateSTS#15](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#15)]
      [!code-vb[c_CreateSTS#15](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#15)]
 
-4. Optional. Set the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuedTokenRenewalThresholdPercentage%2A> to a percentage. The default is 60 (percent). The property specifies a percentage of the token's validity period. For example, if the issued token is valid for 10 hours and <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuedTokenRenewalThresholdPercentage%2A> is set to 80, then the token is renewed after eight hours. The following example sets the value to 80 percent.
+4. Optional. Set the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuedTokenRenewalThresholdPercentage> to a percentage. The default is 60 (percent). The property specifies a percentage of the token's validity period. For example, if the issued token is valid for 10 hours and <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuedTokenRenewalThresholdPercentage> is set to 80, then the token is renewed after eight hours. The following example sets the value to 80 percent.
 
      [!code-csharp[c_CreateSTS#16](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#16)]
      [!code-vb[c_CreateSTS#16](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#16)]
@@ -69,7 +69,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
     > [!NOTE]
     > If a <xref:System.ServiceModel.Channels.SecurityBindingElement> is present in a security token service or service binding, the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> set on <xref:System.ServiceModel.Security.IssuedTokenClientCredential> is overridden by the <xref:System.ServiceModel.Channels.SecurityBindingElement.KeyEntropyMode%2A> property of the `SecurityBindingElement`.
 
-6. Configure any issuer-specific endpoint behaviors by adding them to the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A> property.
+6. Configure any issuer-specific endpoint behaviors by adding them to the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors> property.
 
      [!code-csharp[c_CreateSTS#14](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#14)]
      [!code-vb[c_CreateSTS#14](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#14)]

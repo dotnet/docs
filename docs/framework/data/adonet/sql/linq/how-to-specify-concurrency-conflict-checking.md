@@ -13,7 +13,7 @@ You can specify which columns of the database are to be checked for concurrency 
   
 ## Example  
 
- The following code specifies that the `HomePage` member should never be tested during update checks. For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>.  
+ The following code specifies that the `HomePage` member should never be tested during update checks. For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck>.  
   
  [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
  [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  

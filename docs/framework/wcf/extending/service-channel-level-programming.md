@@ -49,7 +49,7 @@ This topic describes how to write a Windows Communication Foundation (WCF) servi
   
 #### Reading the Request and Sending a Reply  
 
- When <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> returns a <xref:System.ServiceModel.Channels.RequestContext>, we get the received message using its <xref:System.ServiceModel.Channels.RequestContext.RequestMessage%2A> property. We write out the message’s action and body content, (which we assume is a string).  
+ When <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> returns a <xref:System.ServiceModel.Channels.RequestContext>, we get the received message using its <xref:System.ServiceModel.Channels.RequestContext.RequestMessage> property. We write out the message’s action and body content, (which we assume is a string).  
   
  To send a reply, we create a new reply message in this case passing back the string data we received in the request. We then call <xref:System.ServiceModel.Channels.RequestContext.Reply%2A> to send the reply message.  
   

@@ -18,7 +18,7 @@ Applications that can do other work while waiting for the results of an asynchro
   
 - Use an <xref:System.AsyncCallback> delegate to process the results of the asynchronous operation in a separate thread. This approach is demonstrated in this topic.  
   
-- Use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin**_OperationName_ method to determine whether the operation has completed. For an example that demonstrates this approach, see [Polling for the Status of an Asynchronous Operation](polling-for-the-status-of-an-asynchronous-operation.md).  
+- Use the <xref:System.IAsyncResult.IsCompleted> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin**_OperationName_ method to determine whether the operation has completed. For an example that demonstrates this approach, see [Polling for the Status of an Asynchronous Operation](polling-for-the-status-of-an-asynchronous-operation.md).  
   
 ## Example  
 

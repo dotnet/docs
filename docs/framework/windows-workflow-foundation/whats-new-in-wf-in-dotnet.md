@@ -43,7 +43,7 @@ Flowcharts are updated for .NET Framework 4.5 and have the following new capabil
 
 - The `DisplayName` property of a <xref:System.Activities.Statements.FlowSwitch%601> or <xref:System.Activities.Statements.FlowDecision> activity is editable. This will let the activity designer show more information about the activity's purpose.
 
-- Flowcharts have a new property called <xref:System.Activities.Statements.Flowchart.ValidateUnconnectedNodes%2A>; the default for this property is `False`. If this property is set to `True`, then unconnected flowchart nodes will produce validation errors.
+- Flowcharts have a new property called <xref:System.Activities.Statements.Flowchart.ValidateUnconnectedNodes>; the default for this property is `False`. If this property is set to `True`, then unconnected flowchart nodes will produce validation errors.
 
 ## Support for Partial Trust
 

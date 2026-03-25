@@ -59,7 +59,7 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 |Control Pattern/Pattern Property|Support/Value|Notes|
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Progress bar controls that give a textual indication of progress must implement <xref:System.Windows.Automation.Provider.IValueProvider>.|
-|<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly%2A>|True|The value for this property is always True.|
+|<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly>|True|The value for this property is always True.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|See notes.|This property exposes textual progress of a progress bar control.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|Progress bar controls that take a numeric range must implement <xref:System.Windows.Automation.Provider.IRangeValueProvider>|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum%2A>|0.0|The value of this property is the smallest value that the control can be set to.|

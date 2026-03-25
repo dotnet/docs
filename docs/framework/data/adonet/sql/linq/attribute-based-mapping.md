@@ -48,14 +48,14 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
 |Property|Type|Default|Description|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>|AutoSync|Never|Instructs the common language runtime (CLR) to retrieve the value after an insert or update operation.<br /><br /> Options: Always, Never, OnUpdate, OnInsert.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull%2A>|Boolean|`true`|Indicates that a column can contain null values.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull>|Boolean|`true`|Indicates that a column can contain null values.|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.DbType%2A>|String|Inferred database column type|Uses database types and modifiers to specify the type of the database column.|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.Expression%2A>|String|Empty|Defines a computed column in a database.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>|Boolean|`false`|Indicates that a column contains values that the database auto-generates.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator%2A>|Boolean|`false`|Indicates that the column contains a discriminator value for a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] inheritance hierarchy.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey%2A>|Boolean|`false`|Specifies that this class member represents a column that is or is part of the primary keys of the table.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>|Boolean|`false`|Identifies the column type of the member as a database timestamp or version number.|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>|UpdateCheck|`Always`, unless <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A> is `true` for a member|Specifies how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] approaches the detection of optimistic concurrency conflicts.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated>|Boolean|`false`|Indicates that a column contains values that the database auto-generates.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator>|Boolean|`false`|Indicates that the column contains a discriminator value for a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] inheritance hierarchy.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey>|Boolean|`false`|Specifies that this class member represents a column that is or is part of the primary keys of the table.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion>|Boolean|`false`|Identifies the column type of the member as a database timestamp or version number.|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck>|UpdateCheck|`Always`, unless <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion> is `true` for a member|Specifies how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] approaches the detection of optimistic concurrency conflicts.|  
   
  For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute>.  
   
@@ -70,10 +70,10 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
   
 |Property|Type|Default|Description|  
 |--------------|----------|-------------|-----------------|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteOnNull%2A>|Boolean|`false`|When placed on an association whose foreign key members are all non-nullable, deletes the object when the association is set to null.|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule%2A>|String|None|Adds delete behavior to an association.|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey%2A>|Boolean|`false`|If true, designates the member as the foreign key in an association representing a database relationship.|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsUnique%2A>|Boolean|`false`|If true, indicates a uniqueness constraint on the foreign key.|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteOnNull>|Boolean|`false`|When placed on an association whose foreign key members are all non-nullable, deletes the object when the association is set to null.|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule>|String|None|Adds delete behavior to an association.|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey>|Boolean|`false`|If true, designates the member as the foreign key in an association representing a database relationship.|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsUnique>|Boolean|`false`|If true, indicates a uniqueness constraint on the foreign key.|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A>|String|ID of the related class|Designates one or more members of the target entity class as key values on the other side of the association.|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.ThisKey%2A>|String|ID of the containing class|Designates members of this entity class to represent the key values on this side of the association.|  
   
@@ -91,7 +91,7 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
 |Property|Type|Default|Description|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A>|String|None. Value must be supplied.|Specifies the code value of the discriminator.|  
-|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A>|Boolean|`false`|If true, instantiates an object of this type when no discriminator value in the store matches any one of the specified values.|  
+|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault>|Boolean|`false`|If true, instantiates an object of this type when no discriminator value in the store matches any one of the specified values.|  
 |<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type%2A>|Type|None. Value must be supplied.|Specifies the type of the class in the hierarchy.|  
   
  For more information, see <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute>.  
@@ -104,7 +104,7 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
   
 |Property|Type|Default|Description|  
 |--------------|----------|-------------|-----------------|  
-|<xref:System.Data.Linq.Mapping.FunctionAttribute.IsComposable%2A>|Boolean|`false`|If false, indicates mapping to a stored procedure. If true, indicates mapping to a user-defined function.|  
+|<xref:System.Data.Linq.Mapping.FunctionAttribute.IsComposable>|Boolean|`false`|If false, indicates mapping to a stored procedure. If true, indicates mapping to a user-defined function.|  
 |<xref:System.Data.Linq.Mapping.FunctionAttribute.Name%2A>|String|Same string as name in the database|Specifies the name of the stored procedure or user-defined function.|  
   
  For more information, see <xref:System.Data.Linq.Mapping.FunctionAttribute>.  

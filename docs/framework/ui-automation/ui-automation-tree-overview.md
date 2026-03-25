@@ -48,7 +48,7 @@ ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
 
  The control view is a subset of the raw view. It includes all UI items from the raw view that an end user would understand as interactive or contributing to the logical structure of the control in the UI. Examples of UI items that contribute to the logical structure of the UI, but are not interactive themselves, are item containers such as list view headers, toolbars, menus, and the status bar. Non-interactive items used simply for layout or decorative purposes will not be seen in the control view. An example is a panel that was used only to lay out the controls in a dialog but does not itself contain any information. Non-interactive items that will be seen in the control view are graphics with information and static text in a dialog. Non-interactive items that are included in the control view cannot receive keyboard focus.
 
- The control view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement%2A> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> to navigate the tree.
+ The control view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> to navigate the tree.
 
 <a name="uiautomation_content_view"></a>
 
@@ -56,7 +56,7 @@ ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
 
  The content view of the UI Automation tree is a subset of the control view. It contains UI items that convey the true information in a user interface, including UI items that can receive keyboard focus and some text that is not a label on a UI item. For example, the values in a drop-down combo box will appear in the content view because they represent the information being used by an end user. In the content view, a combo box and list box are both represented as a collection of UI items where one, or perhaps more than one, item can be selected. The fact that one is always open and one can expand and collapse is irrelevant in the content view because it is designed to show the data, or content, that is being presented to the user.
 
- The content view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> to navigate the tree.
+ The content view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> to navigate the tree.
 
 ## See also
 

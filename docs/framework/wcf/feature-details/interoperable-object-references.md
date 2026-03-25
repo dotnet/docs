@@ -6,7 +6,7 @@ ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b
 ---
 # Interoperable object references
 
-By default, <xref:System.Runtime.Serialization.DataContractSerializer> serializes objects by value. You can use the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> property to instruct the data contract serializer to preserve object references when serializing objects.  
+By default, <xref:System.Runtime.Serialization.DataContractSerializer> serializes objects by value. You can use the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference> property to instruct the data contract serializer to preserve object references when serializing objects.  
   
 ## Generated XML  
 
@@ -50,7 +50,7 @@ public class SomeClass
   
 ## Using IsReference  
 
- To generate object reference information that's valid according to the schema that describes it, apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to a type, and set the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> flag to `true`. The following example modifies class `X` in the previous example by adding `IsReference`:  
+ To generate object reference information that's valid according to the schema that describes it, apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to a type, and set the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference> flag to `true`. The following example modifies class `X` in the previous example by adding `IsReference`:  
   
 ```csharp
 [DataContract(IsReference=true)]

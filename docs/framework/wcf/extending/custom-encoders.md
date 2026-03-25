@@ -88,7 +88,7 @@ This topic discusses how to create custom encoders.
   
  It is the code you write in these methods that handles conversion between the standard transport protocol, and your customized encoding.  
   
- Next you need to code a factory class that creates your custom encoder. Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>.  
+ Next you need to code a factory class that creates your custom encoder. Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>.  
   
  Then connect your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
   

@@ -77,14 +77,14 @@ As applications evolve, you may also have to change the data contracts the servi
   
 ## Required Data Members  
 
- A data member may be marked as being required by setting the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to `true`. If required data is missing while deserializing, an exception is thrown instead of setting the data member to its default value.  
+ A data member may be marked as being required by setting the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to `true`. If required data is missing while deserializing, an exception is thrown instead of setting the data member to its default value.  
   
  Adding a required data member is a breaking change. That is, the newer type can still be sent to endpoints with the older type, but not the other way around. Removing a data member that was marked as required in any prior version is also a breaking change.  
   
- Changing the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property value from `true` to `false` is not breaking, but changing it from `false` to `true` may be breaking if any prior versions of the type do not have the data member in question.  
+ Changing the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property value from `true` to `false` is not breaking, but changing it from `false` to `true` may be breaking if any prior versions of the type do not have the data member in question.  
   
 > [!NOTE]
-> Although the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property is set to `true`, the incoming data may be null or zero, and a type must be prepared to handle this possibility. Do not use <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> as a security mechanism to protect against bad incoming data.  
+> Although the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property is set to `true`, the incoming data may be null or zero, and a type must be prepared to handle this possibility. Do not use <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> as a security mechanism to protect against bad incoming data.  
   
 ## Omitted Default Values  
 
@@ -126,7 +126,7 @@ Naturally, changing the data contract of contents of a collection (for example, 
 - <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>
 - <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
-- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired>
 - <xref:System.Runtime.Serialization.SerializationException>
 - <xref:System.Runtime.Serialization.IExtensibleDataObject>
 - [Version-Tolerant Serialization Callbacks](version-tolerant-serialization-callbacks.md)

@@ -51,6 +51,8 @@ items:
     items:
     - name: Overview
       href: fundamentals/types/index.md
+    - name: Built-in types and literals
+      href: fundamentals/types/built-in-types.md
     # TODO: tuples
     - name: Classes
       href: fundamentals/types/classes.md
@@ -60,6 +62,8 @@ items:
     # TODO: structs
     - name: Interfaces
       href: fundamentals/types/interfaces.md
+    - name: Enumerations
+      href: fundamentals/types/enums.md
     - name: Generics
       href: fundamentals/types/generics.md
     - name: Tuples and anonymous types
@@ -150,21 +154,13 @@ items:
 - name: What's new in C#
   items:
   - name: C# 15
-    items:
-    - name: What's new in C# 15
-      href: whats-new/csharp-15.md
+    href: whats-new/csharp-15.md
   - name: C# 14
-    items:
-    - name: What's new in C# 14
-      href: whats-new/csharp-14.md
+    href: whats-new/csharp-14.md
   - name: C# 13
-    items:
-    - name: What's new in C# 13
-      href: whats-new/csharp-13.md
+    href: whats-new/csharp-13.md
   - name: C# 12
-    items:
-    - name: What's new in C# 12
-      href: whats-new/csharp-12.md
+    href: whats-new/csharp-12.md
   - name: Breaking changes
     items:
     - name: After C# 14

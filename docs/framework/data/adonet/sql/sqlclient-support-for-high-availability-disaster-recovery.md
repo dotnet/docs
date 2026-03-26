@@ -34,7 +34,7 @@ This article discusses SqlClient support (added in .NET Framework 4.5) for high 
 
  The `MultiSubnetFailover` connection property indicates that the application is using either an AG or FCI and that SqlClient will try to connect to the database on the primary SQL Server instance by trying to connect to all the IP addresses. When `MultiSubnetFailover=True` is specified for a connection, the client retries TCP connection attempts faster than the operating system’s default TCP retransmit intervals. This enables faster reconnection after failover of either an AG or FCI, and is applicable to both single- and multi-subnet AGs and FCIs.
 
- For more information about connection string keywords in SqlClient, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+ For more information about connection string keywords in SqlClient, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
  Specifying `MultiSubnetFailover=True` when connecting to something other than an AG or FCI may result in a negative performance impact, and is not supported.
 

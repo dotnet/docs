@@ -13,7 +13,7 @@ The following features are new in ADO.NET in .NET Framework 4.5.
 
 The following features are new in the .NET Framework Data Provider for SQL Server in .NET Framework 4.5:
 
-- The `ConnectRetryCount` and `ConnectRetryInterval` connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
+- The `ConnectRetryCount` and `ConnectRetryInterval` connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString>) let you control the idle connection resiliency feature.
 
 - Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured. For more information, see [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
@@ -25,7 +25,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. For more information, see <xref:System.Data.SqlClient.SqlCredential>.
 
-- When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+- When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
   If this change causes an existing application to no longer connect, you can fix the application using one of the following:
 
@@ -39,7 +39,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - SqlClient supports connections to LocalDB databases. For more information, see [SqlClient Support for LocalDB](./sql/sqlclient-support-for-localdb.md).
 
-- `Type System Version=SQL Server 2012;` is new value to pass to the `Type System Version` connection property. The `Type System Version=Latest;` value is now obsolete and has been made equivalent to `Type System Version=SQL Server 2008;`. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+- `Type System Version=SQL Server 2012;` is new value to pass to the `Type System Version` connection property. The `Type System Version=Latest;` value is now obsolete and has been made equivalent to `Type System Version=SQL Server 2008;`. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
 - SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Use Sparse Columns](/sql/relational-databases/tables/use-sparse-columns).
 

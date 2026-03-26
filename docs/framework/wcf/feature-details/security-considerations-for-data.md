@@ -280,7 +280,7 @@ This situation can be avoided by being aware of the following points:
 
 - Take care using legacy types marked with the <xref:System.SerializableAttribute> attribute. Many of them were designed to work with .NET Framework remoting for use with trusted data only. Existing types marked with this attribute may not have been designed with state safety in mind.
 
-- Do not rely on the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to guarantee presence of data as far as state safety is concerned. Data could always be `null`, `zero`, or `invalid`.
+- Do not rely on the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to guarantee presence of data as far as state safety is concerned. Data could always be `null`, `zero`, or `invalid`.
 
 - Never trust an object graph deserialized from an untrusted data source without validating it first. Each individual object may be in a consistent state, but the object graph as a whole may not be. Furthermore, even if the object graph preservation mode is disabled, the deserialized graph may have multiple references to the same object or have circular references. For more information, see [Serialization and Deserialization](serialization-and-deserialization.md).
 

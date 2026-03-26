@@ -5,7 +5,7 @@ namespace ExtensionMembers;
 
 public static class PointExtensions
 {
-    extension(Point point)
+    extension(ref Point point)
     {
         public static Point Origin => Point.Empty;
 

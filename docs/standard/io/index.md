@@ -53,7 +53,7 @@ Streams involve three fundamental operations:
 
 - Seeking - querying and modifying the current position within a stream.
 
-Depending on the underlying data source or repository, a stream might support only some of these capabilities. For example, the <xref:System.IO.Pipes.PipeStream> class does not support seeking. The <xref:System.IO.Stream.CanRead%2A>, <xref:System.IO.Stream.CanWrite%2A>, and <xref:System.IO.Stream.CanSeek%2A> properties of a stream specify the operations that the stream supports.
+Depending on the underlying data source or repository, a stream might support only some of these capabilities. For example, the <xref:System.IO.Pipes.PipeStream> class does not support seeking. The <xref:System.IO.Stream.CanRead>, <xref:System.IO.Stream.CanWrite>, and <xref:System.IO.Stream.CanSeek> properties of a stream specify the operations that the stream supports.
 
 Here are some commonly used stream classes:
 

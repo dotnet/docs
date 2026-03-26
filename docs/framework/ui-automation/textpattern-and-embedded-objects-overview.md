@@ -44,9 +44,9 @@ Example of a text stream with embedded objects and their range spans
 
 1. The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans <xref:System.Windows.Automation.Text.TextUnit> boundaries: for example, `{The URL https://www.microsoft.com is embedded in text` where "{" and "}" are the text range endpoints.
 
-2. The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to the beginning of the requested <xref:System.Windows.Automation.Text.TextUnit> boundary.
+2. The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange> to the beginning of the requested <xref:System.Windows.Automation.Text.TextUnit> boundary.
 
-3. The range is moved forward or backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> by the requested number of <xref:System.Windows.Automation.Text.TextUnit> boundaries.
+3. The range is moved forward or backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange> by the requested number of <xref:System.Windows.Automation.Text.TextUnit> boundaries.
 
 4. The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint by one requested <xref:System.Windows.Automation.Text.TextUnit> boundary.
 

@@ -53,9 +53,9 @@ The .NET Core resource fallback process involves the following steps:
 
 4. The <xref:System.Resources.ResourceManager> next searches the parent culture assemblies through many potential levels, each time repeating steps 2 & 3.
 
-    Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property.
+    Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent?displayProperty=nameWithType> property.
 
-    The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property is <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType>.
+    The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent> property is <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType>.
 
     For the <xref:System.Globalization.CultureInfo.InvariantCulture>, we don't return to steps 2 & 3, but rather continue with step 5.
 

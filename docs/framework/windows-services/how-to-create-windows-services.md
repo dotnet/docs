@@ -42,14 +42,14 @@ When you create a service, you can use a Visual Studio project template called *
   
     |Property|Setting|  
     |--------------|-------------|  
-    |<xref:System.ServiceProcess.ServiceBase.CanStop%2A>|`True` to indicate that the service will accept requests to stop running; `false` to prevent the service from being stopped.|  
-    |<xref:System.ServiceProcess.ServiceBase.CanShutdown%2A>|`True` to indicate that the service wants to receive notification when the computer on which it lives shuts down, enabling it to call the <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> procedure.|  
-    |<xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue%2A>|`True` to indicate that the service will accept requests to pause or to resume running; `false` to prevent the service from being paused and resumed.|  
-    |<xref:System.ServiceProcess.ServiceBase.CanHandlePowerEvent%2A>|`True` to indicate that the service can handle notification of changes to the computer's power status; `false` to prevent the service from being notified of these changes.|  
+    |<xref:System.ServiceProcess.ServiceBase.CanStop>|`True` to indicate that the service will accept requests to stop running; `false` to prevent the service from being stopped.|  
+    |<xref:System.ServiceProcess.ServiceBase.CanShutdown>|`True` to indicate that the service wants to receive notification when the computer on which it lives shuts down, enabling it to call the <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> procedure.|  
+    |<xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue>|`True` to indicate that the service will accept requests to pause or to resume running; `false` to prevent the service from being paused and resumed.|  
+    |<xref:System.ServiceProcess.ServiceBase.CanHandlePowerEvent>|`True` to indicate that the service can handle notification of changes to the computer's power status; `false` to prevent the service from being notified of these changes.|  
     |<xref:System.ServiceProcess.ServiceBase.AutoLog%2A>|`True` to write informational entries to the Application event log when your service performs an action; `false` to disable this functionality. For more information, see [How to: Log Information About Services](how-to-log-information-about-services.md). **Note:**  By default, <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> is set to `true`.|  
   
     > [!NOTE]
-    > When <xref:System.ServiceProcess.ServiceBase.CanStop%2A> or <xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue%2A> are set to `false`, the **Service Control Manager** will disable the corresponding menu options to stop, pause, or continue the service.  
+    > When <xref:System.ServiceProcess.ServiceBase.CanStop> or <xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue> are set to `false`, the **Service Control Manager** will disable the corresponding menu options to stop, pause, or continue the service.  
   
 4. Access the Code Editor and fill in the processing you want for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures.  
   

@@ -19,7 +19,7 @@ The workflow runtime is instrumented to emit tracking records to follow the exec
 |Bookmark resumption records|Emitted whenever a bookmark within a workflow instance is resumed.|  
 |Custom tracking records|A workflow author can create custom tracking records and emit them within a custom activity.|  
   
- All tracking-related records emitted from the WF runtime derive from the base class <xref:System.Activities.Tracking.TrackingRecord>, which contains the common set of data. Tracking records show the life cycle for a simple workflow. Each tracking record contains details about the associated tracking event, such as the <xref:System.Activities.Tracking.TrackingRecord.InstanceId%2A>, <xref:System.Activities.Tracking.TrackingRecord.RecordNumber%2A>, and additional information specific to the type of tracking record.  
+ All tracking-related records emitted from the WF runtime derive from the base class <xref:System.Activities.Tracking.TrackingRecord>, which contains the common set of data. Tracking records show the life cycle for a simple workflow. Each tracking record contains details about the associated tracking event, such as the <xref:System.Activities.Tracking.TrackingRecord.InstanceId%2A>, <xref:System.Activities.Tracking.TrackingRecord.RecordNumber>, and additional information specific to the type of tracking record.  
   
  The following types of <xref:System.Activities.Tracking.TrackingRecord> objects are emitted by the workflow runtime:  
   

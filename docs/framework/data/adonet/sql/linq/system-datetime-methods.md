@@ -25,7 +25,7 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
 |<xref:System.DateTime.AddYears%2A>||<xref:System.DateTime.Now%2A>|
 |<xref:System.DateTime.Compare%2A>||<xref:System.DateTime.Second%2A>|
 |<xref:System.DateTime.CompareTo%28System.DateTime%29>||<xref:System.DateTime.TimeOfDay%2A>|
-|<xref:System.DateTime.Equals%28System.DateTime%29>||<xref:System.DateTime.Today%2A>|
+|<xref:System.DateTime.Equals%28System.DateTime%29>||<xref:System.DateTime.Today>|
 |||<xref:System.DateTime.Year%2A>|
 
 ## Members Not Supported by LINQ to SQL

@@ -139,7 +139,7 @@ Each complex type \<xs:complexType> maps to a data contract.
 |`form`|Must be qualified. This attribute can be set through `elementFormDefault` on `xs:schema`.|
 |`id`|Ignored.|
 |`maxOccurs`|1|
-|`minOccurs`|Maps to the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of a data member (`IsRequired` is true when `minOccurs` is 1).|
+|`minOccurs`|Maps to the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property of a data member (`IsRequired` is true when `minOccurs` is 1).|
 |`nillable`|Affects type mapping. See Type/primitive mapping.|
 
 ### \<xs:element> with maxOccurs>1 within an \<xs:sequence> (Collections)

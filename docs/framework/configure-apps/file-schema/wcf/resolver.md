@@ -54,8 +54,8 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
 
 - <xref:System.ServiceModel.PeerResolver>
 - <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>
-- <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>
-- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>
+- <xref:System.ServiceModel.NetPeerTcpBinding.Resolver>
+- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver>
 - <xref:System.ServiceModel.Configuration.PeerResolverElement>
 - [Peer Resolvers](../../../wcf/feature-details/peer-resolvers.md)
 - [Adding a Custom Resolver to a PeerChannel Application](/previous-versions/ms730105(v=vs.90))

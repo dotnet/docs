@@ -189,7 +189,7 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
 
 ### One-Way Message Exchange Patterns
 
- You can also create an asynchronous message exchange pattern in which one-way operations (operations for which the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=nameWithType> is `true` have no correlated response) can be sent in either direction by the client or service independently of the other side. (This uses the duplex message exchange pattern with one-way messages.) In this case, the service contract specifies a one-way message exchange that either side can implement as asynchronous calls or implementations, or not, as appropriate. Generally, when the contract is an exchange of one-way messages, the implementations can largely be asynchronous because once a message is sent the application does not wait for a reply and can continue doing other work.
+ You can also create an asynchronous message exchange pattern in which one-way operations (operations for which the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay?displayProperty=nameWithType> is `true` have no correlated response) can be sent in either direction by the client or service independently of the other side. (This uses the duplex message exchange pattern with one-way messages.) In this case, the service contract specifies a one-way message exchange that either side can implement as asynchronous calls or implementations, or not, as appropriate. Generally, when the contract is an exchange of one-way messages, the implementations can largely be asynchronous because once a message is sent the application does not wait for a reply and can continue doing other work.
 
 ### Event-based Asynchronous Clients and Message Contracts
 
@@ -199,5 +199,5 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
 
 ## See also
 
-- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>
 - <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>

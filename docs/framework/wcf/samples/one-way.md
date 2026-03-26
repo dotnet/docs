@@ -11,7 +11,7 @@ The [Oneway sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Ba
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
-To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` as shown in the following sample code:
+To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> to `true` as shown in the following sample code:
 
 ```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]

@@ -30,7 +30,7 @@ Subsequent versions of an assembly that differ only by build or revision numbers
 > [!IMPORTANT]
 > The value of <xref:System.Version> properties that have not been explicitly assigned a value is undefined (-1).
 
-The <xref:System.Version.MajorRevision*> and <xref:System.Version.MinorRevision*> properties enable you to identify a temporary version of your application that, for example, corrects a problem until you can release a permanent solution. Furthermore, the Windows NT operating system uses the <xref:System.Version.MajorRevision> property to encode the service pack number.
+The <xref:System.Version.MajorRevision> and <xref:System.Version.MinorRevision> properties enable you to identify a temporary version of your application that, for example, corrects a problem until you can release a permanent solution. Furthermore, the Windows NT operating system uses the <xref:System.Version.MajorRevision> property to encode the service pack number.
 
 ## Assign version information to assemblies
 

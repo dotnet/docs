@@ -5,14 +5,14 @@ ms.date: "05/22/2018"
 ---
 # Connection string syntax
 
-Each .NET Framework data provider has a `Connection` object that inherits from <xref:System.Data.Common.DbConnection> as well as a provider-specific <xref:System.Data.Common.DbConnection.ConnectionString%2A> property. The specific connection string syntax for each provider is documented in its `ConnectionString` property. The following table lists the four data providers that are included in .NET Framework.
+Each .NET Framework data provider has a `Connection` object that inherits from <xref:System.Data.Common.DbConnection> as well as a provider-specific <xref:System.Data.Common.DbConnection.ConnectionString> property. The specific connection string syntax for each provider is documented in its `ConnectionString` property. The following table lists the four data providers that are included in .NET Framework.
 
 | .NET Framework data provider | Description |
 |------------------------------|-------------|
-|<xref:System.Data.SqlClient>|Provides data access for Microsoft SQL Server. For more information on connection string syntax, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.|
-|<xref:System.Data.OleDb>|Provides data access for data sources exposed using OLE DB. For more information on connection string syntax, see <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>.|
-|<xref:System.Data.Odbc>|Provides data access for data sources exposed using ODBC. For more information on connection string syntax, see <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A>.|
-|<xref:System.Data.OracleClient>|Provides data access for Oracle version 8.1.7 or later. For more information on connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.|
+|<xref:System.Data.SqlClient>|Provides data access for Microsoft SQL Server. For more information on connection string syntax, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.|
+|<xref:System.Data.OleDb>|Provides data access for data sources exposed using OLE DB. For more information on connection string syntax, see <xref:System.Data.OleDb.OleDbConnection.ConnectionString>.|
+|<xref:System.Data.Odbc>|Provides data access for data sources exposed using ODBC. For more information on connection string syntax, see <xref:System.Data.Odbc.OdbcConnection.ConnectionString>.|
+|<xref:System.Data.OracleClient>|Provides data access for Oracle version 8.1.7 or later. For more information on connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString>.|
 
 ## Connection string builders
 
@@ -43,7 +43,7 @@ Windows Authentication (sometimes referred to as *integrated security*) can be u
 
 ## SqlClient connection strings
 
-The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is documented in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> property. You can use the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property to get or set a connection string for a SQL Server database. If you need to connect to an earlier version of SQL Server, you must use the .NET Framework Data Provider for OleDb (<xref:System.Data.OleDb>). Most connection string keywords also map to properties in the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
+The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is documented in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> property. You can use the <xref:System.Data.SqlClient.SqlConnection.ConnectionString> property to get or set a connection string for a SQL Server database. If you need to connect to an earlier version of SQL Server, you must use the .NET Framework Data Provider for OleDb (<xref:System.Data.OleDb>). Most connection string keywords also map to properties in the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
 
 > [!IMPORTANT]
 > The default setting for the `Persist Security Info` keyword is `false`. Setting it to `true` or `yes` allows security-sensitive information, including the user ID and password, to be obtained from the connection after the connection has been opened. Keep `Persist Security Info` set to `false` to ensure that an untrusted source does not have access to sensitive connection string information.
@@ -90,7 +90,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 
 ### Type system version changes
 
- The `Type System Version` keyword in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> specifies the client-side representation of SQL Server types. See <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> for more information about the `Type System Version` keyword.
+ The `Type System Version` keyword in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> specifies the client-side representation of SQL Server types. See <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> for more information about the `Type System Version` keyword.
 
 ## Connect and attach to SQL Server Express user instances
 
@@ -131,7 +131,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 
 ## OleDb connection strings
 
- The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at runtime by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
+ The <xref:System.Data.OleDb.OleDbConnection.ConnectionString> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at runtime by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
 
 ### OleDb connection string syntax
 
@@ -187,7 +187,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=
 
 ## Odbc connection strings
 
- The <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A> property of a <xref:System.Data.Odbc.OdbcConnection> allows you to get or set a connection string for an OLE DB data source. Odbc connection strings are also supported by the <xref:System.Data.Odbc.OdbcConnectionStringBuilder>.
+ The <xref:System.Data.Odbc.OdbcConnection.ConnectionString> property of a <xref:System.Data.Odbc.OdbcConnection> allows you to get or set a connection string for an OLE DB data source. Odbc connection strings are also supported by the <xref:System.Data.Odbc.OdbcConnectionStringBuilder>.
 
  The following connection string uses the Microsoft Text Driver.
 
@@ -197,13 +197,13 @@ Driver={Microsoft Text Driver (*.txt; *.csv)};DBQ=d:\bin
 
 ## Oracle connection strings
 
- The <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property of a <xref:System.Data.OracleClient.OracleConnection> allows you to get or set a connection string for an OLE DB data source. Oracle connection strings are also supported by the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> .
+ The <xref:System.Data.OracleClient.OracleConnection.ConnectionString> property of a <xref:System.Data.OracleClient.OracleConnection> allows you to get or set a connection string for an OLE DB data source. Oracle connection strings are also supported by the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> .
 
 ```csharp
 Data Source=Oracle9i;User ID=*****;Password=*****;
 ```
 
- For more information on ODBC connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.
+ For more information on ODBC connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString>.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 

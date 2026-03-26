@@ -73,7 +73,7 @@ Specifies the parameters for a security token issued in a Federated security sce
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>
-- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Bindings](../../../wcf/bindings.md)
 - [Extending Bindings](../../../wcf/extending/extending-bindings.md)

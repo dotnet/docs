@@ -198,7 +198,7 @@ The <xref:System.String.Format*> method throws a <xref:System.FormatException> e
 
 ## Format and culture
 
-Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture*?displayProperty=nameWithType> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format*> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.
+Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format*> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.
 
 The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat*>, which is responsible for returning the object that provides formatting information. .NET has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:
 

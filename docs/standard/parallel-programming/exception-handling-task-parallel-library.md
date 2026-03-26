@@ -28,7 +28,7 @@ If you do not want to call the <xref:System.Threading.Tasks.Task.Wait%2A?display
 [!code-vb[TPL_Exceptions#29](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/handling22.vb#29)]
 
 > [!CAUTION]
-> The preceding example code includes a `while` loop that polls the task's <xref:System.Threading.Tasks.Task.IsCompleted%2A?displayProperty=nameWithType> property to determine when the task has completed. This should never be done in production code as it is very inefficient.
+> The preceding example code includes a `while` loop that polls the task's <xref:System.Threading.Tasks.Task.IsCompleted?displayProperty=nameWithType> property to determine when the task has completed. This should never be done in production code as it is very inefficient.
 
 If you do not wait on a task that propagates an exception, or access its <xref:System.Threading.Tasks.Task.Exception%2A> property, the exception is escalated according to the .NET exception policy when the task is garbage-collected.
 

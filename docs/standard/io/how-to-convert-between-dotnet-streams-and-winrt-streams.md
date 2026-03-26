@@ -82,7 +82,7 @@ When you convert a .NET Framework stream to a Windows Runtime stream, the capabi
 To convert from a .NET Framework stream to a Windows Runtime random-access stream, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream%2A> method, as shown in the following example:
 
 > [!IMPORTANT]
-> Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.
+> Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek?displayProperty=nameWithType> property to determine this.
 
 ```csharp
 // Create an HttpClient and access an image as a stream.

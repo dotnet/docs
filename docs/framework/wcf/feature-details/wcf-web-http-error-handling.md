@@ -43,7 +43,7 @@ public string Operation2()
   
 - The value of <xref:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled%2A>.  
   
-- The value of the <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format%2A> property by accessing the <xref:System.ServiceModel.Web.OutgoingWebResponseContext>.  
+- The value of the <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format> property by accessing the <xref:System.ServiceModel.Web.OutgoingWebResponseContext>.  
   
  For more information about how these values affect the formatting of the operation, see [WCF Web HTTP Formatting](wcf-web-http-formatting.md).  
   

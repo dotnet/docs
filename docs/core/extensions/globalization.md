@@ -48,7 +48,7 @@ Even if you are developing an app that targets a single culture or region, you s
 - There's no need to duplicate strings. Developers who don't use resource files often define the same string in multiple source code files. This duplication increases the probability that one or more instances will be overlooked when a string is modified.
 - You can include non-string resources, such as images or binary data, in the resource file instead of storing them in a separate standalone file, so they can be retrieved easily.
 
-Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.
+Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.
 
 For more information about creating resource files, see [Creating resource files](create-resource-files.md). For information about creating and deploying satellite assemblies, see [Create satellite assemblies](create-satellite-assemblies.md) and [Package and Deploy resources](package-and-deploy-resources.md).
 
@@ -126,7 +126,7 @@ How you handle date and time values depends on whether they are displayed in the
 
 ### Display dates and times
 
-Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:
+Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:
 
 - The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method.
 - The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string.
@@ -152,7 +152,7 @@ You can avoid this problem in any of three ways:
 - Save and parse the string representation of the date and time by using a custom format string that is the same regardless of the user's culture.
 - Save the string by using the formatting conventions of the invariant culture.
 
-The following example illustrates the last approach. It uses the formatting conventions of the invariant culture returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.
+The following example illustrates the last approach. It uses the formatting conventions of the invariant culture returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.
 
 [!code-csharp[Conceptual.Globalization#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates3.cs#4)]
 [!code-vb[Conceptual.Globalization#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates3.vb#4)]
@@ -252,13 +252,13 @@ The handling of numbers depends on whether they are displayed in the user interf
 
 ### Display numeric values
 
-Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date in the following ways:
+Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date in the following ways:
 
 - Using the parameterless `ToString` method of any numeric type.
 - Using the `ToString(String)` method of any numeric type, which includes a format string as an argument.
 - Using [composite formatting](../../standard/base-types/composite-formatting.md) with numeric values.
 
-The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> array.
+The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames?displayProperty=nameWithType> array.
 
 [!code-csharp[Conceptual.Globalization#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/numbers1.cs#5)]
 [!code-vb[Conceptual.Globalization#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/numbers1.vb#5)]
@@ -273,7 +273,7 @@ You should never persist numeric data in a culture-specific format. This is a co
 To avoid this problem, you can use one of these techniques:
 
 - Save and parse the string representation of the number by using a custom format string that is the same regardless of the user's culture.
-- Save the number as a string by using the formatting conventions of the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.
+- Save the number as a string by using the formatting conventions of the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.
 
 Serializing currency values is a special case. Because a currency value depends on the unit of currency in which it's expressed, it makes little sense to treat it as an independent numeric value. However, if you save a currency value as a formatted string that includes a currency symbol, it cannot be deserialized on a system whose default culture uses a different currency symbol, as the following example shows.
 
@@ -291,11 +291,11 @@ In .NET, the <xref:System.Globalization.CultureInfo> class represents a particul
 
 - The <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.CompareInfo> object that contains information about how the culture compares and orders strings.
 
-- The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific information used in formatting date and time data.
+- The <xref:System.Globalization.CultureInfo.DateTimeFormat?displayProperty=nameWithType> property returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific information used in formatting date and time data.
 
-- The <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information used in formatting numeric data.
+- The <xref:System.Globalization.CultureInfo.NumberFormat?displayProperty=nameWithType> property returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information used in formatting numeric data.
 
-- The <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.TextInfo> object that provides information about the culture's writing system.
+- The <xref:System.Globalization.CultureInfo.TextInfo?displayProperty=nameWithType> property returns a <xref:System.Globalization.TextInfo> object that provides information about the culture's writing system.
 
 In general, do not make any assumptions about the values of specific <xref:System.Globalization.CultureInfo> properties and their related objects. Instead, you should view culture-specific data as subject to change, for these reasons:
 

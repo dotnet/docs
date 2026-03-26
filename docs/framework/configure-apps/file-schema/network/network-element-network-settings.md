@@ -76,7 +76,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 
  For basic authentication if you specify a `userName`, you should also specify a `password` to authentication yourself to the mail server.
 
- The <xref:System.Net.Configuration.SmtpNetworkElement.UserName%2A?displayProperty=nameWithType> property can be used to get the current value of the `userName` attribute from applicable configuration files. The <xref:System.Net.Configuration.SmtpNetworkElement.Password%2A?displayProperty=nameWithType> property can be used to get the current value of the `password` attribute from applicable configuration files. A `password` attribute would not normally be entered in configuration files for security reasons.
+ The <xref:System.Net.Configuration.SmtpNetworkElement.UserName?displayProperty=nameWithType> property can be used to get the current value of the `userName` attribute from applicable configuration files. The <xref:System.Net.Configuration.SmtpNetworkElement.Password?displayProperty=nameWithType> property can be used to get the current value of the `password` attribute from applicable configuration files. A `password` attribute would not normally be entered in configuration files for security reasons.
 
  The `clientDomain` attribute changes the client domain name used in the initial SMTP protocol request to an SMTP server. The `clientDomain` attribute can be set to the fully-qualified domain name of the local machine, rather than the localhost name that is used by default. This provides greater compliance with the SMTP protocol standards. The default value is the localhost name of the local computer sending the request. The <xref:System.Net.Configuration.SmtpNetworkElement.ClientDomain%2A?displayProperty=nameWithType> property can be used to get the current value of the `clientDomain` attribute from applicable configuration files.
 
@@ -86,7 +86,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 
  An alternate connection method is where an SSL session is established up front before any protocol commands are sent. This connection method is sometimes called SMTPS and by default uses port 465. This alternate connection method using SSL is not currently supported.
 
- The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.
 
 ## Example
 

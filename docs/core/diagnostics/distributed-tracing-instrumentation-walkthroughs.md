@@ -412,7 +412,7 @@ can show this as a Gantt chart:
 
 ## Optional: ActivityKind
 
-Activities have an <xref:System.Diagnostics.Activity.Kind%2A?displayProperty=nameWithType> property, which
+Activities have an <xref:System.Diagnostics.Activity.Kind?displayProperty=nameWithType> property, which
 describes the relationship between the Activity, its parent, and its children. By default, all new Activities are
 set to <xref:System.Diagnostics.ActivityKind.Internal>, which is appropriate for Activities that are an
 internal operation within an application with no remote parent or children. Other kinds can be set using the
@@ -428,7 +428,7 @@ to have a single parent, it can link to additional trace-ids using
 <xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType>. Each ActivityLink is
 populated with an <xref:System.Diagnostics.ActivityContext> that
 stores ID information about the Activity being linked to. ActivityContext can be retrieved from in-process
-Activity objects using <xref:System.Diagnostics.Activity.Context%2A?displayProperty=nameWithType> or
+Activity objects using <xref:System.Diagnostics.Activity.Context?displayProperty=nameWithType> or
 it can be parsed from serialized ID information using
 <xref:System.Diagnostics.ActivityContext.Parse(System.String,System.String)?displayProperty=nameWithType>.
 

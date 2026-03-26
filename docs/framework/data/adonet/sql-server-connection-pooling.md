@@ -94,7 +94,7 @@ For more info about the events associated with opening and closing connections, 
 
 ## Control connection pooling with connection string keywords
 
- The `ConnectionString` property of the <xref:System.Data.SqlClient.SqlConnection> object supports connection string key/value pairs that can be used to adjust the behavior of the connection pooling logic. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+ The `ConnectionString` property of the <xref:System.Data.SqlClient.SqlConnection> object supports connection string key/value pairs that can be used to adjust the behavior of the connection pooling logic. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
 ## Pool fragmentation
 

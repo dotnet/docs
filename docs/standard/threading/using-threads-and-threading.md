@@ -44,8 +44,8 @@ The following table presents some of the <xref:System.Threading.Thread> properti
   
 |Property|Description|  
 |--------------|-----------|  
-|<xref:System.Threading.Thread.IsAlive%2A>|Returns `true` if a thread has been started and hasn't yet terminated normally or aborted.|  
-|<xref:System.Threading.Thread.IsBackground%2A>|Gets or sets a Boolean that indicates if a thread is a background thread. Background threads are like foreground threads. However, a background thread doesn't prevent a process from stopping. Once all foreground threads that belong to a process have stopped, the common language runtime ends the process by calling the <xref:System.Threading.Thread.Abort%2A> method on background threads that are still alive. For more information, see [Foreground and Background Threads](foreground-and-background-threads.md).|  
+|<xref:System.Threading.Thread.IsAlive>|Returns `true` if a thread has been started and hasn't yet terminated normally or aborted.|  
+|<xref:System.Threading.Thread.IsBackground>|Gets or sets a Boolean that indicates if a thread is a background thread. Background threads are like foreground threads. However, a background thread doesn't prevent a process from stopping. Once all foreground threads that belong to a process have stopped, the common language runtime ends the process by calling the <xref:System.Threading.Thread.Abort%2A> method on background threads that are still alive. For more information, see [Foreground and Background Threads](foreground-and-background-threads.md).|  
 |<xref:System.Threading.Thread.Name%2A>|Gets or sets the name of a thread. Most frequently used to discover individual threads when you debug.|  
 |<xref:System.Threading.Thread.Priority%2A>|Gets or sets a <xref:System.Threading.ThreadPriority> value that's used by the operating system to prioritize thread scheduling. For more information, see [Scheduling threads](scheduling-threads.md) and the <xref:System.Threading.ThreadPriority> reference.|  
 |<xref:System.Threading.Thread.ThreadState%2A>|Gets a <xref:System.Threading.ThreadState> value containing the current states of a thread.|  

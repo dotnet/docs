@@ -11,7 +11,7 @@ ms.assetid: cf09732a-ab54-4d98-89e2-4d0a1f28fbce
 
 To ensure unique column values, you can set the column values to increment automatically when new rows are added to the table. To create an auto-incrementing <xref:System.Data.DataColumn>, set the <xref:System.Data.DataColumn.AutoIncrement%2A> property of the column to **true**. The <xref:System.Data.DataColumn> then starts with the value defined in the <xref:System.Data.DataColumn.AutoIncrementSeed%2A> property, and with each row added the value of the `AutoIncrement` column increases by the value defined in the <xref:System.Data.DataColumn.AutoIncrementStep%2A> property of the column.
 
- For `AutoIncrement` columns, we recommend that the <xref:System.Data.DataColumn.ReadOnly%2A> property of the `DataColumn` be set to **true**.
+ For `AutoIncrement` columns, we recommend that the <xref:System.Data.DataColumn.ReadOnly> property of the `DataColumn` be set to **true**.
 
  The following example demonstrates how to create a column that starts with a value of 200 and adds incrementally in steps of 3.
 

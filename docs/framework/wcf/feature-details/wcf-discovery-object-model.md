@@ -108,7 +108,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
 ## EndpointDiscoveryBehavior
 
- The <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> class is used to control the discoverability of an endpoint, specify the extensions, additional contract type names. and the scopes associated with that endpoint. This behavior is added to an application endpoint to configure its <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>. When <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is added to the service host, all the application endpoints hosted by the service host by default become discoverable. The developer can turn off discovery for a specific endpoint by setting the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled%2A> property to `false`.
+ The <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> class is used to control the discoverability of an endpoint, specify the extensions, additional contract type names. and the scopes associated with that endpoint. This behavior is added to an application endpoint to configure its <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>. When <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is added to the service host, all the application endpoints hosted by the service host by default become discoverable. The developer can turn off discovery for a specific endpoint by setting the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled> property to `false`.
 
 ## EndpointDiscoveryMetadata
 

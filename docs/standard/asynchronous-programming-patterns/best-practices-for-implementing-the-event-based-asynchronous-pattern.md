@@ -103,7 +103,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 - Support cancellation, if possible. This enables developers to provide a better application user experience when they use your class.
 
-- In the case of cancellation, set the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag in the <xref:System.ComponentModel.AsyncCompletedEventArgs> object.
+- In the case of cancellation, set the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled> flag in the <xref:System.ComponentModel.AsyncCompletedEventArgs> object.
 
 - Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=nameWithType> method to perform this verification.
 

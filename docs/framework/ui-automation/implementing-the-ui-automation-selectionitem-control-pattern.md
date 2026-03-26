@@ -33,8 +33,8 @@ The following properties, methods, and events are required for implementing <xre
 
 | Required members | Member type | Notes |
 |----------------------|-----------------|-----------|
-| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected%2A> | Property | None |
-| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer%2A> | Property | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected> | Property | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer> | Property | None |
 | <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> | Method | None |
 | <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> | Method | None |
 | <xref:System.Windows.Automation.Provider.ISelectionItemProvider.Select%2A> | Method | None |

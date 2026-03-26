@@ -11,9 +11,9 @@ ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
 
 The <xref:System.Data.DataView> provides several ways of sorting and filtering data in a <xref:System.Data.DataTable>:
 
-- You can use the <xref:System.Data.DataView.Sort%2A> property to specify single or multiple column sort orders and include ASC (ascending) and DESC (descending) parameters.
+- You can use the <xref:System.Data.DataView.Sort> property to specify single or multiple column sort orders and include ASC (ascending) and DESC (descending) parameters.
 
-- You can use the <xref:System.Data.DataView.ApplyDefaultSort%2A> property to automatically create a sort order, in ascending order, based on the primary key column or columns of the table. <xref:System.Data.DataView.ApplyDefaultSort%2A> only applies when the `Sort` property is a null reference or an empty string, and when the table has a primary key defined.
+- You can use the <xref:System.Data.DataView.ApplyDefaultSort> property to automatically create a sort order, in ascending order, based on the primary key column or columns of the table. <xref:System.Data.DataView.ApplyDefaultSort> only applies when the `Sort` property is a null reference or an empty string, and when the table has a primary key defined.
 
 - You can use the <xref:System.Data.DataView.RowFilter%2A> property to specify subsets of rows based on their column values. For details about valid expressions for the `RowFilter` property, see the reference information for the <xref:System.Data.DataColumn.Expression%2A> property of the <xref:System.Data.DataColumn> class.
 

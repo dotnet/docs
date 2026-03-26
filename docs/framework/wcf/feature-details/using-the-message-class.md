@@ -112,7 +112,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
 
  The <xref:System.ServiceModel.Channels.Message.GetBody%2A> method also enables you to access the message body as a typed object. Internally, this method uses `GetReaderAtBodyContents`, and so it also transitions the message state to the <xref:System.ServiceModel.Channels.MessageState.Read> state (see the <xref:System.ServiceModel.Channels.Message.State%2A> property).
 
- It is good practice to check the <xref:System.ServiceModel.Channels.Message.IsEmpty%2A> property, in which case the message body is empty and <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> throws an <xref:System.InvalidOperationException>. Also, if it is a received message (for example, the reply), you may also want to check <xref:System.ServiceModel.Channels.Message.IsFault%2A>, which indicates whether the message contains a fault.
+ It is good practice to check the <xref:System.ServiceModel.Channels.Message.IsEmpty> property, in which case the message body is empty and <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> throws an <xref:System.InvalidOperationException>. Also, if it is a received message (for example, the reply), you may also want to check <xref:System.ServiceModel.Channels.Message.IsFault>, which indicates whether the message contains a fault.
 
  The most basic overload of <xref:System.ServiceModel.Channels.Message.GetBody%2A> deserializes the message body into an instance of a type (indicated by the generic parameter) using a <xref:System.Runtime.Serialization.DataContractSerializer> configured with the default settings and with the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> quota disabled. If you want to use a different serialization engine, or configure the `DataContractSerializer` in a non-default way, use the <xref:System.ServiceModel.Channels.Message.GetBody%2A> overload that takes an <xref:System.Runtime.Serialization.XmlObjectSerializer>.
 
@@ -152,9 +152,9 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
 
 - The <xref:System.ServiceModel.Channels.Message.Version%2A> property indicates the SOAP and WS-Addressing version associated with the message, or `None` if SOAP is disabled.
 
-- The <xref:System.ServiceModel.Channels.Message.IsFault%2A> property returns `true` if the message is a SOAP fault message.
+- The <xref:System.ServiceModel.Channels.Message.IsFault> property returns `true` if the message is a SOAP fault message.
 
-- The <xref:System.ServiceModel.Channels.Message.IsEmpty%2A> property returns `true` if the message is empty.
+- The <xref:System.ServiceModel.Channels.Message.IsEmpty> property returns `true` if the message is empty.
 
  You can use the <xref:System.ServiceModel.Channels.Message.GetBodyAttribute%28System.String%2CSystem.String%29> method to access a particular attribute on the body wrapper element (for example, `<soap:Body>`) identified by a particular name and namespace. If such an attribute is not found, `null` is returned. This method can be called only when the `Message` is in the Created state (when the message body has not yet been accessed).
 

@@ -139,7 +139,7 @@ This example produces the following output:
 
 ## Example: Namespaces are attributes in the LINQ to XML tree
 
-Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations aren't considered to be attributes. However, in LINQ to XML, namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree. If you iterate through the attributes of an element that contains a namespace declaration, the namespace declaration is one of the items in the returned collection. The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> property indicates whether an attribute is a namespace declaration.
+Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations aren't considered to be attributes. However, in LINQ to XML, namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree. If you iterate through the attributes of an element that contains a namespace declaration, the namespace declaration is one of the items in the returned collection. The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration> property indicates whether an attribute is a namespace declaration.
 
 ```csharp
 XElement root = XElement.Parse(

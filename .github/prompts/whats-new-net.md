@@ -51,7 +51,7 @@ In addition, follow these recommendations:
 - For the runtime and libraries articles, include extensive examples as well as links to recently updated articles related to the new feature. The examples should be at least as thorough as the examples from the source release notes.
 - Where applicable, the SDK article should include the samples.
 - The overview article generally doesn't include examples. Its purpose is to direct readers to more detailed information in other articles.
-- All APIs should be referenced using an `xref` style link, at least on first mention. Later mentions should be code-fenced in single back-ticks.
+- All APIs should be referenced using an `xref` style link as described in the `.github/copilot-instructions.md` file, at least on first mention. Later mentions should be code-fenced in single back-ticks.
 - All links to article in the `dotnet/docs` repository should be file relative.
 - Spell out acronyms on first use in each file.
 - Avoid gerund form in headings.

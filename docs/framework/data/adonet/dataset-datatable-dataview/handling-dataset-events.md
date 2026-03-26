@@ -43,7 +43,7 @@ private static void DataSetMergeFailed(
 
  The <xref:System.Data.DataSet.Initialized> event occurs after the `DataSet` constructor initializes a new instance of the `DataSet`.  
   
- The <xref:System.Data.DataSet.IsInitialized%2A> property returns `true` if the `DataSet` has completed initialization; otherwise it returns `false`. The <xref:System.Data.DataSet.BeginInit%2A> method, which begins the initialization of a `DataSet`, sets <xref:System.Data.DataSet.IsInitialized%2A> to `false`. The <xref:System.Data.DataSet.EndInit%2A> method, which ends the initialization of the `DataSet`, sets it to `true`. These methods are used by the Visual Studio design environment to initialize a `DataSet` that is being used by another component. You will not commonly use them in your code.  
+ The <xref:System.Data.DataSet.IsInitialized> property returns `true` if the `DataSet` has completed initialization; otherwise it returns `false`. The <xref:System.Data.DataSet.BeginInit%2A> method, which begins the initialization of a `DataSet`, sets <xref:System.Data.DataSet.IsInitialized> to `false`. The <xref:System.Data.DataSet.EndInit%2A> method, which ends the initialization of the `DataSet`, sets it to `true`. These methods are used by the Visual Studio design environment to initialize a `DataSet` that is being used by another component. You will not commonly use them in your code.  
   
 ## The Disposed Event  
 

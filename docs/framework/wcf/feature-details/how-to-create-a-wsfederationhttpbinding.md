@@ -23,15 +23,15 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
      Unlike other system-provided bindings, it is not necessary to select a client credential type when using the `WSFederationHttpBinding`. This is because the client credential type is always an issued token. WCF acquires a token from a specified issuer and presents that token to the service to authenticate the client.
 
-2. On federated clients, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress%2A> property to the URL of the security token service. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding%2A> to the binding to use to communicate with the security token service.
+2. On federated clients, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress> property to the URL of the security token service. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding> to the binding to use to communicate with the security token service.
 
-3. Optional. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType%2A> property to the Uniform Resource Identifier (URI) of a token type. On federated services, specify the token type that the service expects. On federated clients, specify the token type the client requests from the security token service.
+3. Optional. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType> property to the Uniform Resource Identifier (URI) of a token type. On federated services, specify the token type that the service expects. On federated clients, specify the token type the client requests from the security token service.
 
      If no token type is specified, clients generate WS-Trust Request Security Tokens (RSTs) without a token type URI, and services expect client authentication using a Security Assertions Markup Language (SAML) 1.1 token by default.
 
      The URI for a SAML 1.1 token is `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.
 
-4. Optional. On federated services, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A> property to the metadata URL of a security token service. The metadata endpoint enables clients of the service to select an appropriate binding/endpoint pair, if the service is configured to publish metadata. For more information about publishing metadata, see [Publishing Metadata](publishing-metadata.md).
+4. Optional. On federated services, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress> property to the metadata URL of a security token service. The metadata endpoint enables clients of the service to select an appropriate binding/endpoint pair, if the service is configured to publish metadata. For more information about publishing metadata, see [Publishing Metadata](publishing-metadata.md).
 
  You can also set other properties, including the type of key used as a proof key in the issued token, the algorithm suite to use between the client and the service, whether to negotiate or explicitly specify the service credential, any specific claims the service expects the issued token to contain, and any additional XML elements that must be added to the request the client sends to the security token service.
 
@@ -46,19 +46,19 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 3. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential%2A> property as appropriate.
 
-4. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType%2A> property to <xref:System.IdentityModel.Tokens.SecurityKeyType>`SymmetricKey` or .`AsymmetricKey` as required.
+4. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType> property to <xref:System.IdentityModel.Tokens.SecurityKeyType>`SymmetricKey` or .`AsymmetricKey` as required.
 
-5. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType%2A> property to the appropriate value. If no value is set, WCF defaults to `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`, which indicates SAML 1.1 tokens.
+5. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType> property to the appropriate value. If no value is set, WCF defaults to `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`, which indicates SAML 1.1 tokens.
 
-6. Required on the client if no local issuer is specified; optional on the service. Create an <xref:System.ServiceModel.EndpointAddress> that contains the address and identity information of the security token service and assign the <xref:System.ServiceModel.EndpointAddress> instance to the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress%2A> property.
+6. Required on the client if no local issuer is specified; optional on the service. Create an <xref:System.ServiceModel.EndpointAddress> that contains the address and identity information of the security token service and assign the <xref:System.ServiceModel.EndpointAddress> instance to the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress> property.
 
-7. Required on the client if no local issuer is specified; not used on the service. Create a <xref:System.ServiceModel.Channels.Binding> for the `SecurityTokenService` and assign the <xref:System.ServiceModel.Channels.Binding> instance to the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding%2A> property.
+7. Required on the client if no local issuer is specified; not used on the service. Create a <xref:System.ServiceModel.Channels.Binding> for the `SecurityTokenService` and assign the <xref:System.ServiceModel.Channels.Binding> instance to the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding> property.
 
 8. Not used on the client; optional on the service. Create an <xref:System.ServiceModel.EndpointAddress> instance for the metadata of the security token service and assign it to the `IssuerMetadataAddress` property.
 
 9. Optional on both the client and the service. Create and add one or more <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A> property.
 
-10. Optional on both the client and the service. Create and add one or more <xref:System.Xml.XmlElement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters%2A> property.
+10. Optional on both the client and the service. Create and add one or more <xref:System.Xml.XmlElement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters> property.
 
 ## To create a federated endpoint in configuration
 

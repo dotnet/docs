@@ -86,9 +86,9 @@ To generate classes from schemas that are usable with Windows Communication Foun
 
  This corresponds to the **/enableDataBinding** switch on the Svcutil.exe tool.  
   
- Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as Windows Presentation Foundation (WPF)), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
+ Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as Windows Presentation Foundation (WPF)), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding> property to `true` to enable this feature.  
   
- The following example shows the `Vehicle` class generated with the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> set to `true`.  
+ The following example shows the `Vehicle` class generated with the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding> set to `true`.  
   
  [!code-csharp[C_SchemaImportExport#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs/source.cs#5)]
  [!code-vb[C_SchemaImportExport#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#5)]  
@@ -149,21 +149,21 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
 #### Import Options: Importing Non-DataContract Schema as IXmlSerializable types  
 
- The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  
+ The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  
   
 ##### Design Considerations  
   
 - It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. For more information, see [Using the XmlSerializer Class](using-the-xmlserializer-class.md).  
   
-- Some schema constructs cannot be imported by the <xref:System.Runtime.Serialization.XsdDataContractImporter> even when the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property is set to `true`. Again, consider using the <xref:System.Xml.Serialization.XmlSerializer> for such cases.  
+- Some schema constructs cannot be imported by the <xref:System.Runtime.Serialization.XsdDataContractImporter> even when the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType> property is set to `true`. Again, consider using the <xref:System.Xml.Serialization.XmlSerializer> for such cases.  
   
-- The exact schema constructs that are supported both when <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> is `true` or `false` are described in [Data Contract Schema Reference](data-contract-schema-reference.md).  
+- The exact schema constructs that are supported both when <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType> is `true` or `false` are described in [Data Contract Schema Reference](data-contract-schema-reference.md).  
   
 - Schema for generated <xref:System.Xml.Serialization.IXmlSerializable> types do not retain fidelity when imported and exported. That is, exporting the schema from the generated types and importing as classes does not return the original schema.  
   
- It is possible to combine the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> option with the <xref:System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes%2A> option previously described. For types that have to be generated as <xref:System.Xml.Serialization.IXmlSerializable> implementations, the structural check is skipped when using the <xref:System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes%2A> feature.  
+ It is possible to combine the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType> option with the <xref:System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes%2A> option previously described. For types that have to be generated as <xref:System.Xml.Serialization.IXmlSerializable> implementations, the structural check is skipped when using the <xref:System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes%2A> feature.  
   
- The <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> option corresponds to the **/importXmlTypes** switch on the Svcutil.exe tool.  
+ The <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType> option corresponds to the **/importXmlTypes** switch on the Svcutil.exe tool.  
   
 ##### Working with Generated IXmlSerializable Types  
 

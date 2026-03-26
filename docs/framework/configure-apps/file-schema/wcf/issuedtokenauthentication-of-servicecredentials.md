@@ -93,9 +93,9 @@ Specifies a custom token issued as a service credential.
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.IssuedTokenAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.IssuedTokenAuthentication>
 - <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement>
-- <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A>
+- <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication>
 - <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)

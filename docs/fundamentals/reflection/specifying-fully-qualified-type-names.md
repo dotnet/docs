@@ -127,7 +127,7 @@ Use the backslash (\\) as an escape character to separate the following tokens w
 
 In all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 
-Reflection classes, such as <xref:System.Type.FullName%2A?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.
+Reflection classes, such as <xref:System.Type.FullName?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.
 
 For example, the fully qualified name for a type might be `Ozzy.OutBack.Kangaroo+Wallaby,MyAssembly`.
 
@@ -213,7 +213,7 @@ For `ModuleBuilder.GetType`, `MyArray[0..5]` indicates a single-dimension array 
 - <xref:System.Reflection.AssemblyName>
 - <xref:System.Reflection.Emit.ModuleBuilder>
 - <xref:System.Reflection.Emit.TypeBuilder>
-- <xref:System.Type.FullName%2A?displayProperty=nameWithType>
+- <xref:System.Type.FullName?displayProperty=nameWithType>
 - <xref:System.Type.GetType%2A?displayProperty=nameWithType>
-- <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>
+- <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>
 - [View type information](viewing-type-information.md)

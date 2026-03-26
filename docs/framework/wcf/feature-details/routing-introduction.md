@@ -200,7 +200,7 @@ The steps taken to create a new **MessageVersion** for the outbound message are 
 
 - Create a new message with the same action, body reader, and a new **MessageVersion**.
 
-- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.
 
 - Copy all message properties to the new message.
 
@@ -216,7 +216,7 @@ The steps taken to create a new **MessageVersion** for the outbound message are 
 
 - Create a new response message with the same action, body reader, and the **MessageVersion** of the original request message.
 
-- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.
 
 - Copy the message properties to the new message.
 

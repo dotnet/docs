@@ -61,11 +61,11 @@ document.Load("books.xml");
   
  The <xref:System.Xml.XPath.XPathDocument> class is read-only while the <xref:System.Xml.XmlDocument> class is editable and as a result, <xref:System.Xml.XPath.XPathNavigator> objects created from an <xref:System.Xml.XPath.XPathDocument> object cannot be used to edit an XML document while those created from an <xref:System.Xml.XmlDocument> object can. The <xref:System.Xml.XPath.XPathDocument> class should be used to read an XML document only. In cases where you need to edit an XML document, or require access to the additional functionality provided by the <xref:System.Xml.XmlDocument> class, like event handling, the <xref:System.Xml.XmlDocument> class should be used.  
   
- The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property of the <xref:System.Xml.XPath.XPathNavigator> class specifies if an <xref:System.Xml.XPath.XPathNavigator> object may edit XML data.  
+ The <xref:System.Xml.XPath.XPathNavigator.CanEdit> property of the <xref:System.Xml.XPath.XPathNavigator> class specifies if an <xref:System.Xml.XPath.XPathNavigator> object may edit XML data.  
   
- The following table describes the value of the <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property for each class.  
+ The following table describes the value of the <xref:System.Xml.XPath.XPathNavigator.CanEdit> property for each class.  
   
-|<xref:System.Xml.XPath.IXPathNavigable> Implementation|<xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> Value|  
+|<xref:System.Xml.XPath.IXPathNavigable> Implementation|<xref:System.Xml.XPath.XPathNavigator.CanEdit> Value|  
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |<xref:System.Xml.XPath.XPathDocument>|`false`|  
 |<xref:System.Xml.XmlDocument>|`true`|  

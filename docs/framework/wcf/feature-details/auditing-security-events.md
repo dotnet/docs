@@ -50,7 +50,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |<xref:System.ServiceModel.AuditLogLocation>|Enumeration to specify which log to write to. The possible values are Default, Application, and Security. When you select Default, the operating system determines the actual log location. See the "Application or Security Event Log Choice" section later in this topic.|  
 |<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A>|Specifies which types of message authentication events are audited at the message level. The choices are `None`, `Failure`, `Success`, and `SuccessOrFailure`.|  
 |<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A>|Specifies which types of service authorization events are audited at the service level. The choices are `None`, `Failure`, `Success`, and `SuccessOrFailure`.|  
-|<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A>|Specifies what happens to the client request when auditing fails. For example, when the service attempts to write to the security log, but does not have `SeAuditPrivilege`. The default value of `true` indicates that failures are ignored, and the client request is processed normally.|  
+|<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure>|Specifies what happens to the client request when auditing fails. For example, when the service attempts to write to the security log, but does not have `SeAuditPrivilege`. The default value of `true` indicates that failures are ignored, and the client request is processed normally.|  
   
  For an example of setting up an application to log audit events, see [How to: Audit Security Events](how-to-audit-wcf-security-events.md).  
   
@@ -79,7 +79,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
   
 ## Security Considerations  
 
- If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior.  
+ If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure> property to `true` and use the properties of the Event Viewer to control the auditing behavior.  
   
  Audit events that are written to the Application Log on Windows XP are visible to any authenticated user.  
   

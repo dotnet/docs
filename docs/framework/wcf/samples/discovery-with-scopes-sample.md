@@ -10,7 +10,7 @@ The [DiscoveryWithScopes sample](https://github.com/dotnet/samples/tree/main/fra
 
 ## Service Features
 
-This project shows two service endpoints being added to a <xref:System.ServiceModel.ServiceHost>. Each endpoint has a <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> associated with it. This behavior is used to add URI scopes for both endpoints. Scopes are used to distinguish each of these endpoints so that the clients can fine tune the search. For the second endpoint, the discoverability can be disabled by setting the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled%2A> property to `false`. This ensures that the discovery metadata associated with this endpoint is not sent as part of any discovery messages.
+This project shows two service endpoints being added to a <xref:System.ServiceModel.ServiceHost>. Each endpoint has a <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> associated with it. This behavior is used to add URI scopes for both endpoints. Scopes are used to distinguish each of these endpoints so that the clients can fine tune the search. For the second endpoint, the discoverability can be disabled by setting the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled> property to `false`. This ensures that the discovery metadata associated with this endpoint is not sent as part of any discovery messages.
 
 ## Client Features
 

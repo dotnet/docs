@@ -522,7 +522,7 @@ Finally, consider the following example that uses `Newtonsoft.Json.JsonObjectAtt
 public class Person { ... }
 ```
 
-The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode%2A> delegate. For an example, see [Transform the generated schema](extract-schema.md#transform-the-generated-schema).
+The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode> delegate. For an example, see [Transform the generated schema](extract-schema.md#transform-the-generated-schema).
 
 ### TraceWriter
 

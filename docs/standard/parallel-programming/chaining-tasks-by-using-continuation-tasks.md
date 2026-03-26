@@ -82,7 +82,7 @@ The <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> pr
 
 - It throws an <xref:System.OperationCanceledException> exception in response to a cancellation request. As with any task, if the exception contains the same token that was passed to the continuation, it's treated as an acknowledgment of cooperative cancellation.
 
-- The continuation is passed a <xref:System.Threading.CancellationToken?displayProperty=nameWithType> whose <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property is `true`. In this case, the continuation doesn't start, and it transitions to the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
+- The continuation is passed a <xref:System.Threading.CancellationToken?displayProperty=nameWithType> whose <xref:System.Threading.CancellationToken.IsCancellationRequested> property is `true`. In this case, the continuation doesn't start, and it transitions to the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
 
 - The continuation never runs because the condition set by its <xref:System.Threading.Tasks.TaskContinuationOptions> argument wasn't met. For example, if an antecedent goes into a <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType> state, its continuation that was passed the <xref:System.Threading.Tasks.TaskContinuationOptions.NotOnFaulted?displayProperty=nameWithType> option won't run but will transition to the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.
 

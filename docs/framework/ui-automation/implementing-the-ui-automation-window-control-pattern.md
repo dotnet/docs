@@ -42,8 +42,8 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 |Required member|Member type|Notes|
 |---------------------|-----------------|-----------|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.InteractionState%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.IsModal%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.IsTopmost%2A>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.IsModal>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.IsTopmost>|Property|None|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.Maximizable%2A>|Property|None|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.Minimizable%2A>|Property|None|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.VisualState%2A>|Property|None|

@@ -43,9 +43,9 @@ An <xref:System.Xml.XPath.XPathExpression> object represents a compiled XPath qu
   
 ### The ReturnType Property  
 
- After an XPath query has been compiled into an <xref:System.Xml.XPath.XPathExpression> object, you can use the <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property of the <xref:System.Xml.XPath.XPathExpression> object to determine what the XPath query returns.  
+ After an XPath query has been compiled into an <xref:System.Xml.XPath.XPathExpression> object, you can use the <xref:System.Xml.XPath.XPathExpression.ReturnType> property of the <xref:System.Xml.XPath.XPathExpression> object to determine what the XPath query returns.  
   
- The <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property returns one of the following <xref:System.Xml.XPath.XPathResultType> enumeration values representing the W3C XPath return types.  
+ The <xref:System.Xml.XPath.XPathExpression.ReturnType> property returns one of the following <xref:System.Xml.XPath.XPathResultType> enumeration values representing the W3C XPath return types.  
   
 - <xref:System.Xml.XPath.XPathResultType.Any>  
   
@@ -61,7 +61,7 @@ An <xref:System.Xml.XPath.XPathExpression> object represents a compiled XPath qu
   
 - <xref:System.Xml.XPath.XPathResultType.String>  
   
- The following example uses the <xref:System.Xml.XPath.XPathExpression> object to return a number and a node set from the `books.xml` file. The <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property of each <xref:System.Xml.XPath.XPathExpression> object as well as the results from the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> and <xref:System.Xml.XPath.XPathNavigator.Select%2A> methods are written to the console.  
+ The following example uses the <xref:System.Xml.XPath.XPathExpression> object to return a number and a node set from the `books.xml` file. The <xref:System.Xml.XPath.XPathExpression.ReturnType> property of each <xref:System.Xml.XPath.XPathExpression> object as well as the results from the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> and <xref:System.Xml.XPath.XPathNavigator.Select%2A> methods are written to the console.  
   
 ```vb  
 Dim document As XPathDocument = New XPathDocument("books.xml")  

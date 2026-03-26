@@ -25,7 +25,7 @@ There are two keys to understanding how reflection handles generic types and met
 - The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.
 
   > [!NOTE]
-  > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method articles. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.
+  > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method articles. For example, see <xref:System.Type.IsAutoClass> and <xref:System.Type.DeclaringType>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.
 
 - If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.
 
@@ -86,20 +86,20 @@ Class D(Of V, W)
 End Class
 ```
 
-If you obtain a <xref:System.Type> object representing `D<V, W>` and use the <xref:System.Type.BaseType%2A> property to obtain its base type, the resulting `type B<int, V>` is open, but it's not a generic type definition.
+If you obtain a <xref:System.Type> object representing `D<V, W>` and use the <xref:System.Type.BaseType> property to obtain its base type, the resulting `type B<int, V>` is open, but it's not a generic type definition.
 
 ### Source of a generic parameter
 
 A generic type parameter might come from the type you are examining, from an enclosing type, or from a generic method. You can determine the source of the generic type parameter as follows:
 
-- First, use the <xref:System.Type.DeclaringMethod%2A> property to determine whether the type parameter comes from a generic method. If the property value is not a null reference, then the source is a generic method.
-- If the source is not a generic method, use the <xref:System.Type.DeclaringType%2A> property to determine the generic type the generic type parameter belongs to.
+- First, use the <xref:System.Type.DeclaringMethod> property to determine whether the type parameter comes from a generic method. If the property value is not a null reference, then the source is a generic method.
+- If the source is not a generic method, use the <xref:System.Type.DeclaringType> property to determine the generic type the generic type parameter belongs to.
 
-If the type parameter belongs to a generic method, the <xref:System.Type.DeclaringType%2A> property returns the type that declared the generic method, which is irrelevant.
+If the type parameter belongs to a generic method, the <xref:System.Type.DeclaringType> property returns the type that declared the generic method, which is irrelevant.
 
 ### Position of a generic parameter
 
-In rare situations, it's necessary to determine the position of a type parameter in the type parameter list of its declaring class. For example, suppose you have a <xref:System.Type> object representing the `B<int, V>` type from the preceding example. The <xref:System.Type.GetGenericArguments%2A> method gives you a list of type arguments, and when you examine `V` you can use the <xref:System.Type.DeclaringMethod%2A> and <xref:System.Type.DeclaringType%2A> properties to discover where it comes from. You can then use the <xref:System.Type.GenericParameterPosition%2A> property to determine its position in the type parameter list where it was defined. In this example, `V` is at position 0 (zero) in the type parameter list where it was defined.
+In rare situations, it's necessary to determine the position of a type parameter in the type parameter list of its declaring class. For example, suppose you have a <xref:System.Type> object representing the `B<int, V>` type from the preceding example. The <xref:System.Type.GetGenericArguments%2A> method gives you a list of type arguments, and when you examine `V` you can use the <xref:System.Type.DeclaringMethod> and <xref:System.Type.DeclaringType> properties to discover where it comes from. You can then use the <xref:System.Type.GenericParameterPosition> property to determine its position in the type parameter list where it was defined. In this example, `V` is at position 0 (zero) in the type parameter list where it was defined.
 
 ### Base type and interface constraints
 
@@ -107,15 +107,15 @@ Use the <xref:System.Type.GetGenericParameterConstraints%2A> method to obtain th
 
 ### Generic parameter attributes
 
-The <xref:System.Type.GenericParameterAttributes%2A> property gets a <xref:System.Reflection.GenericParameterAttributes> value that indicates the variance (covariance or contravariance) and the special constraints of a type parameter.
+The <xref:System.Type.GenericParameterAttributes> property gets a <xref:System.Reflection.GenericParameterAttributes> value that indicates the variance (covariance or contravariance) and the special constraints of a type parameter.
 
 #### Covariance and contravariance
 
-To determine whether a type parameter is covariant or contravariant, apply the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, the type parameter is invariant. For more information, see [Covariance and Contravariance](../../standard/generics/covariance-and-contravariance.md).
+To determine whether a type parameter is covariant or contravariant, apply the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, the type parameter is invariant. For more information, see [Covariance and Contravariance](../../standard/generics/covariance-and-contravariance.md).
 
 #### Special constraints
 
-To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a parameterless constructor.
+To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a parameterless constructor.
 
 ## Invariants
 

@@ -80,7 +80,7 @@ the same Guid.
 6. Call <xref:System.Diagnostics.Tracing.EventSource.IsEnabled> before performing any resource intensive work related to
 firing an event, such as computing an expensive event argument that won't be needed if the event is disabled.
 7. Attempt to keep EventSource object back compatible and version them appropriately. The default version for an event is 0.
-The version can be changed by setting <xref:System.Diagnostics.Tracing.EventAttribute.Version%2A?displayProperty=nameWithType>.
+The version can be changed by setting <xref:System.Diagnostics.Tracing.EventAttribute.Version?displayProperty=nameWithType>.
 Change the version of an event whenever you change the data that is serialized with it. Always add new serialized data to the
 end of the event declaration, that is, at the end of the list of method parameters. If this isn't possible, create a new event with a
 new ID to replace the old one.
@@ -192,8 +192,8 @@ in a debugger, or use event tracing with the .NET runtime's [Exception events](.
 
 ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes),
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
-using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
-<xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:
+using the <xref:System.Diagnostics.Tracing.EventAttribute.Task> and
+<xref:System.Diagnostics.Tracing.EventAttribute.Opcode> properties. Here's an example:
 
 ```C#
 [EventSource(Name = "Samples-EventSourceDemos-Customized")]

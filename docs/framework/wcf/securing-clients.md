@@ -85,10 +85,10 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 |-------------------------------|-----------------|-----------|  
 |<xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>|Returns an <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>|Represents an X.509 certificate provided by the client to authenticate itself to the service.|  
 |<xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>|Returns an <xref:System.ServiceModel.Security.HttpDigestClientCredential>|Represents an HTTP digest credential. The credential is a hash of the user name and password.|  
-|<xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A>|Returns an <xref:System.ServiceModel.Security.IssuedTokenClientCredential>|Represents a custom security token issued by a Security Token Service, commonly used in federation scenarios.|  
+|<xref:System.ServiceModel.Description.ClientCredentials.IssuedToken>|Returns an <xref:System.ServiceModel.Security.IssuedTokenClientCredential>|Represents a custom security token issued by a Security Token Service, commonly used in federation scenarios.|  
 |<xref:System.ServiceModel.Description.ClientCredentials.Peer%2A>|Returns a <xref:System.ServiceModel.Security.PeerCredential>|Represents a Peer credential for participation in a Peer mesh on a Windows domain.|  
 |<xref:System.ServiceModel.Description.ClientCredentials.ServiceCertificate%2A>|Returns an <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>|Represents an X.509 certificate provided by the service in an out-of-band negotiation.|  
-|<xref:System.ServiceModel.Description.ClientCredentials.UserName%2A>|Returns a <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>|Represents a user name and password pair.|  
+|<xref:System.ServiceModel.Description.ClientCredentials.UserName>|Returns a <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>|Represents a user name and password pair.|  
 |<xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>|Returns a <xref:System.ServiceModel.Security.WindowsClientCredential>|Represents a Windows client credential (a Kerberos credential). The properties of the class are read-only.|  
   
 #### Setting a \<clientCredentials> Value in Configuration  

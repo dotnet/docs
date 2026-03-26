@@ -50,34 +50,22 @@ Tell the user: *Review this list. Approve the files you want merged, then run `E
    c. Find the corresponding `<data>` element in `CSharpResources.resx` whose `name` attribute matches the constant name (e.g., `ERR_SomeName`).
    d. Read the verbatim error message from the `<value>` child element.
 3. Filter the results to only those whose error message relates to the theme.
-4. Present the filtered list.
+4. Exclude any codes already in the destination file.
 
-## Phase C: Full Roslyn source scan
-
-To catch errors that aren't in the catch-all file either:
-
-1. Search `CSharpResources.resx` for `<value>` elements whose message text relates to the theme. Use keywords and concepts from the theme description to guide the search.
-2. For each match:
-   a. Read the `name` attribute on the parent `<data>` element (this is the symbolic constant).
-   b. Find that constant in `ErrorCodes.cs` to get the numeric value.
-   c. The error code is `CS` followed by the number as a four-digit zero-padded string.
-3. Exclude any codes already in the destination file.
-4. Combine results from Phase B and Phase C, removing duplicates.
-
-**Present the combined list to the user and stop.** Format as:
+**Present the filtered list to the user and stop.** Format as:
 
 ```
-| Error Code | Error Message | Source |
-|-----------|--------------|--------|
-| CS0463 | Evaluation of the decimal constant expression failed | catch-all file |
-| CS1021 | Integral constant is too large | Roslyn scan |
+| Error Code | Error Message |
+|-----------|--------------|
+| CS0463 | Evaluation of the decimal constant expression failed |
+| CS1021 | Integral constant is too large |
 ```
 
 Tell the user: *Review this list. Tell me which error codes to add.*
 
-**Wait for the user to respond before proceeding to Phase D.**
+**Wait for the user to respond before proceeding to Phase C.**
 
-## Phase D: Batch add approved error codes
+## Phase C: Batch add approved error codes
 
 For each approved error code:
 
@@ -89,6 +77,7 @@ For each approved error code:
    - Add an entry in sorted numeric order:
      ```
      - [**CS{NNNN}**](#anchor-tbd): *{verbatim error message from CSharpResources.resx}*
+     **Handling format placeholders:** The Roslyn source message may contain interpolation markers like `'{0}'`, `'{1}'`, etc. Replace these with descriptive terms that keep the text as close to the verbatim message as possible for SEO, while still reading as a coherent sentence. Use generic terms like `'type'`, `'value'`, `'operator'`, `'member'`, or `'method'` based on the context of the error. For example, `Constant value '{0}' cannot be converted to a '{1}'` becomes `Constant value 'value' cannot be converted to a 'type'`. Look at the XML `<comment>` element following the `<value>` (if present) for hints about what each placeholder represents.
      ```
 
 3. **Update the TOC:**

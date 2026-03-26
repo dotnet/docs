@@ -28,7 +28,7 @@ Process the entire approved list. For each source file:
 
 Read the source file and extract:
 - The error code (from the filename or front matter, e.g., `CS0220`)
-- The error message (from the article content — typically the first description of the error)
+- The error message: extract the numeric portion of the error code, find the constant with that number in `../roslyn/src/Compilers/CSharp/Portable/Errors/ErrorCodes.cs`, then find the matching `<data>` element in `../roslyn/src/Compilers/CSharp/Portable/CSharpResources.resx` and read the verbatim text from its `<value>` child element.
 - The article body content (everything after the front matter and H1)
 
 ### 2. Update the destination file
@@ -43,6 +43,7 @@ Read the source file and extract:
   - [**CS{NNNN}**](#anchor-tbd): *{verbatim compiler error message}*
   ```
   Use `#anchor-tbd` as a placeholder anchor — these will be finalized in the Consolidate phase.
+  **Handling format placeholders:** The Roslyn source message may contain interpolation markers like `'{0}'`, `'{1}'`, etc. Replace these with descriptive terms that keep the text as close to the verbatim message as possible for SEO, while still reading as a coherent sentence. Use generic terms like `'type'`, `'value'`, `'operator'`, `'member'`, or `'method'` based on the context of the error. For example, `Constant value '{0}' cannot be converted to a '{1}'` becomes `Constant value 'value' cannot be converted to a 'type'`. Look at the XML `<comment>` element following the `<value>` (if present) for hints about what each placeholder represents.
 
 **Content:**
 - Add the source file's content as a new H2 section at the end of the destination file:

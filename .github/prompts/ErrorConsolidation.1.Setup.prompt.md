@@ -82,6 +82,7 @@ Then update the destination file:
   - [**CS{NNNN}**](#anchor-tbd): *{verbatim error message}*
   ```
   Use `#anchor-tbd` as the anchor — these will be updated in the Consolidate phase.
+  **Handling format placeholders:** The Roslyn source message may contain interpolation markers like `'{0}'`, `'{1}'`, etc. Replace these with descriptive terms that keep the text as close to the verbatim message as possible for SEO, while still reading as a coherent sentence. Use generic terms like `'type'`, `'value'`, `'operator'`, `'member'`, or `'method'` based on the context of the error. For example, `Constant value '{0}' cannot be converted to a '{1}'` becomes `Constant value 'value' cannot be converted to a 'type'`. Look at the XML `<comment>` element following the `<value>` (if present) for hints about what each placeholder represents.
 - Add each code to the `displayName` in the TOC entry, in sorted numeric order.
 
 For each seed code, also remove it from the `f1_keywords` front matter in `docs/csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md`.

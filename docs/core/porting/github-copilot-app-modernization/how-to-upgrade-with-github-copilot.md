@@ -121,7 +121,7 @@ To review and customize the plan:
 1. Edit the plan to adjust upgrade steps or add context if needed.
 
    > [!CAUTION]
-   > The plan is based on project interdependencies. The upgrade won't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+   > The plan is based on project interdependencies. The upgrade doesn't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
 1. Tell Copilot to move to the execution stage.
 
@@ -185,7 +185,7 @@ To run the upgrade:
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
 1. Copilot learns from your changes and continues the upgrade.
 
-Copilot commits changes according to the Git strategy you configured during pre-initialization — per task, per group of tasks, or at the end.
+Copilot commits changes according to the Git strategy you configured during pre-initialization: per task, per group of tasks, or at the end.
 
 ## Verify the upgrade
 

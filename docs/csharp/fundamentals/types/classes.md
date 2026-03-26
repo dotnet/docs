@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# classes are similar to classes in Java or C++. Skim the [object initializers](#object-initializers) and [collection initializers](#collection-initializers) sections for C#-specific patterns, and see [Records](records.md) for a data-focused alternative.
 
-A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap - not the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
+A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap. The variable doesn't hold the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
 
 ## Declare a class
 
@@ -60,7 +60,7 @@ Primary constructors and field initializers can work together: the field initial
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="UsingRequired":::
 
-For a deeper look at constructor patterns, including parameter validation and constructor chaining, see [Constructors](../object-oriented/index.md).
+For a deeper look at constructor patterns, including parameter validation and constructor chaining, see [Constructors](../../programming-guide/classes-and-structs/constructors.md).
 
 ## Static classes
 

@@ -16,9 +16,9 @@ ai-usage: ai-assisted
 
 # Handle multiple events using event properties
 
-When a class raises many events, field-like events generate a backing-field reference type for each event. Every instance of that class carries all of those fields—even for events that are never subscribed. As the number of events grows, this per-instance overhead becomes wasteful: most fields remain `null` at runtime, yet they occupy memory in every object. Instead, use event properties backed by an <xref:System.ComponentModel.EventHandlerList>, which only allocates storage for events that have at least one subscriber.
+When a class defines many events using field-like event declarations, the compiler generates a backing field for each one. Every instance of that class allocates memory for all of those fields—even for events that are never subscribed. With many events, this per-instance overhead wastes memory.
 
-To store the delegates for each event, use an <xref:System.ComponentModel.EventHandlerList> or implement your own collection. The collection must provide methods for setting, accessing, and retrieving the event handler delegate based on the event key. For example, use a <xref:System.Collections.Hashtable> or a custom class derived from <xref:System.Collections.DictionaryBase>. The delegate collection's implementation details don't need to be exposed outside your class.
+To avoid this memory overhead, use event properties backed by a delegate collection. The collection must provide methods that set, access, and retrieve delegates by event key. <xref:System.ComponentModel.EventHandlerList> is designed for this purpose, but you can also use a <xref:System.Collections.Hashtable> or a class derived from <xref:System.Collections.DictionaryBase>. Keep the collection's implementation details private.
 
 Each event property defines an add accessor and a remove accessor. The add accessor adds the input delegate to the delegate collection, and the remove accessor removes it. Both accessors use a predefined key to add and remove instances from the collection.
 

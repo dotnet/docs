@@ -1,19 +1,24 @@
 // <EventProperties>
 using System.ComponentModel;
 
+// <SensorEventArgs>
 public class SensorEventArgs(string sensorId, double value) : EventArgs
 {
     public string SensorId { get; } = sensorId;
     public double Value { get; } = value;
 }
+// </SensorEventArgs>
 
 // Sensor defines 10 event properties backed by a single EventHandlerList.
 // EventHandlerList is memory-efficient for classes with many events: it only
 // allocates storage for events that have active subscribers.
 class Sensor
 {
+    // <EventHandlerListField>
     protected EventHandlerList listEventDelegates = new EventHandlerList();
+    // </EventHandlerListField>
 
+    // <EventKeys>
     static readonly object temperatureChangedKey  = new object();
     static readonly object humidityChangedKey     = new object();
     static readonly object pressureChangedKey     = new object();
@@ -24,7 +29,9 @@ class Sensor
     static readonly object calibrationRequiredKey = new object();
     static readonly object dataReceivedKey        = new object();
     static readonly object errorDetectedKey       = new object();
+    // </EventKeys>
 
+    // <SingleEventProperty>
     public event EventHandler<SensorEventArgs> TemperatureChanged
     {
         add    { listEventDelegates.AddHandler(temperatureChangedKey, value); }
@@ -32,6 +39,7 @@ class Sensor
     }
     protected virtual void OnTemperatureChanged(SensorEventArgs e) =>
         ((EventHandler<SensorEventArgs>?)listEventDelegates[temperatureChangedKey])?.Invoke(this, e);
+    // </SingleEventProperty>
 
     public event EventHandler<SensorEventArgs> HumidityChanged
     {

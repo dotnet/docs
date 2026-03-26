@@ -1,6 +1,7 @@
 ' <EventProperties>
 Imports System.ComponentModel
 
+' <SensorEventArgs>
 Public Class SensorEventArgs
     Inherits EventArgs
 
@@ -12,14 +13,18 @@ Public Class SensorEventArgs
         Me.Value = value
     End Sub
 End Class
+' </SensorEventArgs>
 
 ' Sensor defines 10 event properties backed by a single EventHandlerList.
 ' EventHandlerList is memory-efficient for classes with many events: it only
 ' allocates storage for events that have active subscribers.
 Class Sensor
 
+    ' <EventHandlerListField>
     Protected listEventDelegates As New EventHandlerList()
+    ' </EventHandlerListField>
 
+    ' <EventKeys>
     Shared ReadOnly temperatureChangedKey  As New Object()
     Shared ReadOnly humidityChangedKey     As New Object()
     Shared ReadOnly pressureChangedKey     As New Object()
@@ -30,7 +35,9 @@ Class Sensor
     Shared ReadOnly calibrationRequiredKey As New Object()
     Shared ReadOnly dataReceivedKey        As New Object()
     Shared ReadOnly errorDetectedKey       As New Object()
+    ' </EventKeys>
 
+    ' <SingleEventProperty>
     Public Custom Event TemperatureChanged As EventHandler(Of SensorEventArgs)
         AddHandler(Value As EventHandler(Of SensorEventArgs))
             listEventDelegates.AddHandler(temperatureChangedKey, Value)
@@ -42,6 +49,7 @@ Class Sensor
             CType(listEventDelegates(temperatureChangedKey), EventHandler(Of SensorEventArgs))?.Invoke(sender, e)
         End RaiseEvent
     End Event
+    ' </SingleEventProperty>
 
     Public Custom Event HumidityChanged As EventHandler(Of SensorEventArgs)
         AddHandler(Value As EventHandler(Of SensorEventArgs))

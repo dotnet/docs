@@ -1,7 +1,7 @@
 ---
 title: "Handle multiple events using event properties"
 description: Learn how to handle many events by using event properties. Define delegate collections, event keys, and event properties. Implement add and remove accessor methods.
-ms.date: "03/30/2017"
+ms.date: 03/25/2026
 ms.topic: how-to
 dev_langs:
   - "csharp"
@@ -16,21 +16,61 @@ ai-usage: ai-assisted
 
 # Handle multiple events using event properties
 
-When a class raises many events, field-like events generate a backing-field reference type for each event. As the number of events grows, these allocations become wasteful. Instead, use event properties backed by an <xref:System.ComponentModel.EventHandlerList>, which stores events by key.
+When a class raises many events, field-like events generate a backing-field reference type for each event. Every instance of that class carries all of those fields—even for events that are never subscribed. As the number of events grows, this per-instance overhead becomes wasteful: most fields remain `null` at runtime, yet they occupy memory in every object. Instead, use event properties backed by an <xref:System.ComponentModel.EventHandlerList>, which only allocates storage for events that have at least one subscriber.
 
 To store the delegates for each event, use an <xref:System.ComponentModel.EventHandlerList> or implement your own collection. The collection must provide methods for setting, accessing, and retrieving the event handler delegate based on the event key. For example, use a <xref:System.Collections.Hashtable> or a custom class derived from <xref:System.Collections.DictionaryBase>. The delegate collection's implementation details don't need to be exposed outside your class.
 
 Each event property defines an add accessor and a remove accessor. The add accessor adds the input delegate to the delegate collection, and the remove accessor removes it. Both accessors use a predefined key to add and remove instances from the collection.
 
-## Handle multiple events using event properties
+## Prerequisites
 
-1. Define a delegate collection within the class that raises the events.
-1. Define a key for each event.
-1. Define the event properties in the class that raises the events.
-1. Use the delegate collection to implement the add and remove accessor methods for the event properties.
-1. Use the public event properties to add and remove event handler delegates in the classes that handle the events.
+Familiarize yourself with the concepts in the [Events](index.md) article.
 
-The following example implements the `MouseDown` and `MouseUp` event properties using an <xref:System.ComponentModel.EventHandlerList> to store each event's delegate.
+## Define multiple events using event properties
+
+These steps create a `Sensor` class that exposes 10 event properties, all backed by a single `EventHandlerList`.
+
+1. Define an event data class that inherits from <xref:System.EventArgs>.
+
+   Add properties for each piece of data you want to pass to the handler:
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="SensorEventArgs":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="SensorEventArgs":::
+
+1. Declare an <xref:System.ComponentModel.EventHandlerList> field to store the delegates:
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="EventHandlerListField":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="EventHandlerListField":::
+
+1. Declare a unique key for each event.
+
+   `EventHandlerList` stores delegates by key. Use a `static readonly` object (`Shared ReadOnly` in Visual Basic) for each key—object identity ensures each key is truly unique:
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="EventKeys":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="EventKeys":::
+
+1. Define each event as an event property with custom add and remove accessors.
+
+   Each accessor calls `AddHandler` or `RemoveHandler` on the list using that event's key. In C#, also add a protected virtual raise method that retrieves the delegate from the list by key and invokes it. In Visual Basic, the `Custom Event` declaration already includes a `RaiseEvent` block that does this:
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="SingleEventProperty":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="SingleEventProperty":::
+
+   Repeat this pattern for each event, using its corresponding key.
+
+1. Subscribe to the event using the `+=` operator (in Visual Basic, `AddHandler`):
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Program.cs" id="SubscribeEvent":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Program.vb" id="SubscribeEvent":::
+
+1. Define the event handler.
+
+   The signature must match the <xref:System.EventHandler`1> delegate—an `object` sender and your event data class as the second parameter:
+
+   :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Program.cs" id="HandleEvent":::
+   :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Program.vb" id="HandleEvent":::
+
+The following example shows the complete `Sensor` class implementation:
 
 :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="EventProperties":::
 :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="EventProperties":::
@@ -39,4 +79,3 @@ The following example implements the `MouseDown` and `MouseUp` event properties 
 
 - <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>
 - [Events](index.md)
-- [How to declare custom events to conserve memory](../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

@@ -6,11 +6,10 @@ helpviewer_keywords:
   - "Pipelines"
   - "Pipelines I/O"
   - "I/O [.NET], Pipelines"
-author: rick-anderson
 ai-usage: ai-assisted
 ---
 
-# System.IO.Pipelines in .NET
+# System.IO.Pipelines
 
 <xref:System.IO.Pipelines> is a library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
 

@@ -25,7 +25,7 @@ To start an upgrade, use the `modernize-dotnet` agent in Copilot:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you start the upgrade, Copilot collects pre-initialization information: the target framework version, your Git branching strategy, and flow mode (automatic or guided). Copilot then runs a three-stage workflow, writing a Markdown file for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you start the upgrade, Copilot collects pre-initialization information: the target framework version, your Git branching strategy and workflow mode (automatic or guided by you). Copilot then runs a three-stage workflow, writing a Markdown file for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
 The three stages are:
 
@@ -35,7 +35,7 @@ The three stages are:
 
 ## Start assessment and review results
 
-The assessment stage examines your project structure, dependencies, and code patterns to identify what needs to change. Copilot automatically starts this stage and generates an `assessment.md` file in `.github/upgrades`.
+The assessment stage examines your project structure, dependencies, and code patterns to identify what needs to change. Copilot automatically starts this stage and generates an `assessment.md` file in `.github/upgrades/{scenarioId}`.
 
 The assessment lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 10.0:
 
@@ -183,7 +183,7 @@ To run the upgrade:
 1. Tell Copilot to start the upgrade.
 1. Monitor progress by reviewing the `tasks.md` file as Copilot updates task statuses.
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
-1. Copilot learns from your changes and continues the upgrade.
+1. Based on your decisions and changes, Copilot adapts its strategy to the remaining tasks and continues the upgrade.
 
 Copilot commits changes according to the Git strategy you configured during pre-initialization: per task, per group of tasks, or at the end.
 

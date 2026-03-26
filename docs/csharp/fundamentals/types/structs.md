@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# structs are value types similar to structs in C++ or Swift, but they live on the managed heap when boxed and support interfaces, constructors, and methods. Skim the [readonly structs](#readonly-structs-and-readonly-members) section for C#-specific patterns. For record structs, see [Records](records.md).
 
-A *struct* is a value type that holds its data directly in the variable, rather than through a reference to an object on the heap. When you assign a struct to a new variable, the runtime copies the entire value. Changes to one variable don't affect the other. Use structs for small, lightweight data where identity isn't important: coordinates, colors, measurements, or configuration settings.
+A *struct* is a value type that holds its data directly in the instance, rather than through a reference to an object on the heap. When you assign a struct to a new variable, the runtime copies the entire instance. Changes to one variable don't affect the other because each variable represents a different instance. Use structs for small, lightweight types whose primary role is storing data rather than modeling behavior. Examples include coordinates, colors, measurements, or configuration settings.
 
 ## Declare a struct
 
@@ -28,11 +28,11 @@ Structs are *value types*. Assignment copies the data, so each variable holds it
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="ValueSemantics":::
 
-This copy-on-assignment behavior differs from [classes](classes.md), where assignment copies only the reference. Both variables then point to the same object. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
+Because structs are data containers, assignment copies every data member into a new, independent instance. Each copy is distinct. Modifying one doesn't affect the other. This behavior differs from [classes](classes.md), where assignment copies only the reference and both variables share the same object. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
 
 ## Struct constructors
 
-You can define constructors in structs the same way you do in classes. Structs can have *parameterless constructors* that set custom default values:
+You can define constructors in structs the same way you do in classes. Structs can have *parameterless constructors* that set custom default values. The term "parameterless constructor" distinguishes an instance created with `new` (which runs your constructor logic) from a *default* instance created with the `default` expression (which zero-initializes all fields):
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="ParameterlessConstructor":::
 
@@ -64,15 +64,16 @@ When you don't need the entire struct to be immutable, mark individual members a
 
 Marking members `readonly` helps the compiler optimize defensive copies. When you pass a `readonly` struct to a method that accepts an `in` parameter, the compiler knows no copy is needed.
 
-## Choose structs or classes
+## When to use structs
 
 Use a struct when your type:
 
 - Represents a single value or a small group of related values (roughly 16 bytes or less).
-- Has value semantics: two instances with the same data should be equal.
+- Has value semantics—two instances with the same data should be equal.
+- Is primarily a data container rather than a model of behavior.
 - Doesn't need inheritance from a base type (structs can't inherit from other structs or classes, but they can implement interfaces).
 
-Use a class when your type has complex behavior, needs inheritance, or when instances represent a shared identity rather than a copied value. For a broader comparison that includes records, tuples, and interfaces, see [Choose which kind of type](index.md#choose-which-kind-of-type).
+For a broader comparison that includes classes, records, tuples, and interfaces, see [Choose which kind of type](index.md#choose-which-kind-of-type).
 
 ## See also
 

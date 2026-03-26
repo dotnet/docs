@@ -71,7 +71,7 @@ For each error code:
 
 1. Extract the numeric portion (e.g., `CS0220` → `220`).
 2. Find the constant with that number in the Roslyn source file `../roslyn/src/Compilers/CSharp/Portable/Errors/ErrorCodes.cs`. The constant name maps to the symbolic name.
-3. Find the corresponding `<data>` element in `../roslyn/src/Compilers/CSharp/Portable/CSharpResources.resx` whose `name` attribute matches the symbolic name (without the `ERR_` or `WRN_` prefix matching — the `name` attribute on `<data>` matches the constant name exactly).
+3. Find the corresponding `<data>` element in `../roslyn/src/Compilers/CSharp/Portable/CSharpResources.resx` whose `name` attribute matches the `ErrorCodes.cs` constant name exactly, including the `ERR_` or `WRN_` prefix.
 4. Read the verbatim error message from the `<value>` child element.
 
 Then update the destination file:

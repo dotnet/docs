@@ -23,7 +23,7 @@ You are searching for error codes related to a theme that may have been missed d
 ## Phase A: Search existing documentation
 
 1. Read the destination file to collect all error codes already included.
-2. Search all files whose names start with `CS` in these folders:
+2. Search all files whose names start with `cs` in these folders:
    - `docs/csharp/language-reference/compiler-messages/`
    - `docs/csharp/misc/`
 3. For each candidate file, read its content and determine whether the error it documents relates to the theme.
@@ -34,10 +34,10 @@ You are searching for error codes related to a theme that may have been missed d
 ```
 | File | Error Code | Reason |
 |------|-----------|--------|
-| CS0220.md | CS0220 | Describes compile-time overflow |
+| cs0220.md | CS0220 | Describes compile-time overflow |
 ```
 
-Tell the user: *Review this list. Approve the files you want merged, then run `ErrorConsolidation.MergeExisting` with the approved list.*
+Tell the user: *Review this list. Approve the files you want merged, then run `ErrorConsolidation.2.MergeExisting` with the approved list.*
 
 **Wait for the user to respond before proceeding to Phase B.**
 

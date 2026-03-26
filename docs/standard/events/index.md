@@ -10,10 +10,6 @@ dev_langs:
 helpviewer_keywords:
   - "delegate model for events"
   - "application development [.NET], events"
-  - "application development [.NET], events"
-  - "application development [.NET Core], events"
-  - "events [.NET]"
-  - "events [.NET Core]"
   - "events [.NET]"
 
 ---

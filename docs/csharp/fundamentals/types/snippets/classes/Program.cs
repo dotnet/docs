@@ -80,9 +80,9 @@ static class MathHelpers
 // <ObjectInitializer>
 class ConnectionOptions
 {
-    public string Host { get; set; } = "localhost";
-    public int Port { get; set; } = 80;
-    public bool UseSsl { get; set; }
+    public string Host { get; init; } = "localhost";
+    public int Port { get; init; } = 80;
+    public bool UseSsl { get; init; }
 }
 // </ObjectInitializer>
 

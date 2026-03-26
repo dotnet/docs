@@ -30,11 +30,11 @@ Create and use record instances the same way you create any object:
 
 ## Value equality
 
-Records use *value equality*: `==` checks whether the types match and all property values are equal. The compiler generates `Equals`, `GetHashCode`, and the `==`/`!=` operators for you, so you don't write any of that boilerplate. In contrast, classes use *reference equality* by default—`==` checks whether two variables point to the same object. Regular structs support value equality through `ValueType.Equals`, but that default implementation can be slower. Record structs get a compiler-generated, reflection-free equality check that's more efficient:
+Records use *value equality*: `==` checks whether the types match and all property values are equal. The compiler generates `Equals`, `GetHashCode`, and the `==`/`!=` operators for you, so you don't write any of that boilerplate. In contrast, classes use *reference equality* by default. The `==` operator checks whether two variables point to the same object. Regular structs support value equality through `ValueType.Equals`, but that default implementation can be slower. Record structs get a compiler-generated, reflection-free equality check that's more efficient:
 
 :::code language="csharp" source="snippets/records/EqualityTest.cs" ID="EqualityTest":::
 
-The two `Person` instances are different objects, but they're equal because all their property values match. Note that array properties compare by reference, not by contents—mutating the shared array is visible through both records because the array itself isn't copied.
+The two `Person` instances are different objects, but they're equal because all their property values match. Array properties compare by reference, not by contents. Mutating the shared array is visible through both records because the array itself isn't copied.
 
 ## Nondestructive mutation with `with` expressions
 

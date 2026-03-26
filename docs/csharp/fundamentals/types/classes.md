@@ -32,7 +32,7 @@ The variable `customer` holds a reference to the object, not the object itself. 
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ReferenceSemantics":::
 
-This reference-sharing behavior is what distinguishes classes from [structs](structs.md), where assignment copies the data. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
+This reference-sharing behavior is one distinction between classes and [structs](structs.md), where assignment copies the data. More importantly, classes support [inheritance](#inheritance). You can build hierarchies where derived types reuse and specialize behavior from a base class. Structs can't participate in inheritance hierarchies. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
 
 ## Constructors and initialization
 
@@ -52,7 +52,7 @@ Field initializers define *internal* defaults. They don't give callers any way t
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerPrimaryConstructor":::
 
-Notice how primary constructors and field initializers work together: the field initializer `_capacity = capacity` uses the primary-constructor parameter as its value. This pattern lets you capture constructor arguments in fields with a single, concise declaration.
+Primary constructors and field initializers can work together: the field initializer `_capacity = capacity` uses the primary-constructor parameter as its value. This pattern lets you capture constructor arguments in fields with a single, concise declaration.
 
 **[Required properties](../../language-reference/keywords/required.md)** enforce that callers set specific properties through an object initializer:
 
@@ -84,11 +84,13 @@ Object initializers work with any accessible property that has a `set` or [`init
 
 ## Collection initializers
 
+A *collection* is a type that holds a group of related values—lists, sets, dictionaries, arrays, and spans are all common examples. The .NET class library provides general-purpose collection types such as <xref:System.Collections.Generic.List`1>, <xref:System.Collections.Generic.Dictionary`2>, and <xref:System.Collections.Generic.HashSet`1>, alongside arrays and <xref:System.Span`1>.
+
 *Collection expressions* (C# 12) let you populate a collection inline when you create it using bracket syntax:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="CollectionInitializers":::
 
-Collection expressions work with arrays, `List<T>`, `Span<T>`, and any type that supports collection initialization. The spread operator (`..`) lets you compose collections from existing sequences. For more information, see [Collection expressions (C# reference)](../../language-reference/operators/collection-expressions.md).
+Collection expressions work with arrays, `List<T>`, `Span<T>`, and any type that supports collection initialization. The spread operator (`..`) adds all elements from its operand into the new collection. The operand doesn't have to be a full collection—it can be any expression that produces a sequence, such as a sub-range, a LINQ query, or a filtered subset. For more information, see [Collection expressions (C# reference)](../../language-reference/operators/collection-expressions.md).
 
 ## Inheritance
 
@@ -97,6 +99,15 @@ Classes support *inheritance*. You can define a new class that reuses, extends, 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="Inheritance":::
 
 A class can inherit from one base class and implement multiple interfaces. Derived classes inherit all members of the base class except constructors. For more information, see [Inheritance](../object-oriented/inheritance.md) and [Interfaces](interfaces.md).
+
+## When to use classes
+
+Use a class when:
+
+- The type has complex behavior or manages mutable state.
+- You need inheritance to create a base class with derived specializations, or to create a derived type that extends an existing class.
+- Instances represent a shared identity, not just a bundle of data (two references to the same object should stay in sync).
+- The type is large or long-lived and benefits from heap allocation and reference semantics.
 
 ## See also
 

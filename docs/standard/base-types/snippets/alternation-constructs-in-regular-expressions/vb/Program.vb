@@ -34,9 +34,9 @@ Module Program
         Next
 
         ' The example displays the following output:
-        ' 
-        ' 
-        ' 
+        ' Matches for \b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+        '    01-9999999 at position 0
+        '    777-88-9999 at position 22
         ' </EitherOrPatterns>
 
         Console.WriteLine()
@@ -50,7 +50,7 @@ Module Program
         Next
 
         ' The example displays the following output:
-        ' Matches for \b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+        ' Matches for \b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
         '    01-9999999 at position 0
         '    777-88-9999 at position 22
         ' </ConditionalExpression>
@@ -66,7 +66,7 @@ Module Program
         Next
 
         ' The example displays the following output:
-        ' Matches for \b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+        ' Matches for \b(?<n2>\d{2}-)?(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b:
         '    01-9999999 at position 0
         '    777-88-9999 at position 22
         ' </ConditionalNamedGroup>

@@ -33,7 +33,9 @@ Delete a markdown article from the repository and create a redirect entry that p
 
 ### 2. Update the internal links
 
-1. Search for `**/*.md` and `**/*.yml` files that reference the redirected file
+1. Build a list of files that reference the deleted article
+   - Search for `**/*.md` files that reference the redirected file
+   - Search for `**/*.yml` files that reference the redirected file
 2. Update the links to point to the new article
 
 ## Redirection File Selection

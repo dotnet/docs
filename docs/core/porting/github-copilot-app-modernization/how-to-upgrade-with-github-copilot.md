@@ -25,7 +25,7 @@ To start an upgrade, use the `modernize-dotnet` agent in Copilot:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you start the upgrade, Copilot collects pre-initialization information: the target framework version, your Git branching strategy and workflow mode (automatic or guided by you). Copilot then runs a three-stage workflow, writing a Markdown file for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you start the upgrade, Copilot collects pre-initialization information: the target framework version, Git branching strategy, and workflow mode (automatic or guided by you). Copilot then runs a three-stage workflow, writing a Markdown file for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
 The three stages are:
 

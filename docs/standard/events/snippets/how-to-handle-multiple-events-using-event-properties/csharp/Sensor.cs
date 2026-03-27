@@ -15,7 +15,7 @@ public class SensorEventArgs(string sensorId, double value) : EventArgs
 class Sensor
 {
     // <EventHandlerListField>
-    protected EventHandlerList listEventDelegates = new EventHandlerList();
+    protected EventHandlerList listEventDelegates = new();
     // </EventHandlerListField>
 
     // <EventKeys>

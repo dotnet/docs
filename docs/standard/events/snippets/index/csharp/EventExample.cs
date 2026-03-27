@@ -23,7 +23,5 @@ public class ThresholdReachedEventArgs : EventArgs
 // </EventDataClass>
 
 // <CustomDelegate>
-public delegate void ThresholdReachedEventHandler(
-    object sender,
-    ThresholdReachedEventArgs e);
+public delegate void ThresholdReachedEventHandler(object sender, ThresholdReachedEventArgs e);
 // </CustomDelegate>

@@ -1,6 +1,6 @@
 ---
-title: "Handle multiple events using event properties"
-description: Learn how to handle many events by using event properties. Define delegate collections, event keys, and event properties. Implement add and remove accessor methods.
+title: "Declare multiple events using event properties"
+description: Learn how to declare many events by using event properties. Define delegate collections, event keys, and event properties. Implement add and remove accessor methods.
 ms.date: 03/25/2026
 ms.topic: how-to
 dev_langs:
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ai-usage: ai-assisted
 ---
 
-# Handle multiple events using event properties
+# Declare multiple events using event properties
 
 When a class defines many events using field-like event declarations, the compiler generates a backing field for each one. Every instance of that class allocates memory for all of those fields—even for events that are never subscribed. With many events, this per-instance overhead wastes memory.
 
@@ -51,7 +51,7 @@ These steps create a `Sensor` class that exposes 10 event properties, all backed
 
 1. Define each event as an event property with custom add and remove accessors.
 
-   Each accessor calls `AddHandler` or `RemoveHandler` on the list using that event's key. In C#, also add a protected virtual raise method that retrieves the delegate from the list by key and invokes it. In Visual Basic, the `Custom Event` declaration already includes a `RaiseEvent` block that does this:
+   Each accessor calls `AddHandler` or `RemoveHandler` on the list using that event's key. In C#, also add a `protected virtual` raise method that retrieves the delegate from the list by key and invokes it. In Visual Basic, the `Custom Event` declaration already includes a `RaiseEvent` block that does this:
 
    :::code language="csharp" source="./snippets/how-to-handle-multiple-events-using-event-properties/csharp/Sensor.cs" id="SingleEventProperty":::
    :::code language="vb" source="./snippets/how-to-handle-multiple-events-using-event-properties/vb/Sensor.vb" id="SingleEventProperty":::

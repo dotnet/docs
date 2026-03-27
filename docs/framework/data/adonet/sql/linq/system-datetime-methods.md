@@ -14,42 +14,42 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
 
 |Supported <xref:System.DateTime> Methods|Supported <xref:System.DateTime> Operators|Supported <xref:System.DateTime> Properties|
 |-|-|-|
-|<xref:System.DateTime.Add%2A>|<xref:System.DateTime.op_Addition%2A>|<xref:System.DateTime.Date%2A>|
-|<xref:System.DateTime.AddDays%2A>|<xref:System.DateTime.op_Equality%2A>|<xref:System.DateTime.Day%2A>|
-|<xref:System.DateTime.AddHours%2A>|<xref:System.DateTime.op_GreaterThan%2A>|<xref:System.DateTime.DayOfWeek%2A>|
-|<xref:System.DateTime.AddMilliseconds%2A>|<xref:System.DateTime.op_GreaterThanOrEqual%2A>|<xref:System.DateTime.DayOfYear%2A>|
-|<xref:System.DateTime.AddMinutes%2A>|<xref:System.DateTime.op_Inequality%2A>|<xref:System.DateTime.Hour%2A>|
-|<xref:System.DateTime.AddMonths%2A>|<xref:System.DateTime.op_LessThan%2A>|<xref:System.DateTime.Millisecond%2A>|
-|<xref:System.DateTime.AddSeconds%2A>|<xref:System.DateTime.op_LessThanOrEqual%2A>|<xref:System.DateTime.Minute%2A>|
-|<xref:System.DateTime.AddTicks%2A>|<xref:System.DateTime.op_Subtraction%2A>|<xref:System.DateTime.Month%2A>|
-|<xref:System.DateTime.AddYears%2A>||<xref:System.DateTime.Now%2A>|
-|<xref:System.DateTime.Compare%2A>||<xref:System.DateTime.Second%2A>|
-|<xref:System.DateTime.CompareTo%28System.DateTime%29>||<xref:System.DateTime.TimeOfDay%2A>|
+|<xref:System.DateTime.Add*>|<xref:System.DateTime.op_Addition*>|<xref:System.DateTime.Date*>|
+|<xref:System.DateTime.AddDays*>|<xref:System.DateTime.op_Equality*>|<xref:System.DateTime.Day*>|
+|<xref:System.DateTime.AddHours*>|<xref:System.DateTime.op_GreaterThan*>|<xref:System.DateTime.DayOfWeek*>|
+|<xref:System.DateTime.AddMilliseconds*>|<xref:System.DateTime.op_GreaterThanOrEqual*>|<xref:System.DateTime.DayOfYear*>|
+|<xref:System.DateTime.AddMinutes*>|<xref:System.DateTime.op_Inequality*>|<xref:System.DateTime.Hour*>|
+|<xref:System.DateTime.AddMonths*>|<xref:System.DateTime.op_LessThan*>|<xref:System.DateTime.Millisecond*>|
+|<xref:System.DateTime.AddSeconds*>|<xref:System.DateTime.op_LessThanOrEqual*>|<xref:System.DateTime.Minute*>|
+|<xref:System.DateTime.AddTicks*>|<xref:System.DateTime.op_Subtraction*>|<xref:System.DateTime.Month*>|
+|<xref:System.DateTime.AddYears*>||<xref:System.DateTime.Now*>|
+|<xref:System.DateTime.Compare*>||<xref:System.DateTime.Second*>|
+|<xref:System.DateTime.CompareTo%28System.DateTime%29>||<xref:System.DateTime.TimeOfDay*>|
 |<xref:System.DateTime.Equals%28System.DateTime%29>||<xref:System.DateTime.Today>|
-|||<xref:System.DateTime.Year%2A>|
+|||<xref:System.DateTime.Year*>|
 
 ## Members Not Supported by LINQ to SQL
 
  The following members are not supported inside LINQ to SQL queries:
 
-- <xref:System.DateTime.IsDaylightSavingTime%2A>
-- <xref:System.DateTime.IsLeapYear%2A>
-- <xref:System.DateTime.DaysInMonth%2A>
-- <xref:System.DateTime.ToBinary%2A>
-- <xref:System.DateTime.ToFileTime%2A>
-- <xref:System.DateTime.ToFileTimeUtc%2A>
-- <xref:System.DateTime.ToLongDateString%2A>
-- <xref:System.DateTime.ToLongTimeString%2A>
-- <xref:System.DateTime.ToOADate%2A>
-- <xref:System.DateTime.ToShortDateString%2A>
-- <xref:System.DateTime.ToShortTimeString%2A>
-- <xref:System.DateTime.ToUniversalTime%2A>
-- <xref:System.DateTime.FromBinary%2A>
-- <xref:System.DateTime.UtcNow%2A>
-- <xref:System.DateTime.FromFileTime%2A>
-- <xref:System.DateTime.FromFileTimeUtc%2A>
-- <xref:System.DateTime.FromOADate%2A>
-- <xref:System.DateTime.GetDateTimeFormats%2A>
+- <xref:System.DateTime.IsDaylightSavingTime*>
+- <xref:System.DateTime.IsLeapYear*>
+- <xref:System.DateTime.DaysInMonth*>
+- <xref:System.DateTime.ToBinary*>
+- <xref:System.DateTime.ToFileTime*>
+- <xref:System.DateTime.ToFileTimeUtc*>
+- <xref:System.DateTime.ToLongDateString*>
+- <xref:System.DateTime.ToLongTimeString*>
+- <xref:System.DateTime.ToOADate*>
+- <xref:System.DateTime.ToShortDateString*>
+- <xref:System.DateTime.ToShortTimeString*>
+- <xref:System.DateTime.ToUniversalTime*>
+- <xref:System.DateTime.FromBinary*>
+- <xref:System.DateTime.UtcNow*>
+- <xref:System.DateTime.FromFileTime*>
+- <xref:System.DateTime.FromFileTimeUtc*>
+- <xref:System.DateTime.FromOADate*>
+- <xref:System.DateTime.GetDateTimeFormats*>
 
 ## Method Translation Example
 
@@ -65,15 +65,15 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
 
  In addition to the methods offered by the <xref:System.DateTime> structure, LINQ to SQL offers the following methods from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time:
 
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>
-- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth*>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear*>
 
 ## See also
 

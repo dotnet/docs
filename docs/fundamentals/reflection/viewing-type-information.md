@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the `Type` for a loaded type when reflection requests it. You can use a `Type` object's methods, fields, properties, and nested classes to find out everything about that type.
 
-Use <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> to obtain `Type` objects from assemblies that have not been loaded, passing in the name of the type or types you want. Use <xref:System.Type.GetType%2A?displayProperty=nameWithType> to get the `Type` objects from an assembly that is already loaded. Use <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> and <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType> to obtain module `Type` objects.
+Use <xref:System.Reflection.Assembly.GetType*?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetTypes*?displayProperty=nameWithType> to obtain `Type` objects from assemblies that have not been loaded, passing in the name of the type or types you want. Use <xref:System.Type.GetType*?displayProperty=nameWithType> to get the `Type` objects from an assembly that is already loaded. Use <xref:System.Reflection.Module.GetType*?displayProperty=nameWithType> and <xref:System.Reflection.Module.GetTypes*?displayProperty=nameWithType> to obtain module `Type` objects.
 
 > [!NOTE]
 > If you want to examine and manipulate generic types and methods, please see the additional information provided in [Reflection and Generic Types](reflection-and-generic-types.md) and [How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md).
@@ -30,9 +30,9 @@ The following example demonstrates getting `Type` objects from a loaded assembly
 [!code-csharp[Conceptual.Types.ViewInfo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.viewinfo/cs/source5.cs#7)]
 [!code-vb[Conceptual.Types.ViewInfo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source5.vb#7)]
 
-Once you obtain a `Type`, there are many ways you can discover information about the members of that type. For example, you can find out about all the type's members by calling the <xref:System.Type.GetMembers%2A?displayProperty=nameWithType> method, which obtains an array of <xref:System.Reflection.MemberInfo> objects describing each of the members of the current type.
+Once you obtain a `Type`, there are many ways you can discover information about the members of that type. For example, you can find out about all the type's members by calling the <xref:System.Type.GetMembers*?displayProperty=nameWithType> method, which obtains an array of <xref:System.Reflection.MemberInfo> objects describing each of the members of the current type.
 
-You can also use methods on the `Type` class to retrieve information about one or more constructors, methods, events, fields, or properties that you specify by name. For example, <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> encapsulates a specific constructor of the current class.
+You can also use methods on the `Type` class to retrieve information about one or more constructors, methods, events, fields, or properties that you specify by name. For example, <xref:System.Type.GetConstructor*?displayProperty=nameWithType> encapsulates a specific constructor of the current class.
 
 If you have a `Type`, you can use the <xref:System.Type.Module?displayProperty=nameWithType> property to obtain an object that encapsulates the module containing that type. Use the <xref:System.Reflection.Module.Assembly?displayProperty=nameWithType> property to locate an object that encapsulates the assembly containing the module. You can obtain the assembly that encapsulates the type directly by using the <xref:System.Type.Assembly?displayProperty=nameWithType> property.
 
@@ -47,7 +47,7 @@ The following example shows how to list the constructors for a class, in this ca
 
 Obtain information about the type's methods, properties, events, and fields using <xref:System.Reflection.MemberInfo>, <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.FieldInfo>, or <xref:System.Reflection.PropertyInfo> objects.
 
-The following example uses `MemberInfo` to list the number of members in the `System.IO.File` class and uses the <xref:System.Type.IsPublic%2A> property to determine the visibility of the class.
+The following example uses `MemberInfo` to list the number of members in the `System.IO.File` class and uses the <xref:System.Type.IsPublic> property to determine the visibility of the class.
 
 [!code-csharp[Conceptual.Types.ViewInfo#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.viewinfo/cs/source2.cs#2)]
 [!code-vb[Conceptual.Types.ViewInfo#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source2.vb#2)]

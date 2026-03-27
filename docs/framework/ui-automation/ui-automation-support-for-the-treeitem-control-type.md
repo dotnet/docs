@@ -66,7 +66,7 @@ ms.assetid: 229f341a-477f-434e-b877-4db9973068eb
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.IInvokeProvider>|Depends|Implement this control pattern if the tree item has a separate, actionable command.|
 |<xref:System.Windows.Automation.Provider.IExpandCollapseProvider>|Yes|All tree items can be expanded or collapsed.|
-|<xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState%2A>|Expanded, Collapsed, or Leaf Node|Tree items will be leaf nodes when they are not expanded or collapsed.|
+|<xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState*>|Expanded, Collapsed, or Leaf Node|Tree items will be leaf nodes when they are not expanded or collapsed.|
 |<xref:System.Windows.Automation.Provider.IScrollItemProvider>|Depends|Implement this control pattern if the tree container supports the Scroll control pattern.|
 |<xref:System.Windows.Automation.Provider.ISelectionItemProvider>|Depends|Implement this control pattern if it is possible to have an active selection that is maintained when the user returns to the tree container.|
 |<xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer>|Yes|This property will expose the same container for all items within the container.|

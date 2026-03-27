@@ -2,10 +2,10 @@
 description: "from clause - C# Reference"
 title: "from clause"
 ms.date: 01/21/2026
-f1_keywords: 
+f1_keywords:
   - "from_CSharpKeyword"
   - "from"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "from clause [C#]"
   - "from keyword [C#]"
 ---
@@ -16,7 +16,7 @@ A query expression must begin with a `from` clause. Additionally, a query expres
 - The data source on which the query or subquery runs.
 - A local *range variable* that represents each element in the source sequence.
 
-Both the range variable and the data source are strongly typed. The data source referenced in the `from` clause must have a type of <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a derived type such as <xref:System.Linq.IQueryable%601>.
+Both the range variable and the data source are strongly typed. The data source referenced in the `from` clause must have a type of <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, or a derived type such as <xref:System.Linq.IQueryable`1>.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -26,7 +26,7 @@ In the following example, `numbers` is the data source and `num` is the range va
 
 ## The range variable
 
-The compiler infers the type of the range variable when the data source implements <xref:System.Collections.Generic.IEnumerable%601>. For example, if the source has a type of `IEnumerable<Customer>`, then the range variable is inferred to be `Customer`. You must specify the type explicitly only when the source is a non-generic `IEnumerable` type such as <xref:System.Collections.ArrayList>. For more information, see [How to query an ArrayList with LINQ](../../linq/how-to-query-collections.md).
+The compiler infers the type of the range variable when the data source implements <xref:System.Collections.Generic.IEnumerable`1>. For example, if the source has a type of `IEnumerable<Customer>`, then the range variable is inferred to be `Customer`. You must specify the type explicitly only when the source is a non-generic `IEnumerable` type such as <xref:System.Collections.ArrayList>. For more information, see [How to query an ArrayList with LINQ](../../linq/how-to-query-collections.md).
 
 In the previous example, `num` is inferred to be of type `int`. Because the range variable is strongly typed, you can call methods on it or use it in other operations. For example, instead of writing `select num`, you could write `select num.ToString()` to cause the query expression to return a sequence of strings instead of integers. Or you could write `select num + 10` to cause the expression to return the sequence 14, 11, 13, 12, 10. For more information, see [select clause](select-clause.md).
 

@@ -37,7 +37,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 
 - Do some work and then call `EndInvoke` to block until the call completes.
 
-- Obtain a <xref:System.Threading.WaitHandle> using the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=nameWithType> property, use its <xref:System.Threading.WaitHandle.WaitOne%2A> method to block execution until the <xref:System.Threading.WaitHandle> is signaled, and then call `EndInvoke`.
+- Obtain a <xref:System.Threading.WaitHandle> using the <xref:System.IAsyncResult.AsyncWaitHandle?displayProperty=nameWithType> property, use its <xref:System.Threading.WaitHandle.WaitOne*> method to block execution until the <xref:System.Threading.WaitHandle> is signaled, and then call `EndInvoke`.
 
 - Poll the <xref:System.IAsyncResult> returned by `BeginInvoke` to determine when the asynchronous call has completed, and then call `EndInvoke`.
 
@@ -67,12 +67,12 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 
 ## Waiting for an Asynchronous Call with WaitHandle
 
- You can obtain a <xref:System.Threading.WaitHandle> by using the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the <xref:System.IAsyncResult> returned by `BeginInvoke`. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.
+ You can obtain a <xref:System.Threading.WaitHandle> by using the <xref:System.IAsyncResult.AsyncWaitHandle> property of the <xref:System.IAsyncResult> returned by `BeginInvoke`. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne*> method.
 
  If you use a <xref:System.Threading.WaitHandle>, you can perform additional processing before or after the asynchronous call completes, but before calling `EndInvoke` to retrieve the results.
 
 > [!NOTE]
-> The wait handle is not closed automatically when you call `EndInvoke`. If you release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle. To free the system resources as soon as you are finished using the wait handle, dispose of it by calling the <xref:System.Threading.WaitHandle.Close%2A?displayProperty=nameWithType> method. Garbage collection works more efficiently when disposable objects are explicitly disposed.
+> The wait handle is not closed automatically when you call `EndInvoke`. If you release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle. To free the system resources as soon as you are finished using the wait handle, dispose of it by calling the <xref:System.Threading.WaitHandle.Close*?displayProperty=nameWithType> method. Garbage collection works more efficiently when disposable objects are explicitly disposed.
 
  [!code-csharp[AsyncDelegateExamples#3](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/waithandle.cs#3)]
  [!code-vb[AsyncDelegateExamples#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]
@@ -88,7 +88,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 
  If the thread that initiates the asynchronous call does not need to be the thread that processes the results, you can execute a callback method when the call completes. The callback method is executed on a <xref:System.Threading.ThreadPool> thread.
 
- To use a callback method, you must pass `BeginInvoke` an <xref:System.AsyncCallback> delegate that represents the callback method. You can also pass an object that contains information to be used by the callback method. In the callback method, you can cast the <xref:System.IAsyncResult>, which is the only parameter of the callback method, to an <xref:System.Runtime.Remoting.Messaging.AsyncResult> object. You can then use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A?displayProperty=nameWithType> property to get the delegate that was used to initiate the call so that you can call `EndInvoke`.
+ To use a callback method, you must pass `BeginInvoke` an <xref:System.AsyncCallback> delegate that represents the callback method. You can also pass an object that contains information to be used by the callback method. In the callback method, you can cast the <xref:System.IAsyncResult>, which is the only parameter of the callback method, to an <xref:System.Runtime.Remoting.Messaging.AsyncResult> object. You can then use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate?displayProperty=nameWithType> property to get the delegate that was used to initiate the call so that you can call `EndInvoke`.
 
  Notes on the example:
 

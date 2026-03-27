@@ -115,7 +115,7 @@ If you don't need to use any constructs that require backtracking (for example, 
 
 If you don't set a time-out value explicitly, the default time-out value is determined as follows:
 
-- By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
+- By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData*?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
 By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
@@ -145,7 +145,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 
  `(?<=`*subexpression*`)` is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. `(?<!`*subexpression*`)` is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous subexpression.
 
- The following example uses two equivalent regular expression patterns that validate the user name in an email address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
+ The following example uses two equivalent regular expression patterns that validate the user name in an email address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method.
 
 :::code language="csharp" source="./snippets/regex-backtracking/csharp/backtracking5.cs" ID="5":::
 :::code language="vb" source="./snippets/regex-backtracking/vb/backtracking5.vb" ID="5":::
@@ -155,7 +155,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 | Pattern | Description                                     |
 |---------|-------------------------------------------------|
 | `^`     | Start the match at the beginning of the string. |
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`[-.\w]*`|Match zero, one, or more occurrences of a hyphen, period, or word character.|
 |`[0-9A-Z]`|Match an alphanumeric character.|
 |`([-.\w]*[0-9A-Z])*`|Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character. This is the first capturing group.|
@@ -166,7 +166,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 | Pattern | Description                                     |
 |---------|-------------------------------------------------|
 | `^`     | Start the match at the beginning of the string. |
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`[-.\w]*`|Match zero or more occurrences of a hyphen, period, or word character.|
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|
 |`@`|Match an at sign ("\@").|
@@ -177,7 +177,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 
  `(?=`*subexpression*`)` is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. `(?!`*subexpression*`)` is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next subexpression.
 
- The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
+ The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method.
 
 :::code language="csharp" source="./snippets/regex-backtracking/csharp/backtracking6.cs" ID="6":::
 :::code language="vb" source="./snippets/regex-backtracking/vb/backtracking6.vb" ID="6":::
@@ -187,7 +187,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 |Pattern|Description|
 |-------------|-----------------|
 |`^`|Start the match at the beginning of the string.|
-|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
+|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`(([A-Z]\w*)+\.)*`|Match the previous pattern zero or more times.|
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|
 |`$`|End the match at the end of the input string.|
@@ -197,7 +197,7 @@ By default, the time-out interval is set to <xref:System.Text.RegularExpressions
 |Pattern|Description|
 |-------------|-----------------|
 |`^`|Start the match at the beginning of the string.|
-|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
+|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`\w+\.`|Match one or more word characters followed by a period.|
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|
@@ -213,7 +213,7 @@ The following suggestions are not specifically to prevent excessive backtracking
 
 1. Start matching from an offset. If you know that matches will always start beyond a certain offset into the pattern, pass the offset in using an overload like <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>. This will reduce the amount of the text the engine needs to consider.
 
-1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
+1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count*?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches*?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
 
 1. Avoid unnecessary captures. Parentheses in your pattern form a capturing group by default. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions.md#noncapturing-groups) instead. This saves the engine keeping track of those captures.
 

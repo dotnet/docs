@@ -198,8 +198,8 @@ The previous code:
 - Calls the `LoadImagesFromDirectory` utility method to get the list of images used for training after initializing the `mlContext` variable.
 - Loads the images into an [`IDataView`](xref:Microsoft.ML.IDataView) using the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A) method.
 - Shuffles the data using the [`ShuffleRows`](xref:Microsoft.ML.DataOperationsCatalog.ShuffleRows%2A) method. The data is loaded in the order it was read from the directories. The shuffle is performed to balance it.
-- Performs some preprocessing on the data prior to training. This is done because machine learning models expect input to be in numerical format. The preprocessing code creates an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) made up of the [`MapValueToKey`](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) and `LoadRawImageBytes` transforms. The `MapValueToKey` transform takes the categorical value in the `Label` column, converts it to a numerical `KeyType` value and stores it in a new column called `LabelAsKey`. The `LoadImages` takes the values from the `ImagePath` column along with the `imageFolder` parameter to load images for training.
-- Uses the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain%601.Transform%2A) method, which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the preprocessed data.
+- Performs some preprocessing on the data prior to training. This is done because machine learning models expect input to be in numerical format. The preprocessing code creates an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain`1) made up of the [`MapValueToKey`](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) and `LoadRawImageBytes` transforms. The `MapValueToKey` transform takes the categorical value in the `Label` column, converts it to a numerical `KeyType` value and stores it in a new column called `LabelAsKey`. The `LoadImages` takes the values from the `ImagePath` column along with the `imageFolder` parameter to load images for training.
+- Uses the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain`1.Fit%2A) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain`1) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain`1.Transform%2A) method, which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the preprocessed data.
 - Splits the data into training, validation, and test sets.
 
   To train a model, it's important to have a training dataset as well as a validation dataset. The model is trained on the training set. How well it makes predictions on unseen data is measured by the performance against the validation set. Based on the results of that performance, the model makes adjustments to what it has learned in an effort to improve. The validation set can come from either splitting your original dataset or from another source that has already been set aside for this purpose.
@@ -229,8 +229,8 @@ The previous code:
   - `ReuseTrainSetBottleneckCachedValues` tells the model whether to use the cached values from the bottleneck phase in subsequent runs. The bottleneck phase is a one-time pass-through computation that is computationally intensive the first time it's performed. If the training data does not change and you want to experiment using a different number of epochs or batch size, using the cached values significantly reduces the amount of time required to train a model.
   - `ReuseValidationSetBottleneckCachedValues` is similar to `ReuseTrainSetBottleneckCachedValues` only that in this case it's for the validation dataset.
 
-- Defines the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) training pipeline that consists of both the `mapLabelEstimator` and the <xref:Microsoft.ML.Vision.ImageClassificationTrainer>.
-- Uses the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A) method to train the model.
+- Defines the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain`1) training pipeline that consists of both the `mapLabelEstimator` and the <xref:Microsoft.ML.Vision.ImageClassificationTrainer>.
+- Uses the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain`1.Fit%2A) method to train the model.
 
 ## Use the model
 
@@ -248,9 +248,9 @@ Create a new utility method called `OutputPrediction` to display prediction info
 
    The `ClassifySingleImage` method:
 
-   - Creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) inside the `ClassifySingleImage` method. The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is a convenience API that allows you to pass in and then perform a prediction on a single instance of data.
-   - To access a single `ModelInput` instance, converts the `data` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method and then gets the first observation.
-   - Uses the [`Predict`](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) method to classify the image.
+   - Creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) inside the `ClassifySingleImage` method. The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) is a convenience API that allows you to pass in and then perform a prediction on a single instance of data.
+   - To access a single `ModelInput` instance, converts the `data` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable`1) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method and then gets the first observation.
+   - Uses the [`Predict`](xref:Microsoft.ML.PredictionEngine`2.Predict%2A) method to classify the image.
    - Outputs the prediction to the console with the `OutputPrediction` method.
 
 1. Call `ClassifySingleImage` after you call the `Fit` method using the test set of images.
@@ -266,7 +266,7 @@ Create a new utility method called `OutputPrediction` to display prediction info
    The `ClassifyImages` method:
 
    - Creates an [`IDataView`](xref:Microsoft.ML.IDataView) containing the predictions by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A) method.
-   - In order to iterate over the predictions, converts the `predictionData` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method and then gets the first 10 observations.
+   - In order to iterate over the predictions, converts the `predictionData` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable`1) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method and then gets the first 10 observations.
    - Iterates and outputs the original and predicted labels for the predictions.
 
 1. Call `ClassifyImages` after you call the `ClassifySingleImage()` method using the test set of images.

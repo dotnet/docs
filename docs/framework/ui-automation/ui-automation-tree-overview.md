@@ -14,7 +14,7 @@ ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
 
  Assistive technology products and test scripts navigate the UI Automation tree to gather information about the user interface (UI) and its elements.
 
- Within the UI Automation tree there is a root element (<xref:System.Windows.Automation.AutomationElement.RootElement%2A>) that represents the current desktop and whose child elements represent application windows. Each of these child elements can contain elements representing pieces of UI such as menus, buttons, toolbars, and list boxes. These elements in turn can contain elements such as list items.
+ Within the UI Automation tree there is a root element (<xref:System.Windows.Automation.AutomationElement.RootElement*>) that represents the current desktop and whose child elements represent application windows. Each of these child elements can contain elements representing pieces of UI such as menus, buttons, toolbars, and list boxes. These elements in turn can contain elements such as list items.
 
  The UI Automation tree is not a fixed structure and is seldom seen in its totality because it might contain thousands of elements. Parts of it are built as they are needed, and it can undergo changes as elements are added, moved, or removed.
 

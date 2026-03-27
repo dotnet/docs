@@ -27,7 +27,7 @@ You can create a <xref:System.Type> object that represents a constructed type by
    [!code-csharp[HowToGeneric#3](snippets/csharp/instantiate-generic-type/GenericTypes.cs#3)]
    [!code-vb[HowToGeneric#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#3)]
 
-3. Get an array that contains the generic type arguments, using the <xref:System.Type.GetGenericArguments%2A> method.
+3. Get an array that contains the generic type arguments, using the <xref:System.Type.GetGenericArguments*> method.
 
    [!code-csharp[HowToGeneric#4](snippets/csharp/instantiate-generic-type/GenericTypes.cs#4)]
    [!code-vb[HowToGeneric#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#4)]
@@ -42,7 +42,7 @@ You can create a <xref:System.Type> object that represents a constructed type by
    [!code-csharp[HowToGeneric#6](snippets/csharp/instantiate-generic-type/GenericTypes.cs#6)]
    [!code-vb[HowToGeneric#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#6)]
 
-6. Determine the base type constraint and the interface constraints of a generic type parameter by using the <xref:System.Type.GetGenericParameterConstraints%2A> method to obtain all the constraints in a single array. Constraints are not guaranteed to be in any particular order.
+6. Determine the base type constraint and the interface constraints of a generic type parameter by using the <xref:System.Type.GetGenericParameterConstraints*> method to obtain all the constraints in a single array. Constraints are not guaranteed to be in any particular order.
 
    [!code-csharp[HowToGeneric#7](snippets/csharp/instantiate-generic-type/GenericTypes.cs#7)]
    [!code-vb[HowToGeneric#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#7)]
@@ -59,9 +59,9 @@ You can create a <xref:System.Type> object that represents a constructed type by
 
 ## Construct an instance of a generic type
 
-A generic type is like a template. You can't create instances of it unless you specify real types for its generic type parameters. To do this at runtime, using reflection, requires the <xref:System.Type.MakeGenericType%2A> method.
+A generic type is like a template. You can't create instances of it unless you specify real types for its generic type parameters. To do this at runtime, using reflection, requires the <xref:System.Type.MakeGenericType*> method.
 
-1. Get a <xref:System.Type> object that represents the generic type. The following code gets the generic type <xref:System.Collections.Generic.Dictionary%602> in two different ways: by using the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload with a string describing the type, and by calling the <xref:System.Type.GetGenericTypeDefinition%2A> method on the constructed type `Dictionary\<String, Example>` (`Dictionary(Of String, Example)` in Visual Basic). The <xref:System.Type.MakeGenericType%2A> method requires a generic type definition.
+1. Get a <xref:System.Type> object that represents the generic type. The following code gets the generic type <xref:System.Collections.Generic.Dictionary`2> in two different ways: by using the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload with a string describing the type, and by calling the <xref:System.Type.GetGenericTypeDefinition*> method on the constructed type `Dictionary\<String, Example>` (`Dictionary(Of String, Example)` in Visual Basic). The <xref:System.Type.MakeGenericType*> method requires a generic type definition.
 
    [!code-csharp[HowToGeneric#10](snippets/csharp/instantiate-generic-type/GenericTypes.cs#10)]
    [!code-vb[HowToGeneric#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#10)]
@@ -71,7 +71,7 @@ A generic type is like a template. You can't create instances of it unless you s
    [!code-csharp[HowToGeneric#11](snippets/csharp/instantiate-generic-type/GenericTypes.cs#11)]
    [!code-vb[HowToGeneric#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#11)]
 
-3. Call the <xref:System.Type.MakeGenericType%2A> method to bind the type arguments to the type parameters and construct the type.
+3. Call the <xref:System.Type.MakeGenericType*> method to bind the type arguments to the type parameters and construct the type.
 
    [!code-csharp[HowToGeneric#12](snippets/csharp/instantiate-generic-type/GenericTypes.cs#12)]
    [!code-vb[HowToGeneric#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#12)]
@@ -83,13 +83,13 @@ A generic type is like a template. You can't create instances of it unless you s
 
 ## Example
 
-The following code example defines a `DisplayGenericType` method to examine the generic type definitions and constructed types used in the code and display their information. The `DisplayGenericType` method shows how to use the <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A>, and <xref:System.Type.GenericParameterPosition> properties and the <xref:System.Type.GetGenericArguments%2A> method.
+The following code example defines a `DisplayGenericType` method to examine the generic type definitions and constructed types used in the code and display their information. The `DisplayGenericType` method shows how to use the <xref:System.Type.IsGenericType*>, <xref:System.Type.IsGenericParameter*>, and <xref:System.Type.GenericParameterPosition> properties and the <xref:System.Type.GetGenericArguments*> method.
 
 The example also defines a `DisplayGenericParameter` method to examine a generic type parameter and display its constraints.
 
 The code example defines a set of test types, including a generic type that illustrates type parameter constraints, and shows how to display information about these types.
 
-The example constructs a type from the <xref:System.Collections.Generic.Dictionary%602> class by creating an array of type arguments and calling the <xref:System.Type.MakeGenericType%2A> method. The program compares the <xref:System.Type> object constructed using <xref:System.Type.MakeGenericType%2A> with a <xref:System.Type> object obtained using `typeof` (`GetType` in Visual Basic), demonstrating that they are the same. Similarly, the program uses the <xref:System.Type.GetGenericTypeDefinition%2A> method to obtain the generic type definition of the constructed type, and compares it to the <xref:System.Type> object representing the <xref:System.Collections.Generic.Dictionary%602> class.
+The example constructs a type from the <xref:System.Collections.Generic.Dictionary`2> class by creating an array of type arguments and calling the <xref:System.Type.MakeGenericType*> method. The program compares the <xref:System.Type> object constructed using <xref:System.Type.MakeGenericType*> with a <xref:System.Type> object obtained using `typeof` (`GetType` in Visual Basic), demonstrating that they are the same. Similarly, the program uses the <xref:System.Type.GetGenericTypeDefinition*> method to obtain the generic type definition of the constructed type, and compares it to the <xref:System.Type> object representing the <xref:System.Collections.Generic.Dictionary`2> class.
 
 [!code-csharp[HowToGeneric#1](snippets/csharp/instantiate-generic-type/GenericTypes.cs#1)]
 [!code-vb[HowToGeneric#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#1)]

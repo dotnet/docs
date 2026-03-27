@@ -4,7 +4,7 @@ description: Learn how to define value equality for a class or struct. See code 
 ms.topic: how-to
 ms.date: 03/26/2021
 ai-usage: ai-assisted
-helpviewer_keywords: 
+helpviewer_keywords:
   - "overriding Equals method [C#]"
   - "object equivalence [C#]"
   - "Equals method [C#], overriding"
@@ -19,35 +19,35 @@ ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
 
 When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when you expect to add objects of the type to a collection, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset.
 
-In either case, and in both classes and structs, your implementation should follow the five guarantees of equivalence (for the following rules, assume that `x`, `y` and `z` are not null):  
-  
+In either case, and in both classes and structs, your implementation should follow the five guarantees of equivalence (for the following rules, assume that `x`, `y` and `z` are not null):
+
 1. The reflexive property: `x.Equals(x)` returns `true`.
-  
+
 2. The symmetric property: `x.Equals(y)` returns the same value as `y.Equals(x)`.
-  
+
 3. The transitive property: if `(x.Equals(y) && y.Equals(z))` returns `true`, then `x.Equals(z)` returns `true`.
-  
-4. Successive invocations of `x.Equals(y)` return the same value as long as the objects referenced by x and y aren't modified.  
-  
+
+4. Successive invocations of `x.Equals(y)` return the same value as long as the objects referenced by x and y aren't modified.
+
 5. Any non-null value isn't equal to null. However, `x.Equals(y)` throws an exception when `x` is null. That breaks rules 1 or 2, depending on the argument to `Equals`.
 
-Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=nameWithType> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method. This implementation uses reflection to examine all the fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.  
-  
-The implementation details for value equality are different for classes and structs. However, both classes and structs require the same basic steps for implementing equality:  
-  
-1. **Override the [virtual](../../language-reference/keywords/virtual.md) <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method.** This provides polymorphic equality behavior, allowing your objects to be compared correctly when treated as `object` references. It ensures proper behavior in collections and when using polymorphism. In most cases, your implementation of `bool Equals( object obj )` should just call into the type-specific `Equals` method that is the implementation of the <xref:System.IEquatable%601?displayProperty=nameWithType> interface. (See step 2.)  
-  
-2. **Implement the <xref:System.IEquatable%601?displayProperty=nameWithType> interface by providing a type-specific `Equals` method.** This provides type-safe equality checking without boxing, resulting in better performance. It also avoids unnecessary casting and enables compile-time type checking. This is where the actual equivalence comparison is performed. For example, you might decide to define equality by comparing only one or two fields in your type. Don't throw exceptions from `Equals`. For classes that are related by inheritance:
+Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=nameWithType> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method. This implementation uses reflection to examine all the fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.
+
+The implementation details for value equality are different for classes and structs. However, both classes and structs require the same basic steps for implementing equality:
+
+1. **Override the [virtual](../../language-reference/keywords/virtual.md) <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method.** This provides polymorphic equality behavior, allowing your objects to be compared correctly when treated as `object` references. It ensures proper behavior in collections and when using polymorphism. In most cases, your implementation of `bool Equals( object obj )` should just call into the type-specific `Equals` method that is the implementation of the <xref:System.IEquatable`1?displayProperty=nameWithType> interface. (See step 2.)
+
+2. **Implement the <xref:System.IEquatable`1?displayProperty=nameWithType> interface by providing a type-specific `Equals` method.** This provides type-safe equality checking without boxing, resulting in better performance. It also avoids unnecessary casting and enables compile-time type checking. This is where the actual equivalence comparison is performed. For example, you might decide to define equality by comparing only one or two fields in your type. Don't throw exceptions from `Equals`. For classes that are related by inheritance:
 
    * This method should examine only fields that are declared in the class. It should call `base.Equals` to examine fields that are in the base class. (Don't call `base.Equals` if the type inherits directly from <xref:System.Object>, because the <xref:System.Object> implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> performs a reference equality check.)
 
    * Two variables should be deemed equal only if the run-time types of the variables being compared are the same. Also, make sure that the `IEquatable` implementation of the `Equals` method for the run-time type is used if the run-time and compile-time types of a variable are different. One strategy for making sure run-time types are always compared correctly is to implement `IEquatable` only in `sealed` classes. For more information, see the [class example](#class-example) later in this article.
-  
-3. **Optional but recommended: Overload the [==](../../language-reference/operators/equality-operators.md#equality-operator-) and [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) operators.** This provides consistent and intuitive syntax for equality comparisons, matching user expectations from built-in types. It ensures that `obj1 == obj2` and `obj1.Equals(obj2)` behave the same way.  
-  
-4. **Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> so that two objects that have value equality produce the same hash code.** This is required for correct behavior in hash-based collections like `Dictionary<TKey,TValue>` and `HashSet<T>`. Objects that are equal must have equal hash codes, or these collections won't work correctly.  
-  
-5. **Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable%601> interface for your type, and also overload the [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operators.** This enables sorting operations and provides a complete ordering relationship for your type, useful when adding objects to sorted collections or when sorting arrays or lists.  
+
+3. **Optional but recommended: Overload the [==](../../language-reference/operators/equality-operators.md#equality-operator-) and [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) operators.** This provides consistent and intuitive syntax for equality comparisons, matching user expectations from built-in types. It ensures that `obj1 == obj2` and `obj1.Equals(obj2)` behave the same way.
+
+4. **Override <xref:System.Object.GetHashCode*?displayProperty=nameWithType> so that two objects that have value equality produce the same hash code.** This is required for correct behavior in hash-based collections like `Dictionary<TKey,TValue>` and `HashSet<T>`. Objects that are equal must have equal hash codes, or these collections won't work correctly.
+
+5. **Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable`1> interface for your type, and also overload the [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operators.** This enables sorting operations and provides a complete ordering relationship for your type, useful when adding objects to sorted collections or when sorting arrays or lists.
 
 ## Record example
 
@@ -57,7 +57,7 @@ The following example shows how records automatically implement value equality w
 
 Records provide several advantages for value equality:
 
-- **Automatic implementation**: Records automatically implement <xref:System.IEquatable%601?displayProperty=nameWithType> and override <xref:System.Object.Equals%2A?displayProperty=nameWithType>, <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>, and the `==`/`!=` operators.
+- **Automatic implementation**: Records automatically implement <xref:System.IEquatable`1?displayProperty=nameWithType> and override <xref:System.Object.Equals*?displayProperty=nameWithType>, <xref:System.Object.GetHashCode*?displayProperty=nameWithType>, and the `==`/`!=` operators.
 - **Correct inheritance behavior**: Records implement `IEquatable<T>` using virtual methods that check the runtime type of both operands, ensuring correct behavior in inheritance hierarchies and polymorphic scenarios.
 - **Immutability by default**: Records encourage immutable design, which works well with value equality semantics.
 - **Concise syntax**: Positional parameters provide a compact way to define data types.
@@ -67,21 +67,21 @@ Use records when your primary goal is to store data and you need value equality 
 
 ## Records with members that use reference equality
 
-When records contain members that use reference equality, the automatic value equality behavior of records doesn't work as expected. This applies to collections like <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, arrays, and other reference types that don't implement value-based equality (with the notable exception of <xref:System.String?displayProperty=nameWithType>, which does implement value equality).
+When records contain members that use reference equality, the automatic value equality behavior of records doesn't work as expected. This applies to collections like <xref:System.Collections.Generic.List`1?displayProperty=nameWithType>, arrays, and other reference types that don't implement value-based equality (with the notable exception of <xref:System.String?displayProperty=nameWithType>, which does implement value equality).
 
 > [!IMPORTANT]
-> While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. If a record contains a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, <xref:System.Array?displayProperty=nameWithType>, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
+> While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. If a record contains a <xref:System.Collections.Generic.List`1?displayProperty=nameWithType>, <xref:System.Array?displayProperty=nameWithType>, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
 >
 > ```csharp
 > public record PersonWithHobbies(string Name, List<string> Hobbies);
-> 
+>
 > var person1 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
 > var person2 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
-> 
+>
 > Console.WriteLine(person1.Equals(person2)); // False - different List instances!
 > ```
 
-This is because records use the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method of each member, and collection types typically use reference equality rather than comparing their contents.
+This is because records use the <xref:System.Object.Equals*?displayProperty=nameWithType> method of each member, and collection types typically use reference equality rather than comparing their contents.
 
 The following shows the problem:
 
@@ -93,11 +93,11 @@ Here's how this behaves when you run the code:
 
 ### Solutions for records with reference-equality members
 
-- **Custom <xref:System.IEquatable%601?displayProperty=nameWithType> implementation**: Replace the compiler-generated equality with a hand-coded version that provides content-based comparison for reference-equality members. For collections, implement element-by-element comparison using <xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType> or similar methods.
+- **Custom <xref:System.IEquatable`1?displayProperty=nameWithType> implementation**: Replace the compiler-generated equality with a hand-coded version that provides content-based comparison for reference-equality members. For collections, implement element-by-element comparison using <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> or similar methods.
 
-- **Use value types where possible**: Consider if your data can be represented with value types or immutable structures that naturally support value equality, such as <xref:System.Numerics.Vector%601?displayProperty=nameWithType> or <xref:System.Numerics.Plane>.
+- **Use value types where possible**: Consider if your data can be represented with value types or immutable structures that naturally support value equality, such as <xref:System.Numerics.Vector`1?displayProperty=nameWithType> or <xref:System.Numerics.Plane>.
 
-- **Use types with value-based equality**: For collections, consider using types that implement value-based equality or implement custom collection types that override <xref:System.Object.Equals%2A?displayProperty=nameWithType> to provide content-based comparison, such as <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType> or <xref:System.Collections.Immutable.ImmutableList%601?displayProperty=nameWithType>.
+- **Use types with value-based equality**: For collections, consider using types that implement value-based equality or implement custom collection types that override <xref:System.Object.Equals*?displayProperty=nameWithType> to provide content-based comparison, such as <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> or <xref:System.Collections.Immutable.ImmutableList`1?displayProperty=nameWithType>.
 
 - **Design with reference equality in mind**: Accept that some members will use reference equality and design your application logic accordingly, ensuring that you reuse the same instances when equality is important.
 
@@ -146,7 +146,7 @@ The `==` and `!=` operators can be used with classes even if the class does not 
 
 ## Polymorphic equality
 
-When implementing value equality in inheritance hierarchies with classes, the standard approach shown in the class example can lead to incorrect behavior when objects are used polymorphically. The issue occurs because <xref:System.IEquatable%601?displayProperty=nameWithType> implementations are chosen based on compile-time type, not runtime type.
+When implementing value equality in inheritance hierarchies with classes, the standard approach shown in the class example can lead to incorrect behavior when objects are used polymorphically. The issue occurs because <xref:System.IEquatable`1?displayProperty=nameWithType> implementations are chosen based on compile-time type, not runtime type.
 
 ### The problem with standard implementations
 
@@ -160,7 +160,7 @@ Console.WriteLine(p1.Equals(p2)); // True - but should be False!
 
 The comparison returns `True` because the compiler selects `TwoDPoint.Equals(TwoDPoint)` based on the declared type, ignoring the `Z` coordinate differences.
 
-The key to correct polymorphic equality is ensuring that all equality comparisons use the virtual <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, which can check runtime types and handle inheritance correctly. This can be achieved by using explicit interface implementation for <xref:System.IEquatable%601?displayProperty=nameWithType> that delegates to the virtual method:
+The key to correct polymorphic equality is ensuring that all equality comparisons use the virtual <xref:System.Object.Equals*?displayProperty=nameWithType> method, which can check runtime types and handle inheritance correctly. This can be achieved by using explicit interface implementation for <xref:System.IEquatable`1?displayProperty=nameWithType> that delegates to the virtual method:
 
 The base class demonstrates the key patterns:
 
@@ -184,9 +184,9 @@ The equality implementation also works properly with collections:
 
 The preceding code demonstrates key elements to implementing value based equality:
 
-- **Virtual `Equals(object?)` override**: The main equality logic happens in the virtual <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, which is called regardless of compile-time type.
+- **Virtual `Equals(object?)` override**: The main equality logic happens in the virtual <xref:System.Object.Equals*?displayProperty=nameWithType> method, which is called regardless of compile-time type.
 - **Runtime type checking**: Using `this.GetType() != p.GetType()` ensures that objects of different types are never considered equal.
-- **Explicit interface implementation**: The <xref:System.IEquatable%601?displayProperty=nameWithType> implementation delegates to the virtual method, preventing compile-time type selection issues.
+- **Explicit interface implementation**: The <xref:System.IEquatable`1?displayProperty=nameWithType> implementation delegates to the virtual method, preventing compile-time type selection issues.
 - **Protected virtual helper method**: The `protected virtual Equals(TwoDPoint? p)` method allows derived classes to override equality logic while maintaining type safety.
 
 Use this pattern when:
@@ -202,11 +202,11 @@ The preferred approach is to use `record` types to implement value based equalit
 The following example shows how to implement value equality in a struct (value type). While structs have default value equality, a custom implementation can improve performance:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityStruct/Program.cs":::
-  
+
 For structs, the default implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (which is the overridden version in <xref:System.ValueType?displayProperty=nameWithType>) performs a value equality check by using reflection to compare the values of every field in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.
 
 When you override the virtual `Equals` method in a struct, the purpose is to provide a more efficient means of performing the value equality check and optionally to base the comparison on some subset of the struct's fields or properties.
-  
+
 The [==](../../language-reference/operators/equality-operators.md#equality-operator-) and [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) operators can't operate on a struct unless the struct explicitly overloads them.
 
 ## See also

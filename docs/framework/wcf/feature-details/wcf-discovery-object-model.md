@@ -14,7 +14,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
  A client that wants to listen for service announcement messages hosts an announcement service and adds one or more announcement endpoints. The announcement service receives announcement messages and raises announcement events.
 
- A client uses the <xref:System.ServiceModel.Discovery.DiscoveryClient> class to search for available services. The client application instantiates the <xref:System.ServiceModel.Discovery.DiscoveryClient> class, passing in a discovery endpoint that specifies where to send discovery messages. The client calls the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method, which sends a `Probe` request. Services listening for discovery messages receive this `Probe` request. If the service matches the criteria specified in the `Probe`, it sends a `ProbeMatch` message back to the client.
+ A client uses the <xref:System.ServiceModel.Discovery.DiscoveryClient> class to search for available services. The client application instantiates the <xref:System.ServiceModel.Discovery.DiscoveryClient> class, passing in a discovery endpoint that specifies where to send discovery messages. The client calls the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*> method, which sends a `Probe` request. Services listening for discovery messages receive this `Probe` request. If the service matches the criteria specified in the `Probe`, it sends a `ProbeMatch` message back to the client.
 
 ## Object Model
 
@@ -74,7 +74,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
 ## AnnouncementService
 
- <xref:System.ServiceModel.Discovery.AnnouncementService> is a system-provided implementation of an announcement service that receives and processes announcement messages. When a Hello or Bye message is received, the <xref:System.ServiceModel.Discovery.AnnouncementService> instance calls the appropriate virtual method <xref:System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement%2A> or <xref:System.ServiceModel.Discovery.AnnouncementService.OnBeginOfflineAnnouncement%2A>, which raises announcement events.
+ <xref:System.ServiceModel.Discovery.AnnouncementService> is a system-provided implementation of an announcement service that receives and processes announcement messages. When a Hello or Bye message is received, the <xref:System.ServiceModel.Discovery.AnnouncementService> instance calls the appropriate virtual method <xref:System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement*> or <xref:System.ServiceModel.Discovery.AnnouncementService.OnBeginOfflineAnnouncement*>, which raises announcement events.
 
 ## DiscoveryClient
 
@@ -96,7 +96,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
 ## DiscoveryService
 
- The <xref:System.ServiceModel.Discovery.DiscoveryService> abstract class provides a framework for receiving and processing `Probe` and `Resolve` messages. When a `Probe` message is received, <xref:System.ServiceModel.Discovery.DiscoveryService> creates an instance of <xref:System.ServiceModel.Discovery.FindRequestContext> based on the incoming message and invokes the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind%2A> virtual method. When a `Resolve` message is received, <xref:System.ServiceModel.Discovery.DiscoveryService> invokes the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginResolve%2A> virtual method. You can inherit from this class to provide a custom Discovery Service implementation.
+ The <xref:System.ServiceModel.Discovery.DiscoveryService> abstract class provides a framework for receiving and processing `Probe` and `Resolve` messages. When a `Probe` message is received, <xref:System.ServiceModel.Discovery.DiscoveryService> creates an instance of <xref:System.ServiceModel.Discovery.FindRequestContext> based on the incoming message and invokes the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind*> virtual method. When a `Resolve` message is received, <xref:System.ServiceModel.Discovery.DiscoveryService> invokes the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginResolve*> virtual method. You can inherit from this class to provide a custom Discovery Service implementation.
 
 ## DiscoveryProxy
 
@@ -116,7 +116,7 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
 ## FindCriteria
 
- The <xref:System.ServiceModel.Discovery.FindCriteria> class is a version-independent class used to specify the criteria used when finding a service. It fully supports the WS-Discovery-defined criteria for matching services. It also has extensions that developers can use to specify custom values that can be used during the matching process. The developer can provide the termination criteria for the `Find` operation by specifying the <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A>, which specifies the total number of services the developer is looking for or that specifies the <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A>, which is the value that specifies how long the client waits for responses.
+ The <xref:System.ServiceModel.Discovery.FindCriteria> class is a version-independent class used to specify the criteria used when finding a service. It fully supports the WS-Discovery-defined criteria for matching services. It also has extensions that developers can use to specify custom values that can be used during the matching process. The developer can provide the termination criteria for the `Find` operation by specifying the <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults*>, which specifies the total number of services the developer is looking for or that specifies the <xref:System.ServiceModel.Discovery.FindCriteria.Duration*>, which is the value that specifies how long the client waits for responses.
 
 ## FindRequestContext
 
@@ -124,15 +124,15 @@ WCF Discovery consists of a set of types that provide a unified programming mode
 
 ## FindResponse
 
- The <xref:System.ServiceModel.Discovery.FindResponse> class is returned to the caller of <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> with the responses of the `Find` operation. It is also present in <xref:System.ServiceModel.Discovery.FindCompletedEventArgs>. It contains a collection of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>, which is the collection of discovered endpoints and a dictionary of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> and <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence>.
+ The <xref:System.ServiceModel.Discovery.FindResponse> class is returned to the caller of <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*> with the responses of the `Find` operation. It is also present in <xref:System.ServiceModel.Discovery.FindCompletedEventArgs>. It contains a collection of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>, which is the collection of discovered endpoints and a dictionary of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> and <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence>.
 
 ## ResolveCriteria
 
- The <xref:System.ServiceModel.Discovery.ResolveCriteria> class is a version-independent class used to specify the criteria used when resolving an already known service. It contains the endpoint address of the known service. The developer can provide the termination criteria for the resolve operation by specifying the <xref:System.ServiceModel.Discovery.ResolveCriteria.Duration%2A>, which specifies how long the client waits for responses.
+ The <xref:System.ServiceModel.Discovery.ResolveCriteria> class is a version-independent class used to specify the criteria used when resolving an already known service. It contains the endpoint address of the known service. The developer can provide the termination criteria for the resolve operation by specifying the <xref:System.ServiceModel.Discovery.ResolveCriteria.Duration*>, which specifies how long the client waits for responses.
 
 ## ResolveResponse
 
- The <xref:System.ServiceModel.Discovery.ResolveResponse> is returned to the caller of the <xref:System.ServiceModel.Discovery.DiscoveryClient.Resolve%2A> method with the response of the `Resolve` operation. It is also present in <xref:System.ServiceModel.Discovery.ResolveCompletedEventArgs>. It contains an instance of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>, which is the discovered endpoints and an instance of <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence>.
+ The <xref:System.ServiceModel.Discovery.ResolveResponse> is returned to the caller of the <xref:System.ServiceModel.Discovery.DiscoveryClient.Resolve*> method with the response of the `Resolve` operation. It is also present in <xref:System.ServiceModel.Discovery.ResolveCompletedEventArgs>. It contains an instance of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>, which is the discovered endpoints and an instance of <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence>.
 
 ## ServiceDiscoveryBehavior
 

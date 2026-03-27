@@ -37,23 +37,23 @@ If your service can work with minimal or no explicit configuration, consider a p
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType> with the type parameter of `LibraryOptions`
-- Chains a call to <xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A>, which specifies the default option values
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType> with the type parameter of `LibraryOptions`
+- Chains a call to <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Configure*>, which specifies the default option values
 
 ## `IConfiguration` parameter
 
-When you author a library that exposes many options to consumers, you may want to consider requiring an `IConfiguration` parameter extension method. The expected `IConfiguration` instance should be scoped to a named section of the configuration by using the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A?displayProperty=nameWithType> function.
+When you author a library that exposes many options to consumers, you may want to consider requiring an `IConfiguration` parameter extension method. The expected `IConfiguration` instance should be scoped to a named section of the configuration by using the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection*?displayProperty=nameWithType> function.
 
 :::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-14":::
 
 > [!TIP]
-> The <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> method is part of the [`Microsoft.Extensions.Options.ConfigurationExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions) NuGet package.
+> The <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> method is part of the [`Microsoft.Extensions.Options.ConfigurationExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions) NuGet package.
 
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
 - Defines an <xref:Microsoft.Extensions.Configuration.IConfiguration> parameter `namedConfigurationSection`
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> passing the generic type parameter of `LibraryOptions` and the `namedConfigurationSection` instance to configure
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> passing the generic type parameter of `LibraryOptions` and the `namedConfigurationSection` instance to configure
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
@@ -73,7 +73,7 @@ As the library author, specifying default values is up to you.
 >             configuration.GetSection("LibraryOptions").Bind(options));
 > ```
 >
-> Instead, you should use the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> extension method. This extension method binds the configuration to the options instance, and also registers a change token source for the configuration section. This allows consumers to use the [IOptionsMonitor](options.md#ioptionsmonitor) interface.
+> Instead, you should use the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration*> extension method. This extension method binds the configuration to the options instance, and also registers a change token source for the configuration section. This allows consumers to use the [IOptionsMonitor](options.md#ioptionsmonitor) interface.
 
 ## Configuration section path parameter
 
@@ -86,10 +86,10 @@ In the preceding code, the `AddMyLibraryService`:
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
 - Defines a `string` parameter `configSectionPath`
 - Calls:
-  - <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> with the generic type parameter of `SupportOptions`
-  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> with the given `configSectionPath` parameter
-  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable data annotation validation
-  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart%2A> to enforce validation on start rather than in runtime
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions*> with the generic type parameter of `SupportOptions`
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration*> with the given `configSectionPath` parameter
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations*> to enable data annotation validation
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart*> to enforce validation on start rather than in runtime
 
 In the next example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
 
@@ -108,8 +108,8 @@ Consumers of your library may be interested in providing a lambda expression tha
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure%2A> given the `configureOptions` action
+- Defines an <xref:System.Action`1> parameter `configureOptions` where `T` is `LibraryOptions`
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*> given the `configureOptions` action
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
@@ -124,8 +124,8 @@ Consumers of your library might prefer to provide an inlined options instance. I
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType> with the type parameter of `LibraryOptions`
-- Chains a call to <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure%2A>, which specifies default option values that can be overridden from the given `userOptions` instance
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType> with the type parameter of `LibraryOptions`
+- Chains a call to <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*>, which specifies default option values that can be overridden from the given `userOptions` instance
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
@@ -133,7 +133,7 @@ Consumers in this pattern provide an instance of the `LibraryOptions` class, def
 
 ## Post configuration
 
-After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls. There are few reasons why you'd want to consider using `PostConfigure`:
+After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure*>. Post configure runs after all `.Configure` calls. There are few reasons why you'd want to consider using `PostConfigure`:
 
 - **Execution order**: You can override any configuration values that were set in the `.Configure` calls.
 - **Validation**: You can validate the default values have been set after all other configurations have been applied.
@@ -143,8 +143,8 @@ After all configuration option values are bound or specified, post configuration
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A> given the `configureOptions` action
+- Defines an <xref:System.Action`1> parameter `configureOptions` where `T` is `LibraryOptions`
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure*> given the `configureOptions` action
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 

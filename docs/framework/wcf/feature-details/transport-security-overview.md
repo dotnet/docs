@@ -15,11 +15,11 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 > When SSL security is used with .NET Framework 3.5 and later an WCF client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.
 
 > [!WARNING]
-> When transport security is used, the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property may be overwritten. To prevent this from happening set the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A?displayProperty=nameWithType> to <xref:System.ServiceModel.Description.PrincipalPermissionMode.None?displayProperty=nameWithType>. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> is a service behavior that can be set on the service description.
+> When transport security is used, the <xref:System.Threading.Thread.CurrentPrincipal?displayProperty=nameWithType> property may be overwritten. To prevent this from happening set the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode*?displayProperty=nameWithType> to <xref:System.ServiceModel.Description.PrincipalPermissionMode.None?displayProperty=nameWithType>. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> is a service behavior that can be set on the service description.
 
 ## BasicHttpBinding
 
- By default, the <xref:System.ServiceModel.BasicHttpBinding> class does not provide security. This binding is designed for interoperability with Web service providers that do not implement security. However, you can switch on security by setting the <xref:System.ServiceModel.BasicHttpSecurity.Mode%2A> property to any value except <xref:System.ServiceModel.BasicHttpSecurityMode.None>. To enable transport security, set the property to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>.
+ By default, the <xref:System.ServiceModel.BasicHttpBinding> class does not provide security. This binding is designed for interoperability with Web service providers that do not implement security. However, you can switch on security by setting the <xref:System.ServiceModel.BasicHttpSecurity.Mode> property to any value except <xref:System.ServiceModel.BasicHttpSecurityMode.None>. To enable transport security, set the property to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>.
 
 ### Interoperation with IIS
 
@@ -68,7 +68,7 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 
  The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an WCF application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the WCF application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at runtime. For more information, see [HTTP Transport Security](http-transport-security.md).
 
- For client authentication, set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to one of the <xref:System.ServiceModel.HttpClientCredentialType> enumeration values. The enumeration values are identical to the client credential types for <xref:System.ServiceModel.BasicHttpBinding> and are designed to be hosted with IIS services.
+ For client authentication, set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to one of the <xref:System.ServiceModel.HttpClientCredentialType> enumeration values. The enumeration values are identical to the client credential types for <xref:System.ServiceModel.BasicHttpBinding> and are designed to be hosted with IIS services.
 
  The following example shows the binding being used with a client credential type of Windows.
 
@@ -83,14 +83,14 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 
  The <xref:System.ServiceModel.NetTcpBinding> class uses TCP for message transport. Security for the transport mode is provided by implementing Transport Layer Security (TLS) over TCP. The TLS implementation is provided by the operating system.
 
- You can also specify the client's credential type by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.TcpTransportSecurity> class to one of the <xref:System.ServiceModel.TcpClientCredentialType> values, as shown in the following code.
+ You can also specify the client's credential type by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType> property of the <xref:System.ServiceModel.TcpTransportSecurity> class to one of the <xref:System.ServiceModel.TcpClientCredentialType> values, as shown in the following code.
 
  [!code-csharp[c_ProgrammingSecurity#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#12)]
  [!code-vb[c_ProgrammingSecurity#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#12)]
 
 #### Client
 
- On the client, you must specify a certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
+ On the client, you must specify a certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate*> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
 
 > [!NOTE]
 > If you are using Windows security, a certificate is not required.

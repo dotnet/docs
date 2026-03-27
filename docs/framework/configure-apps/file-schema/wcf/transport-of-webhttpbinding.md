@@ -87,8 +87,8 @@ Defines the transport-level security settings for a service endpoint configured 
 ## See also
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
-- <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.WebHttpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport*>
+- <xref:System.ServiceModel.WebHttpSecurity.Transport*>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

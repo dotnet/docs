@@ -10,7 +10,7 @@ Activity validation provides a method to identify and report errors in any activ
 
 ## Using ActivityValidationServices
 
- <xref:System.Activities.Validation.ActivityValidationServices> has two <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> overloads that are used to invoke an activity's validation logic. The first overload takes the root activity to be validated and returns a collection of validation errors and warnings. In the following example, a custom `Add` activity is used that has two required arguments.
+ <xref:System.Activities.Validation.ActivityValidationServices> has two <xref:System.Activities.Validation.ActivityValidationServices.Validate*> overloads that are used to invoke an activity's validation logic. The first overload takes the root activity to be validated and returns a collection of validation errors and warnings. In the following example, a custom `Add` activity is used that has two required arguments.
 
 ```csharp
 public sealed class Add : CodeActivity<int>
@@ -49,7 +49,7 @@ Activity wf = new Sequence
 };
 ```
 
- This workflow can be validated by calling <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> returns a collection of any validation errors or warnings contained by the activity and any children, as shown in the following example.
+ This workflow can be validated by calling <xref:System.Activities.Validation.ActivityValidationServices.Validate*>. <xref:System.Activities.Validation.ActivityValidationServices.Validate*> returns a collection of any validation errors or warnings contained by the activity and any children, as shown in the following example.
 
 ```csharp
 ValidationResults results = ActivityValidationServices.Validate(wf);
@@ -71,7 +71,7 @@ else
 }
 ```
 
- When <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> is called on this sample workflow, two validation errors are returned.
+ When <xref:System.Activities.Validation.ActivityValidationServices.Validate*> is called on this sample workflow, two validation errors are returned.
 
  **Error: Value for a required activity argument 'Operand2' was not supplied.**
 **Error: Value for a required activity argument 'Operand1' was not supplied.**  If this workflow was invoked, an <xref:System.Activities.InvalidWorkflowException> would be thrown, as shown in the following example.
@@ -90,7 +90,7 @@ catch (Exception ex)
  **System.Activities.InvalidWorkflowException:**
 **The following errors were encountered while processing the workflow tree:**
 **'Add': Value for a required activity argument 'Operand2' was not supplied.**
-**'Add': Value for a required activity argument 'Operand1' was not supplied.**  For this example workflow to be valid, the two required arguments of the `Add` activity must be bound. In the following example, the two required arguments are bound to workflow variables along with the result value. In this example the <xref:System.Activities.Activity%601.Result%2A> argument is bound along with the two required arguments. The <xref:System.Activities.Activity%601.Result%2A> argument is not required to be bound and does not cause a validation error if it is not. It is the responsibility of the workflow author to bind <xref:System.Activities.Activity%601.Result%2A> if its value is used elsewhere in the workflow.
+**'Add': Value for a required activity argument 'Operand1' was not supplied.**  For this example workflow to be valid, the two required arguments of the `Add` activity must be bound. In the following example, the two required arguments are bound to workflow variables along with the result value. In this example the <xref:System.Activities.Activity`1.Result*> argument is bound along with the two required arguments. The <xref:System.Activities.Activity`1.Result*> argument is not required to be bound and does not cause a validation error if it is not. It is the responsibility of the workflow author to bind <xref:System.Activities.Activity`1.Result*> if its value is used elsewhere in the workflow.
 
 ```csharp
 new Add
@@ -156,7 +156,7 @@ catch (Exception ex)
 
 ### Invoking Imperative Code-Based Validation
 
-Imperative code-based validation provides a simple way for an activity to provide validation about itself, and is available for activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code that determines any validation errors or warnings is added to the activity. When validation is invoked on the activity, these warnings or errors are contained in the collection returned by the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. In the following example, a `CreateProduct` activity is defined. If the `Cost` is greater than the `Price`, a validation error is added to the metadata in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override.
+Imperative code-based validation provides a simple way for an activity to provide validation about itself, and is available for activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code that determines any validation errors or warnings is added to the activity. When validation is invoked on the activity, these warnings or errors are contained in the collection returned by the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate*>. In the following example, a `CreateProduct` activity is defined. If the `Cost` is greater than the `Price`, a validation error is added to the metadata in the <xref:System.Activities.CodeActivity.CacheMetadata*> override.
 
 ```csharp
 public sealed class CreateProduct : CodeActivity
@@ -229,13 +229,13 @@ else
  **Error: The Cost must be less than or equal to the Price.**
 **Error: Value for a required activity argument 'Description' was not supplied.**
 > [!NOTE]
-> Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.
+> Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata*> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata*> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate*> and must be handled by the caller.
 
 ## Using ValidationSettings
 
- By default, all activities in the activity tree are evaluated when validation is invoked by <xref:System.Activities.Validation.ActivityValidationServices>. <xref:System.Activities.Validation.ValidationSettings> allows the validation to be customized in several different ways by configuring its three properties. <xref:System.Activities.Validation.ValidationSettings.SingleLevel%2A> specifies whether the validator should walk the entire activity tree or only apply validation logic to the supplied activity. The default for this value is `false`. <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints> specifies additional constraint mapping from a type to a list of constraints. For the base type of each activity in the activity tree being validated there is a lookup into <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints>. If a matching constraint list is found, all constraints in the list are evaluated for the activity. <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints> specifies whether the validator should evaluate all constraints or only those specified in <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints>. The default value is `false`. <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints> and <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints> are useful for workflow host authors to add additional validation for workflows, such as policy constraints for tools such as FxCop. For more information about constraints, see [Declarative Constraints](declarative-constraints.md).
+ By default, all activities in the activity tree are evaluated when validation is invoked by <xref:System.Activities.Validation.ActivityValidationServices>. <xref:System.Activities.Validation.ValidationSettings> allows the validation to be customized in several different ways by configuring its three properties. <xref:System.Activities.Validation.ValidationSettings.SingleLevel*> specifies whether the validator should walk the entire activity tree or only apply validation logic to the supplied activity. The default for this value is `false`. <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints> specifies additional constraint mapping from a type to a list of constraints. For the base type of each activity in the activity tree being validated there is a lookup into <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints>. If a matching constraint list is found, all constraints in the list are evaluated for the activity. <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints> specifies whether the validator should evaluate all constraints or only those specified in <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints>. The default value is `false`. <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints> and <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints> are useful for workflow host authors to add additional validation for workflows, such as policy constraints for tools such as FxCop. For more information about constraints, see [Declarative Constraints](declarative-constraints.md).
 
- To use <xref:System.Activities.Validation.ValidationSettings>, configure the desired properties, and then pass it in the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. In this example, a workflow that consists of a <xref:System.Activities.Statements.Sequence> with a custom `Add` activity is validated. The `Add` activity has two required arguments.
+ To use <xref:System.Activities.Validation.ValidationSettings>, configure the desired properties, and then pass it in the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate*>. In this example, a workflow that consists of a <xref:System.Activities.Statements.Sequence> with a custom `Add` activity is validated. The `Add` activity has two required arguments.
 
 ```csharp
 public sealed class Add : CodeActivity<int>
@@ -274,7 +274,7 @@ Activity wf = new Sequence
 };
 ```
 
- For the following example, validation is performed with <xref:System.Activities.Validation.ValidationSettings.SingleLevel%2A> set to `true`, so only the root <xref:System.Activities.Statements.Sequence> activity is validated.
+ For the following example, validation is performed with <xref:System.Activities.Validation.ValidationSettings.SingleLevel*> set to `true`, so only the root <xref:System.Activities.Statements.Sequence> activity is validated.
 
 ```csharp
 ValidationSettings settings = new ValidationSettings

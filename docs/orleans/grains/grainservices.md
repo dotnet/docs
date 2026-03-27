@@ -75,7 +75,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 :::zone-end
 
-1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient%601>`GrainServiceClient` that other grains will use to connect to the `GrainService`.
+1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient`1>`GrainServiceClient` that other grains will use to connect to the `GrainService`.
 
     ```csharp
     public interface IDataServiceClient : IGrainServiceClient<IDataService>, IDataService
@@ -138,7 +138,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 
 ## Additional notes
 
-There's an extension method, <xref:Orleans.Hosting.GrainServicesSiloBuilderExtensions.AddGrainService%2A?displayProperty=nameWithType>, used to register grain services.
+There's an extension method, <xref:Orleans.Hosting.GrainServicesSiloBuilderExtensions.AddGrainService*?displayProperty=nameWithType>, used to register grain services.
 
 ```csharp
 services.AddSingleton<IGrainService>(

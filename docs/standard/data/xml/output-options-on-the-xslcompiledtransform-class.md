@@ -6,11 +6,11 @@ ms.topic: reference
 ---
 # Output Options on the XslCompiledTransform Class
 
-This article discusses the available XSLT output options. You can specify output options in the style sheet, or on the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.
+This article discusses the available XSLT output options. You can specify output options in the style sheet, or on the <xref:System.Xml.Xsl.XslCompiledTransform.Transform*> method.
 
 ## xsl:output Element
 
- The `xsl:output` element specifies options for the output. The output type specified by the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method determines the behavior of the `xsl:output` options.
+ The `xsl:output` element specifies options for the output. The output type specified by the <xref:System.Xml.Xsl.XslCompiledTransform.Transform*> method determines the behavior of the `xsl:output` options.
 
  The following table describes the behavior for each of the attributes available on the `xsl:output` element when the output type is a stream or a <xref:System.IO.TextWriter>.
 
@@ -18,7 +18,7 @@ This article discusses the available XSLT output options. You can specify output
 |--------------------|--------------|
 |method|Supported.|
 |version|Ignored. The version is always 1.0 for XML and 4.0 for HTML.|
-|encoding|Ignored when outputting to a <xref:System.IO.TextWriter>. The <xref:System.IO.TextWriter.Encoding%2A?displayProperty=nameWithType> property is used instead.|
+|encoding|Ignored when outputting to a <xref:System.IO.TextWriter>. The <xref:System.IO.TextWriter.Encoding?displayProperty=nameWithType> property is used instead.|
 |omit-xml-declaration|Supported.|
 |standalone|Supported.|
 |doctype-public|Supported.|
@@ -29,11 +29,11 @@ This article discusses the available XSLT output options. You can specify output
 
 ### Sending Output to an XmlWriter
 
- If your style sheet uses the `xsl:output` element and the output type is an <xref:System.Xml.XmlWriter> object, you should use the <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings%2A?displayProperty=nameWithType> property when you create the <xref:System.Xml.XmlWriter> object. The <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings%2A?displayProperty=nameWithType> property returns an <xref:System.Xml.XmlWriterSettings> object that contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method to create an <xref:System.Xml.XmlWriter> object with the correct settings.
+ If your style sheet uses the `xsl:output` element and the output type is an <xref:System.Xml.XmlWriter> object, you should use the <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings?displayProperty=nameWithType> property when you create the <xref:System.Xml.XmlWriter> object. The <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings?displayProperty=nameWithType> property returns an <xref:System.Xml.XmlWriterSettings> object that contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create*?displayProperty=nameWithType> method to create an <xref:System.Xml.XmlWriter> object with the correct settings.
 
 ## Output Types
 
- The following list describes the output types available on the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> command.
+ The following list describes the output types available on the <xref:System.Xml.Xsl.XslCompiledTransform.Transform*> command.
 
 ### XmlWriter
 

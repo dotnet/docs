@@ -10,7 +10,7 @@ The <xref:System.Data.DataTableReader> presents the contents of a <xref:System.D
 
  When you create a `DataTableReader` from a **DataTable**, the resulting `DataTableReader` object contains one result set with the same data as the `DataTable` from which it was created, except for any rows that have been marked as deleted. The columns appear in the same order as in the original **DataTable**.
 
- A `DataTableReader` may contain multiple result sets if it was created by calling <xref:System.Data.DataSet.CreateDataReader%2A>. The results are in the same order as the `DataTables` in the `DataSet` object's <xref:System.Data.DataSet.Tables%2A> collection.
+ A `DataTableReader` may contain multiple result sets if it was created by calling <xref:System.Data.DataSet.CreateDataReader*>. The results are in the same order as the `DataTables` in the `DataSet` object's <xref:System.Data.DataSet.Tables*> collection.
 
 ## In This Section
 

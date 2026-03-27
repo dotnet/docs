@@ -70,4 +70,4 @@ If this change is problematic for you, you can:
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>

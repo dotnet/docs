@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Asynchronous state management
 
-The [📦 `Microsoft.Extensions.AsyncState`](https://www.nuget.org/packages/Microsoft.Extensions.AsyncState) NuGet package provides functionality to store and retrieve objects within the current asynchronous context. This package offers performance and usability improvements over using <xref:System.Threading.AsyncLocal%601> directly, particularly when multiple objects need to be shared across asynchronous operations.
+The [📦 `Microsoft.Extensions.AsyncState`](https://www.nuget.org/packages/Microsoft.Extensions.AsyncState) NuGet package provides functionality to store and retrieve objects within the current asynchronous context. This package offers performance and usability improvements over using <xref:System.Threading.AsyncLocal`1> directly, particularly when multiple objects need to be shared across asynchronous operations.
 
 ## Why use AsyncState
 
@@ -46,7 +46,7 @@ For more information, see [dotnet add package](../tools/dotnet-package-add.md) o
 
 ## Register async state services
 
-Register the async state services with your dependency injection container using the <xref:Microsoft.Extensions.DependencyInjection.AsyncStateExtensions.AddAsyncState%2A> extension method:
+Register the async state services with your dependency injection container using the <xref:Microsoft.Extensions.DependencyInjection.AsyncStateExtensions.AddAsyncState*> extension method:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -58,11 +58,11 @@ services.AddAsyncState();
 ServiceProvider provider = services.BuildServiceProvider();
 ```
 
-This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> and <xref:Microsoft.Extensions.AsyncState.IAsyncState> interfaces available for dependency injection.
+This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext`1> and <xref:Microsoft.Extensions.AsyncState.IAsyncState> interfaces available for dependency injection.
 
 ## Use IAsyncContext
 
-The <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> interface provides methods to get and set values in the current asynchronous context:
+The <xref:Microsoft.Extensions.AsyncState.IAsyncContext`1> interface provides methods to get and set values in the current asynchronous context:
 
 :::code language="csharp" source="snippets/async-state/csharp/IAsyncContextExample/Program.cs" id="snippet":::
 
@@ -105,5 +105,5 @@ When using async state, consider the following best practices:
 ## See also
 
 - [Dependency injection in .NET](dependency-injection/overview.md)
-- <xref:System.Threading.AsyncLocal%601>
+- <xref:System.Threading.AsyncLocal`1>
 - [ASP.NET Core middleware](/aspnet/core/fundamentals/middleware/)

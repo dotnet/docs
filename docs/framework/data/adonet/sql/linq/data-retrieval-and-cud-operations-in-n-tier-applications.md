@@ -9,7 +9,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # Data retrieval and CUD operations in n-tier applications (LINQ to SQL)
 
-When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It's also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A?displayProperty=nameWithType>. In addition, if you're using an optimistic concurrency check with original values, then you also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they've been detached.
+When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It's also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges*?displayProperty=nameWithType>. In addition, if you're using an optimistic concurrency check with original values, then you also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they've been detached.
 
  Even if you're serializing proxy objects in place of the LINQ to SQL entities, you still have to construct an entity on the data access layer (DAL), and attach it to a new <xref:System.Data.Linq.DataContext?displayProperty=nameWithType>, in order to submit the data to the database.
 
@@ -126,7 +126,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryID)
 
 ### Middle Tier Implementation
 
- On the middle tier, a new <xref:System.Data.Linq.DataContext> is created, the object is attached to the <xref:System.Data.Linq.DataContext> by using the <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> method, and the object is inserted when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. Exceptions, callbacks, and error conditions can be handled just as in any other Web service scenario.
+ On the middle tier, a new <xref:System.Data.Linq.DataContext> is created, the object is attached to the <xref:System.Data.Linq.DataContext> by using the <xref:System.Data.Linq.Table`1.InsertOnSubmit*> method, and the object is inserted when <xref:System.Data.Linq.DataContext.SubmitChanges*> is called. Exceptions, callbacks, and error conditions can be handled just as in any other Web service scenario.
 
 ```vb
 ' No call to Attach is necessary for inserts.
@@ -159,7 +159,7 @@ End Sub
 
  Delete operations involve optimistic concurrency checks, and the object to be deleted must first be attached to the new data context. In this example, the `Boolean` parameter is set to `false` to indicate that the object does not have a timestamp (RowVersion). If your database table does generate timestamps for each record, then concurrency checks are much simpler, especially for the client. Just pass in either the original or modified object and set the `Boolean` parameter to `true`. In any case, on the middle tier it is typically necessary to catch the <xref:System.Data.Linq.ChangeConflictException>. For more information about how to handle optimistic concurrency conflicts, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).
 
- When deleting entities that have foreign key constraints on associated tables, you must first delete all the objects in its <xref:System.Data.Linq.EntitySet%601> collections.
+ When deleting entities that have foreign key constraints on associated tables, you must first delete all the objects in its <xref:System.Data.Linq.EntitySet`1> collections.
 
 ```vb
 ' Attach is necessary for deletes.
@@ -215,7 +215,7 @@ public void DeleteOrder(Order order)
 - Optimistic concurrency based on original values of a subset of entity properties.
 - Optimistic concurrency based on the complete original and modified entities.
 
- You can also perform updates or deletes on an entity together with its relations, for example a Customer and a collection of its associated Order objects. When you make modifications on the client to a graph of entity objects and their child (`EntitySet`) collections, and the optimistic concurrency checks require original values, the client must provide those original values for each entity and <xref:System.Data.Linq.EntitySet%601> object. If you want to enable clients to make a set of related updates, deletes, and insertions in a single method call, you must provide the client a way to indicate what type of operation to perform on each entity. On the middle tier, you then must call the appropriate <xref:System.Data.Linq.ITable.Attach%2A> method and then <xref:System.Data.Linq.ITable.InsertOnSubmit%2A>, <xref:System.Data.Linq.ITable.DeleteAllOnSubmit%2A>, or <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> (without `Attach`, for insertions) for each entity before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. Do not retrieve data from the database as a way to obtain original values before you try updates.
+ You can also perform updates or deletes on an entity together with its relations, for example a Customer and a collection of its associated Order objects. When you make modifications on the client to a graph of entity objects and their child (`EntitySet`) collections, and the optimistic concurrency checks require original values, the client must provide those original values for each entity and <xref:System.Data.Linq.EntitySet`1> object. If you want to enable clients to make a set of related updates, deletes, and insertions in a single method call, you must provide the client a way to indicate what type of operation to perform on each entity. On the middle tier, you then must call the appropriate <xref:System.Data.Linq.ITable.Attach*> method and then <xref:System.Data.Linq.ITable.InsertOnSubmit*>, <xref:System.Data.Linq.ITable.DeleteAllOnSubmit*>, or <xref:System.Data.Linq.Table`1.InsertOnSubmit*> (without `Attach`, for insertions) for each entity before you call <xref:System.Data.Linq.DataContext.SubmitChanges*>. Do not retrieve data from the database as a way to obtain original values before you try updates.
 
  For more information about optimistic concurrency, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md). For detailed information about resolving optimistic concurrency change conflicts, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).
 
@@ -374,7 +374,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 }
 ```
 
- To update a collection, call <xref:System.Data.Linq.ITable.AttachAll%2A> instead of `Attach`.
+ To update a collection, call <xref:System.Data.Linq.ITable.AttachAll*> instead of `Attach`.
 
 ### Expected Entity Members
 
@@ -384,11 +384,11 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 - Be expected to be modified.
 - Be a timestamp or have its <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck> attribute set to something besides `Never`.
 
- If a table uses a timestamp or version number for an optimistic concurrency check, you must set those members before you call <xref:System.Data.Linq.ITable.Attach%2A>. A member is dedicated for optimistic concurrency checking when the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion> property is set to true on that Column attribute. Any requested updates will be submitted only if the version number or timestamp values are the same on the database.
+ If a table uses a timestamp or version number for an optimistic concurrency check, you must set those members before you call <xref:System.Data.Linq.ITable.Attach*>. A member is dedicated for optimistic concurrency checking when the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion> property is set to true on that Column attribute. Any requested updates will be submitted only if the version number or timestamp values are the same on the database.
 
  A member is also used in the optimistic concurrency check as long as the member does not have <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck> set to `Never`. The default value is `Always` if no other value is specified.
 
- If any one of these required members is missing, a <xref:System.Data.Linq.ChangeConflictException> is thrown during <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ("Row not found or changed").
+ If any one of these required members is missing, a <xref:System.Data.Linq.ChangeConflictException> is thrown during <xref:System.Data.Linq.DataContext.SubmitChanges*> ("Row not found or changed").
 
 ### State
 
@@ -396,9 +396,9 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 
 1. Attach it as unmodified, and then directly modify the fields.
 
-2. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.
+2. Attach it with the <xref:System.Data.Linq.Table`1.Attach*> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.
 
-3. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.
+3. Attach it with the <xref:System.Data.Linq.Table`1.Attach*> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.
 
  For more information, see [Object States and Change-Tracking](object-states-and-change-tracking.md).
 

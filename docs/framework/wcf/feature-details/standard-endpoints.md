@@ -10,7 +10,7 @@ Endpoints are defined by specifying an address, a binding, and a contract. Other
 
 ## Infrastructure Endpoints
 
- A service may expose endpoints with some of the properties not explicitly implemented by the service author. For example, the metadata exchange endpoint exposes the <xref:System.ServiceModel.Description.IMetadataExchange> contract but as a service author you do not implement that interface, it is implemented by WCF. Such infrastructure endpoints have default values for one or more endpoint properties, some of which may be unalterable. The <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property of the metadata exchange endpoint must be <xref:System.ServiceModel.Description.IMetadataExchange>, while other properties like binding can be supplied by the developer. Infrastructure endpoints are identified by setting the <xref:System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint> property to `true`.
+ A service may expose endpoints with some of the properties not explicitly implemented by the service author. For example, the metadata exchange endpoint exposes the <xref:System.ServiceModel.Description.IMetadataExchange> contract but as a service author you do not implement that interface, it is implemented by WCF. Such infrastructure endpoints have default values for one or more endpoint properties, some of which may be unalterable. The <xref:System.ServiceModel.Description.ServiceEndpoint.Contract> property of the metadata exchange endpoint must be <xref:System.ServiceModel.Description.IMetadataExchange>, while other properties like binding can be supplied by the developer. Infrastructure endpoints are identified by setting the <xref:System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint> property to `true`.
 
 ## Application Endpoints
 
@@ -40,7 +40,7 @@ public class CustomEndpoint : ServiceEndpoint
 }
 ```
 
- To use a user-defined custom endpoint in a configuration file you must derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointElement>, derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602>, and register the new standard endpoint in the extensions section in app.config or machine.config.  The <xref:System.ServiceModel.Configuration.StandardEndpointElement> provides configuration support for the standard endpoint, as shown in the following example.
+ To use a user-defined custom endpoint in a configuration file you must derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointElement>, derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement`2>, and register the new standard endpoint in the extensions section in app.config or machine.config.  The <xref:System.ServiceModel.Configuration.StandardEndpointElement> provides configuration support for the standard endpoint, as shown in the following example.
 
 ```csharp
 public class CustomEndpointElement : StandardEndpointElement
@@ -101,7 +101,7 @@ public class CustomEndpointElement : StandardEndpointElement
 }
 ```
 
- The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602> provides the backing type for the collection that appears under the `<standardEndpoints>` section in the configuration for the standard endpoint.  The following example shows how to implement this class.
+ The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement`2> provides the backing type for the collection that appears under the `<standardEndpoints>` section in the configuration for the standard endpoint.  The following example shows how to implement this class.
 
 ```csharp
 public class CustomEndpointCollectionElement : StandardEndpointCollectionElement<CustomEndpoint, CustomEndpointElement>
@@ -146,7 +146,7 @@ serviceHost.AddServiceEndpoint(new CustomEndpoint());
 </standardEndpoints>
 ```
 
- The type of standard endpoint is specified using the kind attribute in the `<endpoint>` element. The endpoint is configured within the `<standardEndpoints>` element. In the example above, a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint is added and configured. The `<udpDiscoveryEndpoint>` element contains a `<standardEndpoint>` that sets the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.MulticastAddress%2A> property of the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.
+ The type of standard endpoint is specified using the kind attribute in the `<endpoint>` element. The endpoint is configured within the `<standardEndpoints>` element. In the example above, a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint is added and configured. The `<udpDiscoveryEndpoint>` element contains a `<standardEndpoint>` that sets the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.MulticastAddress> property of the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.
 
 ## Standard Endpoints Shipped with the .NET Framework
 

@@ -57,11 +57,11 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 - Ensure that you always raise the *MethodName***Completed** event. This event should be raised on successful completion, on an error, or on cancellation. Applications should never encounter a situation where they remain idle and completion never occurs.
 
-- Ensure that you catch any exceptions that occur in the asynchronous operation and assign the caught exception to the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property.
+- Ensure that you catch any exceptions that occur in the asynchronous operation and assign the caught exception to the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error> property.
 
-- If there was an error completing the task, the results should not be accessible. When the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property is not `null`, ensure that accessing any property in the <xref:System.EventArgs> structure raises an exception. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A> method to perform this verification.
+- If there was an error completing the task, the results should not be accessible. When the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error> property is not `null`, ensure that accessing any property in the <xref:System.EventArgs> structure raises an exception. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary*> method to perform this verification.
 
-- Model a time out as an error. When a time out occurs, raise the *MethodName***Completed** event and assign a <xref:System.TimeoutException> to the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property.
+- Model a time out as an error. When a time out occurs, raise the *MethodName***Completed** event and assign a <xref:System.TimeoutException> to the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error> property.
 
 - If your class supports multiple concurrent invocations, ensure that the *MethodName***Completed** event contains the appropriate `userSuppliedState` object.
 
@@ -79,9 +79,9 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 ### Accessing Results
 
-- If there was an error during execution of the asynchronous operation, the results should not be accessible. Ensure that accessing any property in the <xref:System.ComponentModel.AsyncCompletedEventArgs> when <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> is not `null` raises the exception referenced by <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A>. The <xref:System.ComponentModel.AsyncCompletedEventArgs> class provides the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A> method for this purpose.
+- If there was an error during execution of the asynchronous operation, the results should not be accessible. Ensure that accessing any property in the <xref:System.ComponentModel.AsyncCompletedEventArgs> when <xref:System.ComponentModel.AsyncCompletedEventArgs.Error*> is not `null` raises the exception referenced by <xref:System.ComponentModel.AsyncCompletedEventArgs.Error*>. The <xref:System.ComponentModel.AsyncCompletedEventArgs> class provides the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary*> method for this purpose.
 
-- Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=nameWithType> method to perform this verification.
+- Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary*?displayProperty=nameWithType> method to perform this verification.
 
 ### Progress Reporting
 
@@ -89,7 +89,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 - If you implement a **ProgressChanged** or *MethodName***ProgressChanged** event, ensure that there are no such events raised for a particular asynchronous operation after that operation's *MethodName***Completed** event has been raised.
 
-- If the standard <xref:System.ComponentModel.ProgressChangedEventArgs> is being populated, ensure that the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> can always be interpreted as a percentage. The percentage does not need to be accurate, but it should represent a percentage. If your progress reporting metric must be something other than a percentage, derive a class from the <xref:System.ComponentModel.ProgressChangedEventArgs> class and leave <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> at 0. Avoid using a reporting metric other than a percentage.
+- If the standard <xref:System.ComponentModel.ProgressChangedEventArgs> is being populated, ensure that the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage*> can always be interpreted as a percentage. The percentage does not need to be accurate, but it should represent a percentage. If your progress reporting metric must be something other than a percentage, derive a class from the <xref:System.ComponentModel.ProgressChangedEventArgs> class and leave <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage*> at 0. Avoid using a reporting metric other than a percentage.
 
 - Ensure that the `ProgressChanged` event is raised on the appropriate thread and at the appropriate time in the application lifecycle. For more information, see the Threading and Contexts section.
 
@@ -105,7 +105,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 - In the case of cancellation, set the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled> flag in the <xref:System.ComponentModel.AsyncCompletedEventArgs> object.
 
-- Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=nameWithType> method to perform this verification.
+- Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary*?displayProperty=nameWithType> method to perform this verification.
 
 - Ensure that calls to a cancellation method always return successfully, and never raise an exception. In general, a client is not notified as to whether an operation is truly cancelable at any given time, and is not notified as to whether a previously issued cancellation has succeeded. However, the application will always be given notification when a cancellation succeeded, because the application takes part in the completion status.
 
@@ -113,18 +113,18 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 
 ### Errors and Exceptions
 
-- Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property to that exception.
+- Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error?displayProperty=nameWithType> property to that exception.
 
 ### Threading and Contexts
 
  For correct operation of your class, it is critical that the client's event handlers are invoked on the proper thread or context for the given application model, including ASP.NET and Windows Forms applications. Two important helper classes are provided to ensure that your asynchronous class behaves correctly under any application model: <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager>.
 
- <xref:System.ComponentModel.AsyncOperationManager> provides one method, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A>, which returns an <xref:System.ComponentModel.AsyncOperation>. Your *MethodName***Async** method calls <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A> and your class uses the returned <xref:System.ComponentModel.AsyncOperation> to track the lifetime of the asynchronous task.
+ <xref:System.ComponentModel.AsyncOperationManager> provides one method, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation*>, which returns an <xref:System.ComponentModel.AsyncOperation>. Your *MethodName***Async** method calls <xref:System.ComponentModel.AsyncOperationManager.CreateOperation*> and your class uses the returned <xref:System.ComponentModel.AsyncOperation> to track the lifetime of the asynchronous task.
 
- To report progress, incremental results, and completion to the client, call the <xref:System.ComponentModel.AsyncOperation.Post%2A> and <xref:System.ComponentModel.AsyncOperation.OperationCompleted%2A> methods on the <xref:System.ComponentModel.AsyncOperation>. <xref:System.ComponentModel.AsyncOperation> is responsible for marshalling calls to the client's event handlers to the proper thread or context.
+ To report progress, incremental results, and completion to the client, call the <xref:System.ComponentModel.AsyncOperation.Post*> and <xref:System.ComponentModel.AsyncOperation.OperationCompleted*> methods on the <xref:System.ComponentModel.AsyncOperation>. <xref:System.ComponentModel.AsyncOperation> is responsible for marshalling calls to the client's event handlers to the proper thread or context.
 
 > [!NOTE]
-> You can circumvent these rules if you explicitly want to go against the policy of the application model, but still benefit from the other advantages of using the Event-based Asynchronous Pattern. For example, you may want a class operating in Windows Forms to be free threaded. You can create a free threaded class, as long as developers understand the implied restrictions. Console applications do not synchronize the execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls. This can cause `ProgressChanged` events to be raised out of order. If you wish to have serialized execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls, implement and install a <xref:System.Threading.SynchronizationContext?displayProperty=nameWithType> class.
+> You can circumvent these rules if you explicitly want to go against the policy of the application model, but still benefit from the other advantages of using the Event-based Asynchronous Pattern. For example, you may want a class operating in Windows Forms to be free threaded. You can create a free threaded class, as long as developers understand the implied restrictions. Console applications do not synchronize the execution of <xref:System.ComponentModel.AsyncOperation.Post*> calls. This can cause `ProgressChanged` events to be raised out of order. If you wish to have serialized execution of <xref:System.ComponentModel.AsyncOperation.Post*> calls, implement and install a <xref:System.Threading.SynchronizationContext?displayProperty=nameWithType> class.
 
  For more information about using <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager> to enable your asynchronous operations, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md).
 

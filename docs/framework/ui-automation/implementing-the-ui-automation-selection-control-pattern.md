@@ -42,9 +42,9 @@ Example of Color Swatch String Mapping
 
 |Required members|Type|Notes|
 |----------------------|----------|-----------|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|Property|Should support property changed events using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A> and <xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler%2A>.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired>|Property|Should support property changed events using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A> and <xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler%2A>.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.GetSelection%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|Property|Should support property changed events using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler*> and <xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler*>.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired>|Property|Should support property changed events using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler*> and <xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler*>.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.GetSelection*>|Method|None|
 |<xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent>|Event|Raised when a selection in a container has changed significantly and requires sending more addition and removal events than the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit> constant permits.|
 
  The <xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired> and <xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple> properties can be dynamic. For example, the initial state of a control might not have any items selected by default, indicating that <xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired> is `false`. However, after an item is selected, the control must always have at least one item selected. Similarly, in rare cases, a control might allow multiple items to be selected on initialization, but subsequently allow only single selections to be made.

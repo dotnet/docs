@@ -51,7 +51,7 @@ The `??` and `??=` operators are useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullableTypes":::
 
-  Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to use when a nullable type value is `null` should be the default value of the underlying value type.
+  Use the <xref:System.Nullable`1.GetValueOrDefault?displayProperty=nameWithType> method if the value to use when a nullable type value is `null` should be the default value of the underlying value type.
 
 - To make the argument-checking code more concise, use a [`throw` expression](../statements/exception-handling-statements.md#the-throw-expression) as the right-hand operand of the `??` operator:
 

@@ -122,7 +122,7 @@ Use the assignment operator `=` to *deconstruct* a tuple instance into separate 
 
 The destination of a deconstruct expression can include both existing variables and variables declared in the deconstruction declaration.
 
-You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem%2A?displayProperty=nameWithType> and matches against a `Remainder` of 0:
+You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem*?displayProperty=nameWithType> and matches against a `Remainder` of 0:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
 

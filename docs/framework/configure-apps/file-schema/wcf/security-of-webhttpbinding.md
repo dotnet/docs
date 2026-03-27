@@ -67,8 +67,8 @@ Specifies the security requirements for an endpoint configured with a [\<webHttp
 
 - <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
-- <xref:System.ServiceModel.WebHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WebHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security*>
 - <xref:System.ServiceModel.WebHttpSecurity>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../wcf/feature-details/selecting-a-credential-type.md)

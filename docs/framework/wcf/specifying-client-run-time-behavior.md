@@ -17,20 +17,20 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
 
  You can configure or extend the execution behavior of a callback contract implementation in a client application by using the <xref:System.ServiceModel.CallbackBehaviorAttribute> class. This attribute performs a similar function for the callback class as the <xref:System.ServiceModel.ServiceBehaviorAttribute> class, with the exception of instancing behavior and transaction settings.
 
- The <xref:System.ServiceModel.CallbackBehaviorAttribute> class must be applied to the class that implements the callback contract. If applied to a nonduplex contract implementation, an <xref:System.InvalidOperationException> exception is thrown at runtime. The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> class on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine the thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.
+ The <xref:System.ServiceModel.CallbackBehaviorAttribute> class must be applied to the class that implements the callback contract. If applied to a nonduplex contract implementation, an <xref:System.InvalidOperationException> exception is thrown at runtime. The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> class on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine the thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.
 
  [!code-csharp[CallbackBehaviorAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
  [!code-vb[CallbackBehaviorAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]
 
 ## Using CallbackDebugBehavior to Enable the Flow of Managed Exception Information
 
- You can enable the flow of managed exception information in a client callback object back to the service for debugging purposes by setting the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` either programmatically or from an application configuration file.
+ You can enable the flow of managed exception information in a client callback object back to the service for debugging purposes by setting the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults> property to `true` either programmatically or from an application configuration file.
 
- Returning managed exception information to services can be a security risk because exception details expose information about the internal client implementation that  unauthorized services could use. In addition, although the <xref:System.ServiceModel.Description.CallbackDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.
+ Returning managed exception information to services can be a security risk because exception details expose information about the internal client implementation that  unauthorized services could use. In addition, although the <xref:System.ServiceModel.Description.CallbackDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults*> when deploying.
 
  Because of the security issues involved, it is strongly recommended that:
 
-- You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.
+- You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults> property to `true`.
 
 - You do so only in controlled debugging scenarios.
 

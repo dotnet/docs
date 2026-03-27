@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Create time zones without adjustment rules"
 title: "How to: Create time zones without adjustment rules"
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], adjustment rule"
   - "time zones [.NET], creating"
   - "adjustment rule [.NET]"
@@ -21,10 +21,10 @@ The precise time zone information that is required by an application may not be 
 
 - The time zone exists but does not have accurate information about time zone adjustments for a particular historic period.
 
-In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](time-zone-overview.md).)
+In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](time-zone-overview.md).)
 
 > [!IMPORTANT]
-> Custom time zones created by calling the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method are not added to the registry. Instead, they can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method call.
+> Custom time zones created by calling the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method are not added to the registry. Instead, they can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method call.
 
 This topic shows how to create a time zone without adjustment rules. To create a time zone that supports daylight saving time adjustment rules, see [How to: Create time zones with adjustment rules](create-time-zones-with-adjustment-rules.md).
 
@@ -49,7 +49,7 @@ The following example defines a custom time zone for Mawson, Antarctica, which h
 [!code-csharp[System.TimeZone2.CreateTimeZone#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#1)]
 [!code-vb[System.TimeZone2.CreateTimeZone#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#1)]
 
-The string assigned to the <xref:System.TimeZoneInfo.DisplayName%2A> property follows a standard format in which the time zone's offset from UTC is followed by a friendly description of the time zone.
+The string assigned to the <xref:System.TimeZoneInfo.DisplayName> property follows a standard format in which the time zone's offset from UTC is followed by a friendly description of the time zone.
 
 ## Compiling the code
 

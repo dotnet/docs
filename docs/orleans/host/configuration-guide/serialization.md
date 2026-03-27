@@ -33,7 +33,7 @@ Orleans includes an advanced and extensible serialization framework referred to 
 
 High-fidelity representation of types is fairly uncommon for serializers, so some points warrant further explanation:
 
-1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary%602>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
+1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary`2>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
 
 1. **Maintaining object identity**: If the same object is passed multiple times in the arguments of a grain call or is indirectly pointed to more than once from the arguments, Orleans serializes it only once. On the receiver side, Orleans restores all references correctly so that two pointers to the same object still point to the same object after deserialization. Preserving object identity is important in scenarios like the following: Imagine grain A sends a dictionary with 100 entries to grain B, and 10 keys in the dictionary point to the same object, `obj`, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of `obj`. With object identity preserved, the dictionary on B's side looks exactly like on A's side, with those 10 keys pointing to a single object `obj`. Note that because default string hash code implementations in .NET are randomized per process, the ordering of values in dictionaries and hash sets (for example) might not be preserved.
 
@@ -143,9 +143,9 @@ In the preceding code:
 
 - `MyForeignLibraryValueType` is a type outside your control, defined in a consuming library.
 - `MyForeignLibraryValueTypeSurrogate` is a surrogate type mapping to `MyForeignLibraryValueType`.
-- <xref:Orleans.RegisterConverterAttribute> specifies that `MyForeignLibraryValueTypeSurrogateConverter` acts as a converter to map between the two types. The class implements the <xref:Orleans.IConverter%602> interface.
+- <xref:Orleans.RegisterConverterAttribute> specifies that `MyForeignLibraryValueTypeSurrogateConverter` acts as a converter to map between the two types. The class implements the <xref:Orleans.IConverter`2> interface.
 
-Orleans supports serialization of types in type hierarchies (types deriving from other types). If a foreign type might appear in a type hierarchy (e.g., as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator%602?displayProperty=nameWithType> interface. Consider the following example:
+Orleans supports serialization of types in type hierarchies (types deriving from other types). If a foreign type might appear in a type hierarchy (e.g., as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator`2?displayProperty=nameWithType> interface. Consider the following example:
 
 :::code source="./snippets/serialization/SurrogateExamples.cs" id="surrogate_class_with_populator":::
 
@@ -192,7 +192,7 @@ Orleans promotes safety by default, including safety from some classes of concur
 
 ## Grain storage serializers
 
-Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there's now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, offering a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern involving setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:
+Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain`1.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState`1> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there's now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, offering a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern involving setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> property on the provider's options class, for example:
 
 - <xref:Orleans.Configuration.DynamoDBStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
 - <xref:Orleans.Configuration.AzureBlobStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
@@ -231,7 +231,7 @@ Orleans includes an advanced and extensible serialization framework referred to 
 
 High-fidelity representation of types is fairly uncommon for serializers, so some points warrant further explanation:
 
-1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary%602>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
+1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary`2>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
 
 1. **Maintaining object identity**: If the same object is passed multiple times in the arguments of a grain call or is indirectly pointed to more than once from the arguments, Orleans serializes it only once. On the receiver side, Orleans restores all references correctly so that two pointers to the same object still point to the same object after deserialization. Preserving object identity is important in scenarios like the following: Imagine grain A sends a dictionary with 100 entries to grain B, and 10 keys in the dictionary point to the same object, `obj`, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of `obj`. With object identity preserved, the dictionary on B's side looks exactly like on A's side, with those 10 keys pointing to a single object `obj`. Note that because default string hash code implementations in .NET are randomized per process, the ordering of values in dictionaries and hash sets (for example) might not be preserved.
 
@@ -369,9 +369,9 @@ In the preceding code:
 
 - `MyForeignLibraryValueType` is a type outside your control, defined in a consuming library.
 - `MyForeignLibraryValueTypeSurrogate` is a surrogate type mapping to `MyForeignLibraryValueType`.
-- <xref:Orleans.RegisterConverterAttribute> specifies that `MyForeignLibraryValueTypeSurrogateConverter` acts as a converter to map between the two types. The class implements the <xref:Orleans.IConverter%602> interface.
+- <xref:Orleans.RegisterConverterAttribute> specifies that `MyForeignLibraryValueTypeSurrogateConverter` acts as a converter to map between the two types. The class implements the <xref:Orleans.IConverter`2> interface.
 
-Orleans supports serialization of types in type hierarchies (types deriving from other types). If a foreign type might appear in a type hierarchy (e.g., as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator%602?displayProperty=nameWithType> interface. Consider the following example:
+Orleans supports serialization of types in type hierarchies (types deriving from other types). If a foreign type might appear in a type hierarchy (e.g., as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator`2?displayProperty=nameWithType> interface. Consider the following example:
 
 ``` csharp
 // The foreign type is not sealed, allowing other types to inherit from it.
@@ -493,7 +493,7 @@ Orleans promotes safety by default, including safety from some classes of concur
         [Id(0)]
         public int MyBaseInt { get; set; }
     }
-    
+
     [GenerateSerializer]
     public sealed class MySubClass : MyBaseClass
     {
@@ -508,7 +508,7 @@ Orleans promotes safety by default, including safety from some classes of concur
 
 ## Grain storage serializers
 
-Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there's now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, offering a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern involving setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:
+Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain`1.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState`1> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there's now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, offering a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern involving setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> property on the provider's options class, for example:
 
 - <xref:Orleans.Configuration.DynamoDBStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
 - <xref:Orleans.Configuration.AzureBlobStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
@@ -537,7 +537,7 @@ Orleans has an advanced and extensible serialization framework. Orleans serializ
 
 Two important features of Orleans' serializer set it apart from many other third-party serialization frameworks: dynamic types/arbitrary polymorphism and object identity.
 
-1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary%602>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
+1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types passed in grain calls and maintains the dynamic nature of the actual data type. This means, for example, if a method in a grain interface is declared to accept <xref:System.Collections.IDictionary>, but at runtime the sender passes a <xref:System.Collections.Generic.SortedDictionary`2>, the receiver indeed gets a `SortedDictionary` (even though the "static contract"/grain interface didn't specify this behavior).
 
 1. **Maintaining object identity**: If the same object is passed multiple times in the arguments of a grain call or is indirectly pointed to more than once from the arguments, Orleans serializes it only once. On the receiver side, Orleans restores all references correctly so that two pointers to the same object still point to the same object after deserialization. Preserving object identity is important in scenarios like the following: Imagine grain A sends a dictionary with 100 entries to grain B, and 10 keys in the dictionary point to the same object, `obj`, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of `obj`. With object identity preserved, the dictionary on B's side looks exactly like on A's side, with those 10 keys pointing to a single object `obj`.
 

@@ -34,13 +34,13 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 :::code source="./snippets/primitives/change/Example.Cancellation.cs" id="Cancellation":::
 
-In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and its <xref:System.Threading.CancellationTokenSource.Token> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor%2A> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` statement, the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
+In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and its <xref:System.Threading.CancellationTokenSource.Token> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor*> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` statement, the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
 When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
 
 :::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
-In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The composite token is instantiated by passing an array of the tokens to the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. The code uses a pseudo-random number generator to pick one of the change token sources (doesn't matter which one) and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
+In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The composite token is instantiated by passing an array of the tokens to the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor*> constructor. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. The code uses a pseudo-random number generator to pick one of the change token sources (doesn't matter which one) and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 
 ## Alternative `static` approach
 
@@ -70,7 +70,7 @@ The `StringSegment` struct provides [many methods](/dotnet/api/microsoft.extensi
 
 ### The `StringTokenizer` type
 
-The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. These APIs are similar, but in general, <xref:Microsoft.Extensions.Primitives.StringTokenizer> provides better performance. First, consider the following example:
+The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split*?displayProperty=nameWithType> probably comes to mind. These APIs are similar, but in general, <xref:Microsoft.Extensions.Primitives.StringTokenizer> provides better performance. First, consider the following example:
 
 :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="Tokenizer":::
 
@@ -84,7 +84,7 @@ With the various ways of slicing and dicing strings, it feels appropriate to com
 
     :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
 
-1. **Using <xref:System.String.Split%2A?displayProperty=nameWithType>**:
+1. **Using <xref:System.String.Split*?displayProperty=nameWithType>**:
 
     :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
 

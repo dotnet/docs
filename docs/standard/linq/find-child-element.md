@@ -1,6 +1,6 @@
 ---
 title: How to find a child element - LINQ to XML
-description: This article compares the XPath child element axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Element%2A> method.
+description: This article compares the XPath child element axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Element*> method.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to find a child element (LINQ to XML)
 
-This article compares the XPath child element axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Element%2A> method.
+This article compares the XPath child element axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Element*> method.
 
 ## Example: Find a child element in an XML document
 

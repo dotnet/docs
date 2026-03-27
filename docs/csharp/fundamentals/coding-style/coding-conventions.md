@@ -47,7 +47,7 @@ The following sections describe practices that the .NET docs team follows to pre
 - Use specific exception types to provide meaningful error messages.
 - Use LINQ queries and methods for collection manipulation to improve code readability.
 - Use asynchronous programming with async and await for I/O-bound operations.
-- Be cautious of deadlocks and use <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?DisplayProperty=nameWithType> when appropriate.
+- Be cautious of deadlocks and use <xref:System.Threading.Tasks.Task.ConfigureAwait*?DisplayProperty=nameWithType> when appropriate.
 - Use the language keywords for data types instead of the runtime types. For example, use `string` instead of <xref:System.String?DisplayProperty=fullName>, or `int` instead of <xref:System.Int32?displayProperty=fullName>. This recommendation includes using the types `nint` and `nuint`.
 - Use `int` rather than unsigned types. The use of `int` is common throughout C#, and it's easier to interact with other libraries when you use `int`. Exceptions are for documentation specific to unsigned data types.
 - Use `var` only when a reader can infer the type from the expression. Readers view our samples on the docs platform. They don't have hover or tool tips that display the type of variables.
@@ -119,7 +119,7 @@ More specific guidelines follow.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet16":::
 
-- Simplify your code by using the C# [using statement](../../language-reference/statements/using.md). If you have a [try-finally](../../language-reference/statements/exception-handling-statements.md#the-try-finally-statement) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose%2A> method, use a `using` statement instead.
+- Simplify your code by using the C# [using statement](../../language-reference/statements/using.md). If you have a [try-finally](../../language-reference/statements/exception-handling-statements.md#the-try-finally-statement) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose*> method, use a `using` statement instead.
 
   In the following example, the `try-finally` statement only calls `Dispose` in the `finally` block.
 

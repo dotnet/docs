@@ -45,7 +45,7 @@ Complete the following steps to register the services you need:
     dotnet add package Azure.Messaging.ServiceBus
     ```
 
-3. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service. Some client libraries provide additional [subclients](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-subclients) for specific subgroups of Azure service functionality. You can register such subclients for dependency injection via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> extension method.
+3. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service. Some client libraries provide additional [subclients](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-subclients) for specific subgroups of Azure service functionality. You can register such subclients for dependency injection via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient*> extension method.
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,13-15":::
 
@@ -80,7 +80,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
     dotnet add package Azure.Identity
     ```
 
-1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
+1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" :::
 
@@ -126,7 +126,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 ## Configure logging
 
-The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. Client libraries can also log a variety of other events, including retries, token retrieval, and service-specific events from various clients. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. The `AzureEventSourceLogForwarder` forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
+The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. Client libraries can also log a variety of other events, including retries, token retrieval, and service-specific events from various clients. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. The `AzureEventSourceLogForwarder` forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
 
 The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. For more information on these topics and other scenarios, see [Logging with the Azure SDK for .NET](logging.md) and [Dependency injection with the Azure SDK for .NET](dependency-injection.md).
 

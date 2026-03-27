@@ -79,13 +79,13 @@ Embedding connection strings in your application's code can lead to security vul
 
 | Property                                                     | Description                                                        |
 |--------------------------------------------------------------|--------------------------------------------------------------------|
-| <xref:System.Configuration.ConnectionStringSettings.Name%2A> | The name of the connection string. Maps to the `name` attribute. |
-|<xref:System.Configuration.ConnectionStringSettings.ProviderName%2A>|The fully qualified provider name. Maps to the `providerName` attribute.|
+| <xref:System.Configuration.ConnectionStringSettings.Name*> | The name of the connection string. Maps to the `name` attribute. |
+|<xref:System.Configuration.ConnectionStringSettings.ProviderName*>|The fully qualified provider name. Maps to the `providerName` attribute.|
 |<xref:System.Configuration.ConnectionStringSettings.ConnectionString>|The connection string. Maps to the `connectionString` attribute.|
 
 ### Example: List All Connection Strings
 
- This example iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection> and displays the <xref:System.Configuration.ConnectionStringSettings.Name%2A?displayProperty=nameWithType>, <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A?displayProperty=nameWithType>, and <xref:System.Configuration.ConnectionStringSettings.ConnectionString?displayProperty=nameWithType> properties in the console window.
+ This example iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection> and displays the <xref:System.Configuration.ConnectionStringSettings.Name*?displayProperty=nameWithType>, <xref:System.Configuration.ConnectionStringSettings.ProviderName*?displayProperty=nameWithType>, and <xref:System.Configuration.ConnectionStringSettings.ConnectionString?displayProperty=nameWithType> properties in the console window.
 
 > [!NOTE]
 > System.Configuration.dll is not included in all project types, and you might need to set a reference to it in order to use the configuration classes. The name and location of a particular application configuration file varies by the type of application and the hosting process.
@@ -102,7 +102,7 @@ Embedding connection strings in your application's code can lead to security vul
 
 ### Example: Retrieve a Connection String by Provider Name
 
- This example demonstrates how to retrieve a connection string by specifying the provider-invariant name in the format *System.Data.ProviderName*. The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection> and returns the connection string for the first <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> found. If the provider name is not found, the function returns `null` (`Nothing` in Visual Basic).
+ This example demonstrates how to retrieve a connection string by specifying the provider-invariant name in the format *System.Data.ProviderName*. The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection> and returns the connection string for the first <xref:System.Configuration.ConnectionStringSettings.ProviderName*> found. If the provider name is not found, the function returns `null` (`Nothing` in Visual Basic).
 
  [!code-csharp[DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/VB/source.vb#1)]
@@ -160,7 +160,7 @@ Embedding connection strings in your application's code can lead to security vul
 
  This example demonstrates how to toggle encrypting the `connectionStrings` section in an **app.config** file for a Windows application. In this example, the procedure takes the name of the application as an argument, for example, "MyApplication.exe". The **app.config** file is then encrypted and copied to the folder that contains the executable under the name of "MyApplication.exe.config".
 
- The code uses the <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A> method to open the **app.config** file for editing, and the <xref:System.Configuration.ConfigurationManager.GetSection%2A> method returns the `connectionStrings` section. The code then checks the <xref:System.Configuration.SectionInformation.IsProtected> property, calling the <xref:System.Configuration.SectionInformation.ProtectSection%2A> to encrypt the section if it is not encrypted. The <xref:System.Configuration.SectionInformation.UnprotectSection%2A> method is invoked to decrypt the section. (The connection string can only be decrypted on the computer on which it was encrypted.) The <xref:System.Configuration.Configuration.Save%2A> method completes the operation and saves the changes.
+ The code uses the <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration*> method to open the **app.config** file for editing, and the <xref:System.Configuration.ConfigurationManager.GetSection*> method returns the `connectionStrings` section. The code then checks the <xref:System.Configuration.SectionInformation.IsProtected> property, calling the <xref:System.Configuration.SectionInformation.ProtectSection*> to encrypt the section if it is not encrypted. The <xref:System.Configuration.SectionInformation.UnprotectSection*> method is invoked to decrypt the section. (The connection string can only be decrypted on the computer on which it was encrypted.) The <xref:System.Configuration.Configuration.Save*> method completes the operation and saves the changes.
 
 You must add a reference to `System.Configuration.dll` in your project for the code to run.
 
@@ -171,7 +171,7 @@ You must add a reference to `System.Configuration.dll` in your project for the c
 
 ### Web.config Example
 
- This example uses the <xref:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration%2A> method of the `WebConfigurationManager`. In this case, you can supply the relative path to the **Web.config** file by using a tilde. The code requires a reference to the `System.Web.Configuration` class.
+ This example uses the <xref:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration*> method of the `WebConfigurationManager`. In this case, you can supply the relative path to the **Web.config** file by using a tilde. The code requires a reference to the `System.Web.Configuration` class.
 
  [!code-csharp[DataWorks ConnectionStringsWeb.Encrypt#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringsWeb.Encrypt#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/VB/source.vb#1)]

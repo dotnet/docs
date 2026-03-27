@@ -69,8 +69,8 @@ Defines the security settings for a binding.
 ## See also
 
 - <xref:System.ServiceModel.NetTcpSecurity>
-- <xref:System.ServiceModel.NetTcpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetTcpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

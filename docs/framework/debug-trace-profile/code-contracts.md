@@ -39,7 +39,7 @@ For tools and detailed instructions for using code contracts, see [Code Contract
 
 ## Preconditions
 
-You can express preconditions by using the <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType> method. Preconditions specify state when a method is invoked. They are generally used to specify valid parameter values. All members that are mentioned in preconditions must be at least as accessible as the method itself; otherwise, the precondition might not be understood by all callers of a method. The condition must have no side-effects. The runtime behavior of failed preconditions is determined by the runtime analyzer.
+You can express preconditions by using the <xref:System.Diagnostics.Contracts.Contract.Requires*?displayProperty=nameWithType> method. Preconditions specify state when a method is invoked. They are generally used to specify valid parameter values. All members that are mentioned in preconditions must be at least as accessible as the method itself; otherwise, the precondition might not be understood by all callers of a method. The condition must have no side-effects. The runtime behavior of failed preconditions is determined by the runtime analyzer.
 
 For example, the following precondition expresses that parameter `x` must be non-null.
 
@@ -47,7 +47,7 @@ For example, the following precondition expresses that parameter `x` must be non
 Contract.Requires(x != null);
 ```
 
-If your code must throw a particular exception on failure of a precondition, you can use the generic overload of <xref:System.Diagnostics.Contracts.Contract.Requires%2A> as follows.
+If your code must throw a particular exception on failure of a precondition, you can use the generic overload of <xref:System.Diagnostics.Contracts.Contract.Requires*> as follows.
 
 ```csharp
 Contract.Requires<ArgumentNullException>(x != null, "x");
@@ -59,9 +59,9 @@ Most code contains some parameter validation in the form of `if`-`then`-`throw` 
 
 - The statements appear before any other statements in a method.
 
-- The entire set of such statements is followed by an explicit <xref:System.Diagnostics.Contracts.Contract> method call, such as a call to the <xref:System.Diagnostics.Contracts.Contract.Requires%2A>, <xref:System.Diagnostics.Contracts.Contract.Ensures%2A>, <xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A>, or <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A> method.
+- The entire set of such statements is followed by an explicit <xref:System.Diagnostics.Contracts.Contract> method call, such as a call to the <xref:System.Diagnostics.Contracts.Contract.Requires*>, <xref:System.Diagnostics.Contracts.Contract.Ensures*>, <xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow*>, or <xref:System.Diagnostics.Contracts.Contract.EndContractBlock*> method.
 
-When `if`-`then`-`throw` statements appear in this form, the tools recognize them as legacy `requires` statements. If no other contracts follow the `if`-`then`-`throw` sequence, end the code with the <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=nameWithType> method.
+When `if`-`then`-`throw` statements appear in this form, the tools recognize them as legacy `requires` statements. If no other contracts follow the `if`-`then`-`throw` sequence, end the code with the <xref:System.Diagnostics.Contracts.Contract.EndContractBlock*?displayProperty=nameWithType> method.
 
 ```csharp
 if (x == null) throw new ...
@@ -78,7 +78,7 @@ Unlike preconditions, postconditions may reference members with less visibility.
 
 ### Standard Postconditions
 
-You can express standard postconditions by using the <xref:System.Diagnostics.Contracts.Contract.Ensures%2A> method. Postconditions express a condition that must be `true` upon normal termination of the method.
+You can express standard postconditions by using the <xref:System.Diagnostics.Contracts.Contract.Ensures*> method. Postconditions express a condition that must be `true` upon normal termination of the method.
 
 ```csharp
 Contract.Ensures(this.F > 0);
@@ -86,7 +86,7 @@ Contract.Ensures(this.F > 0);
 
 ### Exceptional Postconditions
 
-Exceptional postconditions are postconditions that should be `true` when a particular exception is thrown by a method. You can specify these postconditions by using the <xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A?displayProperty=nameWithType> method, as the following example shows.
+Exceptional postconditions are postconditions that should be `true` when a particular exception is thrown by a method. You can specify these postconditions by using the <xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow*?displayProperty=nameWithType> method, as the following example shows.
 
 ```csharp
 Contract.EnsuresOnThrow<T>(this.F > 0);
@@ -120,20 +120,20 @@ The following methods may be used only within postconditions:
       Contract.ForAll(0, Contract.Result<int>(), i => Contract.OldValue(xs[i]) > 3); // ERROR
       ```
 
-  - An old expression cannot refer to the parameter of the anonymous delegate in a <xref:System.Diagnostics.Contracts.Contract.ForAll%2A> or <xref:System.Diagnostics.Contracts.Contract.Exists%2A> call unless it is used as an indexer or argument to a method call:
+  - An old expression cannot refer to the parameter of the anonymous delegate in a <xref:System.Diagnostics.Contracts.Contract.ForAll*> or <xref:System.Diagnostics.Contracts.Contract.Exists*> call unless it is used as an indexer or argument to a method call:
 
       ```csharp
       Contract.ForAll(0, xs.Length, i => Contract.OldValue(xs[i]) > 3); // OK
       Contract.ForAll(0, xs.Length, i => Contract.OldValue(i) > 3); // ERROR
       ```
 
-  - An old expression cannot occur in the body of an anonymous delegate if the value of the old expression depends on any of the parameters of the anonymous delegate, unless the anonymous delegate is an argument to the <xref:System.Diagnostics.Contracts.Contract.ForAll%2A> or <xref:System.Diagnostics.Contracts.Contract.Exists%2A> method:
+  - An old expression cannot occur in the body of an anonymous delegate if the value of the old expression depends on any of the parameters of the anonymous delegate, unless the anonymous delegate is an argument to the <xref:System.Diagnostics.Contracts.Contract.ForAll*> or <xref:System.Diagnostics.Contracts.Contract.Exists*> method:
 
       ```csharp
       Method(... (T t) => Contract.OldValue(... t ...) ...); // ERROR
       ```
 
-  - `Out` parameters present a problem because contracts appear before the body of the method, and most compilers do not allow references to `out` parameters in postconditions. To solve this problem, the <xref:System.Diagnostics.Contracts.Contract> class provides the <xref:System.Diagnostics.Contracts.Contract.ValueAtReturn%2A> method, which allows a postcondition based on an `out` parameter.
+  - `Out` parameters present a problem because contracts appear before the body of the method, and most compilers do not allow references to `out` parameters in postconditions. To solve this problem, the <xref:System.Diagnostics.Contracts.Contract> class provides the <xref:System.Diagnostics.Contracts.Contract.ValueAtReturn*> method, which allows a postcondition based on an `out` parameter.
 
       ```csharp
       public void OutParam(out int x)
@@ -143,7 +143,7 @@ The following methods may be used only within postconditions:
       }
       ```
 
-      As with the <xref:System.Diagnostics.Contracts.Contract.OldValue%2A> method, you can omit the generic type parameter whenever the compiler is able to infer its type. The contract rewriter replaces the method call with the value of the `out` parameter. The <xref:System.Diagnostics.Contracts.Contract.ValueAtReturn%2A> method may appear only in postconditions. The argument to the method must be an `out` parameter or a field of a structure `out` parameter. The latter is also useful when referring to fields in the postcondition of a structure constructor.
+      As with the <xref:System.Diagnostics.Contracts.Contract.OldValue*> method, you can omit the generic type parameter whenever the compiler is able to infer its type. The contract rewriter replaces the method call with the value of the `out` parameter. The <xref:System.Diagnostics.Contracts.Contract.ValueAtReturn*> method may appear only in postconditions. The argument to the method must be an `out` parameter or a field of a structure `out` parameter. The latter is also useful when referring to fields in the postcondition of a structure constructor.
 
       > [!NOTE]
       > Currently, the code contract analysis tools do not check whether `out` parameters are initialized properly and disregard their mention in the postcondition. Therefore, in the previous example, if the line after the contract had used the value of `x` instead of assigning an integer to it, a compiler would not issue the correct error. However, on a build where the CONTRACTS_FULL preprocessor symbol is not defined (such asa release build), the compiler will issue an error.
@@ -152,7 +152,7 @@ The following methods may be used only within postconditions:
 
 Object invariants are conditions that should be true for each instance of a class whenever that object is visible to a client. They express the conditions under which the object is considered to be correct.
 
-The invariant methods are identified by being marked with the <xref:System.Diagnostics.Contracts.ContractInvariantMethodAttribute> attribute. The invariant methods must contain no code except for a sequence of calls to the <xref:System.Diagnostics.Contracts.Contract.Invariant%2A> method, each of which specifies an individual invariant, as shown in the following example.
+The invariant methods are identified by being marked with the <xref:System.Diagnostics.Contracts.ContractInvariantMethodAttribute> attribute. The invariant methods must contain no code except for a sequence of calls to the <xref:System.Diagnostics.Contracts.Contract.Invariant*> method, each of which specifies an individual invariant, as shown in the following example.
 
 ```csharp
 [ContractInvariantMethod]
@@ -164,7 +164,7 @@ protected void ObjectInvariant ()
 }
 ```
 
-Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During runtime checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for an object finalizer and an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.
+Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During runtime checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for an object finalizer and an <xref:System.IDisposable.Dispose*?displayProperty=nameWithType> implementation.
 
 <a name="usage_guidelines"></a>
 
@@ -176,12 +176,12 @@ The following table shows the order of elements you should use when you write me
 
 |`If-then-throw statements`|Backward-compatible public preconditions|
 |-|-|
-|<xref:System.Diagnostics.Contracts.Contract.Requires%2A>|All public preconditions.|
-|<xref:System.Diagnostics.Contracts.Contract.Ensures%2A>|All public (normal) postconditions.|
-|<xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A>|All public exceptional postconditions.|
-|<xref:System.Diagnostics.Contracts.Contract.Ensures%2A>|All private/internal (normal) postconditions.|
-|<xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A>|All private/internal exceptional postconditions.|
-|<xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A>|If using `if`-`then`-`throw` style preconditions without any other contracts, place a call to <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A> to indicate that all previous if checks are preconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.Requires*>|All public preconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.Ensures*>|All public (normal) postconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow*>|All public exceptional postconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.Ensures*>|All private/internal (normal) postconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow*>|All private/internal exceptional postconditions.|
+|<xref:System.Diagnostics.Contracts.Contract.EndContractBlock*>|If using `if`-`then`-`throw` style preconditions without any other contracts, place a call to <xref:System.Diagnostics.Contracts.Contract.EndContractBlock*> to indicate that all previous if checks are preconditions.|
 
 <a name="purity"></a>
 
@@ -201,7 +201,7 @@ Code contract tools currently assume that the following code elements are pure:
 
 - Any method whose fully qualified name begins with "System.Diagnostics.Contracts.Contract", "System.String", "System.IO.Path", or "System.Type".
 
-- Any invoked delegate, provided that the delegate type itself is attributed with the <xref:System.Diagnostics.Contracts.PureAttribute>. The delegate types <xref:System.Predicate%601?displayProperty=nameWithType> and <xref:System.Comparison%601?displayProperty=nameWithType> are considered pure.
+- Any invoked delegate, provided that the delegate type itself is attributed with the <xref:System.Diagnostics.Contracts.PureAttribute>. The delegate types <xref:System.Predicate`1?displayProperty=nameWithType> and <xref:System.Comparison`1?displayProperty=nameWithType> are considered pure.
 
 <a name="visibility"></a>
 

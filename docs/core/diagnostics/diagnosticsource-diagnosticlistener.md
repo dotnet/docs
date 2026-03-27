@@ -231,7 +231,7 @@ method to return `false` and thus be efficiently filtered out.
 ##### Context-based filtering
 
 Some scenarios require advanced filtering based on extended context.
-Producers can call <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
+Producers can call <xref:System.Diagnostics.DiagnosticSource.IsEnabled*?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
 
 ```csharp
 //aRequest and anActivity are the current request and activity about to be logged.

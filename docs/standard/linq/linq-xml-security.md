@@ -54,9 +54,9 @@ The description of an error might reveal data, such as the data being transforme
 
 An assembly can have lesser or greater permissions. An assembly that has greater permissions has greater control over the computer and its environments.
 
-If code in an assembly with greater permissions calls <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=nameWithType> in an event handler, and then the XML tree is passed to a malicious assembly that has restricted permissions, the malicious assembly can cause an event to be raised. Because the event runs code that's in the assembly with greater permissions, the malicious assembly would then be operating with elevated privileges.
+If code in an assembly with greater permissions calls <xref:System.Security.CodeAccessPermission.Assert*?displayProperty=nameWithType> in an event handler, and then the XML tree is passed to a malicious assembly that has restricted permissions, the malicious assembly can cause an event to be raised. Because the event runs code that's in the assembly with greater permissions, the malicious assembly would then be operating with elevated privileges.
 
-Microsoft recommends that you never call <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=nameWithType> in an event handler.
+Microsoft recommends that you never call <xref:System.Security.CodeAccessPermission.Assert*?displayProperty=nameWithType> in an event handler.
 
 ### Don't accept DTDs from untrusted sources
 
@@ -68,13 +68,13 @@ One example of accepting DTDs from untrusted sources is a Web application that a
 
 Application developers should be aware that extremely large data sources can lead to resource exhaustion and denial of service attacks.
 
-If a malicious user submits or uploads a very large XML document, it could cause LINQ to XML to consume excessive system resources. This can constitute a denial of service attack. To prevent this, you can set the <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=nameWithType> property, and create a reader that's then limited in the size of document that it can load. You then use the reader to create the XML tree.
+If a malicious user submits or uploads a very large XML document, it could cause LINQ to XML to consume excessive system resources. This can constitute a denial of service attack. To prevent this, you can set the <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument?displayProperty=nameWithType> property, and create a reader that's then limited in the size of document that it can load. You then use the reader to create the XML tree.
 
-For example, if you know that the maximum expected size of your XML documents coming from an untrusted source will be less than 50K bytes, set <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=nameWithType> to 100,000. This will not encumber your processing of XML documents, and at the same time it will mitigate denial of service threats where documents might be uploaded that would consume large amounts of memory.
+For example, if you know that the maximum expected size of your XML documents coming from an untrusted source will be less than 50K bytes, set <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument*?displayProperty=nameWithType> to 100,000. This will not encumber your processing of XML documents, and at the same time it will mitigate denial of service threats where documents might be uploaded that would consume large amounts of memory.
 
 ### Avoid excess entity expansion
 
-One of the known denial of service attacks when using a DTD is a document that causes excessive entity expansion. To prevent this, you can set the <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A?displayProperty=nameWithType> property, and create a reader that's then limited in the number of characters that result from entity expansion. You then use the reader to create the XML tree.
+One of the known denial of service attacks when using a DTD is a document that causes excessive entity expansion. To prevent this, you can set the <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities?displayProperty=nameWithType> property, and create a reader that's then limited in the number of characters that result from entity expansion. You then use the reader to create the XML tree.
 
 ### Limit the depth of the XML hierarchy
 

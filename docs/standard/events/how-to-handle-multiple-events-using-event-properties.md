@@ -41,5 +41,5 @@ To use event properties, you define the event properties in the class that raise
 
 - <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>
 - [Events](index.md)
-- <xref:System.Web.UI.Control.Events%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.Control.Events*?displayProperty=nameWithType>
 - [How to: Declare Custom Events To Conserve Memory](../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0056: Assembly.LoadFrom that takes an AssemblyHashAlgorithm is obsolete
 
-The overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> that takes an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm> is obsolete, starting in .NET 9. Calling it in code generates warning `SYSLIB0056` at compile time.
+The overload of <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> that takes an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm> is obsolete, starting in .NET 9. Calling it in code generates warning `SYSLIB0056` at compile time.
 
 ## Reason for obsoletion
 
@@ -15,7 +15,7 @@ The overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nam
 
 ## Workaround
 
-Use an overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> that doesn't take an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm>.
+Use an overload of <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> that doesn't take an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm>.
 
 ## Suppress a warning
 

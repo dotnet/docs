@@ -7,9 +7,9 @@ ms.topic: tutorial
 
 # Process asynchronous tasks as they complete (C#)
 
-By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, you can start multiple tasks at the same time and process them one by one as they're completed rather than process them in the order in which they're started.
+By using <xref:System.Threading.Tasks.Task.WhenAny*?displayProperty=nameWithType>, you can start multiple tasks at the same time and process them one by one as they're completed rather than process them in the order in which they're started.
 
-The following example uses a query to create a collection of tasks. Each task downloads the contents of a specified website. In each iteration of a while loop, an awaited call to <xref:System.Threading.Tasks.Task.WhenAny%2A> returns the task in the collection of tasks that finishes its download first. That task is removed from the collection and processed. The loop repeats until the collection contains no more tasks.
+The following example uses a query to create a collection of tasks. Each task downloads the contents of a specified website. In each iteration of a while loop, an awaited call to <xref:System.Threading.Tasks.Task.WhenAny*> returns the task in the collection of tasks that finishes its download first. That task is removed from the collection and processed. The loop repeats until the collection contains no more tasks.
 
 ## Prerequisites
 
@@ -114,7 +114,7 @@ static async Task SumPageSizesAsync()
 }
 ```
 
-The `while` loop removes one of the tasks in each iteration. After every task has completed, the loop ends. The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
+The `while` loop removes one of the tasks in each iteration. After every task has completed, the loop ends. The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task`1>, where `TResult` is an integer:
 
 ```csharp
 IEnumerable<Task<int>> downloadTasksQuery =
@@ -122,7 +122,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
     select ProcessUrlAsync(url, s_client);
 ```
 
-Due to [deferred execution](../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
+Due to [deferred execution](../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType> to start each task.
 
 ```csharp
 List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
@@ -142,7 +142,7 @@ The `while` loop performs the following steps for each task in the collection:
     downloadTasks.Remove(finishedTask);
     ```
 
-1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property, which would throw the `AggregateException`.
+1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task`1> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task`1.Result?displayProperty=nameWithType> property, which would throw the `AggregateException`.
 
     ```csharp
     total += await finishedTask;
@@ -171,7 +171,7 @@ Run the program several times to verify that the downloaded lengths don't always
 
 ## Simplify the approach using `Task.WhenEach`
 
-The `while` loop implemented in `SumPageSizesAsync` method can be simplified using the new <xref:System.Threading.Tasks.Task.WhenEach%2A?displayProperty=nameWithType> method introduced in .NET 9, by calling it in `await foreach` loop.
+The `while` loop implemented in `SumPageSizesAsync` method can be simplified using the new <xref:System.Threading.Tasks.Task.WhenEach*?displayProperty=nameWithType> method introduced in .NET 9, by calling it in `await foreach` loop.
 <br/>Replace the previously implemented `while` loop:
 
 ```csharp
@@ -202,6 +202,6 @@ The following code is the complete text of the *Program.cs* file for the example
 
 ## See also
 
-- <xref:System.Threading.Tasks.Task.WhenAny%2A>
-- <xref:System.Threading.Tasks.Task.WhenEach%2A>
+- <xref:System.Threading.Tasks.Task.WhenAny*>
+- <xref:System.Threading.Tasks.Task.WhenEach*>
 - [Asynchronous programming with async and await (C#)](index.md)

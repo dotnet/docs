@@ -3,7 +3,7 @@ title: "Arithmetic operators"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
 ms.date: 01/20/2026
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "++_CSharpKeyword"
   - "--_CSharpKeyword"
   - "*_CSharpKeyword"
@@ -13,7 +13,7 @@ f1_keywords:
   - "-_CSharpKeyword"
   - "%=_CSharpKeyword"
   - "*=_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "arithmetic operators [C#]"
   - "checked operators [C#]"
   - "increment operator [C#]"
@@ -128,7 +128,7 @@ For operands of integer types, the result of `a % b` is the value produced by $a
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="IntegerRemainder":::
 
-Use the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method to compute both integer division and remainder results.
+Use the <xref:System.Math.DivRem*?displayProperty=nameWithType> method to compute both integer division and remainder results.
 
 ### Floating-point remainder
 
@@ -138,7 +138,7 @@ For the `float` and `double` operands, the result of `x % y` for the finite `x` 
 - The absolute value of `z` comes from the calculation $|x| - n \times |y|$, where `n` is the largest integer less than or equal to $\frac{|x|}{|y|}$. Here, $|x|$ and $|y|$ represent the absolute values of `x` and `y`, respectively.
 
 > [!NOTE]
-> This method of computing the remainder is similar to the method used for integer operands, but it differs from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
+> This method of computing the remainder is similar to the method used for integer operands, but it differs from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder*?displayProperty=nameWithType> method.
 
 For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#12124-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 

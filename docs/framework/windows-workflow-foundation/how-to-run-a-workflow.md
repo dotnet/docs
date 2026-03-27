@@ -75,7 +75,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
      [!code-csharp[CFX_WF_GettingStarted#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/extrasnippets.cs#4)]
      [!code-vb[CFX_WF_GettingStarted#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/extrasnippets.vb#4)]
 
-     This code creates a <xref:System.Activities.WorkflowApplication>, subscribes to three workflow life-cycle events, starts the workflow with a call to <xref:System.Activities.WorkflowApplication.Run%2A>, and then waits for the workflow to complete. When the workflow completes, the <xref:System.Threading.AutoResetEvent> is set and the host application completes.
+     This code creates a <xref:System.Activities.WorkflowApplication>, subscribes to three workflow life-cycle events, starts the workflow with a call to <xref:System.Activities.WorkflowApplication.Run*>, and then waits for the workflow to complete. When the workflow completes, the <xref:System.Threading.AutoResetEvent> is set and the host application completes.
 
 ### To set input arguments of a workflow
 
@@ -108,7 +108,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
      [!code-csharp[CFX_WF_GettingStarted#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#8)]
      [!code-vb[CFX_WF_GettingStarted#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#8)]
 
-2. Add the following <xref:System.Activities.WorkflowApplication.Idle%2A> handler just below the existing three workflow life-cycle handlers in `Main`.
+2. Add the following <xref:System.Activities.WorkflowApplication.Idle*> handler just below the existing three workflow life-cycle handlers in `Main`.
 
      [!code-csharp[CFX_WF_GettingStarted#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#9)]
      [!code-vb[CFX_WF_GettingStarted#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#9)]
@@ -116,7 +116,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
      Each time the workflow becomes idle waiting for the next guess, this handler is called and the `idleAction` <xref:System.Threading.AutoResetEvent> is set. The code in the following step uses `idleEvent` and `syncEvent` to determine whether the workflow is waiting for the next guess or is complete.
 
     > [!NOTE]
-    > In this example, the host application uses auto-reset events in the <xref:System.Activities.WorkflowApplication.Completed> and <xref:System.Activities.WorkflowApplication.Idle%2A> handlers to synchronize the host application with the progress of the workflow. It is not necessary to block and wait for the workflow to become idle before resuming a bookmark, but in this example the synchronization events are required so the host knows whether the workflow is complete or whether it is waiting on more user input by using the <xref:System.Activities.Bookmark>. For more information, see [Bookmarks](bookmarks.md).
+    > In this example, the host application uses auto-reset events in the <xref:System.Activities.WorkflowApplication.Completed> and <xref:System.Activities.WorkflowApplication.Idle*> handlers to synchronize the host application with the progress of the workflow. It is not necessary to block and wait for the workflow to become idle before resuming a bookmark, but in this example the synchronization events are required so the host knows whether the workflow is complete or whether it is waiting on more user input by using the <xref:System.Activities.Bookmark>. For more information, see [Bookmarks](bookmarks.md).
 
 3. Remove the call to `WaitOne`, and replace it with code to gather input from the user and resume the <xref:System.Activities.Bookmark>.
 

@@ -10,7 +10,7 @@ A flowchart is a well-known paradigm for designing programs. The Flowchart activ
 
 ## Flowchart workflow structure
 
- A Flowchart activity is an activity that contains a collection of activities to be executed.  Flowcharts also contain flow control elements such as <xref:System.Activities.Statements.FlowDecision> and <xref:System.Activities.Statements.FlowSwitch%601> that direct execution between contained activities based on the values of variables.
+ A Flowchart activity is an activity that contains a collection of activities to be executed.  Flowcharts also contain flow control elements such as <xref:System.Activities.Statements.FlowDecision> and <xref:System.Activities.Statements.FlowSwitch`1> that direct execution between contained activities based on the values of variables.
 
 ## Types of flow nodes
 
@@ -20,7 +20,7 @@ A flowchart is a well-known paradigm for designing programs. The Flowchart activ
 
 - `FlowDecision` - Branches execution based on a Boolean condition, similar to <xref:System.Activities.Statements.If>.
 
-- `FlowSwitch` – Branches execution based on an exclusive switch, similar to <xref:System.Activities.Statements.Switch%601>.
+- `FlowSwitch` – Branches execution based on an exclusive switch, similar to <xref:System.Activities.Statements.Switch`1>.
 
 Each link has an `Action` property that defines a <xref:System.Activities.ActivityAction> that can be used to execute child activities, and one or more `Next` properties that define which element or elements to execute when the current element finishes execution.
 
@@ -50,7 +50,7 @@ To model a basic sequence in which two activities execute in turn, the `FlowStep
 
 ### Creating a conditional flowchart with a FlowDecision node
 
-To model a conditional flow node in a flowchart workflow (that is, to create a link that functions as a traditional flowchart's decision symbol), a <xref:System.Activities.Statements.FlowDecision> node is used. The <xref:System.Activities.Statements.FlowDecision.Condition%2A> property of the node is set to an expression that defines the condition, and the <xref:System.Activities.Statements.FlowDecision.True%2A> and <xref:System.Activities.Statements.FlowDecision.False%2A> properties are set to <xref:System.Activities.Statements.FlowNode> instances to be executed if the expression evaluates to `true` or `false`. The following example shows how to define a workflow that uses a <xref:System.Activities.Statements.FlowDecision> node.
+To model a conditional flow node in a flowchart workflow (that is, to create a link that functions as a traditional flowchart's decision symbol), a <xref:System.Activities.Statements.FlowDecision> node is used. The <xref:System.Activities.Statements.FlowDecision.Condition> property of the node is set to an expression that defines the condition, and the <xref:System.Activities.Statements.FlowDecision.True*> and <xref:System.Activities.Statements.FlowDecision.False> properties are set to <xref:System.Activities.Statements.FlowNode> instances to be executed if the expression evaluates to `true` or `false`. The following example shows how to define a workflow that uses a <xref:System.Activities.Statements.FlowDecision> node.
 
 ```xml
 <Flowchart>
@@ -77,7 +77,7 @@ To model a conditional flow node in a flowchart workflow (that is, to create a l
 
 ### Creating an exclusive switch with a FlowSwitch node
 
-To model a flowchart in which one exclusive path is selected based on a matching value, the <xref:System.Activities.Statements.FlowSwitch%601> node is used. The <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> property is set to a <xref:System.Activities.Activity%601> with a type parameter of <xref:System.Object> that defines the value to match choices against. The <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> property defines a dictionary of keys and <xref:System.Activities.Statements.FlowNode> objects to match against the conditional expression, and a set of <xref:System.Activities.Statements.FlowNode> objects that define how execution should flow if the given case matches the conditional expression. The <xref:System.Activities.Statements.FlowSwitch%601> also defines a <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> property that defines how execution should flow if no cases match the condition expression. The following example demonstrates how to define a workflow that uses a <xref:System.Activities.Statements.FlowSwitch%601> element.
+To model a flowchart in which one exclusive path is selected based on a matching value, the <xref:System.Activities.Statements.FlowSwitch`1> node is used. The <xref:System.Activities.Statements.FlowSwitch`1.Expression> property is set to a <xref:System.Activities.Activity`1> with a type parameter of <xref:System.Object> that defines the value to match choices against. The <xref:System.Activities.Statements.FlowSwitch`1.Cases> property defines a dictionary of keys and <xref:System.Activities.Statements.FlowNode> objects to match against the conditional expression, and a set of <xref:System.Activities.Statements.FlowNode> objects that define how execution should flow if the given case matches the conditional expression. The <xref:System.Activities.Statements.FlowSwitch`1> also defines a <xref:System.Activities.Statements.FlowSwitch`1.Default> property that defines how execution should flow if no cases match the condition expression. The following example demonstrates how to define a workflow that uses a <xref:System.Activities.Statements.FlowSwitch`1> element.
 
 ```xml
 <Flowchart>

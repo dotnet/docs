@@ -35,7 +35,7 @@ Request:
 
 - The sample uses the <xref:System.ComponentModel.TypeConverter> class to convert parameter data in the request message to and from strings. If a <xref:System.ComponentModel.TypeConverter> is not available for a specific type, the sample formatter throws an exception.
 
-- In the `IClientMessageFormatter.SerializeRequest` method on the client, the formatter creates a URI with the appropriate To address and appends the operation name as a suffix. This name is used to dispatch to the appropriate operation on the server. It then takes the array of parameter objects and serializes the parameter data to the URI query string using parameter names and the values converted by the <xref:System.ComponentModel.TypeConverter> class. The <xref:System.ServiceModel.Channels.MessageHeaders.To> and <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> properties are then set to this URI. <xref:System.ServiceModel.Channels.MessageProperties> is accessed through the <xref:System.ServiceModel.Channels.Message.Properties%2A> property.
+- In the `IClientMessageFormatter.SerializeRequest` method on the client, the formatter creates a URI with the appropriate To address and appends the operation name as a suffix. This name is used to dispatch to the appropriate operation on the server. It then takes the array of parameter objects and serializes the parameter data to the URI query string using parameter names and the values converted by the <xref:System.ComponentModel.TypeConverter> class. The <xref:System.ServiceModel.Channels.MessageHeaders.To> and <xref:System.ServiceModel.Channels.MessageProperties.Via> properties are then set to this URI. <xref:System.ServiceModel.Channels.MessageProperties> is accessed through the <xref:System.ServiceModel.Channels.Message.Properties> property.
 
 - In the `IDispatchMessageFormatter.DeserializeRequest` method on the server, the formatter retrieves the `Via` URI in the incoming request message properties. It parses the name-value pairs in the URI query string into parameter names and values and uses the parameter names and values to populate the array of parameters passed into the method. Note that operation dispatch has already occurred, so the operation name suffix is ignored in this method.
 
@@ -57,7 +57,7 @@ The `UriPathSuffixOperationSelector` component can be set up programmatically or
 
 On the server:
 
-The <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A> is set to the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> implementation.
+The <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector*> is set to the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> implementation.
 
 By default, WCF uses an exact-match address filter. The URI on the incoming message contains an operation name suffix followed by a query string that contains parameter data, so the endpoint behavior also changes the address filter to be a prefix match filter. It uses the WCF<xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> for this purpose.
 
@@ -65,7 +65,7 @@ By default, WCF uses an exact-match address filter. The URI on the incoming mess
 
 Operation behaviors that specify formatters are unique. One such behavior is always implemented by default for every operation to create the necessary operation formatter. However, these behaviors look like just another operation behavior; they are not identifiable by any other attribute. To install a replacement behavior, the implementation must look for specific formatter behaviors that are installed by the WCF type loader by default and either replace it or add a compatible behavior to run after the default behavior.
 
-These operation formatters behaviors can be set up programmatically prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> or by specifying an operation behavior that is executed after the default one. However, it cannot easily be set up by an endpoint behavior (and therefore by configuration) because the behavior model does not allow a behavior to replace other behaviors or otherwise modify the description tree.
+These operation formatters behaviors can be set up programmatically prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open*?displayProperty=nameWithType> or by specifying an operation behavior that is executed after the default one. However, it cannot easily be set up by an endpoint behavior (and therefore by configuration) because the behavior model does not allow a behavior to replace other behaviors or otherwise modify the description tree.
 
 On the client:
 
@@ -96,7 +96,7 @@ On the server:
 
 - The <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface must be implemented so that it can read HTTP GET requests and delegate to the original formatter for writing responses. This is done by calling the same `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` helper method as the client (see the previous code sample).
 
-- This must be done before <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> is called. In this sample, we show how the formatter is manually modified before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. Another way to achieve the same thing is to derive a class from <xref:System.ServiceModel.ServiceHost> that makes the calls to `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` before opening (please see hosting documentation and samples for examples).
+- This must be done before <xref:System.ServiceModel.Channels.CommunicationObject.Open*> is called. In this sample, we show how the formatter is manually modified before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open*>. Another way to achieve the same thing is to derive a class from <xref:System.ServiceModel.ServiceHost> that makes the calls to `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` before opening (please see hosting documentation and samples for examples).
 
 ### User experience
 
@@ -137,7 +137,7 @@ On the server:
     </extensions>
     ```
 
-- Add operation formatters before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>.
+- Add operation formatters before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open*>.
 
 On the client:
 
@@ -158,7 +158,7 @@ On the client:
 
 - The App.config for the client must specify the same custom `EnableHttpGetRequestsBehavior` as the server.
 
-- Add operation formatters before calling <xref:System.ServiceModel.ChannelFactory%601.CreateChannel>.
+- Add operation formatters before calling <xref:System.ServiceModel.ChannelFactory`1.CreateChannel>.
 
 When you run the sample, the operation requests and responses are displayed in the client console window. All four operations (Add, Subtract, Multiply, and Divide) must succeed.
 

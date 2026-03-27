@@ -20,7 +20,7 @@ This article covers some different techniques for extracting parts of a string.
 
 ## String.Split method
 
-<xref:System.String.Split%2A?displayProperty=nameWithType> provides a handful of overloads to help you break up a string into a group of substrings based on one or more delimiting characters that you specify. You can choose to limit the total number of substrings in the final result, trim white-space characters from substrings, or exclude empty substrings.
+<xref:System.String.Split*?displayProperty=nameWithType> provides a handful of overloads to help you break up a string into a group of substrings based on one or more delimiting characters that you specify. You can choose to limit the total number of substrings in the final result, trim white-space characters from substrings, or exclude empty substrings.
 
 The following examples show three different overloads of `String.Split()`. The first example calls the <xref:System.String.Split(System.Char[])> overload without passing any separator characters. When you don't specify any delimiting characters, `String.Split()` uses default delimiters, which are white-space characters, to split up the string.
 
@@ -62,7 +62,7 @@ You can also use a regular expression to extract substrings from a string based 
 
 - The sequence and number of delimiter characters is variable or unknown.
 
-For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (newline) characters is variable, and they don't always serve as delimiters.
+For example, the <xref:System.String.Split*> method cannot be used to split the following string, because the number of `\n` (newline) characters is variable, and they don't always serve as delimiters.
 
 ```text
 [This is captured\ntext.]\n\n[\n[This is more captured text.]\n]
@@ -82,7 +82,7 @@ The regular expression pattern `\[([^\[\]]+)\]` is defined like this:
 |`([^\[\]]+)`|Match any character that is not an opening or a closing bracket one or more times. This is the first capturing group.|
 |`\]`|Match a closing bracket.|
 
-The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method is almost identical to <xref:System.String.Split%2A?displayProperty=nameWithType>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.
+The <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType> method is almost identical to <xref:System.String.Split*?displayProperty=nameWithType>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.
 
 :::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="3":::
 :::code language="vb" source="snippets/parse-strings/vb/regex.vb" id="3":::
@@ -99,17 +99,17 @@ The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:
 
 ## String.IndexOf and String.Substring methods
 
-If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:
+If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring*> method to extract the substring that you want. The string comparison methods include:
 
-- <xref:System.String.IndexOf%2A>, which returns the zero-based index of the first occurrence of a character or string in a string instance.
+- <xref:System.String.IndexOf*>, which returns the zero-based index of the first occurrence of a character or string in a string instance.
 
-- <xref:System.String.IndexOfAny%2A>, which returns the zero-based index in the current string instance of the first occurrence of any character in a character array.
+- <xref:System.String.IndexOfAny*>, which returns the zero-based index in the current string instance of the first occurrence of any character in a character array.
 
-- <xref:System.String.LastIndexOf%2A>, which returns the zero-based index of the last occurrence of a character or string in a string instance.
+- <xref:System.String.LastIndexOf*>, which returns the zero-based index of the last occurrence of a character or string in a string instance.
 
-- <xref:System.String.LastIndexOfAny%2A>, which returns a zero-based index in the current string instance of the last occurrence of any character in a character array.
+- <xref:System.String.LastIndexOfAny*>, which returns a zero-based index in the current string instance of the last occurrence of any character in a character array.
 
-The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.
+The following example uses the <xref:System.String.IndexOf*> method to find the periods in a string. It then uses the <xref:System.String.Substring*> method to return full sentences.
 
 :::code language="csharp" source="snippets/parse-strings/csharp/indexof.cs" id="1":::
 :::code language="vb" source="snippets/parse-strings/vb/indexof.vb" id="1":::

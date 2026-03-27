@@ -20,11 +20,11 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
 ## Retrieving UDT Schemas Using GetSchema
 
- The <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).
+ The <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).
 
 ### GetSchemaTable Column Values for UDTs
 
- The <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> method of a <xref:System.Data.SqlClient.SqlDataReader> returns a <xref:System.Data.DataTable> that describes column metadata. The following table describes the differences in the column metadata for large UDTs between SQL Server 2005 and SQL Server 2008.
+ The <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable*> method of a <xref:System.Data.SqlClient.SqlDataReader> returns a <xref:System.Data.DataTable> that describes column metadata. The following table describes the differences in the column metadata for large UDTs between SQL Server 2005 and SQL Server 2008.
 
 |SqlDataReader column|SQL Server 2005|SQL Server 2008 and later|
 |--------------------------|---------------------|-------------------------------|
@@ -44,16 +44,16 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
  The following methods of <xref:System.Data.SqlClient.SqlDataReader> will return a <xref:System.Data.SqlTypes.SqlBinary> instead of a UDT when the `Type System Version` is set to SQL Server 2005:
 
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValues%2A>
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValues*>
 
  The following methods will return an array of `Byte[]` instead of a UDT when the `Type System Version` is set to SQL Server 2005:
 
-- <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetValues%2A>
+- <xref:System.Data.SqlClient.SqlDataReader.GetValue*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetValues*>
 
  Note that no conversions are made for the current version of ADO.NET.
 
@@ -63,9 +63,9 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
 |SqlParameter Property|Description|
 |---------------------------|-----------------|
-|<xref:System.Data.SqlClient.SqlParameter.Value%2A>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
-|<xref:System.Data.SqlClient.SqlParameter.SqlValue%2A>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
-|<xref:System.Data.SqlClient.SqlParameter.Size%2A>|Gets or sets the size of the parameter value to resolve. The default value is 0. The property can be an integer that represents the size of the parameter value. For large UDTs, it can be the actual size of the UDT, or -1 for unknown.|
+|<xref:System.Data.SqlClient.SqlParameter.Value*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
+|<xref:System.Data.SqlClient.SqlParameter.SqlValue*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
+|<xref:System.Data.SqlClient.SqlParameter.Size*>|Gets or sets the size of the parameter value to resolve. The default value is 0. The property can be an integer that represents the size of the parameter value. For large UDTs, it can be the actual size of the UDT, or -1 for unknown.|
 
 ## Retrieving Data Example
 

@@ -17,7 +17,7 @@ ms.assetid: a2b86b63-08b2-4943-b344-3c2cf46ccd31
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-The `reportAvOnComRelease` managed debugging assistant (MDA) is activated when exceptions are thrown due to user reference counting errors while performing COM interop and using the <xref:System.Runtime.InteropServices.Marshal.Release%2A> or <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method combined with raw COM calls.
+The `reportAvOnComRelease` managed debugging assistant (MDA) is activated when exceptions are thrown due to user reference counting errors while performing COM interop and using the <xref:System.Runtime.InteropServices.Marshal.Release*> or <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject*> method combined with raw COM calls.
 
 ## Symptoms
 
@@ -25,7 +25,7 @@ The `reportAvOnComRelease` managed debugging assistant (MDA) is activated when e
 
 ## Cause
 
- Occasionally, an exception is thrown due to user reference counting errors while performing COM interop and using the <xref:System.Runtime.InteropServices.Marshal.Release%2A> or <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method combined with raw COM calls. Normally, this exception is discarded because not doing so would cause an access violation in the CLR, bringing it down. When this assistant is enabled, such exceptions can be detected and reported instead of being simply discarded.
+ Occasionally, an exception is thrown due to user reference counting errors while performing COM interop and using the <xref:System.Runtime.InteropServices.Marshal.Release*> or <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject*> method combined with raw COM calls. Normally, this exception is discarded because not doing so would cause an access violation in the CLR, bringing it down. When this assistant is enabled, such exceptions can be detected and reported instead of being simply discarded.
 
 ## Resolution
 

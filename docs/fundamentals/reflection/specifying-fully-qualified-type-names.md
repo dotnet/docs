@@ -19,7 +19,7 @@ ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 
 # Specify fully qualified type names
 
-You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.
+You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType*?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType*?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType*?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType*?displayProperty=nameWithType>.
 
 ## Grammar for type names
 
@@ -127,7 +127,7 @@ Use the backslash (\\) as an escape character to separate the following tokens w
 
 In all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 
-Reflection classes, such as <xref:System.Type.FullName?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.
+Reflection classes, such as <xref:System.Type.FullName?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType*>, as in `MyType.GetType(myType.FullName)`.
 
 For example, the fully qualified name for a type might be `Ozzy.OutBack.Kangaroo+Wallaby,MyAssembly`.
 
@@ -195,7 +195,7 @@ SimpleTypeSpec & represents a managed pointer or reference. For example, to get 
 
 ## Specify arrays
 
-In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.
+In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType*?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType*?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.
 
 Arrays are accessed in reflection by specifying the rank of the array:
 
@@ -214,6 +214,6 @@ For `ModuleBuilder.GetType`, `MyArray[0..5]` indicates a single-dimension array 
 - <xref:System.Reflection.Emit.ModuleBuilder>
 - <xref:System.Reflection.Emit.TypeBuilder>
 - <xref:System.Type.FullName?displayProperty=nameWithType>
-- <xref:System.Type.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetType*?displayProperty=nameWithType>
 - <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>
 - [View type information](viewing-type-information.md)

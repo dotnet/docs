@@ -17,7 +17,7 @@ The `My.Computer` object is one of the three central objects in `My`, providing 
 - Clipboard (<xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>)
 - <xref:Microsoft.VisualBasic.Devices.Clock>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
-- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>
+- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info*>
 - <xref:Microsoft.VisualBasic.Devices.Keyboard>
 - <xref:Microsoft.VisualBasic.Devices.Mouse>
 - <xref:Microsoft.VisualBasic.Devices.Network>
@@ -26,26 +26,26 @@ The `My.Computer` object is one of the three central objects in `My`, providing 
 
 ## In this section
 
-[Playing Sounds](playing-sounds.md)  
+[Playing Sounds](playing-sounds.md)
 Lists tasks associated with `My.Computer.Audio`, such as playing a sound in the background.
 
-[Storing Data to and Reading from the Clipboard](storing-data-to-and-reading-from-the-clipboard.md)  
+[Storing Data to and Reading from the Clipboard](storing-data-to-and-reading-from-the-clipboard.md)
 Lists tasks associated with `My.Computer.Clipboard`, such as reading data from or writing data to the Clipboard.
 
-[Getting Information about the Computer](getting-information-about-the-computer.md)  
+[Getting Information about the Computer](getting-information-about-the-computer.md)
 Lists tasks associated with `My.Computer.Info`, such as determining a computer's full name or IP addresses.
 
-[Accessing the Keyboard](accessing-the-keyboard.md)  
+[Accessing the Keyboard](accessing-the-keyboard.md)
 Lists tasks associated with `My.Computer.Keyboard`, such as determining whether CAPS LOCK is on.
 
-[Accessing the Mouse](accessing-the-mouse.md)  
+[Accessing the Mouse](accessing-the-mouse.md)
 Lists tasks associated with `My.Computer.Mouse`, such as determining whether a mouse is present.
 
-[Performing Network Operations](performing-network-operations.md)  
+[Performing Network Operations](performing-network-operations.md)
 Lists tasks associated with `My.Computer.Network`, such as uploading or downloading files.
 
-[Accessing the Computer's Ports](accessing-the-computer-s-ports.md)  
+[Accessing the Computer's Ports](accessing-the-computer-s-ports.md)
 Lists tasks associated with `My.Computer.Ports`, such as showing available serial ports or sending strings to serial ports.
 
-[Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)  
+[Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)
 Lists tasks associated with `My.Computer.Registry`, such as reading data from or writing data to registry keys.

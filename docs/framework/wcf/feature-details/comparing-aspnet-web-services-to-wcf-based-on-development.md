@@ -314,7 +314,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
 
 Some behaviors, like <xref:System.ServiceModel.ServiceBehaviorAttribute>, are attributes. Others, the ones with properties that administrators would want to set, can be modified in the configuration of an application.
 
-In programming service types, frequent use is made of the <xref:System.ServiceModel.OperationContext> class. Its static <xref:System.ServiceModel.OperationContext.Current%2A> property provides access to information about the context in which an operation is running. <xref:System.ServiceModel.OperationContext> is similar to both the <xref:System.Web.HttpContext> and <xref:System.EnterpriseServices.ContextUtil> classes.
+In programming service types, frequent use is made of the <xref:System.ServiceModel.OperationContext> class. Its static <xref:System.ServiceModel.OperationContext.Current> property provides access to information about the context in which an operation is running. <xref:System.ServiceModel.OperationContext> is similar to both the <xref:System.Web.HttpContext> and <xref:System.EnterpriseServices.ContextUtil> classes.
 
 ## Hosting
 
@@ -570,7 +570,7 @@ In ASP.NET Web services, unhandled exceptions are returned to clients as SOAP fa
 
 In WCF services, unhandled exceptions are not returned to clients as SOAP faults to prevent sensitive information being inadvertently exposed through the exceptions. A configuration setting is provided to have unhandled exceptions returned to clients for the purpose of debugging.
 
-To return SOAP faults to clients, you can throw instances of the generic type, <xref:System.ServiceModel.FaultException%601>, using the data contract type as the generic type. You can also add <xref:System.ServiceModel.FaultContractAttribute> attributes to operations to specify the faults that an operation might yield.
+To return SOAP faults to clients, you can throw instances of the generic type, <xref:System.ServiceModel.FaultException`1>, using the data contract type as the generic type. You can also add <xref:System.ServiceModel.FaultContractAttribute> attributes to operations to specify the faults that an operation might yield.
 
 ```csharp
 [DataContract]
@@ -626,7 +626,7 @@ In that case, the class can be programmed to use the <xref:System.Web.Services.W
 
 ASP.NET provides considerable control over where the session state information accessed by using the Session property of the <xref:System.Web.HttpContext> is actually stored. It may be stored in cookies, in a database, in the memory of the current server, or in the memory of a designated server. The choice is made in the service’s configuration file.
 
-The WCF provides extensible objects for state management. Extensible objects are objects that implement <xref:System.ServiceModel.IExtensibleObject%601>. The most important extensible objects are <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.InstanceContext>. `ServiceHostBase` allows you to maintain state that all of the instances of all of the service types on the same host can access, while `InstanceContext` allows you to maintain state that can be accessed by any code running within the same instance of a service type.
+The WCF provides extensible objects for state management. Extensible objects are objects that implement <xref:System.ServiceModel.IExtensibleObject`1>. The most important extensible objects are <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.InstanceContext>. `ServiceHostBase` allows you to maintain state that all of the instances of all of the service types on the same host can access, while `InstanceContext` allows you to maintain state that can be accessed by any code running within the same instance of a service type.
 
 Here, the service type, `TradingSystem`, has a <xref:System.ServiceModel.ServiceBehaviorAttribute> that specifies that all calls from the same WCF client instance are routed to the same instance of the service type.
 

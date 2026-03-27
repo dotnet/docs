@@ -2,10 +2,10 @@
 title: "fixed statement - pin a moveable variable"
 description: "Use the C# `fixed` statement to pin a moveable variable and declare a pointer to that variable. The address of a pinned variable doesn't change during execution of the statement."
 ms.date: 01/16/2026
-f1_keywords: 
+f1_keywords:
   - "fixed_CSharpKeyword"
   - "fixed"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "fixed statement [C#]"
   - "fixed keyword [C#]"
 ---
@@ -31,11 +31,11 @@ You can initialize the declared pointer as follows:
 
   When the initialized pointer contains the address of an object field or an array element, the `fixed` statement guarantees that the garbage collector doesn't relocate or dispose of the containing object instance during the execution of the statement body.
 
-- With the instance of the type that implements a method named `GetPinnableReference`. That method must return a `ref` variable of an [unmanaged type](../builtin-types/unmanaged-types.md). The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> make use of this pattern. You can pin span instances, as the following example shows:
+- With the instance of the type that implements a method named `GetPinnableReference`. That method must return a `ref` variable of an [unmanaged type](../builtin-types/unmanaged-types.md). The .NET types <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> make use of this pattern. You can pin span instances, as the following example shows:
 
   :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedSpan":::
 
-  For more information, see the <xref:System.Span%601.GetPinnableReference?displayProperty=nameWithType> API reference.
+  For more information, see the <xref:System.Span`1.GetPinnableReference?displayProperty=nameWithType> API reference.
 
 - With a string, as the following example shows:
 

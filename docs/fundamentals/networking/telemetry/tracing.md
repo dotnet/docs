@@ -12,7 +12,7 @@ ms.date: 10/4/2024
 The tracing system in .NET is designed to work with OpenTelemetry (OTel), and uses OTel to export the data to monitoring systems. Tracing in .NET is implemented using the <xref:System.Diagnostics> APIs, where a unit of work is represented by the <xref:System.Diagnostics.Activity?displayProperty=nameWithType> class, which corresponds to an OTel [span](https://opentelemetry.io/docs/concepts/signals/traces/#spans). OpenTelemetry defines an industry-wide standard naming scheme for spans (activities) together with their attributes (tags), known as [semantic conventions](https://opentelemetry.io/docs/concepts/semantic-conventions). The .NET telemetry uses existing semantic conventions wherever possible.
 
 > [!NOTE]
-> The terms *span* and *activity* are synonymous in this article. In context of .NET code, they refer to a <xref:System.Diagnostics.Activity?displayProperty=nameWithType> instance. Don't confuse the OTel span with <xref:System.Span%601?displayProperty=nameWithType>.
+> The terms *span* and *activity* are synonymous in this article. In context of .NET code, they refer to a <xref:System.Diagnostics.Activity?displayProperty=nameWithType> instance. Don't confuse the OTel span with <xref:System.Span`1?displayProperty=nameWithType>.
 
 > [!TIP]
 > For a comprehensive list of all built-in activities together with their tags/attributes, see [Built-in activities in .NET](../../../core/diagnostics/distributed-tracing-builtin-activities.md).
@@ -29,7 +29,7 @@ The built-in instrumentation evolved with .NET versions.
 
 ## Collect System.Net traces
 
-At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener%2A> method, which registers <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic.
+At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener*> method, which registers <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic.
 
 However, as an application developer, you would likely prefer to rely on the rich ecosystem built upon the features provided by the [OpenTelemetry .NET SDK](https://opentelemetry.io/docs/languages/net/) to collect, export, and monitor traces.
 
@@ -132,7 +132,7 @@ To add additional tags/attributes to the HTTP client request activity, the simpl
 
 ### Manual enrichment
 
-It's possible to implement the enrichment of the `HTTP client request` activity manually. For this you need to access <xref:System.Diagnostics.Activity.Current%2A?displayProperty=nameWithType> in the code that is running in the scope of the request activity, before the activity is finished. This can be done by implementing an `IObserver<DiagnosticListener>` and subscribing it to <xref:System.Diagnostics.DiagnosticListener.AllListeners%2A> to get callbacks for when networking activity is occurring. In fact, this is how the [OpenTelemetry HttpClient and HttpWebRequest instrumentation library](#enrichment-api-in-the-opentelemetry-instrumentation-library) is implemented. For a code example, see the subscription code in [`DiagnosticSourceSubscriber.cs`](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/bfdf02928ea7f958c481493bc1adc238472b9b9c/src/Shared/DiagnosticSourceSubscriber.cs#L44) and the underlying implementation in [HttpHandlerDiagnosticListener.cs](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/bfdf02928ea7f958c481493bc1adc238472b9b9c/src/OpenTelemetry.Instrumentation.Http/Implementation/HttpHandlerDiagnosticListener.cs) where the notifications are delegated to.
+It's possible to implement the enrichment of the `HTTP client request` activity manually. For this you need to access <xref:System.Diagnostics.Activity.Current*?displayProperty=nameWithType> in the code that is running in the scope of the request activity, before the activity is finished. This can be done by implementing an `IObserver<DiagnosticListener>` and subscribing it to <xref:System.Diagnostics.DiagnosticListener.AllListeners*> to get callbacks for when networking activity is occurring. In fact, this is how the [OpenTelemetry HttpClient and HttpWebRequest instrumentation library](#enrichment-api-in-the-opentelemetry-instrumentation-library) is implemented. For a code example, see the subscription code in [`DiagnosticSourceSubscriber.cs`](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/bfdf02928ea7f958c481493bc1adc238472b9b9c/src/Shared/DiagnosticSourceSubscriber.cs#L44) and the underlying implementation in [HttpHandlerDiagnosticListener.cs](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/bfdf02928ea7f958c481493bc1adc238472b9b9c/src/OpenTelemetry.Instrumentation.Http/Implementation/HttpHandlerDiagnosticListener.cs) where the notifications are delegated to.
 
 ## Need more tracing?
 

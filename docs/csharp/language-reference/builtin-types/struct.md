@@ -37,7 +37,7 @@ Use the `readonly` modifier to declare that a structure type is immutable. All d
 This rule guarantees that no member of a `readonly` struct modifies the state of the struct. All other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
-> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
+> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List`1> instance, but you can add new elements to it.
 
 The following code defines a `readonly` struct with init-only property setters:
 

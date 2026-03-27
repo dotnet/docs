@@ -53,7 +53,7 @@ public sealed class GrainDeactivateExtension : IGrainDeactivateExtension
 
 ### Deactivate extension registration and usage
 
-Now that the interface and implementation are defined, register the extension when configuring the silo using the <xref:Orleans.Hosting.HostingGrainExtensions.AddGrainExtension%2A> method.
+Now that the interface and implementation are defined, register the extension when configuring the silo using the <xref:Orleans.Hosting.HostingGrainExtensions.AddGrainExtension*> method.
 
 ```csharp
 siloBuilder.AddGrainExtension<IGrainDeactivateExtension, GrainDeactivateExtension>();
@@ -115,7 +115,7 @@ public sealed class GrainStateAccessor<T> : IGrainStateAccessor<T>
 }
 ```
 
-In the preceding implementation, the `GrainStateAccessor<T>` class takes `getter` and `setter` arguments in its constructor. These delegates read and modify the target grain's state. The `GetState()` method returns a <xref:System.Threading.Tasks.Task%601> wrapping the current value of the `T` state, while the `SetState(T state)` method sets the new value of the `T` state.
+In the preceding implementation, the `GrainStateAccessor<T>` class takes `getter` and `setter` arguments in its constructor. These delegates read and modify the target grain's state. The `GetState()` method returns a <xref:System.Threading.Tasks.Task`1> wrapping the current value of the `T` state, while the `SetState(T state)` method sets the new value of the `T` state.
 
 ### State manipulation extension registration and usage
 
@@ -136,7 +136,7 @@ public override Task OnActivateAsync()
 }
 ```
 
-In the preceding example, create a new instance of `GrainStateAccessor<int>` taking a `getter` and `setter` for an integer state value. The `getter` reads the `Value` property of the target grain, while the `setter` sets the new value of the `Value` property. Then, set this instance as a component of the target grain's context using the <xref:Orleans.Runtime.IGrainContext.SetComponent%2A?displayProperty=nameWithType> method.
+In the preceding example, create a new instance of `GrainStateAccessor<int>` taking a `getter` and `setter` for an integer state value. The `getter` reads the `Value` property of the target grain, while the `setter` sets the new value of the `Value` property. Then, set this instance as a component of the target grain's context using the <xref:Orleans.Runtime.IGrainContext.SetComponent*?displayProperty=nameWithType> method.
 
 Once the extension is registered, use it to get and set the target grain's state by accessing it through a reference to the extension.
 

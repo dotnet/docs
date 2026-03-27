@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Create time zones with adjustment rules"
 title: "How to: Create time zones with adjustment rules"
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], creating"
   - "time zones [.NET], and adjustment rules"
   - "adjustment rule [.NET]"
@@ -21,10 +21,10 @@ The precise time zone information that is required by an application may not be 
 
 - The time zone does not have accurate information about time zone adjustments for a particular historic period.
 
-In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](time-zone-overview.md).)
+In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](time-zone-overview.md).)
 
 > [!IMPORTANT]
-> Custom time zones created by calling the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method are not added to the registry. Instead, they can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method call.
+> Custom time zones created by calling the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method are not added to the registry. Instead, they can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method call.
 
 This topic shows how to create a time zone with adjustment rules. To create a time zone that does not support daylight saving time adjustment rules, see [How to: Create Time Zones Without Adjustment Rules](create-time-zones-without-adjustment-rules.md).
 
@@ -34,11 +34,11 @@ This topic shows how to create a time zone with adjustment rules. To create a ti
 
     1. Define the starting transition time for the time zone adjustment.
 
-       You must call the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A?displayProperty=nameWithType> method and pass it a <xref:System.DateTime> value that defines the time of the transition, an integer value that defines the month of the transition, an integer value that defines the week on which the transition occurs, and a <xref:System.DayOfWeek> value that defines the day of the week on which the transition occurs. This method call instantiates a <xref:System.TimeZoneInfo.TransitionTime> object.
+       You must call the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule*?displayProperty=nameWithType> method and pass it a <xref:System.DateTime> value that defines the time of the transition, an integer value that defines the month of the transition, an integer value that defines the week on which the transition occurs, and a <xref:System.DayOfWeek> value that defines the day of the week on which the transition occurs. This method call instantiates a <xref:System.TimeZoneInfo.TransitionTime> object.
 
-    2. Define the ending transition time for the time zone adjustment. This requires another call to the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A?displayProperty=nameWithType> method. This method call instantiates a second <xref:System.TimeZoneInfo.TransitionTime> object.
+    2. Define the ending transition time for the time zone adjustment. This requires another call to the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule*?displayProperty=nameWithType> method. This method call instantiates a second <xref:System.TimeZoneInfo.TransitionTime> object.
 
-    3. Call the <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule%2A> method and pass it the effective start and end dates of the adjustment, a <xref:System.TimeSpan> object that defines the amount of time in the transition, and the two <xref:System.TimeZoneInfo.TransitionTime> objects that define when the transitions to and from daylight saving time occur. This method call instantiates a <xref:System.TimeZoneInfo.AdjustmentRule> object.
+    3. Call the <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule*> method and pass it the effective start and end dates of the adjustment, a <xref:System.TimeSpan> object that defines the amount of time in the transition, and the two <xref:System.TimeZoneInfo.TransitionTime> objects that define when the transitions to and from daylight saving time occur. This method call instantiates a <xref:System.TimeZoneInfo.AdjustmentRule> object.
 
     4. Assign the <xref:System.TimeZoneInfo.AdjustmentRule> object to an array of <xref:System.TimeZoneInfo.AdjustmentRule> objects.
 
@@ -63,11 +63,11 @@ The following example defines a Central Standard Time zone for the United States
 
 The time zone created in this example has multiple adjustment rules. Care must be taken to ensure that the effective start and end dates of any adjustment rule do not overlap with the dates of another adjustment rule. If there is an overlap, an <xref:System.InvalidTimeZoneException> is thrown.
 
-For floating adjustment rules, the value 5 is passed to the `week` parameter of the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A> method to indicate that the transition occurs on the last week of a particular month.
+For floating adjustment rules, the value 5 is passed to the `week` parameter of the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule*> method to indicate that the transition occurs on the last week of a particular month.
 
-In creating the array of <xref:System.TimeZoneInfo.AdjustmentRule> objects to use in the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%29?displayProperty=nameWithType> method call, the code could initialize the array to the size required by the number of adjustments to be created for the time zone. Instead, this code example calls the <xref:System.Collections.Generic.List%601.Add%2A> method to add each adjustment rule to a generic <xref:System.Collections.Generic.List%601> collection of <xref:System.TimeZoneInfo.AdjustmentRule> objects. The code then calls the <xref:System.Collections.Generic.List%601.CopyTo%2A> method to copy the members of this collection to the array.
+In creating the array of <xref:System.TimeZoneInfo.AdjustmentRule> objects to use in the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%29?displayProperty=nameWithType> method call, the code could initialize the array to the size required by the number of adjustments to be created for the time zone. Instead, this code example calls the <xref:System.Collections.Generic.List`1.Add*> method to add each adjustment rule to a generic <xref:System.Collections.Generic.List`1> collection of <xref:System.TimeZoneInfo.AdjustmentRule> objects. The code then calls the <xref:System.Collections.Generic.List`1.CopyTo*> method to copy the members of this collection to the array.
 
-The example also uses the <xref:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule%2A> method to define fixed-date adjustments. This is similar to calling the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule%2A> method, except that it requires only the time, month, and day of the transition parameters.
+The example also uses the <xref:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule*> method to define fixed-date adjustments. This is similar to calling the <xref:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule*> method, except that it requires only the time, month, and day of the transition parameters.
 
 The example can be tested using code such as the following:
 

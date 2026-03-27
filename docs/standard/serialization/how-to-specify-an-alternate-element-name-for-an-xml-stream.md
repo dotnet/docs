@@ -22,11 +22,11 @@ Using the <xref:System.Xml.Serialization.XmlSerializer>, you can generate more t
 
 1. Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.
 
-2. Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".
+2. Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName*> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".
 
 3. Create an instance of the <xref:System.Xml.Serialization.XmlAttributes> class.
 
-4. Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of <xref:System.Xml.Serialization.XmlAttributes> .
+4. Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements> property of <xref:System.Xml.Serialization.XmlAttributes> .
 
 5. Create an instance of the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.
 

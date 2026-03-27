@@ -42,12 +42,12 @@ For more information, see [Sending and Receiving Faults](sending-and-receiving-f
 
 ## Undeclared SOAP Faults and Debugging
 
-Declared SOAP faults are extremely useful for building robust, interoperable, distributed applications. However, in some cases it is useful for a service (or duplex client) to send an undeclared SOAP fault, one that is not mentioned in the Web Services Description Language (WSDL) for that operation. For example, when developing a service, unexpected situations can occur in which it is useful for debugging purposes to send information back to the client. In addition, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` to permit WCF clients to obtain information about internal service operation exceptions. Both sending individual faults and setting the debugging behavior properties are described in [Sending and Receiving Faults](sending-and-receiving-faults.md).
+Declared SOAP faults are extremely useful for building robust, interoperable, distributed applications. However, in some cases it is useful for a service (or duplex client) to send an undeclared SOAP fault, one that is not mentioned in the Web Services Description Language (WSDL) for that operation. For example, when developing a service, unexpected situations can occur in which it is useful for debugging purposes to send information back to the client. In addition, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults?displayProperty=nameWithType> property or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults?displayProperty=nameWithType> property to `true` to permit WCF clients to obtain information about internal service operation exceptions. Both sending individual faults and setting the debugging behavior properties are described in [Sending and Receiving Faults](sending-and-receiving-faults.md).
 
 > [!IMPORTANT]
-> Because managed exceptions can expose internal application information, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> to `true` can permit WCF clients to obtain information about internal service operation exceptions, including personally identifiable or other sensitive information.
+> Because managed exceptions can expose internal application information, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> to `true` can permit WCF clients to obtain information about internal service operation exceptions, including personally identifiable or other sensitive information.
 >
-> Therefore, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> to `true` is recommended only as a way to temporarily debug a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault (returned to WCF clients as <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects) to obtain the debugging information properly.
+> Therefore, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> to `true` is recommended only as a way to temporarily debug a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException`1> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault (returned to WCF clients as <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects) to obtain the debugging information properly.
 
 ## Customizing Error Handling with IErrorHandler
 
@@ -66,9 +66,9 @@ When deserializing a fault contract, WCF first attempts to match the fault contr
 - <xref:System.ServiceModel.XmlSerializerFormatAttribute>
 - <xref:System.ServiceModel.FaultContractAttribute>
 - <xref:System.ServiceModel.CommunicationException>
-- <xref:System.ServiceModel.FaultContractAttribute.Action%2A>
-- <xref:System.ServiceModel.FaultException.Code%2A>
-- <xref:System.ServiceModel.FaultException.Reason%2A>
-- <xref:System.ServiceModel.FaultCode.SubCode%2A>
+- <xref:System.ServiceModel.FaultContractAttribute.Action*>
+- <xref:System.ServiceModel.FaultException.Code*>
+- <xref:System.ServiceModel.FaultException.Reason*>
+- <xref:System.ServiceModel.FaultCode.SubCode*>
 - <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>
 - [Defining and Specifying Faults](defining-and-specifying-faults.md)

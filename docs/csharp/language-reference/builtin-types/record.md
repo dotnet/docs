@@ -2,9 +2,9 @@
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
 ms.date: 01/14/2026
-f1_keywords: 
+f1_keywords:
   - "record_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "record keyword [C#]"
   - "record type [C#]"
 ---
@@ -120,7 +120,7 @@ To implement value equality, the compiler synthesizes several methods, including
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
-* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. You can declare this method explicitly.
+* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable`1>. You can declare this method explicitly.
 
 * If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if you declare the override explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
@@ -174,7 +174,7 @@ The `Distance` computation isn't expensive to compute on each access. However, s
 
 ## Built-in formatting for display
 
-Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string in the following format:
+Record types have a compiler-generated <xref:System.Object.ToString*> method that displays the names and values of public properties and fields. The `ToString` method returns a string in the following format:
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 
@@ -184,7 +184,7 @@ The string printed for `<value>` is the string returned by the <xref:System.Obje
 Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }
 ```
 
-To implement this feature, in `record class` types, the compiler synthesizes a virtual `PrintMembers` method and a <xref:System.Object.ToString%2A> override. In `record struct` types, this member is `private`.
+To implement this feature, in `record class` types, the compiler synthesizes a virtual `PrintMembers` method and a <xref:System.Object.ToString*> override. In `record struct` types, this member is `private`.
 The `ToString` override creates a <xref:System.Text.StringBuilder> object with the type name followed by an opening bracket. It calls `PrintMembers` to add property names and values, then adds the closing bracket. The following example shows code similar to what the synthesized override contains:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::

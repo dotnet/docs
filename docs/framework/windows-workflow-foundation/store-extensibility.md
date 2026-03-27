@@ -9,7 +9,7 @@ ms.custom: sfi-ropc-nochange
 
 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> allows users to promote custom, application-specific properties that can be used to query for instances in the persistence database. The act of promoting a property causes the value to be available within a special view in the database. These promoted properties (properties that can be used in user queries) can be of simple types, such as `Int64`, `Guid`, `String`, and `DateTime`, or of a serialized binary type (`byte[]`).
 
-The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> class has the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote%2A> method that you can use to promote a property as a property that can be used in queries. The following example is an end-to-end example of store extensibility.
+The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> class has the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote*> method that you can use to promote a property as a property that can be used in queries. The following example is an end-to-end example of store extensibility.
 
 1. In this example scenario, a document processing (DP) application has workflows, each of which uses custom activities for document processing. These workflows have a set of state variables that need to be made visible to the end user. To achieve this, the DP application provides an instance extension of type <xref:System.Activities.Persistence.PersistenceParticipant>, which is used by activities to supply the state variables.
 

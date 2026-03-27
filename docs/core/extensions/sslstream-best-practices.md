@@ -31,7 +31,7 @@ When authenticating as a server, <xref:System.Net.Security.SslStream> requires a
 
 There are multiple ways that a server certificate can be passed to <xref:System.Net.Security.SslStream>:
 
-- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync%2A?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
+- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync*?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
 - From a selection callback in <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> property
 - By passing a <xref:System.Net.Security.SslStreamCertificateContext> in the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property
 
@@ -80,13 +80,13 @@ static bool CustomCertificateValidationCallback(
     {
         return true;
     }
-    
+
     // If there is something wrong other than a chain processing error, don't trust it.
     if (sslPolicyErrors != SslPolicyErrors.RemoteCertificateChainErrors)
     {
         return false;
     }
-    
+
     Debug.Assert(chain is not null);
 
     // If the reason for RemoteCertificateChainError is that the chain built empty, don't trust it.
@@ -124,7 +124,7 @@ static bool CustomCertificateValidationCallback(
     {
         return false;
     }
-    
+
     Debug.Assert(certificate is not null);
 
     const string ExpectedPublicKey =

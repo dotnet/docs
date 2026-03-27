@@ -84,7 +84,7 @@ For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ### Indexer access
 
-The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
+The following example uses the .NET <xref:System.Collections.Generic.Dictionary`2> type to demonstrate indexer access:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers":::
 

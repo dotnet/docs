@@ -53,9 +53,9 @@ Specifies a certificate to use when authenticating a service to the client.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
-- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate*>
 - <xref:System.ServiceModel.Description.ClientCredentials>
-- <xref:System.ServiceModel.Description.ClientCredentials.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials.ServiceCertificate*>
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

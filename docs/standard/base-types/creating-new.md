@@ -31,11 +31,11 @@ helpviewer_keywords:
 
 | Method name                                                 | Use                                                    |
 |-------------------------------------------------------------|--------------------------------------------------------|
-| <xref:System.String.Format%2A?displayProperty=nameWithType> | Builds a formatted string from a set of input objects. |
-| <xref:System.String.Concat%2A?displayProperty=nameWithType> | Builds strings from two or more strings.               |
-| <xref:System.String.Join%2A?displayProperty=nameWithType>   | Builds a new string by combining an array of strings.  |
-| <xref:System.String.Insert%2A?displayProperty=nameWithType> | Builds a new string by inserting a string into the specified index of an existing string. |
-| <xref:System.String.CopyTo%2A?displayProperty=nameWithType> | Copies specified characters in a string into a specified position in an array of characters. |
+| <xref:System.String.Format*?displayProperty=nameWithType> | Builds a formatted string from a set of input objects. |
+| <xref:System.String.Concat*?displayProperty=nameWithType> | Builds strings from two or more strings.               |
+| <xref:System.String.Join*?displayProperty=nameWithType>   | Builds a new string by combining an array of strings.  |
+| <xref:System.String.Insert*?displayProperty=nameWithType> | Builds a new string by inserting a string into the specified index of an existing string. |
+| <xref:System.String.CopyTo*?displayProperty=nameWithType> | Copies specified characters in a string into a specified position in an array of characters. |
 
 ### Format
 
@@ -46,7 +46,7 @@ helpviewer_keywords:
  [!code-csharp[Strings.Creating#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#1)]
  [!code-vb[Strings.Creating#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#1)]
 
- In this example,<xref:System.DateTime.Now%2A?displayProperty=nameWithType> displays the current date and time in a manner specified by the culture associated with the current thread.
+ In this example,<xref:System.DateTime.Now*?displayProperty=nameWithType> displays the current date and time in a manner specified by the culture associated with the current thread.
 
 ### Concat
 

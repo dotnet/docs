@@ -40,11 +40,11 @@ A delegate is a type that holds a reference to a method. A delegate is declared 
 
 Delegates have many uses in .NET. In the context of events, a delegate is an intermediary (or pointer-like mechanism) between the event source and the code that handles the event. You associate a delegate with an event by including the delegate type in the event declaration, as shown in the example in the previous section. For more information about delegates, see the <xref:System.Delegate> class.
 
-.NET provides the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates to support most event scenarios. Use the <xref:System.EventHandler> delegate for all events that don't include event data. Use the <xref:System.EventHandler%601> delegate for events that include data about the event. These delegates have no return type value and take two parameters (an object for the source of the event and an object for event data).
+.NET provides the <xref:System.EventHandler> and <xref:System.EventHandler`1> delegates to support most event scenarios. Use the <xref:System.EventHandler> delegate for all events that don't include event data. Use the <xref:System.EventHandler`1> delegate for events that include data about the event. These delegates have no return type value and take two parameters (an object for the source of the event and an object for event data).
 
 Delegates are [multicast](xref:System.MulticastDelegate) class objects, which means they can hold references to more than one event-handling method. For more information, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.
 
-Use the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:
+Use the <xref:System.EventHandler> and <xref:System.EventHandler`1> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:
 
 [!code-csharp[EventsOverview#4](./snippets/raise-consume/csharp/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](./snippets/raise-consume/vb/module1truncated.vb#4)]
@@ -101,7 +101,7 @@ Specification reference documentation is available for the APIs that support eve
 | API name | API type | Reference |
 | --- | --- | --- |
 | EventHandler | Delegate | <xref:System.EventHandler> |
-| EventHandler\<TEventArgs> | Delegate | <xref:System.EventHandler%601> |
+| EventHandler\<TEventArgs> | Delegate | <xref:System.EventHandler`1> |
 | EventArgs | Class |<xref:System.EventArgs> |
 | Delegate  | Class | <xref:System.Delegate> |
 

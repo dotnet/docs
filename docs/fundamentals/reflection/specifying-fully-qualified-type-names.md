@@ -54,7 +54,7 @@ GenericArguments
 	;
 
 GenericArgument
-	: SimpleTypeSpec
+	: TypeSpec
 	| '[' TypeSpec ']'
 	;
 
@@ -203,7 +203,7 @@ To specify a *constructed* generic type—one where the type parameters are repl
 When a type argument is assembly-qualified, enclose it in its own square brackets to prevent the commas in the assembly name from being misinterpreted as type argument separators. For example:
 
 ```
-"System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]]"
+"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]]"
 ```
 
 Unbracketed type arguments can't include an assembly qualifier. To mix assembly-qualified and unqualified type arguments, wrap only the assembly-qualified ones in brackets:

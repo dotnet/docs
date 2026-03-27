@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # Handle and raise events
 
-Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs. An event receiver defines the response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
+Events in .NET are based on the [delegate model](../delegates-lambdas.md). The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs. An event receiver defines the response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
 
 ## Raise events with an event sender
 
@@ -23,9 +23,9 @@ An event is a message sent by an object to signal the occurrence of an action. T
 
 To define an event, you use the C# [event](../../csharp/language-reference/keywords/event.md) or the Visual Basic [Event](../../visual-basic/language-reference/statements/event-statement.md) keyword in the signature of your event class, and specify the type of delegate for the event. Delegates are described in the next section.
 
-Typically, to raise an event, you add a method that is marked as `protected` and `virtual` (in C#) or `Protected` and `Overridable` (in Visual Basic). The naming convention for the method is `On<EventName>`, such as `OnDataReceived`. The method should take one parameter that specifies an event data object, which is an object of type <xref:System.EventArgs> or a derived type. You provide this method to enable derived classes to override the logic for raising the event. A derived class should always call the `On<EventName>` method of the base class to ensure registered delegates receive the event.
+To raise an event, invoke the delegate associated with the event. The event sender typically wraps the invocation in a `protected virtual` method (`Protected Overridable` in Visual Basic) named `On<EventName>`—for example, `OnDataReceived`. The method takes one parameter: an event data object of type <xref:System.EventArgs> or a derived type. Wrapping the invocation this way lets derived classes override the raise logic. A derived class that overrides this method must call the base class implementation to ensure registered delegates receive the event.
 
-The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and raised in a method named `OnThresholdReached`:
+The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and is raised in a method named `OnThresholdReached`:
 
 :::code language="csharp" source="./snippets/index/csharp/EventExample.cs" id="DefineEvent":::
 :::code language="vb" source="./snippets/index/vb/EventExample.vb" id="DefineEvent":::

@@ -14,6 +14,13 @@ Module Program
         For Each match As Match In Regex.Matches(input, pattern2)
             Console.WriteLine($"'{match.Value}' found at position {match.Index}")
         Next
+
+        ' The example displays the following output:
+        ' 'gray' found at position 4
+        ' 'grey' found at position 35
+        '
+        ' 'gray' found at position 4
+        ' 'grey' found at position 35
         ' </EitherOrCharacterClass>
 
         Console.WriteLine()
@@ -25,6 +32,11 @@ Module Program
         For Each match As Match In Regex.Matches(eitherOrInput, eitherOrPattern)
             Console.WriteLine($"   {match.Value} at position {match.Index}")
         Next
+
+        ' The example displays the following output:
+        ' 
+        ' 
+        ' 
         ' </EitherOrPatterns>
 
         Console.WriteLine()
@@ -36,6 +48,11 @@ Module Program
         For Each match As Match In Regex.Matches(condExprInput, condExprPattern)
             Console.WriteLine($"   {match.Value} at position {match.Index}")
         Next
+
+        ' The example displays the following output:
+        ' Matches for \b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+        '    01-9999999 at position 0
+        '    777-88-9999 at position 22
         ' </ConditionalExpression>
 
         Console.WriteLine()
@@ -47,6 +64,11 @@ Module Program
         For Each match As Match In Regex.Matches(namedGroupInput, namedGroupPattern)
             Console.WriteLine($"   {match.Value} at position {match.Index}")
         Next
+
+        ' The example displays the following output:
+        ' Matches for \b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+        '    01-9999999 at position 0
+        '    777-88-9999 at position 22
         ' </ConditionalNamedGroup>
 
         Console.WriteLine()
@@ -58,6 +80,11 @@ Module Program
         For Each match As Match In Regex.Matches(numberedGroupInput, numberedGroupPattern)
             Console.WriteLine($"   {match.Value} at position {match.Index}")
         Next
+
+        ' The example displays the following output:
+        ' Matches for \b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b:
+        '    01-9999999 at position 0
+        '    777-88-9999 at position 22
         ' </ConditionalNumberedGroup>
     End Sub
 End Module

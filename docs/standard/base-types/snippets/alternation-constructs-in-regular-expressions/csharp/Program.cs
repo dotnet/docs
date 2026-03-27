@@ -10,6 +10,13 @@ foreach (Match match in Regex.Matches(input, pattern1))
 Console.WriteLine();
 foreach (Match match in Regex.Matches(input, pattern2))
     Console.WriteLine($"'{match.Value}' found at position {match.Index}");
+
+// The example displays the following output:
+// 'gray' found at position 4
+// 'grey' found at position 35
+//
+// 'gray' found at position 4
+// 'grey' found at position 35
 // </EitherOrCharacterClass>
 
 Console.WriteLine();
@@ -20,6 +27,11 @@ string eitherOrInput = "01-9999999 020-333333 777-88-9999";
 Console.WriteLine($"Matches for {eitherOrPattern}:");
 foreach (Match match in Regex.Matches(eitherOrInput, eitherOrPattern))
     Console.WriteLine($"   {match.Value} at position {match.Index}");
+
+// The example displays the following output:
+// Matches for \b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+//    01-9999999 at position 0
+//    777-88-9999 at position 22
 // </EitherOrPatterns>
 
 Console.WriteLine();
@@ -30,6 +42,11 @@ string condExprInput = "01-9999999 020-333333 777-88-9999";
 Console.WriteLine($"Matches for {condExprPattern}:");
 foreach (Match match in Regex.Matches(condExprInput, condExprPattern))
     Console.WriteLine($"   {match.Value} at position {match.Index}");
+
+// The example displays the following output:
+// Matches for \b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b:
+//    01-9999999 at position 0
+//    777-88-9999 at position 22
 // </ConditionalExpression>
 
 Console.WriteLine();
@@ -40,6 +57,11 @@ string namedGroupInput = "01-9999999 020-333333 777-88-9999";
 Console.WriteLine($"Matches for {namedGroupPattern}:");
 foreach (Match match in Regex.Matches(namedGroupInput, namedGroupPattern))
     Console.WriteLine($"   {match.Value} at position {match.Index}");
+
+// The example displays the following output:
+// Matches for \b(?<n2>\d{2}-)?(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b:
+//    01-9999999 at position 0
+//    777-88-9999 at position 22
 // </ConditionalNamedGroup>
 
 Console.WriteLine();
@@ -50,4 +72,8 @@ string numberedGroupInput = "01-9999999 020-333333 777-88-9999";
 Console.WriteLine($"Matches for {numberedGroupPattern}:");
 foreach (Match match in Regex.Matches(numberedGroupInput, numberedGroupPattern))
     Console.WriteLine($"   {match.Value} at position {match.Index}");
+// The example displays the following output:
+// Matches for \b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b:
+//    01-9999999 at position 0
+//    777-88-9999 at position 22
 // </ConditionalNumberedGroup>

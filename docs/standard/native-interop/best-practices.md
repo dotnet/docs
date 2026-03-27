@@ -107,7 +107,7 @@ Blittable types are types that have the same bit-level representation in managed
 
 **Blittable types:**
 
-- `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`, `IntPtr` (`nint` in C#), `UIntPtr` (`nuint` in C#)
+- `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`, `nint`, `nuint`
 - unmanaged pointers (for example, `int*`)
 - structs with fixed layout that only have blittable value types for instance fields
   - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`

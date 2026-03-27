@@ -80,14 +80,14 @@ Event properties consist of event declarations accompanied by event accessors. E
 > [!NOTE]
 > The event properties are slower than the event fields because each event delegate must be retrieved before it can be invoked.
 
-The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you should implement event properties. For more information, see [Handle multiple events by using event properties](how-to-handle-multiple-events-using-event-properties.md).
+The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you should implement event properties. For more information, see [Declare multiple events using event properties](how-to-declare-multiple-events-using-event-properties.md).
 
 ## Explore related tasks
 
 The following resources describe other tasks and concepts related to working with events:
 
 - [Raise and consume events](how-to-raise-and-consume-events.md): Find examples for raising and consuming events.
-- [Handle multiple events with event properties](how-to-handle-multiple-events-using-event-properties.md): Discover how to use event properties to handle multiple events.
+- [Declare multiple events using event properties](how-to-declare-multiple-events-using-event-properties.md): Discover how to use event properties to declare multiple events.
 - [Explore the observer design pattern](observer-design-pattern.md): Review a design pattern that enables a subscriber to register with and receive notifications from a provider.
 
 ## Review specification reference
@@ -106,4 +106,4 @@ Specification reference documentation is available for the APIs that support eve
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
 - [How to: Raise and consume events](how-to-raise-and-consume-events.md)
-- [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md)
+- [How to: Declare Multiple Events Using Event Properties](how-to-declare-multiple-events-using-event-properties.md)

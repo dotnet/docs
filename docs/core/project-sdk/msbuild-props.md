@@ -1737,7 +1737,7 @@ If you set this property to a path inside your project's source tree, the genera
 
 ```xml
 <ItemGroup>
-  <Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+  <Compile Remove="$(CompilerGeneratedFilesOutputPath)\**\*.cs" />
 </ItemGroup>
 ```
 
@@ -1763,7 +1763,7 @@ The `EmitCompilerGeneratedFiles` property controls whether source generator outp
 
 When you set this property to `true`, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*) unless you specify a different location using the [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath) property.
 
-Writing generated files to disk lets you inspect them, check them into source control, or include them in code reviews.
+Writing generated files to disk lets you inspect them. Only commit generated files to source control when you have a specific reason, such as when generators aren't available in your build environment or when you need reviewed, deterministic generated artifacts.
 
 ### ImplicitUsings
 

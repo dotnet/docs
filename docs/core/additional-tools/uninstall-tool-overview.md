@@ -51,14 +51,14 @@ winget install --id Microsoft.DotNet.UninstallTool --source winget
 
 ### Install with the MSI installer
 
-1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
 1. Run the installer.
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-01. Download the _dotnet-core-uninstall-\*.tar.gz_ tarball from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+01. Download the _dotnet-core-uninstall-\*.tar.gz_ tarball from the [GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
 01. Run the following shell script to extract the tarball to a directory named _dotnet-core-uninstall_ in your home directory. The following example extracts the Arm64 version of the tool:
 
     ```bash

@@ -68,7 +68,7 @@ A *default property* is a class or structure property that your code can access 
 
  [!code-vb[VbVbcnProcedures#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#13)]
 
- The most common use of a default property is the <xref:Microsoft.VisualBasic.Collection.Item> property on various collection classes.
+ The most common use of a default property is the <xref:Microsoft.VisualBasic.Collection.Item*> property on various collection classes.
 
 ## Robust Programming
 

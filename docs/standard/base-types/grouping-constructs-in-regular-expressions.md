@@ -106,7 +106,7 @@ You can access named captured groups in the following ways:
 
 - Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. Named captured groups are stored in the collection after numbered captured groups.
 
-- Programmatically, by providing the subexpression name to the <xref:System.Text.RegularExpressions.GroupCollection> object's indexer (in C#) or to its <xref:System.Text.RegularExpressions.GroupCollection.Item> property (in Visual Basic).
+- Programmatically, by providing the subexpression name to the <xref:System.Text.RegularExpressions.GroupCollection> object's indexer (in C#) or to its <xref:System.Text.RegularExpressions.GroupCollection.Item*> property (in Visual Basic).
 
 A simple regular expression pattern illustrates how numbered (unnamed) and named groups can be referenced either programmatically or by using regular expression language syntax. The regular expression `((?<One>abc)\d+)?(?<Two>xyz)(.*)` produces the following capturing groups by number and by name. The first capturing group (number 0) always refers to the entire pattern. (Named groups are always ordered last.)
 

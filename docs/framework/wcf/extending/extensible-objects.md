@@ -41,7 +41,7 @@ If no extension in the collection is an <xref:System.ServiceModel.IExtension`1>,
 
 There are two main scenarios. The first scenario uses the <xref:System.ServiceModel.IExtensibleObject`1.Extensions> property as a type-based dictionary to insert state on an object to enable another component to look it up using the type.
 
-The second scenario uses the <xref:System.ServiceModel.IExtension`1.Attach*> and <xref:System.ServiceModel.IExtension`1.Detach> properties to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.
+The second scenario uses the <xref:System.ServiceModel.IExtension`1.Attach*> and <xref:System.ServiceModel.IExtension`1.Detach> methods to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.
 
 The <xref:System.ServiceModel.IExtensionCollection`1> interface is a collection of the <xref:System.ServiceModel.IExtension`1> objects that allow for retrieving the <xref:System.ServiceModel.IExtension`1> by its type. <xref:System.ServiceModel.IExtensionCollection`1.Find*?displayProperty=nameWithType> returns the most recently added object that is an <xref:System.ServiceModel.IExtension`1> of that type.
 

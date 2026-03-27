@@ -291,7 +291,7 @@ Private Function BuildDictionary2() As Dictionary(Of String, Element)
 End Function
 ```
 
-The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements(symbol)` code in Visual Basic.
+The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item*> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements(symbol)` code in Visual Basic.
 
 ```vb
 Private Sub FindInDictionary(ByVal symbol As String)

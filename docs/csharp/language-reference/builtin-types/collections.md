@@ -52,7 +52,7 @@ The following example creates a `Dictionary` collection and iterates through the
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetDictionary":::
 
-The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements[symbol]` in C#.
+The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item*> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements[symbol]` in C#.
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetFindInDictionary":::
 

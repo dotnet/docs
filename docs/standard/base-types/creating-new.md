@@ -92,20 +92,21 @@ The following example uses `String.Create` to build a five-character string from
 :::code language="csharp" source="./snippets/creating-new/csharp/Program.cs" id="UsingStringCreate":::
 :::code language="vb" source="./snippets/creating-new/vb/Program.vb" id="UsingStringCreate":::
 
-`string.Create` is designed for performance-sensitive scenarios where you know the final string length in advance and want to avoid allocating intermediate character buffers. The runtime allocates a new string, passes its backing buffer directly to your callback as a `Span<char>`, and returns the immutable string once the callback returns. No copy of the data occurs after the callback completes.
+`String.Create` is designed for performance-sensitive scenarios where you know the final string length in advance and want to avoid allocating intermediate character buffers. The runtime allocates a new string, passes its backing buffer directly to your callback as a `Span<char>`, and returns the immutable string once the callback returns. No copy of the data occurs after the callback completes.
 
-#### string.Create vs. new string(Span\<char\>)
+#### String.Create vs. new String(Span\<char\>)
 
-Another option for building strings efficiently is to allocate a character buffer with `stackalloc`, fill it, and pass it to the `string(ReadOnlySpan<char>)` constructor:
+Another option for building strings efficiently is to allocate a character buffer with `stackalloc`, fill it, and pass it to the `String(ReadOnlySpan<char>)` constructor:
 
 :::code language="csharp" source="./snippets/creating-new/csharp/Program.cs" id="UsingSpanConstructor":::
 
 Both approaches allocate the final string exactly once. The key differences are:
 
-- **`stackalloc` + `new string(span)`** places the working buffer on the stack. This is fastest for *small, fixed-size* buffers, but the stack is a finite resource; large or deeply nested allocations can cause a `StackOverflowException`. This example shows the C# `stackalloc` pattern; Visual Basic doesn't support `stackalloc`, but it can still call the `string(ReadOnlySpan<char>)` constructor when you have a `ReadOnlySpan<char>`.
-- **`string.Create`** allocates the working buffer on the heap as part of the string object itself, so there's no stack pressure. It also accepts a typed state parameter that the runtime passes to your callback without boxing, avoiding boxing allocations when the state is a reference type or a non-captured struct.
+- **`stackalloc` + `new string(span)`** places the working buffer on the stack. This is fastest for *small, fixed-size* buffers, but the stack is a finite resource; large or deeply nested allocations can cause a `StackOverflowException`. This example shows the C# `stackalloc` pattern; Visual Basic doesn't support `stackalloc`, but it can still call the `String(ReadOnlySpan<char>)` constructor when you have a `ReadOnlySpan<char>`.
+
+- **`String.Create`** allocates the working buffer on the heap as part of the string object itself, so there's no stack pressure. It also accepts a typed state parameter that the runtime passes to your callback without boxing, avoiding boxing allocations when the state is a reference type or a non-captured struct.
 
-In general, prefer `stackalloc` + `new string(span)` for small strings (typically fewer than a few hundred characters) with a known, bounded size. Use `string.Create` when the size might be large, when you want to avoid stack pressure, or when passing state into the callback without boxing.
+In general, prefer `stackalloc` + `new String(span)` for small strings (typically fewer than a few hundred characters) with a known, bounded size. Use `String.Create` when the size might be large, when you want to avoid stack pressure, or when passing state into the callback without boxing.
 
 ## See also
 

@@ -198,7 +198,7 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 
 ``SimpleTypeSpec`NUMBER`` represents a generic type definition with 1 to *n* generic type parameters. For example, to get a reference to the open generic type `List<T>`, use ``Type.GetType("System.Collections.Generic.List`1")``. To get a reference to the open generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
 
-To specify a *constructed* generic type—one where the type parameters are replaced with specific types—append the type arguments in square brackets after the arity: ``SimpleTypeSpec`NUMBER[TypeArg1, TypeArg2]``. For example, to get a reference to `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1[System.String]")``. To get a reference to `Dictionary<String, Int32>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2[System.String,System.Int32]")``.
+To specify a *constructed* generic type—one where the type parameters are replaced with specific types—append the type arguments in square brackets after the arity: ``SimpleTypeSpec`NUMBER[TypeArg1,TypeArg2]``. For example, to get a reference to `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1[System.String]")``. To get a reference to `Dictionary<String, Int32>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2[System.String,System.Int32]")``.
 
 When a type argument is assembly-qualified, enclose it in its own square brackets to prevent the commas in the assembly name from being misinterpreted as type argument separators. For example:
 

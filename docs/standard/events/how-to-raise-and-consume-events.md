@@ -32,7 +32,7 @@ These steps create a `Counter` class that fires a `ThresholdReached` event when 
    :::code language="csharp" source="./snippets/how-to-raise-and-consume-events/csharp/EventNoData.cs" id="DeclareEvent":::
    :::code language="vb" source="./snippets/how-to-raise-and-consume-events/vb/EventNoData.vb" id="DeclareEvent":::
 
-1. Add a protected virtual method (`Protected Overridable` in Visual Basic) to raise the event.
+1. Add a `protected virtual` method (`Protected Overridable` in Visual Basic) to raise the event.
 
    This pattern lets derived classes override the event-raising behavior without directly invoking the delegate. In C#, use the null-conditional operator (`?.`) to guard against no subscribers (in Visual Basic, `RaiseEvent` handles this automatically):
 
@@ -79,7 +79,7 @@ These steps extend the previous `Counter` example to raise an event that include
    :::code language="csharp" source="./snippets/how-to-raise-and-consume-events/csharp/EventWithData.cs" id="DeclareEvent2":::
    :::code language="vb" source="./snippets/how-to-raise-and-consume-events/vb/EventWithData.vb" id="DeclareEvent2":::
 
-1. Add a protected virtual method (`Protected Overridable` in Visual Basic) to raise the event.
+1. Add a `protected virtual` method (`Protected Overridable` in Visual Basic) to raise the event.
 
    This pattern lets derived classes override the event-raising behavior without directly invoking the delegate. In C#, use the null-conditional operator (`?.`) to guard against no subscribers (in Visual Basic, `RaiseEvent` handles this automatically):
 
@@ -124,7 +124,7 @@ Declare a custom delegate only in rare scenarios, such as making your class avai
    :::code language="csharp" source="./snippets/how-to-raise-and-consume-events/csharp/EventWithDelegate.cs" id="DeclareEventWithDelegate":::
    :::code language="vb" source="./snippets/how-to-raise-and-consume-events/vb/EventWithDelegate.vb" id="DeclareEventWithDelegate":::
 
-1. Add a protected virtual method (`Protected Overridable` in Visual Basic) to raise the event.
+1. Add a `protected virtual` method (`Protected Overridable` in Visual Basic) to raise the event.
 
    In C#, use the null-conditional operator (`?.`) to guard against no subscribers (in Visual Basic, `RaiseEvent` handles this automatically):
 

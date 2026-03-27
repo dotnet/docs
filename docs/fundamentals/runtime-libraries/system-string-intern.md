@@ -12,7 +12,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The common language runtime conserves string storage by maintaining a table, called the *intern pool*, that contains a single reference to each unique string added to it programmatically. The <xref:System.String.Intern*> method adds a string to the pool if it's not already present, and returns a reference to the pooled string. String literals might also be added to the intern pool, but this isn't guaranteed—it depends on how the assembly was compiled.
+The common language runtime can conserve string storage by maintaining a table, called the *intern pool*, that contains a single reference to each unique literal string declared or created programmatically in your program. However, the use of the intern pool is not guaranteed — string literals might not be added to the pool, depending on how the assembly was compiled and executed.
 
 The <xref:System.String.Intern*> method uses the intern pool to search for a string equal to the value of `str`. If no such string exists, a reference to `str` is added to the pool, and that reference is returned. (In contrast, the <xref:System.String.IsInterned(System.String)> method returns a null reference if the requested string doesn't exist in the intern pool.)
 

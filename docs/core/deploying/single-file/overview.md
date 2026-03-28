@@ -148,7 +148,7 @@ For example, add the following property to the project file of an assembly to em
 ## Other considerations
 
 > [!IMPORTANT]
-> IIS doesn't support hosting ASP.NET Core apps that use single-file deployment with the in-process hosting model. If you host an ASP.NET Core app in IIS, publish your app using the standard folder deployment model, or use the out-of-process hosting model instead. For more information, see <\/aspnet/core/host-and-deploy/iis/>.
+> IIS doesn't support hosting ASP.NET Core apps that use single-file deployment with the in-process hosting model. If you host an ASP.NET Core app in IIS, publish your app using the standard folder deployment model, or use the out-of-process hosting model instead. For more information, see [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis).
 
 Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 

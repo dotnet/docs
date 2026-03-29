@@ -60,7 +60,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   The `*.dev.localhost` and `*.dev.internal` SANs lets you use the certificate with `*.dev.localhost` and `*.dev.internal` hostnames for local development. The `host.docker.internal` and `host.containers.internal` SANs let you use the certificate in container-based local development scenarios:
 
   | Type | Value |
-  |--|--|
+  | --- | --- |
   | DNS name | `localhost` |
   | DNS name | `*.dev.localhost` |
   | DNS name | `*.dev.internal` |

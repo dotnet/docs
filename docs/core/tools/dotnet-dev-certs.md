@@ -57,7 +57,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
   In .NET 10 and later, the generated ASP.NET Core development certificate includes these subject alternative names (SANs).
 
-  The `*.dev.localhost` SAN lets you use the certificate with `*.dev.localhost` hostnames for local development. The `host.docker.internal` and `host.containers.internal` SANs let you use the certificate in container-based local development scenarios:
+  The `*.dev.localhost` and `*.dev.internal` SANs lets you use the certificate with `*.dev.localhost` and `*.dev.internal` hostnames for local development. The `host.docker.internal` and `host.containers.internal` SANs let you use the certificate in container-based local development scenarios:
 
   | Type | Value |
   |--|--|

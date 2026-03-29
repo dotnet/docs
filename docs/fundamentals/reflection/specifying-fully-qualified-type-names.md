@@ -1,7 +1,8 @@
 ---
 title: Specify fully qualified type name
 description: For valid input to reflection operations, use fully qualified type names, which have assembly name specifications, namespace specifications, and type names.
-ms.date: 02/21/2019
+ms.date: 03/27/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "names [.NET], fully qualified type names"
   - "reflection, fully qualified type names"
@@ -43,7 +44,19 @@ SimpleTypeSpec
 	;
 
 GenericTypeSpec
-   : SimpleTypeSpec ` NUMBER
+	: SimpleTypeSpec ` NUMBER
+	| SimpleTypeSpec ` NUMBER '[' GenericArguments ']'
+	;
+
+GenericArguments
+	: GenericArgument
+	| GenericArguments ',' GenericArgument
+	;
+
+GenericArgument
+	: TypeSpec
+	| '[' TypeSpec ']'
+	;
 
 PointerTypeSpec
 	: SimpleTypeSpec '*'
@@ -183,7 +196,23 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 
 ## Specify generic types
 
-SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type `List<T>` or the closed generic type `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
+``SimpleTypeSpec`NUMBER`` represents a generic type definition with 1 to *n* generic type parameters. For example, to get a reference to the open generic type `List<T>`, use ``Type.GetType("System.Collections.Generic.List`1")``. To get a reference to the open generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
+
+To specify a *constructed* generic type—one where the type parameters are replaced with specific types—append the type arguments in square brackets after the arity: ``SimpleTypeSpec`NUMBER[TypeArg1,TypeArg2]``. For example, to get a reference to `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1[System.String]")``. To get a reference to `Dictionary<String, Int32>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2[System.String,System.Int32]")``.
+
+When a type argument is assembly-qualified, enclose it in its own square brackets to prevent the commas in the assembly name from being misinterpreted as type argument separators. For example:
+
+```
+"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]]"
+```
+
+Unbracketed type arguments can't include an assembly qualifier. To mix assembly-qualified and unqualified type arguments, wrap only the assembly-qualified ones in brackets:
+
+```
+"System.Collections.Generic.Dictionary`2[System.String,[MyNamespace.MyType, MyAssembly]]"
+```
+
+The <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType> property returns a type's name in the format that `Type.GetType` accepts. Use it to obtain a correctly formatted string for any constructed generic type. For example, `typeof(Dictionary<string, int>).AssemblyQualifiedName` returns the fully qualified, correctly escaped name you can pass to `Type.GetType`.
 
 ## Specify pointers
 

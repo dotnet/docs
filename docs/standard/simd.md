@@ -3,7 +3,7 @@ title: SIMD-accelerated types in .NET
 description: This article describes SIMD-enabled types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
 author: FIVIL
 ms.author: tagoo
-ms.date: 03/17/2026
+ms.date: 03/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -26,9 +26,9 @@ The .NET SIMD-accelerated types include the following types:
 - The <xref:System.Numerics.Vector`1> type, which represents a vector of a specified numeric type and provides a broad set of operators that benefit from SIMD support. The count of a <xref:System.Numerics.Vector`1> instance is fixed for the lifetime of an application, but its value <xref:System.Numerics.Vector`1.Count*?displayProperty=nameWithType> depends on the CPU of the machine running the code.
 
   > [!NOTE]
-  > The <xref:System.Numerics.Vector`1> type is not included in the .NET Framework. You must install the [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors) NuGet package to get access to this type.
-
-The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the **RyuJIT** compiler. A **RyuJIT** compiler is included in .NET Core and in .NET Framework 4.6 and later. SIMD support is only provided when targeting 64-bit processors.
+  > The <xref:System.Numerics.Vector`1> type is not included in .NET Framework. You must install the [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors) NuGet package to get access to this type.
+  
+The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To determine whether SIMD acceleration is available at runtime, use <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>. If that property returns `true`, at least some APIs use hardware-accelerated SIMD operations. If it returns `false`, no APIs are hardware accelerated.
 
 ## How to use SIMD?
 

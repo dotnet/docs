@@ -2,7 +2,7 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.date: 10/22/2025
+ms.date: 03/25/2026
 ms.custom: kr2b-contr-experiment
 ai-usage: ai-assisted
 ---
@@ -146,6 +146,9 @@ For example, add the following property to the project file of an assembly to em
 ```
 
 ## Other considerations
+
+> [!IMPORTANT]
+> IIS doesn't support hosting ASP.NET Core apps that use single-file deployment with the in-process hosting model. If you host an ASP.NET Core app in IIS, publish your app using the standard folder deployment model, or use the out-of-process hosting model instead. For more information, see [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis).
 
 Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 

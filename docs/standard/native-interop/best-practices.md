@@ -1,7 +1,8 @@
 ---
 title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
-ms.date: 07/09/2025
+ms.date: 03/26/2026
+ai-usage: ai-assisted
 ---
 # Native interoperability best practices
 
@@ -106,7 +107,8 @@ Blittable types are types that have the same bit-level representation in managed
 
 **Blittable types:**
 
-- `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`
+- `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`, `nint`, `nuint`
+- unmanaged pointers (for example, `int*`)
 - structs with fixed layout that only have blittable value types for instance fields
   - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`
   - structs are `LayoutKind.Sequential` by default

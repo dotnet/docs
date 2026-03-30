@@ -14,7 +14,7 @@ The [CreatingWorkflowInstances sample](https://github.com/dotnet/samples/tree/ma
 
 ## Discussion
 
-The first part of the sample uses <xref:System.Activities.WorkflowInvoker.Invoke%2A>. This is the most basic way to execute a workflow. Workflows executed with <xref:System.Activities.WorkflowInvoker.Invoke%2A> are executed synchronously.
+The first part of the sample uses <xref:System.Activities.WorkflowInvoker.Invoke*>. This is the most basic way to execute a workflow. Workflows executed with <xref:System.Activities.WorkflowInvoker.Invoke*> are executed synchronously.
 
 The second part of the sample uses the <xref:System.Activities.WorkflowApplication> class. <xref:System.Activities.WorkflowApplication> enables you to have more control over each instance, including the ability to interact with the running workflow and to run the workflow asynchronously.
 

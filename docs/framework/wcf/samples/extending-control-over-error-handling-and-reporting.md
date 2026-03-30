@@ -11,11 +11,11 @@ The [ErrorHandling sample](https://github.com/dotnet/samples/tree/main/framework
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
-Services can intercept errors, perform processing, and affect how errors are reported using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. The interface has two methods that can be implemented: <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> and <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A>. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> method allows you to add, modify, or suppress a fault message that is generated in response to an exception. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method allows error processing to take place in the event of an error and controls whether additional error handling can run.
+Services can intercept errors, perform processing, and affect how errors are reported using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. The interface has two methods that can be implemented: <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> and <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError*>. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> method allows you to add, modify, or suppress a fault message that is generated in response to an exception. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError*> method allows error processing to take place in the event of an error and controls whether additional error handling can run.
 
 In this sample, the `CalculatorErrorHandler` type implements the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. In the
 
- <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method, the `CalculatorErrorHandler` writes a log of the error to an Error.txt text file in c:\logs. Note that the sample logs the fault and does not suppress it, allowing it to be reported back to the client.
+ <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError*> method, the `CalculatorErrorHandler` writes a log of the error to an Error.txt text file in c:\logs. Note that the sample logs the fault and does not suppress it, allowing it to be reported back to the client.
 
 ```csharp
 public class CalculatorErrorHandler : IErrorHandler
@@ -45,7 +45,7 @@ public class CalculatorErrorHandler : IErrorHandler
 }
 ```
 
-The `ErrorBehaviorAttribute` exists as a mechanism to register an error handler with a service. This attribute takes a single type parameter. That type should implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and should have a public, empty constructor. The attribute then instantiates an instance of that error handler type and installs it into the service. It does this by implementing the <xref:System.ServiceModel.Description.IServiceBehavior> interface and then using the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to add instances of the error handler to the service.
+The `ErrorBehaviorAttribute` exists as a mechanism to register an error handler with a service. This attribute takes a single type parameter. That type should implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and should have a public, empty constructor. The attribute then instantiates an instance of that error handler type and installs it into the service. It does this by implementing the <xref:System.ServiceModel.Description.IServiceBehavior> interface and then using the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior*> method to add instances of the error handler to the service.
 
 ```csharp
 // This attribute can be used to install a custom error handler for a service.

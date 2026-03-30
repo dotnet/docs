@@ -12,7 +12,7 @@ Logging providers persist logs, except for the `Console` provider, which only di
 The default .NET Worker app templates:
 
 - Use the [Generic Host](../generic-host.md).
-- Call <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, which adds the following logging providers:
+- Call <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder*>, which adds the following logging providers:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
@@ -24,7 +24,7 @@ The preceding code shows the `Program` class created with the .NET Worker app te
 
 To override the default set of logging providers added by `Host.CreateApplicationBuilder`, call `ClearProviders` and add the logging providers you want. For example, the following code:
 
-- Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders%2A> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
+- Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders*> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
 - Adds the [Console](#console) logging provider.
 
 ```csharp
@@ -75,7 +75,7 @@ The `Console` provider logs output to the console.
 
 ### Debug
 
-The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method and only when the debugger is attached. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates instances of a logger class that implements the `ILogger` interface.
+The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine*?displayProperty=nameWithType> method and only when the debugger is attached. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates instances of a logger class that implements the `ILogger` interface.
 
 ### Event Source
 
@@ -194,10 +194,10 @@ For more information, see the following resources:
 
 If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
 
-- The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
+- The <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> method is synchronous.
 - The lifetime of log state and objects shouldn't be assumed.
 
-An implementation of `ILoggerProvider` creates an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+An implementation of `ILoggerProvider` creates an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger*?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
 
 For more information, see [Implement a custom logging provider in .NET](custom-provider.md).
 

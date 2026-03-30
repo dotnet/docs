@@ -28,9 +28,9 @@ For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 <xref:System.Text.Json> adds support for nullable reference type annotations and exporting JSON schemas from types. It adds new options that let you customize the indentation of written JSON and read multiple root-level JSON values from a single stream.
 
-In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
+In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy*> and <xref:System.Linq.Enumerable.AggregateBy*> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy*>.
 
-For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to _update_ the priority of an item in the queue.
+For collection types, the <xref:System.Collections.Generic.PriorityQueue`2?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue`2.Remove(`0,`0@,`1@,System.Collections.Generic.IEqualityComparer{`0})> method that you can use to _update_ the priority of an item in the queue.
 
 For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
 
@@ -56,7 +56,7 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 .NET 9 introduces a unified layer of C# abstractions through the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) packages. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
 
-.NET 9 also includes new tensor types that expand AI capabilities. <xref:System.Numerics.Tensors.TensorPrimitives> and the new <xref:System.Numerics.Tensors.Tensor%601> type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data. You can find these types in the latest release of the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors/).
+.NET 9 also includes new tensor types that expand AI capabilities. <xref:System.Numerics.Tensors.TensorPrimitives> and the new <xref:System.Numerics.Tensors.Tensor`1> type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data. You can find these types in the latest release of the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors/).
 
 ### TensorPrimitives
 

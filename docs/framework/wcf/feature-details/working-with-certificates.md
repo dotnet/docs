@@ -69,10 +69,10 @@ When creating a new service, you may be using a certificate that is not issued b
 
 |Class|Property|
 |-----------|--------------|
-|<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>|<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A?displayProperty=nameWithType>|
-|<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>|<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication.CertificateValidationMode%2A?displayProperty=nameWithType>|
-|<xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>|<xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A?displayProperty=nameWithType>|
-|<xref:System.ServiceModel.Security.IssuedTokenServiceCredential>|<xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A?displayProperty=nameWithType>|
+|<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>|<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode*?displayProperty=nameWithType>|
+|<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>|<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication.CertificateValidationMode*?displayProperty=nameWithType>|
+|<xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>|<xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode*?displayProperty=nameWithType>|
+|<xref:System.ServiceModel.Security.IssuedTokenServiceCredential>|<xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode*?displayProperty=nameWithType>|
 
 You can also set the property using configuration. The following elements are used to specify the validation mode:
 
@@ -86,7 +86,7 @@ You can also set the property using configuration. The following elements are us
 
 The `CertificateValidationMode` property also enables you to customize how certificates are authenticated. By default, the level is set to `ChainTrust`. To use the <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create a custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.
 
-When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../extending/custom-credential-and-credential-validation.md).
+When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate*> method. For an example of custom authentication, see the [X.509 Certificate Validator](../samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../extending/custom-credential-and-credential-validation.md).
 
 ## Use the PowerShell New-SelfSignedCertificate cmdlet to build a certificate chain
 
@@ -136,11 +136,11 @@ In WCF, you must often specify a certificate or set of certificates a service or
 
 | Class | Method |
 |-------|--------|
-|<xref:System.ServiceModel.Security.PeerCredential>|<xref:System.ServiceModel.Security.PeerCredential.SetCertificate%2A>|
-|<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>|<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A>|
-|<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>|<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>|
+|<xref:System.ServiceModel.Security.PeerCredential>|<xref:System.ServiceModel.Security.PeerCredential.SetCertificate*>|
+|<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>|<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate*>|
+|<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>|<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*>|
 |<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>| |
-|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A>| |
+|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate*>| |
 
 The `SetCertificate` method works by designating a store location and store, a "find" type (`x509FindType` parameter) that specifies a field of the certificate, and a value to find in the field. For example, the following code creates a <xref:System.ServiceModel.ServiceHost> instance and sets the service certificate used to authenticate the service to clients with the `SetCertificate` method.
 

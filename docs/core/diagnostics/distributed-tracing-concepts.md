@@ -103,7 +103,7 @@ their own custom Activity telemetry collection by using
 supports observing any Activity regardless of whether the developer has any prior knowledge about it.
 This makes ActivityListener a simple and flexible general purpose solution. By contrast, using
 DiagnosticListener is a more complex scenario that requires the instrumented code to opt in by
-invoking <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> and
+invoking <xref:System.Diagnostics.DiagnosticSource.StartActivity*?displayProperty=nameWithType> and
 the collection library needs to know the exact naming information that the instrumented code
 used when starting it. Using DiagnosticSource and DiagnosticListener allows the creator
 and listener to exchange arbitrary .NET objects and establish customized information passing
@@ -113,17 +113,17 @@ conventions.
 
 For improved performance in high throughput applications, distributed tracing on .NET supports
 sampling only a subset of traces rather than recording all of them. For activities created with
-the recommended <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
+the recommended <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=nameWithType>
 API, telemetry collection libraries can control sampling with the
 <xref:System.Diagnostics.ActivityListener.Sample?displayProperty=nameWithType> callback.
 The logging library can elect not to create the Activity at all, to create it with minimal
 information necessary to propagate distributing tracing IDs, or to populate it with complete
 diagnostic information. These choices trade-off increasing performance overhead for
 increasing diagnostic utility. Activities that are started using the older pattern of invoking
-<xref:System.Diagnostics.Activity.%23ctor%2A?displayProperty=nameWithType> and
-<xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> may
+<xref:System.Diagnostics.Activity.%23ctor*?displayProperty=nameWithType> and
+<xref:System.Diagnostics.DiagnosticSource.StartActivity*?displayProperty=nameWithType> may
 also support DiagnosticListener sampling by first calling
-<xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A?displayProperty=nameWithType>.
+<xref:System.Diagnostics.DiagnosticSource.IsEnabled*?displayProperty=nameWithType>.
 Even when capturing full diagnostic information, the .NET
 implementation is designed to be fast - coupled with an efficient collector, an Activity can be
 created, populated, and transmitted in about a microsecond on modern hardware. Sampling

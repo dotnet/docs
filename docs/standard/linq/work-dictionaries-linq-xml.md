@@ -10,11 +10,11 @@ ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
 
 # How to work with dictionaries using LINQ to XML
 
-It's often convenient to convert data structures of various kinds to XML, and then from XML to other data structures. This article shows a conversion of a <xref:System.Collections.Generic.Dictionary%602> to XML and back.
+It's often convenient to convert data structures of various kinds to XML, and then from XML to other data structures. This article shows a conversion of a <xref:System.Collections.Generic.Dictionary`2> to XML and back.
 
 ## Example: Create a Dictionary and convert its contents to XML
 
-This first example creates a <xref:System.Collections.Generic.Dictionary%602>, and then converts it to XML.
+This first example creates a <xref:System.Collections.Generic.Dictionary`2>, and then converts it to XML.
 
 This C# version of the example uses a form of functional construction in which a query projects new <xref:System.Xml.Linq.XElement> objects, and the resulting collection is passed as an argument to the constructor of the Root <xref:System.Xml.Linq.XElement> object.
 

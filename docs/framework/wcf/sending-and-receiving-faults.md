@@ -19,29 +19,29 @@ Declared SOAP faults are those in which an operation has a <xref:System.ServiceM
 
 ### Sending Declared Faults
 
-To send a declared SOAP fault, detect the error condition for which the SOAP fault is appropriate and throw a new <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is a new object of the type specified in the <xref:System.ServiceModel.FaultContractAttribute> for that operation. The following code example shows the use of <xref:System.ServiceModel.FaultContractAttribute> to specify that the `SampleMethod` operation can return a SOAP fault with the detail type of `GreetingFault`.
+To send a declared SOAP fault, detect the error condition for which the SOAP fault is appropriate and throw a new <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType> where the type parameter is a new object of the type specified in the <xref:System.ServiceModel.FaultContractAttribute> for that operation. The following code example shows the use of <xref:System.ServiceModel.FaultContractAttribute> to specify that the `SampleMethod` operation can return a SOAP fault with the detail type of `GreetingFault`.
 
 [!code-csharp[FaultContractAttribute#4](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#4)]
 [!code-vb[FaultContractAttribute#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#4)]
 
-To convey the `GreetingFault` error information to the client, catch the appropriate error condition and throw a new <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> of type `GreetingFault` with a new `GreetingFault` object as the argument, as in the following code example. If the client is an WCF client application, it experiences this as a managed exception where the type is <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> of type `GreetingFault`.
+To convey the `GreetingFault` error information to the client, catch the appropriate error condition and throw a new <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType> of type `GreetingFault` with a new `GreetingFault` object as the argument, as in the following code example. If the client is an WCF client application, it experiences this as a managed exception where the type is <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType> of type `GreetingFault`.
 
 [!code-csharp[FaultContractAttribute#5](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#5)]
 [!code-vb[FaultContractAttribute#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#5)]
 
 ### Sending Undeclared Faults
 
-Sending undeclared faults can be very useful to quickly diagnose and debug problems in WCF applications, but its usefulness as a debugging tool is limited. More generally, when debugging it is recommended that you use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property. When you set this value to true, clients experience such faults as <xref:System.ServiceModel.FaultException%601> exceptions of type <xref:System.ServiceModel.ExceptionDetail>.
+Sending undeclared faults can be very useful to quickly diagnose and debug problems in WCF applications, but its usefulness as a debugging tool is limited. More generally, when debugging it is recommended that you use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults?displayProperty=nameWithType> property. When you set this value to true, clients experience such faults as <xref:System.ServiceModel.FaultException`1> exceptions of type <xref:System.ServiceModel.ExceptionDetail>.
 
 > [!IMPORTANT]
-> Because managed exceptions can expose internal application information, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> to `true` can permit WCF clients to obtain information about internal service operation exceptions, including personally identifiable or other sensitive information.
+> Because managed exceptions can expose internal application information, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> to `true` can permit WCF clients to obtain information about internal service operation exceptions, including personally identifiable or other sensitive information.
 >
-> Therefore, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> to `true` is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault (returned to WCF clients as <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects) to obtain the debugging information properly.
+> Therefore, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> to `true` is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException`1> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault (returned to WCF clients as <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects) to obtain the debugging information properly.
 
-To send an undeclared SOAP fault, throw a <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> object (that is, not the generic type <xref:System.ServiceModel.FaultException%601>) and pass the string to the constructor. This is exposed to the WCF client applications as a thrown <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> exception where the string is available by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> method.
+To send an undeclared SOAP fault, throw a <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> object (that is, not the generic type <xref:System.ServiceModel.FaultException`1>) and pass the string to the constructor. This is exposed to the WCF client applications as a thrown <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> exception where the string is available by calling the <xref:System.ServiceModel.FaultException`1.ToString*?displayProperty=nameWithType> method.
 
 > [!NOTE]
-> If you declare a SOAP fault of type string, and then throw this in your service as a <xref:System.ServiceModel.FaultException%601> where the type parameter is a <xref:System.String?displayProperty=nameWithType> the string value is assigned to the <xref:System.ServiceModel.FaultException%601.Detail%2A?displayProperty=nameWithType> property, and is not available from <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType>.
+> If you declare a SOAP fault of type string, and then throw this in your service as a <xref:System.ServiceModel.FaultException`1> where the type parameter is a <xref:System.String?displayProperty=nameWithType> the string value is assigned to the <xref:System.ServiceModel.FaultException`1.Detail?displayProperty=nameWithType> property, and is not available from <xref:System.ServiceModel.FaultException`1.ToString*?displayProperty=nameWithType>.
 
 ## Handling Faults
 
@@ -55,23 +55,23 @@ In WCF clients, SOAP faults that occur during communication that are of interest
 
 <xref:System.ServiceModel.CommunicationException> objects are thrown when there is some recoverable communication error condition on either the service or the client.
 
-The <xref:System.ServiceModel.CommunicationException> class has two important derived types, <xref:System.ServiceModel.FaultException> and the generic <xref:System.ServiceModel.FaultException%601> type.
+The <xref:System.ServiceModel.CommunicationException> class has two important derived types, <xref:System.ServiceModel.FaultException> and the generic <xref:System.ServiceModel.FaultException`1> type.
 
-<xref:System.ServiceModel.FaultException> exceptions are thrown when a listener receives a fault that is not expected or specified in the operation contract; usually this occurs when the application is being debugged and the service has the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property set to `true`.
+<xref:System.ServiceModel.FaultException> exceptions are thrown when a listener receives a fault that is not expected or specified in the operation contract; usually this occurs when the application is being debugged and the service has the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults?displayProperty=nameWithType> property set to `true`.
 
-<xref:System.ServiceModel.FaultException%601> exceptions are thrown on the client when a fault that is specified in the operation contract is received in response to a two-way operation (that is, a method with an <xref:System.ServiceModel.OperationContractAttribute> attribute with <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> set to `false`).
+<xref:System.ServiceModel.FaultException`1> exceptions are thrown on the client when a fault that is specified in the operation contract is received in response to a two-way operation (that is, a method with an <xref:System.ServiceModel.OperationContractAttribute> attribute with <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> set to `false`).
 
 > [!NOTE]
-> When an WCF service has the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property set to `true` the client experiences this as an undeclared <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients can either catch this specific fault or handle the fault in a catch block for <xref:System.ServiceModel.FaultException>.
+> When an WCF service has the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults?displayProperty=nameWithType> property set to `true` the client experiences this as an undeclared <xref:System.ServiceModel.FaultException`1> of type <xref:System.ServiceModel.ExceptionDetail>. Clients can either catch this specific fault or handle the fault in a catch block for <xref:System.ServiceModel.FaultException>.
 
-Typically, only <xref:System.ServiceModel.FaultException%601>, <xref:System.TimeoutException>, and <xref:System.ServiceModel.CommunicationException> exceptions are of interest to clients and services.
+Typically, only <xref:System.ServiceModel.FaultException`1>, <xref:System.TimeoutException>, and <xref:System.ServiceModel.CommunicationException> exceptions are of interest to clients and services.
 
 > [!NOTE]
 > Other exceptions, of course, do occur. Unexpected exceptions include catastrophic failures like <xref:System.OutOfMemoryException?displayProperty=nameWithType>; typically applications should not catch such methods.
 
 ### Catch Fault Exceptions in the Correct Order
 
-Because <xref:System.ServiceModel.FaultException%601> derives from <xref:System.ServiceModel.FaultException>, and <xref:System.ServiceModel.FaultException> derives from <xref:System.ServiceModel.CommunicationException>, it is important to catch these exceptions in the proper order. If, for example, you have a try/catch block in which you first catch <xref:System.ServiceModel.CommunicationException>, all specified and unspecified SOAP faults are handled there; any subsequent catch blocks to handle a custom <xref:System.ServiceModel.FaultException%601> exception are never invoked.
+Because <xref:System.ServiceModel.FaultException`1> derives from <xref:System.ServiceModel.FaultException>, and <xref:System.ServiceModel.FaultException> derives from <xref:System.ServiceModel.CommunicationException>, it is important to catch these exceptions in the proper order. If, for example, you have a try/catch block in which you first catch <xref:System.ServiceModel.CommunicationException>, all specified and unspecified SOAP faults are handled there; any subsequent catch blocks to handle a custom <xref:System.ServiceModel.FaultException`1> exception are never invoked.
 
 Remember that one operation can return any number of specified faults. Each fault is a unique type and must be handled separately.
 
@@ -85,9 +85,9 @@ Typically, client object channels are closed in one of the following ways:
 
 - When the WCF client object is recycled.
 
-- When the client application calls <xref:System.ServiceModel.ClientBase%601.Close%2A?displayProperty=nameWithType>.
+- When the client application calls <xref:System.ServiceModel.ClientBase`1.Close*?displayProperty=nameWithType>.
 
-- When the client application calls <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=nameWithType>.
+- When the client application calls <xref:System.ServiceModel.ICommunicationObject.Close*?displayProperty=nameWithType>.
 
 - When the client application calls an operation that is a terminating operation for a session.
 
@@ -110,7 +110,7 @@ The following code example shows how to handle SOAP fault exceptions in a basic 
 ## See also
 
 - <xref:System.ServiceModel.FaultException>
-- <xref:System.ServiceModel.FaultException%601>
+- <xref:System.ServiceModel.FaultException`1>
 - <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>
 - [Expected Exceptions](./samples/expected-exceptions.md)
 - [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md)

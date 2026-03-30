@@ -17,7 +17,7 @@ A workflow definition is a tree of configured activity objects. This tree of act
 > [!NOTE]
 > The examples in this topic use <xref:System.Activities.WorkflowInvoker> to run the sample workflows. For more information about invoking workflows, passing arguments, and the different hosting choices that are available, see [Using WorkflowInvoker and WorkflowApplication](using-workflowinvoker-and-workflowapplication.md).
 
- In this example, a workflow that consists of a single <xref:System.Activities.Statements.WriteLine> activity is created. The <xref:System.Activities.Statements.WriteLine> activity’s <xref:System.Activities.Statements.WriteLine.Text%2A> argument is set, and the workflow is invoked. If an activity contains child activities, the method of construction is similar. The following example uses a <xref:System.Activities.Statements.Sequence> activity that contains two <xref:System.Activities.Statements.WriteLine> activities.
+ In this example, a workflow that consists of a single <xref:System.Activities.Statements.WriteLine> activity is created. The <xref:System.Activities.Statements.WriteLine> activity’s <xref:System.Activities.Statements.WriteLine.Text*> argument is set, and the workflow is invoked. If an activity contains child activities, the method of construction is similar. The following example uses a <xref:System.Activities.Statements.Sequence> activity that contains two <xref:System.Activities.Statements.WriteLine> activities.
 
  [!code-csharp[CFX_WorkflowApplicationExample#48](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#48)]
 
@@ -35,11 +35,11 @@ A workflow definition is a tree of configured activity objects. This tree of act
 
  [!code-csharp[CFX_WorkflowApplicationExample#50](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#50)]
 
- When this workflow definition code is executed, the call to `Random.Next` is made and the result is stored in the workflow definition as a literal value. Many instances of this workflow can be invoked, and all would display the same number. To have the random number generation occur during workflow execution, an expression must be used that is evaluated each time the workflow runs. In the following example, a Visual Basic expression is used with a <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>.
+ When this workflow definition code is executed, the call to `Random.Next` is made and the result is stored in the workflow definition as a literal value. Many instances of this workflow can be invoked, and all would display the same number. To have the random number generation occur during workflow execution, an expression must be used that is evaluated each time the workflow runs. In the following example, a Visual Basic expression is used with a <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1>.
 
  [!code-csharp[CFX_WorkflowApplicationExample#51](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#51)]
 
- The expression in the previous example could also be implemented using a <xref:Microsoft.CSharp.Activities.CSharpValue%601> and a C# expression.
+ The expression in the previous example could also be implemented using a <xref:Microsoft.CSharp.Activities.CSharpValue`1> and a C# expression.
 
 ```csharp
 new Assign<int>
@@ -51,10 +51,10 @@ new Assign<int>
 
  C# expressions must be compiled before the workflow containing them is invoked. If the C# expressions are not compiled, a <xref:System.NotSupportedException> is thrown when the workflow is invoked with a message similar to the following: ``Expression Activity type 'CSharpValue`1' requires compilation in order to run.  Please ensure that the workflow has been compiled.`` In most scenarios involving workflows created in Visual Studio the C# expressions are compiled automatically, but in some scenarios, such as code workflows, the C# expressions must be manually compiled. For an example of how to compile C# expressions, see the [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows) section of the [C# Expressions](csharp-expressions.md) topic.
 
- A <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> represents an expression in Visual Basic syntax that can be used as an r-value in an expression, and a <xref:Microsoft.CSharp.Activities.CSharpValue%601> represents an expression in C# syntax that can be used as an r-value in an expression. These expressions are evaluated each time the containing activity is executed. The result of the expression is assigned to the workflow variable `n`, and these results are used by the next activity in the workflow. To access the value of the workflow variable `n` at runtime, the <xref:System.Activities.ActivityContext> is required. This can be accessed by using the following lambda expression.
+ A <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1> represents an expression in Visual Basic syntax that can be used as an r-value in an expression, and a <xref:Microsoft.CSharp.Activities.CSharpValue`1> represents an expression in C# syntax that can be used as an r-value in an expression. These expressions are evaluated each time the containing activity is executed. The result of the expression is assigned to the workflow variable `n`, and these results are used by the next activity in the workflow. To access the value of the workflow variable `n` at runtime, the <xref:System.Activities.ActivityContext> is required. This can be accessed by using the following lambda expression.
 
 > [!NOTE]
-> Note that both of these code are examples are using C# as the programming language, but one uses a <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> and one uses a <xref:Microsoft.CSharp.Activities.CSharpValue%601>. <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> and <xref:Microsoft.CSharp.Activities.CSharpValue%601> can be used in both Visual Basic and C# projects. By default, expressions created in the workflow designer match the language of the hosting project. When creating workflows in code, the desired language is at the discretion of the workflow author.
+> Note that both of these code are examples are using C# as the programming language, but one uses a <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1> and one uses a <xref:Microsoft.CSharp.Activities.CSharpValue`1>. <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1> and <xref:Microsoft.CSharp.Activities.CSharpValue`1> can be used in both Visual Basic and C# projects. By default, expressions created in the workflow designer match the language of the hosting project. When creating workflows in code, the desired language is at the discretion of the workflow author.
 
  In these examples the result of the expression is assigned to the workflow variable `n`, and these results are used by the next activity in the workflow. To access the value of the workflow variable `n` at runtime, the <xref:System.Activities.ActivityContext> is required. This can be accessed by using the following lambda expression.
 
@@ -62,19 +62,19 @@ new Assign<int>
 
  For more information about lambda expressions, see [Lambda Expressions (C# reference)](../../csharp/language-reference/operators/lambda-expressions.md) or [Lambda Expressions (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
 
- Lambda expressions are not serializable to XAML format. If an attempt to serialize a workflow with lambda expressions is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown with the following message: "This workflow contains lambda expressions specified in code. These expressions are not XAML serializable. In order to make your workflow XAML-serializable, either use VisualBasicValue/VisualBasicReference or ExpressionServices.Convert(lambda). This will convert your lambda expressions into expression activities." To make this expression compatible with XAML, use <xref:System.Activities.Expressions.ExpressionServices> and <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>, as shown in the following example.
+ Lambda expressions are not serializable to XAML format. If an attempt to serialize a workflow with lambda expressions is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown with the following message: "This workflow contains lambda expressions specified in code. These expressions are not XAML serializable. In order to make your workflow XAML-serializable, either use VisualBasicValue/VisualBasicReference or ExpressionServices.Convert(lambda). This will convert your lambda expressions into expression activities." To make this expression compatible with XAML, use <xref:System.Activities.Expressions.ExpressionServices> and <xref:System.Activities.Expressions.ExpressionServices.Convert*>, as shown in the following example.
 
  [!code-csharp[CFX_WorkflowApplicationExample#53](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#53)]
 
- A <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> could also be used. Note that no lambda expression is required when using a Visual Basic expression.
+ A <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1> could also be used. Note that no lambda expression is required when using a Visual Basic expression.
 
  [!code-csharp[CFX_WorkflowApplicationExample#54](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#54)]
 
- At runtime, Visual Basic expressions are compiled into LINQ expressions. Both of the previous examples are serializable to XAML, but if the serialized XAML is intended to be viewed and edited in the workflow designer, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> for your expressions. Serialized workflows that use `ExpressionServices.Convert` can be opened in the designer, but the value of the expression will be blank. For more information about serializing workflows to XAML, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).
+ At runtime, Visual Basic expressions are compiled into LINQ expressions. Both of the previous examples are serializable to XAML, but if the serialized XAML is intended to be viewed and edited in the workflow designer, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1> for your expressions. Serialized workflows that use `ExpressionServices.Convert` can be opened in the designer, but the value of the expression will be blank. For more information about serializing workflows to XAML, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).
 
 #### Literal Expressions and Reference Types
 
- Literal expressions are represented in workflows by the <xref:System.Activities.Expressions.Literal%601> activity. The following <xref:System.Activities.Statements.WriteLine> activities are functionally equivalent.
+ Literal expressions are represented in workflows by the <xref:System.Activities.Expressions.Literal`1> activity. The following <xref:System.Activities.Statements.WriteLine> activities are functionally equivalent.
 
 ```csharp
 new WriteLine
@@ -87,7 +87,7 @@ new WriteLine
 }
 ```
 
- It is invalid to initialize a literal expression with any reference type except <xref:System.String>. In the following example, an <xref:System.Activities.Statements.Assign> activity's <xref:System.Activities.Statements.Assign.Value%2A> property is initialized with a literal expression using a `List<string>`.
+ It is invalid to initialize a literal expression with any reference type except <xref:System.String>. In the following example, an <xref:System.Activities.Statements.Assign> activity's <xref:System.Activities.Statements.Assign.Value> property is initialized with a literal expression using a `List<string>`.
 
 ```csharp
 new Assign
@@ -111,11 +111,11 @@ new Assign
 
 #### Invoking Methods on Objects using Expressions and the InvokeMethod Activity
 
- The <xref:System.Activities.Expressions.InvokeMethod%601> activity can be used to invoke static and instance methods of classes in the .NET Framework. In a previous example in this topic, a random number was generated using the <xref:System.Random> class.
+ The <xref:System.Activities.Expressions.InvokeMethod`1> activity can be used to invoke static and instance methods of classes in the .NET Framework. In a previous example in this topic, a random number was generated using the <xref:System.Random> class.
 
  [!code-csharp[CFX_WorkflowApplicationExample#51](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#51)]
 
- The <xref:System.Activities.Expressions.InvokeMethod%601> activity could also have been used to call the <xref:System.Random.Next%2A> method of the <xref:System.Random> class.
+ The <xref:System.Activities.Expressions.InvokeMethod`1> activity could also have been used to call the <xref:System.Random.Next*> method of the <xref:System.Random> class.
 
 ```csharp
 new InvokeMethod<int>
@@ -131,11 +131,11 @@ new InvokeMethod<int>
 }
 ```
 
- Since <xref:System.Random.Next%2A> is not a static method, an instance of the <xref:System.Random> class is supplied for the <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A> property. In this example a new instance is created using a Visual Basic expression, but it could also have been created previously and stored in a workflow variable. In this example, it would be simpler to use the <xref:System.Activities.Statements.Assign%601> activity instead of the <xref:System.Activities.Expressions.InvokeMethod%601> activity. If the method call ultimately invoked by either the <xref:System.Activities.Statements.Assign%601> or <xref:System.Activities.Expressions.InvokeMethod%601> activities is long running, <xref:System.Activities.Expressions.InvokeMethod%601> has an advantage since it has a <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously> property. When this property is set to `true`, the invoked method will run asynchronously with regard to the workflow. If other activities are in parallel, they will not be blocked while the method is asynchronously executing. Also, if the method to be invoked has no return value, then <xref:System.Activities.Expressions.InvokeMethod%601> is the appropriate way to invoke the method.
+ Since <xref:System.Random.Next*> is not a static method, an instance of the <xref:System.Random> class is supplied for the <xref:System.Activities.Expressions.InvokeMethod`1.TargetObject> property. In this example a new instance is created using a Visual Basic expression, but it could also have been created previously and stored in a workflow variable. In this example, it would be simpler to use the <xref:System.Activities.Statements.Assign`1> activity instead of the <xref:System.Activities.Expressions.InvokeMethod`1> activity. If the method call ultimately invoked by either the <xref:System.Activities.Statements.Assign`1> or <xref:System.Activities.Expressions.InvokeMethod`1> activities is long running, <xref:System.Activities.Expressions.InvokeMethod`1> has an advantage since it has a <xref:System.Activities.Expressions.InvokeMethod`1.RunAsynchronously> property. When this property is set to `true`, the invoked method will run asynchronously with regard to the workflow. If other activities are in parallel, they will not be blocked while the method is asynchronously executing. Also, if the method to be invoked has no return value, then <xref:System.Activities.Expressions.InvokeMethod`1> is the appropriate way to invoke the method.
 
 ## Arguments and Dynamic Activities
 
- A workflow definition is created in code by assembling activities into an activity tree and configuring any properties and arguments. Existing arguments can be bound, but new arguments cannot be added to activities. This includes workflow arguments passed to the root activity. In imperative code, workflow arguments are specified as properties on a new CLR type, and in XAML they are declared by using `x:Class` and `x:Member`. Because there is no new CLR type created when a workflow definition is created as a tree of in-memory objects, arguments cannot be added. However, arguments can be added to a <xref:System.Activities.DynamicActivity>. In this example, a <xref:System.Activities.DynamicActivity%601> is created that takes two integer arguments, adds them together, and returns the result. A <xref:System.Activities.DynamicActivityProperty> is created for each argument, and the result of the operation is assigned to the <xref:System.Activities.Activity%601.Result%2A> argument of the <xref:System.Activities.DynamicActivity%601>.
+ A workflow definition is created in code by assembling activities into an activity tree and configuring any properties and arguments. Existing arguments can be bound, but new arguments cannot be added to activities. This includes workflow arguments passed to the root activity. In imperative code, workflow arguments are specified as properties on a new CLR type, and in XAML they are declared by using `x:Class` and `x:Member`. Because there is no new CLR type created when a workflow definition is created as a tree of in-memory objects, arguments cannot be added. However, arguments can be added to a <xref:System.Activities.DynamicActivity>. In this example, a <xref:System.Activities.DynamicActivity`1> is created that takes two integer arguments, adds them together, and returns the result. A <xref:System.Activities.DynamicActivityProperty> is created for each argument, and the result of the operation is assigned to the <xref:System.Activities.Activity`1.Result*> argument of the <xref:System.Activities.DynamicActivity`1>.
 
  [!code-csharp[CFX_WorkflowApplicationExample#55](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#55)]
 
@@ -147,7 +147,7 @@ new InvokeMethod<int>
 
  Activities that derive from <xref:System.Activities.NativeActivity> can define their logic using imperative code and they can also contain child activities that define the logic. They also have full access to the features of the runtime such as creating bookmarks. For examples of creating a <xref:System.Activities.NativeActivity>-based activity, see [NativeActivity Base Class](nativeactivity-base-class.md), [How to: Create an Activity](how-to-create-an-activity.md), and the [Custom Composite using Native Activity](./samples/custom-composite-using-native-activity.md) sample.
 
- Activities that derive from <xref:System.Activities.Activity> define their logic solely through the use of child activities. These activities are typically created by using the workflow designer, but can also be defined by using code. In the following example, a `Square` activity is defined that derives from `Activity<int>`. The `Square` activity has a single <xref:System.Activities.InArgument%601> named `Value`, and defines its logic by specifying a <xref:System.Activities.Statements.Sequence> activity using the <xref:System.Activities.Activity.Implementation%2A> property. The <xref:System.Activities.Statements.Sequence> activity contains a <xref:System.Activities.Statements.WriteLine> activity and an <xref:System.Activities.Statements.Assign%601> activity. Together, these three activities implement the logic of the `Square` activity.
+ Activities that derive from <xref:System.Activities.Activity> define their logic solely through the use of child activities. These activities are typically created by using the workflow designer, but can also be defined by using code. In the following example, a `Square` activity is defined that derives from `Activity<int>`. The `Square` activity has a single <xref:System.Activities.InArgument`1> named `Value`, and defines its logic by specifying a <xref:System.Activities.Statements.Sequence> activity using the <xref:System.Activities.Activity.Implementation> property. The <xref:System.Activities.Statements.Sequence> activity contains a <xref:System.Activities.Statements.WriteLine> activity and an <xref:System.Activities.Statements.Assign`1> activity. Together, these three activities implement the logic of the `Square` activity.
 
 ```csharp
 class Square : Activity<int>

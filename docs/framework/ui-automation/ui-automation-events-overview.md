@@ -49,9 +49,9 @@ ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
 
 ## UI Automation Event Identifiers
 
- Microsoft UI Automation events are identified by <xref:System.Windows.Automation.AutomationEvent> objects. The <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> property contains a value that uniquely identifies the kind of event.
+ Microsoft UI Automation events are identified by <xref:System.Windows.Automation.AutomationEvent> objects. The <xref:System.Windows.Automation.AutomationIdentifier.Id> property contains a value that uniquely identifies the kind of event.
 
- The possible values for <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> are given in the following table, along with the type used for event arguments. Note that the identifiers used by clients and providers are identically named fields from different classes.
+ The possible values for <xref:System.Windows.Automation.AutomationIdentifier.Id*> are given in the following table, along with the type used for event arguments. Note that the identifiers used by clients and providers are identically named fields from different classes.
 
 |Client Identifier|Provider identifier|Event Arguments Type|
 |-----------------------|-------------------------|--------------------------|
@@ -77,7 +77,7 @@ ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
 |<xref:System.Windows.Automation.StructureChangedEventArgs>|Contains information about a change in the UI Automation tree.|
 |<xref:System.Windows.Automation.WindowClosedEventArgs>|Contains information about a window closing.|
 
- All the event argument classes contain an <xref:System.Windows.Automation.AutomationEventArgs.EventId%2A> member. This identifier is encapsulated in an <xref:System.Windows.Automation.AutomationEvent>.
+ All the event argument classes contain an <xref:System.Windows.Automation.AutomationEventArgs.EventId*> member. This identifier is encapsulated in an <xref:System.Windows.Automation.AutomationEvent>.
 
  The <xref:System.Windows.Automation.AutomationEvent> objects used to identify events are obtained by providers from fields in <xref:System.Windows.Automation.AutomationElementIdentifiers> and control pattern identifier classes such as <xref:System.Windows.Automation.DockPatternIdentifiers>. The equivalent fields are obtained by client applications from fields in <xref:System.Windows.Automation.AutomationElement> and control pattern classes such as <xref:System.Windows.Automation.DockPattern>.
 

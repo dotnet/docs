@@ -45,13 +45,13 @@ The preceding code:
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
 > [!IMPORTANT]
-> When [adding configuration providers](https://github.com/dotnet/runtime/blob/main/src%2Flibraries%2FMicrosoft.Extensions.Configuration%2Fsrc%2FConfigurationBuilder.cs#L30-L34) with <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the added configuration provider is added to the end of the `IConfigurationSource` list. When keys are found by multiple providers, the last provider to read the key overrides previous providers.
+> When [adding configuration providers](https://github.com/dotnet/runtime/blob/main/src%2Flibraries%2FMicrosoft.Extensions.Configuration%2Fsrc%2FConfigurationBuilder.cs#L30-L34) with <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add*?displayProperty=nameWithType>, the added configuration provider is added to the end of the `IConfigurationSource` list. When keys are found by multiple providers, the last provider to read the key overrides previous providers.
 
 An example *appsettings.json* file with various configuration settings follows:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json":::
 
-From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
+From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions`1> through dependency injection.
 
 > [!NOTE]
 > The *Build Action* and *Copy to Output Directory* properties of the JSON file must be set to *Content* and *Copy if newer (or Copy always)*, respectively.
@@ -92,7 +92,7 @@ An example *appsettings.xml* file with various configuration settings follows:
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
 
 > [!TIP]
-> To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile%2A> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
+> To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile*> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
 
 In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element. (If you're upgrading to .NET 6 or later, you may encounter a break resulting from this change in behavior. For more information, see [Repeated XML elements include index](../compatibility/extensions/6.0/repeated-xml-elements.md).)
 
@@ -191,7 +191,7 @@ To test that the preceding commands override any *appsettings.json* and *appsett
 
 ### Prefixes
 
-To specify a prefix for environment variables, call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string:
+To specify a prefix for environment variables, call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables*> with a string:
 
 :::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="6-7":::
 
@@ -287,7 +287,7 @@ Within the same command, don't mix command-line argument key-value pairs that us
 
 The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value is the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
 
-To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
+To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile*> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
 
 Overloads permit specifying:
 

@@ -100,7 +100,7 @@ The naming policy:
 
 ## Use a custom JSON property naming policy
 
-To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
+To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName*> method, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to/csharp/UpperCaseNamingPolicy.cs":::
 :::code language="vb" source="snippets/how-to/vb/UpperCaseNamingPolicy.vb":::
@@ -154,7 +154,7 @@ Naming policies for dictionary keys apply to serialization only. If you deserial
 
 ## Enums as strings
 
-By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> or <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter. Only <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> is supported by the Native AOT runtime.
+By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> or <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> converter. Only <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> is supported by the Native AOT runtime.
 
 For example, suppose you need to serialize the following class that has an enum:
 
@@ -193,7 +193,7 @@ The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can d
 
 ### JsonConverterAttribute
 
-You can also specify the converter to use by annotating your enum with <xref:System.Text.Json.Serialization.JsonConverterAttribute>. The following example shows how to specify the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> (available in .NET 8 and later versions) by using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute. For example, suppose you need to serialize the following class that has an enum:
+You can also specify the converter to use by annotating your enum with <xref:System.Text.Json.Serialization.JsonConverterAttribute>. The following example shows how to specify the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> (available in .NET 8 and later versions) by using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute. For example, suppose you need to serialize the following class that has an enum:
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
 

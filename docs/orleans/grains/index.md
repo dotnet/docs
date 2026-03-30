@@ -13,7 +13,7 @@ For more thorough instructions, see the [Project Setup](../tutorials-and-samples
 
 ## Grain interfaces and classes
 
-Grains interact with each other and are called from outside by invoking methods declared as part of their respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601>, or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
+Grains interact with each other and are called from outside by invoking methods declared as part of their respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task`1>, or a <xref:System.Threading.Tasks.ValueTask`1> (for methods returning values of type `T`).
 
 The following is an excerpt from the Orleans Presence Service sample:
 
@@ -89,7 +89,7 @@ public interface IDataProcessingGrain : IGrainWithGuidKey
     // 2 minute timeout using hours, minutes, seconds
     [ResponseTimeout(0, 2, 0)]
     Task<ProcessingResult> ProcessLargeDatasetAsync(Dataset data, CancellationToken cancellationToken = default);
-    
+
     // 500ms timeout using TimeSpan.FromMilliseconds equivalent
     [ResponseTimeout("00:00:00.500")]
     Task<HealthStatus> GetHealthAsync(CancellationToken cancellationToken = default);
@@ -116,7 +116,7 @@ Consider the following when configuring timeouts:
 
 ## Return values from grain methods
 
-Define a grain method that returns a value of type `T` in a grain interface as returning a <xref:System.Threading.Tasks.Task%601>.
+Define a grain method that returns a value of type `T` in a grain interface as returning a <xref:System.Threading.Tasks.Task`1>.
 For grain methods not marked with the `async` keyword, when the return value is available, you usually return it using the following statement:
 
 ```csharp
@@ -174,11 +174,11 @@ public Task GrainMethod6()
 }
 ```
 
-<xref:System.Threading.Tasks.ValueTask%601> can be used instead of <xref:System.Threading.Tasks.Task%601>.
+<xref:System.Threading.Tasks.ValueTask`1> can be used instead of <xref:System.Threading.Tasks.Task`1>.
 
 ## IAsyncEnumerable return values
 
-Orleans supports returning <xref:System.Collections.Generic.IAsyncEnumerable%601> from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
+Orleans supports returning <xref:System.Collections.Generic.IAsyncEnumerable`1> from grain methods, enabling efficient streaming of data from a grain to a caller without loading the entire result set into memory. This is useful for scenarios like:
 
 - Returning large collections of data progressively
 - Streaming real-time updates
@@ -191,7 +191,7 @@ public interface IDataGrain : IGrainWithStringKey
 {
     // Returns a streaming sequence of items
     IAsyncEnumerable<DataItem> GetAllItemsAsync();
-    
+
     // Can also include CancellationToken for cancellation support
     IAsyncEnumerable<DataItem> GetItemsAsync(CancellationToken cancellationToken = default);
 }
@@ -199,7 +199,7 @@ public interface IDataGrain : IGrainWithStringKey
 
 ### Implement the streaming method
 
-Use the `yield return` statement or return an <xref:System.Collections.Generic.IAsyncEnumerable%601> directly:
+Use the `yield return` statement or return an <xref:System.Collections.Generic.IAsyncEnumerable`1> directly:
 
 ```csharp
 public class DataGrain : Grain, IDataGrain
@@ -213,7 +213,7 @@ public class DataGrain : Grain, IDataGrain
             yield return item;
         }
     }
-    
+
     public async IAsyncEnumerable<DataItem> GetItemsAsync(
         [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
@@ -224,8 +224,8 @@ public class DataGrain : Grain, IDataGrain
             yield return item;
         }
     }
-    
-    private Task<DataItem> FetchItemAsync(int id) => 
+
+    private Task<DataItem> FetchItemAsync(int id) =>
         Task.FromResult(new DataItem { Id = id });
 }
 
@@ -245,7 +245,7 @@ var grain = client.GetGrain<IDataGrain>("mydata");
 await foreach (var item in grain.GetAllItemsAsync())
 {
     Console.WriteLine($"Received item: {item.Id}");
-    
+
     // Process each item as it arrives
     await ProcessItemAsync(item);
 }
@@ -273,7 +273,7 @@ await foreach (var item in grain.GetAllItemsAsync().WithBatchSize(50))
 | **Backpressure** | Built-in | Provider-dependent |
 | **Persistence** | No | Optional (provider-dependent) |
 
-Use <xref:System.Collections.Generic.IAsyncEnumerable%601> when:
+Use <xref:System.Collections.Generic.IAsyncEnumerable`1> when:
 
 - You need a simple request-response pattern with streaming results
 - The caller initiates the data flow and consumes all results
@@ -291,7 +291,7 @@ A grain reference is a proxy object implementing the same grain interface as the
 
 Since a grain reference represents the logical identity of the target grain, it's independent of the grain's physical location and remains valid even after a complete system restart. You can use grain references like any other .NET object. You can pass it to a method, use it as a method return value, etc., and even save it to persistent storage.
 
-You can obtain a grain reference by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within its type.
+You can obtain a grain reference by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain``1(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within its type.
 
 The following examples show how to obtain a grain reference for the `IPlayerGrain` interface defined previously.
 
@@ -357,7 +357,7 @@ Exceptions thrown from grain methods don't cause the grain to be deactivated unl
 
 ### Virtual methods
 
-A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods. The Orleans runtime invokes these methods upon activation and deactivation of each grain of the class. This gives your grain code a chance to perform additional initialization and cleanup operations. An exception thrown by <xref:Orleans.Grain.OnActivateAsync*> fails the activation process.
+A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync*> and <xref:Orleans.Grain.OnDeactivateAsync*> virtual methods. The Orleans runtime invokes these methods upon activation and deactivation of each grain of the class. This gives your grain code a chance to perform additional initialization and cleanup operations. An exception thrown by <xref:Orleans.Grain.OnActivateAsync*> fails the activation process.
 
 While <xref:Orleans.Grain.OnActivateAsync*> (if overridden) is always called as part of the grain activation process, <xref:Orleans.Grain.OnDeactivateAsync*> isn't guaranteed to be called in all situations (for example, in case of a server failure or other abnormal events). Because of this, your applications shouldn't rely on <xref:Orleans.Grain.OnDeactivateAsync*> for performing critical operations, such as persisting state changes. Use it only for best-effort operations.
 

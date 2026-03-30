@@ -60,7 +60,7 @@ The .NET regular expression engine is a backtracking regular expression matcher 
     |Pattern|Description|
     |-------------|-----------------|
     |`\b`|Begin the match at a word boundary.|
-    |`[A-Z]+`|Match any alphabetic character one or more times. Because the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option, the comparison is case-insensitive.|
+    |`[A-Z]+`|Match any alphabetic character one or more times. Because the <xref:System.Text.RegularExpressions.Regex.Matches*?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option, the comparison is case-insensitive.|
     |`\b`|End the match at a word boundary.|
     |`(?=\P{P})`|Look ahead to determine whether the next character is a punctuation symbol. If it is not, the match succeeds.|
 

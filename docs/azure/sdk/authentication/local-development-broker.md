@@ -104,7 +104,7 @@ The Azure Identity library provide interactive brokered authentication using <xr
 > [!TIP]
 > View the [complete sample app code](https://github.com/dotnet/docs/tree/main/docs/azure/sdk/snippets/authentication/brokered) in the .NET docs GitHub repository.
 
-In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount%2A> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
+In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount*> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
 
 :::zone target="docs" pivot="os-windows"
 

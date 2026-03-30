@@ -30,11 +30,11 @@ public static double MidPoint(double left, double right) =>
     (left + right) / (2.0);
 ```
 
-The same logic would work for any numeric type: `int`, `short`, `long`, `float` `decimal`, or any type that represents a number. You need to have a way to use the `+` and `/` operators, and to define a value for `2`. You can use the <xref:System.Numerics.INumber%601?displayProperty=fullName> interface to write the preceding method as the following generic method:
+The same logic would work for any numeric type: `int`, `short`, `long`, `float` `decimal`, or any type that represents a number. You need to have a way to use the `+` and `/` operators, and to define a value for `2`. You can use the <xref:System.Numerics.INumber`1?displayProperty=fullName> interface to write the preceding method as the following generic method:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Utilities.cs" id="MidPoint":::
 
-Any type that implements the <xref:System.Numerics.INumber%601> interface must include a definition for `operator +`, and for `operator /`. The denominator is defined by `T.CreateChecked(2)` to create the value `2` for any numeric type, which forces the denominator to be the same type as the two parameters. <xref:System.Numerics.INumberBase%601.CreateChecked%60%601(%60%600)?displayProperty=nameWithType> creates an instance of the type from the specified value and throws an <xref:System.OverflowException> if the value falls outside the representable range. (This implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.)
+Any type that implements the <xref:System.Numerics.INumber`1> interface must include a definition for `operator +`, and for `operator /`. The denominator is defined by `T.CreateChecked(2)` to create the value `2` for any numeric type, which forces the denominator to be the same type as the two parameters. <xref:System.Numerics.INumberBase`1.CreateChecked``1(``0)?displayProperty=nameWithType> creates an instance of the type from the specified value and throws an <xref:System.OverflowException> if the value falls outside the representable range. (This implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.)
 
 You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IGetNext<T>` interface that can be applied to any type that overrides `operator ++`:
 
@@ -144,7 +144,7 @@ public record Point<T>(T X, T Y) : IAdditionOperators<Point<T>, Translation<T>, 
     where T : IAdditionOperators<T, T, T>
 ```
 
-Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new interface for that feature: <xref:System.Numerics.IAdditiveIdentity%602>. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property, `AdditiveIdentity`, that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
+Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new interface for that feature: <xref:System.Numerics.IAdditiveIdentity`2>. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property, `AdditiveIdentity`, that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Translation.cs":::
 

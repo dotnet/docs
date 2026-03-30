@@ -57,8 +57,8 @@ Defines the transport security settings.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
-- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport*>
+- <xref:System.ServiceModel.NetMsmqSecurity.Transport*>
 - <xref:System.ServiceModel.MsmqTransportSecurity>
 - [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

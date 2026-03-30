@@ -34,7 +34,7 @@ The following table compares some of the request and response types used by prot
 | Request body                  | <xref:Azure.Core.RequestContent> | <xref:System.ClientModel.BinaryContent>               |
 | Advanced request options      | <xref:Azure.RequestContext>      | <xref:System.ClientModel.Primitives.RequestOptions>   |
 | Raw HTTP response             | <xref:Azure.Response>            | <xref:System.ClientModel.Primitives.PipelineResponse> |
-| Return type with output model | <xref:Azure.Response%601>        | <xref:System.ClientModel.ClientResult%601>            |
+| Return type with output model | <xref:Azure.Response`1>        | <xref:System.ClientModel.ClientResult`1>            |
 
 The sections ahead provide implementation examples of these concepts.
 
@@ -69,7 +69,7 @@ The preceding code demonstrates the following `Azure.Core` protocol method patte
 1. **Invoke the protocol method**, using a `RequestContext` object to configure request options.
 1. **Handle the response** by reading:
     - The HTTP status code from the `Response` object to determine success or failure.
-    - Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
+    - Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson*>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
 
 > [!NOTE]
 > The preceding code configures the [ErrorOptions.NoThrow](/dotnet/api/azure.erroroptions) behavior. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.

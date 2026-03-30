@@ -39,8 +39,8 @@ Collection expressions introduce a new terse syntax to create common collection 
 Several collection-like types can be created without requiring external BCL support.  These types are:
 
 - Array types, such as `int[]`.
-- <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
-- Types that support collection initializers, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>.
+- <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>.
+- Types that support collection initializers, such as <xref:System.Collections.Generic.List`1?displayProperty=nameWithType>.
 
 The following examples show uses of collection expressions:
 
@@ -89,9 +89,9 @@ C# added `in` parameters as a way to pass readonly references. `in` parameters a
 
 The addition of `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters:
 
-- APIs created before `in` was introduced might use `ref` even though the argument isn't modified. Those APIs can be updated with `ref readonly`. It won't be a breaking change for callers, as would be if the `ref` parameter was changed to `in`. An example is <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A?displayProperty=fullName>.
-- APIs that take an `in` parameter, but logically require a variable. A value expression doesn't work. An example is <xref:System.ReadOnlySpan%601.%23ctor(%600@)?displayProperty=fullName>.
-- APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%2A?displayProperty=fullName>.
+- APIs created before `in` was introduced might use `ref` even though the argument isn't modified. Those APIs can be updated with `ref readonly`. It won't be a breaking change for callers, as would be if the `ref` parameter was changed to `in`. An example is <xref:System.Runtime.InteropServices.Marshal.QueryInterface*?displayProperty=fullName>.
+- APIs that take an `in` parameter, but logically require a variable. A value expression doesn't work. An example is <xref:System.ReadOnlySpan`1.%23ctor(`0@)?displayProperty=fullName>.
+- APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef*?displayProperty=fullName>.
 
 To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
 
@@ -107,7 +107,7 @@ You can use the `using` alias directive to alias any type, not just named types.
 
 ## Inline arrays
 
-Inline arrays are used by the runtime team and other library authors to improve performance in your apps. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't declare your own inline arrays, but you use them transparently when they're exposed as <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> objects from runtime APIs.
+Inline arrays are used by the runtime team and other library authors to improve performance in your apps. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't declare your own inline arrays, but you use them transparently when they're exposed as <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> objects from runtime APIs.
 
 An *inline array* is declared similar to the following `struct`:
 

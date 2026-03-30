@@ -54,18 +54,18 @@ The following table lists the affected APIs:
 | <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.Linq.XStreamingElement.Add(System.Object[])?displayProperty=fullName> | Parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.XmlDocument.XmlResolver?displayProperty=fullName> | The setter accepts a nullable reference | Breaking |
-| <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=fullName> | `content` parameter type is nullable | Nonbreaking |
-| <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=fullName> | `content` parameter type is nullable  | Nonbreaking |
-| <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=fullName> | `content` parameter type is nullable  | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PatchAsync*?displayProperty=fullName> | `content` parameter type is nullable | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PostAsync*?displayProperty=fullName> | `content` parameter type is nullable  | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PutAsync*?displayProperty=fullName> | `content` parameter type is nullable  | Nonbreaking |
 | <xref:System.Linq.Expressions.MethodCallExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})?displayProperty=fullName> | First parameter type is nullable | Nonbreaking |
-| <xref:System.Linq.Expressions.Expression%601.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})?displayProperty=fullName> | Return type is not nullable | Nonbreaking |
+| <xref:System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})?displayProperty=fullName> | Return type is not nullable | Nonbreaking |
 | <xref:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=fullName> | `buffer` parameter type is nullable | Breaking |
 | <xref:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=fullName> | `buffer` parameter type is nullable | Breaking |
 | <xref:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=fullName> | `buffer` parameter type is nullable | Breaking |
 | <xref:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=fullName> | `buffer` parameter type is nullable | Breaking |
-| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync%2A?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking |
+| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync*?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking |
 | Methods that override <xref:System.Object.Equals(System.Object)?displayProperty=fullName> and [many others that return `bool`](https://github.com/dotnet/runtime/pull/47598/files) | `[NotNullWhen(true)]` added to first nullable parameter | Breaking |
-| <xref:System.Collections.Immutable.ImmutableArray%601.Equals(System.Object)?displayProperty=fullName> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Collections.Immutable.ImmutableArray`1.Equals(System.Object)?displayProperty=fullName> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
 | <xref:System.Collections.Specialized.BitVector32.Equals(System.Object)?displayProperty=fullName> | `NotNullWhen(true)` was added to the `o` parameter | Breaking |
 | <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)?displayProperty=fullName> | `NotNullWhen(true)` was added to the `o` parameter | Breaking |
 | <xref:System.Reflection.Metadata.BlobContentId.Equals(System.Object)?displayProperty=fullName> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |

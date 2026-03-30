@@ -11,7 +11,7 @@ Use the `ref` modifier when declaring a [structure type](struct.md). You allocat
 - You can't declare a `ref struct` as the type of a field in a class or a non-`ref struct`.
 - You can't box a `ref struct` to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
 - You can't capture a `ref struct` variable in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- Before C# 13, you can't use `ref struct` variables in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- Before C# 13, you can't use `ref struct` variables in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1>.
 - Before C# 13, you can't use a `ref struct` variable in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
 - Before C# 13, a `ref struct` can't implement interfaces. Beginning with C# 13, a `ref` struct can implement interfaces, but must adhere to the [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules. For example, a `ref struct` type can't be converted to the interface type because that requires a boxing conversion.
 - Before C# 13, a `ref struct` can't be a type argument. Beginning with C# 13, a `ref struct` can be the type argument when the type parameter specifies the `allows ref struct` in its `where` clause.
@@ -26,7 +26,7 @@ To declare a `ref struct` as `readonly`, combine the `readonly` and `ref` modifi
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetReadonlyRef":::
 
-In .NET, examples of a `ref struct` are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+In .NET, examples of a `ref struct` are <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>.
 
 ## `ref` fields
 
@@ -34,7 +34,7 @@ You can declare a `ref` field in a `ref struct`, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefField":::
 
-A `ref` field can have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%60%601(%60%600@)?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
+A `ref` field can have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef``1(``0@)?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
 
 You can apply the `readonly` modifier to a `ref` field in the following ways:
 
@@ -44,7 +44,7 @@ You can apply the `readonly` modifier to a `ref` field in the following ways:
 
 The compiler ensures that a reference stored in a `ref` field doesn't outlive its referent.
 
-The `ref` fields feature enables a safe implementation of types like <xref:System.Span%601?displayProperty=fullName>:
+The `ref` fields feature enables a safe implementation of types like <xref:System.Span`1?displayProperty=fullName>:
 
 ```csharp
 public readonly ref struct Span<T>

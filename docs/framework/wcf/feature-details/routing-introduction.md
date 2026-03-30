@@ -17,7 +17,7 @@ When starting, this behavior adds the <xref:System.ServiceModel.Routing.SoapProc
 
 The **RoutingConfiguration** class provides a consistent means of configuring and updating the configuration of the Routing Service.  It contains parameters that act as the settings for the Routing Service and is used to configure the **RoutingBehavior** when the service starts, or is passed to the **RoutingExtension** to modify routing configuration at runtime.
 
-The routing logic used to perform content-based routing of messages is defined by grouping multiple <xref:System.ServiceModel.Dispatcher.MessageFilter> objects together into filter tables (<xref:System.ServiceModel.Dispatcher.MessageFilterTable%601> objects). Incoming messages are evaluated against the message filters contained in the filter table, and for each **MessageFilter** that matches the message, forwarded to a destination endpoint. The filter table that should be used to route messages is specified by using either the **RoutingBehavior** in configuration or through code by using the **RoutingConfiguration** object.
+The routing logic used to perform content-based routing of messages is defined by grouping multiple <xref:System.ServiceModel.Dispatcher.MessageFilter> objects together into filter tables (<xref:System.ServiceModel.Dispatcher.MessageFilterTable`1> objects). Incoming messages are evaluated against the message filters contained in the filter table, and for each **MessageFilter** that matches the message, forwarded to a destination endpoint. The filter table that should be used to route messages is specified by using either the **RoutingBehavior** in configuration or through code by using the **RoutingConfiguration** object.
 
 ### Defining Endpoints
 
@@ -105,7 +105,7 @@ The Routing Service provides several **MessageFilter** implementations that insp
 
 Multiple message filters are organized together into filter tables, which associate each **MessageFilter** with a destination endpoint. Optionally, the filter table can also be used to specify a list of back-up endpoints that the Routing Service will attempt to send the message to in the event of a transmission failure.
 
-By default all message filters within a filter table are evaluated simultaneously; however, you can specify a <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority%2A> that causes the message filters to be evaluated in a specific order. All entries with the highest priority are evaluated first, and message filters of lower priorities are not evaluated if a match is found at a higher priority level. For more information about filter tables, see [Message Filters](message-filters.md).
+By default all message filters within a filter table are evaluated simultaneously; however, you can specify a <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority*> that causes the message filters to be evaluated in a specific order. All entries with the highest priority are evaluated first, and message filters of lower priorities are not evaluated if a match is found at a higher priority level. For more information about filter tables, see [Message Filters](message-filters.md).
 
 The following examples use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter>, which evaluates to `true` for all messages. This **MessageFilter** is added to the "routingTable1" filter table, which associates the **MessageFilter** with the client endpoint named "CalculatorService". The **RoutingBehavior** then specifies that this table should be used to route messages processed by the service endpoint.
 
@@ -148,7 +148,7 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
 ```
 
 > [!NOTE]
-> By default, the Routing Service only evaluates the headers of the message. To allow the filters to access the message body, you must set <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly%2A> to `false`.
+> By default, the Routing Service only evaluates the headers of the message. To allow the filters to access the message body, you must set <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly*> to `false`.
 
 **Multicast**
 
@@ -222,7 +222,7 @@ The steps taken to create a new **MessageVersion** for the outbound message are 
 
 - Return the new response message.
 
-By default, the **SoapProcessingBehavior** is automatically added to the client endpoints by the <xref:System.ServiceModel.Routing.RoutingBehavior> when the service starts; however, you can control whether SOAP processing is added to all client endpoints by using the <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> property. You can also add the behavior directly to a specific endpoint and enable or disable this behavior at the endpoint level if a more granular control of SOAP processing is required.
+By default, the **SoapProcessingBehavior** is automatically added to the client endpoints by the <xref:System.ServiceModel.Routing.RoutingBehavior> when the service starts; however, you can control whether SOAP processing is added to all client endpoints by using the <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled> property. You can also add the behavior directly to a specific endpoint and enable or disable this behavior at the endpoint level if a more granular control of SOAP processing is required.
 
 > [!NOTE]
 > If SOAP processing is disabled for an endpoint that requires a different MessageVersion than that of the original request message, you must provide a custom mechanism for performing any SOAP modifications that are required before sending the message to the destination endpoint.
@@ -250,7 +250,7 @@ rc.SoapProcessingEnabled = false;
 
 When you add additional client endpoints, or need to modify the filters that are used to route messages, you must have a way to update the configuration dynamically at runtime to prevent interrupting the service to the endpoints currently receiving messages through the Routing Service. Modifying a configuration file or the code of the host application is not always sufficient, because either method requires recycling the application, which would lead to the potential loss of any messages currently in transit and the potential for downtime while waiting on the service to restart.
 
-You can only modify the **RoutingConfiguration** programmatically. While you can initially configure the service by using a configuration file, you can only modify the configuration at runtime by constructing a new **RoutingConfiguration** and passing it as a parameter to the <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> method exposed by the <xref:System.ServiceModel.Routing.RoutingExtension> service extension. Any messages currently in transit continue to be routed using the previous configuration, while messages received after the call to **ApplyConfiguration** use the new configuration. The following example demonstrates creating an instance of the Routing Service and then subsequently modifying the configuration.
+You can only modify the **RoutingConfiguration** programmatically. While you can initially configure the service by using a configuration file, you can only modify the configuration at runtime by constructing a new **RoutingConfiguration** and passing it as a parameter to the <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration*> method exposed by the <xref:System.ServiceModel.Routing.RoutingExtension> service extension. Any messages currently in transit continue to be routed using the previous configuration, while messages received after the call to **ApplyConfiguration** use the new configuration. The following example demonstrates creating an instance of the Routing Service and then subsequently modifying the configuration.
 
 ```csharp
 RoutingConfiguration routingConfig = new RoutingConfiguration();
@@ -405,7 +405,7 @@ Impersonation with the routing service requires either the use of ASP.NET impers
 
 To use ASP.NET impersonation with the routing service, enable ASP.NET compatibility mode on the service hosting environment. The routing service has already been marked as allowing ASP.NET compatibility mode and impersonation will automatically be enabled. Impersonation is the only supported use of ASP.NET integration with the routing service.
 
-To use Windows credential impersonation with the routing service you need to configure both the credentials and the service. The client credentials object (<xref:System.ServiceModel.Security.WindowsClientCredential>, accessible from the <xref:System.ServiceModel.ChannelFactory>) defines an <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property that must be set to permit impersonation. Finally, on the service you need to configure the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> behavior to set `ImpersonateCallerForAllOperations` to `true`. The routing service uses this flag to decide whether to create the clients for forwarding messages with impersonation enabled.
+To use Windows credential impersonation with the routing service you need to configure both the credentials and the service. The client credentials object (<xref:System.ServiceModel.Security.WindowsClientCredential>, accessible from the <xref:System.ServiceModel.ChannelFactory>) defines an <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel> property that must be set to permit impersonation. Finally, on the service you need to configure the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> behavior to set `ImpersonateCallerForAllOperations` to `true`. The routing service uses this flag to decide whether to create the clients for forwarding messages with impersonation enabled.
 
 ## See also
 

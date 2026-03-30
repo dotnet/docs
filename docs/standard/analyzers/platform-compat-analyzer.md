@@ -14,7 +14,7 @@ But using platform-specific APIs on a component means the code no longer works a
 The complementary APIs include:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to annotate APIs as being unsupported on a particular OS. These attributes can optionally include the version number, and have already been applied to some platform-specific APIs in the core .NET libraries.
-- `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform-specific APIs. For example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> can be used to guard a call to a Windows-specific API, and <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() can be used to guard a versioned Windows-specific API call. See these [examples](#guard-platform-specific-apis-with-guard-methods) of how these methods can be used as guards of platform-specific API references.
+- `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform-specific APIs. For example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> can be used to guard a call to a Windows-specific API, and <xref:System.OperatingSystem.IsWindowsVersionAtLeast*?displayProperty=nameWithType>() can be used to guard a versioned Windows-specific API call. See these [examples](#guard-platform-specific-apis-with-guard-methods) of how these methods can be used as guards of platform-specific API references.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ The analyzer does not check target framework moniker (TFM) target platforms from
 
 For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> method is attributed `[SupportedOSPlatformGuard("MacCatalyst")]`. Therefore, the following statements apply:
 
-- The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
+- The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast*?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
 - `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its superset platform, `MacCatalyst`. You can use the `[UnsupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
 - `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `MacCatalyst`. You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
 
@@ -281,7 +281,7 @@ The guard method's platform name should match with the calling platform-dependen
   }
   ```
 
-- If you need to guard code that targets `netstandard` or `netcoreapp` where new <xref:System.OperatingSystem> APIs are not available, the <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API can be used and will be respected by the analyzer. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. If the platform is not supported in the <xref:System.Runtime.InteropServices.OSPlatform> struct, you can call <xref:System.Runtime.InteropServices.OSPlatform.Create(System.String)?displayProperty=nameWithType> and pass in the platform name, which the analyzer also respects.
+- If you need to guard code that targets `netstandard` or `netcoreapp` where new <xref:System.OperatingSystem> APIs are not available, the <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform*?displayProperty=nameWithType> API can be used and will be respected by the analyzer. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. If the platform is not supported in the <xref:System.Runtime.InteropServices.OSPlatform> struct, you can call <xref:System.Runtime.InteropServices.OSPlatform.Create(System.String)?displayProperty=nameWithType> and pass in the platform name, which the analyzer also respects.
 
   ```csharp
   public void CallingSupportedOnlyApis()
@@ -300,7 +300,7 @@ The guard method's platform name should match with the calling platform-dependen
 
 #### Annotate APIs with platform guard attributes and use it as a custom guard
 
-As shown previously, the analyzer recognizes the platform-guard static methods in the <xref:System.OperatingSystem> type, such as `OperatingSystem.IsWindows`, and also <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType>. However, you might want to cache the guard result in a field and reuse it, or use custom guard methods for checking a platform. The analyzer needs to recognize such APIs as a custom guard and should not warn for the APIs guarded by them. The guard attributes were introduced in .NET 6 to support this scenario:
+As shown previously, the analyzer recognizes the platform-guard static methods in the <xref:System.OperatingSystem> type, such as `OperatingSystem.IsWindows`, and also <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform*?displayProperty=nameWithType>. However, you might want to cache the guard result in a field and reuse it, or use custom guard methods for checking a platform. The analyzer needs to recognize such APIs as a custom guard and should not warn for the APIs guarded by them. The guard attributes were introduced in .NET 6 to support this scenario:
 
 - `SupportedOSPlatformGuardAttribute` annotates APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute>.
 - `UnsupportedOSPlatformGuardAttribute` annotates APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>.

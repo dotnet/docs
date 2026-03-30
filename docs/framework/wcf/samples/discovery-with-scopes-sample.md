@@ -14,7 +14,7 @@ This project shows two service endpoints being added to a <xref:System.ServiceMo
 
 ## Client Features
 
-The `FindCalculatorServiceAddress()` method shows how to use a <xref:System.ServiceModel.Discovery.DiscoveryClient> and pass in a <xref:System.ServiceModel.Discovery.FindCriteria> with two restrictions. A scope is added to the criteria and the <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> property is set to 1. The scope limits the results to only the services that publish the same scope. Setting <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> to 1 limits the responses the <xref:System.ServiceModel.Discovery.DiscoveryClient> waits for to, at most, 1 endpoint. The <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> call is a synchronous operation that blocks the thread until a timeout is reached or one endpoint is found.
+The `FindCalculatorServiceAddress()` method shows how to use a <xref:System.ServiceModel.Discovery.DiscoveryClient> and pass in a <xref:System.ServiceModel.Discovery.FindCriteria> with two restrictions. A scope is added to the criteria and the <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults> property is set to 1. The scope limits the results to only the services that publish the same scope. Setting <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults*> to 1 limits the responses the <xref:System.ServiceModel.Discovery.DiscoveryClient> waits for to, at most, 1 endpoint. The <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*> call is a synchronous operation that blocks the thread until a timeout is reached or one endpoint is found.
 
 ### To use this sample
 

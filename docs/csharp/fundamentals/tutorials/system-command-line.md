@@ -79,7 +79,7 @@ For a deeper look at command-line syntax concepts, see [Command-line syntax over
 
 Options represent named values that users specify with a `--` prefix. Arguments represent positional values. Both are strongly typed. `System.CommandLine` parses the input string into the type you specify.
 
-The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*. It tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in <xref:System.CommandLine.Option%601?displayProperty=nameWithType>), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and <xref:System.CommandLine.Argument`1?displayProperty=nameWithType> in the steps that follow. For more information on generics, see [Generics](../types/generics.md).
+The `System.CommandLine` library uses *generic types* to enforce type safety. When you write `Option<int>`, the `int` between the angle brackets is a *type argument*. It tells the library what type of value the option holds. The class itself declares a *type parameter* `T` (as in <xref:System.CommandLine.Option`1?displayProperty=nameWithType>), and you supply the concrete type when you create an instance. The library parses the user's input string and converts it to that type automatically. If the user provides `--delay abc` for an `Option<int>`, `System.CommandLine` reports a parse error instead of passing bad data to your code. You'll see this pattern with `Option<bool>`, `Option<Priority>`, `Option<DateOnly?>`, and <xref:System.CommandLine.Argument`1?displayProperty=nameWithType> in the steps that follow. For more information on generics, see [Generics](../types/generics.md).
 
 1. Define the options. Each `Option<T>` specifies the value type, the name, and a description. The `--priority` option uses an `enum` type, and `System.CommandLine` automatically validates the input against valid enum values:
 
@@ -125,7 +125,7 @@ Each subcommand needs an *action*. An action is a [delegate](../../programming-g
 
    For more detail, see [LINQ](../../linq/index.md).
 
-1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType> to find:
+1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault*?displayProperty=nameWithType> to find:
 
    - A matching task.
    - An [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists.

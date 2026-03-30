@@ -179,9 +179,9 @@ The constructor to the `AsyncMethodBuilder` attribute specifies the type of the 
 You can learn about async method builders by reading about the following builders supplied by .NET:
 
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder?displayProperty=fullName>
-- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601?displayProperty=fullName>
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1?displayProperty=fullName>
 - <xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder?displayProperty=fullName>
-- <xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder%601?displayProperty=fullName>
+- <xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1?displayProperty=fullName>
 
 The `AsyncMethodBuilder` attribute can be applied to an async method to override the builder for that type.
 
@@ -252,7 +252,7 @@ Applying the <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayP
 
 The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> enables library authors to prefer one overload over another when two overloads can be ambiguous. Its primary use case is for library authors to write better performing overloads while still supporting existing code without breaks.
 
-For example, you might add a new overload that uses <xref:System.ReadOnlySpan%601> to reduce memory allocations:
+For example, you might add a new overload that uses <xref:System.ReadOnlySpan`1> to reduce memory allocations:
 
 :::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOverloadExample":::
 

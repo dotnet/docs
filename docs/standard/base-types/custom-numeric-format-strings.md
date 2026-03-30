@@ -20,7 +20,7 @@ helpviewer_keywords:
 
 You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that is not a [standard numeric format string](standard-numeric-format-strings.md).
 
-Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the <xref:System.Int32.ToString%28System.String%29> and <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> methods of the <xref:System.Int32> type. Custom numeric format strings are also supported by the .NET [composite formatting feature](composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. [String interpolation](../../csharp/language-reference/tokens/interpolated.md) feature also supports custom numeric format strings.
+Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the <xref:System.Int32.ToString%28System.String%29> and <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> methods of the <xref:System.Int32> type. Custom numeric format strings are also supported by the .NET [composite formatting feature](composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format*?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType> method. [String interpolation](../../csharp/language-reference/tokens/interpolated.md) feature also supports custom numeric format strings.
 
 > [!TIP]
 > You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
@@ -86,7 +86,7 @@ To return a result string in which absent digits or leading zeroes are replaced 
 
 The "." custom format specifier inserts a localized decimal separator into the result string. The first period in the format string determines the location of the decimal separator in the formatted value; any additional periods are ignored. If the format specifier ends with a "." only the significant digits are formatted into the result string.
 
-The character that is used as the decimal separator in the result string is not always a period; it is determined by the <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A> property of the <xref:System.Globalization.NumberFormatInfo> object that controls formatting.
+The character that is used as the decimal separator in the result string is not always a period; it is determined by the <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator> property of the <xref:System.Globalization.NumberFormatInfo> object that controls formatting.
 
 The following example uses the "." format specifier to define the location of the decimal point in several result strings.
 
@@ -103,7 +103,7 @@ The "," character serves as both a group separator and a number scaling specifie
 
 - Group separator: If one or more commas are specified between two digit placeholders (0 or #) that format the integral digits of a number, a group separator character is inserted between each number group in the integral part of the output.
 
-  The <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A> and <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> properties of the current <xref:System.Globalization.NumberFormatInfo> object determine the character used as the number group separator and the size of each number group. For example, if the string "#,#" and the invariant culture are used to format the number 1000, the output is "1,000".
+  The <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator*> and <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes> properties of the current <xref:System.Globalization.NumberFormatInfo> object determine the character used as the number group separator and the size of each number group. For example, if the string "#,#" and the invariant culture are used to format the number 1000, the output is "1,000".
 
 - Number scaling specifier: If one or more commas are specified immediately to the left of the explicit or implicit decimal point, the number to be formatted is divided by 1000 for each comma. For example, if the string "0,," is used to format the number 100 million, the output is "100".
 
@@ -125,7 +125,7 @@ The following example illustrates the use of the comma as a specifier for number
 
 ## The "%" custom specifier
 
-A percent sign (%) in a format string causes a number to be multiplied by 100 before it is formatted. The localized percent symbol is inserted in the number at the location where the % appears in the format string. The percent character used is defined by the <xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A> property of the current <xref:System.Globalization.NumberFormatInfo> object.
+A percent sign (%) in a format string causes a number to be multiplied by 100 before it is formatted. The localized percent symbol is inserted in the number at the location where the % appears in the format string. The percent character used is defined by the <xref:System.Globalization.NumberFormatInfo.PercentSymbol> property of the current <xref:System.Globalization.NumberFormatInfo> object.
 
 The following example defines several custom format strings that include the "%" custom specifier.
 
@@ -138,7 +138,7 @@ The following example defines several custom format strings that include the "%"
 
 ## The "‰" custom specifier
 
-A per mille character (‰ or \u2030) in a format string causes a number to be multiplied by 1000 before it is formatted. The appropriate per mille symbol is inserted in the returned string at the location where the ‰ symbol appears in the format string. The per mille character used is defined by the <xref:System.Globalization.NumberFormatInfo.PerMilleSymbol%2A?displayProperty=nameWithType> property of the object that provides culture-specific formatting information.
+A per mille character (‰ or \u2030) in a format string causes a number to be multiplied by 1000 before it is formatted. The appropriate per mille symbol is inserted in the returned string at the location where the ‰ symbol appears in the format string. The per mille character used is defined by the <xref:System.Globalization.NumberFormatInfo.PerMilleSymbol?displayProperty=nameWithType> property of the object that provides culture-specific formatting information.
 
 The following example defines a custom format string that includes the "‰" custom specifier.
 
@@ -239,7 +239,7 @@ The following example uses both approaches to include reserved characters in a c
 
 ### Floating-Point infinities and NaN
 
-Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
+Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol*>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol*>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol> property specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
 
 ### Control Panel settings
 

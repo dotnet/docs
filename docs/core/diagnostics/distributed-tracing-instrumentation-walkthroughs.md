@@ -190,13 +190,13 @@ Resource associated with Activity:
 
 #### Notes
 
-- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> creates and starts
+- <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=nameWithType> creates and starts
 the activity at the same time. The listed code pattern is using the `using` block, which automatically disposes
 the created Activity object after executing the block. Disposing the Activity object will stop it so the code
 doesn't need to explicitly call <xref:System.Diagnostics.Activity.Stop?displayProperty=nameWithType>.
 That simplifies the coding pattern.
 
-- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if there are any listeners recording the Activity. If there are no registered listeners or there are listeners that are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This is a performance optimization so that the code pattern can still be used in functions that are called frequently.
+- <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=nameWithType> internally determines if there are any listeners recording the Activity. If there are no registered listeners or there are listeners that are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This is a performance optimization so that the code pattern can still be used in functions that are called frequently.
 
 ## Optional: Populate tags
 
@@ -234,9 +234,9 @@ Example work done
 
 ### Best practices
 
-- As mentioned above, `activity` returned by <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
+- As mentioned above, `activity` returned by <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=nameWithType>
 may be null. The null-coalescing operator `?.` in C# is a convenient short-hand to only invoke
-<xref:System.Diagnostics.Activity.SetTag%2A?displayProperty=nameWithType> if `activity` is not null. The behavior is identical to
+<xref:System.Diagnostics.Activity.SetTag*?displayProperty=nameWithType> if `activity` is not null. The behavior is identical to
 writing:
 
 ```csharp
@@ -417,7 +417,7 @@ describes the relationship between the Activity, its parent, and its children. B
 set to <xref:System.Diagnostics.ActivityKind.Internal>, which is appropriate for Activities that are an
 internal operation within an application with no remote parent or children. Other kinds can be set using the
 kind parameter on
-<xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>. For other options, see
+<xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=nameWithType>. For other options, see
 <xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType>.
 
 ## Optional: Links

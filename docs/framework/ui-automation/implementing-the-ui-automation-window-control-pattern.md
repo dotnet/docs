@@ -41,15 +41,15 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 
 |Required member|Member type|Notes|
 |---------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.InteractionState%2A>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.InteractionState*>|Property|None|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.IsModal>|Property|None|
 |<xref:System.Windows.Automation.Provider.IWindowProvider.IsTopmost>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.Maximizable%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.Minimizable%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.VisualState%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.Maximizable*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.Minimizable*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.VisualState*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.Close*>|Method|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState*>|Method|None|
+|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle*>|Method|None|
 |<xref:System.Windows.Automation.WindowPattern.WindowClosedEvent>|Event|None|
 |<xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent>|Event|None|
 |<xref:System.Windows.Automation.WindowInteractionState>|Event|Is not guaranteed to be <xref:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction>|
@@ -62,8 +62,8 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState%2A><br /><br /> -   When a control does not support a requested behavior.|
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> -   When the parameter is not a valid number.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState*><br /><br /> -   When a control does not support a requested behavior.|
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle*><br /><br /> -   When the parameter is not a valid number.|
 
 ## See also
 

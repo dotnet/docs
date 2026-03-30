@@ -10,7 +10,7 @@ ms.assetid: fada62d0-0680-4e73-945a-2b00d7a507af
 
 # Mixed declarative/imperative code bugs (LINQ to XML)
 
-LINQ to XML contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modify XML trees](in-memory-xml-tree-modification-vs-functional-construction.md). If you're iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements%2A>, and you're modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.
+LINQ to XML contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modify XML trees](in-memory-xml-tree-modification-vs-functional-construction.md). If you're iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements*>, and you're modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.
 
 This problem is sometimes known as "The Halloween Problem".
 
@@ -58,7 +58,7 @@ Next
 
 This code goes into an infinite loop. The `foreach` statement iterates through the `Elements()` axis, adding new elements to the `doc` element. It ends up iterating also through the elements it just added. And because it allocates new objects with every iteration of the loop, it will eventually consume all available memory.
 
-You can fix this problem by pulling the collection into memory using the <xref:System.Linq.Enumerable.ToList%2A> standard query operator, as follows:
+You can fix this problem by pulling the collection into memory using the <xref:System.Linq.Enumerable.ToList*> standard query operator, as follows:
 
 ```csharp
 XElement root = new XElement("Root",
@@ -136,7 +136,7 @@ This example produces the following output:
 </Root>
 ```
 
-The solution again is to call <xref:System.Linq.Enumerable.ToList%2A> to materialize the collection, as follows:
+The solution again is to call <xref:System.Linq.Enumerable.ToList*> to materialize the collection, as follows:
 
 ```csharp
 XElement root = new XElement("Root",
@@ -168,7 +168,7 @@ This example produces the following output:
 <Root />
 ```
 
-Alternatively, you can eliminate the iteration altogether by calling <xref:System.Xml.Linq.XElement.RemoveAll%2A> on the parent element:
+Alternatively, you can eliminate the iteration altogether by calling <xref:System.Xml.Linq.XElement.RemoveAll*> on the parent element:
 
 ```csharp
 XElement root = new XElement("Root",

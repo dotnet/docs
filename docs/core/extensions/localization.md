@@ -23,7 +23,7 @@ An application that is ready for localization is separated into two conceptual b
 
 For each localized version of your application, add a new satellite assembly that contains the localized user interface block translated into the appropriate language for the target culture. The code block for all cultures should remain the same. The combination of a localized version of the user interface block with the code block produces a localized version of your application.
 
-In this article, you will learn how to use the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601> and <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory> implementations. All of the example source code in this article relies on the [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization) and [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/microsoft.extensions.hosting) NuGet packages. For more information on hosting, see [.NET Generic Host](generic-host.md).
+In this article, you will learn how to use the <xref:Microsoft.Extensions.Localization.IStringLocalizer`1> and <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory> implementations. All of the example source code in this article relies on the [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization) and [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/microsoft.extensions.hosting) NuGet packages. For more information on hosting, see [.NET Generic Host](generic-host.md).
 
 ## Resource files
 
@@ -83,9 +83,9 @@ The example project is named *example.csproj*, which creates an *example.dll* an
 
 ## Register localization services
 
-To register localization services, call one of the <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization%2A> extension methods during the configuration of services. This will enable dependency injection (DI) of the following types:
+To register localization services, call one of the <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization*> extension methods during the configuration of services. This will enable dependency injection (DI) of the following types:
 
-- <xref:Microsoft.Extensions.Localization.IStringLocalizer%601?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Localization.IStringLocalizer`1?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory?displayProperty=fullName>
 
 ### Configure localization options
@@ -114,7 +114,7 @@ This would cause the localization services to look in the *Resources* directory 
 
 After you've [registered](#register-localization-services) (and optionally [configured](#configure-localization-options)) the localization services, you can use the following types with DI:
 
-- <xref:Microsoft.Extensions.Localization.IStringLocalizer%601>
+- <xref:Microsoft.Extensions.Localization.IStringLocalizer`1>
 - <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory>
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
@@ -138,9 +138,9 @@ In the preceding C# code:
 - The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]
-> The `IStringLocalizerFactory` isn't required. Instead, it is preferred for consuming services to require the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601>.
+> The `IStringLocalizerFactory` isn't required. Instead, it is preferred for consuming services to require the <xref:Microsoft.Extensions.Localization.IStringLocalizer`1>.
 
-Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item%2A?displayProperty=nameWithType> indexers return a <xref:Microsoft.Extensions.Localization.LocalizedString>, which have [implicit conversions](xref:Microsoft.Extensions.Localization.LocalizedString.op_Implicit(Microsoft.Extensions.Localization.LocalizedString)~System.String) to `string?`.
+Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item*?displayProperty=nameWithType> indexers return a <xref:Microsoft.Extensions.Localization.LocalizedString>, which have [implicit conversions](xref:Microsoft.Extensions.Localization.LocalizedString.op_Implicit(Microsoft.Extensions.Localization.LocalizedString)~System.String) to `string?`.
 
 ## Put it all together
 

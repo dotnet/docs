@@ -25,12 +25,12 @@ End Using
 
 ## Parts
 
-|Term|Definition|  
-|---|---|  
-|`resourcelist`|Required if you do not supply `resourceexpression`. List of one or more system resources that this `Using` block controls, separated by commas.|  
-|`resourceexpression`|Required if you do not supply `resourcelist`. Reference variable or expression referring to a system resource to be controlled by this `Using` block.|  
-|`statements`|Optional. Block of statements that the `Using` block runs.|  
-|`End Using`|Required. Terminates the definition of the `Using` block and disposes of all the resources that it controls.|  
+|Term|Definition|
+|---|---|
+|`resourcelist`|Required if you do not supply `resourceexpression`. List of one or more system resources that this `Using` block controls, separated by commas.|
+|`resourceexpression`|Required if you do not supply `resourcelist`. Reference variable or expression referring to a system resource to be controlled by this `Using` block.|
+|`statements`|Optional. Block of statements that the `Using` block runs.|
+|`End Using`|Required. Terminates the definition of the `Using` block and disposes of all the resources that it controls.|
 
  Each resource in the `resourcelist` part has the following syntax and parts:
 
@@ -42,14 +42,14 @@ End Using
 
 ## resourcelist Parts
 
-|Term|Definition|  
-|---|---|  
-|`resourcename`|Required. Reference variable that refers to a system resource that the `Using` block controls.|  
-|`New`|Required if the `Using` statement acquires the resource. If you have already acquired the resource, use the second syntax alternative.|  
-|`resourcetype`|Required. The class of the resource. The class must implement the <xref:System.IDisposable> interface.|  
-|`arglist`|Optional. List of arguments you are passing to the constructor to create an instance of `resourcetype`. See [Parameter List](parameter-list.md).|  
-|`resourceexpression`|Required. Variable or expression referring to a system resource satisfying the requirements of `resourcetype`. If you use the second syntax alternative, you must acquire the resource before passing control to the `Using` statement.|  
-  
+|Term|Definition|
+|---|---|
+|`resourcename`|Required. Reference variable that refers to a system resource that the `Using` block controls.|
+|`New`|Required if the `Using` statement acquires the resource. If you have already acquired the resource, use the second syntax alternative.|
+|`resourcetype`|Required. The class of the resource. The class must implement the <xref:System.IDisposable> interface.|
+|`arglist`|Optional. List of arguments you are passing to the constructor to create an instance of `resourcetype`. See [Parameter List](parameter-list.md).|
+|`resourceexpression`|Required. Variable or expression referring to a system resource satisfying the requirements of `resourcetype`. If you use the second syntax alternative, you must acquire the resource before passing control to the `Using` statement.|
+
 ## Remarks
 
  Sometimes your code requires an unmanaged resource, such as a file handle, a COM wrapper, or a SQL connection. A `Using` block guarantees the disposal of one or more such resources when your code is finished with them. This makes them available for other code to use.
@@ -62,7 +62,7 @@ End Using
 
 - *Usage* means accessing the resources and performing actions with them. The statements between `Using` and `End Using` represent the usage of the resources.
 
-- *Disposal* means calling the <xref:System.IDisposable.Dispose%2A> method on the object in `resourcename`. This allows the object to cleanly terminate its resources. The `End Using` statement disposes of the resources under the `Using` block's control.
+- *Disposal* means calling the <xref:System.IDisposable.Dispose*> method on the object in `resourcename`. This allows the object to cleanly terminate its resources. The `End Using` statement disposes of the resources under the `Using` block's control.
 
 ## Behavior
 
@@ -72,7 +72,7 @@ End Using
 
  If you specify more than one system resource in the `Using` statement, the effect is the same as if you nested `Using` blocks one within another.
 
- If `resourcename` is `Nothing`, no call to <xref:System.IDisposable.Dispose%2A> is made, and no exception is thrown.
+ If `resourcename` is `Nothing`, no call to <xref:System.IDisposable.Dispose*> is made, and no exception is thrown.
 
 ## Structured Exception Handling Within a Using Block
 
@@ -87,7 +87,7 @@ Using resource As New resourceType
     ' Insert code to work with resource.
 End Using
 
-' For the acquisition and disposal of resource, the following  
+' For the acquisition and disposal of resource, the following
 ' Try construction is equivalent to the Using block.
 Dim resource As New resourceType
 Try

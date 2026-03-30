@@ -167,7 +167,7 @@ public class MyClass
 }
 ```
 
-For more information about how to use of the `Func<T, T>` object, see <xref:System.Func%602>.
+For more information about how to use of the `Func<T, T>` object, see <xref:System.Func`2>.
 
 <a name="types_of_imports"></a>
 

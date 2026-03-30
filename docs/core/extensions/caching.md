@@ -25,7 +25,7 @@ All of the `Microsoft.Extensions.*` packages come dependency injection (DI) read
 
 ## In-memory caching
 
-In this section, you learn about the [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry> and can be any `object`. The in-memory cache solution is great for apps that run on a single server, where the cached data rents memory in the app's process.
+In this section, you learn about the [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary`2>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry> and can be any `object`. The in-memory cache solution is great for apps that run on a single server, where the cached data rents memory in the app's process.
 
 > [!TIP]
 > For multi-server caching scenarios, consider the [Distributed caching](#distributed-caching) approach as an alternative to in-memory caching.
@@ -40,18 +40,18 @@ The consumer of the cache has control over both sliding and absolute expirations
 
 Setting an expiration causes entries in the cache to be *evicted* if they're not accessed within the expiration time allotment. Consumers have additional options for controlling cache entries, through <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>. Each <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry> is paired with <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>, which exposes expiration eviction functionality with <xref:Microsoft.Extensions.Primitives.IChangeToken>, priority settings with <xref:Microsoft.Extensions.Caching.Memory.CacheItemPriority>, and controlling the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry.Size?displayProperty=nameWithType>. The relevant extension methods are:
 
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.AddExpirationToken%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.RegisterPostEvictionCallback%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSize%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetPriority%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.AddExpirationToken*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.RegisterPostEvictionCallback*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSize*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetPriority*?displayProperty=nameWithType>
 
 ### In-memory cache example
 
-To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose DI functionality:
+To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache*> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose DI functionality:
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="1-7" highlight="6":::
 
-Depending on your .NET workload, you might access the `IMemoryCache` differently, such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
+Depending on your .NET workload, you might access the `IMemoryCache` differently, such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService``1(System.IServiceProvider)> extension method:
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="9-10":::
 
@@ -81,9 +81,9 @@ In the preceding C# code:
 - The `Func<char, Task> asyncFunc` is argued with a lambda.
 - The `MemoryCacheEntryOptions` is instantiated with an absolute expiration relative to now.
 - A post eviction callback is registered.
-- An `AlphabetLetter` object is instantiated, and passed into <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set%2A> along with `letter` and `options`.
+- An `AlphabetLetter` object is instantiated, and passed into <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set*> along with `letter` and `options`.
 - The letter is written to the console as being cached.
-- Finally, a <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is returned.
+- Finally, a <xref:System.Threading.Tasks.Task.Delay*?displayProperty=nameWithType> is returned.
 
 For each letter in the alphabet, a cache entry is written with an expiration and post-eviction callback.
 
@@ -91,7 +91,7 @@ The post-eviction callback writes the details of the value that was evicted to t
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="15-22":::
 
-Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue%2A?displayProperty=nameWithType>:
+Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue*?displayProperty=nameWithType>:
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="56-66":::
 
@@ -101,11 +101,11 @@ If the `cache` contains the `letter` key, and the `value` is an instance of an `
 
 The `IMemoryCache` comes with many convenience-based extension methods, including an asynchronous `GetOrCreateAsync`:
 
-- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Get%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreate%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreateAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.TryGetValue%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Get*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreate*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreateAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.TryGetValue*?displayProperty=nameWithType>
 
 #### Put it all together
 
@@ -178,10 +178,10 @@ Since the absolute expiration (<xref:Microsoft.Extensions.Caching.Memory.MemoryC
 
 ## Worker Service caching
 
-One common strategy for caching data is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independently (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection/service-lifetimes.md).
+One common strategy for caching data is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independently (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection/service-lifetimes.md).
 
 > [!IMPORTANT]
-> The service lifetimes are important to understand. When you call <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> to register all of the in-memory caching services, the services are registered as singletons.
+> The service lifetimes are important to understand. When you call <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache*> to register all of the in-memory caching services, the services are registered as singletons.
 
 ### Photo service scenario
 
@@ -196,11 +196,11 @@ In the following example, you see several services being registered with DI. Eac
 In the preceding C# code:
 
 - The generic host is created with [defaults](generic-host.md#host-builder-settings).
-- In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A>.
-- An `HttpClient` instance is registered for the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `CacheWorker` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `PhotoService` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `CacheSignal<T>` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>.
+- In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache*>.
+- An `HttpClient` instance is registered for the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `CacheWorker` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `PhotoService` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `CacheSignal<T>` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton*>.
 - The `host` is instantiated from the builder and started asynchronously.
 
 The `PhotoService` is responsible for getting photos that match given criteria (or `filter`):
@@ -239,7 +239,7 @@ In the preceding C# code:
   - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
   - The array of photos is placed in the `IMemoryCache` under the `"Photos"` key.
   - The `_cacheSignal.Release()` is called, releasing any consumers who were waiting for the signal.
-  - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
+  - The call to <xref:System.Threading.Tasks.Task.Delay*?displayProperty=nameWithType> is awaited, given the update interval.
   - After delaying for three hours, the cache is again updated.
 
 Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.
@@ -278,7 +278,7 @@ To use `HybridCache`, install the [`Microsoft.Extensions.Caching.Hybrid`](https:
 dotnet add package Microsoft.Extensions.Caching.Hybrid
 ```
 
-Register the `HybridCache` service with DI by calling <xref:Microsoft.Extensions.DependencyInjection.HybridCacheServiceExtensions.AddHybridCache%2A>:
+Register the `HybridCache` service with DI by calling <xref:Microsoft.Extensions.DependencyInjection.HybridCacheServiceExtensions.AddHybridCache*>:
 
 :::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicRegistration" highlight="2":::
 
@@ -288,7 +288,7 @@ The preceding code registers `HybridCache` with default options. You can also co
 
 ### Basic usage
 
-The primary method for interacting with `HybridCache` is <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync%2A>. This method checks the cache for an entry with the specified key and, if not found, calls the factory method to retrieve the data:
+The primary method for interacting with `HybridCache` is <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync*>. This method checks the cache for an entry with the specified key and, if not found, calls the factory method to retrieve the data:
 
 :::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="BasicGetOrCreateAsync":::
 
@@ -330,7 +330,7 @@ You can also invalidate multiple tags at once:
 
 ### Remove cache entries
 
-To remove a specific cache entry by key, use the <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.RemoveAsync%2A> method:
+To remove a specific cache entry by key, use the <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.RemoveAsync*> method:
 
 :::code source="snippets/caching/hybrid-cache/csharp/Program.cs" id="RemoveEntry":::
 
@@ -359,7 +359,7 @@ In some scenarios, a distributed cache is required&mdash;such is the case with m
 The distributed caching abstractions are part of the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) NuGet package, and there's even an `AddDistributedMemoryCache` extension method.
 
 > [!CAUTION]
-> <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddDistributedMemoryCache%2A> should only be used in development or testing scenarios and is **not** a viable production implementation.
+> <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddDistributedMemoryCache*> should only be used in development or testing scenarios and is **not** a viable production implementation.
 
 Consider any of the available implementations of the `IDistributedCache` from the following packages:
 
@@ -375,8 +375,8 @@ The distributed caching APIs are a bit more primitive than their in-memory cachi
 
 To create values in the distributed cache, call one of the set APIs:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set*?displayProperty=nameWithType>
 
 Using the `AlphabetLetter` record from the in-memory cache example, you could serialize the object to JSON and then encode the `string` as a `byte[]`:
 
@@ -388,15 +388,15 @@ Much like in-memory caching, cache entries can have options to help fine-tune th
 
 There are several convenience-based extension methods for creating values. These methods help to avoid encoding `string` representations of objects into a `byte[]`:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetStringAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetStringAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString*?displayProperty=nameWithType>
 
 #### Read values
 
 To read values from the distributed cache, call one of the `Get` APIs:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get*?displayProperty=nameWithType>
 
 :::code source="snippets/caching/distributed/Program.cs" id="Read" highlight="5-6":::
 
@@ -406,15 +406,15 @@ Once a cache entry is read out of the cache, you can get the UTF8 encoded `strin
 
 There are several convenience-based extension methods for reading values. These methods help to avoid decoding `byte[]` into `string` representations of objects:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString*?displayProperty=nameWithType>
 
 #### Update values
 
 There is no way to update the values in the distributed cache with a single API call. Instead, values can have their sliding expirations reset with one of the refresh APIs:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh*?displayProperty=nameWithType>
 
 If the actual value needs to be updated, you must delete the value and then re-add it.
 
@@ -422,8 +422,8 @@ If the actual value needs to be updated, you must delete the value and then re-a
 
 To delete values in the distributed cache, call one of the `Remove` APIs:
 
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove*?displayProperty=nameWithType>
 
 > [!TIP]
 > While there are synchronous versions of these APIs, consider the fact that implementations of distributed caches are reliant on network I/O. For this reason, it's usually preferable to use the asynchronous APIs.

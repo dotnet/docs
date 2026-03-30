@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to find attributes of siblings with a specific name (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> to find every attribute that has a specific name and that also belongs to a sibling of the context node. The article also shows how to use LINQ to XML query to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate*> to find every attribute that has a specific name and that also belongs to a sibling of the context node. The article also shows how to use LINQ to XML query to do the same thing.
 
 ## Example: Find all sibling elements named `Book`, and then find all attributes named `id`
 

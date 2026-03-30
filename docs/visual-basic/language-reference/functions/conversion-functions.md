@@ -17,16 +17,16 @@ ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 
 # Conversion functions (Visual Basic)
 
-- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
-- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Asc*>
+- <xref:Microsoft.VisualBasic.Strings.AscW*>
 - [CBool Function](type-conversion-functions.md)
 - [CByte Function](type-conversion-functions.md)
 - [CChar Function](type-conversion-functions.md)
 - [CDate Function](type-conversion-functions.md)
 - [CDbl Function](type-conversion-functions.md)
 - [CDec Function](type-conversion-functions.md)
-- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
-- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Chr*>
+- <xref:Microsoft.VisualBasic.Strings.ChrW*>
 - [CInt Function](type-conversion-functions.md)
 - [CLng Function](type-conversion-functions.md)
 - [CObj Function](type-conversion-functions.md)
@@ -38,11 +38,11 @@ ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 - [CUInt Function](type-conversion-functions.md)
 - [CULng Function](type-conversion-functions.md)
 - [CUShort Function](type-conversion-functions.md)
-- <xref:Microsoft.VisualBasic.Strings.Format%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Str%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- <xref:Microsoft.VisualBasic.Strings.Format*>
+- <xref:Microsoft.VisualBasic.Conversion.Hex*>
+- <xref:Microsoft.VisualBasic.Conversion.Oct*>
+- <xref:Microsoft.VisualBasic.Conversion.Str*>
+- <xref:Microsoft.VisualBasic.Conversion.Val*>
 
 ## See also
 

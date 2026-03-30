@@ -29,7 +29,7 @@ author: "pkulikov"
 
 The <xref:System.Threading.Timer?displayProperty=nameWithType> class enables you to continuously call a delegate at specified time intervals. You can also use this class to schedule a single call to a delegate in a specified time interval. The delegate is executed on a <xref:System.Threading.ThreadPool> thread.
 
-When you create a <xref:System.Threading.Timer?displayProperty=nameWithType> object, you specify a <xref:System.Threading.TimerCallback> delegate that defines the callback method, an optional state object that is passed to the callback, the amount of time to delay before the first invocation of the callback, and the time interval between callback invocations. To cancel a pending timer, call the <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType> method.
+When you create a <xref:System.Threading.Timer?displayProperty=nameWithType> object, you specify a <xref:System.Threading.TimerCallback> delegate that defines the callback method, an optional state object that is passed to the callback, the amount of time to delay before the first invocation of the callback, and the time interval between callback invocations. To cancel a pending timer, call the <xref:System.Threading.Timer.Dispose*?displayProperty=nameWithType> method.
 
 The following example creates a timer that calls the provided delegate for the first time after one second (1000 milliseconds) and then calls it every two seconds. The state object in the example is used to count how many times the delegate is called. The timer is stopped when the delegate has been called at least 10 times.
 [!code-csharp[System.Threading.Timer#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Timer/CS/source2.cs#2)]
@@ -47,11 +47,11 @@ For more information and examples, see <xref:System.Timers.Timer?displayProperty
 
 ## The System.Threading.PeriodicTimer class
 
-The <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> class enables you to await individual ticks of a specified interval, performing work after calling <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A?displayProperty=nameWithType>.
+The <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> class enables you to await individual ticks of a specified interval, performing work after calling <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync*?displayProperty=nameWithType>.
 
-When you create a <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> object, you specify a <xref:System.TimeSpan> that determines the length of time between each tick of the timer. Instead of passing a callback or setting an event handler as in the previous timer classes, you perform work directly in scope, awaiting <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> to advance the timer by the specified interval.
+When you create a <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> object, you specify a <xref:System.TimeSpan> that determines the length of time between each tick of the timer. Instead of passing a callback or setting an event handler as in the previous timer classes, you perform work directly in scope, awaiting <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync*> to advance the timer by the specified interval.
 
-The <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> method returns a [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask`1); `true` upon successful firing of the timer, and `false` when the timer has been canceled by calling <xref:System.Threading.PeriodicTimer.Dispose%2A?displayProperty=nameWithType>. <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> optionally accepts a <xref:System.Threading.CancellationToken>, which results in a <xref:System.Threading.Tasks.TaskCanceledException> when a cancellation has been requested.
+The <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync*> method returns a [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask`1); `true` upon successful firing of the timer, and `false` when the timer has been canceled by calling <xref:System.Threading.PeriodicTimer.Dispose*?displayProperty=nameWithType>. <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync*> optionally accepts a <xref:System.Threading.CancellationToken>, which results in a <xref:System.Threading.Tasks.TaskCanceledException> when a cancellation has been requested.
 
 For more information, see <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>.
 

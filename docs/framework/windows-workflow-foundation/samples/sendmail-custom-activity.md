@@ -15,16 +15,16 @@ The [SendMail sample](https://github.com/dotnet/samples/tree/main/framework/wind
 |Host|String|Address of the SMTP server host.|
 |Port|String|Port of the SMTP service in the host.|
 |EnableSsl|bool|Specifies whether the <xref:System.Net.Mail.SmtpClient> uses Secure Sockets Layer (SSL) to encrypt the connection.|
-|UserName|String|Username to set up the credentials to authenticate the sender <xref:System.Net.Mail.SmtpClient.Credentials%2A> property.|
-|Password|String|Password to set up the credentials to authenticate the sender <xref:System.Net.Mail.SmtpClient.Credentials%2A> property.|
-|Subject|<xref:System.Activities.InArgument%601>\<string>|Subject of the message.|
-|Body|<xref:System.Activities.InArgument%601>\<string>|Body of the message.|
-|Attachments|<xref:System.Activities.InArgument%601>\<string>|Attachment collection used to store data attached to this email message.|
+|UserName|String|Username to set up the credentials to authenticate the sender <xref:System.Net.Mail.SmtpClient.Credentials> property.|
+|Password|String|Password to set up the credentials to authenticate the sender <xref:System.Net.Mail.SmtpClient.Credentials> property.|
+|Subject|<xref:System.Activities.InArgument`1>\<string>|Subject of the message.|
+|Body|<xref:System.Activities.InArgument`1>\<string>|Body of the message.|
+|Attachments|<xref:System.Activities.InArgument`1>\<string>|Attachment collection used to store data attached to this email message.|
 |From|<xref:System.Net.Mail.MailAddress>|From address for this email message.|
-|To|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the recipients of this email message.|
-|CC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the carbon copy (CC) recipients for this email message.|
-|BCC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the blind carbon copy (BCC) recipients for this email message.|
-|Tokens|<xref:System.Activities.InArgument%601><IDictionary\<string, string>>|Tokens to replace in the body. This feature allows users to specify some values in the body than can be replaced later by the tokens provided using this property.|
+|To|<xref:System.Activities.InArgument`1>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the recipients of this email message.|
+|CC|<xref:System.Activities.InArgument`1>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the carbon copy (CC) recipients for this email message.|
+|BCC|<xref:System.Activities.InArgument`1>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the blind carbon copy (BCC) recipients for this email message.|
+|Tokens|<xref:System.Activities.InArgument`1><IDictionary\<string, string>>|Tokens to replace in the body. This feature allows users to specify some values in the body than can be replaced later by the tokens provided using this property.|
 |BodyTemplateFilePath|String|Path of a template for the body. The `SendMail` activity copies the contents of this file to its body property.<br /><br /> The template can contain tokens that are replaced by the contents of the tokens property.|
 |TestMailTo|<xref:System.Net.Mail.MailAddress>|When this property is set, all emails are sent to the address specified in it.<br /><br /> This property is intended to be used when testing workflows. For example, when you want to make sure that all emails are sent without sending them to the actual recipients.|
 |TestDropPath|String|When this property is set, all emails are also saved in the specified file.<br /><br /> This property is intended to be used when you are testing or debugging workflows, to make sure that the format and contents of the outgoing emails is appropriate.|

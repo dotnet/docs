@@ -13,11 +13,11 @@ ai-usage: ai-assisted
 
 Unloadability is supported through <xref:System.Runtime.Loader.AssemblyLoadContext>. You can load a set of assemblies into a collectible `AssemblyLoadContext`, execute methods in them or just inspect them using reflection, and finally unload the `AssemblyLoadContext`. That unloads the assemblies loaded into the `AssemblyLoadContext`.
 
-There's one noteworthy difference between the unloading using `AssemblyLoadContext` and using AppDomains. With AppDomains, the unloading is forced. At unload time, all threads running in the target AppDomain are aborted, managed COM objects created in the target AppDomain are destroyed, and so on. With `AssemblyLoadContext`, the unload is "cooperative". Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Unload%2A?displayProperty=nameWithType> method just initiates the unloading. The unloading finishes after:
+There's one noteworthy difference between the unloading using `AssemblyLoadContext` and using AppDomains. With AppDomains, the unloading is forced. At unload time, all threads running in the target AppDomain are aborted, managed COM objects created in the target AppDomain are destroyed, and so on. With `AssemblyLoadContext`, the unload is "cooperative". Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Unload*?displayProperty=nameWithType> method just initiates the unloading. The unloading finishes after:
 
 - No threads have methods from the assemblies loaded into the `AssemblyLoadContext` on their call stacks.
 - None of the types from the assemblies loaded into the `AssemblyLoadContext`, instances of those types, and the assemblies themselves are referenced by:
-  - References outside of the `AssemblyLoadContext`, except for weak references (<xref:System.WeakReference> or <xref:System.WeakReference%601>).
+  - References outside of the `AssemblyLoadContext`, except for weak references (<xref:System.WeakReference> or <xref:System.WeakReference`1>).
   - Strong garbage collector (GC) handles ([GCHandleType.Normal](xref:System.Runtime.InteropServices.GCHandleType.Normal) or [GCHandleType.Pinned](xref:System.Runtime.InteropServices.GCHandleType.Pinned)) from both inside and outside of the `AssemblyLoadContext`.
 
 ## Use collectible AssemblyLoadContext
@@ -26,7 +26,7 @@ This section contains a detailed step-by-step tutorial that shows a simple way t
 
 ### Create a collectible AssemblyLoadContext
 
-Derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and override its <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
+Derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and override its <xref:System.Runtime.Loader.AssemblyLoadContext.Load*?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
 
 The following code is an example of the simplest custom `AssemblyLoadContext`:
 

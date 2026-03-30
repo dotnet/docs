@@ -22,7 +22,7 @@ All programs acquire one or more system resources, such as memory, system handle
 
  Unfortunately, managed memory is just one of many types of system resources. Resources other than managed memory still need to be released explicitly and are referred to as unmanaged resources. The GC was specifically not designed to manage such unmanaged resources, which means that the responsibility for managing unmanaged resources lies in the hands of the developers.
 
- The CLR provides some help in releasing unmanaged resources. <xref:System.Object?displayProperty=nameWithType> declares a virtual method <xref:System.Object.Finalize%2A> (also called the finalizer) that is called by the GC before the object’s memory is reclaimed by the GC and can be overridden to release unmanaged resources. Types that override the finalizer are referred to as finalizable types.
+ The CLR provides some help in releasing unmanaged resources. <xref:System.Object?displayProperty=nameWithType> declares a virtual method <xref:System.Object.Finalize*> (also called the finalizer) that is called by the GC before the object’s memory is reclaimed by the GC and can be overridden to release unmanaged resources. Types that override the finalizer are referred to as finalizable types.
 
  Although finalizers are effective in some cleanup scenarios, they have two significant drawbacks:
 
@@ -32,11 +32,11 @@ All programs acquire one or more system resources, such as memory, system handle
 
  Therefore, relying exclusively on finalizers might not be appropriate in many scenarios when it is important to reclaim unmanaged resources as quickly as possible, when dealing with scarce resources, or in highly performant scenarios in which the added GC overhead of finalization is unacceptable.
 
- The Framework provides the <xref:System.IDisposable?displayProperty=nameWithType> interface that should be implemented to provide the developer a manual way to release unmanaged resources as soon as they are not needed. It also provides the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method that can tell the GC that an object was manually disposed of and does not need to be finalized anymore, in which case the object’s memory can be reclaimed earlier. Types that implement the `IDisposable` interface are referred to as disposable types.
+ The Framework provides the <xref:System.IDisposable?displayProperty=nameWithType> interface that should be implemented to provide the developer a manual way to release unmanaged resources as soon as they are not needed. It also provides the <xref:System.GC.SuppressFinalize*?displayProperty=nameWithType> method that can tell the GC that an object was manually disposed of and does not need to be finalized anymore, in which case the object’s memory can be reclaimed earlier. Types that implement the `IDisposable` interface are referred to as disposable types.
 
  The Dispose Pattern is intended to standardize the usage and implementation of finalizers and the `IDisposable` interface.
 
- The main motivation for the pattern is to reduce the complexity of the implementation of the <xref:System.Object.Finalize%2A> and the <xref:System.IDisposable.Dispose%2A> methods. The complexity stems from the fact that the methods share some but not all code paths (the differences are described later in the chapter). In addition, there are historical reasons for some elements of the pattern related to the evolution of language support for deterministic resource management.
+ The main motivation for the pattern is to reduce the complexity of the implementation of the <xref:System.Object.Finalize*> and the <xref:System.IDisposable.Dispose*> methods. The complexity stems from the fact that the methods share some but not all code paths (the differences are described later in the chapter). In addition, there are historical reasons for some elements of the pattern related to the evolution of language support for deterministic resource management.
 
  **✓ DO** implement the Basic Dispose Pattern on types containing instances of disposable types. See the [Basic Dispose Pattern](#basic-dispose-pattern) section for details on the basic pattern.
 
@@ -278,8 +278,8 @@ public class ComplexResourceHolder : IDisposable {
 
 ## See also
 
-- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>
-- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>
+- <xref:System.IDisposable.Dispose*?displayProperty=nameWithType>
+- <xref:System.Object.Finalize*?displayProperty=nameWithType>
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)
 - [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

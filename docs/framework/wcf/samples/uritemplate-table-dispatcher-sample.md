@@ -12,7 +12,7 @@ This sample demonstrates the following key concepts for the `UriTemplateTable` c
 
 - Associating delegates with `UriTemplates` in a `UriTemplateTable`.
 
-- Using <xref:System.UriTemplateTable.MatchSingle%2A> to obtain the correct handler delegate for a particular URI.
+- Using <xref:System.UriTemplateTable.MatchSingle*> to obtain the correct handler delegate for a particular URI.
 
 - Invoking the handler delegate to process the request.
 

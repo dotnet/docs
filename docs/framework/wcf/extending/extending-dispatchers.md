@@ -10,7 +10,7 @@ ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.
 
-This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](extensible-objects.md).
+This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject`1> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](extensible-objects.md).
 
 ## Dispatchers
 
@@ -32,7 +32,7 @@ All properties that control the lifetime and behavior of a channel session are a
 
 ### Endpoint Dispatchers
 
-The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter> and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property. If two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects can accept a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority> property value determines the higher priority endpoint.
+The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter> and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter> property. If two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects can accept a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority> property value determines the higher priority endpoint.
 
 Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to acquire the two main service model extension points – the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes – that you can use to customize the processing of the dispatcher. The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class allows users to intercept and extend the dispatcher at the contract scope (that is, for all messages in a contract). The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class allows users to intercept and extend the dispatcher at an operation scope (that is, for all messages in an operation).
 
@@ -73,33 +73,33 @@ Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class either to mo
 
 - The transformation of objects received from the response to a service operation invocation into outbound messages.
 
-The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> enables you to intercept and extend the channel or endpoint dispatcher for all messages across a particular contract, even when a message is not recognized. When a message arrives that does not match any declared in the contract it is dispatched to the operation returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation%2A> property. To intercept or extend across all messages for a particular operation, see the <xref:System.ServiceModel.Dispatcher.DispatchOperation> class.
+The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> enables you to intercept and extend the channel or endpoint dispatcher for all messages across a particular contract, even when a message is not recognized. When a message arrives that does not match any declared in the contract it is dispatched to the operation returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation> property. To intercept or extend across all messages for a particular operation, see the <xref:System.ServiceModel.Dispatcher.DispatchOperation> class.
 
 There are four main areas of dispatcher extensibility exposed by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class:
 
-1. Channel components use the properties of the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and those of the associated channel dispatcher returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher%2A> property to customize how the channel dispatcher accepts and closes channels. This category includes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers%2A> properties.
+1. Channel components use the properties of the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and those of the associated channel dispatcher returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher> property to customize how the channel dispatcher accepts and closes channels. This category includes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers*> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers> properties.
 
-2. Message components are customized for each message processed. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A>, and the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> properties.
+2. Message components are customized for each message processed. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors*>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector*>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations*>, and the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers> properties.
 
-3. Instance components customize the creation, lifetime, and disposal of instances of the service type. For more information about service object lifetimes, see the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers%2A> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> properties.
+3. Instance components customize the creation, lifetime, and disposal of instances of the service type. For more information about service object lifetimes, see the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode> property. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers*> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider> properties.
 
 4. Security-related components can use the following properties:
 
-    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> indicates where audit events are written.
+    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation*> indicates where audit events are written.
 
-    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations%2A> controls whether the service attempts to impersonate using the credentials provided by the incoming message.
+    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations*> controls whether the service attempts to impersonate using the credentials provided by the incoming message.
 
-    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageAuthenticationAuditLevel%2A> controls whether successful message authentication events are written to the event log specified by <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A>.
+    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageAuthenticationAuditLevel*> controls whether successful message authentication events are written to the event log specified by <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation*>.
 
-    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode%2A> controls how the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is set.
+    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode*> controls how the <xref:System.Threading.Thread.CurrentPrincipal> property is set.
 
-    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> specifies how the auditing of authorization events is performed.
+    - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel*> specifies how the auditing of authorization events is performed.
 
     - <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SuppressAuditFailure> specifies whether to suppress non-critical exceptions that occur during the logging process.
 
 Typically, custom extension objects are assigned to a <xref:System.ServiceModel.Dispatcher.DispatchRuntime> property or inserted into a collection by a service behavior (an object that implements <xref:System.ServiceModel.Description.IServiceBehavior>), a contract behavior (an object that implements <xref:System.ServiceModel.Description.IContractBehavior>), or an endpoint behavior (an object that implements <xref:System.ServiceModel.Description.IEndpointBehavior>). Then the installing behavior object is added to the appropriate collection of behaviors either programmatically or by implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> object to enable the behavior to be inserted using an application configuration file.
 
-Duplex clients (clients that implement a callback contract specified by a duplex service) also have a <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object that can be accessed using the <xref:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime%2A> property.
+Duplex clients (clients that implement a callback contract specified by a duplex service) also have a <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object that can be accessed using the <xref:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime> property.
 
 ### Using the DispatchOperation Class
 
@@ -107,27 +107,27 @@ The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class is the locatio
 
 Install <xref:System.ServiceModel.Dispatcher.DispatchOperation> modifications using a custom service behavior object.
 
-Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.DispatchOperation> object that represents a particular service operation.
+Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations> property to locate the <xref:System.ServiceModel.Dispatcher.DispatchOperation> object that represents a particular service operation.
 
 The following properties control runtime execution at the operation level:
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Action%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReplyAction%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsOneWay>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsTerminating>, and <xref:System.ServiceModel.Dispatcher.DispatchOperation.Name%2A> properties obtain the respective values for the operation.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Action*>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReplyAction*>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos*>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsOneWay>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsTerminating>, and <xref:System.ServiceModel.Dispatcher.DispatchOperation.Name> properties obtain the respective values for the operation.
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionAutoComplete%2A> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> specify transaction behavior.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionAutoComplete*> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired*> specify transaction behavior.
 
 - The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReleaseInstanceBeforeCall> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReleaseInstanceAfterCall> properties control the lifetime of the user-defined service object relative to the <xref:System.ServiceModel.InstanceContext>.
 
 - The <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply>, and the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter> properties enable explicit control over the conversion from messages to objects and objects to messages.
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property specifies the operation impersonation level.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation> property specifies the operation impersonation level.
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.CallContextInitializers%2A> property inserts custom call context extensions for the operation.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.CallContextInitializers> property inserts custom call context extensions for the operation.
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.AutoDisposeParameters%2A> property controls when parameter objects are destroyed.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.AutoDisposeParameters> property controls when parameter objects are destroyed.
 
 - The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Invoker> property to insert a custom invoker object.
 
-- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.
+- The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.
 
 ## See also
 

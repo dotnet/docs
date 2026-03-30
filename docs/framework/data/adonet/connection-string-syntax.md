@@ -86,7 +86,7 @@ To connect to a named instance of SQL Server, use the *server name\instance name
 "Data Source=MySqlServer\\MSSQL1;"
 ```
 
-You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A> property of the `SqlConnectionStringBuilder` to the instance name when building a connection string. The <xref:System.Data.SqlClient.SqlConnection.DataSource%2A> property of a <xref:System.Data.SqlClient.SqlConnection> object is read-only.
+You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource> property of the `SqlConnectionStringBuilder` to the instance name when building a connection string. The <xref:System.Data.SqlClient.SqlConnection.DataSource> property of a <xref:System.Data.SqlClient.SqlConnection> object is read-only.
 
 ### Type system version changes
 

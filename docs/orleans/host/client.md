@@ -62,7 +62,7 @@ Before you can use a grain client to make calls to grains hosted in an Orleans c
 
 :::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
-Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
+Provide configuration via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> and several supplemental option classes containing a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Consider the following example of a client configuration:
 
@@ -140,7 +140,7 @@ Finally, you need to call the `Connect()` method on the constructed client objec
 
 ### Make calls to grains
 
-Making calls to grains from a client is no different from [making such calls from within grain code](../grains/index.md). Use the same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method (where `T` is the target grain interface) in both cases [to obtain grain references](../grains/grain-references.md). The difference lies in which factory object invokes <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do this through the connected client object, as the following example shows:
+Making calls to grains from a client is no different from [making such calls from within grain code](../grains/index.md). Use the same <xref:Orleans.IGrainFactory.GetGrain``1(System.Type,System.Guid)?displayProperty=nameWithType> method (where `T` is the target grain interface) in both cases [to obtain grain references](../grains/grain-references.md). The difference lies in which factory object invokes <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType>. In client code, you do this through the connected client object, as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -149,7 +149,7 @@ Task joinGameTask = player.JoinGame(game)
 await joinGameTask;
 ```
 
-A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned <xref:System.Threading.Tasks.Task> without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
+A call to a grain method returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1>, as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned <xref:System.Threading.Tasks.Task> without blocking the thread, or in some cases, use the `Wait()` method to block the current thread of execution.
 
 The major difference between making calls to grains from client code and from within another grain is the single-threaded execution model of grains. The Orleans runtime constrains grains to be single-threaded, while clients can be multi-threaded. Orleans doesn't provide any such guarantee on the client-side, so it's up to the client to manage its concurrency using appropriate synchronization constructs for its environment—locks, events, `Tasks`, etc.
 

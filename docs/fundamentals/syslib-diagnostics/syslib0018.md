@@ -9,7 +9,7 @@ f1_keywords:
 
 The following methods are marked as obsolete, starting in .NET 6. Calling them in code generates warning `SYSLIB0018` at compile time. These methods throw a <xref:System.PlatformNotSupportedException> at runtime.
 
-- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad*?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType>
 - <xref:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)?displayProperty=nameWithType>
 

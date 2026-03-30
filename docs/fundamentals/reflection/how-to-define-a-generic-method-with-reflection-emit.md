@@ -27,7 +27,7 @@ The third procedure shows how to invoke the generic method.
 
 ## Define a generic method
 
-1. Before beginning, it is useful to look at how the generic method appears when written using a high-level language. The following code is included in the example code for this article, along with code to call the generic method. The method has two type parameters, `TInput` and `TOutput`, the second of which must be a reference type (`class`), must have a parameterless constructor (`new`), and must implement `ICollection<TInput>`. This interface constraint ensures that the <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType> method can be used to add elements to the `TOutput` collection that the method creates. The method has one formal parameter, `input`, which is an array of `TInput`. The method creates a collection of type `TOutput` and copies the elements of `input` to the collection.
+1. Before beginning, it is useful to look at how the generic method appears when written using a high-level language. The following code is included in the example code for this article, along with code to call the generic method. The method has two type parameters, `TInput` and `TOutput`, the second of which must be a reference type (`class`), must have a parameterless constructor (`new`), and must implement `ICollection<TInput>`. This interface constraint ensures that the <xref:System.Collections.Generic.ICollection`1.Add*?displayProperty=nameWithType> method can be used to add elements to the `TOutput` collection that the method creates. The method has one formal parameter, `input`, which is an array of `TInput`. The method creates a collection of type `TOutput` and copies the elements of `input` to the collection.
 
    [!code-csharp[GenericMethodHowTo#20](./snippets/csharp/construct-generic-method/source.cs#20)]
    [!code-vb[GenericMethodHowTo#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#20)]
@@ -42,32 +42,32 @@ The third procedure shows how to invoke the generic method.
    [!code-csharp[GenericMethodHowTo#3](./snippets/csharp/construct-generic-method/source.cs#3)]
    [!code-vb[GenericMethodHowTo#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#3)]
 
-1. Define the generic method. If the types of a generic method's formal parameters are specified by generic type parameters of the generic method, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%29> method overload to define the method. The generic type parameters of the method are not yet defined, so you cannot specify the types of the method's formal parameters in the call to <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>. In this example, the method is named `Factory`. The method is public and `static` (`Shared` in Visual Basic).
+1. Define the generic method. If the types of a generic method's formal parameters are specified by generic type parameters of the generic method, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%29> method overload to define the method. The generic type parameters of the method are not yet defined, so you cannot specify the types of the method's formal parameters in the call to <xref:System.Reflection.Emit.TypeBuilder.DefineMethod*>. In this example, the method is named `Factory`. The method is public and `static` (`Shared` in Visual Basic).
 
    [!code-csharp[GenericMethodHowTo#4](./snippets/csharp/construct-generic-method/source.cs#4)]
    [!code-vb[GenericMethodHowTo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#4)]
 
-1. Define the generic type parameters of `DemoMethod` by passing an array of strings containing the names of the parameters to the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=nameWithType> method. This makes the method a generic method. The following code makes `Factory` a generic method with type parameters `TInput` and `TOutput`. To make the code easier to read, variables with these names are created to hold the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects representing the two type parameters.
+1. Define the generic type parameters of `DemoMethod` by passing an array of strings containing the names of the parameters to the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters*?displayProperty=nameWithType> method. This makes the method a generic method. The following code makes `Factory` a generic method with type parameters `TInput` and `TOutput`. To make the code easier to read, variables with these names are created to hold the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects representing the two type parameters.
 
    [!code-csharp[GenericMethodHowTo#5](./snippets/csharp/construct-generic-method/source.cs#5)]
    [!code-vb[GenericMethodHowTo#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#5)]
 
-1. Optionally add special constraints to the type parameters. Special constraints are added using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method. In this example, `TOutput` is constrained to be a reference type and to have a parameterless constructor.
+1. Optionally add special constraints to the type parameters. Special constraints are added using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes*> method. In this example, `TOutput` is constrained to be a reference type and to have a parameterless constructor.
 
    [!code-csharp[GenericMethodHowTo#6](./snippets/csharp/construct-generic-method/source.cs#6)]
    [!code-vb[GenericMethodHowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#6)]
 
-1. Optionally add class and interface constraints to the type parameters. In this example, type parameter `TOutput` is constrained to types that implement the `ICollection(Of TInput)` (`ICollection<TInput>` in C#) interface. This ensures that the <xref:System.Collections.Generic.ICollection%601.Add%2A> method can be used to add elements.
+1. Optionally add class and interface constraints to the type parameters. In this example, type parameter `TOutput` is constrained to types that implement the `ICollection(Of TInput)` (`ICollection<TInput>` in C#) interface. This ensures that the <xref:System.Collections.Generic.ICollection`1.Add*> method can be used to add elements.
 
    [!code-csharp[GenericMethodHowTo#7](./snippets/csharp/construct-generic-method/source.cs#7)]
    [!code-vb[GenericMethodHowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#7)]
 
-1. Define the formal parameters of the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> method. In this example, the `Factory` method has one parameter, an array of `TInput`. This type is created by calling the <xref:System.Type.MakeArrayType%2A> method on the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> that represents `TInput`. The argument of <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> is an array of <xref:System.Type> objects.
+1. Define the formal parameters of the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetParameters*> method. In this example, the `Factory` method has one parameter, an array of `TInput`. This type is created by calling the <xref:System.Type.MakeArrayType*> method on the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> that represents `TInput`. The argument of <xref:System.Reflection.Emit.MethodBuilder.SetParameters*> is an array of <xref:System.Type> objects.
 
    [!code-csharp[GenericMethodHowTo#8](./snippets/csharp/construct-generic-method/source.cs#8)]
    [!code-vb[GenericMethodHowTo#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#8)]
 
-1. Define the return type for the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetReturnType%2A> method. In this example, an instance of `TOutput` is returned.
+1. Define the return type for the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetReturnType*> method. In this example, an instance of `TOutput` is returned.
 
    [!code-csharp[GenericMethodHowTo#9](./snippets/csharp/construct-generic-method/source.cs#9)]
    [!code-vb[GenericMethodHowTo#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#9)]
@@ -84,14 +84,14 @@ The third procedure shows how to invoke the generic method.
 
 ## Emit the method body
 
-1. Get a code generator and declare local variables and labels. The <xref:System.Reflection.Emit.ILGenerator.DeclareLocal%2A> method is used to declare local variables. The `Factory` method has four local variables: `retVal` to hold the new `TOutput` that is returned by the method, `ic` to hold the `TOutput` when it is cast to `ICollection<TInput>`, `input` to hold the input array of `TInput` objects, and `index` to iterate through the array. The method also has two labels, one to enter the loop (`enterLoop`) and one for the top of the loop (`loopAgain`), defined using the <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A> method.
+1. Get a code generator and declare local variables and labels. The <xref:System.Reflection.Emit.ILGenerator.DeclareLocal*> method is used to declare local variables. The `Factory` method has four local variables: `retVal` to hold the new `TOutput` that is returned by the method, `ic` to hold the `TOutput` when it is cast to `ICollection<TInput>`, `input` to hold the input array of `TInput` objects, and `index` to iterate through the array. The method also has two labels, one to enter the loop (`enterLoop`) and one for the top of the loop (`loopAgain`), defined using the <xref:System.Reflection.Emit.ILGenerator.DefineLabel*> method.
 
    The first thing the method does is to load its argument using <xref:System.Reflection.Emit.OpCodes.Ldarg_0> opcode and to store it in the local variable `input` using <xref:System.Reflection.Emit.OpCodes.Stloc_S> opcode.
 
    [!code-csharp[GenericMethodHowTo#10](./snippets/csharp/construct-generic-method/source.cs#10)]
    [!code-vb[GenericMethodHowTo#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#10)]
 
-2. Emit code to create an instance of `TOutput`, using the generic method overload of the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method. Using this overload requires the specified type to have a parameterless constructor, which is the reason for adding that constraint to `TOutput`. Create the constructed generic method by passing `TOutput` to <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>. After emitting code to call the method, emit code to store it in the local variable `retVal` using <xref:System.Reflection.Emit.OpCodes.Stloc_S>
+2. Emit code to create an instance of `TOutput`, using the generic method overload of the <xref:System.Activator.CreateInstance*?displayProperty=nameWithType> method. Using this overload requires the specified type to have a parameterless constructor, which is the reason for adding that constraint to `TOutput`. Create the constructed generic method by passing `TOutput` to <xref:System.Reflection.MethodInfo.MakeGenericMethod*>. After emitting code to call the method, emit code to store it in the local variable `retVal` using <xref:System.Reflection.Emit.OpCodes.Stloc_S>
 
    [!code-csharp[GenericMethodHowTo#11](./snippets/csharp/construct-generic-method/source.cs#11)]
    [!code-vb[GenericMethodHowTo#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#11)]
@@ -101,7 +101,7 @@ The third procedure shows how to invoke the generic method.
    [!code-csharp[GenericMethodHowTo#31](./snippets/csharp/construct-generic-method/source.cs#31)]
    [!code-vb[GenericMethodHowTo#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#31)]
 
-4. Get a <xref:System.Reflection.MethodInfo> representing the <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType> method. The method is acting on an `ICollection<TInput>`, so it's necessary to get the `Add` method specific to that constructed type. You cannot use the <xref:System.Type.GetMethod%2A> method to get this <xref:System.Reflection.MethodInfo> directly from `icollOfTInput`, because <xref:System.Type.GetMethod%2A> is not supported on a type that has been constructed with a <xref:System.Reflection.Emit.GenericTypeParameterBuilder>. Instead, call <xref:System.Type.GetMethod%2A> on `icoll`, which contains the generic type definition for the <xref:System.Collections.Generic.ICollection%601> generic interface. Then use the <xref:System.Reflection.Emit.TypeBuilder.GetMethod%28System.Type%2CSystem.Reflection.MethodInfo%29>`static` method to produce the <xref:System.Reflection.MethodInfo> for the constructed type. The following code demonstrates this.
+4. Get a <xref:System.Reflection.MethodInfo> representing the <xref:System.Collections.Generic.ICollection`1.Add*?displayProperty=nameWithType> method. The method is acting on an `ICollection<TInput>`, so it's necessary to get the `Add` method specific to that constructed type. You cannot use the <xref:System.Type.GetMethod*> method to get this <xref:System.Reflection.MethodInfo> directly from `icollOfTInput`, because <xref:System.Type.GetMethod*> is not supported on a type that has been constructed with a <xref:System.Reflection.Emit.GenericTypeParameterBuilder>. Instead, call <xref:System.Type.GetMethod*> on `icoll`, which contains the generic type definition for the <xref:System.Collections.Generic.ICollection`1> generic interface. Then use the <xref:System.Reflection.Emit.TypeBuilder.GetMethod%28System.Type%2CSystem.Reflection.MethodInfo%29>`static` method to produce the <xref:System.Reflection.MethodInfo> for the constructed type. The following code demonstrates this.
 
    [!code-csharp[GenericMethodHowTo#12](./snippets/csharp/construct-generic-method/source.cs#12)]
    [!code-vb[GenericMethodHowTo#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#12)]
@@ -111,26 +111,26 @@ The third procedure shows how to invoke the generic method.
    [!code-csharp[GenericMethodHowTo#32](./snippets/csharp/construct-generic-method/source.cs#32)]
    [!code-vb[GenericMethodHowTo#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#32)]
 
-6. Emit code for the loop. The first step is to mark the top of the loop, by calling <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A> with the `loopAgain` label. Branch statements that use the label will now branch to this point in the code. The next step is to push the `TOutput` object, cast to `ICollection(Of TInput)`, onto the stack. It is not needed immediately, but needs to be in position for calling the `Add` method. Next the input array is pushed onto the stack, then the `index` variable containing the current index into the array. The <xref:System.Reflection.Emit.OpCodes.Ldelem> opcode pops the index and the array off the stack and pushes the indexed array element onto the stack. The stack is now ready for the call to the <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType> method, which pops the collection and the new element off the stack and adds the element to the collection.
+6. Emit code for the loop. The first step is to mark the top of the loop, by calling <xref:System.Reflection.Emit.ILGenerator.MarkLabel*> with the `loopAgain` label. Branch statements that use the label will now branch to this point in the code. The next step is to push the `TOutput` object, cast to `ICollection(Of TInput)`, onto the stack. It is not needed immediately, but needs to be in position for calling the `Add` method. Next the input array is pushed onto the stack, then the `index` variable containing the current index into the array. The <xref:System.Reflection.Emit.OpCodes.Ldelem> opcode pops the index and the array off the stack and pushes the indexed array element onto the stack. The stack is now ready for the call to the <xref:System.Collections.Generic.ICollection`1.Add*?displayProperty=nameWithType> method, which pops the collection and the new element off the stack and adds the element to the collection.
 
-   The rest of the code in the loop increments the index and tests to see whether the loop is finished: The index and a 32-bit integer 1 are pushed onto the stack and added, leaving the sum on the stack; the sum is stored in `index`. <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A> is called to set this point as the entry point for the loop. The index is loaded again. The input array is pushed on the stack, and <xref:System.Reflection.Emit.OpCodes.Ldlen> is emitted to get its length. The index and the length are now on the stack, and <xref:System.Reflection.Emit.OpCodes.Clt> is emitted to compare them. If the index is less than the length, <xref:System.Reflection.Emit.OpCodes.Brtrue_S> branches back to the beginning of the loop.
+   The rest of the code in the loop increments the index and tests to see whether the loop is finished: The index and a 32-bit integer 1 are pushed onto the stack and added, leaving the sum on the stack; the sum is stored in `index`. <xref:System.Reflection.Emit.ILGenerator.MarkLabel*> is called to set this point as the entry point for the loop. The index is loaded again. The input array is pushed on the stack, and <xref:System.Reflection.Emit.OpCodes.Ldlen> is emitted to get its length. The index and the length are now on the stack, and <xref:System.Reflection.Emit.OpCodes.Clt> is emitted to compare them. If the index is less than the length, <xref:System.Reflection.Emit.OpCodes.Brtrue_S> branches back to the beginning of the loop.
 
    [!code-csharp[GenericMethodHowTo#13](./snippets/csharp/construct-generic-method/source.cs#13)]
    [!code-vb[GenericMethodHowTo#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#13)]
 
-7. Emit code to push the `TOutput` object onto the stack and return from the method. The local variables `retVal` and `ic` both contain references to the new `TOutput`; `ic` is used only to access the <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType> method.
+7. Emit code to push the `TOutput` object onto the stack and return from the method. The local variables `retVal` and `ic` both contain references to the new `TOutput`; `ic` is used only to access the <xref:System.Collections.Generic.ICollection`1.Add*?displayProperty=nameWithType> method.
 
    [!code-csharp[GenericMethodHowTo#33](./snippets/csharp/construct-generic-method/source.cs#33)]
    [!code-vb[GenericMethodHowTo#33](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#33)]
 
 ## Invoke the generic method
 
-1. `Factory` is a generic method definition. In order to invoke it, you must assign types to its generic type parameters. Use the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method to do this. The following code creates a constructed generic method, specifying <xref:System.String> for `TInput` and `List(Of String)` (`List<string>` in C#) for `TOutput`, and displays a string representation of the method.
+1. `Factory` is a generic method definition. In order to invoke it, you must assign types to its generic type parameters. Use the <xref:System.Reflection.MethodInfo.MakeGenericMethod*> method to do this. The following code creates a constructed generic method, specifying <xref:System.String> for `TInput` and `List(Of String)` (`List<string>` in C#) for `TOutput`, and displays a string representation of the method.
 
    [!code-csharp[GenericMethodHowTo#21](./snippets/csharp/construct-generic-method/source.cs#21)]
    [!code-vb[GenericMethodHowTo#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#21)]
 
-2. To invoke the method late-bound, use the <xref:System.Reflection.MethodBase.Invoke%2A> method. The following code creates an array of <xref:System.Object>, containing as its only element an array of strings, and passes it as the argument list for the generic method. The first parameter of <xref:System.Reflection.MethodBase.Invoke%2A> is a null reference because the method is `static`. The return value is cast to `List(Of String)`, and its first element is displayed.
+2. To invoke the method late-bound, use the <xref:System.Reflection.MethodBase.Invoke*> method. The following code creates an array of <xref:System.Object>, containing as its only element an array of strings, and passes it as the argument list for the generic method. The first parameter of <xref:System.Reflection.MethodBase.Invoke*> is a null reference because the method is `static`. The return value is cast to `List(Of String)`, and its first element is displayed.
 
    [!code-csharp[GenericMethodHowTo#22](./snippets/csharp/construct-generic-method/source.cs#22)]
    [!code-vb[GenericMethodHowTo#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#22)]
@@ -146,7 +146,7 @@ The third procedure shows how to invoke the generic method.
 
 The following code example creates a nongeneric type, `DemoType`, with a generic method, `Factory`. This method has two generic type parameters, `TInput` to specify an input type and `TOutput` to specify an output type. The `TOutput` type parameter is constrained to implement `ICollection<TInput>` (`ICollection(Of TInput)` in Visual Basic), to be a reference type, and to have a parameterless constructor.
 
-The method has one formal parameter, which is an array of `TInput`. The method returns an instance of `TOutput` that contains all the elements of the input array. `TOutput` can be any generic collection type that implements the <xref:System.Collections.Generic.ICollection%601> generic interface.
+The method has one formal parameter, which is an array of `TInput`. The method returns an instance of `TOutput` that contains all the elements of the input array. `TOutput` can be any generic collection type that implements the <xref:System.Collections.Generic.ICollection`1> generic interface.
 
 When the code is executed, the dynamic assembly is saved as DemoGenericMethod1.dll, and can be examined using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md).
 

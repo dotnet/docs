@@ -10,7 +10,7 @@ ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
 
 # How to find a list of child elements (LINQ to XML)
 
-This article compares the XPath child elements axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Elements%2A> axis.
+This article compares the XPath child elements axis to the LINQ to XML <xref:System.Xml.Linq.XContainer.Elements*> axis.
 
 ## Example: Find all child elements of an element
 

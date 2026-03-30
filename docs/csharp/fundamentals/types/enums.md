@@ -46,7 +46,7 @@ When an enum represents a combination of choices rather than a single choice, de
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="FlagsEnum":::
 
-Combine values by using the `|` operator and test for individual flags by using <xref:System.Enum.HasFlag%2A>:
+Combine values by using the `|` operator and test for individual flags by using <xref:System.Enum.HasFlag*>:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingFlags":::
 
@@ -58,7 +58,7 @@ Explicit casts convert between an enum and its underlying integer type:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="Conversions":::
 
-Be aware that casting an integer to an enum doesn't validate whether the value matches a defined member. Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to check validity when you accept numeric input from external sources.
+Be aware that casting an integer to an enum doesn't validate whether the value matches a defined member. Use <xref:System.Enum.IsDefined*?displayProperty=nameWithType> to check validity when you accept numeric input from external sources.
 
 ## Parse strings and iterate values
 
@@ -66,7 +66,7 @@ The <xref:System.Enum> base class provides methods for parsing strings and itera
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="ParseAndIterate":::
 
-Use <xref:System.Enum.TryParse%60%601(System.String,System.Boolean,%60%600@)?displayProperty=nameWithType> instead of <xref:System.Enum.Parse%60%601(System.String)?displayProperty=nameWithType> when the input might be invalid. It returns `false` instead of throwing an exception.
+Use <xref:System.Enum.TryParse``1(System.String,System.Boolean,``0@)?displayProperty=nameWithType> instead of <xref:System.Enum.Parse``1(System.String)?displayProperty=nameWithType> when the input might be invalid. It returns `false` instead of throwing an exception.
 
 ## See also
 

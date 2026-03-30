@@ -16,7 +16,7 @@ ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
 A *dimension* is a direction in which you can vary the specification of an array's elements. An array that holds the sales total for each day of the month has one dimension (the day of the month). An array that holds the sales total by department for each day of the month has two dimensions (the department number and the day of the month). The number of dimensions an array has is called its *rank*.
 
 > [!NOTE]
-> You can use the <xref:System.Array.Rank%2A> property to determine how many dimensions an array has.
+> You can use the <xref:System.Array.Rank> property to determine how many dimensions an array has.
 
 ## Working with Dimensions
 
@@ -86,7 +86,7 @@ Dim salesAmounts(4, 11, 30) As Double
 Note that, because each index varies from 0 to its maximum, each dimension of `salesAmounts` is declared as one less than the required length for that dimension. Note also that the size of the array increases with each new dimension. The three sizes in the preceding examples are 31, 372, and 1,860 elements respectively.
 
 > [!NOTE]
-> You can create an array without using the `Dim` statement or the `New` clause. For example, you can call the <xref:System.Array.CreateInstance%2A> method, or another component can pass your code an array created in this manner. Such an array can have a lower bound other than 0. You can always test for the lower bound of a dimension by using the <xref:System.Array.GetLowerBound%2A> method or the `LBound` function.
+> You can create an array without using the `Dim` statement or the `New` clause. For example, you can call the <xref:System.Array.CreateInstance*> method, or another component can pass your code an array created in this manner. Such an array can have a lower bound other than 0. You can always test for the lower bound of a dimension by using the <xref:System.Array.GetLowerBound*> method or the `LBound` function.
 
 ## See also
 

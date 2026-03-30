@@ -6,7 +6,7 @@ ms.date: 11/19/2020
 
 # Nullable value types
 
-A _nullable value type_ `Nullable<'T>` represents any [struct](structs.md) type that could also be `null`. This is helpful when interacting with libraries and components that may choose to represent these kinds of types, like integers, with a `null` value for efficiency reasons. The underlying type that backs this construct is <xref:System.Nullable%601?displayProperty=nameWithType>.
+A _nullable value type_ `Nullable<'T>` represents any [struct](structs.md) type that could also be `null`. This is helpful when interacting with libraries and components that may choose to represent these kinds of types, like integers, with a `null` value for efficiency reasons. The underlying type that backs this construct is <xref:System.Nullable`1?displayProperty=nameWithType>.
 
 ## Syntax
 

@@ -135,7 +135,7 @@ public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
 }
 ```
 
-In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType> method on the grain factory:
+In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> method on the grain factory:
 
 ```csharp
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);

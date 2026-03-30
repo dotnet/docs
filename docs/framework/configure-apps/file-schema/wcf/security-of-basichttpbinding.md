@@ -66,8 +66,8 @@ Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.
 
 ## See also
 
-- <xref:System.ServiceModel.BasicHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.BasicHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.BasicHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.BasicHttpBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement>
 - <xref:System.ServiceModel.BasicHttpSecurity>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

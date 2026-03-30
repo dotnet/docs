@@ -121,7 +121,7 @@ When an object is marshalled to a variant, the internal variant type is determin
 
 - If the object is an instance of any type listed in the following table, the resulting variant type is determined by the rules built into the marshaller and shown in the table.
 
-- Other objects that need to explicitly control the marshalling behavior can implement the <xref:System.IConvertible> interface. In that case, the variant type is determined by the type code returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method. Otherwise, the object is marshalled as a variant of type **VT_UNKNOWN**.
+- Other objects that need to explicitly control the marshalling behavior can implement the <xref:System.IConvertible> interface. In that case, the variant type is determined by the type code returned from the <xref:System.IConvertible.GetTypeCode*?displayProperty=nameWithType> method. Otherwise, the object is marshalled as a variant of type **VT_UNKNOWN**.
 
 ### Marshalling System Types to Variant
 
@@ -206,7 +206,7 @@ The wrapper classes are defined in the <xref:System.Runtime.InteropServices> nam
 
 ### Marshalling the IConvertible Interface to Variant
 
-Types other than those listed in the previous section can control how they are marshalled by implementing the <xref:System.IConvertible> interface. If the object implements the `IConvertible` interface, the COM variant type is determined at runtime by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method.
+Types other than those listed in the previous section can control how they are marshalled by implementing the <xref:System.IConvertible> interface. If the object implements the `IConvertible` interface, the COM variant type is determined at runtime by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode*?displayProperty=nameWithType> method.
 
 The following table shows the possible values for the `TypeCode` enumeration and the corresponding COM variant type for each value.
 
@@ -237,7 +237,7 @@ The following table shows the possible values for the `TypeCode` enumeration and
 |Not supported.|**VT_CY**|
 |Not supported.|**VT_VARIANT**|
 
-The value of the COM variant is determined by calling the **IConvertible.To** *Type* interface, where `To` *Type* is the conversion routine that corresponds to the type that was returned from **IConvertible.GetTypeCode**. For example, an object that returns **TypeCode.Double** from **IConvertible.GetTypeCode** is marshalled as a COM variant of type **VT_R8**. You can obtain the value of the variant (stored in the `dblVal` field of the COM variant) by casting to the `IConvertible` interface and calling the <xref:System.IConvertible.ToDouble%2A> method.
+The value of the COM variant is determined by calling the **IConvertible.To** *Type* interface, where `To` *Type* is the conversion routine that corresponds to the type that was returned from **IConvertible.GetTypeCode**. For example, an object that returns **TypeCode.Double** from **IConvertible.GetTypeCode** is marshalled as a COM variant of type **VT_R8**. You can obtain the value of the variant (stored in the `dblVal` field of the COM variant) by casting to the `IConvertible` interface and calling the <xref:System.IConvertible.ToDouble*> method.
 
 ## Marshalling Variant to Object
 

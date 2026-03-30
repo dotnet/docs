@@ -19,7 +19,7 @@ ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
 
 # Perform culture-insensitive string operations in collections
 
-There are classes and members in the <xref:System.Collections> namespace that provide culture-sensitive behavior by default. The parameterless constructors for the <xref:System.Collections.CaseInsensitiveComparer> and <xref:System.Collections.CaseInsensitiveHashCodeProvider> classes initialize a new instance using the <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType> property. All overloads of the <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType> method create a new instance of the <xref:System.Collections.Hashtable> class using the `Thread.CurrentCulture` property by default. Overloads of the <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType> method perform culture-sensitive sorts by default using `Thread.CurrentCulture`. Sorting and lookup in a <xref:System.Collections.SortedList> can be affected by `Thread.CurrentCulture` when strings are used as the keys. Follow the usage recommendations provided in this section to obtain culture-insensitive results from these classes and methods in the `Collections` namespace.
+There are classes and members in the <xref:System.Collections> namespace that provide culture-sensitive behavior by default. The parameterless constructors for the <xref:System.Collections.CaseInsensitiveComparer> and <xref:System.Collections.CaseInsensitiveHashCodeProvider> classes initialize a new instance using the <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType> property. All overloads of the <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable*?displayProperty=nameWithType> method create a new instance of the <xref:System.Collections.Hashtable> class using the `Thread.CurrentCulture` property by default. Overloads of the <xref:System.Collections.ArrayList.Sort*?displayProperty=nameWithType> method perform culture-sensitive sorts by default using `Thread.CurrentCulture`. Sorting and lookup in a <xref:System.Collections.SortedList> can be affected by `Thread.CurrentCulture` when strings are used as the keys. Follow the usage recommendations provided in this section to obtain culture-insensitive results from these classes and methods in the `Collections` namespace.
 
 > [!NOTE]
 > Passing <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> to a comparison method does perform a culture-insensitive comparison. However, it does not cause a non-linguistic comparison, for example, for file paths, registry keys, and environment variables. Neither does it support security decisions based on the comparison result. For a non-linguistic comparison or support for result-based security decisions, the application should use a comparison method that accepts a <xref:System.StringComparison> value. The application should then pass <xref:System.StringComparison>.
@@ -134,9 +134,9 @@ Overloads of the `ArrayList.Sort` method perform culture-sensitive sorts by defa
 
 - <xref:System.Collections.CaseInsensitiveComparer>
 - <xref:System.Collections.CaseInsensitiveHashCodeProvider>
-- <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>
+- <xref:System.Collections.ArrayList.Sort*?displayProperty=nameWithType>
 - <xref:System.Collections.SortedList>
 - <xref:System.Collections.Hashtable>
 - <xref:System.Collections.IComparer>
 - [Perform culture-insensitive string operations](performing-culture-insensitive-string-operations.md)
-- <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType>
+- <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable*?displayProperty=nameWithType>

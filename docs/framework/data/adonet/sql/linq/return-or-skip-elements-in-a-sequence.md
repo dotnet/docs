@@ -9,18 +9,18 @@ ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
 ---
 # Return Or Skip Elements in a Sequence
 
-Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.
+Use the <xref:System.Linq.Queryable.Take*> operator to return a given number of elements in a sequence and then skip over the remainder.
 
- Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.
+ Use the <xref:System.Linq.Queryable.Skip*> operator to skip over a given number of elements in a sequence and then return the remainder.
 
 > [!NOTE]
-> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
+> <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip*> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:
 
 - The argument must be a set. Multisets are not supported, even if ordered.
 
-- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.
+- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip*> is applied. This complexity can cause decrease in performance or even a time-out.
 
 ## Example 1
 
@@ -31,24 +31,24 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
 
 ## Example 2
 
- The following example uses <xref:System.Linq.Queryable.Skip%2A> to select all except the 10 most expensive `Products`.
+ The following example uses <xref:System.Linq.Queryable.Skip*> to select all except the 10 most expensive `Products`.
 
  [!code-csharp[DLinqQueryExamples#17](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#17)]
  [!code-vb[DLinqQueryExamples#17](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#17)]
 
 ## Example 3
 
- The following example combines the <xref:System.Linq.Queryable.Skip%2A> and <xref:System.Linq.Queryable.Take%2A> methods to skip the first 50 records and then return the next 10.
+ The following example combines the <xref:System.Linq.Queryable.Skip*> and <xref:System.Linq.Queryable.Take*> methods to skip the first 50 records and then return the next 10.
 
  [!code-csharp[DLinqQueryExamples#18](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#18)]
  [!code-vb[DLinqQueryExamples#18](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#18)]
 
- <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> operations are well defined only against ordered sets. The semantics for unordered sets or multisets is undefined.
+ <xref:System.Linq.Queryable.Take*> and <xref:System.Linq.Queryable.Skip*> operations are well defined only against ordered sets. The semantics for unordered sets or multisets is undefined.
 
- Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> operator to the result of the operator.
+ Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take*> or <xref:System.Linq.Queryable.Skip*> operator to the result of the operator.
 
 > [!NOTE]
-> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.
+> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip*> with a query of any complexity, use SQL Server 2005.
 
  Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for SQL Server 2000:
 
@@ -73,9 +73,9 @@ WHERE (NOT (EXISTS(
 ORDER BY [t0].[CustomerID]
 ```
 
- When <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are chained together, all the specified ordering must be consistent. Otherwise, the results are undefined.
+ When <xref:System.Linq.Queryable.Take*> and <xref:System.Linq.Queryable.Skip*> are chained together, all the specified ordering must be consistent. Otherwise, the results are undefined.
 
- For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.
+ For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take*> and <xref:System.Linq.Queryable.Skip*> are well-defined.
 
 ## See also
 

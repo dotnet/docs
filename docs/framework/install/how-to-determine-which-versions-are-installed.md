@@ -130,7 +130,7 @@ The following examples check the value of the **Release** entry to determine whe
 
 #### Query the registry using code
 
-1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
+1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey*?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey*?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
 
    > [!IMPORTANT]
    > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 32-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 4.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**.
@@ -319,7 +319,7 @@ v4.0.30319
 
    - For the major release identifier (for example, *4* for version 4.0), use the <xref:System.Version.Major?displayProperty=nameWithType> property.
    - For the minor release identifier (for example, *0* for version 4.0), use the <xref:System.Version.Minor?displayProperty=nameWithType> property.
-   - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString%2A?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
+   - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString*?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
 
 The following example uses the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve CLR version information:
 

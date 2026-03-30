@@ -112,7 +112,7 @@ public class AsyncExample
 
 #### IAsyncResult Asynchronous Pattern
 
- A service operation can be implemented in an asynchronous fashion using the .NET Framework asynchronous programming pattern and marking the `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true`. In this case, the asynchronous operation is exposed in metadata in the same form as a synchronous operation: It is exposed as a single operation with a request message and a correlated response message. Client programming models then have a choice. They can represent this pattern as a synchronous operation or as an asynchronous one, so long as when the service is invoked a request-response message exchange takes place.
+ A service operation can be implemented in an asynchronous fashion using the .NET Framework asynchronous programming pattern and marking the `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern> property set to `true`. In this case, the asynchronous operation is exposed in metadata in the same form as a synchronous operation: It is exposed as a single operation with a request message and a correlated response message. Client programming models then have a choice. They can represent this pattern as a synchronous operation or as an asynchronous one, so long as when the service is invoked a request-response message exchange takes place.
 
  In general, with the asynchronous nature of the systems, you should not take a dependency on the threads.  The most reliable way of passing data to various stages of operation dispatch processing is to use extensions.
 
@@ -177,13 +177,13 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async /tcv:Versio
 
  When this is done, Svcutil.exe generates a WCF client class with the event infrastructure that enables the calling application to implement and assign an event handler to receive the response and take the appropriate action. For a complete example, see [How to: Call Service Operations Asynchronously](./feature-details/how-to-call-wcf-service-operations-asynchronously.md).
 
- The event-based asynchronous model, however, is only available in .NET Framework 3.5. In addition, it is not supported even in .NET Framework 3.5 when a WCF client channel is created by using a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>. With WCF client channel objects, you must use <xref:System.IAsyncResult?displayProperty=nameWithType> objects to invoke your operations asynchronously. To use this approach, specify the **/async** command option with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md), as in the following example.
+ The event-based asynchronous model, however, is only available in .NET Framework 3.5. In addition, it is not supported even in .NET Framework 3.5 when a WCF client channel is created by using a <xref:System.ServiceModel.ChannelFactory`1?displayProperty=nameWithType>. With WCF client channel objects, you must use <xref:System.IAsyncResult?displayProperty=nameWithType> objects to invoke your operations asynchronously. To use this approach, specify the **/async** command option with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md), as in the following example.
 
 ```console
 svcutil http://localhost:8000/servicemodelsamples/service/mex /async
 ```
 
- This generates a service contract in which each operation is modeled as a `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true` and a corresponding `<End>` method. For a complete example using a <xref:System.ServiceModel.ChannelFactory%601>, see [How to: Call Operations Asynchronously Using a Channel Factory](./feature-details/how-to-call-operations-asynchronously-using-a-channel-factory.md).
+ This generates a service contract in which each operation is modeled as a `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern> property set to `true` and a corresponding `<End>` method. For a complete example using a <xref:System.ServiceModel.ChannelFactory`1>, see [How to: Call Operations Asynchronously Using a Channel Factory](./feature-details/how-to-call-operations-asynchronously-using-a-channel-factory.md).
 
  In either case, applications can invoke an operation asynchronously even if the service is implemented synchronously, in the same way that an application can use the same pattern to invoke asynchronously a local synchronous method. How the operation is implemented is not significant to the client; when the response message arrives, its content is dispatched to the client's asynchronous `<End>` method and the client retrieves the information.
 
@@ -200,4 +200,4 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
 ## See also
 
 - <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>
-- <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern*>

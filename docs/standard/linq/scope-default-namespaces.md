@@ -72,7 +72,7 @@ End of result set
 
 This example shows the creation of XML in a namespace, and a proper query.
 
-In C#, the correct approach is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.
+In C#, the correct approach is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements*> method is an <xref:System.Xml.Linq.XName> object.
 
 The correct approach when using Visual Basic is to declare and initialize a global default namespace. This places all XML properties in the default namespace.
 

@@ -2,7 +2,7 @@
 title: "File and Stream I/O - .NET"
 description: Learn the basics of file and stream I/O, which is the transfer of data either to or from a storage medium, in .NET.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IO namespace"
   - "files, I/O"
   - "System.IO namespace"
@@ -93,7 +93,7 @@ See [How to: Read Text from a File](how-to-read-text-from-a-file.md), [How to: W
 
 Reading or writing a large amount of data can be resource-intensive. You should perform these tasks asynchronously if your application needs to remain responsive to the user. With synchronous I/O operations, the UI thread is blocked until the resource-intensive operation has completed.  Use asynchronous I/O operations when developing Windows 8.x Store apps to prevent creating the impression that your app has stopped working.
 
-The asynchronous members contain `Async` in their names, such as the <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.FlushAsync%2A>,  <xref:System.IO.Stream.ReadAsync%2A>, and <xref:System.IO.Stream.WriteAsync%2A> methods. You use these methods with the `async` and `await` keywords.
+The asynchronous members contain `Async` in their names, such as the <xref:System.IO.Stream.CopyToAsync*>, <xref:System.IO.Stream.FlushAsync*>,  <xref:System.IO.Stream.ReadAsync*>, and <xref:System.IO.Stream.WriteAsync*> methods. You use these methods with the `async` and `await` keywords.
 
 For more information, see [Asynchronous File I/O](asynchronous-file-i-o.md).
 
@@ -143,7 +143,7 @@ Some important differences to note when using I/O operations in Windows 8.x Stor
 
 - Isolated storage is not available; instead, use [application data](/previous-versions/windows/apps/hh464917(v=win.10)).
 
-- Use asynchronous methods, such as <xref:System.IO.Stream.ReadAsync%2A> and <xref:System.IO.Stream.WriteAsync%2A>, to prevent blocking the UI thread.
+- Use asynchronous methods, such as <xref:System.IO.Stream.ReadAsync*> and <xref:System.IO.Stream.WriteAsync*>, to prevent blocking the UI thread.
 
 - The path-based compression types <xref:System.IO.Compression.ZipFile> and <xref:System.IO.Compression.ZipFileExtensions> are not available. Instead, use the types in the <xref:Windows.Storage.Compression?displayProperty=nameWithType> namespace.
 

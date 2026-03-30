@@ -35,7 +35,7 @@ The `throw` statement throws an exception:
 
 In a `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>.
 
-You can use the built-in exception classes, such as <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. .NET also provides the following helper methods to throw exceptions in certain conditions: <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> and <xref:System.ArgumentException.ThrowIfNullOrEmpty%2A?displayProperty=nameWithType>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
+You can use the built-in exception classes, such as <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. .NET also provides the following helper methods to throw exceptions in certain conditions: <xref:System.ArgumentNullException.ThrowIfNull*?displayProperty=nameWithType> and <xref:System.ArgumentException.ThrowIfNullOrEmpty*?displayProperty=nameWithType>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
 
 Inside a [`catch` block](#the-try-catch-statement), use a `throw;` statement to re-throw the exception that the `catch` block handles:
 
@@ -159,7 +159,7 @@ You can also use the `finally` block to clean up allocated resources used in the
 > [!NOTE]
 > When the type of a resource implements the <xref:System.IDisposable> or <xref:System.IAsyncDisposable> interface, consider the [`using` statement](using.md). The `using` statement ensures that acquired resources are disposed when control leaves the `using` statement. The compiler transforms a `using` statement into a `try-finally` statement.
 
-Whether the `finally` block executes depends on whether the operating system chooses to trigger an exception unwind operation. The only cases where `finally` blocks don't execute involve immediate termination of a program. For example, such a termination might happen because of the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform reasonable resource clean-up as part of stopping and unloading the process.
+Whether the `finally` block executes depends on whether the operating system chooses to trigger an exception unwind operation. The only cases where `finally` blocks don't execute involve immediate termination of a program. For example, such a termination might happen because of the <xref:System.Environment.FailFast*?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform reasonable resource clean-up as part of stopping and unloading the process.
 
 ### The `try-catch-finally` statement
 

@@ -35,9 +35,9 @@ Visual Basic can't be used to write custom converters but can call converters th
 
 There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type `Enum` or open generics. The basic pattern is for non-generic and closed generic types. For example, converters for the following types require the factory pattern:
 
-* <xref:System.Collections.Generic.Dictionary%602>
+* <xref:System.Collections.Generic.Dictionary`2>
 * <xref:System.Enum>
-* <xref:System.Collections.Generic.List%601>
+* <xref:System.Collections.Generic.List`1>
 
 Some examples of types that can be handled by the basic pattern include:
 
@@ -65,8 +65,8 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 The following steps explain how to create a converter by following the basic pattern:
 
-* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter%601> where `T` is the type to be serialized and deserialized.
-* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that's passed to the method to read the JSON. You don't have to worry about handling partial data, as the serializer passes all the data for the current JSON scope. So it isn't necessary to call <xref:System.Text.Json.Utf8JsonReader.Skip%2A> or <xref:System.Text.Json.Utf8JsonReader.TrySkip%2A> or to validate that <xref:System.Text.Json.Utf8JsonReader.Read%2A> returns `true`.
+* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter`1> where `T` is the type to be serialized and deserialized.
+* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that's passed to the method to read the JSON. You don't have to worry about handling partial data, as the serializer passes all the data for the current JSON scope. So it isn't necessary to call <xref:System.Text.Json.Utf8JsonReader.Skip*> or <xref:System.Text.Json.Utf8JsonReader.TrySkip*> or to validate that <xref:System.Text.Json.Utf8JsonReader.Read*> returns `true`.
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is of type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
@@ -285,10 +285,10 @@ A disadvantage of this method is you can't pass in the original options instance
 If you deserialize a JSON string into a `Stack` object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interfaces, and user-defined types that derive from them:
 
 * <xref:System.Collections.Stack>
-* <xref:System.Collections.Generic.Stack%601>
-* <xref:System.Collections.Concurrent.ConcurrentStack%601>
-* <xref:System.Collections.Immutable.ImmutableStack%601>
-* <xref:System.Collections.Immutable.IImmutableStack%601>
+* <xref:System.Collections.Generic.Stack`1>
+* <xref:System.Collections.Concurrent.ConcurrentStack`1>
+* <xref:System.Collections.Immutable.ImmutableStack`1>
+* <xref:System.Collections.Immutable.IImmutableStack`1>
 
 To support serialization and deserialization that retains the original order in the stack, a custom converter is required.
 
@@ -310,7 +310,7 @@ In some scenarios, you might want to use the default system converter in a custo
 
 By default, the serializer handles null values as follows:
 
-* For reference types and <xref:System.Nullable%601> types:
+* For reference types and <xref:System.Nullable`1> types:
 
   * It doesn't pass `null` to custom converters on serialization.
   * It doesn't pass `JsonTokenType.Null` to custom converters on deserialization.
@@ -323,13 +323,13 @@ By default, the serializer handles null values as follows:
 
 This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
 
-To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull?displayProperty=nameWithType> to return `true`, as shown in the following example:
+To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter`1.HandleNull?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterHandleNull.cs" highlight="17":::
 
 ## Preserve references
 
-By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
+By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize*> or <xref:System.Text.Json.JsonSerializer.Deserialize*>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
 * You write a custom converter for the `Company` type.
 * You don't want to manually serialize the `Supervisor` property, which is an `Employee`. You want to delegate that to the serializer and you also want to preserve the references that you have already saved.
@@ -358,7 +358,7 @@ The preceding example only does serialization, but a similar approach can be ado
 
 ### ReferenceResolver limitations with custom converters
 
-When you use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>, be aware that reference handling state isn't preserved when the serializer calls into a custom converter. This means that if you have a custom converter for a type that's part of an object graph being serialized or deserialized with reference preservation enabled, the converter and any nested serialization calls won't have access to the current <xref:System.Text.Json.Serialization.ReferenceResolver> instance.
+When you use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve*>, be aware that reference handling state isn't preserved when the serializer calls into a custom converter. This means that if you have a custom converter for a type that's part of an object graph being serialized or deserialized with reference preservation enabled, the converter and any nested serialization calls won't have access to the current <xref:System.Text.Json.Serialization.ReferenceResolver> instance.
 
 ## Other custom converter samples
 

@@ -145,7 +145,7 @@ static async Task SumPageSizesAsync()
 }
 ```
 
-The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then loops through each URL in the `s_urlList` and calls `ProcessUrlAsync`. With each iteration, the `s_cts.Token` is passed into the `ProcessUrlAsync` method and the code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
+The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then loops through each URL in the `s_urlList` and calls `ProcessUrlAsync`. With each iteration, the `s_cts.Token` is passed into the `ProcessUrlAsync` method and the code returns a <xref:System.Threading.Tasks.Task`1>, where `TResult` is an integer:
 
 ```csharp
 int total = 0;

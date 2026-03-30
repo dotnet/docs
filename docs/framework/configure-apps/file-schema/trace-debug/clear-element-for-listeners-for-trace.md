@@ -50,12 +50,12 @@ Clears the `Listeners` collection for trace.
 
  The `<clear>` element removes all listeners from the `Listeners` collection for trace. You can use the `<clear>` element before using the `<add>` element to be certain there are no other active listeners in the collection.
 
- You can clear the `Listeners` collection programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> property (`System.Diagnostics.Trace.Listeners.Clear()`).
+ You can clear the `Listeners` collection programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear*> method on the <xref:System.Diagnostics.Trace.Listeners?displayProperty=nameWithType> property (`System.Diagnostics.Trace.Listeners.Clear()`).
 
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.
 
 > [!NOTE]
-> The `<clear>` element removes the <xref:System.Diagnostics.DefaultTraceListener> from the `Listeners` collection, altering the behavior of the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=nameWithType>, and <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=nameWithType> methods. Calling an `Assert` or `Fail` method normally results in the display of a message box. However, the message box is not displayed if the <xref:System.Diagnostics.DefaultTraceListener> is not in the `Listeners` collection.
+> The `<clear>` element removes the <xref:System.Diagnostics.DefaultTraceListener> from the `Listeners` collection, altering the behavior of the <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.Assert*?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug.Fail*?displayProperty=nameWithType>, and <xref:System.Diagnostics.Trace.Fail*?displayProperty=nameWithType> methods. Calling an `Assert` or `Fail` method normally results in the display of a message box. However, the message box is not displayed if the <xref:System.Diagnostics.DefaultTraceListener> is not in the `Listeners` collection.
 
 ## Example
 
@@ -80,7 +80,7 @@ Clears the `Listeners` collection for trace.
 
 ## See also
 
-- <xref:System.Diagnostics.Trace.Listeners%2A>
+- <xref:System.Diagnostics.Trace.Listeners*>
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>
 - <xref:System.Diagnostics.TraceSource>

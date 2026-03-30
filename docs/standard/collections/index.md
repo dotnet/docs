@@ -3,7 +3,7 @@ title: "Collections and Data Structures"
 description: Learn how to use collections and data structures in .NET. Use generic and non-generic collections in thread-safe operations.
 ms.date: 10/20/2025
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "grouping data in collections"
   - "objects [.NET], grouping in collections"
   - "Array class, grouping data in collections"
@@ -25,11 +25,11 @@ In .NET Framework 4 and later versions, the collections in the <xref:System.Coll
 
 ## Common collection features
 
-All collections provide methods for adding, removing, or finding items in the collection. In addition, all collections that directly or indirectly implement the <xref:System.Collections.ICollection> interface or the <xref:System.Collections.Generic.ICollection%601> interface share these features:
+All collections provide methods for adding, removing, or finding items in the collection. In addition, all collections that directly or indirectly implement the <xref:System.Collections.ICollection> interface or the <xref:System.Collections.Generic.ICollection`1> interface share these features:
 
 - **The ability to enumerate the collection**
 
-    .NET collections either implement <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> to enable the collection to be iterated through. An enumerator can be thought of as a movable pointer to any element in the collection. The [foreach, in](../../csharp/language-reference/statements/iteration-statements.md#the-foreach-statement) statement and the [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md) use the enumerator exposed by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method and hide the complexity of manipulating the enumerator. In addition, any collection that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> is considered a *queryable type* and can be queried with LINQ. LINQ queries provide a common pattern for accessing data. They're typically more concise and readable than standard `foreach` loops and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md), and [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
+    .NET collections either implement <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> to enable the collection to be iterated through. An enumerator can be thought of as a movable pointer to any element in the collection. The [foreach, in](../../csharp/language-reference/statements/iteration-statements.md#the-foreach-statement) statement and the [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md) use the enumerator exposed by the <xref:System.Collections.IEnumerable.GetEnumerator*> method and hide the complexity of manipulating the enumerator. In addition, any collection that implements <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> is considered a *queryable type* and can be queried with LINQ. LINQ queries provide a common pattern for accessing data. They're typically more concise and readable than standard `foreach` loops and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md), and [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
 
 - **The ability to copy the collection contents to an array**
 
@@ -41,17 +41,17 @@ In addition, many collection classes contain the following features:
 
     The capacity of a collection is the number of elements it can contain. The count of a collection is the number of elements it actually contains. Some collections hide the capacity or the count or both.
 
-    Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This design reduces the code required to use the collection. However, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List%601>, if <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, adding an item is an O(1) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
+    Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This design reduces the code required to use the collection. However, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List`1>, if <xref:System.Collections.Generic.List`1.Count*> is less than <xref:System.Collections.Generic.List`1.Capacity*>, adding an item is an O(1) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List`1.Count*>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
 
     A <xref:System.Collections.BitArray> is a special case; its capacity is the same as its length, which is the same as its count.
 
 - **A consistent lower bound**
 
-    The lower bound of a collection is the index of its first element. All indexed collections in the <xref:System.Collections> namespaces have a lower bound of zero, meaning they're 0-indexed. <xref:System.Array> has a lower bound of zero by default, but a different lower bound can be defined when creating an instance of the **Array** class using <xref:System.Array.CreateInstance%2A?displayProperty=nameWithType>.
+    The lower bound of a collection is the index of its first element. All indexed collections in the <xref:System.Collections> namespaces have a lower bound of zero, meaning they're 0-indexed. <xref:System.Array> has a lower bound of zero by default, but a different lower bound can be defined when creating an instance of the **Array** class using <xref:System.Array.CreateInstance*?displayProperty=nameWithType>.
 
 - **Synchronization for access from multiple threads** (<xref:System.Collections> classes only).
 
-    Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot%2A> and  <xref:System.Collections.ICollection.IsSynchronized> members. These collections aren't thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](thread-safe/index.md).
+    Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot*> and  <xref:System.Collections.ICollection.IsSynchronized> members. These collections aren't thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
 
@@ -61,14 +61,14 @@ In general, you should use generic collections. The following table describes so
 
 |I want to…|Generic collection options|Non-generic collection options|Thread-safe or immutable collection options|
 |-|-|-|-|
-|Store items as key/value pairs for quick look-up by key|<xref:System.Collections.Generic.Dictionary%602>|<xref:System.Collections.Hashtable><br /><br /> (A collection of key/value pairs that are organized based on the hash code of the key.)|<xref:System.Collections.Concurrent.ConcurrentDictionary%602><br /><br /> <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602><br /><br /> <xref:System.Collections.Immutable.ImmutableDictionary%602>|
-|Access items by index|<xref:System.Collections.Generic.List%601>|<xref:System.Array><br /><br /> <xref:System.Collections.ArrayList>|<xref:System.Collections.Immutable.ImmutableList%601><br /><br /> <xref:System.Collections.Immutable.ImmutableArray>|
-|Use items first-in-first-out (FIFO)|<xref:System.Collections.Generic.Queue%601>|<xref:System.Collections.Queue>|<xref:System.Collections.Concurrent.ConcurrentQueue%601><br /><br /> <xref:System.Collections.Immutable.ImmutableQueue%601>|
-|Use data Last-In-First-Out (LIFO)|<xref:System.Collections.Generic.Stack%601>|<xref:System.Collections.Stack>|<xref:System.Collections.Concurrent.ConcurrentStack%601><br /><br /> <xref:System.Collections.Immutable.ImmutableStack%601>|
-|Access items sequentially|<xref:System.Collections.Generic.LinkedList%601>|No recommendation|No recommendation|
-|Receive notifications when items are removed or added to the collection. (implements <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged>)|<xref:System.Collections.ObjectModel.ObservableCollection%601>|No recommendation|No recommendation|
-|A sorted collection|<xref:System.Collections.Generic.SortedList%602>|<xref:System.Collections.SortedList>|<xref:System.Collections.Immutable.ImmutableSortedDictionary%602><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet%601>|
-|A set for mathematical functions|<xref:System.Collections.Generic.HashSet%601><br /><br /> <xref:System.Collections.Generic.SortedSet%601>|No recommendation|<xref:System.Collections.Immutable.ImmutableHashSet%601><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet%601>|
+|Store items as key/value pairs for quick look-up by key|<xref:System.Collections.Generic.Dictionary`2>|<xref:System.Collections.Hashtable><br /><br /> (A collection of key/value pairs that are organized based on the hash code of the key.)|<xref:System.Collections.Concurrent.ConcurrentDictionary`2><br /><br /> <xref:System.Collections.ObjectModel.ReadOnlyDictionary`2><br /><br /> <xref:System.Collections.Immutable.ImmutableDictionary`2>|
+|Access items by index|<xref:System.Collections.Generic.List`1>|<xref:System.Array><br /><br /> <xref:System.Collections.ArrayList>|<xref:System.Collections.Immutable.ImmutableList`1><br /><br /> <xref:System.Collections.Immutable.ImmutableArray>|
+|Use items first-in-first-out (FIFO)|<xref:System.Collections.Generic.Queue`1>|<xref:System.Collections.Queue>|<xref:System.Collections.Concurrent.ConcurrentQueue`1><br /><br /> <xref:System.Collections.Immutable.ImmutableQueue`1>|
+|Use data Last-In-First-Out (LIFO)|<xref:System.Collections.Generic.Stack`1>|<xref:System.Collections.Stack>|<xref:System.Collections.Concurrent.ConcurrentStack`1><br /><br /> <xref:System.Collections.Immutable.ImmutableStack`1>|
+|Access items sequentially|<xref:System.Collections.Generic.LinkedList`1>|No recommendation|No recommendation|
+|Receive notifications when items are removed or added to the collection. (implements <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged>)|<xref:System.Collections.ObjectModel.ObservableCollection`1>|No recommendation|No recommendation|
+|A sorted collection|<xref:System.Collections.Generic.SortedList`2>|<xref:System.Collections.SortedList>|<xref:System.Collections.Immutable.ImmutableSortedDictionary`2><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet`1>|
+|A set for mathematical functions|<xref:System.Collections.Generic.HashSet`1><br /><br /> <xref:System.Collections.Generic.SortedSet`1>|No recommendation|<xref:System.Collections.Immutable.ImmutableHashSet`1><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet`1>|
 
 ### Algorithmic complexity of collections
 
@@ -89,7 +89,7 @@ When choosing a [collection class](selecting-a-collection-class.md), it's worth 
 
 A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop. An `ImmutableList<T>`, however, does a poor job inside a `for` loop, due to the O(log `n`) time for its indexer. Enumerating an `ImmutableList<T>` using a `foreach` loop is efficient because `ImmutableList<T>` uses a binary tree to store its data instead of an array like `List<T>` uses. An array can be quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
 
-Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>` because they both use binary trees. The significant difference is that `ImmutableSortedSet<T>` uses an immutable binary tree. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have both immutability and performance.
+Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>` because they both use binary trees. The significant difference is that `ImmutableSortedSet<T>` uses an immutable binary tree. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet`1.Builder?displayProperty=nameWithType> class that allows mutation, you can have both immutability and performance.
 
 <a name="BKMK_RelatedTopics"></a>
 
@@ -98,12 +98,12 @@ Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>` 
 |Title|Description|
 |-----------|-----------------|
 |[Selecting a Collection Class](selecting-a-collection-class.md)|Describes the different collections and helps you select one for your scenario.|
-|[Commonly Used Collection Types](commonly-used-collection-types.md)|Describes commonly used generic and non-generic collection types such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.|
+|[Commonly Used Collection Types](commonly-used-collection-types.md)|Describes commonly used generic and non-generic collection types such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List`1?displayProperty=nameWithType>, and <xref:System.Collections.Generic.Dictionary`2?displayProperty=nameWithType>.|
 |[When to Use Generic Collections](when-to-use-generic-collections.md)|Discusses the use of generic collection types.|
 |[Comparisons and Sorts Within Collections](comparisons-and-sorts-within-collections.md)|Discusses the use of equality comparisons and sorting comparisons in collections.|
 |[Sorted Collection Types](sorted-collection-types.md)|Describes sorted collections performance and characteristics.|
 |[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)|Describes the features of generic and non-generic hash-based dictionary types.|
-|[Thread-Safe Collections](thread-safe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType> that support safe and efficient concurrent access from multiple threads.|
+|[Thread-Safe Collections](thread-safe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection`1?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentBag`1?displayProperty=nameWithType> that support safe and efficient concurrent access from multiple threads.|
 |<xref:System.Collections.Immutable>|Introduces the immutable collections and provides links to the collection types.|
 
 <a name="BKMK_Reference"></a>

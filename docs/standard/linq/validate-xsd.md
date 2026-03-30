@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to validate using XSD (LINQ to XML)
 
-The <xref:System.Xml.Schema> namespace contains extension methods that make it easy to validate an XML tree against an XML Schema Definition Language (XSD) file. For more information, see the <xref:System.Xml.Schema.Extensions.Validate%2A> method documentation.
+The <xref:System.Xml.Schema> namespace contains extension methods that make it easy to validate an XML tree against an XML Schema Definition Language (XSD) file. For more information, see the <xref:System.Xml.Schema.Extensions.Validate*> method documentation.
 
 ## Example: Validate XDocument objects against an XmlSchemaSet
 
@@ -198,5 +198,5 @@ custOrdDoc did not validate
 
 ## See also
 
-- <xref:System.Xml.Schema.Extensions.Validate%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Schema.Extensions.Validate*?displayProperty=nameWithType>
 - [XML trees](functional-construction.md)

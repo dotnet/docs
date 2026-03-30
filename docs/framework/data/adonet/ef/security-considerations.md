@@ -123,21 +123,21 @@ This article describes security considerations that are specific to developing, 
 - In queries that create Cartesian joins on the server.
 - In nested Entity SQL queries.
 
- When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in LINQ to Entities or the [LIMIT](./language-reference/limit-entity-sql.md) operator in Entity SQL to limit the size of the result set.
+ When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take*> method in LINQ to Entities or the [LIMIT](./language-reference/limit-entity-sql.md) operator in Entity SQL to limit the size of the result set.
 
 ### Avoid Returning IQueryable Results When Exposing Methods to Potentially Untrusted Callers
 
- Avoid returning <xref:System.Linq.IQueryable%601> types from methods that are exposed to potentially untrusted callers for the following reasons:
+ Avoid returning <xref:System.Linq.IQueryable`1> types from methods that are exposed to potentially untrusted callers for the following reasons:
 
-- A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:
+- A consumer of a query that exposes an <xref:System.Linq.IQueryable`1> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:
 
     ```csharp
     public IQueryable<Customer> GetCustomer(int customerId)
     ```
 
-    A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable%601> and calling a method (such as `.ToList()`) that materializes the results.
+    A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable`1> and calling a method (such as `.ToList()`) that materializes the results.
 
-- Because <xref:System.Linq.IQueryable%601> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.
+- Because <xref:System.Linq.IQueryable`1> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable`1> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.
 
 ## Security Considerations for Entities
 

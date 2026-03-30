@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to find sibling nodes (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to find all siblings of a node that have a specific name, and how to use LINQ to XML query to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements*> to find all siblings of a node that have a specific name, and how to use LINQ to XML query to do the same thing.
 
 > [!NOTE]
 > The resulting collection includes the context node if it also has the specific name.

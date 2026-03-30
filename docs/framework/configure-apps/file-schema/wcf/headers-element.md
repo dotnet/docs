@@ -10,10 +10,10 @@ This contains a collection of address headers that are required in order to corr
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
+- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer*>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>
 - <xref:System.ServiceModel.EndpointAddress>
-- <xref:System.ServiceModel.EndpointAddress.Headers%2A>
+- <xref:System.ServiceModel.EndpointAddress.Headers*>
 - <xref:System.ServiceModel.Channels.AddressHeaderCollection>
 - [How to: Configure a Local Issuer](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
 - [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

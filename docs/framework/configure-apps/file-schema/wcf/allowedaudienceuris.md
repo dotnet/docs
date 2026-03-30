@@ -60,12 +60,12 @@ Represents a collection of target URIs for which the <xref:System.IdentityModel.
 ## See also
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris*>
 - <xref:System.ServiceModel.Configuration.AllowedAudienceUriElementCollection>
 - <xref:System.ServiceModel.Configuration.AllowedAudienceUriElement>
-- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowedAudienceUris%2A>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowedAudienceUris*>
 - [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)
 - [\<add>](add-of-allowedaudienceuris.md)
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

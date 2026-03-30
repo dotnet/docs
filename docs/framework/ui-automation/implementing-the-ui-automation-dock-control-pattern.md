@@ -43,7 +43,7 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
 |<xref:System.Windows.Automation.Provider.IDockProvider.DockPosition>|Property|None|
-|<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition*>|Method|None|
 
  This control pattern has no associated events.
 
@@ -55,7 +55,7 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition%2A><br /><br /> -   When a control is not able to execute the requested dock style.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition*><br /><br /> -   When a control is not able to execute the requested dock style.|
 
 ## See also
 

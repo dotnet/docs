@@ -60,12 +60,12 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Progress bar controls that give a textual indication of progress must implement <xref:System.Windows.Automation.Provider.IValueProvider>.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly>|True|The value for this property is always True.|
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|See notes.|This property exposes textual progress of a progress bar control.|
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value*>|See notes.|This property exposes textual progress of a progress bar control.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|Progress bar controls that take a numeric range must implement <xref:System.Windows.Automation.Provider.IRangeValueProvider>|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum%2A>|0.0|The value of this property is the smallest value that the control can be set to.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum%2A>|100.0|The value of this property is the largest value that the control can be set to.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange%2A>|NaN|This property is not required because progress bar controls are read-only.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange%2A>|NaN|This property is not required because progress bar controls are read-only.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum*>|0.0|The value of this property is the smallest value that the control can be set to.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum*>|100.0|The value of this property is the largest value that the control can be set to.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange*>|NaN|This property is not required because progress bar controls are read-only.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange*>|NaN|This property is not required because progress bar controls are read-only.|
 
 <a name="Required_UI_Automation_Events"></a>
 

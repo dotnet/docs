@@ -51,7 +51,7 @@ Authorization is the process of determining which entities have permission to ch
  A set of claims issued by a particular issuer.
 
  Claim type\
- A kind of claim. Claims defined by the Identity Model API are properties of the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> class. Examples of system-provided claim types are <xref:System.IdentityModel.Claims.ClaimTypes.Dns%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Email%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Hash>, <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Sid%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Spn%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.System%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A>, <xref:System.IdentityModel.Claims.ClaimTypes.Uri%2A>, and <xref:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName%2A>.
+ A kind of claim. Claims defined by the Identity Model API are properties of the <xref:System.IdentityModel.Claims.Claim.ClaimType*> class. Examples of system-provided claim types are <xref:System.IdentityModel.Claims.ClaimTypes.Dns*>, <xref:System.IdentityModel.Claims.ClaimTypes.Email*>, <xref:System.IdentityModel.Claims.ClaimTypes.Hash>, <xref:System.IdentityModel.Claims.ClaimTypes.Name*>, <xref:System.IdentityModel.Claims.ClaimTypes.Rsa*>, <xref:System.IdentityModel.Claims.ClaimTypes.Sid*>, <xref:System.IdentityModel.Claims.ClaimTypes.Spn*>, <xref:System.IdentityModel.Claims.ClaimTypes.System*>, <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint*>, <xref:System.IdentityModel.Claims.ClaimTypes.Uri*>, and <xref:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName*>.
 
  Evaluation context\
  A context in which an authorization policy is evaluated. Contains properties and claim sets. Becomes the basis of an authorization context once evaluation is complete.
@@ -69,7 +69,7 @@ Authorization is the process of determining which entities have permission to ch
  Something in the system that can only be used, accessed, or otherwise manipulated if certain requirements are first met.
 
  Right\
- A capability over a resource. Rights defined by the Identity Model API are properties of the <xref:System.IdentityModel.Claims.Rights> class. Examples of system-provided rights are <xref:System.IdentityModel.Claims.Rights.Identity%2A> and <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.
+ A capability over a resource. Rights defined by the Identity Model API are properties of the <xref:System.IdentityModel.Claims.Rights> class. Examples of system-provided rights are <xref:System.IdentityModel.Claims.Rights.Identity*> and <xref:System.IdentityModel.Claims.Rights.PossessProperty*>.
 
  Value\
  Something over which a right is claimed.
@@ -160,7 +160,7 @@ Authorization is the process of determining which entities have permission to ch
 
 |Class|Description|
 |-----------|-----------------|
-|<xref:System.ServiceModel.ServiceAuthorizationManager>|A class that provides a method— <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A>—to perform claim-based authorization checks for each operation in a service. You must derive from the class and override the method.|
+|<xref:System.ServiceModel.ServiceAuthorizationManager>|A class that provides a method— <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore*>—to perform claim-based authorization checks for each operation in a service. You must derive from the class and override the method.|
 |<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>|A sealed class that provides various properties related to the behavior of a service as it pertains to authorization.|
 |<xref:System.ServiceModel.ServiceSecurityContext>|A class that provides security context, including authorization context, for the currently running (or about to be run) operation. An instance of this class is part of the <xref:System.ServiceModel.OperationContext>.|
 
@@ -170,9 +170,9 @@ Authorization is the process of determining which entities have permission to ch
 
 |Member|Description|
 |------------|-----------------|
-|<xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A>|Derived classes implement this method to perform claim-based access checks prior to running operations in a service. Any and all information in the supplied <xref:System.ServiceModel.OperationContext>, or elsewhere, can be examined when making the access check decision. If <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> returns `true`, then access is granted and the operation is allowed to run. If `CheckAccessCore` returns `false`, then access is denied and the operation does not run. For an example, see [How to: Create a Custom Authorization Manager for a Service](../extending/how-to-create-a-custom-authorization-manager-for-a-service.md).|
-|<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ServiceAuthorizationManager%2A>|Returns the <xref:System.ServiceModel.ServiceAuthorizationManager> for the service. The <xref:System.ServiceModel.ServiceAuthorizationManager> is responsible for making authorization decisions.|
-|<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies%2A>|The collection of custom authorization policies specified for the service. These policies are evaluated in addition to those policies associated with credentials in incoming messages.|
+|<xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore*>|Derived classes implement this method to perform claim-based access checks prior to running operations in a service. Any and all information in the supplied <xref:System.ServiceModel.OperationContext>, or elsewhere, can be examined when making the access check decision. If <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore*> returns `true`, then access is granted and the operation is allowed to run. If `CheckAccessCore` returns `false`, then access is denied and the operation does not run. For an example, see [How to: Create a Custom Authorization Manager for a Service](../extending/how-to-create-a-custom-authorization-manager-for-a-service.md).|
+|<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ServiceAuthorizationManager*>|Returns the <xref:System.ServiceModel.ServiceAuthorizationManager> for the service. The <xref:System.ServiceModel.ServiceAuthorizationManager> is responsible for making authorization decisions.|
+|<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies*>|The collection of custom authorization policies specified for the service. These policies are evaluated in addition to those policies associated with credentials in incoming messages.|
 
 ## See also
 

@@ -54,7 +54,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 
  The `<remove>` element removes a specified listener from the `Listeners` collection for a trace source.
 
- You can remove an element from the `Listeners` collection for a trace source programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method on the <xref:System.Diagnostics.TraceSource.Listeners%2A> property of the <xref:System.Diagnostics.TraceSource> instance.
+ You can remove an element from the `Listeners` collection for a trace source programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Remove*> method on the <xref:System.Diagnostics.TraceSource.Listeners> property of the <xref:System.Diagnostics.TraceSource> instance.
 
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.
 
@@ -81,7 +81,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 
 ## See also
 
-- <xref:System.Diagnostics.TraceSource.Listeners%2A>
+- <xref:System.Diagnostics.TraceSource.Listeners*>
 - <xref:System.Diagnostics.TraceSource>
 - [Trace and Debug Settings Schema](index.md)
 - [\<clear>](clear-element-for-listeners-for-source.md)

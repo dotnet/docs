@@ -8,7 +8,7 @@ dev_langs:
 ---
 # Obtaining a DbProviderFactory
 
-The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method creates a strongly typed provider factory. For example, to create a <xref:System.Data.SqlClient.SqlClientFactory>, you can pass `GetFactory` a string with the provider name specified as "System.Data.SqlClient". The other overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you create the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A>, and <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>.
+The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory*> method creates a strongly typed provider factory. For example, to create a <xref:System.Data.SqlClient.SqlClientFactory>, you can pass `GetFactory` a string with the provider name specified as "System.Data.SqlClient". The other overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you create the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection*>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand*>, and <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter*>.
 
 > [!NOTE]
 > The <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory>, and <xref:System.Data.OleDb.OleDbFactory> classes also provide similar functionality.
@@ -34,7 +34,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 ## Retrieving Provider Information
 
- You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A> method. It returns a <xref:System.Data.DataTable> named `DbProviderFactories` that contains the columns described in the following table.
+ You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses*> method. It returns a <xref:System.Data.DataTable> named `DbProviderFactories` that contains the columns described in the following table.
 
 | Column ordinal | Column name     | Example output                             | Description                               |
 |----------------|-----------------|--------------------------------------------|-------------------------------------------|
@@ -43,11 +43,11 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 | 2              | `InvariantName` | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
 | 3              | `AssemblyQualifiedName` | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
 
- This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at runtime. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
+ This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at runtime. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory*> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
 
 ## Listing the Installed Provider Factory Classes
 
- This example demonstrates how to use the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A> method to return a <xref:System.Data.DataTable> containing information about the installed providers. The code iterates through each row in the `DataTable`, displaying information for each installed provider in the console window.
+ This example demonstrates how to use the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses*> method to return a <xref:System.Data.DataTable> containing information about the installed providers. The code iterates through each row in the `DataTable`, displaying information for each installed provider in the console window.
 
  [!code-csharp[DataWorks DbProviderFactories#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories/CS/source.cs#1)]
  [!code-vb[DataWorks DbProviderFactories#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories/VB/source.vb#1)]
@@ -81,7 +81,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 ### Retrieve a Connection String by Provider Name
 
- In order to create a provider factory, you must supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the provider name in the invariant format "*System.Data.ProviderName*". The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
+ In order to create a provider factory, you must supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the provider name in the invariant format "*System.Data.ProviderName*". The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the <xref:System.Configuration.ConnectionStringSettings.ProviderName*> on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
 
 > [!NOTE]
 > A reference to `System.Configuration.dll` is required in order for the code to run.
@@ -93,7 +93,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
  This example demonstrates how to create a <xref:System.Data.Common.DbProviderFactory> and <xref:System.Data.Common.DbConnection> object by passing it the provider name in the format "*System.Data.ProviderName*" and a connection string. A `DbConnection` object is returned on success; `null` (`Nothing` in Visual Basic) on any error.
 
- The code obtains the `DbProviderFactory` by calling <xref:System.Data.Common.DbProviderFactories.GetFactory%2A>. Then the <xref:System.Data.Common.DbProviderFactory.CreateConnection%2A> method creates the <xref:System.Data.Common.DbConnection> object and the <xref:System.Data.Common.DbConnection.ConnectionString> property is set to the connection string.
+ The code obtains the `DbProviderFactory` by calling <xref:System.Data.Common.DbProviderFactories.GetFactory*>. Then the <xref:System.Data.Common.DbProviderFactory.CreateConnection*> method creates the <xref:System.Data.Common.DbConnection> object and the <xref:System.Data.Common.DbConnection.ConnectionString> property is set to the connection string.
 
  [!code-csharp[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/CS/source.cs#1)]
  [!code-vb[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/VB/source.vb#1)]

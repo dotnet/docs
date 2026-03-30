@@ -17,20 +17,20 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 
 ## Microsoft.VisualBasic.Collection Class
 
-- <xref:Microsoft.VisualBasic.Collection.Add%2A>
-- <xref:Microsoft.VisualBasic.Collection.Clear%2A>
-- <xref:Microsoft.VisualBasic.Collection.Contains%2A>
-- <xref:Microsoft.VisualBasic.Collection.Count%2A>
-- <xref:Microsoft.VisualBasic.Collection.GetEnumerator%2A>
-- <xref:Microsoft.VisualBasic.Collection.Item%2A>
-- <xref:Microsoft.VisualBasic.Collection.Remove%2A>
+- <xref:Microsoft.VisualBasic.Collection.Add*>
+- <xref:Microsoft.VisualBasic.Collection.Clear*>
+- <xref:Microsoft.VisualBasic.Collection.Contains*>
+- <xref:Microsoft.VisualBasic.Collection.Count*>
+- <xref:Microsoft.VisualBasic.Collection.GetEnumerator*>
+- <xref:Microsoft.VisualBasic.Collection.Item*>
+- <xref:Microsoft.VisualBasic.Collection.Remove*>
 
 ## Microsoft.VisualBasic.ComClassAttribute Class
 
-- <xref:Microsoft.VisualBasic.ComClassAttribute.ClassID%2A>
-- <xref:Microsoft.VisualBasic.ComClassAttribute.EventID%2A>
-- <xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceID%2A>
-- <xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows%2A>
+- <xref:Microsoft.VisualBasic.ComClassAttribute.ClassID*>
+- <xref:Microsoft.VisualBasic.ComClassAttribute.EventID*>
+- <xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceID*>
+- <xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows*>
 
 ## Microsoft.VisualBasic.ControlChars Class
 
@@ -408,266 +408,266 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 
 ## Microsoft.VisualBasic.Conversion Module
 
-- <xref:Microsoft.VisualBasic.Conversion.ErrorToString%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Int%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Str%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- <xref:Microsoft.VisualBasic.Conversion.ErrorToString*>
+- <xref:Microsoft.VisualBasic.Conversion.Fix*>
+- <xref:Microsoft.VisualBasic.Conversion.Hex*>
+- <xref:Microsoft.VisualBasic.Conversion.Int*>
+- <xref:Microsoft.VisualBasic.Conversion.Oct*>
+- <xref:Microsoft.VisualBasic.Conversion.Str*>
+- <xref:Microsoft.VisualBasic.Conversion.Val*>
 
 ## Microsoft.VisualBasic.DateAndTime Module
 
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DateAdd%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DateAdd*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DateDiff%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DateDiff*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DatePart*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DateSerial%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.DateValue%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Day%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Hour%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DateSerial*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Minute%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DateString*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Month%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.DateValue*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.MonthName%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Day*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Second%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.TimeSerial%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Hour*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Minute*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.TimeValue%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Month*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Today%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.MonthName*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Weekday%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Now*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.WeekdayName%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.Second*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.DateAndTime.Year%2A>
+      <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.Timer*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.TimeSerial*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.TimeString*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.TimeValue*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.Today*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.Weekday*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.WeekdayName*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.DateAndTime.Year*>
    :::column-end:::
 :::row-end:::
 
 ## Microsoft.VisualBasic.ErrObject Class
 
-- <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Erl%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.GetException%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.HelpContext%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.HelpFile%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Clear*>
+- <xref:Microsoft.VisualBasic.ErrObject.Description*>
+- <xref:Microsoft.VisualBasic.ErrObject.Erl*>
+- <xref:Microsoft.VisualBasic.ErrObject.GetException*>
+- <xref:Microsoft.VisualBasic.ErrObject.HelpContext*>
+- <xref:Microsoft.VisualBasic.ErrObject.HelpFile*>
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError*>
+- <xref:Microsoft.VisualBasic.ErrObject.Number*>
+- <xref:Microsoft.VisualBasic.ErrObject.Raise*>
 
 ## Microsoft.VisualBasic.FileSystem Module
 
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.ChDir%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.ChDir*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.ChDrive%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.ChDrive*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.CurDir%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.CurDir*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Dir%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.EOF%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileAttr%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileClose%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileCopy%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.Dir*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileDateTime%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.EOF*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileGet%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileAttr*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileGetObject%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileClose*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileLen%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FilePut%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FileWidth%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileCopy*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.FreeFile%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileDateTime*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.GetAttr%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileGet*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Input%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileGetObject*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.InputString%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Kill%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.LineInput%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Loc%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Lock%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileLen*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.LOF%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileOpen*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.MkDir%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FilePut*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Print%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FilePutObject*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.PrintLine%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Rename%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Reset%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.RmDir%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Seek%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FileWidth*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.FreeFile*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.SPC%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.GetAttr*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.TAB%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.Input*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Unlock%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.InputString*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.Write%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.Kill*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.FileSystem.WriteLine%2A>
+      <xref:Microsoft.VisualBasic.FileSystem.LineInput*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Loc*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Lock*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.LOF*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.MkDir*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Print*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.PrintLine*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Rename*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Reset*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.RmDir*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Seek*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.SetAttr*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.SPC*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.TAB*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Unlock*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.Write*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.FileSystem.WriteLine*>
    :::column-end:::
 :::row-end:::
 
 ## Microsoft.VisualBasic.Financial Module
 
-- <xref:Microsoft.VisualBasic.Financial.DDB%2A>
-- <xref:Microsoft.VisualBasic.Financial.FV%2A>
-- <xref:Microsoft.VisualBasic.Financial.IPmt%2A>
-- <xref:Microsoft.VisualBasic.Financial.IRR%2A>
-- <xref:Microsoft.VisualBasic.Financial.MIRR%2A>
-- <xref:Microsoft.VisualBasic.Financial.NPer%2A>
-- <xref:Microsoft.VisualBasic.Financial.NPV%2A>
-- <xref:Microsoft.VisualBasic.Financial.Pmt%2A>
-- <xref:Microsoft.VisualBasic.Financial.PPmt%2A>
-- <xref:Microsoft.VisualBasic.Financial.PV%2A>
-- <xref:Microsoft.VisualBasic.Financial.Rate%2A>
-- <xref:Microsoft.VisualBasic.Financial.SLN%2A>
-- <xref:Microsoft.VisualBasic.Financial.SYD%2A>
+- <xref:Microsoft.VisualBasic.Financial.DDB*>
+- <xref:Microsoft.VisualBasic.Financial.FV*>
+- <xref:Microsoft.VisualBasic.Financial.IPmt*>
+- <xref:Microsoft.VisualBasic.Financial.IRR*>
+- <xref:Microsoft.VisualBasic.Financial.MIRR*>
+- <xref:Microsoft.VisualBasic.Financial.NPer*>
+- <xref:Microsoft.VisualBasic.Financial.NPV*>
+- <xref:Microsoft.VisualBasic.Financial.Pmt*>
+- <xref:Microsoft.VisualBasic.Financial.PPmt*>
+- <xref:Microsoft.VisualBasic.Financial.PV*>
+- <xref:Microsoft.VisualBasic.Financial.Rate*>
+- <xref:Microsoft.VisualBasic.Financial.SLN*>
+- <xref:Microsoft.VisualBasic.Financial.SYD*>
 
 ## Microsoft.VisualBasic.Globals Module
 
-- <xref:Microsoft.VisualBasic.Globals.ScriptEngine%2A>
-- <xref:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion%2A>
-- <xref:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion%2A>
-- <xref:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion%2A>
+- <xref:Microsoft.VisualBasic.Globals.ScriptEngine*>
+- <xref:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion*>
+- <xref:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion*>
+- <xref:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion*>
 
 ## Microsoft.VisualBasic.HideModuleNameAttribute Class
 
@@ -677,63 +677,63 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.Erl%2A>
+      <xref:Microsoft.VisualBasic.Information.Erl*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.Err%2A>
+      <xref:Microsoft.VisualBasic.Information.Err*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsArray%2A>
+      <xref:Microsoft.VisualBasic.Information.IsArray*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsDate%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsDBNull%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsError%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsNothing%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsNumeric%2A>
+      <xref:Microsoft.VisualBasic.Information.IsDate*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.IsReference%2A>
+      <xref:Microsoft.VisualBasic.Information.IsDBNull*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.LBound%2A>
+      <xref:Microsoft.VisualBasic.Information.IsError*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.QBColor%2A>
+      <xref:Microsoft.VisualBasic.Information.IsNothing*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.RGB%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.SystemTypeName%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.TypeName%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.UBound%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.VarType%2A>
+      <xref:Microsoft.VisualBasic.Information.IsNumeric*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Information.VbTypeName%2A>
+      <xref:Microsoft.VisualBasic.Information.IsReference*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.LBound*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.QBColor*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.RGB*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.SystemTypeName*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.TypeName*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.UBound*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.VarType*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Information.VbTypeName*>
    :::column-end:::
 :::row-end:::
 
@@ -741,204 +741,204 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>
+      <xref:Microsoft.VisualBasic.Interaction.AppActivate*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Beep%2A>
+      <xref:Microsoft.VisualBasic.Interaction.Beep*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
+      <xref:Microsoft.VisualBasic.Interaction.CallByName*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Command%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.DeleteSetting%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Environ%2A>
+      <xref:Microsoft.VisualBasic.Interaction.Choose*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.GetAllSettings%2A>
+      <xref:Microsoft.VisualBasic.Interaction.Command*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.GetObject%2A>
+      <xref:Microsoft.VisualBasic.Interaction.CreateObject*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.GetSetting%2A>
+      <xref:Microsoft.VisualBasic.Interaction.DeleteSetting*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.IIf%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Partition%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.SaveSetting%2A>
+      <xref:Microsoft.VisualBasic.Interaction.Environ*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Shell%2A>
+      <xref:Microsoft.VisualBasic.Interaction.GetAllSettings*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Interaction.Switch%2A>
+      <xref:Microsoft.VisualBasic.Interaction.GetObject*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.GetSetting*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.IIf*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.InputBox*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.MsgBox*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.Partition*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.SaveSetting*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.Shell*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Interaction.Switch*>
    :::column-end:::
 :::row-end:::
 
 ## Microsoft.VisualBasic.MyGroupCollectionAttribute Class
 
-- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.CreateMethod%2A>
-- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias%2A>
-- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod%2A>
-- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName%2A>
+- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.CreateMethod*>
+- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias*>
+- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod*>
+- <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName*>
 
 ## Microsoft.VisualBasic.Strings Module
 
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+      <xref:Microsoft.VisualBasic.Strings.Asc*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+      <xref:Microsoft.VisualBasic.Strings.Asc*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Chr%2A>
+      <xref:Microsoft.VisualBasic.Strings.Chr*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Filter%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Format%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.FormatCurrency%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.FormatDateTime%2A>
+      <xref:Microsoft.VisualBasic.Strings.ChrW*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.FormatNumber%2A>
+      <xref:Microsoft.VisualBasic.Strings.Filter*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.FormatPercent%2A>
+      <xref:Microsoft.VisualBasic.Strings.Format*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.GetChar%2A>
+      <xref:Microsoft.VisualBasic.Strings.FormatCurrency*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.InStr%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Join%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.LCase%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Left%2A>
+      <xref:Microsoft.VisualBasic.Strings.FormatDateTime*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Len%2A>
+      <xref:Microsoft.VisualBasic.Strings.FormatNumber*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.LSet%2A>
+      <xref:Microsoft.VisualBasic.Strings.FormatPercent*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.LTrim%2A>
+      <xref:Microsoft.VisualBasic.Strings.GetChar*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Mid%2A>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Replace%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Right%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.RSet%2A>
-   :::column-end:::
-   :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.RTrim%2A>
+      <xref:Microsoft.VisualBasic.Strings.InStr*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Space%2A>
+      <xref:Microsoft.VisualBasic.Strings.InStrRev*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Split%2A>
+      <xref:Microsoft.VisualBasic.Strings.Join*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
+      <xref:Microsoft.VisualBasic.Strings.LCase*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.StrConv%2A>
+      <xref:Microsoft.VisualBasic.Strings.Left*>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.StrDup%2A>
+      <xref:Microsoft.VisualBasic.Strings.Len*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.StrReverse%2A>
+      <xref:Microsoft.VisualBasic.Strings.LSet*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.Trim%2A>
+      <xref:Microsoft.VisualBasic.Strings.LTrim*>
    :::column-end:::
    :::column span="":::
-      <xref:Microsoft.VisualBasic.Strings.UCase%2A>
+      <xref:Microsoft.VisualBasic.Strings.Mid*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.Replace*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.Right*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.RSet*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.RTrim*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.Space*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.Split*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.StrComp*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.StrConv*>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.StrDup*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.StrReverse*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.Trim*>
+   :::column-end:::
+   :::column span="":::
+      <xref:Microsoft.VisualBasic.Strings.UCase*>
    :::column-end:::
 :::row-end:::
 
 ## Microsoft.VisualBasic.VBFixedArrayAttribute Class
 
-- <xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Bounds%2A>
-- <xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Length%2A>
+- <xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Bounds*>
+- <xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Length*>
 
 ## Microsoft.VisualBasic.VBFixedStringAttribute Class
 
-- <xref:Microsoft.VisualBasic.VBFixedStringAttribute.Length%2A>
+- <xref:Microsoft.VisualBasic.VBFixedStringAttribute.Length*>
 
 ## Microsoft.VisualBasic.VbMath Module
 
-- <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>
-- <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
+- <xref:Microsoft.VisualBasic.VBMath.Randomize*>
+- <xref:Microsoft.VisualBasic.VBMath.Rnd*>
 
 ## Microsoft.VisualBasic Constants and Enumerations
 

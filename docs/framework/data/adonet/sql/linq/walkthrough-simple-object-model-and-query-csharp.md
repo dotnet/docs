@@ -72,7 +72,7 @@ This walkthrough uses assemblies that might not be installed by default in your 
 
 ## Mapping a Class to a Database Table
 
-In this step, you create a class and map it to a database table. Such a class is termed an *entity class*. Note that the mapping is accomplished by just adding the <xref:System.Data.Linq.Mapping.TableAttribute> attribute. The <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> property specifies the name of the table in the database.
+In this step, you create a class and map it to a database table. Such a class is termed an *entity class*. Note that the mapping is accomplished by just adding the <xref:System.Data.Linq.Mapping.TableAttribute> attribute. The <xref:System.Data.Linq.Mapping.TableAttribute.Name> property specifies the name of the table in the database.
 
 ### To create an entity class and map it to a database table
 

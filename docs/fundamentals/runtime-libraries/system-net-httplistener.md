@@ -45,7 +45,7 @@ The <xref:System.Net.HttpListener> class is built on top of `HTTP.sys`, which is
 `HTTP.sys` provides connection management, bandwidth throttling, and web server logging.
 Use the [HttpCfg.exe](/windows/win32/http/httpcfg-exe) tool to add SSL certificates.
 
-Starting in .NET 11, the Windows `HTTP.sys` implementation of <xref:System.Net.HttpListener> supports enabling kernel-level response buffering. When enabled, response data is buffered by `HTTP.sys` before being sent to the client, which can improve throughput for high-latency connections. This can be enabled by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method as follows:
+Starting in .NET 11, the Windows `HTTP.sys` implementation of <xref:System.Net.HttpListener> supports enabling kernel-level response buffering. When enabled, response data is buffered by `HTTP.sys` before being sent to the client, which can improve throughput for high-latency connections. This can be enabled by calling the <xref:System.AppContext.SetSwitch*?displayProperty=nameWithType> method as follows:
 
    ```csharp
    AppContext.SetSwitch("System.Net.HttpListener.EnableKernelResponseBuffering", true);

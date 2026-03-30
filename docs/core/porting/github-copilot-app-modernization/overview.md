@@ -137,7 +137,7 @@ Copilot examines your project structure, dependencies, and code patterns to buil
 - **Planning stage (`plan.md`)**\
 Copilot converts the assessment into a detailed specification that explains how to resolve every problem. The plan documents upgrade strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
 
-- **Execution stage (`tasks.md`)**\
+- **Execution stage (`progress.md`)**\
 Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot confirms it succeeded.
 
 Edit any of the Markdown files in `.github/upgrades` to adjust upgrade steps or add context before you move forward.
@@ -150,7 +150,7 @@ When you reach the **Execution stage**, tell Copilot to start the upgrade. If Co
 
 ### Upgrade results
 
-As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
+As Copilot runs each task, it updates the `progress.md` file in `.github/upgrades` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
 
 When the upgrade finishes, Copilot displays next steps in the chat response.
 

@@ -193,7 +193,7 @@ The two `SequencePosition` arguments are updated because `TryParseLines` removes
 * The end of the message.
 * The end of the received buffer if no message was found.
 
-The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or an infinite loop. For more information, see the [PipeReader common problems](#pipereader-common-problems) section in this article.
+The single message case has the most potential for errors. Passing the wrong values to *examined* might result in an out of memory exception or an infinite loop. For more information, see the [PipeReader common problems](#pipereader-common-problems) section in this article.
 
 > [!IMPORTANT]
 > `ReadSingleMessageAsync` doesn't call `PipeReader.CompleteAsync`. The caller is responsible for completing the `PipeReader`. Calling `PipeReader.CompleteAsync` inside `ReadSingleMessageAsync` signals that no more data can be read, which prevents reading subsequent messages.
@@ -218,16 +218,16 @@ Because `ProcessMessagesAsync` owns the complete message-reading loop, it calls 
 
 ### PipeReader common problems
 
-* Passing the wrong values to `consumed` or `examined` can result in reading already read data.
-* Passing `buffer.End` as examined can result in:
+* Passing the wrong values to `consumed` or `examined` might result in reading already read data.
+* Passing `buffer.End` as examined might result in:
 
   * Stalled data
-  * Possibly an eventual Out of Memory (OOM) exception if data isn't consumed. For example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.
+  * An eventual out-of-memory (OOM) exception if data isn't consumed. For example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.
 
-* Passing the wrong values to `consumed` or `examined` can result in an infinite loop. For example, `PipeReader.AdvanceTo(buffer.Start)` if `buffer.Start` hasn't changed causes the next call to <xref:System.IO.Pipelines.PipeReader.ReadAsync*?displayProperty=nameWithType> to return immediately before new data arrives.
-* Passing the wrong values to `consumed` or `examined` can result in infinite buffering (eventual OOM).
-* Using <xref:System.Buffers.ReadOnlySequence`1> after calling <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> can result in memory corruption (use after free).
-* Failing to call <xref:System.IO.Pipelines.PipeReader.Complete*>/<xref:System.IO.Pipelines.PipeReader.CompleteAsync*> can result in a memory leak.
+* Passing the wrong values to `consumed` or `examined` might result in an infinite loop. For example, `PipeReader.AdvanceTo(buffer.Start)` if `buffer.Start` hasn't changed causes the next call to <xref:System.IO.Pipelines.PipeReader.ReadAsync*?displayProperty=nameWithType> to return immediately before new data arrives.
+* Passing the wrong values to `consumed` or `examined` might result in infinite buffering (eventual OOM).
+* Using <xref:System.Buffers.ReadOnlySequence`1> after calling <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> might result in memory corruption (use after free).
+* Failing to call <xref:System.IO.Pipelines.PipeReader.Complete*>/<xref:System.IO.Pipelines.PipeReader.CompleteAsync*> might result in a memory leak.
 * Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this incorrectly could result in an infinite loop.
 
 #### Problematic code
@@ -244,7 +244,7 @@ The `ReadResult` can return the final segment of data when `IsCompleted` is set 
 
 ❌ **Infinite loop**
 
-The following logic can result in an infinite loop if the `Result.IsCompleted` is `true` but there's never a complete message in the buffer.
+The following logic might result in an infinite loop if the `Result.IsCompleted` is `true` but there's never a complete message in the buffer.
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
@@ -262,7 +262,7 @@ Here's another piece of code with the same problem. It's checking for a non-empt
 
 ❌ **Unresponsive application**
 
-Unconditionally calling <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> with `buffer.End` in the `examined` position can result in the application becoming unresponsive when parsing a single message. The next call to <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> won't return until:
+Unconditionally calling <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> with `buffer.End` in the `examined` position might result in the application becoming unresponsive when parsing a single message. The next call to <xref:System.IO.Pipelines.PipeReader.AdvanceTo*?displayProperty=nameWithType> won't return until:
 
 * There's more data written to the pipe.
 * And the new data wasn't previously examined.
@@ -328,7 +328,7 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. It
 * Successive calls aren't guaranteed to return the same buffer or the same-sized buffer.
 * A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance*> to continue writing more data. The previously acquired buffer can't be written to.
 * Calling <xref:System.IO.Pipelines.PipeWriter.GetMemory*> or <xref:System.IO.Pipelines.PipeWriter.GetSpan*> while there's an incomplete call to <xref:System.IO.Pipelines.PipeWriter.FlushAsync*> isn't safe.
-* Calling <xref:System.IO.Pipelines.PipeWriter.Complete*> or <xref:System.IO.Pipelines.PipeWriter.CompleteAsync*> while there's unflushed data can result in memory corruption.
+* Calling <xref:System.IO.Pipelines.PipeWriter.Complete*> or <xref:System.IO.Pipelines.PipeWriter.CompleteAsync*> while there's unflushed data might result in memory corruption.
 
 ## Tips for PipeReader and PipeWriter
 

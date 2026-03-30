@@ -157,10 +157,25 @@ try {
         $rawFileContent -split '\n'
     }
 
-    # Detect indentation from a sample source_path line in the file
-    $sampleFieldLine = $lines | Where-Object { $_ -match '^\s+"source_path' } | Select-Object -First 1
-    $fieldIndent = if ($sampleFieldLine -match '^(\s+)') { $Matches[1] } else { "        " }
-    $entryIndent = if ($fieldIndent.Length -ge 4) { $fieldIndent.Substring(0, $fieldIndent.Length - 4) } else { "" }
+    # Detect indentation from a sample source_path line and the entry { line above it
+    $sampleFieldLineIdx = -1
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+        if ($lines[$i] -match '^\s+"source_path') {
+            $sampleFieldLineIdx = $i
+            break
+        }
+    }
+    $fieldIndent = if ($sampleFieldLineIdx -ge 0 -and $lines[$sampleFieldLineIdx] -match '^(\s+)') { $Matches[1] } else { "        " }
+    # Walk back from the field line to find the entry's opening { and use its indentation
+    $entryIndent = ""
+    if ($sampleFieldLineIdx -ge 1) {
+        for ($i = $sampleFieldLineIdx - 1; $i -ge 0; $i--) {
+            if ($lines[$i] -match '^(\s*)\{\s*$') {
+                $entryIndent = $Matches[1]
+                break
+            }
+        }
+    }
 
     # Core lines of the new entry (closing brace has no comma yet - added below per context)
     $newEntryCore = @(

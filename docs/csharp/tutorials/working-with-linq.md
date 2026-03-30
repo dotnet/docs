@@ -38,17 +38,17 @@ If you've never used C# before, [this tutorial](console-teleprompter.md) explain
 > [!TIP]
 > For this tutorial, you can organize your code in a namespace called `LinqFaroShuffle` to match the sample code, or you can use the default global namespace. If you choose to use a namespace, make sure all your classes and methods are consistently within the same namespace, or add appropriate `using` statements as needed.
 
-Consider what constitutes a deck of cards. A deck of playing cards has four suits, and each suit has 13 values. Normally, you might consider creating a `Card` class right away and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of creating a deck of cards. Instead of creating a `Card` class, create two sequences to represent suits and ranks. Create a pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
+Consider what constitutes a deck of cards. A deck of playing cards has four suits, and each suit has 13 values. Normally, you might consider creating a `Card` class right away and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of creating a deck of cards. Instead of creating a `Card` class, create two sequences to represent suits and ranks. Create a pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable`1>s of strings:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepOne":::
 
-Place these methods under the `Console.WriteLine` statement in your `Program.cs` file. These two methods both use the `yield return` syntax to produce a sequence as they run. The compiler builds an object that implements <xref:System.Collections.Generic.IEnumerable%601> and generates the sequence of strings as they're requested.
+Place these methods under the `Console.WriteLine` statement in your `Program.cs` file. These two methods both use the `yield return` syntax to produce a sequence as they run. The compiler builds an object that implements <xref:System.Collections.Generic.IEnumerable`1> and generates the sequence of strings as they're requested.
 
 Now, use these iterator methods to create the deck of cards. Place the LINQ query at the top of the `Program.cs` file. Here's what it looks like:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepTwo":::
 
-The multiple `from` clauses produce a <xref:System.Linq.Enumerable.SelectMany%2A>, which creates a single sequence from combining each element in the first sequence with each element in the second sequence. The order is important for this example. The first element in the first source sequence (Suits) is combined with every element in the second sequence (Ranks). This process produces all 13 cards of first suit. That process is repeated with each element in the first sequence (Suits). The end result is a deck of cards ordered by suits, followed by values.
+The multiple `from` clauses produce a <xref:System.Linq.Enumerable.SelectMany*>, which creates a single sequence from combining each element in the first sequence with each element in the second sequence. The order is important for this example. The first element in the first source sequence (Suits) is combined with every element in the second sequence (Ranks). This process produces all 13 cards of first suit. That process is repeated with each element in the first sequence (Suits). The end result is a deck of cards ordered by suits, followed by values.
 
 Keep in mind that whether you write your LINQ in the query syntax used in the preceding sample or use method syntax instead, it's always possible to go from one form of syntax to the other. The preceding query written in query syntax can be written in method syntax as:
 
@@ -64,13 +64,13 @@ Run the sample you built at this point. It displays all 52 cards in the deck. Yo
 
 ## Manipulate the order
 
-Next, focus on how you shuffle the cards in the deck. The first step in any good shuffle is to split the deck in two. The <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods that are part of the LINQ APIs provide that feature. Place them following the `foreach` loop:
+Next, focus on how you shuffle the cards in the deck. The first step in any good shuffle is to split the deck in two. The <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> methods that are part of the LINQ APIs provide that feature. Place them following the `foreach` loop:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepThree":::
 
 However, there's no shuffle method to take advantage of in the standard library, so you need to write your own. The shuffle method you create illustrates several techniques that you use with LINQ-based programs, so each part of this process is explained in steps.
 
-To add functionality to how you interact with the <xref:System.Collections.Generic.IEnumerable%601> results of LINQ queries, you write some special kinds of methods called [extension methods](../programming-guide/classes-and-structs/extension-methods.md). An extension method is a special purpose *static method* that adds new functionality to an already-existing type without having to modify the original type you want to add functionality to.
+To add functionality to how you interact with the <xref:System.Collections.Generic.IEnumerable`1> results of LINQ queries, you write some special kinds of methods called [extension methods](../programming-guide/classes-and-structs/extension-methods.md). An extension method is a special purpose *static method* that adds new functionality to an already-existing type without having to modify the original type you want to add functionality to.
 
 Give your extension methods a new home by adding a new *static* class file to your program called `Extensions.cs`, and then start building out the first extension method:
 
@@ -89,9 +89,9 @@ public IEnumerable<T> InterleaveSequenceWith(IEnumerable<T> second)
 
 You call the method as though it were a member method of the extended type. This method declaration also follows a standard idiom where the input and output types are `IEnumerable<T>`. That practice enables LINQ methods to be chained together to perform more complex queries.
 
-Since you split the deck into halves, you need to join those halves together. In code, this means you enumerate both of the sequences you acquired through <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> at once, *interleaving* the elements, and creating one sequence: your now-shuffled deck of cards. Writing a LINQ method that works with two sequences requires that you understand how <xref:System.Collections.Generic.IEnumerable%601> works.
+Since you split the deck into halves, you need to join those halves together. In code, this means you enumerate both of the sequences you acquired through <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> at once, *interleaving* the elements, and creating one sequence: your now-shuffled deck of cards. Writing a LINQ method that works with two sequences requires that you understand how <xref:System.Collections.Generic.IEnumerable`1> works.
 
-The <xref:System.Collections.Generic.IEnumerable%601> interface has one method: <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A>. The object returned by <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> has a method to move to the next element and a property that retrieves the current element in the sequence. You use those two members to enumerate the collection and return the elements. This Interleave method is an iterator method, so instead of building a collection and returning the collection, you use the `yield return` syntax shown in the preceding code.
+The <xref:System.Collections.Generic.IEnumerable`1> interface has one method: <xref:System.Collections.Generic.IEnumerable`1.GetEnumerator*>. The object returned by <xref:System.Collections.Generic.IEnumerable`1.GetEnumerator*> has a method to move to the next element and a property that retrieves the current element in the sequence. You use those two members to enumerate the collection and return the elements. This Interleave method is an iterator method, so instead of building a collection and returning the collection, you use the `yield return` syntax shown in the preceding code.
 
 Here's the implementation of that method:
 
@@ -119,7 +119,7 @@ Run the code you built so far and notice how the deck rearranges on each shuffle
 
 ## Optimizations
 
-The sample you built so far executes an *out shuffle*, where the top and bottom cards stay the same on each run. Let's make one change: use an *in shuffle* instead, where all 52 cards change position. For an in shuffle, you interleave the deck so that the first card in the bottom half becomes the first card in the deck. That means the last card in the top half becomes the bottom card. This change requires one line of code. Update the current shuffle query by switching the positions of <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A>. This change switches the order of the top and bottom halves of the deck:
+The sample you built so far executes an *out shuffle*, where the top and bottom cards stay the same on each run. Let's make one change: use an *in shuffle* instead, where all 52 cards change position. For an in shuffle, you interleave the deck so that the first card in the bottom half becomes the first card in the deck. That means the last card in the top half becomes the bottom card. This change requires one line of code. Update the current shuffle query by switching the positions of <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*>. This change switches the order of the top and bottom halves of the deck:
 
 ```csharp
 shuffledDeck = shuffledDeck.Skip(26).InterleaveSequenceWith(shuffledDeck.Take(26));
@@ -143,13 +143,13 @@ Next, instrument the definition of each query with a log message:
 
 Notice that you don't log every time you access a query. You log only when you create the original query. The program still takes a long time to run, but now you can see why. If you run out of patience running the in shuffle with logging turned on, switch back to the out shuffle. You still see the lazy evaluation effects. In one run, it executes 2,592 queries, including the value and suit generation.
 
-You can improve the performance of the code to reduce the number of executions you make. A simple fix is to *cache* the results of the original LINQ query that constructs the deck of cards. Currently, you're executing the queries again and again every time the do-while loop goes through an iteration, reconstructing the deck of cards and reshuffling it every time. To cache the deck of cards, apply the LINQ methods <xref:System.Linq.Enumerable.ToArray%2A> and <xref:System.Linq.Enumerable.ToList%2A>. When you append them to the queries, they perform the same actions you told them to, but now they store the results in an array or a list, depending on which method you choose to call. Append the LINQ method <xref:System.Linq.Enumerable.ToArray%2A> to both queries and run the program again:
+You can improve the performance of the code to reduce the number of executions you make. A simple fix is to *cache* the results of the original LINQ query that constructs the deck of cards. Currently, you're executing the queries again and again every time the do-while loop goes through an iteration, reconstructing the deck of cards and reshuffling it every time. To cache the deck of cards, apply the LINQ methods <xref:System.Linq.Enumerable.ToArray*> and <xref:System.Linq.Enumerable.ToList*>. When you append them to the queries, they perform the same actions you told them to, but now they store the results in an array or a list, depending on which method you choose to call. Append the LINQ method <xref:System.Linq.Enumerable.ToArray*> to both queries and run the program again:
 
 :::code source="snippets/console-linq/Program.cs" id="snippet1":::
 
 Now the out shuffle is down to 30 queries. Run again with the in shuffle and you see similar improvements: it now executes 162 queries.
 
-This example is **designed** to highlight the use cases where lazy evaluation can cause performance difficulties. While it's important to see where lazy evaluation can impact code performance, it's equally important to understand that not all queries should run eagerly. The performance hit you incur without using <xref:System.Linq.Enumerable.ToArray%2A> is because each new arrangement of the deck of cards is built from the previous arrangement. Using lazy evaluation means each new deck configuration is built from the original deck, even executing the code that built the `startingDeck`. That causes a large amount of extra work.
+This example is **designed** to highlight the use cases where lazy evaluation can cause performance difficulties. While it's important to see where lazy evaluation can impact code performance, it's equally important to understand that not all queries should run eagerly. The performance hit you incur without using <xref:System.Linq.Enumerable.ToArray*> is because each new arrangement of the deck of cards is built from the previous arrangement. Using lazy evaluation means each new deck configuration is built from the original deck, even executing the code that built the `startingDeck`. That causes a large amount of extra work.
 
 In practice, some algorithms run well using eager evaluation, and others run well using lazy evaluation. For daily usage, lazy evaluation is usually a better choice when the data source is a separate process, like a database engine. For databases, lazy evaluation allows more complex queries to execute only one round trip to the database process and back to the rest of your code. LINQ is flexible whether you choose to use lazy or eager evaluation, so measure your processes and pick whichever evaluation gives you the best performance.
 

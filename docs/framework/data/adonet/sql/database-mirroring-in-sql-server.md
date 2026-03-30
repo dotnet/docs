@@ -36,7 +36,7 @@ Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL 
 
 ## Retrieving the Current Server Name
 
- In the event of a failover, you can retrieve the name of the server to which the current connection is actually connected by using the <xref:System.Data.SqlClient.SqlConnection.DataSource%2A> property of a <xref:System.Data.SqlClient.SqlConnection> object. The following code fragment retrieves the name of the active server, assuming that the connection variable references an open <xref:System.Data.SqlClient.SqlConnection>.
+ In the event of a failover, you can retrieve the name of the server to which the current connection is actually connected by using the <xref:System.Data.SqlClient.SqlConnection.DataSource> property of a <xref:System.Data.SqlClient.SqlConnection> object. The following code fragment retrieves the name of the active server, assuming that the connection variable references an open <xref:System.Data.SqlClient.SqlConnection>.
 
  When a failover event occurs and the connection is switched to the mirror server, the `DataSource` property is updated to reflect the mirror name.
 

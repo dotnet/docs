@@ -13,7 +13,7 @@ ms.assetid: e491b9bf-741a-4296-9f51-76c25ddf6a82
 
  SQL cannot execute the variety of methods that might be locally available to your application. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to convert these local methods to equivalent operations and functions that are available inside the SQL environment. Most methods and operators on .NET Framework built-in types have direct translations to SQL commands. Some can be produced from the functions that are available. Those that cannot be produced generate runtime exceptions. For more information, see [SQL-CLR Type Mapping](sql-clr-type-mapping.md).
 
- In cases where a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query is insufficient for a specialized task, you can use the <xref:System.Data.Linq.DataContext.ExecuteQuery%2A> method to execute a SQL query, and then convert the result of your query directly into objects.
+ In cases where a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query is insufficient for a specialized task, you can use the <xref:System.Data.Linq.DataContext.ExecuteQuery*> method to execute a SQL query, and then convert the result of your query directly into objects.
 
 ## Example 1
 
@@ -26,7 +26,7 @@ ms.assetid: e491b9bf-741a-4296-9f51-76c25ddf6a82
 
 ## Example 2
 
- The <xref:System.Data.Linq.DataContext.ExecuteQuery%2A> method also allows for parameters. Use code such as the following to execute a parameterized query.
+ The <xref:System.Data.Linq.DataContext.ExecuteQuery*> method also allows for parameters. Use code such as the following to execute a parameterized query.
 
  [!code-csharp[DLinqQuerying#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs/Program.cs#5)]
  [!code-vb[DLinqQuerying#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#5)]

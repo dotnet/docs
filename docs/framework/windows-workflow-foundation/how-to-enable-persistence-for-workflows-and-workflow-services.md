@@ -9,7 +9,7 @@ This article describes how to enable persistence for workflows and workflow serv
 
 ## Enable persistence for workflows
 
-You can associate an instance store with a **WorkflowApplication** by using the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> property of the <xref:System.Activities.WorkflowApplication> class. The <xref:System.Activities.WorkflowApplication.Persist%2A> method saves or persists a workflow into the instance store associated with the application. The <xref:System.Activities.WorkflowApplication.Unload%2A> method persists a workflow into the instance store and then unloads the instance from the memory. The **Load** method loads a workflow into memory using the workflow data stored in the instance persistence store.
+You can associate an instance store with a **WorkflowApplication** by using the <xref:System.Activities.WorkflowApplication.InstanceStore> property of the <xref:System.Activities.WorkflowApplication> class. The <xref:System.Activities.WorkflowApplication.Persist*> method saves or persists a workflow into the instance store associated with the application. The <xref:System.Activities.WorkflowApplication.Unload*> method persists a workflow into the instance store and then unloads the instance from the memory. The **Load** method loads a workflow into memory using the workflow data stored in the instance persistence store.
 
 The **Persist** method performs the following steps:
 

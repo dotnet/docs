@@ -66,7 +66,7 @@ Add the application metadata to your `appsettings.json` file:
 
 ### Configure with IHostBuilder
 
-Use the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> extensions method to register application metadata, which populates `ApplicationName` and `EnvironmentName` values automatically from `IHostEnvironment`.
+Use the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata*> extensions method to register application metadata, which populates `ApplicationName` and `EnvironmentName` values automatically from `IHostEnvironment`.
 Optionally, you can provide values for `BuildVersion` and `DeploymentRing` via the `appsettings.json` file.
 
 The following table shows the metadata made available by the provider via <xref:Microsoft.Extensions.Configuration.IConfiguration>:

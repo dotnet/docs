@@ -52,7 +52,7 @@ Essentially, an inline anonymous function that can be used wherever a delegate t
 For more information, see [Lambda expressions (C# Programming Guide)](../../csharp/language-reference/operators/lambda-expressions.md) and [Lambda Expressions (Visual Basic))](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
 
 collection \
-A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator%601> or <xref:System.Linq.IQueryable%601>).
+A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator`1> or <xref:System.Linq.IQueryable`1>).
 
 tuple (anonymous types) \
 A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Anonymous types are a language implementation of this concept, which enable an unnamed class type to be declared and an object of that type to be instantiated at the same time.

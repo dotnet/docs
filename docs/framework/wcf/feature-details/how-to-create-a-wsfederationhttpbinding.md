@@ -42,9 +42,9 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 1. Create an instance of the <xref:System.ServiceModel.WSFederationHttpBinding>.
 
-2. Set the <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.WSFederationHttpSecurityMode> or <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> as required. If an algorithm suite other than <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A> is required, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite%2A> property to a value taken from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>.
+2. Set the <xref:System.ServiceModel.WSFederationHttpSecurity.Mode> property to <xref:System.ServiceModel.WSFederationHttpSecurityMode> or <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> as required. If an algorithm suite other than <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256*> is required, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite> property to a value taken from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>.
 
-3. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential%2A> property as appropriate.
+3. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential> property as appropriate.
 
 4. Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType> property to <xref:System.IdentityModel.Tokens.SecurityKeyType>`SymmetricKey` or .`AsymmetricKey` as required.
 
@@ -56,7 +56,7 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 8. Not used on the client; optional on the service. Create an <xref:System.ServiceModel.EndpointAddress> instance for the metadata of the security token service and assign it to the `IssuerMetadataAddress` property.
 
-9. Optional on both the client and the service. Create and add one or more <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A> property.
+9. Optional on both the client and the service. Create and add one or more <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements> property.
 
 10. Optional on both the client and the service. Create and add one or more <xref:System.Xml.XmlElement> instances to the collection returned by the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters> property.
 

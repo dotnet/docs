@@ -19,7 +19,7 @@ ms.topic: how-to
 
 # Perform culture-insensitive case changes
 
-The <xref:System.String.ToUpper%2A?displayProperty=nameWithType>, <xref:System.String.ToLower%2A?displayProperty=nameWithType>, <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>, and <xref:System.Char.ToLower%2A?displayProperty=nameWithType> methods provide overloads that do not accept any parameters. By default, these overloads without parameters perform case changes based on the value of the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType>. This produces case-sensitive results that can vary by culture. To make it clear whether you want case changes to be culture-sensitive or culture-insensitive, you should use the overloads of these methods that require you to explicitly specify a `culture` parameter. For culture-sensitive case changes, specify `CultureInfo.CurrentCulture` for the `culture` parameter. For culture-insensitive case changes, specify `CultureInfo.InvariantCulture` for the `culture` parameter.
+The <xref:System.String.ToUpper*?displayProperty=nameWithType>, <xref:System.String.ToLower*?displayProperty=nameWithType>, <xref:System.Char.ToUpper*?displayProperty=nameWithType>, and <xref:System.Char.ToLower*?displayProperty=nameWithType> methods provide overloads that do not accept any parameters. By default, these overloads without parameters perform case changes based on the value of the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType>. This produces case-sensitive results that can vary by culture. To make it clear whether you want case changes to be culture-sensitive or culture-insensitive, you should use the overloads of these methods that require you to explicitly specify a `culture` parameter. For culture-sensitive case changes, specify `CultureInfo.CurrentCulture` for the `culture` parameter. For culture-insensitive case changes, specify `CultureInfo.InvariantCulture` for the `culture` parameter.
 
 Often, strings are converted to a standard case to enable easier lookup later. When strings are used in this way, you should specify `CultureInfo.InvariantCulture` for the `culture` parameter, because the value of <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType> can potentially change between the time that the case is changed and the time that the lookup occurs.
 
@@ -65,10 +65,10 @@ Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteris
 
 ## See also
 
-- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>
-- <xref:System.String.ToLower%2A?displayProperty=nameWithType>
-- <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>
-- <xref:System.Char.ToLower%2A?displayProperty=nameWithType>
+- <xref:System.String.ToUpper*?displayProperty=nameWithType>
+- <xref:System.String.ToLower*?displayProperty=nameWithType>
+- <xref:System.Char.ToUpper*?displayProperty=nameWithType>
+- <xref:System.Char.ToLower*?displayProperty=nameWithType>
 - [CA1311: Specify a culture or use an invariant version](../../fundamentals/code-analysis/quality-rules/ca1311.md)
 - [Change case in .NET](../../standard/base-types/changing-case.md)
 - [Perform culture-insensitive string operations](performing-culture-insensitive-string-operations.md)

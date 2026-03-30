@@ -51,8 +51,8 @@ Defines the transport security settings for a named pipe.
 ## See also
 
 - <xref:System.ServiceModel.NamedPipeTransportSecurity>
-- <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport*>
+- <xref:System.ServiceModel.NetNamedPipeSecurity.Transport*>
 - <xref:System.ServiceModel.Configuration.NamedPipeTransportSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

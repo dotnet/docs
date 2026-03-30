@@ -84,7 +84,7 @@ To resolve an interpolated string to a culture-specific result string, use the <
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="CultureSpecific":::
 
-In .NET 5 and earlier versions of .NET, use implicit conversion of an interpolated string to a <xref:System.FormattableString> instance. Then, you can use an instance <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method or a static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a culture-specific result string. The following example shows how to do that:
+In .NET 5 and earlier versions of .NET, use implicit conversion of an interpolated string to a <xref:System.FormattableString> instance. Then, you can use an instance <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method or a static <xref:System.FormattableString.Invariant*?displayProperty=nameWithType> method to produce a culture-specific result string. The following example shows how to do that:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="CultureSpecificByFormattableString":::
 
@@ -101,9 +101,9 @@ The compiler checks if an interpolated string is assigned to a type that satisfi
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That behavior means side effects of those expressions might not occur.
 
-If an interpolated string has the type `string`, the compiler typically transforms it into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+If an interpolated string has the type `string`, the compiler typically transforms it into a <xref:System.String.Format*?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format*?displayProperty=nameWithType> with <xref:System.String.Concat*?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
-If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
+If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create*?displayProperty=nameWithType> method.
 
 ## C# language specification
 
@@ -119,6 +119,6 @@ For more information, see the [Interpolated string expressions](~/_csharpstandar
 - [Strings](../../programming-guide/strings/index.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
-- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.String.Format*?displayProperty=nameWithType>
 - [Simplify interpolation (style rule IDE0071)](../../../fundamentals/code-analysis/style-rules/ide0071.md)
 - [String interpolation in C# 10 and .NET 6 (.NET blog)](https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/)

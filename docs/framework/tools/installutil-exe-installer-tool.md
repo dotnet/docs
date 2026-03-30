@@ -41,7 +41,7 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 | Option                                      | Description                                       |
 |---------------------------------------------|---------------------------------------------------|
 | `/h[elp]`<br /><br /> -or-<br /><br /> `/?` | Displays command syntax and options for the tool. |
-|`/help` *assembly*<br /><br /> -or-<br /><br /> `/?` *assembly*|Displays additional options recognized by individual installers within the specified assembly, along with command syntax and options for InstallUtil.exe. This option adds the text returned by each installer component's <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property to the help text of InstallUtil.exe. For example, if <xref:System.ServiceProcess.ServiceProcessInstaller.Account?displayProperty=nameWithType> is `User`, the `/username` and `/password` options are available.|
+|`/help` *assembly*<br /><br /> -or-<br /><br /> `/?` *assembly*|Displays additional options recognized by individual installers within the specified assembly, along with command syntax and options for InstallUtil.exe. This option adds the text returned by each installer component's <xref:System.Configuration.Install.Installer.HelpText?displayProperty=nameWithType> property to the help text of InstallUtil.exe. For example, if <xref:System.ServiceProcess.ServiceProcessInstaller.Account?displayProperty=nameWithType> is `User`, the `/username` and `/password` options are available.|
 |`/AssemblyName` "*assemblyName*<br /><br /> ,Version=*major.minor.build.revision*<br /><br /> ,Culture=*locale*<br /><br /> ,PublicKeyToken=*publicKeyToken*"|Specifies the strong name of an assembly, which must be registered in the global assembly cache. The assembly name must be fully qualified with the version, culture, and public key token of the assembly. The fully qualified name must be surrounded by quotes.<br /><br /> For example, "myAssembly, Culture=neutral, PublicKeyToken=0038abc9deabfle5, Version=4.0.0.0" is a fully qualified assembly name.|
 |`/InstallStateDir=[` *directoryName* `]`|Specifies the directory of the .InstallState file that contains the data used to uninstall the assembly. The default is the directory that contains the assembly.|
 |`/LogFile=`[*filename*]|Specifies the name of the log file where installation progress is recorded. By default, if the `/LogFile` option is omitted, a log file named *assemblyname*.InstallLog is created. If *filename* is omitted, no log file is generated.|
@@ -54,7 +54,7 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 Individual installers used within an assembly may recognize options in addition to those listed in the [Options](#options) section. To learn about these options, run InstallUtil.exe with the paths of the assemblies on the command line along with the `/?` or `/help` option. To specify these options, you include them on the command line along with the options recognized by InstallUtil.exe.
 
 > [!NOTE]
-> Help text on the options supported by individual installer components is returned by the <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property. The individual options that have been entered on the command line are accessible programmatically from the <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> property.
+> Help text on the options supported by individual installer components is returned by the <xref:System.Configuration.Install.Installer.HelpText?displayProperty=nameWithType> property. The individual options that have been entered on the command line are accessible programmatically from the <xref:System.Configuration.Install.Installer.Context?displayProperty=nameWithType> property.
 
 All options and command-line parameters are written to the installation log file. However, if you use the `/Password` parameter, which is recognized by some installer components, the password information is replaced by eight asterisks (*) and won't appear in the log file.
 
@@ -70,10 +70,10 @@ You can specify multiple assemblies on the same command line. Any option that oc
 If you run Installutil.exe against an assembly without specifying any options, it places the following three files into the assembly's directory:
 
 - InstallUtil.InstallLog - Contains a general description of the installation progress.
-- *assemblyname*.InstallLog - Contains information specific to the commit phase of the installation process. For more information about the commit phase, see the <xref:System.Configuration.Install.Installer.Commit%2A> method.
+- *assemblyname*.InstallLog - Contains information specific to the commit phase of the installation process. For more information about the commit phase, see the <xref:System.Configuration.Install.Installer.Commit*> method.
 - *assemblyname*.InstallState - Contains data used to uninstall the assembly.
 
-Installutil.exe uses reflection to inspect the specified assemblies and to find all <xref:System.Configuration.Install.Installer> types that have the <xref:System.ComponentModel.RunInstallerAttribute?displayProperty=nameWithType> attribute set to `true`. The tool then executes either the <xref:System.Configuration.Install.Installer.Install%2A?displayProperty=nameWithType> or the <xref:System.Configuration.Install.Installer.Uninstall%2A?displayProperty=nameWithType> method on each instance of the <xref:System.Configuration.Install.Installer> type. Installutil.exe performs installation in a transactional manner; that is, if one of the assemblies fails to install, it rolls back the installations of all other assemblies. Uninstall is not transactional.
+Installutil.exe uses reflection to inspect the specified assemblies and to find all <xref:System.Configuration.Install.Installer> types that have the <xref:System.ComponentModel.RunInstallerAttribute?displayProperty=nameWithType> attribute set to `true`. The tool then executes either the <xref:System.Configuration.Install.Installer.Install*?displayProperty=nameWithType> or the <xref:System.Configuration.Install.Installer.Uninstall*?displayProperty=nameWithType> method on each instance of the <xref:System.Configuration.Install.Installer> type. Installutil.exe performs installation in a transactional manner; that is, if one of the assemblies fails to install, it rolls back the installations of all other assemblies. Uninstall is not transactional.
 
 Installutil.exe cannot install or uninstall delay-signed assemblies, but it can install or uninstall strong-named assemblies.
 
@@ -89,7 +89,7 @@ The following command displays a description of the command syntax and options f
 installutil /?
 ```
 
-The following command displays a description of the command syntax and options for InstallUtil.exe. It also displays a description and list of options supported by the installer components in `myAssembly.exe` if help text has been assigned to the installer's <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property.
+The following command displays a description of the command syntax and options for InstallUtil.exe. It also displays a description and list of options supported by the installer components in `myAssembly.exe` if help text has been assigned to the installer's <xref:System.Configuration.Install.Installer.HelpText?displayProperty=nameWithType> property.
 
 ```console
 installutil /? myAssembly.exe

@@ -5,14 +5,14 @@ ms.date: 10/04/2022
 ---
 # FileStream.Position updates after ReadAsync or WriteAsync completes
 
-<xref:System.IO.FileStream.Position?displayProperty=nameWithType> is now updated after <xref:System.IO.FileStream.ReadAsync%2A> or <xref:System.IO.FileStream.WriteAsync%2A> completes.
+<xref:System.IO.FileStream.Position?displayProperty=nameWithType> is now updated after <xref:System.IO.FileStream.ReadAsync*> or <xref:System.IO.FileStream.WriteAsync*> completes.
 
 ## Change description
 
 In previous .NET versions on Windows, <xref:System.IO.FileStream.Position?displayProperty=nameWithType> was updated after the asynchronous read or write operation started. Starting in .NET 6, <xref:System.IO.FileStream.Position?displayProperty=nameWithType> is updated optimistically:
 
-- After <xref:System.IO.FileStream.WriteAsync%2A> starts, but if the operation fails or is canceled, the position is corrected.
-- When <xref:System.IO.FileStream.ReadAsync%2A> starts, but if the entire buffer isn't read, the position is corrected after the operation completes.
+- After <xref:System.IO.FileStream.WriteAsync*> starts, but if the operation fails or is canceled, the position is corrected.
+- When <xref:System.IO.FileStream.ReadAsync*> starts, but if the entire buffer isn't read, the position is corrected after the operation completes.
 
 ## Version introduced
 
@@ -20,7 +20,7 @@ In previous .NET versions on Windows, <xref:System.IO.FileStream.Position?displa
 
 ## Reason for change
 
-<xref:System.IO.FileStream> has never been thread-safe, but until .NET 6, .NET has tried to support multiple concurrent calls to its asynchronous methods (<xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A>) on Windows.
+<xref:System.IO.FileStream> has never been thread-safe, but until .NET 6, .NET has tried to support multiple concurrent calls to its asynchronous methods (<xref:System.IO.FileStream.ReadAsync*> and <xref:System.IO.FileStream.WriteAsync*>) on Windows.
 
 This change was introduced to allow for 100% asynchronous file I/O with <xref:System.IO.FileStream> and to fix the following issues:
 

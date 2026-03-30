@@ -13,7 +13,7 @@ ms.topic: how-to
 
 This article shows how you can use the <xref:System.Text.Json.Utf8JsonReader> type for building custom parsers and deserializers.
 
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text. The text is read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. (The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods use `Utf8JsonReader` under the covers.)
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text. The text is read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. (The <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> methods use `Utf8JsonReader` under the covers.)
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class. This code assumes that the `jsonUtf8Bytes` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
@@ -59,7 +59,7 @@ When using the `Utf8JsonReader` to read from a stream, the following rules apply
 
 * The buffer containing the partial JSON payload must be at least as large as the largest JSON token within it so that the reader can make forward progress.
 * The buffer must be at least as large as the largest sequence of white space within the JSON.
-* The reader doesn't keep track of the data it has read until it completely reads the next <xref:System.Text.Json.Utf8JsonReader.TokenType> in the JSON payload. So when there are bytes left over in the buffer, you have to pass them to the reader again. You can use <xref:System.Text.Json.Utf8JsonReader.BytesConsumed%2A> to determine how many bytes are left over.
+* The reader doesn't keep track of the data it has read until it completely reads the next <xref:System.Text.Json.Utf8JsonReader.TokenType> in the JSON payload. So when there are bytes left over in the buffer, you have to pass them to the reader again. You can use <xref:System.Text.Json.Utf8JsonReader.BytesConsumed*> to determine how many bytes are left over.
 
 The following code illustrates how to read from a stream. The example shows a <xref:System.IO.MemoryStream>. Similar code will work with a <xref:System.IO.FileStream>, except when the `FileStream` contains a UTF-8 BOM at the start. In that case, you need to strip those three bytes from the buffer before passing the remaining bytes to the `Utf8JsonReader`. Otherwise the reader would throw an exception, since the BOM is not considered a valid part of the JSON.
 
@@ -74,7 +74,7 @@ The preceding example sets no limit to how large the buffer can grow. If the tok
 
 Because the `Utf8JsonReader` type is a `ref struct`, it has [certain limitations](../../../csharp/language-reference/builtin-types/ref-struct.md). For example, it can't be stored as a field on a class or struct other than a `ref struct`.
 
-To achieve high performance, `Utf8JsonReader` must be a `ref struct`, because it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) (which itself is a `ref struct`). In addition, the `Utf8JsonReader` type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing the `Utf8JsonReader` by value would result in a struct copy, and the state changes wouldn't be visible to the caller.
+To achieve high performance, `Utf8JsonReader` must be a `ref struct`, because it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan`1) (which itself is a `ref struct`). In addition, the `Utf8JsonReader` type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing the `Utf8JsonReader` by value would result in a struct copy, and the state changes wouldn't be visible to the caller.
 
 For more information about how to use ref structs, see [Avoid allocations](../../../csharp/advanced-topics/performance/index.md).
 
@@ -84,7 +84,7 @@ To achieve the best possible performance while using `Utf8JsonReader`, read JSON
 
 ## Read with multi-segment ReadOnlySequence
 
-If your JSON input is a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), each JSON element can be accessed from the `ValueSpan` property on the reader as you go through the read loop. However, if your input is a [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>), some JSON elements might straddle multiple segments of the `ReadOnlySequence<byte>` object. These elements would not be accessible from <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> in a contiguous memory block. Instead, whenever you have a multi-segment `ReadOnlySequence<byte>` as input, poll the <xref:System.Text.Json.Utf8JsonReader.HasValueSequence> property on the reader to figure out how to access the current JSON element. Here's a recommended pattern:
+If your JSON input is a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan`1), each JSON element can be accessed from the `ValueSpan` property on the reader as you go through the read loop. However, if your input is a [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence`1) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>), some JSON elements might straddle multiple segments of the `ReadOnlySequence<byte>` object. These elements would not be accessible from <xref:System.Text.Json.Utf8JsonReader.ValueSpan*> in a contiguous memory block. Instead, whenever you have a multi-segment `ReadOnlySequence<byte>` as input, poll the <xref:System.Text.Json.Utf8JsonReader.HasValueSequence> property on the reader to figure out how to access the current JSON element. Here's a recommended pattern:
 
 ```csharp
 while (reader.Read())
@@ -116,7 +116,7 @@ To stream multiple top-level values, use the <xref:System.Text.Json.JsonSerializ
 
 ## Property name lookups
 
-To look up property names, don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A>. Instead, call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A>, because this method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that's named "name":
+To look up property names, don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan*> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual*>. Instead, call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals*>, because this method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that's named "name":
 
 :::code language="csharp" source="snippets/how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
 
@@ -124,7 +124,7 @@ To look up property names, don't use <xref:System.Text.Json.Utf8JsonReader.Value
 
 ## Read null values into nullable value types
 
-The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean%2A?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
+The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean*?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
 
 ```csharp
 public bool? ReadAsNullableBoolean()
@@ -166,13 +166,13 @@ Use the <xref:System.Text.Json.Utf8JsonReader.Skip?displayProperty=nameWithType>
 
 ## Consume decoded JSON strings
 
-Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
+Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString*?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString*> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString*>.
 
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderCopyString.cs" id="Snippet1":::
 
 ## Related APIs
 
-* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](deserialization.md#deserialize-from-utf-8).
+* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](deserialization.md#deserialize-from-utf-8).
 
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it provide the ability to create a mutable DOM. You can convert a `Utf8JsonReader` instance to a `JsonNode` by calling <xref:System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})?displayProperty=nameWithType>. The following code snippet shows an example.
 

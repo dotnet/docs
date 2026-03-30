@@ -16,7 +16,7 @@ ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-The `streamWriterBufferedDataLost` managed debugging assistant (MDA) is activated when a <xref:System.IO.StreamWriter> is written to, but the <xref:System.IO.StreamWriter.Flush%2A> or <xref:System.IO.StreamWriter.Close%2A> method is not subsequently called before the instance of the <xref:System.IO.StreamWriter> is destroyed. When this MDA is enabled, the runtime determines whether any buffered data still exists within the <xref:System.IO.StreamWriter>. If buffered data does exist, the MDA is activated. Calling the <xref:System.GC.Collect%2A> and <xref:System.GC.WaitForPendingFinalizers%2A> methods can force finalizers to run. Finalizers will otherwise run at seemingly arbitrary times, and possibly not at all on process exit. Explicitly running finalizers with this MDA enabled will help to more reliably reproduce this type of problem.
+The `streamWriterBufferedDataLost` managed debugging assistant (MDA) is activated when a <xref:System.IO.StreamWriter> is written to, but the <xref:System.IO.StreamWriter.Flush*> or <xref:System.IO.StreamWriter.Close*> method is not subsequently called before the instance of the <xref:System.IO.StreamWriter> is destroyed. When this MDA is enabled, the runtime determines whether any buffered data still exists within the <xref:System.IO.StreamWriter>. If buffered data does exist, the MDA is activated. Calling the <xref:System.GC.Collect*> and <xref:System.GC.WaitForPendingFinalizers*> methods can force finalizers to run. Finalizers will otherwise run at seemingly arbitrary times, and possibly not at all on process exit. Explicitly running finalizers with this MDA enabled will help to more reliably reproduce this type of problem.
 
 ## Symptoms
 
@@ -24,7 +24,7 @@ The `streamWriterBufferedDataLost` managed debugging assistant (MDA) is activate
 
 ## Cause
 
- The <xref:System.IO.StreamWriter> buffers data internally, which requires that the <xref:System.IO.StreamWriter.Close%2A> or <xref:System.IO.StreamWriter.Flush%2A> method be called to write the buffered data to the underlying data store. If <xref:System.IO.StreamWriter.Close%2A> or <xref:System.IO.StreamWriter.Flush%2A> is not appropriately called, data buffered in the <xref:System.IO.StreamWriter> instance might not be written as expected.
+ The <xref:System.IO.StreamWriter> buffers data internally, which requires that the <xref:System.IO.StreamWriter.Close*> or <xref:System.IO.StreamWriter.Flush*> method be called to write the buffered data to the underlying data store. If <xref:System.IO.StreamWriter.Close*> or <xref:System.IO.StreamWriter.Flush*> is not appropriately called, data buffered in the <xref:System.IO.StreamWriter> instance might not be written as expected.
 
  The following is an example of poorly written code that this MDA should catch.
 
@@ -47,7 +47,7 @@ GC.WaitForPendingFinalizers();
 
 ## Resolution
 
- Make sure you call <xref:System.IO.StreamWriter.Close%2A> or <xref:System.IO.StreamWriter.Flush%2A> on the <xref:System.IO.StreamWriter> before closing an application or any code block that has an instance of a <xref:System.IO.StreamWriter>. One of the best mechanisms for achieving this is creating the instance with a C# `using` block (`Using` in Visual Basic), which will ensure the <xref:System.IO.StreamWriter.Dispose%2A> method for the writer is invoked, resulting in the instance being correctly closed.
+ Make sure you call <xref:System.IO.StreamWriter.Close*> or <xref:System.IO.StreamWriter.Flush*> on the <xref:System.IO.StreamWriter> before closing an application or any code block that has an instance of a <xref:System.IO.StreamWriter>. One of the best mechanisms for achieving this is creating the instance with a C# `using` block (`Using` in Visual Basic), which will ensure the <xref:System.IO.StreamWriter.Dispose*> method for the writer is invoked, resulting in the instance being correctly closed.
 
 ```csharp
 using(StreamWriter sw = new StreamWriter("file.txt"))
@@ -72,7 +72,7 @@ finally
 }
 ```
 
- If neither of these solutions can be used (for example, if a <xref:System.IO.StreamWriter> is stored in a static variable and you cannot easily run code at the end of its lifetime), then calling <xref:System.IO.StreamWriter.Flush%2A> on the <xref:System.IO.StreamWriter> after its last use or setting the <xref:System.IO.StreamWriter.AutoFlush%2A> property to `true` before its first use should avoid this problem.
+ If neither of these solutions can be used (for example, if a <xref:System.IO.StreamWriter> is stored in a static variable and you cannot easily run code at the end of its lifetime), then calling <xref:System.IO.StreamWriter.Flush*> on the <xref:System.IO.StreamWriter> after its last use or setting the <xref:System.IO.StreamWriter.AutoFlush> property to `true` before its first use should avoid this problem.
 
 ```csharp
 private static StreamWriter log;

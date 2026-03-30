@@ -123,13 +123,13 @@ Anonymous types support non-destructive mutation in the form of [with expression
 
 You can't declare a field, a property, an event, or the return type of a method as having an anonymous type. Similarly, you can't declare a formal parameter of a method, property, constructor, or indexer as having an anonymous type. To pass an anonymous type, or a collection that contains anonymous types, as an argument to a method, you can declare the parameter as type `object`. However, using `object` for anonymous types defeats the purpose of strong typing. If you must store query results or pass them outside the method boundary, consider using an ordinary named struct or class instead of an anonymous type.
 
-Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
+Because the <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
 
 > [!NOTE]
 > The [accessibility level](../../programming-guide/classes-and-structs/access-modifiers.md) of an anonymous type is `internal`. Hence, two anonymous types defined in different assemblies aren't of the same type.
 > Therefore, instances of anonymous types can't be equal to each other when defined in different assemblies, even when having all their properties equal.
 
-Anonymous types do override the <xref:System.Object.ToString%2A> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
+Anonymous types do override the <xref:System.Object.ToString*> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ToStringExample":::
 

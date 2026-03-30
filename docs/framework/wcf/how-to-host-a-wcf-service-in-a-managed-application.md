@@ -11,7 +11,7 @@ ms.assetid: 5eb29db0-b6dc-4e77-8c68-0a62f79d743b
 
 To host a service inside a managed application, embed the code for the service inside the managed application code, define an endpoint for the service either imperatively in code, declaratively through configuration, or using default endpoints, and then create an instance of <xref:System.ServiceModel.ServiceHost>.
 
-To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open%2A> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> on <xref:System.ServiceModel.ServiceHost>.
+To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open*> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close*?displayProperty=nameWithType> on <xref:System.ServiceModel.ServiceHost>.
 
 A service can also be hosted in a managed Windows service, in Internet Information Services (IIS), or in Windows Process Activation Service (WAS). For more information about hosting options for a service, see [Hosting Services](hosting-services.md).
 
@@ -52,7 +52,7 @@ The following procedure demonstrates how to implement a self-hosted service in a
      [!code-csharp[CFX_SelfHost4#3](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs/program.cs#3)]
      [!code-vb[CFX_SelfHost4#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#3)]
 
-6. Create an instance of the <xref:System.ServiceModel.ServiceHost> class, passing a <xref:System.Type> that represents the service type and the base address Uniform Resource Identifier (URI) to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29>. Enable metadata publishing, and then call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> to initialize the service and prepare it to receive messages.
+6. Create an instance of the <xref:System.ServiceModel.ServiceHost> class, passing a <xref:System.Type> that represents the service type and the base address Uniform Resource Identifier (URI) to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29>. Enable metadata publishing, and then call the <xref:System.ServiceModel.ICommunicationObject.Open*> method on the <xref:System.ServiceModel.ServiceHost> to initialize the service and prepare it to receive messages.
 
      [!code-csharp[CFX_SelfHost4#4](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs/program.cs#4)]
      [!code-vb[CFX_SelfHost4#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#4)]
@@ -84,7 +84,7 @@ The following procedure demonstrates how to implement a self-hosted service in a
 
 ## Example
 
-The following example creates a <xref:System.ServiceModel.ServiceHost> object to host a service of type `HelloWorldService`, and then calls the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on <xref:System.ServiceModel.ServiceHost>. A base address is provided in code, metadata publishing is enabled, and default endpoints are used.
+The following example creates a <xref:System.ServiceModel.ServiceHost> object to host a service of type `HelloWorldService`, and then calls the <xref:System.ServiceModel.ICommunicationObject.Open*> method on <xref:System.ServiceModel.ServiceHost>. A base address is provided in code, metadata publishing is enabled, and default endpoints are used.
 
 [!code-csharp[CFX_SelfHost4#5](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs/program.cs#5)]
 [!code-vb[CFX_SelfHost4#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#5)]
@@ -92,7 +92,7 @@ The following example creates a <xref:System.ServiceModel.ServiceHost> object to
 ## See also
 
 - <xref:System.Uri>
-- <xref:System.Configuration.ConfigurationManager.AppSettings%2A>
+- <xref:System.Configuration.ConfigurationManager.AppSettings*>
 - <xref:System.Configuration.ConfigurationManager>
 - [How to: Host a WCF Service in IIS](./feature-details/how-to-host-a-wcf-service-in-iis.md)
 - [Self-Host](./samples/self-host.md)

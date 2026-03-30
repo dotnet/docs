@@ -90,8 +90,8 @@ Specifies the security settings of a local service for this binding.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
-- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings%2A>
-- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings*>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings*>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Bindings](../../../wcf/bindings.md)

@@ -2,7 +2,7 @@
 title: "Extension members"
 description: Extension members in C# enable you to add methods, properties, or operators to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
 ms.date: 11/20/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
   - "methods [C#], extension"
@@ -18,7 +18,7 @@ Extension blocks support multiple member types: methods, properties, and operato
 
 Extension methods are static methods, but they're called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there's no apparent difference between calling an extension method and the methods defined in a type. Both forms of extension methods are compiled to the same IL (Intermediate Language). Consumers of extension members don't need to know which syntax was used to define extension methods.
 
-The most common extension members are the LINQ standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable%601> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. You can see these extra methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable%601> type such as <xref:System.Collections.Generic.List%601> or <xref:System.Array>.
+The most common extension members are the LINQ standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable`1> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy*>, <xref:System.Linq.Enumerable.OrderBy*>, <xref:System.Linq.Enumerable.Average*>, and so on. You can see these extra methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable`1> type such as <xref:System.Collections.Generic.List`1> or <xref:System.Array>.
 
 ### OrderBy example
 
@@ -89,7 +89,7 @@ The `MethodB` extension method is never called because its name and signature ex
 
 ### Collection Functionality
 
-In the past, it was common to create "Collection Classes" that implemented the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface for a given type and contained functionality that acted on collections of that type. While there's nothing wrong with creating this type of collection object, the same functionality can be achieved by using an extension on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Extensions have the advantage of allowing the functionality to be called from any collection such as an <xref:System.Array?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> on that type. An example of this using an Array of Int32 can be found [earlier in this article](#orderby-example).
+In the past, it was common to create "Collection Classes" that implemented the <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> interface for a given type and contained functionality that acted on collections of that type. While there's nothing wrong with creating this type of collection object, the same functionality can be achieved by using an extension on the <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType>. Extensions have the advantage of allowing the functionality to be called from any collection such as an <xref:System.Array?displayProperty=nameWithType> or <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> that implements <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> on that type. An example of this using an Array of Int32 can be found [earlier in this article](#orderby-example).
 
 ### Layer-Specific Functionality
 

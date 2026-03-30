@@ -275,7 +275,7 @@ Loop through the file paths to make a prediction with the model and output the r
     var prediction = predictionEngine.Predict(new StopSignInput { Image = testImage });
     ```
 
-1. With the prediction, you can get the bounding boxes. Use the <xref:System.Linq.Enumerable.Chunk%2A> method to determine how many objects the model has detected. Do this by taking the count of the predicted bounding boxes and dividing that by the number of labels that were predicted. For example, if you had three objects detected in an image, there would be 12 items in the `BoundingBoxes` array and three labels predicted. The `Chunk` method would then give you three arrays of four to represent the bounding boxes for each object.
+1. With the prediction, you can get the bounding boxes. Use the <xref:System.Linq.Enumerable.Chunk*> method to determine how many objects the model has detected. Do this by taking the count of the predicted bounding boxes and dividing that by the number of labels that were predicted. For example, if you had three objects detected in an image, there would be 12 items in the `BoundingBoxes` array and three labels predicted. The `Chunk` method would then give you three arrays of four to represent the bounding boxes for each object.
 
     ```csharp
     var boundingBoxes = prediction.BoundingBoxes.Chunk(prediction.BoundingBoxes.Count() / prediction.PredictedLabels.Count());

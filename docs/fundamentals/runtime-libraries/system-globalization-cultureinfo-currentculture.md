@@ -57,7 +57,7 @@ Starting with .NET Framework 4, you can explicitly change the current thread cul
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/specific12.cs" id="Snippet12":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/specific12.vb" id="Snippet12":::
 
-You can also use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property along with the <xref:System.Web.HttpRequest.UserLanguages*?displayProperty=nameWithType> property to set the <xref:System.Globalization.CultureInfo.CurrentCulture> property of an ASP.NET application to the user's preferred culture, as the following example illustrates.
+You can also use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property along with the <xref:System.Web.HttpRequest.UserLanguages?displayProperty=nameWithType> property to set the <xref:System.Globalization.CultureInfo.CurrentCulture> property of an ASP.NET application to the user's preferred culture, as the following example illustrates.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/aspculture13.cs" id="Snippet13":::
 :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/aspculture13.vb" id="Snippet13":::

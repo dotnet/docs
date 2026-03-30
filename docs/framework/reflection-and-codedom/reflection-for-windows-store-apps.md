@@ -20,11 +20,11 @@ Starting with .NET Framework 4.5, the .NET Framework includes a set of reflectio
 
  In the .NET for Windows 8.x Store apps, the <xref:System.Reflection.TypeInfo> class contains some of the functionality of the .NET Framework 4 <xref:System.Type> class. A <xref:System.Type> object represents a reference to a type definition, whereas a <xref:System.Reflection.TypeInfo> object represents the type definition itself. This enables you to manipulate <xref:System.Type> objects without necessarily requiring the runtime to load the assembly they reference. Getting the associated <xref:System.Reflection.TypeInfo> object forces the assembly to load.
 
- <xref:System.Reflection.TypeInfo> contains many of the members available on <xref:System.Type>, and many of the reflection properties in the .NET for Windows 8.x Store apps return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IReflectableType.GetTypeInfo%2A> method.
+ <xref:System.Reflection.TypeInfo> contains many of the members available on <xref:System.Type>, and many of the reflection properties in the .NET for Windows 8.x Store apps return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IReflectableType.GetTypeInfo*> method.
 
 ## Query Methods
 
- In the .NET for Windows 8.x Store apps, you use the reflection properties that return <xref:System.Collections.Generic.IEnumerable%601> collections instead of methods that return arrays. Reflection contexts can implement lazy traversal of these collections for large assemblies or types.
+ In the .NET for Windows 8.x Store apps, you use the reflection properties that return <xref:System.Collections.Generic.IEnumerable`1> collections instead of methods that return arrays. Reflection contexts can implement lazy traversal of these collections for large assemblies or types.
 
  The reflection properties return only the declared methods on a particular object instead of traversing the inheritance tree. Moreover, they do not use <xref:System.Reflection.BindingFlags> parameters for filtering. Instead, filtering takes place in user code, by using LINQ queries on the returned collections. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), traversing the inheritance tree is best accomplished by using the helper methods of the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods, and must traverse the inheritance tree themselves.
 

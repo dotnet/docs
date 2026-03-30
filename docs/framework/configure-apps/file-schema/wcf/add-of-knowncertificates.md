@@ -121,12 +121,12 @@ Adds an X.509 certificate to the collection of known certificates.
 ## See also
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates*>
 - <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection>
 - <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement>
-- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates*>
 - [\<knownCertificates>](knowncertificates.md)
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

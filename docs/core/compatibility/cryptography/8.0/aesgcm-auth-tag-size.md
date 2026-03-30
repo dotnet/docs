@@ -5,17 +5,17 @@ ms.date: 01/24/2023
 ---
 # AesGcm authentication tag size on macOS
 
-<xref:System.Security.Cryptography.AesGcm> on macOS only supports 16-byte (128-bit) authentication tags when using <xref:System.Security.Cryptography.AesGcm.Encrypt%2A> or <xref:System.Security.Cryptography.AesGcm.Decrypt%2A> in .NET 8 and later versions.
+<xref:System.Security.Cryptography.AesGcm> on macOS only supports 16-byte (128-bit) authentication tags when using <xref:System.Security.Cryptography.AesGcm.Encrypt*> or <xref:System.Security.Cryptography.AesGcm.Decrypt*> in .NET 8 and later versions.
 
 ## Previous behavior
 
-On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt%2A?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt%2A?nameWithType> supported authentication tag sizes ranging from 12 to 16 bytes, provided OpenSSL was available.
+On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt*?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt*?nameWithType> supported authentication tag sizes ranging from 12 to 16 bytes, provided OpenSSL was available.
 
 In addition, the <xref:System.Security.Cryptography.AesGcm.TagByteSizes?displayProperty=nameWithType> property reported that it supported sizes ranging from 12 to 16 bytes, inclusive.
 
 ## New behavior
 
-On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt%2A?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt%2A?nameWithType> support 16-byte authentication tags only. If you use a smaller tag size on macOS, an <xref:System.ArgumentException> is thrown at runtime.
+On macOS, <xref:System.Security.Cryptography.AesGcm.Encrypt*?nameWithType> and <xref:System.Security.Cryptography.AesGcm.Decrypt*?nameWithType> support 16-byte authentication tags only. If you use a smaller tag size on macOS, an <xref:System.ArgumentException> is thrown at runtime.
 
 The <xref:System.Security.Cryptography.AesGcm.TagByteSizes?displayProperty=nameWithType> property returns a value of 16 as the supported tag size.
 
@@ -40,5 +40,5 @@ Use 128-bit authentication tags with <xref:System.Security.Cryptography.AesGcm> 
 ## Affected APIs
 
 - <xref:System.Security.Cryptography.AesGcm.TagByteSizes?displayProperty=fullName>
-- <xref:System.Security.Cryptography.AesGcm.Encrypt%2A?displayProperty=fullName>
-- <xref:System.Security.Cryptography.AesGcm.Decrypt%2A?displayProperty=fullName>
+- <xref:System.Security.Cryptography.AesGcm.Encrypt*?displayProperty=fullName>
+- <xref:System.Security.Cryptography.AesGcm.Decrypt*?displayProperty=fullName>

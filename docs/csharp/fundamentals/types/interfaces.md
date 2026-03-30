@@ -2,7 +2,7 @@
 title: "Interfaces - define behavior for multiple types"
 description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement. It specifies the members and their signatures for a type that implements the interface.
 ms.date: 11/18/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "interfaces [C#]"
   - "C# language, interfaces"
 ---
@@ -18,7 +18,7 @@ You define an interface by using the [`interface`](../../language-reference/keyw
 
 The name of an interface must be a valid C# [identifier name](../coding-style/identifier-names.md). By convention, interface names begin with a capital `I`.
 
-Any class or struct that implements the <xref:System.IEquatable%601> interface must contain a definition for an <xref:System.IEquatable%601.Equals%2A> method that matches the signature that the interface specifies. As a result, you can count on a class of type `T` that implements `IEquatable<T>` to contain an `Equals` method with which an instance of this class can determine whether it's equal to another instance of the same class.
+Any class or struct that implements the <xref:System.IEquatable`1> interface must contain a definition for an <xref:System.IEquatable`1.Equals*> method that matches the signature that the interface specifies. As a result, you can count on a class of type `T` that implements `IEquatable<T>` to contain an `Equals` method with which an instance of this class can determine whether it's equal to another instance of the same class.
 
 The definition of `IEquatable<T>` doesn't provide an implementation for `Equals`. A class or struct can implement multiple interfaces, but a class can only inherit from a single class.
 
@@ -33,7 +33,7 @@ To implement an interface member using implicit implementation, the correspondin
 
 A class or struct that implements an interface must provide an implementation for all declared members without a default implementation provided by the interface. However, if a base class implements an interface, any class derived from the base class inherits that implementation.
 
-The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
+The following example shows an implementation of the <xref:System.IEquatable`1> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable`1.Equals*> method.
 
 :::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="ImplementEquatable":::
 

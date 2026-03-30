@@ -74,7 +74,7 @@ Specifies the default values used for initiating a secure conversation service.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
-- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings*>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Bindings](../../../wcf/bindings.md)

@@ -324,11 +324,11 @@ public class IgnoreDynamicDataExample
 
 ## TestDataRow
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601> class provides enhanced control over test data in data-driven tests. Use <xref:System.Collections.Generic.IEnumerable%601> of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601> as your data source return type to specify:
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> class provides enhanced control over test data in data-driven tests. Use <xref:System.Collections.Generic.IEnumerable`1> of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> as your data source return type to specify:
 
-- **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.DisplayName> property.
-- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.TestCategories> property.
-- **Ignore messages**: Skip specific test cases with reasons using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow%601.IgnoreMessage> property.
+- **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.DisplayName> property.
+- **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.TestCategories> property.
+- **Ignore messages**: Skip specific test cases with reasons using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.IgnoreMessage> property.
 - **Type-safe data**: Use generics for strongly-typed test data.
 
 ### Basic usage

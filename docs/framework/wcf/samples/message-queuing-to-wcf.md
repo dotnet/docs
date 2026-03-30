@@ -10,7 +10,7 @@ The [MsmqToWcf sample](https://github.com/dotnet/samples/tree/main/framework/wcf
 
 The service contract is `IOrderProcessor`, which defines a one-way service that is suitable for use with queues. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract. If you want to define more than one operation contract for the service, the application must provide information as to which header in the MSMQ message (for example, the label or correlationID) can be used to decide which operation contract to dispatch.
 
-The MSMQ message does not contain information as to which headers are mapped to the different parameters of the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`), which contains the underlying MSMQ message. The type "T" in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`) class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.
+The MSMQ message does not contain information as to which headers are mapped to the different parameters of the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage`1>(`MsmqMessage<T>`), which contains the underlying MSMQ message. The type "T" in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage`1>(`MsmqMessage<T>`) class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.
 
 The following sample code shows the service contract of the order processing service.
 
@@ -64,7 +64,7 @@ The MSMQ queue name is specified in an appSettings section of the configuration 
 </appSettings>
 ```
 
-The client application is an MSMQ application that uses the <xref:System.Messaging.MessageQueue.Send%2A> method to send a durable and transactional message to the queue, as shown in the following sample code.
+The client application is an MSMQ application that uses the <xref:System.Messaging.MessageQueue.Send*> method to send a durable and transactional message to the queue, as shown in the following sample code.
 
 ```csharp
 //Connect to the queue.

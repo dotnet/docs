@@ -103,7 +103,7 @@ Specifies an X.509 certificate to be used when security token service (STS) does
 
 - <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate*>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [\<authentication>](authentication-of-clientcertificate-element.md)
 - [Securing Clients](../../../wcf/securing-clients.md)

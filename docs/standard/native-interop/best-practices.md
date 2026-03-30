@@ -22,7 +22,7 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ DO prefer using function pointers and <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> as opposed to `Delegate` types, when passing callbacks to unmanaged functions in C#. For more information, see <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate(System.Delegate)>.
 - ✔️ DO use `[In]` and `[Out]` attributes on array parameters.
 - ✔️ DO only use `[In]` and `[Out]` attributes on other types when the behavior you want differs from the default behavior.
-- ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
+- ✔️ CONSIDER using <xref:System.Buffers.ArrayPool`1?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[LibraryImport]` or `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
 - ✔️ DO use `SafeHandle` handles to manage lifetime of objects that encapsulate unmanaged resources. For more information, see [Cleaning up unmanaged resources](../garbage-collection/unmanaged.md).
@@ -49,7 +49,7 @@ A `string` is pinned and used directly by native code (rather than copied) when 
 - The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
 - <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> is <xref:System.Runtime.InteropServices.CharSet.Unicode>.
 
-❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
+❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern*?displayProperty=nameWithType>.
 
 ✔️ CONSIDER `char[]` or `byte[]` arrays from an `ArrayPool` when native code is expected to fill a character buffer. This requires passing the argument as `[Out]`.
 
@@ -446,7 +446,7 @@ The following table maps common symptoms to their likely cause and recommended f
 
 | Symptom | Likely cause | Fix |
 |---------|-------------|-----|
-| <xref:System.DllNotFoundException> | Library not found at runtime | Check library name, path, and platform. Use <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A> to test loading. On Linux, verify `LD_LIBRARY_PATH` or `rpath`. |
+| <xref:System.DllNotFoundException> | Library not found at runtime | Check library name, path, and platform. Use <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad*> to test loading. On Linux, verify `LD_LIBRARY_PATH` or `rpath`. |
 | <xref:System.EntryPointNotFoundException> | Export name mismatch | Inspect native exports (`dumpbin /exports` on Windows, `nm -D` on Linux). Check for C++ name mangling (missing `extern "C"`). Set `EntryPoint` explicitly. |
 | <xref:System.AccessViolationException> | Signature mismatch, use-after-free, or missing pinning | Compare managed and native signatures. Check struct sizes with `Marshal.SizeOf<T>()` vs native `sizeof`. Verify memory lifetime. Use a blittable signature to troubleshoot marshalling issue  |
 | Silent data corruption | Wrong type size or encoding | Add boundary logging. Compare `Marshal.SizeOf<T>()` to native `sizeof`. Test with known input/output pairs. |
@@ -455,9 +455,9 @@ The following table maps common symptoms to their likely cause and recommended f
 
 ## Prevent delegate collection with `GC.KeepAlive`
 
-When you use <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A> to convert a delegate to a function pointer, the garbage collector does **not** track the relationship between the returned pointer and the source delegate. If the delegate is eligible for collection before the native code finishes using the pointer, the application will crash.
+When you use <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate*> to convert a delegate to a function pointer, the garbage collector does **not** track the relationship between the returned pointer and the source delegate. If the delegate is eligible for collection before the native code finishes using the pointer, the application will crash.
 
-Use <xref:System.GC.KeepAlive%2A> to prevent collection:
+Use <xref:System.GC.KeepAlive*> to prevent collection:
 
 ```csharp
 var callback = new MyDelegate((level, msgPtr) =>

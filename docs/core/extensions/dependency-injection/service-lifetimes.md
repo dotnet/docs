@@ -10,16 +10,16 @@ Services can be registered with a [transient](#transient), [scoped](#scoped), or
 
 ## Transient
 
-A service with a *transient* lifetime is created each time it's requested from the service container. To register a service as transient, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+A service with a *transient* lifetime is created each time it's requested from the service container. To register a service as transient, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient*>.
 
 In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per-request allocations, as services are resolved and constructed every time. For more information, see [IDisposable guidance for transient and shared instances](guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ## Scoped
 
-For web applications, a *scoped* lifetime indicates that services are created once per client request (connection). In apps that process requests, scoped services are disposed at the end of the request. Register scoped services by calling <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A>.
+For web applications, a *scoped* lifetime indicates that services are created once per client request (connection). In apps that process requests, scoped services are disposed at the end of the request. Register scoped services by calling <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped*>.
 
 > [!NOTE]
-> When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
+> When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext*> extension method registers `DbContext` types with a scoped lifetime by default.
 
 A scoped service should always be used from within a scope&ndash;either an implicit scope (such as ASP.NET Core's per-request scope) or an explicit scope created with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType>.
 
@@ -43,6 +43,6 @@ Singleton lifetime services are created either:
 
 Every subsequent request of the service implementation from the dependency injection container uses the same instance. If the app requires singleton behavior, allow the service container to manage the service's lifetime. Don't implement the singleton design pattern and provide code to dispose of the singleton. Services should never be disposed by code that resolved the service from the container. If a type or factory is registered as a singleton, the container disposes the singleton automatically.
 
-Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>. Singleton services must be thread safe and are often used in stateless services.
+Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton*>. Singleton services must be thread safe and are often used in stateless services.
 
 In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory isn't released until the app shuts down, consider memory use with a singleton service.

@@ -66,6 +66,6 @@ The identity element allows a client developer to specify at design time the exp
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
-- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.EndpointAddress.Identity*>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

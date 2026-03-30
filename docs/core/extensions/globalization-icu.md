@@ -147,7 +147,7 @@ The <xref:System.Globalization.DateTimeFormatInfo.GetShortestDayName(System.DayO
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
 
 - <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
-- <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
+- <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId*>
 
 On the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the mentioned APIs succeed. However, on older versions of Windows, these APIs fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs always succeed regardless of the version.
 
@@ -234,7 +234,7 @@ Applications can opt in to an app-local ICU implementation mode in one of the fo
 
 When either of these options is set, you can add a [Microsoft.ICU.ICU4C.Runtime](https://www.nuget.org/packages/Microsoft.ICU.ICU4C.Runtime) `PackageReference` to your project that corresponds to the configured `version` and that's all that is needed.
 
-Alternatively, to load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=nameWithType> method, which probes multiple paths. The method first tries to find the library in the `NATIVE_DLL_SEARCH_DIRECTORIES` property, which is created by the dotnet host based on the `deps.json` file for the app. For more information, see [Default probing](../../core/dependency-loading/default-probing.md).
+Alternatively, to load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad*?displayProperty=nameWithType> method, which probes multiple paths. The method first tries to find the library in the `NATIVE_DLL_SEARCH_DIRECTORIES` property, which is created by the dotnet host based on the `deps.json` file for the app. For more information, see [Default probing](../../core/dependency-loading/default-probing.md).
 
 For self-contained apps, no special action is required by the user, other than making sure ICU is in the app directory (for self-contained apps, the working directory defaults to `NATIVE_DLL_SEARCH_DIRECTORIES`).
 

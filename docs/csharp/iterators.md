@@ -31,7 +31,7 @@ When a sequence is generated asynchronously, you can use the `await foreach` sta
 
 :::code language="csharp" source="./snippets/iterators/Program.cs" ID="AwaitForeachExample":::
 
-When a sequence is an <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, you use `foreach`. When a sequence is an <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>, you use `await foreach`. In the latter case, the sequence is generated asynchronously.
+When a sequence is an <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType>, you use `foreach`. When a sequence is an <xref:System.Collections.Generic.IAsyncEnumerable`1?displayProperty=nameWithType>, you use `await foreach`. In the latter case, the sequence is generated asynchronously.
 
 ## Enumeration sources with iterator methods
 

@@ -57,9 +57,9 @@ Specifies credentials used when authenticating peer-to-peer clients.
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
-- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Peer%2A>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Peer*>
 - <xref:System.ServiceModel.Description.ClientCredentials>
-- <xref:System.ServiceModel.Description.ClientCredentials.Peer%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials.Peer*>
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Securing Clients](../../../wcf/securing-clients.md)

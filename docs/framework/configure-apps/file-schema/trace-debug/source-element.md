@@ -37,7 +37,7 @@ Specifies a trace source that initiates tracing messages.
 |`name`|Optional attribute.<br /><br /> Specifies the name of the trace source.|
 |`switchName`|Optional attribute.<br /><br /> Specifies the name of a trace switch instance in the application. If the switch is not identified in a `<switches>` element, the value specifies the level for the switch.|
 |`switchType`|Optional attribute.<br /><br /> Specifies the type of the trace switch. If present, the type must be a valid class name and cannot be an empty string.|
-|`extraAttribute`|Optional attribute.<br /><br /> Specifies the value for a trace source-specific attribute identified by the <xref:System.Diagnostics.TraceSource.GetSupportedAttributes%2A> method for that trace source.|
+|`extraAttribute`|Optional attribute.<br /><br /> Specifies the value for a trace source-specific attribute identified by the <xref:System.Diagnostics.TraceSource.GetSupportedAttributes*> method for that trace source.|
 
 ### Child Elements
 

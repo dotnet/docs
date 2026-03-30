@@ -2,7 +2,7 @@
 description: "out keyword (generic modifier) - C# Reference"
 title: "out keyword (generic modifier)"
 ms.date: 01/22/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "covariance, out keyword [C#]"
   - "out keyword [C#]"
 ---
@@ -12,7 +12,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
 
 Covariance enables you to use a more derived type than the generic parameter specifies. This feature allows for implicit conversion of classes that implement covariant interfaces and implicit conversion of delegate types. Covariance and contravariance support reference types, but they don't support value types.
 
-An interface with a covariant type parameter enables its methods to return more derived types than those specified by the type parameter. For example, because in .NET, in <xref:System.Collections.Generic.IEnumerable%601>, type T is covariant, you can assign an object of the `IEnumerable<string>` type to an object of the `IEnumerable<object>` type without using any special conversion methods.
+An interface with a covariant type parameter enables its methods to return more derived types than those specified by the type parameter. For example, because in .NET, in <xref:System.Collections.Generic.IEnumerable`1>, type T is covariant, you can assign an object of the `IEnumerable<string>` type to an object of the `IEnumerable<object>` type without using any special conversion methods.
 
 You can assign a covariant delegate to another delegate of the same type, but with a more derived generic type parameter.
 

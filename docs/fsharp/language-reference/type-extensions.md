@@ -47,7 +47,7 @@ namespace Example
 type Variant =
     | Num of int
     | Str of string
-  
+
 module Variant =
     let print v =
         match v with
@@ -87,7 +87,7 @@ type IEnumerable<'T> with
         }
 ```
 
-You can now access `RepeatElements` as if it's a member of <xref:System.Collections.Generic.IEnumerable%601> as long as the `Extensions` module is opened in the scope that you are working in.
+You can now access `RepeatElements` as if it's a member of <xref:System.Collections.Generic.IEnumerable`1> as long as the `Extensions` module is opened in the scope that you are working in.
 
 Optional extensions do not appear on the extended type when examined by reflection. Optional extensions must be in modules, and they're only in scope when the module that contains the extension is open or is otherwise in scope.
 
@@ -137,7 +137,7 @@ type IEnumerableExtensions =
     static member inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
 ```
 
-When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable%601>, so long as `Extensions` has been opened or is in scope.
+When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable`1>, so long as `Extensions` has been opened or is in scope.
 
 For the extension to be available to VB.NET code, an extra `ExtensionAttribute` is required at the assembly level:
 

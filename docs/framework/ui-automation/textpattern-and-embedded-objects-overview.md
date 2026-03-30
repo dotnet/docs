@@ -35,12 +35,12 @@ Example of the Content View for a Portion of the Preceding Text Container
 
  Used in conjunction, the <xref:System.Windows.Automation.TextPattern> control pattern class and the <xref:System.Windows.Automation.Text.TextPatternRange> class expose methods and properties that facilitate navigation and querying of embedded objects.
 
- The textual content (or inner text) of a text container and an embedded object, such as a hyperlink or table cell, is exposed as a single, continuous text stream in both the control view and the content view of the UI Automation tree; object boundaries are ignored. If a UI Automation client is retrieving the text for the purpose of reciting, interpreting, or analyzing in some manner, the text range should be checked for special cases, such as a table with textual content or other embedded objects. This can be accomplished by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> to obtain an <xref:System.Windows.Automation.AutomationElement> for each embedded object and then calling <xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> to obtain a text range for each element. This is done recursively until all textual content has been retrieved.
+ The textual content (or inner text) of a text container and an embedded object, such as a hyperlink or table cell, is exposed as a single, continuous text stream in both the control view and the content view of the UI Automation tree; object boundaries are ignored. If a UI Automation client is retrieving the text for the purpose of reciting, interpreting, or analyzing in some manner, the text range should be checked for special cases, such as a table with textual content or other embedded objects. This can be accomplished by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren*> to obtain an <xref:System.Windows.Automation.AutomationElement> for each embedded object and then calling <xref:System.Windows.Automation.TextPattern.RangeFromChild*> to obtain a text range for each element. This is done recursively until all textual content has been retrieved.
 
  ![Text ranges spanned by embedded objects.](./media/uia-textpattern-embeddedobjecttextranges.png "UIA_TextPattern_EmbeddedObjectTextRanges")
 Example of a text stream with embedded objects and their range spans
 
- When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> method to execute successfully.
+ When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Text.TextPatternRange.Move*> method to execute successfully.
 
 1. The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans <xref:System.Windows.Automation.Text.TextUnit> boundaries: for example, `{The URL https://www.microsoft.com is embedded in text` where "{" and "}" are the text range endpoints.
 
@@ -73,10 +73,10 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string `The URL https://www.microsoft.com is embedded in text`.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|Returns an <xref:System.Windows.Automation.AutomationElement> representing the hyperlink control.|
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetChildren` method.|Returns the range that represents `https://www.microsoft.com`.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText*>|Returns the string `The URL https://www.microsoft.com is embedded in text`.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren*>|Returns an <xref:System.Windows.Automation.AutomationElement> representing the hyperlink control.|
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild*> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetChildren` method.|Returns the range that represents `https://www.microsoft.com`.|
 
  **Example 2 - A text range that partially spans an embedded text hyperlink**
 
@@ -84,9 +84,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string "www".|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the hyperlink control.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|Returns `null` since the text range doesn't span the entire URL string.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText*>|Returns the string "www".|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the hyperlink control.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren*>|Returns `null` since the text range doesn't span the entire URL string.|
 
 **Example 3 - A text range that partially spans the content of a text container. The text container has an embedded text hyperlink that is not part of the text range.**
 
@@ -94,9 +94,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string "The URL".|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> with parameters of (TextUnit.Word, 1).|Moves the text range span to "http" since the text of the hyperlink is comprised of individual words. In this case, the hyperlink is not treated as a single object.<br /><br /> The URL {[http]} is embedded in text.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText*>|Returns the string "The URL".|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.Move*> with parameters of (TextUnit.Word, 1).|Moves the text range span to "http" since the text of the hyperlink is comprised of individual words. In this case, the hyperlink is not treated as a single object.<br /><br /> The URL {[http]} is embedded in text.|
 
 <a name="Image"></a>
 
@@ -108,10 +108,10 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string "The is embedded in text". Any ALT text associated with the image cannot be expected to be included in the text stream.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|Returns an <xref:System.Windows.Automation.AutomationElement> representing the image control.|
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> method.|Returns the degenerate range that represents "![Embedded Image Example](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample")".|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText*>|Returns the string "The is embedded in text". Any ALT text associated with the image cannot be expected to be included in the text stream.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren*>|Returns an <xref:System.Windows.Automation.AutomationElement> representing the image control.|
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild*> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren*> method.|Returns the degenerate range that represents "![Embedded Image Example](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample")".|
 
  **Example 2 - A text range that partially spans the content of a text container. The text container has an embedded image that is not part of the text range.**
 
@@ -119,9 +119,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string "The image".|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> with parameters of (TextUnit.Word, 1).|Moves the text range span to "is ". Because only text-based embedded objects are considered part of the text stream, the image in this example does not affect Move or its return value (1 in this case).|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText*>|Returns the string "The image".|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.Move*> with parameters of (TextUnit.Word, 1).|Moves the text range span to "is ". Because only text-based embedded objects are considered part of the text stream, the image in this example does not affect Move or its return value (1 in this case).|
 
 <a name="Table"></a>
 
@@ -139,18 +139,18 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 
 |Method Called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.GridPattern.GetItem%2A> with parameters (0,0)|Returns the <xref:System.Windows.Automation.AutomationElement> representing the content of the table cell; in this case, the element is a text control.|
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetItem` method.|Returns the range that spans the image ![Embedded Image Example](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample").|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> for the object returned by the previous `RangeFromChild` method.|Returns the <xref:System.Windows.Automation.AutomationElement> representing the table cell; in this case, the element is a text control that supports TableItemPattern.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> for the object returned by the previous `GetEnclosingElement` method.|Returns the <xref:System.Windows.Automation.AutomationElement> representing the table.|
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> for the object returned by the previous `GetEnclosingElement` method.|Returns the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
+|<xref:System.Windows.Automation.GridPattern.GetItem*> with parameters (0,0)|Returns the <xref:System.Windows.Automation.AutomationElement> representing the content of the table cell; in this case, the element is a text control.|
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild*> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetItem` method.|Returns the range that spans the image ![Embedded Image Example](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample").|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*> for the object returned by the previous `RangeFromChild` method.|Returns the <xref:System.Windows.Automation.AutomationElement> representing the table cell; in this case, the element is a text control that supports TableItemPattern.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*> for the object returned by the previous `GetEnclosingElement` method.|Returns the <xref:System.Windows.Automation.AutomationElement> representing the table.|
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement*> for the object returned by the previous `GetEnclosingElement` method.|Returns the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|
 
  **Example 2 - Get the text content of a cell.**
 
 |Method Called|Result|
 |-------------------|------------|
-|<xref:System.Windows.Automation.GridPattern.GetItem%2A> with parameters of (1,1).|Returns the <xref:System.Windows.Automation.AutomationElement> representing the content of the table cell; in this case, the element is a text control.|
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetItem` method.|Returns "Y".|
+|<xref:System.Windows.Automation.GridPattern.GetItem*> with parameters of (1,1).|Returns the <xref:System.Windows.Automation.AutomationElement> representing the content of the table cell; in this case, the element is a text control.|
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild*> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetItem` method.|Returns "Y".|
 
 ## See also
 

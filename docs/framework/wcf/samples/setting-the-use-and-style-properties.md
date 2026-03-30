@@ -11,7 +11,7 @@ The [UseAndStyle sample](https://github.com/dotnet/samples/tree/main/framework/w
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
-The <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> style property determines how the WSDL metadata for the service is formatted. Possible values are <xref:System.ServiceModel.OperationFormatStyle.Document>, and <xref:System.ServiceModel.OperationFormatStyle.Rpc>. RPC means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.
+The <xref:System.ServiceModel.DataContractFormatAttribute.Style*> style property determines how the WSDL metadata for the service is formatted. Possible values are <xref:System.ServiceModel.OperationFormatStyle.Document>, and <xref:System.ServiceModel.OperationFormatStyle.Rpc>. RPC means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.
 
 ```xml
 <wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">
@@ -69,7 +69,7 @@ public interface IUseAndStyleCalculator
 }
 ```
 
-To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing `http://localhost/ServiceModelSamples/service.svc?wsdl`. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view `http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0` to observe the message definitions.
+To see the difference between the different <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style*> settings, modify them in the service, regenerate the client, run the sample, and examine the c:\logs\message.logs file with the Service Trace Viewer tool. Also observe the impact on the metadata by viewing `http://localhost/ServiceModelSamples/service.svc?wsdl`. The metadata for services is typically broken up into multiple pages. The main wsdl page contains the WSDL bindings, but view `http://localhost/ServiceModelSamples/service.svc?wsdl=wsdl0` to observe the message definitions.
 
 ## To set up, build, and run the sample
 

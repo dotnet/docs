@@ -10,7 +10,7 @@ A discovery find operation is initiated by a client to discover one or more serv
 
 ## DiscoveryClient
 
-The <xref:System.ServiceModel.Discovery.DiscoveryClient> class provides the mechanism to perform find operations and makes performing discovery client operations easy. It contains a <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method, which performs a (blocking) synchronous find, and a <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> method, which initiates a non-blocking asynchronous find. Both methods take a <xref:System.ServiceModel.Discovery.FindCriteria> parameter, and provide results to the user through a <xref:System.ServiceModel.Discovery.FindResponse> object.
+The <xref:System.ServiceModel.Discovery.DiscoveryClient> class provides the mechanism to perform find operations and makes performing discovery client operations easy. It contains a <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*> method, which performs a (blocking) synchronous find, and a <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync*> method, which initiates a non-blocking asynchronous find. Both methods take a <xref:System.ServiceModel.Discovery.FindCriteria> parameter, and provide results to the user through a <xref:System.ServiceModel.Discovery.FindResponse> object.
 
 ## FindCriteria
 
@@ -22,7 +22,7 @@ Search criteria include:
 
 - <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.
 
-- <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:
+- <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy*> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:
 
   - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.
 
@@ -38,9 +38,9 @@ Search criteria include:
 
 Termination criteria include:
 
-1. <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> - The maximum time to wait for replies from services on the network. The default duration is 20 seconds.
+1. <xref:System.ServiceModel.Discovery.FindCriteria.Duration*> - The maximum time to wait for replies from services on the network. The default duration is 20 seconds.
 
-2. <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> - The maximum number of replies to wait for. If <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> replies are received before <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> has elapsed, the find operation ends.
+2. <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults*> - The maximum number of replies to wait for. If <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults*> replies are received before <xref:System.ServiceModel.Discovery.FindCriteria.Duration*> has elapsed, the find operation ends.
 
 ## FindResponse
 

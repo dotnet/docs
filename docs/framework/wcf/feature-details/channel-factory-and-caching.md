@@ -6,7 +6,7 @@ ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
 ---
 # Channel Factory and Caching
 
-WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:
+WCF client applications use the <xref:System.ServiceModel.ChannelFactory`1> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory`1> instances incurs some overhead because it involves the following operations:
 
 - Constructing the <xref:System.ServiceModel.Description.ContractDescription> tree
 
@@ -19,21 +19,21 @@ WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> cl
 To help minimize this overhead, WCF can cache channel factories when you are using a WCF client proxy.
 
 > [!TIP]
-> You have direct control over channel factory creation when you use the <xref:System.ServiceModel.ChannelFactory%601> class directly.
+> You have direct control over channel factory creation when you use the <xref:System.ServiceModel.ChannelFactory`1> class directly.
 
-WCF client proxies generated with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) are derived from <xref:System.ServiceModel.ClientBase%601>. <xref:System.ServiceModel.ClientBase%601> defines a static <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property that defines channel factory caching behavior. Cache settings are made for a specific type. For example, setting  `ClientBase<ITest>.CacheSettings` to one of the values defined below will affect only those proxy/ClientBase of type `ITest`. The cache setting for a particular <xref:System.ServiceModel.ClientBase%601> is immutable as soon as the first proxy/ClientBase instance is created.
+WCF client proxies generated with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) are derived from <xref:System.ServiceModel.ClientBase`1>. <xref:System.ServiceModel.ClientBase`1> defines a static <xref:System.ServiceModel.ClientBase`1.CacheSetting> property that defines channel factory caching behavior. Cache settings are made for a specific type. For example, setting  `ClientBase<ITest>.CacheSettings` to one of the values defined below will affect only those proxy/ClientBase of type `ITest`. The cache setting for a particular <xref:System.ServiceModel.ClientBase`1> is immutable as soon as the first proxy/ClientBase instance is created.
 
 ## Specifying Caching Behavior
 
-Caching behavior is specified by setting the <xref:System.ServiceModel.ClientBase%601.CacheSetting> property to one of the following values.
+Caching behavior is specified by setting the <xref:System.ServiceModel.ClientBase`1.CacheSetting> property to one of the following values.
 
 |Cache Setting Value|Description|
 |-------------------------|-----------------|
-|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|All instances of <xref:System.ServiceModel.ClientBase%601> within the app-domain can participate in caching. The developer has determined that there are no adverse security implications to caching. Caching will not be turned off even if "security-sensitive" properties on <xref:System.ServiceModel.ClientBase%601> are accessed. The "security-sensitive" properties of <xref:System.ServiceModel.ClientBase%601> are <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>, <xref:System.ServiceModel.ClientBase%601.Endpoint> and <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A>.|
-|<xref:System.ServiceModel.CacheSetting.Default>|Only instances of <xref:System.ServiceModel.ClientBase%601> created from endpoints defined in configuration files participate in caching within the app-domain. Any instances of <xref:System.ServiceModel.ClientBase%601> created programmatically within that app-domain will not participate in caching. Also, caching will be disabled for an instance of <xref:System.ServiceModel.ClientBase%601> once any of its "security-sensitive" properties is accessed.|
-|<xref:System.ServiceModel.CacheSetting.AlwaysOff>|Caching is turned off for all instances of <xref:System.ServiceModel.ClientBase%601> of a particular type within the app-domain in question.|
+|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|All instances of <xref:System.ServiceModel.ClientBase`1> within the app-domain can participate in caching. The developer has determined that there are no adverse security implications to caching. Caching will not be turned off even if "security-sensitive" properties on <xref:System.ServiceModel.ClientBase`1> are accessed. The "security-sensitive" properties of <xref:System.ServiceModel.ClientBase`1> are <xref:System.ServiceModel.ClientBase`1.ClientCredentials*>, <xref:System.ServiceModel.ClientBase`1.Endpoint> and <xref:System.ServiceModel.ClientBase`1.ChannelFactory*>.|
+|<xref:System.ServiceModel.CacheSetting.Default>|Only instances of <xref:System.ServiceModel.ClientBase`1> created from endpoints defined in configuration files participate in caching within the app-domain. Any instances of <xref:System.ServiceModel.ClientBase`1> created programmatically within that app-domain will not participate in caching. Also, caching will be disabled for an instance of <xref:System.ServiceModel.ClientBase`1> once any of its "security-sensitive" properties is accessed.|
+|<xref:System.ServiceModel.CacheSetting.AlwaysOff>|Caching is turned off for all instances of <xref:System.ServiceModel.ClientBase`1> of a particular type within the app-domain in question.|
 
-The following code snippets illustrate how to use the <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property.
+The following code snippets illustrate how to use the <xref:System.ServiceModel.ClientBase`1.CacheSetting> property.
 
 ```csharp
 class Program
@@ -110,7 +110,7 @@ In the example above, all instances of `TestClient` would use different channel 
 
 ## See also
 
-- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.ClientBase`1>
 - [Building Clients](../building-clients.md)
 - [Clients](clients.md)
 - [Accessing Services Using a WCF Client](../accessing-services-using-a-wcf-client.md)

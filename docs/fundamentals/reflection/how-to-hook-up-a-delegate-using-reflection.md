@@ -15,16 +15,16 @@ helpviewer_keywords:
 When you use reflection to load and run assemblies, you can't use language features like the C# `+=` operator or the Visual Basic [AddHandler statement](../../visual-basic/language-reference/statements/addhandler-statement.md) to hook up events. The following procedures show how to hook up an existing method to an event by getting all the necessary types through reflection, and how to create a dynamic method using reflection emit and hook it up to an event.
 
 > [!NOTE]
-> For another way to hook up an event-handling delegate, see the code example for the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method of the <xref:System.Reflection.EventInfo> class.
+> For another way to hook up an event-handling delegate, see the code example for the <xref:System.Reflection.EventInfo.AddEventHandler*> method of the <xref:System.Reflection.EventInfo> class.
 
 ## To hook up a delegate using reflection
 
-1. Load an assembly that contains a type that raises events. Assemblies are usually loaded with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To keep this example simple, a derived form in the current assembly is used, so the <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method is used to load the current assembly.
+1. Load an assembly that contains a type that raises events. Assemblies are usually loaded with the <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> method. To keep this example simple, a derived form in the current assembly is used, so the <xref:System.Reflection.Assembly.GetExecutingAssembly*> method is used to load the current assembly.
 
    [!code-csharp[HookUpDelegate#3](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#3)]
    [!code-vb[HookUpDelegate#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#3)]
 
-2. Get a <xref:System.Type> object representing the type, and create an instance of the type. The <xref:System.Activator.CreateInstance%28System.Type%29> method is used in the following code because the form has a parameterless constructor. There are several other overloads of the <xref:System.Activator.CreateInstance%2A> method that you can use if the type you are creating does not have a parameterless constructor. The new instance is stored as type <xref:System.Object> to maintain the fiction that nothing is known about the assembly. (Reflection allows you to get the types in an assembly without knowing their names in advance.)
+2. Get a <xref:System.Type> object representing the type, and create an instance of the type. The <xref:System.Activator.CreateInstance%28System.Type%29> method is used in the following code because the form has a parameterless constructor. There are several other overloads of the <xref:System.Activator.CreateInstance*> method that you can use if the type you are creating does not have a parameterless constructor. The new instance is stored as type <xref:System.Object> to maintain the fiction that nothing is known about the assembly. (Reflection allows you to get the types in an assembly without knowing their names in advance.)
 
    [!code-csharp[HookUpDelegate#4](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#4)]
    [!code-vb[HookUpDelegate#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#4)]
@@ -39,7 +39,7 @@ When you use reflection to load and run assemblies, you can't use language featu
    [!code-csharp[HookUpDelegate#6](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#6)]
    [!code-vb[HookUpDelegate#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#6)]
 
-5. Create an instance of the delegate, using the <xref:System.Delegate.CreateDelegate%2A> method. This method is static (`Shared` in Visual Basic), so the delegate type must be supplied. Using the overloads of <xref:System.Delegate.CreateDelegate%2A> that take a <xref:System.Reflection.MethodInfo> is recommended.
+5. Create an instance of the delegate, using the <xref:System.Delegate.CreateDelegate*> method. This method is static (`Shared` in Visual Basic), so the delegate type must be supplied. Using the overloads of <xref:System.Delegate.CreateDelegate*> that take a <xref:System.Reflection.MethodInfo> is recommended.
 
    [!code-csharp[HookUpDelegate#7](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#7)]
    [!code-vb[HookUpDelegate#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#7)]
@@ -63,12 +63,12 @@ When you use reflection to load and run assemblies, you can't use language featu
    [!code-csharp[HookUpDelegate#9](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#9)]
    [!code-vb[HookUpDelegate#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#9)]
 
-2. Generate a method body. This method loads a string, calls the overload of the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> method that takes a string, pops the return value off the stack (because the handler has no return type), and returns. To learn more about emitting dynamic methods, see [How to: Define and Execute Dynamic Methods](how-to-define-and-execute-dynamic-methods.md).
+2. Generate a method body. This method loads a string, calls the overload of the <xref:System.Windows.Forms.MessageBox.Show*?displayProperty=nameWithType> method that takes a string, pops the return value off the stack (because the handler has no return type), and returns. To learn more about emitting dynamic methods, see [How to: Define and Execute Dynamic Methods](how-to-define-and-execute-dynamic-methods.md).
 
    [!code-csharp[HookUpDelegate#10](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#10)]
    [!code-vb[HookUpDelegate#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#10)]
 
-3. Complete the dynamic method by calling its <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method. Use the `add` accessor to add the delegate to the invocation list for the event.
+3. Complete the dynamic method by calling its <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> method. Use the `add` accessor to add the delegate to the invocation list for the event.
 
    [!code-csharp[HookUpDelegate#11](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#11)]
    [!code-vb[HookUpDelegate#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#11)]
@@ -87,9 +87,9 @@ The following code example shows how to hook up an existing method to an event u
 
 ## See also
 
-- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType>
 - <xref:System.Reflection.Emit.DynamicMethod>
-- <xref:System.Activator.CreateInstance%2A>
-- <xref:System.Delegate.CreateDelegate%2A>
+- <xref:System.Activator.CreateInstance*>
+- <xref:System.Delegate.CreateDelegate*>
 - [How to: Define and Execute Dynamic Methods](how-to-define-and-execute-dynamic-methods.md)
 - [Reflection](overview.md)

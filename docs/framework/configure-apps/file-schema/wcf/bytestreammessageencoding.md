@@ -29,7 +29,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 
 |Attribute|Description|
 |---------------|-----------------|
-|messageVersion|Specifies the SOAP version of the messages sent using the binding. This property can only be set to the message version value of <xref:System.ServiceModel.Channels.MessageVersion.None%2A>. The byte stream message encoder does not support any other message versions.<br /><br /> This attribute is of type <xref:System.ServiceModel.Channels.MessageVersion>.|
+|messageVersion|Specifies the SOAP version of the messages sent using the binding. This property can only be set to the message version value of <xref:System.ServiceModel.Channels.MessageVersion.None*>. The byte stream message encoder does not support any other message versions.<br /><br /> This attribute is of type <xref:System.ServiceModel.Channels.MessageVersion>.|
 
 ### Child Elements
 

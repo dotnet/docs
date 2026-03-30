@@ -44,10 +44,10 @@ In the preceding console app:
 
 - The `TokenBucketRateLimiterOptions` are configured with a token limit of `8`, and queue processing order of `OldestFirst`, a queue limit of `3`, and replenishment period of `1` millisecond, a tokens per period value of `2`, and an auto-replenish value of `true`.
 - An `HttpClient` is created with the `ClientSideRateLimitedHandler` that is configured with the `TokenBucketRateLimiter`.
-- To emulate 100 requests, <xref:System.Linq.Enumerable.Range%2A?displayProperty=nameWithType> creates 100 URLs, each with a unique query string parameter.
-- Two <xref:System.Threading.Tasks.Task> objects are assigned from the <xref:System.Threading.Tasks.Parallel.ForEachAsync%2A?displayProperty=nameWithType> method, splitting the URLs into two groups.
+- To emulate 100 requests, <xref:System.Linq.Enumerable.Range*?displayProperty=nameWithType> creates 100 URLs, each with a unique query string parameter.
+- Two <xref:System.Threading.Tasks.Task> objects are assigned from the <xref:System.Threading.Tasks.Parallel.ForEachAsync*?displayProperty=nameWithType> method, splitting the URLs into two groups.
 - The `HttpClient` is used to send a `GET` request to each URL, and the response is written to the console.
-- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> waits for both tasks to complete.
+- <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType> waits for both tasks to complete.
 
 Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will make it to the server resource. You can test this assertion by running the console app. You'll see that only a fraction of the total number of requests are sent to the server, and the rest are rejected with an HTTP status code of `429`. Try altering the `options` object used to create the `TokenBucketRateLimiter` to see how the number of requests that are sent to the server changes.
 

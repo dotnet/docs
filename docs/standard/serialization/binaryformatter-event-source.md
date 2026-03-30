@@ -18,7 +18,7 @@ The `BinaryFormatter` event source has the well-known name `System.Runtime.Seria
 
 ### SerializationStart event (id = `10`)
 
-Raised when <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> has been called and has started the serialization process. This event is paired with the `SerializationEnd` event. The `SerializationStart` event can be called recursively if an object calls `BinaryFormatter.Serialize` within its own serialization routine.
+Raised when <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize*?displayProperty=nameWithType> has been called and has started the serialization process. This event is paired with the `SerializationEnd` event. The `SerializationStart` event can be called recursively if an object calls `BinaryFormatter.Serialize` within its own serialization routine.
 
 This event doesn't contain a payload.
 
@@ -40,7 +40,7 @@ This event contains a payload with one argument:
 
 ### DeserializationStart event (id = `20`)
 
-Raised when <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> has been called and has started the deserialization process. This event is paired with the `DeserializationEnd` event. The `DeserializationStart` event can be called recursively if an object calls `BinaryFormatter.Deserialize` within its own deserialization routine.
+Raised when <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize*?displayProperty=nameWithType> has been called and has started the deserialization process. This event is paired with the `DeserializationEnd` event. The `DeserializationStart` event can be called recursively if an object calls `BinaryFormatter.Deserialize` within its own deserialization routine.
 
 This event doesn't contain a payload.
 

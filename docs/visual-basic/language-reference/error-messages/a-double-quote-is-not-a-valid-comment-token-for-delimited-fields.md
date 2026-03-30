@@ -2,7 +2,7 @@
 description: "Learn more about: A double quote is not a valid comment token for delimited fields where HasFieldsEnclosedInQuotes is set to True"
 title: "A double quote is not a valid comment token for delimited fields where HasFieldsEnclosedInQuotes is set to True"
 ms.date: 03/03/2026
-f1_keywords: 
+f1_keywords:
   - "vbrTextFieldParser_InvalidComment"
 ms.assetid: 636d4b81-00ba-4cfd-98f7-4d57036f494d
 ai-usage: ai-assisted
@@ -18,9 +18,9 @@ A quotation mark has been supplied as a comment token for the `TextFieldParser`,
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens*>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters*>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters*>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes*>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>
 - [How to: Read From Comma-Delimited Text Files](../../developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)

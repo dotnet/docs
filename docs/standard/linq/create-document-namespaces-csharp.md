@@ -34,7 +34,7 @@ This example produces the following output:
 
 ## Example: Create a document that has a namespace and an attribute
 
-The following example creates a document with one namespace. It also creates an attribute that declares the namespace with a namespace prefix. To create an attribute that declares a namespace with a prefix, you create an attribute where the name of the attribute is the namespace prefix, and this name is in the <xref:System.Xml.Linq.XNamespace.Xmlns%2A> namespace. The value of this attribute is the URI of the namespace.
+The following example creates a document with one namespace. It also creates an attribute that declares the namespace with a namespace prefix. To create an attribute that declares a namespace with a prefix, you create an attribute where the name of the attribute is the namespace prefix, and this name is in the <xref:System.Xml.Linq.XNamespace.Xmlns*> namespace. The value of this attribute is the URI of the namespace.
 
 ```csharp
 // Create an XML tree in a namespace, with a specified prefix

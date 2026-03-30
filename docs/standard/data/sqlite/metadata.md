@@ -10,7 +10,7 @@ There are two APIs for retrieving metadata in ADO.NET. One retrieves metadata ab
 
 ## Query result metadata
 
-You can retrieve metadata about the results of a query using the <xref:Microsoft.Data.Sqlite.SqliteDataReader.GetSchemaTable%2A> method on `SqliteDataReader`. The returned <xref:System.Data.DataTable> contains the following columns:
+You can retrieve metadata about the results of a query using the <xref:Microsoft.Data.Sqlite.SqliteDataReader.GetSchemaTable*> method on `SqliteDataReader`. The returned <xref:System.Data.DataTable> contains the following columns:
 
 | Column             | Type    | Description                                                               |
 | ------------------ | ------- | ------------------------------------------------------------------------- |

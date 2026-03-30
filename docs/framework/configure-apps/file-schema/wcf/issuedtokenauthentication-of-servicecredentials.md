@@ -46,9 +46,9 @@ Specifies a custom token issued as a service credential.
 
 |Attribute|Description|
 |---------------|-----------------|
-|`allowedAudienceUris`|Gets the set of target URIs for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance. For more information on using this attribute, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>.|
+|`allowedAudienceUris`|Gets the set of target URIs for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance. For more information on using this attribute, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>.|
 |`allowUntrustedRsaIssuers`|A Boolean value that specifies if untrusted RSA certificate issuers are allowed.<br /><br /> Certificates are signed by certification authorities (CAs) to verify authenticity. An untrusted issuer is a CA that is not specified to be trusted to sign certificates.|
-|`audienceUriMode`|Gets a value that specifies whether the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token's <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> should be validated. This value is of type <xref:System.IdentityModel.Selectors.AudienceUriMode>. For more information on using this attribute, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>.|
+|`audienceUriMode`|Gets a value that specifies whether the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token's <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> should be validated. This value is of type <xref:System.IdentityModel.Selectors.AudienceUriMode>. For more information on using this attribute, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>.|
 |`certificateValidationMode`|Sets the certificate validation mode. One of the valid values of <xref:System.ServiceModel.Security.X509CertificateValidationMode>. If set to `Custom`, then a `customCertificateValidator` must also be supplied. The default is `ChainTrust`.|
 |`customCertificateValidatorType`|Optional string. A type and assembly used to validate a custom type. This attribute must be set when `certificateValidationMode` is set to `Custom`.|
 |`revocationMode`|Sets the revocation mode that specifies whether a revocation check occurs, and if it is performed online or offline. This attribute is of type <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.|
@@ -91,8 +91,8 @@ Specifies a custom token issued as a service credential.
 ## See also
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.IssuedTokenAuthentication>
 - <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication>

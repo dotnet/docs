@@ -2,10 +2,10 @@
 title: "How to: store asymmetric keys in a key container"
 description: Learn how to store asymmetric keys in a key container in .NET. See how to create an asymmetric key, save it in a key container, and retrieve and delete the key.
 ms.date: 05/26/2020
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "cryptography [.NET], asymmetric keys"
   - "storing asymmetric keys"
   - "keys, asymmetric"
@@ -33,8 +33,8 @@ Asymmetric private keys should never be stored verbatim or in plain text on the 
 > [!NOTE]
 > The creation and retrieval of an asymmetric key is one operation. If a key is not already in the container, it's created before being returned.
 >
-> - <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType>
-> - <xref:System.Security.Cryptography.DSA.ToXmlString%2A?displayProperty=nameWithType>
+> - <xref:System.Security.Cryptography.RSA.ToXmlString*?displayProperty=nameWithType>
+> - <xref:System.Security.Cryptography.DSA.ToXmlString*?displayProperty=nameWithType>
 
 ## Delete the key from the key container
 
@@ -50,7 +50,7 @@ Asymmetric private keys should never be stored verbatim or in plain text on the 
 
 The following example demonstrates how to create an asymmetric key, save it in a key container, retrieve the key at a later time, and delete the key from the container.
 
-Notice that code in the `GenKey_SaveInContainer` method and the `GetKeyFromContainer` method is similar. When you specify a key container name for a <xref:System.Security.Cryptography.CspParameters> object and pass it to an <xref:System.Security.Cryptography.AsymmetricAlgorithm> object with the <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp%2A> property or <xref:System.Security.Cryptography.DSACryptoServiceProvider.PersistKeyInCsp%2A> property set to `true`, the behavior is as follows:
+Notice that code in the `GenKey_SaveInContainer` method and the `GetKeyFromContainer` method is similar. When you specify a key container name for a <xref:System.Security.Cryptography.CspParameters> object and pass it to an <xref:System.Security.Cryptography.AsymmetricAlgorithm> object with the <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp> property or <xref:System.Security.Cryptography.DSACryptoServiceProvider.PersistKeyInCsp> property set to `true`, the behavior is as follows:
 
 - If a key container with the specified name does not exist, then one is created and the key is persisted.
 - If a key container with the specified name does exist, then the key in the container is automatically loaded into the current <xref:System.Security.Cryptography.AsymmetricAlgorithm> object.

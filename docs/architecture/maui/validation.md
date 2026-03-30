@@ -105,7 +105,7 @@ public class EmailRule<T> : IValidationRule<T>
 }
 ```
 
-The `Check` method returns a boolean indicating whether or not the value argument is a valid email address. This is achieved by searching the value argument for the first occurrence of the regular expression pattern specified in the `Regex` constructor. Whether the regular expression pattern has been found in the input string can be determined by checking the `value` against <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>.
+The `Check` method returns a boolean indicating whether or not the value argument is a valid email address. This is achieved by searching the value argument for the first occurrence of the regular expression pattern specified in the `Regex` constructor. Whether the regular expression pattern has been found in the input string can be determined by checking the `value` against <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType>.
 
 > [!NOTE]
 > Property validation can sometimes involve dependent properties. An example of dependent properties is when the set of valid values for property A depends on the particular value that has been set in property B. To check that the value of property A is one of the allowed values would involve retrieving the value of property B. In addition, when the value of property B changes, property A would need to be revalidated.
@@ -224,7 +224,7 @@ The eShop multi-platform app notifies the user of any validation errors by highl
             Command="{Binding ValidateCommand}" />
     </Entry.Behaviors>
     <Entry.Triggers>
-        <DataTrigger 
+        <DataTrigger
             TargetType="Entry"
             Binding="{Binding UserName.IsValid}"
             Value="False">

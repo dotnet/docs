@@ -113,7 +113,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 
 |Configuration|Description|
 |-------------------|-----------------|
-|`/ExeConfig:` `exePath`|Use the configuration of the specified executable assembly.<br /><br /> Ngen.exe needs to make the same decisions as the loader when binding to dependencies. When a shared component is loaded at runtime, using the <xref:System.Reflection.Assembly.Load%2A> method, the application's configuration file determines the dependencies that are loaded for the shared component — for example, the version of a dependency that is loaded. The `/ExeConfig` switch gives Ngen.exe guidance on which dependencies would be loaded at runtime.|
+|`/ExeConfig:` `exePath`|Use the configuration of the specified executable assembly.<br /><br /> Ngen.exe needs to make the same decisions as the loader when binding to dependencies. When a shared component is loaded at runtime, using the <xref:System.Reflection.Assembly.Load*> method, the application's configuration file determines the dependencies that are loaded for the shared component — for example, the version of a dependency that is loaded. The `/ExeConfig` switch gives Ngen.exe guidance on which dependencies would be loaded at runtime.|
 |`/AppBase:` `directoryPath`|When locating dependencies, use the specified directory as the application base.|
 
 <a name="OptionTable"></a>
@@ -136,14 +136,14 @@ To run Ngen.exe, you must have administrative privileges.
 
 Starting with .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
 
-Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
+Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> method.
 
 > [!IMPORTANT]
-> Do not use the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method with native images. An image loaded with this method cannot be used by other assemblies in the execution context.
+> Do not use the <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> method with native images. An image loaded with this method cannot be used by other assemblies in the execution context.
 
 Ngen.exe maintains a count on dependencies. For example, suppose `MyAssembly.exe` and `YourAssembly.exe` are both installed in the native image cache, and both have references to `OurDependency.dll`. If `MyAssembly.exe` is uninstalled, `OurDependency.dll` is not uninstalled. It is only removed when `YourAssembly.exe` is also uninstalled.
 
-If you are generating a native image for an assembly in the global assembly cache, specify its display name. See <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>.
+If you are generating a native image for an assembly in the global assembly cache, specify its display name. See <xref:System.Reflection.Assembly.FullName*?displayProperty=nameWithType>.
 
 The native images that Ngen.exe generates can be shared across application domains. This means you can use Ngen.exe in application scenarios that require assemblies to be shared across application domains. To specify domain neutrality:
 
@@ -435,7 +435,7 @@ When locating assemblies and their dependencies, Ngen.exe uses the same probing 
 > [!NOTE]
 > This is a change from Ngen.exe behavior in the .NET Framework versions 1.0 and 1.1, where the application base is set to the current directory.
 
-An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll` using the configuration information from `MyApp.exe`.
+An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll` using the configuration information from `MyApp.exe`.
 
 ```console
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe

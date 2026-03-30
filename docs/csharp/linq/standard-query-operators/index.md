@@ -10,9 +10,9 @@ The *standard query operators* are the keywords and methods that form the LINQ p
 
 [!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
-Most of these methods operate on sequences, where a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators provide query capabilities including filtering, projection, aggregation, sorting, and more. The methods that make up each set are extension members defined in the <xref:System.Linq.Enumerable> and <xref:System.Linq.Queryable> classes, respectively. They're defined as [*extension members*](../../programming-guide/classes-and-structs/extension-methods.md) where the receiver type is either the `IEnumerable<T>` or `IQueryable<T>` type that they operate on.
+Most of these methods operate on sequences, where a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable`1> interface or the <xref:System.Linq.IQueryable`1> interface. The standard query operators provide query capabilities including filtering, projection, aggregation, sorting, and more. The methods that make up each set are extension members defined in the <xref:System.Linq.Enumerable> and <xref:System.Linq.Queryable> classes, respectively. They're defined as [*extension members*](../../programming-guide/classes-and-structs/extension-methods.md) where the receiver type is either the `IEnumerable<T>` or `IQueryable<T>` type that they operate on.
 
-The distinction between <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Linq.IQueryable%601> sequences determines how the query is executed at runtime.
+The distinction between <xref:System.Collections.Generic.IEnumerable`1> and <xref:System.Linq.IQueryable`1> sequences determines how the query is executed at runtime.
 
 For `IEnumerable<T>`, the returned enumerable object captures the arguments that were passed to the method. When that object is enumerated, the logic of the query operator is employed and the query results are returned.
 
@@ -32,7 +32,7 @@ You can find the data set in the [source repo](https://github.com/dotnet/docs/bl
 
 ## Types of query operators
 
-The standard query operators differ in the timing of their execution, depending on whether they return a singleton value or a sequence of values. Those methods that return a singleton value (such as <xref:System.Linq.Enumerable.Average%2A> and <xref:System.Linq.Enumerable.Sum%2A>) execute immediately. Methods that return a sequence defer the query execution and return an enumerable object. You can use the output sequence of one query as the input sequence to another query. You chain query methods together in one query, which enables queries to become arbitrarily complex.
+The standard query operators differ in the timing of their execution, depending on whether they return a singleton value or a sequence of values. Those methods that return a singleton value (such as <xref:System.Linq.Enumerable.Average*> and <xref:System.Linq.Enumerable.Sum*>) execute immediately. Methods that return a sequence defer the query execution and return an enumerable object. You can use the output sequence of one query as the input sequence to another query. You chain query methods together in one query, which enables queries to become arbitrarily complex.
 
 ## Query operators
 
@@ -59,17 +59,17 @@ The following table lists the standard query operators that have equivalent quer
 
 | Method | C# query expression syntax |
 |------------|---------------------------------|
-|<xref:System.Linq.Enumerable.Cast%2A>|Use an explicitly typed range variable:<br /><br /> `from int i in numbers`<br /><br /> (For more information, see [from clause](../../language-reference/keywords/from-clause.md).)|
-|<xref:System.Linq.Enumerable.GroupBy%2A>|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../language-reference/keywords/group-clause.md).)|
-|<xref:System.Linq.Enumerable.GroupJoin%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2C%60%603%7D%29>|`join … in … on … equals … into …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
-|<xref:System.Linq.Enumerable.Join%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%603%7D%29>|`join … in … on … equals …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
-|<xref:System.Linq.Enumerable.OrderBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
-|<xref:System.Linq.Enumerable.OrderByDescending%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby … descending`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
-|<xref:System.Linq.Enumerable.Select%2A>|`select`<br /><br /> (For more information, see [select clause](../../language-reference/keywords/select-clause.md).)|
-|<xref:System.Linq.Enumerable.SelectMany%2A>|Multiple `from` clauses.<br /><br /> (For more information, see [from clause](../../language-reference/keywords/from-clause.md).)|
-|<xref:System.Linq.Enumerable.ThenBy%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, …`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
-|<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, … descending`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
-|<xref:System.Linq.Enumerable.Where%2A>|`where`<br /><br /> (For more information, see [where clause](../../language-reference/keywords/where-clause.md).)|
+|<xref:System.Linq.Enumerable.Cast*>|Use an explicitly typed range variable:<br /><br /> `from int i in numbers`<br /><br /> (For more information, see [from clause](../../language-reference/keywords/from-clause.md).)|
+|<xref:System.Linq.Enumerable.GroupBy*>|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../language-reference/keywords/group-clause.md).)|
+|<xref:System.Linq.Enumerable.GroupJoin``4%28System.Collections.Generic.IEnumerable%7B``0%7D%2CSystem.Collections.Generic.IEnumerable%7B``1%7D%2CSystem.Func%7B``0%2C``2%7D%2CSystem.Func%7B``1%2C``2%7D%2CSystem.Func%7B``0%2CSystem.Collections.Generic.IEnumerable%7B``1%7D%2C``3%7D%29>|`join … in … on … equals … into …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
+|<xref:System.Linq.Enumerable.Join``4%28System.Collections.Generic.IEnumerable%7B``0%7D%2CSystem.Collections.Generic.IEnumerable%7B``1%7D%2CSystem.Func%7B``0%2C``2%7D%2CSystem.Func%7B``1%2C``2%7D%2CSystem.Func%7B``0%2C``1%2C``3%7D%29>|`join … in … on … equals …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
+|<xref:System.Linq.Enumerable.OrderBy``2%28System.Collections.Generic.IEnumerable%7B``0%7D%2CSystem.Func%7B``0%2C``1%7D%29>|`orderby`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
+|<xref:System.Linq.Enumerable.OrderByDescending``2%28System.Collections.Generic.IEnumerable%7B``0%7D%2CSystem.Func%7B``0%2C``1%7D%29>|`orderby … descending`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
+|<xref:System.Linq.Enumerable.Select*>|`select`<br /><br /> (For more information, see [select clause](../../language-reference/keywords/select-clause.md).)|
+|<xref:System.Linq.Enumerable.SelectMany*>|Multiple `from` clauses.<br /><br /> (For more information, see [from clause](../../language-reference/keywords/from-clause.md).)|
+|<xref:System.Linq.Enumerable.ThenBy``2%28System.Linq.IOrderedEnumerable%7B``0%7D%2CSystem.Func%7B``0%2C``1%7D%29>|`orderby …, …`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
+|<xref:System.Linq.Enumerable.ThenByDescending``2%28System.Linq.IOrderedEnumerable%7B``0%7D%2CSystem.Func%7B``0%2C``1%7D%29>|`orderby …, … descending`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
+|<xref:System.Linq.Enumerable.Where*>|`where`<br /><br /> (For more information, see [where clause](../../language-reference/keywords/where-clause.md).)|
 
 ## Data transformations with LINQ
 

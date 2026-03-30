@@ -12,11 +12,11 @@ The following information exposes some issues you might encounter in your [!INCL
 
 ## Unsupported Standard Query Operators
 
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support all standard query operator methods (for example, <xref:System.Linq.Enumerable.ElementAt%2A>). As a result, projects that compile can still produce runtime errors. For more information, see [Standard Query Operator Translation](standard-query-operator-translation.md).
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support all standard query operator methods (for example, <xref:System.Linq.Enumerable.ElementAt*>). As a result, projects that compile can still produce runtime errors. For more information, see [Standard Query Operator Translation](standard-query-operator-translation.md).
 
 ## Memory Issues
 
- If a query involves an in-memory collection and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table%601>, the query might be executed in memory, depending on the order in which the two collections are specified. If the query must be executed in memory, then the data from the database table will need to be retrieved.
+ If a query involves an in-memory collection and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table`1>, the query might be executed in memory, depending on the order in which the two collections are specified. If the query must be executed in memory, then the data from the database table will need to be retrieved.
 
  This approach is inefficient and could result in significant memory and processor usage. Try to avoid such multi-domain queries.
 
@@ -52,7 +52,7 @@ The following information exposes some issues you might encounter in your [!INCL
 
 ## DuplicateKeyException
 
- In the course of debugging a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project, you might traverse an entity's relations. Doing so brings these items into the cache, and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] becomes aware of their presence. If you then try to execute <xref:System.Data.Linq.Table%601.Attach%2A> or <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> or a similar method that produces multiple rows that have the same key, a <xref:System.Data.Linq.DuplicateKeyException> is thrown.
+ In the course of debugging a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project, you might traverse an entity's relations. Doing so brings these items into the cache, and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] becomes aware of their presence. If you then try to execute <xref:System.Data.Linq.Table`1.Attach*> or <xref:System.Data.Linq.Table`1.InsertOnSubmit*> or a similar method that produces multiple rows that have the same key, a <xref:System.Data.Linq.DuplicateKeyException> is thrown.
 
 ## String Concatenation Exceptions
 
@@ -60,13 +60,13 @@ The following information exposes some issues you might encounter in your [!INCL
 
 ## Skip and Take Exceptions in SQL Server 2000
 
- You must use identity members (<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey>) when you use <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> against a SQL Server 2000 database. The query must be against a single table (that is, not a join), or be a <xref:System.Linq.Queryable.Distinct%2A>, <xref:System.Linq.Queryable.Except%2A>, <xref:System.Linq.Queryable.Intersect%2A>, or <xref:System.Linq.Queryable.Union%2A> operation, and must not include a <xref:System.Linq.Queryable.Concat%2A> operation. For more information, see the "SQL Server 2000 Support" section in [Standard Query Operator Translation](standard-query-operator-translation.md).
+ You must use identity members (<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey>) when you use <xref:System.Linq.Queryable.Take*> or <xref:System.Linq.Queryable.Skip*> against a SQL Server 2000 database. The query must be against a single table (that is, not a join), or be a <xref:System.Linq.Queryable.Distinct*>, <xref:System.Linq.Queryable.Except*>, <xref:System.Linq.Queryable.Intersect*>, or <xref:System.Linq.Queryable.Union*> operation, and must not include a <xref:System.Linq.Queryable.Concat*> operation. For more information, see the "SQL Server 2000 Support" section in [Standard Query Operator Translation](standard-query-operator-translation.md).
 
  This requirement does not apply to SQL Server 2005.
 
 ## GroupBy InvalidOperationException
 
- This exception is thrown when a column value is null in a <xref:System.Linq.Enumerable.GroupBy%2A> query that groups by a `boolean` expression, such as `group x by (Phone==@phone)`. Because the expression is a `boolean`, the key is inferred to be `boolean`, not `nullable` `boolean`. When the translated comparison produces a null, an attempt is made to assign a `nullable` `boolean` to a `boolean`, and the exception is thrown.
+ This exception is thrown when a column value is null in a <xref:System.Linq.Enumerable.GroupBy*> query that groups by a `boolean` expression, such as `group x by (Phone==@phone)`. Because the expression is a `boolean`, the key is inferred to be `boolean`, not `nullable` `boolean`. When the translated comparison produces a null, an attempt is made to assign a `nullable` `boolean` to a `boolean`, and the exception is thrown.
 
  To avoid this situation (assuming you want to treat nulls as false), use an approach such as the following:
 

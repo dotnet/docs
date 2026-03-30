@@ -45,21 +45,21 @@ Service behaviors are specified with the <xref:System.ServiceModel.ServiceBehavi
 
 |Service behavior|Description|
 |----------------------|-----------------|
-|<xref:System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown%2A>|Automatically shuts down a session at the client's request.|
-|<xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>|Specifies the concurrency mode for each service instance.|
-|<xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>|Specifies the instance context mode.|
+|<xref:System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown*>|Automatically shuts down a session at the client's request.|
+|<xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode*>|Specifies the concurrency mode for each service instance.|
+|<xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode*>|Specifies the instance context mode.|
 |<xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext>|Determines whether to use the provided synchronization context, if one is set. Use this when you want to control whether to use a `WindowsFormsSynchronizationContext` in Windows Forms applications.|
-|<xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A>|Determines whether general unhandled execution exceptions are to be converted into a `Fault<string>` and sent as a fault message.|
-|<xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A>|Specifies the isolation level for transactions.|
+|<xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults*>|Determines whether general unhandled execution exceptions are to be converted into a `Fault<string>` and sent as a fault message.|
+|<xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel*>|Specifies the isolation level for transactions.|
 |<xref:System.ServiceModel.ServiceBehaviorAttribute.ValidateMustUnderstand>|Determines whether unexpected message headers cause an error condition.|
 
 Operation behaviors are specified by using the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The following table describes some of these behaviors.
 
 |Operation Behavior|Description|
 |------------------------|-----------------|
-|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A>|Determines whether service operation completion commits the current transaction.|
-|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A>|Determines whether the service operation enlists in a client-flowed transaction.|
-|<xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>|Determines whether the service operation impersonates the caller's identity.|
+|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete*>|Determines whether service operation completion commits the current transaction.|
+|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired*>|Determines whether the service operation enlists in a client-flowed transaction.|
+|<xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation*>|Determines whether the service operation impersonates the caller's identity.|
 |<xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode>|Determines whether service instances are recycled at the start or end of the service operation call.|
 
 When you run the sample, the operation requests and responses are displayed in the client console window. The delay between the calls is the result of the calls to `System.Threading.Thread.Sleep()` made in the service operations. The rest of the behavior samples explain these behaviors in more detail. Press ENTER in the client window to shut down the client.

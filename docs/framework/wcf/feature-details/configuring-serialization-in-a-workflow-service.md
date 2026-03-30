@@ -31,7 +31,7 @@ Receive approveExpense = new Receive
 
  ![Screenshot of the Type Collections Editor.](./media/configuring-serialization-in-a-workflow-service/type-collection-editor.gif)
 
- Click the **Add new type** link and use the drop down to select or search for a type to add to the known types collection. To specify known types in code use the <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> property as shown in the following example.
+ Click the **Add new type** link and use the drop down to select or search for a type to add to the known types collection. To specify known types in code use the <xref:System.ServiceModel.Activities.Receive.KnownTypes> property as shown in the following example.
 
 ```csharp
 Receive approveExpense = new Receive

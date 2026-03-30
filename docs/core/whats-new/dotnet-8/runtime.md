@@ -112,7 +112,7 @@ The COM source generator doesn't support apartment affinity, using the `new` key
 
 .NET 8 introduces a source generator to provide AOT and trim-friendly [configuration](/aspnet/core/fundamentals/configuration/) in ASP.NET Core. The generator is an alternative to the pre-existing reflection-based implementation.
 
-The source generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
+The source generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions`1.Configure(`0)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind*>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get*> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
 
 No source code changes are needed to use the generator. It's enabled by default in AOT-compiled web apps, and when [`PublishTrimmed`](../../deploying/trimming/trimming-options.md#enable-trimming) is set to `true` (.NET 8+ apps). For other project types, the source generator is off by default, but you can opt in by setting the `EnableConfigurationBindingGenerator` property to `true` in your project file:
 
@@ -202,7 +202,7 @@ The serializer has built-in support for the following additional types.
   // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
   ```
 
-- <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
+- <xref:System.Memory`1> and <xref:System.ReadOnlyMemory`1> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
 
   ```csharp
   JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
@@ -246,7 +246,7 @@ The serializer has built-in support for the following additional types.
 
 The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
-In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../../fundamentals/syslib-diagnostics/syslib0049.md).
+In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext``1?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../../fundamentals/syslib-diagnostics/syslib0049.md).
 
 #### Interface hierarchies
 
@@ -359,7 +359,7 @@ For more information, see [Use immutable types and non-public members and access
 
 #### Streaming deserialization APIs
 
-.NET 8 includes new <xref:System.Collections.Generic.IAsyncEnumerable%601> streaming deserialization extension methods, for example <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A>. Similar methods have existed that return <xref:System.Threading.Tasks.Task%601>, for example, <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType>. The new extension methods invoke streaming APIs and return <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+.NET 8 includes new <xref:System.Collections.Generic.IAsyncEnumerable`1> streaming deserialization extension methods, for example <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable*>. Similar methods have existed that return <xref:System.Threading.Tasks.Task`1>, for example, <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*?displayProperty=nameWithType>. The new extension methods invoke streaming APIs and return <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 The following code shows how you might use the new extension methods.
 
@@ -388,7 +388,7 @@ var options = new JsonSerializerOptions
 You can now create <xref:System.Net.Http.Json.JsonContent> instances using trim-safe or source-generated contracts. The new methods are:
 
 - <xref:System.Net.Http.Json.JsonContent.Create(System.Object,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
-- <xref:System.Net.Http.Json.JsonContent.Create%60%601(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600},System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create``1(``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
 
 ```csharp
 var book = new Book(id: 42, "Title", "Author", publishedYear: 2023);
@@ -418,7 +418,7 @@ The new <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property lets y
 
 ### Time abstraction
 
-The new <xref:System.TimeProvider> class and <xref:System.Threading.ITimer> interface add *time abstraction* functionality, which allows you to mock time in test scenarios. In addition, you can use the time abstraction to mock <xref:System.Threading.Tasks.Task> operations that rely on time progression using <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WaitAsync%2A?displayProperty=nameWithType>. The time abstraction supports the following essential time operations:
+The new <xref:System.TimeProvider> class and <xref:System.Threading.ITimer> interface add *time abstraction* functionality, which allows you to mock time in test scenarios. In addition, you can use the time abstraction to mock <xref:System.Threading.Tasks.Task> operations that rely on time progression using <xref:System.Threading.Tasks.Task.Delay*?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WaitAsync*?displayProperty=nameWithType>. The time abstraction supports the following essential time operations:
 
 - Retrieve local and UTC time
 - Obtain a timestamp for measuring performance
@@ -435,7 +435,7 @@ If you want to enable writing out a string-like representation of your type to a
 
 <xref:System.IUtf8SpanFormattable> has been implemented on all of the primitive types (plus others), with the exact same shared logic whether targeting `string`, `Span<char>`, or `Span<byte>`. It has full support for all formats (including the new ["B" binary specifier](../../../standard/base-types/standard-numeric-format-strings.md#binary-format-specifier-b)) and all cultures. This means you can now format directly to UTF8 from `Byte`, `Complex`, `Char`, `DateOnly`, `DateTime`, `DateTimeOffset`, `Decimal`, `Double`, `Guid`, `Half`, `IPAddress`, `IPNetwork`, `Int16`, `Int32`, `Int64`, `Int128`, `IntPtr`, `NFloat`, `SByte`, `Single`, `Rune`, `TimeOnly`, `TimeSpan`, `UInt16`, `UInt32`, `UInt64`, `UInt128`, `UIntPtr`, and `Version`.
 
-New <xref:System.Text.Unicode.Utf8.TryWrite%2A?displayProperty=nameWithType> methods provide a UTF8-based counterpart to the existing <xref:System.MemoryExtensions.TryWrite%2A?displayProperty=nameWithType> methods, which are UTF16-based. You can use interpolated string syntax to format a complex expression directly into a span of UTF8 bytes, for example:
+New <xref:System.Text.Unicode.Utf8.TryWrite*?displayProperty=nameWithType> methods provide a UTF8-based counterpart to the existing <xref:System.MemoryExtensions.TryWrite*?displayProperty=nameWithType> methods, which are UTF16-based. You can use interpolated string syntax to format a complex expression directly into a span of UTF8 bytes, for example:
 
 ```csharp
 static bool FormatHexVersion(
@@ -462,7 +462,7 @@ The <xref:System.Random?displayProperty=fullName> and <xref:System.Security.Cryp
 
 #### GetItems\<T>()
 
-The new <xref:System.Random.GetItems%2A?displayProperty=fullName> and <xref:System.Security.Cryptography.RandomNumberGenerator.GetItems%2A?displayProperty=fullName> methods let you randomly choose a specified number of items from an input set. The following example shows how to use `System.Random.GetItems<T>()` (on the instance provided by the <xref:System.Random.Shared?displayProperty=nameWithType> property) to randomly insert 31 items into an array. This example could be used in a game of "Simon" where players must remember a sequence of colored buttons.
+The new <xref:System.Random.GetItems*?displayProperty=fullName> and <xref:System.Security.Cryptography.RandomNumberGenerator.GetItems*?displayProperty=fullName> methods let you randomly choose a specified number of items from an input set. The following example shows how to use `System.Random.GetItems<T>()` (on the instance provided by the <xref:System.Random.Shared?displayProperty=nameWithType> property) to randomly insert 31 items into an array. This example could be used in a game of "Simon" where players must remember a sequence of colored buttons.
 
 ```csharp
 private static ReadOnlySpan<Button> s_allButtons = new[]
@@ -481,7 +481,7 @@ Button[] thisRound = Random.Shared.GetItems(s_allButtons, 31);
 
 #### Shuffle\<T>()
 
-The new <xref:System.Random.Shuffle%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RandomNumberGenerator.Shuffle%60%601(System.Span{%60%600})?displayProperty=nameWithType> methods let you randomize the order of a span. These methods are useful for reducing training bias in machine learning (so the first thing isn't always training, and the last thing always test).
+The new <xref:System.Random.Shuffle*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RandomNumberGenerator.Shuffle``1(System.Span{``0})?displayProperty=nameWithType> methods let you randomize the order of a span. These methods are useful for reducing training bias in machine learning (so the first thing isn't always training, and the last thing always test).
 
 ```csharp
 YourType[] trainingData = LoadTrainingData();
@@ -500,7 +500,7 @@ IDataView predictions = model.Transform(split.TestSet);
 
 .NET 8 introduces several new types aimed at improving app performance.
 
-- The new <xref:System.Collections.Frozen?displayProperty=fullName> namespace includes the collection types <xref:System.Collections.Frozen.FrozenDictionary%602> and <xref:System.Collections.Frozen.FrozenSet%601>. These types don't allow any changes to keys and values once a collection is created. That requirement allows faster read operations (for example, `TryGetValue()`). These types are particularly useful for collections that are populated on first use and then persisted for the duration of a long-lived service, for example:
+- The new <xref:System.Collections.Frozen?displayProperty=fullName> namespace includes the collection types <xref:System.Collections.Frozen.FrozenDictionary`2> and <xref:System.Collections.Frozen.FrozenSet`1>. These types don't allow any changes to keys and values once a collection is created. That requirement allows faster read operations (for example, `TryGetValue()`). These types are particularly useful for collections that are populated on first use and then persisted for the duration of a long-lived service, for example:
 
   ```csharp
   private static readonly FrozenDictionary<string, bool> s_configurationData =
@@ -513,7 +513,7 @@ IDataView predictions = model.Transform(split.TestSet);
   }
   ```
 
-- Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front. (The `SearchValues<T>` type was expanded in .NET 9. For more information, see [`SearchValues` expansion](../dotnet-9/libraries.md#searchvalues-expansion).)
+- Methods like <xref:System.MemoryExtensions.IndexOfAny*?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues`1?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny*?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues`1>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front. (The `SearchValues<T>` type was expanded in .NET 9. For more information, see [`SearchValues` expansion](../dotnet-9/libraries.md#searchvalues-expansion).)
 
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
@@ -532,13 +532,13 @@ IDataView predictions = model.Transform(split.TestSet);
 
 This section covers improvements to the <xref:System.Numerics?displayProperty=fullName> and <xref:System.Runtime.Intrinsics?displayProperty=fullName> namespaces.
 
-- <xref:System.Runtime.Intrinsics.Vector256%601>, <xref:System.Numerics.Matrix3x2>, and <xref:System.Numerics.Matrix4x4> have improved hardware acceleration on .NET 8. For example, <xref:System.Runtime.Intrinsics.Vector256%601> was reimplemented to internally be `2x Vector128<T>` operations, where possible. This allows partial acceleration of some functions when `Vector128.IsHardwareAccelerated == true` but `Vector256.IsHardwareAccelerated == false`, such as on Arm64.
+- <xref:System.Runtime.Intrinsics.Vector256`1>, <xref:System.Numerics.Matrix3x2>, and <xref:System.Numerics.Matrix4x4> have improved hardware acceleration on .NET 8. For example, <xref:System.Runtime.Intrinsics.Vector256`1> was reimplemented to internally be `2x Vector128<T>` operations, where possible. This allows partial acceleration of some functions when `Vector128.IsHardwareAccelerated == true` but `Vector256.IsHardwareAccelerated == false`, such as on Arm64.
 - Hardware intrinsics are now annotated with the `ConstExpected` attribute. This ensures that users are aware when the underlying hardware expects a constant and therefore when a non-constant value may unexpectedly hurt performance.
-- The <xref:System.Numerics.IFloatingPointIeee754%601.Lerp(%600,%600,%600)> `Lerp` API has been added to <xref:System.Numerics.IFloatingPointIeee754%601> and therefore to `float` (<xref:System.Single>), `double` (<xref:System.Double>), and <xref:System.Half>. This API allows a linear interpolation between two values to be performed efficiently and correctly.
+- The <xref:System.Numerics.IFloatingPointIeee754`1.Lerp(`0,`0,`0)> `Lerp` API has been added to <xref:System.Numerics.IFloatingPointIeee754`1> and therefore to `float` (<xref:System.Single>), `double` (<xref:System.Double>), and <xref:System.Half>. This API allows a linear interpolation between two values to be performed efficiently and correctly.
 
 #### Vector512 and AVX-512
 
-.NET Core 3.0 expanded SIMD support to include the platform-specific hardware intrinsics APIs for x86/x64. .NET 5 added support for Arm64 and .NET 7 added the cross-platform hardware intrinsics. .NET 8 furthers SIMD support by introducing <xref:System.Runtime.Intrinsics.Vector512%601> and support for [Intel Advanced Vector Extensions 512 (AVX-512)](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html) instructions.
+.NET Core 3.0 expanded SIMD support to include the platform-specific hardware intrinsics APIs for x86/x64. .NET 5 added support for Arm64 and .NET 7 added the cross-platform hardware intrinsics. .NET 8 furthers SIMD support by introducing <xref:System.Runtime.Intrinsics.Vector512`1> and support for [Intel Advanced Vector Extensions 512 (AVX-512)](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html) instructions.
 
 Specifically, .NET 8 includes support for the following key features of AVX-512:
 
@@ -558,7 +558,7 @@ If you have hardware that supports the functionality, then <xref:System.Runtime.
 
 These classes follow the same general shape as other instruction set architectures (ISAs) in that they expose an <xref:System.Runtime.Intrinsics.X86.Avx512F.IsSupported> property and a nested <xref:System.Runtime.Intrinsics.X86.Avx512F.X64> class for instructions available only to 64-bit processes. Additionally, each class has a nested <xref:System.Runtime.Intrinsics.X86.Avx512F.VL> class that exposes the `Avx512VL` (vector length) extensions for the corresponding instruction set.
 
-Even if you don't explicitly use `Vector512`-specific or `Avx512F`-specific instructions in your code, you'll likely still benefit from the new AVX-512 support. The JIT can take advantage of the additional registers and instructions implicitly when using <xref:System.Runtime.Intrinsics.Vector128%601> or <xref:System.Runtime.Intrinsics.Vector256%601>. The base class library uses these hardware intrinsics internally in most operations exposed by <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> and in many of the math APIs exposed for the primitive types.
+Even if you don't explicitly use `Vector512`-specific or `Avx512F`-specific instructions in your code, you'll likely still benefit from the new AVX-512 support. The JIT can take advantage of the additional registers and instructions implicitly when using <xref:System.Runtime.Intrinsics.Vector128`1> or <xref:System.Runtime.Intrinsics.Vector256`1>. The base class library uses these hardware intrinsics internally in most operations exposed by <xref:System.Span`1> and <xref:System.ReadOnlySpan`1> and in many of the math APIs exposed for the primitive types.
 
 ### Data validation
 
@@ -581,7 +581,7 @@ The new APIs include:
 
 - <xref:System.Diagnostics.Metrics.MeterOptions>
 - <xref:System.Diagnostics.Metrics.Meter.%23ctor(System.Diagnostics.Metrics.MeterOptions)>
-- <xref:System.Diagnostics.Metrics.Meter.CreateCounter%60%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
+- <xref:System.Diagnostics.Metrics.Meter.CreateCounter``1(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
 
 ### Cryptography
 
@@ -629,7 +629,7 @@ You can also use the <xref:System.Net.WebProxy> class to control the proxy progr
 
 ### Stream-based ZipFile methods
 
-.NET 8 includes new overloads of <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> that allow you to collect all the files included in a directory and zip them, then store the resulting zip file into the provided stream. Similarly, new <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType> overloads let you provide a stream containing a zipped file and extract its contents into the filesystem. These are the new overloads:
+.NET 8 includes new overloads of <xref:System.IO.Compression.ZipFile.CreateFromDirectory*?displayProperty=nameWithType> that allow you to collect all the files included in a directory and zip them, then store the resulting zip file into the provided stream. Similarly, new <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> overloads let you provide a stream containing a zipped file and extract its contents into the filesystem. These are the new overloads:
 
 ```csharp
 namespace System.IO.Compression;
@@ -686,7 +686,7 @@ Keyed dependency injection (DI) services provide a means for registering and ret
 - The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
 - The <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> attribute, which can be used on service constructor parameters to specify which keyed service to use.
-- Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
+- Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped*?displayProperty=nameWithType>.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
 
 The following example shows you how to use keyed DI services.
@@ -726,7 +726,7 @@ If your app uses dependency injection, you can inject the validation as shown in
 
 #### ValidateOptionsResultBuilder type
 
-.NET 8 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
+.NET 8 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions`1.Validate(System.String,`0)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
 
 The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
 
@@ -770,7 +770,7 @@ Meter meter = meterFactory.Create(options);
 
 #### MetricCollector\<T> class
 
-The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
+The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector`1> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
 :::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/MetricCollector.cs" id="MetricCollector":::
 

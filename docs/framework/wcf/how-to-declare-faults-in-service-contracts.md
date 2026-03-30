@@ -30,7 +30,7 @@ In managed code, exceptions are thrown when error conditions occur. In Windows C
 
 ### Throw the specified SOAP fault in the operation
 
-1. When a <xref:System.ServiceModel.FaultContractAttribute>-specified error condition occurs in an operation, throw a new <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the specified SOAP fault is the type parameter. The following example shows how to throw the `GreetingFault` in the `SampleMethod` shown in the preceding procedure and in the following Code section.
+1. When a <xref:System.ServiceModel.FaultContractAttribute>-specified error condition occurs in an operation, throw a new <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType> where the specified SOAP fault is the type parameter. The following example shows how to throw the `GreetingFault` in the `SampleMethod` shown in the preceding procedure and in the following Code section.
 
      [!code-csharp[FaultContractAttribute#5](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#5)]
      [!code-vb[FaultContractAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#5)]
@@ -45,4 +45,4 @@ The following code example shows an implementation of a single operation that sp
 ## See also
 
 - <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType>
-- <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType>
+- <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType>

@@ -160,7 +160,7 @@ The rules for the `ref`, `block`, `default`, `fixed`, `form`, and `id` attribute
 
 |Attribute|Schema|
 |---------------|------------|
-|`name`|Supported, maps to the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> property in the `CollectionDataContractAttribute` attribute.|
+|`name`|Supported, maps to the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName> property in the `CollectionDataContractAttribute` attribute.|
 |`type`|Supported, maps to the type stored in the collection.|
 |`maxOccurs`|Greater than 1 or "unbounded". The DC schema should use "unbounded".|
 |`minOccurs`|Ignored.|
@@ -619,7 +619,7 @@ The following should be noted:
 
 ## Importing non-DataContract schemas
 
-`DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).
+`DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).
 
 ```csharp
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]

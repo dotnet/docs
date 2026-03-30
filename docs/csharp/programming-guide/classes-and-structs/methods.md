@@ -119,9 +119,9 @@ If you mark a method with the [async](../../language-reference/keywords/async.md
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that's not yet complete or it gets to the end of the async method, whichever occurs first.
 
-An async method typically has a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable%601>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. An async method can have [any task-like return type](../../language-reference/keywords/async.md#return-types).
+An async method typically has a return type of <xref:System.Threading.Tasks.Task`1>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable`1>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. An async method can have [any task-like return type](../../language-reference/keywords/async.md#return-types).
 
-In the following example, `DelayAsync` is an async method that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `return` statement that returns an integer. Therefore the method declaration of `DelayAsync` must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer as the following statement demonstrates: `int result = await delayTask`.
+In the following example, `DelayAsync` is an async method that has a return type of <xref:System.Threading.Tasks.Task`1>. `DelayAsync` has a `return` statement that returns an integer. Therefore the method declaration of `DelayAsync` must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer as the following statement demonstrates: `int result = await delayTask`.
 
 The `Main` method is an example of an async method that has a return type of <xref:System.Threading.Tasks.Task>. It goes to the `DoSomethingAsync` method, and because it is expressed with a single line, it can omit the `async` and `await` keywords. Because `DoSomethingAsync` is an async method, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `await DoSomethingAsync();`.
 
@@ -152,7 +152,7 @@ An iterator performs a custom iteration over a collection, such as a list or an 
 
 You call an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement.
 
-The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IAsyncEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
+The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, <xref:System.Collections.Generic.IAsyncEnumerable`1>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator`1>.
 
 For more information, see [Iterators](../concepts/iterators.md).
 

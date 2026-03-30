@@ -15,11 +15,11 @@ Dim query = From student As Student In arrList
 
 By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.
 
-The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. In Visual Basic, you must explicitly call the <xref:System.Linq.Enumerable.Cast%2A> method on the data source to ensure a specific range variable type. For more information, see [Type Relationships in Query Operations (Visual Basic)](type-relationships-in-query-operations.md).
+The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast*> method. <xref:System.Linq.Enumerable.Cast*> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast*> and <xref:System.Linq.Enumerable.OfType*> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. In Visual Basic, you must explicitly call the <xref:System.Linq.Enumerable.Cast*> method on the data source to ensure a specific range variable type. For more information, see [Type Relationships in Query Operations (Visual Basic)](type-relationships-in-query-operations.md).
 
 ## Example
 
-The following example shows a simple query over an <xref:System.Collections.ArrayList>. Note that this example uses object initializers when the code calls the <xref:System.Collections.ArrayList.Add%2A> method, but this is not a requirement.
+The following example shows a simple query over an <xref:System.Collections.ArrayList>. Note that this example uses object initializers when the code calls the <xref:System.Collections.ArrayList.Add*> method, but this is not a requirement.
 
 ```vb
 Imports System.Collections

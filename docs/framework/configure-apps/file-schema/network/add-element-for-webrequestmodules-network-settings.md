@@ -39,7 +39,7 @@ Adds a custom Web request module to the application.
 |**Attribute**|**Description**|
 |-------------------|---------------------|
 |`prefix`|The URI prefix for requests handled by this Web request module.|
-|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements this Web request module.|
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName> property), separated by a comma, that implements this Web request module.|
 
 ### Child Elements
 
@@ -55,7 +55,7 @@ Adds a custom Web request module to the application.
 
  The `prefix` attribute defines the URI prefix that uses the specified Web request module. Web request modules are typically registered to handle a specific protocol, such as HTTP or FTP, but can be registered to handle a request to a specific server or path on a server.
 
- The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.
+ The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create*?displayProperty=nameWithType> method.
 
  The value for the `prefix` attribute should be the leading characters of a valid URI. For example, `http` or `http://www.contoso.com`.
 

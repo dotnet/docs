@@ -12,7 +12,7 @@ There are several ways to create bindings not provided by the system:
 
 - Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. For more information about custom bindings, see [Custom Bindings](custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.
 
-- You can create a class that derives from a standard binding. For example, you can derive a class from <xref:System.ServiceModel.WSHttpBinding> and override <xref:System.ServiceModel.Channels.CustomBinding.CreateBindingElements%2A> method to obtain the binding elements and insert a custom binding element or establish a particular value for security.
+- You can create a class that derives from a standard binding. For example, you can derive a class from <xref:System.ServiceModel.WSHttpBinding> and override <xref:System.ServiceModel.Channels.CustomBinding.CreateBindingElements*> method to obtain the binding elements and insert a custom binding element or establish a particular value for security.
 
 - You can create a new <xref:System.ServiceModel.Channels.Binding> type to completely control the entire binding implementation.
 
@@ -62,11 +62,11 @@ Binding customBinding = new CustomBinding(
 
  If you use the binding in more than one application, create your own binding and extend the <xref:System.ServiceModel.Channels.Binding>. This avoids manually creating a custom binding every time you want to use it. A user-defined binding allows you to define the binding’s behavior and include user-defined binding elements. And it is *pre-packaged*: you do not have to rebuild the binding every time you use it.
 
- At a minimum, a user-defined binding must implement the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.
+ At a minimum, a user-defined binding must implement the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements*> method and the <xref:System.ServiceModel.Channels.Binding.Scheme> property.
 
- The <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method returns a new <xref:System.ServiceModel.Channels.BindingElementCollection> that contains the binding elements for the binding. The collection is ordered, and should contain the protocol binding elements first, followed by the encoding binding element, followed by the transport binding element. When using the WCF system-provided binding elements, you must follow the binding element ordering rules specified in [Custom Bindings](custom-bindings.md). This collection should never reference objects referenced within the user-defined binding class; consequently, binding authors must return a `Clone()` of the <xref:System.ServiceModel.Channels.BindingElementCollection> on each call to <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A>.
+ The <xref:System.ServiceModel.Channels.Binding.CreateBindingElements*> method returns a new <xref:System.ServiceModel.Channels.BindingElementCollection> that contains the binding elements for the binding. The collection is ordered, and should contain the protocol binding elements first, followed by the encoding binding element, followed by the transport binding element. When using the WCF system-provided binding elements, you must follow the binding element ordering rules specified in [Custom Bindings](custom-bindings.md). This collection should never reference objects referenced within the user-defined binding class; consequently, binding authors must return a `Clone()` of the <xref:System.ServiceModel.Channels.BindingElementCollection> on each call to <xref:System.ServiceModel.Channels.Binding.CreateBindingElements*>.
 
- The <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property represents the URI scheme for the transport protocol in use on the binding. For example, the *WSHttpBinding* and the *NetTcpBinding* return "http" and "net.tcp" from their respective <xref:System.ServiceModel.Channels.Binding.Scheme%2A> properties.
+ The <xref:System.ServiceModel.Channels.Binding.Scheme> property represents the URI scheme for the transport protocol in use on the binding. For example, the *WSHttpBinding* and the *NetTcpBinding* return "http" and "net.tcp" from their respective <xref:System.ServiceModel.Channels.Binding.Scheme> properties.
 
  For a complete list of optional methods and properties for user-defined bindings, see <xref:System.ServiceModel.Channels.Binding>.
 
@@ -121,7 +121,7 @@ public override BindingElementCollection CreateBindingElements()
 
 ## Deriving from a Standard Binding
 
- Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.
+ Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements*> method and the <xref:System.ServiceModel.Channels.Binding.Scheme> property.
 
 ## See also
 

@@ -63,13 +63,13 @@ The following table lists the control patterns required to be supported by all e
 |<xref:System.Windows.Automation.Provider.ITextProvider>|Depends|Edit controls should support the Text control pattern because detailed text information should always be available for clients.|
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|All edit controls that take a string must expose the Value pattern.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly>|See notes.|This property must be set to indicate whether the control can have a value set programmatically or is editable by the user.|
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|See notes.|This property will return the textual contents of the edit control. If the `IsPasswordProperty` is set to `true`, this property must raise an `InvalidOperationException` when requested.|
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value*>|See notes.|This property will return the textual contents of the edit control. If the `IsPasswordProperty` is set to `true`, this property must raise an `InvalidOperationException` when requested.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|All edit controls that take a numeric range must expose Range Value control pattern.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum%2A>|See notes.|This property must be the smallest value that the edit control's contents can be set to.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum%2A>|See notes.|This property must be the largest value that the edit control's contents can be set to.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange%2A>|See notes.|This property must indicate the number of decimal places that the value can be set to. If the edit only take integers, the `SmallChangeProperty` must be 1. If the edit takes a range from 1.0 to 2.0, then the `SmallChangeProperty` must be 0.1. If the edit control takes a range from 1.00 to 2.00 then the `SmallChangeProperty` must be 0.001.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange%2A>|`Null`|This property does not need to be exposed on an edit control.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Value%2A>|See notes.|This property will indicate the numeric contents of the edit control. When a more precise value is set by a UI Automation client within the ranges specified in the `Minimum` and `Maximum` properties, the Value property will automatically be rounded to the closest accepted value.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum*>|See notes.|This property must be the smallest value that the edit control's contents can be set to.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum*>|See notes.|This property must be the largest value that the edit control's contents can be set to.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange*>|See notes.|This property must indicate the number of decimal places that the value can be set to. If the edit only take integers, the `SmallChangeProperty` must be 1. If the edit takes a range from 1.0 to 2.0, then the `SmallChangeProperty` must be 0.1. If the edit control takes a range from 1.00 to 2.00 then the `SmallChangeProperty` must be 0.001.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange*>|`Null`|This property does not need to be exposed on an edit control.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider.Value*>|See notes.|This property will indicate the numeric contents of the edit control. When a more precise value is set by a UI Automation client within the ranges specified in the `Minimum` and `Maximum` properties, the Value property will automatically be rounded to the closest accepted value.|
 
 <a name="Required_UI_Automation_Events"></a>
 

@@ -1,7 +1,8 @@
 ---
 title: Specify fully qualified type name
 description: For valid input to reflection operations, use fully qualified type names, which have assembly name specifications, namespace specifications, and type names.
-ms.date: 02/21/2019
+ms.date: 03/27/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "names [.NET], fully qualified type names"
   - "reflection, fully qualified type names"
@@ -19,7 +20,7 @@ ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 
 # Specify fully qualified type names
 
-You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.
+You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType*?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType*?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType*?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType*?displayProperty=nameWithType>.
 
 ## Grammar for type names
 
@@ -43,7 +44,19 @@ SimpleTypeSpec
 	;
 
 GenericTypeSpec
-   : SimpleTypeSpec ` NUMBER
+	: SimpleTypeSpec ` NUMBER
+	| SimpleTypeSpec ` NUMBER '[' GenericArguments ']'
+	;
+
+GenericArguments
+	: GenericArgument
+	| GenericArguments ',' GenericArgument
+	;
+
+GenericArgument
+	: TypeSpec
+	| '[' TypeSpec ']'
+	;
 
 PointerTypeSpec
 	: SimpleTypeSpec '*'
@@ -127,7 +140,7 @@ Use the backslash (\\) as an escape character to separate the following tokens w
 
 In all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 
-Reflection classes, such as <xref:System.Type.FullName?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.
+Reflection classes, such as <xref:System.Type.FullName?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType*>, as in `MyType.GetType(myType.FullName)`.
 
 For example, the fully qualified name for a type might be `Ozzy.OutBack.Kangaroo+Wallaby,MyAssembly`.
 
@@ -183,7 +196,23 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 
 ## Specify generic types
 
-SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type `List<T>` or the closed generic type `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
+``SimpleTypeSpec`NUMBER`` represents a generic type definition with 1 to *n* generic type parameters. For example, to get a reference to the open generic type `List<T>`, use ``Type.GetType("System.Collections.Generic.List`1")``. To get a reference to the open generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
+
+To specify a *constructed* generic type—one where the type parameters are replaced with specific types—append the type arguments in square brackets after the arity: ``SimpleTypeSpec`NUMBER[TypeArg1,TypeArg2]``. For example, to get a reference to `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1[System.String]")``. To get a reference to `Dictionary<String, Int32>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2[System.String,System.Int32]")``.
+
+When a type argument is assembly-qualified, enclose it in its own square brackets to prevent the commas in the assembly name from being misinterpreted as type argument separators. For example:
+
+```
+"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]]"
+```
+
+Unbracketed type arguments can't include an assembly qualifier. To mix assembly-qualified and unqualified type arguments, wrap only the assembly-qualified ones in brackets:
+
+```
+"System.Collections.Generic.Dictionary`2[System.String,[MyNamespace.MyType, MyAssembly]]"
+```
+
+The <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType> property returns a type's name in the format that `Type.GetType` accepts. Use it to obtain a correctly formatted string for any constructed generic type. For example, `typeof(Dictionary<string, int>).AssemblyQualifiedName` returns the fully qualified, correctly escaped name you can pass to `Type.GetType`.
 
 ## Specify pointers
 
@@ -195,7 +224,7 @@ SimpleTypeSpec & represents a managed pointer or reference. For example, to get 
 
 ## Specify arrays
 
-In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.
+In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType*?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType*?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.
 
 Arrays are accessed in reflection by specifying the rank of the array:
 
@@ -214,6 +243,6 @@ For `ModuleBuilder.GetType`, `MyArray[0..5]` indicates a single-dimension array 
 - <xref:System.Reflection.Emit.ModuleBuilder>
 - <xref:System.Reflection.Emit.TypeBuilder>
 - <xref:System.Type.FullName?displayProperty=nameWithType>
-- <xref:System.Type.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetType*?displayProperty=nameWithType>
 - <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>
 - [View type information](viewing-type-information.md)

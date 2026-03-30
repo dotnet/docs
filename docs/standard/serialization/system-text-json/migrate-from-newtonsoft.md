@@ -195,7 +195,7 @@ For some of the following scenarios, workarounds are not practical or possible. 
 
 ### Allow or write numbers in quotes
 
-`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json?displayProperty=fullName>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>, or use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
+`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json?displayProperty=fullName>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling*?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>, or use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
 
 If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies [web defaults](configure-options.md#web-defaults-for-jsonserializeroptions) when it uses `System.Text.Json`, and web defaults allow quoted numbers.
 
@@ -219,7 +219,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 
 * The [[JsonIgnore]](ignore-properties.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreReadOnlyProperties](ignore-properties.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
-* If you're [including fields](fields.md), the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global option lets you ignore all read-only fields.
+* If you're [including fields](fields.md), the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields*?displayProperty=nameWithType> global option lets you ignore all read-only fields.
 * The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](ignore-properties.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](ignore-properties.md#ignore-all-null-value-properties).
 
 In addition, in .NET 7 and later versions, you can customize the JSON contract to ignore properties based on arbitrary criteria. For more information, see [Custom contracts](custom-contracts.md).
@@ -241,7 +241,7 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 
 `Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
 
-To preserve references and handle circular references in <xref:System.Text.Json?displayProperty=fullName>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `PreserveReferencesHandling` = `PreserveReferencesHandling.All` in `Newtonsoft.Json`.
+To preserve references and handle circular references in <xref:System.Text.Json?displayProperty=fullName>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler*?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve*>. The `ReferenceHandler.Preserve` setting is equivalent to `PreserveReferencesHandling` = `PreserveReferencesHandling.All` in `Newtonsoft.Json`.
 
 The `ReferenceHandler.IgnoreCycles` option has behavior similar to Newtonsoft.Json `ReferenceLoopHandling.Ignore`. One difference is that the System.Text.Json implementation replaces reference loops with the `null` JSON token instead of ignoring the object reference. For more information, see [Ignore circular references](preserve-references.md#ignore-circular-references).
 
@@ -554,7 +554,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 
 ## Utf8JsonReader vs. JsonTextReader
 
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601). The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan`1) or [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence`1). The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
 
 ### Utf8JsonReader is a ref struct
 
@@ -562,7 +562,7 @@ The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type 
 
 ### Read null values into nullable value types
 
-`Newtonsoft.Json` provides APIs that return <xref:System.Nullable%601>, such as `ReadAsBoolean`, which handles a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For more information, see [Read null values into nullable value types](use-utf8jsonreader.md#read-null-values-into-nullable-value-types).
+`Newtonsoft.Json` provides APIs that return <xref:System.Nullable`1>, such as `ReadAsBoolean`, which handles a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For more information, see [Read null values into nullable value types](use-utf8jsonreader.md#read-null-values-into-nullable-value-types).
 
 ### Multi-target for reading JSON
 
@@ -577,7 +577,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ### Write raw values
 
-`Newtonsoft.Json` has a `WriteRawValue` method that writes raw JSON where a value is expected. <xref:System.Text.Json?displayProperty=fullName> has a direct equivalent: <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>. For more information, see [Write raw JSON](use-utf8jsonwriter.md#write-raw-json).
+`Newtonsoft.Json` has a `WriteRawValue` method that writes raw JSON where a value is expected. <xref:System.Text.Json?displayProperty=fullName> has a direct equivalent: <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue*?displayProperty=nameWithType>. For more information, see [Write raw JSON](use-utf8jsonwriter.md#write-raw-json).
 
 ### Customize JSON format
 
@@ -610,7 +610,7 @@ There are no workarounds that would let you customize the JSON produced by `Utf8
 
 ### Write Timespan, Uri, or char values
 
-`JsonTextWriter` provides `WriteValue` methods for [TimeSpan](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_18.htm), [Uri](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_22.htm), and [char](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_3.htm) values. `Utf8JsonWriter` doesn't have equivalent methods. Instead, format these values as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A>.
+`JsonTextWriter` provides `WriteValue` methods for [TimeSpan](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_18.htm), [Uri](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_22.htm), and [char](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_3.htm) values. `Utf8JsonWriter` doesn't have equivalent methods. Instead, format these values as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue*>.
 
 ### Multi-target for writing JSON
 

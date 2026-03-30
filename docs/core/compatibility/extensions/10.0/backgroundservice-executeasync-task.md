@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # BackgroundService runs all of ExecuteAsync as a Task
 
-<xref:Microsoft.Extensions.Hosting.BackgroundService> now runs the entirety of <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A> on a background thread. Previously, the synchronous portion of `ExecuteAsync` (before the first `await`) ran on the main thread during service startup, blocking other services from starting. Only code after the first `await` ran on a background thread.
+<xref:Microsoft.Extensions.Hosting.BackgroundService> now runs the entirety of <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync*> on a background thread. Previously, the synchronous portion of `ExecuteAsync` (before the first `await`) ran on the main thread during service startup, blocking other services from starting. Only code after the first `await` ran on a background thread.
 
 ## Version introduced
 
@@ -40,4 +40,4 @@ If you require any part of your `BackgroundService.ExecuteAsync` to run earlier 
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync*?displayProperty=fullName>

@@ -35,15 +35,15 @@ The following properties, methods, and events are required for implementing <xre
 |----------------------|-----------------|-----------|
 | <xref:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected> | Property | None |
 | <xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer> | Property | None |
-| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> | Method | None |
-| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> | Method | None |
-| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.Select%2A> | Method | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection*> | Method | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection*> | Method | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.Select*> | Method | None |
 | <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> | Event | Raised when a selection change results in a single selected item. |
 | <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> | Event | Raised when an item is added to a multi-selection container. |
 | <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> | Event | Raised when an item is removed from a multi-selection container. |
 | <xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent> | Event | Raised when a selection in a container has changed significantly and requires sending more <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> and <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> events than the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit> constant permits. |
 
-- If a <xref:System.Windows.Automation.SelectionItemPattern.Select%2A>, <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection%2A>, or <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection%2A> operation results in a single selected item, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent>; otherwise, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> or <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.
+- If a <xref:System.Windows.Automation.SelectionItemPattern.Select*>, <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection*>, or <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection*> operation results in a single selected item, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent>; otherwise, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> or <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.
 
 <a name="Exceptions"></a>
 
@@ -53,7 +53,7 @@ The following properties, methods, and events are required for implementing <xre
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|When any of the following are attempted:<br /><br /> -   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> is called on a single-selection container where <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` and an element is already selected.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> is called on a multiple-selection container where <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` and only one element is selected.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> is called on a single-selection container where <xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty> = `false` and another element is already selected.|
+|<xref:System.InvalidOperationException>|When any of the following are attempted:<br /><br /> -   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection*> is called on a single-selection container where <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` and an element is already selected.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection*> is called on a multiple-selection container where <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` and only one element is selected.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection*> is called on a single-selection container where <xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty> = `false` and another element is already selected.|
 
 ## See also
 

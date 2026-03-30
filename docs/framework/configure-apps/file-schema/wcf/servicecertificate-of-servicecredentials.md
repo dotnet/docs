@@ -57,8 +57,8 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 ## See also
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate*>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
-- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate*>
 - [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md)
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

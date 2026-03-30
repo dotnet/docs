@@ -10,7 +10,7 @@ dev_langs:
 
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to insert sibling, child, and attribute nodes in an XML document. In order to use these methods, the <xref:System.Xml.XPath.XPathNavigator> object must be editable, that is, its <xref:System.Xml.XPath.XPathNavigator.CanEdit> property must be `true`.
 
- <xref:System.Xml.XPath.XPathNavigator> objects that can edit an XML document are created by the <xref:System.Xml.XmlDocument.CreateNavigator%2A> method of the <xref:System.Xml.XmlDocument> class. <xref:System.Xml.XPath.XPathNavigator> objects created by the <xref:System.Xml.XPath.XPathDocument> class are read-only and any attempt to use the editing methods of an <xref:System.Xml.XPath.XPathNavigator> object created by an <xref:System.Xml.XPath.XPathDocument> object results in a <xref:System.NotSupportedException>.
+ <xref:System.Xml.XPath.XPathNavigator> objects that can edit an XML document are created by the <xref:System.Xml.XmlDocument.CreateNavigator*> method of the <xref:System.Xml.XmlDocument> class. <xref:System.Xml.XPath.XPathNavigator> objects created by the <xref:System.Xml.XPath.XPathDocument> class are read-only and any attempt to use the editing methods of an <xref:System.Xml.XPath.XPathNavigator> object created by an <xref:System.Xml.XPath.XPathDocument> object results in a <xref:System.NotSupportedException>.
 
  For more information about creating editable <xref:System.Xml.XPath.XPathNavigator> objects, see [Reading XML Data using XPathDocument and XmlDocument](reading-xml-data-using-xpathdocument-and-xmldocument.md).
 
@@ -22,19 +22,19 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 
  The <xref:System.Xml.XPath.XPathNavigator> class provides the following methods to insert sibling nodes.
 
-- <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>
+- <xref:System.Xml.XPath.XPathNavigator.InsertAfter*>
 
-- <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>
+- <xref:System.Xml.XPath.XPathNavigator.InsertBefore*>
 
-- <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter%2A>
+- <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter*>
 
-- <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore%2A>
+- <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore*>
 
  These methods insert sibling nodes before and after the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on.
 
- The <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A> and <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A> methods are overloaded and accept a `string`, <xref:System.Xml.XmlReader> object, or <xref:System.Xml.XPath.XPathNavigator> object containing the sibling node to add as parameters. Both methods also return an <xref:System.Xml.XmlWriter> object used to insert sibling nodes.
+ The <xref:System.Xml.XPath.XPathNavigator.InsertAfter*> and <xref:System.Xml.XPath.XPathNavigator.InsertBefore*> methods are overloaded and accept a `string`, <xref:System.Xml.XmlReader> object, or <xref:System.Xml.XPath.XPathNavigator> object containing the sibling node to add as parameters. Both methods also return an <xref:System.Xml.XmlWriter> object used to insert sibling nodes.
 
- The <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter%2A> and <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore%2A> methods insert a single sibling node before and after the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters.
+ The <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter*> and <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore*> methods insert a single sibling node before and after the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters.
 
  In the following example a new `pages` element is inserted before the `price` child element of the first `book` element in the `contosoBooks.xml` file.
  [!code-csharp[XPathNavigatorMethods#19](../../../../samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#19)]
@@ -44,25 +44,25 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]
 
- For more information about the <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter%2A> and <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore%2A> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
+ For more information about the <xref:System.Xml.XPath.XPathNavigator.InsertAfter*>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore*>, <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter*> and <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore*> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
 
 ### Inserting Child Nodes
 
  The <xref:System.Xml.XPath.XPathNavigator> class provides the following methods to insert child nodes.
 
-- <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>
+- <xref:System.Xml.XPath.XPathNavigator.AppendChild*>
 
-- <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>
+- <xref:System.Xml.XPath.XPathNavigator.PrependChild*>
 
-- <xref:System.Xml.XPath.XPathNavigator.AppendChildElement%2A>
+- <xref:System.Xml.XPath.XPathNavigator.AppendChildElement*>
 
-- <xref:System.Xml.XPath.XPathNavigator.PrependChildElement%2A>
+- <xref:System.Xml.XPath.XPathNavigator.PrependChildElement*>
 
  These methods append and prepend child nodes to the end of and the beginning of the list of child nodes of the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on.
 
- Like the methods in the "Inserting Sibling Nodes" section, the <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A> and <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A> methods accept a `string`, <xref:System.Xml.XmlReader> object, or <xref:System.Xml.XPath.XPathNavigator> object containing the child node to add as parameters. Both methods also return an <xref:System.Xml.XmlWriter> object used to insert child nodes.
+ Like the methods in the "Inserting Sibling Nodes" section, the <xref:System.Xml.XPath.XPathNavigator.AppendChild*> and <xref:System.Xml.XPath.XPathNavigator.PrependChild*> methods accept a `string`, <xref:System.Xml.XmlReader> object, or <xref:System.Xml.XPath.XPathNavigator> object containing the child node to add as parameters. Both methods also return an <xref:System.Xml.XmlWriter> object used to insert child nodes.
 
- Also like the methods in the "Inserting Sibling Nodes" section, the <xref:System.Xml.XPath.XPathNavigator.AppendChildElement%2A> and <xref:System.Xml.XPath.XPathNavigator.PrependChildElement%2A> methods insert a single child node to the end of and the beginning of the list of child nodes of the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters.
+ Also like the methods in the "Inserting Sibling Nodes" section, the <xref:System.Xml.XPath.XPathNavigator.AppendChildElement*> and <xref:System.Xml.XPath.XPathNavigator.PrependChildElement*> methods insert a single child node to the end of and the beginning of the list of child nodes of the node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters.
 
  In the following example, a new `pages` child element is appended to the list of child elements of the first `book` element in the `contosoBooks.xml` file.
  [!code-csharp[XPathNavigatorMethods#2](../../../../samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#2)]
@@ -72,19 +72,19 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]
 
- For more information about the <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>, <xref:System.Xml.XPath.XPathNavigator.AppendChildElement%2A> and <xref:System.Xml.XPath.XPathNavigator.PrependChildElement%2A> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
+ For more information about the <xref:System.Xml.XPath.XPathNavigator.AppendChild*>, <xref:System.Xml.XPath.XPathNavigator.PrependChild*>, <xref:System.Xml.XPath.XPathNavigator.AppendChildElement*> and <xref:System.Xml.XPath.XPathNavigator.PrependChildElement*> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
 
 ### Inserting Attribute Nodes
 
  The <xref:System.Xml.XPath.XPathNavigator> class provides the following methods to insert attribute nodes.
 
-- <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A>
+- <xref:System.Xml.XPath.XPathNavigator.CreateAttribute*>
 
-- <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A>
+- <xref:System.Xml.XPath.XPathNavigator.CreateAttributes*>
 
- These methods insert attribute nodes on the element node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on. The <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A> method creates an attribute node on the element node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters. The <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> method returns an <xref:System.Xml.XmlWriter> object used to insert attribute nodes.
+ These methods insert attribute nodes on the element node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on. The <xref:System.Xml.XPath.XPathNavigator.CreateAttribute*> method creates an attribute node on the element node an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on using the namespace prefix, local name, namespace URI, and value specified as parameters. The <xref:System.Xml.XPath.XPathNavigator.CreateAttributes*> method returns an <xref:System.Xml.XmlWriter> object used to insert attribute nodes.
 
- In the following example, new `discount` and `currency` attributes are created on the `price` child element of the first `book` element in the `contosoBooks.xml` file using the <xref:System.Xml.XmlWriter> object returned from the <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> method.
+ In the following example, new `discount` and `currency` attributes are created on the `price` child element of the first `book` element in the `contosoBooks.xml` file using the <xref:System.Xml.XmlWriter> object returned from the <xref:System.Xml.XPath.XPathNavigator.CreateAttributes*> method.
  [!code-csharp[XPathNavigatorMethods#8](../../../../samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#8)]
  [!code-vb[XPathNavigatorMethods#8](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XPathNavigatorMethods/VB/xpathnavigatormethods.vb#8)]
 
@@ -92,15 +92,15 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]
 
- For more information about the <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A> and <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
+ For more information about the <xref:System.Xml.XPath.XPathNavigator.CreateAttribute*> and <xref:System.Xml.XPath.XPathNavigator.CreateAttributes*> methods, see the <xref:System.Xml.XPath.XPathNavigator> class reference documentation.
 
 ## Copying Nodes
 
  In certain cases you may want to populate an XML document with the contents from another XML document. Both the <xref:System.Xml.XPath.XPathNavigator> class and the <xref:System.Xml.XmlWriter> class can copy nodes to an <xref:System.Xml.XmlDocument> object from an existing <xref:System.Xml.XmlReader> object or <xref:System.Xml.XPath.XPathNavigator> object.
 
- The <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A> and <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class all have overloads that can accept an <xref:System.Xml.XPath.XPathNavigator> object or an <xref:System.Xml.XmlReader> object as a parameter.
+ The <xref:System.Xml.XPath.XPathNavigator.AppendChild*>, <xref:System.Xml.XPath.XPathNavigator.PrependChild*>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore*> and <xref:System.Xml.XPath.XPathNavigator.InsertAfter*> methods of the <xref:System.Xml.XPath.XPathNavigator> class all have overloads that can accept an <xref:System.Xml.XPath.XPathNavigator> object or an <xref:System.Xml.XmlReader> object as a parameter.
 
- The <xref:System.Xml.XmlWriter.WriteNode%2A> method of the <xref:System.Xml.XmlWriter> class has overloads that can accept an <xref:System.Xml.XmlNode>, <xref:System.Xml.XmlReader>, or <xref:System.Xml.XPath.XPathNavigator> object.
+ The <xref:System.Xml.XmlWriter.WriteNode*> method of the <xref:System.Xml.XmlWriter> class has overloads that can accept an <xref:System.Xml.XmlNode>, <xref:System.Xml.XmlReader>, or <xref:System.Xml.XPath.XPathNavigator> object.
 
  The following example copies all the `book` elements from one document to another.
 
@@ -142,13 +142,13 @@ document.Save("newBooks.xml");
 
 ## Inserting Values
 
- The <xref:System.Xml.XPath.XPathNavigator> class provides the <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> and <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> methods to insert values for a node into an <xref:System.Xml.XmlDocument> object.
+ The <xref:System.Xml.XPath.XPathNavigator> class provides the <xref:System.Xml.XPath.XPathNavigator.SetValue*> and <xref:System.Xml.XPath.XPathNavigator.SetTypedValue*> methods to insert values for a node into an <xref:System.Xml.XmlDocument> object.
 
 ### Inserting Untyped Values
 
- The <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> method simply inserts the untyped `string` value passed as a parameter as the value of the node the <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on. The value is inserted without any type or without verifying that the new value is valid according to the type of the node if schema information is available.
+ The <xref:System.Xml.XPath.XPathNavigator.SetValue*> method simply inserts the untyped `string` value passed as a parameter as the value of the node the <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on. The value is inserted without any type or without verifying that the new value is valid according to the type of the node if schema information is available.
 
- In the following example, the <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> method is used to update all `price` elements in the `contosoBooks.xml` file.
+ In the following example, the <xref:System.Xml.XPath.XPathNavigator.SetValue*> method is used to update all `price` elements in the `contosoBooks.xml` file.
  [!code-csharp[XPathNavigatorMethods#47](../../../../samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#47)]
  [!code-vb[XPathNavigatorMethods#47](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XPathNavigatorMethods/VB/xpathnavigatormethods.vb#47)]
 
@@ -158,7 +158,7 @@ document.Save("newBooks.xml");
 
 ### Inserting Typed Values
 
- When the type of a node is a W3C XML Schema simple type, the new value inserted by the <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> method is checked against the facets of the simple type before the value is set. If the new value is not valid according to the type of the node (for example, setting a value of `-1` on an element whose type is `xs:positiveInteger`), it results in an exception.
+ When the type of a node is a W3C XML Schema simple type, the new value inserted by the <xref:System.Xml.XPath.XPathNavigator.SetTypedValue*> method is checked against the facets of the simple type before the value is set. If the new value is not valid according to the type of the node (for example, setting a value of `-1` on an element whose type is `xs:positiveInteger`), it results in an exception.
 
  The following example attempts to change the value of the `price` element of the first `book` element in the `contosoBooks.xml` file to a <xref:System.DateTime> value. Because the XML Schema type of the `price` element is defined as `xs:decimal` in the `contosoBooks.xsd` files, this results in an exception.
 
@@ -208,15 +208,15 @@ navigator.SetTypedValue(DateTime.Now);
 
 ## The InnerXml and OuterXml Properties
 
- The <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> and <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> properties of the <xref:System.Xml.XPath.XPathNavigator> class change the XML markup of the nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on.
+ The <xref:System.Xml.XPath.XPathNavigator.InnerXml*> and <xref:System.Xml.XPath.XPathNavigator.OuterXml> properties of the <xref:System.Xml.XPath.XPathNavigator> class change the XML markup of the nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on.
 
- The <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> property changes the XML markup of the child nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on with the parsed contents of the given XML `string`. Similarly, the <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> property changes the XML markup of the child nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on as well as the current node itself.
+ The <xref:System.Xml.XPath.XPathNavigator.InnerXml> property changes the XML markup of the child nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on with the parsed contents of the given XML `string`. Similarly, the <xref:System.Xml.XPath.XPathNavigator.OuterXml> property changes the XML markup of the child nodes an <xref:System.Xml.XPath.XPathNavigator> object is currently positioned on as well as the current node itself.
 
- In addition to the methods described in this topic, the <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> and <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> properties can be used to insert nodes and values in an XML document. For more information about using the <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> and <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> properties to insert nodes and values, see the [Modify XML Data using XPathNavigator](modify-xml-data-using-xpathnavigator.md) topic.
+ In addition to the methods described in this topic, the <xref:System.Xml.XPath.XPathNavigator.InnerXml*> and <xref:System.Xml.XPath.XPathNavigator.OuterXml> properties can be used to insert nodes and values in an XML document. For more information about using the <xref:System.Xml.XPath.XPathNavigator.InnerXml*> and <xref:System.Xml.XPath.XPathNavigator.OuterXml> properties to insert nodes and values, see the [Modify XML Data using XPathNavigator](modify-xml-data-using-xpathnavigator.md) topic.
 
 ## Namespace and xml:lang Conflicts
 
- Certain conflicts related to the scope of namespace and `xml:lang` declarations can occur when inserting XML data using the <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>, <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A> and <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class that take <xref:System.Xml.XmlReader> objects as parameters.
+ Certain conflicts related to the scope of namespace and `xml:lang` declarations can occur when inserting XML data using the <xref:System.Xml.XPath.XPathNavigator.InsertBefore*>, <xref:System.Xml.XPath.XPathNavigator.InsertAfter*>, <xref:System.Xml.XPath.XPathNavigator.AppendChild*> and <xref:System.Xml.XPath.XPathNavigator.PrependChild*> methods of the <xref:System.Xml.XPath.XPathNavigator> class that take <xref:System.Xml.XmlReader> objects as parameters.
 
  The following are the possible namespace conflicts.
 
@@ -243,7 +243,7 @@ navigator.SetTypedValue(DateTime.Now);
 
 ## Inserting Nodes with XmlWriter
 
- The methods used to insert sibling, child and attribute nodes described in the "Inserting Nodes and Values" section are overloaded. The <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A> and <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class return an <xref:System.Xml.XmlWriter> object used to insert nodes.
+ The methods used to insert sibling, child and attribute nodes described in the "Inserting Nodes and Values" section are overloaded. The <xref:System.Xml.XPath.XPathNavigator.InsertAfter*>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore*>, <xref:System.Xml.XPath.XPathNavigator.AppendChild*>, <xref:System.Xml.XPath.XPathNavigator.PrependChild*> and <xref:System.Xml.XPath.XPathNavigator.CreateAttributes*> methods of the <xref:System.Xml.XPath.XPathNavigator> class return an <xref:System.Xml.XmlWriter> object used to insert nodes.
 
 ### Unsupported XmlWriter Methods
 
@@ -253,11 +253,11 @@ navigator.SetTypedValue(DateTime.Now);
 
 |Method|Description|
 |------------|-----------------|
-|<xref:System.Xml.XmlWriter.WriteEntityRef%2A>|Throws a <xref:System.NotSupportedException> exception.|
-|<xref:System.Xml.XmlWriter.WriteDocType%2A>|Ignored at the root level and throws a <xref:System.NotSupportedException> exception if called at any other level in the XML document.|
-|<xref:System.Xml.XmlWriter.WriteCData%2A>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString%2A> method for the equivalent character or characters.|
-|<xref:System.Xml.XmlWriter.WriteCharEntity%2A>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString%2A> method for the equivalent character or characters.|
-|<xref:System.Xml.XmlWriter.WriteSurrogateCharEntity%2A>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString%2A> method for the equivalent character or characters.|
+|<xref:System.Xml.XmlWriter.WriteEntityRef*>|Throws a <xref:System.NotSupportedException> exception.|
+|<xref:System.Xml.XmlWriter.WriteDocType*>|Ignored at the root level and throws a <xref:System.NotSupportedException> exception if called at any other level in the XML document.|
+|<xref:System.Xml.XmlWriter.WriteCData*>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString*> method for the equivalent character or characters.|
+|<xref:System.Xml.XmlWriter.WriteCharEntity*>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString*> method for the equivalent character or characters.|
+|<xref:System.Xml.XmlWriter.WriteSurrogateCharEntity*>|Treated as a call to the <xref:System.Xml.XmlWriter.WriteString*> method for the equivalent character or characters.|
 
  For more information about the <xref:System.Xml.XmlWriter> class, see the <xref:System.Xml.XmlWriter> class reference documentation.
 
@@ -267,13 +267,13 @@ navigator.SetTypedValue(DateTime.Now);
 
  The following are important notes to consider when using multiple <xref:System.Xml.XmlWriter> objects.
 
-- XML fragments written by <xref:System.Xml.XmlWriter> objects are added to the XML document when the <xref:System.Xml.XmlWriter.Close%2A> method of each <xref:System.Xml.XmlWriter> object is called. Until that point, the <xref:System.Xml.XmlWriter> object is writing a disconnected fragment. If an operation is performed on the XML document, any fragments being written by an <xref:System.Xml.XmlWriter> object, before the <xref:System.Xml.XmlWriter.Close%2A> has been called, are not affected.
+- XML fragments written by <xref:System.Xml.XmlWriter> objects are added to the XML document when the <xref:System.Xml.XmlWriter.Close*> method of each <xref:System.Xml.XmlWriter> object is called. Until that point, the <xref:System.Xml.XmlWriter> object is writing a disconnected fragment. If an operation is performed on the XML document, any fragments being written by an <xref:System.Xml.XmlWriter> object, before the <xref:System.Xml.XmlWriter.Close*> has been called, are not affected.
 
 - If there is an open <xref:System.Xml.XmlWriter> object on a particular XML subtree and that subtree is deleted, the <xref:System.Xml.XmlWriter> object may still add to the sub-tree. The subtree simply becomes a deleted fragment.
 
 - If multiple <xref:System.Xml.XmlWriter> objects are opened at the same point in the XML document, they are added to the XML document in the order in which the <xref:System.Xml.XmlWriter> objects are closed, not in the order in which they were opened.
 
- The following example creates an <xref:System.Xml.XmlDocument> object, creates an <xref:System.Xml.XPath.XPathNavigator> object, and then uses the <xref:System.Xml.XmlWriter> object returned by the <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A> method to create the structure of the first book in the `books.xml` file. The example then saves it as the `book.xml` file.
+ The following example creates an <xref:System.Xml.XmlDocument> object, creates an <xref:System.Xml.XPath.XPathNavigator> object, and then uses the <xref:System.Xml.XmlWriter> object returned by the <xref:System.Xml.XPath.XPathNavigator.PrependChild*> method to create the structure of the first book in the `books.xml` file. The example then saves it as the `book.xml` file.
 
 ```vb
 Dim document As XmlDocument = New XmlDocument()

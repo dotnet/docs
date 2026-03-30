@@ -59,7 +59,7 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 > [!NOTE]
 > You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.
 
- You can also specify the type of a <xref:System.Data.SqlClient.SqlParameter> generically by setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> property of a `SqlParameter` object to a particular <xref:System.Data.DbType> enumeration value. The following enumeration values have been added to <xref:System.Data.DbType> to support the `datetime2` and `datetimeoffset` data types:
+ You can also specify the type of a <xref:System.Data.SqlClient.SqlParameter> generically by setting the <xref:System.Data.SqlClient.SqlParameter.DbType> property of a `SqlParameter` object to a particular <xref:System.Data.DbType> enumeration value. The following enumeration values have been added to <xref:System.Data.DbType> to support the `datetime2` and `datetimeoffset` data types:
 
 - DbType.DateTime2
 
@@ -85,18 +85,18 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 |Property|Description|
 |--------------|-----------------|
 |<xref:System.Data.SqlClient.SqlParameter.IsNullable>|Gets or sets whether a value is nullable. When you send a null parameter value to the server, you must specify <xref:System.DBNull>, rather than `null` (`Nothing` in Visual Basic). For more information about database nulls, see [Handling Null Values](handling-null-values.md).|
-|<xref:System.Data.SqlClient.SqlParameter.Precision%2A>|Gets or sets the maximum number of digits used to represent the value. This setting is ignored for date and time data types.|
-|<xref:System.Data.SqlClient.SqlParameter.Scale%2A>|Gets or sets the number of decimal places to which the time portion of the value is resolved for `Time`, `DateTime2`,and `DateTimeOffset`. The default value is 0, which means that the actual scale is inferred from the value and sent to the server.|
-|<xref:System.Data.SqlClient.SqlParameter.Size%2A>|Ignored for date and time data types.|
-|<xref:System.Data.SqlClient.SqlParameter.Value%2A>|Gets or sets the parameter value.|
-|<xref:System.Data.SqlClient.SqlParameter.SqlValue%2A>|Gets or sets the parameter value.|
+|<xref:System.Data.SqlClient.SqlParameter.Precision*>|Gets or sets the maximum number of digits used to represent the value. This setting is ignored for date and time data types.|
+|<xref:System.Data.SqlClient.SqlParameter.Scale*>|Gets or sets the number of decimal places to which the time portion of the value is resolved for `Time`, `DateTime2`,and `DateTimeOffset`. The default value is 0, which means that the actual scale is inferred from the value and sent to the server.|
+|<xref:System.Data.SqlClient.SqlParameter.Size*>|Ignored for date and time data types.|
+|<xref:System.Data.SqlClient.SqlParameter.Value*>|Gets or sets the parameter value.|
+|<xref:System.Data.SqlClient.SqlParameter.SqlValue*>|Gets or sets the parameter value.|
 
 > [!NOTE]
 > Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.
 
 ### Creating Parameters
 
- You can create a <xref:System.Data.SqlClient.SqlParameter> object by using its constructor, or by adding it to a <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection by calling the `Add` method of the <xref:System.Data.SqlClient.SqlParameterCollection>. The `Add` method will take as input either constructor arguments or an existing parameter object.
+ You can create a <xref:System.Data.SqlClient.SqlParameter> object by using its constructor, or by adding it to a <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters*> collection by calling the `Add` method of the <xref:System.Data.SqlClient.SqlParameterCollection>. The `Add` method will take as input either constructor arguments or an existing parameter object.
 
  The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../dataadapter-parameters.md).
 
@@ -174,7 +174,7 @@ parameter.Value = DateTimeOffset.Parse("1666-09-02 1:00:00+0");
 
 ### AddWithValue
 
- You can also supply parameters by using the `AddWithValue` method of a <xref:System.Data.SqlClient.SqlCommand>, as shown in the following code fragment. However, the `AddWithValue` method does not allow you to specify the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> or <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> for the parameter.
+ You can also supply parameters by using the `AddWithValue` method of a <xref:System.Data.SqlClient.SqlCommand>, as shown in the following code fragment. However, the `AddWithValue` method does not allow you to specify the <xref:System.Data.SqlClient.SqlParameter.DbType*> or <xref:System.Data.SqlClient.SqlParameter.SqlDbType*> for the parameter.
 
 ```csharp
 command.Parameters.AddWithValue(
@@ -202,19 +202,19 @@ command.Parameters.AddWithValue( _
 
 |SqlClient method|Description|
 |----------------------|-----------------|
-|<xref:System.Data.SqlClient.SqlDataReader.GetDateTime%2A>|Retrieves the specified column value as a <xref:System.DateTime> structure.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetDateTimeOffset%2A>|Retrieves the specified column value as a <xref:System.DateTimeOffset> structure.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType%2A>|Returns the type that is the underlying provider-specific type for the field. Returns the same types as `GetFieldType` for new date and time types.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue%2A>|Retrieves the value of the specified column. Returns the same types as `GetValue` for the new date and time types.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues%2A>|Retrieves the values in the specified array.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetSqlString%2A>|Retrieves the column value as a <xref:System.Data.SqlTypes.SqlString>. An <xref:System.InvalidCastException> occurs if the data cannot be expressed as a `SqlString`.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A>|Retrieves column data as its default `SqlDbType`. Returns the same types as `GetValue` for the new date and time types.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValues%2A>|Retrieves the values in the specified array.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetString%2A>|Retrieves the column value as a string if the Type System Version is set to SQL Server 2005. An <xref:System.InvalidCastException> occurs if the data cannot be expressed as a string.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetTimeSpan%2A>|Retrieves the specified column value as a <xref:System.TimeSpan> structure.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>|Retrieves the specified column value as its underlying CLR type.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetValues%2A>|Retrieves column values in an array.|
-|<xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>|Returns a <xref:System.Data.DataTable> that describes the metadata of the result set.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetDateTime*>|Retrieves the specified column value as a <xref:System.DateTime> structure.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetDateTimeOffset*>|Retrieves the specified column value as a <xref:System.DateTimeOffset> structure.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType*>|Returns the type that is the underlying provider-specific type for the field. Returns the same types as `GetFieldType` for new date and time types.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue*>|Retrieves the value of the specified column. Returns the same types as `GetValue` for the new date and time types.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues*>|Retrieves the values in the specified array.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetSqlString*>|Retrieves the column value as a <xref:System.Data.SqlTypes.SqlString>. An <xref:System.InvalidCastException> occurs if the data cannot be expressed as a `SqlString`.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue*>|Retrieves column data as its default `SqlDbType`. Returns the same types as `GetValue` for the new date and time types.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValues*>|Retrieves the values in the specified array.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetString*>|Retrieves the column value as a string if the Type System Version is set to SQL Server 2005. An <xref:System.InvalidCastException> occurs if the data cannot be expressed as a string.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetTimeSpan*>|Retrieves the specified column value as a <xref:System.TimeSpan> structure.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetValue*>|Retrieves the specified column value as its underlying CLR type.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetValues*>|Retrieves column values in an array.|
+|<xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable*>|Returns a <xref:System.Data.DataTable> that describes the metadata of the result set.|
 
 > [!NOTE]
 > The new date and time `SqlDbTypes` are not supported for code that is executing in-process in SQL Server. An exception will be raised if one of these types is passed to the server.

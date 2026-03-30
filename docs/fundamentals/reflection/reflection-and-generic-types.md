@@ -25,7 +25,7 @@ There are two keys to understanding how reflection handles generic types and met
 - The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.
 
   > [!NOTE]
-  > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method articles. For example, see <xref:System.Type.IsAutoClass> and <xref:System.Type.DeclaringType>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.
+  > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method articles. For example, see <xref:System.Type.IsAutoClass> and <xref:System.Type.DeclaringType>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition*>.
 
 - If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.
 
@@ -37,39 +37,39 @@ The following discussion assumes familiarity with the terminology of generics, s
 
 ## Is this a generic type or method?
 
-When you use reflection to examine an unknown type, represented by an instance of <xref:System.Type>, use the <xref:System.Type.IsGenericType%2A> property to determine whether the unknown type is generic. It returns `true` if the type is generic. Similarly, when you examine an unknown method, represented by an instance of the <xref:System.Reflection.MethodInfo> class, use the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property to determine whether the method is generic.
+When you use reflection to examine an unknown type, represented by an instance of <xref:System.Type>, use the <xref:System.Type.IsGenericType> property to determine whether the unknown type is generic. It returns `true` if the type is generic. Similarly, when you examine an unknown method, represented by an instance of the <xref:System.Reflection.MethodInfo> class, use the <xref:System.Reflection.MethodBase.IsGenericMethod> property to determine whether the method is generic.
 
 ## Is this a generic type or method definition?
 
-Use the <xref:System.Type.IsGenericTypeDefinition%2A> property to determine whether a <xref:System.Type> object represents a generic type definition, and use the <xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A> method to determine whether a <xref:System.Reflection.MethodInfo> represents a generic method definition.
+Use the <xref:System.Type.IsGenericTypeDefinition> property to determine whether a <xref:System.Type> object represents a generic type definition, and use the <xref:System.Reflection.MethodBase.IsGenericMethodDefinition*> method to determine whether a <xref:System.Reflection.MethodInfo> represents a generic method definition.
 
-Generic type and method definitions are the templates from which instantiable types are created. Generic types in the .NET libraries, such as <xref:System.Collections.Generic.Dictionary%602>, are generic type definitions.
+Generic type and method definitions are the templates from which instantiable types are created. Generic types in the .NET libraries, such as <xref:System.Collections.Generic.Dictionary`2>, are generic type definitions.
 
 ## Is the type or method open or closed?
 
-A generic type or method is closed if instantiable types have been substituted for all its type parameters, including all the type parameters of all enclosing types. You can only create an instance of a generic type if it's closed. The <xref:System.Type.ContainsGenericParameters%2A?displayProperty=nameWithType> property returns `true` if a type is open. For methods, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A?displayProperty=nameWithType> method performs the same function.
+A generic type or method is closed if instantiable types have been substituted for all its type parameters, including all the type parameters of all enclosing types. You can only create an instance of a generic type if it's closed. The <xref:System.Type.ContainsGenericParameters?displayProperty=nameWithType> property returns `true` if a type is open. For methods, the <xref:System.Reflection.MethodBase.ContainsGenericParameters*?displayProperty=nameWithType> method performs the same function.
 
 ## Generate closed generic types
 
-Once you have a generic type or method definition, use the <xref:System.Type.MakeGenericType%2A> method to create a closed generic type or the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method to create a <xref:System.Reflection.MethodInfo> for a closed generic method.
+Once you have a generic type or method definition, use the <xref:System.Type.MakeGenericType*> method to create a closed generic type or the <xref:System.Reflection.MethodInfo.MakeGenericMethod*> method to create a <xref:System.Reflection.MethodInfo> for a closed generic method.
 
 ### Get the generic type or method definition
 
-If you have an open generic type or method that's not a generic type or method definition, you cannot create instances of it and you cannot supply the type parameters that are missing. You must have a generic type or method definition. Use the <xref:System.Type.GetGenericTypeDefinition%2A> method to obtain the generic type definition or the <xref:System.Reflection.MethodInfo.GetGenericMethodDefinition%2A> method to obtain the generic method definition.
+If you have an open generic type or method that's not a generic type or method definition, you cannot create instances of it and you cannot supply the type parameters that are missing. You must have a generic type or method definition. Use the <xref:System.Type.GetGenericTypeDefinition*> method to obtain the generic type definition or the <xref:System.Reflection.MethodInfo.GetGenericMethodDefinition*> method to obtain the generic method definition.
 
-For example, if you have a <xref:System.Type> object representing `Dictionary<int, string>` and you want to create the type `Dictionary<string, MyClass>`, you can use the <xref:System.Type.GetGenericTypeDefinition%2A> method to get a <xref:System.Type> representing `Dictionary<TKey, TValue>` and then use the <xref:System.Type.MakeGenericType%2A> method to produce a <xref:System.Type> representing `Dictionary<int, MyClass>`.
+For example, if you have a <xref:System.Type> object representing `Dictionary<int, string>` and you want to create the type `Dictionary<string, MyClass>`, you can use the <xref:System.Type.GetGenericTypeDefinition*> method to get a <xref:System.Type> representing `Dictionary<TKey, TValue>` and then use the <xref:System.Type.MakeGenericType*> method to produce a <xref:System.Type> representing `Dictionary<int, MyClass>`.
 
 For an example of an open generic type that is not a generic type, see [Type parameter or type argument](#type-parameter-or-type-argument).
 
 ## Examine type arguments and type parameters
 
-Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method to obtain an array of <xref:System.Type> objects that represent the type parameters or type arguments of a generic type, and use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method to do the same for a generic method.
+Use the <xref:System.Type.GetGenericArguments*?displayProperty=nameWithType> method to obtain an array of <xref:System.Type> objects that represent the type parameters or type arguments of a generic type, and use the <xref:System.Reflection.MethodInfo.GetGenericArguments*?displayProperty=nameWithType> method to do the same for a generic method.
 
 Once you know that a <xref:System.Type> object represents a type parameter, there are many additional questions reflection can answer. You can determine the type parameter's source, its position, and its constraints.
 
 ### Type parameter or type argument
 
-To determine whether a particular element of the array is a type parameter or a type argument, use the <xref:System.Type.IsGenericParameter%2A> property. The <xref:System.Type.IsGenericParameter%2A> property is `true` if the element is a type parameter.
+To determine whether a particular element of the array is a type parameter or a type argument, use the <xref:System.Type.IsGenericParameter> property. The <xref:System.Type.IsGenericParameter> property is `true` if the element is a type parameter.
 
 A generic type can be open without being a generic type definition, in which case it has a mixture of type arguments and type parameters. For example, in the following code, class `D` derives from a type created by substituting the first type parameter of `D` for the second type parameter of `B`.
 
@@ -99,11 +99,11 @@ If the type parameter belongs to a generic method, the <xref:System.Type.Declari
 
 ### Position of a generic parameter
 
-In rare situations, it's necessary to determine the position of a type parameter in the type parameter list of its declaring class. For example, suppose you have a <xref:System.Type> object representing the `B<int, V>` type from the preceding example. The <xref:System.Type.GetGenericArguments%2A> method gives you a list of type arguments, and when you examine `V` you can use the <xref:System.Type.DeclaringMethod> and <xref:System.Type.DeclaringType> properties to discover where it comes from. You can then use the <xref:System.Type.GenericParameterPosition> property to determine its position in the type parameter list where it was defined. In this example, `V` is at position 0 (zero) in the type parameter list where it was defined.
+In rare situations, it's necessary to determine the position of a type parameter in the type parameter list of its declaring class. For example, suppose you have a <xref:System.Type> object representing the `B<int, V>` type from the preceding example. The <xref:System.Type.GetGenericArguments*> method gives you a list of type arguments, and when you examine `V` you can use the <xref:System.Type.DeclaringMethod> and <xref:System.Type.DeclaringType> properties to discover where it comes from. You can then use the <xref:System.Type.GenericParameterPosition> property to determine its position in the type parameter list where it was defined. In this example, `V` is at position 0 (zero) in the type parameter list where it was defined.
 
 ### Base type and interface constraints
 
-Use the <xref:System.Type.GetGenericParameterConstraints%2A> method to obtain the base type constraint and interface constraints of a type parameter. The order of the elements of the array is not significant. An element represents an interface constraint if it's an interface type.
+Use the <xref:System.Type.GetGenericParameterConstraints*> method to obtain the base type constraint and interface constraints of a type parameter. The order of the elements of the array is not significant. An element represents an interface constraint if it's an interface type.
 
 ### Generic parameter attributes
 
@@ -119,4 +119,4 @@ To determine the special constraints of a type parameter, apply the <xref:System
 
 ## Invariants
 
-For a table of the invariant conditions for common terms in reflection for generic types, see <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType>. For additional terms relating to generic methods, see <xref:System.Reflection.MethodBase.IsGenericMethod%2A?displayProperty=nameWithType>.
+For a table of the invariant conditions for common terms in reflection for generic types, see <xref:System.Type.IsGenericType*?displayProperty=nameWithType>. For additional terms relating to generic methods, see <xref:System.Reflection.MethodBase.IsGenericMethod*?displayProperty=nameWithType>.

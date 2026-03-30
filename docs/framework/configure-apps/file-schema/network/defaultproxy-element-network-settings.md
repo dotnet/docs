@@ -61,7 +61,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 
  If the `defaultProxy` element is empty, the system proxy settings are used.
 
- An exception is thrown if the [module](module-element-network-settings.md) element specifies a non-public type, the type is not deriving from the <xref:System.Net.IWebProxy> class, an exception from the parameterless constructor of this object occurred, or an exception occurred while retrieving the system-specified default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.
+ An exception is thrown if the [module](module-element-network-settings.md) element specifies a non-public type, the type is not deriving from the <xref:System.Net.IWebProxy> class, an exception from the parameterless constructor of this object occurred, or an exception occurred while retrieving the system-specified default proxy. The <xref:System.Exception.InnerException> property on the exception should have more information about the root cause of the error.
 
 ## Configuration files
 

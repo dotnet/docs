@@ -22,8 +22,8 @@ This article discusses SqlClient support (added in .NET Framework 4.5) for high 
 
  You can programmatically modify these connection string keywords with:
 
-- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>
-- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>
+- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent*>
+- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover*>
 
 > [!NOTE]
 > Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework versions 4.6.1 and later. It is required in .NET Core and .NET 5+.

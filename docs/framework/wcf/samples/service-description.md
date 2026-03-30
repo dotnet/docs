@@ -32,7 +32,7 @@ public interface IServiceDescriptionCalculator
 }
 ```
 
-The implementation code for `GetServiceDescriptionInfo` uses the <xref:System.ServiceModel.Description.ServiceDescription> to list the service endpoints. Because service endpoints can have relative addresses, it first lists the base addresses for the service. To get all of this information, the code obtains its operation context using <xref:System.ServiceModel.OperationContext.Current%2A>. The <xref:System.ServiceModel.ServiceHost> and its <xref:System.ServiceModel.Description.ServiceDescription> object are retrieved from the operation context. To list the base endpoints for the service, the code iterates through the service host's <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A> collection. To list the service endpoints for the service, the code iterates through the service description's endpoints collection.
+The implementation code for `GetServiceDescriptionInfo` uses the <xref:System.ServiceModel.Description.ServiceDescription> to list the service endpoints. Because service endpoints can have relative addresses, it first lists the base addresses for the service. To get all of this information, the code obtains its operation context using <xref:System.ServiceModel.OperationContext.Current*>. The <xref:System.ServiceModel.ServiceHost> and its <xref:System.ServiceModel.Description.ServiceDescription> object are retrieved from the operation context. To list the base endpoints for the service, the code iterates through the service host's <xref:System.ServiceModel.ServiceHostBase.BaseAddresses*> collection. To list the service endpoints for the service, the code iterates through the service description's endpoints collection.
 
 ```csharp
 public string GetServiceDescriptionInfo()

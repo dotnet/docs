@@ -21,7 +21,7 @@ Windows Workflow Foundation (WF) in .NET Framework 4.5 introduces many new featu
 
 .NET Framework 4.5 introduced several new versioning features based around the new <xref:System.Activities.WorkflowIdentity> class. <xref:System.Activities.WorkflowIdentity> provides workflow application authors a mechanism for mapping a persisted workflow instance with its definition.
 
-- Developers using <xref:System.Activities.WorkflowApplication> hosting can use <xref:System.Activities.WorkflowIdentity> to enable hosting multiple versions of a workflow side-by-side. Persisted workflow instances can be loaded using the new <xref:System.Activities.WorkflowApplicationInstance> class, and then the <xref:System.Activities.WorkflowApplicationInstance.DefinitionIdentity%2A> can be used by the host to provide the correct version of the workflow definition when instantiating the <xref:System.Activities.WorkflowApplication>. For more information, see [Using WorkflowIdentity and Versioning](using-workflowidentity-and-versioning.md) and [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+- Developers using <xref:System.Activities.WorkflowApplication> hosting can use <xref:System.Activities.WorkflowIdentity> to enable hosting multiple versions of a workflow side-by-side. Persisted workflow instances can be loaded using the new <xref:System.Activities.WorkflowApplicationInstance> class, and then the <xref:System.Activities.WorkflowApplicationInstance.DefinitionIdentity*> can be used by the host to provide the correct version of the workflow definition when instantiating the <xref:System.Activities.WorkflowApplication>. For more information, see [Using WorkflowIdentity and Versioning](using-workflowidentity-and-versioning.md) and [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
 - <xref:System.ServiceModel.WorkflowServiceHost> is now a multi-version host. When a new version of a workflow service is deployed, new instances are created using the new service, but existing instances complete using the previous version. For more information, see [Side by Side Versioning in WorkflowServiceHost](../wcf/feature-details/side-by-side-versioning-in-workflowservicehost.md).
 
@@ -41,7 +41,7 @@ The built-in activity library contains new activities and new features for exist
 
 Flowcharts are updated for .NET Framework 4.5 and have the following new capabilities:
 
-- The `DisplayName` property of a <xref:System.Activities.Statements.FlowSwitch%601> or <xref:System.Activities.Statements.FlowDecision> activity is editable. This will let the activity designer show more information about the activity's purpose.
+- The `DisplayName` property of a <xref:System.Activities.Statements.FlowSwitch`1> or <xref:System.Activities.Statements.FlowDecision> activity is editable. This will let the activity designer show more information about the activity's purpose.
 
 - Flowcharts have a new property called <xref:System.Activities.Statements.Flowchart.ValidateUnconnectedNodes>; the default for this property is `False`. If this property is set to `True`, then unconnected flowchart nodes will produce validation errors.
 
@@ -68,11 +68,11 @@ Workflows in .NET Framework 4 required a fully trusted application domain. In .N
 
      If exceptions are not to be serialized, ensure that exceptions are used within a <xref:System.Activities.Statements.NoPersistScope>.
 
-4. Activity authors should override <xref:System.Activities.Activity.CacheMetadata%2A> to avoid having the workflow runtime automatically execute reflection against the type. Arguments and child activities must be non-null, and <xref:System.Activities.ActivityMetadata.Bind%2A> must be called explicitly. For more information on overriding <xref:System.Activities.Activity.CacheMetadata%2A>, see [Exposing data with CacheMetadata](exposing-data-with-cachemetadata.md). Also, instances of arguments that are of a type that is `internal` or **private** must be explicitly created in  <xref:System.Activities.Activity.CacheMetadata%2A> to avoid being created by reflection.
+4. Activity authors should override <xref:System.Activities.Activity.CacheMetadata*> to avoid having the workflow runtime automatically execute reflection against the type. Arguments and child activities must be non-null, and <xref:System.Activities.ActivityMetadata.Bind*> must be called explicitly. For more information on overriding <xref:System.Activities.Activity.CacheMetadata*>, see [Exposing data with CacheMetadata](exposing-data-with-cachemetadata.md). Also, instances of arguments that are of a type that is `internal` or **private** must be explicitly created in  <xref:System.Activities.Activity.CacheMetadata*> to avoid being created by reflection.
 
 5. Types will not use <xref:System.Runtime.Serialization.ISerializable> or <xref:System.SerializableAttribute> for serialization; types that are to be serialized must support <xref:System.Runtime.Serialization.DataContractSerializer>.
 
-6. Expressions that use <xref:System.Activities.Expressions.LambdaValue%601> require <xref:System.Security.Permissions.ReflectionPermissionAttribute.RestrictedMemberAccess%2A>, and thus will not work under partial trust. Workflows that use <xref:System.Activities.Expressions.LambdaValue%601> should replace those expressions with activities that derive from <xref:System.Activities.CodeActivity%601>. .
+6. Expressions that use <xref:System.Activities.Expressions.LambdaValue`1> require <xref:System.Security.Permissions.ReflectionPermissionAttribute.RestrictedMemberAccess*>, and thus will not work under partial trust. Workflows that use <xref:System.Activities.Expressions.LambdaValue`1> should replace those expressions with activities that derive from <xref:System.Activities.CodeActivity`1>. .
 
 7. Expressions cannot be compiled using <xref:System.Activities.XamlIntegration.TextExpressionCompiler> or the Visual Basic hosted compiler in partial trust, but previously compiled expressions can be run.
 
@@ -162,7 +162,7 @@ For more information about C# expressions, see [C# Expressions](csharp-expressio
 
 ### <a name="BKMK_Visibility"></a> More control of visibility of shell bar and header items
 
-In a rehosted designer, some of the standard UI controls may not have meaning for a given workflow, and may be turned off. In .NET Framework 4, this customization is only supported by the shell bar at the bottom of the designer. In .NET Framework 4.5, the visibility of shell header items at the top of the designer can be adjusted by setting <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility%2A> with the appropriate <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> value.
+In a rehosted designer, some of the standard UI controls may not have meaning for a given workflow, and may be turned off. In .NET Framework 4, this customization is only supported by the shell bar at the bottom of the designer. In .NET Framework 4.5, the visibility of shell header items at the top of the designer can be adjusted by setting <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility*> with the appropriate <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> value.
 
 ### <a name="BKMK_AutoConnect"></a> Auto-connect and auto-insert in Flowchart and State Machine workflows
 
@@ -208,7 +208,7 @@ In .NET Framework 4.5, we provide a way for developers to create their own expre
 
 ### <a name="BKMK_BackwardCompatRehostedDesigner"></a> Opt-in for Workflow 4.5 features in rehosted designer
 
-To preserve backward compatibility, some new features included in .NET Framework 4.5 are not enabled by default in the rehosted designer. This is to ensure that existing applications that use the rehosted designer are not broken by updating to the latest version. To enable new features in the rehosted designer, either set <xref:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName%2A> to ".NET Framework 4.5", or set individual members of <xref:System.Activities.Presentation.DesignerConfigurationService> to enable individual features.
+To preserve backward compatibility, some new features included in .NET Framework 4.5 are not enabled by default in the rehosted designer. This is to ensure that existing applications that use the rehosted designer are not broken by updating to the latest version. To enable new features in the rehosted designer, either set <xref:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName*> to ".NET Framework 4.5", or set individual members of <xref:System.Activities.Presentation.DesignerConfigurationService> to enable individual features.
 
 ## <a name="BKMK_NewWFModels"></a> New Workflow Development Models
 

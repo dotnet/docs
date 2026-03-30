@@ -82,7 +82,7 @@ To register the sampler with the configuration, consider the following code:
 
 #### Change sampling rules in a running app
 
-Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
+Random probabilistic sampling supports runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor`1> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update sampling rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which effectively acts as a no-op:
 
@@ -135,7 +135,7 @@ To implement a custom sampler, follow these steps:
 
 1. Create a class that inherits from <xref:Microsoft.Extensions.Logging.LoggingSampler>.
 1. Override the <xref:Microsoft.Extensions.Logging.LoggingSampler.ShouldSample*?displayProperty=nameWithType> method to define your custom sampling logic.
-1. Register your custom sampler in the logging pipeline using the <xref:Microsoft.Extensions.Logging.SamplingLoggerBuilderExtensions.AddSampler%2A> extension method.
+1. Register your custom sampler in the logging pipeline using the <xref:Microsoft.Extensions.Logging.SamplingLoggerBuilderExtensions.AddSampler*> extension method.
 
 For each log record that isn't filtered out, the <xref:Microsoft.Extensions.Logging.LoggingSampler.ShouldSample*?displayProperty=nameWithType> method is called exactly once. Its return value determines whether the log record should be emitted.
 

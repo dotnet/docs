@@ -111,7 +111,7 @@ void Hello(string greeting);
 Sub Hello (ByVal greeting As String)
 ```
 
- The preceding example can slow client performance and responsiveness if the operation takes a long time to perform, but there are advantages to request/reply operations even when they return `void`. The most obvious one is that SOAP faults can be returned in the response message, which indicates that some service-related error condition has occurred, whether in communication or processing. SOAP faults that are specified in a service contract are passed to the client application as a <xref:System.ServiceModel.FaultException%601> object, where the type parameter is the type specified in the service contract. This makes notifying clients about error conditions in WCF services easy. For more information about exceptions, SOAP faults, and error handling, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md). To see an example of a request/reply service and client, see [How to: Create a Request-Reply Contract](./feature-details/how-to-create-a-request-reply-contract.md). For more information about issues with the request-reply pattern, see [Request-Reply Services](./feature-details/request-reply-services.md).
+ The preceding example can slow client performance and responsiveness if the operation takes a long time to perform, but there are advantages to request/reply operations even when they return `void`. The most obvious one is that SOAP faults can be returned in the response message, which indicates that some service-related error condition has occurred, whether in communication or processing. SOAP faults that are specified in a service contract are passed to the client application as a <xref:System.ServiceModel.FaultException`1> object, where the type parameter is the type specified in the service contract. This makes notifying clients about error conditions in WCF services easy. For more information about exceptions, SOAP faults, and error handling, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md). To see an example of a request/reply service and client, see [How to: Create a Request-Reply Contract](./feature-details/how-to-create-a-request-reply-contract.md). For more information about issues with the request-reply pattern, see [Request-Reply Services](./feature-details/request-reply-services.md).
 
 ##### One-way
 
@@ -143,7 +143,7 @@ Sub Hello (ByVal greeting As String)
 
  The duplex pattern is slightly more complex than the request/reply or one-way patterns because of the additional mechanism for communicating with the client.
 
- To design a duplex contract, you must also design a callback contract and assign the type of that callback contract to the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A> property of the <xref:System.ServiceModel.ServiceContractAttribute> attribute that marks your service contract.
+ To design a duplex contract, you must also design a callback contract and assign the type of that callback contract to the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract> property of the <xref:System.ServiceModel.ServiceContractAttribute> attribute that marks your service contract.
 
  To implement a duplex pattern, you must create a second interface that contains the method declarations that are called on the client.
 

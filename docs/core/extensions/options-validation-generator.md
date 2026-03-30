@@ -12,7 +12,7 @@ In the [options pattern](options.md), various methods for validating options are
 
 ## Automatic IValidateOptions implementation generation
 
-The [options pattern](options.md) article illustrates how to implement the <xref:Microsoft.Extensions.Options.IValidateOptions%601> interface for validating options. The options validation source generator can automatically create the `IValidateOptions` interface implementation by leveraging data annotation attributes on the options class.
+The [options pattern](options.md) article illustrates how to implement the <xref:Microsoft.Extensions.Options.IValidateOptions`1> interface for validating options. The options validation source generator can automatically create the `IValidateOptions` interface implementation by leveraging data annotation attributes on the options class.
 
 The content that follows takes the annotation attributes example that's shown in [Options pattern](options.md) and converts it to use the options validation source generator.
 
@@ -254,7 +254,7 @@ builder.Services
 ```
 
 > [!NOTE]
-> Calling <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%60%601(Microsoft.Extensions.Options.OptionsBuilder{%60%600})?displayProperty=nameWithType> isn't required when using the options validation source generator.
+> Calling <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations``1(Microsoft.Extensions.Options.OptionsBuilder{``0})?displayProperty=nameWithType> isn't required when using the options validation source generator.
 
 When the application attempts to access the options object, the generated code for options validation is executed to validate the options object. The following code snippet illustrates how to access the options object:
 

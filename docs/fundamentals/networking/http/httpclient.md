@@ -46,20 +46,20 @@ To make an HTTP request, you call any of the following API methods:
 
 | HTTP method                  | API                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------|
-| `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
-| `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
-| `GET`                        | <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>    |
-| `GET`                        | <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>    |
-| `POST`                       | <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType>         |
-| `PUT`                        | <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType>          |
-| `PATCH`                      | <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType>        |
-| `DELETE`                     | <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType>       |
-| <sup>†</sup>`USER SPECIFIED` | <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>         |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync*?displayProperty=nameWithType>          |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync*?displayProperty=nameWithType> |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetStreamAsync*?displayProperty=nameWithType>    |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetStringAsync*?displayProperty=nameWithType>    |
+| `POST`                       | <xref:System.Net.Http.HttpClient.PostAsync*?displayProperty=nameWithType>         |
+| `PUT`                        | <xref:System.Net.Http.HttpClient.PutAsync*?displayProperty=nameWithType>          |
+| `PATCH`                      | <xref:System.Net.Http.HttpClient.PatchAsync*?displayProperty=nameWithType>        |
+| `DELETE`                     | <xref:System.Net.Http.HttpClient.DeleteAsync*?displayProperty=nameWithType>       |
+| <sup>†</sup>`USER SPECIFIED` | <xref:System.Net.Http.HttpClient.SendAsync*?displayProperty=nameWithType>         |
 
 > <sup>†</sup>A `USER SPECIFIED` request indicates that the `SendAsync` method accepts any valid <xref:System.Net.Http.HttpMethod> object.
 
 > [!WARNING]
-> Making HTTP requests is considered network I/O-bound work. A synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method exists, but the recommendation is to use the asynchronous APIs instead, unless you have good reason not to.
+> Making HTTP requests is considered network I/O-bound work. A synchronous <xref:System.Net.Http.HttpClient.Send*?displayProperty=nameWithType> method exists, but the recommendation is to use the asynchronous APIs instead, unless you have good reason not to.
 
 > [!NOTE]
 > While targeting Android devices (such as with .NET MAUI development), you must add the `android:usesCleartextTraffic="true"` definition to the `<application></application>` section in the _AndroidManifest.xml_ file. This setting enables clear-text traffic, such as HTTP requests, which is otherwise disabled by default due to Android security policies. Consider the following example XML settings:
@@ -83,7 +83,7 @@ The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity 
 - <xref:System.Net.Http.Json.JsonContent>: Provides HTTP content based on JSON.
 - <xref:System.Net.Http.MultipartContent>: Provides a collection of HttpContent objects that get serialized by using the `"multipart/*"` MIME type specification.
 - <xref:System.Net.Http.MultipartFormDataContent>: Provides a container for content encoded by using the `"multipart/form-data"` MIME type.
-- <xref:System.Net.Http.ReadOnlyMemoryContent>: Provides HTTP content based on an <xref:System.ReadOnlyMemory%601> value.
+- <xref:System.Net.Http.ReadOnlyMemoryContent>: Provides HTTP content based on an <xref:System.ReadOnlyMemory`1> value.
 - <xref:System.Net.Http.StreamContent>: Provides HTTP content based on a stream.
 - <xref:System.Net.Http.StringContent>: Provides HTTP content based on a string.
 
@@ -91,7 +91,7 @@ The `HttpContent` class is also used to represent the response body of the <xref
 
 ### Use an HTTP GET request
 
-A `GET` request shouldn't send a body. This request is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
+A `GET` request shouldn't send a body. This request is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.GetAsync*?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Get.cs" id="get":::
 
@@ -142,7 +142,7 @@ The C# `Todo` object is defined as follows:
 
 :::code source="../snippets/httpclient/Todo.cs":::
 
-It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into a strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into a strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
@@ -156,7 +156,7 @@ The code completes the following tasks:
 
 ### Use an HTTP POST request
 
-A `POST` request sends data to the server for processing. The `Content-Type` header of the request signifies what [MIME type](xref:System.Net.Mime.ContentType) the body is sending. To make an HTTP `POST` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> method:
+A `POST` request sends data to the server for processing. The `Content-Type` header of the request signifies what [MIME type](xref:System.Net.Mime.ContentType) the body is sending. To make an HTTP `POST` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PostAsync*?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Post.cs" id="post":::
 
@@ -169,7 +169,7 @@ The code completes the following tasks:
 
 #### Create the HTTP POST request as JSON
 
-To automatically serialize `POST` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> and the <xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A> extension methods, respectively, that are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+To automatically serialize `POST` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync*> and the <xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync*> extension methods, respectively, that are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
 
@@ -181,7 +181,7 @@ The code completes the following tasks:
 
 ### Use an HTTP PUT request
 
-The `PUT` request method either replaces an existing resource or creates a new one by using the request body payload. To make an HTTP `PUT` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> method:
+The `PUT` request method either replaces an existing resource or creates a new one by using the request body payload. To make an HTTP `PUT` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PutAsync*?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Put.cs" id="put":::
 
@@ -193,8 +193,8 @@ The code completes the following tasks:
 
 #### Create the HTTP PUT request as JSON
 
-To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> and the
-<xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A> extension methods, respectively, that are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync*> and the
+<xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync*> extension methods, respectively, that are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 
@@ -206,7 +206,7 @@ The code completes the following tasks:
 
 ### Use an HTTP PATCH request
 
-The `PATCH` request is a partial update to an existing resource. This request doesn't create a new resource and it isn't intended to replace an existing resource. Instead, this method only partially updates a resource. To make an HTTP `PATCH` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
+The `PATCH` request is a partial update to an existing resource. This request doesn't create a new resource and it isn't intended to replace an existing resource. Instead, this method only partially updates a resource. To make an HTTP `PATCH` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.PatchAsync*?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Patch.cs" id="patch":::
 
@@ -220,7 +220,7 @@ No extension methods exist for `PATCH` requests in the `System.Net.Http.Json` Nu
 
 ### Use an HTTP DELETE request
 
-A `DELETE` request removes an existing resource and the request is _idempotent_, but not _safe_. Multiple `DELETE` requests to the same resources yield the same result, but the request affects the state of the resource. To make an HTTP `DELETE` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
+A `DELETE` request removes an existing resource and the request is _idempotent_, but not _safe_. Multiple `DELETE` requests to the same resources yield the same result, but the request affects the state of the resource. To make an HTTP `DELETE` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.DeleteAsync*?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Delete.cs" id="delete":::
 
@@ -234,7 +234,7 @@ The code completes the following tasks:
 
 ### Explore the HTTP HEAD request
 
-The `HEAD` request is similar to a `GET` request. Instead of returning the resource, this request returns only the headers associated with the resource. A response to the `HEAD` request doesn't return a body. To make an HTTP `HEAD` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> type set to `HttpMethod.Head`:
+The `HEAD` request is similar to a `GET` request. Instead of returning the resource, this request returns only the headers associated with the resource. A response to the `HEAD` request doesn't return a body. To make an HTTP `HEAD` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.SendAsync*?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> type set to `HttpMethod.Head`:
 
 :::code source="../snippets/httpclient/Program.Head.cs" id="head":::
 
@@ -246,7 +246,7 @@ The code completes the following tasks:
 
 ### Explore the HTTP OPTIONS request
 
-The `OPTIONS` request is used to identify which HTTP methods a server or endpoint supports. To make an HTTP `OPTIONS` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> type set to `HttpMethod.Options`:
+The `OPTIONS` request is used to identify which HTTP methods a server or endpoint supports. To make an HTTP `OPTIONS` request given an `HttpClient` instance and a <xref:System.Uri> object, use the <xref:System.Net.Http.HttpClient.SendAsync*?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> type set to `HttpMethod.Options`:
 
 :::code source="../snippets/httpclient/Program.Options.cs" id="options":::
 
@@ -321,22 +321,22 @@ Likewise, when you make an HTTP request, if the server doesn't respond before th
 
 In the code, when the inner exception is an <xref:System.TimeoutException> type, then the time-out occurred and the cancellation token doesn't cancel the request.
 
-To evaluate the HTTP status code when you catch the <xref:System.Net.Http.HttpRequestException> object, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property:
+To evaluate the HTTP status code when you catch the <xref:System.Net.Http.HttpRequestException> object, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> property:
 
 :::code source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
 
-In the code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response isn't successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on the `HttpClient` object that implicitly call the `EnsureSuccessStatusCode` method on your behalf.
+In the code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response isn't successful. The <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on the `HttpClient` object that implicitly call the `EnsureSuccessStatusCode` method on your behalf.
 
 For HTTP error handing, consider the following APIs:
 
-- <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method
-- <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType> method
-- <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType> method
+- <xref:System.Net.Http.HttpClient.GetByteArrayAsync*?displayProperty=nameWithType> method
+- <xref:System.Net.Http.HttpClient.GetStreamAsync*?displayProperty=nameWithType> method
+- <xref:System.Net.Http.HttpClient.GetStringAsync*?displayProperty=nameWithType> method
 
 > [!TIP]
 > All `HttpClient` methods used to make HTTP requests that don't return an `HttpResponseMessage` type implicitly call the `EnsureSuccessStatusCode` method on your behalf.
 
-When you call these methods, you can handle the `HttpRequestException` object and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property to determine the HTTP status code of the response:
+When you call these methods, you can handle the `HttpRequestException` object and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> property to determine the HTTP status code of the response:
 
 :::code source="../snippets/httpclient/Program.CancellationStream.cs" id="helpers":::
 

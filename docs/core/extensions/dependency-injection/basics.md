@@ -31,7 +31,7 @@ The [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.or
 - <xref:System.IServiceProvider>: Defines a mechanism for retrieving a service object.
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor>: Describes a service with its service type, implementation, and lifetime.
 
-In .NET, you manage DI by adding services and configuring them in an `IServiceCollection`. After you register services, call the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> method to build an `IServiceProvider` instance. The `IServiceProvider` acts as a container for all the registered services, and you use it to resolve services.
+In .NET, you manage DI by adding services and configuring them in an `IServiceCollection`. After you register services, call the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider*> method to build an `IServiceProvider` instance. The `IServiceProvider` acts as a container for all the registered services, and you use it to resolve services.
 
 ## Create example services
 

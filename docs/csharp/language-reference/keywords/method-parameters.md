@@ -2,7 +2,7 @@
 title: "Method parameters and modifiers"
 description: "Parameter modifiers enable pass-by-reference semantics, with distinctions for read-only, and `out` parameters. The `params` modifier allows optional arguments."
 ms.date: 01/22/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "methods [C#], parameters"
   - "method parameters [C#]"
   - "parameters [C#]"
@@ -202,10 +202,10 @@ You must declare the `params` parameter as a collection type. Recognized collect
 - A single-dimensional *array type* `T[]`, where the *element type* is `T`.
 - A *span type*:
   - `System.Span<T>`
-  - `System.ReadOnlySpan<T>`  
+  - `System.ReadOnlySpan<T>`
   In these types, the *element type* is `T`.
 - A *type* with an accessible *create method* that has a corresponding *element type*. The [*create method*](../operators/collection-expressions.md#collection-builder) uses the same attribute as [collection expressions](../operators/collection-expressions.md).
-- A *struct* or *class type* that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> where:
+- A *struct* or *class type* that implements <xref:System.Collections.Generic.IEnumerable`1?displayProperty=fullName> where:
   - The *type* has a constructor that you can invoke without arguments, and the constructor is at least as accessible as the declaring member.
   - The *type* has an instance (not an extension) method `Add` where:
     - The method can be invoked with a single value argument.
@@ -213,11 +213,11 @@ You must declare the `params` parameter as a collection type. Recognized collect
     - The method is at least as accessible as the declaring member.
   In this case, the *element type* is the *iteration type* of the *type*.
 - An *interface type*:
-  - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
-  - <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=fullName>
-  - <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName>
-  - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
-  - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IEnumerable`1?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IReadOnlyCollection`1?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IReadOnlyList`1?displayProperty=fullName>
+  - <xref:System.Collections.Generic.ICollection`1?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IList`1?displayProperty=fullName>
   In these types, the *element type* is `T`.
 
 Before C# 13, you must use a single-dimensional array for the parameter.

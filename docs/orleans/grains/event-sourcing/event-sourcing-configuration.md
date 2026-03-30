@@ -17,7 +17,7 @@ As before, interfaces depend only on the `Microsoft.Orleans.Core` package becaus
 
 ### Grain implementations
 
-Journaled grains need to derive from <xref:Orleans.EventSourcing.JournaledGrain%602> or <xref:Orleans.EventSourcing.JournaledGrain%601>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
+Journaled grains need to derive from <xref:Orleans.EventSourcing.JournaledGrain`2> or <xref:Orleans.EventSourcing.JournaledGrain`1>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
 
 ### Log-consistency providers
 

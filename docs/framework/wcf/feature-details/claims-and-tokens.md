@@ -11,11 +11,11 @@ This topic describes the various claim types that Windows Communication Foundati
 
 You can examine the claims of a client credential by using the <xref:System.IdentityModel.Claims.ClaimSet> and <xref:System.IdentityModel.Claims.Claim> classes. The `ClaimSet` contains a collection of `Claim` objects. Each `Claim` has the following important members:
 
-- The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint`.
+- The <xref:System.IdentityModel.Claims.Claim.ClaimType> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint`.
 
-- The <xref:System.IdentityModel.Claims.Claim.Right%2A> property returns a URI that specifies the right of the claim. Predefined rights are found in the <xref:System.IdentityModel.Claims.Rights> class (<xref:System.IdentityModel.Claims.Rights.Identity%2A>,  <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>).
+- The <xref:System.IdentityModel.Claims.Claim.Right> property returns a URI that specifies the right of the claim. Predefined rights are found in the <xref:System.IdentityModel.Claims.Rights> class (<xref:System.IdentityModel.Claims.Rights.Identity*>,  <xref:System.IdentityModel.Claims.Rights.PossessProperty*>).
 
-- The <xref:System.IdentityModel.Claims.Claim.Resource%2A> property returns the resource associated with the claim.
+- The <xref:System.IdentityModel.Claims.Claim.Resource> property returns the resource associated with the claim.
 
 Each <xref:System.IdentityModel.Claims.ClaimSet> also has an <xref:System.IdentityModel.Claims.ClaimSet.Issuer> property, which represents the <xref:System.IdentityModel.Claims.ClaimSet> of the `Issuer`.
 
@@ -27,19 +27,19 @@ Where a client credential maps to a Windows user account, the resulting <xref:Sy
 
 - The claims in the collection are:
 
-  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> value of security identifier (SID), a <xref:System.IdentityModel.Claims.Claim.Right%2A> property value of `Identity`, and a <xref:System.IdentityModel.Claims.Claim.Resource%2A> that returns the actual SID value. A SID is a unique value the domain controller issues to every user. The SID is used to identify the user in interactions with Windows security.
+  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType*> value of security identifier (SID), a <xref:System.IdentityModel.Claims.Claim.Right> property value of `Identity`, and a <xref:System.IdentityModel.Claims.Claim.Resource*> that returns the actual SID value. A SID is a unique value the domain controller issues to every user. The SID is used to identify the user in interactions with Windows security.
 
-  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> value of SID, a <xref:System.IdentityModel.Claims.Claim.Right%2A> of `PossessProperty`, and a <xref:System.IdentityModel.Claims.Claim.Resource%2A> of the SID value.
+  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType*> value of SID, a <xref:System.IdentityModel.Claims.Claim.Right*> of `PossessProperty`, and a <xref:System.IdentityModel.Claims.Claim.Resource*> of the SID value.
 
-  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> of <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A>, a <xref:System.IdentityModel.Claims.Claim.Right%2A> of `PossessProperty` and a <xref:System.IdentityModel.Claims.Claim.Resource%2A> of string containing the user name (for example, "MYMACHINE\Bob").
+  - A <xref:System.IdentityModel.Claims.Claim> with a <xref:System.IdentityModel.Claims.Claim.ClaimType*> of <xref:System.IdentityModel.Claims.ClaimTypes.Name*>, a <xref:System.IdentityModel.Claims.Claim.Right*> of `PossessProperty` and a <xref:System.IdentityModel.Claims.Claim.Resource*> of string containing the user name (for example, "MYMACHINE\Bob").
 
-  - Additional SID claims with <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> for the various groups the user belongs to.
+  - Additional SID claims with <xref:System.IdentityModel.Claims.Rights.PossessProperty*> for the various groups the user belongs to.
 
 ## Certificates
 
 Where the client credential is a certificate, the resulting <xref:System.IdentityModel.Claims.ClaimSet> has the following values:
 
-- For self-issued certificates, the `Issuer` is the <xref:System.IdentityModel.Claims.ClaimSet> itself. The <xref:System.IdentityModel.Claims.ClaimSet> returns a <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> of <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A>, a <xref:System.IdentityModel.Claims.Claim.Right%2A> of `Identity`, and a <xref:System.IdentityModel.Claims.Claim.Resource%2A> value that is a <xref:System.Byte> array containing the thumbprint of the certificate.
+- For self-issued certificates, the `Issuer` is the <xref:System.IdentityModel.Claims.ClaimSet> itself. The <xref:System.IdentityModel.Claims.ClaimSet> returns a <xref:System.IdentityModel.Claims.Claim.ClaimType*> of <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint*>, a <xref:System.IdentityModel.Claims.Claim.Right*> of `Identity`, and a <xref:System.IdentityModel.Claims.Claim.Resource*> value that is a <xref:System.Byte> array containing the thumbprint of the certificate.
 
 - For a certificate issued by a certification authority, the issuer is the `ClaimSet` representing the certification authority’s certificate.
 
@@ -51,15 +51,15 @@ Where the client credential is a certificate, the resulting <xref:System.Identit
 
 ## User Name/Password
 
-Where the client credential is a user name/password (or equivalent) that does not map to a Windows account, the resulting `ClaimSet` is issued by the static <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property of the `ClaimSet` class. The `ClaimSet` contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> whose resource is the user name the client provides. A corresponding claim has a `Right` of `PossessProperty`.
+Where the client credential is a user name/password (or equivalent) that does not map to a Windows account, the resulting `ClaimSet` is issued by the static <xref:System.IdentityModel.Claims.ClaimSet.System> property of the `ClaimSet` class. The `ClaimSet` contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Name*> whose resource is the user name the client provides. A corresponding claim has a `Right` of `PossessProperty`.
 
 ## RSA Keys
 
-Where an RSA key not associated with a certificate is used, the resulting `ClaimSet` is self-issued and contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> whose resource is the RSA key. A corresponding claim has a `Right` of `PossessProperty`.
+Where an RSA key not associated with a certificate is used, the resulting `ClaimSet` is self-issued and contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa*> whose resource is the RSA key. A corresponding claim has a `Right` of `PossessProperty`.
 
 ## SAML
 
-Where the client authenticates with a Security Assertions Markup Language (SAML) token, the resulting `ClaimSet` is issued by the entity that signed the SAML token, often the certificate of the security token service (STS) that issued the SAML token. The `ClaimSet` contains various claims as found in the SAML token. If the SAML token contains a `SamlSubject` with a non-`null` name, then an `Identity` claim with a type of <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier%2A> and a resource type of <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> are created.
+Where the client authenticates with a Security Assertions Markup Language (SAML) token, the resulting `ClaimSet` is issued by the entity that signed the SAML token, often the certificate of the security token service (STS) that issued the SAML token. The `ClaimSet` contains various claims as found in the SAML token. If the SAML token contains a `SamlSubject` with a non-`null` name, then an `Identity` claim with a type of <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier*> and a resource type of <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> are created.
 
 ## Identity Claims and ServiceSecurityContext.IsAnonymous
 

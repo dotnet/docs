@@ -20,7 +20,7 @@ The following recommendations will help you use the classes contained in <xref:S
 
 - Use <xref:System.Net.Http.HttpClient> to send HTTP requests instead of <xref:System.Net.WebRequest>, which was obsoleted in .NET 6. In .NET Framework, create a new `HttpClient` instance each time you need to send a request. (The guidance for .NET 5+/.NET Core is more nuanced. For more information, see [Guidelines for using HttpClient](../../fundamentals/networking/http/httpclient-guidelines.md).)
 
-- When writing ASP.NET applications that run on a server using the `System.Net` classes, it's often better, from a performance standpoint, to use the asynchronous method <xref:System.Net.Http.HttpClient.SendAsync%2A> instead of <xref:System.Net.Http.HttpClient.Send%2A>.
+- When writing ASP.NET applications that run on a server using the `System.Net` classes, it's often better, from a performance standpoint, to use the asynchronous method <xref:System.Net.Http.HttpClient.SendAsync*> instead of <xref:System.Net.Http.HttpClient.Send*>.
 
 - The number of connections opened to an internet resource can have a significant impact on network performance and throughput. **System.Net** uses two connections per application per host by default. Setting the <xref:System.Net.ServicePoint.ConnectionLimit> property in the <xref:System.Net.ServicePoint> for your application can increase this number for a particular host. Setting the <xref:System.Net.ServicePointManager.DefaultPersistentConnectionLimit?displayProperty=nameWithType> property can increase this default for all hosts.
 

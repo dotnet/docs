@@ -2,7 +2,7 @@
 title: "How to: List directory contents with FTP"
 description: "This article shows a sample of how to list the directory contents of an FTP server."
 ms.date: "06/26/2018"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 130c64c9-7b7f-4672-9b3b-d946bd2616c5
@@ -78,7 +78,7 @@ Namespace Examples.System.Net
 End Namespace
 ```
 
-If you need to list a specific directory, just add the directory to the end of the URI you're using in the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method:
+If you need to list a specific directory, just add the directory to the end of the URI you're using in the <xref:System.Net.WebRequest.Create*?displayProperty=nameWithType> method:
 
 ```csharp
 FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.contoso.com/your_preferred_directory");

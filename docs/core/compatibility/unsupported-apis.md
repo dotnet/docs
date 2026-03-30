@@ -20,7 +20,7 @@ This article organizes the affected APIs by namespace.
 
 | Member                                                               | Platforms that throw |
 |----------------------------------------------------------------------|----------------------|
-| <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All                  |
+| <xref:System.AppDomain.CreateDomain*?displayProperty=nameWithType> | All                  |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.Unload(System.AppDomain)?displayProperty=nameWithType> | All |
 | <xref:System.Console.CapsLock?displayProperty=nameWithType> | Linux and macOS |
@@ -36,9 +36,9 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 |--------|----------------------|
-| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom%2A?displayProperty=nameWithType> | All |
-| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A?displayProperty=nameWithType> | All |
-| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource%2A?displayProperty=nameWithType> | All |
+| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom*?displayProperty=nameWithType> | All |
+| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile*?displayProperty=nameWithType> | All |
+| <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource*?displayProperty=nameWithType> | All |
 
 ## System.Collections.Specialized
 
@@ -63,9 +63,9 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Console.BufferWidth?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.CursorSize?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.CursorVisible?displayProperty=nameWithType> (get only) | Linux and macOS |
-| <xref:System.Console.MoveBufferArea%2A?displayProperty=nameWithType> | Linux and macOS |
-| <xref:System.Console.SetWindowPosition%2A?displayProperty=nameWithType> | Linux and macOS |
-| <xref:System.Console.SetWindowSize%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.MoveBufferArea*?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.SetWindowPosition*?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.SetWindowSize*?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Console.Title?displayProperty=nameWithType> (get only) | Linux and macOS |
 | <xref:System.Console.WindowHeight?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.WindowLeft?displayProperty=nameWithType> (set only) | Linux and macOS |
@@ -131,7 +131,7 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Net.HttpWebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Net.WebProxy.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Net.WebProxy.GetDefaultProxy?displayProperty=nameWithType> | All |
-| <xref:System.Net.WebProxy.GetObjectData%2A?displayProperty=nameWithType> | All |
+| <xref:System.Net.WebProxy.GetObjectData*?displayProperty=nameWithType> | All |
 | <xref:System.Net.WebRequest.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Net.WebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Net.WebResponse.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
@@ -143,7 +143,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 |--------|----------------------|
-| <xref:System.Net.NetworkInformation.Ping.Send%2A?displayProperty=nameWithType> | Windows (UWP) |
+| <xref:System.Net.NetworkInformation.Ping.Send*?displayProperty=nameWithType> | Windows (UWP) |
 
 ## System.Net.Sockets
 
@@ -165,12 +165,12 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.ReflectionOnlyLoad*?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.StrongNameKeyPair.%23ctor%2A> | All |
+| <xref:System.Reflection.StrongNameKeyPair.%23ctor*> | All |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | All |
 
 ## System.Runtime.CompilerServices
@@ -247,7 +247,7 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CngProvider?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngUIPolicy?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor*> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice?displayProperty=nameWithType> | Linux and macOS |
@@ -279,20 +279,20 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HMAC.HashCore%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HMAC.HashFinal%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HMAC.Initialize%2A?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.HMAC.HashCore*?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.HMAC.HashFinal*?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.HMAC.Initialize*?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | Linux and macOS |
-| <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ProtectedData.Protect*?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ProtectedData.Unprotect*?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSAOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
-| <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.RSA.FromXmlString*?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.RSA.ToXmlString*?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SafeEvpPKeyHandle?displayProperty=nameWithType> | macOS |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
@@ -311,7 +311,7 @@ This article organizes the affected APIs by namespace.
 | Member | Platforms that throw |
 |--------|----------------------|
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
-| <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import*?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> (set only) | All |
 
@@ -337,7 +337,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 |--------|----------------------|
-| <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> | All |
+| <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> | All |
 
 ## System.Threading
 
@@ -345,7 +345,7 @@ This article organizes the affected APIs by namespace.
 |--------|----------------------|
 | <xref:System.Threading.CompressedStack.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Threading.ExecutionContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> | All |
+| <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> | All |
 | <xref:System.Threading.Thread.ResetAbort?displayProperty=nameWithType> | All |
 | <xref:System.Threading.Thread.Resume?displayProperty=nameWithType> | All |
 | <xref:System.Threading.Thread.Suspend?displayProperty=nameWithType> | All |

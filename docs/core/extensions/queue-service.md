@@ -43,7 +43,7 @@ There are two methods, one that exposes queuing functionality, and another that 
 
 :::code source="snippets/workers/queue-service/DefaultBackgroundTaskQueue.cs":::
 
-The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> causes calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space becomes available. Which leads to backpressure, in case too many publishers/calls start accumulating.
+The preceding implementation relies on a <xref:System.Threading.Channels.Channel`1> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> causes calls to <xref:System.Threading.Channels.ChannelWriter`1.WriteAsync*?displayProperty=nameWithType> to return a task, which completes only when space becomes available. Which leads to backpressure, in case too many publishers/calls start accumulating.
 
 ## Rewrite the Worker class
 
@@ -62,7 +62,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
 - The `IBackgroundTaskQueue` is injected into the `MonitorLoop` service.
 - `IBackgroundTaskQueue.QueueBackgroundWorkItemAsync` is called to enqueue a work item.
 - The work item simulates a long-running background task:
-  - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
+  - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay*>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
 :::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="4,26":::

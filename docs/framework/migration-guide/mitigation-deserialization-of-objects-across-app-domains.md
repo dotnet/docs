@@ -15,7 +15,7 @@ The issue arises under the following sequence of conditions:
 
 1. An app uses two or more app domains with different application bases.
 
-1. Some types are explicitly added to the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> by calling a method such as <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData%2A?displayProperty=nameWithType> or <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData%2A?displayProperty=nameWithType>. These types aren't marked as serializable and aren't stored in the global assembly cache.
+1. Some types are explicitly added to the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> by calling a method such as <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData*?displayProperty=nameWithType> or <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData*?displayProperty=nameWithType>. These types aren't marked as serializable and aren't stored in the global assembly cache.
 
 1. Later, code running in the non-default app domain tries to read a value from a configuration file or use XML to deserialize an object.
 

@@ -2,11 +2,11 @@
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
 ms.date: 03/20/2026
-f1_keywords: 
+f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
   - "not_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pattern matching [C#]"
   - "and keyword [C#]"
   - "or keyword [C#]"
@@ -53,8 +53,8 @@ A *declaration pattern* with type `T` matches an expression when an expression r
 - The type `T` is a `ref struct` type and there's an identity conversion from the expression to `T`.
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. This condition covers inheritance relationships and interface implementations. The following example demonstrates two cases when this condition is true:
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
-  In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
-- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
+  In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List`1> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection`1> interface.
+- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable`1.HasValue?displayProperty=nameWithType> is `true`.
 - A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T` when the expression isn't an instance of a `ref struct`.
 
 Declaration patterns don't consider user-defined conversions or implicit span conversions.

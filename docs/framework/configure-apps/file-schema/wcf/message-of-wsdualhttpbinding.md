@@ -84,8 +84,8 @@ Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
-- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message*>
+- <xref:System.ServiceModel.WSDualHttpSecurity.Message*>
 - <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>
 - <xref:System.ServiceModel.MessageSecurityOverHttp>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

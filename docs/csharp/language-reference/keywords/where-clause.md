@@ -2,9 +2,9 @@
 description: "where clause - C# Reference"
 title: "where clause"
 ms.date: 01/22/2026
-f1_keywords: 
+f1_keywords:
   - "whereclause_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "where keyword [C#]"
   - "where clause [C#]"
 ---
@@ -32,7 +32,7 @@ The `where` clause is a filtering mechanism. You can position it almost anywhere
 
 If you specify a predicate that's not valid for the elements in the data source, the query results in a compile-time error. This error is one benefit of the strong type-checking that LINQ provides.
 
-At compile time, the `where` keyword is converted into a call to the <xref:System.Linq.Enumerable.Where%2A> Standard Query Operator method.
+At compile time, the `where` keyword is converted into a call to the <xref:System.Linq.Enumerable.Where*> Standard Query Operator method.
 
 ## See also
 

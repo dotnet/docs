@@ -100,7 +100,6 @@ All snippets must follow this folder structure relative to the referencing artic
 
 ## Common mistakes to avoid
 
-- ❌ Using the old `[net|framework]` subfolder in paths
 - ❌ Creating project files manually instead of using `dotnet new`
 - ❌ Missing C# or VB versions for standard articles
 - ❌ Using simplistic or non-descriptive snippet identifiers

@@ -91,18 +91,18 @@ To bind your data classification settings, use the .NET configuration system. Fo
 {
     "Key": {
         "PhoneNumber": {
-            "taxonomyName": "MyTaxonomy",
-            "value": "PrivateInformation"
+            "TaxonomyName": "MyTaxonomy",
+            "Value": "PrivateInformation"
         },
         "ExampleDictionary": {
             "CreditCard": {
-                "taxonomyName": "MyTaxonomy",
-                "value": "CreditCardNumber"
+                "TaxonomyName": "MyTaxonomy",
+                "Value": "CreditCardNumber"
             },
-            "SSN":{
-                "taxonomyName": "MyTaxonomy",
-                "value": "SocialSecurityNumber"
-            } 
+            "SSN": {
+                "TaxonomyName": "MyTaxonomy",
+                "Value": "SocialSecurityNumber"
+            }
         }
     }
 }

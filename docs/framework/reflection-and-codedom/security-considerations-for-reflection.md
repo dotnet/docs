@@ -55,7 +55,7 @@ Application code that is run from the command line runs with full trust. As long
 
 ## Reflection and Transparency
 
-Beginning with the .NET Framework 4, the common language runtime determines the transparency level of a type or member from several factors, including the trust level of the assembly and the trust level of the application domain. Reflection provides the <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A>, and <xref:System.Type.IsSecurityTransparent%2A> properties to enable you to discover the transparency level of a type. The following table shows the valid combinations of these properties.
+Beginning with the .NET Framework 4, the common language runtime determines the transparency level of a type or member from several factors, including the trust level of the assembly and the trust level of the application domain. Reflection provides the <xref:System.Type.IsSecurityCritical>, <xref:System.Type.IsSecuritySafeCritical>, and <xref:System.Type.IsSecurityTransparent> properties to enable you to discover the transparency level of a type. The following table shows the valid combinations of these properties.
 
 |Security level|IsSecurityCritical|IsSecuritySafeCritical|IsSecurityTransparent|
 |--------------------|------------------------|----------------------------|---------------------------|
@@ -88,11 +88,11 @@ For example, suppose you grant an application domain Internet permissions plus <
 
 ## Serialization
 
-For serialization, <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> flag provides the ability to get and set members of serializable types, regardless of accessibility. This permission enables code to discover and change the private state of an instance. (In addition to being granted the appropriate permissions, the type must be [marked](../../standard/attributes/applying-attributes.md) as serializable in metadata.)
+For serialization, <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter*?displayProperty=nameWithType> flag provides the ability to get and set members of serializable types, regardless of accessibility. This permission enables code to discover and change the private state of an instance. (In addition to being granted the appropriate permissions, the type must be [marked](../../standard/attributes/applying-attributes.md) as serializable in metadata.)
 
 ## Parameters of Type MethodInfo
 
-Avoid writing public members that take <xref:System.Reflection.MethodInfo> parameters, especially for trusted code. Such members might be more vulnerable to malicious code. For example, consider a public member in highly trusted code that takes a <xref:System.Reflection.MethodInfo> parameter. Assume that the public member indirectly calls the <xref:System.Reflection.MethodBase.Invoke%2A> method on the supplied parameter. If the public member does not perform the necessary permission checks, the call to the <xref:System.Reflection.MethodBase.Invoke%2A> method will always succeed, because the security system determines that the caller is highly trusted. Even if malicious code does not have the permission to directly invoke the method, it can still do so indirectly by calling the public member.
+Avoid writing public members that take <xref:System.Reflection.MethodInfo> parameters, especially for trusted code. Such members might be more vulnerable to malicious code. For example, consider a public member in highly trusted code that takes a <xref:System.Reflection.MethodInfo> parameter. Assume that the public member indirectly calls the <xref:System.Reflection.MethodBase.Invoke*> method on the supplied parameter. If the public member does not perform the necessary permission checks, the call to the <xref:System.Reflection.MethodBase.Invoke*> method will always succeed, because the security system determines that the caller is highly trusted. Even if malicious code does not have the permission to directly invoke the method, it can still do so indirectly by calling the public member.
 
 ## Version Information
 

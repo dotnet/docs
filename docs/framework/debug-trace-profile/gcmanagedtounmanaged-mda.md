@@ -26,11 +26,11 @@ The `gcManagedToUnmanaged` managed debugging assistant (MDA) causes a garbage co
 
 ## Cause
 
- If an unmanaged component is not reference counting a managed COM object correctly, then the runtime could collect a managed object exposed to COM when the unmanaged component still holds a reference to the object. The runtime calls <xref:System.Runtime.InteropServices.Marshal.Release%2A> during garbage collections, so if the user component uses the object before the garbage collection occurs, then it will not yet have been collected. This is the source of the nondeterminism.
+ If an unmanaged component is not reference counting a managed COM object correctly, then the runtime could collect a managed object exposed to COM when the unmanaged component still holds a reference to the object. The runtime calls <xref:System.Runtime.InteropServices.Marshal.Release*> during garbage collections, so if the user component uses the object before the garbage collection occurs, then it will not yet have been collected. This is the source of the nondeterminism.
 
 ## Resolution
 
- Enabling this assistant reduces the time between when the object is eligible for collection and <xref:System.Runtime.InteropServices.Marshal.Release%2A> is called, helping to track down which unmanaged component first tries to access the collected object.
+ Enabling this assistant reduces the time between when the object is eligible for collection and <xref:System.Runtime.InteropServices.Marshal.Release*> is called, helping to track down which unmanaged component first tries to access the collected object.
 
 ## Effect on the Runtime
 

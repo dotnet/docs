@@ -59,7 +59,7 @@ If a function member computes a value, use the `return` statement with an expres
 
 :::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
 
-When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, use the `return` statement without expression.
+When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task`1> or <xref:System.Threading.Tasks.ValueTask`1>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, use the `return` statement without expression.
 
 ### Ref returns
 

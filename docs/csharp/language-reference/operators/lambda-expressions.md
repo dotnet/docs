@@ -31,7 +31,7 @@ A lambda expression can be any of the following two forms:
 
 To create a lambda expression, specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
 
-You can convert any lambda expression to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The types of its parameters and return value define the delegate type to which a lambda expression can be converted. If a lambda expression doesn't return a value, convert it to one of the `Action` delegate types. If it returns a value, convert it to one of the `Func` delegate types. For example, convert a lambda expression that has two parameters and returns no value to an <xref:System.Action%602> delegate. Convert a lambda expression that has one parameter and returns a value to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
+You can convert any lambda expression to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The types of its parameters and return value define the delegate type to which a lambda expression can be converted. If a lambda expression doesn't return a value, convert it to one of the `Action` delegate types. If it returns a value, convert it to one of the `Func` delegate types. For example, convert a lambda expression that has two parameters and returns no value to an <xref:System.Action`2> delegate. Convert a lambda expression that has one parameter and returns a value to a <xref:System.Func`2> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 
 :::code language="csharp" source="snippets/lambda-expressions/Introduction.cs" id="SnippetDelegate":::
 
@@ -43,7 +43,7 @@ Use lambda expressions in any code that requires instances of delegate types or 
 
 :::code language="csharp" source="snippets/lambda-expressions/Introduction.cs" id="SnippetArgument":::
 
-When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). In both cases, you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
+When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select*?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func`2?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select*?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression`1>). In both cases, you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
 
 ## Expression lambdas
 
@@ -53,7 +53,7 @@ A lambda expression with an expression on the right side of the `=>` operator is
 (input-parameters) => expression
 ```
 
-The body of an expression lambda can consist of a method call. However, when you create [expression trees](../../advanced-topics/expression-trees/index.md) that a query provider evaluates, limit method calls to those methods that the query provider translates to its format. Different query providers have varying capabilities. For example, many SQL-based providers can translate methods like <xref:System.String.StartsWith%2A?displayProperty=nameWithType> into appropriate SQL expressions such as `LIKE`. If a query provider doesn't recognize a method call, it can't translate or execute the expression.
+The body of an expression lambda can consist of a method call. However, when you create [expression trees](../../advanced-topics/expression-trees/index.md) that a query provider evaluates, limit method calls to those methods that the query provider translates to its format. Different query providers have varying capabilities. For example, many SQL-based providers can translate methods like <xref:System.String.StartsWith*?displayProperty=nameWithType> into appropriate SQL expressions such as `LIKE`. If a query provider doesn't recognize a method call, it can't translate or execute the expression.
 
 ## Statement lambdas
 
@@ -184,7 +184,7 @@ For more information about C# tuples, see [Tuple types](../../language-reference
 
 ## Lambdas with the standard query operators
 
-LINQ to Objects, among other implementations, uses an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%602> delegate type:
+LINQ to Objects, among other implementations, uses an input parameter whose type is one of the <xref:System.Func`1> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func`2> delegate type:
 
 ```csharp
 public delegate TResult Func<in T, out TResult>(T arg)
@@ -194,9 +194,9 @@ You instantiate the delegate as a `Func<int, bool>` instance where `int` is an i
 
 :::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetFunc":::
 
-You can also supply a lambda expression when the argument type is an <xref:System.Linq.Expressions.Expression%601>, for example in the standard query operators that the <xref:System.Linq.Queryable> type defines. When you specify an <xref:System.Linq.Expressions.Expression%601> argument, the lambda is compiled to an expression tree.
+You can also supply a lambda expression when the argument type is an <xref:System.Linq.Expressions.Expression`1>, for example in the standard query operators that the <xref:System.Linq.Queryable> type defines. When you specify an <xref:System.Linq.Expressions.Expression`1> argument, the lambda is compiled to an expression tree.
 
-The following example uses the <xref:System.Linq.Enumerable.Count%2A> standard query operator:
+The following example uses the <xref:System.Linq.Enumerable.Count*> standard query operator:
 
 :::code language="csharp" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="SnippetCount":::
 
@@ -252,7 +252,7 @@ var read = Console.Read; // Just one overload; Func<int> inferred
 var write = Console.Write; // ERROR: Multiple overloads, can't choose
 ```
 
-If you assign a lambda expression to <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType>, or <xref:System.Linq.Expressions.Expression?displayProperty=nameWithType>, and the lambda has a natural delegate type, the expression has a natural type of <xref:System.Linq.Expressions.Expression%601?displayProperty=nameWithType>, with the natural delegate type used as the argument for the type parameter:
+If you assign a lambda expression to <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType>, or <xref:System.Linq.Expressions.Expression?displayProperty=nameWithType>, and the lambda has a natural delegate type, the expression has a natural type of <xref:System.Linq.Expressions.Expression`1?displayProperty=nameWithType>, with the natural delegate type used as the argument for the type parameter:
 
 ```csharp
 LambdaExpression parseExpr = (string s) => int.Parse(s); // Expression<Func<string, int>>

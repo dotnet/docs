@@ -2,10 +2,10 @@
 title: "Instantiating a DateTimeOffset object"
 description: Read how to instantiate (make an instance of) a DateTimeOffset object in .NET. Learn about date & time literals, constructors, implicit type conversion, & more.
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "instantiating time zone objects"
   - "time zone objects [.NET], instantiation"
   - "DateTimeOffset structure, converting to DateTime"
@@ -47,7 +47,7 @@ The <xref:System.DateTimeOffset> type defines six constructors. Four of them cor
 
 Note that, when the value of the <xref:System.DateTimeOffset> object instantiated using a <xref:System.Globalization.PersianCalendar> object as one of the arguments to its constructor is displayed to the console, it is expressed as a date in the Gregorian rather than the Persian calendar. To output a date using the Persian calendar, see the example in the <xref:System.Globalization.PersianCalendar> topic.
 
-The other two constructors create a <xref:System.DateTimeOffset> object from a <xref:System.DateTime> value. The first of these has a single parameter, the <xref:System.DateTime> value to convert to a <xref:System.DateTimeOffset> value. The offset of the resulting <xref:System.DateTimeOffset> value depends on the <xref:System.DateTime.Kind%2A> property of the constructor's single parameter. If its value is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the offset is set equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. Otherwise, its offset is set equal to that of the local time zone. The following example illustrates the use of this constructor to instantiate <xref:System.DateTimeOffset> objects representing UTC and the local time zone:
+The other two constructors create a <xref:System.DateTimeOffset> object from a <xref:System.DateTime> value. The first of these has a single parameter, the <xref:System.DateTime> value to convert to a <xref:System.DateTimeOffset> value. The offset of the resulting <xref:System.DateTimeOffset> value depends on the <xref:System.DateTime.Kind> property of the constructor's single parameter. If its value is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the offset is set equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. Otherwise, its offset is set equal to that of the local time zone. The following example illustrates the use of this constructor to instantiate <xref:System.DateTimeOffset> objects representing UTC and the local time zone:
 
 :::code language="csharp" source="./snippets/instantiating-a-datetimeoffset-object/csharp/Instantiate.cs" id="4":::
 :::code language="vb" source="./snippets/instantiating-a-datetimeoffset-object/vb/Instantiate.vb" id="4":::
@@ -55,7 +55,7 @@ The other two constructors create a <xref:System.DateTimeOffset> object from a <
 > [!NOTE]
 > Calling the overload of the <xref:System.DateTimeOffset> constructor that has a single <xref:System.DateTime> parameter is equivalent to performing an implicit conversion of a <xref:System.DateTime> value to a <xref:System.DateTimeOffset> value.
 
-The second constructor that creates a <xref:System.DateTimeOffset> object from a <xref:System.DateTime> value has two parameters: the <xref:System.DateTime> value to convert, and a <xref:System.TimeSpan> value representing the date and time's offset from UTC. This offset value must correspond to the <xref:System.DateTime.Kind%2A> property of the constructor's first parameter or an <xref:System.ArgumentException> is thrown. If the <xref:System.DateTime.Kind%2A> property of the first parameter is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the value of the second parameter must be <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. If the <xref:System.DateTime.Kind%2A> property of the first parameter is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, the value of the second parameter must be the offset of the local system's time zone. If the <xref:System.DateTime.Kind%2A> property of the first parameter is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the offset can be any valid value. The following code illustrates calls to this constructor to convert <xref:System.DateTime> to <xref:System.DateTimeOffset> values.
+The second constructor that creates a <xref:System.DateTimeOffset> object from a <xref:System.DateTime> value has two parameters: the <xref:System.DateTime> value to convert, and a <xref:System.TimeSpan> value representing the date and time's offset from UTC. This offset value must correspond to the <xref:System.DateTime.Kind> property of the constructor's first parameter or an <xref:System.ArgumentException> is thrown. If the <xref:System.DateTime.Kind> property of the first parameter is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the value of the second parameter must be <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. If the <xref:System.DateTime.Kind> property of the first parameter is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, the value of the second parameter must be the offset of the local system's time zone. If the <xref:System.DateTime.Kind> property of the first parameter is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the offset can be any valid value. The following code illustrates calls to this constructor to convert <xref:System.DateTime> to <xref:System.DateTimeOffset> values.
 
 :::code language="csharp" source="./snippets/instantiating-a-datetimeoffset-object/csharp/Instantiate.cs" id="5":::
 :::code language="vb" source="./snippets/instantiating-a-datetimeoffset-object/vb/Instantiate.vb" id="5":::
@@ -67,19 +67,19 @@ The <xref:System.DateTimeOffset> type supports one *implicit* type conversion: f
 :::code language="csharp" source="./snippets/instantiating-a-datetimeoffset-object/csharp/Instantiate.cs" id="6":::
 :::code language="vb" source="./snippets/instantiating-a-datetimeoffset-object/vb/Instantiate.vb" id="6":::
 
-The offset of the resulting <xref:System.DateTimeOffset> value depends on the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value. If its value is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the offset is set equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. If its value is either <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the offset is set equal to that of the local time zone.
+The offset of the resulting <xref:System.DateTimeOffset> value depends on the <xref:System.DateTime.Kind?displayProperty=nameWithType> property value. If its value is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the offset is set equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>. If its value is either <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the offset is set equal to that of the local time zone.
 
 ## Parsing the string representation of a date and time
 
 The <xref:System.DateTimeOffset> type supports four methods that allow you to convert the string representation of a date and time into a <xref:System.DateTimeOffset> value:
 
-- <xref:System.DateTimeOffset.Parse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and throws an exception if the conversion fails.
+- <xref:System.DateTimeOffset.Parse*>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and throws an exception if the conversion fails.
 
-- <xref:System.DateTimeOffset.TryParse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and returns `false` if the conversion fails.
+- <xref:System.DateTimeOffset.TryParse*>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and returns `false` if the conversion fails.
 
-- <xref:System.DateTimeOffset.ParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method throws an exception if the conversion fails.
+- <xref:System.DateTimeOffset.ParseExact*>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method throws an exception if the conversion fails.
 
-- <xref:System.DateTimeOffset.TryParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method returns `false` if the conversion fails.
+- <xref:System.DateTimeOffset.TryParseExact*>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method returns `false` if the conversion fails.
 
 The following example illustrates calls to each of these four string conversion methods to instantiate a <xref:System.DateTimeOffset> value.
 

@@ -20,7 +20,7 @@ This class implements <xref:System.Xml.XmlReader> and conforms to the W3C Extens
 
 - Checks that `DocumentType` nodes are well-formed. `XmlTextReader` checks the DTD for well-formedness, but does not validate using the DTD.
 
-- For nodes where <xref:System.Xml.XmlTextReader.NodeType*> is `XmlNodeType.EntityReference`, a single empty `EntityReference` node is returned (that is, the <xref:System.Xml.XmlTextReader.Value> property is `String.Empty`).
+- For nodes where <xref:System.Xml.XmlTextReader.NodeType> is `XmlNodeType.EntityReference`, a single empty `EntityReference` node is returned (that is, the <xref:System.Xml.XmlTextReader.Value> property is `String.Empty`).
 
 > [!NOTE]
 > The actual declarations of entities in the DTD are called `Entity` nodes. When you refer to these nodes in your data, they are called `EntityReference` nodes.

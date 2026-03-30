@@ -24,7 +24,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0006](../../../../fundamentals/syslib-diagnostics/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0007](../../../../fundamentals/syslib-diagnostics/syslib0007.md) | The default implementation of this cryptography algorithm is not supported. | Warning |
 | [SYSLIB0008](../../../../fundamentals/syslib-diagnostics/syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate*?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate*?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0010](../../../../fundamentals/syslib-diagnostics/syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
 | [SYSLIB0012](../../../../fundamentals/syslib-diagnostics/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
@@ -44,7 +44,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 ### SYSLIB0001
 
 - <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType>
-- <xref:System.Text.UTF7Encoding.%23ctor%2A>
+- <xref:System.Text.UTF7Encoding.%23ctor*>
 
 ### SYSLIB0002
 
@@ -210,7 +210,7 @@ Classes and members that depend on code access security types:
 - [System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)](/dotnet/api/system.security.policy.applicationtrust.-ctor#System_Security_Policy_ApplicationTrust__ctor_System_Security_PermissionSet_System_Collections_Generic_IEnumerable_System_Security_Policy_StrongName__)
 - <xref:System.Security.Policy.ApplicationTrust.FullTrustAssemblies?displayProperty=fullName>
 - <xref:System.Security.Policy.GacInstalled?displayProperty=fullName>
-- <xref:System.Security.Policy.PolicyStatement.%23ctor%2A?displayProperty=fullName>
+- <xref:System.Security.Policy.PolicyStatement.%23ctor*?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyLevel.AddNamedPermissionSet(System.Security.NamedPermissionSet)?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyLevel.ChangeNamedPermissionSet(System.String,System.Security.PermissionSet)?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyLevel.GetNamedPermissionSet(System.String)?displayProperty=fullName>
@@ -258,8 +258,8 @@ Classes and members that depend on code access security types:
 
 ### SYSLIB0009
 
-- <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
-- <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
+- <xref:System.Net.AuthenticationManager.Authenticate*?displayProperty=nameWithType>
+- <xref:System.Net.AuthenticationManager.PreAuthenticate*?displayProperty=nameWithType>
 
 ### SYSLIB0010
 
@@ -269,8 +269,8 @@ Classes and members that depend on code access security types:
 ### SYSLIB0011
 
 - <xref:System.Exception.SerializeObjectState?displayProperty=fullName>
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize*?displayProperty=nameWithType>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize*?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>

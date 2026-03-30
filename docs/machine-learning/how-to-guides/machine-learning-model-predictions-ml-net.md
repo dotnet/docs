@@ -62,14 +62,14 @@ ITransformer predictionPipeline = mlContext.Model.Load("model.zip", out predicti
 
 ## Single prediction
 
-To make a single prediction, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) using the loaded prediction pipeline.
+To make a single prediction, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) using the loaded prediction pipeline.
 
 ```csharp
 // Create PredictionEngines
 PredictionEngine<HousingData, HousingPrediction> predictionEngine = mlContext.Model.CreatePredictionEngine<HousingData, HousingPrediction>(predictionPipeline);
 ```
 
-Then, use the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict%2A) method and pass in your input data as a parameter. Notice that using the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict%2A) method doesn't require the input to be an [`IDataView`](xref:Microsoft.ML.IDataView). That's because it conveniently internalizes the input data type manipulation so you can pass in an object of the input data type. Additionally, since `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there's no value for it at the moment.
+Then, use the [`Predict`](xref:Microsoft.ML.PredictionEngineBase`2.Predict%2A) method and pass in your input data as a parameter. Notice that using the [`Predict`](xref:Microsoft.ML.PredictionEngineBase`2.Predict%2A) method doesn't require the input to be an [`IDataView`](xref:Microsoft.ML.IDataView). That's because it conveniently internalizes the input data type manipulation so you can pass in an object of the input data type. Additionally, since `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there's no value for it at the moment.
 
 ```csharp
 // Input Data
@@ -86,9 +86,9 @@ HousingPrediction prediction = predictionEngine.Predict(inputData);
 If you access the `Score` property of the `prediction` object, you should get a value similar to `150079`.
 
 > [!TIP]
-> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
+> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool`2) service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool`1) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) objects for use throughout your application.
 >
-> For examples on how to use the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, see [deploy a model to a web API](serve-model-web-api-ml-net.md) and [deploy a model to Azure Functions](serve-model-serverless-azure-functions-ml-net.md).
+> For examples on how to use the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool`2) service, see [deploy a model to a web API](serve-model-web-api-ml-net.md) and [deploy a model to Azure Functions](serve-model-serverless-azure-functions-ml-net.md).
 >
 > For more information, see [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
@@ -142,9 +142,9 @@ The predicted values in the score column should resemble the following values:
 
 ## Multiple predictions (PredictionEnginePool)
 
-To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602), you can take an `IEnumerable` containing multiple instances of your model input. For example, take an `IEnumerable<HousingInput>` and apply the [`Predict`](xref:Microsoft.Extensions.ML.PredictionEnginePoolExtensions.Predict%2A) method to each element using the LINQ [`Select`](xref:System.Linq.Enumerable.Select%2A) method.
+To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool`2), you can take an `IEnumerable` containing multiple instances of your model input. For example, take an `IEnumerable<HousingInput>` and apply the [`Predict`](xref:Microsoft.Extensions.ML.PredictionEnginePoolExtensions.Predict%2A) method to each element using the LINQ [`Select`](xref:System.Linq.Enumerable.Select%2A) method.
 
-This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `housingData`.
+This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool`2) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `housingData`.
 
 ```csharp
 IEnumerable<HousingPrediction> predictions = housingData.Select(input => predictionEnginePool.Predict(input));

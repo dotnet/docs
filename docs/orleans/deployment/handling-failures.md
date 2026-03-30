@@ -33,7 +33,7 @@ Part of the recovery job is automatic in Orleans. If a grain is no longer access
 After observing a grain operation failure, take one or more of the following actions:
 
 - **Retry the action**: Often suitable, especially if the action doesn't involve state changes that might be left half-done. This is the most common approach.
-- **Fix/reset state**: Try to correct the partially changed state. Do this by calling a method that resets the state to the last known correct state or by simply reading the correct state from storage using <xref:Orleans.Grain%601.ReadStateAsync*>.
+- **Fix/reset state**: Try to correct the partially changed state. Do this by calling a method that resets the state to the last known correct state or by simply reading the correct state from storage using <xref:Orleans.Grain`1.ReadStateAsync*>.
 - **Reset related states**: Reset the state of all related activations as well to ensure a consistent state across all involved grains.
 - **Use transactions or process managers**: Perform multi-grain state manipulations using a Process Manager pattern or database transactions. This ensures the operation either completes entirely or leaves the state unchanged, avoiding partial updates.
 

@@ -320,7 +320,7 @@ For more information about JSON serialization, see [System.Text.Json overview](.
 
 ### PipeReader support for JSON serializer
 
-<xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> now supports <xref:System.IO.Pipelines.PipeReader>, complementing the existing <xref:System.IO.Pipelines.PipeWriter> support. Previously, deserializing from a `PipeReader` required converting it to a <xref:System.IO.Stream>, but the new overloads eliminate that step by integrating `PipeReader` directly into the serializer. As a bonus, not having to convert from what you're already holding can yield some efficiency benefits.
+<xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> now supports <xref:System.IO.Pipelines.PipeReader>, complementing the existing <xref:System.IO.Pipelines.PipeWriter> support. Previously, deserializing from a `PipeReader` required converting it to a <xref:System.IO.Stream>, but the new overloads eliminate that step by integrating `PipeReader` directly into the serializer. As a bonus, not having to convert from what you're already holding can yield some efficiency benefits.
 
 This shows the basic usage:
 

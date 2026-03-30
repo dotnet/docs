@@ -109,7 +109,7 @@ You can do either of the following to ensure that all of the threads executing i
 
 - You can pass a <xref:System.Globalization.CultureInfo> object that represents that culture to the <xref:System.Threading.ParameterizedThreadStart> delegate or the <xref:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)?displayProperty=nameWithType> method.
 
-- For apps running on .NET Framework 4.5 and later versions, you can define the culture and UI culture that is to be assigned to all threads created in an application domain by setting the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture*?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture*?displayProperty=nameWithType> properties. Note that this is a per-application domain setting.
+- For apps running on .NET Framework 4.5 and later versions, you can define the culture and UI culture that is to be assigned to all threads created in an application domain by setting the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture?displayProperty=nameWithType> properties. Note that this is a per-application domain setting.
 
 For more information and examples, see the "Culture and threads" section of the <xref:System.Globalization.CultureInfo> class remarks.
 

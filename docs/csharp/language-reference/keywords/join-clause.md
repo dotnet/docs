@@ -2,10 +2,10 @@
 description: "join clause - C# Reference"
 title: "join clause"
 ms.date: 01/21/2026
-f1_keywords: 
+f1_keywords:
   - "join"
   - "join_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "join clause [C#]"
   - "join keyword [C#]"
 ---
@@ -81,7 +81,7 @@ The following example compares the results of an inner join, a group join, and a
 
 ## Remarks
 
-A `join` clause that isn't followed by `into` translates into a <xref:System.Linq.Enumerable.Join%2A> method call. A `join` clause that is followed by `into` translates to a <xref:System.Linq.Enumerable.GroupJoin%2A> method call.
+A `join` clause that isn't followed by `into` translates into a <xref:System.Linq.Enumerable.Join*> method call. A `join` clause that is followed by `into` translates to a <xref:System.Linq.Enumerable.GroupJoin*> method call.
 
 ## See also
 

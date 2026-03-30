@@ -74,12 +74,12 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ## See also
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates*>
 - <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection>
 - <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement>
-- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates*>
 - [\<add>](add-of-knowncertificates.md)
 - [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

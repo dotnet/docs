@@ -74,7 +74,7 @@ BSTR MethodOne (BSTR b) {
 
 - For platform invoke, a delegate is marshalled as an unmanaged function pointer by default.
 
-- For COM interop, a delegate is marshalled as a COM interface of type `_Delegate` by default. The `_Delegate` interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.
+- For COM interop, a delegate is marshalled as a COM interface of type `_Delegate` by default. The `_Delegate` interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke*?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.
 
  The following table shows the marshalling options for the managed delegate data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal delegates.
 

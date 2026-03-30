@@ -93,7 +93,7 @@ The following additional restrictions apply to enumerations:
 - They cannot be generic, unless they are generic only because they are nested within a generic type. That is, an enumeration cannot have type parameters of its own.
 
   > [!NOTE]
-  > Nested types (including enumerations) created with Visual Basic, C#, and C++ include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own. For more information, see "Nested Types" in the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> reference topic.
+  > Nested types (including enumerations) created with Visual Basic, C#, and C++ include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own. For more information, see "Nested Types" in the <xref:System.Type.MakeGenericType*?displayProperty=nameWithType> reference topic.
 
 The <xref:System.FlagsAttribute> attribute denotes a special kind of enumeration called a bit field. The runtime itself does not distinguish between traditional enumerations and bit fields, but your language might do so. When this distinction is made, bitwise operators can be used on bit fields, but not on enumerations, to generate unnamed values. Enumerations are generally used for lists of unique elements, such as days of the week, country or region names, and so on. Bit fields are generally used for lists of qualities or quantities that might occur in combination, such as `Red And Big And Fast`.
 
@@ -104,7 +104,7 @@ The following example shows how to use both bit fields and traditional enumerati
 
 ### Interfaces
 
-An interface defines a contract that specifies a "can do" relationship or a "has a" relationship. Interfaces are often used to implement functionality, such as comparing and sorting (the <xref:System.IComparable> and <xref:System.IComparable%601> interfaces), testing for equality (the <xref:System.IEquatable%601> interface), or enumerating items in a collection (the <xref:System.Collections.IEnumerable> and <xref:System.Collections.Generic.IEnumerable%601> interfaces). Interfaces can have properties, methods, and events, all of which are abstract members; that is, although the interface defines the members and their signatures, it leaves it to the type that implements the interface to define the functionality of each interface member. This means that any class or structure that implements an interface must supply definitions for the abstract members declared in the interface. An interface can require any implementing class or structure to also implement one or more other interfaces.
+An interface defines a contract that specifies a "can do" relationship or a "has a" relationship. Interfaces are often used to implement functionality, such as comparing and sorting (the <xref:System.IComparable> and <xref:System.IComparable`1> interfaces), testing for equality (the <xref:System.IEquatable`1> interface), or enumerating items in a collection (the <xref:System.Collections.IEnumerable> and <xref:System.Collections.Generic.IEnumerable`1> interfaces). Interfaces can have properties, methods, and events, all of which are abstract members; that is, although the interface defines the members and their signatures, it leaves it to the type that implements the interface to define the functionality of each interface member. This means that any class or structure that implements an interface must supply definitions for the abstract members declared in the interface. An interface can require any implementing class or structure to also implement one or more other interfaces.
 
 The following restrictions apply to interfaces:
 
@@ -136,7 +136,7 @@ Because delegates inherit from <xref:System.MulticastDelegate>, a delegate has a
 
 In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it.
 
-For delegates that represent multiple methods, .NET provides methods of the <xref:System.Delegate> and <xref:System.MulticastDelegate> delegate classes to support operations such as adding a method to a delegate's invocation list (the <xref:System.Delegate.Combine%2A?displayProperty=nameWithType> method), removing a method (the <xref:System.Delegate.Remove%2A?displayProperty=nameWithType> method), and getting the invocation list (the <xref:System.Delegate.GetInvocationList%2A?displayProperty=nameWithType> method).
+For delegates that represent multiple methods, .NET provides methods of the <xref:System.Delegate> and <xref:System.MulticastDelegate> delegate classes to support operations such as adding a method to a delegate's invocation list (the <xref:System.Delegate.Combine*?displayProperty=nameWithType> method), removing a method (the <xref:System.Delegate.Remove*?displayProperty=nameWithType> method), and getting the invocation list (the <xref:System.Delegate.GetInvocationList*?displayProperty=nameWithType> method).
 
 > [!NOTE]
 > It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.
@@ -272,7 +272,7 @@ The common type system allows type members to have a variety of characteristics;
 
 ### Overloading
 
-Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in <xref:System.Char?displayProperty=nameWithType>, the <xref:System.Char.IsDigit%2A> method is overloaded. One method takes a <xref:System.Char>. The other method takes a <xref:System.String> and an <xref:System.Int32>.
+Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in <xref:System.Char?displayProperty=nameWithType>, the <xref:System.Char.IsDigit*> method is overloaded. One method takes a <xref:System.Char>. The other method takes a <xref:System.String> and an <xref:System.Int32>.
 
 > [!NOTE]
 > The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.

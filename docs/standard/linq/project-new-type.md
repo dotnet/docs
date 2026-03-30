@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to project a new type (LINQ to XML)
 
-Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they're not appropriate for every scenario. In many cases, you'll want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
+Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable`1> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable`1> of `string`, and <xref:System.Collections.Generic.IEnumerable`1> of `int`. These are common result types, but they're not appropriate for every scenario. In many cases, you'll want your queries to return an <xref:System.Collections.Generic.IEnumerable`1> of some other type.
 
 ## Example: Define a new type and have the `select` statement create an instance of the type
 
@@ -72,7 +72,7 @@ Public Class Program
 End Class
 ```
 
-This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the [How to retrieve a single child element](retrieve-single-child-element.md) article. It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.
+This example uses the <xref:System.Xml.Linq.XContainer.Element*> method that was introduced in the [How to retrieve a single child element](retrieve-single-child-element.md) article. It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element*> method.
 
 This example produces the following output:
 

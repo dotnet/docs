@@ -43,9 +43,9 @@ Next, consider the _Program.cs_ file:
 The preceding code:
 
 - Instantiates a configuration builder instance.
-- Calls <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection%2A> and defines three configuration source values.
+- Calls <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection*> and defines three configuration source values.
 - Calls <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build> to build the configuration.
-- Uses the <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A?displayProperty=nameWithType> method to bind the `Settings` object to the configuration values.
+- Uses the <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind*?displayProperty=nameWithType> method to bind the `Settings` object to the configuration values.
 
 When the application is built, the configuration source generator intercepts the call to `Bind` and generates the binding code.
 
@@ -155,7 +155,7 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
             if (binderOptions?.ErrorOnUnknownConfiguration is true)
             {
                 List<string>? temp = null;
-        
+
                 foreach (IConfigurationSection section in configuration.GetChildren())
                 {
                     if (!keys.Value.Contains(section.Key))
@@ -163,7 +163,7 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
                         (temp ??= new List<string>()).Add($"'{section.Key}'");
                     }
                 }
-        
+
                 if (temp is not null)
                 {
                     throw new InvalidOperationException($"'ErrorOnUnknownConfiguration' was set on the provided BinderOptions, but the following properties were not found on the instance of {type}: {string.Join(", ", temp)}");

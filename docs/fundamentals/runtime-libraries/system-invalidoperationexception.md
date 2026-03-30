@@ -116,7 +116,7 @@ You can eliminate the exception in any of three ways:
 
 - If you cannot modify the source code for the type you are trying to sort, you can define a special-purpose sorting class that implements the <xref:System.Collections.Generic.IComparer`1> interface. You can call an overload of the `Sort` method that includes an  <xref:System.Collections.Generic.IComparer`1> parameter. This approach is especially useful if you want to develop a specialized sorting class that can sort objects based on multiple criteria.
 
-  The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections. It then passes an instance of this class to the <xref:System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer%7B%600%7D)?displayProperty=nameWithType> method.
+  The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections. It then passes an instance of this class to the <xref:System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer%7B`0%7D)?displayProperty=nameWithType> method.
 
   :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort3.cs" id="Snippet14":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort3.fs" id="Snippet14":::
@@ -132,7 +132,7 @@ You can eliminate the exception in any of three ways:
     int Comparison<T>(T x, T y)
     ```
 
-  The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison`1> delegate signature. It then passes this delegate to the <xref:System.Collections.Generic.List`1.Sort(System.Comparison%7B%600%7D)?displayProperty=nameWithType> method.
+  The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison`1> delegate signature. It then passes this delegate to the <xref:System.Collections.Generic.List`1.Sort(System.Comparison%7B`0%7D)?displayProperty=nameWithType> method.
 
   :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort4.cs" id="Snippet15":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort4.fs" id="Snippet15":::
@@ -181,7 +181,7 @@ How you eliminate or handle the exception depends on your application's assumpti
 - If your failure to check for an empty sequence was inadvertent, you can call one of the overloads of the <xref:System.Linq.Enumerable.Any*?displayProperty=nameWithType> overload to determine whether a sequence contains any elements.
 
     > [!TIP]
-    > Calling the <xref:System.Linq.Enumerable.Any`%601(System.Collections.Generic.IEnumerable%7B%60%600%7D,System.Func%7B%60%600,System.Boolean%7D)?displayProperty=nameWithType> method before generating a sequence can improve performance if the data to be processed might contain a large number of elements or if operation that generates the sequence is expensive.
+    > Calling the <xref:System.Linq.Enumerable.Any``1(System.Collections.Generic.IEnumerable%7B``0%7D,System.Func%7B``0,System.Boolean%7D)?displayProperty=nameWithType> method before generating a sequence can improve performance if the data to be processed might contain a large number of elements or if operation that generates the sequence is expensive.
 
 - If you've called a method such as <xref:System.Linq.Enumerable.First*?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.Last*?displayProperty=nameWithType>, or <xref:System.Linq.Enumerable.Single*?displayProperty=nameWithType>, you can substitute an alternate method, such as <xref:System.Linq.Enumerable.FirstOrDefault*?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.LastOrDefault*?displayProperty=nameWithType>, or  <xref:System.Linq.Enumerable.SingleOrDefault*?displayProperty=nameWithType>, that returns a default value instead of a member of the sequence.
 
@@ -201,7 +201,7 @@ The exception can be eliminated by calling the <xref:System.Linq.Enumerable.Any*
 
 The <xref:System.Linq.Enumerable.First*?displayProperty=nameWithType> method returns the first item in a sequence or the first element in a sequence that satisfies a specified condition. If the sequence is empty and therefore does not have a first element, it throws an <xref:System.InvalidOperationException> exception.
 
-In the following example, the <xref:System.Linq.Enumerable.First`%601(System.Collections.Generic.IEnumerable%7B%60%600%7D,System.Func%7B%60%600,System.Boolean%7D)?displayProperty=nameWithType> method throws an <xref:System.InvalidOperationException> exception because the dbQueryResults array doesn't contain an element greater than 4.
+In the following example, the <xref:System.Linq.Enumerable.First``1(System.Collections.Generic.IEnumerable%7B``0%7D,System.Func%7B``0,System.Boolean%7D)?displayProperty=nameWithType> method throws an <xref:System.InvalidOperationException> exception because the dbQueryResults array doesn't contain an element greater than 4.
 
 :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable3.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Enumerable3.fs" id="Snippet8":::
@@ -212,7 +212,7 @@ You can call the <xref:System.Linq.Enumerable.FirstOrDefault*?displayProperty=na
 > [!NOTE]
 > Interpreting the value returned by the <xref:System.Linq.Enumerable.FirstOrDefault*?displayProperty=nameWithType> method is often complicated by the fact that the default value of the type can be a valid value in the sequence. In this case, you an call the <xref:System.Linq.Enumerable.Any*?displayProperty=nameWithType> method to determine whether the sequence has valid members before calling the <xref:System.Linq.Enumerable.First*?displayProperty=nameWithType> method.
 
-The following example calls the  <xref:System.Linq.Enumerable.FirstOrDefault`%601(System.Collections.Generic.IEnumerable%7B%60%600%7D,System.Func%7B%60%600,System.Boolean%7D)?displayProperty=nameWithType> method to prevent the <xref:System.InvalidOperationException> exception thrown in the previous example.
+The following example calls the  <xref:System.Linq.Enumerable.FirstOrDefault``1(System.Collections.Generic.IEnumerable%7B``0%7D,System.Func%7B``0,System.Boolean%7D)?displayProperty=nameWithType> method to prevent the <xref:System.InvalidOperationException> exception thrown in the previous example.
 
 :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable4.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Enumerable4.fs" id="Snippet9":::

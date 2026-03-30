@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `string-interpolations.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to string interpolations, and string interpolation handlers.
+- For the duration of this chat, all references to "destination file" refer to `docs/csharp/language-reference/compiler-messages/overloaded-operator-errors.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to overflow, underflow, and checked and unchecked operators.
 
 The destination file already contains a skeleton for the final output.
 

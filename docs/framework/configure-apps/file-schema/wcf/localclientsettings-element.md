@@ -72,8 +72,8 @@ Specifies the security settings of a local client for this binding.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>
-- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>
-- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings*>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings*>
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Bindings](../../../wcf/bindings.md)

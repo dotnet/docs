@@ -24,7 +24,7 @@ The results of the side-by-side model are as follows:
 
 - Within an AppDomain, features implemented by the HTTP runtime apply to ASP.NET content but not to WCF. Many HTTP-specific features of the ASP.NET application platform do not apply to WCF Services hosted inside of an AppDomain that contains ASP.NET content. Examples of these features include the following:
 
-  - HttpContext: <xref:System.Web.HttpContext.Current%2A> is always `null` when accessed from within a WCF service. Use <xref:System.ServiceModel.Channels.RequestContext> instead.
+  - HttpContext: <xref:System.Web.HttpContext.Current*> is always `null` when accessed from within a WCF service. Use <xref:System.ServiceModel.Channels.RequestContext> instead.
 
   - File-based authorization: The WCF security model does not allow for the access control list (ACL) applied to the .svc file of the service when deciding if a service request is authorized.
 
@@ -54,7 +54,7 @@ Although the WCF model is designed to behave consistently across hosting environ
 
 Unlike the default side-by-side configuration, where the WCF hosting infrastructure intercepts WCF messages and routes them out of the HTTP pipeline, WCF services running in ASP.NET Compatibility Mode participate fully in the ASP.NET HTTP request lifecycle. In compatibility mode, WCF services use the HTTP pipeline through an <xref:System.Web.IHttpHandler> implementation, similar to the way requests for ASPX pages and ASMX Web services are handled. As a result, WCF behaves identically to ASMX with respect to the following ASP.NET features:
 
-- <xref:System.Web.HttpContext>: WCF services running in ASP.NET Compatibility Mode can access <xref:System.Web.HttpContext.Current%2A> and its associated state.
+- <xref:System.Web.HttpContext>: WCF services running in ASP.NET Compatibility Mode can access <xref:System.Web.HttpContext.Current*> and its associated state.
 
 - File-based authorization: WCF services running in ASP.NET compatibility mode can be secure by attaching file system access control lists (ACLs) to the service’s .svc file.
 

@@ -65,8 +65,8 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007fede
 ## See also
 
 - <xref:System.ServiceModel.WSFederationHttpSecurity>
-- <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WSFederationHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>
 - [How to: Create a WSFederationHttpBinding](../../../wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

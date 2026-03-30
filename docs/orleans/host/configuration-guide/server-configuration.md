@@ -102,7 +102,7 @@ In this sample, we use Azure Table as the membership provider.
 
 ## Orleans clustering information
 
-To optionally configure clustering, use <xref:Orleans.Configuration.ClusterOptions> as the type parameter for the <xref:Orleans.Hosting.SiloBuilderExtensions.Configure%2A> method on the <xref:Orleans.Hosting.ISiloBuilder> instance.
+To optionally configure clustering, use <xref:Orleans.Configuration.ClusterOptions> as the type parameter for the <xref:Orleans.Hosting.SiloBuilderExtensions.Configure*> method on the <xref:Orleans.Hosting.ISiloBuilder> instance.
 
 ```csharp
 siloBuilder.Configure<ClusterOptions>(options =>
@@ -241,6 +241,6 @@ Supplement assemblies added by the above methods using the following extension m
 - <xref:Orleans.ApplicationPartManagerExtensions.WithReferences*>: Adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
 - <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*>: Generates support code for the added parts and adds it to the part manager. Note that this requires installing the `Microsoft.Orleans.OrleansCodeGenerator` package and is commonly referred to as runtime code generation.
 
-Type discovery requires the provided Application Parts to include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach to ensure these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, you can generate code during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. Find more info regarding code generation in [the corresponding section](../../grains/code-generation.md).
+Type discovery requires the provided Application Parts to include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach to ensure these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, you can generate code during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*> method described above. Find more info regarding code generation in [the corresponding section](../../grains/code-generation.md).
 
 :::zone-end

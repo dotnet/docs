@@ -73,7 +73,7 @@ The following example shows a type to serialize. It also shows the JSON output:
 }
 ```
 
-This option applies only to properties. To ignore read-only fields when [serializing fields](fields.md), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
+This option applies only to properties. To ignore read-only fields when [serializing fields](fields.md), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields*?displayProperty=nameWithType> global setting.
 
 > [!NOTE]
 > Read-only collection-type properties are still serialized even if <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> is set to `true`.

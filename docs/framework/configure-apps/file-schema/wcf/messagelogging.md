@@ -124,6 +124,6 @@ This element defines the settings for the message-logging capabilities of Window
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
-- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging*>
 - <xref:System.ServiceModel.Configuration.MessageLoggingElement>
 - [Configuring Message Logging](../../../wcf/diagnostics/configuring-message-logging.md)

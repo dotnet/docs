@@ -1,7 +1,8 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
-ms.date: 09/29/2025
+ms.date: 03/29/2026
+ai-usage: ai-assisted
 ---
 # dotnet dev-certs
 
@@ -53,6 +54,20 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   ```
 
   By default, the newly created certificate is not trusted. To trust the certificate, use the `--trust` option.
+
+  In .NET 10 and later, the generated ASP.NET Core development certificate includes these subject alternative names (SANs).
+
+  The `*.dev.localhost` and `*.dev.internal` SANs lets you use the certificate with `*.dev.localhost` and `*.dev.internal` hostnames for local development. The `host.docker.internal` and `host.containers.internal` SANs let you use the certificate in container-based local development scenarios:
+
+  | Type | Value |
+  | --- | --- |
+  | DNS name | `localhost` |
+  | DNS name | `*.dev.localhost` |
+  | DNS name | `*.dev.internal` |
+  | DNS name | `host.docker.internal` |
+  | DNS name | `host.containers.internal` |
+  | IP address | `127.0.0.1` |
+  | IP address | `0000:0000:0000:0000:0000:0000:0000:0001` |
 
   To create a file that you can use with other tools, use the `--export-path` option.
 
@@ -136,6 +151,8 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 - **`-t|--trust`**
 
   Trusts the certificate on the local machine.
+
+  In .NET 10 and later, if you run this option inside a Windows Subsystem for Linux (WSL) instance, the command also trusts the certificate on the Windows host.
 
   If this option isn't specified, the certificate is added to the certificate store but not to a trusted list.
 

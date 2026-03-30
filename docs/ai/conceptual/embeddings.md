@@ -48,7 +48,7 @@ You generate embeddings for your raw data by using an AI embedding model, which 
 
 ### Store and process embeddings in a vector database
 
-After you generate embeddings, you need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities. Choose one based on your raw data and your goals. For information about your options, see [Vector databases for .NET + AI](vector-databases.md).
+After you generate embeddings, you need a way to store them so you can later retrieve them with calls to an LLM. Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [Vector databases for .NET + AI](../vector-stores/overview.md).
 
 ### Using embeddings in your LLM solution
 
@@ -56,6 +56,7 @@ When building LLM-based applications, you can use Agent Framework to integrate e
 
 ## Related content
 
+- [Generate embeddings for vector store providers](../vector-stores/embedding-generation.md)
 - [How GenAI and LLMs work](how-genai-and-llms-work.md)
 - [Retrieval-augmented generation](rag.md)
 - [Training: Develop an AI agent with Microsoft Agent Framework](/training/modules/develop-ai-agent-with-semantic-kernel/)

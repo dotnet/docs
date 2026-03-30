@@ -13,7 +13,7 @@ You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one
 
 ## Construction of a Custom Binding
 
-A custom binding is constructed using the <xref:System.ServiceModel.Channels.CustomBinding.%23ctor%2A> constructor from a collection of binding elements that are "stacked" in a specific order:
+A custom binding is constructed using the <xref:System.ServiceModel.Channels.CustomBinding.%23ctor*> constructor from a collection of binding elements that are "stacked" in a specific order:
 
 - At the top is an optional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> class that allows flowing transactions.
 

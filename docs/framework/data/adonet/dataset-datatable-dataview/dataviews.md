@@ -12,7 +12,7 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
 
  A `DataView` provides you with a dynamic view of a single set of data, much like a database view, to which you can apply different sorting and filtering criteria. Unlike a database view, however, a `DataView` cannot be treated as a table and cannot provide a view of joined tables. You also cannot exclude columns that exist in the source table or append columns that do not exist in the source table, such as computational columns.
 
- You can use a <xref:System.Data.DataView.DataViewManager%2A> to manage view settings for all the tables in a **DataSet**. The `DataViewManager` provides you with a convenient way to manage default view settings for each table. When binding a control to more than one table of a **DataSet**, binding to a `DataViewManager` is the ideal choice.
+ You can use a <xref:System.Data.DataView.DataViewManager*> to manage view settings for all the tables in a **DataSet**. The `DataViewManager` provides you with a convenient way to manage default view settings for each table. When binding a control to more than one table of a **DataSet**, binding to a `DataViewManager` is the ideal choice.
 
 ## In This Section
 

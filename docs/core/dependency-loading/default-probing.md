@@ -6,11 +6,11 @@ author: sdmaclea
 ---
 # Default probing
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance is responsible for locating an assembly's dependencies. This article describes the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's probing logic.
+The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance is responsible for locating an assembly's dependencies. This article describes the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance's probing logic.
 
 ## Host configured probing properties
 
-When the runtime is started, the runtime host provides a set of named probing properties that configure <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> probe paths.
+When the runtime is started, the runtime host provides a set of named probing properties that configure <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> probe paths.
 
 Each probing property is optional. If present, each property is a string value that contains a delimited list of absolute paths. The delimiter is ';' on Windows and ':' on all other platforms.
 
@@ -59,12 +59,12 @@ For more information, see [DOTNET_HOST_TRACE environment variables](../tools/dot
 
 ## Managed assembly default probing
 
-When probing to locate a managed assembly, the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> looks in order at:
+When probing to locate a managed assembly, the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> looks in order at:
 
 - Files matching the <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> in `TRUSTED_PLATFORM_ASSEMBLIES` (after removing file extensions).
 - Assembly files in `APP_PATHS` with common file extensions.
 
-When loading in the default <xref:System.Runtime.Loader.AssemblyLoadContext>, assemblies found in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS` take precedence over a specified path or raw assembly object. For example, if you call <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromStream%2A?displayProperty=nameWithType> or <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath%2A?displayProperty=nameWithType> on the default <xref:System.Runtime.Loader.AssemblyLoadContext> and an assembly with a matching name exists in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS`, the runtime loads the assembly from those locations instead of from the specified stream or path.
+When loading in the default <xref:System.Runtime.Loader.AssemblyLoadContext>, assemblies found in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS` take precedence over a specified path or raw assembly object. For example, if you call <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromStream*?displayProperty=nameWithType> or <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath*?displayProperty=nameWithType> on the default <xref:System.Runtime.Loader.AssemblyLoadContext> and an assembly with a matching name exists in `TRUSTED_PLATFORM_ASSEMBLIES` or `APP_PATHS`, the runtime loads the assembly from those locations instead of from the specified stream or path.
 
 ## Satellite (resource) assembly probing
 

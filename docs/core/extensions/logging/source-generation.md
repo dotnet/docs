@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Compile-time logging source generation
 
-Source-generated logging is designed to deliver a highly usable and highly performant logging solution for modern .NET apps. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
+Source-generated logging is designed to deliver a highly usable and highly performant logging solution for modern .NET apps. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*?displayProperty=nameWithType> functionality.
 
 The source generator is triggered when <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> is used on `partial` logging methods. When triggered, it autogenerates the implementation of the `partial` methods it's decorating. If there's a problem, it produces compile-time diagnostics with hints about proper usage. This compile-time logging solution is considerably faster at runtime than previously available logging approaches. It eliminates boxing, temporary allocations, and copies to the maximum extent possible.
 
@@ -112,7 +112,7 @@ The code-generation model depends on code being compiled with a modern C# compil
 
 ## Log method anatomy
 
-The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception>, as shown in the following code example.
+The <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception>, as shown in the following code example.
 
 ```csharp
 public interface ILogger
@@ -413,7 +413,7 @@ With the advent of C# source generators, writing highly performant logging APIs 
 - Allows the passing of all original data as-is, without any complication around how it's stored before something is done with it (other than creating a `string`).
 - Provides logging-specific diagnostics and emits warnings for duplicate event IDs.
 
-Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType>:
+Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*?displayProperty=nameWithType>:
 
 - Shorter and simpler syntax: Declarative attribute usage rather than coding boilerplate.
 - Guided developer experience: The generator gives warnings to help developers do the right thing.

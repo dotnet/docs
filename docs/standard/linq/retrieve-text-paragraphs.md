@@ -12,7 +12,7 @@ ms.topic: how-to
 
 This example builds on the previous example, [Retrieve the paragraphs and their styles](retrieve-paragraphs-styles.md). This new example retrieves the text of each paragraph as a string.
 
-To retrieve the text, this example adds an additional query that iterates through the collection of anonymous types and projects a new collection of an anonymous type with the addition of a new member, `Text`. It uses the <xref:System.Linq.Enumerable.Aggregate%2A> standard query operator to concatenate multiple strings into one string.
+To retrieve the text, this example adds an additional query that iterates through the collection of anonymous types and projects a new collection of an anonymous type with the addition of a new member, `Text`. It uses the <xref:System.Linq.Enumerable.Aggregate*> standard query operator to concatenate multiple strings into one string.
 
 This technique (that is, first projecting to a collection of an anonymous type, then using this collection to project to a new collection of an anonymous type) is a common and useful one. This query could have been written without projecting to the first anonymous type. However, because of lazy evaluation, doing so doesn't use much additional processing power. The technique does create more short-lived objects on the heap, but that doesn't substantially degrade performance.
 
@@ -247,7 +247,7 @@ StyleName:Normal ><
 StyleName:Code >Hello World<
 ```
 
-The next article in this tutorial shows how to use an extension method, instead of <xref:System.Linq.Enumerable.Aggregate%2A>, to concatenate multiple strings into a single string:
+The next article in this tutorial shows how to use an extension method, instead of <xref:System.Linq.Enumerable.Aggregate*>, to concatenate multiple strings into a single string:
 
 - [Refactor using an extension method](refactor-extension-method.md)
 

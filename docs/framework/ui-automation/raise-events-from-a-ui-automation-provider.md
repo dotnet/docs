@@ -18,7 +18,7 @@ ms.topic: how-to
 
  In the following example, a UI Automation event is raised in the implementation of a custom button control. The implementation enables a UI Automation client application to simulate a button click.
 
- To avoid unnecessary processing, the example checks <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A> to see whether events should be raised.
+ To avoid unnecessary processing, the example checks <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening*> to see whether events should be raised.
 
  [!code-csharp[UIAProvider_snip#150](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp/FragmentRoot.cs#150)]
 

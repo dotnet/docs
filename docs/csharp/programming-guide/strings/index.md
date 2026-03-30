@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Strings and string literals
 
-A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.
+A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. The <xref:System.String.Length> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.
 
 ## string vs. System.String
 
@@ -129,7 +129,7 @@ To interpret escape sequences literally, use a [verbatim](../../language-referen
 
 ### Composite formatting
 
-The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used in the preceding sample.
+The <xref:System.String.Format*?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used in the preceding sample.
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringFormat":::
 
@@ -137,7 +137,7 @@ For more information, see [Composite formatting in .NET](../../../standard/base-
 
 ## Substrings
 
-A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and doesn't modify the original string. For more information, see [How to search strings](../../how-to/search-strings.md) and [How to modify string contents](../../how-to/modify-string-contents.md).
+A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring*> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf*> method. Use the <xref:System.String.Replace*> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring*> method, <xref:System.String.Replace*> actually returns a new string and doesn't modify the original string. For more information, see [How to search strings](../../how-to/search-strings.md) and [How to modify string contents](../../how-to/modify-string-contents.md).
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="Substrings":::
 
@@ -177,14 +177,14 @@ In this example, a <xref:System.Text.StringBuilder> object is used to create a s
 
 ## Strings, extension methods, and LINQ
 
-Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they're available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](/dotnet/csharp/linq).
+Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable`1>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they're available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](/dotnet/csharp/linq).
 
 ## Related articles
 
 - [How to modify string contents](../../how-to/modify-string-contents.md): Illustrates techniques to transform strings and modify the contents of strings.
 - [How to compare strings](../../how-to/compare-strings.md): Shows how to perform ordinal and culture specific comparisons of strings.
 - [How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md): Demonstrates various ways to join multiple strings into one.
-- [How to parse strings using String.Split](../../how-to/parse-strings-using-split.md): Contains code examples that illustrate how to use the <xref:System.String.Split%2A?displayProperty=nameWithType> method to parse strings.
+- [How to parse strings using String.Split](../../how-to/parse-strings-using-split.md): Contains code examples that illustrate how to use the <xref:System.String.Split*?displayProperty=nameWithType> method to parse strings.
 - [How to search strings](../../how-to/search-strings.md): Explains how to use search for specific text or patterns in strings.
 - [How to determine whether a string represents a numeric value](./how-to-determine-whether-a-string-represents-a-numeric-value.md): Shows how to safely parse a string to see whether it has a valid numeric value.
 - [String interpolation](../../language-reference/tokens/interpolated.md): Describes the string interpolation feature that provides a convenient syntax to format strings.

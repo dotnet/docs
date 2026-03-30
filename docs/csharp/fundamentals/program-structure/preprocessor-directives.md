@@ -24,13 +24,13 @@ C# preprocessor directives tell the compiler what code to include, exclude, or t
 
 Starting with C# 14, [file-based apps](index.md) use two additional directives:
 
-- `#!` — the *shebang* line that lets Unix shells run the file directly (for example, `#!/usr/bin/env dotnet run`).
+- `#!` — the *shebang* line that enables executing the file directly on Unix (for example, `./Program.cs`). This requires the *execute* permission to be set on the file (`chmod +x <file>`).
 - `#:` — build-system directives that configure packages, SDK settings, and other options for single-file programs.
 
 Use `#:package` to add a NuGet package. For example, the following file-based app uses the `Spectre.Console` package to render styled output:
 
 ```csharp
-#!/usr/bin/env dotnet run
+#!/usr/bin/env dotnet
 #:package Spectre.Console@*
 
 AnsiConsole.MarkupLine("[bold green]Hello[/] from a file-based app!");

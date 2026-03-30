@@ -48,7 +48,7 @@ There are multiple ways that the instrumentation data can be egressed from the a
 - [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
 - [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
-- Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
+- Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger`1>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
 ## Specialized diagnostics
 

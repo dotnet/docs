@@ -25,7 +25,7 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 });
 ```
 
-In the preceding example, the call to <xref:Orleans.Serialization.SerializationHostingExtensions.AddNewtonsoftJsonSerializer%2A> adds support for serializing and deserializing values using `Newtonsoft.Json.JsonSerializer`. You must perform similar configuration on all clients that need to handle those types.
+In the preceding example, the call to <xref:Orleans.Serialization.SerializationHostingExtensions.AddNewtonsoftJsonSerializer*> adds support for serializing and deserializing values using `Newtonsoft.Json.JsonSerializer`. You must perform similar configuration on all clients that need to handle those types.
 
 For types marked with <xref:Orleans.GenerateSerializerAttribute>, Orleans prefers the generated serializer over the `Newtonsoft.Json` serializer.
 
@@ -34,7 +34,7 @@ For types marked with <xref:Orleans.GenerateSerializerAttribute>, Orleans prefer
 Alternatively, to configure Orleans to use `System.Text.Json` to serialize your types, reference the [Microsoft.Orleans.Serialization.SystemTextJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson) NuGet package. Then, configure the serializer, specifying which types it will be responsible for. In the following example, we specify that the `System.Text.Json` serializer is responsible for all types in the `Example.Namespace` namespace.
 
 - Install the [Microsoft.Orleans.Serialization.SystemTextJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson) NuGet package.
-- Configure the serializer using the <xref:Orleans.Serialization.SerializationHostingExtensions.AddJsonSerializer%2A> method.
+- Configure the serializer using the <xref:Orleans.Serialization.SerializationHostingExtensions.AddJsonSerializer*> method.
 
 Consider the following example when interacting with the <xref:Orleans.Hosting.ISiloBuilder>:
 

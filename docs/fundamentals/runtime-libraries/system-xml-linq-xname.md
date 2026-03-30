@@ -70,7 +70,7 @@ This example produces the following output:
 
 ## Create an XName in no namespace
 
-The <xref:System.Xml.Linq.XName.Namespace> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace> property will be set to <xref:System.Xml.Linq.XNamespace.None*>. The following code demonstrates this:
+The <xref:System.Xml.Linq.XName.Namespace> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace> property will be set to <xref:System.Xml.Linq.XNamespace.None>. The following code demonstrates this:
 
 ```csharp
 XElement root = new XElement("ElementName", "content");

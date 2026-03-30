@@ -53,7 +53,7 @@ async Task<string> FetchDataAsync() {
 }
 ```
 
-Learn more: [Asynchronous programming](../asynchronous-programming/index.md)
+To learn more, see [Asynchronous programming](../asynchronous-programming/index.md).
 
 **Classes:**
 
@@ -69,7 +69,7 @@ class Point {
 record Point(int X, int Y);
 ```
 
-Learn more: [Records](../fundamentals/types/records.md)
+To learn more, see [Records](../fundamentals/types/records.md).
 
 **Pattern matching:**
 
@@ -83,7 +83,7 @@ if (typeof value === "string") { /* ... */ }
 if (value is string s) { /* use s */ }
 ```
 
-Learn more: [Pattern matching](../fundamentals/functional/pattern-matching.md)
+To learn more, see [Pattern matching](../fundamentals/functional/pattern-matching.md).
 
 ## What's new for you in C\#
 
@@ -108,11 +108,11 @@ Some familiar features and idioms from JavaScript and TypeScript aren't availabl
 
 In addition, a few more TypeScript features aren't available in C#:
 
-1. ***Union types***: C# doesn't support union types. However, design proposals are in progress.
+1. ***Union types***: Beginning with C# 15, C# supports [union types](../language-reference/builtin-types/union.md). A union defines a closed set of named cases that a value can represent, and the compiler ensures exhaustive pattern matching over those cases.
 1. ***Decorators***: C# doesn't have decorators. Some common decorators, such as `@sealed` are reserved keywords in C#. Other common decorators might have corresponding [Attributes](../language-reference/attributes/general.md). For other decorators, you can create your own attributes.
 1. ***More forgiving syntax***: The C# compiler parses code more strictly than JavaScript requires.
 
-If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for C#. Blazor components can run on the server, as .NET assemblies, or on the client using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
+If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for C#. Blazor components can run on the server, as .NET assemblies, or on the client by using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
 
 ## Next steps
 

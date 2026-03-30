@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
 
  For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.
 
- When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](/iis/configuration/system.webServer/security/requestFiltering/requestLimits/)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 MB and the `maxReceivedMessageSize` property defaults to 64KB.
+ When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](/iis/configuration/system.webServer/security/requestFiltering/requestLimits/)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize*>). The `maxAllowedContentLength` property defaults to 28.6 MB and the `maxReceivedMessageSize` property defaults to 64KB.
 
 ## Encodings
 
@@ -193,7 +193,7 @@ class MyData
 
 ### Enabling Asynchronous Streaming
 
- To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> property to `true`. We have also added the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading possibly due to network congestion or are not reading at all. In these scenarios we now do not block individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.
+ To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled> property to `true`. We have also added the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading possibly due to network congestion or are not reading at all. In these scenarios we now do not block individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.
 
 ### Programming Model for Streamed Transfers
 

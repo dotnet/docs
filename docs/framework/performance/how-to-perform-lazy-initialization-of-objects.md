@@ -10,11 +10,11 @@ helpviewer_keywords:
 ---
 # How to: Perform lazy initialization of objects
 
-The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they're never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy initialization](lazy-initialization.md).
+The <xref:System.Lazy`1?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they're never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy initialization](lazy-initialization.md).
 
 ## Example 1
 
- The following example shows how to initialize a value with <xref:System.Lazy%601>. Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to `true` or `false`.
+ The following example shows how to initialize a value with <xref:System.Lazy`1>. Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to `true` or `false`.
 
 ```vb
 Dim someCondition As Boolean = False
@@ -64,7 +64,7 @@ End Sub
 
 ## Example 2
 
-The following example shows how to use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to initialize a type that is visible only to the current object instance on the current thread.
+The following example shows how to use the <xref:System.Threading.ThreadLocal`1?displayProperty=nameWithType> class to initialize a type that is visible only to the current object instance on the current thread.
 
 [!code-csharp[CDS#13](../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/cds2.cs#13)]
 [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]

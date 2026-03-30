@@ -110,11 +110,11 @@ Adds an X.509 certificate to the collection of scoped certificates.
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates%2A>
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates*>
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection>
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates*>
 - [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md)
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Securing Clients](../../../wcf/securing-clients.md)

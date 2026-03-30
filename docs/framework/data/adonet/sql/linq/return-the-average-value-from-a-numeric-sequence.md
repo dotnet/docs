@@ -9,7 +9,7 @@ ms.assetid: ee3b8673-a2e7-4b2d-9b5c-4972ff9e665d
 ---
 # Return the Average Value From a Numeric Sequence
 
-The <xref:System.Linq.Enumerable.Average%2A> operator computes the average of a sequence of numeric values.
+The <xref:System.Linq.Enumerable.Average*> operator computes the average of a sequence of numeric values.
 
 > [!NOTE]
 > The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of `Average` of integer values is computed as an integer, not as a double.

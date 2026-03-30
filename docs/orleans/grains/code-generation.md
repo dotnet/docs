@@ -74,7 +74,7 @@ In Orleans 7+, nothing happens during initialization. Code generation occurs onl
 
 :::zone target="docs" pivot="orleans-3-x"
 
-Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> extension method:
+Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*?displayProperty=nameWithType> extension method:
 
 :::code language="csharp" source="snippets-v3/code-generation/CodeGeneration.cs" id="with_code_generation":::
 

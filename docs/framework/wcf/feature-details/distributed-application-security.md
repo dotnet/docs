@@ -88,7 +88,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 
  For each of the client credential types, the WCF programming model allows you to specify the credential values and credential validators by using service behaviors and channel behaviors.
 
- WCF security has two types of credentials: service credential behaviors and channel credential behaviors. Credential behaviors in WCF specify the actual data, namely, credentials used to meet the security requirements expressed through bindings. In WCF, a client class is the runtime component that converts between operation invocation and messages. All clients inherit from the <xref:System.ServiceModel.ClientBase%601> class. The <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property on the base class allows you to specify various values of client credentials.
+ WCF security has two types of credentials: service credential behaviors and channel credential behaviors. Credential behaviors in WCF specify the actual data, namely, credentials used to meet the security requirements expressed through bindings. In WCF, a client class is the runtime component that converts between operation invocation and messages. All clients inherit from the <xref:System.ServiceModel.ClientBase`1> class. The <xref:System.ServiceModel.ClientBase`1.ClientCredentials> property on the base class allows you to specify various values of client credentials.
 
  In WCF, service behaviors are attributes applied to the class implementing a service contract (interface) to programmatically control the service. The <xref:System.ServiceModel.Description.ServiceCredentials> class allows you to specify certificates for service credential and client validation settings for various client credential types.
 
@@ -96,7 +96,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 
  The message security mode allows you to perform transfer security so that the service credential is configured at the client out of band. For example, if you are using a certificate stored in the Windows certificate store, you must use a tool such as a Microsoft Management Console (MMC) snap-in.
 
- The message security mode also allows you to perform transfer security so that the service credential is exchanged with the client as part of an initial negotiation. To enable negotiation, set the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property to `true`.
+ The message security mode also allows you to perform transfer security so that the service credential is exchanged with the client as part of an initial negotiation. To enable negotiation, set the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential> property to `true`.
 
 ## See also
 

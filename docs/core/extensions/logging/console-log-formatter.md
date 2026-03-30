@@ -15,7 +15,7 @@ In this article, you will learn about console log formatters. The sample source 
 
 - Register a new formatter.
 - Select a registered formatter to use, either through code or [configuration](../configuration.md).
-- Implement a custom formatter. You update configuration via <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> and enable custom color formatting.
+- Implement a custom formatter. You update configuration via <xref:Microsoft.Extensions.Options.IOptionsMonitor`1> and enable custom color formatting.
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
@@ -25,9 +25,9 @@ The [`Console` logging provider](providers.md#console) has several predefined fo
 
 | Available types | Method to register type |
 |-----------------|-------------------------|
-| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Json?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddJsonConsole%2A?displayProperty=nameWithType> |
-| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole%2A?displayProperty=nameWithType> |
-| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSystemdConsole%2A?displayProperty=nameWithType> |
+| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Json?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddJsonConsole*?displayProperty=nameWithType> |
+| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole*?displayProperty=nameWithType> |
+| <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSystemdConsole*?displayProperty=nameWithType> |
 
 ### Simple
 
@@ -118,8 +118,8 @@ To implement a custom formatter, you need to:
 
 - Create a subclass of <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatter> that represents your custom formatter.
 - Register your custom formatter with:
-  - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A?displayProperty=nameWithType>
-  - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter%60%602(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{%60%601})?displayProperty=nameWithType>
+  - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole*?displayProperty=nameWithType>
+  - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter``2(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{``1})?displayProperty=nameWithType>
 
 Create an extension method to handle this for you:
 
@@ -134,7 +134,7 @@ In the preceding code, the options are a subclass of <xref:Microsoft.Extensions.
 The `AddConsoleFormatter` API:
 
 - Registers a subclass of `ConsoleFormatter`.
-- Handles configuration. It uses a change token to synchronize updates, based on the [options pattern](../options.md), and the [IOptionsMonitor](xref:Microsoft.Extensions.Options.IOptionsMonitor%601) interface.
+- Handles configuration. It uses a change token to synchronize updates, based on the [options pattern](../options.md), and the [IOptionsMonitor](xref:Microsoft.Extensions.Options.IOptionsMonitor`1) interface.
 
 :::code language="csharp" source="../snippets/logging/console-formatter-custom/Program.cs" highlight="6-7":::
 
@@ -167,7 +167,7 @@ In the preceding JSON config file:
 - The `"FormatterOptions"` node defines a `"CustomPrefix"`, and `"CustomSuffix"`, as well as a few other derived options.
 
 > [!TIP]
-> The `$.Logging.Console.FormatterOptions` JSON path is reserved, and will map to a custom <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> when added using the <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter%2A> extension method. This provides the ability to define custom properties, in addition to the ones available.
+> The `$.Logging.Console.FormatterOptions` JSON path is reserved, and will map to a custom <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> when added using the <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter*> extension method. This provides the ability to define custom properties, in addition to the ones available.
 
 Consider the following `CustomDatePrefixingFormatter`:
 
@@ -177,7 +177,7 @@ In the preceding formatter implementation:
 
 - The `CustomWrappingConsoleFormatterOptions` are monitored for change, and updated accordingly.
 - Messages that are written are wrapped with the configured prefix, and suffix.
-- A timestamp is added after the prefix, but before the message using the configured <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.UseUtcTimestamp?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.TimestampFormat%2A?displayProperty=nameWithType> values.
+- A timestamp is added after the prefix, but before the message using the configured <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.UseUtcTimestamp?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.TimestampFormat*?displayProperty=nameWithType> values.
 
 To use custom configuration options, with custom formatter implementations, add when calling <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Logging.ILoggingBuilder})>.
 

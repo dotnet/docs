@@ -33,7 +33,7 @@ public static System.Collections.IEnumerable SomeNumbers()
 }
 ```
 
-The return type of an iterator method or `get` accessor can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
+The return type of an iterator method or `get` accessor can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator`1>.
 
 You can use a `yield break` statement to end the iteration.
 
@@ -71,7 +71,7 @@ public static System.Collections.Generic.IEnumerable<int>
 
 ## Creating a Collection Class
 
-In the following example, the `DaysOfTheWeek` class implements the <xref:System.Collections.IEnumerable> interface, which requires a <xref:System.Collections.IEnumerable.GetEnumerator%2A> method. The compiler implicitly calls the `GetEnumerator` method, which returns an <xref:System.Collections.IEnumerator>.
+In the following example, the `DaysOfTheWeek` class implements the <xref:System.Collections.IEnumerable> interface, which requires a <xref:System.Collections.IEnumerable.GetEnumerator*> method. The compiler implicitly calls the `GetEnumerator` method, which returns an <xref:System.Collections.IEnumerator>.
 
 The `GetEnumerator` method returns each string one at a time by using the `yield return` statement.
 
@@ -201,9 +201,9 @@ public class Zoo : IEnumerable
 
 ## Using Iterators with a Generic List
 
-In the following example, the <xref:System.Collections.Generic.Stack%601> generic class implements the <xref:System.Collections.Generic.IEnumerable%601> generic interface. The <xref:System.Collections.Generic.Stack%601.Push%2A> method assigns values to an array of type `T`. The <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method returns the array values by using the `yield return` statement.
+In the following example, the <xref:System.Collections.Generic.Stack`1> generic class implements the <xref:System.Collections.Generic.IEnumerable`1> generic interface. The <xref:System.Collections.Generic.Stack`1.Push*> method assigns values to an array of type `T`. The <xref:System.Collections.Generic.IEnumerable`1.GetEnumerator*> method returns the array values by using the `yield return` statement.
 
-In addition to the generic <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method, the non-generic <xref:System.Collections.IEnumerable.GetEnumerator%2A> method must also be implemented. This is because <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable>. The non-generic implementation defers to the generic implementation.
+In addition to the generic <xref:System.Collections.Generic.IEnumerable`1.GetEnumerator*> method, the non-generic <xref:System.Collections.IEnumerable.GetEnumerator*> method must also be implemented. This is because <xref:System.Collections.Generic.IEnumerable`1> inherits from <xref:System.Collections.IEnumerable>. The non-generic implementation defers to the generic implementation.
 
 The example uses named iterators to support various ways of iterating through the same collection of data. These named iterators are the `TopToBottom` and `BottomToTop` properties, and the `TopN` method.
 
@@ -331,11 +331,11 @@ Although you write an iterator as a method, the compiler translates it into a ne
 
 To see what the compiler does, you can use the Ildasm.exe tool to view the common intermediate language code that's generated for an iterator method.
 
-When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
+When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator`1> interface.
 
 On each successive iteration of the `foreach` loop (or the direct call to `IEnumerator.MoveNext`), the next iterator code body resumes after the previous `yield return` statement. It then continues to the next `yield return` statement until the end of the iterator body is reached, or until a `yield break` statement is encountered.
 
-Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset%2A> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
+Iterators don't support the <xref:System.Collections.IEnumerator.Reset*?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset*> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
 
 For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1515-synchronous-and-asynchronous-iterators).
 
@@ -345,13 +345,13 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - Modify the list sequence after the first `foreach` loop iteration.
 
-- Avoid fully loading a large list before the first iteration of a `foreach` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A> method, which implements iterators in .NET.
+- Avoid fully loading a large list before the first iteration of a `foreach` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles*> method, which implements iterators in .NET.
 
 - Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.
 
 ## See also
 
 - <xref:System.Collections.Generic>
-- <xref:System.Collections.Generic.IEnumerable%601>
+- <xref:System.Collections.Generic.IEnumerable`1>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
 - [Generics](../../fundamentals/types/generics.md)

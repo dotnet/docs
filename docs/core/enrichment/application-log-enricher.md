@@ -45,7 +45,7 @@ Follow these steps to configure the application log enricher in your application
 
 ### 1. Configure application metadata
 
-First, configure the [Application Metadata](../diagnostics/ambient-metadata/application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> methods:
+First, configure the [Application Metadata](../diagnostics/ambient-metadata/application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata*> methods:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);

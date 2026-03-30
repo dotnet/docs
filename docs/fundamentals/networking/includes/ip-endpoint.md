@@ -9,7 +9,7 @@ When working with <xref:System.Net.Sockets?displayProperty=fullName>, you repres
 
 TCP/IP uses a network address and a service port number to uniquely identify a service. The network address identifies a specific network destination; the port number identifies the specific service on that device to connect to. The combination of network address and service port is called an endpoint, which is represented in the .NET by the <xref:System.Net.EndPoint> class. A descendant of `EndPoint` is defined for each supported address family; for the IP address family, the class is <xref:System.Net.IPEndPoint>.
 
-The <xref:System.Net.Dns> class provides domain-name services to apps that use TCP/IP internet services. The <xref:System.Net.Dns.GetHostEntryAsync%2A> method queries a DNS server to map a user-friendly domain name (such as "host.contoso.com") to a numeric Internet address (such as `192.168.1.1`). `GetHostEntryAsync` returns a `Task<IPHostEntry>` that when awaited contains a list of addresses and aliases for the requested name. In most cases, you can use the first address returned in the <xref:System.Net.IPHostEntry.AddressList%2A> array. The following code gets an <xref:System.Net.IPAddress> containing the IP address for the server `host.contoso.com`.
+The <xref:System.Net.Dns> class provides domain-name services to apps that use TCP/IP internet services. The <xref:System.Net.Dns.GetHostEntryAsync*> method queries a DNS server to map a user-friendly domain name (such as "host.contoso.com") to a numeric Internet address (such as `192.168.1.1`). `GetHostEntryAsync` returns a `Task<IPHostEntry>` that when awaited contains a list of addresses and aliases for the requested name. In most cases, you can use the first address returned in the <xref:System.Net.IPHostEntry.AddressList*> array. The following code gets an <xref:System.Net.IPAddress> containing the IP address for the server `host.contoso.com`.
 
 ```csharp
 IPHostEntry ipHostInfo = await Dns.GetHostEntryAsync("host.contoso.com");
@@ -17,7 +17,7 @@ IPAddress ipAddress = ipHostInfo.AddressList[0];
 ```
 
 > [!TIP]
-> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync%2A> method with the resulting host name from the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address. Consider the following code snippet:
+> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync*> method with the resulting host name from the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address. Consider the following code snippet:
 >
 > ```csharp
 > var hostName = Dns.GetHostName();

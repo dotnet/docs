@@ -20,7 +20,7 @@ This article explains how to avoid performance problems when you use <xref:Syste
 
 ## Reuse JsonSerializerOptions instances
 
-If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. This guidance applies to code you write for custom converters and when you call <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>. It's safe to use the same instance across multiple threads. The metadata caches on the options instance are thread-safe, and the instance is immutable after the first serialization or deserialization.
+If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. This guidance applies to code you write for custom converters and when you call <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType>. It's safe to use the same instance across multiple threads. The metadata caches on the options instance are thread-safe, and the instance is immutable after the first serialization or deserialization.
 
 ## The `JsonSerializerOptions.Default` property
 
@@ -39,9 +39,9 @@ The metadata cache of the existing `JsonSerializerOptions` instance isn't copied
 
 The following options have different defaults for web apps:
 
-* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
+* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive*> = `true`
 * <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
-* <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
+* <xref:System.Text.Json.JsonSerializerOptions.NumberHandling*> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
 
 In .NET 9 and later versions, you can use the <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton to serialize with the default options that ASP.NET Core uses for web apps. In earlier versions, call the [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) to create a new instance with the web defaults, as shown in the following example:
 

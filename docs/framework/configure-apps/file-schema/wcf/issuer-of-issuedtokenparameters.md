@@ -48,8 +48,8 @@ Specifies the Security Token Service (STS) that issues security tokens.
 
 ## See also
 
-- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.AdditionalRequestParameters%2A>
+- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters>
+- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.AdditionalRequestParameters>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

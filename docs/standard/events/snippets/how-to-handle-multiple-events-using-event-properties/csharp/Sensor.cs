@@ -19,16 +19,16 @@ class Sensor
     // </EventHandlerListField>
 
     // <EventKeys>
-    static readonly object temperatureChangedKey  = new();
-    static readonly object humidityChangedKey     = new();
-    static readonly object pressureChangedKey     = new();
-    static readonly object batteryLowKey          = new();
-    static readonly object signalLostKey          = new();
-    static readonly object signalRestoredKey      = new();
-    static readonly object thresholdExceededKey   = new();
+    static readonly object temperatureChangedKey = new();
+    static readonly object humidityChangedKey = new();
+    static readonly object pressureChangedKey = new();
+    static readonly object batteryLowKey = new();
+    static readonly object signalLostKey = new();
+    static readonly object signalRestoredKey = new();
+    static readonly object thresholdExceededKey = new();
     static readonly object calibrationRequiredKey = new();
-    static readonly object dataReceivedKey        = new();
-    static readonly object errorDetectedKey       = new();
+    static readonly object dataReceivedKey = new();
+    static readonly object errorDetectedKey = new();
     // </EventKeys>
 
     // <SingleEventProperty>

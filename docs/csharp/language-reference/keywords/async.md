@@ -67,7 +67,7 @@ To run the code as a Windows Store app:
 An async method can have the following return types:
 
 - <xref:System.Threading.Tasks.Task>
-- <xref:System.Threading.Tasks.Task%601>
+- <xref:System.Threading.Tasks.Task`1>
 - [`void`](../builtin-types/void.md). Generally, avoid using `async void` methods for code other than event handlers because callers can't `await` those methods and must implement a different mechanism to report successful completion or error conditions.
 - Any type that has an accessible `GetAwaiter` method. The `System.Threading.Tasks.ValueTask<TResult>` type is one such implementation. It's available by adding the NuGet package `System.Threading.Tasks.Extensions`.
 

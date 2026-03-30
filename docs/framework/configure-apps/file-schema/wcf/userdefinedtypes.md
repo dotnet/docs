@@ -10,7 +10,7 @@ This section contains a collection of `userDefinedType` elements.
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes%2A>
+- <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes>
 - <xref:System.ServiceModel.Configuration.ComUdtElementCollection>
 - <xref:System.ServiceModel.Configuration.ComUdtElement>
 - [\<comContracts>](comcontracts.md)

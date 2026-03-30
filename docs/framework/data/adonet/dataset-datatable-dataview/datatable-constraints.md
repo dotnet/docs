@@ -9,7 +9,7 @@ ms.assetid: 27c9f2fd-f64d-4b4e-bbf6-1d24f47067cb
 ---
 # DataTable Constraints
 
-You can use constraints to enforce restrictions on the data in a <xref:System.Data.DataTable>, in order to maintain the integrity of the data. A constraint is an automatic rule, applied to a column or related columns, that determines the course of action when the value of a row is somehow altered. Constraints are enforced when the `System.Data.DataSet.EnforceConstraints` property of the <xref:System.Data.DataSet> is **true**. For a code example that shows how to set the `EnforceConstraints` property, see the <xref:System.Data.DataSet.EnforceConstraints%2A> reference topic.
+You can use constraints to enforce restrictions on the data in a <xref:System.Data.DataTable>, in order to maintain the integrity of the data. A constraint is an automatic rule, applied to a column or related columns, that determines the course of action when the value of a row is somehow altered. Constraints are enforced when the `System.Data.DataSet.EnforceConstraints` property of the <xref:System.Data.DataSet> is **true**. For a code example that shows how to set the `EnforceConstraints` property, see the <xref:System.Data.DataSet.EnforceConstraints*> reference topic.
 
  There are two kinds of constraints in ADO.NET: the <xref:System.Data.ForeignKeyConstraint> and the <xref:System.Data.UniqueConstraint>. By default, both constraints are created automatically when you create a relationship between two or more tables by adding a <xref:System.Data.DataRelation> to the **DataSet**. However, you can disable this behavior by specifying `createConstraints` = `false` when creating the relation.
 
@@ -17,7 +17,7 @@ You can use constraints to enforce restrictions on the data in a <xref:System.Da
 
  A `ForeignKeyConstraint` enforces rules about how updates and deletes to related tables are propagated. For example, if a value in a row of one table is updated or deleted, and that same value is also used in one or more related tables, a `ForeignKeyConstraint` determines what happens in the related tables.
 
- The <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> and <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> properties of the `ForeignKeyConstraint` define the action to be taken when the user attempts to delete or update a row in a related table. The following table describes the different settings available for the `DeleteRule` and `UpdateRule` properties of the **ForeignKeyConstraint**.
+ The <xref:System.Data.ForeignKeyConstraint.DeleteRule> and <xref:System.Data.ForeignKeyConstraint.UpdateRule> properties of the `ForeignKeyConstraint` define the action to be taken when the user attempts to delete or update a row in a related table. The following table describes the different settings available for the `DeleteRule` and `UpdateRule` properties of the **ForeignKeyConstraint**.
 
 |Rule setting|Description|
 |------------------|-----------------|
@@ -63,7 +63,7 @@ custDS.Tables["OrdersTable"].Constraints.Add(custOrderFK);
 
 ### Example
 
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets several of its properties, including the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A>, and adds it to the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable> object.
+ The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets several of its properties, including the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule>, and adds it to the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable> object.
 
  [!code-csharp[DataWorks Data.AcceptRejectRule#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.AcceptRejectRule/CS/source.cs#1)]
  [!code-vb[DataWorks Data.AcceptRejectRule#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.AcceptRejectRule/VB/source.vb#1)]

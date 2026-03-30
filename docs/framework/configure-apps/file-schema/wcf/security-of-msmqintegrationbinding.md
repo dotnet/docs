@@ -58,8 +58,8 @@ Defines the transport security settings for the Message Queuing (MSMQ) integrati
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>
-- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security%2A>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security*>
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security*>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
 - [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

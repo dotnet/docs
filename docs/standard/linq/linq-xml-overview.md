@@ -118,7 +118,7 @@ In addition to these LINQ capabilities, LINQ to XML provides an improved XML pro
 - Serialize XML to files or streams.
 - Create XML from scratch by using functional construction.
 - Query XML using XPath-like axes.
-- Manipulate the in-memory XML tree by using methods such as <xref:System.Xml.Linq.XContainer.Add%2A>, <xref:System.Xml.Linq.XNode.Remove%2A>, <xref:System.Xml.Linq.XNode.ReplaceWith%2A>, and <xref:System.Xml.Linq.XElement.SetValue%2A>.
+- Manipulate the in-memory XML tree by using methods such as <xref:System.Xml.Linq.XContainer.Add*>, <xref:System.Xml.Linq.XNode.Remove*>, <xref:System.Xml.Linq.XNode.ReplaceWith*>, and <xref:System.Xml.Linq.XElement.SetValue*>.
 - Validate XML trees using XSD.
 - Use a combination of these features to transform XML trees from one shape into another.
 

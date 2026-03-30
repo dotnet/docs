@@ -59,7 +59,7 @@ ms.assetid: 87170464-7857-41f1-bcf7-bb41be31cb53
 |Control Pattern/Control Pattern Property|Support/Value|Notes|
 |-----------------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.ISelectionItemProvider>|Yes|All radio button controls must support the Selection Item pattern to enable themselves to be selected.|
-|<xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer%2A>|See notes.|The `SelectionContainerProperty` must always be completed so that a UI Automation client can determine what other radio buttons within a specific context relate to one another.  For the Win32 version of the radio button, this property will not be supported because it is not possible to obtain this information from that legacy framework.|
+|<xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer>|See notes.|The `SelectionContainerProperty` must always be completed so that a UI Automation client can determine what other radio buttons within a specific context relate to one another.  For the Win32 version of the radio button, this property will not be supported because it is not possible to obtain this information from that legacy framework.|
 |<xref:System.Windows.Automation.Provider.IToggleProvider>|Never|The radio button cannot cycle through its state once it has been set.  This pattern must never be supported on radio button.|
 
 <a name="Required_UI_Automation_Events"></a>

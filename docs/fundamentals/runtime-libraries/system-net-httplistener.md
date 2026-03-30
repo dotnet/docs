@@ -28,7 +28,7 @@ In the more complex asynchronous model, your application does not block while wa
 
 In either model, incoming requests are accessed using the <xref:System.Net.HttpListenerContext.Request?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerRequest> objects. Similarly, responses are accessed using the <xref:System.Net.HttpListenerContext.Response?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerResponse> objects. These objects share some functionality with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> objects, but the latter objects cannot be used in conjunction with <xref:System.Net.HttpListener> because they implement client, not server, behaviors.
 
-An <xref:System.Net.HttpListener> can require client authentication. You can either specify a particular scheme to use for authentication, or you can specify a delegate that determines the scheme to use. You must require some form of authentication to obtain information about the client's identity. For additional information, see the <xref:System.Net.HttpListenerContext.User*>, <xref:System.Net.HttpListener.AuthenticationSchemes*>, and <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate*> properties.
+An <xref:System.Net.HttpListener> can require client authentication. You can either specify a particular scheme to use for authentication, or you can specify a delegate that determines the scheme to use. You must require some form of authentication to obtain information about the client's identity. For additional information, see the <xref:System.Net.HttpListenerContext.User>, <xref:System.Net.HttpListener.AuthenticationSchemes>, and <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate> properties.
 
 > [!NOTE]
 > If you create an <xref:System.Net.HttpListener> using https, you must select a Server Certificate for that listener. Otherwise, requests to this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection.
@@ -45,7 +45,7 @@ The <xref:System.Net.HttpListener> class is built on top of `HTTP.sys`, which is
 `HTTP.sys` provides connection management, bandwidth throttling, and web server logging.
 Use the [HttpCfg.exe](/windows/win32/http/httpcfg-exe) tool to add SSL certificates.
 
-Starting in .NET 11, the Windows `HTTP.sys` implementation of <xref:System.Net.HttpListener> supports enabling kernel-level response buffering. When enabled, response data is buffered by `HTTP.sys` before being sent to the client, which can improve throughput for high-latency connections. This can be enabled by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method as follows:
+Starting in .NET 11, the Windows `HTTP.sys` implementation of <xref:System.Net.HttpListener> supports enabling kernel-level response buffering. When enabled, response data is buffered by `HTTP.sys` before being sent to the client, which can improve throughput for high-latency connections. This can be enabled by calling the <xref:System.AppContext.SetSwitch*?displayProperty=nameWithType> method as follows:
 
    ```csharp
    AppContext.SetSwitch("System.Net.HttpListener.EnableKernelResponseBuffering", true);

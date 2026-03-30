@@ -63,7 +63,7 @@ When providing a service for multiple clients, you may have a service level agre
 
 ## Dynamic Configuration
 
-To support mission-critical systems, where messages must be processed without any service interruptions, it is vital that you be able to modify the configuration of components within the system at runtime. To support this need, the Routing Service provides an <xref:System.ServiceModel.IExtension%601> implementation, the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows dynamic updating of the Routing Service configuration at runtime.
+To support mission-critical systems, where messages must be processed without any service interruptions, it is vital that you be able to modify the configuration of components within the system at runtime. To support this need, the Routing Service provides an <xref:System.ServiceModel.IExtension`1> implementation, the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows dynamic updating of the Routing Service configuration at runtime.
 
 For more information about dynamic configuration of the Routing Service, see [Routing Introduction](routing-introduction.md).
 

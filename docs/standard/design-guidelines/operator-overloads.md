@@ -84,7 +84,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
 
 ### Overloading Operator ==
 
- Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+ Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals*?displayProperty=nameWithType>.
 
 ### Conversion Operators
 

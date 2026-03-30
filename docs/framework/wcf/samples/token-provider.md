@@ -199,7 +199,7 @@ The following steps show how to develop a custom token provider and integrate it
     }
     ```
 
-On the service, to display the caller's information, use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code example. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.
+On the service, to display the caller's information, use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity*> as shown in the following code example. The <xref:System.ServiceModel.ServiceSecurityContext.Current*> contains claims information about the current caller.
 
 ```csharp
 static void DisplayIdentityInformation()

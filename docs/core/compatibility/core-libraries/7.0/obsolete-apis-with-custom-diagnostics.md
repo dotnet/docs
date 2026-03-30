@@ -16,7 +16,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity |
 | - | - |
-| [SYSLIB0036](../../../../fundamentals/syslib-diagnostics/syslib0036.md) | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. | Warning |
+| [SYSLIB0036](../../../../fundamentals/syslib-diagnostics/syslib0036.md) | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. | Warning |
 | [SYSLIB0037](../../../../fundamentals/syslib-diagnostics/syslib0037.md) | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. | Warning |
 | [SYSLIB0038](../../../../fundamentals/syslib-diagnostics/syslib0038.md) | <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> is obsolete and should not be used. | Warning |
 | [SYSLIB0039](../../../../fundamentals/syslib-diagnostics/syslib0039.md) | TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType> to defer to OS defaults. | Warning |
@@ -46,7 +46,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ### SYSLIB0036
 
-- <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType>
 
 ### SYSLIB0037
 

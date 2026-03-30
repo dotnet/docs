@@ -33,7 +33,7 @@ Syntax nodes are one of the primary elements of syntax trees. These nodes repres
 
 All syntax nodes are non-terminal nodes in the syntax tree, which means they always have other nodes and tokens as children. As a child of another node, each node has a parent node that can be accessed through the <xref:Microsoft.CodeAnalysis.SyntaxNode.Parent?displayProperty=nameWithType> property. Because nodes and trees are immutable, the parent of a node never changes. The root of the tree has a null parent.
 
-Each node has a <xref:Microsoft.CodeAnalysis.SyntaxNode.ChildNodes?displayProperty=nameWithType> method, which returns a list of child nodes in sequential order based on their position in the source text. This list does not contain tokens. Each node also has methods to examine Descendants, such as <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes%2A>, <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens%2A>, or <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia%2A> - that represent a list of all the nodes, tokens, or trivia that exist in the subtree rooted by that node.
+Each node has a <xref:Microsoft.CodeAnalysis.SyntaxNode.ChildNodes?displayProperty=nameWithType> method, which returns a list of child nodes in sequential order based on their position in the source text. This list does not contain tokens. Each node also has methods to examine Descendants, such as <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes*>, <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens*>, or <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia*> - that represent a list of all the nodes, tokens, or trivia that exist in the subtree rooted by that node.
 
 In addition, each syntax node subclass exposes all the same children through strongly typed properties. For example, a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> node class has three additional properties specific to binary operators: <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>, <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken>, and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right>. The type of <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left> and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> is <xref:Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax>, and the type of <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken> is <xref:Microsoft.CodeAnalysis.SyntaxToken>.
 
@@ -65,11 +65,11 @@ Unlike syntax nodes and tokens, syntax trivia do not have parents. Yet, because 
 
 Each node, token, or trivia knows its position within the source text and the number of characters it consists of. A text position is represented as a 32-bit integer, which is a zero-based `char` index. A <xref:Microsoft.CodeAnalysis.Text.TextSpan> object is the beginning position and a count of characters, both represented as integers. If <xref:Microsoft.CodeAnalysis.Text.TextSpan> has a zero length, it refers to a location between two characters.
 
-Each node has two <xref:Microsoft.CodeAnalysis.Text.TextSpan> properties: <xref:Microsoft.CodeAnalysis.SyntaxNode.Span%2A> and <xref:Microsoft.CodeAnalysis.SyntaxNode.FullSpan%2A>.
+Each node has two <xref:Microsoft.CodeAnalysis.Text.TextSpan> properties: <xref:Microsoft.CodeAnalysis.SyntaxNode.Span*> and <xref:Microsoft.CodeAnalysis.SyntaxNode.FullSpan*>.
 
-The <xref:Microsoft.CodeAnalysis.SyntaxNode.Span%2A> property is the text span from the start of the first token in the node's subtree to the end of the last token. This span does not include any leading or trailing trivia.
+The <xref:Microsoft.CodeAnalysis.SyntaxNode.Span> property is the text span from the start of the first token in the node's subtree to the end of the last token. This span does not include any leading or trailing trivia.
 
-The <xref:Microsoft.CodeAnalysis.SyntaxNode.FullSpan%2A> property is the text span that includes the node's normal span, plus the span of any leading or trailing trivia.
+The <xref:Microsoft.CodeAnalysis.SyntaxNode.FullSpan> property is the text span that includes the node's normal span, plus the span of any leading or trailing trivia.
 
 For example:
 
@@ -85,14 +85,14 @@ The statement node inside the block has a span indicated by the single vertical 
 
 ## Kinds
 
-Each node, token, or trivia has a <xref:Microsoft.CodeAnalysis.SyntaxNode.RawKind?displayProperty=nameWithType> property, of type <xref:System.Int32?displayProperty=nameWithType>, that identifies the exact syntax element represented. This value can be cast to a language-specific enumeration. Each language, C# or Visual Basic, has a single `SyntaxKind` enumeration  (<xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind?displayProperty=nameWithType> and <xref:Microsoft.CodeAnalysis.VisualBasic.SyntaxKind?displayProperty=nameWithType>, respectively) that lists all the possible nodes, tokens, and trivia elements in the grammar. This conversion can be done automatically by accessing the <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind%2A?displayProperty=nameWithType> or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicExtensions.Kind%2A?displayProperty=nameWithType> extension methods.
+Each node, token, or trivia has a <xref:Microsoft.CodeAnalysis.SyntaxNode.RawKind?displayProperty=nameWithType> property, of type <xref:System.Int32?displayProperty=nameWithType>, that identifies the exact syntax element represented. This value can be cast to a language-specific enumeration. Each language, C# or Visual Basic, has a single `SyntaxKind` enumeration  (<xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind?displayProperty=nameWithType> and <xref:Microsoft.CodeAnalysis.VisualBasic.SyntaxKind?displayProperty=nameWithType>, respectively) that lists all the possible nodes, tokens, and trivia elements in the grammar. This conversion can be done automatically by accessing the <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*?displayProperty=nameWithType> or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicExtensions.Kind*?displayProperty=nameWithType> extension methods.
 
 The <xref:Microsoft.CodeAnalysis.SyntaxToken.RawKind> property allows for easy disambiguation of syntax node types that share the same node class. For tokens and trivia, this property is the only way to distinguish one type of element from another.
 
-For example, a single <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> class has <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>, <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken>, and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> as children. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind%2A> property distinguishes whether it is an <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.AddExpression>, <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.SubtractExpression>, or <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.MultiplyExpression> kind of syntax node.
+For example, a single <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> class has <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>, <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken>, and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> as children. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*> method distinguishes whether it's an <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.AddExpression>, <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.SubtractExpression>, or <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.MultiplyExpression> kind of syntax node.
 
 > [!TIP]
-> It's recommended to check kinds using <xref:Microsoft.CodeAnalysis.CSharpExtensions.IsKind%2A> (for C#) or <xref:Microsoft.CodeAnalysis.VisualBasicExtensions.IsKind%2A> (for VB) extension methods.
+> It's recommended to check kinds using <xref:Microsoft.CodeAnalysis.CSharpExtensions.IsKind*> (for C#) or <xref:Microsoft.CodeAnalysis.VisualBasicExtensions.IsKind*> (for VB) extension methods.
 
 ## Errors
 

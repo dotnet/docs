@@ -16,7 +16,7 @@ The following methods are obsolete, starting in .NET 8. Calling them in code gen
 
 ## Workaround
 
-Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead.
+Use <xref:System.Security.Cryptography.RSA.Encrypt*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt*?displayProperty=nameWithType> instead.
 
 ## Suppress a warning
 

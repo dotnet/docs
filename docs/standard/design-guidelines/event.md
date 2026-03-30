@@ -21,7 +21,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
 
  ✔️ DO use the term "raise" for events rather than "fire" or "trigger."
 
- ✔️ DO use <xref:System.EventHandler%601?displayProperty=nameWithType> instead of manually creating new delegates to be used as event handlers.
+ ✔️ DO use <xref:System.EventHandler`1?displayProperty=nameWithType> instead of manually creating new delegates to be used as event handlers.
 
  ✔️ CONSIDER using a subclass of <xref:System.EventArgs> as the event argument, unless you are absolutely sure the event will never need to carry any data to the event handling method, in which case you can use the `EventArgs` type directly.
 

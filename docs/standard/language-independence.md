@@ -297,7 +297,7 @@ CLS-compliant enumerations must follow these rules:
 
   For more information, see the documentation for the <xref:System.Enum> structure.
 
-- The value of an enumeration is not limited to the range of its specified values. In other words, the range of values in an enumeration is the range of its underlying value. You can use the <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method to determine whether a specified value is a member of an enumeration.
+- The value of an enumeration is not limited to the range of its specified values. In other words, the range of values in an enumeration is the range of its underlying value. You can use the <xref:System.Enum.IsDefined*?displayProperty=nameWithType> method to determine whether a specified value is a member of an enumeration.
 
 ### Type members in general
 
@@ -363,7 +363,7 @@ Constructors in CLS-compliant classes and structures must follow these rules:
   [!code-csharp[Conceptual.CLSCompliant#11](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/ctor1.cs#11)]
   [!code-vb[Conceptual.CLSCompliant#11](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/ctor1.vb#11)]
 
-* An object constructor cannot be called except to create an object. In addition, an object cannot be initialized twice. For example, this means that <xref:System.Object.MemberwiseClone%2A?displayProperty=nameWithType> and deserialization methods must not call constructors.
+* An object constructor cannot be called except to create an object. In addition, an object cannot be initialized twice. For example, this means that <xref:System.Object.MemberwiseClone*?displayProperty=nameWithType> and deserialization methods must not call constructors.
 
 ### Properties
 

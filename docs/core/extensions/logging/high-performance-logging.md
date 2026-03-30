@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 For high-performance logging scenarios in .NET 6 and later versions, use the <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> with [compile-time source generation](source-generation.md). This approach provides the best performance by eliminating boxing, temporary allocations, and message template parsing at runtime.
 
-Source-generated logging provides the following performance advantages over [logger extension methods](xref:Microsoft.Extensions.Logging.LoggerExtensions), such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A>:
+Source-generated logging provides the following performance advantages over [logger extension methods](xref:Microsoft.Extensions.Logging.LoggerExtensions), such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug*>:
 
 - **Eliminates boxing:** Logger extension methods require "boxing" (converting) value types, such as `int`, into `object`. Source-generated logging avoids boxing by using strongly typed parameters.
 - **Parses templates at compile time:** Logger extension methods must parse the message template (named format string) every time a log message is written. Source-generated logging parses templates once at compile time.
@@ -135,9 +135,9 @@ info: WorkerServiceOptions.Example.Worker[1]
 
 ## Legacy approach: LoggerMessage.Define (for .NET Framework and .NET Core 3.1)
 
-Before source-generated logging was introduced in .NET 6, the recommended high-performance logging approach was to use the <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method to create cacheable delegates. While this approach is still supported for backward compatibility, new code should use source-generated logging with `LoggerMessageAttribute` instead.
+Before source-generated logging was introduced in .NET 6, the recommended high-performance logging approach was to use the <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*?displayProperty=nameWithType> method to create cacheable delegates. While this approach is still supported for backward compatibility, new code should use source-generated logging with `LoggerMessageAttribute` instead.
 
-The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionality to create cacheable delegates that require fewer object allocations and reduced computational overhead compared to [logger extension methods](xref:Microsoft.Extensions.Logging.LoggerExtensions), such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A>. <xref:Microsoft.Extensions.Logging.LoggerMessage> provides the following performance advantages over logger extension methods:
+The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionality to create cacheable delegates that require fewer object allocations and reduced computational overhead compared to [logger extension methods](xref:Microsoft.Extensions.Logging.LoggerExtensions), such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug*>. <xref:Microsoft.Extensions.Logging.LoggerMessage> provides the following performance advantages over logger extension methods:
 
 - Logger extension methods require "boxing" (converting) value types, such as `int`, into `object`. The <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern avoids boxing by using static <xref:System.Action> fields and extension methods with strongly typed parameters.
 - Logger extension methods must parse the message template (named format string) every time a log message is written. <xref:Microsoft.Extensions.Logging.LoggerMessage> only requires parsing a template once when the message is defined.
@@ -147,9 +147,9 @@ The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionalit
 
 ### Define a logger message
 
-Use [Define(LogLevel, EventId, String)](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A) to create an <xref:System.Action> delegate for logging a message. <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A> overloads permit passing up to six type parameters to a named format string (template).
+Use [Define(LogLevel, EventId, String)](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A) to create an <xref:System.Action> delegate for logging a message. <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*> overloads permit passing up to six type parameters to a named format string (template).
 
-The string provided to the <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A> method is a template and not an interpolated string. Placeholders are filled in the order that the types are specified. Placeholder names in the template should be descriptive and consistent across templates. They serve as property names within structured log data. We recommend [Pascal casing](../../../standard/design-guidelines/capitalization-conventions.md) for placeholder names. For example, `{Item}`, `{DateTime}`.
+The string provided to the <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*> method is a template and not an interpolated string. Placeholders are filled in the order that the types are specified. Placeholder names in the template should be descriptive and consistent across templates. They serve as property names within structured log data. We recommend [Pascal casing](../../../standard/design-guidelines/capitalization-conventions.md) for placeholder names. For example, `{Item}`, `{DateTime}`.
 
 Each log message is an <xref:System.Action> held in a static field created by [LoggerMessage.Define](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A). For example, the sample app creates a field to describe a log message for the processing of work items:
 
@@ -169,7 +169,7 @@ As work items are dequeued for processing, the worker service app sets the:
 
 :::code language="csharp" source="../snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
-The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define an <xref:System.Action> delegate, which represents a log message.
+The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define*?displayProperty=nameWithType> method is used to configure and define an <xref:System.Action> delegate, which represents a log message.
 
 Structured logging stores can use the event name when it's supplied with the event ID to enrich logging. For example, [Serilog](https://github.com/serilog/serilog-extensions-logging) uses the event name.
 
@@ -212,7 +212,7 @@ info: WorkerServiceOptions.Example.Worker[1]
 
 ## Log-level guarded optimizations
 
-You can optimize performance by checking the <xref:Microsoft.Extensions.Logging.LogLevel> with <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> before invoking the corresponding `Log*` method. When logging isn't configured for the given `LogLevel`, <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> isn't called. In addition, value-type boxing and an allocation of `object[]` (to represent the parameters) are avoided.
+You can optimize performance by checking the <xref:Microsoft.Extensions.Logging.LogLevel> with <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> before invoking the corresponding `Log*` method. When logging isn't configured for the given `LogLevel`, <xref:Microsoft.Extensions.Logging.ILogger.Log*?displayProperty=nameWithType> isn't called. In addition, value-type boxing and an allocation of `object[]` (to represent the parameters) are avoided.
 
 For more information, see:
 

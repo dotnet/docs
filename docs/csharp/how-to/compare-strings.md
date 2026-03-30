@@ -33,14 +33,14 @@ When you compare strings, you define an order among them. Comparisons are used t
 
 By default, the most common operations:
 
-- <xref:System.String.Equals%2A?displayProperty=nameWithType>
-- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively perform a case-sensitive, ordinal comparison. <xref:System.String.Equals%2A?displayProperty=nameWithType> has an overload where a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
+- <xref:System.String.Equals*?displayProperty=nameWithType>
+- <xref:System.String.op_Equality*?displayProperty=nameWithType> and <xref:System.String.op_Inequality*?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively perform a case-sensitive, ordinal comparison. <xref:System.String.Equals*?displayProperty=nameWithType> has an overload where a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
 
 :::code language="csharp" source="./snippets/strings/CompareStrings.cs" id="Snippet1":::
 
 The default ordinal comparison doesn't take linguistic rules into account when comparing strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive.
 
-The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-aware linguistic comparison using the current culture. Make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
+The test for equality with <xref:System.String.Equals*?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo*?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-aware linguistic comparison using the current culture. Make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
 
 You can use the [`is`](../language-reference/operators/is.md) operator and a [constant pattern](../language-reference/operators/patterns.md#constant-pattern) as an alternative to `==` when the right operand is a constant.
 
@@ -55,7 +55,7 @@ These methods use the casing conventions of the [invariant culture](xref:System.
 
 ## Linguistic comparisons
 
-Many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs. This linguistic comparison is sometimes referred to as "word sort order." When you perform a linguistic comparison, some nonalphanumeric Unicode characters might have special weights assigned. For example, the hyphen "-" might have a small weight assigned to it so that "co-op" and "coop" appear next to each other in sort order. Some nonprinting control characters might be ignored. In addition, some Unicode characters might be equivalent to a sequence of <xref:System.Char> instances. The following example uses the phrase "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically (in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US" and "de-DE" cultures.
+Many string comparison methods (such as <xref:System.String.StartsWith*?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs. This linguistic comparison is sometimes referred to as "word sort order." When you perform a linguistic comparison, some nonalphanumeric Unicode characters might have special weights assigned. For example, the hyphen "-" might have a small weight assigned to it so that "co-op" and "coop" appear next to each other in sort order. Some nonprinting control characters might be ignored. In addition, some Unicode characters might be equivalent to a sequence of <xref:System.Char> instances. The following example uses the phrase "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically (in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US" and "de-DE" cultures.
 
 :::code language="csharp" source="./snippets/strings/CompareStrings.cs" id="Snippet3":::
 
@@ -83,7 +83,7 @@ Once the array is sorted, you can search for entries using a binary search. A bi
 
 ## Ordinal sorting and searching in collections
 
-The following code uses the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> collection class to store strings. The strings are sorted using the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method. This method needs a delegate that compares and orders two strings. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method provides that comparison function. Run the sample and observe the order. This sort operation uses an ordinal case-sensitive sort. You would use the static <xref:System.String.Compare%2A?displayProperty=nameWithType> methods to specify different comparison rules.
+The following code uses the <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> collection class to store strings. The strings are sorted using the <xref:System.Collections.Generic.List`1.Sort*?displayProperty=nameWithType> method. This method needs a delegate that compares and orders two strings. The <xref:System.String.CompareTo*?displayProperty=nameWithType> method provides that comparison function. Run the sample and observe the order. This sort operation uses an ordinal case-sensitive sort. You would use the static <xref:System.String.Compare*?displayProperty=nameWithType> methods to specify different comparison rules.
 
 :::code language="csharp" source="./snippets/strings/CompareStrings.cs" id="Snippet7":::
 
@@ -93,7 +93,7 @@ Once sorted, the list of strings can be searched using a binary search. The foll
 
 Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results.
 
-Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
+Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary`2?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
 
 ## See also
 

@@ -12,7 +12,7 @@ ms.custom:
 
 Kubernetes is a popular choice for hosting Orleans applications. Orleans runs in Kubernetes without specific configuration; however, it can also take advantage of extra knowledge the hosting platform provides.
 
-The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) package adds integration for hosting an Orleans application in a Kubernetes cluster. The package provides an extension method, <xref:Orleans.Hosting.KubernetesHostingExtensions.UseKubernetesHosting%2A>, performing the following actions:
+The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) package adds integration for hosting an Orleans application in a Kubernetes cluster. The package provides an extension method, <xref:Orleans.Hosting.KubernetesHostingExtensions.UseKubernetesHosting*>, performing the following actions:
 
 - Sets <xref:Orleans.Configuration.SiloOptions.SiloName?displayProperty=nameWithType> to the pod name.
 - Sets <xref:Orleans.Configuration.EndpointOptions.AdvertisedIPAddress?displayProperty=nameWithType> to the pod IP.

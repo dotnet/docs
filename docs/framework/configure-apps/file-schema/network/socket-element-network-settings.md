@@ -57,9 +57,9 @@ Specifies whether socket operations use completion ports.
 
  The default value for the `alwaysUseCompletionPortsForAccept` and `alwaysUseCompletionPortsForConnect` attributes is **false**.
 
- The <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> can be used to get the current value of the `alwaysUseCompletionPortsForAccept` attribute from applicable configuration files. The <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect%2A> can be used to get the current value of the `alwaysUseCompletionPortsForConnect` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept*> can be used to get the current value of the `alwaysUseCompletionPortsForAccept` attribute from applicable configuration files. The <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect*> can be used to get the current value of the `alwaysUseCompletionPortsForConnect` attribute from applicable configuration files.
 
- The `ipProtectionLevel` attribute specifies the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> to use for a socket. The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required.
+ The `ipProtectionLevel` attribute specifies the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> to use for a socket. The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required.
 
  This `ipProtectionLevel` attribute setting affects only initial incoming traffic:
 
@@ -80,7 +80,7 @@ Specifies whether socket operations use completion ports.
 
  The default value for the `ipProtectionLevel` attribute is **Unspecified**.
 
- The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property can be used to get the current value of the `ipProtectionLevel` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel> property can be used to get the current value of the `ipProtectionLevel` attribute from applicable configuration files.
 
 ## Configuration Files
 

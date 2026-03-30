@@ -27,7 +27,7 @@ You define a *record* by declaring a type with the `record` keyword, modifying a
 - A virtual `Equals` method whose parameter is the record type.
 - An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>.
 - Methods for `operator ==` and `operator !=`.
-- Record types implement <xref:System.IEquatable%601?displayProperty=nameWithType>.
+- Record types implement <xref:System.IEquatable`1?displayProperty=nameWithType>.
 
 Records also provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You explore those members as you write the code for this tutorial. Records support `with` expressions to enable nondestructive mutation of records.
 
@@ -94,7 +94,7 @@ CoolingDegreeDays { BaseTemperature = 65, TempRecords = record_types.DailyTemper
 
 ## Define compiler-synthesized methods
 
-Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you might want to replace some of the synthesized methods for records. You can declare your own version of any of the compiler-synthesized methods in a record type except the clone method. The clone method has a compiler-generated name and you can't provide a different implementation. These synthesized methods include a copy constructor, the members of the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, equality and inequality tests, and <xref:System.Object.GetHashCode>. For this purpose, you synthesize `PrintMembers`. You could also declare your own `ToString`, but `PrintMembers` provides a better option for inheritance scenarios. To provide your own version of a synthesized method, the signature must match the synthesized method.
+Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you might want to replace some of the synthesized methods for records. You can declare your own version of any of the compiler-synthesized methods in a record type except the clone method. The clone method has a compiler-generated name and you can't provide a different implementation. These synthesized methods include a copy constructor, the members of the <xref:System.IEquatable`1?displayProperty=nameWithType> interface, equality and inequality tests, and <xref:System.Object.GetHashCode>. For this purpose, you synthesize `PrintMembers`. You could also declare your own `ToString`, but `PrintMembers` provides a better option for inheritance scenarios. To provide your own version of a synthesized method, the signature must match the synthesized method.
 
 The `TempRecords` element in the console output isn't useful. It displays the type, but nothing else. You can change this behavior by providing your own implementation of the synthesized `PrintMembers` method. The signature depends on modifiers applied to the `record` declaration:
 

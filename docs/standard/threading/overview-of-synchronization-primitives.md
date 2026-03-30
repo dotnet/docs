@@ -2,7 +2,7 @@
 title: "Overview of synchronization primitives"
 description: "Learn about .NET thread synchronization primitives used to synchronize access to a shared resource or control thread interaction"
 ms.date: "10/01/2018"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "synchronization, threads"
   - "threading [.NET],synchronizing threads"
   - "managed threading"
@@ -23,7 +23,7 @@ Multiple .NET synchronization primitives derive from the <xref:System.Threading.
 - <xref:System.Threading.Semaphore?displayProperty=nameWithType>, which limits the number of threads that can access a shared resource or a pool of resources concurrently. The state of a semaphore is set to signaled when its count is greater than zero, and nonsignaled when its count is zero.
 - <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType>, which represents a thread synchronization event and can be either in a signaled or unsignaled state.
 - <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, resets automatically to an unsignaled state after releasing a single waiting thread.
-- <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, stays in a signaled state until the <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.
+- <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, stays in a signaled state until the <xref:System.Threading.EventWaitHandle.Reset*> method is called.
 
 In .NET Framework, because <xref:System.Threading.WaitHandle> derives from <xref:System.MarshalByRefObject?displayProperty=nameWithType>, these types can be used to synchronize the activities of threads across application domain boundaries.
 
@@ -45,21 +45,21 @@ Some of those types are alternatives to the types derived from <xref:System.Thre
 
 ### Monitor class
 
-The <xref:System.Threading.Monitor?displayProperty=nameWithType> class grants mutually exclusive access to a shared resource by acquiring or releasing a lock on the object that identifies the resource. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> method waits until the lock is released. The <xref:System.Threading.Monitor.Enter%2A> method acquires a released lock. You can also use the <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> method to specify the amount of time during which a thread attempts to acquire a lock. Because the <xref:System.Threading.Monitor> class has thread affinity, the thread that acquired a lock must release the lock by calling the <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> method.
+The <xref:System.Threading.Monitor?displayProperty=nameWithType> class grants mutually exclusive access to a shared resource by acquiring or releasing a lock on the object that identifies the resource. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and the <xref:System.Threading.Monitor.Enter*?displayProperty=nameWithType> method waits until the lock is released. The <xref:System.Threading.Monitor.Enter*> method acquires a released lock. You can also use the <xref:System.Threading.Monitor.TryEnter*?displayProperty=nameWithType> method to specify the amount of time during which a thread attempts to acquire a lock. Because the <xref:System.Threading.Monitor> class has thread affinity, the thread that acquired a lock must release the lock by calling the <xref:System.Threading.Monitor.Exit*?displayProperty=nameWithType> method.
 
-You can coordinate the interaction of threads that acquire a lock on the same object by using the <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType>, and <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> methods.
+You can coordinate the interaction of threads that acquire a lock on the same object by using the <xref:System.Threading.Monitor.Wait*?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Pulse*?displayProperty=nameWithType>, and <xref:System.Threading.Monitor.PulseAll*?displayProperty=nameWithType> methods.
 
 For more information, see the <xref:System.Threading.Monitor> API reference.
 
 > [!NOTE]
-> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods and a `try…finally` block to ensure that the acquired lock is always released.
+> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> methods and a `try…finally` block to ensure that the acquired lock is always released.
 
 ### Mutex class
 
-The <xref:System.Threading.Mutex?displayProperty=nameWithType> class, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource. Use one of the [Mutex.WaitOne](<xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>) method overloads to request the ownership of a mutex. Like <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> has thread affinity and the thread that acquired a mutex must release it by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A?displayProperty=nameWithType> method.
+The <xref:System.Threading.Mutex?displayProperty=nameWithType> class, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource. Use one of the [Mutex.WaitOne](<xref:System.Threading.WaitHandle.WaitOne*?displayProperty=nameWithType>) method overloads to request the ownership of a mutex. Like <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> has thread affinity and the thread that acquired a mutex must release it by calling the <xref:System.Threading.Mutex.ReleaseMutex*?displayProperty=nameWithType> method.
 
-Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex, which is visible throughout the operating system. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor%2A>) that specifies a name. You can also call the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=nameWithType> method to open an existing named system mutex.
-  
+Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex, which is visible throughout the operating system. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor*>) that specifies a name. You can also call the <xref:System.Threading.Mutex.OpenExisting*?displayProperty=nameWithType> method to open an existing named system mutex.
+
 For more information, see the [Mutexes](mutexes.md) article and the <xref:System.Threading.Mutex> API reference.
 
 ### SpinLock structure
@@ -70,8 +70,8 @@ For more information about the benefits and drawbacks of using spin lock, see th
 
 ### ReaderWriterLockSlim class
 
-The <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class grants exclusive access to a shared resource for writing and allows multiple threads to access the resource simultaneously for reading. You might want to use <xref:System.Threading.ReaderWriterLockSlim> to synchronize access to a shared data structure that supports thread-safe read operations, but requires exclusive access to perform write operation. When a thread requests exclusive access (for example, by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> method), subsequent reader and writer requests block until all existing readers have exited the lock, and the writer has entered and exited the lock.
-  
+The <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class grants exclusive access to a shared resource for writing and allows multiple threads to access the resource simultaneously for reading. You might want to use <xref:System.Threading.ReaderWriterLockSlim> to synchronize access to a shared data structure that supports thread-safe read operations, but requires exclusive access to perform write operation. When a thread requests exclusive access (for example, by calling the <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock*?displayProperty=nameWithType> method), subsequent reader and writer requests block until all existing readers have exited the lock, and the writer has entered and exited the lock.
+
 For more information, see the <xref:System.Threading.ReaderWriterLockSlim> API reference.
 
 ### Semaphore and SemaphoreSlim classes
@@ -80,13 +80,13 @@ The <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:Sys
 
 <xref:System.Threading.SemaphoreSlim> is a lightweight alternative to <xref:System.Threading.Semaphore> and can be used only for synchronization within a single process boundary.
 
-On Windows, you can use <xref:System.Threading.Semaphore> for the inter-process synchronization. To do that, create a <xref:System.Threading.Semaphore> instance that represents a named system semaphore by using one of the [Semaphore constructors](<xref:System.Threading.Semaphore.%23ctor%2A>) that specifies a name or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method. <xref:System.Threading.SemaphoreSlim> doesn't support named system semaphores.
+On Windows, you can use <xref:System.Threading.Semaphore> for the inter-process synchronization. To do that, create a <xref:System.Threading.Semaphore> instance that represents a named system semaphore by using one of the [Semaphore constructors](<xref:System.Threading.Semaphore.%23ctor*>) that specifies a name or the <xref:System.Threading.Semaphore.OpenExisting*?displayProperty=nameWithType> method. <xref:System.Threading.SemaphoreSlim> doesn't support named system semaphores.
 
 For more information, see the [Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md) article and the <xref:System.Threading.Semaphore> or <xref:System.Threading.SemaphoreSlim> API reference.
 
 ## Thread interaction, or signaling
 
-Thread interaction (or thread signaling) means that a thread must wait for notification, or a signal, from one or more threads in order to proceed. For example, if thread A calls the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method of thread B, thread A is blocked until thread B completes. The synchronization primitives described in the preceding section provide a different mechanism for signaling: by releasing a lock, a thread notifies another thread that it can proceed by acquiring the lock.
+Thread interaction (or thread signaling) means that a thread must wait for notification, or a signal, from one or more threads in order to proceed. For example, if thread A calls the <xref:System.Threading.Thread.Join*?displayProperty=nameWithType> method of thread B, thread A is blocked until thread B completes. The synchronization primitives described in the preceding section provide a different mechanism for signaling: by releasing a lock, a thread notifies another thread that it can proceed by acquiring the lock.
 
 This section describes additional signaling constructs provided by .NET.
 
@@ -94,20 +94,20 @@ This section describes additional signaling constructs provided by .NET.
 
 The <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType> class represents a thread synchronization event.
 
-A synchronization event can be either in an unsignaled or signaled state. When the state of an event is unsignaled, a thread that calls the event's <xref:System.Threading.WaitHandle.WaitOne%2A?> overload is blocked until an event is signaled. The <xref:System.Threading.EventWaitHandle.Set%2A?displayProperty=nameWithType> method sets the state of an event to signaled.
+A synchronization event can be either in an unsignaled or signaled state. When the state of an event is unsignaled, a thread that calls the event's <xref:System.Threading.WaitHandle.WaitOne*?> overload is blocked until an event is signaled. The <xref:System.Threading.EventWaitHandle.Set*?displayProperty=nameWithType> method sets the state of an event to signaled.
 
 The behavior of an <xref:System.Threading.EventWaitHandle> that has been signaled depends on its reset mode:
 
 - An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag resets automatically after releasing a single waiting thread. It's like a turnstile that allows only one thread through each time it's signaled. The <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> class, which derives from <xref:System.Threading.EventWaitHandle>, represents that behavior.
-- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called. It's like a gate that is closed until signaled and then stays open until someone closes it. The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class, which derives from <xref:System.Threading.EventWaitHandle>, represents that behavior. The <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight alternative to <xref:System.Threading.ManualResetEvent>.
+- An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset*> method is called. It's like a gate that is closed until signaled and then stays open until someone closes it. The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class, which derives from <xref:System.Threading.EventWaitHandle>, represents that behavior. The <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight alternative to <xref:System.Threading.ManualResetEvent>.
 
-On Windows, you can use <xref:System.Threading.EventWaitHandle> for the inter-process synchronization. To do that, create an <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method.
+On Windows, you can use <xref:System.Threading.EventWaitHandle> for the inter-process synchronization. To do that, create an <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor*>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting*?displayProperty=nameWithType> method.
 
 For more information, see the [EventWaitHandle](eventwaithandle.md) article. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
 
 ### CountdownEvent class
 
-The <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> class represents an event that becomes set when its count is zero. While <xref:System.Threading.CountdownEvent.CurrentCount?displayProperty=nameWithType> is greater than zero, a thread that calls <xref:System.Threading.CountdownEvent.Wait%2A?displayProperty=nameWithType> is blocked. Call <xref:System.Threading.CountdownEvent.Signal%2A?displayProperty=nameWithType> to decrement an event's count.
+The <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> class represents an event that becomes set when its count is zero. While <xref:System.Threading.CountdownEvent.CurrentCount?displayProperty=nameWithType> is greater than zero, a thread that calls <xref:System.Threading.CountdownEvent.Wait*?displayProperty=nameWithType> is blocked. Call <xref:System.Threading.CountdownEvent.Signal*?displayProperty=nameWithType> to decrement an event's count.
 
 In contrast to <xref:System.Threading.ManualResetEvent> or <xref:System.Threading.ManualResetEventSlim>, which you can use to unblock multiple threads with a signal from one thread, you can use <xref:System.Threading.CountdownEvent> to unblock one or more threads with signals from multiple threads.
 
@@ -115,7 +115,7 @@ For more information, see the [CountdownEvent](countdownevent.md) article and th
 
 ### Barrier class
 
-The <xref:System.Threading.Barrier?displayProperty=nameWithType> class represents a thread execution barrier. A thread that calls the <xref:System.Threading.Barrier.SignalAndWait%2A?displayProperty=nameWithType> method signals that it reached the barrier and waits until other participant threads reach the barrier. When all participant threads reach the barrier, they proceed and the barrier is reset and can be used again.
+The <xref:System.Threading.Barrier?displayProperty=nameWithType> class represents a thread execution barrier. A thread that calls the <xref:System.Threading.Barrier.SignalAndWait*?displayProperty=nameWithType> method signals that it reached the barrier and waits until other participant threads reach the barrier. When all participant threads reach the barrier, they proceed and the barrier is reset and can be used again.
 
 You might use <xref:System.Threading.Barrier> when one or more threads require the results of other threads before proceeding to the next computation phase.
 

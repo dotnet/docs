@@ -2,7 +2,7 @@
 title: "Type equivalence and embedded interop types"
 description: Understand type equivalence between .NET types and members with a managed assembly, and COM types that are embedded into that assembly. For .NET 4 and above.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "type equivalence"
   - "embedded interop types"
   - "primary interop assemblies,not necessary in CLR version 4"
@@ -30,13 +30,13 @@ Type equivalence means that a COM object that is passed from one managed assembl
 
 ### Type identity
 
-Two types are determined to have the same identity when their scopes and identities match, in other words, if they each have the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute, and the two attributes have matching <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope%2A> and <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier%2A> properties. The comparison for <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope%2A> is case-insensitive.
+Two types are determined to have the same identity when their scopes and identities match, in other words, if they each have the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute, and the two attributes have matching <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope*> and <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier> properties. The comparison for <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope*> is case-insensitive.
 
 If a type does not have the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute, or if it has a <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute that does not specify scope and identifier, the type can still be considered for equivalence as follows:
 
-- For interfaces, the value of the <xref:System.Runtime.InteropServices.GuidAttribute> is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope%2A?displayProperty=nameWithType> property, and the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property (that is, the type name, including the namespace) is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier%2A?displayProperty=nameWithType> property.
+- For interfaces, the value of the <xref:System.Runtime.InteropServices.GuidAttribute> is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope?displayProperty=nameWithType> property, and the <xref:System.Type.FullName?displayProperty=nameWithType> property (that is, the type name, including the namespace) is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier?displayProperty=nameWithType> property.
 
-- For structures, enumerations, and delegates, the <xref:System.Runtime.InteropServices.GuidAttribute> of the containing assembly is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope%2A> property, and the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier%2A> property.
+- For structures, enumerations, and delegates, the <xref:System.Runtime.InteropServices.GuidAttribute> of the containing assembly is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope> property, and the <xref:System.Type.FullName?displayProperty=nameWithType> property is used instead of the <xref:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier> property.
 
 ### Marking COM types for type equivalence
 
@@ -48,6 +48,6 @@ If a type does not have the <xref:System.Runtime.InteropServices.TypeIdentifierA
 
 ## See also
 
-- <xref:System.Type.IsEquivalentTo%2A>
+- <xref:System.Type.IsEquivalentTo*>
 - [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

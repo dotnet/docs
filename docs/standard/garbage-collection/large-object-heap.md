@@ -67,7 +67,7 @@ In general, a GC occurs under one of the following three conditions:
 
   This is the typical case; most GCs happen because of allocations on the managed heap.
 
-- The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called.
+- The <xref:System.GC.Collect*?displayProperty=nameWithType> method is called.
 
   If the parameterless <xref:System.GC.Collect?displayProperty=nameWithType> method is called or another overload is passed <xref:System.GC.MaxGeneration?displayProperty=nameWithType> as an argument, the LOH is collected along with the rest of the managed heap.
 

@@ -2,7 +2,7 @@
 title: "Casting and type conversions"
 description: Learn about casting and type conversions, such as implicit, explicit (casts), and user-defined conversions.
 ms.date: 02/05/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "type conversion [C#]"
   - "data type conversion [C#]"
   - "numeric conversions [C#]"
@@ -30,7 +30,7 @@ However, you might sometimes need to copy a value into a variable or method para
 
 - **User-defined conversions**: User-defined conversions use special methods that you can define to enable explicit and implicit conversions between custom types that don't have a base class–derived class relationship. For more information, see [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md).
 
-- **Conversions with helper classes**: To convert between noncompatible types, such as integers and <xref:System.DateTime?displayProperty=nameWithType> objects, or hexadecimal strings and byte arrays, you can use the <xref:System.BitConverter?displayProperty=nameWithType> class, the <xref:System.Convert?displayProperty=nameWithType> class, and the `Parse` methods of the built-in numeric types, such as <xref:System.Int32.Parse%2A?displayProperty=nameWithType>. For more information, see the following articles:
+- **Conversions with helper classes**: To convert between noncompatible types, such as integers and <xref:System.DateTime?displayProperty=nameWithType> objects, or hexadecimal strings and byte arrays, you can use the <xref:System.BitConverter?displayProperty=nameWithType> class, the <xref:System.Convert?displayProperty=nameWithType> class, and the `Parse` methods of the built-in numeric types, such as <xref:System.Int32.Parse*?displayProperty=nameWithType>. For more information, see the following articles:
 
 - [How to convert a byte array to an int](./how-to-convert-a-byte-array-to-an-int.md)
 - [How to convert a string to a number](./how-to-convert-a-string-to-a-number.md)

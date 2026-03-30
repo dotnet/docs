@@ -76,7 +76,7 @@ Replace the existing `Worker` from the template with the following C# code, and 
 In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider?displayProperty=nameWithType>. Logs are written to, and available for viewing in the **Event Viewer**.
 
 > [!NOTE]
-> By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
+> By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning*> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
 >
 > ```json
 > {
@@ -238,7 +238,7 @@ With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-li
 | <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.Ignore> | Ignore exceptions thrown in `BackgroundService`. |
 | <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.StopHost> | The `IHost` is stopped when an unhandled exception is thrown. |
 
-The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system won't restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
+The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system won't restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit*?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
 :::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="24-37":::
 

@@ -22,7 +22,7 @@ If a class has many injected dependencies, it might be a sign that the class has
 
 ### Disposal of services
 
-The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> (or <xref:System.IAsyncDisposable.DisposeAsync%2A> on <xref:System.IAsyncDisposable>) instances. Services resolved from the container should never be disposed by the developer. The container disposes services automatically based on their lifetime:
+The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose*> on <xref:System.IDisposable> (or <xref:System.IAsyncDisposable.DisposeAsync*> on <xref:System.IAsyncDisposable>) instances. Services resolved from the container should never be disposed by the developer. The container disposes services automatically based on their lifetime:
 
 - **Transient** and **scoped** services are disposed at the end of the scope in which they were resolved. In apps that process requests, this is typically at the end of the request.
 - **Singleton** services are disposed when the service container is disposed, usually at application shutdown.
@@ -99,7 +99,7 @@ The app requires an <xref:System.IDisposable> instance with a transient lifetime
 Use the factory pattern to create an instance outside of the parent scope. In this situation, the app generally has a `Create` method that calls the final type's constructor directly. If the final type has other dependencies, the factory can:
 
 - Receive an <xref:System.IServiceProvider> in its constructor.
-- Use <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> to instantiate the instance outside of the container, while using the container for its dependencies.
+- Use <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance*?displayProperty=nameWithType> to instantiate the instance outside of the container, while using the container for its dependencies.
 
 #### Shared instance, limited lifetime
 
@@ -109,13 +109,13 @@ The app requires a shared <xref:System.IDisposable> instance across multiple ser
 
 **Solution**
 
-Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope%2A?displayProperty=nameWithType> to create a new <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>. Use the scope's <xref:System.IServiceProvider> to get required services. Dispose the scope when it's no longer needed.
+Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope*?displayProperty=nameWithType> to create a new <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>. Use the scope's <xref:System.IServiceProvider> to get required services. Dispose the scope when it's no longer needed.
 
 #### General `IDisposable` guidelines
 
 - Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead so the solved service can be manually disposed when it's no longer in use.
 - Don't resolve <xref:System.IDisposable> instances with a transient or scoped lifetime in the root scope. The only exception to this is if the app creates or recreates and disposes <xref:System.IServiceProvider>, but this isn't an ideal pattern.
-- Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose%2A> on that dependency.
+- Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose*> on that dependency.
 - Use scopes to control the lifetimes of services. Scopes aren't hierarchical, and there's no special connection among scopes.
 
 For more information on resource cleanup, see [Implement a `Dispose` method](../../../standard/garbage-collection/implementing-dispose.md) or [Implement a `DisposeAsync` method](../../../standard/garbage-collection/implementing-disposeasync.md). Additionally, consider the [Disposable transient services captured by container](#disposable-transient-services-captured-by-container) scenario as it relates to resource cleanup.
@@ -157,9 +157,9 @@ Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resol
 - Avoid storing data and configuration directly in the service container. For example, a user's shopping cart shouldn't typically be added to the service container. Configuration should use the options pattern. Similarly, avoid "data holder" objects that only exist to allow access to another object. It's better to request the actual item via DI.
 - Avoid static access to services. For example, avoid capturing <xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices?displayProperty=nameWithType> as a static field or property for use elsewhere.
 - Keep [DI factories](#async-di-factories-can-cause-deadlocks) fast and synchronous.
-- Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
+- Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService*> to obtain a service instance when you can use DI instead.
 - Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](../../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) strategies.
-- Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
+- Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider*> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](overview.md#scope-validation).
 - Only use singleton lifetime for services with their own state that is expensive to create or globally shared. Avoid using singleton lifetime for services that have no state themself. Most .NET IoC containers use "Transient" as the default scope. Considerations and drawbacks of singletons:
@@ -195,11 +195,11 @@ For more information on debugging memory leaks, see [Debug a memory leak in .NET
 
 ### Async DI factories can cause deadlocks
 
-The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are overloads that accept a `Func<IServiceProvider, T>` where `T` is the service being registered, and the parameter is named `implementationFactory`. The `implementationFactory` can be provided as a lambda expression, local function, or method. If the factory is asynchronous, and you use <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>, it will cause a deadlock.
+The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are overloads that accept a `Func<IServiceProvider, T>` where `T` is the service being registered, and the parameter is named `implementationFactory`. The `implementationFactory` can be provided as a lambda expression, local function, or method. If the factory is asynchronous, and you use <xref:System.Threading.Tasks.Task`1.Result?displayProperty=nameWithType>, it will cause a deadlock.
 
 :::image type="content" source="media/deadlock-with-async-factory.png" lightbox="media/deadlock-with-async-factory.png" alt-text="Anti-pattern: Deadlock with async factory. Do not copy!":::
 
-In the preceding code, the `implementationFactory` is given a lambda expression where the body calls <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> on a `Task<Bar>` returning method. This ***causes a deadlock***. The `GetBarAsync` method simply emulates an asynchronous work operation with <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType>, and then calls <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)>.
+In the preceding code, the `implementationFactory` is given a lambda expression where the body calls <xref:System.Threading.Tasks.Task`1.Result?displayProperty=nameWithType> on a `Task<Bar>` returning method. This ***causes a deadlock***. The `GetBarAsync` method simply emulates an asynchronous work operation with <xref:System.Threading.Tasks.Task.Delay*?displayProperty=nameWithType>, and then calls <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService``1(System.IServiceProvider)>.
 
 :::image type="content" source="media/deadlock-with-async-factory-01.png" lightbox="media/deadlock-with-async-factory-01.png" alt-text="Anti-pattern: Deadlock with async factory inner issue. Do not copy!":::
 

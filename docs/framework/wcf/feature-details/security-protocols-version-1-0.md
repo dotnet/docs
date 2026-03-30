@@ -135,7 +135,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 
 ### 2.1 TimeStamp
 
- Timestamp presence is controlled using the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. WCF always serializes wsse:TimeStamp with wsse:Created and wsse:Expires fields. The wsse:TimeStamp is always signed when signing is used.
+ Timestamp presence is controlled using the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. WCF always serializes wsse:TimeStamp with wsse:Created and wsse:Expires fields. The wsse:TimeStamp is always signed when signing is used.
 
 ### 2.2 Protection Order
 

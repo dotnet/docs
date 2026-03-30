@@ -36,7 +36,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
  You can create the object model or external mapping file automatically with the Object Relational Designer (O/R Designer) or the SQLMetal command-line tool. The default type mappings for these tools define which CLR types are chosen to map to columns inside the SQL Server database. For more information about using these tools, see [Creating the Object Model](creating-the-object-model.md).
 
- You can also use the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method to create a SQL Server database based on the mapping information in the object model or external mapping file. The default type mappings for the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method define which type of SQL Server columns are created to map to the CLR types in the object model. For more information, see [How to: Dynamically Create a Database](how-to-dynamically-create-a-database.md).
+ You can also use the <xref:System.Data.Linq.DataContext.CreateDatabase*> method to create a SQL Server database based on the mapping information in the object model or external mapping file. The default type mappings for the <xref:System.Data.Linq.DataContext.CreateDatabase*> method define which type of SQL Server columns are created to map to the CLR types in the object model. For more information, see [How to: Dynamically Create a Database](how-to-dynamically-create-a-database.md).
 
 <a name="BehaviorMatrix"></a>
 
@@ -51,7 +51,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
 ### Custom Type Mapping
 
- With LINQ to SQL, you are not limited to the default type mappings used by the O/R Designer, SQLMetal, and the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method. You can create custom type mappings by explicitly specifying them in a DBML file. Then you can use that DBML file to create the object model code and mapping file. For more information, see [SQL-CLR Custom Type Mappings](sql-clr-custom-type-mappings.md).
+ With LINQ to SQL, you are not limited to the default type mappings used by the O/R Designer, SQLMetal, and the <xref:System.Data.Linq.DataContext.CreateDatabase*> method. You can create custom type mappings by explicitly specifying them in a DBML file. Then you can use that DBML file to create the object model code and mapping file. For more information, see [SQL-CLR Custom Type Mappings](sql-clr-custom-type-mappings.md).
 
 <a name="BehaviorDiffs"></a>
 
@@ -88,7 +88,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
  Because a SQL column intended for enumeration will be of the same type as other numeric and text columns; these tools will not recognize your intent and default to mapping as described in the following [Numeric Mapping](#NumericMapping) and [Text and XML Mapping](#TextMapping) sections. For more information about generating code with the DBML file, see [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md).
 
- The <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method creates a SQL column of numeric type to map a CLR <xref:System.Enum?displayProperty=nameWithType> type.
+ The <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method creates a SQL column of numeric type to map a CLR <xref:System.Enum?displayProperty=nameWithType> type.
 
 <a name="NumericMapping"></a>
 
@@ -109,9 +109,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 |`REAL/FLOAT(24)`|<xref:System.Single?displayProperty=nameWithType>|
 |`FLOAT/FLOAT(53)`|<xref:System.Double?displayProperty=nameWithType>|
 
- The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
+ The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
 
-|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType>|
+|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType>|
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |<xref:System.Boolean?displayProperty=nameWithType>|`BIT`|
 |<xref:System.Byte?displayProperty=nameWithType>|`TINYINT`|
@@ -150,9 +150,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 |`NTEXT`|<xref:System.String?displayProperty=nameWithType>|
 |`XML`|<xref:System.Xml.Linq.XElement?displayProperty=nameWithType>|
 
- The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
+ The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
 
-|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType>|
+|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType>|
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |<xref:System.Char?displayProperty=nameWithType>|`NCHAR(1)`|
 |<xref:System.String?displayProperty=nameWithType>|`NVARCHAR(4000)`|
@@ -173,7 +173,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
 - Comments
 
- Although you can map <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> to SQL Server as shown in the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix), the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method has no default SQL Server type mapping for these types.
+ Although you can map <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> to SQL Server as shown in the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix), the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method has no default SQL Server type mapping for these types.
 
 ### Custom Types
 
@@ -197,9 +197,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 |`DATE`|<xref:System.DateTime?displayProperty=nameWithType>|
 |`TIME`|<xref:System.TimeSpan?displayProperty=nameWithType>|
 
- The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
+ The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
 
-|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType>|
+|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType>|
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |<xref:System.DateTime?displayProperty=nameWithType>|`DATETIME`|
 |<xref:System.DateTimeOffset?displayProperty=nameWithType>|`DATETIMEOFFSET`|
@@ -212,7 +212,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
 ### System.Datetime
 
- The range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType> type is greater than the range and precision of the SQL Server `DATETIME` type, which is the default type mapping for the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method. To help avoid exceptions related to dates outside the range of `DATETIME`, use `DATETIME2`, which is available starting with Microsoft SQL Server 2008. `DATETIME2` can match the range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType>.
+ The range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType> type is greater than the range and precision of the SQL Server `DATETIME` type, which is the default type mapping for the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method. To help avoid exceptions related to dates outside the range of `DATETIME`, use `DATETIME2`, which is available starting with Microsoft SQL Server 2008. `DATETIME2` can match the range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType>.
 
  SQL Server dates have no concept of <xref:System.TimeZone>, a feature that is richly supported in the CLR. <xref:System.TimeZone> values are saved as is to the database without <xref:System.TimeZone> conversion, regardless of the original <xref:System.DateTimeKind> information. When <xref:System.DateTime> values are retrieved from the database, their value is loaded as is into a <xref:System.DateTime> with a <xref:System.DateTimeKind> of <xref:System.DateTimeKind.Unspecified>. For more information about supported <xref:System.DateTime?displayProperty=nameWithType> methods, see [System.DateTime Methods](system-datetime-methods.md).
 
@@ -237,9 +237,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 |`IMAGE`|<xref:System.Data.Linq.Binary?displayProperty=nameWithType>|
 |`TIMESTAMP`|<xref:System.Data.Linq.Binary?displayProperty=nameWithType>|
 
- The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
+ The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
 
-|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType>|
+|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType>|
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |<xref:System.Data.Linq.Binary?displayProperty=nameWithType>|`VARBINARY(MAX)`|
 |<xref:System.Byte?displayProperty=nameWithType>|`VARBINARY(MAX)`|
@@ -251,7 +251,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
  The `FILESTREAM` attribute for `VARBINARY(MAX)` columns is available starting with Microsoft SQL Server 2008; you can map to it with LINQ to SQL starting with the .NET Framework version 3.5 SP1.
 
- Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](/previous-versions/sql/sql-server-2008-r2/bb933993(v=sql.105)).
+ Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](/previous-versions/sql/sql-server-2008-r2/bb933993(v=sql.105)).
 
 <a name="BinarySerialization"></a>
 
@@ -270,9 +270,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 |`UNIQUEIDENTIFIER`|<xref:System.Guid?displayProperty=nameWithType>|
 |`SQL_VARIANT`|<xref:System.Object?displayProperty=nameWithType>|
 
- The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
+ The next table shows the default type mappings used by the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method to define which type of SQL columns are created to map to the CLR types defined in your object model or external mapping file.
 
-|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType>|
+|CLR Type|Default SQL Server Type used by <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType>|
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |<xref:System.Guid?displayProperty=nameWithType>|`UNIQUEIDENTIFIER`|
 |<xref:System.Object?displayProperty=nameWithType>|`SQL_VARIANT`|

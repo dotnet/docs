@@ -134,7 +134,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9187**](#invalid-collection-builder): *Could not find an accessible method with the expected signature: a static method with a single parameter of type `ReadOnlySpan<T>`; and correct return type*
 - [**CS9188**](#invalid-collection-builder): *Type has a CollectionBuilderAttribute but no element type.*
 - [**CS9203**](#invalid-collection-initializer): *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
-- [**CS9210**](#invalid-collection-initializer): *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType>cannot be used with collection expressions.*
+- [**CS9210**](#invalid-collection-initializer): *This version of <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType>cannot be used with collection expressions.*
 - [**CS9212**](#invalid-collection-initializer): *Spread operator '`..`' cannot operate on variables of type 'type' because 'type' does not contain a public instance or extension definition for 'member'.*
 - [**CS9213**](#invalid-collection-initializer): *Collection expression target 'type' has no element type.*
 - [**CS9214**](#invalid-collection-initializer): *Collection expression type must have an applicable constructor that can be called with no arguments.*
@@ -182,7 +182,7 @@ To access array elements correctly, follow these indexing rules. For more inform
 - **CS9174**: *Cannot initialize type with a collection literal because the type is not constructible.*
 - **CS9176**: *There is no target type for the collection literal.*
 - **CS9203**: *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
-- **CS9210**: *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType> can't be used with collection expressions.*
+- **CS9210**: *This version of <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> can't be used with collection expressions.*
 - **CS9212**: *Spread operator '`..`' cannot operate on variables of type 'type' because 'type' doesn't contain a public instance or extension definition for 'member'.*
 - **CS9213**: *Collection expression target 'type' has no element type.*
 - **CS9214**: *Collection expression type must have an applicable constructor that can be called with no arguments.*

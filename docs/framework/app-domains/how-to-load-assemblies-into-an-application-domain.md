@@ -15,20 +15,20 @@ ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:
+There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load*> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:
 
-- The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.
+- The <xref:System.Reflection.Assembly.LoadFrom*> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.
 
-- The <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods load an assembly into the reflection-only context. Assemblies loaded into this context can be examined but not executed, allowing the examination of assemblies that target other platforms. See [How to: Load Assemblies into the Reflection-Only Context](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).
+- The <xref:System.Reflection.Assembly.ReflectionOnlyLoad*> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom*> methods load an assembly into the reflection-only context. Assemblies loaded into this context can be examined but not executed, allowing the examination of assemblies that target other platforms. See [How to: Load Assemblies into the Reflection-Only Context](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).
 
 > [!NOTE]
 > The reflection-only context is new in .NET Framework version 2.0.
 
-- Methods such as <xref:System.AppDomain.CreateInstance%2A> and <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> of the <xref:System.AppDomain> class can load assemblies into an application domain.
+- Methods such as <xref:System.AppDomain.CreateInstance*> and <xref:System.AppDomain.CreateInstanceAndUnwrap*> of the <xref:System.AppDomain> class can load assemblies into an application domain.
 
-- The <xref:System.Type.GetType%2A> method of the <xref:System.Type> class can load assemblies.
+- The <xref:System.Type.GetType*> method of the <xref:System.Type> class can load assemblies.
 
-- The <xref:System.AppDomain.Load%2A> method of the <xref:System.AppDomain?displayProperty=nameWithType> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.
+- The <xref:System.AppDomain.Load*> method of the <xref:System.AppDomain?displayProperty=nameWithType> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.
 
 > [!NOTE]
 > Starting with .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.
@@ -45,7 +45,7 @@ There are several ways to load an assembly into an application domain. The recom
 
 ## See also
 
-- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad*>
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
 - [Reflection](../../fundamentals/reflection/overview.md)
 - [Using Application Domains](use.md)

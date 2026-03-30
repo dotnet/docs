@@ -58,7 +58,7 @@ Frequently, a type has multiple data fields that can participate in generating t
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor1.vb" id="Snippet2":::
 
-The previous example returns the same hash code for (n1, n2) and (n2, n1), and so it might generate more collisions than are desirable. On .NET 5+, the recommended solution is to use <xref:System.HashCode.Combine%2A?displayProperty=nameWithType>. It avoids the symmetry problem and produces a well-distributed hash code without the overhead of creating a `Tuple` object.
+The previous example returns the same hash code for (n1, n2) and (n2, n1), and so it might generate more collisions than are desirable. On .NET 5+, the recommended solution is to use <xref:System.HashCode.Combine*?displayProperty=nameWithType>. It avoids the symmetry problem and produces a well-distributed hash code without the overhead of creating a `Tuple` object.
 
 :::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/xor2.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor2.fs" id="Snippet3":::

@@ -67,7 +67,7 @@ When creating an application, you often want to defer decisions to the administr
 
 #### Modifying a Predefined Binding
 
- In the following example, a predefined binding is modified. It can then be used to configure any endpoint in the service. The binding is modified by setting the <xref:System.ServiceModel.Configuration.IBindingConfigurationElement.ReceiveTimeout%2A> value to 1 second. Note that the property returns a <xref:System.TimeSpan> object.
+ In the following example, a predefined binding is modified. It can then be used to configure any endpoint in the service. The binding is modified by setting the <xref:System.ServiceModel.Configuration.IBindingConfigurationElement.ReceiveTimeout> value to 1 second. Note that the property returns a <xref:System.TimeSpan> object.
 
  That altered binding is found in the bindings section. This altered binding can now be used when creating any endpoint by setting the `binding` attribute in the `endpoint` element.
 

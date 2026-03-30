@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to find an attribute of the parent (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> to find an attribute of a parent element, and how to use LINQ to XML query to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate*> to find an attribute of a parent element, and how to use LINQ to XML query to do the same thing.
 
 ## Example: Find the `Author` element, and then find the `id` attribute of its parent
 

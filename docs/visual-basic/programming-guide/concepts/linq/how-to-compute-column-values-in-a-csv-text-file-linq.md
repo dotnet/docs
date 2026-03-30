@@ -136,7 +136,7 @@ End Class
 ' Exam #4 Average: 76.92 High Score: 94 Low Score: 39
 ```
 
-The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.
+The query works by using the <xref:System.String.Split*> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.
 
 ## Compile the code
 

@@ -12,7 +12,7 @@ Conventions for comparing and sorting data vary from culture to culture. For exa
 
 Typically, you do not have to instantiate a <xref:System.Globalization.CompareInfo> object directly, because one is used implicitly by all non-ordinal string comparison operations, including calls to the <xref:System.String.Compare*?displayProperty=nameWithType> method. However, if you do want to retrieve a <xref:System.Globalization.CompareInfo> object, you can do it in one of these ways:
 
-- By retrieving the value of the <xref:System.Globalization.CultureInfo.CompareInfo*?displayProperty=nameWithType> property for a particular culture.
+- By retrieving the value of the <xref:System.Globalization.CultureInfo.CompareInfo?displayProperty=nameWithType> property for a particular culture.
 
 - By calling the static <xref:System.Globalization.CompareInfo.GetCompareInfo*> method with a culture name. This allows for late-bound access to a <xref:System.Globalization.CompareInfo> object.
 

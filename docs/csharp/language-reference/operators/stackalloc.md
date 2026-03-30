@@ -15,22 +15,22 @@ A `stackalloc` expression allocates a block of memory on the stack. A stack-allo
 
 You can assign the result of a `stackalloc` expression to a variable of one of the following types:
 
-- <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as the following example shows:
+- <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AssignToSpan":::
 
-  You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack allocated memory block to a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable.
+  You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack allocated memory block to a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable.
 
   When you work with those types, you can use a `stackalloc` expression in [conditional](conditional-operator.md) or assignment expressions, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AsExpression":::
 
-  You can use a `stackalloc` expression or a collection expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+  You can use a `stackalloc` expression or a collection expression inside other expressions whenever a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable is allowed, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="Nested":::
 
   > [!NOTE]
-  > Use <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> types to work with stack allocated memory whenever possible.
+  > Use <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> types to work with stack allocated memory whenever possible.
 
 - A [pointer type](../unsafe-code.md#pointer-types), as the following example shows:
 
@@ -51,7 +51,7 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
 
-The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> before it's used.
+The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span`1.Clear*?displayProperty=nameWithType> before it's used.
 
 > [!IMPORTANT]
 > Not initializing memory allocated by `stackalloc` is an important difference from the `new` operator. Memory allocated by using the `new` operator is initialized to the 0 bit pattern.

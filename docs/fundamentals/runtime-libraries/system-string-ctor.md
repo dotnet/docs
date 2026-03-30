@@ -36,12 +36,12 @@ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trus
 Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.
 
 `String(SByte* value)`\
-**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default*?displayProperty=nameWithType>). The constructor processes characters from `value` starting from the location specified by the pointer until a null character (0x00) is reached ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
+**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default?displayProperty=nameWithType>). The constructor processes characters from `value` starting from the location specified by the pointer until a null character (0x00) is reached ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
 
 Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.
 
 `String(SByte* value, Int32 startIndex, Int32 length)`\
-**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default*?displayProperty=nameWithType>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` - 1 ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
+**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default?displayProperty=nameWithType>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` - 1 ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
 
 Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.
 
@@ -59,7 +59,7 @@ Here is a complete list of parameters used by <xref:System.String> constructors 
 | `value`   | <xref:System.Char>[] | An array of Unicode characters. |
 | `c`       | <xref:System.Char>   | A Unicode character.            |
 | `startIndex` | <xref:System.Int32> |The starting position in `value` of the first character in the new string.<br /><br /> Default value: 0|
-| `length` | <xref:System.Int32> |The number of characters in `value` to include in the new string.<br /><br /> Default value: <xref:System.Array.Length*?displayProperty=nameWithType>|
+| `length` | <xref:System.Int32> |The number of characters in `value` to include in the new string.<br /><br /> Default value: <xref:System.Array.Length?displayProperty=nameWithType>|
 | `count` | <xref:System.Int32> |The number of times the character `c` is repeated in the new string. If `count` is zero, the value of the new object is <xref:System.String.Empty?displayProperty=nameWithType>.|
 
 Here is a complete list of parameters used by <xref:System.String> constructors that include a pointer parameter. For the parameters used by each overload, see the overload syntax above.
@@ -68,8 +68,8 @@ Here is a complete list of parameters used by <xref:System.String> constructors 
 |-----------|------|-------------|
 |`value`|<xref:System.Char>*<br /><br /> -or-<br /><br /> <xref:System.SByte>\*|A pointer to a null-terminated array of Unicode characters or an array of 8-bit signed integers. If `value` is `null` or an empty array, the value of the new string is <xref:System.String.Empty?displayProperty=nameWithType>.|
 |`startIndex`|<xref:System.Int32>|The index of the array element that defines the first character in the new string.<br /><br /> Default value: 0|
-|`length`|<xref:System.Int32>|The number of array elements to use to create the new string. If length is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=nameWithType>.<br /><br /> Default value: <xref:System.Array.Length*?displayProperty=nameWithType>|
-|`enc`|<xref:System.Text.Encoding>|An object that specifies how the `value` array is encoded.<br /><br /> Default value: <xref:System.Text.Encoding.Default*?displayProperty=nameWithType>, or the system's current ANSI code page|
+|`length`|<xref:System.Int32>|The number of array elements to use to create the new string. If length is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=nameWithType>.<br /><br /> Default value: <xref:System.Array.Length?displayProperty=nameWithType>|
+|`enc`|<xref:System.Text.Encoding>|An object that specifies how the `value` array is encoded.<br /><br /> Default value: <xref:System.Text.Encoding.Default?displayProperty=nameWithType>, or the system's current ANSI code page|
 
 ## Exceptions
 

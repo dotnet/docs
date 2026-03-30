@@ -21,7 +21,7 @@ As the example shows, you include an expression in an interpolated string by enc
 {<interpolationExpression>}
 ```
 
-Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format%2A?displayProperty=nameWithType> method. Every interpolated string must have:
+Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format*?displayProperty=nameWithType> method. Every interpolated string must have:
 
 - A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character.
 - One or more *interpolation expressions*. You indicate an interpolation expression with an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces.
@@ -113,7 +113,7 @@ Beginning with .NET 6, use the <xref:System.String.Create(System.IFormatProvider
 
 :::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="InvariantCulture":::
 
-In earlier versions of .NET, along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method, as the following example shows:
+In earlier versions of .NET, along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant*?displayProperty=nameWithType> method, as the following example shows:
 
 :::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="InvariantCultureOld":::
 
@@ -123,7 +123,7 @@ This tutorial describes common scenarios of string interpolation usage. For more
 
 ## See also
 
-- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.String.Format*?displayProperty=nameWithType>
 - <xref:System.FormattableString?displayProperty=nameWithType>
 - <xref:System.IFormattable?displayProperty=nameWithType>
 - [Strings](../programming-guide/strings/index.md)

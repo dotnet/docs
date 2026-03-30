@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ---
 # ZipArchive.CreateAsync eagerly loads ZIP archive entries
 
-<xref:System.IO.Compression.ZipArchive.CreateAsync%2A?displayProperty=nameWithType> now eagerly loads all ZIP archive entries during the method call. This change ensures that accessing the <xref:System.IO.Compression.ZipArchive.Entries?displayProperty=nameWithType> property doesn't perform synchronous reads on the underlying stream, which aligns with asynchronous programming patterns.
+<xref:System.IO.Compression.ZipArchive.CreateAsync*?displayProperty=nameWithType> now eagerly loads all ZIP archive entries during the method call. This change ensures that accessing the <xref:System.IO.Compression.ZipArchive.Entries?displayProperty=nameWithType> property doesn't perform synchronous reads on the underlying stream, which aligns with asynchronous programming patterns.
 
 ## Version introduced
 

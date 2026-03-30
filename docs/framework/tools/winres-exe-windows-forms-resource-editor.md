@@ -121,7 +121,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
     > [!NOTE]
     > If the form whose resources you are editing is an inherited form, both the assembly contained the inherited form and the assembly containing the inheriting (derived) form must either be registered in the Global Assembly Cache (GAC), or must reside in the same directory as WinRes.exe. For more information about installing .NET Framework components into the GAC, see [Global Assembly Cache](../app-domains/gac.md).
 
-3. Select controls on the form and change their <xref:System.Windows.Forms.Control.Text%2A> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
+3. Select controls on the form and change their <xref:System.Windows.Forms.Control.Text*> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
 
 4. To save the localized version of the .resx or .resources file, click the `Save` icon or select **File > Save**. The tool displays the **Select Culture** window.
 

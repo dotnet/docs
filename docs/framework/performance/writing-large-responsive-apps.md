@@ -135,7 +135,7 @@ public class BoxingExample
 
 ### Strings
 
- String manipulations are some of the biggest culprits for allocations, and they often show up in PerfView in the top five allocations. Programs use strings for serialization, JSON, and REST APIs. You can use strings as programmatic constants for interoperating with systems when you can’t use enumeration types. When your profiling shows that strings are highly affecting performance, look for calls to <xref:System.String> methods such as <xref:System.String.Format%2A>, <xref:System.String.Concat%2A>, <xref:System.String.Split%2A>, <xref:System.String.Join%2A>, <xref:System.String.Substring%2A>, and so on. Using <xref:System.Text.StringBuilder> to avoid the cost of creating one string from many pieces helps, but even allocating the <xref:System.Text.StringBuilder> object might become a bottleneck that you need to manage.
+ String manipulations are some of the biggest culprits for allocations, and they often show up in PerfView in the top five allocations. Programs use strings for serialization, JSON, and REST APIs. You can use strings as programmatic constants for interoperating with systems when you can’t use enumeration types. When your profiling shows that strings are highly affecting performance, look for calls to <xref:System.String> methods such as <xref:System.String.Format*>, <xref:System.String.Concat*>, <xref:System.String.Split*>, <xref:System.String.Join*>, <xref:System.String.Substring*>, and so on. Using <xref:System.Text.StringBuilder> to avoid the cost of creating one string from many pieces helps, but even allocating the <xref:System.Text.StringBuilder> object might become a bottleneck that you need to manage.
 
  **Example 3: string operations**
 
@@ -168,11 +168,11 @@ public void WriteFormattedDocComment(string text)
 
  You can see that this code does a lot of string manipulation. The code uses library methods to split lines into separate strings, to trim white space, to check whether the argument `text` is an XML documentation comment, and to extract substrings from lines.
 
- On the first line inside `WriteFormattedDocComment`, the `text.Split` call allocates a new three-element array as the argument every time it’s called. The compiler has to emit code to allocate this array each time. That’s because the compiler doesn’t know if <xref:System.String.Split%2A> stores the array somewhere where the array might be modified by other code, which would affect later calls to `WriteFormattedDocComment`. The call to <xref:System.String.Split%2A> also allocates a string for every line in `text` and allocates other memory to perform the operation.
+ On the first line inside `WriteFormattedDocComment`, the `text.Split` call allocates a new three-element array as the argument every time it’s called. The compiler has to emit code to allocate this array each time. That’s because the compiler doesn’t know if <xref:System.String.Split*> stores the array somewhere where the array might be modified by other code, which would affect later calls to `WriteFormattedDocComment`. The call to <xref:System.String.Split*> also allocates a string for every line in `text` and allocates other memory to perform the operation.
 
- `WriteFormattedDocComment` has three calls to the <xref:System.String.TrimStart%2A> method. Two are in inner loops that duplicate work and allocations. To make matters worse, calling the <xref:System.String.TrimStart%2A> method with no arguments allocates an empty array (for the `params` parameter) in addition to the string result.
+ `WriteFormattedDocComment` has three calls to the <xref:System.String.TrimStart*> method. Two are in inner loops that duplicate work and allocations. To make matters worse, calling the <xref:System.String.TrimStart*> method with no arguments allocates an empty array (for the `params` parameter) in addition to the string result.
 
- Lastly, there is a call to the <xref:System.String.Substring%2A> method, which usually allocates a new string.
+ Lastly, there is a call to the <xref:System.String.Substring*> method, which usually allocates a new string.
 
  **Fix for example 3**
 
@@ -200,7 +200,7 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 // etc...
 ```
 
- The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array. It also checked for "///". The revised code uses only indexing and allocates nothing. It finds the first character that is not white space, and then checks character by character to see if the string starts with "///". The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-white-space character occurs. The fix is not complete, but you can see how to apply similar fixes for a complete solution. By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.
+ The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array. It also checked for "///". The revised code uses only indexing and allocates nothing. It finds the first character that is not white space, and then checks character by character to see if the string starts with "///". The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart*> to return the first index (after a specified start index) where a non-white-space character occurs. The fix is not complete, but you can see how to apply similar fixes for a complete solution. By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.
 
  **Example 4: StringBuilder**
 
@@ -330,7 +330,7 @@ var predicate = new Func<Symbol, bool>(l.Evaluate);
 
  The two `new` allocations (one for the environment class and one for the delegate) are explicit now.
 
- Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> type incurs an allocation too. Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable%601> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):
+ Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> type incurs an allocation too. Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable`1> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):
 
 ```csharp
 // Expanded return symbols.FirstOrDefault(predicate) ...
@@ -344,9 +344,9 @@ var predicate = new Func<Symbol, bool>(l.Evaluate);
      return default(Symbol);
 ```
 
- The `symbols` variable has type <xref:System.Collections.Generic.List%601>. The <xref:System.Collections.Generic.List%601> collection type implements <xref:System.Collections.Generic.IEnumerable%601> and cleverly defines an enumerator (<xref:System.Collections.Generic.IEnumerator%601> interface) that <xref:System.Collections.Generic.List%601> implements with a `struct`. Using a structure instead of a class means that you usually avoid any heap allocations, which, in turn, can affect garbage collection performance. Enumerators are typically used with the language’s `foreach` loop, which uses the enumerator structure as it is returned on the call stack. Incrementing the call stack pointer to make room for an object does not affect GC the way a heap allocation does.
+ The `symbols` variable has type <xref:System.Collections.Generic.List`1>. The <xref:System.Collections.Generic.List`1> collection type implements <xref:System.Collections.Generic.IEnumerable`1> and cleverly defines an enumerator (<xref:System.Collections.Generic.IEnumerator`1> interface) that <xref:System.Collections.Generic.List`1> implements with a `struct`. Using a structure instead of a class means that you usually avoid any heap allocations, which, in turn, can affect garbage collection performance. Enumerators are typically used with the language’s `foreach` loop, which uses the enumerator structure as it is returned on the call stack. Incrementing the call stack pointer to make room for an object does not affect GC the way a heap allocation does.
 
- In the case of the expanded `FirstOrDefault` call, the code needs to call `GetEnumerator()` on an <xref:System.Collections.Generic.IEnumerable%601>. Assigning `symbols` to the `enumerable` variable of type `IEnumerable<Symbol>` loses the information that the actual object is a <xref:System.Collections.Generic.List%601>. This means that when the code fetches the enumerator with `enumerable.GetEnumerator()`, the .NET Framework has to box the returned structure to assign it to the `enumerator` variable.
+ In the case of the expanded `FirstOrDefault` call, the code needs to call `GetEnumerator()` on an <xref:System.Collections.Generic.IEnumerable`1>. Assigning `symbols` to the `enumerable` variable of type `IEnumerable<Symbol>` loses the information that the actual object is a <xref:System.Collections.Generic.List`1>. This means that when the code fetches the enumerator with `enumerable.GetEnumerator()`, the .NET Framework has to box the returned structure to assign it to the `enumerator` variable.
 
  **Fix for example 5**
 
@@ -364,7 +364,7 @@ public Symbol FindMatchingSymbol(string name)
     }
 ```
 
- This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations. There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List%601> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing. The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework. This new and more efficient version preserves those qualities without adding any complex code to maintain.
+ This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations. There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List`1> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing. The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework. This new and more efficient version preserves those qualities without adding any complex code to maintain.
 
 ### Async method caching
 
@@ -448,7 +448,7 @@ class Compilation { /*...*/
 
  **Dictionaries**
 
- Dictionaries are used ubiquitously in many programs, and though dictionaries are very convenient and inherently efficient. However, they’re often used inappropriately. In Visual Studio and the new compilers, analysis shows that many of the dictionaries contained a single element or were empty. An empty <xref:System.Collections.Generic.Dictionary%602> has ten fields and occupies 48 bytes on the heap on an x86 machine. Dictionaries are great when you need a mapping or associative data structure with constant-time lookup. However, when you have only a few elements, you waste a lot of space by using a dictionary. Instead, for example, you could iteratively look through a `List<KeyValuePair\<K,V>>`, just as fast. If you use a dictionary only to load it with data and then read from it (a very common pattern), using a sorted array with an N(log(N)) lookup might be nearly as fast, depending on the number of elements you're using.
+ Dictionaries are used ubiquitously in many programs, and though dictionaries are very convenient and inherently efficient. However, they’re often used inappropriately. In Visual Studio and the new compilers, analysis shows that many of the dictionaries contained a single element or were empty. An empty <xref:System.Collections.Generic.Dictionary`2> has ten fields and occupies 48 bytes on the heap on an x86 machine. Dictionaries are great when you need a mapping or associative data structure with constant-time lookup. However, when you have only a few elements, you waste a lot of space by using a dictionary. Instead, for example, you could iteratively look through a `List<KeyValuePair\<K,V>>`, just as fast. If you use a dictionary only to load it with data and then read from it (a very common pattern), using a sorted array with an N(log(N)) lookup might be nearly as fast, depending on the number of elements you're using.
 
  **Classes vs. structures**
 

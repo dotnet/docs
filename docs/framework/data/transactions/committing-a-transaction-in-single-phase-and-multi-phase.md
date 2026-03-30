@@ -30,7 +30,7 @@ Each resource used in a transaction is managed by a resource manager (RM), whose
 
 ### Prepare phase (Phase 1)
 
- Upon receiving a <xref:System.Transactions.CommittableTransaction.Commit%2A> request from the application, the transaction manager begins the Prepare phase of all the enlisted participants by calling the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method on each enlisted resource, in order to obtain each resource's vote on the transaction.
+ Upon receiving a <xref:System.Transactions.CommittableTransaction.Commit*> request from the application, the transaction manager begins the Prepare phase of all the enlisted participants by calling the <xref:System.Transactions.IEnlistmentNotification.Prepare*> method on each enlisted resource, in order to obtain each resource's vote on the transaction.
 
  Your resource manager that implements the <xref:System.Transactions.IEnlistmentNotification> interface should first implement the <xref:System.Transactions.IEnlistmentNotification.Prepare%28System.Transactions.PreparingEnlistment%29> method as the following simple example shows.
 
@@ -60,17 +60,17 @@ public void Prepare(PreparingEnlistment preparingEnlistment)
 }
 ```
 
- When the durable resource manager receives this call, it should log the transaction's recovery information (available by retrieving the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property) and whatever information is necessary to complete the transaction on commit. This does not need to be performed within the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method because the RM can do this on a worker thread.
+ When the durable resource manager receives this call, it should log the transaction's recovery information (available by retrieving the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation> property) and whatever information is necessary to complete the transaction on commit. This does not need to be performed within the <xref:System.Transactions.IEnlistmentNotification.Prepare*> method because the RM can do this on a worker thread.
 
- When the RM has finished its prepare work, it should vote to commit or roll back by calling the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> or <xref:System.Transactions.PreparingEnlistment.ForceRollback%2A> method. Notice that the <xref:System.Transactions.PreparingEnlistment> class inherits a <xref:System.Transactions.Enlistment.Done%2A> method from the <xref:System.Transactions.Enlistment> class. If you call this method on the <xref:System.Transactions.PreparingEnlistment> callback during the Prepare phase, it informs the TM that it is a Read-Only enlistment (that is, resource managers that can read but cannot update transaction-protected data) and the RM receives no further notifications from the transaction manager as to the outcome of the transaction in phase 2.
+ When the RM has finished its prepare work, it should vote to commit or roll back by calling the <xref:System.Transactions.PreparingEnlistment.Prepared*> or <xref:System.Transactions.PreparingEnlistment.ForceRollback*> method. Notice that the <xref:System.Transactions.PreparingEnlistment> class inherits a <xref:System.Transactions.Enlistment.Done*> method from the <xref:System.Transactions.Enlistment> class. If you call this method on the <xref:System.Transactions.PreparingEnlistment> callback during the Prepare phase, it informs the TM that it is a Read-Only enlistment (that is, resource managers that can read but cannot update transaction-protected data) and the RM receives no further notifications from the transaction manager as to the outcome of the transaction in phase 2.
 
- The application is told of the successful commitment of the transaction after all the resource managers vote <xref:System.Transactions.PreparingEnlistment.Prepared%2A>.
+ The application is told of the successful commitment of the transaction after all the resource managers vote <xref:System.Transactions.PreparingEnlistment.Prepared*>.
 
 ### Commit phase (Phase 2)
 
- In the second phase of the transaction, if the transaction manager receives successful prepares from all the resource managers (all the resource managers have invoked <xref:System.Transactions.PreparingEnlistment.Prepared%2A> at the end of phase 1), it invokes the <xref:System.Transactions.IEnlistmentNotification.Commit%2A> method for each resource manager. The resource managers can then make the changes durable and complete the commit.
+ In the second phase of the transaction, if the transaction manager receives successful prepares from all the resource managers (all the resource managers have invoked <xref:System.Transactions.PreparingEnlistment.Prepared*> at the end of phase 1), it invokes the <xref:System.Transactions.IEnlistmentNotification.Commit*> method for each resource manager. The resource managers can then make the changes durable and complete the commit.
 
- If any resource manager reported a failure to prepare in phase 1, the transaction manager invokes the <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> method for each resource manager and indicates the failure of the commit to the application.
+ If any resource manager reported a failure to prepare in phase 1, the transaction manager invokes the <xref:System.Transactions.IEnlistmentNotification.Rollback*> method for each resource manager and indicates the failure of the commit to the application.
 
  Thus, your resource manager should implement the following methods.
 
@@ -92,11 +92,11 @@ public void Rollback (Enlistment enlistment)
 }
 ```
 
- The RM should perform any work necessary to finish the transaction based on the notification type, and inform the TM that it has finished by calling <xref:System.Transactions.Enlistment.Done%2A> method on the <xref:System.Transactions.Enlistment> parameter. This work can be done on a worker thread. Note that the phase 2 notifications can happen inline on the same thread that called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method in phase 1. As such, you should not do any work after the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> call (for example, releasing locks) that you would expect to have completed before receiving the phase 2 notifications.
+ The RM should perform any work necessary to finish the transaction based on the notification type, and inform the TM that it has finished by calling <xref:System.Transactions.Enlistment.Done*> method on the <xref:System.Transactions.Enlistment> parameter. This work can be done on a worker thread. Note that the phase 2 notifications can happen inline on the same thread that called the <xref:System.Transactions.PreparingEnlistment.Prepared*> method in phase 1. As such, you should not do any work after the <xref:System.Transactions.PreparingEnlistment.Prepared*> call (for example, releasing locks) that you would expect to have completed before receiving the phase 2 notifications.
 
 ### Implementing InDoubt
 
- Finally, you should implement the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> method for the volatile resource manager. This method is called if the transaction manager loses contact with one or more participants, so their status is unknown. If this occurs, you should log this fact so that you can investigate later whether any of the transaction participants has been left in an inconsistent state.
+ Finally, you should implement the <xref:System.Transactions.IEnlistmentNotification.InDoubt*> method for the volatile resource manager. This method is called if the transaction manager loses contact with one or more participants, so their status is unknown. If this occurs, you should log this fact so that you can investigate later whether any of the transaction participants has been left in an inconsistent state.
 
 ```csharp
 public void InDoubt (Enlistment enlistment)

@@ -32,7 +32,7 @@ This article details the settings you can use to configure threading in .NET.
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker thread pool.
-- Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
@@ -79,7 +79,7 @@ Project file:
 ## Maximum threads
 
 - Specifies the maximum number of threads for the worker thread pool.
-- Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
@@ -129,7 +129,7 @@ Project file:
 - If you omit this setting or the platform is not Windows, the .NET thread pool is used instead.
 - Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the .NET thread pool instead by disabling the config setting.
 - The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It's advisable to check performance metrics when changing this config setting.
-- Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
+- Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

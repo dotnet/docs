@@ -165,13 +165,13 @@ You can opt in to tiered compilation in either of two ways.
 
 .NET Core 2.1 includes some new types that make working with arrays and other types of memory much more efficient. The new types include:
 
-- <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+- <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>.
 
-- <xref:System.Memory%601?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType>.
+- <xref:System.Memory`1?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory`1?displayProperty=nameWithType>.
 
 Without these types, when passing such items as a portion of an array or a section of a memory buffer, you have to make a copy of some portion of the data before passing it to a method. These types provide a virtual view of that data that eliminates the need for the additional memory allocation and copy operations.
 
-The following example uses a <xref:System.Span%601> and <xref:System.Memory%601> instance to provide a virtual view of 10 elements of an array.
+The following example uses a <xref:System.Span`1> and <xref:System.Memory`1> instance to provide a virtual view of 10 elements of an array.
 
 [!code-csharp[Span\<T>](./snippets/dotnet-core-2-1/csharp/Program.cs)]
 
@@ -193,25 +193,25 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
 - <xref:System.Security.Cryptography.Pkcs.SignedCms?displayProperty=nameWithType> is available in the System.Security.Cryptography.Pkcs package. The implementation is the same as the <xref:System.Security.Cryptography.Pkcs.SignedCms> class in the .NET Framework.
 
-- New overloads of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString%2A?displayProperty=nameWithType> methods accept a hash algorithm identifier to enable callers to get certificate thumbprint values using algorithms other than SHA-1.
+- New overloads of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString*?displayProperty=nameWithType> methods accept a hash algorithm identifier to enable callers to get certificate thumbprint values using algorithms other than SHA-1.
 
-- New <xref:System.Span%601>-based cryptography APIs are available for hashing, HMAC, cryptographic random number generation, asymmetric signature generation, asymmetric signature processing, and RSA encryption.
+- New <xref:System.Span`1>-based cryptography APIs are available for hashing, HMAC, cryptographic random number generation, asymmetric signature generation, asymmetric signature processing, and RSA encryption.
 
-- The performance of <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> has improved by about 15% by using a <xref:System.Span%601>-based implementation.
+- The performance of <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> has improved by about 15% by using a <xref:System.Span`1>-based implementation.
 
 - The new <xref:System.Security.Cryptography.CryptographicOperations?displayProperty=nameWithType> class includes two new methods:
 
-  - <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals%2A> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic verification to avoid contributing to timing side-channel information.
+  - <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals*> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic verification to avoid contributing to timing side-channel information.
 
-  - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
+  - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory*> is a memory-clearing routine that cannot be optimized.
 
-- The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=nameWithType> method fills a <xref:System.Span%601> with random values.
+- The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill*?displayProperty=nameWithType> method fills a <xref:System.Span`1> with random values.
 
 - The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and macOS.
 
 - Elliptic-Curve Diffie-Hellman (ECDH) is now available in the <xref:System.Security.Cryptography.ECDiffieHellman?displayProperty=nameWithType> class family. The surface area is the same as in the .NET Framework.
 
-- The instance returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> can encrypt or decrypt with OAEP using a SHA-2 digest, as well as generate or validate signatures using RSA-PSS.
+- The instance returned by <xref:System.Security.Cryptography.RSA.Create*?displayProperty=nameWithType> can encrypt or decrypt with OAEP using a SHA-2 digest, as well as generate or validate signatures using RSA-PSS.
 
 ### Sockets improvements
 
@@ -225,7 +225,7 @@ The sockets implementation introduced in .NET Core 2.1 has a number of advantage
 
 - Consistent behavior across all .NET Core platforms.
 
-<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method:
+<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch*?displayProperty=nameWithType> method:
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);

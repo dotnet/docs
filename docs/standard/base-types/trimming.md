@@ -21,14 +21,14 @@ If you're parsing a sentence into individual words, you might end up with words 
 
 |Method name|Use|
 |-----------------|---------|
-|<xref:System.String.Trim%2A?displayProperty=nameWithType>|Removes white spaces or characters specified in an array of characters from the beginning and end of a string.|
-|<xref:System.String.TrimEnd%2A?displayProperty=nameWithType>|Removes characters specified in an array of characters from the end of a string.|
-|<xref:System.String.TrimStart%2A?displayProperty=nameWithType>|Removes characters specified in an array of characters from the beginning of a string.|
-|<xref:System.String.Remove%2A?displayProperty=nameWithType>|Removes a specified number of characters from a specified index position in a string.|
+|<xref:System.String.Trim*?displayProperty=nameWithType>|Removes white spaces or characters specified in an array of characters from the beginning and end of a string.|
+|<xref:System.String.TrimEnd*?displayProperty=nameWithType>|Removes characters specified in an array of characters from the end of a string.|
+|<xref:System.String.TrimStart*?displayProperty=nameWithType>|Removes characters specified in an array of characters from the beginning of a string.|
+|<xref:System.String.Remove*?displayProperty=nameWithType>|Removes a specified number of characters from a specified index position in a string.|
 
 ## Trim
 
- You can easily remove white spaces from both ends of a string by using the <xref:System.String.Trim%2A?displayProperty=nameWithType> method, as shown in the following example:
+ You can easily remove white spaces from both ends of a string by using the <xref:System.String.Trim*?displayProperty=nameWithType> method, as shown in the following example:
  [!code-csharp[Conceptual.String.BasicOps#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#17)]
  [!code-vb[Conceptual.String.BasicOps#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#17)]
 
@@ -65,7 +65,7 @@ If you're parsing a sentence into individual words, you might end up with words 
 
 ## Remove
 
- The <xref:System.String.Remove%2A?displayProperty=nameWithType> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.
+ The <xref:System.String.Remove*?displayProperty=nameWithType> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.
 
  The following example removes 10 characters from a string beginning at position five of a zero-based index of the string.
  [!code-csharp[Conceptual.String.BasicOps#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#21)]

@@ -11,10 +11,10 @@ This configuration section contains a collection of authorization policy types, 
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
-- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies%2A>
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies*>
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
 - <xref:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement>
-- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement.AuthorizationPolicies%2A>
+- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement.AuthorizationPolicies*>
 - <xref:System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection>
 - <xref:System.IdentityModel.Policy.IAuthorizationPolicy>
 - [Authorizing Access to Service Operations](../../../wcf/samples/authorizing-access-to-service-operations.md)

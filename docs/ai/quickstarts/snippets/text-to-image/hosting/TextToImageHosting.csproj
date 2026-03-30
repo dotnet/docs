@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="13.0.0-preview.1.25560.3" />
     <PackageReference Include="Azure.AI.OpenAI" Version="2.5.0-beta.1" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.0.0-preview.1.25560.10" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.4.1" />
   </ItemGroup>
 
 </Project>

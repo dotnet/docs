@@ -73,8 +73,8 @@ Represents the security settings used with the [\<ws2007HttpBinding>](ws2007http
 ## See also
 
 - <xref:System.ServiceModel.WSHttpSecurity>
-- <xref:System.ServiceModel.WSHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WSHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
 - <xref:System.ServiceModel.BasicHttpSecurity>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

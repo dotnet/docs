@@ -50,19 +50,19 @@ Determines whether date and time parsing methods use an adjusted set of rules to
 
  The `<EnableAmPmParseAdjustment>` element controls how the following methods parse a date string that contains a numeric day and month followed by an hour and an AM/PM designator (such as "4/10 6 AM"):
 
-- <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>
+- <xref:System.DateTime.Parse*?displayProperty=nameWithType>
 
-- <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>
+- <xref:System.DateTimeOffset.Parse*?displayProperty=nameWithType>
 
-- <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType>
+- <xref:System.DateTime.TryParse*?displayProperty=nameWithType>
 
-- <xref:System.DateTimeOffset.TryParse%2A?displayProperty=nameWithType>
+- <xref:System.DateTimeOffset.TryParse*?displayProperty=nameWithType>
 
-- <xref:System.Convert.ToDateTime%2A?displayProperty=nameWithType>
+- <xref:System.Convert.ToDateTime*?displayProperty=nameWithType>
 
  No other patterns are affected.
 
- The `<EnableAmPmParseAdjustment>` element has no effect on the  <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>,  <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=nameWithType> methods.
+ The `<EnableAmPmParseAdjustment>` element has no effect on the  <xref:System.DateTime.ParseExact*?displayProperty=nameWithType>,  <xref:System.DateTime.TryParseExact*?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact*?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact*?displayProperty=nameWithType> methods.
 
 > [!IMPORTANT]
 > In .NET Core and .NET Native, the adjusted AM/PM parsing rules are enabled by default.

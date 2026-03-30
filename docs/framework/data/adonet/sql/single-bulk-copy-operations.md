@@ -30,10 +30,10 @@ The general steps for performing a bulk copy operation are as follows:
 
 6. Optionally, update properties and call `WriteToServer` again as necessary.
 
-7. Call <xref:System.Data.SqlClient.SqlBulkCopy.Close%2A>, or wrap the bulk copy operations within a `Using` statement.
+7. Call <xref:System.Data.SqlClient.SqlBulkCopy.Close*>, or wrap the bulk copy operations within a `Using` statement.
 
 > [!CAUTION]
-> We recommend that the source and target column data types match. If the data types do not match, `SqlBulkCopy` attempts to convert each source value to the target data type, using the rules employed by <xref:System.Data.SqlClient.SqlParameter.Value%2A>. Conversions can affect performance, and also can result in unexpected errors. For example, a `Double` data type can be converted to a `Decimal` data type most of the time, but not always.
+> We recommend that the source and target column data types match. If the data types do not match, `SqlBulkCopy` attempts to convert each source value to the target data type, using the rules employed by <xref:System.Data.SqlClient.SqlParameter.Value*>. Conversions can affect performance, and also can result in unexpected errors. For example, a `Double` data type can be converted to a `Decimal` data type most of the time, but not always.
 
 ## Example
 
@@ -47,7 +47,7 @@ The following console application demonstrates how to load data using the <xref:
 
 ## Performing a Bulk Copy Operation Using Transact-SQL and the Command Class
 
-The following example illustrates how to use the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> method to execute the BULK INSERT statement.
+The following example illustrates how to use the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery*> method to execute the BULK INSERT statement.
 
 > [!NOTE]
 > The file path for the data source is relative to the server. The server process must have access to that path in order for the bulk copy operation to succeed.

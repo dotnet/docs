@@ -7,11 +7,11 @@ ms.date: 11/01/2020
 
 The UTF-7 encoding is no longer in wide use among applications, and many specs now [forbid its use](https://security.stackexchange.com/a/68609/3573) in interchange. It's also occasionally [used as an attack vector](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=utf-7) in applications that don't anticipate encountering UTF-7-encoded data. Microsoft warns against use of <xref:System.Text.UTF7Encoding?displayProperty=nameWithType> because it doesn't provide error detection.
 
-Consequently, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are now obsolete. Additionally, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> and <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> no longer allow you to specify `UTF-7`.
+Consequently, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor*> constructors are now obsolete. Additionally, <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType> and <xref:System.Text.Encoding.GetEncodings*?displayProperty=nameWithType> no longer allow you to specify `UTF-7`.
 
 ## Change description
 
-Previously, you could create an instance of the UTF-7 encoding by using the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> APIs. For example:
+Previously, you could create an instance of the UTF-7 encoding by using the <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType> APIs. For example:
 
 ```csharp
 Encoding enc1 = Encoding.GetEncoding("utf-7"); // By name.
@@ -20,7 +20,7 @@ Encoding enc2 = Encoding.GetEncoding(65000); // By code page.
 
 Additionally, an instance that represents the UTF-7 encoding was enumerated by the <xref:System.Text.Encoding.GetEncodings?displayProperty=nameWithType> method, which enumerates all the <xref:System.Text.Encoding> instances registered on the system.
 
-Starting in .NET 5, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are obsolete and produce warning `SYSLIB0001`. However, to reduce the number of warnings that callers receive when using the <xref:System.Text.UTF7Encoding> class, the <xref:System.Text.UTF7Encoding> type itself is not marked obsolete.
+Starting in .NET 5, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor*> constructors are obsolete and produce warning `SYSLIB0001`. However, to reduce the number of warnings that callers receive when using the <xref:System.Text.UTF7Encoding> class, the <xref:System.Text.UTF7Encoding> type itself is not marked obsolete.
 
 ```csharp
 // The next line generates warning SYSLIB0001.
@@ -29,7 +29,7 @@ UTF7Encoding enc = new UTF7Encoding();
 byte[] bytes = enc.GetBytes("Hello world!");
 ```
 
-Additionally, the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> methods treat the encoding name `utf-7` and the code page `65000` as `unknown`. Treating the encoding as `unknown` causes the method to throw an <xref:System.ArgumentException>.
+Additionally, the <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType> methods treat the encoding name `utf-7` and the code page `65000` as `unknown`. Treating the encoding as `unknown` causes the method to throw an <xref:System.ArgumentException>.
 
 ```csharp
 // Throws ArgumentException, same as calling Encoding.GetEncoding("unknown").
@@ -60,11 +60,11 @@ Additionally, disabling UTF-7 code paths allows optimizing compilers, such as th
 
 In most cases, you don't need to take any action. However, for apps that have previously activated UTF-7-related code paths, consider the guidance that follows.
 
-- If your app calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> with unknown encoding names provided by an untrusted source:
+- If your app calls <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType> with unknown encoding names provided by an untrusted source:
 
   Instead, compare the encoding names against a configurable allow list. The configurable allow list should at minimum include the industry-standard "utf-8". Depending on your clients and regulatory requirements, you may also need to allow region-specific encodings, such as "GB18030".
 
-  If you don't implement an allow list, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> will return any <xref:System.Text.Encoding> that's built into the system or that's registered via a custom <xref:System.Text.EncodingProvider>. Audit your service's requirements to validate that this is the desired behavior. UTF-7 continues to be disabled by default unless your application re-enables the compatibility switch mentioned later in this article.
+  If you don't implement an allow list, <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType> will return any <xref:System.Text.Encoding> that's built into the system or that's registered via a custom <xref:System.Text.EncodingProvider>. Audit your service's requirements to validate that this is the desired behavior. UTF-7 continues to be disabled by default unless your application re-enables the compatibility switch mentioned later in this article.
 
 - If you're using <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> or <xref:System.Text.UTF7Encoding> within your own protocol or file format:
 
@@ -113,7 +113,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
   ```
 
   > [!NOTE]
-  > Suppressing `SYSLIB0001` only disables the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> and <xref:System.Text.UTF7Encoding> obsoletion warnings. It doesn't disable any other warnings or change the behavior of APIs like <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
+  > Suppressing `SYSLIB0001` only disables the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> and <xref:System.Text.UTF7Encoding> obsoletion warnings. It doesn't disable any other warnings or change the behavior of APIs like <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType>.
 
 - If you must support `Encoding.GetEncoding("utf-7", ...)`:
 
@@ -142,7 +142,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
   ```
 
   > [!TIP]
-  > If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
+  > If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding*?displayProperty=nameWithType>.
 
 ## Affected APIs
 

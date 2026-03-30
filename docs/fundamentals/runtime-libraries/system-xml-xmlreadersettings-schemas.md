@@ -20,6 +20,6 @@ The <xref:System.Xml.Schema.XmlSchemaSet> class only supports XML Schema definit
 
 ## Security considerations
 
-- Do not use schemas from unknown or untrusted sources. Doing so will compromise the security of your code. The <xref:System.Xml.XmlUrlResolver> class is used to resolve external schemas by default. To disable resolution of include, import, and redefine elements of a schema, set the <xref:System.Xml.Schema.XmlSchemaSet.XmlResolver*?displayProperty=nameWithType> property to `null`.
+- Do not use schemas from unknown or untrusted sources. Doing so will compromise the security of your code. The <xref:System.Xml.XmlUrlResolver> class is used to resolve external schemas by default. To disable resolution of include, import, and redefine elements of a schema, set the <xref:System.Xml.Schema.XmlSchemaSet.XmlResolver?displayProperty=nameWithType> property to `null`.
 
 - Exceptions raised as a result of using the <xref:System.Xml.Schema.XmlSchemaSet> class, such as the <xref:System.Xml.Schema.XmlSchemaException> class may contain sensitive information that should not be exposed in untrusted scenarios. For example, the <xref:System.Xml.Schema.XmlSchemaException.SourceUri> property of an <xref:System.Xml.Schema.XmlSchemaException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri> property should not be exposed in untrusted scenarios. Exceptions should be properly handled so that this sensitive information is not exposed in untrusted scenarios.

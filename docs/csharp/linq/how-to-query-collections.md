@@ -18,15 +18,15 @@ The second collection of names is stored in the file *names2.txt*. Some names ap
 
 :::code language="txt" source="./snippets/HowToCollections/names2.txt" :::
 
-The following code shows how you can use the <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType> method to find elements in the first list that aren't in the second list:
+The following code shows how you can use the <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType> method to find elements in the first list that aren't in the second list:
 
 :::code language="csharp" source="./snippets/HowToCollections/Program.cs" id="SnippetSetDifferences":::
 
-Some types of query operations, such as <xref:System.Linq.Enumerable.Except%2A>, <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A>, and <xref:System.Linq.Enumerable.Concat%2A>, can only be expressed in method-based syntax.
+Some types of query operations, such as <xref:System.Linq.Enumerable.Except*>, <xref:System.Linq.Enumerable.Distinct*>, <xref:System.Linq.Enumerable.Union*>, and <xref:System.Linq.Enumerable.Concat*>, can only be expressed in method-based syntax.
 
 ## How to combine and compare string collections
 
-This example shows how to merge files that contain lines of text and then sort the results. Specifically, it shows how to perform a concatenation, a union, and an intersection on the two sets of text lines. It uses the same two text files shows in the preceding example. The code shows examples of the <xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.Union%2A?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>.
+This example shows how to merge files that contain lines of text and then sort the results. Specifically, it shows how to perform a concatenation, a union, and an intersection on the two sets of text lines. It uses the same two text files shows in the preceding example. The code shows examples of the <xref:System.Linq.Enumerable.Concat*?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.Union*?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType>.
 
 :::code language="csharp" source="./snippets/HowToCollections/Program.cs" id="CombineCompareStringCollections":::
 
@@ -68,6 +68,6 @@ var query = from Student s in arrList
 
 By specifying the type of the range variable, you're casting each item in the <xref:System.Collections.ArrayList> to a `Student`.
 
-The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast can't be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on nongeneric <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](get-started/type-relationships-in-linq-query-operations.md). The following example shows a query over an <xref:System.Collections.ArrayList>.
+The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast*> method. <xref:System.Linq.Enumerable.Cast*> throws an exception if the specified cast can't be performed. <xref:System.Linq.Enumerable.Cast*> and <xref:System.Linq.Enumerable.OfType*> are the two Standard Query Operator methods that operate on nongeneric <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](get-started/type-relationships-in-linq-query-operations.md). The following example shows a query over an <xref:System.Collections.ArrayList>.
 
 :::code language="csharp" source="./snippets/HowToCollections/Program.cs" id="QueryArrayList":::

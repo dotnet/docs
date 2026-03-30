@@ -51,6 +51,6 @@ A configuration element that allows you to enable and disable different aspects 
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
-- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing>
 - <xref:System.ServiceModel.Configuration.EndToEndTracingElement>
 - [End-to-End Tracing](../../../wcf/diagnostics/tracing/end-to-end-tracing.md)

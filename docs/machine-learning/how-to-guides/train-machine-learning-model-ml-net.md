@@ -130,11 +130,11 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 
 ## Caching data
 
-By default, when data is processed, it's lazily loaded or streamed, which means that trainers might load the data from disk and iterate over it multiple times during training. Therefore, caching is recommended for datasets that fit into memory to reduce the number of times data is loaded from disk. Caching is done as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) by using [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A).
+By default, when data is processed, it's lazily loaded or streamed, which means that trainers might load the data from disk and iterate over it multiple times during training. Therefore, caching is recommended for datasets that fit into memory to reduce the number of times data is loaded from disk. Caching is done as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain`1) by using [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint%2A).
 
-It's recommended to use [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) before any trainers in the pipeline.
+It's recommended to use [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint%2A) before any trainers in the pipeline.
 
-Using the following [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), adding [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) before the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) trainer caches the results of the previous estimators for later use by the trainer.
+Using the following [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain`1), adding [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint%2A) before the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) trainer caches the results of the previous estimators for later use by the trainer.
 
 ```csharp
 // 1. Concatenate Size and Historical into a single feature vector output to a new column called Features
@@ -150,7 +150,7 @@ IEstimator<ITransformer> dataPrepEstimator =
 
 ## Train the machine learning model
 
-Once the data is preprocessed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase%602.Fit%2A) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
+Once the data is preprocessed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase`2.Fit%2A) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
 
 ```csharp
 // Define StochasticDualCoordinateAscent regression algorithm estimator
@@ -162,7 +162,7 @@ var trainedModel = sdcaEstimator.Fit(transformedTrainingData);
 
 ## Extract model parameters
 
-After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase%601) for inspection or retraining. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model.
+After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase`1) for inspection or retraining. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model.
 
 ```csharp
 var trainedModelParameters = trainedModel.Model as LinearRegressionModelParameters;

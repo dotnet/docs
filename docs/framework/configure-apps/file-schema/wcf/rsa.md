@@ -61,7 +61,7 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
-- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.EndpointAddress.Identity*>
 - <xref:System.ServiceModel.RsaEndpointIdentity>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [\<identity>](identity.md)

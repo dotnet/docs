@@ -2,7 +2,7 @@
 description: "Learn more about: Generic Types in Visual Basic (Visual Basic)"
 title: "Generic Types"
 ms.date: 01/31/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "generic interfaces"
   - "data type arguments [Visual Basic], defining"
   - "generic delegates"
@@ -47,7 +47,7 @@ An analogy is a screwdriver set with removable heads. You inspect the screw and 
 
 When you define a generic type, you parameterize it with one or more data types. Type parameters allow code to tailor the data types to its requirements. Your code can declare several different programming elements from the generic element, each one acting on a different set of data types. But the declared elements all perform the identical logic, no matter what data types they're using.
 
-For example, you might want to create and use a queue class that operates on a specific data type such as `String`. You can declare such a class from <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>, as the following example shows.
+For example, you might want to create and use a queue class that operates on a specific data type such as `String`. You can declare such a class from <xref:System.Collections.Generic.Queue`1?displayProperty=nameWithType>, as the following example shows.
 
 :::code language="visual-basic" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb" id="Snippet1":::
 
@@ -88,7 +88,7 @@ A generic type has the following advantages over these alternatives:
 
 - **Type Safety.** Generic types enforce compile-time type checking. Types based on `Object` accept any data type, and you must write code to check whether an input data type is acceptable. With generic types, the compiler can catch type mismatches before run time.
 - **Performance.** Generic types don't have to *box* and *unbox* data, because each one is specialized for one data type. Operations based on `Object` must box input data types to convert them to `Object` and unbox data destined for output. Boxing and unboxing reduce performance.
-    Types based on `Object` are also late-bound, which means that accessing their members requires extra code at run time. Type conversions also reduce performance.  
+    Types based on `Object` are also late-bound, which means that accessing their members requires extra code at run time. Type conversions also reduce performance.
 - **Code Consolidation.** The code in a generic type has to be defined only once. A set of type-specific versions of a type must replicate the same code in each version, with the only difference being the specific data type for that version. With generic types, the type-specific versions are all generated from the original generic type.
 - **Code Reuse.** Code that doesn't depend on a particular data type can be reused with various data types if it's generic. You can often reuse it even with a data type that you didn't originally predict.
 - **IDE Support.** When you use a constructed type declared from a generic type, the integrated development environment (IDE) can give you more support while you're developing your code. For example, IntelliSense can show you the type-specific options for an argument to a constructor or method.
@@ -117,7 +117,7 @@ Your constraint can specify the following requirements in any combination:
 
 C# code can declare that a type argument must be an [*unmanaged type*](../../../../csharp/programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint). Visual Basic enforces this constraint for Visual Basic code that uses a generic type or method that was defined with this constraint (in C#). However, you can't declare an `unmanaged` constraint on a type parameter in Visual Basic.
 
-If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.  
+If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.
 
 For more information on constraints, see [Type List](../../../language-reference/statements/type-list.md).
 

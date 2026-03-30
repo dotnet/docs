@@ -10,8 +10,8 @@ This configuration element contains child elements that can be used to specify a
 
 ## See also
 
-- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters%2A>
-- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters%2A>
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters>
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [Security Capabilities with Custom Bindings](../../../wcf/feature-details/security-capabilities-with-custom-bindings.md)

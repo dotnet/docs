@@ -79,7 +79,7 @@ Specifies the address and binding of the local issuer to be used to obtain a sec
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
+- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer*>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

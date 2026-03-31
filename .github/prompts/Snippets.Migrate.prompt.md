@@ -48,7 +48,7 @@ We no longer use the `~/samples/snippets/` location for code snippets. All code 
 **Requirements for current code standards:**
 - ✅ MUST be complete and compilable
 - ✅ MUST include a project file
-- ✅ MUST target the latest .NET version
+- ✅ MUST target the latest .NET or .NET Framework version as appropriate based on article context
 - ✅ MUST provide BOTH C# and Visual Basic versions
 - ✅ MUST use appropriate syntax for the target framework
 - ✅ MUST use meaningful, descriptive snippet identifiers in CamelCase format

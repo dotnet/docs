@@ -240,3 +240,10 @@ Use cross-references instead of plain text or raw URLs when referring to .NET AP
   - For types: use the `Value` attribute of `<TypeSignature>` where `Language="DocId"` (omit the first 2 characters)
   - For members: use the `Value` attribute of `<MemberSignature>` where `Language="DocId"` (omit the first 2 characters)
 - If unsure of the doc ID, use the API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5` and use the `url` value from the results as a manual link.
+
+### Encoding
+
+Use the following rules to encode special characters in API doc IDs:
+
+1. Encode `#` as `%23` in API doc IDs. For example, `System.String.#ctor` becomes `System.String.%23ctor`.
+2. **DO NOT** encode `*` or \` (backtick) characters as `%2A` or `%60` respectively.
